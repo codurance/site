@@ -1,3 +1,10 @@
+---
+layout: page
+name: Home
+---
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,14 +23,14 @@
         padding-bottom: 60px;
       }
 
-     
+
 
       /* Main marketing message and sign up button */
       .jumbotron {
         margin: 60px 0;
         text-align: center;
       }
-    
+
       .jumbotron .lead {
         font-size: 24px;
         line-height: 1.25;
@@ -50,17 +57,17 @@
               <div class="nav-collapse collapse">
               <ul class="nav">
               </ul>
-          	</div>
+            </div>
             </div>
           </div>
         </div><!-- /.navbar -->
 
-  	<div class="container">
-    	<div class="hero-unit">
+    <div class="container">
+        <div class="hero-unit">
          <h2>Software is our Passion</h2>
       <p>Software Craftsmanship is at the core of everything we do.</p>
       <hr/>
-      
+
       <div class="row"><p><strong>We:</strong>
       </div>
        <div class="row">
@@ -75,11 +82,11 @@
       <p><strong>inject passion into teams</strong> by mentoring and educating developers, testers and business analysts. We help them engage with the talent that is rife in vibrant professional communities.</p>
  </div>
   <div class="row">
-      <p><strong>invest in the community</strong> by engaging and organising software craftsmanship communities and community events world wide.</p> 
+      <p><strong>invest in the community</strong> by engaging and organising software craftsmanship communities and community events world wide.</p>
       </div>
-  
+
 </div>
-      
+
 
   </div>
   <div class="footer">
