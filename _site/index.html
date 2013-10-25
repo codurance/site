@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Codurance{% if page.title %} - {{ page.title }}{% endif %}</title>
+        <title>Codurance</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/base.css" rel="stylesheet">
@@ -48,29 +48,62 @@
     </head>
 
     <body>
-        {% include navbar.html %}
+        <div class="navbar navbar-inverse navbar-fixed-top">
+</div>
+
 
         <div class="container">
             <div class="row-fluid">
-                {% include header.html %}
+                <header>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#"><img alt="Codurance | craft at heart." src="img/logo.png" width="200"/></a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
             </div>
 
             <div class="row-fluid">
                 <div class="span8">
                     <div class="container">
                         <div class="hero-unit">
-                            {{ content }}
+                            <h2 id='software_is_our_passion'>Software is our Passion</h2>
+
+<p>Software Craftsmanship is at the core of everything we do.</p>
+
+<p><strong>We:</strong></p>
+
+<p><strong>build quality software</strong> for our clients that continuously delivers value. We firmly believe that software should increasingly deliver more value and become more flexible with time. We achieve this by continuously investing in our skills and tools required to build quality software.</p>
+
+<p><strong>focus on collaboration</strong> by recognising that software is not built just by developers. It is a result of the collaboration between all stakeholders. We ensure collaboration and communication is at the heart of software development.</p>
+
+<p><strong>inject passion into teams</strong> by mentoring and educating developers, testers and business analysts. We help them engage with the talent that is rife in vibrant professional communities.</p>
+
+<p><strong>invest in the community</strong> by engaging and organising software craftsmanship communities and community events world wide.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="span4">
-                    {% include aside.html %}
+                    <aside>
+</aside>
+
                 </div>
             </div>
 
             <div class="row-fluid">
-                {% include footer.html %}
+                <footer>
+    <div class="footer">
+        <p>&copy; Codurance LTD</p>
+    </div>
+</footer>
+
             </div>
         </div>
 
