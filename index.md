@@ -3,11 +3,12 @@ layout: homepage
 name: Home
 ---
 
-###Software is our Passion
-
+Software is our Passion
+- - -
 Software Craftsmanship is at the core of everything we do.
 
 - - -
+
 *We:*
 
 **build quality software** for our clients. We firmly believe that software should increasingly deliver more value and become more flexible with time. We achieve this by continuously investing in our skills and tools required to build quality software.
