@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 name: Home
 ---
 
@@ -7,7 +7,8 @@ name: Home
 
 Software Craftsmanship is at the core of everything we do.
 
-**We:**
+- - -
+*We:*
 
 **build quality software** for our clients that continuously delivers value. We firmly believe that software should increasingly deliver more value and become more flexible with time. We achieve this by continuously investing in our skills and tools required to build quality software.
 
@@ -16,3 +17,6 @@ Software Craftsmanship is at the core of everything we do.
 **inject passion into teams** by mentoring and educating developers, testers and business analysts. We help them engage with the talent that is rife in vibrant professional communities.
 
 **invest in the community** by engaging and organising software craftsmanship communities and community events world wide.
+
+
+
