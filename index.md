@@ -5,7 +5,7 @@ name: Home
 
 Software is our Passion
 - - -
-Software Craftsmanship is at the core of everything we do.
+Software Craftsmanship is at the heart of everything we do.
 
 - - -
 
