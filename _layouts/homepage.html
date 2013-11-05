@@ -12,18 +12,18 @@
     <meta name="author" content="">
 
     <!-- CSS Global Compulsory-->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/headers/header1.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="shortcut icon" href="favicon.ico">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
-    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="assets/css/themes/orange.css" id="style_color">
-    <link rel="stylesheet" href="assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 </head>
 
 <body>
@@ -49,145 +49,25 @@
 {% include header.html %}
 <!--=== End Header ===-->
 
-<!--=== Slider ===-->
-<div class="slider-inner">
-    <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-            <h2><i>SOFTWARE IS</i> <br /> <i>OUR PASSION</i></h2>
-            <p><i>Software Craftsmanship</i> <br /> <i>is at the heart of everything we do</i></p>
-            <div class="da-img"><img src="assets/img/handcraft.jpg" alt="" height="315" /></div>
-        </div>
-        <div class="da-slide">
-            <h2><i>REFACTORING</i> <br /> <i>LEGACY CODE</i></h2>
-            <p><i>by Sandro Mancuso</i> <br /> <i>Co-founder of Codurance</i></p>
-            <div class="da-img">
-                <iframe src="//player.vimeo.com/video/76472757?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="da-arrows">
-            <span class="da-arrows-prev"></span>
-            <span class="da-arrows-next"></span>
-        </div>
-    </div><!--/da-slider-->
-</div><!--/slider-->
-<!--=== End Slider ===-->
-
-<!--=== Content Part ===-->
-<div class="container">
-            {{ content }}
-	<!-- Service Blocks -->
-	<div class="row">
-    	<div class="col-md-4">
-    		<div class="service">
-                <i class="glyphicon glyphicon-certificate service-icon"></i>
-    			<div class="desc">
-    				<h4>Quality</h4>
-                    <p>We build quality software for our clients. We firmly believe that software should increasingly deliver more value and become more flexible with time. We achieve this by continuously investing in our skills and tools required to build quality software.<p>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="col-md-4">
-    		<div class="service">
-                <i class="icon-comments-alt service-icon"></i>
-    			<div class="desc">
-                    <h4>Collaboration</h4>
-                    <p>We focus on collaboration by recognising that software is not built just by developers. It is a result of the collaboration between all stakeholders. We ensure collaboration and communication is at the heart of software development for our clients</p>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="col-md-4">
-    		<div class="service">
-                <i class="icon-heart service-icon"></i>
-    			<div class="desc">
-                    <h4>Passion</h4>
-                    <p>We inject passion into teams by mentoring and educating developers, testers, business analysts and product owners. We help them engage with the wider IT community in order to benefit from the best of bread practices, technologies and experiences.</p>
-    			</div>
-    		</div>
-    	</div>
-	</div><!--/row-->
-	<!-- End Service Blokcs -->
-
-	<!-- Recent Works -->
-    <div class="headline"><h2>Recent Work</h2></div>
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnails thumbnail-style thumbnail-kenburn">
-            	<div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img class="img-responsive" src="assets/img/ubs.jpg" alt="" />
-                    </div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>
-                </div>
-                <div class="caption">
-                    <h3><a class="hover-effect" href="#">Our work at UBS</a></h3>
-                    <p>We are currently helping UBS build their next generation of Regulatory Reporting and Back Office platforms.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img class="img-responsive" src="assets/img/skills-matter.jpg" alt="" />
-                    </div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>
-                </div>
-                <div class="caption">
-                    <h3><a class="hover-effect" href="#">Training for Skillsmatter</a></h3>
-                    <p>We are creating Software Craftsmanship and Enterprise Systems courses for Skills Matter.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img class="img-responsive" src="assets/img/conference.png" alt="" />
-                    </div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>
-                </div>
-                <div class="caption">
-                    <h3><a class="hover-effect" href="#">Conferences</a></h3>
-                    <p>We regularly speak at conferences on topics ranging from Test Driven Development to Recruitment and Effective Team Building.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img class="img-responsive" src="assets/img/main/8.jpg" alt="" />
-                    </div>
-                    <a class="btn-more hover-effect" href="#">read more +</a>
-                </div>
-                <div class="caption">
-                    <h3><a class="hover-effect" href="#">Enterprise Systems</a></h3>
-                    <p>We work with our clients to evolve their legacy systems to a point where they can be considered a strategic asset for their business.</p>
-                </div>
-            </div>
-        </div>
-    </div><!--/row-->
-	<!-- End Recent Works -->
-</div><!--/container-->
-<!-- End Content Part -->
+{{ content }}
 
 <!--=== Copyright ===-->
 {% include footer.html %}
 <!--=== End Copyright ===-->
 
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/plugins/hover-dropdown.min.js"></script>
-<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
 <!-- JS Page Level -->
-<script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/pages/index.js"></script>
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
       	App.init();
@@ -196,7 +76,7 @@
     });
 </script>
 <!--[if lt IE 9]>
-    <script src="assets/plugins/respond.js"></script>
+    <script src="/assets/plugins/respond.js"></script>
 <![endif]-->
 
 </body>

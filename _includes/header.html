@@ -9,15 +9,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img id="logo-header" src="assets/img/logo1-orange.png" height="45" alt="Logo">
+                <a class="navbar-brand" href="/index.html">
+                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li class="dropdown" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
                            About Us 
                             <i class="icon-angle-down"></i>
@@ -31,7 +31,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                           Our Work 
+                          In the Community 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -40,14 +40,14 @@
                             <li><a href="#">Talks & Events</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown {% if page.name contains 'Our Clients' %}active{% endif %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
                            Our Clients 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Clients</a></li>
+                            <li {% if page.name contains 'Our Clients - Case Studies' %}class="active"{% endif %}><a href="/OurClients/CaseStudies.html">Case Studies</a></li>
+                            <li {% if page.name contains 'Our Clients - Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
                             <li><a href="#">Training</a></li>
                         </ul>
                     </li>
