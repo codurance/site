@@ -1,4 +1,0 @@
----
-layout: newhomepage
-name: Home
----
