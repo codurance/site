@@ -19,36 +19,32 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                           About Us 
+                          About Us 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Principles</a></li>
+                            <li><a href="#">Services</a></li>
                             <li><a href="#">Practices</a></li>
-                            <li><a href="#">Process</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown {% if page.name contains 'Our Work' %}active{% endif %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                          Our Work 
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li {% if page.name contains 'Our Work - Case Studies' %}class="active"{% endif %}><a href="/OurWork/CaseStudies.html">Case Studies</a></li>
+                            <li {% if page.name contains 'Our Work - Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                          In the Community 
+                          Community 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Community</a></li>
                             <li><a href="#">Talks & Events</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown {% if page.name contains 'Our Clients' %}active{% endif %}">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                           Our Clients 
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li {% if page.name contains 'Our Clients - Case Studies' %}class="active"{% endif %}><a href="/OurClients/CaseStudies.html">Case Studies</a></li>
-                            <li {% if page.name contains 'Our Clients - Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
-                            <li><a href="#">Training</a></li>
                         </ul>
                     </li>
                 </ul>
