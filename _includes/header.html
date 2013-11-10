@@ -23,7 +23,7 @@
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Our Company</a></li>
+                            <li {% if page.name contains 'About Us - Our Company' %}class="active"{% endif %}><a href="/AboutUs/OurCompany.html">Our Company</a></li>
                             <li {% if page.name contains 'About Us - Our Services' %}class="active"{% endif %}><a href="/AboutUs/OurServices.html">Our Services</a></li>
                             <li><a href="#">Our Practices</a></li>
                         </ul>
