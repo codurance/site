@@ -17,25 +17,25 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown {% if page.name contains 'About Us' %}active{% endif %}" >
+                    <li class="dropdown {% if page.group contains 'About Us' %}active{% endif %}" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
                           About Us 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li {% if page.name contains 'About Us - Our Company' %}class="active"{% endif %}><a href="/AboutUs/OurCompany.html">Our Company</a></li>
-                            <li {% if page.name contains 'About Us - Our Services' %}class="active"{% endif %}><a href="/AboutUs/OurServices.html">Our Services</a></li>
+                            <li {% if page.title contains 'Our Company' %}class="active"{% endif %}><a href="/AboutUs/OurCompany.html">Our Company</a></li>
+                            <li {% if page.title contains 'Our Services' %}class="active"{% endif %}><a href="/AboutUs/OurServices.html">Our Services</a></li>
                             <li><a href="#">Our Practices</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown {% if page.name contains 'Our Work' %}active{% endif %}">
+                    <li class="dropdown {% if page.group contains 'Our Work' %}active{% endif %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
                           Our Work 
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li {% if page.name contains 'Our Work - Case Studies' %}class="active"{% endif %}><a href="/OurWork/CaseStudies.html">Case Studies</a></li>
-                            <li {% if page.name contains 'Our Work - Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
+                            <li {% if page.title contains 'Case Studies' %}class="active"{% endif %}><a href="/OurWork/CaseStudies.html">Case Studies</a></li>
+                            <li {% if page.title contains 'Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
