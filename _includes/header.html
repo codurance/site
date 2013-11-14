@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown {% if page.group contains 'About Us' %}active{% endif %}" >
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                        <a href="/AboutUs/OurCompany.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
                           About Us 
                             <i class="icon-angle-down"></i>
                         </a>
@@ -44,7 +44,7 @@
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Blog</a></li>
+                            <li {% if page.title contains 'Blog' %}class="active"{% endif %}><a href="/Community/Blog.html">Blog</a></li>
                             <li><a href="#">Talks & Events</a></li>
                         </ul>
                     </li>

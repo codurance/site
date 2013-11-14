@@ -1,2 +1,3 @@
 name: Codurance
 pygments: true
+markdown: redcarpet
