@@ -60,7 +60,7 @@
 {% include header.html %}
 <!--=== End Header ===-->
 
-<div class="breadcrumbs">
+<div class="breadcrumbs margin-bottom-10">
     <div class="container">
         <h2 class="pull-left">{{ page.title }}</h2>
         <ul class="pull-right breadcrumb">
@@ -78,12 +78,14 @@
 <div class="col-md-9 md-margin-bottom-60">
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
+        {% if page.date %}
         <div class="blog-post-tags">
             <ul class="list-unstyled list-inline blog-info">
                 <li><i class="icon-calendar"></i> {{ page.date | date_to_string }}</li>
                 <li><i class="icon-pencil"></i> {{ page.author }}</li>
             </ul>
         </div>
+        {% endif %}
         {{ content }}
     </div>
     <!--End Blog Post-->
@@ -92,63 +94,10 @@
 
 <!-- Right Sidebar -->
 <div class="col-md-3 magazine-page">
-
-    <!-- Posts -->
-    <div class="posts margin-bottom-40">
-        <div class="headline headline-md"><h2>Recent Posts</h2></div>
-        <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/sliders/elastislide/6.jpg" alt=""/></a></dt>
-            <dd>
-                <p><a href="#">Responsive Bootstrap 3 Template placerat idelo alac eratamet.</a></p>
-            </dd>
-        </dl>
-        <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/sliders/elastislide/10.jpg" alt=""/></a></dt>
-            <dd>
-                <p><a href="#">100+ Amazing Features Layer Slider, Layer Slider, Icons, 60+ Pages etc.</a></p>
-            </dd>
-        </dl>
-        <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/sliders/elastislide/11.jpg" alt=""/></a></dt>
-            <dd>
-                <p><a href="#">Developer Friendly Code imperdiet condime ntumi mperdiet condim.</a></p>
-            </dd>
-        </dl>
-    </div>
-    <!--/posts-->
-    <!-- End Posts -->
-
     <!-- Blog Latest Tweets -->
     <div class="blog-twitter margin-bottom-30">
-        <div class="headline headline-md"><h2>Latest Tweets</h2></div>
-        <div class="blog-twitter-inner">
-            <i class="icon-twitter"></i>
-            <a href="#">@htmlstream</a>
-            At vero eos et accusamus et iusto odio dignissimos.
-            <a href="#">http://t.co/sBav7dm</a>
-            <span>5 hours ago</span>
-        </div>
-        <div class="blog-twitter-inner">
-            <i class="icon-twitter"></i>
-            <a href="#">@htmlstream</a>
-            At vero eos et accusamus et iusto odio dignissimos.
-            <a href="#">http://t.co/sBav7dm</a>
-            <span>5 hours ago</span>
-        </div>
-        <div class="blog-twitter-inner">
-            <i class="icon-twitter"></i>
-            <a href="#">@htmlstream</a>
-            At vero eos et accusamus et iusto odio dignissimos.
-            <a href="#">http://t.co/sBav7dm</a>
-            <span>5 hours ago</span>
-        </div>
-        <div class="blog-twitter-inner">
-            <i class="icon-twitter"></i>
-            <a href="#">@htmlstream</a>
-            At vero eos et accusamus et iusto odio dignissimos.
-            <a href="#">http://t.co/sBav7dm</a>
-            <span>5 hours ago</span>
-        </div>
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from @mashooq/codurance</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <!-- End Blog Latest Tweets -->
 </div>
