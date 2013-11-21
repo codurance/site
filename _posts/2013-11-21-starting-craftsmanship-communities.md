@@ -52,7 +52,7 @@ It's important that members of the community know when and where the meetings ar
 
 In case you can't be in the meeting, make sure someone else can facilitate the meeting. Try never to break the rhythm. Having long gaps between the meetings will make people loose interest. 
 
-Make sure that you never have an empty calendar, that means, as soon as the a meeting is finished, you should have the date for the next meeting. People tend not to join a group if there are no meetings scheduled. 
+Make sure that you never have an empty calendar, that means, as soon as a meeting is finished, you should have the date for the next meeting. People tend not to join a group if there are no meetings scheduled. We always try to have at least a few meetings scheduled all the time.
 
 ### Technology Specific vs. Technology Agnostic
 
