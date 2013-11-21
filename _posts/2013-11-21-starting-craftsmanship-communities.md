@@ -84,7 +84,7 @@ Associates bring variety and enthusiasm. They keep the community alive and healt
 
 ### Good neighbours
 
-It there is any other user groups or technical communities in your city, go and speak to them. One of the reasons for the LSCC success is our proximity to other communities. The idea for starting LSCC happened during a conversation I had in one of the London Java Community meetings, and from day one we had the support from the LJC organisers. LJC, back then, already had more than 1000 members and they announced many of our events to the LJC members. We also have a good relationship with other local user groups. In the early days, we made sure that none of our meetings would clash with meetings from other user groups so we all could go to each other meetings. 
+If there is any other user groups or technical communities in your city, go and speak to them. One of the reasons for the LSCC success is our proximity to other communities. The idea for starting LSCC happened during a conversation I had in one of the London Java Community meetings, and from day one we had the support from the LJC organisers. LJC, back then, already had more than 1000 members and they announced many of our events to the LJC members. We also have a good relationship with other local user groups. In the early days, we made sure that none of our meetings would clash with meetings from other user groups so we all could go to each other meetings. 
 
 ### Protect your community
 
