@@ -26,7 +26,7 @@
                             <li {% if page.title contains 'Our Team' %}class="active"{% endif %}><a href="/AboutUs/OurTeam.html">Our Team</a></li>
                             <li {% if page.title contains 'Our Company' %}class="active"{% endif %}><a href="/AboutUs/OurCompany.html">Our Company</a></li>
                             <li {% if page.title contains 'Our Services' %}class="active"{% endif %}><a href="/AboutUs/OurServices.html">Our Services</a></li>
-                            <li><a href="#">Our Practices</a></li>
+                            <li {% if page.title contains 'Our Practices' %}class="active"{% endif %}><a href="/AboutUs/OurPractices.html">Our Practices</a></li>
                         </ul>
                     </li>
                     <li class="dropdown {% if page.group contains 'Our Work' %}active{% endif %}">
