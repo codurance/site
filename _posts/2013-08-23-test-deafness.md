@@ -4,6 +4,7 @@ name: test-deafness
 title: Test Deafness 
 date: 2013-08-23 03:26:00.000000000 +01:00 
 author: Sandro Mancuso
+blogimage: /assets/img/blog/test-deafness.jpg
 ---
 
 A few months ago I was talking to a musician friend of mine. He is also

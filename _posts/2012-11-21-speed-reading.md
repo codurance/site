@@ -6,6 +6,7 @@ layout: post
 slug: speed-reading
 title: Speed Reading
 wordpress_id: 211
+blogimage: /assets/img/blog/spead-reading.jpeg
 ---
 
 It's not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I've always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.

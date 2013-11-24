@@ -4,6 +4,7 @@ name: my-birthday-wish-list
 title: My birthday wish list 
 date: 2013-07-30 00:46:00.000000000 +01:00 
 author: Sandro Mancuso
+blogimage: /assets/img/blog/birthday-wish.jpeg
 ---
 
 Today is my birthday. Yay! And since today is all about me, I will
