@@ -29,25 +29,11 @@
                             <li {% if page.title contains 'Our Practices' %}class="active"{% endif %}><a href="/AboutUs/OurPractices.html">Our Practices</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown {% if page.group contains 'Our Work' %}active{% endif %}">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                          Our Work
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li {% if page.title contains 'Case Studies' %}class="active"{% endif %}><a href="/OurWork/CaseStudies.html">Case Studies</a></li>
-                            <li {% if page.title contains 'Clients' %}class="active"{% endif %}><a href="#">Clients</a></li>
-                        </ul>
-                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                          Community
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li {% if page.title contains 'Blog' %}class="active"{% endif %}><a href="/Community/Blog.html">Blog</a></li>
-                            <li><a href="#">Talks & Events</a></li>
-                        </ul>
+                        <a <li {% if page.title contains 'Blog' or page.layout == 'post' %}class="btn-u btn-u-orange"{% endif %} href="/Community/Blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a <li {% if page.title contains 'Case Studies' %}class="btn-u btn-u-orange"{% endif %} href="/OurWork/CaseStudies.html">Case Studies</a>
                     </li>
                 </ul>
                 <div class="search-open">
