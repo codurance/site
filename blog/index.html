@@ -1,6 +1,5 @@
 ---
 layout: post
-group: Community
 title: Blog
 ---
 
@@ -8,7 +7,7 @@ title: Blog
     <div class="row blog-page">
         <!-- Left Sidebar -->
         <div class="col-md-12 md-margin-bottom-40">
-            {% for post in site.posts %}
+            {% for post in paginator.posts %}
             <!--Blog Post-->
             <div class="row blog blog-medium margin-bottom-40">
                 <div class="col-md-4">
@@ -39,33 +38,29 @@ title: Blog
             {% if paginator.total_pages > 1 %}
             <div class="text-center">
                 <ul class="pagination">
+
+                    {% if paginator.previous_page %}
                     <li>
-                        {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">«</a>
-                        {% else %}
-                        «
-                        {% endif %}
+                        <a href="{{ paginator.previous_page_path}}">«</a>
                     </li>
+                    {% endif %}
 
 
                     {% for page in (1..paginator.total_pages) %}
                     <li {% if page == paginator.page %} class="active" {% endif %}>
-                        {% if page == 1 %}
-                            <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-                        {% else %}
-                            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
-                                {{ page }}</a>
-                        {% endif %}
+                    {% if page == 1 %}
+                        <a href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
                     </li>
+                    {% endif %}
                     {% endfor %}
 
-                    <li>
                     {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">»</a>
-                    {% else %}
-                    »
-                    {% endif %}
+                    <li>
+                        <a href="{{ paginator.next_page_path }}">»</a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
             {% endif %}

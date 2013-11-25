@@ -1,3 +1,12 @@
-name: Codurance
+url: "http://codurance.com"
 pygments: true
-markdown: redcarpet
+permalink: /blog/:year/:month/:title/
+markdown: rdiscount
+
+exclude: ["README.md", "_posts_TOFIX"]
+
+paginate: 10
+paginate_path: "blog/page:num"
+
+sitename: "Codurance"
+subtitle: "craft at heart"
