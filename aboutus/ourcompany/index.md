@@ -27,6 +27,8 @@ title: Our Company
                 Our wide-ranging expertise in technologies and practices ensure that the right decisions are made
                 especially during the early phases of a project.
             </p>
+
+            <p>Contact us at hello@codurance.com</p>
         </div>
 
         <div class="col-sm-4">
