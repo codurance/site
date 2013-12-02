@@ -7,20 +7,30 @@ title: Our Company
 <div class="container">
     <div class="row margin-bottom-30">
         <div class="col-md-8 md-margin-bottom-40">
-            <p>Codurance is a Software Consultancy based on the Software Craftsmanship principles. Software Craftsmanship
-                is a movement that aims to bring professionalism to our industry. It's main principles are highlighted in the Software Craftsmanship manifesto:
+            <h4 class="color-orange">Who are we?</h4>
+
+            <p><b>We are software craftsmen.</b> We build well-crafted software to our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies to get better at delivering software.</p>
+
+            <p><b>We collaborate with our clients.</b> We built our reputation based on client satisfaction and adding value through well-crafted software. We believe that productive partnerships, collaboration, fast feedback, and small iterations are the best way to deliever successful software projects.</p>
+
+            <p><b>We are principled.</b> We don't negotiate on quality. We use Agile methodologies and Extreme Programming practices, like Test-Driven Development, Simple Design, Pair-Programming and Continuous Integration, in all our projects.</p>
+
+            <p><b>We master our skills and tools.</b> We work hard to be the best we can be, constantly practicing, learning, and sharing. All our craftsmen have dedicated time for learning and are very active in external <a href="http://londonswcraft.com">technical communities</a>.</p>
+
+            <br />
+            <br />
+            <h4 class="color-orange">Software Craftsmanship</h4>
+
+            <p>Software Craftsmanship principles are at the heart of our company. Software Craftsmanship
+                is a movement that aims to bring professionalism to our industry. It's main principles are highlighted in the Software Craftsmanship manifesto:</p>
             <ul class="list-unstyled">
                 <li><i class="icon-certificate color-green"></i> Not only working software, but also <strong>well-crafted software.</strong></li>
                 <li><i class="icon-certificate color-green"></i> Not only responding to change but also <strong>steadily adding value.</strong></li>
                 <li><i class="icon-certificate color-green"></i> Not only individuals and interactions but also a <strong>community of professionals.</strong></li>
                 <li><i class="icon-certificate color-green"></i> Not only customer collaboration but also <strong>productive partnerships</strong></li>
             </ul>
-            <br/>
             </p>
-            <p>Following the Software Craftsmanship principles we are constantly seeking ways to add value to the team,
-                resulting in observable constant improvements in technology and working practices. Our craftsmen are always
-                engaged with the wider IT community and bring the best of that learning to their workplace. Working from
-                within the team makes them highly effective in bringing about positive change and innovation.</p>
+            <p>Following the Software Craftsmanship principles we are constantly seeking ways to add value to the team,resulting in observable constant improvements in technology and working practices. Our craftsmen are always engaged with the wider <a href="http://londonswcraft.com">IT community</a> bringing the best of that learning to their workplace. Working from within the team makes them highly effective in bringing about positive change and innovation.</p>
 
             <p>We work very well embedded in projects with client staff in order to help nurture autonomous highly
                 effective teams.
