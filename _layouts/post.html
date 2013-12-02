@@ -65,7 +65,9 @@
         <h2 class="pull-left">{{ page.title }}</h2>
         <ul class="pull-right breadcrumb">
             <li><a href="/">Home</a></li>
+            {% if page.title != 'Blog' %}
             <li><a href="/blog">Blog</a></li>
+            {% endif %}
         </ul>
     </div>
 </div>
