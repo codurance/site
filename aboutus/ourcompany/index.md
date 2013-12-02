@@ -38,7 +38,7 @@ title: Our Company
                 especially during the early phases of a project.
             </p>
 
-            <p>Contact us at hello@codurance.com</p>
+            <p><b>Contact us at <a class="color-orange" href="mailto:hello@codurance.com">hello at codurance dot com</a></b></p>
         </div>
 
         <div class="col-sm-4">
