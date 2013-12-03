@@ -13,7 +13,7 @@ title: Our Company
 
             <p><b>We collaborate with our clients.</b> We built our reputation based on client satisfaction and adding value through well-crafted software. We believe that productive partnerships, collaboration, fast feedback, and small iterations are the best way to deliever successful software projects.</p>
 
-            <p><b>We are principled.</b> We don't negotiate on quality. We use Agile methodologies and Extreme Programming practices, like Test-Driven Development, Simple Design, Pair-Programming and Continuous Integration, in all our projects.</p>
+            <p><b>We have values.</b> We don't negotiate on quality. We use Agile methodologies and Extreme Programming practices, like Test-Driven Development, Simple Design, Pair-Programming and Continuous Integration, in all our projects.</p>
 
             <p><b>We master our skills and tools.</b> We work hard to be the best we can be, constantly practicing, learning, and sharing. All our craftsmen have dedicated time for learning and are very active in external <a href="http://londonswcraft.com">technical communities</a>.</p>
 
