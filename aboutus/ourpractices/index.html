@@ -19,10 +19,7 @@ title: Our Practices
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
-                            Continuos Integration is an key part of software development and release management. It
-                            should be in place from the outset and support the team in highlight potential issues/bugs
-                            as early in the release pipeline as possible. We work hard to ensure that every feature
-                            added is ready to be released into production.
+                            Continuous Integration and Deployment are key parts of software development and release management. They are the first things we put in place when we start a new project or join an existing one. Continuous Integration and Deployment highlight potential issues/bugs as early in the release pipeline as possible. We work hard to ensure that every feature added is ready to be released into production.
                         </div>
                     </div>
                 </div>
@@ -37,9 +34,7 @@ title: Our Practices
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
                         <div class="panel-body">
-                            We value pair programming and believe that it supports our desire to create great quality
-                            and bug free software. We also understand that it is not always applicable and apply it
-                            programatic to when it provides clear value.
+                            From our experience, software developed by pairs, has superior quality than software developed by single developers. As a rule, we always pair with each other, rotating pairs frequently. However, we also believe that we don't need to pair 100% of the time. In simpler projects or features, we use a concept called "loose pairing", where two experienced developers will pair until they know exactly what they are doing, and whatever is left to implement is so simple that they can easily do on their own. At that time, pairing doesn't give much value, so we split. However, when mixing experienced and non-experienced developers, or at the beginning of every new feature, we always prefer to pair.
                         </div>
                     </div>
                 </div>
@@ -48,17 +43,15 @@ title: Our Practices
                         <h4 class="panel-title">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
                                href="#collapseThree">
-                                Holistic approach to Testing
+                                Agile Testing
                             </a>
                         </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
-                            We look at testing in a holistic fashion where all type of testing has a place in producing
-                            good quality software that adds value. We make a distinction between testing that supports
-                            the team (e.g. automated functional testing, unit testing etc.) verses testing that
-                            critiques the product (e.g. performance testing, manual explorative functional testing
-                            etc.).
+                            Tests go way beyond unit tests. We start our features with Acceptance Tests (ATDD), working with the product owner to define the requirements and the acceptance criteria, and to refine the domain language. We then test-drive the whole implementation of the feature until the acceptance test is satisfied.
+                            For applications where performance and throughput are important, we also create a set of automated tests that constantly monitor the non-functional aspects of the application. If a new feature or a change on existing code compromises the performance of the application, the non-functional tests will tell us straightaway.
+                            Although we always try to automate all types of repetitive tests, we also believe that manual exploratory tests are essential.
                         </div>
                     </div>
                 </div>
@@ -67,16 +60,13 @@ title: Our Practices
                         <h4 class="panel-title">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
                                href="#collapseFour">
-                                TDD the right way
+                                Test Driven Development
                             </a>
                         </h4>
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Test Driven Development is a practice that is very hard to master. It not only requires
-                            extensive practice but also a deep rooted understudying of good software design. We are
-                            mindful that badly written tests can cause more harm than good and well written tests will
-                            help keep the system flexible to change.
+                            We don't write production code without having a test that justifies it. Test Driven Development is one of our core practices; it enable us to create new features and make changes to the application quickly, giving the confidence to deploy the application in production multiple times a day if needed. Test Driven Development is a practice that is very hard to master. It not only requires extensive practice but also a deep-rooted understanding of good software design. We adopt the "London School" of TDD, also known as "outside-in" approach. Bad tests are worse than no tests. We believe that tests should be written with the same quality used for production code, which enable us to keep the system flexible and to embrace changes. After many years applying TDD in a wide variety of projects, we now master this practice and are happy to help other developers to master it, either via training or working alongside them in a project.
                         </div>
                     </div>
                 </div>
@@ -91,11 +81,7 @@ title: Our Practices
                     </div>
                     <div id="collapseFive" class="panel-collapse collapse">
                         <div class="panel-body">
-                            We believe that the team is responsible for the design of the software and the role of a
-                            technical architect is one of an advisor. The technical architect may present different ways
-                            of working however the ultimate decision as to how the system is designed, what framework
-                            library we use lies with the team. The technical architected should be an active member of
-                            the team and influence on the basis of his/her reputation as a developer.
+                            We believe that the team is responsible for the design of the software, and the role of a technical architect, if imposed by the client, is one of an advisor. The technical architect may present different ways of working, however the ultimate decision, as to how the system is designed, what framework or library we use, lies with the team. The technical architected should be an active member of the team and influence on the basis of his/her reputation as a developer. In our projects, we are always keen to listen to advices and absorb external knowledge, however, technical decisions are, ultimately, always made by the team.
                         </div>
                     </div>
                 </div>
@@ -110,9 +96,7 @@ title: Our Practices
                     </div>
                     <div id="collapseSix" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Release and deployment of an application should lie with the development team as championed
-                            by the DevOps movement. We have extensive experience in applying DevOps in highly regulated
-                            environment where it was originally thought that DevOps is not possible.
+                            Release and deployment of an application should lie with the development team as championed by the DevOps movement. We have extensive experience in applying DevOps in highly regulated environment where it was originally thought that DevOps is not possible.
                         </div>
                     </div>
                 </div>
@@ -121,20 +105,13 @@ title: Our Practices
                         <h4 class="panel-title">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
                                href="#collapseSeven">
-                                Teams own their internal process
+                                Being Agile
                             </a>
                         </h4>
                     </div>
                     <div id="collapseSeven" class="panel-collapse collapse">
                         <div class="panel-body">
-                            How a team organises it works should be left to the team. If they are not experienced with
-                            the Agile processes then a mentor can help them adapt a process to their needs. We have
-                            years of experience applying Agile processes such and Scrum and Kanban. We find they are
-                            best utilised when tailored to individual teams according to their needs. If project has a
-                            number of teams then we have found the following to be invaluable regardless of the process:
-
-                            Daily Team Standup, Daily Across Team Standup and Regular Team and Across Team
-                            Retrospectives.
+                            Teams should decide which processes they want to use. The choice of a process is context-dependent, that means, it should be chosen according to the needs, skills and maturity of the teams. After years of applying Agile processes, we believe that a good process is a process that give us a quick and short feedback loop. The feedback loop is what give us opportunities to inspect what we've done, learn from it, and come up with a plan to do things better as we move forward. This is what we call <em>Agility</em>. We don't prescribe specific processes, being Scrum, Kanban, or a mix of Agile practices. We help teams to understand their options and make their own choices of how they want to work with the focus on having a quick feedback loop and creating opportunities to learn and improve. Our teams or the teams we work with may use different processes in different projects.
                         </div>
                     </div>
                 </div>
