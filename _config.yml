@@ -5,6 +5,8 @@ markdown: rdiscount
 
 exclude: ["README.md", "_posts_TOFIX"]
 
+author_dir: blog/author
+
 tag_page_layout: tag_page
 tag_page_dir: blog/tag
 tag_page_layout: tag

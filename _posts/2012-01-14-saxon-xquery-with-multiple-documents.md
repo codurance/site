@@ -9,7 +9,9 @@ wordpress_id: 168
 categories:
 - Development
 tags:
-- xquery java saxon
+- xquery 
+- java
+- saxon
 blogimage: http://mashb.files.wordpress.com/2012/01/xquery.jpg
 ---
 

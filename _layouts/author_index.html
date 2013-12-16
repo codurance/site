@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Codurance{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/pages/blog.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_magazine.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{site.googleanalytics.account}}', 'codurance.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<!--=== Style Switcher ===-->
+<i class="style-switcher-btn icon-cogs hidden-xs"></i>
+
+<div class="style-switcher">
+    <div class="theme-close"><i class="icon-remove"></i></div>
+    <div class="theme-heading">Layouts</div>
+    <div class="text-center">
+        <a href="#" class="btn-u btn-u-green btn-block active-switcher-btn wide-layout-btn">Wide</a>
+        <a href="#" class="btn-u btn-u-green btn-block boxed-layout-btn">Boxed</a>
+    </div>
+</div>
+<!--/style-switcher-->
+<!--=== End Style Switcher ===-->
+
+<div class="top">
+    <div class="container">
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+{% include header.html %}
+<!--=== End Header ===-->
+
+{% include breadcrumb.html layout="post" %}
+
+<!--=== Content Part ===-->
+<div class="container">
+<div class="row blog-page blog-item">
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
+    <!--Blog Post-->
+    <div class="blog margin-bottom-40">
+        {% if page.date %}
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i> {{ page.date | date_to_string }}</li>
+                <li><i class="icon-pencil"></i> {{ page.author }}</li>
+            </ul>
+        </div>
+        {% endif %}
+
+
+
+
+  {% assign index = true %}
+        {% for post in site.posts %}
+          {% if post.author contains page.author %}
+            {% include post.html post=post %}
+          {% endif %}
+  {% endfor %}
+
+
+
+    </div>
+    <!--End Blog Post-->
+</div>
+<!-- End Left Sidebar -->
+
+<!-- Right Sidebar -->
+<div class="col-md-3 magazine-page">
+    <!-- Blog Latest Tweets -->
+    <div class="blog-twitter margin-bottom-30">
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- End Blog Latest Tweets -->
+</div>
+<!-- End Right Sidebar -->
+</div>
+<!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+
+<!--=== Copyright ===-->
+{% include footer.html %}
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>
+
+
+

@@ -6,10 +6,13 @@
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <ul class="list-unstyled list-inline blog-info">
             <li><i class="icon-calendar"></i> {{ post.date | date_to_string }}</li>
-            <li><i class="icon-user"></i> {{ post.author }}</li>
+            {% assign author = post.author %}
+            <li><i class="icon-user"></i> {{ author | author_links }} </li>
             {% if post.tags.size > 0 %}
             <li><i class="icon-tags"></i>
-                {{ post | tags }}
+                {% for tag in post.tags %}
+                    <a href="/blog/tag/{{ tag }}.html">{{ tag }}</a>
+                {% endfor %}
             </li>
             {% endif %}
         </ul>
