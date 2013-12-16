@@ -1,0 +1,22 @@
+{% if include.layout == 'post' %}
+<div class="breadcrumbs margin-bottom-10">
+    <div class="container">
+        <h2 class="pull-left">{% if page.tag %}{{ page.tag }} {% else %}{{ page.title }}{% endif %}</h2>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+            {% if page.title != 'Blog' %}
+            <li><a href="/blog">Blog</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% else %}
+<div class="breadcrumbs margin-bottom-40">
+    <div class="container">
+        <h1 class="pull-left">{{ page.title }}</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</div>
+{% endif %}

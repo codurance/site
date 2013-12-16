@@ -7,6 +7,8 @@ slug: project-documentation
 title: Project Documentation
 wordpress_id: 277
 blogimage: http://mashb.files.wordpress.com/2013/02/documentation.jpeg
+tags:
+- Team
 ---
 
 Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it's a general question about a framework or library then I go for the Google.

@@ -9,8 +9,8 @@ wordpress_id: 213
 categories:
 - Development
 tags:
-- java
-- spring integration
+- Java
+- Spring
 blogimage: /assets/img/blog/dispatcher-worker.jpeg
 ---
 

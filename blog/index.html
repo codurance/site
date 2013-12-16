@@ -8,30 +8,7 @@ title: Blog
         <!-- Left Sidebar -->
         <div class="col-md-12 md-margin-bottom-40">
             {% for post in paginator.posts %}
-            <!--Blog Post-->
-            <div class="row blog blog-medium margin-bottom-40">
-                <div class="col-md-4">
-                    <img class="img-responsive" src="{{post.blogimage}}" alt="">
-                </div>
-                <div class="col-md-8">
-                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    <ul class="list-unstyled list-inline blog-info">
-                        <li><i class="icon-calendar"></i> {{ post.date | date_to_string }}</li>
-                        <li><i class="icon-user"></i> {{ post.author }}</li>
-                        {% if post.tags.size > 0 %}
-                        <li><i class="icon-tags"></i>
-                            {% for tag in post.tags %}
-                                {{ tag }}&nbsp;
-                            {% endfor %}
-                        </li>
-                        {% endif %}
-                    </ul>
-                    <p>{{ post.content | strip_html | truncatewords:50}}</p>
-
-                    <p><a class="btn-u btn-u-small" href="{{ post.url }}"><i class="icon-location-arrow"></i> Read More</a>
-                    </p>
-                </div>
-            </div>
+                {% include post.html post=post %}
             {% endfor %}
 
             <!--Pagination-->

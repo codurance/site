@@ -5,6 +5,10 @@ markdown: rdiscount
 
 exclude: ["README.md", "_posts_TOFIX"]
 
+tag_page_layout: tag_page
+tag_page_dir: blog/tag
+tag_page_layout: tag
+
 paginate: 10
 paginate_path: "blog/page:num"
 
