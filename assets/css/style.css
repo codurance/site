@@ -97,6 +97,10 @@
 	color: #656565;
 }
 
+.service .desc a {
+	color: #e67e22;
+}
+
 .service .desc {
 	padding: 0 15px; 
 	overflow: hidden;
