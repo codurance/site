@@ -6,7 +6,7 @@ date: 2011-05-05 01:52:00.000000000 +01:00
 layout: post 
 --- 
 
-I was recently reading Gojko Adzic&#39;s blog
+I was recently reading Gojko Adzic's blog
 post called <a href="http://gojko.net/2011/04/05/how-is-it-even-possible-code-to-be-this-bad/">How is it even possible for code to be this
 bad?</a>
 I must admit that I was very sad to see tremendous lack of respect
@@ -18,7 +18,7 @@ an open source project deserves a lot of respect, mainly the ones
 working on projects that bring so many benefits to so many companies and
 developers around the world. The velocity that our industry moves
 forward and evolves is, in general, because of many open source
-initiatives. It&#39;s because of thousands of developers that work on the
+initiatives. It's because of thousands of developers that work on the
 their spare time, for free, to create software that will make the lives
 of many other developers, companies and users much easier. These people
 are kind enough to offer their work to all of us and are humble enough
@@ -26,9 +26,9 @@ to ask and accept help from many other developers around the globe.
 
 One thing we need to understand is that every project has a history and
 many things, throughout the lifespan of a project, can be responsible
-for the success or failure of a project. It&#39;s always easier to criticise
-something instead of trying to help and make it better. As far as I&#39;m
-aware, I don&#39;t think that anyone in the Hudson/Jenkins community ever
+for the success or failure of a project. It's always easier to criticise
+something instead of trying to help and make it better. As far as I'm
+aware, I don't think that anyone in the Hudson/Jenkins community ever
 claimed that their code base is the best example of quality software
 ever written and we all should learn from them. If that was the case,
 probably it would justify such harsh words written in the original <a href="http://gojko.net/2011/04/05/how-is-it-even-possible-code-to-be-this-bad/">blog

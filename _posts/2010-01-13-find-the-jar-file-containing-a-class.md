@@ -9,7 +9,7 @@ wordpress_id: 40
 categories:
 - Development
 tags:
-- java
+- Java
 ---
 
 I often need to know which jar file contains a particular class and I'm sure most people have that problem at some point. You can use [jarFinder](http://www.jarfinder.com) but it's not always up-to-date or the class might be in a jar private to your organisation. You can use the following command to do a search on your file systems for all jars, and search in them for the class you're trying to find:

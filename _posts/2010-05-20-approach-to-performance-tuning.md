@@ -9,7 +9,7 @@ wordpress_id: 104
 categories:
 - Development Process
 tags:
-- performance
+- Performance
 ---
 
 Performance issues in a application manifest as bottlenecks in one or more of the following 4 layers:

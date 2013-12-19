@@ -9,7 +9,7 @@ wordpress_id: 196
 categories:
 - Development Process
 tags:
-- git
+- Git
 blogimage: http://mashb.files.wordpress.com/2012/08/images.jpeg
 ---
 

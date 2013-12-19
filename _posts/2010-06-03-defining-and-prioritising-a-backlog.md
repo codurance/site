@@ -9,9 +9,9 @@ wordpress_id: 123
 categories:
 - Development Process
 tags:
-- agile
-- backlog
-- user story
+- Agile
+- Product Backlog
+- User Story
 ---
 
 What is the best way to review a backlog? How do you ensure that it is "complete"? How do you ensure that the prioritisation reflects the business vision and goals?

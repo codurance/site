@@ -9,10 +9,10 @@ wordpress_id: 19
 categories:
 - Development Process
 tags:
-- agile
-- backlog
-- jira
-- scrum
+- Agile
+- Product Backlog
+- Jira
+- Scrum
 ---
 
 [Jira](http://www.atlassian.com/software/jira/) from Atlassian  is a very popular issue tracking software and can be quite effectively used for Agile Project Management. Jira has a plugin (Green Hopper) that allows for creation of a backlog, iterations and tasks.  However, with help from the free Mylyn plugin for Eclipse I was able to setup a Product Backlog and Iteration Backlogs.

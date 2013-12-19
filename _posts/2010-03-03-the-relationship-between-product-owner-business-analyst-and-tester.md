@@ -9,8 +9,8 @@ wordpress_id: 66
 categories:
 - Development Process
 tags:
-- agile
-- scrum
+- Agile
+- Scrum
 ---
 
 In an Agile/Scrum team the Product Owner manages the Product Backlog, a Business Analyst may help further elaborate the backlog. Acceptance Criteria is "one of the" or the output of that elaboration. A Tester may futher define the Acceptance Criteria and write test scripts to verify it. What is the relationship between the three roles? Inseparable, acquaintance or in a love triangle?
