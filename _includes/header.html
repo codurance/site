@@ -29,11 +29,14 @@
                             <li {% if page.title contains 'Our Practices' %}class="active"{% endif %}><a href="/aboutus/ourpractices">Our Practices</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a <li {% if page.title contains 'Case Studies' %}class="btn-u btn-u-orange"{% endif %} href="/casestudies">Case Studies</a>
+                    </li>
                     <li class="dropdown">
                         <a <li {% if page.title contains 'Blog' or page.layout == 'post' %}class="btn-u btn-u-orange"{% endif %} href="/blog">Blog</a>
                     </li>
-                    <li>
-                        <a <li {% if page.title contains 'Case Studies' %}class="btn-u btn-u-orange"{% endif %} href="/casestudies">Case Studies</a>
+                    <li class="dropdown">
+                        <a <li {% if page.title contains 'Careers' %}class="btn-u btn-u-orange"{% endif %} href="/careers/craftsman">Careers</a>
                     </li>
                 </ul>
                 <div class="search-open">
