@@ -10,7 +10,7 @@ tags:
 - craftsmenship
 ---
 
-Of all the systems I have worked on. One of my y biggest regret has been, adding complexity where it was not needed. I was recently reminded, how easy it is to fall into that trap. 
+Of all the systems I have worked on, a big regret has been, adding complexity where it was not needed. I was recently reminded, how easy it is to fall into that trap. 
 
 We are in the process of developing a new feature for a brand new system. As part of the feature we need to run a map reduce query on a data grid. We discovered that we could optimise the query if we maintained an in-memory cache. 
 
