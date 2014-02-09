@@ -6,8 +6,7 @@ date: 2014-02-08 16:50:00.000000000 +00:00
 author: Mashooq Badar
 blogimage: /assets/img/blog/premature-optimisation.jpg
 tags:
-- development
-- craftsmenship
+- Craftsmanship
 ---
 
 Of all the projects I have worked on a big regret has been; adding complexity where it was not needed. I was recently reminded of, how easy it is to fall into that trap. 
