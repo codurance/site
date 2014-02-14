@@ -26,23 +26,23 @@ If you believe you can meet the bar set, we are **definitely interested in heari
 
 ### What is expected from a craftsman at Codurance?
 
-As a craftsman at Codurance, you are expected to do many of the following activities:
+As a craftsman at Codurance, you are expected to be able to:
 
-  * Build well-crafted bespoke applications to clients.
-  * Lead by example: You strive to work at your best, you don't cut corners, and you always behave with professionalism, regardless of which environment you are in.
-  * Work with fellow craftsmen and our clients, helping them to get better at delivering quality software.
-  * Mentor apprentices: You will be responsible for helping apprentices to become craftsmen. Although the biggest part of this mentorship will happen during working hours, be prepared to spend a few extra hours on this.
-  * Become proficient in multiple languages and technologies.
-  * Give something back to the community, writing blogs, sharing code, giving talks, running workshops, and participating in external technical communities, specially the [London Software Craftsmanship Community (LSCC)](http://londonswcraft.com).
-  * Be humble, always respecting, sharing knowledge with, and learning from developers regardless of their skill and experience, whether they are part of Codurance or not.
+  * build well-crafted bespoke applications for our clients,
+  * lead by example: you strive to work at your best, you don't cut corners, and you always behave with professionalism, regardless of which environment you are in,
+  * work with fellow craftsmen and our clients, helping them to get better at delivering quality software,
+  * mentor apprentices: helping those with less experience along their own journey in becoming a craftsman,
+  * become proficient in multiple languages and technologies,
+  * give something back to the community, writing articles, sharing code, giving talks, running workshops, and participating in external technical communities, especially the [London Software Craftsmanship Community (LSCC)](http://londonswcraft.com), and
+  * be humble, always respecting, sharing knowledge with, and learning from developers and others in the software industry, regardless of their skill and experience, whether they are part of Codurance or not.
 
 ### What are the advantages of being a craftsman at Codurance?
 
   * Exposure to many different projects, clients, industries, and technologies.
-  * Be part of an amazing team of craftsmen, which guarantees that you will always be learning.
-  * Work for a company with a flat structure, with no managers, no architects, and no team leaders. Just awesome developers.
-  * You are recognised and respected for being a great developer.
-  * Flexible working hours. As long as there is no disruption to the projects and the team agrees, you can work wherever and whenever you like.
+  * Being part of an amazing team of craftsmen, which guarantees that you will always be learning.
+  * Working for a company with a flat structure, with no managers, no architects, and no team leaders. Just awesome developers.
+  * Recognition and respect for being a great developer.
+  * Flexibility in the workplace. As long as there is no disruption to the projects and the team agrees, you can work wherever and whenever you like.
 
 ### What technologies do you use?
 
