@@ -10,7 +10,6 @@
 *.vi
 *~
 *.sass-cache
-*.ruby-version
 
 # OS or Editor folders
 .DS_Store
