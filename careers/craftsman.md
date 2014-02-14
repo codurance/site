@@ -46,7 +46,9 @@ As a craftsman at Codurance, you are expected to be able to:
 
 ### What technologies do you use?
 
-We use whatever is fit for purpose. We love trying new things and experimenting. The majority of our clients currently use Java and/or C#. Strong knowledge in at least one of the them is always an advantage but not essential.
+We use whatever is fit for purpose. We love trying new things and experimenting, and you'll be hard-pressed to find an occasion where none of us are learning a new technology, paradigm, skill or technique. We value the ability to learn new things over specific existing knowledge. Our industry is incredibly fast-paced, and there's always something new over the horizon.
+
+Right now, the majority of our clients use Java and C#. Knowledge of them or something else in the JVM and .NET ecosystems is desirable, but not essential. Everything else really does differ from client to client, and you will learn them on the job.
 
 ### I want to apply. What do I need to do?
 
