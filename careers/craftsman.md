@@ -31,7 +31,6 @@ As a craftsman at Codurance, you are expected to do many of the following activi
   * Build well-crafted bespoke applications to clients.
   * Lead by example: You strive to work at your best, you don't cut corners, and you always behave with professionalism, regardless of which environment you are in.
   * Work with fellow craftsmen and our clients, helping them to get better at delivering quality software.
-  * Travel outside London, although this will be an exception and we will always try to keep that to a minimum. The vast majority of our clients are based in London, but as a consultancy company, we may have clients in different places. We value our personal lives as much as we value our professional lives.
   * Mentor apprentices: You will be responsible for helping apprentices to become craftsmen. Although the biggest part of this mentorship will happen during working hours, be prepared to spend a few extra hours on this.
   * Become proficient in multiple languages and technologies.
   * Give something back to the community, writing blogs, sharing code, giving talks, running workshops, and participating in external technical communities, specially the [London Software Craftsmanship Community (LSCC)](http://londonswcraft.com).
@@ -53,7 +52,7 @@ We use whatever is fit for purpose. We love trying new things and experimenting.
 
 #### First phase
 
-We don't read boring CVs. If you think Codurance is for you, **drop us a line at [hello@codurance.com](mailto:hello@codurance.com)** with a brief description of who you are. Things we care about include:
+We don't read boring CVs, but we love interesting stories. If you think Codurance is for you, **drop us a line at [hello@codurance.com](mailto:hello@codurance.com)** with a brief description of who you are. Things we want to hear about include:
 
   * How passionate are you about software?
   * What does software craftsmanship mean to you?
@@ -67,13 +66,12 @@ We don't read boring CVs. If you think Codurance is for you, **drop us a line at
 
 We also want links. Lots of links. If you have any of the following, send them along.
 
-  * A blog
-  * Any books you've written
+  * Any blog posts, articles or books you've written
   * Your Twitter account
   * Any open-source projects you've worked on
   * Any pet projects you're particularly proud of
   * Your [LinkedIn](http://www.linkedin.com) profile
-  * Links to any applications you built that are publicly available
+  * Links to any applications you've worked on that are publicly available
   * Anything available online that can help us know more about you
 
 #### Second Phase
