@@ -8,6 +8,6 @@ elif [[ -s '/usr/local/rvm/scripts/rvm' ]]; then
     source '/usr/local/rvm/scripts/rvm'
 fi
 
-git push
+git push $@
 
-(cd _site && git push)
+(cd _site && git push $@)

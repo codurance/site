@@ -8,12 +8,10 @@ elif [[ -s '/usr/local/rvm/scripts/rvm' ]]; then
     source '/usr/local/rvm/scripts/rvm'
 fi
 
-message=$1
-
 bundle exec jekyll build
 (cd _site \
     && git add -A \
-    && git commit -m $message)
+    && git commit $@)
 
 git add _site
-git commit -m $message
+git commit $@
