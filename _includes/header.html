@@ -23,15 +23,15 @@
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            {{ 'Our Team' | nav_sublink: '/aboutus/ourteam' }}
-                            {{ 'Our Company' | nav_sublink: '/aboutus/ourcompany' }}
-                            {{ 'Our Services' | nav_sublink: '/aboutus/ourservices' }}
-                            {{ 'Our Practices' | nav_sublink: '/aboutus/ourpractices' }}
+                            {% nav_sublink Our Team @ /aboutus/ourteam %}
+                            {% nav_sublink Our Company @ /aboutus/ourcompany %}
+                            {% nav_sublink Our Services @ /aboutus/ourservices %}
+                            {% nav_sublink Our Practices @ /aboutus/ourpractices %}
                         </ul>
                     </li>
-                    {{ 'Case Studies' | nav_link: '/casestudies' }}
-                    {{ 'Blog' | nav_link: '/blog' }}
-                    {{ 'Careers' | nav_link: '/careers/craftsman.html' }}
+                    {% nav_link Case Studies @ /casestudies %}
+                    {% nav_link Blog @ /blog %}
+                    {% nav_link Careers @ /careers/craftsman.html %}
                 </ul>
                 <div class="search-open">
                     <div class="input-group">

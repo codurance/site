@@ -10,6 +10,7 @@ GEM
     commander (4.1.6)
       highline (~> 1.6.11)
     commonjs (0.2.7)
+    diff-lcs (1.2.5)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
     github-pages (15)
@@ -61,6 +62,14 @@ GEM
     rdiscount (2.1.7)
     redcarpet (2.3.0)
     ref (1.0.5)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.5)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.5)
     ruby-nuggets (0.9.6)
     safe_yaml (0.9.7)
     therubyracer (0.12.1)
@@ -78,4 +87,5 @@ DEPENDENCIES
   github-pages
   jekyll-less
   jekyll-tagging
+  rspec
   therubyracer
