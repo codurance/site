@@ -40,7 +40,7 @@ module Jekyll
     class LinkGroupBlock < ::Liquid::Block
       def initialize tag_name, markup, tokens
         super
-        @name, @url = ::Jekyll::Navigation::parse_link_from markup
+        @name = markup.strip
       end
 
       def render context
@@ -51,8 +51,8 @@ module Jekyll
 
         output = Builder::XmlMarkup.new
         output.li(list_item_attributes) { |li|
-          li.a('href' => @url, 'class' => 'dropdown-toggle', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false') { |a|
-            a.text! @name + ' '
+          li.a('class' => 'dropdown-toggle', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false') { |a|
+            a.text!(@name + ' ')
             a.i('class' => 'icon-angle-down') { |i|
               i << '&nbsp;'
             }

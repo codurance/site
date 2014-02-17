@@ -30,7 +30,7 @@ end
 describe Jekyll::Navigation::LinkGroupBlock do
   it 'renders a list of items with the appropriate classes' do
     rendering(<<-TEMPLATE, 'page' => {})
-      {% navgroup There\'s some links under here @ /group %}
+      {% navgroup There\'s some links under here %}
         {% navsublink One @ /group/1 %}
         {% navsublink Two @ /group/2 %}
         {% navsublink Three @ /group/3 %}
@@ -39,7 +39,7 @@ describe Jekyll::Navigation::LinkGroupBlock do
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown">
-          <a href="/group" class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
             There's some links under here
             <i class="icon-angle-down">&nbsp;</i>
           </a>
@@ -55,14 +55,14 @@ describe Jekyll::Navigation::LinkGroupBlock do
 
   it 'renders an active link when on a page in the group' do
     rendering(<<-TEMPLATE, 'page' => {'group' => 'Notable Cryptographers', 'title' => 'Alice'})
-      {% navgroup Notable Cryptographers @ /crypto %}
+      {% navgroup Notable Cryptographers %}
         {% navsublink Alice @ /crypto/alice %}
         {% navsublink Bob @ /crypto/bob %}
       {% endnavgroup %}
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown active">
-          <a href="/crypto" class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
             Notable Cryptographers
             <i class="icon-angle-down">&nbsp;</i>
           </a>
