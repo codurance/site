@@ -17,21 +17,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown {% if page.group contains 'About Us' %}active{% endif %}" >
-                        <a href="/aboutus/ourcompany" class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
-                          About Us
-                            <i class="icon-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            {% nav_sublink Our Team @ /aboutus/ourteam %}
-                            {% nav_sublink Our Company @ /aboutus/ourcompany %}
-                            {% nav_sublink Our Services @ /aboutus/ourservices %}
-                            {% nav_sublink Our Practices @ /aboutus/ourpractices %}
-                        </ul>
-                    </li>
-                    {% nav_link Case Studies @ /casestudies %}
-                    {% nav_link Blog @ /blog %}
-                    {% nav_link Careers @ /careers/craftsman.html %}
+                    {% navgroup About Us @ /aboutus/ourcompany %}
+                        {% navsublink Our Team @ /aboutus/ourteam %}
+                        {% navsublink Our Company @ /aboutus/ourcompany %}
+                        {% navsublink Our Services @ /aboutus/ourservices %}
+                        {% navsublink Our Practices @ /aboutus/ourpractices %}
+                    {% endnavgroup %}
+                    {% navlink Case Studies @ /casestudies %}
+                    {% navlink Blog @ /blog %}
+                    {% navlink Careers @ /careers/craftsman.html %}
                 </ul>
                 <div class="search-open">
                     <div class="input-group">

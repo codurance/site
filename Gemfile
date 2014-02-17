@@ -8,4 +8,5 @@ gem 'therubyracer' # undeclared dependency of jekyll-less
 
 group :test do
   gem 'rspec'
+  gem 'test_xml'
 end

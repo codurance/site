@@ -6,9 +6,7 @@ module Jekyll
     class LinkTag < ::Liquid::Tag
       def initialize tag_name, markup, tokens
         super
-        @name, @url = markup.split(/ @ /)
-        @name.strip!
-        @url.strip!
+        @name, @url = ::Jekyll::Navigation::parse_link_from markup
       end
 
       def render context
@@ -25,9 +23,7 @@ module Jekyll
     class SubLinkTag < ::Liquid::Tag
       def initialize tag_name, markup, tokens
         super
-        @name, @url = markup.split(/ @ /)
-        @name.strip!
-        @url.strip!
+        @name, @url = ::Jekyll::Navigation::parse_link_from markup
       end
 
       def render context
@@ -41,14 +37,40 @@ module Jekyll
       end
     end
 
-  private
+    class LinkGroupBlock < ::Liquid::Block
+      def initialize tag_name, markup, tokens
+        super
+        @name, @url = ::Jekyll::Navigation::parse_link_from markup
+      end
 
-    def current_page? name
-      page_title = @context['page']['title']
-      page_title == name
+      def render context
+        page_group_title = context['page']['group']
+        list_item_attributes = page_group_title == @name ? {'class' => 'dropdown active'} : {'class' => 'dropdown'}
+
+        contents = super
+
+        output = Builder::XmlMarkup.new
+        output.li(list_item_attributes) { |li|
+          li.a('href' => @url, 'class' => 'dropdown-toggle', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false') { |a|
+            a.text! @name + ' '
+            a.i('class' => 'icon-angle-down') { |i|
+              i << '&nbsp;'
+            }
+          }
+          li.ul('class' => 'dropdown-menu') { |ul|
+            ul << contents
+          }
+        }
+      end
+    end
+
+    def self.parse_link_from markup
+      name, url = markup.split(/ @ /)
+      [name.strip, url.strip]
     end
   end
 end
 
-Liquid::Template.register_tag('nav_link', Jekyll::Navigation::LinkTag)
-Liquid::Template.register_tag('nav_sublink', Jekyll::Navigation::SubLinkTag)
+Liquid::Template.register_tag('navlink', Jekyll::Navigation::LinkTag)
+Liquid::Template.register_tag('navsublink', Jekyll::Navigation::SubLinkTag)
+Liquid::Template.register_tag('navgroup', Jekyll::Navigation::LinkGroupBlock)
