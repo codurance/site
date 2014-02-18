@@ -50,36 +50,4 @@ We use whatever is fit for purpose. We love trying new things and experimenting,
 
 Right now, the majority of our clients use Java and C#. Knowledge of them or something else in the JVM and .NET ecosystems is desirable, but not essential. Everything else really does differ from client to client, and you will learn them on the job.
 
-### I want to apply. What do I need to do?
-
-#### First phase
-
-We don't read boring CVs, but we love interesting stories. If you think Codurance is for you, **drop us a line at [hello@codurance.com](mailto:hello@codurance.com)** with a brief description of who you are. Things we want to hear about include:
-
-  * How passionate are you about software?
-  * What does software craftsmanship mean to you?
-  * With which technologies are you comfortable?
-  * Which technologies are you currently learning?
-  * Which technologies would you like to learn?
-  * What are your favourite technical books / blogs?
-  * Which technical communities do you **actively** participate in?
-  * Have you spoken at or attended any conferences? Which ones?
-  * Are there any pet projects you are working on? Tell us about them. And relax; we promise not to steal your ideas and won't tell anyone.
-
-We also want links. Lots of links. If you have any of the following, send them along.
-
-  * Any blog posts, articles or books you've written
-  * Your Twitter account
-  * Any open-source projects you've worked on
-  * Any pet projects you're particularly proud of
-  * Your [LinkedIn](http://www.linkedin.com) profile
-  * Links to any applications you've worked on that are publicly available
-  * Anything available online that can help us know more about you
-
-#### Second Phase
-
-We are going to send you some requirements and you will need to implement a small application—slightly bigger than a kata. It can be done in a few hours, maybe a day. You choose which language and tools you want to use.
-
-#### Third Phase
-
-If we liked your code, we will be inviting you in to meet us and to pair with us for a few hours. You will need to bring your own laptop with your favourite language, development environment, libraries and tools all set up. (If you don't have a laptop, just let us know.)
+{% include careers/application_process.md %}
