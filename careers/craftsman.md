@@ -1,5 +1,6 @@
 ---
 layout: careers
+role: Craftsman
 ---
 
 # Software Craftsman
