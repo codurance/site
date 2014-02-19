@@ -6,7 +6,7 @@ layout: careers
 
 ### What is an apprenticeship?
 
-An apprenticeship under Codurance is a process of learning, where you hone the skills that are absolutely essential for a software craftsman under the guidance of a dedicated mentor.
+An apprenticeship under Codurance is a process of learning. Guided by a dedicated mentor, you will hone the skills that are absolutely essential for a software craftsman.
 
 Different people have different abilities. You're probably quite experienced in some facets of software development, but have little exposure in others. As part of your apprenticeship, you'll learn:
 
