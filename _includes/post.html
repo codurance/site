@@ -1,6 +1,9 @@
 <div class="row blog blog-medium margin-bottom-40">
     <div class="col-md-4">
-        <img class="img-responsive" src="{{post.image.src}}" alt="">
+        <p><img class="img-responsive" src="{{post.image.src}}" alt=""/></p>
+        {% if post.image.attribution %}
+            <p class="blog-image-attr"><a href="{{post.image.attribution.href}}">{{post.image.attribution.text}}</a></p>
+        {% endif %}
     </div>
     <div class="col-md-8">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
