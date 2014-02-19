@@ -8,7 +8,7 @@ elif [[ -s '/usr/local/rvm/scripts/rvm' ]]; then
     source '/usr/local/rvm/scripts/rvm'
 fi
 
-bundle exec jekyll build
+rake build
 (cd _site \
     && git add -A \
     && git commit $@)

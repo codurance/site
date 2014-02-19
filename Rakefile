@@ -5,3 +5,11 @@ RSpec::Core::RakeTask.new(:spec) do |task|
 end
 
 task :test => :spec
+
+task :build do
+  sh 'bundle exec jekyll build --trace'
+end
+
+task :serve do
+  sh 'bundle exec jekyll serve --watch --trace'
+end
