@@ -8,7 +8,8 @@ title: The difference between UI Designer and UI Developer
 wordpress_id: 139
 categories:
 - Development
-blogimage: http://mashb.files.wordpress.com/2011/10/art-director.jpg
+image:
+    src: http://mashb.files.wordpress.com/2011/10/art-director.jpg
 ---
 
 In a previous post I talked about developers distinguishing themselves as specialists in a particular part of the application e.g. server side, gui, database etc. This kind of specialisation is counter productive to creating good software. However, there are roles where the specialisation is important.

@@ -10,7 +10,8 @@ categories:
 - Development
 tags:
 - TDD
-blogimage: http://mashb.files.wordpress.com/2011/10/complex.gif
+image:
+    src: http://mashb.files.wordpress.com/2011/10/complex.gif
 ---
 
 Recently I've been exposed to a number of projects that have been going on for a few years. As you'd expect they are at a stage where the cost of change is phenomenal. The codebase is large, convoluted and very difficult to understand. However, there are a lot of tests both at the system and unit level. A sigh of relief - if the code has a lot of tests then at least that would make refactoring easier. The reality is very different - the tests are even more complicated then the code and significantly add to the cost of change.

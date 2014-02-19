@@ -12,7 +12,8 @@ tags:
 - Xquery 
 - Java
 - Saxon
-blogimage: http://mashb.files.wordpress.com/2012/01/xquery.jpg
+image:
+    src: http://mashb.files.wordpress.com/2012/01/xquery.jpg
 ---
 
 Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I'm always baffled with it's lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.

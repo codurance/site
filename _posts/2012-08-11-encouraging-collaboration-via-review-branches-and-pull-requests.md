@@ -10,7 +10,8 @@ categories:
 - Development Process
 tags:
 - Git
-blogimage: http://mashb.files.wordpress.com/2012/08/images.jpeg
+image:
+    src: http://mashb.files.wordpress.com/2012/08/images.jpeg
 ---
 
 I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.

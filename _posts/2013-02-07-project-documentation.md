@@ -6,7 +6,8 @@ layout: post
 slug: project-documentation
 title: Project Documentation
 wordpress_id: 277
-blogimage: http://mashb.files.wordpress.com/2013/02/documentation.jpeg
+image:
+    src: http://mashb.files.wordpress.com/2013/02/documentation.jpeg
 tags:
 - Team
 ---

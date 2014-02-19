@@ -8,7 +8,8 @@ title: Design aligned to the Problem Vs Design aligned to the Technology
 wordpress_id: 134
 categories:
 - Development
-blogimage: http://mashb.files.wordpress.com/2011/10/web_design.png
+image:
+    src: http://mashb.files.wordpress.com/2011/10/web_design.png
 ---
 
 Lets develop a web app from start: Well I know Java pretty well so it's going to be Java and then the de facto design is Spring + Hibernate with Spring MVC. I know I'll push the boat out get some AJAX in the mix. Wait I'm no "GUI developer" so let's go for GWT it'll generate my Javascript.

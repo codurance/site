@@ -8,7 +8,8 @@ title: The Spirit to Improve
 wordpress_id: 205
 categories:
 - Development Process
-blogimage: http://mashb.files.wordpress.com/2012/09/improve.jpg
+image:
+    src: http://mashb.files.wordpress.com/2012/09/improve.jpg
 ---
 
 This week in our weekly design committee, on of the developer demonstrated how to use the Saxon Injectors to create mock XQuery functions for unit testing.

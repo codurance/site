@@ -4,7 +4,8 @@ name: resist-just-in-case
 title: Resist the "Just in Case"
 date: 2014-02-08 16:50:00.000000000 +00:00 
 author: Mashooq Badar
-blogimage: /assets/img/blog/premature-optimisation.jpg
+image:
+    src: /assets/img/blog/premature-optimisation.jpg
 tags:
 - Craftsmanship
 ---

@@ -8,7 +8,8 @@ title: Encouraging Collaboration via Design Committee
 wordpress_id: 201
 categories:
 - Development Process
-blogimage: http://mashb.files.wordpress.com/2012/08/125072659262p56k.jpg
+image:
+    src: http://mashb.files.wordpress.com/2012/08/125072659262p56k.jpg
 ---
 
 Agile process promotes the view that system design emerges and evolves throughout it's life. It is a result of continuos discussions and decisions by the teams.
