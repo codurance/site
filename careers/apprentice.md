@@ -6,7 +6,9 @@ layout: careers
 
 ### What is an apprenticeship?
 
-Different people have different abilities. You're probably an expert in some facets of software development, but have no experience in others. As part of your apprenticeship, you'll learn:
+An apprenticeship under Codurance is a process of learning, where you hone the skills that are absolutely essential for a software craftsman under the guidance of a dedicated mentor.
+
+Different people have different abilities. You're probably quite experienced in some facets of software development, but have little exposure in others. As part of your apprenticeship, you'll learn:
 
   * the intricacies in **crafting code** that is simple, clean, maintainable and easy to reason about
   * how to orient your **software design** around business domains
@@ -18,7 +20,7 @@ Different people have different abilities. You're probably an expert in some fac
   * **speaking** and **negotiating** skills, to allow you to convey your ideas about how to approach a solution
   * **tools** and **libraries** that help us become better at our craft
 
-You won't be doing this alone. You'll have a dedicated mentor who will take responsibility for helping you grow and pushing your boundaries. What you learn, though, is really **up to you**: you'll decide what you'd like to focus upon and how you'd like to approach it.
+You won't be doing this alone. Your mentor will take responsibility for helping you grow and pushing your boundaries. What you learn, though, is really **up to you**: you'll decide what you'd like to focus upon and how you'd like to approach it.
 
 ### How long is an apprenticeship, and what happens afterwards?
 
@@ -39,7 +41,7 @@ You should be proficient in software development, but you don't necessarily need
 
 ### Why do you take on apprentices?
 
-It's unlikely that a practitioner of the craft of software development has been exposed to everything that a career as a software craftsman demands. The role, by necessity, expects that an experienced craftsman can work with an entire business to transform their approach to software design, development, testing and more.
+It's unlikely that a practitioner of the craft of software development has been exposed to everything that a career as a software craftsman demands. An experienced craftsman can work with an entire business to transform their approach to software design, development, modelling, testing and more.
 
 We are looking for apprentices because we feel the skills and mindset required of a software craftsman are more than those needed for the average software developer. By training each and every craftsman, we can ensure you are capable of tackling the biggest challenges.
 
