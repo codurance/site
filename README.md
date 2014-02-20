@@ -6,33 +6,20 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 Run `bundle install` to install the required Gems. If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`.
 
-The *_site* directory is a submodule pointing to the gh-pages branch. When the site is built, it is built into this directory and then committed. Initialise it using the following commands:
-
-```shell
-git submodule init
-git submodule update
-```
-
 ## Building
 
-To build the site, run `bundle exec jekyll build`. You will not often have to do this manually, as it's handled by the `commit` command (see *Committing*).
+To build the site, run `bundle exec jekyll build`. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
 
 ## Serving the Web Site Locally
 
-The following command will serve the web site at [http://localhost:4000/][]. Run it in the background so you can test your changes.
+Running `rake serve` will serve the web site at [http://localhost:4000/][]. Run it in the background so you can test your changes.
 
-```shell
-bundle exec jekyll serve --watch
-```
+## Running the Tests
 
-## Committing
-
-Because both the *master* and *gh-pages* branches need to be committed, it's easiest to use a separate script. Instead of `git commit`, type `./commit`. For example:
-
-```shell
-./commit -m 'I did a thing!'
-```
+There are some tests around the custom Jekyll plugins for navigation. Run them with `rake spec`.
 
 ## Deploying to Production
 
-Just type `./deploy` to push both the *master* and *gh-pages* branches.
+When you push the *master* branch, Travis CI will kick off [the deployment build](https://travis-ci.org/codurance/site), which will run the tests, generate the site and push it to the *gh-pages* branch.
+
+If you want to push code without deploying a new version of the site, make sure you work in a feature branch, rather than on *master* directly.
