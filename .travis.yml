@@ -1,6 +1,7 @@
 language: ruby
 rvm:
     - 2.0.0
+cache: bundler
 secure: "NQocb3e5c+lwfh+QoJb0rbAmwUIwdgFM1Zw2MVjW3xPzE1dH+B2RP1V9vJQmZekXH+ZkG7FAVhU77kfn2mSB1/v80fIqOfu5iAxPOXph5t2jiTG1g3F2puHEIG9hQGdadxPjl97b83GCFRKDrNxlE7ws2QQYDm9L284P3KtU0DY="
 script:
     - bundle exec rake
