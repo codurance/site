@@ -4,14 +4,3 @@ rvm:
 secure: "NQocb3e5c+lwfh+QoJb0rbAmwUIwdgFM1Zw2MVjW3xPzE1dH+B2RP1V9vJQmZekXH+ZkG7FAVhU77kfn2mSB1/v80fIqOfu5iAxPOXph5t2jiTG1g3F2puHEIG9hQGdadxPjl97b83GCFRKDrNxlE7ws2QQYDm9L284P3KtU0DY="
 after_success:
     - _utility/publish.sh
-script: |
-    set -e
-    COMMIT_MESSAGE="$(git log -1 --pretty=format:%B HEAD)"
-    bundle exec rake test
-    git clone git@github.com:codurance/site.git _site
-    bundle exec rake build
-    cd _site
-    git checkout gh-pages
-    git add -A
-    git commit -m "$COMMIT_MESSAGE"
-    git push
