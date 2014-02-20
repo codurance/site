@@ -6,6 +6,10 @@ gem 'jekyll-less'
 gem 'jekyll-tagging'
 gem 'therubyracer' # undeclared dependency of jekyll-less
 
+group :development do
+  gem 'travis'
+end
+
 group :test do
   gem 'rspec'
   gem 'test_xml'
