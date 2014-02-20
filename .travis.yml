@@ -1,8 +1,10 @@
 language: ruby
 rvm:
-    - 2.0.0
+- 2.0.0
 cache: bundler
-secure: "NQocb3e5c+lwfh+QoJb0rbAmwUIwdgFM1Zw2MVjW3xPzE1dH+B2RP1V9vJQmZekXH+ZkG7FAVhU77kfn2mSB1/v80fIqOfu5iAxPOXph5t2jiTG1g3F2puHEIG9hQGdadxPjl97b83GCFRKDrNxlE7ws2QQYDm9L284P3KtU0DY="
 script:
-    - bundle exec rake
-    - _utility/publish.sh
+- bundle exec rake
+- _utility/publish.sh
+env:
+  global:
+    secure: h3Kw8ZuCGJh9QyQMoyivjTzLa43Kby40ycZkjNEfNRqrwXbfyPLMHbty3RiZ/NvYm25BvHMi30EMiqz/EnN0IQYK9APIqOZ/aGSQxgTzQEwMa5qyEr804YvdEHwyhPpxtlDWSOcjaaRuK3ENXqjPwCAGUDtQ6/oXAOyOM9bsg9A=
