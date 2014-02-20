@@ -3,7 +3,7 @@ pygments: true
 permalink: /blog/:year/:month/:title/
 markdown: rdiscount
 
-exclude: ["README.md", "_posts_TOFIX"]
+exclude: ["README.md", "_posts_TOFIX", "vendor"]
 
 author_dir: blog/author
 
