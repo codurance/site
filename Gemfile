@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rake'
+
 gem 'builder'
 gem 'github-pages'
 gem 'jekyll-less'
