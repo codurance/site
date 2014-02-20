@@ -1,14 +1,14 @@
 # [Codurance Web Site](http://codurance.com/)
 
-This is the source of the Codurance web site. It is built and pushed to the [*gh_pages*](https://github.com/codurance/site/tree/gh-pages) branch.
+This is the source of the Codurance web site. It is built and pushed to the [*gh-pages*](https://github.com/codurance/site/tree/gh-pages) branch.
 
 ## Initialisation
 
-Run `bundle install` to install the required Gems. If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`.
+Run `bundle install` to install the required Gems. If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`, which will help you isolate your gems from your standard Ruby installation.
 
 ## Building
 
-To build the site, run `bundle exec jekyll build`. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
+To build the site, run `rake build`. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
 
 ## Serving the Web Site Locally
 
