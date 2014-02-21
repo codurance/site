@@ -1,6 +1,6 @@
 url: "http://codurance.com"
 pygments: true
-permalink: /blog/:year/:month/:title/
+permalink: pretty
 markdown: rdiscount
 
 exclude: ["README.md", "_posts_TOFIX", "vendor"]
