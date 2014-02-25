@@ -1,6 +1,7 @@
 ---
 layout: training
 title: Training
+image: /assets/img/services/training/redgreenrefactor.png
 ---
 
 # Crafting Code - 2 days
