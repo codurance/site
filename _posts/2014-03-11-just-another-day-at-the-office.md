@@ -1,7 +1,7 @@
 ---
 layout: post
-name: just-another-day-in-the-office
-title: Just another day in the office
+name: just-another-day-at-the-office
+title: Just Another Day at the Office
 date: 2014-03-11 20:00:00.000000000 +00:00
 author: Sandro Mancuso
 image:
@@ -20,4 +20,4 @@ Just before midday, a couple of hours after Dr. Smith gave us the news, I was ou
 
 I don't know where Dr. Smith was going—probably to get some lunch and get ready to make a difference in someone else's life in the afternoon. At 9pm, Dr. Smith was back to check on Samuel. He conducted a few more exams and said that Samuel was good to go home in the morning. _"Nothing to worry about. Everything went according to plan. Although we will still need to do a few follow ups as Samuel grows, he is ready for a perfectly normal life."_ 
 
-For Dr. Smith, this was just another day in the office. Another ordinary day where his mastery in conducting heart procedures made a difference to someone’s life. Another ordinary day when he will get home and feel proud—proud of his craft and his skills; proud of being a great professional; proud of making a difference. Another ordinary day... Everyday.
+For Dr. Smith, this was just another day at the office. Another ordinary day where his mastery in conducting heart procedures made a difference to someone’s life. Another ordinary day when he will get home and feel proud—proud of his craft and his skills; proud of being a great professional; proud of making a difference. Another ordinary day... Everyday.
