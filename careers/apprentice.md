@@ -25,7 +25,7 @@ You won't be doing this alone. Your mentor will take responsibility for helping 
 
 ### How long is an apprenticeship, and what happens afterwards?
 
-An apprenticeship is flexible; we expect it to take somewhere around three months, but depending on experience, it can be anywhere from two months to six. Once we're happy that you can work with our customers to the standard set by our existing craftsmen, you'll be offered a brand new contract as a craftsman at Codurance.
+An apprenticeship is flexible; we expect it to take somewhere between three and six months, but depending on experience, it can be longer or shorter. The duration doesn't matter to us, as long as you're learning. Once we're happy that you can work with our customers to the standard set by our existing craftsmen, you'll be offered a brand new contract as a craftsman at Codurance.
 
 ### What are you looking for in an apprentice?
 
