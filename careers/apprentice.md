@@ -9,19 +9,19 @@ role: Apprentice
 
 An apprenticeship under Codurance is a process of learning. Guided by a dedicated mentor, you will hone the skills that are absolutely essential for a software craftsman.
 
-Different people have different abilities. You're probably quite experienced in some facets of software development, but have little exposure in others. As part of your apprenticeship, you'll learn:
+Different people have different abilities. You might be new to software development, or you might already have some experience. As part of your apprenticeship, you'll learn:
 
-  * the intricacies in **crafting code** that is simple, clean, maintainable and easy to reason about
-  * how to orient your **software design** around business domains
+  * how to **craft code** that is simple, clean, maintainable and easy to reason about
+  * how to orient your **software design** around goals
   * **confidence** in your code that comes from applying Extreme Programming practices
-  * software development **methodologies** that facilitate craftsmanship, including Agile and Lean
+  * software development **methodologies**, including Agile and Lean
   * **paradigms** and **design patterns** we apply to our code to clarify its intent
   * the mentality behind **Test-Driven Development** and how we test our code
   * the full **development lifecycle**, from your first print statement to a full system living in a production environment
   * **speaking** and **negotiating** skills, to allow you to convey your ideas about how to approach a solution
   * **tools** and **libraries** that help us become better at our craft
 
-You won't be doing this alone. Your mentor will take responsibility for helping you grow and pushing your boundaries. What you learn, though, is really **up to you**: you'll decide what you'd like to focus upon and how you'd like to approach it.
+You won't be doing this alone. Your mentor will take responsibility for helping you grow and pushing your boundaries. What you learn, though, is really up to you: you'll decide what you'd like to focus upon and how you'd like to approach it.
 
 ### How long is an apprenticeship, and what happens afterwards?
 
@@ -29,7 +29,7 @@ An apprenticeship is flexible; we expect it to take somewhere between three and 
 
 ### What are you looking for in an apprentice?
 
-We abide by a set of values, and are looking for apprentices who understand why. We want people who have:
+We abide by a set of values, and are looking for apprentices who understand why. You don't need to have to have worked professionally. We want people who have:
 
   * the willingness to learn
   * an openness to new ideas
@@ -38,12 +38,25 @@ We abide by a set of values, and are looking for apprentices who understand why.
   * a flexible approach
   * the desire to create things of the highest quality
 
-You should be proficient in software development, but you don't necessarily need to have worked professionally. A lot of the skills and practices you will learn are not common even in industrial settings, which is part of the reason we can have such an impact with our customers.
+### I want to apply. What do I need to do?
 
-### Why do you take on apprentices?
+If you think Codurance is for you, drop us a line at **[hello@codurance.com](mailto:hello@codurance.com)** and tell us your story. If you're stuck for things to talk about, we have some suggestions:
 
-It's unlikely that a practitioner of the craft of software development has been exposed to everything that a career as a software craftsman demands. An experienced craftsman can work with an entire business to transform their approach to software design, development, modelling, testing and more.
+  * How passionate are you about software?
+  * With which technologies are you comfortable?
+  * Which technologies are you currently learning?
+  * Which technologies would you like to learn?
+  * Do you have any favourite technical books / blogs?
+  * Do you participate in any technical communities?
+  * Are there any pet projects you are working on? Tell us about them. And relax; we promise not to steal your ideas and won't tell anyone.
 
-We are looking for apprentices because we feel the skills and mindset required of a software craftsman are more than those needed for the average software developer. By training each and every craftsman, we can ensure you are capable of tackling the biggest challenges.
+We also want links. If you're up for sharing any of the following, send them along. If you don't have them, that's not a problem; we value people, not text.
 
-{% include careers/application_process.md %}
+  * any blog posts or articles you've written
+  * your Twitter account
+  * any open-source projects you've worked on
+  * any pet projects you're particularly proud of
+  * links to any applications you've worked on that are publicly available
+  * anything else that can help us know more about you
+
+Then just sit back and relax. We'll be in touch.
