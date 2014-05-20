@@ -6,7 +6,7 @@ if ! [[ "$TRAVIS_REPO_SLUG" == 'codurance/site'
      && "$TRAVIS_PULL_REQUEST" == 'false'
      && "$TRAVIS_BRANCH" == 'master'
 ]]; then
-    return
+    exit 0
 fi
 
 git config --global user.name 'Travis CI'
