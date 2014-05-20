@@ -51,4 +51,27 @@ We use whatever is fit for purpose. We love trying new things and experimenting,
 
 Right now, the majority of our clients use Java and C#. Knowledge of them or something else in the JVM and .NET ecosystems is desirable, but not essential. Everything else really does differ from client to client, and you will learn them on the job.
 
-{% include careers/application_process.md %}
+### I want to apply. What do I need to do?
+
+If you think Codurance is for you, drop us a line at **[hello@codurance.com](mailto:hello@codurance.com)** and tell us your story. If you're stuck for things to talk about, we have some suggestions:
+
+  * How passionate are you about software?
+  * What does software craftsmanship mean to you?
+  * With which technologies are you comfortable?
+  * Which technologies are you currently learning?
+  * Which technologies would you like to learn?
+  * What are your favourite technical books / blogs?
+  * Which technical communities do you **actively** participate in?
+  * Have you spoken at or attended any conferences? Which ones?
+  * Are there any pet projects you are working on? Tell us about them. And relax; we promise not to steal your ideas and won't tell anyone.
+
+We also want links. If you're up for sharing any of the following, send them along. If you don't have them, that's not a problem; we value people, not text.
+
+  * any blog posts or articles you've written
+  * your Twitter account
+  * any open-source projects you've worked on
+  * any pet projects you're particularly proud of
+  * links to any applications you've worked on that are publicly available
+  * anything else that can help us know more about you
+
+Then just sit back and relax. We'll be in touch.
