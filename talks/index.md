@@ -3,6 +3,25 @@ layout: talks
 title: Talks
 ---
 
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
+            <p>Software Craftsmanship<p>
+        </div>
+        <div class="description">
+             <p>After over ten years since the Agile summit, software projects are still failing and developers are still behaving and being treated as factory workers. The software development industry is still very amateur when compared to other professions. How can we change this? Why Agile was not sufficient? Why so many clients are unhappy with their software projects? Why is it so difficult to find good developers? Our industry needs more professionalism and that’s what Software Craftsmanship brings to the table. In this talk Sandro will be explaining: what Software Craftsmanship really is, the value of technical practices, what it means to be a professional software developer and what to do to satisfy our customers.</p>
+        </div>
+        <div class="time-place">
+            <p>17 Apr 2014 - Devoxx France - Paris, France</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <a href="http://www.parleys.com/play/536770f0e4b04bb59f502713/chapter0/about" target="_blank">
+            <img src="/assets/img/talks/sc_devoxx_2014.png" height="281" width="500"/>
+        </a>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-6">
