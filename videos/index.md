@@ -1,6 +1,6 @@
 ---
 layout: videos
-title: Videos
+title: Presentations, Screencasts, and Interviews
 ---
 
 <div class="row">
