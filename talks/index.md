@@ -21,6 +21,23 @@ title: Talks
     </div>
 </div>
 
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
+            <p>UGtastic Interviews Sandro Mancuso<p>
+        </div>
+        <div class="description">
+             <p>In this interview, right after his talk "Craftsmanship: A few years on", Sandro discusses the future of of Software Craftsmanship and addresses some of the criticism on Software Craftsmanship movement.</p>
+        </div>
+        <div class="time-place">
+            <p>9 Nov 2013 - Software Craftsmanship North America (SCNA) - Chicago, USA</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe width="500" height="281" src="//www.youtube.com/embed/WHsoSYPvDec?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-6">
@@ -65,6 +82,24 @@ title: Talks
 <div class="row">
     <div class="col-md-6">
         <div class="title">
+            <p>UGtastic Interviews Sandro Mancuso<p>
+        </div>
+        <div class="description">
+             <p>In this interview Sandro talks Software Craftsmanship communities in London and Europe.</p>
+        </div>
+        <div class="time-place">
+            <p>Dec 2012 - Chicago, USA</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe src="//player.vimeo.com/video/54327320?color=ffffff" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/54327320">Sandro Mancuso</a> from <a href="http://vimeo.com/ugtastic">UGtastic</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
             <p>Curing Agile Hangover with Craftsmanship<p>
         </div>
         <div class="description">
@@ -77,7 +112,7 @@ title: Talks
     </div>
 
     <div class="col-md-6">
-        <iframe src="//player.vimeo.com/video/44243846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/44243846">Sandro Mancuso/Masook Badar - Curing Agile Hangover with Craftsmanship</a> from <a href="http://vimeo.com/agilece">ACE! Conferences</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <iframe src="//player.vimeo.com/video/44243846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/44243846">Sandro Mancuso/Mashooq Badar - Curing Agile Hangover with Craftsmanship</a> from <a href="http://vimeo.com/agilece">ACE! Conferences</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     </div>
 </div>
 
