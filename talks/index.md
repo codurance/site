@@ -3,6 +3,25 @@ layout: talks
 title: Talks
 ---
 
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
+            <p>Screencast: Explanatory Methods<p>
+        </div>
+        <div class="description">
+             <p>Using explanatory methods to make the code more readable, expressing the business rules.</p>
+        </div>
+        <div class="time-place">
+            <p>9 Apr 2014</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe width="500" height="281" src="//www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-md-6">
         <div class="title">
