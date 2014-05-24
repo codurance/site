@@ -155,6 +155,26 @@ title: Videos
 <div class="row">
     <div class="col-md-6">
         <div class="title">
+            <p>Functional Programming is cool, but do you know OO?<p>
+        </div>
+        <div class="description">
+             <p>Functional programming is becoming more and more popular, and for good reasons, but now a big number of developers are bashing Object Oriented Programming. However, how much do we really know about Object Oriented Programming? Inheritance, Encapsulation and Polymorphism is OOP for kids. In this talk Sandro will be explaining many OOP/OOD principles and practices that every developer should always have in their minds before writing any line of code. You will also notice that many of these principles also apply to different programming paradigms like functional programming.</p>
+        </div>
+        <div class="time-place">
+            <p>26 Mar 2013 - Devoxx UK - London, UK</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <a href="http://www.parleys.com/play/51aa0172e4b01033a7e4b67a/chapter0/about" target="_blank">
+            <img src="/assets/img/videos/devoxx_london_2013.png" height="281" width="500"/>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
             <p>Testing and Refactoring Legacy Code<p>
         </div>
         <div class="description">
