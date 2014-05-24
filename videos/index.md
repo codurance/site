@@ -6,6 +6,32 @@ title: Videos
 <div class="row">
     <div class="col-md-6">
         <div class="title">
+            <p>Testing and Refactoring Legacy Code<p>
+        </div>
+        <div class="description">
+             <p>Do you find working with legacy code tough? No tests, no documentation, and fear of breaking other parts of the code. Join Sandro Mancuso who will show you the only way to deal with these problems is to test and refactor merciless.</p>
+
+            <p>For the majority of us, legacy code is part of our life and learning how to embrace it can make things far more enjoyable. In this live coding session, Sandro will be demonstrating how to overcome the most common problems found when testing legacy code.</p>
+
+            <p>He will be taking a piece of messy Java code, test it until is 100% covered and then show how to refactor it in order to bring the business language and requirements to life.</p>
+
+            <p>This session is full of tips and tricks you can start applying immediately. Although the code is in Java, the same principles can be applied in any language</p>
+        </div>
+        <div class="time-place">
+            <p>21 May 2014 - In The Brain of Sandro Mancuso - SkillsMatter - London, UK</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <a href="https://skillsmatter.com/skillscasts/5251-testing-and-refactoring-legacy-code" target="_blank">
+            <img src="/assets/img/videos/legacycode_skillsmatter.png" height="281" width="500"/>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
             <p>Software Craftsmanship<p>
         </div>
         <div class="description">
