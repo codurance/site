@@ -1,6 +1,6 @@
 ---
-layout: talks
-title: Talks
+layout: videos
+title: Videos
 ---
 
 <div class="row">
@@ -18,7 +18,7 @@ title: Talks
 
     <div class="col-md-6">
         <a href="http://www.parleys.com/play/536770f0e4b04bb59f502713/chapter0/about" target="_blank">
-            <img src="/assets/img/talks/sc_devoxx_2014.png" height="281" width="500"/>
+            <img src="/assets/img/videos/sc_devoxx_2014.png" height="281" width="500"/>
         </a>
     </div>
 </div>
