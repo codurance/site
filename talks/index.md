@@ -60,6 +60,37 @@ title: Talks
 <div class="row">
     <div class="col-md-6">
         <div class="title">
+            <p>4 Rules of Simple Design –> Higher-Order Functions<p>
+        </div>
+        <div class="description">
+             <p>Quoting @jbrains, “A design is simple to the extent that it:
+                <ol>
+                    <li>Passes its tests</li>
+                    <li>Minimizes duplication</li>
+                    <li>Maximizes clarity</li>
+                    <li>Maximizes clarity"</li>
+                </ol>
+            </p>
+            <p>I want to demonstrate how object-oriented principles can only get you so far in simplifying your design.
+            Starting with a clean yet completely imperative code base written in Java, I will explain how we can improve the code by applying functional principles—primarily extracting functions as objects and passing them around.
+            Along the way, I will be pointing out how each refactor simplifies the code according to one or more of the four rules.
+            We will start by removing duplication, even where duplication isn’t apparent from an OO point of view, before making the code clearer by replacing the language of the system by the language of our domain. Along the way, we’ll reduce the number of moving parts and increase test coverage.
+            <p>I will also show existing libraries in Java and C# that can help you refactor your own code to be smaller and more understandable.</p>
+            <p>This is a live coding presentation. There will be no slides, just lots of refactoring on a projector. You will not need any understanding of functional programming in order to attend.</p>
+        </div>
+        <div class="time-place">
+            <p>29 May 2013 - I T.A.K.E. Unconference- Bucharest, Romania</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe width="500" height="281" src="//www.youtube.com/embed/kKbNOMI3tlg?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
             <p>Testing and Refactoring Legacy Code<p>
         </div>
         <div class="description">
