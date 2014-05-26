@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
  * Galician initialisation for the jQuery countdown extension
  * Written by Moncho Pena ramon.pena.rodriguez@gmail.com (2009) and Angel Farrapeira */
 (function($) {

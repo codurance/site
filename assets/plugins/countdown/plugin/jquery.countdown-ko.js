@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
    Korean initialisation for the jQuery countdown extension
    Written by Ryan Yu (ryanyu79@gmail.com). */
 (function($) {

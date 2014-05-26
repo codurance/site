@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
  * Uzbek initialisation for the jQuery countdown extension
  * Written by Alisher U. (ulugbekov{at}gmail.com) August 2012. */
 (function($) {
