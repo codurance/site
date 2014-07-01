@@ -4,18 +4,45 @@ title: Training
 ---
 
 <!--=== Content Part ===-->
+<div class="careers page container">
+    <div class="row">
+        <!--Begin Sidebar Menu-->
+        <div class="col-md-4">
+            <ul class="list-group sidebar-nav-v1">
+                <li class="list-group-item{% if page.training == 'Crafted Design' %} active{% endif %}">
+                    <span class="badge badge-green">2 Days</span>
+                    <a href="/services/training/crafted-design">Crafted Design</a>
+                </li>
+                <li class="list-group-item{% if page.training == 'Crafting Code' %} active{% endif %}">
+                    <span class="badge badge-green">2 Days</span>
+                    <a href="/services/training/crafting-code">Crafting Code</a>
+                </li>
+            </ul>
+        </div>
+        <!--End Sidebar Menu-->
+
+        <!--Begin Content-->
+        <div class="col-md-8">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<!--=== Content Part ===-->
+<!--
 <div class="training page container">
 
     <div class="row">
-        <!-- Content Info -->
+        <!-- Content Info
         <div class="col-md-6 md-margin-bottom-40">
             {{ content }}
         </div>
         <!-- End Content Info -->
 
-        <!-- Image -->
+        <!-- Image
         <div class="col-md-6">
             <img class="img-responsive" src="{{ page.image }}" />
         </div>
     </div>
 </div>
+-->

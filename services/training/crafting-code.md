@@ -1,6 +1,6 @@
 ---
 layout: training
-title: Training
+training: Crafting Code
 image: /assets/img/services/training/redgreenrefactor.png
 ---
 
