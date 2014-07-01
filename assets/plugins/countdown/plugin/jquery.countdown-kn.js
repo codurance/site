@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
  * Kannada initialization for the jQuery countdown extension
  * Written by Guru Chaturvedi guru@gangarasa.com (2011) */
 (function($) {

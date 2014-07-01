@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
    Thai initialisation for the jQuery countdown extension
    Written by Pornchai Sakulsrimontri (li_sin_th@yahoo.com). */
 (function($) {

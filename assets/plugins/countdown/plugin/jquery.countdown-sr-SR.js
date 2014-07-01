@@ -1,4 +1,4 @@
-﻿/* http://keith-wood.name/countdown.html
+/* http://keith-wood.name/countdown.html
  * Serbian Latin initialisation for the jQuery countdown extension
  * Written by Predrag Leka lp@lemurcake.com (2010) */
 (function($) {
