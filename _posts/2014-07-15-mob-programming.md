@@ -11,10 +11,7 @@ image:
         href: https://plus.google.com/photos/113819754152966550582/albums/6025548269865042577/6025550336421962482
 tags:
 - Mob Programming
-- Fun
-- SoCraTes
 - SoCraTes UK
-- SoCraTes UK 2014
 ---
 
 It's been a few weeks since SoCraTes UK 2014, and I've had some time to reflect on the event and my learning experiences. Today, I want to talk about the biggest things that stood out for me.
