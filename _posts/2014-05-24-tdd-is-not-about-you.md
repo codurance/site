@@ -7,8 +7,8 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/tdd_is_not_about_you.gif
 tags:
-- Craftsmanship
-- TDD
+- craftsmanship
+- tdd
 ---
 
 Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that's ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? [Seb Rose](http://twitter.com/sebrose) compiled a [list of blog posts and tweets](http://claysnow.co.uk/to-tdd-or-not-to-tdd/) about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of [his post](http://claysnow.co.uk/to-tdd-or-not-to-tdd/).

@@ -7,10 +7,10 @@ slug: userstories-and-when-enough-is-enough
 title: Userstories and when enough is enough
 wordpress_id: 3
 categories:
-- Development
+- development
 tags:
-- Agile
-- User Story
+- agile
+- user-story
 ---
 
 Perfection in software is impossible. Software developement is subject to the Law of Diminishing Returns . So how do you decide when enough is enhough?

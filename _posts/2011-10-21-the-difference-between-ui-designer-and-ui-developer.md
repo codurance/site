@@ -7,7 +7,7 @@ slug: the-difference-between-ui-designer-and-ui-developer
 title: The difference between UI Designer and UI Developer
 wordpress_id: 139
 categories:
-- Development
+- development
 image:
     src: http://mashb.files.wordpress.com/2011/10/art-director.jpg
 ---

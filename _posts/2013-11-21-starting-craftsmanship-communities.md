@@ -7,8 +7,8 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/live-community.jpeg
 tags:
-- Craftsmanship
-- Community
+- craftsmanship
+- community
 ---
 
 Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That's it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the [London Software Craftsmanship Community](http://londonswcraft.com) (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.

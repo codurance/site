@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/craftsmanship_book.png
 tags:
-- Craftsmanship
+- craftsmanship
 ---
 
 Yesterday a wonderful 19-month journey came to an end. I released the last chapter of my book [Software Craftsmanship: Professionalism, Pragmatism, Pride](http://leanpub.com/socra). As an avid reader since a young age, writing a book was always something I wanted to do. For me, it didn't matter if people would read it or not; I just wanted to write a book I was proud of. I wanted to write a book that would help developers and companies to get better. A book that could inspire developers to care about their craft. I also wanted a book that my kids, at some point in the future, could read and be inspired, even if they had chosen different professions. I'm not sure if they will read it or be inspired by it, but at least I'm giving my best shot.

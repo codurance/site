@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/wrong-time.jpeg
 tags:
-- Craftsmanship
+- craftsmanship
 ---
 
 No one wakes up in the morning and say "Today I'm gonna screw up. Today

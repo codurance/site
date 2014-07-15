@@ -7,11 +7,11 @@ slug: saxon-xquery-with-multiple-documents
 title: Saxon XQuery With Multiple Documents
 wordpress_id: 168
 categories:
-- Development
+- development
 tags:
-- Xquery
-- Java
-- Saxon
+- xquery
+- java
+- saxon
 image:
     src: http://mashb.files.wordpress.com/2012/01/xquery.jpg
 ---

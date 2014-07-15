@@ -7,7 +7,7 @@ slug: musings-on-zero-downtime-deployment
 title: Musings on Zero Downtime Deployment
 wordpress_id: 190
 categories:
-- Development
+- development
 ---
 
 I've been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our [LSCC](http://www.meetup.com/london-software-craftsmanship/) Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:

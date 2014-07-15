@@ -7,8 +7,8 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/test-deafness.jpg
 tags:
-- Craftsmanship
-- TDD
+- craftsmanship
+- tdd
 ---
 
 A few months ago I was talking to a musician friend of mine. He is also

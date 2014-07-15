@@ -7,9 +7,9 @@ slug: approach-to-performance-tuning
 title: Approach to Performance Tuning
 wordpress_id: 104
 categories:
-- Development Process
+- process
 tags:
-- Performance
+- performance
 ---
 
 Performance issues in a application manifest as bottlenecks in one or more of the following 4 layers:

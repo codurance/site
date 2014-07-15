@@ -7,10 +7,10 @@ slug: jvm-profiling-thread-dumps
 title: 'JVM Profiling: Thread Dumps'
 wordpress_id: 61
 categories:
-- Development
+- development
 tags:
-- Java
-- Performance
+- java
+- performance
 ---
 
 Thread dumps are possilby the most useful tool in diagnosing concurrancy related issues. You can get a thread dump at any time by sending a break signal to the JVM. In Windows it's `CTRL-Break` and in Unix/Linux it's `kill -3 <pid>`

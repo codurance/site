@@ -7,11 +7,11 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/scalatra_googleplus.png
 tags:
-- OAuth 2.0
-- Scala
-- Google+
-- Scalatra
-- Jade
+- oauth
+- google-plus
+- scala
+- scalatra
+- jade
 ---
 
 ### The requirements

@@ -7,10 +7,10 @@ slug: spring-integration-based-dispatcher-worker-with-worker-queues
 title: Spring Integration based Dispatcher-Worker with Worker Queues
 wordpress_id: 213
 categories:
-- Development
+- development
 tags:
-- Java
-- Spring
+- java
+- spring
 image:
     src: /assets/img/blog/dispatcher-worker.jpeg
 ---

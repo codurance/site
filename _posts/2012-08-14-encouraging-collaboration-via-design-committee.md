@@ -7,7 +7,7 @@ slug: encouraging-collaboration-via-design-committee
 title: Encouraging Collaboration via Design Committee
 wordpress_id: 201
 categories:
-- Development Process
+- process
 image:
     src: http://mashb.files.wordpress.com/2012/08/125072659262p56k.jpg
 ---

@@ -7,9 +7,9 @@ slug: the-legacy-of-misplaced-testing
 title: The legacy of misplaced Testing
 wordpress_id: 151
 categories:
-- Development
+- development
 tags:
-- TDD
+- tdd
 image:
     src: http://mashb.files.wordpress.com/2011/10/complex.gif
 ---

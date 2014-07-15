@@ -7,7 +7,7 @@ slug: design-aligned-to-the-problem-vs-design-aligned-to-the-technology
 title: Design aligned to the Problem Vs Design aligned to the Technology
 wordpress_id: 134
 categories:
-- Development
+- development
 image:
     src: http://mashb.files.wordpress.com/2011/10/web_design.png
 ---

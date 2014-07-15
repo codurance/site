@@ -7,7 +7,7 @@ slug: the-spirit-to-improve
 title: The Spirit to Improve
 wordpress_id: 205
 categories:
-- Development Process
+- process
 image:
     src: http://mashb.files.wordpress.com/2012/09/improve.jpg
 ---

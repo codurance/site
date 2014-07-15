@@ -7,8 +7,8 @@ author: Mashooq Badar
 image:
     src: /assets/img/blog/keeping_domain_in_core.png
 tags:
-- Craftsmanship
-- DDD
+- craftsmanship
+- ddd
 ---
 Inspired by Alistair Cockburn's excellent [article](http://alistair.cockburn.us/Hexagonal+architecture) on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.
 

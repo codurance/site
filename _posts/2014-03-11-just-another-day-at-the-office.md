@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/just_another_day_in_the_office.jpg
 tags:
-- Craftsmanship
+- craftsmanship
 ---
 
 On 4th of March 2014, a few days before my baby boy Samuel completed two months, a well-regarded cardiologist—let's call him _Dr. Smith_—gave us the news that Samuel had a heart condition called [pulmonary valve stenosis](http://en.wikipedia.org/wiki/Pulmonary_valve_stenosis). Dr. Smith's recommendation was that Samuel had a heart procedure called [balloon pulmonary valvotomy](http://tchin.org/resource_room/c_art_02.htm) or [ballon valvuloplasty](http://tchin.org/resource_room/c_art_02.htm) as soon as possible. The procedure was scheduled to 11th of March 2014, on [The Harley Street Clinic](http://theharleystreetclinic.co.uk/). Needless to say, the whole family was devastated.

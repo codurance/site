@@ -7,7 +7,7 @@ slug: configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug
 title: Configuring a WAR project in Eclipse & Setting up Jetty to Run/Debug
 wordpress_id: 8
 categories:
-- Development
+- development
 ---
 
 Generate eclipse project: mvn eclipse:eclipse

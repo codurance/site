@@ -7,10 +7,10 @@ slug: the-relationship-between-product-owner-business-analyst-and-tester
 title: The relationship between Product Owner, Business Analyst and Tester
 wordpress_id: 66
 categories:
-- Development Process
+- process
 tags:
-- Agile
-- Scrum
+- agile
+- scrum
 ---
 
 In an Agile/Scrum team the Product Owner manages the Product Backlog, a Business Analyst may help further elaborate the backlog. Acceptance Criteria is "one of the" or the output of that elaboration. A Tester may futher define the Acceptance Criteria and write test scripts to verify it. What is the relationship between the three roles? Inseparable, acquaintance or in a love triangle?

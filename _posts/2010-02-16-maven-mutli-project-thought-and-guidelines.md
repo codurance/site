@@ -7,9 +7,9 @@ slug: maven-mutli-project-thought-and-guidelines
 title: Maven Mutli-Project Thoughts and Guidelines
 wordpress_id: 56
 categories:
-- Development
+- development
 tags:
-- Maven
+- maven
 ---
 
 Maven multi-project stucture can get quite difficult to manage once you have a relatively deep hierarchy and more than a few projects. Looking at one such complex structure I found that much of this complexity can be avoided by carefully looking at the relation between parent and child projects and understanding why the projects have been split in the first place.

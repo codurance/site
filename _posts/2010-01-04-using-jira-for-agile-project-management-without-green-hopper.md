@@ -7,12 +7,12 @@ slug: using-jira-for-agile-project-management-without-green-hopper
 title: Using JIRA for Agile Project Management (without Green Hopper)
 wordpress_id: 19
 categories:
-- Development Process
+- process
 tags:
-- Agile
-- Product Backlog
-- Jira
-- Scrum
+- agile
+- backlog
+- jira
+- scrum
 ---
 
 [Jira](http://www.atlassian.com/software/jira/) from Atlassian  is a very popular issue tracking software and can be quite effectively used for Agile Project Management. Jira has a plugin (Green Hopper) that allows for creation of a backlog, iterations and tasks.  However, with help from the free Mylyn plugin for Eclipse I was able to setup a Product Backlog and Iteration Backlogs.

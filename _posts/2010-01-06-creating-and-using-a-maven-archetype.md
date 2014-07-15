@@ -7,9 +7,9 @@ slug: creating-and-using-a-maven-archetype
 title: Creating and using a maven archetype
 wordpress_id: 25
 categories:
-- Development
+- development
 tags:
-- Maven
+- maven
 ---
 
 The best way to create a maven archetype is to start with an existing project. In the maven project (simple or multiple-module) directory execute:

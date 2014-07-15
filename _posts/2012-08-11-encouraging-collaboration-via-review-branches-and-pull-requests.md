@@ -7,9 +7,9 @@ slug: encouraging-collaboration-via-review-branches-and-pull-requests
 title: Encouraging Collaboration via Review Branches and Pull Requests
 wordpress_id: 196
 categories:
-- Development Process
+- process
 tags:
-- Git
+- git
 image:
     src: http://mashb.files.wordpress.com/2012/08/images.jpeg
 ---

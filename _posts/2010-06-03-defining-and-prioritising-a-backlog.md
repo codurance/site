@@ -7,11 +7,11 @@ slug: defining-and-prioritising-a-backlog
 title: Defining and Prioritising a Backlog
 wordpress_id: 123
 categories:
-- Development Process
+- process
 tags:
-- Agile
-- Product Backlog
-- User Story
+- agile
+- backlog
+- user-story
 ---
 
 What is the best way to review a backlog? How do you ensure that it is "complete"? How do you ensure that the prioritisation reflects the business vision and goals?

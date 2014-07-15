@@ -7,9 +7,9 @@ author: Sandro Mancuso
 image:
     src: /assets/img/blog/explanatory_methods.png
 tags:
-- Craftsmanship
+- craftsmanship
 - screencast
-- TDD
+- tdd
 ---
 
 On 9th of April 2014, we created our first screencast on our new [YouTube channel](https://www.youtube.com/user/codurance). The idea is to have a series of (reasonably) short videos explaining some of the techniques we use when developing software. The videos will range from basic to advanced topics but in no particular order.

@@ -7,9 +7,9 @@ slug: naming-your-unit-tests
 title: Naming your Unit Tests
 wordpress_id: 118
 categories:
-- Development
+- development
 tags:
-- TDD
+- tdd
 ---
 
 Often I see Unit Tests with the test methods that have the same name as the method under test prefixed with the word "test" e.g. `testSubmitApplication`. This provides no extra information on which "flow" of the mothod is being tested. Other test method names provide a bit more information by suffixing the nature of the test e.g. `testSubmitApplicationWithInvalidCriteria`. It better but not much better. A number of IDEs actually allow the developer to generate test method names based on the class under test which in my opinion defeats the object.
