@@ -4,6 +4,7 @@ name: mob-programming
 title: Mob Programming, and the importance of fun at work
 date: 2014-07-15 12:00:00 +00:00
 author: Samir Talwar
+canonical: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 image:
     src: https://lh3.googleusercontent.com/-CpaZuRHtCXY/U58OGzKqovI/AAAAAAAAAKo/gkjqtS04ins/w2008-h1334-no/2014.06.13_-_socrates_uk.0083.2048.jpg
     attribution:
