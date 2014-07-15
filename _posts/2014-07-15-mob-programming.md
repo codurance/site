@@ -4,7 +4,9 @@ name: mob-programming
 title: Mob Programming, and the importance of fun at work
 date: 2014-07-15 12:00:00 +00:00
 author: Samir Talwar
-canonical: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
+canonical:
+    name: my personal blog
+    href: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 image:
     src: https://lh3.googleusercontent.com/-CpaZuRHtCXY/U58OGzKqovI/AAAAAAAAAKo/gkjqtS04ins/w2008-h1334-no/2014.06.13_-_socrates_uk.0083.2048.jpg
     attribution:
@@ -64,5 +66,3 @@ People are amazing at making things fun, just as long as you let them.
 [Drive, by Daniel Pink]: http://www.amazon.co.uk/gp/product/184767769X/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=184767769X&linkCode=as2&tag=monospamonolo-21
 [@gfalongi]: https://twitter.com/gfalongi
 [@pawelduda]: https://twitter.com/pawelduda
-
-[*This post was cross-posted to my personal blog.*](http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work)

@@ -4,7 +4,9 @@ name: a-software-craftsman-is
 title: A Software Craftsman Is
 date: 2014-05-26 15:00:00 +00:00
 author: Samir Talwar
-canonical: http://monospacedmonologues.com/post/85719270870/a-software-craftsman-is
+canonical:
+    name: my personal blog
+    href: http://monospacedmonologues.com/post/85719270870/a-software-craftsman-is
 image:
     src: /assets/img/blog/concentration.jpg
     attribution:
@@ -77,7 +79,3 @@ Whenever I'm working on software, I hope to see these qualities in myself.
 ---
 
 *Thanks to [Ben Summers](https://twitter.com/bensummers) for provoking this blog post, as well as providing very useful feedback.*
-
----
-
-*This post was cross-posted to [my personal blog](http://monospacedmonologues.com/post/85719270870/a-software-craftsman-is).*

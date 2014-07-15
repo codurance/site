@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 
     {% if page.canonical %}
-    <link rel="canonical" href="{{ page.canonical }}" />
+    <link rel="canonical" href="{{ page.canonical.href }}" />
     {% endif %}
 
     <script>
@@ -77,7 +77,13 @@
             </ul>
         </div>
         {% endif %}
+
         {{ content }}
+
+        {% if page.canonical %}
+        <hr/>
+        <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
+        {% endif %}
     </div>
     <!--End Blog Post-->
 </div>
