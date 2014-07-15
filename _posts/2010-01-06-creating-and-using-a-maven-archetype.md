@@ -43,7 +43,7 @@ The archetype is created under `target/generated-sources/archetypes` with the fo
 </code>
 </pre>
 
-    
+
 
 
 The archetype-metadata.xml can used used to further tune the archetype. This file describes filesets of the following format:
@@ -78,12 +78,12 @@ Once you are happy with the archetype you can execute `mvn install` to install t
       </archetypes>
     </archetype-catalog>
 {% endhighlight %}
-    
+
 
 
 You can then use this archetype to create a project using the following command:
 
-    
-    
+
+
     mvn archetype:generate -DarchetypeCatalog=http://<uri-path>/archetype-catalog.xml
-    
+

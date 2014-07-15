@@ -1,8 +1,8 @@
---- 
-layout: post 
-name: testing-legacy-code-with-golden-master 
-title: Testing legacy code with Golden Master 
-date: 2012-11-11 23:54:00.000000000 +00:00 
+---
+layout: post
+name: testing-legacy-code-with-golden-master
+title: Testing legacy code with Golden Master
+date: 2012-11-11 23:54:00.000000000 +00:00
 author: Sandro Mancuso
 ---
 
@@ -22,7 +22,7 @@ We ran the same session for the [London Software Craftsmanship Community
 (LSCC)](http://www.meetup.com/london-software-craftsmanship) early this
 year and back then I decided to write my tests BDD-style (I used JBehave
 for that). You can check my solution
-[here](https://github.com/sandromancuso/Gilded-Rose-Kata). 
+[here](https://github.com/sandromancuso/Gilded-Rose-Kata).
 
 This time, instead of writing unit tests or BDD / Spec By Example to
 test every branch of that horrible code, I decided to solve it using a
@@ -82,11 +82,11 @@ with the approved file.
 
 Here is an example of how the file looks like:
 
-Item [name=Aged Brie, sellIn=-23, quality=-44]    
+Item [name=Aged Brie, sellIn=-23, quality=-44]
 Item [name=Elixir of the Mongoose, sellIn=-9, quality=45]
 Item [name=Conjured Mana Cake, sellIn=-28, quality=1]
 Item [name=Aged Brie, sellIn=10, quality=-2]
-Item [name=+5 Dexterity Vest, sellIn=31, quality=5] 
+Item [name=+5 Dexterity Vest, sellIn=31, quality=5]
 
 Now you are ready to rip the GildedRose horrible code apart. Just make
 sure you run the tests every time you make a change. :)
@@ -112,4 +112,4 @@ Thanks to [Robert Taylor](https://twitter.com/roberttaylor426) and
 [Balint Pato](https://twitter.com/balopat) for showing me this approach
 for the first time in one of the
 [LSCC](http://www.meetup.com/london-software-craftsmanship) meetings
-early this year. It was fun to finally do it myself. 
+early this year. It was fun to finally do it myself.

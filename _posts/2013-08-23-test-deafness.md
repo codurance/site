@@ -1,8 +1,8 @@
---- 
-layout: post 
-name: test-deafness 
-title: Test Deafness 
-date: 2013-08-23 03:26:00.000000000 +01:00 
+---
+layout: post
+name: test-deafness
+title: Test Deafness
+date: 2013-08-23 03:26:00.000000000 +01:00
 author: Sandro Mancuso
 image:
     src: /assets/img/blog/test-deafness.jpg
@@ -54,7 +54,7 @@ test***. If you don't know what good code looks like, you are pretty
 much ***test deaf***. Musicians have a trained ear to listen to each
 instrument individually while the music is playing. They can also
 imagine, quite precisely, how different instruments could be combined to
-create new music. 
+create new music.
 
 Walking around asking other developers to listen to their tests, as if
 this advice alone would make them produce quality code immediately,

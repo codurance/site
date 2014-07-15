@@ -1,8 +1,8 @@
---- 
-layout: post 
-name: screencast-testing-and-refactoring 
-title: 'Screencast: Testing and Refactoring Legacy Code' 
-date: 2012-12-18 14:02:00.000000000 +00:00 
+---
+layout: post
+name: screencast-testing-and-refactoring
+title: 'Screencast: Testing and Refactoring Legacy Code'
+date: 2012-12-18 14:02:00.000000000 +00:00
 author: Sandro Mancuso
 ---
 
@@ -23,7 +23,7 @@ explaining how we can do that in a very safe way.
 A common question when developers want to make legacy code better is
 "Where do we start?" I also address that explaining the how the
 approaches for testing and refactoring legacy code are the opposite from
-each other. 
+each other.
 
 Besides a few other things, I also cover the use of code coverage tools
 to help us testing the code, how often we should be committing, how to

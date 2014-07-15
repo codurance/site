@@ -66,6 +66,6 @@ private void startConsumingFromChannel(final String consumerName, final PollingC
 {% endhighlight %}
 
 
-Finally (not yet implemented) you can run a Reaper Thread that can remove channels and consumers that have not seen activity for a specified threshold. You can also back the inbound channel with a Message Store to ensure that the system can come backup in a consistent state on failure. 
+Finally (not yet implemented) you can run a Reaper Thread that can remove channels and consumers that have not seen activity for a specified threshold. You can also back the inbound channel with a Message Store to ensure that the system can come backup in a consistent state on failure.
 
-The source code is at [Github](https://github.com/mashooq/designpatterns/tree/master/dispatcherworker). 
+The source code is at [Github](https://github.com/mashooq/designpatterns/tree/master/dispatcherworker).

@@ -9,7 +9,7 @@ wordpress_id: 168
 categories:
 - Development
 tags:
-- Xquery 
+- Xquery
 - Java
 - Saxon
 image:

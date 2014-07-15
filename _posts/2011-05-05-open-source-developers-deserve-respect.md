@@ -1,10 +1,10 @@
 ---
-title: Open-source developers deserve respect 
+title: Open-source developers deserve respect
 author: Sandro Mancuso
-slug: open-source-developers-deserve-respect 
-date: 2011-05-05 01:52:00.000000000 +01:00 
-layout: post 
---- 
+slug: open-source-developers-deserve-respect
+date: 2011-05-05 01:52:00.000000000 +01:00
+layout: post
+---
 
 I was recently reading Gojko Adzic's blog
 post called <a href="http://gojko.net/2011/04/05/how-is-it-even-possible-code-to-be-this-bad/">How is it even possible for code to be this
@@ -22,7 +22,7 @@ initiatives. It's because of thousands of developers that work on the
 their spare time, for free, to create software that will make the lives
 of many other developers, companies and users much easier. These people
 are kind enough to offer their work to all of us and are humble enough
-to ask and accept help from many other developers around the globe. 
+to ask and accept help from many other developers around the globe.
 
 One thing we need to understand is that every project has a history and
 many things, throughout the lifespan of a project, can be responsible
@@ -41,7 +41,7 @@ or developer is constructive criticism.
 
 If we think that a open source project is below standard and/or not good
 enough, we should either not use it or we should contribute to make it
-better. 
+better.
 
 However, I do understand the point Gojko is trying to make. Yes, I agree
 that good code is not the only thing that makes a project be successful.
@@ -51,7 +51,7 @@ There are always exceptions to the rules. Trying to get our code as
 perfect and as clean as possible does not guarantee that our projects
 will be successful and having a messy code does not always mean that our
 project will fail either. We all know that. Even my 5 month-old baby
-girl knows that. 
+girl knows that.
 
 However, I totally disagree with Gojko&#39;s statement that &quot;<em>[Hudson&#39;s
 success with &quot;bad&quot; code] is close to the final proof that God doesn&#39;t

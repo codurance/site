@@ -1,8 +1,8 @@
---- 
-layout: post 
-name: the-wrong-notion-of-time 
-title: The Wrong Notion of Time 
-date: 2012-12-10 23:38:00.000000000 +00:00 
+---
+layout: post
+name: the-wrong-notion-of-time
+title: The Wrong Notion of Time
+date: 2012-12-10 23:38:00.000000000 +00:00
 author: Sandro Mancuso
 image:
     src: /assets/img/blog/wrong-time.jpeg
@@ -108,7 +108,7 @@ cycles even longer. Debug time was also getting bigger since each
 developer was adding more code that all the others would need to debug
 to understand how things work. Now thing about all the time wasted here,
 every day, every week, every month. This is all because we developers do
-not have time. 
+not have time.
 
 Dedicated Quality Assurance teams are an anti-pattern. Testers should
 find nothing, zero, nada. Every time a tester finds a bug, we developers
@@ -119,7 +119,7 @@ Maybe we should have helped our BAs or product owners to clarify them.
 By no means I am saying that we should not have testers. They can be
 extremely valuable to explore our applications in unexpected ways that
 just a human could do. They should not waste their time executing test
-plans that could be automated by the development team. 
+plans that could be automated by the development team.
 
 Business want the features as soon as possible and we feel that it is
 our obligation to satisfy them - and it is. However, business people
@@ -130,7 +130,7 @@ when debugging skills was a big criteria in technical interviews. Those
 days are gone. Although it is important to have debugging skills, we
 should be unpleasantly surprised whenever we need to resort to it and
 when it occurs, we need to immediately address that, writing tests and
-refactoring our code so we never need to do that again. 
+refactoring our code so we never need to do that again.
 
 **Using time wisely**
 

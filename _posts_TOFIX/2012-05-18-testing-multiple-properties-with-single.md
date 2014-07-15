@@ -33,7 +33,7 @@ If you run this test, you will get a message like\
 \
 Now, change the age check to \
 
->        property("age", greaterThan(60)) 
+>        property("age", greaterThan(60))
 
 And you should get:\
 \
