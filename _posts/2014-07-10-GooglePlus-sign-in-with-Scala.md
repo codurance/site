@@ -37,7 +37,7 @@ In this project we are using:
 
 First we need to add an AuthenticationFilter to our Scalatra application.
 
-``` scala
+{% highlight scala %}
 import javax.servlet.ServletContext
 
 import com.codurance.cerebro.controllers.MainController
@@ -50,11 +50,11 @@ class ScalatraBootstrap extends LifeCycle {
         context.mount(new MainController, "/*")
     }
 }
-```
+{% endhighlight %}
 
 Then, in the AuthenticationFilter, we need to redirect to the sign-in page when we don't have a user in the session. We also need to exclude the pages and URLs that don't need a user to be logged in.
 
-``` scala
+{% highlight scala %}
 package com.codurance.cerebro.security
 
 import org.scalatra.ScalatraFilter
@@ -81,7 +81,7 @@ class AuthenticationFilter extends ScalatraFilter {
     }
 
 }
-```
+{% endhighlight %}
 
 For more information about filters, check the [Scalatra](http://www.scalatra.org/) documentation.
 
@@ -89,7 +89,7 @@ For more information about filters, check the [Scalatra](http://www.scalatra.org
 
 Then we need a sign-in page, that is displayed when the user is not authenticated.
 
-``` jade
+{% highlight jade %}
 - attributes("title") = "Cerebro"
 - attributes("layout") = "/WEB-INF/templates/layouts/no-header.jade"
 
@@ -131,7 +131,7 @@ script(src='https://plus.google.com/js/client:plusone.js')
 script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
 
 
-```
+{% endhighlight %}
 
 If you are not using Jade or want more details, check the [official documentation](https://developers.google.com/+/web/signin/add-button) about how to [add the sign-in button](https://developers.google.com/+/web/signin/add-button) to your page.
 
@@ -141,7 +141,7 @@ This should be enough to trigger the Google authentication form when clicking on
 
 We then need a controller that will respond to all these requests, displays the respective pages, and do the authorisation.
 
-``` scala
+{% highlight scala %}
 package com.codurance.cerebro.controllers
 
 import javax.servlet.http.{HttpServletResponse, HttpServletRequest}
@@ -155,9 +155,9 @@ class BaseController extends CerebroStack {
     }
 
 }
-```
+{% endhighlight %}
 
-``` scala
+{% highlight scala %}
 package com.codurance.cerebro.controllers
 
 import com.codurance.cerebro.security.CoduranceAuthorisation.authorise
@@ -188,13 +188,13 @@ class MainController extends BaseController {
     }
 
 }
-```
+{% endhighlight %}
 
 The MainController responds to "/authorise", which invokes the authorisation function defined inside CoduranceAuthorisation. Note that we receive the "authCode" from the Google+ authentication. Once the user was authenticated, we had to make the application available just for users using a Codurance email. For that, we had to invoke the [Google+ People API](https://developers.google.com/+/api/latest/people) to get more information (email address, domain, etc).
 
 The authorise function would then check if the user belongs to the Codurance domain and add her to the session.
 
-``` scala
+{% highlight scala %}
 package com.codurance.cerebro.security
 
 import java.net.URL
@@ -244,7 +244,7 @@ object CoduranceAuthorisation {
     }
 
 }
-```
+{% endhighlight %}
 
 __Note__ that in the GOOGLE_PLUS_PEOPLE_URL we specify all the fields we are interested in, including the _domain_ and _emails_.
 
@@ -252,14 +252,15 @@ __GooglePlusJSONResponseParser__ is a class that we created to parse the JSON re
 
 __IMPORTANT:__ Don't forget to import add the Google+ APIs to your sbt build file.
 
-```
+{% highlight scala %}
     "com.google.apis" % "google-api-services-oauth2" % "v2-rev59-1.17.0-rc",
     "com.google.apis" % "google-api-services-plus" % "v1-rev115-1.17.0-rc",
-```
+{% endhighlight %}
 
 That's about it. You now can display the name of the user on all your pages, using a default layout.
 
-``` jade
+{% highlight scala %}
+
 -@ val title: String
 -@ val headline: String = title
 -@ val body: String
@@ -276,4 +277,4 @@ html
         div
             h1= headline
             != body
-```
+{% endhighlight %}
