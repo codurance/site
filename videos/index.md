@@ -6,6 +6,33 @@ title: Presentations, Screencasts, and Interviews
 <div class="row">
     <div class="col-md-6">
         <div class="title">
+            <p>Highly Strung: Understanding your Type System<p>
+        </div>
+        <div class="description">
+            <p>Strings suck. I mean, seriously, they're awful. They can be quite literally anything. How do you know what a string is? Look inside it. But first, run your program, because you can't look inside it until then.</p>
+
+            <p>Want to change the way a string behaves? OK, go change all the functions that deal with that string. How do you know which functions? Well, it could be any of them. Better go fix them all.</p>
+
+            <p>Say you've got two strings. We want one string out. So we can stick them together with the + operator! Except wait, one of them is SQL (or HTML, or JavaScript, or…). So better escape the other one first! Which one? Probably the second one. It's usually the second one.</p>
+
+            <p>This all makes me go AAAAAAAAARRRRGGHHHHHHHHHH.</p>
+
+            <p>Let's do this better. I want to talk to you about using your type system to make all these problems go away (at least from the core of your code), and as a bonus, we'll end up with much more expressive, readable, maintainable and most importantly, correct code.</p>
+        </div>
+        <div class="time-place">
+            <p>28 Jul 2014 - Virtual JUG (vJUG)</p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe width="500" height="281" src="//www.youtube.com/embed/KMnv-A-ANP4?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="title">
             <p>Testing and Refactoring Legacy Code<p>
         </div>
         <div class="description">
