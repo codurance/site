@@ -159,7 +159,7 @@ title: Presentations, Screencasts, and Interviews
                     <li>Passes its tests</li>
                     <li>Minimizes duplication</li>
                     <li>Maximizes clarity</li>
-                    <li>Maximizes clarity"</li>
+                    <li>Has fewer elements"</li>
                 </ol>
             </p>
             <p>I want to demonstrate how object-oriented principles can only get you so far in simplifying your design.
