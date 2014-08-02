@@ -1,76 +1,7 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
-
-<body>
-<!--=== Header ===-->
-<div class="header">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-responsive-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/services" class="btn-u btn-u-orange">Services</a></li>
-                    <li><a href="/casestudies">Case Studies</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/careers/craftsman">Careers</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
-                        <li><a href="/aboutus/ourteam">Our Team</a></li>
-                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
-                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
-                    </ul></li>
-                </ul>
-                <div class="search-open">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button class="btn-u" type="button">Go</button>
-                        </span>
-                    </div><!-- /input-group -->
-                </div>
-            </div><!-- /navbar-collapse -->
-        </div>
-    </div>
-</div><!--/header-->
-
-
-
-<!--=== End Header ===-->
-
-
-
-<div class="breadcrumbs margin-bottom-40">
-    <div class="container">
-        <h1 class="pull-left">Services</h1>
-        <ul class="pull-right breadcrumb">
-            <li><a href="/">Home</a></li>
-        </ul>
-    </div>
-</div>
-
-
-
+---
+layout: default
+---
 <div class="container">
-
-
   <!-- Service Blcoks -->
     <div class="row service-v1 margin-bottom-40">
         <div class="col-md-4">
@@ -91,34 +22,4 @@
             <p><a href="/services/training/crafted-design">Which training courses do you offer?</a></p>
         </div>
     </div>
-
 </div>
-
-
-<!--=== Copyright ===-->
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="copyright-space">
-                    2013 &copy; Codurance LTD.
-                     | Company Registration No: 8712584
-                     | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
-                </p>
-
-            </div>
-            <div class="col-md-6">
-                <ul class="social-icons pull-right">
-                    <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
-                    <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
-                </ul>
-            </div>
-        </div> <!--/row-->
-    </div> <!--/container-->
-</div><!--/copyright-->
-
-<!--=== End Copyright ===-->
-
-{% include foot.html %}
-</body>
-</html>

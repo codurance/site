@@ -1,9 +1,8 @@
 ---
-layout: homepage
+layout: default
 group: About Us
 title: Our Company
 ---
-
 <div class="container">
     <div class="row margin-bottom-30">
         <div class="col-md-8 md-margin-bottom-40">
