@@ -8,13 +8,13 @@ var Contact = function () {
 			$(document).ready(function(){
 			  map = new GMaps({
 				div: '#map',
-				lat: 40.748866,
-				lng: -73.988366
+				lat: 51.5175641,
+				lng: -0.097832
 			  });
 			   var marker = map.addMarker({
-					lat: 40.748866,
-					lng: -73.988366,
-		            title: 'Loop, Inc.'
+					lat: 51.5175641,
+					lng: -0.097832,
+		            title: 'Codurance Ltd'
 		        });
 			});
         }
