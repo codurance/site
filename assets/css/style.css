@@ -1452,15 +1452,40 @@ ul.blog-tags a:hover i {
 /* Toby additions - to be moved when finalised */
 
 .feature-panel {
-	margin-top: 60px;
 	height: 500px;
 	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
 	width: 100%;
-	color: white;
-	text-align: center;
+	z-index: -1;
 }
 
 .jumbotron {
 	height: 500px;
 	background: transparent;
+	color: white;
+	text-align: center;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.block-v1 {
+	padding: 50px 0;
+}
+
+.content-boxes-v3 i {
+	top: 8px;
+	float: left;
+	position: relative;
+	margin-right: 8px;
+}
+
+.content-boxes-v3 i.icon-custom {
+	height: 40px;
+}
+
+.content-boxes-v3 .content-boxes-in-v3 {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+h3.heading-sm {
+	line-height: 24px;
 }
