@@ -1532,6 +1532,30 @@ h2:after {
 }
 
 .sandro-book-image {
-	max-width: 80%;
+	max-width: 70%;
 	height: auto;
+}
+
+.parallax-quote {
+	background-color: black; /*#3e4753 */
+	padding: 100px 0;
+	position: relative;
+	text-align: center;
+}
+
+.parralax-quote-in {
+	padding: 0 80px;
+	position: relative;
+}
+
+.parallax-quote-in p {
+	font-size: 28px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.customerQuote {
+	color: #e67e22;
+	font-size: 18px;
 }
