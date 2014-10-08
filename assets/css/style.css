@@ -1522,3 +1522,16 @@ h2:after {
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 }
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+.sandro-book-image {
+	max-width: 80%;
+	height: auto;
+}
