@@ -1448,3 +1448,19 @@ ul.blog-tags a:hover i {
 .info-blocks .info-blocks-in p {
 	font-size: 12px;
 }
+
+/* Toby additions - to be moved when finalised */
+
+.feature-panel {
+	margin-top: 60px;
+	height: 500px;
+	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.jumbotron {
+	height: 500px;
+	background: transparent;
+}
