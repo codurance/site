@@ -1529,7 +1529,7 @@ h2:after {
 	background: #e67e22;
 }
 
-.services, .blogs{
+.services, .blogs, .clients-section{
 	padding-top: 100px;
 	padding-bottom: 50px;
 	background: #fafafa;
@@ -1583,7 +1583,6 @@ h2:after {
 
 
 .thumbnail img {
-	height: 200px;
   min-height: 200px;
 }
 
@@ -1601,6 +1600,26 @@ h2:after {
 	background-color: white;
 }
 
-.services a{
-	border-top: solid 1px #eee;
+#owl-demo .item{
+  padding: 30px 0px;
+  margin: 15px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
+.customNavigation{
+  text-align: center;
+}
+
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
