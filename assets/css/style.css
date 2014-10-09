@@ -1497,13 +1497,26 @@ h3.heading-sm {
 	margin-bottom: 60px;
 }
 
-.title-v1 h2, .title-v1 h3{
+.title-v1 h2 {
 	font-size: 28px;
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 20px;	
 	text-transform: uppercase;
 } 
+
+.title-v1 h3 {
+	font-size: 20px;
+	position: relative;
+	/*margin-bottom: 5px;
+	padding-bottom: 15px;*/
+	text-transform: uppercase;
+}
+
+.jumbotron h1{
+	font-family:'Oxygen', sans-serif;
+	color: #e67e22;
+}
 
 h2:after {
 	bottom: 0;
@@ -1516,8 +1529,9 @@ h2:after {
 	background: #e67e22;
 }
 
-.services {
+.services, .blogs{
 	padding-top: 100px;
+	padding-bottom: 50px;
 	background: #fafafa;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
@@ -1531,13 +1545,20 @@ h2:after {
 	margin-bottom: 40px;
 }
 
-.sandro-book-image {
-	max-width: 70%;
-	height: auto;
+.margin-bottom-20 {
+	margin-bottom: 20px;
 }
 
+.services img {
+	max-width: 60%;
+	height: auto;
+	margin-left: 15%;
+	box-shadow: 0 10px 10px 0px gray;
+}
+
+
 .parallax-quote {
-	background-color: black; /*#3e4753 */
+	background-color: white; 
 	padding: 100px 0;
 	position: relative;
 	text-align: center;
@@ -1550,7 +1571,7 @@ h2:after {
 
 .parallax-quote-in p {
 	font-size: 28px;
-	color: white;
+	color: #545454;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -1558,4 +1579,28 @@ h2:after {
 .customerQuote {
 	color: #e67e22;
 	font-size: 18px;
+}
+
+
+.thumbnail img {
+	height: 200px;
+  min-height: 200px;
+}
+
+.news-v1 p ul {
+	color: #555;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+.news-v1 h4 {
+	padding-top: 15px;
+}
+
+.news-v1-in {
+	background-color: white;
+}
+
+.services a{
+	border-top: solid 1px #eee;
 }

@@ -5,7 +5,7 @@ layout: default
 <div class="feature-panel">
     <div class="container">
         <div class="jumbotron">
-            <h1>We build well-crafted software</h1>
+            <h1>We build <span style="color: white;">well crafted</span> software</h1>
         </div>
     </div>
 </div>
@@ -52,50 +52,50 @@ layout: default
         </div>
         <div class ="row">
             <div class="col-md-6 content-boxes-v3 margin-bottom-40">
-                <div class="clearfix margin-bottom-30">
+                <div class="clearfix margin-bottom-20">
                     <i class="fa fa-check-circle fa-3x"></i>
                     <div class="content-boxes-in-v3">
-                        <h3 class="heading-sm">SOFTWARE CREATION</h2>
+                        <a href=""><h3 class="heading-sm">SOFTWARE CREATION</h3></a>
                         <p>
                             Our team of dedicated software craftsmen can help you bring your ideas to life.
                         </p>
                     </div>
                 </div>
-                <div class="clearfix margin-bottom-30">
+                <div class="clearfix margin-bottom-20">
                     <i class="fa fa-check-circle fa-3x"></i>
                     <div class="content-boxes-in-v3">
-                        <h3 class="heading-sm">CONSULTANCY</h2>
+                        <a href=""><h3 class="heading-sm">CONSULTANCY</h3></a>
                         <p>
                             Consultancy stuff. Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
                         </p>
                     </div>
                 </div>
-                <div class="clearfix margin-bottom-30">
+                <div class="clearfix margin-bottom-20">
                     <i class="fa fa-check-circle fa-3x"></i>
                     <div class="content-boxes-in-v3">
-                        <h3 class="heading-sm">TRAINING</h2>
+                        <a href=""><h3 class="heading-sm">TRAINING</h3></a>
                         <p>
                             Wax on wax off. Do more code kata. Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
                         </p>
                     </div>
                 </div>
-                <div class="clearfix margin-bottom-30">
+                <div class="clearfix margin-bottom-20">
                     <i class="fa fa-check-circle fa-3x"></i>
                     <div class="content-boxes-in-v3">
-                        <h3 class="heading-sm">GIVING BACK</h2>
+                        <a href=""><h3 class="heading-sm">GIVING BACK</h3></a>
                         <p>
-                            We love to share what we know and are proud founders of the London Software Craftmanship Community.
+                            We love to share what we know and are proud supporters of the <a href="">London Software Craftmanship Community</a>.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1 content-boxes-v3">
-                <div class="clearfix margin-bottom-30">
-                    <i class="fa fa-book fa-3x"></i>
+                <div class="clearfix margin-bottom-40">
                     <div class="content-boxes-in-v3">
-                        <h3 class="heading-sm">NOW ON AMAZON!</h3>
-                        <p>The latest book from Co-Founder Sandro Mancuso</p>
-                        <img class="img-responsive img-thumbnail sandro-book-image" src="/assets/img/home/softwarecraftmanshipbook.jpg">     
+                        <a href=""><h3 class="heading-sm">PUBLICATIONS</h3></a>
+                        <p>Check out the latest book from Codurance Co-Founder Sandro Mancuso.</p>
+                        <a href=""><img class="img-responsive" src="/assets/img/home/softwarecraftmanshipbook.jpg"></a>
+                         
                     </div>
                 </div>
             </div>
@@ -106,112 +106,86 @@ layout: default
 <div class="row parallax-quote parallaxBG" style="background-position: 50% 311px;">
     <div class="container">
         <div class="col-md-4">
-                <div class="parallax-quote-in">
-                    <p>"Codurance is awesome. Really."</p>
-                    <div class="customerQuote">- A.Customer -</div>
-                </div>
+            <div class="parallax-quote-in">
+                <p>"Codurance is awesome. Really."</p>
+                <div class="customerQuote"> A.Customer </div>
+            </div>
         </div>
         <div class="col-md-4">
-                <div class="parallax-quote-in">
-                    <p>"I can't get over how awesome they are."</p>
-                    <div class="customerQuote">- B.Customer -</div>
-                </div>
+            <div class="parallax-quote-in">
+                <p>"I can't get over how awesome they are."</p>
+                <div class="customerQuote"> B.Customer </div>
+            </div>
         </div>
         <div class="col-md-4">
-                <div class="parallax-quote-in">
-                    <p>"AHHHHHHHHHHHHHHH!!! Awesome."</p>
-                    <div class="customerQuote">- C.Customer -</div>
-                </div>
+            <div class="parallax-quote-in">
+                <p>"AHHHHHHHHHHHHHHH!!! Awesome."</p>
+                <div class="customerQuote"> C.Customer </div>
+            </div>
         </div>
     </div>
 </div>
 
 
 <!-- Activity panel -->
-<div class="services">
+<div class="blogs">
     <div class="container">
         <div class="title-v1">
-            <h2>Latest</h2>
+            <h2>Latest Blogs</h2>
         </div>
-        <div class ="row">
-            <div class="col-md-6 content-boxes-v3 margin-bottom-40">
-                <div class="clearfix margin-bottom-30">
-                    <h3 class="heading-sm">BLOGS</h3>
-                </div>
+
+        <div class ="row news-v1">
+            
+            <div class="col-md-4 margin-bottom-40">
+                <div class="news-v1-in">
+                    <div class="thumbnail">
+                        <img src="{{site.posts[0].image.src}}">
+                        <div class ="caption">
+                            <a href="{{ site.posts[0].url }}"><h4>{{site.posts[0]title}}</h4></a>
+                            <p>{{ site.posts[0].content | strip_html | truncatewords:30}}</p>
+                            <ul class="list-unstyled list-inline blog-info">
+                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
+                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }} </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
             </div>
-            <div class="col-md-6 content-boxes-v3 margin-bottom-40">
-                <div class="clearfix margin-bottom-30">
-                    <h3 class="heading-sm">LSCC EVENTS</h3>
-                </div>
+
+            <div class="col-md-4 md-margin-bottom-40">
+                <div class="news-v1-in">
+                    <div class="thumbnail">
+                        <img src="{{site.posts[1].image.src}}">
+                        <div class ="caption">
+                            <a href="{{ site.posts[1].url }}"><h4>{{site.posts[1]title}}</h4></a>
+                            <p>{{ site.posts[1].content | strip_html | truncatewords:30}}</p>
+                            <ul class="list-unstyled list-inline blog-info">
+                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
+                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }} </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
             </div>
+
+            <div class="col-md-4 md-margin-bottom-40">
+                <div class="news-v1-in">
+                    <div class="thumbnail">
+                        <img src="{{site.posts[2].image.src}}">
+                        <div class ="caption">
+                            <a href="{{ site.posts[2].url }}"><h4>{{site.posts[2]title}}</h4></a>
+                            <p>{{ site.posts[2].content | strip_html | truncatewords:30}}</p>
+                            <ul class="list-unstyled list-inline blog-info">
+                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
+                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }} </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
         </div>
+
     </div>
 </div>
-<!--=== Slider ===-->
-<!-- <div class="slider-inner">
-    <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-            <h2><i>SOFTWARE IS</i> <br/> <i>OUR PASSION</i></h2>
 
-            <p><i>Software Craftsmanship</i> <br/> <i>is at the heart of everything we do</i></p>
-
-            <div class="da-img"><img src="/assets/img/codurance-logo.png" alt="" height="281"/></div>
-        </div>
-        <div class="da-slide">
-            <h2><i>REFACTORING</i> <br/> <i>LEGACY CODE</i></h2>
-
-            <p><i>by Sandro Mancuso</i> <br/> <i>Co-founder of Codurance</i></p>
-
-            <div class="da-img">
-                <iframe src="//player.vimeo.com/video/76472757?title=0&amp;byline=0&amp;portrait=0" width="500"
-                        height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="da-arrows">
-            <span class="da-arrows-prev"></span>
-            <span class="da-arrows-next"></span>
-        </div>
-    </div>
-    </div>
-    <!--/da-slider-->
-<!--/slider-->
-<!--=== End Slider ===-->
-
-<!--=== Content Part ===-->
- <!-- <div class="container">
-    {{ content }}
-    Service Blocks
-    <div class="row">
-        <div class="col-md-4">
-            <div class="service">
-                <div class="desc">
-                    <h4>Quality</h4>
-
-                    <p>We don't negotiate on quality. Software must deliver more value with time and not be a source of increasing pain and cost. We apply <a href="http://en.wikipedia.org/wiki/Extreme_programming_practices">XP Practices</a> like <a href="http://en.wikipedia.org/wiki/Test-driven_development">Test-Driven Development</a>, <a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a>, and <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>, combined with solid design principles, to ensure quality in all our projects. We continuously invest in our skills, making sure we master all practices we use.
-                    <p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service">
-                <div class="desc">
-                    <h4>Collaboration</h4>
-
-                    <p>We don't build software alone. Successful software projects are a result of productive partnerships. Collaboration is at the heart of our development practices. We use <a href="http://en.wikipedia.org/wiki/Agile_software_development">Agile processes</a> and <a href="https://help.github.com/articles/using-pull-requests">Social Coding techniques</a> to encourage collaboration. We use <a href="http://en.wikipedia.org/wiki/Domain-driven_design">DDD</a> and <a href="http://en.wikipedia.org/wiki/Behavior-driven_development">BDD</a> to make sure business concepts are collaboratively explored and reflected in our code.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service">
-                <div class="desc">
-                    <h4>Passion</h4>
-
-                    <p>Software development is not just a job for us. It's our passion. We are proud of our work and we are constantly looking for ways to better ourselves. We practice, we learn, we teach, we share. We don't just write code to our clients. We bring passion to their organisations; we lead by example and inspire developers to become real software craftsmen.
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/row
-    <!-- End Service Blokcs -->
-<!--</div><!--/container-->
- <!-- End Content Part -->
