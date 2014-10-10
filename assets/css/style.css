@@ -1601,14 +1601,24 @@ h2:after {
 }
 
 #owl-demo .item{
+  margin: 45px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*#owl-demo .item{
   padding: 30px 0px;
-  margin: 15px;
+  margin: 30px;
   color: #FFF;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-}
-.customNavigation{
+}*/
+
+/*.customNavigation{
   text-align: center;
 }
 
@@ -1620,6 +1630,6 @@ h2:after {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+}*/
 
 
