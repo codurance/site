@@ -1449,12 +1449,6 @@ ul.blog-tags a:hover i {
 	font-size: 12px;
 }
 
-/* Toby additions - to be moved when finalised */
-
-.values-section {
-	padding-top: 40px;
-}
-
 .feature-panel {
 	height: 500px;
 	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
@@ -1530,7 +1524,7 @@ h2:after {
 }
 
 .services, .blogs, .clients-section{
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 	background: #fafafa;
 	border-top: solid 1px #eee;
@@ -1550,7 +1544,7 @@ h2:after {
 }
 
 .services img {
-	max-width: 60%;
+	max-width: 40%;
 	height: auto;
 	margin-left: 15%;
 	box-shadow: 0 10px 10px 0px gray;
@@ -1609,27 +1603,5 @@ h2:after {
   height: auto;
 }
 
-/*#owl-demo .item{
-  padding: 30px 0px;
-  margin: 30px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}*/
-
-/*.customNavigation{
-  text-align: center;
-}
-
-//use styles below to disable ugly selection
-.customNavigation a{
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}*/
 
 
