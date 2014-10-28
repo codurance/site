@@ -1450,9 +1450,9 @@ ul.blog-tags a:hover i {
 }
 
 .feature-panel {
-	height: 500px;
 	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
-	width: 100%;
+	height: 600px;
+	width: auto
 	z-index: -1;
 }
 
