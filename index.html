@@ -157,7 +157,7 @@ layout: default
                             <p>{{ site.posts[0].content | strip_html | truncatewords:30}}</p>
                             <ul class="list-unstyled list-inline blog-info">
                                 <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
-                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }}</li>
+                                <li><i class="fa fa-user"></i> {{ site.posts[0].author | author_links }}</li>
                             </ul>
                         </div>
                     </div>
@@ -173,7 +173,7 @@ layout: default
                             </a>
                             <p>{{ site.posts[1].content | strip_html | truncatewords:30}}</p>
                             <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
+                                <li><i class="fa fa-calendar"></i> {{ site.posts[1].date | date_to_string }}</li>
                                 <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }}</li>
                             </ul>
                         </div>
@@ -190,8 +190,8 @@ layout: default
                             </a>
                             <p>{{ site.posts[2].content | strip_html | truncatewords:30}}</p>
                             <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
-                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }}</li>
+                                <li><i class="fa fa-calendar"></i> {{ site.posts[2].date | date_to_string }}</li>
+                                <li><i class="fa fa-user"></i> {{ site.posts[2].author | author_links }}</li>
                             </ul>
                         </div>
                     </div>
