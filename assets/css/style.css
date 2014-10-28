@@ -1450,14 +1450,15 @@ ul.blog-tags a:hover i {
 }
 
 .feature-panel {
-	background: url("/assets/img/home/computerdesk.jpg") no-repeat center center;
-	height: 600px;
+	background: url("/assets/img/home/computerdesk_original.jpg") no-repeat center center;
+	height: 550px;
+	background-size: cover;
 	width: auto
 	z-index: -1;
 }
 
 .jumbotron {
-	height: 600px;
+	height: 550px;
 	background: transparent;
 	color: white;
 	text-align: center;
