@@ -1577,7 +1577,7 @@ h2:after {
 
 
 .thumbnail img {
-  min-height: 200px;
+  height: 250px;
 }
 
 .news-v1 p ul {
