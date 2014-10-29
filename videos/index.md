@@ -7,26 +7,98 @@ title: Presentations, Screencasts, and Interviews
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
-            <div class="blog margin-bottom-40">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0">
-                            
+            <!--Highly strung video-->
+            <div class="video-post margin-bottom-40">
+                <h2>Highly Strung: Understanding your Type System</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/KMnv-A-ANP4">
                         </iframe>
                     </div>
+                    <div class="description">
+                        <p>Strings suck. I mean, seriously, they're awful. They can be quite literally anything. How do you know what a string is? Look inside it. But first, run your program, because you can't look inside it until then.</p>
 
-                <h2>A video post</h2>
+                        <p>Want to change the way a string behaves? OK, go change all the functions that deal with that string. How do you know which functions? Well, it could be any of them. Better go fix them all.</p>
+
+                        <p>Say you've got two strings. We want one string out. So we can stick them together with the + operator! Except wait, one of them is SQL (or HTML, or JavaScript, or…). So better escape the other one first! Which one? Probably the second one. It's usually the second one.</p>
+
+                        <p>This all makes me go AAAAAAAAARRRRGGHHHHHHHHHH.</p>
+
+                        <p>Let's do this better. I want to talk to you about using your type system to make all these problems go away (at least from the core of your code), and as a bonus, we'll end up with much more expressive, readable, maintainable and most importantly, correct code.</p>
+                    </div>
+
+                    <div class="time-place">
+                        <p>28 Jul 2014 - Virtual JUG (vJUG)</p>
+                    </div>
+            </div>
+            <!--end of Highly Strung-->
+
+            <!--refactoring legacy code video-->
+            <div class="video-post margin-bottom-40">
+                <h2>Testing and refactoring legacy code</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" style="height: 400px; width: 100%;" controls 
+                        src="https://pdlvimeocdn-a.akamaihd.net/97657/058/255804201.mp4?token2=1414600456_a3d88b895d5b521301d5e0315ae1e93e&aksessionid=d1c98755bc3e6216">
+                            
+                        </video>
+                    </div>
                 <div class="blog-post-tags">
                 </div>
-                <p>
-                    BLAH BLAH BLAH BLAH 
-                </p>
+                <div class="description">
+                    <p>Do you find working with legacy code tough? No tests, no documentation, and fear of breaking other parts of the code. Join Sandro Mancuso who will show you the only way to deal with these problems is to test and refactor merciless.</p>
+
+                    <p>For the majority of us, legacy code is part of our life and learning how to embrace it can make things far more enjoyable. In this live coding session, Sandro will be demonstrating how to overcome the most common problems found when testing legacy code.</p>
+
+                    <p>He will be taking a piece of messy Java code, test it until is 100% covered and then show how to refactor it in order to bring the business language and requirements to life.</p>
+
+                    <p>This session is full of tips and tricks you can start applying immediately. Although the code is in Java, the same principles can be applied in any language</p>
+                </div>
+                <div class="time-place">
+                    <p>21 May 2014 - In The Brain of Sandro Mancuso - SkillsMatter - London, UK</p>
+                </div>
             </div>
+            <!--End of Refactoring legacy code-->
+
+            <!--Software craftsmanship Video-->
+            <div class="video-post margin-bottom-40">
+                <h2>Software Craftsmanship</h2>
+                <iframe type="text/html" width="100%" height="400px" mozallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" src="//www.parleys.com/share.html#play/536770f0e4b04bb59f502713" frameborder="0">&lt;br /&gt;</iframe>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>After over ten years since the Agile summit, software projects are still failing and developers are still behaving and being treated as factory workers. The software development industry is still very amateur when compared to other professions. How can we change this? Why Agile was not sufficient? Why so many clients are unhappy with their software projects? Why is it so difficult to find good developers? Our industry needs more professionalism and that’s what Software Craftsmanship brings to the table. In this talk Sandro will be explaining: what Software Craftsmanship really is, the value of technical practices, what it means to be a professional software developer and what to do to satisfy our customers.</p>
+                </div>
+                <div class="time-place">
+                    <p>17 Apr 2014 - Devoxx France - Paris, France</p>
+                </div>
+            </div>
+            <!--End of software craftsmanship video-->
+
+            <!--Last Video-->
+            <div class="video-post margin-bottom-40">
+                <h2>Curing Agile Hangover with Craftsmanship</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/44243846">
+                        </iframe>
+                    </div>
+                    <div class="description">
+                        <p>Agile adoption brings into focus the shortcomings in the existing engineering practices. After undergoing an Agile transformation for a few years at UBS, where the focus was heavy on process and light on the technical disciplines, it is an understatement to say that we still have problems. We call this the Agile Hangover. Focusing on the technical practices is essential to a successful software project, regardless of the process. Software Craftsmanship principles have been essential in tackling the problems we face.</p>
+                        <p>In this talk we will share our experiences in how we are trying to find the right balance between technical practices and processes. Empowered professional software engineers, well defined testing strategy, process automation, high investment in people development, requirements management and strong emphasis on quality have been the key areas our focus.</p>
+                    </div>
+
+                    <div class="time-place">
+                        <p>13 Jun 2012 - Agile Central Europe (ACE) - Krakow, Poland</p>
+                    </div>
+            </div>
+            <!--End of Last Video-->
+
         </div>
         <!-- left sidebar ends -->
 
         <!-- right sidebar -->
         <div class="col-md-3">
         </div>
+        <!-- right sidebar ends-->
+
     </div>
 </div>
 
