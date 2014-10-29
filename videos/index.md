@@ -3,7 +3,38 @@ layout: videos
 title: Presentations, Screencasts, and Interviews
 ---
 
-<div class="row">
+<div class= "container content">
+    <div class="row blog-page">
+        <!-- left side bar -->
+        <div class="col-md-9">
+            <div class="blog margin-bottom-40">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                            
+                        </iframe>
+                    </div>
+
+                <h2>A video post</h2>
+                <div class="blog-post-tags">
+                </div>
+                <p>
+                    BLAH BLAH BLAH BLAH 
+                </p>
+            </div>
+        </div>
+        <!-- left sidebar ends -->
+
+        <!-- right sidebar -->
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 16:9 aspect ratio -->
+
+<!--<div class="row">
     <div class="col-md-6">
         <div class="title">
             <p>Highly Strung: Understanding your Type System<p>
@@ -256,5 +287,5 @@ title: Presentations, Screencasts, and Interviews
     <div class="col-md-6">
         <iframe src="//player.vimeo.com/video/44243846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/44243846">Sandro Mancuso/Mashooq Badar - Curing Agile Hangover with Craftsmanship</a> from <a href="http://vimeo.com/agilece">ACE! Conferences</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     </div>
-</div>
+</div>-->
 
