@@ -304,11 +304,15 @@ title: Presentations, Screencasts, and Interviews
                     <h2>Latest Tweets</h2>
                 </div>
                 <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";farentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
             </div>
         </div>
 
-        <!-- right sidebar ends-->
+        <!-- Blog Latest Tweets -->
+        <div class="blog-twitter margin-bottom-30">
+            <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="527853428601397249" data-link-color="orange">Tweets by @codurance</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <!-- End Blog Latest Tweets -->
 
     </div>
 </div>
