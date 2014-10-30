@@ -7,6 +7,22 @@ title: Presentations, Screencasts, and Interviews
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
+            <!--Crafted design scotland video-->
+            <div class="video-post margin-bottom-40">
+                <h2>Sandro Mancuso on Crafted Design</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/107963074"></iframe> 
+                    </div>
+                    <div class="description">
+                        <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features? Purely looking at unit tests is either not possible or too painful. Looking at higher-level tests can take a long time and still not give us the answers we need. For years, we have all struggled to design and structure projects that reflect the business domain.</p>
+
+                        <p>In this talk Sandro will be sharing how he designed the last application he worked on, twisting a few concepts from Domain-Driven Design, properly applying MVC, borrowing concepts from CQRS, and structuring packages in non-conventional ways. Sandro will also be touching on SOLID principles, Agile incremental design, modularisation, and testing strategies. By iteratively modifying the project structure to better model the product requirements, he has come up with a design style that helps developers create maintainable and domain-oriented software.</p>
+                    </div>
+
+                    <div class="time-place">
+                        <p>Oct 2014 - Lean Agile, Scotland</p>
+                    </div>
+            </div>
             <!--Highly strung video-->
             <div class="video-post margin-bottom-40">
                 <h2>Highly Strung: Understanding your Type System</h2>
@@ -37,7 +53,7 @@ title: Presentations, Screencasts, and Interviews
                 <h2>Testing and Refactoring Legacy Code</h2>
                     <div class="embed-responsive embed-responsive-16by9">
                         <video class="embed-responsive-item" style="height: 400px; width: 100%;" controls 
-                        src="https://pdlvimeocdn-a.akamaihd.net/97657/058/255804201.mp4?token2=1414600456_a3d88b895d5b521301d5e0315ae1e93e&aksessionid=d1c98755bc3e6216"> 
+                        src="https://pdlvimeocdn-a.akamaihd.net/97657/058/255804201.mp4?token2=1414689343_350824298e6d34bfd7bd61e05c9aeaf0&aksessionid=a119cd333d8979a6"> 
                         </video>
                     </div>
                 <div class="blog-post-tags">
