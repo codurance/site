@@ -1604,5 +1604,12 @@ h2:after {
   height: auto;
 }
 
+/* videos section */
+
+.latestBlogsRHS img {
+	height: 60px;
+	width: 60px;
+}
+
 
 
