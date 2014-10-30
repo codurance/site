@@ -1607,9 +1607,19 @@ h2:after {
 /* videos section */
 
 .latestBlogsRHS img {
-	height: 60px;
-	width: 60px;
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin-right: 10px;
 }
+
+.blogThumbSideBar {
+	margin-bottom: 20px;
+	clear: both;
+	height: 80px;
+}
+
+
 
 
 
