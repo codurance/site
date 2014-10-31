@@ -278,23 +278,25 @@ title: Presentations, Screencasts, and Interviews
                 <div class="headline headline-md">
                     <h2>Recent Blogs</h2>
                 </div>
-                <div class="blogThumbSideBar">    
-                    <a href="{{ site.posts[0].url }}"><img class="thumbnail" src="{{site.posts[0].image.src}}"></a>
-                    <div>
-                        {{site.posts[0]title}}
-                        <!-- Writing lots of shit -->
-                    </div>    
-                </div>
-                <div class="blogThumbSideBar">
-                    <a href="{{ site.posts[1].url }}"><img class="thumbnail" src="{{site.posts[1].image.src}}"></a>
-                    <div>
-                        {{site.posts[1]title}}
+                <div class="margin-top-40">
+                    <div class="blogThumbSideBar">    
+                        <a href="{{ site.posts[0].url }}"><img class="thumbnail" src="{{site.posts[0].image.src}}"></a>
+                        <div>
+                            {{site.posts[0]title}}
+                            <!-- Writing lots of shit -->
+                        </div>    
                     </div>
-                </div>
-                <div class="blogThumbSideBar">
-                    <a href="{{ site.posts[2].url }}"><img class="thumbnail" src="{{site.posts[2].image.src}}"></a>
-                    <div>
-                        {{site.posts[3]title}}
+                    <div class="blogThumbSideBar">
+                        <a href="{{ site.posts[1].url }}"><img class="thumbnail" src="{{site.posts[1].image.src}}"></a>
+                        <div>
+                            {{site.posts[1]title}}
+                        </div>
+                    </div>
+                    <div class="blogThumbSideBar">
+                        <a href="{{ site.posts[2].url }}"><img class="thumbnail" src="{{site.posts[2].image.src}}"></a>
+                        <div>
+                            {{site.posts[3]title}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,16 +305,16 @@ title: Presentations, Screencasts, and Interviews
                 <div class="headline headline-md">
                     <h2>Latest Tweets</h2>
                 </div>
-                <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
-
             </div>
+
+            <!-- Blog Latest Tweets -->
+            <div class="blog-twitter margin-bottom-30">
+                <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="527853428601397249" data-link-color="orange">Tweets by @codurance</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <!-- End Blog Latest Tweets -->
         </div>
 
-        <!-- Blog Latest Tweets -->
-        <div class="blog-twitter margin-bottom-30">
-            <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="527853428601397249" data-link-color="orange">Tweets by @codurance</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-        <!-- End Blog Latest Tweets -->
+        
 
     </div>
 </div>

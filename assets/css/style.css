@@ -1544,6 +1544,18 @@ h2:after {
 	margin-bottom: 20px;
 }
 
+.margin-top-30 {
+	margin-top: 30px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
 .sandroBookImage img {
 	max-height: 300px;
 	margin-left: auto;
