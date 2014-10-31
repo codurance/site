@@ -1631,7 +1631,40 @@ h2:after {
 	height: 80px;
 }
 
+.modal-backdrop.fade {
+	opacity: 0.5;
+}
 
+.modal-backdrop.fade in {
+	opacity: 0.5;
+}
 
+@media screen and (min-width: 768px) {
+	.modal-window {
+		width: 30%;
+	}	
+}
 
+.profile-window:hover {
+	background-color: #fafafa;
+	cursor: pointer;
+	-moz-box-shadow:    0px 3px 5px 0px #ccc;
+ 	-webkit-box-shadow: 0px 3px 5px 0px #ccc;
+ 	box-shadow:         0px 3px 5px 0px #ccc;
+}
 
+.grow {
+	-webkit-transition:all 0.2s ease-out;
+ 	-moz-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+ 	-o-transition:all 0.2s ease-out;
+ 	transition:all 0.2s ease-out;
+}
+
+.grow:hover {
+ 	-webkit-transform:scale(1.03);
+ 	-moz-transform:scale(1.03);
+ 	-ms-transform:scale(1.03);
+ 	-o-transform:scale(1.03);
+ 	transform:scale(1.03);
+}
