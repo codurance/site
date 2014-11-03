@@ -6,7 +6,37 @@ title: Our Team
 ---
 
 <div class="container margin-top-40">
+<div>
+{% for member in site.data.team %}
+  <p>
+      {% capture moduloVariable %}{{ forloop.index | modulo:2 }}{% endcapture %}
 
+      <!-- First entry -->
+      {% if forloop.first %}
+        <div style="border: 1px solid black;">
+      {% endif %}
+      {% if forloop.first == false and forloop.last == false and moduloVariable == '0' %}
+        </div>
+        <!-- Middle entry -->
+      {% endif %}
+      <!-- Middle entry -->
+      {% if forloop.first == false and forloop.last == false and moduloVariable == '0' %}
+        <div style="border: 1px solid red;">
+      {% endif %}
+      Index 9.0: {{forloop.first}} = {{forloop.last}} = {{moduloVariable}} <br/>
+      1.0 {{ member.name }}  <br/>
+      
+
+      
+      {% if forloop.last %}
+        </div>
+        <!-- Last entry -->
+      {% endif %}
+
+     
+  </p>
+{% endfor %}
+</div>
     <!--First Row-->
     <div class="row team margin-bottom-40">
         <div class="col-sm-6 profile-window grow" data-toggle="modal" data-target=".team-sandro"> <!--Sandro-->
