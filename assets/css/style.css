@@ -1642,6 +1642,7 @@ h2:after {
 @media screen and (min-width: 768px) {
 	.modal-window {
 		width: 30%;
+		min-width: 500px;
 	}	
 }
 
