@@ -1631,12 +1631,24 @@ h2:after {
 	height: 80px;
 }
 
+/* Team Page */
 .modal-backdrop.fade {
 	opacity: 0.5;
 }
 
 .modal-backdrop.fade in {
 	opacity: 0.5;
+}
+
+.profile-window h3 {
+	color: #e67e22;
+}
+
+.profile-window .modal-img {
+	margin-left: auto;
+  margin-right: auto;
+  width:450px; 
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1662,3 +1674,5 @@ h2:after {
  	-o-transform:scale(1.03);
  	transform:scale(1.03);
 }
+
+

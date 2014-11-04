@@ -18,7 +18,7 @@ title: Our Team
                 <img class="img-responsive" src="{{member.image}}" />
             </div>
             <div class="col-sm-6"> <!-- Inner Right Column -->
-                <h3><a>{{member.name}}</a> <br><small>{{member.role}}</small></h3>
+                <h3>{{member.name}} <br><small>{{member.role}}</small></h3>
                 <div>
                     <p>{{member.shortDescription}}</p>
                     <i class="fa fa-plus" style="color: #e67e22;">
@@ -47,20 +47,19 @@ title: Our Team
 <!--MODAL CLASS -->
 {% for member in site.data.team %}
     <div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-window"> 
+        <div class="modal-dialog profile-window modal-window"> 
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">
                         <span aria-hidden="true">x</span>
                         <span class="sr-only">Close</span>
                     </button>
-                    <h3><a>{{member.name}}</a><br> <small>{{member.role}}</small></h3>       
+                    <h3>{{member.name}}<br> <small>{{member.role}}</small></h3>       
                 </div>
                 <div class="modal-body">
-                    <p><img class="img-responsive margin-bottom-30" style="margin-left: auto;
-    margin-right: auto;"src="{{member.image}}" alt="{{member.name}}">
-                        </p>
-                    <p>{{member.fullDescription}}</p>
+                    <p><img class="img-responsive margin-bottom-30 modal-img" src="{{member.image}}" alt="{{member.name}}">
+                    </p>
+                    {{member.fullDescription}}
                     <ul class="list-unstyled list-inline team-socail">
                         <li><a href="http://twitter.com/{{member.twitter}}"><i class="fa fa-twitter fa-3x"></i></a></li>
                         <li><a href="http://github.com/{{member.github}}"><i class="fa fa-github fa-3x"></i></a></li>
@@ -70,3 +69,4 @@ title: Our Team
         </div>  
     </div>
 {% endfor %}
+</div>
