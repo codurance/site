@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    German initialisation for the jQuery countdown extension
    Written by Samuel Wulf. */
 (function($) {

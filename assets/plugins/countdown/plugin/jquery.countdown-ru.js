@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
  * Russian initialisation for the jQuery countdown extension
  * Written by Sergey K. (xslade{at}gmail.com) June 2010. */
 (function($) {

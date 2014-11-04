@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Simplified Chinese initialisation for the jQuery countdown extension
    Written by Cloudream (cloudream@gmail.com). */
 (function($) {

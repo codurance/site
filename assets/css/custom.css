@@ -1,0 +1,129 @@
+/* Add here all your css styles (customizations) */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+/* Home Page */
+
+.feature-panel {
+	background: url("/assets/img/custom/home/computerdesk_original.jpg") no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	width: auto
+	z-index: -1;
+}
+
+.feature-panel .jumbotron {
+	height: 550px;
+	background: transparent;
+	color: white;
+	text-align: center;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.feature-panel .highlight {
+	color: white; 
+	text-shadow: 1px 1px 1px #7f8c8d;
+}
+
+.feature-panel h1{
+	font-family:'Oxygen', sans-serif;
+	color: #e67e22;
+}
+
+#client-carousel .item{
+  margin: 45px;
+}
+#client-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*  Heading Titles - Home Page */
+
+.block-header {
+	padding: 50px 0;
+}
+
+.title-header {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.title-header h1, 
+.title-header h2 {
+	color: #333;
+	font-size: 28px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.title-header h1:after, 
+.title-header h2:after {
+	bottom: 0;
+	left: 50%;
+	height: 1px;
+	width: 70px;
+	content: " ";
+	margin-left: -35px;
+	position: absolute;
+	background: #e67e22;	
+}
+
+.title-header p {
+	font-size: 17px;
+	font-weight: 200;
+}
+
+/*Icon Lists*/
+/*Content Boxes v3*/
+.content-boxes {
+  margin-bottom: 15px;
+}
+
+.content-boxes i {
+  top: 8px;
+  float: left;
+  position: relative;
+}
+
+.content-boxes .content-box {
+  padding: 0 10px;
+  color: #333;
+  overflow: hidden;
+}
+
+.content-boxes .content-box h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+
+.content-boxes .content-box h3.heading-sm {
+  color:#333;
+}
+
+.content-boxes .content-box h3 a {
+  color: #333;
+}
+
+.content-boxes i.icon-custom {
+	margin-right: 8px;
+}
+
+.content-boxes h2 {
+	font-size: 15px; 
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+

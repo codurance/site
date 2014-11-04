@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
  * Polish initialisation for the jQuery countdown extension
  * Written by Pawel Lewtak lewtak@gmail.com (2008) */
 (function($) {

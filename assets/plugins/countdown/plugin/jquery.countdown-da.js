@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Danish initialisation for the jQuery countdown extension
    Written by Buch (admin@buch90.dk). */
 (function($) {
