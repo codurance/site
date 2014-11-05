@@ -259,3 +259,20 @@ body {
 	width: 450px;
 }
 
+.profile-window-grow {
+	cursor: pointer;
+	-webkit-transition:all 0.2s ease-out;
+ 	-moz-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+ 	-o-transition:all 0.2s ease-out;
+ 	transition:all 0.2s ease-out;
+}
+
+.profile-window-grow:hover {
+ 	-webkit-transform:scale(1.03);
+ 	-moz-transform:scale(1.03);
+ 	-ms-transform:scale(1.03);
+ 	-o-transform:scale(1.03);
+ 	transform:scale(1.03);
+}
+
