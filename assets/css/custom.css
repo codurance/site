@@ -5,6 +5,17 @@ body {
 	font-size: 14px;
 }
 
+@media (min-width: 1000px) {
+	.header .navbar-default .navbar-nav > li > a {
+		padding: 9px 20px 9px 20px;		
+	}
+}
+
+/* Navigation */
+.breadcrumbs h2 {
+	margin-top: 10px;
+}
+
 /* Home Page */
 
 .feature-panel {
