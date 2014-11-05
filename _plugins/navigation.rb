@@ -11,23 +11,6 @@ module Jekyll
 
       def render context
         page_title = context['page']['title']
-        link_attributes = page_title == @name ? {'class' => 'btn-u btn-u-orange'} : {}
-
-        output = Builder::XmlMarkup.new
-        output.li { |li|
-          li.a @name, {'href' => @url}.merge(link_attributes)
-        }
-      end
-    end
-
-    class SubLinkTag < ::Liquid::Tag
-      def initialize tag_name, markup, tokens
-        super
-        @name, @url = ::Jekyll::Navigation::parse_link_from markup
-      end
-
-      def render context
-        page_title = context['page']['title']
         list_item_attributes = page_title == @name ? {'class' => 'active'} : {}
 
         output = Builder::XmlMarkup.new
@@ -72,5 +55,4 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('navlink', Jekyll::Navigation::LinkTag)
-Liquid::Template.register_tag('navsublink', Jekyll::Navigation::SubLinkTag)
 Liquid::Template.register_tag('navgroup', Jekyll::Navigation::LinkGroupBlock)
