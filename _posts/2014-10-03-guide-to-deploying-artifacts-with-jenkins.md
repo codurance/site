@@ -5,7 +5,7 @@ title: A Very Quick Guide to Deploying Artifacts With Jenkins
 date: 2014-10-03
 author: Toby Retallick
 image:
-    src: /assets/img/blog/jenkinsPost/jenkins.png
+    src: /assets/img/custom/blog/jenkinsPost/jenkins.png
 tags:
 - continuous integration
 - Jenkins

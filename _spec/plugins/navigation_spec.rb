@@ -39,7 +39,7 @@ describe Jekyll::Navigation::LinkGroupBlock do
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown">
-          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-toggle="dropdown">
             There's some links under here
             <i class="icon-angle-down">&nbsp;</i>
           </a>
@@ -62,7 +62,7 @@ describe Jekyll::Navigation::LinkGroupBlock do
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown active">
-          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-toggle="dropdown">
             Notable Cryptographers
             <i class="icon-angle-down">&nbsp;</i>
           </a>

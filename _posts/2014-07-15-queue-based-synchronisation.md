@@ -5,7 +5,7 @@ title: Queue Based Synchronisation
 date: 2014-07-18 12:00:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/blog/queue-based-synchronisation.jpg
+    src: /assets/img/custom/blog/queue-based-synchronisation.jpg
 tags:
 - threading
 - design

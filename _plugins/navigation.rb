@@ -51,7 +51,7 @@ module Jekyll
 
         output = Builder::XmlMarkup.new
         output.li(list_item_attributes) { |li|
-          li.a('class' => 'dropdown-toggle', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false') { |a|
+          li.a('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown') { |a|
             a.text!(@name + ' ')
             a.i('class' => 'icon-angle-down') { |i|
               i << '&nbsp;'

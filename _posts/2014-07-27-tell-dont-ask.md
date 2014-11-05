@@ -5,7 +5,7 @@ title: Tell don't ask
 date: 2014-07-27 12:00:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/blog/tell-dont-ask.png
+    src: /assets/img/custom/blog/tell-dont-ask.png
 tags:
 - tdd
 - design

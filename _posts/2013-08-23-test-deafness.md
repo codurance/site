@@ -5,7 +5,7 @@ title: Test Deafness
 date: 2013-08-23 03:26:00.000000000 +01:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/test-deafness.jpg
+    src: /assets/img/custom/blog/test-deafness.jpg
 tags:
 - craftsmanship
 - tdd

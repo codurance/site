@@ -5,7 +5,7 @@ title: Samir Talwar is our first craftsman
 date: 2014-01-21 15:20:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/team/samir.jpeg
+    src: /assets/img/custom/team/samir.jpeg
 tags:
 - codurance
 - craftsmen

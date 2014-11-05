@@ -20,21 +20,21 @@ layout: default
             </div>
             <div class="row content-boxes">
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-trophy fa-3x"></i>
+                    <i class="fa fa-trophy fa-3x"></i>
                     <div class="content-box">
                         <h3 class="heading-sm">QUALITY</h3>
                         <p>We don't negotiate on quality. Software must deliver more value with time and not be a source of increasing pain and cost.</p>
                     </div> 
                 </div>
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-exchange fa-3x"></i>
+                    <i class="fa fa-exchange fa-3x"></i>
                     <div class="content-box">
                         <h3 class="heading-sm">COLLABORATION</h3>
                         <p>Sucessful software projects are a result of productive partnerships. Collaboration is at the heart of our development practices.</p>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom fa fa-heart fa-3x"></i>
+                    <i class="fa fa-heart fa-3x"></i>
                     <div class="content-box">
                         <h3 class="heading-sm">PASSION</h3>
                         <p>Software development is not just a job for us. It's our passion. We are proud of our work and we are constantly improving.</p>
@@ -46,7 +46,7 @@ layout: default
 </div>
 
 <!-- Services panel -->
-<div class="services">
+<div class="section gray-section">
     <div class="container">
         <div class="title-header">
             <h2>What we do</h2>
@@ -90,9 +90,9 @@ layout: default
                     <div class="content-boxes-in-v3">
                         <h3 class="heading-sm">SOFTWARE CRAFTSMANSHIP</h3>
                         <p>Check out the book from our co-founder Sandro Mancuso.</p>
-                        <div class="sandroBookImage">
+                        <div>
                             <a href="http://www.amazon.co.uk/Software-Craftsman-Professionalism-Pragmatism-Robert/dp/0134052501/ref=la_B00O0J11Z0_1_1?s=books&ie=UTF8&qid=1413930938&sr=1-1">
-                                <img class="img-responsive" src="/assets/img/custom/home/softwarecraftmanshipbook.jpg">
+                                <img class="img-responsive sandroBookImage" src="/assets/img/custom/home/softwarecraftmanshipbook.jpg">
                             </a>
                         </div>
                     </div>
@@ -103,10 +103,10 @@ layout: default
 </div>
 
 <!-- clients panel -->
-<div class="clients-section">
+<div class="section">
     <div class="container">
-        <div class="title-v1">
-            <h2>Clients & Partners</h2>
+        <div class="title-header">
+            <h2>Clients &amp; Partners</h2>
         </div>
         <div id="client-carousel" class="owl-carousel owl-theme">
             <div class="item">
@@ -133,63 +133,55 @@ layout: default
 
 
 <!-- Activity panel -->
-<div class="blogs">
+<div class="section gray-section">
     <div class="container">
-        <div class="title-v1">
+        <div class="title-header">
             <h2>Latest Blogs</h2>
         </div>
-        <div class="row news-v1">
-            <div class="col-md-4 margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="{{site.posts[0].image.src}}">
-                        <div class="caption">
-                            <a href="{{ site.posts[0].url }}">
-                                <h4>{{site.posts[0]title}}</h4>
-                            </a>
+        <div class="row blog-boxes">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="{{site.posts[0].image.src}}" alt="">
+                        <div class="blog-content">
+                            <h3><a href="{{ site.posts[0].url }}">{{site.posts[0]title}}</a></h3>
                             <p>{{ site.posts[0].content | strip_html | truncatewords:30}}</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> {{ site.posts[0].date | date_to_string }}</li>
-                                <li><i class="fa fa-user"></i> {{ site.posts[0].author | author_links }}</li>
-                            </ul>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> {{ site.posts[0].author | author_links }}</li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> {{ site.posts[0].date | date_to_string }}</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="{{site.posts[1].image.src}}">
-                        <div class="caption">
-                            <a href="{{ site.posts[1].url }}">
-                                <h4>{{site.posts[1]title}}</h4>
-                            </a>
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="{{site.posts[1].image.src}}" alt="">
+                        <div class="blog-content">
+                            <h3><a href="{{ site.posts[1].url }}">{{site.posts[1]title}}</a></h3>
                             <p>{{ site.posts[1].content | strip_html | truncatewords:30}}</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> {{ site.posts[1].date | date_to_string }}</li>
-                                <li><i class="fa fa-user"></i> {{ site.posts[1].author | author_links }}</li>
-                            </ul>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> {{ site.posts[1].author | author_links }}</li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> {{ site.posts[1].date | date_to_string }}</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <div class="thumbnail">
-                        <img src="{{site.posts[2].image.src}}">
-                        <div class="caption">
-                            <a href="{{ site.posts[2].url }}">
-                                <h4>{{site.posts[2]title}}</h4>
-                            </a>
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box">
+                        <img class="img-responsive" src="{{site.posts[2].image.src}}" alt="">
+                        <div class="blog-content">
+                            <h3><a href="{{ site.posts[2].url }}">{{site.posts[2]title}}</a></h3>
                             <p>{{ site.posts[2].content | strip_html | truncatewords:30}}</p>
-                            <ul class="list-unstyled list-inline blog-info">
-                                <li><i class="fa fa-calendar"></i> {{ site.posts[2].date | date_to_string }}</li>
-                                <li><i class="fa fa-user"></i> {{ site.posts[2].author | author_links }}</li>
-                            </ul>
                         </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> {{ site.posts[2].author | author_links }}</li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> {{ site.posts[2].date | date_to_string }}</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 </div>

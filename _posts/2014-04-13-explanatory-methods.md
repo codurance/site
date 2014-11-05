@@ -5,7 +5,7 @@ title: Screencast - Explanatory Methods
 date: 2014-04-13 20:00:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/explanatory_methods.png
+    src: /assets/img/custom/blog/explanatory_methods.png
 tags:
 - craftsmanship
 - screencast

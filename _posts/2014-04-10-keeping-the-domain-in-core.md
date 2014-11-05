@@ -5,7 +5,7 @@ title: Keeping the domain in the core
 date: 2014-04-10 00:30:00.000000000 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/blog/keeping_domain_in_core.png
+    src: /assets/img/custom/blog/keeping_domain_in_core.png
 tags:
 - craftsmanship
 - ddd
