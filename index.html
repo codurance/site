@@ -139,21 +139,23 @@ layout: default
             <h2>Latest Blogs</h2>
         </div>
         <div class="row blog-boxes">
+                {% for post in site.posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box">
-                        <img class="img-responsive" src="{{site.posts[0].image.src}}" alt="">
+                        <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
                         <div class="blog-content">
-                            <h3><a href="{{ site.posts[0].url }}">{{site.posts[0]title}}</a></h3>
-                            <p>{{ site.posts[0].content | strip_html | truncatewords:30}}</p>
+                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <p>{{ post.content | strip_html | truncatewords:30 }}</p>
                         </div>
                         <ul class="list-inline blog-box-info">
-                            <li><span>By</span> {{ site.posts[0].author | author_links }}</li>
+                            <li><span>By</span> {{ post.author | author_links }}</li>
                             <li>|</li>
-                            <li><i class="fa fa-clock-o"></i> {{ site.posts[0].date | date_to_string }}</li>
+                            <li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 md-margin-bottom-40">
+                {% endfor %}
+                <!-- <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box">
                         <img class="img-responsive" src="{{site.posts[1].image.src}}" alt="">
                         <div class="blog-content">
@@ -180,7 +182,7 @@ layout: default
                             <li><i class="fa fa-clock-o"></i> {{ site.posts[2].date | date_to_string }}</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
 
     </div>

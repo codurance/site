@@ -219,6 +219,10 @@ body {
 	text-decoration: none;
 }
 
+.blog-thumbnails .blog-thumbnails-box {
+	margin-top: 40px;
+}
+
 .blog-thumbnails img {
 	height: 80px;
 	width: 80px;

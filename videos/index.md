@@ -278,25 +278,15 @@ title: Videos
                 <div class="headline headline-md">
                     <h2>Recent Blogs</h2>
                 </div>
-                <div class="margin-top-40">
+                <div class="blog-thumbnails-box">
+                    {% for post in site.posts limit:3 %}
                     <div class="blog-thumbnail">    
-                        <a href="{{ site.posts[0].url }}"><img class="thumbnail" src="{{site.posts[0].image.src}}"></a>
+                        <a href="{{ post.url }}"><img class="thumbnail" src="{{ post.image.src }}"></a>
                         <div>
-                            <a href="{{ site.posts[0].url }}">{{site.posts[0]title}}</a>
+                            <a href="{{ post.url }}">{{post.title}}</a>
                         </div>    
                     </div>
-                    <div class="blog-thumbnail">
-                        <a href="{{ site.posts[1].url }}"><img class="thumbnail" src="{{site.posts[1].image.src}}"></a>
-                        <div>
-                            <a href="{{ site.posts[1].url }}">{{site.posts[1]title}}</a>
-                        </div>
-                    </div>
-                    <div class="blog-thumbnail">
-                        <a href="{{ site.posts[2].url }}"><img class="thumbnail" src="{{site.posts[2].image.src}}"></a>
-                        <div>
-                            <a href="{{ site.posts[2].url }}">{{site.posts[2]title}}</a>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <!-- latest tweets -->
