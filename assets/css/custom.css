@@ -236,6 +236,14 @@ body {
 	height: 80px;
 }
 
+.blog-post li a {
+	color: #e67e22;
+}
+
+.blog img {
+	max-width: 100%;
+}
+
 /* Videos */
 
 .videos .time-place {

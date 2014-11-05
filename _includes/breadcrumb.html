@@ -1,4 +1,4 @@
-{% if page.title %}
+{% if page.title or page.tag %}
     <div class="breadcrumbs margin-bottom-10">
         <div class="container">
             <h2 class="pull-left">{% if page.tag %}{{ page.tag }} {% else %}{{ page.title }}{% endif %}</h2>
