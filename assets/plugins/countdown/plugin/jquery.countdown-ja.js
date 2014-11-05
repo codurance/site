@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Japanese initialisation for the jQuery countdown extension
    Written by Ken Ishimoto (ken@ksroom.com) Aug 2009. */
 (function($) {

@@ -5,7 +5,7 @@ title: Google+ Sign-In with Scalatra
 date: 2014-07-10 15:35:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/scalatra_googleplus.png
+    src: /assets/img/custom/blog/scalatra_googleplus.png
 tags:
 - oauth
 - google-plus

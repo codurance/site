@@ -1,5 +1,5 @@
 url: "http://codurance.com"
-pygments: true
+highlighter: pygments
 permalink: pretty
 markdown: rdiscount
 

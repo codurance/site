@@ -1,5 +1,8 @@
 ---
 layout: default
+group:
+  title: Blog
+  link: /blog
 ---
 <div class="container">
 <div class="row blog-page blog-item">
@@ -16,17 +19,12 @@ layout: default
         </div>
         {% endif %}
 
-
-
-
   {% assign index = true %}
         {% for post in site.posts %}
           {% if post.author contains page.author %}
             {% include post.html post=post %}
           {% endif %}
   {% endfor %}
-
-
 
     </div>
     <!--End Blog Post-->

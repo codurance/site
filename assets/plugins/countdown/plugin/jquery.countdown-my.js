@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Burmese initialisation for the jQuery countdown extension
    Written by Win Lwin Moe (winnlwinmoe@gmail.com) Dec 2009. */
 (function($) {

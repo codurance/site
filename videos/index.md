@@ -1,9 +1,9 @@
 ---
-layout: videos
-title: Presentations, Screencasts, and Interviews
+layout: default
+title: Videos
 ---
 
-<div class= "container content">
+<div class="videos container">
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
@@ -274,30 +274,19 @@ title: Presentations, Screencasts, and Interviews
         <div class="col-md-3 magazine-page">
             <!-- latest blogs -->
 
-            <div class="latestBlogsRHS margin-bottom-40">
+            <div class="blog-thumbnails margin-bottom-40">
                 <div class="headline headline-md">
                     <h2>Recent Blogs</h2>
                 </div>
-                <div class="margin-top-40">
-                    <div class="blogThumbSideBar">    
-                        <a href="{{ site.posts[0].url }}"><img class="thumbnail" src="{{site.posts[0].image.src}}"></a>
+                <div class="blog-thumbnails-box">
+                    {% for post in site.posts limit:3 %}
+                    <div class="blog-thumbnail">    
+                        <a href="{{ post.url }}"><img class="thumbnail" src="{{ post.image.src }}"></a>
                         <div>
-                            {{site.posts[0]title}}
-                            <!-- Writing lots of shit -->
+                            <a href="{{ post.url }}">{{post.title}}</a>
                         </div>    
                     </div>
-                    <div class="blogThumbSideBar">
-                        <a href="{{ site.posts[1].url }}"><img class="thumbnail" src="{{site.posts[1].image.src}}"></a>
-                        <div>
-                            {{site.posts[1]title}}
-                        </div>
-                    </div>
-                    <div class="blogThumbSideBar">
-                        <a href="{{ site.posts[2].url }}"><img class="thumbnail" src="{{site.posts[2].image.src}}"></a>
-                        <div>
-                            {{site.posts[3]title}}
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <!-- latest tweets -->

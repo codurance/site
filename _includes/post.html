@@ -5,7 +5,7 @@
             <p class="blog-image-attr"><a href="{{post.image.attribution.href}}">{{post.image.attribution.text}}</a></p>
         {% endif %}
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 blog-post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <ul class="list-unstyled list-inline blog-info">
             <li><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</li>

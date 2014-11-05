@@ -5,7 +5,7 @@ title: Pairing without Programming
 date: 2014-02-19 17:00:00.000000000 +00:00
 author: Samir Talwar
 image:
-    src: /assets/img/blog/duet.jpg
+    src: /assets/img/custom/blog/duet.jpg
     attribution:
         text: Sheet Music, by Michael Janssen
         href: http://www.flickr.com/photos/jamuraa/5522007940/

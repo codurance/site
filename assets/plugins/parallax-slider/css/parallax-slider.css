@@ -118,7 +118,7 @@
 	text-align: center;
 	left: 0px;
 	bottom: 15px;
-	z-index: 99;
+	z-index: 1;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
@@ -154,7 +154,7 @@
 	width: 49px;
 	margin-top: -25px;
 	cursor: pointer;
-	z-index: 2000;
+	z-index: 10;
 	opacity: 0;
 	-webkit-transition: opacity 0.4s ease-in-out 0.2s;
 	-moz-transition: opacity 0.4s ease-in-out 0.2s;

@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Swedish initialisation for the jQuery countdown extension
    Written by Carl (carl@nordenfelt.com). */
 (function($) {

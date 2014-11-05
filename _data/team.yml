@@ -1,0 +1,74 @@
+- id: sandro 
+  name: Sandro Mancuso
+  image: /assets/img/custom/team/sandro.jpg
+  role: Software Craftsman and Co-Founder
+  shortDescription: Software craftsman, author, and founder of the London Software Craftsmanship Community (LSCC), Sandro has been...
+  fullDescription: <p>Software craftsman, <a href="http://leanpub.com/socra">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
+  twitter: sandromancuso
+  github: sandromancuso
+
+- id: mash
+  name: Mashooq Badar
+  image: /assets/img/custom/team/mash.jpg
+  role: Software Craftsman and Co-Founder
+  shortDescription: Mash is a software craftsman with extensive experience in developing innovative solutions and running large scale enterprise projects ...
+  fullDescription: <p>Mash is a software craftsman with extensive experience in developing innovative solutions and running large scale enterprise projects. For many years he was a Principal Consultant leading some of the most diverse projects for clients in Government, Media and Finance. Before Codurance Mash was a Director at UBS leading a 4 million pounds a year project with 6 development teams situated in London and Krakow. He started the project from scratch, building the teams a developer at a time.</p><p>Mash is an associated organiser for LSCC, involved since the beginning helping with organisation and running hands-on sessions. Mash has a passion for developing; teams that are skillful and passionate, solutions that are innovative and simple, and software that is aligned to it's business and flexible to change.</p>
+  twitter: mashhoq
+  github: mashhoq
+
+- id: samir
+  name: Samir Talwar
+  image: /assets/img/custom/team/samir.jpeg
+  role: Software Craftsman
+  shortDescription: >
+    Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge ...
+  fullDescription: >
+    <p>Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge, diving into new technologies, techniques and methodologies with a fervour. His experience with various tools allows him to select the right one for the job, and combined with his experience with Extreme Programming, he has a knack for spotting simple approaches to complex problems.</p><p>A prominent member and organiser of the London Software Craftsmanship Community, Samir tries to help people (including himself) challenge their definitions of "good enough" by running workshops, pairing with anyone and everyone and constantly asking questions. By challenging assumptions and encouraging people to go one step further to solve a problem, he helps them embrace a more holistic view of software development.</p>
+  twitter: samirtalwar
+  github: samirtalwar
+
+- id: steve
+  name: Steve Tooke
+  image: /assets/img/custom/team/tooky.jpg
+  role: Software Craftsman
+  shortDescription: Steve is a programmer, trainer and coach. Passionate about improving his craft and helping others improve theirs. He specialises in helping teams produce business value continuously through improving communication ...
+  fullDescription: <p>Steve is a programmer, trainer and coach. Passionate about improving his craft and helping others improve theirs. He specialises in helping teams produce business value continuously through improving communication and keeping their code maintainable. BDD is at the core of this process.</p><p>Steve has been getting paid to build software since 1997. Throughout his career he has worked on projects in a variety of industries including the NHS, banking, finance, fashion and a number of startups.</p><p>Steve is an active community member. He was the co-founder of the Software Craftsmanship UK user group, and the HampshiRB ruby user group. Steve trains and speaks on BDD, Cucumber, Ruby and other software development topics. He has spoken at the Scottish Ruby Conference and London Ruby User Group and has run workshops at the London Software Craftsmanship Community. Steve is a member of the Cucumber core team.</p>
+  twitter: tooky
+  github: tooky
+
+- id: pedro
+  name: Pedro Santos
+  image: /assets/img/custom/team/pedro.jpg
+  role: Software Craftsman
+  shortDescription: Pedro is a software craftsman with over twenty years experience. He's passionate about the web, distributed systems and mobile technology and a strong avocate of agile practices and the software craftsmanship movement ...
+  fullDescription: >
+    <p>Pedro is a software craftsman with over twenty years experience. Passionate about the web, distributed systems and mobile technology. Advocate of agile practices and the software craftsmanship movement. Has been key in bringing Software Craftsmanship practices into several organizations.</p><p>Member of developer groups such as: London Software Craftsmanship Community, NSCoders and Agile Barcelona. Frequent speaker on subjects such as: Software Craftsmanship, web and mobile solutions.</p>
+  twitter: pedromsantos
+  github: pedromsantos
+
+- id: robert
+  name: Robert Firek
+  image: /assets/img/custom/team/robert.png
+  role: Software Craftsman
+  shortDescription: Robert Firek is a software developer who tasted different flavours of programming. His broad range of experiences helped to deliver quality software in many companies. Strive to create software according to ...
+  fullDescription: <p>Robert Firek is a software developer who tasted different flavours of programming. His broad range of experiences helped to deliver quality software in many companies. Strive to create software according to the rule "Simplicity is the final achievement". As Waterfall apostate he encourage people to embrace Agile techniques. Fan of Microservices.</p><p>Member of the London Java Community and Wrocław JUG.</p>
+  twitter: robertfirek
+  github: robertfirek
+
+- id: toby
+  name: Toby Retallick
+  image: /assets/img/custom/team/toby.jpg
+  role: Apprentice
+  shortDescription: Toby joined Codurance as an Apprentice Software Craftsman in September 2014. Between 2007 and 2014 Toby worked client-side in marketing and digital roles ...
+  fullDescription: <p>Between 2007 and 2014 Toby worked client-side in marketing and digital roles. He also volunteered as a digital consultant for an environmental agency and has spoken at industry events. Toby's growing interest in the technology he was using on a daily basis lead him to completing an intensive coding bootcamp at Makers Academy in early 2014, before joining the team at Codurance.</p>
+  twitter: tobyret
+  github: tobyret
+
+- id: amir
+  name: Amir Bazazi
+  image: /assets/img/custom/team/amir.png
+  role: Apprentice
+  shortDescription: Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career ...
+  fullDescription: <p>Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career. </p> <p>Amir prides himself in his commitment to problem solving and looking at things through a logical perspective and for that reason he is always open to new ideas. He is always ready to learn, and firmly believes that no matter how much you know, you will always have the potential to know more. </p>
+  twitter: amiralibazazi
+  github: amiralibazazi

@@ -11,19 +11,7 @@ describe Jekyll::Navigation::LinkTag do
 
   it 'renders an active link when on the page being linked' do
     rendering('{% navlink It\'s me! @ /hello/there %}', 'page' => {'title' => 'It\'s me!'})
-      .should == '<li><a href="/hello/there" class="btn-u btn-u-orange">It\'s me!</a></li>'
-  end
-end
-
-describe Jekyll::Navigation::SubLinkTag do
-  it 'renders a link inside a list item' do
-    rendering('{% navsublink Look at me @ /subpage/one %}', 'page' => {})
-      .should == '<li><a href="/subpage/one">Look at me</a></li>'
-  end
-
-  it 'renders an active link when on the page being linked' do
-    rendering('{% navsublink You got me @ /subpage/two %}', 'page' => {'title' => 'You got me'})
-      .should == '<li class="active"><a href="/subpage/two">You got me</a></li>'
+      .should == '<li class="active"><a href="/hello/there">It\'s me!</a></li>'
   end
 end
 
@@ -31,15 +19,15 @@ describe Jekyll::Navigation::LinkGroupBlock do
   it 'renders a list of items with the appropriate classes' do
     rendering(<<-TEMPLATE, 'page' => {})
       {% navgroup There\'s some links under here %}
-        {% navsublink One @ /group/1 %}
-        {% navsublink Two @ /group/2 %}
-        {% navsublink Three @ /group/3 %}
-        {% navsublink Four @ /group/4 %}
+        {% navlink One @ /group/1 %}
+        {% navlink Two @ /group/2 %}
+        {% navlink Three @ /group/3 %}
+        {% navlink Four @ /group/4 %}
       {% endnavgroup %}
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown">
-          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-toggle="dropdown">
             There's some links under here
             <i class="icon-angle-down">&nbsp;</i>
           </a>
@@ -56,13 +44,13 @@ describe Jekyll::Navigation::LinkGroupBlock do
   it 'renders an active link when on a page in the group' do
     rendering(<<-TEMPLATE, 'page' => {'group' => 'Notable Cryptographers', 'title' => 'Alice'})
       {% navgroup Notable Cryptographers %}
-        {% navsublink Alice @ /crypto/alice %}
-        {% navsublink Bob @ /crypto/bob %}
+        {% navlink Alice @ /crypto/alice %}
+        {% navlink Bob @ /crypto/bob %}
       {% endnavgroup %}
     TEMPLATE
       .should equal_xml(<<-XML)
         <li class="dropdown active">
-          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">
+          <a class="dropdown-toggle" data-toggle="dropdown">
             Notable Cryptographers
             <i class="icon-angle-down">&nbsp;</i>
           </a>

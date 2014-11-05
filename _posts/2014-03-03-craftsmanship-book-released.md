@@ -5,7 +5,7 @@ title: Software Craftsmanship book is now finished
 date: 2014-03-03 11:37:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/craftsmanship_book.png
+    src: /assets/img/custom/blog/craftsmanship_book.png
 tags:
 - craftsmanship
 ---

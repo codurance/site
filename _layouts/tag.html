@@ -1,5 +1,8 @@
 ---
 layout: default
+group:
+  title: Blog
+  link: /blog
 ---
 <div class="container">
 <div class="row blog-page blog-item">
@@ -19,8 +22,6 @@ layout: default
         {% for post in page.posts %}
              {% include post.html post=post %}
         {% endfor %}
-
-        </ul>
 
     </div>
     <!--End Blog Post-->

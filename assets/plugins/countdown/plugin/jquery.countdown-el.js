@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
    Greek initialisation for the jQuery countdown extension
    Written by Philip. */
 (function($) {

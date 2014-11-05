@@ -5,7 +5,7 @@ title: My birthday wish list
 date: 2013-07-30 00:46:00.000000000 +01:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/birthday-wish.jpeg
+    src: /assets/img/custom/blog/birthday-wish.jpeg
 tags:
 - craftsmanship
 ---

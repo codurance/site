@@ -5,7 +5,7 @@ title: Just Another Day at the Office
 date: 2014-03-11 20:00:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/blog/just_another_day_in_the_office.jpg
+    src: /assets/img/custom/blog/just_another_day_in_the_office.jpg
 tags:
 - craftsmanship
 ---

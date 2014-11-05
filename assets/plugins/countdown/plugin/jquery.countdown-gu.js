@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
  * Gujarati initialization for the jQuery countdown extension
  * Written by Sahil Jariwala jariwala.sahil@gmail.com (2012) */
 (function($) {

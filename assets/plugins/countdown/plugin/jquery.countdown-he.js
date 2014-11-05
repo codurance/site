@@ -1,4 +1,4 @@
-/* http://keith-wood.name/countdown.html
+﻿/* http://keith-wood.name/countdown.html
  * Hebrew initialisation for the jQuery countdown extension
  * Translated by Nir Livne, Dec 2008 */
 (function($) {

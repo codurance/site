@@ -3,10 +3,6 @@
  *	v1.24
  */
 
-
-
-
-
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
@@ -130,7 +126,7 @@
   -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
 }
- Keyframes 
+/* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {
   0% {opacity: 1}
