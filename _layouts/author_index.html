@@ -19,17 +19,12 @@ group:
         </div>
         {% endif %}
 
-
-
-
   {% assign index = true %}
         {% for post in site.posts %}
           {% if post.author contains page.author %}
             {% include post.html post=post %}
           {% endif %}
   {% endfor %}
-
-
 
     </div>
     <!--End Blog Post-->

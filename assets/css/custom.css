@@ -251,3 +251,11 @@ body {
 	font-size: 80%;
 }
 
+/* Team */
+
+.profile-window .profile-image {
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+

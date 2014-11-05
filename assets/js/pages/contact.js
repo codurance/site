@@ -6,7 +6,7 @@ var Contact = function () {
         initMap: function () {
 			var map;
 			$(document).ready(function(){
-				if ( $( "#myDiv" ).length ) {
+				if ( $( "#map" ).length ) {
 					map = new GMaps({
 						div: '#map',
 						lat: 51.5175641,
