@@ -218,3 +218,24 @@ body {
 	color: #e67e22;
 	text-decoration: none;
 }
+
+.blog-thumbnails img {
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+
+.blog-thumbnails .blog-thumbnail {
+	margin-bottom: 20px;
+	clear: both;
+	height: 80px;
+}
+
+/* Videos */
+
+.videos .time-place {
+	font-weight: bold;
+	font-size: 80%;
+}
+
