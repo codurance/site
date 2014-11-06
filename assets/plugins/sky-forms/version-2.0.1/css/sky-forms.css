@@ -1,10 +1,4 @@
 /**/
-/* font */
-/**/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
-
-/**/
 /* defaults */
 /**/
 .sky-form {
@@ -150,10 +144,11 @@
 	position: absolute;
 	top: 14px;
 	right: 14px;
-	width: 5px;
+	width: 8px;
 	height: 11px;
 	background: #fff;
 	box-shadow: 0 0 0 12px #fff;
+	pointer-events: none;
 }
 .sky-form .select i:after,
 .sky-form .select i:before {
@@ -1013,6 +1008,17 @@
 /**/
 /* bootstrap compatibility */
 /**/
+
+/*
+.sky-form *,
+.sky-form *:after,
+.sky-form *:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+*/
 .sky-form .label {
 	border-radius: 0;
 	font-size: 100%;

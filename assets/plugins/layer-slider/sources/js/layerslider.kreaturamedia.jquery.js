@@ -92,11 +92,25 @@ function lsShowNotice(lsobj,issue,ver){
 					new layerSlider(this, options);
 				});
 			}else{
-				if( options == 'data' ){
+				if( options === 'data' ){
 					var lsData = $(this).data('LayerSlider').g;
 					if( lsData ){
 						return lsData;
 					}
+
+				// NEW FEATURES v5.2.0 option to get userInitData & defaultInitData
+
+				}else if( options === 'userInitData' ){
+					var lsInitData = $(this).data('LayerSlider').o;
+					if( lsInitData ){
+						return lsInitData;
+					}
+				}else if( options === 'defaultInitData' ){
+					var lsInitData = $(this).data('LayerSlider').defaults;
+					if( lsInitData ){
+						return lsInitData;
+					}
+
 				}else{
 					return this.each(function(i){
 
@@ -129,13 +143,16 @@ function lsShowNotice(lsobj,issue,ver){
 									}
 								}
 							}
-							if( options == 'debug' ){
-								lsData.d.show();
+							// if( options === 'debug' ){
+							// 	lsData.d.show();
+							// }
+							if( options === 'redraw' ){
+								lsData.resize();
 							}
 							if( ( lsData.g.autoSlideshow || ( !lsData.g.autoSlideshow && lsData.g.originalAutoSlideshow ) ) && options == 'stop' ){
 								lsData.o.cbStop(lsData.g);
 								lsData.g.originalAutoSlideshow = false;
-								lsData.g.curLayer.find('iframe[src*="www.youtu"], iframe[src*="player.vimeo"]').each(function(){
+								lsData.g.curLayer.find('iframe[src*="youtube.com"], iframe[src*="youtu.be"], iframe[src*="player.vimeo"]').each(function(){
 
 									// Clearing videoTimeouts
 
@@ -166,12 +183,17 @@ function lsShowNotice(lsobj,issue,ver){
 
 			// Setting options (user settings) and global (not modificable) parameters
 
-			ls.o = $.extend({},layerSlider.options, options);
+			ls.defaults = layerSlider.options;
+			ls.o = $.extend({},ls.defaults, options);
 			ls.g = $.extend({},layerSlider.global);
 			ls.lt = $.extend({},layerSlider.layerTransitions );
 			ls.st = $.extend({},layerSlider.slideTransitions );
 
 			ls.g.enableCSS3 = $(el).hasClass('ls-norotate') ? false : true;
+
+			// NEW FEATURE v5.2.0 saving original HTML Markup
+
+			ls.g.originalMarkup = $(el).html();
 
 			if( ls.g.ie78 ){
 				ls.o.lazyLoad = false;
@@ -206,7 +228,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 				// Added debug mode v3.5
 
-				ls.debug();
+				// ls.debug();
 
 				if( $('html').find('meta[content*="WordPress"]').length ){
 					ls.g.wpVersion = $('html').find('meta[content*="WordPress"]').attr('content').split('WordPress')[1];
@@ -220,43 +242,43 @@ function lsShowNotice(lsobj,issue,ver){
 
 				// Debug mode controls
 
-				ls.d.aT('LayerSlider controls');
-				ls.d.aU('<a href="#">prev</a> | <a href="#">next</a> | <a href="#">start</a> | <a href="#">stop</a> | <a href="#">force stop</a>');
-				ls.d.history.find('a').each(function(){
-					$(this).click(function(e){
-						e.preventDefault();
-						$(el).layerSlider($(this).text());
-					});
-				});
+				// ls.d.aT('LayerSlider controls');
+				// ls.d.aU('<a href="#">prev</a> | <a href="#">next</a> | <a href="#">start</a> | <a href="#">stop</a> | <a href="#">force stop</a>');
+				// ls.d.history.find('a').each(function(){
+				// 	$(this).click(function(e){
+				// 		e.preventDefault();
+				// 		$(el).layerSlider($(this).text());
+				// 	});
+				// });
 
-				ls.d.aT('LayerSlider version information');
-				ls.d.aU('JS version: <strong>' + ls.g.version + '</strong>');
-				if(ls.g.lswpVersion){
-					ls.d.aL('WP version: <strong>' + ls.g.lswpVersion + '</strong>');
-				}
-				if(ls.g.wpVersion){
-					ls.d.aL('WordPress version: <strong>' + ls.g.wpVersion + '</strong>');
-				}
+				// ls.d.aT('LayerSlider version information');
+				// ls.d.aU('JS version: <strong>' + ls.g.version + '</strong>');
+				// if(ls.g.lswpVersion){
+				// 	ls.d.aL('WP version: <strong>' + ls.g.lswpVersion + '</strong>');
+				// }
+				// if(ls.g.wpVersion){
+				// 	ls.d.aL('WordPress version: <strong>' + ls.g.wpVersion + '</strong>');
+				// }
 
-				ls.d.aL('jQuery version: <strong>' + $().jquery + '</strong>');
+				// ls.d.aL('jQuery version: <strong>' + $().jquery + '</strong>');
 
-				if( $(el).attr('id') ){
+				// if( $(el).attr('id') ){
 
-					ls.d.aT('LayerSlider container');
-					ls.d.aU('#'+$(el).attr('id'));
-				}
+				// 	ls.d.aT('LayerSlider container');
+				// 	ls.d.aU('#'+$(el).attr('id'));
+				// }
 
 				// NEW LOAD METHOD v3.5
 				// FIXED v4.0 If the selected skin is already loaded, calling the ls.init() function immediately
 
 				if( !ls.o.skin || ls.o.skin == '' || !ls.o.skinsPath || ls.o.skinsPath == '' ){
 
-					ls.d.aT('Loading without skin. Possibilities: mistyped skin and / or skinsPath.');
+					// ls.d.aT('Loading without skin. Possibilities: mistyped skin and / or skinsPath.');
 
 					ls.init();
 				}else{
 
-					ls.d.aT('Trying to load with skin: '+ls.o.skin, true);
+					// ls.d.aT('Trying to load with skin: '+ls.o.skin, true);
 
 					// Applying skin
 
@@ -272,7 +294,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 					if( $('link[href="'+skinStyle+'"]').length ){
 
-						ls.d.aU('Skin "'+ls.o.skin+'" is already loaded.');
+						// ls.d.aU('Skin "'+ls.o.skin+'" is already loaded.');
 
 						curSkin = $('link[href="'+skinStyle+'"]');
 
@@ -302,7 +324,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 						if( !ls.g.loaded ){
 
-							ls.d.aU('curSkin.load(); fired');
+							// ls.d.aU('curSkin.load(); fired');
 
 							ls.g.loaded = true;
 
@@ -320,7 +342,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 						if( !ls.g.loaded ){
 
-							ls.d.aU('$(window).load(); fired');
+							// ls.d.aU('$(window).load(); fired');
 
 							ls.g.loaded = true;
 
@@ -340,7 +362,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 						if( !ls.g.loaded ){
 
-							ls.d.aT('Fallback mode: Neither curSkin.load(); or $(window).load(); were fired');
+							// ls.d.aT('Fallback mode: Neither curSkin.load(); or $(window).load(); were fired');
 
 							ls.g.loaded = true;
 							ls.init();
@@ -352,6 +374,10 @@ function lsShowNotice(lsobj,issue,ver){
 
 		ls.init = function(){
 
+			// NEW FEATURE v5.5.0 Appending the slider element into the element specified in appendTo
+
+			$(el).prependTo( $( ls.o.appendTo ) );
+
 			// IMPROVEMENT v4.0.1 Trying to add special ID to <body> or <html> (required to overwrite WordPresss global styles)
 
 			if( !$('html').attr('id') ){
@@ -359,6 +385,38 @@ function lsShowNotice(lsobj,issue,ver){
 			}else if( !$('body').attr('id') ){
 				$('body').attr('id','ls-global');
 			}
+
+			// NEW FEATURES v5.5.0 Hiding the slider on mobile devices, smaller resolutions
+			// or changing it to a static but responsive image
+
+			if( ls.g.isMobile() === true && ls.o.hideOnMobile === true ){
+				$(el).addClass('ls-forcehide');
+				$(el).closest('.ls-wp-fullwidth-container').addClass('ls-forcehide');
+			}
+
+			var showHide = function(){
+
+				if( ls.o.hideOnMobile === true && ls.g.isMobile() === true ){
+					$(el).addClass('ls-forcehide');
+					$(el).closest('.ls-wp-fullwidth-container').addClass('ls-forcehide');
+					ls.o.autoStart = false;
+				}else{
+					if( $(window).width() < ls.o.hideUnder || $(window).width() > ls.o.hideOver ){
+						$(el).addClass('ls-forcehide');
+						$(el).closest('.ls-wp-fullwidth-container').addClass('ls-forcehide');
+					}else{
+						$(el).removeClass('ls-forcehide');
+						$(el).closest('.ls-wp-fullwidth-container').removeClass('ls-forcehide');
+					}
+				}
+			};
+
+			$(window).resize( function(){
+
+				showHide();
+			});
+
+			showHide();
 
 			// NEW FEATURE v1.7 making the slider responsive
 
@@ -402,6 +460,13 @@ function lsShowNotice(lsobj,issue,ver){
 				ls.o.thumbnailNavigation = 'disabled';
 			}
 
+			// IMPROVEMENT v5.2.0 the original width of a full width slider should be always 100% even if the user forgot to set that value
+			// BUGFIX v5.3.0 An additional check required (with the original improvement full-width sliders with "normal" responsiveness couldn't be created)
+
+			if( $(el).parent().hasClass('ls-wp-fullwidth-helper') && ls.o.responsiveUnder !== 0 ){
+				$(el)[0].style.width = '100%';
+			}
+
 			// NEW FEATURE v3.0 added "normal" responsive mode with image and font resizing
 			// NEW FEATURE v3.5 responsiveUnder
 
@@ -429,6 +494,21 @@ function lsShowNotice(lsobj,issue,ver){
 				ls.g.responsiveMode = true;
 			}else{
 				ls.g.responsiveMode = false;
+			}
+
+			// NEW FEATURE v5.5.0 We must overwrite some user settings if fullScreen mode is enabled
+
+			if( ls.o.fullScreen === true ){
+				ls.o.responsiveUnder = 0;
+				ls.g.responsiveMode = true;
+
+				if( ls.g.sliderOriginalWidth.indexOf('%') != -1 ){
+					ls.g.sliderOriginalWidth = parseInt( ls.g.sliderOriginalWidth) + 'px';
+				}
+
+				if( ls.g.sliderOriginalHeight.indexOf('%') != -1 ){
+					ls.g.sliderOriginalHeight = parseInt( ls.g.sliderOriginalHeight) + 'px';
+				}
 			}
 
 			// IMPROVEMENT v3.0 preventing WordPress to wrap your sublayers in <code> or <p> elements
@@ -478,6 +558,14 @@ function lsShowNotice(lsobj,issue,ver){
 							$(this).data( $.trim(param[0]), $.trim(param[1]) + p2 );
 						}
 					}
+				}
+
+				// NEW FEATURE v5.2.0 Starts the slider only if it is in the viewport
+
+				if( ls.o.startInViewport === true && ls.o.autoStart === true ){
+
+					ls.o.autoStart = false;
+					ls.g.originalAutoStart = true;
 				}
 
 				// NEW FEATURE v1.7 and v3.0 making the slider responsive - we have to use style.left instead of jQuery's .css('left') function!
@@ -603,7 +691,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 			// Youtube videos
 
-			$(el).find('iframe[src*="www.youtu"], iframe[src*="youtu.be"]').each(function(){
+			$(el).find('iframe[src*="youtube.com"], iframe[src*="youtu.be"]').each(function(){
 
 				// BUGFIX v4.1.0 Firefox embedded video fix
 
@@ -623,17 +711,23 @@ function lsShowNotice(lsobj,issue,ver){
 
 					var vpContainer = $('<div>').addClass('ls-vpcontainer').appendTo( $(this).parent() );
 
-					if( ls.o.lazyLoad ){
-						$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').data('src',  http + '//img.youtube.com/vi/' + $(this).attr('src').split('embed/')[1].split('?')[0] + '/' + ls.o.youtubePreview );
-					}else{
+//					if( ls.o.lazyLoad ){
+//						$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').data('src',  http + '//img.youtube.com/vi/' + $(this).attr('src').split('embed/')[1].split('?')[0] + '/' + ls.o.youtubePreview );
+//					}else{
 						$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').attr('src',  http + '//img.youtube.com/vi/' + $(this).attr('src').split('embed/')[1].split('?')[0] + '/' + ls.o.youtubePreview );
-					}
+//					}
 					$('<div>').appendTo( vpContainer ).addClass('ls-playvideo');
 
 					$(this).parent().css({
 						width : $(this).width(),
 						height : $(this).height()
 					}).click(function(){
+
+						// IMPROVEMENT v5.2.0 if video playing is in progress, video layers with auto play will skip showuntil feature
+
+						if( $(this).data('showuntil') > 0 && $(this).data('showUntilTimer') ){
+							clearTimeout( $(this).data('showUntilTimer') );
+						}
 
 						ls.g.isAnimating = true;
 
@@ -715,11 +809,11 @@ function lsShowNotice(lsobj,issue,ver){
 
 					$.getJSON( http + '//vimeo.com/api/v2/video/'+ ( $(this).attr('src').split('video/')[1].split('?')[0] ) +'.json?callback=?', function(data){
 
-						if( ls.o.lazyLoad ){
-							$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').data('src', data[0]['thumbnail_large'] );
-						}else{
+//						if( ls.o.lazyLoad ){
+//							$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').data('src', data[0]['thumbnail_large'] );
+//						}else{
 							$('<img>').appendTo( vpContainer ).addClass('ls-videopreview').attr('alt', 'Play video').attr('src', data[0]['thumbnail_large'] );
-						}
+//						}
 						iframe.data( 'videoDuration', parseInt( data[0]['duration'] ) * 1000 );
 						$('<div>').appendTo( vpContainer ).addClass('ls-playvideo');
 					});
@@ -729,6 +823,12 @@ function lsShowNotice(lsobj,issue,ver){
 						width : $(this).width(),
 						height : $(this).height()
 					}).click(function(){
+
+						// IMPROVEMENT v5.2.0 if video playing is in progress, video layers with auto play will skip showuntil feature
+
+						if( $(this).data('showuntil') > 0 && $(this).data('showUntilTimer') ){
+							clearTimeout( $(this).data('showUntilTimer') );
+						}
 
 						ls.g.isAnimating = true;
 
@@ -823,45 +923,52 @@ function lsShowNotice(lsobj,issue,ver){
 
 				var curVideo = $(this);
 
+				// BUGFIX v5.3.0 'ended' function removed from 'click' function due to multiply
+
+				$(this).on('ended', function(){
+					if( ls.o.autoPauseSlideshow === 'auto' && ls.g.originalAutoSlideshow === true ){
+						ls.start();
+					}
+				});
+
 				$(this).removeAttr('width').removeAttr('height').css({
 					width : '100%',
 					height : '100%'
-				}).click(function(){
+				}).click(function(e){
 
-					if( typeof curVideo.attr('controls') === "undefined" ){
-						this.currentTime = 0;
+					// BUGFIX v5.3.0 autoplay didn't work in all cases
+
+					if( !ls.g.pausedByVideo ){
+
+						if( this.paused ){
+							e.preventDefault();
+						}
+
 						this.play();
-					}
 
-					ls.g.isAnimating = true;
+						ls.g.isAnimating = true;
 
-					if( ls.g.paused ){
+						if( ls.g.paused ){
+							if( ls.o.autoPauseSlideshow !== false ){
+								ls.g.paused = false;
+							}
+							ls.g.originalAutoSlideshow = true;
+						}else{
+							ls.g.originalAutoSlideshow = ls.g.autoSlideshow;
+						}
+
 						if( ls.o.autoPauseSlideshow !== false ){
-							ls.g.paused = false;
+							ls.stop();
 						}
-						ls.g.originalAutoSlideshow = true;
-					}else{
-						ls.g.originalAutoSlideshow = ls.g.autoSlideshow;
-					}
 
-					if( ls.o.autoPauseSlideshow !== false ){
-						ls.stop();
-					}
+						ls.g.pausedByVideo = true;
+						ls.g.isAnimating = false;
 
-					ls.g.pausedByVideo = true;
-
-					$(this).on('ended', function(){
-						if( ls.o.autoPauseSlideshow === 'auto' && ls.g.originalAutoSlideshow === true ){
-							ls.start();
+						if( ls.g.resize === true ){
+							ls.makeResponsive( ls.g.curLayer, function(){
+								ls.g.resize = false;
+							});
 						}
-					});
-
-					ls.g.isAnimating = false;
-
-					if( ls.g.resize === true ){
-						ls.makeResponsive( ls.g.curLayer, function(){
-							ls.g.resize = false;
-						});
 					}
 				});
 			});
@@ -1089,7 +1196,7 @@ function lsShowNotice(lsobj,issue,ver){
 										if( hoverLayer.find('.ls-tn').length ){
 											tnSrc = hoverLayer.find('.ls-tn').data('src');
 										}else if( hoverLayer.find('.ls-videopreview').length ){
-											tnSrc = hoverLayer.find('.ls-videopreview').data('src');
+											tnSrc = hoverLayer.find('.ls-videopreview').attr('src');
 										}else if( hoverLayer.find('.ls-bg').length ){
 											tnSrc = hoverLayer.find('.ls-bg').data('src');
 										}else{
@@ -1245,7 +1352,7 @@ function lsShowNotice(lsobj,issue,ver){
 						if( $(this).find('.ls-tn').length ){
 							tnSrc = $(this).find('.ls-tn').data('src');
 						}else if( $(this).find('.ls-videopreview').length ){
-							tnSrc = $(this).find('.ls-videopreview').data('src');
+							tnSrc = $(this).find('.ls-videopreview').attr('src');
 						}else if( $(this).find('.ls-bg').length ){
 							tnSrc = $(this).find('.ls-bg').data('src');
 						}else{
@@ -1512,25 +1619,19 @@ function lsShowNotice(lsobj,issue,ver){
 
 			$(window).resize(function(){
 
-				ls.g.resize = true;
+				ls.resize();
+			});
 
-				if( !ls.g.isAnimating ){
+			// BUGFIX v5.3.0 Responsiveness not worked in some cases while changed orientation on mobile devices
 
-					ls.makeResponsive( ls.g.curLayer, function(){
-						if( ls.g.ltContainer ){
-							ls.g.ltContainer.empty();
-						}
-						ls.g.resize = false;
-					});
-					if( ls.g.yourLogo ){
-						ls.resizeYourLogo();
-					}
-				}
+			$(window).on('orientationchange',function(){
+
+				$(window).resize();
 			});
 
 			ls.g.showSlider = true;
 
-			// NEW FEATURE v1.7 animating first layer
+			// NEW FEATURE v1.7 animating first slide
 
 			if( ls.o.animateFirstSlide == true ){
 				if( ls.o.autoStart ){
@@ -1540,9 +1641,9 @@ function lsShowNotice(lsobj,issue,ver){
 					$(el).find('.ls-nav-stop').addClass('ls-nav-stop-active');
 				}
 				ls.next();
-			}else{
+			}else if( typeof ls.g.curLayer[0] !== 'undefined' ){
 				ls.imgPreload(ls.g.curLayer,function(){
-					ls.g.curLayer.fadeIn(1000, function(){
+					ls.g.curLayer.fadeIn(ls.o.sliderFadeInDuration, function(){
 
 						ls.g.isLoading = false;
 
@@ -1552,7 +1653,20 @@ function lsShowNotice(lsobj,issue,ver){
 
 						if( ls.o.autoPlayVideos ){
 							$(this).delay( $(this).data('delayin') + 25 ).queue(function(){
-								$(this).find('.ls-videopreview, video, audio').click();
+
+								// YouTube & Vimeo videos
+
+								$(this).find('.ls-videopreview').click();
+
+								// HTML5 videos
+
+								$(this).find('video, audio').each(function(){
+									if( typeof $(this)[0].currentTime !== 0){
+										$(this)[0].currentTime = 0;
+									}
+									$(this).click();
+								});
+
 								$(this).dequeue();
 							});
 						}
@@ -1563,9 +1677,11 @@ function lsShowNotice(lsobj,issue,ver){
 
 							// Setting showUntilTimers
 
-							if( $(this).data('showuntil') > 0 ){
+							var cursub = $(this);
 
-								var cursub = $(this);
+							// IMPROVEMENT v5.2.0 video layers with auto play will skip showuntil feature
+
+							if( ( !cursub.hasClass('ls-video-layer') || ( cursub.hasClass('ls-video-layer') && ls.o.autoPlayVideos === false ) ) && cursub.data('showuntil') > 0 ){
 
 								// IMPROVEMENT v4.5.0 sublayerShowUntil will be called anly if necessary
 
@@ -1592,6 +1708,24 @@ function lsShowNotice(lsobj,issue,ver){
 			// NEW FEATURE v1.7 added cbInit function
 
 			ls.o.cbInit($(el));
+		};
+
+		ls.resize = function(){
+
+				ls.g.resize = true;
+
+				if( !ls.g.isAnimating ){
+
+					ls.makeResponsive( ls.g.curLayer, function(){
+						if( ls.g.ltContainer ){
+							ls.g.ltContainer.empty();
+						}
+						ls.g.resize = false;
+					});
+					if( ls.g.yourLogo ){
+						ls.resizeYourLogo();
+					}
+				}
 		};
 
 		ls.start = function(){
@@ -1894,11 +2028,10 @@ function lsShowNotice(lsobj,issue,ver){
 			// NEW FEATURE v2.0 videoPreview & autoPlayVideos
 
 			if( ls.g.pausedByVideo == true ){
-
 				ls.g.pausedByVideo = false;
 				ls.g.autoSlideshow = ls.g.originalAutoSlideshow;
 
-				ls.g.curLayer.find('iframe[src*="www.youtu"], iframe[src*="player.vimeo"]').each(function(){
+				ls.g.curLayer.find('iframe[src*="youtube.com"], iframe[src*="youtu.be"], iframe[src*="player.vimeo"]').each(function(){
 
 					$(this).parent().find('.ls-vpcontainer').fadeIn(ls.g.v.fi,function(){
 						$(this).parent().find('iframe').attr('src','');
@@ -1911,7 +2044,7 @@ function lsShowNotice(lsobj,issue,ver){
 				});
 			}
 
-			$(el).find('iframe[src*="www.youtu"], iframe[src*="player.vimeo"]').each(function(){
+			$(el).find('iframe[src*="youtube.com"], iframe[src*="youtu.be"], iframe[src*="player.vimeo"]').each(function(){
 
 				// Clearing videoTimeouts
 
@@ -1937,13 +2070,15 @@ function lsShowNotice(lsobj,issue,ver){
 
 			var timeOut = 0;
 
-			if( $(el).find('iframe[src*="www.youtu"], iframe[src*="player.vimeo"]').length > 0 ){
+			if( $(el).find('iframe[src*="youtube.com"], iframe[src*="youtu.be"], iframe[src*="player.vimeo"]').length > 0 ){
 				timeOut = ls.g.v.fi;
 			}
 
-			ls.imgPreload(ls.g.nextLayer,function(){
-				ls.animate();
-			});
+			if( typeof ls.g.nextLayer[0] !== 'undefined' ){
+				ls.imgPreload(ls.g.nextLayer,function(){
+					ls.animate();
+				});
+			}
 		};
 
 		// Preloading images
@@ -2022,6 +2157,30 @@ function lsShowNotice(lsobj,issue,ver){
 						ls.g.li.delay(400).fadeIn(300);
 					}
 
+					var afterImgLoad = function(){
+
+						// NEW FEATURE v4.0 Hiding loading indicator
+
+						ls.g.li.stop(true,true).css({
+							display: 'none'
+						});
+
+						$('.ls-thumbnail-wrapper, .ls-nav-next, .ls-nav-prev, .ls-bottom-nav-wrapper').css({
+							visibility : 'visible'
+						});
+
+						// We love you so much IE... -.-
+
+						if( navigator.userAgent.indexOf('Trident/7') !== -1 || ls.g.ie78 ){
+							setTimeout(function(){
+								ls.makeResponsive(layer, callback);
+							},50);
+						}else{
+							ls.makeResponsive(layer, callback);
+						}
+
+					};
+
 					for(x=0;x<preImages.length;x++){
 
 						$('<img>').data('el',preImages[x]).load(function(){
@@ -2030,25 +2189,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 							if( ++preloaded == preImages.length ){
 
-							// NEW FEATURE v4.0 Hiding loading indicator
-
-								ls.g.li.stop(true,true).css({
-									display: 'none'
-								});
-
-								$('.ls-thumbnail-wrapper, .ls-nav-next, .ls-nav-prev, .ls-bottom-nav-wrapper').css({
-									visibility : 'visible'
-								});
-
-								// We love you so much IE... -.-
-
-								if( navigator.userAgent.indexOf('Trident/7') !== -1 || ls.g.ie78 ){
-									setTimeout(function(){
-										ls.makeResponsive(layer, callback);
-									},50);
-								}else{
-									ls.makeResponsive(layer, callback);
-								}
+								afterImgLoad();
 							}
 						}).error(function(){
 							var imgURL = $(this).data('el')[0].substring($(this).data('el')[0].lastIndexOf("/") + 1, $(this).data('el')[0].length);
@@ -2057,8 +2198,16 @@ function lsShowNotice(lsobj,issue,ver){
 							}else{
 								alert('LayerSlider error:\r\n\r\nIt seems like the URL of the image or background image "'+imgURL+'" is pointing to a wrong location and it cannot be loaded. Please check the URLs of all your images used in the slider.');
 							}
+
 							$(this).addClass('ls-not-preloaded');
-							preloaded++;
+
+							// IMPROVEMENT v5.2.0 The slider should not stop even if an image cannot be loaded
+
+							if( ++preloaded == preImages.length ){
+
+								afterImgLoad();
+							}
+
 						}).attr('src',preImages[x][0]);
 					}
 				}
@@ -2084,6 +2233,7 @@ function lsShowNotice(lsobj,issue,ver){
 			if( ls.g.showShadow ){
 				ls.g.showShadow();
 			}
+
 			ls.resizeSlider();
 
 			if( ls.o.thumbnailNavigation == 'always' ){
@@ -2350,21 +2500,41 @@ function lsShowNotice(lsobj,issue,ver){
 				}
 			}
 
+			// BUGFIX 5.3.0 Fixed full-width resize issue
+
+			if( $(el).closest('.ls-wp-fullwidth-container').length ){
+
+					$(el).closest('.ls-wp-fullwidth-helper').css({
+						width : $(window).width()
+					});
+			}
+
 			// NEW FEATURE v3.0 added "normal" responsive mode with image and font resizing
 
 			if( ls.g.responsiveMode ){
 
 				var parent = $(el).parent();
 
-				// BUGFIX v4.0 there is no need to subtract the values of the left and right paddings of the container element!
+				// NEW FEATURE v5.5.0 Added fullScreen mode
 
-				$(el).css({
-					width : parent.width() - parseInt($(el).css('padding-left')) - parseInt($(el).css('padding-right'))
-				});
-				ls.g.ratio = $(el).width() / parseInt( ls.g.sliderOriginalWidth );
-				$(el).css({
-					height : ls.g.ratio * parseInt( ls.g.sliderOriginalHeight )
-				});
+				if( ls.o.fullScreen === true ){
+
+					$(el).css({
+						width : '100%',
+						height : $(window).height()
+					});
+				}else{
+
+					// BUGFIX v4.0 there is no need to subtract the values of the left and right paddings of the container element!
+
+					$(el).css({
+					       width : parent.width() - parseInt($(el).css('padding-left')) - parseInt($(el).css('padding-right'))
+      					});
+					ls.g.ratio = $(el).width() / parseInt( ls.g.sliderOriginalWidth );
+					$(el).css({
+						height : ls.g.ratio * parseInt( ls.g.sliderOriginalHeight )
+					});
+				}
 
 			}else{
 				ls.g.ratio = 1;
@@ -2692,6 +2862,10 @@ function lsShowNotice(lsobj,issue,ver){
 
 					var nextDelay = ls.g.nextLayer.data('delayin') ? parseInt(ls.g.nextLayer.data('delayin')) : ls.o.delayIn;
 					var nextDuration = ls.g.nextLayer.data('durationin') ? parseInt(ls.g.nextLayer.data('durationin')) : ls.o.durationIn;
+
+					// BUGFIX v5.2.0 duration cannot be 0
+
+					if( nextDuration === 0 ){ nextDuration = 1 }
 					var nextEasing = ls.g.nextLayer.data('easingin') ? ls.g.nextLayer.data('easingin') : ls.o.easingIn;
 
 					var curLayer = function(){
@@ -2722,14 +2896,16 @@ function lsShowNotice(lsobj,issue,ver){
 							});
 						});
 
-						// FIXED v4.0 Calling cbAnimStop callback function before changing layer indexes
-
-						ls.o.cbAnimStop(ls.g);
-
 						// Setting current layer
 
 						ls.g.curLayer = ls.g.nextLayer;
+
+						// IMPROVEMENT v5.2.0 added prevLayerIndex and fixing curLayerIndex (nextLayerIndex is the same as curLayerIndex because the slider doesn't know at this point which slide will be the next)
+
+						ls.g.prevLayerIndex = ls.g.curLayerIndex;
 						ls.g.curLayerIndex = ls.g.nextLayerIndex;
+
+						ls.o.cbAnimStop(ls.g);
 
 						// NEW FEATURE v5.0.0 Lazy-load (preloading here the images of the next layer)
 
@@ -2946,6 +3122,10 @@ function lsShowNotice(lsobj,issue,ver){
 
 							var curSubDelay = $(this).data('delayout') ? parseInt($(this).data('delayout')) : deO;
 							var curSubTime = $(this).data('durationout') ? parseInt($(this).data('durationout')) : duO;
+
+							// BUGFIX v5.2.0 duration cannot be 0
+
+							if( curSubTime === 0 ){ curSubTime = 1 }
 							var curSubEasing = $(this).data('easingout') ? $(this).data('easingout') : eO;
 
 							// On new layer transitions, all sublayer will be slide / fade out in 500ms without any delays
@@ -3195,12 +3375,24 @@ function lsShowNotice(lsobj,issue,ver){
 
 								if( ls.o.autoPlayVideos == true ){
 
-									cursub.find('.ls-videopreview, video, audio').click();
+									// YouTube & Vimeo videos
+
+									cursub.find('.ls-videopreview').click();
+
+									// HTML5 videos
+
+									cursub.find('video, audio').each(function(){
+										if( typeof $(this)[0].currentTime !== 0){
+											$(this)[0].currentTime = 0;
+										}
+										$(this).click();
+									});
 								}
 
 								// NEW FEATURE v3.0 showUntil sublayers
+								// IMPROVEMENT v5.2.0 video layers with auto play will skip showuntil feature
 
-								if( cursub.data('showuntil') > 0 ){
+								if( ( !cursub.hasClass('ls-video-layer') || ( cursub.hasClass('ls-video-layer') && ls.o.autoPlayVideos === false ) ) && cursub.data('showuntil') > 0 ){
 
 									// IMPROVEMENT v4.5.0 sublayerShowUntil will be called anly if necessary
 
@@ -3246,6 +3438,7 @@ function lsShowNotice(lsobj,issue,ver){
 							};
 
 							if( nextSubSlideDir.indexOf('fade') != -1 || ( $(this).data('fadein') !== 'false' && $(this).data('transitiontype') === 'new' ) ){
+
 								css['opacity'] = 0;
 								transition['opacity'] = $(this).data( 'originalOpacity' );
 							}
@@ -3597,15 +3790,17 @@ function lsShowNotice(lsobj,issue,ver){
 
 								// createCuboids function will append cuboids with their style settings to their container
 
+								// BUGFIX v5.1.2 the prefixless transform must be the last property
+
 								var createCuboids = function(c,a,w,h,tx,ty,tz,rx,ry){
 									$('<div>').addClass(c).css({
 										width: w,
 										height: h,
-										'transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)',
 										'-o-transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)',
 										'-ms-transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)',
 										'-moz-transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)',
-										'-webkit-transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)'
+										'-webkit-transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)',
+										'transform': 'translate3d('+tx+'px, '+ty+'px, '+tz+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ(0deg) scale3d(1, 1, 1)'
 									}).appendTo(a);
 								};
 
@@ -3928,7 +4123,7 @@ function lsShowNotice(lsobj,issue,ver){
 							}
 
 							if( nextBG.length ){
-								nextTile.append($('<img>').attr('src', nextBG.attr('src') ).css({
+								nextTile.append( $('<img>').attr('src', nextBG.attr('src')).css({
 									width : nextBG[0].style.width,
 									height : nextBG[0].style.height,
 									marginLeft : parseFloat(nextBG.css('margin-left')) - parseFloat(tile.position().left),
@@ -3960,13 +4155,19 @@ function lsShowNotice(lsobj,issue,ver){
 
 						curSubLayers(sublayersDurationOut);
 
+						// BUGFIX v5.2.0 prevents background flickering in some cases
+
+						if( sublayersDurationOut === 0 ){
+							sublayersDurationOut = 10;
+						}
+
 						// Hiding current layer after its sublayers animated out
 
 						setTimeout(function(){
 							curLayer.css({
 								width: 0
 							});
-						},sublayersDurationOut );
+						}, sublayersDurationOut );
 
 						// Calculating next layer delay
 
@@ -4047,6 +4248,47 @@ function lsShowNotice(lsobj,issue,ver){
 
 			/* Selecting and running the transition */
 
+					// NEW FEATURE v5.2.0 Starts the slider only if it is in the viewport
+
+					var startInViewport = function(){
+
+						ls.g.nextLayer.find(' > *[class*="ls-l"]').each(function(){
+
+							$(this).css({
+								visibility : 'hidden'
+							});
+						});
+
+						ls.g.sliderTop = $(el).offset().top;
+
+						$(window).load(function(){
+							setTimeout(function(){
+
+								ls.g.sliderTop = $(el).offset().top;
+							}, 20);
+						});
+
+						var isSliderInViewport = function(){
+							if( $(window).scrollTop() + $(window).height() - ( ls.g.sliderHeight() / 2 ) > ls.g.sliderTop ){
+								ls.g.firstSlideAnimated = true;
+								if( ls.g.originalAutoStart === true ){
+									//ls.g.autoSlideshow = true;
+								 	ls.o.autoStart = true;
+								 	ls.start();
+								}
+								nextSubLayers();
+							}
+						}
+
+						$(window).scroll(function(){
+							if( !ls.g.firstSlideAnimated ){
+								isSliderInViewport();
+							}
+						});
+
+						isSliderInViewport();
+					};
+
 					var tType = ( ( ls.g.nextLayer.data('transition3d') || ls.g.nextLayer.data('transition2d') ) && ls.t ) || ( ( ls.g.nextLayer.data('customtransition3d') || ls.g.nextLayer.data('customtransition2d') ) && ls.ct ) ? 'new' : 'old';
 
 					if( !ls.g.nextLayer.data('transitiontype') ){
@@ -4086,7 +4328,14 @@ function lsShowNotice(lsobj,issue,ver){
 
 						// Animating SUBLAYERS of the first layer
 
-						nextSubLayers();
+						if( ls.o.startInViewport === true ){
+
+							startInViewport();
+						}else{
+
+							ls.g.firstSlideAnimated = true;
+							nextSubLayers();
+						}
 
 						// Displaying the first layer (immediately)
 
@@ -4098,10 +4347,9 @@ function lsShowNotice(lsobj,issue,ver){
 						if( !ls.g.ie78 ){
 							ls.g.nextLayer.find('.ls-bg').css({
 								display : 'none'
-							}).fadeIn(500);
+							}).fadeIn(ls.o.sliderFadeInDuration);
 						}
 
-						ls.g.firstSlideAnimated = true;
 						ls.g.isLoading = false;
 					}else{
 
@@ -4353,6 +4601,10 @@ function lsShowNotice(lsobj,issue,ver){
 			}
 
 			var curSubTime = sublayer.data('durationout') ? parseInt(sublayer.data('durationout')) : duO;
+
+			// BUGFIX v5.2.0 duration cannot be 0
+
+			if( curSubTime === 0 ){ curSubTime = 1 }
 			var curSubEasing = sublayer.data('easingout') ? sublayer.data('easingout') : eO;
 
 			var css = {
@@ -4394,134 +4646,134 @@ function lsShowNotice(lsobj,issue,ver){
 
 		// v3.6 Improved Debug Mode
 
-		ls.debug = function(){
+// 		ls.debug = function(){
 
-			ls.d = {
-				history : $('<div>'),
-				// adds a H1 (title)
-				aT : function(content){
-					$('<h1>'+content+'</h1>').appendTo( ls.d.history );
-				},
-				// adds an empty UL
-				aeU : function(){
-					$('<ul>').appendTo( ls.d.history );
-				},
-				// adds an UL with a LI
-				aU : function(content){
-					$('<ul><li>'+content+'</li></ul>').appendTo( ls.d.history );
-				},
-				// adds a LI into the last UL
-				aL : function(content){
-					$('<li>'+content+'</li>').appendTo( ls.d.history.find('ul:last') );
-				},
-				// adds an UL into the last LI of the last UL
-				aUU : function(content){
-					$('<ul>').appendTo( ls.d.history.find('ul:last li:last') );
-				},
-				// adds a Function to the first LI inside the last UL
-				aF : function(elem){
-					ls.d.history.find('ul:last li:last').hover(
-						function(){
-							elem.css({
-								border: '2px solid red',
-								marginTop : parseInt( elem.css('margin-top') ) - 2,
-								marginLeft : parseInt( elem.css('margin-left') ) - 2
-							});
-						},
-						function(){
-							elem.css({
-								border: '0px',
-								marginTop : parseInt( elem.css('margin-top') ) + 2,
-								marginLeft : parseInt( elem.css('margin-left') ) + 2
-							});
-						}
-					);
-				},
-				show : function(){
-					if( !$('body').find('.ls-debug-console').length ){
+// 			ls.d = {
+// 				history : $('<div>'),
+// 				// adds a H1 (title)
+// 				aT : function(content){
+// 					$('<h1>'+content+'</h1>').appendTo( ls.d.history );
+// 				},
+// 				// adds an empty UL
+// 				aeU : function(){
+// 					$('<ul>').appendTo( ls.d.history );
+// 				},
+// 				// adds an UL with a LI
+// 				aU : function(content){
+// 					$('<ul><li>'+content+'</li></ul>').appendTo( ls.d.history );
+// 				},
+// 				// adds a LI into the last UL
+// 				aL : function(content){
+// 					$('<li>'+content+'</li>').appendTo( ls.d.history.find('ul:last') );
+// 				},
+// 				// adds an UL into the last LI of the last UL
+// 				aUU : function(content){
+// 					$('<ul>').appendTo( ls.d.history.find('ul:last li:last') );
+// 				},
+// 				// adds a Function to the first LI inside the last UL
+// 				aF : function(elem){
+// 					ls.d.history.find('ul:last li:last').hover(
+// 						function(){
+// 							elem.css({
+// 								border: '2px solid red',
+// 								marginTop : parseInt( elem.css('margin-top') ) - 2,
+// 								marginLeft : parseInt( elem.css('margin-left') ) - 2
+// 							});
+// 						},
+// 						function(){
+// 							elem.css({
+// 								border: '0px',
+// 								marginTop : parseInt( elem.css('margin-top') ) + 2,
+// 								marginLeft : parseInt( elem.css('margin-left') ) + 2
+// 							});
+// 						}
+// 					);
+// 				},
+// 				show : function(){
+// 					if( !$('body').find('.ls-debug-console').length ){
 
-						if( !ls.d.putData ){
+// 						if( !ls.d.putData ){
 
-							// Init code
+// 							// Init code
 
-							ls.d.aT('Init code');
-							ls.d.aeU();
+// 							ls.d.aT('Init code');
+// 							ls.d.aeU();
 
-							for( var prop in ls.o ){
-								ls.d.aL(prop+': <strong>' + ls.o[prop] + '</strong>');
-							}
+// 							for( var prop in ls.o ){
+// 								ls.d.aL(prop+': <strong>' + ls.o[prop] + '</strong>');
+// 							}
 
-//							ls.d.aL('sliderOriginalWidth: <strong>' + ls.g.sliderOriginalWidth + '</strong>');
-//							ls.d.aL('sliderOriginalHeight: <strong>' + ls.g.sliderOriginalHeight + '</strong>');
+// //							ls.d.aL('sliderOriginalWidth: <strong>' + ls.g.sliderOriginalWidth + '</strong>');
+// //							ls.d.aL('sliderOriginalHeight: <strong>' + ls.g.sliderOriginalHeight + '</strong>');
 
-							// Slides, layers data
+// 							// Slides, layers data
 
-							ls.d.aT('LayerSlider Content');
-							ls.d.aU('Number of slides found: <strong>' + $(el).find('.ls-slide').length + '</strong>');
+// 							ls.d.aT('LayerSlider Content');
+// 							ls.d.aU('Number of slides found: <strong>' + $(el).find('.ls-slide').length + '</strong>');
 
-							$(el).find('.ls-inner .ls-slide, .ls-inner *[class*="ls-l"]').each(function(){
+// 							$(el).find('.ls-inner .ls-slide, .ls-inner *[class*="ls-l"]').each(function(){
 
-								if( $(this).hasClass('ls-slide') ){
-									ls.d.aU('<strong>SLIDE ' + ( $(this).index() + 1 ) + '</strong>');
-									ls.d.aUU();
-									ls.d.aL('<strong>SLIDE ' + ( $(this).index() + 1 ) + ' properties:</strong><br><br>');
-								}else{
-									ls.d.aU('&nbsp;&nbsp;&nbsp;&nbsp;Layer ( '+$(this).prop('tagName')+' )');
-									ls.d.aF($(this));
-									ls.d.aUU();
-									ls.d.aL('<strong>'+$(this).prop('tagName')+' layer properties:</strong><br><br>');
-									ls.d.aL('distance / class: <strong>'+$(this).attr('class')+'</strong>');
-								}
+// 								if( $(this).hasClass('ls-slide') ){
+// 									ls.d.aU('<strong>SLIDE ' + ( $(this).index() + 1 ) + '</strong>');
+// 									ls.d.aUU();
+// 									ls.d.aL('<strong>SLIDE ' + ( $(this).index() + 1 ) + ' properties:</strong><br><br>');
+// 								}else{
+// 									ls.d.aU('&nbsp;&nbsp;&nbsp;&nbsp;Layer ( '+$(this).prop('tagName')+' )');
+// 									ls.d.aF($(this));
+// 									ls.d.aUU();
+// 									ls.d.aL('<strong>'+$(this).prop('tagName')+' layer properties:</strong><br><br>');
+// 									ls.d.aL('distance / class: <strong>'+$(this).attr('class')+'</strong>');
+// 								}
 
-								$.each( $(this).data(),function(name, val) {
-									ls.d.aL( name +': <strong>' + val + '</strong>');
-								});
-							});
+// 								$.each( $(this).data(),function(name, val) {
+// 									ls.d.aL( name +': <strong>' + val + '</strong>');
+// 								});
+// 							});
 
-							ls.d.putData = true;
-						}
+// 							ls.d.putData = true;
+// 						}
 
-						var dc = $('<div>').addClass('ls-debug-console').css({
-							position: 'fixed',
-							zIndex: '10000000000',
-							top: '10px',
-							right: '10px',
-							width: '300px',
-							padding: '20px',
-							background: 'black',
-							'border-radius': '10px',
-							height: $(window).height() - 60,
-							opacity: 0,
-							marginRight: 150
-						}).appendTo( $('body') ).css({
-							marginRight: 0,
-							opacity: .9
-						}).click(function(e){
-							if(e.shiftKey && e.altKey){
-								$(this).remove();
-							}
-						});
-						var ds = $('<div>').css({
-							width: '100%',
-							height: '100%',
-							overflow: 'auto'
-						}).appendTo( dc );
-						var dd = $('<div>').css({
-							width: '100%'
-						}).appendTo( ds ).append( ls.d.history );
-					}
-				},
-				hide : function(){
-					$('body').find('.ls-debug-console').remove();
-				}
-			};
+// 						var dc = $('<div>').addClass('ls-debug-console').css({
+// 							position: 'fixed',
+// 							zIndex: '10000000000',
+// 							top: '10px',
+// 							right: '10px',
+// 							width: '300px',
+// 							padding: '20px',
+// 							background: 'black',
+// 							'border-radius': '10px',
+// 							height: $(window).height() - 60,
+// 							opacity: 0,
+// 							marginRight: 150
+// 						}).appendTo( $('body') ).css({
+// 							marginRight: 0,
+// 							opacity: .9
+// 						}).click(function(e){
+// 							if(e.shiftKey && e.altKey){
+// 								$(this).remove();
+// 							}
+// 						});
+// 						var ds = $('<div>').css({
+// 							width: '100%',
+// 							height: '100%',
+// 							overflow: 'auto'
+// 						}).appendTo( dc );
+// 						var dd = $('<div>').css({
+// 							width: '100%'
+// 						}).appendTo( ds ).append( ls.d.history );
+// 					}
+// 				},
+// 				hide : function(){
+// 					$('body').find('.ls-debug-console').remove();
+// 				}
+// 			};
 
-			$(el).click(function(e){
-				if(e.shiftKey && e.altKey){
-					ls.d.show();
-				}
-			});
-		};
+// 			$(el).click(function(e){
+// 				if(e.shiftKey && e.altKey){
+// 					ls.d.show();
+// 				}
+// 			});
+// 		};
 
 		// initializing
 		ls.load();
@@ -4702,7 +4954,7 @@ function lsShowNotice(lsobj,issue,ver){
 
 	layerSlider.global = {
 
-		version				: '5.1.0',
+		version				: '5.3.0',
 
 		isMobile			: function(){
 								if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
@@ -4719,12 +4971,8 @@ function lsShowNotice(lsobj,issue,ver){
 								}
 							},
 
-		// NEW FEATURE 4.0 CSS3 transitions
-		//				   (beta, currently animating only the new 2D and 3D layer tranisitons with CSS3)
-		//				   (2D layer transitions are working also with jQuery fallback mode)
-
-//		cssTransitions		: !lsBrowser().msie || ( lsBrowser().msie && lsBrowser().version > 9 ) ? true : false,
 		ie78				: lsBrowser().msie && lsBrowser().version < 9 ? true : false,
+		originalAutoStart	: false,
 		paused				: false,
 		pausedByVideo		: false,
 		autoSlideshow		: false,
@@ -4811,13 +5059,17 @@ function lsShowNotice(lsobj,issue,ver){
 		responsive			: true,
 		responsiveUnder		: 0,
 		layersContainer		: 0,
+		fullScreen			: false,					// NEW FEATURE 5.5.0
+		appendTo			: '',						// NEW FEATURE 5.5.0
 
 		// Slideshow
 
 		autoStart			: true,
+		startInViewport		: true,						// NEW FEATURE v5.2.0
 		pauseOnHover		: true,
 		firstSlide			: 1,
 		animateFirstSlide	: true,
+		sliderFadeInDuration: 350,						// NEW FEATURE v5.2.0
 		loops				: 0,
 		forceLoopNum		: true,
 		twoWaySlideshow		: false,
@@ -4873,6 +5125,14 @@ function lsShowNotice(lsobj,issue,ver){
 
 		optimizeForMobile	: true,
 		optimizeForIE78		: true,
+
+		// NEW FEATURES 5.2.0 Mobile features
+
+		hideOnMobile		: false,
+		hideUnder			: 0,
+		hideOver			: 1000000,
+
+		staticImage			: '', // will be available in 5.5.0
 
 		// API functions
 

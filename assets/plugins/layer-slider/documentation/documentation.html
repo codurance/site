@@ -22,8 +22,8 @@
 			<h2>
 				Responsive jQuery Slider Plugin
 				<p>
-					Version: 5.1.0 | Released: 6th March 2014 |
-					<a data-goto="whats-new" href="#">What's new?</a>
+					Version: 5.3.0 | Released: 19th September 2014 |
+					<a data-goto="whats-new" href="#whats-new">What's new?</a>
 				</p>
 			</h2>
 			<div class="clear"></div>
@@ -400,6 +400,24 @@
 											<td class="c">0 (disabled)</td>
 											<td>Creates an invisible inner container with the given dimension in pixels to hold and center your layers.</td>
 										</tr>
+										<tr>
+											<td>hideOnMobile</td>
+											<td class="c"> true<br>false </td>
+											<td class="c">false</td>
+											<td>Hides the slider on mobile devices.</td>
+										</tr>
+										<tr>
+											<td>hideUnder</td>
+											<td class="c">&lt;num&gt;</td>
+											<td class="c">0</td>
+											<td>Hides the slider under the given value of browser width in pixels.</td>
+										</tr>
+										<tr>
+											<td>hideOver</td>
+											<td class="c">&lt;num&gt;</td>
+											<td class="c">100000</td>
+											<td>Hides the slider over the given value of browser width in pixel.</td>
+										</tr>
 									</tbody>
 									<thead>
 										<tr>
@@ -412,6 +430,12 @@
 											<td class="c"> true<br>false </td>
 											<td class="c">true</td>
 											<td>Slideshow will automatically start after pages have loaded.</td>
+										</tr>
+										<tr>
+											<td>startInViewport</td>
+											<td class="c"> true<br>false </td>
+											<td class="c">true</td>
+											<td>The slider will start only if it enters into the viewport.</td>
 										</tr>
 										<tr>
 											<td>pauseOnHover</td>
@@ -432,6 +456,12 @@
 											<td>Disabling this option will result a static starting slide for the fisrt time on page load.</td>
 										</tr>
 										<tr>
+											<td>sliderFadeInDuration</td>
+											<td class="c">&lt;num&gt;</td>
+											<td class="c">350</td>
+											<td>The duration of the fade transition (in ms) when the slider is showing up for the first time on page load.</td>
+										</tr>
+										<tr>
 											<td>loops</td>
 											<td class="c">&lt;num&gt;</td>
 											<td class="c">0</td>
@@ -444,7 +474,7 @@
 											<td>The slider will always stop at the given number of loops, even if someone restarts slideshow.</td>
 										</tr>
 										<tr>
-											<td>towWaySlideshow</td>
+											<td>twoWaySlideshow</td>
 											<td class="c"> true<br>false </td>
 											<td class="c">false</td>
 											<td>Slideshow can go backwards if someone switch to a previous slide.</td>
@@ -724,7 +754,7 @@
 							<figure>Full.width slider smart features</figure>
 
 							<p>
-								As mentioned in the previous entries, responsive mode needs an initial proportion to calculate new dimensions for scaling. A full-widh slider will always be as wide as your browser window, so your slider initial size depends on the viewing environment, and the plugin cannot identify an exact proportion to work with. Another aspect is to control how scaling should work with large screens, you most likely want to enable it below a certain amount of size, and prevent any action above that. This is why we have a feature called <code>responsiveUnder</code>. It enables you to specify imaginary borders that is dynamically enable or disable responsive layout depending on the size of your browser window.
+								As mentioned in the previous entries, responsive mode needs an initial proportion to calculate new dimensions for scaling. A full-width slider will always be as wide as your browser window, so your slider initial size depends on the viewing environment, and the plugin cannot identify an exact proportion to work with. Another aspect is to control how scaling should work with large screens, you most likely want to enable it below a certain amount of size, and prevent any action above that. This is why we have a feature called <code>responsiveUnder</code>. It enables you to specify imaginary borders that is dynamically enable or disable responsive layout depending on the size of your browser window.
 							</p>
 							<p>
 								The <code>layersContainer</code> feature will create an inner area inside your sliders to have invisible borders you can position your content relative to. This area will be as wide as you specify in pixels, and will always be centered. While this feature can be used with any layout, it is made for full-width sliders. Using this feature will result a resized canvas in slider builder that has the new dimensions you have specified.
@@ -897,7 +927,7 @@
 
 							<div class="km-notification info cf">
 								<span class="icon-info-circled"></span>
-								Slide transitions will work only if a slide background image is added. Image layers we will add later in this guide will not work.
+								Slide transitions between two slides are working only if slide background images (with class=&quot;ls-bg&quot;) are added to both slides.
 							</div>
 
 
@@ -1547,7 +1577,7 @@
 							<p>Callback functions can be defined by passing them in the JavaScript initialization code.</p>
 							<pre name="code" class="brush: js">
 							//Initialize the slider as usual
-							$('#slider').layerSlide({
+							$('#slider').layerSlider({
 								autoStart : false,
 								firstSlide : 3,
 
@@ -1606,8 +1636,18 @@
 										</tr>
 										<tr>
 											<td>data</td>
-											<td>Return the slider data object</td>
+											<td>Returns the slider data object</td>
 											<td>var data = $('#slider').layerSlider('data');</td>
+										</tr>
+										<tr>
+											<td>userInitData</td>
+											<td>Returns the object of the slider options which has been set by the user in the init code</td>
+											<td>var data = $('#slider').layerSlider('userInitData');</td>
+										</tr>
+										<tr>
+											<td>defaultInitData</td>
+											<td>Returns the full list of the default slider options</td>
+											<td>var data = $('#slider').layerSlider('defaultInitData');</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1634,13 +1674,16 @@
 							</p>
 							<ul class="nomargin">
 								<li>
+									data['prevLayerIndex'] = returns the index of the previous slide (not the layer)
+								</li>
+								<li>
 									data['curLayer']  = returns the jQuery object of the current slide (not the layer)
 								</li>
 								<li>
 									data['curLayerIndex'] = returns the index of the current slide (not the layer)
 								</li>
 								<li>
-									data['nextLayer'] = returns the jQuery object of the next slide (NOT the layer)
+									data['nextLayer'] = returns the jQuery object of the next slide (not the layer)
 								</li>
 								<li>
 									data['nextLayerIndex'] = returns the index of the next slide (not the layer)
@@ -1668,7 +1711,6 @@
 							}
 							// ...</pre>
 							<figure>Callback with an API method</figure>
-
 
 							<h4>Custom navigation area</h4>
 							<p>On <a href="http://pastebin.com/YHBFk1CR">this page</a> you can find a complete example for building a custom navigation area. Please note, this example involves other programming languages such as CSS, HTML and DOM manipulation, and it requires web development experience.</p>
@@ -2188,10 +2230,51 @@
 
 						<!-- What's new -->
 						<article>
-							<h4>Important</h4>
-							<p>
+							<div class="km-notification warning">
+								<span class="icon-attention"></span>
 								If you upgraded from earlier (1.x - 4.x) versions, please <a data-goto="changes" href="#">read this article about the changes carefully</a>!
-							</p>
+							</div>
+
+							<h4>Changes in version 5.3.0</h4>
+							<ul class="nomargin">
+								<li>Added new API method 'redraw' to update the slider's layout and contents.</li>
+								<li>Fixed Javascript error if a slider doesn't have any slide.</li>
+								<li>Fixed several issues related to self-hosted HTML5 video playback.</li>
+								<li>Fixed responsive mode of full width sliders not detecting viewport changes in some cases, especially while changing orientation on mobile devices.</li>
+							</ul>
+
+							<h4>Changes in version 5.2.0</h4>
+							<ul class="nomargin">
+								<li>Fixed some appearance issues</li>
+								<li>Fixed broken autoplay feature of HTML5 videos</li>
+								<li>Fixed an issue that caused background flickering in some cases</li>
+								<li>Video layers are ignoring showUntil parameter while playing</li>
+								<li>The slider won't hang up if an image layer couldn't be loaded</li>
+								<li>The duration of a layer cannot be 0ms (this value will be automatically changed to 1ms)</li>
+							</ul>
+							<ul>
+								<li>Added new options into the LayerSlider API:
+									<ul>
+										<li><span class="b">prevLayerIndex</span> - The index of the previous slide (curLayerIndex is also fixed)</li>
+										<li><span class="b">userInitData</span> - Returns the object of the slider options which has been set by the user in the init code</li>
+										<li><span class="b">defaultInitData</span> - Returns the full list of the default slider options</li>
+									</ul>
+								</li>
+								<li>Added new slider options, which can be used in the init code:
+									<ul>
+										<li><span class="b">sliderFadeInDuration</span> - The duration of the fade transition when the slider is showing up for the first time on page load</li>
+										<li><span class="b">startInViewport</span> - The slider will start only if it enters into the viewport</li>
+										<li><span class="b">hideOnMobile</span> - Hides the slider on mobile devices</li>
+										<li><span class="b">hideUnder</span> - Hides the slider under the given value of browser width in pixels</li>
+										<li><span class="b">hideOver</span> - Hides the slider over the given value of browser width in pixel</li>
+									</ul>
+
+								</li>
+							</ul>
+							<h4>Changes in version 5.1.2</h4>
+							<ul class="nomargin">
+								<li>Fixed 3D transitions in the latest versions of Chrome</li>
+							</ul>
 							<h4>Changes in version 5.1.0</h4>
 							<ul class="nomargin">
 								<li>Fixed several issues with embedded videos (mostly under Firefox and IE)</li>

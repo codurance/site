@@ -11,6 +11,14 @@ body {
 	}
 }
 
+@media (min-width: 992px) {
+	.header .navbar-default .navbar-nav > li > a:hover {
+		border-bottom: solid 2px #e67e22;
+	}
+}
+
+
+
 /* Navigation */
 .breadcrumbs h2 {
 	margin-top: 10px;
@@ -19,7 +27,7 @@ body {
 /* Home Page */
 
 .feature-panel {
-	background: url("/assets/img/custom/home/computerdesk_original.jpg") no-repeat center center;
+	background: url("/assets/img/custom/home/computerdesk_original_opt.jpg") no-repeat center center;
 	height: 550px;
 	background-size: cover;
 	width: auto

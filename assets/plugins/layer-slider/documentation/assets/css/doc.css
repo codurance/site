@@ -406,6 +406,14 @@ section ol, section ul, section ol li, section ul li, section p, section > div, 
 	margin: 20px 0px 0px 0px;
 }
 
+section ul ul {
+	margin-bottom: 20px;
+}
+
+section ul ul li {
+	margin-top: 0px;
+}
+
 section li p,
 section ol li:first-child,
 section ul li:first-child,
