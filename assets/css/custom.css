@@ -284,3 +284,15 @@ body {
  	transform:scale(1.03);
 }
 
+/* Services */
+.services .services-top-box {
+	margin-top: 40px;
+}
+
+.services .service-icon:hover {
+	background: #e67e22;
+}
+
+.services .service-description-box {
+	padding: 20px 40px;
+}
