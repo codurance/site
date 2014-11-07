@@ -50,19 +50,20 @@
 }
 .da-slide h2{
 	font-family: 'Open Sans', sans-serif;
-	color: #f9f9f9;
+	color: #f9f9f9 !important;
 	line-height:50px;
 	top: 100px;
 	z-index: 10;
 	padding:0;
 	margin-left:-2%;
+	font-weight: 400 !important;
 }
 .da-slide h2 i {
 	font-size: 36px;
 	font-style:normal;
-	background:url(../img/bg-heading.png) repeat;
 	padding:0 5px;
 	text-transform:uppercase;
+	background-color: rgba(46, 98, 0, 0.8);
 }
 .da-slide p {
 	font-family: 'Open Sans', sans-serif;

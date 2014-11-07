@@ -51,7 +51,7 @@
 }
 
 .sky-form .select select {
-  height: 34px;
+  height: 33px;
   padding: 6px 10px;
 }
 
@@ -320,4 +320,11 @@
 
 .label {
   padding: 0.2em 0 0.3em;
+}
+
+/*Fix for datepicker's responsive issue on resolution 1024x768*/
+.ui-datepicker-calendar a,
+.ui-datepicker-calendar span {
+  width: 26px;
+  color: #404040;
 }

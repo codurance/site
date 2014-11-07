@@ -168,7 +168,7 @@ jQuery(document).ready(function() {
 	jQuery('#transitselector').click(function() {
 		var ts = jQuery('.transition-selectbox-holder');
 		if (!ts.hasClass("opened")) {
-			TweenLite.fromTo(ts,0.2,{opacity:0,transformOrigin:"center bottom", transformPerspective:400, y:-50,rotationX:0,z:0},{opacity:1,y:0,rotationX:0,ease:Power3.easeOut})
+			punchgs.TweenLite.fromTo(ts,0.2,{opacity:0,transformOrigin:"center bottom", transformPerspective:400, y:-50,rotationX:0,z:0},{opacity:1,y:0,rotationX:0,ease:punchgs.Power3.easeOut})
 			ts.css({display:'block'});
 			setTimeout(function() {
 				naviapi.reinitialise();
@@ -180,7 +180,7 @@ jQuery(document).ready(function() {
 	jQuery('body').on('mouseleave','.transition-selectbox-holder.opened',function() {
 
 				var ts = jQuery('.transition-selectbox-holder');
-				TweenLite.to(ts,0.2,{opacity:0,transformOrigin:"center bottom", transformPerspective:400, y:-50,rotationX:0,z:0,ease:Power3.easeOut});
+				punchgs.TweenLite.to(ts,0.2,{opacity:0,transformOrigin:"center bottom", transformPerspective:400, y:-50,rotationX:0,z:0,ease:punchgs.Power3.easeOut});
 				ts.removeClass("opened");
 		});
 
@@ -433,7 +433,7 @@ jQuery(document).ready(function() {
 
 	function killAnimationInCreator() {
 		  var nextcaption = jQuery('#caption_custon_anim_preview');
-		 TweenLite.killTweensOf(nextcaption,false);
+		 punchgs.TweenLite.killTweensOf(nextcaption,false);
 	}
 
 	function animateCreatorIn() {
@@ -528,11 +528,11 @@ jQuery(document).ready(function() {
 						}
 
 
-						  TweenLite.fromTo(nextcaption,speed,{top:yy, left:xx, opacity:opac},{top:yy, left:xx, opacity:1});
+						  punchgs.TweenLite.fromTo(nextcaption,speed,{top:yy, left:xx, opacity:opac},{top:yy, left:xx, opacity:1});
 
-					  var newtl = new TimelineLite();
+					  var newtl = new punchgs.TimelineLite();
 
-					  TweenLite.killTweensOf(animobject,false);
+					  punchgs.TweenLite.killTweensOf(animobject,false);
 					  newtl.staggerFromTo(animobject,speed,
 										{ scaleX:scalex,
 										  scaleY:scaley,
@@ -668,15 +668,15 @@ jQuery(document).ready(function() {
 						}
 
 					  if (nextcaption == animobject)
-						  TweenLite.fromTo(nextcaption,speed,{top:yy, left:xx, opacity:1},{top:yy, left:xx, opacity:opac});
+						  punchgs.TweenLite.fromTo(nextcaption,speed,{top:yy, left:xx, opacity:1},{top:yy, left:xx, opacity:opac});
 					  else {
-					 	 TweenLite.set(nextcaption,{top:yy, left:xx, opacity:1});
-					 	 setTimeout(function() {TweenLite.fromTo(nextcaption,0.3,{top:yy, left:xx, opacity:1},{top:yy, left:xx, opacity:opac});},(splitspeed*1000 * delayer) + (speed*1000));
+					 	 punchgs.TweenLite.set(nextcaption,{top:yy, left:xx, opacity:1});
+					 	 setTimeout(function() {punchgs.TweenLite.fromTo(nextcaption,0.3,{top:yy, left:xx, opacity:1},{top:yy, left:xx, opacity:opac});},(splitspeed*1000 * delayer) + (speed*1000));
 					  }
 
-					  var newtl = new TimelineLite();
+					  var newtl = new punchgs.TimelineLite();
 
-					  TweenLite.killTweensOf(animobject,false);
+					  punchgs.TweenLite.killTweensOf(animobject,false);
 					  newtl.staggerFromTo(animobject,speed,
 										{
 										  x:0,
@@ -725,7 +725,7 @@ jQuery(document).ready(function() {
 
 	function stopAnimationInPreview() {
 		var nextcaption = jQuery('#preview_caption_animateme');
-		TweenLite.killTweensOf(nextcaption,false);
+		punchgs.TweenLite.killTweensOf(nextcaption,false);
 		if (nextcaption.data("timer")) clearTimeout(nextcaption.data('timer'));
 		if (nextcaption.data("timera")) clearTimeout(nextcaption.data('timera'));
 	}
