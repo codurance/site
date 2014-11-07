@@ -303,6 +303,7 @@ body {
 
 .services .service-description-box {
 	padding: 20px 40px;
+	border-top: solid 2px #e67e22;
 }
 
 .services .service-boxes {
