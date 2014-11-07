@@ -5,7 +5,7 @@ group:
 title: Our Team
 ---
 
-<div class="container margin-top-40">
+<div class="container">
 {% for member in site.data.team %}
       {% capture isEndOfRow %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
       {% if forloop.first %}
