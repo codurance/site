@@ -289,8 +289,14 @@ body {
 	margin-top: 40px;
 }
 
+.services .client-descriptions {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
 .services .introduction {
-	margin-top: 40px;
+	margin-top: 50px;
+
 }
 
 .services .service-icon:hover {
@@ -298,7 +304,7 @@ body {
 }
 
 .services .service-descriptions {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .services .service-description-box {
@@ -322,5 +328,33 @@ body {
 }
 
 .services .scenario {
-	margin-bottom: 40px;
+	margin: 20px 0px;
 }
+
+/* Services - Skills */
+
+.services .skills-block {
+	margin-bottom: 50px;
+}
+
+.services .dividing-line {
+	border-top: solid 1px #eee;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services .skills-box {
+	padding: 0px;
+	margin: 0px;
+}
+
+.services .service-block {
+	padding: 20px;
+	margin: 0px;
+}
+
+.services .service-descriptions .introduction {
+	margin: 20px 0px
+}
+
