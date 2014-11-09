@@ -1,4 +1,4 @@
-- id: sandro 
+- id: sandro
   name: Sandro Mancuso
   image: /assets/img/custom/team/sandro.jpg
   role: Software Craftsman and Co-Founder
@@ -50,8 +50,11 @@
   name: Robert Firek
   image: /assets/img/custom/team/robert.png
   role: Software Craftsman
-  shortDescription: Robert Firek is a software developer who tasted different flavours of programming. His broad range of experiences helped to deliver quality software in many companies. Strive to create software according to ...
-  fullDescription: <p>Robert Firek is a software developer who tasted different flavours of programming. His broad range of experiences helped to deliver quality software in many companies. Strive to create software according to the rule "Simplicity is the final achievement". As Waterfall apostate he encourage people to embrace Agile techniques. Fan of Microservices.</p><p>Member of the London Java Community and Wrocław JUG.</p>
+  shortDescription: >
+      Robert Firek is a software developer who has tasted many different flavours of programming. His broad range of experiences has helped to deliver quality software in many companies and organisations.
+  fullDescription: >
+      <p>Robert Firek is a software developer who has tasted many different flavours of programming. His broad range of experiences has helped to deliver quality software in many companies and organisations. He strives to create software according to the rule "Simplicity is the final achievement". As a Waterfall apostate, he encourages people to embrace Agile techniques.</p>
+      <p>Robert is a member of the London Java Community and Wrocław Java User Group.</p>
   twitter: robertfirek
   github: robertfirek
 
