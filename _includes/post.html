@@ -2,7 +2,13 @@
     <div class="col-md-4">
         <p><img class="img-responsive" src="{{post.image.src}}" alt=""/></p>
         {% if post.image.attribution %}
-            <p class="blog-image-attr"><a href="{{post.image.attribution.href}}">{{post.image.attribution.text}}</a></p>
+            <p class="blog-image-attr">
+                {% if post.image.attribution.href %}
+                    <a href="{{post.image.attribution.href}}">{{post.image.attribution.text}}</a>
+                {% else %}
+                    {{post.image.attribution.text}}
+                {% endif %}
+            </p>
         {% endif %}
     </div>
     <div class="col-md-8 blog-post">
