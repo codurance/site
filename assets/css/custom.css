@@ -358,3 +358,10 @@ body {
 	margin: 20px 0px
 }
 
+/* Case Studies */
+
+.case-study-carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
