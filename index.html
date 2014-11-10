@@ -145,7 +145,11 @@ layout: default
                 {% for post in site.posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box">
-                        <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+                        {% if post.image.src %}
+                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+                        {% else %}
+                            <img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ post.title }}" alt="{{ post.title }}">
+                        {% endif %}
                         <div class="blog-content">
                             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                             <p>{{ post.content | strip_html | truncatewords:30 }}</p>
