@@ -365,3 +365,14 @@ body {
     width: 100%;
     height: auto;
 }
+
+.case-study {
+	margin: 35px 0px;
+}
+
+.case-studies .dividing-line {
+	border-top: solid 1px #eee;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
