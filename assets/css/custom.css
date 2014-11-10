@@ -376,3 +376,20 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* Training */
+
+.training-slideshow {
+	margin-bottom: 20px;
+}
+
+.training-slideshow iframe {
+	border:1px solid #CCC;
+	border-width:1px;
+	margin-bottom:5px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+

@@ -5,6 +5,12 @@ training: Crafted Design
 
 # Crafted Design - 2 Days
 
+<div class="training-slideshow">
+	<iframe src="//www.slideshare.net/slideshow/embed_code/41358154" width="650" height="525" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" align="middle" allowfullscreen> </iframe> 
+</div>
+
+## About
+
 This course is for experienced developers that want to get better at designing well-crafted solutions. It focuses on designing software that is responsive to changing requirements and new functionality, avoiding the pitfalls that lead to legacy code.
 
 ## Why attend?
