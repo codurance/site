@@ -22,13 +22,13 @@ This course is for experienced developers that want to get better at designing w
 ## Content
 
 * Four elements of simple design
-* Mapping and visualising business concepts in code
-* SOLID principles
+* Use TDD as a design tool with Outside-In TDD
+* Busienss application of SOLID principles
 * Testing and refactoring legacy code to express business domain
-* Expressing design and architecture in code
-* Outside-in TDD
 * Interaction Driven Design (IDD)
-* Introduction to DDD and supporting architecture types (i.e. layered, hexagonal and event driven)
+	* Map and visualise business concepts in code
+	* Express design and architecture in code, but keeping your domain clear
+	* Learn an evolution of a subset of DDD
 
 ## Audience
 
@@ -46,7 +46,7 @@ Developers must:
 
 * bring their own laptops
 * have a development environment consisting of:
-    *  Java 8
+    * Java 8
     * favourite IDE
     * maven 3.x
     * a unit testing framework
@@ -56,4 +56,4 @@ In addition a distributed version control system such as Git is desirable
 
 ## Download
 
-<i class="fa fa-download fa-2x"></i> <a href="/assets/custom/pdf/crafted-design.pdf"> Download Course Outline</a>
+<i class="fa fa-download fa-2x"></i> <a href="/assets/pdf/custom/training/crafted-design.pdf" download> Download Course Outline</a>
