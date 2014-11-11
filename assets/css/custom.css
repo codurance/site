@@ -257,6 +257,10 @@ body {
 
 /* Videos */
 
+.video-post {
+	margin-bottom: 20px;
+}
+
 .videos .time-place {
 	font-weight: bold;
 	font-size: 80%;
