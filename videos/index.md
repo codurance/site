@@ -8,15 +8,15 @@ title: Videos
         <!-- left side bar -->
         <div class="col-md-9">
             <!--Crafted design scotland video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Sandro Mancuso on Crafted Design</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/107963074"></iframe> 
                     </div>
                     <div class="description">
                         <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features? Purely looking at unit tests is either not possible or too painful. Looking at higher-level tests can take a long time and still not give us the answers we need. For years, we have all struggled to design and structure projects that reflect the business domain.</p>
 
-                        <p>In this talk Sandro will be sharing how he designed the last application he worked on, twisting a few concepts from Domain-Driven Design, properly applying MVC, borrowing concepts from CQRS, and structuring packages in non-conventional ways. Sandro will also be touching on SOLID principles, Agile incremental design, modularisation, and testing strategies. By iteratively modifying the project structure to better model the product requirements, he has come up with a design style that helps developers create maintainable and domain-oriented software.</p>
+                        <p>In this talk, Codurance co-founder Sandro Mancuso will be sharing how he designed the last application he worked on, twisting a few concepts from Domain-Driven Design, properly applying MVC, borrowing concepts from CQRS, and structuring packages in non-conventional ways. Sandro will also be touching on SOLID principles, Agile incremental design, modularisation, and testing strategies. By iteratively modifying the project structure to better model the product requirements, he has come up with a design style that helps developers create maintainable and domain-oriented software.</p>
                     </div>
 
                     <div class="time-place">
@@ -24,22 +24,16 @@ title: Videos
                     </div>
             </div>
             <!--Highly strung video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Highly Strung: Understanding your Type System</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/KMnv-A-ANP4">
                         </iframe>
                     </div>
                     <div class="description">
-                        <p>Strings suck. I mean, seriously, they're awful. They can be quite literally anything. How do you know what a string is? Look inside it. But first, run your program, because you can't look inside it until then.</p>
-
-                        <p>Want to change the way a string behaves? OK, go change all the functions that deal with that string. How do you know which functions? Well, it could be any of them. Better go fix them all.</p>
-
-                        <p>Say you've got two strings. We want one string out. So we can stick them together with the + operator! Except wait, one of them is SQL (or HTML, or JavaScript, or…). So better escape the other one first! Which one? Probably the second one. It's usually the second one.</p>
-
-                        <p>This all makes me go AAAAAAAAARRRRGGHHHHHHHHHH.</p>
-
-                        <p>Let's do this better. I want to talk to you about using your type system to make all these problems go away (at least from the core of your code), and as a bonus, we'll end up with much more expressive, readable, maintainable and most importantly, correct code.</p>
+                        <p>In this video, Software Craftsman Samir Talwar discusses using your type system to make all these problems go away (at least from the core of your code). As a bonus, one will end up with a much more expressive, readable, maintanable and most importantly, correct code.</p>
+                        
+                        <p>Samir has also written a fantastic blog on the topic <a href="/2014/10/02/highly-strung/">which you can find here.</a>
                     </div>
 
                     <div class="time-place">
@@ -49,9 +43,9 @@ title: Videos
             <!--end of Highly Strung-->
 
             <!--refactoring legacy code video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Testing and Refactoring Legacy Code</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <video class="embed-responsive-item" style="height: 400px; width: 100%;" controls 
                         src="https://pdlvimeocdn-a.akamaihd.net/97657/058/255804201.mp4?token2=1414689343_350824298e6d34bfd7bd61e05c9aeaf0&aksessionid=a119cd333d8979a6"> 
                         </video>
@@ -74,9 +68,9 @@ title: Videos
             <!--End of Refactoring legacy code-->
 
             <!--Software craftsmanship Video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Software Craftsmanship</h2>
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="video-post">
                     <iframe type="text/html" width="100%" height="400px" mozallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" src="//www.parleys.com/share.html#play/536770f0e4b04bb59f502713" frameborder="0">&lt;br /&gt;</iframe>
                 </div>
                 <div class="blog-post-tags">
@@ -91,9 +85,9 @@ title: Videos
             <!--End of software craftsmanship video-->
 
             <!--Explanatory Methods video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Explanatory Methods</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
@@ -109,9 +103,9 @@ title: Videos
             <!--End of Explanatory Methods-->
 
             <!--Craftsmanship few years on video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Craftsmanship: A Few Years On</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/80839608">
                         </iframe>
                     </div>
@@ -127,9 +121,9 @@ title: Videos
             <!--end of craftsmanship a few years on-->
 
             <!--UGtastic Interviews Sandro Mancuso video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>UGtastic Interviews Sandro Mancuso</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/WHsoSYPvDec?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
@@ -145,9 +139,9 @@ title: Videos
             <!--end of UGtastic video-->
 
             <!--AgileByExample video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>AgileByExample: Software Craftsmanship</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/-czaKO_8jc4?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
@@ -163,9 +157,9 @@ title: Videos
             <!--AgileByExample-->
 
             <!--4 Rules of Simple Design video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>4 Rules of Simple Design</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/kKbNOMI3tlg?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
@@ -180,12 +174,13 @@ title: Videos
                             <li>Has fewer elements"</li>
                         </ol>
                     </p>
-                    <p>I want to demonstrate how object-oriented principles can only get you so far in simplifying your design.
-                    Starting with a clean yet completely imperative code base written in Java, I will explain how we can improve the code by applying functional principles—primarily extracting functions as objects and passing them around.
-                    Along the way, I will be pointing out how each refactor simplifies the code according to one or more of the four rules.
-                    We will start by removing duplication, even where duplication isn’t apparent from an OO point of view, before making the code clearer by replacing the language of the system by the language of our domain. Along the way, we’ll reduce the number of moving parts and increase test coverage.
-                    <p>I will also show existing libraries in Java and C# that can help you refactor your own code to be smaller and more understandable.</p>
-                    <p>This is a live coding presentation. There will be no slides, just lots of refactoring on a projector. You will not need any understanding of functional programming in order to attend.</p>
+                    <p>Object-oriented principles can only get you so far in simplifying your design.
+                    Starting with a clean yet completely imperative code base written in Java, In this video, Codurance co-founder Sandro Mancuso will explain how to improve code by applying functional principles, primarily extracting functions as objects and passing them around.</p>
+                    
+                    <p>He will be pointing out how each refactor simplifies the code according to one or more of the four rules.</p>
+
+                    He will start by removing duplication, even where duplication isn’t apparent from an OO point of view, before making the code clearer by replacing the language of the system by the language of our domain. Along the way, he'll reduce the number of moving parts and increase test coverage.
+                    <p>He will also explain how existing libraries in Java and C# can help you refactor your own code to be smaller and more understandable.</p>
                 </div>
                 <div class="time-place">
                     <p>29 May 2013 - I T.A.K.E. Unconference- Bucharest, Romania</p>
@@ -194,9 +189,9 @@ title: Videos
             <!--end of 4 Rules of simple design-->
 
             <!--Functional Programming OO video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Functional Programming is cool, but do you know OO?</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.parleys.com/share.html#play/51aa0172e4b01033a7e4b67a">
                         </iframe>
                     </div>
@@ -212,9 +207,9 @@ title: Videos
             <!--End of functional programmign OO video-->
 
             <!--Testing Refactoring Screencast video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Screencast: Testing and Refactoring Legacy Code</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/_NnElPO5BU0?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
@@ -232,16 +227,16 @@ title: Videos
             <!--End of testing and refactoring screncast video-->
 
             <!--UGtastic Interviews Sandro Mancuso video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>UGtastic Interviews Sandro Mancuso</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/54327320?color=ffffff">
                         </iframe>
                     </div>
                 <div class="blog-post-tags">
                 </div>
                 <div class="description">
-                    <p>In this interview Sandro talks Software Craftsmanship communities in London and Europe.</p>
+                    <p>In this interview Codurance co-founder Sandro Mancuso talks Software Craftsmanship communities in London and Europe.</p>
                 </div>
                 <div class="time-place">
                     <p>Dec 2012 - Chicago, USA</p>
@@ -250,9 +245,9 @@ title: Videos
             <!--end of UGtastic video-->
 
             <!--Last Video-->
-            <div class="video-post margin-bottom-40">
+            <div class=" margin-bottom-40">
                 <h2>Curing Agile Hangover with Craftsmanship</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/44243846">
                         </iframe>
                     </div>

@@ -6,13 +6,9 @@ image: /assets/img/services/training/redgreenrefactor.png
 
 # Crafting Code - 2 days
 
-<div class="training-slideshow">
-	<iframe src="//www.slideshare.net/slideshow/embed_code/41358126" width="650" height="525" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" align="middle" allowfullscreen> </iframe> 
-</div>
-
 ## About
 
-This course is designed to help developers write code that is well-crafted; code that is clean, testable, maintainable, and an expression of the business domain. The course is entirely hands-on, designed to teach developers practical techniques they can immediately apply to real-world projects.
+This course is designed to help developers write code that is well-crafted. Meaning code that is clean, testable, maintainable, and an expression of the business domain. The course is entirely hands-on, designed to teach developers practical techniques they can immediately apply to real-world projects.
 
 ## Why attend?
 
@@ -33,7 +29,7 @@ Once you have an understanding of the principles at work, we will apply them to 
 
 ## Content
 
-* TDD lifecycle and the London School of TDD
+* TDD lifecycle and the Outside-In style of TDD
 * Writing unit tests that express intent, not implementation
 * Using unit tests as a tool to drive good design
 * Expressive code
@@ -63,3 +59,8 @@ Developers must:
 * be able to create projects, build source code and run test cases in their development environment
 
 In addition, a distributed version-control system such as Git is desirable.
+
+## Download
+
+<i class="fa fa-download fa-2x"></i> <a href="/assets/pdf/custom/training/crafting-code.pdf" download> Download Course Outline</a> 
+ 
