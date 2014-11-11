@@ -358,3 +358,38 @@ body {
 	margin: 20px 0px
 }
 
+/* Case Studies */
+
+.case-study-carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.case-study {
+	margin: 35px 0px;
+}
+
+.case-studies .dividing-line {
+	border-top: solid 1px #eee;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Training */
+
+.training-slideshow {
+	margin-bottom: 20px;
+}
+
+.training-slideshow iframe {
+	border:1px solid #CCC;
+	border-width:1px;
+	margin-bottom:5px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
