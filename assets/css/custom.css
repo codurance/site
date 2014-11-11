@@ -23,6 +23,9 @@ body {
 .breadcrumbs h2 {
 	margin-top: 10px;
 }
+.header-v3 .navbar-brand {
+	top: 6px;
+}
 
 /* Home Page */
 
