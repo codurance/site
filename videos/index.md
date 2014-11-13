@@ -42,31 +42,6 @@ title: Videos
             </div>
             <!--end of Highly Strung-->
 
-            <!--refactoring legacy code video-->
-            <div class=" margin-bottom-40">
-                <h2>Testing and Refactoring Legacy Code</h2>
-                    <div class="video-post">
-                        <video class="embed-responsive-item" style="height: 400px; width: 100%;" controls 
-                        src="https://pdlvimeocdn-a.akamaihd.net/97657/058/255804201.mp4?token2=1414689343_350824298e6d34bfd7bd61e05c9aeaf0&aksessionid=a119cd333d8979a6"> 
-                        </video>
-                    </div>
-                <div class="blog-post-tags">
-                </div>
-                <div class="description">
-                    <p>Do you find working with legacy code tough? No tests, no documentation, and fear of breaking other parts of the code. Join Sandro Mancuso who will show you the only way to deal with these problems is to test and refactor merciless.</p>
-
-                    <p>For the majority of us, legacy code is part of our life and learning how to embrace it can make things far more enjoyable. In this live coding session, Sandro will be demonstrating how to overcome the most common problems found when testing legacy code.</p>
-
-                    <p>He will be taking a piece of messy Java code, test it until is 100% covered and then show how to refactor it in order to bring the business language and requirements to life.</p>
-
-                    <p>This session is full of tips and tricks you can start applying immediately. Although the code is in Java, the same principles can be applied in any language</p>
-                </div>
-                <div class="time-place">
-                    <p>21 May 2014 - In The Brain of Sandro Mancuso - SkillsMatter - London, UK</p>
-                </div>
-            </div>
-            <!--End of Refactoring legacy code-->
-
             <!--Software craftsmanship Video-->
             <div class=" margin-bottom-40">
                 <h2>Software Craftsmanship</h2>
