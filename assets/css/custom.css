@@ -255,6 +255,14 @@ body {
 	max-width: 100%;
 }
 
+.blog-item .blog-post-image {
+	display: inline;
+	float: right;
+	margin-left: 15px;
+	max-height: 300px;
+	width: auto;
+}
+
 /* Videos */
 
 .video-post {

@@ -7,7 +7,7 @@ image: /assets/img/services/training/redgreenrefactor.png
 # Crafting Code - 2 days
 
 <div class="training-download">
-	<i class="fa fa-download"></i> <a href="/assets/pdf/custom/training/crafting-code.pdf" download> Download Course Outline</a>
+	<i class="fa fa-download training-download"><a href="/assets/pdf/custom/training/crafting-code.pdf" download> Download Course Outline</a></i>
 </div>
 
 ## About

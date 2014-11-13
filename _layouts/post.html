@@ -19,6 +19,10 @@ group:
         </div>
         {% endif %}
 
+        {% if page.image %}
+            <img class="img-responsive thumbnail blog-post-image" src="{{ page.image.src }}" alt="{{ page.title }}">
+        {% endif %}
+
         {{ content }}
 
         {% if page.canonical %}
