@@ -6,6 +6,10 @@ image: /assets/img/services/training/redgreenrefactor.png
 
 # Crafting Code - 2 days
 
+<div class="training-download">
+	<i class="fa fa-download"></i> <a href="/assets/pdf/custom/training/crafting-code.pdf" download> Download Course Outline</a>
+</div>
+
 ## About
 
 This course is designed to help developers write code that is well-crafted. Meaning code that is clean, testable, maintainable, and an expression of the business domain. The course is entirely hands-on, designed to teach developers practical techniques they can immediately apply to real-world projects.
@@ -60,7 +64,4 @@ Developers must:
 
 In addition, a distributed version-control system such as Git is desirable.
 
-## Download
-
-<i class="fa fa-download fa-2x"></i> <a href="/assets/pdf/custom/training/crafting-code.pdf" download> Download Course Outline</a> 
  

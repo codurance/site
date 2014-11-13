@@ -400,3 +400,8 @@ body {
 	display:block;
 }
 
+.training-download {
+	width: 100%;
+	text-align: right;
+}
+
