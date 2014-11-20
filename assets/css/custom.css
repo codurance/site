@@ -126,9 +126,9 @@ body {
 
 /* Sandro's Book image special */
 .sandroBookImage {
-	max-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
+	height: 300px;
 	box-shadow: 0 10px 10px 0px gray;
 } 
 
