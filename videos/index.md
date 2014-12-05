@@ -7,6 +7,23 @@ title: Videos
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
+            <!--Test-driving algorithms - Screencast-->
+            <div class=" margin-bottom-40">
+                <h2>Test-driving algorithms</h2>
+                    <div class="video-post">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/iZjgj1S0FCY?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>Test-driving algorithms is hard. In this video we show how to grow an algorithm test-by-test, only using very simple constructs and removing duplication.</p>
+                </div>
+                <div class="time-place">
+                    <p>5 Dec 2014</p>
+                </div>
+            </div>            
+            <!--End of Test-driving algorithms - Screencast-->
+
             <!--Crafted design scotland video-->
             <div class=" margin-bottom-40">
                 <h2>Sandro Mancuso on Crafted Design</h2>
@@ -88,7 +105,7 @@ title: Videos
             <div class=" margin-bottom-40">
                 <h2>Explanatory Methods</h2>
                     <div class="video-post">
-                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen>
                         </iframe>
                     </div>
                 <div class="blog-post-tags">
