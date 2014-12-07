@@ -1,7 +1,7 @@
 ---
 layout: post
-name: life-as-a-Codurance-Apprentice
-title: Life as a Codurance Apprentice
+name: what-s_it-like-to-be-a-Codurance-Apprentice
+title: What is it like to be a Codurance Apprentice?
 date: 2014-12-06 18:31:00 +00:00
 author: Toby Retallick
 image:
@@ -19,17 +19,17 @@ Three months into my apprenticeship, I thought I would provide some insight into
 
 First, the obligatory self-introduction.
 
-My name is Toby and I joined Codurance in September this year. I was a recent graduate of Makers Academy (a 12 week software development boot camp) and had said ‘goodbye’ to a seven year career in the not for profit sector. In addition, I was a brand new, first-time Dad.
+My name is Toby and I joined Codurance in September this year. I was a recent graduate of [Makers Academy](http://www.makersacademy.com) (a 12 week software development boot camp) and had said ‘goodbye’ to a seven year career in the not for profit sector. In addition, I was a brand new, first-time Dad.
 
 So here I was, my life pretty much turned upside down (in a good way of course!) and about to turn my hobby into a new career.
 
 ### Finding Codurance
 
-I came across Codurance when browsing an issue of the London Ruby User Group newsletter. The moment I read the Codurances recruitment advert, I knew I wanted to work there. This wasn’t your typical software company. This was a group of people that really cared about how they crafted code. These were craftsman. I knew if I got to join the team I would be learning from the some great and well-respected software developers.
+I came across Codurance when browsing an issue of the [London Ruby User Group](http://lrug.org) newsletter. The moment I read Codurance's recruitment advert, I knew I wanted to work there. This wasn’t your typical software company. This was a group of people that really cared about how they crafted code. These were craftsman. I knew if I got to join the team I would be learning from the some great and well-respected software developers.
 
-The technical test was a lot of fun. My code was far from perfect, but I learnt an awful lot in the process. Somehow, I must of managed to demonstrate an understanding of the fundamentals and was called in for a pairing session.
+The technical test was a lot of fun. My code was far from perfect, but I learnt an awful lot in the process. Somehow, I must of managed to demonstrate an understanding of the fundamentals and was called in for a pairing session with Codurance co-founder Sandro Mancuso.
 
-To say I was nervous, was an understatement. I had read up a fair amount about Sandro and his professional mugshot - a classic conference speaking action shot, equipped with head microphone - was enough to get me into a whirlwind of self doubt. Will I make the grade? Is he going to shoot me down?  Do I fit the profile ? Will my ‘software boot camp’ experience be enough?.
+To say I was nervous, was an understatement. I had read up a fair amount about Sandro. His professional mugshot &mdash; a classic conference speaking pose, complete with head microphone &mdash; was enough to get me into a whirlwind of self doubt. Will I make the grade? Is he going to shoot me down?  Do I fit the profile ? Will my ‘software boot camp’ experience be enough?.
 
 A few days later, I was both surprised and thrilled that I got the email with an offer to come on board. I couldn’t believe I had made it this far.
 
@@ -37,15 +37,15 @@ A few days later, I was both surprised and thrilled that I got the email with an
 
 So what have I been up to over the past few months? If you have little time and  want the abridged response, here is is.
 
-Write code. Delete. Do it again. Write the code. Delete. Do it again...
+<em>Write code. Delete. Do it again. Write the code. Delete. Do it again...</em>
 
 On the surface, it would be easy to say I have not really done that much.
 
-Have I produced a website? No.
+* Have I produced a website? No.
 
-Have I produced an app? No.
+* Have I produced an app? No.
 
-Have I even worked on a client project? A little, but I’ve been for the most part, observing from the sidelines..
+* Have I even worked on a client project? A little, but I’ve been for the most part, observing from the sidelines..
 
 But the devil is in the detail.
 
@@ -57,19 +57,19 @@ You see, creating a piece of software is really important. But when it comes to 
 
 ![](http://www.jeffgothelf.com/blog/wp-content/uploads/2011/07/Daniel-Larusso-Ralph-Macchio.jpg)
 
-The concepts we are trying to learn, are arguably, quite basic and easy to understand. But they do not always translate seamlessly when it comes to implementation.
+The concepts we are trying to learn are arguably, quite basic and easy to understand. But they do not always translate seamlessly when it comes to implementation.
 
 Sandro will regularly review our code and critique it. I’ll delete the code and start again. I’ll get a bit further, reach a wall. Delete and start a again.
 
 Each week, I seem to develop, as if on queue, what Sandro calls a new ‘obsession’. The first time I ran into trouble with a particular coding exercise was because I was passing primitives into parameters. The next time I went to the opposite extreme and went on what can only be described as a class extraction rampage, morphing my code base into something that became simply unmanageable.
 
-At first deleting the code and starting again was more than a little discouraging. But over time, and thanks to the repetitive nature of the process, i began to emotionally detach myself from the code. When that happened the concepts began to sink in faster.
+At first deleting the code and starting again was more than a little discouraging. But over time, thanks to the repetitive nature of the learning process, I began to emotionally detach myself from the code. Once this happened, the concepts began to sink in faster.
 
 ### It’s not just about writing code
 
 Throughout the last three months, Amir and I have certainly had our heads down (or up towards the ceiling in despair when certain tests just won’t pass). It been enjoyable, often stressful, but above all, kind of enlightening, particular when I look back on where I was when I started.
 
-Whilst writing code is cetainly a big part of what I do and will continue do in the future, at Codurance it’s not all about 0’s and 1’s. It’s a small but perfectly apt company, but it means Amir and I will need to do more than just write code once we graduate from our apprenticeship. Over the coming months our focus will shift to software design and developing  the soft skills required to work effectively with clients (determining what they want, capturing requirements and so on).
+Whilst writing code is certainly a big part of what I do and will continue do in the future, at Codurance it’s not all about 0’s and 1’s. It’s a small but perfectly apt company, but it means Amir and I will need to do more than just write code once we graduate from our apprenticeship. Over the coming months our focus will shift to software design and developing  the soft skills required to work effectively with clients (determining what they want, capturing requirements and so on).
 
 What I hope ultimately, is that this apprenticeship and the professional career that follows will enable me to become what is sometimes called a ‘specialist generalist’ - the ability to do lots of things to a very high standard.
 
