@@ -27,7 +27,7 @@ So here I was, my life pretty much turned upside down (in a good way of course!)
 
 I came across Codurance when browsing an issue of the [London Ruby User Group](http://lrug.org) newsletter. The moment I read Codurance's recruitment advert, I knew I wanted to work there. This wasn’t your typical software company. This was a group of people that really cared about how they crafted code. These were craftsman. I knew if I got to join the team I would be learning from the some great and well-respected software developers.
 
-The technical test was a lot of fun. My code was far from perfect, but I learnt an awful lot in the process. Somehow, I must of managed to demonstrate an understanding of the fundamentals and was called in for a pairing session with Codurance co-founder Sandro Mancuso.
+The technical test was a lot of fun. My code was far from perfect, but I learnt an awful lot in the process. Somehow, I must have managed to demonstrate an understanding of the fundamentals and was called in for a pairing session with Codurance co-founder Sandro Mancuso.
 
 To say I was nervous, was an understatement. I had read up a fair amount about Sandro. His professional mugshot &mdash; a classic conference speaking pose, complete with head microphone &mdash; was enough to get me into a whirlwind of self doubt. Will I make the grade? Is he going to shoot me down?  Do I fit the profile ? Will my ‘software boot camp’ experience be enough?.
 
@@ -59,9 +59,9 @@ You see, creating a piece of software is really important. But when it comes to 
 
 The concepts we are trying to learn are arguably, quite basic and easy to understand. But they do not always translate seamlessly when it comes to implementation.
 
-Sandro will regularly review our code and critique it. I’ll delete the code and start again. I’ll get a bit further, reach a wall. Delete and start a again.
+Sandro will regularly review our code and critique it. I’ll delete the code and start again. I’ll get a bit further, reach a wall. Delete and start again.
 
-Each week, I seem to develop, as if on queue, what Sandro calls a new ‘obsession’. The first time I ran into trouble with a particular coding exercise was because I was passing primitives into parameters. The next time I went to the opposite extreme and went on what can only be described as a class extraction rampage, morphing my code base into something that became simply unmanageable.
+Each week, I seem to develop, as if on cue, what Sandro calls a new ‘obsession’. The first time I ran into trouble with a particular coding exercise was because I was passing primitives into parameters. The next time I went to the opposite extreme and went on what can only be described as a class extraction rampage, morphing my code base into something that became simply unmanageable.
 
 At first deleting the code and starting again was more than a little discouraging. But over time, thanks to the repetitive nature of the learning process, I began to emotionally detach myself from the code. Once this happened, the concepts began to sink in faster.
 
@@ -76,4 +76,7 @@ What I hope ultimately, is that this apprenticeship and the professional career 
 With that goal in mind, I know deep down my apprenticeship will never truly end. There will always be something to learn and someone better than me to learn from.
 
 That’s why I switched careers and joined the team at Codurance.
+
+### Further Info
+More information about [Codurance's Apprenticeship Scheme](http://codurance.com/careers/apprentice/).
 
