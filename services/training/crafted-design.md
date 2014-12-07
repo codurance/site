@@ -5,6 +5,10 @@ training: Crafted Design
 
 # Crafted Design - 2 Days
 
+<div class="training-download">
+	<i class="fa fa-download"></i> <a href="/assets/pdf/custom/training/crafted-design.pdf" download> Download Course Outline</a>
+</div>
+
 ## About
 
 This course is for experienced developers that want to get better at designing well-crafted solutions. It focuses on designing software that is responsive to changing requirements and new functionality, avoiding the pitfalls that lead to legacy code.
@@ -53,7 +57,3 @@ Developers must:
 * be able to create projects, build source code and run test cases in their development environment
 
 In addition a distributed version control system such as Git is desirable
-
-## Download
-
-<i class="fa fa-download fa-2x"></i> <a href="/assets/pdf/custom/training/crafted-design.pdf" download> Download Course Outline</a>
