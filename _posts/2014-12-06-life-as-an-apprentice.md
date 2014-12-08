@@ -45,9 +45,9 @@ On the surface, it would be easy to say I have not really done that much.
 
 * Have I produced an app? No.
 
-* Have I even worked on a client project? A little, but I’ve been for the most part, observing from the sidelines..
+* Have I even worked on a client project? A little. For the most part, I've been observing with interest from the sidelines.
 
-But the devil is in the detail.
+The devil is in the detail however.
 
 Both I and fellow apprentice Amir, have been working on a number of small, but very challenging coding exercises, sometimes referred to as code kata. The problems have been created by Sandro and the team to help us learn certain ideas, stress-test our abilities and, probably unintentionally, cause us some sleepless nights.
 
