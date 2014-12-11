@@ -2,6 +2,9 @@ url: "http://codurance.com"
 highlighter: pygments
 permalink: pretty
 markdown: rdiscount
+rdiscount:
+  extensions:
+    - footnotes     # footnotes
 
 exclude: ["README.md", "_posts_TOFIX", "vendor"]
 
