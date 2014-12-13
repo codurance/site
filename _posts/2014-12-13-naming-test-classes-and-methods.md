@@ -65,7 +65,7 @@ A test name should clearly indicate why a test should pass or fail, that means, 
 
 If the test above fails I'll have a fairly good idea why it failed. 
 
-### Conclusion
+### Considerations
 
 I don't really follow rules and quite often I do things in a different way. It all depends on what I'm doing and the context I'm in. Some projects already have a standard way of writing unit tests and if I'm a new joiner, I'll comply to it. Having a standard is a good thing. It avoids confusion and (bad) surprises, regardless if the "standard" is good or not. What I described above is how I normally name and think about my tests, and it is the standard I often put in place when I start a new project. This is also how I'm teaching our apprentices at Codurance.
 
