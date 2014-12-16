@@ -15,7 +15,7 @@ tag_page_dir: blog/tag
 tag_page_layout: tag
 
 paginate: 10
-paginate_path: "blog/page:num"
+paginate_path: "/blog/page:num"
 
 sitename: "Codurance"
 subtitle: "craft at heart"
