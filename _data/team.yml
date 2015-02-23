@@ -58,6 +58,18 @@
   twitter: robertfirek
   github: robertfirek
 
+- id: felipe
+  name: Felipe Fernández
+  image: /assets/img/custom/team/felipe.jpg
+  role: Software Craftsman
+  shortDescription: >
+      Felipe is a developer interested in creating well-crafted software, not only for users, but for future maintainers too. He thinks that simple, expressive code should be an ethical standard for the software industry.
+  fullDescription: >
+      <p>Felipe is a developer interested on creating well-crafted software, not only for users, but for future maintainers too. He believes that simple, clean and expressive code should be an ethical standard for the software industry and will mentor that concern. Felipe is a strong believer in the power of social communities and thinks that one of the pillars of professionalism lies in sharing knowledge and caring about the health of the industry.</p>
+  twitter: felipefzdz
+  github: olid16     
+
+
 - id: toby
   name: Toby Retallick
   image: /assets/img/custom/team/toby.jpg
@@ -73,5 +85,5 @@
   role: Apprentice
   shortDescription: Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career ...
   fullDescription: <p>Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career. </p> <p>Amir prides himself in his commitment to problem solving and looking at things through a logical perspective and for that reason he is always open to new ideas. He is always ready to learn, and firmly believes that no matter how much you know, you will always have the potential to know more. </p>
-  twitter: amiralibazazi
+  twitter: amir_bazazi
   github: amiralibazazi
