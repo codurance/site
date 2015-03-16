@@ -5,7 +5,7 @@ title: How to install Zsh Prezto for your OS X Terminal
 date: 2015-03-16 22:49:00 +00:00
 author: Amir Bazazi
 image:
-    src: /assets/img/custom/blog/prezto-shell.png
+    src: /assets/img/custom/blog/installing-prezto/prezto-shell.png
 tags:
 - customisation
 - personal
@@ -37,7 +37,7 @@ Zsh offers a plethora of additional features on top of bash that you may find a 
 
 Some features of note that I found particularly useful when I first made the switch are:
 
-<img style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/cd-completion.png">
+<img style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/installing-prezto/cd-completion.png">
 
 *    'cd' auto-completion
 *    'cd' navigation
@@ -75,7 +75,25 @@ Lastly, set Zsh as your default shell.
 
     $ chsh -s /bin/zsh
 
+To apply all the changes, simply restart your terminal.
+
 The official repository provides more instructions and troubleshooting [here](https://github.com/sorin-ionescu/prezto).
+
+### Fiddling with dotfiles.
+
+As you are now changing shells, it's important to make sure you're loading the correct information regarding alias' and PATH variables on each shell start-up.
+
+How you organise your own `.profile`, `.bash_profile`, `.profile` and `.bashrc` files is your own business. But just note that as you are moving away from `bash` and now using `zsh`, you must now export your path variables and source the correct files in `.zshrc`. If you are inexperienced, a simple way would be to move over any information you have inside the `.bashrc` file directly to the `.zshrc` file.
+
+### How do I get those colours?
+
+The colour theme I use for my terminal is called [Solarized](http://ethanschoonover.com/solarized). Conveniently, the terminal-specific themes can be found [here at this repository](https://github.com/amiralibazazi/osx-terminal.app-colors-solarized)
+
+The colours I've used are from the file titled `Solarized Dark.terminal` from the repository. To install this file open up your Terminal, in the menu bar navigate to `Terminal > Preferences` and then use the import feature to load the profile. With the desired profile highlighted, you can then click the `Default` button to set it as such.
+
+![](/assets/img/custom/blog/installing-prezto/import-terminal-profile.png)
+
+From here on every new terminal window you open will have the new profile colours loaded. I encourage you to play around with these colours and themes to whatever suits you.
 
 ### Enabling plugins/modules
 
@@ -89,17 +107,11 @@ To enable a plugin, open up the `.zpreztorc` file in a text-editor.
 
 Under the line which reads `zstyle ':prezto:load' pmodule \` there should be a list of already-loaded modules. Simple add any additional ones to the list. Personally, I added the `history-substring-search` and the `git` modules. My resulting file looks a little like this.
 
-![](/assets/img/custom/blog/zpreztorc.png)
+![](/assets/img/custom/blog/installing-prezto/zpreztorc.png)
 
-### Fiddling with dotfiles.
+## What's next?
 
-As you are now changing shells, it's important to make sure you're loading the correct information regarding alias' and PATH variables on each shell start-up.
-
-How you organise your own `.profile`, `.bash_profile`, `.profile` and `.bashrc` files is your own business. But just note that as you are moving away from `bash` and now using `zsh`, you must now export your path variables and source the correct files in `.zshrc`. If you are inexperienced, a simple way would be to move over any information you have inside the `.bashrc` file directly to the `.zshrc` file.
-
-## To conclude
-
-This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. If you are content then I'm happy to have tried to help, however for more information, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
+This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. For more tips and tricks with prezto, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
 
 
 
