@@ -1,7 +1,7 @@
 ---
 layout: post
 name: installing-prezto
-title: How to install Zsh Prezto for your OS X Terminal
+title: How to install Prezto with Zsh for your OS X Terminal
 date: 2015-03-16 22:49:00 +00:00
 author: Amir Bazazi
 image:
@@ -111,7 +111,9 @@ Under the line which reads `zstyle ':prezto:load' pmodule \` there should be a l
 
 ## What's next?
 
-This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. For more tips and tricks with prezto, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
+This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. For more tips, tricks and troubleshooting with prezto, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
+
+Feel free to send me an email if you have any questions, comments or problems at amir@codurance.com.
 
 
 
