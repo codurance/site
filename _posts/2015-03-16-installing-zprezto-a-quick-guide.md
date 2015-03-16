@@ -15,7 +15,7 @@ tags:
 - efficiency
 ---
 
-Once and a while, whether it be by someone I'm pairing with or someone who's just peeked over my shoulder, I'll get asked how I "got my terminal to look like that". From now on I'm just going to direct them to this post as I'm going to take a short while to explain how I achieved the colourful canvas I log into every day.
+Once in a while, whether it be by someone I'm pairing with or someone who's just peeked over my shoulder, I'll get asked how I "got my terminal to look like that". From now on I'm just going to direct them to this post as I'm going to take a short while to explain how I achieved the colourful canvas I log into every day.
 
 > ** *Just note that the following does not represent the full capabilities of the tools shown, this is just a little introduction to them describing what I achieved personally. For more information visit the official repository linked at the bottom of the page.* **
 
