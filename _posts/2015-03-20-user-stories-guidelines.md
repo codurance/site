@@ -1,8 +1,8 @@
 ---
 layout: post
 name: user-stories-guidelines
-title: User Stories Guidelines
-date: 2015-03-20 19:48:00 +00:00
+title: User Story Guidelines
+date: 2015-03-20 21:22:00 +00:00
 author: Sandro Mancuso
 image:
     src: /assets/img/custom/blog/2015_03_20_user_stories/user_stories.jpg
