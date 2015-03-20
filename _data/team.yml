@@ -87,3 +87,12 @@
   fullDescription: <p>Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career. </p> <p>Amir prides himself in his commitment to problem solving and looking at things through a logical perspective and for that reason he is always open to new ideas. He is always ready to learn, and firmly believes that no matter how much you know, you will always have the potential to know more. </p>
   twitter: amir_bazazi
   github: amiralibazazi
+
+- id: rob
+  name: Robert Taylor
+  image: /assets/img/custom/team/rob.png
+  role: Software Craftsman
+  shortDescription: Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects...
+  fullDescription: <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p><p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p><p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practicising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
+  twitter: roberttaylor426
+  github: roberttaylor426
