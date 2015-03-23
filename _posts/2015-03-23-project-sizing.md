@@ -14,7 +14,7 @@ tags:
 ---
 Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a "ballpark" figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation. 
 
-## Sizing an existing Product Backlog
+### Sizing an existing Product Backlog
 
 Often we will have a set of requirements either in a big document or user-story format. It is important to understand each one of these requirements - especially those that are quite vague. These vague requirements often result in an explosion of features and will invalidate our estimates. The first thing we do is to break larger requirements/user-stories down into smaller chunks so that all are defined at similar level. We try to insure that the stories satisfy the [INVEST](http://guide.agilealliance.org/guide/invest.html) criteria. The next step is to further define the scope using assumptions and decisions logged against each story. This work to breakdown user-stories and define their scope is ideally done with the client. At the very least, we walkthrough the whole backlog with the client so that they fully understand the stories and the factors that may impact scope. 
 
