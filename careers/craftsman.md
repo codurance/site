@@ -29,7 +29,7 @@ If you believe you can meet the bar set, we are **definitely interested in heari
 
 We use whatever is fit for purpose. We love trying new things and experimenting, and you'll be hard-pressed to find an occasion where none of us are learning a new technology, paradigm, skill or technique. We value the ability to learn new things over specific existing knowledge. Our industry is incredibly fast-paced, and there's always something new over the horizon.
 
-Right now, the majority of our clients use **Java**, **Scala**, and **C#** and those are the core skills we are looing for. Knowledge of any other language and tools in the **JVM** and **.NET** ecosystems (like **Closure** and **F#**) is highly desirable but not essential. Everything else really does differ from client to client, and you will learn them on the job.
+Right now, the majority of our clients use **Java**, **Scala**, and **C#** and those are the core skills we are looking for. Knowledge of any other language and tools in the **JVM** and **.NET** ecosystems (like **Closure** and **F#**) is highly desirable but not essential. Everything else really does differ from client to client, and you will learn them on the job.
 
 ### What is expected from a craftsman at Codurance?
 
