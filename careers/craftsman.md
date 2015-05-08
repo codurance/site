@@ -25,6 +25,12 @@ You are proud to be a developer and want to remain a developer. You believe in e
 
 If you believe you can meet the bar set, we are **definitely interested in hearing from you**.
 
+### What technologies do you use?
+
+We use whatever is fit for purpose. We love trying new things and experimenting, and you'll be hard-pressed to find an occasion where none of us are learning a new technology, paradigm, skill or technique. We value the ability to learn new things over specific existing knowledge. Our industry is incredibly fast-paced, and there's always something new over the horizon.
+
+Right now, the majority of our clients use **Java**, **Scala**, and **C#** and those are the core skills we are looing for. Knowledge of any other language and tools in the **JVM** and **.NET** ecosystems (like **Closure** and **F#**) is highly desirable but not essential. Everything else really does differ from client to client, and you will learn them on the job.
+
 ### What is expected from a craftsman at Codurance?
 
 As a craftsman at Codurance, you are expected to be able to:
@@ -44,12 +50,6 @@ As a craftsman at Codurance, you are expected to be able to:
   * Working for a company with a flat structure, with no managers, no architects, and no team leaders. Just awesome developers.
   * Recognition and respect for being a great developer.
   * Flexibility in the workplace. As long as there is no disruption to the projects and the team agrees, you can work wherever and whenever you like.
-
-### What technologies do you use?
-
-We use whatever is fit for purpose. We love trying new things and experimenting, and you'll be hard-pressed to find an occasion where none of us are learning a new technology, paradigm, skill or technique. We value the ability to learn new things over specific existing knowledge. Our industry is incredibly fast-paced, and there's always something new over the horizon.
-
-Right now, the majority of our clients use **Java**, **Scala**, and **C#** and those are the core skills we are looing for. Knowledge of any other language and tools in the **JVM** and **.NET** ecosystems (like **Closure** and **F#**) is highly desirable but not essential. Everything else really does differ from client to client, and you will learn them on the job.
 
 ### I want to apply. What do I need to do?
 
