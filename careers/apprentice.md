@@ -9,7 +9,7 @@ role: Apprentice
 
 An apprenticeship under Codurance is a process of learning. Guided by a dedicated mentor, you will hone the skills that are absolutely essential for a software craftsman.
 
-Different people have different abilities. You might be new to software development, or you might already have some experience. As part of your apprenticeship, you'll learn:
+As part of your apprenticeship, you'll learn:
 
   * how to **craft code** that is simple, clean, maintainable and easy to reason about
   * how to orient your **software design** around goals
@@ -29,7 +29,7 @@ An apprenticeship is flexible; we expect it to take somewhere between three and 
 
 ### What are you looking for in an apprentice?
 
-We abide by a set of values, and are looking for apprentices who understand why. You don't need to have to have worked professionally. We want people who have:
+We abide by a set of values, and are looking for apprentices who understand why. We want people who have:
 
   * the willingness to learn
   * an openness to new ideas
@@ -37,6 +37,7 @@ We abide by a set of values, and are looking for apprentices who understand why.
   * curiosity when encountering new concepts and tools
   * a flexible approach
   * the desire to create things of the highest quality
+  * Some commercial experience in either **Java** or **C#**
 
 ### I want to apply. What do I need to do?
 
