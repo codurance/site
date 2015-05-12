@@ -68,6 +68,7 @@ Given a positive integer number (eg. 42) determine its Roman numeral representat
 |40               |XL	            |900	            |CM             |
 |50               |L              |1000             |M              |
 
+
 |Arabic number|Roman numeral|Thousands|Cents|Tenths|Units|
 |-------------|-------------|---------|-----|------|-----|
 |846|DCCCXLVI|-|DCC|XL|VI|
@@ -104,7 +105,7 @@ public class RomanConverter
         return "I";
     }
 }
-â€ƒ
+
 [TestFixture]
 public class RomanConverterShould
 {
@@ -154,7 +155,7 @@ public class RomanConverter
         return result;
     }
 }
-â€ƒ
+
 [TestFixture]
 public class RomanConverterShould
 {
@@ -209,7 +210,7 @@ public class RomanConverter
     {
         return Results[number];
     }
-}â€ƒ
+}
 
 // 9 statement -> tail recursion
 public class RomanConverter
@@ -230,7 +231,7 @@ public class RomanConverter
         return Results[1] + Convert(number - 1);
     }
 }
-â€ƒ
+
 [TestFixture]
 public class RomanConverterShould
 {
@@ -272,7 +273,7 @@ public class RomanConverter
         return Results[1] + Convert(number - 1);
     }
 }
-â€ƒ
+
 // 9 statement -> tail recursion
 public class RomanConverter
 {
@@ -299,7 +300,7 @@ public class RomanConverter
 
         return Results[1] + Convert(number - 1);
     }
-}â€ƒ
+}
 
 [TestFixture]
 public class RomanConverterShould
@@ -422,7 +423,7 @@ public class RomanConverter
         return result;
     }
 }
-â€ƒ
+
 // 10 if -> while
 public class RomanConverter
 {
@@ -455,7 +456,7 @@ public class RomanConverter
 
         return result;
     }
-}â€ƒ
+}
 
 // final solution
 [TestFixture]
@@ -509,27 +510,26 @@ public class RomanConverter
                 {1, "I"},
             };
 
-        public string Convert(int number)
-        {
-            var romanNumeral = string.Empty;
-            var arabicsToRomansEnumerator = arabicsToRomans.GetEnumerator();
+      public string Convert(int number)
+      {
+          var romanNumeral = string.Empty;
+          var arabicsToRomansEnumerator = arabicsToRomans.GetEnumerator();
 
-            while (arabicsToRomansEnumerator.MoveNext())
-            {
-                var arabicToRoman = arabicsToRomansEnumerator.Current;
-                var arabicNumeral = arabicToRoman.Key;
-                var romanNumeral = arabicToRoman.Value;
+          while (arabicsToRomansEnumerator.MoveNext())
+          {
+              var arabicToRoman = arabicsToRomansEnumerator.Current;
+              var arabicNumeral = arabicToRoman.Key;
+              var romanNumeral = arabicToRoman.Value;
 
-                while (number >= arabicNumeral)
-                {
-                    result += romanNumeral;
-                    number -= arabicNumeral;
-                }
-            }
+              while (number >= arabicNumeral)
+              {
+                  result += romanNumeral;
+                  number -= arabicNumeral;
+              }
+          }
 
-            return romanNumeral;
-        }
-    }
+          return romanNumeral;
+      }
 }
 ```
 

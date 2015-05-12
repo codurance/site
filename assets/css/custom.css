@@ -7,7 +7,7 @@ body {
 
 @media (min-width: 1000px) {
 	.header .navbar-default .navbar-nav > li > a {
-		padding: 9px 20px 9px 20px;		
+		padding: 9px 20px 9px 20px;
 	}
 }
 
@@ -16,8 +16,6 @@ body {
 		border-bottom: solid 2px #e67e22;
 	}
 }
-
-
 
 /* Navigation */
 .breadcrumbs h2 {
@@ -37,7 +35,7 @@ body {
 	z-index: -1;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 	.feature-panel {
 		height: 250px;
 		background-position: center, top;
@@ -53,7 +51,7 @@ body {
 }
 
 .feature-panel .highlight {
-	color: white; 
+	color: white;
 	text-shadow: 1px 1px 1px #7f8c8d;
 }
 
@@ -85,7 +83,7 @@ body {
 	margin-bottom: 60px;
 }
 
-.title-header h1, 
+.title-header h1,
 .title-header h2 {
 	color: #333;
 	font-size: 28px;
@@ -96,7 +94,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.title-header h1:after, 
+.title-header h1:after,
 .title-header h2:after {
 	bottom: 0;
 	left: 50%;
@@ -105,7 +103,7 @@ body {
 	content: " ";
 	margin-left: -35px;
 	position: absolute;
-	background: #e67e22;	
+	background: #e67e22;
 }
 
 .title-header p {
@@ -130,7 +128,7 @@ body {
 	margin-right: auto;
 	height: 300px;
 	box-shadow: 0 10px 10px 0px gray;
-} 
+}
 
 /*Content Boxes*/
 .content-boxes {
@@ -166,7 +164,7 @@ body {
 }
 
 .content-boxes h2 {
-	font-size: 15px; 
+	font-size: 15px;
 	margin-bottom: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -261,6 +259,27 @@ body {
 	margin-left: 15px;
 	max-height: 300px;
 	width: auto;
+}
+
+.blog-page table {
+	background-color: #ffffff;
+	margin-bottom: 13px;
+}
+
+.blog-page table th {
+	background-color: #ededed;
+	border: 1px solid #ccc;
+	padding: 6px 13px;
+	font-weight: bold;
+}
+
+.blog-page table tr:nth-child(even) {
+	background-color: #f8f8f8;
+}
+
+.blog-page table td {
+	border: 1px solid #ccc;
+	padding: 6px 13px;
 }
 
 /* Videos */
@@ -416,6 +435,5 @@ body {
 /* Careers */
 
 .careers h3 {
-	color: #e67e22;	
+	color: #e67e22;
 }
-
