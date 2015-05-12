@@ -26,7 +26,7 @@ title: Videos
                     <p>See the <a href="https://twitter.com/sandromancuso/status/588503877235781632">original discussion on Twitter</a> and the follow up <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">blog post</a> by Sandro Mancuso</p>
                 </div>
                 <div class="time-place">
-                    <p>24 Apr 2015 - Craft - Budapest</p>
+                    <p>7 May 2015 - Hangout on Air</p>
                 </div>
             </div>
             <!--Interaction Driven Design - CraftConf - Budapest-->
