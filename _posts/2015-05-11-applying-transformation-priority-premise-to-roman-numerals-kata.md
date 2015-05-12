@@ -11,7 +11,7 @@ tags:
 - TDD
 - .net
 ---
-#Applying Transformation Priority Premise to Roman numerals Kata
+#Applying Transformation Priority Premise to Roman Numerals Kata
 
 > "As tests get more specific code gets more generic." - Uncle Bob
 
