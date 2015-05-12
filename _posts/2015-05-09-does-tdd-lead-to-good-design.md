@@ -17,7 +17,7 @@ Recently I tweeted that [TDD can’t lead to a good design if we don’t know wh
 
 If you look back to many of my talks, blogs, and even my book, you will find multiple occasions where I say that TDD is a design tool. So what changed? Why I don’t say the same thing anymore?
 
-### What did I change my mind?
+### Why did I change my mind?
 
 After paying more attention to how I work and how many other developers work, I realised that not many people are driving good design through TDD. Although I love the RED-GREEN-REFACTORING rhythm, having a “refactoring” step is not enough to call TDD a design tool. 
 
