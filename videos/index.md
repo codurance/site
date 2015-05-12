@@ -9,6 +9,29 @@ title: Videos
         <div class="col-md-9">
 
 
+
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+            <div class=" margin-bottom-40">
+                <h2>TDD and Software Design</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/ty3p5VDcoOI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p><a href="http://twitter.com/jbrains">JB Rainsberger</a> and <a href="http://twitter.com/sandromancuso">Sandro Mancuso</a> started an interesting discussion on twitter about TDD and design. However twitter is not the best place to host these kind of discussions it's better to talk. Sandro and JB will discuss and answer questions face to face in this hangout organised by <a href="http://twitter.com/carlosble">Carlos Ble</a>.</p>
+
+                    <p>Does TDD mean no up-front design at all? Should everything emerge as we test-drive? What about architecture?...</p>
+
+                    <p>See the <a href="https://twitter.com/sandromancuso/status/588503877235781632">original discussion on Twitter</a> and the follow up <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">blog post</a> by Sandro Mancuso</p>
+                </div>
+                <div class="time-place">
+                    <p>24 Apr 2015 - Craft - Budapest</p>
+                </div>
+            </div>
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+
+
             <!--Interaction Driven Design - CraftConf - Budapest-->
             <div class=" margin-bottom-40">
                 <h2>Interaction Driven Design</h2>
