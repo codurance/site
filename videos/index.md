@@ -17,7 +17,7 @@ title: Videos
                 <div class="blog-post-tags">
                 </div>
                 <div class="description">
-                    <p>Different from previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
+                    <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
 
                     <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he not always follow rules and how he relies more on his intuition to drive his design. Thinking out loud throughout the video, it becomes quite easy to understand everything that he is considering while writing each test and refactoring his code. This video provides a very good example of Outside-In TDD and how it differs from the Classicist approach.</p>
 
@@ -58,7 +58,7 @@ title: Videos
             <div class=" margin-bottom-40">
                 <h2>Interaction Driven Design</h2>
                 <div class="video-post">
-                    <iframe style="height: 400px; width: 100%;" src="http://www.ustream.tv/embed/17590738?ub=ff3d23&amp;lc=ff3d23&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+                    <iframe style="height: 400px; width: 100%;" src="http://www.ustream.tv/embed/recorded/61480606?ub=ff3d23&amp;lc=ff3d23&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
                 </div>
                 <div class="blog-post-tags">
                 </div>
