@@ -107,6 +107,8 @@ Macro design is normally taken into account when using Outside-In TDD, but Outsi
 
 ### Conclusion
 
+Over the years I’ve seen many applications that have been test-driven and were still a pain to work with. OK, I admit that they were significantly better than the majority of the legacy applications which had no tests that I had to maintain before that.  
+
 Any developer can make a mess regardless if they are writing tests or not. Developers can also test drive crap regardless of which TDD style they are using.  
 
 TDD is **not** a design tool. It’s a software development _workflow_ that has prompts for code improvement in its lifecycle. In these prompts (writing tests and refactoring), developers need to know some design guidelines (4 Rules of Simple Design, Domain Driven Design, SOLID, Patterns, Law of Demeter, Tell, Don’t Ask, POLA/S, Design by Contract, Feature Envy, cohesion, coupling, Balanced Abstraction Principle, etc) in order to make their code better. Just saying _refactoring_ isn’t enough to call TDD a design tool. 
@@ -116,6 +118,8 @@ Many developers blame TDD and mocks for slowing them down. They end up giving up
 The great thing about TDD is that it is constantly asking us “Hey, can you make your code better? See how hard testing this class is becoming? OK, you made it work. Here’s your green bar. Now make it better.” Besides that, you are on your own.
 
 TDD becomes much easier when we understand what good design looks like. Practicing and understanding the wealth of design guidelines available will make TDD much easier and useful. It will also reduce its learning curve and hopefully increase its adoption.  
+
+Extremes are bad. We are going from BDUF (Big Design Up Front) to _no design at all_. Throwing away our design knowledge is a mistake. Sure, we should not go back to the dark ages and over-engineer everything but thinking that we should only focus on micro design is also a mistake. If you are working on your own, doing a few katas, or working on a small application, then yes, do whatever you like. But if you are part of bigger team developing something that is significantly bigger than a kata, you will be doing your team a favour if you paid more attention to macro design and how you structure your code.
 
 
 
