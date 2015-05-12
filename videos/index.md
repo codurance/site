@@ -21,14 +21,14 @@ title: Videos
                 <div class="time-place">
                     <p>5 Dec 2014</p>
                 </div>
-            </div>            
+            </div>
             <!--End of Test-driving algorithms - Screencast-->
 
             <!--Crafted design scotland video-->
             <div class=" margin-bottom-40">
                 <h2>Sandro Mancuso on Crafted Design</h2>
                     <div class="video-post">
-                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/107963074"></iframe> 
+                        <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/107963074"></iframe>
                     </div>
                     <div class="description">
                         <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features? Purely looking at unit tests is either not possible or too painful. Looking at higher-level tests can take a long time and still not give us the answers we need. For years, we have all struggled to design and structure projects that reflect the business domain.</p>
@@ -48,8 +48,8 @@ title: Videos
                         </iframe>
                     </div>
                     <div class="description">
-                        <p>In this video, Software Craftsman Samir Talwar discusses using your type system to make all these problems go away (at least from the core of your code). As a bonus, one will end up with a much more expressive, readable, maintanable and most importantly, correct code.</p>
-                        
+                        <p>In this video, Software Craftsman Samir Talwar discusses using your type system to make all these problems go away (at least from the core of your code). As a bonus, one will end up with a much more expressive, readable, maintainable and most importantly, correct code.</p>
+
                         <p>Samir has also written a fantastic blog on the topic <a href="/2014/10/02/highly-strung/">which you can find here.</a>
                     </div>
 
@@ -122,7 +122,7 @@ title: Videos
                 <div class="blog-post-tags">
                 </div>
                 <div class="description">
-                    <p>In this interview, right after his talk "Craftsmanship: A few years on", Sandro discusses the future of of Software Craftsmanship and addresses some of the criticism on Software Craftsmanship movement.</p>
+                    <p>In this interview, right after his talk "Craftsmanship: A few years on", Sandro discusses the future of Software Craftsmanship and addresses some of the criticism on Software Craftsmanship movement.</p>
                 </div>
                 <div class="time-place">
                     <p>9 Nov 2013 - Software Craftsmanship North America (SCNA) - Chicago, USA</p>
@@ -168,7 +168,7 @@ title: Videos
                     </p>
                     <p>Object-oriented principles can only get you so far in simplifying your design.
                     Starting with a clean yet completely imperative code base written in Java, In this video, Codurance co-founder Sandro Mancuso will explain how to improve code by applying functional principles, primarily extracting functions as objects and passing them around.</p>
-                    
+
                     <p>He will be pointing out how each refactor simplifies the code according to one or more of the four rules.</p>
 
                     He will start by removing duplication, even where duplication isn’t apparent from an OO point of view, before making the code clearer by replacing the language of the system by the language of our domain. Along the way, he'll reduce the number of moving parts and increase test coverage.
@@ -267,11 +267,11 @@ title: Videos
                 </div>
                 <div class="blog-thumbnails-box">
                     {% for post in site.posts limit:3 %}
-                    <div class="blog-thumbnail">    
+                    <div class="blog-thumbnail">
                         <a href="{{ post.url }}"><img class="thumbnail" src="{{ post.image.src }}"></a>
                         <div>
                             <a href="{{ post.url }}">{{post.title}}</a>
-                        </div>    
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
@@ -290,7 +290,7 @@ title: Videos
             <!-- End Blog Latest Tweets -->
         </div>
 
-        
+
 
     </div>
 </div>
