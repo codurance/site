@@ -7,6 +7,29 @@ title: Videos
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
+
+
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+            <div class=" margin-bottom-40">
+                <h2>Interaction Driven Design</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="http://www.ustream.tv/embed/17590738?ub=ff3d23&amp;lc=ff3d23&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features?</p>
+
+                    <p>In this talk Sandro will be sharing how he designed the last application he worked on, twisting a few concepts from Domain-Driven Design, properly applying MVC, borrowing concepts from CQRS, and structuring packages in non-conventional ways. Sandro will also be touching on SOLID principles, Agile incremental design, modularisation, and testing.</p>
+
+                    <p>By iteratively modifying the project structure to better model the product requirements, he has come up with a design style that helps developers create maintainable and domai n-oriented software.</p>
+                </div>
+                <div class="time-place">
+                    <p>24 Apr 2015 - Craft - Budapest</p>
+                </div>
+            </div>
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+
             <!--Test-driving algorithms - Screencast-->
             <div class=" margin-bottom-40">
                 <h2>Test-driving algorithms</h2>
