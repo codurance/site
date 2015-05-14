@@ -263,8 +263,10 @@ body {
 	width: auto;
 }
 
-.blog-twitter-button {
+.blog-share-buttons {
 	position: absolute;
+  left: inherit;
+	top: 0px;
 }
 
 /* Videos */
