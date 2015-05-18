@@ -17,8 +17,6 @@ body {
 	}
 }
 
-
-
 /* Navigation */
 .breadcrumbs h2 {
 	margin-top: 10px;
@@ -261,6 +259,27 @@ body {
 	margin-left: 15px;
 	max-height: 300px;
 	width: auto;
+}
+
+.blog-page table {
+	background-color: #ffffff;
+	margin-bottom: 13px;
+}
+
+.blog-page table th {
+	background-color: #ededed;
+	border: 1px solid #ccc;
+	padding: 6px 13px;
+	font-weight: bold;
+}
+
+.blog-page table tr:nth-child(even) {
+	background-color: #f8f8f8;
+}
+
+.blog-page table td {
+	border: 1px solid #ccc;
+	padding: 6px 13px;
 }
 
 .blog-share-buttons {
