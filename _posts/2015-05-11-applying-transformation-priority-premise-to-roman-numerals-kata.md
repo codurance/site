@@ -2,7 +2,7 @@
 layout: post
 name: applying-transformation-priority-premise-to-roman-numerals-kata
 title: 'Applying Transformation Priority Premise to Roman Numerals Kata'
-date: 2015-05-11 16:00:00 +01:00
+date: 2015-05-18 18:00:00 +01:00
 author: Pedro Santos
 image:
     src: /assets/img/custom/blog/2015-05-11-applying-transformation-priority-premise-to-roman-numerals-kata/She-wolf_suckles_Romulus_and_Remus.jpg
