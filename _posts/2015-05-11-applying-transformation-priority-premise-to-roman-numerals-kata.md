@@ -71,11 +71,12 @@ Given a positive integer number (eg. 42) determine its Roman numeral representat
 
 |Arabic number|Roman numeral|Thousands|Cents|Tenths|Units|
 |-------------|-------------|---------|-----|------|-----|
-|846|DCCCXLVI|-|DCC|XL|VI|
-|1999|MCMXCIX|M|CM|XC|IX|
-|2008|MMVIII|MM|-|-|VIII|
+|846          |DCCCXLVI     |-        |DCC  |XL    |VI   |
+|1999         |MCMXCIX      |M        |CM   |XC    |IX   |
+|2008         |MMVIII       |MM       |-    |-     |VIII |
 
 ##Implementation
+We start by writing the simplest unit test we can think of.
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -87,7 +88,9 @@ public class RomanConverterShould
         Assert.That(romanNumeral, Is.EqualTo(expected));
     }
 }
-
+```
+We start the implementation using the first transformation - no code to return null
+```csharp
 // 1 nil
 public class RomanConverter
 {
@@ -96,7 +99,9 @@ public class RomanConverter
         return null;
     }
 }
-
+```
+The first transformation is not enough to make the test pass so we apply the second transformation - nil to constant. This is enough to make the test pass so we stop evolving the code until we have a failing test.
+```csharp
 // 2 nil -> constant
 public class RomanConverter
 {
@@ -105,7 +110,9 @@ public class RomanConverter
         return "I";
     }
 }
-
+```
+We add a new failing test.
+```csharp
 [TestFixture]
 public class RomanConverterShould
 {
@@ -117,7 +124,9 @@ public class RomanConverterShould
         Assert.That(romanNumeral, Is.EqualTo(expected));
     }
 }
-
+```
+The next transformation - constant to variable - is not sufficient to make the test pass.
+```csharp
 // 4 Constant -> variable
 public class RomanConverter
 {
@@ -127,7 +136,9 @@ public class RomanConverter
         return result;
     }
 }
-
+```
+The next transformation - statement to statements - is also not sufficient to make the test pass.
+```csharp
 // 5 statement -> statements
 public class RomanConverter
 {
@@ -139,7 +150,9 @@ public class RomanConverter
         return result;
     }
 }
-
+```
+Applying the next transformation - unconditional to conditional - is sufficient to make the test pass.
+```csharp
 // 6 unconditional -> conditional
 public class RomanConverter
 {
@@ -155,7 +168,9 @@ public class RomanConverter
         return result;
     }
 }
-
+```
+We add a new failing test.
+```csharp
 [TestFixture]
 public class RomanConverterShould
 {
@@ -168,7 +183,30 @@ public class RomanConverterShould
         Assert.That(romanNumeral, Is.EqualTo(expected));
     }
 }
+```
+Adding another conditional will make the test pass, but we have duplication.
+```csharp
+public class RomanConverter
+{
+    public string Convert(int number)
+    {
+        var result = "I";
+        if (number > 1)
+        {
+            result += "I";
+        }
 
+        if (number > 2)
+        {
+            result += "I";
+        }
+
+        return result;
+    }
+}
+```
+Applying the next transformation - variable to array - removes the duplication.
+```csharp
 // 7 variable -> array
 public class RomanConverter
 {
@@ -179,7 +217,9 @@ public class RomanConverter
         return Results[number - 1];
     }
 }
-
+```
+We add a new failing test.
+```csharp
 [TestFixture]
 public class RomanConverterShould
 {
@@ -193,7 +233,22 @@ public class RomanConverterShould
         Assert.That(romanNumeral, Is.EqualTo(expected));
     }
 }
+```
+To make the test pass we don't need to apply the next transformation, we can make the test pass by adding a new element to the array.
+```csharp
+// no transformation
+public class RomanConverter
+{
+    public static readonly string[] Results = { "I", "II", "III", "IV" };
 
+    public string Convert(int number)
+    {
+        return Results[number - 1];
+    }
+}
+```
+While adding a new element to the array was enough to make the test pass, we now spot some duplication on character "I". By applying the next transformation statement to tail recursion we can get rid of this duplication. Since we are trying to follow the transformation table we applied the array to collection transformation before the tail recursion.
+```csharp
 // 8 array -> collection
 public class RomanConverter
 {
@@ -231,7 +286,9 @@ public class RomanConverter
         return Results[1] + Convert(number - 1);
     }
 }
-
+```
+We add a few more failing tests but since the last transformation was still allowing us to make tests pass we waited until we had duplication to refactor.
+```csharp
 [TestFixture]
 public class RomanConverterShould
 {
@@ -249,7 +306,9 @@ public class RomanConverterShould
         Assert.That(romanNumeral, Is.EqualTo(expected));
     }
 }
-
+```
+No other transformations required, simply adding new values to the dictionary allowed us to make the tests pass but we can now spot duplication, again around character "I".
+```csharp
 public class RomanConverter
 {
     public static readonly IDictionary<int, string> Results =
@@ -273,7 +332,9 @@ public class RomanConverter
         return Results[1] + Convert(number - 1);
     }
 }
-
+```
+To fix the duplication we apply again the transformation, statement to tail recursion, to fix this. We don't yet need to move to the next transformation.
+```csharp
 // 9 statement -> tail recursion
 public class RomanConverter
 {
@@ -300,8 +361,10 @@ public class RomanConverter
 
         return Results[1] + Convert(number - 1);
     }
-}
-
+}â€ƒ
+```
+Again we add more failing tests, and again, the last transformation is still making tests pass.
+```csharp
 [TestFixture]
 public class RomanConverterShould
 {
@@ -366,7 +429,9 @@ public class RomanConverter
         return Results[1] + Convert(number - 1);
     }
 }
-
+```
+We spot duplication around if statements, so we refactor the code to the next transformation - if to while. This gets rid of if statement duplication, but we now have while statement duplication.
+```csharp
 // 10 if -> while
 public class RomanConverter
 {
@@ -423,7 +488,9 @@ public class RomanConverter
         return result;
     }
 }
-
+```
+We apply the same if to while transformation to the remaining if statement and this allows us to get rid of the duplicated while statements. In order for this to work it's more convenient to have the dictionary reversed so we also do this.
+```csharp
 // 10 if -> while
 public class RomanConverter
 {
@@ -456,8 +523,10 @@ public class RomanConverter
 
         return result;
     }
-}
-
+}â€ƒ
+```
+We add more failing tests but the last transformation is sufficient to make all new tests pass and we cannot think of anymore failing tests, this implies we are done. We refactor the code to make it more readable and we are done.
+```csharp
 // final solution
 [TestFixture]
 public class RomanConverterShould
@@ -510,26 +579,27 @@ public class RomanConverter
                 {1, "I"},
             };
 
-      public string Convert(int number)
-      {
-          var romanNumeral = string.Empty;
-          var arabicsToRomansEnumerator = arabicsToRomans.GetEnumerator();
+        public string Convert(int number)
+        {
+            var romanNumeral = string.Empty;
+            var arabicsToRomansEnumerator = arabicsToRomans.GetEnumerator();
 
-          while (arabicsToRomansEnumerator.MoveNext())
-          {
-              var arabicToRoman = arabicsToRomansEnumerator.Current;
-              var arabicNumeral = arabicToRoman.Key;
-              var romanNumeral = arabicToRoman.Value;
+            while (arabicsToRomansEnumerator.MoveNext())
+            {
+                var arabicToRoman = arabicsToRomansEnumerator.Current;
+                var arabicNumeral = arabicToRoman.Key;
+                var romanNumeral = arabicToRoman.Value;
 
-              while (number >= arabicNumeral)
-              {
-                  result += romanNumeral;
-                  number -= arabicNumeral;
-              }
-          }
+                while (number >= arabicNumeral)
+                {
+                    result += romanNumeral;
+                    number -= arabicNumeral;
+                }
+            }
 
-          return romanNumeral;
-      }
+            return romanNumeral;
+        }
+    }
 }
 ```
 
