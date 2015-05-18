@@ -77,6 +77,7 @@ Given a positive integer number (eg. 42) determine its Roman numeral representat
 
 ##Implementation
 We start by writing the simplest unit test we can think of.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -89,7 +90,9 @@ public class RomanConverterShould
     }
 }
 ```
-We start the implementation using the first transformation - no code to return null
+
+We start the implementation using the first transformation *no code to nil*
+
 ```csharp
 // 1 nil
 public class RomanConverter
@@ -100,7 +103,9 @@ public class RomanConverter
     }
 }
 ```
-The first transformation is not enough to make the test pass so we apply the second transformation - nil to constant. This is enough to make the test pass so we stop evolving the code until we have a failing test.
+
+The first transformation is not enough to make the test pass so we apply the second transformation *nil to constant*. This is enough to make the test pass so we stop evolving the code until we have a failing test.
+
 ```csharp
 // 2 nil -> constant
 public class RomanConverter
@@ -111,7 +116,9 @@ public class RomanConverter
     }
 }
 ```
+
 We add a new failing test.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -125,7 +132,9 @@ public class RomanConverterShould
     }
 }
 ```
-The next transformation - constant to variable - is not sufficient to make the test pass.
+
+The next transformation *constant to variable* is not sufficient to make the test pass.
+
 ```csharp
 // 4 Constant -> variable
 public class RomanConverter
@@ -137,7 +146,9 @@ public class RomanConverter
     }
 }
 ```
-The next transformation - statement to statements - is also not sufficient to make the test pass.
+
+The next transformation *statement to statements* is also not sufficient to make the test pass.
+
 ```csharp
 // 5 statement -> statements
 public class RomanConverter
@@ -151,7 +162,8 @@ public class RomanConverter
     }
 }
 ```
-Applying the next transformation - unconditional to conditional - is sufficient to make the test pass.
+Applying the next transformation *unconditional to conditional* is sufficient to make the test pass.
+
 ```csharp
 // 6 unconditional -> conditional
 public class RomanConverter
@@ -169,7 +181,9 @@ public class RomanConverter
     }
 }
 ```
+
 We add a new failing test.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -184,7 +198,9 @@ public class RomanConverterShould
     }
 }
 ```
+
 Adding another conditional will make the test pass, but we have duplication.
+
 ```csharp
 public class RomanConverter
 {
@@ -205,7 +221,9 @@ public class RomanConverter
     }
 }
 ```
-Applying the next transformation - variable to array - removes the duplication.
+
+Applying the next transformation *variable to array* removes the duplication.
+
 ```csharp
 // 7 variable -> array
 public class RomanConverter
@@ -218,7 +236,9 @@ public class RomanConverter
     }
 }
 ```
+
 We add a new failing test.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -234,7 +254,9 @@ public class RomanConverterShould
     }
 }
 ```
+
 To make the test pass we don't need to apply the next transformation, we can make the test pass by adding a new element to the array.
+
 ```csharp
 // no transformation
 public class RomanConverter
@@ -247,7 +269,9 @@ public class RomanConverter
     }
 }
 ```
-While adding a new element to the array was enough to make the test pass, we now spot some duplication on character "I". By applying the next transformation statement to tail recursion we can get rid of this duplication. Since we are trying to follow the transformation table we applied the array to collection transformation before the tail recursion.
+
+While adding a new element to the array was enough to make the test pass, we now spot some duplication on character "I". By applying the next transformation *statement to tail* recursion we can get rid of this duplication. Since we are trying to follow the transformation table we applied the *array to collection* transformation before the tail recursion.
+
 ```csharp
 // 8 array -> collection
 public class RomanConverter
@@ -287,7 +311,9 @@ public class RomanConverter
     }
 }
 ```
+
 We add a few more failing tests but since the last transformation was still allowing us to make tests pass we waited until we had duplication to refactor.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -307,7 +333,9 @@ public class RomanConverterShould
     }
 }
 ```
+
 No other transformations required, simply adding new values to the dictionary allowed us to make the tests pass but we can now spot duplication, again around character "I".
+
 ```csharp
 public class RomanConverter
 {
@@ -333,7 +361,9 @@ public class RomanConverter
     }
 }
 ```
-To fix the duplication we apply again the transformation, statement to tail recursion, to fix this. We don't yet need to move to the next transformation.
+
+To fix the duplication we apply again the transformation, *statement to tail recursion*, to fix this. We don't yet need to move to the next transformation.
+
 ```csharp
 // 9 statement -> tail recursion
 public class RomanConverter
@@ -361,9 +391,11 @@ public class RomanConverter
 
         return Results[1] + Convert(number - 1);
     }
-}â€ƒ
+}
 ```
+
 Again we add more failing tests, and again, the last transformation is still making tests pass.
+
 ```csharp
 [TestFixture]
 public class RomanConverterShould
@@ -430,7 +462,9 @@ public class RomanConverter
     }
 }
 ```
-We spot duplication around if statements, so we refactor the code to the next transformation - if to while. This gets rid of if statement duplication, but we now have while statement duplication.
+
+We spot duplication around if statements, so we refactor the code to the next transformation *if to while*. This gets rid of if statement duplication, but we now have while statement duplication.
+
 ```csharp
 // 10 if -> while
 public class RomanConverter
@@ -489,7 +523,9 @@ public class RomanConverter
     }
 }
 ```
-We apply the same if to while transformation to the remaining if statement and this allows us to get rid of the duplicated while statements. In order for this to work it's more convenient to have the dictionary reversed so we also do this.
+
+We apply the same *if to while* transformation to the remaining if statement and this allows us to get rid of the duplicated while statements. In order for this to work it's more convenient to have the dictionary reversed so we also do this.
+
 ```csharp
 // 10 if -> while
 public class RomanConverter
@@ -523,9 +559,11 @@ public class RomanConverter
 
         return result;
     }
-}â€ƒ
+}
 ```
-We add more failing tests but the last transformation is sufficient to make all new tests pass and we cannot think of anymore failing tests, this implies we are done. We refactor the code to make it more readable and we are done.
+
+We add more failing tests but the last transformation is sufficient to make all new tests pass and we cannot think of anymore failing tests, this implies we are done. We refactor the code to make it more readable and we are done. We decided not to refactor the outer while loop to a foreach loop. Although this could simplify the code, a foreach loop is not in the transformation premise list so we decided against it for the purposes of this post.
+
 ```csharp
 // final solution
 [TestFixture]
