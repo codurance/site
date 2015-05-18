@@ -7,6 +7,122 @@ title: Videos
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
+
+            <!--Screencast - Outside-In TDD (part III)-->
+            <div class=" margin-bottom-40">
+                <h2>Screencast - Oustide-In TDD (part III)</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/R9OAt9AOrzI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
+
+                    <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he not always follow rules and how he relies more on his intuition to drive his design. Thinking out loud throughout the video, it becomes quite easy to understand everything that he is considering while writing each test and refactoring his code. This video provides a very good example of Outside-In TDD and how it differs from the Classicist approach.</p>
+
+                    <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p>
+
+                    <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a>
+                </div>
+                <div class="time-place">
+                    <p>12 May 2015</p>
+                </div>
+            </div>
+            <!--Screencast - Outside-In TDD (part II)-->
+
+
+            <!--Screencast - Outside-In TDD (part II)-->
+            <div class=" margin-bottom-40">
+                <h2>Screencast - Oustide-In TDD (part II)</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/gs0rqDdz3ko" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
+
+                    <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he not always follow rules and how he relies more on his intuition to drive his design. Thinking out loud throughout the video, it becomes quite easy to understand everything that he is considering while writing each test and refactoring his code. This video provides a very good example of Outside-In TDD and how it differs from the Classicist approach.</p>
+
+                    <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p>
+
+                    <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a>
+                </div>
+                <div class="time-place">
+                    <p>12 May 2015</p>
+                </div>
+            </div>
+            <!--Screencast - Outside-In TDD (part II)-->
+
+
+            <!--Screencast - Outside-In TDD (part I)-->
+            <div class=" margin-bottom-40">
+                <h2>Screencast - Oustide-In TDD (part I)</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/XHnuMjah6ps" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
+
+                    <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he not always follow rules and how he relies more on his intuition to drive his design. Thinking out loud throughout the video, it becomes quite easy to understand everything that he is considering while writing each test and refactoring his code. This video provides a very good example of Outside-In TDD and how it differs from the Classicist approach.</p>
+
+                    <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p>
+
+                    <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a>
+                </div>
+                <div class="time-place">
+                    <p>12 May 2015</p>
+                </div>
+            </div>
+            <!--Screencast - Outside-In TDD (part I)-->
+
+
+            <!--TDD and Software Design - Hangout on Air-->
+            <div class=" margin-bottom-40">
+                <h2>TDD and Software Design</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/ty3p5VDcoOI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p><a href="http://twitter.com/jbrains">JB Rainsberger</a> and <a href="http://twitter.com/sandromancuso">Sandro Mancuso</a> started an interesting discussion on twitter about TDD and design. However twitter is not the best place to host these kind of discussions it's better to talk. Sandro and JB will discuss and answer questions face to face in this hangout organised by <a href="http://twitter.com/carlosble">Carlos Ble</a>.</p>
+
+                    <p>Does TDD mean no up-front design at all? Should everything emerge as we test-drive? What about architecture?...</p>
+
+                    <p>See the <a href="https://twitter.com/sandromancuso/status/588503877235781632">original discussion on Twitter</a> and the follow up <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">blog post</a> by Sandro Mancuso</p>
+                </div>
+                <div class="time-place">
+                    <p>7 May 2015 - Hangout on Air</p>
+                </div>
+            </div>
+            <!--TDD and Software Design - Hangout on Air-->
+
+
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+            <div class=" margin-bottom-40">
+                <h2>Interaction Driven Design</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="http://www.ustream.tv/embed/recorded/61480606?ub=ff3d23&amp;lc=ff3d23&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features?</p>
+
+                    <p>In this talk Sandro will be sharing how he designed the last application he worked on, twisting a few concepts from Domain-Driven Design, properly applying MVC, borrowing concepts from CQRS, and structuring packages in non-conventional ways. Sandro will also be touching on SOLID principles, Agile incremental design, modularisation, and testing.</p>
+
+                    <p>By iteratively modifying the project structure to better model the product requirements, he has come up with a design style that helps developers create maintainable and domai n-oriented software.</p>
+                </div>
+                <div class="time-place">
+                    <p>24 Apr 2015 - Craft - Budapest</p>
+                </div>
+            </div>
+            <!--Interaction Driven Design - CraftConf - Budapest-->
+
             <!--Test-driving algorithms - Screencast-->
             <div class=" margin-bottom-40">
                 <h2>Test-driving algorithms</h2>

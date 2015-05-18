@@ -282,6 +282,12 @@ body {
 	padding: 6px 13px;
 }
 
+.blog-share-buttons {
+	position: absolute;
+  left: inherit;
+	top: 0px;
+}
+
 /* Videos */
 
 .video-post {
