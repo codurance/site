@@ -2,7 +2,7 @@
 layout: post
 name: crank-up-the-volume
 title: 'Crank Up The Volume And Forget Your Pomodoros'
-date: 2015-06-02 09:00:00 +01:00
+date: 2015-06-04 09:00:00 +01:00
 author: Samir Talwar
 image:
     src: /assets/img/custom/blog/2015-06-04-crank-up-the-volume/headphones.jpg
