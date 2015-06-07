@@ -1,7 +1,10 @@
 require 'rspec/core/rake_task'
 
+SPEC_DIRECTORY = '_spec'
+
 RSpec::Core::RakeTask.new(:spec) do |task|
-  task.rspec_opts = '--color _spec'
+  task.pattern = Dir.glob("#{SPEC_DIRECTORY}/**/*_spec.rb")
+  task.rspec_opts = '--color'
 end
 
 task :build do
