@@ -1,6 +1,4 @@
 language: ruby
-rvm:
-- 2.0.0
 cache: bundler
 script:
 - bundle exec rake
@@ -8,6 +6,3 @@ script:
 env:
   global:
     secure: h3Kw8ZuCGJh9QyQMoyivjTzLa43Kby40ycZkjNEfNRqrwXbfyPLMHbty3RiZ/NvYm25BvHMi30EMiqz/EnN0IQYK9APIqOZ/aGSQxgTzQEwMa5qyEr804YvdEHwyhPpxtlDWSOcjaaRuK3ENXqjPwCAGUDtQ6/oXAOyOM9bsg9A=
-branches:
-  only:
-    - master

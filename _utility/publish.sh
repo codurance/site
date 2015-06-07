@@ -2,6 +2,13 @@
 
 set -e
 
+if ! [[ "$TRAVIS_REPO_SLUG" == 'codurance/site'
+     && "$TRAVIS_PULL_REQUEST" == 'false'
+     && "$TRAVIS_BRANCH" == 'master'
+]]; then
+    exit 0
+fi
+
 git config --global user.name 'Travis CI'
 git config --global user.email 'travis@travis-ci.org'
 
