@@ -114,3 +114,12 @@
   fullDescription: <p>Ana is an experienced software developer with a passion for the web and mobile technology. She has worked as a developer for the majority of her career and has had the opportunity to work in a wide variety of projects, with various languages and technologies.</p><p>Ana joined Codurance as an apprentice to improve her technical skills and put the values of Software Craftsmanship into practice. She is committed to enhancing both her own knowledge and that of the wider software development community.</p>
   twitter: anainogal
   github: ananogal
+
+- id: franzi 
+  name: Franziska Sauerwein 
+  image: /assets/img/custom/team/franzi.png
+  role: Apprentice
+  shortDescription: Franziska has worked as a software developer and consultant for three years before joining Codurance. She is always trying to improve her skils and share knowledge ... 
+  fullDescription: <p>Franziska has worked as a software developer and consultant for three years before moving to London to join Codurance as an apprentice. Her passions include Test Driven Development, Refactoring, XP techniques and high quality software development.  She is always trying to improve her skills and share knowledge.</p> <p>As an active member of the European Software Craftsmanship community she loves to participate in unconferences and organizes code retreats, hackathons, coding dojos as well as tech talks.  She aims to use her skills and creativity to develop software that is reliable, easy to adapt and doing what it is supposed to do.</p>
+  twitter: singsalad 
+  github: franziskas 
