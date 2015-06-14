@@ -8,7 +8,7 @@ image:
     src: /assets/img/custom/blog/2015-06-13-extreme-learning/tractor_simulator.jpg
 ---
 
-Last weekend I was lucky enough to attend [Socrates UK 2014](http://socratesuk.org), an annual international software craftsmanship gathering set in the scenic surroundings of Farnham, Oxfordshire. If you have not done so, I defintely recommend checkout out this conference, either in England or the other Socrates events taking place across Europe (Germany, Belgium, France ...). 
+Last weekend I was lucky enough to attend [Socrates UK 2015](http://socratesuk.org), an annual international software craftsmanship gathering set in the scenic surroundings of Farnham, Oxfordshire. If you have not done so, I defintely recommend checkout out this conference, either in England or the other Socrates events taking place across Europe (Germany, Belgium, France ...). 
 
 At the time of writing this post I am a software apprentice at [Codurance](http://www.codurance.com). My <strong>'things to learn'</strong> list grows every day. Java fundamentals, SOLID princples, TDD practices, oh wait … some of the new developers on the project are now using <em>Scala</em>... I want to at least be able to understand their code. <em>[Terraform](http://www.terraform.io)</em> has been coming up in a number of discussions... I want to get my head around that. You get the idea right?
 
