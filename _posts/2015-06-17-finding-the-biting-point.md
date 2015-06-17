@@ -30,7 +30,7 @@ So what happens when they switch roles? All of a sudden the junior of the two is
 <img height="350px" width="500px" src="/assets/img/custom/blog/finding-the-biting-point/picture2.png">
 </div>
 
-Even worse, what will happen when the junior developer will have to separate and work by themself? This is both a cause and symptom of the junior developer sitting in the passenger seat too long. He was never able to drive for himself and as a result was never able to find the biting point of the software. 
+Even worse, what will happen when the junior developer will have to separate and work by themselves? This is both a cause and symptom of the junior developer sitting in the passenger seat too long. He was never able to drive for himself and as a result was never able to find the biting point of the software. 
 
 ## Finding the biting point?
 
