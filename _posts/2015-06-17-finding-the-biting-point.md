@@ -51,7 +51,7 @@ Finding the sweet spot where the clutch meets the gears was taught to me as 'Fin
 
 ### As a Junior in the pair...
 
-I know it's tough to admit ignorance, but everyone has to start somewhere. Ask questions often, if there's a task you think you can handle, as for the keyboard, request that your partner guides you and is patient with you while you get to grips with the code. Study in your own time. If possible and if you haven't already, clone the repo on your machine and browse the code, branch off and try to add a new feature and see what will happen. Most importantly, be honest. There's nothing wrong with not knowing something, however the same can not be said about holding yourself back.
+I know it's tough to admit ignorance, but everyone has to start somewhere. Ask questions often, if there's a task you think you can handle, ask for the keyboard, request that your partner guides you and is patient with you while you get to grips with the code. Study in your own time. If possible and if you haven't already, clone the repo on your machine and browse the code, branch off and try to add a new feature and see what will happen. Most importantly, be honest. There's nothing wrong with not knowing something, however the same can not be said about holding yourself back.
 
 ### As a Senior in the pair...
 
