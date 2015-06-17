@@ -36,7 +36,7 @@ Although we could try, writing code that can remain flexible for the entire life
 
 I don’t think there is a clear solution or guideline for this problem but at least there is a better way to reason about that. I call it inflection point.
 
-> _**Inflection point is the point that defines the right level of investment for a desired type of flexibility.**_
+> _**Inflection point defines the maximum amount of investment we are comfortable to make in a desired type of flexibility at a given moment in time.**_
 
 There are two ways to reason about the inflection point:
 
