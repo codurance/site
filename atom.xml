@@ -16,7 +16,7 @@ layout: nil
     {% for post in site.posts limit:15 %}
     <entry>
         <id>{{ post.url}}</id>
-        <title>{{ post.title }}</title>
+        <title>{{ post.title | xml_escape }}</title>
         <link href="{{ post.url }}"/>
         <published>{{ post.date | date_to_xmlschema }}</published>
         {% if post.excerpt %}
