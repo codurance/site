@@ -14,7 +14,7 @@ tags:
 - teamwork
 ---
 
-## The inevitble imbalance in pair programming.
+## The inevitable imbalance in pair programming.
 
 At some point throughout a developers career, no matter their experience, they will most likely find themselves in a situation where they are either the Junior or the Senior of the two in a pair programming session. In this context, being the __Junior__ does not only mean being a less experienced developer, but it could also mean somebody that has not been introduced to the current project yet, or someone who is inexperienced with the language. 
 
