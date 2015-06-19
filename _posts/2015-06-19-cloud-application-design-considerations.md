@@ -85,7 +85,7 @@ This is clearly a huge topic in itself, but a few interesting items to explore w
 - How we will deal with operating system and vendor security patches and updates?
 
 ## Manageability
-This topic of conversation covers our ability to understand the health and performance of the live system and manage site operations. Some useful, cloud specific, considerations include:
+This topic of conversation covers our ability to understand the health and performance of the live system and manage site operations. Some useful cloud specific considerations include:
 
 ### Monitoring
 - How are we planning to monitor the application?
