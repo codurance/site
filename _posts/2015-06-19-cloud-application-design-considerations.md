@@ -17,7 +17,7 @@ tags:
 ---
 # Cloud Application Design Considerations
 
-When designing applications for the cloud, irrespective of the chosen platform, I have found often it useful to consider four specific topics during my initial discussions; scalability, availability, manageability and feasibility.
+When designing applications for the cloud, irrespective of the chosen platform, I have often found it useful to consider four specific topics during my initial discussions; scalability, availability, manageability and feasibility.
 
 It is important to remember that the items presented under each topic within this article are not an exhaustive list and are aimed only at presenting a starting point for a series of long and detailed conversations with the stakeholders of your project, always the most important part of the design of any application. The aim of these conversations should be to produce an initial high-level design and architecture. This is achieved by considering these four key elements holistically within the domain of the customers project requirements, always remembering to consider the side-effects and trade-offs of any design decision (i.e. what we gain vs. what we lose, or what we make more difficult).
 
