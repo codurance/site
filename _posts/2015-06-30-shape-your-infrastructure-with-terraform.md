@@ -2,7 +2,7 @@
 layout: post
 name: shape-your-infrastructure-with-terraform
 title: Shape your infrastructure with Terraform
-date: 2015-06-21 12:00:00 +00:00
+date: 2015-06-30 12:00:00 +00:00
 author: Robert Firek
 image:
     src: /assets/img/custom/blog/terraform/TerraformedMoonFromEarth.jpg
@@ -167,7 +167,7 @@ resource "aws_subnet" "private-subnet" {
 }
 {% endhighlight %}
 
-***vpc-variables.tf***
+***subnets-variables.tf***
 {% highlight javascript %}
 variable "vpc" {
     default = {
