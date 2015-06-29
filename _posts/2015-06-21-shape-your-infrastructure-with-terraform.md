@@ -16,19 +16,13 @@ tags:
 - Cloud
 ---
 
-The popularity of cloud infrastructure services has hugely increased over the last few years. Companies value flexibility and reliability
-levels of such services. The simplicity of the solutions delivered by cloud providers should remove the burden from the shoulders of busy
-Dev and Ops people and give possibility to focus on real customer's needs.
+The popularity of cloud infrastructure services has hugely increased over the last few years. Companies value the flexibility and reliability provided by such services. The simplicity of the solutions delivered by cloud providers should remove the burden from the shoulders of busy Dev and Ops people and give the possibility to focus on real customer's needs.
 
-Unfortunately the truth is not so simple. When you start your journey in the cloud you will discover new challenges. Probably one of these
-discoveries will be connected with the creation of your infrastructure. Simple structures can be created with in minutes using web pages or
-a CLI, but it is not the best way to create a cloud with 100 machines.
+Unfortunately the reality is not necessarily so simple. When you start your journey in the cloud you will discover new challenges. One of these challenges will be connected with the creation and provisioning of your new infrastructure. Simple structures can be created within minutes using web pages or a CLI, but these are not the best ways to create a cloud with 100 machines.
 
-AWS provides many different interfaces which allow automation of an infrastructure process. You can use a REST API or CLI
-to create your own script. Probably this is the most flexible solution, but at the same time it can be time consuming.
+AWS provides many different interfaces which allow automation of an infrastructure process. You can use a REST API or CLI to create your own script. This is probably the most flexible solution, but at the same time it can be time consuming.
 
-Terraform from HashiCorp can give you similar flexibility and at the same time you don't have to spend weeks to write
-your bash or python scripts to provision your cloud.
+[Terraform](https://terraform.io/) from HashiCorp can give you similar flexibility and at the same time you don't have to spend weeks to write bash or python scripts to provision your cloud.
 
 ## Terraform for the rescue - plan, apply, update, destroy.
 
@@ -36,25 +30,19 @@ your bash or python scripts to provision your cloud.
 ### Plan
 
 #### Infrastructure diagram
-<img class="img-responsive blog-post-image" src="/assets/img/custom/blog/terraform/ShapeYourInfrastructure_VPC.png" />To show you how we can
-use Terraform we need to introduce some example infrastructure: let's provision a structure which will support a simple
-web service in AWS. This web service will expose an API through a web proxy server. The service also requires some database and this database should have a separate
-EC2 instance to ease database maintenance. Instances responsible for business logic will be hidden in a private subnet and only the web proxy
-server will be available to the wider internet. At the same time our service needs to connect to external resources - therefore a NAT instance will take the responsibility
-of managing network connections from within the private subnet. All of these resources constitute a single Virtual Private Cloud.
+<img class="img-responsive blog-post-image" src="/assets/img/custom/blog/terraform/ShapeYourInfrastructure_VPC.png" />To demonstrate the use of Terraform we need to introduce some example infrastructure: let's provision a structure which will support a simple web service running in AWS. This web service will expose an API via a web proxy server. The service also requires a database and this database should have a separate EC2 instance to ease database maintenance. Instances responsible for business logic will be hidden in a private subnet and only the web proxy
+server will be available to the wider internet. At the same time our service needs to connect to external resources - therefore a NAT instance will take the responsibility of managing network connections from within the private subnet. All of these resources will constitute a single [Virtual Private Cloud](http://aws.amazon.com/vpc/) (VPC).
 
 
 #### Provider
 
-Now we are ready to introduce Terraform. We need to create configuration files which will describe components required to build
-our infrastructure. Configuration files can be written in Terraform format (similar to YAML) or JSON. All configuration files should
-have extension ***.tf*** and be stored in the same directory. Terraform automatically combines all resources defined in ***.tf*** files.
+We are now ready to introduce Terraform. We need to create configuration files which will describe components required to build our infrastructure. Configuration files can be written in [HashiCorp Configuration Language](https://terraform.io/docs/configuration/) (similar to YAML) or JSON. All configuration files should have extension ***.tf*** and be stored in the same directory. Terraform automatically combines all resources defined in ***.tf*** files.
 
 Before we add any resource we have know where our resources are going to exist. To do that we have to create a *provider* definition.
-Terraform's provider is the mechanism used for managing resources, in our case we'll use the AWS provider. Our first configuration file
-can look like this:
 
-***config-provider.tf***
+Terraform's provider is the mechanism used for managing resources, in our case we'll use the AWS provider. Our first configuration file might look like this:
+
+***provider-config.tf***
 {% highlight javascript %}
 provider "aws" {
     access_key = "ACCESS_KEY_HERE"
@@ -64,13 +52,11 @@ provider "aws" {
 {% endhighlight %}
 
 Obviously we don't want to keep our secrets in a file which will potentially be stored in version control.
-We also want to have flexibility when we define a region in which we want to provision our environment. Terraform gives us the possibility
-to introduce variables.
+We also want to have flexibility when we define a region in which we want to provision our environment. Terraform gives us the possibility to introduce variables.
 
-First we have to declare the variables we want to use (see ***variables-provider.tf***). The variables declaration introduces names,
-structure and default values for all variables used in the configuration file. We will override these default values later.
+First we have to declare the variables we want to use (see ***provider-variables.tf***). The variables declaration introduces names, structure and default values for all variables used in the configuration file. We will override these default values later.
 
-***variables-provider.tf***
+***provider-variables.tf***
 {% highlight javascript %}
 variable "provider" {
     default = {
@@ -81,10 +67,9 @@ variable "provider" {
 }
 {% endhighlight %}
 
-Now we can change ***config-provider.tf***.
+Now we can update ***provider-config.tf***.
 
-***config-provider.tf***
-***provider-config.tf?***
+***provider-config.tf***
 {% highlight javascript %}
 provider "aws" {
     access_key = "${var.provider.access_key}"
@@ -95,9 +80,7 @@ provider "aws" {
 
 #### VPC
 
-When we know how to connect to our provider we can introduce resources. A resources definition in Terraform contains information about type of a
-a resource and a name. Types of resources are predefined by Terraform and represents building elements which we can instantiate in
-the cloud. Each resource have also predefined set of config keys which describe a resource in detail.
+When we know how to connect to our provider we can introduce resources. A resource definition in Terraform contains information about the type of a resource and its name. Types of resources are predefined by Terraform and represent building elements which we can instantiate in the cloud. Each resource also has a predefined set of config properties which describe the resource in detail. For a full list of supported AWS resource types, see [here](https://www.terraform.io/docs/providers/aws/).
 
 ***Resource Syntax***
 {% highlight javascript %}
@@ -106,22 +89,20 @@ resource <TYPE> <NAME> {
 }
 {% endhighlight %}
 
-In our case we have to define VPC for all other resources. We need to assign VPC to specific range of addresses by defining CIDR block.
-Each VPC also needs an internet gateway.
+In our case we have to define a VPC for all our resources to reside in. We need to assign our VPC to a specific range of addresses by defining a [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) block. Each VPC also needs an internet gateway.
 
-Once again instead of hardcoded values we will declare variables specific for VPC definition.
+Once again instead of hardcoded values we will declare variables specific for our VPC definition.
 
-We can also introduce variable which defines name of our environment. This name will allow us to tag resources and recognise to which
-environment belongs given resource.
+We can also introduce a variable which defines the name of our environment. This name will allow us to tag resources and recognise to which environment a given resource belongs.
 
-***variables-environment.tf***
+***environment-variables.tf***
 {% highlight javascript %}
 variable "environment_name" {
     default = "unknown-environment"
 }
 {% endhighlight %}
 
-***config-vpc.tf***
+***vpc-config.tf***
 {% highlight javascript %}
 resource "aws_vpc" "environment" {
     cidr_block = "${var.vpc.cidr_block}"
@@ -142,7 +123,7 @@ resource "aws_internet_gateway" "environment" {
 }
 {% endhighlight %}
 
-***variables-vpc.tf***
+***vpc-variables.tf***
 {% highlight javascript %}
 variable "vpc" {
     default = {
@@ -152,21 +133,16 @@ variable "vpc" {
 }
 {% endhighlight %}
 
-We also used build-in variable to refer to our VPC resource. We can use type of a resource type and a name as a reference variable to
-get access to properties defined by this resource. Some properties of the resource can be defined during creation of the resource
-like internal ids or names and some are already defined in our scripts.
+We can use the type of a resource and its name as a reference variable to access properties exposed by a given resource, as we did to reference the VPC id above. Some properties of a resource will be defined by Terraform during creation of the resource, like internal ids or names. Some are already defined in our scripts.
 
-In above example we assign a internet gateway to our VPC by referencing to the property ***id** of ***aws_vpc*** resource with name ***environment***.
-A VPC resource property will be defined during creation of resource.
+In the above example we assign an internet gateway to our VPC by referencing the property ***id** of ***aws_vpc*** resource with name ***environment***.
 
 
 #### Subnets
 
-Our example VPC should contain two subnets. For each subnet we have to define range of addresses available in the subnet (CIDR block),
-availability zone and of course we have to assign this subnet to the VPC. Again, we declare variables instead defining values directly
-in the configuration script.
+Our example VPC should contain two subnets. For each subnet we have to define a range of addresses available (CIDR block), an availability zone and of course we have to assign this subnet to the VPC. Again, we declare variables instead defining values directly in the configuration script.
 
-**config-subnets.tf**
+***subnets-config.tf***
 {% highlight javascript %}
 resource "aws_subnet" "public-subnet" {
     vpc_id            = "${aws_vpc.environment.id}"
@@ -191,7 +167,7 @@ resource "aws_subnet" "private-subnet" {
 }
 {% endhighlight %}
 
-**variables-vpc.tf**
+***vpc-variables.tf***
 {% highlight javascript %}
 variable "vpc" {
     default = {
@@ -218,13 +194,9 @@ variable "vpc_private_subnet" {
 
 #### Route tables
 
-Each subnet in a VPC must be associated with route table. This time we have an unusual situation. We have the reference to
-a resource which was not defined yet (***${aws_instance.nat.id}***). The order of files is not important for Terraform.
-It combines all files and based on that knowledge prepares a plan of execution. For that reason we can refer to resources
-which are defined in different files. Terraform will also produce error during creation if the resource is not
-available.
+Each subnet in a VPC must be associated with a route table. This time we have an unusual situation. We have the reference to a resource which was not defined yet (***${aws_instance.nat.id}***). The order of files is not important for Terraform. It combines all files and based on that knowledge prepares a plan of execution. For that reason we can refer to resources which are defined in different files. Terraform will produce an error during creation if the resource is not defined anywhere.
 
-***configure-route_tables.tf**
+***route_tables-config.tf***
 {% highlight javascript %}
 resource "aws_route_table" "public-subnet" {
     vpc_id = "${aws_vpc.environment.id}"
@@ -267,11 +239,9 @@ resource "aws_route_table_association" "private-subnet" {
 
 #### Security groups
 
-A definition of any EC2 instance requires assigning it to a security group. Security groups are another type of resources.
-In this case definition of a resource is also so easy as for previous resources. Depends on our needs we can define inbound (ingress)
-and outbound (egress) rules for given range of ports, a protocol and addresses.
+A definition of any EC2 instance requires assigning it to a security group. Security groups are another type of resource in Terraform. Once again configuration of this resource type is straightforward. Depending on our needs we can define inbound (ingress) and outbound (egress) rules for the desired range of ports, protocols and addresses.
 
-***config-security_groups.tf***
+***security_groups-config.tf***
 {% highlight javascript %}
 resource "aws_security_group" "nat" {
     name = "${var.environment_name}-nat"
@@ -349,10 +319,11 @@ resource "aws_security_group" "private" {
 
 #### EC2 Instances
 
-With all above resources we can finally define our EC2 instances. Our NAT instance and web proxy instance require an
-Elastic IP (resource ***aws_eip***). We also choose an instance type for each EC2 instance.
+With all the above resources declared we can finally define our EC2 instances.
 
-***config-instances.tf***
+Our NAT instance and web proxy instance require an Elastic IP (resource ***aws_eip***). We also need to choose an instance type for each EC2 instance.
+
+***instances-config.tf***
 {% highlight javascript %}
 resource "aws_instance" "nat" {
     ami                         = "${var.nat.ami_image}"
@@ -430,7 +401,7 @@ resource "aws_instance" "service" {
 }
 {% endhighlight %}
 
-***variables-instances.tf***
+***instances-variables.tf***
 {% highlight javascript %}
 variable "nat" {
     default = {
@@ -468,28 +439,22 @@ variable "services" {
 
 #### Verify
 
-Our VPC definition is ready. But how do we know that everything is ready for creation? We can verify our all hard work. All we have
-to do we have to ask Terraform to prepare a plan by executing the following command:
+Our VPC definition is now ready. But how do we know that everything is ready for provisioning? We can verify our all hard work. All we have to do is ask Terraform to prepare a plan by executing the following command:
 
 {% highlight bash %}
 $ terraform plan
 {% endhighlight %}
 
-Terraform will combine all available files and will prepare an execution plan. This means that all definitions will be verified before
-you start creating real resources. The output from this command give us also overview what kind of operations will be performed
-during a real execution.
+Terraform will combine all available files and prepare an execution plan. This means that all definitions will be verified before you start provisioning your resources. The output from this command will also give us an overview of the kind of operations that will be performed during execution of the plan.
 
-We have to remember that is only a dry run. We don't connect to AWS and we will not find any errors which can occur during
-regular execution. For example a plan will not show any errors event if you already exceeded a limit of available EIP.
+We have to remember that the plan only represents a dry run. We don't connect to AWS at this point and we will not find any errors which might occur in the cloud. For example a plan will not show any errors if you have already exceeded your limit of available EC2 instances.
 
 
 ### Apply
 
 So far we used only default values to run our plan. It is not particularly useful when you want to create real environment.
-To apply our execution plan we have to prepare a file which will contain definition of our variables. We can override default
-definitions by creating file with extension ***.tfvariables***. This file has format of regular Java property file where each
-key is the path of a variable and value is a value assigned to a variable. Example variable file for our first environment
-can look like this:
+
+To apply our execution plan we have to prepare a file which will contain the definitions of our variables. We can override default definitions by creating a file with extension ***.tfvariables***. This file has the format of a regular Java property file where each key is the path of a variable and each value is the value assigned to it. An example variable file for our first environment might look like this:
 
 ***my_first_vpc_environment.tfvariables***
 {% highlight bash %}
@@ -521,50 +486,37 @@ services.key_name           = "my_first_vpc_environment"
 services.availability_zone  = "eu-west-1a"
 {% endhighlight %}
 
-We can verify the plan again and if we decide that we are ready we can apply it be executing the following command:
+We can verify the plan again and if we decide that we are ready we can apply it by executing the following command:
 {% highlight bash %}
 $ terraform apply
 {% endhighlight %}
 
-Terraform will connect to AWS and will try to create all resource defined in Terraform scripts. The output of this command is
-state file ***terraform.tfstate*** which contains all information about just created environment. The state file must be kept
-for the future execution (e.g. version control system), because Terraform use it to determine differences between the cloud
-state and current definition stored in your scripts.
+Terraform will now connect to AWS and try to create all resources defined in Terraform scripts. The output of this command is a state file ***terraform.tfstate*** which contains all the information about the environment that we just provisioned. At the time of writing [the state file must be kept for future execution](https://www.terraform.io/docs/state/index.html) (e.g. in your version control system), because Terraform uses it to determine differences between cloud state and the current definition stored in your scripts.
 
 
 ### Change
 
-Sometimes we have to change our environment. It requires just a change in your definition scripts. Terraform based on
-the state of your environment and your new definition is able to prepare new plan and form a new version of your infrastructure.
+Sometimes we have to change our environment. It requires just a change in your definition config. Based on
+the state of your existing environment and your updated configuration, Terraform is able to prepare a new plan and apply changes to your infrastructure.
 
-You can use the ***plan*** and ***apply*** commands in the same way as for a new environment. The outputs for these commands
-will be different. This time Terraform compares the state stored in the state file and plans/applies only changes introduced to the
-definition.
+You can use the ***plan*** and ***apply*** commands in the same way as for a new environment. This time Terraform compares the state stored in the state file generated on the initial run, and plans/applies any newly-introduced changes to the configuration.
 
 ### Destroy
 
-Everything has to come to an end, sometime. When this time will come we can execute this command:
+Everything has to come to an end, sometime. When the time comes we can execute this command:
 
 {% highlight bash %}
 $ terraform destroy
 {% endhighlight %}
 
-Terraform reuse once again our state file and will remove all resources.
+Terraform once again reuses our state file and will remove all resources defined there.
 
 ## What's next?
 
-In this post we only scratch the surface of Terraform. AWS provider is only one of the providers available. Terraform allows
-to combine different providers which give us possibility to provision environments across different cloud providers. It also
-have another basic features. For example outputs give you possibility to generate any files based on any available variables.
-You can use it to generate documentation, config files or just human readable text files.
+In this post we only scratched the surface of Terraform. The AWS provider is one of [many providers available](https://www.terraform.io/docs/providers/index.html). Terraform allows us to combine different providers which give the possibility of provisioning environments across multiple cloud providers.
 
-Now shaping our infrastructure is understandable by both Dev and Ops folks. We can lay foundation
-for our deployments and tools like Puppet, Chef and Docker.
+It also has other basic features. For example [outputs](https://www.terraform.io/docs/configuration/outputs.html) give you the possibility to generate files based on any available variables and resource properties. You can use it to generate documentation, config files or just human readable text files.
 
+Now our infrastructure can be managed in code. We can check it into source control, raise pull requests in GitHub and provide living documentation for our environment topology. We can lay the foundation for our deployments and tools like Puppet, Chef and Docker.
 
-### Sources
-
-- [Example VPC definition](https://github.com/robertfirek/ShapeYourInfrastructure)
-- [Terraform page](https://terraform.io/)
-- [Terraform Configuration file format](https://terraform.io/docs/configuration/)
-- [Terraform AWS Provider](https://terraform.io/docs/providers/aws/index.html)
+All code examples described here can be found [on GitHub](https://github.com/robertfirek/ShapeYourInfrastructure).
