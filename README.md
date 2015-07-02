@@ -10,6 +10,8 @@ Run `bundle install` to install the required Gems. If you are using RVM, you sho
 
 To build the site, run `rake build`. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
 
+Small change [TO BE DELETED]]
+
 ## Serving the Web Site Locally
 
 Running `rake serve` will serve the web site at [http://localhost:4000/][]. Run it in the background so you can test your changes.
