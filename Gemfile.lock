@@ -208,9 +208,13 @@ DEPENDENCIES
   builder
   github-pages
   jekyll-less
+  jekyll-redirect-from
   jekyll-tagging
   rake
   rspec
   test_xml
   therubyracer
   travis
+
+BUNDLED WITH
+   1.10.5

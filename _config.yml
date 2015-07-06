@@ -23,3 +23,6 @@ email: "hello@codurance.com"
 
 googleanalytics:
   account: UA-46289079-1
+
+gems:
+    - jekyll-redirect-from
