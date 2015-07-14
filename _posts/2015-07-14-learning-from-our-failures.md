@@ -7,7 +7,7 @@ author: Franziska Sauerwein
 image:
     src: /assets/img/custom/blog/failure.jpg
     attribution:
-        text: 'Ahhhhhhh' CC-BY Kenny Louie
+        text: Ahhhhhhh CC-BY Kenny Louie
         href: https://flic.kr/p/88qwuz
 tags:
 - failure
@@ -16,8 +16,6 @@ tags:
 - travis
 - company culture
 ---
-
-Learning from our failures
 
 On my second day at Codurance, I managed to delete the repository with [Codurance's Github Pages](http://codurance.com/) on it. This made the website unavailable for the first time in a long time, and during best business hours.
 I passed by all the checks Github does to make sure you know what your doing, thinking I was about to delete the fork I accidentally created. When I saw afterwards that the fork was still there, I immediately realized what I had done.
