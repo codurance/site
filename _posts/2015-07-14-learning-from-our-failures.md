@@ -18,7 +18,7 @@ tags:
 ---
 
 On my second day at Codurance, I managed to delete the repository with [Codurance's Github Pages](http://codurance.com/) on it. This made the website unavailable for the first time in a long time, and during best business hours.
-I passed by all the checks Github does to make sure you know what your doing, thinking I was about to delete the fork I accidentally created. When I saw afterwards that the fork was still there, I immediately realized what I had done.
+I passed by all the checks Github does to make sure you know what you're doing, thinking I was about to delete the fork I accidentally created. When I saw afterwards that the fork was still there, I immediately realized what I had done.
 
 Now it was time to make a decision: Should I to fix the problem by myself and hope no one noticed it, or confess what I did and get help solving it?
 Fortunately, I chose the latter. Mortified, I told the founders what I had done.
