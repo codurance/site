@@ -1,10 +1,15 @@
---- layout: post name: mentoring-in-software-craftsmanship title:
-Mentorship in Software Craftsmanship - part 1 time: 2011-10-05
-00:45:00.000000000 +01:00 ---
-**How's mentorship seen in Software Craftsmanship?**
-\
-**First, a little bit of background and metaphor** 
-\
+---
+author: Sandro Mancuso
+layout: post
+name: mentoring-in-software-craftsmanship
+title: "Mentorship in Software Craftsmanship"
+date: 2011-10-05 00:45:00 +01:00
+---
+
+###How's mentorship seen in Software Craftsmanship?
+
+###First, a little bit of background and metaphor
+
 In the medieval times, apprentices would work in workshops an would be
 mentored by senior craftsmen (journeymen) or by the master craftsman
 himself. The apprentice had the responsibility to learn, observing the
@@ -12,7 +17,7 @@ master's and everyone else's work, questioning everything and practising
 as much as he could. This was different from the teacher/student
 relationship where the teacher had the responsibility to teach. Here it
 was the apprentice that had to push his own development.
-\
+
 The apprentice, mentored by the master, would learn and refine his
 skills on a daily basis. Over time, the master would reach his limit as
 in what he could teach the apprentice and the knowledge and skills gap
@@ -22,17 +27,16 @@ work on his own and would deliver it with the same quality that the he
 would deliver himself. The master, at this point, would be putting his
 own reputation on the line since he was the one that trained the
 apprentice and was now vouching for his ability. 
-\
+
 This would be the graduation point. Now the apprentice was ready to
 start his own journey, as a journeyman. As a journeyman, he would then
 go from town to town, work for and learn from different masters up to a
 point that he would be recognised by all of these masters and other
 craftsmen as a master himself. He would then be ready to have his own
 shop and start mentoring other journeymen and apprentices.
-**\
-**
-**Back to the present**
-\
+
+###Back to the present
+
 From now on, instead of master/apprentice, I'll be using mentor/mentee.
 The main reason is that you don't need to be a master craftsman to
 mentor someone. You also don't need to be an apprentice to have a
@@ -40,9 +44,9 @@ mentor. Besides that, each developer has different areas of expertise.
 They can be very senior in certain areas and completely ignorant in
 other areas. As we all know, software development is not as limited as a
 blacksmith's workshop in the medieval times. 
-\
-**The role of the mentor**
-\
+
+###The role of the mentor
+
 Deciding to mentor someone is a big responsibility. The role of a mentor
 is more than just be available on the phone and answer a few questions
 here and there. Although this can be very helpful, the role of a mentor
@@ -59,9 +63,9 @@ giving some guidance, advices, opening doors or showing the doors he has
 already opened himself, introducing the mentee to his own professional
 circle and whatever else the mentor judges that can be important for the
 mentees.    
-\
-**The role of the mentee**
-\
+
+###The role of the mentee
+
 The mentee is expected to do whatever he or she can to learn from the
 mentor. The mentee must be open-minded, be able to take criticism on
 board, be able to listen and also be very proactive in terms of
@@ -73,9 +77,9 @@ improvement. Besides the direct benefits to the mentee, this is also the
 best way to keep mentors excited to be helping. Mentees must show
 passion and a clear desire to learn otherwise mentors will probably
 loose interest and find it a waste of time.  
-\
-**Gains and sacrifices**
-\
+
+###Gains and sacrifices
+
 Mentors have the opportunity to perpetuate their knowledge since they
 need to organise their ideas to teach someone. Mentors will also need to
 be studying and practising hard to keep feeding his mentee, what
@@ -88,7 +92,7 @@ Mentors are expected to dedicate time to their mentees. If mentor and
 mentee work together in a daily basis, they won't need much time outside
 work. However, if they don't, mentors need to be clear they will need to
 find and reserve time for their mentees, ideally in a regular basis.
-\
+
 Mentees have the opportunity to speed up their development as
 professional software developers. They benefit from the mentor's
 experience acquired over the years, shortening the time they would take
@@ -104,9 +108,9 @@ never be called a sacrifice from the mentees perspective. When someone
 is getting a lot of knowledge and help for free, possibly saving years
 of their careers, complaining about time (or lack of it) would be very
 short-sighted, to say the least. 
-\
-**Mutual Respect**
-\
+
+###Mutual Respect
+
 Both mentors and mentees should respect each other. In order to have a
 healthy and prosperous relationship, there must be a commitment from
 both parts. This commitment is the mutual respect. The mentor shows
@@ -115,19 +119,14 @@ commitment. The mentee shows respect with his commitment to excel and
 demonstration of progress. That's the minimum a mentee could do for
 someone that is sacrificing time with family and friends in order to
 help him. 
-\
-\
+
+
 *In following posts I'll be exploring things like different types of
 mentorship, activities that could be performed by mentors and mentees,
 criteria for choosing a mentor and a mentee, public recognition,
 professional reputation, graduation, mentorship duration, how this could
-change our industry and a few other points. Watch this space.*\
-*\
-*\
-*[Part 2: Choosing a mentor and a mentee and also common mentorship
-misconceptions ](http://craftedsw.blogspot.com/2011/10/mentoring-in-software-craftsmanship_09.html)*\
-*[Part 3: What mentors and mentees should do, how long it should last,
-how does it end public recognition and
-reputation](http://craftedsw.blogspot.com/2011/10/mentorship-in-software-craftsmanship.html)*
-\
-\
+change our industry and a few other points. Watch this space.*
+
+*[Part 2: Choosing a mentor and a mentee and also common mentorship misconceptions](/2011/10/10/mentoring-in-software-craftsmanship_09/)*
+
+*[Part 3: What mentors and mentees should do, how long it should last, how does it end public recognition and reputation](/2011/10/28/mentorship-in-software-craftsmanship/)*
