@@ -6,7 +6,7 @@ date: 2012-12-18 14:02:00 +00:00
 author: Sandro Mancuso
 ---
 
-In this screencast I take a small piece of legacy Java code that
+In [this screencast](https://www.youtube.com/watch?v=_NnElPO5BU0) I take a small piece of legacy Java code that
 contains the most common problems found in much larger legacy code
 bases. The objective is to first write tests to understand what the code
 does and then refactor it to make it better. The code contains

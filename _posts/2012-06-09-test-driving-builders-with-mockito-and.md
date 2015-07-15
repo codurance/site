@@ -35,8 +35,86 @@ In the real life, I would be writing on test at a time, making them pass
 and refactor. For this post, I’ll just give you the full classes for
 clarity’s sake. First let’s write the tests:
 
+```
+package org.craftedsw.testingbuilders;
+
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
+public class TradeTest {
+
+	private static final String INBOUND_XML_MESSAGE = "<message />";
+	private static final boolean REPORTABILITY_RESULT = true;
+	private Trade trade;
+
+	@Mock private ReportabilityDecision reportabilityDecision;
+
+	@Before
+	public void initialise() {
+		trade = new Trade();
+		when(reportabilityDecision.isReportable(anyString()))
+				.thenReturn(REPORTABILITY_RESULT);
+	}
+
+	@Test public void
+	should_contain_the_inbound_xml_message() {
+		trade.setInboundMessage(INBOUND_XML_MESSAGE);
+
+		assertThat(trade.getInboundMessage(), is(INBOUND_XML_MESSAGE));
+	}
+
+	@Test public void
+	should_tell_if_it_is_reportable() {
+		trade.setInboundMessage(INBOUND_XML_MESSAGE);
+		trade.setReportabilityDecision(reportabilityDecision);
+
+		boolean reportable = trade.isReportable();
+
+		verify(reportabilityDecision).isReportable(INBOUND_XML_MESSAGE);
+		assertThat(reportable, is(REPORTABILITY_RESULT));
+	}
+
+}
+```
 
 Now the implementation:
+
+```
+package org.craftedsw.testingbuilders;
+
+public class Trade {
+
+	private String inboundMessage;
+	private ReportabilityDecision reportabilityDecision;
+
+	public String getInboundMessage() {
+		return this.inboundMessage;
+	}
+
+	public void setInboundMessage(String inboundXmlMessage) {
+		this.inboundMessage = inboundXmlMessage;
+	}
+
+	public boolean isReportable() {
+		return reportabilityDecision.isReportable(inboundMessage);
+	}
+
+	public void setReportabilityDecision(ReportabilityDecision reportabilityDecision) {
+		this.reportabilityDecision = reportabilityDecision;
+	}
+
+}
+```
 
 This case is interesting since the Trade object has one property called
 inboundMessage with respective getters and setters and also uses a
@@ -70,6 +148,51 @@ In this case, we want to test drive our builder. 
 Here is an example that I normally find when developers are test-driving
 a builder implementation.
 
+```
+package org.craftedsw.testingbuilders;
+
+import static org.craftedsw.testingbuilders.TradeBuilder.aTrade;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
+public class TradeBuilderTest {
+
+	private static final String TRADE_XML_MESSAGE = "<message />";
+
+	@Mock
+	private ReportabilityDecision reportabilityDecision;
+
+	@Test public void
+	should_create_a_trade_with_inbound_message() {
+		Trade trade = aTrade()
+				    .withInboundMessage(TRADE_XML_MESSAGE)
+				    .build();
+
+		assertThat(trade.getInboundMessage(), is(TRADE_XML_MESSAGE));
+	}
+
+	@Test public void
+	should_create_a_trade_with_a_reportability_decision() {
+		Trade trade = aTrade()
+				    .withInboundMessage(TRADE_XML_MESSAGE)
+				    .withReportabilityDecision(reportabilityDecision)
+				    .build();
+
+		trade.isReportable();
+
+		verify(reportabilityDecision).isReportable(TRADE_XML_MESSAGE);
+	}
+
+}
+```
+
 Now let’s have a look at these tests.  
 The good news is, the tests were written in the way developers want to
 read them. That also means that they were “designing” the TradeBuilder
@@ -92,6 +215,45 @@ After many refactorings and exploring different ideas, while
 pair-programming with one of the guys in my team we came up with this
 approach:
 
+```
+package org.craftedsw.testingbuilders;
+
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Spy;
+import org.mockito.runners.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
+public class TradeBuilderTest {
+
+	private static final String TRADE_XML_MESSAGE = "<message />";
+
+	@Mock private ReportabilityDecision reportabilityDecision;
+	@Mock private Trade trade;
+
+	@Spy @InjectMocks TradeBuilder tradeBuilder;
+
+	@Test public void
+	should_create_a_trade_with_all_specified_attributes() {
+		given(tradeBuilder.createTrade()).willReturn(trade);
+
+		tradeBuilder
+			.withInboundMessage(TRADE_XML_MESSAGE)
+			.withReportabilityDecision(reportabilityDecision)
+			.build();
+
+		verify(trade).setInboundMessage(TRADE_XML_MESSAGE);
+		verify(trade).setReportabilityDecision(reportabilityDecision);
+	}
+
+}
+```
+
 So now, the TradeBuilderTest express what is expected from the
 TradeBuilder, that means, the side effect when the build method is
 called. We want it to create a Trade and set its attributes. There are
@@ -99,6 +261,42 @@ no duplications with the TradeTest. It is left to the TradeTest to
 guarantee the correct behavior of the Trade object.
 
 For completion’s sake, here is the final TradeBuider class:
+
+```
+package org.craftedsw.testingbuilders;
+
+public class TradeBuilder {
+
+	private String inboundMessage;
+	private ReportabilityDecision reportabilityDecision;
+
+	public static TradeBuilder aTrade() {
+		return new TradeBuilder();
+	}
+
+	public TradeBuilder withInboundMessage(String inboundMessage) {
+		this.inboundMessage = inboundMessage;
+		return this;
+	}
+
+	public TradeBuilder withReportabilityDecision(ReportabilityDecision reportabilityDecision) {
+		this.reportabilityDecision = reportabilityDecision;
+		return this;
+	}
+
+	public Trade build() {
+		Trade trade = createTrade();
+		trade.setInboundMessage(inboundMessage);
+		trade.setReportabilityDecision(reportabilityDecision);
+		return trade;
+	}
+
+	Trade createTrade() {
+		return new Trade();
+	}
+
+}
+```
 
 The combination of [Mockito](http://code.google.com/p/mockito/) and
 [Hamcrest](http://code.google.com/p/hamcrest/) is extremely powerful,

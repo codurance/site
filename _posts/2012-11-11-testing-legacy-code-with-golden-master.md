@@ -47,6 +47,83 @@ An easy way to do Golden Master testing in Java (also available to C\#
 and Ruby) is to use [Approval Tests](http://approvaltests.sourceforge.net/). It does all the file
 handling for you, storing and comparing it. Here is an example:
 
+```
+package org.craftedsw.gildedrose;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import org.approvaltests.Approvals;
+import org.junit.Before;
+import org.junit.Test;
+
+public class GildedRoseTest {
+
+	private static final int FIXED_SEED = 100;
+	private static final int NUMBER_OF_RANDOM_ITEMS = 2000;
+	private static final int MINIMUM = -50;
+	private static final int MAXIMUN = 101;
+
+	private String[] itemNames = {"+5 Dexterity Vest",
+				      "Aged Brie",
+				      "Elixir of the Mongoose",
+				      "Sulfuras, Hand of Ragnaros",
+				      "Backstage passes to a TAFKAL80ETC concert",
+				      "Conjured Mana Cake"};
+
+	private Random random = new Random(FIXED_SEED);
+	private GildedRose gildedRose;
+
+	@Before
+	public void initialise() {
+		gildedRose = new GildedRose();
+	}
+
+	@Test public void
+	should_generate_update_quality_output() throws Exception {
+		List<Item> items = generateRandomItems(NUMBER_OF_RANDOM_ITEMS);
+
+		gildedRose.updateQuality(items);
+
+		Approvals.verify(getStringRepresentationFor(items));
+	}
+
+	private List<Item> generateRandomItems(int totalNumberOfRandomItems) {
+		List<Item> items = new ArrayList<Item>();
+		for (int cnt = 0; cnt < totalNumberOfRandomItems; cnt++) {
+			items.add(new Item(itemName(), sellIn(), quality()));
+		}
+		return items;
+	}
+
+	private String itemName() {
+		return itemNames[0 + random.nextInt(itemNames.length)];
+	}
+
+	private int sellIn() {
+		return randomNumberBetween(MINIMUM, MAXIMUN);
+	}
+
+	private int quality() {
+		return randomNumberBetween(MINIMUM, MAXIMUN);
+	}
+
+	private int randomNumberBetween(int minimum, int maximum) {
+		return minimum + random.nextInt(maximum);
+	}
+
+	private String getStringRepresentationFor(List<Item> items) {
+		StringBuilder builder = new StringBuilder();
+		for (Item item : items) {
+			builder.append(item).append("\r");
+		}
+		return builder.toString();
+	}
+
+}
+```
+
 For those not familiar with the kata, after passing a list of items to
 the GildedRose class, it will iterate through them and according to many
 different rules, it will change their "sellIn" and "quality"
@@ -54,6 +131,29 @@ attributes.
 
 I've made a small change in the Item class, adding a automatically
 generated toString() method to it:
+
+```
+public class Item {
+	private String name;
+	private int sellIn;
+	private int quality;
+
+	public Item(String name, int sellIn, int quality) {
+		this.setName(name);
+		this.setSellIn(sellIn);
+		this.setQuality(quality);
+	}
+
+        // all getters and setters here
+
+	@Override
+	public String toString() {
+		return "Item [name=" + name +
+                              ", sellIn=" + sellIn +
+                              ", quality=" + quality + "]";
+	}
+}
+```
 
 The first time the test method is executed, the line:
 
@@ -91,6 +191,7 @@ Item [name=+5 Dexterity Vest, sellIn=31, quality=5]
 
 Now you are ready to rip the GildedRose horrible code apart. Just make
 sure you run the tests every time you make a change. :)
+
 
 ###Infinitest
 
