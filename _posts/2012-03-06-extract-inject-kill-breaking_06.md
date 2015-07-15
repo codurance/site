@@ -15,10 +15,117 @@ before reading this post.*
 Here is a more concrete example in how to break deep hierarchies using
 the Extract, Inject, Kill approach. Imagine the following hierarchy.
 
+```
+public abstract class PrincingService {
+
+    public double calculatePrice(ShoppingBasket shoppingBasket, User user, String voucher) {
+        double discount = calculateDiscount(user);
+        double total = 0;
+        for (ShoppingBasket.Item item : shoppingBasket.items()) {
+            total += calculateProductPrice(item.getProduct(), item.getQuantity());
+        }
+        total = applyAdditionalDiscounts(total, user, voucher);
+        return total * ((100 - discount) / 100);
+    }
+
+    protected abstract double calculateDiscount(User user);
+
+    protected abstract double calculateProductPrice(Product product, int quantity);
+
+    protected abstract double applyAdditionalDiscounts(double total, User user, String voucher);
+
+}
+
+public abstract class UserDiscountPricingService extends PrincingService {
+
+    @Override
+    protected double calculateDiscount(User user) {
+        int discount = 0;
+        if (user.isPrime()) {
+            discount = 10;
+        }
+        return discount;
+    }
+}
+
+public abstract class VoucherPrincingService extends UserDiscountPricingService {
+
+    private VoucherService voucherService;
+
+    @Override
+    protected double applyAdditionalDiscounts(double total, User user, String voucher) {
+        double voucherValue = voucherService.getVoucherValue(voucher);
+        double totalAfterValue = total - voucherValue;
+        return (totalAfterValue > 0) ? totalAfterValue : 0;
+    }
+
+    public void setVoucherService(VoucherService voucherService) {
+        this.voucherService = voucherService;
+    }
+}
+
+public class BoxingDayPricingService extends VoucherPrincingService {
+    public static final double BOXING_DAY_DISCOUNT = 0.60;
+
+    @Override
+    protected double calculateProductPrice(Product product, int quantity) {
+        return ((product.getPrice() * quantity) * BOXING_DAY_DISCOUNT);
+    }
+}
+
+public class StandardPricingService extends VoucherPrincingService {
+
+    @Override
+    protected double calculateProductPrice(Product product, int quantity) {
+        return product.getPrice() * quantity;
+    }
+}
+```
 
 ![Hierarchies](/assets/img/custom/blog/hierarchies.png)
 Let's start with the StandardPricingService. First, let's write some
 tests:
+
+```
+public class StandardPricingServiceTest {
+
+    private TestableStandardPricingService standardPricingService = new TestableStandardPricingService();
+
+    @Test public void
+    should_return_product_price_when_quantity_is_one() {
+        Product book = aProduct().costing(10).build();
+
+        double price = standardPricingService.calculateProductPrice(book, 1);
+
+        assertThat(price, is(10D));
+    }
+
+    @Test public void
+    should_return_product_price_multiplied_by_quantity() {
+        Product book = aProduct().costing(10).build();
+
+        double price = standardPricingService.calculateProductPrice(book, 3);
+
+        assertThat(price, is(30D));
+    }
+
+    @Test public void
+    should_return_zero_when_quantity_is_zero() {
+        Product book = aProduct().costing(10).build();
+
+        double price = standardPricingService.calculateProductPrice(book, 0);
+
+        assertThat(price, is(0D));
+    }
+
+    private class TestableStandardPricingService extends StandardPricingService {
+        @Override
+        protected double calculateProductPrice(Product product, int quantity) {
+            return super.calculateProductPrice(product, quantity);
+        }
+    }
+}
+```
 
 Note that I used  a small trick here, extending the
 StandardPricingService class inside the test class so I could have
@@ -35,22 +142,159 @@ another class called StandardPriceCalculation. This can be done
 automatically using IntelliJ or Eclipse. After a few minor adjusts,
 that's what we've got.
 
+```
+public class StandardPriceCalculation {
+
+    public double calculateProductPrice(Product product, int quantity) {
+        return product.getPrice() * quantity;
+    }
+}
+```
+
 And the StandardPriceService now looks like this:
+
+```
+public class StandardPricingService extends VoucherPrincingService {
+
+    private final StandardPriceCalculation standardPriceCalculation = new StandardPriceCalculation();
+
+    @Override
+    protected double calculateProductPrice(Product product, int quantity) {
+        return standardPriceCalculation.calculateProductPrice(product, quantity);
+    }
+}
+```
 
 All your tests should still pass.
 
 As we create a new class, let's add some tests to it. They should be the
 same tests we had for the StandardPricingService.
 
+```
+public class StandardPriceCalculationTest {
+
+    private StandardPriceCalculation priceCalculation = new StandardPriceCalculation();
+
+    @Test public void
+    should_return_product_price_when_quantity_is_one() {
+        Product book = aProduct().costing(10).build();
+
+        double price = priceCalculation.calculateProductPrice(book, 1);
+
+        assertThat(price, is(10D));
+    }
+
+    @Test public void
+    should_return_product_price_multiplied_by_quantity() {
+        Product book = aProduct().costing(10).build();
+
+        double price = priceCalculation.calculateProductPrice(book, 3);
+
+        assertThat(price, is(30D));
+    }
+
+    @Test public void
+    should_return_zero_when_quantity_is_zero() {
+        Product book = aProduct().costing(10).build();
+
+        double price = priceCalculation.calculateProductPrice(book, 0);
+
+        assertThat(price, is(0D));
+    }
+
+}
+```
+
 Great, one sibling done. Now let's do the same thing for the
 BoxingDayPricingService.
+
+```
+public class BoxingDayPricingServiceTest {
+
+    private TestableBoxingDayPricingService boxingDayPricingService = new TestableBoxingDayPricingService();
+
+    @Test public void
+    should_apply_boxing_day_discount_on_product_price() {
+        Product book = aProduct().costing(10).build();
+
+        double price = boxingDayPricingService.calculateProductPrice(book, 1);
+
+        assertThat(price, is(6D));
+    }
+
+    @Test public void
+    should_apply_boxing_day_discount_on_product_price_and_multiply_by_quantity() {
+        Product book = aProduct().costing(10).build();
+
+        double price = boxingDayPricingService.calculateProductPrice(book, 3);
+
+        assertThat(price, is(18D));
+    }
+
+    private class TestableBoxingDayPricingService extends BoxingDayPricingService {
+
+        @Override
+        protected double calculateProductPrice(Product product, int quantity) {
+            return super.calculateProductPrice(product, quantity);
+        }
+
+    }
+}
+```
 
 Now let's extract the behaviour into another class. Let's call it
 BoxingDayPricingCalculation.
 
+```
+public class BoxingDayPriceCalculation {
+    public static final double BOXING_DAY_DISCOUNT = 0.60;
+
+    public double calculateProductPrice(Product product, int quantity) {
+        return ((product.getPrice() * quantity) * BOXING_DAY_DISCOUNT);
+    }
+}
+```
+
 The new BoxingDayPriceService is now
 
+```
+public class BoxingDayPricingService extends VoucherPrincingService {
+    private final BoxingDayPriceCalculation boxingDayPriceCalculation = new BoxingDayPriceCalculation();
+
+    @Override
+    protected double calculateProductPrice(Product product, int quantity) {
+        return boxingDayPriceCalculation.calculateProductPrice(product, quantity);
+    }
+}
+```
+
 We now need to add the tests for the new class.
+
+```
+public class BoxingDayPriceCalculationTest {
+
+    private BoxingDayPriceCalculation priceCalculation = new BoxingDayPriceCalculation();
+
+    @Test public void
+    should_apply_boxing_day_discount_on_product_price() {
+        Product book = aProduct().costing(10).build();
+
+        double price = priceCalculation.calculateProductPrice(book, 1);
+
+        assertThat(price, is(6D));
+    }
+
+    @Test public void
+    should_apply_boxing_day_discount_on_product_price_and_multiply_by_quantity() {
+        Product book = aProduct().costing(10).build();
+
+        double price = priceCalculation.calculateProductPrice(book, 3);
+
+        assertThat(price, is(18D));
+    }
+
+}
+```
 
 Now both StandardPricingService and BoxingDayPricingService have no
 implementation of their own. The only thing they do is to delegate the
@@ -59,6 +303,16 @@ BoxingDayPriceCalculation respective. Both price calculation classes
 have the same public method, so now let's extract a PriceCalculation
 interface and make them both implement it.
 
+```
+public interface PriceCalculation {
+    double calculateProductPrice(Product product, int quantity);
+}
+
+public class BoxingDayPriceCalculation implements PriceCalculation
+
+public class StandardPriceCalculation implements PriceCalculation
+```
+
 Awesome. We are now ready for the Inject part of Extract, Inject, Kill
 approach. We just need to **inject** the desired behaviour into the
 parent (class that defines the template method). The
@@ -66,6 +320,31 @@ calculateProductPrice() is defined in the PricingService, the class at
 the very top at the hierarchy. That's where we want to inject the
 PriceCalculation implementation. Here is the new version:
 
+```
+public abstract class PricingService {
+
+    private PriceCalculation priceCalculation;
+
+    public double calculatePrice(ShoppingBasket shoppingBasket, User user, String voucher) {
+        double discount = calculateDiscount(user);
+        double total = 0;
+        for (ShoppingBasket.Item item : shoppingBasket.items()) {
+            total += priceCalculation.calculateProductPrice(item.getProduct(), item.getQuantity());
+        }
+        total = applyAdditionalDiscounts(total, user, voucher);
+        return total * ((100 - discount) / 100);
+    }
+
+    protected abstract double calculateDiscount(User user);
+
+    protected abstract double applyAdditionalDiscounts(double total, User user, String voucher);
+
+    public void setPriceCalculation(PriceCalculation priceCalculation) {
+        this.priceCalculation = priceCalculation;
+    }
+
+}
+```
 
 Note that the template method calculateProductPrice() was removed from
 the PricingService, since its behaviour is now being injected instead of

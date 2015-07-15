@@ -103,8 +103,8 @@ Run the following commands:
 4.  sudo make install
 {% endhighlight %}
 
-**IMPORTANT**: When running 'cmake ..', you may get a few errors. Even
-then, try to run 'sudo make install'. Some libraries may fail to compile
+**IMPORTANT**: When running ```cmake ..```, you may get a few errors. Even
+then, try to run ```sudo make install```. Some libraries may fail to compile
 because they are OS specific.
 
 For mode information please check:
@@ -119,14 +119,13 @@ Now we just need to update ld.so.conf so Io can be accessed from
 anywhere in your computer.
 
 
-1.  From the terminal, type the following command: sudo gedit
-    /etc/ld.so.conf
-2.  Add the following line to the file: include /usr/local/lib
+1.  From the terminal, type the following command: ```sudo gedit /etc/ld.so.conf```
+2.  Add the following line to the file: ```include /usr/local/lib```
 3.  Save and close the file
-4.  From the terminal run the following command: sudo ldconfig
+4.  From the terminal run the following command: ```sudo ldconfig```
 
 ###Running Io
 
 That's it. Hopefully now you will be able to open a terminal window and
-type: io
-You should see the Io runtime environment: Io\> \_
+type: ```io```
+You should see the Io runtime environment: ```Io> _```

@@ -6,10 +6,44 @@ title: "Testing legacy: Hard-wired dependencies (part 2)"
 date: 2011-07-18 02:12:00 +01:00
 ---
 
-In [part one](/2011/07/17/testing-legacy-hard-wired-dependencies/),
+In [part one](/2011/07/16/testing-legacy-hard-wired-dependencies/),
 I showed how to unit test a method that uses a Singleton and makes
 static calls. So now, let's have a look at common code problems we find
 in legacy code, using the same example:
+
+```
+public class TripService {
+
+	public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
+		List<Trip> tripList = new ArrayList<Trip>();
+		User loggedUser = loggedUser();
+		boolean isFriend = false;
+		if (loggedUser != null) {
+			for (User friend : user.getFriends()) {
+				if (friend.equals(loggedUser)) {
+					isFriend = true;
+					break;
+				}
+			}
+			if (isFriend) {
+				tripList = findTripsByUser(user);
+			}
+			return tripList;
+		} else {
+			throw new UserNotLoggedInException();
+		}
+	}
+
+	protected List<Trip> findTripsByUser(User user) {
+	    return TripDAO.findTripsByUser(user);
+	}
+
+	protected User loggedUser() {
+	    return UserSession.getInstance().getLoggedUser();
+	}
+
+}
+```
 
 How many problems can you see? Take your time before reading the ones I
 found.. :-)
@@ -24,6 +58,29 @@ be created when the logged user is null, since an exception is thrown
 and nothing else happens. I've decided to invert the outer if and
 extract the [guard clause](http://c2.com/cgi/wiki?GuardClause). 
 
+```
+public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
+	User loggedUser = loggedUser();
+	validate(loggedUser);
+	List<Trip> tripList = new ArrayList<Trip>();
+	boolean isFriend = false;
+	for (User friend : user.getFriends()) {
+		if (friend.equals(loggedUser)) {
+			isFriend = true;
+			break;
+		}
+	}
+	if (isFriend) {
+		tripList = findTripsByUser(user);
+	}
+	return tripList;
+}
+
+private void validate(User loggedUser) throws UserNotLoggedInException {
+	if (loggedUser == null) throw new UserNotLoggedInException();
+}
+```
+
 ###Feature Envy
 
 When a class gets data from another class in order to do some
@@ -36,11 +93,33 @@ So, looking at the code above, clearly the whole thing about determining
 if an user is friends with another doesn't belong to the TripService
 class. Let's move it to the User class. First the unit test:
 
+```
+@Test public void
+shouldReturnTrueWhenUsersAreFriends() throws Exception {
+	User John = new User();
+	User Bob = new User();
+
+	John.addFriend(Bob);
+
+	assertTrue(John.isFriendsWith(Bob));
+}
+```
+
 Now, let's move the code to the User class. Here we can use the Java
 collections API a bit better and remove the whole for loop and the
 isFriend flag all together.
 
 After a few refactoring steps, here is the new code in the TripService
+
+```
+public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
+	User loggedUser = loggedUser();
+	validate(loggedUser);
+	return (user.isFriendsWith(loggedUser))
+				? findTripsByUser(user)
+				: new ArrayList<Trip>();
+}
+```
 
 Right. This is already much better but it is still not good enough.
 
@@ -79,6 +158,26 @@ interface. We need to change that as well.
 
 So here is the final code:
 
+```
+public class TripService {
+
+	public List<Trip> getFriendTrips(User loggedUser, User friend) throws UserNotLoggedInException {
+		validate(loggedUser);
+		return (friend.isFriendsWith(loggedUser))
+					? findTripsForFriend(friend)
+					: new ArrayList<Trip>();
+	}
+
+	private void validate(User loggedUser) throws UserNotLoggedInException {
+		if (loggedUser == null) throw new UserNotLoggedInException();
+	}
+
+	protected List<Trip> findTripsForFriend(User friend) {
+		return TripDAO.findTripsByUser(friend);
+	}
+}
+```
+
 Better, isn't it? We still have the issue with the other protected
 method, with the TripDAO static call, etc. But I'll leave this last bit
 for another post on how to remove dependencies on static methods. I'll
@@ -108,7 +207,7 @@ We should treat our code base as if it was a [big garden](http://craftedsw.blogs
 If we want it to be pleasant and maintainable, we need to be constantly
 looking after it.
 
-If you haven't read it yet, check the [part one](/2011/07/17/testing-legacy-hard-wired-dependencies/)
+If you haven't read it yet, check the [part one](/2011/07/16/testing-legacy-hard-wired-dependencies/)
 of this post. If you want to give this code a go or find more details
 about the implementation, check:
 [https://github.com/sandromancuso/testing\_legacy\_code](https://github.com/sandromancuso/testing_legacy_code)
