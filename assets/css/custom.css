@@ -78,42 +78,40 @@ body {
 	text-shadow: none;
 }
 
-@media (max-width: 568px){
+@media screen and (min-width: 800px) {
+	.btn-hiring{
+		top: 60%;
+		left: 35%;
+		width: 32%;
+	}
+}
+
+@media (max-width: 600px){
 	.btn-hiring {
-	  padding: 9px 20px;
-	  font-size: 25px;
 	  top: 45%;
+	  left: 25%;
+	  width: 52%;
+	}
+}
+
+@media (max-width: 320px){
+	.btn-hiring {
+		top: 45%;
 	  left: 20%;
-	  width: 60%;
-	  height: 9%;
-	  border-width: 0px;
-	  opacity: 1;
-	  transform: rotate(0deg) scale(1, 1);
-	  margin-left: 0px;
-	  margin-top: -225px;
-	  display: block;
-	  visibility: visible;
-	  text-shadow: none;
-	  font-size: 16px;
+	  width: 72%;
+		font-size: 20px;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.btn-hiring{
-		padding: 9px 20px;
-		font-size: 25px;
-		top: 100%;
+		top: 50%;
 		left: 35%;
 		width: 32%;
-		height: auto;
-		border-width: 0px;
-		opacity: 1;
-		transform: rotate(0deg) scale(1, 1);
-		margin-left: 0px;
-		margin-top: -225px;
-		display: block;
-		visibility: visible;
-		text-shadow: none;
+	}
+
+	.feature-panel h1{
+		line-height:60px;
 	}
 }
 
