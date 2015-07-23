@@ -24,21 +24,21 @@ CQRS and Event Sourcing address those concerns with an architectural style that,
 
 CQRS is based in Bertrand Meyer's CQS (Command-Query Separation) concept. CQS states that every method should either be a command that performs an action or a query that retrieves a result. The concerns shouldn't be mixed. From a functional point of view that means that query methods shouldn't have any side effects that is, they're referentially transparent so we can use them in any part of our system without any contextual knowledge. This approach assists in creating software that is modular and easy to reason about it.
 
-CQRS brings that concept to an architectural level. We shouldn't be creating services with command and query concerns mixed. This approach is orthogonal, creating different services around bounded contexts. Additionally, any 'microservices' should be split in write and read components too. I'm going to provide an example to make it easy to understand.
+CQRS brings that concept to an architectural level. We shouldn't be creating services with command and query concerns mixed. This architectual approach is not exclusive with DDD or Microservices, we might create different services around bounded contexts. Additionally, any 'microservices' should be split in write and read components too. I'm going to provide an example to make it easy to understand.
 
 ## Challenges of non-CQRS architectures
 
 Let's imagine that we're modeling a really small slice of Twitter. A user can tweet, favourite a tweet and read a timeline. In a non-CQRS design we could model the systems around nouns and CRUD (Create, Read, Update & Delete) verbs. Those verbs/actions could be represented as REST (Representational State Transfer) interfaces and normalised tables in a relational database. This kind of structural model offers some problems:
 
-> * Write and read concerns are mixed, so the code is harder to reason about. We use ORM (Object Relational Mapping) tools like [Hibernate](http://hibernate.org/) for read and write entities that when mixed can be difficult to maintain and understand.
+> * Write and read concerns are mixed, so the code is harder to reason about. The same applies to POJOs that uses ORMs like [Hibernate](http://hibernate.org/).
 
 > * Managing change is difficult. It's arrogant or naive to think that we created our model right the first time, so we need an architecture that is easy to change.
 
-> * Certain queries to that system could require joining different tables which may prove problematic at a larger scale. Normalised models are suitable for optimising writing scenarios; you just need to write in a single table without having to worry about propagating changes between different denormalised views. They also save storage space for obvious reasons. Nowadays memory is cheap and to be honest, most of the apps that I've worked in the past read more than write.
+> * It's not possible to optimise write and read queries if you share your data model and technology. Certain queries to that system could require joining different tables which may prove problematic at a larger scale. Normalised models are suitable for optimising writing scenarios; you just need to write in a single table without having to worry about propagating changes between different denormalised views. They also save storage space for obvious reasons. Nowadays memory is cheap and to be honest, most of the apps that I've worked in the past read more than write.
 
 ## Benefits of getting into an event world
 
-Behavioural modeling is a CQRS alternative to meeting these challenges. Alberto Brandolini created a technique called Event Storming that allows you to model your system in a CQRS fashion. This approach tries to model your system as humans would, or as the business would see it: a flow of commands and events. A command in our example would be *Create a Tweet* and the event, always in past tense, would be *Created Tweet*. A command can generate different events and per event we can have different consumers of it. That means that we have flexibility to change our read side, like *Read a Timeline*, in the future.
+CQRS enables you to go for another architectural style called Event Sourcing. In that approach your event store becomes the single source of truth. Alberto Brandolini created a technique called Event Storming that allows you to model your system around events. This approach tries to model your system as humans would, or as the business would see it: a flow of commands and events. A command in our example would be *Create a Tweet* and the event, always in past tense, would be *Created Tweet*. A command can generate different events and per event we can have different consumers of it. That means that we have flexibility to change our read side, like *Read a Timeline*, in the future.
 
 <img class="img-responsive blog-post-image" src="/assets/img/custom/blog/cqrs.jpg" />
 
