@@ -73,7 +73,6 @@ body {
 	transform: rotate(0deg) scale(1, 1);
 	margin-left: 0px;
 	margin-top: -225px;
-	margin: 0\9;
 	display: block;
 	visibility: visible;
 	text-shadow: none;
@@ -119,6 +118,15 @@ body {
 		line-height:60px;
 	}
 }
+
+@media screen and (min-width:0\0) {
+    margin:0;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    margin:0;
+}
+
 
 body:last-child .btn-u, x:-moz-any-link {
 	margin: 0;
