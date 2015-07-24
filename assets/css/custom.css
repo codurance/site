@@ -118,11 +118,12 @@ body {
 body:last-child .btn-hiring, x:-moz-any-link {
 	margin: 0;
 }
-<!--[if IE]><!-->
+<!--[if IE]>
 html > body .btn-hiring {
 	margin: 0;
 }
-<!--<![endif]-->
+<![endif]-->
+
 #client-carousel .item{
   margin: 45px;
 }
