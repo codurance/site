@@ -61,72 +61,55 @@ body {
 	line-height:70px;
 }
 
-.btn-u{
-	padding: 9px 20px;
-	font-size: 25px;
-	top: 50%;
-	left: 35%;
-	width: 32%;
-	height: auto;
-	border-width: 0px;
-	opacity: 1;
-	transform: rotate(0deg) scale(1, 1);
-	margin-left: 0px;
-	margin-top: -225px;
-	display: block;
-	visibility: visible;
-	text-shadow: none;
+.btn-u {
+   border: 0;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+   font-weight: 400;
+   padding: 9px 20px;
+   position: relative;
+   top: 20px;
+   left: 0;
+   background: #72c02c;
+   white-space: nowrap;
+   display: inline-block;
+   text-decoration: none;
+   text-shadow: none;
+   width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+	.btn-u {
+		top: 0;
+		font-size: 20px;
+		width: 200px;
+	}
 }
 
 @media screen and (min-width: 800px) {
-	.btn-u{
-		top: 60%;
-		left: 35%;
-		width: 32%;
-		margin-top: -225px;
+	.btn-u {
+		top: 5px;
+		font-size: 35px;
+		width: 350px;
 	}
 }
 
 @media (max-width: 600px){
 	.btn-u {
-	  top: 45%;
-	  left: 25%;
-	  width: 60%;
-		font-size: 14px;
-		margin-top: -225px;
+		top: 0;
+		font-size: 20px;
+		width: 200px;
 	}
 }
 
 @media (max-width: 320px){
 	.btn-u {
-		top: 45%;
-	  left: 20%;
-	  width: 72%;
+		top: 0;
 		font-size: 20px;
-		margin-top: -225px;
+		width: 200px;
 	}
 }
-
-@media screen and (min-width: 768px) {
-	.btn-u{
-		left: 35%;
-		width: 32%;
-		margin-top: -225px;
-	}
-
-	.feature-panel h1{
-		line-height:60px;
-	}
-}
-
-@media screen and (min-width:0\0) {
-    margin:0;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    margin:0;
-}
-
 
 body:last-child .btn-u, x:-moz-any-link {
 	margin: 0;
