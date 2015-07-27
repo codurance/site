@@ -61,7 +61,7 @@ body {
 	line-height:70px;
 }
 
-.btn-u {
+.btn-hire {
    border: 0;
    color: #fff;
    font-size: 25px;
@@ -79,8 +79,32 @@ body {
    width: 300px;
 }
 
+.btn-hire.btn-u-orange {
+   background: #e67e22;
+}
+.btn-hire.btn-u-orange:hover, 
+.btn-hire.btn-u-orange:focus, 
+.btn-hire.btn-u-orange:active, 
+.btn-hire.btn-u-orange.active, 
+.open .dropdown-toggle.btn-hire.btn-u-orange {
+   background: #d35400;
+   color: #fff;
+   text-decoration: none;
+}
+
+.btn-hire.btn-brd.btn-u-orange {
+  border-color: #e67e22;
+}
+.btn-hire.btn-brd.btn-u-orange:hover {
+  color: #d35400;
+  border-color: #d35400;
+}
+.btn-hire.btn-brd.btn-u-orange.btn-brd-hover:hover {
+   background: #d35400;
+}
+
 @media screen and (min-width: 768px) {
-	.btn-u {
+	.btn-hire {
 		top: 0;
 		font-size: 20px;
 		width: 200px;
@@ -88,7 +112,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-	.btn-u {
+	.btn-hire {
 		top: 5px;
 		font-size: 35px;
 		width: 350px;
@@ -96,7 +120,7 @@ body {
 }
 
 @media (max-width: 600px){
-	.btn-u {
+	.btn-hire {
 		top: 0;
 		font-size: 20px;
 		width: 200px;
@@ -104,7 +128,7 @@ body {
 }
 
 @media (max-width: 320px){
-	.btn-u {
+	.btn-hire {
 		top: 0;
 		font-size: 20px;
 		width: 200px;
