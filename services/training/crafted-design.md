@@ -27,7 +27,7 @@ This course is for experienced developers that want to get better at designing w
 
 * Four elements of simple design
 * Use TDD as a design tool with Outside-In TDD
-* Busienss application of SOLID principles
+* Business application of SOLID principles
 * Testing and refactoring legacy code to express business domain
 * Interaction Driven Design (IDD)
 	* Map and visualise business concepts in code
