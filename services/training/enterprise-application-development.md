@@ -45,4 +45,4 @@ Developers must:
     * Their Favourite IDE
     * Maven 3.x
 
-In addition a distributed version control system such as Git is desirable
+In addition a distributed version control system such as Git is desirable.

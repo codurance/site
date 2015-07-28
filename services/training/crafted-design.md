@@ -56,4 +56,4 @@ Developers must:
     * A unit testing framework
 * Be able to create projects, build source code and run test cases in their development environment
 
-In addition a distributed version control system such as Git is desirable
+In addition a distributed version control system such as Git is desirable.
