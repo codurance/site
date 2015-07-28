@@ -46,21 +46,21 @@ The course is fully hands-on and developers will be writing a lot of code.
 
 Software developers that:
 
-* are familiar with at least one Object-Oriented language
-* are able to understand Java or C#
-* can write and execute unit tests using a framework (such as JUnit, NUnit, etc.)
-* have a basic understanding of mock objects
+* Are familiar with at least one Object-Oriented language
+* Are able to understand Java or C#
+* Can write and execute unit tests using a framework (such as JUnit, NUnit, etc.)
+* Have a basic understanding of mock objects
 
 ## Prerequisites
 
 Developers must:
 
-* bring their own laptops
-* have a development environment consisting of:
-  * their favourite Object-Oriented language
-  * a unit test framework
-  * a mocking library
-* be able to create projects, build source code and run test cases in their development environment
+* Bring their own laptops
+* Have a development environment consisting of:
+  * Their favourite Object-Oriented language
+  * A unit test framework
+  * A mocking library
+* Be able to create projects, build source code and run test cases in their development environment
 
 In addition, a distributed version-control system such as Git is desirable.
 
