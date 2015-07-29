@@ -1,6 +1,6 @@
 ---
 layout: post
-name: cqrs-and-event-sourcing-for-dummies
+name: a-month-of-apprenticeship
 title: My first month as an apprentice
 date: 2015-07-29 17:00:00 +00:00
 author: Franziska Sauerwein
