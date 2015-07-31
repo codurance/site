@@ -2,7 +2,7 @@
 layout: post
 name: a-month-of-apprenticeship
 title: My first month as an apprentice
-date: 2015-07-29 17:00:00 +00:00
+date: 2015-07-31 16:00:00 +00:00
 author: Franziska Sauerwein
 image:
     src: /assets/img/custom/blog/apprenticeship-month.jpg
