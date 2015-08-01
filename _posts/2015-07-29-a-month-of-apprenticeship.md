@@ -109,4 +109,4 @@ One important expectation my mentor has is that I always know what to do next. H
 I'll propose more conference talks and might present or host more LSCC meetings.
 I will also start working on a larger project (a journeyman's piece, so to speak) to practice DevOps, Functional Programming and Domain Driven Design.
 
-I am exited to see where it leads me!
+I am excited to see where it leads me!
