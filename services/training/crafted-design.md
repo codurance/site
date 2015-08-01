@@ -27,7 +27,7 @@ This course is for experienced developers that want to get better at designing w
 
 * Four elements of simple design
 * Use TDD as a design tool with Outside-In TDD
-* Busienss application of SOLID principles
+* Business application of SOLID principles
 * Testing and refactoring legacy code to express business domain
 * Interaction Driven Design (IDD)
 	* Map and visualise business concepts in code
@@ -38,22 +38,22 @@ This course is for experienced developers that want to get better at designing w
 
 Software developers that:
 
-* have experience in developing software commercially
-* are familiar with at least one Object Oriented Language (such as Java and C#)
-* are able to understand Java (the codebase and exercises are in Java)
-* are comfortable using TDD to build software
-* understand mock objects and know how to use a mocking library
+* Have experience in developing software commercially
+* Are familiar with at least one Object Oriented Language (such as Java and C#)
+* Are able to understand Java (the codebase and exercises are in Java)
+* Are comfortable using TDD to build software
+* Understand mock objects and know how to use a mocking library
 
 ## Prerequisites
 
 Developers must:
 
-* bring their own laptops
-* have a development environment consisting of:
+* Bring their own laptops
+* Have a development environment consisting of:
     * Java 8
-    * favourite IDE
-    * maven 3.x
-    * a unit testing framework
-* be able to create projects, build source code and run test cases in their development environment
+    * Their favourite IDE
+    * Maven 3.x
+    * A unit testing framework
+* Be able to create projects, build source code and run test cases in their development environment
 
-In addition a distributed version control system such as Git is desirable
+In addition a distributed version control system such as Git is desirable.

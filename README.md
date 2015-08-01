@@ -12,7 +12,7 @@ To build the site, run `rake build`. You will not often have to do this manually
 
 ## Serving the Web Site Locally
 
-Running `rake serve` will serve the web site at [http://localhost:4000/][]. Run it in the background so you can test your changes.
+Running `rake serve` will serve the web site at [http://localhost:4000/](http://localhost:4000/). Run it in the background so you can test your changes.
 
 ## Running the Tests
 

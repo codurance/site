@@ -100,7 +100,7 @@
 - id: amir
   name: Amir Bazazi
   image: /assets/img/custom/team/amir.png
-  role: Apprentice
+  role: Software Craftsman
   shortDescription: Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career ...
   fullDescription: <p>Having just graduated with a degree in Computer Science, Amir now wants to drive his passion for technology into his professional career. </p> <p>Amir prides himself in his commitment to problem solving and looking at things through a logical perspective and for that reason he is always open to new ideas. He is always ready to learn, and firmly believes that no matter how much you know, you will always have the potential to know more. </p>
   twitter: amirbazazi
@@ -131,3 +131,12 @@
   shortDescription: Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work ...
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: craftatheart
+
+- id: liam
+  name: Liam Beeton
+  image: /assets/img/custom/team/liam.png
+  role: Software Craftsman
+  shortDescription: An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries ...
+  fullDescription: <p>An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries.</p><p>Extensive background in programming languages such as C#, Objective-C and JavaScript as well as testing and deploying intricate mobile applications, web applications and complex distributed systems.</p><p>Agile development experience within small to medium sized teams using pragmatic development methodologies including Scrum, Kanban and Feature Driven Development.</p>
+  twitter: lrbpx
+  github: liambeeton
