@@ -7,7 +7,8 @@ author: Ana Nogal
 image:
     src: /assets/img/custom/blog/follow-your-dreams.jpg
     attribution:
-        text: Follow your dreams
+        text: Hidden in a back room by Jason Howie.
+        href: https://flic.kr/p/brPHtb
 tags:
 - dreams
 - codurance
