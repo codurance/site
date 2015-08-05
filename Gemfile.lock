@@ -215,6 +215,3 @@ DEPENDENCIES
   test_xml
   therubyracer
   travis
-
-BUNDLED WITH
-   1.10.5
