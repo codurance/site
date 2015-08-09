@@ -7,7 +7,7 @@ training: Zero to Continuous Delivery with Docker
 
 ## About
 
-This course will take attendees right from the basics of containers and tools like Docker, all the way up to clustered infrastructures supporting continuous deployment, horizontal scalability and zero downtime. The course will be hands-on and attendees will be building their own solutions on [AWS](http://aws.amazon.com/).
+Are you a developer looking to foster a DevOps culture at your workplace? This course will take attendees right from the basics of containers and tools like Docker, all the way up to clustered infrastructures supporting continuous deployment, horizontal scalability and zero downtime. The course will be hands-on and attendees will be building their own solutions on [AWS](http://aws.amazon.com/).
 
 ## Why attend?
 
@@ -21,7 +21,7 @@ This course will take attendees right from the basics of containers and tools li
 * Build, run and publish your own Docker images
 * Deploy containers to a remote server
 * Set up a continuous delivery pipeline
-    * Automate build and deployment as part of your continuous integration process
+    * Automate build and deployment as part of your continuous integration process using Jenkins
     * Establish healthchecks for your services using Nagios
     * Implement a service discovery solution using tools like Consul and Nginx
 * Set up a cluster of Docker daemons using Docker Swarm
@@ -29,7 +29,10 @@ This course will take attendees right from the basics of containers and tools li
 
 ## Audience
 
-* Anyone interested in learning about tools like Docker, and how to build continuous delivery pipelines 
+* Individuals or teams of developers: 
+    * looking to build a DevOps culture at their workplace
+    * interested in learning about tools like Docker
+    * wanting to implement continuous delivery pipelines 
 * Some experience with a Unix shell will be helpful, but is not required
 * No experience in a particular language is required
 
