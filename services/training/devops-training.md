@@ -43,3 +43,4 @@ Developers must:
 * Bring their own laptops, running an OS that supports [Docker](https://docs.docker.com/installation/)
 * Install Docker beforehand
 * Install Git beforehand (you'll be cloning sample code from our GitHub repository)
+* Be proficient with their text editor of choice
