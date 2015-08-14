@@ -82,10 +82,10 @@ body {
 .btn-hire.btn-u-orange {
    background: #e67e22;
 }
-.btn-hire.btn-u-orange:hover, 
-.btn-hire.btn-u-orange:focus, 
-.btn-hire.btn-u-orange:active, 
-.btn-hire.btn-u-orange.active, 
+.btn-hire.btn-u-orange:hover,
+.btn-hire.btn-u-orange:focus,
+.btn-hire.btn-u-orange:active,
+.btn-hire.btn-u-orange.active,
 .open .dropdown-toggle.btn-hire.btn-u-orange {
    background: #d35400;
    color: #fff;
@@ -101,6 +101,17 @@ body {
 }
 .btn-hire.btn-brd.btn-u-orange.btn-brd-hover:hover {
    background: #d35400;
+}
+
+#hiring {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-top: 25px;
+	font-family:'Oxygen', sans-serif;
+	font-size: 35px;
+	color: #e67e22;
+	line-height:70px;
+	text-align:center;
 }
 
 @media screen and (min-width: 768px) {
