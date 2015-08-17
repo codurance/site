@@ -108,7 +108,7 @@ A few years ago I came across [CQS](https://en.wikipedia.org/wiki/Command%E2%80%
 
 ### Fixing the problem (1st solution)
 
-After another discussion, we decided that an Engagement would always be for a Company and it may have come to us through a partner. That changed things again. So, I decided to do the following: remove all the dependencies (attributes containing other entities or list of entities) from all the entities. Then ended up like that:
+After another discussion, we decided that an Engagement would always be for a Company but it may have come to us through a partner. That changed things again. So, I decided to do the following: remove all the dependencies (attributes containing other entities or list of entities) from all the entities. Then ended up like that:
 
 ```java
 class Company {
