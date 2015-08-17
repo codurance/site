@@ -5,7 +5,7 @@ title: Inflection Point
 date: 2015-06-17 02:34:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custo	m/blog/2015-06-17-inflection-point-cover.jpg
+    src: /assets/img/custom/blog/2015-06-17-inflection-point-cover.jpg
 tags:
 - craftsmanship
 - design
