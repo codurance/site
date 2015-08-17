@@ -162,13 +162,13 @@ With this approach, each query would return the combination of data that was req
 
 ### Fixing the problem (2nd solution)
 
-After the fix above, I was reasonably happy since I was able to localise changes when entities relationships changed. But there was a bit more to it. On the positive side, they allowed me to make a single call from a page that needed a combination of data. On the negative side, performance was not a real concern for me and I didn’t want these extra objects with weird names hanging around. I still had to write code to populate them and convert them to JSON. 
+After the fix above, I was reasonably happy since I was able to localise changes when entity relationships changed. But there was a bit more to it. On the positive side, they allowed me to make a single call from a page that needed a combination of data. On the negative side, performance was not a real concern for me and I didn’t want these extra objects with weird names hanging around. I still had to write code to populate them and convert them to JSON. 
 
 I then decided to make multiple calls from my pages. If a page needed a company, a list of contacts and a list of engagements related to that company, I would make three calls from the page. This decision made all the  “read” objects go away and still kept my code very simple. 
 
 ### Conclusion
 
-Keep you entities detached from each other and focus on implementing simple queries from the client. Just move to a single query if performance really proves to be an issue.
+Keep your entities detached from each other and focus on implementing simple queries from the client. Just move to a single query if performance really proves to be an issue.
 
 Don’t use ORMs. ORMs would have made my changes even worse as I would have to keep my entities and database synchronised. It’s great to have the freedom to get a record set from the database using whatever query you want and populate your objects the way you want.
 
