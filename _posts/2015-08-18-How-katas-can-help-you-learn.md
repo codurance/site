@@ -29,7 +29,7 @@ NSDictionary *mapper = @{@10: @"X", @5:@"V", @1: @"I"};
 That's when I discovered that the NSDictionary does not guarantee insertion order. What???? So my keys were all mixed up... And I needed them to maintain their order!!!! That's ok! I decided to create a class to map between decimals and romans. That's cool! Done! In the converter I just added a private property of type NSMutableArray. In it's constructor I added the class to the array for all elements I needed. But now I have to do:
 
 ```
-[[DecimalToRomanMapper alloc] initWithDecimal: AndRoman];
+[[DecimalToRomanMapper alloc] initWithDecimal: andRoman];
 ```
 for every entry in the mapper. God!!!! So much work! Maybe that's why developers solve problems. They definitely don't like to do things by hand so they automate everything.
 So I decided that I could create a factory method. I really didn't know how to create this factory method, so I just looked in Apple docs. Here is another thing i learned. Even thought I knew that it existed, I never used it because I never needed to. But as I was in learning mode, I think I was more interested in finding a different way to do it. When you are at a client, you don't always have the opportunity to experiment with new things. Having this time to learn new ways of doing things is really rewarding. So here is my class:
@@ -40,7 +40,7 @@ So I decided that I could create a factory method. I really didn't know how to c
 @property (nonatomic, assign, readonly) NSInteger decimal;
 @property (nonatomic, copy, readonly) NSString* roman;
 
-+ (instancetype)mappDecimal:(NSInteger)decimal ToRoman:(NSString*)roman;
++ (instancetype)mappDecimal:(NSInteger)decimal toRoman:(NSString*)roman;
 
 @end
 ```
@@ -49,7 +49,7 @@ It's even more readable then the initialiser. And here is how I initialised it i
 
 ```
    self.mapper = @[
-                      [DecimalToRomanMapper mappDecimal:1000 ToRoman:@"M"]
+                      [DecimalToRomanMapper mappDecimal:1000 toRoman:@"M"]
                   ];
 ```
 
