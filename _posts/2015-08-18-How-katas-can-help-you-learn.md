@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://www.ananogal.com/blog/how-katas-can-help-you-learn/
 image:
-    src: /assets/img/custom/blog/baton_long.jpg
+    src: /assets/img/custom/blog/Baton_long.jpg
     attribution:
         text: Baton_long by Alain Delmas
         href: https://commons.wikimedia.org/wiki/File:Baton_long.jpg
