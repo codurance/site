@@ -2,7 +2,7 @@
 layout: post
 name: pairing-without-programming
 title: Pairing without Programming
-date: 2014-02-19 17:00:00.000000000 +00:00
+date: 2014-02-19 17:00:00 +00:00
 author: Samir Talwar
 canonical:
     name: my personal blog
