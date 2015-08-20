@@ -4,6 +4,9 @@ name: crank-up-the-volume
 title: 'Crank Up The Volume And Forget Your Pomodoros'
 date: 2015-06-04 09:00:00 +01:00
 author: Samir Talwar
+canonical:
+    name: my personal blog
+    href: http://monospacedmonologues.com/post/120680636325/crank-up-the-volume-and-forget-your-pomodoros
 image:
     src: /assets/img/custom/blog/2015-06-04-crank-up-the-volume/headphones.jpg
     attribution:

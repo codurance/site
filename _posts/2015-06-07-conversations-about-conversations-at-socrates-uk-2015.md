@@ -4,6 +4,9 @@ name: conversations-about-conversations-at-socrates-uk-2015
 title: 'Conversations About Conversations at SoCraTes UK 2015'
 date: 2015-06-07 19:00:00 +01:00
 author: Samir Talwar
+canonical:
+    name: my personal blog
+    href: http://monospacedmonologues.com/post/120952987040/conversations-about-conversations-at-socrates-uk
 image:
     src: /assets/img/custom/blog/2015-06-07-conversations-about-conversations-at-socrates-uk-2015/socrates-uk.png
 ---
