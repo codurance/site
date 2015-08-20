@@ -4,6 +4,9 @@ name: How-katas-can-help-you-learn
 title: How katas can help you learn
 date: 2015-08-18 09:35:00 +00:00
 author: Ana Nogal
+canonical:
+    name: my personal blog
+    href:http://www.ananogal.com/blog/how-katas-can-help-you-learn/
 image:
     src: /assets/img/custom/blog/baton_long.jpg
     attribution:
