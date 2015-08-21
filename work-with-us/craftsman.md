@@ -1,5 +1,5 @@
 ---
-layout: careers
+layout: work_with_us 
 role: Craftsman
 ---
 
