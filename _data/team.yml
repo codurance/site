@@ -140,3 +140,12 @@
   fullDescription: <p>An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries.</p><p>Extensive background in programming languages such as C#, Objective-C and JavaScript as well as testing and deploying intricate mobile applications, web applications and complex distributed systems.</p><p>Agile development experience within small to medium sized teams using pragmatic development methodologies including Scrum, Kanban and Feature Driven Development.</p>
   twitter: lrbpx
   github: liambeeton
+
+- id: tomaz
+  name: Tomaz Tekavec
+  image: /assets/img/custom/team/tomaztekavec.png
+  role: Software Craftsman
+  shortDescription: I figured out programming is my favourite hobby when I was a kid and never changed my mind since then. In the last 20 years ...
+  fullDescription: <p>I figured out programming is my favourite hobby when I was a kid and never changed my mind since then. In the last 20 years I have created successful software solutions for clients ranging from clinical biophysics, pharmacy, media agencies, metal industry to government institutions. I was also a co-founder of two software companies but could never resist working in a development team. Creating and contributing to more than ten software products played an important role in my career. It drastically changed my mindset from "read manual to use software" to "don't make me think" concept, trying to guess users interaction with the software which was still developing.</p>
+  twitter: Tomaz_Tekavec
+  github: tekavec
