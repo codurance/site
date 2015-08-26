@@ -238,7 +238,7 @@ class CucumberFeatures {
 ### Coming to a conclusion
 My next goal is to introduce a database with multiple articles, so that the bot will provide value to followers. I will then expand the domain and move along to the next feature, which will allow the bot to answer to mentions.
 
-One of the lessons I learned in the last weeks was, again the value of pairing and code reviews. When I was stuck, pairing with my mentor or asking him for advice helped me instantly. He could see things from a different perspective, cover my blind spots, give encouragement and ideas and provide insights. I am very grateful for this support.
+One of the lessons I learned over the last few weeks was (again) the value of pairing and code reviews. When I was stuck, pairing with my mentor or asking him for advice helped me instantly. He could see things from a different perspective, cover my blind spots, give encouragement and ideas and provide insights. I am very grateful for this support.
 
 With this approach, I quickly found that my idea of how scheduling would work was off and I could easily refactor to cater for it. And I figured out the quirks of setting up the automatic testing, integration and deployment, which will pay off with every change I make.
 
