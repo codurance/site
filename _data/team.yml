@@ -158,3 +158,13 @@
   fullDescription: <p>With more 10 years of experience, Alvaro has worked in good variety of projects and for companies of all sizes, both in the public and private sector.</p><p>Passionate about software development and always thinking about learning and trying new things, Alvaro is a firm believer that magic always happens when he is out of his comfort zone. He joined Codurance as part of his journey to mastery.</p><p>You can easily find Alvaro with a book in his hands or testing a new library.</p>
   twitter: xala3pa
   github: xala3pa
+
+- id: mani
+  name: Mani Sarkar
+  image: /assets/img/custom/team/mani_sarkar.jpg
+  role: Apprentice
+  shortDescription: Mani is a passionate Java/JVM developer currently living London, an LJC Associate, and an LJC Advocate to the @adoptopenjdk & @adoptajsr programs, JCP Member, OpenJDK contributor ... 
+  fullDescription: <p>Mani is a passionate Java/JVM developer currently living London, an LJC Associate, and an LJC Advocate to the @adoptopenjdk & @adoptajsr programs, JCP Member, OpenJDK contributor (submitted a number of patches), an active member of a number of developer communities (LJC, LSCC and partners), speaker, blogs, and microblogs now and then. </p> <p>In his free time he also works on free and open-source projects that can be found on his personal github and bitbucket accounts. Strongly prescribes to agile and software craftsmanship principles. And works hard to better himself with practices like BDD, TDD, refactoring and pair-programming, on his route as an apprentice to become a software craftsman.</p> <p>He shares his passion for free and open source technologies by blogging, and microblogging about them. Also attends and presents at conferences and help run hands-on workshops in the UK and other parts of Europe.</p>
+  twitter: theNeomatrix369
+  github: neomatrix369
+  bitbucket: neomatrix369
