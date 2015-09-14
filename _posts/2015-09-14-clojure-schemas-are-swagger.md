@@ -6,6 +6,10 @@ date: 2015-09-14 13:00:00 +01:00
 author: Mashooq Badar
 image:
     src: /assets/img/custom/blog/2015-09-14-swagger-clojure/swagger-clojure.jpg
+tags:
+- clojure
+- swagger
+- REST
 ---
 
 Recently, I decided to include Swagger documentation to our time sheet application. Although Swagger provides tools to help clients integrate with your REST API the most powerful feature, in my opinion, is that it acts as "living documentation" for the API. Adding Swagger to my the application had a couple of pleasant side-effects:
