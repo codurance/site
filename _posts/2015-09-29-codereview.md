@@ -51,7 +51,7 @@ Code reviews are quick and cheap to do when you work in small increments, in pai
 
 ### Conclusion
 
-Practices without goals are pointless. Before choosing a practice, figure out exactly what you want to achieve and only then choose practices that will help you with that. Practices cannot be blindly adopted. In order for them to work, you need to have the right context and mindset. Otherwise you run into the risk of blaming the practices for your own deficiencies.
+Many problems during code reviews can be avoided when we have a good team culture. Practices without goals are pointless. Before choosing a practice, figure out exactly what you want to achieve and only then choose practices that will help you with that. Practices cannot be blindly adopted. In order for them to work, you need to have the right context and mindset. Otherwise you run into the risk of blaming the practices for your own deficiencies.
 
 
 
