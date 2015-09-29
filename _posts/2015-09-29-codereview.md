@@ -11,7 +11,7 @@ tags:
 - codereview
 ---
 
-Developers across many organisations adopted code reviews as one of their core practices. Although that sounds a very reasonable thing to do, overtime the goal that led to the adoption of the practice is forgotten and the only thing left is the mindless application of the practice itself.
+Developers across many organisations adopted code reviews as one of their core practices. Although that sounds like a very reasonable thing to do, over time the goal that led to the adoption of the practice is forgotten and the only thing left is the mindless application of the practice itself.
 
 ### Why do we need code reviews?
 
@@ -27,12 +27,12 @@ Well, code review is a practice and can’t be blamed if the code being reviewed
 
 ### When and why do I use code reviews?
 
-* Before it is merged into production: We work in pairs and with very short-lived small branches (approximately 2 hours of coding and very few classes changed). Pairs raise a pull request (average of 2 to 5 per day) and another pair reviews their code. Since we work in very small increments, reviews, although often, are very easy and quick to do. Code is rarely rejected and when it is, it is very easy and quick to fix. This way we avoid a lot of re-work and decrease the chances of accumulating technical debt.
+* Before it is merged into production: We work in pairs and with very short-lived small branches (approximately 2 hours of coding and very few classes changed). Pairs raise a pull requests (an average of 2 to 5 per day) and another pair reviews their code. Since we work in very small increments, reviews, although often, are very easy and quick to do. Code is rarely rejected and when it is, it is very easy and quick to fix. This way we avoid a lot of re-work and decrease the chances of accumulating technical debt.
 
 * Disseminate knowledge and avoid unnecessary work: Having pairs reviewing each other’s code helps to disseminate knowledge of different parts of the system and also avoid that certain pairs do unnecessary work.
 * Review code submissions during an interview process: Code doesn’t lie. CVs do. In the first phase of our interview process, we ask candidates to submit a code assignment. We then review it and give them a comprehensive feedback. This is our opportunity to evaluate exactly where candidates are in terms of their basic skills as developers.
-* Mentoring apprentices: Our craftsmen regularly review all katas and pet projects developed by their apprentices. We find code reviews an extremely valuable teaching technique since the apprentices first try to solve the exercises to the best of their abilities and then they are shown better ways of doing it, when it is the case.
-* Reviewing different approaches / experimentations: Some times we don’t easily agree in how a piece of code should be written. When that happens, we normally work a bit in isolation to experiment and then have the code reviewed by the rest of team. It’s easier to debate over something concrete than having hypothetical conversations with endless “but what if… “ questions.
+* Mentoring apprentices: Our craftsmen regularly review all katas and pet projects developed by their apprentices. We find code reviews an extremely valuable teaching technique since the apprentices first try to solve the exercises to the best of their abilities and then they are shown better ways of doing it, if there are.
+* Reviewing different approaches / experiments: Sometimes we don’t easily agree in how a piece of code should be written. When that happens, we normally work a bit in isolation to experiment and then have the code reviewed by the rest of team. It’s easier to debate over something concrete than having hypothetical conversations with endless “but what if… “ questions.
 
 
 ### When do I not use code reviews?
@@ -40,7 +40,9 @@ Well, code review is a practice and can’t be blamed if the code being reviewed
 * Verify if there are bugs: I find this pointless. We have tests for it. Code is only reviewed after all tests pass. Tests are part of the code review though.
 
 * After the code is merged into production: That is too late. What do we do if we find that the code is not good enough? If the code is already written, it’s working, it’s in production, and won’t be changed anytime soon, why review it and change it? I would wait to change it if I ever need to work on it.
+
 * When the code being reviewed is too large: Reviewing large changes are painful and disrespectful. In my last company, we decided as a team that we would reject large changes. The pair of developers would need to break that change in smaller changes and commit them bit by bit so the reviewer could make sense of it. That was also used to teach them a lesson. Only small commits would be reviewed and merged into production. Period.
+
 * Check for code standards: I normally use Java and we have plenty of static analysis tools that are executed during our builds. If the code doesn’t comply with the bare minimum of quality defined (by the team) in these tools, the build fails. No code is reviewed if the branch build is failing.
 
 There are other situations where I would or wouldn’t use code reviews but those are the most important ones.
@@ -51,9 +53,4 @@ Code reviews are quick and cheap to do when you work in small increments, in pai
 
 ### Conclusion
 
-Many problems during code reviews can be avoided when we have a good team culture. Practices without goals are pointless. Before choosing a practice, figure out exactly what you want to achieve and only then choose practices that will help you with that. Practices cannot be blindly adopted. In order for them to work, you need to have the right context and mindset. Otherwise you run into the risk of blaming the practices for your own deficiencies.
-
-
-
-
-
+Many problems during code reviews can be avoided when we have a good team culture. Practices without goals are pointless. Before choosing a practice, figure out exactly what you want to achieve and only then choose practices that will help you with that. Practices can not be blindly adopted. In order for them to work, you need to have the right context and mindset. Otherwise you run into the risk of blaming the practices for your own deficiencies.
