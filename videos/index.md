@@ -8,6 +8,25 @@ title: Videos
         <!-- left side bar -->
         <div class="col-md-9">
 
+            <!--Does TDD lead to good design?-->
+            <div class=" margin-bottom-40">
+                <h2>Does TDD really lead to good design?</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/ApsW72JSVJM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>“TDD is a design tool.” That’s what I’ve said for years. But not anymore. After working with different teams in different organisations, I realised that I don’t believe anymore that TDD is a design tool. In this talk I’ll be explaining the pros and cons of the two main styles of TDD, discuss why some developers can test-drive well-crafted code while others can’t, and also explain how to reason about design decisions.
+
+                    <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a>
+                </div>
+                <div class="time-place">
+                    <p>3 October 2015 - SCBCN15 - Barcelona</p>
+                </div>
+            </div>
+            <!--Does TDD lead to good design?-->
+
             <!--Screencast - Outside-In TDD (part III)-->
             <div class=" margin-bottom-40">
                 <h2>Screencast - Oustide-In TDD (part III)</h2>
@@ -29,7 +48,7 @@ title: Videos
                     <p>12 May 2015</p>
                 </div>
             </div>
-            <!--Screencast - Outside-In TDD (part II)-->
+            <!--Screencast - Outside-In TDD (part III)-->
 
 
             <!--Screencast - Outside-In TDD (part II)-->
