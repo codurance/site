@@ -2,7 +2,7 @@
 layout: post
 name: Talk-to-the-business
 title: Talk to the business
-date: 2015-10-14 09:35:00 +00:00
+date: 2015-10-26 09:35:00 +00:00
 author: Ana Nogal
 canonical:
     name: my personal blog
