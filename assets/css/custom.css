@@ -28,7 +28,7 @@ body {
 /* Home Page */
 
 .feature-panel {
-	background: url("/assets/img/custom/home/computerdesk_original_opt.jpg") no-repeat center center;
+	background: url("/assets/img/custom/home/computerdesk_original_opt_bw.jpg") no-repeat center center;
 	height: 550px;
 	background-size: cover;
 	width: auto
