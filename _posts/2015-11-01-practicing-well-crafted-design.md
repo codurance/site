@@ -15,7 +15,7 @@ tags:
 - deliberate practice
 ---
 
-Katas are great, but not enough. In the past year I’ve been trying to find ways to teach our craftsmen and apprentices how to design software. Although we could discuss good design principles, it was very difficult to find a way to practice them. Katas are great for learning TDD, micro design, working in baby steps, and a few techniques for dealing with legacy code but we need more. We would like to practice requirements gathering, domain modelling, and well-crafted code all together, with the same fast feedback loop we get when we do katas. The problem is that we need a far bigger problem with overlapping rules so that we can experience incremental software design. Inspired by a session we had a [Socrates Germany 2015](https://www.socrates-conference.de/), we are evolving a deliberate practice session that is allowing us to achieve that.
+Katas are great, but not enough. In the past year I’ve been trying to find ways to teach our craftsmen and apprentices how to design software. Although we could discuss good design principles, it was very difficult to find a way to practice them. Katas are great for learning TDD, micro design, working in baby steps, and a few techniques for dealing with legacy code but we need more. We would like to practice requirements gathering, domain modelling, and well-crafted code all together, with the same fast feedback loop we get when we do katas. The problem is that we need a far bigger problem with overlapping rules so that we can experience incremental software design. Inspired by a session we had a [Socrates Germany 2015][6], we are evolving a deliberate practice session that is allowing us to achieve that.
 
 # The Session 
 The objective is to pick a game (card, board, dice) and implement the code in a way where the code clearly describes the rules of the game. Any person that was not part of the group that wrote the code should be able to look at the code and very quickly understand how the game works.
@@ -67,17 +67,17 @@ The role of the domain expert is simply to clarify the rules of the game and can
 Having a facilitator could be a very good idea. The facilitator would be responsible to make sure the discussions remain civilised and that everyone has a saying.  
 
 ### Games we tried
-[Mia](https://en.wikipedia.org/wiki/Mia_(game)), [Oh Hell!](https://en.wikipedia.org/wiki/Oh_Hell), [The Great Dalmuti](https://en.wikipedia.org/wiki/The_Great_Dalmuti), [Monopoly](https://en.wikipedia.org/wiki/Monopoly_(game)), and a few others I don’t remember the name. 
+[Mia][1], [Oh Hell!][2], [The Great Dalmuti][3], [Monopoly][4], and a few others I don’t remember the name. 
 
 ### Boundaries of the games
 Make sure the boundaries of the game are defined. For example, use the console as an interface to the game. Maybe some players could be AI players while others could be humans playing through the console. Defining the boundaries will help developers to understand at which level they need to test and how to build the engine of the game. 
 
 # Variations and challenges
 
-Below is a list of things we also tried at [Codurance](http://codurance.com), during [Socrates Germany](https://www.socrates-conference.de/), and [Socrates Belgium](http://www.socratesbe.org/).
+Below is a list of things we also tried at [Codurance][5], during [Socrates Germany][6], and [Socrates Belgium][7].
 
 ### Constraints
-If the developers in the mob are very experienced, feel free to add [constraints](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=code%20retreat%20constraints) to the session. Just be aware that this is already quite a difficult session and constraints may impede you to practice incremental design. 
+If the developers in the mob are very experienced, feel free to add [constraints][8] to the session. Just be aware that this is already quite a difficult session and constraints may impede you to practice incremental design. 
 
 ### Larger number of developers
 If running this session with many developers (community events), you can split them in small mobs (3 to 5 people each mob). Each mob will pick a game and spend around 90 minutes coding it. Once the time is up, each mob individually will put their code in a projector and let the other groups try to guess what game they coded and what the rules were. Mobs should avoid naming their projects or main classes after the name of the chosen game, of course.
@@ -107,4 +107,13 @@ This is an advanced hands-on session. It’s not a session that should be used t
 
 This session was created so we can practice how to design software quickly and well, which includes constantly talking to the business, understanding requirements, defining a ubiquitous language, and of course, write well-crafted code that represents the problem domain. 
 
-Thanks to everyone at [Codurance](http://codurance.com), [Socrates Germany](https://www.socrates-conference.de/), and [Socrates Belgium](http://www.socratesbe.org/), that participated in the mob sessions and contributed with ideas to evolve the session. 
+Thanks to everyone at [Codurance][5], [Socrates Germany][6], and [Socrates Belgium][7], that participated in the mob sessions and contributed with ideas to evolve the session. 
+
+[1]:https://en.wikipedia.org/wiki/Mia_(game)
+[2]:https://en.wikipedia.org/wiki/Oh_Hell
+[3]:https://en.wikipedia.org/wiki/The_Great_Dalmuti
+[4]:https://en.wikipedia.org/wiki/Monopoly_(game)
+[5]:http://codurance.com
+[6]:https://www.socrates-conference.de/
+[7]:http://www.socratesbe.org/
+[8]:https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=code%20retreat%20constraints
