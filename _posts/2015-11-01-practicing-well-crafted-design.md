@@ -67,7 +67,7 @@ The role of the domain expert is simply to clarify the rules of the game and can
 Having a facilitator could be a very good idea. The facilitator would be responsible to make sure the discussions remain civilised and that everyone has a saying.  
 
 ### Games we tried
-[Mia](https://en.wikipedia.org/wiki/Mia_(game)), [Oh Hell!](https://en.wikipedia.org/wiki/Oh_Hell), [The Great Dalmuti](https://en.wikipedia.org/wiki/The_Great_Dalmuti), [Monopoly](https://en.wikipedia.org/wiki/Monopoly_(game), and a few others I don’t remember the name. 
+[Mia](https://en.wikipedia.org/wiki/Mia_(game)), [Oh Hell!](https://en.wikipedia.org/wiki/Oh_Hell), [The Great Dalmuti](https://en.wikipedia.org/wiki/The_Great_Dalmuti), [Monopoly](https://en.wikipedia.org/wiki/Monopoly_(game)), and a few others I don’t remember the name. 
 
 ### Boundaries of the games
 Make sure the boundaries of the game are defined. For example, use the console as an interface to the game. Maybe some players could be AI players while others could be humans playing through the console. Defining the boundaries will help developers to understand at which level they need to test and how to build the engine of the game. 
