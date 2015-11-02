@@ -21,7 +21,7 @@ Katas are great, but not enough. In the past year I’ve been trying to find way
 The objective is to pick a game (card, board, dice) and implement the code in a way where the code clearly describes the rules of the game. Any person not part of the group that wrote the code should be able to look at the code and very quickly understand how the game works.
 
 ### Setup
-The session is run as a mob programming. Make sure you have a projector and a whiteboard or flip chart.
+The session is run using mob programming. Make sure you have a projector and a whiteboard or flip chart.
 
 ### Format
 
