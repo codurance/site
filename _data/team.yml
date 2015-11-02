@@ -132,15 +132,6 @@
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: craftatheart
 
-- id: liam
-  name: Liam Beeton
-  image: /assets/img/custom/team/liam_beeton.jpg
-  role: Software Craftsman
-  shortDescription: An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries ...
-  fullDescription: <p>An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries.</p><p>Extensive background in programming languages such as C#, Objective-C and JavaScript as well as testing and deploying intricate mobile applications, web applications and complex distributed systems.</p><p>Agile development experience within small to medium sized teams using pragmatic development methodologies including Scrum, Kanban and Feature Driven Development.</p>
-  twitter: lrbpx
-  github: liambeeton
-
 - id: tomaz
   name: Tomaz Tekavec
   image: /assets/img/custom/team/tomaz_tekavec.jpg
