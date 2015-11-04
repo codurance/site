@@ -31,7 +31,7 @@ I will be sharing what I learnt, a technique or two that you can go away with an
 - Combine if blocks with similar conditions (manually)
 - Decompose if-else blocks into simpler if blocks without loosing its meaning
 
-Lets say we apply one or more of the above techniques to the below block of code:
+Let's say we apply one or more of the above techniques to the below block of code:
 
 ```java
 public void updateQuality(Item[] items) {
