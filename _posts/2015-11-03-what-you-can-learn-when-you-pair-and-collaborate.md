@@ -11,15 +11,15 @@ image:
         href: https://kostiukg.files.wordpress.com/2014/12/why-collaborate.png
 ---
 
-It's been over a month since I joined 'Codurance', a formidable force, and its about time that I share my experiences with my fellow mates and the community around me.
+It's been over a month since I have joined 'Codurance', a formidable force, and its about time that I share my experiences with my fellow mates and the community around me.
 
-During my first few weeks at Codurance I have been busy learning various things that have been chalked out for becoming a craftsman.
+During my first few weeks at Codurance, I have been busy learning various things that have been chalked out for becoming a craftsman.
 
 Among the various katas I have been doing, the Gilded Rose Kata [[blog](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/)|[requirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt)|[github](https://github.com/emilybache/GildedRose-Refactoring-Kata)] is one of them, I would like to talk about and share my experiences with you. In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write your golden master (i.e. bringing your legacy code-base under a regression test suite - something that will safeguard you through the refactoring process).
 
-I did the kata under these environmental settings:
-- paired or mobbed with my colleagues at work
-- used pomodoros whilst refactoring and writing tests (both working on my own and with a mob of developers)
+I did the kata under these environmental and technical settings:
+- pair and mob programming with my colleagues at work
+- used [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) whilst refactoring and writing tests (both working on my own and with the other colleagues)
 - had a lot of discussions and retrospective after trying different approaches
 
 I will be sharing what I learnt, a technique or two that you can go away with and apply in your daily work or teach it to someone. Here are some refactoring tips and hints to share, that I made notes of whilst doing the kata:
