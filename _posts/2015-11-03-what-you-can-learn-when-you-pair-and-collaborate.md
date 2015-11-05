@@ -18,7 +18,7 @@ During my first few weeks at Codurance I have been busy learning various things 
 Among the various katas I have been doing, the Gilded Rose Kata [[blog](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/)|[requirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt)|[github](https://github.com/emilybache/GildedRose-Refactoring-Kata)] is one of them, I would like to talk about and share my experiences with you. In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write your golden master (i.e. bringing your legacy code-base under a regression test suite - something that will safeguard you through the refactoring process).
 
 I did the kata under these environmental settings:
-- paired or mobbed with other craftsmen
+- paired or mobbed with my colleagues at work
 - used pomodoros whilst refactoring and writing tests (both working on my own and with a mob of developers)
 - had a lot of discussions and retrospective after trying different approaches
 
