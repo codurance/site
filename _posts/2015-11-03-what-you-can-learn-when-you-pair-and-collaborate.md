@@ -181,8 +181,6 @@ if (item.name.equals(AGED_BRIE)) {
 
 On a passing note, you might think why I didn't mention ```Refactor > Extract method``` as one of the techniques to apply. In my experience when applied to legacy code only took us through a lot more iterations of pomodoros to reach to some solution. Instead I learnt that focusing on removing primitive obsessions from the code base is a better approach and with time can help notice the emergence of DDD concepts and domain names (I'll try to share more about this in another post). 
 
-The block you see above has been refactored using the ```Refactor > Extract method``` approach to remove duplications and reveal intent - after which it is a good idea to inline (expand) the extracted methods, before applying the 'removal of primitive obsessions' approach. 
-
 I hope this share is helpful, and hope to write more such insights and experiences in future posts.
 
 <br/>
