@@ -11,9 +11,9 @@ image:
         href: https://kostiukg.files.wordpress.com/2014/12/why-collaborate.png
 ---
 
-Its been over a month since I joined 'Codurance', a formidable force, and its about time that I share my experiences with my fellow mates and the community around me.
+It's been over a month since I joined 'Codurance', a formidable force, and its about time that I share my experiences with my fellow mates and the community around me.
 
-During my first few weeks at Codurance I have been busy learning various things that has been chalked out for becoming a craftsman (an Apprentice on its journey to craftsmanship).
+During my first few weeks at Codurance I have been busy learning various things that have been chalked out for becoming a craftsman.
 
 Among the various katas I have been doing, the Gilded Rose Kata [[blog](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/)|[requirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt)|[github](https://github.com/emilybache/GildedRose-Refactoring-Kata)] is one of them, I would like to talk about and share my experiences with you. In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write your golden master (i.e. bringing your legacy code-base under a regression test suite - something that will safeguard you through the refactoring process).
 
