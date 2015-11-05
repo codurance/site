@@ -107,14 +107,14 @@ as it won't just work due to the change in order of the blocks, due to the order
 ```java
 // A
 if (item.name.equals(AGED_BRIE)) {
-    item.decreaseSellIn(); // P
+    item.decreaseSellIn(); // <==== P
     if (item.isExpired()) {
         item.increaseQuality();
     }
 } else { 
     // B
     if (item.name.equals(BACKSTAGE_PASSES)) {
-        item.decreaseSellIn(); // P
+        item.decreaseSellIn(); // <==== P
         if (item.isExpired()) {
             item.setQualityToMinimum();
         }
@@ -126,7 +126,7 @@ if (item.name.equals(AGED_BRIE)) {
             }
         } else {
             // D
-            item.decreaseSellIn(); // P
+            item.decreaseSellIn(); // <==== P
             if (item.isExpired()) {
                 item.decreaseQuality();
             }
@@ -179,9 +179,11 @@ if (item.name.equals(AGED_BRIE)) {
 }
 ```
 
-On a passing note, you might think why I didn't mention ```Extract method``` as a technique to apply. In my experience when applied to legacy code only took us through a lot more iterations of pomodoros to reach to some solution. Instead I learnt that focusing on removing primitive obsessions from the code base is a better approach and with time can help notice the emergence of DDD concepts and domain names (I'll try to share more about this in another post). We can now apply 'removal of primitive obsessions' to the above compact block of code.
+On a passing note, you might think why I didn't mention ```Refactor > Extract method``` as one of the techniques to apply. In my experience when applied to legacy code only took us through a lot more iterations of pomodoros to reach to some solution. Instead I learnt that focusing on removing primitive obsessions from the code base is a better approach and with time can help notice the emergence of DDD concepts and domain names (I'll try to share more about this in another post). 
 
-I hope this share is helpful, and hope to share more such insights in future posts.
+The block you see above has been refactored using the ```Refactor > Extract method``` approach to remove duplications and reveal intent - after which it is a good idea to inline (expand) the extracted methods, before applying the 'removal of primitive obsessions' approach. 
+
+I hope this share is helpful, and hope to write more such insights and experiences in future posts.
 
 <br/>
 ####Resources
