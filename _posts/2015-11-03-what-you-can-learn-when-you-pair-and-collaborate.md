@@ -183,7 +183,6 @@ On a passing note, you might think why I didn't mention ```Refactor > Extract me
 
 I hope this share is helpful, and hope to write more such insights and experiences in future posts.
 
-<br/>
 ####Resources
 - [Gilded Rose Requirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements.txt)
 - [Gilded Rose Github Repo](https://github.com/emilybache/GildedRose-Refactoring-Kata)
