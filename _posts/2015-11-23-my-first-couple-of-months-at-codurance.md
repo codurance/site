@@ -11,7 +11,7 @@ image:
         href: http://www.success.com/sites/default/files/main/blogposts/Five%20Characteristics%20of%20a%20Great%20Company%20Culture.jpg
 ---
 
-#### Introduction
+### Introduction
 
 It's been nearly two months since I have joined 'Codurance', a formidable force, and its about time that I share my experiences with my fellow mates and the community around me.
 
@@ -22,7 +22,7 @@ Among the various katas I have been doing, the Gilded Rose Kata [[blog](http://c
 In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write tests.
 
 
-#### Setup and environment
+### Setup and environment
 When working on anything or learning something, I was able to do these (in no particular order):
 - pair and mob programming with my colleagues
 - use [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) whilst refactoring and writing tests (both working on my own and with the other colleagues)
@@ -39,6 +39,6 @@ I found our office environment to be conducive to learning, sharing and collabor
 And the apprentice meetings are full of fun -- we are accompanied by at least one craftsperson, who disperses their knowledge and experience from a wide variety of things designed to help us in the journey.
 
 
-#### Closing note
+### Closing note
 
 Thank you for taking the time to read this post and I hope it was interesting. Looking forward to write more and share such experiences in future posts.
