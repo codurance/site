@@ -13,9 +13,9 @@ tags:
 
 ---
 
-Open source has moved from being an important actor in software development to being central for plenty of people, especially thanks to Github. Most of us are simple users of OSS (Open-source software) but being brave and taking a step forward and becoming a contributor, or even an owner, could help you massively in different ways:
+Open source has moved from being an important actor in software development to being central for plenty of people, especially thanks to [Github](https://github.com). Most of us are simple users of OSS (Open-source software) but being brave and taking a step forward and becoming a contributor, or even an owner, could help you massively in different ways:
 
-* Collaborating with clever people disregarding of place of residence.
+* Collaborating with clever people irrespective of their place of residence.
 * Improve your social skills through remote communication. Being extrovert is only one of the ingredients for a successful engagement, OSS provides you with a comfortable and safe environment where you can explore other social skills.
 * Giving back to the community.
 * Great way of learning tools, languages or methodologies in a practical way.
@@ -26,7 +26,7 @@ However, being able to engage nicely with OSS could be hard. Let me share with y
 
 ### Find a project
 
-That sounds silly, but sometimes, you don't even know where to start. The closer the project is to you, the easier it becomes to engage with it. Enlisted in order of proximity:
+That sounds silly, but sometimes, you don't even know where to start. The closer the project is to you, the easier it becomes to engage with. Enlisted in order of proximity:
 
 * Talk with your colleagues. A lot of people are secretly working on exciting projects. You could really be surprised!
 * Explore the tools that you use and love (or hate :) )
@@ -54,13 +54,13 @@ A project is not only its code, so you should explore its social side too. Chats
 
 ### Be humble
 
-Collaborating in OSS doesn't necessarily mean working on the Linux kernel. If it's your first time, be humble and grab something with a manageable essential complexity. Thanks to your previous exploration you should have enough information about that. Be away of accidental complexity in general, that's a sign of laziness and in the long term, madness.
+Collaborating in OSS doesn't necessarily mean working on the Linux kernel. If it's your first time, be humble and grab something with a manageable essential complexity. Thanks to your previous exploration you should have enough information about that. Be aware of accidental complexity in general, that's a sign of laziness and in the long term, madness.
 
-In the same way, don't start your engagement with the project doing a massive refactor or accomplishing some ambitious issue. You can make a deference by taking the time to familiarise yourself with the codebase before making any decision based on your strong judgements.
+In the same way, don't start your engagement with the project doing a massive refactor or accomplishing some ambitious issue. You can make a difference by taking the time to familiarise yourself with the codebase before making any decision based on your strong judgements.
 
 ### Believe in the project
 
-As [Rob Taylor](https://twitter.com/roberttaylor426) pointed out to me other day there are three elements to be motivated at work according to Daniel Pink: autonomy, mastery and purpose. If you don't believe in the OSS project you chose, you will lose a fair amount of purpose, so try to pick up something that really excites you. There are many fish in the sea, so feel free to move around and search for new projects if you're simply not having fun. That's the good stuff of OSS, for most of us it's not paying our bills so we can leave whenever we want.
+As [Rob Taylor](https://twitter.com/roberttaylor426) pointed out to me the other day there are three elements to be motivated at work according to [Daniel Pink](http://deliveringhappiness.com/the-motivation-trifecta-autonomy-mastery-and-purpose/): autonomy, mastery and purpose. If you don't believe in the OSS project you chose, you will lose a fair amount of purpose, so try to pick up something that really excites you. There are many fish in the sea, so feel free to move around and search for new projects if you're simply not having fun. That's the good stuff of OSS, for most of us it's not paying our bills so we can leave whenever we want.
 
 ## **Owner's point of view**
 
@@ -82,7 +82,7 @@ Most of OSS's owners are looking for contributors. In order to attract the right
 
 ### Be clear
 
-Most of the projects that I've found, lacked the right level of documentation (if you want a good example of the opposite have a look into [ScalaTest](http://www.scalatest.org/). If you're developing a tool, provide living examples of different use cases. Asking to the new joiners to read tons of documentation could be not realistic, a live example could be the easiest way of explaining your project.
+Most of the projects that I've found, lacked the right level of documentation (if you want a good example of the opposite have a look at [ScalaTest](http://www.scalatest.org/). If you're developing a tool, provide living examples of different use cases. Asking to the new joiners to read tons of documentation could be not realistic, a live example could be the easiest way of explaining your project.
 
 ### Don't scare people
 
@@ -91,4 +91,4 @@ Unless you want, of course :). Have a look at [how Linus Torvalds handled some c
 
 ## IN CONCLUSION
 
-I've been really lucky about working with Marco Vermeulen, the creator of an awesome OSS tool called, [SDKMAN](http://sdkman.io). The first steps were really easy for me as the project was documented, the Cucumber BDD test suite was amazingly thorough and indeed, because of the availability of Marco. However, in the past, I've failed several times engaging with OSS projects and most of the times because of my mistakes. I hope that these tips will help to people that are thinking in collaborating with OSS. In the future I'll go into more detail about what I've learned working with SDKMAN.
+I've been really lucky in a way to get a chance to work with [Marco Vermeulen](https://github.com/marcoVermeulen), the creator of an awesome OSS tool called, [SDKMAN](http://sdkman.io). The first steps were really easy for me as the project was documented, the [Cucumber BDD](https://cucumber.io/) test suite was amazingly thorough and indeed, because of the availability of Marco. However, in the past, I've failed several times engaging with OSS projects and most of the times because of my mistakes. I hope that these tips will help to people that are thinking in collaborating with OSS. In the future I'll go into more detail about what I've learned working with SDKMAN.
