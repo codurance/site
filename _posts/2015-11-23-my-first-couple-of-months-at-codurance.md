@@ -24,9 +24,10 @@ In the process I learnt a lot of refactoring techniques, design principles and g
 
 ### Setup and environment
 When working on anything or learning something, I was able to do these (in no particular order):
-- pair and mob programming with my colleagues
-- use [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) whilst refactoring and writing tests (both working on my own and with the other colleagues)
-- had a lot of discussions and retrospectives after working on a problem or writing something from scratch
+ 
+ * pair and mob programming with my colleagues
+ * use [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) whilst refactoring and writing tests (both working on my own and with the other colleagues)
+ * had a lot of discussions and retrospectives after working on a problem or writing something from scratch
 
 It is a privilege to be able to work alongside very experienced craftspersons from our industry. We are very lucky to have the opportunity to be guided and mentored by talented and like minded developers.
 
