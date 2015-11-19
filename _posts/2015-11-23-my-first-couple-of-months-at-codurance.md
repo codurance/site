@@ -8,7 +8,6 @@ image:
     src: "/assets/img/custom/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
     attribution:
         text: Together we are a formidable force
-        href: http://www.success.com/sites/default/files/main/blogposts/Five%20Characteristics%20of%20a%20Great%20Company%20Culture.jpg
 ---
 
 ### Some background
