@@ -48,10 +48,13 @@ A bi-weekly catchup involves sharing of knowledge via lightning talks, discussio
 
 Katas, code reviews, mob programming and projects make up a learning week - all of these done individually or when pairing with another.
 
+##### **Katas**
 On a daily basis I have worked on different katas or trying to solve the same kata in various different ways (different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learn about using different libraries and methods to write tests. 
 
+##### **Code reviews**
 Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through feedback from the peers who were involved in the group code review session.
 
+##### **Software Design, Specification Gathering & Communication**
 Recently we had an interesting mob-programming session where we trying to model and write a game. At the end of the session, we had a retrospective discussing the things we did well and didn't do well. Each of the apprentices and craftsmen were performing their own roles i.e. Developer, Domain Expert, etc... We learnt in retrospective, about areas where we could have done better and should focus on. That a test written gives immediate feedback about how well we have understood the domain and if we were taking the right approach. Why a certain approach when starting a project is more advantageous than another approach. What questions to ask and why it is important to ask the right questions to the domain expert or to give the right level of information to another developer.
 
 ### Fun, socialising and sharing
@@ -68,7 +71,7 @@ It is a privilege to be able to work alongside very experienced craftspersons fr
 
 This is one of my first jobs where the company has a completely flat hierarchy and where we share similar values amongst ourselves.
 
-<img src="/assets/img/custom/blog/greatCompanyCulture.jpg" />
+<center><img src="/assets/img/custom/blog/greatCompanyCulture.jpg" width="75%" height="75%" /></center>
 
 
 ### Closing note
