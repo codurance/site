@@ -32,7 +32,7 @@ When working on kata or learning a concept, we paired or did what is known as 'm
 
 ### Structure of my program
 
-We used an internal tool based on the concept of [Impact Mapping(http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. Such a tool helps map out our goals and the tasks we need to perform to achieve it. And this can differ from person-to-person, depending on what they want to work on (driven by the Apprentice).
+We used an internal tool based on the concept of [Impact Mapping](http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. Such a tool helps map out our goals and the tasks we need to perform to achieve it. And this can differ from person-to-person, depending on what they want to work on (driven by the Apprentice).
 
 My mentor and other craftspersons reviewed them to get an idea of what I wanted to achieve for myself. And then on it was my own drive and perseverance to achieve the individual stories. We meet and talk informally on a regular basis, many a times pairing on a project or on the white board trying to get my head around a concept.
 
