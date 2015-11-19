@@ -28,7 +28,7 @@ It's now been nearly two months since I have been working for [Codurance](http:/
 
 During my first few weeks at [Codurance](http://codurance.com/), I have been busy learning various things that have been chalked out for becoming a craftsman.
 
-When working on kata or learning a concept, we paired or did what is known as 'mob programming' along with other apprentices and craftspersons. And most of the time used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Time boxing our work in intervals is something done both in groups and working individually. We would have a lot of discussions and retrospectives after working on a problem or writing some code from scratch. In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write tests.
+When working on kata or learning a concept, we paired or did what is known as 'mob programming' along with other apprentices and craftspersons. And most of the time used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Time boxing our work in intervals is something done both in groups and working individually. We would have a lot of discussions and retrospectives after working on a problem or writing some code from scratch. 
 
 ### Structure of my program
 
@@ -46,7 +46,13 @@ The apprentice meetings are full of fun -- we are accompanied by at least one cr
 
 A bi-weekly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
-Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play.
+Katas, code reviews, mob programming and projects make up a learning week - all of these done individually or when pairing with another.
+
+On a daily basis I have worked on different katas or trying to solve the same kata in various different ways (different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learn about using different libraries and methods to write tests. 
+
+Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through feedback from the peers who were involved in the group code review session.
+
+Recently we had an interesting mob-programming session where we trying to model and write a game. At the end of the session, we had a retrospective discussing the things we did well and didn't do well. Each of the apprentices and craftsmen were performing their own roles i.e. Developer, Domain Expert, etc... We learnt in retrospective, about areas where we could have done better and should focus on. That a test written gives immediate feedback about how well we have understood the domain and if we were taking the right approach. Why a certain approach when starting a project is more advantageous than another approach. What questions to ask and why it is important to ask the right questions to the domain expert or to give the right level of information to another developer.
 
 ### Fun, socialising and sharing
 
