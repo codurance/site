@@ -1,14 +1,14 @@
 ---
 layout: post
-name: configuration-as-code-in-enterprise-apps
+name: configuring-an-enterprise-app-sucks
 title: 'Configuring an enterprise app sucks'
 date: 2015-11-19 09:00:00 +00:00
 author: David Hatanian
 canonical:
     name: my personal blog
-    href: https://david-codes.hatanian.com/post/2015/11/19/configuration-as-code-in-enterprise-apps
+    href: https://david-codes.hatanian.com/post/2015/11/19/configuring-an-enterprise-app-sucks
 image:
-    src: /assets/img/custom/blog/configuration-as-code-in-saas-apps/asterix-and-obelix-passierschein38.jpg
+    src: /assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/asterix-and-obelix-passierschein38.jpg
 ---
 
 There has been quite a lot of discussion over the last years about how configuration should be managed as code, be it software settings or infrastructure configuration :
@@ -18,9 +18,15 @@ There has been quite a lot of discussion over the last years about how configura
 
 But when one configures an enterprise application, be it an open-source one or something purchased from a vendor, or even a Software As A Service solution, one is guaranteed to end up with all those levers, buttons and knobs to adjust and fiddle with. But that makes sense, enterprise applications need to be tweaked according to each company's specificities. So the best option is to shove all the configuration possibilities in an maze of screens, tabs, checkboxes and helpful tooltips, right ?
 
-I think that is wrong. This way of configuring software is a guarantee that something wrong will happen at some point. Even collaboration tools such as Google Apps, who thrive on usability, provide administrators with overly complex settings options hidden deep withing a web interface. Identity and Access management tools such as OpenAM, IBM Tivoli Identity Manager and others suffer from the same plague.
+I think that is wrong. This way of configuring software is a guarantee that something bad will happen at some point. Even collaboration tools such as Google Apps, who thrive on usability, provide administrators with overly complex settings options hidden deep withing a web interface. Identity and Access management tools such as OpenAM, IBM Tivoli Identity Manager and others suffer from the same plague.
 
-TODO include pics of openam and google apps
+Here's what the advanced configuration screen for Google Apps looks like. All those tabs and options are only for the GMail section, which gives you an idea of the overall complexity :
+
+![Google Apps configuration screen](/assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/gmail.png "Google Apps configuration screen")
+
+And this how you configure a token-based authentication on OpenAM. An admin needs to go through dozens of those screens filled with fields and not make a single mistake. We are talking about an application that centralizes authentication, mistakes can make all the applications in your information system inaccessible :
+
+![OpenAM OATH configuration](/assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/openam.png "OpenAM OATH configuration")
 
 Those configuration screens are wrong on a lot of levels :
 
@@ -43,13 +49,13 @@ to a declarative style that basically says :
 The good news is that we already have the tools for this : uploading the configuration as a text file in a simple human-readable format such as json or yaml would be enough. This solves all the issues we've seen :
 
  * Looking for a specific setting ? Use the search feature of your preferred text edit, or even the `grep` command line tool !
- * The application can let administrators track changes on its configuration by providing a source control system similar to Git. You would know who changed a given line, when, and could in one click have an immediate view of the resulting configuration after this change.
+ * The application can let administrators track changes on its configuration by providing a source control system similar to Git. You would know who changed a given line, when, and could in one click have an immediate view of the resulting configuration after this change. Here is how a change on a configuration file would be viewed in GitHub :
 
-TODO image of a git diff with name of user and date
+![A change on a configuration file as viewed on GitHub](/assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/config-diff.png "A change on a configuration file as viewed on GitHub")
 
  * Moving from one environment to another becomes trivial : it is a matter of transferring the configuration file to the new environment, which is much faster and less error prone. Since the settings history is kept, rolling back to the previous state becomes trivial : just tell the application to revert back to the previous version of the settings.
  * As a plus, your configuration is easy to export and backup. This would allow competing platforms to let you import the configuration from your previous solution when you migrate. Want to migrate from CloudFileServer&trade; to SAASEnterpriseFileManager&trade; ? Just import your old configuration and be ready to start in minutes !
 
-Obviously some configuration items are specific to a given environment (typically addresses of services to integrate with, secrets). But it is something we've solved in development and system administration a long time ago through environment variables. So you'll need another file that will be environment-specific and will contain in just a few lines all the relevant environment variables. The main file will simply refer to those variables when required.
+
 
 As software engineers, we've progressed a lot in the field of ad hoc developments, we have industrialized the way we deploy our applications and manage our servers, we keep most of the configuration safely stored and tracked in source repositories. But when we provide platforms to our customers in the form of enterprise and/or SAAS applications, we still let then manage those like we're in the 90's. It is time to provide them with a proper way to manage their IT solutions.
