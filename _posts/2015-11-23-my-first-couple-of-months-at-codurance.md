@@ -34,19 +34,19 @@ It's now been nearly two months since I have been working for [Codurance](http:/
 
 During my first few weeks at [Codurance](http://codurance.com/), I have been busy learning various things that have been chalked out for becoming a craftsman.
 
-When working on kata or learning a concept, we paired or did what is known as 'mob programming' along with other apprentices and craftspersons. And most of the time used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Time boxing our work in intervals is something done both in groups and working individually. We would have a lot of discussions and retrospectives after working on a problem or writing some code from scratch. 
+When working on a kata or learning a concept, we paired or did what is known as 'mob programming' along with other apprentices and craftspersons. And most of the time used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Time boxing our work in intervals is something done both in groups and working individually. We would have a lot of discussions and retrospectives after working on a problem or writing some code from scratch. 
 
 ### Structure of my program
 
 We used an internal tool based on the concept of [Impact Mapping](http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. Such a tool helps map out our goals and the tasks we need to perform to achieve it. And this can differ from person-to-person, depending on what they want to work on (driven by the Apprentice).
 
-My mentor and other craftspersons reviewed them to get an idea of what I wanted to achieve for myself. And then on it was my own drive and perseverance to achieve the individual stories. We meet and talk informally on a regular basis, many a times pairing on a project or on the white board trying to get my head around a concept.
+My mentor and other craftspersons reviewed them to get an idea of what I wanted to achieve for myself. And then its upto me to apply my own drive and perseverance to achieve the individual stories. I and my mentor meet and talk informally on a regular basis, many a times pairing on a kata or a project or on the white board trying to get my head around a concept.
 
 ### Days in the life of an Apprentice
 
-Working hours here are quite flexible, remote working is also something we can do given everything is on the cloud these days. Our co-founders are understanding and compassionate about our individual situations.
+I found the working hours quite flexible, remote working is also an optio as we can do given everything is on the cloud these days. Our co-founders are understanding and compassionate about our individual situations.
 
-Meetings are at their minimum, except for a weekly Apprenticeship meeting and a bi-weekly company-wide catchup.
+Meetings are at their minimum, except for a weekly Apprenticeship meeting (run by an Apprentice and guided by at least one craftsperson) and a bi-weekly company-wide catchup.
 
 The apprentice meetings are full of fun -- we are accompanied by at least one craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
 
@@ -55,13 +55,13 @@ A bi-weekly catchup involves sharing of knowledge via lightning talks, discussio
 Katas, code reviews, mob programming and projects make up a learning week - all of these done individually or when pairing with another.
 
 ##### **Katas**
-On a daily basis I have worked on different katas or trying to solve the same kata in various different ways (different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learn about using different libraries and methods to write tests. 
+On a daily basis I have worked on different katas or try to solve the same kata in various different ways (using different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learnt how to use the different libraries and methods to write tests. 
 
 ##### **Code reviews**
-Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through feedback from the peers who were involved in the group code review session.
+Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through exchange of feedback from the peers who were involved in the group code review session.
 
 ##### **Software Design, Specification Gathering & Communication**
-Recently we had an interesting mob-programming session where we trying to model and write a game. At the end of the session, we had a retrospective discussing the things we did well and didn't do well. Each of the apprentices and craftsmen were performing their own roles i.e. Developer, Domain Expert, etc... We learnt in retrospective, about areas where we could have done better and should focus on. That a test written gives immediate feedback about how well we have understood the domain and if we were taking the right approach. Why a certain approach when starting a project is more advantageous than another approach. What questions to ask and why it is important to ask the right questions to the domain expert or to give the right level of information to another developer.
+Recently we had an interesting mob-programming session where we were trying to model and write a game. At the end of the session, we had a retrospective, discussing the things we did well and didn't do well. Each of the apprentices and craftspersons were performing a specific role i.e. Developer, Domain Expert, etc... We learnt in retrospective, about areas where we could have done better and should focus on. That any test written gives immediate feedback about how well we have understood the domain and if we were taking the right approach. Why a certain approach when starting a project is more advantageous than another approach. What questions to ask and why it is important to ask the right questions to the domain expert or to give the right level of information to another developer and vice-versa.
 
 ### Fun, socialising and sharing
 
