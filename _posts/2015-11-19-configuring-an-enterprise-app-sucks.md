@@ -13,7 +13,7 @@ image:
 
 There has been quite a lot of discussion over the last years about how configuration should be managed as code, be it software settings or infrastructure configuration :
 
- * For infrastructure, all the cool kids now use Docker, Vagrant or some other tool that allows you to store your infra's configuration as text files. You can find more on [this Thoughworks article](https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile)
+ * For infrastructure, all the cool kids now use Docker, Vagrant or some other tool that allows you to store your infra's configuration as text files. You can find more on [this blog post](http://kief.com/infrastructure-as-code-versus-automation.html)
  * For software settings, it is now commonly accepted that anything that is not specific to the environment (secrets, IP addresses, ports) should be stored along with the code in the source code repository. Some teams even store environment-specific settings in the same repository.
 
 But when one configures an enterprise application, be it an open-source one or something purchased from a vendor, or even a Software As A Service solution, one is guaranteed to end up with all those levers, buttons and knobs to adjust and fiddle with. But that makes sense, enterprise applications need to be tweaked according to each company's specificities. So the best option is to shove all the configuration possibilities in an maze of screens, tabs, checkboxes and helpful tooltips, right ?
