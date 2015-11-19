@@ -13,7 +13,7 @@ image:
 
 ### Some background
 
-Some of you may know me from the various meetups in the city, especially my attendance at a number of [LJC](www.meetup.com/Londonjavacommunity/) and [LSCC](www.meetup.com/london-software-craftsmanship) meetup events. Attending these events I learnt about various conferences like **Devoxx**, **SoCraTes**, **JAX London**, **Java2Days**, **OpenFest**, and some others, and have had the good fortune at being at such events and even presenting at some of them. My subject was usually around [Adopt OpenJDK](https://java.net/projects/adoptopenjdk/pages/AdoptOpenJDK) and [Adopt-a-JSR](https://java.net/projects/adoptajsr/pages/Home) whilst wearing my [LJC](www.meetup.com/Londonjavacommunity/) Advocate hat, but I also took the chance to present on other topics.
+Some of you may know me from the various meetups in the city, especially my attendance at a number of [LJC](www.meetup.com/Londonjavacommunity/) and [LSCC](www.meetup.com/london-software-craftsmanship) meetup events. Attending these events I learnt about various conferences like **Devoxx**, **SoCraTes**, **JAX London**, **Java2Days**, **OpenFest**, and some others, and have had the good fortune of being at such events and even presenting at some of them. My subject was usually around [Adopt OpenJDK](https://java.net/projects/adoptopenjdk/pages/AdoptOpenJDK) and [Adopt-a-JSR](https://java.net/projects/adoptajsr/pages/Home) whilst wearing my [LJC](www.meetup.com/Londonjavacommunity/) Advocate hat, but I also took the chance to present on other topics.
 
 During this time I met a lot of people with various levels of experience and my interest and urge to learn more about the Java/JVM platform, Code Quality, Software Design, XP Practices, Software Craftsmanship, etc..., were on the rise and saw no end. And whilst attending these events I came across [Sandro](https://twitter.com/sandromancuso) and [Mash](https://twitter.com/mashooq), who were in those days hosting [LSCC](www.meetup.com/london-software-craftsmanship) events. I went to many of [LSCC](www.meetup.com/london-software-craftsmanship) events, especially liked the hands-on sessions (which are still my favourite). These events always took place in the evenings and sometimes during weekends, and in most instances organised at [Skillsmatter](https://skillsmatter.com/).
 
@@ -55,11 +55,11 @@ The apprentice meetings are full of fun -- we are accompanied by at least one cr
 
 ### Socialising and sharing
 
-We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blogs](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
+We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via Google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blogs](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
 
 A bi-weekly catchup involves sharing of knowledge via lightening talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
-The apprentices have also collective started a Flying Fridays which of course happens on every Friday, sometimes its dinner at a closeby restaurant, whiles at other times an indoor movie over snacks and drinks in our office premises.
+The apprentices have also collective started a Flying Fridays which of course happens on every Friday, sometimes its dinner at a nearby restaurant, whiles at other times an indoor movie over snacks and drinks in our office premises.
 
 
 ### Closing note
