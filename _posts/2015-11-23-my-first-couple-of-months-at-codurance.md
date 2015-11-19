@@ -17,13 +17,13 @@ Some of you may know me from the various meetups in the city, especially my atte
 
 During this time I met a lot of people with various levels of experience and my interest and urge to learn more about the Java/JVM platform, Code Quality, Software Design, XP Practices, Software Craftsmanship, etc..., were on the rise and saw no end. And whilst attending these events I came across [Sandro](https://twitter.com/sandromancuso) and [Mash](https://twitter.com/mashooq), who were in those days hosting [LSCC](www.meetup.com/london-software-craftsmanship) events. I went to many of [LSCC](www.meetup.com/london-software-craftsmanship) events, especially liked the hands-on sessions (which are still my favourite). These events always took place in the evenings and sometimes during weekends, and in most instances organised at [Skillsmatter](https://skillsmatter.com/).
 
-I also noticed that many things I learnt at such events and conferences wouldn't always immediately recognised or accepted at the workplace. And moving to another work environment didn't always solve this problem fully. I found that I wasn't learning and applying what I wanted to from my peers and very few were really in tuned with what the community was about. So one fine day I decided to take charge of my career and make a serious decision and take up the Apprenticeship program offered by [Codurance](http://codurance.com/) and go through the process.
+I also noticed that many things I learnt at such events and conferences wouldn't always be immediately recognised or accepted at the workplace. And moving to another work environment didn't always solve this problem fully. I found that I wasn't learning and applying what I wanted to, from my peers and very few were really in tuned with what the community was about. So one fine day I decided to take charge of my career and make a serious decision and take up the Apprenticeship program offered by [Codurance](http://codurance.com/) and go through the process.
 
 I was urged to go this way after being inspired by [Sandro](https://twitter.com/sandromancuso)'s book: [The Software Craftsman](http://www.amazon.co.uk/books/dp/0134052501), attending all the [SoCraTes UK](http://socratesuk.org/) conferences, and meeting with developers who valued and took pride of their work namely their craft. 
 
 ### Where we are just now
 
-It's now been nearly two months since I have been working for 'Codurance', a formidable force. And so its also about time that I share my experiences with my fellow mates and the community around me.
+It's now been nearly two months since I have been working for [Codurance](http://codurance.com/), a formidable force. And so it's also about time that I share my experiences with my fellow mates and the community around me.
 
 During my first few weeks at [Codurance](http://codurance.com/), I have been busy learning various things that have been chalked out for becoming a craftsman.
 
@@ -33,6 +33,7 @@ In the process I learnt a lot of refactoring techniques, design principles and g
 
 
 ### Setup and environment
+
 When working on project or learning a concept, I was able to do these (in no particular order):
  
  * pair and mob programming with other apprentices and craftspersons around me
@@ -42,6 +43,15 @@ When working on project or learning a concept, I was able to do these (in no par
 It is a privilege to be able to work alongside very experienced craftspersons from our industry. We are very lucky to have the opportunity to be guided and mentored by talented and like minded developers.
 
 This is one of my first jobs where the company has a completely flat hierarchy and where we share similar values amongst ourselves. And the working hours are quite flexible, remote working is also something we can do given everything is on the cloud these days.
+
+<img src="/assets/img/custom/blog/greatCompanyCulture.jpg" />
+
+
+### Structure of my program
+
+We use this internal tool called CraftedTable (written by one of the co-founders) which is based on the concept of [Impact Mapping(http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. It's still early days with the tool but it does enough to bridge your Goals => the Actors who will be involved => the Behaviors you wish to achieve => High level actions (Features) => Specific actions (Stories), in order to achieve your goal.
+
+My mentor and other craftspersons reviewed them to get an idea of what I wanted to achieve for myself. And then on it was my own drive and perseverance to achieve the individual stories. We meet and talk informally on a regular basis, many a times pairing on a project or on the white board trying to get my head around a concept.
 
 
 ### Learning and collaborations
@@ -55,11 +65,11 @@ The apprentice meetings are full of fun -- we are accompanied by at least one cr
 
 ### Socialising and sharing
 
-We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via Google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blogs](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
+We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via Google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blog posts](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
 
-A bi-weekly catchup involves sharing of knowledge via lightening talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
+A bi-weekly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
-The apprentices have also collective started a Flying Fridays which of course happens on every Friday, sometimes its dinner at a nearby restaurant, whiles at other times an indoor movie over snacks and drinks in our office premises.
+The apprentices and some craftspersons have collectively started a 'I Don’t Give A Friday' event (I sometimes call it 'Flying Fridays') which of course happens every Friday, sometimes it's dinner at a nearby restaurant, while at other times an indoor movie over snacks and drinks in our office premises.
 
 
 ### Closing note
@@ -67,5 +77,3 @@ The apprentices have also collective started a Flying Fridays which of course ha
 Work is fun and learning is enjoyable when we love what we do and are amongst friends with similar goals and aspirations. 
 
 Thank you for taking the time to read this post and I hope it was interesting. Looking forward to write more and share such experiences in future posts.
-
-PS: I promise to stay away from pizzas now onwards (lets see how long I can hold on to this).
