@@ -8,6 +8,13 @@ image:
     src: "/assets/img/custom/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
     attribution:
         text: Together we are a formidable force
+tags:
+- craftsmanship
+- apprenticeship
+- community
+- mentor
+- mentee
+- mentoring
 ---
 
 ### Some background
