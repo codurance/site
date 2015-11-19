@@ -19,7 +19,8 @@ During this time I met a lot of people with various levels of experience and my 
 
 I also noticed that many things I learnt at such events and conferences wouldn't always be immediately recognised or accepted at the workplace. And moving to another work environment didn't always solve this problem fully. I found that I wasn't learning and applying what I wanted to, from my peers and very few were really in tuned with what the community was about. So one fine day I decided to take charge of my career and make a serious decision and take up the Apprenticeship program offered by [Codurance](http://codurance.com/) and go through the process.
 
-I was urged to go this way after being inspired by [Sandro](https://twitter.com/sandromancuso)'s book: [The Software Craftsman](http://www.amazon.co.uk/books/dp/0134052501), attending all the [SoCraTes UK](http://socratesuk.org/) conferences, and meeting with developers who valued and took pride of their work namely their craft. 
+I was urged to go this way after being inspired by Sandro's book: [The Software Craftsman](http://www.amazon.co.uk/books/dp/0134052501), attending all the [SoCraTes UK](http://socratesuk.org/) conferences, and meeting with developers who valued and took pride of their work namely their craft. 
+
 
 ### Where we are just now
 
@@ -27,49 +28,41 @@ It's now been nearly two months since I have been working for [Codurance](http:/
 
 During my first few weeks at [Codurance](http://codurance.com/), I have been busy learning various things that have been chalked out for becoming a craftsman.
 
-Among the various katas I have been doing, the Gilded Rose Kata [[blog](http://coding-is-like-cooking.info/2013/03/writing-good-tests-for-the-gilded-rose-kata/)|[requirements](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt)|[github](https://github.com/emilybache/GildedRose-Refactoring-Kata)] is one of them.
-
-In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write tests.
-
-
-### Setup and environment
-
-When working on project or learning a concept, I was able to do these (in no particular order):
- 
- * pair and mob programming with other apprentices and craftspersons around me
- * use [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) whilst refactoring and writing tests (both working on my own and with others)
- * had a lot of discussions and retrospectives after working on a problem or writing some code from scratch
-
-It is a privilege to be able to work alongside very experienced craftspersons from our industry. We are very lucky to have the opportunity to be guided and mentored by talented and like minded developers.
-
-This is one of my first jobs where the company has a completely flat hierarchy and where we share similar values amongst ourselves. And the working hours are quite flexible, remote working is also something we can do given everything is on the cloud these days.
-
-<img src="/assets/img/custom/blog/greatCompanyCulture.jpg" />
-
+When working on kata or learning a concept, we paired or did what is known as 'mob programming' along with other apprentices and craftspersons. And most of the time used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Time boxing our work in intervals is something done both in groups and working individually. We would have a lot of discussions and retrospectives after working on a problem or writing some code from scratch. In the process I learnt a lot of refactoring techniques, design principles and gotchas, and using various libraries and methods to write tests.
 
 ### Structure of my program
 
-We use this internal tool called CraftedTable (written by one of the co-founders) which is based on the concept of [Impact Mapping(http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. It's still early days with the tool but it does enough to bridge your Goals => the Actors who will be involved => the Behaviors you wish to achieve => High level actions (Features) => Specific actions (Stories), in order to achieve your goal.
+We used an internal tool based on the concept of [Impact Mapping(http://www.impactmapping.org/). I soon got interested in it when I saw my colleague [Franzi](https://twitter.com/Singsalad) (who is now a craftswoman) had used it to plan out her Apprenticeship route. Such a tool helps map out our goals and the tasks we need to perform to achieve it. And this can differ from person-to-person, depending on what they want to work on (driven by the Apprentice).
 
 My mentor and other craftspersons reviewed them to get an idea of what I wanted to achieve for myself. And then on it was my own drive and perseverance to achieve the individual stories. We meet and talk informally on a regular basis, many a times pairing on a project or on the white board trying to get my head around a concept.
 
+### Days in the life of an Apprentice
 
-### Learning and collaborations
+Working hours here are quite flexible, remote working is also something we can do given everything is on the cloud these days. Our co-founders are understanding and compassionate about our individual situations.
 
-I found our office environment to be conducive to learning, sharing and collaboration. We even have a pairing rota that we use from time-to-time to record or suggest pairing sessions during the week.
-
-Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play.
+Meetings are at their minimum, except for a weekly Apprenticeship meeting and a bi-weekly company-wide catchup.
 
 The apprentice meetings are full of fun -- we are accompanied by at least one craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
 
+A bi-weekly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
-### Socialising and sharing
+Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play.
+
+### Fun, socialising and sharing
+
+I found our office environment to be conducive to learning, sharing and collaboration. We even have a pairing rota that we use from time-to-time to record or suggest pairing sessions during the week.
 
 We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via Google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blog posts](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
 
-A bi-weekly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
+The apprentices and some craftspersons have collectively started a 'I Don’t Give A Friday' social event (I sometimes call it 'Flying Fridays') which of course happens every Friday, sometimes it's dinner at a nearby restaurant, while at other times an indoor movie over snacks and drinks in our office premises.
 
-The apprentices and some craftspersons have collectively started a 'I Don’t Give A Friday' event (I sometimes call it 'Flying Fridays') which of course happens every Friday, sometimes it's dinner at a nearby restaurant, while at other times an indoor movie over snacks and drinks in our office premises.
+### It is worthwhile and that's why we are here
+
+It is a privilege to be able to work alongside very experienced craftspersons from our industry. We are very lucky to have the opportunity to be guided and mentored by talented and like minded developers.
+
+This is one of my first jobs where the company has a completely flat hierarchy and where we share similar values amongst ourselves.
+
+<img src="/assets/img/custom/blog/greatCompanyCulture.jpg" />
 
 
 ### Closing note
