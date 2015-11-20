@@ -11,7 +11,7 @@ The course takes the developer through a hands-on journey of building an enterpr
 
 ## Why attend?
 
-In most enterprise projects the day-to-day development effort does not require the developer to get to know the system as a whole along with the build and deployment tools that support the software development lifecycle. This often results in lack of knowledge and confidence in; the overall system, and the leading approaches in enterprise software development.
+In most enterprise projects the day-to-day development effort does not require the developer to get to know the system as a whole along with the build and deployment tools that support the software development lifecycle. This often results in lack of knowledge and confidence in the overall system, and the leading approaches in enterprise software development.
 
 ## You will learn to:
 
