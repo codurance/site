@@ -8,7 +8,10 @@ canonical:
     name: my personal blog
     href: https://david-codes.hatanian.com/post/2015/11/19/configuring-an-enterprise-app-sucks
 image:
-    src: /assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/asterix-and-obelix-passierschein38.jpg
+    src: /assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/space-shuttle.jpg
+    attribution:
+        text: Endeavour's Control Panels by Steve Jurvetson
+        href: https://www.flickr.com/photos/jurvetson/6912974136
 ---
 
 There has been quite a lot of discussion over the last years about how configuration should be managed as code, be it software settings or infrastructure configuration:
