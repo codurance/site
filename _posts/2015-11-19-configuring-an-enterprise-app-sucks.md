@@ -48,13 +48,13 @@ to a declarative style that basically says:
 
 The good news is that we already have the tools for this: uploading the configuration as a text file in a simple human-readable format such as json or yaml would be enough. This solves all the issues we've seen:
 
- * Looking for a specific setting? Use the search feature of your preferred text edit, or even the `grep` command line tool !
+ * Looking for a specific setting? Use the search feature of your preferred text editor, or even the `grep` command line tool!
  * The application can let administrators track changes on its configuration by providing a source control system similar to Git. You would know who changed a given line, when, and could in one click have an immediate view of the resulting configuration after this change. Here is how a change on a configuration file would be viewed in GitHub:
 
 ![A change on a configuration file as viewed on GitHub](/assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/config-diff.png "A change on a configuration file as viewed on GitHub")
 
  * Moving from one environment to another becomes trivial: it is a matter of transferring the configuration file to the new environment, which is much faster and less error prone. Since the settings history is kept, rolling back to the previous state becomes trivial: just tell the application to revert back to the previous version of the settings.
- * As a plus, your configuration is easy to export and backup. This would allow competing platforms to let you import the configuration from your previous solution when you migrate. Want to migrate from CloudFileServer&trade; to SAASEnterpriseFileManager&trade;? Just import your old configuration and be ready to start in minutes !
+ * As a plus, your configuration is easy to export and backup. This would allow competing platforms to let you import the configuration from your previous solution when you migrate. Want to migrate from CloudFileServer&trade; to SAASEnterpriseFileManager&trade;? Just import your old configuration and be ready to start in minutes!
 
 
 
