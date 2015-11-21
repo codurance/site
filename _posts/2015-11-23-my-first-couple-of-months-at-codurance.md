@@ -55,7 +55,7 @@ A bi-weekly catchup involves sharing of knowledge via lightning talks, discussio
 Katas, code reviews, mob programming and projects make up a learning week - all of these done individually or when pairing with another.
 
 ##### **Katas**
-On a daily basis I have worked on different katas or try to solve the same kata in various different ways (using different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learnt how to use the different libraries and methods to write tests. I would like to cite Samir for this idea, thanks for the suggestion during my first week of Apprenticeship.
+On a daily basis I have worked on different katas or try to solve the same kata in various different ways (using different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learnt how to use the different libraries and methods to write tests. I would like to cite **Samir**, thanks to you, for the suggesting this approach during the first week of my Apprenticeship.
 
 ##### **Code reviews**
 Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through exchange of feedback from the peers who were involved in the group code review session.
@@ -86,4 +86,4 @@ Work is fun and learning is enjoyable when we love what we do and are amongst fr
 
 Thank you for taking the time to read this post and I hope it was interesting. Looking forward to write more and share such experiences in future posts.
 
-Many thanks to Sandro, Tomaz, Alex, Franzi and David for all the feedback provided for this blog post.
+Many thanks to **Sandro**, **Tomaz**, **Alex**, **Franzi** and **David** for all the feedback provided for this blog post.
