@@ -8,6 +8,9 @@ image:
     src: "/assets/img/custom/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
     attribution:
         text: Together we are a formidable force
+canonical:
+    name: my personal blog
+    href: https://neomatrix369.wordpress.com/2015/11/23/my-first-couple-of-months-at-codurance/
 tags:
 - craftsmanship
 - apprenticeship
