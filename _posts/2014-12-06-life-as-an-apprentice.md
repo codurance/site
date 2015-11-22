@@ -78,5 +78,5 @@ With that goal in mind, I know deep down my apprenticeship will never truly end.
 That’s why I switched careers and joined the team at Codurance.
 
 ### Further Info
-More information about [Codurance's Apprenticeship Scheme](http://codurance.com/careers/apprentice/).
+More information about [Codurance's Apprenticeship Scheme](http://codurance.com/work-with-us/apprentice/).
 
