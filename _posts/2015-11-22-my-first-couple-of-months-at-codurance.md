@@ -2,7 +2,7 @@
 layout: post
 name: my-first-couple-of-months-at-codurance
 title: 'My first couple of months at Codurance'
-date: 2015-11-23 09:00:00 +00:00
+date: 2015-11-22 09:00:00 +00:00
 author: Mani Sarkar
 image:
     src: "/assets/img/custom/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
