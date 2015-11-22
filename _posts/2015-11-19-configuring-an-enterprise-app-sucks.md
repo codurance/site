@@ -6,7 +6,7 @@ date: 2015-11-19 09:00:00 +00:00
 author: David Hatanian
 canonical:
     name: my personal blog
-    href: https://david-codes.hatanian.com/post/2015/11/19/configuring-an-enterprise-app-sucks
+    href: https://david-codes.hatanian.com/2015/11/19/configuring-an-enterprise-app-sucks.html
 image:
     src: /assets/img/custom/blog/2015-11-19-configuring-an-enterprise-app-sucks/space-shuttle.jpg
     attribution:
