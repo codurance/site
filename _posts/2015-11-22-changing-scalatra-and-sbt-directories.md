@@ -14,7 +14,7 @@ tags:
 - design
 - domain driven design
 - DDD
----
+--- 
 
 Conventions are not always good. I recently started a new internal web project
 at Codurance and I decided to use Scala. As I'm not a fan of big
