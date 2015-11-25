@@ -142,7 +142,7 @@ If you are asking "How can I set up a development environment in .Net that would
 
 ### Conclusion
 You are now ready to experiment with FsCheck!
-Let me know what is your experience with property based testing in F# writing at alex@codurance.com.
+[Let me know] what is your experience with property based testing in F# writing at .
 
 ### Resources:
 
@@ -156,3 +156,4 @@ Let me know what is your experience with property based testing in F# writing at
 [John-Huges]: http://vimeo.com/68383317
 [QuickCheck]: http://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/quick.pdf
 [Testing-FSharp]: http://www.packtpub.com/application-development/testing-f
+[Let me know]: https://twitter.com/Parajao
