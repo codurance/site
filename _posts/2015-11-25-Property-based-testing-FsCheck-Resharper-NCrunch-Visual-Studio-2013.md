@@ -75,7 +75,7 @@ If you are asking "How can I set up a development environment in .Net that would
             let ignoreMe() = () 
     ```
 	
-6. For this example I'll test a plainly wrong property about arrays which is **the reverse of an array is always equal to the original**. Create a static class whose methods are the properties you want to test
+6. Create a static class whose methods are the properties you want to test. For this example I'll test a plainly wrong property about lists which is **the reverse of a list is always equal to the original**. 
     
 	``` fs
             type ListProperties =     
@@ -100,13 +100,13 @@ If you are asking "How can I set up a development environment in .Net that would
 11. You should read a message similar to
     
 	```
-        -- Checking ListProperties ---
-        System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
-        ---> System.Exception : ListProperties.reverseIsAsTheOriginal-Falsifiable, after 2 tests (4 shrinks) (StdGen (163791131,296083933)):
-        Original:
-		[|2; -1; 1; 1|]
-        Shrunk:
-        [|1; 0|]
+        --- Checking ListProperties ---
+		System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+		  ----> System.Exception : ListProperties.ReverseOfReverseIsAsTheOriginal-Falsifiable, after 6 tests (3 shrinks) (StdGen (1165808905,296086422)):
+		Original:
+		[-1; 2; -2]
+		Shrunk:
+		[1; 0]
     ```
 	
 12. This shows that the property was falsifiable (as expected) but let's try to gather more informations to address the issue
@@ -121,37 +121,56 @@ If you are asking "How can I set up a development environment in .Net that would
 14. Re-run the tests through Resharper Runner and read the output
     
 	```
-        0:
-		[|-1|]
-        1:
-		[|0|]
+        --- Checking ListProperties ---
+		0:
+		[-2]
+		1:
+		[-2; -2]
 		2:
-		[|1; -3; 0; 0|]
+		[]
+		3:
+		[1; 1]
+		4:
+		[-2]
+		5:
+		[-3; 1; 5; -3; 6; 2; 6; -2]
 		shrink:
-		[|-3; 0; 0|]
+		[1; 5; -3; 6; 2; 6; -2]
 		shrink:
-		[|-3; 0|]
+		[5; -3; 6; 2; 6; -2]
 		shrink:
-		[|3; 0|]
+		[-3; 6; 2; 6; -2]
 		shrink:
-		[|2; 0|]
+		[6; 2; 6; -2]
 		shrink:
-		[|1; 0|]
+		[2; 6; -2]
+		shrink:
+		[6; -2]
+		shrink:
+		[6; 2]
+		shrink:
+		[6; 0]
+		shrink:
+		[3; 0]
+		shrink:
+		[2; 0]
+		shrink:
+		[1; 0]
 		System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
-        ----> System.Exception : ListProperties.reverseIsAsTheOriginal-Falsifiable, after 3 tests (5 shrinks) (StdGen (939147306,296083935)):
+		  ----> System.Exception : ListProperties.ReverseOfReverseIsAsTheOriginal-Falsifiable, after 6 tests (11 shrinks) (StdGen (1681135586,296086423)):
 		Original:
-		[|1; -3; 0; 0|]
+		[-3; 1; 5; -3; 6; 2; 6; -2]
 		Shrunk:
-        [|1; 0|]
+		[1; 0]
     ```
 	
-15. The output shows the "shrinking process" from the third input original value ```[|1; -3; 0; 0|]``` to the  "shrunk" input ```[|1; 0|]``` that still falsifies the property 
-16. Let's correct the property to make it not falsifiable
+15. The output shows the "shrinking process" from the third input original value ```[-3; 1; 5; -3; 6; 2; 6; -2]``` to the  "shrunk" input ```[1; 0]``` that still falsifies the property 
+16. Let's change correct the property as **the reverse of the reverse of a list is equal to the original**
     
 	``` fs
-            type ListProperties =  
-                static member reverseOfReverseIsAsTheOriginal (xs:int[]) = 
-                    Array.rev (Array.rev xs) = xs
+            type ListProperties =
+				static member ReverseOfReverseIsAsTheOriginal (xs:int list) = 
+					List.rev (List.rev xs) = xs
     ```
 	
 17. Re-run the tests that should be all green by now and read the output. You'll notice it's very verbose as expected and shows all the inputs used to verify the property.
