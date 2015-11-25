@@ -75,16 +75,16 @@ If you are asking "How can I set up a development environment in .Net that would
             let ignoreMe() = () 
     ```
 	
-6. Create a static class whose methods are the properties you want to test
+6. For this example I'll test a plainly wrong property about arrays which is **the reverse of an array is always equal to the original**. Create a static class whose methods are the properties you want to test
     
 	``` fs
             type ListProperties =     
                 // Note: should fail     
                 static member reverseIsAsTheOriginal (xs:int[]) =          
-                    Array.rev xs = xs
+                    List.rev xs = xs
     ```
 	
-7. Add the following test to verify all the properties defined in the ```ListProperties``` type
+7. Add the following test to verify the property defined in the ```ListProperties``` type
     
 	``` fs
             [<Test>] 
