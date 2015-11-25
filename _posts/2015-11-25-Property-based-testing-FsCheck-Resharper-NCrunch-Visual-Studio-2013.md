@@ -94,9 +94,9 @@ If you are asking "How can I set up a development environment in .Net that would
 	
 8. 	Enable NCrunch following *NCRUNCH > Enable NCrunch* from the main menu and let the engine catch the error
 9. If everything is in place you should see the visual error for the feedback
-	<center><img src="/assets/img/custom/blog/2015-12-01-Property-based-testing/NCrunch-visual-feed-back-error.png"></center>
+	<center><img src="/assets/img/custom/blog/2015-11-25-Property-based-testing/NCrunch-visual-feed-back-error.png"></center>
 10. Run All Tests in the Resharper Runner to check the output
-	<center><img src="/assets/img/custom/blog/2015-12-01-Property-based-testing/Resharper-tests-run-error.png"></center>
+	<center><img src="/assets/img/custom/blog/2015-11-25-Property-based-testing/Resharper-tests-run-error.png"></center>
 11. You should read a message similar to
     
 	```
