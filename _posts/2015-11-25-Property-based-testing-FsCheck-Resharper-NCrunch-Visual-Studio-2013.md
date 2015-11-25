@@ -165,7 +165,7 @@ If you are asking "How can I set up a development environment in .Net that would
     ```
 	
 15. The output shows the "shrinking process" from the third input original value ```[-3; 1; 5; -3; 6; 2; 6; -2]``` to the  "shrunk" input ```[1; 0]``` that still falsifies the property 
-16. Let's change correct the property as **the reverse of the reverse of a list is equal to the original**
+16. Let's correct the property as **the reverse of the reverse of a list is equal to the original**
     
 	``` fs
             type ListProperties =
