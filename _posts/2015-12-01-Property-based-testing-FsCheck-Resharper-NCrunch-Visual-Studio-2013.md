@@ -49,7 +49,8 @@ If you are asking "How can I set up a development environment in .Net that would
     1. ```Install-Package FsCheck```
     2. ```Install-Package FsCheck.Nunit```
 3. Comment out the content in **FsCheckAddin.fs** file to allow NCrunch to run the tests
-    ``` fs
+    
+	``` fs
         //[<NUnitAddin(Description = "FsCheck addin")>] 
 		//type FsCheckAddin() = 
 		//  interface IAddin with 
@@ -58,39 +59,49 @@ If you are asking "How can I set up a development environment in .Net that would
 		//          host.GetExtensionPoint("TestCaseBuilders").Install(tcBuilder) 
         //          true 
    ```
+   
 4. In your test file add the following
-    ``` fs
+    
+	``` fs
         module Properties = 
         
             open NUnit.Framework 
             open FsCheck
     ```
+	
 5. Add this test to enable NCrunch
-    ``` fs
+    
+	``` fs
             //Needed to enable NCrunch 
             [<Ignore>][<Test>] 
             let ignoreMe() = () 
     ```
+	
 6. Create a static class whose methods are the properties you want to test
-    ``` fs
+    
+	``` fs
             type ListProperties =     
                 // Note: should fail     
                 static member reverseIsAsTheOriginal (xs:int[]) =          
                     Array.rev xs = xs
     ```
+	
 7. Add the following test to verify all the properties defined in the ```ListProperties``` type
-    ``` fs
+    
+	``` fs
             [<Test>] 
             let verifyAll () =      
                 Check.QuickThrowOnFailureAll<ListProperties>()
     ```
+	
 8. 	Enable NCrunch following *NCRUNCH > Enable NCrunch* from the main menu and let the engine catch the error
 9. If everything is in place you should see the visual error for the feedback
 	<center><img src="/assets/img/custom/blog/2015-12-01-Property-based-testing/NCrunch-visual-feed-back-error.png"></center>
 10. Run All Tests in the Resharper Runner to check the output
 	<center><img src="/assets/img/custom/blog/2015-12-01-Property-based-testing/Resharper-tests-run-error.png"></center>
 11. You should read a message similar to
-    ```
+    
+	```
         -- Checking ListProperties ---
         System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
         ---> System.Exception : ListProperties.reverseIsAsTheOriginal-Falsifiable, after 2 tests (4 shrinks) (StdGen (163791131,296083933)):
@@ -99,15 +110,19 @@ If you are asking "How can I set up a development environment in .Net that would
         Shrunk:
         [|1; 0|]
     ```
+	
 12. This shows that the property was falsifiable (as expected) but let's try to gather more informations to address the issue
 13. Change the test so that it provides a verbose output when failing
-    ```
+    
+	```
             [<Test>] 
     		let verifyAll () = 
                 Check.VerboseThrowOnFailureAll<ListProperties>()
     ```
+	
 14. Re-run the tests through Resharper Runner and read the output
-    ```
+    
+	```
         0:
 		[|-1|]
         1:
@@ -131,13 +146,16 @@ If you are asking "How can I set up a development environment in .Net that would
 		Shrunk:
         [|1; 0|]
     ```
+	
 15. The output shows the "shrinking process" from the third input original value ```[|1; -3; 0; 0|]``` to the  "shrunk" input ```[|1; 0|]``` that still falsifies the property 
 16. Let's correct the property to make it not falsifiable
-    ``` fs
+    
+	``` fs
             type ListProperties =  
                 static member reverseOfReverseIsAsTheOriginal (xs:int[]) = 
                     Array.rev (Array.rev xs) = xs
     ```
+	
 17. Re-run the tests that should be all green by now and read the output. You'll notice it's very verbose as expected and shows all the inputs used to verify the property.
 
 ### Conclusion
