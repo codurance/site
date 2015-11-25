@@ -151,8 +151,8 @@ Let me know what is your experience with property based testing in F# writing at
 - QuickCheck [QuickCheck]
 - Testing with F# Chap. 11 [Testing-FSharp]
 
-[FSCheck]: <http://fscheck.github.io/FsCheck/index.html>
-[NCrunch]: <http://www.ncrunch.net/>
-[John-Huges]: <http://vimeo.com/68383317>
-[QuickCheck]: <http://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/quick.pdf>
-[Testing-FSharp]: <http://www.packtpub.com/application-development/testing-f>
+[FSCheck]: http://fscheck.github.io/FsCheck/index.html
+[NCrunch]: http://www.ncrunch.net/
+[John-Huges]: http://vimeo.com/68383317
+[QuickCheck]: http://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/quick.pdf
+[Testing-FSharp]: http://www.packtpub.com/application-development/testing-f
