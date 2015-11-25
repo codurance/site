@@ -27,7 +27,9 @@ Test Driven Design helps us create a flexible implementation that meets the expe
 The above is the reason why I am exploring Property Based Testing; I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John Huges] says *"Don't write tests, generate them"*.
 
 I am not claiming that you should stop writing unit tests, I find that when driving the design [Outside-in] hence declaring the relations between my components, unit tests are the tool to use.
-When I want to discover deeper properties of the domain as well as address edge cases that no human can think of, property based testing could be a viable solution.
+However I sometimes want to discover deeper properties of my domain, and sometimes I am faced with features that have more edge cases than my brain could handle. 
+In such cases, generating a wide array of inputs to test my program is appealing; this is where I think property testing becomes a viable tool.
+
 	
 If you are asking "How can I set up a development environment in .Net that would allow me to experiment and work with this tool?" the following tutorial is for you. 
 
