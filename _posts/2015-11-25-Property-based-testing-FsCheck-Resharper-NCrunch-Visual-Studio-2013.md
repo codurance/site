@@ -20,7 +20,7 @@ tags:
 ---
 
 ### Background
-Craftsmanship in Software strives for high, predictable, repeatable and affordable quality; this is the reason why we care about design, code reviews and of course testing. 
+Craftsmanship in software strives for high, predictable, repeatable and affordable quality; this is the reason why we care about design, code reviews and of course testing. 
 Test Driven Design helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality; as professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
 	
 ### Property based testing
