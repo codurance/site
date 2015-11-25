@@ -2,7 +2,7 @@
 layout: post
 name: property-based-testing-with-FsCheck-Resharper-and-NCrunch-in-Visual-Studio-2013
 title: 'Property based testing with FsCheck, Resharper and NCrunch in Visual Studio 2013'
-date: 2015-12-01 09:00:00 +00:00
+date: 2015-11-25 09:00:00 +00:00
 author: Alessandro Di Gioia
 image:
     src: "/assets/img/custom/blog/2015-12-01-Property-based-testing/2015-12-01-Faran-crane-truck.jpg"
