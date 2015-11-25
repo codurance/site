@@ -19,14 +19,12 @@ tags:
 - visual studio
 ---
 
-# Property based testing with FsCheck, Resharper and NCrunch in Visual Studio 2013
-
 ### Background
 Craftsmanship in Software strives for high, predictable, repeatable and affordable quality; this is the reason why we care about design, code reviews and of course testing. 
 Test Driven Design helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality; as professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
 	
 ### Property based testing
-The above is the reason why I am exploring Property Based Testing; I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John-Huges] says *"Don't write tests, generate them"*.
+The above is the reason why I am exploring Property Based Testing; I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John Huges] says *"Don't write tests, generate them"*.
 
 I am not claiming that you should stop writing unit tests, I find that when driving the design Outside-In hence declaring the relations between my components, unit tests are the tool to use.
 When I want to discover deeper properties of the domain as well as address edge cases that no human can think of, property based testing could be a viable solution.
@@ -167,11 +165,11 @@ You are now ready to experiment with FsCheck!
 - [FsCheck]
 - [NCrunch]
 - [QuickCheck]
-- [Testing-FSharp]
+- [Testing FSharp] Chapter 11
 
 [FSCheck]: http://fscheck.github.io/FsCheck/index.html
 [NCrunch]: http://www.ncrunch.net/
-[John-Huges]: http://vimeo.com/68383317
+[John Huges]: http://vimeo.com/68383317
 [QuickCheck]: http://www.eecs.northwestern.edu/~robby/courses/395-495-2009-fall/quick.pdf
-[Testing-FSharp]: http://www.packtpub.com/application-development/testing-f
-[Let-me-know]: https://twitter.com/Parajao
+[Testing FSharp]: http://www.packtpub.com/application-development/testing-f
+[Let me know]: https://twitter.com/Parajao
