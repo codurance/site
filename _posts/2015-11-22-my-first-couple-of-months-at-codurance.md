@@ -50,9 +50,9 @@ My mentor and other craftsmen reviewed them to get an idea of what I wanted to a
 
 I found the working hours quite flexible, remote working is also an option (when you are on the bench or if the client allows, if you are in a project). Our co-founders are understanding and compassionate about our individual situations.
 
-Meetings are at their minimum, except for a weekly Apprentice meeting (run by an Apprentice and guided by at least one craftsperson) and a bi-monthly company-wide catchup.
+Meetings are at their minimum, except for a weekly Apprentices meeting (run by an Apprentice and guided by at least one Craftsperson) and a bi-monthly company-wide catchup.
 
-The apprentice meetings are full of fun -- we are accompanied by at least one craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
+The Apprentices meetings are full of fun -- we are accompanied by at least one Craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
 
 A bi-monthly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
