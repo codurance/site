@@ -50,11 +50,11 @@ My mentor and other craftsmen reviewed them to get an idea of what I wanted to a
 
 I found the working hours quite flexible, remote working is also an option (when you are on the bench or if the client allows, if you are in a project). Our co-founders are understanding and compassionate about our individual situations.
 
-Meetings are at their minimum, except for a weekly Apprenticeship meeting (run by an Apprentice and guided by at least one craftsperson) and a bi-weekly company-wide catchup.
+Meetings are at their minimum, except for a weekly Apprentices meeting (run by an Apprentice and guided by at least one Craftsperson) and a bi-monthly company-wide catchup.
 
-The apprentice meetings are full of fun -- we are accompanied by at least one craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
+The Apprentices meetings are full of fun -- we are accompanied by at least one Craftsperson, who disperses their knowledge and experience from a wide variety of topics designed to help us in the journey and fill the gaps in our knowledge and experience.
 
-A bi-weekly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
+A bi-monthly catchup involves sharing of knowledge via lightning talks, discussions and pairing sessions on pet projects over pizzas and beer (and of course veggies and non-alcoholic beverages for the [teetotalers](https://en.wikipedia.org/wiki/Teetotalism)).
 
 Katas, code reviews, mob programming and projects make up a learning week - all of these done individually or when pairing with another.
 
@@ -62,7 +62,7 @@ Katas, code reviews, mob programming and projects make up a learning week - all 
 On a daily basis I have worked on different katas or try to solve the same kata in various different ways (using different testing and refactoring approaches). This in turn gave me better insights into designing and refactoring techniques. Trying to solve the same problem in different ways has a positive impact on our problem solving skills especially when writing code. In my case I also learnt how to use the different libraries and methods to write tests. I would like to cite **Samir**, thanks to you, for the suggesting this approach during the first week of my Apprenticeship.
 
 ##### **Code reviews**
-Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through exchange of feedback from the peers who were involved in the group code review session.
+Just last week we did a group code review and time-boxed ourselves, performed a retrospective at the end of each interval and ensured we delivered a good chunk of the feedback before close of play. Such regular code review exercises are helping all of us learn about how to code better as we are not only learning from feedback from the tools we used, but also through exchange of feedback from our peers who were involved in the group code review session.
 
 ##### **Software Design, Specification Gathering & Communication**
 Recently we had an interesting mob-programming session where we were trying to model and write a game. At the end of the session, we had a retrospective, discussing the things we did well and didn't do well. Each of the apprentices and craftsmen were performing a specific role i.e. Developer, Domain Expert, etc... We learnt in retrospective, about areas where we could have done better and should focus on. That any test written gives immediate feedback about how well we have understood the domain and if we were taking the right approach. Why a certain approach when starting a project is more advantageous than another approach. What questions to ask and why it is important to ask the right questions to the domain expert or to give the right level of information to another developer and vice-versa. Sandro has described this process in detail in his [blog post](http://codurance.com/2015/11/01/practicing-well-crafted-design/) recently.
@@ -73,11 +73,11 @@ I found our office environment to be conducive to learning, sharing and collabor
 
 We share links to events, conferences, tweets, interesting articles, videos, blog posts, etc... via slack, document discussions and brain dumps via Google doc, huddles during lunch- and tea- breaks to talk about anything we are working on. Thanks to the library of printed and digital books to our disposal, the huge collection of [blog posts](http://codurance.com/blog) and [videos](http://codurance.com/videos/) on our site. 
 
-The apprentices and some craftsmen have collectively started social event which of course happens every Friday, sometimes it's dinner at a nearby restaurant, while at other times an indoor movie over snacks and drinks in our office premises.
+The apprentices and some craftsmen have collectively started a social event which of course happens every Friday, sometimes it's dinner at a nearby restaurant, while at other times an indoor movie over snacks and drinks at our office premises.
 
 ### It is worthwhile and that's why we are here
 
-It is a privilege to be able to work alongside very experienced craftsmen from our industry. We are very lucky to have the opportunity to be guided and mentored by talented and like minded developers.
+It is a privilege to be able to work alongside very experienced craftsmen from our industry. We are very lucky and thankful to have the opportunity to be guided and mentored by talented and like minded developers.
 
 This is my first job where the company has a completely flat hierarchy and where we share similar values.
 
