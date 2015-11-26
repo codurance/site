@@ -28,7 +28,7 @@ different directory structure. By default, [sbt](http://www.scala-sbt.org/) and 
 	> /scr/test/scala       // tests
 	> /scr/test/resouces    // test resources
 
-For the past few years I've been experimenting with different directory structure for my projects. I want my directories to be more meaninful when it comes to explain the business domain. The new directory structure is part of what I call _Interaction Driven Design (IDD)_ and a full talk on it can be found in our [videos area](http://codurance.com/videos/). I give a lot of details about the rational behind the new directory structure on that talk. 
+For the past few years I've been experimenting with different directory structure for my projects. I want my directories to be more meaningful when it comes to explain the business domain. The new directory structure is part of what I call _Interaction Driven Design (IDD)_ and a full talk on it can be found in our [videos area](http://codurance.com/videos/). I give a lot of details about the rational behind the new directory structure on that talk. 
 
 The directory structure I would like to use for this new project is:
 
