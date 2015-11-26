@@ -69,7 +69,7 @@ If you are asking "How can I set up a development environment in .Net that would
             open FsCheck
     ```
 	
-5. Add this test to enable NCrunch
+5. Add this test to enable [NCrunch]
     
 	``` fs
             //Needed to enable NCrunch 
@@ -94,7 +94,7 @@ If you are asking "How can I set up a development environment in .Net that would
                 Check.QuickThrowOnFailureAll<ListProperties>()
     ```
 	
-8. 	Enable NCrunch following *NCRUNCH > Enable NCrunch* from the main menu and let the engine catch the error
+8. 	Enable [NCrunch] following *NCRUNCH > Enable NCrunch* from the main menu and let the engine catch the error
 9. If everything is in place you should see the visual error for the feedback
 	<center><img src="/assets/img/custom/blog/2015-11-25-Property-based-testing/NCrunch-visual-feed-back-error.png"></center>
 10. Run All Tests in the Resharper Runner to check the output
@@ -166,7 +166,7 @@ If you are asking "How can I set up a development environment in .Net that would
 		[1; 0]
     ```
 	
-15. The output shows the "shrinking process" from the sixth input (identified by 5:) original value ```[-3; 1; 5; -3; 6; 2; 6; -2]``` to the  "shrunk" input ```[1; 0]``` that still falsifies the property 
+15. The output shows the "shrinking process" from the sixth input (identified by 5:) original value ```[-3; 1; 5; -3; 6; 2; 6; -2]``` to the  "shrunk" (reduced) input ```[1; 0]``` that still falsifies (makes it fail) the property 
 16. Let's correct the property as **the reverse of the reverse of a list is equal to the original**
     
 	``` fs
@@ -178,7 +178,7 @@ If you are asking "How can I set up a development environment in .Net that would
 17. Re-run the tests that should be all green by now and read the output. You'll notice it's very verbose as expected and shows all the inputs used to verify the property.
 
 ### Conclusion
-You are now ready to experiment with FsCheck!
+You are now ready to experiment with [FsCheck]!
 [Let me know] what is your experience with property based testing in F#.
 
 ### Resources:
