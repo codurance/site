@@ -48,7 +48,7 @@ If you are asking "How can I set up a development environment in .Net that would
 2. Open the Nuget Package Manager following *TOOLS > Nuget Package Manager > Package Manager Console* from the main menu and type
     1. ```Install-Package FsCheck```
     2. ```Install-Package FsCheck.Nunit```
-3. Comment out the content in **FsCheckAddin.fs** file to allow NCrunch to run the tests
+3. Comment out the content in **FsCheckAddin.fs** file to allow [NCrunch] to run the tests
     
 	``` fs
         //[<NUnitAddin(Description = "FsCheck addin")>] 
