@@ -5,7 +5,7 @@ title: 'Property based testing with FsCheck, Resharper and NCrunch in Visual Stu
 date: 2015-11-25 09:00:00 +00:00
 author: Alessandro Di Gioia
 image:
-    src: "/assets/img/custom/blog/2015-12-01-Property-based-testing/2015-12-01-Faran-crane-truck.jpg"
+    src: "/assets/img/custom/blog/2015-12-01-Faran-crane-truck.jpg"
     attribution:
         text: Faran crane truck (13) by Aleksander Stein
         href: https://www.flickr.com/photos/aleksander_se/4395710462/in/photolist-7Grazq-u8FeRe-aqN7wn-quFTva-59p1jo-fCcGpb-7pZsgL-wQaXfD-8dcvpw-7GravJ-55WvHY-mQNY6-cavBq7-tatNgX-ybwDP-73JJXP-zbo2F9-x74s1Q-5RuhNR-7K2Ppz-59KLFw-6RoBFb-hJCjcV-qMhRKv-oD2dvE-b4TNGV-56ah5u-6bGXrN-e9qotr-4Bz52Z-7K6KNU-ma811D-bBeGjZ-rbmUEf-4TsmqM-ejPJ3o-3YCK6v-55WzgW-iKD8Yb-dCt5Er-55WA8A-cavy1G-8dGnzC-55SmLZ-4bSdwh-9WUchN-4Bz4PF-6UVh7x-cavM6y-6h2Q2n/
