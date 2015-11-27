@@ -30,11 +30,11 @@ To get rid of this bad habit, I recorded two videos, one performing some common 
 
 #### Part I - Programming With Mouse and Keyboard
 
-<iframe width="694" height="390" src="https://www.youtube.com/embed/g6kfdlUZARs" frameborder="0" allowfullscreen></iframe>
+<iframe width="694" height="390" src="https://www.youtube.com/embed/g6kfdlUZARs&vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 #### Part II - Programming With Keyboard Only
 
-<iframe width="694" height="390" src="https://www.youtube.com/embed/Rcf6cwP_J8M" frameborder="0" allowfullscreen></iframe>
+<iframe width="694" height="390" src="https://www.youtube.com/embed/Rcf6cwP_J8M&vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 
 To sum it up, mouseless programming took almost one minute less than programming with the mouse and the keyboard, which is around 15% improvement.  
@@ -42,6 +42,7 @@ To sum it up, mouseless programming took almost one minute less than programming
 The comparison is of course not a precise scientific experiment. Some actions were slower with one scenario, some with another one, but overall they should have a more or less the same effect. I used only the standard IDE and ReSharper with the IntelliJ IDEA keyboard scheme, except moving an open document to a new vertical tab group. I use this action often, that's why I created a custom shortcut for it. I also take advantage of my custom [File Template](https://www.jetbrains.com/resharper/help/Templates__Applying_Templates__Creating_Files_from_Templates.html) and two [Live Templates](https://www.jetbrains.com/ruby/help/creating-and-editing-live-templates.html), which I created in the ReSharper Template Explorer.  I'll write more detailed about them in my next post – 'Setting up a productive programming environment'.
 
 To eliminate or at least minimise the bad habit, you can use a simple healing method – a 10 to 15 minutes 'mouseless' session per day with these simple rules:
+
 1. Use only the keyboard.
 2. If you encounter a situation where you would usually use a mouse, search for a shortcut – in the IDE itself or on the internet, with a side-effect of getting accustomed with your default internet browser's shortcuts.
 3. If you cannot find appropriate shortcut in approx. 3 minutes, use the mouse to continue.
@@ -51,6 +52,7 @@ It could be a bit stressful in the beginning, sometimes you might have to even h
 It should not take you long to be able to use your favourite IDE in the full-screen mode, without any toolbars, focusing solely on coding. Moreover, if you are used to handling source control actions through visual dialogs, you might find out it's much faster to use command line tools (e.g. Git Bash instead of the GitHub extension). Switching back to the normal IDE view will become a very rare event, reserved for slower operations or tasks that are too complex to be handled by the keyboard.
 
 **Additional resources for the most common shortcuts:**
+
 - [Open, wiki-style Reference Database for Keyboard Shortcuts](http://www.shortcutworld.com)
 - [Visual Studio keyboard shortcuts](http://visualstudioshortcuts.com)
 - [IntelliJ ReSharper Default Keymap Visual Studio Scheme](https://www.jetbrains.com/resharper/docs/ReSharper_DefaultKeymap_VSscheme.pdf)

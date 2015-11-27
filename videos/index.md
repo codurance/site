@@ -8,6 +8,48 @@ title: Videos
         <!-- left side bar -->
         <div class="col-md-9">
 
+            <!--Screencast - Mouseless Programming, Part II-->
+            <div class=" margin-bottom-40">
+                <h2>Screencast - Mouseless Programming, Part II</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/g6kfdlUZARs&vq=hd720" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>This is the second video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.</p>
+
+                    <p>Only keyboard was used for programming in this video.</p>
+
+                    <p>This video is a part of the blog post <a href="http://codurance.com/2015/11/25/mouseless-programming/">Mouseless Programming</a>.</p>
+                </div>
+                <div class="time-place">
+                    <p>25 November 2015</p>
+                </div>
+            </div>
+            <!--Screencast - Mouseless Programming, Part II-->
+
+            <!--Screencast - Mouseless Programming, Part I-->
+            <div class=" margin-bottom-40">
+                <h2>Screencast - Mouseless Programming, Part I</h2>
+                <div class="video-post">
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/watch?v=g6kfdlUZARs&vq=hd720" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="blog-post-tags">
+                </div>
+                <div class="description">
+                    <p>This is the first video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.</p>
+
+                    <p>Both mouse and keyboard were used in this video.</p>
+
+                    <p>This video is a part of the blog post <a href="http://codurance.com/2015/11/25/mouseless-programming/">Mouseless Programming</a>.</p>
+                </div>
+                <div class="time-place">
+                    <p>25 November 2015</p>
+                </div>
+            </div>
+            <!--Screencast - Mouseless Programming, Part I-->
+
             <!--Does TDD lead to good design?-->
             <div class=" margin-bottom-40">
                 <h2>Does TDD really lead to good design?</h2>
