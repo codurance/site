@@ -21,7 +21,7 @@ tags:
 
 ### Background
 Craftsmanship in software strives for high, predictable, repeatable and affordable quality; this is the reason why we care about design, code reviews and of course testing. 
-Test Driven Design helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality; as professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
+Test Driven Development helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality; as professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
 	
 ### Property based testing
 The above is the reason why I am exploring Property Based Testing; I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John Huges] says *"Don't write tests, generate them"*.
