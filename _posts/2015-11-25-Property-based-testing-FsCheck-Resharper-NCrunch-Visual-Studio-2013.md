@@ -82,7 +82,7 @@ If you are asking "How can I set up a development environment in .NET that would
 	``` fs
             type ListProperties =     
                 // Note: should fail     
-                static member reverseIsAsTheOriginal (xs:int[]) =          
+                static member reverseIsAsTheOriginal (xs:int list) =          
                     List.rev xs = xs
     ```
 	
