@@ -20,15 +20,15 @@ tags:
 ---
 
 ### Background
-Craftsmanship in software strives for high, predictable, repeatable and affordable quality; this is the reason why we care about design, code reviews and of course testing. 
-Test Driven Development helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality; as professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
+Craftsmanship in software strives for high, predictable, repeatable and affordable quality. This is the reason why we care about design, code reviews and of course testing. 
+Test Driven Development helps us create a flexible implementation that meets the expectations of our clients in terms of features, performance and quality. As professionals we have to master as many tools as possible to reach our goal of steadily providing value. 
 	
 ### Property based testing
-The above is the reason why I am exploring Property Based Testing; I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John Huges] says *"Don't write tests, generate them"*.
+The above is the reason why I am exploring Property Based Testing. I like to think about it as *"Let the machine do the heavy lifting for you"* or as [John Huges] says *"Don't write tests, generate them"*.
 
 I am not claiming that you should stop writing unit tests. I find that when driving the design [Outside-in] hence declaring the relations between my components, unit tests are the tool to use.
 Sometimes when I want to discover deeper properties of my domain, I am faced with features that have more edge cases than my brain could handle. 
-In such cases, generating a wide array of inputs to test my program is appealing; this is where I think property testing becomes a viable tool.
+In such cases, generating a wide array of inputs to test my program is appealing. This is where I think property testing becomes a viable tool.
 
 	
 If you are asking "How can I set up a development environment in .NET that would allow me to experiment and work with this tool?" the following tutorial is for you. 
