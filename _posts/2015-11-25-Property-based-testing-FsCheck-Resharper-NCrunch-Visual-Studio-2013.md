@@ -31,7 +31,7 @@ However I sometimes want to discover deeper properties of my domain, and sometim
 In such cases, generating a wide array of inputs to test my program is appealing; this is where I think property testing becomes a viable tool.
 
 	
-If you are asking "How can I set up a development environment in .Net that would allow me to experiment and work with this tool?" the following tutorial is for you. 
+If you are asking "How can I set up a development environment in .NET that would allow me to experiment and work with this tool?" the following tutorial is for you. 
 
 ### Development environment details
 
