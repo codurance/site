@@ -77,7 +77,7 @@ If you are asking "How can I set up a development environment in .NET that would
             let ignoreMe() = () 
     ```
 	
-6. Create a static class whose methods are the properties you want to test. For this example I'll test a plainly wrong property about lists which is **the reverse of a list is always equal to the original**. 
+6. Create a static class whose methods are the properties you want to test. For this example I'll test an incorrect implementation of a list - **the reverse of a list is always equal to the original**.
     
 	``` fs
             type ListProperties =     
