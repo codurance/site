@@ -8,11 +8,11 @@ title: Videos
         <!-- left side bar -->
         <div class="col-md-9">
 
-            <!--Screencast - Mouseless Programming, Part II-->
+            <!-- Screencast - Mouseless Programming, Part II -->
             <div class=" margin-bottom-40">
                 <h2>Screencast - Mouseless Programming, Part II</h2>
                 <div class="video-post">
-                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/g6kfdlUZARs" frameborder="0" allowfullscreen></iframe>
+                    <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/Rcf6cwP_J8" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="blog-post-tags">
                 </div>
@@ -27,9 +27,9 @@ title: Videos
                     <p>25 November 2015</p>
                 </div>
             </div>
-            <!--Screencast - Mouseless Programming, Part II-->
+            <!-- Screencast - Mouseless Programming, Part II -->
 
-            <!--Screencast - Mouseless Programming, Part I-->
+            <!-- Screencast - Mouseless Programming, Part I -->
             <div class=" margin-bottom-40">
                 <h2>Screencast - Mouseless Programming, Part I</h2>
                 <div class="video-post">
@@ -48,7 +48,7 @@ title: Videos
                     <p>25 November 2015</p>
                 </div>
             </div>
-            <!--Screencast - Mouseless Programming, Part I-->
+            <!-- Screencast - Mouseless Programming, Part I -->
 
             <!--Does TDD lead to good design?-->
             <div class=" margin-bottom-40">
