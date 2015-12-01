@@ -19,8 +19,6 @@ tags:
 - Visual Studio
 ---
 
-## Mouseless Programming
-
 To be honest, I used to be quite a power mouse user. Looking back and trying to figure out why I got addicted, it probably happened when Microsoft released Word 6.0 with its twenty-some toolbars with thirty-some buttons in each toolbar. I didn't remember many shortcuts, except ```ctrl+c```, ```ctrl+v```, and ```ctrl+s```, which I did learn and instantly became a full-stack Word guru in the eyes of toolbar-only users.
 
 Slowly, but inevitably, IntelliJ IDEA and Visual Studio replaced my command-line Turbo Pascal and Fortran compilers. Few years later, one nice person showed me ReSharper... Still, I'd rather made jokes about 3,721 IDE shortcuts and Spiderman skills to execute 9-fingers keyboard shortcut combinations, instead of learning one shortcut per week – and hence my right hand became a devoted Logitech docking station.
