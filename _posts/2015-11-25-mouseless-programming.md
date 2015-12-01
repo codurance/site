@@ -30,11 +30,11 @@ To get rid of this bad habit, I recorded two videos, one performing some common 
 
 #### Part I - Programming With Mouse and Keyboard
 
-<iframe width="694" height="390" src="https://www.youtube.com/embed/g6kfdlUZARs" frameborder="0" allowfullscreen></iframe>
+<iframe width="694" height="390" src="https://www.youtube.com/embed/g6kfdlUZARs&vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 #### Part II - Programming With Keyboard Only
 
-<iframe width="694" height="390" src="https://www.youtube.com/embed/Rcf6cwP_J8M" frameborder="0" allowfullscreen></iframe>
+<iframe width="694" height="390" src="https://www.youtube.com/embed/Rcf6cwP_J8M&vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 
 To sum it up, mouseless programming took almost one minute less than programming with the mouse and the keyboard, which is around 15% improvement.  
