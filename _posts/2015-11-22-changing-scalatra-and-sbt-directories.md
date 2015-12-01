@@ -12,7 +12,7 @@ tags:
 - sbt
 - craftsmanship
 - design
-- domain driven design
+- domain-driven-design
 - DDD
 --- 
 

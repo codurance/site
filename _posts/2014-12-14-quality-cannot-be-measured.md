@@ -9,7 +9,7 @@ image:
 tags:
 - craftsmanship
 - tdd
-- test-driven development
+- test-driven-development
 - quality
 - metrics
 ---

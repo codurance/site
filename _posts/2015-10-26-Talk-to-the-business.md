@@ -12,8 +12,8 @@ image:
 tags:
 - DDD
 - Learning
-- Ubiquitous language
-- Bounded context
+- Ubiquitous-language
+- Bounded-context
 ---
 Almost a month ago, I did this amazing course at [SkillsMatter](https://skillsmatter.com/): ["Eric Evans Domain Driven Design Immersion Workshop"](https://skillsmatter.com/courses/202-domain-model). The course was very intensive and provided me with the opportunity to reinforce a lot of concepts I already knew as well as learn a few more.
 

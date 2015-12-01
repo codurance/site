@@ -9,7 +9,7 @@ image:
 tags:
 - java8
 - streams
-- functional programming
+- functional-programming
 
 ---
 

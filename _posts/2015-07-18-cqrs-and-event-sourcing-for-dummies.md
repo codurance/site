@@ -11,7 +11,7 @@ image:
         href: https://flic.kr/p/qbJxfD
 tags:
 - cqrs
-- event sourcing
+- event-sourcing
 - architecture
 
 ---

@@ -9,9 +9,9 @@ image:
 tags:
 - craftsmanship
 - tdd
-- test-driven development
+- test-driven-development
 - naming
-- unit test
+- unit-test
 ---
 
 What should my first test be? What should I test next? These are common questions that I'm asked over and over again. I quite often ask these questions myself. Deciding on what to test is hard. Deciding on the order that things should be tested is even harder.[^1] But writing tests first is not the only problem. How often did we get frustrated while dealing with existing tests which we had no idea what they are testing? 

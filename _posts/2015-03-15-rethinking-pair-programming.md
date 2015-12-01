@@ -9,8 +9,8 @@ image:
 tags:
 - craftsmanship
 - quality
-- pair programming
-- codurance way
+- pair-programming
+- codurance-way
 ---
 
 By default, we always do our work in pairs. We strongly believe that the quality achieved by two people working on the same task is superior to when done by a single person. However, there are times where pairing is not very efficient. 
