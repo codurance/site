@@ -11,12 +11,12 @@ image:
         href: https://www.flickr.com/photos/aleksander_se/4395710462/in/photolist-7Grazq-u8FeRe-aqN7wn-quFTva-59p1jo-fCcGpb-7pZsgL-wQaXfD-8dcvpw-7GravJ-55WvHY-mQNY6-cavBq7-tatNgX-ybwDP-73JJXP-zbo2F9-x74s1Q-5RuhNR-7K2Ppz-59KLFw-6RoBFb-hJCjcV-qMhRKv-oD2dvE-b4TNGV-56ah5u-6bGXrN-e9qotr-4Bz52Z-7K6KNU-ma811D-bBeGjZ-rbmUEf-4TsmqM-ejPJ3o-3YCK6v-55WzgW-iKD8Yb-dCt5Er-55WA8A-cavy1G-8dGnzC-55SmLZ-4bSdwh-9WUchN-4Bz4PF-6UVh7x-cavM6y-6h2Q2n/
 tags:
 - craftsmanship
-- functional programming
+- functional-programming
 - dotnet
 - fsharp
 - fscheck
-- property based testing
-- visual studio
+- property-based-testing
+- visual-studio
 ---
 
 ### Background

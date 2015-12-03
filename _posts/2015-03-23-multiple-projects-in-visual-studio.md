@@ -9,7 +9,7 @@ image:
 tags:
 - c#
 - .NET
-- Visual Studio
+- Visual-Studio
 - practices
 ---
 

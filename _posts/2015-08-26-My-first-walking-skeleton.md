@@ -10,11 +10,11 @@ image:
         text: Picture of a squirrel skeleton
         href: https://commons.wikimedia.org/wiki/File:Die_vergleichende_Osteologie_(1821)_Sciurus_vulgaris.jpg
 tags:
-- Walking Skeleton
+- Walking-Skeleton
 - TDD
-- Continuous Integration
-- Continuous Deployment
-- Domain Driven Design
+- Continuous-Integration
+- Continuous-Deployment
+- Domain-Driven-Design
 - Heroku
 - Scala
 - SBT
