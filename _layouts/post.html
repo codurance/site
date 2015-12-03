@@ -38,6 +38,15 @@ group:
         <hr/>
         <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
         {% endif %}
+        <br />
+        <div class="headline">
+            <h2>Related content</h2>
+        </div>
+        <ul>
+            {% for post in site.related_posts limit: 7 %}
+                <li><a href="{{ post.url }}">{{ post.title }}</li>
+            {% endfor %}
+        </ul>
     </div>
     <!--End Blog Post-->
 </div>
