@@ -54,6 +54,40 @@ group:
           </ul>
         {% endif %}
         <!--End Related Blog Posts-->
+
+	<!--About the author-->
+	{% if page.author %}
+          {% for member in site.data.team %}
+            {% if page.author == member.name %}
+              <div class="headline">
+                <h2>About the author</h2>
+              </div>
+              <div class="row">
+                {% if member.twitter %}
+                  <div class="col-sm-12">
+                    <em>If you liked this article and/or want to discuss it with its author,
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"
+                      >
+                        click here to let her/him know on Twitter!
+                      </a>
+                    </em>
+                  </div>
+                {% endif %}
+                <div class="col-sm-9">
+	          <h3>{{ member.name }}</h3>
+                  {{ member.fullDescription }}
+                </div>
+                <div class="col-sm-3">
+                 <img class="img-responsive" src="{{ member.image }}">
+                </div>
+              </div>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+	{% endif %}
+        <!--End About the author-->
     </div>
     <!--End Blog Post-->
 </div>

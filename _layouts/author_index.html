@@ -8,6 +8,25 @@ group:
 <div class="row blog-page blog-item">
 <!-- Left Sidebar -->
 <div class="col-md-9 md-margin-bottom-60">
+    {% for member in site.data.team %}
+      {% if page.author == member.name %}
+        <div class="row">
+          <div class="col-sm-9">
+            {{ member.fullDescription }}
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive" src="{{ member.image }}">
+            <ul class="list-unstyled list-inline team-socail">
+              <li><a href="http://twitter.com/{{member.twitter}}"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
+              {% if member.github != null %}
+                <li><a href="http://github.com/{{member.github}}"><i class="fa fa-github"></i>&nbsp;Github</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+        {% break %}
+      {% endif %}
+    {% endfor %}
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         {% if page.date %}
