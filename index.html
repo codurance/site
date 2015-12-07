@@ -156,7 +156,7 @@ layout: default
                             <img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ post.title }}" alt="{{ post.title }}">
                         {% endif %}
                         <div class="blog-content">
-                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
                             <p>{{ post.content | strip_html | truncatewords:30 }}</p>
                         </div>
                         <ul class="list-inline blog-box-info">
