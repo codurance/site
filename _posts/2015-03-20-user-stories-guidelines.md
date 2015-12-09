@@ -10,8 +10,8 @@ tags:
 - craftsmanship
 - quality
 - agile
-- codurance way
-- user story
+- codurance-way
+- user-story
 ---
 
 _Disclaimer: This post was extracted from an internal Codurance document used to help our apprentices to learn how we work. We all understand that each project is different and that by no means we can apply exactly the same techniques and practices everywhere. However, the text below serves not only as a foundation but also as a guideline for all of us when it comes to user stories. There are many good books and posts written about user stories. By no means this post is meant to be a summary of all the good practices around this area._

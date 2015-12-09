@@ -10,8 +10,8 @@ tags:
 - craftsmanship
 - quality
 - agile
-- codurance way
-- the software craftsman
+- codurance-way
+- the-software-craftsman
 ---
 
 _Our co-founder [Sandro Mancuso](http://twitter.com/sandromancuso) was [interviewed by Ben Linders from InfoQ](http://www.infoq.com/articles/mancuso-software-craftsman). Below is the full transcript._ 

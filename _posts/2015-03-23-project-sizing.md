@@ -9,7 +9,7 @@ image:
 tags:
 - estimatation 
 - agile
-- codurance way
+- codurance-way
 - backlog
 ---
 Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a "ballpark" figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation. 
