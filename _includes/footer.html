@@ -1,22 +1,98 @@
-<div class="footer-default">
+<!--=== Footer ===-->
+<div class="footer-v1">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-3 md-margin-bottom-40">
+                    <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+                    <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
+                </div><!--/col-md-3-->
+                <!-- End About -->
+
+                <!-- Latest -->
+                <div class="col-md-3 md-margin-bottom-40">
+                    <div class="posts">
+                        <div class="headline"><h2>Latest Blogs</h2></div>
+                        <ul class="list-unstyled latest-list">
+                            {% for post in site.posts limit:3 %}
+                            <li>
+                                <a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
+                                <small>{{ post.author | author_links }}</small>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div><!--/col-md-3-->  
+                <!-- End Latest --> 
+                
+                <!-- Link List -->
+                <div class="col-md-3 md-margin-bottom-40">
+                    <div class="headline"><h2>Useful Links</h2></div>
+                    <ul class="list-unstyled link-list">
+                        <li><a href="{{ '/services' | prepend: site.baseurl }}">Services</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/videos' | prepend: site.baseurl }}">Videos</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/work-with-us' | prepend: site.baseurl }}">Work with us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/aboutus/ourcompany' | prepend: site.baseurl }}">About us</a><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div><!--/col-md-3-->
+                <!-- End Link List -->                    
+
+                <!-- Contact Us -->
+                <div class="col-md-3 map-img md-margin-bottom-40">
+                    <div class="headline"><h2>Contact Us</h2></div>                         
+                    <address class="md-margin-bottom-40">
+                        <a href="https://www.google.co.uk/maps/place/I2+Office+Aldersgate/@51.5175798,-0.0978509,19z/data=!4m2!3m1!1s0x0000000000000000:0x71133b028b4f269d" target="_blank">200 Aldersgate, EC1A 4HD<br>
+                        London, UK </a><br>
+                        Phone: +44 203 440 4015 <br>
+                        Email: <a href="mailto:hello@codurance.com" target="_blank" class="">hello@codurance.com</a>
+                    </address>
+                </div><!--/col-md-3-->
+                <!-- End Contact Us -->
+            </div>
+        </div> 
+    </div><!--/footer-->
+
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <p class="copyright-space">
-                         Company Registration No: 8712584
-                         | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
-                         | Phone: +44 203 440 4015
+                <div class="col-md-6">                     
+                    <p>
+                        Company Registration No: 8712584
+                       <!--<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>-->
                     </p>
-
                 </div>
-                <div class="col-md-4">
-                    <ul class="social-icons pull-right">
-                        <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
-                        <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/codurance/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/atom.xml" data-original-title="Feed" class="tooltips" data-toggle="tooltip" data-placement="top" title="" target="_blank">
+                                <i class="fa fa-rss"></i> 
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            </div> <!--/row-->
-        </div> <!--/container-->
+                <!-- End Social Links -->
+            </div>
+        </div> 
     </div><!--/copyright-->
 </div>
+<!--=== End Footer Version 1 ===-->
