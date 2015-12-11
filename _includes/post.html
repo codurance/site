@@ -1,32 +1,26 @@
-<div class="row blog blog-medium margin-bottom-40">
-    <div class="col-md-4">
-        <p><img class="img-responsive" src="{{post.image.src}}" alt=""/></p>
-        {% if post.image.attribution %}
-            <p class="blog-image-attr">
-                {% if post.image.attribution.href %}
-                    <a href="{{post.image.attribution.href}}">{{post.image.attribution.text}}</a>
-                {% else %}
-                    {{post.image.attribution.text}}
-                {% endif %}
-            </p>
-        {% endif %}
-    </div>
-    <div class="col-md-8 blog-post">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</li>
-            <li><i class="fa fa-user"></i> {{ post.author | author_links }} </li>
+<div class="funny-boxes">
+    <div class="row">
+        <div class="col-md-4 funny-boxes-img">
+            <a href="{{ post.url }}"><img class="img-responsive" src="{{post.image.src}}" alt="{{post.title}}"></a>
+            <ul class="list-unstyled">
+               <li><h5><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</h5></li>
+                <li><h5><i class="fa fa-pencil"></i> {{ post.author | author_links }}</h5></li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {% if post.tags.size > 0 %}
-            <li><i class="fa fa-tags"></i>
-                {% for tag in post.tags %}
-                    <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
-                {% endfor %}
-            </li>
+            <div class="blog-post-tags">
+              <ul class="list-unstyled list-inline blog-tags">
+                <li>
+                    {% for tag in post.tags %}
+                        <i class="fa fa-tags"></i><a href="/blog/tag/{{ tag }}/">{{ tag }} </a>
+                    {% endfor %}
+                </li>
+              </ul>
+            </div>
             {% endif %}
-        </ul>
-        <p>{{ post.content | strip_html | truncatewords:50}}</p>
-
-        <p><a class="btn-u btn-u-small" href="{{ post.url }}"><i class="icon-location-arrow"></i> Read More</a>
-        </p>
-    </div>
+            <p>{{ post.content | strip_html | truncatewords:50}}</p>
+        </div>
+    </div>                            
 </div>
