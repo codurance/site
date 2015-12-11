@@ -1,43 +1,42 @@
 ---
-layout: post
+layout: default
 group:
   title: Blog
   link: /blog
 ---
+
 <div class="container content">
   <div class="row blog-page">
 <!-- Left Sidebar -->
     <div class="col-md-9 md-margin-bottom-60">
     <!--Blog Post-->
       <div class="blog margin-bottom-40">
-          <h2>{{page.title}}</h2>
-          {% if page.date %}
-            <div class="blog-post-tags">
-                <ul class="list-unstyled list-inline blog-info">
-                    <li><i class="fa fa-calendar"></i> {{ page.date | date_to_string }}</li>
-                    <li><i class="fa fa-pencil"></i> {{ page.author }}</li>
-                    <!-- <li class="blog-share-buttons">
-                      <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US   </script>
-                      <script type="IN/Share"></script>
-    
-                      <a class="twitter-share-button"
-                          href="https://twitter.com/intent/tweet?url=http://codurance.com{{ page.url    }}"
-                          data-count="none">
-                          Tweet</a>
-                    </li> -->
+          <h2>{{ page.title }}</h2>
+          <div class="blog-post-tags">
+              <ul class="list-unstyled list-inline blog-info">
+                  <li><i class="fa fa-calendar"></i> {{ page.date | date_to_string }}</li>
+                  <li><i class="fa fa-pencil"></i> {{ page.author }}</li>
+              </ul>
+              <!-- <ul class="list-unstyled list-inline blog-info"> -->
+                <!-- <li class="blog-share-buttons">
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                    <script type="IN/Share"></script>
+                </li>
+                <li class="blog-share-buttons">
+                  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=http://codurance.com{{ page.url }}" data-count="none"> Tweet</a>
+                </li> -->
+              <!-- </ul> -->
+              {% if page.tags.size > 0 %}
+                <ul class="list-unstyled list-inline blog-tags">
+                  <li>
+                    <i class="fa fa-tags"></i>
+                      {% for tag in page.tags %}
+                        <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
+                      {% endfor %}
+                  </li>
                 </ul>
-                {% if post.tags.size > 0 %}
-                  <ul class="list-unstyled list-inline blog-tags">
-                    <li>
-                      <i class="fa fa-tags"></i>
-                        {% for tag in post.tags %}
-                          <a href="/blog/tag/{{ tag }}/">{{ tag }}</a>
-                        {% endfor %}
-                    </li>
-                  </ul>
-                {% endif %}
-            </div>
-          {% endif %}
+              {% endif %}
+          </div>
   
          <!--  {% if page.image %}
             <div class="blog-img">
@@ -73,16 +72,23 @@ group:
 <!-- End Left Sidebar -->
 
 <!-- Right Sidebar -->
-    <div class="col-md-3 magazine-page">
-        <!-- Blog Latest Tweets -->
-        <div class="blog-twitter margin-bottom-30">
-            <div class="headline headline-md">
-                <h2>Codurance Tweets</h2>
-            </div>
-            <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="   673835554698563584" height="1200">Tweets by @codurance</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.loca    tion)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"    ://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"   script","twitter-wjs");</script>
-        </div>
-        <!-- End Blog Latest Tweets -->
+    <div class="col-md-3">
+      <div class="posts margin-bottom-40">
+          <div class="headline headline-md"><h2>Recent Blogs</h2></div>
+          {% for post in site.posts limit: 7 %}
+          <dl class="dl-horizontal">
+              <dt><a href="{{ post.url }}"><img src="{{ post.image.src }}" alt=""></a></dt>
+              <dd>
+                  <p><a href="{{ post.url }}">{{ post.title | truncatewords: 7 }}</a></p> 
+              </dd>
+          </dl>
+          {% endfor %}
+      </div>
+      <div class="posts margin-bottom-40">
+          <div class="headline headline-md"><h2>Latest Tweets</h2></div>
+          <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="675332417700409344">Tweets by @codurance</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
     </div>
 <!-- End Right Sidebar -->
   </div>

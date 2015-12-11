@@ -1,44 +1,42 @@
 ---
 layout: default
-group:
-  title: Blog
-  link: /blog
+title: Blog
 ---
 <div class="container">
-<div class="row blog-page blog-item">
-<!-- Left Sidebar -->
-<div class="col-md-9 md-margin-bottom-60">
-    <!--Blog Post-->
-    <div class="blog margin-bottom-40">
-        {% if page.date %}
-        <div class="blog-post-tags">
-            <ul class="list-unstyled list-inline blog-info">
-                <li><i class="icon-calendar"></i> {{ page.date | date_to_string }}</li>
-                <li><i class="icon-pencil"></i> {{ page.author }}</li>
-            </ul>
+    <div class="row blog-page blog-item">
+        <!-- Left Sidebar -->
+        <div class="col-md-9 md-margin-bottom-60">
+            <!--Blog Post-->
+            <div class="blog margin-bottom-40">
+                {% if page.date %}
+                <div class="blog-post-tags">
+                    <ul class="list-unstyled list-inline blog-info">
+                        <li><i class="icon-calendar"></i> {{ page.date | date_to_string }}</li>
+                        <li><i class="icon-pencil"></i> {{ page.author }}</li>
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% for post in page.posts %}
+                     {% include post.html post=post %}
+                {% endfor %}
+
+            </div>
+            <!--End Blog Post-->
         </div>
-        {% endif %}
-
-        {% for post in page.posts %}
-             {% include post.html post=post %}
-        {% endfor %}
-
-    </div>
-    <!--End Blog Post-->
-</div>
-<!-- End Left Sidebar -->
+        <!-- End Left Sidebar -->
 
 <!-- Right Sidebar -->
-<div class="col-md-3 magazine-page">
-    <!-- Blog Latest Tweets -->
-   <div class="blog-twitter margin-bottom-30">
-        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-    <!-- End Blog Latest Tweets -->
-</div>
+        <div class="col-md-3 magazine-page">
+            <!-- Blog Latest Tweets -->
+           <div class="blog-twitter margin-bottom-30">
+                <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <!-- End Blog Latest Tweets -->
+        </div>
 <!-- End Right Sidebar -->
-</div>
+    </div>
 <!--/row-->
 </div>
 <!--/container-->
