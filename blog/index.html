@@ -1,12 +1,14 @@
 ---
-layout: post
-title: Blog
+layout: default
+group: 
+    title: Blog
+    link: /blog
 ---
 
-<div class="container">
+<div class="container content">
     <div class="row blog-page">
         <!-- Left Sidebar -->
-        <div class="col-md-9 md-margin-bottom-40">
+        <div class="col-md-9">
             {% for post in paginator.posts %}
                 {% include post.html post=post %}
             {% endfor %}
