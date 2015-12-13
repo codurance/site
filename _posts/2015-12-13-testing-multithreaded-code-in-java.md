@@ -128,7 +128,7 @@ If I get rid of the preparation code (annotated with @ThreadedBefore), the test 
 ```
     @ThreadedMain
     public void mainThread() {
-        scoreService.save(LEVEL_ID, SCORE_VALUE, aUser);
+        scoreService.save(LEVEL_ID, SCORE_VALUE, aUser); 
     }
 
     @ThreadedSecondary
