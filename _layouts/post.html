@@ -28,7 +28,7 @@ group:
             <ul class="list-unstyled list-inline blog-tags">
               <li>
                 {% for tag in page.tags %}
-                    <i class="fa fa-tags"></i><a href="/blog/tag/{{ tag }}/">{{ tag }} </a>
+                    <i class="fa fa-tags"></i><a href="/blog/tag/{{ tag | downcase }}/">{{ tag }} </a>
                 {% endfor %}
               </li>
             </ul>
