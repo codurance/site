@@ -362,8 +362,6 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .blog-share-buttons {
 	position: absolute;
-  left: inherit;
-	top: 0px;
 }
 
 /* Videos */

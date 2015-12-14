@@ -4,7 +4,7 @@ group:
   title: Blog
   link: /blog
 ---
-<div class="container">
+<div class="container content">
 <div class="row blog-page blog-item">
 <!-- Left Sidebar -->
 <div class="col-md-9 md-margin-bottom-60">
@@ -24,6 +24,13 @@ group:
                       data-count="none">
                       Tweet</a>
                 </li>
+            </ul>
+            <ul class="list-unstyled list-inline blog-tags">
+              <li>
+                {% for tag in page.tags %}
+                    <i class="fa fa-tags"></i><a href="/blog/tag/{{ tag }}/">{{ tag }} </a>
+                {% endfor %}
+              </li>
             </ul>
         </div>
         {% endif %}
@@ -94,15 +101,27 @@ group:
 <!-- End Left Sidebar -->
 
 <!-- Right Sidebar -->
-<div class="col-md-3 magazine-page">
-    <!-- Blog Latest Tweets -->
-    <div class="blog-twitter margin-bottom-30">
-        <div class="headline headline-md">
-            <h2>Codurance Tweets</h2>
-        </div>
-        <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="673835554698563584" height="1200">Tweets by @codurance</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="col-md-3">
+  <!-- Recent blogs -->
+  <div class="posts margin-bottom-40">
+      <div class="headline headline-md"><h2>Recent Blogs</h2></div>
+      {% for post in site.posts limit: 7 %}
+      <dl class="dl-horizontal">
+          <dt><a href="{{ post.url }}"><img src="{{ post.image.src }}" alt=""></a></dt>
+          <dd>
+              <p><a href="{{ post.url }}">{{ post.title | truncatewords: 7 }}</a></p> 
+          </dd>
+      </dl>
+      {% endfor %}
+  </div>
+  <!-- Blog Latest Tweets -->
+  <div class="blog-twitter margin-bottom-30">
+    <div class="headline headline-md">
+        <h2>Codurance Tweets</h2>
     </div>
+    <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="673835554698563584" height="1200">Tweets by @codurance</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
     <!-- End Blog Latest Tweets -->
 </div>
 <!-- End Right Sidebar -->
