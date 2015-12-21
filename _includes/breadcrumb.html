@@ -1,7 +1,7 @@
 {% if page.title or page.tag %}
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">{% if page.tag %}{{ page.tag }} {% else %}{{ page.title }}{% endif %}</h1>
+            <h1 class="pull-left">{% if page.tag %}{{ page.tag }} {% else %}{{ page.section }}{% endif %}</h1>
             <ul class="pull-right breadcrumb">
                 <li><a href="/">Home</a></li>
                 {% if page.group and page.title != page.group.title %}
