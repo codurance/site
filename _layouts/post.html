@@ -129,7 +129,11 @@ group:
 
           <dl class="dl-horizontal">
             <dt>
+              {% unless postImageUrl %}
+                {% assign postImageUrl = "/assets/img/custom/blog/logo/codurance_icon.png" %}
+              {% endunless %}
               <a href="{{ postUrl }}"><img src="{{ postImageUrl }}" alt=""></a>
+              }
             </dt>
             <dd>
                 <p><a href="{{ postUrl }}">{{ postTitle }}</a></p> 
