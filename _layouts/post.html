@@ -10,7 +10,7 @@ group:
 <div class="col-md-9 md-margin-bottom-60">
   <!--Blog Post-->
   <div class="blog margin-bottom-40">
-    <h2>{{ page.title }}</h2>
+    <h1>{{ page.title }}</h1>
     {% if page.date %}
     <div class="blog-post-tags">
         <ul class="list-unstyled list-inline blog-info">
@@ -20,7 +20,7 @@ group:
         <ul class="list-unstyled list-inline blog-tags">
           <li>
             {% for tag in page.tags %}
-                <a href="/blog/tag/{{ tag | downcase }}/"><i class="fa fa-tags"></i> {{ tag }} </a>
+                <a href="/blog/tag/{{ tag | downcase }}/"><i class="fa fa-tags"></i> {{ tag }} </a> 
             {% endfor %}
           </li>
         </ul>
