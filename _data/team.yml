@@ -141,30 +141,21 @@
   twitter: Tomaz_Tekavec
   github: tekavec
 
-- id: alvaro
-  name: Alvaro Salazar
-  image: /assets/img/custom/team/alvaro_salazar.jpg
-  role: Apprentice
-  shortDescription: With more 10 years of experience, Alvaro has worked in good variety of projects and for companies of all sizes, both in the public and private sector. Passionate about software development... 
-  fullDescription: <p>With more 10 years of experience, Alvaro has worked in good variety of projects and for companies of all sizes, both in the public and private sector.</p><p>Passionate about software development and always thinking about learning and trying new things, Alvaro is a firm believer that magic always happens when he is out of his comfort zone. He joined Codurance as part of his journey to mastery.</p><p>You can easily find Alvaro with a book in his hands or testing a new library.</p>
-  twitter: xala3pa
-  github: xala3pa
-
 - id: mani
   name: Mani Sarkar
   image: /assets/img/custom/team/mani_sarkar.jpg
   role: Apprentice
-  shortDescription: Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project... 
+  shortDescription: Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project...
   fullDescription: <p>Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project. He is an JCP member, and a contributor to OpenJDK. As a developer he has many years of experience working on a diverse set of projects. In his free time he likes to work on open-source projects, write blogs and speak at conferences. Mani strongly prescribes to the Software Craftsmanship and XP values. He works hard to better himself in practices such as TDD, BDD, Simple Design and Pair Programming.</p>
   twitter: theNeomatrix369
   github: neomatrix369
   bitbucket: neomatrix369
-  
+
 - id: alex
   name: Alessandro Di Gioia
   image: /assets/img/custom/team/alex_digioia.jpg
   role: Software Craftsman
-  shortDescription: Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming... 
+  shortDescription: Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming...
   fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
   twitter: Parajao
   github: Parajao
