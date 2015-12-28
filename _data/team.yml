@@ -16,17 +16,6 @@
   twitter: mashooq
   github: mashooq
 
-- id: samir
-  name: Samir Talwar
-  image: /assets/img/custom/team/samir_talwar.jpg
-  role: Software Craftsman
-  shortDescription: >
-    Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge ...
-  fullDescription: >
-    <p>Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge, diving into new technologies, techniques and methodologies with a fervour. His experience with various tools allows him to select the right one for the job, and combined with his experience with Extreme Programming, he has a knack for spotting simple approaches to complex problems.</p><p>A prominent member and organiser of the London Software Craftsmanship Community, Samir tries to help people (including himself) challenge their definitions of "good enough" by running workshops, pairing with anyone and everyone and constantly asking questions. By challenging assumptions and encouraging people to go one step further to solve a problem, he helps them embrace a more holistic view of software development.</p>
-  twitter: samirtalwar
-  github: samirtalwar
-
 - id: steve
   name: Steve Tooke
   image: /assets/img/custom/team/tooky.jpg
