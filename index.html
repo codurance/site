@@ -146,7 +146,7 @@ layout: default
         <div class="title-header">
             <h2>Latest Blogs</h2>
         </div>
-        <div class="row blog-boxes">
+        <div class="row blog-boxes margin-bottom-40">
                 {% for post in site.posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box">
@@ -168,6 +168,8 @@ layout: default
                 </div>
                 {% endfor %}
             </div>
-
+            <div class="col-md-4 col-md-offset-4">
+                 <a href="/blog" class="btn-u btn-block">View all blog posts...</a>
+            </div>
     </div>
 </div>
