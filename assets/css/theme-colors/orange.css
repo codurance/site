@@ -27,13 +27,13 @@ a.read-more:hover {
 /* Headers Default
 ------------------------------------*/
 .header .navbar-nav > .active > a {
-  color: #e67e22;
+  color: #e67e22 !important;
 }
 .header .navbar-nav > .active > a {
   border-color: #e67e22;
 }
 .header .dropdown-menu {
-	border-top: solid 2px #e67e22;
+	border-top: solid 2px #e67e22 !important;
 }
 .header .navbar-nav > li:hover > a {
   color: #d35400;

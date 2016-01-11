@@ -21,6 +21,7 @@ body {
 .breadcrumbs h2 {
 	margin-top: 10px;
 }
+
 .header-v3 .navbar-brand {
 	top: 6px;
 }
@@ -31,7 +32,7 @@ body {
 	background: url("/assets/img/custom/home/computerdesk_original_opt_bw.jpg") no-repeat center center;
 	height: 550px;
 	background-size: cover;
-	width: auto
+	width: auto;
 	z-index: -1;
 }
 
@@ -519,3 +520,31 @@ body:last-child .btn-u, x:-moz-any-link {
 .careers h3 {
 	color: #e67e22;
 }
+
+/* Nav bar */
+	.header .navbar-nav > li > a:hover,
+	.header .navbar-nav > .active > a {
+		bottom: -2px;
+		position: relative;
+		border-bottom: solid 2px #e67e22 !important;
+	}
+
+	.header .navbar-nav > li > a,
+	.header .navbar-nav > li > a:hover,
+	.header .navbar-nav > li > a:focus,
+	.header .navbar-nav > .active > a,
+	.header .navbar-nav > .active > a:hover,
+	.header .navbar-nav > .active > a:focus {
+		background: none;
+	}
+
+	.header .navbar-nav > .open > a,
+	.header .navbar-nav > .open > a:hover,
+	.header .navbar-nav > .open > a:focus {
+		color: #e67e22 !important;
+	}
+
+	.header .navbar-nav > li:hover > a {
+        color: #e67e22 !important;
+    }
+
