@@ -1,5 +1,5 @@
 <!--=== Footer ===-->
-<div class="footer-v1">
+<div id="footer-v1" class="footer-v1">
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -21,7 +21,7 @@
                             {% for post in site.posts limit:3 %}
                             <li>
                                 <a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
-                                <small>{{ post.author | author_links }}</small>
+                                <small>{{ post.author }}</small>
                             </li>
                             {% endfor %}
                         </ul>

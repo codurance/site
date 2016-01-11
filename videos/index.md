@@ -3,18 +3,16 @@ layout: default
 title: Videos
 ---
 
-<div class="videos container">
+<div class="videos container content"> 
     <div class="row blog-page">
         <!-- left side bar -->
         <div class="col-md-9">
 
             <!-- Screencast - Mouseless Programming, Part II -->
-            <div class=" margin-bottom-40">
+            <div class="margin-bottom-40">
                 <h2>Screencast - Mouseless Programming, Part II</h2>
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/Rcf6cwP_J8M" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="blog-post-tags">
                 </div>
                 <div class="description">
                     <p>This is the second video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.</p>
@@ -30,12 +28,10 @@ title: Videos
             <!-- Screencast - Mouseless Programming, Part II -->
 
             <!-- Screencast - Mouseless Programming, Part I -->
-            <div class=" margin-bottom-40">
+            <div class="margin-bottom-40">
                 <h2>Screencast - Mouseless Programming, Part I</h2>
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/g6kfdlUZARs" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="blog-post-tags">
                 </div>
                 <div class="description">
                     <p>This is the first video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.</p>
@@ -56,8 +52,6 @@ title: Videos
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/ApsW72JSVJM" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>“TDD is a design tool.” That’s what I’ve said for years. But not anymore. After working with different teams in different organisations, I realised that I don’t believe anymore that TDD is a design tool. In this talk I’ll be explaining the pros and cons of the two main styles of TDD, discuss why some developers can test-drive well-crafted code while others can’t, and also explain how to reason about design decisions.
 
@@ -74,8 +68,6 @@ title: Videos
                 <h2>Screencast - Oustide-In TDD (part III)</h2>
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/R9OAt9AOrzI" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="blog-post-tags">
                 </div>
                 <div class="description">
                     <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
@@ -99,8 +91,6 @@ title: Videos
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/gs0rqDdz3ko" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
 
@@ -122,8 +112,6 @@ title: Videos
                 <h2>Screencast - Oustide-In TDD (part I)</h2>
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/XHnuMjah6ps" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="blog-post-tags">
                 </div>
                 <div class="description">
                     <p>Different from the previous screencasts, this one is not meant for TDD beginners. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design (see video below), Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
@@ -147,8 +135,6 @@ title: Videos
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/ty3p5VDcoOI" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p><a href="http://twitter.com/jbrains">JB Rainsberger</a> and <a href="http://twitter.com/sandromancuso">Sandro Mancuso</a> started an interesting discussion on twitter about TDD and design. However twitter is not the best place to host these kind of discussions it's better to talk. Sandro and JB will discuss and answer questions face to face in this hangout organised by <a href="http://twitter.com/carlosble">Carlos Ble</a>.</p>
 
@@ -169,8 +155,6 @@ title: Videos
                 <div class="video-post">
                     <iframe style="height: 400px; width: 100%;" src="http://www.ustream.tv/embed/recorded/61480606?ub=ff3d23&amp;lc=ff3d23&amp;oc=ffffff&amp;uc=ffffff&amp;v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
                 </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>How can we quickly tell what an application is about? How can we quickly tell what it does? How can we distinguish business concepts from architecture clutter? How can we quickly find the code we want to change? How can we instinctively know where to add code for new features?</p>
 
@@ -190,8 +174,6 @@ title: Videos
                     <div class="video-post">
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/iZjgj1S0FCY?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>Test-driving algorithms is hard. In this video we show how to grow an algorithm test-by-test, only using very simple constructs and removing duplication.</p>
                 </div>
@@ -242,8 +224,6 @@ title: Videos
                 <div class="video-post">
                     <iframe type="text/html" width="100%" height="400px" mozallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" src="//www.parleys.com/share.html#play/536770f0e4b04bb59f502713" frameborder="0">&lt;br /&gt;</iframe>
                 </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>After over ten years since the Agile summit, software projects are still failing and developers are still behaving and being treated as factory workers. The software development industry is still very amateur when compared to other professions. How can we change this? Why Agile was not sufficient? Why so many clients are unhappy with their software projects? Why is it so difficult to find good developers? Our industry needs more professionalism and that’s what Software Craftsmanship brings to the table. In this talk Sandro will be explaining: what Software Craftsmanship really is, the value of technical practices, what it means to be a professional software developer and what to do to satisfy our customers.</p>
                 </div>
@@ -260,8 +240,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen>
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>Using explanatory methods to make the code more readable, expressing the business rules.</p>
                 </div>
@@ -278,8 +256,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/80839608">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>It's been 12 years since Pete McBreen's book and 5 years since the Software Craftsmanship summit. So, what is the current state of Software Craftsmanship? If there is a Software Craftsmanship movement, where is it? What is it? Is it an elitist movement? Is Software Craftsmanship becoming a religion? Does it have a narrow focus? Is Software Craftsmanship just XP rebranded? Does it fit large organisations? In this presentation, Sandro will be talking about the current state of Software Craftsmanship, explaining its values and addressing some of its biggest criticisms.</p>
                 </div>
@@ -296,8 +272,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/WHsoSYPvDec?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>In this interview, right after his talk "Craftsmanship: A few years on", Sandro discusses the future of Software Craftsmanship and addresses some of the criticism on Software Craftsmanship movement.</p>
                 </div>
@@ -314,8 +288,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/-czaKO_8jc4?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>After over ten years since the Agile summit, software projects are still failing and developers are still behaving and being treated as factory workers. The software development industry is still very amateur when compared to other professions. How can we change this? Why Agile was not sufficient? Why so many clients are unhappy with their software projects? Why is it so difficult to find good developers? Our industry needs more professionalism and that’s what Software Craftsmanship brings to the table. In this talk Sandro will be explaining: what Software Craftsmanship really is, the value of technical practices, what it means to be a professional software developer and what to do to satisfy our customers.</p>
                     </div>
@@ -332,8 +304,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/kKbNOMI3tlg?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                      <p>Quoting @jbrains, “A design is simple to the extent that it:
                         <ol>
@@ -364,8 +334,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.parleys.com/share.html#play/51aa0172e4b01033a7e4b67a">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>Functional programming is becoming more and more popular, and for good reasons, but now a big number of developers are bashing Object Oriented Programming. However, how much do we really know about Object Oriented Programming? Inheritance, Encapsulation and Polymorphism is OOP for kids. In this talk Sandro will be explaining many OOP/OOD principles and practices that every developer should always have in their minds before writing any line of code. You will also notice that many of these principles also apply to different programming paradigms like functional programming.</p>
                 </div>
@@ -382,8 +350,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//www.youtube.com/embed/_NnElPO5BU0?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>In this video, we take a piece of crappy Java code with no tests. Our objective is to write tests for it and then refactor to make it better. The code has the most common problems that much larger legacy applications have, like Singletons, static calls and feature envy. It also has some design problems. Fixing that is quite hard, mainly when we need to write all the tests before we start the refactoring. Another rule: We cannot change production code if it is not covered by tests but quite often we need to change the production code in order to be able to test it. How to solve this problem? Well, I hope I can answer all these questions in this video.
 
@@ -402,8 +368,6 @@ title: Videos
                         <iframe class="embed-responsive-item" style="height: 400px; width: 100%;" src="//player.vimeo.com/video/54327320?color=ffffff">
                         </iframe>
                     </div>
-                <div class="blog-post-tags">
-                </div>
                 <div class="description">
                     <p>In this interview Codurance co-founder Sandro Mancuso talks Software Craftsmanship communities in London and Europe.</p>
                 </div>
