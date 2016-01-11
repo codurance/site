@@ -28,4 +28,4 @@ Vim with Fireplace satisfies the basic and goes beyond that. My favourite is the
 Here’s what my vim Clojure dev environment looks like:
 ![My Clojure Env](/assets/img/custom/blog/vimenv.png)
 
-I have found that some investment into learning better vim usage has allowed me to become more productive than I was with Cursive, although it will not suite everyones taste. The codebases I work on are relatively small and I may still prefer Cursive for larger codebases. Having said that, I like the argument that we should never have a single large codebase. At least for now vim is my new favourite editor for Clojure. Then again! I have not tried Emacs … yet!
+I have found that some investment into learning better vim usage has allowed me to become more productive than I was with Cursive, although it will not suit everyones taste. The codebases I work on are relatively small and I may still prefer Cursive for larger codebases. Having said that, I like the argument that we should never have a single large codebase. At least for now vim is my new favourite editor for Clojure. Then again! I have not tried Emacs … yet!
