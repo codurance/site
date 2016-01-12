@@ -1,7 +1,6 @@
 /* Add here all your css styles (customizations) */
 
 body {
-	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 14px;
 }
 
@@ -249,9 +248,19 @@ body:last-child .btn-u, x:-moz-any-link {
 	text-transform: uppercase;
 }
 
-/* Blog boxes */
+/* Blog */
 
-.blog-boxes .blog-content {
+.blog-thumb {
+	height: 185px;
+}
+
+.blog-thumb a .img-responsive {
+	display: block;
+    width: 100%;
+    max-height: auto;
+}
+
+/*.blog-boxes .blog-content {
 	min-height: 170px;
 	max-height: 170px;
 }
@@ -363,7 +372,7 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .blog-share-buttons {
 	position: absolute;
-}
+}*/
 
 /* Videos */
 
