@@ -26,6 +26,7 @@ The basics I ask from a development environment are:
 Vim with Fireplace satisfies the basic and goes beyond that. My favourite is the block editing feature that allows me to manipulate blocks of code (e.g. replace everything within function call, copy all declarations inside a let block etc.). The plugin also automatically connects to a running repl and allows me to execute any Clojure code directly through vim. I find these features much more useful then the rudimentary refactoring such as “change function name”, although I do miss it sometimes. Note that Cursive also has an integreated repl. There is a very good tutorial for Fireplace [here](http://clojure-doc.org/articles/tutorials/vim_fireplace.html).
 
 Here’s what my vim Clojure dev environment looks like:
-![My Clojure Env](/assets/img/custom/blog/vimenv.png)
+
+<img class="img-responsive" src="/assets/img/custom/blog/vimenv.png"></img>
 
 I have found that some investment into learning better vim usage has allowed me to become more productive than I was with Cursive, although it will not suit everyones taste. The codebases I work on are relatively small and I may still prefer Cursive for larger codebases. Having said that, I like the argument that we should never have a single large codebase. At least for now vim is my new favourite editor for Clojure. Then again! I have not tried Emacs … yet!

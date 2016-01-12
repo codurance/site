@@ -4,46 +4,43 @@ group:
   title: Blog
   link: /blog
 ---
-<div class="">
-  <div class="container content-sm">
-    <div class="blog-author bg-color-white margin-bottom-30">
-    <!--About the author-->
-      {% for member in site.data.team %}
-        {% if page.author == member.name %}
-          <div class="row">
-            <div class="col-sm-3 pull-left">
-              <img class="img-responsive" id="author-img" src="{{ member.image }}">
-            </div>
-            <div class="col-sm-9">
-              <div class="blog-author-desc">
-                <div class="overflow-h">
-                    <h4>{{ member.name }}</h4>
-                    {% if member.twitter %}
-                    <ul class="list-inline">
-                        <li><a href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                    {% endif %}
-                </div>
-                <p>{{ member.fullDescription }}</p>
-              </div> 
-            </div>
+<div class="container content-sm">
+  <div class="blog-author bg-color-white margin-bottom-30">
+  <!--About the author-->
+    {% for member in site.data.team %}
+      {% if page.author == member.name %}
+        <div class="row">
+          <div class="col-sm-3 pull-left">
+            <img class="img-responsive" id="author-img" src="{{ member.image }}">
           </div>
-        {% break %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    <hr/>
-    <div class="row">
-      <div class="col-md-9">
-        <h2 class="margin-bottom-20">Blogs</h2>
-          {% assign index = true %}
-          {% for post in site.posts %}
-            {% if post.author contains page.author %}
-              {% include post.html post=post %}
-            {% endif %}
-          {% endfor %}
-      </div>
+          <div class="col-sm-9">
+            <div class="blog-author-desc">
+              <div class="overflow-h">
+                  <h4>{{ member.name }}</h4>
+                  {% if member.twitter %}
+                  <ul class="list-inline">
+                      <li><a href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                  {% endif %}
+              </div>
+              <p>{{ member.fullDescription }}</p>
+            </div> 
+          </div>
+        </div>
+      {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-md-9">
+      <h2 class="margin-bottom-20">Blogs</h2>
+        {% assign index = true %}
+        {% for post in site.posts %}
+          {% if post.author contains page.author %}
+            {% include post.html post=post %}
+          {% endif %}
+        {% endfor %}
     </div>
   </div>
-  <!-- End Left Sidebar -->
 </div>

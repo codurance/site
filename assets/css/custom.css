@@ -251,13 +251,17 @@ body:last-child .btn-u, x:-moz-any-link {
 /* Blog */
 
 .blog-thumb {
-	height: 185px;
+	max-height: 225px;
 }
 
 .blog-thumb a .img-responsive {
 	display: block;
     width: 100%;
-    max-height: auto;
+    max-height: 225px;
+}
+
+#sharethisButtons {
+	padding-bottom: 30px;
 }
 
 /* Author */

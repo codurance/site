@@ -4,156 +4,155 @@ group:
   title: Blog
   link: /blog
 ---
-<div class="container content">
-<div class="row blog-page blog-item">
-<!-- Left Sidebar -->
-<div class="col-md-9 md-margin-bottom-60">
-  <!--Blog Post-->
-  <div class="blog margin-bottom-40">
-    <h1>{{ page.title }}</h1>
-    {% if page.date %}
-    <div class="blog-post-tags">
-        <ul class="list-unstyled list-inline blog-info">
-            <li><i class="fa fa-calendar"></i> {{ page.date | date_to_string }}</li>
-            <li><i class="fa fa-pencil"></i>  {{ page.author }}</li>
-        </ul>
-        <ul class="list-unstyled list-inline blog-tags">
-          <li>
-            {% for tag in page.tags %}
-                <a href="/blog/tag/{{ tag | downcase }}/"><i class="fa fa-tags"></i> {{ tag }} </a> 
-            {% endfor %}
-          </li>
-        </ul>
+<div class="bg-color-light">
+  <div class="container content-sm">
+    <div class="row blog-page blog-item">
+    <!-- Left Sidebar -->
+    <div class="col-md-9">
+      <!--Blog Post-->
+      <div class="news-v3 bg-color-white margin-bottom-30">
+        <div class="news-v3-in shareThisButtons">
+          <h2>{{ page.title }}</h2>
+          <ul class="list-inline posted-info">
+              <li>By {{ page.author || author_links }}</li>
+              {% if page.date %}
+                <li>Posted {{ page.date | date_to_string }}</li>
+                <li>
+                    {% for tag in page.tags %}
+                      <a href="/blog/tag/{{ tag | downcase }}/"><i class="fa fa-tags"></i> {{ tag }}  </a> 
+                    {% endfor %}
+                </li>
+               {% endif %}
+          </ul>
+
+          {{ content }}
+
+          <div id="sharethisButtons">
+            <span class='pull-right st_twitter_large' displayText='Tweet'></span>
+            <span class='pull-right st_linkedin_large' displayText='LinkedIn'></span>
+            <span class='pull-right st_email_large' displayText='Email'></span>
+            <span class='pull-right st_sharethis_large' displayText='ShareThis'></span>
+          </div>
+
+          {% if page.canonical %}
+            <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
+          {% endif %}
+        </div>
+      </div>
+      <!--End Blog Post-->
+    	<!--About the author-->
+    	{% if page.author %}
+        {% for member in site.data.team %}
+          {% if page.author == member.name %}
+          <div class = "blog-author bg-color-white margin-bottom-30">
+            <div class="headline headline-md">
+              <h2>{{ member.name }}</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 pull-left">
+                <img class="img-responsive"  id="author-img" src="{{ member.image }}">
+              </div>
+              <div class="col-sm-9">
+                <div class="blog-author-desc">
+                  <p>{{ member.fullDescription }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% break %}
+          {% endif %}
+        {% endfor %}
+    	{% endif %}
+      <!--End About the author-->
     </div>
-    {% endif %}
+    <!-- End Left Sidebar -->
 
-    {{ content }}
-
-    {% if page.canonical %}
-      <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
-    {% endif %}
-  </div>
-  <!--End Blog Post-->
-	<!--About the author-->
-	{% if page.author %}
-    {% for member in site.data.team %}
-      {% if page.author == member.name %}
-      <div class = "margin-bottom-40">
-        <div class="headline headline-md">
-          <h2>About the author</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 pull-left">
-            <img class="img-responsive" src="{{ member.image }}">
+    <!-- Right Sidebar -->
+    <div class="col-md-3">
+      <!--Related Blog Posts-->
+      <div class="posts margin-bottom-40">
+          <div class="headline-v2">
+            <h2>Related Blogs</h2>
           </div>
-          <div class="col-sm-9">
-             <h3>{{ member.name }}</h3>
-              <p>{{ member.fullDescription }}</p>
-              <p>
-                {% if member.twitter %}
-                  <em>
-                    <a target="_blank"
-                      href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance">
-                      Discuss this article with {{ member.name }} on Twitter!
-                    </a>
-                  </em>
+
+          {% assign posts = site.posts %}
+          {% assign relatedPosts = ""  %}
+
+          {% for post in posts %}
+            {% assign rank = "" %}
+            {% for otherPostTag in post.tags %}
+              {% for currentTag in page.tags %}
+                {% if otherPostTag == currentTag and page.title != post.title %}
+                  {% assign rank = rank | append:"I" %}
                 {% endif %}
-              </p>
-          </div>
-        </div>
-      </div>
-      {% break %}
-      {% endif %}
-    {% endfor %}
-	{% endif %}
-  <!--End About the author-->
-</div>
-<!-- End Left Sidebar -->
+              {% endfor %}
+            {% endfor %}
 
-<!-- Right Sidebar -->
-<div class="col-md-3">
-  <!--Related Blog Posts-->
-  <div class="posts margin-bottom-40">
-      <div class="headline headline-md">
-        <h2>Related Blogs</h2>
-      </div>
-
-      {% assign posts = site.posts %}
-      {% assign relatedPosts = ""  %}
-
-      {% for post in posts %}
-        {% assign rank = "" %}
-        {% for otherPostTag in post.tags %}
-          {% for currentTag in page.tags %}
-            {% if otherPostTag == currentTag and page.title != post.title %}
-              {% assign rank = rank | append:"I" %}
+            {% if rank.size > 0 %}
+              {% assign relatedPosts = relatedPosts | append:rank %}
+              {% assign relatedPosts = relatedPosts | append:"$" %}
+              {% assign relatedPosts = relatedPosts | append:post.url %}
+              {% assign relatedPosts = relatedPosts | append:"$" %}
+              {% assign relatedPosts = relatedPosts | append:site.url %}
+              {% assign relatedPosts = relatedPosts | append:"$" %}
+              {% assign relatedPosts = relatedPosts | append:post.title %}
+              {% assign relatedPosts = relatedPosts | append:"$" %}
+              {% assign relatedPosts = relatedPosts | append:post.image.src %}
+              {% assign relatedPosts = relatedPosts | append:"|" %}
             {% endif %}
           {% endfor %}
+          
+          {% if relatedPosts.size > 0 %}
+            {% assign relatedPostsArray = relatedPosts | split:"|" | sort | reverse %}
+            {% for relatedPost in relatedPostsArray limit: 7 %}
+              {% assign relevantPostAttributes = relatedPost | split:"$" %}
+              {% assign postUrl = relevantPostAttributes[1] %}
+              {% assign siteUrl = relevantPostAttributes[2] %}
+              {% assign postTitle = relevantPostAttributes[3] %}
+              {% assign postImageUrl = relevantPostAttributes[4] %}
+
+              <dl class="dl-horizontal">
+                <dt>
+                  {% unless postImageUrl %}
+                    {% assign postImageUrl = "/assets/img/defaultBlogImg.png" %}
+                  {% endunless %}
+                  <a href="{{ postUrl }}"><img src="{{ postImageUrl }}" alt=""></a>
+                  }
+                </dt>
+                <dd>
+                    <p><a href="{{ postUrl }}">{{ postTitle }}</a></p> 
+                </dd>
+              </dl>
+            {% endfor %} 
+          {% endif %}
+      <!--End Related Blog Posts-->
+      </div>
+      <!-- Recent blogs -->
+      <div class="posts margin-bottom-40">
+        <div class="headline-v2"><h2>Recent Blogs</h2></div>
+        {% for post in site.posts limit: 7 %}
+          <div class="blog-thumb blog-thumb-circle margin-bottom-15">
+            <div class="blog-thumb-hover">
+              <a href="{{ post.url }}"><img class="" src="{{ post.image.src }}" alt=""></a>
+              <a class="hover-grad" href="blog_single.html"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="blog-thumb-desc">
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
+              <ul class="blog-thumb-info">
+                <li>
+                  {{ post.author }}
+                </li>
+              </ul>
+            </div>
+          </div>
         {% endfor %}
-
-        {% if rank.size > 0 %}
-          {% assign relatedPosts = relatedPosts | append:rank %}
-          {% assign relatedPosts = relatedPosts | append:"$" %}
-          {% assign relatedPosts = relatedPosts | append:post.url %}
-          {% assign relatedPosts = relatedPosts | append:"$" %}
-          {% assign relatedPosts = relatedPosts | append:site.url %}
-          {% assign relatedPosts = relatedPosts | append:"$" %}
-          {% assign relatedPosts = relatedPosts | append:post.title %}
-          {% assign relatedPosts = relatedPosts | append:"$" %}
-          {% assign relatedPosts = relatedPosts | append:post.image.src %}
-          {% assign relatedPosts = relatedPosts | append:"|" %}
-        {% endif %}
-      {% endfor %}
-      
-      {% if relatedPosts.size > 0 %}
-        {% assign relatedPostsArray = relatedPosts | split:"|" | sort | reverse %}
-        {% for relatedPost in relatedPostsArray limit: 7 %}
-          {% assign relevantPostAttributes = relatedPost | split:"$" %}
-          {% assign postUrl = relevantPostAttributes[1] %}
-          {% assign siteUrl = relevantPostAttributes[2] %}
-          {% assign postTitle = relevantPostAttributes[3] %}
-          {% assign postImageUrl = relevantPostAttributes[4] %}
-
-          <dl class="dl-horizontal">
-            <dt>
-              {% unless postImageUrl %}
-                {% assign postImageUrl = "/assets/img/defaultBlogImg.png" %}
-              {% endunless %}
-              <a href="{{ postUrl }}"><img src="{{ postImageUrl }}" alt=""></a>
-              }
-            </dt>
-            <dd>
-                <p><a href="{{ postUrl }}">{{ postTitle }}</a></p> 
-            </dd>
-          </dl>
-        {% endfor %} 
-      {% endif %}
-  <!--End Related Blog Posts-->
+      <!-- End Recent blogs -->
+      </div>
+    <!-- End Right Sidebar -->
+    </div>
+    <!--/row-->
+    </div>
+  <!--/container-->
   </div>
-  <!-- Recent blogs -->
-  <div class="posts margin-bottom-40">
-    <div class="headline headline-md"><h2>Recent Blogs</h2></div>
-    {% for post in site.posts limit: 7 %}
-      <dl class="dl-horizontal">
-          <dt><a href="{{ post.url }}"><img src="{{ post.image.src }}" alt=""></a></dt>
-          <dd>
-              <p><a href="{{ post.url }}">{{ post.title }}</a></p> 
-          </dd>
-      </dl>
-    {% endfor %}
-  <!-- End Recent blogs -->
-  </div>
-<!-- End Right Sidebar -->
+  <!-- background color -->
 </div>
-<!--/row-->
-</div>
-<!--/container-->
-</div>
-
-<!-- Sharethis toolbar. Note this will not work in a local environment -->
-<script type="text/javascript">stLight.options({publisher: "8b795ed1-9577-43d1-9e4e-55c54306336b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-<script>
-  var options={ "publisher": "8b795ed1-9577-43d1-9e4e-55c54306336b", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["twitter", "linkedin", "googleplus", "facebook", "email"]}};
-  var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
-</script>
-<!-- End Sharethis toolbar -->
