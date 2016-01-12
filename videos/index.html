@@ -196,17 +196,31 @@ title: Videos
 
             <!-- right sidebar -->
             <div class="col-md-3">
-                <!-- latest blogs -->
                 <div class="posts margin-bottom-40">
-                    <div class="headline-v2"><h2>Recent Blogs</h2></div>
+                    <div class="headline-v2">
+                        <h2>Recent Blogs</h2>
+                    </div>
                     {% for post in site.posts limit: 7 %}
-                    <dl class="dl-horizontal">
-                        <dt><a href="{{ post.url }}"><img src="{{ post.image.src }}" alt=""></a></dt>
-                        <dd>
-                            <p><a href="{{ post.url }}">{{ post.title | truncatewords: 7 }}</a></p> 
-                        </dd>
-                    </dl>
+                    <div class="blog-thumb blog-thumb-circle margin-bottom-15">
+                        <div class="blog-thumb-hover">
+                          <a href="{{ post.url }}">
+                            <img class="rounded-x" src="{{ post.image.src }}" alt=""></img>
+                          </a>
+                          <a class="hover-grad" href="blog_single.html">
+                            <i class="fa fa-hand-spock-o"></i>
+                          </a>
+                        </div>
+                        <div class="blog-thumb-desc">
+                          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
+                          <ul class="blog-thumb-info">
+                            <li>
+                              {{ post.author }}
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
                     {% endfor %}
+                  <!-- End Recent blogs -->
                 </div>
                 <!-- latest tweets -->
                 <div class="posts margin-bottom-40">

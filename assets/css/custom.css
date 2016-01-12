@@ -264,6 +264,14 @@ body:last-child .btn-u, x:-moz-any-link {
 	padding-bottom: 30px;
 }
 
+.headline-v2 {
+	border-left: 2px solid #e67e22 !important;
+}
+
+.blog-tag-margin {
+	margin-right: 10px;
+}
+
 /* Author */
 #author-img {
 	width: 100%;

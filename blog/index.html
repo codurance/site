@@ -46,21 +46,13 @@ title: Blog
         <!-- Right sidebar -->
         <div class="col-md-3">
             <div class="posts margin-bottom-40">
-                <div class="headline-v2 bg-color-light"><h2>Recent Blogs</h2></div>
-                {% for post in site.posts limit: 7 %}
-                <dl class="dl-horizontal">
-                    <dt><a href="{{ post.url }}"><img src="{{ post.image.src }}" alt=""></a></dt>
-                    <dd>
-                        <p><a href="{{ post.url }}">{{ post.title | truncatewords: 7 }}</a></p> 
-                    </dd>
-                </dl>
-                {% endfor %}
-            </div>
-            <div class="posts margin-bottom-40">
-                <div class="headline-v2 bg-color-light"><h2>Latest Tweets</h2></div>
+                <div class="headline-v2 bg-color-light">
+                    <h2>Latest Tweets</h2>
+                </div>
                 <a class="twitter-timeline" href="https://twitter.com/codurance" data-widget-id="675332417700409344">Tweets by @codurance</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
+         <!-- End right sidebar -->
         </div>
     </div>
 </div>
