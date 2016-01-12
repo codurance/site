@@ -6,27 +6,39 @@ group:
 ---
 <div class="container">
 <div class="row blog-page blog-item">
-<!-- Left Sidebar -->
-<div class="col-md-9 md-margin-bottom-60">
+<!--About the author-->
     {% for member in site.data.team %}
       {% if page.author == member.name %}
+      <div class = "margin-bottom-40">
+        <div class="headline headline-md">
+          <h2>About the author</h2>
+        </div>
         <div class="row">
-          <div class="col-sm-9">
-            {{ member.fullDescription }}
-          </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 pull-left">
             <img class="img-responsive" src="{{ member.image }}">
-            <ul class="list-unstyled list-inline team-socail">
-              <li><a href="http://twitter.com/{{member.twitter}}"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
-              {% if member.github != null %}
-                <li><a href="http://github.com/{{member.github}}"><i class="fa fa-github"></i>&nbsp;Github</a></li>
-              {% endif %}
-            </ul>
+          </div>
+          <div class="col-sm-9">
+             <h3>{{ member.name }}</h3>
+              <p>{{ member.fullDescription }}</p>
+              <p>
+                {% if member.twitter %}
+                  <em>
+                    <a target="_blank"
+                      href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance">
+                      Contact {{ member.name }} on Twitter!
+                    </a>
+                  </em>
+                {% endif %}
+              </p>
           </div>
         </div>
-        {% break %}
+      </div>
+      {% break %}
       {% endif %}
     {% endfor %}
+  <!--End About the author-->
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
     <!--Blog Post-->
     <div class="blog margin-bottom-40">
         {% if page.date %}
