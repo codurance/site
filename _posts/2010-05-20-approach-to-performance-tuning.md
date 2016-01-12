@@ -5,6 +5,8 @@ date: 2010-05-20 14:11:38+00:00
 layout: post
 slug: approach-to-performance-tuning
 title: Approach to Performance Tuning
+image:
+    src: /assets/img/defaultBlogImg.png
 wordpress_id: 104
 categories:
 - process
