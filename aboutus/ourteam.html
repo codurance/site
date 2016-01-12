@@ -6,6 +6,9 @@ title: Our Team
 ---
 
 <div class="container content">
+<div class="headline-center margin-bottom-50">
+            <h2>Our Team</h2>
+</div>
 {% for member in site.data.team %}
       {% capture isEndOfRow %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
       {% if forloop.first %}
