@@ -4,75 +4,46 @@ group:
   title: Blog
   link: /blog
 ---
-<div class="container">
-<div class="row blog-page blog-item">
-<!--About the author-->
-    {% for member in site.data.team %}
-      {% if page.author == member.name %}
-      <div class = "margin-bottom-40">
-        <div class="headline headline-md">
-          <h2>About the author</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 pull-left">
-            <img class="img-responsive" src="{{ member.image }}">
+<div class="">
+  <div class="container content-sm">
+    <div class="blog-author bg-color-white margin-bottom-30">
+    <!--About the author-->
+      {% for member in site.data.team %}
+        {% if page.author == member.name %}
+          <div class="row">
+            <div class="col-sm-3 pull-left">
+              <img class="img-responsive" id="author-img" src="{{ member.image }}">
+            </div>
+            <div class="col-sm-9">
+              <div class="blog-author-desc">
+                <div class="overflow-h">
+                    <h4>{{ member.name }}</h4>
+                    {% if member.twitter %}
+                    <ul class="list-inline">
+                        <li><a href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                    {% endif %}
+                </div>
+                <p>{{ member.fullDescription }}</p>
+              </div> 
+            </div>
           </div>
-          <div class="col-sm-9">
-             <h3>{{ member.name }}</h3>
-              <p>{{ member.fullDescription }}</p>
-              <p>
-                {% if member.twitter %}
-                  <em>
-                    <a target="_blank"
-                      href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance">
-                      Contact {{ member.name }} on Twitter!
-                    </a>
-                  </em>
-                {% endif %}
-              </p>
-          </div>
-        </div>
-      </div>
-      {% break %}
-      {% endif %}
-    {% endfor %}
-  <!--End About the author-->
-<!-- Left Sidebar -->
-<div class="col-md-9 md-margin-bottom-60">
-    <!--Blog Post-->
-    <div class="blog margin-bottom-40">
-        {% if page.date %}
-        <div class="blog-post-tags">
-            <ul class="list-unstyled list-inline blog-info">
-                <li><i class="icon-calendar"></i> {{ page.date | date_to_string }}</li>
-                <li><i class="icon-pencil"></i> {{ page.author }}</li>
-            </ul>
-        </div>
+        {% break %}
         {% endif %}
-
-  {% assign index = true %}
-        {% for post in site.posts %}
-          {% if post.author contains page.author %}
-            {% include post.html post=post %}
-          {% endif %}
-  {% endfor %}
-
+      {% endfor %}
     </div>
-    <!--End Blog Post-->
-</div>
-<!-- End Left Sidebar -->
-
-<!-- Right Sidebar -->
-<div class="col-md-3 magazine-page">
-    <!-- Blog Latest Tweets -->
-    <div class="blog-twitter margin-bottom-30">
-        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <hr/>
+    <div class="row">
+      <div class="col-md-9">
+        <h2 class="margin-bottom-20">Blogs</h2>
+          {% assign index = true %}
+          {% for post in site.posts %}
+            {% if post.author contains page.author %}
+              {% include post.html post=post %}
+            {% endif %}
+          {% endfor %}
+      </div>
     </div>
-    <!-- End Blog Latest Tweets -->
+  </div>
+  <!-- End Left Sidebar -->
 </div>
-<!-- End Right Sidebar -->
-</div>
-<!--/row-->
-</div>
-<!--/container-->
