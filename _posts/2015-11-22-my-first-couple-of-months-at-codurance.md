@@ -16,8 +16,6 @@ tags:
 - craftsmanship
 - apprenticeship
 - community
-- mentor
-- mentee
 - mentoring
 ---
 

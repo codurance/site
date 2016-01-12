@@ -5,16 +5,13 @@ title: 'Mouseless Programming'
 date: 2015-11-25 17:00:00 +00:00
 author: Tomaz Tekavec
 image:
-    src: "/assets/img/custom/blog/dilbert.jpg"
+    src: "/assets/img/custom/blog/dilbert.png"
     attribution:
         text: Scott Adams, Still Pumped from Using the Mouse SC 
         href: https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1038055.jpg
 tags:
 - mouseless
-- programming
 - productivity
-- IDE
-- keyboard
 - shortcuts
 - visual-studio
 ---
