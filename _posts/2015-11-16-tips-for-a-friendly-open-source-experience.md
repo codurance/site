@@ -5,7 +5,7 @@ title: 'Tips for a friendly open source experience'
 date: 2015-11-16 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/friendly.png
+    src: /assets/img/custom/blog/opensource.jpg
 tags:
 - opensource
 - oss

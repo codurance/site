@@ -5,6 +5,8 @@ date: 2010-02-26 14:25:09+00:00
 layout: post
 slug: jvm-profiling-thread-dumps
 title: 'JVM Profiling: Thread Dumps'
+image:
+    src: /assets/img/defaultBlogImg.png
 wordpress_id: 61
 categories:
 - development

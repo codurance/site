@@ -5,15 +5,13 @@ title: Changing Scalatra and sbt default directories
 date: 2015-11-22 23:54:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-11-21-folders-small.jpg
+    src: /assets/img/custom/blog/2015-11-21-folders.jpg
 tags:
 - scalatra
 - scala
 - sbt
 - craftsmanship
-- design
 - domain-driven-design
-- DDD
 --- 
 
 Conventions are not always good. I recently started a new internal web project

@@ -5,6 +5,8 @@ date: 2010-02-16 14:52:47+00:00
 layout: post
 slug: maven-mutli-project-thought-and-guidelines
 title: Maven Mutli-Project Thoughts and Guidelines
+image:
+    src: /assets/img/defaultBlogImg.png
 wordpress_id: 56
 categories:
 - development
