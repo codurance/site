@@ -31,9 +31,42 @@ title: Training
         <!--Begin Content-->
         <div class="col-md-8">
             {{ content }}
+            <hr />
+	    <div class="row margin-bottom-40 margin-top-20">
+		<div class="col-md-12">
+		    <h2>Training Quote Request
+		        <br />
+		        <small>Tell us what your requirements are</small>
+		    </h2>
+		    <form class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
+		        <input type="hidden" name="_next" value="/aboutus/thanks" />
+		        <input type="hidden" name="_subject" value="New Codurance Training Quote" />
+		        <input type="hidden" id="TrainingUrl" name="TrainingUrl" value="" />
+		        <label>Number of participants</label>
+		        <input class="form-control" type="text" name="participants">
+		        <br />
+		        <label>Desired start date</label>
+		        <input class="form-control" type="text" name="start_date">
+		        <br />
+		        <label>Name/organisation</label>
+		        <input class="form-control" type="text" name="name">
+		        <br />
+		        <label>Your e-mail</label>
+		        <input class="form-control" type="email" name="_replyto">
+		        <br />
+		        <label>Message</label>
+		        <textarea class="form-control" rows="10" name="body"></textarea>
+		        <br />
+		        <button id="Send" value="Send" class="btn-u btn-u-lg btn-block" type="submit">Request a quote</button>
+		    </form>
+		</div><!--/col-md-6 col-md-offset-3-->
+	    </div><!--/row-->
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    document.getElementById('TrainingUrl').value = window.location.href;
+</script>
 
 <!--=== Content Part ===-->
 <!--
