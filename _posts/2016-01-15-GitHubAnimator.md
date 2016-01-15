@@ -33,13 +33,13 @@ GitHub has published a library to simplify the usage of their API. It's called [
 Initially I used Office automation frameworks by Microsoft to generate a PowerPoint presentation, but decided that using a specific application could be too restrictive. So I started looking for a presentation framework using HTML5 and came across  [Reveal.js](http://lab.hakim.se/reveal-js/#/) and it looked like a perfect match for what I wanted to build..
 
 ##### Hightlighting the Code Samples
-After playing around with Reveal.js I found out that the code highlight features, out of the box, were a bit limited for what I wanted. So I searched for a framework that would work with Reveal.js. I found [Prism.js](http://prismjs.com/) did all I wanted and a bit more. I set out to integrate Prims.js with Reveal.js and finally had something that would meet my requirements.
+After playing around with Reveal.js I found out that the code highlight features, out of the box, were a bit limited for what I wanted. So I searched for a framework that would work with Reveal.js. I found [Prism.js](http://prismjs.com/) did all I wanted and a bit more. I set out to integrate Prism.js with Reveal.js and finally had something that would meet my requirements.
 
 ##### Fiddling With CSS
 Last part was to make some changes to Reveal.js and Prism.js CSS's to get the desired visual effect. This is an area I'm a bit out of my comfort zone so it took me a while to get something half decent.
 
 ### The End Result
-The code, as it stands now, is still very crude but is capable of retrieving all commits, for a file, in a given repository, and generate a presentation using Reveal.js. The presentation has a slide for each commit that changed the specified file. The slides use Prims.js to highlight the code.
+The code, as it stands now, is still very crude but is capable of retrieving all commits, for a file, in a given repository, and generate a presentation using Reveal.js. The presentation has a slide for each commit that changed the specified file. The slides use Prism.js to highlight the code.
 
 There are still a few things hardcoded on the F# code, so it's not a "consumer" ready product, but any developer should be able to use it, as is now.
 
