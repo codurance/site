@@ -41,4 +41,4 @@ Last part was to make some changes to Reveal.js and Prism.js CSS's to get the de
 ### The End Result
 The code, as it stands now, is still very crude but is capable of retrieving all commits, for a file, in a given repository, and generate a presentation using Reveal.js. The presentation has a slide for each commit that changed the specified file. The slides use Prism.js to highlight the code.
 
-There are still a few things hardcoded on the F# code, so it's not a "consumer" ready product, but any developer should be able to use it, as is now.
+There are still a few things hardcoded on the F# code, so it's not a "consumer" ready product, but some developers might be able to use it as it is now.
