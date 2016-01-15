@@ -30,3 +30,5 @@ Here’s what my vim Clojure dev environment looks like:
 <img class="img-responsive" src="/assets/img/custom/blog/vimenv.png"></img>
 
 I have found that some investment into learning better vim usage has allowed me to become more productive than I was with Cursive, although it will not suit everyones taste. The codebases I work on are relatively small and I may still prefer Cursive for larger codebases. Having said that, I like the argument that we should never have a single large codebase. At least for now vim is my new favourite editor for Clojure. Then again! I have not tried Emacs … yet!
+
+EDIT: [Tom Oram](https://twitter.com/tomphp) pointed out a couple more plugins that I neglected to mention. These are [Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim) and [Paredit](https://github.com/vim-scripts/paredit.vim). The former is invaluable for keeping track of those parentheses, and adds a little colour to your life. The later allows structured editing of s-expressions -  it is not easy to get use to but once you do you cannot do without, 
