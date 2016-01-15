@@ -14,7 +14,7 @@ tags:
 ---
 
 ### The Beginning
-Inspired by my friend [@SamirTalwar](https://twitter.com/SamirTalwar) and the initiative he set upon himself to [automate the world](https://noodlesandwich.com/]) world I picked up on an idea I had many months ago. Automating the generation of presentations using GitHub commits.
+Inspired by my friend [@SamirTalwar](https://twitter.com/SamirTalwar) and the initiative he set upon himself to [automate the world](https://noodlesandwich.com/]) I picked up on an idea I had many months ago. Automating the generation of presentations using GitHub commits.
 
 ### What Problem am I Trying to Solve?
 Often I need to do a software related session and I have to present the code in small steps showing how I approached a problem. This usually involves a lot of copy and pasting code from a repository, a commit a time, into PowerPoint or KeyNote or some other presentation application or framework. This is a very manual process and error-prone. Also, presentation applications usually know nothing about code, so I also need to hand format the copied code.
