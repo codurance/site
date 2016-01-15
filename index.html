@@ -151,7 +151,7 @@ layout: default
         <div class="row blog-boxes margin-bottom-40">
                 {% for post in site.posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
-                    <div class="blog-box">
+                    <div class="blog-box homepage-blog-thumb">
                         {% if post.image.src %}
                             <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
                         {% else %}

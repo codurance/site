@@ -208,6 +208,12 @@ body:last-child .btn-u, x:-moz-any-link {
 	box-shadow: 0 10px 10px 0px gray;
 }
 
+/* Blog panel */
+.homepage-blog-thumb img {
+	height: 240px;
+	width: 350px;
+}
+
 /*Content Boxes*/
 .content-boxes {
   margin-bottom: 15px;
@@ -256,8 +262,8 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .blog-thumb a .img-responsive {
 	display: block;
-    width: 100%;
-    max-height: 225px;
+    width: 335px;
+    height: 225px;
 }
 
 #sharethisButtons {
