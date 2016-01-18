@@ -9,6 +9,9 @@ tags:
 - integration
 - spring
 - java
+canonical:
+    name: my personal blog
+    href: https://david-codes.hatanian.com/2015/11/19/2016-01-18-isolating-integration-tests-with-the-spring-framework.html
 ---
 
 Integration tests can be slow and unreliable because they depend on too many components in the system. Up to a certain point, this is unavoidable: integration tests are here to validate how each part of your system plays with other internal or external components.
