@@ -3,7 +3,7 @@ layout: post
 title: Isolating integration tests and mocking dependencies with Spring Boot
 author: David Hatanian
 image:
-    src: /assets/img/custom/blog/2016-01-18-isolating-integration-tests-with-the-spring-framework.md/my-application.png
+    src: /assets/img/custom/blog/2016-01-18-isolating-integration-tests-with-the-spring-framework.md/thumbnail.png
 tags:
 - testing
 - integration
