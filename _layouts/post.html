@@ -28,10 +28,10 @@ group:
           {{ content }}
 
           <div id="sharethisButtons">
-            <span class='pull-right st_twitter_large' displayText='Tweet'></span>
-            <span class='pull-right st_linkedin_large' displayText='LinkedIn'></span>
-            <span class='pull-right st_email_large' displayText='Email'></span>
-            <span class='pull-right st_sharethis_large' displayText='ShareThis'></span>
+            <span class='pull-right st_twitter_large' displayText='Tweet' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
+            <span class='pull-right st_linkedin_large' displayText='LinkedIn' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
+            <span class='pull-right st_email_large' displayText='Email' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
+            <span class='pull-right st_sharethis_large' displayText='ShareThis' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
           </div>
 
           {% if page.canonical %}
@@ -177,3 +177,4 @@ group:
   </div>
   <!-- background color -->
 </div>
+
