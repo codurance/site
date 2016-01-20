@@ -27,16 +27,17 @@ group:
 
           {{ content }}
 
-          <div id="sharethisButtons">
-            <span class='pull-right st_twitter_large' displayText='Tweet' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
-            <span class='pull-right st_linkedin_large' displayText='LinkedIn' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
-            <span class='pull-right st_email_large' displayText='Email' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
-            <span class='pull-right st_sharethis_large' displayText='ShareThis' expr:st_title='data:post.title' expr:st_url='data:post.url'></span>
-          </div>
-
           {% if page.canonical %}
             <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
           {% endif %}
+
+          <div id="sharethisButtons">
+            <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ page.url }}'></span>
+            <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ page.url }}'></span>
+            <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ page.url }}'></span>
+            <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ page.url }}'></span>
+          </div>
+
         </div>
       </div>
       <!--End Blog Post-->
