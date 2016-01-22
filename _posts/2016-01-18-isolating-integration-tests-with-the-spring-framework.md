@@ -119,7 +119,7 @@ Let us have a look again at the annotations:
  * `@SpringApplicationConfiguration`: We tell Spring where it will find the `DelayedWebServerConfiguration` class we created before.
  * `@ActiveProfiles`: Enables the `restTemplateTimeout` profile, otherwise the `Controller` and the `Configuration` will be filtered out.
 
-We now have a unit test running with a limited set of dependencies instead of the whole application. What if we wanted to go further and add mocks into the game? This may be required when a dependency does not have a dev environment or that it is too complicated to call from a developer's workstation. In that case, we can add those mocks to the `Configuration` class and they will be injected into the test's Spring context.
+We now have an integration test running with a limited set of dependencies instead of the whole application. What if we wanted to go further and add mocks into the game? This may be required when a dependency does not have a dev environment or that it is too complicated to call from a developer's workstation. In that case, we can add those mocks to the `Configuration` class and they will be injected into the test's Spring context.
 
 Here is a `Configuration` example where we inject a custom `CustomerService` mocked by Mockito instead of the default one:
 
