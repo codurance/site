@@ -3,7 +3,7 @@ layout: post
 title: Isolating integration tests and mocking dependencies with Spring Boot
 author: David Hatanian
 image:
-    src: /assets/img/custom/blog/2016-01-18-isolating-integration-tests-with-the-spring-framework.md/thumbnail.png
+    src: /assets/img/custom/blog/2016-01-31-isolating-integration-tests-with-the-spring-framework.md/thumbnail.png
 tags:
 - testing
 - integration
@@ -11,14 +11,14 @@ tags:
 - java
 canonical:
     name: my personal blog
-    href: https://david-codes.hatanian.com/2015/11/19/2016-01-18-isolating-integration-tests-with-the-spring-framework.html
+    href: https://david-codes.hatanian.com/2016/01/31/isolating-integration-tests-with-the-spring-framework.html
 ---
 
 Integration tests can be slow and unreliable because they depend on too many components in the system. Up to a certain point, this is unavoidable: integration tests are here to validate how each part of your system plays with other internal or external components.
 
 We can, however, improve some integration tests by only spinning up the required dependencies, instead of the whole system. Let's imagine an application that depends on a database, a third-party REST API and a message queue:
 
-<img src="/assets/img/custom/blog/2016-01-18-isolating-integration-tests-with-the-spring-framework.md/my-application.png" alt="Google Apps configuration screen" title="Our application with 3 dependencies" style="margin:auto;display:block;">
+<img src="/assets/img/custom/blog/2016-01-31-isolating-integration-tests-with-the-spring-framework.md/my-application.png" alt="Google Apps configuration screen" title="Our application with 3 dependencies" style="margin:auto;display:block;">
 
 Assume now that we would like our integration test to validate a behavior that only includes calls to the REST API but no call to the database or the message queue. To give a concrete example, let's assume we want to check that our REST client is correctly configured to time out after 3 seconds.
 
