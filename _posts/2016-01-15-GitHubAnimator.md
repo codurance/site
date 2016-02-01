@@ -41,4 +41,4 @@ The last part was to make some changes to Reveal.js and Prism.js CSS's to get th
 ### The End Result
 The code, as it stands now, is still very crude but it's capable of retrieving all commits for a file in a given repository and generating a presentation with Reveal.js. The presentation has a slide for each commit that changed the specified file. The slides use Prism.js to highlight the code.
 
-There are still a few things hardcoded in F#, so it's not a "consumer" ready product, but some developers might be able to use it as is. You can find the code [here](https://github.com/pedromsantos/GitHubAnimator).
+There are still a few things hardcoded in the F# code, so it's not a "consumer" ready product, but some developers might be able to use it as is. You can find the code [here](https://github.com/pedromsantos/GitHubAnimator).
