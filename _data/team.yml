@@ -157,3 +157,12 @@
   fullDescription: <p>David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.</p><p>Before coming to London, David worked in Morocco, India and Vietnam.</p><p>David believes in simplicity as a core principle for any development project, and in constantly learning and improving.</p>
   twitter: DHatanian
   github: dhatanian
+
+- id: matthew
+  name: Matthew Butt
+  image: /assets/img/custom/team/matthew_butt.jpg
+  role: Software Craftsman
+  shortDescription: Matthew believes that people and their relationships should be at the heart of our work as software developers, and is passionate about teaching excellence in this field.
+  fullDescription: <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since 2000 he has worked on a wide range of projects across many sectors, and has always focused on writing well-crafted software, and building close collaborative relationships within and beyond the technical team, so discovering the Software Craftsmanship community felt like finding a home from home.</p><p>Matthew is passionate about teaching excellence in software development, and before joining Codurance ran 7digital's well-respected Technical Academy, as well as participating in the wider Software Craftsmanship and Extreme programming communities.</p>
+  twitter: bnathyuw
+  github: bnathyuw
