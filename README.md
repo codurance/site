@@ -4,7 +4,7 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 ## Initialisation
 
-Run `bundle install` to install the required Gems. If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`, which will help you isolate your gems from your standard Ruby installation.
+Run `bundle install` to install the required Gems. If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`, which will help you isolate your gems from your standard Ruby installation; you should then run `rvm gemset use gh-pages` when you start a new terminal session.
 
 ## Building
 
