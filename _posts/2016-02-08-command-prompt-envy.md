@@ -13,20 +13,20 @@ tags:
 - Consolas
 ---
 
-I'm spend my time between Mac OS and Windows and when I go back to my Windows machine I always feel the lack of my Mac command prompt. 
+I'm spending my time between Mac OS and Windows, and when I go back to my Windows machine I always feel the lack of my Mac command prompt. 
 
-Almost a year ago [Amir](https://twitter.com/amirbazazi) [posted](http://codurance.com/2015/03/16/installing-zprezto-a-quick-guide/) how you can get a nice command prompt on a Mac. I allways wanted a post like that, but for a Windows machine. Today I stumbled upon [Babun](http://babun.github.io/) gave it a try and TADA! I was able to get a command prompt exactly as the one I have on my Mac.
+Almost a year ago [Amir](https://twitter.com/amirbazazi) [posted](http://codurance.com/2015/03/16/installing-zprezto-a-quick-guide/) how you can get a nice command prompt on a Mac. I've always wanted a post like that, but for a Windows machine. Today I stumbled upon [Babun](http://babun.github.io/), gave it a try and TADA! I was able to get a command prompt exactly like the one I have on my Mac.
 
 ###Follow these steps to get your shiny Windows command prompt:
-1. Downlod Babun from http://babun.github.io/ (272 MB) 
+1. Download Babun from http://babun.github.io/ (272 MB) 
  (Do not use Google Chrome to download since, for some reason, it will download the file but marks it as unsafe and deletes it).
 2. Unzip the downloaded archive
 3. Execute "install.bat" to install Babun to C:\Users\YOURUSER\.babun or execute "install.bat /t PATH_TO_INTALLATION_LOCATION"
  When the installation finishes you should be greeted with this ... <img src="https://raw.githubusercontent.com/babun/babun.github.io/master/images/screenshots/screen_welcome.png" class="img img-responsive style-screengrab ">
 
 ### One more tweek
-We already have a cool prompt, try to navigate to a git repository. We want just a bit more :) Lets try a more colourful theme.
-Lets use the "Bullet train" [theme](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
+We already have a cool prompt, try to navigate to a git repository. We want just a bit more :) Let's try a more colourful theme.
+Let's use the "Bullet train" [theme](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
 
 Execute the folowing commands
  ```
@@ -40,12 +40,12 @@ Execute the folowing commands
  
 1. Change this line ```ZSH_THEME="your current theme"``` to ```ZSH_THEME="bullet-train"```
 2. Save the file and exit your editor
-3. Close and reopen Babun.
+3. Close and reopen Babun
 4. You will be greeted with... a disappointing result :( 
 
-But don't despair we will fix it :)
+But don't despair, we will fix it :)
 
-You need a font that supports powerline, I suggest [Consolas for powerline](https://github.com/runsisi/consolas-font-for-powerline) but any font that supports powerline should work. 
+You need a font that supports powerline. I suggest [Consolas for powerline](https://github.com/runsisi/consolas-font-for-powerline), but any font that supports powerline should work. 
 
 1. Download it, double click it and select install on the dialog: <img src="http://imgur.com/0vQXJyS.png" class="img img-responsive style-screengrab">
 
