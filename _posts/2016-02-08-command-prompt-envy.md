@@ -21,7 +21,7 @@ Almost a year ago [Amir](https://twitter.com/amirbazazi) [posted](http://coduran
 1. Download Babun from http://babun.github.io/ (272 MB) 
  (Do not use Google Chrome to download since, for some reason, it will download the file but marks it as unsafe and deletes it).
 2. Unzip the downloaded archive
-3. Execute "install.bat" to install Babun to C:\Users\YOURUSER\.babun or execute "install.bat /t PATH_TO_INTALLATION_LOCATION"
+3. Execute "install.bat" to install Babun to C:\Users\YOURUSER\\.babun or execute "install.bat /t PATH_TO_INTALLATION_LOCATION"
  When the installation finishes you should be greeted with this ... <img src="https://raw.githubusercontent.com/babun/babun.github.io/master/images/screenshots/screen_welcome.png" class="img img-responsive style-screengrab ">
 
 ### One more tweek
