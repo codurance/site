@@ -86,3 +86,4 @@ Mandatory coupling comes when some info needs to reside in a third entity as it 
 ## Conclusion
 
 Even if I am a strong supporter of compiled languages, I think that sharing code through binaries in a distributed environment deserves a deep analysis of the structure and needs of your system. I hope that this post have provided some insights into this topic.
+
