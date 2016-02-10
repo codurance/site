@@ -25,7 +25,7 @@ partners: Jetbrains
 				</div>
 			</div>
 			<div class="row margin-bottom-40 text-center">
-				<a href="about-us/contact" class="btn-u btn-u-lg">
+				<a href="/aboutus/contact" class="btn-u btn-u-lg">
 					Talk to us
 				</a>
 			</div>
@@ -50,7 +50,6 @@ partners: Jetbrains
 		<div class="news-v3 margin-bottom-30 bg-color-white">
 
 		<img class="img-responsive full-width"> 
-
 			<iframe height="500" width="100%" src="https://www.youtube.com/embed/_NnElPO5BU0?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx" frameborder="0" allowfullscreen></iframe>
 
 			<div class="news-v3-in">
@@ -61,7 +60,7 @@ partners: Jetbrains
 		</div>
 	</div>
 	<div class="row text-center">
-		<a href="about-us/contact" class="btn-u btn-u-lg">
+		<a href="/aboutus/contact" class="btn-u btn-u-lg">
 			Talk to us
 		</a>
 	</div>
