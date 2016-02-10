@@ -36,10 +36,10 @@ partners: Jetbrains
 	</div>
 	<div class="row" style="margin-bottom: 60px;">
 		<div class="col-md-6">
-			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-right" src="/assets/img/partners/jetbrains/Jetbrains_ConsultingPartner.png" alt="Jetbrains Consulting Partner logo" style="max-height: 150px"></a>
+			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-right jetbrains-logo-partners" src="/assets/img/partners/jetbrains/Jetbrains_ConsultingPartner.png" alt="Jetbrains Consulting Partner logo"></a>
 		</div>
 		<div class="col-md-6">
-			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-left" src="/assets/img/partners/jetbrains/Jetbrains_TrainingPartner.png" alt="Jetbrains Training Partner logo" style="max-height: 150px"></a>
+			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-left jetbrains-logo-partners" src="/assets/img/partners/jetbrains/Jetbrains_TrainingPartner.png" alt="Jetbrains Training Partner logo"></a>
 		</div>
 	</div>
 	<div class="row margin-bottom-20">

@@ -148,6 +148,10 @@ body:last-child .btn-u, x:-moz-any-link {
   height: auto;
 }
 
+.jetbrains-logo-carousel {
+	height: 70px;
+}
+
 /*  Heading Titles - Home Page */
 
 .block-header {
@@ -472,3 +476,7 @@ body:last-child .btn-u, x:-moz-any-link {
 	margin: 20px 0px 40px 0px;
 }
 
+/* Partners */
+.jetbrains-logo-partners {
+	height: 120px;
+}
