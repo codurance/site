@@ -149,7 +149,12 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 
 .jetbrains-logo-carousel {
-	height: 70px;
+	padding-left: 40px;
+}
+
+.jetbrains-logo-carousel img {
+	height: 70px; 
+	width: auto;
 }
 
 /*  Heading Titles - Home Page */
