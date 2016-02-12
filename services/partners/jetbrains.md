@@ -21,7 +21,7 @@ partners: Jetbrains
 				<i class="icon-custom icon-md rounded-x icon-bg-u fa fa-check"></i>
 				<div class="content-boxes-in-v3">
 					<h2 class="heading-sm">JetBrains Tools</h2>
-					<p>We can help you to integrate JetBrains tools into your next project so that you can get <strong>qualty</strong> software out the door <strong>faster</strong>.</p>
+					<p>We can help you to integrate JetBrains tools into your next project so that you can get <strong>quality</strong> software out the door <strong>faster</strong>.</p>
 				</div>
 			</div>
 			<div class="row margin-bottom-40 text-center">
