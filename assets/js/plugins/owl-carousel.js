@@ -99,7 +99,9 @@ var OwlCarousel = function () {
 
             //Owl Clients v1
             jQuery(".owl-clients-v1").owlCarousel({
-                items : 7,
+                items : 6,
+                loop: true,
+                navRewind: false,
                 autoPlay : 5000,
                 itemsDesktop : [1000,5],
                 itemsDesktopSmall : [900,4],

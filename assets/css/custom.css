@@ -139,24 +139,6 @@ body:last-child .btn-u, x:-moz-any-link {
 	margin: 0;
 }
 
-#client-carousel .item{
-  margin: 45px;
-}
-#client-carousel .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.jetbrains-logo-carousel {
-	padding-left: 40px;
-}
-
-.jetbrains-logo-carousel img {
-	height: 70px; 
-	width: auto;
-}
-
 /*  Heading Titles - Home Page */
 
 .block-header {
@@ -404,12 +386,6 @@ body:last-child .btn-u, x:-moz-any-link {
 
 /* Case Studies */
 
-.case-study-carousel .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .case-study {
 	margin: 35px 0px;
 }
@@ -484,4 +460,14 @@ body:last-child .btn-u, x:-moz-any-link {
 /* Partners */
 .jetbrains-logo-partners {
 	height: 120px;
+}
+
+.jetBrains-blurb {
+	text-align: center;
+}
+
+.jetBrains-logo-carousel img {
+	height: 70%;
+	width: 70% !important;
+	margin-left: 30px
 }
