@@ -44,7 +44,7 @@ First corrective measure is assuring that only the processing of the poisoned me
 
 Second corrective measure would be not simply swallowing those crashes but being able to communicate them to proper actors (being humans or software). Good practice is to provide dead letter queues for poisoned messages just in case we want to manipulate and retry the processing of those messages at that level.
 
-Before getting into explicit schemas I would say that those measures are not usually enough but they are a good safety net, as shit happens, and we need to be prepared.
+Before getting into explicit schemas I would say that those measures are usually not enough but they are a good safety net, as shit happens, and we need to be prepared.
 
 ### Explicit schemas
 
