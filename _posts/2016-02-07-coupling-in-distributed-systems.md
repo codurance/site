@@ -28,7 +28,7 @@ The messages that are published and consumed in this system have a schema and it
 
 I've been a user of statically typed languages most of my career so I'm really biased with this topic. I strongly believe in Lean concepts as the importance of minimising waste. At the same time I love the therapeutic ideas behind Agile, TDD or BDD about exposing the truth as soon as possible. Static types, and in the end the compiler, help me to achieve those goals.
 
-I would prefer spending my time creating tests under the [motivations](https://twitter.com/sarahmei/status/685907333889810432) of providing living documentation, easing future refactors or helping me to drive the design, more than helping catching bugs that the type system should take care of. Writing a test that checks the behaviour of a method when receives null it's a waste of time if we can make it impossible to write a line of code that passes a null.
+I would prefer spending my time creating tests under the [motivations](https://twitter.com/sarahmei/status/685907333889810432) of providing living documentation, easing future refactors or helping me to drive the design, more than helping catching bugs that the type system should take care of. Writing a test that checks the behaviour of a method when receiving null it's a waste of time if we can make it impossible to write a line of code that passes a null.
 
 Compile world is not perfect though, as it's definitively slower on development and constrains developers (someone could say that less freedom might be a nice to have in this context)
 
