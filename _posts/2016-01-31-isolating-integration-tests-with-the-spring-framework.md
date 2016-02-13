@@ -67,7 +67,7 @@ public class DelayedWebServerConfiguration {
 
 The Spring context configuration can get quite confusing, let us look at the annotations one after the other:
 
- * `@Profile`: This tells Spring that this configuration should only be used then the `restTemplateTimeout` profile is active. Further in this article, we will see how we enable this profile for a specific integration test. It is this annotation that prevents the configuration to be picked up by other unrelated integration tests. Note that our `DelayedWebServerController` is identically annotated.
+ * `@Profile`: This tells Spring that this configuration should only be used when the `restTemplateTimeout` profile is active. Further in this article, we will see how we enable this profile for a specific integration test. It is this annotation that prevents the configuration to be picked up by other unrelated integration tests. Note that our `DelayedWebServerController` is identically annotated.
  * `@Configuration`: Standard annotation to tell Spring that this is a context configuration class.
  * `@EnableAutoConfiguration`: Here we disable some of the Spring Boot "magic" that we do not need for our specific test
  * `@ComponentScan`: We speed up the Spring Boot application startup by only scanning one package instead of the whole project. Any Spring-annotated class that is outside of this package will not be picked up by Spring.
