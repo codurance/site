@@ -1,13 +1,14 @@
 ---
 layout: post
-name: open-financials
-title: Open Financials
+name: Why has Codurance adopted open-book management?
+title: Why has Codurance adopted open-book management?
 date: 2016-02-22 14:54:00 +00:00
 author: Sandro Mancuso
 image:
     src: /assets/img/custom/blog/2016-02-22-transparency.png
 tags:
-- open financials
+- finance
+- open-book management
 - codurance
 --- 
 
