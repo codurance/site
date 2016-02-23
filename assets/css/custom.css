@@ -287,6 +287,22 @@ body:last-child .btn-u, x:-moz-any-link {
 	margin-right: 10px;
 }
 
+.news-v3-in h1 {
+	font-size: 32px;
+    font-weight: 200;
+    margin: 0 0 20px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.news-v3-in h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: none;
+}
+
 /* Author */
 #author-img {
 	width: 100%;
