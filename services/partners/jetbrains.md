@@ -44,7 +44,7 @@ partners: Jetbrains
 	</div>
 	<div class="row">
 		<div class="title-v1">
-			<h2>Working with JetBrains Intellij IDE</h2>
+			<h2>Working with JetBrains Intellij IDEA</h2>
 			<p>Want to get a flavour of how JetBrains can support your next project? Below, Sandro provides an advanced tutorial on Test Driven Development using the <a href="https://www.jetbrains.com/idea/">JetBrains Intellij IDE</a>.</p>
 		</div>
 		<div class="news-v3 margin-bottom-30 bg-color-white"> 
