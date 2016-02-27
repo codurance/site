@@ -14,6 +14,41 @@ To build the site, run `rake build`. You will not often have to do this manually
 
 Running `rake serve` will serve the web site at [http://localhost:4000/](http://localhost:4000/). Run it in the background so you can test your changes.
 
+## Serving the Web Site from Docker
+
+**[Docker Installation required]**
+
+To build and serve the site from Docker you need to build a local image based. 
+Dockerfile for is ready to use in directory `docker`. 
+
+You need to execute the following command to prepare an image and run a container:
+
+```
+docker build --tag codurance-site:local -f ./docker/Dockerfile-local ./docker/
+docker run -d -v <<root_directory_of_this_project>>:/site -p 4000:4000 --name codurance-site codurance-site:local
+```
+
+#### !!! IMPORTANT !!!
+The site doesn't start immediately, because the container executes commands `bundle install` and `rake serve`.
+You can trace the progress of the start process by executing the following command:
+
+```
+docker logs -f codurance-site
+```
+
+#### !!! Docker-machine users !!!
+
+1. `<<root_directory_of_this_project>>` must be stored in a directory available from `docker-machine` (e.g. `/User/<<user_name>>`).
+2. [Virtualbox Driver] If you want to edit files from a host system (e.g. OS X or Windows) after each change you have to execute:
+
+    ```
+    docker exec -ti codurance-site touch /site/<<path_to_changed_file>>
+    ```
+
+    Refresh takes some time and you can trace the progress by running command `docker logs -f codurance-site`. 
+    The root cause of this problem is describe in this *[issue report](https://www.virtualbox.org/ticket/10660)*.  
+
+
 ## Running the Tests
 
 There are some tests around the custom Jekyll plugins for navigation. Run them with `rake spec`.
