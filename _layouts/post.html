@@ -19,7 +19,7 @@ group:
                 <li>Posted {{ page.date | date_to_string }}</li>
                 <li>
                     {% for tag in page.tags %}
-                      <a href="/blog/tag/{{ tag | downcase }}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a> 
+                      <a href="/blog/tag/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
                     {% endfor %}
                 </li>
                {% endif %}
