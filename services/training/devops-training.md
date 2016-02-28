@@ -21,7 +21,7 @@ Are you a developer looking to foster a DevOps culture at your workplace? This c
 * Build, run and publish your own Docker images
 * Deploy containers to a remote server
 * Set up a continuous delivery pipeline
-    * Automate build and deployment as part of your continuous integration process using Jenkins
+    * Automate build and deployment as part of your continuous integration process using TeamCity
     * Establish healthchecks for your services using Nagios
     * Implement a service discovery solution using tools like Consul and Nginx
 * Set up a cluster of Docker daemons using Docker Swarm
@@ -40,7 +40,7 @@ Are you a developer looking to foster a DevOps culture at your workplace? This c
 
 Developers must:
 
-* Bring their own laptops, running an OS that supports [Docker](https://docs.docker.com/installation/)
-* Install Docker beforehand
+* Bring their own laptops
+* Able to login over SSH to machines created in AWS 
 * Install Git beforehand (you'll be cloning sample code from our GitHub repository)
 * Be proficient with their text editor of choice
