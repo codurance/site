@@ -15,65 +15,55 @@ tags:
 - TeamCity
 --- 
 
-About one year ago I had a first contact with Docker. This new kind on the block promised to relieve our poor computers 
-of installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers computers.
+About one year ago I had a first contact with Docker. This new kid on the block promised to relieve our poor computers from installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers computers.
 
-A conservative approach of my ops teammates didn't change my joy of using Docker. Despite many people described Docker
-as tool writen by developers for development our industry found new ways of using images and containers. Images of our 
-applications and services became units of deployment for tool like  Kubernetes, Docker Swarm or Marathon.
+A conservative approach of my ops teammates didn't change my joy of using Docker. Despite many people describing Docker as tool writen by developers for development our industry found new ways of using images and containers. Images of our applications and services became units of deployment for tools like Kubernetes, Docker Swarm or Marathon.
 
-But... How this images appear in these tools?
+But how this images appear in these tools?
 
-## Set The Scene
+## Setting The Scene
 
-From developers perspective any application is manifested by a code. There is long way before we finally find some place on a production environment.
-To show this process we need small application. Our application is going to expose some HTTP API which we are going to use after the deployment. 
-Let's assume that will are going to use **Gradle** to build the application and **TeamCity** as build automation tool.
+From developer's perspective any application is manifested by a code. There is long way before our code find a good place to execute on a production environment. I want to show how you this process can be easier with **Docker** and **Continuous Deployment** pipeline. To do that we need a small application. Our application is going to expose some HTTP API which we are going to call after the deployment. Let's assume that will are going to use **Gradle** to build the application and **TeamCity** for build automation.
 
-On each **TeamCity** build agent we should have installed **Docker**. We will also use this machine to deploy our application.
-In the real project probably you don't want to do that, but the deployment phase can be changed to fit better to your environment.
+On each **TeamCity** build agent we should have installed **Docker**. We will also use this machine to run our application. In a real project we don't want to install **TeamCity** agents on all machines and we should introduce another tool (e.g. Kubernetes) which will take care about distribution of our application.
  
-## Build Application
+## Build
 
 We need to build something before we will be able to create any docker image. To do that we need to create the first step in our Continuous Deployment (CD) pipeline. 
-In this step we will download our source code, perform all **test** which can be done on the source code level and produce **artifact** which 
-contains all elements required to start and run our application.
+In this step we will download our source code, run all **tests** which can be done on the source code level and produce an **artifact** containing all elements required to start and run our application.
 
-This build configuration is not much different then usual step in a common Continuous Deployment pipeline.
-Alongside common parameters we have to define **artifacts** which will be generated after each execution. We are going to use them as base for next steps in the pipeline 
+This build configuration is not very different to a usual step in a common Continuous Deployment pipeline. Alongside common parameters we have to define **artifacts** which will be generated after each execution. We are going to use them as a base for next steps in the pipeline.
 
-In **TeamCity** we define **artifacts** by defining paths to files from working directory (which is created for each run of a configuration).
-Working directory is combination of files downloaded from a version control system and files generated during execution of build steps.
-We will define later elements of this directory. 
+In **TeamCity** we define **artifacts** by defining paths to files from the working directory (which is created for each run of a configuration). The working directory is combination of files downloaded from a version control system and files generated during the execution of build steps. We will define these elements during configuring a version control settings and build steps. 
 
 We need two artifacts. The first one is `Dockerfile`. We already prepared this file in our source code and it will be stored in `docker` directory.
-The next file is ***tar*** file which will be generated by our **Gradle** build. It contains script which allows to execute our code and all required libraries. 
+The next file is a ***tar*** file which will be generated by our **Gradle** build. It contains a script which allows to execute our code and all required libraries. 
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/build_config.png" alt="Build Configuration" title="Build Configuration" class="img img-responsive style-screengrab">
 
-Now we are ready to instruct our build configuration how to download our source code. We use github as our code repository.
-We just have to choose type as *Git* and provide url to our application.
+Now we are ready to instruct our build configuration how to download our source code. We use GitHub as our code repository.
+We just have to choose type as *Git* and provide the URL to our application.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/build_vcs.png" alt="Version Control Configuration" title="Version Control Configuration" class="img img-responsive style-screengrab">
 
-We have the source code, so we can describe what to do with this code. As I mention before we will **test** our application and generate an **artifact** with executable content.   
+We have the source code, so we can describe what to do with this code. As I mentioned before we will **test** our application and generate an **artifact** with executable content.   
 
-**TeamCity** have predefined runners for different build tools. In this case we are going to use **Gradle** runner to **test** and **build**. 
+**TeamCity** has predefined runners for different build tools. In this case we are going to use the **Gradle** runner to **test** and **build**. 
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/build_step.png" alt="Gradle Step" title="Gradle Step" class="img img-responsive style-screengrab">
 
-Now we can run our build. As result of we should see our **artifacts** in *"Artifact"* tab. 
+Now we can run our build. As result of we should see our **artifacts** in *"Artifact"* tab.
  
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/build_result.png" alt="Build Result" title="Build Result" class="img img-responsive style-screengrab">
 
-## Release Image
+## Release
 
-Our code is no longer needed. We have all we need to build the docker image. Now we have create our image and **release** with the right version. To simplify our example we are going to use current build number to define an image version.
-Next we will generate file with this version. This file give us possibility to pass information about version to the next steps.  
+Our code is no longer needed. We have all we need to build the docker image. Now we have to create our image and **release** with the right version. To simplify our example we are going to use the current build number to define an image version.
+Next we will generate a file with this version. This file give us the possibility to pass information about the version to the next steps.  
 
-First, let's take a closer look at `Dockerfile`. We copy to the image all libraries and scripts from `simple_application.tar`. This ***tar*** file already contains all required content, so all we have to do is to use `ADD`. It will automatically *untar* all files in the image. Next we expose port of our HTTP API and we define how we launch our application by adding `ENTRYPOINT` command.  
+First, let's take a closer look at the `Dockerfile`. We copy all libraries and scripts from `simple_application.tar` to the image. This ***tar*** file already contains all required content, so all we have to do is to use `ADD`. It will automatically *untar* all files in the image. Next we expose the port of our HTTP API and we define how we launch our application by adding an `ENTRYPOINT` command.  
 
-For example our `Dockerfile` can look like as follows: 
+For example our `Dockerfile` can look like this: 
 
 ```
 FROM java:8
@@ -85,36 +75,36 @@ EXPOSE 4567
 ENTRYPOINT ["/simple_application/bin/simple_application"]
 ```
 
-Definition of the build configuration is very simple. In the general settings we just define new artifact: `image.version`. We will generate this file in a build step and it will contain an docker image version.
+Defining the build configuration is very simple. In the general settings we just define a new artifact: `image.version`. We will generate this file in a build step and it will contain a docker image version.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_config.png" alt="Release Configuration" title="Release Configuration" class="img img-responsive style-screengrab">
 
-Without **artifact** we won't be able to build any image. We have to tell our build how to find **artifacts** from **Build** phase. We can do that by defining **Artifact Dependency** in **TeamCity**. We just have to choose build configuration and define files which we want to use in this build.
+Without the **artifact** we won't be able to build any image. We have to tell our build how to find **artifacts** from the **Build** phase. We can do that by defining an **Artifact Dependency** in **TeamCity**. We just have to choose a build configuration and define files which we want to use in this build.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_artifacts.png" alt="Release Artifact Dependency" title="Release Artifact Dependency" class="img img-responsive style-screengrab">
 
-And finally we have to trigger this build automatically when we pass all **tests** in the previous step. By introducing **Finish Build Trigger** we can start this build just after **TeamCity** successfully finish building the application.  
+And finally we have to trigger this build automatically when we pass all **tests** in the previous step. By introducing **Finish Build Trigger** we can start this build just after **TeamCity** successfully finishes building the application.  
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_trigger.png" alt="Release Trigger" title="Release Trigger" class="img img-responsive style-screengrab">
 
 Now we are ready for release. Three build steps must be introduced: **Build Image**, **Push Image to Repository** and **Save version**. 
-This time we will use different runner type: **Command Line**. We can execute shell script on a build agent. Because we already installed **Docker** on our build agent we can use `docker` command in our shell script.
+This time we will use a different runner type: **Command Line**. We can execute a shell script on a build agent. Because we already installed **Docker** on our build agent we can use `docker` command in our shell script.
  
 ### Build Image 
 
-To build image we need to execute the following command: 
+To build the image we need to execute the following command: 
 
 ```bash
 docker build --tag registry.private/simple_application:%build.number% .
 ```
 Docker's build command will take our `Dockerfile` and build the image tagged as `registry.private/simple_application` and version `%build.number%`. 
-Variable `%build.number%` is build-in **TeamCity** variable which contains current build number.
+The variable `%build.number%` is a build-in **TeamCity** variable containing the current build number.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_step_1.png" alt="Release Build Image Step" title="Release Build Image Step" class="img img-responsive style-screengrab">
 
-### Push Image to Repository
+### Push Image
 
-The image created in the previous step exists only on the agent machine. To make the image available to others we need to store it in a repository. We can use **Docker Hub**, but in our example we use private repository available under address `repository.private`. We can execute the following command to push the image to the repository.
+The image created in the previous step exists only on the agent machine. To make the image available to others we need to store it in a repository. We can use **Docker Hub**, but in our example we use a private repository available under the address `repository.private`. We can execute the following command to push the image to the repository.
 
 ```bash
 docker push registry.private/simple_application:%build.number%
@@ -124,7 +114,7 @@ docker push registry.private/simple_application:%build.number%
 
 ### Save Version
 
-The image is safely stored in the repository, but we need to do one more step: save the version of our image. Once again we run some shell script to generate `image.version file: 
+The image is safely stored in the repository, but we need to do one more step: save the version of our image. Once again we run some shell script to generate an `image.version file: 
 
 ```bash
 echo %build.number% > image.version
@@ -132,21 +122,20 @@ echo %build.number% > image.version
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_step_3.png" alt="Release Save Version Step" title="Release Save Version Step" class="img img-responsive style-screengrab">
 
-## Deploy Application
+## Deploy 
 
-In the previous step we created an image which we can use now to deploy our application. We are going to create another build configuration: **Deploy**. This build will run a Docker container on **TeamCity** agent based on the image from **Release** phase.
+In the previous step we created an image which we can use now to deploy our application. We are going to create another build configuration: **Deploy**. This build will run a Docker container on the **TeamCity** agent based on the image from the **Release** phase.
 
-Our build configuration must contain three elements. The first one is a trigger. We will use again **Finish Build Trigger** with dependency to **Release** build configuration.
+Our build configuration must contain three elements. The first one is a trigger. Again, we use the **Finish Build Trigger** with a dependency to the **Release** build configuration.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/deploy_trigger.png" alt="Deploy Trigger" title="Deploy Trigger" class="img img-responsive style-screengrab">
 
-The second element is a version of our image. We can obtain this information from **artifact** created by **Release** build. 
+The second element is a version of our image. We can obtain this information from the **artifact** created by the **Release** build. 
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/deploy_artifact.png" alt="Deploy Artifact" title="Deploy Artifact" class="img img-responsive style-screengrab">
 
-And the last one is step. The script for deployment is a little bit more complicated. 
-Before we deploy the new version of the application we need to check if it is not already deployed. If we already have running docker container with the previous version we need to stop and remove it. 
-Next we read current version from the **artifact** and create the new container based this version.  
+The last step is a little bit more complicated. Before we deploy the new version of the application the deployment script need to check if the container with the previous version is already deployed on the machine. If we have such a container we need to stop and remove it. 
+Next we read the current version from the **artifact** and create the new container based this version.  
 
 ```
 if [ -n "$(docker ps --filter label=simple_application -q)" ]; then 
@@ -163,17 +152,14 @@ docker run -d -p 80:4567 \
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/deploy_step.png" alt="Deploy Step" title="Deploy Step" class="img img-responsive style-screengrab">
 
-If we now run build of our application and we pass all tests **Release** and **Deploy** builds will start automatically and deploy our application.
+If we now run a build of our application and we pass all tests the **Release** and **Deploy** builds, we will start an automatic deployment of our application.
  
 Continuous Deployment is ready.
 
 ## It's done.
 
-Continuous deployment pipeline described in this post is of course simplified. Between our **Release** and **Deploy** steps we would like to do some 
+The continuous deployment pipeline described in this post is of course simplified. Between our **Release** and **Deploy** steps we would like to do some 
 additional tests on a production-like environment or introduce [zero downtime deployments](http://codurance.com/services/training/devops-training/), but our approach to any deployment should remain unchanged. 
 
-When we go outside our code we should use your application image. The image express set of our application behaviours which are constant for each version of the image. Now you also decide how your code is executed and you cannot blame anymore administrators for not installing a wrong version of Java or Ruby.
-You fully control your application.
-
-
-
+When we go outside of our code we should use our application image. The image expresses a set of our application behaviours which are consistent for each version of the image. Now you also decide how your code is executed and you cannot blame admins anymore for installing a wrong version of Java or Ruby.
+You control your application.
