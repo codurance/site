@@ -17,7 +17,7 @@ tags:
 
 About one year ago I had my first contact with Docker. This new kid on the block promised to relieve our poor computers from installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers' computers.
 
-When my OPS teammates chose a more conservative approach, it didn't change my joy of using Docker. Despite many people describing Docker as a tool written by developers for development, our industry found new ways of using images and containers. Images of our applications and services became deployment units for tools like Kubernetes, Docker Swarm or Marathon.
+While my ops teammates chose a more conservative approach, I started to use Docker with great joy. Despite many people describing Docker as a tool written by developers for development, our industry found new ways of using images and containers. Images of our applications and services became deployment units for tools like Kubernetes, Docker Swarm or Marathon.
 
 But how are these images created?
 
