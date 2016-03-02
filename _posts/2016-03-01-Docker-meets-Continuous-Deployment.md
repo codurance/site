@@ -15,17 +15,17 @@ tags:
 - TeamCity
 --- 
 
-About one year ago I had my first contact with Docker. This new kid on the block promised to relieve our poor computers from installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers computers.
+About one year ago I had my first contact with Docker. This new kid on the block promised to relieve our poor computers from installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers' computers.
 
-A conservative approach of my ops teammates didn't change my joy of using Docker. Despite many people describing Docker as tool written by developers for development our industry found new ways of using images and containers. Images of our applications and services became deployment units for tools like Kubernetes, Docker Swarm or Marathon.
+When my OPS teammates chose a more conservative approach, it didn't change my joy of using Docker. Despite many people describing Docker as a tool written by developers for development, our industry found new ways of using images and containers. Images of our applications and services became deployment units for tools like Kubernetes, Docker Swarm or Marathon.
 
-But how these images are created?
+But how are these images created?
 
 ## Setting The Scene
 
-From a developer's perspective any application is manifested by its code, but there is still a long way to go before this code finds its way to a production environment. I want to show you how this process can be easier with **Docker** and a **Continuous Deployment** pipeline. 
+From a developer's perspective, any application is manifested by its code, but there is still a long way to go before this code finds its way to a production environment. I want to show you how this process can be easier with **Docker** and a **Continuous Deployment** pipeline. 
 
-First we need a small application with a HTTP API that we can call after it is deployed. Let's assume that are using **Gradle** to build the application and **TeamCity** as a Continuous Integration server.
+First of all we need a small application with a HTTP API that we can call after it's deployed. Let's assume that we are using **Gradle** to build the application and **TeamCity** as a Continuous Integration server.
 
 We need to have **Docker** installed on each **TeamCity** build agent. We will also use this machine to run our application. In a real project we wouldn't install **TeamCity** agents on all machines. Instead we should use tools like Kubernetes that will take care of the application distribution.
  
@@ -34,7 +34,7 @@ We need to have **Docker** installed on each **TeamCity** build agent. We will a
 As a first step in our Continuous Deployment pipeline, before we even think about Docker images, we need to build our application. In this step we will download the source code, run all **tests** and produce an **artifact** containing all elements required to start and run our application.
 
 
-This build configuration is not very different to a step in a Continuous Deployment pipeline without **Docker**. Alongside common parameters we have to define **artifacts** which will be generated after each build run. We are going to use them as a base for next steps in the pipeline.
+This build configuration is not very different to a step in a Continuous Deployment pipeline without **Docker**. Alongside common parameters we have to define **artifacts**, which will be generated after each build run. We are going to use them as a base for next steps in the pipeline.
 
 In **TeamCity** we define **artifacts** by defining paths to files from the working directory (which is created for each run of a configuration). The working directory is a combination of the files downloaded from a version control system and the files generated during the execution of build steps. The working directory elements are defined in the version control settings and build steps. 
 
