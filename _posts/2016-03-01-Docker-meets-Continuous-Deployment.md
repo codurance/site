@@ -17,13 +17,13 @@ tags:
 
 About one year ago I had my first contact with Docker. This new kid on the block promised to relieve our poor computers from installation of all tools, languages, dependencies and operating systems. Isolated run environments emerged on developers computers.
 
-A conservative approach of my ops teammates didn't change my joy of using Docker. Despite many people describing Docker as tool written by developers for development our industry found new ways of using images and containers. Images of our applications and services became units of deployment for tools like Kubernetes, Docker Swarm or Marathon.
+A conservative approach of my ops teammates didn't change my joy of using Docker. Despite many people describing Docker as tool written by developers for development our industry found new ways of using images and containers. Images of our applications and services became deployment units for tools like Kubernetes, Docker Swarm or Marathon.
 
 But how these images are created?
 
 ## Setting The Scene
 
-From a developer's perspective any application is manifested by its code, but there is still a long way to go before this code finds its way to a production environment. I want to show you how you this process can be easier with **Docker** and a **Continuous Deployment** pipeline. 
+From a developer's perspective any application is manifested by its code, but there is still a long way to go before this code finds its way to a production environment. I want to show you how this process can be easier with **Docker** and a **Continuous Deployment** pipeline. 
 
 First we need a small application with a HTTP API that we can call after it is deployed. Let's assume that are using **Gradle** to build the application and **TeamCity** as a Continuous Integration server.
 
@@ -31,7 +31,8 @@ We need to have **Docker** installed on each **TeamCity** build agent. We will a
  
 ## Build
 
-We need to build something before we will be able to create any docker image. The first step in our **Continuous Deployment** pipeline would be to build our application. In this step we will download the source code, run all **tests** and produce an **artifact** containing all elements required to start and run our application.
+As a first step in our Continuous Deployment pipeline, before we even think about Docker images, we need to build our application. In this step we will download the source code, run all **tests** and produce an **artifact** containing all elements required to start and run our application.
+
 
 This build configuration is not very different to a step in a Continuous Deployment pipeline without **Docker**. Alongside common parameters we have to define **artifacts** which will be generated after each build run. We are going to use them as a base for next steps in the pipeline.
 
@@ -58,10 +59,10 @@ Now we can run our build and as a result we should see our **artifacts** in the 
 
 ## Release
 
-Our code is no longer needed. We have all we need to build the docker image. Now we have to create our image and **release** with the right version. To simplify our example we are going to use the current build number to define an image version.
+Our code is no longer needed. We have all we need to build the docker image. Now we have to create our image and **release** it with the right version. To simplify our example we are going to use the current build number to define an image version.
 Next we will generate a file with this version. This file gives us the possibility to pass information about the version to the next steps.  
 
-First, let's take a closer look at the `Dockerfile`. We copy the content of `simple_application.tar` (which contains all required libraries and scripts) to the image, by using the `ADD` command. This command will automatically *untar* all files inside the image. Next we expose the port of our HTTP API and we define how to launch our application by adding an `ENTRYPOINT` command.  
+Let's take a closer look at the `Dockerfile`. We copy the content of `simple_application.tar` (which contains all required libraries and scripts) to the image, by using the `ADD` command. This command will automatically *untar* all files inside the image. Next we expose the port of our HTTP API and we define how to launch our application by adding an `ENTRYPOINT` command.  
 
 For example our `Dockerfile` can look like this: 
 
@@ -79,7 +80,7 @@ Defining the build configuration is very simple. In general settings we define a
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_config.png" alt="Release Configuration" title="Release Configuration" class="img img-responsive style-screengrab">
 
-Without the **artifact** we won't be able to build any image. We have to tell our build how to find **artifacts** generated during the **Build** phase. We can do that by defining an **Artifact Dependency** in **TeamCity**. We just have to choose a build configuration, define the **artifacts** from that build and **TeamCity** will add them to the working directory.
+Without the **artifact** we won't be able to build any image. We have to tell our build how to find the **artifacts** generated during the **Build** phase. We can do that by defining an **Artifact Dependency** in **TeamCity**. We just have to choose a build configuration, define the **artifacts** from that build and **TeamCity** will add them to the working directory.
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/release_artifacts.png" alt="Release Artifact Dependency" title="Release Artifact Dependency" class="img img-responsive style-screengrab">
 
@@ -152,13 +153,11 @@ docker run -d -p 80:4567 \
 
 <img src="/assets/img/custom/blog/2016-03-01-docker-meets-continuous-deployment/deploy_step.png" alt="Deploy Step" title="Deploy Step" class="img img-responsive style-screengrab">
 
-The Continuous Deployment pipeline is ready. Now every change in the master branch of our repository will build, release and deploy our application.   
+The Continuous Deployment pipeline is ready. Now every change in the master branch of our repository will build, test, release and deploy our application.   
 
 ## It's done.
 
 The continuous deployment pipeline described in this post is of course simplified. Between our **Release** and **Deploy** steps we would like to do some 
 additional tests on a production-like environment or introduce [zero downtime deployments](http://codurance.com/services/training/devops-training/), but our approach to any deployment should remain unchanged. 
 
-Use the **Docker** image. You can ensure the consistent execution environment for your application on every stage of the Continuous Deployment. Now you decide how the code is executed and you cannot blame admins anymore for installing a wrong version of Java or Ruby. 
-
-You control your application.
+Use the **Docker** image. You can ensure a consistent execution environment for your application on every stage of the Continuous Deployment. Now you decide how the code is executed and you cannot blame admins anymore for installing a wrong version of Java or Ruby. 
