@@ -12,7 +12,8 @@ tags:
 - craftsmanship
 --- 
 
-Cohesion is one of the most important concepts in software design. Cohesion is at the core of the vast majority of good design principles and patterns out there, guiding separation of concerns and maintainability. The term cohesion (alongside coupling) was first introduced by Larry Constantine in the late 60s as part of Structured Design and later published in more details published by W. Stevens, G. Myers, and L. Constantine in 1974. Due to the growing complexity and cost of software back in the 60s, 70s, and 80s, loads of studies and research around software design and maintainability and design were done. Although we can still find some of these papers and research online today, they were done in a pre-Internet era and most of the work done during that period is either lost or not easily available.
+Cohesion is one of the most important concepts in software design. Cohesion is at the core of the vast majority of good design principles and patterns out there, guiding separation of concerns and maintainability. The term cohesion (alongside coupling) was first introduced by Larry Constantine in the late 60s as part of Structured Design and later published in more details by W. Stevens, G. Myers, and L. Constantine in 1974. Due to the growing complexity and cost of software back in the 60s, 70s, and 80s, loads of studies and research around software design and maintainability and design were done. Although we can still find some of these papers and research online today, they were done in a pre-internet era and most of the work done during that period is either lost or not easily available.
+
 
 But before we dive into the details, let’s see some definitions.
 
@@ -29,17 +30,17 @@ _Wikipedia_
 
 ### Cohesion is a sliding scale metric
 
-A common mistake is to treat cohesion as a binary attribute instead of sliding scale. In the original work by Stevens, Myers, and Constantine in the early 70s, they defined seven levels of cohesion, which later became known as SMC Cohesion.
+A common mistake is to treat cohesion as a binary attribute instead of a sliding scale. In the original work by Stevens, Myers, and Constantine in the early 70s, they defined seven levels of cohesion, which later became known as SMC Cohesion.
 
 As the original papers were written quite a while back and were very academic, let’s agree that when we say _module_ we are actually talking about a class or a group of functions and when we say _processing elements_ we are actually talking about methods or functions.
 
-- **Coincidental (worst)**: Processing elements are grouped arbitrarily and have no significant relationship. There is no relationship between the processing elements. E.g.: update a customer record, calculate a loan payment, print a report. Coincidental cohesion is quite common in modules called Utils or Helpers.
+- **Coincidental (worst)**: Processing elements are grouped arbitrarily and have no significant relationship. There is no relationship between the processing elements. E.g.: update a customer record, calculate a loan payment, print a report. Coincidental cohesion is quite common in modules called ```Util``` or ```Helper```.
 
 - **Logical**: At a module level, processing elements are grouped because they belong to the same logical class of related functions. At each invocation of the module one of the processing elements is invoked. E.g.: grouping all I/O operations, all database operations, etc. At a processing element level, the calling module passes a control flag and that flag decides which piece of behaviour will be invoked by the processing element. E.g: A flag indicating if a discount should be calculated, a piece of behaviour should be skipped, etc.
 
-- **Temporal**: Processing elements are related in time. They are grouped together because they are invoked together at a particular time in a program execution but in fact they are unrelated to each other. A different business requirement may required a difference sequence or combination of processing elements. E.g.: data persistence / validation, audit trail, notifications via email, etc.
+- **Temporal**: Processing elements are related in time. They are grouped together because they are invoked together at a particular time in a program execution but in fact they are unrelated to each other. A different business requirement may  require a difference sequence or combination of processing elements. E.g.: data persistence / validation, audit trail, notifications via email, etc.
 
-- **Procedural**: Processing elements are sequentially part of the same business unit but do not share data. grouped because they always follow a certain sequence of execution. E.g.: validate user, process a payment, trigger stock inventory system to send purchase orders to suppliers, write logs.
+- **Procedural**: Processing elements are sequentially part of the same business unit but do not share data. They are grouped because they always follow a certain sequence of execution. E.g.: validate user, process a payment, trigger stock inventory system to send purchase orders to suppliers, write logs.
 
 - **Communicational**: Processing elements contribute to activities that use the same inputs or outputs. E.g.: processing elements that would take a shopping basket and calculate discounts, promotions, money saved, delivery costs, and return the total price.
 
@@ -59,13 +60,13 @@ Many papers and a few books were published from late 70s to late 90s exploring a
 
 Before we dive into the DLC levels, let’s define a vocabulary:
 
-- condition-control: a variable v2 has condition-control dependence on a variable v1 when v1 is used in the predicate of a decision (if/then/else) which affects v2’s value.
+- condition-control: a variable `v2` has condition-control dependence on a variable `v1` when `v1` is used in the predicate of a decision (if/then/else) which affects `v2`’s value.
 
 - iteration-control: Same as above but in a loop (while/for/etc.)
 
 Here are the DLC levels:
 
-* **Coincidental relation (R1)**: Two outputs o1 and o2 of a module have neither dependence relationship with each other, nor dependence on a common input.
+* **Coincidental relation (R1)**: Two outputs `o1` and `o2` of a module have neither dependence relationship with each other, nor dependence on a common input.
 
 * **Conditional relation (R2)**: Two outputs are condition-control dependent on a common input, or one of the two outputs has condition-control dependence on the input and the other has iteration-control dependence on the input.
 
@@ -90,13 +91,13 @@ And here is how SMC and DLC relate to each other:
 
 Depending on the type of software you are writing, you will may need to compromise a bit. Although we should always strive to have our code at the highest level of cohesion, sometimes that may make the code look _unnatural_. There is a difference between being unaware of design principles and consciously not following a design principle in a given context. I don't write my code with the goal that it should satisfy every single design principle out there but I always try to have a good reason every time I decide not to follow certain principles. Having said that, cohesion is one of the most important building blocks of software design and understanding it well is essential for writing well-crafted code.
 
-If you are building a framework, a very generic part of your code, or data transformation, chances are that the majority of your modules and processing elements will be at sequential and functional levels. However, when writing business rules in a commercial application, I mean, an application where there are business logic, user journeys, database access, etc., there is a good chance that some of your modules and processing elements will be at communicational level and some even at a lower level of cohesion. And that's OK as long as it was a conscious decision and the right thing to do in that context. 
+If you are building a framework, a very generic part of your code, or data transformation, chances are that the majority of your modules and processing elements will be at sequential and functional levels. However, when writing business rules in a commercial application, i.e. an application with business logic, user journeys, database access, etc., there is a good chance that some of your modules and processing elements will be at communicational level and some even at a lower level of cohesion. And that's OK as long as it was a conscious decision and the right thing to do in that context. 
 
 Some people compare cohesion to the [Single Responsibility Principle (SRP)](http://codurance.com/2011/07/26/srp-simplicity-and-complexity/). Although SRP is a great software principle and entirely based on cohesion, it has a quite narrow and subjective scope. 
 
 Identifying responsibilities is not always an easy thing. We need to develop a keen eye to detect minor variations in behaviour. Unit tests for a module can potentially help us to identify the different behaviours, if the code was really test-driven, of course. 
 
-The more cohesive your code is, the more reusable, robust, easy to maintain it will be.
+The more cohesive your code is, the more reusable, robust and easy to maintain it will be.
 
 _____
 
