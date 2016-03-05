@@ -257,6 +257,10 @@ body:last-child .btn-u, x:-moz-any-link {
     height: 225px;
 }
 
+.blog-img-attribution {
+	font-size: 11px;
+}
+
 #sharethisButtons {
 	padding-bottom: 30px;
 }
