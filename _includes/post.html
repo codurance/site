@@ -3,6 +3,17 @@
         <div class="blog-thumb">
             <a href="{{ post.url }}"><img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}"></a>
         </div>
+        {% if post.image.attribution.href || post.image.attribution.text %}
+        <div>
+            <ul class="list-inline posted-info blog-img-attribution"><li>
+            {% if post.image.attribution.href %}
+                <a href="{{post.image.attribution.href}}" class="author">{{post.image.attribution.text}}</a>
+            {% elsif post.image.attribution.text %}
+                {{post.image.attribution.text}}
+            {% endif %}
+            </li></ul>
+        </div>
+        {% endif %}
     </div>
     <div class="col-md-7 news-v3">
         <div class="news-v3-in-sm no-padding">
