@@ -49,7 +49,16 @@ As a craftsman at Codurance, you are expected to be able to:
   * Being part of an amazing team of craftsmen, which guarantees that you will always be learning.
   * Working for a company with a flat structure, with no managers, no architects, and no team leaders. Just awesome developers.
   * Recognition and respect for being a great developer.
-  * Flexibility in the workplace. As long as there is no disruption to the projects and the team agrees, you can work wherever and whenever you like.
+  * 5 days of conference allowance per year.
+  * Get to know awesome craftsmen from all over Europe.
+  * We pay all the expenses and give you time off if you are accepted to speak in any conference.
+  * You will have a lot of autonomy and [full access to the company's financials](http://codurance.com/2016/02/22/open-financials/).
+
+### Do I need to be based in London?
+
+Yes. Or at least at a commutable distance from London. Although we give consultancy and trainings all over Europe, most of our projects are based in or around London. Most of our clients expect us to be in their offices frequently and we also expect our craftsmen and apprentices to meet very regularly and in person in our office. 
+
+If you don't live in the UK, we can help you with some of the moving costs as long as you have the rights to work in the UK. 
 
 ### I want to apply. What do I need to do?
 
