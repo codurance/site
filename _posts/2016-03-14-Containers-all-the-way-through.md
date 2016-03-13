@@ -6,7 +6,6 @@ date: 2016-03-14 00:00:00 +00:00
 author: Mani Sarkar
 image:
     src: /assets/img/custom/blog/2016-03-14-Containers-all-the-way-through/cover-image.png
-    size: 322px x 402px
     attribution:
         text: Three Worlds by Antonio Martín
         href: https://www.flickr.com/photos/kantor/1496696021/in/photolist-3hfXzP-a87pjq-8QWboE-q9qo4E-rxeaKe-e4ptkx-nt5Wrg-oUBVJ-5Mw3mT-xFS8Ce-5Yvqna-p1qtN6-89uJwD-fq8cAT-7infm8-99Vgr9-fq7Dd6-Ccfjc-4XzbbF-myN1gx-fqnmC1-fqnzUs-rjbHB-94XmvH-76Y5De-8zeNK4-fqntzo-fqmNJ1-7TFSFX-fq8WG6-fqnjD3-fq7y9e-7CvEFX-7inRbY-7fgioS-7SGTT8-nSbooQ-772ZQA-ruRCgW-fq83QP-fq7DYM-fqngvq-7fVEdo-7redyP-8jidK7-7fRJgv-6gsSek-7fVDVd-9RLPEJ-edKCdV/
