@@ -90,12 +90,11 @@ This an increasing distinction between Bare Metal Systems, Virtual Systems and C
 
 There are a number of pros and cons between these systems when we look at them individually, i.e. portability, performance, resource consumption, time to recreate such systems, et al.
 
-### ****Word of thanks and stay in touch  
-**
+### **Word of thanks and stay in touch**
 
 Thank you for your time, feel free to send your queries and comments to [theNeomatrix369](http://twitter.com/theNeomatrix369). Big thanks to my colleague, and our DevOps craftsman [Robert Firek](https://twitter.com/robertfirek) from [Codurance](http://codurance.com/aboutus/ourcompany/) for proof-reading my post and steering me in the right direction.
 
-### ****Resources**
+### **Resources**
 
 * [1] [Hypervisor](https://en.wikipedia.org/wiki/Hypervisor)
 * [2] [How does a program execute? Where does the operating systems come into play ?](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play)
