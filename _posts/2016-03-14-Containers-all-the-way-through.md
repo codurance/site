@@ -45,9 +45,8 @@ Lets think of our bare metal systems as desktops and laptops we use on a daily b
 
 Programs are stored on the hard drive in the form of executable files (a format understandable by the OS) and loaded into memory via one or more processes*. The programs interact with the kernel, which forms a core part of the OS architecture and the hardware. The OS coordinate communication between hardware i.e. CPU, I/O devices, etc… and programs.
 
-<center>
-<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class="img img-responsive style-screengrab">
-</center>
+<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class="img img-center img-responsive style-screengrab">
+
 
 A more detailed explanation what programs or executables are, how programs execute and where does an Operating System come into play, can be found [here [2]](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play).
 
@@ -61,9 +60,7 @@ On the other hand virtual systems, with the help of virtual system controllers l
 
 Its like running a computer (abstracted as software) inside another computer. And the rest of the fundamentals from the bare metal system applies to this abstraction layer as well. When a process is created inside the virtual system, then the host OS which runs the virtual system might also be spawning one or more processes on the host OS in relation to this process.
 
-<center>
-<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img img-responsive style-screengrab">
-</center>
+<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img img-center img-responsive style-screengrab">
 
 ### **Container systems**
 
@@ -78,17 +75,15 @@ A container creates an OS like environment, inside which one or more programs ca
 *   the OS platform (shared kernel)
 *   one or more programs running inside the container
 
-<center>
-<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-responsive style-screengrab">
-</center>
+<img src="/assets/img/custom/blog/2016-03-14-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-center img-responsive style-screengrab">
 
 ### **Summary**
 
 Looking at these enclosures or rounded rectangles within each other, we can already see how its containers all the way through.
 
-There is an increasing distinction between Bare Metal Systems, Virtual Systems and Container Systems. While Virtual Systems encapsulate the operating system inside a thick hardware virtualisation, Container systems do the same but with a much thinner virtualisation layer.
+There is an increasing number of distinctions between Bare Metal Systems, Virtual Systems and Container Systems. While Virtual Systems encapsulate the operating system inside a thick hardware virtualisation, Container systems do something similar but with a much thinner virtualisation layer.
 
-There are a number of pros and cons between these systems when we look at them individually, i.e. portability, performance, resource consumption, time to recreate such systems, et al.
+There are a number of pros and cons between these systems when we look at them individually, i.e. portability, performance, resource consumption, time to recreate such systems, maintaining these systems, et al.
 
 ### **Word of thanks and stay in touch**
 

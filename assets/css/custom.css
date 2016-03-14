@@ -491,3 +491,8 @@ body:last-child .btn-u, x:-moz-any-link {
 	width: 70% !important;
 	margin-left: 30px
 }
+
+.img-center{
+	display: block; 
+	margin: 0 auto;
+}
