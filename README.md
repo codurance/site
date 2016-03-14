@@ -4,14 +4,16 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 ## Initialisation
 
-### MacOSX / Linux
+### Installing on the MacOSX / Linux
 
 Run the below commands to install the necessary gems (you might need to prefix the commands with `sudo`):
 
-`gem install bundler`
-`gem install rspec-core -v '3.4.1'`
-`gem install jekyll`
-`bundle install` 
+```
+gem install bundler
+gem install rspec-core -v '3.4.1'
+gem install jekyll
+bundle install
+```
 
 In case the `bundle install` command aborts, with a message about a missing gem, install the missing gem indicated in the message and re-run `bundle install`. Repeat this for the number of times missing gems are notified. 
 
