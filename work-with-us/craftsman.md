@@ -51,8 +51,8 @@ As a craftsman at Codurance, you are expected to be able to:
   * Recognition and respect for being a great developer.
   * 5 days of conference allowance per year.
   * Get to know awesome craftsmen from all over Europe.
-  * We pay all the expenses and give you time off if you are accepted to speak in any conference.
-  * You will have a lot of autonomy and [full access to the company's financials](http://codurance.com/2016/02/22/open-financials/).
+  * Encouragement to speak at conferences. 
+  * You will have autonomy and [full access to the company's financials](http://codurance.com/2016/02/22/open-financials/).
 
 ### Do I need to be based in London?
 
