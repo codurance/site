@@ -86,7 +86,7 @@ A container creates an OS like environment, inside which one or more programs ca
 
 Looking at these enclosures or rounded rectangles within each other, we can already see how its containers all the way through.
 
-This an increasing distinction between Bare Metal Systems, Virtual Systems and Container Systems. While Virtual Systems encapsulates the operating system inside a thick hardware virtualisation, Container systems does the same with a much thinner virtualisation layer.
+There is an increasing distinction between Bare Metal Systems, Virtual Systems and Container Systems. While Virtual Systems encapsulate the operating system inside a thick hardware virtualisation, Container systems do the same but with a much thinner virtualisation layer.
 
 There are a number of pros and cons between these systems when we look at them individually, i.e. portability, performance, resource consumption, time to recreate such systems, et al.
 
