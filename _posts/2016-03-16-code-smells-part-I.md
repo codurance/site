@@ -10,7 +10,8 @@ canonical:
 image:
     src: /assets/img/custom/blog/code-smells.jpg
     attribution:
-        text: Via Flickr/Creative Commons/Brian Fitzgerald
+        text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
+        href: /assets/img/custom/blog/code-smells.jpg
 tags:
 - bloaters
 - code smells
