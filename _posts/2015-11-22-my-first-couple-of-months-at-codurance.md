@@ -17,6 +17,12 @@ tags:
 - apprenticeship
 - community
 - mentoring
+- mentorship
+- codurance
+- community
+- culture
+- career
+- learning
 ---
 
 ### Some background
