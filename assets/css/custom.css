@@ -1,7 +1,6 @@
 /* Add here all your css styles (customizations) */
 
 body {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
 
@@ -21,6 +20,7 @@ body {
 .breadcrumbs h2 {
 	margin-top: 10px;
 }
+
 .header-v3 .navbar-brand {
 	top: 6px;
 }
@@ -28,10 +28,10 @@ body {
 /* Home Page */
 
 .feature-panel {
-	background: url("/assets/img/custom/home/computerdesk_original_opt.jpg") no-repeat center center;
+	background: url("/assets/img/custom/home/computerdesk_original_opt_bw.jpg") no-repeat center center;
 	height: 550px;
 	background-size: cover;
-	width: auto
+	width: auto;
 	z-index: -1;
 }
 
@@ -139,15 +139,6 @@ body:last-child .btn-u, x:-moz-any-link {
 	margin: 0;
 }
 
-#client-carousel .item{
-  margin: 45px;
-}
-#client-carousel .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /*  Heading Titles - Home Page */
 
 .block-header {
@@ -208,6 +199,12 @@ body:last-child .btn-u, x:-moz-any-link {
 	box-shadow: 0 10px 10px 0px gray;
 }
 
+/* Blog panel */
+.homepage-blog-thumb img {
+	height: 240px;
+	width: 350px;
+}
+
 /*Content Boxes*/
 .content-boxes {
   margin-bottom: 15px;
@@ -248,122 +245,53 @@ body:last-child .btn-u, x:-moz-any-link {
 	text-transform: uppercase;
 }
 
-/* Blog boxes */
+/* Blog */
 
-.blog-boxes .blog-content {
-	min-height: 170px;
-	max-height: 170px;
+.blog-thumb {
+	max-height: 225px;
 }
 
-.blog-boxes .blog-box {
-	background: #fff;
-	max-height: 505px;
-	min-height: 505px;
-	padding-top: 10px;
+.blog-thumb a .img-responsive {
+	display: block;
+    width: 335px;
+    height: 225px;
 }
 
-.blog-boxes img {
-	max-height: 250px;
-	min-height: 250px;
-	margin-right: auto;
-	margin-left: auto;
+.blog-img-attribution {
+	font-size: 11px;
 }
 
-.blog-boxes h3 {
-	margin-bottom: 0;
-	font-weight: 200;
-	line-height: 28px;
-	padding: 10px 15px 15px;
+#sharethisButtons {
+	padding-bottom: 30px;
 }
 
-.blog-boxes h3 a {
-	color: #555;
+.headline-v2 {
+	border-left: 2px solid #e67e22 !important;
 }
 
-.blog-boxes h3 a:hover {
-	color: #e67e22;
-}
-
-.blog-boxes p {
-	color: #555;
-	padding: 0 15px;
-	margin-bottom: 20px;
-}
-
-.blog-boxes .blog-box-info {
-	overflow: hidden;
-	margin-top: 30px;
-	padding: 8px 15px;
-	border-top: solid 1px #eee;
-}
-
-.blog-boxes .blog-box-info li {
-	font-size: 12px;
-}
-
-.blog-boxes .blog-box-info li a:hover {
-	color: #e67e22;
-	text-decoration: none;
-}
-
-.blog-thumbnails .blog-thumbnails-box {
-	margin-top: 40px;
-}
-
-.blog-thumbnails img {
-	height: 80px;
-	width: 80px;
-	float: left;
+.blog-tag-margin {
 	margin-right: 10px;
 }
 
-.blog-thumbnails .blog-thumbnail {
-	margin-bottom: 20px;
-	clear: both;
-	height: 80px;
+.news-v3-in h1 {
+	font-size: 32px;
+    font-weight: 200;
+    margin: 0 0 20px;
+    line-height: 45px;
+    text-transform: uppercase;
 }
 
-.blog-post li a {
-	color: #e67e22;
+.news-v3-in h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: none;
 }
 
-.blog img {
-	max-width: 100%;
-}
-
-.blog-item .blog-post-image {
-	display: inline;
-	float: right;
-	margin-left: 15px;
-	max-height: 300px;
-	width: auto;
-}
-
-.blog-page table {
-	background-color: #ffffff;
-	margin-bottom: 13px;
-}
-
-.blog-page table th {
-	background-color: #ededed;
-	border: 1px solid #ccc;
-	padding: 6px 13px;
-	font-weight: bold;
-}
-
-.blog-page table tr:nth-child(even) {
-	background-color: #f8f8f8;
-}
-
-.blog-page table td {
-	border: 1px solid #ccc;
-	padding: 6px 13px;
-}
-
-.blog-share-buttons {
-	position: absolute;
-  left: inherit;
-	top: 0px;
+/* Author */
+#author-img {
+	width: 100%;
 }
 
 /* Videos */
@@ -478,12 +406,6 @@ body:last-child .btn-u, x:-moz-any-link {
 
 /* Case Studies */
 
-.case-study-carousel .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .case-study {
 	margin: 35px 0px;
 }
@@ -520,4 +442,52 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .careers h3 {
 	color: #e67e22;
+}
+
+/* Nav bar */
+	.header .navbar-nav > li > a:hover,
+	.header .navbar-nav > .active > a {
+		bottom: -2px;
+		position: relative;
+		border-bottom: solid 2px #e67e22 !important;
+	}
+
+	.header .navbar-nav > li > a,
+	.header .navbar-nav > li > a:hover,
+	.header .navbar-nav > li > a:focus,
+	.header .navbar-nav > .active > a,
+	.header .navbar-nav > .active > a:hover,
+	.header .navbar-nav > .active > a:focus {
+		background: none;
+	}
+
+	.header .navbar-nav > .open > a,
+	.header .navbar-nav > .open > a:hover,
+	.header .navbar-nav > .open > a:focus {
+		color: #e67e22 !important;
+	}
+
+	.header .navbar-nav > li:hover > a {
+        color: #e67e22 !important;
+    }
+
+/* Pedro's Command Prompt Envy blog */
+
+.style-screengrab {
+	margin: 20px 0px 40px 0px;
+}
+
+/* Partners */
+.jetbrains-logo-partners {
+	height: 120px;
+}
+
+.jetBrains-blurb {
+	text-align: center;
+}
+
+.jetBrains-logo-carousel img {
+	height: 70%;
+	width: 70% !important;
+	margin-left: 30px
 }

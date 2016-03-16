@@ -7,7 +7,7 @@ author: Toby Retallick
 image:
     src: /assets/img/custom/blog/jenkinsPost/jenkins.png
 tags:
-- continuous integration
+- continuous-integration
 - Jenkins
 ---
 

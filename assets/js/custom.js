@@ -25,27 +25,27 @@ var Contact = function () {
     };
 }();
 
-$(document).ready(function() {
-
-  $(".case-study-carousel").owlCarousel({
-
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      pagination: false,
-      paginationSpeed : 400,
-      singleItem:true
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
+$(document).ready(function() {  
+ 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            margin: 20
+        },
+        600:{
+            items:3,
+            margin: 30
+        },
+        1000:{
+            items:6,
+            margin: 40
+        }
+    }
   });
-
-  $(".dropdown").click(function(){
-    return true;
-  });
-
 });

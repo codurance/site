@@ -3,7 +3,7 @@
   image: /assets/img/custom/team/sandro_mancuso.jpg
   role: Software Craftsman and Co-Founder
   shortDescription: Software craftsman, author, and founder of the London Software Craftsmanship Community (LSCC), Sandro has been...
-  fullDescription: <p>Software craftsman, <a href="http://leanpub.com/socra">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
+  fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
   github: sandromancuso
 
@@ -15,17 +15,6 @@
   fullDescription: <p>Mash is a software craftsman with extensive experience in developing innovative solutions and running large scale enterprise projects. For many years he was a Principal Consultant leading some of the most diverse projects for clients in Government, Media and Finance. Before Codurance Mash was a Director at UBS leading a 4 million pounds a year project with 6 development teams situated in London and Krakow. He started the project from scratch, building the teams a developer at a time.</p><p>Mash is an associated organiser for LSCC, involved since the beginning helping with organisation and running hands-on sessions. Mash has a passion for developing; teams that are skillful and passionate, solutions that are innovative and simple, and software that is aligned to it's business and flexible to change.</p>
   twitter: mashooq
   github: mashooq
-
-- id: samir
-  name: Samir Talwar
-  image: /assets/img/custom/team/samir_talwar.jpg
-  role: Software Craftsman
-  shortDescription: >
-    Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge ...
-  fullDescription: >
-    <p>Samir Talwar is a developer who’s focused on two things: doing the right things in the right way. He has worked in a number of industries and has always focused on the bleeding edge, diving into new technologies, techniques and methodologies with a fervour. His experience with various tools allows him to select the right one for the job, and combined with his experience with Extreme Programming, he has a knack for spotting simple approaches to complex problems.</p><p>A prominent member and organiser of the London Software Craftsmanship Community, Samir tries to help people (including himself) challenge their definitions of "good enough" by running workshops, pairing with anyone and everyone and constantly asking questions. By challenging assumptions and encouraging people to go one step further to solve a problem, he helps them embrace a more holistic view of software development.</p>
-  twitter: samirtalwar
-  github: samirtalwar
 
 - id: steve
   name: Steve Tooke
@@ -67,7 +56,7 @@
   fullDescription: >
       <p>Felipe is a developer interested on creating well-crafted software, not only for users, but for future maintainers too. He believes that simple, clean and expressive code should be an ethical standard for the software industry and will mentor that concern. Felipe is a strong believer in the power of social communities and thinks that one of the pillars of professionalism lies in sharing knowledge and caring about the health of the industry.</p>
   twitter: felipefzdz
-  github: olid16
+  github: felipefzdz
 
 - id: rob
   name: Robert Taylor
@@ -102,7 +91,7 @@
   image: /assets/img/custom/team/amir_bazazi.jpg
   role: Software Craftsman
   shortDescription: In his time with us, Amir has discovered a great deal about what it means to be a software craftsman outside of just knowing how to write good code ...
-  fullDescription: <p> Amir joined as an apprentice shortly after graduating from university. In his time with us, he has discovered a great deal about what it means to be a software craftsman outside of just knowing how to write good code. Testing, automation, and risk mitigation have become an indispensable part of his work. In addition, Amir has learnt that a strong confident personality is sometimes needed alongside an open mind, and that colleagues & peers should be addressed in a manor that is equal parts welcoming and challenging.</p> <p> Since joining Codurance, Amir has excelled in up a variety of both technical and soft skills towards producing well-crafted software. He always brings an open-mind and an eagerness to learn. With all these factors and many more, Amir's passion for software has only gotten stronger and despite now having the title of craftsman, he feels as though his journey to mastering software craftsmanship is just beginning.</p>
+  fullDescription: <p> Amir joined as an apprentice shortly after graduating from university. In his time with us, he has discovered a great deal about what it means to be a software craftsman outside of just knowing how to write good code. Testing, automation, and risk mitigation have become an indispensable part of his work. In addition, Amir has learnt that a strong confident personality is sometimes needed alongside an open mind, and that colleagues & peers should be addressed in a manner that is equal parts welcoming and challenging.</p> <p> Since joining Codurance, Amir has excelled in up a variety of both technical and soft skills towards producing well-crafted software. He always brings an open-mind and an eagerness to learn. With all these factors and many more, Amir's passion for software has only gotten stronger and despite now having the title of craftsman, he feels as though his journey to mastering software craftsmanship is just beginning.</p>
   twitter: amirbazazi
   github: amiralibazazi
 
@@ -118,7 +107,7 @@
 - id: franzi
   name: Franziska Sauerwein
   image: /assets/img/custom/team/franzi_sauerwein.jpg
-  role: Apprentice
+  role: Software Craftswoman
   shortDescription: Franziska has worked as a software developer and consultant for three years before joining Codurance. She is always trying to improve her skils and share knowledge ...
   fullDescription: <p>Franziska has worked as a software developer and consultant for three years before moving to London to join Codurance as an apprentice. Her passions include Test Driven Development, Refactoring, XP techniques and high quality software development.  She is always trying to improve her skills and share knowledge.</p> <p>As an active member of the European Software Craftsmanship community she loves to participate in unconferences and organizes code retreats, hackathons, coding dojos as well as tech talks.  She aims to use her skills and creativity to develop software that is reliable, easy to adapt and doing what it is supposed to do.</p>
   twitter: singsalad
@@ -130,16 +119,7 @@
   role: Marketing Exec / Office Manager
   shortDescription: Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work ...
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
-  twitter: craftatheart
-
-- id: liam
-  name: Liam Beeton
-  image: /assets/img/custom/team/liam_beeton.jpg
-  role: Software Craftsman
-  shortDescription: An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries ...
-  fullDescription: <p>An experienced software craftsman with a proven track record in building well-crafted software within the media, banking and financial services industries.</p><p>Extensive background in programming languages such as C#, Objective-C and JavaScript as well as testing and deploying intricate mobile applications, web applications and complex distributed systems.</p><p>Agile development experience within small to medium sized teams using pragmatic development methodologies including Scrum, Kanban and Feature Driven Development.</p>
-  twitter: lrbpx
-  github: liambeeton
+  twitter: titacelli
 
 - id: tomaz
   name: Tomaz Tekavec
@@ -150,30 +130,42 @@
   twitter: Tomaz_Tekavec
   github: tekavec
 
-- id: alvaro
-  name: Alvaro Salazar
-  image: /assets/img/custom/team/alvaro_salazar.jpg
-  role: Apprentice
-  shortDescription: With more 10 years of experience, Alvaro has worked in good variety of projects and for companies of all sizes, both in the public and private sector. Passionate about software development... 
-  fullDescription: <p>With more 10 years of experience, Alvaro has worked in good variety of projects and for companies of all sizes, both in the public and private sector.</p><p>Passionate about software development and always thinking about learning and trying new things, Alvaro is a firm believer that magic always happens when he is out of his comfort zone. He joined Codurance as part of his journey to mastery.</p><p>You can easily find Alvaro with a book in his hands or testing a new library.</p>
-  twitter: xala3pa
-  github: xala3pa
-
 - id: mani
   name: Mani Sarkar
   image: /assets/img/custom/team/mani_sarkar.jpg
   role: Apprentice
-  shortDescription: Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project... 
+  shortDescription: Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project...
   fullDescription: <p>Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project. He is an JCP member, and a contributor to OpenJDK. As a developer he has many years of experience working on a diverse set of projects. In his free time he likes to work on open-source projects, write blogs and speak at conferences. Mani strongly prescribes to the Software Craftsmanship and XP values. He works hard to better himself in practices such as TDD, BDD, Simple Design and Pair Programming.</p>
   twitter: theNeomatrix369
   github: neomatrix369
   bitbucket: neomatrix369
-  
+
 - id: alex
   name: Alessandro Di Gioia
   image: /assets/img/custom/team/alex_digioia.jpg
   role: Software Craftsman
-  shortDescription: Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming... 
+  shortDescription: Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming...
   fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
   twitter: Parajao
   github: Parajao
+
+- id: david
+  name: David Hatanian
+  image: /assets/img/custom/team/david_hatanian.jpg
+  role: Software Craftsman
+  shortDescription: David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.
+  fullDescription: <p>David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.</p><p>Before coming to London, David worked in Morocco, India and Vietnam.</p><p>David believes in simplicity as a core principle for any development project, and in constantly learning and improving.</p>
+  twitter: DHatanian
+  github: dhatanian
+
+- id: matthew
+  name: Matthew Butt
+  image: /assets/img/custom/team/matthew_butt.jpg
+  role: Software Craftsman
+  shortDescription: Matthew believes that people and their relationships should be at the heart of our work as software developers, and is passionate about teaching excellence in our field.
+  fullDescription: >
+    <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since he started working with code in 2000 he has always focused on creating well-crafted software, and building close collaborative relationships within and beyond the technical team.</p>
+    <p>Recently Matthew has worked primarily on the .NET platform, and he is experienced in giving new life to legacy code written in C# and VB, as well as crafting projects that take advantage of the latest developments on the platform.</p>
+    <p>Matthew is passionate about teaching excellence in software development, and he is equally at home running a one-hour workshop or designing and implementing a six-month apprenticeship programme. He is a regular participant in the wider Software Craftsmanship and Extreme programming communities.</p>
+  twitter: bnathyuw
+  github: bnathyuw

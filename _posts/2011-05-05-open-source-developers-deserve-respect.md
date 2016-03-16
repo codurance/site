@@ -77,4 +77,4 @@ project&quot; and in which context or environment but I&#39;ll leave that for
 another post.
 
 If exceptions invalidate rules and that is the way we should look at
-things, does God exist for anything in software development?
+things, does good exist for anything in software development?

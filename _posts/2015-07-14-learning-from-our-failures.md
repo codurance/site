@@ -14,7 +14,7 @@ tags:
 - learning
 - github
 - travis
-- company culture
+- company-culture
 ---
 
 On my second day at Codurance, I managed to delete the repository with [Codurance's GitHub Pages](http://codurance.com/) on it. This made the website unavailable for the first time in a long time, and during best business hours.

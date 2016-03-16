@@ -12,7 +12,7 @@ image:
 tags:
 - Terraform
 - AWS
-- Amazon Web Services
+- Amazon-Web-Services
 - Cloud
 ---
 

@@ -7,7 +7,7 @@ author: Amir Bazazi
 image:
     src: /assets/img/custom/blog/finding-the-biting-point/clutch.gif
 tags:
-- pair programming
+- pair-programming
 - apprentice
 - mentoring
 - learning

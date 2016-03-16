@@ -10,7 +10,7 @@ image:
         text: Delivery Man, by Garry Knight
         href: https://flic.kr/p/9pGkvr
 tags:
-- visual studio
+- visual-studio
 - .net
 - tools
 ---

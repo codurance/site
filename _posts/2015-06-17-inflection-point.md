@@ -10,7 +10,7 @@ tags:
 - craftsmanship
 - design
 - architecture
-- inflection point
+- inflection-point
 ---
 
 We all say that software design is all about trade-offs but how do we actually reason about it? How do we decide how much code we are going to write for a given task? Is the easiest thing that could possibly work the right approach? The simplest? How do we know the [difference between simple and easy](http://www.infoq.com/presentations/Simple-Made-Easy)? Is this even the right question?

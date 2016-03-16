@@ -3,7 +3,7 @@ layout: post
 name: cqrs-and-event-sourcing-for-dummies
 title: CQRS and Event Sourcing for dummies
 date: 2015-07-18 17:00:00 +00:00
-author: Felipe Fernandez
+author: Felipe Fernández
 image:
     src: /assets/img/custom/blog/events.jpg
     attribution:
@@ -11,7 +11,7 @@ image:
         href: https://flic.kr/p/qbJxfD
 tags:
 - cqrs
-- event sourcing
+- event-sourcing
 - architecture
 
 ---

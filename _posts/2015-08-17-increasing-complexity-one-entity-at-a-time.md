@@ -10,7 +10,7 @@ tags:
 - craftsmanship
 - design
 - architecture
-- inflection point
+- inflection-point
 ---
 
 While working on one of our internal tools, I decided to make a small comprise and not follow my own advice. We are building a mini CRM tool and the initial requirements were:
