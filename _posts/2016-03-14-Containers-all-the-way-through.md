@@ -93,4 +93,4 @@ Thank you for your time, feel free to send your queries and comments to [theNeom
 * [1] [Wikipedia page for Hypervisor](https://en.wikipedia.org/wiki/Hypervisor)
 * [2] [Stackoverflow page for "How does a program execute? Where does the operating systems come into play ?"](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play)
 * [3] [Wikipedia page on cgroups](https://en.wikipedia.org/wiki/Cgroups)
-* [4] [Linux man page on namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html))
+* [4] [Linux man page on namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html)
