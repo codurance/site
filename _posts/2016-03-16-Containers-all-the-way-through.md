@@ -24,7 +24,7 @@ tags:
 - operating system
 --- 
 
-### Introduction
+<br/>
 
 In this post I will attempt to cover fundamentals of **Bare Metal Systems**, **Virtual Systems** and **Container Systems**. And the purpose for doing so is to learn about these systems as they stand and also the differences between them, focusing on how they execute programs in their respective environments.
 
