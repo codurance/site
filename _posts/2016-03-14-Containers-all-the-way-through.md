@@ -14,21 +14,20 @@ canonical:
     href: https://neomatrix369.wordpress.com/2016/03/13/containers-all-the-way-through/
 tags:
 - bare metal system
-- cgroups
 - container
-- container system
-- executable
 - hypervisor 
 - kernel
-- namespaces 
 - operating system
-- process 
-- shared operating system
-- shared resources
-- virtual hardware
 - virtual machine 
-- virtual system
 - vm
+- devops
+- docker
+- cloud
+- virtualisation
+- VirtualBox
+- VMWare
+- performance
+- infra
 --- 
 
 ### Introduction
