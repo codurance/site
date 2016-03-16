@@ -8,7 +8,7 @@ image:
     src: /assets/img/custom/blog/2016-03-16-containers-all-the-way-through/cover-image.png
     attribution:
         text: Worlds within droplets by Susanne Nilsson (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
-        href: https://www.flickr.com/photos/infomastern/15698020069/in/photolist-pVbssr-7y21ES-7MKVTx-72WHSu-2FDMjK-4ih5va-9FGj9H-5pb999-6qLMSa-r1ZrVo-6Nxy6v-bQ5oUk-5aJy7i-6eC8zA-2CeMYe-7QAYH1-48NPqf-6TgPFX-6qy3JC-7QxC9e-88rFEc-7MKVJv-8SR56h-7fvqLb-8SR7FQ-pex9oz-83DVKi-8SMVLD-5uNTcf-jsE9W-e8UREj-cbgFh3-8wD7uS-fFDSGi-5TBDmA-7AoqGR-8SR9g5-7QARjW-eivw71-ePZC8-95Zb2L-axKyf8-9raf22-srvYZY-5WapzP-6WSbQj-ohBjPp-rkqgFT-4HZ3er-8SN1WX
+        href: /assets/img/custom/blog/2016-03-16-containers-all-the-way-through/cover-image.png
 canonical:
     name: my personal blog
     href: https://neomatrix369.wordpress.com/2016/03/13/containers-all-the-way-through/
