@@ -17,7 +17,7 @@ tags:
 - code smells
 - long classes/methods
 ---
-Last weekend I was at the [SoCraTes Canaries](https://twitter.com/hashtag/socracan16) and I gave my first talk ever about code smells...Oh boy! How nervous was I! But now that that has passed I was wondering what I should do with all information I collected: and then I thought, maybe it's a good idea to put it all in a nice blog post.
+Last weekend I was at the [SoCraTes Canaries](https://twitter.com/hashtag/socracan16) and I gave my first talk ever about code smells.Oh boy! How nervous was I! But now that that has passed I was wondering what I should do with all information I collected. And then I thought, maybe it's a good idea to put it all in a nice blog post.
 
 ## So what are code smells?
 
@@ -25,6 +25,7 @@ As [Martin Fowler](http://martinfowler.com/) said in his book ["Refactoring: Imp
 > **A code smell is a surface indication that usually corresponds to a deeper problem in the system.**
 
 I like to think that a  code smell is something that makes your developer instinct cry out to you, and you just know that something is wrong. This doesn’t mean you have to make changes in your code: there are occasions where these code smells are ok, but I think It’s important for us to detect them and know exactly why they are there.
+
 There are 5 categories in code smells:
 
 - Bloaters
@@ -33,7 +34,7 @@ There are 5 categories in code smells:
 - Dispensables
 - Couplers
 
-Today I'm going to talk about Bloaters. The other categories I let then for a future post.
+Today I'm going to talk about Bloaters. I'll leave the other categories for a future post.
 
 ## Bloaters
 
@@ -48,12 +49,12 @@ The Long Parameter List is when you have a method that has more than 3 parameter
 This case is when we use primitives instead of small objects for simple tasks. Sometimes the use of primitives is justifiable, but when you start to have behaviour attached to this primitives, then it's time to stop and think that maybe a value type is in order. A simple example is a currency: we tend to put it in a float/double, instead of encapsulating it in a value type.
 
 #### Long Method / Large Class
-This kind of code smell happens when you have a big method. But, when do you know that a method has become too big? Well, I have the rule that with more than 5 lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines are just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) ).
+This kind of code smell happens when you have a big method. But, when do you know that a method has become too big? Well, I have the rule that with more than 5 lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines are just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) the [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
 
 
 To do this blog I started to look at my old code when I hadn't woken up yet to craftsmanship: If it was working that was good enough for me. Here's the code in Objective-C:
 
-`````
+```
 - (void) postToServer
 {
     PostSerializer* postSerializer = [[PostSerializer alloc] init];
@@ -81,9 +82,6 @@ To do this blog I started to look at my old code when I hadn't woken up yet to c
     NSError *error = nil;
 	XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
 
-    //DLog(@"%@", [request body]);
-    //DLog(@"%@", [result body]);
-
     UIApplication *app = [UIApplication sharedApplication];
     app.networkActivityIndicatorVisible = NO;
 
@@ -102,9 +100,9 @@ To do this blog I started to look at my old code when I hadn't woken up yet to c
 
     [self processPublishResult:result];
 }
-`````
+```
 
-Wow! This is really a big method. And this is inside a ViewController class, so definitely this should be extracted into a service class, so we have a correct separation of concerns. But for the sake of the brevity, let's focus on how can we refactor this big method.
+Wow! This is a really big method. And it is inside a ViewController class, so this should definitely be extracted into a service class, so we have a correct separation of concerns. But for the sake of the brevity, let's focus on how can we refactor this big method.
 The refactoring technique to apply here is **Extract Method**: you can aggregate code together and extract to a new method. So let's see what we can come up with:
 
 We can start with grouping the code that refers to serializing a post:
@@ -206,7 +204,7 @@ With all these extractions our method now looks pretty neat:
 }
 ````
 
-Hum... we can do this even better... let's look at the method createXMLRCPRequest and see if we can call the others from there...in this case, it makes sense to have all together.
+Hum... we can do this even better! Let's take a look at the method ```createXMLRCPRequest``` and see if we can call the others from there. In this case, it makes sense to have all together.
 
 ````
 - (XMLRPCRequest *)createXMLRPCRequest {
