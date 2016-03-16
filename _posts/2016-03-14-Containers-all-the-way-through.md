@@ -53,7 +53,7 @@ A more detailed explanation what programs or executables are, how programs execu
 
 On the other hand Virtual Systems, with the help of Virtual System controllers like, _Virtual Box_ or _VMWare_ or [_a_ _hypervisor [1]_](https://en.wikipedia.org/wiki/Hypervisor) run an operating system on a bare metal system. These systems emulate bare-metal hardware as software abstraction(s) inside which we run the real OS platform. Such systems can be made up of the following layers, and also referred to as a Virtual Machines (VM):
 
-*   a software abstraction of the hardware (virtual machine)
+*   a software abstraction of the hardware (Virtual Machine)
 *   the OS platform running inside the software abstraction (guest OS)
 *   one or more programs running in the guest OS (processes)
 
