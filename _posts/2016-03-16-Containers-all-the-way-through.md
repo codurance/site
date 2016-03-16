@@ -7,8 +7,8 @@ author: Mani Sarkar
 image:
     src: /assets/img/custom/blog/2016-03-16-containers-all-the-way-through/cover-image.png
     attribution:
-        text: World Inside Drops by Joni Niemelä
-        href: https://www.flickr.com/photos/nitrok/4643690435/in/photolist-85m8oc-dJdHdG-rCxKY5-cSZWGm-aoSk6R-cTJyMG-AGapwu-8V9PDD-8RZxMr-9ZSVdH-8BGYS9-iENx1g-nNVtCZ-ezCSP4-4awLWU-bGvJHx-7izcMQ-5Us4oC-5fS7ye-np9Kag-nxQW1H-97rFRm-7CDVSn-amdWzY-6yydhM-7sCqL6-9hCdZ1-8o271S-pnwdfw-dQ7qGx-9RtUs9-5iXWSw-7fnmbc-7BMPf9-rAWL1e-a9DtWV-dUWBgE-prbj6-ioWvpv-6w6P2v-aDL49E-9DZy8z-kEKm9A-5m6nao-91AkmW-91nNKW-7rLbuB-aYn55V-py32i8-bWcJBy
+        text: Worlds within droplets by Susanne Nilsson
+        href: https://www.flickr.com/photos/infomastern/15698020069/in/photolist-pVbssr-7y21ES-7MKVTx-72WHSu-2FDMjK-4ih5va-9FGj9H-5pb999-6qLMSa-r1ZrVo-6Nxy6v-bQ5oUk-5aJy7i-6eC8zA-2CeMYe-7QAYH1-48NPqf-6TgPFX-6qy3JC-7QxC9e-88rFEc-7MKVJv-8SR56h-7fvqLb-8SR7FQ-pex9oz-83DVKi-8SMVLD-5uNTcf-jsE9W-e8UREj-cbgFh3-8wD7uS-fFDSGi-5TBDmA-7AoqGR-8SR9g5-7QARjW-eivw71-ePZC8-95Zb2L-axKyf8-9raf22-srvYZY-5WapzP-6WSbQj-ohBjPp-rkqgFT-4HZ3er-8SN1WX
 canonical:
     name: my personal blog
     href: https://neomatrix369.wordpress.com/2016/03/13/containers-all-the-way-through/
@@ -17,17 +17,13 @@ tags:
 - container
 - hypervisor 
 - kernel
-- operating system
 - virtual machine 
 - vm
 - devops
 - Docker
 - cloud
 - virtualisation
-- VirtualBox
-- VMWare
 - performance
-- infra
 --- 
 
 ### Introduction
