@@ -13,17 +13,15 @@ canonical:
     name: my personal blog
     href: https://neomatrix369.wordpress.com/2016/03/13/containers-all-the-way-through/
 tags:
-- bare metal system
+- bare metal
 - container
 - hypervisor 
 - kernel
 - virtual machine 
-- vm
 - devops
 - Docker
-- cloud
 - virtualisation
-- performance
+- operating system
 --- 
 
 ### Introduction
