@@ -47,7 +47,7 @@ Programs are stored on the hard drive in the form of executable files (a format 
 <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class="img img-center img-responsive style-screengrab">
 
 
-A more detailed explanation what programs or executables are, how programs execute and where an Operating System come into play, can be found [on this Stackoverflow page [2]](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play).
+A more detailed explanation of what programs or executables are, how programs execute and where an Operating System come into play, can be found [on this Stackoverflow page [2]](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play).
 
 ### Virtual Systems
 
