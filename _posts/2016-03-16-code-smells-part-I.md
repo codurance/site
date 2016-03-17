@@ -2,7 +2,7 @@
 layout: post
 name: code-smells-part-one
 title: Code Smells – Part I
-date: 2016-03-16 12:10:00 +00:00
+date: 2016-03-17 12:10:00 +00:00
 author: Ana Nogal
 canonical:
     name: my personal blog
@@ -16,17 +16,18 @@ tags:
 - bloaters
 - code smells
 - long classes/methods
+- refactoring
 ---
-Last weekend I was at the [SoCraTes Canaries](https://twitter.com/hashtag/socracan16) and I gave my first talk ever about code smells.Oh boy! How nervous was I! But now that that has passed I was wondering what I should do with all information I collected. And then I thought, maybe it's a good idea to put it all in a nice blog post.
+Last weekend I was at the [SoCraTes Canaries](https://twitter.com/hashtag/socracan16) and I gave my first talk ever about code smells. Oh boy! How nervous was I! But now that, that has passed I was wondering what I should do with all information I gathered. And then I thought, maybe it's a good idea to put it all in a nice blog post.
 
 ## So what are code smells?
 
 As [Martin Fowler](http://martinfowler.com/) said in his book ["Refactoring: Improving the Design of Existing Code"](http://martinfowler.com/books/refactoring.html),
 > **A code smell is a surface indication that usually corresponds to a deeper problem in the system.**
 
-I like to think that a  code smell is something that makes your developer instinct cry out to you, and you just know that something is wrong. This doesn’t mean you have to make changes in your code: there are occasions where these code smells are ok, but I think It’s important for us to detect them and know exactly why they are there.
+I like to think that a code smell is something that makes your developer instinct cry out to you, and you just know that something is wrong. This doesn’t mean you have to make changes in your code: there are occasions where these code smells are ok, but I think it’s important for us to detect them and know exactly why they are there.
 
-There are 5 categories in code smells:
+There are five categories off code smells:
 
 - Bloaters
 - Object-Orientation Abusers
@@ -46,13 +47,13 @@ The Long Parameter List is when you have a method that has more than 3 parameter
 
 #### Primitive Obsession
 
-This case is when we use primitives instead of small objects for simple tasks. Sometimes the use of primitives is justifiable, but when you start to have behaviour attached to this primitives, then it's time to stop and think that maybe a value type is in order. A simple example is a currency: we tend to put it in a float/double, instead of encapsulating it in a value type.
+This case is when we use primitives instead of value types for simple tasks. Sometimes the use of primitives is justifiable, but when you start to have behaviour attached to this primitives, then it's time to stop and think that maybe a value type is in order. A simple example is a currency: we tend to put it in a float or double, instead of encapsulating it in a value type.
 
 #### Long Method / Large Class
-This kind of code smell happens when you have a big method. But, when do you know that a method has become too big? Well, I have the rule that with more than 5 lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines are just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) the [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
+This kind of code smell happens when you have a big method. But, when do you know that a method has become too big? Well, I have the rule that with more than five lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines are just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) the [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
 
 
-To do this blog I started to look at my old code when I hadn't woken up yet to craftsmanship: If it was working that was good enough for me. Here's the code in Objective-C:
+To do this blog I started to look at my old code when I hadn't woken up yet to craftsmanship: if it was working that was good enough for me. Here's the code in Objective-C:
 
 ```
 - (void) postToServer
@@ -61,12 +62,12 @@ To do this blog I started to look at my old code when I hadn't woken up yet to c
     NSString *post = [postSerializer serializePostWithTitle:self.txtTitle.text description:self.txtDescription.text author:self.txtUser.text game:self.game];
 
     NSMutableDictionary *postParams = [NSMutableDictionary dictionary];
-	[postParams setObject:txtTitle.text forKey:@"title"];
-	[postParams setObject:post forKey:@"data"];
-	[postParams setObject:txtUser.text forKey:@"username"];
+	  [postParams setObject:txtTitle.text forKey:@"title"];
+	  [postParams setObject:post forKey:@"data"];
+	  [postParams setObject:txtUser.text forKey:@"username"];
     [postParams setObject:txtPassword.text forKey:@"password"];
 
-	NSArray *args = [NSArray arrayWithObjects:[NSNumber numberWithInt:0], postParams, nil];
+	  NSArray *args = [NSArray arrayWithObjects:[NSNumber numberWithInt:0], postParams, nil];
 
 #ifdef DEBUG_LOG
     XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL:
@@ -77,10 +78,10 @@ To do this blog I started to look at my old code when I hadn't woken up yet to c
     DLog(@"Producao");
 #endif
 
-	[request setMethod:@"letsBasket.AddPost" withParameters:args];
+	  [request setMethod:@"letsBasket.AddPost" withParameters:args];
 
     NSError *error = nil;
-	XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
+	  XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
 
     UIApplication *app = [UIApplication sharedApplication];
     app.networkActivityIndicatorVisible = NO;
@@ -95,8 +96,8 @@ To do this blog I started to look at my old code when I hadn't woken up yet to c
         NSString *message = [[[result body] substringWithRange:NSMakeRange(location_start, location_end- location_start)] unescapedString];
         NSString* title = [UtilsHelper localizeString:@"PublishVC_ErrorRetreivingAlertTitle_key"];
         [self showAlertWithErrorMessage:message Title:title];
-	return;
-	}
+	      return;
+	  }
 
     [self processPublishResult:result];
 }
@@ -107,7 +108,7 @@ The refactoring technique to apply here is **Extract Method**: you can aggregate
 
 We can start with grouping the code that refers to serializing a post:
 
-````
+```
 - (NSString *)serializePost
 {
     PostSerializer* postSerializer = [[PostSerializer alloc] init];
@@ -115,11 +116,11 @@ We can start with grouping the code that refers to serializing a post:
     return post;
 }
 
-````
+```
 
 Then we can do it for the parameters of the request:
 
-````
+```
 - (NSArray *)createPostParams:(NSString *)post
 {
     NSMutableDictionary *postParams = [NSMutableDictionary dictionary];
@@ -132,11 +133,11 @@ Then we can do it for the parameters of the request:
     return args;
 }
 
-````
+```
 
 With all this in place we are now ready to create a XMLRPCRequest:
 
-````
+```
 - (XMLRPCRequest *)createXMLRPCRequestWithArgs:(NSArray*)args {
 
     XMLRPCRequest *request;
@@ -155,10 +156,10 @@ With all this in place we are now ready to create a XMLRPCRequest:
     return request;
 }
 
-````
+```
 We can also extract a method with some display updates:
 
-````
+```
 - (void)updateDisplay
 {
     UIApplication *app = [UIApplication sharedApplication];
@@ -166,10 +167,10 @@ We can also extract a method with some display updates:
 
     [self dismissWaitingAlert];
 }
-````
+```
 And last but not least we can extract the preparation for displaying the error message:
 
-````
+```
 - (void)showError:(NSString*)bodyResult {
 
     int location_start = [bodyResult rangeOfString:@"<string>"].location + 8;
@@ -179,10 +180,10 @@ And last but not least we can extract the preparation for displaying the error m
     NSString* title = [UtilsHelper localizeString:@"PublishVC_ErrorRetreivingAlertTitle_key"];
     [self showAlertWithErrorMessage:message Title:title];
 }
-````
+```
 With all these extractions our method now looks pretty neat:
 
-````
+```
 - (void) postToServer
 {
     NSString *post = [self serializePost];
@@ -190,23 +191,23 @@ With all these extractions our method now looks pretty neat:
     XMLRPCRequest *request = [self createXMLRPCRequestWithArgs: args];
     NSError *error = nil;
 
-	XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
+	  XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
 
     [self updateDisplay];
 
     if(error != nil || [[result body] rangeOfString:@"<name>error</name>"].location != NSNotFound)
     {
         [self showError:[result body]];
-		return;
-	}
+		    return;
+	  }
 
     [self processPublishResult:result];
 }
-````
+```
 
-Hum... we can do this even better! Let's take a look at the method ```createXMLRCPRequest``` and see if we can call the others from there. In this case, it makes sense to have all together.
+Hmm... we can do this even better! Let's take a look at the method ```createXMLRCPRequest``` and see if we can call the others from there. In this case, it makes sense to have all together.
 
-````
+```
 - (XMLRPCRequest *)createXMLRPCRequest {
 
     NSString *post = [self serializePost];
@@ -227,29 +228,29 @@ Hum... we can do this even better! Let's take a look at the method ```createXMLR
 
     return request;
 }
-````
+```
 
 And our original method now looks like this:
 
-````
+```
 - (void) postToServer
 {
     XMLRPCRequest *request = [self createXMLRPCRequest];
     NSError *error = nil;
 
-	XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
+	  XMLRPCResponse* result = [XMLRPCConnection sendSynchronousXMLRPCRequest:request error:&error];
 
     [self updateDisplay];
 
     if(error != nil || [[result body] rangeOfString:@"<name>error</name>"].location != NSNotFound)
     {
         [self showError:[result body]];
-		return;
-	}
+		    return;
+	  }
 
     [self processPublishResult:result];
 }
-````
+```
 Well, here you go: a method with more than 5 lines and I think that's ok. :)
 As we can see it's really easy to let a method grow. But it's really easy to refactor and have a cleaner code too.
 
