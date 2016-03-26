@@ -15,7 +15,7 @@ tags:
 - Mutual Authentication
 --- 
 
-The HTTPS protocol is the well-established standard for securing our internet connections. Understanding how this protocol works is not problem and the corresponding [RFC document](https://tools.ietf.org/html/rfc2818) is available since 2000.
+The HTTPS protocol is the well-established standard for securing our connections. Understanding how this protocol works is not a problem and the corresponding [RFC document](https://tools.ietf.org/html/rfc2818) is available since 2000.
 
 Despite HTTPS is used so widely, you can still find a software which doesn't handle this protocol without unnecessary complexity. Unfortunately I'v experienced  problems during the implementation of [the mutual authentication](https://en.wikipedia.org/wiki/Mutual_authentication) in the language which should not surprise me at all. It is **Java**.
 
