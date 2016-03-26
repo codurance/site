@@ -31,13 +31,15 @@ During [The handshake](https://en.wikipedia.org/wiki/Transport_Layer_Security#TL
 - The client sends its certificate to the server.  
 - The server verifies the client's certificate.
 - The server and the client exchange the master secret which is used during the encryption of data.
-- Connection is established.  
+- The connection is established.  
 
-Combining my knowledge about the TLS/SSL handshake and my experience from the manual test with `curl` I've assumed that I'm going to need to just three files to implement the client side: **a client's certificate**, **a client's private key** and **a trusted certificate to verify the server's certificate**.
+Together with my teammate we tried to implemented the HTTPS client in **Java**. Combining our knowledge about the TLS/SSL handshake and the experience from the manual test with `curl` we assumed that only three files were required to implement the client side: **a client's certificate**, **a client's private key** and **a trusted certificate to verify the server's certificate**.
+
+Oh, how wrong we were to think so.
 
 ## Java - the problem, the solution and why is it so hard
 
-Because it is quite unusual to use the mutual authentication every day, together with my teammate we asked for the assistance. The first look at the results served by *uncle Google* didn't revealed the complexity behind the implementation, but each click on the results led us to the more and more confusing solutions (some of them where from 90's). To make matters worse we had to use [Apache HttpComponents](https://hc.apache.org/) to implement our connection, but the most of the proposed solutions based on the pure **Java** libraries.  
+Because it is quite unusual to use the mutual authentication every day, we asked the best source in the world for a small assistance. The first look at the results served by *uncle Google* didn't revealed the complexity behind the implementation, but each click on the results led us to the more and more confusing solutions (some of them where from 90's). To make matters worse we had to use [Apache HttpComponents](https://hc.apache.org/) to implement our connection, but the most of the proposed solutions based on the pure **Java** libraries.  
 
 The knowledge from the internet allows us to establish:
 
