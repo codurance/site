@@ -11,7 +11,7 @@ image:
     src: /assets/img/custom/blog/code-smells.jpg
     attribution:
         text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
-        href: /assets/img/custom/blog/code-smells.jpg
+        href: https://www.flickr.com/photos/brian-fitzgerald/3334353375
 tags:
 - bloaters
 - code smells
