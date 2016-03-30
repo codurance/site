@@ -74,21 +74,17 @@ A container creates an OS like environment, inside which one or more programs ca
 
 Looking at these enclosures or rounded rectangles within each other, we can already see how it is containers all the way through.
 
-<table>
-   <tbody>
-      <tr>
-         <td>
-            <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class=" img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
-         </td>
-         <td>
-            <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
-         </td>
-         <td>
-         	<img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
-         </td>
-      </tr>
-   </tbody>
-</table>
+<div class="row blog-boxes">
+   <div class="blog-box homepage-blog-thumb col-md-4"> 
+    <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class=" img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
+   </div>
+   <div class="blog-box homepage-blog-thumb col-md-4">
+    <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
+   </div>
+   <div class="blog-box homepage-blog-thumb col-md-4">
+    <img src="/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
+  </div>
+</div>
 
 There is an increasing number of distinctions between **Bare Metal Systems**, **Virtual Systems** and **Container Systems**. While Virtual Systems encapsulate the Operating System inside a thick hardware virtualisation, Container Systems do something similar but with a much thinner virtualisation layer.
 
