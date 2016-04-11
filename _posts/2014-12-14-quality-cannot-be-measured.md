@@ -5,7 +5,7 @@ title: Code quality cannot be measured
 date: 2014-12-14 00:27:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2014_12_12/you_are_going_to_call_me_what.jpg
+    src: /assets/img/custom/blog/2014-12-14-quality-cannot-be-measured.png
 tags:
 - craftsmanship
 - tdd

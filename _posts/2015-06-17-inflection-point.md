@@ -10,7 +10,7 @@ tags:
 - craftsmanship
 - design
 - architecture
-- inflection-point
+- inflection point
 ---
 
 We all say that software design is all about trade-offs but how do we actually reason about it? How do we decide how much code we are going to write for a given task? Is the easiest thing that could possibly work the right approach? The simplest? How do we know the [difference between simple and easy](http://www.infoq.com/presentations/Simple-Made-Easy)? Is this even the right question?
@@ -19,7 +19,7 @@ One way or another, subconsciously or not, we always make a decision to start im
 
 Let’s assume the following:
 
-![Inflection Point](/assets/img/custom/blog/2015-06-17-inflection-point.jpg)
+<img src="/assets/img/custom/blog/2015-06-17-inflection-point.jpg" alt="Inflection Point" title="Inflection Point" class="img img-center img-responsive style-screengrab">
 
 On the left hand side, we have the most straightforward solution for a given desired behaviour. On the right hand side, we have infinite possibilities for writing future proof code. The problem with the right side is that we could never write future proof code according to infinite future possibilities. But we can, however, pick a software capability and try to write some future proof code for that. E.g:
  
