@@ -86,15 +86,6 @@
   twitter: tobyret
   github: tobyret
 
-- id: amir
-  name: Amir Bazazi
-  image: /assets/img/custom/team/amir_bazazi.jpg
-  role: Software Craftsman
-  shortDescription: In his time with us, Amir has discovered a great deal about what it means to be a software craftsman outside of just knowing how to write good code ...
-  fullDescription: <p> Amir joined as an apprentice shortly after graduating from university. In his time with us, he has discovered a great deal about what it means to be a software craftsman outside of just knowing how to write good code. Testing, automation, and risk mitigation have become an indispensable part of his work. In addition, Amir has learnt that a strong confident personality is sometimes needed alongside an open mind, and that colleagues & peers should be addressed in a manner that is equal parts welcoming and challenging.</p> <p> Since joining Codurance, Amir has excelled in up a variety of both technical and soft skills towards producing well-crafted software. He always brings an open-mind and an eagerness to learn. With all these factors and many more, Amir's passion for software has only gotten stronger and despite now having the title of craftsman, he feels as though his journey to mastering software craftsmanship is just beginning.</p>
-  twitter: amirbazazi
-  github: amiralibazazi
-
 - id: ana
   name: Ana Nogal
   image: /assets/img/custom/team/ana_nogal.jpg
@@ -169,3 +160,12 @@
     <p>Matthew is passionate about teaching excellence in software development, and he is equally at home running a one-hour workshop or designing and implementing a six-month apprenticeship programme. He is a regular participant in the wider Software Craftsmanship and Extreme programming communities.</p>
   twitter: bnathyuw
   github: bnathyuw
+
+- id: giulia 
+  name: Giulia Mantuano 
+  image: /assets/img/custom/team/giulia_mantuano.jpg
+  role: Design Craftswoman / Creative Director
+  shortDescription: Having worked as Art Director in an integrated communications agency and as design consultant, Giulia has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.  
+  fullDescription: <p>Giulia has been working in the creative industry since 2002.</p><p>Having worked as Art Director in an integrated communications agency and as design consultant, she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p><p>During her career, she has worked for government institutions, medium and big companies and small start-ups, from several industries; healthcare, tourism, food & beverage, electronics, software development, education and performing arts.</p> <p>Giulia works closely with stakeholders involving them directly into the design process in order to enable companies to build strong brands, develop meaningful products and services, and deliver value to market.</p><p>Her focus on maintaining quality and consistency across media taught her the importance of being able to wear several hats; brand strategist, content strategist, insight analyst, information architect, visual designer, art director.</p><p> While she is always happy to share her experience and lend advice to colleagues, she is continually trying to learn new things and build upon her current knowledge.</p>
+  twitter: giuliamantuano 
+  github: giuliamantuano 
