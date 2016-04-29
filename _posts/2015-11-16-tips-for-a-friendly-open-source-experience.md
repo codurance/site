@@ -45,11 +45,11 @@ By just doing that you could come up with things to work on for later, e.g.:
 A project is not only its code, so you should explore its social side too. Chats, mailing lists, issues, pull requests, wikis... Imagine yourself applying to a company for a job and being able to spend as much time as you want reading most of their internals documents. You can do that with OSS, use that opportunity. You can even see [bots talking to each other](https://github.com/ampproject/amphtml/pull/484):
 
 
-<img src="/assets/img/custom/blog/first-robot.png" />
+<img class="img-responsive" src="/assets/img/custom/blog/first-robot.png" />
 
 -----------
 
-<img src="/assets/img/custom/blog/second-robot.png" />
+<img class="img-responsive" src="/assets/img/custom/blog/second-robot.png" />
 
 
 ### Be humble
@@ -73,7 +73,7 @@ Most of OSS's owners are looking for contributors. In order to attract the right
 * Beginner friendly: As you can see in this [repo](https://github.com/MunGell/awesome-for-beginners), there are several beginner-friendly OSS projects.
 
 
-<img src="/assets/img/custom/blog/labels.png" />
+<img class="img-responsive" src="/assets/img/custom/blog/labels.png" />
 
 
 * Guidelines: it's really frustrating to invest a lot of time in a PR (Pull Request) and then getting a massive amount of feedback. You could think that your standards are universal, but even something like testing or clean code is not a shared value for everybody. The project should state clearly in the Readme or Wiki what are the expectations for a PR. Don't lower the bar, but explicitly state it. At the end of the day your project needs valuable code, it doesn't matter how much time the contributor needed in order to accomplish the task.
