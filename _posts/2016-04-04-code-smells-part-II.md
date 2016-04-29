@@ -2,7 +2,7 @@
 layout: post
 name: code-smells-part-one
 title: Code Smells – Part II
-date: 2016-04-04 12:10:00 +00:00
+date: 2016-04-29 12:10:00 +00:00
 author: Ana Nogal
 canonical:
     name: my personal blog
@@ -20,31 +20,30 @@ tags:
 
 ---
 In the last post, [Code Smells - Part I](http://codurance.com/2016/03/17/code-smells-part-I),  I talked about the bloaters: they are code smells that can be identified as Long Methods, Large Classes, Primitive Obsessions, Long Parameter List and Data Clumps. In this one, I would like to dig into the **Object-Orientation Abusers** and the **Change Preventers**. 
-In today's post, I'll talk about a few refactoring techniques, but there are a lot more. You can find a good reference to all of then in [Refactoring.com](http://refactoring.com/catalog/) by Martin Fowler.
 
 ## Object-Orientation Abusers
 
-This type of code smell usually happens when the object-oriented principles are incomplete or incorrectly applied.
+This type of code smell usually happens when object-oriented principles are incomplete or incorrectly applied.
 
 
 #### Switch Statements
 
 This case is simple to identify: we have a switch case. But you should consider it a smell too if you find a sequence of ifs. (that's a switch case in disguise).
 Why are switch statements bad? Because when a new condition is added, you have to find every occurrence of that switch case. 
-So while reading this post to give me his opinion, [David](https://twitter.com/DHatanian) asked me: and what happens if I encapsulate the switch into a method, is it acceptable then? That's really a good question... If your switch case is only used to "take care" of one behaviour and that's it, then why not use a method that encapsulates that behaviour. Remember identifying a code smell doesn't mean that you have to get always ride of it: it's a trade of. But if you have several places in your code with the switch and each of then has a different behaviour, definitely you would need to look at it since this different behaviour needs a proper "home" to be in. As a rule of thumb, you should think of polymorphism when you find yourself in this situation. There are two refactoring techniques that we can apply here: 
+So while talking to [David](https://twitter.com/DHatanian), he asked me: and what happens if I encapsulate the switch into a method, is it acceptable then? That's really a good question... If your switch case is only used to "take care" of one behaviour and that's it, then it might be ok . Remember identifying a code smell doesn't mean that you have to get always ride of it: it's a trade of. If you find your switch statement replicated and each replication has  different behaviour, then you cannot simply isolate the switch statement in a method. You need to find a proper "home" for it to be in. As a rule of thumb, you should think of polymorphism when you find yourself in this situation. There are two refactoring techniques that we can apply here: 
 
  - **_Replace Type Code with Subclasses_**
-   This technique consists of creating subclasses for each type of your switch, putting the behaviour in this classes. 
+   This technique consists of creating subclasses for each switch case and applying the respective behaviour to these subclasses.
  - **_Replace Type Code With Strategy_**
    Similar to the above one, in this case, you should make use of one of the patterns: [State](https://en.wikipedia.org/wiki/State_pattern) or [Strategy](https://en.wikipedia.org/wiki/Strategy_pattern).
 
-So when to use one or the other? If the **_Type Code_** does not change the behaviour of a class you can use the **_Subclasses_** technique. Separating each behaviour in it's appropriated subclass will enforce the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and make the code more readable in general. And if you need to add another case, you just need to add a new class to your code without having to modify any other code. So you apply the [Open/Close Principle](https://en.wikipedia.org/wiki/Open/closed_principle).
-You should use the Strategy approach when the **_Type Code_** affects the behaviour of your classes. If you're changing the state of the class, fields and many other actions then you should use the [State Pattern](https://en.wikipedia.org/wiki/State_pattern). if only affects how you select a behaviour of the class then the [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) is your man.
+So when to use one or the other? If the **_Type Code_** does not change the behaviour of a class you can use the **_Subclasses_** technique. Separating each behaviour in it's appropriated subclass will enforce the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and make the code more readable in general. If you need to add another case, you just add a new class to your code without having to modify any other code. So you apply the [Open/Close Principle](https://en.wikipedia.org/wiki/Open/closed_principle).
+You should use the Strategy approach when the **_Type Code_** affects the behaviour of your classes. If you're changing the state of the class, fields and many other actions then you should use the [State Pattern](https://en.wikipedia.org/wiki/State_pattern). if it only affects how you select a behaviour of the class then the [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) is your man.
 
 #### Temporary Field
 
-This case occurs when we are calculating some big algorithm that needs several input variables. Creating these fields in the class has no value most of the times because they are just used for this specific calculation. And this can be dangerous too because you have to be sure you reinitialize then before you start the next computation. 
-Here the best refactoring technique is to use **_Replace Method with Method Object_**, wich will extract the method into a separate class. Then you can split the method into several methods within the same class. 
+This case occurs when we are calculating some big algorithm that needs several input variables. Creating these fields in the class has no value most of the times because they are just used for this specific calculation. And this can be dangerous too because you have to be sure you reinitialize them before you start the next computation. 
+Here the best refactoring technique is to use **_Replace Method with Method Object_**, which will extract the method into a separate class. Then you can split the method into several methods within the same class. 
 
 
 #### Refused Bequest
@@ -53,18 +52,18 @@ This code smell is a little tricky to detect because this happens when a subclas
 
 In this case, if it makes no sense to continue to have this inheritance, the best refactoring technique is to use **_Delegation_**: we can get rid of the inheritance by creating a field in our subclass and putting in there the parent class. This way every time you need the methods from the parent class just delegate then to this new object. 
 
-When the inheritance is the correct thing to do, then move all unnecessary fields and methods from the subclass. Extract all methods and fields from the subclass and parent class and put then in a new class. Make this new class the SuperClass, from whom the subclass and parent class should inherit. This technique is called **_Extract Superclass_**.
+When the inheritance is the correct thing to do, then move all unnecessary fields and methods from the subclass. Extract all methods and fields from the subclass and parent class and put them in a new class. Make this new class the SuperClass, from whom the subclass and parent class should inherit. This technique is called **_Extract Superclass_**.
 
 
 #### Alternative Classes with Different Interfaces
 
-Hmm, this case makes me think of "lack of communication" between members of the same team because this happens when we have two classes that make basically the same thing but have different names in their methods. 
+Hmm, this case makes me think of "lack of communication" between members of the same team because this happens when we have two classes that make basically the same thing but have different names for their methods. 
 Start by **_Renaming Methods_** or **_Moving Method_**, so you can have both classes implementing the same interface. In some cases, only part of the behaviour is duplicated in both classes. If so, try **_Extract Superclass_** and make the original classes the subclasses.  
 
 
 ## Change Preventers
 
-Oh boy! This kind of code smells are the ones you really want to avoid. These are the ones that when you make a change in one place, you have to go basically throughout all your code making changes in other places too. So it's the nightmare that all of us want to avoid!
+Oh boy! This kind of code smells are the ones you really want to avoid. These are the ones that when you make a change in one place, you have to go basically throughout your code-base making changes in other places too. So it's the nightmare that all of us want to avoid!
 
 
 #### Divergent Change
@@ -87,5 +86,6 @@ Here you can: first, make one of the hierarchy refer to instances of another hie
 
 ### Conclusion
 
-In the case of **_Object-Orientation Abusers_** and **_Change Preventers_**, I think that they are simpler to avoid if you know how to apply a good design to your code. And that comes with a lot of practice.
-As I said in the [first part of this series](http://codurance.com/2016/03/17/code-smells-part-I), code smells can't always be removed. Study each case and decide: remember that is always a trade off. 
+In the case of **_Object-Orientation Abusers_** and **_Change Preventers_**, I think that they are simpler to avoid if you know how to apply a good design to your code. And that comes with a lot of practice. 
+Today I've talked about a few refactoring techniques, but there are a lot more. You can find a good reference to all of then in [Refactoring.com](http://refactoring.com/catalog/).
+And as I said in the [first part of this series](http://codurance.com/2016/03/17/code-smells-part-I), code smells can't always be removed. Study each case and decide: remember that is always a trade off. 
