@@ -428,6 +428,13 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 
 
+/* Training */
+
+.training-link-btn {
+    width: 150px;
+    color: #e67e22 !important;
+}
+
 /* Case Studies */
 
 .case-study {
