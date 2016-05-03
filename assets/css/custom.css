@@ -435,6 +435,11 @@ body:last-child .btn-u, x:-moz-any-link {
     color: #e67e22 !important;
 }
 
+.training-description {
+    font-size: 17px;
+    font-weight: 200;
+}
+
 /* Case Studies */
 
 .case-study {
