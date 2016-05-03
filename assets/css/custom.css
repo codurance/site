@@ -440,6 +440,13 @@ body:last-child .btn-u, x:-moz-any-link {
     font-weight: 200;
 }
 
+
+
+.btn-u.btn-brd.btn-u-orange:hover {
+    color: white !important;
+    background-color: #e67e22;
+}
+
 /* Case Studies */
 
 .case-study {

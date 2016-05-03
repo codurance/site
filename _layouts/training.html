@@ -17,33 +17,43 @@ title: Training
         <div class="row margin-bottom-40 margin-top-20">
             <div class="col-md-8 col-md-offset-2">
                 <div class="headline headline-md margin-bottom-30">
-                    <h2>
-                        Training Information Request
-                    </h2>
+                    <h2>Talk to us about your training needs</h2>
                 </div>
 
                 <form id="contact" class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
                     <input type="hidden" name="_next" value="/aboutus/thanks"/>
                     <input type="hidden" name="_subject" value="Codurance Training"/>
                     <input type="hidden" id="TrainingUrl" name="TrainingUrl" value=""/>
-                    <label>Number of participants</label>
-                    <input class="form-control" type="text" name="participants">
-                    <br/>
-                    <label>Desired start date</label>
-                    <input class="form-control" type="text" name="start_date">
-                    <br/>
-                    <label>Name/organisation</label>
-                    <input class="form-control" type="text" name="name">
-                    <br/>
-                    <label>Your e-mail</label>
-                    <input class="form-control" type="email" name="_replyto">
-                    <br/>
-                    <label>Message</label>
-                    <textarea class="form-control" rows="10" name="body"></textarea>
-                    <br/>
+
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-6">
+                            <label>Name / Organisation</label>
+                            <input class="form-control" type="text" name="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Your email</label>
+                            <input class="form-control" type="email" name="_replyto">
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-6">
+                            <label>Desired start date</label>
+                            <input class="form-control" type="text" name="start_date">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Number of participants</label>
+                            <input class="form-control" type="text" name="participants">
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-12">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="10" name="body"></textarea>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                            <button id="Send" value="Send" class="btn-u btn-u-lg btn-block" type="submit">Submit
+                        <div class="col-md-12">
+                            <button id="Send" value="Send" class="pull-right btn-u btn-u-lg" type="submit">Submit
                             </button>
                         </div>
                     </div>
@@ -51,8 +61,6 @@ title: Training
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 <script type="text/javascript">
     document.getElementById('TrainingUrl').value = window.location.href;
