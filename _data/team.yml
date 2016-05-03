@@ -169,3 +169,21 @@
   fullDescription: <p>Giulia has been working in the creative industry since 2002.</p><p>Having worked as Art Director in an integrated communications agency and as design consultant, she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p><p>During her career, she has worked for government institutions, medium and big companies and small start-ups, from several industries; healthcare, tourism, food & beverage, electronics, software development, education and performing arts.</p> <p>Giulia works closely with stakeholders involving them directly into the design process in order to enable companies to build strong brands, develop meaningful products and services, and deliver value to market.</p><p>Her focus on maintaining quality and consistency across media taught her the importance of being able to wear several hats; brand strategist, content strategist, insight analyst, information architect, visual designer, art director.</p><p> While she is always happy to share her experience and lend advice to colleagues, she is continually trying to learn new things and build upon her current knowledge.</p>
   twitter: giuliamantuano 
   github: giuliamantuano 
+
+- id: liam 
+  name: Liam Griffin 
+  image: /assets/img/custom/team/liam.jpg
+  role: Apprentice
+  shortDescription: Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community movement and particularly loves the hands-on sessions. 
+  fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community movement and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p> 
+  twitter: gryffskin 
+  github: gryff 
+
+- id: sergio 
+  name: Sergio Rodrigo Royo
+  image: /assets/img/custom/team/sergio.jpg
+  role: Software Craftsman
+  shortDescription: Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.
+  fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
+  twitter: srodrigoDev 
+  github: srodrigo
