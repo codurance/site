@@ -18,16 +18,20 @@
     <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
         <div class="container">
             <ul class="nav navbar-nav">
-                {% navlink Services @ /services %}
+                {% navgroup Services %}
+                    {% navlink Software Creation @ /services/software-creation %}
+                    {% navlink Training @ /services/training %}
+                {% endnavgroup %}
                 {% navlink Videos @ /videos %}
                 {% navlink Blog @ /blog %}
-                {% navlink Work with us @ /work-with-us%}
                 {% navgroup About Us %}
                     {% navlink Our Team @ /aboutus/ourteam %}
                     {% navlink Our Company @ /aboutus/ourcompany %}
                     {% navlink Our Practices @ /aboutus/ourpractices %}
-                    {% navlink Contact @ /aboutus/contact %}
+                    {% navlink Our Community @ http://www.meetup.com/london-software-craftsmanship %}
                 {% endnavgroup %}
+                {% navlink Work with us @ /work-with-us %}
+                {% navlink Contact us @ /aboutus/contact %}
             </ul>
         </div><!--/end container-->
     </div><!--/navbar-collapse-->
