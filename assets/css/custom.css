@@ -321,7 +321,7 @@ body:last-child .btn-u, x:-moz-any-link {
  	-o-transition:all 0.2s ease-out;
  	transition:all 0.2s ease-out;
 }
-;
+
 .profile-window-grow:hover {
  	-webkit-transform:scale(1.03);
  	-moz-transform:scale(1.03);
@@ -403,6 +403,30 @@ body:last-child .btn-u, x:-moz-any-link {
 .services .service-descriptions .introduction {
 	margin: 20px 0px
 }
+
+/* Consultancy */
+.introduction .service-header {
+    color: #e67e22 !important;
+    font-size: 40px !important;
+}
+
+.margin-bottom-100 {
+    margon-bottom: 100px;
+}
+
+.orange {
+    color: #e67e22;
+}
+
+.scenario-lead-text {
+    font-family: 'Helvetica', serif;
+}
+
+.service-descriptions .funny-boxes {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 
 /* Case Studies */
 
