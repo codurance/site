@@ -20,13 +20,13 @@ As [the previous post](http://codurance.com/2016/04/28/async-systems-with-sync-c
 
 Akka is a toolkit and not a framework, you can simply use the bits that you need for your service. In this series we'll focus on the core features and we won't go through [Akka Streams](http://doc.akka.io/docs/akka/2.4.4/scala/stream/index.html), [Akka-Http](http://doc.akka.io/docs/akka/2.4.4/scala/http/index.html) or [Akka Cluster](http://doc.akka.io/docs/akka/2.4.4/common/cluster.html) (since they're out of scope, not because they're not fantastic).
 
-Akka provides a different abstraction to deal with concurrency, paralellism and fault-tolerance. That abstraction is called Actor Model. If you have experience with old Java ecosystem you will know how hard [writing safe and correct multithreaded code](http://codurance.com/2015/12/13/testing-multithreaded-code-in-java/) is. Providing a human-friendly abstractions like Actors it's a revolution similar to what Java did with memory management. New challenges derived from internet scale and cloud computing requires a reactive approach to programming. Akka aligns with that philosophy and enables you to implement [Event-driven architectures](https://www.wikiwand.com/en/Event-driven_architecture).
+Akka provides a different abstraction to deal with concurrency, paralellism and fault-tolerance. That abstraction is called Actor Model. If you have experience with the old Java ecosystem you will know how hard it is to [write safe and correct multithreaded code](http://codurance.com/2015/12/13/testing-multithreaded-code-in-java/). Providing human-friendly abstractions like Actors is a revolution comparable to Java's memory management at the time of introduction. New challenges derived from internet scale and cloud computing requires a reactive approach to programming. Akka aligns with that philosophy and enables you to implement [Event-driven architectures](https://www.wikiwand.com/en/Event-driven_architecture).
 
 ## Actors all the way
 
 Threads are an expensive resource, hence we need to use them judiciously. Blocking threads while we're waiting for some I/O operation to respond is really inefficient. Actors use threads in a different way, as a result of which they're pretty lightweight ([several million actors per GB of heap memory](http://doc.akka.io/docs/akka/2.4.4/intro/what-is-akka.html))
 
-Actors are a good blend of Object Oriented and Functional Programming principles. OOP is basically about messages as Alan Kay [stated](http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html)
+Actors are a good blend of Object Oriented and Functional Programming principles. OOP is basically about messages as Alan Kay, one of the pioneers of OOP, [stated](http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html)
 
 > I'm sorry that I long ago coined the term "objects" for this topic because it gets many people to focus on the lesser idea. The big idea is "messaging".
 
