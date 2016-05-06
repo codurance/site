@@ -10,7 +10,7 @@ if ! [[ "$TRAVIS_PULL_REQUEST" == 'false' ]]; then
 	echo "Sending to imgur"
 	SCREENSHOT_URL=`_utility/imgurbash.sh blog.png`
 	SCREENSHOT_URL_HTTPS=${SCREENSHOT_URL//http:\/\//https:\/\/}
-	
+
 	echo "Updating commit status with screenshot at $SCREENSHOT_URL_HTTPS"
-	curl -H "Authorization: token $GITHUB_TOKEN" -X POST https://api.github.com/repos/codurance/site/statuses/$TRAVIS_COMMIT -d '{"state":"success","target_url":"$SCREENSHOT_URL_HTTPS","description":"Screenshot of the blog page","context":"continuous-integration/screenshot"}'
+	curl -H "Authorization: token $GITHUB_TOKEN" -X POST https://api.github.com/repos/codurance/site/statuses/$TRAVIS_COMMIT -d "{\"state\":\"success\",\"target_url\":\"$SCREENSHOT_URL_HTTPS\",\"description\":\"Screenshot of the blog page\",\"context\":\"continuous-integration/screenshot\"}"
 fi
