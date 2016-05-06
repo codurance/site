@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo $TRAVIS_COMMIT_RANGE
+echo $TRAVIS_COMMIT
+
 if ! [[ "$TRAVIS_PULL_REQUEST" == 'false' ]]; then
 	echo "Starting Jekyll to take screenshots"
 	bundle exec jekyll serve --no-watch --detach
