@@ -7,8 +7,8 @@ author: Pedro Santos
 image:
    src: /assets/img/custom/blog/envy.jpg
    attribution:
-     text: 1902-1903. Transitioned to full-size illustration, when postal regulations permitted address and message together on reverse.
-     href: https://commons.wikimedia.org/wiki/Category:Envy#/media/File:Envy_(NYPL_b12647398-63062).tiff
+     text: Envy by John Goode.
+     href: https://www.flickr.com/photos/johnnieb/167721436
 tags:
 - C#
 - OOP
