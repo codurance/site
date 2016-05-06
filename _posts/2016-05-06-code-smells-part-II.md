@@ -200,6 +200,7 @@ public class Employee
 }
 ```
 
+
 #### Temporary Field
 
 This case occurs when we are calculating some big algorithm that needs several input variables. Creating these fields in the class has no value most of the times because they are just used for this specific calculation. And this can be dangerous too because you have to be sure you reinitialize them before you start the next computation. 
