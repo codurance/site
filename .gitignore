@@ -1,5 +1,6 @@
 # Jekyll
 _site
+.bundle
 
 # Numerous always-ignore extensions
 *.diff
