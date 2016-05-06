@@ -2,6 +2,7 @@ language: ruby
 cache: bundler
 script:
 - bundle exec rake
+- _utility/screenshots.sh
 - _utility/publish.sh
 env:
   global:
