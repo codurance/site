@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-if [ $TRAVIS_PULL_REQUEST = "true" ]
-then
+if ! [[ "$TRAVIS_PULL_REQUEST" == 'false']]; then
 	echo "Starting Jekyll to take screenshots"
 	bundle exec jekyll serve --no-watch --detach
 
