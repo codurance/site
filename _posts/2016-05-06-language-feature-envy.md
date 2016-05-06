@@ -15,7 +15,6 @@ tags:
 
 ---
 
-#Language feature envy
 
 In my day job I mainly write C# code. On my own I like to try other languages like Swift, F#, Clojure, Objective C or Java. I learn a lot from writing code in different languages. When I go back to C# I often miss some of the features C# does not have. By far what I miss the most is Java/Swift enums. It happens quite frequently that I need to express a few finite number of instances of a type. The [Java planets](http://snipplr.com/view/42422/the-planet-enum-example/) example illustrates this quite effectively.
 
@@ -86,12 +85,15 @@ public class Note
 It's not too bad, but not exactly the same as in Java or Swift.
 
 There is a feature in Java enums that I still miss for my note implementation in C#, the ordinal method:
+
 ```java
 public final int ordinal()
 ```
+
 This according to the Java documentation "Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero)".
 
 If I want to emulate this behaviour in C# I can do something like:
+
 ```csharp
 public static IEnumerable<Note> Notes
 {
@@ -110,10 +112,13 @@ public static IEnumerable<Note> Notes
     }
 }
 ```
+
 Now I can access Note instances using an indexer with code like this:
+
 ```csharp
 Note.Notes.ElementAt(indexForNote);
 ```
+
 Again not ideal but not terrible either. But notice that we are adding up workarounds, all small but it adds up.
 
 We are getting close to emulate Java/Swift enums in C#. The next step is to emulate the "singleton" aspect of each instance of the enum. In the current implementation the following line is false in C#:
