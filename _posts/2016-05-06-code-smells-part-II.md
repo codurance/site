@@ -2,7 +2,7 @@
 layout: post
 name: code-smells-part-one
 title: Code Smells – Part II
-date: 2016-05-06 12:10:00 +00:00
+date: 2016-05-07 12:10:00 +00:00
 author: Ana Nogal
 canonical:
     name: my personal blog
@@ -19,7 +19,7 @@ tags:
 - refactoring
 
 ---
-In the last post, [Code Smells - Part I](http://www.ananogal.com/blog/code-smells-part-one),  I talked about the bloaters: they are code smells that can be identified as Long Methods, Large Classes, Primitive Obsessions, Long Parameter List and Data Clumps. In this one, I would like to dig into the **Object-Orientation Abusers** and the **Change Preventers**. 
+In the last post, [Code Smells - Part I](http://codurance.com/2016/03/17/code-smells-part-I/),  I talked about the bloaters: they are code smells that can be identified as Long Methods, Large Classes, Primitive Obsessions, Long Parameter List and Data Clumps. In this one, I would like to dig into the **Object-Orientation Abusers** and the **Change Preventers**. 
 
 ## Object-Orientation Abusers
 
@@ -249,4 +249,4 @@ Here you can: first, make one of the hierarchy refer to instances of another hie
 
 In the case of **_Object-Orientation Abusers_** and **_Change Preventers_**, I think that they are simpler to avoid if you know how to apply a good design to your code. And that comes with a lot of practice. 
 Today I've talked about a few refactoring techniques, but there are a lot more. You can find a good reference to all of then in [Refactoring.com](http://refactoring.com/catalog/).
-And as I said in the [first part of this series](http://www.ananogal.com/blog/code-smells-part-one), code smells can't always be removed. Study each case and decide: remember that is always a trade off.
+And as I said in the [first part of this series](http://codurance.com/2016/03/17/code-smells-part-I/), code smells can't always be removed. Study each case and decide: remember that is always a trade off.
