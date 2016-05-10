@@ -93,19 +93,19 @@ It all looks ok. But what happen if you need to calculate the year bonus? You wi
 
 ```
 public float CalculateYearBonus()  
-    {     
-    	switch (employeeType)      
-    	{         
-    		case EmployeeType.Worker:             
-    			return 0;          
-    		case EmployeeType.Supervisor:             
-    			return salary + salary * 0.7F;         
-    		case EmployeeType.Manager:             
-    			return salary + salary * 1.0F;	     
-    	}
+{     
+	switch (employeeType)      
+	{         
+		case EmployeeType.Worker:             
+			return 0;          
+		case EmployeeType.Supervisor:             
+			return salary + salary * 0.7F;         
+		case EmployeeType.Manager:             
+			return salary + salary * 1.0F;	     
+	}
 
-    	return 0.0F;
-	} 
+	return 0.0F;
+} 
 ```
 
 See the repetition of the switch? So let's try first the subclass approach: Here is the superclass:
@@ -117,7 +117,7 @@ abstract public class Employee 
 	  protected float salary;     
 	protected float bonusPercentage;      
 
-	public EmployeeFinal(float salary, float bonusPercentage)     
+	public Employee(float salary, float bonusPercentage)     
 	{         
 		this.salary = salary;         
 		this.bonusPercentage = bonusPercentage;     
@@ -136,7 +136,7 @@ And here we have the subclasses:
 
 ```
 public class Worker: Employee  
-{    two
+{ 
 
 	public Worker(float salary, float bonusPercentage)   
 		: base(salary, bonusPercentage)  
