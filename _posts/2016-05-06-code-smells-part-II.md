@@ -28,17 +28,20 @@ This type of code smell usually happens when object-oriented principles are inco
 
 #### Switch Statements
 
-This case is simple to identify: we have a switch case. But you should consider it a smell too if you find a sequence of ifs. (that's a switch case in disguise).
+This case is simple to identify: we have a switch case. But you should consider it a smell too if you find a sequence of ifs. (That's a switch case in disguise.)
+
 Why are switch statements bad? Because when a new condition is added, you have to find every occurrence of that switch case. 
-So while talking to [David](https://twitter.com/DHatanian), he asked me: and what happens if I encapsulate the switch into a method, is it acceptable then? That's really a good question... If your switch case is only used to "take care" of one behaviour and that's it, then it might be ok. Remember identifying a code smell doesn't mean that you have to get always ride of it: it's a trade off. If you find your switch statement replicated and each replication has  different behaviour, then you cannot simply isolate the switch statement in a method. You need to find a proper "home" for it to be in. As a rule of thumb, you should think of polymorphism when you find yourself in this situation. There are two refactoring techniques that we can apply here: 
+
+So while talking to [David](https://twitter.com/DHatanian), he asked me: and what happens if I encapsulate the switch into a method, is it acceptable then? That's really a good question... If your switch case is only used to "take care" of one behaviour and that's it, then it might be ok. Remember identifying a code smell doesn't mean that you have to get always rid of it: it's a trade off. If you find your switch statement replicated and each replication has  different behaviour, then you cannot simply isolate the switch statement in a method. You need to find a proper "home" for it to be in. As a rule of thumb, you should think of polymorphism when you find yourself in this situation. There are two refactoring techniques that we can apply here: 
 
  - **_Replace Type Code with Subclasses_**
    This technique consists of creating subclasses for each switch case and applying the respective behaviour to these subclasses.
  - **_Replace Type Code With Strategy_**
    Similar to the above one, in this case, you should make use of one of the patterns: [State](https://en.wikipedia.org/wiki/State_pattern) or [Strategy](https://en.wikipedia.org/wiki/Strategy_pattern).
 
-So when to use one or the other? If the **_Type Code_** does not change the behaviour of a class you can use the **_Subclasses_** technique. Separating each behaviour into its appropriate subclass will enforce the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and make the code more readable in general. If you need to add another case, you just add a new class to your code without having to modify any other code. So you apply the [Open/Close Principle](https://en.wikipedia.org/wiki/Open/closed_principle).
-You should use the Strategy approach when the **_Type Code_** affects the behaviour of your classes. If you're changing the state of the class, fields and many other actions then you should use the [State Pattern](https://en.wikipedia.org/wiki/State_pattern). if it only affects how you select a behaviour of the class then the [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) is a better choice.
+So when to use one or the other? If the **_Type Code_** does not change the behaviour of a class you can use the **_Subclasses_** technique. Separating each behaviour into its appropriate subclass will enforce the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and make the code more readable in general. If you need to add another case, you just add a new class to your code without having to modify any other code. So you apply the [Open/Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle).
+
+You should use the Strategy approach when the **_Type Code_** affects the behaviour of your classes. If you're changing the state of the class, fields and many other actions then you should use the [State Pattern](https://en.wikipedia.org/wiki/State_pattern). If it only affects how you select a behaviour of the class then the [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) is a better choice.
 
 Hmm... It's a little confusing, no? So let's try with an example.
 
@@ -164,10 +167,10 @@ public class Supervisor : Employee 
  }
 ```
 
-With the Strategy approach we would create an interface for calculating the retribution:
+With the Strategy approach we would create an interface for calculating the remuneration:
 
 ```
-public interface IRetributionCalculator  	
+public interface IRemunerationCalculator  	
 { 		
 	float CalculateSalary(float salary); 		
 	float CalculateYearBonus(float salary); 	
@@ -180,22 +183,22 @@ With the interface in place, we can now pass to the employee any class that conf
 public class Employee
 {     
 	private float salary;     
-	private IRetributionCalculator retributionCalculator;      
+	private IRemunerationCalculator remunerationCalculator;      
 
-	public Employee(float salary, IRetributionCalculator retributionCalculator)     
+	public Employee(float salary, IRemunerationCalculator remunerationCalculator)     
 	{
         this.salary = salary;         
-        this.retributionCalculator = retributionCalculator;     
+        this.remunerationCalculator = remunerationCalculator;     
     }      
 
     public float CalculateSalary()     
     {         
-    	return retributionCalculator.CalculateSalary(salary);     
+    	return remunerationCalculator.CalculateSalary(salary);     
     } 			     
 
     public float CalculateYearBonus()      
     {         
-    	return retributionCalculator.CalculateYearBonus(salary);     
+    	return remunerationCalculator.CalculateYearBonus(salary);     
     }
 }
 ```
@@ -203,13 +206,14 @@ public class Employee
 
 #### Temporary Field
 
-This case occurs when we are calculating some big algorithm that needs several input variables. Creating these fields in the class has no value most of the times because they are just used for this specific calculation. And this can be dangerous too because you have to be sure you reinitialize them before you start the next computation. 
+This case occurs when we are calculating a big algorithm that needs several input variables. Creating these fields in the class has no value most of the time because they are just used for this specific calculation. And this can be dangerous too because you have to be sure you reinitialize them before you start the next computation.
+
 Here the best refactoring technique is to use **_Replace Method with Method Object_**, which will extract the method into a separate class. Then you can split the method into several methods within the same class. 
 
 
 #### Refused Bequest
 
-This code smell is a little tricky to detect because this happens when a subclass doesn't use all the behaviours of its parent class. So it's as if the subclass "refuses" some behaviours("bequest") of its parent class. 
+This code smell is a little tricky to detect because this happens when a subclass doesn't use all the behaviours of its parent class. So it's as if the subclass "refuses" some behaviours ("bequest") of its parent class. 
 
 In this case, if it makes no sense to continue to use inheritance, the best refactoring technique is to change to **_Delegation_**: we can get rid of the inheritance by creating a field of the parent's classes type in our subclass. This way every time you need the methods from the parent class you just delegate them to this new object.
 
@@ -229,24 +233,29 @@ Oh boy! This kind of code smells are the ones you really want to avoid. These ar
 
 #### Divergent Change
 
-This is the case when you find yourself changing the same class for several different reasons. This means that you are violating [Single Responsibility Principle](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) (which has to do with separation of concerns).
+This is the case when you find yourself changing the same class for several different reasons. This means that you are violating the [Single Responsibility Principle](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design) (which has to do with separation of concerns).
+
 The refactoring technique applied here is **_Extract Class_** since you want to extract the different behaviours into different classes.
 
 #### Shotgun Surgery
 
 This means that when you make a small change in a class, you have to go and change several classes at the same time. 
+
 Even though it seems the same as the **_Divergent Change_** smell, in reality, they are opposite of each other: **_Divergent Change_** is when many changes are made to a single class. **_Shotgun Surgery_** refers to when a single change is made to multiple classes simultaneously.
 
-Here the refactoring technique to apply is **_Move Method_** and/or **_Move Field_**. This will permit you to move the duplicated methods or fields to a common class. If that class doesn't exist create a new one. In the case of original class stays almost empty, maybe you should think if this class is redundant, and if so, get rid of it by using the **_Inline Class_**: move the remaining methods/fields to one of the new classes created. This all depends on if the original class doesn't have any responsibility anymore.  
+Here the refactoring technique to apply is **_Move Method_** and/or **_Move Field_**. This will permit you to move the duplicated methods or fields to a common class. If that class doesn't exist, create a new one. In the case where the original class stays almost empty, maybe you should think if this class is redundant, and if so, get rid of it by using **_Inline Class_**: move the remaining methods/fields to one of the new classes created. This all depends on whether the original class still has any responsibilities. 
 
 #### Parallel Inheritance Hierarchies
 
 This case is when you find yourself creating a new subclass for class B because you add a subclass to class A. 
+
 Here you can: first, make one of the hierarchy refer to instances of another hierarchy. After this first step you can then use **_Move Method_** and **_Move Field_** to remove the hierarchy in the referred class. You can apply here the [Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) too.
 
 
 ### Conclusion
 
 In the case of **_Object-Orientation Abusers_** and **_Change Preventers_**, I think that they are simpler to avoid if you know how to apply a good design to your code. And that comes with a lot of practice. 
+
 Today I've talked about a few refactoring techniques, but there are a lot more. You can find a good reference to all of then in [Refactoring.com](http://refactoring.com/catalog/).
-And as I said in the [first part of this series](http://codurance.com/2016/03/17/code-smells-part-I/), code smells can't always be removed. Study each case and decide: remember that is always a trade off.
+
+And as I said in the [first part of this series](http://codurance.com/2016/03/17/code-smells-part-I/), code smells can't always be removed. Study each case and decide: remember there is always a trade off.
