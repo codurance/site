@@ -16,7 +16,7 @@ AWS Lambda is a compute service from Amazon. It makes deployment and provisionin
 
 The programming model for the lambdas consists of **Handler, Context Object, Logging and Exceptions**. These are described [here](http://docs.aws.amazon.com/lambda/latest/dg/programming-model-v2.html). Lambda must not hold state because they are brought up and down and replicated as needed. Persistent state should be stored in a service that is outside the lifecycle of the lambda such as Amazon DynamoDB, S3 etc.
 
-First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down you account id. 
+First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down your account id. 
 
 ### Step 1: The Code
 The most basic lambda will look like the following in Python:
@@ -26,7 +26,7 @@ def lambda_handler(event, context):
   return "Hello World!"
 ```
 
-or like the following in Java.
+or like the following in Java:
 
 ```java
 package example;
