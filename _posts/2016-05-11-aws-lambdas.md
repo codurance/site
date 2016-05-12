@@ -48,7 +48,7 @@ Paste the above Python code in a file called ```helloworld.py```. If you want to
 ### Step 2: The Role
 Create a ```trust.json``` file . The trust allows our function to assume the [role](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) of an AWS Lambda. 
 
-In ```trust.json``` we are allowing the function to assume the role of  a ```lambda.amazonaws.com``` service.
+In ```trust.json``` we are allowing the function to assume the role of  a ```lambda.amazonaws.com``` service, otherwise the infra will not allow our function to run.
 
 ```json
 {
