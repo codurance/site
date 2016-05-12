@@ -13,33 +13,34 @@ tags:
 - akka
 - state
 - fsm
+- actors
 
 ---
 
-Let's start with the architectural diagram contained in [the first post of the series.](http://codurance.com/2016/04/28/async-systems-with-sync-clients)
+As you could remember from previous posts, [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) and  [Part 2](http://codurance.com/2016/04/30/akka-basics/), we're implementing a solution that integrates a sync client with an async system. Today we'll see how to keep track of the async operations so we can provide a sync response to the client. Let's start with the architectural diagram.
 
 <img src="/assets/img/custom/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
 
-We can understand the system through an example. The police sends us a request to delete an illegal item, and it expects a response in 10 seconds. Relevant status, for this example, are:
+We can understand the system through an example. The police sends us a request to delete an illegal item, and it expects a response in 10 seconds. Relevant statuses, for this example, are:
 
-* 200: the item has been successfully deleted in every container that it was published.
+* 200: the item has been successfully deleted in every container that it was published in.
 * 404: the item doesn't exist in our system.
 * 504: timeout trying to delete the item.
 
-Law enforcement service communicates with Items service asynchronously using [Kafka](http://kafka.apache.org/). That means that we need to subscribe to a [topic](http://kafka.apache.org/documentation.html#intro_topics) called `item_deleted`. To add complexity to the system, we need to handle some multiplexing as the item could be published in different containers as the personal timeline or different groups. There is some internal state to keep inside of the lifecycle of a single request. Let's define what we mean with state, before of getting into the details of our solution.
+Law enforcement service communicates with the Items service asynchronously using [Kafka](http://kafka.apache.org/). That means that we need to subscribe to a [topic](http://kafka.apache.org/documentation.html#intro_topics) called `item_deleted`. To add complexity to the system, we need to handle some multiplexing as the item could be published in different containers as the personal timeline or different groups. Let's define what we mean with state, before getting into the details of our solution.
 
 ## Defining State
 
-State is the ability to keep track of what happened in our system. A pure stateless application would be a pure function that doesn't have any side effect. It receives an input, transform it following some rules and return an output. Those stateless applications are not very useful in a business context. Business and users want to know what happened in the past, so they can take informed decisions.
+State is the ability to keep track of what happened in our system. A pure stateless application would be a pure function that doesn't have any side effect. It receives an input, transforms it following some rules and returns an output. Such stateless applications are not very useful in a business context. Business and users want to know what happened in the past, so they can make informed decisions.
 
 We don't need to keep the state in our application server, though. State is often stored in datastores or in clients. One canonical example is session management in a http-based application. Http is a stateless protocol meaning that to keep state between the requests, we'll need to do it ourselves, without help from the protocol.
 
 Sticky sessions was a popular solution some years ago. State is stored in server's memory, so clients need to keep track of which server has been assigned to them. This solution has several problems:
 
-* Fault tolerance: if the server crashes the session is lost. User experience is really bad.
+* Fault tolerance: if the server crashes the session is lost. The user experience in such cases is really bad.
 * Scalability: if some server is overwhelmed we can't easily scale out, as some users are tied to that particular server until the end of the session. Replicating sessions between servers is pretty complex.
 
-A different approach is keeping the session in cookies in the client and/or in some datastore like [Redis](http://redis.io/). Thanks to that we keep our servers stateless, facilitating load balancers to distribute requests efficiently.
+A different approach is keeping the session in cookies on the client and/or in some datastore like [Redis](http://redis.io/). Thanks to that we keep our servers stateless, facilitating load balancers to distribute requests efficiently.
 
 This example goes through state between requests, but we could have state inside a single request. Let's see how OOP handles state.
 
@@ -85,19 +86,19 @@ In our example:
 
 *State(positive balance) x Event(significative withdrawal) -> Actions (update balance, withdrawal, and notify account holder), State(negative balance)*
 
-Meanwhile in negative balance state we could define different rules, as how many times we'll allow overdraft.
+Meanwhile in a negative balance state we could define different rules, as how many times we'll allow the overdraft operation.
 
 ## Finite State Machines in Akka
 
-Coming back to our original example, Law enforcement service will contain multiple instances of ItemCensor actor.
+Coming back to our original example, the Law enforcement service will contain multiple instances of ItemCensor actor.
 
 ```scala
   class ItemCensor extends Actor with FSM[State, Data]
 ```
 
-In order to keep the example easy to understand, we'll model only two possible states. Simple FSMs are well designed using [become/unbecome](http://doc.akka.io/docs/akka/current/scala/actors.html#Become_Unbecome) functionality.
+In order to keep the example easy to understand, we'll model only two possible states. Simple FSMs are well designed using the [become/unbecome](http://doc.akka.io/docs/akka/current/scala/actors.html#Become_Unbecome) functionality.
 
-It's important to note the difference between State and Data. You could think on State as the labels of the visual representation of your FSM. The Data is local to every state.
+It's important to note the difference between State and Data. You could think of State as the labels of the visual representation of your FSM. The Data is local to every state.
 
 ```scala
 sealed trait State
