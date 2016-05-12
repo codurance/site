@@ -14,9 +14,9 @@ tags:
 
 AWS Lambda is a compute service from Amazon. It makes deployment and provisioning very simple and fits very well with microservices based architecture. You can find out more about AWS Lambda [here](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html). Currently supported platforms are JVM, Node JS and Python. 
 
-The programming model for AWS Lambda consists of **Handler, Context Object, Logging and Exceptions**. These are described [here](http://docs.aws.amazon.com/lambda/latest/dg/programming-model-v2.html). An instance of AWS Lambda must not hold state because it will be stopped, started and replicated as needed. Persistent state should be stored in a service that is outside the lifecycle of the lambda such as Amazon DynamoDB, S3 etc.
+The programming model for the lambdas consists of **Handler, Context Object, Logging and Exceptions**. These are described [here](http://docs.aws.amazon.com/lambda/latest/dg/programming-model-v2.html). Lambda must not hold state because they are brought up and down and replicated as needed. Persistent state should be stored in a service that is outside the lifecycle of the lambda such as Amazon DynamoDB, S3 etc.
 
-First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down your account id. 
+First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down you account id. 
 
 ### Step 1: The Code
 The most basic lambda will look like the following in Python:
@@ -26,7 +26,7 @@ def lambda_handler(event, context):
   return "Hello World!"
 ```
 
-or like the following in Java:
+or like the following in Java.
 
 ```java
 package example;
@@ -48,7 +48,7 @@ Paste the above Python code in a file called ```helloworld.py```. If you want to
 ### Step 2: The Role
 Create a ```trust.json``` file . The trust allows our function to assume the [role](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) of an AWS Lambda. 
 
-In ```trust.json``` we are allowing the function to assume the role of a ```lambda.amazonaws.com``` service.
+In ```trust.json``` we are allowing the function to assume the role of  a ```lambda.amazonaws.com``` service.
 
 ```json
 {
@@ -124,7 +124,7 @@ aws lambda create-function \
   --zip-file fileb://${package_file}
 ```
 
-Make the script executable ```chmod +x deploy.sh``` and deploy your lambda ```./deploy.sh```. You may get the following error: "The role defined for the function cannot be assumed by Lambda." This is because the role has not been replicated through in the Amazon infra. Just run the deploy script again. It will complain that the role already exists but this time the lambda creation should pass. In the future we will look at a staus check to make sure that the role has been fully created before we deploy the function.
+Make the script executable ```chmod +x deploy.sh``` and deploy your lambda ```./deploy.sh```. You may get the following error: "The role defined for the function cannot be assumed by Lambda." This is because the role has not been replicated through in the Amazon infra. Just run the deploy script again. It will complain that the role already exists but this time the lambda creation should pass. In the future we will look at a status check to make sure that the role has been fully created before we deploy the function.
 
 ### Step 5: The Execution!
 
