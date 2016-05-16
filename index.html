@@ -9,6 +9,39 @@ layout: default
         </div>
     </div>
 </div>
+<!-- Activity panel -->
+<div class="section">
+    <div class="container">
+        <div class="title-header">
+            <h2>Latest Blogs</h2>
+        </div>
+        <div class="row blog-boxes margin-bottom-40">
+            {% for post in site.posts limit:3 %}
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="blog-box homepage-blog-thumb">
+                        {% if post.image.src %}
+                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+                        {% else %}
+                            <img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ post.title }}" alt="{{ post.title }}">
+                        {% endif %}
+                        <div class="blog-content">
+                            <h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
+                            <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                        </div>
+                        <ul class="list-inline blog-box-info">
+                            <li><span>By</span> {{ post.author | author_links }}</li>
+                            <li>|</li>
+                            <li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <a href="/blog" class="btn-u btn-block">View all blog posts...</a>
+        </div>
+    </div>
+</div>
 <!-- Services panel -->
 <div class="section gray-section">
     <div class="container container-space">
@@ -157,36 +190,24 @@ layout: default
         </div>
     </div>
 </div>
-<!-- Activity panel -->
+<!-- Sponsoring panel -->
 <div class="section">
     <div class="container">
-        <div class="title-header">
-            <h2>Latest Blogs</h2>
-        </div>
-        <div class="row blog-boxes margin-bottom-40">
-            {% for post in site.posts limit:3 %}
-                <div class="col-md-4 md-margin-bottom-40">
-                    <div class="blog-box homepage-blog-thumb">
-                        {% if post.image.src %}
-                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
-                        {% else %}
-                            <img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ post.title }}" alt="{{ post.title }}">
-                        {% endif %}
-                        <div class="blog-content">
-                            <h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
-                            <p>{{ post.content | strip_html | truncatewords:30 }}</p>
-                        </div>
-                        <ul class="list-inline blog-box-info">
-                            <li><span>By</span> {{ post.author | author_links }}</li>
-                            <li>|</li>
-                            <li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
-                        </ul>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="col-md-4 col-md-offset-4">
-            <a href="/blog" class="btn-u btn-block">View all blog posts...</a>
-        </div>
+	<div class="col-md-4 col-md-offset-1 margin-top-50">
+	    <h2>We are proud organisers of</h2>
+	</div>
+	<a href="http://www.londonswcraft.com">
+	    <div class="col-md-2">
+		<img class="img-responsive" src="/assets/img/custom/home/london-software-craftsmanship-community-logo.png">
+	    </div>
+	    <div class="col-md-2 margin-top-50 margin-left-minus-15">
+		<p>London Software <br/>Craftsmanship Community</p>
+	    </div>
+	</a>
+	<div class="col-md-2 col-md-offset-1">
+	    <a href="http://socratesuk.org">
+		<img class="img-responsive" src="/assets/img/custom/home/socrates-uk-logo.png">
+	    </a>
+	</div>
     </div>
 </div>

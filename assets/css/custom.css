@@ -539,3 +539,10 @@ body:last-child .btn-u, x:-moz-any-link {
 	display: block; 
 	margin: 0 auto;
 }
+/* Sponsoring section */
+.margin-left-minus-15 {
+    margin-left: -15px;
+}
+.margin-top-50 {
+    margin-top: 50px;
+}
