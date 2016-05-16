@@ -267,7 +267,7 @@ object BowlingFullScoreCalculator {
 
 See on [Sandro's GitHub](https://github.com/sandromancuso/bowling_kata_scala)
 
-## Fun and passion
+## Fun, passion, and respect
 
 Having fun at work, be surrounded by passionate and talented craftsmen, the respect we have for each other, and the willingness to learn and share, are some of the things I love the most about the Codurance’s culture. What started as apprentices practicing with a kata transformed into a great way to learn and share knowledge among craftsmen and apprentices. Some of our craftsmen and apprentices are also working on their solutions in Kotlin, Haskell, Java, and C#.
 
