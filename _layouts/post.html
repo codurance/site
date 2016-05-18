@@ -128,12 +128,12 @@ group:
                   <a href="{{ postUrl }}">
                     <img class="rounded-x" src="{{ postImageUrl }}" alt=""></img>
                   </a>
-                  <a class="hover-grad" href="blog_single.html">
+                  <a class="hover-grad" href="{{ postUrl }}">
                     <i class="fa fa-hand-spock-o"></i>
                   </a>
                 </div>
                 <div class="blog-thumb-desc">
-                  <h3><a href="{{ postUrl }}">{{ postTitle }}</a></h3> 
+                  <h3><a href="{{ postUrl }}">{{ postTitle }}</a></h3>
                   <ul class="blog-thumb-info">
                     <li>
                       {{ author }}
@@ -154,7 +154,7 @@ group:
               <a href="{{ post.url }}">
                 <img class="rounded-x" src="{{ post.image.src }}" alt=""></img>
               </a>
-              <a class="hover-grad" href="blog_single.html">
+              <a class="hover-grad" href="{{ post.url }}">
                 <i class="fa fa-hand-spock-o"></i>
               </a>
             </div>
