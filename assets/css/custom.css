@@ -539,3 +539,27 @@ body:last-child .btn-u, x:-moz-any-link {
 	display: block; 
 	margin: 0 auto;
 }
+
+/* Sponsoring section */
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.lscc-title {
+    margin-left:-50px;
+    margin-top:30px;
+}
+.sponsoring-img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media (max-width: 992px) {
+    .lscc-title {
+	margin-top:0px;
+	margin-bottom:20px;
+	margin-left:0px;
+	text-align:center;
+    }
+}
