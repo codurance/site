@@ -187,3 +187,12 @@
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
   twitter: srodrigoDev 
   github: srodrigo
+
+- id: hkoundi
+  name: Halima Koundi
+  image: /assets/img/custom/team/halima_koundi.jpg
+  role: Apprentice
+  shortDescription: During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.
+  fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance for an apprenticeship, Halima is leveling up her engineering skills and embracing the values of software craftsmanship, seeking to become a skilled professional that delivers value building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing more diversity to the tech community.</p>
+  twitter: hkoundi
+  github: halimakoundi
