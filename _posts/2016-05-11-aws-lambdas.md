@@ -10,13 +10,14 @@ tags:
 - microservices 
 - devops 
 - aws
+- serverless
 ---
 
 AWS Lambda is a compute service from Amazon. It makes deployment and provisioning very simple and fits very well with microservices based architecture. You can find out more about AWS Lambda [here](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html). Currently supported platforms are JVM, Node JS and Python. 
 
 The programming model for the lambdas consists of **Handler, Context Object, Logging and Exceptions**. These are described [here](http://docs.aws.amazon.com/lambda/latest/dg/programming-model-v2.html). Lambda must not hold state because they are brought up and down and replicated as needed. Persistent state should be stored in a service that is outside the lifecycle of the lambda such as Amazon DynamoDB, S3 etc.
 
-First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down your account id. 
+First of all follow the instructions [here](http://docs.aws.amazon.com/lambda/latest/dg/setup.html) to setup an AWS Account and AWS Command-line Interface and note down your account id. You'll need to add billing information to your account even though this exercise will not incur charges.
 
 ### Step 1: The Code
 The most basic lambda will look like the following in Python:
