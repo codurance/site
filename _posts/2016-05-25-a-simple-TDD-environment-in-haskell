@@ -5,7 +5,7 @@ title: A simple TDD environment in Haskell
 date: 2016-05-25 00:01:00 +00:00
 author: Liam Griffin
 image:
-    src:
+    src: /assets/img/custom/blog/2016-05-25-haskell.svg
 tags:
 - tdd
 - haskell
