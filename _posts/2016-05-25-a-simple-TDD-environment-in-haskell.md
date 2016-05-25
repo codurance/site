@@ -1,6 +1,6 @@
 ---
-layout:post
-name: simple-TDD-environment-haskell
+layout: post
+name: simple-tdd-environment-haskell
 title: A simple TDD environment in Haskell
 date: 2016-05-25 00:01:00 +00:00
 author: Liam Griffin
@@ -11,14 +11,14 @@ tags:
 - haskell
 ---
 
-A simple TDD environment in Haskell I recently tried the bowling kata in Haskell ([finished implementation here](https://github.com/Gryff/bowling-kata)), which caused me to find out how set up my environment to comfortably do TDD. Hopefully others might find this helpful to begin their journey with the language. Here’s what I used:
+I recently tried the bowling kata in Haskell ([finished implementation here](https://github.com/Gryff/bowling-kata)), which caused me to find out how set up my environment to comfortably do TDD. Hopefully others might find this helpful to begin their journey with the language. Here’s what I used:
 
-Haskell installation: [Haskell Platform](https://www.haskell.org/platform/). This also gives you GHCi which you can use as a REPL and type inspector.
-IDE: Any editor would suffice, but I used [Visual Studio Code](https://code.visualstudio.com/) as they have an extension for Haskell that gave me some basic intellisense features.
-Test libraries: [Hspec](http://hspec.github.io/) (can be installed from the command line with ```cabal install hspec```).
-Helper libraries: Printf for colourful command line output.
+- Haskell installation: [Haskell Platform](https://www.haskell.org/platform/). This also gives you GHCi which you can use as a REPL and type inspector.
+- IDE: Any editor would suffice, but I used [Visual Studio Code](https://code.visualstudio.com/) as they have an extension for Haskell that gave me some basic intellisense features.
+- Test libraries: [Hspec](http://hspec.github.io/) (can be installed from the command line with ```cabal install hspec```).
+- Helper libraries: Printf for colourful command line output.
 
-vUsing an example from some [Codewars](http://www.codewars.com/)’ Haskell tests, I began with this structure for my code:
+Using an example from some [Codewars](http://www.codewars.com/)’ Haskell tests, I began with this structure for my code:
 
 BowlingTests.hs
 
@@ -40,7 +40,8 @@ main = hspec $ do
     testScoreGame "--------------------" 0
 ```
 
-So to test a function, you add a function in your test file, usually the same name with a ‘test’ prefix, which takes as parameters the input to the scoreGame and the expected output. Then using Hspec, which is based on Rspec, you describe what you are testing. As you can see the ‘it’ part is written in the test function. You can of course omit this helper function and write all your tests under ‘main = hspec $ do’, which may be nicer if you want to describe in more detail what each individual test is testing.
+
+So to test a function you add a function in your test file, usually the same name with a ‘test’ prefix, which takes as parameters the inputs to your function under test and the expected output. Then using Hspec, which is based on Rspec, you describe what you are testing. As you can see the ‘it’ part is written in the test function. You can of course omit this helper function and write all your tests under ```main = hspec $ do```, which may be nicer if you want to describe in more detail what each individual test is testing.
 
 Bowling.hs
 
@@ -50,6 +51,7 @@ module Bowling where
 scoreGame :: String -> Int 
 scoreGame game = 0
 ```
+
 
 These files are in the same directory, now I can run my tests from the command line.
 
