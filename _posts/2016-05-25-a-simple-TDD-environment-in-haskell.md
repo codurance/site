@@ -11,14 +11,14 @@ tags:
 - haskell
 ---
 
-I recently tried the bowling kata in Haskell ([finished implementation here](https://github.com/Gryff/bowling-kata)), which caused me to find out how set up my environment to comfortably do TDD. Hopefully others might find this helpful to begin their journey with the language. Here’s what I used:
+I recently implemented the [bowling kata in Haskell](https://github.com/Gryff/bowling-kata). In the process, I found out how set up my environment to comfortably do Test Driven Development. Hopefully, others might find this post helpful to begin their journey with the language. I used the following components:
 
-- Haskell installation: [Haskell Platform](https://www.haskell.org/platform/). This also gives you GHCi which you can use as a REPL and type inspector.
-- IDE: Any editor would suffice, but I used [Visual Studio Code](https://code.visualstudio.com/) as they have an extension for Haskell that gave me some basic intellisense features.
-- Test libraries: [Hspec](http://hspec.github.io/) (can be installed from the command line with ```cabal install hspec```).
+- Haskell installation: [Haskell Platform](https://www.haskell.org/platform/). This also gives you GHCi which you can use as an interactive environment and type inspector.
+- IDE: Any editor would suffice, but I used [Visual Studio Code](https://code.visualstudio.com/) as they have an extension for Haskell that gave me some basic [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) features.
+- Test libraries: [Hspec](http://hspec.github.io/), which is based on [RSpec](http://rspec.info/). This can be installed using Haskell's package manager, cabal, from the command line with ```cabal install hspec```.
 - Helper libraries: Printf for colourful command line output.
 
-Using an example from some [Codewars](http://www.codewars.com/)’ Haskell tests, I began with this structure for my code:
+Using the example from Hspec's documentation, I began with this structure for my code:
 
 BowlingTests.hs
 
@@ -41,7 +41,7 @@ main = hspec $ do
 ```
 
 
-So to test a function you add a function in your test file, usually the same name with a ‘test’ prefix, which takes as parameters the inputs to your function under test and the expected output. Then using Hspec, which is based on Rspec, you describe what you are testing. As you can see the ‘it’ part is written in the test function. You can of course omit this helper function and write all your tests under ```main = hspec $ do```, which may be nicer if you want to describe in more detail what each individual test is testing.
+So to test a function, you add a function in your test file, usually the same name with a ‘test’ prefix. This function takes the inputs to your function under test and the expected output as parameters. Then using Hspec you describe what you are testing. As you can see the ‘it’ part is written in the test function. You can of course omit this helper function and write all your tests under ```main = hspec $ do```, which may be nicer if you want to describe in more detail what each individual test is testing.
 
 Bowling.hs
 
