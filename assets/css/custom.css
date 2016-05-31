@@ -28,7 +28,7 @@ body {
 /* Home Page */
 
 .feature-panel {
-	background: url("/assets/img/custom/home/computerdesk_original_opt_bw.jpg") no-repeat center center;
+	background: url("/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
 	height: 550px;
 	background-size: cover;
 	width: auto;
@@ -36,18 +36,43 @@ body {
 }
 
 @media (max-width: 768px) {
-	.feature-panel {
-		height: 250px;
-		background-position: center, top;
-	}
+    .feature-panel, .jumbotron {
+	    height: 300px;
+	    background-position: center, top;
+	    padding-top: 0px;
+	    margin-bottom: 0px;
+    }
+    .feature-panel .jumbotron h1 {
+	line-height:40px;
+    }
+    .feature-panel .jumbotron h3 {
+	font-size: 14px;
+	line-height: 17px;
+    }
+    .feature-panel .jumbotron .btn-services {
+	font-size: 12px;
+    }
 }
 
 .feature-panel .jumbotron {
-	height: 550px;
-	background: transparent;
-	color: white;
-	text-align: center;
-    text-shadow: black 0.3em 0.3em 0.3em;
+    background: transparent;
+    color: white;
+    text-align: left;
+}
+
+.feature-panel .jumbotron h3 {
+    color:white;
+}
+
+.feature-panel .jumbotron .btn-services {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+.feature-panel .jumbotron .btn-services:hover {
+    background-color: white;
+    color: black;
 }
 
 .feature-panel .highlight {
@@ -57,7 +82,7 @@ body {
 
 .feature-panel h1{
 	font-family:'Oxygen', sans-serif;
-	color: #e67e22;
+	color: white;
 	line-height:70px;
 }
 
