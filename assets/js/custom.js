@@ -26,7 +26,6 @@ var Contact = function () {
 }();
 
 $(document).ready(function() {  
-    console.log("The document is ready sir!");
   $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,
