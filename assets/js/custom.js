@@ -48,25 +48,9 @@ $(document).ready(function() {
     }
   });
 
-    $('#services-button').click(function(){
-	var scrollableElement = getFirstScrollableElement(['html','body']);
-	
-	scrollableElement.animate({
+    $('#services-button').click(function(){	
+	$('html,body').animate({
 	    scrollTop: $('#services').offset().top
 	}, 600);
     });
-
-    function getFirstScrollableElement(elements){
-	var element;
-
-	while(element = elements.pop()){
-	    $element = $(element);
-
-	    if($element.scrollTop() > 0) return $element;
-
-	    if($element.scrollTop(1).scrollTop() > 0) return $element.scrollTop(0);
-	}
-
-	return $();
-    }
 });
