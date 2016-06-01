@@ -230,6 +230,78 @@ body:last-child .btn-u, x:-moz-any-link {
 	width: 350px;
 }
 
+
+/* Homepage services section */
+#services .software-creation .service-card-top {
+    background-color: #cc0000;
+}
+#services .software-creation .service-card-bottom {
+    background-color: #ff0000;
+}
+#services .software-creation .service-card-bottom .btn-services-link {
+    background-color: #cc0000;
+}
+
+#services .expert-advice .service-card-top {
+    background-color:#dd4d00;
+}
+#services .expert-advice .service-card-bottom {
+    background-color:#ff6600;
+}
+#services .expert-advice .service-card-bottom .btn-services-link {
+    background-color: #dd4d00;
+}
+
+#services .training-coaching .service-card-top {
+    background-color:#ffaa00;
+}
+#services .training-coaching .service-card-bottom {
+    background-color:#ffcc33;
+}
+#services .training-coaching .service-card-bottom .btn-services-link {
+    background-color: #ffaa00;
+}
+
+#services .service-card-top {
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+#services .service-card-top img {
+    display: block;
+    margin: 0px auto 5px auto;
+}
+
+#services .service-card-top h2 {
+    color: white;
+}
+
+#services .service-card-bottom {
+    text-align: center;
+    font-size: 15px;
+    padding: 40px 0px 30px 0px;
+}
+
+#services .service-card-bottom ul li {
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans serif;
+}
+
+#services .service-card-bottom .btn-services-link {
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", sans serif;
+}
+
+@media (max-width: 992px) {
+    #services .service-card {
+	margin-top: 30px;
+    }
+}
+
+
 /*Content Boxes*/
 .content-boxes {
   margin-bottom: 15px;
