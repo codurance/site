@@ -73,3 +73,5 @@ The solution is wrapping those operation with constructs like Scala Futures and 
 Akka is a fantastic toolkit full of well suited abstractions for modern problems. In the next post we'll see with the help of some code how to coordinate and supervise actors with the constraints of our example application.
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/)
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).
