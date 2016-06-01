@@ -54,3 +54,5 @@ Our system is formed by several microservices based on [Akka](http://akka.io/), 
 <img src="/assets/img/custom/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/)
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).

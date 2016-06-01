@@ -129,3 +129,5 @@ In the previous post we showed how to subscribe to messages using that partition
 Thanks to the flexibility that Kafka provides, we were able to design our system understanding different trade-offs. In the next posts we'll see how to coordinate the outcome of those FSMs to provide a sync response to the client.
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/) | [Part 3](http://codurance.com/2016/05/10/finite-state-machines-with-akka/)
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).

@@ -208,3 +208,5 @@ We don't need to go to `Idle` status, but doing it makes it clearer to the reade
 FSM is in the core of our solution. In next posts we'll see how we integrate, coordinate, and supervise those FSMs so they can serve its purpose of bridging sync clients with async systems. At the same time we'll see how Kafka and Akka Event Bus implement its own versions of pub-sub philosophy, so they can react asynchronously to changes in our system.
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/)
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).

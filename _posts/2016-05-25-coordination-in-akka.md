@@ -153,3 +153,5 @@ Let's see the Scaladoc for `actorOf` :
 Thanks to Akka constructs and patterns, and the functional and async goodies of Scala we could write coordination code quite easily. In the next post we'll se how to test Akka.
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/) | [Part 3](http://codurance.com/2016/05/10/finite-state-machines-with-akka/) | [Part 4](http://codurance.com/2016/05/16/publish-subscribe-model-in-kafka/)
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).
