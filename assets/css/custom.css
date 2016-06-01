@@ -224,12 +224,12 @@ body:last-child .btn-u, x:-moz-any-link {
 	box-shadow: 0 10px 10px 0px gray;
 }
 
-
 /* Blog panel */
 .homepage-blog-thumb img {
 	height: 240px;
 	width: 350px;
 }
+
 
 /* Homepage services section */
 #services .software-creation .service-card-top {
