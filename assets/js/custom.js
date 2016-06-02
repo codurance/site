@@ -25,7 +25,13 @@ var Contact = function () {
     };
 }();
 
-$(document).ready(function() {  
+$(document).ready(function() { 
+
+    //This function is necessary so Safari can redraw the menu 
+    $(".dropdown").click(function(){
+        return true;
+    });
+
   $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,
