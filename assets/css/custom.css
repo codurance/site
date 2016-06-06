@@ -210,6 +210,9 @@ body:last-child .btn-u, x:-moz-any-link {
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 }
+.dark-gray-section {
+    background: #cccccc;
+}
 
 .section {
 	padding-top: 50px;
@@ -639,6 +642,66 @@ body:last-child .btn-u, x:-moz-any-link {
 .img-center{
 	display: block; 
 	margin: 0 auto;
+}
+
+
+/* Skills and practices section */
+h2.gray-underline:after {
+	bottom: 0;
+	left: 50%;
+	height: 1px;
+	width: 70px;
+	content: " ";
+	margin-left: -35px;
+	position: absolute;
+	background: #555555;
+}
+
+.col-centered-120 {
+    margin: 0 auto 0 auto;
+    width: 120px;
+}
+
+.practice {
+    min-width:600px;
+}
+
+.practice > * {
+    float:left;
+}
+
+.practice-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.practice-text {
+    margin-top: 20px;
+    max-width: 250px;
+}
+
+.btn-practices {
+    background-color: white;
+    color: #555555;
+    width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.btn-practices:hover {
+    background-color: #555555;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .practice {
+	min-width: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .practice-text {
+	max-width: 768px;
+    }
 }
 
 /* Sponsoring section */
