@@ -196,3 +196,15 @@
   fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance for an apprenticeship, Halima is leveling up her engineering skills and embracing the values of software craftsmanship, seeking to become a skilled professional that delivers value building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing more diversity to the tech community.</p>
   twitter: hkoundi
   github: halimakoundi
+
+- id: alvarogarcia
+  name: Alvaro Garcia
+  image: /assets/img/custom/team/alvaro_garcia.jpg
+  role: Software Craftsman
+  shortDescription: Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked in a lifelong learning process. Alvaro has been working in the IT industry for product companies, consulting firms and on his own since 2005 and occasionally blogs at <a target="_blank" rel="noopener noreferrer" href="https://alvarogarcia7.github.io">alvarogarcia7.github.io</a>.
+  fullDescription: >
+    <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked in a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p> 
+    <p>He enjoys reading and reviewing technology books, providing feedback to the author whenever possible, to create the best experience for the final reader.</p> 
+    <p>Alvaro has been working in the IT industry for product companies, consulting firms and on his own since 2005 and occasionally blogs at <a target="_blank" rel="noopener noreferrer" href="https://alvarogarcia7.github.io">alvarogarcia7.github.io</a>.
+  twitter: alvarobiz
+  github: alvarogarcia7
