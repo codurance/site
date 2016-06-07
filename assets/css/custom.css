@@ -700,7 +700,7 @@ h2.gray-underline:after {
 
 @media (max-width: 992px) {
     .practice-text {
-	max-width: 768px;
+	max-width: 60%;
     }
 }
 
