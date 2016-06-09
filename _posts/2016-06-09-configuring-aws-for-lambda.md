@@ -31,6 +31,8 @@ The first part, mostly accidental complexity, is how to setup the account to be 
 
  1. Connect to the [AWS Console][AWS Console]
 
+<img src="/assets/img/custom/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
+
 ````
 alvaros-MacBook-Pro:~ alvaro$ aws configure
 AWS Access Key ID [****************TEST]: AKIAJT6V4JYWUUS26WMQ
