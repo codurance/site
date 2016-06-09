@@ -27,7 +27,7 @@ During the  [Software Craftsmanship and Testing conference UK](http://socratesuk
 
 The first part, mostly accidental complexity, is how to setup the account to be able to use these services. This is the part that most people struggled with, so here is a step-by-step guide.
 
-## Setting up your account
+## Setting up your AWS account
 
   1. Connect to the [AWS Console][AWS Console]
 
@@ -94,22 +94,32 @@ The first part, mostly accidental complexity, is how to setup the account to be 
   1. Click 'Add Users'
     {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-20.png "" %}
 
+### Installing and installind the AWS CLI
 
-````
-alvaros-MacBook-Pro:~ alvaro$ aws configure
-AWS Access Key ID [****************TEST]: AKIAJT6V4JYWUUS26WMQ
-AWS Secret Access Key [****************TEST]: 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
-Default region name [eu-west-1]: eu-west-1
-Default output format [None]: 
-alvaros-MacBook-Pro:~ alvaro$ 
-````
+   1. Find the installer at [AWS CLI][aws-cli-installation]
+   1. Configure it, with this [help page][aws-cli-configuration]
+     * A sample of that
 
-````
-alvaros-MacBook-Pro:~ alvaro$ aws lambda list-functions
-{
-    "Functions": []
-}
-````
+    ````
+    $ aws configure
+    AWS Access Key ID [****************TEST]: AKIAJT6V4JYWUUS26WMQ
+    AWS Secret Access Key [****************TEST]: 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
+    Default region name [eu-west-1]: eu-west-1 #or any other zone
+    Default output format [None]: #just type enter
+    ````
 
+   1. Check that the CLI is correctly configured:
+
+    ````
+    $ aws lambda list-functions
+    {
+        "Functions": []
+    }
+    ````
+
+   1. You can now continue to the [next post][mash-post-1] 
 
 [AWS Console]: https://console.aws.amazon.com
+[aws-cli-installation]: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+[aws-cli-configuration]: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+[mash-post-1]: /2016/05/11/aws-lambdas
