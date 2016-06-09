@@ -46,7 +46,7 @@ When we unit test objects we look for:
 
 The concept of returned value is slightly different in Akka. Akka focuses on messages and not on method invocations. Checking the returned value involves two actors and two messages. If the collaborators of the *Actor Under Test* are also Actors, verifying calls will involve two actors and two messages too. If we use a multi-threaded dispatcher for scheduling this, this scenario will be out of our unit testing definition. Let's focus then on testing internal state.
 
-Akka actors are completely encapsulated and the only communication channel is the mailbox. `TestActorRef` is provided by Akka so we can gain access into the internals of an actor so we can unit test it. One of its specialised form is `TestFSMRef` that allows to test [Finite State Machines](http://codurance.com/2016/05/10/finite-state-machines-with-akka/). Let's see an example from our platform:
+Akka actors are completely encapsulated and the only communication channel is the mailbox. `TestActorRef` is provided by Akka so we can gain access into the internals of an actor and unit test it. One of its specialised forms is `TestFSMRef` allowing us to test [Finite State Machines](http://codurance.com/2016/05/10/finite-state-machines-with-akka/). Let's see an example from our platform:
 
 ```scala
 "Item FSM" should {
@@ -67,7 +67,7 @@ Akka actors are completely encapsulated and the only communication channel is th
 
 As you can see `TestFSMRef` wraps the actor that we want to test and exposes its internal state. That wrapper has other useful methods like setting state programatically or manipulating FSM timers.
 
-I want to share something that confused me a little the first time, but it's important to understand. We need to recall that unit testing in Akka means using one single thread in order to achieve deterministic order of events. `TestActorRef` uses `CallingThreadDispatcher` by default. This dispatcher *runs invocations on the current thread only* so we could do an unit test that checks the returned value of an actor with this style.
+I want to share something that confused me a little the first time, but it's important to understand. We need to recall that unit testing in Akka means using one single thread in order to achieve a deterministic order of events. `TestActorRef` uses `CallingThreadDispatcher` by default. This dispatcher *runs invocations on the current thread only* so we could do an unit test that checks the returned value of an actor with this style.
 
 ```scala
 class EchoActor extends Actor {
@@ -110,7 +110,7 @@ class ItemFSMSpec() extends TestKit(ActorSystem("ItemFSMSpec")) with ImplicitSen
  }
 ```
 
-In this particular test we're interested in the message that the FSM is dispatching to the sender. Let's read carefully this line again:
+In this particular test we're interested in the message that the FSM is dispatching to the sender. Let's take another look at this line:
 
 ```scala
 worker ! ItemReported(itemId)
