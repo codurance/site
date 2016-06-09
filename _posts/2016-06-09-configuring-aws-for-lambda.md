@@ -31,5 +31,21 @@ The first part, mostly accidental complexity, is how to setup the account to be 
 
  1. Connect to the [AWS Console][AWS Console]
 
+````
+alvaros-MacBook-Pro:~ alvaro$ aws configure
+AWS Access Key ID [****************TEST]: AKIAJT6V4JYWUUS26WMQ
+AWS Secret Access Key [****************TEST]: 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
+Default region name [eu-west-1]: eu-west-1
+Default output format [None]: 
+alvaros-MacBook-Pro:~ alvaro$ 
+````
+
+````
+alvaros-MacBook-Pro:~ alvaro$ aws lambda list-functions
+{
+    "Functions": []
+}
+````
+
 
 [AWS Console]: https://console.aws.amazon.com
