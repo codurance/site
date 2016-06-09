@@ -15,7 +15,7 @@ tags:
 - guide
 - howto
 - lambda
-
+- serverless
 ---
 
 {% comment %}
