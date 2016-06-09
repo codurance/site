@@ -25,6 +25,11 @@ body {
 	top: 6px;
 }
 
+.header .navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
 /* Home Page */
 
 .feature-panel {
