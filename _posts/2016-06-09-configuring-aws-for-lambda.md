@@ -13,11 +13,8 @@ tags:
 ---
 
 {% comment %}
-
-TODO add picture
-
-folder for images: /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/
-
+    TODO add picture; 
+    TODO folder for images: /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/
 {% endcomment %}
 
 During the  [Software Craftsmanship and Testing conference UK](http://socratesuk.org/index.html) Mash run a session on AWS Lambda, with examples written in Java and python. Some other people also tried to do it in NodeJS.
@@ -26,4 +23,7 @@ The first part, mostly accidental complexity, is how to setup the account to be 
 
 ## Setting up your account
 
+ 1. Connect to the [AWS Console][AWS Console]
 
+
+[AWS Console]: https://console.aws.amazon.com
