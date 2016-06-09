@@ -22,6 +22,21 @@ During the  [Software Craftsmanship and Testing conference UK](http://socratesuk
 
 The first part, mostly [accidental complexity][no-silver-bullet-summary], is how to setup the account to be able to use these services. This is the part that most people struggled with, so here is a step-by-step guide.
 
+## Setting up your payment method
+
+  1. Connect to the [AWS Console][AWS Console]
+
+    {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-01.png "" %}
+
+  1. Click on your name (top right), then 'My Account' 
+    {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-1.png "" %}
+
+  1.  On the left menu, click 'Payment Methods'
+    {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-2.png "" %}
+
+  1. Add a debit/credit card
+    {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-3.png "" %}
+
 ## Setting up your AWS account
 
   1. Connect to the [AWS Console][AWS Console]
