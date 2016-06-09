@@ -104,7 +104,7 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
   1. Click 'Add Users'
     {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-20.png "" %}
 
-### Installing and installind the AWS CLI
+### Installing and configuring the AWS CLI
 
    1. Find the installer at [AWS CLI][aws-cli-installation]
    1. Configure it, with this [help page][aws-cli-configuration]
