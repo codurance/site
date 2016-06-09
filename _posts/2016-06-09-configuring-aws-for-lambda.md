@@ -34,7 +34,7 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
   1.  On the left menu, click 'Payment Methods'
     {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-2.png "" %}
 
-  1. Add a debit/credit card
+  1. Add a debit/credit card. This is very important, as you could go over the free tier and they would need to charge you. But with the levels of activity that we'll be using, you are included in the [free tier][lambda-pricing]
     {% img /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-3.png "" %}
 
 ## Setting up your AWS account
@@ -136,3 +136,4 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
 [mash-twitter]: https://twitter.com/mashooq
 [no-silver-bullet-summary]: https://en.wikipedia.org/wiki/No_Silver_Bullet#Summary
 [aws-lambda-info]: https://aws.amazon.com/lambda/details/
+[lambda-pricing]: https://aws.amazon.com/lambda/pricing/
