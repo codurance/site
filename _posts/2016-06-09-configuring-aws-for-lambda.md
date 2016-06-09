@@ -20,7 +20,7 @@ tags:
 
 During the  [Software Craftsmanship and Testing conference UK](http://socratesuk.org/index.html), [Mash][mash-twitter] run a session on AWS Lambda, with examples written in Java and python. Some other people also tried to do it in NodeJS.
 
-The first part, mostly accidental complexity, is how to setup the account to be able to use these services. This is the part that most people struggled with, so here is a step-by-step guide.
+The first part, mostly [accidental complexity][no-silver-bullet-summary], is how to setup the account to be able to use these services. This is the part that most people struggled with, so here is a step-by-step guide.
 
 ## Setting up your AWS account
 
@@ -119,3 +119,4 @@ The first part, mostly accidental complexity, is how to setup the account to be 
 [aws-cli-configuration]: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 [mash-post-1]: /2016/05/11/aws-lambdas
 [mash-twitter]: https://twitter.com/mashooq
+[no-silver-bullet-summary]: https://en.wikipedia.org/wiki/No_Silver_Bullet#Summary
