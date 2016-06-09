@@ -3,17 +3,22 @@ layout: post
 name: Configuring-AWS-lambda 
 title: 'Configuring Amazon Web Services (AWS) for using Lambda'
 date: 2016-06-09 15:07:00 +00:00
-author: Alvaro Garcia 
+author: Alvaro Garcia
+image:
+    src: /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/lambda-logo.png
+    attribution:
+      text: an AWS Lambda illustration
+      href: https://aws.amazon.com/lambda/details/
 tags:
 - amazon-web-services
 - aws
 - guide
 - howto
 - lambda
+
 ---
 
 {% comment %}
-    TODO add picture; 
     TODO add link to mash
     TODO folder for images: /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/
 {% endcomment %}
