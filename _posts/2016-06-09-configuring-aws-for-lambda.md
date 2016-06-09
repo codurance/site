@@ -112,8 +112,8 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
 
     ````
     $ aws configure
-    AWS Access Key ID [****************TEST]: AKIAJT6V4JYWUUS26WMQ
-    AWS Secret Access Key [****************TEST]: 2X0IH6NeEyQ2Ui8qQV5/p1w2ZM4bormRCtvly72T
+    AWS Access Key ID [****************TEST]: ##$YOUR_ACCESS_KEY##
+    AWS Secret Access Key [****************TEST]: ##$YOUR_SECRET_ACCES_KEY##
     Default region name [eu-west-1]: eu-west-1 #or any other zone
     Default output format [None]: #just type enter
     ````
