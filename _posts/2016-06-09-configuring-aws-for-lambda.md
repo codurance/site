@@ -14,6 +14,7 @@ tags:
 
 {% comment %}
     TODO add picture; 
+    TODO add link to mash
     TODO folder for images: /assets/img/custom/blog/2016-06-09-configuring-aws-lambda/
 {% endcomment %}
 
