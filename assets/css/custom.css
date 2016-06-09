@@ -25,6 +25,10 @@ body {
 	top: 6px;
 }
 
+.header .container ul.nav li {
+    margin-right: -15px;
+}
+
 /* Home Page */
 
 .feature-panel {
