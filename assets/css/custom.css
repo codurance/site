@@ -209,7 +209,8 @@ body:last-child .btn-u, x:-moz-any-link {
 	font-size: 17px;
 	font-weight: 200;
 }
-/* Grey backround for section */
+
+/* Section colours */
 .gray-section {
 	background: #fafafa;
 	border-top: solid 1px #eee;
@@ -217,6 +218,9 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 .dark-gray-section {
     background: #cccccc;
+}
+.orange-section {
+    background: #ff6600;
 }
 
 .section {
@@ -533,8 +537,71 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 
 /* Expert Advice */
+.expert-section {
+    text-align: center;
+}
+
+.expert-header {
+    color: #ff6600;
+    position: relative;
+}
+
+.expert-header:after {
+    bottom: -20px;
+    content: " ";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 70px;
+    background: #ff6600;
+}
+
+h2.expert-header {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2.expert-header:after {
+    left: 50%;
+    margin-left: -35px;
+}
+
+h3.expert-header {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.what-we-offer {
+    margin: 80px 0px 80px 0px;
+    color: #555555;
+}
+
+.what-we-offer:after {
+    background: #555555;
+}
+
 .contact-us {
     text-align: center;
+}
+
+.contact-us h2, .contact-us h3 {
+    color: white;
+}
+
+.contact-us a {
+    width: 300px;
+    pardding: 10px 0px 10px 0px;
+    margin: 10px auto 0px auto;
+    border: 1px solid white;
+}
+
+.contact-us a:hover {
+    background: white;
+    text-decoration: none;
+}
+
+.contact-us a:hover h2 {
+    color: #ff6600;
 }
 
 /* Training */
