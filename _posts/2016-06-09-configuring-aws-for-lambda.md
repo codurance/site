@@ -112,7 +112,7 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
     }
     ````
 
-   1. You can now continue to the [next post][mash-post-1] 
+   1. You can use the services. The series continues at the [next post][mash-post-1] 
 
 [AWS Console]: https://console.aws.amazon.com
 [aws-cli-installation]: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
