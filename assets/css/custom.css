@@ -222,6 +222,9 @@ body:last-child .btn-u, x:-moz-any-link {
 .orange-section {
     background: #ff6600;
 }
+.red-section {
+    background: #ff0000;
+}
 
 .section {
 	padding-top: 50px;
@@ -536,48 +539,64 @@ body:last-child .btn-u, x:-moz-any-link {
     padding-right: 50px;
 }
 
-/* Expert Advice */
-.expert-section {
+
+/* Services pages */
+.services-section {
     text-align: center;
 }
 
-.expert-header {
-    color: #ff6600;
+.services-header {
     position: relative;
 }
 
-.expert-header:after {
+#software-creation .services-header {
+    color: #ff0000;
+}
+
+#expert-advice .services-header {
+    color: #ff6600;
+}
+
+.services-header:after {
     bottom: -20px;
     content: " ";
     height: 1px;
     left: 0;
     position: absolute;
     width: 70px;
+}
+
+#software-creation .services-header:after {
+    background: #ff0000;
+}
+
+#expert-advice .services-header:after {
     background: #ff6600;
 }
 
-h2.expert-header {
+h2.services-header {
     font-size: 40px;
+    line-height: 40px;
     text-transform: uppercase;
 }
 
-h2.expert-header:after {
+h2.services-header:after {
     left: 50%;
     margin-left: -35px;
 }
 
-h3.expert-header {
+h3.services-header {
     font-size: 32px;
     line-height: 32px;
 }
 
 .what-we-offer {
     margin: 80px 0px 80px 0px;
-    color: #555555;
+    color: #555555 !important;
 }
 
 .what-we-offer:after {
-    background: #555555;
+    background: #555555 !important;
 }
 
 .contact-us {
@@ -600,8 +619,12 @@ h3.expert-header {
     text-decoration: none;
 }
 
-.contact-us a:hover h2 {
+.orange-section .contact-us a:hover h2 {
     color: #ff6600;
+}
+
+.red-section .contact-us a:hover h2 {
+    color: #ff0000;
 }
 
 /* Training */
