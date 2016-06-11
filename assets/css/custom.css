@@ -25,6 +25,11 @@ body {
 	top: 6px;
 }
 
+.header .navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
 /* Home Page */
 
 .feature-panel {
@@ -204,7 +209,8 @@ body:last-child .btn-u, x:-moz-any-link {
 	font-size: 17px;
 	font-weight: 200;
 }
-/* Grey backround for section */
+
+/* Section colours */
 .gray-section {
 	background: #fafafa;
 	border-top: solid 1px #eee;
@@ -212,6 +218,12 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 .dark-gray-section {
     background: #cccccc;
+}
+.orange-section {
+    background: #ff6600;
+}
+.red-section {
+    background: #ff0000;
 }
 
 .section {
@@ -527,9 +539,92 @@ body:last-child .btn-u, x:-moz-any-link {
     padding-right: 50px;
 }
 
-/* Expert Advice */
+
+/* Services pages */
+.services-section {
+    text-align: center;
+}
+
+.services-header {
+    position: relative;
+}
+
+#software-creation .services-header {
+    color: #ff0000;
+}
+
+#expert-advice .services-header {
+    color: #ff6600;
+}
+
+.services-header:after {
+    bottom: -20px;
+    content: " ";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 70px;
+}
+
+#software-creation .services-header:after {
+    background: #ff0000;
+}
+
+#expert-advice .services-header:after {
+    background: #ff6600;
+}
+
+h2.services-header {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+h2.services-header:after {
+    left: 50%;
+    margin-left: -35px;
+}
+
+h3.services-header {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.what-we-offer {
+    margin: 80px 0px 80px 0px;
+    color: #555555 !important;
+}
+
+.what-we-offer:after {
+    background: #555555 !important;
+}
+
 .contact-us {
     text-align: center;
+}
+
+.contact-us h2, .contact-us h3 {
+    color: white;
+}
+
+.contact-us a {
+    width: 300px;
+    pardding: 10px 0px 10px 0px;
+    margin: 10px auto 0px auto;
+    border: 1px solid white;
+}
+
+.contact-us a:hover {
+    background: white;
+    text-decoration: none;
+}
+
+.orange-section .contact-us a:hover h2 {
+    color: #ff6600;
+}
+
+.red-section .contact-us a:hover h2 {
+    color: #ff0000;
 }
 
 /* Training */
