@@ -71,12 +71,12 @@ Don't forget that during the refactor phase your design skills are put to test: 
 > The great thing about TDD is that it is constantly asking us “Hey, can you make your code better? See how hard testing this class is becoming? OK, you made it work. Here’s your green bar. Now make it better.”
 
 ## **_Having good  habits_**
-TDD must be approach like a discipline. You must have good habits to stick with it. [Here](https://github.com/neomatrix369/refactoring-developer-habits/blob/master/02-outcome-of-collation/tdd-manifesto/tdd-good-habits-manifesto.md) is the **_TDD good habits manifesto_**. This came up for the first time in [SoCraTes UK ‘16](http://socratesuk.org/) in a form of a session facilitated  by [Mani Sarkar](https://twitter.com/theNeomatrix369) and [Pedro Santos](https://twitter.com/pedromsantos), where they challenged us to add or remove practices to their original draft that you can see [here](http://www.slideshare.net/neomatrix369/refactoring-developer-habits-62785350).
+TDD must be approached like a discipline. You must have good habits to stick with it. [Here](https://github.com/neomatrix369/refactoring-developer-habits/blob/master/02-outcome-of-collation/tdd-manifesto/tdd-good-habits-manifesto.md) is the **_TDD good habits manifesto_**. This came up for the first time in [SoCraTes UK ‘16](http://socratesuk.org/) in a form of a session facilitated  by [Mani Sarkar](https://twitter.com/theNeomatrix369) and [Pedro Santos](https://twitter.com/pedromsantos), where they challenged us to add or remove practices to their original draft that you can see [here](http://www.slideshare.net/neomatrix369/refactoring-developer-habits-62785350).
 
 
 ## **_Conclusion_**
 
-Well, it seems that I have a minimum knowledge about TDD. Still need to practice a lot, and apply what I have learnt when coding. Here are some books that you could read:
+Well, it seems that I have a minimum knowledge about TDD. Still need to practice a lot, and apply what I have learned when coding. Here are some books that you could read:
 
  - [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) by Steve Freeman and Nat Pryce.
  - [Refactoring: Improving the Design of Existing Code](https://www.amazon.co.uk/Refactoring-Improving-Design-Existing-Technology/dp/0201485672) by Martin Fowler.
