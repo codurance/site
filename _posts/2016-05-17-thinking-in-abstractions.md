@@ -40,7 +40,7 @@ Abstractions about the business domain are higher still and may change more ofte
 
 More volatile abstractions should not be deeply embedded in your code and must not have a complicated dependency graph so that changes are localised.
 
-### Abstraction have a navigation overhead
+### Abstractions have a navigation overhead
 Abstractions can help or hinder comprehension. Take the example of a programming language as an abstraction. Most of us don’t even know the next level of detail from a programming language  (i.e byte/machine code). It is arguably a good example of an [Intention Revealing](http://martinfowler.com/bliki/BeckDesignRules.html) set of abstractions. So effective that we rarely need to dig deeper to comprehend. Although one can argue that a truly intention revealing programming language would not require all that associated documentation. But I digress. 
 
 If comprehension require digging from one level of an abstraction to the ones below then the abstraction is actually getting in the way because every jump requires the reader to keep in mind the previous level(s). For example I often see a liberal use of "extract method/class/module", in what may be considered "clean code", to the point that I find myself constantly diving in and out of different levels of abstractions in order to comprehend a simple execution flow. For example, [Composed Methods](http://c2.com/ppr/wiki/WikiPagesAboutRefactoring/ComposedMethod.html) are great but at the same time a liberal use of method/class/module extraction without close attention to abstraction levels is not so clever.
