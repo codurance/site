@@ -34,7 +34,7 @@ But what about “generic in nature”?
 ### Not all abstractions are equal
 Abstractions that are more generic in nature have a longer half-life. A programming language itself is an abstraction with a very long half-life. It is quite generic and does not make many explicit statements about a particular problem domain. A data access library, another abstraction, is a few levels above and may have a smaller half-life in your system - the library may have been designed to access a relational store and may need to be replaced if you go for a different store. 
 
-The fewer assumptions you have the smaller the chance that one of them may become invalid. For example a function that operates on a generic collection is less likely to require change then one that only operates on a specific implementation of a list.
+The fewer assumptions you have the smaller the chance that one of them may become invalid. For example, a function that operates on a generic collection is less likely to require change than one that only operates on a specific implementation of a list.
 
 Abstractions about the business domain are higher still and may change more often. Also certain aspects of the business will be more volatile then others. 
 
