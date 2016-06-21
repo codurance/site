@@ -225,6 +225,9 @@ body:last-child .btn-u, x:-moz-any-link {
 .red-section {
     background: #ff0000;
 }
+.yellow-section {
+    background: #ffcc33;
+}
 
 .section {
 	padding-top: 50px;
@@ -557,6 +560,14 @@ body:last-child .btn-u, x:-moz-any-link {
     color: #ff6600;
 }
 
+#training .services-header {
+    color: #ffcc33;
+}
+
+#courses .services-header {
+    color: white;
+}
+
 .services-header:after {
     bottom: -20px;
     content: " ";
@@ -574,6 +585,14 @@ body:last-child .btn-u, x:-moz-any-link {
     background: #ff6600;
 }
 
+#training .services-header:after {
+    background: #ffcc33;
+}
+
+#courses .services-header:after {
+    background: white;
+}
+
 h2.services-header {
     font-size: 40px;
     line-height: 40px;
@@ -588,6 +607,11 @@ h2.services-header:after {
 h3.services-header {
     font-size: 32px;
     line-height: 32px;
+}
+
+#courses h3.services-header:after {
+    left:50%;
+    margin-left: -35px;
 }
 
 .what-we-offer {
@@ -626,6 +650,88 @@ h3.services-header {
 .red-section .contact-us a:hover h2 {
     color: #ff0000;
 }
+
+.yellow-section .contact-us a:hover h2 {
+    color: #ffcc33;
+}
+
+.contact-us-courses a {
+    background: #ffcc33;
+    border: 1px solid #ffcc33;
+    border-radius: 6px;
+}
+
+.contact-us-courses h2 {
+    color: white;
+}
+
+.contact-us-courses a:hover h2 {
+    color: #ffcc33;
+}
+
+.contact-us-courses h3 {
+    color: #555555;
+}
+
+.btn-check-courses {
+    width: 240px;
+    text-align: center;
+    background: #ffcc33;
+    border: 1px solid #ffcc33;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.btn-check-courses:hover {
+    text-decoration: none;
+    background: white;
+}
+
+.btn-check-courses:hover h3 {
+    color: #ffcc33;
+}
+
+.btn-check-courses h3 {
+    color: white;
+    font-size: 20px;
+    margin: 5px 0px 5px 0px;
+}
+
+.course {
+    text-align: left;
+}
+
+.course-category {
+    padding-top: 40px;
+}
+
+.course-title {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.course-author {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-course {
+    border: 1px solid #555555;
+    border-radius: 6px;
+    width: 240px;
+    color: #555555;
+    padding: 8px 0px 8px 0px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-course:hover {
+    background: #555555;
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Training */
 
