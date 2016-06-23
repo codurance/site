@@ -37,15 +37,13 @@ body {
 	height: 550px;
 	background-size: cover;
 	width: auto;
-	z-index: -1;
+	z-index: 1;
+	position: relative;
 }
 
 @media (max-width: 768px) {
     .feature-panel, .jumbotron {
-	    height: 300px;
-	    background-position: center, top;
 	    padding-top: 0px;
-	    margin-bottom: 0px;
     }
     .feature-panel .jumbotron h1 {
 	line-height:40px;
@@ -62,7 +60,12 @@ body {
 .feature-panel .jumbotron {
     background: transparent;
     color: white;
-    text-align: left;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .feature-panel .jumbotron h3 {
@@ -70,14 +73,19 @@ body {
 }
 
 .feature-panel .jumbotron .btn-services {
-    background-color: black;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
     color: white;
+    font-size: 18px;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .feature-panel .jumbotron .btn-services:hover {
     background-color: white;
-    color: black;
+    color: #687074;
 }
 
 .feature-panel .highlight {
