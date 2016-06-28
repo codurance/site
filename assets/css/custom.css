@@ -556,78 +556,80 @@ body:last-child .btn-u, x:-moz-any-link {
     text-align: center;
 }
 
-.services-header {
+.subject-header {
     position: relative;
 }
 
-#software-creation .services-header {
+#software-creation .subject-header {
     color: #ff0000;
 }
 
-#expert-advice .services-header {
+#expert-advice .subject-header {
     color: #ff6600;
 }
 
-#training .services-header {
+#training .subject-header {
     color: #ffcc33;
 }
 
-#courses .services-header {
+#courses .subject-header {
     color: white;
 }
 
-.services-header:after {
+.subject-header:after {
     bottom: -20px;
     content: " ";
     height: 1px;
     left: 0;
     position: absolute;
     width: 70px;
+    background: #555555;
 }
 
-#software-creation .services-header:after {
+#software-creation .subject-header:after {
     background: #ff0000;
 }
 
-#expert-advice .services-header:after {
+#expert-advice .subject-header:after {
     background: #ff6600;
 }
 
-#training .services-header:after {
+#training .subject-header:after {
     background: #ffcc33;
 }
 
-#courses .services-header:after {
+#courses .subject-header:after {
     background: white;
 }
 
-h2.services-header {
+h2.subject-header {
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
 }
 
-h2.services-header:after {
+h2.subject-header:after {
     left: 50%;
     margin-left: -35px;
 }
 
-h3.services-header {
+h3.subject-header {
     font-size: 32px;
-    line-height: 32px;
+    line-height: 36px;
+    min-height: 72px;
 }
 
-#courses h3.services-header:after {
+#courses h3.subject-header:after {
     left:50%;
     margin-left: -35px;
 }
 
-.what-we-offer {
+.grey-header {
     margin: 80px 0px 80px 0px;
     color: #555555 !important;
 }
 
-.what-we-offer:after {
+.grey-header:after {
     background: #555555 !important;
 }
 
@@ -644,6 +646,7 @@ h3.services-header {
     pardding: 10px 0px 10px 0px;
     margin: 10px auto 0px auto;
     border: 1px solid white;
+    border-radius: 6px;
 }
 
 .contact-us a:hover {
@@ -661,6 +664,22 @@ h3.services-header {
 
 .yellow-section .contact-us a:hover h2 {
     color: #ffcc33;
+}
+
+.gray-section .contact-us h2, .gray-section .contact-us h3 {
+    color: #687074;
+}
+
+.gray-section .contact-us a {
+    border: 1px solid #687074;
+}
+
+.gray-section .contact-us a:hover {
+    background: #687074;
+}
+
+.gray-section .contact-us a:hover h2 {
+    color: #fafafa;
 }
 
 .contact-us-courses a {
