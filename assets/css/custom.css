@@ -890,10 +890,13 @@ h2.gray-underline:after {
 }
 
 .btn-practices {
-    background-color: white;
+    border: grey;
     color: #555555;
     width: 120px;
     margin: 0 auto 0 auto;
+    border-radius: 6px;
+    border-width: 3px;
+    border: 1px solid grey;
 }
 
 .btn-practices:hover {
