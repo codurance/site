@@ -890,6 +890,7 @@ h2.gray-underline:after {
 }
 
 .btn-practices {
+    background: none;
     border: grey;
     color: #555555;
     width: 120px;
