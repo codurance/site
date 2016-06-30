@@ -9,10 +9,16 @@ canonical:
     href: http://blog.matthewbutt.com/2016/05/14/a-retrospective-in-the-park
 image:
     src: /assets/img/custom/blog/2016-05-14-retrospective-park/hibiscus.jpg
+categories: practices
 tags:
 - agile 
+- scrum
+- iteration
+- sprint
 - retrospective
-- practices
+- outdoor-retrospective
+- team
+- collaboration
 ---
 
 The other day, I facilitated a sprint retrospective in the park. The sun was shining, and we had all been working hard to complete our backlog, so it felt like a nice reward for everyone’s efforts. Holding a retrospective outdoors can also give it an energy and sense of enthusiasm that is harder to find in a small room.

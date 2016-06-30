@@ -6,11 +6,15 @@ date: 2016-06-24 16:20:00 +00:00
 author: Halima Koundi
 image:
    src: /assets/img/custom/blog/2016-06-20-umbraco-on-azure/umbraco-on-azure.jpg
+category: technologies
 tags:
-- cloud 
+- cloud
+- cloud-services
 - windows-azure 
 - cms
 - umbraco
+- open-source
+- website-solution
 ---
 
 This is the first post of a three parts series about how to scale an Umbraco website on Windows Azure platform.
