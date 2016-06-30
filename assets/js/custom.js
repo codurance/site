@@ -1,5 +1,7 @@
 var Contact = function () {
 
+    var coordinates = {'lat': 51.523876,
+                       'lng': -0.100533};
     return {
 
         //Map
@@ -9,12 +11,12 @@ var Contact = function () {
 						if ( $( "#map" ).length ) {
 							map = new GMaps({
 								div: '#map',
-								lat: 51.5175641,
-								lng: -0.097832
+                                lat: coordinates.lat,
+                                lng: coordinates.lng,
 							  });
 							var marker = map.addMarker({
-								lat: 51.5175641,
-								lng: -0.097832,
+                                lat: coordinates.lat,
+                                lng: coordinates.lng,
 					            title: 'Codurance Ltd'
 					          });
 						}
