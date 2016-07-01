@@ -6,10 +6,15 @@ date: 2016-06-07 15:20:00 +00:00
 author: Giulia Mantuano
 image:
     src: /assets/img/custom/blog/socrates.jpg
+category: community
 tags:
+- event
 - socrates
-- conference
-- craftsmanship
+- software-craftsmanship
+- design
+- interaction-design
+- ui
+- ux
 ---
 
 Last Friday, I attended the international [Software Craftsmanship and Testing conference](http://socratesuk.org/index.html) at the enchanting Wotton House, in Dorking. I was the only Designer among about 100 Developers.
