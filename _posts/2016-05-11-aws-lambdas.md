@@ -74,7 +74,7 @@ Create the following script (```deploy.sh```). _Note: the script assumes that yo
 
 ### Ensure the variable AWS_ACCOUNT_ID is set
 # http://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash
-if [ -z ${AWS_ACCOUNT_ID+x} ] then
+if [ -z ${AWS_ACCOUNT_ID+x} ]; then
     echo "variable AWS_ACCOUNT_ID is not set"
     exit 1
 fi
@@ -107,6 +107,13 @@ or for Java:
 
 ```shell
 #!/bin/bash
+
+### Ensure the variable AWS_ACCOUNT_ID is set
+# http://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash
+if [ -z ${AWS_ACCOUNT_ID+x} ]; then
+    echo "variable AWS_ACCOUNT_ID is not set"
+    exit 1
+fi
 
 ### Create the lambda package
 mvn package
