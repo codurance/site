@@ -6,9 +6,11 @@ date: 2016-06-17 00:20:00 +00:00
 author: Mashooq Badar 
 image:
    src: /assets/img/custom/blog/abstractions.jpg
+category: software-craftsmanship
 tags:
 - design 
-- craftsmanship 
+- clean-code
+- abstractions
 ---
 
 Recent issues of the [Clojure Gazette](http://www.clojuregazette.com/archive.html) have been discussing abstractions, and it's got me thinking. 

@@ -12,10 +12,14 @@ image:
     attribution:
         text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
         href: https://www.flickr.com/photos/brian-fitzgerald/3334353375
+category: software-craftsmanship
 tags:
-- object-orientation abusers
-- change preventers
-- code smells
+- design
+- clean-code
+- anti-pattern
+- object-orientation-abusers
+- change-preventers
+- code-smells
 - refactoring
 
 ---
@@ -49,42 +53,71 @@ You have an enumeration EmployeeType:
 
 ```
 public enum EmployeeType 
-{ 		
-	Worker, 		
-	Supervisor, 		
-	Manager 	
-} 
+{
+		
+	Worker,
+		
+	Supervisor,
+		
+	Manager
+	
+}
+
 ```
 
 And a class Employee:
 
 ```
-public class Employee 
-{     
-	private float salary;     
-	private float bonusPercentage;     
-	private EmployeeType employeeType;      
+public class Employee
 
-	public Employee(float salary, float bonusPercentage, EmployeeType employeeType)     
-	{         
-		this.salary = salary;         
-		this.bonusPercentage = bonusPercentage;         
-		this.employeeType = employeeType;     
-	}      
+{
+    
+	private float salary;
+    
+	private float bonusPercentage;
+    
+	private EmployeeType employeeType;
 
-	public float CalculateSalary()      
-	{         
-		switch (employeeType)          
-		{             
-			case EmployeeType.Worker:                 
-				return salary;              
-			case EmployeeType.Supervisor:                 
-				return salary + (bonusPercentage * 0.5F);             
-			case EmployeeType.Manager:                 
-				return salary + (bonusPercentage * 0.7F);         
+    
+
+	public Employee(float salary, float bonusPercentage, EmployeeType employeeType)
+    
+	{
+        
+		this.salary = salary;
+        
+		this.bonusPercentage = bonusPercentage;
+        
+		this.employeeType = employeeType;
+    
+	}
+
+    
+
+	public float CalculateSalary() 
+    
+	{
+        
+		switch (employeeType) 
+        
+		{
+            
+			case EmployeeType.Worker:
+                
+				return salary; 
+            
+			case EmployeeType.Supervisor:
+                
+				return salary + (bonusPercentage * 0.5F);
+            
+			case EmployeeType.Manager:
+                
+				return salary + (bonusPercentage * 0.7F);
+        
 		}
 
-        return 0.0F;     
+        return 0.0F;
+    
     }
 }
 ```
@@ -92,113 +125,189 @@ public class Employee 
 It all looks ok. But what happen if you need to calculate the year bonus? You will add another method like this:
 
 ```
-public float CalculateYearBonus()  
-{     
-	switch (employeeType)      
-	{         
-		case EmployeeType.Worker:             
-			return 0;          
-		case EmployeeType.Supervisor:             
-			return salary + salary * 0.7F;         
-		case EmployeeType.Manager:             
-			return salary + salary * 1.0F;	     
+public float CalculateYearBonus() 
+
+{
+    
+	switch (employeeType) 
+    
+	{
+        
+		case EmployeeType.Worker:
+            
+			return 0; 
+        
+		case EmployeeType.Supervisor:
+            
+			return salary + salary * 0.7F;
+        
+		case EmployeeType.Manager:
+            
+			return salary + salary * 1.0F;	
+    
 	}
 
 	return 0.0F;
-} 
+}
+
 ```
 
 See the repetition of the switch? So let's try first the subclass approach: Here is the superclass:
 
 ```
-abstract public class Employee  
+abstract public class Employee
+ 
 { 
 
-	  protected float salary;     
-	protected float bonusPercentage;      
+	
 
-	public Employee(float salary, float bonusPercentage)     
-	{         
-		this.salary = salary;         
-		this.bonusPercentage = bonusPercentage;     
-	}      
+protected float salary;
+    
+	protected float bonusPercentage;
+
+    
+
+	public Employee(float salary, float bonusPercentage)
+    
+	{
+        
+		this.salary = salary;
+        
+		this.bonusPercentage = bonusPercentage;
+    
+	}
+
+    
 
 	abstract public float CalculateSalary();
 
-	  virtual public float CalculateYearBonus()      
-	{ 
-	    return 0.0F;     
+	
+
+virtual public float CalculateYearBonus() 
+    
+	{
+
+	    return 0.0F;
+    
 	}
- }
+
+}
 ```
 
 And here we have the subclasses:
 
 ```
-public class Worker: Employee  
-{ 
+public class Worker: Employee
+ 
+{
 
-	public Worker(float salary, float bonusPercentage)   
-		: base(salary, bonusPercentage)  
-	{}    
 
-	 override public float CalculateSalary()      
-	 {         
-	 	return salary;      
+	public Worker(float salary, float bonusPercentage)
+  
+		: base(salary, bonusPercentage)
+ 
+	{}
+
+  
+
+	 override public float CalculateSalary() 
+    
+	 {
+        
+	 	return salary; 
+    
 	 }
- }
 
-public class Supervisor : Employee 
-{     
+}
 
-	public Supervisor(float salary, float bonusPercentage) 
-	        : base(salary, bonusPercentage)     
-	{}      
+public class Supervisor : Employee
 
-	override public float CalculateSalary()      
-	{         
-		return salary + (bonusPercentage * 0.5F);     
-	}      
+{
+    
 
-	public override float CalculateYearBonus()     
-	{         
-		return salary + salary * 0.7F;     
+	public Supervisor(float salary, float bonusPercentage)
+
+	        : base(salary, bonusPercentage)
+    
+	{}
+
+    
+
+	override public float CalculateSalary() 
+    
+	{
+        
+		return salary + (bonusPercentage * 0.5F);
+    
 	}
- }
+
+    
+
+	public override float CalculateYearBonus()
+    
+	{
+        
+		return salary + salary * 0.7F;
+    
+	}
+
+}
 ```
 
 With the Strategy approach we would create an interface for calculating the remuneration:
 
 ```
-public interface IRemunerationCalculator  	
-{ 		
-	float CalculateSalary(float salary); 		
-	float CalculateYearBonus(float salary); 	
-} 
+public interface IRemunerationCalculator 
+	
+{
+		
+	float CalculateSalary(float salary);
+		
+	float CalculateYearBonus(float salary);
+	
+}
+
 ```
 
 With the interface in place, we can now pass to the employee any class that conforms to that protocol and calculate the correct salary/bonus.
 
 ```
 public class Employee
-{     
-	private float salary;     
-	private IRemunerationCalculator remunerationCalculator;      
+{
+    
+	private float salary;
+    
+	private IRemunerationCalculator remunerationCalculator;
 
-	public Employee(float salary, IRemunerationCalculator remunerationCalculator)     
+    
+
+	public Employee(float salary, IRemunerationCalculator remunerationCalculator)
+    
 	{
-        this.salary = salary;         
-        this.remunerationCalculator = remunerationCalculator;     
-    }      
+        this.salary = salary;
+        
+        this.remunerationCalculator = remunerationCalculator;
+    
+    }
 
-    public float CalculateSalary()     
-    {         
-    	return remunerationCalculator.CalculateSalary(salary);     
-    } 			     
+    
 
-    public float CalculateYearBonus()      
-    {         
-    	return remunerationCalculator.CalculateYearBonus(salary);     
+    public float CalculateSalary()
+    
+    {
+        
+    	return remunerationCalculator.CalculateSalary(salary);
+    
+    }
+			
+    
+
+    public float CalculateYearBonus() 
+    
+    {
+        
+    	return remunerationCalculator.CalculateYearBonus(salary);
+    
     }
 }
 ```
