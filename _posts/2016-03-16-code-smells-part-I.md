@@ -12,11 +12,16 @@ image:
     attribution:
         text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
         href: https://www.flickr.com/photos/brian-fitzgerald/3334353375
+category: software-craftsmanship
 tags:
-- bloaters
-- code smells
-- long classes/methods
+- design
+- clean-code
+- anti-pattern
+- object-orientation-abusers
+- change-preventers
+- code-smells
 - refactoring
+
 ---
 Last weekend I was at [SoCraTes Canaries](https://twitter.com/hashtag/socracan16) and I gave my first talk ever about code smells. Oh boy! How nervous was I! But now that has passed, I was wondering what I should do with all information I gathered. And then I thought, maybe it's a good idea to put it all in a nice blog post.
 

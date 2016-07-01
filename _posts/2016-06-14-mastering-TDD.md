@@ -9,14 +9,15 @@ canonical:
     href: http://www.ananogal.com/blog/mastering-tdd/
 image:
     src: /assets/img/custom/blog/2016-06-14-mastering-TDD.png
+categories: 
+- practices
+- extreme-programming
 tags:
 - classicist
-- mockist
-- mocks
-- red-green-refactor
+- outside-in
 - refactoring
 - TDD
-- test doubles
+- test-doubles
 
 ---
 Two weeks ago I went to [Paul Stringer's](https://twitter.com/paulstringer) course ["Mastering TDD/BDD in iOS"](https://skillsmatter.com/courses/545-paul-stringer-s-mastering-tdd-bdd-for-ios). After the two days, I was exhausted... During the course, we looked at all the theory, completed some exercises. Paul gave us lots of links and books to read and, quite frankly, I was feeling overwhelmed.
