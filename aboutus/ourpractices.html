@@ -3,12 +3,10 @@ layout: default
 group:
   title: About Us
 title: Our Practices
-tags:
-- continuous-delivery
-- Agile
-- software-craftsmanship
-- XP
-- extreme-programming
+category:
+- technology
+- software-craftsmanshi
+- practices
 ---
 <div class="container">
     <div class="services-section">
@@ -49,9 +47,9 @@ tags:
 			  
 		{% for post in posts %}
 			{% assign rank = "" %}
-			{% for otherPostTag in post.tags %}
-				{% for pageTag in page.tags %}
-					{% if otherPostTag | downcase == pageTag | downcase %}
+			{% for otherPostCategory in post.category %}
+				{% for pageCategory in page.category %}
+					{% if otherPostCategory | downcase == pageCategory | downcase %}
 						{% assign rank = rank | append:"I" %}
 					{% endif %}
 				{% endfor %}
