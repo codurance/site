@@ -6,11 +6,10 @@ date: 2016-06-07 15:20:00 +00:00
 author: Giulia Mantuano
 image:
     src: /assets/img/custom/blog/socrates.jpg
-category: community
+category: software-craftsmanship
 tags:
 - event
 - socrates
-- software-craftsmanship
 - design
 - interaction-design
 - ui
