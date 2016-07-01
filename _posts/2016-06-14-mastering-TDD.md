@@ -12,6 +12,7 @@ image:
 categories: 
 - practices
 - extreme-programming
+alias: [/2016/06/14/mastering-TDD/]
 tags:
 - classicist
 - outside-in

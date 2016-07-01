@@ -10,6 +10,7 @@ canonical:
 image:
     src: /assets/img/custom/blog/2016-05-14-retrospective-park/hibiscus.jpg
 category: practices
+alias: [/2016/05/14/retrospective-park/]
 tags:
 - agile 
 - scrum

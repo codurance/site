@@ -7,6 +7,7 @@ author: Giulia Mantuano
 image:
     src: /assets/img/custom/blog/socrates.jpg
 category: software-craftsmanship
+alias: [/2016/06/07/why-socrates-uk-is-not-just-a-conference-for-software-craftsmen/]
 tags:
 - event
 - socrates
