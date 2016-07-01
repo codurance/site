@@ -9,7 +9,7 @@ canonical:
     href: http://tobyret.github.io/Single-Responsibility-Principle
 image:
     src: /assets/img/custom/blog/2016-06-23-single-responsibility-principle.jpg
-category: software-crafstmanship
+category: software-craftsmanship
 tags:
 - SOLID
 - single responsibility
