@@ -7,6 +7,7 @@ author: Mashooq Badar
 image:
    src: /assets/img/custom/blog/penguins.jpg
 category: practices
+alias: [/2016/05/13/initiative-circles/]
 tags:
 - organisation
 - decision-making

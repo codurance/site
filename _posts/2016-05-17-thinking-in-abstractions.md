@@ -7,6 +7,7 @@ author: Mashooq Badar
 image:
    src: /assets/img/custom/blog/abstractions.jpg
 category: software-craftsmanship
+alias: [/2016/06/17/thinking-in-abstractions/]
 tags:
 - design 
 - clean-code

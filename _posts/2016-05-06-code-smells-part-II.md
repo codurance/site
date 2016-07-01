@@ -13,6 +13,7 @@ image:
         text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
         href: https://www.flickr.com/photos/brian-fitzgerald/3334353375
 category: software-craftsmanship
+alias: [/2016/05/07/code-smells-part-II/]
 tags:
 - design
 - clean-code

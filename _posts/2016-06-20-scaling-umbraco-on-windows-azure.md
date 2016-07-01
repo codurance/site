@@ -7,6 +7,7 @@ author: Halima Koundi
 image:
    src: /assets/img/custom/blog/2016-06-20-umbraco-on-azure/umbraco-on-azure.jpg
 category: technologies
+alias: [/2016/06/24/scaling-umbraco-on-windows-azure]
 tags:
 - cloud
 - cloud-services
