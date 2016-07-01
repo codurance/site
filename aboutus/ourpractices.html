@@ -92,7 +92,6 @@ category:
 			<div class="title-header">
 				<h2>Read Related Posts from our Blogs</h2>
 			</div>
-			<div class="row ">
 			<div class="row blog-boxes margin-bottom-40">
 				{% for relatedPost in relatedPostsArray limit: 3 %}
 					{% assign relevantPostAttributes = relatedPost | split:"$" %}
@@ -125,7 +124,6 @@ category:
 						</div>
 					</div>
 				{% endfor %} 
-			</div>
 			</div>
 		{% endif %}
 	
