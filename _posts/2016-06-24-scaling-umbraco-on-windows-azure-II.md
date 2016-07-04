@@ -18,7 +18,7 @@ tags:
 In this second post of the three parts series about how to scale an Umbraco website on Windows Azure, we will install the CMS on our cloud platform.
 
 
-### A one-click process, maybe few more clicks
+### A one-click process, maybe a few more clicks
 
 If you don't have one yet, create your [Windows Azure Free Trial subscription](https://azure.microsoft.com/en-gb/pricing/free-trial/), then log into your portal.
 
