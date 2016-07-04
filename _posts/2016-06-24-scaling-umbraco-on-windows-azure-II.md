@@ -6,6 +6,8 @@ date: 2016-07-03 13:02:00 +00:00
 author: Halima Koundi
 image:
    src: /assets/img/custom/blog/2016-06-20-umbraco-on-azure/umbraco-on-azure.jpg
+categories:
+- technology
 tags:
 - cloud 
 - windows-azure 
