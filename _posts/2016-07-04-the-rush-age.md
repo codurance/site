@@ -12,10 +12,11 @@ image:
     attribution:
       text: Always in a Rush by Michael Gil
       href: https://www.flickr.com/photos/msvg/5712968432
-tags:
+categories:
 - craftsmanship
+tags:
 - practices
-alias: [/2016/07/04/The-Rush-Age]
+- productivity
 ---
 
 We live in the rush age. We are literally overwhelmed by the amount of things we have to do, both at work and outside it. We leave work and have a bunch of emails, Facebook notifications, tweets, text messages (among others), waiting for response. Even worse, we are in bed keeping an eye open looking at our mobile phone in case we get a new notification. [This is ridiculous](http://www.nytimes.com/2016/06/12/fashion/internet-technology-phones-introspection.html?_r=0).
