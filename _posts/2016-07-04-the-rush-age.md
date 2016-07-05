@@ -6,7 +6,7 @@ date: 2016-07-04 10:00:00 +00:00
 author: Sergio Rodrigo Royo
 canonical:
     name: my personal blog
-    href: http://srodrigo.me/?p=183
+    href: http://srodrigo.me/the-rush-age/
 image:
     src: /assets/img/custom/blog/2016-07-04-the-rush-age/always-in-a-rush.jpg
     attribution:
