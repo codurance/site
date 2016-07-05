@@ -10,8 +10,8 @@ canonical:
 image:
     src: /assets/img/custom/blog/2016-07-04-the-rush-age/always-in-a-rush.jpg
     attribution:
-      text: by Mayank Pandey
-      href: http://www.photo-street.com/2011/11/always-in-rush.html
+      text: Always in a Rush by Michael Gil
+      href: https://www.flickr.com/photos/msvg/5712968432
 tags:
 - craftsmanship
 - practices
