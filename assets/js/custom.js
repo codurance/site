@@ -72,6 +72,16 @@ $(document).ready(function() {
 	$('html,body').animate({
 	    scrollTop: $('#services').offset().top
 	}, 600);
+console.log('ga event sending...');
+	 ga('send', 'event', {
+		eventCategory: 'CallToAction',
+		eventAction: 'ClickButton',
+		eventLabel: 'Discover Our Services',
+		value: 1
+	  });
+console.log('ga event sent');
+
+
     });
 
 	announcementOnDevConsole();	
