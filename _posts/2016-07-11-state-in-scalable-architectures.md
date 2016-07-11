@@ -77,7 +77,7 @@ This random numbers generator class depends on the previous seed to generate new
 
 ### Actor State
 
-[Akka](http://akka.io/) is a toolkit that implements the [Actor Model](https://www.wikiwand.com/en/Actor_model). This model handles state with a mix of OOP and FP. This post [this post](http://letitcrash.com/post/28901663062/throttling-messages-in-akka-2) talks about the three basic rules for Akka concurrency.
+[Akka](http://akka.io/) is a toolkit that implements the [Actor Model](https://www.wikiwand.com/en/Actor_model). This model handles state with a mix of OOP and FP. [This post](http://letitcrash.com/post/28901663062/throttling-messages-in-akka-2) talks about the three basic rules for Akka concurrency.
 
 
 >> Rule 1: Each actor processes the messages from its inbox sequentially (not concurrently). So a clerk never picks two or more messages and works them side-by-side.
