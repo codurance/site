@@ -7,9 +7,11 @@
 			  
 		{% for post in posts %}
 			{% assign rank = "" %}
-			{% for otherPostCategory in post.category %}
+			{% for otherPostCategory in post.categories %}
 				{% for pageCategory in page.category %}
-					{% if otherPostCategory | downcase == pageCategory | downcase %}
+					{% assign otherPostCatLowerCase =  otherPostCategory | downcase %}
+					{% assign pageCatLowerCase =  pageCategory | downcase %}
+					{% if otherPostCatLowerCase == pageCatLowerCase %}
 						{% assign rank = rank | append:"I" %}
 					{% endif %}
 				{% endfor %}
@@ -30,12 +32,12 @@
 				{% assign relatedPosts = relatedPosts | append:post.content %}
 				{% assign relatedPosts = relatedPosts | append:"$" %}
 				{% assign relatedPosts = relatedPosts | append:post.date %}              
-				{% assign relatedPosts = relatedPosts | append:"|" %}
+				{% assign relatedPosts = relatedPosts | append:"#|" %}
 			{% endif %}
 		{% endfor %}
 			
 		{% if relatedPosts.size > 0 %}
-			{% assign relatedPostsArray = relatedPosts | split:"|" | sort | reverse %}
+			{% assign relatedPostsArray = relatedPosts | split:"#|" | sort | reverse %}
 			<div class="title-header">
 				<h2>Read Related Posts from our Blog</h2>
 			</div>
