@@ -199,3 +199,13 @@
     <p>Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005.</p>
   twitter: alvarobiz
   github: alvarogarcia7
+
+- id: carlos
+  name: Carlos Morera de la Chica
+  image: /assets/img/custom/team/carlos_morera_de_la_chica.jpg
+  role: Apprentice
+  shortDescription: Carlos is a developer who is constantly looking for new ways to master the art of crafting software. He firmly believes in the software craftsmanship principles and bases his journey towards mastery on them.
+  fullDescription: <p>Carlos is a developer who is constantly looking for new ways to master the art of crafting software. He firmly believes in the software craftsmanship principles and bases his journey towards mastery on them.</p>
+    <p>He has been working professionally as an Android developer for more than 3 years. His current focus is on mastering a new set of skills that will let him continue to grow and make progress in his career.</p>
+  twitter: CarlosMChica
+  github: CarlosMChica
