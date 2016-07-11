@@ -9,6 +9,7 @@ image:
     attribution:
       text: York railway station by Daida Medina
       href: https://www.instagram.com/p/nBD197Ho2F/?taken-by=thelastfreeusername
+alias: [/2016/05/31/unit-vs-integration-akka-testing/]
 tags:
 - testing
 - unit

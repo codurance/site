@@ -6,6 +6,7 @@ date: 2016-03-03 12:10:00 +00:00
 author: Sandro Mancuso
 image:
     src: /assets/img/custom/blog/2016-03-03-cohesion.jpg
+alias: [/2016/03/03/cohesion-cornerstone-software-design/]
 tags:
 - cohesion
 - software design
