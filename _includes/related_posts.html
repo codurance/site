@@ -7,9 +7,12 @@
 			  
 		{% for post in posts %}
 			{% assign rank = "" %}
-			{% for otherPostCategory in post.category %}
+			{% for otherPostCategory in post.categories %}
 				{% for pageCategory in page.category %}
-					{% if otherPostCategory | downcase == pageCategory | downcase %}
+					{% assign otherPostCatLowerCase =  otherPostCategory | downcase %}
+					{% assign pageCatLowerCase =  pageCategory | downcase %}
+					{% if otherPostCatLowerCase == pageCatLowerCase %}
+						{{pageCategory}} == {{otherPostCategory}}
 						{% assign rank = rank | append:"I" %}
 					{% endif %}
 				{% endfor %}
