@@ -2,7 +2,7 @@
 layout: post
 name: State-in-scalable-architectures
 title: 'State in scalable architectures'
-date: 2016-06-30 00:20:00 +00:00
+date: 2016-07-11 00:20:00 +00:00
 author: Felipe Fernández
 image:
     src: /assets/img/custom/blog/state.jpg
@@ -106,7 +106,7 @@ State is data at a given instant in time. But what is the lifespan of that state
 
 * Request scoped: let's imagine an object is holding a [Finite state machine](http://codurance.com/2016/05/10/finite-state-machines-with-akka/) during the lifespan of an HTTP request. This scope is really short so we could keep the state in memory. Most of the times we could simply retry on failures instead of using something more complicated like [Akka Persistence](http://doc.akka.io/docs/akka/current/scala/persistence.html).
 
-* Session scoped: HTTP is a stateless protocol. Remember that *time* is the fundamental word in our definition of state. That means that HTTP doesn't have any built-in mechanism to keep track of state. The concept of session involves a logical group of HTTP requests with some internal state. Classic solution was keeping that state in memory on the service. This solution goes against horizontal scalability. The main point of having stateless services is being able to route requests to different services depending on health and current load of those services. That's not possible when every single service is coupled with the clients through that session state.
+* Session scoped: HTTP is a stateless protocol. Remember that *time* is the fundamental word in our definition of state. That means that HTTP doesn't have any built-in mechanism to keep track of state. The concept of session involves a logical group of HTTP requests with some internal state. Classic solution was keeping that state in memory on the service. This solution goes against [horizontal scalability](https://www.quora.com/What-is-the-difference-between-scaling-horizontally-vs-scaling-vertically-How-can-this-affect-the-design-decisions-that-are-made). The main point of having stateless services is being able to route requests to different services depending on health and current load of those services. That's not possible when every single service is coupled with the clients through that session state.
 
 * Stream scoped: this is the domain of near real time analytics. State is scoped for a window of time to calculate some analytics such as average, count or max.
 
@@ -172,3 +172,5 @@ The alternative is stop contending for positions of memory. Instead of updating 
 ## Conclusion
 
 I hope that after reading this post, you agree with me that Simplicity and Scalability goes together when handling state. Immutability is a powerful idea that is changing the way that we develop software. Tracking what happened, instead of just the final snapshot of those events, gives business flexibility and insights to improve their products. At the same time makes developers and sysadmins lives much easier, as that history of state gives info about why and how a system works.
+
+Thank you for your time, feel free to send your queries and comments to [felipefzdz](http://twitter.com/felipefzdz).
