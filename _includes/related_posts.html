@@ -12,7 +12,6 @@
 					{% assign otherPostCatLowerCase =  otherPostCategory | downcase %}
 					{% assign pageCatLowerCase =  pageCategory | downcase %}
 					{% if otherPostCatLowerCase == pageCatLowerCase %}
-						{{pageCategory}} == {{otherPostCategory}}
 						{% assign rank = rank | append:"I" %}
 					{% endif %}
 				{% endfor %}
