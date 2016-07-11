@@ -202,7 +202,7 @@
 
 - id: carlos
   name: Carlos Morera de la Chica
-  image:
+  image: /assets/img/custom/team/carlos_morera_de_la_chica.jpg
   role: Apprentice
   shortDescription: Carlos is a software developer who is constantly looking for new ways to master the art of crafting software. He firmly believe in the software craftsmanship principles and have based on them his journey towards mastery.
   fullDescription: <p>Carlos is a software developer who is constantly looking for new ways to master the art of crafting software. He firmly believe in the software craftsmanship principles and have based on them his journey towards mastery.</p>
