@@ -9,6 +9,9 @@ image:
 tags:
 - continuous-integration
 - Jenkins
+categories:
+- training
+
 ---
 
 [Jenkins](http://jenkins-ci.org/) is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.

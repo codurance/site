@@ -11,6 +11,8 @@ tags:
 - domain-driven-design
 - incremental-design
 - deliberate-practice
+categories:
+- training-and-coaching
 ---
 
 Katas are great, but not enough. In the past year I’ve been trying to find ways to teach our craftsmen and apprentices how to design software. Although we could discuss good design principles, it was very difficult to find a way to practice them. Katas are great for learning TDD, micro design, working in baby steps, and a few techniques for dealing with legacy code but we need more. We would like to practice requirements gathering, domain modelling, and well-crafted code all together, with the same fast feedback loop we get when we do katas. The problem is that we need a far bigger problem with overlapping rules so that we can experience incremental software design. Inspired by a session we had a [SoCraTes Germany 2015][6], we are evolving a deliberate practice session that allows us to achieve that.
