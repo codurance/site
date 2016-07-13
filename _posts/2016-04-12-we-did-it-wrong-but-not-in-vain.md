@@ -6,11 +6,14 @@ date: 2016-04-12 00:24:00 +00:00
 author: Sandro Mancuso
 image:
     src: /assets/img/custom/blog/2016-04-12-we-did-it-wrong.jpg
+alias: [/2016/04/12/we-did-it-wrong-but-not-in-vain/]
 tags:
 - inflection point
 - design
 - craftsmanship
 - tdd
+categories:
+- expert-advice
 --- 
 
 Yes, there was over engineering. Loads of it. Back in the mid 90s, when I started my career as a developer, the goal was to become an architect. No serious developer would dare writing a single line of code before selecting our preferred design patterns—we would then decide how the business requirements would fit into them. Yes, we would first come up with our architecture, then our macro design (layers) and domain model (including UML diagrams), and then we would think about the business requirements and detailed use cases. Yes, user stories were not really a thing back then. We had long use cases with a basic flow and many alternative flows.

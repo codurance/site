@@ -6,14 +6,11 @@ date: 2015-03-23 14:30:00 +00:00
 author: Mashooq Badar
 image:
     src: /assets/img/custom/blog/estimates.jpg
-alias: [/2015/03/23/project-sizing/]
 tags:
 - estimatation 
 - agile
 - codurance-way
 - backlog
-categories:
-- expert-advice
 ---
 Sizing a project is one of the most important things we do and it is often the first thing we need precisely when we have the least amount of information. During a pre-sales meeting the client will usually ask for a "ballpark" figure so that they can understand if the project is feasible. We try to get as much information as possible before we provide a very high-level figure. The approach we take depends on whether the client already has a well defined backlog or if they are expecting us to create the backlog as part of the estimation. 
 

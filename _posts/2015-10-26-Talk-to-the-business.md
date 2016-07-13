@@ -9,14 +9,11 @@ canonical:
     href: http://www.ananogal.com/blog/talk-to-the-business/
 image:
     src: /assets/img/custom/blog/DDD_SkillsMatter.jpg
-alias: [/2015/10/26/talk-to-the-business/]
 tags:
 - DDD
 - Learning
 - Ubiquitous-language
 - Bounded-context
-categories:
-- expert-advice
 ---
 Almost a month ago, I did this amazing course at [SkillsMatter](https://skillsmatter.com/): ["Eric Evans Domain Driven Design Immersion Workshop"](https://skillsmatter.com/courses/202-domain-model). The course was very intensive and provided me with the opportunity to reinforce a lot of concepts I already knew as well as learn a few more.
 
