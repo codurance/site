@@ -3,10 +3,10 @@
 <div class="container">
 
 		{% assign posts = site.posts %}
-        {% comment %}
-        Initializing arrays
-        You cannot initialize arrays using only Liquid. You can, however, use the split filter to break a string into an array of substrings.
-        {% endcomment %}
+		{% comment %}
+		Initializing arrays
+		You cannot initialize arrays using only Liquid. You can, however, use the split filter to break a string into an array of substrings.
+		{% endcomment %}
 		{% assign relatedPosts = ""  %}
 			  
 		{% for post in posts %}
