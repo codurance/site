@@ -75,3 +75,11 @@ There are some tests around the custom Jekyll plugins for navigation. Run them w
 When you push the *master* branch, Travis CI will kick off [the deployment build](https://travis-ci.org/codurance/site), which will run the tests, generate the site and push it to the *gh-pages* branch.
 
 If you want to push code without deploying a new version of the site, make sure you work in a feature branch, rather than on *master* directly.
+
+# Flight Rules
+
+### Adding an abstract to a post
+
+  * See [Jenkins example post](/site/blob/master/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
+  * Note: comments can only be single line
+  * Note: Even if they are too long, they'll be cut to 30 words
