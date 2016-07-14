@@ -58,12 +58,11 @@
 					{% assign postContent = relevantPostAttributes[6] %}
 					{% assign postDate = relevantPostAttributes[7] %}
 					{% assign abstract = relevantPostAttributes[8] %}
-					{% assign shortContent = postContent %}
 					
 					{% if abstract %}
 						{% assign introductionToPost = abstract %}
 					{% else %}
-						{% assign introductionToPost = shortContent %}
+						{% assign introductionToPost = postContent %}
 					{% endif %}
 
 					<div class="col-md-4 md-margin-bottom-40">
