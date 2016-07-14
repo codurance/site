@@ -12,6 +12,7 @@ tags:
 categories:
 - training
 abstract: Explains, in a step-by-step fashion, how to deploy a jar using Jenkins 
+alias: [/2014/10/03/guide-to-deploying-artifacts-with-jenkins]
 ---
 
 [Jenkins](http://jenkins-ci.org/) is an open-source continuous integration server. At Codurance, we use Jenkins to build and test projects to make sure everything is in order before handing over to the client.
