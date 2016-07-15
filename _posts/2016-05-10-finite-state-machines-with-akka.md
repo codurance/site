@@ -9,12 +9,14 @@ image:
     attribution:
       text: Machine by Olle Svensson  
       href: https://www.flickr.com/photos/ollesvensson/3335131082
+alias: [/2016/05/10/finite-state-machines-with-akka/]
 tags:
 - akka
 - state
 - fsm
 - actors
-
+categories:
+- expert-advice
 ---
 
 As you could remember from previous posts, [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) and   [Part 2](http://codurance.com/2016/04/30/akka-basics/), we're implementing a solution that integrates a sync client with an async system. Today we'll see how to keep track of the async operations so we can provide a sync response to the client. Let's start with the architectural diagram.
