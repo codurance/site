@@ -17,5 +17,9 @@
     jQuery(document).ready(function() {
         App.init();
         Contact.initMap();
+        var gaEvents = window.googleAnalyticsEvents;
+        gaEvents.functions.forEach(function(fireEvent){
+            fireEvent(gaEvents.environment);
+        });
     });
 </script>
