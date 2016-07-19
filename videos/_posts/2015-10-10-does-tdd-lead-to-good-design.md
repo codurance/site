@@ -1,8 +1,9 @@
 ---
-author: Tomaz Tekavec
+author: Sandro Mancuso
 layout: video
+hidden: true
 name: mouseless-programming
-title: "Mouseless programming"
+title: "Does TDD lead to good design"
 video-url: https://www.youtube.com/embed/ApsW72JSVJM
 date: 2015-10-03 09:59:00 +01:00
 ---

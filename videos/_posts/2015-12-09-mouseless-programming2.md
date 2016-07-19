@@ -1,14 +1,11 @@
 ---
 author: Tomaz Tekavec
 layout: video
-type : video
 name: mouseless-programming
 title: "Mouseless programming part II"
 hidden: true
 video-url: https://www.youtube.com/embed/Rcf6cwP_J8M
 date: 2015-11-25 11:59:00 +01:00
-categories:
-- technology
 ---
 
 

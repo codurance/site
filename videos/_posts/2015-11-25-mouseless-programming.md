@@ -1,6 +1,7 @@
 ---
 author: Tomaz Tekavec
 layout: video
+hidden: true
 name: mouseless-programming
 title: "Mouseless programming"
 video-url: https://www.youtube.com/embed/g6kfdlUZARs
