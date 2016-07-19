@@ -2,7 +2,7 @@
 <!--Related Blog Posts-->
 <div class="container">
 
-		{% assign posts = site.posts %}
+		{% assign posts = site.categories.blog %}
 		{% assign relatedPosts = ""  %}
 			  
 		{% for post in posts %}

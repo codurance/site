@@ -84,7 +84,7 @@ group:
             <h2>Related Blogs</h2>
           </div>
 
-          {% assign posts = site.posts %}
+          {% assign posts = site.categories.blog %}
           {% assign relatedPosts = ""  %}
 
           {% for post in posts %}
@@ -148,7 +148,7 @@ group:
       <!-- Recent blogs -->
       <div class="posts margin-bottom-40">
         <div class="headline-v2"><h2>Recent Blogs</h2></div>
-        {% for post in site.posts limit: 7 %}
+        {% for post in site.categories.blog limit: 7 %}
           <div class="blog-thumb blog-thumb-circle margin-bottom-15">
             <div class="blog-thumb-hover">
               <a href="{{ post.url }}">

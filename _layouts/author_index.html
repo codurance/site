@@ -36,7 +36,7 @@ group:
     <div class="col-md-9">
       <h2 class="margin-bottom-20">Blogs</h2>
         {% assign index = true %}
-        {% for post in site.posts %}
+        {% for post in site.categories.blog %}
           {% if post.author contains page.author %}
             {% include post.html post=post %}
           {% endif %}
