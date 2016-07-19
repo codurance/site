@@ -4,7 +4,7 @@ layout: video
 name: shape-your-infrastructure-with-terraform
 title: "Shape your infrastructure with Terraform"
 hidden: true
-video-url: https://www.youtube.com/watch?v=io8lSN4fAqM
+video-url: https://www.youtube.com/embed/io8lSN4fAqM
 date: 2016-07-14 11:59:00 +01:00
 ---
 
