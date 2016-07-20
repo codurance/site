@@ -56,7 +56,7 @@ group:
               <div class="col-sm-9 pull-left">
                 <div class="blog-author-desc">
                   <div class="overflow-h">
-                    <h4>{{ member.name }}</h4>
+                    <h4>{{ page.author | author_links}}</h4>
                     {% if member.twitter %}
                     <ul class="list-inline">
                         <li><a href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"><i class="fa fa-twitter"></i></a></li>
