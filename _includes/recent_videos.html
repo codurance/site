@@ -1,0 +1,7 @@
+{% for post in site.categories.videos limit:3 %}
+	<div class="">
+		<img class="img-responsive full-width">
+			<iframe style="height: 180px; width: 280px;" src="{{post.video-url}}" frameborder="0" allowfn></iframe>
+		</img>
+	</div>
+{% endfor %}
