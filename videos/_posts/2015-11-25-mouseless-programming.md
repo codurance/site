@@ -3,6 +3,7 @@ author: Tomaz Tekavec
 layout: video
 name: mouseless-programming
 title: "Mouseless programming"
+hidden: true
 video-url: https://www.youtube.com/embed/g6kfdlUZARs
 date: 2015-11-25 09:59:00 +01:00
 ---
