@@ -1,0 +1,13 @@
+<div class="posts margin-bottom-40">
+                <div class="headline-v2 bg-color-light">
+                    <h2>Videos</h2>
+                </div>
+		{% for post in site.categories.videos limit:3 %}
+			<div class="">
+				<img class="img-responsive full-width">
+					<iframe style="height: 180px; width: 280px;" src="{{post.video-url}}" frameborder="0" allowfullscreen></iframe>
+				</img>
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			</div>
+		{% endfor %}
+</div>
