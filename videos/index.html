@@ -387,7 +387,9 @@ title: Videos
                     <div class="headline-v2">
                         <h2>Recent Blogs</h2>
                     </div>
-                    {% for post in site.posts limit: 7 %}
+
+	    	    {% assign posts = site.posts | where: "layout", "post" %}
+                    {% for post in posts limit: 7 %}
                     <div class="blog-thumb blog-thumb-circle margin-bottom-15">
                         <div class="blog-thumb-hover">
                           <a href="{{ post.url }}">
