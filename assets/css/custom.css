@@ -412,6 +412,40 @@ body:last-child .btn-u, x:-moz-any-link {
     text-transform: none;
 }
 
+.browse-courses {
+    display: inline-block;
+    border-radius: 6px;
+    margin: 20px 0px 0px 10px;
+}
+
+.contact-us span.browse-courses a {
+    background: white;
+    color: #ff6600;
+    padding: 10px;
+}
+
+.contact-us span.browse-courses a:hover {
+    background: #ff6600;
+    color: white;
+}
+
+.btn-send-message {
+    background: #fafafa;
+    color: #333333;
+    display: block;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    height: 50px;
+    width: 150px;
+    margin: 0 0 0 auto;
+    font-size: 16px;
+}
+
+.btn-send-message:hover {
+    background: #333333;
+    color: white;
+}
+
 /* Author */
 #author-img {
 	width: 100%;
