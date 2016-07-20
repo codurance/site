@@ -11,6 +11,7 @@ tags:
 - Jenkins
 categories:
 - training
+abstract: Explains, in a step-by-step fashion, how to deploy a jar using Jenkins 
 alias: [/2014/10/03/guide-to-deploying-artifacts-with-jenkins]
 ---
 
