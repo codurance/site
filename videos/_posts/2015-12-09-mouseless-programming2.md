@@ -14,8 +14,8 @@ categories:
 
 ## Screencast - Mouseless Programming, Part II
 
-This is the first video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.
+This is the second video of the Mouseless Programming screencast. A simple leap year kata is performed, using TDD process, File and Live templates, and some automatic refactoring tools.
 
-Both mouse and keyboard were used in this video.
+Only keyboard was used for programming in this video.
 
 This video is a part of the blog post [Mouseless Programming](/2015/11/25/mouseless-programming/).
