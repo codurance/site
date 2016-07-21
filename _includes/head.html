@@ -53,6 +53,8 @@
 
     ga('create', '{{site.googleanalytics.account}}', 'codurance.com');
     ga('send', 'pageview');
+    window.googleAnalyticsEvents = { environment: {ga:ga}, functions: []};
+    // fire all events at onload - see _includes/foot.html
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
