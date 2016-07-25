@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: retrospective-park
 title: A Retrospective in the Park
 date: 2016-05-14 00:20:00 +00:00

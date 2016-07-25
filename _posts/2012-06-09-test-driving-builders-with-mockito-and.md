@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: test-driving-builders-with-mockito-and
 title: "Test-driving Builders with Mockito and Hamcrest"
 date: 2012-06-09 23:05:00 +10:00

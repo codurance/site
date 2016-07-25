@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: how-to-start-doing-tdd-in-iOS
 title: How to start doing TDD in iOS
 date: 2015-07-13 12:00:00 +00:00

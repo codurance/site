@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2012-08-14 22:50:42+00:00
 layout: post
+asset-type: post
 slug: encouraging-collaboration-via-design-committee
 title: Encouraging Collaboration via Design Committee
 wordpress_id: 201

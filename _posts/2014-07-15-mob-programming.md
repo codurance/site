@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: mob-programming
 title: Mob Programming, and the importance of fun at work
 date: 2014-07-15 12:00:00 +00:00

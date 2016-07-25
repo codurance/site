@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: craftsmanship-book-released
 title: Software Craftsmanship book is now finished
 date: 2014-03-03 11:37:00.000000000 +00:00

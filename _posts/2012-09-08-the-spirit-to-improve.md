@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2012-09-08 22:08:35+00:00
 layout: post
+asset-type: post
 slug: the-spirit-to-improve
 title: The Spirit to Improve
 wordpress_id: 205

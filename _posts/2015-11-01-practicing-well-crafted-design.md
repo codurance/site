@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: practicing-well-crafted-design
 title: Practicing Well-Crafted Design
 date: 2015-11-01 18:20:00 +00:00

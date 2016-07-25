@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: initiative-circles 
 title: Initiative Circles
 date: 2016-05-13 00:20:00 +00:00

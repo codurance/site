@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: test-deafness
 title: Test Deafness
 date: 2013-08-23 03:26:00.000000000 +01:00

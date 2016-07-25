@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: highly-strung
 title: Highly Strung
 date: 2014-10-02 13:00:00 +00:00

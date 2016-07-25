@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: screencast-testing-and-refactoring
 title: 'Screencast: Testing and Refactoring Legacy Code'
 date: 2012-12-18 14:02:00 +00:00

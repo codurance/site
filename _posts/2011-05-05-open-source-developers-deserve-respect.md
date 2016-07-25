@@ -4,6 +4,7 @@ author: Sandro Mancuso
 slug: open-source-developers-deserve-respect
 date: 2011-05-05 01:52:00.000000000 +01:00
 layout: post
+asset-type: post
 ---
 
 I was recently reading Gojko Adzic's blog

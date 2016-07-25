@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: testing-legacy-code-with-golden-master
 title: Testing legacy code with Golden Master
 date: 2012-11-11 23:54:00 +00:00

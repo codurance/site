@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: appropriate-rigour 
 title: 'Clojure (Prismatic) Schemas are Swagger'
 date: 2015-09-14 13:00:00 +01:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: appropriate-rigour 
 title: 'Appropriate Rigour'
 date: 2015-08-15 21:00:00 +01:00

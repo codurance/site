@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: naming-test-classes-and-methods
 title: Naming Test Classes and Methods
 date: 2014-12-13 00:27:00 +00:00

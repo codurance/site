@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: does-tdd-lead-to-good-design
 title: Does TDD really lead to good design?
 date: 2015-05-12 14:32:00 +00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: clojure-vim-environment
 title: 'Clojure VIM Environment'
 date: 2016-01-10 00:20:00 +00:00

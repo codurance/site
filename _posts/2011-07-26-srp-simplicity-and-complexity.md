@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: srp-simplicity-and-complexity
 title: "SRP: Simplicity and Complexity"
 date: 2011-07-26 02:47:00 +01:00

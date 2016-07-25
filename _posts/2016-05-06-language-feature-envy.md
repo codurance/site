@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Language feature envy
 title: Language feature envy
 date: 2016-05-06 00:20:00 +00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: quality-cannot-be-measured
 title: Code quality cannot be measured
 date: 2014-12-14 00:27:00 +00:00

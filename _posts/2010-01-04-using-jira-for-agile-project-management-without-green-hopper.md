@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2010-01-04 14:28:16+00:00
 layout: post
+asset-type: post
 slug: using-jira-for-agile-project-management-without-green-hopper
 title: Using JIRA for Agile Project Management (without Green Hopper)
 image:

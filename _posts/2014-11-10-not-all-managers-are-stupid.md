@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: not-all-managers-are-stupid
 title: Not all managers are stupid
 date: 2014-11-10 04:20:00 +00:00

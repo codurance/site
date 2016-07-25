@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2010-03-03 08:18:45+00:00
 layout: post
+asset-type: post
 slug: the-relationship-between-product-owner-business-analyst-and-tester
 title: The relationship between Product Owner, Business Analyst and Tester
 image:

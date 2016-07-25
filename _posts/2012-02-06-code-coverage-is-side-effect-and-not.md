@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: code-coverage-is-side-effect-and-not
 title: "Code coverage is a side effect and not an end goal time"
 date: 2012-02-06 22:11:00 +00:00

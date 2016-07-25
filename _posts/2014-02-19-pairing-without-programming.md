@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: pairing-without-programming
 title: Pairing without Programming
 date: 2014-02-19 17:00:00 +00:00

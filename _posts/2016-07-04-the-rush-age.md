@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: The-Rush-Age
 title: The Rush Age
 date: 2016-07-04 10:00:00 +00:00

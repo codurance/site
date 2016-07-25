@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: mentoring-in-software-craftsmanship
 title: "Mentorship in Software Craftsmanship"
 date: 2011-10-05 00:45:00 +01:00

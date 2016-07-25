@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: installing-prezto
 title: How to install Prezto with Zsh for your OS X Terminal
 date: 2015-03-16 22:49:00 +00:00

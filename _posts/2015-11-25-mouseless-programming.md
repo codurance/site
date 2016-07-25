@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: mouseless-programming
 title: 'Mouseless Programming'
 date: 2015-11-25 17:00:00 +00:00

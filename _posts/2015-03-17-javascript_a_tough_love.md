@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: javascript-a_tough_love
 title: JavaScript - A Tough Love
 date: 2015-03-17 10:49:00 +00:00

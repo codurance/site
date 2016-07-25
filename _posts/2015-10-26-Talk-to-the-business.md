@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Talk-to-the-business
 title: Talk to the business
 date: 2015-10-26 09:35:00 +00:00

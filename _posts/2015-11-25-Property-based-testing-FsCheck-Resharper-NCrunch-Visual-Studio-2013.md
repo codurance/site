@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: property-based-testing
 title: 'Property based testing'
 date: 2015-11-25 09:00:00 +00:00
