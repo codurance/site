@@ -1,6 +1,7 @@
 ---
 author: Robert Firek
 layout: video
+asset-type: video
 name: shape-your-infrastructure-with-terraform
 title: "Shape your infrastructure with Terraform"
 hidden: true
