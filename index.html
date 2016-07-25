@@ -16,7 +16,7 @@ layout: default
             <h2>Latest Blogs</h2>
         </div>
         <div class="row blog-boxes margin-bottom-40">
-	    {% assign posts = site.posts | where: "layout", "post" %}
+	    {% assign posts = site.posts | where: "asset-type", "post" %}
             {% for post in posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box homepage-blog-thumb">

@@ -388,7 +388,7 @@ title: Videos
                         <h2>Recent Blogs</h2>
                     </div>
 
-	    	    {% assign posts = site.posts | where: "layout", "post" %}
+	    	    {% assign posts = site.posts | where: "asset-type", "post" %}
                     {% for post in posts limit: 7 %}
                     <div class="blog-thumb blog-thumb-circle margin-bottom-15">
                         <div class="blog-thumb-hover">

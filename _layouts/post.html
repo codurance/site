@@ -83,7 +83,7 @@ group:
           <div class="headline-v2">
             <h2>Related Blogs</h2>
           </div>
-	  {% assign posts = site.posts | where: "layout", "post" %}
+	  {% assign posts = site.posts | where: "asset-type", "post" %}
           {% assign relatedPosts = ""  %}
 
           {% for post in posts %}

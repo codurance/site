@@ -36,7 +36,7 @@ group:
     <div class="col-md-9">
       <h2 class="margin-bottom-20">Blogs</h2>
         {% assign index = true %}
-	{% assign posts = site.posts | where: "layout", "post" %}
+	{% assign posts = site.posts | where: "asset-type", "post" %}
         {% for post in posts %}
           {% if post.author contains page.author %}
             {% include post.html post=post %}

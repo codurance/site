@@ -2,7 +2,7 @@
 <!--Related Blog Posts-->
 <div class="container">
 
-	    	{% assign posts = site.posts | where: "layout", "post" %}
+	    	{% assign posts = site.posts | where: "asset-type", "post" %}
 		{% comment %}
 		Initializing arrays
 		You cannot initialize arrays using only Liquid. You can, however, use the split filter to break a string into an array of substrings.
