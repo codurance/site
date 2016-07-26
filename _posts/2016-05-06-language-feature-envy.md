@@ -119,37 +119,7 @@ Now I can access Note instances using an indexer with code like this:
 Note.Notes.ElementAt(indexForNote);
 ```
 
-Again not ideal but not terrible either. But notice that we are adding up workarounds, all small but it adds up.
-
-We are getting close to emulate Java/Swift enums in C#. The next step is to emulate the "singleton" aspect of each instance of the enum. In the current implementation the following line is false in C#:
-
-```csharp
-Note.C == Note.C;
-```
-
-What we need is for each instance to be ever unique, AKA the "dreadful" singleton. This allows us to compare instances without overriding equals and saves us from having potentially thousands of instances representing the same value. After a bit off head scratching I remembered about the Lazy<t> type. That led me to try it in my note implementation:
-
-
-```csharp
-public class Note
-{
-	public static readonly Note C = new Lazy<Note>(() => new Note(Pitch.C, "C", Accident.None, 0)).Value;
-	public static readonly Note CSharp = new Lazy<Note>(() => new Note(Pitch.CSharp, "C#", Accident.Sharp, 1)).Value;
-	public static readonly Note DFlat = new Lazy<Note>(() => new Note(Pitch.DFlat, "Db", Accident.Flat, 2)).Value;
-	public static readonly Note D = new Lazy<Note>(() => new Note(Pitch.D, "D", Accident.None, 3)).Value;
-	public static readonly Note DSharp = new Lazy<Note>(() => new Note(Pitch.DSharp, "D#", Accident.Sharp, 4)).Value;
-	public static readonly Note EFlat = new Lazy<Note>(() => new Note(Pitch.EFlat, "Eb", Accident.Flat, 5)).Value;
-	...
-}
-```
-
-Success the following expression is now true:
-
-```csharp
-Note.C == Note.C;
-```
-
-If you want to look at the complete implementation it’s on my GitHub [Jaco.Notes.Note](https://github.com/pedromsantos/Jaco/blob/master/Jaco/Notes/Note.cs)
+Again not ideal but not terrible either. But notice that we are adding up workarounds, all small but it adds up. If you want to look at the complete implementation it’s on my GitHub [Jaco.Notes.Note](https://github.com/pedromsantos/Jaco/blob/master/Jaco/Notes/Note.cs)
 
 ### FAQ:
 Why don't you create a proposal to have this implemented in C#?
