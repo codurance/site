@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Unit-vs-Integration-Akka-Testing
 title: 'Unit vs Integration Akka Testing'
 date: 2016-05-31 00:20:00 +00:00

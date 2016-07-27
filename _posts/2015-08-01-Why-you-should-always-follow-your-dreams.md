@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Why-you-should-always-follow-your-dreams!
 title: Why you should always follow your dreams!
 date: 2015-08-05 14:00:00 +01:00

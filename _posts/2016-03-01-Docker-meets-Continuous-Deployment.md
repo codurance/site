@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: docker-meets-continuous-deployment
 title: Docker meets Continuous Deployment
 date: 2016-03-01 00:00:00 +00:00

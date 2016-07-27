@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: interview-with-sandro-mancuso
 title: Q&A about The Software Craftsman
 date: 2015-05-06 01:26:00 +00:00

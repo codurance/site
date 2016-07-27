@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: tell-dont-ask
 title: Tell don't ask
 date: 2014-07-27 12:00:00 +00:00

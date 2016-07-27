@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: starting-craftsmanship-communities
 title: Starting a Software Craftsmanship Community
 date: 2013-11-21 23:56:00.000000000 +01:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: conversations-about-conversations-at-socrates-uk-2015
 title: 'Conversations About Conversations at SoCraTes UK 2015'
 date: 2015-06-07 19:00:00 +01:00

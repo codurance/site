@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: impact-mapping
 title: Impact Mapping
 date: 2015-01-09 10:30:00 +00:00

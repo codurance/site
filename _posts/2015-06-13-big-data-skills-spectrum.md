@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: big-data-skills-spectrum 
 title: 'Big Data Skills Spectrum'
 date: 2015-06-13 19:00:00 +01:00

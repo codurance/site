@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: inflection-point
 title: Inflection Point
 date: 2015-06-17 02:34:00 +00:00

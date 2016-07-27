@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: my-birthday-wish-list
 title: My birthday wish list
 date: 2013-07-30 00:46:00.000000000 +01:00

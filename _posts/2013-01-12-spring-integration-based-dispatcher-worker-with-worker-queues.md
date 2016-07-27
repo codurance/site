@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2013-01-12 21:34:55+00:00
 layout: post
+asset-type: post
 slug: spring-integration-based-dispatcher-worker-with-worker-queues
 title: Spring Integration based Dispatcher-Worker with Worker Queues
 wordpress_id: 213

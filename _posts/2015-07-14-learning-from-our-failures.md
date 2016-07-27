@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: learning-from-our-failures
 title: Learning from our failures
 date: 2015-07-14 17:00:00 +00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: thinking-in-abstractions
 title: Thinking in Abstractions
 date: 2016-06-17 00:20:00 +00:00

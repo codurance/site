@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: queue-based-synchronisation
 title: Queue Based Synchronisation
 date: 2014-07-18 12:00:00 +00:00

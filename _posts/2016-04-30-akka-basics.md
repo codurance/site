@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Akka-basics
 title: 'Akka basics'
 date: 2016-04-30 00:20:00 +00:00

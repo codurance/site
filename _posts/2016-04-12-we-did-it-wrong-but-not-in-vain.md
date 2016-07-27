@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: we-did-it-wrong-but-not-in-vain
 title: We did it wrong, but not all was in vain
 date: 2016-04-12 00:24:00 +00:00

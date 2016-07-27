@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2010-02-16 14:52:47+00:00
 layout: post
+asset-type: post
 slug: maven-mutli-project-thought-and-guidelines
 title: Maven Mutli-Project Thoughts and Guidelines
 image:

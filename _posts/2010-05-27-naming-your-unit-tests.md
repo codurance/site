@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2010-05-27 15:21:25+00:00
 layout: post
+asset-type: post
 slug: naming-your-unit-tests
 title: Naming your Unit Tests
 wordpress_id: 118

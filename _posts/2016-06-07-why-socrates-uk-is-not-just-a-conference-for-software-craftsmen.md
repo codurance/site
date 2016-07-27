@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Why-SoCraTes-UK-is-not-just-a-conference-for-Software-Craftsmen
 title: 'Why SoCraTes UK is not just a conference for Software Craftsmen.'
 date: 2016-06-07 15:20:00 +00:00

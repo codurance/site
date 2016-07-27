@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: interview-for-jaxenter
 title: Interview with Sandro Mancuso - Software Craftsmanship
 date: 2015-09-10 16:36:00 +00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: GitHubAnimator
 title: 'GitHubAnimator'
 date: 2016-01-15 00:20:00 +00:00

@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2009-04-14 13:33:23+00:00
 layout: post
+asset-type: post
 slug: userstories-and-when-enough-is-enough
 title: Userstories and when enough is enough
 wordpress_id: 3

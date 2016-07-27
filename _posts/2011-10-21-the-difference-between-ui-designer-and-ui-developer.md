@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2011-10-21 23:29:50+00:00
 layout: post
+asset-type: post
 slug: the-difference-between-ui-designer-and-ui-developer
 title: The difference between UI Designer and UI Developer
 wordpress_id: 139

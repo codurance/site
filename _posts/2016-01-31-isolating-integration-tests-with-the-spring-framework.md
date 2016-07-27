@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 title: Isolating integration tests and mocking dependencies with Spring Boot
 author: David Hatanian
 image:

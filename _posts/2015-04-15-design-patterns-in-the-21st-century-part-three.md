@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: design-patterns-in-the-21st-century-part-three
 title: 'Design Patterns in the 21st Century: The Adapter Pattern'
 date: 2015-04-15 14:00:00 +01:00

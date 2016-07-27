@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: too-many-cooks
 title: Too Many Cooks
 date: 2014-11-09 11:00:00 +00:00

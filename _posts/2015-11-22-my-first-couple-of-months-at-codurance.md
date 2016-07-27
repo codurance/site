@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: my-first-couple-of-months-at-codurance
 title: 'My first couple of months at Codurance'
 date: 2015-11-22 09:00:00 +00:00

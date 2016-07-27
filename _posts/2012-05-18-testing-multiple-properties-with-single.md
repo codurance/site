@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: testing-multiple-properties-with-single
 title: "Testing multiple properties with single assertion"
 date: 2012-05-18 17:29:00 +00:00

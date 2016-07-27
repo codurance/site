@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: open-financials
 title: Open Financials
 date: 2016-02-22 14:54:00 +00:00

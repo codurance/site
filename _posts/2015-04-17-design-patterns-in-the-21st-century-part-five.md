@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: design-patterns-in-the-21st-century-part-five
 title: 'Design Patterns in the 21st Century: Conclusion'
 date: 2015-04-17 18:00:00 +01:00

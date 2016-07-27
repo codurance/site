@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: balanced-abstraction-principle
 title: Balanced Abstraction Principle
 date: 2015-01-27 10:30:00 +00:00

@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: lsccs-first-code-retreat
 title: "LSCC's First Code Retreat"
 date: 2011-09-20 09:59:00 +01:00

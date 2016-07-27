@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: codereview
 title: 'Code review: Why are we doing it?'
 date: 2015-09-29 00:20:00 +00:00

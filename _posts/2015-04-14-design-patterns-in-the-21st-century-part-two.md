@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: design-patterns-in-the-21st-century-part-two
 title: 'Design Patterns in the 21st Century: The Abstract Factory Pattern'
 date: 2015-04-14 10:00:00 +01:00

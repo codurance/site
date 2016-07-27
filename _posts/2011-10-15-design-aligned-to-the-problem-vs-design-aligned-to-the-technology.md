@@ -3,6 +3,7 @@ author: Mashooq Badar
 comments: true
 date: 2011-10-15 20:02:19+00:00
 layout: post
+asset-type: post
 slug: design-aligned-to-the-problem-vs-design-aligned-to-the-technology
 title: Design aligned to the Problem Vs Design aligned to the Technology
 wordpress_id: 134

@@ -1,6 +1,7 @@
 ---
 author: Sandro Mancuso
 layout: post
+asset-type: post
 name: re-drawing-my-own-map-new-milestone
 title: "Re-drawing my own map: A new milestone"
 date: 2011-05-17 04:38:00 +01:00

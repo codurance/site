@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: google-plus-sign-in-with-scalatra
 title: Google+ Sign-In with Scalatra
 date: 2014-07-10 15:35:00 +00:00

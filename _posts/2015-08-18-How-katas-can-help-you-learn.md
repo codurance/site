@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: How-katas-can-help-you-learn
 title: How katas can help you learn
 date: 2015-08-18 09:35:00 +00:00

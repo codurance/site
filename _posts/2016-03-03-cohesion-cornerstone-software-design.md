@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: cohesion-cornerstone-software-design
 title: Cohesion - The cornerstone of Software Design
 date: 2016-03-03 12:10:00 +00:00

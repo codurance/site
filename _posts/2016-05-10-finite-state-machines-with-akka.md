@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: Finite-state-machines-with-Akka
 title: 'Finite state machines with Akka'
 date: 2016-05-10 00:20:00 +00:00

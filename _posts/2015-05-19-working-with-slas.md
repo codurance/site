@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: working-with-slas
 title: 'Working with SLAs'
 date: 2015-05-19 14:00:00 +01:00

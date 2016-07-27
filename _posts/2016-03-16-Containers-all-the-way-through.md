@@ -1,5 +1,6 @@
 ---
 layout: post
+asset-type: post
 name: containers-all-the-way-through
 title: Containers all the way through...
 date: 2016-03-16 00:00:00 +00:00
