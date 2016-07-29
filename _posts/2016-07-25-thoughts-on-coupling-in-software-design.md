@@ -24,7 +24,7 @@ Coupling is a measure of the strength of that interconnection. Coupling is affec
 Coupling is usually contrasted with [cohesion](http://www.codurance.com/software-creation/2016/03/03/cohesion-cornerstone-software-design/), e.g., low coupling translates into high cohesion and vice-versa.
 
 
-**Levels of Coupling**
+##Levels of Coupling##
 
  
 Coupling can be low / loose / weak or high / tight / strong.
@@ -35,50 +35,48 @@ In loosely coupled systems, on the other hand, individual modules can be studied
 
 The levels of coupling below are ordered from high to low:
 
-- **Content Coupling**: Content coupling, or pathological coupling, occurs when one module modifies or relies on the internal workings of another module. Changing the inner working will lead to the need of changing the dependent module. An example would be a search method that adds an object which is not found to the internal structure of the data structure used to hold information.
+* **Content Coupling**: Content coupling, or pathological coupling, occurs when one module modifies or relies on the internal workings of another module. Changing the inner working will lead to the need of changing the dependent module. An example would be a search method that adds an object which is not found to the internal structure of the data structure used to hold information.
  
-- **Common Coupling**: Global coupling, or common coupling, occurs when two or more functions share global data. Any changes to them have a ripple effect.
+* **Common Coupling**: Global coupling, or common coupling, occurs when two or more functions share global data. Any changes to them have a ripple effect.
 An example of global coupling would be global information status regarding an operation, with the multiple modules reading and writing to that location.
  
-- **Control Coupling**: Control coupling occurs when one module controls the flow of another by passing control information, e.g., a control flag, a comparison function passed to a sort algorithm.
+* **Control Coupling**: Control coupling occurs when one module controls the flow of another by passing control information, e.g., a control flag, a comparison function passed to a sort algorithm.
  
-- **Stamp Coupling**: Stamp coupling, or data structure coupling, occurs when modules share a composite data structure and use only a part of it, possibly different parts. One example is of a print module that accepts an Entity, and retrieves its information to construct a message.
+* **Stamp Coupling**: Stamp coupling, or data structure coupling, occurs when modules share a composite data structure and use only a part of it, possibly different parts. One example is of a print module that accepts an Entity, and retrieves its information to construct a message.
  
-- **Data Coupling**: Data coupling occurs when methods share data, regularly through parameters. Data coupling is better than stamp coupling, because the module takes exactly what it needs, without the need of it knowing the structure of a particular data structure.
+* **Data Coupling**: Data coupling occurs when methods share data, regularly through parameters. Data coupling is better than stamp coupling, because the module takes exactly what it needs, without the need of it knowing the structure of a particular data structure.
  
-- **Message Coupling**: Message coupling is the lowest form of coupling, realized with decentralization and message passing. Examples include Dependency Injection and Observables.
+* **Message Coupling**: Message coupling is the lowest form of coupling, realized with decentralization and message passing. Examples include Dependency Injection and Observables.
 
 
-**Coupling Metrics**
+
+##Coupling Metrics##
+
  
-**Class Level**
+
+###Class Level###
  
 Class level coupling results from implementation dependencies in a system. In general, the more assumptions are made by one class about another, the tighter the coupling.
 
 The strength of coupling is given by the stability of a class, i.e., the amount of changes in dependant classes that need be made if a class changes, and the scope of access, i.e., the scope in which a class is accessed, with the higher scope introducing tighter coupling.
 At class level, the degree of coupling is measured as the ratio of number of messages passed to the number of messages received, i.e.,
 
-<blockquote class="hero">
-	<p><em>DC = MRC / MPC</em></p>
-</blockquote>
+> DC = MRC / MPC
 
 where `MRC` is the received message coupling (the number of messages received by a class from other classes), and `MPC` is the passed message coupling (the number of messages sent by a class to other classes).
 
 Class level is a particular case of the Module level metric.
 
-**Module Level**
+
+###Module Level###
  
 A more general metric, this metric tracks other modules, global data, and outside environment.  The formula computes a module indicator `mc`, where
 
-<blockquote class="hero">
-	<p><em>mc = k / M</em></p>
-</blockquote>
+> mc = k / M
 
 with `k` a proportionality constant and `M` a value calculated by the following formula:
 
-<blockquote class="hero">
-	<p><em>M = di + (a * ci) + d0 + (b * c0) + gd + c * gc) + w + r</em></p>
-</blockquote>
+> M = di + (a * ci) + d0 + (b * c0) + gd + c * gc) + w + r
 
 In the formula above:
 
@@ -92,11 +90,10 @@ In the formula above:
 
 One important note to be made is that as the value of `mc` increases, the overall coupling decreases. In order to have the coupling move upward as the degree of coupling increases, a revised coupling metric, `C`, might be defined as
 
-<blockquote class="hero">
-	<p><em>C = 1 - mc</em></p>
-</blockquote>
+> C = 1 - mc
 
-**Decoupling**
+
+##Decoupling##
  
 Introducing coupling increases the instability of a system. Decoupling is the systematic coupling reduction between modules with the explicit intent of making them more independent, i.e., minimizing the value of `C`, as defined in the previous section.
 
@@ -112,35 +109,36 @@ Stamp coupling can be eliminated by passing actual data.
 
 Data coupling can be eliminated by employing message passing.
 
-One very important principle to guide by in reducing coupling is the Law of Demeter, presented below.
+[law-of-demeter]: https://en.wikipedia.org/wiki/Law_of_Demeter "Law of Demeter"
+One very important principle to guide by in reducing coupling is the [Law of Demeter][law-of-demeter], presented below.
  
 
-**Law of Demeter**
+###Law of Demeter###
  
-Also referred to as the principle of least knowledge, the Law of Demeter is a specific case of loose coupling. The principle states that a unit should only have knowledge of and talk to closely-related units, assuming as little as possible about the structures and properties of anything it interacts with, including its own subcomponents. For example, an object A could call functionality on object B, but should not reach through B to access an object C for its functionality. Instead, object B should facilitate access through its own interface, propagating the request to its subcomponents. Alternatively, A could have a direct reference to C.
+Also referred to as the principle of least knowledge, the [Law of Demeter][law-of-demeter] is a specific case of loose coupling. The principle states that a unit should only have knowledge of and talk to closely-related units, assuming as little as possible about the structures and properties of anything it interacts with, including its own subcomponents. For example, an object A could call functionality on object B, but should not reach through B to access an object C for its functionality. Instead, object B should facilitate access through its own interface, propagating the request to its subcomponents. Alternatively, A could have a direct reference to C.
 
 A more formal definition states that a method M on an object O can invoke the methods of the following objects:
 
-- O
+* O
 
-- M’s parameters
+* M’s parameters
 
-- Any objects created / instantiated within M
+* Any objects created / instantiated within M
 
-- O’s direct subcomponents
+* O’s direct subcomponents
 
-- A global variable, accessible by O, in the scope of M
+* A global variable, accessible by O, in the scope of M
  
 In particular, an object should not call a method on a returned object, i.e., there should be at most one dot in code, e.g., a.Method(), and not a.B.Method().
 
-**Conclusions**
+##Conclusions##
  
 Coupling is unavoidable; otherwise each module would be its own program. However, achieving low coupling should be one of the primary objectives in system design, such that individual modules can be studied and altered without the need of taking into account a lot of information from other modules, errors can be pointed out much more easily, and debugging takes less time, while fixing defects is usually simpler.
 
 Loose coupling leads to high cohesion, and together they lead to maintainable systems.
  
  
-**References**
+##References##
 
 [Coupling (computer programming](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
 
