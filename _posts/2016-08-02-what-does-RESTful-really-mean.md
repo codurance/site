@@ -1,4 +1,21 @@
-# What does RESTful really mean?
+---
+layout: post
+asset-type: post
+name: What-does-RESTful-really-mean
+title: 'What does RESTful really mean'
+date: 2016-08-02 17:00:00 +00:00
+author: Carlos Morera de la Chica
+image:
+    src: /assets/img/custom/blog/RESTful.png
+    attribution:
+      text: http://vichargrave.com/
+      href: http://vichargrave.com/wp-content/uploads/2012/12/RESTful-Area.png
+tags:
+- REST
+- Web API
+- architecture
+
+---
 
 Last month I attended [Fast Track to RESTful Microservices training](https://skillsmatter.com/courses/541-fast-track-to-restful-to-microservices) at [Skillsmatter](https://skillsmatter.com). During the course, we explored what REST APIs can offer to web applications in general and microservices communication in particular. Personally, the most important outcome of the course is a better understanding of what REST really means and what are its pros and cons.
 
@@ -20,11 +37,7 @@ A client-server model induces separation of concerns so that clients are not con
 
 * Stateless
 
-Client context is never stored on the server between requests. Each request has to contain all the necessary information. A stateless server improves:
-
-1. Scalability - Allows the server to quickly free resources and simplifies implementation.
-2. Reliability - Eases recovering from partial failures.
-3. Visibility - Monitoring system does not have to look beyond a single request to determine the nature of the request.
+Client context is never stored on the server between requests. Each request has to contain all the necessary information. A stateless server improves *scalability* by allowing the server to quickly free resources and simplifies implementation, *reliability* eases recovering from partial failures, *visibility* Monitoring system does not have to look beyond a single request to determine the nature of the request.
 
 One of the drawbacks of having a stateless server is decreased network performance as all the needed data has to be sent in each request
 
@@ -42,7 +55,7 @@ Using a layered system reduces complexity by constraining component behaviour su
 
 * Code-On-Demand (Optional)
 
-REST allows clients to extend their functionality by downloading and executing code scripts. This *Simplifies* clients and improves *extensibility*. On the other hand, it reduces *visibility*, that's why is only an optional constraint.
+REST allows clients to extend their functionality by downloading and executing code scripts. This *simplifies* clients and improves *extensibility*. On the other hand, it reduces *visibility*, that's why is only an optional constraint.
 
 ## Elements
 
@@ -69,38 +82,31 @@ Instead of defining new verbs for every possible behaviour in our web service. H
 
 > The operation has no side-effects for which the client is responsible.
 
-| Verbs         | Idempotent     | Safe   |
-| ------------- | -------------- | ------ |
-| GET           | X              | X      |
-| POST          |                |        |
-| PUT           | X              |        |
-| DELETE        | X              |        |
-
 ##### GET
 
-Used to read state from the server. Being a safe operation, it can be executed multiple times without risk of data modification or corruption - calling it once has the same effect as calling it ten times. As an idempotent operation, making multiple identical requests has the same result as a single request.
+Used to read state from the server. Being a **safe** operation, it can be executed multiple times without risk of data modification or corruption - calling it once has the same effect as calling it ten times. As an **idempotent** operation, making multiple identical requests has the same result as a single request.
 
 ##### POST
 
-Usually used to create some state on the server. It's neither safe nor idempotent. Therefore multiple requests will create several resources on the server. As a non-idempotent operation, POST should not be used for operations that deal with money, as in the case of a failed request is done multiple times, we would potentially be transferring money or paying multiple times.
+Usually used to create some state on the server. It's **neither safe nor idempotent**. Therefore multiple requests will create several resources on the server. As a non-idempotent operation, POST should not be used for operations that deal with money, as in the case of a failed request is done multiple times, we would potentially be transferring money or paying multiple times.
 
 ##### PUT
 
-It's most used to update state on the server, although it can also be used to create state. It's Idempotent but not safe as it changes the state of the server. Being an idempotent made PUT a good candidate, for instance, for operations related to money.
+It's most used to update state on the server, although it can also be used to create state. It's **Idempotent** but **not safe** as it changes the state of the server. Being an idempotent made PUT a good candidate, for instance, for operations related to money.
 
 ##### DELETE
 
-It's used to delete state on the server. It's idempotent but not safe as it removes state from the server. It's idempotent as deleting state that has previously been deleted should not have further implications.
+It's used to delete state on the server. It's idempotent but **not safe** as it removes state from the server. It's **idempotent** as deleting state that has previously been deleted should not have further implications.
 
 #### Response Status Codes
 
 The [HTTP status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) provide metadata in the response to the state of the requested resources. They are part of what makes The Web a platform for building distributed systems. They are divided into the following categories:
 
-* 1xx - Metadata
-* 2xx - Everything is fine
-* 3xx - Redirection
-* 4xx - Client did something wrong
-* 5xx - Server did something wrong
+* `1xx` - Metadata
+* `2xx` - Everything is fine
+* `3xx` - Redirection
+* `4xx` - Client did something wrong
+* `5xx` - Server did something wrong
 
 #### Headers
 
@@ -133,14 +139,12 @@ Hypermedia links are composed by a `href` attribute that specifies the URI to ac
 
 Clients start interacting with the app through a fixed URL, from thereon, all further actions happen by the client following the links, formatted using the media type, provided by the server in each response.
 
-Media types and links define the contract between the application server and the client. The client interacts with the system by navigating the application state using the links. This is what HATEOAS (Hypermedia as the engine of application state) really means.
+Media types and links define the contract between the application server and the client. The client interacts with the system by navigating the application state using the links. This is what **HATEOAS** (Hypermedia as the engine of application state) really means.
 
 Hypermedia (in addition to the already defined elements) is what RESTful really means.
 
 ### Richardson Maturity Model
 
-This model has helped me a lot to understand what REST means and how to explain the properties of a web application. It divides the components of a REST system into three levels and provides a way to understand the ideas, concepts and the advantages of RESTful thinking.
-
-I'd say that it's an educational model rather than an assessment mechanism.
+This model has helped me a lot to understand what REST means and how to explain the properties of a web application. It divides the components of a REST system into three levels and provides a way to understand the ideas, concepts and the advantages of RESTful thinking. I'd say that it's an educational model rather than an assessment mechanism.
 
 A detailed explanation of what Richardson Maturity Model is can be found at [Martin Fowler's blog](http://martinfowler.com/articles/richardsonMaturityModel.html).
