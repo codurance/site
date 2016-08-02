@@ -7,9 +7,6 @@ date: 2016-08-02 17:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
     src: /assets/img/custom/blog/RESTful.png
-    attribution:
-      text: http://vichargrave.com/
-      href: http://vichargrave.com/wp-content/uploads/2012/12/RESTful-Area.png
 tags:
 - REST
 - Web API
