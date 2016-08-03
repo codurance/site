@@ -26,25 +26,25 @@ The term REST stands for "REpresentational State Transfer". A possible formal de
 
 ## Constraints
 
-To consider applications as RESTful, applications need to conform to the following REST constraints. Complying with the constraints enables a distributed hypermedia system to have the following desirable non-functional properties: performance, scalability, simplicity, modifiability, visibility, portability and reliability.
+To consider applications as RESTful, applications need to conform to the following REST constraints. Complying with the constraints enables a distributed hypermedia system to have the following desirable non-functional properties: performance, scalability, simplicity, extensibility, visibility, portability and reliability.
 
 * Client-server
 
-A client-server model induces separation of concerns so that clients are not concerned with data storage. Thus, clients code *portability* is improved. On the other hand, the server is not concerned about user interface or user state, so that server can be *simpler* and more *scalable*. Servers and clients can be developed independently, as long as they conform to the defined contract.
+A client-server model favours  separation of concerns so that clients are not concerned with data storage. Thus, clients code *portability* is improved. On the other hand, the server is not concerned about user interface or user state, so that server can be *simpler* and more *scalable*. Servers and clients can be developed independently, as long as they conform to the defined contract.
 
 * Stateless
 
-Client context is never stored on the server between requests. Each request has to contain all the necessary information. A stateless server improves *scalability* by allowing the server to quickly free resources and simplifies implementation, *reliability* eases recovering from partial failures, *visibility* Monitoring system does not have to look beyond a single request to determine the nature of the request.
+Client context is never stored on the server between requests. Each request has to contain all the necessary information. A stateless server improves *scalability* by allowing the server to quickly free resources and simplifies implementation. *Reliability* eases recovering from partial failures. *Visibility*, monitoring system does not have to look beyond a single request to determine the nature of the request.
 
-One of the drawbacks of having a stateless server is decreased network performance as all the needed data has to be sent in each request
+One of the drawbacks of having a stateless server is decreased network performance as all the needed data has to be sent in each request.
 
 * Cacheable
 
-REST applications are web systems; therefore, clients and intermediaries can cache responses. Responses themselves must be defined as cacheable, or not, to prevent clients from reusing stale data that could reduce *reliability* if stale data in the cache differs significantly from the data that would have been generated the request been handled by the server. Caching could eliminate some client-server interaction, thus improving *scalability*, *efficiency* and user-perceived *performance* by reducing average latency.
+REST applications are web systems; therefore, clients and intermediaries can cache responses. Responses themselves must be defined as cacheable, or not, to prevent clients from reusing stale data that could reduce *reliability*. If stale data in the cache differs significantly from the data that would have been generated the request been handled by the server. Caching could eliminate some client-server interaction, thus improving *scalability*, *efficiency* and user-perceived *performance* by reducing average latency.
 
 * Uniform interface
 
-Using a uniform interface simplifies and decouples the architecture and favours the independent evolution of different parts. As explained later on in this post, URIs, resources and hypermedia help to produce a standard interface that improves *visibility* of interactions, *simplifies* the overall system architecture and induces independent evolution. The trade-off is that it degrades *efficiency* since information is transferred in a standard format rather one which is particular to an application's needs.
+Using a uniform interface simplifies and decouples the architecture and favours the independent evolution of different parts. As explained later on in this post, URIs, resources and hypermedia help to produce a standard interface that improves *visibility* of interactions, *simplifies* the overall system architecture and encourage independent evolution. The trade-off is that it degrades *efficiency* since information is transferred in a standard format rather one which is particular to an application's needs.
 
 * Layered system
 
@@ -69,13 +69,13 @@ REST is usually used along with HTTP as its transfer protocol as it offers sever
 
 #### Verbs
 
-Instead of defining new verbs for every possible behaviour in our web service. HTTP introduces a standard set of verbs to handle similar situations in the same way, therefore, removing unnecessary variation and creating a more intuitive API. Each verb has a different combination of two properties that make them suitable for different scenarios.
+Instead of defining new verbs for every possible behaviour in our web service, HTTP introduces a standard set of verbs to handle similar situations in the same way, removing unnecessary variation and creating a more intuitive API. Each verb has a different combination of two properties that make them suitable for different scenarios.
 
-1. Idempotent
+* Idempotent
 
 > The operation can be repeated in the event of failures.
 
-2. Safe
+* Safe
 
 > The operation has no side-effects for which the client is responsible.
 
