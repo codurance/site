@@ -412,6 +412,15 @@ body:last-child .btn-u, x:-moz-any-link {
     text-transform: none;
 }
 
+.browse-courses-box{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.cat-contact-blog-box label {
+	display: inline;
+}
 .browse-courses {
     display: inline-block;
     border-radius: 6px;
@@ -427,6 +436,16 @@ body:last-child .btn-u, x:-moz-any-link {
 .contact-us span.browse-courses a:hover {
     background: #ff6600;
     color: white;
+}
+.cat-label {
+    width: 50%;
+}
+.cat-label-left {
+    float: left;
+    padding-right: 1%;
+}
+.cat-label-right {
+    float: right;
 }
 
 .btn-send-message {
