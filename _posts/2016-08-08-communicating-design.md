@@ -71,7 +71,9 @@ In UML, class members can have the following types of visibility:
   * **Derived**: /, the attribute is calculated from that of an another’s element
   * **Package**: ~
 
-In UML, the following relationships are defined (Figure 1):
+In UML, the following relationships are defined:
+
+{% img /assets/img/custom/blog/2016-08-08-communicating-design/figure-1.png "" %}
 
   * **Dependency**: an unidirectional relationship between two elements that occurs when changes to one element results into the need of changing the other element
   * **Association**: represents a family of links, that can be unidirectional or bidirectional; associations can be named;
@@ -81,18 +83,17 @@ In UML, the following relationships are defined (Figure 1):
   * **Realization**: a class implements an interface
 
 
-TODO:
- Figure 1: Relationships between classes specified by UML
-
 
 _Class Structure Diagrams_
  
 This type of diagrams displays the internal structure of a class. It can include how its collaborators interact with it and with each other.
 
-In UML, the composite [structure diagram](https://en.wikipedia.org/wiki/Composite_structure_diagram) includes internal parts, ports, and connectors. Ports facilitate communication within the class’ parts and with the outside world. Connectors lie between parts and ports (Figure 2).
- 
-TODO:
-Figure 2: Composite structure diagram for a Fibonacci system
+In UML, the composite [structure diagram](https://en.wikipedia.org/wiki/Composite_structure_diagram) includes internal parts, ports, and connectors. Ports facilitate communication within the class’ parts and with the outside world. Connectors lie between parts and ports.
+
+The composite structure diagram for a Fibonacci system is presented below:
+
+{% img /assets/img/custom/blog/2016-08-08-communicating-design/figure-2.png "" %}
+
 
 
 ###Interactions
@@ -116,9 +117,9 @@ Interaction overview diagrams can describe a control flow composed of multiple i
  
 The order of operations between collaborating classes is captured by a message sequence diagram; in UML, they are called sequence diagrams. These types of diagrams describe not only how the classes interact, but also include a temporal element, establishing the order – or sequence – of interactions (Figure 3).
 
-The horizontal arrows display the messages exchanged between the two collaborators. The vertical lines, also called lifelines, capture all the communication that can occur between the two classes.
+The horizontal arrows display the messages exchanged between the two collaborators. The vertical lines, also called lifelines, capture all the communication that can occur between the two classes:
  
-Figure 3: [The Sequence Diagram of sending an email](https://en.wikipedia.org/wiki/Sequence_diagram)
+{% img /assets/img/custom/blog/2016-08-08-communicating-design/figure-3.png "" %}
 
 
 ###State
@@ -127,9 +128,9 @@ System state might be hard to visualize in an environment with complex constrain
 
 Most intuitively, the system can be represented as a state machine with as many nodes as there are states and the conditions switching between states attached to the arrows marking the transition. For increased readability, complex conditions should be abstracted and expressed in concise terms.
 
-In UML, the state diagram represents the states using standardised notation. A filled circle represents the initial state. A hollow circle represents the final state. A rounded rectangle represents a given, named, state. Arrows denote transitions, which are associated to events. The event names are also provided (Figure 4).
+In UML, the state diagram represents the states using standardised notation. A filled circle represents the initial state. A hollow circle represents the final state. A rounded rectangle represents a given, named, state. Arrows denote transitions, which are associated to events. The event names are also provided:
  
-Figure 4: [State Diagram](https://en.wikipedia.org/wiki/State_diagram_(UML)
+{% img /assets/img/custom/blog/2016-08-08-communicating-design/figure-4.png "" %}
 
 
 ##Modeling Techniques
@@ -145,7 +146,7 @@ Using graphical modeling, users don’t have to learn anything but to use the mo
 
 ##Conclusions
  
-Communicating design is as important as designing. Keeping the design buried in developers’ minds and / or in code must be avoided. Instead it should be efficiently communicated, such that everyone involved in a project can get a good level of knowledge.
+Communicating design is as important as designing. Keeping the design buried in developers’ minds and / or in code must be avoided. Instead it should be efficiently communicated, such that everyone involved in a project can get be informed.
  
 
 ##References
@@ -153,6 +154,10 @@ Communicating design is as important as designing. Keeping the design buried in 
 [Class diagram](https://en.wikipedia.org/wiki/Class_diagram#Instance-level_relationships)
 
 [Composite structure diagram](https://en.wikipedia.org/wiki/Composite_structure_diagram)
+
+[Sequence diagram](https://en.wikipedia.org/wiki/Sequence_diagram)
+
+[State diagram(UML)](https://en.wikipedia.org/wiki/State_diagram_(UML)
 
 [Modeling Language](https://en.wikipedia.org/wiki/Modeling_language#Textual_types)
 
