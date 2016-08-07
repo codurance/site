@@ -71,7 +71,7 @@ In UML, class members can have the following types of visibility:
   * **Derived**: /, the attribute is calculated from that of an another’s element
   * **Package**: ~
 
-In UML, the following relationships are defined:
+In UML, the following relationships are defined (Figure 1):
 
   * **Dependency**: an unidirectional relationship between two elements that occurs when changes to one element results into the need of changing the other element
   * **Association**: represents a family of links, that can be unidirectional or bidirectional; associations can be named;
@@ -79,3 +79,83 @@ In UML, the following relationships are defined:
   * **Composition**: a more powerful aggregation relationship, in which the aggregated component cannot 'live' outside the container, e.g., the engine of a car
   * **Generalization**: a class is a specialized form of another class
   * **Realization**: a class implements an interface
+
+
+TODO:
+ Figure 1: Relationships between classes specified by UML
+
+
+_Class Structure Diagrams_
+ 
+This type of diagrams displays the internal structure of a class. It can include how its collaborators interact with it and with each other.
+
+In UML, the composite [structure diagram](https://en.wikipedia.org/wiki/Composite_structure_diagram) includes internal parts, ports, and connectors. Ports facilitate communication within the class’ parts and with the outside world. Connectors lie between parts and ports (Figure 2).
+ 
+TODO:
+Figure 2: Composite structure diagram for a Fibonacci system
+
+
+###Interactions
+ 
+The interactions that take place within a system are as important as its structure, if not more. In reality the behaviour is what users experience, so having it described precisely and modelled early can save everyone involved in the project a lot of headache.
+ 
+
+####Use Cases
+ 
+Users interact with systems in order to satisfy an objective. The set of interactions required to fulfil an objective forms a [use case](https://en.wikipedia.org/wiki/Use_case).
+
+Representing these interactions is very important for visualizing requirements in a compact form, as opposed to a set of user stories. UML defines the [use-case diagram](https://en.wikipedia.org/wiki/Use_Case_Diagram), which involves the different actors and the system.
+ 
+####Interaction Overview
+ 
+At a higher level, the system can be described in terms of interactions between its modules, usually to model control flow. To that extent, UML defines the [interaction overview diagram](https://en.wikipedia.org/wiki/Interaction_overview_diagram) and the [activity diagram](https://en.wikipedia.org/wiki/Activity_diagram).
+
+Interaction overview diagrams can describe a control flow composed of multiple interactions, while activity diagrams go a level of detail lower, describing the actual conditions, logic, and actions.
+ 
+####Detailed Interactions
+ 
+The order of operations between collaborating classes is captured by a message sequence diagram; in UML, they are called sequence diagrams. These types of diagrams describe not only how the classes interact, but also include a temporal element, establishing the order – or sequence – of interactions (Figure 3).
+
+The horizontal arrows display the messages exchanged between the two collaborators. The vertical lines, also called lifelines, capture all the communication that can occur between the two classes.
+ 
+Figure 3: [The Sequence Diagram of sending an email](https://en.wikipedia.org/wiki/Sequence_diagram)
+
+
+###State
+ 
+System state might be hard to visualize in an environment with complex constraints and conditions.
+
+Most intuitively, the system can be represented as a state machine with as many nodes as there are states and the conditions switching between states attached to the arrows marking the transition. For increased readability, complex conditions should be abstracted and expressed in concise terms.
+
+In UML, the state diagram represents the states using standardised notation. A filled circle represents the initial state. A hollow circle represents the final state. A rounded rectangle represents a given, named, state. Arrows denote transitions, which are associated to events. The event names are also provided (Figure 4).
+ 
+Figure 4: [State Diagram](https://en.wikipedia.org/wiki/State_diagram_(UML)
+
+
+##Modeling Techniques
+ 
+Design can be described using two basic methods, textual and graphical. In general, people tend to be more attracted to imagery, but textual models tend to be more descriptive. Hybrids exist, which allow both a high-level overview and the capability to visualise details.
+
+Textual modeling is performed expressing requirements in a formalised language. These models tend to provide more details at the expense of overall overview. Creation speed is considered in some circles to be higher than with graphical methods, because in graphical methods the designers need to switch between mouse and keyboard. Formatting tends to be much faster and of higher quality. Also, the use of versioning comes much more natural, given the text-based format.
+
+However, with textual modeling, understanding a module tends to be a more challenging task. More modern tools have provided means to display a tree-based structure or state machine to overcome this problem, but that is not always enough. One particular problem that cannot be tackled remains animation and simulations, which, if needed, should be considered as grounds for moving to a graphical method.
+
+Using graphical modeling, users don’t have to learn anything but to use the modeling tool. Designing tends to feel less like programming, as users can relate more to the concepts they’re trying to model. When learning a system, it is much easier to go from high level to low level and back to high level.
+ 
+
+##Conclusions
+ 
+Communicating design is as important as designing. Keeping the design buried in developers’ minds and / or in code must be avoided. Instead it should be efficiently communicated, such that everyone involved in a project can get a good level of knowledge.
+ 
+
+##References
+ 
+[Class diagram](https://en.wikipedia.org/wiki/Class_diagram#Instance-level_relationships)
+
+[Composite structure diagram](https://en.wikipedia.org/wiki/Composite_structure_diagram)
+
+[Modeling Language](https://en.wikipedia.org/wiki/Modeling_language#Textual_types)
+
+[Textual vs Graphical Models](http://modeldrivensoftware.net/forum/topics/textual-v-graphical-models)
+
+[Text-based Modeling](http://www.se-rwth.de/~rumpe/publications20042008/Textbased-Modeling.pdf)
