@@ -424,7 +424,7 @@ body:last-child .btn-u, x:-moz-any-link {
 .browse-courses {
     display: inline-block;
     border-radius: 6px;
-    margin: 20px 0px 0px 10px;
+    margin: 20px 10px 12px;
 }
 
 .contact-us span.browse-courses a {
