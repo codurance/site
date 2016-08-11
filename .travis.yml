@@ -4,6 +4,8 @@ script:
 - bundle exec rake
 - _utility/screenshots.sh
 - _utility/publish.sh
+rvm:
+- 2.3.1
 env:
   global:
     secure: ZWuVj0U0npZdUazL8ujkP3xBvDQCJKB6rptCG40304CCxzMfml9MsKkBcmDJU+St4D4MC1jSg3r+Ng+/S8DCeXJM4Vs6uXGHbaY//HTuZj/HjfvOGXNaIlpRlw23NHbaZoZ5dv2HTuIa9QnXvpcNjpd9JorTK9Pf43ovkGEqHYdW3DwF8s6X9ZM2NU/Rob0WKGVZnsWDSnr9+Tz49KEsWZJE/932VNUQfqDkSL1xkBoYjkR3fduCn+RSoqxlqs6Pht3XuzVWhEphA6j+fUvQiG3ga1ZE26pqi6z8FbSTkvv4DSbPk3LlaMM2Es3GK7CnliRLxMd+b7gdbXjRXpxuiX1nkbzIM0sI25JcfUqRrGZMii5Wdv0RbaOJb/4Ul77AD2FO0wfulOS+eIuR6O9gZQ4cJBUk9x9adGFXtnjiYf9VX+diHs0oby3Xg1cuAqv1J/TFS0Zh24Vv+Xa/YE3aDAid9ksG8CIrrHmAlHMzGou6RvIoXfF6jpX/Ar3ocGAGPEiMiJQ2hH/IQryJqFiNnK7gGXF11hr9xH3TINS7+LPUZqLGb1BTkNhYjq+PNHq2RPattOMn1izz3NH6n9s6TmDYCDmMmh6GLy7fG9R9pTBfujuVElGN+Ci4B5drMGWZTZni/MzdR4stascTYxU387NYqgJjTMMdnN68KY13HE4=
