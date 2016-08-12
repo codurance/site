@@ -8,6 +8,8 @@ gem 'jekyll-less'
 gem 'jekyll-tagging'
 gem 'jekyll-redirect-from'
 gem 'therubyracer' # undeclared dependency of jekyll-less
+gem 'rdiscount'
+gem 'jekyll-sitemap'
 
 group :development do
   gem 'travis'
