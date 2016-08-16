@@ -958,6 +958,10 @@ h2.gray-underline:after {
     color: white;
 }
 
+.news-v1 a {
+    color: #e67e22;
+}
+
 @media (max-width: 768px) {
     .practice {
 	min-width: 0px;
