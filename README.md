@@ -27,7 +27,7 @@ To build the site, run `rake build` or `jekyll serve` from the root directory of
 
 ## Serving the Web Site Locally
 
-Running `jekyll serve --watch` will serve the web site at [http://localhost:4000/](http://localhost:4000/) and watch for incremental changes in the background so you can test your site.
+Running `rake serve` will serve the web site at [http://localhost:4000/](http://localhost:4000/) and watch for incremental changes in the background so you can test your site. If you want your page generated quicker then run `rake servequick` which will only generate the most recent 3 blogs and the rest of the site.
 
 The above commands should be executed from the root directory of the project.
 
