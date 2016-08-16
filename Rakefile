@@ -15,4 +15,8 @@ task :serve do
   sh 'bundle exec jekyll serve --watch --trace'
 end
 
+task :servequick do
+  sh 'bundle exec jekyll serve --watch --incremental --limit_posts 3'
+end
+
 task :default => :spec
