@@ -209,12 +209,3 @@
     <p>He has been working professionally as an Android developer for more than 3 years. His current focus is on mastering a new set of skills that will let him continue to grow and make progress in his career.</p>
   twitter: CarlosMChica
   github: CarlosMChica
-
-- id: ioan
-  name: Ioan Fagarasan
-  image: /assets/img/custom/team/ioan_fagarasan.jpg
-  role: Apprentice
-  shortDescription: So far in his career Ioan has done Windows development for Desktop in C and C++, web development in PHP and .NET, and framework development in .NET. The latter introduced him to the concept of writing clean, robust code. Along the way Ioan has started to appreciate its value. Now he's committed to fully embrace this very fine art.
-  fullDescription: <p>So far in his career Ioan has done Windows development for Desktop in C and C++, web development in PHP and .NET, and framework development in .NET. The latter introduced him to the concept of writing clean, robust code. Along the way Ioan has started to appreciate its value. Now he's committed to fully embrace this very fine art.</p> <p>Ioan believes software is awesome, and for that reason he enjoys software engineering, algorithms, and expressing ideas through code both professionally and as a hobby.</p>
-  twitter: ioanfagarasan
-  github: ifagarasan
