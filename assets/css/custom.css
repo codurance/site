@@ -423,8 +423,6 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 .browse-courses {
     display: inline-block;
-    border-radius: 6px;
-    margin: 20px 10px 12px;
 }
 
 .contact-us span.browse-courses a {
@@ -437,6 +435,21 @@ body:last-child .btn-u, x:-moz-any-link {
     background: #ff6600;
     color: white;
 }
+
+.vertical-alignment-parent {
+    display: table;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+.vertical-alignment-child {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+}
+
 .cat-label {
     width: 50%;
 }
