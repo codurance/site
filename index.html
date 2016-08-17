@@ -13,10 +13,10 @@ layout: default
 <div class="section">
     <div class="container">
         <div class="title-header">
-            <h2>Latest Blogs</h2>
+            <h2>Latest Highlights</h2>
         </div>
         <div class="row blog-boxes margin-bottom-40">
-	    {% assign posts = site.posts | where: "asset-type", "post" %}
+	    {% assign posts = site.posts %}
             {% for post in posts limit:3 %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box homepage-blog-thumb">
@@ -174,80 +174,75 @@ layout: default
 <!-- skill and practices panel -->
 <div class="section gray-section">
     <div class="container">
-	<div class="title-header">
-	    <h2 class="gray-underline">How We Work</h2>
-		<p>The way we work is firmly grounded in Software Craftsmanship and Agile principles.</p>
-		<p>We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.</p>
-	</div>
-	<div class="title-header">
-		<h3>Software Craftsmanship</h3>
-		<h3>Agile and Lean Software Development</h3>
-		<h3>Continuous Delivery</h3>
-		<h3>Extreme Programming</h3>
-	</div>
-	<div class="row">
-	    <div class="col-centered-120">
-		<a href="/aboutus/ourpractices">
-		    <button class="btn btn-practices">LEARN MORE</button>
-		</a>
-	    </div>
-	</div>
+		<div class="title-header">
+			<h2 class="gray-underline">How We Work</h2>
+		</div>
+		<div class="row content-boxes" style="align-items: center; display: flex; height: 20em;">
+			<div class="col-md-4 md-margin-bottom-30">
+				<i class="fa fa-3x"></i>
+				<div class="content-box">
+					<p>The way we work is firmly grounded in Software Craftsmanship and Agile principles.</p>
+					<p>We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.</p>
+				</div>
+			</div>
+			<div class="col-md-4 md-margin-bottom-30">
+				<i class="fa fa-3x"></i>
+				<div class="content-box">
+					<a href="/aboutus/howwework/">
+						<img class="img-responsive" src="/assets/img/custom/home/practices.png" alt="codurance practices">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 md-margin-bottom-30">
+				<i class="fa fa-3x"></i>
+				<div class="content-box">
+					<a href="/aboutus/howwework/">
+						<button class="btn btn-practices">LEARN MORE</button>
+					</a>
+				</div>
+			</div>
+		</div>
     </div>
 </div>
 
 <!-- values panel-->
-{{ content }}
 <div class="section">
     <div class="container">
         <div class="title-header">
-            <h2>Our values</h2>
+          <h2>Software Craftsmanship</h2>
+          <p>Software Craftsmanship is at the heart of everything we do. We constantly hone our skills by teaching and learning from others within our company and the wider software development community.</p>
         </div>
-        <div class="row content-boxes">
-            <div class="col-md-4 md-margin-bottom-30">
-                <i class="fa fa-trophy fa-3x"></i>
-                <div class="content-box">
-                    <h3 class="heading-sm">QUALITY</h3>
-                    <p>We don't negotiate on quality. Software must deliver more value with time and not be a source of increasing pain and cost.</p>
+            <div class="row news-v1">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="news-v1-in">
+                        <img class="img-responsive" src="/assets/img/custom/home/the-software-craftsman-book.jpg" alt="">
+                        <h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">The Software Craftsman: by our Co-founder Sandro Mancuso</a></h3>
+                        <p>The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.</p>
+                        <ul class="list-inline news-v1-info no-margin-bottom">
+                            <li><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">Discover more on Good Reads ...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-v1-in">
+                        <img class="img-responsive" src="/assets/img/custom/home/socrates-uk.jpg" alt="">
+                        <h3><a href="http://socratesuk.org/">Software Craftsmanship Un-Conference: Socrates UK</a></h3>
+                        <p>We organise Socrates UK: a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry.</p>
+                        <ul class="list-inline news-v1-info no-margin-bottom">
+                            <li><a href="http://socratesuk.org/">Visit the event website ...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 md-margin-bottom-40">
+                    <div class="news-v1-in">
+                        <img class="img-responsive" src="/assets/img/custom/home/lscc.jpg" alt="">
+                        <h3><a href="https://www.meetup.com/london-software-craftsmanship">London Software Craftsmanship Community</a></h3>
+                        <p>We founded the London Software Craftsmanship Community and have seeded many similar communities in Europe. The community is a collection of like minded software developers who want to learn from each other and hone their craft.</p>
+                        <ul class="list-inline news-v1-info no-margin-bottom">
+                            <li><a href="https://www.meetup.com/london-software-craftsmanship">Join the community on Meetup ...</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 md-margin-bottom-30">
-                <i class="fa fa-exchange fa-3x"></i>
-                <div class="content-box">
-                    <h3 class="heading-sm">COLLABORATION</h3>
-                    <p>Successful software projects are a result of productive partnerships. Collaboration is at the heart of our development practices.</p>
-                </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-30">
-                <i class="fa fa-heart fa-3x"></i>
-                <div class="content-box">
-                    <h3 class="heading-sm">PASSION</h3>
-                    <p>Software development is not just a job for us. It's our passion. We are proud of our work and we are constantly improving.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
-<!-- Sponsoring panel -->
-<div class="section">
-    <div class="container">
-	<div class="row">
-	<div class="col-md-4 col-md-offset-1 margin-top-40">
-	    <h2 style="text-align:center;">We are proud organisers of</h2>
-	</div>
-	<a href="http://www.londonswcraft.com">
-	    <div class="col-md-2">
-		<img class="img sponsoring-img" src="/assets/img/custom/home/london-software-craftsmanship-community-logo-small.png">
-	    </div>
-	    <div class="col-md-3 lscc-title">
-		<p>London Software <br/>Craftsmanship Community</p>
-	    </div>
-	</a>
-	<div class="col-md-2">
-	    <a href="http://socratesuk.org">
-		<img class="img sponsoring-img" src="/assets/img/custom/home/socrates-uk-logo-small.png">
-	    </a>
-	</div>
-	</div>
-    </div>
-</div>
-

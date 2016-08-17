@@ -1,5 +1,5 @@
 url: "http://codurance.com"
-highlighter: pygments
+highlighter: rouge 
 permalink: pretty
 markdown: rdiscount
 rdiscount:
@@ -27,3 +27,4 @@ googleanalytics:
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-paginate
