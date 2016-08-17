@@ -1,33 +1,39 @@
-<!-- Call to action -->
-<div class="section orange-section">
-    <div class="contact-us">
-	<h3>Interested in learning deeper?
-	    <span class="browse-courses">
-		<a href="/services/training">BROWSE OUR COURSES</a>
-	    </span>
-	</h3>
-    </div>
-</div>
-<div class="section gray-section">
-    <div class="container">
-	<div class="col-md-9">
-	    <h3>Send us questions, comments or a simple hello:</h3>
-	    <br />
-
-	    <form class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
-		<input type="hidden" name="_next" value="/aboutus/thanks" />
-		<input type="hidden" name="_subject" value="Codurance Contact" />
-		<label>Name/organisation</label>
-		<input class="form-control" type="text" name="name" required>
+<div class="container content-md">
+  <div class="row">
+    <div class="col-md-9 orange-section"> 
+      <div class="contact-us vertical-alignment-parent">
+		<div class="vertical-alignment-child"> 
+			<h3 class="reset-margin">Interested in deeper learning? 
+				<span class="browse-courses">
+					<a href="/services/training">BROWSE OUR COURSES</a> 
+				</span>
+			</h3> 
+		</div>
+      </div> 
+    </div> 
+  </div>
+  <div class="row">
+	<div class="col-md-9 cta-contact-blog-box">
+		<h3>Send us questions, comments or a simple hello:</h3> 
 		<br />
-		<label>Your e-mail</label>
-		<input class="form-control" type="email" name="_replyto" required>
-		<br />
-		<label>Message</label>
-		<textarea class="form-control" rows="10" name="body" required></textarea>
-		<br />
-		<button id="Send" value="Send" class="btn-send-message" type="submit">SUBMIT</button>
-	    </form>
+		<form class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
+			<input type="hidden" name="_next" value="/aboutus/thanks" />
+			<input type="hidden" name="_subject" value="Codurance Contact" />
+			<label class="cta-label cta-label-left">Name/organisation
+				<input class="form-control" type="text" name="name" required>
+			</label>
+			<label class="cta-label cta-label-right">Your e-mail
+				<input class="form-control" type="email" name="_replyto" required>
+			</label>
+			
+			<br />
+			<label>Message
+				<textarea class="form-control" rows="10" name="body" required></textarea>
+			</label>
+			
+			<br />
+			<button id="Send" value="Send" class="btn-send-message" type="submit">SUBMIT</button>
+		</form>
 	</div>
-    </div>
+  </div>
 </div>
