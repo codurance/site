@@ -12,7 +12,11 @@ task :build do
 end
 
 task :serve do
-  sh 'bundle exec jekyll serve --watch --trace'
+  sh 'bundle exec jekyll serve --watch --trace --port 4000 --host 0.0.0.0'
+end
+
+task :servequick do
+  sh 'bundle exec jekyll serve --watch --incremental --limit_posts 3'
 end
 
 task :default => :spec

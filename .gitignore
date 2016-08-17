@@ -1,6 +1,7 @@
 # Jekyll
 _site
 .bundle
+.jekyll-metadata
 
 # Numerous always-ignore extensions
 *.diff

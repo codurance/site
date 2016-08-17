@@ -1,4 +1,4 @@
-FROM ruby:2.3.0
+FROM ruby:2.3.1
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
@@ -11,5 +11,7 @@ RUN apt-get update && \
 
 WORKDIR /site
 ADD start_site.sh /start_site.sh 
+
+EXPOSE 4000
 
 ENTRYPOINT ["/start_site.sh"]
