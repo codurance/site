@@ -412,7 +412,7 @@ body:last-child .btn-u, x:-moz-any-link {
     text-transform: none;
 }
 
-.cat-contact-blog-box label {
+.cta-contact-blog-box label {
 	display: inline;
 }
 .browse-courses {
@@ -444,14 +444,14 @@ body:last-child .btn-u, x:-moz-any-link {
     padding: 15px;
 }
 
-.cat-label {
+.cta-label {
     width: 50%;
 }
-.cat-label-left {
+.cta-label-left {
     float: left;
     padding-right: 1%;
 }
-.cat-label-right {
+.cta-label-right {
     float: right;
 }
 
