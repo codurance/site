@@ -19,7 +19,7 @@ The challenge of Software development is about building a product which fulfills
 
 The focus for each role within an Agile team is different: Project Managers want to see progress and want a quality product that is in time and value for money; Product Manager wants flexibility; Testers want to measure; Developers wants to write outstanding and sustainable code; Users are looking for a product which helps accomplish their tasks. How is it possible to find an agreement between all of these needs and build a product which could be a good compromise between building the right thing, building the thing right and building it in time?
 
-In order to build a shared understanding about the product vision, goals and values it is necessary to have every team member involved in the process (real users included!). User Stories are a tool that help accomplish that: they improve communication within teams and stakeholders and reduce the risk of misinterpreting product development requirements.
+In order to build a shared understanding of the product vision, goals and values it is necessary to have every team member involved in the process (real users included!). User Stories are a tool that help accomplish that: they improve communication within teams and stakeholders and reduce the risk of misinterpreting product development requirements.
 
 ### What is a User Story?
 
