@@ -62,7 +62,7 @@ The elements of a good User Story can be summarised with the acronym INVEST:
 
 User Stories should be **INDEPENDENT** of one another to avoid prioritisation and planning issues. An independent story can be implemented at any time of the or removed from the product backlog without having a negative impact on the other stories. 
 
-Stories are not requirements written in stones; stories are **NEGOTIABLE**. During the conversation phase the Customer Team and the Development Team discuss the details and requirements needed to implement the story. 
+Stories are not requirements written in stones; stories are **NEGOTIABLE**. During the conversation phase, the Customer Team and the Development Team discuss the details and requirements needed to implement the story. 
 
 A Story must be **VALUABLE** to the user (who will use the product) or the customer (who will buy the product). This is the most important part of a User Story. The best way to achieve this is to have both real users and customers in the Customer Team so that they can write stories by themselves.
 
