@@ -16,7 +16,7 @@ tags:
 
 ---
 
-Some time ago I was invited to take part in a online panel about continuous delivery. ["Continuous Discussions"](http://electric-cloud.com/lp/continuous-discussions/) is a series of one-hour long panel discussions between people from different backgrounds about various aspects of continuous delivery. The topic of my panel was [Deployment Automation 2.0](http://electric-cloud.com/blog/2016/07/continuous-discussions-c9d9-podcast-episode-46-deployment-automation-2-0/) where we spoke about patterns in the automation of deployments and possible future changes in this area.
+Some time ago I was invited to take part in a online panel about continuous delivery. [Continuous Discussions](http://electric-cloud.com/lp/continuous-discussions/) is a series of one-hour long panel discussions between people from different backgrounds about various aspects of continuous delivery. The topic of my panel was [Deployment Automation 2.0](http://electric-cloud.com/blog/2016/07/continuous-discussions-c9d9-podcast-episode-46-deployment-automation-2-0/) where we spoke about patterns in the automation of deployments and possible future changes in this area.
 
 At the beginning, we were asked to define "Must Have's" of any deployment automation. When I was looking for these "Must Have's" I tried to identify the elements which were most important for me during the introduction of continuous delivery. What struck me the most was taking many things required by this process for granted. Tools or the readiness of an organisation for automation were not always in my mind when I started to automate "things" in different projects. This preparation gave me the possibility to identify my three pillars of good continuous delivery.
 
@@ -36,7 +36,7 @@ At the beginning, we were asked to define "Must Have's" of any deployment automa
 
 **Do it together** In my opinion the responsibility for continuous delivery should be shared by the team. By the team I mean all people involved in the project. Not only software developers, not only system administrators, we should also involve business stakeholders. Understanding continuous deployment, by all members of the team, strengthens knowledge about the software and improves cooperation. Our software is no longer just lines of code, it is also the place where this software lives.
 
-**No Silo Culture** Every technical person in the team should be able to start, improve and fix the continuous delivery process. I understand that this can be a challenge and many failures can appear, but only including people make your continuous delivery useful. Without the engagement of your whole team you create an invisible wall between the software development and its deployment. This can ruin all efforts of introducing automation, because your process will not be aligned with changes taking place in the code.
+**No Silo Culture** Every technical person in the team should be able to start, improve and fix the continuous delivery process. I understand that this can be a challenge and the team may face many failures, but by being inclusive, you can make your continuous delivery a beneficial process. Without the engagement of your whole team you create an invisible wall between the software development and its deployment. This can ruin all efforts of introducing automation, because your process will not be aligned with changes taking place in the code.
 
 ### Just three?
 
