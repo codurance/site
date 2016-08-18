@@ -3,6 +3,7 @@ author: Samir Talwar
 layout: video
 asset-type: video
 name: 4-rules-of-simple-design
+location: " I T.A.K.E. Unconference- Bucharest, Romania"
 image:
     src: /assets/img/custom/videos/4-rules-of-simple-design.png
 title: "4 Rules of Simple Design"

@@ -3,6 +3,7 @@ author: Sandro Mancuso
 layout: video
 asset-type: video
 name: interaction-driven-design
+location: "Craft - Budapest"
 image:
     src: /assets/img/custom/videos/interaction-driven-design.jpg
 title: "Interaction Driven Design"

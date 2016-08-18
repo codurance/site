@@ -3,6 +3,7 @@ author: Samir Talwar
 layout: video
 asset-type: video
 name: understanding-your-type-system
+location: "Virtual JUG (vJUG)"
 image:
     src: /assets/img/custom/videos/understanding-your-type-system.jpg
 title: "Highly Strung: Understanding your Type System"

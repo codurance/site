@@ -3,6 +3,7 @@ author: Sandro Mancuso
 layout: video
 asset-type: video
 name: crafted-design
+location: "Lean Agile, Scotland"
 image:
     src: /assets/img/custom/videos/crafted-design.png
 title: "Crafted Design"

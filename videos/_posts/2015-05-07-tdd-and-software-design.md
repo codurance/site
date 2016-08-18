@@ -3,6 +3,7 @@ author: Sandro Mancuso
 layout: video
 asset-type: video
 name: tdd-and-software-design
+location: "Hangout on Air"
 image:
     src: /assets/img/custom/videos/tdd-and-software-design.jpg
 title: "TDD and Software Design"

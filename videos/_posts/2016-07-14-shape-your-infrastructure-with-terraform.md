@@ -3,6 +3,7 @@ author: Robert Firek
 layout: video
 asset-type: video
 name: shape-your-infrastructure-with-terraform
+location: "Devoxx Poland"
 image:
     src: /assets/img/custom/videos/shape-infra-with-terraform.jpg
 title: "Shape your infrastructure with Terraform"

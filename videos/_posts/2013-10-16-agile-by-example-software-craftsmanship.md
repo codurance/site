@@ -3,6 +3,7 @@ author: Sandro Mancuso
 layout: video
 asset-type: video
 name: agile-by-example-software-craftsmanship
+location: "Warsaw, Poland"
 image:
     src: /assets/img/custom/videos/agile-by-example-software-craftsmanship.jpg
 title: "AgileByExample: Software Craftsmanship"

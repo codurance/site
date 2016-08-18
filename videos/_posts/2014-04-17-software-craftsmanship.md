@@ -3,6 +3,7 @@ author: Sandro Mancuso
 layout: video
 asset-type: video
 name: software-craftsmanship
+location: "Devoxx France"
 image:
     src: /assets/img/custom/videos/software-craftsmanship.png
 title: "Test Driving Algorithms"
