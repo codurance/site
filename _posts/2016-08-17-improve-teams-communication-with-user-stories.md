@@ -4,7 +4,7 @@ comments: true
 date: 2016-08-17 14:25:09+00:00
 layout: post
 asset-type: post
-slug: hello
+slug: improve-teams-communication-with-user-stories
 title: Improve team's communication with User Stories
 image:
     src: /assets/img/custom/blog/user-stories-sketchnote.jpg
@@ -83,6 +83,6 @@ User Stories have been designed to build shared understanding between the Custom
 
 I would like to share with you my sketchnote about the topic. I hope it can help you remember the core elements of User Stories and the reason why they are so important.
 
-
-![User Stories core elements sketchnote](/assets/img/custom/blog/2016-08-17-improve-teams-communication-with-user-stories/user-stories-overview-sketchnote.jpg =500x)
+<p align="center" >
+<img src="/assets/img/custom/blog/2016-08-17-improve-teams-communication-with-user-stories/user-stories-overview-sketchnote.jpg" height="500px" alt="User Stories core elements sketchnote"/></p>
 
