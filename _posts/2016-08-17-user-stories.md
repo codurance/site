@@ -35,7 +35,7 @@ A User Story is made by 3 elements:
 
 **The Conversation** is the most important element of a User Story. To avoid misinterpretation the Customer Team (Product Manager, Project Manager, Tester, Interaction Designer, Users) and the Developers Team start a discussion around the description to identify its details and ensure that the developer will build the right solution meeting the needs of the user.
 
-**The Confirmation** are the criteria, written as acceptance tests, which determine when a story can be considered "DONE".
+**The Confirmation** is the criteria for when a story can be considered "DONE". The criteria may be written as acceptance tests.
 
 A User Story is always written from the perspective of the user. Common description formats that can help teams new to Agile practices as SCRUM are:
 
