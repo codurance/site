@@ -96,3 +96,4 @@ I would like to share with you my sketchnote about the topic. I hope it can help
 <p align="center" >
 <img src="/assets/img/custom/blog/2016-08-17-improve-teams-communication-with-user-stories/user-stories-overview-sketchnote.jpg" height="500px" alt="User Stories core elements sketchnote"/></p>
 
+Feel free to send your queries and comments to [GiuliaMantuano](http://twitter.com/GiuliaMantuano).
