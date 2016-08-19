@@ -17,7 +17,7 @@ tags:
 
 The challenge of Software development is about building a product which fulfills both business and users expectations. 
 
-The focus for each role within an Agile team is different: Project Managers want to see progress and want a quality product that is in time and value for money; Product Manager wants flexibility; Testers want to measure; Developers wants to write outstanding and sustainable code; Users are looking for a product which helps accomplish their tasks. How is it possible to find an agreement between all of these needs and build a product which could be a good compromise between building the right thing, building the thing right and building it in time?
+The focus for each role within an Agile team is different: Project Managers want to see progress and want a quality product that is delivered on time and gives value for money; Product Managers want flexibility; Testers want to measure; Developers want to write outstanding and sustainable code; Users are looking for a product which helps accomplish their tasks. How is it possible to find an agreement between all of these needs and build a product which could be a good compromise between building the right thing, building the thing right and building it in time?
 
 In order to build a shared understanding of the product vision, goals and values it is necessary to have every team member involved in the process (real users included!). User Stories are a tool that helps accomplish that: they improve communication within teams and stakeholders and reduce the risk of misinterpreting product development requirements.
 
@@ -31,7 +31,7 @@ A User Story is made by 3 elements:
  - Conversation
  - Confirmation
 
-**The Card** is the written description of the feature to implement. It must be short, 1 or 2 sentences maximum, because it acts as a reminder to discuss the feature during the Conversation phase.
+**The Card** is the written description of the feature to implement. It must be short, one or two sentences maximum, because it acts as a reminder to discuss the feature during the Conversation phase.
 
 **The Conversation** is the most important element of a User Story. To avoid misinterpretation the Customer Team (Product Manager, Project Manager, Tester, Interaction Designer, Users) and the Developers Team start a discussion around the description to identify its details and ensure that the developer will build the right solution meeting the needs of the user.
 
