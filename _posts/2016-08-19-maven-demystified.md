@@ -23,7 +23,7 @@ Due to my Android development background, I am more used to [Gradle](https://gra
 
 > Maven is a build and dependencies management system used primarily for Java projects. 
 
-It provides the following features:
+Key features include:
 
 * Create new projects through [archetypes](#archetype_plugin).
 * Project configuration in [POM file](#pom) and [Settings file](#settings)
@@ -47,7 +47,7 @@ To facilitate a default configuration for all project, Maven provides what is kn
 
 ## <a name="settings"></a> The Settings File
 
-As mentioned above, the POM file contains the project configuration, whilst the [Settings file](https://maven.apache.org/settings.html) contains the user specific configuration. There can be two settings files, the Global settings file, situated in the Maven install directory, and the User settings file, situated in the user's Maven install.
+As mentioned above, the POM file contains the project configuration, whilst the [Settings file](https://maven.apache.org/settings.html) contains the user specific configuration. There can be two settings files, the Global settings file, situated in the Maven install directory, and the user's settings file that is situated in the user's home directory.
 
 The settings file can provide the following configuration:
 
