@@ -136,11 +136,11 @@ Maven [Repositories](https://maven.apache.org/guides/introduction/introduction-t
 
 There are two types of repositories `local` and `remote`, both are structured the same way. The local repositories live in the users' local machines and are used as a cache of the remote repositories, providing offline building capabilities. The remote repository can be divided into two subgroups, `public` and `internal`. Public repositories hold artifacts that are publicly available, whilst internal repositories are created in organisations to share internal artifacts between development teams.
 
-It's strongly recommended that when using maven, dependencies JARs are not stored in the CVS, but in the repositories. Doing so, Maven is able to handle transitive dependencies, as all dependencies information is available through the POM file and the Maven repositories.
+It's strongly recommended that when using maven, dependencies JARs are not stored in source control, but in the repositories. Doing so, Maven is able to handle transitive dependencies, as all dependencies information is available through the POM file and the Maven repositories.
 
 ## <a name="profiles"></a> Build Profiles
  
-Maven [Build Profiles](http://maven.apache.org/guides/introduction/introduction-to-profiles.html) are use used to facilitate portable builds. The build profiles modify the POM file at build time to provide equivalent-but-difference parameters that are environment dependent. For example, it is the perfect place to define filesystem references that are different for each user.
+Maven [Build Profiles](http://maven.apache.org/guides/introduction/introduction-to-profiles.html) are used to facilitate portable builds. The build profiles modify the POM file at build time to provide equivalent-but-difference parameters that are environment dependent. For example, it is the perfect place to define filesystem references that are different for each user.
 
 Profiles provide properties that can be referenced in the POM file. The properties are defined in the `<properties>` section in the profile declaration.
 
