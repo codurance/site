@@ -1,31 +1,3 @@
-var Contact = function () {
-
-    var coordinates = {'lat': 51.523876,
-                       'lng': -0.100533};
-    return {
-
-        //Map
-        initMap: function () {
-					var map;
-					$(document).ready(function(){
-						if ( $( "#map" ).length ) {
-							map = new GMaps({
-								div: '#map',
-                                lat: coordinates.lat,
-                                lng: coordinates.lng,
-							  });
-							var marker = map.addMarker({
-                                lat: coordinates.lat,
-                                lng: coordinates.lng,
-					            title: 'Codurance Ltd'
-					          });
-						}
-
-					});
-        }
-
-    };
-}();
 
 var announcementOnDevConsole = function(){
 	try{
