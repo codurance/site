@@ -57,7 +57,7 @@ The Long Parameter List is when you have a method that has more than 3 parameter
 This case is when we use primitives instead of value types for simple tasks. Sometimes the use of primitives is justifiable, but when you start to have behaviour attached to this primitives, then it's time to stop and think that maybe a value type is in order. A simple example is a currency: we tend to put it in a float or double, instead of encapsulating it in a value type.
 
 #### Long Method / Large Class
-This kind of code smell happens when you have a big method. But when do you know that a method has become too big? Well, I have the rule that with more than five lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines is just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) the [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)).
+This kind of code smell happens when you have a big method. But when do you know that a method has become too big? Well, I have the rule that with more than five lines, you should, at least, look at it again. But, as [Sandro](https://twitter.com/sandromancuso) told me before, the right number of lines is just enough lines so a method only does one thing (and so it conforms to the 1st principle of [SOLID][1] the [Single responsibility principle][2].
 
 
 To do this blog I started to look at my old code when I hadn't woken up yet to craftsmanship: if it was working that was good enough for me. Here's the code in Objective-C:
@@ -266,3 +266,6 @@ As we can see it's really easy to let a method grow. But it's really easy to ref
 In general, bloaters are viewed as code that, over time, "gets out of hand". 
 
 Remember, code smells sometimes can't be removed, but it's good to know that they are there and you know **why** they are there.
+
+[1]: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
+[2]: https://en.wikipedia.org/wiki/Single_responsibility_principle)
