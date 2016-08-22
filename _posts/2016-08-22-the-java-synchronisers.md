@@ -38,7 +38,7 @@ When a thread invokes a [synchronized method](https://docs.oracle.com/javase/tut
 
 ### <a name="sync-statements"></a> Synchronized statements
 
-Provides a more fin-grained synchronization mechanism. [Synchronized statements](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html) must specify the object that provides the intrinsic lock. 
+Provides a more fine-grained synchronization mechanism. [Synchronized statements](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html) must specify the object that provides the intrinsic lock. 
 
 Synchronizing over separated lock objects can provide fields synchronization, without forzing synchronization between methods calls.
 
