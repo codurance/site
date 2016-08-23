@@ -703,7 +703,7 @@ h3.subject-header {
 
 .contact-us a {
     width: 300px;
-    pardding: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     margin: 10px auto 0px auto;
     border: 1px solid white;
     border-radius: 6px;
@@ -887,14 +887,6 @@ h3.subject-header {
 		border-bottom: solid 2px #e67e22 !important;
 	}
 
-	.header .navbar-nav > li > a,
-	.header .navbar-nav > li > a:hover,
-	.header .navbar-nav > li > a:focus,
-	.header .navbar-nav > .active > a,
-	.header .navbar-nav > .active > a:hover,
-	.header .navbar-nav > .active > a:focus {
-		background: none;
-	}
 
 	.header .navbar-nav > .open > a,
 	.header .navbar-nav > .open > a:hover,
@@ -905,6 +897,14 @@ h3.subject-header {
 	.header .navbar-nav > li:hover > a {
         color: #e67e22 !important;
     }
+
+@media (max-width: 991px) {
+    .header .navbar-nav > .active > a, 
+    .header .navbar-nav > .active > a:hover, 
+    .header .navbar-nav > .active > a:focus {
+        background: #e67e22;
+    }
+}
 
 /* Pedro's Command Prompt Envy blog */
 
