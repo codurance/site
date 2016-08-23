@@ -28,7 +28,7 @@ tags:
 
 ### Some background
 
-Some of you may know me from the various meetups in the city, especially my attendance at a number of [LJC](www.meetup.com/Londonjavacommunity/) and [LSCC](www.meetup.com/london-software-craftsmanship) meetup events. Attending these events I learnt about various conferences like **Devoxx**, **SoCraTes**, **JAX London**, **Java2Days**, **OpenFest**, and I ended up attending and later presenting on various topic including [Adopt OpenJDK](https://java.net/projects/adoptopenjdk/pages/AdoptOpenJDK).
+Some of you may know me from the various meetups in the city, especially my attendance at a number of [LJC](http://www.meetup.com/Londonjavacommunity/) and [LSCC](http://www.meetup.com/london-software-craftsmanship) meetup events. Attending these events I learnt about various conferences like **Devoxx**, **SoCraTes**, **JAX London**, **Java2Days**, **OpenFest**, and I ended up attending and later presenting on various topic including [Adopt OpenJDK](https://java.net/projects/adoptopenjdk/pages/AdoptOpenJDK).
 
 During this time I met a lot of people with various levels of experience and my interest and urge to learn more about the Java/JVM platform, Code Quality, Software Design, XP Practices, Software Craftsmanship, etc..., were on the rise and saw no end. And whilst attending these events I came across [Sandro](https://twitter.com/sandromancuso) and [Mash](https://twitter.com/mashooq), who were in those days hosting [LSCC](www.meetup.com/london-software-craftsmanship) events. I went to many of [LSCC](www.meetup.com/london-software-craftsmanship) events, especially liked the hands-on sessions (which are still my favourite). 
 

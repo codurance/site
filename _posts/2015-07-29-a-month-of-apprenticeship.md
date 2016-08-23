@@ -46,7 +46,7 @@ And a lot of the new things I was trying to bring in from outside were rejected,
 When I heard [Sandro](https://twitter.com/sandromancuso) and [Mash](https://twitter.com/mashooq) talk about how important it is to spend your main working time somewhere you can improve, it really hit home. In [The Software Craftsman](http://www.amazon.co.uk/books/dp/0134052501), I read inspiring words about what it meant to take charge of your career.
 I realized I needed to make a bigger change to get where I wanted to be.
 
-I quit my job (it had three months notice) and applied in London, hoping to get accepted at Codurance. I was intrigued by the opportunity to work with [awesome craftsmen](http://codurance.com/aboutus/ourteam/) and to have a few months of focussed learning in my apprenticeship.
+I quit my job (it had three months notice) and applied in London, hoping to get accepted at Codurance. I was intrigued by the opportunity to work with [awesome craftsmen](http://codurance.com/company/#theteam) and to have a few months of focussed learning in my apprenticeship.
 As it turned out, I was a fit and they wanted me to start as early as possible. Organizing the move with no vacation time in between my jobs was a challenge, but I managed.
 
 ##Starting my apprenticeship

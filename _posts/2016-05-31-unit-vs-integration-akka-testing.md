@@ -20,7 +20,7 @@ categories:
 - software-creation
 ---
 
-This is the sixth post in the series about integrating sync clients with async systems ([1, ](http://codurance.com/2016/04/28/async-systems-with-sync-clients/)[2, ](http://codurance.com/2016/04/30/akka-basics/)[3, ](http://codurance.com/2016/05/10/finite-state-machines-with-akka/)[4, ](http://codurance.com/2016/05/16/publish-subscribe-model-in-kafka/)[5](http://codurance.com/2016/05/16/coordination-in-akka/)). Here we'll see how to test [Akka actors](http://doc.akka.io/docs/akka/current/scala/actors.html) with different testing styles.
+This is the sixth post in the series about integrating sync clients with async systems ([1, ](http://codurance.com/2016/04/28/async-systems-with-sync-clients/)[2, ](http://codurance.com/2016/04/30/akka-basics/)[3, ](http://codurance.com/2016/05/10/finite-state-machines-with-akka/)[4, ](http://codurance.com/2016/05/16/publish-subscribe-model-in-kafka/)[5](http://codurance.com/2016/05/25/coordination-in-akka/)). Here we'll see how to test [Akka actors](http://doc.akka.io/docs/akka/current/scala/actors.html) with different testing styles.
 
 
 ## Unit vs Integration Testing

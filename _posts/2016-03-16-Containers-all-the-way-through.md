@@ -93,7 +93,7 @@ There are a number of pros and cons between these systems when we look at them i
 
 ### Word of thanks and stay in touch
 
-Thank you for your time, feel free to send your queries and comments to [theNeomatrix369](http://twitter.com/theNeomatrix369). Big thanks to my colleagues, our DevOps craftsman [Robert Firek](https://twitter.com/robertfirek) and craftsman [David Hatanian](https://twitter.com/dhatanian) from [Codurance](http://codurance.com/aboutus/ourcompany/) for giving invaluable feedback on my post and steering me in the right direction.
+Thank you for your time, feel free to send your queries and comments to [theNeomatrix369](http://twitter.com/theNeomatrix369). Big thanks to my colleagues, our DevOps craftsman [Robert Firek](https://twitter.com/robertfirek) and craftsman [David Hatanian](https://twitter.com/dhatanian) from [Codurance](http://codurance.com/company/) for giving invaluable feedback on my post and steering me in the right direction.
 
 ### Resources
 
