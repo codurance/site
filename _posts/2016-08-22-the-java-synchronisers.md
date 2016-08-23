@@ -108,4 +108,4 @@ It also provides support for monitoring its state. It is noteworthy mentioning t
 
 Multithreading is definitely not an easy problem, but can be somehow easier to tackle using the tools that some of the languages provide.
 
-Personally, I do not need to use all of the tools on a daily basis, but I think it is worth to know that they exist and how they can help.
+Personally, I do not need to use all of the tools on a daily basis, but I think it is worth knowing that they exist and how they can help.
