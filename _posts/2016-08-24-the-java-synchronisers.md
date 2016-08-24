@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: the-java-synchronisers
 title: 'The Java Syncrhonisers' 
-date: 2016-08-22 10:00:00 +00:00
+date: 2016-08-24 10:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
     src: /assets/img/custom/blog/synchronisation.jpg
@@ -34,23 +34,21 @@ Every Java object has an associated intrinsic lock. A thread that needs exclusiv
 
 ### <a name="sync-methods"></a> Synchronized methods
 
-When a thread invokes a [synchronized method](https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html), it acquires the **intrinsic lock** for that method's object and releases it when the methods returns. The lock is released even if the method returns due to an uncaught exception. If done in a static method, the thread acquires the lock for the `class` object associated with the class.
+When a thread invokes a [synchronized method](https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html), it acquires the **intrinsic lock** for that method's object and releases it when the methods returns. The lock is released even if the method returns due to an uncaught exception. If done in a static method, the thread acquires the lock for the class object associated with the class.
 
 ### <a name="sync-statements"></a> Synchronized statements
 
-Provides a more fine-grained synchronization mechanism. [Synchronized statements](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html) must specify the object that provides the intrinsic lock. 
-
-Synchronizing over separated lock objects can provide fields synchronization, without forcing synchronization between methods calls.
+Provides a more fine-grained synchronization mechanism. [Synchronized statements](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html) must specify the object that provides the intrinsic lock. Synchronizing over separated lock objects can provide fields synchronization, without forcing synchronization between methods calls.
 
 ### <a name="guarded-blocks"></a> Guarded Blocks
 
 As mentioned earlier, [guarded blocks](https://docs.oracle.com/javase/tutorial/essential/concurrency/guardmeth.html) provide support for thread coordination. Guarded blocks are part of every Java object, and can be constructed using the `wait`, `notify` and `notifyAll` methods.
 
-The **wait** method suspend the current thread. When a thread invokes `wait`, it must own the object's intrinsic lock, that is why calls to `wait` are usually wrapped in a synchronized method or statement. The invocation of the `wait` method suspends the thread execution and releases the lock. 
+> The `wait` method suspend the current thread. When a thread invokes wait, it must own the object's intrinsic lock, that is why calls to wait are usually wrapped in a synchronized method or statement. The invocation of the wait method suspends the thread execution and releases the lock. 
 
-At some point, another thread will acquire the object's intrinsic lock and invoke `notifyAll` to inform all threads waiting that something important has happened. After the second thread has released the lock, the waiting threads will reacquire the lock and resume execution by returning from the `wait` invocation.
+> At some point, another thread will acquire the object's intrinsic lock and invoke `notifyAll` to inform all threads waiting that something important has happened. After the second thread has released the lock, the waiting threads will reacquire the lock and resume execution by returning from the wait invocation.
 
-**Notify** wakes up a single thread. The concrete thread that is woken up can not be specified, therefore, it is useful only if we do not care which thread is woken up.
+> `Notify` wakes up a single thread. The concrete thread that is woken up can not be specified, therefore, it is useful only if we do not care which thread is woken up.
 
 ## The Java Synchronizers
 
@@ -60,8 +58,9 @@ Java also provide five classes for common special-purpose synchronization.
 
 The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html) class allows one or more threads to wait until a set of operations in other threads complete. It is initialised with a count number.
 
-The `await` method **blocks** until the count reaches zero.
-The `countDown` method **decrements** the count.
+> The `await` method **blocks** until the count reaches zero.
+
+> The `countDown` method **decrements** the count.
 
 When the await method returns all waiting threads are released and subsequent invocations to `await` return immediately. The count cannot be reset.
 
@@ -69,10 +68,11 @@ When the await method returns all waiting threads are released and subsequent in
 
 The [Semaphore](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Semaphore.html) is used to restrict thread access to a certain resource. It is initialised with a number of permits. 
 
-The `acquire` method **blocks** until a permit is available and takes it.
-The `release` method **adds** a permit, releasing a blocking acquirer. Note that calls to release does not have to be made by the same thread that called acquire.
+> The `acquire` method **blocks** until a permit is available and takes it.
 
-A semaphore can be **fair** or **unfair**. If fair, then the threads acquire permits in a FIFO fashion.
+> The `release` method **adds** a permit, releasing a blocking acquirer. 
+
+Note that calls to release does not have to be made by the same thread that called acquire. A semaphore can be *fair* or *unfair*. If fair, then the threads acquire permits in a FIFO fashion.
 
 Although at first it may seem similar to the CountDownLatch its purpose is completely different.
 
@@ -80,11 +80,9 @@ Although at first it may seem similar to the CountDownLatch its purpose is compl
 
 The [CyclicBarrier](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CyclicBarrier.html) is built around the concept of **parties**. It allows threads to wait for each other to reach a common barrier point.
 
-The `await` method **blocks** until all parties arrive. It behaves somehow as the inverse of the *CountDownLatch*. After *N* awaits it continues.
+> The `await` method **blocks** until all parties arrive. It behaves somehow as the inverse of the *CountDownLatch*. After *N* awaits it continues.
 
-It has support for an optional runnable that runs once per barrier point. After the last party arrives, but before they are released. It is usually used to **update** shared-state between threads.
-
-It is cyclic because it can be *reused* after threads are released.
+It has support for an optional runnable that runs once per barrier point. After the last party arrives, but before they are released. It is usually used to update shared-state between threads. It is cyclic because it can be *reused* after threads are released.
 
 ### Exchanger
 
@@ -96,16 +94,18 @@ Threads **block** until its counterpart presents its information. The same behav
 
 The [Phaser](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Phaser.html) is a reusable barrier, similar to *CountDownLatch* and *CyclirBarrier*, but much more flexible.
 
-In phaser, the number of registered parties is not fixed at creation time. Parties can register at any time through `register` or `bulkRegister` methods. Parties can deregister upon arrival with `arriveAndDeregister`.
+In phaser, the number of registered parties is not fixed at creation time. Parties can *register* at any time through `register` or `bulkRegister` methods. Parties can deregister upon arrival with `arriveAndDeregister`.
 
-It offers several methods for synchronization. The `arriveAndAwaitAdvance` method behaves the same way as *CycleBarrier* `await` method does. `arrive` and `arriveAndDeregister` record arrival, but don't block. `awaitAdvance` blocks until all parties arrive.
+It offers several methods for *synchronization*. The `arriveAndAwaitAdvance` method behaves the same way as *CycleBarrier* `await` method does. `arrive` and `arriveAndDeregister` record arrival, but don't block. `awaitAdvance` blocks until all parties arrive.
 
-It can be terminated, forcing all synchronization methods to return. Can be forced through the `forceTermination` method.
+It can be *terminated*, forcing all synchronization methods to return. Can be forced through the `forceTermination` method.
 
-It also provides support for monitoring its state. It is noteworthy mentioning that synchronization methods can be called only by registered parties, whilst state can be monitored by any caller. Monitoring methods include `getRegisteredParties` and `getArrivedParties` among others.
+It also provides support for *monitoring* its state. It is noteworthy mentioning that synchronization methods can be called only by registered parties, whilst state can be monitored by any caller. Monitoring methods include `getRegisteredParties` and `getArrivedParties` among others.
 
 ## Conclusion
 
-Multithreading is definitely not an easy problem, but can be somehow easier to tackle using the tools that some of the languages provide.
+Multithreading is definitely not an easy problem, but can be somehow easier to tackle using the tools that some of the languages provide. Personally, I do not need to use all of the tools on a daily basis, but I think it is worth knowing that they exist and how they can help.
 
-Personally, I do not need to use all of the tools on a daily basis, but I think it is worth knowing that they exist and how they can help.
+### Further reading
+
+[Java Thread States](https://pbs.twimg.com/media/BiuJpaZCEAAt-QR.png:large)
