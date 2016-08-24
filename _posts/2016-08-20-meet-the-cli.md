@@ -45,7 +45,7 @@ Ok, fair enough, but what does .Net have to do with this?
 The .Net framework is Microsoft’s implementation of the CLI. 
 Through the platform-specific Common Language Runtime (CLR).Net provides the VES which among other things, compiles Intermediate Language code (assembly code) to machine-readable code.
 
-The CLR is somewhat equivalent to the Java Virtual Machine as it compiles the Intermediate Language code, previously compiled from C# or F# , into machine code. But the CLR does more than that: it provides services to managed code such as exception handling, garbage collector, security…
+The CLR is somewhat equivalent to the Java Virtual Machine as it compiles the Intermediate Language code, previously compiled from C# or F# , into machine code. But the CLR does more than that: it provides services to managed code such as exception handling, garbage collection, security…
 But what is managed code? [Managed code](http://en.wikipedia.org/wiki/Managed_code) is code written in a language that is compliant with the CLS specification such as C# or .Managed C++, and thus can be compiled to Intermediate Language. ([read more](http://www.developer.com/net/cplus/article.php/2197621/Managed-Unmanaged-Native-What-Kind-of-Code-Is-This.htm))
 
 To sum up, what makes possible for C#, F#, J#, VB.Net, [Clojure](http://www.clojure.org/about/clojureclr) , and other .Net languages to run together is that they are all compiled to the identical intermediate code. The compilation of code in .Net is done twice: first to compile from the language specific code to the Common Intermediate Language; and secondly from the CIL to native machine code [at runtime](https://msdn.microsoft.com/en-us/library/ht8ecch6%28v=vs.90%29.aspx).
