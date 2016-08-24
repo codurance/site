@@ -20,7 +20,7 @@ canonical:
 
 Threads communication happens primarily by sharing access to fields and objects. Although extremely efficient, this form of communication is prone to errors such as [thread interference](https://docs.oracle.com/javase/tutorial/essential/concurrency/interfere.html) and [memory consistency](https://docs.oracle.com/javase/tutorial/essential/concurrency/memconsist.html). Synchronization is a tool that helps to prevent such errors.
 
-However, synchronization does not come for free and can introduce latency when accessing a lock or object that is currently being held by another thread. The waiting thread cannot use that object until the other thread releases the object. This condition is known as thread contention.
+However, synchronization does not come for free and can introduce latency when accessing a lock or object that is currently being held by another thread. The waiting thread cannot use that object until the other thread releases the lock on the  object. This condition is known as thread contention. It may also lead to deadlocks and livelocks.
 
 In this post, we will explore the different options that Java provides to deal with threads synchronization.
 
@@ -58,7 +58,7 @@ Java also provide five classes for common special-purpose synchronization.
 
 ### CountDownLatch
 
-The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html) class allows one or more threads to wait until a set of operations in other threads completes. It is initialised with a count number.
+The [CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html) class allows one or more threads to wait until a set of operations in other threads complete. It is initialised with a count number.
 
 The `await` method **blocks** until the count reaches zero.
 The `countDown` method **decrements** the count.
