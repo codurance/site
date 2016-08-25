@@ -417,6 +417,7 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 .browse-courses {
     display: inline-block;
+    padding: 10px;
 }
 
 .contact-us span.browse-courses a {
@@ -511,6 +512,10 @@ body:last-child .btn-u, x:-moz-any-link {
  	-ms-transform:scale(1.03);
  	-o-transform:scale(1.03);
  	transform:scale(1.03);
+}
+
+.img-hover-v1 span {
+    min-height: 50px;
 }
 
 /* Services */
@@ -682,7 +687,6 @@ h2.subject-header:after {
 h3.subject-header {
     font-size: 32px;
     line-height: 36px;
-    min-height: 72px;
 }
 
 #courses h3.subject-header:after {
@@ -893,14 +897,6 @@ h3.subject-header {
 		border-bottom: solid 2px #e67e22 !important;
 	}
 
-	.header .navbar-nav > li > a,
-	.header .navbar-nav > li > a:hover,
-	.header .navbar-nav > li > a:focus,
-	.header .navbar-nav > .active > a,
-	.header .navbar-nav > .active > a:hover,
-	.header .navbar-nav > .active > a:focus {
-		background: none;
-	}
 
 	.header .navbar-nav > .open > a,
 	.header .navbar-nav > .open > a:hover,
@@ -911,6 +907,14 @@ h3.subject-header {
 	.header .navbar-nav > li:hover > a {
         color: #e67e22 !important;
     }
+
+@media (max-width: 991px) {
+    .header .navbar-nav > .active > a, 
+    .header .navbar-nav > .active > a:hover, 
+    .header .navbar-nav > .active > a:focus {
+        background: #e67e22;
+    }
+}
 
 /* Pedro's Command Prompt Envy blog */
 
