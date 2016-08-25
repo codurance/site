@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: the-java-synchronisers
-title: 'The Java Syncrhonisers' 
+title: 'The Java Synchronisers' 
 date: 2016-08-24 10:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
