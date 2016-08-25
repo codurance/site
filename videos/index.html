@@ -11,10 +11,10 @@ title: Videos
                 <!-- Screencast - Mouseless Programming, Part II -->
                 {% assign posts = site.categories.videos %}
 		{% for video in posts %}
-		<div class="news-v3 margin-bottom-30 bg-color-white">			
-			<img class="img-responsive full-width">
-				<iframe style="height: 400px; width: 100%;" src="{{video.video-url}}"></iframe>
-			</img>
+		<div class="news-v3 margin-bottom-30 bg-color-white">	
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe style="width: 100%;" class="embed-responsive-item" src="{{video.video-url}}"></iframe>
+			</div>
 			<div class="news-v3-in">
 				<ul class="list-inline posted-info">
 					<li>By {{ video.author || author_links }}</li>
