@@ -86,11 +86,9 @@ title: Services
 
 		{% for training in site.data.trainings %}
 
-		<div class="col-sm-4">
-			<a href="{{training.page}}">
-				<span><img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt=""></span>
-				<span>{{training.name}}</span>
-			</a>
+		<div class="col-md-6 margin-top-40">
+			<h3 class="course-title"><a href="{{training.page}}">{{training.name}}</a></h3>
+			<h4 class="course-author subject-header ">{{training.author}}</h4>
 			<p>{{training.description}}</p>
 		</div>
 
