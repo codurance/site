@@ -412,10 +412,11 @@ body:last-child .btn-u, x:-moz-any-link {
     text-transform: none;
 }
 
+.cta-contact-blog-box label {
+	display: inline;
+}
 .browse-courses {
     display: inline-block;
-    border-radius: 6px;
-    margin: 20px 0px 0px 10px;
 }
 
 .contact-us span.browse-courses a {
@@ -427,6 +428,31 @@ body:last-child .btn-u, x:-moz-any-link {
 .contact-us span.browse-courses a:hover {
     background: #ff6600;
     color: white;
+}
+
+.vertical-alignment-parent {
+    display: table;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+.vertical-alignment-child {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.cta-label {
+    width: 50%;
+}
+.cta-label-left {
+    float: left;
+    padding-right: 1%;
+}
+.cta-label-right {
+    float: right;
 }
 
 .btn-send-message {
@@ -683,7 +709,7 @@ h3.subject-header {
 
 .contact-us a {
     width: 300px;
-    pardding: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     margin: 10px auto 0px auto;
     border: 1px solid white;
     border-radius: 6px;
@@ -966,6 +992,14 @@ h2.gray-underline:after {
 
 .news-v1 a {
     color: #e67e22;
+}
+
+.block-centered {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border: solid 1px #ddd;
+    margin: 15px 0;
 }
 
 @media (max-width: 768px) {

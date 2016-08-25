@@ -1,31 +1,3 @@
-var Contact = function () {
-
-    var coordinates = {'lat': 51.523876,
-                       'lng': -0.100533};
-    return {
-
-        //Map
-        initMap: function () {
-					var map;
-					$(document).ready(function(){
-						if ( $( "#map" ).length ) {
-							map = new GMaps({
-								div: '#map',
-                                lat: coordinates.lat,
-                                lng: coordinates.lng,
-							  });
-							var marker = map.addMarker({
-                                lat: coordinates.lat,
-                                lng: coordinates.lng,
-					            title: 'Codurance Ltd'
-					          });
-						}
-
-					});
-        }
-
-    };
-}();
 
 var announcementOnDevConsole = function(){
 	try{
@@ -39,7 +11,20 @@ var announcementOnDevConsole = function(){
 	} catch(_) {}
 }
 
+var equalizeHeights = function() {
+    var maxHeight = 0;
+
+    $('.equalheight').each(function () {
+        $(this).height('auto');
+        var thisH = $(this).height();
+        if (thisH > maxHeight) { maxHeight = thisH; }
+    });
+
+    $('.equalheight').height(maxHeight);
+}
+
 $(document).ready(function() { 
+    equalizeHeights();
 
     //This function is necessary so Safari can redraw the menu 
     $(".dropdown").click(function(){
@@ -84,7 +69,9 @@ console.log('ga event sent');
 
     });
 
-	announcementOnDevConsole();	
+	announcementOnDevConsole();
+});
 
-
+$(window).resize(function () {
+    equalizeHeights();
 });
