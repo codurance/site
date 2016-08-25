@@ -81,101 +81,20 @@ title: Services
 		<p>Our training courses help teams get better at Test Driven Development, Continuous Integration and Deployment, Domain-Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.</p>
 		<p>We help teams in any phase of a project where they may benefit from focused training.</p>
 	</div>
+	
+	<div class="row sorting-grid">
 
-	<div class="col-md-6">
-		<div class="margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Crafted Design</h3>
-			<h4 class="course-author">Created by Sandro Mancuso</h4>
-			<p>For experienced developers wanting to get better at designing well-crafted solutions.</p>
-			<a href="/services/training/crafted-design" class="btn-block btn-course">READ MORE</a>
+		{% for training in site.data.trainings %}
+
+		<div class="col-sm-4">
+			<a href="{{training.page}}">
+				<span><img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt=""></span>
+				<span>{{training.name}}</span>
+			</a>
+			<p>{{training.description}}</p>
 		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Crafting Code</h3>
-			<h4 class="course-author">Created by Sandro Mancuso</h4>
-			<p>For developers that wanting to get better at writing clean, testable & maintainable code.</p>
-			<a href="/services/training/crafting-code" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Building Microservices with AWS Lambdas</h3>
-			<h4 class="course-author">Created by Mashooq Badar</h4>
-			<p>Learn how to build and deploy you microservices using the AWS server-less architecture.</p>
-			<a href="/services/training/lambda-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Practical server-less architecture using AWS</h3>
-			<h4 class="course-author">Created by Mashooq Badar</h4>
-			<p>Learn how to take the pain out of building web apps using AWS server-less architecture.</p>
-			<a href="/services/training/serverless-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Enterprise Application Development</h3>
-			<h4 class="course-author">Created by Mashooq Badar</h4>
-			<p>For developers wanting to learn how to build an enterprise system from scratch.</p>
-			<a href="/services/training/enterprise-application-development" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Building Reliable Microservices with Microsoft Service Fabric</h3>
-			<h4 class="course-author">Created by Steve Lydford & Alessandro Di Gioia</h4>
-			<p>Learn how to build highly available and reliable microservices with Service Fabric and Azure.</p>
-			<a href="/services/training/service-fabric-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Scaling with Cassandra</h3>
-			<h4 class="course-author">Created by Felipe Fernández</h4>
-			<p>For developers that want to embrace NoSQL and Big Data using one of the highest-paying tech skills,</p>
-			<a href="/services/training/scaling-with-cassandra" class="btn-block btn-course">READ MORE</a>
-		</div>
+
+		{% endfor %}
 	</div>
 
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Zero to Continuous Delivery with Docker</h3>
-			<h4 class="course-author">Created by Robert Firek</h4>
-			<p>Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.</p>
-			<a href="/services/training/devops-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Building Microservices with AWS Lambdas</h3> <h4 class="course-author">Created by Mashooq Badar</h4>
-			<p>Learn how to build and deploy you microservices using the AWS server-less architecture.</p>
-			<a href="/services/training/lambda-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Building Reliable Microservices with Microsoft Service Fabric</h3>
-			<h4 class="course-author">Created by Steve Lydford & Alessandro Di Gioia</h4>
-			<p>Learn how to build highly available and reliable microservices with Service Fabric and Azure.</p>
-			<a href="/services/training/service-fabric-training" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Functional Programming in Scala for Java Developers</h3>
-			<h3 class="course-author">Created by Felipe Fernández</h4>
-			<p>For Java developers wanting to learn Functional Programming with one of the most exciting languages on the JVM.</p>
-			<a href="/services/training/scala-for-java-developers" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="course margin-bottom-40">
-			<h3 class="subject-header margin-bottom-40">Scala Deep Dive with Akka</h3>
-			<h4 class="course-author">Created by Felipe Fernández</h4>
-			<p>For developers that want to deepen their Scala knowledge using its most popular toolkit, Akka.</p>
-			<a href="/services/training/scala-deep-dive-with-akka" class="btn-block btn-course">READ MORE</a>
-		</div>
-	</div>
 </div>
