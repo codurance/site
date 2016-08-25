@@ -18,16 +18,22 @@ layout: default
         <div class="row blog-boxes margin-bottom-40">
 	    {% assign posts = site.posts %}
             {% for post in posts limit:3 %}
+		{% if post.image.src %}
+			{% assign imageSrc = post.image.src %}
+		{% else %}
+			{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
+		{% endif %}
+		{% if post.abstract %}
+			{% assign introductionToPost = post.abstract %}
+		{% else %}
+			{% assign introductionToPost = post.content %}
+		{% endif %}
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="blog-box homepage-blog-thumb">
-                        {% if post.image.src %}
-                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
-                        {% else %}
-                            <img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ post.title }}" alt="{{ post.title }}">
-                        {% endif %}
+                        <img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
                         <div class="blog-content">
                             <h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
-                            <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+                            <p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
                         </div>
                         <ul class="list-inline blog-box-info">
                             <li><span>By</span> {{ post.author | author_links }}</li>
