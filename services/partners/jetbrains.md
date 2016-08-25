@@ -25,7 +25,7 @@ partners: Jetbrains
 				</div>
 			</div>
 			<div class="row margin-bottom-40 text-center">
-				<a href="/aboutus/contact" class="btn-u btn-u-lg">
+				<a href="/company/#contactus" class="btn-u btn-u-lg">
 					Talk to us
 				</a>
 			</div>

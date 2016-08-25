@@ -11,6 +11,9 @@ tags:
 - REST
 - Web API
 - architecture
+canonical:
+    name: my personal blog
+    href: https://carlosmchica.github.io/what-does-RESTful-really-mean/
 
 ---
 

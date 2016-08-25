@@ -11,7 +11,20 @@ var announcementOnDevConsole = function(){
 	} catch(_) {}
 }
 
+var equalizeHeights = function() {
+    var maxHeight = 0;
+
+    $('.equalheight').each(function () {
+        $(this).height('auto');
+        var thisH = $(this).height();
+        if (thisH > maxHeight) { maxHeight = thisH; }
+    });
+
+    $('.equalheight').height(maxHeight);
+}
+
 $(document).ready(function() { 
+    equalizeHeights();
 
     //This function is necessary so Safari can redraw the menu 
     $(".dropdown").click(function(){
@@ -56,7 +69,9 @@ console.log('ga event sent');
 
     });
 
-	announcementOnDevConsole();	
+	announcementOnDevConsole();
+});
 
-
+$(window).resize(function () {
+    equalizeHeights();
 });

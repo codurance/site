@@ -129,7 +129,7 @@ Loose coupling leads to high cohesion, and together they lead to maintainable sy
  
 ##References
 
-[Coupling (computer programming](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
+[Coupling (computer programming)][1]
 
 [Coupling and Cohesion](http://c2.com/cgi/wiki?CouplingAndCohesion)
 
@@ -138,3 +138,5 @@ Loose coupling leads to high cohesion, and together they lead to maintainable sy
 [Software Engineering: A Practitioner's Approach](http://www.vumultan.com/Books/CS605-Software%20Engineering%20Practitioner%E2%80%99s%20Approach%20%20by%20Roger%20S.%20Pressman%20.pdf)
 
 [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)	
+
+[1]: https://en.wikipedia.org/wiki/Coupling_(computer_programming)

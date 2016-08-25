@@ -15,6 +15,10 @@ tags:
 - build system
 - automation
 
+canonical:
+    name: my personal blog
+    href: https://carlosmchica.github.io/maven-demystified/
+
 ---
 
 Due to my Android development background, I am more used to [Gradle](https://gradle.org/) than to [Maven](https://maven.apache.org/). Although I knew that Gradle was based on Maven, I had never investigated what was going on behind the scenes. During the last week, I have been trying to understand the details and find out what are the different Maven's components.
