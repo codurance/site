@@ -6,7 +6,7 @@ layout: default
         <div class="jumbotron">
             <h1>Pragmatic, Skilled, Transparent.</h1>
 	    <h3>At Codurance we constantly deliver value by crafting exceptional software.</h3>
-	    <button class="btn btn-services animated" id="services-button">Discover our services</button>
+	    <button class="btn btn-more btn-more-light animated" id="services-button">Discover our services</button>
         </div>
 </div>
 <!-- Activity panel -->
@@ -44,75 +44,69 @@ layout: default
                 </div>
             {% endfor %}
         </div>
-        <div class="col-md-4 col-md-offset-4">
-            <a href="/blog" class="btn-u btn-block">View all blog posts...</a>
+        <div class="col-md-12 text-center">
+            <a href="/blog" role="button" class="btn btn-u btn-more animated">View all blog posts</a>
         </div>
     </div>
 </div>
 <!-- Services panel -->
 <div class="section gray-section" id="services">
     <div class="container container-space">
-	<div class="title-header">
+	    <div class="title-header">
             <h2>Our Services</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
-		<div class="software-creation service-card">
-		    <div class="service-card-top">
-			<img src="/assets/img/custom/home/services/software-creation-icon.png" />
-			<h2>Software Creation</h2>
-		    </div>
-		    <div class="service-card-bottom">
-			<ul class="list-unstyled">
-			    <li>EMBEDDED CRAFTSMAN</li>
-			    <li>SELF-CONTAINED TEAMS (on-site & off-site)</li>
-			    <li>UX & UI DESIGN</li>
-			    <li>AGILE & CONTINUOUS DELIVERY</li>
-			</ul>
-			<a href="/services/software-creation">
-			    <button class="btn btn-services-link">LEARN MORE</button>
-			</a>
-		    </div>
-		</div>
-	    </div>
+		        <div class="service-card">
+		            <div class="service-card-inner bg-dark-red">
+			            <img src="/assets/img/custom/home/services/software-creation-icon.png" />
+			            <h2 class="white">Software Creation</h2>
+		            </div>
+		            <div class="service-card-inner bg-red">
+			            <ul class="list-unstyled white">
+			                <li>EMBEDDED CRAFTSMAN</li>
+			                <li>SELF-CONTAINED TEAMS (on-site & off-site)</li>
+			                <li>UX & UI DESIGN</li>
+			                <li>AGILE & CONTINUOUS DELIVERY</li>
+			            </ul>
+			            <a href="/services/software-creation"  role="button" class="btn btn-more btn-more-light animated">Learn more</a>
+		            </div>
+		        </div>
+	        </div>
             <div class="col-md-4">
-		<div class="expert-advice service-card">
-		    <div class="service-card-top">
-			<img src="/assets/img/custom/home/services/expert-advice-icon.png" />
-			<h2>Expert Advice</h2>
+		    <div class="service-card">
+		        <div class="service-card-inner bg-dark-orange">
+			        <img src="/assets/img/custom/home/services/expert-advice-icon.png" />
+			        <h2 class="white">Expert Advice</h2>
+		        </div>
+		        <div class="service-card-inner bg-orange">
+			        <ul class="list-unstyled white">
+			            <li>ENTERPRISE ARCHITECTURE & DESIGN</li>
+			            <li>MICROSERVICES & DEVOPS</li>
+			            <li>CLOUD SOLUTIONS (Amazon AWS & Azure)</li>
+			            <li>BUSINESS & TECHNOLOGY ALIGNMENT</li>
+			        </ul>
+			        <a href="/services/expert-advice" role="button" class="btn btn-more btn-more-light animated">Learn more</a>
+		        </div>
 		    </div>
-		    <div class="service-card-bottom">
-			<ul class="list-unstyled">
-			    <li>ENTERPRISE ARCHITECTURE & DESIGN</li>
-			    <li>MICROSERVICES & DEVOPS</li>
-			    <li>CLOUD SOLUTIONS (Amazon AWS & Azure)</li>
-			    <li>BUSINESS & TECHNOLOGY ALIGNMENT</li>
-			</ul>
-			<a href="/services/expert-advice">
-			    <button class="btn btn-services-link">LEARN MORE</button>
-			</a>
-		    </div>
-		</div>
-	    </div>
+	        </div>
             <div class="col-md-4">
-		<div class="training-coaching service-card">
-		    <div class="service-card-top">
-			<img src="/assets/img/custom/home/services/training-coaching-icon.png" />
-			<h2>Training & Coaching</h2>
-		    </div>
-		    <div class="service-card-bottom">
-			<ul class="list-unstyled">
-			    <li>TDD, CLEAN CODE & DESIGN</li>
-			    <li>CLOUD, ARCHITECTURE & MICROSERVICES</li>
-			    <li>MOBILE, JVM, .NET & DEVOPS</li>
-			    <li>GROWING A CRAFTSMANSHIP CULTURE</li>
-			</ul>
-			<a href="/services/training">
-			    <button class="btn btn-services-link">LEARN MORE</button>
-			</a>
-		    </div>
-		</div>
-	    </div>
+		        <div class="service-card">
+		            <div class="service-card-inner bg-dark-yellow">
+			            <img src="/assets/img/custom/home/services/training-coaching-icon.png" />
+			            <h2 class="white">Training & Coaching</h2>
+		            </div>
+		            <div class="service-card-inner bg-yellow">
+			            <ul class="list-unstyled white">
+			                <li>TDD, CLEAN CODE & DESIGN</li>
+			                <li>CLOUD, ARCHITECTURE & MICROSERVICES</li>
+			                <li>MOBILE, JVM, .NET & DEVOPS</li>
+			                <li>GROWING A CRAFTSMANSHIP CULTURE</li>
+			            </ul>
+			            <a href="/services/training" role="button" class="btn btn-more btn-more-light animated">Learn more</a>
+		            </div>
+		        </div>
+	        </div>
         </div>
     </div>
 </div>
@@ -185,51 +179,46 @@ layout: default
             <p>The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.</p>
         </div>
 		<div class="row">
-		    <div class="col-sm-6 col-md-4 ">
-		        <div class="block-centered equalheight">
-                    <i class="icon-heart"></i>
+		    <div class="col-sm-4 col-md-2">
+		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+                    <i class="icon-custom icon-md icon-color-red icon-heart no-border"></i>
                     <h3>Software Craftsmanship</h3>
-                    <p>Software Craftsmanship is at the heart of everything we do so we can continuously deliver value to the business with inherent quality. We understand that quality should not be a premium. We hone our skills through continuous practice. We constantly learn, teach and mentor in our team, our company and the wider software development industry.</p>		            
 		        </div>
 		    </div>
-		    <div class="col-md-4 col-sm-6">
-		        <div class="block-centered equalheight">
-		            <i class="icon-paper-plane"></i>
+		    <div class="col-sm-4 col-md-2">
+		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+		            <i class="icon-custom icon-md icon-color-red icon-paper-plane no-border"></i>
 		            <h3>Agile and Lean</h3>
-		            <p>We believe that a good process constantly delivers incremental value to the business and provides fast feedback. This allows us to inspect, learn, and adapt. We don't prescribe specific processes. We help teams understand their options and make their own choices - whether that is Scrum, Kanban, or a mix of Agile practices.</p>
 		        </div>
 		    </div>
-            <div class="clearfix visible-sm"></div>
-		    <div class="col-md-4 col-sm-6">
-		        <div class="block-centered equalheight">
-		            <i class="icon-reload"></i>
+		    <div class="col-sm-4 col-md-2">
+		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+		            <i class="icon-custom icon-md icon-color-red icon-reload no-border"></i>
 		            <h3>Continuous Delivery</h3>
-		            <p>We understand that Continuous Delivery requires the organisation to be aligned in order to deliver value to stakeholders in frequent and small iterations. We are experts in release automation and setting up continuous delivery pipelines. We achieve continuous delivery through close attention to business needs, software quality, and XP practices.</p>
 		        </div>
 		    </div>
-            <div class="clearfix visible-md"></div>
-			<div class="col-md-4 col-sm-6">
-			    <div class="block-centered equalheight">
-                    <i class="icon-control-forward"></i>
-                    <h3>Extreme Programming (XP)</h3>
-                    <p>Practices such as Test-Driven Development (TDD), Pair Programming, Continuous Integration and Shared Ownership are core to everyone at Codurance. This fits very well with our craftsmanship values. We are experts in these practices and use them with great effect. We run public training courses and community events to help our industry embed these practices.</p>
+			<div class="col-sm-4 col-md-2">
+			    <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+                    <i class="icon-custom icon-md icon-color-red icon-control-forward no-border"></i>
+                    <h3>Extreme Programming</h3>
 			    </div>
 			</div>
-            <div class="clearfix visible-sm"></div>
-			<div class="col-md-4 col-sm-6">
-			    <div class="block-centered equalheight">
-                    <i class="icon-settings"></i>
+			<div class="col-sm-4 col-md-2">
+			    <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+                    <i class="icon-custom icon-md icon-color-red icon-settings no-border"></i>
                     <h3>DevOps</h3>
-                    <p>DevOps is a culture that supports continuous delivery. We believe that release, operation, and maintenance of software are as much the responsibility of the software development team as building the building the features in the first place. We include production stability, monitoring, and maintenance features from the start.</p>
 			    </div>
 			</div>
-			<div class="col-md-4 col-sm-6">
-			    <div class="block-centered equalheight">
-                    <i class="icon-screen-desktop"></i>
-                    <h3>Technology</h3>
-                    <p>Our focus is on JVM, .Net, Node.js, Mobile (iOS and Android) and Web Front-end technologies. We use automation tools such as Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services and Github. We excel at cloud deployment, especially using AWS and Microsoft Azure. All our craftsmen are polyglots covering many languages on these platforms.</p>			        
-			    </div>
-			</div>
+		    <div class="col-sm-4 col-md-2">
+		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
+		            <i class="icon-custom icon-md icon-color-red icon-screen-desktop no-border"></i>
+		            <h3>Technology</h3>
+		        </div>
+		    </div>
+            <div class="col-md-12 text-center">
+                <a href="/company/#howwework" class="btn btn-u btn-more animated">Learn more</a>
+            </div>
+
 		</div>
 	</div>
 </div>
