@@ -18,11 +18,12 @@ tags:
 
 Few days ago, I attended the [2-day Martine Devos' Certified Scrum Master, Estimation & Planning Class](https://skillsmatter.com/courses/151-martine-devos-scrum-master) at [Skills Matter](https://skillsmatter.com/). I had the privilege of meeting and learning from [Martine Devos](https://www.scrumalliance.org/community/profile/mdevos), one of the best Scrum trainer in Europe. This also gave me the opportunity to discuss many aspects of the Scrum process..
 
-Becoming a [Certified ScrumMaster&reg;](https://www.scrumalliance.org/certifications) shouldn’t be the goal of attending the course, because certifications don’t make you a real Scrum Master. To become a Scrum Master you have to: put the Scrum theory into practice.
+Becoming a [Certified ScrumMaster&reg;](https://www.scrumalliance.org/certifications) shouldn’t be the goal of attending the course, because certifications don’t make you a real Scrum Master. To become a Scrum Master you have to put the Scrum theory into practice.
 
 Scrum is not a silver bullet, it is a framework with a small set of practices that will help produce better value to the user with faster feedback and greater team cohesion. Adopting Scrum will require investments: the whole company has to learn new practices, principles, values. Being Agile is about recognising weaknesses and constantly learning from them, according to Ken Schwaber:
 
 > ## _"Scrum is like your mother-in-law. It's constantly pointing out your shortcomings."_
+
 
 Deciding to change means that both stakeholders and the team must respect 3 essential Scrum aspects:
 
@@ -49,8 +50,10 @@ These aspects must be present when a company decides to do Scrum. How you facili
 
 In this blog post, I’m not going to write about Scrum ceremonies and artifacts. I want to clarify the Scrum roles in order to get rid of the fallacies that have been established since Scrum became popular.
 
+
 <p align="center" >
 <img src="/assets/img/custom/blog/2016-08-26-chinese-whispers-on-scrum-roles/scrum-aspects-roles-sketchnote.jpg" height="500px" alt="Scrum aspects - Scrum Team roles sketchnote"/></p>
+
 
 ### The Scrum Master is not the Team boss
 
@@ -59,6 +62,8 @@ The name “Scrum Master” has created too many misunderstandings. The word “
 The most important lesson that Martine Devos taught the class during the two days has been that, the Scrum Master’s role has nothing to do with activities like: controlling, managing, deciding, directing, committing etc. There are no hierarchies in a Scrum Team: the Scrum Master, the Developers and the Product Owner are peers—they are members of the same team. The Scrum Master is not automatically a Leader and the Product Owner is not a Manager. First of all, a Scrum Master is a facilitator that ensures the team communicates constantly and efficiently. The Scrum Master makes sure that the team works together and recognises new opportunities of improving the way the product is built. According to Martine Devos,
 
 > ## _"A good Scrum Master doesn’t read books or article on Scrum. A good Scrum Master is someone who reads books on facilitation."_ 
+
+
 
 ### The Product Owner is not a manager
 
