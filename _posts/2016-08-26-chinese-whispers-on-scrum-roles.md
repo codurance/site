@@ -16,7 +16,7 @@ tags:
 - team
 ---
 
-Few days ago, I attended the [2-day Martine Devos' Certified Scrum Master, Estimation & Planning Class](https://skillsmatter.com/courses/151-martine-devos-scrum-master) at [Skills Matter](https://skillsmatter.com/). I had the privilege of meeting and learning from [Martine Devos](https://www.scrumalliance.org/community/profile/mdevos), one of the best Scrum trainer in Europe. This also gave me the opportunity to discuss many aspects of the Scrum process..
+Few days ago, I attended the [2-day Martine Devos' Certified Scrum Master, Estimation & Planning Class](https://skillsmatter.com/courses/151-martine-devos-scrum-master) at [Skills Matter](https://skillsmatter.com/). I had the privilege of meeting and learning from [Martine Devos](https://www.scrumalliance.org/community/profile/mdevos), one of the best Scrum trainer in Europe. This also gave me the opportunity to discuss many aspects of the Scrum process.
 
 Becoming a [Certified ScrumMaster&reg;](https://www.scrumalliance.org/certifications) shouldn’t be the goal of attending the course, because certifications don’t make you a real Scrum Master. To become a Scrum Master you have to put the Scrum theory into practice.
 
