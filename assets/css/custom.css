@@ -52,9 +52,6 @@ body {
 	font-size: 14px;
 	line-height: 17px;
     }
-    .feature-panel .jumbotron .btn-services {
-	font-size: 12px;
-    }
 }
 
 .feature-panel .jumbotron {
@@ -72,18 +69,22 @@ body {
     color:white;
 }
 
-.feature-panel .jumbotron .btn-services {
-    background-color: transparent;
-    border: 1px solid white;
+.btn-more {
     border-radius: 6px;
-    color: white;
     font-size: 18px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 10px 0;
+    padding: 10px 30px;
 }
 
-.feature-panel .jumbotron .btn-services:hover {
+.btn-more:hover { transition: .3s; }
+
+.btn-more-light {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-more-light:hover {
     background-color: white;
     color: #687074;
 }
@@ -256,69 +257,24 @@ body:last-child .btn-u, x:-moz-any-link {
 	width: 350px;
 }
 
-
 /* Homepage services section */
-#services .software-creation .service-card-top {
-    background-color: #cc0000;
-}
-#services .software-creation .service-card-bottom {
-    background-color: #ff0000;
-}
-#services .software-creation .service-card-bottom .btn-services-link {
-    background-color: #cc0000;
-}
 
-#services .expert-advice .service-card-top {
-    background-color:#dd4d00;
-}
-#services .expert-advice .service-card-bottom {
-    background-color:#ff6600;
-}
-#services .expert-advice .service-card-bottom .btn-services-link {
-    background-color: #dd4d00;
-}
-
-#services .training-coaching .service-card-top {
-    background-color:#ffaa00;
-}
-#services .training-coaching .service-card-bottom {
-    background-color:#ffcc33;
-}
-#services .training-coaching .service-card-bottom .btn-services-link {
-    background-color: #ffaa00;
-}
-
-#services .service-card-top {
-    padding: 30px 0px 30px 0px;
+.service-card-inner {
+    padding: 30px 5px;
     text-align: center;
 }
 
-#services .service-card-top img {
+.service-card-inner img {
     display: block;
-    margin: 0px auto 5px auto;
+    margin: 0 auto 5px auto;
 }
 
-#services .service-card-top h2 {
+.service-card-inner h2 {
     color: white;
 }
 
-#services .service-card-bottom {
-    text-align: center;
-    font-size: 15px;
-    padding: 40px 0px 30px 0px;
-}
-
-#services .service-card-bottom ul li {
-    color: white;
-    font-weight: bold;
-    font-family: "Open Sans", sans serif;
-}
-
-#services .service-card-bottom .btn-services-link {
-    color: white;
-    margin-top: 20px;
-    font-weight: bold;
-    font-family: "Open Sans", sans serif;
+.service-card li {
+    padding-bottom: 8px;
 }
 
 @media (max-width: 992px) {
@@ -327,8 +283,8 @@ body:last-child .btn-u, x:-moz-any-link {
     }
 }
 
-
 /*Content Boxes*/
+
 .content-boxes {
   margin-bottom: 15px;
 }
@@ -415,21 +371,6 @@ body:last-child .btn-u, x:-moz-any-link {
 .cta-contact-blog-box label {
 	display: inline;
 }
-.browse-courses {
-    display: inline-block;
-    padding: 10px;
-}
-
-.contact-us span.browse-courses a {
-    background: white;
-    color: #ff6600;
-    padding: 5px 10px;
-}
-
-.contact-us span.browse-courses a:hover {
-    background: #ff6600;
-    color: white;
-}
 
 .vertical-alignment-parent {
     display: table;
@@ -454,23 +395,6 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 .cta-label-right {
     float: right;
-}
-
-.btn-send-message {
-    background: #fafafa;
-    color: #333333;
-    display: block;
-    border: 1px solid #333333;
-    border-radius: 6px;
-    height: 40px;
-    width: 150px;
-    margin: 0 0 0 auto;
-    font-size: 16px;
-}
-
-.btn-send-message:hover {
-    background: #333333;
-    color: white;
 }
 
 /* Author */
@@ -709,14 +633,6 @@ h3.subject-header {
 
 .contact-us h2, .contact-us h3 {
     color: white;
-}
-
-.contact-us a {
-    width: 300px;
-    padding: 10px 0px 10px 0px;
-    margin: 10px auto 0px auto;
-    border: 1px solid white;
-    border-radius: 6px;
 }
 
 .contact-us a:hover {
@@ -1005,6 +921,36 @@ h2.gray-underline:after {
     border: solid 1px #ddd;
     margin: 15px 0;
 }
+
+.block-centered-condensed {
+    padding: 10px;
+}
+
+.block-centered-condensed h3 {
+    font-size: 16px;
+}
+
+.no-border, i.no-border { border: none; }
+
+/* Foreground colors */
+
+.white, p.white, ul.white li { color: white; }
+
+/* Background colors */
+
+.bg-dark-red { background-color: #cc0000; }
+
+.bg-red { background-color: #ff0000; }
+
+.bg-dark-orange { background-color: #dd4d00; }
+
+.bg-orange { background-color: #ff6600; }
+
+.bg-dark-yellow { background-color: #ffaa00; }
+
+.bg-yellow { background-color: #ffcc33; }
+
+.bg-white { background-color: #fff; }
 
 @media (max-width: 768px) {
     .practice {
