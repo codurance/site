@@ -1,0 +1,11 @@
+sections:
+   services: Servicios 
+   videos: Videos
+   blog: Blog
+   company: Empresa
+   careers: Trabaja con nosotros
+index:
+   header: Pragmáticos, Expertos, Transparentes.
+   subheader: En Codurance entregamos valor mediante la elaboración de software excepcional.
+   discover_services: Descubre nuestros servicios
+
