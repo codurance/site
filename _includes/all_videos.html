@@ -1,12 +1,24 @@
-<div class="owl-carousel owl-theme">
+<div class="owl-video-carousel">
+{% assign numberOfElements = 0 %}
+{% assign arraySize = site.categories.videos | size %}
+{% assign nbElementDisplayed = 0 %}
 {% for post in site.categories.videos %}
-	<div class="owl-item">
-		{% if post.image.src %}
-			<img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
-		{% else %}
-			<img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ postTitle }}" alt="{{ postTitle }}">
-		{% endif %}
-		<h3><a href="{{post.url}}">{{post.title}}</a></h3>
-	</div>
+	{% assign numberOfElements = numberOfElements | plus: 1 %}
+        {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
+	{% if numberOfElements == 1 %}
+		<div >
+	{% endif %}
+		<div >
+			{% if post.image.src %}
+				<img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+			{% else %}
+				<img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ postTitle }}" alt="{{ postTitle }}">
+			{% endif %}
+			<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+		</div>
+	{% if numberOfElements == 3 or nbElementDisplayed == arraySize %}
+		</div>
+		{% assign numberOfElements = 0 %}
+	{% endif %}
 {% endfor %}
 </div>
