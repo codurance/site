@@ -987,3 +987,9 @@ h2.gray-underline:after {
 	text-align:center;
     }
 }
+
+.breadcrumbs-v3.ourpeople {
+    background: url(/assets/img/custom/careers/ourpeople.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
