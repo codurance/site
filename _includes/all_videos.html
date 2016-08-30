@@ -16,10 +16,9 @@
 			{% endif %}
 			<h3><a href="{{post.url}}">{{post.title}}</a></h3>
 		</div>
-	{% if numberOfElements == 3 || nbElementDisplayed == arraySize %}
+	{% if numberOfElements == 3 or nbElementDisplayed == arraySize %}
 		</div>
 		{% assign numberOfElements = 0 %}
 	{% endif %}
-
 {% endfor %}
 </div>
