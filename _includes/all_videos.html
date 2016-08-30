@@ -1,11 +1,14 @@
 <div class="owl-video-carousel">
 {% assign numberOfElements = 0 %}
+{% assign arraySize = site.categories.videos | size %}
+{% assign nbElementDisplayed = 0 %}
 {% for post in site.categories.videos %}
 	{% assign numberOfElements = numberOfElements | plus: 1 %}
+        {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
 	{% if numberOfElements == 1 %}
-		<div class="">
+		<div >
 	{% endif %}
-		<div class="">
+		<div >
 			{% if post.image.src %}
 				<img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
 			{% else %}
@@ -13,7 +16,7 @@
 			{% endif %}
 			<h3><a href="{{post.url}}">{{post.title}}</a></h3>
 		</div>
-	{% if numberOfElements == 3 %}
+	{% if numberOfElements == 3 || nbElementDisplayed == arraySize %}
 		</div>
 		{% assign numberOfElements = 0 %}
 	{% endif %}
