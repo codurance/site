@@ -1,0 +1,59 @@
+- id: crated_design
+  name: Crafted Design
+  author: Sandro Mancuso
+  description: For experienced developers wanting to get better at designing well-crafted solutions.
+  page: /services/training/crafted-design
+
+- id: crafting_code
+  name: Crafting Code
+  author: Sandro Mancuso
+  description: For developers that wanting to get better at writing clean, testable & maintainable code
+  page: /services/training/crafting-code
+
+- id: lambdas
+  name: Building Microservices with AWS Lambdas
+  author: Mashooq Badar
+  description: Learn how to build and deploy you microservices using the AWS server-less architecture
+  page: /services/training/lambda-training
+
+- id: serverless
+  name: Practical server-less architecture using AWS
+  author: Mashooq Badar
+  description: Learn how to take the pain out of building web apps using AWS server-less architecture
+  page: /services/training/serverless-training
+
+- id: ead
+  name: Enterprise Application Development
+  author: Mashooq Badar
+  description: For developers wanting to learn how to build an enterprise system from scratch
+  page: /services/training/enterprise-application-development
+
+- id: fabric 
+  name: Building Reliable Microservices with Microsoft Service Fabric
+  author: Steve Lydford & Alessandro Di Gioia
+  description: Learn how to build highly available and reliable microservices with Service Fabric and Azure
+  page: /services/training/service-fabric-training
+
+- id: cassandra
+  name: Scaling with Cassandra
+  author: Felipe Fernández
+  description: For developers that want to embrace NoSQL and Big Data using one of the highest-paying tech skills
+  page: /services/training/scaling-with-cassandra
+
+- id: docker 
+  name: Zero to Continous Delivery with Docker
+  author: Robert Firek
+  description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
+  page: /services/training/devops-training
+
+- id: scala
+  name: Functional Programming in Scala for Java Developers
+  author: Felipe Fernández
+  description: For Java developers wanting to learn Functional Programming with one of the most exciting languages on the JVM
+  page: /services/training/scala-for-java-developers
+
+- id: akka 
+  name: Scala Deep Dive with Akka
+  author: Felipe Fernández
+  description: For developers that want to deepen their Scala knowledge using its most popular toolkit, Akka
+  page: /services/training/scala-deep-dive-with-akka
