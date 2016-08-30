@@ -4,8 +4,11 @@ sections:
    blog: Blog
    company: Empresa
    careers: Trabaja con nosotros
-index:
+index-banner:
    header: Pragmáticos, Expertos, Transparentes.
    subheader: En Codurance entregamos valor mediante la elaboración de software excepcional.
    discover_services: Descubre nuestros servicios
+langs:
+  en: English
+  es: Español
 
