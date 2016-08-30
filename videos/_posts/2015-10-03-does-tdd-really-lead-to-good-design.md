@@ -4,7 +4,7 @@ layout: video
 asset-type: video
 name: does-tdd-really-lead-to-good-design
 image:
-    src: /assets/img/custom/videos/codurance-screencast.jpg
+    src: /assets/img/custom/videos/screencast-intro-does-tdd-really-lead-to-good-design.jpg
 title: "Does TDD really lead to good design"
 hidden: true
 video-url: https://www.youtube.com/embed/ApsW72JSVJM

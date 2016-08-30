@@ -5,7 +5,7 @@ asset-type: video
 name: ugtastic-interviews-sandro-mancuso-2012
 location: "Chicago, USA"
 image:
-    src: /assets/img/custom/videos/codurance-screencast.jpg
+    src: /assets/img/custom/videos/interview-intro-ugtastic-interviews-sandro-mancus.jpg
 title: "UGtastic Interviews Sandro Mancuso"
 hidden: true
 video-url: http://player.vimeo.com/video/54327320

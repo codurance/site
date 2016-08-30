@@ -5,7 +5,7 @@ asset-type: video
 name: crafted-design
 location: "Lean Agile, Scotland"
 image:
-    src: /assets/img/custom/videos/codurance-screencast.jpg
+    src: /assets/img/custom/videos/screencast-intro-crafted-design.jpg
 title: "Crafted Design"
 hidden: true
 video-url: http://player.vimeo.com/video/107963074

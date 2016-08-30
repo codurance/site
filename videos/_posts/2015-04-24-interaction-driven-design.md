@@ -5,7 +5,7 @@ asset-type: video
 name: interaction-driven-design
 location: "Craft - Budapest"
 image:
-    src: /assets/img/custom/videos/codurance-screencast.jpg
+    src: /assets/img/custom/videos/screencast-intro-interaction-driven-design.jpg
 title: "Interaction Driven Design"
 hidden: true
 video-url: http://www.ustream.tv/embed/recorded/61480606
