@@ -1,3 +1,6 @@
+langs:
+  en: English
+  es: Español
 sections:
    services: Servicios 
    videos: Videos
@@ -5,10 +8,39 @@ sections:
    company: Empresa
    careers: Carreras
 index-banner:
-   header: Pragmatismo, Habilidad, Transparencia.
-   subheader: En Codurance aportamos valor de manera continua mediante la elaboración de software excepcional.
-   discover_services: Descubre nuestros servicios
-langs:
-  en: English
-  es: Español
-
+   title: Pragmatismo, Habilidad, Transparencia.
+   subtitle: En Codurance aportamos valor de manera continua mediante la elaboración de software excepcional.
+   link_title: Descubre nuestros servicios
+index-activity:
+   title: Últimas novedades
+   link_title: Ver todas las entradas en el blog
+index-services:
+   title: Nuestros servicios
+index-services-software_creation:
+   title: Creación de Software
+   description_line_1: CRAFTSMAN EMBEBIDO
+   description_line_2: EQUIPOS AUTÓNOMOS (in situ & externo)
+   description_line_3: DISEÑO UX & UI
+   description_line_4: AGILE & CONTINUOUS DELIVERY
+   link_title: Aprende más 
+index-services-expert_advice:
+   title: Asesoramiento de expertos
+   description_line_1: ENTERPRISE ARCHITECTURE & DISEÑO
+   description_line_2: MICROSERVICIOS & DEVOPS
+   description_line_3: SOLUCIONES EN LA NUBE (Amazon AWS & Azure)
+   description_line_4: ALINEACIÓN DE NEGOCIOS Y TECNOLOGÍA
+   link_title: Aprende más 
+index-services-training:
+   title: Formación & asesoría
+   description_line_1: TDD, CLEAN CODE & DISEÑO
+   description_line_2: LA NUBE, ARQUITECTURA & MICROSERVICIOS
+   description_line_3: MOVILIDAD, JVM, .NET & DEVOPS
+   description_line_4: CULTIVANDO UNA CULTURA DE CRAFTSMANSHIP
+   link_title: Aprende más
+index-clients:
+   title: Clientes &amp; Socios
+index-clients-footer:
+   title: Somos socios oficiales de Jetbrains en consultoría y formación.
+   link_title: Más información  
+index-how_we_work:
+   title: Cómo trabajamos

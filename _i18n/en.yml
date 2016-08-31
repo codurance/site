@@ -1,3 +1,6 @@
+langs:
+  en: English
+  es: Español
 sections:
    services: Services
    videos: Videos
@@ -5,10 +8,39 @@ sections:
    company: Company
    careers: Careers
 index-banner:
-   header: Pragmatic, Skilled, Transparent.
-   subheader: At Codurance we constantly deliver value by crafting exceptional software.
-   discover_services: Discover our services
-langs:
-  en: English
-  es: Español
-
+   title: Pragmatic, Skilled, Transparent.
+   subtitle: At Codurance we constantly deliver value by crafting exceptional software.
+   link_title: Discover our services
+index-activity:
+   title: Latest highlights
+   link_title: View all blog posts
+index-services:
+   title: Our services
+index-services-software_creation:
+   title: Software Creation
+   description_line_1: EMBEDDED CRAFTSMAN
+   description_line_2: SELF-CONTAINED TEAMS (on-site & off-site)
+   description_line_3: UX & UI DESIGN
+   description_line_4: AGILE & CONTINUOUS DELIVERY
+   link_title: Learn more
+index-services-expert_advice:
+   title: Expert Advice
+   description_line_1: ENTERPRISE ARCHITECTURE & DESIGN 
+   description_line_2: MICROSERVICES & DEVOPS
+   description_line_3: CLOUD SOLUTIONS (Amazon AWS & Azure)
+   description_line_4: BUSINESS & TECHNOLOGY ALIGNMENT
+   link_title: Learn more
+index-services-training:
+   title: Training & Coaching
+   description_line_1: TDD, CLEAN CODE & DESIGN
+   description_line_2: CLOUD, ARCHITECTURE & MICROSERVICES
+   description_line_3: MOBILE, JVM, .NET & DEVOPS
+   description_line_4: CULTIVAR UNA CULTURA DE CRAFTSMANSHIP 
+   link_title: Learn more
+index-clients:
+   title: Clients &amp; Partners
+index-clients-footer:
+   title: We are an official Jetbrains Consulting & Training Partner.
+   link_title: Find out more
+index-how_we_work:
+   title: How We Work
