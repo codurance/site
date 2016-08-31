@@ -3,10 +3,10 @@ sections:
    videos: Videos
    blog: Blog
    company: Empresa
-   careers: Trabaja con nosotros
+   careers: Carreras
 index-banner:
-   header: Pragmáticos, Expertos, Transparentes.
-   subheader: En Codurance entregamos valor mediante la elaboración de software excepcional.
+   header: Pragmatismo, Habilidad, Transparencia.
+   subheader: En Codurance aportamos valor de manera continua mediante la elaboración de software excepcional.
    discover_services: Descubre nuestros servicios
 langs:
   en: English
