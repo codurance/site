@@ -10,6 +10,7 @@ gem 'jekyll-redirect-from'
 gem 'therubyracer' # undeclared dependency of jekyll-less
 gem 'rdiscount'
 gem 'jekyll-sitemap'
+gem 'jekyll-multiple-languages-plugin'
 
 group :development do
   gem 'travis'
