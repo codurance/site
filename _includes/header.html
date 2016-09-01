@@ -1,47 +1,45 @@
 <div class="header no-topbar">
-      <!-- Adds links to other languages on the post -->
-      {% for lang in site.languages %}
-        {% unless site.lang == lang %}
-          {% if lang == site.default_lang %}
-            <a href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-          {% else %}
-            <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-          {% endif %}
-          
-          {% assign next = forloop.index | plus: 1 %}
-          
-          {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
-            <span class="separator"> &bull; </span>
-          {% endif %}
-          
-        {% endunless %}
-      {% endfor %}
+	<div class="container">
+		<!-- Logo -->
+		<a class="logo" href="/">
+			<img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
+		</a>
+		<!-- End Logo -->
 
-    <div class="container">
-        <!-- Logo -->
-        <a class="logo" href="/">
-            <img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
-        </a>
-        <!-- End Logo -->
+		<!-- Toggle get grouped for better mobile display -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="fa fa-bars"></span>
+		</button>
+		<!-- End Toggle -->
+	</div><!--/end container-->
 
-        <!-- Toggle get grouped for better mobile display -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="fa fa-bars"></span>
-        </button>
-        <!-- End Toggle -->
-    </div><!--/end container-->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="/services">{% t sections.services %}</a></li>
+				<li><a href="/videos">{% t sections.videos %}</a></li>
+				<li><a href="/blog">{% t sections.blog %}</a></li>
+				<li><a href="/company">{% t sections.company %}</a></li>
+				<li><a href="/careers">{% t sections.careers %}</a></li>
+				<ul class="nav navbar-nav">
+					<!-- Adds links to other languages on the post -->
+					{% for lang in site.languages %}
+					<li>
+						{% if lang == site.lang %}
+						<a href="#"><strong>{{ lang }}</strong></a>
+						{% else %}
+						{% if lang == site.default_lang %}
+						<a href="{{ site.baseurl_root }}{{ page.url }}" >{{ lang }}</a>
+						{% else %}
+						<a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{{ lang }}</a>
+						{% endif %}
+						{% endif %}
+						{% endfor %}
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-        <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="/services">{% t sections.services %}</a></li>
-          <li><a href="/videos">{% t sections.videos %}</a></li>
-          <li><a href="/blog">{% t sections.blog %}</a></li>
-          <li><a href="/company">{% t sections.company %}</a></li>
-          <li><a href="/careers">{% t sections.careers %}</a></li>
-        </ul>
-        </div><!--/end container-->
-    </div><!--/navbar-collapse-->
+				</ul>
+			</ul>
+		</div><!--/end container-->
+	</div><!--/navbar-collapse-->
 </div>

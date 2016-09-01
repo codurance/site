@@ -83,5 +83,8 @@ footer-useful_links:
    link_6_title: Privacy policy
 footer-contact:
    title: Contact Us
-   phone: Phone
-   email: Email
+   address_value: 15 Northburgh Street, 5th Floor <br> London EC1V 0JR, UK 
+   phone_title: Phone
+   phone_value: +44 207 4902967
+   email_title: Email
+   email_value: hello@codurance.com

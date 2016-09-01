@@ -83,5 +83,9 @@ footer-useful_links:
    link_6_title: Polica de privacidad
 footer-contact:
    title: Contacto
-   phone: Teléfono
-   email: Correo electrónico
+   address_value: Carrer Aragó 208, piso 5º, puerta 2ª <br> 08011 - Barcelona, Spain 
+   phone_title: Teléfono
+   phone_value: +44 207 490267 
+   email_title: Correo electrónico
+   email_value: hello@codurance.es
+
