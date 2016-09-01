@@ -60,8 +60,8 @@ index-software_craftsmanship-book:
    subtitle: The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.
    link_title: Discover more on Good Reads ...
 index-software_craftsmanship-socrates:
-   title: Software Craftsmanship Un-Conference&#58; SoCraTes UK 
-   subtitle: We organise SoCraTes UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
+   title: Software Craftsmanship Un-Conference&#58; Socrates UK 
+   subtitle: We organise Socrates UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
    link_title: Visit the event website ...
 index-software_craftsmanship-lscc:
    title: London Software Craftsmanship Community
@@ -72,9 +72,9 @@ footer:
    subtitle: We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
    registration_number: Company Registration No
 footer-latest_blog:
-   title: Últimos blogs
+   title: Lastest Blogs
 footer-useful_links:
-   title: Enlaces de interés
+   title: Useful Links
    link_1_title: Software creation
    link_2_title: Expert Advice
    link_3_title: Training
@@ -83,7 +83,6 @@ footer-useful_links:
    link_6_title: Privacy policy
 footer-contact:
    title: Contact Us
-   address_value: 15 Northburgh Street, 5th Floor <br> London EC1V 0JR, UK 
    phone_title: Phone
    phone_value: +44 207 4902967
    email_title: Email

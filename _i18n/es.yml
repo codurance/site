@@ -72,9 +72,9 @@ footer:
    subtitle: Somos Software Craftsmen. Construimos software bien elaborado para nuestros clientes, ayudamos a los desarrolladores a mejorar en su oficio a través de la formación, la orientación y la tutoría, y ayudamos a las empresas a mejorar en la distribución de software.
    registration_number: Número de registro
 footer-latest_blog:
-   title: Últimos blogs
+   title: Últimos Blogs
 footer-useful_links:
-   title: Enlaces de interés
+   title: Enlaces de Interés
    link_1_title: Creación de software
    link_2_title: Asesoramiento de expertos
    link_3_title: Formación
@@ -83,7 +83,6 @@ footer-useful_links:
    link_6_title: Polica de privacidad
 footer-contact:
    title: Contacto
-   address_value: Carrer Aragó 208, piso 5º, puerta 2ª <br> 08011 - Barcelona, Spain 
    phone_title: Teléfono
    phone_value: +44 207 490267 
    email_title: Correo electrónico
