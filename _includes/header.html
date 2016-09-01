@@ -23,23 +23,25 @@
 				<li><a href="/blog">{% t sections.blog %}</a></li>
 				<li><a href="/company">{% t sections.company %}</a></li>
 				<li><a href="/careers">{% t sections.careers %}</a></li>
-				<ul class="nav navbar-nav">
-					<!-- Adds links to other languages on the post -->
-					{% for lang in site.languages %}
-					<li>
-						{% if lang == site.lang %}
-						<a href="#"><strong>{{ lang }}</strong></a>
-						{% else %}
-						{% if lang == site.default_lang %}
-						<a href="{{ site.baseurl_root }}{{ page.url }}" >{{ lang }}</a>
-						{% else %}
-						<a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{{ lang }}</a>
-						{% endif %}
-						{% endif %}
-						{% endfor %}
 
-				</ul>
-			</ul>
-		</div><!--/end container-->
+        <div class="topbar pull-right">
+          <ul class="loginbar">
+            <li class="hoverSelector">
+              <i class="fa fa-globe"></i>
+              {% for lang in site.languages %}
+              {% if lang == site.lang %}
+              {% else %}
+              {% if lang == site.default_lang %}
+              <a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
+              {% else %}
+              <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div><!--/end container-->
 	</div><!--/navbar-collapse-->
 </div>
