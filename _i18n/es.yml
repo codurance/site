@@ -39,8 +39,9 @@ index-services-training:
    link_title: Más información
 index-clients:
    title: Clientes &amp; Socios
-   footer_title: Somos socios oficiales de Jetbrains en consultoría y formación.
-   footer_link_title: Más información  
+index-clients-footer:
+   title: Somos socios oficiales de Jetbrains en consultoría y formación.
+   link_title: Más información  
 index-how_we_work:
    title: Cómo trabajamos
    subtitle: Nuestra forma de trabajar está basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe aportar valor al negocio de forma continuada  con la calidad inherente que le permita evolucionar junto a las necesidades cambiantes del negocio.

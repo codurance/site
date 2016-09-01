@@ -41,7 +41,7 @@ index-clients:
    title: Clients &amp; Partners
 index-clients-footer:
    title: We are an official Jetbrains Consulting & Training Partner.
-   _link_title: Find out more
+   link_title: Find out more
 index-how_we_work:
    title: How We Work
    subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
