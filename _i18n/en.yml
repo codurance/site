@@ -1,6 +1,6 @@
 langs:
-  en: English
-  es: Español
+   en: English
+   es: Español
 sections:
    services: Services
    videos: Videos
@@ -41,7 +41,47 @@ index-clients:
    title: Clients &amp; Partners
 index-clients-footer:
    title: We are an official Jetbrains Consulting & Training Partner.
-   link_title: Find out more
+   _link_title: Find out more
 index-how_we_work:
    title: How We Work
-   description: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
+   subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
+   value1_title: Software Craftsmanship
+   value2_title: Agile and Lean
+   value3_title: Continuous Delivery
+   value4_title: Extreme Programming
+   value5_title: DevOps
+   value6_title: Technology
+   link_title: Learn more
+index-software_craftsmanship:
+   title: Software Craftsmanship
+   subtitle: Software Craftsmanship is at the heart of everything we do. We constantly hone our skills by teaching and learning from others within our company and the wider software development community.
+index-software_craftsmanship-book:
+   title: The Software Craftsman&#58; by our Co-founder Sandro Mancuso
+   subtitle: The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.
+   link_title: Discover more on Good Reads ...
+index-software_craftsmanship-socrates:
+   title: Software Craftsmanship Un-Conference&#58; Socrates UK 
+   subtitle: We organise Socrates UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
+   link_title: Visit the event website ...
+index-software_craftsmanship-lscc:
+   title: London Software Craftsmanship Community
+   subtitle: We founded the London Software Craftsmanship Community and have seeded many similar communities in Europe. The community is a collection of like minded software developers who want to learn from each other and hone their craft
+   link_title: Join the community on Meetup ...
+footer:
+   title: Software is our passion.
+   subtitle: We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
+   registration_number: Company Registration No
+footer-latest_blog:
+   title: Últimos blogs
+footer-useful_links:
+   title: Enlaces de interés
+   link_1_title: Software creation
+   link_2_title: Expert Advice
+   link_3_title: Training
+   link_4_title: Careers
+   link_5_title: About us
+   link_6_title: Privacy policy
+footer-contact:
+   title: Contact Us
+   phone: Phone
+   email: Email

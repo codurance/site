@@ -1,6 +1,6 @@
 langs:
-  en: English
-  es: Español
+   en: English
+   es: Español
 sections:
    services: Servicios 
    videos: Videos
@@ -22,26 +22,65 @@ index-services-software_creation:
    description_line_2: EQUIPOS AUTÓNOMOS (in situ & externo)
    description_line_3: DISEÑO UX & UI
    description_line_4: AGILE & CONTINUOUS DELIVERY
-   link_title: Aprende más 
+   link_title: Más información 
 index-services-expert_advice:
    title: Asesoramiento de expertos
    description_line_1: ENTERPRISE ARCHITECTURE & DISEÑO
    description_line_2: MICROSERVICIOS & DEVOPS
    description_line_3: SOLUCIONES EN LA NUBE (Amazon AWS & Azure)
    description_line_4: ALINEACIÓN DE NEGOCIOS Y TECNOLOGÍA
-   link_title: Aprende más 
+   link_title: Más información 
 index-services-training:
    title: Formación & asesoría
    description_line_1: TDD, CLEAN CODE & DISEÑO
    description_line_2: LA NUBE, ARQUITECTURA & MICROSERVICIOS
    description_line_3: MOVILIDAD, JVM, .NET & DEVOPS
    description_line_4: CULTIVANDO UNA CULTURA DE CRAFTSMANSHIP
-   link_title: Aprende más
+   link_title: Más información
 index-clients:
    title: Clientes &amp; Socios
-index-clients-footer:
-   title: Somos socios oficiales de Jetbrains en consultoría y formación.
-   link_title: Más información  
+   footer_title: Somos socios oficiales de Jetbrains en consultoría y formación.
+   footer_link_title: Más información  
 index-how_we_work:
    title: Cómo trabajamos
-   description: Nuestra forma de trabajar está basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe aportar valor al negocio de forma continuada  con la calidad inherente que le permita evolucionar junto a las necesidades cambiantes del negocio.
+   subtitle: Nuestra forma de trabajar está basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe aportar valor al negocio de forma continuada  con la calidad inherente que le permita evolucionar junto a las necesidades cambiantes del negocio.
+   value1_title: Software Craftsmanship
+   value2_title: Agile and Lean
+   value3_title: Continuous Delivery
+   value4_title: Programación Extrema
+   value5_title: DevOps
+   value6_title: Tecnología
+   link_title: Más informacion
+index-software_craftsmanship:
+   title: Software Craftsmanship
+   subtitle: Software Craftsmanship está en el corazaon de todo lo que hacemos. Pulimos constantemente nuestras habilidades mediante la enseñanza y el aprendizaje mutuo tanto dentro de nuestra empresa como de la comunidad de desarrollo de software en general.
+index-software_craftsmanship-book:
+   title: The Software Craftsman&#58; de nuestro Co-fundador Sandro Mancuso
+   subtitle: El libro es descrito como "una enciclopedia sobre los comportamientos, atributos, y la estructura de una organización que se adhiere a los principios de Software Craftsmanship". Una lectura obligatoria para cualquiera que desee comprender mejor los valores detrás del movimiento.
+   link_title: Descubre más en Good Reads ...
+index-software_craftsmanship-socrates:
+   title: Software Craftsmanship Desconferencia&#58; Socrates Reino Unido
+   subtitle: Organizamos Socrates Reino Unido un retiro internacional de Software Craftsmanship no lucrativo. Software craftsmen de todo el mundo se reúnen para aprender unos de otros y mejorar la industria.
+   link_title: Visita la web del evento ...
+index-software_craftsmanship-lscc:
+   title: Comunidad de Software Craftsmanship Londres
+   subtitle: Fundamos la comunidad de Software Craftsmanship en Londres y hemos encabezado muchas comunidades similares en Europa. La comunidad es una colección de los desarrolladores de software afines que quieran aprender unos de otros y afinar su oficio.
+   link_title: Únete a la comunidad en Meetup ...
+footer:
+   title: Software es nuestra pasión.
+   subtitle: Somos Software Craftsmen. Construimos software bien elaborado para nuestros clientes, ayudamos a los desarrolladores a mejorar en su oficio a través de la formación, la orientación y la tutoría, y ayudamos a las empresas a mejorar en la distribución de software.
+   registration_number: Número de registro
+footer-latest_blog:
+   title: Últimos blogs
+footer-useful_links:
+   title: Enlaces de interés
+   link_1_title: Creación de software
+   link_2_title: Asesoramiento de expertos
+   link_3_title: Formación
+   link_4_title: Carreras
+   link_5_title: Acerca de
+   link_6_title: Polica de privacidad
+footer-contact:
+   title: Contacto
+   phone: Teléfono
+   email: Correo electrónico
