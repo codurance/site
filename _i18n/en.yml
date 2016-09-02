@@ -130,3 +130,13 @@ company-contact-form:
    name_placeholder: Name
    text_placeholder: Type your message here...
    button_title: Send
+blog-videos:
+   title: Videos
+blog-books:
+   title: Books
+   subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
+blog-tweet_feed:
+   title: Latest Tweets
+blog-post:
+   author_title: By
+   date_title: Posted
