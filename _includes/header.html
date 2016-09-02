@@ -26,10 +26,11 @@
 
         <div class="topbar pull-right">
           <ul class="loginbar">
-            <li class="hoverSelector">
+            <li>
               <i class="fa fa-globe"></i>
               {% for lang in site.languages %}
               {% if lang == site.lang %}
+	      <span><strong>{{ lang }}</strong></span>
               {% else %}
               {% if lang == site.default_lang %}
               <a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
@@ -37,6 +38,9 @@
               <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
               {% endif %}
               {% endif %}
+	      {% if forloop.last == false  %}
+	      <span class="separator"> | </span>
+	      {% endif  %}
               {% endfor %}
             </li>
           </ul>
