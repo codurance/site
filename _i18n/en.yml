@@ -117,7 +117,7 @@ company-how_we_work-xp:
    subtitle: Practices such as Test-Driven Development (TDD), Pair Programming, Continuous Integration and Shared Ownership are core to everyone at Codurance. This fits very well with our craftsmanship values. We are experts in these practices and use them with great effect. We run public training courses and community events to help our industry embed these practices.
 company-how_we_work-devops:
    title: DevOps
-   subtitle: DevOps is a culture that supports continuous delivery. We believe that release, operation, and maintenance of software are as much the responsibility of the software development team as building the building the features in the first place. We include production stability, monitoring, and maintenance features from the start.
+   subtitle: DevOps is a culture that supports continuous delivery. We believe that release, operation, and maintenance of software are as much the responsibility of the software development team as building the features in the first place. We include production stability, monitoring, and maintenance features from the start.
 company-how_we_work-technology:
    title: Technology
    subtitle: Our focus is on JVM, .Net, Node.js, Mobile (iOS and Android) and Web Front-end technologies. We use automation tools such as Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services and Github. We excel at cloud deployment, especially using AWS and Microsoft Azure. All our craftsmen are polyglots covering many languages on these platforms.
