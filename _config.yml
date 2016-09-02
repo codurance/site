@@ -8,14 +8,14 @@ rdiscount:
 
 exclude: ["README.md", "_posts_TOFIX", "vendor"]
 
-author_dir: blog/author
+author_dir: pubications/author
 
 tag_page_layout: tag_page
-tag_page_dir: blog/tag
+tag_page_dir: publications/tag
 tag_page_layout: tag
 
 paginate: 10
-paginate_path: "/blog/page:num"
+paginate_path: "/publications/page:num"
 
 sitename: "Codurance"
 subtitle: "craft at heart"
