@@ -8,15 +8,15 @@
                     <a href="/">
                         <img id="logo-footer" class="footer-logo" src="/assets/img/footer-logo.png" alt="Codurance">
                     </a>
-                    <p>Software is our passion. </p>
-                    <p>We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software. </p>    
+		    <p>{% t footer.title  %}</p>
+		    <p>{% t footer.subtitle %}</p>    
                 </div><!--/col-md-3-->
                 <!-- End About -->
 
                 <!-- Latest -->
                 <div class="col-md-3 md-margin-bottom-40">
                     <div class="posts">
-                        <div class="headline"><h2>Latest Blogs</h2></div>
+			    <div class="headline"><h2>{% t footer-latest_blog.title %}</h2></div>
                         <ul class="list-unstyled latest-list">
 	    		    {% assign posts = site.posts | where: "asset-type", "post" %}
                             {% for post in posts limit:3 %}
@@ -32,28 +32,32 @@
                 
                 <!-- Link List -->
                 <div class="col-md-3 md-margin-bottom-40">
-                    <div class="headline"><h2>Useful Links</h2></div>
+			<div class="headline"><h2>{% t footer-useful_links.title %}</h2></div>
                     <ul class="list-unstyled link-list">
-                    	<li><a href="{{ '/services#software-creation' | prepend: site.baseurl }}">Software creation</a><i class="fa fa-angle-right"></i></li>
-			<li><a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">Expert Advice</a><i class="fa fa-angle-right"></i></li>
-                        <li><a href="{{ '/services#training' | prepend: site.baseurl }}">Training</a><i class="fa fa-angle-right"></i></li>
-                        <li><a href="{{ '/work-with-us' | prepend: site.baseurl }}">Work with us</a><i class="fa fa-angle-right"></i></li>
-                        <li><a href="{{ '/company' | prepend: site.baseurl }}">About us</a><i class="fa fa-angle-right"></i></li>
-                        <li><a href="{{ '/policies/privacy' | prepend: site.baseurl }}">Privacy policy</a><i class="fa fa-angle-right"></i></li>
+			    <li><a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t footer-useful_links.link_1_title %}</a><i class="fa fa-angle-right"></i></li>
+			<li><a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t footer-useful_links.link_2_title %}</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/services#training' | prepend: site.baseurl }}">{% t footer-useful_links.link_3_title %}</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t footer-useful_links.link_4_title %}</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/company' | prepend: site.baseurl }}">{% t footer-useful_links.link_5_title %}</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="{{ '/policies/privacy' | prepend: site.baseurl }}">{% t footer-useful_links.link_6_title %}</a><i class="fa fa-angle-right"></i></li>
                     </ul>
                 </div><!--/col-md-3-->
                 <!-- End Link List -->                    
 
                 <!-- Contact Us -->
-                <div class="col-md-3 md-margin-bottom-40">
-                    <div class="headline"><h2>Contact Us</h2></div>                         
-                    <address class="md-margin-bottom-40">
-                        <a href="https://www.google.co.uk/maps/place/15+Northburgh+St,+London+EC1V+0JR/@51.5238156,-0.1025175,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x48761b50d18bf817:0xcce7f698e8aeba03!2s15+Northburgh+St,+London+EC1V+0JR!2m2!1d-0.1003288!2d51.5238156!3m4!1s0x48761b50d18bf817:0xcce7f698e8aeba03!8m2!3d51.5238156!4d-0.1003288" target="_blank">15 Northburgh Street, 5th Floor <br>
-                        London EC1V 0JR, UK </a><br>
-                        Phone: <a href="tel:+442074902967" target="_blank" class="">+44 207 4902967</a><br/>
-                        Email: <a href="mailto:hello@codurance.com" target="_blank" class="">hello@codurance.com</a>
-                    </address>
-                </div><!--/col-md-3-->
+		<div class="col-md-3 map-img md-margin-bottom-40">
+			<div class="headline"><h2>{% t footer-contact.title  %}</h2></div>                         <address class="md-margin-bottom-40">
+				<a href="https://www.google.co.uk/maps/place/15+Northburgh+St,+London+EC1V+0JR/@51.5238156,-0.1025175,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x48761b50d18bf817:0xcce7f698e8aeba03!2s15+Northburgh+St,+London+EC1V+0JR!2m2!1d-0.1003288!2d51.5238156!3m4!1s0x48761b50d18bf817:0xcce7f698e8aeba03!8m2!3d51.5238156!4d-0.1003288" target="_blank">15 Northburgh Street <br> London EC1V 0JR</a>
+				<br>
+				<br>
+				<a href="https://www.google.co.uk/maps/place/Carrer+d'Arag%C3%B3,+208,+08011+Barcelona,+Spain/@41.3876335,2.1571825,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a28e9a736993:0x13c80b7ea4d9fb0f!8m2!3d41.3876335!4d2.1593712" target="_blank">Carrer Aragó, 208 <br> 08011, Barcelona</a>
+				<br>
+				<br>
+				{% t footer-contact.phone_title %}: <a href="tel:+442074902967" target="_blank" class="">{% t footer-contact.phone_value %}</a>
+				<br/>
+				{% t footer-contact.email_title %}: <a href="mailto:hello@codurance.com" target="_blank" class="">{% t footer-contact.email_value  %}</a>
+			</address>
+		</div><!--/col-md-3-->
                 <!-- End Contact Us -->
             </div>
         </div> 
@@ -63,9 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">                     
-                    <p>
-                        Company Registration No: 8712584
-                    </p>
+			<p>{% t footer.registration_number %}: 8712584</p>
                 </div>
 
                 <!-- Social Links -->

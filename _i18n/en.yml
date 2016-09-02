@@ -1,0 +1,141 @@
+langs:
+   en: English
+   es: Español
+sections:
+   services: Services
+   publications: Publications
+   company: Company
+   careers: Careers
+index-banner:
+   title: Pragmatic, Skilled, Transparent.
+   subtitle: At Codurance we constantly deliver value by crafting exceptional software.
+   link_title: Discover our services
+index-activity:
+   title: Latest highlights
+   link_title: View all blog posts
+index-services:
+   title: Our services
+index-services-software_creation:
+   title: Software Creation
+   description_line_1: EMBEDDED CRAFTSMAN
+   description_line_2: SELF-CONTAINED TEAMS (on-site & off-site)
+   description_line_3: UX & UI DESIGN
+   description_line_4: AGILE & CONTINUOUS DELIVERY
+   link_title: Learn more
+index-services-expert_advice:
+   title: Expert Advice
+   description_line_1: ENTERPRISE ARCHITECTURE & DESIGN 
+   description_line_2: MICROSERVICES & DEVOPS
+   description_line_3: CLOUD SOLUTIONS (Amazon AWS & Azure)
+   description_line_4: BUSINESS & TECHNOLOGY ALIGNMENT
+   link_title: Learn more
+index-services-training:
+   title: Training & Coaching
+   description_line_1: TDD, CLEAN CODE & DESIGN
+   description_line_2: CLOUD, ARCHITECTURE & MICROSERVICES
+   description_line_3: MOBILE, JVM, .NET & DEVOPS
+   description_line_4: CULTIVAR UNA CULTURA DE CRAFTSMANSHIP 
+   link_title: Learn more
+index-clients:
+   title: Clients &amp; Partners
+index-clients-footer:
+   title: We are an official Jetbrains Consulting & Training Partner.
+   link_title: Find out more
+index-how_we_work:
+   title: How We Work
+   subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
+   value1_title: Software Craftsmanship
+   value2_title: Agile and Lean
+   value3_title: Continuous Delivery
+   value4_title: Extreme Programming
+   value5_title: DevOps
+   value6_title: Technology
+   link_title: Learn more
+index-software_craftsmanship:
+   title: Software Craftsmanship
+   subtitle: Software Craftsmanship is at the heart of everything we do. We constantly hone our skills by teaching and learning from others within our company and the wider software development community.
+index-software_craftsmanship-book:
+   title: The Software Craftsman&#58; by our Co-founder Sandro Mancuso
+   subtitle: The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.
+   link_title: Discover more on Good Reads ...
+index-software_craftsmanship-socrates:
+   title: Software Craftsmanship Un-Conference&#58; Socrates UK 
+   subtitle: We organise Socrates UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
+   link_title: Visit the event website ...
+index-software_craftsmanship-lscc:
+   title: London Software Craftsmanship Community
+   subtitle: We founded the London Software Craftsmanship Community and have seeded many similar communities in Europe. The community is a collection of like minded software developers who want to learn from each other and hone their craft
+   link_title: Join the community on Meetup ...
+footer:
+   title: Software is our passion.
+   subtitle: We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
+   registration_number: Company Registration No
+footer-latest_blog:
+   title: Lastest Blogs
+footer-useful_links:
+   title: Useful Links
+   link_1_title: Software creation
+   link_2_title: Expert Advice
+   link_3_title: Training
+   link_4_title: Careers
+   link_5_title: About us
+   link_6_title: Privacy policy
+footer-contact:
+   title: Contact Us
+   phone_title: Phone
+   phone_value: +44 207 4902967
+   email_title: Email
+   email_value: hello@codurance.com
+company-who_are_we:
+   title: Who are we?
+   subtitle: <p>We build well-crafted software and help development teams to get better at continuously delivering software through the application of Extreme Programming practices and Software Craftsmanship values. Software Craftsmanship is at the heart of our company. In 2010, the founders started the <a href="http://londonswcraft.com/">London Software Craftsmanship Community (LSCC)</a> which has grown to become the largest and most active Software Craftsmanship community in the world, with more than 3,500 developers that meet a few times a month to share and learn. Codurace was founded in 2013 and inherited the same community spirit. Since 2013, we have been organising <a href="http://socratesuk.org/">SoCraTes UK</a>&mdash;an International Software Craftsmanship Gathering that attracts software crafts[wo]men from all over Europe.
+                </p>
+                <p>Our craftsmen are renowned for their technology expertise especially in Web, Devops, Big Data, Continuous Delivery, and Cloud Platforms. We present at many conferences around the world; write <a href="http://codurance.com/blog/">blogs</a>; and create <a href="http://codurance.com/videos/">screencasts</a>.
+                </p>
+company-the_team: 
+   title: The team
+company-our_culture:
+   title: Our culture
+   subtitle: <p>Our craftsmen, craftswomen, and apprentices are at the core of our company. We call ourselves craftsmen and craftswomen as a way to express the passion we have for creating well-crafted software. As most of us came to Codurance through the Craftsmanship communities (London and a few others in Europe), it is in our DNA to run many internal sessions where we learn from and share knowledge with each other. Our people are never alone, even when they are working with a client. We are constantly helping each other, regardless which project we are working on.</p>
+                <p>Transparency is one of our key values. Every person inside Codurance has full access to the company's financials and each other salaries. There are no hierarchies or managers in the company. Any small group of people who feel passionate about a subject or want to change how things are done in the company can start an Initiative. The group consider all the people who may be impacted by their decision and accept any person interested in the subject to join the group. The group is then empowered to make the decision.</p>
+                <p>Agile and Lean principles are also at our core&mdash;any decision made now can be changed later. This allows us to always move forward, try new things, inspect and adapt.</p>
+company-how_we_work:
+   title: How we work
+   subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
+company-how_we_work-software_craftsmanship:
+   title: Software Craftsmanship 
+   subtitle: Software Craftsmanship is at the heart of everything we do so we can continuously deliver value to the business with inherent quality. We understand that quality should not be a premium. We hone our skills through continuous practice. We constantly learn, teach and mentor in our team, our company and the wider software development industry.
+company-how_we_work-agile_and_lean:
+   title: Agile and Lean
+   subtitle: We believe that a good process constantly delivers incremental value to the business and provides fast feedback. This allows us to inspect, learn, and adapt. We don't prescribe specific processes. We help teams understand their options and make their own choices - whether that is Scrum, Kanban, or a mix of Agile practices.
+company-how_we_work-continous_delivery:
+   title: Continuous Delivery
+   subtitle: We understand that Continuous Delivery requires the organisation to be aligned in order to deliver value to stakeholders in frequent and small iterations. We are experts in release automation and setting up continuous delivery pipelines. We achieve continuous delivery through close attention to business needs, software quality, and XP practices.
+company-how_we_work-xp:
+   title: Extreme Programming (XP)
+   subtitle: Practices such as Test-Driven Development (TDD), Pair Programming, Continuous Integration and Shared Ownership are core to everyone at Codurance. This fits very well with our craftsmanship values. We are experts in these practices and use them with great effect. We run public training courses and community events to help our industry embed these practices.
+company-how_we_work-devops:
+   title: DevOps
+   subtitle: DevOps is a culture that supports continuous delivery. We believe that release, operation, and maintenance of software are as much the responsibility of the software development team as building the features in the first place. We include production stability, monitoring, and maintenance features from the start.
+company-how_we_work-technology:
+   title: Technology
+   subtitle: Our focus is on JVM, .Net, Node.js, Mobile (iOS and Android) and Web Front-end technologies. We use automation tools such as Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services and Github. We excel at cloud deployment, especially using AWS and Microsoft Azure. All our craftsmen are polyglots covering many languages on these platforms.
+company-contact:
+   title: Contact us
+company-contact-form:
+   title: Get In Touch
+   subtitle: Call us on <a href="tel:+442074902967">+44 207 4902967</a>, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
+   email_placeholder: Email
+   name_placeholder: Name
+   text_placeholder: Type your message here...
+   button_title: Send
+publications-videos:
+   title: Videos
+publications-books:
+   title: Books
+   subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
+publications-tweet_feed:
+   title: Latest Tweets
+publications-post:
+   author_title: By
+   date_title: Posted

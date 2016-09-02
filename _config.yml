@@ -28,3 +28,9 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-multiple-languages-plugin
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["en", "es"]
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
+

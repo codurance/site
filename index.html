@@ -4,48 +4,48 @@ layout: default
 <!-- feature panel -->
 <div class="feature-panel">
         <div class="jumbotron">
-            <h1>Pragmatic, Skilled, Transparent.</h1>
-	    <h3>At Codurance we constantly deliver value by crafting exceptional software.</h3>
-	    <a href="/services" role="button" class="btn btn-more btn-more-light">Discover our services</a>
+		<h1>{% t index-banner.title %}</h1>
+	    <h3>{% t index-banner.subtitle %}</h3>
+	    <a href="/services" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
         </div>
 </div>
 <!-- Activity panel -->
 <div class="section">
     <div class="container">
         <div class="title-header">
-            <h2>Latest Highlights</h2>
+		<h2>{% t index-activity.title %}</h2>
         </div>
-        <div class="row blog-boxes margin-bottom-40">
-	    {% assign posts = site.posts %}
-            {% for post in posts limit:3 %}
+	<div class="row blog-boxes margin-bottom-40">
+		{% assign posts = site.posts %}
+		{% for post in posts limit:3 %}
 		{% if post.image.src %}
-			{% assign imageSrc = post.image.src %}
+		{% assign imageSrc = post.image.src %}
 		{% else %}
-			{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
+		{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
 		{% endif %}
 		{% if post.abstract %}
-			{% assign introductionToPost = post.abstract %}
+		{% assign introductionToPost = post.abstract %}
 		{% else %}
-			{% assign introductionToPost = post.content %}
+		{% assign introductionToPost = post.content %}
 		{% endif %}
-                <div class="col-md-4 md-margin-bottom-40">
-                    <div class="blog-box homepage-blog-thumb">
-                        <img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
-                        <div class="blog-content">
-                            <h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
-                            <p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
-                        </div>
-                        <ul class="list-inline blog-box-info">
-                            <li><span>By</span> {{ post.author | author_links }}</li>
-                            <li>|</li>
-                            <li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
-                        </ul>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+		<div class="col-md-4 md-margin-bottom-40">
+			<div class="blog-box homepage-blog-thumb">
+				<img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
+				<div class="blog-content">
+					<h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
+					<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
+				</div>
+				<ul class="list-inline blog-box-info">
+					<li><span>By</span> {{ post.author | author_links }}</li>
+					<li>|</li>
+					<li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
         <div class="col-md-12 text-center">
-            <a href="/blog" role="button" class="btn btn-u btn-more animated">View all blog posts</a>
+		<a href="/blog" role="button" class="btn btn-u btn-more animated">{% t index-activity.link_title  %}</a>
         </div>
     </div>
 </div>
@@ -53,40 +53,40 @@ layout: default
 <div class="section gray-section" id="services">
     <div class="container container-space">
 	    <div class="title-header">
-            <h2>Our Services</h2>
+		    <h2>{% t index-services.title %}</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
 		        <div class="service-card">
 		            <div class="service-card-inner bg-dark-red">
 			            <img src="/assets/img/custom/home/services/software-creation-icon.png" />
-			            <h2 class="white">Software Creation</h2>
+				    <h2 class="white">{% t index-services-software_creation.title %}</h2>
 		            </div>
-		            <div class="service-card-inner bg-red">
-			            <ul class="list-unstyled white">
-			                <li>EMBEDDED CRAFTSMAN</li>
-			                <li>SELF-CONTAINED TEAMS (on-site & off-site)</li>
-			                <li>UX & UI DESIGN</li>
-			                <li>AGILE & CONTINUOUS DELIVERY</li>
-			            </ul>
-			            <a href="/services#software-creation"  role="button" class="btn btn-more btn-more-light animated">Learn more</a>
-		            </div>
+			    <div class="service-card-inner bg-red">
+				    <ul class="list-unstyled white">
+					    <li>{% t index-services-software_creation.description_line_1 %}</li>
+					    <li>{% t index-services-software_creation.description_line_2 %}</li>
+					    <li>{% t index-services-software_creation.description_line_3 %}</li>
+					    <li>{% t index-services-software_creation.description_line_4 %}</li>
+				    </ul>
+				    <a href="/services#software-creation"  role="button" class="btn btn-more btn-more-light animated">{% t index-services-software_creation.link_title  %}</a>
+			    </div>
 		        </div>
 	        </div>
             <div class="col-md-4">
 		    <div class="service-card">
 		        <div class="service-card-inner bg-dark-orange">
 			        <img src="/assets/img/custom/home/services/expert-advice-icon.png" />
-			        <h2 class="white">Expert Advice</h2>
+				<h2 class="white">{% t index-services-expert_advice.title %}</h2>
 		        </div>
 		        <div class="service-card-inner bg-orange">
-			        <ul class="list-unstyled white">
-			            <li>ENTERPRISE ARCHITECTURE & DESIGN</li>
-			            <li>MICROSERVICES & DEVOPS</li>
-			            <li>CLOUD SOLUTIONS (Amazon AWS & Azure)</li>
-			            <li>BUSINESS & TECHNOLOGY ALIGNMENT</li>
-			        </ul>
-			        <a href="/services#expert-advice" role="button" class="btn btn-more btn-more-light animated">Learn more</a>
+				<ul class="list-unstyled white">
+					<li>{% t index-services-expert_advice.description_line_1 %}</li>
+					<li>{% t index-services-expert_advice.description_line_2 %}</li>
+					<li>{% t index-services-expert_advice.description_line_3 %}</li>
+					<li>{% t index-services-expert_advice.description_line_4 %}</li>
+				</ul>
+				<a href="/services#expert-advice" role="button" class="btn btn-more btn-more-light animated">{% t index-services-expert_advice.link_title  %}</a>
 		        </div>
 		    </div>
 	        </div>
@@ -94,16 +94,16 @@ layout: default
 		        <div class="service-card">
 		            <div class="service-card-inner bg-dark-yellow">
 			            <img src="/assets/img/custom/home/services/training-coaching-icon.png" />
-			            <h2 class="white">Training & Coaching</h2>
+				    <h2 class="white">{% t index-services-training.title  %}</h2>
 		            </div>
 		            <div class="service-card-inner bg-yellow">
-			            <ul class="list-unstyled white">
-			                <li>TDD, CLEAN CODE & DESIGN</li>
-			                <li>CLOUD, ARCHITECTURE & MICROSERVICES</li>
-			                <li>MOBILE, JVM, .NET & DEVOPS</li>
-			                <li>GROWING A CRAFTSMANSHIP CULTURE</li>
-			            </ul>
-			            <a href="/services#training" role="button" class="btn btn-more btn-more-light animated">Learn more</a>
+				    <ul class="list-unstyled white">
+					    <li>{% t index-services-training.description_line_1 %}</li>
+					    <li>{% t index-services-training.description_line_2 %}</li>
+					    <li>{% t index-services-training.description_line_3 %}</li>
+					    <li>{% t index-services-training.description_line_4 %}</li>
+				    </ul>
+				    <a href="/services#training" role="button" class="btn btn-more btn-more-light animated">{% t index-services-training.link_title  %}</a>
 		            </div>
 		        </div>
 	        </div>
@@ -114,7 +114,7 @@ layout: default
 <div class="section">
     <div class="container">
         <div class="title-header">
-            <h2>Clients &amp; Partners</h2>
+		<h2>{% t index-clients.title %}</h2>
         </div>
         <!-- Owl Carousel 2.0 -->
         <div class="custom-owl-carousel owl-theme margin-bottom-20">
@@ -165,7 +165,7 @@ layout: default
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="row jetBrains-blurb">
-                    <h5>We are an official Jetbrains Consulting & Training Partner. <a href="/services/partners/jetbrains">Find out more</a></h5>.
+			<h5>{% t index-clients-footer.title %} <a href="/services/partners/jetbrains">{% t index-clients-footer.link_title  %}</a></h5>.
                 </div>
             </div>
         </div>
@@ -175,48 +175,48 @@ layout: default
 <div class="section gray-section">
     <div class="container">
         <div class="title-header">
-            <h2>How We Work</h2>
-            <p>The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.</p>
+		<h2>{% t index-how_we_work.title %}</h2>
+		<p>{% t index-how_we_work.subtitle %}</p>
         </div>
 		<div class="row">
 		    <div class="col-sm-4 col-md-2">
 		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
                     <i class="icon-custom icon-md icon-color-red icon-heart no-border"></i>
-                    <h3>Software Craftsmanship</h3>
+		    <h3>{% t index-how_we_work.value1_title %}</h3>
 		        </div>
 		    </div>
 		    <div class="col-sm-4 col-md-2">
 		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
 		            <i class="icon-custom icon-md icon-color-red icon-paper-plane no-border"></i>
-		            <h3>Agile and Lean</h3>
+		            <h3>{% t index-how_we_work.value2_title %}</h3>
 		        </div>
 		    </div>
 		    <div class="col-sm-4 col-md-2">
 		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
 		            <i class="icon-custom icon-md icon-color-red icon-reload no-border"></i>
-		            <h3>Continuous Delivery</h3>
+		            <h3>{% t index-how_we_work.value3_title %}</h3>
 		        </div>
 		    </div>
 			<div class="col-sm-4 col-md-2">
 			    <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
                     <i class="icon-custom icon-md icon-color-red icon-control-forward no-border"></i>
-                    <h3>Extreme Programming</h3>
+                    <h3>{% t index-how_we_work.value4_title %}</h3>
 			    </div>
 			</div>
 			<div class="col-sm-4 col-md-2">
 			    <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
                     <i class="icon-custom icon-md icon-color-red icon-settings no-border"></i>
-                    <h3>DevOps</h3>
+                    <h3>{% t index-how_we_work.value5_title %}</h3>
 			    </div>
 			</div>
 		    <div class="col-sm-4 col-md-2">
 		        <div class="block-centered block-centered-condensed equalheight thumbnail-style bg-white">
 		            <i class="icon-custom icon-md icon-color-red icon-screen-desktop no-border"></i>
-		            <h3>Technology</h3>
+		            <h3>{% t index-how_we_work.value6_title %}</h3>
 		        </div>
 		    </div>
             <div class="col-md-12 text-center">
-                <a href="/company/#howwework" class="btn btn-u btn-more animated">Learn more</a>
+		    <a href="/company/#howwework" class="btn btn-u btn-more animated">{% t index-how_we_work.link_title %}</a>
             </div>
 
 		</div>
@@ -227,37 +227,37 @@ layout: default
 <div class="section">
     <div class="container">
         <div class="title-header">
-          <h2>Software Craftsmanship</h2>
-          <p>Software Craftsmanship is at the heart of everything we do. We constantly hone our skills by teaching and learning from others within our company and the wider software development community.</p>
+		<h2>{% t index-software_craftsmanship.title %}</h2>
+		<p>{% t index-software_craftsmanship.subtitle  %}</p>
         </div>
             <div class="row news-v1">
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="news-v1-in">
                         <img class="img-responsive" src="/assets/img/custom/home/the-software-craftsman-book.jpg" alt="">
-                        <h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">The Software Craftsman: by our Co-founder Sandro Mancuso</a></h3>
-                        <p>The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.</p>
+			<h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.title %}</a></h3>
+			<p>{% t index-software_craftsmanship-book.subtitle%}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
-                            <li><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">Discover more on Good Reads ...</a></li>
+				<li><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.link_title  %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="news-v1-in">
                         <img class="img-responsive" src="/assets/img/custom/home/socrates-uk.jpg" alt="">
-                        <h3><a href="http://socratesuk.org/">Software Craftsmanship and Testing unconference: SoCraTes UK</a></h3>
-                        <p>We organise Socrates UK: a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry.</p>
+			<h3><a href="http://socratesuk.org/">{% t index-software_craftsmanship-socrates.title %}</a></h3>
+                        <p>{% t index-software_craftsmanship-socrates.subtitle %}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
-                            <li><a href="http://socratesuk.org/">Visit the event website ...</a></li>
+                            <li><a href="http://socratesuk.org/">{% t index-software_craftsmanship-socrates.link_title %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="news-v1-in">
                         <img class="img-responsive" src="/assets/img/custom/home/lscc.jpg" alt="">
-                        <h3><a href="https://www.meetup.com/london-software-craftsmanship">London Software Craftsmanship Community</a></h3>
-                        <p>We founded the London Software Craftsmanship Community and have seeded many similar communities in Europe. The community is a collection of like minded software developers who want to learn from each other and hone their craft.</p>
+			<h3><a href="https://www.meetup.com/london-software-craftsmanship">{% t index-software_craftsmanship-lscc.title %}</a></h3>
+			<p>{% t index-software_craftsmanship-lscc.subtitle %}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
-                            <li><a href="https://www.meetup.com/london-software-craftsmanship">Join the community on Meetup ...</a></li>
+				<li><a href="https://www.meetup.com/london-software-craftsmanship">{% t index-software_craftsmanship-lscc.link_title  %}</a></li>
                         </ul>
                     </div>
                 </div>

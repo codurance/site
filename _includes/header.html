@@ -1,28 +1,50 @@
 <div class="header no-topbar">
-    <div class="container">
-        <!-- Logo -->
-        <a class="logo" href="/">
-            <img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
-        </a>
-        <!-- End Logo -->
+	<div class="container">
+		<!-- Logo -->
+		<a class="logo" href="/">
+			<img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
+		</a>
+		<!-- End Logo -->
 
-        <!-- Toggle get grouped for better mobile display -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="fa fa-bars"></span>
-        </button>
-        <!-- End Toggle -->
-    </div><!--/end container-->
+		<!-- Toggle get grouped for better mobile display -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="fa fa-bars"></span>
+		</button>
+		<!-- End Toggle -->
+	</div><!--/end container-->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-        <div class="container">
-		<ul class="nav navbar-nav">
-			<li><a href="/services">Services</a></li>
-			<li><a href="/publications">Publications</a></li>
-			<li><a href="/company">Company</a></li>
-			<li><a href="/careers">Careers</a></li>
-		</ul>
-        </div><!--/end container-->
-    </div><!--/navbar-collapse-->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="/services">{% t sections.services %}</a></li>
+				<li><a href="/publications">{% t sections.publications %}</a></li>
+				<li><a href="/company">{% t sections.company %}</a></li>
+				<li><a href="/careers">{% t sections.careers %}</a></li>
+				<!--Uncomment when Spanish site is ready -->
+				<!-- <div class="topbar pull-right">
+					<ul class="loginbar">
+						<li>
+							<i class="fa fa-globe"></i>
+							{% for lang in site.languages %}
+							{% if lang == site.lang %}
+							<span class="language"><strong>{{ lang }}</strong></span>
+							{% else %}
+							{% if lang == site.default_lang %}
+							<a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
+							{% else %}
+							<a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
+							{% endif %}
+							{% endif %}
+							{% if forloop.last == false  %}
+							<span class="separator"> | </span>
+							{% endif  %}
+							{% endfor %}
+						</li>
+					</ul>
+				</div> -->
+			</ul>
+		</div><!--/end container-->
+	</div><!--/navbar-collapse-->
 </div>
