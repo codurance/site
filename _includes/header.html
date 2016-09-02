@@ -20,32 +20,31 @@
 			<ul class="nav navbar-nav">
 				<li><a href="/services">{% t sections.services %}</a></li>
 				<li><a href="/videos">{% t sections.videos %}</a></li>
-				<li><a href="/blog">{% t sections.blog %}</a></li>
+				<li><a href="/blog">{% t sections.publications %}</a></li>
 				<li><a href="/company">{% t sections.company %}</a></li>
 				<li><a href="/careers">{% t sections.careers %}</a></li>
-
-        <div class="topbar pull-right">
-          <ul class="loginbar">
-            <li>
-              <i class="fa fa-globe"></i>
-              {% for lang in site.languages %}
-              {% if lang == site.lang %}
-	      <span><strong>{{ lang }}</strong></span>
-              {% else %}
-              {% if lang == site.default_lang %}
-              <a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
-              {% else %}
-              <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
-              {% endif %}
-              {% endif %}
-	      {% if forloop.last == false  %}
-	      <span class="separator"> | </span>
-	      {% endif  %}
-              {% endfor %}
-            </li>
-          </ul>
-        </div>
-      </ul>
-    </div><!--/end container-->
+				<div class="topbar pull-right">
+					<ul class="loginbar">
+						<li>
+							<i class="fa fa-globe"></i>
+							{% for lang in site.languages %}
+							{% if lang == site.lang %}
+							<span><strong>{{ lang }}</strong></span>
+							{% else %}
+							{% if lang == site.default_lang %}
+							<a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
+							{% else %}
+							<a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
+							{% endif %}
+							{% endif %}
+							{% if forloop.last == false  %}
+							<span class="separator"> | </span>
+							{% endif  %}
+							{% endfor %}
+						</li>
+					</ul>
+				</div>
+			</ul>
+		</div><!--/end container-->
 	</div><!--/navbar-collapse-->
 </div>

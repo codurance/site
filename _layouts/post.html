@@ -1,8 +1,8 @@
 ---
 layout: default
 group:
-  title: Blog
-  link: /blog
+  title: Publications
+  link: /publications
 ---
 <div class="bg-color-light">
   <div class="container content-sm">
@@ -19,7 +19,7 @@ group:
                 <li>Posted {{ page.date | date_to_string }}</li>
                 <li>
                     {% for tag in page.tags %}
-                      <a href="/blog/tag/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
+                      <a href="/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
                     {% endfor %}
                 </li>
                {% endif %}
