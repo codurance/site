@@ -2,18 +2,18 @@
 author: Matthew Butt
 layout: video
 asset-type: video
-name: complexe-refactoring-in-simple-steps-I
+name: complex-refactoring-in-simple-steps-I
 image:
  src: /assets/img/custom/videos/complexe-refactoring-in-simple-steps-I.jpg
 
-title: "Complexe refactoring in simple steps Part I"
+title: "Complex refactoring in simple steps Part I"
 hidden: true
 video-url: https://www.youtube.com/embed/ntjg6rE6lss
 date: 2016-09-01 11:59:00 +01:00
 ---
 
 
-## Screencast - Complexe refactoring in simple steps, Part I
+## Screencast - Complex refactoring in simple steps, Part I
 
 Matthew Butt demonstrates how to compose simple automated refactoring steps in ReSharper to refactor code to better designs.
 
