@@ -51,7 +51,13 @@ body.header-fixed-space-default {
 	padding-bottom: 15px;
 }
 
+.header span.language {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
 .header .topbar ul.loginbar > li > a,
+.header span.separator,
 .header .topbar ul.loginbar > li > a:hover {
 	color: #7c8082;
 	font-size: 11px;

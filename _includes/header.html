@@ -28,7 +28,7 @@
 							<i class="fa fa-globe"></i>
 							{% for lang in site.languages %}
 							{% if lang == site.lang %}
-							<span><strong>{{ lang }}</strong></span>
+							<span class="language"><strong>{{ lang }}</strong></span>
 							{% else %}
 							{% if lang == site.default_lang %}
 							<a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
