@@ -26,12 +26,12 @@ title: Company
                 <div class="row team margin-bottom-10">
                     {% for member in site.data.team %}
                     <!-- TEAM MEMBER -->
-                    <div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
-                        <a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="Image 1" style="background-color: #fff">
-                            <span><img class="img-responsive" src="{{member.image}}" alt=""></span>
-                            <span>{{member.name}}</span>
-                        </a>
-                    </div>
+		    <div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
+			    <a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="Image 1" style="background-color: #fff">
+				    <span><img class="img-responsive" src="{{member.image}}" alt=""></span>
+				    <span>{{member.name}}</span>
+			    </a>
+		    </div>
                     <!-- MODAL CLASS -->
                     <div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog profile-window modal-window">
