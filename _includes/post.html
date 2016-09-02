@@ -18,8 +18,8 @@
     <div class="col-md-7 news-v3">
         <div class="news-v3-in-sm no-padding">
             <ul class="list-inline posted-info">
-		    <li>{% t blog-post.author_title %} {{ post.author || author_links }} </li>
-		    <li>{% t blog-post.date_title %} {{ post.date | date_to_string }}</li>
+		    <li>{% t publications-post.author_title %} {{ post.author || author_links }} </li>
+		    <li>{% t publications-post.date_title %} {{ post.date | date_to_string }}</li>
             </ul>
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p>{{ post.content | strip_html | truncatewords:45 }}</p>

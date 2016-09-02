@@ -3,7 +3,6 @@ langs:
    es: Español
 sections:
    services: Services
-   videos: Videos
    publications: Publications
    company: Company
    careers: Careers
@@ -130,13 +129,13 @@ company-contact-form:
    name_placeholder: Name
    text_placeholder: Type your message here...
    button_title: Send
-blog-videos:
+publications-videos:
    title: Videos
-blog-books:
+publications-books:
    title: Books
    subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
-blog-tweet_feed:
+publications-tweet_feed:
    title: Latest Tweets
-blog-post:
+publications-post:
    author_title: By
    date_title: Posted
