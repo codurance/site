@@ -88,9 +88,9 @@ footer-contact:
    email_value: hello@codurance.es
 company-who_are_we:
    title: ¿Quiénes somos?
-   subtitle: <p>Construimos software bien elaborado y ayudamos a equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3,500 desarrolladores que se encuentran unas cuantas veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro de Software Craftsmanship internacional que atrae a software crafts[wo]men de toda Europa.
+   subtitle: <p>Construimos software bien elaborado y ayudamos a equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3,500 desarrolladores que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
                 </p>
-                <p> Nuestros craftsmen son reconocidos por su experiencia, especialmente en Web, Devops, Big Data, Continuous Delivery, y Cloud Platforms. Presentamos en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a>, y creamos <a href="http://codurance.com/videos/">screencasts</a>.
+                <p> Nuestros craftsmen son reconocidos por su experiencia tecnológica   , especialmente en Web, Devops, Big Data, Continuous Delivery, y Cloud Platforms. Presentamos en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a>, y creamos <a href="http://codurance.com/videos/">screencasts</a>.
                 </p>
 company-the_team: 
    title: El equipo
@@ -113,18 +113,18 @@ company-how_we_work-continous_delivery:
    subtitle: Entendemos que Continous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de desplieges y en la creación de continous delivery pipelines. Logramos continous delivery a través de una atención continua a las necesidades del negocio, a la calidad del software, y a las prácticas de XP.
 company-how_we_work-xp:
    title: Programación Extrema (XP)
-   subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para todos en Codurance. Lo cual encaja perfectamente con nuestros valores de craftsmanship. Somos expertos en estas prácticas y las usamos con éxito. Llevamos a cabo cursos de formación públicos y eventos en la comunidad para ayudar a nuestra industria a adpotar estas prácticas.
+   subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para todos en Codurance. Lo cual encaja perfectamente con nuestros valores de craftsmanship. Somos expertos en estas prácticas y las usamos con éxito. Llevamos a cabo cursos de formación públicos y eventos en la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
 company-how_we_work-devops:
    title: DevOps
-   subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el lanzamiento, operación, y mantenimiento de software son responsabilidad del equipo de desarollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
+   subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliege, operación, y mantenimiento de software son responsabilidad del equipo de desarollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
 company-how_we_work-technology:
    title: Tecnología
-   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en las tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguages en dichas plataformas. 
+   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguages en dichas plataformas. 
 company-contact:
    title: Contacto
 company-contact-form:
    title: Ponte En Contacto
-   subtitle: Llamanos a <a href="tel:+442074902967">+44 207 4902967</a>, escríbenos a <a href="mailto:hello@codurance.es">hello@codurance.es</a>, o utiliza el siguiente formulario para enviarnos un mensaje.
+   subtitle: Llámanos a <a href="tel:+442074902967">+44 207 4902967</a>, escríbenos a <a href="mailto:hello@codurance.es">hello@codurance.es</a>, o utiliza el siguiente formulario para enviarnos un mensaje.
    email_placeholder: Correo electrónico
    name_placeholder: Nombre
    text_placeholder: Escribe tu mensaje aquí... 
@@ -139,3 +139,7 @@ publications-tweet_feed:
 publications-post:
    author_title: Por
    date_title: Publicado
+services-software_creation:
+   title: Creación de software
+   subtitle: <p><strong>Te ayudaremos a crear software bien elaborado que aporta valor a tu negocio.</strong></p>
+           <p>Nuestros craftsmen han perfeccionado su destreza en tecnologías y prácticas para poder entregar a tiempo y con calidad. Nos ajustamos a sus necesidades.</p>
