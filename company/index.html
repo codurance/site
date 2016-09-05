@@ -23,53 +23,53 @@ title: Company
                 <div class="headline">
 			<h2>{% t company-the_team.title %}</h2>
                 </div>
-                <div class="row team margin-bottom-10">
-                    {% for member in site.data.team %}
-                    <!-- TEAM MEMBER -->
-		    <div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
-			    <a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="Image 1" style="background-color: #fff">
-				    <span><img class="img-responsive" src="{{member.image}}" alt=""></span>
-				    <span>{{member.name}}</span>
-			    </a>
-		    </div>
-                    <!-- MODAL CLASS -->
-                    <div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog profile-window modal-window">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">
-                                        <span aria-hidden="true">x</span>
-                                        <span class="sr-only">Close</span>
-                                    </button>
-                                    <h3>
-                                        {{member.name}}<br> <small>{{member.role}}</small>
-                                    </h3>
-                                </div>
-                                <div class="modal-body">
-                                    <p>
-                                        <img class="img-responsive margin-bottom-30 profile-image" src="{{member.image}}" alt="{{member.name}}">
-                                    </p>
-                                    {{member.fullDescription}}
-                                    <ul class="list-unstyled list-inline team-socail">
-                                        <li>
-                                            <a href="http://twitter.com/{{member.twitter}}">
-                                                <i class="fa fa-twitter fa-3x"></i>
-                                            </a>
-                                        </li>
-                                        {% if member.github != null %}
-                                        <li>
-                                            <a href="http://github.com/{{member.github}}">
-                                                <i class="fa fa-github fa-3x"></i>
-                                            </a>
-                                        </li>
-                                        {% endif %}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
+		<div class="row team margin-bottom-10">
+			{% for member in site.data.team %}
+			<!-- TEAM MEMBER -->
+			<div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
+				<a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
+					<span><img class="img-responsive" src="{{member.image}}" alt=""></span>
+					<span>{{member.name}}</span>
+				</a>
+			</div>
+			<!-- MODAL CLASS -->
+			<div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog profile-window modal-window">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">x</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h3>
+								{{member.name}}<br> <small>{{member.role}}</small>
+							</h3>
+						</div>
+						<div class="modal-body">
+							<p>
+							<img class="img-responsive margin-bottom-30 profile-image" src="{{member.image}}" alt="{{member.name}}">
+							</p>
+							{{member.fullDescription}}
+							<ul class="list-unstyled list-inline team-socail">
+								<li>
+									<a href="http://twitter.com/{{member.twitter}}">
+										<i class="fa fa-twitter fa-3x"></i>
+									</a>
+								</li>
+								{% if member.github != null %}
+								<li>
+									<a href="http://github.com/{{member.github}}">
+										<i class="fa fa-github fa-3x"></i>
+									</a>
+								</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
             </div>
             <div class="margin-bottom-40">
                 <a id="ourculture"></a>
