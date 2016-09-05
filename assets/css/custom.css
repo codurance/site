@@ -440,6 +440,7 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .img-hover-v1 span {
     min-height: 50px;
+    text-align: center;
 }
 
 /* Services */
