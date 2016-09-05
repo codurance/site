@@ -22,7 +22,7 @@ Becoming a [Certified ScrumMaster&reg;](https://www.scrumalliance.org/certificat
 
 Scrum is not a silver bullet, it is a framework with a small set of practices that will help produce better value to the user with faster feedback and greater team cohesion. Adopting Scrum will require investments: the whole company has to learn new practices, principles, values. Being Agile is about recognising weaknesses and constantly learning from them, according to Ken Schwaber:
 
-> ## _"Scrum is like your mother-in-law. It's constantly pointing out your shortcomings."_
+> ## _"Scrum is [..] constantly pointing out your shortcomings."_
 
 
 Deciding to change means that both stakeholders and the team must respect 3 essential Scrum aspects:
