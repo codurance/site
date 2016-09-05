@@ -4,6 +4,7 @@ langs:
 sections:
    services: Servicios 
    publications: Publicaciones
+   events: Events
    company: Empresa
    careers: Carreras
 index-banner:
@@ -139,3 +140,7 @@ publications-tweet_feed:
 publications-post:
    author_title: Por
    date_title: Publicado
+events-featured:
+   title: Featured Events
+events-lscc:
+   title: London Software Craftsmanship Events
