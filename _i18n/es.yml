@@ -119,7 +119,7 @@ company-how_we_work-devops:
    subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliege, operación, y mantenimiento de software son responsabilidad del equipo de desarollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
 company-how_we_work-technology:
    title: Tecnología
-   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguages en dichas plataformas. 
+   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguajes en dichas plataformas. 
 company-contact:
    title: Contacto
 company-contact-form:
