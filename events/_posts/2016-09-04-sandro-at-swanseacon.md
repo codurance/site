@@ -12,7 +12,7 @@ hidden: true
 event-dates: 
  starts: 2016-09-12
  ends: 2016-09-13
-event-page-url: http://player.vimeo.com/video/44243846
+event-page-url: http://swanseacon.co.uk/
 date: 2016-09-04 10:00:00 +01:00
 ---
 

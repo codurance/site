@@ -11,6 +11,7 @@
 			</a>
 			<div class="blog-content">
 				<h3><a href="{{post.event-page-url}}">{{post.title}}</a></h3>
+				<h4>{{post.location}}</h4>
 				<p>{{ post.event-dates.starts | date_to_string }} - {{ post.event-dates.ends | date_to_string }}</p>
 				<p>{{ post.content | strip_html | truncatewords:30 }}</p>
 			</div>
