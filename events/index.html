@@ -9,9 +9,17 @@ title: Events
 		<hr class="divider">	
 		{% include featured_events.html %}	
 	</div>
-	<div class="services-section">
+	<div class="services-section"  >
 		<h2>{% t events-lscc.title  %}</h2>
 		<hr class="divider">	
 		{% include lscc_events.html %}	
 	</div>
 </div>
+
+<script type="text/javascript" src="/assets/js/events.js"></script>
+<script>
+
+ if ( window.addEventListener ) { 
+     window.addEventListener( "load", getLsccMeetups, false );
+  }
+</script>
