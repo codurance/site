@@ -1,0 +1,21 @@
+<div class="row blog-boxes margin-bottom-40">
+	{% for post in site.categories.events | sort: 'author' limit:3 %}
+	<div class="col-md-4 md-margin-bottom-40">
+		<div class="blog-box homepage-blog-thumb">
+			<a href="{{ post.event-page-url }}">
+			{% if post.image.src %}
+				<img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+			{% else %}
+				<img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ postTitle }}" alt="{{ postTitle }}">
+			{% endif %}
+			</a>
+			<div class="blog-content">
+				<h3><a href="{{post.event-page-url}}">{{post.title}}</a></h3>
+				<h4>{{post.location}}</h4>
+				<p>{{ post.event-dates.starts | date_to_string }} - {{ post.event-dates.ends | date_to_string }}</p>
+				<p>{{ post.content | strip_html | truncatewords:30 }}</p>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
