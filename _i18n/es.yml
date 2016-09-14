@@ -145,10 +145,10 @@ services-software_creation:
    subtitle: <p><strong>Te ayudaremos a crear software bien elaborado que aporta valor a tu negocio.</strong></p>
            <p>Nuestros craftsmen han perfeccionado su destreza en tecnologías y prácticas para poder entregar a tiempo y con calidad. Nos ajustamos a sus necesidades.</p>
 services-software_creation-embedded_craftsmen:
-   title: Craftsmen embebidos
+   title: Craftsmen Embebidos
    subtitle: Nuestro craftsmen pueden mejorar tus equipos para que ofrezcan conocimientos especializados en tecnologías especificas. También pueden formar el núcleo de tus equipos para ayudar a inculcar las practicas de XP y los valores de Software Craftsmanship.
 services-software_creation-self_contained_teams:
-   title: Equipos autónomos 
+   title: Equipos Autónomos 
    subtitle: <p>Nuestros craftsmen están preparados para cubrir todas las funciones necesarias para el pleno funcionamiento de equipos Agile. Tenemos expertos en UX y diseño de UI, desarrollo de Front End y Back End, DevOps y Testing. Todos nuestros craftsmen tienen una compresión innata de análisis de negocio y trabajan con product owners para garantizar que ofrecemos valor de manera constante.</p>
            <p>Proveemos equipos totalmente funcionales para ayudarte a empezar rápido y a entregar el proyecto de la manera más eficaz.</p>
 services-software_creation-continous_delivery:
