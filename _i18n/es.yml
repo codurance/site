@@ -167,7 +167,7 @@ services-expert_advice-enterprise_architecture:
    subtitle: <p>Nuestros craftsmen tienen una amplia riqueza de conocimientos y experiencias en el trato con sistema a gran escala en las finanzas, medios de comunicación y gobierno.</p>
            <p>Revisaremos el enfoque y te ayudaremos a tomar las decisiones mas eficaces para el futuro</p>
 services-expert_advice-software_architecture_and_design:
-   title: Arquitecture de Software & Diseño
+   title: Arquitectura de Software & Diseño
    subtitle: <p>Revisaremos su arquitectura actual y le ayudaremos a crear una vista sobre el riesgo de su solución software actual. Podemos asesorar sobre la mejor manera de evolucionar la arquitectura para reducir dichos riesgos.</p>
            <p>Si estás buscando como evolucionar tu sistema a microservicios o como crear una arquitectura basada en microservicios desde cero, te ayudaremos a entender mejor el enfoque de acuerdo a tus necesidades.</p>
 services-expert_advice-continous_delivery:
