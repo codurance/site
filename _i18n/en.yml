@@ -150,7 +150,7 @@ services-software_creation-embedded_craftsmen:
 services-software_creation-self_contained_teams:
    title: Self-contained Teams
    subtitle: <p>Our craftsmen are equipped to cover all the roles required for a fully functioning Agile teams. We have experts in; UX and UI design, Front End and Back End Development, DevOps and Testing. All our craftsmen maintain an innate understanding of business analysis and work with the product owner to ensure that we constantly deliver value.</p>
-<p>We will provide fully functional teams to help you get started quick and delivery you project in the most effective manner.</p>
+           <p>We will provide fully functional teams to help you get started quick and delivery you project in the most effective manner.</p>
 services-software_creation-continous_delivery:
    title: Continuous Delivery Pipeline
    subtitle: We are experts in technologies that are enablers for Continuous Delivery. We also understand how the business needs to be aligned to realise the full benefits of this approach. We are also programatic and understand that certain organisational constrains cannot change and help you tailor the pipeline to work around these constraints.
