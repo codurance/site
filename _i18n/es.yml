@@ -176,3 +176,40 @@ services-software_creation:
    title: Creación de software
    subtitle: <p><strong>Te ayudaremos a crear software bien elaborado que aporta valor a tu negocio.</strong></p>
            <p>Nuestros craftsmen han perfeccionado su destreza en tecnologías y prácticas para poder entregar a tiempo y con calidad. Nos ajustamos a sus necesidades.</p>
+services-software_creation-embedded_craftsmen:
+   title: Craftsmen embebidos
+   subtitle: Nuestro craftsmen pueden mejorar tus equipos para que ofrezcan conocimientos especializados en tecnologías especificas. También pueden formar el núcleo de tus equipos para ayudar a inculcar las practicas de XP y los valores de Software Craftsmanship.
+services-software_creation-self_contained_teams:
+   title: Equipos autónomos 
+   subtitle: <p>Nuestros craftsmen están preparados para cubrir todas las funciones necesarias para el pleno funcionamiento de equipos Agile. Tenemos expertos en UX y diseño de UI, desarrollo de Front End y Back End, DevOps y Testing. Todos nuestros craftsmen tienen una compresión innata de análisis de negocio y trabajan con product owners para garantizar que ofrecemos valor de manera constante.</p>
+           <p>Proveemos equipos totalmente funcionales para ayudarte a empezar rápido y a entregar el proyecto de la manera más eficaz.</p>
+services-software_creation-continous_delivery:
+   title: Continuous Delivery Pipeline
+   subtitle: Somos expertos en tecnologías que habilitan Continuos Delivery. También entendemos como el negocio necesita estar alineado para darse cuenta de todos los beneficios de este enfoque. Somos pragmáticos y entendemos que algunas limitaciones de la organización no pueden cambiar, por lo que ayudamos a adaptar el proceso para evitar dichas limitaciones.
+services-software_creation-ux_ui_design:
+   title: UX & diseño UI 
+   subtitle: Tenemos experiencia diseñando identidad visual y experiencias de usuario y entendemos cómo este esfuerzo se ajusta mejor en un ambiente Agile. Te ayudaremos a definir la identidad de la marca para tu proyecto y a crear diseños de UX y UI como parte del desarrollo de software.
+services-expert_advice:
+   title: Asesoramiento de expertos
+   subtitle: <p><strong>Puedes usar nuestra experiencia para acelerar tus iniciativas</strong></p>
+           <p>Podemos ayudar a iniciar un nuevo proyecto, a inculcar las prácticas de XP o la cultura DevOps en sus equipos, planificar su evolución arquitectónica o adoptar una nueva tecnología</p>
+           <p>Estamos a su disposición para realizar talleres y participar contigo sobre una base a corto plazo para asegurar que tu próxima iniciativa empieza con buen pie</p>
+services-expert_advice-enterprise_architecture:
+   title: Enterprise Architecture
+   subtitle: <p>Nuestros craftsmen tienen una amplia riqueza de conocimientos y experiencias en el trato con sistema a gran escala en las finanzas, medios de comunicación y gobierno.</p>
+           <p>Revisaremos el enfoque y te ayudaremos a tomar las decisiones mas eficaces para el futuro</p>
+services-expert_advice-software_architecture_and_design:
+   title: Arquitecture de Software & Diseño
+   subtitle: <p>Revisaremos su arquitectura actual y le ayudaremos a crear una vista sobre el riesgo de su solución software actual. Podemos asesorar sobre la mejor manera de evolucionar la arquitectura para reducir dichos riesgos.</p>
+           <p>Si estás buscando como evolucionar tu sistema a microservicios o como crear una arquitectura basada en microservicios desde cero, te ayudaremos a entender mejor el enfoque de acuerdo a tus necesidades.</p>
+services-expert_advice-continous_delivery:
+   title: Continuous Delivery
+   subtitle: Somos expertos en la creación de continous delivery pipelines. Entendemos que no es sólo un desafío técnico, sino también un desafío organizativo. Ayudamos a los clientes a evolucionar su enfoque hacia continous delivery alineando sus negocios, equipos y tecnología.
+services-expert_advice-xp:
+   title: Prácticas de Programación Extrema
+   subtitle: Las prácticas de programación extrema son la esencia de cada crafstman en Codurance. Nos encanta formar y guiar a nuestros clientes en la adopción de prácticas de programación extrema. Te aconsejamos sobre cómo adoptar las prácticas para lograr un cambio positivo en los equipos.
+services-training_coaching:
+   title: Formación & asesoría
+   subtitle: <p><strong>Ofrecemos una gama de cursos de formación que generalmente tienen una duración de 2 días.</strong></p>
+           <p>Nuestros cursos de formación ayudan a los equipos a mejorar en Test Driven Development, Integración Continua y despliegues, Domain-Driven Design, Clean Code y principios SOLID, Behaviour Driven Development y en muchas otras prácticas de carácter técnico.</p>
+           <p>Ayudamos a los equipos en cualquier fase de un proyecto en los que puedan beneficiarse de una formación enfocada.</p>
