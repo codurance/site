@@ -52,7 +52,7 @@ index-how_we_work:
    value4_title: Programación Extrema
    value5_title: DevOps
    value6_title: Tecnología
-   link_title: Más informacion
+   link_title: Más información
 index-software_craftsmanship:
    title: Software Craftsmanship
    subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos. Pulimos constantemente nuestras habilidades mediante la enseñanza y el aprendizaje mutuo tanto dentro de nuestra empresa como de la comunidad de desarrollo de software en general.
@@ -100,28 +100,28 @@ company-our_culture:
    title: Nuestra cultura
    subtitle: <p>Nuestros craftsmen, craftswomen, y aprendices son el núcleo de nuestra empresa. Nos llamamos craftsmen y craftswomen como una manera de expresar la pasión que tenemos por la creación de software bien elaborado. Como muchos de nosotros llegamos a Codurance a través de las comunidades de Craftsmanship (Londres y algunas otras en Europa), está en nuestro ADN organizar sesiones internas en las que aprender y compartir conocimiento con los demás. Nuestra gente nunca está sola, incluso cuando trabajan con un cliente. Nos ayudamos los unos a los otros constantemente, sin importar en qué proyecto estamos trabajando.</p>
                 <p>La transparencia es uno de nuestros valores fundamentales. Cada persona en Codurance tiene acceso completo a las finanzas de la empresa y a todos los salarios. No existen jerarquías o directores en la empresa. Cualquier grupo de personas que sean apasionadas sobre un tema o deseen cambiar la forma de hacer las cosas en la empresa pueden empezar una iniciativa. El grupo debe de tener en cuenta todas las personas que puedan verse afectadas por su decisión y aceptar a cualquier persona interesada en unirse al grupo. El grupo tiene total competencia para tomar una decisión</p> 
-                <p>Los principios de Agile y Lean tambien están en nuestro núcleo. Cualquier decisión tomada ahora se puede cambiar posteriormente. Lo cual nos permite avanzar, probar cosas nuevas, inspeccionar y adaptarnos.</p>
+                <p>Los principios de Agile y Lean también están en nuestro núcleo. Cualquier decisión tomada ahora se puede cambiar posteriormente. Lo cual nos permite avanzar, probar cosas nuevas, inspeccionar y adaptarnos.</p>
 company-how_we_work:
    title: Como trabajamos
    subtitle: Nuestra forma de trabajar está firmemente basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe de aportar valor al negocio de manera constante con la calidad inherente que le permita evolucionar junto a las necesidades cambiantes del negocio. 
 company-how_we_work-software_craftsmanship:
    title: Software Craftsmanship 
-   subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos para poder suministrar valor al negocio continuamente y con una calidad inherente. Entendemos que la calidad no debe ser un extra. Perfeccionamos nuestras habilidades a través de la práctica continua. Constatemente aprendemos, enseñamos y mentorizamos nuestro equipo, nuestra empresa y la industria de desarrollo de software en general. 
+   subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos para poder suministrar valor al negocio continuamente y con una calidad inherente. Entendemos que la calidad no debe ser un extra. Perfeccionamos nuestras habilidades a través de la práctica continua. Constantemente aprendemos, enseñamos y mentorizamos nuestro equipo, nuestra empresa y la industria de desarrollo de software en general. 
 company-how_we_work-agile_and_lean:
    title: Agile y Lean
-   subtitle: Creemos que un buen proceso aporta valor de manera incremental al negocio y proporciona un feedback rápido. Lo cual nos permite inspeccionar, aprender y adaptarnos. No prescribimos procesos específicos. Ayudamos a los equipos a entender sus opciones y a tomar sus propias decisiones, ya sea Scrum, Kanban, o una mezcla de prácticas agile. 
+   subtitle: Creemos que un buen proceso aporta valor de manera incremental al negocio y proporciona un feedback rápido. Lo cual nos permite inspeccionar, aprender y adaptarnos. No prescribimos procesos específicos. Ayudamos a los equipos a entender sus opciones y a tomar sus propias decisiones, ya sea Scrum, Kanban, o una mezcla de prácticas Agile. 
 company-how_we_work-continous_delivery:
    title: Continuous Delivery
-   subtitle: Entendemos que Continous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de desplieges y en la creación de continous delivery pipelines. Logramos continous delivery a través de una atención continua a las necesidades del negocio, a la calidad del software, y a las prácticas de XP.
+   subtitle: Entendemos que Continous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de despliegues y en la creación de continous delivery pipelines. Logramos continous delivery a través de una atención continua a las necesidades del negocio, a la calidad del software, y a las prácticas de XP.
 company-how_we_work-xp:
    title: Programación Extrema (XP)
    subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para todos en Codurance. Lo cual encaja perfectamente con nuestros valores de craftsmanship. Somos expertos en estas prácticas y las usamos con éxito. Llevamos a cabo cursos de formación públicos y eventos en la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
 company-how_we_work-devops:
    title: DevOps
-   subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliege, operación, y mantenimiento de software son responsabilidad del equipo de desarollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
+   subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliegue, operación, y mantenimiento de software son responsabilidad del equipo de desarrollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
 company-how_we_work-technology:
    title: Tecnología
-   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguajes en dichas plataformas. 
+   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en despliegues en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguajes en dichas plataformas. 
 company-contact:
    title: Contacto
 company-contact-form:
@@ -191,30 +191,30 @@ clients-header:
 clients-finance:
    title: Finanzas
    subtitle: Los entornos altamente regulados no suponen un obstáculo para nuestros clientes en cuanto a innovación y formas de trabajo Agile. Ayudamos a nuestros clientes financieros a crear soluciones de calidad con prácticas y tecnologías actuales.
-   ubs_description: UBS es una empresa global que provee servicios a clientes privados, empresas e instituciones. Hemos ayudado a UBS a crear una plataforma de informes normativos para cumplir con los últimos reglamentos financieros en curso. Tambien les hemos ayudado a crear sus equipos a distancia para encargarse del trabajo de informes normativos. Estos equipos son bien conocidos dentro de UBS por su efectividad, prácticas de XP y valores de Software Craftsmanship.
+   ubs_description: UBS es una empresa global que provee servicios a clientes privados, empresas e instituciones. Hemos ayudado a UBS a crear una plataforma de informes normativos para cumplir con los últimos reglamentos financieros en curso. También les hemos ayudado a crear sus equipos a distancia para encargarse del trabajo de informes normativos. Estos equipos son bien conocidos dentro de UBS por su efectividad, prácticas de XP y valores de Software Craftsmanship.
    mergermarket_description: Mergermarket es parte de Mergermarket Group, especializados en sacar provecho de la información para suscriptores en una variedad de mercados. Nuestro equipo de Software Craftsmen están ayudando a Mergermarket a implementar la siguiente generación de plataformas de publicación.
    societe_generale_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftsmen embebidos les ayudaron a adoptar Prácticas XP y Continuous Delivery.
-   m_and_g_description: M&G es una de las casas de inversión más grandes y longevas de Reino Unido, con más de 80 años de experiencia. Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de coaching regulares para enseñarles Test Driven Development y Clean Code.
+   m_and_g_description: M&G es una de las casas de inversión más grandes y longevas de Reino Unido, con más de 80 años de experiencia. Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de formación regulares para enseñarles Test Driven Development y Clean Code.
    flextrade_description: FlexTrade Systems es el líder global en sistemas de gestión de ejecución de alto rendimiento y de gestión de pedidos para la renta variable, divisas, opciones, futuros y renta fija. Hemos ayudado a mejorar las habilidades de desarrollo de software de su equipo mediante la organización de sesiones de formación a medida en Diseño de Software y técnicas de Test Driven Development avanzadas.
 clients-retail:
    title: Venta al por menor
    subtitle: Nuestros clientes de venta al por menor, especialmente en la gestión de la cadena de suministro, se encargan de algunos de los sistemas empresariales más complejos. Su sistema para los consumidores también requiere una experiencia e interfaz de usuario convincentes para asegurar la satisfacción y fidelidad de sus clientes. Nuestro foco en la artesanía y experiencia en sistemas empresariales de alta escalabilidad nos hacen un socio ideal.
    tesco_description: Tesco es un minorista líder. Hemos estado trabajando con ellos para crear la nueva generación de servicios de reparto a domicilio y previsión de suministro. También estamos ayudando a mejorar las cualificaciones profesionales de sus propios equipos de desarrollo.
-   asos_description: ASOS es el minorista de moda online independiente y belleza más grande de Reino Unido. Nuestros craftsmen están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de training y coaching a medida para sus equipos de desarrollo.
+   asos_description: ASOS es el minorista de moda online independiente y belleza más grande de Reino Unido. Nuestros craftsmen están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
    coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas dar a sus clientes planes de tarjetas y vales, basados en su fidelidad.
 clients-media:
    title: Medios de comunicación y entretenimiento
    subtitle: Nuestros clientes en los Medios de comunicación y entretenimiento han aprovechado nuestra experiencia en desarrollo de software para crear equipos que son altamente efectivos, y sistemas que deleitan a sus clientes.
-   crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar con música. Les hemos ayudado a crear su departamento de tecnología desde la base, proveyendo un equipo que formaba el núcleo de su esfuerzo de desarrollo de sofware, contratando sus propios desarrolladores para acabar tomando el mando.
+   crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar con música. Les hemos ayudado a crear su departamento de tecnología desde la base, proveyendo un equipo que formaba el núcleo de su esfuerzo de desarrollo de software, contratando sus propios desarrolladores para acabar tomando el mando.
    aws_description: AWS provee un conjunto de servicios en la nube mediante una plataforma para aplicaciones de software. Hemos creado una plataforma para el manejo de eventos para los eventos de su comunidad, como AWS Loft y AWS Summit
-   trinitymirror_description: Trinity Mirror es un galardonado portfolio de periódicos, sitios web y productos digitales. Estamos ayudándoles a convertir su plataforma de publicaciones en una architectura basada en micro-services. También les estamos ayudando a transformar la organización de su equipo y sus habilidades, para que se alineen con Continuous Delivery.
+   trinitymirror_description: Trinity Mirror es un galardonado portfolio de periódicos, sitios web y productos digitales. Estamos ayudándoles a convertir su plataforma de publicaciones en una arquitectura basada en microservicios. También les estamos ayudando a transformar la organización de su equipo y sus habilidades, para que se alineen con Continuous Delivery.
    findmypast_description: Findmypast es un líder mundial en genealogía online. Hemos provisto craftsmen embebidos para trabajar dentro de sus equipos para mejorar el estado general de los sistemas y las cualificaciones de los equipos en Test Driven Development, Clean Code, y Pair Programming
 clients-partners:
    title: Socios
    subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes, y nosotros ayudamos a nuestros socios a conseguir lo mismo.
    link_title: Más información ...
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
-   github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adotar Github y Github Enterprise.
+   github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
 events-featured:
    title: Eventos especiales
 events-lscc:
