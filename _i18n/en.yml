@@ -40,38 +40,6 @@ index-services-training:
    link_title: Learn more
 index-clients:
    title: Clients &amp; Partners
-   software_creation_title: Software Creation
-   expert_advice_title: Expert Advice
-   training_and_coaching_title: Training & Coaching
-index-clients-header:
-   title: We are proud of our clients and partners!
-index-clients-finance:
-   title: Finance
-   subtitle: Highly regulated environments do not stop our clients from innovation and Agile ways of working. We are helping our financial clients create quality solutions with up-to-date practices and technolgies.
-   ubs_description: UBS is a global firm providing financial services to private, corporate and institutional clients. We helped UBS create a regulatory reporting platform to comply with the latest, and ongoing, financial regulations. We also helped build their offshore teams to take over the regulatory reporting work. These teams are now well known within UBS for their effectiveness, XP practices and Software Craftsmanship values.
-   mergermarket_description: Mergermarket are part of the Mergermarket Group, which specialises in creating an information advantage for subscribers in a variety of markets. Our team of Software Craftsmen are helping Mergermarket build the next generation of publishing platforms.
-   societe_generale_description: Societe Generale is a leading multinational banking and financial services company. Our embedded craftsmen helped them adopt XP Practices and Continuous Delivery.
-   m_and_g_description: M&G are one of the UK’s largest and longest established investment houses, with more than 80 years’ experience. We are helping M&G instill a culture of learning within their teams. We run regular coaching sessions for them to teach Test Driven Development and Clean Code.
-   flextrade_description: FlexTrade Systems is the global leader in high performance execution management and order management systems for equities, foreign exchange, options, futures and fixed income. We helped improve the sofware development skills of their team by running customised training sessions on Software Design and advanced Test Driven Development techniques.
-index-clients-retail:
-   title: Retail
-   subtitle: Our retail clients, especially within supply chain management, are dealing with some of the most complex enterprise systems. Their consumer facing system also require a compelling UX and UI to ensure customer statisfaction and loyalty. Our craft-focus and expertise in large scale enterprise system makes us an ideal partner.
-   tesco_description: Tesco is a leading high street retailer. We have been working with them to build the next generation of home delivery and supply forecasting services. We are also helping to upskill their own development teams.
-   asos_description: ASOS is the UK's largest independent online fashion and beauty retailer. Our craftsmen are embedded into their teams to help continously improve the technology and practices. We also run a tailored training and coaching programme for their development teams.
-   coniq_description: Coniq provide data driven market and loyalty platforms. We have developed ePOS applications that allow stores to provide card and voucher based loyaly schemes to their customers.
-index-clients-media:
-   title: Media & Entertainment
-   subtitle: Our clients in Media & Entertainment have leveraged our expertise in software development to create teams that are highly effective, and systems that delight their customers.
-   crowdmix_description: Crowdmix is a social media platform for sharing and interacting around music. We helped build their technology department from the ground up by providing team that formed the core of their software development effort, hiring their own developers to eventually take over.
-   aws_description: AWS provides a set of cloud services providing a platform for software applications. We built an event management platform for their community events such as AWS Loft and AWS Summit
-   trinitymirror_description: Trinity Mirror is an award winning portfolio of newspapers, websites and digital products. We are helping them take their publishing platform to a micro-services based architecture. We are also helping them transform their team organisation and skills so they are aligned towards Continuous Delivery.
-   findmypast_description: Findmypast is a world leader in online genealogy. We have provided embedded craftsmen to work within their teams in order to improve the over all state of the systems and to upskill the teams in Test Driven Development, Clean Code, and Pair Programming
-index-clients-partners:
-   title: Partners
-   subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
-   read_more_title: Read more ...
-   jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
-   github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
 index-clients-footer:
    title: We are an official Jetbrains Consulting & Training Partner.
    link_title: Find out more
@@ -173,6 +141,39 @@ publications-tweet_feed:
 publications-post:
    author_title: By
    date_title: Posted
+clients:
+   software_creation_title: Software Creation
+   expert_advice_title: Expert Advice
+   training_and_coaching_title: Training & Coaching
+clients-header:
+   title: We are proud of our clients and partners!
+clients-finance:
+   title: Finance
+   subtitle: Highly regulated environments do not stop our clients from innovation and Agile ways of working. We are helping our financial clients create quality solutions with up-to-date practices and technolgies.
+   ubs_description: UBS is a global firm providing financial services to private, corporate and institutional clients. We helped UBS create a regulatory reporting platform to comply with the latest, and ongoing, financial regulations. We also helped build their offshore teams to take over the regulatory reporting work. These teams are now well known within UBS for their effectiveness, XP practices and Software Craftsmanship values.
+   mergermarket_description: Mergermarket are part of the Mergermarket Group, which specialises in creating an information advantage for subscribers in a variety of markets. Our team of Software Craftsmen are helping Mergermarket build the next generation of publishing platforms.
+   societe_generale_description: Societe Generale is a leading multinational banking and financial services company. Our embedded craftsmen helped them adopt XP Practices and Continuous Delivery.
+   m_and_g_description: M&G are one of the UK’s largest and longest established investment houses, with more than 80 years’ experience. We are helping M&G instill a culture of learning within their teams. We run regular coaching sessions for them to teach Test Driven Development and Clean Code.
+   flextrade_description: FlexTrade Systems is the global leader in high performance execution management and order management systems for equities, foreign exchange, options, futures and fixed income. We helped improve the sofware development skills of their team by running customised training sessions on Software Design and advanced Test Driven Development techniques.
+clients-retail:
+   title: Retail
+   subtitle: Our retail clients, especially within supply chain management, are dealing with some of the most complex enterprise systems. Their consumer facing system also require a compelling UX and UI to ensure customer statisfaction and loyalty. Our craft-focus and expertise in large scale enterprise system makes us an ideal partner.
+   tesco_description: Tesco is a leading high street retailer. We have been working with them to build the next generation of home delivery and supply forecasting services. We are also helping to upskill their own development teams.
+   asos_description: ASOS is the UK's largest independent online fashion and beauty retailer. Our craftsmen are embedded into their teams to help continously improve the technology and practices. We also run a tailored training and coaching programme for their development teams.
+   coniq_description: Coniq provide data driven market and loyalty platforms. We have developed ePOS applications that allow stores to provide card and voucher based loyaly schemes to their customers.
+clients-media:
+   title: Media & Entertainment
+   subtitle: Our clients in Media & Entertainment have leveraged our expertise in software development to create teams that are highly effective, and systems that delight their customers.
+   crowdmix_description: Crowdmix is a social media platform for sharing and interacting around music. We helped build their technology department from the ground up by providing team that formed the core of their software development effort, hiring their own developers to eventually take over.
+   aws_description: AWS provides a set of cloud services providing a platform for software applications. We built an event management platform for their community events such as AWS Loft and AWS Summit
+   trinitymirror_description: Trinity Mirror is an award winning portfolio of newspapers, websites and digital products. We are helping them take their publishing platform to a micro-services based architecture. We are also helping them transform their team organisation and skills so they are aligned towards Continuous Delivery.
+   findmypast_description: Findmypast is a world leader in online genealogy. We have provided embedded craftsmen to work within their teams in order to improve the over all state of the systems and to upskill the teams in Test Driven Development, Clean Code, and Pair Programming
+clients-partners:
+   title: Partners
+   subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
+   read_more_title: Read more ...
+   jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
+   github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
 events-featured:
    title: Featured Events
 events-lscc:
