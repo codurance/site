@@ -24,8 +24,8 @@ group:
                 </li>
                {% endif %}
           </ul>
-	{% if post.image.src %}
-	<img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.title }}">
+	{% if page.image.src %}
+	<img class="img-responsive" src="{{ page.image.src }}" alt="{{ page.title }}">
 	{% else %}
 	<img class="img-responsive" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ postTitle }}" alt="{{ postTitle }}">
 	{% endif %}

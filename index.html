@@ -16,33 +16,15 @@ layout: default
 		<h2>{% t index-activity.title %}</h2>
         </div>
 	<div class="row blog-boxes margin-bottom-40">
-		{% assign posts = site.posts %}
-		{% for post in posts limit:3 %}
-		{% if post.image.src %}
-		{% assign imageSrc = post.image.src %}
-		{% else %}
-		{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
-		{% endif %}
-		{% if post.abstract %}
-		{% assign introductionToPost = post.abstract %}
-		{% else %}
-		{% assign introductionToPost = post.content %}
-		{% endif %}
-		<div class="col-md-4 md-margin-bottom-40">
-			<div class="blog-box homepage-blog-thumb">
-				<img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
-				<div class="blog-content">
-					<h3><a href="{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
-					<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
-				</div>
-				<ul class="list-inline blog-box-info">
-					<li><span>By</span> {{ post.author | author_links }}</li>
-					<li>|</li>
-					<li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
-				</ul>
-			</div>
-		</div>
-		{% endfor %}
+	{% assign blog = site.posts | where:"asset-type","post"  %}
+	{% include latest_highlights.html param=blog %}
+
+	{% assign video = site.categories.videos  %}
+	{% include latest_highlights.html param=video %}
+
+	{% assign event = site.categories.events  %}
+	{% include latest_highlights.html param=event %}
+		
 	</div>
         <div class="col-md-12 text-center">
 		<a href="/blog" role="button" class="btn btn-u btn-more animated">{% t index-activity.link_title  %}</a>
