@@ -6,7 +6,7 @@ asset-type: event
 name: global-day-of-code-retreat
 location: "Global Day of Code Retreat 2016, London, United Kingdom"
 image:
-    src: /assets/img/custom/events/dgcr-2016.png
+    src: /assets/img/custom/events/global-day.png
 title: "Global Day of Code Retreat 2016"
 hidden: true
 event-dates: 
