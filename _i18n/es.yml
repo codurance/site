@@ -2,6 +2,7 @@ langs:
    en: English
    es: Español
 sections:
+   clients: Clientes 
    services: Servicios 
    publications: Publicaciones
    company: Empresa
@@ -38,6 +39,38 @@ index-services-training:
    link_title: Más información
 index-clients:
    title: Clientes &amp; Socios
+   software_creation_title: Creación de Software
+   expert_advice_title: Asesoramiento de expertos
+   training_and_coaching_title: Formación & asesoría
+index-clients-header:
+   title: ¡Estamos orgullosos de nuestros clientes y socios!
+index-clients-finance:
+   title: Finanzas
+   subtitle: Los entornos altamente regulados no suponen un obstáculo para nuestros clientes en cuanto a innovación y formas de trabajo Agile. Ayudamos a nuestros clientes financieros a crear soluciones de calidad con prácticas y tecnologías actuales.
+   ubs_description: UBS es una empresa global que provee servicios a clientes privados, empresas e instituciones. Hemos ayudado a UBS a crear una plataforma de informes normativos para cumplir con los últimos reglamentos financieros en curso. Tambien les hemos ayudado a crear sus equipos a distancia para encargarse del trabajo de informes normativos. Estos equipos son bien conocidos dentro de UBS por su efectividad, prácticas de XP y valores de Software Craftsmanship.
+   mergermarket_description: Mergermarket es parte de Mergermarket Group, especializados en sacar provecho de la información para suscriptores en una variedad de mercados. Nuestro equipo de Software Craftsmen están ayudando a Mergermarket a implementar la siguiente generación de plataformas de publicación.
+   societe_generale_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftsmen embebidos les ayudaron a adoptar Prácticas XP y Continuous Delivery.
+   m_and_g_description: M&G es una de las casas de inversión más grandes y longevas de Reino Unido, con más de 80 años de experiencia. Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de coaching regulares para enseñarles Test Driven Development y Clean Code.
+   flextrade_description: FlexTrade Systems es el líder global en sistemas de gestión de ejecución de alto rendimiento y de gestión de pedidos para la renta variable, divisas, opciones, futuros y renta fija. Hemos ayudado a mejorar las habilidades de desarrollo de software de su equipo mediante la organización de sesiones de formación a medida en Diseño de Software y técnicas de Test Driven Development avanzadas.
+index-clients-retail:
+   title: Venta al por menor
+   subtitle: Nuestros clientes de venta al por menor, especialmente en la gestión de la cadena de suministro, se encargan de algunos de los sistemas empresariales más complejos. Su sistema para los consumidores también requiere una experiencia e interfaz de usuario convincentes para asegurar la satisfacción y fidelidad de sus clientes. Nuestro foco en la artesanía y experiencia en sistemas empresariales de alta escalabilidad nos hacen un socio ideal.
+   tesco_description: Tesco es un minorista líder. Hemos estado trabajando con ellos para crear la nueva generación de servicios de reparto a domicilio y previsión de suministro. También estamos ayudando a mejorar las cualificaciones profesionales de sus propios equipos de desarrollo.
+   asos_description: ASOS es el minorista de moda online independiente y belleza más grande de Reino Unido. Nuestros craftsmen están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de training y coaching a medida para sus equipos de desarrollo.
+   coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas dar a sus clientes planes de tarjetas y vales, basados en su fidelidad.
+index-clients-media:
+   title: Medios de comunicación y entretenimiento
+   subtitle: Nuestros clientes en los Medios de comunicación y entretenimiento han aprovechado nuestra experiencia en desarrollo de software para crear equipos que son altamente efectivos, y sistemas que deleitan a sus clientes.
+   crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar con música. Les hemos ayudado a crear su departamento de tecnología desde la base, proveyendo un equipo que formaba el núcleo de su esfuerzo de desarrollo de sofware, contratando sus propios desarrolladores para acabar tomando el mando.
+   aws_description: AWS provee un conjunto de servicios en la nube mediante una plataforma para aplicaciones de software. Hemos creado una plataforma para el manejo de eventos para los eventos de su comunidad, como AWS Loft y AWS Summit
+   trinitymirror_description: Trinity Mirror es un galardonado portfolio de periódicos, sitios web y productos digitales. Estamos ayudándoles a convertir su plataforma de publicaciones en una architectura basada en micro-services. También les estamos ayudando a transformar la organización de su equipo y sus habilidades, para que se alineen con Continuous Delivery.
+   findmypast_description: Findmypast es un líder mundial en genealogía online. Hemos provisto craftsmen embebidos para trabajar dentro de sus equipos para mejorar el estado general de los sistemas y las cualificaciones de los equipos en Test Driven Development, Clean Code, y Pair Programming
+index-clients-partners:
+   title: Socios
+   subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes, y nosotros ayudamos a nuestros socios a conseguir lo mismo.
+   read_more_title: Más información ...
+   jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
+   github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adotar Github y Github Enterprise.
 index-clients-footer:
    title: Somos socios oficiales de Jetbrains en consultoría y formación.
    link_title: Más información  
@@ -53,7 +86,7 @@ index-how_we_work:
    link_title: Más informacion
 index-software_craftsmanship:
    title: Software Craftsmanship
-   subtitle: Software Craftsmanship está en el corazaon de todo lo que hacemos. Pulimos constantemente nuestras habilidades mediante la enseñanza y el aprendizaje mutuo tanto dentro de nuestra empresa como de la comunidad de desarrollo de software en general.
+   subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos. Pulimos constantemente nuestras habilidades mediante la enseñanza y el aprendizaje mutuo tanto dentro de nuestra empresa como de la comunidad de desarrollo de software en general.
 index-software_craftsmanship-book:
    title: The Software Craftsman&#58; de nuestro Co-fundador Sandro Mancuso
    subtitle: El libro es descrito como "una enciclopedia sobre los comportamientos, atributos, y la estructura de una organización que se adhiere a los principios de Software Craftsmanship". Una lectura obligatoria para cualquiera que desee comprender mejor los valores detrás del movimiento.
@@ -119,7 +152,7 @@ company-how_we_work-devops:
    subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliege, operación, y mantenimiento de software son responsabilidad del equipo de desarollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
 company-how_we_work-technology:
    title: Tecnología
-   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguages en dichas plataformas. 
+   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en desplieges en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftsmen son políglotas cubriendo la mayoría de lenguajes en dichas plataformas. 
 company-contact:
    title: Contacto
 company-contact-form:

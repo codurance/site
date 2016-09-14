@@ -440,6 +440,7 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .img-hover-v1 span {
     min-height: 50px;
+    text-align: center;
 }
 
 /* Services */
@@ -992,4 +993,22 @@ h2.gray-underline:after {
     background: url(/assets/img/custom/careers/ourpeople.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.breadcrumbs-v3.ourclients {
+    background: url(/assets/img/custom/clients/ourclients.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* clients section */
+.client-links {
+    text-align: center;
+    font: 400 16px/21px "Lato", sans-serif;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.client-links a {
+    padding: 20px;
 }
