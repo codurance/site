@@ -146,3 +146,4 @@ events-featured:
 events-lscc:
    title: London Software Craftsmanship Community
    More_link_title: Find out more
+   api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7

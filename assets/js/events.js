@@ -1,9 +1,8 @@
-function listLsccMeetups(){	
-	executeApiRequest(displayEvents);
+function listLsccMeetups(apiEndpoint){	
+	executeApiRequest(apiEndpoint, displayEvents);
 }
 
-function executeApiRequest(callback){
-	var apiEndpoint = 'https://api.meetup.com/london-software-craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=23964a489b632a356d3a23aaafa95dd93fb0d1b3';
+function executeApiRequest(apiEndpoint, callback){
 	$.ajax({
 	     type : "GET",
 	     dataType : "jsonp",

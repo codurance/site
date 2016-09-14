@@ -20,6 +20,9 @@ title: Events
 <script>
 
  if ( window.addEventListener ) { 
-     window.addEventListener( "load", listLsccMeetups, false );
+     window.addEventListener( "load", loadEvents, false );
   }
+function loadEvents(){
+	listLsccMeetups('{% t events-lscc.api_endpoint  %}');
+}
 </script>
