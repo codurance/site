@@ -1,6 +1,7 @@
 ---
 author: 
  - Sandro Mancuso
+speaker: Sandro Mancuso
 layout: event
 asset-type: event
 name: sandro-at-swanseacon-2016-3

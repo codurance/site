@@ -1,6 +1,7 @@
 ---
 author: 
  - Halima Koundi
+speaker: Halima Koundi
 layout: event
 asset-type: event
 name: halima-at-swanseacon-2016
@@ -13,7 +14,7 @@ event-dates:
  starts: 2016-09-12
  ends: 2016-09-13
 event-page-url: http://swanseacon.co.uk/schedule/
-date: 2016-09-05 10:00:00 +01:00
+date: 2016-09-03 10:00:00 +01:00
 ---
 
 A new sprint starts and you have to implement a new feature, you naively open the file where the functionality ought to live. To your great horror, a five headed monster seats there scaring the hell out of any developer trying to change that file.

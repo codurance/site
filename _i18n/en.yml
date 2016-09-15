@@ -14,7 +14,7 @@ index-banner:
    link_title: Discover our services
 index-activity:
    title: Latest highlights
-   link_title: View all blog posts
+   link_title: View all publications
 index-services:
    title: Our services
 index-services-software_creation:
@@ -213,8 +213,6 @@ clients-partners:
    link_title: Read more ...
    jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
-events-featured:
-   title: Featured Events
 events-lscc:
    title: London Software Craftsmanship Community
    link_title: Find out more
@@ -280,3 +278,7 @@ partners-jetbrains-product:
            <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he does not always follow rules and that he relies more on his own intuition to drive his design. Thinking out loud throughout the video, Sandro aims to help you follow everything that he is considering whilst writing each test and refactoring code. This video provides a good example of 'Outside-In' TDD and demonstrates the key ways it differs from the Classicist approach.</p>
                         <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p> <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
                         <p>For part 2 and 3 of this video series, <a href="/videos">visit our videos page</a>.</p>
+event:
+   author_title: Featuring
+   location_title: Where?
+   link_title: Find out more 
