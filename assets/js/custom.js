@@ -6,7 +6,7 @@ var announcementOnDevConsole = function(){
 		var link="cursor:pointer;display:inline-block;font-family:'Roboto Slab', sans-serif;font-size:14px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;height:25px;letter-spacing:normal;line-height:25.7143px;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:10px;outline-style:none;padding-bottom:10px;padding-left:12px;padding-right:12px;padding-top:10px;text-align:center;";
 		var isNewEnoughBrowser = "repeat" in String.prototype;
 		if(isNewEnoughBrowser){
-			window.console.log("\n%cHello Dev!\n\n%cWe're hiring both apprentices and crafts[wo]men. Want to know more? \n%chttp://codurance.com/work-with-us/craftsman/ \n\n",headline,main,link);
+			window.console.log("\n%cHello Dev!\n\n%cWe're hiring both apprentices and crafts[wo]men. Want to know more? \n%chttp://codurance.com/careers/ \n\n",headline,main,link);
 		}
 	} catch(_) {}
 }
