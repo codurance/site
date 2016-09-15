@@ -59,7 +59,7 @@ partners: Jetbrains
 		</div>
 	</div>
 	<div class="row text-center">
-		<a href="/aboutus/contact" class="btn-u btn-u-lg">
+		<a href="/company/#contactus" class="btn-u btn-u-lg">
 			{% t partners-jetbrains-partnership.link_title %}
 		</a>
 	</div>
