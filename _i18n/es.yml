@@ -215,8 +215,6 @@ clients-partners:
    link_title: Más información ...
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
    github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
-events-featured:
-   title: Eventos especiales
 events-lscc:
    title: Comunidad de Software Craftsmanship Londres
    link_title: Más información
