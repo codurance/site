@@ -1,2 +1,4 @@
 # jekyll-multiple-languages-plugin settings:
 languages: ["en"]
+email: "hello@codurance.com"
+phone: +44 207 4902967
