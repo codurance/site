@@ -1,32 +1,34 @@
 ---
 layout: partners
 partners: Jetbrains
+title: JetBrains
+
 ---
 
 <div class="container content-lg">
 	<div class="title-v1">
-		<h2>JetBrains & Codurance </h2>
-		<p>We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong></p>
+		<h2>{% t partners-jetbrains-partnership.title %}</h2>
+		<p>{% t partners-jetbrains-partnership.subtitle %}</p>
 	</div>
 	<div class="row">
 		<div class="col-md-6 content-boxes-v3 margin-bottom-40">
 			<div class="clearfix margin-bottom-30">
 				<i class="icon-custom icon-md rounded-x icon-bg-u fa fa-check"></i>
 				<div class="content-boxes-in-v3">
-					<h2 class="heading-sm">Extreme Programming Practices</h2>
-					<p>JetBrains tools can be used to further enhance your existing <strong>extreme programming practices</strong>. We can show you how.</p>
+					<h2 class="heading-sm">{% t partners-jetbrains-partnership-benefit1.title %}</h2>
+					<p>{% t partners-jetbrains-partnership-benefit1.subtitle %}</p>
 				</div>
 			</div>
 			<div class="clearfix margin-bottom-30">
 				<i class="icon-custom icon-md rounded-x icon-bg-u fa fa-check"></i>
 				<div class="content-boxes-in-v3">
-					<h2 class="heading-sm">JetBrains Tools</h2>
-					<p>We can help you to integrate JetBrains tools into your next project so that you can get <strong>quality</strong> software out the door <strong>faster</strong>.</p>
+					<h2 class="heading-sm">{% t partners-jetbrains-partnership-benefit2.title %}</h2>
+					<p>{% t partners-jetbrains-partnership-benefit2.subtitle %}</p>
 				</div>
 			</div>
 			<div class="row margin-bottom-40 text-center">
 				<a href="/company/#contactus" class="btn-u btn-u-lg">
-					Talk to us
+					{% t partners-jetbrains-partnership.link_title %}
 				</a>
 			</div>
 		</div>
@@ -44,19 +46,23 @@ partners: Jetbrains
 	</div>
 	<div class="row">
 		<div class="title-v1">
-			<h2>Working with JetBrains Intellij IDEA</h2>
-			<p>Want to get a flavour of how JetBrains can support your next project? Below, Sandro provides an advanced tutorial on Test Driven Development using the <a href="https://www.jetbrains.com/idea/">JetBrains Intellij IDE</a>.</p>
+			<h2>{% t partners-jetbrains-products.title  %}</h2>
+			<p>{% t partners-jetbrains-products.subtitle  %}</p>
 		</div>
 		<div class="news-v3 margin-bottom-30 bg-color-white"> 
 			<div class="img-responsive full-width"> <iframe height="500" width="100%" src="https://www.youtube.com/embed/XHnuMjah6ps" frameborder="0" allowfullscreen="true"></iframe> </div>
-			<div class="news-v3-in"> <ul class="list-inline posted-info"> <li>Posted 12 May 2015</li> </ul> <h3>Oustide-In Test Driven Development (part I)</h3> <p>Unlike previous screencasts, this tutorial is not aimed at those starting to learn TDD. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design, Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p> <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he does not always follow rules and that he relies more on his own intuition to drive his design. Thinking out loud throughout the video, Sandro aims to help you follow everything that he is considering whilst writing each test and refactoring code. This video provides a good example of 'Outside-In' TDD and demonstrates the key ways it differs from the Classicist approach.</p> <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p> <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
-			<p>For part 2 and 3 of this video series, <a href="/videos">visit our videos page</a>.</p>
+			<div class="news-v3-in"> 
+			<ul class="list-inline posted-info">
+			<li>{% t partners-jetbrains-product.published %}</li> 
+			</ul> 
+			<h3>{% t partners-jetbrains-product.title %}</h3>
+			{% t partners-jetbrains-product.description %}
 			</div>
 		</div>
 	</div>
 	<div class="row text-center">
-		<a href="/aboutus/contact" class="btn-u btn-u-lg">
-			Talk to us
+		<a href="/company/#contactus" class="btn-u btn-u-lg">
+			{% t partners-jetbrains-partnership.link_title %}
 		</a>
 	</div>
 </div>
