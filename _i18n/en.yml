@@ -221,6 +221,26 @@ events-lscc:
    title: London Software Craftsmanship Community
    link_title: Find out more
    api_endpoint: https://api.meetup.com/london-software-craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=23964a489b632a356d3a23aaafa95dd93fb0d1b3
+partners-jetbrains-partnership:
+   title: JetBrains & Codurance
+   subtitle: We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong>
+   link_title: Talk to us
+partners-jetbrains-partnership-benefit1:
+   title: Extreme Programming Practices
+   subtitle: JetBrains tools can be used to further enhance your existing <strong>extreme programming practices</strong>. We can show you how.
+partners-jetbrains-partnership-benefit2:
+   title: JetBrains Tools
+   subtitle: We can help you to integrate JetBrains tools into your next project so that you can get <strong>quality</strong> software out the door <strong>faster</strong>.
+partners-jetbrains-products:
+   title: Working with JetBrains Intellij IDEA
+   subtitle: Want to get a flavour of how JetBrains can support your next project? Below, Sandro provides an advanced tutorial on Test Driven Development using the <a href="https://www.jetbrains.com/idea/">JetBrains Intellij IDE</a>.
+partners-jetbrains-product:
+   published: Posted 12 May 2015
+   title: Oustide-In Test Driven Development (part I)
+   description: <p>Unlike previous screencasts, this tutorial is not aimed at those starting to learn TDD. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design, Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
+           <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he does not always follow rules and that he relies more on his own intuition to drive his design. Thinking out loud throughout the video, Sandro aims to help you follow everything that he is considering whilst writing each test and refactoring code. This video provides a good example of 'Outside-In' TDD and demonstrates the key ways it differs from the Classicist approach.</p>
+                        <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p> <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
+                        <p>For part 2 and 3 of this video series, <a href="/videos">visit our videos page</a>.</p>
 event:
    author_title: Featuring
    location_title: Where?
