@@ -1,0 +1,31 @@
+{% for post in include.param limit:1 %}
+	{% if post.image.src %}
+		{% assign imageSrc = post.image.src %}
+	{% else %}
+		{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
+	{% endif %}
+	{% if post.abstract %}
+		{% assign introductionToPost = post.abstract %}
+	{% else %}
+		{% assign introductionToPost = post.content %}
+	{% endif %}
+	{% if post.event-page-url %}
+		{% assign linkUrl = post.event-page-url %}
+	{% else %}
+		{% assign linkUrl = post.url %}
+	{% endif %}
+	<div class="col-md-4 md-margin-bottom-40">
+		<div class="blog-box homepage-blog-thumb">
+			<img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
+			<div class="blog-content">
+				<h3><a href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a></h3>
+				<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
+			</div>
+			<ul class="list-inline blog-box-info">
+				<li><span>By</span> {{ post.author | author_links }}</li>
+				<li>|</li>
+				<li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
+			</ul>
+		</div>
+	</div>
+{% endfor %}

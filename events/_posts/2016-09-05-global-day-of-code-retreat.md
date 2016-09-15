@@ -13,7 +13,7 @@ event-dates:
  starts: 2016-10-22
  ends: 2016-10-22
 event-page-url: http://coderetreat.org/
-date: 2016-09-04 10:00:00 +01:00
+date: 2016-09-05 10:00:00 +01:00
 ---
 
 Registration is needed and will be announced

@@ -14,7 +14,7 @@ index-banner:
    link_title: Descubre nuestros servicios
 index-activity:
    title: Últimas novedades
-   link_title: Ver todas las entradas en el blog
+   link_title: Ver todas las publicaciones
 index-services:
    title: Nuestros servicios
 index-services-software_creation:
@@ -215,8 +215,6 @@ clients-partners:
    link_title: Más información ...
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
    github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
-events-featured:
-   title: Eventos especiales
 events-lscc:
    title: Comunidad de Software Craftsmanship Londres
    link_title: Más información
@@ -242,4 +240,7 @@ partners-jetbrains-product:
            <p>Si eres novato en TDD, no te recomendamos que sigas estos vídeos a ciegas. Favorece el enfoque clasicista, diseñando menos por adelantado, y obteniendo feedback del código antes de evolucionar su diseño.</p> 
            <p>Para más información acerca de las diferencias entre los estilos de TDD, por favor, visita el post de Sandro, <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
            <p>Para ver las partes 2 y 3 de la serie, <a href="/videos">visita nuestra página de vídeos</a>.</p>
-
+event:
+   author_title: Presentando 
+   location_title: Lugar
+   link_title: Más información
