@@ -1,2 +1,6 @@
 # jekyll-multiple-languages-plugin settings:
 languages: ["es"]
+office:
+   coordinates:
+      lat: 41.387745
+      lon: 2.159348
