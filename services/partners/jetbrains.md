@@ -1,6 +1,8 @@
 ---
 layout: partners
 partners: Jetbrains
+title: JetBrains
+
 ---
 
 <div class="container content-lg">
