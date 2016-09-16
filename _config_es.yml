@@ -1,8 +1,2 @@
 # jekyll-multiple-languages-plugin settings:
 languages: ["es"]
-email: "hello@codurance.es"
-office:
-   coordinates:
-      lat: 41.387745
-      lon: 2.159348
-   phone: +44 207 4902967

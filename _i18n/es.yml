@@ -1,6 +1,12 @@
 langs:
    en: English
    es: Español
+office:
+   email: hello@codurance.es
+   lat: "41.387745"
+   lon: "2.159348"
+   formatted_phone: +44 207 4902967
+   raw_phone: "+442074902967"
 sections:
    clients: Clientes 
    services: Servicios 
