@@ -14,6 +14,11 @@
 	{% else %}
 		{% assign linkUrl = post.url %}
 	{% endif %}
+	{% if post.event-dates %}
+		{% assign date = post.event-dates.starts %}
+	{% else %}
+		{% assign date = post.date %}
+	{% endif %}
 	<div class="col-md-4 md-margin-bottom-40">
 		<div class="blog-box homepage-blog-thumb">
 			<img class="img-responsive" src="{{ imageSrc }}" alt="{{ post.title }}">
@@ -24,7 +29,7 @@
 			<ul class="list-inline blog-box-info">
 				<li><span>By</span> {{ post.author | author_links }}</li>
 				<li>|</li>
-				<li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
+				<li><i class="fa fa-clock-o"></i> {{ date | date_to_string }}</li>
 			</ul>
 		</div>
 	</div>
