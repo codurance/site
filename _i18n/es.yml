@@ -282,3 +282,12 @@ event:
    author_title: Presentando 
    location_title: Lugar
    link_title: Más información
+post:
+   author_title: Por
+   date_title: Publicado
+post-about_the_author:
+   title: Sobre el autor
+post-related_posts:
+   title: Blogs Relacionados
+post-recent_posts:
+   title: Blogs Recientes

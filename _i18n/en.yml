@@ -282,3 +282,13 @@ event:
    author_title: Featuring
    location_title: Where?
    link_title: Find out more 
+post:
+   author_title: By
+   date_title: Posted
+   canonical_page_title: 
+post-about_the_author:
+   title: About the author
+post-related_posts:
+   title: Related Blogs
+post-recent_posts:
+   title: Recent Blogs
