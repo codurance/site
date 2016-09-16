@@ -14,9 +14,9 @@ group:
         <div class="news-v3-in shareThisButtons">
           <h1>{{ page.title }}</h1>
           <ul class="list-inline posted-info">
-              <li>By {{ page.author || author_links }}</li>
+		  <li>{% t post.author_title %} {{ page.author || author_links }}</li>
               {% if page.date %}
-                <li>Posted {{ page.date | date_to_string }}</li>
+	      <li>{% t post.date_title %} {{ page.date | date_to_string }}</li>
                 <li>
                     {% for tag in page.tags %}
                       <a href="/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
@@ -28,7 +28,7 @@ group:
           {{ content }}
 
           {% if page.canonical %}
-            <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
+	  <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
           {% endif %}
 
           <div id="sharethisButtons">
@@ -47,7 +47,7 @@ group:
           {% if page.author == member.name %}
           <div class = "blog-author bg-color-white margin-bottom-30">
             <div class="headline headline-md margin-bottom-30">
-              <h2>About the author</h2>
+		    <h2>{% t post-about_the_author.title %}</h2>
             </div>
             <div class="row">
               <div class="col-sm-3 col-xs-4 pull-left">
@@ -81,7 +81,7 @@ group:
       <!--Related Blog Posts-->
       <div class="posts margin-bottom-40">
           <div class="headline-v2">
-            <h2>Related Blogs</h2>
+		  <h2>{% t post-related_posts.title%}</h2>
           </div>
 	  {% assign posts = site.posts | where: "asset-type", "post" %}
           {% assign relatedPosts = ""  %}
@@ -146,7 +146,7 @@ group:
       </div>
       <!-- Recent blogs -->
       <div class="posts margin-bottom-40">
-        <div class="headline-v2"><h2>Recent Blogs</h2></div>
+	      <div class="headline-v2"><h2>{% t post-recent_posts.title %}</h2></div>
         {% for post in posts limit: 7 %}
           <div class="blog-thumb blog-thumb-circle margin-bottom-15">
             <div class="blog-thumb-hover">
