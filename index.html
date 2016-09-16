@@ -26,8 +26,11 @@ layout: default
 	{% include latest_highlights.html param=event %}
 		
 	</div>
-        <div class="col-md-12 text-center">
-		<a href="/publications" role="button" class="btn btn-u btn-more animated">{% t index-activity.link_title  %}</a>
+        <div class="col-md-6 text-center">
+		<a href="/publications" role="button" class="btn btn-u btn-more animated">{% t index-activity.publications_link_title %}</a>
+        </div>
+	<div class="col-md-6 text-center">
+		<a href="/events" role="button" class="btn btn-u btn-more animated">{% t index-activity.events_link_title %}</a>
         </div>
     </div>
 </div>
