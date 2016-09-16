@@ -13,7 +13,6 @@
 		</button>
 		<!-- End Toggle -->
 	</div><!--/end container-->
-
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 		<div class="container">
@@ -24,8 +23,7 @@
 				<li><a href="/events">{% t sections.events %}</a></li>
 				<li><a href="/company">{% t sections.company %}</a></li>
 				<li><a href="/careers">{% t sections.careers %}</a></li>
-				<!--Uncomment when Spanish site is ready -->
-				<!-- <div class="topbar pull-right">
+				<div class="topbar pull-right">
 					<ul class="loginbar">
 						<li>
 							<i class="fa fa-globe"></i>
@@ -33,11 +31,7 @@
 							{% if lang == site.lang %}
 							<span class="language"><strong>{{ lang }}</strong></span>
 							{% else %}
-							{% if lang == site.default_lang %}
-							<a href="{{ site.baseurl_root }}{{ page.url }}">{{ lang }}</a>
-							{% else %}
-							<a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
-							{% endif %}
+							<a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
 							{% endif %}
 							{% if forloop.last == false  %}
 							<span class="separator"> | </span>
@@ -45,7 +39,7 @@
 							{% endfor %}
 						</li>
 					</ul>
-				</div> -->
+				</div>
 			</ul>
 		</div><!--/end container-->
 	</div><!--/navbar-collapse-->
