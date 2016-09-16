@@ -1,6 +1,12 @@
 langs:
    en: English
    es: Español
+office:
+   email: hello@codurance.es
+   lat: "41.387745"
+   lon: "2.159348"
+   formatted_phone: +44 207 4902967
+   raw_phone: "+442074902967"
 sections:
    clients: Clientes 
    services: Servicios 
@@ -14,7 +20,7 @@ index-banner:
    link_title: Descubre nuestros servicios
 index-activity:
    title: Últimas novedades
-   link_title: Ver todas las entradas en el blog
+   link_title: Ver todas las publicaciones
 index-services:
    title: Nuestros servicios
 index-services-software_creation:
@@ -85,9 +91,7 @@ footer-useful_links:
 footer-contact:
    title: Contacto
    phone_title: Teléfono
-   phone_value: +44 207 490267 
    email_title: Correo electrónico
-   email_value: hello@codurance.es
 company-who_are_we:
    title: ¿Quiénes somos?
    subtitle: <p>Construimos software bien elaborado y ayudamos a equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3,500 desarrolladores que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
@@ -215,12 +219,50 @@ clients-partners:
    link_title: Más información ...
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
    github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
-events-featured:
-   title: Eventos especiales
 events-lscc:
    title: Comunidad de Software Craftsmanship Londres
    link_title: Más información
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
+careers:
+   title: Trabaja con nosotros
+careers-how_we_grow:
+   title: Cómo crecemos?
+   description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad, y para presentar en conferencias.</p>
+        <p>Estamos orgullosos de organizar la Comunidad de Software Craftsmanship de Londres y SoCraTes Reino Unido. Nuestra gente tiene la oportunidad de tomar parte activa en la organización y, a través de la comunidad, conocer a muchas personas con ideas afines en el Reino Unido y en toda Europa.</p>
+careers-our_people:
+   title: Nuestra gente
+   description: <p>Nuestra gente pone una gran dedicación en dominar sus habilidades en el desarrollo de software, y apoyar a los demás a hacer lo mismo. Igualmente, nuestros craftsmen son unos miembros de equipo eficaces y comprometidos a construir el software adecuado de la manera más eficaz. Dejamos que nuestro trabajo hable por sí mismo. Nos esforzamos por mejorarnos constantemente a nosotros, a nuestro equipo, y a los proyectos en los que trabajamos. Nuestros craftsmen son pragmáticos y entienden que&#58; saber dónde aplicar un enfoque particular es tan importante como saber cómo aplicarlo.</p>
+           <p>Entendemos y abrazamos los procesos y prácticas Agile. Somos expertos en prácticas como TDD, Integración Continua, Pair Programming, y Continous Deployment.</p>
+           <p>Nuestro conocimiento en tecnología es extenso en toda la empresa y profundo en cada uno de nosotros. Nos gusta la madurez de las herramientas y APIs que ofrecen las plataformas de la JVM y .NET, y la flexibilidad de Node JS y Ruby. Somos conscientes de la importancia de una UX y una UI bien elaboradas, y por lo tanto, construimos nuestra excelencia en Wireframing, Diseño de UI, así como interfaces web y móviles. Las plataformas en la nube nos permiten concentrarnos más en el negocio en lugar de en la infraestructura. Somos conscientes de la importancia del Big Data y Data Science y nos mantenemos al día de las técnicas y tecnologías asociadas. Nuestros craftsmen cubren una amplia gama de tecnologías, incluyendo pero no limitado a&#58; Java, C#, JavaScript, Scala, Clojure, Ruby, F#, CSS, Objective C, Swift, Cassandra, Kafka, AWS, y Azure.</p> 
+careers-apprentice:
+   title: Programa Apprentice-craftsmen
+   description: <p>Ejecutamos el Programa Apprentice-craftsmen para personas que comparten nuestra pasión por software craftsmanship, pero aún no han tenido las oportunidades de aprendizaje adecuadas. Cada crafts[wo]men selecciona un mentor, que le guiará y apoyará durante su aprendizaje. Trabajan con su mentor, en un programa a medida para la adquisición de habilidades, culminando en la graduación como software Crafts[wo]man. Evitamos trabajar en el cliente a tiempo completo para el apprentice-craftsmen si creemos que no está aportando a sus necesidades de aprendizaje. La prioridad para ellos es adquirir el conjunto básico de habilidades necesarias para ser reconocidos, como software crafts[wo]man, por el resto de la compañía. Enviamos regularmente a nuestros apprentice-craftsmen a cursos de formación.</p>
+careers-join:
+   title: Unirse a Codurance
+   description: <p>Buscamos <strong>Craftsmen</strong> and <strong>Apprentice-craftsmen</strong> para unirse a nosotros. En particular, buscamos gente que sea dedicada a aprender y a enseñar las habilidades esenciales de software craftsmanship.</p>
+careers-join-craftsmen:
+   title: Software Craftsmen
+   description: <p>En este nivel esperamos que tengas una comprensión sólida de al menos una lengua y su ecosistema. Debes tener una buena comprensión de las prácticas de XP, DevOps, y una profunda comprensión de lo que significa una buena calidad de software. Tienes una buena apreciación para el diseño de software a nivel micro y macro. Entiendes las prácticas Agile y puedes trabajar eficazmente en equipo. Puedes presentar tus opiniones e ideas de una manera clara, colaborativa, y eficaz. Tienes un gran deseo por construir software de calidad, mejorarte constantemente a tí mismo, y por ayudar a otros a hacer lo mismo.</p>
+   link_title: Únete a nuestros Craftsmen
+careers-join-apprentice:
+   title: Apprentice-craftsmen
+   description: <p>En este nivel vamos a esperar que seas un desarrollador productivo en el idioma de tu elección en las plataformas de la JVM, .NET, y/o Node JS. Sabes los procesos y prácticas Agile,  puedes aplicarlos y estás buscando convertirte en un experto en el razonamiento acerca de ellos. Tienes conocimientos básicos de diseño a nivel micro y macro. Tienes por lo menos alguna experiencia con herramientas y tecnologías, suficiente de acuerdo a tu experiencia actual. Puedes comunicar tus ideas en un ambiente de equipo y quieres desarrollar habilidades para convencer a otros de tus ideas. Tienes un gran deseo de aprender y de perfeccionar tus habilidades como un desarrollador de software efectivo. Te gusta enseñar, así como aprender.</p>
+   link_title: Únete a nuestros Apprentice-craftsmen 
+careers-join-how_to_apply:
+   title: Cómo unirte?
+   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:hello@codurance.es">hello@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
+           <ul>
+          <li>¿Qué significa para ti Software Craftsmanship?</li>
+          <li>¿Con qué tecnologías y prácticas te encuentras cómodo?</li>
+          <li>¿Qué tecnologías y prácticas estás aprendiendo o te gustaría aprender?</li>
+          <li>¿Qué libros te gustan o te gustaría leer?</li>
+          <li>¿En qué comunidades participas activamente?</li>
+          <li>¿A qué conferencias atiendes?</li>
+          <li>¿Tienes algún proyecto personal en el que estás trabajando?</li>
+          <li>¿Has contribuido a proyectos open-source?</li>
+        </ul>
+
+        <p>Un CV actualizado es siempre de ayuda. También queremos que nos envíes tus enlaces a blogs, repositorios de código, y cualquier otro recurso que nos ayude a comprender tu lado profesional.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: Estamos muy orgullosos de anunciar que Codurance es <strong>socio oficial de JetBrains.</strong>
@@ -242,4 +284,16 @@ partners-jetbrains-product:
            <p>Si eres novato en TDD, no te recomendamos que sigas estos vídeos a ciegas. Favorece el enfoque clasicista, diseñando menos por adelantado, y obteniendo feedback del código antes de evolucionar su diseño.</p> 
            <p>Para más información acerca de las diferencias entre los estilos de TDD, por favor, visita el post de Sandro, <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
            <p>Para ver las partes 2 y 3 de la serie, <a href="/videos">visita nuestra página de vídeos</a>.</p>
-
+event:
+   author_title: Presentando 
+   location_title: Lugar
+   link_title: Más información
+post:
+   author_title: Por
+   date_title: Publicado
+post-about_the_author:
+   title: Sobre el autor
+post-related_posts:
+   title: Blogs Relacionados
+post-recent_posts:
+   title: Blogs Recientes
