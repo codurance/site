@@ -1,4 +1,7 @@
-url: "http://codurance.com"
+url: "https://codurance.com"
+domains: 
+   en: "https://codurance.com"
+   es: "https://codurance.es"
 highlighter: rouge 
 permalink: pretty
 markdown: rdiscount
