@@ -20,7 +20,8 @@ index-banner:
    link_title: Discover our services
 index-activity:
    title: Latest highlights
-   link_title: View all publications
+   publications_link_title: View all publications
+   events_link_title: View all events
 index-services:
    title: Our services
 index-services-software_creation:
