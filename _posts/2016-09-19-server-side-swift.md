@@ -17,11 +17,9 @@ tags:
 - swift
 - open source
 - server side
-- Web services
-- Perfect
+- Web service
 - Vapor
 - Kitura
-- Zewo
 
 ---
 
