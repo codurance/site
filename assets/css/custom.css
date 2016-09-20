@@ -285,6 +285,9 @@ body:last-child .btn-u, x:-moz-any-link {
 
 /*Content Boxes*/
 
+li > a {
+  color: #e67e22;
+}
 .content-boxes {
   margin-bottom: 15px;
 }
