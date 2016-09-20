@@ -9,7 +9,7 @@ name: Server side Swift
 title: 'Server side Swift'
 canonical:
     name: my personal blog
-    href: : http://www.ananogal.com/blog/server-side-swift/
+    href: http://www.ananogal.com/blog/server-side-swift/
 image:
     src: /assets/img/custom/blog/server-side-swift.png
 
