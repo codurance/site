@@ -1004,6 +1004,12 @@ h2.gray-underline:after {
     background-position: center center;
 }
 
+.breadcrumbs-v3.thesoftwarecraftsman {
+    background: url(/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 /* clients section */
 .client-links {
     text-align: center;
