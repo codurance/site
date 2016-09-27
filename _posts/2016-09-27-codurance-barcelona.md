@@ -7,7 +7,7 @@ asset-type: post
 slug: codurance-barcelona
 title: Codurance Barcelona
 image:
-    src: /assets/img/custom/blog/scrum-roles.jpg
+    src: /assets/img/custom/blog/2016-09-27-codurance-barcelona.jpg
 tags:
 - codurance
 ---
