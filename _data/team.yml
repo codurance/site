@@ -157,7 +157,12 @@
   image: /assets/img/custom/team/giulia_mantuano.jpg
   role: Apprentice
   shortDescription: Having worked as Art Director in an integrated communications agency and as design consultant, Giulia has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.  
-  fullDescription: <p>Giulia has worked in the creative industry for more than ten years.</p><p>Having worked as design consultant and as Art Director in an integrated communications agency, she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p><p>During her career, she has worked for government institutions, medium and big companies and small start-ups, from several industries; healthcare, tourism, food & beverage, electronics, software development, education and performing arts.</p><p>Giulia joined Codurance as an Apprentice driven by the desire of applying Software Craftsmanship mindset and values to the whole product development process.</p><p>Her current focus is on mastering the skills required to envision and design great digital experiences, ensuring well balanced solutions with business needs, technical feasibility and user expectations.</p>
+  fullDescription: >
+    <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years.</p>
+    <p>During her career she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
+    <p>Giulia joined Codurance as an Apprentice driven by the desire to apply the Software Craftsmanship mindset and values to the whole product development process.</p>
+    <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, ensured by her Integrated Design background and the mastering of User Experience Design skills.</p>
+    <p>Giulia bridges stakeholders and development teams: she facilitates their collaboration, aiming at designing well balanced solutions with business needs, technical feasibility and user expectations.</p>
   twitter: giuliamantuano 
   github: giuliamantuano 
 
