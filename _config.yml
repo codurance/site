@@ -22,6 +22,7 @@ paginate_path: "/publications/page:num"
 
 sitename: "Codurance"
 subtitle: "craft at heart"
+email: "info@codurance.com"
 
 googleanalytics:
   account: UA-46289079-1
