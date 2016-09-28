@@ -22,7 +22,7 @@ tags:
 - Clean architecture
 
 ---
-Currently, I'm doing an internal app for Codurance: I've started a long time ago while I was still in the client and was just a pet project. I've started with one idea in my mind: to make it work. After six or seven months of trying to put it all together, I could come up with a working app. At that time I wasn't satisfied we my work, even though I had made everything with TDD and had all my ViewControllers as light as I could imagine, I thought I wasn't enough.
+Currently, I'm doing an internal app for Codurance: I've started a long time ago while I was still in the client and was just a pet project. I've started with one idea in my mind: to make it work. After six or seven months of trying to put it all together,in my spear time, I could come up with a working app. At that time I wasn't satisfied we my work, even though I had made everything with TDD and had all my ViewControllers as light as I could imagine, I thought it wasn't enough.
 So I decided to do a big refactoring and apply to it the VIPER architecture.
 
 ## So what's VIPER?
@@ -59,7 +59,7 @@ It looks better, doesn't it? But I still got the problem of the usability... I w
 <img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="169" height="300" class="image-side-by-side-text"/>
 
 <p class="text-side-by-side-image" ><br/>
-So with this in mind, and playing a little with colors (must confess that the colors here are my fault :) ), we add the functionality to the only view of our app. <a href="https://twitter.com/GiuliaMantuano">Giulia</a> helped me to have the usability in consideration and for the first interaction on that, I think that we didn't had that much problem in remove the pod and add this functionality. She decided to have 3 views since we really have 3 kinds of users: the ones that everyday update their hours, the ones that  do it by week, and the ones that only do it once per month.
+So with this in mind, and playing a little with colors (must confess that the colors here are my fault &#128522; ), we add the functionality to the only view of our app. <a href="https://twitter.com/GiuliaMantuano">Giulia</a> helped me to have the usability in consideration and for the first interaction on that, I think that we didn't had that much problem in remove the pod and add this functionality. She decided to have 3 views since we really have 3 kinds of users: the ones that everyday update their hours, the ones that  do it by week, and the ones that only do it once per month.
 </p>
 <br class="image-side-by-side-text-clear" />
 
@@ -77,7 +77,8 @@ As you can see I'm very bad in choosing colors, but right then we were more worr
 <img src="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png" alt="fith version" width="169" height="300" class="image-side-by-side-text"/>
 
 <p class="text-side-by-side-image" ><br/>
-Finally, <a href="https://twitter.com/GiuliaMantuano">Giulia</a> dedicated some time to me (I guess she was horrified with my colors choices :P ) and decide to have a look at the colors. Notice the difference? Me too...
+Finally, <a href="https://twitter.com/GiuliaMantuano">Giulia</a> dedicated some time to me (I guess she was horrified with my colors choices &#128540; ) and decide to have a look at the colors. Notice the difference? Me too...
+<br/>
 But we were not happy yet with the insertion line. The field to search activities was too small and the stepper was too big in comparison.
 </p>
 <br class="image-side-by-side-text-clear" />
@@ -93,14 +94,8 @@ The fact that now we have a pickerView, gave us the space we need it to have a b
 
 ## What VIPER had to say in all of this
 
-As you may notice, I had to change several times the UI and some were radical changes (we had a version that we try to put the insertion line in the bottom, after the list). And because I had everything really independent and a good separation of concerns, I just needed to change my UI elements, connected then correctly in my ViewController and there you go, everything else would work like a charm. The longest that took me to make this changes were like two days and because I had some problems with AutoLayout. And even though I say I have everything just in one view, in reality I have 3 ViewControllers: The Home which as the SignIn functionality (we are using <a href="https://developers.google.com/identity/sign-in/ios/start-integrating">Google Sign in Pod</a>), the Activities controller that is the only view that you see, and the TimeEntries controller which is an ContainerView on the Activities controller:
-
-<img src="/assets/img/custom/blog/2016-09-28-memento-storyboard.png" alt="storyboard" width="300" height="185" class="image-side-by-side-text"/>
-
-<p class="text-side-by-side-image" ><br/>
-This permit me to have a good separation of concerns for listing and insertion of TimeEntries.
-</p>
-<br class="image-side-by-side-text-clear" />
+As you may notice, I had to change several times the UI and some were radical changes (we had a version that we try to put the insertion line in the bottom, after the list). And because I had everything really independent and a good separation of concerns, I just needed to change my UI elements, connected then correctly in my ViewController and there you go, everything else would work like a charm.
+The longest that took me to make this changes were like two days and because I had some problems with AutoLayout. 
 
 ## Conclusion
 
