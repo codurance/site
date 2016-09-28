@@ -11,7 +11,7 @@ canonical:
     name: my personal blog
     href: http://www.ananogal.com/blog/when-a-good-architecture-helps-you-in-your-ui-design-iterations/
 image:
-    src: /assets/img/custom/blog/server-side-swift.png
+    src: /assets/img/custom/blog/2016-09-28-memento-iterations.png
 
 tags:
 - swift
