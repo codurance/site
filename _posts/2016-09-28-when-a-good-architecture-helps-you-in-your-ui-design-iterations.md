@@ -95,7 +95,7 @@ The fact that now we have a pickerView, gave us the space we need it to have a b
 ## What VIPER had to say in all of this
 
 As you may notice, I had to change several times the UI and some were radical changes (we had a version that we try to put the insertion line in the bottom, after the list). And because I had everything really independent and a good separation of concerns, I just needed to change my UI elements, connected then correctly in my ViewController and there you go, everything else would work like a charm.
-The longest that took me to make this changes were like two days and because I had some problems with AutoLayout. 
+The longest that took me to make this changes was two days and because I had some problems with AutoLayout.
 
 ## Conclusion
 
