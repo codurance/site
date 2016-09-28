@@ -121,10 +121,10 @@ body {
 .btn-hire.btn-u-orange {
    background: #e67e22;
 }
-.btn-hire.btn-u-orange:hover, 
-.btn-hire.btn-u-orange:focus, 
-.btn-hire.btn-u-orange:active, 
-.btn-hire.btn-u-orange.active, 
+.btn-hire.btn-u-orange:hover,
+.btn-hire.btn-u-orange:focus,
+.btn-hire.btn-u-orange:active,
+.btn-hire.btn-u-orange.active,
 .open .dropdown-toggle.btn-hire.btn-u-orange {
    background: #d35400;
    color: #fff;
@@ -829,8 +829,8 @@ h3.subject-header {
     }
 
 @media (max-width: 991px) {
-    .header .navbar-nav > .active > a, 
-    .header .navbar-nav > .active > a:hover, 
+    .header .navbar-nav > .active > a,
+    .header .navbar-nav > .active > a:hover,
     .header .navbar-nav > .active > a:focus {
         background: #e67e22;
     }
@@ -858,7 +858,7 @@ h3.subject-header {
 }
 
 .img-center{
-	display: block; 
+	display: block;
 	margin: 0 auto;
 }
 
@@ -1014,4 +1014,18 @@ h2.gray-underline:after {
 
 .client-links a {
     padding: 20px;
+}
+
+/*Post with text side by side images*/
+.image-side-by-side-text {
+	float:left;
+	margin: 0px 50px 15px 20px;
+}
+
+.text-side-by-side-image {
+	margin: 0px 50px 0px 0px;
+}
+
+.image-side-by-side-text-clear {
+	clear: both;
 }
