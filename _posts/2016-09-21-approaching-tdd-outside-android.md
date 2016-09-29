@@ -24,7 +24,7 @@ In this blog post series, we would like to share our experience applying Outside
 
 Bearing in mind that we already have an architecture in our system, in most of the cases, we know the pieces that compose a feature's design upfront. That is why Outside-in TDD suits better our workflow. If you already know the design, outside-in let you go faster than the baby steps followed in the inside-out approach.
 
-We have been practising the outside-in workflow, again and again, and we would like to share how we have adapted the outside-in workflow to our platform, Android. In order to do so and to make it easier to follow, we have chosen the "Bank Kata" that Sandro uses on his screencast. We found it useful to show our approach to achieving the same effect on the Android platform, where the tools are different and it can be a bit tricky.
+We have been practising the outside-in workflow, again and again, and we would like to share how we have adapted the outside-in workflow to our platform, Android. In order to do so and to make it easier to follow, we have chosen the "Bank Kata" that Sandro uses on his <a href="/videos/2015/05/12/outside-in-tdd-part-1/">screencast</a>. We found it useful to show our approach to achieving the same effect on the Android platform, where the tools are different and it can be a bit tricky.
 
 The problem description is as follows:
 
