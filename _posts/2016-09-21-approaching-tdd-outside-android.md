@@ -70,8 +70,8 @@ The Bank Kata problem description above talks about three features so there shou
 <b>Story: Show account statement</b>  
 
 > As a user  
-> I want to be able to show a transactions details statement  
-> So that I can easily check my account balance at any given time  
+> I want to be able to see my bank statement
+> So that I can check all the transactions I have made
 
 With the user story completed, we can now define the acceptance criteria - the series of results that required in order for the feature to be considered done.
 
@@ -89,10 +89,10 @@ The acceptance criteria that we have came up with for the <b>“Show account sta
 * A withdraw of 100 on 02/04/2014
 * A deposit of 500 on 10/04/2014
 
-<b>When</b> the user shows the account statement
+<b>When</b> the user requests the bank statement
 
-<b>Then</b> the statement should be a list with all the transactions in reverse chronological order
-<b>And</b> the statement lines should contain the transaction amount, date and running balance
+<b>Then</b> the statement should contain a list of all the transactions in reverse chronological order
+<b>And</b> each statement line should contain the transaction amount, date and running balance
 
 
 ## Setting up the project
@@ -130,17 +130,17 @@ In a real project we will need to run all the unit tests alone to ensure that th
 
 <img src="http://panavtec.me/wp-content/uploads/2016/04/outside-in.png" alt="outside-in" width="573" height="394" class="aligncenter size-full wp-image-1728" />
 
-This image show the testing flow that we are going to follow: the double loop of TDD. The outside loop corresponds to the progress of our feature and the inner loop corresponds to the individual functionals required to implement the feature.
+This image shows the testing flow that we are going to follow: the double loop of TDD. The outside loop corresponds to the progress of our feature and the inner loop corresponds to the individual functionals required to implement the feature.
 
 It's worth defining our test types very clearly.
 <ul>
-<li><b>Unit test</b>: Test that our class does the correct thing</li>
-<li><b>Acceptance test</b>: Test that our system passes the acceptance criteria and therefore behaves properly using real collaborators. Leaving aside external systems such as network, database, API, etc…</li>
-<li><b>Integration test</b>: Tests that our system works together with external dependencies.</li>
+<li><b>Unit test</b>: Verify that our individual classes work as we expect</li>
+<li><b>Acceptance test</b>: Verify that our system works according to the requirements specified in the acceptance criteria. Here we test the system as a whole, using all the real classes together, but leaving aside external systems like network, databases, API, etc.</li>
+<li><b>Integration test</b>: Tests the entire system, including all the external dependencies.</li>
 </ul>
-So, now that we have our requisites, we have to start writing an acceptance test. It will provide the current step of the outside loop we are in. We can re-run this test anytime to figure out what the progress of our feature is.
+So, now that we have our requeriments, we have to start writing an acceptance test. It will provide the current step of the outside loop we are in. We can re-run this test anytime to figure out what the progress of our feature is.
 
-This test validates that our system complies with the acceptance criteria that the business owner has agreed to, being the bridge between developers and business. Once the feature is finished, the acceptance test will also serve as a regression test, quickly altering us if future code change breaks or changes the functionality. For now, it is going to offer us feedback about the progress. The acceptance test should be as end-to-end as possible, but still within the boundaries of your system and not relying on any external systems or dependencies.
+This test validates that our system complies with the acceptance criteria that the business owner has agreed to, being the bridge between developers and business. Once the feature is finished, the acceptance test will also serve as a regression test, quickly alerting us if future code change breaks or changes the functionality. For now, it is going to offer us feedback about the progress. The acceptance test should be as end-to-end as possible, but still within the boundaries of your system and not relying on any external systems or dependencies.
 
 The naming conventions that we are going to use come <a href="/2014/12/13/naming-test-classes-and-methods/">from this Codurance article</a>. The unit tests of our classes are going to use the suffix “Should” which allows us to read the class name and the test method name as a full sentence. For the acceptance test we are going to use the suffix “Feature” so we can easily differentiate between acceptance and unit tests.
 
