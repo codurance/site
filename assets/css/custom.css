@@ -1025,7 +1025,3 @@ h2.gray-underline:after {
 .text-side-by-side-image {
 	margin: 0px 50px 0px 0px;
 }
-
-.image-side-by-side-text-clear {
-	clear: both;
-}
