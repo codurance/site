@@ -40,7 +40,7 @@ Having said that, let’s focus on the important stuff.
 
 Following the acceptance criteria, <a href="/2016/09/21/approaching-tdd-outside-android//#acceptance-criteria">defined in the previous post</a>, we have to make two deposits and one withdrawal. Notice that withdrawals are transactions with negative amounts.
 
-<b>As in Outside-In design happen in the red phase</b>, we have to design the skeleton of the classes that we know are needed at this point. We do not need to know and define the whole tree of collaborators, only the ones that we know that are needed. In contrast with classicist TDD, where everything emerges from the tests, in outside-in we need to do some design up front. You might want to check out this <a href="/2015/05/12/does-tdd-lead-to-good-design/">blog post</a>.
+<b>As in Outside-In design happen in the red phase</b>, we have to design the skeleton of the classes that we know are needed at this point. We do not need to know and define the whole tree of collaborators, only the ones that we know that are needed. In contrast with classicist TDD, where everything emerges from the tests, in outside-in we need to do some design up front. You might want to check out this <a href="/2015/05/12/does-tdd-lead-to-good-design/">blog post</a> for a more in detail discussion.
 
 At this point we know we need the following collaborators:
 
