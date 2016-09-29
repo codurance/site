@@ -16,11 +16,7 @@ canonical:
 
 ---
 
-<a href="http://martinfowler.com/articles/mocksArentStubs.html#DrivingTdd">Outside-in Test-Driven Development (TDD)</a> can be a challenge to implement. In this 3-part post series, we would like to share our experiences applying it to Android development and offer some practical tips for doing so yourself.
-
-As Android developers, we have been trying to apply the inside-out TDD style to our daily workflow but we thought that there was something missing.
-
-In this blog post series, we would like to share our experience applying Outside-in TDD to Android development. In this first post of the series we will introduce the necessary concepts and present our broad approach to the problem.
+<a href="http://martinfowler.com/articles/mocksArentStubs.html#DrivingTdd">Outside-in Test-Driven Development (TDD)</a> can be a challenge to implement. In this 3-part post series, we would like to share our experiences applying it to Android development and offer some practical tips for doing so yourself. In this first post of the series we will introduce the necessary concepts and present our broad approach to the problem.
 
 Bearing in mind that we already have an architecture in our system, in most of the cases, we know the pieces that compose a feature's design upfront. That is why Outside-in TDD suits better our workflow. If you already know the design, outside-in let you go faster than the baby steps followed in the inside-out approach.
 
