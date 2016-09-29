@@ -33,7 +33,7 @@ It's not my intention to take a deep-dive into VIPER in this article, but if you
 ## Make it work
 So as I explained, originally my main objective had been to make it work. And I did. With my big refactoring in place, I finished my goals for the app in no time, having the major features working. The app looked like this at that time:
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-first-version.png" alt="first version" width="169" height="300" class="image-side-by-side-text" />
+<a href="/assets/img/custom/blog/2016-09-28-memento-first-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-first-version.png" alt="first version" width="254" height="450" class="image-side-by-side-text" /></a>
 
 <p class="text-side-by-side-image" >
 <br/>
@@ -45,7 +45,7 @@ I was happy because my app was working, but I was sad because it wasn't an app t
 
 ## First Iteration: Copy Google Calendar
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-second-version.png" alt="second version" width="169" height="300" class="image-side-by-side-text" />
+<a href="/assets/img/custom/blog/2016-09-28-memento-second-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-second-version.png" alt="second version" width="254" height="450" class="image-side-by-side-text" /></a>
 
 <p class="text-side-by-side-image" ><br/>
 Even though this app is not a calendar app, it all revolves around time entry. So we first looked at apps that had the objective of entering timed slots of work, but most of them were more like Excel sheets than apps. And because my initial idea was to have a list of TimeEntries, we looked at the <a href ="https://itunes.apple.com/gb/app/google-calendar/id909319292?mt=8" >Google Calendar App</a>. The simplicity and clean design called to us, so we decided that could be a good first step to do a similar design and iterate from there.  
@@ -55,26 +55,26 @@ It looks better, doesn't it? But there were still usability issues I wanted to a
 
 ## Second Iteration: Remove hidden functionality
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="169" height="300" class="image-side-by-side-text"/>
+<a href="/assets/img/custom/blog/2016-09-28-memento-third-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="254" height="450" class="image-side-by-side-text"/></a>
 
 <p class="text-side-by-side-image" ><br/>
 So with this in mind, and playing a little with colors (must confess that the colors here are my fault &#128522; ), we added the functionality to the only view of our app.
-<a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> helped me to have a better usability in consideration and the result wasn’t that hard to implement. She also decided to have 3 different views of the data since we have 3 types of user: the ones that update their hours daily, the ones that do it by week, and the ones that only do it once per month.
+<a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> helped me to improve usability and the result wasn’t that hard to implement. She also decided to have 3 different views of the data since we have 3 types of user: the ones that update their hours daily, the ones that do it by week, and the ones that only do it once per month.
 </p>
 <br class="clear-both" />
 
 ## Third Iteration: Trying to have insertion in just one line
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png" alt="fourth version" width="169" height="300" class="image-side-by-side-text"/>
+<a href="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png" alt="fourth version" width="254" height="450" class="image-side-by-side-text"/></a>
 
 <p class="text-side-by-side-image" ><br/>
-As you can see I'm very bad in choosing colors, but right then we were more worried about having everything that was related to a new insertion in just one line and to keep it simple. The delete functionality stayed in the swipe, but that is an expected behavior from an iOS app, so we were ok with that.
+As you can see I'm very bad at choosing colors, but right then we were more worried about having everything that was related to a new insertion on just one line and about keeping it simple. The delete functionality stayed in the swipe, but that is an expected behavior from an iOS app, so we were ok with that.
 </p>
 <br class="clear-both" />
 
 ## Fourth iteration: Playing with colors
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png" alt="fith version" width="169" height="300" class="image-side-by-side-text"/>
+<a href="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png" alt="fith version" width="254" height="450" class="image-side-by-side-text"/></a>
 
 <p class="text-side-by-side-image" ><br/>
 Finally, <a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> dedicated some time to me (I guess she was horrified with my colors choices &#128540; ) and decide to have a look at the colors. Notice the difference? Me too...
@@ -85,16 +85,16 @@ But we were not yet happy with the insertion line. The field to search activitie
 
 ## Fifth Iteration: Add a picker view
 
-<img src="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png" alt="sixth version" width="169" height="300" class="image-side-by-side-text"/>
+<a href="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png" alt="sixth version" width="254" height="450" class="image-side-by-side-text"/></a>
 
 <p class="text-side-by-side-image" ><br/>
-The fact that now we have a PickerView, gave us the space we needed to have a big text field. And it all looks more harmonious and is still doing what I had in mind: just use one view to do everything in the app.
+The fact that now we have a PickerView gave us the space we needed to have a big text field. It all looks more harmonious and is still doing what I had in mind: just use one view to do everything in the app.
 </p>
 <br class="clear-both" />
 
-## What VIPER had to say in all of this
+## What VIPER had to do in all this
 
-As can see, I had to change the UI several times and some were radical changes (for example, we had a version that we tried to put the insertion line in the bottom, after the list). But because I had everything really independent and a good separation of concerns, I just needed to change my UI elements, connect them correctly in my ViewController and there you go, everything else would work like a charm.
+As you can see, I had to change the UI several times and some were radical changes (for example, we had a version where we tried to put the insertion line in the bottom, after the list). But because I had everything really independent and a good separation of concerns, I just needed to change my UI elements and wire them into my ViewController and there you go, everything else would work like a charm.
 The longest that it took me to make these changes was two days, partly because I had some problems with AutoLayout.
 
 
