@@ -6,6 +6,8 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 ### Installing on the MacOSX / Linux
 
+Note: you might have to [update Ruby to 2.3](http://stackoverflow.com/a/33883667) first.
+
 Run the below commands to install the necessary gems (you might need to prefix the commands with `sudo`):
 
 ```
