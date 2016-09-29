@@ -215,6 +215,7 @@ clients-partners:
    title: Socios
    subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes, y nosotros ayudamos a nuestros socios a conseguir lo mismo.
    link_title: Más información ...
+   skillsmatter_description: Skills Matter, con más de 70.000 miembros, fue fundada para ayudar a impulsar la innovación en la ingeniería de software reuniendo a desarrolladores inteligentes y creativos para aprender y compartir nuevas habilidades, descubrir nuevas tecnologías y evolucionar las prácticas e ideas. Hemos sido socios con Skills Matter desde nuestros inicios. Juntos, organizamos eventos para la comunidad, así como cursos de formación públicos y privados.
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
    github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
 events-lscc:
