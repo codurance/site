@@ -16,7 +16,7 @@ canonical:
 
 ---
 
-In the previous <a href="/2016/09/21/approaching-tdd-outside-android">post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
+In the <a href="/2016/09/21/approaching-tdd-outside-android">previous post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
 
 In this second post, we will focus more on the practical side. We will show how to build the acceptance test from the acceptance criteria, how acceptance tests and unit tests fit in the <b>double loop</b> of TDD and how we rely on them to guide us through the implementation.
 
@@ -32,7 +32,7 @@ To show the statement lines we decided to use a <a href="https://developer.andro
 
 It is worth mentioning that many people leave the UI out of the scope of the acceptance tests. In our case, we consider that in most mobile applications the UI is critical and therefore should generally be included. Whether you do it or not is your decision, however, we will show how it can be done. To assert the state of the view we are going to use Espresso, the official Android UI testing framework. Espresso does not offer a way to assert the state of each row in a RecyclerView out of the box, so we need to use the following snippet to be able to do so, <a href="https://gist.github.com/RomainPiel/ec10302a4687171a5e1a">RecyclerViewInteraction</a>. We consider that this piece of code is part of our testing framework. That is why it is already included as part of the initial steps.
 
-As we stated in the previous post, <b>Android is the responsible for instantiating Activities</b>. We can’t instantiate them manually. Bearing in mind that dependency injection through the constructor is not an option here, we had to come up with an alternative mechanism to instantiate custom dependencies for tests. For simplicity’s sake, we are not going to use any dependency injection framework. Instead, we are going to use the <a name="servicelocator" href="https://en.wikipedia.org/wiki/Service_locator_pattern">Service locator</a> pattern. Using this pattern and a static method <i>setInstance</i> we will be able to provide custom dependencies to the activity without using constructor dependency injection.
+As we stated in the previous post, <b>Android is responsible for instantiating Activities</b>. We can’t instantiate them manually. Bearing in mind that dependency injection through the constructor is not an option here, we had to come up with an alternative mechanism to instantiate custom dependencies for tests. For simplicity’s sake, we are not going to use any dependency injection framework. Instead, we are going to use the <a name="servicelocator" href="https://en.wikipedia.org/wiki/Service_locator_pattern">Service locator</a> pattern. Using this pattern and a static method <i>setInstance</i> we will be able to provide custom dependencies to the activity without using constructor dependency injection.
 
 Before asserting that the UI is showing the expected information, we need to define the layout that it is going to use to show it. In Android every view has an ID. We will need those IDs to reference the views in the acceptance test to assert that it is showing the correct information. 
 
@@ -40,7 +40,7 @@ Having said that, let’s focus on the important stuff.
 
 Following the acceptance criteria, <a href="/2016/09/21/approaching-tdd-outside-android//#acceptance-criteria">defined in the previous post</a>, we have to make two deposits and one withdrawal. Notice that withdrawals are transactions with negative amounts.
 
-<b>As in Outside-In design happen in the red phase</b>, we have to design the skeleton of the classes that we know are needed at this point. We do not need to know and define the whole tree of collaborators, only the ones that we know that are needed. In contrast with classicist TDD, where everything emerges from the tests, in outside-in we need to do some design up front.
+<b>As in Outside-In design happen in the red phase</b>, we have to design the skeleton of the classes that we know are needed at this point. We do not need to know and define the whole tree of collaborators, only the ones that we know that are needed. In contrast with classicist TDD, where everything emerges from the tests, in outside-in we need to do some design up front. You might want to check out this <a href="/2015/05/12/does-tdd-lead-to-good-design/">blog post</a>.
 
 At this point we know we need the following collaborators:
 
@@ -48,7 +48,7 @@ At this point we know we need the following collaborators:
 <li><b>TransactionRepository</b> - We know that we need some storage to save transactions. We decided to follow the <a href="http://martinfowler.com/eaaCatalog/repository.html">Repository pattern</a> to hold an in-memory implementation.</li>
 <li><b>ViewStatementLine</b> - We are going to use a RecyclerView that comes with an adapter. The adapter needs to hold a collection of a type that contains the information required for each row. ViewStatementLine is that type. It does not have any business logic and it is mapped 1:1 to the information shown in the UI.</li>
 <li><b>StatementFormatter</b> - This collaborator will convert the domain objects to the format needed in the UI. Date, amounts and text formating is the kind of logic that has to be included here.</li>
-<li><b>ServiceLocator</b> - <a href="#servicelocator">As mentioned before</a>, this collaborator provides custom BankAccount instances to the Activity.</li>
+<li><b>ServiceLocator</b> - <a href="#servicelocator">As mentioned before</a>, this collaborator provides custom BankAccount instances to the activity.</li>
 <li><b>Clock</b> - Time… time has a random factor and is outside of our control. To gain control over it, we have to encapsulate time randomness to have control over it during testing.</li></ul>
 
 We will see the collaborators in more detail later on, while we implement them.
@@ -95,7 +95,7 @@ One last point to make is that the TransactionRepository <i>store</i> method is 
 
 <li><span style="color: #1976d2; padding-right: 5px;">●</span>There is nothing to refactor here. Let's move on and implement the next BankAccount operation.</li></ul>
 
-Now It's time to create the BankAccount <b>withdraw</b> operation. 
+Now it's time to create the BankAccount <b>withdraw</b> operation. 
 
 <ul style="display: inline-block; list-style: none; text-align: left;">
 <li><span style="color: #d32f2f; padding-right: 5px;">●</span><a href="https://github.com/CarlosMChica/AndroidBankKata/commit/13c1b413443d1d18d66eca53955ba3703808264b">13c1b41</a> - Having a look at the test we can observe that it is precisely the same as the one for the deposit operation, but storing a transaction with a negative amount.</li>
