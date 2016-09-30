@@ -18,9 +18,9 @@ canonical:
 
 <a href="http://martinfowler.com/articles/mocksArentStubs.html#DrivingTdd">Outside-in Test-Driven Development (TDD)</a> can be a challenge to implement. In this 3-part post series, we would like to share our experiences applying it to Android development and offer some practical tips for doing so yourself. In this first post of the series we will introduce the necessary concepts and present our broad approach to the problem.
 
-Bearing in mind that we already have an architecture in our system, in most of the cases, we know the pieces that compose a feature's design upfront. That is why outside-in TDD suits better our workflow. If you already know the design, outside-in let you go faster than the baby steps followed in the classicist approach.
+Bearing in mind that we already have an architecture in our system, in most of the cases, we know the pieces that compose a feature's design upfront. That is why outside-in TDD suits our workflow better. If you already know the design, outside-in let you go faster than the baby steps followed in the classicist approach.
 
-We have chosen the "Bank Kata" that Sandro uses on his <a href="/videos/2015/05/12/outside-in-tdd-part-1/">screencast</a>. You don't have to had watched this screencast to follow along but it is useful as a primer on the concepts. In Sandro's screencast the problem is not build for Android, but we found it useful to have it as a base to show our approach to achieving the same effect on the Android platform, where the tools are different and it can be a bit tricky.
+We have chosen the "Bank Kata" that Sandro uses on his <a href="/videos/2015/05/12/outside-in-tdd-part-1/">screencast</a>. You don't have to have watched this screencast to follow along, but it is useful as a primer on the concepts. In Sandro's screencast the problem is not build for Android, but we found it useful to have it as a base to show our approach to achieving the same effect on the Android platform, where the tools are different and it can be a bit tricky.
 
 The problem description is as follows:
 
