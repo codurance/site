@@ -85,3 +85,10 @@ If you want to push code without deploying a new version of the site, make sure 
   * See [Jenkins example post](/site/blob/master/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
   * Note: comments can only be single line
   * Note: Even if they are too long, they'll be cut to 30 words
+
+### Adding a video to the publications
+
+  * Add an md file to the folder: `videos/_posts`
+  * Do not forget the attribute `video-url`, for youtube videos, use following format: https://www.youtube.com/embed/<video-id>
+  * Add an image to the video, for youtube videos, make a screenshot [here](http://youtubescreenshot.com/), the image is used on the home page and the carousel
+
