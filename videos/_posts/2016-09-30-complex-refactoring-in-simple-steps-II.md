@@ -17,6 +17,6 @@ date: 2016-09-30 02:39:00 +01:00
 
 Matthew Butt demonstrates how to compose simple automated refactoring steps in ReSharper to refactor code to better designs.
 
-In this episode, we look at a method that exhibits the Long Parameter List and Data Clump smells. We Extract Class from Parameters to create a parameter object, and then, spotting Feature Envy, use Move Instance Method to shift the behaviour to the new class. We finish by tidying up the method object to remove generated code that might tempt us to break encapsulation.
+In this episode we spot a conditional with three branches. We Decompose this Conditional to clarify the logic, and then Extract Method Objects to encapsulate the behaviour of each branch. By the time we've finished, we are well on our way to implementing polymorphism.
 
 The code used in this video can be found [on GitHub](https://github.com/bnathyuw/Complex-Refactorings-In-Simple-Steps)
