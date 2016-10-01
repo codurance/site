@@ -215,6 +215,7 @@ clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
    link_title: Read more ...
+   skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
    jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
 events-lscc:
