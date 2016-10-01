@@ -16,7 +16,7 @@ canonical:
 
 ---
 
-In the <a href="/2016/09/21/approaching-tdd-outside-android">previous post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
+In the <a href="/2016/09/28/approaching-tdd-outside-android">previous post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
 
 In this second post, we will focus more on the practical side. We will show how to build the acceptance test from the acceptance criteria, how acceptance tests and unit tests fit in the <b>double loop</b> of TDD and how we rely on them to guide us through the implementation.
 
