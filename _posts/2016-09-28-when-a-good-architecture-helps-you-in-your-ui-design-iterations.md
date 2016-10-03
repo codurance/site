@@ -33,10 +33,9 @@ It's not my intention to take a deep-dive into VIPER in this article, but if you
 ## Make it work
 So as I explained, originally my main objective had been to make it work. And I did. With my big refactoring in place, I finished my goals for the app in no time, having the major features working. The app looked like this at that time:
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-first-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-first-version.png" alt="first version" width="254" height="450" class="image-side-by-side-text" /></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-first-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-first-version.png" alt="first version" width="169" height="300" class="image-side-by-side-text" /></a>
 
 <p class="text-side-by-side-image" >
-<br/>
 This version had several problems: The way to add or delete new TimeEntries was completely obscure for a new user: you had to swipe the cell to see the buttons. I was using this pod: <a href ="https://github.com/CEWendel/SWTableViewCell" >SWTableViewCell</a>  to achieve this.
 I was happy because my app was working, but I was sad because it wasn't an app that I would like to show off. So I had a talk with our <a href ="https://twitter.com/GiuliaMantuano" >UI expert</a>, and we decided to start iterating till we get the UI into a more satisfactory state.
 
@@ -45,9 +44,9 @@ I was happy because my app was working, but I was sad because it wasn't an app t
 
 ## First Iteration: Copy Google Calendar
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-second-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-second-version.png" alt="second version" width="254" height="450" class="image-side-by-side-text" /></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-second-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-second-version.png" alt="second version" width="169" height="300" class="image-side-by-side-text" /></a>
 
-<p class="text-side-by-side-image" ><br/>
+<p class="text-side-by-side-image" >
 Even though this app is not a calendar app, it all revolves around time entry. So we first looked at apps that had the objective of entering timed slots of work, but most of them were more like Excel sheets than apps. And because my initial idea was to have a list of TimeEntries, we looked at the <a href ="https://itunes.apple.com/gb/app/google-calendar/id909319292?mt=8" >Google Calendar App</a>. The simplicity and clean design called to us, so we decided that could be a good first step to do a similar design and iterate from there.  
 It looks better, doesn't it? But there were still usability issues I wanted to address... I was insisting on having this swipe version because as a user, I prefer apps that have all at hand and I don't have to go into several different views to achieve something. So I was kind of insisting on just having a one view app.
 </p>
@@ -55,9 +54,9 @@ It looks better, doesn't it? But there were still usability issues I wanted to a
 
 ## Second Iteration: Remove hidden functionality
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-third-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="254" height="450" class="image-side-by-side-text"/></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-third-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="169" height="300" class="image-side-by-side-text"/></a>
 
-<p class="text-side-by-side-image" ><br/>
+<p class="text-side-by-side-image" >
 So with this in mind, and playing a little with colors (must confess that the colors here are my fault &#128522; ), we added the functionality to the only view of our app.
 <a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> helped me to improve usability and the result wasn’t that hard to implement. She also decided to have 3 different views of the data since we have 3 types of user: the ones that update their hours daily, the ones that do it by week, and the ones that only do it once per month.
 </p>
@@ -65,18 +64,18 @@ So with this in mind, and playing a little with colors (must confess that the co
 
 ## Third Iteration: Trying to have insertion in just one line
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png" alt="fourth version" width="254" height="450" class="image-side-by-side-text"/></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fouth-version.png" alt="fourth version" width="169" height="300" class="image-side-by-side-text"/></a>
 
-<p class="text-side-by-side-image" ><br/>
+<p class="text-side-by-side-image" >
 As you can see I'm very bad at choosing colors, but right then we were more worried about having everything that was related to a new insertion on just one line and about keeping it simple. The delete functionality stayed in the swipe, but that is an expected behavior from an iOS app, so we were ok with that.
 </p>
 <br class="clear-both" />
 
 ## Fourth iteration: Playing with colors
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png" alt="fith version" width="254" height="450" class="image-side-by-side-text"/></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-fifth-version.png" alt="fith version" width="169" height="300" class="image-side-by-side-text"/></a>
 
-<p class="text-side-by-side-image" ><br/>
+<p class="text-side-by-side-image" >
 Finally, <a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> dedicated some time to me (I guess she was horrified with my colors choices &#128540; ) and decide to have a look at the colors. Notice the difference? Me too...
 <br/>
 But we were not yet happy with the insertion line. The field to search activities was too small and the stepper was too big in comparison.
@@ -85,9 +84,9 @@ But we were not yet happy with the insertion line. The field to search activitie
 
 ## Fifth Iteration: Add a picker view
 
-<a href="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png" alt="sixth version" width="254" height="450" class="image-side-by-side-text"/></a>
+<a href="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-sixth-version.png" alt="sixth version" width="169" height="300" class="image-side-by-side-text"/></a>
 
-<p class="text-side-by-side-image" ><br/>
+<p class="text-side-by-side-image" >
 The fact that now we have a PickerView gave us the space we needed to have a big text field. It all looks more harmonious and is still doing what I had in mind: just use one view to do everything in the app.
 </p>
 <br class="clear-both" />
