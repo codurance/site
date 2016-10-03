@@ -59,7 +59,7 @@ While your web framework will handle HTTP requests for you, you need to get what
 ##Assume the mistake is yours##
 You will face unexplainable bugs. Sometimes even [heisenbugs](https://en.wikipedia.org/wiki/Heisenbug), that disappear when you debug them. In despair, you might be tempted to reject the fault to something else than your code. Always start with the assumption that it is an issue with your code,*not* the library, the OS or anything else.
 
-This is a lesson in humility. There is a much higher chance that you barely tested, 2 days old code is buggy than a battle-hardened library that has been around for years. As your debugging skills and your bug-hunter instinct improve over time, you will come to that conclusion anyway.
+This is a lesson in humility. There is a much higher chance that your barely tested, 2 days old code is buggy than a battle-hardened library that has been around for years. As your debugging skills and your bug-hunter instinct improve over time, you will come to that conclusion anyway.
 
 Sometimes, it is indeed a bug in another software component than yours. However flagrant the bug, however careless the offending code seemed, remember of how many bugs your code was littered to being with, and don’t hold it against the authors of the faulty code.
 
