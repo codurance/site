@@ -22,7 +22,7 @@ tags:
 - Clean architecture
 
 ---
-I’m currently working on an internal app for Codurance, which started as a pet project while I was working with my previous client. I started the project with one simple goal: to make it work. After six or seven months of trying to put it all together in my spare time, I ended up with a skeleton of a working app. However, I wasn't entirely satisfied with my work. Even though I had been test-driven all the code and all my ViewControllers were as light as I could imagine, I thought it wasn't enough.
+I’m currently working on an internal app for Codurance, which started as a pet project while I was working with my previous client. I started the project with one simple goal: to make it work. After six or seven months of trying to put it all together in my spare time, I ended up with a skeleton of a working app. However, I wasn't entirely satisfied with my work. Even though I had been test-driving all the code and all my ViewControllers were as light as I could imagine, I thought it wasn't enough.
 So I decided to carry out a big refactoring and apply the VIPER architectural pattern.
 
 ## So what's VIPER?
@@ -57,7 +57,7 @@ It looks better, doesn't it? But there were still usability issues I wanted to a
 <a href="/assets/img/custom/blog/2016-09-28-memento-third-version.png"><img src="/assets/img/custom/blog/2016-09-28-memento-third-version.png" alt="third version" width="169" height="300" class="image-side-by-side-text"/></a>
 
 <p class="text-side-by-side-image" >
-So with this in mind, and playing a little with colors (must confess that the colors here are my fault &#128522; ), we added the functionality to the only view of our app.
+So with this in mind, and playing a little with colors (I must confess that the colors here are my fault &#128522; ), we added the functionality to the only view of our app.
 <a href ="https://twitter.com/GiuliaMantuano" >Giulia</a> helped me to improve usability and the result wasn’t that hard to implement. She also decided to have 3 different views of the data since we have 3 types of user: the ones that update their hours daily, the ones that do it by week, and the ones that only do it once per month.
 </p>
 <br class="clear-both" />
