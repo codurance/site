@@ -14,6 +14,9 @@ tags:
 - craftsmanship
 - practices
 - productivity
+canonical:
+    name: my personal blog
+    href: https://david-codes.hatanian.com/2016/10/03/what-i-wish-i-knew-earlier.html 
 ---
 
 Having worked in the software engineering field for 6 years, I sometimes pause and consider how much I have learned since I started my career. One thing that strikes me is how many things I would want to tell just-out-of-college me if I had the occasion.
