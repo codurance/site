@@ -8,7 +8,7 @@ title: What I wish I knew when I started as a software developer
 image:
     src: /assets/img/custom/blog/2016-10-03-what-i-wish-i-knew/thumbnail.jpg
 attribution:
-    text: Young poplars on Westrop Farm (licensed under Creative Commons)
+    text: Young poplars on Westrop Farm (licensed under Creative Commons by D Gore)
     href: http://www.geograph.org.uk/photo/2469549 
 tags:
 - craftsmanship
