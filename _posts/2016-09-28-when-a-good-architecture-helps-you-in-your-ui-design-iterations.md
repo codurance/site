@@ -1,7 +1,7 @@
 ---
 author: Ana Nogal
 comments: true
-date: 2016-09-28 10:00:00 +00:00
+date: 2016-10-03 10:00:00 +00:00
 layout: post
 asset-type: post
 slug: when-a-good-architecture-helps-you-in-your-ui-design-iterations
