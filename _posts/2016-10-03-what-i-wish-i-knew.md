@@ -1,6 +1,5 @@
 ---
 author: David Hatanian
-comments: true
 date: 2016-10-03 10:10:00 +00:00
 layout: post
 asset-type: post
