@@ -57,7 +57,7 @@ Libraries are convenient, because they remove complexity. However, take the time
 While your web framework will handle HTTP requests for you, you need to get what [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is and how to conveys information between two computers. Similarly, take the time to understand the basis of [DNS](https://en.wikipedia.org/wiki/Domain_Name_System), [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security), and other low-level protocols. If your application uses [OAuth](https://en.wikipedia.org/wiki/OAuth) or [session-based authentication](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet), you need to know it and you need to know what the consequences are. [This page](https://github.com/alex/what-happens-when) is a good starting point.
 
 ##Assume the mistake is yours##
-You will face unexplainable bugs. Sometimes even [heisenbugs](https://en.wikipedia.org/wiki/Heisenbug), that disappear when you debug them. In despair, you might be tempted to reject the fault to something else than your code. Always start with the assumption that it is an issue with your code,*not* the library, the OS or anything else.
+You will face unexplainable bugs. Sometimes even [heisenbugs](https://en.wikipedia.org/wiki/Heisenbug), that disappear when you debug them. In despair, you might be tempted to reject the fault to something else than your code. Always start with the assumption that it is an issue with your code, *not* the library, the OS or anything else.
 
 This is a lesson in humility. There is a much higher chance that your barely tested, 2 days old code is buggy than a battle-hardened library that has been around for years. As your debugging skills and your bug-hunter instinct improve over time, you will come to that conclusion anyway.
 
@@ -66,7 +66,7 @@ Sometimes, it is indeed a bug in another software component than yours. However 
 ##Test, test, test##
 I think that automated testing and test-driven development are not practiced enough in software engineering courses. Those are amongst the most important skills in software development today, and I wish I was made aware of that earlier in my career.
 
-Learn how to write tests and how to maintain them. Pair with someone who can teach you test driven development. If you cannot find such person amongst your colleagues [look at a software craftsmanship community next to where you live](http://slack.softwarecraftsmanship.org/).
+Learn how to write tests and how to maintain them. Pair with someone who can teach you test driven development. If you cannot find someone like that amongst your colleagues look at a [software craftsmanship community](http://slack.softwarecraftsmanship.org/) next to where you live.
 
 ##Clean code principles##
 Learn how to write clean code from the start. [The book by Robert C Martin](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) is an excellent way to start. There is also plenty of content online (just check other articles on the [Codurance blog](https://www.codurance.com/publications)). Take the time to read some of that content and apply it. Ask your mentor or colleagues for feedback.
