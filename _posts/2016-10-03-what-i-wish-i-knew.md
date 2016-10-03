@@ -28,7 +28,7 @@ You will find soon that you need to keep learning new technologies, new methods,
 Learn things outside your comfort zone. If you work on a dynamic language, learn a statically typed one. Use VIM or Emacs if you are used to an IDE, etc.
 
 ##Find a mentor##
-I just said that there are no teachers after college, but that is not entirely true. Nobody will seat in a classroom with you and go over a predefined lesson. But it is still extremely beneficial to find one more experienced person that can guide you.
+I just said that there are no teachers after college, but that is not entirely true. Nobody will sit in a classroom with you and go over a predefined lesson. But it is still extremely beneficial to find one more experienced person that can guide you.
 
 [Sandro’s book “The Software Craftsman”](https://www.goodreads.com/book/show/23215733-the-software-craftsman) describes how a mentor is beneficial to a new software developer at great lengths.
 
@@ -42,7 +42,7 @@ Do not repeat my mistake. You are not expected to arrive at your first job knowi
 Most of the time, you will find out that either at least one other person in the team had the same question, or people have slightly different definitions of the term you are asking about. Even if you are the only one asking the question, you will not be the only one learning something in return.
 
 #Get good practices early#
-There good practices will be the foundation upon which you will build your career. Get them as early as possible.
+These good practices will be the foundation upon which you will build your career. Get them as early as possible.
 
 ##Leverage existing libraries and frameworks##
 I barely knew how to properly use a library when I got out of college. As I said earlier I did not even know what a framework was.
@@ -57,19 +57,19 @@ Libraries are convenient, because they remove complexity. However, take the time
 While your web framework will handle HTTP requests for you, you need to get what HTTP is and how to conveys information between two computers. Similarly, take the time to understand the basis of DNS, TLS, and other low-level protocols. If your application uses OAuth or session-based authentication, you need to know it and you need to know what the consequences are.
 
 ##Assume the mistake is yours##
-You will face unexplainable bugs. Sometimes even [heisenbugs](https://en.wikipedia.org/wiki/Heisenbug), that disappear when you debug them. In despair, you might be tempted to reject the fault to something else than your code. Always start with the assumption that it is not an issue with the caller, the library, the OS or anything else.
+You will face unexplainable bugs. Sometimes even [heisenbugs](https://en.wikipedia.org/wiki/Heisenbug), that disappear when you debug them. In despair, you might be tempted to reject the fault to something else than your code. Always start with the assumption that it is an issue with your code,*not* the library, the OS or anything else.
 
 This is a lesson in humility. There is a much higher chance that you barely tested, 2 days old code is buggy than a battle-hardened library that has been around for years. As your debugging skills and your bug-hunter instinct improve over time, you will come to that conclusion anyway.
 
-Sometimes, it is indeed a bug in another software component than yours. However flagrant the bug, however careless the offending code seemed, remember of how many bugs your code was littered to being with, and don’t hold it against the bug authors.
+Sometimes, it is indeed a bug in another software component than yours. However flagrant the bug, however careless the offending code seemed, remember of how many bugs your code was littered to being with, and don’t hold it against the authors of the faulty code.
 
 ##Test, test, test##
 I think that automated testing and test-driven development are not practiced enough in software engineering courses. Those are amongst the most important skills in software development today, and I wish I was made aware of that earlier in my career.
 
-Learn how to write tests and how to maintain them. Pair with someone who can teach you test driven development. If you cannot find such person amongst your colleagues look at a software craftsmanship community next to where you live.
+Learn how to write tests and how to maintain them. Pair with someone who can teach you test driven development. If you cannot find such person amongst your colleagues [look at a software craftsmanship community next to where you live](http://slack.softwarecraftsmanship.org/).
 
 ##Clean code principles##
-Learn how to write clean code from the start. [The book by Robert C Martin](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) is an excellent way to start. There is also plenty of content online (just check other articles on the Codurance blog). Take the time to read some of that content and apply it. Ask your mentor or colleagues for feedback.
+Learn how to write clean code from the start. [The book by Robert C Martin](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) is an excellent way to start. There is also plenty of content online (just check other articles on the [Codurance blog](https://www.codurance.com/publications)). Take the time to read some of that content and apply it. Ask your mentor or colleagues for feedback.
 
 #Programming is a social activity#
 Depending how much programming practice you’ve had before starting your career, you might still believe that a programmer’s day is spent sitting alone in front of their editor. You need to understand as soon as possible how much you win by working with others.
@@ -87,7 +87,7 @@ Being clever is rewarded in college. You may have been encouraged to optimize a 
 
 Being creative and clever to solve a hard, complex problem is good. But do not use clever micro-optimizations that make your code less readable.
 
-One of the greatest challenge of a beginner software engineer is to make their code readable. Your teammates need to be able to understand your code and make it evolve without your help. Clever optimizations often go against that by making the code’s intent less obvious. Unlearn this “academic” reflex.
+One of the greatest challenges as a beginner software engineer is to make your code readable. Your teammates need to be able to understand your code and evolve it without your help. Clever optimizations often go against that by making the code’s intent less obvious. Unlearn this “academic” reflex.
 
 But understand it is a tradeoff, and readable code is more important that clever code. Boring code is good.
 
