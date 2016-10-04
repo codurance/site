@@ -30,6 +30,10 @@ body {
     padding-right: 20px;
 }
 
+.bordered {
+  border: solid 1px #eee;
+}
+
 /* Home Page */
 
 .feature-panel {
