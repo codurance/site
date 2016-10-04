@@ -203,3 +203,12 @@
     <p>He has been working professionally as an Android developer for more than 3 years. His current focus is on mastering a new set of skills that will let him continue to grow and make progress in his career.</p>
   twitter: CarlosMChica
   github: CarlosMChica
+
+- id: chris 
+  name: Chris Jeffery
+  image: /assets/img/custom/team/chris_jeffery.jpg
+  role: Software Craftsman
+  shortDescription: Chris is a front end developer with more than five years experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.
+  fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavasSript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
+  twitter: Chris_Jeffery
+  github: chrisjeffery 
