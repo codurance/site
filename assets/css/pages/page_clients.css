@@ -26,10 +26,6 @@
 	background: white;
 }
 
-.clients-page:hover img {
-	border-color: #bbb;
-}
-
 @media (max-width: 992px) { 
 	.clients-page {
 		text-align: center;
