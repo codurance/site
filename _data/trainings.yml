@@ -36,7 +36,6 @@
 
 - id: cassandra
   name: Scaling with Cassandra
-  author: Felipe Fernández
   description: For developers that want to embrace NoSQL and Big Data using one of the highest-paying tech skills
   page: /services/training/scaling-with-cassandra
 
@@ -48,12 +47,10 @@
 
 - id: scala
   name: Functional Programming in Scala for Java Developers
-  author: Felipe Fernández
   description: For Java developers wanting to learn Functional Programming with one of the most exciting languages on the JVM
   page: /services/training/scala-for-java-developers
 
 - id: akka 
   name: Scala Deep Dive with Akka
-  author: Felipe Fernández
   description: For developers that want to deepen their Scala knowledge using its most popular toolkit, Akka
   page: /services/training/scala-deep-dive-with-akka
