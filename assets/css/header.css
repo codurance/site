@@ -168,7 +168,6 @@ body.header-fixed-space-default {
 	z-index: 99;
 	background: #fff;
 	position: relative;
-	border-bottom: solid 2px #eee;
 }
 
 /*Header Container*/
@@ -296,7 +295,7 @@ body.header-fixed-space-default {
     }
 
     .header .navbar-nav {
-        margin: 0 0 5px;
+        margin: 0px;
         float: none !important;
     }
 
