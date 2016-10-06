@@ -41,6 +41,18 @@ body.header-fixed-space-default {
 	.header .topbar ul.loginbar > li {
 		padding-right: 20px;
 	}
+  .language-selector {
+    display: none;
+  }
+  .language-link-in-menu {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .language-link-in-menu {
+    display: none !important;
+  }
 }
 
 .header .topbar ul.loginbar {
@@ -92,6 +104,11 @@ body.header-fixed-space-default {
 	min-width: 100px;
 	position: absolute;
 	background: #f0f0f0;
+}
+
+.language-selector {
+  margin-top: 0.5em;
+  margin-right: 1.5em;
 }
 
 .header .topbar li:hover ul.languages {

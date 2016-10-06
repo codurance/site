@@ -5,7 +5,23 @@
 			<img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
 		</a>
 		<!-- End Logo -->
-
+    <div class="topbar pull-right language-selector">
+      <ul class="loginbar">
+        <li>
+          <i class="fa fa-globe"></i>
+          {% for lang in site.languages %}
+          {% if lang == site.lang %}
+          <span class="language"><strong>{{ lang }}</strong></span>
+          {% else %}
+          <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
+          {% endif %}
+          {% if forloop.last == false  %}
+          <span class="separator"> | </span>
+          {% endif  %}
+          {% endfor %}
+        </li>
+      </ul>
+    </div>
 		<!-- Toggle get grouped for better mobile display -->
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 			<span class="sr-only">Toggle navigation</span>
@@ -23,23 +39,11 @@
 				<li><a href="/events">{% t sections.events %}</a></li>
 				<li><a href="/company">{% t sections.company %}</a></li>
 				<li><a href="/careers">{% t sections.careers %}</a></li>
-				<div class="topbar pull-right">
-					<ul class="loginbar">
-						<li>
-							<i class="fa fa-globe"></i>
-							{% for lang in site.languages %}
-							{% if lang == site.lang %}
-							<span class="language"><strong>{{ lang }}</strong></span>
-							{% else %}
-							<a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
-							{% endif %}
-							{% if forloop.last == false  %}
-							<span class="separator"> | </span>
-							{% endif  %}
-							{% endfor %}
-						</li>
-					</ul>
-				</div>
+        {% for lang in site.languages %}
+        {% if lang != site.lang %}
+        <li class="language-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>
+        {% endif %}
+        {% endfor %}
 			</ul>
 		</div><!--/end container-->
 	</div><!--/navbar-collapse-->
