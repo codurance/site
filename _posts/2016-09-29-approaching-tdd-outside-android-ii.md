@@ -55,7 +55,7 @@ We will see the collaborators in more detail later on, while we implement them.
 
 Once we have finished writing the acceptance test and we see it <b>failing for the right reason</b> (The view is not showing the statement), we will dive into the inner loop and start writing the individual pieces required for the feature.
 
-<img src="http://panavtec.me/wp-content/uploads/2016/08/acc2.png" alt="Outside-in acceptance test coverage" width="831" height="271" class="aligncenter size-full wp-image-1785" />
+<img src="/assets/img/custom/blog/acc2.png" alt="Outside-in acceptance test coverage" class="img-responsive"/>
 
 <h2>Inner loop - Unit test</h2>
 
