@@ -81,7 +81,7 @@ The test results that were stored in temporary fields are then saved in a test r
 
 {% img /assets/img/custom/blog/db-testing/TestingWithFakeTables.png "" %}
 
-In this first blog post we learned about database testing, and how the tSQLt testing framework works. In the next post, we will go beyound the quick start example and see how to approach legacy transact-SQL, implementing tests into an existing database.
+In this first blog post we learned about database testing, and how the tSQLt testing framework works. In the next post, we will go beyond the quick start example and see how to approach legacy transact-SQL, implementing tests into an existing database.
 
 
 
