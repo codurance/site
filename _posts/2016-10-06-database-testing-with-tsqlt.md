@@ -58,7 +58,7 @@ This is a command to run all the tests. You should see a failing test in the res
 
 {% img /assets/img/custom/blog/db-testing/db-testing-3.png "" %}
 
-Test case `number 11`, named "test ready for experimentation if 2 particles, is failing". Let’s open the file and see what’s wrong with it; we will need to navigate to the `stored procedures` folder to find the test.
+Test case `number 11`, named "test ready for experimentation if 2 particles", is failing. Let’s open the file and see what’s wrong with it; we will need to navigate to the `stored procedures` folder to find the test.
 
 {% img /assets/img/custom/blog/db-testing/db-testing-4.png "" %}
 
