@@ -1,7 +1,7 @@
 ---
 layout: post
-name: visualise-interruptions-with-a-lego-wall 
-title: Visualise interruptions with a LEGO Wall
+name: visualise-interruptions-on-a-lego-wall 
+title: Visualise interruptions on a LEGO Wall
 date: 2016-10-10 07:00:00 +00:00
 author: Giulia Mantuano
 image:
