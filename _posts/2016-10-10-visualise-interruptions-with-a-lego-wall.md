@@ -18,7 +18,7 @@ tags:
 
 
 As part of the [apprentice-craftsmen Programme](https://codurance.com/careers/) at Codurance, I had the privilege to attend the [Certified Scrum Product Owner course](https://skillsmatter.com/courses/152-martine-devos-scrum-product-owner) at Skills Matter. 
-During the two-day course I learnt many techniques to deliver value efficiently, and I’m going to share a peculiar tool to help teams visualise interruptions.
+During the two-day course, I learnt many techniques to deliver value efficiently, and I am going to share a less widely known tool to help teams visualise interruptions.
 
 Keeping track of interruptions helps teams improve their productivity during inspect and adapt activities such as daily meetings and retrospectives. In order to turn impediments into opportunities, both development team and stakeholders should collaborate, support and trust each other. These concepts are at the foundation of “shared responsibility”: everybody is responsible for the success of the business.
 
@@ -32,7 +32,7 @@ Team members' concerns turn into frustrations and become internalised. Impedimen
 
 The LEGO Wall has been conceived to reduce the fear factor when identifying impediments. It is an artifact to keep interruptions visible while ensuring anonymity.
 
-The whole Scrum Team (PO included!) is involved and the Scrum Master facilitates the LEGO Wall Setup Session, explaining the importance of tracking interruptions. The LEGO Wall gives voice to the team’s frustrations. By collecting and displaying real data, it creates the conditions to discuss the interruptions. At a glance the team is able understand:
+The whole Scrum Team (Product Owner included!) is involved and the Scrum Master facilitates the LEGO Wall Setup Session, explaining the importance of tracking interruptions. The LEGO Wall gives voice to the team’s frustrations. By collecting and displaying real data, it creates the conditions to discuss the interruptions. At a glance, the team is able understand:
 
  - How much time they spend working on delivering the value agreed during the Sprint Planning
  - How much time they spend working on unplanned activities
@@ -48,7 +48,7 @@ In the example shown in the pictures the team identified 4 categories:
 
 “Business as Usual (BAU)” is the time spent on the ceremonies and the artifacts associated with the development process. These include: meetings, creating reports, writing documents, etc.
 
-The category “Help the PO” encompasses the activities that the development team is asked to do to help the PO prioritise stories (backlog refinement sessions). In fact, these activities should be considered part of the work, but often the development team perceives these activities as interruptions. Work is not only about coding, UX design or testing; it should encompass collaboration with the PO because these activities are essential to delivering value.
+The category “Help the PO” encompasses the activities that the development team is asked to do to help the Product Owner prioritise stories (backlog refinement sessions). In fact, these activities should be considered part of the work, but often the development team perceives these activities as interruptions. Work is not only about coding, UX design or testing; it also involves collaboration with the PO, as these activities are also essential to delivering value.
 
 
 ##Materials and preparation
@@ -63,7 +63,7 @@ You can build a LEGO Wall with as many **base plates** as you need, in order to 
 
 You will need **colourful LEGO bricks** to display interruptions and **LEGO figures** to represent an anonymous team member.
 
-From the pictures, you can see that the team decided to use LEGO figures to represent themselves. This is because this activity should be pleasurable as well as useful. In fact, I recommend to create your own figure as if you are playing a tabletop game. Thanks to the modularity of LEGO and the figures from movies and comics, you can be whoever you want and change your character as many times as you like, so that you can keep your anonymity.
+From the pictures, you can see that the team decided to use LEGO figures to represent themselves. This is because this activity should be pleasurable as well as useful. In fact, I recommend creating your own figure as if you are playing a tabletop game. Thanks to the modularity of LEGO and the figures from movies and comics, you can be whoever you want and change your character as many times as you like, so that you can keep your anonymity.
 
 Lego is an excellent tool to visualise interruptions because:
 
@@ -78,14 +78,14 @@ Lego is an excellent tool to visualise interruptions because:
 
 I suggest you hang the LEGO Wall in a place that would be highly visible to the team and stakeholders. We want to trigger discussions in front of it. The LEGO Wall displays real and meaningful data that can be extremely useful during retrospectives. The more colourful the LEGO Wall gets the more margin of improvements the team and the organisation can work on to deliver more value.
 
-Since the LEGO Wall is not a micro-management tool, at the end of every day, each team member should update it exclusively with bricks assigned to each category of impediment. The white bricks should be added only at the end of the Sprint. They have the function of highlighting the time spend to achieve the Sprint goal so that it’s easy to compare how much time the team has spent working and how much time has been spent on interruptions.
+Since the LEGO Wall is not a micro-management tool, at the end of every day, each team member should update it exclusively with bricks assigned to each category of impediment. The white bricks should be added only at the end of the Sprint. They have the function of highlighting the time spent to achieve the Sprint goal so that it’s easy to compare how much time the team has spent working and how much time has been spent on interruptions.
 
 
 ##The power of the LEGO Wall during retrospectives
 
 {% img /assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-retrospective.jpg"" %}
 
-The LEGO Wall is a collector for meaningful data that shows how the Sprint went. If the LEGO Wall shows that the team has spent more time at fixing bugs then delivering new value, then they may need to put more focus on quality. Thanks to this effortless way of gathering data the team can set up discussions with stakeholders and, together, find ways to reduce impediments and improve team capacity. Production and release support interruptions are an opportunity to invest in better delivery practices.
+The LEGO Wall is a collector for meaningful data that shows how the Sprint went. If the LEGO Wall shows that the team has spent more time on fixing bugs then delivering new value, then they may need to put more focus on quality. Thanks to this effortless way of gathering data the team can set up discussions with stakeholders and, together, find ways to reduce impediments and improve team capacity. Production and release support interruptions are an opportunity to invest in better delivery practices.
 
 BAU interruptions can be reduced by asking a couple of questions:
 
@@ -97,17 +97,17 @@ If the answer to the second question is YES then it means that it’s not an int
 
 ##Conclusion
 
-This technique is a powerful tool to get an idea on how much time the team can spend on working to deliver new value instead of working on problems caused by previous Sprints.
+The LEGO Wall is a powerful tool to get an idea on how much time the team can spend on working to deliver new value instead of working on problems inherited from previous Sprints.
 
 However, this is not a step-by-step recipe because this tool can be used in several ways according to the following variables: 
 
 - How experienced the team is
 - The type of interruptions
 - The environment
-- The company organisation
+- How the company is organised
 
 
-I suggest to stay focused on the principles and importance of this activity (honesty, transparency, courage, inspect and adapt). Don't be afraid of experimenting and changing this to suit your needs. If you start looking at things from another perspective, you might realise that impediments and interruptions are actually opportunities for improvement.
+I suggest staying focused on the principles and importance of this activity (honesty, transparency, courage, inspect and adapt). Don't be afraid of experimenting and changing this to suit your needs. If you start looking at things from another perspective, you might realise that impediments and interruptions are actually opportunities for improvement.
 
 ---
 
