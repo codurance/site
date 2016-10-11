@@ -80,6 +80,10 @@ If you want to push code without deploying a new version of the site, make sure 
 
 # Flight Rules
 
+### Adding a post
+
+  * Remember to add the tag `asset-type: post` to the post metadata
+
 ### Adding an abstract to a post
 
   * See [Jenkins example post](/site/blob/master/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
