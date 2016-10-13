@@ -53,7 +53,7 @@ Note that we are not going to fulfil the statementLines method yet. Instead we m
 a46d5ca6975f50f5a5">Refactor</a> - We extracted a method that maps a line in the production code and do some clean up in the test code.</li>
 </ul>
 
-Once again, we run the acceptance test to check the progress and now it guide us to the lines method in the Statement class (the one that we just mocked in the previous inner loop to implement the StatementFormatter). Let's get rid of the exception and jump into the next inner loop.
+Once again, we run the acceptance test to check the progress and now it guides us to the lines method in the Statement class (the one that we just mocked in the previous inner loop to implement the StatementFormatter). Let's get rid of the exception and jump into the next inner loop.
 
 <ul style="display: inline-block; list-style: none; text-align: left;">
 <li><span style="color: #d32f2f; padding-right: 5px;">●</span><a href="https://github.com/CarlosMChica/AndroidBankKata/commit/e53c6ba6bcec339af7cdfaab148c24fa8aa8ac55">Red</a> - Statement has to map every transaction to a StatementLine that contains amount, date and running balance.
