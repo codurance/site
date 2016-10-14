@@ -22,14 +22,9 @@ permalink: /404.html
   </div>
 </div>
 
-<!-- send a 404 event to google analytics.
-  Source: https://gist.github.com/pwenzel/eb4f04552ef410f60406 -->
+<!-- send a 404 event to google analytics.-->
   <script>
-if(window.googleAnalyticsEvents){
-  window.googleAnalyticsEvents.functions.push( function(environment) {
-    environment.ga('send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer, {'nonInteraction': 1});
-  });
-}
+    ga('send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer);
   </script>
 
   <script type="text/javascript">
