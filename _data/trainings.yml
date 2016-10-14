@@ -1,4 +1,4 @@
-- id: crated_design
+- id: crafted_design
   name: Crafted Design
   author: Sandro Mancuso
   description: For experienced developers wanting to get better at designing well-crafted solutions.
@@ -28,7 +28,7 @@
   description: For developers wanting to learn how to build an enterprise system from scratch
   page: /services/training/enterprise-application-development
 
-- id: fabric 
+- id: fabric
   name: Building Reliable Microservices with Microsoft Service Fabric
   author: Steve Lydford & Alessandro Di Gioia
   description: Learn how to build highly available and reliable microservices with Service Fabric and Azure
@@ -39,7 +39,7 @@
   description: For developers that want to embrace NoSQL and Big Data using one of the highest-paying tech skills
   page: /services/training/scaling-with-cassandra
 
-- id: docker 
+- id: docker
   name: Zero to Continous Delivery with Docker
   author: Robert Firek
   description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
@@ -50,7 +50,13 @@
   description: For Java developers wanting to learn Functional Programming with one of the most exciting languages on the JVM
   page: /services/training/scala-for-java-developers
 
-- id: akka 
+- id: akka
   name: Scala Deep Dive with Akka
   description: For developers that want to deepen their Scala knowledge using its most popular toolkit, Akka
   page: /services/training/scala-deep-dive-with-akka
+
+- id: oo_design
+  name: Object Oriented Design Practise
+  author: Franziska Sauerwein
+  description: For experienced developers who want to improve their design skills in object-oriented languages.
+  page: /services/training/oo-design
