@@ -297,3 +297,6 @@ post-related_posts:
    title: Related Blogs
 post-recent_posts:
    title: Recent Blogs
+not-found:
+   title: Sorry, we could not find the page you were looking for. You can <a href="/">go to the landing page</a> or use the menu at the top of the page to navigate to a specific area of the site. 
+   subtitle: Are you looking for any of these links?
