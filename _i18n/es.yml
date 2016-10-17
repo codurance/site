@@ -296,3 +296,6 @@ post-related_posts:
    title: Blogs Relacionados
 post-recent_posts:
    title: Blogs Recientes
+not-found:
+   title: Lo sentimos, no hemos podido encontrar la página que estabas buscando. Puedes <a href="/"> ir a la página de inicio </a> o usar el menú en la parte superior de la página para navegar a un área específica del sitio. 
+   subtitle: ¿Estás buscando algunos de estos enlaces?
