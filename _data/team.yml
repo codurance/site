@@ -69,9 +69,9 @@
 - id: ana
   name: Ana Nogal
   image: /assets/img/custom/team/ana_nogal.jpg
-  role: Apprentice
-  shortDescription: Ana is an experienced software developer with a passion for the web and mobile technology. She has worked as a developer for the majority of her career ...
-  fullDescription: <p>Ana is an experienced software developer with a passion for the web and mobile technology. She has worked as a developer for the majority of her career and has had the opportunity to work in a wide variety of projects, with various languages and technologies.</p><p>Ana joined Codurance as an apprentice to improve her technical skills and put the values of Software Craftsmanship into practice. She is committed to enhancing both her own knowledge and that of the wider software development community.</p>
+  role: Software Craftsman
+  shortDescription: Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C ...
+  fullDescription: <p>Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C. She had the opportunity to work in a wide variety of projects, with various languages and technologies for the past 20 years from client/server to web and mobile applications.</p>
   twitter: anainogal
   github: ananogal
 
@@ -96,7 +96,7 @@
   name: Tomaz Tekavec
   image: /assets/img/custom/team/tomaz_tekavec.jpg
   role: Software Craftsman
-  shortDescription: Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies. 
+  shortDescription: Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies.
   fullDescription: <p>Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies.  Tomaz has over 18 years of experience as a software professional. During his career, he has developed and managed software solutions for many sectors including&#58; banks, hedge funds, clinical biophysics, pharmacy, digital media agencies, government institutions, and NGOs. He works closely with&#58; the business users—creating and refining the product backlog, the development team—helping create and operate a quality product, the individual developers—learning and mentoring to become more effective. Tomaz started his career with Java moving to .NET. He has recently developed an interest in Javascript and CSS.</p>
   twitter: Tomaz_Tekavec
   github: tekavec
@@ -141,36 +141,36 @@
   twitter: bnathyuw
   github: bnathyuw
 
-- id: giulia 
-  name: Giulia Mantuano 
+- id: giulia
+  name: Giulia Mantuano
   image: /assets/img/custom/team/giulia_mantuano.jpg
   role: Apprentice
-  shortDescription: Having worked as Art Director in an integrated communications agency and as design consultant, Giulia has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.  
+  shortDescription: Having worked as Art Director in an integrated communications agency and as design consultant, Giulia has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.
   fullDescription: >
     <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years.</p>
     <p>During her career she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
     <p>Giulia joined Codurance as an Apprentice driven by the desire to apply the Software Craftsmanship mindset and values to the whole product development process.</p>
     <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, backed up by her Integrated Design background and the mastery of User Experience Design skills.</p>
     <p>Giulia bridges stakeholders and development teams: she facilitates their collaboration in designing solutions that balance business needs, technical feasibility and user expectations.</p>
-  twitter: giuliamantuano 
-  github: giuliamantuano 
+  twitter: giuliamantuano
+  github: giuliamantuano
 
-- id: liam 
-  name: Liam Griffin 
+- id: liam
+  name: Liam Griffin
   image: /assets/img/custom/team/liam_griffin.jpg
   role: Software Craftsman
-  shortDescription: Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. 
-  fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p> 
-  twitter: gryffskin 
-  github: gryff 
+  shortDescription: Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions.
+  fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
+  twitter: gryffskin
+  github: gryff
 
-- id: sergio 
+- id: sergio
   name: Sergio Rodrigo Royo
   image: /assets/img/custom/team/sergio.jpg
   role: Software Craftsman
   shortDescription: Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
-  twitter: srodrigoDev 
+  twitter: srodrigoDev
   github: srodrigo
 
 - id: hkoundi
@@ -186,10 +186,10 @@
   name: Alvaro Garcia
   image: /assets/img/custom/team/alvaro_garcia.jpg
   role: Software Craftsman
-  shortDescription: Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process. Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005. 
+  shortDescription: Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process. Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005.
   fullDescription: >
-    <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p> 
-    <p>He enjoys reading and reviewing technology books, providing feedback to the author whenever possible, to create the best experience for the final reader.</p> 
+    <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p>
+    <p>He enjoys reading and reviewing technology books, providing feedback to the author whenever possible, to create the best experience for the final reader.</p>
     <p>Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005.</p>
   twitter: alvarobiz
   github: alvarogarcia7
@@ -204,11 +204,11 @@
   twitter: CarlosMChica
   github: CarlosMChica
 
-- id: chris 
+- id: chris
   name: Chris Jeffery
   image: /assets/img/custom/team/chris_jeffery.jpg
   role: Software Craftsman
   shortDescription: Chris is a front end developer with more than five years experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.
   fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavasSript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
-  github: chrisjeffery 
+  github: chrisjeffery
