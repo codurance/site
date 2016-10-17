@@ -16,13 +16,13 @@ tags:
 
 ---
 
-Scala can be used to build Android applications, as an alternative to Java and Kotlin. Unlike them, setting up an Android project in Scala with SBT is not straightforward, and can give us some headaches to get it right. To show how this can be done, we are going to create new project template using the Android SDK Plugin for SBT.
+Scala can be used to build Android applications, as an alternative to Java or Kotlin. Unlike them, setting up an Android project in Scala with SBT is not straightforward, and can give us some headaches to get it right. To show how this can be done, we are going to create new project template using the Android SDK Plugin for SBT.
 
 ##Required tools
 In order to develop Android apps in Scala, you need a minimum set of tools: [SBT](http://www.scala-sbt.org/) and [Android SDK](https://developer.android.com/studio/index.html).
 
 ###Install SBT
-You can install SBT on Mac OSX using [brew](http://brew.sh/).
+You can install SBT on Mac OSX using [Homebrew](http://brew.sh/).
 
 ```bash
 $ brew install sbt
@@ -31,7 +31,7 @@ $ brew install sbt
 To install SBT on other operating systems, you can follow the [instructions](http://www.scala-sbt.org/0.13/docs/Setup.html) on the official documentation.
 
 ###Install the Android SDK
-You can just download the latest version of the Android SDK from the [Developers website](https://developer.android.com/studio/index.html) and follow the installation instructions.
+You can just download the latest version of the Android SDK from the [Developer website](https://developer.android.com/studio/index.html) and follow the installation instructions.
 Alternatively, you can install [Android Studio](https://developer.android.com/studio/index.html), which comes with the Android SDK and emulators.
 
 ###Set the ANDROID_HOME environment variable
@@ -41,7 +41,7 @@ On Mac OSX/Linux, you can just export the variable
 $ export ANDROID_HOME=path_to_your_android_sdk
 ```
 
-or add it to your bash_rc or bash_profile.
+or add it to your `bash_rc` or `bash_profile`.
 
 NOTE: On Mac OSX, if Android Studio is installed, the Android SDK is usually located at `/Users/your_user_name/Library/Android/sdk/`
 
@@ -110,9 +110,9 @@ my-project/
 |-- lint.xml
 ```
 
-The SBT plugin creates a project structure with the minimum files needed to run an Android project, plus a setup for running instrumentation tests. Notice that the test classes generated are in Java, and the Main Activity is in Scala.
+The SBT plugin creates a project structure with the minimum files needed to run an Android project, plus a setup for running instrumentation tests. Notice that the test classes generated are in Java, and the `MainActivity` is in Scala.
 
-The most interesting file is build.sbt. I've added some comments to explain what's the purpose of each line.
+The most interesting file is `build.sbt`. I've added some comments to explain what's the purpose of each line.
 
 ```java
 // Version of the Scala runtime
@@ -149,7 +149,7 @@ libraryDependencies ++=
 We don't even need to use the SBT plugin to generate this template. If we prefer to craft our own minimum project, we could just create the project structure for SBT and Android manually, and add only the setup that we need.
 
 ##Run the project
-You will need to have an [Android device connected](https://developer.android.com/studio/run/device.html) or an [emulator running](https://developer.android.com/studio/run/emulator.html).
+You will need to have an [connected Android device](https://developer.android.com/studio/run/device.html) or an [running emulator](https://developer.android.com/studio/run/emulator.html).
 
 Once this is done, the final step is to run the application from sbt:
 
@@ -164,7 +164,7 @@ $ sbt android:run
 ```
 
 ##More options on build.sbt
-There are other interesting options that can be included in the build.sbt file. A few of them are:
+There are other interesting options that can be included in the `build.sbt` file. A few of them are:
 
 ```java
 // Application name
@@ -213,5 +213,4 @@ Finally, click on `+`, create a new `SBT` task, and add `android:run`. Leave the
 From now, you can run the application in the same way as any app written in Java or Kotlin.
 
 ##Conclusion
-Setting up Scala and SBT on Android is not as straightforward as setting up Java or Kotlin and Gradle, but can it be done. This opens the door to a new world of possibilities offered by Scala and its powerful features and build system. Kotlin still looks like a better fit for Android (easier setup, better IDE support, and smaller runtime, among others), but having the possibility of using Scala and SBT can bring developers who build their backends in Scala, or want to use high level Functional Programming features to build complex apps.
-
+Kotlin still looks like a better fit for Android: Among other benefits, it has an easier setup, better IDE support and smaller runtime. However, the possibility of using Scala and SBT can allow developers who build their backends in Scala or want to use high level Functional Programming features to build complex apps.
