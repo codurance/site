@@ -224,6 +224,7 @@ events-lscc:
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
 careers:
    title: Trabaja con nosotros
+   email: join-us@codurance.es
 careers-how_we_grow:
    title: Cómo crecemos?
    description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad, y para presentar en conferencias.</p>
@@ -249,7 +250,7 @@ careers-join-apprentice:
    link_title: Únete a nuestros Apprentice-craftsmen 
 careers-join-how_to_apply:
    title: Cómo unirte?
-   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:hello@codurance.es">hello@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
+   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:join-us@codurance.es">join-us@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
            <ul>
           <li>¿Qué significa para ti Software Craftsmanship?</li>
           <li>¿Con qué tecnologías y prácticas te encuentras cómodo?</li>
