@@ -2,7 +2,6 @@
   name: Sandro Mancuso
   image: /assets/img/custom/team/sandro_mancuso.jpg
   role: Software Craftsman and Co-Founder
-  shortDescription: Software craftsman, author, and founder of the London Software Craftsmanship Community (LSCC), Sandro has been...
   fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
   github: sandromancuso
@@ -11,7 +10,6 @@
   name: Mashooq Badar
   image: /assets/img/custom/team/mash_badar.jpg
   role: Software Craftsman and Co-Founder
-  shortDescription: Mash is a software craftsman with extensive experience in developing innovative solutions and running large scale enterprise projects ...
   fullDescription: <p>Mash is a software craftsman with extensive experience in developing innovative solutions and running large scale enterprise projects. For many years he was a Principal Consultant leading some of the most diverse projects for clients in Government, Media and Finance. Before Codurance Mash was a Director at UBS leading a 4 million pounds a year project with 6 development teams situated in London and Krakow. He started the project from scratch, building the teams a developer at a time.</p><p>Mash is an associated organiser for LSCC, involved since the beginning helping with organisation and running hands-on sessions. Mash has a passion for developing; teams that are skillful and passionate, solutions that are innovative and simple, and software that is aligned to it's business and flexible to change.</p>
   twitter: mashooq
   github: mashooq
@@ -20,7 +18,6 @@
   name: Pedro Santos
   image: /assets/img/custom/team/pedro_santos.jpg
   role: Software Craftsman
-  shortDescription: Pedro is a software craftsman with over twenty years experience. He's passionate about the web, distributed systems and mobile technology and a strong advocate of agile practices and the software craftsmanship movement ...
   fullDescription: >
     <p>Pedro is a software craftsman with over twenty years experience. Passionate about the web, distributed systems and mobile technology. Advocate of agile practices and the software craftsmanship movement. Has been key in bringing Software Craftsmanship practices into several organizations.</p><p>Member of developer groups such as: London Software Craftsmanship Community, NSCoders and Agile Barcelona. Frequent speaker on subjects such as: Software Craftsmanship, web and mobile solutions.</p>
   twitter: pedromsantos
@@ -30,8 +27,6 @@
   name: Robert Firek
   image: /assets/img/custom/team/robert_firek.jpg
   role: Software Craftsman
-  shortDescription: >
-      Robert Firek is a software developer who has tasted many different flavours of programming. His broad range of experiences has helped to deliver quality software in many companies and organisations.
   fullDescription: >
       <p>Robert Firek is a software developer who has tasted many different flavours of programming. His broad range of experiences has helped to deliver quality software in many companies and organisations. He strives to create software according to the rule "Simplicity is the final achievement". As a Waterfall apostate, he encourages people to embrace Agile techniques.</p>
       <p>Robert is a member of the London Java Community and Wrocław Java User Group.</p>
@@ -42,7 +37,6 @@
   name: Robert Taylor
   image: /assets/img/custom/team/rob_taylor.jpg
   role: Software Craftsman
-  shortDescription: Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects...
   fullDescription: <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p><p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p><p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
   twitter: roberttaylor426
   github: roberttaylor426
@@ -51,7 +45,6 @@
   name: Steve Lydford
   image: /assets/img/custom/team/steve_lydford.jpg
   role: Software Craftsman
-  shortDescription: Steve is a software craftsman and author with over 15 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum ...
   fullDescription: >
       <p>Steve is a software craftsman and author with over 15 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including travel and tourism, education, media, government and healthcare, developing systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
@@ -61,7 +54,6 @@
   name: Toby Retallick
   image: /assets/img/custom/team/toby_retallick.jpg
   role: Software Craftsman
-  shortDescription: Toby joined Codurance as an Apprentice Software Craftsman in September 2014 and graduated as a Software Craftsman in 2016 ...
   fullDescription: <p>Between 2007 and 2014 Toby worked client-side in marketing and digital roles. He also volunteered as a digital consultant for an environmental agency and has spoken at industry events. Toby's growing interest in the technology he was using on a daily basis lead him to completing an intensive coding bootcamp at Makers Academy in early 2014, before joining the team at Codurance.</p>
   twitter: tobyret
   github: tobyret
@@ -70,7 +62,6 @@
   name: Ana Nogal
   image: /assets/img/custom/team/ana_nogal.jpg
   role: Software Craftsman
-  shortDescription: Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C ...
   fullDescription: <p>Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C. She had the opportunity to work in a wide variety of projects, with various languages and technologies for the past 20 years from client/server to web and mobile applications.</p>
   twitter: anainogal
   github: ananogal
@@ -79,7 +70,6 @@
   name: Franziska Sauerwein
   image: /assets/img/custom/team/franzi_sauerwein.jpg
   role: Software Craftswoman
-  shortDescription: Franziska has worked as a software developer and consultant for three years before joining Codurance. She is always trying to improve her skils and share knowledge ...
   fullDescription: <p>Franziska has worked as a software developer and consultant for three years before moving to London to join Codurance as an apprentice. Her passions include Test Driven Development, Refactoring, XP techniques and high quality software development.  She is always trying to improve her skills and share knowledge.</p> <p>As an active member of the European Software Craftsmanship community she loves to participate in unconferences and organizes code retreats, hackathons, coding dojos as well as tech talks.  She aims to use her skills and creativity to develop software that is reliable, easy to adapt and doing what it is supposed to do.</p>
   twitter: singsalad
   github: franziskas
@@ -88,7 +78,6 @@
   name: Ana Rita Marchina
   image: /assets/img/custom/team/ana_celli.jpg
   role: Marketing Exec / Office Manager
-  shortDescription: Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work ...
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
 
@@ -96,7 +85,6 @@
   name: Tomaz Tekavec
   image: /assets/img/custom/team/tomaz_tekavec.jpg
   role: Software Craftsman
-  shortDescription: Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies.
   fullDescription: <p>Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies.  Tomaz has over 18 years of experience as a software professional. During his career, he has developed and managed software solutions for many sectors including&#58; banks, hedge funds, clinical biophysics, pharmacy, digital media agencies, government institutions, and NGOs. He works closely with&#58; the business users—creating and refining the product backlog, the development team—helping create and operate a quality product, the individual developers—learning and mentoring to become more effective. Tomaz started his career with Java moving to .NET. He has recently developed an interest in Javascript and CSS.</p>
   twitter: Tomaz_Tekavec
   github: tekavec
@@ -105,7 +93,6 @@
   name: Mani Sarkar
   image: /assets/img/custom/team/mani_sarkar.jpg
   role: Apprentice
-  shortDescription: Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project...
   fullDescription: <p>Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project. He is an JCP member, and a contributor to OpenJDK. As a developer he has many years of experience working on a diverse set of projects. In his free time he likes to work on open-source projects, write blogs and speak at conferences. Mani strongly prescribes to the Software Craftsmanship and XP values. He works hard to better himself in practices such as TDD, BDD, Simple Design and Pair Programming.</p>
   twitter: theNeomatrix369
   github: neomatrix369
@@ -115,7 +102,6 @@
   name: Alessandro Di Gioia
   image: /assets/img/custom/team/alex_digioia.jpg
   role: Software Craftsman
-  shortDescription: Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming...
   fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
   twitter: Parajao
   github: Parajao
@@ -124,7 +110,6 @@
   name: David Hatanian
   image: /assets/img/custom/team/david_hatanian.jpg
   role: Software Craftsman
-  shortDescription: David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.
   fullDescription: <p>David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.</p><p>Before coming to London, David worked in Morocco, India and Vietnam.</p><p>David believes in simplicity as a core principle for any development project, and in constantly learning and improving.</p>
   twitter: DHatanian
   github: dhatanian
@@ -133,7 +118,6 @@
   name: Matthew Butt
   image: /assets/img/custom/team/matthew_butt.jpg
   role: Software Craftsman
-  shortDescription: Matthew believes that people and their relationships should be at the heart of our work as software developers, and is passionate about teaching excellence in our field.
   fullDescription: >
     <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since he started working with code in 2000 he has always focused on creating well-crafted software, and building close collaborative relationships within and beyond the technical team.</p>
     <p>Recently Matthew has worked primarily on the .NET platform, and he is experienced in giving new life to legacy code written in C# and VB, as well as crafting projects that take advantage of the latest developments on the platform.</p>
@@ -145,7 +129,6 @@
   name: Giulia Mantuano
   image: /assets/img/custom/team/giulia_mantuano.jpg
   role: Apprentice
-  shortDescription: Having worked as Art Director in an integrated communications agency and as design consultant, Giulia has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.
   fullDescription: >
     <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years.</p>
     <p>During her career she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
@@ -159,7 +142,6 @@
   name: Liam Griffin
   image: /assets/img/custom/team/liam_griffin.jpg
   role: Software Craftsman
-  shortDescription: Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions.
   fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
   twitter: gryffskin
   github: gryff
@@ -168,7 +150,6 @@
   name: Sergio Rodrigo Royo
   image: /assets/img/custom/team/sergio.jpg
   role: Software Craftsman
-  shortDescription: Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
   twitter: srodrigoDev
   github: srodrigo
@@ -177,7 +158,6 @@
   name: Halima Koundi
   image: /assets/img/custom/team/halima_koundi.jpg
   role: Apprentice
-  shortDescription: During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.
   fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance for an apprenticeship, Halima is leveling up her engineering skills and embracing the values of software craftsmanship, seeking to become a skilled professional that delivers value building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing more diversity to the tech community.</p>
   twitter: hkoundi
   github: halimakoundi
@@ -186,7 +166,6 @@
   name: Alvaro Garcia
   image: /assets/img/custom/team/alvaro_garcia.jpg
   role: Software Craftsman
-  shortDescription: Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process. Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005.
   fullDescription: >
     <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p>
     <p>He enjoys reading and reviewing technology books, providing feedback to the author whenever possible, to create the best experience for the final reader.</p>
@@ -198,7 +177,6 @@
   name: Carlos Morera de la Chica
   image: /assets/img/custom/team/carlos_morera_de_la_chica.jpg
   role: Software Craftsman
-  shortDescription: Carlos is a developer who is constantly looking for new ways to master the art of crafting software. He firmly believes in the software craftsmanship principles and bases his journey towards mastery on them.
   fullDescription: <p>Carlos is a developer who is constantly looking for new ways to master the art of crafting software. He firmly believes in the software craftsmanship principles and bases his journey towards mastery on them.</p>
     <p>He has been working professionally as an Android developer for more than 3 years. His current focus is on mastering a new set of skills that will let him continue to grow and make progress in his career.</p>
   twitter: CarlosMChica
@@ -208,7 +186,6 @@
   name: Chris Jeffery
   image: /assets/img/custom/team/chris_jeffery.jpg
   role: Software Craftsman
-  shortDescription: Chris is a front end developer with more than five years experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.
   fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavasSript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
   github: chrisjeffery
@@ -217,7 +194,6 @@
   name: Sean Newham
   image: /assets/img/custom/team/sean_newham.jpg
   role: Software Craftsman
-  shortDescription: Sean became interested in Software Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by...
   fullDescription: >
     <p>Sean became interested in Software Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by a variety of interesting problems. The top three are: 
     <ul>
