@@ -219,7 +219,13 @@
   role: Software Craftsman
   shortDescription: Sean became involved in Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by...
   fullDescription: >
-    <p>Sean became involved in Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by a variety of problems. The current three are organisational structures and how they hinder us from making awesome, usable software; fixing teams, projects and software that are going badly and making an api that encourages good development practices from consumers.</p> 
-    <p>He believes in the devops philosophy and never leaves home without at least one way to write F# (his current laptop has 3 - mono, .net core and visual studio). His current interest in machine learning, due to an unhealthy obsession with matrices that started in his degree in Natural Sciences, specialising in Material Science and Metallurgy.</p>
+    <p>Sean became interested in Software Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by a variety of interesting problems. The top three are: 
+    <ul>
+      <li>organisational structures and how they can help or hinder us from making awesome, usable software</li>
+      <li>fixing teams, projects and software that are going badly</li>
+      <li>making an api that encourages good development practices from consumers</li>
+    </ul>
+    </p> 
+    <p>He believes in the devops philosophy, and never leaves home without at least one way to develop F# (his current laptop has 3 - mono, .net core and visual studio). His current interest is machine learning, due to an unhealthy obsession with matrices that started in his degree in Natural Sciences, specialising in Material Science and Metallurgy.</p>  
   twitter: seannewham
   github: seanseviltwin
