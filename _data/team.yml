@@ -212,3 +212,14 @@
   fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavasSript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
   github: chrisjeffery
+
+- id: sean
+  name: Sean Newham
+  image: /assets/img/custom/team/sean_newham.jpg
+  role: Software Craftsman
+  shortDescription: Sean became involved in Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by...
+  fullDescription: >
+    <p>Sean became involved in Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by a variety of problems. The current three are organisational structures and how they hinder us from making awesome, usable software; fixing teams, projects and software that are going badly and making an api that encourages good development practices from consumers.</p> 
+    <p>He believes in the devops philosophy and never leaves home without at least one way to write F# (his current laptop has 3 - mono, .net core and visual studio). His current interest in machine learning, due to an unhealthy obsession with matrices that started in his degree in Natural Sciences, specialising in Material Science and Metallurgy.</p>
+  twitter: seannewham
+  github: seanseviltwin
