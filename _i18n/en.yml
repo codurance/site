@@ -218,6 +218,7 @@ clients-partners:
    skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
    jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
+   satalia_description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016. 
 events-lscc:
    title: London Software Craftsmanship Community
    link_title: Find out more
