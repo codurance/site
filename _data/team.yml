@@ -157,8 +157,8 @@
 - id: hkoundi
   name: Halima Koundi
   image: /assets/img/custom/team/halima_koundi.jpg
-  role: Apprentice
-  fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance for an apprenticeship, Halima is leveling up her engineering skills and embracing the values of software craftsmanship, seeking to become a skilled professional that delivers value building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing more diversity to the tech community.</p>
+  role: Software Craftswoman
+  fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance, Halima has levelled up her engineering skills and embraced the values of software craftsmanship. As a skilled professional she aims at delivering value by building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing diversity to the tech community.</p>
   twitter: hkoundi
   github: halimakoundi
 
