@@ -6,6 +6,8 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 ### Installing on the MacOSX / Linux
 
+Note: you might have to [update Ruby to 2.3](http://stackoverflow.com/a/33883667) first.
+
 Run the below commands to install the necessary gems (you might need to prefix the commands with `sudo`):
 
 ```
@@ -78,8 +80,19 @@ If you want to push code without deploying a new version of the site, make sure 
 
 # Flight Rules
 
+### Adding a post
+
+  * Remember to add the tag `asset-type: post` to the post metadata
+
 ### Adding an abstract to a post
 
   * See [Jenkins example post](/site/blob/master/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
   * Note: comments can only be single line
   * Note: Even if they are too long, they'll be cut to 30 words
+
+### Adding a video to the publications
+
+  * Add an md file to the folder: `videos/_posts` (You can use older videos post as a template)
+  * Do not forget the attribute `video-url`, for youtube videos, use following format: https://www.youtube.com/embed/<video-id>
+  * Add an image to the video, for youtube videos, make a screenshot [here](http://youtubescreenshot.com/), the image is used on the home page and the carousel. The image is to be saved under `/assets/img/custom/videos/`
+

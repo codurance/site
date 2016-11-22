@@ -23,12 +23,7 @@
 .clients-page img {
 	padding: 4px;
 	margin: 5px 0; 
-	border: solid 1px #eee;
-	background: #fafafa;
-}
-
-.clients-page:hover img {
-	border-color: #bbb;
+	background: white;
 }
 
 @media (max-width: 992px) { 

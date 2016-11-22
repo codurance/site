@@ -3,25 +3,96 @@ layout: default
 permalink: /404.html
 ---
 <div class="container">
-    <!--Error Block-->
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="error-v1">
-                <span class="error-v1-title">404</span>
-                <span>Page not found!</span>
-                <p>The requested URL was not found. </p>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Page not found</h1>
+
+      <p>{% t not-found.title %}</p>
+
+      <div id="search-suggestions" style="display:none;">
+        <b>{% t not-found.subtitle %}</b>
+        <ul id="search-suggestions-list">
+        <ul>
+      </div>
+
     </div>
-    <!--End Error Block-->
+  </div>
+  <img src="/assets/img/custom/404.png" class="img img-center img-responsive style-screengrab" style="margin-top:1em; margin-bottom:1em;"></img>
 </div>
 
-<!-- send a 404 event to google analytics.
-	Source: https://gist.github.com/pwenzel/eb4f04552ef410f60406 -->
-<script>
-if(window.googleAnalyticsEvents){
-    window.googleAnalyticsEvents.functions.push( function(environment) {
-        environment.ga('send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer, {'nonInteraction': 1});
-    });
-}
-</script>
+<!-- send a 404 event to Google Analytics-->
+  <script>
+    ga('send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer);
+  </script>
+
+<!-- find suggestions based on the URL accessed-->
+  <script type="text/javascript">
+    var index, search_items={};
+    var MAX_RESULT_COUNT = 5;
+    var jqueryLoaded = false, lunrLoaded = false;
+
+    function addResultsToPage(results){
+      $('#search-suggestions-list li').remove();
+      results.forEach(function(result){
+        $('#search-suggestions-list').append(
+            $('<li>')
+            .append($('<a>')
+              .attr('href',result.url)
+              .text(result.title)
+            )
+        );
+      });
+      $('#search-suggestions').show();
+    }
+
+    function searchMatchingPages(term){
+      var results = index.search(term)
+                    .map(function(search_result){return {url:search_result.ref, title:search_items[search_result.ref]}})
+                    .slice(0, MAX_RESULT_COUNT);
+
+      if(results.length>0){
+        addResultsToPage(results);
+      }
+    }
+
+    function addToSearchItems(url, title){
+      if(url && url.trim()!='' && title && title.trim()!=''){
+        search_items[url] = title;
+        index.add({ url:url, title:title });
+      }
+    }
+
+    function searchIfReady(){
+      if(lunrLoaded && jqueryLoaded){
+        searchMatchingPages(window.location.pathname);
+      }
+    }
+
+    function onLunrLoaded(){
+      index = lunr(function () {
+        this.field('url', {boost: 10});
+        this.field('title');
+        this.ref('url');
+      });
+
+      {% for page in site.pages %}
+      addToSearchItems('{{page.url | replace: "'", "\'" }}','{{page.title | replace: "'", "\'" }}');
+      {% endfor %}
+      
+      {% for post in site.posts %}
+      addToSearchItems('{{post.url | replace: "'", "\'" }}','{{post.title | replace: "'", "\'" }}');
+      {% endfor %}
+     
+      lunrLoaded = true;
+      searchIfReady(); 
+    }
+
+    function onJqueryLoaded(){
+      jqueryLoaded = true;
+      searchIfReady();
+    }
+  
+  </script>
+
+  <script src='/assets/plugins/jquery/jquery.min.js' type="text/javascript" onload="onJqueryLoaded()" ></script>
+  <script src='/assets/js/lunr.min.js' type="text/javascript" onload="onLunrLoaded()" ></script>

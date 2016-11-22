@@ -10,7 +10,7 @@ image:
 tags:
 - naming
 - philosophy
-- expresiveness
+- expressiveness
 
 ---
 

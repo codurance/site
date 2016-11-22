@@ -215,14 +215,17 @@ clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
    link_title: Read more ...
+   skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
    jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
+   satalia_description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016. 
 events-lscc:
    title: London Software Craftsmanship Community
    link_title: Find out more
    api_endpoint: https://api.meetup.com/london-software-craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=23964a489b632a356d3a23aaafa95dd93fb0d1b3
 careers:
    title: Come work with us
+   email: join-us@codurance.com
 careers-how_we_grow:
    title: How we grow?
    description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -249,7 +252,7 @@ careers-join-apprentice:
    link_title: Apply to join our Apprentice-craftsmen 
 careers-join-how_to_apply:
    title: How to apply?
-   description: <p>If you think Codurance is for you then email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a> and tell us your story. If you get stuck then here are some suggestions:</p>
+   description: <p>If you think Codurance is for you then email us at <a href="mailto:join-us@codurance.com">join-us@codurance.com</a> and tell us your story. If you get stuck then here are some suggestions:</p>
         <ul>
           <li>What does Software Craftsmanship mean to you?</li>
           <li>What technologies and practices you are comfortable with?</li>
@@ -298,3 +301,6 @@ post-recent_posts:
    title: Recent Blogs
 the-software-craftsman:
    title: The Software Craftsman
+not-found:
+   title: Sorry, we could not find the page you were looking for. You can <a href="/">go to the landing page</a> or use the menu at the top of the page to navigate to a specific area of the site. 
+   subtitle: Are you looking for any of these links?

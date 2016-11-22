@@ -215,14 +215,17 @@ clients-partners:
    title: Socios
    subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes, y nosotros ayudamos a nuestros socios a conseguir lo mismo.
    link_title: Más información ...
+   skillsmatter_description: Skills Matter, con más de 70.000 miembros, fue fundada para ayudar a impulsar la innovación en la ingeniería de software reuniendo a desarrolladores inteligentes y creativos para aprender y compartir nuevas habilidades, descubrir nuevas tecnologías y evolucionar las prácticas e ideas. Hemos sido socios con Skills Matter desde nuestros inicios. Juntos, organizamos eventos para la comunidad, así como cursos de formación públicos y privados.
    jetbrains_description: Jetbrains es conocido por sus herramientas de desarrollo de software. Ayudamos a nuestros clientes a sacar el máximo partido de estas herramientas, apoyando las prácticas XP y la calidad de software. Somos expertos en sus herramientas, tales como Team City, ReSharper, e IntelliJ IDEA. También ayudamos a nuestros clientes a adoptar el lenguaje de programación Kotlin.
    github_description: Github es una conocida plataforma de hosting de proyectos online. Entendemos que utilizar un repositorio de código distribuido como Git no es sólo una cuestión de habilidades técnicas, sino también un cambio de paradigma en cómo colaboran los equipos de desarrollo de software. Ayudamos a nuestros clientes a adoptar Github y Github Enterprise.
+   satalia_description: Satalia resuelve problemas complejos utilizando ciencia avanzada de datos, optimización y tecnologías de inteligencia artificial. Construyen soluciones completas a gran escala en áreas que incluyen rutas, horarios, planificación y verificación. Reconocidos líderes en IA, Satalia ha sido galardonada con el Gartner Cool Vendor 2016. 
 events-lscc:
    title: Comunidad de Software Craftsmanship Barcelona
    link_title: Más información
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
 careers:
    title: Trabaja con nosotros
+   email: join-us@codurance.es
 careers-how_we_grow:
    title: Cómo crecemos?
    description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad, y para presentar en conferencias.</p>
@@ -248,7 +251,7 @@ careers-join-apprentice:
    link_title: Únete a nuestros Apprentice-craftsmen 
 careers-join-how_to_apply:
    title: Cómo unirte?
-   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:hello@codurance.es">hello@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
+   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:join-us@codurance.es">join-us@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
            <ul>
           <li>¿Qué significa para ti Software Craftsmanship?</li>
           <li>¿Con qué tecnologías y prácticas te encuentras cómodo?</li>
@@ -296,4 +299,7 @@ post-related_posts:
 post-recent_posts:
    title: Blogs Recientes
 the-software-craftsman:
-   title: The Software Craftsman   
+   title: The Software Craftsman
+not-found:
+   title: Lo sentimos, no hemos podido encontrar la página que estabas buscando. Puedes <a href="/"> ir a la página de inicio </a> o usar el menú en la parte superior de la página para navegar a un área específica del sitio. 
+   subtitle: ¿Estás buscando algunos de estos enlaces?
