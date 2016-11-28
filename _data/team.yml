@@ -205,3 +205,14 @@
     <p>He believes in the devops philosophy, and never leaves home without at least one way to develop F# (his current laptop has 3 - mono, .net core and visual studio). His current interest is machine learning, due to an unhealthy obsession with matrices that started some time during his uni years.</p>  
   twitter: seannewham
   github: seanseviltwin
+
+- id: Guillem
+  name: Guillem Fernandez
+  image: /assets/img/custom/team/guillem_fernandez.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Guillem is a software developer that believes in creating code with dedication, time and care. Passionate about mobile development, has been bringing good practices and well crafted software to companies that wanted to move to mobile for the last seven years.</p>
+    <p>Coming from a C++ background moved to Objective-C and now to Swift. He loves to build tools and utilities to make developers work easier and more reliable.</p>
+    <p>Now it's time to bring software craftmanship to Swift mobile, desktop and server.</p>
+  twitter: guillemf
+  github: guillemf
