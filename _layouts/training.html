@@ -20,10 +20,10 @@ title: Training
                     <h2>Talk to us about your training needs</h2>
                 </div>
 
-                <form id="contact" class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
+                <form id="contact" class="sky-form" action="https://vexywjlmmd.execute-api.eu-west-1.amazonaws.com/api/emailer">
                     <input type="hidden" name="_next" value="/aboutus/thanks"/>
                     <input type="hidden" name="_subject" value="Codurance Training"/>
-                    <input type="hidden" id="TrainingUrl" name="TrainingUrl" value=""/>
+                    <input type="hidden" name="to" value="hello@codurance.com"/>
 
                     <div class="row margin-bottom-20">
                         <div class="col-md-6">
@@ -63,6 +63,31 @@ title: Training
     </div>
 </div>
 <script type="text/javascript">
-    document.getElementById('TrainingUrl').value = window.location.href;
+      function onJQueryLoaded() {
+	      $("#contact").submit(function(event) {
+		      /* stop form from submitting normally */
+		      event.preventDefault();
+
+		      var message = 
+			      'Message: ' + $('[name=body]').val() + 
+			      ' <br/> Desired start date: ' +  $('[name=start_date]').val() + 
+			      ' <br/> Number of participants: ' + $('[name=participants]').val();
+
+		      var body = {	
+			      to: $('[name=to]').val(),
+			      name: $('[name=name]').val(), 
+			      subject:  $('[name=_subject]').val(),
+			      email: $('[name=_replyto]').val(),
+			      message: message
+		      };
+
+		      var $form = $(this);
+		      var url = $form.attr('action');
+		      var posting = $.post(url, JSON.stringify(body));
+		      posting.done(function(data) {
+			      window.location = $('[name=_next]').val();
+		      });
+	      });
+      }
 </script>
 
