@@ -20,5 +20,8 @@
         gaEvents.functions.forEach(function(fireEvent){
             fireEvent(gaEvents.environment);
         });
+	if (typeof onJQueryLoaded === 'function') {
+	   onJQueryLoaded();
+	}
     });
 </script>
