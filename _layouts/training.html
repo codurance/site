@@ -80,12 +80,18 @@ title: Training
 			      email: $('[name=_replyto]').val(),
 			      message: message
 		      };
-
+		      
 		      var $form = $(this);
 		      var url = $form.attr('action');
-		      var posting = $.post(url, JSON.stringify(body));
-		      posting.done(function(data) {
-			      window.location = $('[name=_next]').val();
+		      $.ajax({
+			      type: "POST",
+			      url: url,
+			      data: JSON.stringify(body),
+			      success: function(data) {
+				      window.location = $('[name=_next]').val();
+			      },
+			      dataType: "json",
+			      contentType: "application/json"
 		      });
 	      });
       }
