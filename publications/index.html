@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Publications
+pagination:
+  enabled: true
+  collection: posts 
 ---
 
 <div class="container content-md">
@@ -22,13 +25,12 @@ title: Publications
                     </li>
                     {% endif %}
 
-
                     {% for page in (1..paginator.total_pages) %}
                     <li {% if page == paginator.page %} class="active" {% endif %}>
                     {% if page == 1 %}
-                        <a href="{{ '/blog' | replace: '//', '/' }}">{{ page }}</a>
+                        <a href="{{ '/publications' }}">{{ page }}</a>
                     {% else %}
-                        <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                        <a href="{{ '/publications/page:num' | replace: ':num', page }}">{{ page }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}

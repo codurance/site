@@ -1,5 +1,6 @@
 <div class="row blog-boxes margin-bottom-40">
-	{% for post in site.categories.events | limit:3 %}
+  {% assign events = site.events | reverse %}
+	{% for post in events | limit:3 %}
 	<div class="col-md-4 md-margin-bottom-40">
 		<div class="blog-box homepage-blog-thumb">
 			<a href="{{ post.event-page-url }}">

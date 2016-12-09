@@ -1,8 +1,9 @@
 <div class="owl-video-carousel">
 {% assign numberOfElements = 0 %}
-{% assign arraySize = site.categories.videos | size %}
+{% assign videos = site.videos %}
+{% assign arraySize = videos | size %}
 {% assign nbElementDisplayed = 0 %}
-{% for post in site.categories.videos %}
+{% for post in videos %}
 	{% assign numberOfElements = numberOfElements | plus: 1 %}
         {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
 	{% if numberOfElements == 1 %}
