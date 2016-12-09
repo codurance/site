@@ -1,9 +1,9 @@
 <div class="container content-md">
 
   <ul class="breadcrumb">
-    <li {% if include.filter == '' %} class="active" {% endif %}><a href="/publications">All</a></li>
-    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="/publications/posts">Posts</a></li>
-    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="/publications/videos">Videos</a></li>
+    <li {% if include.filter == '' %} class="active" {% endif %}><a href="/publications">{% t publications-all.title %}</a></li>
+    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="/publications/posts">{% t publications-posts.title %}</a></li>
+    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="/publications/videos">{% t publications-videos.title %}</a></li>
   </ul>
 
     <div class="row">
@@ -49,10 +49,7 @@
         <!-- Right sidebar -->
         <div class="col-md-3">
 	<div class="posts margin-bottom-40">
-                <div class="headline-v2 bg-color-light">
-			<h2>{% t publications-videos.title  %}</h2>
-		</div>
-		{% include all_videos.html %}
+    {% include latest_publications.html publication=include.filter %}
 	</div>
 	<div class="posts margin-bottom-40">
                 <div class="headline-v2 bg-color-light">
