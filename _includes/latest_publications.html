@@ -1,9 +1,9 @@
 {% if include.publication == 'videos' %}
-{% capture title %} {% t latest-publications.posts %} {% endcapture %}
-{% assign publications = site.posts %}
-{% elsif include.publication == 'posts' %}
 {% capture title %} {% t latest-publications.videos %} {% endcapture %}
 {% assign publications = site.videos %}
+{% elsif include.publication == 'posts' %}
+{% capture title %} {% t latest-publications.posts %} {% endcapture %}
+{% assign publications = site.posts %}
 {% endif %}
 
 <div class="posts margin-bottom-40">
