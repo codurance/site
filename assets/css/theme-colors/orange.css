@@ -638,6 +638,7 @@ blockquote.hero.hero-default:hover {
 /* Breadcrumb
 ------------------------------------*/
 .breadcrumb li.active,
+.breadcrumb > .active > a,
 .breadcrumb li a:hover {
 	color:#e67e22;
 }
