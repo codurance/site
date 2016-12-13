@@ -16,13 +16,13 @@ layout: default
 		<h2>{% t index-activity.title %}</h2>
         </div>
 	<div class="row blog-boxes margin-bottom-40">
-	{% assign blog = site.posts | where:"asset-type","post"  %}
+	{% assign blog = site.posts %}
 	{% include latest_highlights.html param=blog %}
 
-	{% assign video = site.categories.videos  %}
+	{% assign video = site.videos | reverse %}
 	{% include latest_highlights.html param=video %}
 
-	{% assign event = site.categories.events  %}
+	{% assign event = site.events | reverse %}
 	{% include latest_highlights.html param=event %}
 		
 	</div>
@@ -228,7 +228,7 @@ layout: default
 			<h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.title %}</a></h3>
 			<p>{% t index-software_craftsmanship-book.subtitle%}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
-				<li><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.link_title  %}</a></li>
+				<li><a href="/publications/the-software-craftsman">{% t index-software_craftsmanship-book.link_title  %}</a></li>
                         </ul>
                     </div>
                 </div>

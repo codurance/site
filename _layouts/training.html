@@ -20,10 +20,10 @@ title: Training
                     <h2>Talk to us about your training needs</h2>
                 </div>
 
-                <form id="contact" class="sky-form" action="http://formspree.io/hello@codurance.com" method="POST">
+                <form id="contact" class="sky-form" action="https://codurance.com/api/emailer">
                     <input type="hidden" name="_next" value="/aboutus/thanks"/>
                     <input type="hidden" name="_subject" value="Codurance Training"/>
-                    <input type="hidden" id="TrainingUrl" name="TrainingUrl" value=""/>
+                    <input type="hidden" name="to" value="hello@codurance.com"/>
 
                     <div class="row margin-bottom-20">
                         <div class="col-md-6">
@@ -63,6 +63,37 @@ title: Training
     </div>
 </div>
 <script type="text/javascript">
-    document.getElementById('TrainingUrl').value = window.location.href;
+      function onJQueryLoaded() {
+	      $("#contact").submit(function(event) {
+		      /* stop form from submitting normally */
+		      event.preventDefault();
+
+		      var message = 
+			      'Message: ' + $('[name=body]').val() + 
+			      '\n Desired start date: ' +  $('[name=start_date]').val() + 
+			      '\n Number of participants: ' + $('[name=participants]').val();
+
+		      var body = {	
+			      to: $('[name=to]').val(),
+			      name: $('[name=name]').val(), 
+			      subject:  $('[name=_subject]').val(),
+			      email: $('[name=_replyto]').val(),
+			      message: message
+		      };
+		      
+		      var $form = $(this);
+		      var url = $form.attr('action');
+		      $.ajax({
+			      type: "POST",
+			      url: url,
+			      data: JSON.stringify(body),
+			      success: function(data) {
+				      window.location = $('[name=_next]').val();
+			      },
+			      dataType: "json",
+			      contentType: "application/json"
+		      });
+	      });
+      }
 </script>
 

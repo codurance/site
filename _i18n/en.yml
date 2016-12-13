@@ -63,7 +63,7 @@ index-software_craftsmanship:
 index-software_craftsmanship-book:
    title: The Software Craftsman&#58; by our Co-founder Sandro Mancuso
    subtitle: The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.
-   link_title: Discover more on Good Reads ...
+   link_title: Check the book's content
 index-software_craftsmanship-socrates:
    title: Software Craftsmanship Un-Conference&#58; Socrates UK 
    subtitle: We organise Socrates UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
@@ -138,6 +138,10 @@ publications-videos:
 publications-books:
    title: Books
    subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
+publications-all:
+   title: All 
+publications-posts:
+   title: Posts
 publications-tweet_feed:
    title: Latest Tweets
 publications-post:
@@ -216,7 +220,7 @@ clients-partners:
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
    link_title: Read more ...
    skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
-   jetbrains_description: Jetbrains are renowned for their software development tools. We help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
+   jetbrains_description: Jetbrains are renowned for their software development tools. help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
    satalia_description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016. 
 events-lscc:
@@ -299,6 +303,11 @@ post-related_posts:
    title: Related Blogs
 post-recent_posts:
    title: Recent Blogs
+the-software-craftsman:
+   title: The Software Craftsman
 not-found:
    title: Sorry, we could not find the page you were looking for. You can <a href="/">go to the landing page</a> or use the menu at the top of the page to navigate to a specific area of the site. 
    subtitle: Are you looking for any of these links?
+latest-publications:
+  videos: Latest videos
+  posts: Latest posts

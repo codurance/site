@@ -13,24 +13,35 @@ exclude: ["README.md", "_posts_TOFIX", "vendor"]
 
 author_dir: publications/author
 
-tag_page_layout: tag_page
-tag_page_dir: publications/tag
-tag_page_layout: tag
-
-paginate: 10
-paginate_path: "/publications/page:num"
-
 sitename: "Codurance"
 subtitle: "craft at heart"
 email: "hello@codurance.com"
 
+tag_page_layout: tag_page
+tag_page_dir: publications/tag
+tag_page_layout: tag
+
 googleanalytics:
   account: UA-46289079-1
+
+collections:
+  posts:
+    output: true
+  videos:
+    output: true
+  events:
+    output: true
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/page:num"
+  sort_reverse: true 
 
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin settings:

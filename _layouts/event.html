@@ -15,7 +15,7 @@ group:
 		{% endif %}
 		<img class="img-responsive" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
 		{% if page.speaker %}
-			<h3>{{ page.speaker || author_links }}</h3>
+			<h3>{{ page.speaker | author_links }}</h3>
 		{% endif %}
           </div>
           <div class="col-sm-9">
@@ -30,7 +30,7 @@ group:
 					{% endif %}
 				</li>
 				{% if page.speaker %}
-				<li>{% t event.author_title %} {{ page.speaker || author_links }}</li>
+				<li>{% t event.author_title %} {{ page.speaker | author_links }}</li>
 				{% endif %}
 				<li>{% t event.location_title %} </li><li> {{ page.location }}</li>
 				{% endif %}
