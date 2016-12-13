@@ -1041,3 +1041,13 @@ h2.gray-underline:after {
 		float: none;
 	}
 }
+
+
+.latest-publications .item {
+padding: 15px 15px 15px 15px;
+margin-bottom:15px;
+}
+
+.latest-publications .item > h4 {
+margin: 15px 0px 0px 0px;
+}
