@@ -19,10 +19,10 @@ layout: default
 	{% assign blog = site.posts %}
 	{% include latest_highlights.html param=blog %}
 
-	{% assign video = site.videos %}
+	{% assign video = site.videos | reverse %}
 	{% include latest_highlights.html param=video %}
 
-	{% assign event = site.events %}
+	{% assign event = site.events | reverse %}
 	{% include latest_highlights.html param=event %}
 		
 	</div>

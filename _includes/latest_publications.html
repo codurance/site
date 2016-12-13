@@ -1,6 +1,6 @@
 {% if include.publication == 'videos' %}
 {% capture title %} {% t latest-publications.videos %} {% endcapture %}
-{% assign publications = site.videos %}
+{% assign publications = site.videos | reverse %}
 {% elsif include.publication == 'posts' %}
 {% capture title %} {% t latest-publications.posts %} {% endcapture %}
 {% assign publications = site.posts %}
