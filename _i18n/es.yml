@@ -138,6 +138,10 @@ publications-videos:
 publications-books:
    title: Libros
    subtitle: The Software Craftsman&#58; de nuestro co-fundador Sandro Mancuso
+publications-all:
+   title: Todo
+publications-posts:
+   title: Posts
 publications-tweet_feed:
    title: Últimos Tweets
 publications-post:
@@ -303,3 +307,6 @@ the-software-craftsman:
 not-found:
    title: Lo sentimos, no hemos podido encontrar la página que estabas buscando. Puedes <a href="/"> ir a la página de inicio </a> o usar el menú en la parte superior de la página para navegar a un área específica del sitio. 
    subtitle: ¿Estás buscando algunos de estos enlaces?
+latest-publications:
+  videos: Últimos videos
+  posts: Últimos posts
