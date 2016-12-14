@@ -2,7 +2,6 @@
 author:
  - Mashooq Badar
 layout: event
-asset-type: event
 name: london-cto-meetup
 location: "London, United Kingdom"
 image:

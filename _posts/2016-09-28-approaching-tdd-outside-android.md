@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Approaching Outside-in TDD on Android I
 title: 'Approaching Outside-in TDD on Android I'
 author: Carlos Morera de la Chica

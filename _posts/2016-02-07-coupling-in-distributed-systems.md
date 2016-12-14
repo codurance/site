@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Coupling-in-distributed-systems
 title: 'Coupling in distributed systems'
 date: 2016-02-07 00:20:00 +00:00

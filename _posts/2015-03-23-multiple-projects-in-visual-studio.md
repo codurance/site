@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: visual-studio-projects
 title: Multiple projects in Visual Studio solutions considered harmful
 date: 2015-03-23 22:49:00 +00:0

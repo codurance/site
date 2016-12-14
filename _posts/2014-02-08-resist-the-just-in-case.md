@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: resist-just-in-case
 title: Resist the "Just in Case"
 date: 2014-02-08 16:50:00.000000000 +00:00

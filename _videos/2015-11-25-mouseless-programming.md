@@ -1,7 +1,6 @@
 ---
 author: Tomaz Tekavec
 layout: video
-asset-type: video
 name: mouseless-programming
 image:
  src: /assets/img/custom/videos/mouseless-programming-I.png

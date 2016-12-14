@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2010-01-13 14:17:09+00:00
 layout: post
-asset-type: post
 slug: find-the-jar-file-containing-a-class
 title: Find the jar file containing a class
 image:

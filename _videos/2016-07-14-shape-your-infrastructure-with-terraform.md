@@ -1,7 +1,6 @@
 ---
 author: Robert Firek
 layout: video
-asset-type: video
 name: shape-your-infrastructure-with-terraform
 location: "Devoxx Poland"
 image:

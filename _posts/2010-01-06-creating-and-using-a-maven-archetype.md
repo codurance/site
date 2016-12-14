@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2010-01-06 17:43:37+00:00
 layout: post
-asset-type: post
 slug: creating-and-using-a-maven-archetype
 title: Creating and using a maven archetype
 image:

@@ -1,7 +1,6 @@
 ---
 author: Matthew Butt
 layout: video
-asset-type: video
 name: complex-refactoring-in-simple-steps-I
 image:
  src: /assets/img/custom/videos/complexe-refactoring-in-simple-steps-I.jpg

@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: installing-io-language-on-ubuntu
 title: "Installing Io language on Ubuntu"
 date: 2011-10-23 02:15:00 +01:00

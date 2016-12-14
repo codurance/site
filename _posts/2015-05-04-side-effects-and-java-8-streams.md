@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: side-effects-and-java-8-streams
 title: Side effects and Java 8 streams
 date: 2015-05-04 11:22:00 +00:00

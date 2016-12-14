@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: scaling-umbraco-on-windows-azure 
 title: Scaling Umbraco On Windows Azure Part II
 date: 2016-07-03 13:02:00 +00:00

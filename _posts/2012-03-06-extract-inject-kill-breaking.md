@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: extract-inject-kill-breaking
 title: "Extract, Inject, Kill: Breaking hierarchies (part 1)"
 date: 2012-03-06 18:15:00 +00:00

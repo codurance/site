@@ -2,7 +2,6 @@
 author: 
  - Carlos Morera de la Chica
 layout: event
-asset-type: event
 name: global-day-of-code-retreat
 location: "Global Day of Code Retreat 2016, London, United Kingdom"
 image:

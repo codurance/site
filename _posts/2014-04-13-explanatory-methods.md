@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: explanatory-methods
 title: Screencast - Explanatory Methods
 date: 2014-04-13 20:00:00.000000000 +00:00

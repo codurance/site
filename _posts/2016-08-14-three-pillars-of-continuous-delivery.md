@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Three-pillars-of-Continuous-Delivery
 title: 'Three pillars of Continuous Delivery'
 date: 2016-08-14 00:00:00 +00:00

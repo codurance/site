@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: crank-up-the-volume
 title: 'Crank Up The Volume And Forget Your Pomodoros'
 date: 2015-06-04 09:00:00 +01:00

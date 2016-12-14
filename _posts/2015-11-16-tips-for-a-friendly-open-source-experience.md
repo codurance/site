@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Tips-for-a-friendly-open-source-experience
 title: 'Tips for a friendly open source experience'
 date: 2015-11-16 00:20:00 +00:00

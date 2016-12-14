@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: mutual-problems
 title: Mutual Problems
 date: 2016-03-28 00:00:00 +00:00

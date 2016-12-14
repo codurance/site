@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: one-year-of-london-software
 title: "One year of London Software Craftsmanship Community (LSCC)"
 date: 2011-08-20 01:03:00 +01:00

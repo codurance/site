@@ -1,7 +1,6 @@
 ---
 author: Samir Talwar
 layout: video
-asset-type: video
 name: 4-rules-of-simple-design
 location: " I T.A.K.E. Unconference- Bucharest, Romania"
 image:

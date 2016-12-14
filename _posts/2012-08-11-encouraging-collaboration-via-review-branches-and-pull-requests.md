@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2012-08-11 18:04:02+00:00
 layout: post
-asset-type: post
 slug: encouraging-collaboration-via-review-branches-and-pull-requests
 title: Encouraging Collaboration via Review Branches and Pull Requests
 wordpress_id: 196

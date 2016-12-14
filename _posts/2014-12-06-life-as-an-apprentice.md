@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: what-s_it-like-to-be-a-Codurance-Apprentice
 title: What is it like to be a Codurance Apprentice?
 date: 2014-12-06 18:31:00 +00:00

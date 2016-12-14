@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: design-patterns-in-the-21st-century-part-four
 title: 'Design Patterns in the 21st Century: The Chain of Responsibility Pattern'
 date: 2015-04-16 18:30:00 +01:00
