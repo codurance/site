@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2011-10-18 22:10:49+00:00
 layout: post
-asset-type: post
 slug: the-legacy-of-misplaced-testing
 title: The legacy of misplaced Testing
 wordpress_id: 151

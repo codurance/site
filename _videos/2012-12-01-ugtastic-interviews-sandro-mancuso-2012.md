@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: ugtastic-interviews-sandro-mancuso-2012
 location: "Chicago, USA"
 image:

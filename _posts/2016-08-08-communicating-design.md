@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Communicating Design
 title: Communicating Design
 date: 2016-08-08 10:00:00 +00:00

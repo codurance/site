@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: quick-guide-to-deploying-artifacts-with-Jenkins
 title: A Very Quick Guide to Deploying Artifacts With Jenkins
 date: 2014-10-03

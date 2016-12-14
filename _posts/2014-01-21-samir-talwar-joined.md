@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: our-first-craftsman
 title: Samir Talwar is our first craftsman
 date: 2014-01-21 15:20:00.000000000 +00:00

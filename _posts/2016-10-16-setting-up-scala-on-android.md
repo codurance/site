@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: setting-up-scala-on-android
 title: Setting up Scala on Android
 date: 2016-10-16 00:20:00 +00:00

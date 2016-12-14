@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2012-01-14 20:53:44+00:00
 layout: post
-asset-type: post
 slug: saxon-xquery-with-multiple-documents
 title: Saxon XQuery With Multiple Documents
 wordpress_id: 168

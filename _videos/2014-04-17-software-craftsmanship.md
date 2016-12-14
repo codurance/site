@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: software-craftsmanship
 location: "Devoxx France"
 image:

@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2012-01-14 23:11:43+00:00
 layout: post
-asset-type: post
 slug: musings-on-zero-downtime-deployment
 title: Musings on Zero Downtime Deployment
 wordpress_id: 190

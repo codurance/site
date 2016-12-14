@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: simple-tdd-environment-haskell
 title: A simple TDD environment in Haskell
 date: 2016-05-25 00:01:00 +00:00

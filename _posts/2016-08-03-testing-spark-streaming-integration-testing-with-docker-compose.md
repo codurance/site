@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Testing-Spark-Streaming-Integration-testing-with-Docker-Compose
 title: 'Testing Spark Streaming: Integration testing with Docker Compose'
 date: 2016-08-03 00:20:00 +00:00

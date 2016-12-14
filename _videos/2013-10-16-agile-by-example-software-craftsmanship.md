@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: agile-by-example-software-craftsmanship
 location: "Warsaw, Poland"
 image:

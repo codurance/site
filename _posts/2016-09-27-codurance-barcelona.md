@@ -3,7 +3,6 @@ author: Sandro Mancuso
 comments: true
 date: 2016-09-27 10:10:00 +00:00
 layout: post
-asset-type: post
 slug: codurance-barcelona
 title: Codurance Barcelona
 image:

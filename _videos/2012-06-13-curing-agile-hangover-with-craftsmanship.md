@@ -3,7 +3,6 @@ author:
  - Mashooq Badar
  - Sandro Mancuso
 layout: video
-asset-type: video
 name: curing-agile-hangover-with-craftsmanship
 location: "Agile Central Europe (ACE) - Krakow, Poland"
 image:

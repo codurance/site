@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: changing-scalatra-and-sbt-default-directories
 title: Changing Scalatra and sbt default directories 
 date: 2015-11-22 23:54:00 +00:00

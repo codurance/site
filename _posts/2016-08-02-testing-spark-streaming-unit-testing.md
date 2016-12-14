@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Testing-Spark-Streaming-Unit-Testing
 title: 'Testing Spark Streaming: Unit testing'
 date: 2016-08-02 00:20:00 +00:00

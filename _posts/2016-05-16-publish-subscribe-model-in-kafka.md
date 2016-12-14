@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Publish-subscribe-model-in-Kafka
 title: 'Publish-subscribe model in Kafka'
 date: 2016-05-16 00:20:00 +00:00

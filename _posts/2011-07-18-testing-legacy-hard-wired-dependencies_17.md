@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: testing-legacy-hard-wired-dependencies
 title: "Testing legacy: Hard-wired dependencies (part 2)"
 date: 2011-07-18 02:12:00 +01:00

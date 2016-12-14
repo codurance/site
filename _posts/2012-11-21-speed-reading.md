@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2012-11-21 23:14:53+00:00
 layout: post
-asset-type: post
 slug: speed-reading
 title: Speed Reading
 wordpress_id: 211

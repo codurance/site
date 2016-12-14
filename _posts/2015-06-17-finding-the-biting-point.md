@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: finding-the-biting-point
 title: Finding the biting point with pair programming
 date: 2015-06-17 09:00:00 +00:00

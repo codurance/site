@@ -3,7 +3,6 @@ author: Ana Nogal
 comments: true
 date: 2016-09-20 10:00:00 +00:00
 layout: post
-asset-type: post
 slug: server-side-swift
 name: Server side Swift
 title: 'Server side Swift'

@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: bowling-kata-in-clojure-fsharp-scala
 title: Bowling Kata in Clojure, F# and Scala
 date: 2016-05-16 00:01:00 +00:00

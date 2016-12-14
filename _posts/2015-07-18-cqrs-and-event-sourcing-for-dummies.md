@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: cqrs-and-event-sourcing-for-dummies
 title: CQRS and Event Sourcing for dummies
 date: 2015-07-18 17:00:00 +00:00

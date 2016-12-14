@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: testing-and-refactoring-legacy-code
 image:
     src: /assets/img/custom/videos/testing-and-refactoring-legacy-code.png

@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: working-with-legacy-code
 title: "Working with legacy code"
 date: 2011-07-03 23:37:00 +01:00

@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: becoming-evergreen
 title: 'Becoming Evergreen'
 date: 2015-08-05 21:00:00 +01:00

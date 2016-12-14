@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Extreme-Learning
 title: A really good way to make your learning more effective
 date: 2015-06-13 10:00:00 +00:00

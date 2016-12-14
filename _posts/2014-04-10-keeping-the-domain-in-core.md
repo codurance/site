@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: keeping-the-domain-in-core
 title: Keeping the domain in the core
 date: 2014-04-10 00:30:00.000000000 +00:00

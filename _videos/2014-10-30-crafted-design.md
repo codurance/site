@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: crafted-design
 location: "Lean Agile, Scotland"
 image:
