@@ -11,7 +11,7 @@ rdiscount:
 
 exclude: ["README.md", "_posts_TOFIX", "vendor"]
 
-author_dir: pubications/author
+author_dir: publications/author
 
 sitename: "Codurance"
 subtitle: "craft at heart"

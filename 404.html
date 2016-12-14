@@ -49,7 +49,10 @@ permalink: /404.html
       var results = index.search(term)
                     .map(function(search_result){return {url:search_result.ref, title:search_items[search_result.ref]}})
                     .slice(0, MAX_RESULT_COUNT);
-
+      if((!results || results.length == 0) && term.indexOf("pubication") > 0 ){
+		window.location = window.location.pathname.replace("pubication", "publication");
+		return;
+      }
       if(results.length>0){
         addResultsToPage(results);
       }
