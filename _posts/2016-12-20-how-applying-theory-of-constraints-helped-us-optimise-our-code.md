@@ -10,6 +10,7 @@ canonical:
     href: https://blog.matthewbutt.com/2016/12/18/how-applying-theory-of-constraints-helped-us-optimise-our-code/
 image:
     src: /assets/img/custom/blog/2016-12-20-how-applying-theory-of-constraints-helped-us-optimise-our-code/post-image.png
+abstract: Gives a brief introduction to the Theory of Constraints and explains how it gives a framework for tackling performance issues
 tags:
 - agile
 - lean
