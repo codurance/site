@@ -28,7 +28,7 @@ easily search the site's content and instantly see a results summary.
 <image class='img img-responsive' src='/assets/img/custom/blog/2016_12_18_how_to_npm_link/search-component.png'> 
 <small>*Above: The Search Component is a custom node module that can be inserted anywhere in the parent application*</small>
  
-Although automated testing certainly has it place, when it comes to working with shared components, particularly those that are user-facing, manual testing can provide can provide some benefits. 
+Although automated testing certainly has its place, when it comes to working with shared components, particularly those that are user-facing, manual testing can provide some benefits. 
 When you are at the early stages of feature implementation, or spiking, sometimes it makes more sense to 
 manually test the effects of your changes at the user interface level and iterate accordingly. Once you stabilise, then robust tests can (and should) be put in place.
 
@@ -47,14 +47,15 @@ When you run the application, any changes you make to the dependency will be ref
 1. In the terminal, navigate to the folder of the dependency you want to modify and run the command `npm link`. 
 This makes the component globally available to the rest of your application.
 
-2. Navigate to the folder of the application that depends on the module you want to modify. 
+2. Navigate to the folder of the parent application (i.e the one that depends on the module you want to modify). 
 In the root run the command `npm link [name of module you want to modify]`
 
 3. Next, run both the parent application and the module dependency then start making changes to the dependency to your heart's content. 
 In addition, using a library that watches for changes in your code and rebuilds your app such as [Nodemon](https://github.com/remy/nodemon) will be essential in order to save you from restarting the application all the time.
 
-4. Finally, once you have all the changes in place (plus tests!), unlink the dependency using `npm unlink`. 
-This will remove the local dependency from the parent application. Publish your (modified) dependency, then access the latest version by doing a standard `npm install`.
+4. Finally, once you have all the changes in place (plus tests!), navigate to the folder of the parent application and unlink the dependency using `npm unlink [name of module you modified]`.
+This will remove the local dependency from the parent application. Similarly, navigate to the folder of the dependency you modified and run `npm unlink` to no longer make the module globally available. 
+Publish your (modified) dependency, then access the latest version by doing a standard `npm install`.
 
 One of the great things about the **node** ecosystem is that it encourages *single responsibility* by making it easy to create and deploy tightly defined modules that can be shared across your wider application. 
 This decoupling however, makes live modification of your dependencies a little trickier, but as we have seen, its a case of using the tools provided. 
