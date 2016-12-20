@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: aws-lambdas 
 title: AWS Lambda for Beginners
 date: 2016-05-11 00:20:00 +00:00

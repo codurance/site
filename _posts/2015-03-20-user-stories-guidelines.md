@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: user-stories-guidelines
 title: User Story Guidelines
 date: 2015-03-20 21:22:00 +00:00

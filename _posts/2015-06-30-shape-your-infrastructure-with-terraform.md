@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: shape-your-infrastructure-with-terraform
 title: Shape your infrastructure with Terraform
 date: 2015-06-30 12:00:00 +00:00

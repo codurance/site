@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: looking-forward-to-2015
 title: Codurance - Looking forward to 2015
 date: 2014-11-26 18:31:00 +00:00

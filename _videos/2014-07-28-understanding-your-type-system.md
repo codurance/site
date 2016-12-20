@@ -1,7 +1,6 @@
 ---
 author: Samir Talwar
 layout: video
-asset-type: video
 name: understanding-your-type-system
 location: "Virtual JUG (vJUG)"
 image:

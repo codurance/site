@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Testing-multithreaded-code-in-java
 title: 'Testing multithreaded code in Java'
 date: 2015-12-13 00:20:00 +00:00

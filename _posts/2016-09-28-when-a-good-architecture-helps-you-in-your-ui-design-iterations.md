@@ -3,7 +3,6 @@ author: Ana Nogal
 comments: true
 date: 2016-10-03 10:00:00 +00:00
 layout: post
-asset-type: post
 slug: when-a-good-architecture-helps-you-in-your-ui-design-iterations
 name: When a good architecture helps you in your UI design iterations
 title: 'When a good architecture helps you in your UI design iterations'

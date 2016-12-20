@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2013-02-07 17:59:29+00:00
 layout: post
-asset-type: post
 slug: project-documentation
 title: Project Documentation
 wordpress_id: 277

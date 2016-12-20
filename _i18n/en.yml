@@ -311,3 +311,5 @@ not-found:
 latest-publications:
   videos: Latest videos
   posts: Latest posts
+author:
+  publications-title: Publications

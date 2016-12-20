@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: applying-transformation-priority-premise-to-roman-numerals-kata
 title: 'Applying Transformation Priority Premise to Roman Numerals Kata'
 date: 2015-05-18 18:00:00 +01:00

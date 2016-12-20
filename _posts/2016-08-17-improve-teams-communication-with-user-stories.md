@@ -3,7 +3,6 @@ author: Giulia Mantuano
 comments: true
 date: 2016-08-17 14:25:09+00:00
 layout: post
-asset-type: post
 slug: improve-teams-communication-with-user-stories
 title: Improve team's communication with User Stories
 image:

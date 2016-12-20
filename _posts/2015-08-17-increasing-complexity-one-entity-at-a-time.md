@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: increasing-complexity-one-entity-at-a-time
 title: Increasing complexity one entity at a time
 date: 2015-08-17 09:35:00 +00:00

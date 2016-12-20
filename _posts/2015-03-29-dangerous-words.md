@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: dangerous-words
 title: Dangerous Words
 date: 2015-03-29 21:22:00 +00:00

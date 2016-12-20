@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: a-month-of-apprenticeship
 title: My first month as an apprentice
 date: 2015-07-31 16:00:00 +00:00

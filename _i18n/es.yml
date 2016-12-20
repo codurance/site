@@ -310,3 +310,5 @@ not-found:
 latest-publications:
   videos: Últimos videos
   posts: Últimos posts
+author:
+  publications-title: Publicaciones

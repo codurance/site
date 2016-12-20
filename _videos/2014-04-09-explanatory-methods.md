@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: explanatory-methods
 image:
     src: /assets/img/custom/videos/explanatory-methods.png

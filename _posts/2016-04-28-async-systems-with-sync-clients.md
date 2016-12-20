@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Async-systems-with-sync-clients
 title: 'Async systems with sync clients'
 date: 2016-04-28 00:20:00 +00:00

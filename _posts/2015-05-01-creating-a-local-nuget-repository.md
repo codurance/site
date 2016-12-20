@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: creating-a-local-nuget-repository
 title: 'Creating a local NuGet repository for offline development'
 date: 2015-05-04 10:00:00 +01:00

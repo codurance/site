@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: functional-programming-is-cool-do-u-know-oo
 location: "Devoxx UK - London, UK"
 image:

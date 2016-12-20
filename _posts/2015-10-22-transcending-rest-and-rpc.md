@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Transcending-rest-and-rpc
 title: 'Transcending REST and RPC'
 date: 2015-10-22 00:20:00 +00:00

@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Maven-demystified 
 title: 'Maven demystified' 
 date: 2016-08-19 10:00:00 +00:00

@@ -3,7 +3,6 @@ author: Giulia Mantuano
 comments: true
 date: 2016-08-24 10:00:00 +00:00
 layout: post
-asset-type: post
 slug: chinese-whispers-on-scrum-roles
 title: Chinese whispers on Scrum roles
 image:

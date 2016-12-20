@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Sorted-pagination-in-Cassandra
 title: 'Sorted pagination in Cassandra'
 date: 2016-04-17 00:20:00 +00:00

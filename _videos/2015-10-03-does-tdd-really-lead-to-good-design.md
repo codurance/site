@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: does-tdd-really-lead-to-good-design
 image:
     src: /assets/img/custom/videos/screencast-intro-does-tdd-really-lead-to-good-design.jpg

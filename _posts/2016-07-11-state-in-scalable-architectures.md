@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: State-in-scalable-architectures
 title: 'State in scalable architectures'
 date: 2016-07-11 00:20:00 +00:00

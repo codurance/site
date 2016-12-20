@@ -3,7 +3,6 @@ author:
  - Halima Koundi
 speaker: Halima Koundi
 layout: event
-asset-type: event
 name: halima-at-swanseacon-2016
 location: "SwanseaCon 2016, Swansea, United Kingdom"
 image:

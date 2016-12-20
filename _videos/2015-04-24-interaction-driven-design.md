@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: interaction-driven-design
 location: "Craft - Budapest"
 image:

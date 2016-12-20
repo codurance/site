@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: outside-in-tdd-part-1
 image:
     src: /assets/img/custom/videos/outside-in-tdd-part-1.png

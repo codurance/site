@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: tdd-and-software-design
 location: "Hangout on Air"
 image:

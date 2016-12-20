@@ -2,7 +2,6 @@
 author: David Hatanian
 date: 2016-10-03 10:10:00 +00:00
 layout: post
-asset-type: post
 slug: what-i-wish-i-knew-earlier
 title: What I wish I knew when I started as a software developer
 image:
