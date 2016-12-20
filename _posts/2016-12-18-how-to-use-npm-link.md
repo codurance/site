@@ -38,8 +38,7 @@ Luckily, the node package manager (**npm**) has a way to make development with d
 
 #### 'npm link' in a nutshell
 
-The [npm documentation](https://docs.npmjs.com/cli/link) defines **npm link** as a *'means to symlink a package folder'*
-Put simply, it's a means to connect your parent application to a module you have locally on you machine. 
+The [npm documentation](https://docs.npmjs.com/cli/link) defines **npm link** as a *'means to symlink a package folder'*. Put simply, it's a means to connect your parent application to a module you have locally on your machine. 
 When you run the application, any changes you make to the dependency will be reflected in the application.
 
 #### How to 'npm link'
