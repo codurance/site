@@ -18,86 +18,86 @@
                     <div class="posts">
 			    <div class="headline"><h2>{% t footer-latest_blog.title %}</h2></div>
                         <ul class="list-unstyled latest-list">
-	    		    {% assign posts = site.posts | where: "asset-type", "post" %}
-                            {% for post in posts limit:3 %}
-                            <li>
-                                <a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
-                                <small>{{ post.author }}</small>
-                            </li>
-                            {% endfor %}
+                          {% assign posts = site.posts %}
+                          {% for post in posts limit:3 %}
+                          <li>
+                            <a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
+                            <small>{{ post.author }}</small>
+                          </li>
+                          {% endfor %}
                         </ul>
                     </div>
                 </div><!--/col-md-3-->  
                 <!-- End Latest --> 
-                
+
                 <!-- Link List -->
                 <div class="col-md-3 md-margin-bottom-40">
-			<div class="headline"><h2>{% t footer-useful_links.title %}</h2></div>
-			<ul class="list-unstyled link-list">
-				<li><a href="/services#software-creation">{% t footer-useful_links.link_1_title %}</a><i class="fa fa-angle-right"></i></li>
-				<li><a href="/services#expert-advice">{% t footer-useful_links.link_2_title %}</a><i class="fa fa-angle-right"></i></li>
-				<li><a href="/services#training">{% t footer-useful_links.link_3_title %}</a><i class="fa fa-angle-right"></i></li>
-				<li><a href="/careers">{% t footer-useful_links.link_4_title %}</a><i class="fa fa-angle-right"></i></li>
-				<li><a href="/company">{% t footer-useful_links.link_5_title %}</a><i class="fa fa-angle-right"></i></li>
-				<li><a href="/policies/privacy">{% t footer-useful_links.link_6_title %}</a><i class="fa fa-angle-right"></i></li>
-			</ul>
+                  <div class="headline"><h2>{% t footer-useful_links.title %}</h2></div>
+                  <ul class="list-unstyled link-list">
+                    <li><a href="/services#software-creation">{% t footer-useful_links.link_1_title %}</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/services#expert-advice">{% t footer-useful_links.link_2_title %}</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/services#training">{% t footer-useful_links.link_3_title %}</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/careers">{% t footer-useful_links.link_4_title %}</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/company">{% t footer-useful_links.link_5_title %}</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="/policies/privacy">{% t footer-useful_links.link_6_title %}</a><i class="fa fa-angle-right"></i></li>
+                  </ul>
                 </div><!--/col-md-3-->
                 <!-- End Link List -->                    
 
                 <!-- Contact Us -->
-		<div class="col-md-3 map-img md-margin-bottom-40">
-			<div class="headline"><h2>{% t footer-contact.title  %}</h2></div>                         <address class="md-margin-bottom-40">
-				<a href="https://www.google.co.uk/maps/place/15+Northburgh+St,+London+EC1V+0JR/@51.5238156,-0.1025175,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x48761b50d18bf817:0xcce7f698e8aeba03!2s15+Northburgh+St,+London+EC1V+0JR!2m2!1d-0.1003288!2d51.5238156!3m4!1s0x48761b50d18bf817:0xcce7f698e8aeba03!8m2!3d51.5238156!4d-0.1003288" target="_blank">15 Northburgh Street <br> London EC1V 0JR</a>
-				<br>
-				<br>
-				<a href="https://www.google.co.uk/maps/place/Carrer+d'Arag%C3%B3,+208,+08011+Barcelona,+Spain/@41.3876335,2.1571825,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a28e9a736993:0x13c80b7ea4d9fb0f!8m2!3d41.3876335!4d2.1593712" target="_blank">Carrer Aragó, 208 <br> 08011, Barcelona</a>
-				<br>
-				<br>
-				{% t footer-contact.phone_title %}: <a href="tel:{% t office.raw_phone %}" target="_blank">{% t office.formatted_phone %}</a>
-				<br/>
-				{% t footer-contact.email_title %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}<a>
-			</address>
-		</div><!--/col-md-3-->
+                <div class="col-md-3 map-img md-margin-bottom-40">
+                  <div class="headline"><h2>{% t footer-contact.title  %}</h2></div>                         <address class="md-margin-bottom-40">
+                    <a href="https://www.google.co.uk/maps/place/15+Northburgh+St,+London+EC1V+0JR/@51.5238156,-0.1025175,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x48761b50d18bf817:0xcce7f698e8aeba03!2s15+Northburgh+St,+London+EC1V+0JR!2m2!1d-0.1003288!2d51.5238156!3m4!1s0x48761b50d18bf817:0xcce7f698e8aeba03!8m2!3d51.5238156!4d-0.1003288" target="_blank">15 Northburgh Street <br> London EC1V 0JR</a>
+                    <br>
+                    <br>
+                    <a href="https://www.google.co.uk/maps/place/Carrer+d'Arag%C3%B3,+208,+08011+Barcelona,+Spain/@41.3876335,2.1571825,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a28e9a736993:0x13c80b7ea4d9fb0f!8m2!3d41.3876335!4d2.1593712" target="_blank">Carrer Aragó, 208 <br> 08011, Barcelona</a>
+                    <br>
+                    <br>
+                    {% t footer-contact.phone_title %}: <a href="tel:{% t office.raw_phone %}" target="_blank">{% t office.formatted_phone %}</a>
+                    <br/>
+                    {% t footer-contact.email_title %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}<a>
+                  </address>
+                </div><!--/col-md-3-->
                 <!-- End Contact Us -->
             </div>
         </div> 
     </div><!--/footer-->
 
     <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">                     
-			<p>{% t footer.registration_number %}: 8712584</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">                     
+            <p>{% t footer.registration_number %}: 8712584</p>
+          </div>
 
-                <!-- Social Links -->
-                <div class="col-md-6">
-                    <ul class="footer-socials list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/codurance/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin" target="_blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/atom.xml" data-original-title="Feed" class="tooltips" data-toggle="tooltip" data-placement="top" title="" target="_blank">
-                                <i class="fa fa-rss"></i> 
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Social Links -->
-            </div>
-        </div> 
+          <!-- Social Links -->
+          <div class="col-md-6">
+            <ul class="footer-socials list-inline">
+              <li>
+                <a href="https://www.facebook.com/codurance/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/atom.xml" data-original-title="Feed" class="tooltips" data-toggle="tooltip" data-placement="top" title="" target="_blank">
+                  <i class="fa fa-rss"></i> 
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Social Links -->
+        </div>
+      </div> 
     </div><!--/copyright-->
 </div>
 <!--=== End Footer ===-->
