@@ -1,7 +1,7 @@
 <div class="row margin-bottom-20">
   <div class="col-md-5 sm-margin-bottom-20">
     <div class="blog-thumb">
-      <a href="{{ post.url }}"><img class="img-responsive" src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></a>
+      <a href="{{ post.url }}"><img src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></a>
     </div>
     {% if post.image.attribution.href || post.image.attribution.text %}
     <div>

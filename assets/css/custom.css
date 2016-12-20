@@ -337,10 +337,10 @@ li > a {
 	max-height: 225px;
 }
 
-.blog-thumb a .img-responsive {
-	display: block;
-    width: 335px;
-    height: 225px;
+.blog-thumb a img {
+  display: block;
+  width: 335px;
+  height: 225px;
 }
 
 .blog-img-attribution {
