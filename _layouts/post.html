@@ -83,7 +83,7 @@ group:
           <div class="headline-v2">
 		  <h2>{% t post-related_posts.title%}</h2>
           </div>
-	  {% assign posts = site.posts | where: "asset-type", "post" %}
+          {% assign posts = site.posts %}
           {% assign relatedPosts = ""  %}
 
           {% for post in posts %}
