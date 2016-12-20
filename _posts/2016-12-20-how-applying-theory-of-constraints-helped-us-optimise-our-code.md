@@ -21,7 +21,7 @@ My team have been working on improving the performance our API, and identified a
 
 The team suggested three ways to tackle this problem:
 
-* Scale up the database till it can meet this requirement.
+* Scale up the database till it can meet our requirements.
 * Introduce some light-weight caching in the application to reduce load on the database.
 * Examine the query plan for this database call to find out whether the query can be optimised.
 
@@ -51,9 +51,10 @@ Once you have applied these steps you will either find that the Constraint has m
 
 If we look at the team’s three suggestions, we can see that each corresponds to one of these techniques:
 
-Scaling up the database is Elevation: there’s a clear financial cost in using larger servers.
-Introducing caching is Subordination: we’re changing the rest of the system to reduce pressure on the Constraint, and need to consider questions such as cache invalidation before we make this change.
-Optimising the query is Exploitation: we’re making local changes to the Constraint to improve its performance.
+* Scaling up the database is Elevation: there’s a clear financial cost in using larger servers.
+* Introducing caching is Subordination: we’re changing the rest of the system to reduce pressure on the Constraint, and need to consider questions such as cache invalidation before we make this change.
+* Optimising the query is Exploitation: we’re making local changes to the Constraint to improve its performance.
+
 Applying ToC tells us which of these approaches to consider first, namely optimising the query. We can look at caching if an optimised query is still not sufficient, and scaling should be a last resort.
 
 In our case, query optimisation was sufficient. We managed to meet our performance target without introducing additional complexity to the system or incurring further cost.
