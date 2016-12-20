@@ -48,3 +48,4 @@ gems:
 languages: ["en", "es"]
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 
+default_post_image: "/assets/img/defaultBlogImg.png"
