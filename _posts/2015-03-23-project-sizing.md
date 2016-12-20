@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: project-sizing
 title: Project Sizing
 date: 2015-03-23 14:30:00 +00:00

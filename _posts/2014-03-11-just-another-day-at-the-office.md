@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: just-another-day-at-the-office
 title: Just Another Day at the Office
 date: 2014-03-11 20:00:00.000000000 +00:00

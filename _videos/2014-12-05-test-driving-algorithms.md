@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: test-driving-algorithms
 image:
     src: /assets/img/custom/videos/test-driving-algorithms.jpg

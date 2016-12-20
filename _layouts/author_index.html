@@ -32,16 +32,22 @@ group:
     {% endfor %}
   </div>
   <hr/>
+
+  <!-- Merging two collections as {% assign publications = site.posts | concat: site.videos %} is not supported -->
+  {% assign publications = site.posts %}
+  {% for video in site.videos %}
+    {% assign publications = publications | push: video %}
+  {% endfor %}
+
+  {% assign author_publications = publications | where: 'author', page.author | sort: 'date' | reverse %}
+  {% if author_publications.size > 0 %}
   <div class="row">
     <div class="col-md-9">
-      <h2 class="margin-bottom-20">Blogs</h2>
-        {% assign index = true %}
-	{% assign posts = site.posts | where: "asset-type", "post" %}
-        {% for post in posts %}
-          {% if post.author contains page.author %}
-            {% include post.html post=post %}
-          {% endif %}
-        {% endfor %}
+      <h2 class="margin-bottom-20">{% t author.publications-title %}</h2>
+      {% for post in author_publications %}
+        {% include post.html post=post %}
+      {% endfor %}
     </div>
   </div>
+  {% endif %}
 </div>

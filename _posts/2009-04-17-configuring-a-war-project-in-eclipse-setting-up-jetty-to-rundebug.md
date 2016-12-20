@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2009-04-17 14:43:54+00:00
 layout: post
-asset-type: post
 slug: configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug
 title: Configuring a WAR project in Eclipse & Setting up Jetty to Run/Debug
 wordpress_id: 8

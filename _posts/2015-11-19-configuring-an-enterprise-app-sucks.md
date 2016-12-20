@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: configuring-an-enterprise-app-sucks
 title: 'Configuring an enterprise app sucks'
 date: 2015-11-19 09:00:00 +00:00

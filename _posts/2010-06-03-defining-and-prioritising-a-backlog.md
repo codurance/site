@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2010-06-03 14:58:45+00:00
 layout: post
-asset-type: post
 slug: defining-and-prioritising-a-backlog
 title: Defining and Prioritising a Backlog
 wordpress_id: 123

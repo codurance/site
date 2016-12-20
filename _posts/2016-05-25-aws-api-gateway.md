@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: aws-lambdas-with-api-gateway 
 title: AWS Lambda with API Gateway
 date: 2016-05-25 00:20:00 +00:00

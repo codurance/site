@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: visualise-interruptions-on-a-lego-wall 
 title: Visualise interruptions on a LEGO Wall
 date: 2016-10-10 07:00:00 +00:00

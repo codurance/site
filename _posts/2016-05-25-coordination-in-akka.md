@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Coordination-in-akka
 title: 'Coordination in Akka'
 date: 2016-05-25 00:20:00 +00:00

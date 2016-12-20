@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: code-smells-part-one
 title: Code Smells – Part I
 date: 2016-03-17 12:10:00 +00:00

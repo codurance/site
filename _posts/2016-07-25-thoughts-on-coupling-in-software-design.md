@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Thoughts on Coupling in Software Design
 title: Thoughts on Coupling in Software Design
 date: 2016-07-25 10:00:00 +00:00

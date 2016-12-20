@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: making-sense-of-docker-volumes
 title: 'Making Sense of Docker Volumes'
 date: 2015-04-15 10:00:00 +01:00

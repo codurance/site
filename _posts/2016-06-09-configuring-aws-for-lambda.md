@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: Configuring-AWS-lambda 
 title: 'Configuring Amazon Web Services (AWS) for using Lambda'
 date: 2016-06-09 15:07:00 +00:00

@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: a-software-craftsman-is
 title: A Software Craftsman Is
 date: 2014-05-26 15:00:00 +00:00

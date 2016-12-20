@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: post
-asset-type: post
 name: change-in-attitude-legacy-code
 title: "A change in attitude - Legacy code"
 date: 2011-06-21 03:31:00 +01:00

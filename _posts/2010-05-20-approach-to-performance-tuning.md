@@ -3,7 +3,6 @@ author: Mashooq Badar
 comments: true
 date: 2010-05-20 14:11:38+00:00
 layout: post
-asset-type: post
 slug: approach-to-performance-tuning
 title: Approach to Performance Tuning
 image:

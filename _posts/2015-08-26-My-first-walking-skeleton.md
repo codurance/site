@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: My-first-walking-skeleton
 title: My first walking skeleton
 date: 2015-08-26 09:00:00 +00:00

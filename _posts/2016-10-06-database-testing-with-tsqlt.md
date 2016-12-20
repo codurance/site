@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: database-testing-with-tsql 
 title: Database Testing With tSQLt
 date: 2016-10-06 10:20:00 +00:00

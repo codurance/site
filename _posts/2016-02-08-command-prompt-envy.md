@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: CommandPromptEnvy
 title: 'Command Prompt Envy'
 date: 2016-02-08 00:20:00 +00:00

@@ -1,7 +1,6 @@
 ---
 author: Sandro Mancuso
 layout: video
-asset-type: video
 name: craftsmanship-a-few-years-on
 location: "Software Craftsmanship North America (SCNA) - Chicago, USA"
 image:

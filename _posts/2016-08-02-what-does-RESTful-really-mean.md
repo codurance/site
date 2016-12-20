@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: What-does-RESTful-really-mean
 title: 'What does RESTful really mean'
 date: 2016-08-02 17:00:00 +00:00

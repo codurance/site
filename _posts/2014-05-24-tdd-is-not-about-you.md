@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: tdd-is-not-about-you
 title: TDD is NOT (just) about you
 date: 2014-05-24 22:18:00.000000000 +00:00

@@ -1,7 +1,6 @@
 ---
 author: Sergio Rodrigo Royo
 layout: video
-asset-type: video
 name: bowling-kata-in-kotlin
 image:
  src: /assets/img/custom/videos/bowling-kata-kotlin.png

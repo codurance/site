@@ -1,6 +1,5 @@
 ---
 layout: post
-asset-type: post
 name: cloud-application-design-considerations
 title: 'Cloud Application Design Considerations'
 date: 2015-06-19 18:00:00 +01:00
