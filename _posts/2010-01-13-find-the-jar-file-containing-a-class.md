@@ -5,9 +5,6 @@ date: 2010-01-13 14:17:09+00:00
 layout: post
 slug: find-the-jar-file-containing-a-class
 title: Find the jar file containing a class
-image:
-    src: /assets/img/defaultBlogImg.png
-wordpress_id: 40
 categories:
 - development
 tags:
