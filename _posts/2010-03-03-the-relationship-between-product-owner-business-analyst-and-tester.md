@@ -5,9 +5,6 @@ date: 2010-03-03 08:18:45+00:00
 layout: post
 slug: the-relationship-between-product-owner-business-analyst-and-tester
 title: The relationship between Product Owner, Business Analyst and Tester
-image:
-    src: /assets/img/defaultBlogImg.png
-wordpress_id: 66
 categories:
 - process
 tags:
