@@ -2,7 +2,7 @@
 	{% if post.image.src %}
 		{% assign imageSrc = post.image.src %}
 	{% else %}
-		{% assign imageSrc = "/assets/img/coduranceLogoBlogThumb.png" %}
+		{% assign imageSrc = site.default_post_image %}
 	{% endif %}
 	{% if post.abstract %}
 		{% assign introductionToPost = post.abstract %}
