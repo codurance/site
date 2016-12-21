@@ -48,7 +48,7 @@
       <!-- Right Sidebar -->
       <div class="col-md-3">
         {% if include.widgets contains "related_posts" %}
-        {% include related_posts.html %}
+        {% include related_publications.html tags=page.tags %}
         {% endif %}
 
         {% if include.widgets contains "recent_posts" %}
