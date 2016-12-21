@@ -30,7 +30,7 @@
                     {% if page == 1 %}
                         <a href="{{ pageUrl }}">{{ page }}</a>
                     {% else %}
-                        <a href="{{ pageUrl | append: 'page:num' | replace: ':num', page }}">{{ page }}</a>
+                        <a href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/'}}">{{ page }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
