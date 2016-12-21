@@ -1,7 +1,4 @@
-<div class="posts margin-bottom-40">
-  <div class="headline-v2">
-    <h2>{% t post-related_posts.title%}</h2>
-  </div>
+  
   {% assign posts = site.posts %}
   {% assign relatedPosts = ""  %}
 
@@ -30,6 +27,12 @@
   {% endfor %}
 
   {% if relatedPosts.size > 0 %}
+
+  <div class="posts margin-bottom-40">
+    <div class="headline-v2">
+      <h2>{% t post-related_posts.title%}</h2>
+    </div>
+
   {% assign relatedPostsArray = relatedPosts | split:"|" | sort | reverse %}
   {% for relatedPost in relatedPostsArray limit: 7 %}
   {% assign relevantPostAttributes = relatedPost | split:"$" %}
@@ -57,6 +60,5 @@
     </div>
   </div>
   {% endfor %} 
+  </div>
   {% endif %}
-</div>
-
