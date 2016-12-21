@@ -42,71 +42,17 @@ link: /video
           </div>
         </div>
         <!--End Blog Post-->
-        <!--About the author-->
-        {% if page.author %}
-        {% for member in site.data.team %}
-        {% if page.author == member.name %}
-        <div class = "blog-author bg-color-white margin-bottom-30">
-          <div class="headline headline-md margin-bottom-30">
-            <h2>{% t post-about_the_author.title %}</h2>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 pull-left">
-              <img class="img-responsive"  id="author-img" src="{{ member.image }}">
-            </div>
-            <div class="col-sm-9 pull-left">
-              <div class="blog-author-desc">
-                <div class="overflow-h">
-                  <h4>{{ member.name }}</h4>
-                  {% if member.twitter %}
-                  <ul class="list-inline">
-                    <li><a href="https://twitter.com/intent/tweet?text=.%20@{{ member.twitter }}%20Type%20your%20text%20here&url={{ site.url | uri_escape }}{{ page.url| uri_escape }}&via=codurance"><i class="fa fa-twitter"></i></a></li>
-                  </ul>
-                  {% endif %}
-                </div>
-                <p>{{ member.fullDescription }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {% break %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        <!--End About the author-->
+
+        {% include about_the_author.html author=page.author %}
+
       </div>
       <!-- End Left Sidebar -->
 
       <!-- Right Sidebar -->
       <div class="col-md-3">
-        <!-- Recent blogs -->
-        <div class="posts margin-bottom-40">
-          <div class="headline-v2"><h2>{% t post-recent_posts.title %}</h2></div>
-          {% assign posts = site.posts %}
-          {% for post in posts limit: 7 %}
-          <div class="blog-thumb blog-thumb-circle margin-bottom-15">
-            <div class="blog-thumb-hover">
-              <a href="{{ post.url }}">
-                <img class="rounded-x" src="{{ post.image.src }}" alt=""></img>
-              </a>
-              <a class="hover-grad" href="{{ post.url }}">
-                <i class="fa fa-hand-spock-o"></i>
-              </a>
-            </div>
-            <div class="blog-thumb-desc">
-              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
-              <ul class="blog-thumb-info">
-                <li>
-                  {{ post.author }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          {% endfor %}
-          <!-- End Recent blogs -->
-        </div>
-        <!-- End Right Sidebar -->
+        {% include recent_posts.html %}
       </div>
+
       <!--/row-->
     </div>
     <!--/container-->
