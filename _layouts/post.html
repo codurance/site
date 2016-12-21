@@ -3,62 +3,10 @@ layout: default
 group:
   title: Publications
   link: /publications
+widgets:
+  - "recent_posts"
+  - "related_posts"
+  - "about_the_author"
 ---
-<div class="bg-color-light">
-  <div class="container content-sm">
-    <div class="row blog-page blog-item">
-    <!-- Left Sidebar -->
-    <div class="col-md-9">
-      <!--Blog Post-->
-      <div class="news-v3 bg-color-white margin-bottom-30">
-        <div class="news-v3-in shareThisButtons">
-          <h1>{{ page.title }}</h1>
-          <ul class="list-inline posted-info">
-            <li>{% t post.author_title %} {{ page.author | author_links }}</li>
-            {% if page.date %}
-            <li>{% t post.date_title %} {{ page.date | date_to_string }}</li>
 
-            {% if page.tags.size > 0 %}
-            <li>
-              {% for tag in page.tags %}
-              <a href="/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
-              {% endfor %}
-            </li>
-            {% endif %}
-
-            {% endif %}
-          </ul>
-
-          {{ content }}
-
-          {% if page.canonical %}
-	  <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
-          {% endif %}
-
-          <div id="sharethisButtons">
-            <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ page.url }}'></span>
-            <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ page.url }}'></span>
-            <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ page.url }}'></span>
-            <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ page.url }}'></span>
-          </div>
-
-        </div>
-      </div>
-      <!--End Blog Post-->
-
-      {% include about_the_author.html author=page.author %}
-
-    </div>
-    <!-- End Left Sidebar -->
-
-    <!-- Right Sidebar -->
-    <div class="col-md-3">
-      {% include related_posts.html %}
-      {% include recent_posts.html %}
-    </div>
-    <!--/row-->
-    </div>
-  <!--/container-->
-  </div>
-  <!-- background color -->
-</div>
+{% include publication.html widgets=layout.widgets %}

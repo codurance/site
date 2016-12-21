@@ -1,6 +1,6 @@
 <div class="posts margin-bottom-40">
   <div class="headline-v2"><h2>{% t post-recent_posts.title %}</h2></div>
-  {% for post in posts limit: 7 %}
+  {% for post in site.posts limit: 7 %}
   <div class="blog-thumb blog-thumb-circle margin-bottom-15">
     <div class="blog-thumb-hover">
       <a href="{{ post.url }}">
