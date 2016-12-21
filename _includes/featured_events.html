@@ -9,7 +9,11 @@
 			<div class="blog-content">
 				<h3><a href="{{post.event-page-url}}">{{post.title}}</a></h3>
 				<h4>{{post.location}}</h4>
-				<p>{{ post.event-dates.starts | date_to_string }} - {{ post.event-dates.ends | date_to_string }}</p>
+				{% if post.event-dates.starts == post.event-dates.ends %}
+					<p>{{ post.event-dates.starts | date_to_string }}</p>
+				{% else %}
+					<p>{{ post.event-dates.starts | date_to_string }} - {{ post.event-dates.ends | date_to_string }}</p>
+				{% endif %}	
 				<p>{{ post.content | strip_html | truncatewords:30 }}</p>
 			</div>
 		</div>
