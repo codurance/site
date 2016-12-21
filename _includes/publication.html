@@ -52,7 +52,11 @@
         {% endif %}
 
         {% if include.widgets contains "recent_posts" %}
-        {% include recent_posts.html %}
+        {% include recent_publications.html type="posts" publication=page %}
+        {% endif %}
+
+        {% if include.widgets contains "recent_videos" %}
+        {% include recent_publications.html type="videos" publication=page %}
         {% endif %}
       </div>
       <!--/row-->

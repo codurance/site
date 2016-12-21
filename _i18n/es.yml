@@ -300,8 +300,9 @@ post-about_the_author:
    title: Sobre el autor
 post-related_posts:
    title: Blogs Relacionados
-post-recent_posts:
-   title: Blogs Recientes
+recent-publications:
+   posts-title: Blogs Recientes
+   videos-title: Videos Recientes
 the-software-craftsman:
    title: The Software Craftsman
 not-found:
