@@ -11,7 +11,7 @@ group:
 		{% if page.image.src %}
 			{% assign eventImage = page.image.src %}
 		{% else %}
-			{% assign eventImage = "/assets/img/coduranceLogoBlogThumb.png" %}
+			{% assign eventImage = site.default_post_image %}
 		{% endif %}
 		<img class="img-responsive" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
 		{% if page.speaker %}

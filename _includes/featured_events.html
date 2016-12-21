@@ -4,11 +4,7 @@
 	<div class="col-md-4 md-margin-bottom-40">
 		<div class="blog-box homepage-blog-thumb">
 			<a href="{{ post.event-page-url }}">
-			{% if post.image.src %}
-				<img class="img-responsive bordered" src="{{ post.image.src }}" alt="{{ post.title }}">
-			{% else %}
-				<img class="img-responsive bordered" src="/assets/img/coduranceLogoBlogThumb.png" alt="{{ postTitle }}" alt="{{ postTitle }}">
-			{% endif %}
+        <img class="img-responsive bordered" src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}">
 			</a>
 			<div class="blog-content">
 				<h3><a href="{{post.event-page-url}}">{{post.title}}</a></h3>
