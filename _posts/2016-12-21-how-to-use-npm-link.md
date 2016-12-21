@@ -3,13 +3,13 @@ layout: post
 asset-type: post
 name: working-with-shared-components-using-npm-link
 title: How to use 'npm link' to develop sharable components
-date: 2016-12-18 00:20:00 +00:00
+date: 2016-12-21 00:20:00 +00:00
 author: Toby Retallick
 canonical:
     name: my personal blog
     href: http://tobyret.github.io/NPM-Link/
 image:
-    src: /assets/img/custom/blog/2016_12_18_how_to_npm_link/npm-link-all-the-things.jpg
+    src: /assets/img/custom/blog/2016_12_21_how_to_npm_link/npm-link-all-the-things.jpg
 tags:
 - node
 - npm
@@ -25,7 +25,7 @@ For example, at one of our clients, my colleagues and I are responsible for a sh
 and accessed from a private [Artifactory](https://www.jfrog.com/Artifactory/) repository. It can be inserted anywhere in the application (usually the header), allowing the user to 
 easily search the site's content and instantly see a results summary. 
 
-<image class='img img-responsive' src='/assets/img/custom/blog/2016_12_18_how_to_npm_link/search-component.png'> 
+<image class='img img-responsive' src='/assets/img/custom/blog/2016_12_21_how_to_npm_link/search-component.png'> 
 <small>*Above: The Search Component is a custom node module that can be inserted anywhere in the parent application*</small>
  
 Although automated testing certainly has its place, when it comes to working with shared components, particularly those that are user-facing, manual testing can provide some benefits. 
