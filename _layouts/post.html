@@ -101,8 +101,6 @@ group:
               {% assign relatedPosts = relatedPosts | append:"$" %}
               {% assign relatedPosts = relatedPosts | append:post.url %}
               {% assign relatedPosts = relatedPosts | append:"$" %}
-              {% assign relatedPosts = relatedPosts | append:site.url %}
-              {% assign relatedPosts = relatedPosts | append:"$" %}
               {% assign relatedPosts = relatedPosts | append:post.title %}
               {% assign relatedPosts = relatedPosts | append:"$" %}
               {% assign relatedPosts = relatedPosts | append:post.image.src %}
@@ -117,15 +115,14 @@ group:
             {% for relatedPost in relatedPostsArray limit: 7 %}
               {% assign relevantPostAttributes = relatedPost | split:"$" %}
               {% assign postUrl = relevantPostAttributes[1] %}
-              {% assign siteUrl = relevantPostAttributes[2] %}
-              {% assign postTitle = relevantPostAttributes[3] %}
-              {% assign postImageUrl = relevantPostAttributes[4] %}
-              {% assign author = relevantPostAttributes[5] %}
+              {% assign postTitle = relevantPostAttributes[2] %}
+              {% assign postImageUrl = relevantPostAttributes[3] %}
+              {% assign author = relevantPostAttributes[4] %}
 
               <div class="blog-thumb blog-thumb-circle margin-bottom-15">
                 <div class="blog-thumb-hover">
                   <a href="{{ postUrl }}">
-                    <img class="rounded-x" src="{{ postImageUrl }}" alt=""></img>
+                <img class="rounded-x" src="{% if postImageUrl != empty %} {{ postImageUrl }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></img>
                   </a>
                   <a class="hover-grad" href="{{ postUrl }}">
                     <i class="fa fa-hand-spock-o"></i>
@@ -151,7 +148,7 @@ group:
           <div class="blog-thumb blog-thumb-circle margin-bottom-15">
             <div class="blog-thumb-hover">
               <a href="{{ post.url }}">
-                <img class="rounded-x" src="{{ post.image.src }}" alt=""></img>
+                <img class="rounded-x" src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></img>
               </a>
               <a class="hover-grad" href="{{ post.url }}">
                 <i class="fa fa-hand-spock-o"></i>
