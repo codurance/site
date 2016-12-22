@@ -17,6 +17,8 @@ gem install jekyll
 bundle install
 ```
 
+Use script file `installDependencies.sh` to achieve the above.
+
 In case the `bundle install` command aborts, with a message about a missing gem, install the missing gem indicated in the message and re-run `bundle install`. Repeat this for the number of times missing gems are notified. 
 
 Note: this should take a bit of time to install the gems.
@@ -26,6 +28,8 @@ If you are using RVM, you should create a *gh-pages* gemset first using the comm
 ## Building
 
 To build the site, run `rake build` or `jekyll serve` from the root directory of the project. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
+
+Use script file `buildAndRunSite.sh` to achieve the above.
 
 ## Serving the Web Site Locally
 
