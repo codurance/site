@@ -147,13 +147,19 @@ publications-tweet_feed:
 publications-post:
    author_title: Por
    date_title: Publicado
+services-header:
+   title: Soluciones artesanales 
+   subtitle: Adaptadas a ti
+services-subheader:
+   title: Siempre escuchando, en constante evolución 
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac purus tortor. Praesent et laoreet lorem. Curabitur aliquet magna velit, vitae tincidunt magna laoreet et. Fusce cursus erat at nunc aliquet cursus. Praesent elit tortor, ornare vitae velit at, hendrerit dictum nunc. Nam cursus convallis enim vitae commodo. Nulla facilisi. Nulla quis felis vel risus dignissim sollicitudin ut ut lacus. Curabitur lacus ex, lacinia sed nunc luctus, dignissim tristique massa. Duis in purus sit amet nunc varius finibus id sed.
 services-software_creation:
    title: Creación de software
    subtitle: <p><strong>Le ayudaremos a crear software bien elaborado que aporta valor a su negocio.</strong></p>
            <p>Nuestros craftsmen han perfeccionado su destreza en tecnologías y prácticas para poder entregar a tiempo y con calidad. Nos ajustamos a sus necesidades.</p>
 services-software_creation-embedded_craftsmen:
    title: Craftsmen Embebidos
-   subtitle: Nuestro craftsmen pueden mejorar sus equipos para que ofrezcan conocimientos especializados en tecnologías especificas. También pueden formar el núcleo de sus equipos para ayudar a inculcar las practicas de XP y los valores de Software Craftsmanship.
+   subtitle: Nuestros craftsmen pueden mejorar sus equipos para que ofrezcan conocimientos especializados en tecnologías especificas. También pueden formar el núcleo de sus equipos para ayudar a inculcar las practicas de XP y los valores de Software Craftsmanship.
 services-software_creation-self_contained_teams:
    title: Equipos Autónomos 
    subtitle: <p>Nuestros craftsmen están preparados para cubrir todas las funciones necesarias para el pleno funcionamiento de equipos Agile. Tenemos expertos en UX y diseño de UI, desarrollo de Front End y Back End, DevOps y Testing. Todos nuestros craftsmen tienen una compresión innata de análisis de negocio y trabajan con product owners para garantizar que ofrecemos valor de manera constante.</p>

@@ -3,40 +3,63 @@ layout: default
 title: Services
 ---
 
+
+<div class="breadcrumbs-v3 ourservices margin-bottom-40">
+  <div class="container text-center">
+    <h1>{% t services-header.title %}</h1>
+    <h2>{% t services-header.subtitle %}</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="services-section">
+    <h2>{% t services-subheader.title %}</h2>
+    <p>{% t services-subheader.subtitle %}</p>
+  </div>
+</div>
+
+<div class="section" style="padding-bottom: 0px">
+  <div class="container">
+    <div class="client-links">
+      <a href="#software-creation">{% t services-software_creation.title %}</a> | <a href="#expert-advice">{% t services-expert_advice.title %}</a> | <a href="#training">{% t services-training_coaching.title %}</a>
+    </div>
+  </div>
+</div>
+
 <!-- Software creation section-->
 
 <div class="container content" id="software-creation">
-	<div class="services-section">
-		<img src="/assets/img/custom/services/software_creation_icon_red.png" />
-		<h2 class="subject-header margin-bottom-40">{% t services-software_creation.title %}</h2>
-		{% t services-software_creation.subtitle  %}	
-	</div>
+  <div class="services-section">
+    <img src="/assets/img/custom/services/software_creation_icon_red.png" />
+    <h2 class="subject-header margin-bottom-40">{% t services-software_creation.title %}</h2>
+    {% t services-software_creation.subtitle  %}	
+  </div>
 
   <div class="row">
-	<div class="col-md-6 margin-bottom-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-embedded_craftsmen.title %}</h3>
-		<p>{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
-	</div>
+    <div class="col-md-6 margin-bottom-40">
+      <h3 class="subject-header margin-bottom-40">{% t services-software_creation-embedded_craftsmen.title %}</h3>
+      <p>{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
+    </div>
 
-	<div class="col-md-6">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-self_contained_teams.title %}</h3>
-		{% t services-software_creation-self_contained_teams.subtitle  %}	
-	</div>
+    <div class="col-md-6">
+      <h3 class="subject-header margin-bottom-40">{% t services-software_creation-self_contained_teams.title %}</h3>
+      {% t services-software_creation-self_contained_teams.subtitle  %}	
+    </div>
 
-	</div>
-	
+  </div>
+
   <div class="row">
-  <div class="col-md-6 margin-top-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-continous_delivery.title  %}</h3>
-		{% t services-software_creation-continous_delivery.subtitle %}	
-	</div>
+    <div class="col-md-6 margin-top-40">
+      <h3 class="subject-header margin-bottom-40">{% t services-software_creation-continous_delivery.title  %}</h3>
+      {% t services-software_creation-continous_delivery.subtitle %}	
+    </div>
 
-	<div class="col-md-6 margin-top-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-ux_ui_design.title %}</h3>
-		{% t services-software_creation-ux_ui_design.subtitle %}	
-	</div>
+    <div class="col-md-6 margin-top-40">
+      <h3 class="subject-header margin-bottom-40">{% t services-software_creation-ux_ui_design.title %}</h3>
+      {% t services-software_creation-ux_ui_design.subtitle %}	
+    </div>
 
-	</div>
+  </div>
 </div>
 
 <hr class="divider">
@@ -82,22 +105,22 @@ title: Services
 <!-- training section -->
 
 <div class="container content" id="training">
-	<div class="services-section">
-		<img src="/assets/img/custom/services/training_coaching_icon_yellow.png" />
-		<h2 class="subject-header margin-bottom-40">{% t services-training_coaching.title %}</h2>
-		{% t services-training_coaching.subtitle %}
-	</div>
-	<div class="row sorting-grid">
+  <div class="services-section">
+    <img src="/assets/img/custom/services/training_coaching_icon_yellow.png" />
+    <h2 class="subject-header margin-bottom-40">{% t services-training_coaching.title %}</h2>
+    {% t services-training_coaching.subtitle %}
+  </div>
+  <div class="row sorting-grid">
 
-		{% for training in site.data.trainings %}
+    {% for training in site.data.trainings %}
 
-		<div class="col-md-6 margin-top-40">
-			<h3 class="course-title"><a href="{{training.page}}">{{training.name}}</a></h3>
-			<h4 class="course-author subject-header ">{{training.author}}</h4>
-			<p>{{training.description}}</p>
-		</div>
+    <div class="col-md-6 margin-top-40">
+      <h3 class="course-title"><a href="{{training.page}}">{{training.name}}</a></h3>
+      <h4 class="course-author subject-header ">{{training.author}}</h4>
+      <p>{{training.description}}</p>
+    </div>
 
-		{% endfor %}
-	</div>
+    {% endfor %}
+  </div>
 
 </div>

@@ -147,6 +147,12 @@ publications-tweet_feed:
 publications-post:
    author_title: By
    date_title: Posted
+services-header:
+   title: Crafted solutions
+   subtitle: Tailored to you
+services-subheader:
+   title: Always listening, constantly evolving
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac purus tortor. Praesent et laoreet lorem. Curabitur aliquet magna velit, vitae tincidunt magna laoreet et. Fusce cursus erat at nunc aliquet cursus. Praesent elit tortor, ornare vitae velit at, hendrerit dictum nunc. Nam cursus convallis enim vitae commodo. Nulla facilisi. Nulla quis felis vel risus dignissim sollicitudin ut ut lacus. Curabitur lacus ex, lacinia sed nunc luctus, dignissim tristique massa. Duis in purus sit amet nunc varius finibus id sed.
 services-software_creation:
    title: Software creation
    subtitle: <p><strong>We will help you build well-crafted software that is valuable to your business.</strong></p>
