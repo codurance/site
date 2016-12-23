@@ -27,7 +27,7 @@
 				<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
 			</div>
 			<ul class="list-inline blog-box-info">
-				<li><span>By</span> {{ post.author | author_links }}</li>
+        <li>{% t publications-post.author_title %} {{ post.author | author_links }} </li>
 				<li>|</li>
 				<li><i class="fa fa-clock-o"></i> {{ date | date_to_string }}</li>
 			</ul>
