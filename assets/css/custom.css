@@ -555,6 +555,9 @@ li > a {
 
 
 /* Services pages */
+.services-section {
+    
+}
 .services-section .header {
     text-align: center;
     background-color: #C0C0C0;
@@ -562,9 +565,9 @@ li > a {
 }
 
 .services-section .title {
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    text-align: center;
 }
 
 .services-section .title h2 {
@@ -572,13 +575,23 @@ li > a {
 }
 
 .services-section .big-title {
+    height: 120px;     
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    background-color: silver;
+    margin-bottom: 40px;
+}
+
+.services-section .big-title:hover {
     background-color: gray;
 }
 
-.services-section .big-title h3 {
+.services-section .big-title a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
     font-weight: bold;
+    line-height: 120px;
 }
 
 .services-section .header h3 {
