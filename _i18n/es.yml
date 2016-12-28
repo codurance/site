@@ -153,6 +153,10 @@ services-header:
 services-subheader:
    title: Siempre escuchando, en constante evolución 
    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac purus tortor. Praesent et laoreet lorem. Curabitur aliquet magna velit, vitae tincidunt magna laoreet et. Fusce cursus erat at nunc aliquet cursus. Praesent elit tortor, ornare vitae velit at, hendrerit dictum nunc. Nam cursus convallis enim vitae commodo. Nulla facilisi. Nulla quis felis vel risus dignissim sollicitudin ut ut lacus. Curabitur lacus ex, lacinia sed nunc luctus, dignissim tristique massa. Duis in purus sit amet nunc varius finibus id sed.
+services-section_1:
+   title: Ayudándote con ...
+services-section_2: 
+   title: Negocios a los que hemos ayudado
 services-software_creation:
    title: Creación de software
    subtitle: <p><strong>Le ayudaremos a crear software bien elaborado que aporta valor a su negocio.</strong></p>
