@@ -560,13 +560,14 @@ li > a {
 }
 
 .services-section .header {
-  background-color: #f7f7f7;
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
 
 .services-section .header h3 {
   margin-bottom: 0px;
+  color: white;
+  font-weight: bold;
 }
 
 .services-subheader {
@@ -585,14 +586,14 @@ li > a {
   margin-bottom: 40px;
 }
 
-.services-section .title h2 {
-  font-weight: bold;
-}
-
 .services-section .big-title {
   height: 120px;     
   text-align: center;
   background-color: silver;
+}
+
+.services-section .body .element {
+  padding: 10px 10px 10px 10px;
 }
 
 .services-section .big-title:hover {
@@ -613,14 +614,18 @@ li > a {
 
 .services-section .body {
   text-align: center;
-  background-color: silver;
   text-align: left;
-  padding: 16px 16px 16px 16px;
 }
 
 .services-section .body h4 {
   margin-top: 0px;
   color: white;
+  font-weight: bold;
+}
+
+.services-section .body p {
+  color: white;
+  font-size: 12px
 }
 
 .subject-header {
