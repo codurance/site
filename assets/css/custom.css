@@ -587,29 +587,11 @@ li > a {
 }
 
 .services-section .big-title {
-  height: 120px;     
   text-align: center;
-  background-color: silver;
 }
 
 .services-section .body .element {
   padding: 10px 10px 10px 10px;
-}
-
-.services-section .big-title:hover {
-  background-color: gray;
-}
-
-.services-section .big-title a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 100%;
-  line-height: 120px;
-}
-
-.services-section .big-title a:hover {
-  color: #e67e22
 }
 
 .services-section .body {
