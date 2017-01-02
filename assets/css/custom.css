@@ -1108,3 +1108,21 @@ h2.gray-underline:after {
 .latest-publications .item > h4 {
   margin: 15px 0px 0px 0px;
 }
+
+.button-with-bg-image span {
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    color: #fff;
+}
