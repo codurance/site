@@ -74,7 +74,7 @@ index-software_craftsmanship-lscc:
    link_title: Join the community on Meetup ...
 footer:
    title: Software is our passion.
-   subtitle: We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
+   subtitle: We are software craftsmen. We build well-crafted software for our clients, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
    registration_number: Company Registration No
 footer-latest_blog:
    title: Latest Blogs
@@ -152,7 +152,7 @@ services-header:
    subtitle: Tailored to you
 services-subheader:
    title: Always listening, constantly evolving
-   subtitle: We understand that everyone is diffrent and will tailor our approach according to the needs of your business and organisation. We will help you build well-crafted software that is valuable to your needs. We provide, <strong>teams</strong> to create valuable, in-time, and quality software, <strong>expert advise</strong> to fast-track your initiatives, and <strong>training and coaching</strong> to better equip your developers with the right skills and attitudes. 
+   subtitle: We understand that everyone is different and will tailor our approach according to the needs of your business and organisation. We will help you build well-crafted software that is relevant to your needs. We provide <strong>teams</strong> to create valuable, in-time, and quality software, <strong>expert advise</strong> to fast-track your initiatives, and <strong>training and coaching</strong> to better equip your developers with the right skills and attitudes. 
 services-section_1:
    title: We can help with ...
 services-section_2:
@@ -166,14 +166,13 @@ services-software_creation-embedded_craftsmen:
    subtitle: Our craftsmen can enhance your teams to provide expertise in specific technologies. They can also form the core of your teams to help you instil XP practices and Software Craftsmanship values from the outset.
 services-software_creation-self_contained_teams:
    title: Self-contained Teams
-   subtitle: We will provide fully functional teams to help you deliver your project in the most effective and timely manner. Our craftsmen cover all the roles required for an Agile software developement team. We have experts in; UX and UI design, Mobile, Front End and Back End Development, DevOps, and Testing. 
-           <p></p>
+   subtitle: We will provide fully functional teams to help you deliver your project in the most effective and timely manner. Our craftsmen cover all the roles required for an agile software development team. We have experts in UX and UI design, Mobile, Front End and Back End Development, DevOps culture and Testing.
 services-software_creation-continous_delivery:
    title: Continuous Delivery Pipeline
    subtitle: We will help you tailor a Continuous Delivery Pipeline so that your software is responsive to your needs. We are experts in technologies that are enablers for Continuous Delivery. We appreciate how the development team and business need to be aligned to realise the full potential of this approach.
 services-software_creation-ux_ui_design:
    title: UX & UI Design
-   subtitle: We have expertise in designing visual identity and user experiences. We understand how this effort fits best in an Agile Softeware Deveopment environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort.
+   subtitle: We have expertise in designing visual identity and user experiences. We understand how this effort fits best in an Agile Software Development environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort. 
 services-expert_advice:
    title: Expert Advice
    subtitle: <p><strong>You can draw from our expertise to fast track your initiatives.</strong></p>
@@ -184,13 +183,13 @@ services-expert_advice-enterprise_architecture:
    subtitle: Our Craftsmen have a wealth of expertise and experiences in dealing with large scale systems in finance, media and government. We will review your approach and help you make the most effective decisions for the future.
 services-expert_advice-software_architecture_and_design:
    title: Software Architecture & Design
-   subtitle: We will review and help create an apporach to evolve your architecture towards an agreed vision. We have deep knowledge and experience in cloud technologies and enterprise architectures, including Domain Driven Design, Microservices, Event Sourcing and Serverless.
+   subtitle: We will review and help create an approach to evolve your architecture towards an agreed vision. We have deep knowledge and experience in cloud technologies and enterprise architectures, including Domain Driven Design, Microservices, Event Sourcing and Serverless Architectures.
 services-expert_advice-continous_delivery:
    title: Continuous Delivery
-   subtitle: We are experts in creating continuous delivery pipelines. We understand that it is not only a technical challenge but also an organisational one. We help our customers evolve their approach towards continuous delivery - aligning their business, teams and technology.
+   subtitle: We are experts in creating continuous delivery pipelines. We understand that it is not only a technical challenge but also an organisational one. We help our clients evolve their approach towards continuous delivery - aligning their business, teams and technology.
 services-expert_advice-xp:
    title: Extreme Programming (XP) Practices
-   subtitle: XP practices are core to every Craftsman in Codurance. We love to coach and mentor our customers in adopting these. We advise on how to adopt XP practices and Softeware Craftsmanship values to bring about positive change in software development teams.
+   subtitle: XP practices are core to everyone at Codurance. We love to coach and mentor our clients in adopting them. We advise on how to adopt XP practices and Software Craftsmanship values to bring about positive change in software development teams.
 services-training_coaching:
    title: Training & Coaching
    subtitle: <p><strong>We provide a range of training opportunities that typically run for 2 days.</strong></p>
