@@ -152,7 +152,7 @@ services-header:
    subtitle: Tailored to you
 services-subheader:
    title: Always listening, constantly evolving
-   subtitle: We understand that everyone is diffrent and will tailor our approach according to the needs of your business and organisation. We can help you build well-crafted software that is valuable to your needs. We can provide you with, teams to create valuable and quality software, expert advise to fast-track your initiatives, and training and coaching to better equip your developers with the right skills and attitudes. 
+   subtitle: We understand that everyone is diffrent and will tailor our approach according to the needs of your business and organisation. We will help you build well-crafted software that is valuable to your needs. We provide, <strong>teams</strong> to create valuable, in-time, and quality software, <strong>expert advise</strong> to fast-track your initiatives, and <strong>training and coaching</strong> to better equip your developers with the right skills and attitudes. 
 services-section_1:
    title: We can help with ...
 services-section_2:
@@ -160,7 +160,7 @@ services-section_2:
 services-software_creation:
    title: Software creation
    subtitle: <p><strong>We will help build well-crafted software that is valuable to your business.</strong></p>
-           <p>Our craftsmen have honed their skills in technologies and practices so that they deliver with quality on time. we can engage with you according to your needs.</p>
+           <p>Our craftsmen have honed their skills in technologies and practices so that they deliver with quality on time. we will adapt our practices according to your needs.</p>
 services-software_creation-embedded_craftsmen:
    title: Embedded Craftsmen
    subtitle: Our craftsmen can enhance your teams to provide expertise in specific technologies. They can also form the core of your teams to help you instil XP practices and Software Craftsmanship values from the outset.
@@ -170,7 +170,7 @@ services-software_creation-self_contained_teams:
            <p></p>
 services-software_creation-continous_delivery:
    title: Continuous Delivery Pipeline
-   subtitle: We will help you tailor a Continuous Deliver Pipeline so that your software is responsive to your needs. We are experts in technologies that are enablers for Continuous Delivery. We understand how the development team and business need to be aligned to realise the full potential of this approach.
+   subtitle: We will help you tailor a Continuous Delivery Pipeline so that your software is responsive to your needs. We are experts in technologies that are enablers for Continuous Delivery. We appreciate how the development team and business need to be aligned to realise the full potential of this approach.
 services-software_creation-ux_ui_design:
    title: UX & UI Design
    subtitle: We have expertise in designing visual identity and user experiences. We understand how this effort fits best in an Agile Softeware Deveopment environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort.
