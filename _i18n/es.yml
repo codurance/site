@@ -185,8 +185,7 @@ services-expert_advice-enterprise_architecture:
            <p>Revisaremos el enfoque y te ayudaremos a tomar las decisiones mas eficaces para el futuro</p>
 services-expert_advice-software_architecture_and_design:
    title: Arquitectura de Software & Diseño
-   subtitle: <p>Revisaremos su arquitectura actual y le ayudaremos a crear una vista sobre el riesgo de su solución software actual. Podemos asesorar sobre la mejor manera de evolucionar la arquitectura para reducir dichos riesgos.</p>
-           <p>Si estás buscando como evolucionar su sistema a microservicios o como crear una arquitectura basada en microservicios desde cero, te ayudaremos a entender mejor el enfoque de acuerdo a sus necesidades.</p>
+   subtitle: Revisaremos su arquitectura actual y le ayudaremos a crear una vista sobre el riesgo de su solución software actual. Podemos asesorar sobre la mejor manera de evolucionar la arquitectura para reducir dichos riesgos.
 services-expert_advice-continous_delivery:
    title: Continuous Delivery
    subtitle: Somos expertos en la creación de continous delivery pipelines. Entendemos que no es sólo un desafío técnico, sino también un desafío organizativo. Ayudamos a los clientes a evolucionar su enfoque hacia continous delivery alineando sus negocios, equipos y tecnología.
