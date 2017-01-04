@@ -166,13 +166,13 @@ services-software_creation-embedded_craftsmen:
    subtitle: Our craftsmen can enhance your teams to provide expertise in specific technologies. They can also form the core of your teams to help you instil XP practices and Software Craftsmanship values from the outset.
 services-software_creation-self_contained_teams:
    title: Self-contained Teams
-   subtitle: We will provide fully functional teams to help you deliver your project in the most effective and timely manner. Our craftsmen cover all the roles required for an agile software development team. We have experts in UX and UI design, Mobile, Front End and Back End Development, DevOps culture and Testing.
+   subtitle: We will provide fully functional teams to help you deliver your project in the most effective and timely manner. Our craftsmen cover all the roles required for an agile software development team. We have experts in UX and UI design, Mobile, Front End and Back End Development, DevOps and Testing.
 services-software_creation-continous_delivery:
    title: Continuous Delivery Pipeline
    subtitle: We will help you tailor a Continuous Delivery Pipeline so that your software is responsive to your needs. We are experts in technologies that are enablers for Continuous Delivery. We appreciate how the development team and business need to be aligned to realise the full potential of this approach.
 services-software_creation-ux_ui_design:
    title: UX & UI Design
-   subtitle: We have expertise in designing visual identity and user experiences. We understand how this effort fits best in an Agile Software Development environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort. 
+   subtitle: We have expertise in designing user experiences. We understand how this effort fits best in an Agile Software Development environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort. 
 services-expert_advice:
    title: Expert Advice
    subtitle: <p><strong>You can draw from our expertise to fast track your initiatives.</strong></p>
@@ -194,6 +194,7 @@ services-training_coaching:
    title: Training & Coaching
    subtitle: <p><strong>We provide a range of training opportunities that typically run for 2 days.</strong></p>
            <p>Our training courses help teams get better at Test Driven Development, Continuous Integration and Deployment, Domain-Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.</p>
+           <p>We also offer training to leverage Cloud and DevOps technologies, to create a Continous Delivery Pipeline.</p>
            <p>We help teams in any phase of a project where they may benefit from focused training.</p>
 clients:
    software_creation_title: Software Creation
