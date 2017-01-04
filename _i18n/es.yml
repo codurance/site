@@ -117,7 +117,7 @@ company-how_we_work-continous_delivery:
    subtitle: Entendemos que Continous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de despliegues y en la creación de continous delivery pipelines. Logramos continous delivery a través de una atención continua a las necesidades del negocio, a la calidad del software, y a las prácticas de XP.
 company-how_we_work-xp:
    title: Programación Extrema (XP)
-   subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para todos en Codurance. Lo cual encaja perfectamente con nuestros valores de craftsmanship. Somos expertos en estas prácticas y las usamos con éxito. Llevamos a cabo cursos de formación públicos y eventos en la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
+   subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para todos en Codurance. Lo cual encaja perfectamente con nuestros valores de Software Craftsmanship. Somos expertos en estas prácticas y las usamos con éxito. Llevamos a cabo cursos de formación públicos y eventos en la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
 company-how_we_work-devops:
    title: DevOps
    subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliegue, operación, y mantenimiento de software son responsabilidad del equipo de desarrollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
@@ -190,8 +190,8 @@ services-expert_advice-continous_delivery:
    title: Continuous Delivery
    subtitle: Somos expertos en la creación de Continuous Delivery Pipelines. Entendemos que no es sólo un desafío técnico, sino también un desafío organizativo. Ayudamos a nuestros clientes a evolucionar su enfoque hacia Continuous Delivery -  alineando sus negocios, equipos y tecnología.
 services-expert_advice-xp:
-   title: Prácticas de Programación Extrema
-   subtitle: Las prácticas de programación extrema son la esencia de cada crafstman en Codurance. Nos encanta formar y guiar a nuestros clientes en la adopción de prácticas de programación extrema. Le aconsejamos sobre cómo adoptar las prácticas para lograr un cambio positivo en los equipos.
+   title: Prácticas de Programación Extrema (XP)
+   subtitle: Las prácticas de programación extrema (XP) son la esencia de cada uno de nosotros en Codurance. Nos encanta formar y guiar a nuestros clientes en su adopción. Le aconsejamos sobre cómo adoptar las prácticas de XP y los valores de Software Craftsmanship para lograr un cambio positivo en los equipos de desarrollo de software.
 services-training_coaching:
    title: Formación & asesoría
    subtitle: <p><strong>Ofrecemos una gama de cursos de formación que generalmente tienen una duración de 2 días.</strong></p>
