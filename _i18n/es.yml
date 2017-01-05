@@ -197,6 +197,23 @@ services-training_coaching:
    subtitle: <p><strong>Ofrecemos una gama de cursos de formación que generalmente tienen una duración de 2 días.</strong></p>
            <p>Nuestros cursos de formación ayudan a los equipos a mejorar en Test Driven Development, Integración Continua y despliegues, Domain-Driven Design, Clean Code y principios SOLID, Behaviour Driven Development y en muchas otras prácticas de carácter técnico.</p>
            <p>Ayudamos a los equipos en cualquier fase de un proyecto en los que puedan beneficiarse de una formación enfocada.</p>
+services-contact-us: Contacta con nosotros para más información ...
+services-browse-training: Examine nuestros cursos de formación ...
+training-software-development-practices:
+   title: Prácticas de Desarrollo de Software
+   subtitle: Ofrecemos cursos para ayudar a los desarrolladores a adoptar prácticas como Test Driven Development, Continuous Integration, y Release Automation. También podemos personalizar nuestros cursos en base a las necesidades de su equipo.
+   link_title: Ver nuestros cursos ...
+training-software-architecture-and-cloud:
+   title: Arquitectura de Software y Cloud
+   subtitle: Revisaremos su solución actual y proveeremos cursos de architectura y tecnologías específicas de su proyecto. Por ejemplo, podemos preparar a su equipo para evolucionar su sistema hacia una solución basada en Microservicios, utilizando los servicios de AWS más adecuados.
+   link_title: Ver nuestros cursos ...
+training-technologies:
+   title: Tecnologías
+   subtitle: Proveemos cursos de creación de soluciones bien elaboradas, utilizando Java, C#, JavaScript, Swift, Scala, Clojure, F#, y Objective C. También ofrecemos cursos de&#58; Creación de continuous delivery pipelines, Git, Team City, Docker, y tecnologías específicas de AWS y Azure.
+   link_title: Ver nuestros cursos ...
+training-coaching-and-mentoring:
+   title: Asesoría & Mentoring
+   subtitle: Hemos suministrado con éxito programas de asesoría y mentoring personalizados de Software Craftsmanship a gran escala. Nuestros craftsmen adaptarán y suministrarán el programa de asesoría en base a las necesidades del equipo.
 clients:
    software_creation_title: Creación de Software
    expert_advice_title: Asesoramiento de expertos

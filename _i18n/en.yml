@@ -196,6 +196,23 @@ services-training_coaching:
            <p>Our training courses help teams get better at Test Driven Development, Continuous Integration and Deployment, Domain-Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.</p>
            <p>We also offer training to leverage Cloud and DevOps technologies, to create a Continous Delivery Pipeline.</p>
            <p>We help teams in any phase of a project where they may benefit from focused training.</p>
+services-contact-us: Contact us for more information ...
+services-browse-training: Browse our training courses ...
+training-software-development-practices:
+   title: Software Development Practices
+   subtitle: We offer training to help developers adopt practices such as Test Driven Development, Continuous Integration, and Release Automation. We can also customise our trainings according to the needs of your team.
+   link_title: See our courses ...
+training-software-architecture-and-cloud:
+   title: Software Architecture and Cloud
+   subtitle: We will review your current solution and provide training on architecture and technologies specific to your project. For example, we can train your team to evolve your system towards a Microservices based approach utilising the most suitable offerings from AWS.
+   link_title: See our courses ...
+training-technologies:
+   title: Technologies
+   subtitle: We provide training in creating well-crafted solutions using Java, C#, JavaScript, Swift, Scala, Clojure, F#, and Objective C. We also provide trainings in&#58; Building continuous delivery pipelines, Git, Team City, Docker, and AWS and Azure specific technolgies.
+   link_title: See our courses ...
+training-coaching-and-mentoring:
+   title: Coaching & Mentoring
+   subtitle: We have successfully delivered customised Software Craftsmanship coaching and mentoring programmes at a large scale. Our craftsmen will tailor and deliver the coaching programme according to the needs of the team.
 clients:
    software_creation_title: Software Creation
    expert_advice_title: Expert Advice
