@@ -219,6 +219,7 @@
 
 - id: cyplo
   name: Cyryl Płotnicki
+  image: /assets/img/custom/team/cyryl_plotnicki.jpg
   role: Software Craftsman
   fullDescription:
     <p> With about 10 years of experience in the industry Cyryl brings in the experience both in backend programming - mostly largish systems in the .Net and JVM worlds - as well as people management.</p>
