@@ -1,0 +1,47 @@
+- id: crafted_design
+  name: Crafted Design
+  author: Sandro Mancuso
+  description: Para desarrolladores experimentados que quieren mejorar en el diseño de soluciones bien elaboradas.
+  page: /services/training/crafted-design
+
+- id: crafting_code
+  name: Crafting Code
+  author: Sandro Mancuso
+  description: Para desarrolladores que quieren mejorar en escribir código limpio, testable y mantenible
+  page: /services/training/crafting-code
+
+- id: lambdas
+  name: Microservicios con AWS Lambdas
+  author: Mashooq Badar
+  description: Aprenda cómo construir y desplegar sus microservicios, usando la arquitectura server-less de AWS
+  page: /services/training/lambda-training
+
+- id: serverless
+  name: Arquitectura Serverless utilizando AWS
+  author: Mashooq Badar
+  description: Aprenda cómo evitar los problemas de construir aplicaciones web, usando la arquitectura server-less de AWS
+  page: /services/training/serverless-training
+
+- id: ead
+  name: Desarrollo de Aplicaciones Empresariales
+  author: Mashooq Badar
+  description: Para desarrolladores que quieren aprender cómo construir un sistema empresarial desde cero
+  page: /services/training/enterprise-application-development
+
+- id: fabric
+  name: Construyendo Microservicios Seguros con Microsoft Service Fabric
+  author: Steve Lydford & Alessandro Di Gioia
+  description: Aprenda cómo construir microservicios de alta disponibilidad y seguros, con Service Fabric y Azure
+  page: /services/training/service-fabric-training
+
+- id: docker
+  name: De cero a Continous Delivery con Docker
+  author: Robert Firek
+  description: Aprenda a utilizar las herramientas de Docker, para permitir continuous deployment, horizontal scalability & zero downtime.
+  page: /services/training/devops-training
+
+- id: oo_design
+  name: Práctica de Diseño Orientado a Objetos
+  author: Franziska Sauerwein
+  description: Para desarrolladores experimentados que quieren mejorar sus habilidades de diseño en lenguajes orientados a objetos.
+  page: /services/training/oo-design
