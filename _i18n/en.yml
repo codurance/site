@@ -157,6 +157,9 @@ services-section_1:
    title: We can help with ...
 services-section_2:
    title: Businesses we have helped
+   finance: FINANCE
+   retail: RETAIL
+   media: MEDIA
 services-software_creation:
    title: Software creation
    subtitle: <p><strong>We will help build well-crafted software that is valuable to your business.</strong></p>

@@ -157,6 +157,9 @@ services-section_1:
    title: Ayudándote con ...
 services-section_2:
    title: Negocios a los que hemos ayudado
+   finance: FINANZAS
+   retail: VENTA AL POR MENOR
+   media: MEDIOS DE COMUNICACIÓN
 services-software_creation:
    title: Creación de software
    subtitle: <p><strong>Le ayudaremos a crear una solución a medida para su Pipeline de Continuous Delivery (Continuous Delivery Pipeline), para que los equipos puedan responder a las necesidades. Somos expertos en tecnologías para Continuous Delivery. Nos damos cuenta de cómo el equipo de desarrollo y el negocio deben estar alineados para obtener el máximo provecho de este enfoque.</strong></p>
