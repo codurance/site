@@ -30,7 +30,7 @@ Isn’t that obvious? Surely no abstractions means minimal code right? Abstracti
 
 Composability is interesting. It actually helps us reduce code by allowing us to reuse the same abstraction in multiple places. However, the more elaborate the abstraction the more specific it is and thus not easy to reuse. And there lies another monster. Reusing abstractions is all well and good but if that abstraction is likely to change often then we have built our house on some very shaky foundations.
 
-So is that a case for smaller abstractions that are more generic in nature? Smaller abstractions are a no-brainer in my opinion. The Single Responsibility Principle in [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) and Fewer Elements in [4 Elements of Simple Design](http://martinfowler.com/bliki/BeckDesignRules.html) point to that. Abstractions remain valid for longer if they are small and serve a single purpose. 
+So is that a case for smaller abstractions that are more generic in nature? Smaller abstractions are a no-brainer in my opinion. The Single Responsibility Principle in [SOLID][1] and Fewer Elements in [4 Elements of Simple Design][2] point to that. Abstractions remain valid for longer if they are small and serve a single purpose. 
 
 But what about “generic in nature”? 
 
@@ -52,3 +52,6 @@ If comprehension require digging from one level of an abstraction to the ones be
 Dealing in abstractions is what we do, but we must be mindful that it is not without cost. Creating an abstraction should not be taken lightly - we must think them through and try to understand their cost and benefits. Getting some wrong is inevitable but we should look to increase the half-life of our abstractions and use them to aid, rather than hinder, comprehension and localise change.
 
 Volatile abstractions are not always avoidable. But if we know an abstraction to be volatile then we must try to isolate the impact in case it needs to change.
+
+[1]: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
+[2]: http://martinfowler.com/bliki/BeckDesignRules.html
