@@ -71,7 +71,7 @@ I think that automated testing and test-driven development are not practiced eno
 Learn how to write tests and how to maintain them. Pair with someone who can teach you test driven development. If you cannot find someone like that amongst your colleagues look at a [software craftsmanship community](http://slack.softwarecraftsmanship.org/) next to where you live.
 
 ##Clean code principles##
-Learn how to write clean code from the start. [The book by Robert C Martin](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) is an excellent way to start. There is also plenty of content online (just check other articles on the [Codurance blog](https://www.codurance.com/publications)). Take the time to read some of that content and apply it. Ask your mentor or colleagues for feedback.
+Learn how to write clean code from the start. [The book by Robert C Martin](https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) is an excellent way to start. There is also plenty of content online (just check other articles on the [Codurance blog](https://codurance.com/publications)). Take the time to read some of that content and apply it. Ask your mentor or colleagues for feedback.
 
 #Programming is a social activity#
 Depending how much programming practice you’ve had before starting your career, you might still believe that a programmer’s day is spent sitting alone in front of their editor. You need to understand as soon as possible how much you win by working with others.
