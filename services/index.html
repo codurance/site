@@ -3,101 +3,157 @@ layout: default
 title: Services
 ---
 
-<!-- Software creation section-->
 
-<div class="container content" id="software-creation">
-	<div class="services-section">
-		<img src="/assets/img/custom/services/software_creation_icon_red.png" />
-		<h2 class="subject-header margin-bottom-40">{% t services-software_creation.title %}</h2>
-		{% t services-software_creation.subtitle  %}	
-	</div>
-
-  <div class="row">
-	<div class="col-md-6 margin-bottom-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-embedded_craftsmen.title %}</h3>
-		<p>{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
-	</div>
-
-	<div class="col-md-6">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-self_contained_teams.title %}</h3>
-		{% t services-software_creation-self_contained_teams.subtitle  %}	
-	</div>
-
-	</div>
-	
-  <div class="row">
-  <div class="col-md-6 margin-top-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-continous_delivery.title  %}</h3>
-		{% t services-software_creation-continous_delivery.subtitle %}	
-	</div>
-
-	<div class="col-md-6 margin-top-40">
-		<h3 class="subject-header margin-bottom-40">{% t services-software_creation-ux_ui_design.title %}</h3>
-		{% t services-software_creation-ux_ui_design.subtitle %}	
-	</div>
-
-	</div>
+<div class="breadcrumbs-v3 ourservices">
+  <div class="container text-center">
+    <h1>{% t services-header.title %}</h1>
+    <h1>{% t services-header.subtitle %}</h1>
+  </div>
 </div>
 
-<hr class="divider">
+<div class="gray-section">
 
-<!-- Expert advice section-->
+  <div class="services-subheader container">
+    <h2>{% t services-subheader.title %}</h2>
+    <p>{% t services-subheader.subtitle %}</p>
+  </div>
 
-<div class="container content" id="expert-advice">
-  <div class="services-section">
-    <img src="/assets/img/custom/services/expert_advice_icon_orange.png" />
-    <h2 class="subject-header margin-bottom-40">{% t services-expert_advice.title %}</h2>
-    {% t services-expert_advice.subtitle %}
+</div>
+
+<div class="services-section container">
+
+  <div class="title">
+    <h2>{% t services-section_1.title %}</h2>
   </div>
 
   <div class="row">
-    <div class="col-md-6 margin-bottom-40">
-      <h3 class="subject-header margin-bottom-40">{% t services-expert_advice-enterprise_architecture.title %}</h3>
-      {% t services-expert_advice-enterprise_architecture.subtitle %}
+
+    <!-- Software creation section-->
+    <div class="col-md-4 " id="software-creation">
+      <div class="panel panel-red equal-height-column">
+
+        <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+          <h3 class="panel-title">{% t services-software_creation.title %}</h3>
+        </div>
+
+        <div class="panel-body">
+            <h4>{% t services-software_creation-embedded_craftsmen.title %}</h4>
+            <p>{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
+            
+            <h4>{% t services-software_creation-self_contained_teams.title %}</h4>
+            <p>{% t services-software_creation-self_contained_teams.subtitle %}</p>		
+
+            <h4>{% t services-software_creation-continous_delivery.title %}</h4>
+            <p>{% t services-software_creation-continous_delivery.subtitle %}</p>
+
+            <h4>{% t services-software_creation-ux_ui_design.title %}</h4>
+            <p>{% t services-software_creation-ux_ui_design.subtitle %}</p>
+        </div>
+
+      </div>
+
     </div>
 
+    <!-- Expert advice section-->
+    <div class="col-md-4 " id="expert-advice">
+      <div class="panel panel-red equal-height-column">
+
+        <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+          <h3 class="panel-title">{% t services-expert_advice.title %}</h3>
+        </div>
+
+        <div class="panel-body">
+            <h4>{% t services-expert_advice-enterprise_architecture.title %}</h4>
+            <p>{% t services-expert_advice-enterprise_architecture.subtitle %}</p>
+
+
+            <h4>{% t services-expert_advice-software_architecture_and_design.title %}</h4>
+            <p>{% t services-expert_advice-software_architecture_and_design.subtitle %}</p>
+
+            <h4>{% t services-expert_advice-continous_delivery.title %}</h4>
+            <p>{% t services-expert_advice-continous_delivery.subtitle %}</p>
+
+            <h4>{% t services-expert_advice-xp.title %}</h4>
+            <p>{% t services-expert_advice-xp.subtitle %}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- training section -->
+    <div class="col-md-4" id="training">
+      <div class="panel panel-red equal-height-column">
+
+      <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+        <h3 class="panel-title">{% t services-training_coaching.title %}</h3>
+      </div>
+
+      <div class="panel-body">
+          <h4>{% t training-software-development-practices.title %}</h4>
+          <p>{% t training-software-development-practices.subtitle %} <a href="/services/training">{% t training-software-development-practices.link_title %}</a></p>
+
+          <h4>{% t training-software-architecture-and-cloud.title %}</h4>
+          <p>{% t training-software-architecture-and-cloud.subtitle %} <a href="/services/training">{% t training-software-architecture-and-cloud.link_title %}</a></p>
+
+          <h4>{% t training-technologies.title %}</h4>
+          <p>{% t training-technologies.subtitle %} <a href="/services/training">{% t training-technologies.link_title %}</a></p>
+
+          <h4>{% t training-coaching-and-mentoring.title %}</h4>
+          <p>{% t training-coaching-and-mentoring.subtitle %}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-6">
-      <h3 class="subject-header margin-bottom-40">{% t services-expert_advice-software_architecture_and_design.title %}</h3>
-      {% t services-expert_advice-software_architecture_and_design.subtitle %}
+      <div class="text-center margin-top-20">
+        <a href="/company#contactus" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
+      </div>
     </div>
-
+		<div class="col-md-6">
+      <div class="text-center margin-top-20">
+        <a href="/services/training" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
+      </div>
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6 margin-top-40">
-      <h3 class="subject-header margin-bottom-40">{% t services-expert_advice-continous_delivery.title %}</h3>
-      <p>{% t services-expert_advice-continous_delivery.subtitle %}</p>
+</div>
+
+<div class="services-section gray-section">
+
+  <div class="container">
+
+    <div class="title">
+      <h2>{% t services-section_2.title %}</h2>
     </div>
 
-    <div class="col-md-6 margin-top-40">
-      <h3 class="subject-header margin-bottom-40">{% t services-expert_advice-xp.title %}</h3>
-      <p>{% t services-expert_advice-xp.subtitle %}</p>
+    <div class="row">
+				<div class="col-md-4">
+							<div class="service">
+									<a class="button-with-bg-image"   href="/clients#finance">
+											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+											<span>{% t services-section_2.finance %}</span>
+									</a>
+							</div>
+					</div>
+					<div class="col-md-4">
+							<div class="service">
+									<a class="button-with-bg-image"  href="/clients#retail">
+											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+											<span>{% t services-section_2.retail %}</span>
+									</a>
+							</div>
+					</div>
+					<div class="col-md-4">
+							<div class="service">
+									<a class="button-with-bg-image"  href="/clients#media">
+											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+											<span>{% t services-section_2.media %}</span>
+									</a>
+							</div>
+					</div>
     </div>
-
   </div>
 </div>
 
-<hr class="divider">
-
-<!-- training section -->
-
-<div class="container content" id="training">
-	<div class="services-section">
-		<img src="/assets/img/custom/services/training_coaching_icon_yellow.png" />
-		<h2 class="subject-header margin-bottom-40">{% t services-training_coaching.title %}</h2>
-		{% t services-training_coaching.subtitle %}
-	</div>
-	<div class="row sorting-grid">
-
-		{% for training in site.data.trainings %}
-
-		<div class="col-md-6 margin-top-40">
-			<h3 class="course-title"><a href="{{training.page}}">{{training.name}}</a></h3>
-			<h4 class="course-author subject-header ">{{training.author}}</h4>
-			<p>{{training.description}}</p>
-		</div>
-
-		{% endfor %}
-	</div>
-
-</div>
