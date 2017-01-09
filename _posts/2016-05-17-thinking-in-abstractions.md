@@ -14,7 +14,7 @@ tags:
 - abstractions
 ---
 
-Recent issues of the [Clojure Gazette](http://www.clojuregazette.com/archive.html) have been discussing abstractions, and it's got me thinking. 
+Recent issues of the [Clojure Gazette](http://www.clojuregazette.com/) have been discussing abstractions, and it's got me thinking. 
 
 I am wary of needless abstractions and have seen many codebases, some of them I contributed to, that are essentially a mindless mess of half-backed abstractions.
 
