@@ -1126,3 +1126,13 @@ h2.gray-underline:after {
     -webkit-align-items: center;
     color: #fff;
 }
+
+.row.team div.col-md-2 {
+    height: 55vw;
+}
+
+@media (min-width: 768px){
+ .row.team div.col-md-2{
+    height: 17vw;
+	}
+}
