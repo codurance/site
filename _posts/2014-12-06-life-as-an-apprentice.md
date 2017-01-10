@@ -55,7 +55,7 @@ You see, creating a piece of software is really important. But when it comes to 
 
 ### Is that fence painted yet?
 
-![](http://www.jeffgothelf.com/blog/wp-content/uploads/2011/07/Daniel-Larusso-Ralph-Macchio.jpg)
+<image class='img img-responsive' src='/assets/img/custom/blog/2014_12_06_apprentice/painting-the-fence.jpg'> 
 
 The concepts we are trying to learn are arguably, quite basic and easy to understand. But they do not always translate seamlessly when it comes to implementation.
 
