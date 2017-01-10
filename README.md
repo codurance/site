@@ -69,7 +69,7 @@ docker logs -f codurance-site
 
 ## Deploying to Production
 
-When you push the *master* branch, Travis CI will kick off [the deployment build](https://travis-ci.org/codurance/site), which will run the tests, generate the site and push it to the *gh-pages* branch.
+When you push the *master* branch, Jenkins will kick off the deployment build, which will run the tests, generate the site and push it to the *gh-pages* branch.
 
 If you want to push code without deploying a new version of the site, make sure you work in a feature branch, rather than on *master* directly.
 
