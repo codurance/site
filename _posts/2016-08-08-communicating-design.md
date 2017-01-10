@@ -150,10 +150,12 @@ Communicating design is as important as designing. Keeping design locked in deve
 
 [Sequence diagram](https://en.wikipedia.org/wiki/Sequence_diagram)
 
-[State diagram(UML)](https://en.wikipedia.org/wiki/State_diagram_(UML)
+[State diagram(UML)][1]
 
 [Modeling Language](https://en.wikipedia.org/wiki/Modeling_language#Textual_types)
 
 [Textual vs Graphical Models](http://modeldrivensoftware.net/forum/topics/textual-v-graphical-models)
 
 [Text-based Modeling](http://www.se-rwth.de/~rumpe/publications20042008/Textbased-Modeling.pdf)
+
+[1]: https://en.wikipedia.org/wiki/State_diagram_(UML)

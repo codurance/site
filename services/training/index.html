@@ -18,7 +18,12 @@ title: Training
 
     <h2 class="title-v2">{% t services-training_coaching.our_courses %}</h2>
 
-       {% for training in site.data.trainings %}
+     {% if site.lang == "es" %}
+       {% assign trainings_file = site.data.trainings_es %}
+     {% else %}
+       {% assign trainings_file = site.data.trainings_en %}
+     {% endif %}
+       {% for training in trainings_file %}
          {% assign loopindex = forloop.index | modulo: 3 %}
          {% if loopindex == 1 %}
           <div class="row news-v1">

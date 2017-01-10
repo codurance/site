@@ -157,6 +157,9 @@ services-section_1:
    title: Ayudándote con ...
 services-section_2:
    title: Negocios a los que hemos ayudado
+   finance: FINANZAS
+   retail: RETAIL
+   media: MEDIOS
 services-software_creation:
    title: Creación de software
    subtitle: <p><strong>Le ayudaremos a crear una solución a medida para su Pipeline de Continuous Delivery (Continuous Delivery Pipeline), para que los equipos puedan responder a las necesidades. Somos expertos en tecnologías para Continuous Delivery. Nos damos cuenta de cómo el equipo de desarrollo y el negocio deben estar alineados para obtener el máximo provecho de este enfoque.</strong></p>
@@ -231,7 +234,7 @@ clients-retail:
    title: Venta al por menor
    subtitle: Nuestros clientes de venta al por menor, especialmente en la gestión de la cadena de suministro, se encargan de algunos de los sistemas empresariales más complejos. Su sistema para los consumidores también requiere una experiencia e interfaz de usuario convincentes para asegurar la satisfacción y fidelidad de sus clientes. Nuestro foco en la artesanía y experiencia en sistemas empresariales de alta escalabilidad nos hacen un socio ideal.
    tesco_description: Tesco es un minorista líder. Hemos estado trabajando con ellos para crear la nueva generación de servicios de reparto a domicilio y previsión de suministro. También estamos ayudando a mejorar las cualificaciones profesionales de sus propios equipos de desarrollo.
-   asos_description: ASOS es el minorista de moda online independiente y belleza más grande de Reino Unido. Nuestros craftsmen están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
+   asos_description: ASOS es el minorista online de moda y belleza más grande de Reino Unido. Nuestros craftsmen están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
    coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas dar a sus clientes planes de tarjetas y vales, basados en su fidelidad.
 clients-media:
    title: Medios de comunicación y entretenimiento
