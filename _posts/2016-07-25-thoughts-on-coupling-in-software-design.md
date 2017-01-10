@@ -20,7 +20,7 @@ Coupling is a software metric that describes how closely connected two routines 
 Having modules A and B, the more knowledge about B is required in order to understand A, the more closely connected is A to B. The fact that one module needs to be inspected in order to understand the operation of another is an indication of a degree of interconnection, even if the degree of interconnection is not known.
 
 Coupling is a measure of the strength of that interconnection. Coupling is affected by the type of connections between modules, interface complexity, information flow between module connections, and binding time of module connections.
-Coupling is usually contrasted with [cohesion](http://www.codurance.com/software-creation/2016/03/03/cohesion-cornerstone-software-design/), e.g., low coupling translates into high cohesion and vice-versa.
+Coupling is usually contrasted with [cohesion](https://www.codurance.com/software-creation/2016/03/03/cohesion-cornerstone-software-design/), e.g., low coupling translates into high cohesion and vice-versa.
 
 
 ## Levels of Coupling

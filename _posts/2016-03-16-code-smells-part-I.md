@@ -267,4 +267,4 @@ In general, bloaters are viewed as code that, over time, "gets out of hand".
 Remember, code smells sometimes can't be removed, but it's good to know that they are there and you know **why** they are there.
 
 [1]: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
-[2]: https://en.wikipedia.org/wiki/Single_responsibility_principle)
+[2]: https://en.wikipedia.org/wiki/Single_responsibility_principle
