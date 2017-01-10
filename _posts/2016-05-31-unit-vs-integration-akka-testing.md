@@ -136,10 +136,10 @@ Another interesting class is `TestProbe`. If we have several actors in our integ
 }
 ```
 
-In [the previous post](http://codurance.com/2016/05/16/coordination-in-akka/) we introduced the actor factory in order to create an actor pool. Here `TestProbe` helps understand with better clarity as to who is sending and expecting the messages.
+In [the previous post](http://codurance.com/2016/05/25/coordination-in-akka/) we introduced the actor factory in order to create an actor pool. Here `TestProbe` helps understand with better clarity as to who is sending and expecting the messages.
 
 ## Summary
 
 Testability is one of the main assets of Akka. The biggest challenge is understanding what we want to test: internal business logic of the actor or the async exchange of messages between different actors.
 
-[Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/) | [Part 3](http://codurance.com/2016/05/10/finite-state-machines-with-akka/) | [Part 4](http://codurance.com/2016/05/16/publish-subscribe-model-in-kafka/) | [Part 5](http://codurance.com/2016/05/16/coordination-in-akka/)
+[Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/) | [Part 3](http://codurance.com/2016/05/10/finite-state-machines-with-akka/) | [Part 4](http://codurance.com/2016/05/16/publish-subscribe-model-in-kafka/) | [Part 5](http://codurance.com/2016/05/25/coordination-in-akka/)
