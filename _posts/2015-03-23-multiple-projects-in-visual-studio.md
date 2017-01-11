@@ -7,7 +7,7 @@ author: Pedro Santos
 image: 
     src: /assets/img/custom/blog/visual-studio-projects.jpg
 tags:
-- c#
+- CSharp
 - .NET
 - Visual-Studio
 - practices

@@ -48,8 +48,7 @@ Note that we are not going to fulfil the statementLines method yet. Instead we m
 
 <ul style="display: inline-block; list-style: none; text-align: left;">
 <li><span style="color: #388e3c; padding-right: 5px;">●</span><a href="https://github.com/CarlosMChica/AndroidBankKata/commit/8a262bf34a4f50d900996b22ac1465c24a219ffc">Green</a> - As described before, the production code for the StatementFormatter takes the lines from the statement, sort them in inverse chronological order and map them them to ViewStatementLines.</li>
-<li><span style="color: #1976d2; padding-right: 5px;">●</span><a href="https://github.com/CarlosMChica/AndroidBankKata/commit/2b0755e733a7ee570f8fcd
-a46d5ca6975f50f5a5">Refactor</a> - We extracted a method that maps a line in the production code and do some clean up in the test code.</li>
+<li><span style="color: #1976d2; padding-right: 5px;">●</span><a href="https://github.com/CarlosMChica/AndroidBankKata/commit/2b0755e733a7ee570f8fcda46d5ca6975f50f5a5">Refactor</a> - We extracted a method that maps a line in the production code and do some clean up in the test code.</li>
 </ul>
 
 Once again, we run the acceptance test to check the progress and now it guides us to the lines method in the Statement class (the one that we just mocked in the previous inner loop to implement the StatementFormatter). Let's get rid of the exception and jump into the next inner loop.
