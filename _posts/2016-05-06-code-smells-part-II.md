@@ -343,7 +343,7 @@ Oh boy! This kind of code smells are the ones you really want to avoid. These ar
 
 #### Divergent Change
 
-This is the case when you find yourself changing the same class for several different reasons. This means that you are violating the [Single Responsibility Principle](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design) (which has to do with separation of concerns).
+This is the case when you find yourself changing the same class for several different reasons. This means that you are violating the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) (which has to do with separation of concerns).
 
 The refactoring technique applied here is **_Extract Class_** since you want to extract the different behaviours into different classes.
 
