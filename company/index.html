@@ -23,8 +23,16 @@ title: Company
                 <div class="headline">
 			<h2>{% t company-the_team.title %}</h2>
                 </div>
-		<div class="row team margin-bottom-10">
+			{% assign numberOfElements = 0 %}
+			{% assign arraySize = site.data.team size %}
+			{% assign numberOfElementsDisplayed = 0 %}
+			
 			{% for member in site.data.team %}
+				{% assign numberOfElements = numberOfElements | plus: 1 %}
+				 {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
+			{% if numberOfElements == 1 %}
+			<div class="row team margin-bottom-10">
+			{% endif %}
 			<!-- TEAM MEMBER -->
 			<div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
 				<a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
@@ -68,8 +76,11 @@ title: Company
 					</div>
 				</div>
 			</div>
+		{% if numberOfElements == 6 || nbElementDisplayed == arraySize %}
+		{% assign numberOfElements = 0 %}
+			</div>
+		{% endif %}
 			{% endfor %}
-		</div>
             </div>
             <div class="margin-bottom-40">
                 <a id="ourculture"></a>
