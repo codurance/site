@@ -41,5 +41,5 @@ A qualified opinion, given as advice, provides the receiver more information and
 
 *Note: this post is also an opinion at the “intuition” level, deduced from my experiences. If you are interested in better formulating your thoughts and ideas then you may find the theory on [Critical Thinking](https://en.wikipedia.org/wiki/Critical_thinking) quite helpful.*
 
-<sup>1</sup> In my opinion based on numerouse experiences.
+<sup>1</sup> In my opinion based on numerous experiences.
 
