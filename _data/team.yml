@@ -227,3 +227,15 @@
     <p> Outside of work, Cyryl likes to relax by taking part in the local hackerspace community, making electronics and machine parts. </p>
   twitter: cyplo
   github: cyplo
+
+- id: christian
+  name: Christian Panadero Martinez
+  image: /assets/img/custom/team/christian_panadero.jpg
+  role: Software Craftsman
+  fullDescription: >
+    <p>Software craftsman who has worked in Spain (Madrid and Valencia) and now is based in London. Always interested in improving his skills.</p>
+    <p>Christian started his career as a backend developer but some years later gave a switch and started developing mobile applications. After some years, he decided to go back to the backend world to continue learning new technologies and to work on more complex domains. Currently he is interested in test driven development, domain driven design and he is learning functional programming as his second programming paradigm.</p>
+    <p>He is really into mechanical keyboards, blogging and loves snowboarding.</p> 
+  twitter: panavtec
+  github: panavtec
+
