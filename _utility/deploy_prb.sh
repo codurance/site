@@ -2,8 +2,9 @@
 set -e
 
 if [ "$#" -ne 3 ]; then
-  echo "Invalid argument count."
-  echo "Usage: $0 AWS_REGION WEBSITE_INDEX_DOCUMENT BUCKET_NAME"
+  echo "Insufficient arguments, you have only provided: \"$@\", see usage and example for further assistance."
+  echo -e "Usage: $0 AWS_REGION WEBSITE_INDEX_DOCUMENT BUCKET_NAME\n"
+  echo "Example: $0 eu-west-1 index.html a-bucket-name"
   exit 1
 fi
 
