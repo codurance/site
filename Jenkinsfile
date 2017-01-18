@@ -22,8 +22,8 @@ node('master') {
         BUCKET_NAME=sh(script: "_utility/normalize_bucket_name.sh site-$BRANCH_NAME", returnStdout: true).trim()
         sh "_utility/deploy_prb.sh $AWS_REGION $WEBSITE_INDEX $BUCKET_NAME"
 
-        BUCKET_URL="https://${BUCKET_NAME}.s3.amazonaws.com/$WEBSITE_INDEX"
-        SHORTEN_URL=sh(script: "_utility/shorten_url.sh $BUCKET_URL", returnStdout: true).trim()
+        PREVIEW_SITE_URL="https://${BUCKET_NAME}.s3.amazonaws.com/$WEBSITE_INDEX"
+        SHORTEN_URL=sh(script: "_utility/shorten_url.sh $PREVIEW_SITE_URL", returnStdout: true).trim()
         setBuildStatus("Deployed: $SHORTEN_URL", 'SUCCESS');
     }
 
