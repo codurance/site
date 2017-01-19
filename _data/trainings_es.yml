@@ -46,7 +46,7 @@
   description: Para desarrolladores experimentados que quieren mejorar sus habilidades de diseño en lenguajes orientados a objetos.
   page: /services/training/oo-design
 
-- id: test_app
+- id: crafting_swift_apps
   name: Craftmanship Aplicado a Apps para Mobiles en Swift
   author: Ana Nogal
   description: Para desarrolladores móviles experimentados que no solo les importa crear aplicaciones bonitas, sino que, también quieran crear aplicaciones fiables.
