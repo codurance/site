@@ -15,6 +15,7 @@ dependencies:
     - gem install rspec-core -v '3.4.1'
     - gem install jekyll
     - sudo apt-get install jq
+    - aws configure set preview.cloudfront true
 checkout:
   post:
     - bundle install
