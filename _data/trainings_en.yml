@@ -17,7 +17,7 @@
   page: /services/training/lambda-training
 
 - id: serverless
-  name: Serverless architecture using AWS
+  name: Serverless Architecture Using AWS
   author: Mashooq Badar
   description: Learn how to take the pain out of building web apps using AWS server-less architecture
   page: /services/training/serverless-training
@@ -45,3 +45,9 @@
   author: Franziska Sauerwein
   description: For experienced developers who want to improve their design skills in object-oriented languages.
   page: /services/training/oo-design
+
+- id: test_app
+  name: Crafting Swift Mobile Apps
+  author: Ana Nogal
+  description: For experienced mobile developers that want to give the next step with their apps and not only build beautiful apps, but also reliable ones.
+  page: /services/training/crafting-swift-mobile-apps
