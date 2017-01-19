@@ -28,6 +28,5 @@ fi
 
 echo "Synchronizing bucket: $BUCKET_NAME"
 aws s3 sync . s3://$BUCKET_NAME --acl public-read
-aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id EML2BUMD54HSC --paths "/*"
 
