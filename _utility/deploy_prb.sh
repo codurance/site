@@ -8,11 +8,11 @@ if [ "$#" -ne 3 ]; then
   exit 1
 fi
 
-cd _site/
-
 AWS_REGION=$1
 WEBSITE_INDEX_DOCUMENT=$2
-BUCKET_NAME=$3
+BUCKET_NAME=$(_utility/normalize_bucket_name.sh $3)
+
+cd _site/
 
 bucketDoesNotExist() {
   number_of_buckets_with_name=$(aws s3 ls | awk '{print $3}' | grep -c "^$1$") 
@@ -21,9 +21,13 @@ bucketDoesNotExist() {
 
 BUCKET_NOT_EXISTS=$(bucketDoesNotExist $BUCKET_NAME)
 if [ $BUCKET_NOT_EXISTS ]; then
+  echo "No previous bucket with name $BUCKET_NAME found, creating a new one"
   aws s3 mb s3://$BUCKET_NAME --region $AWS_REGION
   aws s3 website s3://$BUCKET_NAME --index-document $WEBSITE_INDEX_DOCUMENT	
 fi
 
+echo "Synchronizing bucket: $BUCKET_NAME"
 aws s3 sync . s3://$BUCKET_NAME --acl public-read
+aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id EML2BUMD54HSC --paths "/*"
+
