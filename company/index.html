@@ -23,10 +23,18 @@ title: Company
                 <div class="headline">
 			<h2>{% t company-the_team.title %}</h2>
                 </div>
-		<div class="row team margin-bottom-10">
+			{% assign numberOfElements = 0 %}
+			{% assign arraySize = site.data.team size %}
+			{% assign numberOfElementsDisplayed = 0 %}
+			
 			{% for member in site.data.team %}
+				{% assign numberOfElements = numberOfElements | plus: 1 %}
+				 {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
+			{% if numberOfElements == 1 %}
+			<div class="row team margin-bottom-10">
+			{% endif %}
 			<!-- TEAM MEMBER -->
-			<div class="col-md-2 col-sm-3 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
+			<div class="col-md-2 col-sm-4 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
 				<a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
 					<span><img class="img-responsive" src="{{member.image}}" alt=""></span>
 					<span>{{member.name}}</span>
@@ -68,8 +76,11 @@ title: Company
 					</div>
 				</div>
 			</div>
+		{% if numberOfElements == 6 || nbElementDisplayed == arraySize %}
+		{% assign numberOfElements = 0 %}
+			</div>
+		{% endif %}
 			{% endfor %}
-		</div>
             </div>
             <div class="margin-bottom-40">
                 <a id="ourculture"></a>
@@ -139,8 +150,8 @@ title: Company
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <!-- Google Map -->
-			<div id="map" data-lat="{% t office.lat %}" data-lon="{% t office.lon %}" class="map"></div><!---/map-->
-                        <!-- End Google Map -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.422201900834!2d-0.1025175!3d51.5238156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50c8c7114f%3A0x6245fac5ecb52d7f!2sCodurance!5e0!3m2!1sen!2suk!4v1482344076628" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+		<!-- End Google Map -->
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <!-- Business Hours -->
@@ -174,5 +185,3 @@ title: Company
         </div>
     </div>
 </div>
-<script type="text/javascript" src="/assets/js/maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs8tkA_NjLhqFa2GBXYYtsJLMk4KDAZB0&callback=initMap"></script>

@@ -1,11 +1,10 @@
-  
   {% assign posts = site.posts %}
   {% assign relatedPosts = ""  %}
 
   {% for post in posts %}
   {% assign rank = "" %}
   {% for otherPostTag in post.tags %}
-  {% for currentTag in page.tags %}
+  {% for currentTag in include.tags %}
   {% if otherPostTag == currentTag and page.title != post.title %}
   {% assign rank = rank | append:"I" %}
   {% endif %}

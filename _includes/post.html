@@ -22,7 +22,7 @@
         <li>{% t publications-post.date_title %} {{ post.date | date_to_string }}</li>
       </ul>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.content | strip_html | truncatewords:45 }}</p>
+      <p>{{ post.content | markdownify | strip_html | truncatewords:45 }}</p>
     </div>
     {% if post.tags.size > 0 %}
     <div>

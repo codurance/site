@@ -10,7 +10,7 @@ image:
      text: Envy by John Goode.
      href: https://www.flickr.com/photos/johnnieb/167721436
 tags:
-- C#
+- CSharp
 - OOP
 
 ---

@@ -71,14 +71,9 @@ docker logs -f codurance-site
     Refresh takes some time and you can trace the progress by running command `docker logs -f codurance-site`. 
     The root cause of this problem is describe in this *[issue report](https://www.virtualbox.org/ticket/10660)*.  
 
-
-## Running the Tests
-
-There are some tests around the custom Jekyll plugins for navigation. Run them with `rake spec`.
-
 ## Deploying to Production
 
-When you push the *master* branch, Travis CI will kick off [the deployment build](https://travis-ci.org/codurance/site), which will run the tests, generate the site and push it to the *gh-pages* branch.
+When you push the *master* branch, Jenkins will kick off the deployment build, which will run the tests, generate the site and push it to the *gh-pages* branch.
 
 If you want to push code without deploying a new version of the site, make sure you work in a feature branch, rather than on *master* directly.
 

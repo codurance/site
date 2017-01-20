@@ -30,7 +30,7 @@ index-services-software_creation:
    link_title: Learn more
 index-services-expert_advice:
    title: Expert Advice
-   description_line_1: ENTERPRISE ARCHITECTURE & DESIGN 
+   description_line_1: ENTERPRISE ARCHITECTURE & DESIGN
    description_line_2: MICROSERVICES & DEVOPS
    description_line_3: CLOUD SOLUTIONS (Amazon AWS & Azure)
    description_line_4: BUSINESS & TECHNOLOGY ALIGNMENT
@@ -65,7 +65,7 @@ index-software_craftsmanship-book:
    subtitle: The book is described as "an encyclopedia on the behaviours, attributes, and structure of an organisation that adheres to principles of Software Craftsmanship". A must read for anyone wanting to better understand the values behind the movement.
    link_title: Check the book's content
 index-software_craftsmanship-socrates:
-   title: Software Craftsmanship Un-Conference&#58; Socrates UK 
+   title: Software Craftsmanship Un-Conference&#58; Socrates UK
    subtitle: We organise Socrates UK a non-profit, international Software Craftsmanship retreat. Software craftspeople from all over the world, most of whom are thought leaders, gather to learn from each other and improve the industry
    link_title: Visit the event website ...
 index-software_craftsmanship-lscc:
@@ -74,7 +74,7 @@ index-software_craftsmanship-lscc:
    link_title: Join the community on Meetup ...
 footer:
    title: Software is our passion.
-   subtitle: We are software craftsmen. We build well-crafted software for our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
+   subtitle: We are software craftsmen. We build well-crafted software for our clients, we help developers to get better at their craft through training, coaching and mentoring, and we help companies get better at delivering software.
    registration_number: Company Registration No
 footer-latest_blog:
    title: Latest Blogs
@@ -96,7 +96,7 @@ company-who_are_we:
                 </p>
                 <p>Our craftsmen are renowned for their technology expertise especially in Web, Devops, Big Data, Continuous Delivery, and Cloud Platforms. We present at many conferences around the world; write <a href="http://codurance.com/publications/posts/">blogs</a>; and create <a href="http://codurance.com/publications/videos/">screencasts</a>.
                 </p>
-company-the_team: 
+company-the_team:
    title: The team
 company-our_culture:
    title: Our culture
@@ -107,7 +107,7 @@ company-how_we_work:
    title: How we work
    subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
 company-how_we_work-software_craftsmanship:
-   title: Software Craftsmanship 
+   title: Software Craftsmanship
    subtitle: Software Craftsmanship is at the heart of everything we do so we can continuously deliver value to the business with inherent quality. We understand that quality should not be a premium. We hone our skills through continuous practice. We constantly learn, teach and mentor in our team, our company and the wider software development industry.
 company-how_we_work-agile_and_lean:
    title: Agile and Lean
@@ -139,7 +139,7 @@ publications-books:
    title: Books
    subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
 publications-all:
-   title: All 
+   title: All
 publications-posts:
    title: Posts
 publications-tweet_feed:
@@ -147,23 +147,35 @@ publications-tweet_feed:
 publications-post:
    author_title: By
    date_title: Posted
+services-header:
+   title: Crafted solutions
+   subtitle: Tailored to you
+services-subheader:
+   title: Your partner in creating well-crafted software
+   subtitle: We understand that everyone is different and will tailor our approach according to the needs of your business and organisation. We will help you build well-crafted software that is relevant to your needs. We provide <strong>teams</strong> to create valuable, in-time, and quality software, <strong>expert advice</strong> to fast-track your initiatives, and <strong>training and coaching</strong> to better equip your developers with the right skills and attitudes.
+services-section_1:
+   title: We can help with ...
+services-section_2:
+   title: Businesses we have helped
+   finance: FINANCE
+   retail: RETAIL
+   media: MEDIA
 services-software_creation:
    title: Software creation
-   subtitle: <p><strong>We will help you build well-crafted software that is valuable to your business.</strong></p>
-           <p>Our craftsmen have honed their skills in technologies and practices so that they deliver with quality on time. we can engage with you according to your needs.</p>
+   subtitle: <p><strong>We will help build well-crafted software that is valuable to your business.</strong></p>
+           <p>Our craftsmen have honed their skills in technologies and practices so that they deliver with quality on time. we will adapt our practices according to your needs.</p>
 services-software_creation-embedded_craftsmen:
    title: Embedded Craftsmen
    subtitle: Our craftsmen can enhance your teams to provide expertise in specific technologies. They can also form the core of your teams to help you instil XP practices and Software Craftsmanship values from the outset.
 services-software_creation-self_contained_teams:
    title: Self-contained Teams
-   subtitle: <p>Our craftsmen are equipped to cover all the roles required for a fully functioning Agile teams. We have experts in; UX and UI design, Front End and Back End Development, DevOps and Testing. All our craftsmen maintain an innate understanding of business analysis and work with the product owner to ensure that we constantly deliver value.</p>
-           <p>We will provide fully functional teams to help you get started quick and delivery you project in the most effective manner.</p>
+   subtitle: We will provide fully functional teams to help you deliver your project in the most effective and timely manner. Our craftsmen cover all the roles required for an agile software development team. We have experts in UX and UI design, Mobile, Front End and Back End Development, DevOps and Testing.
 services-software_creation-continous_delivery:
    title: Continuous Delivery Pipeline
-   subtitle: We are experts in technologies that are enablers for Continuous Delivery. We also understand how the business needs to be aligned to realise the full benefits of this approach. We are also programatic and understand that certain organisational constrains cannot change and help you tailor the pipeline to work around these constraints.
+   subtitle: We will help you tailor a Continuous Delivery Pipeline so that your software is responsive to your needs. We are experts in technologies that are enablers for Continuous Delivery. We appreciate how the development team and business need to be aligned to realise the full potential of this approach.
 services-software_creation-ux_ui_design:
    title: UX & UI Design
-   subtitle: We have expertise in designing visual identity and user experiences and understand how this efforts fits best in an Agile environment. We will help you define the brand identity for your project and create UX and UI designs as part of your software development effort.
+   subtitle: We have expertise in designing user experiences. We understand how this effort fits best in an Agile Software Development environment. We will help you build the brand identity and create UX and UI designs as part of your software development effort.
 services-expert_advice:
    title: Expert Advice
    subtitle: <p><strong>You can draw from our expertise to fast track your initiatives.</strong></p>
@@ -171,23 +183,40 @@ services-expert_advice:
            <p>We are available to run workshops and engage with you on a short-term basis to ensure that you put your best foot forward for your next initiative.</p>
 services-expert_advice-enterprise_architecture:
    title: Enterprise Architecture
-   subtitle: <p>Our Craftsmen have a wealth of expertise and experiences in dealing with large scale systems in finance, media and government.</p>
-           <p>We will review your approach and help you make the most effective decisions for the future.</p>
+   subtitle: Our Craftsmen have a wealth of expertise and experiences in dealing with large scale systems in finance, media and government. We will review your approach and help you make the most effective decisions for the future.
 services-expert_advice-software_architecture_and_design:
    title: Software Architecture & Design
-   subtitle: <p>We will review your current architecture and help you create a risk-based view of your software solution. We can advise on the best way to evolve your architecture to reduce those risks.</p>
-           <p>If you are looking to evolve your system into microservices or create a microservices based architecture from scratch, we will help you understand the best approach according to your needs.</p>
+   subtitle: We will review and help create an approach to evolve your architecture towards an agreed vision. We have deep knowledge and experience in cloud technologies and enterprise architectures, including Domain Driven Design, Microservices, Event Sourcing and Serverless Architectures.
 services-expert_advice-continous_delivery:
    title: Continuous Delivery
-   subtitle: We are experts in creating continuous delivery pipelines. We understand that it is not only a technical challenge but also an organisational one. We help your customers evolve their approach towards continuous delivery aligning their business, teams and technology.
+   subtitle: We are experts in creating continuous delivery pipelines. We understand that it is not only a technical challenge but also an organisational one. We help our clients evolve their approach towards continuous delivery - aligning their business, teams and technology.
 services-expert_advice-xp:
-   title: Extreme Programming Practices
-   subtitle: XP practices are core to every Craftsman in Codurance. We love to coach and mentor our customers in adopting XP practices. We advise you on how to adopt the practices to bring about positive change in your teams.
+   title: Extreme Programming (XP) Practices
+   subtitle: XP practices are core to everyone at Codurance. We love to coach and mentor our clients in adopting them. We advise on how to adopt XP practices and Software Craftsmanship values to bring about positive change in software development teams.
 services-training_coaching:
    title: Training & Coaching
+   our_courses: Our Courses
    subtitle: <p><strong>We provide a range of training opportunities that typically run for 2 days.</strong></p>
            <p>Our training courses help teams get better at Test Driven Development, Continuous Integration and Deployment, Domain-Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.</p>
+           <p>We also offer training to leverage Cloud and DevOps technologies, to create a Continous Delivery Pipeline.</p>
            <p>We help teams in any phase of a project where they may benefit from focused training.</p>
+services-contact-us: Contact us for more information ...
+services-browse-training: Browse our training courses ...
+training-software-development-practices:
+   title: Software Development Practices
+   subtitle: We offer training to help developers adopt practices such as Test Driven Development, Continuous Integration, and Release Automation. We can also customise our trainings according to the needs of your team.
+   link_title: See our courses ...
+training-software-architecture-and-cloud:
+   title: Software Architecture and Cloud
+   subtitle: We will review your current solution and provide training on architecture and technologies specific to your project. For example, we can train your team to evolve your system towards a Microservices based approach utilising the most suitable offerings from AWS.
+   link_title: See our courses ...
+training-technologies:
+   title: Technologies
+   subtitle: We provide training in creating well-crafted solutions using Java, C#, JavaScript, Swift, Scala, Clojure, F#, and Objective C. We also provide trainings in&#58; Building continuous delivery pipelines, Git, Team City, Docker, and AWS and Azure specific technolgies.
+   link_title: See our courses ...
+training-coaching-and-mentoring:
+   title: Coaching & Mentoring
+   subtitle: We have successfully delivered customised Software Craftsmanship coaching and mentoring programmes at a large scale. Our craftsmen will tailor and deliver the coaching programme according to the needs of the team.
 clients:
    software_creation_title: Software Creation
    expert_advice_title: Expert Advice
@@ -219,10 +248,10 @@ clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
    link_title: Read more ...
-   skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
+   skillsmatter_description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings.
    jetbrains_description: Jetbrains are renowned for their software development tools. help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
    github_description: Github is a well known online project hosting platform. We understand that use of a distributed code repository such as Git is not just a matter of technical skills but also a paradigm shift in how software development teams collaborate. We help our clients adopt Github and Github Enterprise.
-   satalia_description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016. 
+   satalia_description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016.
 events-lscc:
    title: London Software Craftsmanship Community
    link_title: Find out more
@@ -253,7 +282,7 @@ careers-join-craftsmen:
 careers-join-apprentice:
    title: Apprentice-craftsmen
    description: <p>At this level we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. You have at least narrow experience of tools and technology, sufficient according to your current experience. You can communicate your ideas in a team setting and want to develop skills to convince others to your thinking. You have a strong desire to learn and hone your skills as an effective software developer. You like to teach as well as learn.</p>
-   link_title: Apply to join our Apprentice-craftsmen 
+   link_title: Apply to join our Apprentice-craftsmen
 careers-join-how_to_apply:
    title: How to apply?
    description: <p>If you think Codurance is for you then email us at <a href="mailto:join-us@codurance.com">join-us@codurance.com</a> and tell us your story. If you get stuck then here are some suggestions:</p>
@@ -292,21 +321,22 @@ partners-jetbrains-product:
 event:
    author_title: Featuring
    location_title: Where?
-   link_title: Find out more 
+   link_title: Find out more
 post:
    author_title: By
    date_title: Posted
-   canonical_page_title: 
+   canonical_page_title:
 post-about_the_author:
    title: About the author
 post-related_posts:
    title: Related Blogs
-post-recent_posts:
-   title: Recent Blogs
+recent-publications:
+   posts-title: Recent Blogs
+   videos-title: Recent Videos
 the-software-craftsman:
    title: The Software Craftsman
 not-found:
-   title: Sorry, we could not find the page you were looking for. You can <a href="/">go to the landing page</a> or use the menu at the top of the page to navigate to a specific area of the site. 
+   title: Sorry, we could not find the page you were looking for. You can <a href="/">go to the landing page</a> or use the menu at the top of the page to navigate to a specific area of the site.
    subtitle: Are you looking for any of these links?
 latest-publications:
   videos: Latest videos
