@@ -22,7 +22,7 @@ In order to have flexibility and to allow changes in the database to be made saf
 
 ###Installing MS SQL Server
 
-Get started installing [SQL Server Express](https://www.microsoft.com/en-us/download/details.aspx?id=52679)
+Get started installing [SQL Server Express](http://www.hanselman.com/blog/DownloadSQLServerExpress.aspx)
 .
 SQL Server Express is a free lightweight version of Microsoft’s SQL Server database.
 
@@ -46,7 +46,7 @@ Once you have SQL Server Express up and running, and MSSQL Management Studio ins
 
 The tSQLt team provides a quick start example database and a set of tests to help developers get started quickly on how the framework works.
 Let’s try the example together.
-First unzip the tSQLt folder you downloaded, and make sure that CLRs are enabled on your development server. Enabling [CLR integration](https://msdn.microsoft.com/en-us/library/ms254498v=vs.110.aspx) allows us to run managed code, such as C#, on our SQL Server database.
+First unzip the tSQLt folder you downloaded, and make sure that CLRs are enabled on your development server. Enabling [CLR integration](https://msdn.microsoft.com/en-us/library/ms131048.aspx) allows us to run managed code, such as C#, on our SQL Server database.
 
 {% img /assets/img/custom/blog/db-testing/db-testing-2.png "" %}
 
