@@ -98,23 +98,18 @@
 
 /*Promo Background Images*/
 .promo-bg-img-v1 {
-  background: url(../img/bg/img1.jpg) no-repeat;
   background-size: cover;
 }
 .promo-bg-img-v2 {
-  background: url(../img/bg/img5.jpg) no-repeat;
   background-size: cover;
 }
 .promo-bg-img-v3 {
-  background: url(../img/bg/img10.jpg) no-repeat;
   background-size: cover;
 }
 .promo-bg-img-v4 {
-  background: url(../img/bg/img11.jpg) no-repeat;
   background-size: cover;
 }
 .promo-bg-img-v5 {
-  background: url(../img/bg/img6.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -192,7 +187,6 @@
 }
 
 .video-business-img1 {
-  background: url(../video/youtube-business/video-business-img1.jpg) no-repeat center;
   background-size: cover; /*Scales the background image to be as large as possible*/
 }
 
@@ -294,7 +288,6 @@
 .breadcrumbs-v1 {
   padding: 100px 0;
   position: relative;
-  background: url(../img/breadcrumbs/img1.jpg) center no-repeat;
   background-size: cover; /*Scales the background image to be as large as possible*/
 }
 
@@ -385,19 +378,16 @@
 }
 
 .breadcrumbs-v3.img-v1 {
-  background: url(../img/breadcrumbs/img1.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.img-v2 {
-  background: url(../img/breadcrumbs/img2.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.img-v3 {
-  background: url(../img/breadcrumbs/img3.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -2085,7 +2075,6 @@
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
 }
 
 .parallax-quote:after {
@@ -2346,7 +2335,6 @@
     overflow: hidden;
     text-align: center;
     position: relative;
-    background: url(../img/bg/25.jpg) 50% 0 fixed;
 }
 
 .parallax-counter-v3:after {
@@ -3070,7 +3058,6 @@
 }
 
 .interactive-slider-v1.img-v1 {
-  background: url(../img/bg/18.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3145,25 +3132,21 @@
 }
 
 .interactive-slider-v2.img-v2 {
-  background: url(../img/bg/14.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v3 {
-  background: url(../img/bg/img8.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v4 {
-  background: url(../img/bg/img9.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.intro-promo-img {
-  background: url(../img/intro/promo.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
