@@ -25,23 +25,23 @@ tags:
 * CLR
   * [.Net Framework](https://www.microsoft.com/net/download/framework) (Windows)
   * [Mono](http://www.mono-project.com/]) (MacOs, Linux)
-* VSCode (https://code.visualstudio.com/)
-   * With ionide extensions for VSCode (http://ionide.io/)
+* [VSCode](https://code.visualstudio.com/)
+   * With ionide extensions for VSCode ([http://ionide.io/](http://ionide.io/))
       * Ionide-FSharp
       * Ionide-FAKE
       * Ionide-Paket
 
 ## Step-by-step instructions  
-1. Create new directory
-2. Move to new directory
-3. Type on console ```Code .``` or open VSCode and then open the new directory you just created
-4. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
-5. Select ```New Project```
-6. Choose ```classlib``` or ```console``` or other project type for the production project
-7. Choose the project directory (if left empty, current directory will be used)
-8. Provide a project name (using production.fsproj for this example)
-9. Press `[Shift]`  `[Command]` `[P]` and type ```FAKE```
-10. Chose ```Default build```, you should see an output similar to this:
+* Create new directory
+* Move to new directory
+* At the console type ```Code .``` or open VSCode and then open the new directory you just created
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```F#```
+* Select ```New Project```
+* Choose ```classlib``` or ```console``` or other project type for the production project
+* Choose the project directory (if left empty, current directory will be used)
+* Provide a project name (using production.fsproj for this example)
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```FAKE```
+* Choose ```Default build```, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
@@ -54,17 +54,17 @@ Shortened DependencyGraph for Target Build:
    <== Clean
 ...
 ```
-11. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
-12. Select ```New Project```
-13. Choose ```fsunit``` for test code
-14. Choose the project directory (if left empty current directory will be used)
-15. Provide a project name (using test.fsproj for this example)
-16. Open up the ```test.fsproj``` file
-17. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
-18. Select ```Add Project Reference```
-19. Choose ```test.fsproj``` project as the project that you want to edit
-20. Choose ```production.fsproj``` project as the reference you want to add
-21. Verify that ```test.fsproj``` has been changed and contains a reference to ```production.fsproj```
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```F#```
+* Select ```New Project```
+* Choose ```fsunit``` for test code
+* Choose the project directory (if left empty current directory will be used)
+* Provide a project name (using test.fsproj for this example)
+* Open up the ```test.fsproj``` file
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```F#```
+* Select ```Add Project Reference```
+* Choose ```test.fsproj``` project as the project that you want to edit
+* Choose ```production.fsproj``` project as the reference you want to add
+* Verify that ```test.fsproj``` has been changed and contains a reference to ```production.fsproj```
 
    ```xml
 ...
@@ -76,10 +76,10 @@ Shortened DependencyGraph for Target Build:
 </ItemGroup>
 ...
 ```
-22. Press `[Shift]`  `[Command]` `[P]` and type ```paket```
-23. Select ```Add Nuget Package```
-24. Type ```Nunit.Console```
-25. Verify that ```paket.dependencies``` gets updated with new dependency
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```paket```
+* Select ```Add Nuget Package```
+* Type ```Nunit.Console```
+* Verify that ```paket.dependencies``` gets updated with new dependency
 
    ```fsharp
 source https://www.nuget.org/api/v2
@@ -89,36 +89,33 @@ nuget FsUnit
 nuget FsCheck
 nuget nunit.console // <- !!!This line should be present!!!
 ```
-26. Open ```build.fsx```
-27. Add ```open Fake.Testing``` after ```open Fake```
+* Open ```build.fsx```
+* Add ```open Fake.Testing``` after ```open Fake```
 
    ```fsharp
-// include Fake libs
-#r "./packages/FAKE/tools/FakeLib.dll"
-
 open Fake
 open Fake.Testing // <--!!!Add this line!!!
 ```
-28. Add test task
+* Add the test task
 
    ```fsharp
 let testAssemblies = !! (buildDir + "*Tests.dll") // <--!!!Add this line!!!
-
 Target "UnitTests" (fun _ -> testAssemblies |> NUnit3 id) // <--!!!Add this line!!!
 ```
-29. add UnitTests to the build
+
+* Add UnitTests to the build
 
    ```fsharp
 "Clean"
   ==> "Build"
   ==> "UnitTests" // <--!!!Add this line!!!
   ==> "Deploy"
-
 RunTargetOrDefault "Build"
 ```
-30. Press `[Shift]`  `[Command]` `[P]` and type ```FAKE```
-31. Chose ```build```
-31. Choose ```UnitTests```, you should see an output similar to this:
+
+* Press `[Shift]`  `[Command/Ctrl]` `[P]` and type ```FAKE```
+* Choose ```build```
+* Choose ```UnitTests```, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
@@ -136,8 +133,8 @@ Voila!
 
 ###Bonus
 
-1. Press `[Shift]`  `[Command]` `[B]`
-2. Should show an error and you can choose to edit. Edit the configuration to run the build script
+* Press `[Shift]`  `[Command/Ctrl]` `[B]`
+* Should show an error and you can choose to edit. Edit the configuration to run the build script
 
    ```sh
 {
@@ -150,7 +147,7 @@ Voila!
     "showOutput": "always"
 }
 ```
-3. Press `[Shift]`  `[Command]` `[B]`, you should see an output similar to this:
+* Press `[Shift]`  `[Command/Ctrl]` `[B]`, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
