@@ -11,7 +11,7 @@ image:
       text: directions by Beat Tschanz
       href: https://www.flickr.com/photos/btschanz/13793872333/
 tags:
-- F#
+- FSharp
 - VSCode
 - Ionide
 - Tutorial
@@ -31,16 +31,16 @@ tags:
       * Ionide-FAKE
       * Ionide-Paket
 
-## Step by step instructions  
+## Step-by-step instructions  
 1. Create new directory
 2. Move to new directory
 3. Type on console ```Code .``` or open VSCode and then open the new directory you just created
-4. Press ```shift-command-p``` and type ```F#```
+4. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
 5. Select ```New Project```
 6. Choose ```classlib``` or ```console``` or other project type for the production project
 7. Choose the project directory (if left empty, current directory will be used)
 8. Provide a project name (using production.fsproj for this example)
-9. Press ```shift-command-p``` and type ```FAKE```
+9. Press `[Shift]`  `[Command]` `[P]` and type ```FAKE```
 10. Chose ```Default build```, you should see an output similar to this:
 
    ```txt
@@ -54,13 +54,13 @@ Shortened DependencyGraph for Target Build:
    <== Clean
 ...
 ```
-11. Press ```shift-command-p``` and type ```F#```
+11. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
 12. Select ```New Project```
 13. Choose ```fsunit``` for test code
 14. Choose the project directory (if left empty current directory will be used)
 15. Provide a project name (using test.fsproj for this example)
 16. Open up the ```test.fsproj``` file
-17. Press ```shift-command-p``` and type ```F#```
+17. Press `[Shift]`  `[Command]` `[P]` and type ```F#```
 18. Select ```Add Project Reference```
 19. Choose ```test.fsproj``` project as the project that you want to edit
 20. Choose ```production.fsproj``` project as the reference you want to add
@@ -76,7 +76,7 @@ Shortened DependencyGraph for Target Build:
 </ItemGroup>
 ...
 ```
-22. Press ```shift-command-p``` and type ```paket```
+22. Press `[Shift]`  `[Command]` `[P]` and type ```paket```
 23. Select ```Add Nuget Package```
 24. Type ```Nunit.Console```
 25. Verify that ```paket.dependencies``` gets updated with new dependency
@@ -116,7 +116,7 @@ Target "UnitTests" (fun _ -> testAssemblies |> NUnit3 id) // <--!!!Add this line
 
 RunTargetOrDefault "Build"
 ```
-30. Press ```shift-command-p``` and type ```FAKE```
+30. Press `[Shift]`  `[Command]` `[P]` and type ```FAKE```
 31. Chose ```build```
 31. Choose ```UnitTests```, you should see an output similar to this:
 
@@ -136,7 +136,7 @@ Voila!
 
 ###Bonus
 
-1. Press ```shift-command-b```
+1. Press `[Shift]`  `[Command]` `[B]`
 2. Should show an error and you can choose to edit. Edit the configuration to run build script
 
    ```sh
@@ -150,7 +150,7 @@ Voila!
     "showOutput": "always"
 }
 ```
-3. Press ```shift-command-b```, you should see an output similar to this:
+3. Press `[Shift]`  `[Command]` `[B]`, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
