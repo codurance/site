@@ -17,8 +17,6 @@ tags:
 - Tutorial
 
 ---
-
-# Create an F# project in VSCode
 ## Prerequisites
 * Operating system
   * Windows
