@@ -38,12 +38,12 @@ tags:
 2. Move to new directory
 3. Type on console ```Code .``` or open VSCode and then open the new directory you just created
 4. Press ```shift-command-p``` and type ```F#```
-5. Select New Project
-6. Choose classlib or console or other project type for the production project
+5. Select ```New Project```
+6. Choose ```classlib``` or ```console``` or other project type for the production project
 7. Choose the project directory (if left empty, current directory will be used)
 8. Provide a project name (using production.fsproj for this example)
 9. Press ```shift-command-p``` and type ```FAKE```
-10. Chose Default build, you should see an output similar to this:
+10. Chose ```Default build```, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
@@ -56,17 +56,17 @@ Shortened DependencyGraph for Target Build:
    <== Clean
 ...
 ```
-11. Press ```shift-command-p``` and type F#
-12. Select New Project
-13. Choose fsunit for test code
+11. Press ```shift-command-p``` and type ```F#```
+12. Select ```New Project```
+13. Choose ```fsunit``` for test code
 14. Choose the project directory (if left empty current directory will be used)
 15. Provide a project name (using test.fsproj for this example)
-16. Open up the test.fsproj file
-17. Press shift-command-p and type F#
-18. Select Add Project Reference
-19. Choose test.fsproj project as the project that you want to edit
-20. Choose production.fsproj project as the reference you want to add
-21. Verify that test.fsproj has been changed and contain a reference to production.fsproj
+16. Open up the ```test.fsproj``` file
+17. Press ```shift-command-p``` and type ```F#```
+18. Select ```Add Project Reference```
+19. Choose ```test.fsproj``` project as the project that you want to edit
+20. Choose ```production.fsproj``` project as the reference you want to add
+21. Verify that ```test.fsproj``` has been changed and contains a reference to ```production.fsproj```
 
    ```xml
 ...
@@ -78,10 +78,10 @@ Shortened DependencyGraph for Target Build:
 </ItemGroup>
 ...
 ```
-22. Press ```shift-command-p``` and type paket
-23. Select Add Nuget Package
-24. Type Nunit.Console
-25. Verify that paket.dependencies gets updated with new dependency
+22. Press ```shift-command-p``` and type ```paket```
+23. Select ```Add Nuget Package```
+24. Type ```Nunit.Console```
+25. Verify that ```paket.dependencies``` gets updated with new dependency
 
    ```fsharp
 source https://www.nuget.org/api/v2
@@ -91,8 +91,8 @@ nuget FsUnit
 nuget FsCheck
 nuget nunit.console // <- !!!This line should be present!!!
 ```
-26. Open build.fsx
-27. Add "open Fake.Testing" after "open Fake"
+26. Open ```build.fsx```
+27. Add ```open Fake.Testing``` after ```open Fake```
 
    ```fsharp
 // include Fake libs
@@ -118,9 +118,9 @@ Target "UnitTests" (fun _ -> testAssemblies |> NUnit3 id) // <--!!!Add this line
 
 RunTargetOrDefault "Build"
 ```
-30. Press ```shift-command-p``` and type FAKE
-31. Chose build
-31. Choose UnitTests, you should see an output similar to this:
+30. Press ```shift-command-p``` and type ```FAKE```
+31. Chose ```build```
+31. Choose ```UnitTests```, you should see an output similar to this:
 
    ```txt
 Checking Paket version (downloading latest stable)...
@@ -136,7 +136,7 @@ Shortened DependencyGraph for Target UnitTests:
 ```
 Voila!
 
-Bonus
+###Bonus
 
 1. Press ```shift-command-b```
 2. Should show an error and you can choose to edit. Edit the configuration to run build script
