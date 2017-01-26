@@ -41,7 +41,7 @@
   page: /services/training/devops-training
 
 - id: oo_design
-  name: Object Oriented Design Practise
+  name: Practise Object Oriented Design
   author: Franziska Sauerwein
   description: For experienced developers who want to improve their design skills in object-oriented languages.
   page: /services/training/oo-design
