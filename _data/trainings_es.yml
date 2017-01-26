@@ -17,7 +17,7 @@
   page: /services/training/lambda-training
 
 - id: serverless
-  name: Arquitectura Serverless utilizando AWS
+  name: Arquitectura Serverless Utilizando AWS
   author: Mashooq Badar
   description: Aprenda cómo evitar los problemas de construir aplicaciones web, usando la arquitectura server-less de AWS
   page: /services/training/serverless-training
@@ -35,7 +35,7 @@
   page: /services/training/service-fabric-training
 
 - id: docker
-  name: De cero a Continous Delivery con Docker
+  name: De Cero a Continous Delivery con Docker
   author: Robert Firek
   description: Aprenda a utilizar las herramientas de Docker, para permitir continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
@@ -45,3 +45,9 @@
   author: Franziska Sauerwein
   description: Para desarrolladores experimentados que quieren mejorar sus habilidades de diseño en lenguajes orientados a objetos.
   page: /services/training/oo-design
+
+- id: crafting_swift_apps
+  name: Craftmanship Aplicado a Apps para Mobiles en Swift
+  author: Ana Nogal
+  description: Para desarrolladores móviles experimentados que desean crear aplicaciones fiables.
+  page: /services/training/crafting-swift-mobile-apps
