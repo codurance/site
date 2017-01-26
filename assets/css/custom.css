@@ -1127,6 +1127,31 @@ h2.gray-underline:after {
     color: #fff;
 }
 
+.row.team div.col-md-2 {
+    height: 50vw;
+}
+
+@media (min-width: 768px){
+ .row.team div.col-md-2{
+    height: 22vw;
+	}
+}
+@media (min-width: 900px){
+ .row.team div.col-md-2{
+    height: 18vw;
+	}
+}
+@media (min-width: 1400px){
+ .row.team div.col-md-2{
+    height: 12vw;
+	}
+}
+@media (min-width: 2200px){
+ .row.team div.col-md-2{
+    height: 8vw;
+	}
+}
+
 .row.blog-page img {
         width: 100%;
 }
