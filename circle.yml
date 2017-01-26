@@ -3,10 +3,10 @@ machine:
     version: 2.3.1
   environment:
     PR_NUMBER: $(echo ${CI_PULL_REQUEST##*/})
-    BUCKET_NAME: "site-$CIRCLE_BRANCH"
+    FOLDER_NAME: "site-$CIRCLE_BRANCH"
     WEBSITE_INDEX_DOCUMENT: index.html
     AWS_REGION: eu-west-1
-    PREVIEW_URL: "https://${BUCKET_NAME}.s3.amazonaws.com/$WEBSITE_INDEX_DOCUMENT"
+    PREVIEW_URL: "https://codurance-site-pr.s3.amazonaws.com/$FOLDER_NAME/$WEBSITE_INDEX_DOCUMENT"
 dependencies:
   cache_directories:
     - "/opt/circleci/.rvm/gems"
@@ -34,6 +34,5 @@ deployment:
   pullrequest:
     branch: /^.*/
     commands:
-      - _utility/deploy_prb.sh $AWS_REGION $WEBSITE_INDEX_DOCUMENT $BUCKET_NAME 
-      - _utility/send_gh_comment.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $PR_NUMBER $GITHUB_TOKEN $PREVIEW_URL 
-
+      - _utility/deploy_prb.sh $FOLDER_NAME
+      - _utility/send_gh_comment.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $PR_NUMBER $GITHUB_TOKEN $PREVIEW_URL
