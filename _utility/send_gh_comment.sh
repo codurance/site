@@ -2,7 +2,7 @@
 set -e
 
 if [ "$#" -ne 5 ]; then
-  echo "Insufficient arguments, you have only provided: \"$@\", see usage and example for further assistance."
+  echo "Insufficient arguments, see usage and example for further assistance."
   echo -e "Usage: $0 REPO_OWNER REPO_NAME PR_NUMBER AUTH_TOKEN DEPLOYMENT_URL\n"
   echo "Example: $0 codurance site 4 token https://bucket-name.amazon.com/index.html"
   exit 1
@@ -12,9 +12,9 @@ REPO_OWNER=$1
 REPO_NAME=$2
 PR_NUMBER=$3
 AUTH_TOKEN=$4
-BUCKET_NAME=$(_utility/normalize_bucket_name.sh $5)
+DEPLOYMENT_URL=$5
 
-COMMENT="Deployed: $BUCKET_NAME"
+COMMENT="Deployed: $DEPLOYMENT_URL"
 LAST_COMMENT_ID=$(curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$AUTH_TOKEN -X GET | jq '[.[] | select(.user.login=="CoduranceBot")][0].id')
 
 if [ "$LAST_COMMENT_ID" != "null" ]; then
@@ -28,5 +28,5 @@ else
   curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$AUTH_TOKEN \
     -H "Content-Type: application/json" \
     -X POST \
-    -d "{ \"body\":\"$COMMENT\" }" 
+    -d "{ \"body\":\"$COMMENT\" }"
 fi
