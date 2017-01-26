@@ -137,7 +137,7 @@ Voila!
 ###Bonus
 
 1. Press `[Shift]`  `[Command]` `[B]`
-2. Should show an error and you can choose to edit. Edit the configuration to run build script
+2. Should show an error and you can choose to edit. Edit the configuration to run the build script
 
    ```sh
 {
