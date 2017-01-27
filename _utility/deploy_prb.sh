@@ -8,6 +8,8 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
+FOLDER_NAME=$1
+
 cd _site/
 
 echo "Synchronizing to folder: $FOLDER_NAME"
