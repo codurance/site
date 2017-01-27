@@ -6,7 +6,8 @@ machine:
     FOLDER_NAME: "site-$CIRCLE_BRANCH"
     WEBSITE_INDEX_DOCUMENT: index.html
     AWS_REGION: eu-west-1
-    PREVIEW_URL: "https://codurance-site-pr.s3.amazonaws.com/$FOLDER_NAME/$WEBSITE_INDEX_DOCUMENT"
+    BUCKET_NAME: codurance-site-pr
+    PREVIEW_URL: "https://$BUCKET_NAME.s3.amazonaws.com/$FOLDER_NAME/$WEBSITE_INDEX_DOCUMENT"
 dependencies:
   cache_directories:
     - "/opt/circleci/.rvm/gems"
