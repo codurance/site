@@ -8,6 +8,7 @@ if [ "$#" -ne 5 ]; then
   exit 1
 fi
 
+GITHUB_USERNAME='CoduranceBot'
 REPO_OWNER=$1
 REPO_NAME=$2
 PR_NUMBER=$3
@@ -15,7 +16,8 @@ AUTH_TOKEN=$4
 DEPLOYMENT_URL=$5
 
 COMMENT="Deployed: $DEPLOYMENT_URL"
-LAST_COMMENT_ID=$(curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$AUTH_TOKEN -X GET | jq '[.[] | select(.user.login=="CoduranceBot")][0].id')
+LAST_COMMENT_ID=$(curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$AUTH_TOKEN \
+  -X GET | jq "[.[] | select(.user.login==\"$GITHUB_USERNAME\")][0].id")
 
 if [ "$LAST_COMMENT_ID" != "null" ]; then
   echo "Found a previous comment with id:$LAST_COMMENT_ID . Updating comment"
