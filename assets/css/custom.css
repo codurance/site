@@ -1127,6 +1127,6 @@ h2.gray-underline:after {
     color: #fff;
 }
 
-.row.blog-page img {
-        width: 100%;
+  .resize-image-to-100-percent {
+      width: 100%;
 }

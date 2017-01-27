@@ -37,7 +37,7 @@ Zsh offers a plethora of additional features on top of bash that you may find a 
 
 Some features of note that I found particularly useful when I first made the switch are:
 
-<img class="img-responsive" style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/installing-prezto/cd-completion.png">
+<img class="img-responsive resize-image-to-100-percent" style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/installing-prezto/cd-completion.png">
 
 *    'cd' auto-completion
 *    'cd' navigation
@@ -91,7 +91,7 @@ The colour theme I use for my terminal is called [Solarized](http://ethanschoono
 
 The colours I've used are from the file titled `Solarized Dark.terminal` from the repository. To install this file open up your Terminal, in the menu bar navigate to `Terminal > Preferences` and then use the import feature to load the profile. With the desired profile highlighted, you can then click the `Default` button to set it as such.
 
-![](/assets/img/custom/blog/installing-prezto/import-terminal-profile.png)
+<img class="img-responsive resize-image-to-100-percent" style="float: right"  src="/assets/img/custom/blog/installing-prezto/import-terminal-profile.png">
 
 From here on every new terminal window you open will have the new profile colours loaded. I encourage you to play around with these colours and themes to whatever suits you.
 
@@ -107,13 +107,10 @@ To enable a plugin, open up the `.zpreztorc` file in a text-editor.
 
 Under the line which reads `zstyle ':prezto:load' pmodule \` there should be a list of already-loaded modules. Simple add any additional ones to the list. Personally, I added the `history-substring-search` and the `git` modules. My resulting file looks a little like this.
 
-![](/assets/img/custom/blog/installing-prezto/zpreztorc.png)
+<img class="img-responsive resize-image-to-100-percent" style="float: right"  src="/assets/img/custom/blog/installing-prezto/zpreztorc.png">
 
 ## What's next?
 
 This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. For more tips, tricks and troubleshooting with prezto, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
 
 Feel free to send me an email if you have any questions, comments or problems at amir@codurance.com.
-
-
-
