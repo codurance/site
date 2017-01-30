@@ -7,7 +7,7 @@ image:
 
 title: "Complex refactoring in simple steps Part III"
 hidden: true
-video-url: https://www.youtube.com/embed/P34ibJaSlkg
+video-url: https://www.youtube.com/embed/SuqrAtXnn1U
 date: 2017-01-30 10:00:00 +00:00
 ---
 
