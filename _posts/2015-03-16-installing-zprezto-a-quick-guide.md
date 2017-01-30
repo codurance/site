@@ -37,7 +37,7 @@ Zsh offers a plethora of additional features on top of bash that you may find a 
 
 Some features of note that I found particularly useful when I first made the switch are:
 
-<img class="img-responsive" style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/installing-prezto/cd-completion.png">
+![](/assets/img/custom/blog/installing-prezto/cd-completion.png)
 
 *    'cd' auto-completion
 *    'cd' navigation
@@ -114,6 +114,3 @@ Under the line which reads `zstyle ':prezto:load' pmodule \` there should be a l
 This is as far as I've gotten with installing Zsh with zprezto and am happy with the features enough that I don't need to customise it further. However there is still a lot more you can do with the tools and plugins. For more tips, tricks and troubleshooting with prezto, visit the official repository found at [https://github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
 
 Feel free to send me an email if you have any questions, comments or problems at amir@codurance.com.
-
-
-
