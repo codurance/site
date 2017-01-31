@@ -37,7 +37,7 @@ Zsh offers a plethora of additional features on top of bash that you may find a 
 
 Some features of note that I found particularly useful when I first made the switch are:
 
-<img class="img-responsive" style="float: right" height="200px" width="400px" src="/assets/img/custom/blog/installing-prezto/cd-completion.png">
+![](/assets/img/custom/blog/installing-prezto/cd-completion.png)
 
 *    'cd' auto-completion
 *    'cd' navigation
