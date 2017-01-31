@@ -6,7 +6,7 @@ layout: event
 name: matthew-at-agile-on-the-bench 
 location: "Arnold Circus, London E2 7JS, UK"
 image:
-    src: /assets/img/custom/events/agile-on-the-bench.png 
+    src: /assets/img/custom/events/agile-on-the-bench.jpg 
 title: "Hacking Authority"
 hidden: true
 event-dates: 
