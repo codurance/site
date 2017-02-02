@@ -6,7 +6,7 @@
                 <!-- About -->
                 <div class="col-md-3 md-margin-bottom-40">
                     <a href="{{ '/' | prepend: site.baseurl }}">
-                        <img id="logo-footer" class="footer-logo" src="/assets/img/footer-logo.png" alt="Codurance">
+                      <img id="logo-footer" class="footer-logo" src="{{ '/assets/img/footer-logo.png' | prepend: site.baseurl }}" alt="Codurance">
                     </a>
 		    <p>{% t footer.title  %}</p>
 		    <p>{% t footer.subtitle %}</p>    
@@ -21,7 +21,7 @@
                           {% assign posts = site.posts %}
                           {% for post in posts limit:3 %}
                           <li>
-                            <a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
+                            <a href="{{ post.url | prepend: site.baseurl }}" alt="{{ post.title }}">{{ post.title | truncatewords: 5 }}</a>
                             <small>{{ post.author }}</small>
                           </li>
                           {% endfor %}
