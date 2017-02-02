@@ -23,7 +23,7 @@
             </ul>
             {% if include.widgets contains "video_frame" %}
             <img class="img-responsive full-width">
-            <iframe style="height: 400px; width: 100%;" src="{{ page.video-url  | prepend: site.baseurl }}"></iframe>
+            <iframe style="height: 400px; width: 100%;" src="{{ page.video-url  | prepend: site.baseurl  | prepend: site.baseurl }}"></iframe>
             </img>
 
             {% endif %}
