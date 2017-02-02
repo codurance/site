@@ -1038,33 +1038,9 @@ h2.gray-underline:after {
 */
 
 /* Portrait & landscape phone */
-@media (max-width: 320px){
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
-  }
-}
-
 @media (max-width: 480px) {
   .image-side-by-side-text {
     float: none;
-  }
-}
-
-@media (max-width: 600px){
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
   }
 }
 
@@ -1085,46 +1061,9 @@ h2.gray-underline:after {
   }
 }
 
-@media screen and (min-width: 800px) {
-  .btn-hire {
-    top: 5px;
-    font-size: 35px;
-    width: 350px;
-  }
-}
-
-@media (max-width: 991px) {
-  .header .navbar-nav > .active > a,
-  .header .navbar-nav > .active > a:hover,
-  .header .navbar-nav > .active > a:focus {
-    background: #e67e22;
-  }
-}
-
-@media (min-width: 992px) {
-  .header .navbar-default .navbar-nav > li > a:hover {
-    border-bottom: solid 2px #e67e22;
-  }
-}
-
 @media (max-width: 992px) {
   #services .service-card {
     margin-top: 30px;
-  }
-  .practice-text {
-    max-width: 60%;
-  }
-  .lscc-title {
-    margin-top:0px;
-    margin-bottom:20px;
-    margin-left:0px;
-    text-align:center;
-  }
-}
-
-@media (min-width: 1000px) {
-  .header .navbar-default .navbar-nav > li > a {
-    padding: 9px 20px 9px 20px;
   }
 }
 
