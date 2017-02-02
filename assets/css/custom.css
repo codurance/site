@@ -1,3 +1,7 @@
+---
+title: CSS
+---
+
 /* Add here all your css styles (customizations) */
 
 body {
@@ -37,7 +41,7 @@ body {
 /* Home Page */
 
 .feature-panel {
-  background: url("/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
+  background: url("{{ site.baseurl }}/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
   height: 550px;
   background-size: cover;
   width: auto;
@@ -1048,25 +1052,25 @@ h2.gray-underline:after {
 }
 
 .breadcrumbs-v3.ourpeople {
-  background: url(/assets/img/custom/careers/ourpeople.jpg) no-repeat;
+  background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.ourclients {
-  background: url(/assets/img/custom/clients/ourclients.jpg) no-repeat;
+  background: url("{{ site.baseurl }}/assets/img/custom/clients/ourclients.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.ourservices {
-  background: url(/assets/img/custom/services/ourservices.jpg) no-repeat;
+  background: url("{{ site.baseurl }}/assets/img/custom/services/ourservices.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .breadcrumbs-v3.thesoftwarecraftsman {
-  background: url(/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg) no-repeat;
+  background: url("{{ site.baseurl }}/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
