@@ -9,7 +9,7 @@ title: Training
               <h2 class="title-v2">{% t services-training_coaching.title %}</h2>
               {% t services-training_coaching.subtitle %}
               <br/>
-              <a href="/company#contactus" class="btn-u">{% t company-contact.title %} ...</a>
+              <a href="{{ '/company#contactus' | prepend: site.baseurl }}" class="btn-u">{% t company-contact.title %} ...</a>
           </div>
           <div class="col-md-6">
               <img src="{{ '/assets/img/custom/services/training/node-js-session.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">

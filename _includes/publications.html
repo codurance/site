@@ -1,9 +1,9 @@
 <div class="container content-md">
 
   <ul class="breadcrumb">
-    <li {% if include.filter == '' %} class="active" {% endif %}><a href="/publications">{% t publications-all.title %}</a></li>
-    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="/publications/posts">{% t publications-posts.title %}</a></li>
-    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="/publications/videos">{% t publications-videos.title %}</a></li>
+    <li {% if include.filter == '' %} class="active" {% endif %}><a href="{{ '/publications' | prepend: site.baseurl }}">{% t publications-all.title %}</a></li>
+    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a></li>
+    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a></li>
   </ul>
 
     <div class="row">

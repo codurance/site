@@ -9,10 +9,10 @@ title: Work with us
         <div class="col-md-3">
             <ul class="list-group sidebar-nav-v1">
                 <li class="list-group-item{% if page.role == 'Craftsman' %} active{% endif %}">
-                    <a href="/work-with-us/craftsman">Craftsman</a>
+                    <a href="{{ '/work-with-us/craftsman' | prepend: site.baseurl }}">Craftsman</a>
                 </li>
                 <li class="list-group-item{% if page.role == 'Apprentice' %} active{% endif %}">
-                    <a href="/work-with-us/apprentice">Apprentice</a>
+                    <a href="{{ '/work-with-us/apprentice' | prepend: site.baseurl }}">Apprentice</a>
                 </li>
             </ul>
         </div>
