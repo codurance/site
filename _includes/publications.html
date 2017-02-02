@@ -20,24 +20,24 @@
 
                     {% if paginator.previous_page %}
                     <li>
-                        <a href="{{ paginator.previous_page_path}}">«</a>
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">«</a>
                     </li>
                     {% endif %}
 
                     {% for page in (1..paginator.total_pages) %}
                     <li {% if page == paginator.page %} class="active" {% endif %}>
-                    {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter %}
+                    {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
                     {% if page == 1 %}
                         <a href="{{ pageUrl }}">{{ page }}</a>
                     {% else %}
-                        <a href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/'}}">{{ page }}</a>
+                        <a href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/' }}">{{ page }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
 
                     {% if paginator.next_page %}
                     <li>
-                        <a href="{{ paginator.next_page_path }}">»</a>
+                        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">»</a>
                     </li>
                     {% endif %}
                 </ul>
