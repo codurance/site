@@ -16,7 +16,7 @@
 
   <div class="bg-color-light item" >			
     <img class="img-responsive" src="{{ publication.image.src  | prepend: site.baseurl }}" alt="{{ publication.title }}">
-    <h4><a href="{{ publication.url }}">{{ publication.title }}</a></h4>
+    <h4><a href="{{ publication.url | prepend: site.baseurl }}">{{ publication.title }}</a></h4>
   </div>
 
   {% endfor %}
