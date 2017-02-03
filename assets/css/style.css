@@ -101,7 +101,6 @@ a:hover {
 .purchase {
 	padding: 25px 0 30px;
 	border-bottom: solid 1px #eee;
-	background: url(../img/patterns/breadcrumbs.png) repeat;
 }
 .purchase p {
 	margin-bottom: 0;
@@ -1585,7 +1584,6 @@ img.img-mouse {
 .service-info {
 	position: relative;
 	padding: 40px 0 50px;
-	background: url(../img/patterns/17.png) repeat;
 }
 
 .service-info .info-description {
@@ -1636,7 +1634,6 @@ img.img-mouse {
 ------------------------------------*/
 .testimonials-bs {
   padding: 50px 0;
-  background: url(../img/bg/16.jpg) 50% 0 repeat fixed;
 }
 
 .testimonials-bs .headline-center-v2 span.author {
