@@ -31,12 +31,9 @@ body {
 }
 
 .header .navbar-nav > .open > a,         /* 0 0 3 1 */
+.header .navbar-nav > li:hover > a,      /* 0 0 3 2 */
 .header .navbar-nav > .open > a:hover,   /* 0 0 4 1 */
 .header .navbar-nav > .open > a:focus {  /* 0 0 4 1 */
-  color: #e67e22 !important;
-}
-
-.header .navbar-nav > li:hover > a {  /* 0 0 3 2 */
   color: #e67e22 !important;
 }
 
