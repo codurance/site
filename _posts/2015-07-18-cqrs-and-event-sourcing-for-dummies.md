@@ -40,7 +40,7 @@ Let's imagine that we're modeling a really small slice of Twitter. A user can tw
 
 CQRS enables you to go for another architectural style called Event Sourcing. In that approach your event store becomes the single source of truth. Alberto Brandolini created a technique called Event Storming that allows you to model your system around events. This approach tries to model your system as humans would, or as the business would see it: a flow of commands and events. A command in our example would be *Create a Tweet* and the event, always in past tense, would be *Created Tweet*. A command can generate different events and per event we can have different consumers of it. That means that we have flexibility to change our read side, like *Read a Timeline*, in the future.
 
-<img class="img-responsive blog-post-image" src="/assets/img/custom/blog/cqrs.jpg" />
+<img src="{{ site.baseurl }}/assets/img/custom/blog/cqrs.jpg" class="img-responsive blog-post-image" />
 
 This is one proposal that separates write and read concerns and uses event sourcing. It's important to note that depending on the constraints and challenges of our domain we might design this architecture slightly differently. We could decide to place the event queue at the beginning of our system or we could move some time-consuming tasks into the dummy reader as [real Twitter is doing for some special cases](http://www.infoq.com/presentations/Twitter-Timeline-Scalability). Regardless, some key benefits can be obtained:
 
