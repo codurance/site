@@ -15,7 +15,7 @@ canonical:
 
 ---
 
-<a href="/2016/09/29/approaching-tdd-outside-android-ii/">In the previous post</a>, we wrote the acceptance test as a first step and started creating the classes on the entry points of our system. In this post, we will finish implementing the system, and will summarize what we have learnt during the process.
+<a href="{{site.baseurl}}/2016/09/29/approaching-tdd-outside-android-ii/">In the previous post</a>, we wrote the acceptance test as a first step and started creating the classes on the entry points of our system. In this post, we will finish implementing the system, and will summarize what we have learnt during the process.
 
 <h2>Inner loop continuation</h2>
 To finish the <b>BankAccount</b> class, we need to implement its last public method, <b>showStatement</b>. Let's dive into the next iteration of the inner loop cycle.
