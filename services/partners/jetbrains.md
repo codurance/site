@@ -27,21 +27,21 @@ title: JetBrains
 				</div>
 			</div>
 			<div class="row margin-bottom-40 text-center">
-				<a href="/company/#contactus" class="btn-u btn-u-lg">
+				<a href="{{site.baseurl}}/company/#contactus" class="btn-u btn-u-lg">
 					{% t partners-jetbrains-partnership.link_title %}
 				</a>
 			</div>
 		</div>
 		<div class="col-md-6">
-			<img class="img-responsive" src="/assets/img/partners/jetbrains/intellij_screenshot.png" alt="Intellij Idea screenshot">
+			<img class="img-responsive" src="{{site.baseurl}}/assets/img/partners/jetbrains/intellij_screenshot.png" alt="Intellij Idea screenshot">
 		</div>
 	</div>
 	<div class="row margin-top-60 margin-bottom-60">
 		<div class="col-md-6">
-			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-right jetbrains-logo-partners" src="/assets/img/partners/jetbrains/Jetbrains_ConsultingPartner.png" alt="Jetbrains Consulting Partner logo"></a>
+			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-right jetbrains-logo-partners" src="{{site.baseurl}}/assets/img/partners/jetbrains/Jetbrains_ConsultingPartner.png" alt="Jetbrains Consulting Partner logo"></a>
 		</div>
 		<div class="col-md-6">
-			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-left jetbrains-logo-partners" src="/assets/img/partners/jetbrains/Jetbrains_TrainingPartner.png" alt="Jetbrains Training Partner logo"></a>
+			<a href="https://www.jetbrains.com/company/partners/#countries=United%20Kingdom"><img class="img-responsive pull-left jetbrains-logo-partners" src="{{site.baseurl}}/assets/img/partners/jetbrains/Jetbrains_TrainingPartner.png" alt="Jetbrains Training Partner logo"></a>
 		</div>
 	</div>
 	<div class="row">
@@ -61,7 +61,7 @@ title: JetBrains
 		</div>
 	</div>
 	<div class="row text-center">
-		<a href="/company/#contactus" class="btn-u btn-u-lg">
+		<a href="{{site.baseurl}}/company/#contactus" class="btn-u btn-u-lg">
 			{% t partners-jetbrains-partnership.link_title %}
 		</a>
 	</div>
