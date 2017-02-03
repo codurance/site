@@ -28,7 +28,7 @@ Team members' concerns turn into frustrations and become internalised. Impedimen
 
 ##The LEGO Wall
 
-{% img /assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-overview.jpg"" %}
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sbt.png" alt="" class="img-responsive"/>
 
 The LEGO Wall has been conceived to reduce the fear factor when identifying impediments. It is an artifact to keep interruptions visible while ensuring anonymity.
 
@@ -53,7 +53,7 @@ The category “Help the PO” encompasses the activities that the development t
 
 ##Materials and preparation
 
-{% img /assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-materials.jpg "" %}
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-materials.jpg" alt="" class="img-responsive"/>
 
 You can build a LEGO Wall with as many **base plates** as you need, in order to display:
 
@@ -74,7 +74,7 @@ Lego is an excellent tool to visualise interruptions because:
 
 ##How to use it
 
-{% img /assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall.jpg"" %}
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall.jpg" alt="" class="img-responsive"/>
 
 I suggest you hang the LEGO Wall in a place that would be highly visible to the team and stakeholders. We want to trigger discussions in front of it. The LEGO Wall displays real and meaningful data that can be extremely useful during retrospectives. The more colourful the LEGO Wall gets the more margin of improvements the team and the organisation can work on to deliver more value.
 
@@ -83,7 +83,7 @@ Since the LEGO Wall is not a micro-management tool, at the end of every day, eac
 
 ##The power of the LEGO Wall during retrospectives
 
-{% img /assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-retrospective.jpg"" %}
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-retrospective.jpg" alt="" class="img-responsive"/>
 
 The LEGO Wall is a collector for meaningful data that shows how the Sprint went. If the LEGO Wall shows that the team has spent more time on fixing bugs then delivering new value, then they may need to put more focus on quality. Thanks to this effortless way of gathering data the team can set up discussions with stakeholders and, together, find ways to reduce impediments and improve team capacity. Production and release support interruptions are an opportunity to invest in better delivery practices.
 
@@ -93,6 +93,7 @@ BAU interruptions can be reduced by asking a couple of questions:
 - Does the Sprint goal have any business value (or are we just following a process)?
 
 If the answer to the second question is YES then it means that it’s not an interruption but it’s work that should be prioritised.
+
 
 
 ##Conclusion
