@@ -812,7 +812,6 @@
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: #333 url(../img/bg/19.jpg) 50% 0 fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -834,7 +833,6 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../img/patterns/gridtile.png) repeat;
 }
 
 .parallax-twitter-in {
@@ -905,7 +903,6 @@
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../img/patterns/gridtile.png) repeat;
 }
 
 .clients-section .title-v1 p,

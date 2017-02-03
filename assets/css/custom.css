@@ -4,18 +4,6 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 1000px) {
-  .header .navbar-default .navbar-nav > li > a {
-    padding: 9px 20px 9px 20px;
-  }
-}
-
-@media (min-width: 992px) {
-  .header .navbar-default .navbar-nav > li > a:hover {
-    border-bottom: solid 2px #e67e22;
-  }
-}
-
 /* Navigation */
 .breadcrumbs h2 {
   margin-top: 10px;
@@ -43,19 +31,6 @@ body {
   width: auto;
   z-index: 1;
   position: relative;
-}
-
-@media (max-width: 768px) {
-  .feature-panel, .jumbotron {
-    padding-top: 0px;
-  }
-  .feature-panel .jumbotron h1 {
-    line-height:40px;
-  }
-  .feature-panel .jumbotron h3 {
-    font-size: 14px;
-    line-height: 17px;
-  }
 }
 
 .feature-panel .jumbotron {
@@ -144,38 +119,6 @@ body {
 }
 .btn-hire.btn-brd.btn-u-orange.btn-brd-hover:hover {
   background: #d35400;
-}
-
-@media screen and (min-width: 768px) {
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .btn-hire {
-    top: 5px;
-    font-size: 35px;
-    width: 350px;
-  }
-}
-
-@media (max-width: 600px){
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
-  }
-}
-
-@media (max-width: 320px){
-  .btn-hire {
-    top: 0;
-    font-size: 20px;
-    width: 200px;
-  }
 }
 
 body:last-child .btn-u, x:-moz-any-link {
@@ -279,12 +222,6 @@ body:last-child .btn-u, x:-moz-any-link {
 
 .service-card li {
   padding-bottom: 8px;
-}
-
-@media (max-width: 992px) {
-  #services .service-card {
-    margin-top: 30px;
-  }
 }
 
 /*Content Boxes*/
@@ -883,14 +820,6 @@ h3.subject-header {
   color: #e67e22 !important;
 }
 
-@media (max-width: 991px) {
-  .header .navbar-nav > .active > a,
-  .header .navbar-nav > .active > a:hover,
-  .header .navbar-nav > .active > a:focus {
-    background: #e67e22;
-  }
-}
-
 /* Pedro's Command Prompt Envy blog */
 
 .style-screengrab {
@@ -1011,18 +940,6 @@ h2.gray-underline:after {
 
 .bg-white { background-color: #fff; }
 
-@media (max-width: 768px) {
-  .practice {
-    min-width: 0px;
-  }
-}
-
-@media (max-width: 992px) {
-  .practice-text {
-    max-width: 60%;
-  }
-}
-
 /* Sponsoring section */
 .margin-top-40 {
   margin-top: 40px;
@@ -1036,15 +953,6 @@ h2.gray-underline:after {
   display:block;
   margin-left:auto;
   margin-right:auto;
-}
-
-@media (max-width: 992px) {
-  .lscc-title {
-    margin-top:0px;
-    margin-bottom:20px;
-    margin-left:0px;
-    text-align:center;
-  }
 }
 
 .breadcrumbs-v3.ourpeople {
@@ -1093,13 +1001,6 @@ h2.gray-underline:after {
   margin: 0px 50px 0px 0px;
 }
 
-@media (max-width: 480px) {
-  .image-side-by-side-text {
-    float: none;
-  }
-}
-
-
 .latest-publications .item {
   padding: 15px 15px 15px 15px;
   margin-bottom:15px;
@@ -1126,3 +1027,46 @@ h2.gray-underline:after {
     -webkit-align-items: center;
     color: #fff;
 }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/*
+  Common display resolution:
+  https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg
+*/
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  .image-side-by-side-text {
+    float: none;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .feature-panel, .jumbotron {
+    padding-top: 0px;
+  }
+  .feature-panel .jumbotron h1 {
+    line-height:40px;
+  }
+  .feature-panel .jumbotron h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .practice {
+    min-width: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  #services .service-card {
+    margin-top: 30px;
+  }
+}
+
+/* Laptop */
+
+/* Large desktop */
