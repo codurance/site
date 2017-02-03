@@ -22,7 +22,7 @@ checkout:
     - bundle install
 compile:
   override:
-  - rake buildboth
+  - _utility/build_site_prb.sh $FOLDER_NAME
 test:
   override:
     - /bin/true
