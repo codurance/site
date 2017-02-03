@@ -23,17 +23,17 @@
             </ul>
             {% if include.widgets contains "video_frame" %}
             <img class="img-responsive full-width">
-            <iframe style="height: 400px; width: 100%;" src="{{ page.video-url  | prepend: site.baseurl  | prepend: site.baseurl }}"></iframe>
+            <iframe style="height: 400px; width: 100%;" src="{{ page.video-url }}"></iframe>
             </img>
 
             {% endif %}
             {{ content }}
 
             <div id="sharethisButtons">
-              <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ page.url }}'></span>
+              <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
             </div>
 
           </div>
