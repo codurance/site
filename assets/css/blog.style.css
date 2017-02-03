@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 0 0 5px #ccc;
 	margin-left: auto !important;
 	margin-right: auto !important;
-	background: url(../img/patterns/16.png) fixed repeat;
 }
 
 .boxed-layout-space {
@@ -85,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 	padding: 10px 0 6px;
 	border-bottom: solid 1px #eee;
-	background: url(../img/patterns/breadcrumbs.png) repeat;
 }
 
 .breadcrumbs h1 {
