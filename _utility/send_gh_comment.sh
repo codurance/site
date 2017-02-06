@@ -8,7 +8,7 @@ GITHUB_TOKEN=''
 DEPLOYMENT_URL=''
 GITHUB_USERNAME='CoduranceBot'
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd $( dirname "${BASH_SOURCE[0]}" ) && pwd )"
 source "$DIR/send_gh_comment_validation.sh"
 
 if [ -z "$PR_NUMBER" ]; then
