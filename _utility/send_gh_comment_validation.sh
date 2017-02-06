@@ -1,25 +1,28 @@
 #!/bin/bash
-# Script generated with: http://getoptgenerator.dafuer.es/
-
+#Generated with: http://getoptgenerator.dafuer.es/
+ 
 # Define help function
 function help(){
-    echo "deploy_prb";
+    echo "deploy-prb - deploy-prb";
     echo "Usage example:";
-    echo "deploy-prb (-o|--REPO_OWNER) string (-n|--REPO_NAME) string (-g|--GITHUB_TOKEN) string (-d|--DEPLOYMENT_URL) string [(-h|--HELP)] [(-p|--PR_NUMBER) string]";
+    echo "deploy-prb (-o|--REPO_OWNER) string (-n|--REPO_NAME) string (-g|--GITHUB_TOKEN) string (-d|--DEPLOYMENT_URL) string [(-h|--HELP)] [(-p|--PR_NUMBER) string] [(-e|--EXECUTE)]";
     echo "Options:";
     echo "-h or --HELP: Displays this information.";
     echo "-o or --REPO_OWNER string: Repository owner. Required.";
     echo "-n or --REPO_NAME string: Repository name. Required.";
-    echo "-p or --PR_NUMBER string: Pull requeset number.";
+    echo "-p or --PR_NUMBER string: Pull request number.";
     echo "-g or --GITHUB_TOKEN string: Github token. Required.";
-    echo "-d or --DEPLOYMENT_URL string: Deployment url. Required.";
+    echo "-d or --DEPLOYMENT_URL string: Deployment Url. Required.";
+    echo "-e or --EXECUTE: Run with this flag to write to github the changes made.";
     exit 1;
 }
  
 # Declare vars. Flags initalizing to 0.
+HELP=0;
+EXECUTE=0;
  
 # Execute getopt
-ARGS=$(getopt -o "ho:n:p:g:d:" -l "HELP,REPO_OWNER:,REPO_NAME:,PR_NUMBER:,GITHUB_TOKEN:,DEPLOYMENT_URL:" -n "deploy_prb" -- "$@");
+ARGS=$(getopt -o "ho:n:p:g:d:e" -l "HELP,REPO_OWNER:,REPO_NAME:,PR_NUMBER:,GITHUB_TOKEN:,DEPLOYMENT_URL:,EXECUTE" -n "deploy-prb" -- "$@");
  
 #Bad arguments
 if [ $? -ne 0 ];
@@ -33,7 +36,7 @@ while true; do
     case "$1" in
         -h|--HELP)
             shift;
-            help;
+                    HELP="1";
             ;;
         -o|--REPO_OWNER)
             shift;
@@ -75,6 +78,10 @@ while true; do
                         shift;
                     fi
             ;;
+        -e|--EXECUTE)
+            shift;
+                    EXECUTE="1";
+            ;;
  
         --)
             shift;
@@ -83,6 +90,7 @@ while true; do
     esac
 done
  
+# Check required arguments
 if [ -z "$REPO_OWNER" ]
 then
     echo "REPO_OWNER is required";
@@ -106,3 +114,4 @@ then
     echo "DEPLOYMENT_URL is required";
     help;
 fi
+ 

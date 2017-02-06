@@ -8,6 +8,7 @@ GITHUB_TOKEN=''
 DEPLOYMENT_URL=''
 GITHUB_USERNAME='CoduranceBot'
 COMMENT="Deployed: $DEPLOYMENT_URL"
+EXECUTE='0'
 
 DIR="$( cd $( dirname "${BASH_SOURCE[0]}" ) && pwd )"
 source "$DIR/send_gh_comment_validation.sh"
@@ -31,18 +32,22 @@ function get_last_comment_id_generated_by_bot() {
 
 function update_last_comment() {
 	echo "Found a previous comment with id:$LAST_COMMENT_ID . Updating comment"
-	curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/comments/$LAST_COMMENT_ID?access_token=$GITHUB_TOKEN \
-		-H "Content-Type: application/json" \
-		-X POST \
-		-d "{ \"body\":\"$COMMENT\" }"
+	if [ "$EXECUTE" == "1" ]; then
+		curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/comments/$LAST_COMMENT_ID?access_token=$GITHUB_TOKEN \
+			-H "Content-Type: application/json" \
+			-X POST \
+			-d "{ \"body\":\"$COMMENT\" }"
+	fi
 }
 
 function create_comment() {
 	echo "Creating a comment with deployment url"
-	curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$GITHUB_TOKEN \
-		-H "Content-Type: application/json" \
-		-X POST \
-		-d "{ \"body\":\"$COMMENT\" }"
+	if [ "$EXECUTE" == "1" ]; then
+		curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$GITHUB_TOKEN \
+			-H "Content-Type: application/json" \
+			-X POST \
+			-d "{ \"body\":\"$COMMENT\" }"
+	fi
 }
 
 if [ -z "$PR_NUMBER" ]; then
