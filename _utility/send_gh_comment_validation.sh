@@ -1,3 +1,6 @@
+#!/bin/bash
+# Script generated with: http://getoptgenerator.dafuer.es/
+
 # Define help function
 function help(){
     echo "deploy_prb";
