@@ -4,18 +4,38 @@ body {
   font-size: 14px;
 }
 
-/* Navigation */
-.breadcrumbs h2 {
+/* Navbar or Navigation */
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]   
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
+
+.breadcrumbs h2 {  /* 0 0 1 1 */
   margin-top: 10px;
 }
 
-.header-v3 .navbar-brand {
+.header .navbar-nav > li > a {  /* 0 0 2 2 */
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.header-v3 .navbar-brand {  /* 0 0 3 1 */
   top: 6px;
 }
 
-.header .navbar-nav > li > a {
-  padding-left: 10px;
-  padding-right: 20px;
+.header .navbar-nav > .active > a,    /* 0 0 3 1 */
+.header .navbar-nav > li > a:hover {  /* 0 0 3 2 */
+  bottom: -2px;
+  position: relative;
+  border-bottom: solid 2px #e67e22 !important;
+}
+
+.header .navbar-nav > .open > a,         /* 0 0 3 1 */
+.header .navbar-nav > li:hover > a,      /* 0 0 3 2 */
+.header .navbar-nav > .open > a:hover,   /* 0 0 4 1 */
+.header .navbar-nav > .open > a:focus {  /* 0 0 4 1 */
+  color: #e67e22 !important;
 }
 
 .bordered {
@@ -799,25 +819,6 @@ h3.subject-header {
 
 .careers h3 {
   color: #e67e22;
-}
-
-/* Nav bar */
-.header .navbar-nav > li > a:hover,
-.header .navbar-nav > .active > a {
-  bottom: -2px;
-  position: relative;
-  border-bottom: solid 2px #e67e22 !important;
-}
-
-
-.header .navbar-nav > .open > a,
-.header .navbar-nav > .open > a:hover,
-.header .navbar-nav > .open > a:focus {
-  color: #e67e22 !important;
-}
-
-.header .navbar-nav > li:hover > a {
-  color: #e67e22 !important;
 }
 
 /* Pedro's Command Prompt Envy blog */
