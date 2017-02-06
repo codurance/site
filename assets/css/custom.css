@@ -1,7 +1,19 @@
 /* Add here all your css styles (customizations) */
 
-body {
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+body {  /* 0 0 0 1 */
   font-size: 14px;
+}
+
+body:last-child .btn-u, x:-moz-any-link {  /* 0 0 1 1 */
+  margin: 0;
+}
+
+li > a {  /* 0 0 0 2 */
+  color: #e67e22;
 }
 
 /* Navbar or Navigation */
@@ -38,13 +50,13 @@ body {
   color: #e67e22 !important;
 }
 
-.bordered {
-  border: solid 1px #eee;
-}
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
 
 /* Home Page */
 
-.feature-panel {
+.feature-panel {  /* 0 0 1 0 */
   background: url("/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
   height: 550px;
   background-size: cover;
@@ -53,7 +65,13 @@ body {
   position: relative;
 }
 
-.feature-panel .jumbotron {
+.feature-panel h1 {  /* 0 0 1 1 */
+  font-family:'Oxygen', sans-serif;
+  color: white;
+  line-height:70px;
+}
+
+.feature-panel .jumbotron {  /* 0 0 2 0 */
   background: transparent;
   color: white;
   text-align: center;
@@ -64,9 +82,53 @@ body {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.feature-panel .jumbotron h3 {
+.feature-panel .jumbotron h3 {  /* 0 0 2 1 */
   color:white;
 }
+
+/*  Home Page - Heading Titles */
+
+.section {   /* 0 0 1 0 */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title-header {  /* 0 0 1 0 */
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-header h1,
+.title-header h2 {   /* 0 0 1 1 */
+  color: #333;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title-header p {   /* 0 0 1 1 */
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.title-header h1:after,
+.title-header h2:after {   /* 0 0 2 1 */
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 70px;
+  content: " ";
+  margin-left: -35px;
+  position: absolute;
+  background: #e67e22;
+}
+
+/* Buttons */
 
 .btn-more {
   border-radius: 6px;
@@ -86,17 +148,6 @@ body {
 .btn-more-light:hover {
   background-color: white;
   color: #687074;
-}
-
-.feature-panel .highlight {
-  color: white;
-  text-shadow: 1px 1px 1px #7f8c8d;
-}
-
-.feature-panel h1{
-  font-family:'Oxygen', sans-serif;
-  color: white;
-  line-height:70px;
 }
 
 .btn-hire {
@@ -141,57 +192,8 @@ body {
   background: #d35400;
 }
 
-body:last-child .btn-u, x:-moz-any-link {
-  margin: 0;
-}
-
-/*  Heading Titles - Home Page */
-
-.block-header {
-  padding: 50px 0;
-}
-
-.title-header {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.title-header h1,
-.title-header h2 {
-  color: #333;
-  font-size: 28px;
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.title-header h1:after,
-.title-header h2:after {
-  bottom: 0;
-  left: 50%;
-  height: 1px;
-  width: 70px;
-  content: " ";
-  margin-left: -35px;
-  position: absolute;
-  background: #e67e22;
-}
-
-.title-header p {
-  font-size: 17px;
-  font-weight: 200;
-}
-
 /* Section colours */
-.gray-section {
-  background: #fafafa;
-  border-top: solid 1px #eee;
-  border-bottom: solid 1px #eee;
-}
+
 .dark-gray-section {
   background: #cccccc;
 }
@@ -205,26 +207,20 @@ body:last-child .btn-u, x:-moz-any-link {
   background: #ffcc33;
 }
 
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.gray-section {
+  background: #fafafa;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
 }
 
-/* Sandro's Book image special */
-.sandroBookImage {
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  box-shadow: 0 10px 10px 0px gray;
-}
+/* Homepage - Blog panel */
 
-/* Blog panel */
 .homepage-blog-thumb img {
   height: 240px;
   width: 350px;
 }
 
-/* Homepage services section */
+/* Homepage - Services section */
 
 .service-card-inner {
   padding: 30px 5px;
@@ -244,11 +240,17 @@ body:last-child .btn-u, x:-moz-any-link {
   padding-bottom: 8px;
 }
 
+/* Sandro's Book image special */
+
+.sandroBookImage {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  box-shadow: 0 10px 10px 0px gray;
+}
+
 /*Content Boxes*/
 
-li > a {
-  color: #e67e22;
-}
 .content-boxes {
   margin-bottom: 15px;
 }
