@@ -7,11 +7,12 @@ PR_NUMBER=''
 GITHUB_TOKEN=''
 DEPLOYMENT_URL=''
 GITHUB_USERNAME='CoduranceBot'
-COMMENT="Deployed: $DEPLOYMENT_URL"
 EXECUTE='0'
 
 DIR="$( cd $( dirname "${BASH_SOURCE[0]}" ) && pwd )"
 source "$DIR/send_gh_comment_validation.sh"
+
+COMMENT="Deployed: $DEPLOYMENT_URL"
 
 function get_pr_number_by_branch_name() {
   PR_NUMBER=$(curl -X GET -u ${GITHUB_TOKEN}:x-oauth-basic "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls?head=${REPO_OWNER}:${CIRCLE_BRANCH}" | jq ".[0].number")
