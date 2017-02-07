@@ -41,68 +41,68 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
 
   1. Connect to the [AWS Console][AWS Console]
 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-01.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-01.png" alt="" class="img-responsive"/>
 
   1. Go to Services, choose IAM 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-02.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-02.png" alt="" class="img-responsive"/>
 
   1. Create a 'group', to hold these users and policies
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-03.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-03.png" alt="" class="img-responsive"/>
 
   1. Click 'Create a new group'
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-04.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-04.png" alt="" class="img-responsive"/>
 
   1. Pick a name for the group
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-05.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-05.png" alt="" class="img-responsive"/>
 
   1. Click next, choose these policies:
      * AWSLambdaFullAccess
      * IAMFullAccess
      * AmazonAPIGatewayAdministrator
 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-06.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-06.png" alt="" class="img-responsive"/>
 
   1. Next. See this page: 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-07.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-07.png" alt="" class="img-responsive"/>
 
   1. Click Create group
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-08.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-08.png" alt="" class="img-responsive"/>
 
   1. Find your new group
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-09.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-09.png" alt="" class="img-responsive"/>
 
   1. Click on 'Users' tab. It won't have any users, as you just created it.
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-10.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-10.png" alt="" class="img-responsive"/>
 
   1. Create new users: go to the menu on the left 'Users', click the button 'Create new users'
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-11.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-11.png" alt="" class="img-responsive"/>
 
   1. You need to generate as many users as you want. For a test, with one is enough. Pick a name for those users. In my case, 'test1_' 'and test2_'. Select 'Generate an access key for each user' 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-12.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-12.png" alt="" class="img-responsive"/>
 
   1. Click 'Show User Security Credentials', to see the credentials. You'll use those to authenticate against AWS. 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-13.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-13.png" alt="" class="img-responsive"/>
 
   1. In any case, it's better to download the credentials
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-14.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-14.png" alt="" class="img-responsive"/>
 
   1. A CSV with the tokens
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-15.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-15.png" alt="" class="img-responsive"/>
 
   1. Go to Groups, again
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-16.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-16.png" alt="" class="img-responsive"/>
 
   1. Click 'users' tab, then 'Add users to this group'
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-17.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-17.png" alt="" class="img-responsive"/>
 
   1. Find or filter the users that you want
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-18.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-18.png" alt="" class="img-responsive"/>
 
   1. Select them
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-19.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-19.png" alt="" class="img-responsive"/>
 
   1. Click 'Add Users'
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-20.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-20.png" alt="" class="img-responsive"/>
 
 ### Installing and configuring the AWS CLI
 

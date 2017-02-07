@@ -22,79 +22,79 @@ In this second post of the three parts series about how to scale an Umbraco webs
 
 If you don't have one yet, create your [Windows Azure Free Trial subscription](https://azure.microsoft.com/en-gb/pricing/free-trial/), then log into your portal.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/03.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/03.png" alt="" class="img-responsive"/>
 
 Create a new web site and install Umbraco.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/04.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/04.png" alt="" class="img-responsive"/>
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/05.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/05.png" alt="" class="img-responsive"/>
 
 Make sure you chose the right pricing for the database! For the demo, the free price tier is enough.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/06.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/06.png" alt="" class="img-responsive"/>
 
 Configure the server.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/07.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/07.png" alt="" class="img-responsive"/>
 
 Add the  App settings.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/08.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/08.png" alt="" class="img-responsive"/>
 
 We're all set up. Click create, your app is being deployed.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/09.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/09.png" alt="" class="img-responsive"/>
 
 After few minutes the deployment is complete.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/10.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/10.png" alt="" class="img-responsive"/>
 
 You can find the link to your website on the all resources link on the left hand side menu.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/11.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/11.png" alt="" class="img-responsive"/>
 
 The default app page will first appear, whilst the umbraco install is launching..
 It should eventually prompt you for the login details you want to set up for the very first admin user of your umbraco installation.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/12.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/12.png" alt="" class="img-responsive"/>
 
 Now is the time for you to grab a coffee and check your [twitter feed](https://twitter.com/cats?lang=en-gb).
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/13.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/13.png" alt="" class="img-responsive"/>
 
 And here we are , ready to manage our website!
 After a successful installation, we are taken to the admin page of our Umbraco CMS.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/14.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/14.png" alt="" class="img-responsive"/>
 
 ### Ready to use layout template
 
 Since we installed the default template along with the Umbraco install, we have a starter kit, named Fanoe with layout template and site structure already built for us.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/15.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/15.png" alt="" class="img-responsive"/>
 
 We can study, in the admin of the website accessed via the ```/umbraco path``` , the structure of our website.
 We have a Homepage that is our Higher level page, and it contains ```Learn, Explore and Extend``` as children items.
 Each of those nodes are documents that are of a specific type and which are linked to a given template.
 In our case, the Home document, is an instance of the Home Document Type and will be rendered through the Home Template.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/16.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/16.png" alt="" class="img-responsive"/>
 
 The Home Document Type (DT) is defined in the settings menu of the Umbraco website.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/17.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/17.png" alt="" class="img-responsive"/>
 
 The Home DT has two tabs defined, in the site tab we have a Site Description property of type Textarea, a Site Title property of type Textstring.
 
 The Home Template, is accessible under the Template folder of the Umbraco Settings menu.
 It is nested under a master Template called ```Master``` and it contains the code to display when the Home page is rendered.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/18.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/18.png" alt="" class="img-responsive"/>
 
 Here the home page references a child template to display content from Grid data types.
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/19.png alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-20-umbraco-on-azure/19.png" alt="" class="img-responsive"/>
 
 ### Up and running in less than an hour : start adding pages
 

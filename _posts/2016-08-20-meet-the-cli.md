@@ -37,7 +37,7 @@ All thanks to the CLI.
 [The ECMA Common Language Infrastructure](http://www.amazon.co.uk/Language-Infrastructure-Annotated-Microsoft-Development/dp/0321154932/ref=sr_1_1?ie=UTF8&qid=1428168490&sr=8-1&keywords=common+language+infrastructure) (CLI) is an international standard that gives a specification for executable code and the execution environment. The CLI sets standards and rules to allow different languages to be used and run regardless of the operating system, relying on the virtual execution system in which it runs.
 The elements specified in the standard are: the Common Type System (CTS), the Common Language Specification (CLS), Metadata, Portable file system, Common Intermediate Language (CIL) and the Virtual Execution System (VES).
 
-<img src="{{site.baseurl}}/assets/img/custom/blog/cli/common_language_infra.jpg alt="" class="img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/cli/common_language_infra.jpg" alt="" class="img-responsive"/>
 
 ### .Net as a propriatary implementation of the specification
 

@@ -37,7 +37,7 @@ Zsh offers a plethora of additional features on top of bash that you may find a 
 
 Some features of note that I found particularly useful when I first made the switch are:
 
-![](/assets/img/custom/blog/installing-prezto/cd-completion.png)
+![]({{site.baseurl}}/assets/img/custom/blog/installing-prezto/cd-completion.png)
 
 *    'cd' auto-completion
 *    'cd' navigation
@@ -91,7 +91,7 @@ The colour theme I use for my terminal is called [Solarized](http://ethanschoono
 
 The colours I've used are from the file titled `Solarized Dark.terminal` from the repository. To install this file open up your Terminal, in the menu bar navigate to `Terminal > Preferences` and then use the import feature to load the profile. With the desired profile highlighted, you can then click the `Default` button to set it as such.
 
-<img class="img-responsive" style="float: center" height="auto" width="auto" src="/assets/img/custom/blog/installing-prezto/import-terminal-profile.png">
+<img class="img-responsive" style="float: center" height="auto" width="auto" src="{{site.baseurl}}/assets/img/custom/blog/installing-prezto/import-terminal-profile.png">
 
 From here on every new terminal window you open will have the new profile colours loaded. I encourage you to play around with these colours and themes to whatever suits you.
 
@@ -107,7 +107,7 @@ To enable a plugin, open up the `.zpreztorc` file in a text-editor.
 
 Under the line which reads `zstyle ':prezto:load' pmodule \` there should be a list of already-loaded modules. Simple add any additional ones to the list. Personally, I added the `history-substring-search` and the `git` modules. My resulting file looks a little like this.
 
-<img class="img-responsive" style="float: center" height="auto" width="auto" src="/assets/img/custom/blog/installing-prezto/zpreztorc.png">
+<img class="img-responsive" style="float: center" height="auto" width="auto" src="{{site.baseurl}}/assets/img/custom/blog/installing-prezto/zpreztorc.png">
 
 ## What's next?
 
