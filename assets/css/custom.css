@@ -128,55 +128,59 @@ li > a {  /* 0 0 0 2 */
   background: #e67e22;
 }
 
-/* Buttons */
+/* Buttons - used across multiple pages */
 
-.btn-more {
+.btn-more {   /* 0 0 1 0 */
   border-radius: 6px;
   font-size: 18px;
   margin: 10px 0;
   padding: 10px 30px;
 }
 
-.btn-more:hover { transition: .3s; }
-
-.btn-more-light {
+.btn-more-light {  /* 0 0 1 0 */
   background-color: transparent;
   border: 1px solid white;
   color: white;
 }
 
-.btn-more-light:hover {
+.btn-u-orange {   /* 0 0 1 0 */
+  background: #e67e22;
+}
+
+#sharethisButtons {   /* 0 0 1 0 */
+  padding-bottom: 30px;
+}
+
+.btn-more:hover {  /* 0 0 2 0 */
+  transition: .3s;
+}
+
+.btn-more-light:hover {  /* 0 0 2 0 */
   background-color: white;
   color: #687074;
 }
 
-
-.btn-u-orange {
-  background: #e67e22;
+.btn-brd.btn-u-orange {   /* 0 0 2 0 */
+  border-color: #e67e22;
 }
-.btn-u-orange:hover,
-.btn-u-orange:focus,
-.btn-u-orange:active,
-.btn-u-orange.active,
-.open .dropdown-toggle.btn-u-orange {
+
+.btn-u-orange:hover,                   /* 0 0 2 0 */
+.btn-u-orange:focus,                   /* 0 0 2 0 */
+.btn-u-orange:active,                  /* 0 0 2 0 */
+.btn-u-orange.active,                  /* 0 0 2 0 */
+.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
   background: #d35400;
   color: #fff;
   text-decoration: none;
 }
 
-.btn-brd.btn-u-orange {
-  border-color: #e67e22;
-}
-.btn-brd.btn-u-orange:hover {
+.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
   color: #d35400;
   border-color: #d35400;
 }
-.btn-brd.btn-u-orange.btn-brd-hover:hover {
-  background: #d35400;
-}
 
-#sharethisButtons {
-  padding-bottom: 30px;
+.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
+  background: #d35400;
 }
 
 /* Section colours */
