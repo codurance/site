@@ -264,6 +264,22 @@ li > a {  /* 0 0 0 2 */
   margin-right: 10px;
 }
 
+.news-v3-in h1 {
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0 0 20px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.news-v3-in h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 35px;
+  text-transform: none;
+}
+
 /* Author */
 #author-img {
   width: 100%;
@@ -466,7 +482,7 @@ li > a {  /* 0 0 0 2 */
   display: block;
   margin: 0 auto;
 }
-
+ 
 /* Skills and practices section */
 .news-v1 a {
   color: #e67e22;
