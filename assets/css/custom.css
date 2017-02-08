@@ -104,7 +104,7 @@ li > a {  /* 0 0 0 2 */
   margin-bottom: 60px;
 }
 
-.title-header h1,
+.title-header h1,    /* 0 0 1 1 */
 .title-header h2 {   /* 0 0 1 1 */
   color: #333;
   font-size: 28px;
@@ -120,7 +120,7 @@ li > a {  /* 0 0 0 2 */
   font-weight: 200;
 }
 
-.title-header h1:after,
+.title-header h1:after,    /* 0 0 2 1 */
 .title-header h2:after {   /* 0 0 2 1 */
   bottom: 0;
   left: 50%;
@@ -406,6 +406,7 @@ li > a {  /* 0 0 0 2 */
   font-weight: bold;
 }
 
+/* Consultancy */
 .services .services-box:hover {   /* 0 0 3 0 */
   padding: 20px 20px;
   border: solid 1px #eee;
@@ -544,6 +545,7 @@ i.no-border {   /* 0 0 1 1 */
 }
 
 /* Post with text side by side images */
+
 .image-side-by-side-text {   /* 0 0 1 0 */
   float:left;
   margin: 0px 50px 15px 20px;
@@ -564,6 +566,35 @@ i.no-border {   /* 0 0 1 1 */
 
 /* Section colours */
 
+.gray-section {
+  background: #fafafa;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
+}
+
+/* Foreground colours */
+
+.white,
+p.white,
+ul.white li {
+  color: white;
+}
+
+/* Background colours */
+
+.bg-dark-red { background-color: #cc0000; }
+
+.bg-red { background-color: #ff0000; }
+
+.bg-dark-orange { background-color: #dd4d00; }
+
+.bg-orange { background-color: #ff6600; }
+
+.bg-dark-yellow { background-color: #ffaa00; }
+
+.bg-yellow { background-color: #ffcc33; }
+
+.bg-white { background-color: #fff; }
 .gray-section {   /* 0 0 1 0 */
   background: #fafafa;
   border-top: solid 1px #eee;
