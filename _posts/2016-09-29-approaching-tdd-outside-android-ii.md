@@ -15,7 +15,7 @@ canonical:
 
 ---
 
-In the <a href="/2016/09/28/approaching-tdd-outside-android">previous post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
+In the <a href="{{site.baseurl}}/2016/09/28/approaching-tdd-outside-android">previous post</a>, we introduced the Bank kata. We explained how we are going to implement it in Android, reviewed the different kinds of tests that we use in Outside-in and transformed a user story into a bunch of acceptance criteria. 
 
 In this second post, we will focus more on the practical side. We will show how to build the acceptance test from the acceptance criteria, how acceptance tests and unit tests fit in the <b>double loop</b> of TDD and how we rely on them to guide us through the implementation.
 
@@ -54,7 +54,7 @@ We will see the collaborators in more detail later on, while we implement them.
 
 Once we have finished writing the acceptance test and we see it <b>failing for the right reason</b> (The view is not showing the statement), we will dive into the inner loop and start writing the individual pieces required for the feature.
 
-<img src="/assets/img/custom/blog/acc2.png" alt="Outside-in acceptance test coverage" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/img/custom/blog/acc2.png" alt="Outside-in acceptance test coverage" class="img-responsive"/>
 
 <h2>Inner loop - Unit test</h2>
 

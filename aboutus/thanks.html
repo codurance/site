@@ -16,9 +16,9 @@ title: Your Message
             <div>
               <p><strong>{% t thanks.until-then %}</strong></p>
                 <ul>
-                  <li><a href="/blog" title="Codurance Web Site">{% t thanks.our-blog %}</a></li>
-                  <li><a href="/videos" title="Codurance Web Site">{% t thanks.video-section %}</a></li>
-                  <li><a href="/services" title="Codurance Web Site">{% t thanks.services-we-offer %}</a></li>
+                  <li><a href="{{ '/blog' | prepend: site.baseurl }}" title="Codurance Web Site">{% t thanks.our-blog %}</a></li>
+                  <li><a href="{{ '/videos' | prepend: site.baseurl }}" title="Codurance Web Site">{% t thanks.video-section %}</a></li>
+                  <li><a href="{{ '/services' | prepend: site.baseurl }}" title="Codurance Web Site">{% t thanks.services-we-offer %}</a></li>
                 </ul>
             </div>
         </div><!--/col-md-6 col-md-offset-3-->

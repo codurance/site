@@ -6,7 +6,7 @@ layout: default
         <div class="jumbotron">
 		<h1>{% t index-banner.title %}</h1>
 	    <h3>{% t index-banner.subtitle %}</h3>
-	    <a href="/services" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
+	    <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
         </div>
 </div>
 <!-- Activity panel -->
@@ -27,10 +27,10 @@ layout: default
 		
 	</div>
         <div class="col-md-6 text-center">
-		<a href="/publications" role="button" class="btn btn-u btn-more animated">{% t index-activity.publications_link_title %}</a>
+		<a href="{{ '/publications' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t index-activity.publications_link_title %}</a>
         </div>
 	<div class="col-md-6 text-center">
-		<a href="/events" role="button" class="btn btn-u btn-more animated">{% t index-activity.events_link_title %}</a>
+		<a href="{{ '/events' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t index-activity.events_link_title %}</a>
         </div>
     </div>
 </div>
@@ -44,7 +44,7 @@ layout: default
             <div class="col-md-4">
 		        <div class="service-card">
 		            <div class="service-card-inner bg-dark-red">
-			            <img src="/assets/img/custom/home/services/software-creation-icon.png" />
+			            <img src="{{ '/assets/img/custom/home/services/software-creation-icon.png' | prepend: site.baseurl }}" />
 				    <h2 class="white">{% t index-services-software_creation.title %}</h2>
 		            </div>
 			    <div class="service-card-inner bg-red">
@@ -54,14 +54,14 @@ layout: default
 					    <li>{% t index-services-software_creation.description_line_3 %}</li>
 					    <li>{% t index-services-software_creation.description_line_4 %}</li>
 				    </ul>
-				    <a href="/services#software-creation"  role="button" class="btn btn-more btn-more-light animated">{% t index-services-software_creation.link_title  %}</a>
+				    <a href="{{ '/services#software-creation' | prepend: site.baseurl }}"  role="button" class="btn btn-more btn-more-light animated">{% t index-services-software_creation.link_title  %}</a>
 			    </div>
 		        </div>
 	        </div>
             <div class="col-md-4">
 		    <div class="service-card">
 		        <div class="service-card-inner bg-dark-orange">
-			        <img src="/assets/img/custom/home/services/expert-advice-icon.png" />
+			        <img src="{{ '/assets/img/custom/home/services/expert-advice-icon.png' | prepend: site.baseurl }}" />
 				<h2 class="white">{% t index-services-expert_advice.title %}</h2>
 		        </div>
 		        <div class="service-card-inner bg-orange">
@@ -71,14 +71,14 @@ layout: default
 					<li>{% t index-services-expert_advice.description_line_3 %}</li>
 					<li>{% t index-services-expert_advice.description_line_4 %}</li>
 				</ul>
-				<a href="/services#expert-advice" role="button" class="btn btn-more btn-more-light animated">{% t index-services-expert_advice.link_title  %}</a>
+				<a href="{{ '/services#expert-advice' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light animated">{% t index-services-expert_advice.link_title  %}</a>
 		        </div>
 		    </div>
 	        </div>
             <div class="col-md-4">
 		        <div class="service-card">
 		            <div class="service-card-inner bg-dark-yellow">
-			            <img src="/assets/img/custom/home/services/training-coaching-icon.png" />
+			            <img src="{{ '/assets/img/custom/home/services/training-coaching-icon.png' | prepend: site.baseurl }}" />
 				    <h2 class="white">{% t index-services-training.title  %}</h2>
 		            </div>
 		            <div class="service-card-inner bg-yellow">
@@ -88,7 +88,7 @@ layout: default
 					    <li>{% t index-services-training.description_line_3 %}</li>
 					    <li>{% t index-services-training.description_line_4 %}</li>
 				    </ul>
-				    <a href="/services#training" role="button" class="btn btn-more btn-more-light animated">{% t index-services-training.link_title  %}</a>
+				    <a href="{{ '/services#training' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light animated">{% t index-services-training.link_title  %}</a>
 		            </div>
 		        </div>
 	        </div>
@@ -104,59 +104,59 @@ layout: default
         <!-- Owl Carousel 2.0 -->
         <div class="custom-owl-carousel owl-theme margin-bottom-20">
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/trinitymirror.png" alt="Trinity Mirror logo">
+                <img src="{{ '/assets/img/custom/home/clients/trinitymirror.png' | prepend: site.baseurl }}" class="img-responsive" alt="Trinity Mirror logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/asos-logo.jpg" alt="ASOS logo">
+                <img src="{{ '/assets/img/custom/home/clients/asos-logo.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="ASOS logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/tesco.png" alt="Tesco logo">
+                <img src="{{ '/assets/img/custom/home/clients/tesco.png' | prepend: site.baseurl }}" class="img-responsive" alt="Tesco logo">
             </div>
             <div class="jetBrains-logo-carousel">
-                <img class="img-responsive" src="/assets/img/custom/home/clients/jetbrainsLogo.png" alt="JetBrains logo">
+                <img src="{{ '/assets/img/custom/home/clients/jetbrainsLogo.png' | prepend: site.baseurl }}" class="img-responsive" alt="JetBrains logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/bts-logo.jpeg" alt="Barcelona Technology School logo">
+                <img src="{{ '/assets/img/custom/home/clients/bts-logo.jpeg' | prepend: site.baseurl }}" class="img-responsive" alt="Barcelona Technology School logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/coniq.png" alt="Coniq logo">
+                <img src="{{ '/assets/img/custom/home/clients/coniq.png' | prepend: site.baseurl }}" class="img-responsive" alt="Coniq logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/xebia.jpg" alt="Xebia logo">
+                <img src="{{ '/assets/img/custom/home/clients/xebia.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="Xebia logo">
             </div>
             <div>
-                 <img class="img-responsive" src="/assets/img/custom/home/clients/crowdmix.jpg" alt="Crwodmix logo">
+                 <img src="{{ '/assets/img/custom/home/clients/crowdmix.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="Crwodmix logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/ubs.png" alt="UBS logo">
+                <img src="{{ '/assets/img/custom/home/clients/ubs.png' | prepend: site.baseurl }}" class="img-responsive" alt="UBS logo">
             </div>
               <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/valtech.png" alt="Valtech logo">
+                <img src="{{ '/assets/img/custom/home/clients/valtech.png' | prepend: site.baseurl }}" class="img-responsive" alt="Valtech logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/agilityinmind.png" alt="AgilityInMind logo">
+                <img src="{{ '/assets/img/custom/home/clients/agilityinmind.png' | prepend: site.baseurl }}" class="img-responsive" alt="AgilityInMind logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/societygenerale.jpg" alt="Society Generale logo">
+                <img src="{{ '/assets/img/custom/home/clients/societygenerale.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="Society Generale logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/skillsmatter.jpg" alt="Skills Matter logo">
+                <img src="{{ '/assets/img/custom/home/clients/skillsmatter.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="Skills Matter logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/flextrade.png" alt="Flextrade logo">
+                <img src="{{ '/assets/img/custom/home/clients/flextrade.png' | prepend: site.baseurl }}" class="img-responsive" alt="Flextrade logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/aws.svg" alt="Amazon Web Services logo">
+                <img src="{{ '/assets/img/custom/home/clients/aws.svg' | prepend: site.baseurl }}" class="img-responsive" alt="Amazon Web Services logo">
             </div>
             <div>
-                <img class="img-responsive" src="/assets/img/custom/home/clients/satalia.jpg" alt="Satalia logo">
+                <img src="{{ '/assets/img/custom/home/clients/satalia.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="Satalia logo">
             </div>
         </div>
         <!-- End Owl Carousel -->
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="row jetBrains-blurb">
-			<h5>{% t index-clients-footer.title %} <a href="/services/partners/jetbrains">{% t index-clients-footer.link_title  %}</a></h5>.
+			<h5>{% t index-clients-footer.title %} <a href="{{ '/services/partners/jetbrains' | prepend: site.baseurl }}">{% t index-clients-footer.link_title  %}</a></h5>.
                 </div>
             </div>
         </div>
@@ -207,7 +207,7 @@ layout: default
 		        </div>
 		    </div>
             <div class="col-md-12 text-center">
-		    <a href="/company/#howwework" class="btn btn-u btn-more animated">{% t index-how_we_work.link_title %}</a>
+		    <a href="{{ '/company/#howwework' | prepend: site.baseurl }}" class="btn btn-u btn-more animated">{% t index-how_we_work.link_title %}</a>
             </div>
 
 		</div>
@@ -224,17 +224,17 @@ layout: default
             <div class="row news-v1">
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="news-v1-in">
-                        <img class="img-responsive" src="/assets/img/custom/home/the-software-craftsman-book.jpg" alt="">
+                        <img src="{{ '/assets/img/custom/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">
 			<h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.title %}</a></h3>
 			<p>{% t index-software_craftsmanship-book.subtitle%}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
-				<li><a href="/publications/the-software-craftsman">{% t index-software_craftsmanship-book.link_title  %}</a></li>
+				<li><a href="{{ '/publications/the-software-craftsman' | prepend: site.baseurl }}">{% t index-software_craftsmanship-book.link_title  %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="news-v1-in">
-                        <img class="img-responsive" src="/assets/img/custom/home/socrates-uk.jpg" alt="">
+                        <img src="{{ '/assets/img/custom/home/socrates-uk.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">
 			<h3><a href="http://socratesuk.org/">{% t index-software_craftsmanship-socrates.title %}</a></h3>
                         <p>{% t index-software_craftsmanship-socrates.subtitle %}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">
@@ -244,7 +244,7 @@ layout: default
                 </div>
                 <div class="col-md-4 md-margin-bottom-40">
                     <div class="news-v1-in">
-                        <img class="img-responsive" src="/assets/img/custom/home/lscc.jpg" alt="">
+                        <img src="{{ '/assets/img/custom/home/lscc.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">
 			<h3><a href="https://www.meetup.com/london-software-craftsmanship">{% t index-software_craftsmanship-lscc.title %}</a></h3>
 			<p>{% t index-software_craftsmanship-lscc.subtitle %}</p>
                         <ul class="list-inline news-v1-info no-margin-bottom">

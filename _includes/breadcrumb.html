@@ -3,7 +3,7 @@
         <div class="container">
             <h1 class="pull-left">{% if page.tag %}{{ page.tag }} {% else %}{{ page.section }}{% endif %}</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="/">Home</a></li>
+                <li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
                 {% if page.group and page.title != page.group.title %}
                     <li>
                     {% if page.group.link %}

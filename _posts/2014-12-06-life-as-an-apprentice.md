@@ -55,7 +55,7 @@ You see, creating a piece of software is really important. But when it comes to 
 
 ### Is that fence painted yet?
 
-<image class='img img-responsive' src='/assets/img/custom/blog/2014_12_06_apprentice/painting-the-fence.jpg'> 
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2014_12_06_apprentice/painting-the-fence.jpg" class="img img-responsive"> 
 
 The concepts we are trying to learn are arguably, quite basic and easy to understand. But they do not always translate seamlessly when it comes to implementation.
 

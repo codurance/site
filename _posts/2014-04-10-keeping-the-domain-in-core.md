@@ -18,6 +18,6 @@ This makes testing the application from a business perspective simpler and more 
 
 Considering our example of consuming from a messaging service: we need to decide whether it is a corrupt message, and for non-corrupt messages a further check is required to see if it is a duplicate, before we can deem it valid. This can be nicely divided into infrastructure and core. The following UML diagram shows the dependencies.
 
-![UML Diagram for example](/assets/img/custom/blog/keeping_domain_in_core.png)
+![UML Diagram for example]({{site.baseurl}}/assets/img/custom/blog/keeping_domain_in_core.png)
 
 The JMS Message Listener is only concerned with the delivery of the message. How that message is handled, once received, is independent of the infrastructure. The Received Message in this case is an interface implemented by JMS Received Message that lives in the infrastructure package. Here we use dependency inversion to ensure that the core does not depend on the infrastructure package.
