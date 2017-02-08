@@ -7,7 +7,7 @@ body {
 /* Navbar or Navigation */
 /*
    CSS specificity calculator: https://specificity.keegan.st/
-   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]   
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
@@ -1001,6 +1001,18 @@ h2.gray-underline:after {
 .text-side-by-side-image {
   margin: 0px 50px 0px 0px;
 }
+
+/*Post with 2 images side by side*/
+.images-side-by-side-left {
+  float:left;
+  margin: 0px 75px 15px 65px;
+}
+
+.images-side-by-side-right {
+  float:right;
+  margin: 0px 65px 15px 75px;
+}
+
 
 .latest-publications .item {
   padding: 15px 15px 15px 15px;
