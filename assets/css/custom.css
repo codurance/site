@@ -207,19 +207,6 @@ li > a {  /* 0 0 0 2 */
 
 /* Section colours */
 
-.dark-gray-section {
-  background: #cccccc;
-}
-.orange-section {
-  background: #ff6600;
-}
-.red-section {
-  background: #ff0000;
-}
-.yellow-section {
-  background: #ffcc33;
-}
-
 .gray-section {
   background: #fafafa;
   border-top: solid 1px #eee;
@@ -253,56 +240,6 @@ li > a {  /* 0 0 0 2 */
   padding-bottom: 8px;
 }
 
-/* Sandro's Book image special */
-
-.sandroBookImage {
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  box-shadow: 0 10px 10px 0px gray;
-}
-
-/*Content Boxes*/
-
-.content-boxes {
-  margin-bottom: 15px;
-}
-
-.content-boxes i {
-  top: 8px;
-  margin-right: 8px;
-  float: left;
-  position: relative;
-}
-
-.content-boxes .content-box {
-  padding: 0 10px;
-  color: #333;
-  overflow: hidden;
-}
-
-.content-boxes .content-box h3 {
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 3px;
-  text-transform: capitalize;
-}
-
-.content-boxes .content-box h3.heading-sm {
-  color:#333;
-}
-
-.content-boxes .content-box h3 a {
-  color: #333;
-}
-
-.content-boxes h2 {
-  font-size: 15px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 /* Blog */
 
 .blog-thumb {
@@ -327,65 +264,9 @@ li > a {  /* 0 0 0 2 */
   margin-right: 10px;
 }
 
-.news-v3-in h1 {
-  font-size: 32px;
-  font-weight: 200;
-  margin: 0 0 20px;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-
-.news-v3-in h2 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 28px;
-  line-height: 35px;
-  text-transform: none;
-}
-
-.cta-contact-blog-box label {
-  display: inline;
-}
-
-.vertical-alignment-parent {
-  display: table;
-}
-
-.reset-margin {
-  margin: 0;
-}
-
-.vertical-alignment-child {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 15px;
-}
-
-.cta-label {
-  width: 50%;
-}
-.cta-label-left {
-  float: left;
-  padding-right: 1%;
-}
-.cta-label-right {
-  float: right;
-}
-
 /* Author */
 #author-img {
   width: 100%;
-}
-
-/* Videos */
-
-.video-post {
-  margin-bottom: 20px;
-}
-
-.videos .time-place {
-  font-weight: bold;
-  font-size: 80%;
 }
 
 /* Team */
@@ -394,23 +275,6 @@ li > a {  /* 0 0 0 2 */
   margin-left: auto;
   margin-right: auto;
   width: 450px;
-}
-
-.profile-window-grow {
-  cursor: pointer;
-  -webkit-transition:all 0.2s ease-out;
-  -moz-transition:all 0.2s ease-out;
-  -ms-transition:all 0.2s ease-out;
-  -o-transition:all 0.2s ease-out;
-  transition:all 0.2s ease-out;
-}
-
-.profile-window-grow:hover {
-  -webkit-transform:scale(1.03);
-  -moz-transform:scale(1.03);
-  -ms-transform:scale(1.03);
-  -o-transform:scale(1.03);
-  transform:scale(1.03);
 }
 
 .img-hover-v1 span {
@@ -504,24 +368,6 @@ li > a {  /* 0 0 0 2 */
   font-size: 40px !important;
 }
 
-.margin-bottom-100 {
-  margin-bottom: 100px;
-}
-
-.orange {
-  color: #e67e22;
-}
-
-.scenario-lead-text {
-  font-family: 'Helvetica', serif;
-}
-
-.service-descriptions .funny-boxes {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-
 /* Services pages */
 .services-section {
   padding-bottom: 40px;
@@ -576,14 +422,6 @@ li > a {  /* 0 0 0 2 */
 .services-section .body p {
   color: white;
   font-size: 12px
-}
-
-.subject-header {
-  position: relative;
-}
-
-#software-creation .subject-header {
-  color: #ff0000;
 }
 
 #expert-advice .subject-header {
@@ -645,134 +483,6 @@ h3.subject-header {
   margin-left: -35px;
 }
 
-.grey-header {
-  margin: 80px 0px 80px 0px;
-  color: #555555 !important;
-}
-
-.grey-header:after {
-  background: #555555 !important;
-}
-
-.contact-us {
-  text-align: center;
-}
-
-.contact-us h2, .contact-us h3 {
-  color: white;
-}
-
-.contact-us a:hover {
-  background: white;
-  text-decoration: none;
-}
-
-.orange-section .contact-us a:hover h2 {
-  color: #ff6600;
-}
-
-.red-section .contact-us a:hover h2 {
-  color: #ff0000;
-}
-
-.yellow-section .contact-us a:hover h2 {
-  color: #ffcc33;
-}
-
-.gray-section .contact-us h2, .gray-section .contact-us h3 {
-  color: #687074;
-}
-
-.gray-section .contact-us a {
-  border: 1px solid #687074;
-}
-
-.gray-section .contact-us a:hover {
-  background: #687074;
-}
-
-.gray-section .contact-us a:hover h2 {
-  color: #fafafa;
-}
-
-.contact-us-courses a {
-  background: #ffcc33;
-  border: 1px solid #ffcc33;
-  border-radius: 6px;
-}
-
-.contact-us-courses h2 {
-  color: white;
-}
-
-.contact-us-courses a:hover h2 {
-  color: #ffcc33;
-}
-
-.contact-us-courses h3 {
-  color: #555555;
-}
-
-.btn-check-courses {
-  width: 240px;
-  text-align: center;
-  background: #ffcc33;
-  border: 1px solid #ffcc33;
-  border-radius: 6px;
-  margin-top: 20px;
-}
-
-.btn-check-courses:hover {
-  text-decoration: none;
-  background: white;
-}
-
-.btn-check-courses:hover h3 {
-  color: #ffcc33;
-}
-
-.btn-check-courses h3 {
-  color: white;
-  font-size: 20px;
-  margin: 5px 0px 5px 0px;
-}
-
-.course {
-  text-align: left;
-}
-
-.course-category {
-  padding-top: 40px;
-}
-
-.course-title {
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.course-author {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-
-.btn-course {
-  border: 1px solid #555555;
-  border-radius: 6px;
-  width: 240px;
-  color: #555555;
-  padding: 8px 0px 8px 0px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.btn-course:hover {
-  background: #555555;
-  color: white;
-  text-decoration: none;
-}
-
-
 /* Training */
 
 .training-link-btn {
@@ -826,12 +536,6 @@ h3.subject-header {
   text-align: right;
 }
 
-/* Careers */
-
-.careers h3 {
-  color: #e67e22;
-}
-
 /* Pedro's Command Prompt Envy blog */
 
 .style-screengrab {
@@ -853,63 +557,12 @@ h3.subject-header {
   margin-left: 30px
 }
 
-.img-center{
+.img-center {
   display: block;
   margin: 0 auto;
 }
 
-
 /* Skills and practices section */
-h2.gray-underline:after {
-  bottom: 0;
-  left: 50%;
-  height: 1px;
-  width: 70px;
-  content: " ";
-  margin-left: -35px;
-  position: absolute;
-  background: #555555;
-}
-
-.col-centered-120 {
-  margin: 0 auto 0 auto;
-  width: 120px;
-}
-
-.practice {
-  min-width:600px;
-}
-
-.practice > * {
-  float:left;
-}
-
-.practice-icon {
-  height: 100px;
-  width: 100px;
-}
-
-.practice-text {
-  margin-top: 20px;
-  max-width: 250px;
-}
-
-.btn-practices {
-  background: none;
-  border: grey;
-  color: #555555;
-  width: 120px;
-  margin: 0 auto 0 auto;
-  border-radius: 6px;
-  border-width: 3px;
-  border: 1px solid grey;
-}
-
-.btn-practices:hover {
-  background-color: #555555;
-  color: white;
-}
-
 .news-v1 a {
   color: #e67e22;
 }
@@ -953,20 +606,6 @@ h2.gray-underline:after {
 .bg-white { background-color: #fff; }
 
 /* Sponsoring section */
-.margin-top-40 {
-  margin-top: 40px;
-}
-
-.lscc-title {
-  margin-left:-50px;
-  margin-top:40px;
-}
-.sponsoring-img {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-}
-
 .breadcrumbs-v3.ourpeople {
   background: url(/assets/img/custom/careers/ourpeople.jpg) no-repeat;
   background-size: cover;
@@ -1003,7 +642,7 @@ h2.gray-underline:after {
   padding: 20px;
 }
 
-/*Post with text side by side images*/
+/* Post with text side by side images */
 .image-side-by-side-text {
   float:left;
   margin: 0px 50px 15px 20px;
