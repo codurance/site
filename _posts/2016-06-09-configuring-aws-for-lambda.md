@@ -26,16 +26,16 @@ The first part, mostly [accidental complexity][no-silver-bullet-summary], is how
 
   1. Connect to the [AWS Console][AWS Console]
 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-01.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-01.png" alt="" class="img-responsive"/>
 
   1. Click on your name (top right), then 'My Account' 
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-1.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-1.png" alt="" class="img-responsive"/>
 
   1.  On the left menu, click 'Payment Methods'
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-2.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-2.png" alt="" class="img-responsive"/>
 
   1. Add a debit/credit card. This is very important, as you could go over the free tier and they would need to charge you. But with the levels of activity that we'll be using, you are included in the [free tier][lambda-pricing]
-    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-3.png alt="" class="img-responsive"/>
+    <img src="{{site.baseurl}}/assets/img/custom/blog/2016-06-09-configuring-aws-lambda/aws-payment-3.png" alt="" class="img-responsive"/>
 
 ## Setting up your AWS account
 
