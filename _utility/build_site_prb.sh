@@ -9,6 +9,8 @@ if [[ "$FOLDER_NAME" != "site-master" ]]; then
   cat _config_prb.yml
   rake buildprb
 else
-  rake buildboth
+  echo "baseurl: ''" > _config_prb.yml
+  rake buildesprb
+  rake buildenprb
 fi
 
