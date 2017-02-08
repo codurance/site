@@ -90,7 +90,7 @@ Basically, once you hit an element in the chain, it has full control.
 
 In UML, it looks a little like this:
 
-![Chain of Responsibility pattern UML diagram](/assets/img/custom/blog/2015-04-13-design-patterns/chain-of-responsibility-pattern-uml.png)
+![Chain of Responsibility pattern UML diagram]({{site.baseurl}}/assets/img/custom/blog/2015-04-13-design-patterns/chain-of-responsibility-pattern-uml.png)
 
 <!-- more -->
 
@@ -288,6 +288,6 @@ This drastically cuts down on boilerplate and lets us see what's actually going 
 
 Our new structure is quite different—far more so than the earlier examples.
 
-![Updated Chain of Responsibility pattern UML diagram](/assets/img/custom/blog/2015-04-13-design-patterns/chain-of-responsibility-pattern-uml-functional.png)
+![Updated Chain of Responsibility pattern UML diagram]({{site.baseurl}}/assets/img/custom/blog/2015-04-13-design-patterns/chain-of-responsibility-pattern-uml-functional.png)
 
 By decoupling the business domain (in this case, pie preparation) from the infrastructure (composed functions), we're able to come up with much cleaner, terser code. Our behavioural classes (focusing around preparation) disappeared, leaving only the domain objects themselves (`UncookedPie`, for example) and the methods on them (e.g. `cook`), which is where the behaviour should probably live anyway.

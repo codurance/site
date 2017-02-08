@@ -21,13 +21,13 @@ At some point throughout a developers career, no matter their experience, they w
 When you find yourself in this situation, you might notice that the junior developer of the two struggles getting to grips with the code, and the senior might feel as if they are carrying the weight of the pairing session on their back. This can certainly end up frustrating for both. As a result, the senior developer will jump in the driving seat behind the keyboard and lead the way, not much is exchanged between the two and the junior developer will simply watch until whatever task is completed, maybe trying to ask a question or provide some help here or there.
 
 <div style="text-align:center">
-<img class="img-responsive" height="350px" width="500px" src="/assets/img/custom/blog/finding-the-biting-point/picture1.png">
+<img class="img-responsive" height="350px" width="500px" src="{{site.baseurl}}/assets/img/custom/blog/finding-the-biting-point/picture1.png">
 </div>
 
 So what happens when they switch roles? All of a sudden the junior of the two is put behind the keyboard and struggles to move forward. The senior will become frustrated and impatient, and both members of the team will feel uncomfortable working together, possibly creating tension within the entire working environment. This problem will stagnate and not go away because neither parties feel there is nothing they can do and in order to get the work done __now__, the senior developer must continue to carry the weight of the work on the back while the junior developer watches. 
 
 <div style="text-align:center">
-<img class="img-responsive" height="350px" width="500px" src="/assets/img/custom/blog/finding-the-biting-point/picture2.png">
+<img class="img-responsive" height="350px" width="500px" src="{{site.baseurl}}/assets/img/custom/blog/finding-the-biting-point/picture2.png">
 </div>
 
 Even worse, what will happen when the junior developer will have to separate and work by themselves? This is both a cause and symptom of the junior developer sitting in the passenger seat too long. He was never able to drive for himself and as a result was never able to find the biting point of the software. 
@@ -42,7 +42,7 @@ When learning to drive a manual transmission car, the steps in order to move the
  * Slowly lift your left foot off of the clutch until the car starts to accelerate
 
 <div style="text-align:center">
-<img class="img-responsive" height="350px" width="500px" src="/assets/img/custom/blog/finding-the-biting-point/picture3.png">
+<img class="img-responsive" height="350px" width="500px" src="{{site.baseurl}}/assets/img/custom/blog/finding-the-biting-point/picture3.png">
 </div>
 
 Finding the sweet spot where the clutch meets the gears was taught to me as 'Finding the biting point'. That biting point is a very specific feeling that you only experience once you have driven a car for yourself. You could watch someone work the pedals a thousand times but until you get behind them yourself you will never get used to their feedback or tension. To me, this intrinsic feeling also exists in software. I can remember times where I have been sitting in the back seat of a pairing session contributing sound and useful ideas and solutions. Once I was handed the keyboard I found myself stalling. This is because I was never able to find the biting point myself and gain my own understanding of the structure and feel of the code. This will most likely have to happen once, better sooner than later.

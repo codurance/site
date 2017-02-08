@@ -14,7 +14,7 @@
               {% if page.tags.size > 0 %}
               <li>
                 {% for tag in page.tags %}
-                <a href="/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
+                <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {{ tag }}</span></a>
                 {% endfor %}
               </li>
               {% endif %}
@@ -30,10 +30,10 @@
             {{ content }}
 
             <div id="sharethisButtons">
-              <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ page.url }}'></span>
-              <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ page.url }}'></span>
+              <span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
+              <span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ site.baseurl }}{{ page.url }}'></span>
             </div>
 
           </div>
