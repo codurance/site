@@ -28,7 +28,7 @@ Team members' concerns turn into frustrations and become internalised. Impedimen
 
 ##The LEGO Wall
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sbt.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-10-visualise-interruptions-with-a-LEGO-wall/lego-wall-overview.jpg" alt="" class="img-responsive"/>
 
 The LEGO Wall has been conceived to reduce the fear factor when identifying impediments. It is an artifact to keep interruptions visible while ensuring anonymity.
 
