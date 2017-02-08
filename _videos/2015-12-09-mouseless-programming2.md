@@ -20,4 +20,4 @@ This is the second video of the Mouseless Programming screencast. A simple leap 
 
 Only keyboard was used for programming in this video.
 
-This video is a part of the blog post [Mouseless Programming](/2015/11/25/mouseless-programming/).
+This video is a part of the blog post [Mouseless Programming]({{site.baseurl}}/2015/11/25/mouseless-programming/).

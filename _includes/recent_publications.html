@@ -17,17 +17,26 @@
   {% endfor %}
 
   {% for post in latest_publications limit: 7 %}
+
+  {% if post.image.src == empty %}
+  {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %}
+  {% elsif post.image.src contains '://' %}
+  {% assign postImgUrl = post.image.src %}
+  {% else %}
+  {% assign postImgUrl = post.image.src | prepend: site.baseurl %}
+  {% endif %}
+
   <div class="blog-thumb blog-thumb-circle margin-bottom-15">
     <div class="blog-thumb-hover">
-      <a href="{{ post.url }}">
-        <img class="rounded-x" src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></img>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <img class="rounded-x" src="{{postImgUrl}}" alt="{{ post.title }}"></img>
       </a>
-      <a class="hover-grad" href="{{ post.url }}">
+      <a class="hover-grad" href="{{ post.url | prepend: site.baseurl }}">
         <i class="fa fa-hand-spock-o"></i>
       </a>
     </div>
     <div class="blog-thumb-desc">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3> 
       <ul class="blog-thumb-info">
         <li>
           {{ post.author }}

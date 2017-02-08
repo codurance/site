@@ -36,7 +36,7 @@ title: Company
 			<!-- TEAM MEMBER -->
 			<div class="col-md-2 col-sm-4 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
 				<a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
-					<span><img class="img-responsive" src="{{member.image}}" alt=""></span>
+					<span><img class="img-responsive" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
 					<span>{{member.name}}</span>
 				</a>
 			</div>
@@ -55,7 +55,7 @@ title: Company
 						</div>
 						<div class="modal-body">
 							<p>
-							<img class="img-responsive margin-bottom-30 profile-image" src="{{member.image}}" alt="{{member.name}}">
+              <img class="img-responsive margin-bottom-30 profile-image" src="{{member.image | prepend: site.baseurl}}" alt="{{member.name}}">
 							</p>
 							{{member.fullDescription}}
 							<ul class="list-unstyled list-inline team-socail">

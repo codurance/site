@@ -1,8 +1,8 @@
 <div class="header no-topbar">
 	<div class="container">
 		<!-- Logo -->
-		<a class="logo" href="/">
-			<img class="logo-header" src="/assets/img/codurance.png" alt="Codurance Logo" height="45px;">
+    <a class="logo" href="{{ '/' | prepend: site.baseurl }}">
+			<img src="{{ '/assets/img/codurance.png' | prepend: site.baseurl }}" class="logo-header" alt="Codurance Logo" height="45px;">
 		</a>
 		<!-- End Logo -->
     <div class="topbar pull-right language-selector">
@@ -33,12 +33,12 @@
 	<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 		<div class="container">
 			<ul class="nav navbar-nav">
-				<li><a href="/clients">{% t sections.clients %}</a></li>
-				<li><a href="/services">{% t sections.services %}</a></li>
-				<li><a href="/publications">{% t sections.publications %}</a></li>
-				<li><a href="/events">{% t sections.events %}</a></li>
-				<li><a href="/company">{% t sections.company %}</a></li>
-				<li><a href="/careers">{% t sections.careers %}</a></li>
+				<li><a href="{{ '/clients' | prepend: site.baseurl }}">{% t sections.clients %}</a></li>
+				<li><a href="{{ '/services' | prepend: site.baseurl }}">{% t sections.services %}</a></li>
+				<li><a href="{{ '/publications' | prepend: site.baseurl }}">{% t sections.publications %}</a></li>
+				<li><a href="{{ '/events' | prepend: site.baseurl }}">{% t sections.events %}</a></li>
+				<li><a href="{{ '/company' | prepend: site.baseurl }}">{% t sections.company %}</a></li>
+				<li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t sections.careers %}</a></li>
         {% for lang in site.languages %}
         {% if lang != site.lang %}
         <li class="language-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>

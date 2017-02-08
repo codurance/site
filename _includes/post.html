@@ -1,7 +1,16 @@
+{% if post.image.src and post.image.src contains '://' %}
+{% assign postImgUrl = post.image.src %}
+{% elsif post.image.src %}
+{% assign postImgUrl = post.image.src | prepend: site.baseurl %}
+{% else %}
+{% assign postImgUrl = site.default_post_image | prepend: site.baseurl %}
+{% endif %}
 <div class="row margin-bottom-20">
   <div class="col-md-5 sm-margin-bottom-20">
     <div class="blog-thumb">
-      <a href="{{ post.url }}"><img src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></a>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <img src="{{ postImgUrl }}" alt="{{ post.title }}">
+      </a>
     </div>
     {% if post.image.attribution.href || post.image.attribution.text %}
     <div>
@@ -21,7 +30,7 @@
         <li>{% t publications-post.author_title %} {{ post.author | author_links }} </li>
         <li>{% t publications-post.date_title %} {{ post.date | date_to_string }}</li>
       </ul>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
       <p>{{ post.content | markdownify | strip_html | truncatewords:45 }}</p>
     </div>
     {% if post.tags.size > 0 %}
@@ -30,7 +39,7 @@
         <li>
           <i class="fa fa-tags"></i>
           {% for tag in post.tags %}
-          <a href="/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/">{{ tag }} </a>
+          <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}/">{{ tag }} </a>
           {% endfor %}
         </li>
       </ul>
