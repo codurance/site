@@ -4,8 +4,20 @@ title: CSS
 
 /* Add here all your css styles (customizations) */
 
-body {
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+body {  /* 0 0 0 1 */
   font-size: 14px;
+}
+
+body:last-child .btn-u, x:-moz-any-link {  /* 0 0 1 1 */
+  margin: 0;
+}
+
+li > a {  /* 0 0 0 2 */
+  color: #e67e22;
 }
 
 /* Navbar or Navigation */
@@ -42,13 +54,13 @@ body {
   color: #e67e22 !important;
 }
 
-.bordered {
-  border: solid 1px #eee;
-}
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
 
 /* Home Page */
 
-.feature-panel {
+.feature-panel {  /* 0 0 1 0 */
   background: url("{{ site.baseurl }}/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
   height: 550px;
   background-size: cover;
@@ -57,7 +69,13 @@ body {
   position: relative;
 }
 
-.feature-panel .jumbotron {
+.feature-panel h1 {  /* 0 0 1 1 */
+  font-family:'Oxygen', sans-serif;
+  color: white;
+  line-height:70px;
+}
+
+.feature-panel .jumbotron {  /* 0 0 2 0 */
   background: transparent;
   color: white;
   text-align: center;
@@ -68,94 +86,18 @@ body {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.feature-panel .jumbotron h3 {
+.feature-panel .jumbotron h3 {  /* 0 0 2 1 */
   color:white;
 }
 
-.btn-more {
-  border-radius: 6px;
-  font-size: 18px;
-  margin: 10px 0;
-  padding: 10px 30px;
+/*  Home Page - Heading Titles */
+
+.section {   /* 0 0 1 0 */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.btn-more:hover { transition: .3s; }
-
-.btn-more-light {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-}
-
-.btn-more-light:hover {
-  background-color: white;
-  color: #687074;
-}
-
-.feature-panel .highlight {
-  color: white;
-  text-shadow: 1px 1px 1px #7f8c8d;
-}
-
-.feature-panel h1{
-  font-family:'Oxygen', sans-serif;
-  color: white;
-  line-height:70px;
-}
-
-.btn-hire {
-  border: 0;
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 9px 20px;
-  position: relative;
-  top: 20px;
-  left: 0;
-  background: #72c02c;
-  white-space: nowrap;
-  display: inline-block;
-  text-decoration: none;
-  text-shadow: none;
-  width: 300px;
-}
-
-.btn-hire.btn-u-orange {
-  background: #e67e22;
-}
-.btn-hire.btn-u-orange:hover,
-.btn-hire.btn-u-orange:focus,
-.btn-hire.btn-u-orange:active,
-.btn-hire.btn-u-orange.active,
-.open .dropdown-toggle.btn-hire.btn-u-orange {
-  background: #d35400;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-hire.btn-brd.btn-u-orange {
-  border-color: #e67e22;
-}
-.btn-hire.btn-brd.btn-u-orange:hover {
-  color: #d35400;
-  border-color: #d35400;
-}
-.btn-hire.btn-brd.btn-u-orange.btn-brd-hover:hover {
-  background: #d35400;
-}
-
-body:last-child .btn-u, x:-moz-any-link {
-  margin: 0;
-}
-
-/*  Heading Titles - Home Page */
-
-.block-header {
-  padding: 50px 0;
-}
-
-.title-header {
+.title-header {  /* 0 0 1 0 */
   z-index: 1;
   position: relative;
   text-align: center;
@@ -163,7 +105,7 @@ body:last-child .btn-u, x:-moz-any-link {
 }
 
 .title-header h1,
-.title-header h2 {
+.title-header h2 {   /* 0 0 1 1 */
   color: #333;
   font-size: 28px;
   position: relative;
@@ -173,8 +115,13 @@ body:last-child .btn-u, x:-moz-any-link {
   font-family: 'Open Sans', sans-serif;
 }
 
+.title-header p {   /* 0 0 1 1 */
+  font-size: 17px;
+  font-weight: 200;
+}
+
 .title-header h1:after,
-.title-header h2:after {
+.title-header h2:after {   /* 0 0 2 1 */
   bottom: 0;
   left: 50%;
   height: 1px;
@@ -185,17 +132,81 @@ body:last-child .btn-u, x:-moz-any-link {
   background: #e67e22;
 }
 
-.title-header p {
-  font-size: 17px;
-  font-weight: 200;
+/* Buttons - used across multiple pages */
+
+.btn-more {   /* 0 0 1 0 */
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px 30px;
+}
+
+.btn-more-light {  /* 0 0 1 0 */
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-u-orange {   /* 0 0 1 0 */
+  background: #e67e22;
+}
+
+#sharethisButtons {   /* 0 0 1 0 */
+  padding-bottom: 30px;
+}
+
+.button-with-bg-image span {   /* 0 0 1 1 */
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  color: #fff;
+}
+
+.btn-more:hover {  /* 0 0 2 0 */
+  transition: .3s;
+}
+
+.btn-more-light:hover {  /* 0 0 2 0 */
+  background-color: white;
+  color: #687074;
+}
+
+.btn-brd.btn-u-orange {   /* 0 0 2 0 */
+  border-color: #e67e22;
+}
+
+.btn-u-orange:hover,                   /* 0 0 2 0 */
+.btn-u-orange:focus,                   /* 0 0 2 0 */
+.btn-u-orange:active,                  /* 0 0 2 0 */
+.btn-u-orange.active,                  /* 0 0 2 0 */
+.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
+  background: #d35400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
+  color: #d35400;
+  border-color: #d35400;
+}
+
+.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
+  background: #d35400;
 }
 
 /* Section colours */
-.gray-section {
-  background: #fafafa;
-  border-top: solid 1px #eee;
-  border-bottom: solid 1px #eee;
-}
+
 .dark-gray-section {
   background: #cccccc;
 }
@@ -209,26 +220,20 @@ body:last-child .btn-u, x:-moz-any-link {
   background: #ffcc33;
 }
 
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.gray-section {
+  background: #fafafa;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
 }
 
-/* Sandro's Book image special */
-.sandroBookImage {
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  box-shadow: 0 10px 10px 0px gray;
-}
+/* Homepage - Blog panel */
 
-/* Blog panel */
 .homepage-blog-thumb img {
   height: 240px;
   width: 350px;
 }
 
-/* Homepage services section */
+/* Homepage - Services section */
 
 .service-card-inner {
   padding: 30px 5px;
@@ -248,11 +253,17 @@ body:last-child .btn-u, x:-moz-any-link {
   padding-bottom: 8px;
 }
 
+/* Sandro's Book image special */
+
+.sandroBookImage {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  box-shadow: 0 10px 10px 0px gray;
+}
+
 /*Content Boxes*/
 
-li > a {
-  color: #e67e22;
-}
 .content-boxes {
   margin-bottom: 15px;
 }
@@ -306,10 +317,6 @@ li > a {
 
 .blog-img-attribution {
   font-size: 11px;
-}
-
-#sharethisButtons {
-  padding-bottom: 30px;
 }
 
 .headline-v2 {
@@ -1015,23 +1022,7 @@ h2.gray-underline:after {
   margin: 15px 0px 0px 0px;
 }
 
-.button-with-bg-image span {
-    font-size: 24px;
-    margin: 0;
-    position: absolute;
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    color: #fff;
-}
+
 
 /* --------------------------------------
    Media Queries
