@@ -205,14 +205,6 @@ li > a {  /* 0 0 0 2 */
   padding-bottom: 30px;
 }
 
-/* Section colours */
-
-.gray-section {
-  background: #fafafa;
-  border-top: solid 1px #eee;
-  border-bottom: solid 1px #eee;
-}
-
 /* Homepage - Blog panel */
 
 .homepage-blog-thumb img {
@@ -281,6 +273,7 @@ li > a {  /* 0 0 0 2 */
 }
 
 /* Author */
+
 #author-img {
   width: 100%;
 }
@@ -316,7 +309,6 @@ li > a {  /* 0 0 0 2 */
 
 .services .introduction {
   margin-top: 50px;
-
 }
 
 .services .service-icon:hover {
@@ -483,26 +475,6 @@ li > a {  /* 0 0 0 2 */
 
 .no-border, i.no-border { border: none; }
 
-/* Foreground colors */
-
-.white, p.white, ul.white li { color: white; }
-
-/* Background colors */
-
-.bg-dark-red { background-color: #cc0000; }
-
-.bg-red { background-color: #ff0000; }
-
-.bg-dark-orange { background-color: #dd4d00; }
-
-.bg-orange { background-color: #ff6600; }
-
-.bg-dark-yellow { background-color: #ffaa00; }
-
-.bg-yellow { background-color: #ffcc33; }
-
-.bg-white { background-color: #fff; }
-
 /* Sponsoring section */
 
 .breadcrumbs-v3.ourpeople {
@@ -581,6 +553,38 @@ li > a {  /* 0 0 0 2 */
 .latest-publications .item > h4 {
   margin: 15px 0px 0px 0px;
 }
+
+/* Section colours */
+
+.gray-section {
+  background: #fafafa;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
+}
+
+/* Foreground colours */
+
+.white,
+p.white,
+ul.white li {
+  color: white;
+}
+
+/* Background colours */
+
+.bg-dark-red { background-color: #cc0000; }
+
+.bg-red { background-color: #ff0000; }
+
+.bg-dark-orange { background-color: #dd4d00; }
+
+.bg-orange { background-color: #ff6600; }
+
+.bg-dark-yellow { background-color: #ffaa00; }
+
+.bg-yellow { background-color: #ffcc33; }
+
+.bg-white { background-color: #fff; }
 
 /* --------------------------------------
    Media Queries
