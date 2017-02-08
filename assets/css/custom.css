@@ -132,83 +132,6 @@ li > a {  /* 0 0 0 2 */
   background: #e67e22;
 }
 
-/* Buttons - used across multiple pages */
-
-.btn-more {   /* 0 0 1 0 */
-  border-radius: 6px;
-  font-size: 18px;
-  margin: 10px 0;
-  padding: 10px 30px;
-}
-
-.btn-more-light {  /* 0 0 1 0 */
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-}
-
-.btn-u-orange {   /* 0 0 1 0 */
-  background: #e67e22;
-}
-
-#sharethisButtons {   /* 0 0 1 0 */
-  padding-bottom: 30px;
-}
-
-.button-with-bg-image span {   /* 0 0 1 1 */
-  font-size: 24px;
-  margin: 0;
-  position: absolute;
-  display: flex;
-  display: -webkit-flex;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  justify-content: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  color: #fff;
-}
-
-.btn-more:hover {  /* 0 0 2 0 */
-  transition: .3s;
-}
-
-.btn-more-light:hover {  /* 0 0 2 0 */
-  background-color: white;
-  color: #687074;
-}
-
-.btn-brd.btn-u-orange {   /* 0 0 2 0 */
-  border-color: #e67e22;
-}
-
-.btn-u-orange:hover,                   /* 0 0 2 0 */
-.btn-u-orange:focus,                   /* 0 0 2 0 */
-.btn-u-orange:active,                  /* 0 0 2 0 */
-.btn-u-orange.active,                  /* 0 0 2 0 */
-.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
-  background: #d35400;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
-  color: #d35400;
-  border-color: #d35400;
-}
-
-.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
-  background: #d35400;
-}
-
-#sharethisButtons {   /* 0 1 0 0 */
-  padding-bottom: 30px;
-}
-
 /* Homepage - Blog panel */
 
 .homepage-blog-thumb img {  /* 0 0 1 1 */
@@ -388,7 +311,6 @@ li > a {  /* 0 0 0 2 */
   margin: 0px;
 }
 
-
 .services-section .header h3 {   /* 0 0 2 1 */
   margin-bottom: 0px;
   color: white;
@@ -406,7 +328,6 @@ li > a {  /* 0 0 0 2 */
   font-weight: bold;
 }
 
-/* Consultancy */
 .services .services-box:hover {   /* 0 0 3 0 */
   padding: 20px 20px;
   border: solid 1px #eee;
@@ -564,6 +485,83 @@ i.no-border {   /* 0 0 1 1 */
   margin: 15px 0px 0px 0px;
 }
 
+/* Buttons - used across multiple pages */
+
+.btn-more {   /* 0 0 1 0 */
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px 30px;
+}
+
+.btn-more-light {  /* 0 0 1 0 */
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-u-orange {   /* 0 0 1 0 */
+  background: #e67e22;
+}
+
+#sharethisButtons {   /* 0 0 1 0 */
+  padding-bottom: 30px;
+}
+
+.button-with-bg-image span {   /* 0 0 1 1 */
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  color: #fff;
+}
+
+.btn-more:hover {  /* 0 0 2 0 */
+  transition: .3s;
+}
+
+.btn-more-light:hover {  /* 0 0 2 0 */
+  background-color: white;
+  color: #687074;
+}
+
+.btn-brd.btn-u-orange {   /* 0 0 2 0 */
+  border-color: #e67e22;
+}
+
+.btn-u-orange:hover,                   /* 0 0 2 0 */
+.btn-u-orange:focus,                   /* 0 0 2 0 */
+.btn-u-orange:active,                  /* 0 0 2 0 */
+.btn-u-orange.active,                  /* 0 0 2 0 */
+.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
+  background: #d35400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
+  color: #d35400;
+  border-color: #d35400;
+}
+
+.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
+  background: #d35400;
+}
+
+#sharethisButtons {   /* 0 1 0 0 */
+  padding-bottom: 30px;
+}
+
 /* Section colours */
 
 .gray-section {
@@ -580,21 +578,8 @@ ul.white li {
   color: white;
 }
 
-/* Background colours */
+/* Section colours */
 
-.bg-dark-red { background-color: #cc0000; }
-
-.bg-red { background-color: #ff0000; }
-
-.bg-dark-orange { background-color: #dd4d00; }
-
-.bg-orange { background-color: #ff6600; }
-
-.bg-dark-yellow { background-color: #ffaa00; }
-
-.bg-yellow { background-color: #ffcc33; }
-
-.bg-white { background-color: #fff; }
 .gray-section {   /* 0 0 1 0 */
   background: #fafafa;
   border-top: solid 1px #eee;
