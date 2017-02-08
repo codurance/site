@@ -128,67 +128,76 @@ li > a {  /* 0 0 0 2 */
   background: #e67e22;
 }
 
-/* Buttons */
+/* Buttons - used across multiple pages */
 
-.btn-more {
+.btn-more {   /* 0 0 1 0 */
   border-radius: 6px;
   font-size: 18px;
   margin: 10px 0;
   padding: 10px 30px;
 }
 
-.btn-more:hover { transition: .3s; }
-
-.btn-more-light {
+.btn-more-light {  /* 0 0 1 0 */
   background-color: transparent;
   border: 1px solid white;
   color: white;
 }
 
-.btn-more-light:hover {
+.btn-u-orange {   /* 0 0 1 0 */
+  background: #e67e22;
+}
+
+#sharethisButtons {   /* 0 0 1 0 */
+  padding-bottom: 30px;
+}
+
+.button-with-bg-image span {   /* 0 0 1 1 */
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  color: #fff;
+}
+
+.btn-more:hover {  /* 0 0 2 0 */
+  transition: .3s;
+}
+
+.btn-more-light:hover {  /* 0 0 2 0 */
   background-color: white;
   color: #687074;
 }
 
-.btn-hire {
-  border: 0;
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 9px 20px;
-  position: relative;
-  top: 20px;
-  left: 0;
-  background: #72c02c;
-  white-space: nowrap;
-  display: inline-block;
-  text-decoration: none;
-  text-shadow: none;
-  width: 300px;
+.btn-brd.btn-u-orange {   /* 0 0 2 0 */
+  border-color: #e67e22;
 }
 
-.btn-hire.btn-u-orange {
-  background: #e67e22;
-}
-.btn-hire.btn-u-orange:hover,
-.btn-hire.btn-u-orange:focus,
-.btn-hire.btn-u-orange:active,
-.btn-hire.btn-u-orange.active,
-.open .dropdown-toggle.btn-hire.btn-u-orange {
+.btn-u-orange:hover,                   /* 0 0 2 0 */
+.btn-u-orange:focus,                   /* 0 0 2 0 */
+.btn-u-orange:active,                  /* 0 0 2 0 */
+.btn-u-orange.active,                  /* 0 0 2 0 */
+.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
   background: #d35400;
   color: #fff;
   text-decoration: none;
 }
 
-.btn-hire.btn-brd.btn-u-orange {
-  border-color: #e67e22;
-}
-.btn-hire.btn-brd.btn-u-orange:hover {
+.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
   color: #d35400;
   border-color: #d35400;
 }
-.btn-hire.btn-brd.btn-u-orange.btn-brd-hover:hover {
+
+.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
   background: #d35400;
 }
 
@@ -1012,6 +1021,7 @@ h2.gray-underline:after {
 .latest-publications .item > h4 {
   margin: 15px 0px 0px 0px;
 }
+
 
 
 /* --------------------------------------
