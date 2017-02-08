@@ -51,7 +51,7 @@ In this blog post, I’m not going to write about Scrum ceremonies and artifacts
 
 
 <p align="center" >
-<img src="/assets/img/custom/blog/2016-08-26-chinese-whispers-on-scrum-roles/scrum-aspects-roles-sketchnote.jpg" height="500px" alt="Scrum aspects - Scrum Team roles sketchnote"/></p>
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-08-26-chinese-whispers-on-scrum-roles/scrum-aspects-roles-sketchnote.jpg" height="500px" alt="Scrum aspects - Scrum Team roles sketchnote"/></p>
 
 
 ### The Scrum Master is not the Team boss

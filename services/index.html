@@ -32,7 +32,7 @@ title: Services
     <div class="col-md-4 " id="software-creation">
       <div class="panel panel-red equal-height-column">
 
-        <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+        <div class="panel-heading" style="background-image:url({{site.baseurl}}/assets/img/custom/services/service-bg-2.png);">
           <h3 class="panel-title">{% t services-software_creation.title %}</h3>
         </div>
 
@@ -58,7 +58,7 @@ title: Services
     <div class="col-md-4 " id="expert-advice">
       <div class="panel panel-red equal-height-column">
 
-        <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+        <div class="panel-heading" style="background-image:url({{site.baseurl}}/assets/img/custom/services/service-bg-2.png);">
           <h3 class="panel-title">{% t services-expert_advice.title %}</h3>
         </div>
 
@@ -84,19 +84,19 @@ title: Services
     <div class="col-md-4" id="training">
       <div class="panel panel-red equal-height-column">
 
-      <div class="panel-heading" style="background-image:url(/assets/img/custom/services/service-bg-2.png);">
+      <div class="panel-heading" style="background-image:url({{site.baseurl}}/assets/img/custom/services/service-bg-2.png);">
         <h3 class="panel-title">{% t services-training_coaching.title %}</h3>
       </div>
 
       <div class="panel-body">
           <h4>{% t training-software-development-practices.title %}</h4>
-          <p>{% t training-software-development-practices.subtitle %} <a href="/services/training">{% t training-software-development-practices.link_title %}</a></p>
+          <p>{% t training-software-development-practices.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-development-practices.link_title %}</a></p>
 
           <h4>{% t training-software-architecture-and-cloud.title %}</h4>
-          <p>{% t training-software-architecture-and-cloud.subtitle %} <a href="/services/training">{% t training-software-architecture-and-cloud.link_title %}</a></p>
+          <p>{% t training-software-architecture-and-cloud.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-architecture-and-cloud.link_title %}</a></p>
 
           <h4>{% t training-technologies.title %}</h4>
-          <p>{% t training-technologies.subtitle %} <a href="/services/training">{% t training-technologies.link_title %}</a></p>
+          <p>{% t training-technologies.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-technologies.link_title %}</a></p>
 
           <h4>{% t training-coaching-and-mentoring.title %}</h4>
           <p>{% t training-coaching-and-mentoring.subtitle %}</p>
@@ -108,12 +108,12 @@ title: Services
   <div class="row">
     <div class="col-md-6">
       <div class="text-center margin-top-20">
-        <a href="/company#contactus" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
+        <a href="{{ '/company#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
       </div>
     </div>
 		<div class="col-md-6">
       <div class="text-center margin-top-20">
-        <a href="/services/training" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
+        <a href="{{ '/services/training' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
       </div>
     </div>
   </div>
@@ -131,24 +131,24 @@ title: Services
     <div class="row">
 				<div class="col-md-4">
 							<div class="service">
-									<a class="button-with-bg-image"   href="/clients#finance">
-											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+                <a class="button-with-bg-image"   href="{{ '/clients#finance' | prepend: site.baseurl }}">
+											<img src="{{ '/assets/img/custom/services/service-bg-2.png' | prepend: site.baseurl }}" class="img-responsive" alt="">
 											<span>{% t services-section_2.finance %}</span>
 									</a>
 							</div>
 					</div>
 					<div class="col-md-4">
 							<div class="service">
-									<a class="button-with-bg-image"  href="/clients#retail">
-											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+                <a class="button-with-bg-image"  href="{{ '/clients#retail' | prepend: site.baseurl }}">
+											<img src="{{ '/assets/img/custom/services/service-bg-2.png' | prepend: site.baseurl }}" class="img-responsive" alt="">
 											<span>{% t services-section_2.retail %}</span>
 									</a>
 							</div>
 					</div>
 					<div class="col-md-4">
 							<div class="service">
-									<a class="button-with-bg-image"  href="/clients#media">
-											<img class="img-responsive" src="/assets/img/custom/services/service-bg-2.png" alt="">
+                <a class="button-with-bg-image"  href="{{ '/clients#media' | prepend: site.baseurl }}">
+											<img src="{{ '/assets/img/custom/services/service-bg-2.png' | prepend: site.baseurl }}" class="img-responsive" alt="">
 											<span>{% t services-section_2.media %}</span>
 									</a>
 							</div>

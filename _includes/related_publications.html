@@ -40,17 +40,25 @@
   {% assign postImageUrl = relevantPostAttributes[3] %}
   {% assign author = relevantPostAttributes[4] %}
 
+  {% if postImageUrl == empty %}
+  {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %}
+  {% elsif postImageUrl contains '://' %}
+  {% assign postImgUrl = postImageUrl %}
+  {% else %}
+  {% assign postImgUrl = postImageUrl | prepend: site.baseurl %}
+  {% endif %}
+  
   <div class="blog-thumb blog-thumb-circle margin-bottom-15">
     <div class="blog-thumb-hover">
-      <a href="{{ postUrl }}">
-        <img class="rounded-x" src="{% if postImageUrl != empty %} {{ postImageUrl }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}"></img>
+      <a href="{{ postUrl | prepend: site.baseurl }}">
+        <img class="rounded-x" src="{{postImgUrl}}" alt="{{ post.title }}"></img>
       </a>
-      <a class="hover-grad" href="{{ postUrl }}">
+      <a class="hover-grad" href="{{ postUrl | prepend: site.baseurl }}">
         <i class="fa fa-hand-spock-o"></i>
       </a>
     </div>
     <div class="blog-thumb-desc">
-      <h3><a href="{{ postUrl }}">{{ postTitle }}</a></h3>
+      <h3><a href="{{ postUrl | prepend: site.baseurl }}">{{ postTitle }}</a></h3>
       <ul class="blog-thumb-info">
         <li>
           {{ author }}

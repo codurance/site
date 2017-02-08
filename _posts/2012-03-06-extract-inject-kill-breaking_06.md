@@ -82,7 +82,7 @@ public class StandardPricingService extends VoucherPrincingService {
 }
 ```
 
-![Hierarchies](/assets/img/custom/blog/hierarchies.png)
+![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/hierarchies.png)
 Let's start with the StandardPricingService. First, let's write some
 tests:
 
@@ -360,7 +360,7 @@ BoxingDayPricingService child classes. 
 The VoucherPricingService, now the deepest class in the hierarchy, can
 be promoted to concrete class. Let's have another look at the hierarchy:
 
-![Hierarchies](/assets/img/custom/blog/hierarchies_2.png)
+![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/hierarchies_2.png)
 And that's it. Now it is just to repeat the same steps for
 VoucherPricingService and UserDiscountPricingService. **Extract** the
 implementation of their template methods into classes, **inject** them

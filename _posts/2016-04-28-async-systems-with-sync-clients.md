@@ -51,7 +51,7 @@ We'll be working on something similar to [Craiglist](https://craigslist.org), a 
 
 Our system is formed by several microservices based on [Akka](http://akka.io/), using [Kafka](http://kafka.apache.org/) for inter-process communication. The police platform has only sync clients and they don't seem keen to implement a polling mechanism to verify that an item has been actually removed. We need to communicate with them synchronously and that's not negotiable. In the next posts we'll see the details of our solution, but as an advancement, let's see the high level architecture. Don't worry if you don't understand everything yet.
 
-<img src="/assets/img/custom/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/img/custom/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
 
 [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) | [Part 2](http://codurance.com/2016/04/30/akka-basics/)
 

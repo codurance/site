@@ -115,13 +115,14 @@ module Jekyll
     #
     def author_links(authors)
       dir = @context.registers[:site].config['author_dir'] || "authors"
+      baseurl = @context.registers[:site].config['baseurl']
       if String.try_convert(authors)
                authors = [ authors ]
       end
       authors = authors.map do |author|
         author_dir = author.downcase
         author_dir [" "] = "-"
-        "<a class='author' href='/#{dir}/#{author_dir}/'>#{author}</a>"
+        "<a class='author' href='#{baseurl}/#{dir}/#{author_dir}/'>#{author}</a>"
       end
       case authors.length
       when 0

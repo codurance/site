@@ -110,7 +110,7 @@ bugs are found and the QA phase needs to be extended. Panic takes over:
 "Oh, we need to abort the release. We can't go live like that."
 Exactly.
 
-![Legacy Velocity](/assets/img/custom/blog/Legacy_velocity.jpg))
+![Legacy Velocity]({{site.baseurl}}/assets/img/custom/blog/Legacy_velocity.jpg)
 
 
 The graphic above is not based in any formal research. It is purely

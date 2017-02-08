@@ -1,9 +1,9 @@
 <div class="container content-md">
 
   <ul class="breadcrumb">
-    <li {% if include.filter == '' %} class="active" {% endif %}><a href="/publications">{% t publications-all.title %}</a></li>
-    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="/publications/posts">{% t publications-posts.title %}</a></li>
-    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="/publications/videos">{% t publications-videos.title %}</a></li>
+    <li {% if include.filter == '' %} class="active" {% endif %}><a href="{{ '/publications' | prepend: site.baseurl }}">{% t publications-all.title %}</a></li>
+    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a></li>
+    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a></li>
   </ul>
 
     <div class="row">
@@ -20,24 +20,24 @@
 
                     {% if paginator.previous_page %}
                     <li>
-                        <a href="{{ paginator.previous_page_path}}">«</a>
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">«</a>
                     </li>
                     {% endif %}
 
                     {% for page in (1..paginator.total_pages) %}
                     <li {% if page == paginator.page %} class="active" {% endif %}>
-                    {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter %}
+                    {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
                     {% if page == 1 %}
                         <a href="{{ pageUrl }}">{{ page }}</a>
                     {% else %}
-                        <a href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/'}}">{{ page }}</a>
+                        <a href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/' }}">{{ page }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
 
                     {% if paginator.next_page %}
                     <li>
-                        <a href="{{ paginator.next_page_path }}">»</a>
+                        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">»</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -56,7 +56,7 @@
 			<h2>{% t publications-books.title  %}</h2>
 		</div>
 		<div>
-			<img class="img-responsive" src="/assets/img/custom/home/the-software-craftsman-book.jpg" alt="the software craftsman book">
+			<img src="{{ '/assets/img/custom/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="the software craftsman book">
 			<h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t publications-books.subtitle %}</a></h3>
 		</div>
 	</div>
