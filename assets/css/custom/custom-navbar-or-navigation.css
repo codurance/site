@@ -8,10 +8,6 @@
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
-.breadcrumbs h2 {  /* 0 0 1 1 */
-    margin-top: 10px;
-}
-
 .header .navbar-nav > li > a {  /* 0 0 2 2 */
     padding-left: 10px;
     padding-right: 20px;
