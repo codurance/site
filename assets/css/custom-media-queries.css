@@ -1,0 +1,43 @@
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/*
+  Common display resolution:
+    https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+    https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg
+*/
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    .image-side-by-side-text {
+        float: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .feature-panel, .jumbotron {
+        padding-top: 0px;
+    }
+    .feature-panel .jumbotron h1 {
+        line-height:40px;
+    }
+    .feature-panel .jumbotron h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .practice {
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    #services .service-card {
+        margin-top: 30px;
+    }
+}
+
+/* Laptop */
+
+/* Large desktop */
