@@ -1,2 +1,2 @@
 # jekyll-multiple-languages-plugin settings:
-languages: ["es"]
+languages: ["es", "en"]
