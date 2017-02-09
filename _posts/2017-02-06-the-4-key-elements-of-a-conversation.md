@@ -17,10 +17,10 @@ tags:
 Conversational Interfaces is a term often used to define systems that hold "human-like" conversations, examples include; Chatbots, Voice User Interfaces, Embodied Conversational Agents. The user interacts with these using text input, voice recognition, and gestures. These types of interfaces are often unable to provide a good conversational experience. In order to create a better experience we need to be aware of the following 4 key elements of human-to-human conversations.
 
 ## 1. Turn-taking
-> A turn is one interaction between the user and the system, and a conversation is made of at least two-turns.
+> A turn is one interaction between the user and the system, and a conversation is made of at least two turns.
 
 <div class="image-side-by-side-text">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/poncho-chatbot.jpg" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/poncho-chatbot.jpg" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
 </div>
 
 <p class="text-side-by-side-image" >
@@ -33,7 +33,7 @@ Jane: “Hi, I’m good thank you!”
 </pre>
 
 <p>
-Now that's an awkward conversation –people rarely have conversations that last a single turn.
+Now that's an awkward conversation—people rarely have conversations that last a single turn.
 </p>
 <br class="clear-both" />
 
@@ -46,11 +46,11 @@ Asking Google Voice “Who was Oscar Wilde?” gives the user the following resu
 <p>
 
 <div class="images-side-by-side-left">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Google Voice Search interface - First turn" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Google Voice Search interface - First turn" width="250" height="300" />
 </div>
 
 <div class="images-side-by-side-right">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Google Voice Search interface - Second turn" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Google Voice Search interface - Second turn" width="250" height="300" />
 </div>
 
 </p>
@@ -59,10 +59,10 @@ In the second turn the user responds with, “Can you tell me more?”, a human-
 
 
 ## 3. Reference
-> The system should understand follow up questions that include pronouns, in order to feel more conversational.
+> The system should understand follow-up questions that include pronouns, in order to feel more conversational.
 
 <div class="image-side-by-side-text">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/mitzuku-chatbot.jpg" alt="Mitzuku on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/mitzuku-chatbot.jpg" alt="Mitzuku on Facebook Messenger" width="250" height="300" />
 </div>
 
 <p class="text-side-by-side-image">
@@ -74,16 +74,16 @@ In the second turn the user responds with, “Can you tell me more?”, a human-
 ## 4. Variety
 > The system should ask open questions, only if it is able to handle different ways of saying the same thing.
 
-<a href="https://www.hipmunk.com/">Hipmunk</a> is a chatbot that promises to help you plan travel in the easiest and fastest way. The two screenshots below show that the system doesn’t support the 4th key element of a conversation. The system misinterprets my answer the first time that I enter the airport, because it accepts city names and airport codes only.
+<a href="https://www.hipmunk.com/">Hipmunk</a> is a chatbot that promises to help you plan travel in the easiest and fastest way. The two screenshots below show that the system doesn’t support the fourth key element of a conversation. The system misinterprets my answer the first time that I enter the airport, because it accepts city names and airport codes only.
 
 There are number of ways that the user could reply to open questions, and spending time on researching them will have a positive impact on the user experience.
 
 <div class="images-side-by-side-left">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-1.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-1.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
 </div>
 
 <div class="images-side-by-side-right">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-2.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-2.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
 </div>
 
 
