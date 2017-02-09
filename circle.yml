@@ -22,7 +22,7 @@ checkout:
     - bundle install
 compile:
   override:
-  - rake buildboth
+  - _utility/build_site_prb.sh $FOLDER_NAME
 test:
   override:
     - /bin/true
@@ -36,4 +36,4 @@ deployment:
     branch: /^.*/
     commands:
       - _utility/deploy_prb.sh $FOLDER_NAME
-      - _utility/send_gh_comment.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $PR_NUMBER $GITHUB_TOKEN $PREVIEW_URL
+      - _utility/send_gh_comment.sh -o $CIRCLE_PROJECT_USERNAME -n $CIRCLE_PROJECT_REPONAME -p $PR_NUMBER -g $GITHUB_TOKEN -d $PREVIEW_URL -e

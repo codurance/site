@@ -7,7 +7,7 @@
   </div>
   <div class="row">
     <div class="col-sm-3 col-xs-4 pull-left">
-      <img class="img-responsive"  id="author-img" src="{{ member.image }}">
+      <img class="img-responsive"  id="author-img" src="{{ member.image  | prepend: site.baseurl }}">
     </div>
     <div class="col-sm-9 pull-left">
       <div class="blog-author-desc">

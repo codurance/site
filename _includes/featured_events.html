@@ -4,7 +4,7 @@
 	<div class="col-md-4 md-margin-bottom-40">
 		<div class="blog-box homepage-blog-thumb">
 			<a href="{{ post.event-page-url }}">
-        <img class="img-responsive bordered" src="{% if post.image.src %} {{ post.image.src }} {% else %} {{ site.default_post_image }} {% endif %}" alt="{{ post.title }}">
+        <img class="img-responsive bordered" src="{% if post.image.src %} {{ post.image.src | prepend: site.baseurl }} {% else %} {{ site.default_post_image | prepend: site.baseurl }} {% endif %}" alt="{{ post.title }}">
 			</a>
 			<div class="blog-content">
 				<h3><a href="{{post.event-page-url}}">{{post.title}}</a></h3>

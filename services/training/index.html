@@ -9,10 +9,10 @@ title: Training
               <h2 class="title-v2">{% t services-training_coaching.title %}</h2>
               {% t services-training_coaching.subtitle %}
               <br/>
-              <a href="/company#contactus" class="btn-u">{% t company-contact.title %} ...</a>
+              <a href="{{ '/company#contactus' | prepend: site.baseurl }}" class="btn-u">{% t company-contact.title %} ...</a>
           </div>
           <div class="col-md-6">
-              <img class="img-responsive" src="/assets/img/custom/services/training/node-js-session.jpg" alt="">
+              <img src="{{ '/assets/img/custom/services/training/node-js-session.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="">
           </div>
     </div>
 
@@ -31,7 +31,7 @@ title: Training
 
           <div class="col-md-4">
               <div class="news-v1-in margin-bottom-20">
-                <h3><a class="hover-effect" href="{{training.page}}">{{training.name}}</a></h3>
+                <h3><a class="hover-effect" href="{{site.baseurl}}{{training.page}}">{{training.name}}</a></h3>
                 <p>{{training.description}}</p>
                 <ul class="list-inline news-v1-info">
                   <li><span>By</span> <strong>{{training.author}}</strong></li>

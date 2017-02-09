@@ -15,6 +15,18 @@ task :buildboth do
   sh 'bundle exec jekyll build --trace'
 end
 
+task :buildprb do
+  sh 'bundle exec jekyll build --config _config.yml,_config_prb.yml --trace'
+end
+
+task :buildesprb do
+  sh 'bundle exec jekyll build --config _config.yml,_config_es.yml,_config_prb.yml --trace --destination _site_es/'
+end
+
+task :buildenprb do
+  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml,_config_prb.yml --trace'
+end
+
 task :serve do
   sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --trace --port 4000 --host 0.0.0.0'
 end

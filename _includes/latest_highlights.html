@@ -12,7 +12,7 @@
 	{% if post.event-page-url %}
 		{% assign linkUrl = post.event-page-url %}
 	{% else %}
-		{% assign linkUrl = post.url %}
+		{% assign linkUrl = post.url | prepend: site.baseurl %}
 	{% endif %}
 	{% if post.event-dates %}
 		{% assign date = post.event-dates.starts %}
@@ -21,7 +21,7 @@
 	{% endif %}
 	<div class="col-md-4 md-margin-bottom-40">
 		<div class="blog-box homepage-blog-thumb">
-			<img class="img-responsive bordered" src="{{ imageSrc }}" alt="{{ post.title }}">
+			<img class="img-responsive bordered" src="{{ imageSrc  | prepend: site.baseurl }}" alt="{{ post.title }}">
 			<div class="blog-content">
 				<h3><a href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a></h3>
 				<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>

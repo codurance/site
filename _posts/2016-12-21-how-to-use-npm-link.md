@@ -25,7 +25,7 @@ For example, at one of our clients, my colleagues and I are responsible for a sh
 and accessed from a private [Artifactory](https://www.jfrog.com/Artifactory/) repository. It can be inserted anywhere in the application (usually the header), allowing the user to 
 easily search the site's content and instantly see a results summary. 
 
-<image class='img img-responsive' src='/assets/img/custom/blog/2016_12_21_how_to_npm_link/search-component.png'> 
+<img src="{{ site.baseurl }}/assets/img/custom/blog/2016_12_21_how_to_npm_link/search-component.png" class="img img-responsive"> 
 <small>*Above: The Search Component is a custom node module that can be inserted anywhere in the parent application*</small>
  
 Although automated testing certainly has its place, when it comes to working with shared components, particularly those that are user-facing, manual testing can provide some benefits. 

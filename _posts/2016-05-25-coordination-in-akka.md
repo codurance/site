@@ -32,11 +32,11 @@ Often system resources are scarce, expensive to create or they're under heavy lo
 
 [Akka Actors](http://doc.akka.io/docs/akka/current/scala/actors.html) are extremely lightweight. We could afford creating millions of them if we knew that they would be disposed quickly. However that's not the case with our use case:
 
-<img src="/assets/img/custom/blog/fsm.png" alt="FSM architecture" title="FSM architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/img/custom/blog/fsm.png" alt="FSM architecture" title="FSM architecture" class="img img-center img-responsive style-screengrab">
 
 As you can see Finite State Machine [(FSM)](http://codurance.com/2016/05/10/finite-state-machines-with-akka/) actors will wait until the Items service finishes deleting the items. It's important to note that the actor is waiting, but not blocking. Actors are attached to [Dispatchers](http://doc.akka.io/docs/akka/2.4.6/scala/dispatchers.html) that have a Thread Pool inside. Those thread pools have a limited number of threads; blocking one of the actors would mean running out of threads pretty quickly. In this particular example we want to bound the number of actors, not threads. Maybe it is overkill, but the point of this series is mainly educational. Let's see a diagram of our service with the proper level of abstraction.
 
-<img src="/assets/img/custom/blog/coordination-diagram.png" alt="Coordination" title="Coordination" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/img/custom/blog/coordination-diagram.png" alt="Coordination" title="Coordination" class="img img-center img-responsive style-screengrab">
 
 ## Akka HTTP
 
@@ -91,7 +91,7 @@ override def receive: Receive = {
 
 `sender` method exposes the `ActorRef` of the actor that sent the message. If the actor pool is exhausted we need to communicate with the Route actor that we won't able to serve the request. Otherwise we'll retrieve one of the actors in the pool and we'll forward the received message. Forward allows us to keep the original sender. The FSM will communicate the result of its work to the Route actor that is waiting bounded by the ask pattern.
 
-<img src="/assets/img/custom/blog/coordination-diagram.png" alt="Coordination" title="Coordination" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/img/custom/blog/coordination-diagram.png" alt="Coordination" title="Coordination" class="img img-center img-responsive style-screengrab">
 
 The FSM needs a reference into the coordinator, as it's responsible for managing the lifecycle of the FSMs. Coordinator sends a message to the FSM telling to flush its internal state. At the same time puts back the FSM into the pool.
 
