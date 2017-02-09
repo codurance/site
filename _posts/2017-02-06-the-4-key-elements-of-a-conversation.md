@@ -1,8 +1,8 @@
 ---
 layout: post
 asset-type: post
-name: The 4 key elements of a conversation
-title: 'The 4 key elements of a conversation'
+name: The 4 key elements of conversation
+title: 'The 4 key elements of conversation'
 date: 2017-02-08 09:00:00 +00:00
 author: Giulia Mantuano
 image:
@@ -14,7 +14,7 @@ tags:
 - Conversational Interfaces
 
 ---
-Conversational Interfaces is a term often used to define systems that hold "human-like" conversations, examples include; Chatbots, Voice User Interfaces, Embodied Conversational Agents. The user interacts with these using text input, voice recognition, and gestures. These types of interfaces are often unable to provide a good conversational experience. In order to create a better experience we need to be aware of the following 4 key elements of human-to-human conversations.
+Conversational Interfaces is a term often used to define systems that hold "human-like" conversations, examples include; Chatbots, Voice User Interfaces, and Embodied Conversational Agents. The user interacts with these using text input, voice recognition, and gestures. These types of interfaces are often unable to provide a good conversational experience. In order to create a better experience we need to be aware of the following 4 key elements of human-to-human conversations and how they relate to conversational interfaces.
 
 ## 1. Turn-taking
 > A turn is one interaction between the user and the system, and a conversation is made of at least two turns.
@@ -33,7 +33,7 @@ Jane: “Hi, I’m good thank you!”
 </pre>
 
 <p>
-Now that's an awkward conversation—people rarely have conversations that last a single turn.
+Now that's an awkward conversation — people rarely have conversations that last a single turn.
 </p>
 <br class="clear-both" />
 
@@ -55,7 +55,7 @@ Asking Google Voice “Who was Oscar Wilde?” gives the user the following resu
 
 </p>
 
-In the second turn the user responds with, “Can you tell me more?”, a human-like conversation where the name of the author has been omitted, the system understands that they are referring to Oscar Wilde and it will show relevant results.
+In the second turn the user responds with, “Can you tell me more?”, a human-like answer where the name of the author has been omitted, the system understands that they are referring to Oscar Wilde and it shows relevant results.
 
 
 ## 3. Reference
@@ -72,9 +72,9 @@ In the second turn the user responds with, “Can you tell me more?”, a human-
 <br class="clear-both" />
 
 ## 4. Variety
-> The system should ask open questions, only if it is able to handle different ways of saying the same thing.
+> The system should ask open questions only if it is able to handle different ways of saying the same thing.
 
-<a href="https://www.hipmunk.com/">Hipmunk</a> is a chatbot that promises to help you plan travel in the easiest and fastest way. The two screenshots below show that the system doesn’t support the fourth key element of a conversation. The system misinterprets my answer the first time that I enter the airport, because it accepts city names and airport codes only.
+<a href="https://www.hipmunk.com/">Hipmunk</a> is a chatbot that promises to help you plan travel in the easiest and fastest way. The two screenshots below show that the system doesn’t support the fourth key element of conversation. The system misinterprets my answer the first time that I enter the airport, because it accepts city names and airport codes only.
 
 There are number of ways that the user could reply to open questions, and spending time on researching them will have a positive impact on the user experience.
 
