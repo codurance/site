@@ -1,0 +1,440 @@
+---
+title: CSS
+---
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+*/
+
+/* Home Page */
+
+.feature-panel {  /* 0 0 1 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
+  height: 550px;
+  background-size: cover;
+  width: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.feature-panel h1 {  /* 0 0 1 1 */
+  font-family:'Oxygen', sans-serif;
+  color: white;
+  line-height:70px;
+}
+
+.feature-panel .jumbotron {  /* 0 0 2 0 */
+  background: transparent;
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.feature-panel .jumbotron h3 {  /* 0 0 2 1 */
+  color:white;
+}
+
+/*  Home Page - Heading Titles */
+
+.section {   /* 0 0 1 0 */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title-header {  /* 0 0 1 0 */
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-header h1,    /* 0 0 1 1 */
+.title-header h2 {   /* 0 0 1 1 */
+  color: #333;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title-header p {   /* 0 0 1 1 */
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.title-header h1:after,    /* 0 0 2 1 */
+.title-header h2:after {   /* 0 0 2 1 */
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 70px;
+  content: " ";
+  margin-left: -35px;
+  position: absolute;
+  background: #e67e22;
+}
+
+/* Homepage - Blog panel */
+
+.homepage-blog-thumb img {  /* 0 0 1 1 */
+  height: 240px;
+  width: 350px;
+}
+
+/* Homepage - Services section */
+
+.service-card-inner {   /* 0 0 1 0 */
+  padding: 30px 5px;
+  text-align: center;
+}
+
+.service-card-inner img {   /* 0 0 1 1 */
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+.service-card-inner h2 {   /* 0 0 1 1 */
+  color: white;
+}
+
+.service-card li {   /* 0 0 1 1 */
+  padding-bottom: 8px;
+}
+
+/* Blog */
+
+.blog-thumb {   /* 0 0 1 0 */
+  max-height: 225px;
+}
+
+.blog-img-attribution {   /* 0 0 1 0 */
+  font-size: 11px;
+}
+
+.headline-v2 {   /* 0 0 1 0 */
+  border-left: 2px solid #e67e22 !important;
+}
+
+.blog-tag-margin {   /* 0 0 1 0 */
+  margin-right: 10px;
+}
+
+.news-v3-in h1 {   /* 0 0 1 1 */
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0 0 20px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.news-v3-in h2 {   /* 0 0 1 1 */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 35px;
+  text-transform: none;
+}
+
+.blog-thumb a img {   /* 0 0 1 2 */
+  display: block;
+  width: 335px;
+  height: 225px;
+}
+
+/* Author */
+
+#author-img {   /* 0 0 1 0 */
+  width: 100%;
+}
+
+/* Team */
+
+.img-hover-v1 span {   /* 0 0 1 1 */
+  min-height: 50px;
+  text-align: center;
+}
+
+.profile-window .profile-image {   /* 0 0 2 0 */
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+/* Services */
+
+.divider {   /* 0 0 1 0 */
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.services-section {   /* 0 0 1 0 */
+  padding-bottom: 40px;
+}
+
+.services-subheader {   /* 0 0 1 0 */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.services-subheader h2 {   /* 0 0 1 1 */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-section .header {   /* 0 0 2 0 */
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.services .services-top-row {   /* 0 0 2 0 */
+  margin-top: 40px;
+}
+
+.services .client-descriptions {   /* 0 0 2 0 */
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.services .introduction {   /* 0 0 2 0 */
+  margin-top: 50px;
+}
+
+.services .service-descriptions {   /* 0 0 2 0 */
+  margin-top: 50px;
+}
+
+.services .service-description-box {   /* 0 0 2 0 */
+  padding: 20px 40px;
+  border-top: solid 2px #e67e22;
+}
+
+.services .services-box {   /* 0 0 2 0 */
+    padding: 20px 20px;
+    border: solid 1px #eee;
+}
+
+.services .service-boxes {   /* 0 0 2 0 */
+  margin-bottom: 40px;
+}
+
+.services-section .title {   /* 0 0 2 0 */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.services-section .big-title {   /* 0 0 2 0 */
+  text-align: center;
+}
+
+.services-section .body {   /* 0 0 2 0 */
+  text-align: center;
+  text-align: left;
+}
+
+.services .skills-block {   /* 0 0 2 0 */
+  margin-bottom: 50px;
+}
+
+.services .dividing-line {   /* 0 0 2 0 */
+  border-top: solid 1px #eee;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services .skills-box {   /* 0 0 2 0 */
+  padding: 0px;
+  margin: 0px;
+}
+
+.services .service-block {   /* 0 0 2 0 */
+  padding: 20px;
+  margin: 0px;
+}
+
+.services-section .header h3 {   /* 0 0 2 1 */
+  margin-bottom: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.services-section .body p {   /* 0 0 2 1 */
+  color: white;
+  font-size: 12px
+}
+
+.services-section .body h4 {   /* 0 0 2 1 */
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.services .services-box:hover {   /* 0 0 3 0 */
+  padding: 20px 20px;
+  border: solid 1px #eee;
+  box-shadow: 0 0 8px #eee;
+}
+
+.services .service-icon:hover {   /* 0 0 3 0 */
+  background: #e67e22;
+}
+
+.services .scenario {   /* 0 0 3 0 */
+  margin: 20px 0px;
+}
+
+.services-section .body .element {   /* 0 0 3 0 */
+  padding: 10px 10px 10px 10px;
+}
+
+.services .service-descriptions .introduction {   /* 0 0 3 0 */
+  margin: 20px 0px
+}
+
+/* Consultancy */
+
+.introduction .service-header {   /* 0 0 2 0 */
+  color: #e67e22 !important;
+  font-size: 40px !important;
+}
+
+/* Training */
+
+.training-link-btn {   /* 0 0 1 0 */
+  width: 150px;
+  color: #e67e22 !important;
+}
+
+.training-description {   /* 0 0 1 0 */
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.style-screengrab {   /* 0 0 1 0 */
+  margin: 20px 0px 40px 0px;
+}
+
+.btn-u.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
+  color: white !important;
+  background-color: #e67e22;
+}
+
+/* Skills and practices section */
+
+.block-centered {   /* 0 0 1 0 */
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border: solid 1px #ddd;
+  margin: 15px 0;
+}
+
+.block-centered-condensed {   /* 0 0 1 0 */
+  padding: 10px;
+}
+
+.block-centered-condensed h3 {   /* 0 0 1 1 */
+  font-size: 16px;
+}
+
+.no-border,     /* 0 0 1 0 */
+i.no-border {   /* 0 0 1 1 */
+  border: none;
+}
+
+.news-v1 a {   /* 0 0 1 1 */
+  color: #e67e22;
+}
+
+/* Sponsoring section */
+
+.breadcrumbs-v3.ourpeople {   /* 0 0 2 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.breadcrumbs-v3.ourclients {   /* 0 0 2 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/clients/ourclients.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.breadcrumbs-v3.ourservices {   /* 0 0 2 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/services/ourservices.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.breadcrumbs-v3.thesoftwarecraftsman {   /* 0 0 2 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Clients section */
+
+.client-links {   /* 0 0 1 0 */
+  text-align: center;
+  font: 400 16px/21px "Lato", sans-serif;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.client-links a {   /* 0 0 1 1 */
+  padding: 20px;
+}
+
+/* Partners */
+
+.img-center {   /* 0 0 1 0 */
+  display: block;
+  margin: 0 auto;
+}
+
+.jetbrains-logo-partners {   /* 0 0 1 0 */
+  height: 120px;
+}
+
+.jetBrains-blurb {   /* 0 0 1 0 */
+  text-align: center;
+}
+
+.jetBrains-logo-carousel img {   /* 0 0 1 1 */
+  height: 70%;
+  width: 70% !important;
+  margin-left: 30px
+}
+
+/* Post with text side by side images */
+
+.image-side-by-side-text {   /* 0 0 1 0 */
+  float:left;
+  margin: 0px 50px 15px 20px;
+}
+
+.text-side-by-side-image {   /* 0 0 1 0 */
+  margin: 0px 50px 0px 0px;
+}
+
+.latest-publications .item {   /* 0 0 2 0 */
+  padding: 15px 15px 15px 15px;
+  margin-bottom:15px;
+}
+
+.latest-publications .item > h4 {   /* 0 0 2 1 */
+  margin: 15px 0px 0px 0px;
+}
