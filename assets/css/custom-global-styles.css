@@ -1,0 +1,21 @@
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
+
+body {  /* 0 0 0 1 */
+    font-size: 14px;
+}
+
+body:last-child .btn-u, x:-moz-any-link {  /* 0 0 1 1 */
+    margin: 0;
+}
+
+li > a {  /* 0 0 0 2 */
+    color: #e67e22;
+}
