@@ -6,34 +6,42 @@
   Common display resolution:
     https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
     https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg
-*/
+
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-    .image-side-by-side-text {
+    .image-side-by-side-text {  /* 0 0 1 0 */
         float: none;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .feature-panel, .jumbotron {
+    .practice {  /* 0 0 1 0 */
+        min-width: 0px;
+    }
+
+    .feature-panel, /* 0 0 1 0 */
+    .jumbotron {    /* 0 0 1 0 */
         padding-top: 0px;
     }
-    .feature-panel .jumbotron h1 {
+
+    .feature-panel .jumbotron h1 {  /* 0 0 2 1 */
         line-height:40px;
     }
-    .feature-panel .jumbotron h3 {
+
+    .feature-panel .jumbotron h3 {  /* 0 0 2 1 */
         font-size: 14px;
         line-height: 17px;
-    }
-    .practice {
-        min-width: 0px;
     }
 }
 
 @media (max-width: 992px) {
-    #services .service-card {
+    #services .service-card {  /* 0 1 1 0 */
         margin-top: 30px;
     }
 }
