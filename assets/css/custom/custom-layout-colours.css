@@ -18,14 +18,6 @@
 
 /* Foreground colours */
 
-.white,
-p.white,
-ul.white li {
-    color: white;
-}
-
-/* Foreground colours */
-
 .white,         /* 0 0 1 0 */
 p.white,        /* 0 0 1 1 */
 ul.white li {   /* 0 0 1 2 */
