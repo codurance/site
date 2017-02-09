@@ -438,3 +438,15 @@ i.no-border {   /* 0 0 1 1 */
 .latest-publications .item > h4 {   /* 0 0 2 1 */
   margin: 15px 0px 0px 0px;
 }
+
+/* Post with 2 images side by side */
+
+.images-side-by-side-left {   /* 0 0 1 0 */
+  float:left;
+  margin: 0px 75px 15px 65px;
+}
+
+.images-side-by-side-right {   /* 0 0 1 0 */
+  float:right;
+  margin: 0px 65px 15px 75px;
+}
