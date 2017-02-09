@@ -27,10 +27,6 @@
     background: #e67e22;
 }
 
-#sharethisButtons {   /* 0 0 1 0 */
-    padding-bottom: 30px;
-}
-
 .button-with-bg-image span {   /* 0 0 1 1 */
     font-size: 24px;
     margin: 0;
