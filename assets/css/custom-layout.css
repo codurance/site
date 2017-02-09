@@ -2,11 +2,15 @@
 title: CSS
 ---
 
-/* Add here all your css styles (customizations) */
-
 /* --------------------------------------
    Layout
    -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+*/
 
 /* Home Page */
 
