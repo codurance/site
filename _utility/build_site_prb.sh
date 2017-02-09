@@ -7,7 +7,7 @@ echo "Building website for: $FOLDER_NAME"
 if [[ "$FOLDER_NAME" != "site-master" ]]; then
   echo "baseurl: /$FOLDER_NAME" > _config_prb.yml
   cat _config_prb.yml
-  rake buildprb
+  rake buildenprb
 else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
