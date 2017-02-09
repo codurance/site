@@ -46,11 +46,11 @@ Asking Google Voice “Who was Oscar Wilde?” gives the user the following resu
 <p>
 
 <div class="images-side-by-side-left">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
+  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Google Voice Search interface - First turn" width="250" height="300" />
 </div>
 
 <div class="images-side-by-side-right">
-  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
+  <img src="/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Google Voice Search interface - Second turn" width="250" height="300" />
 </div>
 
 </p>
