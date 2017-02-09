@@ -24,14 +24,6 @@ ul.white li {
     color: white;
 }
 
-/* Section colours */
-
-.gray-section {   /* 0 0 1 0 */
-    background: #fafafa;
-    border-top: solid 1px #eee;
-    border-bottom: solid 1px #eee;
-}
-
 /* Foreground colours */
 
 .white,         /* 0 0 1 0 */
