@@ -8,11 +8,11 @@ RSpec::Core::RakeTask.new(:spec) do |task|
 end
 
 task :build do
-  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml --trace'
+  sh 'bundle exec jekyll build --config _config.yml,_config_default.yml --trace'
 end
 
 task :buildboth do
-  sh 'bundle exec jekyll build --trace'
+  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml --trace'
 end
 
 task :buildprb do
