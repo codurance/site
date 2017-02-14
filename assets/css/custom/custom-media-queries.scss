@@ -1,3 +1,7 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
@@ -25,18 +29,21 @@
         min-width: 0px;
     }
 
-    .feature-panel, /* 0 0 1 0 */
-    .jumbotron {    /* 0 0 1 0 */
-        padding-top: 0px;
-    }
+    .feature-panel { /* 0 0 1 0 */
+        &, .jumbotron { /* 0 0 1 0 */
+            padding-top: 0px;
+        }
 
-    .feature-panel .jumbotron h1 {  /* 0 0 2 1 */
-        line-height:40px;
-    }
+        & .jumbotron { /* 0 0 2 0 */
+            & h1 { /* 0 0 2 1 */
+                line-height: 40px;
+            }
 
-    .feature-panel .jumbotron h3 {  /* 0 0 2 1 */
-        font-size: 14px;
-        line-height: 17px;
+            & h3 { /* 0 0 2 1 */
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
     }
 }
 
