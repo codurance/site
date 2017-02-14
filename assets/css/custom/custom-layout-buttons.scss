@@ -1,3 +1,7 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 /* --------------------------------------
    Layout
    -------------------------------------- */
@@ -10,6 +14,11 @@
 
 /* Buttons - used across multiple pages */
 
+$dark-orange-colour: #d35400;
+$orange-colour: #e67e22;
+$gray-colour: #687074;
+$white-colour: #fff;
+
 .btn-more {   /* 0 0 1 0 */
     border-radius: 6px;
     font-size: 18px;
@@ -19,12 +28,12 @@
 
 .btn-more-light {  /* 0 0 1 0 */
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid $white-colour;
+    color: $white-colour;
 }
 
 .btn-u-orange {   /* 0 0 1 0 */
-    background: #e67e22;
+    background: $orange-colour;
 }
 
 .button-with-bg-image span {   /* 0 0 1 1 */
@@ -42,7 +51,7 @@
     -webkit-justify-content: center;
     align-items: center;
     -webkit-align-items: center;
-    color: #fff;
+    color: $white-colour;
 }
 
 .btn-more:hover {  /* 0 0 2 0 */
@@ -50,31 +59,40 @@
 }
 
 .btn-more-light:hover {  /* 0 0 2 0 */
-    background-color: white;
-    color: #687074;
+    background-color: $white-colour;
+    color: $gray-colour;
 }
 
 .btn-brd.btn-u-orange {   /* 0 0 2 0 */
-    border-color: #e67e22;
+    border-color: $orange-colour;
 }
 
-.btn-u-orange:hover,                   /* 0 0 2 0 */
-.btn-u-orange:focus,                   /* 0 0 2 0 */
-.btn-u-orange:active,                  /* 0 0 2 0 */
-.btn-u-orange.active,                  /* 0 0 2 0 */
+.btn-u-orange {
+    &:hover,    /* 0 0 2 0 */
+    &:focus,    /* 0 0 2 0 */
+    &:active,   /* 0 0 2 0 */
+    &.active {  /* 0 0 2 0 */
+        background: $dark-orange-colour;
+        color: $white-colour;
+        text-decoration: none;
+    }
+}
+
 .open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
-    background: #d35400;
-    color: #fff;
+    background: $dark-orange-colour;
+    color: $white-colour;
     text-decoration: none;
 }
 
-.btn-brd.btn-u-orange:hover {   /* 0 0 3 0 */
-    color: #d35400;
-    border-color: #d35400;
-}
+.btn-brd.btn-u-orange {
+    &:hover { /* 0 0 3 0 */
+        color: $dark-orange-colour;
+        border-color: $dark-orange-colour;
+    }
 
-.btn-brd.btn-u-orange.btn-brd-hover:hover {   /* 0 0 4 0 */
-    background: #d35400;
+    &.btn-brd-hover:hover {   /* 0 0 4 0 */
+        background: $dark-orange-colour;
+    }
 }
 
 #sharethisButtons {   /* 0 1 0 0 */
