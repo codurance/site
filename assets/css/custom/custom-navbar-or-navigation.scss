@@ -1,0 +1,44 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/* --------------------------------------
+ Navbar or Navigation
+ -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
+
+$navbar-border-colour: #e67e22;
+
+.header-v3 .navbar-brand {  /* 0 0 3 1 */
+    top: 6px;
+}
+
+.header .navbar-nav > {
+    li > a {            /* 0 0 2 2 */
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+    .active > a,       /* 0 0 3 1 */
+    li > a:hover {     /* 0 0 3 2 */
+        bottom: -2px;
+        position: relative;
+        border-bottom: solid 2px $navbar-border-colour !important;
+    }
+
+    .open > a,         /* 0 0 3 1 */
+    li:hover > a {     /* 0 0 3 2 */
+        color: $navbar-border-colour !important;
+    }
+
+    .open > a {
+        &:hover, &:focus { /* 0 0 4 1 */
+            color: $navbar-border-colour !important;
+        }
+    }
+}
