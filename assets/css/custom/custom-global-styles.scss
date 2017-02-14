@@ -1,6 +1,10 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 /* --------------------------------------
-   Global Styles
-   -------------------------------------- */
+ Global Styles
+ -------------------------------------- */
 
 /*
    CSS specificity calculator: https://specificity.keegan.st/
@@ -10,9 +14,12 @@
 
 body {  /* 0 0 0 1 */
     font-size: 14px;
+    &:last-child .btn-u { /* 0 0 0 1 */
+        margin: 0;
+    }
 }
 
-body:last-child .btn-u, x:-moz-any-link {  /* 0 0 1 1 */
+x:-moz-any-link {  /* 0 0 1 1 */
     margin: 0;
 }
 
