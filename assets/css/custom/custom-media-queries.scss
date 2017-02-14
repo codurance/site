@@ -29,11 +29,11 @@
         min-width: 0px;
     }
 
-    .feature-panel { /* 0 0 1 0 */
-        &, .jumbotron { /* 0 0 1 0 */
-            padding-top: 0px;
-        }
+    .feature-panel, .jumbotron { /* 0 0 1 0 */
+        padding-top: 0px;
+    }
 
+    .feature-panel { /* 0 0 1 0 */
         & .jumbotron { /* 0 0 2 0 */
             & h1 { /* 0 0 2 1 */
                 line-height: 40px;
