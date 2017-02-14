@@ -206,15 +206,6 @@ $orange-colour: #e67e22;
     margin: 20px 0px;
   }
 
-  & .service-block { /* 0 0 2 0 */
-    padding: 20px;
-    margin: 0px;
-  }
-
-  & .service-icon:hover { /* 0 0 3 0 */
-    background: $orange-colour;
-  }
-
   & .services-box { /* 0 0 2 0 */
     padding: 20px 20px;
     border: solid 1px #eee;
@@ -226,57 +217,70 @@ $orange-colour: #e67e22;
     }
   }
 
-  & .service-boxes { /* 0 0 2 0 */
-    margin-bottom: 40px;
-  }
-
-  & .service-descriptions { /* 0 0 2 0 */
-    margin-top: 50px;
-  }
-
-  & .service-description {
-    &-box { /* 0 0 2 0 */
-      padding: 20px 40px;
-      border-top: solid 2px $orange-colour;
+  & .service {
+    &-block { /* 0 0 2 0 */
+      padding: 20px;
+      margin: 0px;
     }
 
-    & .introduction { /* 0 0 3 0 */
-      margin: 20px 0px
+    &-icon:hover { /* 0 0 3 0 */
+      background: $orange-colour;
     }
-  }
 
-  & .skills-block { /* 0 0 2 0 */
-    margin-bottom: 50px;
-  }
-  
-  & .skills-box { /* 0 0 2 0 */
-    padding: 0px;
-    margin: 0px;
-  }
-
-  &-subheader {   /* 0 0 1 0 */
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    & h2 {   /* 0 0 1 1 */
-      text-align: center;
+    &-boxes { /* 0 0 2 0 */
       margin-bottom: 40px;
     }
-  }
-}
 
-.services-section { /* 0 0 1 0 */
-  padding-bottom: 40px;
-
-  & .header { /* 0 0 2 0 */
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    
-    & h3 { /* 0 0 2 1 */
-      margin-bottom: 0px;
-      color: white;
-      font-weight: bold;
+    &-descriptions { /* 0 0 2 0 */
+      margin-top: 50px;
     }
+
+    &-description {
+      &-box { /* 0 0 2 0 */
+        padding: 20px 40px;
+        border-top: solid 2px $orange-colour;
+      }
+
+      & .introduction { /* 0 0 3 0 */
+        margin: 20px 0px
+      }
+    }
+  }
+
+  & .skills {
+    &-block { /* 0 0 2 0 */
+      margin-bottom: 50px;
+    }
+
+    &-box { /* 0 0 2 0 */
+      padding: 0px;
+      margin: 0px;
+    }
+
+    &-subheader { /* 0 0 1 0 */
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      & h2 { /* 0 0 1 1 */
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  & .services-section { /* 0 0 1 0 */
+      padding-bottom: 40px;
+
+      & .header { /* 0 0 2 0 */
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+
+        & h3 { /* 0 0 2 1 */
+          margin-bottom: 0px;
+          color: white;
+          font-weight: bold;
+        }
+      }
   }
 
   & .title { /* 0 0 2 0 */
