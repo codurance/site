@@ -95,6 +95,11 @@ $white-colour: #fff;
     }
 }
 
+.btn-u.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
+    color: white !important;
+    background-color: $orange-colour;
+}
+
 #sharethisButtons {   /* 0 1 0 0 */
     padding-bottom: 30px;
 }
