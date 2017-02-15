@@ -1,0 +1,476 @@
+---
+title: CSS
+---
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+*/
+
+/* Home Page */
+
+$orange-colour: #e67e22;
+
+.feature-panel { /* 0 0 1 0 */
+  background: url("{{ site.baseurl }}/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
+  height: 550px;
+  background-size: cover;
+  width: auto;
+  z-index: 1;
+  position: relative;
+
+  & h1 { /* 0 0 1 1 */
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    line-height: 70px;
+  }
+
+  & .jumbotron { /* 0 0 2 0 */
+    background: transparent;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    & h3 { /* 0 0 2 1 */
+      color: white;
+    }
+  }
+}
+
+/*  Home Page - Heading Titles */
+
+.section {   /* 0 0 1 0 */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title-header {  /* 0 0 1 0 */
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+
+  & h1,    /* 0 0 1 1 */
+  & h2 {   /* 0 0 1 1 */
+    color: #333;
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    
+    &:after {   /* 0 0 2 1 */
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      width: 70px;
+      content: " ";
+      margin-left: -35px;
+      position: absolute;
+      background: $orange-colour;
+    }
+  }
+
+  & p {   /* 0 0 1 1 */
+    font-size: 17px;
+    font-weight: 200;
+  }
+}
+
+/* Homepage - Blog panel */
+
+.homepage-blog-thumb img {  /* 0 0 1 1 */
+  height: 240px;
+  width: 350px;
+}
+
+/* Homepage - Services section */
+
+.service-card {
+  &-inner {  /* 0 0 1 0 */
+    padding: 30px 5px;
+    text-align: center;
+  }
+
+  &-inner img { /* 0 0 1 1 */
+    display: block;
+    margin: 0 auto 5px auto;
+  }
+
+  &-inner h2 {   /* 0 0 1 1 */
+    color: white;
+  }
+
+  & li {   /* 0 0 1 1 */
+    padding-bottom: 8px;
+  }
+}
+
+/* Blog */
+
+.blog {
+    &-thumb {   /* 0 0 1 0 */
+      max-height: 225px;
+
+      & a img {   /* 0 0 1 2 */
+        display: block;
+        width: 335px;
+        height: 225px;
+      }
+    }
+
+    &-img-attribution {   /* 0 0 1 0 */
+      font-size: 11px;
+    }
+
+    &-tag-margin {   /* 0 0 1 0 */
+      margin-right: 10px;
+    }
+}
+
+.headline-v2 {   /* 0 0 1 0 */
+  border-left: 2px solid $orange-colour !important;
+}
+
+.news-v3-in {
+  & h1 {  /* 0 0 1 1 */
+    font-size: 32px;
+    font-weight: 200;
+    margin: 0 0 20px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+
+  & h2 {  /* 0 0 1 1 */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: none;
+  }
+}
+
+/* Author */
+
+#author-img {   /* 0 0 1 0 */
+  width: 100%;
+}
+
+/* Team */
+
+.img-hover-v1 span {   /* 0 0 1 1 */
+  min-height: 50px;
+  text-align: center;
+}
+
+.profile-window .profile-image {   /* 0 0 2 0 */
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+/* Services */
+
+.divider {   /* 0 0 1 0 */
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.services {
+  & .client-descriptions { /* 0 0 2 0 */
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  & .dividing-line { /* 0 0 2 0 */
+    border-top: solid 1px #eee;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .introduction { /* 0 0 2 0 */
+    margin-top: 50px;
+  }
+
+  & .scenario { /* 0 0 3 0 */
+    margin: 20px 0px;
+  }
+
+  & .service {
+    &-block { /* 0 0 2 0 */
+      padding: 20px;
+      margin: 0px;
+    }
+
+    &-icon:hover { /* 0 0 3 0 */
+      background: $orange-colour;
+    }
+
+    &-boxes { /* 0 0 2 0 */
+      margin-bottom: 40px;
+    }
+
+    &-description {
+      &-box { /* 0 0 2 0 */
+        padding: 20px 40px;
+        border-top: solid 2px $orange-colour;
+      }
+    }
+  }
+
+  & .services-box { /* 0 0 2 0 */
+    padding: 20px 20px;
+    border: solid 1px #eee;
+
+    &:hover { /* 0 0 3 0 */
+      padding: 20px 20px;
+      border: solid 1px #eee;
+      box-shadow: 0 0 8px #eee;
+    }
+  }
+
+  & .service-descriptions {  /* 0 0 2 0 */
+    margin-top: 50px;
+
+    & .introduction {  /* 0 0 3 0 */
+      margin: 20px 0px;
+    }
+  }
+  
+  &-section { /* 0 0 1 0 */
+    padding-bottom: 40px;
+
+    & .header { /* 0 0 2 0 */
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+
+      & h3 { /* 0 0 2 1 */
+        margin-bottom: 0px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    & .title { /* 0 0 2 0 */
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    & .big-title { /* 0 0 2 0 */
+      text-align: center;
+    }
+
+    & .body { /* 0 0 2 0 */
+      text-align: center;
+      text-align: left;
+
+      & p { /* 0 0 2 1 */
+        color: white;
+        font-size: 12px
+      }
+
+      & h4 { /* 0 0 2 1 */
+        margin-top: 0px;
+        color: white;
+        font-weight: bold;
+      }
+
+      & .element { /* 0 0 3 0 */
+        padding: 10px 10px 10px 10px;
+      }
+    }
+  }
+
+  & .services-top-row {
+    /* 0 0 2 0 */
+    margin-top: 40px;
+  }
+
+  & .skills {
+    &-block { /* 0 0 2 0 */
+      margin-bottom: 50px;
+    }
+
+    &-box { /* 0 0 2 0 */
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  &-subheader { /* 0 0 1 0 */
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    & h2 { /* 0 0 1 1 */
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+/* Consultancy */
+
+.introduction .service-header {   /* 0 0 2 0 */
+  color: $orange-colour !important;
+  font-size: 40px !important;
+}
+
+/* Training */
+
+.training {
+  &-link-btn { /* 0 0 1 0 */
+    width: 150px;
+    color: $orange-colour !important;
+  }
+
+  &-description { /* 0 0 1 0 */
+    font-size: 17px;
+    font-weight: 200;
+  }
+}
+
+.style-screengrab {   /* 0 0 1 0 */
+  margin: 20px 0px 40px 0px;
+}
+
+.btn-u.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
+  color: white !important;
+  background-color: $orange-colour;
+}
+
+/* Skills and practices section */
+
+.block-centered {   /* 0 0 1 0 */
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border: solid 1px #ddd;
+  margin: 15px 0;
+
+  &-condensed {   /* 0 0 1 0 */
+    padding: 10px;
+  }
+
+  &-condensed h3 {   /* 0 0 1 1 */
+    font-size: 16px;
+  }
+}
+
+.no-border,     /* 0 0 1 0 */
+i.no-border {   /* 0 0 1 1 */
+  border: none;
+}
+
+.news-v1 a {   /* 0 0 1 1 */
+  color: $orange-colour;
+}
+
+/* Sponsoring section */
+
+.breadcrumbs-v3 {
+  &.ourpeople { /* 0 0 2 0 */
+    background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.ourclients { /* 0 0 2 0 */
+    background: url("{{ site.baseurl }}/assets/img/custom/clients/ourclients.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.ourservices { /* 0 0 2 0 */
+    background: url("{{ site.baseurl }}/assets/img/custom/services/ourservices.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.thesoftwarecraftsman { /* 0 0 2 0 */
+    background: url("{{ site.baseurl }}/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/* Clients section */
+
+.client-links {   /* 0 0 1 0 */
+  text-align: center;
+  font: 400 16px/21px "Lato", sans-serif;
+  padding: 0 15px;
+  text-transform: uppercase;
+
+  & a {   /* 0 0 1 1 */
+    padding: 20px;
+  }
+}
+/* Partners */
+
+.img-center {   /* 0 0 1 0 */
+  display: block;
+  margin: 0 auto;
+}
+
+.jetbrains-logo-partners { /* 0 0 1 0 */
+  height: 120px;
+}
+
+.jetBrains {
+  &-blurb { /* 0 0 1 0 */
+    text-align: center;
+  }
+
+  &-logo-carousel img { /* 0 0 1 1 */
+    height: 70%;
+    width: 70% !important;
+    margin-left: 30px
+  }
+}
+
+/* Post with text side by side images */
+.image-side-by-side-text { /* 0 0 1 0 */
+  float: left;
+  margin: 0px 50px 15px 20px;
+}
+
+.text-side-by-side-image {   /* 0 0 1 0 */
+  margin: 0px 50px 0px 0px;
+}
+
+/* Post with 2 images side by side */
+.images-side-by-side {
+  &-left { /* 0 0 1 0 */
+    float: left;
+    margin: 0px 75px 15px 65px;
+  }
+
+  &-right { /* 0 0 1 0 */
+    float: right;
+    margin: 0px 65px 15px 75px;
+  }
+}
+
+.latest-publications {
+  & .item { /* 0 0 2 0 */
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+    & > h4 { /* 0 0 2 1 */
+      margin: 15px 0px 0px 0px;
+    }
+  }
+}
