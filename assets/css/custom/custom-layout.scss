@@ -99,16 +99,18 @@ $orange-colour: #e67e22;
 
 /* Homepage - Services section */
 
-.service-card-inner { /* 0 0 1 0 */
-  padding: 30px 5px;
-  text-align: center;
+.service-card {
+  &-inner {  /* 0 0 1 0 */
+    padding: 30px 5px;
+    text-align: center;
+  }
 
-  & img { /* 0 0 1 1 */
+  &-inner img { /* 0 0 1 1 */
     display: block;
     margin: 0 auto 5px auto;
   }
 
-  & h2 {   /* 0 0 1 1 */
+  &-inner h2 {   /* 0 0 1 1 */
     color: white;
   }
 
@@ -121,17 +123,19 @@ $orange-colour: #e67e22;
 
 .blog {
     &-thumb {   /* 0 0 1 0 */
-    max-height: 225px;
+      max-height: 225px;
 
-    & a img {   /* 0 0 1 2 */
-      display: block;
-      width: 335px;
-      height: 225px;
+      & a img {   /* 0 0 1 2 */
+        display: block;
+        width: 335px;
+        height: 225px;
+      }
     }
-  }
+
     &-img-attribution {   /* 0 0 1 0 */
       font-size: 11px;
     }
+
     &-tag-margin {   /* 0 0 1 0 */
       margin-right: 10px;
     }
@@ -206,17 +210,6 @@ $orange-colour: #e67e22;
     margin: 20px 0px;
   }
 
-  & .services-box { /* 0 0 2 0 */
-    padding: 20px 20px;
-    border: solid 1px #eee;
-
-    &:hover { /* 0 0 3 0 */
-      padding: 20px 20px;
-      border: solid 1px #eee;
-      box-shadow: 0 0 8px #eee;
-    }
-  }
-
   & .service {
     &-block { /* 0 0 2 0 */
       padding: 20px;
@@ -231,20 +224,81 @@ $orange-colour: #e67e22;
       margin-bottom: 40px;
     }
 
-    &-descriptions { /* 0 0 2 0 */
-      margin-top: 50px;
-    }
-
     &-description {
       &-box { /* 0 0 2 0 */
         padding: 20px 40px;
         border-top: solid 2px $orange-colour;
       }
+    }
+  }
 
-      & .introduction { /* 0 0 3 0 */
-        margin: 20px 0px
+  & .services-box { /* 0 0 2 0 */
+    padding: 20px 20px;
+    border: solid 1px #eee;
+
+    &:hover { /* 0 0 3 0 */
+      padding: 20px 20px;
+      border: solid 1px #eee;
+      box-shadow: 0 0 8px #eee;
+    }
+  }
+
+  & .service-descriptions {  /* 0 0 2 0 */
+    margin-top: 50px;
+
+    & .introduction {  /* 0 0 3 0 */
+      margin: 20px 0px;
+    }
+  }
+  
+  &-section { /* 0 0 1 0 */
+    padding-bottom: 40px;
+
+    & .header { /* 0 0 2 0 */
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+
+      & h3 { /* 0 0 2 1 */
+        margin-bottom: 0px;
+        color: white;
+        font-weight: bold;
       }
     }
+
+    & .title { /* 0 0 2 0 */
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    & .big-title { /* 0 0 2 0 */
+      text-align: center;
+    }
+
+    & .body { /* 0 0 2 0 */
+      text-align: center;
+      text-align: left;
+
+      & p { /* 0 0 2 1 */
+        color: white;
+        font-size: 12px
+      }
+
+      & h4 { /* 0 0 2 1 */
+        margin-top: 0px;
+        color: white;
+        font-weight: bold;
+      }
+
+      & .element { /* 0 0 3 0 */
+        padding: 10px 10px 10px 10px;
+      }
+    }
+  }
+
+  & .services-top-row {
+    /* 0 0 2 0 */
+    margin-top: 40px;
   }
 
   & .skills {
@@ -256,60 +310,15 @@ $orange-colour: #e67e22;
       padding: 0px;
       margin: 0px;
     }
-
-    &-subheader { /* 0 0 1 0 */
-      padding-top: 40px;
-      padding-bottom: 40px;
-
-      & h2 { /* 0 0 1 1 */
-        text-align: center;
-        margin-bottom: 40px;
-      }
-    }
   }
 
-  & .services-section { /* 0 0 1 0 */
-      padding-bottom: 40px;
+  &-subheader { /* 0 0 1 0 */
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-      & .header { /* 0 0 2 0 */
-        text-align: center;
-        padding: 10px 10px 10px 10px;
-
-        & h3 { /* 0 0 2 1 */
-          margin-bottom: 0px;
-          color: white;
-          font-weight: bold;
-        }
-      }
-  }
-
-  & .title { /* 0 0 2 0 */
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  & .big-title { /* 0 0 2 0 */
-    text-align: center;
-  }
-
-  & .body { /* 0 0 2 0 */
-    text-align: center;
-    text-align: left;
-
-    & p { /* 0 0 2 1 */
-      color: white;
-      font-size: 12px
-    }
-
-    & h4 { /* 0 0 2 1 */
-      margin-top: 0px;
-      color: white;
-      font-weight: bold;
-    }
-
-    & .element { /* 0 0 3 0 */
-      padding: 10px 10px 10px 10px;
+    & h2 { /* 0 0 1 1 */
+      text-align: center;
+      margin-bottom: 40px;
     }
   }
 }
@@ -417,11 +426,11 @@ i.no-border {   /* 0 0 1 1 */
   margin: 0 auto;
 }
 
-.jetbrains {
-  &-logo-partners { /* 0 0 1 0 */
-    height: 120px;
-  }
+.jetbrains-logo-partners { /* 0 0 1 0 */
+  height: 120px;
+}
 
+.jetBrains {
   &-blurb { /* 0 0 1 0 */
     text-align: center;
   }
