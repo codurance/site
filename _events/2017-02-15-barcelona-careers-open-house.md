@@ -2,17 +2,17 @@
 author: 
  - Sandro Mancuso
 layout: event
-name: london-career-open-house-2016-01
-location: "15 Northburgh Street, London, EC1V 0JR"
+name: barcelona-careers-open-house-2017-03
+location: "Carrer d'Aragó, 208, 5º2º, 08011 Barcelona"
 image:
-    src: /assets/img/custom/events/openhouse_london.png
-title: "Careers Open House"
+    src: /assets/img/custom/events/openhouse-barcelona.png
+title: "Barcelona Careers Open House"
 hidden: true
 event-dates: 
- starts: 2017-01-05
- ends: 2017-01-05
-event-page-url: https://www.eventbrite.co.uk/e/codurance-career-open-house-tickets-30518697245
-date: 2016-12-21 10:00:00 +01:00
+ starts: 2017-03-06
+ ends: 2017-03-06
+event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-32039652463
+date: 2017-02-15 17:00:00
 ---
 
 For developers who are looking for autonomy, mastery and purpose.
