@@ -15,10 +15,11 @@ source "$DIR/send_gh_comment_validation.sh"
 COMMENT="Deployed: $DEPLOYMENT_URL"
 
 function get_pr_number_by_branch_name() {
-  PR_NUMBER=$(curl -X GET -u ${GITHUB_TOKEN}:x-oauth-basic "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls?head=${REPO_OWNER}:${CIRCLE_BRANCH}" | jq ".[0].number")
-  if [ -z "$PR_NUMBER" ]; then
-    echo "PR_NUMBER not specified, and can't be determined in the current context"
-    exit 1
+  if [ -n "$CIRCLE_BRANCH" ]; then
+    pr_number_by_branch=$(curl -X GET -u ${GITHUB_TOKEN}:x-oauth-basic "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls?head=${REPO_OWNER}:${CIRCLE_BRANCH}" | jq ".[0].number")
+    if [ $? -ne 0 ] && [ "$pr_number_by_branch" != "null" ]; then
+      PR_NUMBER=pr_number_by_branch
+    fi
   fi
 }
 
@@ -51,8 +52,10 @@ function create_comment() {
 }
 
 if [ -z "$PR_NUMBER" ]; then
+  echo "Pr number not found, trying to guess it by branch name."
   get_pr_number_by_branch_name;
   if [ -z "$PR_NUMBER" ]; then
+    echo "Pr number not specified, and can't be determined by branch name"
     exit 1
   fi
 fi
