@@ -25,8 +25,7 @@ function get_pr_number_by_branch_name() {
 function get_last_comment_id_generated_by_bot() {
   LAST_COMMENT_ID=$(curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$GITHUB_TOKEN -X GET | jq "[.[] | select(.user.login==\"$GITHUB_USERNAME\")][0].id")
   if [ $? -ne 0 ]; then
-    echo "Error while parsing last commend id"
-    exit 1
+    echo "null"
   fi
   echo $LAST_COMMENT_ID
 }
@@ -53,6 +52,9 @@ function create_comment() {
 
 if [ -z "$PR_NUMBER" ]; then
   get_pr_number_by_branch_name;
+  if [ -z "$PR_NUMBER" ]; then
+    exit 1
+  fi
 fi
 
 LAST_COMMENT_ID=$(get_last_comment_id_generated_by_bot);
