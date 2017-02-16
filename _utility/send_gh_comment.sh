@@ -16,10 +16,10 @@ COMMENT="Deployed: $DEPLOYMENT_URL"
 
 function get_pr_number_by_branch_name() {
   PR_NUMBER=$(curl -X GET -u ${GITHUB_TOKEN}:x-oauth-basic "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls?head=${REPO_OWNER}:${CIRCLE_BRANCH}" | jq ".[0].number")
-	if [ -z "$PR_NUMBER" ]; then
-		echo "PR_NUMBER not specified, and can't be determined in the current context"
-		exit 1
-	fi
+  if [ -z "$PR_NUMBER" ]; then
+    echo "PR_NUMBER not specified, and can't be determined in the current context"
+    exit 1
+  fi
 }
 
 function get_last_comment_id_generated_by_bot() {
@@ -32,23 +32,23 @@ function get_last_comment_id_generated_by_bot() {
 }
 
 function update_last_comment() {
-	echo "Found a previous comment with id:$LAST_COMMENT_ID . Updating comment"
-	if [ "$EXECUTE" == "1" ]; then
-		curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/comments/$LAST_COMMENT_ID?access_token=$GITHUB_TOKEN \
-			-H "Content-Type: application/json" \
-			-X POST \
-			-d "{ \"body\":\"$COMMENT\" }"
-	fi
+  echo "Found a previous comment with id:$LAST_COMMENT_ID . Updating comment"
+  if [ "$EXECUTE" == "1" ]; then
+    curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/comments/$LAST_COMMENT_ID?access_token=$GITHUB_TOKEN \
+      -H "Content-Type: application/json" \
+      -X POST \
+      -d "{ \"body\":\"$COMMENT\" }"
+  fi
 }
 
 function create_comment() {
-	echo "Creating a comment with deployment url"
-	if [ "$EXECUTE" == "1" ]; then
-		curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$GITHUB_TOKEN \
-			-H "Content-Type: application/json" \
-			-X POST \
-			-d "{ \"body\":\"$COMMENT\" }"
-	fi
+  echo "Creating a comment with deployment url"
+  if [ "$EXECUTE" == "1" ]; then
+    curl https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$PR_NUMBER/comments?access_token=$GITHUB_TOKEN \
+      -H "Content-Type: application/json" \
+      -X POST \
+      -d "{ \"body\":\"$COMMENT\" }"
+  fi
 }
 
 if [ -z "$PR_NUMBER" ]; then
