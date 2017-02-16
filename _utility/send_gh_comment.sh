@@ -56,7 +56,7 @@ if [ -z "$PR_NUMBER" ]; then
   get_pr_number_by_branch_name;
   if [ -z "$PR_NUMBER" ]; then
     echo "Pr number not specified, and can't be determined by branch name"
-    exit 1
+    exit 0
   fi
 fi
 
