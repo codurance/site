@@ -1,5 +1,4 @@
 #!/bin/bash
-#Generated with: http://getoptgenerator.dafuer.es/
  
 # Define help function
 function help(){
@@ -43,40 +42,40 @@ while true; do
                     if [ -n "$1" ]; 
                     then
                         REPO_OWNER="$1";
-                        shift;
                     fi
+                    shift;
             ;;
         -n|--REPO_NAME)
             shift;
                     if [ -n "$1" ]; 
                     then
                         REPO_NAME="$1";
-                        shift;
                     fi
+                    shift;
             ;;
         -p|--PR_NUMBER)
             shift;
                     if [ -n "$1" ]; 
                     then
                         PR_NUMBER="$1";
-                        shift;
                     fi
+                    shift;
             ;;
         -g|--GITHUB_TOKEN)
             shift;
                     if [ -n "$1" ]; 
                     then
                         GITHUB_TOKEN="$1";
-                        shift;
                     fi
+                    shift;
             ;;
         -d|--DEPLOYMENT_URL)
             shift;
                     if [ -n "$1" ]; 
                     then
                         DEPLOYMENT_URL="$1";
-                        shift;
                     fi
+                    shift;
             ;;
         -e|--EXECUTE)
             shift;
