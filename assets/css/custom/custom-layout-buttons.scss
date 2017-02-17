@@ -24,16 +24,21 @@ $white-colour: #fff;
     font-size: 18px;
     margin: 10px 0;
     padding: 10px 30px;
-}
 
-.btn-more-light {  /* 0 0 1 0 */
-    background-color: transparent;
-    border: 1px solid $white-colour;
-    color: $white-colour;
-}
+    &-light {  /* 0 0 1 0 */
+        background-color: transparent;
+        border: 1px solid $white-colour;
+        color: $white-colour;
 
-.btn-u-orange {   /* 0 0 1 0 */
-    background: $orange-colour;
+        &:hover {  /* 0 0 2 0 */
+            background-color: $white-colour;
+            color: $gray-colour;
+        }
+    }
+
+    &:hover {  /* 0 0 2 0 */
+        transition: .3s;
+    }
 }
 
 .button-with-bg-image span {   /* 0 0 1 1 */
@@ -54,37 +59,29 @@ $white-colour: #fff;
     color: $white-colour;
 }
 
-.btn-more:hover {  /* 0 0 2 0 */
-    transition: .3s;
-}
+.btn-u {
+    &-orange { /* 0 0 1 0 */
+        background: $orange-colour;
 
-.btn-more-light:hover {  /* 0 0 2 0 */
-    background-color: $white-colour;
-    color: $gray-colour;
-}
+        &:hover, /* 0 0 2 0 */
+        &:focus, /* 0 0 2 0 */
+        &:active, /* 0 0 2 0 */
+        &.active { /* 0 0 2 0 */
+            background: $dark-orange-colour;
+            color: $white-colour;
+            text-decoration: none;
+        }
+    }
 
-.btn-brd.btn-u-orange {   /* 0 0 2 0 */
-    border-color: $orange-colour;
-}
-
-.btn-u-orange {
-    &:hover,    /* 0 0 2 0 */
-    &:focus,    /* 0 0 2 0 */
-    &:active,   /* 0 0 2 0 */
-    &.active {  /* 0 0 2 0 */
-        background: $dark-orange-colour;
-        color: $white-colour;
-        text-decoration: none;
+    &.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
+        color: white !important;
+        background-color: $orange-colour;
     }
 }
 
-.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
-    background: $dark-orange-colour;
-    color: $white-colour;
-    text-decoration: none;
-}
+.btn-brd.btn-u-orange { /* 0 0 2 0 */
+    border-color: $orange-colour;
 
-.btn-brd.btn-u-orange {
     &:hover { /* 0 0 3 0 */
         color: $dark-orange-colour;
         border-color: $dark-orange-colour;
@@ -93,6 +90,12 @@ $white-colour: #fff;
     &.btn-brd-hover:hover {   /* 0 0 4 0 */
         background: $dark-orange-colour;
     }
+}
+
+.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
+    background: $dark-orange-colour;
+    color: $white-colour;
+    text-decoration: none;
 }
 
 #sharethisButtons {   /* 0 1 0 0 */
