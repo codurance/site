@@ -12,7 +12,6 @@ gem 'therubyracer' # undeclared dependency of jekyll-less
 gem 'rdiscount'
 gem 'jekyll-sitemap'
 gem 'jekyll-multiple-languages-plugin'
-#gem 'jekyll-asset-pipeline'
 
 group :development do
   gem 'travis'
