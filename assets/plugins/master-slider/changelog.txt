@@ -1,3 +1,14 @@
+Master Slider 2.50.0, 2016-8-10
+-------------------------------
+- [Added] Overlay layers, now you can add animated layers over the slider too.
+- [Added] Masked layer, this feature gives you the ability of masking layers to achieve fresh looking animations.
+- [Added] Smart layer actions, now it is possible to add "show layer", "hide layer" or "toggle layer" actions to the layers.
+- [Added] New minimal slider skin.
+- [Added] New slider sample as the example of new features.
+- [Added] Option of enabling background video in mobile devices.
+- [Fixed] Static layers positioning in Firefox.
+- [Improved] Layer animations and show/hide timing functionality.
+
 Master Slider 2.16.3, 2015-12-1
 -------------------------------
 - [Added] Box transition view.
