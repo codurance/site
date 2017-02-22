@@ -7,181 +7,179 @@ title: Company
 </head>
 <!--=== Content Part ===-->
 <div class="container content">
-    <div class="row ">
-        <div class="col-md-12">
-            <div class="margin-bottom-40">
-                <a id="whoarewe"></a>
-                <div class="headline">
-			<h2>{% t company-who_are_we.title %}</h2>
-		</div>
-		<div>
-			{% t company-who_are_we.subtitle %}
-		</div>
-	    </div>
-            <div class="margin-bottom-40">
-                <a id="theteam"></a>
-                <div class="headline">
-			<h2>{% t company-the_team.title %}</h2>
-                </div>
-			{% assign numberOfElements = 0 %}
-			{% assign arraySize = site.data.team size %}
-			{% assign numberOfElementsDisplayed = 0 %}
-			
-			{% for member in site.data.team %}
-				{% assign numberOfElements = numberOfElements | plus: 1 %}
-				 {% assign nbElementDisplayed = nbElementDisplayed | plus: 1 %}
-			{% if numberOfElements == 1 %}
-			<div class="row team margin-bottom-10">
-			{% endif %}
-			<!-- TEAM MEMBER -->
-			<div class="col-md-2 col-sm-4 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
-				<a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
-					<span><img class="img-responsive" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
-					<span>{{member.name}}</span>
-				</a>
-			</div>
-			<!-- MODAL CLASS -->
-			<div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog profile-window modal-window">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">
-								<span aria-hidden="true">x</span>
-								<span class="sr-only">Close</span>
-							</button>
-							<h3>
-								{{member.name}}<br> <small>{{member.role}}</small>
-							</h3>
-						</div>
-						<div class="modal-body">
-							<p>
-              <img class="img-responsive margin-bottom-30 profile-image" src="{{member.image | prepend: site.baseurl}}" alt="{{member.name}}">
-							</p>
-							{{member.fullDescription}}
-							<ul class="list-unstyled list-inline team-socail">
-								<li>
-									<a href="http://twitter.com/{{member.twitter}}">
-										<i class="fa fa-twitter fa-3x"></i>
-									</a>
-								</li>
-								{% if member.github != null %}
-								<li>
-									<a href="http://github.com/{{member.github}}">
-										<i class="fa fa-github fa-3x"></i>
-									</a>
-								</li>
-								{% endif %}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		{% if numberOfElements == 6 or nbElementDisplayed == arraySize %}
-		{% assign numberOfElements = 0 %}
-			</div>
-		{% endif %}
-			{% endfor %}
-            </div>
-            <div class="margin-bottom-40">
-                <a id="ourculture"></a>
-                <div class="headline">
-			<h2>{% t company-our_culture.title  %}</h2>
-                </div>
-		{% t company-our_culture.subtitle %}
-	    </div>
-            <div class="margin-bottom-40">
-                <a id="howwework"></a>
-                <div class="headline">
-			<h2>{% t company-how_we_work.title  %}</h2>
-                </div>
-		<p>{% t company-how_we_work.subtitle  %}</p>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="block-centered equalheight">
-							<i class="icon-heart icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-software_craftsmanship.title  %}</h3>
-							<p>{% t company-how_we_work-software_craftsmanship.subtitle  %}</p>		            
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="block-centered equalheight">
-							<i class="icon-paper-plane icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-agile_and_lean.title %}</h3>
-							<p>{% t company-how_we_work-agile_and_lean.subtitle %}</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="block-centered equalheight">
-							<i class="icon-reload icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-continous_delivery.title %}</h3>
-							<p>{% t company-how_we_work-continous_delivery.subtitle %}</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="block-centered equalheight">
-							<i class="icon-control-forward icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-xp.title %}</h3>
-							<p>{% t company-how_we_work-xp.subtitle %}</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="block-centered equalheight">
-							<i class="icon-settings icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-devops.title %}</h3>
-							<p>{% t company-how_we_work-devops.subtitle %}</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="block-centered equalheight">
-							<i class="icon-screen-desktop icon-color-red no-border"></i>
-							<h3>{% t company-how_we_work-technology.title %}</h3>
-							<p>{% t company-how_we_work-technology.subtitle %}</p>			        
-						</div>
-					</div>
-				</div>
-							
-                <div class="row">
-                    <div class="col-md-12">
-                        <a id="contactus"></a>
-                        <div class="headline">
-				<h2>{% t company-contact.title %}</h2>
-                        </div>                        
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <!-- Google Map -->
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.422201900834!2d-0.1025175!3d51.5238156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50c8c7114f%3A0x6245fac5ecb52d7f!2sCodurance!5e0!3m2!1sen!2suk!4v1482344076628" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
-		<!-- End Google Map -->
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <!-- Business Hours -->
-			<h3>{% t company-contact-form.title %}</h3>
-                        <p>{% t company-contact-form.subtitle %}</p><br/>
-                        <div class="row">
-                            <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
-                                <input type="hidden" name="_next" value="/aboutus/thanks"/>
-                                <input type="hidden" name="_subject" value="Codurance Contact"/>
-                                <div class="col-sm-6">
-                                    <div class="input-group margin-bottom-10">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-					<input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="input-group margin-bottom-20">
-                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-					<input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-					<textarea rows="5" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
-					<button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="margin-bottom-40">
+        <a id="whoarewe"></a>
+        <div class="headline">
+          <h2>{% t company-who_are_we.title %}</h2>
         </div>
+        <div>
+          {% t company-who_are_we.subtitle %}
+        </div>
+      </div>
+      <div class="margin-bottom-40">
+        <a id="theteam"></a>
+        <div class="headline">
+          <h2>{% t company-the_team.title %}</h2>
+        </div>
+        {% assign teamMembersSize = site.data.team | size %}
+        {% assign columnSize = 6 %}
+        {% for member in site.data.team %}
+        {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
+        {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
+        {% if currentElementInColumn == 1 %}
+        <div class="row team margin-bottom-10">
+          {% endif %}
+          <!-- TEAM MEMBER -->
+          <div class="col-md-2 col-sm-4 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
+            <a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
+              <span><img class="img-responsive" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
+              <span>{{member.name}}</span>
+            </a>
+          </div>
+          <!-- MODAL CLASS -->
+          <div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog profile-window modal-window">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">x</span>
+                    <span class="sr-only">Close</span>
+                  </button>
+                  <h3>
+                    {{member.name}}<br> <small>{{member.role}}</small>
+                  </h3>
+                </div>
+                <div class="modal-body">
+                  <p>
+                  <img class="img-responsive margin-bottom-30 profile-image" src="{{member.image | prepend: site.baseurl}}" alt="{{member.name}}">
+                  </p>
+                  {{member.fullDescription}}
+                  <ul class="list-unstyled list-inline team-socail">
+                    <li>
+                      <a href="http://twitter.com/{{member.twitter}}">
+                        <i class="fa fa-twitter fa-3x"></i>
+                      </a>
+                    </li>
+                    {% if member.github != null %}
+                    <li>
+                      <a href="http://github.com/{{member.github}}">
+                        <i class="fa fa-github fa-3x"></i>
+                      </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% if currentElementInColumn == columnSize or elementsDisplayed == teamMembersSize %}
+          {% assign currentElementInColumn = 0 %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="margin-bottom-40">
+        <a id="ourculture"></a>
+        <div class="headline">
+          <h2>{% t company-our_culture.title  %}</h2>
+        </div>
+        {% t company-our_culture.subtitle %}
+      </div>
+      <div class="margin-bottom-40">
+        <a id="howwework"></a>
+        <div class="headline">
+          <h2>{% t company-how_we_work.title  %}</h2>
+        </div>
+        <p>{% t company-how_we_work.subtitle  %}</p>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="block-centered equalheight">
+              <i class="icon-heart icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-software_craftsmanship.title  %}</h3>
+              <p>{% t company-how_we_work-software_craftsmanship.subtitle  %}</p>		            
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-paper-plane icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-agile_and_lean.title %}</h3>
+              <p>{% t company-how_we_work-agile_and_lean.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-reload icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-continous_delivery.title %}</h3>
+              <p>{% t company-how_we_work-continous_delivery.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-control-forward icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-xp.title %}</h3>
+              <p>{% t company-how_we_work-xp.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-settings icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-devops.title %}</h3>
+              <p>{% t company-how_we_work-devops.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-screen-desktop icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-technology.title %}</h3>
+              <p>{% t company-how_we_work-technology.subtitle %}</p>			        
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <a id="contactus"></a>
+            <div class="headline">
+              <h2>{% t company-contact.title %}</h2>
+            </div>                        
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <!-- Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.422201900834!2d-0.1025175!3d51.5238156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50c8c7114f%3A0x6245fac5ecb52d7f!2sCodurance!5e0!3m2!1sen!2suk!4v1482344076628" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+            <!-- End Google Map -->
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <!-- Business Hours -->
+            <h3>{% t company-contact-form.title %}</h3>
+            <p>{% t company-contact-form.subtitle %}</p><br/>
+            <div class="row">
+              <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
+                <input type="hidden" name="_next" value="/aboutus/thanks"/>
+                <input type="hidden" name="_subject" value="Codurance Contact"/>
+                <div class="col-sm-6">
+                  <div class="input-group margin-bottom-10">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <textarea rows="5" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+                  <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
