@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cube Portfolio Documentation v3.4.2 | 12 December, 2015</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cube Portfolio Documentation v4.1.0 | 9 February, 2017</title>
     <meta name="description" content="Cube Portfolio Documentation">
     <meta name="keywords" content="Cube Portfolio Documentation">
 
@@ -116,6 +116,19 @@ jQuery(document).ready( function() {
 });
 &lt;/script&gt;
 </pre>
+
+                <p>As an alternative initialization, the options can be placed as a JSON object in the HTML data attributes for grid container:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;grid-container&quot; data-cbp-options='{&quot;rewindNav&quot;: false}'&gt;
+    &lt;div class=&quot;cbp-item&quot;&gt;
+        &lt;a href=&quot;#&quot; title=&quot;custom title 1&quot;&gt;
+            &lt;img src=&quot;path/to/img1&quot; alt=&quot;custom alt 1&quot; width=&quot;100%&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
             <h1><a name="options">Options</a></h1>
                 <p>
                     There are numerous options that can be added to configure Cube Portfolio behavior.
@@ -147,17 +160,17 @@ jQuery('#grid-container').cubeportfolio({
                     </tr>
 
                     <tr>
-                        <td>loadMore</td>
-                        <td>string that represent the elements in the document (DOM selector)</td>
-                        <td>''</td>
-                        <td>Define the wrapper for loadMore</td>
+                        <td><span style="color: #D66767">loadMore</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>This options is deprecated. Please use plugins.loadMore.selector option instead</td>
                     </tr>
 
                     <tr>
-                        <td>loadMoreAction</td>
-                        <td>'click' or 'auto'</td>
-                        <td>'click'</td>
-                        <td>How the loadMore functionality should behave. Load on click on the button or automatically when you scroll the pag</td>
+                        <td><span style="color: #D66767">loadMoreAction</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>This options is deprecated. Please use plugins.loadMore.action option instead</td>
                     </tr>
 
                     <tr>
@@ -413,7 +426,7 @@ jQuery('#grid-container').cubeportfolio({
                         </td>
                         <td>-</td>
                         <td>-</td>
-                        <td>This options is deprecated. Please use lightboxCounter option instead.</td>
+                        <td>This options is deprecated. Please use lightboxCounter option instead</td>
                     </tr>
                     <tr>
                         <td>
@@ -457,7 +470,7 @@ jQuery('#grid-container').cubeportfolio({
                         </td>
                         <td>-</td>
                         <td>-</td>
-                        <td>This options is deprecated. Please use singlePageCounter option instead.</td>
+                        <td>This options is deprecated. Please use singlePageCounter option instead</td>
                     </tr>
                     <tr>
                         <td>
@@ -491,9 +504,13 @@ jQuery('#grid-container').cubeportfolio({
                         <td>
                             singlePageCallback
                         </td>
-                        <td>function</td>
-                        <td>empty function</td>
-                        <td>Use this callback to update singlePage content. The callback will trigger after the singlePage popup will open. (@param url = the href attribute of the item clicked, @param element = the item clicked)</td>
+                        <td>
+                            function(url, element) { <br>
+                            // to update singlePage content use the following method: this.updateSinglePage(yourContent)<br>
+                            }
+                        </td>
+                        <td>null</td>
+                        <td>Use this callback to update singlePage content. The callback will trigger after the singlePage popup is open. (@param url = the href attribute of the item clicked, @param element = the item clicked)</td>
                     </tr>
                     <tr>
                         <td>
@@ -536,9 +553,34 @@ jQuery('#grid-container').cubeportfolio({
                         <td>
                             singlePageInlineCallback
                         </td>
-                        <td>function</td>
-                        <td>empty function</td>
-                        <td> Use this callback to update singlePage content. The callback will trigger after the singlePage popup will open. (@param url = the href attribute of the item clicked, @param element = the item clicked)</td>
+                        <td>
+                            function(url, element) { <br>
+                            // to update singlePage Inline content use the following method: this.updateSinglePageInline(yourContent) <br>
+                            }
+                        </td>
+                        <td>null</td>
+                        <td> Use this callback to update singlePage content. The callback will trigger after the singlePage popup is open. (@param url = the href attribute of the item clicked, @param element = the item clicked)</td>
+                    </tr>
+
+                    <tr>
+                        <td>plugins.loadMore.selector</td>
+                        <td>string that represent the elements in the document (DOM selector)</td>
+                        <td>''</td>
+                        <td>Define the wrapper for loadMore</td>
+                    </tr>
+
+                    <tr>
+                        <td>plugins.loadMore.action</td>
+                        <td>'click' or 'auto'</td>
+                        <td>'click'</td>
+                        <td>How the loadMore functionality should behave. Load on click on the button or automatically when you scroll the page</td>
+                    </tr>
+
+                    <tr>
+                        <td>plugins.loadMore.loadItems</td>
+                        <td>only integers (e.g. 2, 3, 10)</td>
+                        <td>3</td>
+                        <td>How many items to load when you click on the loadMore button</td>
                     </tr>
 
                 </table>
@@ -927,7 +969,7 @@ jQuery('#grid-container').cubeportfolio({
 
             <h1><a name="api">API</a></h1>
                 <p>
-                    Cube Portfolio has 5 methods to use for external control: <span class="tinycode">init</span>, <span class="tinycode">destroy</span>, <span class="tinycode">filter</span>, <span class="tinycode">showCounter</span> and <span class="tinycode">appendItems</span>
+                    Cube Portfolio has several public API methods to use for external control.
                     For every callbackFunction <span class="tinycode">this</span> keyword refers to Cube Portfolio instance.
                 </p>
 
@@ -975,13 +1017,13 @@ jQuery("#grid-container").cubeportfolio('showCounter', filterSelector, callbackF
 
             <br>
             <h4>5. Append new items to plugin</h4>
-            <p> Append new items will append the content to the gird, filter the new content, then will rearange all item elements to a properly layout.</p>
+            <p>Append the <span class="tinycode">htmlContent</span> to the grid, filter the new content, then will rearange all item elements to a properly layout.</p>
 <pre class="prettyprint lang-js linenums">
 // htmlContent - your HTML content
-jQuery("#grid-container").cubeportfolio('appendItems', htmlContent);
+jQuery("#grid-container").cubeportfolio('append', htmlContent);
 
 // with callback function
-jQuery("#grid-container").cubeportfolio('appendItems', htmlContent, callbackFunction);
+jQuery("#grid-container").cubeportfolio('append', htmlContent, callbackFunction);
 </pre>
 
             <p>A typical <span class="tinycode">htmlContent</span> can look like this:</p>
@@ -989,6 +1031,34 @@ jQuery("#grid-container").cubeportfolio('appendItems', htmlContent, callbackFunc
 var htmlContent = '&lt;div class=&quot;logo cbp-item&quot;&gt;my awesome content to append to plugin&lt;/div&gt; &lt;div class=&quot;logo cbp-item&quot;&gt;my second awesome content to append to plugin&lt;/div&gt;';
 </pre>
             <p><strong>Note:</strong> Don't forget to add class <span class="tinycode">.cbp-item</span> to your <span class="tinycode">div</span> element</p>
+
+            <br>
+            <h4>6. Prepend new items to plugin</h4>
+            <p> Prepend method works similar with the above <span class="tinycode">append</span> method, the only difference is that the <span class="tinycode">htmlContent</span> is inserted and the start of the grid.</p>
+<pre class="prettyprint lang-js linenums">
+// htmlContent - your HTML content
+jQuery("#grid-container").cubeportfolio('prepend', htmlContent);
+
+// with callback function
+jQuery("#grid-container").cubeportfolio('prepend', htmlContent, callbackFunction);
+</pre>
+
+
+            <br>
+            <h4>7. Remove items from the CubePortfolio instance and DOM</h4>
+<pre class="prettyprint lang-js linenums">
+// items - jQuery DOM Object of the items you want to remove
+jQuery("#grid-container").cubeportfolio('remove', items);
+
+// with callback function
+jQuery("#grid-container").cubeportfolio('remove', items, callbackFunction);
+</pre>
+
+            <p>To remove the first item in the grid you can use it like this:</p>
+<pre class="prettyprint lang-js linenums">
+var grid = jQuery("#grid-container");
+grid.cubeportfolio('remove', grid.find('.cbp-item').first());
+</pre>
 
             <br>
             <h3>Event Emitter</h3>
@@ -1013,18 +1083,19 @@ jQuery("#grid-container").off('updateSinglePageComplete.cbp');
                     <li><span class="tinycode">initComplete.cbp</span> (the plugin is initialized)</li>
                     <li><span class="tinycode">pluginResize.cbp</span> (the plugin height change)</li>
                     <li><span class="tinycode">filterComplete.cbp</span> (a filter trigger is finished)</li>
+                    <li><span class="tinycode">onAfterLoadMore.cbp</span> (fired after the loadMore functionality is executed)</li>
                 </ul>
             </p>
 
 
             <h1><a name="loadMoreItems">Load More Items</a></h1>
                 <p>
-                    You can use load more feature using public API method <span class="tinycode">appendItems</span>.
+                    You can use load more feature using public API method <span class="tinycode">append</span>.
                 </p>
 <pre class="prettyprint lang-js linenums">
 // ... after cubeportfolio initialization
-// basic load more items using public method `appendItems`
-jQuery("#grid-container").cubeportfolio('appendItems', '&lt;div class=&quot;logo cbp-item&quot;&gt;my awesome content to append to plugin&lt;/div&gt; &lt;div class=&quot;logo cbp-item&quot;&gt;my second awesome content to append to plugin&lt;/div&gt;');
+// basic load more items using public method `append`
+jQuery("#grid-container").cubeportfolio('append', '&lt;div class=&quot;logo cbp-item&quot;&gt;my awesome content to append to plugin&lt;/div&gt; &lt;div class=&quot;logo cbp-item&quot;&gt;my second awesome content to append to plugin&lt;/div&gt;');
 </pre>
                 <p>For more advanced examples please go to templates/juicy-projects/index.html path and check the HTML and JS markup.</p>
 
@@ -1035,6 +1106,107 @@ jQuery("#grid-container").cubeportfolio('appendItems', '&lt;div class=&quot;logo
                 </p>
 
             <h1><a name="change-log">Change Log</a></h1>
+                <h4>v4.1.0 - 9 February, 2017</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - improved the loadMore feature performance</li>
+                    <li>[FEATURE] - added support for loadMore under filter selection</li>
+                    <li>[FEATURE] - added counter for the remaining items under loadMore</li>
+                    <li>[FEATURE] - improve singlePage animation performance</li>
+                    <li>[FEATURE] - added plugins.loadMore.loadItems option the set how many items to load on one round</li>
+                    <li>[FEATURE] - the .cbp-loadBlocks containers from the loadMore.html files are now unnecessary</li>
+                    <li>[FEATURE] - loadMore & loadMoreAction options are deprecared. Use plugins.loadMore.selector & plugins.loadMore.action options instead</li>
+                    <li>[BUG FIXED] - singlePageInline close action when I have a filter selected differently than 'All.'</li>
+                </ul>
+
+                <h4>v4.0.0 - 4 January, 2017</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - added svelte tool support to strip the unused features</li>
+                    <li>[FEATURE] - optimize CSS code</li>
+                    <li>[BUG FIXED] - fix singlePageInline animation</li>
+                </ul>
+
+                <h4>v3.9.0 - 9 December, 2016</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - gapHorizontal & gapVertical support for mediaQueries</li>
+                    <li>[FEATURE] - improved the animation performance for caption and filters</li>
+                    <li>[BUG FIXED] - fix layout for mobile devices</li>
+                </ul>
+
+                <h4>v3.8.1 - 25 November, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - slider error in singlePage after resize</li>
+                    <li>[BUG FIXED] - lazyLoad on initial loading</li>
+                    <li>[BUG FIXED] - gallery position for ie11</li>
+                    <li>[BUG FIXED] - support for youtu.be shorturl</li>
+                    <li>[BUG FIXED] - small css issues</li>
+                </ul>
+
+                <h4>v3.8.0 - 19 September, 2016</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - support to hide the caption on certain widths</li>
+                    <li>[FEATURE] - added onAfterLoadMore.cbp public event</li>
+                    <li>[BUG FIXED] - singlePageInline position fix for masonry layout</li>
+                </ul>
+
+                <h4>v3.7.1 - 28 June, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - prevent page jumping after closing singlePageInline</li>
+                    <li>[BUG FIXED] - ie8/ie9 scroll issue for singlePage</li>
+                    <li>[BUG FIXED] - singlePageInline position for masonry layout</li>
+                </ul>
+
+                <h4>v3.7.0 - 6 June, 2016</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - replace font-awesome to svg icons</li>
+                    <li>[BUG FIXED] - NEXT/PREV/ESC keys for lightbox & singlePage when both are open</li>
+                </ul>
+
+                <h4>v3.6.2 - 27 April, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - singlePageInlinePosition `below` option</li>
+                </ul>
+
+                <h4>v3.6.1 - 26 April, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - destroy public API method when grid doesn't have items or .cbp-item is empty</li>
+                    <li>[BUG FIXED] - singlePageInlinePosition `above` option</li>
+                    <li>[BUG FIXED] - fix auto loadMore & lazyLoad after `destroy` call</li>
+                    <li>[BUG FIXED] - fix lazyLoad when you change filters</li>
+                    <li>[BUG FIXED] - detect images srcset attribute</li>
+                    <li>[BUG FIXED] - small fixes for the documentation file</li>
+                </ul>
+
+                <h4>v3.6.0 - 18 March, 2016</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - prepend, remove items public API</li>
+                    <li>[FEATURE] - appendItems public API renamed to append</li>
+                    <li>[FEATURE] - initialize the plugin from data attribute</li>
+                    <li>[BUG FIXED] - reset filters active class after search is used</li>
+                </ul>
+
+                <h4>v3.5.2 - 11 February, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - social icons position</li>
+                </ul>
+
+                <h4>v3.5.1 - 30 January, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - singlePageInline prevent crash on double click</li>
+                </ul>
+
+                <h4>v3.5.0 - 30 January, 2016</h4>
+                <ul class="lists">
+                    <li>[FEATURE] - added social buttons to singlePage and singlePageInline</li>
+                    <li>[BUG FIXED] - updateSinglePageStart event emitter fix</li>
+                    <li>[BUG FIXED] - double click on singlePageInline items</li>
+                </ul>
+
+                <h4>v3.4.3 - 6 January, 2016</h4>
+                <ul class="lists">
+                    <li>[BUG FIXED] - firefox center lightbox images</li>
+                    <li>[BUG FIXED] - improve singlePage popup behavior</li>
+                </ul>
+
                 <h4>v3.4.2 - 12 December, 2015</h4>
                 <ul class="lists">
                     <li>[BUG FIXED] - singlePage animation improved</li>
@@ -1179,7 +1351,7 @@ jQuery("#grid-container").cubeportfolio('appendItems', '&lt;div class=&quot;logo
                     <li>[BUG FIXED] - stop filters action when grid is loading</li>
                     <li>[BUG FIXED] - open full screen videos for singlePageInline</li>
                     <li>[BUG FIXED] - singlePage deeplinking can create duplicates in href</li>
-                    <li>[BREAKING CHANGE] - removed `fadeIn` (displayType) option</li>
+                    <li>[BREAKING CHANGE] - removed `lazyLoading` (displayType) option</li>
                     <li>[BREAKING CHANGE] - removed `boxShadow` (animationType) option</li>
                 </ul>
 
@@ -1287,6 +1459,5 @@ jQuery("#grid-container").cubeportfolio('appendItems', '&lt;div class=&quot;logo
 
     <!-- load main.js -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
