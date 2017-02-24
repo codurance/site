@@ -6,7 +6,6 @@ gem 'rake'
 
 gem 'builder'
 gem 'github-pages'
-gem 'jekyll-less'
 gem 'jekyll-tagging'
 gem 'jekyll-redirect-from'
 gem 'therubyracer' # undeclared dependency of jekyll-less

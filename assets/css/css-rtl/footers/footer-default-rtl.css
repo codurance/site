@@ -13,10 +13,10 @@
 .footer-default .footer p,
 .footer-default .footer a {
 	font-size: 14px;
-} 
+}
 .footer-default .footer p {
 	color: #dadada;
-} 
+}
 
 .footer-default .footer a {
 	color: #72c02c;
@@ -29,7 +29,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.footer-default .footer h2, 
+.footer-default .footer h2,
 .footer-default .footer h3,
 .footer-default .footer h4 {
 	color: #e4e4e4;
@@ -37,8 +37,8 @@
 	text-shadow: none;
 }
 
-/*Footer Subsribe*/
-.footer-default .footer .footer-subsribe {
+/*Footer subscribe*/
+.footer-default .footer .footer-subscribe {
 	width: 85%;
 }
 
@@ -52,7 +52,7 @@
 
 .footer-default .footer .blog-list li {
 	padding: 0 0;
-	margin-bottom: 7px; 
+	margin-bottom: 7px;
 }
 .footer-default .footer .blog-list li span {
 	color: #818488;
