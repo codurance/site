@@ -239,3 +239,12 @@
   twitter: panavtec
   github: panavtec
 
+- id: david_hall
+  name: David Hall
+  image: /assets/img/custom/team/david_hall.jpg
+  role: Business Development
+  fullDescription:
+    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
+    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
+    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
+  twitter: davidgrhall
