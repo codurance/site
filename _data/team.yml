@@ -259,3 +259,14 @@
     <p>He embraces the Software Craftsmanship ideas and aspires to become a Software Craftsman.</p>
   twitter: raffellinic
   github: charlyraffellini
+
+- id: francesco
+  name: Francesco Gigli
+  image: /assets/img/custom/team/francesco_gigli.jpg
+  role: Software Craftman
+  fullDescription:
+    <p>Francesco is an all-round Web Engineer with a passion for collaboration, ideation and visualization.</p>
+    <!--p>Over the last 10 years I've created and administrated virtualization clusters and shaped Web Applications from the user interaction and interface design down to the database and networking. I've installed, configured and managed Juniper network appliances and practised Agile Development. I fell in love with the DevOps movement and D3js.</p>
+    <p>In 2012 I moved from Italy to London in search of new opportunities.</p-->
+  twitter: jaramir
+  github: jaramir
