@@ -276,8 +276,8 @@
   image: /assets/img/custom/team/francesco_gigli.jpg
   role: Software Craftman
   fullDescription:
-    <p>Francesco's career changed dramatically when he arrived in London in the summer of 2012. From his simple beginning as a Software Developer and System Administrator he embraced continuous learning and improvement, XP, DevOps, Self Organisation, and Software Craftsmanship. He learned and adopted new technologies and patterns like EventSourcing, Scala, React, and ES6. He started attending Open Conferences like SoCraTes and DevOpsDays.</p>
-    <p>The two most most treasured learnings, so far, have been the need for a mutual learning mindset for effective teamwork from <a href="//twitter.com/Jtf">Jeffrey Fredrick</a>, and the ubiquity of trade-offs from <a href="//twitter.com/TotherAlistair">Alistair Cockburn</a>.</p>
+    <p>Francesco's career changed dramatically when he arrived in London&colon; from his simple beginning as a Software Developer and System Administrator he embraced continuous learning and improvement, XP, DevOps, Self Organisation, and Software Craftsmanship. He learned and adopted new technologies and patterns like EventSourcing, Scala, React, and ES6. He started attending Open Conferences like SoCraTes and DevOpsDays.</p>
+    <p>The two most most treasured learnings, so far, have been the need for a Mutual Learning mindset for effective teamwork and the ubiquity of trade-offs.</p>
     <p>Some things have remained the same&colon; the desire to understand the behaviour of systems, the fearless crossing of system boundaries and responsibilities, and the love for good design and usable interfaces.</p>
   twitter: jaramir
   github: jaramir
