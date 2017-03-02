@@ -265,8 +265,8 @@
   image: /assets/img/custom/team/francesco_gigli.jpg
   role: Software Craftman
   fullDescription:
-    <p>Francesco is an all-round Web Engineer with a passion for collaboration, ideation and visualization.</p>
-    <!--p>Over the last 10 years I've created and administrated virtualization clusters and shaped Web Applications from the user interaction and interface design down to the database and networking. I've installed, configured and managed Juniper network appliances and practised Agile Development. I fell in love with the DevOps movement and D3js.</p>
-    <p>In 2012 I moved from Italy to London in search of new opportunities.</p-->
+    <p>Francesco's career changed dramatically when he arrived in London in the summer of 2012. From his simple beginning as a Software Developer and System Administrator he embraced continuous learning and improvement, XP, DevOps, Self Organisation, and Software Craftsmanship. He learned and adopted new technologies and patterns like EventSourcing, Scala, React, and ES6. He started attending Open Conferences like SoCraTes and DevOpsDays.</p>
+    <p>The two most most treasured learnings, so far, have been the need for a mutual learning mindset for effective teamwork from <a href="https://twitter.com/Jtf">Jeffrey Fredrick (@Jtf), and the ubiquity of trade-offs from <a href="https://twitter.com/TotherAlistair">Alistair Cockburn</a>.</p>
+    <p>Some things have remained the same: the desire to understand the behaviour of systems, the fearless crossing of system bonduaries and responsabilities, and the love for good design and usable interfaces.</p>
   twitter: jaramir
   github: jaramir
