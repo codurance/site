@@ -25,6 +25,8 @@ Note: this should take a bit of time to install the gems.
 
 If you are using RVM, you should create a *gh-pages* gemset first using the command `rvm gemset create gh-pages`, which will help you isolate your gems from your standard Ruby installation; you should then run `rvm gemset use gh-pages` when you start a new terminal session.
 
+In case of other problems, refer to the [troubleshooting section](#troubleshooting-section).
+
 ## Building
 
 To build the site, run `rake build` or `jekyll serve` from the root directory of the project. You will not often have to do this manually; more often, you'll want a server in the background so you can verify your changes are as expected.
@@ -95,3 +97,26 @@ If you want to push code without deploying a new version of the site, make sure 
   * Do not forget the attribute `video-url`, for youtube videos, use following format: https://www.youtube.com/embed/<video-id>
   * Add an image to the video, for youtube videos, make a screenshot [here](http://youtubescreenshot.com/), the image is used on the home page and the carousel. The image is to be saved under `/assets/img/custom/videos/`
 
+# Troubleshooting section
+
+## Header files for ruby not found
+
+This problem happens with Linux systems: 
+
+```
+header files for ruby at /usr/lib/ruby/include/ruby.h not found
+```
+
+in case `ruby-dev` package is not installed:
+
+```
+sudo apt-get install ruby-dev
+```
+
+## extconf.rb failed
+
+`zlib` is necessary for building `libxml2`:
+
+```
+sudo apt-get install zlib1g-dev
+```

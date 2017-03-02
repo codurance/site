@@ -260,13 +260,24 @@
   twitter: raffellinic
   github: charlyraffellini
 
+- id: armanda
+  name: Armanda du Plessis
+  image: /assets/img/custom/team/armanda_du_plessis.jpg
+  role: Apprentice
+  fullDescription: >
+    <p>Armanda has worked as a programmer, software designer, web developer and freelance consultant across a variety of industries, in both South Africa and the UK.</p>
+    <p>Her career has been a curious journey of constant learning and improvement. She has broad technical knowledge, is a creative thinker with an inquisitive mind and loves solving problems. </p>
+    <p>She is drawn to the passions and values of software craftsmanship and fully believes in its enlightened culture.</p>
+  twitter: missarmiej
+  github: missarmiej
+
 - id: francesco
   name: Francesco Gigli
   image: /assets/img/custom/team/francesco_gigli.jpg
   role: Software Craftman
   fullDescription:
     <p>Francesco's career changed dramatically when he arrived in London in the summer of 2012. From his simple beginning as a Software Developer and System Administrator he embraced continuous learning and improvement, XP, DevOps, Self Organisation, and Software Craftsmanship. He learned and adopted new technologies and patterns like EventSourcing, Scala, React, and ES6. He started attending Open Conferences like SoCraTes and DevOpsDays.</p>
-    <p>The two most most treasured learnings, so far, have been the need for a mutual learning mindset for effective teamwork from <a href="https://twitter.com/Jtf">Jeffrey Fredrick (@Jtf), and the ubiquity of trade-offs from <a href="https://twitter.com/TotherAlistair">Alistair Cockburn</a>.</p>
+    <p>The two most most treasured learnings, so far, have been the need for a mutual learning mindset for effective teamwork from <a href="https://twitter.com/Jtf">Jeffrey Fredrick</a>, and the ubiquity of trade-offs from <a href="https://twitter.com/TotherAlistair">Alistair Cockburn</a>.</p>
     <p>Some things have remained the same: the desire to understand the behaviour of systems, the fearless crossing of system bonduaries and responsabilities, and the love for good design and usable interfaces.</p>
   twitter: jaramir
   github: jaramir
