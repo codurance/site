@@ -259,3 +259,14 @@
     <p>He embraces the Software Craftsmanship ideas and aspires to become a Software Craftsman.</p>
   twitter: raffellinic
   github: charlyraffellini
+
+- id: armanda
+  name: Armanda du Plessis
+  image: /assets/img/custom/team/armanda_du_plessis.jpg
+  role: Apprentice Software Craftswoman
+  fullDescription: >
+    <p>Armanda has worked as a programmer, software designer, web developer and freelance consultant across a variety of industries, in both South Africa and the UK.</p>
+    <p>Her career has been a curious journey of constant learning and improvement. She has broad technical knowledge, is a creative thinker with an inquisitive mind and loves solving problems. </p>
+    <p>She is drawn to the passions and values of the software craftsman and fully believes in its enlightened culture.</p>
+  twitter: missarmiej
+  github: missarmiej
