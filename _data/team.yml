@@ -270,3 +270,16 @@
     <p>She is drawn to the passions and values of software craftsmanship and fully believes in its enlightened culture.</p>
   twitter: missarmiej
   github: missarmiej
+
+- id: rachel
+  name: Raquel M. Carmena
+  image: /assets/img/custom/team/raquel_m_carmena.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Raquel discovered her profession when she was 12 years old, when enjoying with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data are stored in a diskette among other things.</p>
+    <p>She finds it very difficult to choose one subject in her profession, because she enjoys with any new technical challenge.</p>
+    </p>Consequently, she has been participating in different projects, technologies and trades for more than ten years. She "feeds" on business and personal values from her software products, services and ideas.</p>
+    <p>She is a constant apprentice who strives for common sense, pragmatism and simplicity.</p>
+    <p>She enjoys sharing her knowledge and learning from others.</p>
+  twitter: bberrycarmen
+  github: rachelcarmena
