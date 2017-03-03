@@ -283,3 +283,14 @@
     <p>She enjoys sharing her knowledge and learning from others.</p>
   twitter: bberrycarmen
   github: rachelcarmena
+
+- id: francesco
+  name: Francesco Gigli
+  image: /assets/img/custom/team/francesco_gigli.jpg
+  role: Software Craftman
+  fullDescription:
+    <p>Francesco started in Italy as a Software Developer and System Administrator and his career changed dramatically when he arrived in London. He embraced DevOps, Self Organisation, and Software Craftsmanship. He implemented systems using Event Sourcing and React. He attends Open Conferences like SoCraTes and DevOpsDays.</p>
+    <p>The two most important learnings, so far, have been the need for a Mutual Learning mindset for effective teamwork and the ubiquity of trade-offs.</p>
+    <p>Some things have remained the same&colon; the desire to understand the behaviour of systems, the fearless crossing of system boundaries and responsibilities, and the love for good design and usable interfaces.</p>
+  twitter: jaramir
+  github: jaramir
