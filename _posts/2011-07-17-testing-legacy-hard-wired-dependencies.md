@@ -16,24 +16,24 @@ Let's look at this piece of code:
 
 ```
 public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
-        List<Trip> tripList = new ArrayList<Trip>();
-        User loggedUser = UserSession.getInstance().getLoggedUser();
-        boolean isFriend = false;
-        if (loggedUser != null) {
-            for (User friend : user.getFriends()) {
-                if (friend.equals(loggedUser)) {
-                    isFriend = true;
-                    break;
-                }
+    List<Trip> tripList = new ArrayList<Trip>();
+    User loggedUser = UserSession.getInstance().getLoggedUser();
+    boolean isFriend = false;
+    if (loggedUser != null) {
+        for (User friend : user.getFriends()) {
+            if (friend.equals(loggedUser)) {
+                isFriend = true;
+                break;
             }
-            if (isFriend) {
-                tripList = TripDAO.findTripsByUser(user);
-            }
-            return tripList;
-        } else {
-            throw new UserNotLoggedInException();
         }
+        if (isFriend) {
+            tripList = TripDAO.findTripsByUser(user);
+        }
+        return tripList;
+    } else {
+        throw new UserNotLoggedInException();
     }
+}
 ```
 
 Horrendous, isn't it? The code above has loads of problems, but before
@@ -137,7 +137,7 @@ private TripService createTripService() {
         protected List<Trip> findTripsByUser(User user) {
             return user.trips();
         }
-    };
+    }
 }
 ```
 
@@ -196,7 +196,7 @@ public class TripServiceTest {
             protected List<Trip> findTripsByUser(User user) {
                 return user.trips();
             }
-        };
+        }
     }
 }
 ```
