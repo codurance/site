@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: post
 name: testing-legacy-hard-wired-dependencies
 title: "Testing legacy: Hard-wired dependencies (part 1)"
-date: 2011-07-17 00:42:00 +01:00
+date: 2011-07-16 00:42:00
 ---
 
 When pairing with some developers, I've
@@ -14,7 +14,7 @@ problems. The most common one is related to hard-wired dependencies -
 
 Let's look at this piece of code:
 
-{% highlight java %}
+```
 public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
         List<Trip> tripList = new ArrayList<Trip>();
         User loggedUser = UserSession.getInstance().getLoggedUser();
@@ -34,7 +34,7 @@ public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
             throw new UserNotLoggedInException();
         }
     }
-{% endhighlight %}
+```
 
 Horrendous, isn't it? The code above has loads of problems, but before
 we change it, we need to have it covered by tests.
@@ -42,16 +42,16 @@ we change it, we need to have it covered by tests.
 There are two challenges when unit testing the method above. They are:
 
 
-{% highlight java %}
+```
 User loggedUser = UserSession.getInstance().getLoggedUser(); // Line 3
 tripList = TripDAO.findTripsByUser(user);                    // Line 13
-{% endhighlight %}
+```
 
 As we know, unit tests should test just one class and not its
 dependencies. That means that we need to find a way to mock the
 Singleton and the static call. In general we do that injecting the
 dependencies, but we have a
-[rule](http://craftedsw.blogspot.com/2011/07/working-with-legacy-code.html),
+[rule]({{site.baseurl}}/2011/07/03/working-with-legacy-code),
 remember?
 
 We can't change any existing code if not covered by tests. The only
@@ -74,52 +74,51 @@ automated "extract method" refactoring. Select just the following piece
 of code on TripService.java:
 
 
-{% highlight java %}
+```
 UserSession.getInstance().getLoggedUser()
-{% endhighlight %}
+```
 
 
 Go to your IDE's refactoring menu, choose extract method and give it a
-name. After this step, the code will look like that:
+name. After this step, the code will look like the following:
 
-
-{% highlight java %}
+```
 public class TripService {
     public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
         ...
         User loggedUser = loggedUser();
-        ...  
+        ...
     }
-
+   
     protected User loggedUser() {
         return UserSession.getInstance().getLoggedUser();
     }
 }
-{% endhighlight %}
+```
 
 
 Doing the same thing for TripDAO.findTripsByUser(user), we will have:
 
 
-{% highlight java %}
+```
 public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
-        ...
-        User loggedUser = loggedUser();
-        ...
-        if (isFriend) {
-            tripList = findTripsByUser(user);
-        }
-        ...
+    ...
+    User loggedUser = loggedUser();
+    ...
+    if (isFriend) {
+        tripList = findTripsByUser(user);
     }
+    ...
+}
 
-    protected List<Trip> findTripsByUser(User user) {
-        return TripDAO.findTripsByUser(user);
-    }
+protected List<Trip> findTripsByUser(User user) {
+    return TripDAO.findTripsByUser(user);
+}
 
-    protected User loggedUser() {
-        return UserSession.getInstance().getLoggedUser();
-    }
-{% endhighlight %}
+protected User loggedUser() {
+    return UserSession.getInstance().getLoggedUser();
+}
+```
 
 
 In our test class, we can now extend the TripService class and override
@@ -127,21 +126,20 @@ the protected methods we created, making them return whatever we need
 for our unit tests:
 
 
-{% highlight java %}
+```
 private TripService createTripService() {
-        return new TripService() {
-            @Override
-            protected User loggedUser() {
-                return loggedUser;
-            }
-
-            @Override
-            protected List<Trip> findTripsByUser(User user) {
-                return user.trips();
-            }
-        };
-    }
-{% endhighlight %}
+    return new TripService() {
+        @Override
+        protected User loggedUser() {
+            return loggedUser;
+        }
+        @Override
+        protected List<Trip> findTripsByUser(User user) {
+            return user.trips();
+        }
+    };
+}
+```
 
 
 And this is it. Our TripService is now testable.
@@ -156,7 +154,7 @@ existing code. It helps a lot.
 So here is the my final test class:
 
 
-{% highlight java %}
+```
 public class TripServiceTest {
     private static final User UNUSED_USER = null;
     private static final User NON_LOGGED_USER = null;
@@ -194,7 +192,6 @@ public class TripServiceTest {
             protected User loggedUser() {
                 return loggedUser;
             }
-
             @Override
             protected List<Trip> findTripsByUser(User user) {
                 return user.trips();
@@ -202,7 +199,7 @@ public class TripServiceTest {
         };
     }
 }
-{% endhighlight %}
+```
 
 ###Are we done?
 
