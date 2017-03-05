@@ -19,17 +19,17 @@ Every morning, Sandro shakes hands with everyone when he arrives at the office. 
 
 I’ve known all about the economic situation of the company, included salaries and salary reviews. This is an amazing example of transparency at all levels. 
 
-## No offices, no assigned places
+## No personal offices, no assigned places
 
-There are not independent offices, neither assigned places. An open space where you can sit wherever you want. This issue “breaks” both the attachment of a place and the separation between roles.
+There are neither personal offices nor assigned places. There's only an open space where you can sit wherever you want. This approach “breaks” both the attachment to a place and the separation between roles.
 
 ## Learning and friendly atmosphere
 
-Skillshare meeting are organized continuously in a natural way and in a friendly atmosphere. 
+Knowledge-sharing meetings are organized continuously in a natural way and in a friendly atmosphere. 
 
 ## Having a buddy
 
-It’s the first time I have a buddy designated to help me for my first days in a company. Not only he has got I feel “at home” in few minutes and he has been worried about my convenience, but also he has taught me a lot of things for this week (technical ones, time management, acquiring skills and a big amount of advices and smiles). 
+It’s the first time I had a _buddy_ designated to help me in my first days in a company. My buddy not only provided me with a "feel at home” feeling as soon as I arrived but also was worried about my convenience—I had just arrived from Spain to spend the whole month in London. He has also taught me a lot of things during my first week including technical skills, time management, how to acquire new skills, gave me loads of advices and smiles. 
 
 ## Having a mentor
 
