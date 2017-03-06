@@ -13,11 +13,11 @@ tags:
 ---
 ## Respect
 
-Every morning, Sandro shakes hands with everyone when he arrives at the office. Everyday, everyone. I haven’t seen something similar in any company I’ve worked and it’s an incredible example of respect and consideration.
+Every morning, Sandro shakes hands with everyone when he arrives at the office. Everyday, everyone. I haven’t seen something similar in any company I’ve worked in and it’s an incredible example of respect and consideration.
 
 ## Transparency
 
-I’ve known all about the economic situation of the company, included salaries and salary reviews. This is an amazing example of transparency at all levels. 
+Everyone knows all about the economic situation of the company, included salaries and salary reviews. This is an amazing example of transparency at all levels. 
 
 ## No personal offices, no assigned places
 
@@ -29,10 +29,10 @@ Knowledge-sharing meetings are organized continuously in a natural way and in a 
 
 ## Having a buddy
 
-It’s the first time I had a _buddy_ designated to help me in my first days in a company. My buddy not only provided me with a "feel at home” feeling as soon as I arrived but also was worried about my convenience—I had just arrived from Spain to spend the whole month in London. He has also taught me a lot of things during my first week including technical skills, time management, how to acquire new skills, gave me loads of advices and smiles. 
+It’s the first time I had a _buddy_ designated to help me in my first days in a company. My buddy not only provided me with a "feel at home” feeling as soon as I arrived but also was worried about my convenience—I had just arrived from Spain to spend the whole month in London. He has also taught me a lot of things during my first week including technical skills, time management, how to acquire new skills, and gave me loads of advices and smiles. 
 
 ## Having a mentor
 
-I’ve found a mentor in previous companies, but never about technical skills and with a plan of skills acquisition. Now I have an amazing person (technically and personally) designated to help me with my apprenticeship. I have no words to describe what he provided me for the first session during this week. 
+I have found a mentor in previous companies, but never about technical skills and with a plan of skills acquisition. Now I have an amazing person (technically and personally) designated to help me with my apprenticeship. I have no words to describe how much he has done for me during the week. 
 
-I’m living a dream and I hope not to wake up. Thanks for existing!
+I’m living a dream and I hope I don't wake up. Thanks for having me!
