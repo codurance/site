@@ -1,3 +1,7 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 /* --------------------------------------
    Layout
    -------------------------------------- */
@@ -10,10 +14,12 @@
 
 /* Section colours */
 
+$solid-one-px-thick-yellow: solid 1px #eee;
+
 .gray-section {
     background: #fafafa;
-    border-top: solid 1px #eee;
-    border-bottom: solid 1px #eee;
+    border-top: $solid-one-px-thick-yellow;
+    border-bottom: $solid-one-px-thick-yellow;
 }
 
 /* Foreground colours */
