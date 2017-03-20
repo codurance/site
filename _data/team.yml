@@ -66,37 +66,12 @@
   twitter: anainogal
   github: ananogal
 
-- id: franzi
-  name: Franziska Sauerwein
-  image: /assets/img/custom/team/franzi_sauerwein.jpg
-  role: Software Craftswoman
-  fullDescription: <p>Franziska has worked as a software developer and consultant for about five years in Germany and London. Her passions include Test Driven Development, Refactoring, XP techniques and high quality software development.  She is always trying to improve her skills and share knowledge.</p> <p>As an active member of the European Software Craftsmanship community she loves to participate in unconferences and organizes code retreats, hackathons, coding dojos as well as tech talks.  She aims to use her skills and creativity to develop software that is reliable, easy to adapt and doing what it is supposed to do.</p>
-  twitter: singsalad
-  github: franziskas
-
 - id: anacelli
   name: Ana Rita Marchina
   image: /assets/img/custom/team/ana_celli.jpg
   role: Marketing Exec / Office Manager
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
-
-- id: tomaz
-  name: Tomaz Tekavec
-  image: /assets/img/custom/team/tomaz_tekavec.jpg
-  role: Software Craftsman
-  fullDescription: <p>Tomaz is a member of London Software Craftsmanship Community, and an advocate of eXtreme Programming and Agile methodologies.  Tomaz has over 18 years of experience as a software professional. During his career, he has developed and managed software solutions for many sectors including&#58; banks, hedge funds, clinical biophysics, pharmacy, digital media agencies, government institutions, and NGOs. He works closely with&#58; the business users—creating and refining the product backlog, the development team—helping create and operate a quality product, the individual developers—learning and mentoring to become more effective. Tomaz started his career with Java moving to .NET. He has recently developed an interest in Javascript and CSS.</p>
-  twitter: Tomaz_Tekavec
-  github: tekavec
-
-- id: mani
-  name: Mani Sarkar
-  image: /assets/img/custom/team/mani_sarkar.jpg
-  role: Software Craftsman
-  fullDescription: <p>Mani is a passionate developer. He has been an Associate for the  London Java Community for nearly 3 years. He is an advocate and contributor to Adopt OpenJDK project. He is an JCP member, and a contributor to OpenJDK. As a developer he has many years of experience working on a diverse set of projects. In his free time he likes to work on open-source projects, write blogs and speak at conferences. Mani strongly prescribes to the Software Craftsmanship and XP values. He works hard to better himself in practices such as TDD, BDD, Simple Design and Pair Programming.</p>
-  twitter: theNeomatrix369
-  github: neomatrix369
-  bitbucket: neomatrix369
 
 - id: alex
   name: Alessandro Di Gioia
