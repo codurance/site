@@ -2,4 +2,4 @@
 ---
 User-agent: *
 Disallow: 
-Sitemap: https://codurance.com/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
