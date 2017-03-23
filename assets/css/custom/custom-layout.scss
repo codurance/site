@@ -484,12 +484,6 @@ i.no-border {   /* 0 0 1 1 */
   }
 }
 
-.services {
-
-}
-
-
-
 .casestudy{
   &-logo {
     margin: 0 auto;
@@ -505,21 +499,34 @@ i.no-border {   /* 0 0 1 1 */
   }
 
   &-metaheader{
+    font-size: large;
     &:after {   /* 0 0 2 1 */
       bottom: -20px;
       left: 50%;
       height: 1px;
-      width: 400px;
+      width: 70px;
       content: " ";
-      margin-left: -200px;
+      margin-left: -35px;
       position: absolute;
       background: $orange-colour;
+    }
+  }
+
+&-outcome{
+    &:after {   /* 0 0 2 1 */
+      bottom: 20px;
+      height: 1px;
+      width: 100%;
+      content: " ";
+      position: absolute;
+      background: black;
     }
   }
 
   &-subheader { /* 0 0 1 0 */
     padding-top: 40px;
     padding-bottom: 40px;
+    font-size: large;
 
     & h2 { /* 0 0 1 1 */
       text-align: center;

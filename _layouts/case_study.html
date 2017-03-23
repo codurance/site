@@ -26,38 +26,56 @@ layout: default
   <div class="row ">
     <div class="col-md-12">
       <div class="margin-bottom-40">
-        <a id="howwegrow"></a>
         <div class="headline">
           <h2>{% t projects.about %} {{ page.identifier }} </h2>
         </div>
         {% t projects.{{ page.identifier }}.about %}
       </div>
       <div class="margin-bottom-40">
-        <a id="ourpeople"></a>
         <div class="headline">
           <h2>{% t projects.the_challenge %}</h2>
         </div>
         {% t projects.{{ page.identifier }}.the_challenge %}
       </div>
       <div class="margin-bottom-40">
-        <a id="apprentice-craftsmen"></a>
         <div class="headline">
           <h2>{% t projects.our_sc_approach %}</h2>
         </div>
         {% t projects.{{ page.identifier }}.our_sc_approach %}
       </div>
-      <div class="margin-bottom-40">
-        <a id="joiningcodurance"></a>
+      <div class="margin-bottom-40 casestudy-outcome">
         <div class="headline">
           <h2>{% t projects.outcome %}</h2>
         </div>
         {% t projects.{{ page.identifier }}.outcome %}
       </div>
     </div>
-    <div class="col-md-12 text-center">
-      <a href="mailto:info@codurance.com?subject=Call%20to%20Action" role="button" class="btn btn-u btn-more animated">
-        Call to action
-      </a>
     </div>
-  </div>
+      <div class="col-md-6 col-sm-offset-3">
+      <!-- Business Hours -->
+      <h3 class="text-center">{% t projects.contact-form.title %}</h3>
+      <p class="text-center">{% t projects.contact-form.subtitle %}</p><br/>
+      <div class="row">
+        <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
+          <input type="hidden" name="_next" value="/aboutus/thanks"/>
+          <input type="hidden" name="_subject" value="Codurance Contact"/>
+          <div class="col-sm-6">
+            <div class="input-group margin-bottom-10">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group margin-bottom-20">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <textarea rows="5" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+            <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+          </div>
+        </form>
+      </div>
+    </div>
 </div>
