@@ -11,7 +11,7 @@ if [[ "$FOLDER_NAME" != "site-master" ]]; then
   pip install shyaml
   export enUrl=$(cat _config.yml | shyaml get-value domains.en)
   export esUrl=$(cat _config.yml | shyaml get-value domains.es)
-  sed -i 's/$enUrl/$esUrl/g' ./_site/sitemap.xml
+  sed -i 's/${enUrl}/${esUrl}/g' ./_site/sitemap.xml
 else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
@@ -19,7 +19,7 @@ else
   pip install shyaml
   export enUrl=$(cat _config.yml | shyaml get-value domains.en)
   export esUrl=$(cat _config.yml | shyaml get-value domains.es)
-  sed -i 's/$esUrl/$enUrl/g' ./_site_es/sitemap.xml
+  sed -i 's/${esUrl}/${enUrl}/g' ./_site_es/sitemap.xml
 
 fi
 
