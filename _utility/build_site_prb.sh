@@ -8,7 +8,8 @@ if [[ "$FOLDER_NAME" != "site-master" ]]; then
   echo "baseurl: /$FOLDER_NAME" > _config_prb.yml
   cat _config_prb.yml
   rake buildenprb
-   export enUrl=$(cat _config.yml | shyaml domains.en)
+  pip install shyaml
+  export enUrl=$(cat _config.yml | shyaml domains.en)
   export esUrl=$(cat _config.yml | shyaml domains.es)
   sed -Ei '' 's/$snUrl/$enUrl/g' ./_site/sitemap.xml
 else
