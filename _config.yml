@@ -39,9 +39,9 @@ pagination:
   sort_reverse: true 
 
 gems:
+  - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate-v2
-  - jekyll-sitemap
   - jekyll-multiple-languages-plugin
 
 
