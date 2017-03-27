@@ -41,8 +41,9 @@ pagination:
 gems:
   - jekyll-redirect-from
   - jekyll-paginate-v2
-  - jekyll-multiple-languages-plugin
   - jekyll-sitemap
+  - jekyll-multiple-languages-plugin
+
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 
