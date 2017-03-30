@@ -7,19 +7,22 @@
 		<!-- End Logo -->
     <div class="topbar pull-right language-selector">
       <ul class="loginbar">
-        <li>
-          <i class="fa fa-globe"></i>
-          {% for lang in site.languages %}
-          {% if lang == site.lang %}
-          <span class="language"><strong>{{ lang }}</strong></span>
-          {% else %}
-          <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
-          {% endif %}
-          {% if forloop.last == false  %}
-          <span class="separator"> | </span>
-          {% endif  %}
-          {% endfor %}
-        </li>
+          <li>
+              <i class="fa fa-globe"></i>
+              {% for lang in site.languages %}
+              {% if lang == site.lang %}
+              <span class="language"><strong>{{ lang }}</strong></span>
+              {% else %}
+              <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
+              {% endif %}
+              {% if forloop.last == false  %}
+              <span class="separator"> | </span>
+              {% endif  %}
+              {% endfor %}
+          </li>
+          <li class="button">
+              <a href="{{ '/company/#contactus' | prepend: site.baseurl }}">{% t sections.contact %}</a>
+          </li>
       </ul>
     </div>
 		<!-- Toggle get grouped for better mobile display -->
@@ -39,7 +42,6 @@
 				<li><a href="{{ '/events' | prepend: site.baseurl }}">{% t sections.events %}</a></li>
 				<li><a href="{{ '/company' | prepend: site.baseurl }}">{% t sections.company %}</a></li>
 				<li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t sections.careers %}</a></li>
-				<li><a href="{{ '/company/#contactus' | prepend: site.baseurl }}">{% t sections.contact %}</a></li>
         {% for lang in site.languages %}
         {% if lang != site.lang %}
         <li class="language-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>
