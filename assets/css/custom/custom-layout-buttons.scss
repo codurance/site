@@ -36,6 +36,17 @@ $white-colour: #fff;
         }
     }
 
+    &-orange {  
+        background-color: transparent;
+        border: 1px solid $dark-orange-colour;
+        color: $dark-orange-colour;
+
+        &:hover {  
+            background-color: $orange-colour;
+            color: $white-colour;
+        }
+    }
+
     &:hover {  /* 0 0 2 0 */
         transition: .3s;
     }
