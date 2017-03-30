@@ -8,7 +8,7 @@ layout: default
       <a href="{{ '/projects' | prepend: site.baseurl }}"> Projects </a> > <a href="{{ page.url }}"> {{ page.identifier }} </a>
     </div>
     <div class="col-md-12 casestudy-logo">
-        <img src="{{ site.baseurl }}/assets/img/custom/case-study/asos.png" class="img-responsive bordered" alt="">
+        <img src="{{ site.baseurl }}/assets/img/custom/case-study/{{ page.identifier }}.png" class="img-responsive bordered" alt="">
     </div>
     <div class="col-md-12 casestudy-metaheader" style="text-align:center">
         {% t projects.{{ page.identifier }}.metaheader %}
