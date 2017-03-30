@@ -36,6 +36,17 @@ $white-colour: #fff;
         }
     }
 
+    &:hover {  /* 0 0 2 0 */
+        transition: .3s;
+    }
+}
+
+.btn-small {   
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px 10px;
+
     &-orange {  
         background-color: transparent;
         border: 1px solid $dark-orange-colour;
