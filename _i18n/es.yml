@@ -11,6 +11,7 @@ sections:
    events: Eventos
    company: Empresa
    careers: Carreras
+   contact: Contactanos
 index-banner:
    title: Pragmatismo, Habilidad, Transparencia.
    subtitle: En Codurance aportamos valor de manera continua mediante la elaboración de software excepcional.
