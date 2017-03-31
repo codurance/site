@@ -51,6 +51,9 @@ $white-colour: #fff;
         background-color: transparent;
         border: 1px solid $dark-orange-colour;
         color: $dark-orange-colour;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-left: 10px;
 
         &:hover {  
             background-color: $orange-colour;
@@ -58,7 +61,7 @@ $white-colour: #fff;
         }
     }
 
-    &:hover {  /* 0 0 2 0 */
+    &:hover {  
         transition: .3s;
     }
 }

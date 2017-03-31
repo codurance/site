@@ -6,24 +6,25 @@
 		</a>
 		<!-- End Logo -->
     <div class="topbar pull-right language-selector">
-      <ul class="loginbar">
-          <li>
-              <i class="fa fa-globe"></i>
-              {% for lang in site.languages %}
-              {% if lang == site.lang %}
-              <span class="language"><strong>{{ lang }}</strong></span>
-              {% else %}
-              <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
-              {% endif %}
-              {% if forloop.last == false  %}
-              <span class="separator"> | </span>
-              {% endif  %}
-              {% endfor %}
-          </li>
-          <li>
-              <a href="{{ '/company/#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-small btn-small-orange">{% t sections.contact %}</a>
-          </li>
-      </ul>
+        <ul class="loginbar">
+            <li>
+                <i class="fa fa-globe"></i>
+                {% for lang in site.languages %}
+                {% if lang == site.lang %}
+                <span class="language"><strong>{{ lang }}</strong></span>
+                {% else %}
+                <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
+                {% endif %}
+                {% if forloop.last == false  %}
+                <span class="separator"> | </span>
+                {% endif  %}
+                {% endfor %}
+            </li>
+            <li>
+                <div href="{{ '/company/#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-small btn-small-orange">{% t sections.contact %}</div>    
+            </li>
+        </ul>
+        
     </div>
 		<!-- Toggle get grouped for better mobile display -->
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
