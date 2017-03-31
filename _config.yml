@@ -39,10 +39,11 @@ pagination:
   sort_reverse: true 
 
 gems:
-  - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jekyll-paginate-v2
   - jekyll-multiple-languages-plugin
+
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 

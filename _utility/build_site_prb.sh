@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -eux
 FOLDER_NAME=$1
 
 echo "Building website for: $FOLDER_NAME"
@@ -12,5 +12,10 @@ else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
   rake buildenprb
+  pip install shyaml
+  export enUrl=$(cat _config.yml | shyaml get-value domains.en)
+  export esUrl=$(cat _config.yml | shyaml get-value domains.es)
+  sed -i "s#${enUrl}#${esUrl}#g" ./_site_es/sitemap.xml
+
 fi
 
