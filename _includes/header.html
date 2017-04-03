@@ -43,10 +43,10 @@
 				<li><a href="{{ '/events' | prepend: site.baseurl }}">{% t sections.events %}</a></li>
 				<li><a href="{{ '/company' | prepend: site.baseurl }}">{% t sections.company %}</a></li>
 			    <li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t sections.careers %}</a></li>
-                <li class="mobile-only-link-in-menu"><a href="{{ '/company/#contactus' | prepend: site.baseurl }}">{% t sections.contact %}</a></li>
         {% for lang in site.languages %}
         {% if lang != site.lang %}
-        <li class="mobile-only-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>
+        <li class="language-link-in-menu"><a href="{{ '/company/#contactus' | prepend: site.baseurl }}">{% t sections.contact %}</a></li>
+        <li class="language-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>
         {% endif %}
         {% endfor %}
 			</ul>
