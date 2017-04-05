@@ -18,7 +18,7 @@ tags:
 ---
 I recently completed my <a href="https://codurance.com/careers/">Apprentice-craftsmen Programme</a> at Codurance and as part of my graduation, I wanted to take a training course on something that had been on my ‘to do’ list for far too long!
 Skills Matter were hosting <a href="https://skillsmatter.com/courses/559-gojko-adzic-specification-by-example">Gojko Adzic’s “Specification by Example: From User Stories to Acceptance Test"</a> training course … taught by Gojko himself!
-It’s not every day that you get to meet Gojko - which is why I spent the best part of two weeks, prior to attending, reading and internalising two of his books: <a href="https://gojko.net/books/bridging-the-communication-gap/">“Bridging the Communication Gap”</a> and <a href="https://gojko.net/books/specification-by-example/">“Specification by Examples. How successful teams deliver the right Software”</a>.
+It’s not every day that you get to meet Gojko - which is why I spent the best part of two weeks, prior to attending, reading and internalising two of his books: <a href="https://gojko.net/books/bridging-the-communication-gap/">“Bridging the Communication Gap”</a> and <a href="https://gojko.net/books/specification-by-example/">“Specification by Example. How successful teams deliver the right Software”</a>.
 This helped me to not only make sure that I got the most out of the course (i.e. what questions to ask) but also to set some goals for the 2-days. After giving this some thought, these ended up being:
 
 * Put the theory into practice with the hands-on exercises.
@@ -50,7 +50,7 @@ As Gojko writes in “Bridging the Communication Gap”:
 
 <img src="{{ site.baseurl }}/assets/img/custom/blog/2017-04-03-specification-by-example/specification-by-example.jpg" alt="Specification By Example" class="img-responsive"/>
 
-When people mix up the “WHAT” and the "HOW" they create specifications that are difficult to read for business people. It is common to get specifications that include lines of code. That must be avoided because acceptance tests are a deliverable that need to be written by business people together with developers and testers to ensure a common understanding of what needs to be built so that we can meet client's expectations.
+When people mix up the “WHAT” and the "HOW" they create specifications that are difficult to read for business people. It is common to get specifications that include lines of code. That must be avoided because acceptance tests are a deliverable that needs to be written by business people together with developers and testers to ensure a common understanding of what needs to be built so that we can meet client's expectations.
 "HOW" should also be kept separate from the "WHAT" as the Acceptance tests are *Living Documentation*: the examples are the only executable part of the test, and they should clearly show the relationship between the inputs and the outputs otherwise they can't be automated. If we include unnecessary details, the specification becomes impossible to maintain, change, and execute and will go out of date very quickly.
 
 
