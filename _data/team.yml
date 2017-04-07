@@ -252,7 +252,7 @@
 - id: francesco
   name: Francesco Gigli
   image: /assets/img/custom/team/francesco_gigli.jpg
-  role: Software Craftman
+  role: Software Craftsman
   fullDescription:
     <p>Francesco started in Italy as a Software Developer and System Administrator and his career changed dramatically when he arrived in London. He embraced DevOps, Self Organisation, and Software Craftsmanship. He implemented systems using Event Sourcing and React. He attends Open Conferences like SoCraTes and DevOpsDays.</p>
     <p>The two most important learnings, so far, have been the need for a Mutual Learning mindset for effective teamwork and the ubiquity of trade-offs.</p>
