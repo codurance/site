@@ -159,6 +159,10 @@ body.header-fixed-space-default {
 	margin-top: 25px;
 }
 
+.space-bar{
+	height:90px;
+}
+
 /*--------------------------------------------------
     [2. Header - Navbar]
 ----------------------------------------------------*/
