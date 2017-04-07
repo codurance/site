@@ -512,7 +512,20 @@ i.no-border {   /* 0 0 1 1 */
     }
   }
 
-&-outcome{
+  &-next-button{
+    margin: auto auto 40px auto;
+    border-radius: 6px;
+    font-size: 18px;
+
+    &-container{
+      text-align: center;
+    }
+}
+
+&-row{
+  position: relative;
+  display: table;
+
     &:after {   /* 0 0 2 1 */
       bottom: 20px;
       height: 1px;
