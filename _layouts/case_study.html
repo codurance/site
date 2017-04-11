@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="breadcrumbs-v3 casestudy">
+  <div class="container">
+    <div class="col-md-12 casestudy-links">
+      <a href="{{ '/projects' | prepend: site.baseurl }}"> Projects </a> > <a href="{{ page.url }}"> {{ page.identifier }} </a>
+    </div>
+    <div class="col-md-12 casestudy-logo">
+        <img src="{{ site.baseurl }}/assets/img/custom/case-study/asos.png" class="img-responsive bordered" alt="">
+    </div>
+    <div class="col-md-12 casestudy-metaheader" style="text-align:center">
+        {% t projects.{{ page.identifier }}.metaheader %}
+    </div>
+  </div>
+</div>
+
+<div class="gray-section">
+  <div class="casestudy-subheader container">
+    <p>{% t projects.{{ page.identifier }}.subtitle %}</p>
+  </div>
+</div>
+
+<div class="container content">
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="margin-bottom-40">
+        <div class="headline">
+          <h2>{% t projects.about %} {{ page.identifier }} </h2>
+        </div>
+        {% t projects.{{ page.identifier }}.about %}
+      </div>
+      <div class="margin-bottom-40">
+        <div class="headline">
+          <h2>{% t projects.the_challenge %}</h2>
+        </div>
+        {% t projects.{{ page.identifier }}.the_challenge %}
+      </div>
+      <div class="margin-bottom-40">
+        <div class="headline">
+          <h2>{% t projects.our_sc_approach %}</h2>
+        </div>
+        {% t projects.{{ page.identifier }}.our_sc_approach %}
+      </div>
+      <div class="margin-bottom-40 casestudy-outcome">
+        <div class="headline">
+          <h2>{% t projects.outcome %}</h2>
+        </div>
+        {% t projects.{{ page.identifier }}.outcome %}
+      </div>
+    </div>
+    </div>
+      <div class="col-md-6 col-sm-offset-3">
+      <!-- Business Hours -->
+      <h3 class="text-center">{% t projects.contact-form.title %}</h3>
+      <p class="text-center">{% t projects.contact-form.subtitle %}</p><br/>
+      <div class="row">
+        <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
+          <input type="hidden" name="_next" value="/aboutus/thanks"/>
+          <input type="hidden" name="_subject" value="Codurance Contact"/>
+          <div class="col-sm-6">
+            <div class="input-group margin-bottom-10">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-group margin-bottom-20">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <textarea rows="5" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+            <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
