@@ -81,14 +81,6 @@
   twitter: Parajao
   github: Parajao
 
-- id: david
-  name: David Hatanian
-  image: /assets/img/custom/team/david_hatanian.jpg
-  role: Software Craftsman
-  fullDescription: <p>David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.</p><p>Before coming to London, David worked in Morocco, India and Vietnam.</p><p>David believes in simplicity as a core principle for any development project, and in constantly learning and improving.</p>
-  twitter: DHatanian
-  github: dhatanian
-
 - id: matthew
   name: Matthew Butt
   image: /assets/img/custom/team/matthew_butt.jpg
@@ -260,7 +252,7 @@
 - id: francesco
   name: Francesco Gigli
   image: /assets/img/custom/team/francesco_gigli.jpg
-  role: Software Craftman
+  role: Software Craftsman
   fullDescription:
     <p>Francesco started in Italy as a Software Developer and System Administrator and his career changed dramatically when he arrived in London. He embraced DevOps, Self Organisation, and Software Craftsmanship. He implemented systems using Event Sourcing and React. He attends Open Conferences like SoCraTes and DevOpsDays.</p>
     <p>The two most important learnings, so far, have been the need for a Mutual Learning mindset for effective teamwork and the ubiquity of trade-offs.</p>
