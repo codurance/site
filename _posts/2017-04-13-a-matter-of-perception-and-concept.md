@@ -5,13 +5,11 @@ name: A Matter Of Perception And Concept
 title: 'A Matter Of Perception And Concept'
 date: 2017-04-13 09:00:00 +00:00
 author: Armanda du Plessis
-image:
-  src: /assets/img/custom/blog/something.jpg
 tags:
 - Ubiquitous Language
-- Blogging
+- Bounded Context
+- Domain Driven Development
 - Communication
-- Apprenticeship
 
 ---
 
