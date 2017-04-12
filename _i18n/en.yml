@@ -352,3 +352,23 @@ thanks:
   services-we-offer: Services we offer
   until-then: > 
     Until then, please check out the following resources:
+projects:
+  about: About
+  the_challenge: The Challenge
+  our_sc_approach: Our Software Craftmanship Approach
+  outcome: Outcome
+  contact-form:
+    title: Let us help you to create better software
+    subtitle: Tell us about the project in the form bellow and we'll get back to you soon
+  ASOS:
+    metaheader: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
+    subtitle: A multi-staged, multi-team manual deployment process was having a negative impact on the organisations ability to deploy changes frequently. Software Craftsmanship was seen as a way to raise overall code quality, whilst providing a platform for the journey to Continuous Delivery.
+    about: ASOS is an online fashion retailer, selling cutting-edge fashion and supporting a thriving fashion community Having started as a fashion blog, the brand now offers its clients mobile apps and a magazine in addition to its website offering Last year, ASOS had over 13.4 million active customers. 
+    the_challenge: <p>With over 123 million unique visits to their site per month and with 95 million page views per day, ASOS were struggling to adapt their systems and to ensure performance during peak periods (e g Black Friday). One of the key problems was a multi-stage, multi-team manual deployment process requiring the coordination of a large number of staff and manual testing.</p>
+                   <p>In an effort to modernise and improve their IT capabilities, ASOS underwent a programme to improve the speed of change, the ease, and rate of delivery and a general upskilling of staff in this area. They realised they were missing some key skills, particularly around agile technical practices, and asked us to help.</p>
+    our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
+                     <p>The work was in NET ASP NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
+                     <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and a <a href="/services">culture of DevOps</a> </p>
+    outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly Iterations are more organized and ceremonies are delivering more value.</p>
+             <p>We changed the technical practices within the team, raising the overall quality of code. Several team members that went through the training courses have been promoted into key engineering leadership positions.</p>
+             <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
