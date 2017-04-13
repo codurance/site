@@ -8,4 +8,3 @@ gem install jekyll
 bundle install
 exec rake servequick
 
-
