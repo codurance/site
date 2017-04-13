@@ -8,7 +8,7 @@ author: Armanda du Plessis
 tags:
 - Ubiquitous Language
 - Bounded Context
-- Domain Driven Development
+- Domain Driven Design
 - Communication
 
 ---
@@ -28,7 +28,7 @@ We live in a time of information overload. We are drowning in the abundance of o
 
 I've come to ponder the possibility that this perception may perhaps just be an excuse, a cop-out. I read somewhere recently "You are one in seven billion—your progress is not meant for you alone." So, I started going down a different train of thought. Why not embrace the opportunities of the digital era? Share a bit about me, my perceptions and my personal experiences. Another way of looking at it, is that there are seven billion different perspectives on the human experience. It's an extraordinary thought.
 
-Back to my topic of context, I want to share my appreciation for Domain Driven Development with my focus mainly on the value of establishing and using an "ubiquitous language". This supports a significant part of DDD's strategic design and the "Bounded Context" pattern.
+Back to my topic of context, I want to share my appreciation for Domain Driven Design with my focus mainly on the value of establishing and using an "ubiquitous language". This supports a significant part of DDD's strategic design and the "Bounded Context" pattern.
  
 It's addressing an age old problem of communicating concepts and ensuring a shared understanding of it. I've often wondered secretly by myself after walking out of a meeting room if everyone leaving the door have the exact same understanding of what exactly has been agreed upon. What are the odds?
 
@@ -36,5 +36,5 @@ My favourite example is the abbreviation CBT. Someone from an educational domain
 
 Many project teams in the past had to learn from their mistakes the hard way. As the saying goes, rather learn from other's mistakes than your own. It's less painful that way.
 
-Domain Driven Development serves as guide with principles, patterns and philosophies that will increase a projects teams chances of success.
+Domain Driven Design serves as guide with principles, patterns and philosophies that will increase a projects teams chances of success.
 My purpose here was to raise awareness. At this point I'll hand you over to the experts. For further reading, my personal favourites are Eric Evans and Scott Millett.
