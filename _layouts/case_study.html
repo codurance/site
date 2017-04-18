@@ -2,35 +2,48 @@
 layout: default
 ---
 
+<div class="breadcrumbs" style="background-color: whitesmoke;">
+  <div class="container">
+    <h1 class="pull-left">Software Craftsmanship at {{ page.identifier }} </h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="{{ '/clients' | prepend: site.baseurl }}"> Clients </a></li>
+      <li><a href="{{ '/clients' | prepend: site.baseurl }}">Projects</a></li>
+      <li class="active"> {{ page.identifier }} </li>
+    </ul>
+  </div>
+</div>
+
 <div class="breadcrumbs-v3 casestudy">
   <div class="container">
-    <div class="col-md-12 casestudy-links">
-      <a href="{{ '/projects' | prepend: site.baseurl }}"> Projects </a> > <a href="{{ page.url }}"> {{ page.identifier }} </a>
-    </div>
     <div class="col-md-12 casestudy-logo">
-        <img src="{{ site.baseurl }}/assets/img/custom/case-study/{{ page.identifier }}.png" class="img-responsive bordered" alt="">
+      <img src="{{ site.baseurl }}/assets/img/custom/case-study/{{ page.identifier }}.png" class="img-responsive bordered" alt="">
     </div>
     <div class="col-md-12 casestudy-metaheader" style="text-align:center">
-        {% t projects.{{ page.identifier }}.metaheader %}
+      {% t projects.{{ page.identifier }}.subtitle %}
     </div>
   </div>
 </div>
 
-<div class="gray-section">
-  <div class="casestudy-subheader container">
-    <p>{% t projects.{{ page.identifier }}.subtitle %}</p>
+<div class="casestudy-flat-testimonials casestudy-bg-image-v1 parallaxBg" style="background-position: 50% -58px;">
+  <div class="container">
+    <div class="row">
+      {{ content }}
+    </div>
   </div>
 </div>
 
 <div class="container content">
-  <div class="row ">
-    <div class="col-md-12">
+  <div class="row">
+    <div class="casestudy-box margin-bottom-30">
       <div class="margin-bottom-40">
         <div class="headline">
           <h2>{% t projects.about %} {{ page.identifier }} </h2>
         </div>
         {% t projects.{{ page.identifier }}.about %}
       </div>
+    </div>
+
+    <div class="casestudy-main blog-author">
       <div class="margin-bottom-40">
         <div class="headline">
           <h2>{% t projects.the_challenge %}</h2>
@@ -49,17 +62,16 @@ layout: default
         </div>
         {% t projects.{{ page.identifier }}.outcome %}
       </div>
-      {{ content }}
     </div>
-    </div>
-    <div class="col-md-6 col-sm-offset-3">
+  </div>
+  <div class="col-md-6 col-sm-offset-3">
     <!-- Business Hours -->
     <h3 class="text-center">{% t projects.contact-form.title %}</h3>
     <p class="text-center">{% t projects.contact-form.subtitle %}</p><br/>
     <div class="row">
       <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
-        <input type="hidden" name="_next" value="/aboutus/thanks"/>
-        <input type="hidden" name="_subject" value="Codurance Contact"/>
+        <input type="hidden" name="_next" value="/aboutus/thanks" />
+        <input type="hidden" name="_subject" value="Codurance Contact" />
         <div class="col-sm-6">
           <div class="input-group margin-bottom-10">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
