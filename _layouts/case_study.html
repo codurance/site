@@ -33,7 +33,7 @@ layout: default
 </div>
 
 <div class="container content">
-  <div class="row">
+  <div class="row casestudy-row">
     <div class="casestudy-box margin-bottom-30">
       <div class="margin-bottom-40">
         <div class="headline">
@@ -62,13 +62,13 @@ layout: default
         </div>
         {% t projects.{{ page.identifier }}.outcome %}
       </div>
-      <div class="casestudy-next-button-container">
-        <a href="{{ page.next | prepend: site.baseurl }}" class="casestudy-next-button btn btn-u animated">{% t projects.next %}</a>
-      </div>
+    </div>
+    <div class="casestudy-next-button-container">
+      <a href="{{ page.next | prepend: site.baseurl }}" class="casestudy-next-button btn btn-u animated">{% t projects.next %}</a>
     </div>
   </div>
 
-  <div class="col-md-6 col-sm-offset-3">
+  <div class="casestudy-contact col-md-6 col-sm-offset-3">
     <!-- Business Hours -->
     <h3 class="text-center">{% t projects.contact-form.title %}</h3>
     <p class="text-center">{% t projects.contact-form.subtitle %}</p><br/>
