@@ -1,2 +1,3 @@
 # jekyll-multiple-languages-plugin settings:
 languages: ["es", "en"]
+url: "https://codurance.es"
