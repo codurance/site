@@ -1,36 +1,49 @@
 ---
-  layout: default
+layout: default
 ---
+
+<div class="breadcrumbs" style="background-color: whitesmoke;">
+  <div class="container">
+    <h1 class="pull-left">Software Craftsmanship at {{ page.identifier }} </h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="{{ '/clients' | prepend: site.baseurl }}"> Clients </a></li>
+      <li><a href="{{ '/clients' | prepend: site.baseurl }}">Projects</a></li>
+      <li class="active"> {{ page.identifier }} </li>
+    </ul>
+  </div>
+</div>
 
 <div class="breadcrumbs-v3 casestudy">
   <div class="container">
-    <div class="col-md-12 casestudy-links">
-      <a href="{{ '/projects' | prepend: site.baseurl }}"> Projects </a> > <a href="{{ page.url }}"> {{ page.identifier }} </a>
-    </div>
     <div class="col-md-12 casestudy-logo">
       <img src="{{ site.baseurl }}/assets/img/custom/case-study/{{ page.identifier }}.png" class="img-responsive bordered" alt="">
     </div>
     <div class="col-md-12 casestudy-metaheader" style="text-align:center">
-      {% t projects.{{ page.identifier }}.metaheader %}
+      {% t projects.{{ page.identifier }}.subtitle %}
     </div>
   </div>
 </div>
 
-<div class="gray-section">
-  <div class="casestudy-subheader container">
-    <p>{% t projects.{{ page.identifier }}.subtitle %}</p>
+<div class="casestudy-flat-testimonials casestudy-bg-image-v1 parallaxBg" style="background-position: 50% -58px;">
+  <div class="container">
+    <div class="row">
+      {{ content }}
+    </div>
   </div>
 </div>
 
 <div class="container content">
-  <div class="row casestudy-row">
-    <div class="col-md-12">
+  <div class="row">
+    <div class="casestudy-box margin-bottom-30">
       <div class="margin-bottom-40">
         <div class="headline">
           <h2>{% t projects.about %} {{ page.identifier }} </h2>
         </div>
         {% t projects.{{ page.identifier }}.about %}
       </div>
+    </div>
+
+    <div class="casestudy-main">
       <div class="margin-bottom-40">
         <div class="headline">
           <h2>{% t projects.the_challenge %}</h2>
@@ -43,13 +56,13 @@
         </div>
         {% t projects.{{ page.identifier }}.our_sc_approach %}
       </div>
-      <div class="margin-bottom-40">
+      <div class="margin-bottom-40 casestudy-outcome">
         <div class="headline">
           <h2>{% t projects.outcome %}</h2>
         </div>
         {% t projects.{{ page.identifier }}.outcome %}
       </div>
-      <div class="col-md-12 casestudy-next-button-container">
+      <div class="casestudy-next-button-container">
         <a href="{{ page.next | prepend: site.baseurl }}" class="casestudy-next-button btn btn-u animated">{% t projects.next %}</a>
       </div>
     </div>
