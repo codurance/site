@@ -26,7 +26,7 @@ As software developers, we work across various markets and domains and for every
 
 That same day, at the hairdresser's, I decided to write this blog, focusing on how context can change perceived understanding between different people. 
 
-As it happens, I had recently experienced a personal change in perspective, related to blogging in general. 
+As it happens, I had recently experienced a personal change in perspective, related to blogging in general.   
 - So, this is my first blog. Ever. -
 
 We live in a time of information overload. We are drowning in the abundance of opinions and regurgitations. Until now, my inner-critic prevented me from joining the masses of me-isms and self-promotion. 
@@ -70,7 +70,7 @@ All players in the project team will then be bound to this context to:
 *A language structured around the domain model and used by all team members within a bounded context to connect all the activities of the team with the software.*
 
 Once the bounded context has been defined, all collaboration and communication should be committed to using this language. 
-This is where the real benefit lies, as people will develop a shared view of the concepts.
+This is where the real benefit lies, as people will develop a shared view of the concepts.  
 And voilà! No more misunderstandings.
 
 ## Final Words
