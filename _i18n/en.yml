@@ -350,7 +350,7 @@ thanks:
   our-blog: Our blog posts
   video-section: Video section
   services-we-offer: Services we offer
-  until-then: > 
+  until-then: >
     Until then, please check out the following resources:
 projects:
   about: About
@@ -372,3 +372,13 @@ projects:
     outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly Iterations are more organized and ceremonies are delivering more value.</p>
              <p>We changed the technical practices within the team, raising the overall quality of code. Several team members that went through the training courses have been promoted into key engineering leadership positions.</p>
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
+  Tesco:
+    metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
+    subtitle: <p>A legacy mainframe application was having a negative impact on the business’ ability to run promotions and store discounts.</p>
+              <p>Software Craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
+    about: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
+    the_challenge: <p>Tesco’s Supply Chain division were forecasting product demand on a legacy mainframe application. Changes were made to the forecasts using external tools (for instance, spreadsheets), which was having a negative impact on the business ability to trace irregularities. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
+                   <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work at Tesco.</p>
+    our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Worked in conjunction with the development team in Bangalore (India), we created a webapp that would help demand planners to order the right amount of product from suppliers. This webapp was connected to the legacy database through the new custom API.</p>
+                     <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
+    outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
