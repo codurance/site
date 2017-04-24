@@ -129,7 +129,7 @@ company-contact:
    title: Contacto
 company-contact-form:
    title: Ponte En Contacto
-   subtitle: Llámanos a +44 207 4902967, escríbenos a <a href="mailto:hello@codurance.es">hello@codurance.es</a>, o utiliza el siguiente formulario para enviarnos un mensaje.
+   subtitle: Llámanos a <a href="tel:+442074902967">+44 207 4902967</a>, escríbenos a <a href="mailto:hello@codurance.es">hello@codurance.es</a>, o utiliza el siguiente formulario para enviarnos un mensaje.
    email_placeholder: Correo electrónico
    name_placeholder: Nombre
    text_placeholder: Escribe tu mensaje aquí...
