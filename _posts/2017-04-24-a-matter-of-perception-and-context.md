@@ -52,7 +52,7 @@ Many project teams in the past had to learn from their mistakes the hard way. As
 *The setting in which a word or statement appears that determines its meaning.
 Statements about a model can only be understood in a context.*
 
-### Bounded Context Pattern
+### Bounded Context
 
 **Definition**
 *A description of a boundary (typically a subsystem, or the work of a particular team) within which a particular model is defined and applicable.*
@@ -76,4 +76,4 @@ And voilà! No more misunderstandings.
 ## Final Words
 
 Domain Driven Design serves as guide with principles, patterns and philosophies. My purpose here was to raise awareness. 
-At this point I'll hand you over to the experts. For further reading, my personal favourites are Eric Evans and Scott Millett.
+At this point I'll hand you over to the experts. For further reading, my personal favourites are Eric Evans, Vaughn Vernon and Scott Millett.
