@@ -489,10 +489,24 @@ i.no-border {   /* 0 0 1 1 */
 .casestudy{
   &-logo {
     margin: 0 auto;
-    max-width: 200px;
-    float:none;
+    max-width: 400px;
     padding-top: 30px;
     padding-bottom: 20px;
+    float: none;
+  }
+
+  &-flat-testimonials {
+    padding: 50px 0;
+    background-color: #333;
+  }
+
+  &-bg-image-v1 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    position: relative;
+    background: url("{{ site.baseurl }}/assets/img/custom/case-study/paralax.jpg") repeat fixed;
+    background-size: cover;
   }
 
   &-links{
@@ -502,6 +516,13 @@ i.no-border {   /* 0 0 1 1 */
 
   &-metaheader{
     font-size: large;
+
+    p {
+      color: black;
+      font-size: smaller;
+      font-style: italic;
+    }
+
     &:after {   /* 0 0 2 1 */
       bottom: -20px;
       left: 50%;
@@ -514,14 +535,38 @@ i.no-border {   /* 0 0 1 1 */
     }
   }
 
-&-outcome{
+  &-quote {
+      p {
+        color: beige;
+      }
+  }
+
+  &-outcome{
+      p {
+        color: black;
+      }
+  }
+
+
+  &-box {
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+
+  &-main{
+    position: relative;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 50px;
+
     &:after {   /* 0 0 2 1 */
-      bottom: 20px;
-      height: 1px;
-      width: 100%;
-      content: " ";
-      position: absolute;
-      background: black;
+    bottom: -30px;
+    height: 1px;
+    width: 100%;
+    content: " ";
+    position: absolute;
+    left: 0;
+    background: black;
     }
   }
 
@@ -535,4 +580,39 @@ i.no-border {   /* 0 0 1 1 */
       margin-bottom: 40px;
     }
   }
+}
+
+/*Quote v2
+------------------------------------*/
+.quote-v2 {
+  text-align: center;
+  padding: 85px 10% 40px;
+}
+
+.quote-v2 p {
+  color: beige;
+  font-size: 16px;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.quote-v2 p:before {
+  left: 50%;
+  top: -75px;
+  font-size: 80px;
+  content: "\201C";
+  position: absolute;
+  margin-left: -25px;
+  font-family: Georgia, serif;
+}
+
+.quote-v2 span {
+  color: beige;
+  font-weight: 400;
+}
+
+.content {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
