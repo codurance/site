@@ -129,7 +129,7 @@ company-contact:
    title: Contact us
 company-contact-form:
    title: Get In Touch
-   subtitle: Call us on <a href="tel:+442074902967">+44 207 4902967</a>, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
+   subtitle: Call us on +44 207 4902967, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
    email_placeholder: Email
    name_placeholder: Name
    text_placeholder: Type your message here...
