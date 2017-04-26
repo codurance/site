@@ -167,7 +167,8 @@ body.header-fixed-space-default {
 .header {
 	z-index: 99;
 	background: #fff;
-	position: relative;
+	position: fixed;
+    width: 100%;
 }
 
 /*Header Container*/
@@ -240,7 +241,9 @@ body.header-fixed-space-default {
 
 /*Navbar Collapse*/
 .header .navbar-collapse {
-	position: relative;
+    position: fixed;
+    background: #fff;
+    width: 100%;
 }
 
 /*Navbar Collapse*/
