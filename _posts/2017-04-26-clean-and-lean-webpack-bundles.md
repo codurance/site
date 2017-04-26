@@ -18,7 +18,7 @@ tags:
 ##Four simple steps to reduce your Webpack bundle size ... 
 
 
-A team from [Codurance](http://www.codurance.com) (including myself) are currently helping out a client on a javascript legacy project. It’s a news application with a worldwide customer base and has a stack that includes [ReactJS](https://facebook.github.io/react/), [Express](https://expressjs.com/), [Webpack](https://Webpack.github.io/) and a host of other libraries. 
+A team from [Codurance](http://www.codurance.com) (including myself) are currently helping out a client on a Javascript [brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development)) project. It’s a news application with a worldwide customer base and has a stack that includes [ReactJS](https://facebook.github.io/react/), [Express](https://expressjs.com/), [Webpack](https://Webpack.github.io/) and a host of other libraries. 
 
 Recently a member of the team noticed that certain parts of the application were serving up bundles of **nearly 2mb!** I was quite new to Webpack at the time and jumped at the opportunity to get to know Webpack better and see if I could try and solve the problem. 
 
@@ -31,7 +31,7 @@ Obviously, there are downsides too.
 
 The more libraries we incorporate into our front end application, the more code that needs to be downloaded by the end user to access this functionality. More code results in bigger files and the user may be waiting longer before the application is up and running. The size of ReactJs alone is enough to make you weep. 
 
-In the UX world, site or application loading is still a major bug-bear for users and quite often, first the first experience with a site counts. A user that experiences a slow site may not end up returning. Site loading times are an important consideration for all developers, but in large Enterprise projects, optimisation can sometimes take on a whole new meaning and can be benchmarked in milliseconds rather than seconds.
+In the UX world, site or application loading is still a major bug-bear for users and quite often, first the first experience with a site counts. A user that experiences a slow site may not end up returning. Site loading times are an important consideration for all developers, but in large Enterprise projects, optimisation can sometimes take on a whole new meaning and can be bench-marked in milliseconds rather than seconds.
 
 ###Managing dependencies with Webpack
 Managing your dependencies is usually done with the help of another library. Webpack is one of a number available tools that helps package all of your dependencies. Webpack goes through all your dependencies and can combine them into one single file (i.e **a bundle**), applying useful transformations along the way. For example, removing any unreachable code, splitting your code base, turning the code into something the browser can understand etc. 
@@ -86,7 +86,7 @@ For the less visual, and for other useful alternatives take a look at [Survive J
 
 Once you have a picture of your dependencies and their weight, then start thinking about **which ones are really required**.
  
-Your dependencies can be wolves in sweeps clothing. Yes they provide some handy functionality, but there is often a price — lots of code. As mentioned earlier, libraries like ReactJS are going to be fairly big, and beyond some optimisations that I will discuss shortly, there is little you can do unless you externalise the dependency. Be aware that you may be using only a **fraction** of the functionality provided by a library, but at the same time you are getting all the the library's code regardless. [Lodash](https://lodash.com/) is a good example here (Do you really need that map function?!). Perhaps you can write some helper functions yourself in vanilla Javascript? Check and see if your chosen library is available as a suite of sub-libraries giving you the option to import only the functionality you require (Lodash is available in this format). 
+Each dependency has the potential to be a wolf in sheep's clothing. Yes they provide some handy functionality, but there is often a price — lots of code. As mentioned earlier, libraries like ReactJS are going to be fairly big, and beyond some optimisations that I will discuss shortly, there is little you can do unless you externalise the dependency. Be aware that you may be using only a **fraction** of the functionality provided by a library, but at the same time you are getting all the the library's code regardless. [Lodash](https://lodash.com/) is a good example here (Do you really need that map function?!). Perhaps you can write some helper functions yourself in vanilla Javascript? Check and see if your chosen library is available as a suite of sub-libraries giving you the option to import only the functionality you require (Lodash is available in this format). 
 
 ###Reduce
 Now that you are only using the dependencies that are absolutely essential the next step is to reduce their weight further by adding a couple of plugins to your Webpack configuration.
