@@ -374,8 +374,8 @@ projects:
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
   Tesco:
     metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
-    subtitle: <p>A legacy mainframe application was having a negative impact on the business’ ability to run promotions and store discounts.</p>
-              <p>Software Craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
+    subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application.
+Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
     about: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s Supply Chain division were forecasting product demand on a legacy mainframe application. Changes were made to the forecasts using external tools (for instance, spreadsheets), which was having a negative impact on the business ability to trace irregularities. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
                    <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work at Tesco.</p>
