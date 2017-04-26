@@ -167,7 +167,16 @@ body.header-fixed-space-default {
 .header {
 	z-index: 99;
 	background: #fff;
-	position: relative;
+	position: fixed;
+	width: 100%;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 1px solid lightgray; 
 }
 
 /*Header Container*/
