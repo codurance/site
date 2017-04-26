@@ -6,7 +6,7 @@ title: 'Make Your Webpack Bundles Clean and Lean'
 date: 2017-04-24 09:00:00 +00:00
 author: Toby Retallick
 image:
-  src: /assets/img/custom/blog/2017-04-26-webpack-bundles/webpack-visualiser.png
+  src: /assets/img/custom/blog/2017-04-26-webpack-bundles/webpack_visualiser.png
 tags:
 - Webpack
 - Javascript
@@ -15,7 +15,9 @@ tags:
 
 ---
 
-##Four simple steps to reduce your Webpack bundle size
+##Four simple steps to reduce your Webpack bundle size ... 
+
+
 A team from [Codurance](http://www.codurance.com) (including myself) are currently helping out a client on a javascript legacy project. It’s a news application with a worldwide customer base and has a stack that includes [ReactJS](https://facebook.github.io/react/), [Express](https://expressjs.com/), [Webpack](https://Webpack.github.io/) and a host of other libraries. 
 
 Recently a member of the team noticed that certain parts of the application were serving up bundles of **nearly 2mb!** I was quite new to Webpack at the time and jumped at the opportunity to get to know Webpack better and see if I could try and solve the problem. 
@@ -47,7 +49,7 @@ Yep. I came up with a cheesey acronym to sum up the key steps for making your We
 
 Question: What does C.A.R.E stand for? 
 
-Answer: **C**lean, **A**nalyse, **R**educe, **E**xternalise
+Answer: Clean, Analyse, Reduce, Externalise
 
 Nice huh?
 
