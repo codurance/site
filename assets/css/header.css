@@ -171,6 +171,14 @@ body.header-fixed-space-default {
 	width: 100%;
 }
 
+.header:after {
+    content: "";
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 1px solid lightgray; 
+}
+
 /*Header Container*/
 .header > .container {
 	display: table;
