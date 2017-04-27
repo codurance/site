@@ -521,6 +521,7 @@ i.no-border {   /* 0 0 1 1 */
       color: black;
       font-size: smaller;
       font-style: italic;
+      text-transform: none;
     }
 
     &:after {   /* 0 0 2 1 */
@@ -541,12 +542,21 @@ i.no-border {   /* 0 0 1 1 */
       }
   }
 
-  &-outcome{
+  &-next-button{
+    margin: auto auto 40px auto;
+    border-radius: 6px;
+    font-size: 18px;
+
+    &-outcome{
       p {
         color: black;
       }
+    }
+    
+    &-container{
+      text-align: center;
+    }
   }
-
 
   &-box {
     background-color: whitesmoke;
@@ -558,15 +568,20 @@ i.no-border {   /* 0 0 1 1 */
     background-color: whitesmoke;
     padding: 20px;
     margin-bottom: 50px;
+  }
+
+  &-row {
+    position: relative;
+    display: table;
 
     &:after {   /* 0 0 2 1 */
-    bottom: -30px;
-    height: 1px;
-    width: 100%;
-    content: " ";
-    position: absolute;
-    left: 0;
-    background: black;
+      bottom: 0px;
+      height: 1px;
+      width: 100%;
+      content: " ";
+      position: absolute;
+      left: 0;
+      background: black;
     }
   }
 
@@ -579,6 +594,10 @@ i.no-border {   /* 0 0 1 1 */
       text-align: center;
       margin-bottom: 40px;
     }
+  }
+
+  &-contact {
+    margin-top: 30px;
   }
 }
 
@@ -615,4 +634,8 @@ i.no-border {   /* 0 0 1 1 */
 .content {
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+
+.content-container {
+  padding-top: 85px
 }
