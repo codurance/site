@@ -376,9 +376,7 @@ i.no-border {   /* 0 0 1 1 */
 
 /* Sponsoring section */
 
-.breadcrumbs-v3 {
-  top: 85px;
-   
+.breadcrumbs-v3 {   
   &.ourpeople { /* 0 0 2 0 */
     background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
     background-size: cover;
