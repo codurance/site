@@ -22,7 +22,7 @@ A team from [Codurance](http://www.codurance.com) (including myself) are current
 
 Recently a member of the team noticed that certain parts of the application were serving up bundles of **nearly 2mb!** I was quite new to Webpack at the time and jumped at the opportunity to get to know Webpack better and see if I could try and solve the problem. 
 
-This blog is the result of that process - four simple steps to reduce the size of your web pack bundles. If you are working on a **large enterprise project** that uses a lot of dependencies on the front end (including Webpack) then I hope my experiences will be useful to you on your own project. 
+This blog is the result of that process - four simple steps to reduce the size of your Webpack bundles. If you are working on a **large enterprise project** that uses a lot of dependencies on the front end (including Webpack) then I hope my experiences will be useful to you on your own project. 
 
 ###The problem with choice
 Today we are spoiled for choice when it comes to front end development within the javascript ecosystem. The number of open source libraries available to us are endless. On the plus side, this allows us to continue to innovate and provide new or improved functionality for the end user. 
@@ -31,14 +31,14 @@ Obviously, there are downsides too.
 
 The more libraries we incorporate into our front end application, the more code that needs to be downloaded by the end user to access this functionality. More code results in bigger files and the user may be waiting longer before the application is up and running. The size of ReactJs alone is enough to make you weep. 
 
-In the UX world, site or application loading is still a major bug-bear for users and quite often, first the first experience with a site counts. A user that experiences a slow site may not end up returning. Site loading times are an important consideration for all developers, but in large Enterprise projects, optimisation can sometimes take on a whole new meaning and can be bench-marked in milliseconds rather than seconds.
+In the UX world, site or application loading is still a major bug-bear for users and quite often, the first experience with a site counts. A user that experiences a slow site may not end up returning. Site loading times are an important consideration for all developers, but in large Enterprise projects, optimisation can sometimes take on a whole new meaning and can be bench-marked in milliseconds rather than seconds.
 
 ###Managing dependencies with Webpack
 Managing your dependencies is usually done with the help of another library. Webpack is one of a number available tools that helps package all of your dependencies. Webpack goes through all your dependencies and can combine them into one single file (i.e **a bundle**), applying useful transformations along the way. For example, removing any unreachable code, splitting your code base, turning the code into something the browser can understand etc. 
 
 The rest of this post assumes you have some familiarity with Webpack. If you are new to Webpack you want a in depth tutorial from the ground up then I strongly recommend you check out [Survive Webpack](https://survivejs.com/Webpack/introduction/). It’s a great tutorial that's ideal for getting to grips with Webpack basics.
 
-To assist you in this tutorial I have uploaded an [example web pack configuration](https://github.com/TobyRet/webpack-example) that implements the steps below.
+To assist you in this tutorial I have uploaded an [example Webpack configuration](https://github.com/TobyRet/webpack-example) that implements the steps below.
 
 Now we are ready to continue. 
 
@@ -73,12 +73,12 @@ In this step, we want to clean the Webpack configuration. This is the file that 
  
 The key takeaways here are three-fold:
  
-1. Get rid of any unused dependencies … now! I appreciate this does not make your webpack bundle smaller (as webpack only bundles libraries that are used) but this is more in the interests of maintaining sanity of any developer that works on the code base in future. To find out what dependencies are no longer used then I recommend taking a look at the [DepCheck library](https://github.com/depcheck/depcheck).
+1. Get rid of any unused dependencies … now! I appreciate this does not make your Webpack bundle smaller (as Webpack only bundles libraries that are used) but this is more in the interests of maintaining sanity of any developer that works on the code base in future. To find out what dependencies are no longer used then I recommend taking a look at the [DepCheck library](https://github.com/depcheck/depcheck).
 2. Upgrade any remaining dependencies where you can. On the particular project I worked on some of the dependencies where more than 4 major versions behind. Among the obvious benefits like better reliability and security, sometimes more recent versions will have optimisations that result in less code.
-3. Finally, its worth have a review of your webpack configuration to see if this can be cleaned up further. If you have one large webpack configuration for all environments (dev and prod), then consider splitting it. [Check out the example I uploaded to Github](https://github.com/TobyRet/webpack-example). 
+3. Finally, its worth have a review of your Webpack configuration to see if this can be cleaned up further. If you have one large Webpack configuration for all environments (dev and prod), then consider splitting it. [Check out the example I uploaded to Github](https://github.com/TobyRet/webpack-example). 
    
 ###Analyse
-So by now you have a nice readable webpack configuration and you have upgraded your dependencies and removed any ones that are no longer required. The next step is to <strong>analyse</strong> your bundle to see what is taking up the most space.
+So by now you have a nice readable Webpack configuration and you have upgraded your dependencies and removed any ones that are no longer required. The next step is to <strong>analyse</strong> your bundle to see what is taking up the most space.
  
 A simple visual tool for examining your bundle is the [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/). It provides a provides a nice looking pie chart of your bundle composition allowing you to quickly understand which dependencies contribute to the size of the overall result. 
 
