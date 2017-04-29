@@ -376,7 +376,7 @@ i.no-border {   /* 0 0 1 1 */
 
 /* Sponsoring section */
 
-.breadcrumbs-v3 {
+.breadcrumbs-v3 {   
   &.ourpeople { /* 0 0 2 0 */
     background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
     background-size: cover;
@@ -485,7 +485,12 @@ i.no-border {   /* 0 0 1 1 */
 }
 
 .casestudy{
+  padding-top: 60px;
+
   &-logo {
+    & > img {
+      margin: auto;
+    }
     margin: 0 auto;
     max-width: 400px;
     padding-top: 30px;
@@ -517,8 +522,9 @@ i.no-border {   /* 0 0 1 1 */
 
     p {
       color: black;
-      font-size: smaller;
+      font-size: medium;
       font-style: italic;
+      text-transform: uppercase;
     }
 
     &:after {   /* 0 0 2 1 */
@@ -539,12 +545,21 @@ i.no-border {   /* 0 0 1 1 */
       }
   }
 
-  &-outcome{
+  &-next-button{
+    margin: auto auto 40px auto;
+    border-radius: 6px;
+    font-size: 18px;
+
+    &-outcome{
       p {
         color: black;
       }
+    }
+    
+    &-container{
+      text-align: center;
+    }
   }
-
 
   &-box {
     background-color: whitesmoke;
@@ -556,15 +571,20 @@ i.no-border {   /* 0 0 1 1 */
     background-color: whitesmoke;
     padding: 20px;
     margin-bottom: 50px;
+  }
+
+  &-row {
+    position: relative;
+    display: table;
 
     &:after {   /* 0 0 2 1 */
-    bottom: -30px;
-    height: 1px;
-    width: 100%;
-    content: " ";
-    position: absolute;
-    left: 0;
-    background: black;
+      bottom: 0px;
+      height: 1px;
+      width: 100%;
+      content: " ";
+      position: absolute;
+      left: 0;
+      background: black;
     }
   }
 
@@ -577,6 +597,10 @@ i.no-border {   /* 0 0 1 1 */
       text-align: center;
       margin-bottom: 40px;
     }
+  }
+
+  &-contact {
+    margin-top: 30px;
   }
 }
 
@@ -613,4 +637,15 @@ i.no-border {   /* 0 0 1 1 */
 .content {
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+
+.content-container {
+  padding-top: 85px
+}
+
+
+@media (min-width: 768px) {
+  .casestudy-header-path {
+    padding-right: 20px;
+    } 
 }
