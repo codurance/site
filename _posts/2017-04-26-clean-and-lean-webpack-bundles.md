@@ -36,7 +36,7 @@ In the UX world, site or application loading is still a major bug-bear for users
 ###Managing dependencies with Webpack
 Managing your dependencies is usually done with the help of another library. Webpack is one of a number available tools that helps package all of your dependencies. Webpack goes through all your dependencies and can combine them into one single file (i.e **a bundle**), applying useful transformations along the way. For example, removing any unreachable code, splitting your code base, turning the code into something the browser can understand etc. 
 
-The rest of this post assumes you have some familiarity with Webpack. If you are new to Webpack you want a in depth tutorial from the ground up then I strongly recommend you check out [Survive Webpack](https://survivejs.com/Webpack/introduction/). It’s a great tutorial that's ideal for getting to grips with Webpack basics.
+The rest of this post assumes you have some familiarity with Webpack. If you are new to Webpack you want a in depth tutorial from the ground up then I strongly recommend you check out [Survive Webpack](https://survivejs.com/webpack/preface/). It’s a great tutorial that's ideal for getting to grips with Webpack basics.
 
 To assist you in this tutorial I have uploaded an [example Webpack configuration](https://github.com/TobyRet/webpack-example) that implements the steps below.
 
