@@ -32,6 +32,7 @@ There are a few [key concepts](https://docs.docker.com/engine/swarm/key-concepts
 As well as Docker engine has a run and docker-compose, Docker swarm has service and stack to represent the relations between services. Docker stack uses an extended definition of docker compose to make the definition of services explicit. In this post, I am going to use `docker stack`.
 
 Showing docker swarm levels:
+
 ```
 +---+    +---+    +---+
 |   |    |   |    | C |
@@ -55,10 +56,9 @@ We are going to run `vagrant up m1 m2 w1 w2` to bring one manager and two worker
 
 Create a `docker-swarm-test` directory and create a `Vagrantfile` inside.
 
-Vagrantfile:
-```ruby
-# vi: set ft=ruby :
+Vagrantfile
 
+```ruby
 Vagrant.configure("2") do |config|
 
     config.vm.box = "ubuntu/xenial64"
@@ -82,14 +82,14 @@ Vagrant.configure("2") do |config|
         v.memory = 2048
         v.cpus = 1
     end
-
 end
 ```
 
 The `Vagrantfile` we created needs a provisioning script in `./node.bash`.
 
 node.bash
-```
+
+```bash
 #!/bin/bash
 
 # Install docker engine
@@ -127,20 +127,25 @@ Export Docker host variable with manager address:
 export DOCKER_HOST=192.168.99.201
 
 Initialize the swarm manager node:
+
 `docker swarm init --advertise-addr 192.168.99.201`
 
 The output of this command contains the command you must run in the nodes to join them as workers:
 
+```bash
 docker swarm join \
 --token SWMTKN-1-5115o3dmke8531usz4f4vqtqj9u25j7lflh659oud9kt8qboez-cdqnqq7f3mlvx67gkk2x65pwj \
 192.168.99.201:2377
+```
 
 The **SWarM ToKeN** version **1** corresponds to the pattern `SWMTKN-1-< digest-of-root-CA-cert>-< random-secret >`. [Here](https://github.com/docker/labs/tree/master/security/swarm#step-2-add-a-new-manager) you can find detailed info.
 
 You can get the command to join as worker or manager running `docker swarm join-token worker` or `docker swarm join-token worker` in any manager.
 
 After joining the nodes you can see the status. To achieve that export a manager address `export DOCKER_HOST=192.168.99.201` of the cluster running `[docker node ls](https://docs.docker.com/engine/swarm/manage-nodes/#list-nodes)`.
+
 Example:
+
 ```
 $ docker node ls
 ID                           HOST  NAME  STATUS  AVAILABILITY  MANAGER STATUS
@@ -151,6 +156,7 @@ ywhwdja3u2csui3ha9ghsmwqc    w2        Ready   Active
 ```
 
 To see the swarm status of a specific node use `node info`
+
 ```
 $ docker info | grep --after-context=4 Swarm
 Swarm: active
@@ -171,6 +177,7 @@ We are going to create services using `docker stack`. This is a similar to docke
 In this post, we are going to create only a service and prove that we have a load balancer behind. We need to create a file that represents the definition of the services:
 
 swarmrt.yml
+
 ```
 version: '3.1'
 
@@ -211,6 +218,7 @@ Docker swarm by default doesn't distribute the task among the nodes in any parti
 In order to try it, we are going to modify our `swarmrt.yml` file.
 
 swarmrt.yml
+
 ```
 version: '3.1'
 
@@ -243,5 +251,5 @@ Creating service swarmrt_swarmrt
 Now we can run our curl again and see that the IP of the node that receives the request doesn't change `watch -d -n 1 curl -s -4 http://192.168.99.201:9080/`.
 
 ### Conclusions
-The concepts that you must learn to run docker swarm are not so differents from the once that you use for run docker instances in a node.
+The concepts that you must learn to run docker swarm are not so different from the one that you use for run docker instances in a node.
 We proved that there is load balancer into the ingress network. Also, we saw deploy modes, global and replicated. Also, we added constraints to the service definition.
