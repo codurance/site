@@ -27,7 +27,9 @@
   <div class="col-md-7 news-v3">
     <div class="news-v3-in-sm no-padding">
       <ul class="list-inline posted-info">
+			  {% unless post.asset-type == "newsletter" %}
         <li>{% t publications-post.author_title %} {{ post.author | author_links }} </li>
+        {% endunless %}
         <li>{% t publications-post.date_title %} {{ post.date | date_to_string }}</li>
       </ul>
       <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
