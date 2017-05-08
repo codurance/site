@@ -25,6 +25,8 @@ googleanalytics:
   account: UA-46289079-1
 
 collections:
+  newsletters:
+    output: true
   posts:
     output: true
   videos:
