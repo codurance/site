@@ -351,10 +351,10 @@ thanks:
   until-then: >
     Hasta entonces, puedes consultar algunos de nuestros recursos:
 projects:
-  about: About
-  the_challenge: The Challenge
-  our_sc_approach: Our Software Craftmanship Approach
-  outcome: Outcome
+  about: Sobre
+  the_challenge: El desafío
+  our_sc_approach: Nuestro método de Software Craftmanship
+  outcome: Resultado
   next: Next Case Study
   contact-form:
     title: Let us help you to create better software
@@ -372,14 +372,13 @@ projects:
              <p>We changed the technical practices within the team, raising the overall quality of code. Several team members that went through the training courses have been promoted into key engineering leadership positions.</p>
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
   Tesco:
-    metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
-    subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
-    about: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
-    the_challenge: <p>Tesco’s Supply Chain division were forecasting product demand on a legacy mainframe application. Changes were made to the forecasts using external tools (for instance, spreadsheets), which was having a negative impact on the business ability to trace irregularities. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
-                   <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work at Tesco.</p>
-    our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Worked in conjunction with the development team in Bangalore (India), we created a webapp that would help demand planners to order the right amount of product from suppliers. This webapp was connected to the legacy database through the new custom API.</p>
-                     <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
-    outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
+    subtitle: <p>Tesco quería mejorar su capacidad para crear promociones y descuentos actualizando una aplicación legacy. Software craftsmanship fue ideal para comenzar a construir una nueva solución.</p>
+    about: Tesco es una cadena de supermercados multinacional. Con ingresos por más de 54.000 millones y cerca de 7.000 comercios al rededor del mundo, Tesco se ha establecido como el quinto minorista más grande y líder en Reino Unido.
+    the_challenge: <p>La división de suministro de Tesco proveía la demanda usando una aplicación mainframe. Los cambios eran provistos usando herramientas externas, por ejemplo hojas de cálculo, lo que suponía un impacto negativo para trazar irregularidades. Sin mejoras en la aplicación se dificultaba crear campañas de descuentos y ofrecer ofertas especiales a sus clientes.</p>
+                   <p>Tesco quería construir una nueva API que ayude a resolver el problema y mejorar la calidad dentro del actual equipo de desarrollo. Fuimos invitados a colaborar en este proyecto debido a nuestro anterior trabajo en Tesco.</p>
+    our_sc_approach: <p>Con dos de nuestros Software Craftmen guiando sus equipos construimos una nueva API desde cero. Trabajando en conjunto con el equipo de desarrollo en Bangalore (India) creamos una aplicación web que ayuda a los encargados de planificar la demanda de productos a los promovedores.</p>
+                     <p>Junto al trabajo funcional pusimos a punto Continuous Integration/Continuous Delivery (CI/CD) y la infraestructura para ejecutar la aplicación en producción. En nuestro día a día ayudamos a mejorar las habilidades en técnicas de Software Craftsmanship, como Test Driven Development (TDD) y Refactorización de los integrantes de equipos de desarrollo. Además, colaboramos con el Product Owner a mejorar los requerimientos y estrategia del proyecto. Ayudamos a nuestros equipos en Bangalore a reestructurar sus tests y poner en marcha un mejor Git workflow.</p>
+    outcome: <p>Desarrollamos una robusta y sostenible solución que ha permitido a Tesco aumentar considerablemente su precisión en pronósticos. Tuvimos un impacto positivo en el desarrollo técnico y profesional de los equipos.</p>
   Coniq:
     metaheader: A Software Craftsmanship mindset helped to empower Coniq's in-house development team, enabling them to deliver their own quality software more frequently.
     subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project</p>
