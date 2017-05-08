@@ -6,6 +6,9 @@
   {% elsif include.type =="videos" %}
   <div class="headline-v2"><h2>{% t recent-publications.videos-title %}</h2></div>
   {% assign publications= site.videos | reverse %}
+  {% elsif include.type =="newsletters" and site.newsletters.size > 1 %}
+  <div class="headline-v2"><h2>Recent Newsletters</h2></div>
+  {% assign publications= site.newsletters | reverse %}
   {% endif %}
 
   {% comment %} Couldn't find a way to filter out an item from an array, so doing it manually.{% endcomment %}
