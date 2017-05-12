@@ -261,6 +261,10 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   craftsman_program:
+     join_title: Join a Codurance
+     join_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+
 careers-how_we_grow:
    title: How we grow?
    description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -300,6 +304,7 @@ careers-join-how_to_apply:
         </ul>
 
         <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
+
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong>
