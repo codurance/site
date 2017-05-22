@@ -41,6 +41,31 @@ $white-colour: #fff;
     }
 }
 
+.btn-small {   
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px 10px;
+
+    &-orange {  
+        background-color: transparent;
+        border: 1px solid $orange-colour;
+        color: $orange-colour;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-left: 10px;
+
+        &:hover {  
+            background-color: $orange-colour;
+            color: $white-colour;
+        }
+    }
+
+    &:hover {  
+        transition: .3s;
+    }
+}
+
 .button-with-bg-image span {   /* 0 0 1 1 */
     font-size: 24px;
     margin: 0;
@@ -100,4 +125,27 @@ $white-colour: #fff;
 
 #sharethisButtons {   /* 0 1 0 0 */
     padding-bottom: 30px;
+}
+
+
+.btn-less {   /* 0 0 1 0 */
+    border-radius: 6px;
+    font-size: x-small;
+    margin: 10px 0;
+    padding: 5px 10px;
+
+    &-light {  /* 0 0 1 0 */
+        background-color: transparent;
+        border: 1px solid $white-colour;
+        color: $white-colour;
+
+        &:hover {  /* 0 0 2 0 */
+            background-color: $white-colour;
+            color: $gray-colour;
+        }
+    }
+
+    &:hover {  /* 0 0 2 0 */
+        transition: .3s;
+    }
 }

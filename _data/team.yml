@@ -81,14 +81,6 @@
   twitter: Parajao
   github: Parajao
 
-- id: david
-  name: David Hatanian
-  image: /assets/img/custom/team/david_hatanian.jpg
-  role: Software Craftsman
-  fullDescription: <p>David is a software developer with 5 years of experience. From an initial background in information systems security, he moved to the Java development world. He more recently developed an interest in Javascript and Scala.</p><p>Before coming to London, David worked in Morocco, India and Vietnam.</p><p>David believes in simplicity as a core principle for any development project, and in constantly learning and improving.</p>
-  twitter: DHatanian
-  github: dhatanian
-
 - id: matthew
   name: Matthew Butt
   image: /assets/img/custom/team/matthew_butt.jpg
@@ -103,13 +95,13 @@
 - id: giulia
   name: Giulia Mantuano
   image: /assets/img/custom/team/giulia_mantuano.jpg
-  role: Apprentice
+  role: UX Craftswoman
   fullDescription: >
-    <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years.</p>
-    <p>During her career she has developed both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
-    <p>Giulia joined Codurance as an Apprentice driven by the desire to apply the Software Craftsmanship mindset and values to the whole product development process.</p>
+    <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years, developing both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
+    <p>Giulia joined Codurance driven by the desire to apply the Software Craftsmanship mindset and values to the whole product and service design process.</p>
     <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, backed up by her Integrated Design background and the mastery of User Experience Design skills.</p>
-    <p>Giulia bridges stakeholders and development teams: she facilitates their collaboration in designing solutions that balance business needs, technical feasibility and user expectations.</p>
+    <p>Aiming to bridge stakeholders and development teams, she facilitates their collaboration in designing solutions that balance business needs, technical feasibility and user expectations, with tools like Impact Mapping and User Story Mapping.</p>
+    <p>She believes in continuous learning, and her current interest is Product Strategy and User Experience Design for Conversational Interfaces and Internet of Things technologies.</p>
   twitter: giuliamantuano
   github: giuliamantuano
 
@@ -235,21 +227,10 @@
   twitter: raffellinic
   github: charlyraffellini
 
-- id: armanda
-  name: Armanda du Plessis
-  image: /assets/img/custom/team/armanda_du_plessis.jpg
-  role: Apprentice
-  fullDescription: >
-    <p>Armanda has worked as a programmer, software designer, web developer and freelance consultant across a variety of industries, in both South Africa and the UK.</p>
-    <p>Her career has been a curious journey of constant learning and improvement. She has broad technical knowledge, is a creative thinker with an inquisitive mind and loves solving problems. </p>
-    <p>She is drawn to the passions and values of software craftsmanship and fully believes in its enlightened culture.</p>
-  twitter: missarmiej
-  github: missarmiej
-
 - id: rachel
   name: Raquel M Carmena
   image: /assets/img/custom/team/raquel_m_carmena.jpg
-  role: Apprentice
+  role: Software Craftswoman
   fullDescription:
     <p>Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things.</p>
     <p>She loves new challenges and finds it very difficult to choose a single favourite area in her profession. For the past 10 years Raquel has worked in different projects, with different technologies, and in different industries. She lives and breathes business and values from her software products, services and ideas.</p>
@@ -260,10 +241,21 @@
 - id: francesco
   name: Francesco Gigli
   image: /assets/img/custom/team/francesco_gigli.jpg
-  role: Software Craftman
+  role: Software Craftsman
   fullDescription:
     <p>Francesco started in Italy as a Software Developer and System Administrator and his career changed dramatically when he arrived in London. He embraced DevOps, Self Organisation, and Software Craftsmanship. He implemented systems using Event Sourcing and React. He attends Open Conferences like SoCraTes and DevOpsDays.</p>
     <p>The two most important learnings, so far, have been the need for a Mutual Learning mindset for effective teamwork and the ubiquity of trade-offs.</p>
     <p>Some things have remained the same&colon; the desire to understand the behaviour of systems, the fearless crossing of system boundaries and responsibilities, and the love for good design and usable interfaces.</p>
   twitter: jaramir
   github: jaramir
+
+- id: eriktorres
+  name: Erik Torres Serrano
+  image: /assets/img/custom/team/erik_torres.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Erik is a software developer with over ten years experience developing concurrent and distributed systems. He strongly believes in pragmatism, practice and team working.</p>
+    <p>Erik is a lifelong learner, always looking for new ways to improve software quality, including coding practices, security and performance. He especially enjoys sharing his passion for development with others. Lately, you can find him improving his craft and helping others improve theirs in the Barcelona Java User Group and in the Software Craftsmanship Community.</p>
+    <p>Away from the keyboard, he loves the outdoors and spending time with his wife and son.</p>
+  twitter: ertorser
+  github: etorres

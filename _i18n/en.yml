@@ -129,7 +129,7 @@ company-contact:
    title: Contact us
 company-contact-form:
    title: Get In Touch
-   subtitle: Call us on <a href="tel:+442074902967">+44 207 4902967</a>, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
+   subtitle: Call us on +44 207 4902967, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
    email_placeholder: Email
    name_placeholder: Name
    text_placeholder: Type your message here...
@@ -350,5 +350,62 @@ thanks:
   our-blog: Our blog posts
   video-section: Video section
   services-we-offer: Services we offer
-  until-then: > 
+  until-then: >
     Until then, please check out the following resources:
+projects:
+  about: About
+  the_challenge: The Challenge
+  our_sc_approach: Our Software Craftmanship Approach
+  outcome: Outcome
+  next: Next Case Study
+  contact-form:
+    title: Let us help you to create better software
+    subtitle: Tell us about the project in the form bellow and we'll get back to you soon
+  ASOS:
+    metaheader: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
+    subtitle: <p>A multi-staged, multi-team manual deployment process was having a negative impact on the organisations ability to deploy changes frequently.</p>
+              <p>Software Craftsmanship was seen as a way to raise overall code quality, whilst providing a platform for the journey to Continuous Delivery.</p>
+    about: ASOS is an online fashion retailer, selling cutting-edge fashion and supporting a thriving fashion community Having started as a fashion blog, the brand now offers its clients mobile apps and a magazine in addition to its website offering Last year, ASOS had over 13.4 million active customers. 
+    the_challenge: <p>With over 123 million unique visits to their site per month and with 95 million page views per day, ASOS were struggling to adapt their systems and to ensure performance during peak periods (e g Black Friday). One of the key problems was a multi-stage, multi-team manual deployment process requiring the coordination of a large number of staff and manual testing.</p>
+                   <p>In an effort to modernise and improve their IT capabilities, ASOS underwent a programme to improve the speed of change, the ease, and rate of delivery and a general upskilling of staff in this area. They realised they were missing some key skills, particularly around agile technical practices, and asked us to help.</p>
+    our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
+                     <p>The work was in NET ASP NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
+                     <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and a <a href="/services">culture of DevOps</a> </p>
+    outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly Iterations are more organized and ceremonies are delivering more value.</p>
+             <p>We changed the technical practices within the team, raising the overall quality of code. Several team members that went through the training courses have been promoted into key engineering leadership positions.</p>
+             <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
+  Tesco:
+    metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
+    subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
+    about: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
+    the_challenge: <p>Tesco’s Supply Chain division were forecasting product demand on a legacy mainframe application. Changes were made to the forecasts using external tools (for instance, spreadsheets), which was having a negative impact on the business ability to trace irregularities. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
+                   <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work at Tesco.</p>
+    our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Worked in conjunction with the development team in Bangalore (India), we created a webapp that would help demand planners to order the right amount of product from suppliers. This webapp was connected to the legacy database through the new custom API.</p>
+                     <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
+    outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
+  Coniq:
+    metaheader: A Software Craftsmanship mindset helped to empower Coniq's in-house development team, enabling them to deliver their own quality software more frequently.
+    subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project.</p>
+    about: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
+    the_challenge: <p>Coniq wanted to build an application that, in conjunction with their clients existing EPOS (Electronic Point of Sale) software, would read barcode scans in store to provide their end customer with loyalty points and discounts.</p>
+                   <p>Given the relatively small size of the existing in-house development team, we were engaged to kick-start the project from conception all the way through to (gradually) handing over the project to their in-house development team.</p>
+    our_sc_approach: <p>We started by building the user journeys and wireframes with Coniq’s business stakeholders. A series of high-level designs were then produced in Photoshop by one of their in-house designers. These designs would then form part of the acceptance criteria for the features.</p>
+                     <p>We adopted a Scrum based methodology for the project, working on features within 2-week long sprints that had been agreed with Coniq’s Product Owner. The Product Backlog was maintained within Rally and since they had not used Agile tools like this before, our team guided the Product Owner through Product Backlog management and Scrum ceremonies.</p>
+                     <p>Development was conducted at our London offices and it was therefore important that we had regular face to face contact with Coniq’s team. As such, demos were delivered at their offices at the end of each Sprint. We also held most of the feature elaboration and planning meetings at their offices (with occasional visits by Coniq to our offices in London).</p>
+                     <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
+    outcome: <p>By working closely with the Coniq team and through regular communication, we were able to deliver the MVPs within the budget available for the project. Upon handover, the Coniq team were able to take over full ownership of the project and had the skills and processes in place to work through the remainder of their product backlog.</p>
+  AWS:
+    metaheader: Software Craftsmanship helped our team to build an AWS-based, serverless event registration platform for Amazon in just 6 weeks.
+    subtitle: <p>Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business.</p>
+              <p>Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.</p>
+    about: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
+    the_challenge: <p>AWS wanted to create a custom event registration system for their Pop-Up Loft event series in the UK, since existing third-party solutions compromised on the overall customer experience. This system would include a fully-functional event website, real-time data reporting functionality and an on-site event check-in system.</p>
+                   <p>AWS saw this as an ideal opportunity to create a brand new system on AWS, using the internally developed ‘Gold Standard’ serverless architecture design and Amazon services such as Amazon Lambda, CloudFront, API Gateway and Amazon S3. The front end was developed in Angular JS and Clojure was used to build the backend.</p>
+                   <p>AWS had limited internal resources to develop the project and needed a partner with expertise in both their technologies, security requirements and Agile methodologies.</p>
+    our_sc_approach: <p>The project needed to be completed in a 6 week timeframe. We therefore spent the first week working closely with the AWS Product Owner to define the backlog of features for the system and to identify the critical MVPs that had be completed ahead of the event launch date.</p>
+                     <p>During the same week, we worked with AWS’ technical team to understand their infosec and architectural best practices requirements for the project. Since AWS have strict security requirements around the handling of customer data, a full programme of security checks and penetration testing phases needed to be adhered to.</p>
+                     <p>We assigned a Principal Craftsman and an Apprentice to complete the UX, development and infrastructure work, which was conducted using a Scrum based methodology in 1 week sprints.</p>
+                     <p>Work was conducted at our offices, with a regular channel of communication to the Product Owner over Slack. This was particularly effective in providing real-time feedback on design choices for the front end and for user testing. Features were pushed directly to a staging environment using continuous integration, with regular product demos and retrospectives at being conducted at AWS’ London offices.</p>
+                     <p>Part of the feature set included a reporting tool to provide the business with detailed reports on the event. We spent time to help train the AWS marketing team on how to use the system.</p>
+    outcome: <p>Given the tight feedback loops and real-time interactions with the Product Owner, we were able to deliver both the MVPs for the project and several additional features ahead of the deadline. The event team were able to respond quickly to demand via the real-time data analysis (for instance session scheduling, staff rotas) and report session take-up and popularity to stakeholders.</p>
+             <p>AWS invited Codurance to add additional features to the system so that it could be used at future events. Our team also gave a talk on Software Craftsmanship at the AWS Summit London 2016.</p>
