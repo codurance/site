@@ -5,7 +5,7 @@ title: My first year at Codurance
 date: 2017-05-19 10:20:00 +00:00
 author: Halima Koundi
 image:
-   src: /assets/img/custom/blog/my-first-year-at-codurance/me_and_my_mentor.jpg
+   src: /assets/img/custom/blog/my-first-year-at-codurance/software-craftsmanship-apprentice-mentor.jpg
 tags:
 - apprenticeship
 - craftsmanship
