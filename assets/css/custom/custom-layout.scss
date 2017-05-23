@@ -634,6 +634,34 @@ i.no-border {   /* 0 0 1 1 */
   font-weight: 400;
 }
 
+.quote-v3 {
+  text-align: center;
+  padding: 85px 10% 40px;
+}
+
+.quote-v3 p {
+  color: #666;
+  font-size: 16px;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.quote-v3 p:before {
+  left: 50%;
+  top: -75px;
+  font-size: 80px;
+  content: "\201C";
+  position: absolute;
+  margin-left: -25px;
+  font-family: Georgia, serif;
+}
+
+.quote-v3 span {
+  color: #666;
+  font-weight: 400;
+}
+
 .content {
 	padding-top: 40px;
 	padding-bottom: 40px;
