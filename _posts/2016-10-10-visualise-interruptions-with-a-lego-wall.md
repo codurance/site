@@ -17,7 +17,7 @@ tags:
 ---
 
 
-As part of the [apprentice-craftsmen Programme](https://codurance.com/careers/) at Codurance, I had the privilege to attend the [Certified Scrum Product Owner course](https://skillsmatter.com/courses/152-martine-devos-scrum-product-owner) at Skills Matter. 
+I had the privilege to attend the [Certified Scrum Product Owner course](https://skillsmatter.com/courses/152-martine-devos-scrum-product-owner) at Skills Matter. 
 During the two-day course, I learnt many techniques to deliver value efficiently, and I am going to share a less widely known tool to help teams visualise interruptions.
 
 Keeping track of interruptions helps teams improve their productivity during inspect and adapt activities such as daily meetings and retrospectives. In order to turn impediments into opportunities, both development team and stakeholders should collaborate, support and trust each other. These concepts are at the foundation of “shared responsibility”: everybody is responsible for the success of the business.

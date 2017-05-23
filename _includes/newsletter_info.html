@@ -1,0 +1,5 @@
+<ul class="list-inline posted-info">
+  {% if page.date %}
+    <li>{% t post.date_title %} {{ page.date | date_to_string }}</li>
+  {% endif %}
+</ul>
