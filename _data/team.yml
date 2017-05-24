@@ -265,9 +265,9 @@
   image: /assets/img/custom/team/marc_badia.jpg
   role: Apprentice
   fullDescription:
-   <p>Is well known that people is born with a bread under his arm. Marc had a keyboard.</p>
-   <p>He found in computer science an inexhaustible source of information and with his passion for learning and his autodidact attitude he got trapped. Early he took part in some open source projects and created others as a hobby.</p>
-   <p>A few years ago he decided to convert his passion for programming into his job. That gave him the possibility to work with cloud environments, manage teams, agile practices, ...</p>
+   <p>It is well known that people are born with a bread under his arm. Marc had a keyboard.</p>
+   <p>With his passion for learning and his autodidact attitude he got trapped into computer science, where he found an inexhaustible source of information. Early, he took part in some open source projects and created otherones as a hobby.</p>
+   <p>A few years ago he decided to convert his passion for programming into his job. That gave him the possibility to work with cloud environments, manage teams, agile practices, legacy code, sql and no sql DB, ...</p>
    <p>He enjoys creating things like small programs to make life easier and share knowledge with people to improve. Lately he is playing with clojure and clojurescript.</p>
   twitter: alfrheim
   github: alfrheim
