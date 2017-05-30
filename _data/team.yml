@@ -271,3 +271,15 @@
    <p>He enjoys creating things like small programs to make life easier and share knowledge with people to improve. Lately he is playing with clojure and clojurescript.</p>
   twitter: alfrheim
   github: alfrheim
+
+- id: lucianopalma
+  name: Luciano Palma
+  image: /assets/img/custom/team/luciano_palma.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
+   <p>He likes Functional and Object-Oriented Programming, but is also looking forward to learn other programming paradigms in order to improve his skills and his contribution to the software community.</p>
+   <p>Believing that software is about people, Luciano enjoys reading books on a variety of topics, giving him a better understanding about the world, society, and changing the way he approaches software.</p>
+   <p>He also loves coffee and spending time in the outdoors.</p>
+  twitter: pspluciano
+  github: lpalma
