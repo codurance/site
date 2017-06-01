@@ -271,3 +271,14 @@
    <p>He enjoys creating things like small programs to make life easier and share knowledge with people to improve. Lately he is playing with clojure and clojurescript.</p>
   twitter: alfrheim
   github: alfrheim
+
+- id: nacho
+  name: Nacho Cougil
+  image: /assets/img/custom/team/nacho_cougil.jpg
+  role: Software Craftsman
+  fullDescription:
+   <p>Nacho didn't remember very well when he started to play with computers. It was when he was a kid, when he started playing with neighbor's video game computers (MSX and Commodore 64). At some point, he learned how to write instructions to the computer and take advantage of that for playing games... and he was astonished. From that moment, he realized that technologies had caught him.</p>
+   <p>Always worried about how to answer questions like <i>"how can we make it better?"</i> or <i>"how this works?"</i>, he shares his knowledge with all the people he can, while at the same time tries to learn how to build better software. May be because of these reasons, he founded the <a href="http://www.barcelonajug.org">Barcelona Java Users Group</a> and the <a href="http://www.jbcnconf.com">Java and JVM Barcelona Conference</a>.</p>
+   <p>He enjoys a lot spending time with his family (wife and daughter) and also likes to play many sports like body combat, basketball, football and running (marathons and even longer runs, but only by the mountains).</p>
+  twitter: icougil
+  github: cougil
