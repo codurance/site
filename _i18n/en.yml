@@ -274,6 +274,7 @@ careers:
      personality_description: Due to the nature of our work (we are a consultancy company and we work directly with our clients in all our projects), it is important that you have good communication skills and like working as part of a team. You are able to present your opinions and ideas in a clear, collaborative, respectfull and effective manner. You havea strong desire to build well-crafted software, constantly improve yourself, and to help others do the same. You are constantly learning and can describe all the different ways you achieve that. You consider yourself a technologist and is always keen to explore and work with different technologies. You don\'t shy away form leadership roles and are comfortable to lead by example.
      hiring_title: Hiring process
      hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+     benefits_title: What you'll get
 careers-how_we_grow:
    title: How we grow?
    description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -315,33 +316,34 @@ careers-join-how_to_apply:
         <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 careers-open_positions:
    title: Open positions
-   description: <p>Phasellus vitae ipsum ex. Etiam eu vestibulum ante. <br>Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipiscing elit. Morbi libero libero imperdiet fringilla </p>
+   description: <p>We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsman or an aspiring Apprentice, we would love to hear from you.</p>
 careers-become_a_craftsman:
    title: Become a Craftsman
-   description: <p>Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra. Quis lacinia dolor.</p>
+   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
    link_title: Read the full description
+   apply_title: I'm interested
 careers-become_an_apprentice:
    title: Become an Apprentice
-   description: <p>Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra. Quis lacinia dolor. Quis lacinia dolor. Quis lacinia dolor. Quis lacinia dolor.</p>
+   description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
    link_title: Read the full description
 careers-hiring_process:
    title: Hiring process
-   description: <p>Our selection process is composed by 3 to 5 steps, depending on candidate:</p>
+   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
    step_1:
-    title: Step one
-    description: <p>30 to 45 minutes phone interview where we try to get a general understanding of your profile and also explain things we find important for you to know before you decide to continue the process</p>
+    title: Telephone Interview
+    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to <strong>TODO...</strong></p>
    step_2:
-    title: Step two
-    description:  <p>Coding skills verification. If during the phone interview we judge your coding skills (mainly TDD and software design) may not be aligned to our expectations, we will ask you to do a coding exercise and submit it to us when you are done - there are not specific time limit. We will then review your code and send you the feedback - that is a promise.</p>
+    title: Coding Exercise
+    description:  <p>We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
    step_3:
-    title: Step three
+    title: Pair Programming
     description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftsmen.</p>
    step_4:
-    title: Step four
-    description: <p>Technical chat with our senior and/or principal craftsmen.</p>
+    title: Final Interview
+    description: <p>A final face-to-face or remote interview with our co-founders. </p>
    step_5:
-    title: Step five
-    description: <p>Final interview with the founders.</p>
+    title: Offer
+    description: <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.</p>
    additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftsmen and a final interview with the founders.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
