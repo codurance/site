@@ -12,7 +12,7 @@ task :build do
 end
 
 task :buildboth do
-  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml --trace'
+  sh 'bundle exec jekyll build --config _config.yml,_config_default.yml --trace'
 end
 
 task :buildprb do
