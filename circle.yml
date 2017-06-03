@@ -2,7 +2,6 @@ machine:
   ruby:
     version: 2.3.1
   environment:
-    PR_NUMBER: $(echo ${CI_PULL_REQUEST##*/})
     FOLDER_NAME: "site-$CIRCLE_BRANCH"
     WEBSITE_INDEX_DOCUMENT: index.html
     AWS_REGION: eu-west-1
@@ -12,8 +11,6 @@ dependencies:
   cache_directories:
     - "/opt/circleci/.rvm/gems"
   pre:
-    - echo $CIRCLE_PULL_REQUEST
-    - echo $CIRCLE_PULL_REQUESTS
     - gem install bundler
     - gem install rspec-core -v '3.4.1'
     - gem install jekyll

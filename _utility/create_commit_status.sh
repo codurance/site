@@ -11,9 +11,9 @@ curl "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/statuses/$COMMIT_SHA?a
   -H "Content-Type: application/json" \
   -X POST \
   -d "{
-        \"state\":\"success\"
-        \"target_url\": \"$DEPLOYMENT_URL\"
-        \"description\": \"Deployed preview\"
+        \"state\":\"success\",
+        \"target_url\": \"$DEPLOYMENT_URL\",
+        \"description\": \"Deployed preview\",
         \"context\": \"codurance/preview\"
       }"
 
