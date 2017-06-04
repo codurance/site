@@ -261,6 +261,20 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   become_a_craftsman:
+     join_title: Joining Codurance
+     join_description: We are a company formed by craftswomen and craftsmen who care about the quality of the work we do and also who we do it with. We are always looking for the talented people who share our passion for writing well-crafted code and believe in the principles and values of Software Craftmanship, Exreme Programming and Agile software development. For us, mastering a strong set of technical practices is as important as our understanding of different technology stacks we use. <br> Due to the nature of the work we do - working closely with our clients and their technical teams - good communication skills, willingness to learn and work with different technology stacks, fully embrace Extreme Programming practices and Agile methodologies, and confidence to express ideas are essential to join our team.
+     practices_title: Practices
+     practices_description: You have a good experience with Extreme Programming practices (Specially TDD and CI), DevOps (experience setting up build pipelines and automation (Continuous Deployment)), and a good understanding of different Agile practices and how they can help a team to work effectively.
+     design_title: Design and Architecture
+     design_description: You have a good appreciation for software design at micro and macro level, including familirtity with SOLID principles and DDD (Domain Driven Design). You naturally follow Clean Code principles (have you read the book?). You also have some understanding of different types of architecture including layered and hexagonal architectures, microservices, CQRS, and Event Sourcing. You understand the basics principles of security, logging, monitoring, and supportin projects in production.
+     technology_stacks_title: Technology stacks
+     technology_stacks_description: Although we are always exploring different technologies, currently, the three main technology stacks we use are JVM (Java/Clojure/Scala), Net (C#/F#), and NodeJS. Most of our projects use amazon AWS or Azure as a cloud solution. We expect a solid experience in at least one of the languages we use and familiarity with cloud solutions.
+     personality_title: Personality
+     personality_description: Due to the nature of our work (we are a consultancy company and we work directly with our clients in all our projects), it is important that you have good communication skills and like working as part of a team. You are able to present your opinions and ideas in a clear, collaborative, respectfull and effective manner. You havea strong desire to build well-crafted software, constantly improve yourself, and to help others do the same. You are constantly learning and can describe all the different ways you achieve that. You consider yourself a technologist and is always keen to explore and work with different technologies. You don\'t shy away form leadership roles and are comfortable to lead by example.
+     hiring_title: Hiring process
+     hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+     benefits_title: What you'll get
 careers-how_we_grow:
    title: How we grow?
    description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -300,6 +314,37 @@ careers-join-how_to_apply:
         </ul>
 
         <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
+careers-open_positions:
+   title: Open positions
+   description: <p>We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsman or an aspiring Apprentice, we would love to hear from you.</p>
+careers-become_a_craftsman:
+   title: Become a Craftsman
+   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
+   link_title: Read the full description
+   apply_title: I'm interested
+careers-become_an_apprentice:
+   title: Become an Apprentice
+   description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
+   link_title: Read the full description
+careers-hiring_process:
+   title: Hiring process
+   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
+   step_1:
+    title: Telephone Interview
+    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to <strong>TODO...</strong></p>
+   step_2:
+    title: Coding Exercise
+    description:  <p>We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
+   step_3:
+    title: Pair Programming
+    description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftsmen.</p>
+   step_4:
+    title: Final Interview
+    description: <p>A final face-to-face or remote interview with our co-founders. </p>
+   step_5:
+    title: Offer
+    description: <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.</p>
+   additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftsmen and a final interview with the founders.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong>
