@@ -313,16 +313,17 @@ careers-join-how_to_apply:
 
         <p>Un CV actualizado es siempre de ayuda. También queremos que nos envíes tus enlaces a blogs, repositorios de código y cualquier otro recurso que nos ayude a comprender tu lado profesional.</p>
 careers-open_positions:
-   title: Open positions
-   description: <p>Phasellus vitae ipsum ex. Etiam eu vestibulum ante. <br>Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipiscing elit. Morbi libero libero imperdiet fringilla </p>
+   title: Te gusta escribir software bien hecho, ¡a nosotros también!  
+   description: <p>Estamos buscando gente que, como nosotros, comparta los valores de la Artesanía del Software. Tanto si eres un Artesano del software con experiencia como si eres un Aprendiz, nos gustaría conocerte.</p>
 careers-become_a_craftsman:
    title: Become a Craftsman
-   description: <p>Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra. Quis lacinia dolor.</p>
-   link_title: Read the full description
+   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
+   link_title: Para saber más y aplicar 
+   apply_title: I'm interested
 careers-become_an_apprentice:
    title: Become an Apprentice
-   description: <p>Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra. Quis lacinia dolor. Quis lacinia dolor. Quis lacinia dolor. Quis lacinia dolor.</p>
-   link_title: Read the full description
+   description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
+   link_title: Para saber más y aplicar 
 careers-hiring_process:
    title: Hiring process
    description: <p>Our selection process is composed by 3 to 5 steps, depending on candidate:</p>
