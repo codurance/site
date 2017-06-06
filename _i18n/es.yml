@@ -318,30 +318,30 @@ careers-open_positions:
 careers-become_a_craftsman:
    title: Become a Craftsman
    description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
-   link_title: Para saber más y aplicar 
+   link_title: Apply
    apply_title: I'm interested
 careers-become_an_apprentice:
    title: Become an Apprentice
    description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
-   link_title: Para saber más y aplicar 
+   link_title: Apply
 careers-hiring_process:
    title: Hiring process
-   description: <p>Our selection process is composed by 3 to 5 steps, depending on candidate:</p>
+   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
    step_1:
-    title: Step one
-    description: <p>30 to 45 minutes phone interview where we try to get a general understanding of your profile and also explain things we find important for you to know before you decide to continue the process</p>
+    title: Telephone Interview
+    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.</p>
    step_2:
-    title: Step two
-    description:  <p>Coding skills verification. If during the phone interview we judge your coding skills (mainly TDD and software design) may not be aligned to our expectations, we will ask you to do a coding exercise and submit it to us when you are done - there are not specific time limit. We will then review your code and send you the feedback - that is a promise.</p>
+    title: Coding Exercise
+    description:  <p>We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
    step_3:
-    title: Step three
+    title: Pair Programming
     description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftsmen.</p>
    step_4:
-    title: Step four
-    description: <p>Technical chat with our senior and/or principal craftsmen.</p>
+    title: Final Interview
+    description: <p>A final face-to-face or remote interview with our co-founders. </p>
    step_5:
-    title: Step five
-    description: <p>Final interview with the founders.</p>
+    title: Offer
+    description: <p>We will send you the job offer, including the details for the benefits package and the contract.</p>
    additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftsmen and a final interview with the founders.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
