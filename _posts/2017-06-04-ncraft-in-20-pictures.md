@@ -15,7 +15,7 @@ tags:
 NCrafts 2017 is a two days conference in Paris. I had the chance to also attend an event storming workshop run by Alberto Bbrandolini a day before the conference.
 It was full of fun, socialising and learning.
 
-Here are some of the things I learned during those three days of awesomeness:
+Here are some of my takeways of those three days of awesomeness:
 
 {% img /assets/img/custom/blog/ncraft-2017/event-storming-with-brandolini.jpg "" %}
 About event storming and that I admire Brandolini.
@@ -45,7 +45,7 @@ Community of practices are efficient ways to break team silo.
 XP to the extreme works.
 
 
-{% img /assets/img/custom/blog/ncraft-2017/ncraft-beer.jpg "" %}
+{% img /assets/img/custom/blog/ncraft-2017/ncrafted-beer.jpg "" %}
 Craft beer is a must have, looking forward to the veggie smoothie trend.
 
 
@@ -72,11 +72,7 @@ We as developers have duty to not harm and inform non tech savvy.
 {% img /assets/img/custom/blog/ncraft-2017/craftsmanship-father-to-son.jpg "" %}
 I completely buy in the metaphore of devs as an artisanal trade and the comparison with masonry.
 
-
-<video width="620" height="440" controls>
-  <source src="/assets/img/custom/blog/ncraft-2017/ncraft-speakers.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/nytXq9Ql37g"></iframe>
 <br/>Diversity in speakers makes tech conferences much more interesting. 
 But diversity in attendees is lacking and a sad reflection of our industry.
 
