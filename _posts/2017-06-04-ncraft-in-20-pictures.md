@@ -62,7 +62,7 @@ Coding among the chickens sounds like something I would enjoy doing.
 
 
 {% img /assets/img/custom/blog/ncraft-2017/ncraft-open-space.jpg "" %}
-Open spaces in conferences is a surprisingly pleasant alternative, especially when being reminded that the talks will be recorded (FOMO contained).
+Open spaces in conferences is cool, especially when being reminded that the talks will be recorded (FOMO contained).
 
 
 {% img /assets/img/custom/blog/ncraft-2017/the-dev-awakening.jpg "" %}
