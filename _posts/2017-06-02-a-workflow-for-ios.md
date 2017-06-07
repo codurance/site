@@ -100,7 +100,7 @@ When the feature branch is ready, you can start working on all the changes you n
 
 It is very important to do frequent commits, not only to save your work and to be able to track your progress, but also because commits tell the story of all the process you are following and help others to understand how and why you made the changes decided to make.
 
-Commit messages are also very important and you should take your time to write them. Be clear, direct and concise, use the minimum number of words to define clearly the actions and changes you did. There is a great post about how to write a good commit message [here].
+Commit messages are also very important and you should take your time to write them. Be clear, direct and concise, use the minimum number of words to define clearly the actions and changes you did. There is a great post about how to write a good commit message [here](https://chris.beams.io/posts/git-commit/).
 
 ###Open a pull request
 
@@ -120,9 +120,9 @@ Before doing that, we should ensure that no conflict will happen on the future m
 
 These two things can be done manually, build an ad-hoc version with the right provisioning profile and choose a place to upload it and send emails to the test team saying you have something there to test.
 
-But as always automating things will make everything easier and more reliable. To do that you have two great tools to the rescue [fastlane] and [Fabric]. Once you are done with the setup it’s as easy as typing on the command line:
+But as always automating things will make everything easier and more reliable. To do that you have two great tools to the rescue [fastlane](https://github.com/fastlane/fastlane) and [Fabric](https://fabric.io). Once you are done with the setup it’s as easy as typing on the command line:
 
-```fastlane feature
+`fastlane feature`
 
 And that will do all the work for you.
 
@@ -156,7 +156,7 @@ This is the moment to generate a new binary for integration tests, and in this c
 
 Again _Fastlane_ comes to the rescue and allows us to automate this process by just calling
 
-```fastlane beta`
+`fastlane beta`
 
 All external testers will be notified that a new beta version is ready to test.
 
