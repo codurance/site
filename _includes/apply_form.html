@@ -1,0 +1,44 @@
+<form action="#" id="sky-form2" class="sky-form">  
+<div class="modal fade" id="{{ include.target }}-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel4">{{ include.title }}</h4>
+              </div>
+              <div class="modal-body">
+                  <div id="{{ include.target }}-fields">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <p><label>Name</label><input name="{{ include.target }}-name" class="form-control" type="text" /></p>
+                            <p><label>Email</label><input name="{{ include.target }}-email" class="form-control" type="text" /></p>
+                            <p><label>Tell us about yourself</label><textarea name="{{ include.target }}-message" class="form-control" rows="10" name="message" id="message"></textarea>   </p>
+                        </div>
+                    </div>
+                    <div class="row"><div class="col-md-12">
+                          <div id="input-error-msg-{{ include.target }}" class="alert alert-danger fade in hide">
+                              <strong>Please: </strong> enter all the requested fields.
+                          </div>
+                    </div></div>
+                    <div class="row"><div class="col-md-12">
+                          <div id="error-msg-{{ include.target }}" class="alert alert-danger fade in hide">
+                              <strong>Ops somthing went wrong: </strong> please try later or email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>.
+                          </div>
+                    </div></div>
+                  </div>
+                  <div>
+                    <div id="success-msg-{{include.target}}" class="alert alert-success fade in hide">
+                              <strong>Thank you: </strong> we will be in touch with you shortly.
+                          </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn-u btn-u-default" data-dismiss="modal">Close</button>
+                  <button id="{{ include.target }}-apply-btn" type="button" class="btn-u btn-u-primary" onclick="submitApplication('{{ include.title }}', '{{ include.target }}');" >Apply</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
+
