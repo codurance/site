@@ -319,7 +319,7 @@ careers-become_a_craftsman:
    title: Conviértete en Artesano de Software 
    description: <p>Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.</p>
    link_title: Aplicar 
-   apply_title: I'm interested
+   apply_title: Estoy interesado
 careers-become_an_apprentice:
    title: Conviértete en Aprendiz
    description: <p>Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.</p>
@@ -328,20 +328,20 @@ careers-hiring_process:
    title: Proceso de contratación 
    description: <p>Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato:</p>
    step_1:
-    title: Entrevista telefónica
-    description: <p>Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.</p>
+     title: Entrevista telefónica
+     description: <p>Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.</p>
    step_2:
-    title: Ejercicio de codificación 
-    description:  <p>Verificación de habilidades de programación. Si consideramos que las habilidades de programación (principalmente TDD y diseño de software) que has demostrado durante la entrevista telefónica no coinciden con nuestras expectativas, te pediremos que hagas un ejercicio de programación y que nos lo envíes una vez lo hayas terminado (no hay un tiempo límite para completar el ejercicio). Nosotros lo revisaremos y te daremos nuestra opinión (es una promesa).</p>
+     title: Ejercicio de programación
+     description:  <p>Verificación de habilidades de programación. Si consideramos que las habilidades de programación (principalmente TDD y diseño de software) que has demostrado durante la entrevista telefónica no coinciden con nuestras expectativas, te pediremos que hagas un ejercicio de programación y que nos lo envíes una vez lo hayas terminado (no hay un tiempo límite para completar el ejercicio). Nosotros lo revisaremos y te daremos nuestra opinión (es una promesa).</p>
    step_3:
-    title: Par de programación
-    description: <p>Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.</p>
+     title: Programación en pareja
+     description: <p>Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.</p>
    step_4:
-    title: Entrevista técnica
-    description: <p>Charla técnica con uno de nuestros Artesanos senior y/o principal. </p>
+     title: Entrevista técnica
+     description: <p>Charla técnica con uno de nuestros Artesanos senior y/o principal. </p>
    step_5:
-    title: Entrevista final
-    description: <p>Entrevista final con los fundadores.</p>
+     title: Entrevista final
+     description: <p>Entrevista final con los fundadores.</p>
    additional_information: <p>Dependiendo de cuánto conozcamos a cada candidato, podemos cambiar el orden de los pasos o saltarnos algunos de ellos. Los únicos dos pasos que siempre forman parte de todo proceso de selección son la programación en pareja con uno o más Artesanos y la entrevista final con los fundadores.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
