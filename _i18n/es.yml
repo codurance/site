@@ -316,33 +316,33 @@ careers-open_positions:
    title: Te gusta escribir software bien hecho, ¡a nosotros también!  
    description: <p>Estamos buscando gente que, como nosotros, comparta los valores de la Artesanía del Software. Tanto si eres un Artesano del software con experiencia como si eres un Aprendiz, nos gustaría conocerte.</p>
 careers-become_a_craftsman:
-   title: Become a Craftsman
-   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
-   link_title: Apply
+   title: Conviértete en Artesano de Software 
+   description: <p>Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.</p>
+   link_title: Aplicar 
    apply_title: I'm interested
 careers-become_an_apprentice:
-   title: Become an Apprentice
-   description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
-   link_title: Apply
+   title: Conviértete en Aprendiz
+   description: <p>Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.</p>
+   link_title: Aplicar
 careers-hiring_process:
-   title: Hiring process
-   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
+   title: Proceso de contratación 
+   description: <p>Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato:</p>
    step_1:
-    title: Telephone Interview
-    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.</p>
+    title: Entrevista telefónica
+    description: <p>Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.</p>
    step_2:
-    title: Coding Exercise
-    description:  <p>We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
+    title: Ejercicio de codificación 
+    description:  <p>Verificación de habilidades de programación. Si consideramos que las habilidades de programación (principalmente TDD y diseño de software) que has demostrado durante la entrevista telefónica no coinciden con nuestras expectativas, te pediremos que hagas un ejercicio de programación y que nos lo envíes una vez lo hayas terminado (no hay un tiempo límite para completar el ejercicio). Nosotros lo revisaremos y te daremos nuestra opinión (es una promesa).</p>
    step_3:
-    title: Pair Programming
-    description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftsmen.</p>
+    title: Par de programación
+    description: <p>Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.</p>
    step_4:
-    title: Final Interview
-    description: <p>A final face-to-face or remote interview with our co-founders. </p>
+    title: Entrevista técnica
+    description: <p>Charla técnica con uno de nuestros Artesanos senior y/o principal. </p>
    step_5:
-    title: Offer
-    description: <p>We will send you the job offer, including the details for the benefits package and the contract.</p>
-   additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftsmen and a final interview with the founders.</p>
+    title: Entrevista final
+    description: <p>Entrevista final con los fundadores.</p>
+   additional_information: <p>Dependiendo de cuánto conozcamos a cada candidato, podemos cambiar el orden de los pasos o saltarnos algunos de ellos. Los únicos dos pasos que siempre forman parte de todo proceso de selección son la programación en pareja con uno o más Artesanos y la entrevista final con los fundadores.</p>
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: Estamos muy orgullosos de anunciar que Codurance es <strong>socio oficial de JetBrains.</strong>
