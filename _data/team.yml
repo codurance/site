@@ -272,12 +272,24 @@
   twitter: alfrheim
   github: alfrheim
 
+- id: lucianopalma
+  name: Luciano Palma
+  image: /assets/img/custom/team/luciano_palma.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
+   <p>He likes Functional and Object-Oriented Programming, but is also looking forward to learn other programming paradigms in order to improve his skills and his contribution to the software community.</p>
+   <p>Believing that software is about people, Luciano enjoys reading books on a variety of topics, giving him a better understanding about the world, society, and changing the way he approaches software.</p>
+   <p>He also loves coffee and spending time in the outdoors.</p>
+  twitter: pspluciano
+  github: lpalma
+
 - id: nacho
   name: Nacho Cougil
   image: /assets/img/custom/team/nacho_cougil.jpg
   role: Software Craftsman
   fullDescription:
-   <p>Nacho started to play with computers at a very early age. As a kid, he starting playing with the neighbour's MSX and Commodore 64 computes. At some point, he learned how to write instructions for those computers to modify the games to his advantage. From that moment he was hooked.</p>
+   <p>Nacho started to play with computers at a very early age. As a kid, he starting playing with the neighbour's MSX and Commodore 64 computers. At some point, he learned how to write instructions for those computers to modify the games to his advantage. From that moment he was hooked.</p>
    <p>Always concerned with questions like <i>"how does it work?" and "how can we make it better?"</i>, Nacho loves to share his knowledge with others and at the same time learn from others. As a natural progression to this attitude, he founded the <a href="http://www.barcelonajug.org">Barcelona Java Users Group</a> and the <a href="http://www.jbcnconf.com">Java and JVM Barcelona Conference</a>.</p>
    <p>Nacho enjoys spending time with his family (wife and daughter) and also likes to play basketball, football, and body combat. He loves running and has run marathons and even longer distances by the mountains.</p>
   twitter: icougil
