@@ -5,6 +5,8 @@ name: A Matter Of Perception And Concept
 title: 'A Matter Of Perception And Concept'
 date: 2017-04-24 09:00:00 +00:00
 author: Armanda du Plessis
+image:
+  src: /assets/img/custom/home/computerdesk_original_opt_bw.jpg
 tags:
 - Ubiquitous Language
 - Bounded Context

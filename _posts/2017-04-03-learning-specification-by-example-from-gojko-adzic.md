@@ -6,7 +6,7 @@ title: 'Learning Specification By Example from Gojko Adzic'
 date: 2017-04-03 09:00:00 +00:00
 author: Giulia Mantuano
 image:
-- src: /assets/img/custom/blog/2017-04-03-learning-specification-by-example-from-gojko-adzic.jpg
+  src: /assets/img/custom/blog/2017-04-03-learning-specification-by-example-from-gojko-adzic.jpg
 tags:
 - System Requirements
 - Acceptance Test
