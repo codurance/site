@@ -5,6 +5,8 @@ name: A Workflow for iOS
 title: 'A Workflow for iOS'
 date: 2017-06-01 09:00:00 +00:00
 author: Guillem Fernandez
+image:
+  src: /assets/img/custom/home/computerdesk_original_opt_bw.jpg
 tags:
 - iOS
 - GitFlow
