@@ -19,7 +19,7 @@ But I felt there must be another way. Firefighting is not a sustainable activity
 
 ## Why Software Craftsmanship
 
-I had been attending [LSCC meetups]("https://www.meetup.com/london-software-craftsmanship/") for more than a year, and around April last year I decided to apply for an apprenticeship position at Codurance: it is one of the best move I took career wise after deciding to learn to code. 
+I had been attending [LSCC meetups](https://www.meetup.com/london-software-craftsmanship/) for more than a year, and around April last year I decided to apply for an apprenticeship position at Codurance: it is one of the best move I took career wise after deciding to learn to code. 
 I hated my job at that time, I was working on a five headed monster application that would break every time I made a change to it.
 Going to LSCC and talking to other developers, I realised I was not alone feeling that there must be another way, that having to debug an application for hours does not feel right. That not being confident about the state of the code base such as making any change to it would be synonymous of fear and stress does not feel normal.
 I heard about the Software Craftsman book and I read The Pragmatic Programmer book and I realised what was missing in my career: professionalism.
@@ -33,7 +33,7 @@ Two weeks later, as I had little time on weekdays to work on it, I submitted my 
 ## The code review: I am not going to code anymore!
 
 And a bit less than a week later, I received the code reviews from Sandro and Steve.
-I never had such a thorough code review, actually I never got a code review from an interview process. It felt like a big slap in the face, and I felt quite bad as I did not realise how big my knowledge gap was. I just had to [go for a run to get over it]("https://www.theguardian.com/lifeandstyle/the-running-blog/2016/apr/19/running-good-for-mental-health-england-athletics-ambassador-mind").
+I never had such a thorough code review, actually I never got a code review from an interview process. It felt like a big slap in the face, and I felt quite bad as I did not realise how big my knowledge gap was. I just had to [go for a run to get over it](https://www.theguardian.com/lifeandstyle/the-running-blog/2016/apr/19/running-good-for-mental-health-england-athletics-ambassador-mind).
 And energized more than ever, I wrote back to thank them for their time and said I was willing to put the effort to learn and study hard to become a great programer and a software craftswoman. And I was determined; be it at Codurance or not.
 
 ## The Apprenticeship: My mentor is amazing
@@ -52,7 +52,7 @@ At Codurance, we have a list of criteria to be met before an apprentice can beco
 - Coding (TDD classicist and Outside In, SOLID principles, refactoring and code smells, pair programming, …) and 
 - Engineering (continuous integration, data modelling, architecture and macro design, security)
  
-With different level of mastery required for each skill, based on the [Dreyfus model of skill acquisition]("https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition").
+With different level of mastery required for each skill, based on the [Dreyfus model of skill acquisition](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition).
 There was a lot of work to do in my case.
 My mentor and I agreed on a strategy for learning; with test driven development as the main goal.
 We did set up a work plan for each week, and reviewed my progress weekly. The usual workload was roughly as: TDD katas in C# every week, in javascript every other week; reading a number of chapters of various books every week, studying a cloud design pattern and when possible implementing it; one blog post every two weeks (I did not always made this one); do a lightning talk every fortnight at the Codurance catch ups. 
@@ -65,11 +65,11 @@ Every week, each week for six months, not only would he spend an evening with me
 I am so glad and grateful for all the time he gave me and all the skills I acquired with him. <br/>
 I am grateful for being at Codurance surrounded with people who care about the state and the future of their industry, the level of their craft, and the skills of their peers.
 
-## I am not a Software craftsman, I am a [journeyman]("https://en.wikipedia.org/wiki/Journeyman")
+## I am not a Software craftsman, I am a [journeyman](https://en.wikipedia.org/wiki/Journeyman)
 
 Being around skilled people is thrilling and challenging.
 I struggle to say that I am a software craftsman. When I think about the word, I picture my mentor, my colleagues, the founders of Codurance; one of whom is the author of the Software Craftsman; and I know I am nowhere near that level of craft yet. And that is alright.<br/>
-This is what generally happens in all artisanal trades: one starts as an apprentice, study and learn from other craftsmen, “through education, supervised experience, and examination”. Then becomes a [journeyman]("https://en.wikipedia.org/wiki/Journeyman"),”considered competent and authorized to work in that field as a fully qualified employee”. Then after years of experiences, recognition and evaluation from other craftsmen; “[a] journeyman, as a qualified tradesman could become a master”.<br/>
+This is what generally happens in all artisanal trades: one starts as an apprentice, study and learn from other craftsmen, “through education, supervised experience, and examination”. Then becomes a [journeyman](https://en.wikipedia.org/wiki/Journeyman),”considered competent and authorized to work in that field as a fully qualified employee”. Then after years of experiences, recognition and evaluation from other craftsmen; “[a] journeyman, as a qualified tradesman could become a master”.<br/>
 There are so many things that I am yet to master. And that is alright.<br/>
 I believe this can only be achieved through many years of experience in the field with skilled professional and deliberate practice. And that is alright. <br/>
 This is what makes our craft so fascinating, rich and fulfilling.
