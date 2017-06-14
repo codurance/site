@@ -61,7 +61,7 @@ The best talks are the one full of courage to face one's vulnerabilities.
 
 
 {% img /assets/img/custom/blog/ncraft-2017/ncraft-open-space.jpg "" %}
-Open spaces in conferences is cool, especially when being reminded that the talks will be recorded (FOMO contained).
+Open spaces at conferences are cool, especially when being reminded that the talks will be recorded (FOMO contained).
 
 
 {% img /assets/img/custom/blog/ncraft-2017/the-dev-awakening.jpg "" %}
@@ -69,7 +69,7 @@ We as developers have duty to [not harm and inform](http://ncrafts.io/speaker/Ly
 
 
 {% img /assets/img/custom/blog/ncraft-2017/craftsmanship-father-to-son.jpg "" %}
-I completely buy in the metaphore of devs as an artisanal trade and [the comparison with masonry](http://ncrafts.io/speaker/GillesRoustan).
+I completely buy into the metaphore of software development as an artisanal trade and [the comparison with masonry](http://ncrafts.io/speaker/GillesRoustan).
 
 <iframe style="height: 400px; width: 100%;" src="https://www.youtube.com/embed/nytXq9Ql37g"></iframe>
 <br/>Diversity in speakers makes tech conferences much more interesting. 
