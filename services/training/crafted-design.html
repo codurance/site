@@ -8,9 +8,8 @@ training: Crafted Design
     <div class="col-md-6 col-md-offset-3">
         <h1>Crafted Design</h1>
         <h4 class="margin-bottom-20">Created by Sandro Mancuso</h4>
-        <p class="margin-bottom-40 training-description"><strong>For experienced developers that want to get better at designing well-crafted solutions.</strong> It focuses on designing software that is responsive to changing requirements and new
-            functionality, avoiding the pitfalls that lead to legacy code.</p>
-        <a href="{{ '/services#training' | prepend: site.baseurl }}" class="training-link-btn btn-u btn-brd btn-u-orange btn-u-lg margin-right-20"
+        <p class="margin-bottom-40 training-description"><strong>For experienced developers who want to get better at designing well-crafted solutions.</strong> This training addresses design from the most micro level (via TDD) all the way up to micro services definition by analsying buisness requirements. The mission is to learn how to design software that is responsive to changing requirements and new functionally, avoiding some of the pitfalls that lead to legacy code.</p>
+        <a href="{{ '/services/training' | prepend: site.baseurl }}" class="training-link-btn btn-u btn-brd btn-u-orange btn-u-lg margin-right-20"
            type="button">More courses</a>
         <a href="#contact" class="training-link-btn btn-u btn-brd btn-u-orange btn-u-lg" type="button">Contact</a>
     </div>
@@ -28,31 +27,46 @@ training: Crafted Design
 	<div class="row margin-bottom-20">
             <h3>Why attend?</h3>
             <ul>
-                <li>Learn design techniques applied in successful projects</li>
-                <li>Use TDD as a design tool, applying Outside-In TDD</li>
-                <li>Drive out a flexible design</li>
-                <li>Build software that is not bound to a specific technology or framework by keeping them at the
-                    boundaries of your system
-                </li>
-                <li>Express your business domain in every facet of your entire application, not just methods and
-                    classes
-                </li>
-                <li>Keep your design clean as your application grows and requirements change</li>
-                <li>Let your architecture emerge, rather than designing a rigid and unchangeable structure up-front</li>
+                <li>Learn design techniques applied in <strong>successful projects.</strong></li>
+                <li>Use <strong>TDD</strong> as a design tool, learning about the two main TDD styles (<strong>Classicist and Outside-In</strong>) and how they differ when driving the design of your code.</li>
+                <li>Drive out a <strong>flexible design</strong> at different levels, from details of code all the way up to <strong>micro services</strong>.</li>
+                <li>Build software that is not bound to a specific technology or framework by keeping them at the boundaries of your system.</li>
+                <li>Express your <strong>business domain</strong> in every facet of your application, not just methods and classes.</li>
+                <li>Keep your design clean as your application grows and requirements change.</li>
+                <li>Let your <strong>architecture emerge</strong>, rather than designing a rigid and unchangeable structure up-front.</li>
+                <li>Learn how to derive a micro services architecture from business requriements and <strong>bounded contexts.</strong></li>
+                <li>Learn how to <strong>model behaviour</strong> intead of state keeping your design more <strong>aligned to business goals</strong>.</li> 
             </ul>
         </div>
 
         <div class="row margin-bottom-20">
             <h3>Content</h3>
+
+            <h4>Day 1</h4>
+            <p>The first day is dedicated to software design at coding level. Developers will work in pairs on two large exercises, using different TDD styles and comparing their solutions. The day is also full of design discussions around the exercises and real world scenarios.</p>
+
             <ul>
-                <li>Four elements of simple design</li>
-                <li>Use TDD as a design tool with Outside-In TDD</li>
-                <li>Business application of SOLID principles</li>
-                <li>Testing and refactoring legacy code to express business domain</li>
-                <li>Interaction Driven Design (IDD)</li>
-                <li>Map and visualise business concepts in code</li>
+                <li>Write tests focused on behaviour instead of state.</li>
+                <li>Emergent design through classicist TDD.</li>
+                <li>SOLID principles.</li>
+                <li>BAP - Balanced Abstraction Principle.</li>    
+                <li>Use TDD as a design tool with Outside-In TDD.</li>
+                <li>Tell, Don't Ask.</li>
+                <li>Commands, Queries, and Open/Close Principle compliance.</li>
+            </ul>
+
+            <h4>Day 2</h4>
+            <p>The second day is dedicated to software design at application level (internal structure, layers, components, delivery mechanism, core domain) and also at micro services level using business requirements to drive their design (define the responsibility of each service, how services collaborate, their internal and external visibility, number of services we need to create, etc.) Developers will work in groups of 4 and come up with design solutions that later are shared with the wider group. Many design discussions during exercises focused on real world scenarios.</p>
+
+            <ul>    
+                <li>Principles of Domain Driven Design.</li>
+                <li>IDD - Interaction Driven Design.</li>
+                <li>Structure projects in a way that expresses what the application does and what it is about.</li>
+                <li>Differences between layers, hexagons, features, and components.</li>
+                <li>Modeling behaviour using Outside-In Design.</li>
+                <li>Identifying services from business rules.</li>
                 <li>Express design and architecture in code, but keeping your domain clear</li>
-                <li>Learn an evolution of a subset of DDD</li>
+                <li>Understanding Impact Mapping and how a services architecture can be derived from it.</li>
             </ul>
         </div>
 
@@ -60,29 +74,24 @@ training: Crafted Design
             <h3>Audience</h3>
             <p>Software developers that:</p>
             <ul>
-                <li>Have experience in developing software commercially</li>
-                <li>Are familiar with at least one Object Oriented Language (such as Java and C#)</li>
-                <li>Are able to understand Java (the codebase and exercises are in Java)</li>
-                <li>Are comfortable using TDD to build software</li>
+                <li>Have at least a couple of years of experience developing software commercially.</li>
+                <li>Are familiar with at least one Object Oriented Programming language (such as Java, C#, or C++).</li>
+                <li>Are comfortable using TDD to build software.</li>
                 <li>Understand mock objects and know how to use a mocking library</li>
+                <li>Have a general understanding of different architectural styles, including micro services.</li>
             </ul>
         </div>
 
         <div class="row margin-bottom-20">
             <h3>Prerequisites</h3>
+
+            <p>We strongly recommend that developers and teams first attend the Craftign Code training before this one.</p> 
+
             <p>Developers must:</p>
             <ul>
                 <li>Bring their own laptops</li>
-                <li>Have a development environment consisting of:
-                    <ul>
-                        <li>Java 8</li>
-                        <li>Their favourite IDE</li>
-                        <li>Maven 3.x</li>
-                        <li>A unit testing framework</li>
-                    </ul>
-                </li>
-                <li>Be able to create projects, build source code and run test cases in their development environment
-                </li>
+                <li>Be using TDD regularly in their projects. In case they are not very proficient with TDD, they may struggle during the first day of this training. This course is NOT an introduction to TDD.</li>
+                <li>Be able to create projects, tests, and code and run them in their local environment.</li>
             </ul>
             <p>In addition a distributed version control system such as Git is desirable.</p>
         </div>
