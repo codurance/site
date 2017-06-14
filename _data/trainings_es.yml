@@ -40,12 +40,6 @@
   description: Aprenda a utilizar las herramientas de Docker, para permitir continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
-- id: oo_design
-  name: Práctica de Diseño Orientado a Objetos
-  author: Franziska Sauerwein
-  description: Para desarrolladores experimentados que quieren mejorar sus habilidades de diseño en lenguajes orientados a objetos.
-  page: /services/training/oo-design
-
 - id: crafting_swift_apps
   name: Craftmanship Aplicado a Apps para Mobiles en Swift
   author: Ana Nogal
