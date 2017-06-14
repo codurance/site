@@ -1,14 +1,14 @@
-- id: crafted_design
-  name: Crafted Design
-  author: Sandro Mancuso
-  description: Para desarrolladores experimentados que quieren mejorar en el diseño de soluciones bien elaboradas.
-  page: /services/training/crafted-design
-
 - id: crafting_code
   name: Crafting Code
   author: Sandro Mancuso
   description: Para desarrolladores que quieren mejorar en escribir código limpio, testable y mantenible
   page: /services/training/crafting-code
+
+- id: crafted_design
+  name: Crafted Design
+  author: Sandro Mancuso
+  description: Para desarrolladores experimentados que quieren mejorar en el diseño de soluciones bien elaboradas.
+  page: /services/training/crafted-design
 
 - id: lambdas
   name: Microservicios con AWS Lambdas
