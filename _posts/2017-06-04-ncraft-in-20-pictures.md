@@ -12,7 +12,7 @@ tags:
 - community
 ---
 
-[NCrafts](http://ncrafts.io/) 2017 is a two days conference in Paris. I had the chance to also attend an event storming workshop run by Alberto Bbrandolini a day before the conference.
+[NCrafts](http://ncrafts.io/) 2017 is a two days conference in Paris. I had the chance to also attend an event storming workshop run by Alberto Brandolini a day before the conference.
 It was full of fun, socialising and learning.
 
 Here are some of my takeways of those three days of awesomeness:
