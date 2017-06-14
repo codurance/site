@@ -40,12 +40,6 @@
   description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
-- id: oo_design
-  name: Practise Object Oriented Design
-  author: Franziska Sauerwein
-  description: For experienced developers who want to improve their design skills in object-oriented languages.
-  page: /services/training/oo-design
-
 - id: crafting_swift_apps
   name: Crafting Swift Mobile Apps
   author: Ana Nogal
