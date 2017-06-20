@@ -294,3 +294,14 @@
    <p>Nacho enjoys spending time with his family (wife and daughter) and also likes to play basketball, football, and body combat. He loves running and has run marathons and even longer distances by the mountains.</p>
   twitter: icougil
   github: cougil
+
+- id: jorge
+  name: Jorge Gueorguiev Garcia
+  image: /assets/img/custom/team/jorge_gueorguiev.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Although he started early (with QuickBasic and Turbo Pascal), took him a while to center into the developer way of living. Nonetheless, he has more than 10 years experience as software developer at different levels. His main experience is around C# and .Net, but has a keen interest in other languages, especially around functional programming.</p>
+    <p>In his experience two maxims have been revealed, Simple is Beautiful and Make Everyone's Life Easy. Because of them, his personal goal is to improve the experience of fellow developers (which always translates to happy customers)</p>
+    <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>  
+  twitter: yefoakira
+  github: miyamotoakira
