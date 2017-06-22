@@ -8,7 +8,8 @@ var submitTrainingContactForm = function() {
     $inputs.each(function() {
         data[this.name] = $(this).val();
     });
-    data['message'] = "\nNumber of participants: " + data['participants'] + "\n";
+    data['message'] = "\nTraining URL: " + window.location.href + "\n";
+    data['message'] += "\nNumber of participants: " + data['participants'] + "\n";
     data['message'] += "Start date: " + data['start_date'] + "\n";
     data['message'] += "\n" + data['body'] + "\n";
 
