@@ -1,7 +1,38 @@
 var fieldName = function (target, field) {
      return '[name=' + target + '-' + field + ']';
 };
-   
+
+var submitTrainingContactForm = function() {
+    var $inputs = $('#training-contact-form :input');
+    var data = {};
+    $inputs.each(function() {
+        data[this.name] = $(this).val();
+    });
+    data['message'] = "\nNumber of participants: " + data['participants'] + "\n";
+    data['message'] += "Start date: " + data['start_date'] + "\n";
+    data['message'] += "\n" + data['body'] + "\n";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://codurance.com/api/emailer', true);
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                window.location = data['_next']
+            } else {
+
+            }
+        }
+    };
+
+    // send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+
+    return false;
+};
+
+
 var submitApplication = function (title, target) {
   event.preventDefault();
   var message = $(fieldName(target, 'message')).val().replace('"', "'");
@@ -65,14 +96,14 @@ var equalizeHeights = function() {
     $('.equalheight').height(maxHeight);
 }
 
-$(document).ready(function() { 
+$(document).ready(function() {
     equalizeHeights();
 
     //This function is necessary so Safari can redraw the menu 
     $(".dropdown").click(function(){
         return true;
     });
-    
+
     $('.custom-owl-carousel').owlCarousel({
 	    loop:true,
 	    autoplay:true,
@@ -110,7 +141,7 @@ $(window).resize(function () {
 				$(this).closest("li").addClass("active");
 			}
 		});
-	});        
+	});
 })();
 
 (function navbarProjectsActive(){//TODO delete once we add projects to the navbar

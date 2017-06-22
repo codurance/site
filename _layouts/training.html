@@ -19,11 +19,10 @@ title: Training
                 <div id="contact" class="headline headline-md margin-bottom-30">
                     <h2>Talk to us about your training needs</h2>
                 </div>
-
-                <form id="training-contact-form" class="sky-form" action="https://codurance.com/api/emailer">
+                <form id="training-contact-form" class="sky-form" action="#" onsubmit="event.preventDefault(); submitTrainingContactForm();">
                     <input type="hidden" name="_next" value="{{site.baseurl}}/aboutus/thanks"/>
-                    <input type="hidden" name="_subject" value="Codurance Training"/>
-                    <input type="hidden" name="to" value="hello@codurance.com"/>
+                    <input type="hidden" name="subject" value="Codurance Training"/>
+                    <input type="hidden" name="to" value="join-us@codurance.com"/>
 
                     <div class="row margin-bottom-20">
                         <div class="col-md-6">
@@ -32,7 +31,7 @@ title: Training
                         </div>
                         <div class="col-md-6">
                             <label>Your email</label>
-                            <input class="form-control" type="email" name="_replyto" required>
+                            <input class="form-control" type="email" name="email" required>
                         </div>
                     </div>
                     <div class="row margin-bottom-20">
@@ -53,8 +52,7 @@ title: Training
                     </div>
                     <div class="row">
                         <div class="col-md-12 margin-top-20">
-                            <button id="Send" value="Send" class="pull-right btn-u btn-u-lg" type="submit">Submit
-                            </button>
+                            <button id="training-contact-form-submit" value="Send" class="pull-right btn-u btn-u-lg" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -62,38 +60,3 @@ title: Training
         </div>
     </div>
 </div>
-<script type="text/javascript">
-      function onJQueryLoaded() {
-	      $("#contact").submit(function(event) {
-		      /* stop form from submitting normally */
-		      event.preventDefault();
-
-		      var message = 
-			      'Message: ' + $('[name=body]').val() + 
-			      '\n Desired start date: ' +  $('[name=start_date]').val() + 
-			      '\n Number of participants: ' + $('[name=participants]').val();
-
-		      var body = {	
-			      to: $('[name=to]').val(),
-			      name: $('[name=name]').val(), 
-			      subject:  $('[name=_subject]').val(),
-			      email: $('[name=_replyto]').val(),
-			      message: message
-		      };
-		      
-		      var $form = $(this);
-		      var url = $form.attr('action');
-		      $.ajax({
-			      type: "POST",
-			      url: url,
-			      data: JSON.stringify(body),
-			      success: function(data) {
-				      window.location = $('[name=_next]').val();
-			      },
-			      dataType: "json",
-			      contentType: "application/json"
-		      });
-	      });
-      }
-</script>
-
