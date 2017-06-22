@@ -12,13 +12,13 @@ var submitTrainingContactForm = function() {
     data['message'] += "Start date: " + data['start_date'] + "\n";
     data['message'] += "\n" + data['body'] + "\n";
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://codurance.com/api/emailer', true);
-    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    var request = new XMLHttpRequest();
+    request.open('POST', 'https://codurance.com/api/emailer', true);
+    request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
+    request.onreadystatechange = function() {
+        if (request.readyState === 4) {
+            if (request.status === 200) {
                 window.location = data['_next']
             } else {
                 alert('Something went wrong ! Please send an email to hello@codurance.com')
@@ -26,8 +26,7 @@ var submitTrainingContactForm = function() {
         }
     };
 
-    // send the collected data as JSON
-    xhr.send(JSON.stringify(data));
+    request.send(JSON.stringify(data));
 
     return false;
 };
