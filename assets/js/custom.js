@@ -21,7 +21,7 @@ var submitTrainingContactForm = function() {
             if (xhr.status === 200) {
                 window.location = data['_next']
             } else {
-
+                alert('Something went wrong ! Please send an email to hello@codurance.com')
             }
         }
     };
