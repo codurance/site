@@ -9,11 +9,11 @@
         <ul class="loginbar">
             <li>
                 <i class="fa fa-globe"></i>
-                {% for lang in site.languages %}
-                {% if lang == site.lang %}
-                <span class="language"><strong>{{ lang }}</strong></span>
+                {% for domain in site.domains %}
+                {% if domain[0] == site.lang %}
+                <span class="language"><strong>{{ domain[0] }}</strong></span>
                 {% else %}
-                <a href="{{ site.domains[lang] }}{{ page.url }}">{{ lang }}</a>
+                <a href="{{ domain[1] }}{{ page.url }}">{{ domain[0] }}</a>
                 {% endif %}
                 {% if forloop.last == false  %}
                 <span class="separator"> | </span>
