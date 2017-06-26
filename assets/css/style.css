@@ -84,3 +84,11 @@ a:hover {
 select::-ms-expand {
   display: none;
 }
+
+/* Showing "Contact Us" header when anchored link is used */
+#contactus {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
