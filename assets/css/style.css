@@ -85,8 +85,8 @@ select::-ms-expand {
   display: none;
 }
 
-/* Showing "Contact Us" header when anchored link is used */
-#contactus {
+/* Anchored links headers (e.g. codurance.com/company/#contactus) showed below top menu */
+.contact-section {
   display: block;
   position: relative;
   top: -100px;
