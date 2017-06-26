@@ -298,7 +298,31 @@ careers:
        pensions_description: All covered, as standard. Incidentally, many of these came from Initiatve Circles in our early days (see above).
        life_cover_title: Life Cover & Private Medical
        life_cover_description: Lumpsum payment for life cover, and Dental cashback scheme for you and your children.
-       
+   become_an_apprentice:
+     title: Apprenticeship program
+     apply_title: Become an Apprentice
+     description: Apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
+     how_works_title: How does it work?
+     how_works_description:
+       You will be asked to choose a mentor, a Software Craftsman that will coach & guide you throughout your apprenticeship. Your focus will be on self-improvement, honing your technical skills and practices by working on internal projects, as well as person projects and Katas. 
+       <p> 
+       <p>The priority is for you to acquire the basic set of skills necessary to become recognised, as software craftsman, by the rest of the company. We regularly send our apprentices to training courses.
+     background_title: What background do I need to have?
+     background_description:
+       At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. 
+      <p> 
+      <p>You have at least narrow experience of tools and technology, sufficient according to your current experience. You can communicate your ideas in a team setting and want to develop skills to convince others to your thinking. You have a strong desire to learn and hone your skills as an effective software developer. You like to teach as well as to learn.
+     is_it_for_me_title: Is this the programme for me?
+     is_it_for_me_description: If you are looking for a structured learning programme, complete with certifications, learning modules and regular training courses, then this isn’t the programme for you. If you are looking however for an intense education on what it means to be a Software Craftsmen, under the guidance of a mentor, learning the real-world technologies, practices and skills needed along the way, then we look forward to receiving your application.
+     life_apprentice:
+       title: The Life of an Apprentice
+       description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
+       first_week_title: "First week at Codurance:"
+       first_week_description:
+       first_year_title: "My first year at Codurance:"
+       first_year_description:
+       learning_specification_title: "Learning specification by example:"
+       learning_specification_description:
 careers-how_we_grow:
    title: How we grow?
    description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
