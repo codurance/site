@@ -347,10 +347,12 @@ careers-become_a_craftsman:
    description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
    link_title: Apply
    apply_title: I'm interested
+   more_info: Read the full description
 careers-become_an_apprentice:
    title: Become an Apprentice
    description: <p>Aspiring to become a Software Craftsmen, you’re ready to start your journey of education under the guidance of your mentor.</p>
    link_title: Apply
+   more_info: Read the full description
 careers-hiring_process:
    title: Hiring process
    description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>

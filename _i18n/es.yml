@@ -320,10 +320,12 @@ careers-become_a_craftsman:
    description: <p>Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.</p>
    link_title: Aplicar 
    apply_title: Estoy interesado
+   more_info: Lee la descripción completa
 careers-become_an_apprentice:
    title: Conviértete en Aprendiz
    description: <p>Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.</p>
    link_title: Aplicar
+   more_info: Lee la descripción completa
 careers-hiring_process:
    title: Proceso de contratación 
    description: <p>Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato:</p>
