@@ -274,6 +274,25 @@ careers:
      hiring_title: Hiring process
      hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
      benefits_title: What you'll get
+     become_an_apprentice:
+       title: Apprenticeship program
+       apply_title: Become an Apprentice
+       description: Apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
+       how_works_title: How does it work?
+       how_works_description:
+         You will be asked to choose a mentor, a Software Craftsman that will coach & guide you throughout your apprenticeship. Your focus will be on self-improvement, honing your technical skills and practices by working on internal projects, as well as person projects and Katas. 
+         <p> 
+         <p>The priority is for you to acquire the basic set of skills necessary to become recognised, as software craftsman, by the rest of the company. We regularly send our apprentices to training courses.
+       background_title: What background do I need to have?
+       background_description:
+           At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. 
+           <p> 
+           <p>You have at least narrow experience of tools and technology, sufficient according to your current experience. You can communicate your ideas in a team setting and want to develop skills to convince others to your thinking. You have a strong desire to learn and hone your skills as an effective software developer. You like to teach as well as to learn.
+       is_it_for_me_title: Is this the programme for me?
+       is_it_for_me_description: If you are looking for a structured learning programme, complete with certifications, learning modules and regular training courses, then this isn’t the programme for you. If you are looking however for an intense education on what it means to be a Software Craftsmen, under the guidance of a mentor, learning the real-world technologies, practices and skills needed along the way, then we look forward to receiving your application.
+       life_apprentice:
+         title: The Life of an Apprentice
+         description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
 careers-how_we_grow:
    title: Cómo crecemos?
    description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad y para presentar en conferencias.</p>
