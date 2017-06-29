@@ -195,18 +195,18 @@ title: Become an Apprentice
                 <p>{% t careers.become_an_apprentice.life_apprentice.description  %}</p>
             </div>
         </div>
-        <div class="row news-v1">
+	<div class="row blog-boxes">
             {% assign first_week = site.posts | where:"name","Discovering Codurance during my first week as an apprentice" %}
             {% assign first_year = site.posts | where:"name","my-first-year-at-codurance" %}
             {% assign learning_specification = site.posts | where:"name","Learning Specification By Example from Gojko Adzic" %}
             {% if first_week[0] %}
-                {% include life_of_apprentice_articles.html param=first_week truncated=2 %}
+                {% include life_of_apprentice_articles.html param=first_week truncated_title=2 truncated_abstract=30 %}
             {% endif %}
             {% if first_year[0] %}
-                {% include life_of_apprentice_articles.html param=first_year truncated=5 %}
+                {% include life_of_apprentice_articles.html param=first_year truncated_title=5 truncated_abstract=35 %}
             {% endif %}
             {% if learning_specification[0] %}
-                {% include life_of_apprentice_articles.html param=learning_specification truncated=2 %}
+                {% include life_of_apprentice_articles.html param=learning_specification truncated_title=2 truncated_abstract=30 %}
             {% endif %}
         </div>
         <div class="row">
