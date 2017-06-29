@@ -299,11 +299,11 @@ careers:
      life_cover_title: Life Cover & Private Medical
      life_cover_description: Lumpsum payment for life cover, and Dental cashback scheme for you and your children.
      mentor_title: Mentor
-     mentor_description: You will choose a mentor, who will guide you through your apprenticeship
+     mentor_description: You will choose a mentor, who will guide you throughout your apprenticeship.
    become_an_apprentice:
      title: Apprenticeship program
      apply_title: Become an Apprentice
-     description: Apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
+     description: Our apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
      how_works_title: How does it work?
      how_works_description: The priority is for you to acquire the basic set of skills necessary to become recognised, as Software Craftsman, by the rest of the company. You will choose a mentor from our craftsmen who will help understand your strengths and weaknesses based on the core skill sets needed. 
      background_title: What background do I need to have?
@@ -311,7 +311,7 @@ careers:
      is_it_for_me_title: Is this the programme for me?
      is_it_for_me_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to become a Software Craftsman, under the guidance of a dedicated mentor, then we look forward to receiving your application.
      how_long_title: How long does it last
-     how_long_description: Your mentor will guide you through your apprenticeship which we expect to be a maximum of 6 months. There is no exam in the end - when your mentor is convinced and can convince at least 3 other craftsmen, then you graduate.
+     how_long_description: Your mentor will guide you through your apprenticeship which we expect to be a maximum of 6 months. There is no formal exam at the end - when your mentor is convinced that you are ready, and can convince at least 3 other craftsmen as well, then you graduate.
      life_apprentice:
        title: The Life of an Apprentice
        description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
