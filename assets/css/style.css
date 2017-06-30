@@ -84,3 +84,11 @@ a:hover {
 select::-ms-expand {
   display: none;
 }
+
+/* Anchored links headers (e.g. codurance.com/company/#contactus) showed below top menu */
+.contact-section {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
