@@ -34,41 +34,41 @@ var submitTrainingContactForm = function() {
 
 
 var submitApplication = function (title, target) {
-  event.preventDefault();
-  var message = $(fieldName(target, 'message')).val().replace('"', "'");
+    event.preventDefault();
+    var message = $(fieldName(target, 'message')).val().replace('"', "'");
 
-  var body = {
-      to: 'join-us@codurance.com',
-      name: $(fieldName(target, 'name')).val(),
-      subject: title,
-      email: $(fieldName(target, 'email')).val(),
-      message: message
-  };
+    var body = {
+        to: 'join-us@codurance.com',
+        name: $(fieldName(target, 'name')).val(),
+        subject: title,
+        email: $(fieldName(target, 'email')).val(),
+        message: message
+    };
 
-  if (!body.name || !body.email || !body.message) {
-          $('#input-error-msg-' + target).removeClass('hide');
-          return;
-  }
+    if (!body.name || !body.email || !body.message) {
+        $('#input-error-msg-' + target).removeClass('hide');
+        return;
+    }
 
-  var url = "https://codurance.com/api/emailer";
+    var url = "https://codurance.com/api/emailer";
 
-  $.ajax({
-      type: "POST",
-      url: url,
-      data: JSON.stringify(body),
-      success: function(data) {
-          $('#' + target + '-fields').hide();
-          $('#' + target + '-apply-btn').hide();
-          $('#success-msg-' + target).removeClass('hide');
-      },
-      error: function(msg) {
-          $('#error-msg-' + target).show();
-          $('#input-error-msg-' + target).hide();
-      },
-      dataType: "json",
-      contentType: "application/json"
-  });
-  return false;
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(body),
+        success: function(data) {
+            $('#' + target + '-fields').hide();
+            $('#' + target + '-apply-btn').hide();
+            $('#success-msg-' + target).removeClass('hide');
+        },
+        error: function(msg) {
+            $('#error-msg-' + target).show();
+            $('#input-error-msg-' + target).hide();
+        },
+        dataType: "json",
+        contentType: "application/json"
+    });
+    return false;
 };
 
 
