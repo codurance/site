@@ -34,15 +34,38 @@ var submitTrainingContactForm = function() {
 
 
 var submitApplication = function (title, target) {
-    event.preventDefault();
+   // event.preventDefault();
+    var firstName = $(fieldName(target, 'firstname')).val();
+    var lastName = $(fieldName(target, 'lastname')).val();
+    var email = $(fieldName(target, 'email')).val();
+    var phone = $(fieldName(target, 'phone')).val();
+    var location = $(fieldName(target, 'location')).val();
+    var github = $(fieldName(target, 'github')).val();
+    var stackoverflow = $(fieldName(target, 'stackoverflow')).val();
+    var linkedin = $(fieldName(target, 'linkedin')).val();
+    var blog = $(fieldName(target, 'blog')).val();
     var message = $(fieldName(target, 'message')).val().replace('"', "'");
+    var craftmanship = $(fieldName(target, 'craftmanship')).val().replace('"', "'");
 
+    var bodyMessage = 'First Name: ' + firstName + '\r\n';
+    bodyMessage += 'Last Name: ' + lastName + '\r\n';
+    bodyMessage += 'Email: ' + email + '\r\n';
+    bodyMessage += 'Phone: ' + phone + '\r\n';
+    bodyMessage += 'Location: ' + location + '\r\n\r\n';
+    bodyMessage += 'Github: ' + github + '\r\n';
+    bodyMessage += 'StackOverflow: ' + stackoverflow + '\r\n';
+    bodyMessage += 'Linkedin: ' + linkedin + '\r\n';
+    bodyMessage += 'Blog: ' + blog + '\r\n\r\n';
+    bodyMessage += 'About Software Craftmanship: ' + craftmanship + '\r\n\r\n';
+    bodyMessage += 'About Him/Her ' + message + '\r\n';
+    
+    
     var body = {
         to: 'join-us@codurance.com',
-        name: $(fieldName(target, 'name')).val(),
+        name: firstName + ' ' + lastName,
         subject: title,
-        email: $(fieldName(target, 'email')).val(),
-        message: message
+        email: email,
+        message: bodyMessage
     };
 
     if (!body.name || !body.email || !body.message) {
