@@ -31,10 +31,6 @@ task :serve do
   sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --trace --port 4000 --host 0.0.0.0'
 end
 
-task :servees do
-  sh 'bundle exec jekyll serve --config _config.yml,_config_es.yml --watch --trace --port 4000 --host 0.0.0.0'
-end
-
 task :servequick do
   sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --incremental --limit_posts 3 --port 4000 --host 0.0.0.0'
 end

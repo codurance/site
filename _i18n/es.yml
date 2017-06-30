@@ -273,53 +273,7 @@ careers:
      personality_description: Due to the nature of our work (we are a consultancy company and we work directly with our clients in all our projects), it is important that you have good communication skills and like working as part of a team. You are able to present your opinions and ideas in a clear, collaborative, respectfull and effective manner. You havea strong desire to build well-crafted software, constantly improve yourself, and to help others do the same. You are constantly learning and can describe all the different ways you achieve that. You consider yourself a technologist and is always keen to explore and work with different technologies. You don\'t shy away form leadership roles and are comfortable to lead by example.
      hiring_title: Hiring process
      hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-   benefits:
-     title: What you'll get
-     description: Our product is our people. We firmly belive that your job and associated benefits should allow you to flourish both personally and professionally. 
-     learning_title: Learning and Development
-     conf_title: Conferences
-     conf_description: 5 days of conference budget per year, including T&L and tickets, covered by us. We’ll pay for you as well, so need need to use holiday days.
-     training_title: Training 
-     training_description: Unlimited training budget! So long as the course is relevant for the company and you'll do a lightening talk on the subject, we’re happy to pay for it.
-     books_title: Books
-     books_description: Found something interesting to read that doesn’t already live in our office or digital library? We’ll cover book expenses - and ask to read it after you as well!.
-     culture_title: Culture
-     experts_title: Internal Community of Experts
-     experts_description: Whether at client projects, our intenal and external events, you’ll be working alongside Craftsman that share your passion for learning.
-     transparency_title: Transparency
-     transparency_description: All of our salaries and finances are available to everyone from day one. Nothing to hide here.  
-     autonomy_title: Autonomy
-     autonomy_description: Got an idea? Form a circle, take ownership, run with it and deliver it.
-     lifestyle_title: Lifestyle
-     holidays_title: Holidays
-     holidays_description: Pretty standard stuff. 28 days per year.
-     pensions_title: Pensions & Income Protection
-     pensions_description: All covered, as standard. Incidentally, many of these came from Initiatve Circles in our early days (see above).
-     life_cover_title: Life Cover & Private Medical
-     life_cover_description: Lumpsum payment for life cover, and Dental cashback scheme for you and your children.
-     mentor_title: Mentor
-     mentor_description: You will choose a mentor, who will guide you through your apprenticeship
-   become_an_apprentice:
-     title: Programa de Aprendizaje
-     apply_title: Conviertete en un aprendiz
-     description: Apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
-     how_works_title: How does it work?
-     how_works_description:
-         You will be asked to choose a mentor, a Software Craftsman that will coach & guide you throughout your apprenticeship. Your focus will be on self-improvement, honing your technical skills and practices by working on internal projects, as well as person projects and Katas. 
-         <p> 
-         <p>The priority is for you to acquire the basic set of skills necessary to become recognised, as software craftsman, by the rest of the company. We regularly send our apprentices to training courses.
-     background_title: What background do I need to have?
-     background_description:
-           At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. 
-           <p> 
-           <p>You have at least narrow experience of tools and technology, sufficient according to your current experience. You can communicate your ideas in a team setting and want to develop skills to convince others to your thinking. You have a strong desire to learn and hone your skills as an effective software developer. You like to teach as well as to learn.
-     is_it_for_me_title: Is this the programme for me?
-     is_it_for_me_description: If you are looking for a structured learning programme, complete with certifications, learning modules and regular training courses, then this isn’t the programme for you. If you are looking however for an intense education on what it means to be a Software Craftsmen, under the guidance of a mentor, learning the real-world technologies, practices and skills needed along the way, then we look forward to receiving your application.
-     how_long_title: How long does it last
-     how_long_description: Your mentor will guide you through your apprenticeship which we expect to be a maximum of 6 months. There is no exam in the end - when your mentor is convinced and can convince at least 3 other craftsmen, then you graduate.
-     life_apprentice:
-       title: La vida del Aprendiz.
-       description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
+     benefits_title: What you'll get
 careers-how_we_grow:
    title: Cómo crecemos?
    description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad y para presentar en conferencias.</p>
@@ -366,12 +320,10 @@ careers-become_a_craftsman:
    description: <p>Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.</p>
    link_title: Aplicar 
    apply_title: Estoy interesado
-   more_info: Lee la descripción completa
 careers-become_an_apprentice:
    title: Conviértete en Aprendiz
    description: <p>Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.</p>
    link_title: Aplicar
-   more_info: Lee la descripción completa
 careers-hiring_process:
    title: Proceso de contratación 
    description: <p>Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato:</p>
