@@ -8,34 +8,86 @@
               </div>
               <div class="modal-body">
                   <div id="{{ include.target }}-fields">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <p><label>Name</label><input name="{{ include.target }}-name" class="form-control" type="text" /></p>
-                            <p><label>Email</label><input name="{{ include.target }}-email" class="form-control" type="text" /></p>
-                            <p><label>Tell us about yourself</label><textarea name="{{ include.target }}-message" class="form-control" rows="10" id="message"></textarea>   </p>
-                        </div>
-                    </div>
-                    <div class="row"><div class="col-md-12">
+                      <div class="row">
+                            <div class="col-md-6 margin-bottom-20">
+                                <label>First Name</label><input name="{{ include.target }}-firstname" class="form-control" type="text" />
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last Name</label><input name="{{ include.target }}-lastname" class="form-control" type="text" />
+                            </div>
+                      </div>
+                      <div class="row">
+                              <div class="col-md-6 margin-bottom-20">
+                                  <label>Email</label><input name="{{ include.target }}-email" class="form-control" type="text" />
+                              </div>
+                              <div class="col-md-6">
+                                  <label>Phone Number</label><input name="{{ include.target }}-phone" class="form-control" type="text" />
+                              </div>
+                      </div>
+                      <div class="row bg-color-light">
+                              <div class="col-md-6 margin-bottom-20">
+                                  <label>GitHub Account</label><input name="{{ include.target }}-github" class="form-control" type="text" />
+                              </div>
+                              <div class="col-md-6">
+                                  <label>Linkedin Account</label><input name="{{ include.target }}-linkedin" class="form-control" type="text" />
+                          </div>
+                      </div>
+                      <div class="row bg-color-light">
+                              <div class="col-md-6 margin-bottom-20">
+                                  <label>StackOverFlow Account</label><input name="{{ include.target }}-stackoverflow" class="form-control" type="text" />
+                              </div>
+                              <div class="col-md-6">
+                                  <label>Blog</label><input name="{{ include.target }}-blog" class="form-control" type="text" />
+                              </div>
+                      </div>
+                      <div class ="row">
+                          <div class="col-md-12 margin-bottom-20">
+                          <label>Where do you want to work?</label>
+                          <select name="{{ include.target }}-location" class="form-control" id="location">
+                              <option value="London">London</option>
+                              <option value="Barcelona">Barcelona</option>
+                          </select>
+                          </div>
+                      </div>
+                      <div class ="row">
+                          <div class="col-md-12 margin-bottom-20">
+                          <label>What does Software Craftmanship mean to you?</label>
+                          <textarea name="{{ include.target }}-craftmanship" class="form-control" rows="10" id="craftmanship"></textarea>
+                          </div>
+                      </div>
+                      <div class ="row">
+                          <div class="col-md-12 margin-bottom-20">
+                          <label>Tell us about yourself (technologies that you have used, projects you have worked on)</label>
+                          <textarea name="{{ include.target }}-message" class="form-control" rows="10" id="message"></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 ">
                           <div id="input-error-msg-{{ include.target }}" class="alert alert-danger fade in hide">
                               <strong>Please: </strong> enter all the requested fields.
                           </div>
-                    </div></div>
-                    <div class="row"><div class="col-md-12">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 margin-bottom-20">
                           <div id="error-msg-{{ include.target }}" class="alert alert-danger fade in hide">
                               <strong>Ops something went wrong: </strong> please try later or email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>.
                           </div>
-                    </div></div>
+                      </div>
                   </div>
-                  <div>
-                    <div id="success-msg-{{include.target}}" class="alert alert-success fade in hide">
-                              <strong>Thank you: </strong> we will be in touch with you shortly.
-                          </div>
+                  <div class="row">
+                      <div class="col-md-12 margin-bottom-20">
+                      <div id="success-msg-{{include.target}}" class="alert alert-success fade in hide">
+                          <strong>Thank you: </strong> we will be in touch with you shortly.
+                      </div>
+                      </div>
                   </div>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn-u btn-u-default" data-dismiss="modal">Close</button>
-                  <button id="{{ include.target }}-apply-btn" type="button" class="btn-u btn-u-primary" onclick="submitApplication('{{ include.title }}', '{{ include.target }}');" >Apply</button>
+                  <button id="{{ include.target }}-apply-btn" type="button" class="btn-u btn-u-primary"
+                          onclick="submitApplication('{{ include.title }}', '{{ include.target }}');" >Apply</button>
               </div>
           </div>
       </div>
