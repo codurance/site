@@ -48,20 +48,16 @@ var submitApplication = function (title, target) {
     var craftmanship = $(fieldName(target, 'craftmanship')).val().replace('"', "'");
 
     var errors = "";
-    if (!firstName)
-    {
+    if (!firstName) {
         errors += "<br>First Name";
     }
-    if (!lastName)
-    {
+    if (!lastName) {
         errors += "<br>Last Name";
     }
-    if (!email)
-    {
+    if (!email) {
         errors += "<br>Email";
     }
-    if (!phone)
-    {
+    if (!phone) {
         errors += "<br>Phone";
     }
     if(!craftmanship) {
