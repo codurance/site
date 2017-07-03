@@ -67,10 +67,11 @@ var submitApplication = function (title, target) {
         errors += "<br>Tell us about yourself";
     }
 
-    if(errors)
-    {
+    if(errors) {
         $('#input-error-msg-' + target).html("<strong>Please: </strong> enter all the requested fields:" + errors).removeClass('hide');
         return false;
+    } else {
+            $('#input-error-msg-' + target).hide();
     }
     
     var bodyMessage = 'First Name: ' + firstName + '\r\n';
@@ -104,11 +105,9 @@ var submitApplication = function (title, target) {
             $('#' + target + '-fields').hide();
             $('#' + target + '-apply-btn').hide();
             $('#success-msg-' + target).removeClass('hide');
-            $('#input-error-msg-' + target).hide();
         },
         error: function(msg) {
             $('#error-msg-' + target).show();
-            $('#input-error-msg-' + target).hide();
         },
         dataType: "json",
         contentType: "application/json"
