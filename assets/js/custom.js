@@ -47,6 +47,33 @@ var submitApplication = function (title, target) {
     var message = $(fieldName(target, 'message')).val().replace('"', "'");
     var craftmanship = $(fieldName(target, 'craftmanship')).val().replace('"', "'");
 
+    var errors = "";
+    if (!firstName) {
+        errors += "<br>First Name";
+    }
+    if (!lastName) {
+        errors += "<br>Last Name";
+    }
+    if (!email) {
+        errors += "<br>Email";
+    }
+    if (!phone) {
+        errors += "<br>Phone";
+    }
+    if(!craftmanship) {
+        errors += "<br>What does Software Craftmanship mean to you?";
+    }
+    if(!message) {
+        errors += "<br>Tell us about yourself";
+    }
+
+    if(errors) {
+        $('#input-error-msg-' + target).html("<strong>Please: </strong> enter all the requested fields:" + errors).removeClass('hide');
+        return false;
+    } else {
+            $('#input-error-msg-' + target).hide();
+    }
+    
     var bodyMessage = 'First Name: ' + firstName + '\r\n';
     bodyMessage += 'Last Name: ' + lastName + '\r\n';
     bodyMessage += 'Email: ' + email + '\r\n';
@@ -68,11 +95,6 @@ var submitApplication = function (title, target) {
         message: bodyMessage
     };
 
-    if (!body.name || !body.email || !body.message) {
-        $('#input-error-msg-' + target).removeClass('hide');
-        return;
-    }
-
     var url = "https://codurance.com/api/emailer";
 
     $.ajax({
@@ -86,7 +108,6 @@ var submitApplication = function (title, target) {
         },
         error: function(msg) {
             $('#error-msg-' + target).show();
-            $('#input-error-msg-' + target).hide();
         },
         dataType: "json",
         contentType: "application/json"
