@@ -64,6 +64,12 @@ var submitApplication = function (title, target) {
     {
         errors += "<br>Phone";
     }
+    if(!craftmanship) {
+        errors += "<br>What does Software Craftmanship mean to you?";
+    }
+    if(!message) {
+        errors += "<br>Tell us about yourself";
+    }
 
     if(errors)
     {
