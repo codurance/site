@@ -10,18 +10,18 @@
                     <div id="{{ include.target }}-fields">
                         <div class="row">
                             <div class="col-md-6 margin-bottom-20">
-                                <label>First Name</label><input name="{{ include.target }}-firstname" class="form-control" type="text" />
+                                <label>First Name (*)</label><input name="{{ include.target }}-firstname" class="form-control" type="text" />
                             </div>
                             <div class="col-md-6">
-                                <label>Last Name</label><input name="{{ include.target }}-lastname" class="form-control" type="text" />
+                                <label>Last Name (*)</label><input name="{{ include.target }}-lastname" class="form-control" type="text" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 margin-bottom-20">
-                                <label>Email</label><input name="{{ include.target }}-email" class="form-control" type="text" />
+                                <label>Email (*)</label><input name="{{ include.target }}-email" class="form-control" type="text" />
                             </div>
                             <div class="col-md-6">
-                                <label>Phone Number</label><input name="{{ include.target }}-phone" class="form-control" type="text" />
+                                <label>Phone Number (*)</label><input name="{{ include.target }}-phone" class="form-control" type="text" />
                             </div>
                         </div>
                         <div class ="row">
@@ -31,6 +31,11 @@
                                     <option value="London">London</option>
                                     <option value="Barcelona">Barcelona</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cold-md-12 margin-bottom-20">
+                                <label><sup>(*) Mandatory fields</sup></label>
                             </div>
                         </div>
                         <div class="row bg-color-light">
@@ -51,13 +56,13 @@
                         </div>
                         <div class ="row">
                             <div class="col-md-12 margin-bottom-20">
-                                <label>What does Software Craftmanship mean to you?</label>
+                                <label>What does Software Craftmanship mean to you? (*)</label>
                                 <textarea name="{{ include.target }}-craftmanship" class="form-control" rows="10" id="craftmanship"></textarea>
                             </div>
                         </div>
                         <div class ="row">
                             <div class="col-md-12 margin-bottom-20">
-                                <label>Tell us about yourself (technologies that you have used, projects you have worked on)</label>
+                                <label>Tell us about you (technologies that you have used, projects you have worked on) (*)</label>
                                 <textarea name="{{ include.target }}-message" class="form-control" rows="10" id="message"></textarea>
                             </div>
                         </div>
@@ -65,7 +70,8 @@
                     <div class="row">
                         <div class="col-md-12 ">
                             <div id="input-error-msg-{{ include.target }}" class="alert alert-danger fade in hide">
-                                <strong>Please: </strong> enter all the requested fields.
+                                <div id="fields">
+                                </div>
                             </div>
                         </div>
                     </div>
