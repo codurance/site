@@ -34,41 +34,64 @@ var submitTrainingContactForm = function() {
 
 
 var submitApplication = function (title, target) {
-  event.preventDefault();
-  var message = $(fieldName(target, 'message')).val().replace('"', "'");
+   // event.preventDefault();
+    var firstName = $(fieldName(target, 'firstname')).val();
+    var lastName = $(fieldName(target, 'lastname')).val();
+    var email = $(fieldName(target, 'email')).val();
+    var phone = $(fieldName(target, 'phone')).val();
+    var location = $(fieldName(target, 'location')).val();
+    var github = $(fieldName(target, 'github')).val();
+    var stackoverflow = $(fieldName(target, 'stackoverflow')).val();
+    var linkedin = $(fieldName(target, 'linkedin')).val();
+    var blog = $(fieldName(target, 'blog')).val();
+    var message = $(fieldName(target, 'message')).val().replace('"', "'");
+    var craftmanship = $(fieldName(target, 'craftmanship')).val().replace('"', "'");
 
-  var body = {
-      to: 'join-us@codurance.com',
-      name: $(fieldName(target, 'name')).val(),
-      subject: title,
-      email: $(fieldName(target, 'email')).val(),
-      message: message
-  };
+    var bodyMessage = 'First Name: ' + firstName + '\r\n';
+    bodyMessage += 'Last Name: ' + lastName + '\r\n';
+    bodyMessage += 'Email: ' + email + '\r\n';
+    bodyMessage += 'Phone: ' + phone + '\r\n';
+    bodyMessage += 'Location: ' + location + '\r\n\r\n';
+    bodyMessage += 'Github: ' + github + '\r\n';
+    bodyMessage += 'StackOverflow: ' + stackoverflow + '\r\n';
+    bodyMessage += 'Linkedin: ' + linkedin + '\r\n';
+    bodyMessage += 'Blog: ' + blog + '\r\n\r\n';
+    bodyMessage += 'About Software Craftmanship: ' + craftmanship + '\r\n\r\n';
+    bodyMessage += 'About Him/Her ' + message + '\r\n';
+    
+    
+    var body = {
+        to: 'join-us@codurance.com',
+        name: firstName + ' ' + lastName,
+        subject: title,
+        email: email,
+        message: bodyMessage
+    };
 
-  if (!body.name || !body.email || !body.message) {
-          $('#input-error-msg-' + target).removeClass('hide');
-          return;
-  }
+    if (!body.name || !body.email || !body.message) {
+        $('#input-error-msg-' + target).removeClass('hide');
+        return;
+    }
 
-  var url = "https://codurance.com/api/emailer";
+    var url = "https://codurance.com/api/emailer";
 
-  $.ajax({
-      type: "POST",
-      url: url,
-      data: JSON.stringify(body),
-      success: function(data) {
-          $('#' + target + '-fields').hide();
-          $('#' + target + '-apply-btn').hide();
-          $('#success-msg-' + target).removeClass('hide');
-      },
-      error: function(msg) {
-          $('#error-msg-' + target).show();
-          $('#input-error-msg-' + target).hide();
-      },
-      dataType: "json",
-      contentType: "application/json"
-  });
-  return false;
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(body),
+        success: function(data) {
+            $('#' + target + '-fields').hide();
+            $('#' + target + '-apply-btn').hide();
+            $('#success-msg-' + target).removeClass('hide');
+        },
+        error: function(msg) {
+            $('#error-msg-' + target).show();
+            $('#input-error-msg-' + target).hide();
+        },
+        dataType: "json",
+        contentType: "application/json"
+    });
+    return false;
 };
 
 
