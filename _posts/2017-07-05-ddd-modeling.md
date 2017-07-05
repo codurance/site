@@ -38,12 +38,12 @@ Both bounded contexts share plenty of vocabulary in common. Which leads to more 
 
 An example of composite names:
 
-- # CartTotaAmount -> Draft
-- # OrderTotalAmount -> Execution
-- # CartCanBeShipped -> Draft
-- # OrderShipped -> Execution
-- # CartConfirmed -> Draft
-- # OrderConfirmed -> Execution
+- \# CartTotaAmount -> Draft
+- \# OrderTotalAmount -> Execution
+- \# CartCanBeShipped -> Draft
+- \# OrderShipped -> Execution
+- \# CartConfirmed -> Draft
+- \# OrderConfirmed -> Execution
 
 
 Conclusion
