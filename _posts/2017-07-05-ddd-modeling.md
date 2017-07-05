@@ -37,12 +37,13 @@ Also, before we had people from both subdomain focusing on the same "big ball of
 Both bounded contexts share plenty of vocabulary in common. Which leads to more complex design and composing names in order to make obvious that a name belongs to the cart or to the order.
 
 An example of composite names:
-# CartTotaAmount -> Draft
-# OrderTotalAmount -> Execution
-# CartCanBeShipped -> Draft
-# OrderShipped -> Execution
-# CartConfirmed -> Draft
-# OrderConfirmed -> Execution
+
+- # CartTotaAmount -> Draft
+- # OrderTotalAmount -> Execution
+- # CartCanBeShipped -> Draft
+- # OrderShipped -> Execution
+- # CartConfirmed -> Draft
+- # OrderConfirmed -> Execution
 
 
 Conclusion
