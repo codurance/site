@@ -32,7 +32,11 @@ In this scenario, we have a "big ball of mud" in wich 2 bounded context collisio
 
 In this scenario, we have a piece of code that sticks together both contexts. Identifying that piece of code and working on separate the contexts have an instant payoff. We are working in the core domain and reducing the complexity on it. So we are reducing the cost of working in each of the contexts.
 
+![first image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/big-ball-of-mud.JPG)
+
 Also, before we had people from both subdomain focusing on the same "big ball of mud". Splitting the bounded context separate the people interested in each context. So, people interested in the cart will point to the "Cart bounded context" and people interested in the order will point to the "Order bounded context".
+
+![second image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/cart-order.JPG)
 
 Both bounded contexts share plenty of vocabulary in common. Which leads to more complex design and composing names in order to make obvious that a name belongs to the cart or to the order.
 
