@@ -53,4 +53,5 @@ An example of composite names:
 # Conclusion
 
 Event Storming is a useful technique to understand the big picture of the business and spot the main blocker. The right people should be in the room when the Event Storming Session is in the room. The role of the facilitator is crucial.
+
 Domain Driven Design is awesome. It is not necessary to work following DDDesign to see that the ideas have plenty of value even if the team or other teams are not following DDDesign. It helps to understand your relationship with other teams as well as how to look problems from a domain perspective.
