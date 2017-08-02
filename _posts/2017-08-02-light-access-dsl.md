@@ -5,7 +5,7 @@ title: Light Access - A simple JDBC DSL
 date: 2017-08-02 12:00:00 +00:00
 author: Sandro Mancuso
 image:
-   src: /assets/img/custom/blog/2017-06-13-how-do-I-convince.jpg
+   src: /assets/img/custom/blog/2017-08-02-light-access.png
 tags:
 - craftsmanship
 - cleancode
