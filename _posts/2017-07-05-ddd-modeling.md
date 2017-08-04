@@ -35,13 +35,9 @@ The collision of the two bounded contexts was caused by a piece of code which ti
 
 ![first image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/big-ball-of-mud.JPG)
 
-<img src="(/assets/img/custom/blog/2017-07-05-ddd-modeling-post/big-ball-of-mud.JPG" alt="Specification By Example" class="img-responsive"/>
-
 Prior to this, we had people from both sub-domains focusing on the same "big ball of mud". Splitting the bounded context separated the people that were interested in each context. Therefore, the people interested in the cart will point to the "Cart bounded context" and people interested in the order would point to the "Order bounded context".
 
 ![second image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/cart-order.JPG)
-
-<img src="(/assets/img/custom/blog/2017-07-05-ddd-modeling-post/cart-order.JPG" alt="Specification By Example" class="img-responsive"/>
 
 Both bounded contexts share plenty of vocabulary. Which leads to more complex design and composing names in order to make obvious that a name belongs to the cart or to the order.
 
