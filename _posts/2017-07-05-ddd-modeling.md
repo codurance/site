@@ -3,10 +3,10 @@ layout: post
 asset-type: post
 name: DDD Modeling from Alberto Brandolini
 title: 'DDD Modeling from Alberto Brandolini'
-date: 2017-05-04 09:00:00 +00:00
+date: 2017-07-21 09:00:00 +00:00
 author: Carlos Raffellini
 image:
-- src:
+  src: /assets/img/custom/blog/2017-07-21-ddd-modeling.jpg
 tags:
 - DDD
 - Event Storming
