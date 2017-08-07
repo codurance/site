@@ -13,7 +13,7 @@ tags:
 - postgresql
 ---
 
-I prefer not to couple my entities (or data structures as I prefer to call them) to my database, neither via [annotations][1] nor via frameworks that use naming convention. I like to have total freedom to map whatever data in whatever format I have stored to whatever data structure I want to use in each business flow. As I like to test-drive everything I do, I also like to have full control of my code. However, I don’t want to write a lot of boiler plate code. For that reason I decided to externalise a library I created in one of our internal projects at Codurance. [Light Access][2] is a very simple [DSL][3] on top of [JDBC][4] that I use to in my [repositories][5].
+I prefer not to couple my entities (or data structures as I prefer to call them) to my database, neither via [annotations][1] nor via frameworks that use naming convention. I like to have total freedom to map whatever data in whatever format I have stored to whatever data structure I want to use in each business flow. As I like to test-drive everything I do, I also like to have full control of my code. However, I don’t want to write a lot of boiler plate code. For that reason I decided to externalise a library I created in one of our internal projects at Codurance. [Light Access][2] is a very simple [DSL][3] on top of [JDBC][4] that I use in the implementation of my [repositories][5].
 
 
 ## A quick overview of some of the features
@@ -135,7 +135,7 @@ And in case you prefer the inlined version:
 
 #### Update
 
-Let's say that we wan to update the name of the given product.
+Let's say that we want to update the name of the given product.
 
 ```java
 private static final String UPDATE_PRODUCT_NAME_SQL = "update products set name = ? where id = ?";
