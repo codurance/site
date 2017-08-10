@@ -2,7 +2,7 @@
 layout: newsletter
 asset-type: newsletter
 name: newsletter-july-2017
-title: 'Newsletter - June 2017'
+title: 'Newsletter - July 2017'
 date: 2017-07-13 09:00:00 +00:00
 author: David Hall
 image:
