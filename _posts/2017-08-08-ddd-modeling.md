@@ -1,8 +1,8 @@
 ---
 layout: post
 asset-type: post
-name: DDD Modeling from Alberto Brandolini
-title: 'DDD Modeling from Alberto Brandolini'
+name: DDD Modelling from Alberto Brandolini
+title: 'DDD Modelling from Alberto Brandolini'
 date: 2017-08-08 09:00:00 +00:00
 author: Carlos Raffellini
 image:
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-I had the pleasure of attending [Alberto Brandolini's Domain Driven Design Modeling workshop](https://skillsmatter.com/courses/562-alberto-brandolini-s-ddd-modelling-workshop) during the last week of June 2017. I was very excited to learn [Event Storming](http://eventstorming.com/) directly from the author and further having the chance to learn more about DDD.
+I had the pleasure of attending [Alberto Brandolini's Domain Driven Design Modelling workshop](https://skillsmatter.com/courses/562-alberto-brandolini-s-ddd-modelling-workshop) during the last week of June 2017. I was very excited to learn [Event Storming](http://eventstorming.com/) directly from the author and further having the chance to learn more about DDD.
 
 # Learning experience
 
