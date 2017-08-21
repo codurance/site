@@ -16,17 +16,17 @@ tags:
 - sharing
 
 ---
-I participated in consultancy projects a few years ago, but they were the typical ones. We visited a company for a few hours several days, they gave us the information they thought was useful for us, we asked questions and more details and then we created a plan to help them by:
+I participated in consultancy projects a few years ago, but they were the typical ones. We would visit a company for a few hours over several days, they gave us the information they thought was useful for us, we asked questions and more details and then we created a plan to help them by:
 
 * Giving guides to solve what we knew about their problems
 * Adapting internal tools
 * Giving training courses
 
-I noticed soon that it was partially useful. When I joined the company that I had helped previously, I realised that we hadn’t understood their real problems. When you are inside a company you “feel” its problems, you really know the reasons behind those problems and you have a very different perspective to help you understand possible solutions.
+Soon, I noticed that this approach was only partially useful. When I re-joined a company that I had helped previously, I realised that we hadn’t understood their real problems. When you are inside a company you “feel” its problems, you really know the reasons behind those problems and you have a very different perspective to help you understand possible solutions.
 
-I joined Codurance a few months ago, a very different consultancy company. After a period of apprenticeship, absorbing the principles, values and practices from Codurance, I started working as an embedded software craftswoman. That is to say I’m a member of one of the teams of a client which wanted to improve the <a href="/2017/07/09/P3-Quality" target="_blank">quality</a> of the software that they produce.
+I joined Codurance a few months ago, a very different consultancy company. After a period of apprenticeship, absorbing the principles, values and practices from Codurance, I started working as an embedded software craftswoman. That is to say I’m a member of one of the teams at a client who wanted to improve the <a href="/2017/07/09/P3-Quality" target="_blank">quality</a> of the software that they produce.
 
-It’s being a rewarding experience, because I’m having the opportunity to see the improvements in the team, "living" with them, while I continue to be a member of an awesome group of people that gives meaning to Codurance, who are always available to help, to share or to learn with me.
+It has been a rewarding experience, because I have the opportunity to see the improvements in the team, "living" with them, while I continue to be a member of an awesome group of people that gives meaning to Codurance, who are always available to help, to share, and to learn with me.
 
 I call it “consultancy from within” and it changes the negative meaning that “consultancy” usually has in Spain.
 
