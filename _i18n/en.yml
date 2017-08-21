@@ -232,6 +232,7 @@ clients-finance:
    societe_generale_description: Societe Generale is a leading multinational banking and financial services company. Our embedded craftsmen helped them adopt XP Practices and Continuous Delivery.
    m_and_g_description: M&G are one of the UK’s largest and longest established investment houses, with more than 80 years’ experience. We are helping M&G instill a culture of learning within their teams. We run regular coaching sessions for them to teach Test Driven Development and Clean Code.
    flextrade_description: FlexTrade Systems is the global leader in high performance execution management and order management systems for equities, foreign exchange, options, futures and fixed income. We helped improve the sofware development skills of their team by running customised training sessions on Software Design and advanced Test Driven Development techniques.
+   aspect_capital_description: Aspect Capital Limited (Aspect) is a UK-based investment manager with offices in London, Stamford (CT) and Hong Kong.
 clients-retail:
    title: Retail
    subtitle: Our retail clients, especially within supply chain management, are dealing with some of the most complex enterprise systems. Their consumer facing system also require a compelling UX and UI to ensure customer statisfaction and loyalty. Our craft-focus and expertise in large scale enterprise system makes us an ideal partner.
@@ -239,6 +240,11 @@ clients-retail:
    asos_description: ASOS is the UK's largest independent online fashion and beauty retailer. Our craftsmen are embedded into their teams to help continously improve the technology and practices. We also run a tailored training and coaching programme for their development teams.
    mango_description: Mango is a multinational fashion retailer, with over 2,700 stores in 105 countries. We have been helping Mango to rearchitect their site with Microservices, to ultimately deliver an even better experience for their customers.
    coniq_description: Coniq provide data driven market and loyalty platforms. We have developed ePOS applications that allow stores to provide card and voucher based loyaly schemes to their customers.
+   marks_spencer_description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index. 
+clients-manufacturing:
+  title: Manufacturing
+  subtitle: We have been helping our clients in Manufacturing to help redefine their industry through the application of cutting-edge technology.
+  accelad_description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
 clients-media:
    title: Media & Entertainment
    subtitle: Our clients in Media & Entertainment have leveraged our expertise in software development to create teams that are highly effective, and systems that delight their customers.
