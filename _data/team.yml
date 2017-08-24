@@ -50,14 +50,6 @@
   twitter: stevelydford
   github: stevelydford
 
-- id: toby
-  name: Toby Retallick
-  image: /assets/img/custom/team/toby_retallick.jpg
-  role: Software Craftsman
-  fullDescription: <p>Between 2007 and 2014 Toby worked client-side in marketing and digital roles. He also volunteered as a digital consultant for an environmental agency and has spoken at industry events. Toby's growing interest in the technology he was using on a daily basis lead him to completing an intensive coding bootcamp at Makers Academy in early 2014, before joining the team at Codurance.</p>
-  twitter: tobyret
-  github: tobyret
-
 - id: ana
   name: Ana Nogal
   image: /assets/img/custom/team/ana_nogal.jpg
@@ -305,3 +297,15 @@
     <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>  
   twitter: yefoakira
   github: miyamotoakira
+  
+- id: marco
+  name: Marco Consolaro
+  image: /assets/img/custom/team/marco_consolaro.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Marco learned to code in Basic on an MSX at a young age. He didn't follow his father's wish for him to study chemistry but pursued instead what he always considered his natural vocation and graduated in Computer Science at Venice University Ca' Foscari in 2001.</p>
+    <p>He worked in many different teams in Italy and UK since, always looking to learn and cherishing what worked best in each one. When his journey took him to discover the Agile principles he quickly realized the effectiveness of such an approach in both technical and organizational sides.<br/>He now strongly believes that an iterative approach based on trust, transparency, self-organization and quick feedback loops is the real key to success for any team of any discipline, not just software development.<br/>
+    His dream and challenge are to see these principles understood and implemented at any level in businesses, including public administrations.</p>
+    <p>In his spare time he has co-founded two startups and is always looking for the next idea. But what he loves the most is traveling with the family and can't wait for his toddler son to grow up and learn to code... unless he prefers chemistry!</p>  
+  twitter: consolondon
+  github: conso
