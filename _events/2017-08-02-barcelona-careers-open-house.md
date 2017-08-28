@@ -9,8 +9,8 @@ image:
 title: "Careers Open House (Barcelona)"
 hidden: true
 event-dates: 
- starts: 2017-09-04
- ends: 2017-09-04
+ starts: 2017-09-13
+ ends: 2017-09-13
 event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-36753908931
 date: 2017-08-02 10:00:00
 ---
