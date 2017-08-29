@@ -1,0 +1,108 @@
+---
+layout: post
+asset-type: post
+name: 99% code coverage - Do we have a good safety net to change this legacy code?
+title: '99% code coverage - Do we have a good safety net to change this legacy code?'
+date: 2017-08-29 12:00:00 +00:00
+author: Raquel M Carmena
+image:
+  src: /assets/img/custom/blog/2017-08-29-do-we-have-a-good-safety-net-to-change-this-legacy-code.jpg
+tags:
+- coverage
+- testing
+- mutation testing
+- quality
+
+---
+A long time ago, I met a development team which was working under big pressure by the quality team. Personally, I don’t like this kind of difference between development and quality teams, because it makes development teams feel that they aren’t responsible of quality and it provokes confrontations between them instead of working in a collaborative environment.
+
+One of the requirements was to have more than 85% of code coverage to ensure code quality. The result was perverse: development team wrote tests without assertions; they only invoked methods with different arguments to reach the desirable percentage. It’s clear that they didn’t follow TDD.
+
+Code coverage only give us information about the percentage of code lines which are executed during tests. Let’s see a way to check if we have a good safety net with current tests to make changes in production code.
+
+If we made a change in production code, such as “replacing + with -”, “replacing < with >=” or “returning a different value”, test battery might detect that change. In order words, tests might fail.
+
+There are tools to make changes in production code automatically and to run tests in order to check if those changes are detected. It’s talked about:
+
+* **Mutators**: changes to be applied
+* **Mutations**: new versions of production code after applying mutators
+* **Killed mutation**: tests fail; mutator is detected
+* **Survived mutation**: tests don’t fail; mutator is not detected
+
+So, we must try to kill every mutation with tests. 
+
+When I heard about it I thought about that game I played when I was just a teenager: _Super Pang_.
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/super-pang-game.jpg" alt="Super Pang Game" class="img img-responsive"/>
+</center>
+<br/>
+
+And I imagined this situation:
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/super-pang-mutation-testing.png" alt="Super Pang - Mutation Testing" class="img img-responsive"/>
+</center>
+
+It’s called **mutation testing** and it can be a good idea if you want to ensure that you have a good safety net with your current tests to refactor production code or to add new features, among others.
+
+Let’s see some examples with <a href="http://pitest.org" target="_blank">PIT</a> and a simple **Java** project with problematic code.
+
+## Example: boundaries
+
+A boundary value could be forgotten when writing tests (even following TDD). For example, with this piece of production code:
+
+```
+status arg3 = ((from.getParam1() < from.getParam2())? BLACK: WHITE);
+```
+
+If we don’t have a test which considers the same value for `param1` and `param2`, we get a survived mutation when applying <a href="http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY" target="_blank">_Conditional Boundary Mutator_</a>:
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/survived-mutation.png" alt="Survived mutation" class="img img-responsive"/>
+</center>
+<br/>
+
+PIT report shows the affected line:
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/pit-report-boundaries.png" alt="PIT Report" class="img img-responsive"/>
+</center>
+<br/>
+
+## Example: equals and hashCode methods
+
+I try to avoid having code in _production_ area which is only used in _test_ area. 
+
+In Java it’s common to find `equals` and `hashCode` methods which are only used in _verifications_ or _assertions_. It’s easy to generate the code of these methods automatically with an IDE such as _IntelliJ IDEA_, but at the same time it’s easy to have outdated code with these methods if we don’t remember to regenerate them when changing the involved class (or we don’t receive an alert about this fact).
+
+For example, a property is added to a class without updating `equals` and `hashCode` methods, so mutation testing gives us this result:
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
+</center>
+<br/>
+
+And PIT report alerts about those methods.
+
+If these methods are only used in test code, we can remove them and use <a href="https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-" target="_blank">`EqualsBuilder.reflectionEquals`</a> from _Apache Commons Lang_:
+
+```
+assertTrue(reflectionEquals(actualObject, expectedObject));
+```
+
+In that case, we get to kill every mutation:
+
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/new-pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
+</center>
+<br/>
+
+In case of verification, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> from _Mockito_ is available.
+
+## Conclusion
+
+We have seen that high code coverage doesn’t ensure that we have a good safety net to change production code. And mutation testing can be useful to test your tests in order to get more information about their suitability.
+
+Take a look to <a href="/2014/12/14/quality-cannot-be-measured/">_"Code quality cannot be measured"_</a> by **Sandro Mancuso**.
+
