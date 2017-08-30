@@ -14,7 +14,7 @@ tags:
 - quality
 
 ---
-A long time ago, I met a development team which was working under big pressure by the quality team. Personally, I don’t like this kind of difference between development and quality teams, because it makes development teams feel that they aren’t responsible of quality and it provokes confrontations between them instead of working in a collaborative environment.
+A long time ago, I met a development team which was working under big pressure by the quality team. Personally, I don’t like this kind of differences between development and quality teams, because it leads to development teams not feeling responsible for quality and to a confrontational relationship. They should be working collaboratively towards a unified goal of delivering a quality product.
 
 One of the requirements was to have more than 85% of code coverage to ensure code quality. The result was perverse: development team wrote tests without assertions; they only invoked methods with different arguments to reach the desirable percentage. It’s clear that they didn’t follow TDD.
 
