@@ -46,7 +46,7 @@ And I imagined this situation:
 
 It’s called **mutation testing** and it can be a good idea if you want to ensure that you have a good safety net with your current tests to refactor production code or to add new features, among others.
 
-Let’s see some examples with <a href="http://pitest.org" target="_blank">PIT</a> and a simple **Java** project with problematic code.
+Let’s see some examples with <a href="http://pitest.org" target="_blank">PIT</a> and a simple <a href="https://github.com/rachelcarmena/problematic-code" target="_blank">Java project</a> with problematic code.
 
 ## Example: boundaries
 
@@ -102,7 +102,7 @@ In case of verification, <a href="https://static.javadoc.io/org.mockito/mockito-
 
 ## Conclusion
 
-We have seen that high code coverage doesn’t ensure that we have a good safety net to change production code. And mutation testing can be useful to test your tests in order to get more information about their suitability.
+We have seen that code coverage doesn’t ensure that we have a good safety net to change production code. And mutation testing can be useful to test your tests in order to get more information about their suitability.
 
 Take a look to <a href="/2014/12/14/quality-cannot-be-measured/">_"Code quality cannot be measured"_</a> by **Sandro Mancuso**.
 
