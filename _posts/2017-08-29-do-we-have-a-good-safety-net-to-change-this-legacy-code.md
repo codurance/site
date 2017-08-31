@@ -98,7 +98,7 @@ In that case, we get to kill every mutation:
 </center>
 <br/>
 
-Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank"></a>, but think about it whether you only need to compare objects.
+Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a>, but think about it whether you only need to compare objects.
 
 In case of verification, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> from _Mockito_ is available.
 
