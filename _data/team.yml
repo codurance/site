@@ -149,22 +149,6 @@
   twitter: Chris_Jeffery
   github: chrisjeffery
 
-- id: sean
-  name: Sean Newham
-  image: /assets/img/custom/team/sean_newham.jpg
-  role: Software Craftsman
-  fullDescription: >
-    <p>Sean became interested in Software Craftsmanship early in his career; writing a kata to introduce his local community to the joys of bridge (which he plays) and mocking. He is motivated by a variety of interesting problems. The top three are:
-    <ul>
-      <li>organisational structures and how they can help or hinder us from making awesome, usable software</li>
-      <li>fixing teams, projects and software that are going badly</li>
-      <li>making an api that encourages good development practices from consumers</li>
-    </ul>
-    </p>
-    <p>He believes in the devops philosophy, and never leaves home without at least one way to develop F# (his current laptop has 3 - mono, .net core and visual studio). His current interest is machine learning, due to an unhealthy obsession with matrices that started some time during his uni years.</p>
-  twitter: seannewham
-  github: seanseviltwin
-
 - id: guillem
   name: Guillem Fernandez
   image: /assets/img/custom/team/guillem_fernandez.jpg
