@@ -294,10 +294,10 @@
   fullDescription:
     <p>Although he started early (with QuickBasic and Turbo Pascal), took him a while to center into the developer way of living. Nonetheless, he has more than 10 years experience as software developer at different levels. His main experience is around C# and .Net, but has a keen interest in other languages, especially around functional programming.</p>
     <p>In his experience two maxims have been revealed, Simple is Beautiful and Make Everyone's Life Easy. Because of them, his personal goal is to improve the experience of fellow developers (which always translates to happy customers)</p>
-    <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>  
+    <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>
   twitter: yefoakira
   github: miyamotoakira
-  
+
 - id: marco
   name: Marco Consolaro
   image: /assets/img/custom/team/marco_consolaro.jpg
@@ -306,14 +306,14 @@
     <p>Marco learned to code in Basic on an MSX at a young age. He didn't follow his father's wish for him to study chemistry but pursued instead what he always considered his natural vocation and graduated in Computer Science at Venice University Ca' Foscari in 2001.</p>
     <p>He worked in many different teams in Italy and UK since, always looking to learn and cherishing what worked best in each one. When his journey took him to discover the Agile principles he quickly realized the effectiveness of such an approach in both technical and organizational sides.<br/>He now strongly believes that an iterative approach based on trust, transparency, self-organization and quick feedback loops is the real key to success for any team of any discipline, not just software development.<br/>
     His dream and challenge are to see these principles understood and implemented at any level in businesses, including public administrations.</p>
-    <p>In his spare time he has co-founded two startups and is always looking for the next idea. But what he loves the most is traveling with the family and can't wait for his toddler son to grow up and learn to code... unless he prefers chemistry!</p>  
+    <p>In his spare time he has co-founded two startups and is always looking for the next idea. But what he loves the most is traveling with the family and can't wait for his toddler son to grow up and learn to code... unless he prefers chemistry!</p>
   twitter: consolondon
   github: conso
 
 - id: nachogarcia
   name: Nacho García
   image: /assets/img/custom/team/nacho_garcia.jpg
-  role: Software Craftsman
+  role: Apprentice
   fullDescription: >
     <p>Since the start of his career, Nacho has had the pleasure to be around great people who have encouraged him to join communities and follow good practices. As such, he loves developing and improving his skills on a daily basis. To him, it doesn't matter if it's back-end, front-end or automating infrastructure: he will always try to understand how things works.</p>
     <p>If you don't find him on his computer, you will probably find him training Judo. Amongst many titles, he has been the national champion of Kyokushin Karate.</p>
