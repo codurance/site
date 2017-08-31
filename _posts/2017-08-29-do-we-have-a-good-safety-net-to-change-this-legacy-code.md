@@ -16,9 +16,9 @@ tags:
 ---
 A long time ago, I met a development team which was working under big pressure by the quality team. Personally, I don’t like this kind of differences between development and quality teams, because it leads to development teams not feeling responsible for quality and to a confrontational relationship. They should be working collaboratively towards a unified goal of delivering a quality product.
 
-One of the requirements was to have more than 85% of code coverage to ensure code quality. The result was perverse: development team wrote tests without assertions; they only invoked methods with different arguments to reach the desirable percentage. It’s clear that they didn’t follow TDD.
+One of the requirements was to have more than 85% of code coverage to ensure code quality. The result was perverse: development team wrote tests without assertions; they only invoked methods with different arguments to reach the desired percentage. It’s clear that they didn’t follow TDD.
 
-Code coverage only give us information about the percentage of code lines which are executed during tests. Let’s see a way to check if we have a good safety net with current tests to make changes in production code.
+Code coverage only gives us information about the percentage of code lines which are executed during tests. Let’s see a way to check if we have a good safety net with current tests to make changes in production code.
 
 If we made a change in production code, such as “replacing + with -”, “replacing < with >=” or “returning a different value”, test battery might detect that change. In order words, tests might fail.
 
@@ -72,9 +72,9 @@ PIT report shows the affected line:
 
 ## Example: equals and hashCode methods
 
-I try to avoid having code in _production_ area which is only used in _test_ area. 
+I try to avoid having logic in _production_ code which is only used from _test_ code.
 
-In Java it’s common to find `equals` and `hashCode` methods which are only used in _verifications_ or _assertions_. It’s easy to generate the code of these methods automatically with an IDE such as _IntelliJ IDEA_, but at the same time it’s easy to have outdated code with these methods if we don’t remember to regenerate them when changing the involved class (or we don’t receive an alert about this fact).
+It’s common to find `equals` and `hashCode` methods in Java which are only used in _verifications_ or _assertions_. It’s easy to generate the code of these methods automatically with an IDE such as _IntelliJ IDEA_, but at the same time, it’s easy to have outdated code with these methods if we don’t remember to regenerate them when changing the involved class (or we don’t receive an alert about this fact).
 
 For example, a property is added to a class without updating `equals` and `hashCode` methods, so mutation testing gives us this result:
 
@@ -98,7 +98,7 @@ In that case, we get to kill every mutation:
 </center>
 <br/>
 
-Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a>, but think about it whether you only need to compare objects.
+Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> but think about it whether you only need to compare objects.
 
 In case of verification, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> from _Mockito_ is available.
 
