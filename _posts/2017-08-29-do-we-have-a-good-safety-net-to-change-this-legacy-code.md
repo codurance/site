@@ -74,24 +74,24 @@ PIT report shows the affected line:
 
 I try to avoid having logic in _production_ code which is only used from _test_ code.
 
-It’s common to find `equals` and `hashCode` methods in Java which are only used in _verifications_ or _assertions_. It’s easy to generate the code of these methods automatically with an IDE such as _IntelliJ IDEA_, but at the same time, it’s easy to have outdated code with these methods if we don’t remember to regenerate them when changing the involved class (or we don’t receive an alert about this fact).
+It’s common to find `equals` and `hashCode` methods in Java which are only used in _verifications_ or _assertions_. It’s easy to generate the code of these methods automatically with an IDE such as _IntelliJ IDEA_, but at the same time, it’s easy to have outdated code if we don’t remember to regenerate them when changing the involved class (or we don’t receive an alert about this fact).
 
-For example, a property is added to a class without updating `equals` and `hashCode` methods, so mutation testing gives us this result:
+For example, a property is added to a class without updating `equals` and `hashCode` methods, so PIT statistics results in 9 survived mutations:
 
 <center>
 <img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
 </center>
 <br/>
 
-And PIT report alerts about those methods.
+And PIT report alerts on `equals` and `hashCode` methods.
 
-If these methods are only used in test code, we can remove them and use <a href="https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-" target="_blank">`EqualsBuilder.reflectionEquals`</a> from _Apache Commons Lang_:
+If these methods are only used from test code, we can replace them with <a href="https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-" target="_blank">`EqualsBuilder.reflectionEquals`</a> from _Apache Commons Lang_:
 
 ```
 assertTrue(reflectionEquals(actualObject, expectedObject));
 ```
 
-In that case, we get to kill every mutation:
+In that case, we can succeed in killing every mutation:
 
 <center>
 <img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/new-pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
@@ -100,7 +100,7 @@ In that case, we get to kill every mutation:
 
 Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> but think about it whether you only need to compare objects.
 
-In case of verification, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> from _Mockito_ is available.
+Regarding _verification_, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> from _Mockito_ is available.
 
 ## Conclusion
 
