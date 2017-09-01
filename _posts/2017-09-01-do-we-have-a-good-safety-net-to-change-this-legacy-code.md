@@ -43,7 +43,7 @@ When I heard about it I thought about that game I played when I was just a teena
 And I imagined a situation such as this:
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-01-coverage/super-pang-mutation-testing.png" alt="Super Pang - Mutation Testing" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-01-coverage/super-pang-mutation-testing.jpg" alt="Super Pang - Mutation Testing" class="img img-responsive"/>
 </center>
 
 It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
@@ -68,7 +68,7 @@ If we don’t have a test which considers the same value for `param1` and `param
 PIT report shows the affected line:
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-01-coverage/pit-report-boundaries.png" alt="PIT Report" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-01-coverage/pit-report-boundaries.jpg" alt="PIT Report" class="img img-responsive"/>
 </center>
 <br/>
 
