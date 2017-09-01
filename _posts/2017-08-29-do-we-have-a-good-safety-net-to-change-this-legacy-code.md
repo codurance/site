@@ -18,11 +18,13 @@ A long time ago, I met a development team which was working under big pressure b
 
 One of the requirements was to have more than 85% of code coverage to ensure code quality. The result was perverse: development team wrote tests without assertions; they only invoked methods with different arguments to reach the desired percentage. It’s clear that they didn’t follow TDD.
 
-Code coverage only gives us information about the percentage of code lines which are executed during tests. Let’s see a way to check if we have a good safety net with current tests to make changes in production code.
+Code coverage only gives us information about the percentage of code lines which are executed during tests. 
 
-If we made a change in production code, such as “replacing + with -”, “replacing < with >=” or “returning a different value”, test battery might detect that change. In order words, tests might fail.
+Let’s see a way to verify that our current tests provide us with a safety net when we make changes to production code.
 
-There are tools to make changes in production code automatically and to run tests in order to check if those changes are detected. It’s talked about:
+If we change the production code - replacing `<` with `>=`, swapping `+` with `-` or we return a different value in a given method - test battery should detect that change. In order words, tests should fail.
+
+There are tools to make changes in production code automatically and to run tests in order to check if those changes are detected. It is usually referred to as follow:
 
 * **Mutators**: changes to be applied
 * **Mutations**: new versions of production code after applying mutators
@@ -44,7 +46,7 @@ And I imagined a situation such as this:
 <img src="{{site.baseurl}}/assets/img/custom/blog/2017-08-29-coverage/super-pang-mutation-testing.png" alt="Super Pang - Mutation Testing" class="img img-responsive"/>
 </center>
 
-It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features, among others.
+It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
 
 Let’s see some examples with <a href="http://pitest.org" target="_blank">PIT</a> and a simple <a href="https://github.com/rachelcarmena/problematic-code" target="_blank">Java project</a> with problematic code.
 
@@ -98,13 +100,15 @@ In that case, we can succeed in killing every mutation:
 </center>
 <br/>
 
-Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> but think about it whether you only need to compare objects.
+Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> to make `equals` and `hashCode` methods available, but maybe it's not necessary if you only need to compare objects.
 
 Regarding _verification_, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> is available from <a href="http://site.mockito.org" target="_blank">Mockito</a>.
 
-## Conclusion
+### Further reading 
 
-We have seen that code coverage doesn’t ensure that we have a good safety net to change production code. And mutation testing can be useful to test your tests in order to get more information about their suitability.
+Take a look at <a href="/2014/12/14/quality-cannot-be-measured">_Code quality cannot be measured_</a> by <a href="/publications/author/sandro-mancuso">**Sandro Mancuso**</a>.
 
-Take a look to <a href="/2014/12/14/quality-cannot-be-measured/">_"Code quality cannot be measured"_</a> by **Sandro Mancuso**.
+### Acknowledgments
+
+My special thanks go to <a href="/publications/author/halima-koundi">**Halima Koundi**</a>, my very good colleague, for her help in this post.
 
