@@ -13,4 +13,4 @@ date: 2017-09-05 10:00:00 +00:00
 
 ## Screencast: Outside-In Classicist TDD by Sandro Mancuso
 
-In this screencast Sandro Mancuso performs the Mars Rover kata using Classicist TDD but starting from outside, that means, the public interface of the main class (Rover). As in any good classicist approach to TDD, design decisions are done during the refactoring phase. This video shows that the outside-in approach to _design_ is still relevant regardless which TDD style you prefer. 
+In this screencast Sandro Mancuso performs the Mars Rover kata using Classicist TDD but starting from the public interface of the main class (Rover), which is normally associated to the Outside-In approach to TDD. As in any good classicist approach to TDD, design decisions are made during the refactoring phase. This video shows that the outside-in approach to _software design_ can be used with whichever TDD style you prefer. 
