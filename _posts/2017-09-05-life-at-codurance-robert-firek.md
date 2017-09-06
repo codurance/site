@@ -30,7 +30,7 @@ The vibrant people within the software craftsmanship communities around Europe i
 
 The variety of jobs and roles is not easy to capture in few sentences. Put it this way, it’s certainly not what I expected when I joined Codurance!
 
-I actually joined Codurance and my first project was as a PHP developer, back before our main stacks matured around Java, .NET and Node.js. Within a few weeks however I was back to Java again (due to a change in the client project), and I haven’t written a single line of production code in PHP since. 
+I actually joined Codurance and my first project was as a PHP developer, back before our main stacks matured around Java, .NET and Node.js. Within a few hours however I was back to Java again (due to a change in the client project), and I haven’t written a single line of production code in PHP. 
 
 It was probably the first time when I understood that I needed to be more than just the person who will be able to help them to shape their product by writing the code, but also by helping them improve their processes behind the software. It was a big challenge for someone without any experience in consultancy. Fortunately, all crafters in Codurance help you to develop the skills required to provide the best value for our customers. 
 
