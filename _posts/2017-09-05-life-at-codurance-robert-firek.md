@@ -6,7 +6,7 @@ title: 'The Life of a Senior Software Craftsman, with Robert Firek'
 date: 2017-09-04 12:00:00 +00:00
 author: Robert Firek 
 image:
-  src: /assets/img/custom/blog/2017-09-01-do-we-have-a-good-safety-net-to-change-this-legacy-code.jpg
+  src: /assets/img/custom/blog/2017-09-04-life-at-codurance-robert-firek/microphone.jpg
 tags:
 - life-at-codurance 
 - career 
