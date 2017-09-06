@@ -10,6 +10,7 @@ tags:
 - open financials
 - open-book management
 - codurance
+- life-at-codurance
 --- 
 
 Early this month we took a big step towards full transparency and decided to open the financials to the whole company. Our decision is aligned to the [open-book management](https://en.wikipedia.org/wiki/Open-book_management) concept. 
