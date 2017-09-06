@@ -34,15 +34,15 @@ I actually joined Codurance and my first project was as a PHP developer, back be
 
 It was probably the first time when I understood that I needed to be more than just the person who will be able to help them to shape their product by writing the code, but also by helping them improve their processes behind the software. It was a big challenge for someone without any experience in consultancy. Fortunately, all crafters in Codurance help you to develop the skills required to provide the best value for our customers. 
 
-After this project, I discovered a new passion :). A passion for DevOps. We were working a startup company that needed help to create their infrastructure in the cloud. This project was the most challenging project in my career. I had to learn a lot of new technologies and techniques to be able to provide the best value for our customer and to be the expert who can advise. At the same time, this startup hired one of the best people on the market, so together with my colleagues, we worked in the space where knowledge was flying in the air.
+After this project, I discovered a new passion :). A passion for DevOps. We were working at a startup company that needed help to create their infrastructure in the cloud. This project was the most challenging project in my career. I had to learn a lot of new technologies and techniques to be able to provide the best value for our customer and to be the expert who can advise. At the same time, this startup hired one of the best people on the market, so together with my colleagues, we worked in the space where knowledge was flying in the air.
 
 <blockquote class="hero bq-text-lg"><p>"I discovered a new passion … A passion for DevOps"</p></blockquote>
 
-In the next project, I had to change my role completely. The software creation was our secondary goal. Together with other crafters, we were asked to help people to introduce the good practices like TDD. At the same time we trained the group of former Cobol programmers in Java. We run the study group where we were discovering the standards and libraries hidden behind Java. It was great pleasure to see the progress they made and how much energy they put to be Java developers. Thanks to the openness of our customer for new practices, we were able to organise the boot camp for our study group. During the two weeks of the boot camp, people had a chance to take part in the simulation of the real project. We received a lot of positive reviews but from my perspective we achieve more important goal. We managed to build the curiosity and willingness to learn. 
+In the next project, I had to change my role completely. The software creation was our secondary goal. Together with other crafters, we were asked to help people to introduce the good practices like TDD. At the same time we trained the group of former Cobol programmers in Java. We run the study group where we were discovering the standards and libraries hidden behind Java. It was great pleasure to see the progress they made and how much energy they put to be Java developers. Thanks to the openness of our customer for new practices, we were able to organise the boot camp for our study group. During the two weeks of the boot camp, people had a chance to take part in the simulation of the real project. We received a lot of positive reviews but from my perspective we achieve a more important goal. We managed to build the curiosity and willingness to learn. 
 
 ### And what are you currently doing?
 
-I’m currently working with another Software Crafter alongside our client's development team to help improve the legacy code. Once again, this project is completely different from the former once. This team is very experienced in the domain (which is not trivial). Our main goal is to change architecture in the way which will allow reduce the required time to extend and / or introduce features. The company is not based in the UK which also gives the possibility to discover different cultures and food from other regions of Europe ;).
+I’m currently working with another Software Crafter alongside our client's development team to help improve the legacy code. Once again, this project is completely different from the former ones. This team is very experienced in the domain (which is not trivial). Our main goal is to reduce the time required to introduce new features and extend the existing ones by improving the architecture of the application.. The company is not based in the UK which also gives the possibility to discover different cultures and food from other regions of Europe ;).
 
 ### What do does a typical day look like at Codurance?
 
@@ -55,7 +55,7 @@ We also share and learn ideas outside of our normal project times as well. We or
 
 <blockquote class="hero bq-text-lg"><p>"For me, it’s the sense of community"</p></blockquote>
 
-We also have our bi-weekly catchups on a Tuesday evening, where we meet together on our catch-up meeting to have fun together. We organise a mini-open conference preceded by lightning talks. This is the space where we discuss anything that we want - nothing is off topic. For example, we recently had a few talks about aeronautics. We also have the chance to socialise with people from different projects (which we cannot meet every day). It is the great opportunity for us to build the team and get know each other.
+Every two weeks, we also have our catch-ups where we meet together to have fun together. We organise a mini-open conference preceded by lightning talks. This is the space where we discuss anything that we want - nothing is off topic. For example, we recently had a few talks about aeronautics. We also have the chance to socialise with people from different projects (which we cannot meet every day). It is the great opportunity for us to build the team and get know each other.
 
 Every two months we organise a bigger version of our catch-up meetings. It is Codurance Day. We spend the whole day together organising a small version of the Socrates conference. We decide about the topics, we can spend the whole day coding or discuss the topics important for the company. 
 
@@ -70,9 +70,9 @@ I moved outside my comfort zones when I had to develop my skills around consulta
 
 <blockquote class="hero bq-text-lg"><p>"In my opinion, a Senior Craftsman should be able to help others to develop."</p></blockquote>
 
-In my opinion, a Senior Craftsman should be able to help others to develop. Sharing knowledge allows all of us to develop from each other. Even if you are quite knowledgeable in some area, there is always the space for improvement. Exchanging knowledge increase also our communication skills because you need to explain people the concepts behind the idea.
+In my opinion, a Senior Craftsman should be able to help others to develop. Sharing knowledge allows all of us to develop from each other. Even if you are quite knowledgeable in some area, there is always the space for improvement. Exchanging knowledge also increases our communication skills because you need to explain to people the concepts behind the idea.
 
-I also try to constantly remind myself that my journey is not finished and I need to constantly improve myself in the same way as improve my software. 
+I also try to constantly remind myself that my journey is not finished and I need to constantly improve myself in the same way as I improve my software. 
 
 ### What made you join Codurance?
 
