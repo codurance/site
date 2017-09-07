@@ -100,6 +100,8 @@ In that case, we can succeed in killing every mutation:
 </center>
 <br/>
 
+Another option could be to use <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-comparison" target="_blank">field by field comparisons</a> from <a href="http://joel-costigliola.github.io/assertj/index.html" target="_blank">AssertJ</a>. It's useful if the object under comparison has other custom objects as properties, so comparators for types can be added by <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-recursive" target="_blank">`usingComparatorForType`</a>. 
+
 Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> to make `equals` and `hashCode` methods available, but maybe it's not necessary if you only need to compare objects.
 
 Regarding _verification_, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> is available from <a href="http://site.mockito.org" target="_blank">Mockito</a>.
