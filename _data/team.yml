@@ -308,9 +308,18 @@
   name: Ivan Badia
   image: /assets/img/custom/team/ivan_badia.jpg
   role: Software Craftsman
-  fullDescription: >
+  fullDescription:
     <p>Ivan is a software developer eager to learn new skills and technologies. He is interested in creating well-crafted software and he is a firm believer in agile values and its potential to build happy teams which deliver exceptional products.</p>
     <p>He started learning coding when he was sixteen with the book “Application Programming in Structured C”. He realized that coding was so fun that he decided to earn a living coding. He started his professional career in 2004 and since then, has had the opportunity to work in a wide variety of projects.</p>
     <p>In his spare time, Ivan loves traveling and spending time with his wife and son.</p>
   twitter: ibadiam
   github: ivanbadia
+- id: lilianacarneiro
+  name: Liliana Carneiro
+  image: /assets/img/custom/team/liliana_carneiro.jpg
+  role: Office Manager
+  fullDescription:
+    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
+    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
+    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
+  twitter: lilistahr
