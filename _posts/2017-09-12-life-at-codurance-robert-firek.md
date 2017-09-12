@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: The Life of a Senior Software Craftsman, with Robert Firek  
 title: 'The Life of a Senior Software Craftsman, with Robert Firek'
-date: 2017-09-04 12:00:00 +00:00
+date: 2017-09-12 12:00:00 +00:00
 author: Robert Firek 
 image:
   src: /assets/img/custom/blog/2017-09-04-life-at-codurance-robert-firek/microphone.jpg
@@ -16,6 +16,20 @@ tags:
 ---
 
 ![Robert]({{ site.url }}/assets/img/custom/blog/lifeatcodurance/robert-1.jpg)
+
+<div class="tag-box tag-box-v6">
+  <h3>We caught up with our Senior Craftsperson, Robert Firek, to find out more about life at Codurance, his transition from PHP to Java and why he has such a passion for DevOps.</h3>
+</div>
+<div class="row tag-box tag-box-v5">
+  <div class="col-md-8">
+    <h3>Interested in joining us?</h3>
+  </div>
+  <div class="col-md-4">
+    <p><a href="{{ site.url }}/careers/become_a_craftsman" class="btn-u btn-u-lg btn-u-orange">Learn more & Apply</a></p>
+  </div>
+</div>
+<br/>
+
 ### Q. Hi Robert! Tell us a little bit about yourself
 
 I’m a software developer - or rather, I should say that I am a ‘Software Crafter’ now! In short, I came to the UK from Poland around five years ago. Before Codurance, I worked at various companies to basically figure out what I wanted to do, and ended up spending a lot of time in the world of Java (having previously worked with PHP and Perl).
@@ -89,3 +103,13 @@ Giving any advice is difficult. It is always blurred by your own experiences. Th
 The main quality which I can find in every Codurance person is passion. Every member of our team is passionate about something in the computer science. This passion may be for a relatively small thing but it allows us to expand this passion to the other areas.
 
 My advice would be to find something in computer science which gives you a lot of pleasure and start to explore it. I'm pretty sure that soon after that you will find the way to join us.
+
+<br/>
+<div class="row tag-box tag-box-v5">
+  <div class="col-md-8">
+    <h3>Interested in joining us?</h3>
+  </div>
+  <div class="col-md-4">
+    <p><a href="{{ site.url }}/careers/become_a_craftsman" class="btn-u btn-u-lg btn-u-orange">Learn more & Apply</a></p>
+  </div>
+</div>
