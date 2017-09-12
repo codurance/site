@@ -11,6 +11,7 @@ tags:
 - craftsmanship
 - practices
 - mentoring
+- life-at-codurance
 ---
 
 I have always been able to deliver what was asked and I was able to understand and pick up new project quickly, but the code base I would work on would always grow into something people would fear to touch, working with it would become difficult and painful in the long run. 
