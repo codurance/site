@@ -4,6 +4,8 @@ office:
    lon: "2.159348"
    formatted_phone: +44 207 4902967
    raw_phone: "+442074902967"
+analytics:
+  google-id: UA-46289079-3
 sections:
    clients: Clientes
    services: Servicios
