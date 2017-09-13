@@ -60,7 +60,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '{{site.googleanalytics.account}}', 'codurance.com');
+    ga('create', '{% t analytics.google-id %}', 'codurance.com');
     ga('send', 'pageview');
     window.googleAnalyticsEvents = { environment: {ga:ga}, functions: []};
     // fire all events at onload - see _includes/foot.html
