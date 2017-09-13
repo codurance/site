@@ -13,6 +13,7 @@ tags:
 - decision-making
 - transparency
 - culture 
+- life-at-codurance
 ---
 
 We have been trying to encourage decentralised decision making at Codurance. To that effect, everyone within the company understands that they have the power to make any decision they need to make so long as they seek advise from the people that may be impacted. In order to help people make effective decisions, all company information is available to everyone in the company, including financials and salaries. This is all well and good, but in practice people do not simply go and start making informed strategic decisions just because they have the power to do so. For one, they are busy with their day jobs and simply do not have much time to look at the company holistically. Even if they have some wonderful ideas, they may not have the inclination or confidence to kick-off the initiative.

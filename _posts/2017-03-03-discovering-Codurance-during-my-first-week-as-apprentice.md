@@ -8,7 +8,8 @@ author: Raquel M Carmena
 image:
   src: /assets/img/custom/blog/2017-03-03-discovering-Codurance-during-my-first-week.jpg
 tags:
-- Apprenticeship
+- apprenticeship
+- life-at-codurance
 
 ---
 ## Respect
