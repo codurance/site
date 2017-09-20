@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: mvc-delievery-mechanism-domain-model
 title: MVC, Delievery Mechanism and Domain Model
-date: 2017-09-20 02:00:00 +00:00
+date: 2017-09-20 01:00:00 +00:00
 author: Sandro Mancuso
 image:
    src: /assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png
