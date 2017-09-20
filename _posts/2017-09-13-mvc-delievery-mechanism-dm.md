@@ -14,7 +14,7 @@ tags:
 - IDD
 ---
 
-Model-View-Controller (or MVC for short) is one of the most misunderstood design patterns in software design. MVC has its [origins][1] in the SmallTalk community in the late 70s but it was only in 1988 that it was expressed as general concept in an [article][2] by Glenn E. Krasner and Stephen T. Pope for [The Journal of Object Technology][2]. 
+Model-View-Controller (or MVC for short) is one of the most misunderstood design patterns in software design. MVC has its [origins][1] in the SmallTalk community in the late 70s but it was only in 1988 that it was expressed as general concept in an [article][2] by Glenn E. Krasner and Stephen T. Pope for [The Journal of Object Technology][31]. 
 
 The main idea behind MVC was to keep the presentation and business logic decoupled from each other.
 
@@ -25,7 +25,7 @@ The main idea behind MVC was to keep the presentation and business logic decoupl
 
 Up until mid 90s, MVC had mainly been used for desktop and embedded applications. [Three-tier architecture][3] (presentation, logic, data) was the reigning architectural style in the 90s, and MVC fitted as a glove. In the late 90s and early 2000s, most companies started migrating their applications to the web and the need to keep the user interface separate from the business logic became even more important. The MVC pattern promotes exactly that and it was a natural step to use MVC for web applications. However, we now had a browser, http calls, and the View would be rendered outside our applications, separately from our Controllers and Model. In order to make things easier for developers, a few frameworks were created. In the Java world, we had MVC [Model 1][4] and [Model 2][5] with [Java Server Pages (JSP)][6] and [Servlets][7]. [Struts][8], the first major Java MVC framework, was created in the early 2000s. From then onwards, we had many attempts to make the communication between the browser (View) and our applications (Controller and Model) seamlessly. Many other frameworks like [Tapestry][21], [Java Server Faces (JSF)][22]and [Spring MVC][23] emerged in the Java world. Other languages and platforms also created their own, [Rails][15] being one of the most successful ones. 
 
-As web applications and frameworks diversified, the MVC pattern also evolved and new variations like [MVA][9], [MVP][10], [MVVM][11] and [PACK][12] emerged. MVC frameworks became popular and as part of their evolution they tried to automate more and more the _manual_ work the developer had to do, including database access. MVC frameworks started automating how [Entities][13] are persisted using [Object-Relational Mapping - ORM][14] techniques or closely integrated with other ORM frameworks. Due to the simplicity of  many web applications, MVC frameworks made it easy to capture data in a web form and store in relational databases. They also made it easy to read data from the database and display on the browser. The price for this automation was a bastardisation of the Model layer, which became synonymous of _Entities_ that represented tables in the database. 
+As web applications and frameworks diversified, the MVC pattern also evolved and new variations like [MVA][9], [MVP][10], [MVVM][11] and [PAC][12] emerged. MVC frameworks became popular and as part of their evolution they tried to automate more and more the _manual_ work the developer had to do, including database access. MVC frameworks started automating how [Entities][13] are persisted using [Object-Relational Mapping - ORM][14] techniques or closely integrated with other ORM frameworks. Due to the simplicity of  many web applications, MVC frameworks made it easy to capture data in a web form and store in relational databases. They also made it easy to read data from the database and display on the browser. The price for this automation was a bastardisation of the Model layer, which became synonymous of _Entities_ that represented tables in the database. 
 
 With the Model now associated to Entities and persistency and the View associated to HTML, CSS and JavaScript, developers found no other alternative then to put the business logic of the system in Controller layer. Unfortunately MVC frameworks are one of the main reasons we find Web applications with an anaemic domains (Entities with no behaviour) and fat Controllers - responsible for navigation, managing sessions, parsing JSON and XML, and also with business logic. 
 
@@ -51,7 +51,7 @@ As the web evolved, the need for better usability increased and with it the dema
 </center>
 <br/>
 
-But that was not enough. We still had problems. The full application had to be redeployed if we wanted to make a change either on the front-end or backend. Scaling stateful backends was expensive. We also had to deploy our applications (at least in the Java world) inside web or [application servers][28]. In order to solve that, we had to completely decouple the front-end and backend and ideally, have a completely stateless backend. Front-end technologies like [AngularJS][29] and [NodeJS][30] allowed us to move both View and Controller to the browser. With this, we could create stateless backend, only providing APIs.
+But that was not enough. We still had problems. The full application had to be redeployed if we wanted to make a change either on the front-end or backend. Scaling stateful backends was expensive. We also had to deploy our applications (at least in the Java world) inside web or [application servers][28]. In order to solve that, we had to completely decouple the front-end and backend and ideally, have a completely stateless backend. Front-end technologies like [AngularJS][29] and [Node.JS][30] allowed us to move both View and Controller to the browser. With this, we could create stateless backend, only providing APIs.
 
 **Decoupled Model MVC**
 
@@ -145,33 +145,34 @@ Don’t couple all the layers of your application using frameworks that will tel
 Keeping Delivery Mechanism decoupled from Domain Model give us options to deploy and scale the application. 
 
 
-[1]: link to origin of MVC (if any)
-[2]: Link to the original article defining MVC
-[3]: Link to three tier architecture
-[4]: Model 1 - Java
-[5]: Model 2 - Java
-[6]: JSP
-[7]: Servlets
-[8]: Struts
-[9]: MVA
-[10]: MVP
-[11]: MVVM
-[12]: PACK
-[13]: Entities
-[14]: ORM
-[15]: Ruby on Rails
-[16]: Domain driven design
-[17]: building blocks - DDD
-[18]: Java Annotations
-[19]: Java reflection
-[20]: LightAccess
-[21]: [Tapestry]
-[22]: [Java Server Faces (JSF)]
-[23]: [Spring MVC]
+[1]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+[2]: https://www.lri.fr/~mbl/ENS/FONDIHM/2013/papers/Krasner-JOOP88.pdf
+[3]: https://en.wikipedia.org/wiki/Multitier_architecture
+[4]: http://download.oracle.com/otn_hosted_doc/jdeveloper/1012/developing_mvc_applications/adf_aboutmvc2.html
+[5]: http://download.oracle.com/otn_hosted_doc/jdeveloper/1012/developing_mvc_applications/adf_aboutmvc2.html
+[6]: http://www.oracle.com/technetwork/java/javaee/jsp/index.html
+[7]: http://docs.oracle.com/javaee/6/tutorial/doc/bnafd.html
+[8]: https://struts.apache.org/
+[9]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93adapter
+[10]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter
+[11]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
+[12]: https://en.wikipedia.org/wiki/Presentation%E2%80%93abstraction%E2%80%93control
+[13]: https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks
+[14]: https://en.wikipedia.org/wiki/Object-relational_mapping
+[15]: http://rubyonrails.org/
+[16]: https://en.wikipedia.org/wiki/Domain-driven_design
+[17]: https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks
+[18]: https://docs.oracle.com/javase/tutorial/java/annotations/
+[19]: http://www.oracle.com/technetwork/articles/java/javareflection-1536171.html
+[20]: https://github.com/codurance/light-access
+[21]: https://tapestry.apache.org/index.html
+[22]: http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html
+[23]: https://spring.io/guides/gs/serving-web-content/
 [24]: http://freemarker.org/
-[25]: [Mustache]
-[26]: [Jade]
+[25]: https://mustache.github.io/
+[26]: http://jade-lang.com/
 [27]: https://en.wikipedia.org/wiki/Rich_Internet_application
 [28]: https://en.wikipedia.org/wiki/Application_server
-[29]: [AngularJS]
-[30]: [NodeJS]
+[29]: https://angularjs.org/
+[30]: https://nodejs.org/en/
+[31]: https://en.wikipedia.org/wiki/The_Journal_of_Object_Technology
