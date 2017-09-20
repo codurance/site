@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: mvc-delievery-mechanism-domain-model
-title: MVC, Delievery Mechanism and Domain Model
+title: MVC, Delivery Mechanism and Domain Model
 date: 2017-09-20 01:00:00 +00:00
 author: Sandro Mancuso
 image:
