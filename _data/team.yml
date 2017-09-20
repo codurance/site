@@ -76,7 +76,7 @@
 - id: matthew
   name: Matthew Butt
   image: /assets/img/custom/team/matthew_butt.jpg
-  role: Software Craftsman
+  role: Software Craftsperson
   fullDescription: >
     <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since he started working with code in 2000 he has always focused on creating well-crafted software, and building close collaborative relationships within and beyond the technical team.</p>
     <p>Recently Matthew has worked primarily on the .NET platform, and he is experienced in giving new life to legacy code written in C# and VB, as well as crafting projects that take advantage of the latest developments on the platform.</p>
@@ -308,9 +308,29 @@
   name: Ivan Badia
   image: /assets/img/custom/team/ivan_badia.jpg
   role: Software Craftsman
-  fullDescription: >
+  fullDescription:
     <p>Ivan is a software developer eager to learn new skills and technologies. He is interested in creating well-crafted software and he is a firm believer in agile values and its potential to build happy teams which deliver exceptional products.</p>
     <p>He started learning coding when he was sixteen with the book “Application Programming in Structured C”. He realized that coding was so fun that he decided to earn a living coding. He started his professional career in 2004 and since then, has had the opportunity to work in a wide variety of projects.</p>
     <p>In his spare time, Ivan loves traveling and spending time with his wife and son.</p>
   twitter: ibadiam
   github: ivanbadia
+- id: lilianacarneiro
+  name: Liliana Carneiro
+  image: /assets/img/custom/team/liliana_carneiro.jpg
+  role: Office Manager
+  fullDescription:
+    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
+    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
+    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
+  twitter: lilistahr
+
+- id: dancohen
+  name: Dan Cohen
+  image: /assets/img/custom/team/dan_cohen.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Dan first started coding with the wave of independant game developers on Newgrounds in the early 2000s. A big lover of hackathons and startup culture, he loves to build and experiment with code.</p>
+    <p>He is a huge fan of open source software and believes deeply in a culture of sharing and openness, in software and in life.</p>
+    <p>With three years of experience working in the .NET ecosystem, he knows he has a lot to learn and is keen to keep pushing forwards, digging deeper and understanding more.</p>
+  twitter: hackingdandan
+  github: cohen990

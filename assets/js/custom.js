@@ -102,6 +102,14 @@ var submitApplication = function (title, target) {
         url: url,
         data: JSON.stringify(body),
         success: function(data) {
+  
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Application',
+            eventAction: 'apply',
+            eventLabel: title 
+          });
+
             $('#' + target + '-fields').hide();
             $('#' + target + '-apply-btn').hide();
             $('#success-msg-' + target).removeClass('hide');
