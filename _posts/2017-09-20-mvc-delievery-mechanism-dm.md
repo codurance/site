@@ -27,7 +27,7 @@ Up until mid 90s, MVC had mainly been used for desktop and embedded applications
 
 As web applications and frameworks diversified, the MVC pattern also evolved and new variations like [MVA][9], [MVP][10], [MVVM][11] and [PAC][12] emerged. MVC frameworks became popular and as part of their evolution they tried to automate more and more the _manual_ work the developer had to do, including database access. MVC frameworks started automating how [Entities][13] are persisted using [Object-Relational Mapping - ORM][14] techniques or closely integrated with other ORM frameworks. Due to the simplicity of  many web applications, MVC frameworks made it easy to capture data in a web form and store in relational databases. They also made it easy to read data from the database and display on the browser. The price for this automation was a bastardisation of the Model layer, which became synonymous of _Entities_ that represented tables in the database. 
 
-With the Model now associated to Entities and persistency and the View associated to HTML, CSS and JavaScript, developers found no other alternative then to put the business logic of the system in Controller layer. Unfortunately MVC frameworks are one of the main reasons we find Web applications with an anaemic domains (Entities with no behaviour) and fat Controllers - responsible for navigation, managing sessions, parsing JSON and XML, and also with business logic. 
+With the Model now associated to Entities and persistency and the View associated to HTML, CSS and JavaScript, developers found no other alternative then to put the business logic of the system in Controller layer. Unfortunately MVC frameworks are one of the main reasons we find Web applications with [anaemic domains][32] (Entities with no behaviour) and fat Controllers - responsible for navigation, managing sessions, parsing JSON and XML, and also with business logic. 
 
 From the original MVC idea, the Controller layer should be a very thin layer, handling the requests from the View, delegating all the business behaviour to the Model. Depending on the result returned by the Model, the Controller decides which View to display next.  
 
@@ -134,7 +134,7 @@ As the application grows and we want to add different delivery mechanisms, or us
 
 # Summary
 
-In MVC, Controllers should be a very thin layer (2 or 3 lines) which identify the request from the user, invoke the appropriate behaviour in the Model, and invoke the appropriate View once the Model returns. Model is not only about entities (state); it’s about all the behaviour of your system, the entire Domain Model.
+In MVC, Controllers are very thin classes (just a few lines) which identify the request from the user, invoke the appropriate behaviour in the Model, and invoke the appropriate View once the Model returns. Controllers might also need to do deal with code related to the delivery mechanism (HTTP response codes, JSON converters, etc) but most of it should be delegated to other classes which also live in the controller layer. Model is not only about entities (state); it’s about all the behaviour of your system - the entire Domain Model.
 
 The choice of View technology impacts on how your layers are coupled and how your application is deployed. 
 
@@ -176,3 +176,4 @@ Keeping Delivery Mechanism decoupled from Domain Model give us options to deploy
 [29]: https://angularjs.org/
 [30]: https://nodejs.org/en/
 [31]: https://en.wikipedia.org/wiki/The_Journal_of_Object_Technology
+[32]: https://www.martinfowler.com/bliki/AnemicDomainModel.html
