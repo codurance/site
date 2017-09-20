@@ -8,12 +8,12 @@ author: Giulia Mantuano
 image:
   src: /assets/img/custom/blog/2017-04-03-learning-specification-by-example-from-gojko-adzic.jpg
 tags:
-- System Requirements
-- Acceptance Test
-- Living Documentation
-- Specification By Example
-- Skills Matter
-- Apprenticeship
+- system requirements
+- acceptance test
+- living documentation
+- specification by example
+- skills matter
+- apprenticeship
 
 ---
 I recently had the pleasure to attend Gojko Adzic’s [“Specification by Example: From User Stories to Acceptance Test"](https://skillsmatter.com/courses/559-gojko-adzic-specification-by-example) training course … taught by Gojko himself! Having read his brilliant books: [“Bridging the Communication Gap”](https://gojko.net/books/bridging-the-communication-gap) and [“Specification by Example. How successful teams deliver the right Software”](https://gojko.net/books/specification-by-example/), I was very excited to get the chance to discuss my experiences of applying spec-by-example with the man himself. My goals for the course were as follows:

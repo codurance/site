@@ -21,9 +21,6 @@ tag_page_layout: tag_page
 tag_page_dir: publications/tag
 tag_page_layout: tag
 
-googleanalytics:
-  account: UA-46289079-1
-
 collections:
   newsletters:
     output: true

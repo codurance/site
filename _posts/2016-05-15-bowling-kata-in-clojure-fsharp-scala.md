@@ -12,6 +12,7 @@ tags:
 - scala
 - clojure
 - FSharp
+- life-at-codurance
 --- 
 
 In one of our evening apprenticeship meetings, a pair was doing the [Bowling Kata](http://codingdojo.org/cgi-bin/index.pl?KataBowling) in Java. After reviewing their code, I thought that it would be a good idea to do it myself.

@@ -23,3 +23,16 @@ x:-moz-any-link {  /* 0 0 1 1 */
 li > a {  /* 0 0 0 2 */
     color: #e67e22;
 }
+
+blockquote {
+	border: none;
+	padding: 18px;
+	font-size: 28px;
+	background: #f3f3f3;
+	border-left: solid 2px #666;
+}
+
+blockquote p {
+    font-size: 16px;
+    font-weight: 400;
+}
