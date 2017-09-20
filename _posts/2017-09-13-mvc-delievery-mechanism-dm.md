@@ -38,7 +38,7 @@ In the early days of the web, most MVC frameworks provided a way to generate the
 **Fully Coupled Server-side MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-all-server.png" alt=“Full server-side MVC” class="img img-responsive" style="height: 65%; width: 65%;”/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-all-server.png" alt="Full server-side MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
@@ -47,7 +47,7 @@ As the web evolved, the need for better usability increased and with it the dema
 **Decoupled View MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-decopled-view.png" alt=“Decoupled View MVC” class="img img-responsive" style="height: 65%; width: 65%;”/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-decopled-view.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
@@ -56,7 +56,7 @@ But that was not enough. We still had problems. The full application had to be r
 **Decoupled Model MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-decopled-model.png" alt=“Decoupled View MVC” class="img img-responsive" style="height: 65%; width: 65%;”/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-13-mvc-delivery-mechanism/mvc-decopled-model.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
