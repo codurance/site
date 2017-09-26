@@ -61,7 +61,7 @@ var submitApplication = function (title, target) {
         errors += "<br>Phone";
     }
     if(!craftmanship) {
-        errors += "<br>What does Software Craftmanship mean to you?";
+        errors += "<br>What does Software Craftsmanship mean to you?";
     }
     if(!message) {
         errors += "<br>Tell us about yourself";
@@ -83,7 +83,7 @@ var submitApplication = function (title, target) {
     bodyMessage += 'StackOverflow: ' + stackoverflow + '\r\n';
     bodyMessage += 'Linkedin: ' + linkedin + '\r\n';
     bodyMessage += 'Blog: ' + blog + '\r\n\r\n';
-    bodyMessage += 'About Software Craftmanship: ' + craftmanship + '\r\n\r\n';
+    bodyMessage += 'About Software Craftsmanship: ' + craftmanship + '\r\n\r\n';
     bodyMessage += 'About Him/Her ' + message + '\r\n';
     
     
