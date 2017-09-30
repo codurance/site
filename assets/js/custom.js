@@ -86,13 +86,13 @@ var submitApplication = function (title, target) {
     bodyMessage += 'About Software Craftmanship: ' + craftmanship + '\r\n\r\n';
     bodyMessage += 'About Him/Her ' + message + '\r\n';
 
-    var email = {
+    var emailAddresses = {
        'London': 'join-us@codurance.com',
        'Barcelona': 'join-us@codurance.es'
     };
 
     var body = {
-        to: email[location],
+        to: emailAddresses[location],
         name: firstName + ' ' + lastName,
         subject: title,
         email: email,
