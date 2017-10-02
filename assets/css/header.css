@@ -401,7 +401,6 @@ body.header-fixed-space-default {
 	.header .navbar-nav > .active > a,
 	.header .navbar-nav > .active > a:hover,
 	.header .navbar-nav > .active > a:focus {
-		background: #72c02c;
 		color: #fff !important;
 	}
 
