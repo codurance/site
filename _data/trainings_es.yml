@@ -41,7 +41,7 @@
   page: /services/training/devops-training
 
 - id: crafting_swift_apps
-  name: Craftmanship Aplicado a Apps para Mobiles en Swift
+  name: Craftsmanship Aplicado a Apps para Mobiles en Swift
   author: Ana Nogal
   description: Para desarrolladores móviles experimentados que desean crear aplicaciones fiables.
   page: /services/training/crafting-swift-mobile-apps
