@@ -1,4 +1,4 @@
-# [Codurance Web Site](http://codurance.com/)
+# [Codurance Web Site](https://codurance.com/)
 
 This is the source of the Codurance web site. It is built and pushed to the [*gh-pages*](https://github.com/codurance/site/tree/gh-pages) branch.
 
@@ -6,7 +6,7 @@ This is the source of the Codurance web site. It is built and pushed to the [*gh
 
 ### Installing on the MacOSX / Linux
 
-Note: you might have to [update Ruby to 2.3](http://stackoverflow.com/a/33883667) first.
+Note: you might have to [update Ruby to 2.3.1](http://stackoverflow.com/a/33883667) first.
 
 Run the below commands to install the necessary gems (you might need to prefix the commands with `sudo`):
 
@@ -17,9 +17,7 @@ gem install jekyll
 bundle install
 ```
 
-Use script file `installDependencies.sh` to achieve the above.
-
-In case the `bundle install` command aborts, with a message about a missing gem, install the missing gem indicated in the message and re-run `bundle install`. Repeat this for the number of times missing gems are notified. 
+In case the `bundle install` command aborts, with a message about a missing gem, install the missing gem indicated in the message and re-run `bundle install`. Repeat this for the number of times missing gems are notified.
 
 Note: this should take a bit of time to install the gems.
 
@@ -43,8 +41,8 @@ The above commands should be executed from the root directory of the project.
 
 **[Docker Installation required]**
 
-To build and serve the site from Docker you need to build a local image based. 
-Dockerfile for is ready to use in directory `docker`. 
+To build and serve the site from Docker you need to build a local image based.
+Dockerfile for is ready to use in directory `docker`.
 
 You need to execute the following command to prepare an image and run a container:
 
@@ -70,7 +68,7 @@ docker logs -f codurance-site
     docker exec -ti codurance-site touch /site/<<path_to_changed_file>>
     ```
 
-    Refresh takes some time and you can trace the progress by running command `docker logs -f codurance-site`. 
+    Refresh takes some time and you can trace the progress by running command `docker logs -f codurance-site`.
     The root cause of this problem is describe in this *[issue report](https://www.virtualbox.org/ticket/10660)*.  
 
 ## Deploying to Production
@@ -101,7 +99,7 @@ If you want to push code without deploying a new version of the site, make sure 
 
 ## Header files for ruby not found
 
-This problem happens with Linux systems: 
+This problem happens with Linux systems:
 
 ```
 header files for ruby at /usr/lib/ruby/include/ruby.h not found

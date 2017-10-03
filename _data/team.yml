@@ -314,6 +314,7 @@
     <p>In his spare time, Ivan loves traveling and spending time with his wife and son.</p>
   twitter: ibadiam
   github: ivanbadia
+
 - id: lilianacarneiro
   name: Liliana Carneiro
   image: /assets/img/custom/team/liliana_carneiro.jpg
@@ -334,3 +335,15 @@
     <p>With three years of experience working in the .NET ecosystem, he knows he has a lot to learn and is keen to keep pushing forwards, digging deeper and understanding more.</p>
   twitter: hackingdandan
   github: cohen990
+
+- id: andrzejrehmann
+  name: Andrzej Rehmann
+  image: /assets/img/custom/team/andrzej_rehmann.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Andrzej is a software developer with a weak spot for automation done right.</p>
+    <p>He believes that the only way to go fast is to go clean and that software development is a marathon not a sprint.</p>
+    <p>Having been both on the development and operation side of software projects he acknowledges the complexity of both words.</p>
+    <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
+  twitter: andrzejrehmann
+  github: hoto
