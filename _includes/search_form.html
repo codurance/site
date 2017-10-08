@@ -1,0 +1,31 @@
+<div class="posts margin-bottom-40">
+    <div class="headline-v2 item ">
+        <form action="{{ "/search" | prepend: site.baseurl }}" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input class="btn btn-small btn-small-orange" type="submit" value="search">
+        </form>
+    </div>
+    {% if page.url contains "search" %}
+    <div class="blog-thumb margin-bottom-15">
+        <ul id="search-results"></ul>
+    </div>
+    {% endif %}
+    <script>
+        window.store = {
+        {% for post in site.posts %}
+        "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "author": "{{ post.author | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | markdownify | strip_html | truncatedwords:45 | jsonify }},
+        "url": "{{ post.url | xml_escape }}",
+        "tags": {{post.tags | jsonify}}
+        }
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        };
+    </script>
+    <script src="{{ "/assets/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
+</div>
