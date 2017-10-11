@@ -6,35 +6,37 @@ layout: post
 asset-type: post
 slug: functional-calisthenics
 title: Functional Calisthenics
+image:
+    src: /assets/img/custom/blog/lambda.png
 tags:
 - functional programming
 ---
 # The Setup
 
-While working on a Clojure application that was for production, rather than being as an exercise, I saw that I was using OO programming with the syntax of Clojure. I was having problems coming back to change code that I have done not long before. Testing was an absolute pain, with continuous use of with-redefs and weird subnesting of let statements happening all over the place. Clearly, my knowledge, and my internalization of functional programming, wasn't good enough. It was time to start looking into how to improve.
+While working on a Clojure application that was for production, rather than being an exercise, I saw that I was using OO programming with the syntax of Clojure. I was having problems coming back to change code that I have done not long before. Testing was an absolute pain, with continuous use of with-redefs and weird subnesting of let statements happening all over the place. Clearly, my knowledge, and my internalization of functional programming, wasn't good enough. It was time to start looking into how to improve.
 
-Thanks to my colleagues at Codurance I discovered that at Socrate 2015 there was a discussion already about Functional Calisthenics, organized by Ian Johnson, and which results you can find at his blog post<a href="http://blog.ninjaferret.co.uk/2015/06/05/Introducing-Functional-Calisthenics.html">Introducing Functional Calisthenics</a>.
+Thanks to my colleagues at Codurance I discovered that at [SoCraTes UK 2015](http://socratesuk.org/) there was a discussion already about Functional Calisthenics, organized by Ian Johnson, and which results you can find at his blog post [Introducing Functional Calisthenics](http://blog.ninjaferret.co.uk/2015/06/05/Introducing-Functional-Calisthenics.html).
 
-After a bit of trying, I though that a few of the rules were not exactly how I would have set them up and lacked some clarity about the point of the rule. Therefore, we sat down a few functional programmers at Codurance and revised the rules. The below represents the rules after this revision, including how to apply them and what is the expected outcome of learning to use those rules.
+After a bit of trying, I though that a few of the rules were not exactly how I would have set them up and lacked some clarity about the point of the rules. Therefore, we sat down a few functional programmers at Codurance and revised the rules. The below represents the rules after this revision, including how to apply them and what is the expected outcome of learning to use those rules.
 
 # The Rules
-These rules are only intended to be applied when doing katas or exercises. During the exercises you should follow them to a t. Of course, like any rule, in production code you can break them, as long as you know why are you breaking them. Furthermore, I envision start using them in the order below. Some rules build on top of previous rules to achieve better knowledge and understanding of functional programming.
+These rules are constraints on how to create your code and are only intended to be applied when doing katas or exercises. During the exercises you should follow them to a t. Following this rules on production code is left to a decision for each. Furthermore, I envision start using them in the order below. Some rules build on top of previous rules to achieve better knowledge and understanding of functional programming.
 
 ## Name everything
-Most basic one. It will seem harsh for experienced functional programmers. Fisrts one to be broken on production code.
+Most basic one. It will seem harsh for experienced functional programmers. First one to be broken on production code.
 
 ### Description
 All functions need to be named. Which means that you shouldn't use lambdas or anonymous functions. Also, name all your variables as per standard clean code rules.
 
 ### Expected Outcome
 **Learn to recognize patterns on your code.**
-It will help recognizing signatures that repeat, and the applying of DRY on your code.
+It will help recognizing signatures that repeat, and the applying of DRY on your code. Also, it will clearly express the intention of the action, rather than just show the implementation.
 
 ## No mutable state
 This is the basis of FP.
 
 ### Description
-You shouldn't using any variable of any type that can mutate.
+You shouldn't use any variable of any type that can mutate.
 
 ### Expected Outcome
 **Learn how to create code around immutable variables.**
@@ -49,8 +51,8 @@ This rule is mostly preparation work.
 There can not be an if without an else. Switches and pattern matching should always have all paths considered (either through default paths or because all options have been considered).
 
 ### Expected Outcome
-**All possible paths have been taken into account.**
-Is a know cause of issues. And also helps preparing for the 5th rule.
+**Complete functions.**
+A function should know how to deal with all possible values passed as arguments.
 
 ## Do not use intermediate variables
 ### Description
@@ -77,7 +79,7 @@ Not as harsh as it looks.
 You shouldn't use explicit recursion like Clojure's `loop/recur` forms or F# `let rec` form.
 
 ### Expected Outcome
-**Learning the power of map and reduce.**
+**Learning the power of map and reduce and use of High Order Functions**
 The idea is powerful enough to be the basis of some systems (Apache Hadoop) and has appeared on non-FP languages.
 
 ## Generic building blocks
@@ -88,7 +90,7 @@ Try to use a much as possible generic types for your functions, outside of the b
 
 ### Expected Outcome
 **Easily composable code.**
-Becomes much easier.
+Using existing functionality and High Order Function provided by your language stack becomes much easier.
 
 ## Side effects at the boundary
 On the original named at the Top Level. The idea behind the change will only be clear on advanced FP.
