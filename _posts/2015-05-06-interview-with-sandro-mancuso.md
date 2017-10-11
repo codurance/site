@@ -16,7 +16,7 @@ tags:
 
 _Our co-founder [Sandro Mancuso](http://twitter.com/sandromancuso) was [interviewed by Ben Linders from InfoQ](http://www.infoq.com/articles/mancuso-software-craftsman). Below is the full transcript._ 
 
-In the book [The Software Craftsman](http://goo.gl/KgxKaw), Professionalism, Pragmatism, Pride Sandro Mancuso explores how craftmanship plays a role in agile software development. The book contains stories, examples and practical advice for software developers and other professionals involved in software projects to achieve technical excellence and customer satisfaction.
+In the book [The Software Craftsman](http://goo.gl/KgxKaw), Professionalism, Pragmatism, Pride Sandro Mancuso explores how craftsmanship plays a role in agile software development. The book contains stories, examples and practical advice for software developers and other professionals involved in software projects to achieve technical excellence and customer satisfaction.
 
 InfoQ readers can download a [sample of the book "The Software Craftsman"](http://ptgmedia.pearsoncmg.com/images/9780134052502/samplepages/9780134052502.pdf) to get an impression of this book.
 
