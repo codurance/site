@@ -13,14 +13,14 @@ tags:
 ---
 # The Setup
 
-While working on a Clojure application that was for production, rather than being an exercise, I saw that I was using OO programming with the syntax of Clojure. I was having problems coming back to change code that I have done not long before. Testing was an absolute pain, with continuous use of with-redefs and weird subnesting of let statements happening all over the place. Clearly, my knowledge, and my internalization of functional programming, wasn't good enough. It was time to start looking into how to improve.
+While working on a Clojure application that was for production, rather than being an exercise, I saw that I was using OO programming with the syntax of Clojure. I was having problems coming back to change code that I have done not long before. Testing was an absolute pain, with continuous use of `with-redefs` and weird subnesting of `let` statements happening all over the place. Clearly, my knowledge, and my internalization of functional programming, wasn't good enough. It was time to start looking into how to improve my skills.
 
 Thanks to my colleagues at Codurance I discovered that at [SoCraTes UK 2015](http://socratesuk.org/) there was a discussion already about Functional Calisthenics, organized by Ian Johnson, and which results you can find at his blog post [Introducing Functional Calisthenics](http://blog.ninjaferret.co.uk/2015/06/05/Introducing-Functional-Calisthenics.html).
 
-After a bit of trying, I though that a few of the rules were not exactly how I would have set them up and lacked some clarity about the point of the rules. Therefore, we sat down a few functional programmers at Codurance and revised the rules. The below represents the rules after this revision, including how to apply them and what is the expected outcome of learning to use those rules.
+After a bit of trying, I though that a few of the rules were not exactly how I would have set them up and lacked clarity about the point of the rules. Therefore, we sat down, a few functional programmers at Codurance, and revised the rules. The below represents the rules after this revision, including how to apply them and what is the expected outcome of learning to use those rules.
 
 # The Rules
-These rules are constraints on how to create your code and are only intended to be applied when doing katas or exercises. During the exercises you should follow them to a t. Following this rules on production code is left to a decision for each. Furthermore, I envision start using them in the order below. Some rules build on top of previous rules to achieve better knowledge and understanding of functional programming.
+These rules are constraints on how to create your code and are only intended to be applied when doing katas or exercises. During the exercises you should follow them to a t. Following this rules on production code is left as a decision for each. I envision to start using them in the order below; some rules build on top of previous rules to achieve better knowledge and understanding of functional programming.
 
 
  * [Name everything](#nameeverything)
@@ -52,9 +52,11 @@ You shouldn't use any variable of any type that can mutate.
 
 ### Expected Outcome
 **Learn how to create code around immutable variables.**
+
 Two main benefits: 
-    - FP is about immutability. Most of its benefits comes from the fact that all your functions are (or should be) referencially transparent. 
-    - Use of recursion as your main looping technique. No for or while loops in your code. For comprehensions abide by this rule.
+
+ - FP is about immutability. Most of its benefits comes from the fact that all your functions are (or should be) referencially transparent. 
+ - Use of recursion as your main looping technique. No for or while loops in your code. For comprehensions abide by this rule.
 
 ## <a class="anchor" name="exhaustiveconditionals"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">Exhaustive conditionals
 This rule is mostly preparation work.
@@ -105,7 +107,7 @@ Try to use a much as possible generic types for your functions, outside of the b
 Using existing functionality and High Order Function provided by your language stack becomes much easier.
 
 ## <a class="anchor" name="sideeffectsattheboundaries"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">Side effects at the boundaries
-On the original named at the Top Level. The idea behind the change will only be clear on advanced FP.
+On the original was at the Top Level. We wanted to extend due to advance scenarios (but is standing on thin ice this reasoning)
 
 ### Description
 Side effects should only appear on the boundaries of your application. The guts of your application should have no side effects.
@@ -131,7 +133,11 @@ Each function should have a single parameter. You need to be explicit, just usin
 
 ### Expected Outcome
 **Use of functional composition.**
-Currying and partial function usage. Functions with the form *function T -> T*.
+Currying and partial function usage.
 
 # The Conclusion
 We have started to use them on katas. They force us to think about how we are coding and force us to move away from our standard OOP mentality. At the moment we see them as a good way to improve our skills.
+
+Of course, this represents the second iteration that we did of the rules. And it is possible that at some point they change. Don't hesitate to contact us to improve them.
+
+We will be adding a pdf version with the rules and we will be showing some code in the near future.
