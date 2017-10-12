@@ -1,7 +1,7 @@
 ---
 author: Jorge Gueorguiev Garcia
 comments: true
-date: 2017-10-09 13:00:00 +00:00
+date: 2017-10-12 21:00:00 +00:00
 layout: post
 asset-type: post
 slug: functional-calisthenics
