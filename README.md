@@ -77,6 +77,13 @@ When you push the *master* branch, Jenkins will kick off the deployment build, w
 
 If you want to push code without deploying a new version of the site, make sure you work in a feature branch, rather than on *master* directly.
 
+## Previewing changes in a branch
+
+We have a bot that makes a preview of the site for every branch that you create. Just replace the branch name in the link below:
+
+http://codurance-site-pr.s3-website-eu-west-1.amazonaws.com/site-<branch-name>/
+
+
 # Flight Rules
 
 ### Adding a post
