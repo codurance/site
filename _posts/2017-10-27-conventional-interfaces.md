@@ -1,8 +1,8 @@
 ---
 layout: post
-name: 2017-10-01-conventional-interfaces
+name: 2017-10-26-conventional-interfaces
 title: Conventional Interfaces
-date: 2017-10-26 10:20:00 +00:00
+date: 2017-10-14 10:20:00 +00:00
 author: Carlos Morera
 image:
    src: 
