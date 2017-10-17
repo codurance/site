@@ -347,3 +347,14 @@
     <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
   twitter: andrzejrehmann
   github: hoto
+ 
+- id: danielbergquist
+  name: Daniel Bergquist
+  image: /assets/img/custom/team/daniel_bergquist.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
+    <p>His primary tech stack is NodeJS, although his lifelong love of learning means he is always investigating new languages and technologies. His reading list always contains more books than he can ever read! Away from the keyboard, his time is mostly spent enjoying time with his wife and young son.</p>
+  twitter: _dbugsy
+  github: dbugsy
+
