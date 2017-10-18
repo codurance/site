@@ -44,7 +44,7 @@
 - id: stevelydford
   name: Steve Lydford
   image: /assets/img/custom/team/steve_lydford.jpg
-  role: Software Craftsman
+  role: Head of Delivery 
   fullDescription: >
       <p>Steve is a software craftsman and author with over 15 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including travel and tourism, education, media, government and healthcare, developing systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
@@ -185,7 +185,7 @@
 - id: david_hall
   name: David Hall
   image: /assets/img/custom/team/david_hall.jpg
-  role: Business Development
+  role: Head of Business Development
   fullDescription:
     <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
     <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
