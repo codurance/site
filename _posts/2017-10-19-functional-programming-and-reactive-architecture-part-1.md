@@ -44,7 +44,7 @@ Combining smaller functions into bigger ones becomes easier and resembles the ac
 
 Functional programming promotes immutable state as a way to achieve referential transparency; the immediate effect of immutable state is that we will not have race conditions making concurrent programming much less problematic. 
 As we all know there are no silver bullets and in fact all of this has a cost; mutable state is more performant and requires less instances in memory but it becomes more difficult to reason about in concurrent scenarios. 
-When applying functional programming principles we will try to minimise the amount of mutable state to the places in our code needing optimisation for performance or memory consumption.  We can achieve this [hiding mutability]((http://panavtec.me/functional-programming-notes-side-effects) as implementation details thus not contaminating the purity of the client code.
+When applying functional programming principles we will try to minimise the amount of mutable state to the places in our code needing optimisation for performance or memory consumption.  We can achieve this [hiding mutability](http://panavtec.me/functional-programming-notes-side-effects) as implementation details thus not contaminating the purity of the client code.
 
 ### High Order Functions
 
