@@ -44,7 +44,7 @@
 - id: stevelydford
   name: Steve Lydford
   image: /assets/img/custom/team/steve_lydford.jpg
-  role: Software Craftsman
+  role: Head of Delivery 
   fullDescription: >
       <p>Steve is a software craftsman and author with over 15 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including travel and tourism, education, media, government and healthcare, developing systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
@@ -185,7 +185,7 @@
 - id: david_hall
   name: David Hall
   image: /assets/img/custom/team/david_hall.jpg
-  role: Business Development
+  role: Head of Business Development
   fullDescription:
     <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
     <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
@@ -206,7 +206,7 @@
 - id: rachel
   name: Raquel M Carmena
   image: /assets/img/custom/team/raquel_m_carmena.jpg
-  role: Software Craftswoman
+  role: Software Craftsperson
   fullDescription:
     <p>Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things.</p>
     <p>She loves new challenges and finds it very difficult to choose a single favourite area in her profession. For the past 10 years Raquel has worked in different projects, with different technologies, and in different industries. She lives and breathes business and values from her software products, services and ideas.</p>
@@ -239,7 +239,7 @@
 - id: marcbadia
   name: Marc Badia Cendros
   image: /assets/img/custom/team/marc_badia.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
    <p>It is well known that people are born with a bread under his arm. Marc had a keyboard.</p>
    <p>With his passion for learning and his autodidact attitude he got trapped into computer science, where he found an inexhaustible source of information. Early, he took part in some open source projects and created otherones as a hobby.</p>
@@ -347,3 +347,14 @@
     <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
   twitter: andrzejrehmann
   github: hoto
+ 
+- id: danielbergquist
+  name: Daniel Bergquist
+  image: /assets/img/custom/team/daniel_bergquist.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
+    <p>His primary tech stack is NodeJS, although his lifelong love of learning means he is always investigating new languages and technologies. His reading list always contains more books than he can ever read! Away from the keyboard, his time is mostly spent enjoying time with his wife and young son.</p>
+  twitter: _dbugsy
+  github: dbugsy
+
