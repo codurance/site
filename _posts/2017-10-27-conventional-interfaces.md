@@ -6,7 +6,6 @@ date: 2017-10-14 10:20:00 +00:00
 author: Carlos Morera
 image:
    src: 
-abstract: TODO.
 canonical:
     name: Carlos's blog
     href: https://medium.com/@hkoundi/find-a-workplace-where-you-can-grow-16172a5ab957/
@@ -17,11 +16,11 @@ tags:
 ---
 
 Whilst reading [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html), also known as the **SICP** book, I discovered the concept of **Sequences as Conventional Interfaces**. Even though it is an idea that I was somewhat familiar with, it was the first time I encountered a more formal definition for it. Reading about it has helped me to better understand its full power. 
-The ideas and some of the code samples contained in this post originally come from the SICP book. Even though it is written using Lisp the ideas and concepts are applicable to most lenguages. We will be following them in **Haskell** as it is the lenguage I am currently learning en enjoying, its terse syntax also makes it a great fit for a blog post. 
+The ideas and some of the code samples contained in this post originally come from the SICP book. Even though it is written using Lisp the ideas and concepts are applicable to most languages. We will be following them in **Haskell** as it is the language I am currently learning en enjoying, its terse syntax also makes it a great fit for a blog post. 
 
 ## What are Conventional Interfaces
 
-SICP describes conventional interfaces as a design principle for working with data structures. It is composed by a set of standard combinators that connect the different steps required to implement computations in computer programs. 
+SICP describes conventional interfaces as a design principle for working with data structures. It is composed of a set of standard combinators that connect the different steps required to implement computations in computer programs. 
 
 The combinators in question may be familiar to you as they will probably be provided in some form in your preferred language, e.g. `map`, ``filter``, ``flatMap`` (also now as ``bind``), `reduce` (also known as `fold`). They let us capture common patterns in the implementation of programs that a priori are structurally different, enabling us to think and reason about different programs in the same way. This is of great importance as it enables us to intuitively express completely different and unrelated programs applying function composition to this set of combinators.
 
@@ -29,11 +28,11 @@ SCIP also introduces the concept of signal-processing as a metaphor to reason ab
 
 > A signal-processing engineer would find it natural to conceptualize processes in terms of signals flowing through a cascade of stages, each of which implements part of the program plan. 
 
-We will expand more on this metaphor later on, but for now it is important to emphasize that making the signal-flow structure evident in the design of our programs increases the modularity and readability of the resulting code. It is also important to emphasize that the use of these combinators increase the level of abstraction at which we can write code by taking away low level details such as, iteration, recursion, conditional statements...
+We will expand more on this metaphor later on, but for now, it is important to emphasize that making the signal-flow structure evident in the design of our programs increases the modularity and readability of the resulting code. It is also important to emphasize that the use of these combinators increase the level of abstraction at which we can write code by taking away low-level operations such as iteration, recursion or conditional statements.
 
 To demonstrate the importance of the principle, let's consider the two following functions taken from SICP, which I have translated from LISP to Haskell.
 
-* This set of combinnators let us extract the distints parts of a computation by decomposing the different concerns
+* This set of combinators let us extract the distinct parts of a computation by decomposing the different concerns
 * The implementation of a sequence dictates how the sequence is iterated (https://softwareengineering.stackexchange.com/questions/284912/why-sequences-are-recommended-as-conventional-interfaces)
 
 ## Discovering common patterns
@@ -97,11 +96,11 @@ It was a truly insightful moment when I realized that indeed both functions are 
 
 `sumOddSquares`:
 
-1. The enumeration is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree like, in the `Node` pattern match.
+1. The enumeration is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree-like, in the `Node` pattern match.
 2. The filtering is mixed with the mapping in the `odd` case in the `Leaf` pattern match.
 3. The folding or reduction is partially implemented by the `+` that joins the double recursion in the `Node` pattern match, and partially by the `otherwise` case in the `Leaf` pattern match.
 
-Each pattern matching is mixing several concerns, increasing the complexity of the implementation and hidding the signal-flow structure of the computation.
+Each pattern matching is mixing several concerns, increasing the complexity of the implementation and hiding the signal-flow structure of the computation.
 
 `evenFibs`:
 
@@ -136,39 +135,39 @@ evenFibs' x = foldr (:) [] . filter even . fmap fib $ [0..x]
 
 Now that we have seen how different computations can be shaped similarly by using the same set of combinators composed in different ways let's expand on the signal processing metaphor.
 
-As mentioned in SICP, the key to organizing programs so as to more clearly reflect the signal-flow structure is to concentrate on the "signals" that flow from one stage in the process to the next. SCIP uses Lisp, where everything is a list, therefore the signal processing metaphor fits very nicely with list. If we move away from Lisp and to Haskell for example, the metaphor may not be as evident, but as we just showed it is equally applicable. Haskell abstract the different combinators from concrete data structure in most cases using typeclasses(link to typeclasses), let's break down a few of them.
+As mentioned in SICP, the key to organizing programs so as to more clearly reflect the signal-flow structure is to concentrate on the "signals" that flow from one stage in the process to the next. SCIP uses Lisp, where everything is a list, therefore the signal processing metaphor fits very nicely with lists. If we move away from Lisp and to Haskell for example, the metaphor may not be as evident, but as we just showed it is equally applicable. In most of the cases, Haskell abstracts the different combinators from the concrete data structure using [type classes](https://en.wikipedia.org/wiki/Type_class), let's break down a few of them.
 
 * Enumerate generates the signals that initiate the computation.
-Haskell names the concept of enumeration unfolding and provides the `Data.Unfoldable` typeclass. As explained previously enumerating or unfolding the leaves of a tree or the integers in a given range for the Fibonacci function. Haskell also provides lists comprehension(link to documentation) as a way to generate list of values.
+Haskell names the concept of enumeration unfolding and provides the `Data.Unfoldable` type class. As explained previously enumerating or unfolding the leaves of a tree or the integers in a given range for the Fibonacci function. Haskell also provides [list-comprehension](https://en.wikipedia.org/wiki/List_comprehension) as a way to generate lists of values.
 
 
 * Filter discards unwanted signals by only keeping the ones that satisfy a given predicate.
-As far as I know there is not a concrete typeclass in Haskell that abstracts the concept of a filterable data structure from the concrete implementation. However, there is a filter combinator defined in each of them, e.g. `List`, `Map`, `Set`, `Seq`.
+As far as I know, there is not a concrete type class in Haskell that abstracts the concept of a filterable data structure from the concrete implementation. However, there is a filter combinator defined in each of them, e.g. `List`, `Map`, `Set`, `Seq`.
 
 
 * Map converts each signal to a different type.
-Haskell defines the concept of data structures that can be mapped in the typeclass`Data.Functor`. In Haskell the `map` function is called `fmap` because it is consider as a function that maps functions, hence the f prepended to map.
+Haskell defines the concept of data structures that can be mapped in the typeclass`Data.Functor`. In Haskell the `map` function is called `fmap` because it is considered as a function that maps functions, hence the f prepending map.
 
 * FlatMap nests signals so that we can use each of them and do some extra computation based on their values.
-For the flatMap combinator, known as bind in Haskell, there is the typeclass `Control.Monad`.
+For the flatMap combinator, known as bind in Haskell, there is the type class `Control.Monad`.
 
 
 * Zip joins two sequences of signals as a sequence of pairs.
-As far as I know there is not a concrete typeclass in Haskell that abstract the concept of a zippable data structure from the concrete implementation. However, it is defined in some of the most usual ones, such as List or Seq.
+As far as I know, there is not a concrete type class in Haskell that abstract the concept of a zippable data structure from the concrete implementation. However, it is defined in some of the most usual ones, such as List or Seq.
 
 * Fold combines the signals to create a summary value.
-In the case of data structures that can be folded Haskell defines the typeclass `Data.Foldable`.
+In the case of data structures that can be folded Haskell defines the type class `Data.Foldable`.
 
-As you may know, Haskell is based on Category Theory, the most abstract branch of mathematics. What that means is that the metaphor is not restricted to lists, we can abstract even more moving away from concrete data structures as long as they follow the high level structures defined in Category Theory. We would need a few more blog posts, better say a few books, to explain this in detail, but as a simple example consider the Functor abstraction, which is an abstraction for data structures whose contents can be mapped.
+As you may know, Haskell is based on Category Theory, the most abstract branch of mathematics. What that means is that the metaphor is not restricted to lists, we can abstract even more moving away from concrete data structures as long as they follow the high-level structures defined in Category Theory. We would need a few more blog posts, better say a few books, to explain this in detail, but as a simple example consider the Functor abstraction, which is an abstraction for data structures whose contents can be mapped.
 
-We could also look a it from a different perspective considering that everything is a sequence, where list is the most generic one, e.g:
+We could also look at it from a different perspective considering that everything is a sequence, list being the most generic one, e.g:
 
-* `Map` can be thought as a sequence generators, e.g. It can generate a sequences with its keys, with its values or it can pair them together as a sequence of pairs where each element is composed by key and the value.
-* `Maybe`, also know as `Option`, could be considered a sequence that can contain zero or one signals.
+* The `Map` data structure can be thought of as a generator of sequences, e.g. It can generate sequences with its keys, with its values or it can pair them together as a sequence of pairs where each element is composed of a key and a value.
+* `Maybe`, also know as `Option`, could be considered as a sequence that can contain zero or one signal.
 * `Either` as a sequence that contains a single signal which can be of one of two possible types.
 * Tuples in general and pairs `(,)` in particular could be considered as a sequence that contains exactly two signals.
 
-Different sequences have different constraints, structures and semantics, but they are equally valid from the combinators point of view. This is because the concrete sequences are just concrete examples of abstract mathematical structures.
+Different sequences have different constraints, structures and semantics, but they are equally valid from the combinators point of view. The concrete sequences are just concrete examples of abstract mathematical structures.
 
 ## Conclusion 
 
@@ -176,9 +175,9 @@ Different sequences have different constraints, structures and semantics, but th
 
 By now you may have realized that all the examples described in this post follow the same structure with the following shape, enumeration followed by different compositions of the standard combinators, followed by a fold or reduction to a summary value, in other words:
 
-1. Computations always start with some sort of enumeration, which generates the initials values to start a computation. This is not limited to what we have seen so far as enumerating the leaves or a tree or the integers in a given range. Enumerate could also be a query to a data base that returns a sequence of products, or a sequence of products that we received via a REST endpoint. When considering lazy evaluation Enumerate can also generate infinite sequences of signals.
+1. Computations always start with some sort of enumeration, which generates the initials values to start a computation. This is not limited to what we have seen so far as enumerating the leaves or a tree or the integers in a given range. Enumerate could also be a query to a database that returns a sequence of products, or a sequence of products that we received via a REST endpoint. When considering lazy evaluation Enumerate can also generate infinite sequences of signals.
 2. Once we have the initial signals we pass them through the different stages of processing, e.g. filter, map, flatMap, zip, required to get the signals into a form in which we can extract the desired result from.
-3. To finish up the computation we fold or reduce the signals to a summary value which is the end result for the computation in question.
+3. To finish up the computation we fold or reduce the signals to a summary value which is the end result of the computation in question.
 
 This pattern is extremely useful and can be applied to most, if not all, computations out there. 
 
@@ -202,4 +201,4 @@ fizzBuzz to = zipWith (\n f -> if (f /= []) then f else show n) [1..to] fizzesBu
 
 ## References
 
-SICP BOOK
+[SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
