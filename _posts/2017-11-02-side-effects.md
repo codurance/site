@@ -1,7 +1,7 @@
 ---
 author: Christian Panadero Martinez
 comments: true
-date: 2017-11-02 10:00:00 +00:00
+date: 2017-10-20 10:00:00 +00:00
 layout: post
 asset-type: post
 slug: side-effects
