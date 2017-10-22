@@ -10,7 +10,7 @@ canonical:
     name: Carlos's blog
     href: https://medium.com/@hkoundi/find-a-workplace-where-you-can-grow-16172a5ab957/
 tags:
-- FP
+- functional programming
 - Haskell
 - SICP
 ---
@@ -30,14 +30,7 @@ SCIP also introduces the concept of signal-processing as a metaphor to reason ab
 
 We will expand more on this metaphor later on, but for now, it is important to emphasize that making the signal-flow structure evident in the design of our programs increases the modularity and readability of the resulting code. It is also important to emphasize that the use of these combinators increase the level of abstraction at which we can write code by taking away low-level operations such as iteration, recursion or conditional statements.
 
-To demonstrate the importance of the principle, let's consider the two following functions taken from SICP, which I have translated from LISP to Haskell.
-
-* This set of combinators let us extract the distinct parts of a computation by decomposing the different concerns
-* The implementation of a sequence dictates how the sequence is iterated (https://softwareengineering.stackexchange.com/questions/284912/why-sequences-are-recommended-as-conventional-interfaces)
-
-## Discovering common patterns
-
-*Sum squares of the leaves of a tree that are odd*
+To demonstrate the importance of the principle, let's consider the two following functions taken from SICP, which I have translated from Lisp to Haskell.
 
 A simple type representing a binary tree
 
@@ -46,6 +39,9 @@ data BinaryTree a =
     Leaf a
   | Node (BinaryTree a) (BinaryTree a) deriving (Eq, Ord, Show)
 ```
+
+*Sum squares of the leaves of a tree that are odd*
+
 
 ```
 sumOddSquares :: (Integral a) => BinaryTree a -> a
