@@ -3,12 +3,12 @@ layout: post
 name: 2017-10-26-conventional-interfaces
 title: Conventional Interfaces
 date: 2017-10-14 10:20:00 +00:00
-author: Carlos Morera
+author: Carlos Morera de la Chica
 image:
-   src: 
-canonical:
-    name: Carlos's blog
-    href: https://medium.com/@hkoundi/find-a-workplace-where-you-can-grow-16172a5ab957/
+   src: /assets/img/custom/blog/sicp.jpg
+attribution:
+      text: Structure and Interpretation of Computer Programs, Second Edition
+      href: https://mitpress.mit.edu/sites/default/files/9780262510875.jpg
 tags:
 - functional programming
 - Haskell
