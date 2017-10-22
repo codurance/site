@@ -54,7 +54,7 @@
         'title': window.store[key].title,
         'author': window.store[key].author,
         'category': window.store[key].category,
-          'tags': window.store[key].tags.join(' '),
+        'tags': window.store[key].tags.join(' '),
         'content': window.store[key].content
       });
 

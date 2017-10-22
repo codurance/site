@@ -18,7 +18,7 @@
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
-        "content": {{ post.content | markdownify | strip_html | truncatedwords:45 | jsonify }},
+        "content": "{{post.content | markdownify | strip_html | escape | truncatewords: 45}}",
         "url": "{{ post.url | xml_escape }}",
         "tags": {{post.tags | jsonify}}
         }
