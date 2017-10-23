@@ -202,7 +202,7 @@ APIs should always be designed to satisfy the needs of consumers. But before we 
 
 - **Company-private APIs:** Only used by systems controlled by the API provider (internal).
 - **Public APIs:** Used by systems not controlled by the API provider (external). 
-- **Hybrid APIs:** Used by internal and external systems.
+- **Hybrid APIs:** Used by internal and external systems. 
 
 #### Company-private APIs
 
