@@ -1,14 +1,14 @@
 ---
 layout: post
 name: 2017-10-26-conventional-interfaces
-title: Conventional Interfaces
+title: Conventional Interfaces in Functional Programming
 date: 2017-10-14 10:20:00 +00:00
 author: Carlos Morera de la Chica
 image:
    src: /assets/img/custom/blog/sicp.jpg
 attribution:
       text: Structure and Interpretation of Computer Programs, Second Edition
-      href: https://mitpress.mit.edu/sites/default/files/9780262510875.jpg
+      href: https://mitpress.mit.edu/sicp/
 tags:
 - functional programming
 - Haskell
@@ -125,10 +125,10 @@ It is worth noting that `.` is the operator for function composition in Haskell.
 
 ```
 sumOddSquares :: (Integral a) => BinaryTree a -> a
-sumOddSquares = foldr (+) 0 . fmap (^2) . filter odd . enumerateLeaves
+sumOddSquares tree = foldr (+) 0 . fmap (^2) . filter odd (enumerateLeaves tree)
 
 enumerateLeaves :: BinaryTree a -> [a]
-enumerateLeaves = foldr (:) []
+enumerateLeaves tree = foldr (:) [] tree
 ```
 
 `evenFibs`:
@@ -139,8 +139,11 @@ enumerateLeaves = foldr (:) []
 4. *Folds* (or reduces) the remaining elements using `:` (List constructor), starting with `[]` (empty list).
 
 ```
-evenFibs :: Integer -> [Integer]
-evenFibs x = foldr (:) [] . filter even . fmap fib $ [0..x]
+evenFibs' :: Integer -> [Integer]
+evenFibs' to = foldr (:) [] . filter even . fmap fib (enumerateInterval 0 to)
+
+enumerateInterval :: Integer  -> Integer -> [Integer]
+enumerateInterval from to = [from..to]
 ```
 ## Signal processing metaphor
 
