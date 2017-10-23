@@ -68,7 +68,7 @@ When focusing on the internals of a system before defining how the system is goi
 
 Users or external systems consuming our APIs don’t care about our backend. We can only get feedback from them if we can provide something for them to use or access. It doesn’t matter what we do on the backend. If the user journey (via the user interface) or APIs are not suitable, our backend has no value. If the front-end or APIs are done after the domain model (backend), we will only get feedback when the whole feature is done and that is too late.  
 
-**Course-grained development**
+**Coarse-grained development**
 
 A great way to deliver software incrementally is to slice our features in thin vertical slices. This becomes very hard when we start from the domain model, as we are not writing code to satisfy a specific external need. While building the domain model we yet don’t have the outside requirements to guide the vertical slices.
 
