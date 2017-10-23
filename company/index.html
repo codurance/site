@@ -54,11 +54,13 @@ title: Company
                   </p>
                   {{member.fullDescription}}
                   <ul class="list-unstyled list-inline team-socail">
+                    {% if member.twitter != null %}
                     <li>
                       <a href="http://twitter.com/{{member.twitter}}">
                         <i class="fa fa-twitter fa-3x"></i>
                       </a>
                     </li>
+                    {% endif %}
                     {% if member.github != null %}
                     <li>
                       <a href="http://github.com/{{member.github}}">
