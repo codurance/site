@@ -69,25 +69,28 @@ fib 0 = 1
 fib n = fib (n - 1) + fib (n - 2)
 ```
 
-### <a name="similarities"></a>Hiden similarities
+### <a name="similarities"></a>Hidden Signal-Flow structure
 
-These two functions solve completely different and unrelated problems and they also seem to be completely different in terms of structure. However, we are going to step back and look at them from a different perspective so that we can discover the hiden similarities between them.
+These two functions solve completely different and unrelated problems and they also are completely different in terms of the structure of their implementations. However, we are going to step back and look at them from a different perspective, so that we can discover the hidden similarities between them and expose the signal-flow structure in the implementation.
 
-Let's break down what the functions are really doing.
+Let's break down at a high level what the functions are really doing.
 
-`summOddSquares`:
+`sumOddSquares`:
 
-1. Enumerates the leaves of the input tree.
-2. Filters out the leaves that contain even numbers.
-3. Maps the remaining leaves squaring each one.
-4. Folds (or reduces) the mapped leaves using `+`, starting at 0.
+1. *Enumerates* the leaves of the input tree.
+2. *Filters* out the leaves that contain even numbers.
+3. *Maps* the remaining leaves squaring each one.
+4. *Folds* (or reduces) the mapped leaves using `+`, starting at 0.
 
 `evenFibs`:
 
-1. Enumerates the interval 0 to n.
-2. Maps each number to its corresponding Fib.
-3. Filter out the odd Fibs.
-4. Folds (or reduces) the remaining elements using `:` (List constructor), starting with `[]` (empty list).
+1. *Enumerates* the interval 0 to n.
+2. *Maps* each number to its corresponding Fib.
+3. *Filter* out the odd Fibs.
+4. *Folds* (or reduces) the remaining elements using `:` (List constructor), starting with `[]` (empty list).
+
+Note how both implementations are now based on a similar composition of stages. 
+It is also worth nothing how each number contained in the list provided by each enumeration emulates a signal going through a serie of stages, filter followed by map, map followed by filter, respectively. Both implementations finish up by folding or reducing the signals using `+` and `:` respectively.
 
 ### Breaking down the implementation of both functions
 
@@ -95,25 +98,30 @@ It was a truly insightful moment when I realized that indeed both functions are 
 
 `sumOddSquares`:
 
-1. The enumeration is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree-like, in the `Node` pattern match.
-2. The filtering is mixed with the mapping in the `odd` case in the `Leaf` pattern match.
-3. The folding or reduction is partially implemented by the `+` that joins the double recursion in the `Node` pattern match, and partially by the `otherwise` case in the `Leaf` pattern match.
+1. The *enumeration* is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree-like, in the `Node` pattern match.
+2. The *filtering* is mixed with the mapping in the `odd` case in the `Leaf` pattern match.
+3. The *folding* or reduction is partially implemented by the `+` that joins the double recursion in the `Node` pattern match, and partially by the `otherwise` case in the `Leaf` pattern match.
 
 Each pattern matching is mixing several concerns, increasing the complexity of the implementation and hiding the signal-flow structure of the computation.
 
 `evenFibs`:
 
-1. The enumeration is partially implemented by the `k > n` case and party by the `next` expression.
-2. The mapping, although extracted to the `f` expression, is mixed with the `even` filtering in the `otherwise` case.
-3. The folding or reduction is partially implemented by the `:` constructor, and partially by the `[]` in the `k > n` case.
+1. The *enumeration* is partially implemented by the `k > n` case and party by the `next` expression.
+2. The *mapping*, although extracted to the `f` expression, is mixed with the `even` filtering in the `otherwise` case.
+3. The *folding* or reduction is partially implemented by `:`, the list constructor, and partially by the `[ ]`, empty list, in the `k > n` case.
 
 As in `sumOddSquares`, each pattern matching in `evenFibs` is mixing different concerns, failing to exhibit the signal-flow structure of the computation.
 
-Let's refactor the previous two functions, by composing the combinators, to expose the [hiden similiarities](#similarities)
+Let's refactor both functions following the steps defined previously, so that we can expose the [hidden similiarities](#similarities) and the signal-flow structure.
 
 It is worth noting that `.` is the operator for function composition in Haskell.
 
-`sumOddSquares`
+`sumOddSquares`:
+
+1. *Enumerates* the leaves of the input tree.
+2. *Filters* out the leaves that contain even numbers.
+3. *Maps* the remaining leaves squaring each one.
+4. *Folds* (or reduces) the mapped leaves using `+`, starting at 0.
 
 ```
 sumOddSquares :: (Integral a) => BinaryTree a -> a
@@ -123,7 +131,12 @@ enumerateLeaves :: BinaryTree a -> [a]
 enumerateLeaves = foldr (:) []
 ```
 
-`evenFibs`
+`evenFibs`:
+
+1. *Enumerates* the interval 0 to n.
+2. *Maps* each number to its corresponding Fib.
+3. *Filter* out the odd Fibs.
+4. *Folds* (or reduces) the remaining elements using `:` (List constructor), starting with `[]` (empty list).
 
 ```
 evenFibs :: Integer -> [Integer]
@@ -169,29 +182,39 @@ Different sequences have different constraints, structures and semantics, but th
 
 By now you may have realized that both examples described in this post have a structure with the following shape, enumeration followed by a composition of standard combinators, terminating with a fold or reduction to a summary value, in other words:
 
-1. Computations always start with some sort of enumeration, which generates the initials signals. This is not limited to what we have seen so far, e.g. as enumerating the leaves or a tree or the integers in a given range. Enumerate could also be a query to a database that returns a sequence of products, or a sequence of products that we received via a REST endpoint. Considering lazy evaluation enumerate could also generate infinite sequences.
-2. Once we have the initial signals we pass them through the different stages of processing, e.g. filter, map, flatMap, zip, required to get the signals into a form in which we can extract the desired result from.
-3. To finish up the computation we fold or reduce the signals to a summary value.
+1. Computations always start with some sort of **enumeration**, which generates the initials signals. This is not limited to what we have seen so far, e.g. as enumerating the leaves or a tree or the integers in a given range. Enumerate could also be a query to a database that returns a sequence of products, or a sequence of products that we received via a REST endpoint. Considering lazy evaluation enumerate could also generate infinite sequences.
+2. Once we have the initial signals we pass them through the different **stages of processing**, e.g. filter, map, flatMap, zip, required to get the signals into a form in which we can extract the desired result from.
+3. To finish up the computation we **fold or reduce** the signals to a summary value.
 
 I see the pattern **Enumerate -> combinators -> Fold** as a very intuitive programming style that comes as a consequence of using **Conventional Interfaces** and it can be applied to most, if not all, computations out there. 
 
 
-To close up the post, here is a FizzBuzz implementation as an extra demonstration of this pattern.
+To close up the post, here is a FizzBuzz implementation that follows the signal-flow structure, as an extra demonstration of this pattern.
 
 `FizzBuzz`
 
 ```
+fizzBuzz :: Integer -> [String]
+fizzBuzz to = fmap fizzBuzzOrNumber (enumerateGame to)
+
+fizzBuzzOrNumber :: (String, Integer) -> String
+fizzBuzzOrNumber (fizzBuzz, index) = fizzBuzz `orElse` (show index)
+
+enumerateGame :: Integer -> [(String, Integer)]
+enumerateGame to = zip fizzesBuzzes (enumerateInterval 1 to)
+
+fizzesBuzzes :: [String]
+fizzesBuzzes = zipWith (++) fizzes buzzes
+
 fizzes :: [String]
 fizzes = cycle ["", "", "Fizz"]
 
 buzzes :: [String]
 buzzes = cycle ["", "", "", "", "Buzz"]
 
-fizzesBuzzes :: [String]
-fizzesBuzzes = zipWith (++) fizzes buzzes
-
-fizzBuzz :: Integer -> [String]
-fizzBuzz to = zipWith (\n f -> if (f /= []) then f else show n) [1..to] fizzesBuzzes
+orElse :: [a] -> [a] -> [a]
+orElse [] ys = ys
+orElse xs _  = xs
 ```
 
 ## References
