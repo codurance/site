@@ -16,7 +16,7 @@ tags:
 
 There is no reason to have a backend when there is no front-end. There is no reason to have an API when there is no one to consume it. There is no reason to have a class when there is no other class (or framework) to use it. There is no reason to have a method when there is no one calling it. 
 
-> Code should only be written to satisfy an external need, being a user, an external system, or another piece of code. 
+> Code should only be written to satisfy an external need, being from a user, an external system, or another piece of code. 
 
 ### Inside-Out Development
 
@@ -147,7 +147,7 @@ In order to agree on how we should design software, we should first agree in a f
 * **We should do the appropriate due diligence before building anything.**
 * **We should get feedback as soon and as often as possible.**
 * **We should always work in small valuable increments.**
-* **We should Keep things as simple as possible but no simpler.** 
+* **We should keep things as simple as possible but no simpler.** 
 * **We should only build what really needs to be built, nothing more.**
 * **We should not work on technical tasks if they do not have business value.**
 * **Investigative work should be time-boxed and done as separate a task.**
