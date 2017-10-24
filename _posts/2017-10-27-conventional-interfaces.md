@@ -24,13 +24,13 @@ Most of the ideas and some of the code samples contained in this post originally
 
 SICP describes conventional interfaces as a design principle for working with data structures. It is composed of a set of standard operators or combinators that connect the different steps required to implement computations in computer programs. 
 
-The combinators in question may be familiar to you as they will probably be provided in some form in your preferred language, e.g. `map`, ``filter``, ``flatMap`` (also now as ``bind``), `reduce` (also known as `fold`). They let us capture common patterns in the implementation of programs that a priori are structurally different, enabling us to think and reason about different programs in the same way. This is of great importance as it enables us to intuitively express completely different and unrelated programs applying function composition to this set of combinators.
+The combinators in question may be familiar to you as they will probably be provided in some form in your preferred language, e.g. `map`, ``filter``, ``flatMap`` (also now as ``bind``), `reduce` (also known as `fold`). They let us capture common patterns in the implementation of programs that are a priori structurally different, enabling us to think and reason about different programs in the same way. This is of great importance as it enables us to intuitively express completely different and unrelated programs applying function composition to this set of combinators.
 
 SCIP also introduces the concept of signal-processing as a metaphor to reason about this programming style.
 
 > A signal-processing engineer would find it natural to conceptualize processes in terms of signals flowing through a cascade of stages, each of which implements part of the program plan. 
 
-We will expand more on this metaphor later on, but for now, it is important to emphasize that making the signal-flow structure evident in the design of our programs increases the modularity and readability of the resulting code. It is also important to emphasize that the use of these combinators increase the level of abstraction at which we can write code by taking away low-level operations such as iteration, recursion or conditional statements.
+We will expand more on this metaphor later on, but for now, it is important to emphasize that making the signal-flow structure evident in the design of our programs increases the modularity and readability of the resulting code. It is also important to emphasize that the use of these combinators increase the level of abstraction at which we can write code by abstracting the implementation of low-level operations such as iteration, recursion or conditional statements.
 
 To demonstrate the importance of the principle, let's consider the two following functions taken from SICP, which I have translated from Lisp to Haskell.
 
@@ -61,8 +61,11 @@ evenFibs n = go 0
              | otherwise = let f    = fib k
                                next = k + 1
                            in if even f then f : go next else go next
+```
 
+*Fibonacci sequence*
 
+```
 fib :: Integer -> Integer
 fib 1 = 1
 fib 0 = 1
@@ -125,12 +128,20 @@ It is worth noting that `.` is the operator for function composition in Haskell.
 
 ```
 sumOddSquares :: (Integral a) => BinaryTree a -> a
-sumOddSquares tree = foldr (+) 0 . fmap (^2) . filter odd (enumerateLeaves tree)
+sumOddSquares tree = foldr (+) 0 . fmap (^2) . filter odd . enumerateLeaves $ tree
 
 enumerateLeaves :: BinaryTree a -> [a]
 enumerateLeaves tree = foldr (:) [] tree
 ```
 
+*The original implementation*
+
+```
+sumOddSquares :: (Integral a) => BinaryTree a -> a
+sumOddSquares (Node l r)           = sumOddSquares l + sumOddSquares r
+sumOddSquares (Leaf x) | odd x     = x ^ 2
+                       | otherwise = 0
+```
 `evenFibs`:
 
 1. *Enumerates* the interval 0 to n.
@@ -139,17 +150,29 @@ enumerateLeaves tree = foldr (:) [] tree
 4. *Folds* (or reduces) the remaining elements using `:` (List constructor), starting with `[]` (empty list).
 
 ```
-evenFibs' :: Integer -> [Integer]
-evenFibs' to = foldr (:) [] . filter even . fmap fib (enumerateInterval 0 to)
+evenFibs :: Integer -> [Integer]
+evenFibs to = foldr (:) [] . filter even . fmap fib . enumerateInterval 0 $ to
 
 enumerateInterval :: Integer  -> Integer -> [Integer]
 enumerateInterval from to = [from..to]
 ```
+
+*The original implementation*
+
+```
+evenFibs ::  Integer -> [Integer]
+evenFibs n = go 0
+  where go k | k > n     = []
+             | otherwise = let f    = fib k
+                               next = k + 1
+                           in if even f then f : go next else go next
+```
+
 ## Signal processing metaphor
 
 Now that we have seen how different computations can be shaped similarly by using the same set of combinators composed in different ways, let's expand on the signal processing metaphor.
 
-As mentioned in SICP, the key to organizing programs so as to more clearly reflect the signal-flow structure is to concentrate on the "signals" that flow from one stage in the process to the next. SCIP uses Lisp, where everything is a list, therefore the signal processing metaphor fits very nicely with lists. If we move away from Lisp and to Haskell for example, the metaphor may not be as evident, but as we just showed it is equally applicable. In most of the cases, Haskell abstracts the different combinators from the concrete data structure using [type classes](https://en.wikipedia.org/wiki/Type_class), let's break down a few of them.
+As mentioned in SICP, the key to organizing programs so as to more clearly reflect the signal-flow structure is to concentrate on the "signals" that flow from one stage in the process to the next. SCIP uses Lisp, where everything is a list, therefore the signal processing metaphor fits very nicely with lists. If we move away from Lisp to Haskell for example, the metaphor may not be as evident, but as we just showed it is equally applicable. In most of the cases, Haskell abstracts the different combinators from the concrete data structure using [type classes](https://en.wikipedia.org/wiki/Type_class), let's break down a few of them.
 
 * Enumerate **generates** the signals that initiate the computation.
 Haskell names the concept of enumeration unfolding and provides the `Data.Unfoldable` type class. [List comprehension](https://en.wikipedia.org/wiki/List_comprehension) is also available as a convenience to generate lists of values.
@@ -198,13 +221,13 @@ To close up the post, here is a FizzBuzz implementation that follows the signal-
 
 ```
 fizzBuzz :: Integer -> [String]
-fizzBuzz to = fmap fizzBuzzOrNumber (enumerateGame to)
+fizzBuzz to = foldr (:) [] . fmap fizzBuzzOrNumber . enumerateGame $ to
 
 fizzBuzzOrNumber :: (String, Integer) -> String
 fizzBuzzOrNumber (fizzBuzz, index) = fizzBuzz `orElse` (show index)
 
 enumerateGame :: Integer -> [(String, Integer)]
-enumerateGame to = zip fizzesBuzzes (enumerateInterval 1 to)
+enumerateGame to = zip fizzesBuzzes $ enumerateInterval 1 to
 
 fizzesBuzzes :: [String]
 fizzesBuzzes = zipWith (++) fizzes buzzes
