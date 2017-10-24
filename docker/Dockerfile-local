@@ -1,35 +1,18 @@
 FROM ruby:2.3.1
 
-
-
-RUN apt-get update && \
-    
-	apt-get install -y --no-install-recommends apt-utils && \
-    
-	apt-get install -y locales && apt-get clean && \
-    
-	sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-    
-	dpkg-reconfigure --frontend=noninteractive locales
-
-
+RUN apt-get update 
+RUN apt-get install -y --no-install-recommends apt-utils
+RUN apt-get install -y locales
+RUN apt-get clean
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+RUN dpkg-reconfigure --frontend=noninteractive locales
 
 ENV LANG en_US.UTF-8
-
 ENV LANGUAGE en_US.UTF-8
-
 ENV LC_ALL en_US.UTF-8
-
-
 
 WORKDIR /site
 
 ADD start_site.sh /start_site.sh 
-
-
-
 EXPOSE 4000
-
-
-
 ENTRYPOINT ["/start_site.sh"]
