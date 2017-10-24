@@ -98,17 +98,17 @@ It was a truly insightful moment when I realized that indeed both functions are 
 
 `sumOddSquares`:
 
-1. The *enumeration* is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree-like, in the `Node` pattern match.
-2. The *filtering* is mixed with the mapping in the `odd` case in the `Leaf` pattern match.
-3. The *folding* or reduction is partially implemented by the `+` that joins the double recursion in the `Node` pattern match, and partially by the `otherwise` case in the `Leaf` pattern match.
+* The *enumeration* is partially implemented by the `Leaf` pattern match, and partially by the double recursion, tree-like, in the `Node` pattern match.
+* The *filtering* is mixed with the mapping in the `odd` case in the `Leaf` pattern match.
+* The *folding* or reduction is partially implemented by the `+` that joins the double recursion in the `Node` pattern match, and partially by the `otherwise` case in the `Leaf` pattern match.
 
 Each pattern matching is mixing several concerns, increasing the complexity of the implementation and hiding the signal-flow structure of the computation.
 
 `evenFibs`:
 
-1. The *enumeration* is partially implemented by the `k > n` case and party by the `next` expression.
-2. The *mapping*, although extracted to the `f` expression, is mixed with the `even` filtering in the `otherwise` case.
-3. The *folding* or reduction is partially implemented by `:`, the list constructor, and partially by the `[ ]`, empty list, in the `k > n` case.
+* The *enumeration* is partially implemented by the `k > n` case and party by the `next` expression.
+* The *mapping*, although extracted to the `f` expression, is mixed with the `even` filtering in the `otherwise` case.
+* The *folding* or reduction is partially implemented by `:`, the list constructor, and partially by the `[ ]`, empty list, in the `k > n` case.
 
 As in `sumOddSquares`, each pattern matching in `evenFibs` is mixing different concerns, failing to exhibit the signal-flow structure of the computation.
 
