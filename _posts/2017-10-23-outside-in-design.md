@@ -192,13 +192,15 @@ When starting a new feature, the first thing to do is to build the UI for that f
 
 Once the UI is done, we are ready to slice the backend work in vertical increments. Each vertical increment should start from a user interaction and contain all the logic (persistence, communication with external systems, etc.) needed to satisfy that user interaction. Once this increment is finished, the system will have a new behaviour added to it. 
 
-This methodical approach to slice our features in small increments and always start the development from outside (UI) allows us to easily define the boundaries for acceptance tests and use them to guide our development. 
+This methodical approach to slicing our features in small increments and always start the development from outside (UI) allows us to easily define the boundaries for acceptance tests and use them to guide our development. 
 
 Once one increment is done, demoed and accepted, we can deploy it to production or any other environment.[^4] Now we are ready to start a new increment.  
 
 ### Outside-In API Design
 
-APIs should always be designed to satisfy the needs of consumers. But before we go deeper, let’s first think about different contexts where APIs are provided: 
+But what if our application does’t have UI and only provide APIs? 
+
+APIs are also a delivery mechanism (from the domain model perspective) and the same Outside-In principle applies. APIs should always be designed to satisfy their clients’ needs. But before going deeper, let’s first have a look at different contexts where APIs are provided: 
 
 - **Company-private APIs:** Only used by systems controlled by the API provider (internal).
 - **Public APIs:** Used by systems not controlled by the API provider (external). 
@@ -206,31 +208,33 @@ APIs should always be designed to satisfy the needs of consumers. But before we 
 
 #### Company-private APIs
 
-APIs sole purpose is to satisfy the needs of their clients, being multiple delivery mechanisms or other modules (services). Front-end, mobile, and backend developers should collaborate in API design. This collaboration should also happen when one team needs to consume an API being developed by another team. API design should be driven by the needs of the clients of the API and not by what backend developers think API clients will need.
+APIs sole purpose is to satisfy the needs of their clients, being web, mobile or other modules (services). Front-end, mobile, and backend developers should collaborate in API design. This collaboration should also happen when one team needs to consume an API being developed by another team. API design should be driven by the needs of the clients of the API and not by what backend developers think API clients _will_ need.
 
-I’ve seen in many companies, backend developers designing APIs and imposing them on mobile and front-end developers. Mobile and front-end developers often needed to adjust their user journeys or add a lot of unnecessary complexity because the APIs were not designed to serve them. This way of working became so common that many mobile and front-end developers now believe that API design is not their job and they don’t push to get involved. 
+I’ve seen in many companies, backend developers designing APIs and imposing them on mobile and front-end developers. Mobile and front-end developers often needed to adjust their user journeys or add a lot of unnecessary complexity because the APIs were not designed to serve them. This way of working became so common that many mobile and front-end developers now believe that API design is not part of their job and submissively wait for backend developers to tell them what the APIs are. 
 
-API providers (backend developers) should do everything in their power to reduce the work done by the clients of their APIs. Having APIs created by backend developers without clearly understanding the needs of the delivery mechanism and their respective flows lead to complex delivery mechanisms and frictions between teams. The problems can be reduced significantly with cross-functional teams, where developers need to work not only on the API but also on its clients. 
+API providers (backend developers) should do everything in their power to reduce the work done by the clients of their APIs. Having APIs created by backend developers without clearly understanding the needs of the their clients and respective flows lead to complex delivery mechanisms and frictions between teams. The problems can be reduced significantly with cross-functional teams, where developers can collaboratively work on both sides of the application. 
 
 In case there is only one client for an API, the API should be specific for that client. APIs gradually become more generic as we add more clients and different external needs.   
 
 #### Public APIs
 
-It’s difficult to predict all the possible ways a public API will be used. However, even public APIs should be designed with an external workflow in mind, starting with the most common workflow(s) that clients are expected to have while using our APIs. Depending on the type of APIs being exposed, we should start with a [reference implementation][6] and derive the API design from its needs. Reference implementations allow us to validate if flows and API granularity make sense. We should reconsider our decision to expose an API if we cannot image a good use case for them. 
+It’s difficult to predict all the possible ways a public API will be used. However, even public APIs should be designed with an external workflow in mind, starting with the most common workflow(s) that clients are expected to have while using our APIs. Depending on the type of APIs being exposed, we should start with a [reference implementation][6] and derive the API design from its needs. Reference implementations allow us to validate if flows and API granularity make sense. 
+
+We should reconsider our decision to expose an API if we cannot imagine a good use case for them. 
 
 #### Hybrid APIs
 
-Hybrid APIs can be very complicated to maintain as they suffer pressure from different sides to evolve. Similar to the company-private and public APIs, they should also be designed according to the need of their clients.  
+Hybrid APIs can be very complicated to maintain as they suffer pressure from different sides to evolve. Similar to the company-private and public APIs, they should also be designed according to the need of their clients. This scenario can be quite complicated and is out of the scope of this post.
 
 ## Summary
 
-Risk mitigation is an extremely important activity in any software project. However, we should not mix exploratory work with feature development. 
+Risk mitigation is an extremely important activity in any software project. We should not mix exploratory work with feature development. 
 
 Code should only be written to satisfy an external need, being from a user, an external system, or another piece of code. We should only build what really needs to be built, nothing more.
 
-Guiding our design and code to according to the external need helps us to remain focus on the task at hand and avoid speculative development. 
+Guiding our design and code according to external needs helps us to remain focused on the task at hand and avoid speculative development. 
 
-Navigation is a delivery mechanism responsibility and we should not have to change the backend when it changes. The backend should only provide operations (actions) to the front-end.
+Navigation is a delivery mechanism responsibility and backend should not change when navigation changes. The backend should only provide operations (actions) to the front-end.
 
 In order to achieve continuous delivery and deployment, it is important work in small increments. Slicing features in small vertical slices is a great way to make sure each increment has business value. 
 
