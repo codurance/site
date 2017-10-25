@@ -2,13 +2,10 @@
 layout: post
 name: 2017-10-26-conventional-interfaces
 title: Conventional Interfaces in Functional Programming
-date: 2017-10-14 10:20:00 +00:00
+date: 2017-10-26 09:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-   src: /assets/img/custom/blog/sicp.jpg
-attribution:
-      text: Structure and Interpretation of Computer Programs, Second Edition
-      href: https://mitpress.mit.edu/sicp/
+   src: /assets/img/custom/blog/sicp-post.jpg
 tags:
 - functional programming
 - Haskell
