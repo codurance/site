@@ -46,7 +46,7 @@
   image: /assets/img/custom/team/steve_lydford.jpg
   role: Head of Delivery 
   fullDescription: >
-      <p>Steve is a software craftsman and author with over 15 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including travel and tourism, education, media, government and healthcare, developing systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
+      <p>Steve is a Software Craftsman and author with over 18 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
   github: stevelydford
 
@@ -358,3 +358,13 @@
   twitter: _dbugsy
   github: dbugsy
 
+- id: richardwild
+  name: Richard Wild
+  image: /assets/img/custom/team/richard_wild.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Richard has been programming for his living since 1998, but he has loved the craft ever since teaching himself assembly language as a teenager on the family computer.</p>
+    <p>He apprenticed for many years grinding data on Oracle databases, picking up C, Java, C# and other languages along the way. At present he primarily programs in Java, but he is very interested in functional programming with Clojure.</p>
+    <p>Richard was switched on to Software Craftsmanship by some excellent agile coaches who taught XP, and through the association of some inspiring Software Craftspeople he has been fortunate to work with. In addition to honing his craft, he loves mentoring and teaching others how to practice TDD and how to write clean pragmatic code.</p>
+    <p>Aside from programming, Richard is a keen club runner with the Bedford Harriers, doing all distances from 5K to marathons. He also enjoys cycling, blogging and making music. Richard lives in Northampton with his partner Sarah.</p>
+  github: richardjwild
