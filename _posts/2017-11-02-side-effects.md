@@ -10,6 +10,7 @@ image:
     src: /assets/img/custom/blog/2017-11-02-side-effects.jpg
 tags:
 - functional programming
+- scala
 ---
 
 Functional programming is based on the simple premise that <b>your functions should not have side effects</b>, they are considered evil in this paradigm. <b>If a function has side effects we call it a procedure</b>, so functions do not have side effects. We consider that a function has a side effect if it modifies a mutable data structure or variable, uses IO, throws an exception or halts an error; all of these things are considered side effects. The reason why side effects are bad is because if you had them, a function can be unpredictable depending on the state of the system; when a function has no side effects we can execute it anytime, it will always return the same result, given the same input.
@@ -30,17 +31,16 @@ We defined a function with side effects as a function that does some visible mut
   result
 }</code></pre>
 
-
 That function has a side effect, it mutates the result variable in every iteration of the loop. But even if it does that side effect the function can be replaced by a value, because the side effects are not visible from the outside. In other words, the function is deterministic, <span style="padding:0;" class="prettyprint"><code>sumsIntsUntil(5) = 10</code></span> and <span style="padding:0;" class="prettyprint"><code>sumsIntsUntil(10) = 45</code></span> etc… We say that the function has a local side effect but the user of that function does not care as it does not break our substitution model. Therefore, this function is pure, even if it has a local side effect.
 
 Consider now a similar example but with a slightly difference:
 
 <pre class="prettyprint"><code>object { 
-var result = 0
-def sumIntsTo(i: Int) = {
-  0 to i foreach((i) => result = result + i)
-  result
-}</code></pre>
+  var result = 0
+  def sumIntsTo(i: Int) = {
+    0 to i foreach((i) => result = result + i)
+    result
+  }</code></pre>
 
 With this particular variation, when we call for the 1st time the function: <span style="padding:0;" class="prettyprint"><code>sumsIntsUntil(5)</code></span> it will give us 10 but if we call it again with the same input will give us 20. This is the reason why variable mutation is considered a side effect, even though in the previous example the side effect is local to the function, making it deterministic.
 
