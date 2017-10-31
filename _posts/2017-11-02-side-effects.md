@@ -1,7 +1,7 @@
 ---
 author: Christian Panadero Martinez
 comments: true
-date: 2017-10-30 10:00:00 +00:00
+date: 2017-10-31 10:00:00 +00:00
 layout: post
 asset-type: post
 slug: side-effects
@@ -40,21 +40,22 @@ Consider now a similar example but with a slightly difference:
   def sumIntsTo(i: Int) = {
     0 to i foreach((i) => result = result + i)
     result
-  }</code></pre>
+  }
+}</code></pre>
 
 With this particular variation, when we call for the 1st time the function: <span style="padding:0;" class="prettyprint"><code>sumsIntsUntil(5)</code></span> it will give us 10 but if we call it again with the same input will give us 20. This is the reason why variable mutation is considered a side effect, even though in the previous example the side effect is local to the function, making it deterministic.
 
 The use of local side effects is a common practice to optimize functions. We can find some examples in Scala’s List class. For instance, this is the implementation of the drop function:
 
 <pre class="prettyprint"><code>def drop(n: Int): List[A] = {
-    var these = this
-    var count = n
-    while (!these.isEmpty && count > 0) {
-      these = these.tail
-      count -= 1
-    }
-    these
-  }</code></pre>
+  var these = this
+  var count = n
+  while (!these.isEmpty && count > 0) {
+    these = these.tail
+    count -= 1
+  }
+  these
+}</code></pre>
 
 As you could see there are a lot of names and terms in this little post; there are a lot of them in this paradigm and they are very important because it gives us a vocabulary to express more complex concepts in terms of other concepts. I will continue explaining more concepts in the next post.
 
