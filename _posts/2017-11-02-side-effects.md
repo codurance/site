@@ -59,5 +59,7 @@ The use of local side effects is a common practice to optimize functions. We can
 As you could see there are a lot of names and terms in this little post; there are a lot of them in this paradigm and they are very important because it gives us a vocabulary to express more complex concepts in terms of other concepts. I will continue explaining more concepts in the next post.
 
 <h3>References</h3>
-<a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)">Wikipedia</a>
-<a href="https://www.manning.com/books/functional-programming-in-scala">Manning functional programming in Scala</a>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)">Wikipedia</a></li>
+  <li><a href="https://www.manning.com/books/functional-programming-in-scala">Manning functional programming in Scala</a></li>
+</ul>
