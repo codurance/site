@@ -1,7 +1,7 @@
 ---
 author: Christian Panadero Martinez
 comments: true
-date: 2017-10-31 10:00:00 +00:00
+date: 2017-11-02 06:00:00 +00:00
 layout: post
 asset-type: post
 slug: side-effects
@@ -23,7 +23,7 @@ A function that returns always the same result for the same input is called a pu
 Referential transparency is important because it allows us to substitute expressions with values. This property enables us to think and reason about the program program evaluation using the substitution model. Hence, we can say that expressions that can be replaced by values are deterministic, as they always return the same value for a given input.
 
 <h3>Local side effects</h3>
-We defined a function with side effects as a function that does some visible mutation, uses IO, etc… But what about functions that always return the same value even though they do some side effect internally? In example:
+We defined a function with side effects as a function that does some visible mutation, uses IO, etc… But what about functions that always return the same value even though they do some side effect internally? For example:
 
 <pre class="prettyprint"><code>def sumIntsTo(i: Int) = {
   var result = 0
