@@ -70,4 +70,4 @@ My special thanks go to my colleagues **Christian Panadero** and <a href="/publi
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 
-They're awesome _travel_ companions in this journey and I met a lot of interesting people thanks to them.
+They're awesome _travel_ companions in this _journey_ and I met a lot of interesting people thanks to them.
