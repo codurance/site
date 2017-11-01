@@ -14,22 +14,22 @@ tags:
 - conference
 
 ---
-Thanks Codurance for giving me the opportunity of attending <a href="http://www.lambda.world/" target="_blank">**Lambda World Conference 2017**</a> last 26th and 27th October in Cádiz, the largest _Functional Programming_ event in Spain consisting of two intense days:
+Thanks Codurance for giving me the opportunity of attending <a href="http://www.lambda.world/" target="_blank">**Lambda World Conference 2017**</a> last 26th and 27th October in Cádiz, a _Functional Programming_ event in Spain consisting of two intense days:
 
 * A half-day of open space 
 * A half-day of workshops
 * A full day of talks
 
-**Rúnar Bjarnason**, one of the authors of the _red book_ of Scala, improvised a crash course about Category Theory during the open space and it was very absorbing how he identified objects and arrows in every category.
+**Rúnar Bjarnason**, one of the authors of the Scala _red book_, improvised a crash course about Category Theory during the open space and it was very absorbing how he identified objects and arrows in every category.
 
 My favourite workshop was <a href="https://t.co/uc6pH2a6QK" target="_blank">_Don't fear the Optics_</a>, facilitated by <a href="https://twitter.com/jeslg" target="_blank">**Jesús López-González**</a>, in which he matched:
 
 * Ugly code with aliens
 * Techniques to refactor with weapons
 
-It's was a funny and didactic workshop, breaking the walls of concepts as _Lens_, _Prism_ and _Traversal_ (not so complex after the workshop ;)).
+It's was a funny and didactic workshop, breaking the walls of concepts like _Lens_, _Prism_ and _Traversal_ (not so complex after the workshop ;)).
 
-I attended another interesting workshop about _Common Lisp_ by **Andrew Lawson**. I still remember how much I enjoyed programming in Lisp at the University, but I didn't know about different implementations of Lisp, as well as the existence of Lisp machines.
+I attended another interesting workshop about _Common Lisp_ by **Andrew Lawson**. I still remember how much I enjoyed programming in Lisp at the University, but I did not know about different implementations of Lisp, nor about the existence of Lisp machines.
 
 I'm in this profession because of Maths, so I had fun with the talk about _Maths for Programming, Fun and Creativity_ by **Dave Gurnell** and **Noel Welsh**.
 
@@ -52,7 +52,7 @@ Do you know another technical conference which provides its own beer, _functiona
 </center>
 <br/>
 
-Organizers deserve my warmest congratulations, because it was one of the best conferences I've attended. It was the third edition of this awesome event and, despite the high number of attendees, it kept its high quality, the personal attention and its family atmosphere. <a href="https://twitter.com/Jorge__Galindo">**Jorge Galindo**</a> is one of the organizers and his daughter is growing at the same time as the event, getting used to face a huge audience:
+Organizers deserve my warmest congratulations, because it was one of the best conferences I've ever attended. It was the third edition of this awesome event and, despite the high number of attendees, it kept its high quality, the personal attention and its family atmosphere. <a href="https://twitter.com/Jorge__Galindo">**Jorge Galindo**</a> is one of the organizers and his daughter is growing at the same time as the event, getting used to face a huge audience:
 
 <center>
 <img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-30-lambda-world-conference/jorge-galindo-s-daughter.jpg" alt="Jorge Galindo" class="img img-responsive" width="50%"/>
