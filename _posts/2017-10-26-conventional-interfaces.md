@@ -21,7 +21,7 @@ Most of the ideas and some of the code samples contained in this post originally
 
 SICP describes conventional interfaces as a design principle for working with data structures. It is composed of a set of standard operators or combinators that connect the different steps required to implement computations in computer programs. 
 
-The combinators in question may be familiar to you as they will probably be provided in some form in your preferred language, e.g. `map`, ``filter``, ``flatMap`` (also now as ``bind``), `reduce` (also known as `fold`). They let us capture common patterns in the implementation of programs that are a priori structurally different, enabling us to think and reason about different programs in the same way. This is of great importance as it enables us to intuitively express completely different and unrelated programs applying function composition to this set of combinators.
+The combinators in question may be familiar to you as they will probably be provided in some form in your preferred language, e.g. `map`, ``filter``, ``flatMap`` (also known as ``bind``), `reduce` (also known as `fold`). They let us capture common patterns in the implementation of programs that are a priori structurally different, enabling us to think and reason about different programs in the same way. This is of great importance as it enables us to intuitively express completely different and unrelated programs applying function composition to this set of combinators.
 
 SCIP also introduces the concept of signal-processing as a metaphor to reason about this programming style.
 
