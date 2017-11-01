@@ -14,7 +14,7 @@ tags:
 - conference
 
 ---
-Thanks Codurance for giving me the opportunity of attending <a href="http://www.lambda.world/" target="_blank">**Lambda World Conference 2017**</a> last 26th and 27th October in Cádiz, a _Functional Programming_ event in Spain consisting of two intense days:
+Thanks Codurance for giving me the opportunity of attending <a href="http://www.lambda.world/" target="_blank">**Lambda World Conference 2017**</a> last 26th and 27th October in Cádiz (Spain), a _Functional Programming_ event consisting of two intense days:
 
 * A half-day of open space 
 * A half-day of workshops
