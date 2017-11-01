@@ -368,3 +368,14 @@
     <p>Richard was switched on to Software Craftsmanship by some excellent agile coaches who taught XP, and through the association of some inspiring Software Craftspeople he has been fortunate to work with. In addition to honing his craft, he loves mentoring and teaching others how to practice TDD and how to write clean pragmatic code.</p>
     <p>Aside from programming, Richard is a keen club runner with the Bedford Harriers, doing all distances from 5K to marathons. He also enjoys cycling, blogging and making music. Richard lives in Northampton with his partner Sarah.</p>
   github: richardjwild
+
+- id: christinaripleygonzalez
+  name: Christina Ripley-Gonzalez
+  image: /assets/img/custom/team/christina_ripley.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Christina has been working as a software developer and team leader in the .Net Ecosystem for a number of years. Enjoying process automation and generaly making others jobs easier.</p>
+    <p>Starting out playing with visual basic at 16 she moved on to study development at university and has been coding ever since.</p>
+    <p>Christina has a passion for self-improvement and is allways looking for new learning opportunities accross a variety of subject matters.</p>
+    <p>Outside of work Christina is and avid consumer of sci-fi and fantasy books as well as enjoying weightlifting and bouldering amongst other strength based activities.</p>
+  github: trinkeg
