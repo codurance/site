@@ -60,7 +60,7 @@ This was a fun and challenging session, which required teamwork and attention. F
 
 ### Session 4 - Simplifying Conditionals
 
-This session was about reducing the complexity of the code by avoing complex conditionals and removing Else branches. By doing so, the code would get easier to read and, consequently, easier to test and mantain.
+This session was about reducing the complexity of the code by avoiding complex conditionals and removing Else branches. By doing so, the code would get easier to read and, consequently, easier to test and maintain.
 
 After spending the first three sessions looking at the Java version of the Kata, I decided to explore other languages. Fortunately, my next pair was working with C#. We both didn't have the Golden Master implemented, so we wanted to write it.
 
@@ -85,7 +85,7 @@ Every time you want to change existing code, you must have a very good reason to
 
 That said, we also wanted to make sure that the reason we were spending the whole day understanding and refactoring a legacy code was for a good reason (apart from the learning purpose): we've been asked to implement new features.
 
-This time I had the opportunity to pair with someone coding in Python. I knew almost nothing about Python, so I didn't think twice before asking as many questions as I could about the language. It was a very interesting session with both of us learning Python at the same time as trying to get the feature implemented. This once again was an example that the goal of Coderetreats is more than just introduce new techniques and practice our skills: it's also an opportunity to meet people, learn new languages, look at challenges from differents perspectives and have fun together.
+This time I had the opportunity to pair with someone coding in Python. I knew almost nothing about Python, so I didn't think twice before asking as many questions as I could about the language. It was a very interesting session with both of us learning Python at the same time as trying to get the feature implemented. This once again was an example that the goal of Coderetreats is more than just introduce new techniques and practice our skills: it's also an opportunity to meet people, learn new languages, look at challenges from different perspectives and have fun together.
 
 At the end of this last session, we formed a circle and had a final retrospective, sharing feedback from what we've learned throughout the day. After the event was over, some of us decided to go to a local pub and continue the fun with a couple of pints.
 
