@@ -15,7 +15,7 @@ tags:
 - teamwork
 ---
 
-On the Saturday 21st we hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Plotnicki and Robert Firek, with Daniel and myself helping and participating throughout the day. It was a success thanks to everyone that attended, a surprisingly good number for a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different pair and sometimes we were asked to delete our code between sessions.
+On the Saturday 21st we hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Płotnicki and Robert Firek, with Daniel and myself helping and participating throughout the day. It was a success thanks to everyone that attended, a surprisingly good number for a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different pair and sometimes we were asked to delete our code between sessions.
 
 The goal was to introduce some refactoring techniques (e.g. Golden Master Test, renaming, extract stateful code to pure functions, etc.) through piece of legacy code, the [Trivia Kata][1], with each session introducing new challenges as well as delivering the core values of solving them. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Then, after the session is finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
 
