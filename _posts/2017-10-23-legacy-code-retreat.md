@@ -19,8 +19,10 @@ On the Saturday 21st we hosted our very first Legacy Coderetreat here at Coduran
 
 The goal was to introduce some refactoring techniques (e.g. Golden Master Test, renaming, extract stateful code to pure functions, etc.) through piece of legacy code, the [Trivia Kata][1], with each session introducing new challenges as well as delivering the core values of solving them. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Then, after the session is finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
 
-{% img /assets/img/custom/blog/2017-10-27-full-office-at-coderetreat.jpg "Full office at Legacy Coderetreat" %}
-We all have something to share and to learn from each other.
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-full-office-at-coderetreat.jpg" alt=“full-office-at-coderetreat” class="img img-responsive" style="height: 70%; width: 80%;"/>
+</center>
+<br/>
 
 The idea to organise the Legacy Coderetreat in London came after Cyryl and Robert successfully ran it in Toulouse, France. Refactoring legacy code when introducing new features is an important skill which requires practice. The event introduced a few important techniques, while providing the ideal environment for the participants to pair with each other, share skills, trying new languages, learning tools and shortcuts.
 
@@ -37,7 +39,10 @@ This session served as the foundation for the rest of the event. The most intere
 
 ### Session 2 - Writing a Golden Master
 
-{% img /assets/img/custom/blog/2017-10-27-golden-master.png "Golden Master Test" %}
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-golden-master.png" alt=“golden-master-test” class="img img-responsive" style="height: 70%; width: 80%;"/>
+</center>
+<br/>
 
 Once we had a clear understanding of the code (or, at least that's what we thought) we were given a brief introduction to [Golden Master Test][3] (also know as Characterization Test). In short, it's a useful approach to test Legacy Code with complex logic by keeping record of different outputs generated with random seeds so that you can compare (likely with the aid of a diff tool) the outputs after each small change in order to make sure you are not introducing unexpected changes (a.k.a bugs).
 
@@ -67,7 +72,10 @@ With a Golden Master and a few refactorings in place, we took a further step int
 
 Unit testing our code meant that we could identify and separate the behaviours in small functions so that they could be tested in isolation, without being highly coupled to the rest of the code. That was the goal of this session, however, I spent the time pairing with a friend as we were trying to figure out how to read from and write to files in Ruby so that we could make the Golden Master work.
 
-{% img /assets/img/custom/blog/2017-10-27-full-office-at-coderetreat-2.jpg "Writing Unit Tests" %}
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-full-office-at-coderetreat-2.jpg" alt=“writing-unit-tests” class="img img-responsive" style="height: 70%; width: 80%;"/>
+</center>
+<br/>
 
 It was a pleasure to revisit Ruby, a language that taught me a lot about Object Orientation and how to write simple code. While it can be frustrating when we cannot find the solution for a problem on our own, when we are pairing we someone we keep each other motivated and when the solution is found, it feels much better to celebrate as a team.
 
