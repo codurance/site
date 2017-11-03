@@ -88,7 +88,7 @@ var submitApplication = function (title, target) {
 
     var emailAddresses = {
        'London': 'join-us@codurance.com',
-       'Barcelona': 'join-us@codurance.es'
+       'Barcelona': 'join-us-bcn@codurance.com'
     };
 
     var body = {
