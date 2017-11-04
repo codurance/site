@@ -1,0 +1,26 @@
+/* Maths formulas */
+.formula {
+  font-family: FontAwesome;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.formula-light {
+  font-family: FontAwesome;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.formula-explanation {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.formula-change {
+  color: red;
+}
+
+/* tabbed text */
+.tabbed-4 {
+  padding-left: 4em;
+}
