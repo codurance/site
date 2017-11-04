@@ -3,13 +3,10 @@
   font-family: FontAwesome;
   font-style: italic;
   font-size: 12px;
-  font-weight: 600;
 }
 
-.formula-light {
-  font-family: FontAwesome;
-  font-style: italic;
-  font-size: 12px;
+.highlighted {
+  font-weight: 600;
 }
 
 .formula-explanation {
