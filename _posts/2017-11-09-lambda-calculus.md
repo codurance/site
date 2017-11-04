@@ -103,7 +103,7 @@ Example: apply the identity function to 3.
 <p class="tabbed-4">
   <span class="formula highlighted">(&lambda;x.x) 3</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=3</span>]</span></br>
-  <span class="formula highlighted">3</span>
+  <span class="formula highlighted formula-change">3</span>
 </p>
 
 This is also called *application*. <span class="formula-explanation">[<span class="formula">x:=3</span>]</span> means that we substitute <span class="formula highlighted">x</span> with <span class="formula highlighted">3</span>. There are other kinds of notation for variable substitutions, but I find this one quite clear and more familiar for developers, as it reminds of variable assignations.
@@ -118,11 +118,11 @@ Example:
 <p class="tabbed-4">
   <span class="formula highlighted">(&lambda;x.xy)(&lambda;x.xz)(&lambda;y.y)</span></br>
   <span class="tabbed-4 formula-explanation">Apply <span class="formula highlighted">(&lambda;x.xz)</span>, the leftmost outermost term.</span></br>
-  <span class="formula highlighted">((&lambda;x.xz)y)(&lambda;y.y)</span></br>
+  <span class="formula highlighted">(<span class="formula-change">(&lambda;x.xz)</span>y)(&lambda;y.y)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;y.y)</span>]</span></br>
-  <span class="formula highlighted">(((&lambda;y.y)z)y)</span></br>
+  <span class="formula highlighted">((<span class="formula-change">(&lambda;y.y)</span>z)y)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">y:=z</span>]</span></br>
-  <span class="formula">zy</span>
+  <span class="formula highlighted"><span class="formula-change">z</span>y</span>
 </p>
 
 <span class="formula highlighted">zy</span> is not reducible anymore, it’s a fully evaluated expression. At this stage, we say that <span class="formula highlighted">zy</span> is in **beta normal form**. In Programming words, this means that the function was *evaluated* and returned the result term, which cannot be reduced any further.
@@ -144,17 +144,17 @@ Finally, we could have a look at an example of beta reduction with a name clash,
 <p class="tabbed-4">
   <span class="formula highlighted">(&lambda;xyz.xyz)(&lambda;x.xz)(&lambda;x.x)</span></br>
   <span class="tabbed-4 formula-explanation">The head of the leftmost lambda has three parameters. They can be split in three different heads.</span></br>
-  <span class="formula highlighted">(&lambda;x.&lambda;y.&lambda;z.xyz)(&lambda;x.xz)(&lambda;x.x)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.&lambda;y.&lambda;z.xyz)</span>(&lambda;x.xz)(&lambda;x.x)</span></br>
   <span class="tabbed-4 formula-explanation">The next step would be to bind [<span class="formula">x:=(&lambda;x.xz)</span>]. The problem is that there is already a <span class="formula highlighted">z</span> free variable in one of the heads of the leftmost lambda. This is a name clash, as they are different variables but have the same name. To solve this, we can rename one of them before we apply the binding.</span></br>
-  <span class="formula highlighted">(&lambda;x.&lambda;y.&lambda;z'.xyz')(&lambda;x.xz)(&lambda;x.x)</span></br>
+  <span class="formula highlighted">(&lambda;x.&lambda;y.&lambda;<span class="formula-change">z'</span>.xy<span class="formula-change">z'</span>)(&lambda;x.xz)(&lambda;x.x)</span></br>
   <span class="tabbed-4 formula-explanation">Now, we can bind [<span class="formula">x:=(&lambda;x.xz)</span>] safely.</span></br>
-  <span class="formula highlighted">(&lambda;y.&lambda;z'.(&lambda;x.xz)yz')(&lambda;x.x)</span></br>
+  <span class="formula highlighted">(&lambda;y.&lambda;z'.<span class="formula-change">(&lambda;x.xz)</span>yz')(&lambda;x.x)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">y:=(&lambda;x.x)</span>]</span></br>
-  <span class="formula highlighted">(&lambda;z'.(&lambda;x.xz)(&lambda;x.x)z')</span></br>
+  <span class="formula highlighted">(&lambda;z'.(&lambda;x.xz)<span class="formula-change">(&lambda;x.x)</span>z')</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.x)</span>]</span></br>
-  <span class="formula highlighted">(&lambda;z'.((&lambda;x.x)z)z')</span></br>
+  <span class="formula highlighted">(&lambda;z'.(<span class="formula-change">(&lambda;x.x)</span>z)z')</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=z</span>]</span></br>
-  <span class="formula highlighted">(&lambda;z'.zz')</span></br>
+  <span class="formula highlighted">(&lambda;z'.<span class="formula-change">z</span>z')</span></br>
   <span class="tabbed-4 formula-explanation">This function has no arguments to be applied, so we are done.</span>
 </p>
 
@@ -167,10 +167,10 @@ When a expression is beta reduced and produces a result, we say that the express
   <span class="formula highlighted">(&lambda;x.xx)(&lambda;x.xx)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.xx)</span>]</span></br>
   <span class="tabbed-4 formula-explanation">As <span class="formula highlighted">x</span> appears twice in the body, the new expression is the same as the original one.</span></br>
-  <span class="formula highlighted">(&lambda;x.xx)(&lambda;x.xx)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.xx)(&lambda;x.xx)</span></span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.xx)</span>]</span></br>
   <span class="tabbed-4 formula-explanation">The next application returns again the same expression.</span></br>
-  <span class="formula highlighted">(&lambda;x.xx)(&lambda;x.xx)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.xx)(&lambda;x.xx)</span></span></br>
   <span class="tabbed-4 formula-explanation">...</span></br>
   <span class="tabbed-4 formula-explanation">This expression does not converge and will never be reduced into beta normal form. When this happens, we say that the expression <i>diverges</i>.</span>
 </p>
@@ -179,11 +179,11 @@ Some expressions will even grow when evaluating them:
 <p class="tabbed-4">
   <span class="formula highlighted">(&lambda;x.xxx)(&lambda;x.xxx)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.xxx)</span>]</span></br>
-  <span class="formula highlighted">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span></span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.xxx)</span>]</span></br>
-  <span class="formula highlighted">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span>(&lambda;x.xxx)</span></br>
   <span class="tabbed-4 formula-explanation">[<span class="formula">x:=(&lambda;x.xxx)</span>]</span></br>
-  <span class="formula highlighted">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span></br>
+  <span class="formula highlighted"><span class="formula-change">(&lambda;x.xxx)(&lambda;x.xxx)(&lambda;x.xxx)</span>(&lambda;x.xxx)(&lambda;x.xxx)</span></br>
   <span class="tabbed-4 formula-explanation">...</span>
 </p>
 
