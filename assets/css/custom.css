@@ -2,7 +2,7 @@
 .formula {
   font-family: FontAwesome;
   font-style: italic;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .highlighted {
@@ -11,7 +11,7 @@
 
 .formula-explanation {
   font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .formula-change {
