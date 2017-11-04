@@ -138,7 +138,7 @@ As lambdas can only bind one parameter, the way to rearrange several parameters 
   <span class="tabbed-4 formula-explanation">Now we have a function with one parameter, and its body contains another function with one parameter (the second parameter, <span class="formula highlighted">y</span>, in the original head). When reducing this expression, <span class="formula highlighted">y</span> will be bound and substituted as usual, and <span class="formula highlighted">x</span> will be bound and substituted before reducing the nested function.</span>
 </p>
 
-This simple idea is called *currying*.
+This simple idea is called **currying**.
 
 Finally, we could have a look at an example of beta reduction with a name clash, to see the how alpha equivalence works in practice:
 <p class="tabbed-4">
