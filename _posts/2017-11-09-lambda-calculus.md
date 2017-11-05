@@ -5,6 +5,9 @@ layout: post
 asset-type: post
 slug: lambda-calculus-for-mortal-developers
 title: Lambda Calculus for mortal developers
+canonical:
+    name: my personal blog
+    href: http://srodrigo.me/lambda-calculus-for-mortal-developers/
 image:
     src: /assets/img/custom/blog/2017-11-09-lambda-calculus-for-mortal-developers.png
 tags:
