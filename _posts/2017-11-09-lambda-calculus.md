@@ -1,6 +1,6 @@
 ---
 author: Sergio Rodrigo Royo
-date: 2017-11-02 08:00:00 +00:00
+date: 2017-11-09 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: lambda-calculus-for-mortal-developers
