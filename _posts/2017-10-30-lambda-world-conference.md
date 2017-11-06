@@ -59,11 +59,11 @@ Organizers deserve my warmest congratulations, because it was one of the best co
 </center>
 <br/>
 
-I'll update this post when videos are available.
+<a href="https://www.youtube.com/watch?v=ho7oagHeqNc&list=PL4yAk3UBuBSrQXe_mZkR4khTNtQ_z5baQ" target="_blank">Here</a> you'll find the videos about talks.
 
 ## Acknowledgments
 
-My special thanks go to my colleagues **Christian Panadero** and <a href="/publications/author/carlos-morera%20de%20la%20chica/">**Carlos Morera de la Chica**</a>, here with <a href="https://bartoszmilewski.com/" target="_blank">**Bartosz Milewski**</a>, the author of <a href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/" target="_blank">_Category Theory for Programmers_</a>:
+My special thanks go to my colleagues <a href="/publications/author/christian-panadero%20martinez/">**Christian Panadero**</a> and <a href="/publications/author/carlos-morera%20de%20la%20chica/">**Carlos Morera de la Chica**</a>, here with <a href="https://bartoszmilewski.com/" target="_blank">**Bartosz Milewski**</a>, the author of <a href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/" target="_blank">_Category Theory for Programmers_</a>:
 
 <center>
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Such a moment meeting <a href="https://twitter.com/BartoszMilewski?ref_src=twsrc%5Etfw">@BartoszMilewski</a> in <a href="https://twitter.com/Lambda_World?ref_src=twsrc%5Etfw">@Lambda_World</a>. Looking forward to our next category theory session at <a href="https://twitter.com/codurance?ref_src=twsrc%5Etfw">@codurance</a> next week. <a href="https://t.co/QefB9DXAhG">pic.twitter.com/QefB9DXAhG</a></p>&mdash; Carlos Morera (@CarlosMChica) <a href="https://twitter.com/CarlosMChica/status/924317459859103749?ref_src=twsrc%5Etfw">October 28, 2017</a></blockquote>

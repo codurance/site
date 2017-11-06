@@ -85,15 +85,20 @@ var submitApplication = function (title, target) {
     bodyMessage += 'Blog: ' + blog + '\r\n\r\n';
     bodyMessage += 'About Software Craftsmanship: ' + craftmanship + '\r\n\r\n';
     bodyMessage += 'About Him/Her ' + message + '\r\n';
-    
-    
+
+    var emailAddresses = {
+       'London': 'join-us@codurance.com',
+       'Barcelona': 'join-us-bcn@codurance.com'
+    };
+
     var body = {
-        to: 'join-us@codurance.com',
+        to: emailAddresses[location],
         name: firstName + ' ' + lastName,
         subject: title,
         email: email,
         message: bodyMessage
     };
+
 
     var url = "https://codurance.com/api/emailer";
 
