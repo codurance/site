@@ -1,8 +1,8 @@
 ---
 layout: post
-name: 2017-11-09-legacy-code-retreat
+name: 2017-11-05-legacy-code-retreat
 title: Legacy Coderetreat - Overcoming challenges together
-date: 2017-11-09 09:00:00 +00:00
+date: 2017-11-05 09:00:00 +00:00
 author: Luciano Palma
 asset-type: post
 image:
