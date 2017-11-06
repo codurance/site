@@ -6,7 +6,7 @@ date: 2017-11-05 09:00:00 +00:00
 author: Luciano Palma
 asset-type: post
 image:
-   src: /assets/img/custom/blog/2017-10-27-full-office-at-coderetreat.jpg
+   src: /assets/img/custom/blog/2017-11-05-legacy-coderetreat/2017-10-27-full-office-at-coderetreat.jpg
 abstract: We all have something to share and learn from each other.
 tags:
 - personal-growth
@@ -22,7 +22,7 @@ We recently hosted our very first Legacy Coderetreat here at Codurance London. T
 Refactoring legacy code when introducing new features is an important skill which requires practice. The goal of the event was to learn some refactoring techniques by working with a piece of legacy code, [Trivia Kata][1], with each session introducing new challenges. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Each session would introduce a technique to deal with a situation like this and let people familiarize themselves with it via exercises. Then, after the session finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-full-office-at-coderetreat.jpg" alt=“full-office-at-coderetreat” class="img img-responsive" style="height: 70%; width: 80%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-05-legacy-coderetreat/2017-10-27-full-office-at-coderetreat.jpg" alt=“full-office-at-coderetreat” class="img img-responsive" style="height: 70%; width: 80%;"/>
 </center>
 <br/>
 
@@ -41,7 +41,7 @@ This session served as the foundation for the rest of the event. The most intere
 ## Session 2 - Writing a Golden Master
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-golden-master.png" alt=“golden-master-test” class="img img-responsive" style="height: 70%; width: 80%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-05-legacy-coderetreat/2017-10-27-golden-master.png" alt=“golden-master-test” class="img img-responsive" style="height: 70%; width: 80%;"/>
 </center>
 <br/>
 
@@ -74,7 +74,7 @@ With a Golden Master and a few refactorings in place, we took a further step int
 Unit testing our code meant that we could identify and separate the behaviours in small functions so that they could be tested in isolation, without being highly coupled to the rest of the code. I spent the time pairing with a friend as we were trying to figure out how to read from and write to files in Ruby so that we could make the Golden Master work.
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-full-office-at-coderetreat-2.jpg" alt=“writing-unit-tests” class="img img-responsive" style="height: 70%; width: 80%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-05-legacy-coderetreat/2017-10-27-full-office-at-coderetreat-2.jpg" alt=“writing-unit-tests” class="img img-responsive" style="height: 70%; width: 80%;"/>
 </center>
 <br/>
 
