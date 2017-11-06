@@ -15,16 +15,14 @@ tags:
 - teamwork
 ---
 
-We recently hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Płotnicki and [Robert Firek][9], with Daniel and myself helping and participating throughout the day. It was a success thanks to everyone that attended, a surprisingly good number for a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different pair and sometimes we were asked to delete our code between sessions.
+We recently hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Płotnicki and [Robert Firek][9], with Daniel and myself helping and participating throughout the day. We had a very good number of attendees, especially given the fact that the event started very early on a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different person to pair with.  
 
-The goal was to introduce some refactoring techniques (e.g. Golden Master Test, renaming, extract stateful code to pure functions, etc.) through piece of legacy code, the [Trivia Kata][1], with each session introducing new challenges as well as delivering the core values of solving them. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Then, after the session is finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
+Refactoring legacy code when introducing new features is an important skill which requires practice. The goal of the event was to learn some refactoring techniques by working with a piece of legacy code, [Trivia Kata][1], with each session introducing new challenges. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Each session would introduce a technique to deal with a situation like this and let people familiarize themselves with it via exercises. Then, after the session finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
 
 <center>
 <img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-27-full-office-at-coderetreat.jpg" alt=“full-office-at-coderetreat” class="img img-responsive" style="height: 70%; width: 80%;"/>
 </center>
 <br/>
-
-The idea to organise the Legacy Coderetreat in London came after Cyryl and Robert successfully ran it in Toulouse, France. Refactoring legacy code when introducing new features is an important skill which requires practice. The event introduced a few important techniques, while providing the ideal environment for the participants to pair with each other, share skills, trying new languages, learning tools and shortcuts.
 
 Here's how the sessions took place:
 
@@ -32,10 +30,11 @@ Here's how the sessions took place:
 
 In the first session, our goal was to read through the code and try to understand what it does. No clues were given, the idea was to let us figure out what the code was about. Some of us went even further and ran the code, using the output to get more information and understand behaviours which were often hard to spot. We have also been asked to take notes, write down everything that we could figure out about the behaviours and what the project was about.
 
-The code described a Board Game with multiple players and by running the code multiple times, my pair and I could compare the outputs and learn a great deal about the business rules, such as penalty rules and the criteria to define a winner.
-This experience simulates a real-world scenario. Even when we are familiar with a project, sometimes we need to touch a module or part of the code which we (including every other member of the team) have never seen before.
+The code turned out to be a board game simulation with multiple players. By running the code multiple times, my pair and I could compare the outputs and learn a great deal about the business rules, such as penalty rules and the criteria to define a winner.  
 
-This session served as the foundation for the rest of the event. The most interesting part, in my opinion, wasn't understanding the business rules, but actually seeing other participants coming with other ideas, interpreting the behaviours Domain differently. It was an enlightening experience to me.
+This experience simulates a real-world scenario. Even when we are familiar with a project, sometimes we need to touch a module or part of the code which we (including every other member of the team) have never seen before.  
+
+This session served as the foundation for the rest of the event. The most interesting part, in my opinion, wasn't understanding the business rules, but actually seeing other participants coming with other ideas, interpreting the behaviours in the domain differently. It was an enlightening experience to me.
 
 ### Session 2 - Writing a Golden Master
 
@@ -94,6 +93,9 @@ At the end of this last session, we formed a circle and had a final retrospectiv
 Being at my first Coderetreat, it was motivating to see people get together on a Saturday morning and spend the whole day coding and sharing their skills. Like Code Katas, Coderetreats gives you awareness of new techniques and sharpen your skills through practice. We discover that asking questions and not understanding something at first is completely natural. We all have something to share and to learn from each other. Furthermore, by rotating pairs and trying new languages, we open our minds to different solutions to a problem and learn to work as a team. Coming from different backgrounds, we find ourselves achieving common goals: to learn, improve our skills and have fun!
 
 I would like to thank everyone who attended the event and made it successful and fun. In a few weeks time we will be hosting the [Global Day Of Coderetreat][8] and I am looking forward to seeing you all, as well as meeting other awesome people.
+
+ environment for the participants to pair with each other, share skills, trying new languages, learning tools and shortcuts.
+
 
 [1]:https://github.com/jbrains/trivia
 [2]:https://sourcemaking.com/refactoring/smells
