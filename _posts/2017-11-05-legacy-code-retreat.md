@@ -15,7 +15,7 @@ tags:
 - teamwork
 ---
 
-# Introdution
+# Introduction
 
 We recently hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Płotnicki and [Robert Firek][9], with Daniel and myself helping and participating throughout the day. We had a very good number of attendees, especially given the fact that the event started very early on a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different person to pair with.  
 
@@ -91,7 +91,7 @@ This time I had the opportunity to pair with someone coding in Python. I knew al
 
 # Conclusion
 
-Being at my first Coderetreat, it was motivating to see people get together on a Saturday morning and spend the whole day coding and sharing their skills. Everyone at the end metioned that, while they found the event to be fast-paced, they learned a thing or two. Despite being tired from the full day of intense work, people decided to go to a pub together afterwards.  
+Being at my first Coderetreat, it was motivating to see people get together on a Saturday morning and spend the whole day coding and sharing their skills. Everyone at the end mentioned that, while they found the event to be fast-paced, they learned a thing or two. Despite being tired from the full day of intense work, people decided to go to a pub together afterwards.  
 
 Like Code Katas, Coderetreats gives you awareness of new techniques and sharpen your skills through practice. We discover that asking questions and not understanding something at first is completely natural. We all have something to share and to learn from each other. Furthermore, by rotating pairs and trying new languages, we open our minds to different solutions to a problem and learn to work as a team. Coming from different backgrounds, we find ourselves achieving common goals: to learn, improve our skills and have fun!  
 
