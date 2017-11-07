@@ -2,7 +2,7 @@
 
 ## Setup the <del>development</del> writing environment 
 
-You can serve the site through [docker](installing-if-you-like-docker) or [natively](installing-if-you-like-ruby) on your machine.
+You can serve the site through [docker](#installing-if-you-like-docker) or [natively](#installing-if-you-like-ruby) on your machine.
 
 ### Installing if you like Docker
 
