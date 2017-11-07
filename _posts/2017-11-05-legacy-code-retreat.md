@@ -95,7 +95,7 @@ Being at my first Coderetreat, it was motivating to see people get together on a
 
 Like Code Katas, Coderetreats gives you awareness of new techniques and sharpen your skills through practice. We discover that asking questions and not understanding something at first is completely natural. We all have something to share and to learn from each other. Furthermore, by rotating pairs and trying new languages, we open our minds to different solutions to a problem and learn to work as a team. Coming from different backgrounds, we find ourselves achieving common goals: to learn, improve our skills and have fun!  
 
-I would like to thank everyone who attended the event and made it successful and fun. In a few weeks time we will be hosting the Global Day Of Coderetreat in our offices in London[8] and Barcelona[10] and I am looking forward to seeing you all, as well as meeting other awesome people.
+I would like to thank everyone who attended the event and made it successful and fun. In a few weeks time we will be hosting the Global Day Of Coderetreat in our offices in [London][8] and [Barcelona][10] and I am looking forward to seeing you all, as well as meeting other awesome people.
 
 [1]:https://github.com/jbrains/trivia
 [2]:https://codurance.com/software-creation/2016/03/17/code-smells-part-I/
