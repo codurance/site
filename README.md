@@ -73,7 +73,7 @@ We have a bot that makes a preview of the site for every branch that you create.
 
 If you don't have a PR, you can just replace the branch name in the link below:
 
-http://codurance-site-pr.s3-website-eu-west-1.amazonaws.com/site-[branch-name]
+`http://codurance-site-pr.s3-website-eu-west-1.amazonaws.com/site-[branch-name]`
 
 
 # Troubleshooting
