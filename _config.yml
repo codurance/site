@@ -34,7 +34,7 @@ collections:
 pagination:
   enabled: true
   per_page: 10
-  permalink: "/page:num"
+  paginate_path: "/page:num"
   sort_reverse: true 
 
 plugins:
