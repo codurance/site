@@ -37,7 +37,7 @@ pagination:
   permalink: "/page:num"
   sort_reverse: true 
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate-v2
