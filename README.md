@@ -6,12 +6,12 @@ You have a choice to make. Make it well.
 
 ### Installing if you like Docker
 
-#####TL;DR
+##### TL;DR
 1. [install docker](https://www.docker.com/community-edition)
 - `docker build --tag codurance-site:local -f ./Dockerfile-local .`
 - ``docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local``
 
-#####More details
+##### More details
 
 You need to execute the following command to prepare an image and run a container:
 
