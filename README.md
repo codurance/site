@@ -31,9 +31,7 @@ docker run -i -t -v `pwd`:/site -p 4000:4000 -e RAKE_TARGET="your_target" codura
 ```
 ----
 
-###Installing if you like ruby
-
-prereqs:
+### Installing if you like ruby
 
 1. install rvm https://rvm.io/
 - `rvm install ruby`
