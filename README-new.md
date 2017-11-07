@@ -7,7 +7,6 @@ prereqs:
 - `rvm install ruby`
 - `rvm use ruby`
 - `gem install bundler`
-- `gem install jekyll`
 - `bundle install`
 
 
