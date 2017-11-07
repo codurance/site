@@ -53,7 +53,7 @@ Because the concepts introduced were new to most of us, I found that 45min was t
 
 ## Session 3 - Extracting and Renaming
 
-In the third session, we finally managed to get our hands in that smelly code. Our goal was to extract small chunks of the confusing code into functions with meaningful names, but the actual fun part came with the constraint of keeping [functions pure][6], that is, free of any observable side-effects.
+In the third session, we finally managed to get our hands in that smelly code. Our goal was to extract small chunks of the confusing code into functions with meaningful names, but the actual fun part came with the constraint of keeping functions pure, that is, free of any observable [side-effects][6].
 
 Some of the refactorings are easy, resulting in a small method with one or two parameters. But soon enough we found ourselves looking at a two or three lines of code that were changing fields, printing the current state of the game and having some form of duplicated logic. Trying to extract those chunks required deeper analysis of the code, otherwise, we would end up with a function requiring four or five parameters in order to keep its pureness, which can be a sign of a [Code Smell][7].
 
@@ -95,14 +95,15 @@ Being at my first Coderetreat, it was motivating to see people get together on a
 
 Like Code Katas, Coderetreats gives you awareness of new techniques and sharpen your skills through practice. We discover that asking questions and not understanding something at first is completely natural. We all have something to share and to learn from each other. Furthermore, by rotating pairs and trying new languages, we open our minds to different solutions to a problem and learn to work as a team. Coming from different backgrounds, we find ourselves achieving common goals: to learn, improve our skills and have fun!  
 
-I would like to thank everyone who attended the event and made it successful and fun. In a few weeks time we will be hosting the [Global Day Of Coderetreat][8] and I am looking forward to seeing you all, as well as meeting other awesome people.
+I would like to thank everyone who attended the event and made it successful and fun. In a few weeks time we will be hosting the Global Day Of Coderetreat in our offices in London[8] and Barcelona[10] and I am looking forward to seeing you all, as well as meeting other awesome people.
 
 [1]:https://github.com/jbrains/trivia
-[2]:https://sourcemaking.com/refactoring/smells
+[2]:https://codurance.com/software-creation/2016/03/17/code-smells-part-I/
 [3]:https://codurance.com/2012/11/11/testing-legacy-code-with-golden-master/
 [4]:https://martinfowler.com/bliki/TestDouble.html
 [5]:http://wiki.c2.com/?SoftwareSeam
-[6]:https://en.wikipedia.org/wiki/Pure_function
+[6]:https://codurance.com/2017/11/02/side-effects/
 [7]:https://sourcemaking.com/refactoring/smells/long-parameter-list
 [8]:https://www.meetup.com/london-software-craftsmanship/events/244321442
 [9]:https://codurance.com/publications/author/robert-firek/
+[10]:https://www.meetup.com/Barcelona-Software-Craftsmanship/events/244080253/
