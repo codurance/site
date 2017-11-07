@@ -7,7 +7,9 @@ prereqs:
 - `rvm install ruby`
 - `rvm use ruby`
 - `gem install bundler`
+- `gem install jekyll`
 - `bundle install`
+
 
 run locally:
 - `bundle exec rake servequick`
@@ -15,3 +17,7 @@ run locally:
 In case of other problems, refer to the [troubleshooting section](#troubleshooting).
 
 ##Installing if you don't
+
+
+##Troubleshooting
+If things don't make sense - use this to clear out your cached gems: https://coderwall.com/p/x3z2ag/cleanup-rvm
