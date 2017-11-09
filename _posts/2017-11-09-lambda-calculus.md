@@ -194,7 +194,7 @@ Does divergence remind you of something? It is an infinite recursion. Any Java d
 
 ## Was it that bad after all?
 
-As we’ve seen, the general idea behind Lambda Calculus is quite simple. Names such as alpha equivalence or beta reduction can sound scary, but we, as developers, already use these concepts in our daily work. The importance of Lambda Calculus not only applies to Functional Programming, but also to the basic building blocks of Programming itself.
+As we’ve seen, the ideas behind Lambda Calculus are more familiar to developers than we thought in the first place. Names such as alpha equivalence or beta reduction can sound scary, but we, as developers, already use these concepts in our daily work. The importance of Lambda Calculus not only applies to Functional Programming, but also to the basic building blocks of Programming itself.
 
 ## References
 
