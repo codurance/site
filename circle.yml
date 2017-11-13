@@ -16,8 +16,6 @@ dependencies:
     - gem install jekyll
     - sudo apt-get install jq
     - aws configure set preview.cloudfront true
-checkout:
-  post:
     - bundle install
 compile:
   override:
