@@ -9,7 +9,7 @@ canonical:
     name: hacking dan
     href: http://blog.hackingdan.com/2017/11/tetris-ai-experiment-1-single-parent.html
 image:
-    src: /assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png
+    src: "{{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png"
 tags:
 - evolutionary algorithm
 - machine learning
@@ -35,7 +35,7 @@ I have been experimenting with artificial intelligence. I was looking for a game
 
 Neural networks are used as an analogy for the decision making pathways in a brain.
 
-[![diagram of fully connected neural network](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)
+[![diagram of fully connected neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)
 
 It is structured in three layers. The input layer, the hidden layer and the output layer. In a fully connected neural network, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
 
@@ -43,7 +43,7 @@ The values for the input layer are provided to the network by the game.
 
 The value for each node in the hidden layer is calculated using the following formula:
 
-[![diagram showing the calculations for node activation](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/activation.gif)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/activation.gif)
+[![diagram showing the calculations for node activation]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/activation.gif)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/activation.gif)
 
 In English, you take each node in the input layer and multiply them by their weight. You add all of those together and then add a bias. Then you pass that value through the activation function and that is the value of your node.
 
@@ -53,7 +53,7 @@ The output layer is read in order to provide the output result of the neural net
 
 ### Weights and Biases
 
-[![diagram of weights and biases in a neural network](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)
+[![diagram of weights and biases in a neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)
 
 Each connection in a neural network has a weight. It is factored in to the calculation of the value of the node it is linking to. Each node, not including the input layer, has a bias. 
 
@@ -134,7 +134,7 @@ Points are scored when a line is cleared. If multiple lines are cleared at once,
 
 ### Neural Network Architecture
 
-[![diagram of my neural network](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/architecture.png)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/architecture.png)
+[![diagram of my neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/architecture.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/architecture.png)
 
 #### Input Layer
 
@@ -186,7 +186,7 @@ Each weight and bias in the child has a configurable chance of mutating(χ). The
 
 ## Results
 ### Experiment 1
-[![](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-1.png)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-1.png)
+[![]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-1.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-1.png)
 
 For this experiment, the mutation parameters were:  
 
@@ -202,7 +202,7 @@ Regardless, the networks did successfully evolve. Evidenced by the average climb
 
 ### Experiment 2
 
-[![](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-2.png)](/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-2.png)
+[![]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-2.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/results-2.png)
 
 For this experiment, the mutation parameters were:  
 
