@@ -51,6 +51,10 @@ You calculate the value of each node in the hidden layer in the same way - and t
 
 The output layer is read in order to provide the output result of the neural network. How exactly the layer is read is dependent on the purpose of the network.
 
+### Activation Function
+
+I'm using a sigmoid function for my activation function ([here](https://github.com/cohen990/evolution-of-tetris/blob/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30/src/java/com/cohen990/Network.java#L47)). A sigmoid function is bounded between 0 and 1 and is non-linear. This created a "decision boundary" for the node. More information is available [here](https://stackoverflow.com/questions/9782071/why-must-a-nonlinear-activation-function-be-used-in-a-backpropagation-neural-net).
+
 ### Weights and Biases
 
 [![diagram of weights and biases in a neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)
