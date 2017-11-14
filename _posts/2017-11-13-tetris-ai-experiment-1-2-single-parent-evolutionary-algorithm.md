@@ -9,7 +9,7 @@ canonical:
     name: hacking dan
     href: http://blog.hackingdan.com/2017/11/tetris-ai-experiment-1-single-parent.html
 image:
-    src: "{{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png"
+    src: /assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png
 tags:
 - evolutionary algorithm
 - machine learning
