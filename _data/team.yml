@@ -380,7 +380,19 @@
     <p>Outside of work, Christina is an avid consumer of sci-fi and fantasy books as well as enjoying weightlifting and bouldering amongst other strength-based activities.</p>
   github: trinkeg
 
-- id: terrybalfour 
+  - id: neilkidd
+  name: Neil Kidd
+  image: /assets/img/custom/team/neil_kidd.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Since graduating from Staffordshire University in 2000, Neil has worked as a software developer and team lead in the .Net ecosystem.</p>
+    <p>He discovered agile, lean, xp, theory of constraints and kanban in 2007 and believes in incremental, continuous improvement.</p>
+    <p>Neil has a particular interest in the soft side of his work. Enjoying helping people to excel in teamwork, process and self improvement.</p>
+    <p>In addition to attending meetups, he has co-organised the Devs In The Ditch and Agile Staffordshire user groups.</p>
+    <p>His other interests include his family, diy and motorcycling.</p>
+  github: neilkidd-codurance
+
+  - id: terrybalfour 
   name: Terry Balfour 
   image: /assets/img/custom/team/terry_balfour.jpg
   role: Software Craftsman 
