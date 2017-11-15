@@ -380,7 +380,7 @@
     <p>Outside of work, Christina is an avid consumer of sci-fi and fantasy books as well as enjoying weightlifting and bouldering amongst other strength-based activities.</p>
   github: trinkeg
 
-  - id: neilkidd
+- id: neilkidd
   name: Neil Kidd
   image: /assets/img/custom/team/neil_kidd.jpg
   role: Software Craftsman
@@ -392,7 +392,7 @@
     <p>His other interests include his family, diy and motorcycling.</p>
   github: neilkidd-codurance
 
-  - id: terrybalfour 
+- id: terrybalfour 
   name: Terry Balfour 
   image: /assets/img/custom/team/terry_balfour.jpg
   role: Software Craftsman 
