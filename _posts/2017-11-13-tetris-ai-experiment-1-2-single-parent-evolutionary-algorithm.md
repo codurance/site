@@ -130,45 +130,23 @@ A key point of EA is evaluating the performance of a network. This can be done w
 
 Tetris is... well known... but the rules I use are worth formalising as they are not a perfect representation of the gameplay.
 
-#### Play Area
-
-The play area in tetris is 10x20\. There are 2 blocks above the top row so that the pieces are never out of view.
-
-#### Tetrominos
-
-"Tetromino" is the name for the blocks that fall from the top. Each tetromino is a configuration of 4 blocks. They come in 7 varieties (I, J, L, T, S, Z, O) corresponding to their shape.
-
-#### Well
-
-The well is the fixed blocks in the game. A tetromino is fixed to the well when it lands on the bottom of the play area or another tetromino.
-
-#### Pacing
-
-Every frame, the current tetromino drops down by one block due to "gravity".
-
-#### Controlling the tetromino
-
-The network has the opportunity to make one move per frame. This is done in addition to the gravity drop. The following 7 moves are legal:
-
-*   move left
-*   move right
-*   rotate clockwise
-*   rotate counter-clockwise
-*   drop by one
-*   drop to bottom
-*   no action
-
-#### Scoring
-
-Points are scored when a line is cleared. If multiple lines are cleared at once, the reward is greater.
-
-1 line -> 10,000 points
-
-2 lines -> 30,000 points
-
-3 lines -> 50,000 points
-
-4 lines -> 80,000 points
+- **Play Area**: The play area in tetris is 10x20\. There are 2 blocks above the top row so that the pieces are never out of view.
+- **Tetrominos**: "Tetromino" is the name for the blocks that fall from the top. Each tetromino is a configuration of 4 blocks. They come in 7 varieties (I, J, L, T, S, Z, O) corresponding to their shape.
+- **Well**: The well is the fixed blocks in the game. A tetromino is fixed to the well when it lands on the bottom of the play area or another tetromino.
+- **Pacing**: Every frame, the current tetromino drops down by one block due to "gravity".
+- **Controls**: The network has the opportunity to make one move per frame. This is done in addition to the gravity drop. The following 7 moves are legal:
+  - move left
+  - move right
+  - rotate clockwise
+  - rotate counter-clockwise
+  - drop by one
+  - drop to bottom
+  - no action
+- **Scoring**: Points are scored when a line is cleared. If multiple lines are cleared at once, the reward is greater.
+  - 1 line -> 10,000 points
+  - 2 lines -> 30,000 points
+  - 3 lines -> 50,000 points
+  - 4 lines -> 80,000 points
 
 ## Methodology
 
