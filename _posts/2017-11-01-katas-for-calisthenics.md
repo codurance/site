@@ -1,7 +1,7 @@
 ---
 author: Jorge Gueorguiev Garcia
 comments: true
-date: 2017-11-11 15:00:00 +00:00
+date: 2017-11-16 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: katas-for-functional-calisthenics
