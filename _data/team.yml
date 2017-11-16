@@ -379,3 +379,25 @@
     <p>Christina has a passion for self-improvement and is always looking for new learning opportunities, across a wide variety of subject matters.</p>
     <p>Outside of work, Christina is an avid consumer of sci-fi and fantasy books as well as enjoying weightlifting and bouldering amongst other strength-based activities.</p>
   github: trinkeg
+
+- id: neilkidd
+  name: Neil Kidd
+  image: /assets/img/custom/team/neil_kidd.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Since graduating from Staffordshire University in 2000, Neil has worked as a software developer and team lead in the .Net ecosystem.</p>
+    <p>He discovered agile, lean, xp, theory of constraints and kanban in 2007 and believes in incremental, continuous improvement.</p>
+    <p>Neil has a particular interest in the soft side of his work. Enjoying helping people to excel in teamwork, process and self improvement.</p>
+    <p>In addition to attending meetups, he has co-organised the Devs In The Ditch and Agile Staffordshire user groups.</p>
+    <p>His other interests include his family, diy and motorcycling.</p>
+  github: neilkidd-codurance
+
+- id: terrybalfour 
+  name: Terry Balfour 
+  image: /assets/img/custom/team/terry_balfour.jpg
+  role: Software Craftsman 
+  fullDescription:
+    <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects.  He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p> 
+    <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p> 
+    <p>Outside of work Terry enjoys travelling, mountain biking and has recently started renovating a farm in rural France (even though he knows nothing about building….yet!)</p>
+  github: terrybalfourcodurance 
