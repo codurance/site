@@ -19,7 +19,9 @@ tags:
 
 ## Abstract (why not make it formal)
 
-In this experiment, I implement an evolutionary algorithm with no crossover to evolve a neural network with the intention of having it learn to play tetris. I assess the results of my evolutionary algorithm applied to learning tetris. The results show the impact of a high occurrence of mutations(χ) and a high standard deviation for mutations(σ)  
+In this experiment, I implement an evolutionary algorithm with no crossover to evolve a neural network with the intention of having it learn to play tetris. I assess the results of my evolutionary algorithm applied to learning tetris. The results show the impact of a high occurrence of mutations(χ) and a high standard deviation for mutations(σ)
+
+[![illustration of machine playing tetris]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)
 
 All the code is available [on github](https://github.com/cohen990/evolution-of-tetris/tree/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30)
 
@@ -53,15 +55,25 @@ You calculate the value of each node in the hidden layer in the same way - and t
 
 The output layer is read in order to provide the output result of the neural network. Neural networks have different purposes. They are often trying to solve a classification or a regression problem.
 
-### Regression
+### Regression problem
 
 A regression problem is typically the first you will learn to solve as the simple examples are very easy to understand.
 
 If a network is trying to solve a regression problem, that means it is trying to approximate an unknown function. e.g. 
 f(x) => x^2 + 3x + 2
-The weights and biases in the network will typically be adjusted using supervised learning and a training set (a set of values with known input and output) and eventually, the network will be a close approximation to the unknown original function.
+The weights and biases in the network will typically be adjusted using supervised learning and a training set (a set of values with known input and output) and eventually, the network will be a close approximation to the unknown original function. This is a powerful technique but is not used in this experiment.
 
+Regression problems that I have encountered only have 1 output node and that value is the approximation of the output value of the function. There may be more complex architectures but I am not aware of them.
 
+### Classification problem
+
+A network attempting to solve a classification problem has to answer a question. Is this a cat or a dog? Is this person a risk for diabetes? Is the best move in this situation to turn left or turn right?
+
+This is the goal of my network. Given a particular game state, what is the optimal move?
+
+A classification problem will have one output node for each possible classification. Each of them will have a value between 0 and 1. 0 is translated to "I am absolutely certain it is not this one" and 1 is translated to "I am absolutely certain it is this one".
+
+In order to find out which one your network thinks it is, you just take the highest value from the nodes in the output layer and that is your classification.
 
 ### Activation Function
 
@@ -88,6 +100,21 @@ Of course, it wouldn't be evolutionary without evolution. So there must be mutat
 My implementation of EA is unusual in that each network has only one parent. The parent network is duplicated and passed through a series of mutations. The child network has a chance of performing better or worse than the parent. Because the worst performers are eliminated, the average performance of the population increases over time as the positive changes to the networks are compounded.  
 
 It's very common for EA to make use of a crossover algorithm. which allows a child to have multiple parents. It is a way of allowing features developed in one network to be combined with features developed in another network. This is the real magic of EA. Unfortunately I was not aware of it at the start of my experiment.
+
+### Mutation
+
+A mutation is a randomly occurring change to a weight or bias. I am using a gaussian distribution (otherwise known as a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)) to achieve a situation where most of the mutations are within a smaller limit, but a small number of mutations are much larger.
+
+The formula I'm using is:
+
+```
+w = w + (w * r)
+```
+where `w` = weight and `r` = a random number from a guassian distribution, centered at 0.
+
+This means that 68% of the time, the weight will change by less than σ (plus or minus), 95% will change by less than 2\*σ (plus or minus) and 99.7% of the time will change by less than 3\*σ 
+
+Here is a more detailed explanation of [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation).
 
 ### Fitness Function
 
