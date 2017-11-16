@@ -39,9 +39,11 @@ Neural networks are used as an analogy for the decision making pathways in a bra
 
 [![diagram of fully connected neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)
 
-My network is structured in three layers. The input layer, the hidden layer and the output layer, although other architectures can have an arbitrary number of hidden layers. The advantage of having multiple layers is that higher order features can be studied. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
+A neural network can have an arbitrary number of hidden layers. The advantage of having multiple layers is that higher order features can be understood by the network. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
 
-In a fully connected neural network, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
+My network is structured in three layers. The input layer, the hidden layer and the output layer. This architecture was chosen for its simplicity, since this is the first experiment. Although it may be beneficial to incorporate a more complex architecture if this experiment fails.
+
+In a fully connected neural network, such as the one I implemented, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
 
 The values for the input layer are provided to the network by the game.
 
@@ -110,7 +112,7 @@ The formula I'm using is:
 ```
 w = w + (w * r)
 ```
-where `w` = weight and `r` = a random number from a guassian distribution, centered at 0.
+where `w` = weight and `r` = a random number from a guassian distribution, centered at 0. [code](https://github.com/cohen990/evolution-of-tetris/blob/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30/src/java/com/cohen990/Tetris.java#L281)
 
 This means that 68% of the time, the weight will change by less than σ (plus or minus), 95% will change by less than 2\*σ (plus or minus) and 99.7% of the time will change by less than 3\*σ 
 
