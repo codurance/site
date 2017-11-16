@@ -37,7 +37,9 @@ Neural networks are used as an analogy for the decision making pathways in a bra
 
 [![diagram of fully connected neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)
 
-It is structured in three layers. The input layer, the hidden layer and the output layer. In a fully connected neural network, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
+My network is structured in three layers. The input layer, the hidden layer and the output layer, although other architectures can have an arbitrary number of hidden layers. The advantage of having multiple layers is that higher order features can be studied. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
+
+In a fully connected neural network, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
 
 The values for the input layer are provided to the network by the game.
 
@@ -49,7 +51,17 @@ In English, you take each node in the input layer and multiply them by their wei
 
 You calculate the value of each node in the hidden layer in the same way - and then you do the same for the output layer but using the hidden layer as input.
 
-The output layer is read in order to provide the output result of the neural network. How exactly the layer is read is dependent on the purpose of the network.
+The output layer is read in order to provide the output result of the neural network. Neural networks have different purposes. They are often trying to solve a classification or a regression problem.
+
+### Regression
+
+A regression problem is typically the first you will learn to solve as the simple examples are very easy to understand.
+
+If a network is trying to solve a regression problem, that means it is trying to approximate an unknown function. e.g. 
+f(x) => x^2 + 3x + 2
+The weights and biases in the network will typically be adjusted using supervised learning and a training set (a set of values with known input and output) and eventually, the network will be a close approximation to the unknown original function.
+
+
 
 ### Activation Function
 
@@ -73,7 +85,6 @@ The fundamental principle of EA is generations. Each generation is a group of ne
 
 Of course, it wouldn't be evolutionary without evolution. So there must be mutations. This is how EA allows networks to progress and perform better and better.
 
-  
 My implementation of EA is unusual in that each network has only one parent. The parent network is duplicated and passed through a series of mutations. The child network has a chance of performing better or worse than the parent. Because the worst performers are eliminated, the average performance of the population increases over time as the positive changes to the networks are compounded.  
 
 It's very common for EA to make use of a crossover algorithm. which allows a child to have multiple parents. It is a way of allowing features developed in one network to be combined with features developed in another network. This is the real magic of EA. Unfortunately I was not aware of it at the start of my experiment.
