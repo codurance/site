@@ -62,7 +62,9 @@ The output layer is read in order to provide the output result of the neural net
 A regression problem is typically the first you will learn to solve as the simple examples are very easy to understand.
 
 If a network is trying to solve a regression problem, that means it is trying to approximate an unknown function. e.g. 
+```
 f(x) => x^2 + 3x + 2
+```
 The weights and biases in the network will typically be adjusted using supervised learning and a training set (a set of values with known input and output) and eventually, the network will be a close approximation to the unknown original function. This is a powerful technique but is not used in this experiment.
 
 Regression problems that I have encountered only have 1 output node and that value is the approximation of the output value of the function. There may be more complex architectures but I am not aware of them.
@@ -78,6 +80,8 @@ A classification problem will have one output node for each possible classificat
 In order to find out which one your network thinks it is, you just take the highest value from the nodes in the output layer and that is your classification.
 
 ### Activation Function
+
+The activation function is a function used to see whether a node has been "activated" or not. It takes into account all nodes connected from the previous layer, all their weights and the bias.
 
 I'm using a sigmoid function for my activation function ([here](https://github.com/cohen990/evolution-of-tetris/blob/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30/src/java/com/cohen990/Network.java#L47)). A sigmoid function is bounded between 0 and 1 and is non-linear. This created a "decision boundary" for the node. More information is available [here](https://stackoverflow.com/questions/9782071/why-must-a-nonlinear-activation-function-be-used-in-a-backpropagation-neural-net).
 
@@ -138,19 +142,13 @@ The play area in tetris is 10x20\. There are 2 blocks above the top row so that 
 
 The well is the fixed blocks in the game. A tetromino is fixed to the well when it lands on the bottom of the play area or another tetromino.
 
-
-
 #### Pacing
 
 Every frame, the current tetromino drops down by one block due to "gravity".
 
-
-
 #### Controlling the tetromino
 
 The network has the opportunity to make one move per frame. This is done in addition to the gravity drop. The following 7 moves are legal:
-
-
 
 *   move left
 *   move right
@@ -161,8 +159,6 @@ The network has the opportunity to make one move per frame. This is done in addi
 *   no action
 
 #### Scoring
-
-
 
 Points are scored when a line is cleared. If multiple lines are cleared at once, the reward is greater.
 
@@ -260,8 +256,6 @@ My conclusion is that while the mutation parameters may have an impact, they are
 
 ## Conclusion
 
-
-
 This experiment has shown that the mutation parameters have a fairly minor impact on EA performance.  
 
 I believe there are three avenues within EA for dramatic improvement of performance:  
@@ -269,8 +263,6 @@ I believe there are three avenues within EA for dramatic improvement of performa
 1.  Implement a crossover function so that features may be shared between networks
 2.  Don't just take the best 500 - allow a chance for worse performing networks to survive to allow the solution to escape local minima
 3.  Abandon the fully connected neural network and implement a more complex architecture
-
-
 
 New blog post to follow with results of the next experiment.
 
