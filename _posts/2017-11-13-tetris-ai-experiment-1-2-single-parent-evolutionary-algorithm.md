@@ -19,17 +19,17 @@ tags:
 
 ## Abstract (why not make it formal)
 
-In this experiment, I implement an evolutionary algorithm with no crossover to evolve a neural network with the intention of having it learn to play tetris. I assess the results of my evolutionary algorithm applied to learning tetris. The results show the impact of a high occurrence of mutations(χ) and a high standard deviation for mutations(σ)
+In this experiment, I implement an evolutionary algorithm with no crossover to evolve a neural network with the intention of having it learn to play tetris. I assess the results of my evolutionary algorithm applied to learning tetris. The results show the impact of a high occurrence of mutations(χ) and a high standard deviation for mutations(σ).
 
-[![illustration of machine playing tetris]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)
-
-All the code is available [on github](https://github.com/cohen990/evolution-of-tetris/tree/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30)
+Source code is available [on github](https://github.com/cohen990/evolution-of-tetris/tree/3147c87c84aafce0d3ed21d9b21b0b0ebae92a30)
 
 ## Introduction
 
 ### Why?
 
 I have been experimenting with artificial intelligence. I was looking for a game. Ideally something with visual output so that I could see the results of my experiments visually. I was inspired to do this by a series of videos I found on youtube about using an evolutionary algorithm to train simple walkers [available here](https://www.youtube.com/watch?v=GOFws_hhZs8&ab_channel=carykh). I have previously looked into AI [here](https://github.com/cohen990/NeuralNetworkTutorial) and [here](https://github.com/cohen990/Coursera); this is the first time I've seen any notable results.
+
+[![illustration of machine playing tetris]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/tetris.png)
 
 ### Theoretical Background
 
@@ -39,9 +39,9 @@ Neural networks are used as an analogy for the decision making pathways in a bra
 
 [![diagram of fully connected neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png)
 
-A neural network can have an arbitrary number of hidden layers. The advantage of having multiple layers is that higher order features can be understood by the network. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
+A network is structured in layers. Typically, an input layer, any number of hidden layer and an output layer. The advantage of having multiple layers is that higher order features can be understood by the network. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
 
-My network is structured in three layers. The input layer, the hidden layer and the output layer. This architecture was chosen for its simplicity, since this is the first experiment. Although it may be beneficial to incorporate a more complex architecture if this experiment fails.
+My network has three layers. An input layer, a hidden layer and an output layer. This architecture was chosen for its simplicity, since this is the first experiment. Although it may be beneficial to incorporate a more complex architecture if this experiment fails.
 
 In a fully connected neural network, such as the one I implemented, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
 
