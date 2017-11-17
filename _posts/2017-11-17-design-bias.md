@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: software-design-bias
 title: Software Design Bias
-date: 2017-11-17 05:00:00 +00:00
+date: 2017-11-17 22:00:00 +00:00
 author: Sandro Mancuso
 image:
    src: /assets/img/custom/blog/2017-11-17-software-design_bias.png
