@@ -41,7 +41,7 @@ Neural networks are used as an analogy for the decision making pathways in a bra
 
 A network is structured in layers. Typically, an input layer, any number of hidden layer and an output layer. The advantage of having multiple layers is that higher order features can be understood by the network. For example, if we consider a neural network for analysing images: The first hidden layer can combine the raw data and perhaps understand that a straight line or a corner is a feature in an image. The second hidden layer may be able to combine two straight lines and understand that parallel lines are a feature or combine a straight line and a corner and understand hockey-stick shapes.
 
-My network has three layers. An input layer, a hidden layer and an output layer. This architecture was chosen for its simplicity, since this is the first experiment. Although it may be beneficial to incorporate a more complex architecture if this experiment fails.
+My network has three layers. An input layer, a hidden layer and an output layer. This architecture was chosen for its simplicity, since this is the first experiment. Although it may be beneficial to incorporate a more complex architecture in a future experiment.
 
 In a fully connected neural network, such as the one I implemented, every node in a layer is connected to every node in the following layer. Each node holds a value which is calculated from the previous layer.
 
@@ -91,7 +91,7 @@ I'm using a sigmoid function for my activation function ([here](https://github.c
 
 [![diagram of weights and biases in a neural network]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)]({{site.baseurl}}/assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/weights-biases.jpg)
 
-Each connection in a neural network has a weight. It is factored in to the calculation of the value of the node it is linking to. Each node, not including the input layer, has a bias. 
+Each connection in a neural network has a weight. It is factored in to the calculation of the value of the node it is linking to. Each node, not including the input layer, has a bias. The initial weights and biases are usually randomly assigned. This gives a good place for the network to start.
 
 The network is defined by the structure of the layers, the connections between them and their weights and biases. The structure and connections remain constant throughout an experiment but the weights and the biases will change.
 
@@ -126,7 +126,7 @@ Here is a more detailed explanation of [standard deviation](https://en.wikipedia
 
 ### Fitness Function
 
-A key point of EA is evaluating the performance of a network. This can be done with a fitness function.
+A key point of EA is evaluating the performance of a network. A fitness function is used to provide a numeral value for the performance of a network. The fitness function I use is described further down.
 
 ### The Game
 
