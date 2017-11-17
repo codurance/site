@@ -1,6 +1,6 @@
 ---
 author: Mashooq Badar 
-date: 2017-11-15 08:00:00 +00:00
+date: 2017-11-17 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: fractured-skill-compartmentalising-software-development 
