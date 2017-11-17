@@ -62,9 +62,11 @@ The output layer is read in order to provide the output result of the neural net
 A regression problem is typically the first you will learn to solve as the simple examples are very easy to understand.
 
 If a network is trying to solve a regression problem, that means it is trying to approximate an unknown function. e.g. 
+
 ```
 f(x) => x^2 + 3x + 2
 ```
+
 The weights and biases in the network will typically be adjusted using supervised learning and a training set (a set of values with known input and output) and eventually, the network will be a close approximation to the unknown original function. This is a powerful technique but is not used in this experiment.
 
 Regression problems that I have encountered only have 1 output node and that value is the approximation of the output value of the function. There may be more complex architectures but I am not aware of them.
