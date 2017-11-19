@@ -129,7 +129,7 @@ company-contact:
    title: Contact us
 company-contact-form:
    title: Get In Touch
-   subtitle: Call us to our office at <b>London</b> on +44 207 4902967 or <b>Barcelona</b> on +34 689 723 737, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
+   subtitle: Call our <b>London</b> office at +44 207 4902967 and our <b>Barcelona</b> one at +34 689 723 737, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
    email_placeholder: Email
    name_placeholder: Name
    text_placeholder: Type your message here...
