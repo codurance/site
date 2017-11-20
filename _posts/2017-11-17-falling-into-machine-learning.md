@@ -1,6 +1,6 @@
 ---
 author: Sergio Rodrigo Royo
-date: 2017-11-19 08:00:00 +00:00
+date: 2017-11-21 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: falling-into-machine-learning
@@ -10,7 +10,7 @@ canonical:
     name: my personal blog
     href: http://srodrigo.me/falling-into-machine-learning/
 image:
-    src: /assets/img/custom/blog/2017-11-19-falling-into-machine-learning.png
+    src: /assets/img/custom/blog/2017-11-21-falling-into-machine-learning.png
     attribution:
       text: by Alex Knight
       href: https://unsplash.com/photos/2EJCSULRwC8
