@@ -3,6 +3,7 @@ author: Dan Cohen
 date: 2017-11-13 08:00:00 +00:00
 layout: post
 asset-type: post
+description: Training a neural network to play tetris using an evolutionary algorithm
 slug: tetris-ai-single-parent-evolutionary-algorithm
 title: "Tetris AI, Experiments 1 & 2: Single Parent Evolutionary Algorithm"
 canonical:
