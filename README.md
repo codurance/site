@@ -7,28 +7,36 @@ You can serve the site through [docker](#installing-if-you-like-docker) or [nati
 ### Installing if you like Docker
 
 ##### TL;DR
-1. [install docker](https://www.docker.com/community-edition)
-- `docker build --tag codurance-site:local -f ./Dockerfile-local .`
-- ``docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local``
+1. [Install docker](https://www.docker.com/community-edition)
+1. [Install docker compose](https://docs.docker.com/compose/install/) (on Mac and Windows it comes with docker)
+
+Build image:
+
+    docker-compose build
+
+Run container:
+
+    docker-compose up
+
+Stop and remove container:
+    
+    docker-compose down
+
 
 ##### More details
 
-You need to execute the following command to prepare an image and run a container:
+You need to do this only once - this builds the container with all the dependencies for running the site:
+    
+    docker-compose build
 
-```
-# you need to do this only once - this builds the container with all the dependencies for running the site
-docker build --tag codurance-site:local -f ./Dockerfile-local .
-```
-```
-# you need to run this every time you want to stand up the local server - it should watch for changes in the local files automatically though
-docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local 
-```
+Run this every time you want to stand up the local server - it should watch for changes in the local files automatically though:
+
+    docker-compose up
 
 If you want to run a different rake target on the container start use:
 
-```
-docker run -i -t -v `pwd`:/site -p 4000:4000 -e RAKE_TARGET="your_target" codurance-site:local
-```
+    docker-compose run site <command>
+
 ----
 
 ### Installing if you like ruby
