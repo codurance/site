@@ -5,6 +5,7 @@ layout: post
 asset-type: post
 slug: falling-into-machine-learning
 title: Falling into Machine Learning
+description: Discovering Machine Learning
 canonical:
     name: my personal blog
     href: http://srodrigo.me/falling-into-machine-learning/
