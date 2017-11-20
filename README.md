@@ -25,17 +25,23 @@ Stop and remove container:
 
 ##### More details
 
-You need to do this only once - this builds the container with all the dependencies for running the site:
+You need to do this only once - this builds the image with all the dependencies for running the site:
     
     docker-compose build
 
-Run this every time you want to stand up the local server - it should watch for changes in the local files automatically though:
+Run this every time you want to stand up the local server inside the container- it should watch for changes in the local files/folders mounted to the container automatically:
 
     docker-compose up
 
-If you want to run a different rake target on the container start use:
+Run this if you want to run the whole site (not just the latest posts):
+
+    docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
+
+If you want to start the container with a different command use:
 
     docker-compose run site <command>
+
+If you change the project dependencies (Gemfile) then rebuild the image again.
 
 ----
 
