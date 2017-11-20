@@ -401,3 +401,15 @@
     <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p> 
     <p>Outside of work Terry enjoys travelling, mountain biking and has recently started renovating a farm in rural France (even though he knows nothing about building….yet!)</p>
   github: terrybalfourcodurance 
+
+- id: danielperez 
+  name: Daniel Pérez 
+  image: /assets/img/custom/team/daniel_perez.jpg
+  role: Apprentice 
+  fullDescription:
+    <p>At the age of twelve Daniel knew that he wanted to work with something related to computers. At nineteen he started studying Software Development at University of Girona.</p>
+    <p>After he started attending the Barcelona Software Craftsmanship community he discovered many areas to improve in his software development skillset.</p>
+    <p>He likes to learn new things and improve himself every day by going to coding dojos, reading books and attending talks related to his profession.</p>
+    <p>In his free time he likes to play board games, video games and basketball.</p>
+  twitter: DaniArchel
+  github: Archel 
