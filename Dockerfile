@@ -26,3 +26,4 @@ ENV LC_ALL en_US.UTF-8
 
 CMD bundle exec rake serve
 EXPOSE 4000
+
