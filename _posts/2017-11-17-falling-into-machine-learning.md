@@ -24,6 +24,7 @@ One day, I ended up reading about Golang and Python. I noticed someone was menti
 
 ## What can I do with Machine Learning?
 Machine Learning can sound like a mysterious thing, but we actually see it every day. The amount of applications is countless:
+
 * How do Amazon or Netflix know what you like, to make recommendations?
 * What’s behind those self-driving cars?
 * Is it possible to automate financial trading?
@@ -42,6 +43,7 @@ As a multidisciplinary field, there are a lot of areas of Computer Science and M
 Programming is a must. As Machine Learning practitioner, you will usually be doing more hands-on work than a data scientist, who will be more focused on data analysis. There is a thin line between the two though, and you could even be performing both roles at the same time, specially when working on your own. Proficiency in at least one general-purpose programming language is needed in order to build the machine learning bits, and full applications around them for users.
 
 Machine Learning is specially heavy on maths. Just to start with, you will need to have some idea about:
+
 * Linear Algebra
 * Probability
 * Statistics
