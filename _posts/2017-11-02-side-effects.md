@@ -6,8 +6,12 @@ layout: post
 asset-type: post
 slug: side-effects
 title: Side effects
+description: Functional programming is based on the premise that your functions should not have side effects, but what is a side effect?
+canonical:
+  name: Christian's personal blog
+  href: http://panavtec.me/functional-programming-notes-side-effects
 image:
-    src: /assets/img/custom/blog/2017-11-02-side-effects.jpg
+  src: /assets/img/custom/blog/2017-11-02-side-effects.jpg
 tags:
 - functional programming
 - scala
