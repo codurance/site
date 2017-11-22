@@ -31,7 +31,7 @@ Machine Learning can sound like a mysterious thing, but we actually see it every
 * What about weather forecasts?
 * How does the Google Search Engine work?
 * Can machines help us improve healthcare?
-* What made Siri or Alexa be able to process natural language?
+* What gives Siri and Alexa the ability to process natural language?
 
 And these are only a few examples. The use cases of Machine Learning are left up to imagination.
 
