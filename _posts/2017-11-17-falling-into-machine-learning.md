@@ -42,7 +42,7 @@ As a multidisciplinary field, there are a lot of areas of Computer Science and M
 
 Programming is a must. As Machine Learning practitioner, you will usually be doing more hands-on work than a data scientist, who will be more focused on data analysis. There is a thin line between the two though, and you could even be performing both roles at the same time, specially when working on your own. Proficiency in at least one general-purpose programming language is needed in order to build the machine learning bits, and full applications around them for users.
 
-Machine Learning is specially heavy on maths. Just to start with, you will need to have some idea about:
+Machine Learning is especially heavy on maths. Just to start with, you will need to have some idea about:
 
 * Linear Algebra
 * Probability
