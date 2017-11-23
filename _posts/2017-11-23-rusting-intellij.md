@@ -1,3 +1,21 @@
+---
+author: Dan Cohen
+date: 2017-11-23 08:00:00 +00:00
+layout: post
+asset-type: post
+description: A guide to setting up IntelliJ as a rust environment
+slug: rusting-intellij 
+title: Setting up IntelliJ for rust
+canonical:
+    name: hacking dan
+    href: banana
+image:
+    src: banana 
+tags:
+- rust
+- intellij
+---
+
 #setting up intellij for rust
 
 my environment
