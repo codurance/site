@@ -1,6 +1,6 @@
 ---
 author: Sergio Rodrigo Royo
-date: 2017-11-22 08:00:00 +00:00
+date: 2017-11-24 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: falling-into-machine-learning
