@@ -13,7 +13,7 @@ tags:
 - vscode
 ---
 
-This post is a part of the series on different ways of setting up your Rust development environment. So far we've covered [IntelliJ], it's time for VSCode.
+This post is a part of the upcoming series on different ways of setting up your Rust development environment. It's time for VSCode.
 
 While on Linux VSCode with the Rust plugin seems to work more or less out of the box, on a Mac I needed to spend some time configuring it.
 
@@ -47,10 +47,7 @@ cargo install clippy rustfmt rustsym
 Now finally, for the VSCode itself, press `cmd-p` and `ext install vscode-rust`. I'm using the new `Rust` extension as `Rusty Code` has been discontinued.
 
 If you're lucky - that's it, you should have working completion and highlighting in Rust files.
-If not and you're greeted by this message: 
-
-[alt you have chosen RLS mode but neither RLS executable path is pecified nor rustup is installed]
-- we need to get the extension to know your setup a bit:
+If not and you're greeted by this message: `You have chosen RLS mode but neither RLS executable path is pecified nor rustup is installed` - we need to get the extension to get to know your setup a bit:
 
 In VSCode go to `Settings` using `cmd-,` and put the following config elements there:
 
@@ -70,8 +67,8 @@ In VSCode go to `Settings` using `cmd-,` and put the following config elements t
 ```
 As the paths in the config need to be absolute, remember to adjust to your situation (system username) accordingly.
 
-Now when you reload and start editing a Rust file you should see [RLS: Analysis finished] on the bottom bar and the completion and highlighting should all work. Yay !
+Now when you reload and start editing a Rust file you should see `RLS: Analysis finished` on the bottom bar and the completion and highlighting should all work. Yay !
 
-Any questions ? Ask on http://users.rust-lang.org/ and ping me the link to the post on Twitter (@yourusername) or email it to me cyryl@codurance.com. This way the answer will be visible to everyone in the community.
+Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on [Twitter](https://twitter.com/cyplo) or email it to me at [cyryl@codurance.com](mailto:cyryl@codurance.com). This way the answer will be visible to everyone in the community.
 
 Keep on Rusting !
