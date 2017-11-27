@@ -8,8 +8,6 @@ title: Setting up IntelliJ for rust
 canonical:
     name: hacking dan
     href: http://blog.hackingdan.com/2017/11/setting-up-intellij-for-rust
-image:
-    src: /assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png
 description: Instructions on how to set up IntelliJ for rust as an IDE conducive to TDD
 tags: 
 - TDD
@@ -52,7 +50,7 @@ If you want your environment to do more, here are some of the tools I use to imp
 1.  `cargo install rustfmt`
 2.  Install the "Save Actions" plugin in IntelliJ
 3.  Configure Save Actions like this
-    *   You want to activate save actions only shortcut - IntelliJ does a lot of autosaving which will result in your code being reformated while you are still typing it if you use activate on save
+    *   You want to activate save actions on shortcut - IntelliJ does a lot of autosaving which will result in your code being reformated while you are still typing it if you use activate on save
     *   If you use the VIM emulator, `:wa` will not trigger the reformatting - you must use the save shortcut
 4.  (Optional) Rebind the default `ctrl+shift+s` shortcut to `ctrl+s` for more convenience
 
