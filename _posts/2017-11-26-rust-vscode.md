@@ -23,7 +23,7 @@ First things first though, let's start by installing Rust version manager, rustu
 curl https://sh.rustup.rs -sSf | sh
 ```
 
-We will be using nightly version of rust as to have one version that can compile all of our tools. This is mostly due to `clippy` requiring a nightly compiler.
+We will be using nightly version of rust as to have one version that can compile all of our tools. This is mostly due to [`clippy`](https://github.com/rust-lang-nursery/rust-clippy) requiring a nightly compiler.
 
 ```
 rustup install nightly
