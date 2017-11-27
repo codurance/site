@@ -3,11 +3,11 @@ author: Dan Cohen
 date: 2017-11-26 08:00:00 +00:00
 layout: post
 asset-type: post
-slug: rusting-intellij 
+slug: rusting-IntelliJ 
 title: Setting up IntelliJ for rust
 canonical:
     name: hacking dan
-    href: http://blog.hackingdan.com/2017/11/setting-up-intellij-for-rust
+    href: http://blog.hackingdan.com/2017/11/setting-up-IntelliJ-for-rust
 description: Instructions on how to set up IntelliJ for rust as an IDE conducive to TDD
 tags: 
 - TDD
@@ -93,6 +93,7 @@ Now you have a rust environment capable of
 *   format on save
 *   continuous testing
 
+You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as visual studio code, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
 ## Questions ?
 Any questions ? Ask on https://users.rust-lang.org/ and ping me the link to the post on Twitter or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
 
