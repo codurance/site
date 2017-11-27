@@ -7,7 +7,7 @@ slug: rusting-intellij
 title: Setting up IntelliJ for rust
 canonical:
     name: hacking dan
-    href: http://blog.hackingdan.com/2017/11/tetris-ai-experiment-1-single-parent.html
+    href: http://blog.hackingdan.com/2017/11/setting-up-intellij-for-rust
 image:
     src: /assets/img/custom/blog/2017-11-13-tetris-ai-experiment-1-2-single-parent-evolutionary-algorithm/neural-network.png
 description: Instructions on how to set up IntelliJ for rust as an IDE conducive to TDD
@@ -17,14 +17,13 @@ tags:
 - IntelliJ
 - environments
 ---
-# Setting up IntelliJ for rust
 This post is a part of the upcoming codurance series on different ways of setting up your Rust development environment. This time it's IntelliJ.
 
 ## My Environment
 
-*   Fedora 26
-*   Virtual Box 5.2.0r118431
-*   High Sierra (host OS) v10.13.1
+* Fedora 26
+* Virtual Box 5.2.0r118431
+* High Sierra (host OS) v10.13.1
 
 ## Basic Setup
 
