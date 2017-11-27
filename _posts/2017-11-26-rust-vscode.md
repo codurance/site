@@ -74,7 +74,7 @@ Now when you reload and start editing a Rust file you should see `RLS: Analysis 
 ## Building and testing
 
 VSCode has a system of tasks that we can leverage to run the build and test from within VSCode.
-If you go to `Tasks->Configure tasks it will create an empty `tasks.json` file in your repository.
+If you go to `Tasks->Configure` tasks it will create an empty `tasks.json` file in your repository.
 Change it to the following to allow for `cargo` to be hooked up as your build tool and test runner.
 
 ```
@@ -92,7 +92,7 @@ Change it to the following to allow for `cargo` to be hooked up as your build to
             "problemMatcher": []
         },
         {
-            "label": "run tests",
+            "label": "test",
             "type": "shell",
             "command": "cargo test",
             "group": {
@@ -108,7 +108,7 @@ Change it to the following to allow for `cargo` to be hooked up as your build to
 
 For the native debugger to work we need to install another extension to VSCode called ['LLDB Debugger'](https://github.com/vadimcn/vscode-lldb/blob/master/MANUAL.md). That would be `cmd-p` and `ext install vadimcn.vscode-lldb`.
 
-After reloading VSCode you should be able to set breakpoints on the side gutter and run the program using debugger by pressing `F5`. Choose `LLDB Debugger` as your debugger and you will be greeted with a JSON configuration file in which you need to tell the debugger what is your executable. It may look like this:
+After reloading VSCode you should be able to set breakpoints on the side gutter and run the program using debugger by pressing `F5`. First time doing this will result in the debugger choice window. Choose `LLDB Debugger` as your debugger and you will be greeted with a JSON configuration file in which you need to tell the debugger a few details on your project. It may look like this:
 
 ```
 {
@@ -117,9 +117,8 @@ After reloading VSCode you should be able to set breakpoints on the side gutter 
         {
             "type": "lldb",
             "request": "launch",
-            "lldb.executable": "rust-lldb",
             "name": "Debug",
-            "program": "${workspaceRoot}/target/debug/test12",
+            "program": "${workspaceRoot}/target/debug/name_of_your_executable",
             "args": [],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "build"
@@ -132,7 +131,7 @@ And that should be it !
 
 Now you should be able to set breakpoints and debug through the code.
 
-Start the debugging session by pressing `F5` - this should result in the build proceeding and then the debugger launching.
+Start the debugging session by pressing `F5` again - this should result in the build proceeding and then the debugger launching.
 
 ## Questions ?
 
