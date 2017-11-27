@@ -47,7 +47,7 @@ cargo install clippy rustfmt rustsym
 Now finally, for the VSCode itself, press `cmd-p` and `ext install vscode-rust`. I'm using the new `Rust` extension as `Rusty Code` has been discontinued.
 
 If you're lucky - that's it, you should have working completion and highlighting in Rust files.
-If not and you're greeted by this message: `You have chosen RLS mode but neither RLS executable path is pecified nor rustup is installed` - we need to get the extension to get to know your setup a bit:
+If not and you're greeted by this message: `You have chosen RLS mode but neither RLS executable path is specified nor rustup is installed` - we need to get the extension to get to know your setup a bit:
 
 In VSCode go to `Settings` using `cmd-,` and put the following config elements there:
 
