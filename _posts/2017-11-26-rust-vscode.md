@@ -15,6 +15,8 @@ tags:
 
 This post is a part of the upcoming series on different ways of setting up your Rust development environment. It's time for VSCode.
 
+## Completion and highlighting
+
 While on Linux VSCode with the Rust plugin seems to work more or less out of the box, on a Mac I needed to spend some time configuring it.
 
 First things first though, let's start by installing Rust version manager, rustup.
@@ -68,6 +70,71 @@ In VSCode go to `Settings` using `cmd-,` and put the following config elements t
 As the paths in the config need to be absolute, remember to adjust to your situation (system username) accordingly.
 
 Now when you reload and start editing a Rust file you should see `RLS: Analysis finished` on the bottom bar and the completion and highlighting should all work. Yay !
+
+## Building and testing
+
+VSCode has a system of tasks that we can leverage to run the build and test from within VSCode.
+If you go to `Tasks->Configure tasks it will create an empty `tasks.json` file in your repository.
+Change it to the following to allow for `cargo` to be hooked up as your build tool and test runner.
+
+```
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cargo build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "run tests",
+            "type": "shell",
+            "command": "cargo test",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
+```
+
+## Debugging
+
+For the native debugger to work we need to install another extension to VSCode called ['LLDB Debugger'](https://github.com/vadimcn/vscode-lldb/blob/master/MANUAL.md). That would be `cmd-p` and `ext install vadimcn.vscode-lldb`.
+
+After reloading VSCode you should be able to set breakpoints on the side gutter and run the program using debugger by pressing `F5`. Choose `LLDB Debugger` as your debugger and you will be greeted with a JSON configuration file in which you need to tell the debugger what is your executable. It may look like this:
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "lldb.executable": "rust-lldb",
+            "name": "Debug",
+            "program": "${workspaceRoot}/target/debug/test12",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "build"
+        }
+    ]
+}
+```
+
+And that should be it !
+
+Now you should be able to set breakpoints and debug through the code.
+
+Start the debugging session by pressing `F5` - this should result in the build proceeding and then the debugger launching.
+
+## Questions ?
 
 Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on [Twitter](https://twitter.com/cyplo) or email it to me at [cyryl@codurance.com](mailto:cyryl@codurance.com). This way the answer will be visible to everyone in the community.
 
