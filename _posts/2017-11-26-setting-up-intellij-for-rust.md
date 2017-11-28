@@ -100,6 +100,6 @@ Now you have a rust environment capable of
 
 You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as VSCode, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
 ## Questions ?
-Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on Twitter or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
+Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on [Twitter](https://twitter.com/hackingdandan) or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
 
 Keep on Rusting !
