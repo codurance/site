@@ -38,8 +38,9 @@ There are lots of good options for Rust development. The classics are perhaps CL
 5.  install IntelliJ [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
 6.  install "Rust" plugin from the IntelliJ plugin repositories
 7.  open project in IntelliJ by opening the project directory
+    *   keep an eye on the notifications bar at the top of the editor window
     *   IntelliJ may complain about not finding a cargo project
-    *   try to attach it to the `cargo.toml` in your project root directory
+    *   try to attach it to the `cargo.toml` in your project root directory by following the promps in the notifications panel
     *   This may not get rid of the warning - the plugin should still be working as expected though
 
 There you are - you now have a functional rust environment. With code completion, code generation, syntax highlighting, suggestions and a test runner. Everything you need to get started.  
