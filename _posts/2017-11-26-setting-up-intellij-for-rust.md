@@ -33,7 +33,7 @@ There are lots of good options for Rust development. The classics are perhaps CL
     *   this will give you cargo, rustc, rustup etc
     *   follow instructions for default installation
     *   remember to set up your current shell (instructions at end of installation), if it doesn't work, just reboot your machine
-3.  cd to parent directory you want for your project
+3.  `cd` to parent directory you want for your project
 4.  `cargo new my-project`
 5.  install IntelliJ [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
 6.  install "Rust" plugin from the IntelliJ plugin repositories
@@ -66,7 +66,7 @@ Clippy is... clippy but for rust. It will make suggestions about improvements to
 
 1.  `rustup toolchain install nightly`
 2.  `rustup run nightly cargo install clippy`
-3.  cd to root directory of your project
+3.  `cd` to root directory of your project
 4.  `rustup run nightly cargo clippy`
 
 ### Watch tasks ([cargo-watch](https://crates.io/crates/cargo-watch))
@@ -74,7 +74,7 @@ Clippy is... clippy but for rust. It will make suggestions about improvements to
 When I'm writing code - I hate having to flip to the terminal to compile and run the tests and ensure it's all good. I like to use watch tasks to continuously run my tests. Rust has an option for this.  
 
 1.  `cargo install cargo-watch`
-2.  cd to root directory of your project
+2.  `cd` to root directory of your project
 3.  `cargo watch -x test`
 
 ### Integrating watch and clippy into IntelliJ
@@ -98,8 +98,8 @@ Now you have a rust environment capable of
 * format on save
 * continuous testing
 
-You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as visual studio code, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
+You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as VSCode, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
 ## Questions ?
-Any questions ? Ask on https://users.rust-lang.org/ and ping me the link to the post on Twitter or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
+Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on Twitter or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
 
 Keep on Rusting !
