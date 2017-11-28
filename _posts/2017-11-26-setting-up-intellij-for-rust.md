@@ -17,6 +17,9 @@ tags:
 ---
 This post is a part of the upcoming codurance series on different ways of setting up your Rust development environment. This time it's IntelliJ.
 
+## Why IntelliJ?
+There are lots of good options for Rust development. The classics are perhaps CLion and vim/emacs. IntelliJ has one important feature that none of these have. Refactoring. As you might expect, the refactoring tools are not as fully featured as those for Java - but they're there and nobody else has them.
+
 ## My Environment
 
 * Fedora 26
