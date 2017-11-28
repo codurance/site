@@ -4,11 +4,11 @@ date: 2017-11-26 08:00:00 +00:00
 layout: post
 asset-type: post
 slug: rusting-IntelliJ 
-title: Setting up IntelliJ for rust
+title: Setting up IntelliJ for Rust
 canonical:
     name: hacking dan
     href: http://blog.hackingdan.com/2017/11/setting-up-IntelliJ-for-rust
-description: Instructions on how to set up IntelliJ for rust as an IDE conducive to TDD
+description: Instructions on how to set up IntelliJ for Rust as an IDE conducive to TDD
 tags: 
 - TDD
 - rust
@@ -29,7 +29,7 @@ There are lots of good options for Rust development. The classics are perhaps CL
 ## Basic Setup
 
 1.  [invent the universe](https://www.youtube.com/watch?v=7s664NsLeFM), followed by computers and the internet
-2.  install rust [https://www.rust-lang.org/en-US/install.html](https://www.rust-lang.org/en-US/install.html)
+2.  install Rust [https://www.rust-lang.org/en-US/install.html](https://www.rust-lang.org/en-US/install.html)
     *   this will give you cargo, rustc, rustup etc
     *   follow instructions for default installation
     *   remember to set up your current shell (instructions at end of installation), if it doesn't work, just reboot your machine
@@ -43,11 +43,11 @@ There are lots of good options for Rust development. The classics are perhaps CL
     *   try to attach it to the `cargo.toml` in your project root directory by following the promps in the notifications panel
     *   This may not get rid of the warning - the plugin should still be working as expected though
 
-There you are - you now have a functional rust environment. With code completion, code generation, syntax highlighting, suggestions and a test runner. Everything you need to get started.  
+There you are - you now have a functional Rust environment. With code completion, code generation, syntax highlighting, suggestions and a test runner. Everything you need to get started.  
 
 ## Advanced Setup
 
-If you want your environment to do more, here are some of the tools I use to improve the work flow in rust and IntelliJ.
+If you want your environment to do more, here are some of the tools I use to improve the work flow in Rust and IntelliJ.
 
 ### Format on save ([rustfmt](https://crates.io/crates/rustfmt/))
 
@@ -62,7 +62,7 @@ If you want your environment to do more, here are some of the tools I use to imp
 
 ![picture of clippy from microsoft word](http://images.dailytech.com/nimage/19706_Clippy3.jpg)
 
-Clippy is... clippy but for rust. It will make suggestions about improvements to be made to your code. The only difference between clippy and rust's clippy is that rust's clippy is actually useful.  
+Clippy is... clippy but for Rust. It will make suggestions about improvements to be made to your code. The only difference between clippy and Rust's clippy is that Rust's clippy is actually useful.  
 
 1.  `rustup toolchain install nightly`
 2.  `rustup run nightly cargo install clippy`
@@ -87,7 +87,7 @@ This is all well and good, but the watch tasks and clippy aren't integrated into
 
 ## Done!
 
-Now you have a rust environment capable of  
+Now you have a Rust environment capable of  
 
 * refactoring
 * syntax highlighting
@@ -98,7 +98,7 @@ Now you have a rust environment capable of
 * format on save
 * continuous testing
 
-You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as VSCode, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
+You should be aware that IntelliJ does not support Rust debugging. If that's important to you, consider using another IDE such as VSCode, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
 ## Questions ?
 Any questions ? Ask on [https://users.rust-lang.org/](https://users.rust-lang.org/) and ping me the link to the post on [Twitter](https://twitter.com/hackingdandan) or email it to me at dan.cohen@codurance.com. This way the answer will be visible to everyone in the community.
 
