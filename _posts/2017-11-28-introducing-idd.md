@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: introducing-idd
 title: Introducing Interaction-Driven Design - Part I
-date: 2017-11-20 05:00:00 +00:00
+date: 2017-11-28 05:00:00 +00:00
 author: Sandro Mancuso
 description: 
 image:
-   src: /assets/img/custom/blog/2017-11-17-software-design_bias.png
+   src: /assets/img/custom/blog/2017-11-28-introducting-idd/IDD.png
 tags:
 - craftsmanship
 - software design
@@ -46,6 +46,10 @@ IDD promotes a clear [separation between delivery mechanism and domain model][1]
 
 ### Basic Principles
 
+<center>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-28-introducting-idd/IDD.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+</center>
+<br/> 
 
 
 ### IDD Domain Model Building blocks
