@@ -88,13 +88,14 @@ This is all well and good, but the watch tasks and clippy aren't integrated into
 
 Now you have a rust environment capable of  
 
-*   syntax highlighting
-*   code completion
-*   code generation
-*   error highlighting
-*   linting suggestions
-*   format on save
-*   continuous testing
+* refactoring
+* syntax highlighting
+* code completion
+* code generation
+* error highlighting
+* linting suggestions
+* format on save
+* continuous testing
 
 You should be aware that IntelliJ does not support rust debugging. If that's important to you, consider using another IDE such as visual studio code, CLion, vim or emacs. If you are attached to IntelliJ then you can use `rust-lldb` (installed by default with rustup) from the terminal.
 ## Questions ?
