@@ -16,6 +16,11 @@ author_dir: publications/author
 sitename: "Codurance"
 subtitle: "craft at heart"
 email: "hello@codurance.com"
+office:
+  bcn:
+    phone: +34 689 723 737
+  lnd:
+    phone: +44 207 4902967
 
 tag_page_layout: tag_page
 tag_page_dir: publications/tag

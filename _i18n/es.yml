@@ -2,6 +2,7 @@ office:
    email: hello@codurance.es
    lat: "41.387745"
    lon: "2.159348"
+   central: Londres
 analytics:
   google-id: UA-46289079-3
 sections:
@@ -129,7 +130,8 @@ company-contact:
    title: Contacto
 company-contact-form:
    title: Contáctanos
-   subtitle: Llámanos a nuestra oficina de <b>Londres</b> +44 207 4902967 o <b>Barcelona</b> +34 689 723 737, escríbenos a <a href="mailto:hello@codurance.es">hello@codurance.es</a>, o utiliza el siguiente formulario para enviarnos un mensaje.
+   subtitle: También puedes utilizar el siguiente formulario para enviarnos un mensaje o directamente a nuestro correo electrónico
+   offices_introduction: Por teléfono a nuestras oficinas
    email_placeholder: Correo electrónico
    name_placeholder: Nombre
    text_placeholder: Escribe tu mensaje aquí...

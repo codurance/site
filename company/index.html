@@ -154,7 +154,13 @@ title: Company
           <div class="col-md-6 col-sm-6">
             <!-- Business Hours -->
             <h3>{% t company-contact-form.title %}</h3>
-            <p>{% t company-contact-form.subtitle %}</p><br/>
+            <p>{% t company-contact-form.offices_introduction %}:
+                <ul>
+                    <li><b>{%t office.central %}</b>: {{ site.office.lnd.phone }}</li>
+                    <li><b>Barcelona</b>: {{ site.office.bcn.phone }}</li>
+                </ul>
+            </p>
+            <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
             <div class="row">
               <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
                 <input type="hidden" name="_next" value="/aboutus/thanks"/>

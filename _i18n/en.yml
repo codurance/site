@@ -2,6 +2,7 @@ office:
    email: hello@codurance.com
    lat: "51.523876"
    lon: "-0.100533"
+   central: London
 analytics:
   google-id: UA-46289079-1
 sections:
@@ -129,7 +130,8 @@ company-contact:
    title: Contact us
 company-contact-form:
    title: Get In Touch
-   subtitle: Call our <b>London</b> office at +44 207 4902967 and our <b>Barcelona</b> one at +34 689 723 737, email us at <a href="mailto:hello@codurance.com">hello@codurance.com</a>, or use the form below to send us a message.
+   subtitle: Use the form below to send us a message or send it directly our email
+   offices_introduction: Please, contact our offices
    email_placeholder: Email
    name_placeholder: Name
    text_placeholder: Type your message here...
