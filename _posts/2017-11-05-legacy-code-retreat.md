@@ -17,7 +17,7 @@ tags:
 
 # Introduction
 
-We recently hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by Cyryl Płotnicki and [Robert Firek][9], with Daniel and myself helping and participating throughout the day. We had a very good number of attendees, especially given the fact that the event started very early on a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different person to pair with.  
+We recently hosted our very first Legacy Coderetreat here at Codurance London. The event was organised by [Cyryl Płotnicki][11] and [Robert Firek][9], with Daniel and myself helping and participating throughout the day. We had a very good number of attendees, especially given the fact that the event started very early on a Saturday morning. The event lasted the full day, split into 45min sessions, with a few minutes break between them. In the beginning of each session, the participants would choose a different person to pair with.  
 
 Refactoring legacy code when introducing new features is an important skill which requires practice. The goal of the event was to learn some refactoring techniques by working with a piece of legacy code, [Trivia Kata][1], with each session introducing new challenges. For example, how can we be confident enough to change a code so coupled and full of [Code Smells][2] that writing Unit Tests becomes impractical? Each session would introduce a technique to deal with a situation like this and let people familiarize themselves with it via exercises. Then, after the session finished, a 10min retrospective would take place and participants had the opportunity to give feedback and share what they learnt.
 
@@ -107,3 +107,5 @@ I would like to thank everyone who attended the event and made it successful and
 [8]:https://www.meetup.com/london-software-craftsmanship/events/244321442
 [9]:https://codurance.com/publications/author/robert-firek/
 [10]:https://www.meetup.com/Barcelona-Software-Craftsmanship/events/244080253/
+[11]:https://codurance.com/publications/author/cyryl-płotnicki/
+
