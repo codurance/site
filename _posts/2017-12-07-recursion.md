@@ -2,7 +2,7 @@
 layout: post
 name: 2017-12-07-recursion
 title: Recursion
-date: 2017-12-03 07:00:00 +00:00
+date: 2017-12-07 07:00:00 +00:00
 author: Christian Panadero Martinez
 image:
    src: /assets/img/custom/blog/2017-12-07-recursion.jpg
