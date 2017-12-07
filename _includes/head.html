@@ -2,7 +2,7 @@
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Our team of dedicated software craftsmen provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.">
+<meta name="description" content="Our team of dedicated software craftspeople provide consultancy, software development, and training services to clients seeking high quality development processes and software solutions.">
 <meta name="author" content="Codurance Ltd">
 
 <!-- Open Graph Protocol  -->
@@ -10,7 +10,7 @@
 <meta property="og:site_name" content="Codurance" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftsmen provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
 <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-<meta property="og:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}/assets/img/custom/codurance.png{% endif %}" />
+<meta property="og:image" content="{% if page.image.src %}{{ page.image.src }}{% else %}/assets/img/custom/codurance.png{% endif %}" />
 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
 <meta property="fb:app_id" content="1988440268098611" />
 
@@ -19,7 +19,7 @@
 <meta name="twitter:site" content="@codurance" />
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}" />
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftsmen provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
-<meta name="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}/assets/img/custom/codurance.png{% endif %}" />
+<meta name="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{"/assets/img/custom/codurance-logo-artwork.png" | prepend: site.url }}{% endif %}" />
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{ '/assets/img/custom/favicon.ico' | prepend: site.baseurl }}">
