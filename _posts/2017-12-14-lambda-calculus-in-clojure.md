@@ -19,7 +19,7 @@ In this post, we are going to create a set of building blocks, using lambda expr
 
 ## Church Encoding
 
-A matematician called [Alonzo Church](https://en.wikipedia.org/wiki/Alonzo_Church) was able to encode data and operators in Lambda Calculus. **Church encoding** is the name of this way of building primitive terms and operations, converting them into [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function) that can be combined to create more complex expressions.
+A mathematician called [Alonzo Church](https://en.wikipedia.org/wiki/Alonzo_Church) was able to encode data and operators in Lambda Calculus. **Church encoding** is the name of this way of building primitive terms and operations, converting them into [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function) that can be combined to create more complex expressions.
 
 There are different primitives that can be constructed in Church Encoding:
 
