@@ -6,8 +6,11 @@ title: Setting up Rust development environment using VSCode on a Mac
 description: A guide to setting up VSCode as the central point of your Rust development experience
 date: 2017-11-26 00:00:00 +00:00
 author: Cyryl Płotnicki
+canonical:
+    name: Adventurous Computing
+    href: https://blog.cyplo.net/posts/2017/11/rust-vscode-mac.html
 image:
-   src: 
+    src: /assets/img/custom/blog/vscode-rust.jpg
 tags:
 - rust
 - vscode
