@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: introducing-idd
 title: Introducing Interaction-Driven Design
-date: 2017-11-28 05:00:00 +00:00
+date: 2017-12-08 00:05:00 +00:00
 author: Sandro Mancuso
 description: 
 image:
-   src: /assets/img/custom/blog/2017-11-28-introducting-idd/IDD.png
+   src: /assets/img/custom/blog/2017-12-08-introducting-idd/IDD.png
 tags:
 - craftsmanship
 - software design
@@ -40,7 +40,7 @@ IDD puts together a cohesive set of new and existing methods to create a more pr
 IDD focus on the design and development of the functional aspects of a system, including architecture, macro and micro design.
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-10-23-outside-in-design/architecture_macro_micro_design.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-12-08-introducting-idd/architecture_macro_micro_design.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
 </center>
 <br/>  
 
@@ -49,7 +49,7 @@ IDD focus on the design and development of the functional aspects of a system, i
 IDD focus on the interactions between actors and the application, and between the different behaviours inside the application. Internal behaviour is discovered by decomposing behaviour triggered by actors. The process is repeated for each behaviour identified, breaking them down into smaller behaviours until there is no smaller behaviour. Course-grain behaviours become clients for fine-grain behaviours. Each behaviour is created to satisfy the needs of an existing behaviour or external need. This is what we call _outside-in design_. 
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-28-introducting-idd/business_flow.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-12-08-introducting-idd/business_flow.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/>  
 
@@ -72,19 +72,19 @@ The term _functional area_ is used to define an area of our business domain. Exa
 
 Regardless of the level, behaviour discovery is mostly done outside-in. The only difference is the level of abstraction used. 
 
-For a Cross-Application Feature in a micro services environment,  we would first choose a few major flows (user journeys, business flows) triggered by actors. For each one of the flows, we do the following:
+For a Cross-Application Feature in a micro services environment, we would first choose a few major flows (user journeys, business flows) triggered by actors. For each one of the flows, we do the following:
 
 1. Define the application (service) that will handle the actor’s request. This is the application that will “own” the cross-application feature. 
 2. We then decompose the main behaviour into smaller behaviours, making sure they are all at a similar level of abstraction. 
 3. Next step is to define which functional areas will own the smaller behaviours found. 
 4. If a suitable functional area already exists, the behaviour is added to it. If no suitable functional area exists, we need to create one as there is probably a domain concept missing in our domain. 
-5. Repeat the process for each smaller behaviour until we can’t decompose more. 
+5. Repeat the process for each smaller behaviour until we can’t decompose more, or when it arrives to a level of abstraction that is lower than the one being used. 
 
 This process should be done collaboratively with the whole team, including product owners and testers. The best way to represent this discovery process is drawing sequence diagrams on a white board. The functional areas discovered after exploring a few major flows can be consolidated and will become natural candidates to become independent applications (or services). 
 
 **[NEEDS A SEQUENCE DIAGRAM]** Should take the checkout example from Mango.
 
-The same process described above can be used for behaviours at a lower levels, like components. The difference is that instead of talking about high-level behaviour, functional areas, and services, we would be talking about low-level behaviour, classes and methods.
+The same process described above can be used for behaviours at lower levels, like components. The difference is that instead of talking about high-level behaviour, functional areas, and services, we would be talking about low-level behaviour, classes and methods.
 
 More details about behaviour discovery at different levels in separate posts. 
 
@@ -97,7 +97,7 @@ Each theme of work is broken down into features, which are prioritised on the te
 Before committing to a feature, the team must understand how actors will be interacting the application in order to benefit from the feature. A horizontal exploration of the delivery mechanism must be done before dividing a feature in small vertical slices. Feature slicing should be done from the outside to the inside, in other words, from the delivery mechanism to the persistence or integration points. 
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-28-introducting-idd/feature_slicing.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-12-08-introducting-idd/feature_slicing.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
 </center>
 <br/>  
 
@@ -120,7 +120,7 @@ In IDD, we start designing and testing from the input (outside) to the output (i
 IDD aligns design and test-driven development (TDD) to the execution flow. 
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-11-28-introducting-idd/IDD.png" alt=“alignment of execution flow, testing and design” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/img/custom/blog/2017-12-08-introducting-idd/IDD.png" alt=“alignment of execution flow, testing and design” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 
 ## Summary 
