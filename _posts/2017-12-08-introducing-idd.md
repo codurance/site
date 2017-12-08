@@ -77,12 +77,10 @@ For a Cross-Application Feature in a micro services environment, we would first 
 1. Define the application (service) that will handle the actor’s request. This is the application that will “own” the cross-application feature. 
 2. We then decompose the main behaviour into smaller behaviours, making sure they are all at a similar level of abstraction. 
 3. Next step is to define which functional areas will own the smaller behaviours found. 
-4. If a suitable functional area already exists, the behaviour is added to it. If no suitable functional area exists, we need to create one as there is probably a domain concept missing in our domain. 
-5. Repeat the process for each smaller behaviour until we can’t decompose more, or when it arrives to a level of abstraction that is lower than the one being used. 
+4. If a suitable functional area already exists, the behaviour is added to it. If not, we need to create one as there is probably a domain concept missing in our domain. 
+5. Repeat the process for each smaller behaviour until we cannot decompose more, or we arrive to a level of abstraction that is not relevant. 
 
 This process should be done collaboratively with the whole team, including product owners and testers. The best way to represent this discovery process is drawing sequence diagrams on a white board. The functional areas discovered after exploring a few major flows can be consolidated and will become natural candidates to become independent applications (or services). 
-
-**[NEEDS A SEQUENCE DIAGRAM]** Should take the checkout example from Mango.
 
 The same process described above can be used for behaviours at lower levels, like components. The difference is that instead of talking about high-level behaviour, functional areas, and services, we would be talking about low-level behaviour, classes and methods.
 
