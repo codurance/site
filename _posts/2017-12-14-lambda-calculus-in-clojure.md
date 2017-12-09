@@ -15,13 +15,13 @@ tags:
 
 Lambda Calculus is the smallest programming language. As we saw on my [previous post](https://codurance.com/2017/11/09/lambda-calculus-for-mortal-developers/), the only building blocks available are functions, variables and expressions. There are no built-in primitive values or operations. How can we then solve real-world problems using Lambda Calculus?
 
-In this post, we are going to create a set of building blocks, using lambda expressions, to calculate boolean expressions. For this, are going to use [Clojure](https://clojure.org/), which is a dynamic functional language based on Lambda Calculus.
+In this post, we are going to create a set of building blocks, using lambda expressions, to calculate boolean expressions. For this, we are going to use [Clojure](https://clojure.org/), which is a dynamic functional language based on Lambda Calculus.
 
 ## Church Encoding
 
 A mathematician called [Alonzo Church](https://en.wikipedia.org/wiki/Alonzo_Church) was able to encode data and operators in Lambda Calculus. **Church encoding** is the name of this way of building primitive terms and operations, converting them into [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function) that can be combined to create more complex expressions.
 
-There are different primitives that can be constructed in Church Encoding:
+There are a few different primitives that can be constructed in Church Encoding:
 
 * Booleans
 * Integers
@@ -75,13 +75,13 @@ Clojure has built-in anonymous functions, which can be used to simulate function
 * `[x]` is the parameter of the function.
 * `x` is the body of the function.
 
-Does this sound familiar? We could rewrite this expression in Lambda Calculus:
+Does this look familiar? We could rewrite this expression in Lambda Calculus:
 
 ```
 (λx.x)
 ```
 
-Both expressions look quite similar. This is because Clojure is based on Lambda Calculus, so it makes sense for it to have a similar syntax. But, what if we could add some syntactic sugar to the recipe and make Clojure’s anonymous functions even closer to their Lambda Calculus counterparts?
+Both expressions look quite similar. This is because Clojure is based on Lambda Calculus. But, what if we could add some syntactic sugar to the recipe and make Clojure’s anonymous functions even closer to their Lambda Calculus counterparts?
 
 ### Defining a λ-macro
 
@@ -111,7 +111,7 @@ Let’s start with `true` and `false`. As they are reserved words in Clojure, we
     (λ a (λ b b)))
 ```
 
-Notice that we are using `def` instead of `defn`, to define the term, which is a higher-order function (returning a function, in this case). The difference between them is that `defn` will be evaluated every time it’s called, whereas `def` will only be evaluated once. This is not strictly necessary for our purposes, but doing so, we can remark the idea that lambda expressions always return the same result when evaluated.
+Notice that we are using `def` instead of `defn`, to define the term, which is a higher-order function (returning a function, in this case). The difference between them is that `defn` will be evaluated every time it’s called, whereas `def` will only be evaluated once. This is not strictly necessary for our purposes, but doing so, we can reinforce the idea that lambda expressions always return the same result when evaluated.
 
 The boolean operators implementation follows a similar idea to `true` and `false`:
 
