@@ -5,7 +5,7 @@ name: introducing-idd
 title: Introducing Interaction-Driven Design
 date: 2017-12-08 00:05:00 +00:00
 author: Sandro Mancuso
-description: 
+description: Most software projects become very difficult to maintain and evolve after a period of time. Business is constantly complaining that ...
 image:
    src: /assets/img/custom/blog/2017-12-08-introducting-idd/IDD.png
 tags:
