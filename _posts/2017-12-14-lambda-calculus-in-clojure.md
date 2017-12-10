@@ -47,11 +47,39 @@ Apart from primitive values, we need some operators in order to complete a boole
 ```
 and = λp.λq.p q p
 or = λp.λq.p p q
-not = λp.λa.λb.p b a
+```
+
+`and` returns  **q** if **p** is `true`; otherwise, returns **p**, which equals to `false`. We can use the definition of `true` and `false` above to see the substitution in detail:
+
+When p is true:
+```
+p = true = λa.λb.a
+and = λp.λq.p q p = λp.λq.((λa.λb.a)(q p)) = λp.λq.q = q
+```
+
+When p is false:
+```
+p = false = λa.λb.b
+and = λp.λq.p q p = λp.λq.((λa.λb.b)(q p)) = λp.λq.p = p = false
+```
+
+`or` works in a similar way.
+
+```
+not = λp.p false true
+```
+
+Applying the same reasoning, `not` just inverts the value of **p**, returning `false` if **p** is `true`, and `true` otherwise.
+
+The last operator is [Exclusive OR](https://en.wikipedia.org/wiki/Exclusive_or):
+
+```
 xor = λa.λb.a (not b) b
 ```
 
-It’s also possible to define an *if* predicate, similar to the ones we use in most programming languages:
+which follows the same rules as the previous operators.
+
+It’s also possible to define an `if` predicate, similar to the ones we use in most programming languages:
 
 ```
 if = λp.λa.λb.p a b
