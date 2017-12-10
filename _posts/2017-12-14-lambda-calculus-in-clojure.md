@@ -71,7 +71,7 @@ and = λp.λq.p q p = λp.λq.((λa.λb.b)(q p)) = λp.λq.p = p = false
 not = λp.p false true
 ```
 
-Applying the same reasoning, `not` just inverts the value of **p**, returning `false` if **p** is `true`, and `true` otherwise.
+Applying the same reasoning, `not` just inverts the value of **p**, returning `false` if **p** is `true`, and returning `true` otherwise.
 
 The last operator is [Exclusive OR](https://en.wikipedia.org/wiki/Exclusive_or):
 
