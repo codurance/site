@@ -155,9 +155,9 @@ The boolean operators implementation follows a similar idea to `true` and `false
 (def Or
   (λ p (λ q ((p p) q))))
 
-; not = λp.λa.λb.p b a
+; not = λp.λa.λb.p false true
 (def Not
-  (λ p (λ a (λ b ((p b) a)))))
+  (λ p ((p F) T)))
 
 ; xor = λa.λb.a (not b) b
 (def Xor
