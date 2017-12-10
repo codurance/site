@@ -1,7 +1,8 @@
 ---
 layout: post
 name: 2017-12-14-lambda-calculus-in-clojure
-title: Lambda Calculus in Clojure
+title: Lambda Calculus in Clojure (Part 1)
+description: Implementing a Lambda Calculus boolean algebra in Clojure
 date: 2017-12-01 08:00:00 +00:00
 author: Sergio Rodrigo Royo
 layout: post
