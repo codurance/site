@@ -30,7 +30,7 @@ There are a few different primitives that can be constructed in Church Encoding:
 * Lists
 * Tagged unions
 
-Each of these primitives have their own operators, that can be built in a similar way to the primitives. This gives us the basic building blocks for writing programs in Lambda Calculus. For the rest of this post, we are going to focus on Church booleans.
+Each of these primitives have their own operators, that can be built in a similar way to the values of the primitives. This gives us the basic building blocks for writing programs in Lambda Calculus. For the rest of this post, we are going to focus on Church booleans.
 
 ### Church booleans
 
