@@ -135,11 +135,11 @@ Let’s start with `true` and `false`. As they are reserved words in Clojure, we
 ```
 ; true = λa.λb.a
 (def T
-    (λ a (λ b a)))
+  (λ a (λ b a)))
 
 ; false = λa.λb.b
 (def F
-    (λ a (λ b b)))
+  (λ a (λ b b)))
 ```
 
 Notice that we are using `def` instead of `defn`, to define the term, which is a higher-order function (returning a function, in this case). The difference between them is that `defn` will be evaluated every time it’s called, whereas `def` will only be evaluated once. This is not strictly necessary for our purposes, but doing so, we can reinforce the idea that lambda expressions always return the same result when evaluated.
