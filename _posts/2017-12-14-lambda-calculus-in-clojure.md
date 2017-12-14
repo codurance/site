@@ -15,6 +15,7 @@ canonical:
 tags:
 - functional programming
 - lambda calculus
+- clojure
 ---
 
 Lambda Calculus is the smallest programming language. As we saw on my [previous post](https://codurance.com/2017/11/09/lambda-calculus-for-mortal-developers/), the only building blocks available are functions, variables and expressions. There are no built-in primitive values or operations. How can we then solve real-world problems using Lambda Calculus?
