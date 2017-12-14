@@ -56,14 +56,14 @@ or = λp.λq.p p q
 
 `and` returns  **q** if **p** is `true`; otherwise, returns **p**, which equals to `false`. We can use the definition of `true` and `false` above to see the substitution in detail:
 
-When p is true:
+When **p** is true:
 
 ```
 p = true = λa.λb.a
 and = λp.λq.p q p = λp.λq.((λa.λb.a)(q p)) = λp.λq.q = q
 ```
 
-When p is false:
+When **p** is false:
 
 ```
 p = false = λa.λb.b
