@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: a-case-for-outside-in-design
-title: A case for Outside-In Development
+title: A Case for Outside-In Development
 date: 2017-10-23 05:00:00 +00:00
 author: Sandro Mancuso
 image:
