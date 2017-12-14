@@ -9,6 +9,9 @@ layout: post
 asset-type: post
 image:
     src: /assets/img/custom/blog/2017-12-14-lambda-calculus-in-clojure.png
+canonical:
+    name: my personal blog
+    href: http://srodrigo.me/lambda-calculus-in-clojure-part-1/
 tags:
 - functional programming
 - lambda calculus
