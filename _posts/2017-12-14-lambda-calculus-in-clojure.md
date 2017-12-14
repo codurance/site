@@ -9,9 +9,13 @@ layout: post
 asset-type: post
 image:
     src: /assets/img/custom/blog/2017-12-14-lambda-calculus-in-clojure.png
+canonical:
+    name: my personal blog
+    href: http://srodrigo.me/lambda-calculus-in-clojure-part-1/
 tags:
 - functional programming
 - lambda calculus
+- clojure
 ---
 
 Lambda Calculus is the smallest programming language. As we saw on my [previous post](https://codurance.com/2017/11/09/lambda-calculus-for-mortal-developers/), the only building blocks available are functions, variables and expressions. There are no built-in primitive values or operations. How can we then solve real-world problems using Lambda Calculus?
@@ -52,14 +56,14 @@ or = λp.λq.p p q
 
 `and` returns  **q** if **p** is `true`; otherwise, returns **p**, which equals to `false`. We can use the definition of `true` and `false` above to see the substitution in detail:
 
-When p is true:
+When **p** is true:
 
 ```
 p = true = λa.λb.a
 and = λp.λq.p q p = λp.λq.((λa.λb.a)(q p)) = λp.λq.q = q
 ```
 
-When p is false:
+When **p** is false:
 
 ```
 p = false = λa.λb.b
