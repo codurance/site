@@ -3,7 +3,7 @@ layout: post
 name: 2017-12-21-docker-multistage-haskell
 title: Shrinking Haskell Docker images using multi-stage builds
 description: Shrinking Haskell Docker images using multi-stage builds
-date: 2017-12-21 08:00:00 +00:00
+date: 2017-12-20 08:00:00 +00:00
 author: Liam Griffin
 layout: post
 asset-type: post
@@ -13,14 +13,14 @@ canonical:
     name: my personal blog
     href: https://medium.com/@Gryff
 tags:
-- functional programming
 - haskell
 - docker
+- functional programming
 ---
 
 I have recently discovered Docker's new [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/#use-multi-stage-builds) feature. This has been a great help in answering my question of how to reduce the size of my haskell images for deploying, as the main [haskell image](https://hub.docker.com/_/haskell/) on Docker Hub is over 1GB before you start adding things. This also means you don't have to maintain two Dockerfiles.
 
-With multi stage builds we can use the `haskell` docker image to build our distributable executable, then copy this to a smaller image (in this case `phusion/baseimage`.
+With multi stage builds we can use the `haskell` docker image to build our distributable executable, then copy this to a smaller image (in this case `phusion/baseimage`).
 
 Here's an example Dockerfile for a project called `haskell-example`:
 
