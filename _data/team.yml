@@ -339,7 +339,7 @@
 - id: andrzejrehmann
   name: Andrzej Rehmann
   image: /assets/img/custom/team/andrzej_rehmann.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Andrzej is a software developer with a weak spot for automation done right.</p>
     <p>He believes that the only way to go fast is to go clean and that software development is a marathon not a sprint.</p>
@@ -412,4 +412,4 @@
     <p>He likes to learn new things and improve himself every day by going to coding dojos, reading books and attending talks related to his profession.</p>
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
-  github: Archel 
+  github: Archel
