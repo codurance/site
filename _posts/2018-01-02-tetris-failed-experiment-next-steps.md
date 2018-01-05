@@ -9,7 +9,8 @@ slug: tetris-failed-experiment-next-steps
 canonical:
     name: hacking dan
     href: https://blog.hackingdan.com/2018/01/tetris-failed-experiment-next-steps
-image: /assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
+image: 
+    src: /assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
 tags: 
 - AI
 - Q-Learning
