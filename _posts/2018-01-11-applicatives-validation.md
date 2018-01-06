@@ -2,7 +2,7 @@
 layout: post
 name: 2018-01-11-applicatives-validation
 title: Applicative Functors and data validation
-date: 2018-01-11 07:00:00 +00:00
+date: 2018-01-06 07:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
    src: /assets/img/custom/blog/haskell-logo.png
