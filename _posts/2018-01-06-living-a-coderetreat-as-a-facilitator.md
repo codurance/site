@@ -23,7 +23,7 @@ For those people who never attended a Coderetreat, it's a full day event where t
 
 Global Day of Coderetreat organization provides a lot of resources to prepare yourself as a facilitator: videos, blogs, online hangouts to solve doubts, ... In my case, I was lucky, because I also had the help of my awesome colleague **<a href="/publications/author/robert-firek">Robert Firek</a>**, who accumulates a lot of experience facilitating Coderetreats and he gave me a lot of advice and ideas.
 
-On the other hand, I like this kind of events, because it helps to create community amoung us. For example, I had the opportunity to meet people from Wallapop, who also organized the event in Barcelona. We had an interesting meeting in which we reviewed all the items for the event, filling a table with cards about:
+On the other hand, I like this kind of events, because it helps to create community among us. For example, I had the opportunity to meet people from Wallapop, who also organized the event in Barcelona. We had an interesting meeting in which we reviewed all the items for the event, filling a table with cards about:
 
 - Introduction
 - Previous organization
@@ -111,7 +111,7 @@ As usual, pair of friends were together during the first session, but they chang
 
 ### Final retrospective
 
-In order to have food for thought before the final retrospective, I provided green and red post-its to write ideas for the possitive and improvable things, respectively. 
+In order to have food for thought before the final retrospective, I provided green and red post-its to write ideas for the positive and improvable things, respectively. 
 
 The main answers in the _closing circle_ were:
 
@@ -132,7 +132,7 @@ The main answers in the _closing circle_ were:
 
 After the feedback received and my experience, I took this notes for the next event:
 
-* Adapting the plan of sessions to the circunstances, because I was very rigorous with the plan and I think I interrupted both experiments and interesting conversations among attendees. 
+* Adapting the plan of sessions to the circumstances, because I was very rigorous with the plan and I think I interrupted both experiments and interesting conversations among attendees. 
 * Giving advice for testing new languages only when the other member of the pair knows that language, because some of them spent a lot of time preparing their environment to try other languages.
 * _The cobbler should stick to his last_. Attendees had drinks and food during the whole day, but I would have had to buy more food for lunch time.
 * Organizing all retrospectives in circle, not only the final one. We commented the sessions standing but next to the tables, so it wasn't easy to see all the faces and a circle would have encouraged more the participation.
