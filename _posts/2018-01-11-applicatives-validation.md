@@ -13,7 +13,7 @@ tags:
 - functors
 ---
 
-In the first part of this serie we went through a basic introduction to Functor and Applicative Functor. In this second part we will go through an exercise to show how to use them to perform input data validation.
+[In the first part of this series](https://codurance.com/2017/11/30/applicatives-validation/), we went through a basic introduction to Functor and Applicative Functor. In this second part, we will go through an exercise to show how to use them to perform input data validation.
 
 Create the types:
 
@@ -30,11 +30,16 @@ Create the functions:
 Types:
 
 ```
-data Address = Address String               deriving (Eq, Show)
-data Body    = Body    String               deriving (Eq, Show)
-data Email   = Email   Address Address Body deriving (Eq, Show)
+type FromAddress = Address
+type ToAddress = Address
+
+data Address = Address String
+data Body      = Body    String
+data Email     = Email   FromAddress ToAddress Body
 
 ```
+`FromAddress` and `ToAddress` are type aliases to the `Address` type so that it’s easier to identify which one is which in the Email data constructor.
+
 It is worth noting that the data constructors for our types `Address`, `Body` and `Email` are just functions with one, one and three arguments respectively. 
 
 For instance the `Email` constructor has the following type signature:
@@ -79,7 +84,7 @@ validateContains x xs
     | otherwise = Nothing
 ```
 
-`makeAddress` and `makeBody` successfully leveraged the functoriality of Maybe. We were able to cleanly apply the validation function to obtain a `Maybe String` to then fmap it to `Maybe Address` and `Maybe Body` respectively. 
+`makeAddress` and `makeBody` successfully leveraged the functoriality of Maybe. We were able to apply the validation function to obtain a `Maybe String` to then fmap it to `Maybe Address` and `Maybe Body` respectively. 
 
 On the other hand, the `makeEmail` implementation is much more involved and cumbersome. Let's see why we had to do the break down of Maybe values manually.
 
@@ -123,7 +128,7 @@ Now we have successfully applied the second argument to the `Email` constructor,
 
 ```
 body :: Maybe Body
-body = makeBody "Haskell rocks"
+body = makeBody "Haskell rocks."
 
 emailFullyApplied :: Maybe Email
 emailFullyApplied = emailWithFromAndToApplied <*> body
@@ -142,7 +147,7 @@ emailFullyApplied :: Maybe Email
 emailFullyApplied = ((fmap Email (makeAddress "carlos@codurance.com")) <*> makeAddress "user@email.com") <*> makeBody "Haskell rocks"
 ```
 
-The Applicative package in Haskell also provides an infix operator `<$>` for `fmap` that makes the implementation a bit nicer, by getting rid of the parenthesis. It behaves as `fmap` but it is placed between its two arguments:
+The Applicative package in Haskell also provides an infix operator `<$>` for `fmap` that makes the implementation a bit nicer, by getting rid of the parenthesis. It behaves as `fmap`, but it is placed between its two arguments:
 
 ```
 emailFullyApplied :: Maybe Email
@@ -205,9 +210,9 @@ makeEmail from to body =
 
 #### Either & Validation
 
-We just saw how to use the Maybe Functor and Applicative Functor to validate input data, however, Maybe can not offer any information about the error.
+We just saw how to use the Maybe Functor and Applicative Functor to validate input data, however, Maybe cannot offer any information about the error.
 
-We will see how we can signal errors and also accumulate all the errors occurred during the validation proccess using the `Validation` data type. This is a more practical scenario for real-life applications, as it is often required to return some information about the errors. 
+We will see how we can signal errors and also accumulate all the errors occurred during the validation process using the `Validation` data type. This is a more practical scenario for real-life applications, as it is often required to return some information about the errors. 
 
 The data type `Validation` is very similar to `Either`. You may be familiar with `Either` as it is quite a common type in most functional languages.
 
@@ -223,23 +228,23 @@ The definition of both types shows that `Either` and `Validation` are indeed ide
 We will be using the validation package for Haskell linked above, which defines the `AccValidation` data type to accumulate errors in a given type.
 
 * The Applicative instance for `Either` just short-circuits as soon as there is an error, as Maybe does, but it can carry with it information about the actual error.
-* On the other hand, the Applicative instance for `AccValidation` does use the [Semigroup typeclass](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Semigroup.html) to combine all the errors. 
+* On the other hand, the Applicative instance for `AccValidation` accumulates all the errors in a given type, usually List.
 
-Semigroup is an abstraction that combines two arguments of the same type into a single one, as Monoid does, but it does not have an identity element. 
+`AccValidation` accumulates all the errors using the [Semigroup typeclass](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Semigroup.html). A semigroup is an abstraction that combines two arguments of the same type into a single one, as Monoid does, but it does not have an identity element. 
 
-We are going to show how to combine all the errors using `AccValidation` and List. List has both a Monoid instance and a Semigroup instance. The Monoid instance for List defines the identity, `mempty`, as empty list, `[]`, and the combine function, `mappend`, as list concatenation,`(++)`.
+We are going to show how to combine all the errors using `AccValidation` and List. List has both a Monoid instance and a Semigroup instance. The Monoid instance for List defines the identity, `mempty`, as the empty list, `[]`, and the combine function, `mappend`, as list concatenation,`(++)`.
 
 The `AccValidation` data type and its Applicative instance are defined as follows:
 
 ```
-data AccValidation err a = AccFailure err | AccSuccess a deriving (Eq, Ord, Show, Data, Typeable)
+data AccValidation err a = AccFailure err | AccSuccess a 
 
 Semigroup err => Applicative (AccValidation err)
 ```
 
 Let's see how we can use it in code.
 
-First we need to define an `Error` data type for our implementation:
+First, we need to define an `Error` data type for our implementation:
 
 ```
 data Error = EmptyBody | AddressMustContain String deriving (Eq, Show)
@@ -279,8 +284,9 @@ validateEmail from to body =
                (validateAddress to)
                (validateBody body)
 ```
+Note how the implementation of `validateEmail` is identical to the one we defined earlier for `makeEmail`. The type signature has changed, as it now returns an `AccValidation` instead of a `Maybe`, but given that both types are Applicatives Functors we don’t need to change the implementation to change the behaviour. 
 
-Too see how errors accumulate, let's write the following two functions that feed sample data to `validateEmail`:
+To see how errors accumulate, let's write the following two functions that feed sample data to `validateEmail`:
 
 ```
 allWrong :: AccValidation [Error] Email
@@ -304,10 +310,10 @@ AccSuccess (Email (Address "carlos@codurance.com") (Address "info@codurance.com"
 To recap:
 
 * Use Maybe when you don't need to carry any information about the error.
-* Use Either when you need to carry information about either a single possible error or the first error when more than one are possible.
+* Use Either when you need to carry information about a single possible error or the first error when more than one is possible.
 * Use Validation when you need to carry information about multiple errors.
 
-As an extra observation, note how the type signatures for `$`, the function application operator, `<$>`, for fmap, and `<*>`, for apply, are very similar. They all play around adding an extra layer of structure to the arguments, a function and a value, and the return type. They all are function application.
+As a further observation, note how the type signatures for `$`, the function application operator, `<$>`, for fmap, and `<*>`, for apply, are very similar. They all play around adding an extra layer of structure to the arguments, a function and a value, and the return type. They all are function application.
   
 ```
 $    ::   (a -> b) ->   a ->   b
