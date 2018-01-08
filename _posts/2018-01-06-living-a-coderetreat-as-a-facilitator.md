@@ -21,7 +21,7 @@ For those people who never attended a Coderetreat, it's a full day event where t
 
 ## Before the event
 
-Global Day of Coderetreat organization provides a lot of resources to prepare yourself as a facilitator: videos, blogs, online hangouts to solve doubts, ... In my case, I'm lucky, because I also had the help of my awesome colleague **<a href="/publications/author/robert-firek">Robert Firek</a>**, who accumulates a lot of experience facilitating Coderetreats and he gave me a lot of advice and ideas.
+Global Day of Coderetreat organization provides a lot of resources to prepare yourself as a facilitator: videos, blogs, online hangouts to solve doubts, ... In my case, I was lucky, because I also had the help of my awesome colleague **<a href="/publications/author/robert-firek">Robert Firek</a>**, who accumulates a lot of experience facilitating Coderetreats and he gave me a lot of advice and ideas.
 
 On the other hand, I like this kind of events, because it helps to create community amoung us. For example, I had the opportunity to meet people from Wallapop, who also organized the event in Barcelona. We had an interesting meeting in which we reviewed all the items for the event, filling a table with cards about:
 
@@ -32,7 +32,9 @@ On the other hand, I like this kind of events, because it helps to create commun
 
 ## The event
 
-Each session has a set of constraints to break comfort zones and to make think in a different way. We prepared this plan of sessions:
+### Plan of sessions
+
+Each session has a set of constraints to break comfort zones and make you think in a different way. We prepared this plan of sessions:
 
 1. Learn your domain.
 2. Several constraints to choose: no loops, no conditionals, no naked primitives, ...
@@ -49,6 +51,8 @@ There were common rules for all the sessions:
     - Reveal intention
     - No (knowledge) duplication
     - Small
+
+### The challenge
 
 The problem to solve in a Global Day of Coderetreat is <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game of Life</a>. It's a game which starts with an initial generation of living cells on a board and it evolves automatically to next generations with these rules:
 
@@ -69,23 +73,24 @@ I helped pairs in order to realise about certain issues, for example:
 - _'Why are you saving the state in each cell if you have the living cells in a specific list?'_ Last two points violate <a href="http://wiki.c2.com/?PrincipleOfLeastAstonishment" target="_blank">P.O.L.A.</a>
 - Focus on testing the state of the board without thinking about testing the behaviour firstly. When starting with the expected behaviour, tests about state of the board will come out. The book <a href="https://leanpub.com/4rulesofsimpledesign" target="_blank">Understanding the 4 Rules of Simple Design</a> by **Corey Haines** has a detailed chapter about it.
 
-My favorite session was the last one: swapping stations. Source code is not deleted at the end of the previous session and pairs write what they do and don't like about their code. Secondly, pairs move to the following station and then, they work on another pair's code trying to improve it. Among other things, they annotated:
+My favorite session was the last one: swapping stations. Source code is not deleted at the end of the previous session and pairs write what they do and don't like about their code. Secondly, pairs move to the following station and then, they work on another pair's code trying to improve it. Among other things, they liked:
 
-- Like:
-    - Located mutability
-    - Separation of Concerns (SoC)
-    - Design
-    - Naming
-    - Short methods
-    - Simplicity
-    - Following TDD
-- For improving:
-    - Visibility of methods
-    - Readability
-    - Encapsulation
-    - Long methods
-    - Next generation calculation
-    - Over-engineering
+- Located mutability
+- Separation of Concerns (SoC)
+- Design
+- Naming
+- Short methods
+- Simplicity
+- Following TDD
+   
+and for improving:
+ 
+- Visibility of methods
+- Readability
+- Encapsulation
+- Long methods
+- Next generation calculation
+- Over-engineering
 
 And I loved the moment _'Please! How can we compile Go code?'_. Pairs not only faced challenging improvements, but also unknown programming languages. So, collaboration happened not only in pairs, but also between pairs. It was awesome.
 
@@ -95,18 +100,20 @@ One of the most difficult things for attendees was following the recommendation 
 
 * For giving more value to the moment they were living. Code is removed and learning is kept.
 * For not worrying about their mistakes during the sessions, practicing without fear, trying new things.
-* For avoiding _The Lord of the Rings_ feeling: "This is mine". Unconsciously, it helps us to lose the feeling of ownership of the code.
+* For avoiding _The Lord of the Rings_ feeling: "My precious!". Unconsciously, it helps us to lose the feeling of ownership of the code.
 * For emphasizing the idea of not finishing the solution in each session. They might be relaxed and enjoy the _journey_ of decisions to solve the problem.
 
 ### New pairs each session
 
 Most of attendees had never practiced pair-programming, so they found it difficult to change their pair when attending with a friend.
 
-Pair of friends were together during the first session, but they changed their pair the following sessions.
+As usual, pair of friends were together during the first session, but they changed their pair the following sessions.
 
 ### Final retrospective
 
-In order to reflect personally about the event before the final retrospective, I provided two post-its, green and red, to write ideas for the possitive and improvable things, respectively. Then, we shared the close circle and the main answers were:
+In order to have food for thought before the final retrospective, I provided green and red post-its to write ideas for the possitive and improvable things, respectively. 
+
+The main answers in the _closing circle_ were:
 
 - What, if anything, did you learn today?
     - Thinking in a different way because of constraints
