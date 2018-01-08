@@ -269,6 +269,20 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   our_people:
+      title: Our People
+      description: Our people define us. Learn more about the lives of our apprentices and craftspeople.
+   culture:
+      title: Culture
+      structure:
+         title: Structure
+         description: There are no hierarchies or managers in our company. We place more value in collaboration and peer recognition over job titles. We self-organise with decision making, using ‘initiative circles’ to improve our company and projects. Our co-founder, Sandro Mancuso, explores this concept in the video “Teal Organisations”.
+      transparency:
+         title: Transparency
+         description: We value transparency in our company. Since we have no managers within our company, we believe that all information should be made available to everyone. We trust that our people, given this information, can help contribute to how our company grows. As such, every person inside Codurance has full access to the company’s financials and each other salaries. We use Trello and Slack to keep ourselves up to date on the progress of initiative circles, how our projects are developing, which decisions we need to make as a business.
+      continuous_learning:
+         title: Continuous Learning
+         description: We value continuous learning and deliberate practice. We self-organise our own internal meetups most nights of the week, covering anything from Category Theory and Functional Programming through to helping each other learn specific technologies and languages, such as Kotlin and Rust. Every two weeks, we come together for our Evening Catchups, where we run lightning talks and group discussions either side of eating dinner together. Once a month, we run our Codurance Open Space, where we all come together (regardless of project work) to run an unconference day at our offices. There’s a lot more on top, and we’re sure you’ll add your own ideas as we grow.
    become_a_craftsman:
      title: Become a Craftsperson
      apply_title: Become a Craftsperson
@@ -364,17 +378,17 @@ careers-join-how_to_apply:
         <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 
 careers-open_positions:
-   title: You like to build well-crafted software, we do too!
-   description: <p>We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice, we would love to hear from you.</p>
+   title: We build. We mentor. We learn.
+   description: <p>We help development teams and business to continually improve their products and process. We value the principles of Software Craftsmanship, and have a shared passion for continuous learning.</p>
 careers-become_a_craftsman:
    title: Become a Craftsperson
-   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
+   description: <p>Our Craftspeople have a broad understanding of technology, using their expertise and depth of understanding in the areas that matter to help our clients. Read more about what matters & apply here:</p>
    link_title: Apply
    apply_title: I'm interested
    more_info: Read the full description
 careers-become_an_apprentice:
    title: Become an Apprentice
-   description: <p>Aspiring to become a Software Craftsperson, you’re ready to start your journey of education under the guidance of your mentor.</p>
+   description: <p>Our Apprentice have a broad understanding of technology, and aspire to improve their depth of understanding through our Apprentice Programme. Read more about our programme here:</p>
    link_title: Apply
    more_info: Read the full description
 careers-hiring_process:

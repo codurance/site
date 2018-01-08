@@ -6,12 +6,35 @@ title: Careers
 <div class="breadcrumbs-v3 ourpeople"></div>
 
 <div class="container content">
-    <div class="row">
+    <div class="row margin-bottom-40">
         <div class="col-md-12">
-            <div class="headline-center margin-bottom-60">
+            <div class="headline-center">
                 <h2>{% t careers-open_positions.title %}</h2>
-                <blockquote class="hero no-left-border">{% t careers-open_positions.description %}</blockquote>
+                <p>{% t careers-open_positions.description %}</p>
             </div>
+        </div>
+    </div>
+
+    <div class="row margin-bottom-40 bg-color-light" style="padding: 30px 0">
+        <div class="col-md-12">
+            <div class="col-md-offset-2 col-md-8 headline-center margin-bottom-60">
+                <h2>{% t careers.our_people.title %}</h2>
+                <p>{% t careers.our_people.description %}</p>
+            </div>
+        </div>
+        <div class="col-md-12 blog-boxes">
+            {% assign first_week = site.posts | where:"name","Discovering Codurance during my first week as an apprentice" %}
+            {% assign first_year = site.posts | where:"name","my-first-year-at-codurance" %}
+            {% assign life_of_a_craftsman = site.posts | where:"name","The Life of a Senior Software Craftsman, with Robert Firek" %}
+            {% if first_week[0] %}
+                {% include careers_articles.html param=first_week truncated_title=2 truncated_abstract=30 %}
+            {% endif %}
+            {% if first_year[0] %}
+                {% include careers_articles.html param=first_year truncated_title=5 truncated_abstract=35 %}
+            {% endif %}
+            {% if life_of_a_craftsman[0] %}
+                {% include careers_articles.html param=life_of_a_craftsman truncated_title=7 truncated_abstract=32 %}
+            {% endif %}
         </div>
     </div>
 
@@ -34,6 +57,42 @@ title: Careers
         </div>
     </div>
 
+    <div class="row margin-bottom-40 bg-color-light">
+        <div class="col-md-12">
+            <div class="headline-center margin-bottom-60" style="padding-top: 20px;">
+                <h2>{% t careers.culture.title %}</h2>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-4">
+                    <iframe width="360" height="202" src="https://www.youtube.com/embed/rANER40aUxs?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-8">
+                    <h3>{% t careers.culture.structure.title %}</h3>
+                    <p>{% t careers.culture.structure.description %}</p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-8">
+                    <h3>{% t careers.culture.transparency.title %}</h3>
+                    <p>{% t careers.culture.transparency.description %}</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive bordered" alt="Transparency" src="/assets/img/custom/careers/careers_transparency.jpg">
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-4">
+                        <img class="img-responsive bordered" alt="Continuous Learning" src="/assets/img/custom/careers/careers_continuouslearning.jpg">
+                </div>
+                <div class="col-md-8">
+                    <h3>{% t careers.culture.continuous_learning.title %}</h3>
+                    <p>{% t careers.culture.continuous_learning.description %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--
     <div class="row">
         <div class="col-md-12">
             <div class="heading heading-v4 margin-bottom-20">
@@ -86,4 +145,5 @@ title: Careers
             {% t careers-hiring_process.additional_information %}
         </div>
     </div>
+-->
 </div>

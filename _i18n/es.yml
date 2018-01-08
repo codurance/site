@@ -262,6 +262,20 @@ events-lscc:
 careers:
    title: Trabaja con nosotros
    email: join-us@codurance.es
+   our_people:
+      title: Our People
+      description: Our people define us. Learn more about the lives of our apprentices and craftspeople.
+      culture:
+         title: Culture
+      structure:
+         title: Structure
+         description: There are no hierarchies or managers in our company. We place more value in collaboration and peer recognition over job titles. We self-organise with decision making, using ‘initiative circles’ to improve our company and projects. Our co-founder, Sandro Mancuso, explores this concept in the video “Teal Organisations”.
+      transparency:
+         title: Transparency
+         description: We are an open company. Every person inside Codurance has full access to the company's financials and each other salaries.
+      continuous_learning:
+         title: Continuous Learning
+         description: We value continuous learning and deliberate practice. Whether that’s speaking at conferences, running our many internal meetups, supporting the LSCC, at our Open Spaces, Evening Catch-ups.
    become_a_craftsman:
      join_title: Unete a Codurance
      join_description: We are a company formed by craftswomen and craftsmen who care about the quality of the work we do and also who we do it with. We are always looking for the talented people who share our passion for writing well-crafted code and believe in the principles and values of Software Craftsmanship, Extreme Programming and Agile software development. For us, mastering a strong set of technical practices is as important as our understanding of different technology stacks we use. <br> Due to the nature of the work we do - working closely with our clients and their technical teams - good communication skills, willingness to learn and work with different technology stacks, fully embrace Extreme Programming practices and Agile methodologies, and confidence to express ideas are essential to join our team.
