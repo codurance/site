@@ -2,7 +2,7 @@
 layout: post
 name: 2018-01-11-applicatives-validation-part-ii
 title: Applicative Functors and data validation, part II
-date: 2018-01-06 07:00:00 +00:00
+date: 2018-01-11 07:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
    src: /assets/img/custom/blog/haskell-logo.png
@@ -110,7 +110,7 @@ emailWithFromApplied = fmap Email fromAddress
 
 -- does not compile
 emailWithFromAndToApplied :: Maybe (Body -> Email)
-emailWithFromAndToApplied = fmap emailWithFromApplied toAddress 
+emailWithFromAndToApplied = fmap emailWithFromApplied toAddress
 ```
 
 The problem here is that the function that we are passing to `fmap` in the case of `emailWithFromAndToApplied` is wrapped in a Maybe structure and `fmap` does not accept a function wrapped in a structure. 
@@ -183,13 +183,13 @@ liftA3 :: Applicative f => (a -> b -> c -> d) -> f a -> f b -> f c -> f d`
 Substituting our types:
 
 ```
-liftA3 :: Applicative f => 
+liftA3 :: Applicative f =>
     (a  -> b -> c -> d)
     -> f a
     -> f b
     -> f c
     -> f d
-                           
+
 liftA3 ::
     (Address -> Address -> Body -> Email)
     -> Maybe Address
