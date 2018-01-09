@@ -167,7 +167,7 @@ makeEmail from to body =
         <*> makeBody body
 ```
 
-It is worth noting that this implementation of `makeEmail` apart from being far nicer than the original one, is much easier to extend if we were to add more arguments or fields to the `Email` constructor.
+It is worth noting that this implementation of `makeEmail`, apart from being far nicer than the original one, is much easier to extend if we were to add more arguments or fields to the `Email` constructor.
 
 > Map a function using `<$>` to partially apply it and to embed it inside a structure, then apply it to the rest of it arguments using `<*>`
 
@@ -221,18 +221,17 @@ data Either     a   b = Left    a   | Right   b
 data Validation err a = Failure err | Success a
 ```
 
-The definition of both types shows that `Either` and `Validation` are indeed identical, they just have different names for their type and data constructors. 
+The definition of both types shows that `Either` and `Validation` are indeed identical, they just have different names for their type and data constructors.
 
-[Either](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Either.html) is a general purpose data type. [Validation](https://hackage.haskell.org/package/Validation) is a variation of Either exclusively for validation purposes. This difference is not visible in the definitions of the data types, but it is in their Applicative instances. 
+[Either](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Either.html) is a general purpose data type. Validation is a variation of Either exclusively for validation purposes that accumulates all the errors. This difference is not visible in the definitions of the data types, but it is in their Applicative instances. 
 
-We will be using the validation package for Haskell linked above, which defines the `AccValidation` data type to accumulate errors in a given type.
+We will be using the [Validation](https://hackage.haskell.org/package/Validation) package Haskell, which defines the `AccValidation` data type that accumulates errors in a given type.
 
 * The Applicative instance for `Either` just short-circuits as soon as there is an error, as Maybe does, but it can carry with it information about the actual error.
 * On the other hand, the Applicative instance for `AccValidation` accumulates all the errors in a given type, usually List.
 
-`AccValidation` accumulates all the errors using the [Semigroup typeclass](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Semigroup.html). A semigroup is an abstraction that combines two arguments of the same type into a single one, as Monoid does, but it does not have an identity element. 
+`AccValidation` accumulates all the errors using the [Semigroup typeclass](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Semigroup.html). A semigroup is an abstraction that combines two arguments of the same type into a single one, as Monoid does, but it does not have an identity element. We are going to show how to combine all the errors using `AccValidation` and List. List has both a Monoid instance and a Semigroup instance.
 
-We are going to show how to combine all the errors using `AccValidation` and List. List has both a Monoid instance and a Semigroup instance. The Monoid instance for List defines the identity, `mempty`, as the empty list, `[]`, and the combine function, `mappend`, as list concatenation,`(++)`.
 
 The `AccValidation` data type and its Applicative instance are defined as follows:
 
