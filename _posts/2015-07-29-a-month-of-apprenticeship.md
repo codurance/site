@@ -5,7 +5,7 @@ title: My first month as an apprentice
 date: 2015-07-31 16:00:00 +00:00
 author: Franziska Sauerwein
 image:
-    src: /assets/img/custom/blog/apprenticeship-month.jpg
+    src: /assets/custom/img/blog/apprenticeship-month.jpg
     attribution:
         text: A screen with IntelliJ idea on Mac
 tags:
@@ -68,7 +68,7 @@ So I practiced the [Roman Numerals](https://www.youtube.com/watch?v=iZjgj1S0FCY)
 Then I moved on to refactoring the [Trip Service](https://github.com/sandromancuso/trip-service-kata) kata. Refactoring is one of my favorite coding activities, and it felt very rewarding to speed it up.
 One of the things I found most useful is the <kbd>⇧</kbd> + <kbd>&#8984;</kbd> + <kbd>A</kbd> Shortcut in IntelliJ IDEA. It allows you to search for any action available, be it a setting or a refactoring step. And it shows you the applicable shortcuts.
 
-![Find Action]({{site.baseurl}}/assets/img/custom/blog/findAction.png)
+![Find Action]({{site.baseurl}}/assets/custom/img/blog/findAction.png)
 
 ##Baby steps for better design
 I continued with our trainings [Crafting Code](http://codurance.com/services/training/crafting-code/) and [Crafted Design](http://codurance.com/services/training/crafted-design/) and got a better understanding of Dependency inversion, Outside-In TDD and [Interaction Driven Design](http://ustre.am/:49XUG).

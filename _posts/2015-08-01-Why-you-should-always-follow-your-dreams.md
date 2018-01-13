@@ -5,7 +5,7 @@ title: Why you should always follow your dreams!
 date: 2015-08-05 14:00:00 +01:00
 author: Ana Nogal
 image:
-    src: /assets/img/custom/blog/follow-your-dreams.jpg
+    src: /assets/custom/img/blog/follow-your-dreams.jpg
     attribution:
         text: Hidden in a back room by Jason Howie
         href: https://flic.kr/p/brPHtb

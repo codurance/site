@@ -5,7 +5,7 @@ title: The Wrong Notion of Time
 date: 2012-12-10 23:38:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/wrong-time.jpeg
+    src: /assets/custom/img/blog/wrong-time.jpeg
 tags:
 - craftsmanship
 ---

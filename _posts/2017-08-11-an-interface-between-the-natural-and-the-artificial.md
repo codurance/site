@@ -5,7 +5,7 @@ title: An Interface Between The Natural And The Artificial
 date: 2017-08-11 08:00:00 +00:00
 author: Luciano Palma
 image:
-    src: /assets/img/custom/blog/melbourne-sundial.jpg
+    src: /assets/custom/img/blog/melbourne-sundial.jpg
     attribution:
       text: (Resized) Picture by Jeepika (CC BY-SA 3.0)
       href: https://en.wikipedia.org/wiki/File:Melbourne_sundial_at_Flagstaff_Gardens.JPG#/media/File:Melbourne_sundial_at_Flagstaff_Gardens.JPG

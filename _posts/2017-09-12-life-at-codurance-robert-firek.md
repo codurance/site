@@ -6,7 +6,7 @@ title: 'The Life of a Senior Software Craftsman, with Robert Firek'
 date: 2017-09-12 12:00:00 +00:00
 author: Robert Firek 
 image:
-  src: /assets/img/custom/blog/2017-09-04-life-at-codurance-robert-firek/microphone.jpg
+  src: /assets/custom/img/blog/2017-09-04-life-at-codurance-robert-firek/microphone.jpg
 tags:
 - life-at-codurance 
 - career 
@@ -15,7 +15,7 @@ tags:
 
 ---
 
-![Robert]({{ site.url }}/assets/img/custom/blog/lifeatcodurance/robert-1.jpg)
+![Robert]({{ site.url }}/assets/custom/img/blog/lifeatcodurance/robert-1.jpg)
 
 <div class="tag-box tag-box-v6">
   <h3>We caught up with our Senior Craftsperson, Robert Firek, to find out more about life at Codurance, his transition from PHP to Java and why he has such a passion for DevOps.</h3>
@@ -74,7 +74,7 @@ Every two weeks, we also have our catch-ups where we meet together to have fun t
 Every two months we organise a bigger version of our catch-up meetings. It is Codurance Day. We spend the whole day together organising a small version of the Socrates conference. We decide about the topics, we can spend the whole day coding or discuss the topics important for the company. 
 
 
-![Robert]({{ site.url }}/assets/img/custom/blog/lifeatcodurance/robert-2.jpg)
+![Robert]({{ site.url }}/assets/custom/img/blog/lifeatcodurance/robert-2.jpg)
 
 ### What are the responsibilities of a Senior Craftsman?
 

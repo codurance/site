@@ -12,7 +12,7 @@ tags:
 - java
 - spring
 image:
-    src: /assets/img/custom/blog/dispatcher-worker.jpeg
+    src: /assets/custom/img/blog/dispatcher-worker.jpeg
 ---
 
 In the back-office world the central concept in most of the systems is one of a Trade. A Trade has many events (e.g. Inception, Amend, Novation, Termination). Generally events from different trades can be processed in parallel because they have no interdependencies, however, events from the same trade cannot be processed in parallel due to the fact that they modify the same internal instance of a Trade.

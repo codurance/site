@@ -5,7 +5,7 @@ title: Not all managers are stupid
 date: 2014-11-10 04:20:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/not_all_managers_are_stupid.jpg
+    src: /assets/custom/img/blog/not_all_managers_are_stupid.jpg
 tags:
 - craftsmanship
 - agile

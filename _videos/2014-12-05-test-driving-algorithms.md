@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: test-driving-algorithms
 image:
-    src: /assets/img/custom/videos/test-driving-algorithms.jpg
+    src: /assets/custom/img/videos/test-driving-algorithms.jpg
 title: "Test Driving Algorithms"
 hidden: true
 video-url: https://www.youtube.com/embed/iZjgj1S0FCY?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx

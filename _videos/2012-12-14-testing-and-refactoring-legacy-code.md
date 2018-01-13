@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: testing-and-refactoring-legacy-code
 image:
-    src: /assets/img/custom/videos/testing-and-refactoring-legacy-code.png
+    src: /assets/custom/img/videos/testing-and-refactoring-legacy-code.png
 title: "Testing and Refactoring Legacy Code"
 hidden: true
 video-url: https://www.youtube.com/embed/_NnElPO5BU0?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx

@@ -5,7 +5,7 @@ title: 'What does RESTful really mean'
 date: 2016-08-02 17:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/RESTful.png
+    src: /assets/custom/img/blog/RESTful.png
 tags:
 - REST
 - Web API

@@ -5,7 +5,7 @@ title: 'State in scalable architectures'
 date: 2016-07-11 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/state.jpg
+    src: /assets/custom/img/blog/state.jpg
     attribution:
       text: Untitled by Daida Medina
       href: https://www.instagram.com/p/8TdviFHo-g/?taken-by=thelastfreeusername
@@ -22,7 +22,7 @@ Handling state is one of the cornerstones of software development. Most of busin
 
 [Ted Malaska's](https://twitter.com/tedmalaska) [presentation](https://www.youtube.com/watch?v=sD-rvRkK_u4) about [Spark](http://spark.apache.org/) serves as inspiration for this post. In this screenshot, Ted shows a list of concepts that we have to understand when learning to code:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/learning-to-code.png" alt="Learning to code" title="Learning to code" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/learning-to-code.png" alt="Learning to code" title="Learning to code" class="img img-center img-responsive style-screengrab">
 
 You can stop reading here and spend some time thinking about your conceptions of state at any of those levels. When you're done, come back here and let's try to define more formally what state is.
 

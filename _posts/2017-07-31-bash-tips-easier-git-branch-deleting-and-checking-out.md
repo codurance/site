@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bash-tips-easier-git-branch-deleting-d93da0f0acec
 image:
-    src: /assets/img/custom/blog/git_logo.png
+    src: /assets/custom/img/blog/git_logo.png
     attribution: 
         text: Git logo
         href: https://www.scm-manager.com/wp-content/uploads/2013/04/git-logo.png

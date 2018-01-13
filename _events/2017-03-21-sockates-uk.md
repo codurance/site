@@ -5,7 +5,7 @@ layout: event
 name: socrates-uk-2017
 location: "Guilford Road, Dorking, Wotton, Surrey RH5 6HS, England, UK"
 image:
-    src: /assets/img/custom/home/socrates-uk.jpg
+    src: /assets/custom/img/home/socrates-uk.jpg
 title: "SoCraTes UK 2017"
 hidden: true
 event-dates: 

@@ -5,7 +5,7 @@ title: Bowling Kata in Clojure, F# and Scala
 date: 2016-05-16 00:01:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2016-05-16-bowling.jpg
+    src: /assets/custom/img/blog/2016-05-16-bowling.jpg
 tags:
 - craftsmanship
 - tdd

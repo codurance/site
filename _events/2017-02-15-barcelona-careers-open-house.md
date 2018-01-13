@@ -5,7 +5,7 @@ layout: event
 name: barcelona-careers-open-house-2017-03
 location: "Carrer d'Aragó, 208, 5º2º, 08011 Barcelona"
 image:
-    src: /assets/img/custom/events/openhouse-barcelona.png
+    src: /assets/custom/img/events/openhouse-barcelona.png
 title: "Barcelona Careers Open House"
 hidden: true
 event-dates: 

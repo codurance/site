@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://blog.matthewbutt.com/2016/05/14/a-retrospective-in-the-park
 image:
-    src: /assets/img/custom/blog/2016-05-14-retrospective-park/hibiscus.jpg
+    src: /assets/custom/img/blog/2016-05-14-retrospective-park/hibiscus.jpg
 alias: [/2016/05/14/retrospective-park/]
 tags:
 - agile 

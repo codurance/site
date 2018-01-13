@@ -5,7 +5,7 @@ title: 'The Java Synchronisers'
 date: 2016-08-24 10:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/synchronisation.jpg
+    src: /assets/custom/img/blog/synchronisation.jpg
 tags:
 - java
 - threading

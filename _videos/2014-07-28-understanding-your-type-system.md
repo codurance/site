@@ -4,7 +4,7 @@ layout: video
 name: understanding-your-type-system
 location: "Virtual JUG (vJUG)"
 image:
-    src: /assets/img/custom/videos/understanding-your-type-system.jpg
+    src: /assets/custom/img/videos/understanding-your-type-system.jpg
 title: "Highly Strung: Understanding your Type System"
 hidden: true
 video-url: https://www.youtube.com/embed/KMnv-A-ANP4

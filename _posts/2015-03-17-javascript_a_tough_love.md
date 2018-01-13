@@ -5,7 +5,7 @@ title: JavaScript - A Tough Love
 date: 2015-03-17 10:49:00 +00:00
 author: Robert Firek
 image:
-    src: /assets/img/custom/blog/javascript/js.png
+    src: /assets/custom/img/blog/javascript/js.png
 tags:
 - javascript
 ---

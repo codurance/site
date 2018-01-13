@@ -5,7 +5,7 @@ title: We did it wrong, but not all was in vain
 date: 2016-04-12 00:24:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2016-04-12-we-did-it-wrong.jpg
+    src: /assets/custom/img/blog/2016-04-12-we-did-it-wrong.jpg
 alias: [/2016/04/12/we-did-it-wrong-but-not-in-vain/]
 tags:
 - inflection point

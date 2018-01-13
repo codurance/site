@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://www.ananogal.com/blog/talk-to-the-business/
 image:
-    src: /assets/img/custom/blog/DDD_SkillsMatter.jpg
+    src: /assets/custom/img/blog/DDD_SkillsMatter.jpg
 tags:
 - DDD
 - Learning

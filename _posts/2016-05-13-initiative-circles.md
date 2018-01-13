@@ -5,7 +5,7 @@ title: Initiative Circles
 date: 2016-05-13 00:20:00 +00:00
 author: Mashooq Badar 
 image:
-   src: /assets/img/custom/blog/penguins.jpg
+   src: /assets/custom/img/blog/penguins.jpg
 category: practices
 alias: [/2016/05/13/initiative-circles/]
 tags:

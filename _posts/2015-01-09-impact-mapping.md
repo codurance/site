@@ -5,7 +5,7 @@ title: Impact Mapping
 date: 2015-01-09 10:30:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/impact-mapping.gif
+    src: /assets/custom/img/blog/impact-mapping.gif
     attribution:
         text: impactmapping.org
         href: https://www.impactmapping.org

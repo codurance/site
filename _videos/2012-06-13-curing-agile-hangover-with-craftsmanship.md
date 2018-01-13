@@ -6,7 +6,7 @@ layout: video
 name: curing-agile-hangover-with-craftsmanship
 location: "Agile Central Europe (ACE) - Krakow, Poland"
 image:
-    src: /assets/img/custom/videos/screencast-intro-curing-agile-hangover-with-craftsmanship.jpg
+    src: /assets/custom/img/videos/screencast-intro-curing-agile-hangover-with-craftsmanship.jpg
 title: "Curing Agile Hangover with Craftsmanship"
 hidden: true
 video-url: http://player.vimeo.com/video/44243846

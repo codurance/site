@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/120952987040/conversations-about-conversations-at-socrates-uk
 image:
-    src: /assets/img/custom/blog/2015-06-07-conversations-about-conversations-at-socrates-uk-2015/socrates-uk.png
+    src: /assets/custom/img/blog/2015-06-07-conversations-about-conversations-at-socrates-uk-2015/socrates-uk.png
 ---
 
 OK, brain dump time.

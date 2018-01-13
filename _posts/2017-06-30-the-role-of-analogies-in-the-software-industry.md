@@ -5,7 +5,7 @@ title: 'The role of analogies in the software industry'
 date: 2017-06-30 00:00:00 +00:00
 author: Luciano Palma
 image:
-    src: /assets/img/custom/blog/oo_car_analogy.jpg
+    src: /assets/custom/img/blog/oo_car_analogy.jpg
     attribution:
       text: Showing the main components of a class by Pluke (CC0)
       href: https://upload.wikimedia.org/wikipedia/commons/9/98/CPT-OOP-objects_and_classes_-_attmeth.svg

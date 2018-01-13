@@ -6,7 +6,7 @@ title: 'Make Your Webpack Bundles Clean and Lean'
 date: 2017-04-24 09:00:00 +00:00
 author: Toby Retallick
 image:
-  src: /assets/img/custom/blog/2017-04-26-webpack-bundles/webpack_visualiser.png
+  src: /assets/custom/img/blog/2017-04-26-webpack-bundles/webpack_visualiser.png
 tags:
 - Webpack
 - Javascript

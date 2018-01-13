@@ -5,7 +5,7 @@ title: How do I convince...?
 date: 2017-06-13 16:00:00 +00:00
 author: Sandro Mancuso
 image:
-   src: /assets/img/custom/blog/2017-06-13-how-do-I-convince.jpg
+   src: /assets/custom/img/blog/2017-06-13-how-do-I-convince.jpg
 tags:
 - craftsmanship
 - practices

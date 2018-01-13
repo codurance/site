@@ -5,7 +5,7 @@ layout: event
 name: london-career-open-house-2017-08
 location: "15 Northburgh Street, London, EC1V 0JR"
 image:
-    src: /assets/img/custom/events/openhouse_london.png
+    src: /assets/custom/img/events/openhouse_london.png
 title: "Careers Open House (London)"
 hidden: true
 event-dates: 

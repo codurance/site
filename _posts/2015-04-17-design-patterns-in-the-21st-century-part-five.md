@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/116651319855/design-patterns-in-the-21st-century-conclusion
 image:
-    src: /assets/img/custom/blog/2015-04-13-design-patterns/part-five.jpg
+    src: /assets/custom/img/blog/2015-04-13-design-patterns/part-five.jpg
     attribution:
         text: Cogs, by Arthur John Picton
         href: https://flic.kr/p/9b24xc

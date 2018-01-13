@@ -5,7 +5,7 @@ layout: event
 name: london-cto-meetup
 location: "London, United Kingdom"
 image:
-    src: /assets/img/custom/events/london-cto-meetup.jpeg
+    src: /assets/custom/img/events/london-cto-meetup.jpeg
 title: London CTOs Evening Clinic
 hidden: true
 event-dates:

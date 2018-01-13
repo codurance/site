@@ -9,7 +9,7 @@ canonical:
     name: my personal blog
     href: https://blog.matthewbutt.com/2017/10/09/delegates-as-type-aliases/
 image:
-    src: /assets/img/custom/blog/2017-11-23-delegates-as-type-aliases.jpg
+    src: /assets/custom/img/blog/2017-11-23-delegates-as-type-aliases.jpg
 abstract: C# delegates can simplify your code by acting as type aliases for methods. Here I refactor a Factory class to use pattern.
 tags:
 - C#

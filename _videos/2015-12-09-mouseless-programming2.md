@@ -3,7 +3,7 @@ author: Tomaz Tekavec
 layout: video
 name: mouseless-programming
 image:
- src: /assets/img/custom/videos/mouseless-programming-II.png
+ src: /assets/custom/img/videos/mouseless-programming-II.png
 
 title: "Mouseless programming part II"
 hidden: true

@@ -5,7 +5,7 @@ title: Project Sizing
 date: 2015-03-23 14:30:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/estimates.jpg
+    src: /assets/custom/img/blog/estimates.jpg
 tags:
 - estimatation 
 - agile

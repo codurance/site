@@ -6,7 +6,7 @@ title: Create an F# project in VSCode
 date: 2017-01-26 10:00:00 +00:00
 author: Pedro Santos
 image:
-    src: /assets/img/custom/blog/2017-01-26-create-an-fsharp-project-in-vscode.jpg
+    src: /assets/custom/img/blog/2017-01-26-create-an-fsharp-project-in-vscode.jpg
     attribution:
       text: directions by Beat Tschanz
       href: https://www.flickr.com/photos/btschanz/13793872333/

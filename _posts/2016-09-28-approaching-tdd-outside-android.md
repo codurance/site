@@ -4,7 +4,7 @@ name: Approaching Outside-in TDD on Android I
 title: 'Approaching Outside-in TDD on Android I'
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/outside-in.png
+    src: /assets/custom/img/blog/outside-in.png
 tags: 
 - android
 - tdd 
@@ -122,7 +122,7 @@ In a real project we will need to run all the unit tests alone to ensure that th
 
 ## Writing an acceptance test for the acceptance criteria
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/outside-in.png" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/outside-in.png" class="img-responsive"/>
 
 This image shows the testing flow that we are going to follow: the double loop of TDD. The outside loop corresponds to the progress of our feature and the inner loop corresponds to the individual functionals required to implement the feature.
 

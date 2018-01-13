@@ -5,7 +5,7 @@ title: AWS Lambda with API Gateway
 date: 2016-05-25 00:20:00 +00:00
 author: Mashooq Badar 
 image:
-   src: /assets/img/custom/blog/aws-api-gateway.png
+   src: /assets/custom/img/blog/aws-api-gateway.png
 tags:
 - microservices 
 - devops 

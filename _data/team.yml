@@ -1,6 +1,6 @@
 - id: sandro
   name: Sandro Mancuso
-  image: /assets/img/custom/team/sandro_mancuso.jpg
+  image: /assets/custom/img/team/sandro_mancuso.jpg
   role: Software Craftsman and Co-Founder
   fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
@@ -8,7 +8,7 @@
 
 - id: mash
   name: Mashooq Badar
-  image: /assets/img/custom/team/mash_badar.jpg
+  image: /assets/custom/img/team/mash_badar.jpg
   role: Software Craftsman and Co-Founder
   fullDescription: <p>Mash is a pragmatic software craftsman always looking to improve his software creation skills and helping others do the same. He firmly believes that a well-rounded software craftsman must have a keen interest in all aspects of software creation, including; process, people, technology, user experience, development, operation, maintenance, and social impact. He relishes the daily challenges that Codurance brings to him–stretching his existing knowledge and expertise allowing him to constantly grow as a professional.</p><p>Mash is an advisor and a leader. During his diverse career, he has succeeded in invigorating large ailing software projects as well as creating highly effective software teams and departments. His broad and deep technical knowledge, organisational skills, craft focus, and empathy to people involved have been integral to his success. He has worked in many roles for charities, investment banks, consultancies, government, media and cloud providers. He prides himself at being a hands-on software developer and believes that software development skills are very hard to learn and the best way to maintain them is to apply them.</p>
   twitter: mashooq
@@ -16,7 +16,7 @@
 
 - id: pedro
   name: Pedro Santos
-  image: /assets/img/custom/team/pedro_santos.jpg
+  image: /assets/custom/img/team/pedro_santos.jpg
   role: Software Craftsman
   fullDescription: >
     <p>Pedro is a software craftsman with over twenty years experience. Passionate about the web, distributed systems and mobile technology. Advocate of agile practices and the software craftsmanship movement. Has been key in bringing Software Craftsmanship practices into several organizations.</p><p>Member of developer groups such as: London Software Craftsmanship Community, NSCoders and Agile Barcelona. Frequent speaker on subjects such as: Software Craftsmanship, web and mobile solutions.</p>
@@ -25,7 +25,7 @@
 
 - id: robert
   name: Robert Firek
-  image: /assets/img/custom/team/robert_firek.jpg
+  image: /assets/custom/img/team/robert_firek.jpg
   role: Software Craftsman
   fullDescription: >
       <p>Robert Firek is a software developer who has tasted many different flavours of programming. His broad range of experiences has helped to deliver quality software in many companies and organisations. He strives to create software according to the rule "Simplicity is the final achievement". As a Waterfall apostate, he encourages people to embrace Agile techniques.</p>
@@ -35,7 +35,7 @@
 
 - id: rob
   name: Robert Taylor
-  image: /assets/img/custom/team/rob_taylor.jpg
+  image: /assets/custom/img/team/rob_taylor.jpg
   role: Software Craftsman
   fullDescription: <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p><p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p><p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
   twitter: roberttaylor426
@@ -43,7 +43,7 @@
 
 - id: stevelydford
   name: Steve Lydford
-  image: /assets/img/custom/team/steve_lydford.jpg
+  image: /assets/custom/img/team/steve_lydford.jpg
   role: Head of Delivery 
   fullDescription: >
       <p>Steve is a Software Craftsman and author with over 18 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
@@ -52,7 +52,7 @@
 
 - id: ana
   name: Ana Nogal
-  image: /assets/img/custom/team/ana_nogal.jpg
+  image: /assets/custom/img/team/ana_nogal.jpg
   role: Software Craftsman
   fullDescription: <p>Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C. She had the opportunity to work in a wide variety of projects, with various languages and technologies for the past 20 years from client/server to web and mobile applications.</p>
   twitter: anainogal
@@ -60,14 +60,14 @@
 
 - id: anacelli
   name: Ana Rita Marchina
-  image: /assets/img/custom/team/ana_celli.jpg
+  image: /assets/custom/img/team/ana_celli.jpg
   role: Marketing Exec / Office Manager
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
 
 - id: alex
   name: Alessandro Di Gioia
-  image: /assets/img/custom/team/alex_digioia.jpg
+  image: /assets/custom/img/team/alex_digioia.jpg
   role: Software Craftsman
   fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
   twitter: Parajao
@@ -75,7 +75,7 @@
 
 - id: matthew
   name: Matthew Butt
-  image: /assets/img/custom/team/matthew_butt.jpg
+  image: /assets/custom/img/team/matthew_butt.jpg
   role: Software Craftsperson
   fullDescription: >
     <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since he started working with code in 2000 he has always focused on creating well-crafted software, and building close collaborative relationships within and beyond the technical team.</p>
@@ -86,7 +86,7 @@
 
 - id: giulia
   name: Giulia Mantuano
-  image: /assets/img/custom/team/giulia_mantuano.jpg
+  image: /assets/custom/img/team/giulia_mantuano.jpg
   role: UX Craftswoman
   fullDescription: >
     <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years, developing both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
@@ -99,7 +99,7 @@
 
 - id: liam
   name: Liam Griffin
-  image: /assets/img/custom/team/liam_griffin.jpg
+  image: /assets/custom/img/team/liam_griffin.jpg
   role: Software Craftsman
   fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
   twitter: gryffskin
@@ -107,7 +107,7 @@
 
 - id: sergio
   name: Sergio Rodrigo Royo
-  image: /assets/img/custom/team/sergio.jpg
+  image: /assets/custom/img/team/sergio.jpg
   role: Software Craftsman
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
   twitter: srodrigoDev
@@ -115,7 +115,7 @@
 
 - id: hkoundi
   name: Halima Koundi
-  image: /assets/img/custom/team/halima_koundi.jpg
+  image: /assets/custom/img/team/halima_koundi.jpg
   role: Software Craftswoman
   fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance, Halima has levelled up her engineering skills and embraced the values of software craftsmanship. As a skilled professional she aims at delivering value by building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing diversity to the tech community.</p>
   twitter: hkoundi
@@ -123,7 +123,7 @@
 
 - id: alvarogarcia
   name: Alvaro Garcia
-  image: /assets/img/custom/team/alvaro_garcia.jpg
+  image: /assets/custom/img/team/alvaro_garcia.jpg
   role: Software Craftsman
   fullDescription: >
     <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p>
@@ -134,7 +134,7 @@
 
 - id: carlos
   name: Carlos Morera de la Chica
-  image: /assets/img/custom/team/carlos_morera_de_la_chica.jpg
+  image: /assets/custom/img/team/carlos_morera_de_la_chica.jpg
   role: Software Craftsman
   fullDescription: <p>Carlos is a developer who is constantly looking for new ways to master the art of crafting software. He firmly believes in the software craftsmanship principles and bases his journey towards mastery on them.</p>
     <p>He has been working professionally as an Android developer for more than 3 years. His current focus is on mastering a new set of skills that will let him continue to grow and make progress in his career.</p>
@@ -143,7 +143,7 @@
 
 - id: chris
   name: Chris Jeffery
-  image: /assets/img/custom/team/chris_jeffery.jpg
+  image: /assets/custom/img/team/chris_jeffery.jpg
   role: Software Craftsman
   fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavaScript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
@@ -151,7 +151,7 @@
 
 - id: guillem
   name: Guillem Fernandez
-  image: /assets/img/custom/team/guillem_fernandez.jpg
+  image: /assets/custom/img/team/guillem_fernandez.jpg
   role: Software Craftsman
   fullDescription:
     <p>Guillem is a software developer that believes in creating code with dedication, time and care. Passionate about mobile development, has been bringing good practices and well crafted software to companies that wanted to move to mobile for the last seven years.</p>
@@ -162,7 +162,7 @@
 
 - id: cyplo
   name: Cyryl Płotnicki
-  image: /assets/img/custom/team/cyryl_plotnicki.jpg
+  image: /assets/custom/img/team/cyryl_plotnicki.jpg
   role: Software Craftsman
   fullDescription:
     <p> Cyryl spent most of his professional life building and maintaining larger backend systems, mainly within the .Net and JVM ecosystems. Gradually he became interested in the people management side of the work as well. Via this interest he found the software craftsmanship community and never looked back. He is focused on extracting clients' needs and helping them to get value out of the work quickly. </p>
@@ -173,7 +173,7 @@
 
 - id: christian
   name: Christian Panadero Martinez
-  image: /assets/img/custom/team/christian_panadero.jpg
+  image: /assets/custom/img/team/christian_panadero.jpg
   role: Software Craftsman
   fullDescription: >
     <p>Software craftsman who has worked in Spain (Madrid and Valencia) and now is based in London. Always interested in improving his skills.</p>
@@ -184,7 +184,7 @@
 
 - id: david_hall
   name: David Hall
-  image: /assets/img/custom/team/david_hall.jpg
+  image: /assets/custom/img/team/david_hall.jpg
   role: Head of Business Development
   fullDescription:
     <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
@@ -194,7 +194,7 @@
 
 - id: charlie
   name: Carlos Esteban Raffellini
-  image: /assets/img/custom/team/carlos_raffellini.jpg
+  image: /assets/custom/img/team/carlos_raffellini.jpg
   role: Apprentice
   fullDescription:
     <p>Carlos has worked in the e-commerece industry for over four years. He enjoys sharing and improving his software development knowledge.</p>
@@ -205,7 +205,7 @@
 
 - id: rachel
   name: Raquel M Carmena
-  image: /assets/img/custom/team/raquel_m_carmena.jpg
+  image: /assets/custom/img/team/raquel_m_carmena.jpg
   role: Software Craftsperson
   fullDescription:
     <p>Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things.</p>
@@ -216,7 +216,7 @@
 
 - id: francesco
   name: Francesco Gigli
-  image: /assets/img/custom/team/francesco_gigli.jpg
+  image: /assets/custom/img/team/francesco_gigli.jpg
   role: Software Craftsman
   fullDescription:
     <p>Francesco started in Italy as a Software Developer and System Administrator and his career changed dramatically when he arrived in London. He embraced DevOps, Self Organisation, and Software Craftsmanship. He implemented systems using Event Sourcing and React. He attends Open Conferences like SoCraTes and DevOpsDays.</p>
@@ -227,7 +227,7 @@
 
 - id: eriktorres
   name: Erik Torres Serrano
-  image: /assets/img/custom/team/erik_torres.jpg
+  image: /assets/custom/img/team/erik_torres.jpg
   role: Software Craftsman
   fullDescription:
     <p>Erik is a software developer with over ten years experience developing concurrent and distributed systems. He strongly believes in pragmatism, practice and team working.</p>
@@ -238,7 +238,7 @@
 
 - id: marcbadia
   name: Marc Badia Cendros
-  image: /assets/img/custom/team/marc_badia.jpg
+  image: /assets/custom/img/team/marc_badia.jpg
   role: Software Craftsman
   fullDescription:
    <p>It is well known that people are born with a bread under his arm. Marc had a keyboard.</p>
@@ -250,7 +250,7 @@
 
 - id: lucianopalma
   name: Luciano Palma
-  image: /assets/img/custom/team/luciano_palma.jpg
+  image: /assets/custom/img/team/luciano_palma.jpg
   role: Software Craftsperson
   fullDescription:
    <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
@@ -262,7 +262,7 @@
 
 - id: nacho
   name: Nacho Cougil
-  image: /assets/img/custom/team/nacho_cougil.jpg
+  image: /assets/custom/img/team/nacho_cougil.jpg
   role: Software Craftsman
   fullDescription:
    <p>Nacho started to play with computers at a very early age. As a kid, he starting playing with the neighbour's MSX and Commodore 64 computers. At some point, he learned how to write instructions for those computers to modify the games to his advantage. From that moment he was hooked.</p>
@@ -273,7 +273,7 @@
 
 - id: jorge
   name: Jorge Gueorguiev Garcia
-  image: /assets/img/custom/team/jorge_gueorguiev.jpg
+  image: /assets/custom/img/team/jorge_gueorguiev.jpg
   role: Software Craftsperson
   fullDescription:
     <p>Although he started early (with QuickBasic and Turbo Pascal), took him a while to center into the developer way of living. Nonetheless, he has more than 10 years experience as software developer at different levels. His main experience is around C# and .Net, but has a keen interest in other languages, especially around functional programming.</p>
@@ -284,7 +284,7 @@
 
 - id: marco
   name: Marco Consolaro
-  image: /assets/img/custom/team/marco_consolaro.jpg
+  image: /assets/custom/img/team/marco_consolaro.jpg
   role: Software Craftsman
   fullDescription:
     <p>Marco learned to code in Basic on an MSX at a young age. He didn't follow his father's wish for him to study chemistry but pursued instead what he always considered his natural vocation and graduated in Computer Science at Venice University Ca' Foscari in 2001.</p>
@@ -296,7 +296,7 @@
 
 - id: nachogarcia
   name: Nacho García
-  image: /assets/img/custom/team/nacho_garcia.jpg
+  image: /assets/custom/img/team/nacho_garcia.jpg
   role: Software Craftsman
   fullDescription: >
     <p>Since the start of his career, Nacho has had the pleasure to be around great people who have encouraged him to join communities and follow good practices. As such, he loves developing and improving his skills on a daily basis. To him, it doesn't matter if it's back-end, front-end or automating infrastructure: he will always try to understand how things works.</p>
@@ -306,7 +306,7 @@
 
 - id: ivanbadia
   name: Ivan Badia
-  image: /assets/img/custom/team/ivan_badia.jpg
+  image: /assets/custom/img/team/ivan_badia.jpg
   role: Software Craftsman
   fullDescription:
     <p>Ivan is a software developer eager to learn new skills and technologies. He is interested in creating well-crafted software and he is a firm believer in agile values and its potential to build happy teams which deliver exceptional products.</p>
@@ -317,7 +317,7 @@
 
 - id: lilianacarneiro
   name: Liliana Carneiro
-  image: /assets/img/custom/team/liliana_carneiro.jpg
+  image: /assets/custom/img/team/liliana_carneiro.jpg
   role: Office Manager
   fullDescription:
     <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
@@ -327,7 +327,7 @@
 
 - id: dancohen
   name: Dan Cohen
-  image: /assets/img/custom/team/dan_cohen.jpg
+  image: /assets/custom/img/team/dan_cohen.jpg
   role: Software Craftsman
   fullDescription:
     <p>Dan first started coding with the wave of independant game developers on Newgrounds in the early 2000s. A big lover of hackathons and startup culture, he loves to build and experiment with code.</p>
@@ -338,7 +338,7 @@
 
 - id: andrzejrehmann
   name: Andrzej Rehmann
-  image: /assets/img/custom/team/andrzej_rehmann.jpg
+  image: /assets/custom/img/team/andrzej_rehmann.jpg
   role: Software Craftsman
   fullDescription:
     <p>Andrzej is a software developer with a weak spot for automation done right.</p>
@@ -350,7 +350,7 @@
  
 - id: danielbergquist
   name: Daniel Bergquist
-  image: /assets/img/custom/team/daniel_bergquist.jpg
+  image: /assets/custom/img/team/daniel_bergquist.jpg
   role: Apprentice
   fullDescription:
     <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
@@ -360,7 +360,7 @@
 
 - id: richardwild
   name: Richard Wild
-  image: /assets/img/custom/team/richard_wild.jpg
+  image: /assets/custom/img/team/richard_wild.jpg
   role: Software Craftsman
   fullDescription:
     <p>Richard has been programming for his living since 1998, but he has loved the craft ever since teaching himself assembly language as a teenager on the family computer.</p>
@@ -371,7 +371,7 @@
 
 - id: christinaripleygonzalez
   name: Christina Ripley-Gonzalez
-  image: /assets/img/custom/team/christina_ripley.jpg
+  image: /assets/custom/img/team/christina_ripley.jpg
   role: Apprentice
   fullDescription:
     <p>Christina has been working as a software developer and team leader in the .NET ecosystem for a number of years. She particularly enjoys process automation and generally making other peoples jobs easier.</p>
@@ -382,7 +382,7 @@
 
 - id: neilkidd
   name: Neil Kidd
-  image: /assets/img/custom/team/neil_kidd.jpg
+  image: /assets/custom/img/team/neil_kidd.jpg
   role: Software Craftsman
   fullDescription:
     <p>Since graduating from Staffordshire University in 2000, Neil has worked as a software developer and team lead in the .Net ecosystem.</p>
@@ -394,7 +394,7 @@
 
 - id: terrybalfour 
   name: Terry Balfour 
-  image: /assets/img/custom/team/terry_balfour.jpg
+  image: /assets/custom/img/team/terry_balfour.jpg
   role: Software Craftsman 
   fullDescription:
     <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects.  He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p> 
@@ -404,7 +404,7 @@
 
 - id: danielperez 
   name: Daniel Pérez 
-  image: /assets/img/custom/team/daniel_perez.jpg
+  image: /assets/custom/img/team/daniel_perez.jpg
   role: Apprentice 
   fullDescription:
     <p>At the age of twelve Daniel knew that he wanted to work with something related to computers. At nineteen he started studying Software Development at University of Girona.</p>
@@ -416,7 +416,7 @@
 
 - id: kevinokrah 
   name: Kevin Okrah 
-  image: /assets/img/custom/team/kevin_okrah.jpg
+  image: /assets/custom/img/team/kevin_okrah.jpg
   role: Analyst Craftsman
   fullDescription:
     <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>

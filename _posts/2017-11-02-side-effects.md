@@ -11,7 +11,7 @@ canonical:
   name: Christian's personal blog
   href: http://panavtec.me/functional-programming-notes-side-effects
 image:
-  src: /assets/img/custom/blog/2017-11-02-side-effects.jpg
+  src: /assets/custom/img/blog/2017-11-02-side-effects.jpg
 tags:
 - functional programming
 - scala

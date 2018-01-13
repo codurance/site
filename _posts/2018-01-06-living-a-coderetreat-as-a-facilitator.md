@@ -7,7 +7,7 @@ description: Details, thoughts and lessons learned about Global Day of Coderetre
 date: 2018-01-06 18:00:00 +00:00
 author: Raquel M Carmena
 image:
-   src: /assets/img/custom/events/global-day.png
+   src: /assets/custom/img/events/global-day.png
 tags:
 - coderetreat
 - GDCR
@@ -57,7 +57,7 @@ There were common rules for all the sessions:
 The problem to solve in a Global Day of Coderetreat is <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game of Life</a>. It's a game which starts with an initial generation of living cells on a board and it evolves automatically to next generations with these rules:
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2018-01-06-living-a-coderetreat-as-a-facilitator/rules.png" alt="Game Rules" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-01-06-living-a-coderetreat-as-a-facilitator/rules.png" alt="Game Rules" class="img img-responsive"/>
 </center>
 <br/>
 

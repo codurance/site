@@ -5,7 +5,7 @@ title: 'Testing Spark Streaming: Unit testing'
 date: 2016-08-02 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/unit_testing.jpg
+    src: /assets/custom/img/blog/unit_testing.jpg
     attribution:
       text: Untitled by Daida Medina
       href: https://www.instagram.com/p/BHiJPKrBb-w/?taken-by=thelastfreeusername

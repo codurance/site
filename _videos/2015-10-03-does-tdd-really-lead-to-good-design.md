@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: does-tdd-really-lead-to-good-design
 image:
-    src: /assets/img/custom/videos/screencast-intro-does-tdd-really-lead-to-good-design.jpg
+    src: /assets/custom/img/videos/screencast-intro-does-tdd-really-lead-to-good-design.jpg
 title: "Does TDD really lead to good design"
 hidden: true
 video-url: https://www.youtube.com/embed/ApsW72JSVJM
