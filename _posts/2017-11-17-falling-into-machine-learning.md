@@ -10,7 +10,7 @@ canonical:
     name: my personal blog
     href: http://srodrigo.me/falling-into-machine-learning/
 image:
-    src: /assets/img/custom/blog/2017-11-21-falling-into-machine-learning.png
+    src: /assets/custom/img/blog/2017-11-21-falling-into-machine-learning.png
     attribution:
       text: by Alex Knight
       href: https://unsplash.com/photos/2EJCSULRwC8

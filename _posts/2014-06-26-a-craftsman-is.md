@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/85719270870/a-software-craftsman-is
 image:
-    src: /assets/img/custom/blog/concentration.jpg
+    src: /assets/custom/img/blog/concentration.jpg
     attribution:
         text: Concentration..., by Simply CVR
         href: https://www.flickr.com/photos/seeveeaar/3773849114

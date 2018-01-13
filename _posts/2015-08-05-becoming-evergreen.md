@@ -5,7 +5,7 @@ title: 'Becoming Evergreen'
 date: 2015-08-05 21:00:00 +01:00
 author: Steve Lydford
 image:
-    src: /assets/img/custom/blog/becoming-evergreen.jpg
+    src: /assets/custom/img/blog/becoming-evergreen.jpg
     attribution:
         text: Evergreen, by Dan Cook
         href: https://flic.kr/p/dtRXDQ

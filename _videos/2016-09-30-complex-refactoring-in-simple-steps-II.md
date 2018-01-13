@@ -3,7 +3,7 @@ author: Matthew Butt
 layout: video
 name: complex-refactoring-in-simple-steps-II
 image:
- src: /assets/img/custom/videos/complex-refactoring-in-simple-steps-II.jpg
+ src: /assets/custom/img/videos/complex-refactoring-in-simple-steps-II.jpg
 
 title: "Complex refactoring in simple steps Part II"
 hidden: true

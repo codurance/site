@@ -4,7 +4,7 @@ name: Approaching Outside-in TDD on Android III
 title: 'Approaching Outside-in TDD on Android III'
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/outside-in-3.jpg
+    src: /assets/custom/img/blog/outside-in-3.jpg
 tags: 
 - android
 - tdd 

@@ -6,7 +6,7 @@ title: 'My first steps as an embedded software craftswoman'
 date: 2017-08-20 12:00:00 +00:00
 author: Raquel M Carmena
 image:
-  src: /assets/img/custom/blog/2017-08-20-my-first-steps-as-an-embedded-sw-craftswoman.jpg
+  src: /assets/custom/img/blog/2017-08-20-my-first-steps-as-an-embedded-sw-craftswoman.jpg
 tags:
 - software craftsmanship
 - team

@@ -5,7 +5,7 @@ title: Naming Test Classes and Methods
 date: 2014-12-13 00:27:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2014_12_12/you_are_going_to_call_me_what.jpg
+    src: /assets/custom/img/blog/2014_12_12/you_are_going_to_call_me_what.jpg
 tags:
 - craftsmanship
 - tdd
@@ -22,11 +22,11 @@ In this post I'll try to describe how I generally think about my tests. Due to t
 
 This is the template I normally use to help me decide what to test and how to name my test methods according to the expected behaviour:
 
-![]({{site.baseurl}}/assets/img/custom/blog/2014_12_12/class_and_method_name_template.jpg)
+![]({{site.baseurl}}/assets/custom/img/blog/2014_12_12/class_and_method_name_template.jpg)
 
 This approach forces me to think about the behaviour I want my class to have, making it easier to write my first and subsequent tests. Even at a unit test level, I try my best to name my test methods in a way that a business person could understand, rarely using any technical language. Here are a few examples:
 
-![]({{site.baseurl}}/assets/img/custom/blog/2014_12_12/class_methods_example.jpg)
+![]({{site.baseurl}}/assets/custom/img/blog/2014_12_12/class_methods_example.jpg)
 
 Trying to form a sentence combining the name of the test class and the name of the test method forces me to really focus on the behaviour I want to test. Once I figure that out, it becomes quite easy to write my assertion since I just need to translate English to the programming language I'm using. 
 
@@ -34,7 +34,7 @@ One thing to notice is that I normally split the body of my tests into 3 blocks 
 
 And here are the 5 steps I normally follow when creating a new test class:
 
-![]({{site.baseurl}}/assets/img/custom/blog/2014_12_12/test_in_5_steps.jpg)
+![]({{site.baseurl}}/assets/custom/img/blog/2014_12_12/test_in_5_steps.jpg)
 
 For subsequent test methods I iterate through steps 2 to 5. The skeleton of the production code is generated from the test class. 
 

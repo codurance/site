@@ -5,7 +5,7 @@ title: Dangerous Words
 date: 2015-03-29 21:22:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/2015_03_29_dangerous_words/wittgenstein.jpg
+    src: /assets/custom/img/blog/2015_03_29_dangerous_words/wittgenstein.jpg
 tags:
 - naming
 - philosophy

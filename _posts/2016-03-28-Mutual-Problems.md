@@ -5,7 +5,7 @@ title: Mutual Problems
 date: 2016-03-28 00:00:00 +00:00
 author: Robert Firek
 image:
-    src: /assets/img/custom/blog/2016-03-28-https.jpg
+    src: /assets/custom/img/blog/2016-03-28-https.jpg
     attribution:
         text: Image by Sean MacEntee (CC BY 2.0)
         href: https://www.flickr.com/photos/smemon/15944989872/in/photostream/

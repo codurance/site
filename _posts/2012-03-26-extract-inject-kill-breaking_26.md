@@ -19,7 +19,7 @@ it's good to finish the
 [exercise](/2012/03/06/extract-inject-kill-breaking_06/)
 just for completion's sake. Here is where we stopped:
 
-![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/hierarchies_2.png)
+![Hierarchies]({{site.baseurl}}/assets/custom/img/blog/hierarchies_2.png)
 Let's have a look at the VoucherPricingService, that now is the only
 concrete class at the bottom of our hierarchy. 
 
@@ -361,7 +361,7 @@ public class PricingService {
 }
 ```
 
-![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/class_hierarchies_v4.png)
+![Hierarchies]({{site.baseurl}}/assets/custom/img/blog/class_hierarchies_v4.png)
 
 
 Our hierarchy is another level short. The only thing we need to do now
@@ -377,12 +377,12 @@ step anymore. Let's have a look at the final result.
 
 Here is the diagram representing where we started:
 
-![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/hierarchies.png)
+![Hierarchies]({{site.baseurl}}/assets/custom/img/blog/hierarchies.png)
 
 After the last Extract, Inject, Kill refactoring, this is what we've
 got:
 
-![Hierarchies]({{site.baseurl}}/assets/img/custom/blog/hierarchies_classes_final.png)
+![Hierarchies]({{site.baseurl}}/assets/custom/img/blog/hierarchies_classes_final.png)
 
 The cool thing about the final model pictured above is that now we don't
 have any abstract classes anymore. All classes and methods are concrete

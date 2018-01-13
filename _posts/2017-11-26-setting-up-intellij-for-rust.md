@@ -10,7 +10,7 @@ canonical:
     href: http://blog.hackingdan.com/2017/11/setting-up-IntelliJ-for-rust
 description: Instructions on how to set up IntelliJ for Rust as an IDE conducive to TDD
 image:
-    src: /assets/img/custom/blog/intellij-rust.jpg
+    src: /assets/custom/img/blog/intellij-rust.jpg
 tags: 
 - TDD
 - rust

@@ -5,7 +5,7 @@ title: 'Premature Microservices'
 date: 2016-01-15 00:20:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/unbalanced-tree.jpg
+    src: /assets/custom/img/blog/unbalanced-tree.jpg
 alias: [/2016/01/15/premature-microservices/]
 tags:
 - microservices

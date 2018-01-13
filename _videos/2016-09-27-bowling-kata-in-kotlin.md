@@ -3,7 +3,7 @@ author: Sergio Rodrigo Royo
 layout: video
 name: bowling-kata-in-kotlin
 image:
- src: /assets/img/custom/videos/bowling-kata-kotlin.png
+ src: /assets/custom/img/videos/bowling-kata-kotlin.png
 
 title: "Bowling Kata in Kotlin"
 hidden: true

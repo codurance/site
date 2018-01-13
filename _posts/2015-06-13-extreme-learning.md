@@ -5,7 +5,7 @@ title: A really good way to make your learning more effective
 date: 2015-06-13 10:00:00 +00:00
 author: Toby Retallick
 image:
-    src: /assets/img/custom/blog/2015-06-13-extreme-learning/tractor_simulator.jpg
+    src: /assets/custom/img/blog/2015-06-13-extreme-learning/tractor_simulator.jpg
 ---
 
 Last weekend I was lucky enough to attend [Socrates UK 2015](http://socratesuk.org), an annual international software craftsmanship gathering set in the scenic surroundings of Farnham, Oxfordshire. If you have not done so, I definitely recommend checkout out this conference, either in England or the other Socrates events taking place across Europe (Germany, Belgium, France ...). 

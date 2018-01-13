@@ -5,7 +5,7 @@ title: Codurance - Looking forward to 2015
 date: 2014-11-26 18:31:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/codurance_2015.jpg
+    src: /assets/custom/img/blog/codurance_2015.jpg
 tags:
 - craftsmanship
 - codurance

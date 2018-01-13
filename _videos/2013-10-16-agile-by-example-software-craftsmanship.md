@@ -4,7 +4,7 @@ layout: video
 name: agile-by-example-software-craftsmanship
 location: "Warsaw, Poland"
 image:
-    src: /assets/img/custom/videos/agile-by-example-software-craftsmanship.jpg
+    src: /assets/custom/img/videos/agile-by-example-software-craftsmanship.jpg
 title: "AgileByExample: Software Craftsmanship"
 hidden: true
 video-url: https://www.youtube.com/embed/-czaKO_8jc4?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx

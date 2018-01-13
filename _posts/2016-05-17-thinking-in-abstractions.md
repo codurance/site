@@ -5,7 +5,7 @@ title: Thinking in Abstractions
 date: 2016-06-17 00:20:00 +00:00
 author: Mashooq Badar 
 image:
-   src: /assets/img/custom/blog/abstractions.jpg
+   src: /assets/custom/img/blog/abstractions.jpg
 category: software-craftsmanship
 alias: [/2016/06/17/thinking-in-abstractions/]
 tags:

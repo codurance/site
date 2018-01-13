@@ -5,7 +5,7 @@ title: 'Maven demystified'
 date: 2016-08-19 10:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/maven/maven-logo.png
+    src: /assets/custom/img/blog/maven/maven-logo.png
     attribution:
       text: Maven 
       href: https://maven.apache.org/
@@ -91,7 +91,7 @@ Some phases have default goals. For the default lifecycle, default goals are pro
 In addition to the default goals, extra goals can be defined by configuring plugins in the project's POM file. Therefore, a particular build phase can be composed of multiple goals. If a phase does not have any goals, it won't be executed as part of the lifecycle.
 
 <p align="center" >
-<img src="{{ site.baseurl }}/assets/img/custom/blog/maven/maven-lifecycle.png" alt="Build lifecycle"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/maven/maven-lifecycle.png" alt="Build lifecycle"/>
 </p>
 
 ## Standalone Plugins

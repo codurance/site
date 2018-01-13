@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://tobyret.github.io/Single-Responsibility-Principle
 image:
-    src: /assets/img/custom/blog/2016-06-23-single-responsibility-principle.jpg
+    src: /assets/custom/img/blog/2016-06-23-single-responsibility-principle.jpg
 category: software-craftsmanship
 alias: [/2016/06/22/Single-Responsibility-Principle]
 tags:

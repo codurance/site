@@ -5,7 +5,7 @@ title: Applicative Functors and data validation, part II
 date: 2018-01-11 07:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-   src: /assets/img/custom/blog/haskell-logo.png
+   src: /assets/custom/img/blog/haskell-logo.png
 tags:
 - functional programming
 - Haskell

@@ -6,7 +6,7 @@ title: 'Introducing the Codurance Newsletter'
 date: 2017-05-05 09:00:00 +00:00
 author: Mashooq Badar
 image:
-  src: /assets/img/custom/newsletter/newsletter.png
+  src: /assets/custom/img/newsletter/newsletter.png
 tags:
 ---
 

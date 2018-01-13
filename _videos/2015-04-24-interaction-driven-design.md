@@ -4,7 +4,7 @@ layout: video
 name: interaction-driven-design
 location: "Craft - Budapest"
 image:
-    src: /assets/img/custom/videos/screencast-intro-interaction-driven-design.jpg
+    src: /assets/custom/img/videos/screencast-intro-interaction-driven-design.jpg
 title: "Interaction Driven Design"
 hidden: true
 video-url: https://www.ustream.tv/embed/recorded/61480606

@@ -5,7 +5,7 @@ title: Does TDD really lead to good design?
 date: 2015-05-12 14:32:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015_05_12_does_tdd_lead_to_good_design.jpg
+    src: /assets/custom/img/blog/2015_05_12_does_tdd_lead_to_good_design.jpg
 tags:
 - craftsmanship
 - quality

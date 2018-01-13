@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: teal-organisations
 image:
- src: /assets/img/custom/videos/teal-organisations.jpg
+ src: /assets/custom/img/videos/teal-organisations.jpg
 
 title: "Teal Organisations"
 hidden: true

@@ -5,7 +5,7 @@ title: Interview with Sandro Mancuso - Software Craftsmanship
 date: 2015-09-10 16:36:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-09-10-interview-jaxenter.jpg
+    src: /assets/custom/img/blog/2015-09-10-interview-jaxenter.jpg
 tags:
 - craftsmanship
 ---

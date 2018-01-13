@@ -4,7 +4,7 @@ layout: video
 name: ugtastic-interviews-sandro-mancuso
 location: "Software Craftsmanship North America (SCNA) - Chicago, USA"
 image:
-    src: /assets/img/custom/videos/ugtastic-interviews-sandro-mancuso.jpg
+    src: /assets/custom/img/videos/ugtastic-interviews-sandro-mancuso.jpg
 title: "UGtastic Interviews Sandro Mancuso"
 hidden: true
 video-url: https://www.youtube.com/embed/WHsoSYPvDec?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx

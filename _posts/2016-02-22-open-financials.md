@@ -5,7 +5,7 @@ title: Open Financials
 date: 2016-02-22 14:54:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2016-02-22-transparency.png
+    src: /assets/custom/img/blog/2016-02-22-transparency.png
 tags:
 - open financials
 - open-book management

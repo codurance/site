@@ -5,7 +5,7 @@ title: Learning from our failures
 date: 2015-07-14 17:00:00 +00:00
 author: Franziska Sauerwein
 image:
-    src: /assets/img/custom/blog/failure.jpg
+    src: /assets/custom/img/blog/failure.jpg
     attribution:
         text: Ahhhhhhh CC-BY Kenny Louie
         href: https://flic.kr/p/88qwuz

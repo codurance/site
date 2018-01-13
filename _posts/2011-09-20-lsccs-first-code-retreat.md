@@ -9,7 +9,7 @@ date: 2011-09-20 09:59:00 +01:00
 On September 10th
 we had the London Software Craftsmanship Community's [First Code Retreat](http://www.meetup.com/london-software-craftsmanship/events/27600561/).
 
-![Code Retreat]({{site.baseurl}}/assets/img/custom/blog/coderetreat01.jpg)
+![Code Retreat]({{site.baseurl}}/assets/custom/img/blog/coderetreat01.jpg)
 
 We had 22 passionate and talented developers working in Java, C\#, Ruby,
 Python and JavaScript. Some of them travelled two hours, waking up as
@@ -30,7 +30,7 @@ in the world. Imagine what would be your idea of perfect code. Now
 compare it to what you do and how you code in your day-to-day job.
 
 
-![Perfect Code Gap]({{site.baseurl}}/assets/img/custom/blog/PerfectCode_Gap.jpg)
+![Perfect Code Gap]({{site.baseurl}}/assets/custom/img/blog/PerfectCode_Gap.jpg)
 
 This gap is the measure of how much you suck. The bigger the gap is, the
 more you suck. The smaller the gap is, the less you suck. :)
@@ -63,7 +63,7 @@ I also explained the four rules of simple design:
 ###Format of the day
 
 
-![Code Retreat]({{site.baseurl}}/assets/img/custom/blog/coderetreat04.jpg)
+![Code Retreat]({{site.baseurl}}/assets/custom/img/blog/coderetreat04.jpg)
 
 After a good breakfast, developers formed pairs and worked on the
 [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). We had
@@ -106,7 +106,7 @@ session new pairs were formed and worked on the same problem.
 -   **Pub**
 
 
-![Code Retreat]({{site.baseurl}}/assets/img/custom/blog/coderetreat11.jpg)
+![Code Retreat]({{site.baseurl}}/assets/custom/img/blog/coderetreat11.jpg)
 
 During the sessions, I also asked them to try different testing
 approaches: outside-in and inside-out. The reason was to compare how
@@ -123,7 +123,7 @@ need to think about for future code retreats. How can I balance the
 challenges so everyone feels, well, challenged.
 
 
-![Code Retreat]({{site.baseurl}}/assets/img/custom/blog/coderetreat15.jpg)
+![Code Retreat]({{site.baseurl}}/assets/custom/img/blog/coderetreat15.jpg)
 
 Overall, we all had a fantastic day. There were many very interesting
 discussions during the retrospectives and, according to the feedback,

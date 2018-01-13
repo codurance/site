@@ -5,7 +5,7 @@ title: 'My first couple of months at Codurance'
 date: 2015-11-22 09:00:00 +00:00
 author: Mani Sarkar
 image:
-    src: "/assets/img/custom/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
+    src: "/assets/custom/img/blog/Five\ Characteristics\ of\ a\ Great\ Company\ Culture.jpg"
     attribution:
         text: huddle by Jacqueline Harriet
         href: https://www.flickr.com/photos/jacquelineharriet/6870087778/
@@ -85,7 +85,7 @@ It is a privilege to be able to work alongside very experienced craftsmen from o
 
 This is my first job where the company has a completely flat hierarchy and where we share similar values.
 
-<center><img src="{{ site.baseurl }}/assets/img/custom/blog/greatCompanyCulture.jpg" class="img-responsive" width="95%" height="95%"/></center>
+<center><img src="{{ site.baseurl }}/assets/custom/img/blog/greatCompanyCulture.jpg" class="img-responsive" width="95%" height="95%"/></center>
 
 
 ### Closing note

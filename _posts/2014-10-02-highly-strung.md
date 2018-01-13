@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/98472746240/highly-strung
 image:
-    src: /assets/img/custom/blog/highly-strung.jpg
+    src: /assets/custom/img/blog/highly-strung.jpg
 tags:
 - design
 - correctness

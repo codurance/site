@@ -4,7 +4,7 @@ name: Approaching Outside-in TDD on Android II
 title: 'Approaching Outside-in TDD on Android II'
 author: Carlos Morera de la Chica
 image:
-    src: /assets/img/custom/blog/outside-in-2.jpg
+    src: /assets/custom/img/blog/outside-in-2.jpg
 tags: 
 - android
 - tdd 
@@ -54,7 +54,7 @@ We will see the collaborators in more detail later on, while we implement them.
 
 Once we have finished writing the acceptance test and we see it <b>failing for the right reason</b> (The view is not showing the statement), we will dive into the inner loop and start writing the individual pieces required for the feature.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/acc2.png" alt="Outside-in acceptance test coverage" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/acc2.png" alt="Outside-in acceptance test coverage" class="img-responsive"/>
 
 <h2>Inner loop - Unit test</h2>
 

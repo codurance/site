@@ -5,7 +5,7 @@ title: Database Testing With tSQLt
 date: 2016-10-06 10:20:00 +00:00
 author: Halima Koundi
 image:
-   src: /assets/img/custom/blog/db-testing/db-testing.jpg
+   src: /assets/custom/img/blog/db-testing/db-testing.jpg
 tags:
 - ms sql server 
 - database
@@ -42,13 +42,13 @@ The tSQLt [open source](https://github.com/tSQLt-org/tSQLt) framework allows us 
 
 Once you have SQL Server Express up and running, and MSSQL Management Studio installed, open the latter and connect to your server.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-1.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-1.png" alt="" class="img-responsive"/>
 
 The tSQLt team provides a quick start example database and a set of tests to help developers get started quickly on how the framework works.
 Let’s try the example together.
 First unzip the tSQLt folder you downloaded, and make sure that CLRs are enabled on your development server. Enabling [CLR integration](https://msdn.microsoft.com/en-us/library/ms131048.aspx) allows us to run managed code, such as C#, on our SQL Server database.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-2.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-2.png" alt="" class="img-responsive"/>
 
 Open the Example.sql file that you will find within the unzipped folder, and execute it in your database server. This will create a test database named `tSQLt_Example`.
 
@@ -56,18 +56,18 @@ Once your database is created, open a new query window on that DB and run the fo
 `EXEC tSQLt.RunAll`
 This is a command to run all the tests. You should see a failing test in the result screen:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-3.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-3.png" alt="" class="img-responsive"/>
 
 Test case `number 11`, named "test ready for experimentation if 2 particles", is failing. Let’s open the file and see what’s wrong with it; we will need to navigate to the `stored procedures` folder to find the test.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-4.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-4.png" alt="" class="img-responsive"/>
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-5.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-5.png" alt="" class="img-responsive"/>
 
 The failing test is calling the `IsExperimentReady`  function and checks that it returns 1 when the particle table has two particles.
 Looking at the function, it seems that it is not counting the number of rows in the `Particle` table, and it is not doing the right checks.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/db-testing-6.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-6.png" alt="" class="img-responsive"/>
 
 Once we’ve solved the issue, we can run the tests again and see that they are all passing now.
 
@@ -80,6 +80,6 @@ Then we run the test by calling the function under test, knowing that it should 
 After the test has run wrapped inside the transaction, this transaction is rolled back. This will revert all the changes made to the mocked table.
 The test results that were stored in temporary fields are then saved in a test result table.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/db-testing/TestingWithFakeTables.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/TestingWithFakeTables.png" alt="" class="img-responsive"/>
 
 In this first blog post we learned about database testing, and how the tSQLt testing framework works. In the next post, we will go beyond the quick start example and see how to approach legacy transact-SQL, implementing tests into an existing database.

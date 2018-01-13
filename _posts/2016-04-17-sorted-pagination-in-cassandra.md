@@ -5,7 +5,7 @@ title: 'Sorted pagination in Cassandra'
 date: 2016-04-17 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/cassandra.png
+    src: /assets/custom/img/blog/cassandra.png
     attribution:
       text: bricked rainbow by fusion-of-horizons
       href: https://www.flickr.com/photos/fusion_of_horizons/3549626324

@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/77184255303/pairing-without-programming
 image:
-    src: /assets/img/custom/blog/duet.jpg
+    src: /assets/custom/img/blog/duet.jpg
     attribution:
         text: Sheet Music, by Michael Janssen
         href: http://www.flickr.com/photos/jamuraa/5522007940/

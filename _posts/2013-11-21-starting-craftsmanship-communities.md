@@ -5,7 +5,7 @@ title: Starting a Software Craftsmanship Community
 date: 2013-11-21 23:56:00.000000000 +01:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/live-community.jpeg
+    src: /assets/custom/img/blog/live-community.jpeg
 tags:
 - craftsmanship
 - community

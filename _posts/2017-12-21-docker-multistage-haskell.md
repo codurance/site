@@ -8,7 +8,7 @@ author: Liam Griffin
 layout: post
 asset-type: post
 image:
-    src: /assets/img/custom/blog/2017-12-21-docker-multistage-haskell.jpg
+    src: /assets/custom/img/blog/2017-12-21-docker-multistage-haskell.jpg
 canonical:
     name: my personal blog
     href: https://medium.com/@Gryff

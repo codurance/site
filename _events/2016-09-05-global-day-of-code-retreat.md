@@ -5,7 +5,7 @@ layout: event
 name: global-day-of-code-retreat
 location: "Global Day of Code Retreat 2016, London, United Kingdom"
 image:
-    src: /assets/img/custom/events/global-day.png
+    src: /assets/custom/img/events/global-day.png
 title: "Global Day of Code Retreat 2016"
 hidden: true
 event-dates: 

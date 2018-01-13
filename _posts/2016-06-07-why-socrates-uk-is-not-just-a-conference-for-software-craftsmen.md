@@ -5,7 +5,7 @@ title: 'Why SoCraTes UK is not just a conference for Software Craftsmen.'
 date: 2016-06-07 15:20:00 +00:00
 author: Giulia Mantuano
 image:
-    src: /assets/img/custom/blog/socrates.jpg
+    src: /assets/custom/img/blog/socrates.jpg
 category: software-craftsmanship
 alias: [/2016/06/07/why-socrates-uk-is-not-just-a-conference-for-software-craftsmen/]
 tags:
@@ -34,4 +34,4 @@ This is a basic rule that can be applied not only to design but also to our dail
 
 There are big differences in being a Developer or a Designer, but in the end we are both focused on creating meaningful and engaging interactive experiences. That's why I went to SoCraTes UK: to learn more about my teammates' world in order to improve our communication and collaboration.
 
-[Download the session presentation “Interaction Design: 5 principles to craft better interfaces”](/assets/pdf/custom/blog/interactionDesign.pdf)
+[Download the session presentation “Interaction Design: 5 principles to craft better interfaces”](/assets/custom/pdf/custom/blog/interactionDesign.pdf)

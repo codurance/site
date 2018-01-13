@@ -5,7 +5,7 @@ title: 'Working with SLAs'
 date: 2015-05-19 14:00:00 +01:00
 author: Steve Lydford
 image:
-    src: /assets/img/custom/blog/2015-05-19-working-with-slas/guarantee.jpg
+    src: /assets/custom/img/blog/2015-05-19-working-with-slas/guarantee.jpg
     attribution:
         text: WmRogers_guarantee, by Nancy Gluck
         href: https://flic.kr/p/5KxiDX

@@ -5,7 +5,7 @@ title: 'Three pillars of Continuous Delivery'
 date: 2016-08-14 00:00:00 +00:00
 author: Robert Firek
 image:
-    src: /assets/img/custom/blog/pillars.jpg
+    src: /assets/custom/img/blog/pillars.jpg
     attribution:
       text: Untitled by Donovan Christian (CC)
       href: https://www.flickr.com/photos/donovanchristian/6208220715/

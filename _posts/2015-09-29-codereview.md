@@ -5,7 +5,7 @@ title: 'Code review: Why are we doing it?'
 date: 2015-09-29 00:20:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-09-29-codereview.jpg
+    src: /assets/custom/img/blog/2015-09-29-codereview.jpg
 tags:
 - craftsmanship
 - codereview

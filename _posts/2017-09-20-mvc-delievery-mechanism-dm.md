@@ -6,7 +6,7 @@ title: MVC, Delivery Mechanism and Domain Model
 date: 2017-09-20 01:00:00 +00:00
 author: Sandro Mancuso
 image:
-   src: /assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png
+   src: /assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png
 tags:
 - craftsmanship
 - software design
@@ -19,7 +19,7 @@ Model-View-Controller (or MVC for short) is one of the most misunderstood design
 The main idea behind MVC was to keep the presentation and business logic decoupled from each other.
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc.png" alt=“MVC” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc.png" alt=“MVC” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -38,7 +38,7 @@ In the early days of the web, most MVC frameworks provided a way to generate the
 **Fully Coupled Server-side MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-all-server.png" alt="Full server-side MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-all-server.png" alt="Full server-side MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
@@ -47,7 +47,7 @@ As the web evolved, the need for better usability increased and with it the dema
 **Decoupled View MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-decopled-view.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-decopled-view.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
@@ -56,7 +56,7 @@ But that was not enough. We still had problems. The full application had to be r
 **Decoupled Model MVC**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-decopled-model.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-decopled-model.png" alt="Decoupled View MVC" class="img img-responsive" style="height: 65%; width: 65%;"/>
 </center>
 <br/>
 
@@ -67,7 +67,7 @@ Although we changed were the View and Controller lived over time, where does MVC
 In [Domain Driven Design(DDD)][16] applications are normally split into 4 layers: 
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/dddlayered.png" alt=“DDD Layered Architecture” class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/dddlayered.png" alt=“DDD Layered Architecture” class="img img-responsive"/>
 </center>
 <br/>
 
@@ -91,7 +91,7 @@ There is a difference between system features and how they are delivered to the 
 MVC is a macro pattern that can be used as a good guideline to keep the delivery mechanism decoupled from the domain model. With that in mind, if we superimpose the delivery mechanism, domain model on the MVC structure we will have the following:
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png" alt=“MVC, Delivery Mechanism and Domain Model” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png" alt=“MVC, Delivery Mechanism and Domain Model” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -102,7 +102,7 @@ When it comes to MVC frameworks, they should be restricted to the View and Contr
 Many web frameworks allow us to transform entities into JSON/XML and vice-versa. Some do that via [annotations][18], others do it via [reflection][19] or name convention. It is also a common practice to use ORM frameworks to automatically persist and retrieve data from a database using our entities. Similar to the MVC frameworks, we need to add ORM annotations to our entities, or rely on reflection or name convention. With annotations we explicitly make our Model layer to know about the Controller and persistency, causing a circular dependency. If we rely on naming convention or reflection, we have a worse problem because the coupling is still there but is not visible. If we change an Entity, we may not know that we are changing the API or Database. 
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/entity-json-db-mapper.png" alt=“JSON / Database Entity Coupling” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/entity-json-db-mapper.png" alt=“JSON / Database Entity Coupling” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/> 
 
@@ -119,7 +119,7 @@ While the application is small, we can keep the separation between delivery mech
 **Embedded Domain Model**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/embedded-dm.png" alt=“Embedded Domain Model” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/embedded-dm.png" alt=“Embedded Domain Model” class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/> 
 
@@ -128,7 +128,7 @@ As the application grows and we want to add different delivery mechanisms, or us
 **Deployable Domain Model**
 
 <center>
-<img src="{{site.baseurl}}/assets/img/custom/blog/2017-09-20-mvc-delivery-mechanism/deployable-dm.png" alt="Deployable Domain Model" class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/deployable-dm.png" alt="Deployable Domain Model" class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/> 
 

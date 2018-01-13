@@ -5,7 +5,7 @@ title: Q&A about The Software Craftsman
 date: 2015-05-06 01:26:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015_04_30_infoq_interview/thesoftwarecraftsman_infoq.jpg
+    src: /assets/custom/img/blog/2015_04_30_infoq_interview/thesoftwarecraftsman_infoq.jpg
 tags:
 - craftsmanship
 - quality

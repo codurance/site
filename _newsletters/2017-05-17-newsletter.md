@@ -6,7 +6,7 @@ title: 'Newsletter - May 2017'
 date: 2017-05-17 09:00:00 +00:00
 author: Mashooq Badar
 image:
-  src: /assets/img/custom/newsletter/newsletter-default.png
+  src: /assets/custom/img/newsletter/newsletter-default.png
 tags:
 - software craftsmanship
 - tdd

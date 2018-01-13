@@ -6,7 +6,7 @@ title: 'Discovering Codurance during my first week as an apprentice'
 date: 2017-03-03 21:00:00 +00:00
 author: Raquel M Carmena
 image:
-  src: /assets/img/custom/blog/2017-03-03-discovering-Codurance-during-my-first-week.jpg
+  src: /assets/custom/img/blog/2017-03-03-discovering-Codurance-during-my-first-week.jpg
 tags:
 - apprenticeship
 - life-at-codurance

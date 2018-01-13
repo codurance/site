@@ -6,7 +6,7 @@ layout: event
 name: sandro-at-swanseacon-2016-3
 location: "SwanseaCon 2016, Swansea, United Kingdom"
 image:
-    src: /assets/img/custom/events/sandro-at-swanseacon-2016.png
+    src: /assets/custom/img/events/sandro-at-swanseacon-2016.png
 title: "Teal Organisation: A living Example"
 hidden: true
 event-dates: 

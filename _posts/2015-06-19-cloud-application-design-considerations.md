@@ -5,7 +5,7 @@ title: 'Cloud Application Design Considerations'
 date: 2015-06-19 18:00:00 +01:00
 author: Steve Lydford
 image:
-    src: /assets/img/custom/blog/clouds.jpg
+    src: /assets/custom/img/blog/clouds.jpg
     attribution:
         text: Wheat Field in Swellendam, by Atelier Design Studio
         href: https://flic.kr/p/q2avm3

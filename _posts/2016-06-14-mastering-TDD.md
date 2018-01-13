@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://www.ananogal.com/blog/mastering-tdd/
 image:
-    src: /assets/img/custom/blog/2016-06-14-mastering-TDD.png
+    src: /assets/custom/img/blog/2016-06-14-mastering-TDD.png
 categories: 
 - practices
 - extreme-programming

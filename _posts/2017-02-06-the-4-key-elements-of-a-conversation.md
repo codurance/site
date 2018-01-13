@@ -6,7 +6,7 @@ title: 'The 4 key elements of conversation'
 date: 2017-02-08 09:00:00 +00:00
 author: Giulia Mantuano
 image:
-  src: /assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals.jpg
+  src: /assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals.jpg
 tags:
 - UX
 - Chatbot
@@ -20,7 +20,7 @@ Conversational Interfaces is a term often used to define systems that hold "huma
 > A turn is one interaction between the user and the system, and a conversation is made of at least two turns.
 
 <div class="image-side-by-side-text">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/poncho-chatbot.jpg" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/poncho-chatbot.jpg" alt="Hi Poncho on Facebook Messenger" width="250" height="300" />
 </div>
 
 <p class="text-side-by-side-image" >
@@ -46,11 +46,11 @@ Asking Google Voice “Who was Oscar Wilde?” gives the user the following resu
 <p>
 
 <div class="images-side-by-side-left">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Google Voice Search interface - First turn" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-1.png" alt="Google Voice Search interface - First turn" width="250" height="300" />
 </div>
 
 <div class="images-side-by-side-right">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Google Voice Search interface - Second turn" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/google-voice-search-2.png" alt="Google Voice Search interface - Second turn" width="250" height="300" />
 </div>
 
 </p>
@@ -62,7 +62,7 @@ In the second turn the user responds with, “Can you tell me more?”, a human-
 > The system should understand follow-up questions that include pronouns, in order to feel more conversational.
 
 <div class="image-side-by-side-text">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/mitzuku-chatbot.jpg" alt="Mitzuku on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/mitzuku-chatbot.jpg" alt="Mitzuku on Facebook Messenger" width="250" height="300" />
 </div>
 
 <p class="text-side-by-side-image">
@@ -79,11 +79,11 @@ In the second turn the user responds with, “Can you tell me more?”, a human-
 There are number of ways that the user could reply to open questions, and spending time on researching them will have a positive impact on the user experience.
 
 <div class="images-side-by-side-left">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-1.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-1.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
 </div>
 
 <div class="images-side-by-side-right">
-  <img src="{{site.baseurl}}/assets/img/custom/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-2.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
+  <img src="{{site.baseurl}}/assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals/hipmunk-chatbot-2.jpg" alt="Hipmunk on Facebook Messenger" width="250" height="300" />
 </div>
 
 

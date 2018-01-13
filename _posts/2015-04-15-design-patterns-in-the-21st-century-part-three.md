@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/116370706560/design-patterns-in-the-21st-century-the-abstract
 image:
-    src: /assets/img/custom/blog/2015-04-13-design-patterns/part-three.jpg
+    src: /assets/custom/img/blog/2015-04-13-design-patterns/part-three.jpg
     attribution:
         text: An aluminum alloy dunlop-to-schrader inner tube adapter at Flying Pigeon LA, by Umberto Brayj
         href: https://flic.kr/p/p8vSFY
@@ -71,7 +71,7 @@ And we'd use it like this:
 
 The pattern generally follows this simple structure:
 
-![Adapter pattern UML diagram]({{site.baseurl}}/assets/img/custom/blog/2015-04-13-design-patterns/adapter-pattern-uml.png)
+![Adapter pattern UML diagram]({{site.baseurl}}/assets/custom/img/blog/2015-04-13-design-patterns/adapter-pattern-uml.png)
 
 That's nice, right?
 
@@ -98,7 +98,7 @@ This is because Java can't convert between functional interfaces implicitly, so 
 
 Our new UML diagram will look something like this:
 
-![Updated Adapter pattern UML diagram]({{site.baseurl}}/assets/img/custom/blog/2015-04-13-design-patterns/adapter-pattern-uml-functional.png)
+![Updated Adapter pattern UML diagram]({{site.baseurl}}/assets/custom/img/blog/2015-04-13-design-patterns/adapter-pattern-uml-functional.png)
 
 Often, though, all we really need is a method reference. For example, take the `Executor` interface.
 

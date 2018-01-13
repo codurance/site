@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/120680636325/crank-up-the-volume-and-forget-your-pomodoros
 image:
-    src: /assets/img/custom/blog/2015-06-04-crank-up-the-volume/headphones.jpg
+    src: /assets/custom/img/blog/2015-06-04-crank-up-the-volume/headphones.jpg
     attribution:
         text: Audio-Technica headphones, by Audio-Technica
         href: https://flic.kr/p/9gQC5M

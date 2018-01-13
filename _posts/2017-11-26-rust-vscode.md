@@ -10,7 +10,7 @@ canonical:
     name: Adventurous Computing
     href: https://blog.cyplo.net/posts/2017/11/rust-vscode-mac.html
 image:
-    src: /assets/img/custom/blog/vscode-rust.jpg
+    src: /assets/custom/img/blog/vscode-rust.jpg
 tags:
 - rust
 - vscode

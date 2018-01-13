@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://tobyret.github.io/Docker-Volumes/
 image:
-    src: /assets/img/custom/blog/2015-04-15-docker-volumes/docker-graphic.png
+    src: /assets/custom/img/blog/2015-04-15-docker-volumes/docker-graphic.png
     attribution:
         text: Mark van Holsteijn & Adé Mochtar, Xebia
         href: http://xebia.github.io/docker-introduction/slides/img/docker-filesystems-busyboxrw.png

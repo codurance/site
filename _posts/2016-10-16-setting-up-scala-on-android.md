@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://srodrigo.me/setting-up-scala-on-android/
 image:
-    src: /assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/post-image.png
+    src: /assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/post-image.png
 tags:
 - android
 - scala
@@ -189,25 +189,25 @@ To import our project, open Android Studio and select `Import project (Eclipse, 
 
 Select `Import project from external module`, and `SBT`:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sbt.png" alt="Import project" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sbt.png" alt="Import project" class="img-responsive"/>
 
 Select your Android SDK on the Project SDK option, and check `Sources`, `Javadocs` and `Sources for SBT and plugins`:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sdk.png" alt="Import project" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_import-sdk.png" alt="Import project" class="img-responsive"/>
 
 On `Project Settings`/`Modules` select the project module and click on `+`, and Add `Android` under the `Framework` section. On the Structure tab, replace all `/.idea/modules` paths with `/src/main`:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_proj-structure-module.png" alt="Project structure" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_proj-structure-module.png" alt="Project structure" class="img-responsive"/>
 
 Now that the project is set up, we can try to run it. Create a new Run/Debug Configuration. Select `Android App` and give it a name (e.g. `app`).
 
 On the `General` tab, select the Module. We also need to configure how to run the app with SBT. On the `Before launch` section, remove the default `Gradle-aware Make` task clicking on `-`:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_run-debug-config.png" alt="Run/Debug configuration" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_run-debug-config.png" alt="Run/Debug configuration" class="img-responsive"/>
 
 Finally, click on `+`, create a new `SBT` task, and add `android:run`. Leave the `Run in current module` option checked:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_run-before-launch-sbt-android-run.png" alt="Before launch SBT android run" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-10-16_setting-up-scala-on-android/scala-on-android_run-before-launch-sbt-android-run.png" alt="Before launch SBT android run" class="img-responsive"/>
 
 From now, you can run the application in the same way as any app written in Java or Kotlin.
 

@@ -10,7 +10,7 @@ canonical:
     name: hacking dan
     href: https://blog.hackingdan.com/2018/01/tetris-failed-experiment-next-steps
 image: 
-    src: /assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
+    src: /assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
 tags: 
 - AI
 - Q-Learning
@@ -39,7 +39,7 @@ I ran 3 different experiments attempting to get a functional Tetris bot. They al
 
 My initial hypothesis was that the network wasn't evolving usefully because each network would generate different traits and clusters of understanding, but because they were unable to share them, the variation alone would not be enough to achieve results. I implemented crossover with multiple crossover points and a chance to make a crossover at any given point. Theoretically this will allow for knowledge to be shared, mixed and matched between individuals.
 
-[![graph of results plateauing at 1000 after 1200 generations]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/crossover.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/crossover.png)
+[![graph of results plateauing at 1000 after 1200 generations]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/crossover.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/crossover.png)
 
 The graph plateaus at 1000 after a steep learning period between generations 200 and 400. The maximum never exceeds 50,000. 50,000 points is achieved by clearing at most 5 lines. There is no reason to think that these line clears were anything other than accidents.
 
@@ -49,7 +49,7 @@ The following hypothesis was that a single hidden layer could not unwrap the com
 
 This experiment ran for 6000 generations. It was able to run for many more generations because the hidden layers are much smaller and the size of the weight maps is quadratic with the size of the layer. So these 6000 generations took a comparable amount of time to the 1200 generations from the previous experiment with the larger hidden layer.
 
-[![graph of results plateauing at 2000 after 6000 generations]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/2layers.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/2layers.png)
+[![graph of results plateauing at 2000 after 6000 generations]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/2layers.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/2layers.png)
 
 At first glance, this does seem to have been an improvement. But after the first 1,000 generations the improvements are very minimal and there was never a breakthrough.
 
@@ -57,7 +57,7 @@ At first glance, this does seem to have been an improvement. But after the first
 
 I finally out of desparation tried to run the experiment for much longer. I ran the experiment for over a week. It completed almost 30,000 generations before I got home from holiday.
 
-[![graph of results plateauing at 3000 after 30000 generations]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/failed.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/failed.png)
+[![graph of results plateauing at 3000 after 30000 generations]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/failed.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/failed.png)
 
 The experiment plateaued after roughly 10,000 generations with the maximum score achieved never excdeeding 70,000. The majority of the learning occured in the first 2,000 generations. This appears to be when the network learned to use all the space available to stack pieces. The following 8,000 generations appear to be optimisations to this strategy. Every single generation after the first handful had at least 1 individual who managed to clear at least one line. Unfortunately, this never seems to have been an intentional decision by a network as the ability to recognise line clearing opportunities was never promulgated through the population.
 
@@ -71,7 +71,7 @@ These networks have shown the ability to maximise a fitness function, but to mak
 
 Here is my overall plan
 
-[![diagram demonstrating how a neural network will be used to evaluate each potential position and how it shall be trained]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/diagram.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/diagram.png)
+[![diagram demonstrating how a neural network will be used to evaluate each potential position and how it shall be trained]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/diagram.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/diagram.png)
 
 Now let's break it down.
 
@@ -81,11 +81,11 @@ The first big change is that the bot will no longer play individual moves. The b
 
 Each game will be made up of a series of states and the game will end when a new piece cannot be brought into the play area without colliding. In order to transition between states, the bot must make a decision about which move it should make.
 
-[![diagram showing the initial, intermediate and final game states]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/states.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/states.png)
+[![diagram showing the initial, intermediate and final game states]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/states.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/states.png)
 
 ### Decision Making
 
-[![diagram of the valid search space of a Tetris game board]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/search-space.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/search-space.png)
+[![diagram of the valid search space of a Tetris game board]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/search-space.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/search-space.png)
 
 On the Tetris board, there are 200 positions that can potentially be occupied. The bot will pass each of those positions into a rules evaluation engine which is able to validate whether that move is a legal final position for a piece. This is exclude all positions where the piece is floating, all positions where the piece is colliding with something and all positions which are impossible to arrive at using a sequence of legal moves.
 
@@ -93,7 +93,7 @@ Each of the remaining legal positions is then evaluated using a neural network.
 
 ### Evaluating a Board State
 
-[![diagram of a convolutional neural network]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/CNN.png)]({{site.baseurl}}/assets/img/custom/blog/2018-01-05-tetris-failed-experiment-next-steps/CNN.png)
+[![diagram of a convolutional neural network]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/CNN.png)]({{site.baseurl}}/assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/CNN.png)
 
 In order to know whether one decision is preferable to another, we must have some way of evaluating a game state. This is a simplified version of how chess and go engines make their decisions. It is possible to write a handwritten function that is able to evaluate a board state but I have no desire to do that. I believe that given the spatial nature of a Tetris board state the most appropriate tool to use is a convolutional neural network. However a similar result may be achievable with a fully connected neural network.
 

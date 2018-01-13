@@ -7,7 +7,7 @@ asset-type: post
 slug: katas-for-functional-calisthenics
 title: Katas For Functional Calisthenics
 image:
-    src: /assets/img/custom/blog/karate.jpg
+    src: /assets/custom/img/blog/karate.jpg
 tags:
 - functional programming
 ---
@@ -22,7 +22,7 @@ While working on katas to test the [functional calisthenics]({% post_url 2017-10
  * [Bank](#bankkata)
  * [8 Queens](#8queenskata)
  
-## <a class="anchor" name="tenniskata"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">Tennis Kata
+## <a class="anchor" name="tenniskata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">Tennis Kata
 
 ### Rules
 
@@ -43,7 +43,7 @@ While working on katas to test the [functional calisthenics]({% post_url 2017-10
 
 The easiest kata in this post (on its original form), but still difficult enough to pose a bit of a challenge. The main point of the changes revolves around the interactivity of the system. Probably this change makes it the more difficult of the lot to handle using the rules.
 
-## <a class="anchor" name="marsroverkata"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">Mars Rover Kata
+## <a class="anchor" name="marsroverkata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">Mars Rover Kata
 
 ### Rules
 
@@ -66,7 +66,7 @@ The easiest kata in this post (on its original form), but still difficult enough
 Of the katas on this post is the one on which more concepts are present. Which makes it interesting when comparing the solution with OOP. Use of the [side effects at the boundaries]({% post_url 2017-10-12-functional-calisthenics %}#sideeffectsattheboundaries) is explicit with the changes introduced to the rules.
 
 
-## <a class="anchor" name="bankkata"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">Bank Kata
+## <a class="anchor" name="bankkata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">Bank Kata
 ### Rules
 
 - Deposits and withdrawals can be maded into an account
@@ -84,7 +84,7 @@ Of the katas on this post is the one on which more concepts are present. Which m
 
 The kata itself is interesting because of the already present dependency on date. The change added is to reflect the rule of [side effects at the boundaries]({% post_url 2017-10-12-functional-calisthenics %}#sideeffectsattheboundaries). Also, because of the use of an external file/database is easy to think about the use of [infinite sequences]({% post_url 2017-10-12-functional-calisthenics %}#infinitesequences).
 
-## <a class="anchor" name="8queenskata"></a><img src="{{ site.baseurl }}/assets/img/custom/blog/lambda_small.png" class="bullet-image">8 Queens Kata
+## <a class="anchor" name="8queenskata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">8 Queens Kata
 
 ### Rules
 

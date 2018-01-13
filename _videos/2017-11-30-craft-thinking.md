@@ -3,7 +3,7 @@ author: Mashooq Badar
 layout: video
 name: craft-thinking 
 image:
- src: /assets/img/custom/videos/craft-thinking.png
+ src: /assets/custom/img/videos/craft-thinking.png
 title: "Craft Thinking"
 hidden: true
 video-url: https://www.youtube.com/embed/AjDcPOydSM8 

@@ -5,7 +5,7 @@ title: 'Clojure (Prismatic) Schemas are Swagger'
 date: 2015-09-14 13:00:00 +01:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/2015-09-14-swagger-clojure/swagger-clojure.jpg
+    src: /assets/custom/img/blog/2015-09-14-swagger-clojure/swagger-clojure.jpg
 tags:
 - clojure
 - swagger
@@ -45,7 +45,7 @@ Here I am creating two routes for GET and PUT HTTP requests. In case of GET, I w
 
 The generated Swagger UI looks like the following. 
 
-![Generated Swagger Documentation]({{site.baseurl}}/assets/img/custom/blog/2015-09-14-swagger-clojure/swagger-doc.png)
+![Generated Swagger Documentation]({{site.baseurl}}/assets/custom/img/blog/2015-09-14-swagger-clojure/swagger-doc.png)
 
 The Compojure API validates every request/response against the model so that any violation of the API will result in a failure. This brings me to the second side-effect; you can validate the model against your tests! In my case I validate the model against my controllers:
 

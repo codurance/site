@@ -4,7 +4,7 @@ layout: video
 name: shape-your-infrastructure-with-terraform
 location: "Devoxx Poland"
 image:
-    src: /assets/img/custom/videos/shape-infra-with-terraform.jpg
+    src: /assets/custom/img/videos/shape-infra-with-terraform.jpg
 title: "Shape your infrastructure with Terraform"
 hidden: true
 video-url: https://www.youtube.com/embed/io8lSN4fAqM

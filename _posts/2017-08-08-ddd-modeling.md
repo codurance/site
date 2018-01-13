@@ -6,7 +6,7 @@ title: 'DDD Modeling from Alberto Brandolini'
 date: 2017-08-08 09:00:00 +00:00
 author: Carlos Raffellini
 image:
-  src: /assets/img/custom/blog/2017-08-08-ddd-modeling.jpg
+  src: /assets/custom/img/blog/2017-08-08-ddd-modeling.jpg
 tags:
 - DDD
 - Event Storming
@@ -33,11 +33,11 @@ In this scenario, we have a "big ball of mud" in which two bounded contexts coll
 The collision of the two bounded contexts was caused by a piece of code which tied them together. Identifying that piece of code and working on separating the contexts gave an instant payoff. We were working within the core domain and were aiming to reduce the its complexity, essentially reducing the cost of working within each of the contexts.
 
 
-![first image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/big-ball-of-mud.JPG)
+![first image](/assets/custom/img/blog/2017-07-05-ddd-modeling-post/big-ball-of-mud.JPG)
 
 Prior to this, we had people from both sub-domains focusing on the same "big ball of mud". Splitting the bounded context separated the people that were interested in each context. Therefore, the people interested in the cart will point to the "Cart bounded context" and people interested in the order would point to the "Order bounded context".
 
-![second image](/assets/img/custom/blog/2017-07-05-ddd-modeling-post/cart-order.JPG)
+![second image](/assets/custom/img/blog/2017-07-05-ddd-modeling-post/cart-order.JPG)
 
 Both bounded contexts share plenty of vocabulary. Which leads to more complex design and composing names in order to make obvious that a name belongs to the cart or to the order.
 

@@ -5,7 +5,7 @@ title: Language feature envy
 date: 2016-05-06 00:20:00 +00:00
 author: Pedro Santos
 image:
-   src: /assets/img/custom/blog/envy.jpg
+   src: /assets/custom/img/blog/envy.jpg
    attribution:
      text: Envy by John Goode.
      href: https://www.flickr.com/photos/johnnieb/167721436

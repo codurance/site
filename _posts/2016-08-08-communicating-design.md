@@ -5,7 +5,7 @@ title: Communicating Design
 date: 2016-08-08 10:00:00 +00:00
 author: Ioan Fagarasan
 image:
-    src: /assets/img/custom/blog/2016-08-08-communicating-design.png
+    src: /assets/custom/img/blog/2016-08-08-communicating-design.png
 alias: [/2016/08/08/communicating-design]
 tags:
 - software design
@@ -70,7 +70,7 @@ In [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), class members
 
 In [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), the following relationships are defined:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-08-08-communicating-design/figure-1.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-08-08-communicating-design/figure-1.png" alt="" class="img-responsive"/>
 
   * **Association**: represents a family of links, that can be unidirectional or bidirectional; associations can be named;
   * **Inheriance / Generalization**: a class is a specialized form of another class
@@ -89,7 +89,7 @@ In [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), the [composit
 
 The composite structure diagram for a Fibonacci system is presented below:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-08-08-communicating-design/figure-2.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-08-08-communicating-design/figure-2.png" alt="" class="img-responsive"/>
 
 
 
@@ -112,7 +112,7 @@ At a higher level, the system can be described in terms of interactions between 
  
 The order of operations between collaborating classes is captured by a message sequence diagram; in [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), they are called sequence diagrams. These types of diagrams describe not only how the classes interact, but also include a temporal element, establishing the order – or sequence – of interactions:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-08-08-communicating-design/figure-3.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-08-08-communicating-design/figure-3.png" alt="" class="img-responsive"/>
 
 The horizontal arrows display the messages exchanged between the two collaborators. The vertical lines, also called lifelines, capture all the communication that can occur between the two classes.
 
@@ -123,7 +123,7 @@ System state might be hard to visualize in an environment with complex constrain
 
 In [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), the state diagram represents the states using standardised notation. A filled circle represents the initial state. A hollow circle represents the final state. A rounded rectangle represents a given, named, state. Arrows denote transitions, which are associated to events. The event names are also provided:
  
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-08-08-communicating-design/figure-4.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-08-08-communicating-design/figure-4.png" alt="" class="img-responsive"/>
 
 
 ##Modeling Techniques
