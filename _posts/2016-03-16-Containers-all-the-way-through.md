@@ -5,7 +5,7 @@ title: Containers all the way through...
 date: 2016-03-16 00:00:00 +00:00
 author: Mani Sarkar
 image:
-    src: /assets/img/custom/blog/2016-03-16-containers-all-the-way-through/cover-image.png
+    src: /assets/custom/img/blog/2016-03-16-containers-all-the-way-through/cover-image.png
     attribution:
         text: Worlds within droplets by Susanne Nilsson (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
         href: https://www.flickr.com/photos/infomastern/15698020069/in/photolist-pVbssr-7y21ES-7MKVTx-72WHSu-2FDMjK-4ih5va-9FGj9H-5pb999-6qLMSa-r1ZrVo-6Nxy6v-bQ5oUk-5aJy7i-6eC8zA-2CeMYe-7QAYH1-48NPqf-6TgPFX-6qy3JC-7QxC9e-88rFEc-7MKVJv-8SR56h-7fvqLb-8SR7FQ-pex9oz-83DVKi-8SMVLD-5uNTcf-jsE9W-e8UREj-cbgFh3-8wD7uS-fFDSGi-5TBDmA-7AoqGR-8SR9g5-7QARjW-eivw71-ePZC8-95Zb2L-axKyf8-9raf22-srvYZY-5WapzP-6WSbQj-ohBjPp-rkqgFT-4HZ3er-8SN1WX
@@ -38,7 +38,7 @@ Let's think of our Bare Metal Systems as desktops and laptops we use on a daily 
 
 Programs are stored on the hard drive in the form of executable files (a format understandable by the OS) and loaded into memory via one or more processes. Programs interact with the kernel, which forms a core part of the OS architecture and the hardware. The OS coordinate communication between hardware i.e. CPU, I/O devices, Memory, etc… and the programs.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class="img img-center img-responsive style-screengrab">
 
 
 A more detailed explanation of what programs or executables are, how programs execute and where an Operating System come into play, can be found [on this Stackoverflow page [2]](http://stackoverflow.com/questions/1599434/how-does-program-execute-where-does-the-operating-systems-come-into-play).
@@ -53,7 +53,7 @@ On the other hand Virtual Systems, with the help of Virtual System controllers l
 
 It's like running a computer (abstracted as software) inside another computer. And the rest of the fundamentals from the Bare Metal System applies to this abstraction layer as well. When a process is created inside the Virtual System, then the host OS which runs the Virtual System might also be spawning one or more processes.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img img-center img-responsive style-screengrab">
 
 ### Container Systems
 
@@ -68,7 +68,7 @@ A container creates an OS like environment, inside which one or more programs ca
 *   the OS platform (shared kernel)
 *   one or more programs running inside the container (as processes)
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-center img-responsive style-screengrab">
 
 ### Summary
 
@@ -76,13 +76,13 @@ Looking at these enclosures or rounded rectangles within each other, we can alre
 
 <div class="row blog-boxes">
    <div class="blog-box homepage-blog-thumb col-md-4"> 
-    <img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class=" img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
+    <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class=" img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
    </div>
    <div class="blog-box homepage-blog-thumb col-md-4">
-    <img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
+    <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;">
    </div>
    <div class="blog-box homepage-blog-thumb col-md-4">
-    <img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
+    <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-responsive style-screengrab" style="max-height: 100%; max-width: 100%;"> 
   </div>
 </div>
 

@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://monospacedmonologues.com/post/102172024165/too-many-cooks
 image:
-    src: /assets/img/custom/blog/too-many-cooks.jpg
+    src: /assets/custom/img/blog/too-many-cooks.jpg
     attribution:
         text: by Adi Bolboaca
 tags:

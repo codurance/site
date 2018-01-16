@@ -5,7 +5,7 @@ title: Cohesion - The cornerstone of Software Design
 date: 2016-03-03 12:10:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2016-03-03-cohesion.jpg
+    src: /assets/custom/img/blog/2016-03-03-cohesion.jpg
 alias: [/2016/03/03/cohesion-cornerstone-software-design/]
 tags:
 - cohesion
@@ -52,7 +52,7 @@ As the original papers were written quite a while back and were very academic, l
 
 If we adapt some of the ideas published by Meilir Page-Jones on The Practical Guide To Structured System Design (1980), we could have a guideline to identify levels of cohesion.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-03-cohesion/cohesion_test.jpg" alt="Cohesion test" title="Cohesion test" class="img img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-03-cohesion/cohesion_test.jpg" alt="Cohesion test" title="Cohesion test" class="img img-responsive style-screengrab">
 
 ### Chasing metrics
 
@@ -82,11 +82,11 @@ Here are the DLC levels:
 
 These six relations are in ordinal scale where R1 is the weakest for of cohesion and R6 the strongest. In DLC Measure Definition, the cohesion level is determined by the relationship between outputs of a module and processing elements.
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-03-cohesion/IODG_DLC_2.jpg" alt="DLC" title="DLC" class="img img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-03-cohesion/IODG_DLC_2.jpg" alt="DLC" title="DLC" class="img img-responsive style-screengrab">
 
 And here is how SMC and DLC relate to each other:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2016-03-03-cohesion/SMC_DLC_relation.jpg" alt="SMC vs. DLC" title="SMC vs. DLC" class="img img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-03-cohesion/SMC_DLC_relation.jpg" alt="SMC vs. DLC" title="SMC vs. DLC" class="img img-responsive style-screengrab">
 
 
 ### Applying cohesion

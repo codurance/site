@@ -5,7 +5,7 @@ title: 'Testing multithreaded code in Java'
 date: 2015-12-13 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/picot.png
+    src: /assets/custom/img/blog/picot.png
 tags:
 - testing
 - concurrency

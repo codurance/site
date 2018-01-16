@@ -5,7 +5,7 @@ title: Thoughts on Coupling in Software Design
 date: 2016-07-25 10:00:00 +00:00
 author: Ioan Fagarasan
 image:
-    src: /assets/img/custom/blog/2016-07-25-thoughts-on-coupling-in-software-design.png
+    src: /assets/custom/img/blog/2016-07-25-thoughts-on-coupling-in-software-design.png
 alias: [/2016/07/25/thoughts-on-coupling-in-software-design]
 tags:
 - coupling

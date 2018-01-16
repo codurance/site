@@ -5,7 +5,7 @@ title: 'Big Data Skills Spectrum'
 date: 2015-06-13 19:00:00 +01:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/big-data-spectrum-main.jpg
+    src: /assets/custom/img/blog/big-data-spectrum-main.jpg
 tags:
 - Big-Data
 - Agile
@@ -23,7 +23,7 @@ We are lucky that the Big Data space has matured in the past few years. From tec
 ## Team Skills Spectrum
 Creating a modern Big Data team requires a spectrum of skills:
 
-![Skills Spectrum]({{site.baseurl}}/assets/img/custom/blog/big-data-spectrum.jpg)
+![Skills Spectrum]({{site.baseurl}}/assets/custom/img/blog/big-data-spectrum.jpg)
 
 ### Fine Tuning
 Big Data, if you truly have big data, requires a scalable solution. Solutions of this size, open source or commercial, will require some fine tuning with regards to performance, reliability, security, and maintainability. The way you use underlying technologies will need be sympathetic to how the technology works best. Fine Tuning happens throughout the lifecycle of your software and not just in production. You will require expertise in the technologies you are using. At least a subset of the team must have a working understanding in this area but that is not enough. It is advisable to have regular, not necessarily full-time, fine tuning expertise available in your team.

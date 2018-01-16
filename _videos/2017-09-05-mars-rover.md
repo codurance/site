@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: mars-rover
 image:
- src: /assets/img/custom/videos/2017_09_05_mars_rover.jpg
+ src: /assets/custom/img/videos/2017_09_05_mars_rover.jpg
 
 title: "Outside-In Classicist TDD - Mars Rover"
 hidden: true

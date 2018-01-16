@@ -5,7 +5,7 @@ title: Rethinking Pair Programming
 date: 2015-03-15 22:49:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/muppetspairprogramming.jpg
+    src: /assets/custom/img/blog/muppetspairprogramming.jpg
 tags:
 - craftsmanship
 - quality

@@ -5,7 +5,7 @@ title: 'Unit vs Integration Akka Testing'
 date: 2016-05-31 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/time.jpg
+    src: /assets/custom/img/blog/time.jpg
     attribution:
       text: York railway station by Daida Medina
       href: https://www.instagram.com/p/nBD197Ho2F/?taken-by=thelastfreeusername
@@ -26,7 +26,7 @@ This is the sixth post in the series about integrating sync clients with async s
 
 Nowadays everybody agrees with the famous [testing pyramid](http://googletesting.blogspot.com.es/2015/04/just-say-no-to-more-end-to-end-tests.html):
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/pyramid.png" alt="Testing pyramid" title="Testing pyramid" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/pyramid.png" alt="Testing pyramid" title="Testing pyramid" class="img img-center img-responsive style-screengrab">
 
 Harder to achieve is an agreement on what integration, unit, functional or acceptance means. It is reasonable as applications are structured differently depending on language, architecture and domain. I'll try to distill some essences though:
 

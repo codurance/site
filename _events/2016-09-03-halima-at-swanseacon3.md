@@ -6,7 +6,7 @@ layout: event
 name: halima-at-swanseacon-2016
 location: "SwanseaCon 2016, Swansea, United Kingdom"
 image:
-    src: /assets/img/custom/videos/mouseless-programming-I.png
+    src: /assets/custom/img/videos/mouseless-programming-I.png
 title: "Refactoring and Code Smells"
 hidden: true
 event-dates: 

@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: outside-in-tdd-part-3
 image:
-    src: /assets/img/custom/videos/outside-in-tdd-part-3.jpg
+    src: /assets/custom/img/videos/outside-in-tdd-part-3.jpg
 title: "Outside-In TDD part 3"
 hidden: true
 video-url: https://www.youtube.com/embed/R9OAt9AOrzI

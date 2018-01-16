@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: explanatory-methods
 image:
-    src: /assets/img/custom/videos/explanatory-methods.png
+    src: /assets/custom/img/videos/explanatory-methods.png
 title: "Explanatory Methods"
 hidden: true
 video-url: https://www.youtube.com/embed/sKYX40ltQZM?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx

@@ -5,7 +5,7 @@ title: 'Command Prompt Envy'
 date: 2016-02-08 00:20:00 +00:00
 author: Pedro Santos
 image:
-    src: /assets/img/custom/blog/babun_screenshot.png
+    src: /assets/custom/img/blog/babun_screenshot.png
 tags:
 - command 
 - prompt

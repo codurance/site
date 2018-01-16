@@ -9,7 +9,7 @@ canonical:
     name: my personal blog
     href: http://srodrigo.me/lambda-calculus-for-mortal-developers/
 image:
-    src: /assets/img/custom/blog/2017-11-09-lambda-calculus-for-mortal-developers.png
+    src: /assets/custom/img/blog/2017-11-09-lambda-calculus-for-mortal-developers.png
 tags:
 - functional programming
 - lambda calculus

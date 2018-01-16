@@ -6,7 +6,7 @@ title: 'Newsletter - July 2017'
 date: 2017-07-13 09:00:00 +00:00
 author: David Hall
 image:
-  src: /assets/img/custom/newsletter/newsletter-default.png
+  src: /assets/custom/img/newsletter/newsletter-default.png
 tags:
 - software craftsmanship
 - tdd

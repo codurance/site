@@ -8,7 +8,7 @@ date: 2017-11-17 22:00:00 +00:00
 author: Sandro Mancuso
 description: This week we had a software design night at Codurance. We spent almost three hours talking about many interesting things but there were a few things that really stuck with...
 image:
-   src: /assets/img/custom/blog/2017-11-17-software-design_bias.png
+   src: /assets/custom/img/blog/2017-11-17-software-design_bias.png
 tags:
 - craftsmanship
 - software design

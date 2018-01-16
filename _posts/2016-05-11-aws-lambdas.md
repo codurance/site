@@ -5,7 +5,7 @@ title: AWS Lambda for Beginners
 date: 2016-05-11 00:20:00 +00:00
 author: Mashooq Badar 
 image:
-   src: /assets/img/custom/blog/aws-lambda.png
+   src: /assets/custom/img/blog/aws-lambda.png
 tags:
 - microservices 
 - devops 

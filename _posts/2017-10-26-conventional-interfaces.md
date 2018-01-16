@@ -5,7 +5,7 @@ title: Conventional Interfaces in Functional Programming
 date: 2017-10-26 09:00:00 +00:00
 author: Carlos Morera de la Chica
 image:
-   src: /assets/img/custom/blog/sicp-post.jpg
+   src: /assets/custom/img/blog/sicp-post.jpg
 tags:
 - functional programming
 - Haskell

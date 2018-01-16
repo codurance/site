@@ -5,7 +5,7 @@ title: Inflection Point
 date: 2015-06-17 02:34:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-06-17-inflection-point-cover.jpg
+    src: /assets/custom/img/blog/2015-06-17-inflection-point-cover.jpg
 tags:
 - craftsmanship
 - design
@@ -19,7 +19,7 @@ One way or another, subconsciously or not, we always make a decision to start im
 
 Let’s assume the following:
 
-<img src="{{ site.baseurl }}/assets/img/custom/blog/2015-06-17-inflection-point.jpg" alt="Inflection Point" title="Inflection Point" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2015-06-17-inflection-point.jpg" alt="Inflection Point" title="Inflection Point" class="img img-center img-responsive style-screengrab">
 
 On the left hand side, we have the most straightforward solution for a given desired behaviour. On the right hand side, we have infinite possibilities for writing future proof code. The problem with the right side is that we could never write future proof code according to infinite future possibilities. But we can, however, pick a software capability and try to write some future proof code for that. E.g:
  

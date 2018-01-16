@@ -6,7 +6,7 @@ title: 'A Workflow for iOS'
 date: 2017-06-01 09:00:00 +00:00
 author: Guillem Fernandez
 image:
-  src: /assets/img/custom/home/computerdesk_original_opt_bw.jpg
+  src: /assets/custom/img/home/computerdesk_original_opt_bw.jpg
 tags:
 - iOS
 - GitFlow
@@ -25,7 +25,7 @@ From the many possible options, that works best works for me, is an adaptation o
 
 The basis of the workflow is this:
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow1.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow1.png)
 
 This is the starting point to elaborate the workflow.
 
@@ -90,13 +90,13 @@ Once everything is ready we can start with our first step.
 
 ###Starting a User Story/Feature branch
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow2.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow2.png)
 
 When starting to work on a ticket, we must start branching form _Development_ and name it as agreed before in this post. As you know, branching is cheap in **Git**, so we shouldn’t be afraid of branching and testing, but always starting form a fresh copy of _Development_
 
 ###Working on the branch
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow3.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow3.png)
 
 When the feature branch is ready, you can start working on all the changes you need to do.
 
@@ -106,7 +106,7 @@ Commit messages are also very important and you should take your time to write t
 
 ###Open a pull request
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow4.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow4.png)
 
 This is the moment when you expose your job to your team mates so they can make a nice code review. By opening a pull request, you basically do two things, first you ask for a code reviewing to be sure you didn’t miss any of the agreements you have with your team on coding style or good practices. Also you show your intention to merge these changes into dev.
 
@@ -138,7 +138,7 @@ Why not use _Testflight_ here? Well, as commented before, we have different test
 
 ###Refine and test
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow5.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow5.png)
 
 During this process, the testers should be testing the implemented features in this ticket in isolation and, once happy with the result, mark the ticket as done so the integration into dev can be done.
 
@@ -148,7 +148,7 @@ When the developer is warned by the system that there is a comment, he or she sh
 
 ###Merge to Development
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow6.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow6.png)
 
 Once the feature has been tested in isolation, the time to merge into _Development_ has come.
 
@@ -164,11 +164,11 @@ All external testers will be notified that a new beta version is ready to test.
 
 Even though the process has been described for a single ticket, multiple tickets are usually in process at the same time and the synchronisation between them is a collaboration task.
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow7.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow7.png)
 
 ###Merge to Master
 
-![GitFlow1](/assets/img/custom/blog/2017-06-02-a-workflow-for-ios/GitFlow8.png)
+![GitFlow1](/assets/custom/img/blog/2017-06-02-a-workflow-for-ios/GitFlow8.png)
 
 The last step, once all tickets included in the sprint have been merged into _Development_, all external testers are happy with the results and all integration tests have been done, we should be prepared to create a new release.
 

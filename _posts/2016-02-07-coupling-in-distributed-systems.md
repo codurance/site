@@ -5,7 +5,7 @@ title: 'Coupling in distributed systems'
 date: 2016-02-07 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/coupling.png
+    src: /assets/custom/img/blog/coupling.png
 tags:
 - distributed systems
 - microservices

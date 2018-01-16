@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://srodrigo.me/the-rush-age/
 image:
-    src: /assets/img/custom/blog/2016-07-04-the-rush-age/always-in-a-rush.jpg
+    src: /assets/custom/img/blog/2016-07-04-the-rush-age/always-in-a-rush.jpg
     attribution:
       text: Always in a Rush by Michael Gil
       href: https://www.flickr.com/photos/msvg/5712968432

@@ -5,7 +5,7 @@ title: 'GitHubAnimator'
 date: 2016-01-15 00:20:00 +00:00
 author: Pedro Santos
 image:
-    src: /assets/img/custom/blog/octokit.png
+    src: /assets/custom/img/blog/octokit.png
 tags:
 - git 
 - github

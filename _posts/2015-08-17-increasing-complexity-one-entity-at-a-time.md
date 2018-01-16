@@ -5,7 +5,7 @@ title: Increasing complexity one entity at a time
 date: 2015-08-17 09:35:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-08-17-increasing-complexity.jpg
+    src: /assets/custom/img/blog/2015-08-17-increasing-complexity.jpg
 tags:
 - craftsmanship
 - design

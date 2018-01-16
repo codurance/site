@@ -5,7 +5,7 @@ layout: event
 name: global-day-of-code-retreat
 location: "Carrer d'Aragó, 208, 4º4º, 08011 Barcelona"
 image:
-    src: /assets/img/custom/events/global-day.png
+    src: /assets/custom/img/events/global-day.png
 title: "GDGR 2017 (Barcelona)"
 hidden: true
 event-dates: 

@@ -5,7 +5,7 @@ title: 'Appropriate Rigour'
 date: 2015-08-15 21:00:00 +01:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/cardboard-prototyping.jpg
+    src: /assets/custom/img/blog/cardboard-prototyping.jpg
     attribution:
         text: Hue by Basheer Tome
         href: http://basheertome.com/hue

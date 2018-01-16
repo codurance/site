@@ -4,7 +4,7 @@ layout: video
 name: functional-programming-is-cool-do-u-know-oo
 location: "Devoxx UK - London, UK"
 image:
-    src: /assets/img/custom/videos/functional-programming-is-cool-do-u-know-oo.jpg
+    src: /assets/custom/img/videos/functional-programming-is-cool-do-u-know-oo.jpg
 title: "Functional Programming is cool, but do you know OO?"
 hidden: true
 video-url: https://www.youtube.com/embed/oiFYPAel-KY

@@ -5,7 +5,7 @@ title: TDD is NOT (just) about you
 date: 2014-05-24 22:18:00.000000000 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/tdd_is_not_about_you.gif
+    src: /assets/custom/img/blog/tdd_is_not_about_you.gif
 tags:
 - craftsmanship
 - tdd

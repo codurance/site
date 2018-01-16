@@ -8,7 +8,7 @@ canonical:
     name: my personal blog
     href: http://www.ananogal.com/blog/code-smells-part-two/
 image:
-    src: /assets/img/custom/blog/code-smells_II.jpg
+    src: /assets/custom/img/blog/code-smells_II.jpg
     attribution:
         text: Via Flickr/Creative Commons/Brian Fitzgerald (Creative Commons - Attribution-ShareAlike 2.0 Generic license)
         href: https://www.flickr.com/photos/brian-fitzgerald/3334353375

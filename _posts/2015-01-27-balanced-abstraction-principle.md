@@ -5,7 +5,7 @@ title: Balanced Abstraction Principle
 date: 2015-01-27 10:30:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/balanced-abstraction-principle.jpeg
+    src: /assets/custom/img/blog/balanced-abstraction-principle.jpeg
 tags:
 - craftsmanship
 - quality

@@ -6,7 +6,7 @@ layout: post
 slug: codurance-barcelona
 title: Codurance Barcelona
 image:
-    src: /assets/img/custom/blog/2016-09-27-codurance-barcelona.jpg
+    src: /assets/custom/img/blog/2016-09-27-codurance-barcelona.jpg
 tags:
 - codurance
 ---

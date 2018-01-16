@@ -8,7 +8,7 @@ date: 2017-11-23 22:00:00 +00:00
 slug: functional-programming-reactive-architecture-part-2
 title: Functional Programming and Reactive Architecture Part 2
 image:
-    src: /assets/img/custom/blog/2017-11-23-functional-programming-reactive-architecure/burano.jpg
+    src: /assets/custom/img/blog/2017-11-23-functional-programming-reactive-architecure/burano.jpg
 tags:
 - functional programming
 - architecture

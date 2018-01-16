@@ -5,7 +5,7 @@ title: A reflection on Software Craftsmanship
 date: 2017-08-21 08:00:00 +00:00
 author: Mashooq Badar, Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/writing-code.jpg
+    src: /assets/custom/img/blog/writing-code.jpg
 tags:
 - craftsmanship 
 - community 

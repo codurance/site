@@ -5,7 +5,7 @@ title: Practicing Well-Crafted Design
 date: 2015-11-01 18:20:00 +00:00
 author: Sandro Mancuso
 image:
-    src: /assets/img/custom/blog/2015-11-01-incremental-design.jpg
+    src: /assets/custom/img/blog/2015-11-01-incremental-design.jpg
 tags:
 - craftsmanship
 - domain-driven-design

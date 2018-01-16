@@ -6,7 +6,7 @@ asset-type: post
 slug: on-tail-call-optimisation
 title: On Tail Call Optimisation
 image:
-    src: /assets/img/custom/blog/2017-12-05-on-tail-call-optimisation.png
+    src: /assets/custom/img/blog/2017-12-05-on-tail-call-optimisation.png
 abstract: Tail call optimisation is very important for functional programming, but what exactly is it?
 tags:
 - functional programming
@@ -17,15 +17,15 @@ In 1977 Guy L. Steele [submitted a paper to the ACM](https://dl.acm.org/citation
 
 At the most basic level, a function or a procedure is a subroutine, called by a jump instruction to the subroutine entry point. What distinguishes a subroutine from a simple jump is that the calling code must first push the return address (the address of the next instruction to be executed after the subroutine returns) on the call stack before jumping to the subroutine. The subroutine parameters and local variables are also stored on a stack, which may be the call stack or a separate one:
 
-![Fig. 1: The call stack builds up as subroutines call other subroutines]({{site.baseurl}}/assets/img/custom/blog/2017-12-05-on-tail-call-optimisation/figure-1.png "Figure 1")
+![Fig. 1: The call stack builds up as subroutines call other subroutines]({{site.baseurl}}/assets/custom/img/blog/2017-12-05-on-tail-call-optimisation/figure-1.png "Figure 1")
 
-As shown in [figure 1]({{site.baseurl}}/assets/img/custom/blog/2017-12-05-on-tail-call-optimisation/figure-1.png), when a subroutine **A** calls another subroutine **B**, a new stack frame including the return address must be pushed on the call stack on top of the return address from **A**. When **B** finishes, it reads the return address, pops its stack frame from the call stack, and returns to its caller **A**. When subroutine **A** finishes it does a similar thing:
+As shown in [figure 1]({{site.baseurl}}/assets/custom/img/blog/2017-12-05-on-tail-call-optimisation/figure-1.png), when a subroutine **A** calls another subroutine **B**, a new stack frame including the return address must be pushed on the call stack on top of the return address from **A**. When **B** finishes, it reads the return address, pops its stack frame from the call stack, and returns to its caller **A**. When subroutine **A** finishes it does a similar thing:
 
-![Fig. 2: The frames are popped from the call stack as subroutines return]({{site.baseurl}}/assets/img/custom/blog/2017-12-05-on-tail-call-optimisation/figure-2.png "Figure 2")
+![Fig. 2: The frames are popped from the call stack as subroutines return]({{site.baseurl}}/assets/custom/img/blog/2017-12-05-on-tail-call-optimisation/figure-2.png "Figure 2")
 
 However, when the call to routine **B** is in tail position there are no more instructions between the return of control from **B** and the return statement of **A**. In other words, the program will return from **B** only to return immediately to the caller of **A**. There is therefore no need to push the return address from **B** on the call stack: the program can simply jump to **B** and when it completes, it will read the return address of **A** from the call stack and return directly to the caller of **A**. Furthermore, there will no longer any use for **A**’s local variables or parameters, so these can be replaced by the parameters and local variables for **B**:
 
-![Fig. 3: Tail call optimisation avoids the need to push another frame to the call stack]({{site.baseurl}}/assets/img/custom/blog/2017-12-05-on-tail-call-optimisation/figure-3.png "Figure 3")
+![Fig. 3: Tail call optimisation avoids the need to push another frame to the call stack]({{site.baseurl}}/assets/custom/img/blog/2017-12-05-on-tail-call-optimisation/figure-3.png "Figure 3")
 
 A subroutine call in tail position can thus be optimised effectively by replacing it with a jump instruction. For this reason, tail call optimisation is also called tail call _elimination_. This is important because every time a recursive subroutine calls itself without TCO, it requires more space for the stack. A recursive program always runs a danger of running out of space that is not faced by an equivalent non-recursive program. This particularly matters to programs written in a functional style.
 

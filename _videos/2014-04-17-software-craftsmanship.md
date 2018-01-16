@@ -4,7 +4,7 @@ layout: video
 name: software-craftsmanship
 location: "Devoxx France"
 image:
-    src: /assets/img/custom/videos/software-craftsmanship.png
+    src: /assets/custom/img/videos/software-craftsmanship.png
 title: "Test Driving Algorithms"
 hidden: true
 video-url: https://www.youtube.com/embed/AQlsOPMKgBE

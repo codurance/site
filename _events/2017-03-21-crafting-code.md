@@ -5,7 +5,7 @@ layout: event
 name: sandros-crafting-code
 location: "Skills Matter, CodeNode, 10 South Pl, London EC2M 7EB"
 image:
-    src: /assets/img/custom/events/sandro-at-swanseacon-2016.png
+    src: /assets/custom/img/events/sandro-at-swanseacon-2016.png
 title: "Crafting Code Course"
 hidden: true
 event-dates: 

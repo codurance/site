@@ -5,7 +5,7 @@ title: 'Akka basics'
 date: 2016-04-30 00:20:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/akka.jpg
+    src: /assets/custom/img/blog/akka.jpg
     attribution:
       text: Akka_20120331 by Helena Whitlock, SGU
       href: https://www.flickr.com/photos/geologicalsurveyofsweden/8703286181

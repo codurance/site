@@ -5,7 +5,7 @@ title: My first walking skeleton
 date: 2015-08-26 09:00:00 +00:00
 author: Franziska Sauerwein
 image:
-    src: /assets/img/custom/blog/squirrel-skeleton.jpg
+    src: /assets/custom/img/blog/squirrel-skeleton.jpg
     attribution:
         text: Picture of a squirrel skeleton
         href: https://commons.wikimedia.org/wiki/File:Die_vergleichende_Osteologie_(1821)_Sciurus_vulgaris.jpg

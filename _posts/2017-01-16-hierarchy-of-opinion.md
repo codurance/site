@@ -6,7 +6,7 @@ title: Hierarchy of opinion
 date: 2017-01-16 16:00:00 +00:00
 author: Mashooq Badar
 image:
-    src: /assets/img/custom/blog/hierarchy-of-opinion.jpg
+    src: /assets/custom/img/blog/hierarchy-of-opinion.jpg
 tags:
 - craftsmanship
 

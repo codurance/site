@@ -6,7 +6,7 @@ asset-type: post
 slug: fractured-skill-compartmentalising-software-development 
 title: "Fractured Skill: Compartmentalising Software Development"
 image:
-    src: /assets/img/custom/blog/architect-drawing-table.jpg
+    src: /assets/custom/img/blog/architect-drawing-table.jpg
     attribution:
       text: by Sergey Zolkin
       href: https://unsplash.com/photos/m9qMoh-scfE 

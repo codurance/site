@@ -5,7 +5,7 @@ title: Side effects and Java 8 streams
 date: 2015-05-04 11:22:00 +00:00
 author: Felipe Fernández
 image:
-    src: /assets/img/custom/blog/2015-05-04-side-effects-and-java-8-streams/stream.jpg
+    src: /assets/custom/img/blog/2015-05-04-side-effects-and-java-8-streams/stream.jpg
 tags:
 - java8
 - streams

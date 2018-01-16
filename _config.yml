@@ -50,4 +50,4 @@ plugins:
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 
-default_post_image: "/assets/img/custom/home/computerdesk_original_opt_bw.jpg"
+default_post_image: "/assets/custom/img/home/computerdesk_original_opt_bw.jpg"
