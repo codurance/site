@@ -259,9 +259,23 @@ events-lscc:
    title: Comunidad de Software Craftsmanship Barcelona
    link_title: Más información
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
-careers:
+careers:    
    title: Trabaja con nosotros
    email: join-us@codurance.es
+   our_people: 
+       title: Nuestras Personas
+       description: Nuestras personas nos definen. Aprenda más sobre la vida de nuestros aprendices y craftspeople.
+   culture:
+       title: Nuestra Cultura
+       structure:
+          title: Estructura
+          description: No hay jerarquías o managers en nuestra empresa. Damos más importancia a la colaboración y el reconocimiento entre nosotros que en títulos. Nos organizamos para tomar decisiones, utilizando 'Initiative Circles' para mejorar nuestra empresa y proyectos. Nuestro cofundador, Sandro Mancuso, profundiza en este concepto en el video "Teal Organisations”.
+       transparency:
+          title: Transparencia
+          description: En nuestra compañía valoramos la transparencia. . Como no tenemos managers, creemos que toda la información debería estar disponible para todos. Confiamos en que nuestra gente, dada esta información, puede contribuir a la manera en que nuestra compañía crece. Por lo tanto, cada persona dentro de Codurance tiene acceso completo a las finanzas de la compañía y a todos los salarios. Utilizamos Trello y Slack para estar al día del progreso de nuestros ‘Initiative Circles’, cómo se desarrollan nuestros proyectos, y de qué decisiones tenemos que tomar como negocio.
+       continuous_learning:
+          title: Aprendizaje Continuo
+          description: Valoramos el aprendizaje y la práctica continua. Organizamos reuniones internas la mayoría de las tardes durante la semana, cubriendo cualquier tema desde Category Theory y programación funcional hasta ayudarnos a aprender tecnologías e idiomas específicos como Kotlin y Rust. Cada dos semanas, nos reunimos para nuestros “Evening Catchups”, donde realizamos ‘lightning talks’ y discusiones en grupo mientras cenamos juntos. Una vez al mes, organizamos nuestro ‘Codurance Open Space’, donde nos reunimos (independientemente de nuestros proyectos) para llevar a cabo un día de ‘unconference’ en nuestras oficinas. Realizamos muchas más actividades, y nos encantaría que aportaras tus propias ideas mientras crecemos juntos.     
    become_a_craftsman:
      join_title: Unete a Codurance
      join_description: We are a company formed by craftspeople who care about the quality of the work we do and also who we do it with. We are always looking for the talented people who share our passion for writing well-crafted code and believe in the principles and values of Software Craftsmanship, Extreme Programming and Agile software development. For us, mastering a strong set of technical practices is as important as our understanding of different technology stacks we use. <br> Due to the nature of the work we do - working closely with our clients and their technical teams - good communication skills, willingness to learn and work with different technology stacks, fully embrace Extreme Programming practices and Agile methodologies, and confidence to express ideas are essential to join our team.
