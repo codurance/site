@@ -351,7 +351,7 @@
 - id: danielbergquist
   name: Daniel Bergquist
   image: /assets/custom/img/team/daniel_bergquist.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
     <p>His primary tech stack is NodeJS, although his lifelong love of learning means he is always investigating new languages and technologies. His reading list always contains more books than he can ever read! Away from the keyboard, his time is mostly spent enjoying time with his wife and young son.</p>
