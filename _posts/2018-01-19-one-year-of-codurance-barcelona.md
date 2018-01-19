@@ -1,7 +1,9 @@
 ---
 layout: post
+asset-type: post
 name: 2018-01-19-one-year-of-codurance-barcelona
 title: One Year of Codurance Barcelona
+description: One Year of Codurance Barcelona
 date: 2018-01-19 07:00:00 +00:00
 author: Guillem Fernandez
 image:
@@ -13,7 +15,6 @@ tags:
 - software craftsmanship
 ---
 
-# One Year of Codurance Barcelona
 <img src="{{ site.baseurl }}/assets/custom/img/blog/2018-01-19-one-year-of-codurance-barcelona/codurance-barcelona-team.jpg" alt="domain-codomain-image" style="margin: 0 auto;" />
 
 It’s been one year since codurance Barcelona started being a reality. After so many paperwork, negotiations and efforts, all was set and we needed to start building that reality.
