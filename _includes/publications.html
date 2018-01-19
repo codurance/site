@@ -49,7 +49,9 @@
         </div>
         <!-- Right sidebar -->
         <div class="col-md-3">
-		        {% include newsletter_form.html bg="bg-color-light" %}
+            {% include search_form.html bg="bg-color-light" %}
+
+		    {% include newsletter_form.html bg="bg-color-light" %}
             {% unless include.filter == "newsletters" %}
             <div class="posts margin-bottom-40">
               {% include latest_publications.html publication=include.latest_publications_type %}
