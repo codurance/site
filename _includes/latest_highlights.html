@@ -19,18 +19,19 @@
 	{% else %}
 		{% assign date = post.date %}
 	{% endif %}
-	<div class="col-md-4 md-margin-bottom-40">
-		<div class="blog-box homepage-blog-thumb">
-			<img class="img-responsive bordered" src="{{ imageSrc  | prepend: site.baseurl }}" alt="{{ post.title }}">
-			<div class="blog-content">
-				<h3><a href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a></h3>
-				<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
-			</div>
-			<ul class="list-inline blog-box-info">
-        <li>{% t publications-post.author_title %} {{ post.author | author_links }} </li>
-				<li>|</li>
-				<li><i class="fa fa-clock-o"></i> {{ date | date_to_string }}</li>
-			</ul>
-		</div>
-	</div>
+      <div class="col-sm-6 col-lg-4 g-mb-30">
+          <!-- Blog Grid Overlap Blocks -->
+          <article>
+            <img class="img-fluid w-100" src="{{ imageSrc  | prepend: site.baseurl }}" alt="{{ post.title }}">
+            <div class="g-width-80x g-bg-white g-pos-rel g-z-index-1 g-pa-30 g-mt-minus-50 mx-auto">
+              <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2"> {{ date | date_to_string }}</span>
+              <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                  <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a>
+                </h2>
+              <p class="g-color-gray-dark-v4 g-line-height-1_8">{{ introductionToPost | markdownify | strip_html | truncatewords:30 }}</p>
+              <a class="g-font-size-13" href="{{ linkUrl }}">Read more...</a>
+            </div>
+          </article>
+          <!-- End Blog Grid Overlap Blocks -->
+        </div>
 {% endfor %}
