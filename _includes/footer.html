@@ -1,52 +1,92 @@
-<!--=== Footer ===-->
-<div id="footer-v1" class="footer-v1">
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- About -->
-                <div class="col-md-3 md-margin-bottom-40">
-                    <a href="{{ '/' | prepend: site.baseurl }}">
-                      <img id="logo-footer" class="footer-logo" src="{{ '/assets/custom/img/footer-logo.png' | prepend: site.baseurl }}" alt="Codurance">
-                    </a>
+<!-- Footer -->
+<div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Content -->
+      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+        <a class="d-block g-mb-20" href="{{ '/' | prepend: site.baseurl }}">
+          <img class="img-fluid" src="{{ '/assets/img/custom/footer-logo.png' | prepend: site.baseurl }}" alt="Codurance Logo">
+        </a>
 		    <p>{% t footer.title  %}</p>
-		    <p>{% t footer.subtitle %}</p>    
-                </div><!--/col-md-3-->
-                <!-- End About -->
+		    <p class="mb-0">{% t footer.subtitle %}</p>    
+      </div>
+      <!-- End Footer Content -->
 
-                <!-- Latest -->
-                <div class="col-md-3 md-margin-bottom-40">
-                    <div class="posts">
-			    <div class="headline"><h2>{% t footer-latest_blog.title %}</h2></div>
-                        <ul class="list-unstyled latest-list">
-                          {% assign posts = site.posts %}
-                          {% for post in posts limit:3 %}
-                          <li>
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 }}</a>
-                            <small>{{ post.author }}</small>
-                          </li>
-                          {% endfor %}
-                        </ul>
-                    </div>
-                </div><!--/col-md-3-->  
-                <!-- End Latest --> 
+      <!-- Footer Content -->
+      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+          <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">{% t footer-latest_blog.title %}</h2>
+        </div>
 
-                <!-- Link List -->
-                <div class="col-md-3 md-margin-bottom-40">
-                  <div class="headline"><h2>{% t footer-useful_links.title %}</h2></div>
-                  <ul class="list-unstyled link-list">
-                    <li><a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t footer-useful_links.link_1_title %}</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t footer-useful_links.link_2_title %}</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="{{ '/services#training' | prepend: site.baseurl }}">{% t footer-useful_links.link_3_title %}</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t footer-useful_links.link_4_title %}</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="{{ '/company' | prepend: site.baseurl }}">{% t footer-useful_links.link_5_title %}</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="{{ '/policies/privacy' | prepend: site.baseurl }}">{% t footer-useful_links.link_6_title %}</a><i class="fa fa-angle-right"></i></li>
-                  </ul>
-                </div><!--/col-md-3-->
-                <!-- End Link List -->                    
+        {% assign posts = site.posts %}
+        {% for post in posts limit:3 %}
+        <article>
+          <h3 class="h6 g-mb-2">
+            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords: 5 }}</a>
+          </h3>
+          <div class="small g-color-white-opacity-0_6">{{ post.author }}</div>
+        </article>
+        <hr class="g-brd-white-opacity-0_1 g-my-10">
+        {% endfor %}
+      </div>
+      <!-- End Footer Content -->
 
-                <!-- Contact Us -->
-                <div class="col-md-3 map-img md-margin-bottom-40">
-                  <div class="headline"><h2>{% t footer-contact.title  %}</h2></div>                         <address class="md-margin-bottom-40">
+      <!-- Footer Content -->
+      <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+          <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">{% t footer-useful_links.title %}</h2>
+        </div>
+
+        <nav class="text-uppercase1">
+          <ul class="list-unstyled g-mt-minus-10 mb-0">
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t footer-useful_links.link_1_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t footer-useful_links.link_2_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/services#training' | prepend: site.baseurl }}">{% t footer-useful_links.link_3_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/careers' | prepend: site.baseurl }}">{% t footer-useful_links.link_4_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-py-10 g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/company' | prepend: site.baseurl }}">{% t footer-useful_links.link_5_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-py-10 g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/policies/privacy' | prepend: site.baseurl }}">{% t footer-useful_links.link_6_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End Footer Content -->
+
+      <!-- Footer Content -->
+      <div class="col-lg-3 col-md-6">
+        <div class="u-heading-v3-1 g-brd-white-opacity-0_3 g-mb-25">
+          <h2 class="u-heading-v3__title h6 text-uppercase g-brd-primary">{% t footer-contact.title  %}</h2>
+        </div>
+
+        <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"  style="background-image: url(../../../assets/img/maps/map2.png);">
                     <a href="https://www.google.co.uk/maps/place/Codurance/@51.5238156,-0.1025175,17z/data=!4m13!1m7!3m6!1s0x48761b50d18bf817:0xcce7f698e8aeba03!2s15+Northburgh+St,+London+EC1V+0JR!3b1!8m2!3d51.5238156!4d-0.1003288!3m4!1s0x48761b50c8c7114f:0x6245fac5ecb52d7f!8m2!3d51.5238487!4d-0.1004723" target="_blank">15 Northburgh Street <br> London EC1V 0JR</a>
                     <br>
                     {% t footer-contact.phone_title %}: {{ site.office.phone.lnd }}
@@ -59,47 +99,48 @@
                     <br/>
                     {% t footer-contact.email_title %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a>
                   </address>
-                </div><!--/col-md-3-->
-                <!-- End Contact Us -->
-            </div>
-        </div> 
-    </div><!--/footer-->
-
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">                     
-            <p>{% t footer.registration_number %}: 8712584</p>
-          </div>
-
-          <!-- Social Links -->
-          <div class="col-md-6">
-            <ul class="footer-socials list-inline">
-              <li>
-                <a href="https://www.facebook.com/codurance/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin" target="_blank">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/codurance" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="{{ '/atom.xml' | prepend: site.baseurl }}" data-original-title="Feed" class="tooltips" data-toggle="tooltip" data-placement="top" title="" target="_blank">
-                  <i class="fa fa-rss"></i> 
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- End Social Links -->
-        </div>
-      </div> 
-    </div><!--/copyright-->
+      </div>
+      <!-- End Footer Content -->
+    </div>
+  </div>
 </div>
-<!--=== End Footer ===-->
+<!-- End Footer -->
+
+<!-- Copyright Footer -->
+<footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-center text-md-left g-mb-15 g-mb-0--md">
+        <div class="d-lg-flex">
+          <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">{% t footer.registration_number %}: 8712584</small>
+        </div>
+      </div>
+
+      <div class="col-md-4 align-self-center">
+        <ul class="list-inline text-center text-md-right mb-0">
+          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+            <a href="https://www.facebook.com/codurance/" class="g-color-white-opacity-0_5 g-color-white--hover">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
+            <a href="https://www.linkedin.com/company/codurance" class="g-color-white-opacity-0_5 g-color-white--hover">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+            <a href="https://twitter.com/codurance" class="g-color-white-opacity-0_5 g-color-white--hover">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Feed">
+            <a href="{{ '/atom.xml' | prepend: site.baseurl }}" class="g-color-white-opacity-0_5 g-color-white--hover">
+              <i class="fa fa-rss"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Copyright Footer -->

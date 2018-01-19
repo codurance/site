@@ -1,17 +1,17 @@
 <!-- JS Global Compulsory -->
-<script src="{{ "/assets/unify-1.9/plugins/jquery/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/plugins/jquery/jquery-migrate.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/plugins/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/plugins/back-to-top.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/plugins/jquery.parallax.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/jquery/jquery.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/jquery/jquery-migrate.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/bootstrap/js/bootstrap.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/back-to-top.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/jquery.parallax.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 <!-- JS Implementing Plugins -->
-<script src="{{ "/assets/unify-1.9/plugins/owl-carousel2/owl.carousel.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/js/handlebars.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/plugins/owl-carousel2/owl.carousel.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/js/handlebars.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 <!-- JS Customization -->
-<script src="{{ "/assets/custom/js/custom.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 <!-- JS Page Level -->
-<script src="{{ "/assets/unify-1.9/js/app.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "/assets/unify-1.9/js/pages/index.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/js/app.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/unify-1.9/js/pages/index.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -21,8 +21,93 @@
         gaEvents.functions.forEach(function(fireEvent){
             fireEvent(gaEvents.environment);
         });
-	if (typeof onJQueryLoaded === 'function') {
-	   onJQueryLoaded();
-	}
+        if (typeof onJQueryLoaded === 'function') {
+          onJQueryLoaded();
+        }
     });
 </script>
+
+<!-- JS Global Compulsory -->
+  <script src="{{ '/assets/unify-2.4/vendor/jquery/jquery.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/jquery-migrate/jquery-migrate.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/popper.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/bootstrap/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/appear.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/hs-megamenu/src/hs.megamenu.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/dzsparallaxer/dzsparallaxer.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/dzsparallaxer/dzsscroller/scroller.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/dzsparallaxer/advancedscroller/plugin.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/slick-carousel/slick/slick.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/masonry/dist/masonry.pkgd.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/imagesloaded/imagesloaded.pkgd.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/hs-bg-video/hs-bg-video.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/hs-bg-video/vendor/player.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/fancybox/jquery.fancybox.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/gmaps/gmaps.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/hs.core.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.header.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/helpers/hs.hamburgers.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.tabs.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.carousel.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/helpers/hs.bg-video.js"' | prepend: site.baseurl }}></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.popup.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/gmap/hs.map.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.onscroll-animation.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.go-to.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/custom.js' | prepend: site.baseurl }}"></script>
+
+
+ <!-- JS Plugins Init. -->
+  <script>
+      function initMap() {
+        $.HSCore.components.HSGMap.init('.js-g-map');
+      }
+
+      $(document).on('ready', function () {
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+
+        $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+
+        $('.masonry-grid').imagesLoaded().then(function () {
+          $('.masonry-grid').masonry({
+            columnWidth: '.masonry-grid-sizer',
+            itemSelector: '.masonry-grid-item',
+            percentPosition: true
+          });
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+          var gaEvents = window.googleAnalyticsEvents;
+          gaEvents.functions.forEach(function(fireEvent){
+            fireEvent(gaEvents.environment);
+          });
+          if (typeof onJQueryLoaded === 'function') {
+            onJQueryLoaded();
+          }
+
+        }, 200);
+      });
+  </script>
