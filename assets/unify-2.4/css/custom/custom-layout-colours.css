@@ -1,0 +1,55 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
+
+/* Section colours */
+
+.gray-section {
+    background: #fafafa;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+
+/* Foreground colours */
+
+.white,         /* 0 0 1 0 */
+p.white,        /* 0 0 1 1 */
+ul.white li {   /* 0 0 1 2 */
+    color: white;
+}
+
+/* Background colours */
+
+.bg-dark-red {   /* 0 0 1 0 */
+    background-color: #cc0000;
+}
+
+.bg-red {   /* 0 0 1 0 */
+    background-color: #ff0000;
+}
+
+.bg-dark-orange {   /* 0 0 1 0 */
+    background-color: #dd4d00;
+}
+
+.bg-orange {   /* 0 0 1 0 */
+    background-color: #ff6600;
+}
+
+.bg-dark-yellow {   /* 0 0 1 0 */
+    background-color: #ffaa00;
+}
+
+.bg-yellow {   /* 0 0 1 0 */
+    background-color: #ffcc33;
+}
+
+.bg-white {   /* 0 0 1 0 */
+    background-color: #fff;
+}
