@@ -1,0 +1,21 @@
+- id: skillsmatter 
+  name: Skills Matter
+  image: /assets/img/custom/home/clients/skillsmatter.jpg 
+  description: Skills Matter, with over 70,000 members, was founded to help drive innovation in software engineering by bringing smart and creative developers together to learn and share new skills, discover emerging technologies and evolve practices and ideas. We have been partners with Skills Matter since our beginning. Together, we run community events as well as public and private trainings. 
+  alt-text: Skills Matter Logo
+  website: skillsmatter.com
+
+- id: jetbrains 
+  name: Jetbrains 
+  image: /assets/img/custom/home/clients/jetbrainsLogo.png
+  description: Jetbrains are renowned for their software development tools. help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language. 
+  alt-text: Jetbrains Logo
+  website: jetbrains.com
+  read-more-url: /services/partners/jetbrains
+
+- id: satalia 
+  name: Satalia 
+  image: /assets/img/custom/home/clients/satalia.jpg 
+  description: Satalia solves hard problems using advanced data science, optimisation and artificial intelligence technologies. They build large-scale, end-to-end solutions in areas including routing, scheduling, planning and verification. Recognised thought leaders in AI, Satalia have been named a Gartner Cool Vendor 2016. 
+  alt-text: Satalia Logo
+  website: ssatalia.com

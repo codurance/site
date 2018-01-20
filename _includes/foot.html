@@ -1,33 +1,4 @@
-<!-- JS Global Compulsory -->
-<script src="{{ '/assets/unify-1.9/plugins/jquery/jquery.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/plugins/jquery/jquery-migrate.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/plugins/bootstrap/js/bootstrap.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/plugins/back-to-top.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/plugins/jquery.parallax.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<!-- JS Implementing Plugins -->
-<script src="{{ '/assets/unify-1.9/plugins/owl-carousel2/owl.carousel.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/js/handlebars.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<!-- JS Customization -->
-<script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<!-- JS Page Level -->
-<script src="{{ '/assets/unify-1.9/js/app.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ '/assets/unify-1.9/js/pages/index.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        App.init();
-        App.initParallaxBg();
-        var gaEvents = window.googleAnalyticsEvents;
-        gaEvents.functions.forEach(function(fireEvent){
-            fireEvent(gaEvents.environment);
-        });
-        if (typeof onJQueryLoaded === 'function') {
-          onJQueryLoaded();
-        }
-    });
-</script>
-
-<!-- JS Global Compulsory -->
+ <!-- JS Global Compulsory -->
   <script src="{{ '/assets/unify-2.4/vendor/jquery/jquery.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/jquery-migrate/jquery-migrate.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/popper.min.js' | prepend: site.baseurl }}"></script>
