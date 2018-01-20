@@ -251,7 +251,7 @@
 - id: lucianopalma
   name: Luciano Palma
   image: /assets/custom/img/team/luciano_palma.jpg
-  role: Software Craftsperson
+  role: Apprentice
   fullDescription:
    <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
    <p>He likes Functional and Object-Oriented Programming, but is also looking forward to learn other programming paradigms in order to improve his skills and his contribution to the software community.</p>
@@ -339,7 +339,7 @@
 - id: andrzejrehmann
   name: Andrzej Rehmann
   image: /assets/custom/img/team/andrzej_rehmann.jpg
-  role: Software Craftsman
+  role: Apprentice
   fullDescription:
     <p>Andrzej is a software developer with a weak spot for automation done right.</p>
     <p>He believes that the only way to go fast is to go clean and that software development is a marathon not a sprint.</p>
@@ -351,7 +351,7 @@
 - id: danielbergquist
   name: Daniel Bergquist
   image: /assets/custom/img/team/daniel_bergquist.jpg
-  role: Software Craftsman
+  role: Apprentice
   fullDescription:
     <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
     <p>His primary tech stack is NodeJS, although his lifelong love of learning means he is always investigating new languages and technologies. His reading list always contains more books than he can ever read! Away from the keyboard, his time is mostly spent enjoying time with his wife and young son.</p>
@@ -412,11 +412,4 @@
     <p>He likes to learn new things and improve himself every day by going to coding dojos, reading books and attending talks related to his profession.</p>
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
-  github: Archel
-
-- id: kevinokrah 
-  name: Kevin Okrah 
-  image: /assets/custom/img/team/kevin_okrah.jpg
-  role: Analyst Craftsman
-  fullDescription:
-    <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>
+  github: Archel 
