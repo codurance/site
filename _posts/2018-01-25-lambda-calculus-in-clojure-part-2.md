@@ -56,9 +56,11 @@ Using the [macro](https://github.com/srodrigo/lambda-calculus-in-clojure/blob/ma
 (def two
   (λ f (λ x (f (f x)))))
 
-and so on
+(def three
+  (λ f (λ x (f (f (f x))))))
 ```
 
+The following numbers are implemented in the same way, composing `f` `n` times.
 But this is not the only way to build Church numerals. As we have seen, `f` is actually the *successor* function, which can be defined like:
 
 ```
@@ -72,8 +74,89 @@ The successor of `n` is a function that:
 1. takes `f`
 2. returns another function that takes `x`
 3. applies `f` to the result of applying `n f` to `x`.
-
 This is a way of generalising the `n` compositions of `f` that we have seen in the general case `n` of the Church numerals.
+
+We can define the numbers of the example above in terms of `succ`:
+
+```
+; one
+(succ zero)
+
+; two
+(succ (succ zero))
+
+; three
+(succ (succ (succ zero)))
+```
+
+### Printing Church numerals
+
+Church numerals, and the functions built around them, can be, sometimes, difficult to visualise. Another thing we can explore in this post is how we can convert Church numerals into string representations. The idea is to consume the expression (which is a combination of functions applied to a parameter) and add the representation of each application:
+
+```
+(def λToStr
+  (λ f ((f (λ n (format "f(%s)" n))) "n")))
+```
+
+A few examples:
+
+```
+(deftest λ-toStr
+  (testing "toStr"
+    (is (= (toStr zero) "λf.λn.(n)"))
+    (is (= (toStr one) "λf.λn.(f(n))"))
+    (is (= (toStr two) "λf.λn.(f(f(n)))"))
+    ; three
+    (is (= (toStr (succ (succ (succ zero)))) "λf.λn.(f(f(f(n))))"))))
+```
+
+### Church numerals and integers
+
+For clarity (to avoid calling `succ` many times), we can add two functions to convert Church numerals to integers, and the other way around.
+To get a Church numeral from an integer, we can create a recursive function that encapsulates the previous numeral in the *successor* function, until it reaches `0`. This is the same idea as the original definition of Church numerals:
+
+```
+(def fromInt
+  (λ n
+    (if (= n 0)
+      zero
+      (succ (fromInt (- n 1))))))
+```
+
+For example, we could try to convert `5` into a Church numeral:
+
+```
+(fromInt 5)
+```
+
+This expression will return a Church numeral that can be represented as:
+
+```
+(is (= (toStr (fromInt 5)) "λf.λn.(f(f(f(f(f(n))))))"))
+```
+
+and is also equivalent to:
+
+```
+(succ (succ (succ (succ (succ (zero))))))
+```
+
+The opposite function just consumes the numerals, adding `1` to the result, starting from `0`:
+
+```
+(def toInt
+  (λ f ((f (λ n (+ n 1))) 0)))
+```
+
+A few examples:
+
+```
+(is (= (toInt zero) 0))
+(is (= (toInt (succ zero)) 1))
+(is (= (toInt one) 1))
+(is (= (toInt (succ (succ zero))) 2))
+(is (= (toInt two) 2))
+```
 
 ## Arithmetic operations
 
@@ -97,7 +180,19 @@ In fact, `plus` could be implemented in terms of `succ`:
   (λ m (λ n ((n succ) m))))
 ```
 
-We could say that *successor* is an special case of *addition* where `m = 1`.
+We could say that *successor* is an special case of *addition* where `m = 1`. Similarly, implementing `plus` in terms of `succ` applies the `succ` function `n` times, starting at `m`.
+
+A few examples of the `plus` function:
+
+```
+(testing "addition"
+  (is (=
+       (toInt ((plus (fromInt 7)) (fromInt 5)))
+       12))
+  (is (=
+       (toInt ((plus (fromInt 7)) ((plus (fromInt 6)) (fromInt 2))))
+       15)))
+```
 
 ### Exponentiation
 
@@ -107,12 +202,24 @@ This operation is actually very similar to the idea behind the definition of Chu
 exp(m, n) = m^n
 ```
 
-If `f^n x = n f x`, we can substitute `[f := m]` and `[x := f]` to get `m^n f = n m f`, which can then simplified to `m^n = n m`:
+As per the original definition of Church numerals and `succ`, if `f^n x = n f x`, then we can substitute `f = m` and `x = f` to get `m^n f = n m f`, which can then simplify to `m^n = n m`:
 
 ```
 ; λm.λn.n m
 (def exp
   (λ m (λ n (n m))))
+```
+
+A few examples of the `exp` function:
+
+```
+(testing "exponentiation"
+  (is (=
+        (toInt ((exp (fromInt 2)) (fromInt 3)))
+        8))
+  (is (=
+        (toInt ((exp (fromInt 2)) ((exp (fromInt 2)) (fromInt 3))))
+        256)))
 ```
 
 ### Multiplication
@@ -131,6 +238,18 @@ If `f^(m*n) (x) = (f^n)^m (x)`, then:
   (λ m (λ n (λ f (m (n f))))))
 ```
 
+A few examples of the `mult` function:
+
+```
+(testing "multiplication"
+  (is (=
+        (toInt ((mult (fromInt 2)) (fromInt 3)))
+        6))
+  (is (=
+        (toInt ((mult (fromInt 2)) ((mult (fromInt 5)) (fromInt 3))))
+        30)))
+```
+
 ### Subtraction
 
 *Subtraction* follows the same pattern as *addition*. Given a *predecessor* function, we define *subtraction* as:
@@ -139,10 +258,24 @@ If `f^(m*n) (x) = (f^n)^m (x)`, then:
 minus = λm.λn.(n pred) m
 ```
 
+The implementation in Clojure is straightforward:
+
 ```
 ; λm.λn.n pred m
 (def minus
   (λ m (λ n ((n pred) m))))
+```
+
+A few examples of the `minus` function:
+
+```
+(testing "subtraction"
+  (is (=
+       (toInt ((minus (fromInt 7)) (fromInt 5)))
+       2))
+  (is (=
+       (toInt ((minus (fromInt 7)) ((minus (fromInt 6)) (fromInt 2))))
+       3)))
 ```
 
 The *predecessor* function is quite complicated compared with the functions described so far:
@@ -152,6 +285,16 @@ The *predecessor* function is quite complicated compared with the functions desc
 ```
 
 If Church numerals apply a function `n` times using the *successor* function, we could do the reverse reasoning and say that *predecessor* applies the function `n - 1` times. This is achieved by wrapping `f` and `x` to skip the first application of `f`. This way, we get the remaining `n - 1` applications. [Here](https://en.wikipedia.org/wiki/Church_encoding#Derivation_of_predecessor_function) is a more detailed explanation.
+
+A few examples of `pred`:
+
+```
+(testing "predecessor"
+  (is (= (toInt (pred one)) 0))
+  (is (= (toInt (pred two)) 1))
+  (is (= (toInt (pred (succ (succ (succ zero))))) 2))
+  (is (= (toInt (pred (fromInt 10))) 9)))
+```
 
 ## A numerals calculator
 
@@ -166,46 +309,6 @@ So far, we have implemented a few basic numeral operations. We can now try to co
                          ((plus (fromInt 2)) (fromInt 5))))
                  ((exp (fromInt 2)) (fromInt 3))))
          13))))
-```
-
-For clarity (to avoid calling `succ` many times), we have defined two functions to convert Church numerals to integers, and the other way around.
-
-To get a Church numeral from an integer, we can create a recursive function that encapsulates the previous numeral in the *successor* function, until it reaches `0`. This is the same idea as the original definition of Church numerals:
-
-```
-(def fromInt
-  (λ n
-    (if (= n 0)
-      zero
-      (succ (fromInt (- n 1))))))
-```
-
-The opposite function just consumes the numerals, adding `1` to the result, starting from `0`:
-
-```
-(def toInt
-  (λ f ((f (λ n (+ n 1))) 0)))
-```
-
-## Printing Church numerals
-
-The last thing we are going to explore in this post is how we can convert Church numerals into string representations. The idea is the same as per the `toInt` function, consuming the expression (which is a combination of functions applied to a parameter) and adding the representation of each application:
-
-```
-(def λToStr
-  (λ f ((f (λ n (format "f(%s)" n))) "n")))
-```
-
-A few examples:
-
-```
-(deftest λ-toStr
-  (testing "toStr"
-    (is (= (toStr zero) "λf.λn.(n)"))
-    (is (= (toStr one) "λf.λn.(f(n))"))
-    (is (= (toStr two) "λf.λn.(f(f(n)))"))
-    (is (= (toStr (succ (succ (succ zero)))) "λf.λn.(f(f(f(n))))"))
-    (is (= (toStr (fromInt 5)) "λf.λn.(f(f(f(f(f(n))))))"))))
 ```
 
 You can find the full source code [here](https://github.com/srodrigo/lambda-calculus-in-clojure).
