@@ -73,7 +73,7 @@ The successor of `n` is a function that:
 2. returns another function that takes `x`
 3. applies `f` to the result of applying `n f` to `x`.
 
-This is just a way of generalising the `n` compositions of `f` that we have seen in the general case `n` of the Church numerals.
+This is a way of generalising the `n` compositions of `f` that we have seen in the general case `n` of the Church numerals.
 
 ## Arithmetic operations
 
@@ -89,7 +89,7 @@ The first operation that we can define is *addition*. This operation is quite si
   (λ m (λ n (λ f (λ x ((m f) ((n f) x)))))))
 ```
 
-In fact, `plus` could be implemented based on `succ`:
+In fact, `plus` could be implemented in terms of `succ`:
 
 ```
 ; plus = λm.λn.n succ m
@@ -145,7 +145,7 @@ minus = λm.λn.(n pred) m
   (λ m (λ n ((n pred) m))))
 ```
 
-The *predecessor* function is quite more complicated than the functions described so far:
+The *predecessor* function is quite complicated compared with the functions described so far:
 
 ```
 λn.λf.λx.n (λg.λh.h (g f)) (λu.x) (λu.u)
