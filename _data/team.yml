@@ -372,7 +372,7 @@
 - id: christinaripleygonzalez
   name: Christina Ripley-Gonzalez
   image: /assets/custom/img/team/christina_ripley.jpg
-  role: Apprentice
+  role: Software Craftswoman
   fullDescription:
     <p>Christina has been working as a software developer and team leader in the .NET ecosystem for a number of years. She particularly enjoys process automation and generally making other peoples jobs easier.</p>
     <p>Starting out playing with visual basic at the age of 16, she moved on to study software development at university and has been coding ever since.</p>
@@ -420,3 +420,16 @@
   role: Analyst Craftsman
   fullDescription:
     <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>
+
+- id: ascandroli
+  name: Alejandro Scandroli
+  image: /assets/custom/img/team/alejandro_scandroli.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Alejandro is a technology tinkerer with a deep interest in the intricate craft of software development. He's passionate about building, growing and leading teams to develop large-scale products and services.</p>
+    <p>He has a very broad range of experience in technologies and companies, yet always willing to learn more.</p>
+    <p>Being interested in most areas of software development, he has worn many hats during his career&colon; do-it-all IT guy, sysadmin, programmer, <i>(hands-on)</i> software architect, open source developer, project manager, <i>(elastic)</i> team leader, coach, entrepreneur, CTO and Software Craftsman.</p>
+    <p>He is a mindful husband and proud father of two young girls.</p>
+    <p>He also finds particularly weird to talk about himself in third person. ;-)</p>
+  twitter: _ascandroli
+  github: ascandroli
