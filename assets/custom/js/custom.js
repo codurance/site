@@ -161,27 +161,6 @@ $(document).ready(function() {
         return true;
     });
 
-    $('.custom-owl-carousel').owlCarousel({
-	    loop:true,
-	    autoplay:true,
-	    autoplayTimeout:1000,
-	    autoplayHoverPause:true,
-	    responsiveClass:true,
-	    responsive:{
-		     0:{
-			     items:1,
-			     margin: 20
-				        },
-		    600:{
-			    items:3,
-			    margin: 30
-				         },
-		       1000:{
-			          items:6,
-				  margin: 40
-		       }
-		      }
-    });
     announcementOnDevConsole();
 });
 

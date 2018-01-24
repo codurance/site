@@ -18,6 +18,7 @@
   <script src="{{ '/assets/unify-2.4/js/hs.core.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.header.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/helpers/hs.hamburgers.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.dropdown.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.tabs.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.carousel.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/helpers/hs.bg-video.js"' | prepend: site.baseurl }}></script>
@@ -26,6 +27,8 @@
   <script src="{{ '/assets/unify-2.4/js/components/hs.onscroll-animation.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.go-to.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/custom.js' | prepend: site.baseurl }}"></script>
+
+  <script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}"></script>
 
 
  <!-- JS Plugins Init. -->
@@ -46,31 +49,17 @@
         $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
 
         $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
       });
 
       $(window).on('load', function () {
         $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        $('.js-mega-menu').HSMegaMenu({
-          event: 'hover',
-          pageContainer: $('.container'),
-          breakpoint: 991
-        });
-
-        $('.masonry-grid').imagesLoaded().then(function () {
-          $('.masonry-grid').masonry({
-            columnWidth: '.masonry-grid-sizer',
-            itemSelector: '.masonry-grid-item',
-            percentPosition: true
-          });
-        });
       });
 
       $(window).on('resize', function () {
         setTimeout(function () {
-          $.HSCore.components.HSTabs.init('[role="tablist"]');
-
           var gaEvents = window.googleAnalyticsEvents;
           gaEvents.functions.forEach(function(fireEvent){
             fireEvent(gaEvents.environment);
