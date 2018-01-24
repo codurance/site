@@ -1,57 +1,67 @@
 <!-- Header -->
-<header id="js-header" class="u-header u-header--static u-header--show-hide u-header--change-appearance u-header--has-hidden-element u-header--untransitioned" data-header-fix-moment="500" data-header-fix-effect="slide">
-  <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-15" data-header-fix-moment-exclude="g-py-15" data-header-fix-moment-classes="u-shadow-v18 g-py-7">
-    <div class="container">
-      <div class="d-lg-flex flex-md-row align-items-center g-pos-rel">
-        <!-- Responsive Toggle Button -->
-        <button class="navbar-toggler navbar-toggler-right btn g-hidden-lg-up g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0 collapsed" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-          <span class="hamburger hamburger--slider">
+<header id="js-header" class="u-header u-header--static u-header--show-hide u-header--change-appearance" data-header-fix-moment="500" data-header-fix-effect="slide">
+      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-15" data-header-fix-moment-exclude="g-py-15" data-header-fix-moment-classes="u-shadow-v18 g-py-5">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+              <span class="hamburger hamburger--slider">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
-            </span>
-          </span>
-        </button>
-        <!-- End Responsive Toggle Button -->
-        <!-- Logo -->
-        <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">
-          <img src="{{ '/assets/custom/img/codurance.png' | prepend: site.baseurl }}" class="logo-header" alt="Codurance Logo" height="50">
-        </a>
-        <!-- End Logo -->
+              </span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
 
-        <div class="col g-mt-10 g-mt-0--lg g-px-0">
-          <ul class="list-inline text-uppercase g-font-weight-600 text-lg-right u-header--hidden-element g-line-height-1 g-font-size-12 g-mt-minus-10 g-mx-minus-4 g-mb-20">
-            {% for domain in site.domains %}
-            {% if domain[0] != site.lang %}
-            <li class="list-inline-item g-pos-rel g-mx-4 g-mt-10">
-              <i class="fa fa-globe g-font-size-14 g-mr-3"></i>
-              <a href="{{ domain[1] }}{{ page.url }}" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover">{{ domain[0] }}</a>
-            </li>
-            {% endif  %}
-            {% endfor %}
-          </ul>
+            <!-- Logo -->
+            <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand g-mr-50--lg">
+              <img src="{{ '/assets/custom/img/codurance-small.png' | prepend: site.baseurl }}" alt="Codurance Logo">
+            </a>
+            <!-- End Logo -->
 
-
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg p-0">
             <!-- Navigation -->
             <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm" id="navBar">
-              <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/clients' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.clients %}</a> </li>
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/services' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.services %}</a> </li>
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/publications' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.publications %}</a> </li>
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/events' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.events %}</a> </li>
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/company' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.company %}</a> </li>
-                <li class="nav-item g-mx-20--lg"> <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers %}</a> </li>
+              <ul class="nav navbar-nav text-uppercase g-font-weight-600 mr-auto">
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/clients' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.clients %}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/services' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.services%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/publications' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.publications%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/events' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.events%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                  <a href="{{ '/company' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.company%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                  <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
+                </li>
               </ul>
             </div>
-            <div class="d-inline-block g-valign-middle">
-              <button onclick="location.href='{{ '/company/#contactus' | prepend: site.baseurl }}';" role="button" class="btn btn-small btn-small-orange">{% t sections.contact %}</button>
+            <!-- End Navigation -->
+
+            <!-- Search -->
+            <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg">
+              <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
+                {% for domain in site.domains %}
+                {% if domain[0] == site.lang %} {{ domain[0] }}&nbsp; {% endif %}
+                {% endfor %}
+
+                <i class="fa fa-angle-down g-ml-3"></i>
+              </a>
+              <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-z-index-2 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
+                {% for domain in site.domains %}
+                <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] }}</a> </li>
+                {% endfor %}
+              </ul>
             </div>
-          </nav>
-          <!-- End Navigation -->
-        </div>
+            <!-- End Search -->
+          </div>
+        </nav>
       </div>
-    </div>
-  </div>
 </header>
 <!-- End Header -->
