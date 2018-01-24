@@ -3,7 +3,7 @@ layout: post
 name: 2018-01-25-lambda-calculus-in-clojure-part-2
 title: Lambda Calculus in Clojure (Part 2)
 description: Implementing a Lambda Calculus numeral algebra in Clojure
-date: 2018-01-17 08:00:00 +00:00
+date: 2018-01-25 08:00:00 +00:00
 author: Sergio Rodrigo Royo
 layout: post
 asset-type: post
