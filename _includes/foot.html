@@ -51,6 +51,10 @@
         $.HSCore.components.HSGoTo.init('.js-go-to');
 
         $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
+        
+        if (typeof onJQueryLoaded === 'function') {
+          onJQueryLoaded();
+        }
       });
 
       $(window).on('load', function () {
@@ -64,9 +68,6 @@
           gaEvents.functions.forEach(function(fireEvent){
             fireEvent(gaEvents.environment);
           });
-          if (typeof onJQueryLoaded === 'function') {
-            onJQueryLoaded();
-          }
 
         }, 200);
       });
