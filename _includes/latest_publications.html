@@ -15,7 +15,7 @@
   {% for publication in publications | limit: 3 %}
 
   <div class="item" >			
-    <img class="img-responsive" src="{{ publication.image.src  | prepend: site.baseurl }}" alt="{{ publication.title }}">
+    <img class="img-fluid" src="{{ publication.image.src  | prepend: site.baseurl }}" alt="{{ publication.title }}">
     <h4><a href="{{ publication.url | prepend: site.baseurl }}">{{ publication.title }}</a></h4>
   </div>
 
