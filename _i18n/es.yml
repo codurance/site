@@ -223,30 +223,24 @@ clients:
    software_creation_title: Creación de Software
    expert_advice_title: Asesoramiento de expertos
    training_and_coaching_title: Formación & asesoría
-clients-header:
-   title: ¡Estamos orgullosos de nuestros clientes y socios!
-clients-finance:
-   title: Finanzas
-   subtitle: Los entornos altamente regulados no suponen un obstáculo para nuestros clientes en cuanto a innovación y formas de trabajo Agile. Ayudamos a nuestros clientes financieros a crear soluciones de calidad con prácticas y tecnologías actuales.
+   header: ¡Estamos orgullosos de nuestros clientes y socios!
    ubs_description: UBS es una empresa global que provee servicios a clientes privados, empresas e instituciones. Hemos ayudado a UBS a crear una plataforma de informes normativos para cumplir con los últimos reglamentos financieros en curso. También les hemos ayudado a crear sus equipos a distancia para encargarse del trabajo de informes normativos. Estos equipos son bien conocidos dentro de UBS por su efectividad, prácticas de XP y valores de Software Craftsmanship.
-   mergermarket_description: Mergermarket es parte de Mergermarket Group, especializados en sacar provecho de la información para suscriptores en una variedad de mercados. Nuestro equipo de Software Craftspeople están ayudando a Mergermarket a implementar la siguiente generación de plataformas de publicación.
-   societe_generale_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftspeople embebidos les ayudaron a adoptar Prácticas XP y Continuous Delivery.
-   m_and_g_description: M&G es una de las casas de inversión más grandes y longevas de Reino Unido, con más de 80 años de experiencia. Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de formación regulares para enseñarles Test Driven Development y Clean Code.
+   acuris_description: Acuris es especializados en sacar provecho de la información para suscriptores en una variedad de mercados. Nuestro equipo de Software Craftspeople están ayudando a Acuris a implementar la siguiente generación de plataformas de publicación.
+   socgen_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftspeople embebidos les ayudaron a adoptar Prácticas XP y Continuous Delivery.
+   mandg_description: M&G es una de las casas de inversión más grandes y longevas de Reino Unido, con más de 80 años de experiencia. Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de formación regulares para enseñarles Test Driven Development y Clean Code.
    flextrade_description: FlexTrade Systems es el líder global en sistemas de gestión de ejecución de alto rendimiento y de gestión de pedidos para la renta variable, divisas, opciones, futuros y renta fija. Hemos ayudado a mejorar las habilidades de desarrollo de software de su equipo mediante la organización de sesiones de formación a medida en Diseño de Software y técnicas de Test Driven Development avanzadas.
-clients-retail:
-   title: Venta al por menor
-   subtitle: Nuestros clientes de venta al por menor, especialmente en la gestión de la cadena de suministro, se encargan de algunos de los sistemas empresariales más complejos. Su sistema para los consumidores también requiere una experiencia e interfaz de usuario convincentes para asegurar la satisfacción y fidelidad de sus clientes. Nuestro foco en la artesanía y experiencia en sistemas empresariales de alta escalabilidad nos hacen un socio ideal.
    tesco_description: Tesco es un minorista líder. Hemos estado trabajando con ellos para crear la nueva generación de servicios de reparto a domicilio y previsión de suministro. También estamos ayudando a mejorar las cualificaciones profesionales de sus propios equipos de desarrollo.
    asos_description: ASOS es el minorista online de moda y belleza más grande de Reino Unido. Nuestros craftspeople están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
    mango_description: Mango es un minorista internacional con más de 2.700 tiendas en 105 países. Les hemos ayudado a reestructurar su actual arquitectura con microservicios para brindar una mejor experiencia al cliente.
    coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas dar a sus clientes planes de tarjetas y vales, basados en su fidelidad.
-clients-media:
-   title: Medios de comunicación y entretenimiento
-   subtitle: Nuestros clientes en los Medios de comunicación y entretenimiento han aprovechado nuestra experiencia en desarrollo de software para crear equipos que son altamente efectivos y sistemas que deleitan a sus clientes.
+   mands_description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index. 
+   accelad_description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
    crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar con música. Les hemos ayudado a crear su departamento de tecnología desde la base, proveyendo un equipo que formaba el núcleo de su esfuerzo de desarrollo de software, contratando sus propios desarrolladores para acabar tomando el mando.
    aws_description: AWS provee un conjunto de servicios en la nube mediante una plataforma para aplicaciones de software. Hemos creado una plataforma para el manejo de eventos para los eventos de su comunidad, como AWS Loft y AWS Summit
    trinitymirror_description: Trinity Mirror es un galardonado portfolio de periódicos, sitios web y productos digitales. Estamos ayudándoles a convertir su plataforma de publicaciones en una arquitectura basada en microservicios. También les estamos ayudando a transformar la organización de su equipo y sus habilidades, para que se alineen con Continuous Delivery.
    findmypast_description: Findmypast es un líder mundial en genealogía online. Hemos provisto craftspeople embebidos para trabajar dentro de sus equipos para mejorar el estado general de los sistemas y las cualificaciones de los equipos en Test Driven Development, Clean Code y Pair Programming
+   aspectcapital_description: Aspect Capital Limited (Aspect) is a UK-based investment manager with offices in London, Stamford (CT) and Hong Kong. We are providing expertise embeded into their existing team. Our craftsmen are working alongside their own people to help build the next generation of their offering.
+
 clients-partners:
    title: Socios
    subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes y nosotros ayudamos a nuestros socios a conseguir lo mismo.

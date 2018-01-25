@@ -1,136 +1,138 @@
 - id: ubs 
+  name: UBS
   image: /assets/custom/img/team/sandro_mancuso.jpg
-  description: UBS is a global firm providing financial services to private, corporate and institutional clients. We helped UBS create a regulatory reporting platform to comply with the latest, and ongoing, financial regulations. We also helped build their offshore teams to take over the regulatory reporting work. These teams are now well known within UBS for their effectiveness, XP practices and Software Craftsmanship values.
   alt-text: UBS Logo
   website: ubs.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
-  -id: mergermarket
-  image: /assets/custom/img/home/clients/mergermarket.jpg
-  description: Mergermarket are part of the Mergermarket Group, which specialises in creating an information advantage for subscribers in a variety of markets. Our team of Software Craftspeople are helping Mergermarket build the next generation of publishing platforms.
-  alt-text: Mergermarket logo
-  website: mergermarket.com
+  -id: acuris 
+  name: Acuris
+  image: /assets/custom/img/home/clients/acuris.png
+  alt-text: Acuris logo
+  website: acuris.com
   services: 
-  - Software Creation
+  - software_creation
 
 
 - id: socgen 
+  name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.jpg
-  description: Societe Generale is a leading multinational banking and financial services company. Our embedded craftspeople helped them adopt XP Practices and Continuous Delivery.
   alt-text: Societ Generale Logo
   website: societegenerale.com 
   services: 
-  - Expert Advice
-  - Training & Coaching
+  - expert_advice
+  - training_and_coaching
 
 
 - id: mandg 
+  name: M&G
   image: /assets/custom/img/home/clients/mandg.png
-  description: M&G are one of the UK’s largest and longest established investment houses, with more than 80 years’ experience. We are helping M&G instill a culture of learning within their teams. We run regular coaching sessions for them to teach Test Driven Development and Clean Code.
   alt-text: MandG logo
   website: mandg.co.uk 
   services: 
-  - Training & Coaching
-  - Expert Advice
+  - training_and_coaching
+  - expert_advice
 
  
 - id: flextrade 
+  name: Flextrade 
   image: /assets/custom/img/home/clients/flextrade.png
-  description: FlexTrade Systems is the global leader in high performance execution management and order management systems for equities, foreign exchange, options, futures and fixed income. We helped improve the sofware development skills of their team by running customised training sessions on Software Design and advanced Test Driven Development techniques.
   alt-text: Flextrade logo
   website: flextrade.com
   services: 
-  - Training & Coaching
-  - Expert Advice
+  - training_and_coaching
+  - expert_advice
 
 - id: aspectcapital 
+  name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect_capital.jpeg
-  description: Aspect Capital Limited (Aspect) is a UK-based investment manager with offices in London, Stamford (CT) and Hong Kong.
   alt-text: Aspect Capital logo
   website: aspectcapital.com 
   services: 
-  - Software Creation
-  - Training & Coaching
-  - Expert Advice
+  - software_creation
+  - training_and_coaching
+  - expert_advice
 
 - id: tesco 
+  name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
-  description: Tesco is a leading high street retailer. We have been working with them to build the next generation of home delivery and supply forecasting services. We are also helping to upskill their own development teams.
+  description: clients.tesco_description 
   alt-text: Tesco logo
   website: tesco.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: asos 
+  name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.jpg
-  description: ASOS is the UK's largest independent online fashion and beauty retailer. Our craftspeople are embedded into their teams to help continously improve the technology and practices. We also run a tailored training and coaching programme for their development teams.
   alt-text: ASOS logo
   website: asos.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: mango 
+  name: Mango
   image: /assets/custom/img/home/clients/mango.jpg
-  description: Mango is a multinational fashion retailer, with over 2,700 stores in 105 countries. We have been helping Mango to rearchitect their site with Microservices, to ultimately deliver an even better experience for their customers.
   alt-text: MANGO logo
   website: mango.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: mands 
+  name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
-  description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.
   alt-text: Marks and Spencer logo
   website: marksandspencer.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: coniq 
+  name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
-  description: Coniq provide data driven market and loyalty platforms. We have developed ePOS applications that allow stores to provide card and voucher based loyaly schemes to their customers.
   alt-text: Coniq logo
   website: coniq.com
   services: 
-  - Software Creation
+  - software_creation
 
 - id: aws
+  name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.svg
-  description: AWS provides a set of cloud services providing a platform for software applications. We built an event management platform for their community events such as AWS Loft and AWS Summit
   alt-text: Amazon Web Services logo
   website: aws.amazon.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: trinitymirror
+  name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
-  description: Trinity Mirror is an award winning portfolio of newspapers, websites and digital products. We are helping them take their publishing platform to a micro-services based architecture. We are also helping them transform their team organisation and skills so they are aligned towards Continuous Delivery.
   alt-text: Trinity Mirror logo
   website: trinitymirror.com
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: findmypast 
+  name: Findmypast
   image: /assets/custom/img/home/clients/findmypast.jpg
-  description: Findmypast is a world leader in online genealogy. We have provided embedded craftspeople to work within their teams in order to improve the over all state of the systems and to upskill the teams in Test Driven Development, Clean Code, and Pair Programming
   alt-text: Find My Past logo
   website: findmypast.co.uk
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
 
 - id: accelad 
+  name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
   description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements. 
   alt-text: Accelad logo
   website: accelad.com 
   services: 
-  - Software Creation
-  - Expert Advice
+  - software_creation
+  - expert_advice
