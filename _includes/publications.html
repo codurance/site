@@ -2,9 +2,9 @@
 
   <ul class="u-list-inline">
     <li class="list-inline-item g-mr-5 {% if include.filter == '' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications' | prepend: site.baseurl }}">{% t publications-all.title %}</a> <i class="g-color-gray-light-v2 g-ml-5">/</i></li> 
-    <li  class="list-inline-item g-mr-5 {% if include.filter == '' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
-    <li  class="list-inline-item g-mr-5 {% if include.filter == '' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
-    <li  class="list-inline-item g-mr-5 {% if include.filter == '' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/newsletters' | prepend: site.baseurl }}">Newsletters</a></li>
+    <li  class="list-inline-item g-mr-5 {% if include.filter == 'posts' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
+    <li  class="list-inline-item g-mr-5 {% if include.filter == 'videos' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
+    <li  class="list-inline-item g-mr-5 {% if include.filter == 'publications' %} g-color-primary {% endif %}"><a class="u-link-v5 g-color-main" href="{{ '/publications/newsletters' | prepend: site.baseurl }}">Newsletters</a></li>
   </ul>
 
     <div class="row">
