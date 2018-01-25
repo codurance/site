@@ -13,7 +13,7 @@ group:
 		{% else %}
 			{% assign eventImage = site.default_post_image %}
 		{% endif %}
-		<img class="img-responsive" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
+		<img class="img-fluid" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
 		{% if page.speaker %}
 			<h3>{{ page.speaker | author_links }}</h3>
 		{% endif %}
