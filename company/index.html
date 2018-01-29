@@ -161,17 +161,16 @@ title: Company
                 </ul>
             </p>
             <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
-            <div class="row">
-              <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
+              <form action="https://formspree.io/hello@codurance.com" method="POST">
                 <input type="hidden" name="_next" value="/aboutus/thanks"/>
                 <input type="hidden" name="_subject" value="Codurance Contact"/>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <div class="input-group margin-bottom-10">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                     <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <div class="input-group margin-bottom-20">
                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                     <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
@@ -182,7 +181,6 @@ title: Company
                   <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
                 </div>
               </form>
-            </div>
           </div>
         </div>
       </div>
