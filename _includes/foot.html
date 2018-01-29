@@ -27,8 +27,10 @@
   <script src="{{ '/assets/unify-2.4/js/components/hs.onscroll-animation.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.go-to.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/custom.js' | prepend: site.baseurl }}"></script>
-
   <script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/custombox/custombox.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/js/components/hs.modal-window.js' | prepend: site.baseurl }}"></script>
+
 
 
  <!-- JS Plugins Init. -->
@@ -52,9 +54,13 @@
 
         $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
         
+        $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+        
         if (typeof onJQueryLoaded === 'function') {
           onJQueryLoaded();
         }
+
+
       });
 
       $(window).on('load', function () {
