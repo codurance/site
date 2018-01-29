@@ -29,46 +29,62 @@ title: Company
         <div class="row team margin-bottom-10">
           {% endif %}
           <!-- TEAM MEMBER -->
-          <div class="col-md-2 col-sm-4 col-xs-6" data-toggle="modal" data-target=".team-{{member.id}}">
-            <a href="javascript:void(0)" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
-              <span><img class="img-responsive" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
+          <div class="col-md-2 col-sm-4 col-xs-6" >
+            <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
+              <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
               <span>{{member.name}}</span>
             </a>
           </div>
           <!-- MODAL CLASS -->
-          <div class="modal fade team-{{member.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog profile-window modal-window">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">x</span>
-                    <span class="sr-only">Close</span>
-                  </button>
-                  <h3>
-                    {{member.name}}<br> <small>{{member.role}}</small>
-                  </h3>
+          <div id="team-{{member.id}}"  class="g-max-width-800 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;" >
+            <button type="button" class="close" onclick="Custombox.modal.close();">
+              <i class="hs-icon hs-icon-close"></i>
+            </button>
+
+            <div class="g-pa-20">
+              <div class="row">
+                <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+                  <!-- User Image -->
+                  <div class="u-block-hover g-pos-rel g-mb-20">
+                    <figure>
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{member.image | prepend: site.baseurl}}" alt="Image for {member.name}}">
+                    </figure>
+                  </div>
+                  <!-- User Image -->
                 </div>
-                <div class="modal-body">
-                  <p>
-                  <img class="img-responsive margin-bottom-30 profile-image" src="{{member.image | prepend: site.baseurl}}" alt="{{member.name}}">
-                  </p>
-                  {{member.fullDescription}}
-                  <ul class="list-unstyled list-inline team-socail">
-                    {% if member.twitter != null %}
-                    <li>
-                      <a href="http://twitter.com/{{member.twitter}}">
-                        <i class="fa fa-twitter fa-3x"></i>
-                      </a>
-                    </li>
-                    {% endif %}
-                    {% if member.github != null %}
-                    <li>
-                      <a href="http://github.com/{{member.github}}">
-                        <i class="fa fa-github fa-3x"></i>
-                      </a>
-                    </li>
-                    {% endif %}
-                  </ul>
+
+                <div class="col-lg-8">
+                  <!-- User Details -->
+                  <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
+                    <h2 class="g-font-weight-300 g-mr-10">{{member.name}}</h2>
+                    <ul class="list-inline mb-0">
+                      {% if member.github != null %}
+                      <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://github.com/{{member.github}}">
+                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+                        </a>
+                      </li>
+                      {% endif %}
+
+                      {% if member.twitter != null %}
+                      <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://twitter.com/{{member.twitter}}">
+                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+                  <!-- End User Details -->
+
+                  <!-- User Position -->
+                  <h4 class="h6 g-font-weight-300 g-mb-10">
+                    <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}</h4>
+                  <!-- End User Position -->
+                  <hr class="g-brd-gray-light-v4 g-my-20">
+                  <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
                 </div>
               </div>
             </div>
@@ -155,34 +171,32 @@ title: Company
             <!-- Business Hours -->
             <h3>{% t company-contact-form.title %}</h3>
             <p>{% t company-contact-form.offices_introduction %}:
-                <ul>
-                    <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
-                    <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
-                </ul>
+            <ul>
+              <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
+              <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
+            </ul>
             </p>
             <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
-            <div class="row">
-              <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
-                <input type="hidden" name="_next" value="/aboutus/thanks"/>
-                <input type="hidden" name="_subject" value="Codurance Contact"/>
-                <div class="col-sm-6">
-                  <div class="input-group margin-bottom-10">
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
-                  </div>
+            <form action="https://formspree.io/hello@codurance.com" method="POST">
+              <input type="hidden" name="_next" value="/aboutus/thanks"/>
+              <input type="hidden" name="_subject" value="Codurance Contact"/>
+              <div class="col-sm-12">
+                <div class="input-group margin-bottom-10">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
                 </div>
-                <div class="col-sm-6">
-                  <div class="input-group margin-bottom-20">
-                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                    <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
-                  </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="input-group margin-bottom-20">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
                 </div>
-                <div class="col-sm-12">
-                  <textarea rows="8" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
-                  <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
-                </div>
-              </form>
-            </div>
+              </div>
+              <div class="col-sm-12">
+                <textarea rows="8" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+                <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

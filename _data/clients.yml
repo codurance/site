@@ -1,0 +1,138 @@
+- id: ubs 
+  name: UBS
+  image: /assets/custom/img/team/sandro_mancuso.jpg
+  alt-text: UBS Logo
+  website: ubs.com
+  services: 
+  - software_creation
+  - expert_advice
+
+  -id: acuris 
+  name: Acuris
+  image: /assets/custom/img/home/clients/acuris.png
+  alt-text: Acuris logo
+  website: acuris.com
+  services: 
+  - software_creation
+
+
+- id: socgen 
+  name: Societe Generale
+  image: /assets/custom/img/home/clients/societygenerale.jpg
+  alt-text: Societ Generale Logo
+  website: societegenerale.com 
+  services: 
+  - expert_advice
+  - training_and_coaching
+
+
+- id: mandg 
+  name: M&G
+  image: /assets/custom/img/home/clients/mandg.png
+  alt-text: MandG logo
+  website: mandg.co.uk 
+  services: 
+  - training_and_coaching
+  - expert_advice
+
+ 
+- id: flextrade 
+  name: Flextrade 
+  image: /assets/custom/img/home/clients/flextrade.png
+  alt-text: Flextrade logo
+  website: flextrade.com
+  services: 
+  - training_and_coaching
+  - expert_advice
+
+- id: aspectcapital 
+  name: Aspect Capital
+  image: /assets/custom/img/home/clients/aspect_capital.jpeg
+  alt-text: Aspect Capital logo
+  website: aspectcapital.com 
+  services: 
+  - software_creation
+  - training_and_coaching
+  - expert_advice
+
+- id: tesco 
+  name: Tesco
+  image: /assets/custom/img/home/clients/tesco.png
+  description: clients.tesco_description 
+  alt-text: Tesco logo
+  website: tesco.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: asos 
+  name: ASOS
+  image: /assets/custom/img/home/clients/asos-logo.jpg
+  alt-text: ASOS logo
+  website: asos.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: mango 
+  name: Mango
+  image: /assets/custom/img/home/clients/mango.jpg
+  alt-text: MANGO logo
+  website: mango.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: mands 
+  name: Marks and Spencer
+  image: /assets/custom/img/home/clients/marksandspencer-logo.png
+  alt-text: Marks and Spencer logo
+  website: marksandspencer.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: coniq 
+  name: Coniq
+  image: /assets/custom/img/home/clients/coniq.png
+  alt-text: Coniq logo
+  website: coniq.com
+  services: 
+  - software_creation
+
+- id: aws
+  name: Amazon Web Services
+  image: /assets/custom/img/home/clients/aws.svg
+  alt-text: Amazon Web Services logo
+  website: aws.amazon.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: trinitymirror
+  name: Trinity Mirror
+  image: /assets/custom/img/home/clients/trinitymirror.png
+  alt-text: Trinity Mirror logo
+  website: trinitymirror.com
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: findmypast 
+  name: Findmypast
+  image: /assets/custom/img/home/clients/findmypast.jpg
+  alt-text: Find My Past logo
+  website: findmypast.co.uk
+  services: 
+  - software_creation
+  - expert_advice
+
+- id: accelad 
+  name: AccelaD
+  image: /assets/custom/img/home/clients/accelad.png
+  description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements. 
+  alt-text: Accelad logo
+  website: accelad.com 
+  services: 
+  - software_creation
+  - expert_advice

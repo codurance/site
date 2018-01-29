@@ -68,10 +68,11 @@ var submitApplication = function (title, target) {
     }
 
     if(errors) {
-        $('#input-error-msg-' + target).html("<strong>Please: </strong> enter all the requested fields:" + errors).removeClass('hide');
+        $('#input-error-msg-' + target).show();
+        $('#fields-' + target).html("<strong>Please: </strong> enter all the requested fields:" + errors).show();
         return false;
     } else {
-            $('#input-error-msg-' + target).hide();
+        $('#input-error-msg-' + target).hide();
     }
     
     var bodyMessage = 'First Name: ' + firstName + '\r\n';
@@ -117,7 +118,7 @@ var submitApplication = function (title, target) {
 
             $('#' + target + '-fields').hide();
             $('#' + target + '-apply-btn').hide();
-            $('#success-msg-' + target).removeClass('hide');
+            $('#success-msg-' + target).show();
         },
         error: function(msg) {
             $('#error-msg-' + target).show();
@@ -161,27 +162,6 @@ $(document).ready(function() {
         return true;
     });
 
-    $('.custom-owl-carousel').owlCarousel({
-	    loop:true,
-	    autoplay:true,
-	    autoplayTimeout:1000,
-	    autoplayHoverPause:true,
-	    responsiveClass:true,
-	    responsive:{
-		     0:{
-			     items:1,
-			     margin: 20
-				        },
-		    600:{
-			    items:3,
-			    margin: 30
-				         },
-		       1000:{
-			          items:6,
-				  margin: 40
-		       }
-		      }
-    });
     announcementOnDevConsole();
 });
 

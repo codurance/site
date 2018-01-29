@@ -4,342 +4,42 @@ title: Clients
 
 ---
 
-
 <div class="breadcrumbs-v3 ourclients">
   <div class="container text-center">
-    <h1>{% t clients-header.title %}</h1>
+    <h1>{% t clients.header %}</h1>
   </div><!--/end container-->
 </div>
 
 <div class="section" style="padding-bottom: 0px">
   <div class="container">
-    <div class="client-links">
-      <a href="#finance">{% t clients-finance.title %}</a> | <a href="#retail">{% t clients-retail.title %}</a> | <a href="#media">{% t clients-media.title %}</a> | <a href="#partners">{% t clients-partners.title %}</a>
-    </div>
-  </div>
-</div>
-
-<a id="finance"></a><div class="section" style="padding-bottom: 0px">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t clients-finance.title %}</h2>
-      <p>{% t clients-finance.subtitle %}</p>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/ubs.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
+    {% for client in site.data.clients %}
+    <div class="d-flex justify-content-between">
+      <div class="d-block mr-5">
+        <img class="g-width-120" src="{{ client.image }}" alt="{{ client.alt-text }}">
       </div>
-      <div class="col-md-10">
-        <h3>UBS</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.ubs.com">ubs.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
+      <div class="d-block">
+        <h2 class="h4 g-color-black g-font-weight-600">{{ client.name }}</h2>
+        <ul class="list-inline g-font-size-13">
+          <li class="list-inline-item mr-4">
+            <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
+            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="https://{{ client.website }}">
+              {{ client.website }}
+            </a>
+          </li>
+        
+          {% for service in client.services %}
+          <li class="list-inline-item">
+            <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+            {% capture service-category %}clients.{{service}}_title{% endcapture %}
+            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#">{% t {{service-category}} %}</a>
+          </li>
+          {% endfor %}
         </ul>
-        <p>{% t clients-finance.ubs_description %}</p>
+        {% capture description %}clients.{{client.id}}_description{% endcapture %}
+        <p>{% t {{ description }} %}</p>
       </div>
     </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/mergermarket.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Mergermarket</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://mergermarket.com">mergermarket.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a></li>
-        </ul>
-        <p>{% t clients-finance.mergermarket_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/societygenerale.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Societe Generale</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://societegenerale.com">societegenerale.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a> / <a href="{{ '/services#training' | prepend: site.baseurl }}">{% t clients.training_and_coaching_title %}</a></li>
-        </ul>
-        <p>{% t clients-finance.societe_generale_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/mandg.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>M&G</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.mandg.co.uk">mandg.co.uk</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a> / <a href="{{ '/services#training' | prepend: site.baseurl }}">{% t clients.training_and_coaching_title %}</a></li>
-        </ul>
-        <p>{% t clients-finance.m_and_g_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/flextrade.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Flextrade</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.flextrade.com">flextrade.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a> / <a href="{{ '/services#training' | prepend: site.baseurl }}">{% t clients.training_and_coaching_title %}</a></li>
-        </ul>
-        <p>{% t clients-finance.flextrade_description %}</p>
-      </div>
-    </div>
-<div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/aspect_capital.jpeg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Aspect Capital</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.aspectcapital.com/">aspectcapital.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-          </a> / <a href="{{ '/services#training' | prepend: site.baseurl }}">{% t clients.training_and_coaching_title %}</a></li>
-        </ul>
-        <p>{% t clients-finance.aspect_capital_description %}</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<a id="retail"></a><div class="section gray-section" style="padding-bottom: 0px">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t clients-retail.title %}</h2>
-      <p>{% t clients-retail.subtitle %}</p>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/tesco.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Tesco</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.tesco.com">tesco.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-retail.tesco_description %}</p>
-        <a href="{{ '/clients/projects/software-craftsmanship-at-tesco-plc' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-less animated"> Read case study </a>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/asos-logo.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>ASOS</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.asos.com">asos.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-retail.asos_description %}</p>
-        <a href="{{ '/clients/projects/software-craftsmanship-at-asos' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-less animated"> Read case study </a>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/mango-logo.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Mango</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://shop.mango.com">shop.mango.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-retail.mango_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/coniq.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Coniq</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://coniq.com">coniq.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a></li>
-        </ul>
-        <p>{% t clients-retail.coniq_description %}</p>
-        <a href="{{ '/clients/projects/software-craftsmanship-at-coniq' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-less animated"> Read case study </a>      
-      </div>
-    </div>
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/marks_spencer.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Marks & Spencer</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="http://www.marksandspencer.com/">marksandspencer.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-retail.marks_spencer_description %}</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<a id="media"></a><div class="section" style="padding-bottom: 0px">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t clients-media.title %}</h2>
-      <p>{% t clients-media.subtitle %}</p>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/crowdmix.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Crowdmix</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="http://crowdmix.me">crowdmix.me</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a> / <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-media.crowdmix_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/aws.svg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Amazon Web Services</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://aws.amazon.com/">aws.amazon.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a></li>
-        </ul>
-        <p>{% t clients-media.aws_description %}</p>
-        <a href="{{ '/clients/projects/software-craftsmanship-with-amazon-web-services' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-less animated"> Read case study </a>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/trinitymirror.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Trinity Mirror</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="http://www.trinitymirror.com/">trinitymirror.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}">{% t clients.expert_advice_title %}</a></li>
-        </ul>
-        <p>{% t clients-media.trinitymirror_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/findmypast.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Findmypast</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.findmypast.co.uk/">findmypast.co.uk</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a></li>
-        </ul>
-        <p>{% t clients-media.findmypast_description %}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<a id="Manufacturing"></a><div class="section gray-section" style="padding-bottom: 0px">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t clients-manufacturing.title %}</h2>
-      <p>{% t clients-manufacturing.subtitle %}</p>
-    </div>
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/accelad.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>AccelaD</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="http://www.accelad.com/">accelad.com</a></li>
-          <li><i class="fa fa-briefcase color-green"></i> <a href="{{ '/services#software-creation' | prepend: site.baseurl }}">{% t clients.software_creation_title %}</a></li>
-        </ul>
-        <p>{% t clients-manufacturing.accelad_description %}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<a id="partners"></a><div class="section gray-section" style="padding-bottom: 0px">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t clients-partners.title %}</h2>
-      <p>{% t clients-partners.subtitle %}</p>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/skillsmatter.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Skills Matter</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://skillsmatter.com">skillsmatter.com</a></li>
-        </ul>
-        <p>{% t clients-partners.skillsmatter_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/jetbrainsLogo.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Jetbrains</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://jetbrains.com">jetbrains.com</a></li>
-        </ul>
-        <p>{% t clients-partners.jetbrains_description %} <a href="{{ '/services/partners/jetbrains' | prepend: site.baseurl }}">{% t clients-partners.link_title %}</a></p>
-      </div>
-    </div>
-
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/github.png' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Github</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://github.com">github.com</a></li>
-        </ul>
-        <p>{% t clients-partners.github_description %}</p>
-      </div>
-    </div>
-
-    <div class="row clients-page" style="border-bottom: 0px">
-      <div class="col-md-2">
-        <img src="{{ '/assets/custom/img/home/clients/satalia.jpg' | prepend: site.baseurl }}" class="img-responsive bordered" alt="">
-      </div>
-      <div class="col-md-10">
-        <h3>Satalia</h3>
-        <ul class="list-inline">
-          <li><i class="fa fa-globe color-green"></i> <a class="linked" href="https://www.satalia.com">satalia.com</a></li>
-        </ul>
-        <p>{% t clients-partners.satalia_description %}</p>
-      </div>
-    </div>
+    <hr class="g-my-50">
+    {% endfor %}
   </div>
 </div>

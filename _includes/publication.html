@@ -1,4 +1,4 @@
-<div class="bg-color-light">
+<div class="">
   <div class="container content-sm">
     <div class="row blog-page blog-item">
       <!-- Left Sidebar -->
@@ -18,7 +18,7 @@
             {% endif %}
  
 						{% if include.widgets contains "video_frame" %}
-            <img class="img-responsive full-width">
+            <img class="img-fluid d-block full-width">
             <iframe style="height: 400px; width: 100%;" src="{{ page.video-url }}"></iframe>
             </img>
 
@@ -71,6 +71,6 @@
 </div>
 <script>
 function onJQueryLoaded(){
-  $('.row.blog-page img').addClass("img-responsive");
+  $('img').addClass("img-fluid d-block");
 };
 </script>

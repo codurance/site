@@ -19,18 +19,25 @@
 	{% else %}
 		{% assign date = post.date %}
 	{% endif %}
-	<div class="col-md-4 md-margin-bottom-40">
-		<div class="blog-box homepage-blog-thumb">
-			<img class="img-responsive bordered" src="{{ imageSrc  | prepend: site.baseurl }}" alt="{{ post.title }}">
-			<div class="blog-content">
-				<h3><a href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a></h3>
-				<p>{{ introductionToPost | strip_html | truncatewords:30 }}</p>
-			</div>
-			<ul class="list-inline blog-box-info">
-        <li>{% t publications-post.author_title %} {{ post.author | author_links }} </li>
-				<li>|</li>
-				<li><i class="fa fa-clock-o"></i> {{ date | date_to_string }}</li>
-			</ul>
-		</div>
-	</div>
+      <div class="col-sm-6 col-lg-4 g-mb-30">
+					<article class="homepage-blog-thumb">
+							<img class="img-fluid w-100" src="{{ imageSrc  | prepend: site.baseurl }}" alt="Image Description">
+				
+							<div class="g-bg-white g-pa-30-30-20">
+								<p class="small g-mb-10">
+									<time>{{ date | date_to_string }}</time>
+								</p>
+				
+								<h3 class="h6 text-uppercase g-font-weight-600 g-mb-10">
+									<a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a>
+								</h3>
+				
+								<div class="small g-mb-10">
+									{% t publications-post.author_title %} {{ post.author | author_links }}
+								</div>
+				
+								<p>{{ introductionToPost | markdownify | strip_html | truncatewords:30 }}</p>
+							</div>
+						</article>
+        </div>
 {% endfor %}

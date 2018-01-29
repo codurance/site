@@ -1,55 +1,67 @@
-<div class="header no-topbar">
-	<div class="container">
-		<!-- Logo -->
-    <a class="logo" href="{{ '/' | prepend: site.baseurl }}">
-			<img src="{{ '/assets/custom/img/codurance.png' | prepend: site.baseurl }}" class="logo-header" alt="Codurance Logo" height="45">
-		</a>
-		<!-- End Logo -->
-    <div class="topbar pull-right language-selector">
-        <ul class="loginbar">
-            <li>
-                <i class="fa fa-globe"></i>
+<!-- Header -->
+<header id="js-header" class="u-header u-header--static u-header--show-hide u-header--change-appearance" data-header-fix-moment="500" data-header-fix-effect="slide">
+      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-15" data-header-fix-moment-exclude="g-py-15" data-header-fix-moment-classes="u-shadow-v18 g-py-5">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+              <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+
+            <!-- Logo -->
+            <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand g-mr-50--lg">
+              <img src="{{ '/assets/custom/img/codurance-small.png' | prepend: site.baseurl }}" alt="Codurance Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm" id="navBar">
+              <ul class="nav navbar-nav text-uppercase g-font-weight-600 mr-auto">
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/clients' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.clients %}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/services' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.services%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/publications' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.publications%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg">
+                  <a href="{{ '/events' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.events%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                  <a href="{{ '/company' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.company%}</a>
+                </li>
+                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                  <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Navigation -->
+
+            <!-- Search -->
+            <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg">
+              <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
                 {% for domain in site.domains %}
-                {% if domain[0] == site.lang %}
-                <span class="language"><strong>{{ domain[0] }}</strong></span>
-                {% else %}
-                <a href="{{ domain[1] }}{{ page.url }}">{{ domain[0] }}</a>
-                {% endif %}
-                {% if forloop.last == false  %}
-                <span class="separator"> | </span>
-                {% endif  %}
+                {% if domain[0] == site.lang %} {{ domain[0] | upcase }}&nbsp; {% endif %}
                 {% endfor %}
-            </li>
-            <li>
-                <button onclick="location.href='{{ '/company/#contactus' | prepend: site.baseurl }}';" role="button" class="btn btn-small btn-small-orange">{% t sections.contact %}</button>    
-            </li>
-        </ul>
-        
-    </div>
-		<!-- Toggle get grouped for better mobile display -->
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="fa fa-bars"></span>
-		</button>
-		<!-- End Toggle -->
-	</div><!--/end container-->
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<li><a href="{{ '/clients' | prepend: site.baseurl }}">{% t sections.clients %}</a></li>
-				<li><a href="{{ '/services' | prepend: site.baseurl }}">{% t sections.services %}</a></li>
-				<li><a href="{{ '/publications' | prepend: site.baseurl }}">{% t sections.publications %}</a></li>
-				<li><a href="{{ '/events' | prepend: site.baseurl }}">{% t sections.events %}</a></li>
-				<li><a href="{{ '/company' | prepend: site.baseurl }}">{% t sections.company %}</a></li>
-			    <li><a href="{{ '/careers' | prepend: site.baseurl }}">{% t sections.careers %}</a></li>
-        {% for lang in site.languages %}
-        {% if lang != site.lang %}
-        <li class="language-link-in-menu"><a href="{{ '/company/#contactus' | prepend: site.baseurl }}">{% t sections.contact %}</a></li>
-        <li class="language-link-in-menu"><a href="{{ site.domains[lang] }}{{ page.url }}"><i class="fa fa-globe"></i>&nbsp;{{ lang }}</a></li>
-        {% endif %}
-        {% endfor %}
-			</ul>
-		</div><!--/end container-->
-	</div><!--/navbar-collapse-->
-</div>
+
+                <i class="fa fa-angle-down g-ml-3"></i>
+              </a>
+              <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-z-index-2 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
+                {% for domain in site.domains %}
+                <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!-- End Search -->
+          </div>
+        </nav>
+      </div>
+</header>
+<!-- End Header -->

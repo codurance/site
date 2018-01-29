@@ -1,10 +1,9 @@
-<div class="container content-md">
-
-  <ul class="breadcrumb">
-    <li {% if include.filter == '' %} class="active" {% endif %}><a href="{{ '/publications' | prepend: site.baseurl }}">{% t publications-all.title %}</a></li>
-    <li {% if include.filter == 'posts' %} class="active" {% endif %}><a href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a></li>
-    <li {% if include.filter == 'videos' %} class="active" {% endif %}><a href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a></li>
-    <li {% if include.filter == 'newsletters' %} class="active" {% endif %}><a href="{{ '/publications/newsletters' | prepend: site.baseurl }}">Newsletters</a></li>
+<div class="container">
+  <ul class="u-list-inline g-pb-10">
+    <li class="list-inline-item g-mr-5"><a class="u-link-v5 {% if include.filter == '' %} g-color-primary {% else %} g-color-main {% endif %}}" href="{{ '/publications' | prepend: site.baseurl }}">{% t publications-all.title %}</a> <i class="g-color-gray-light-v2 g-ml-5">/</i></li> 
+    <li  class="list-inline-item g-mr-5"><a class="u-link-v5 {% if include.filter == 'posts' %} g-color-primary {% else %} g-color-main {% endif %}" href="{{ '/publications/posts' | prepend: site.baseurl }}">{% t publications-posts.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
+    <li  class="list-inline-item g-mr-5"><a class="u-link-v5 {% if include.filter == 'videos' %} g-color-primary {% else %} g-color-main {% endif %}" href="{{ '/publications/videos' | prepend: site.baseurl }}">{% t publications-videos.title %}</a><i class="g-color-gray-light-v2 g-ml-5">/</i></li>
+    <li  class="list-inline-item g-mr-5"><a class="u-link-v5 {% if include.filter == 'newsletters' %}} g-color-primary {% else %} g-color-main {% endif %}" href="{{ '/publications/newsletters' | prepend: site.baseurl }}">Newsletters</a></li>
   </ul>
 
     <div class="row">
@@ -14,9 +13,32 @@
                 {% include post.html post=post %}
             {% endfor %}
 
+
+        </div>
+        <!-- Right sidebar -->
+        <div class="col-md-3">
+		        {% include newsletter_form.html bg="" %}
+            {% unless include.filter == "newsletters" %}
+            <div class="posts margin-bottom-40">
+              {% include latest_publications.html publication=include.latest_publications_type %}
+            </div>
+            <div class="posts margin-bottom-40">
+              <div class="headline-v2">
+                <h2>{% t publications-books.title  %}</h2>
+              </div>
+              <div>
+                <img src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="the software craftsman book">
+                <h4><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t publications-books.subtitle %}</a></h4>
+              </div>
+            </div>
+            {% endunless %}
+        </div>
+         <!-- End right sidebar -->
+
+         
             <!--Pagination-->
             {% if paginator.total_pages > 1 %}
-            <div class="text-center">
+            <div class=" col-md-9 text-center">
                 <ul class="pagination">
 
                     {% if paginator.previous_page %}
@@ -45,26 +67,5 @@
             </div>
             {% endif %}
             <!--End Pagination-->
-
-        </div>
-        <!-- Right sidebar -->
-        <div class="col-md-3">
-		        {% include newsletter_form.html bg="bg-color-light" %}
-            {% unless include.filter == "newsletters" %}
-            <div class="posts margin-bottom-40">
-              {% include latest_publications.html publication=include.latest_publications_type %}
-            </div>
-            <div class="posts margin-bottom-40">
-              <div class="headline-v2 bg-color-light">
-                <h2>{% t publications-books.title  %}</h2>
-              </div>
-              <div>
-                <img src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-responsive" alt="the software craftsman book">
-                <h3><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t publications-books.subtitle %}</a></h3>
-              </div>
-            </div>
-            {% endunless %}
-        </div>
-         <!-- End right sidebar -->
     </div>
 </div>
