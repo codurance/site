@@ -195,7 +195,7 @@
 - id: charlie
   name: Carlos Esteban Raffellini
   image: /assets/custom/img/team/carlos_raffellini.jpg
-  role: Apprentice
+  role: Software Craftsman 
   fullDescription:
     <p>Carlos has worked in the e-commerece industry for over four years. He enjoys sharing and improving his software development knowledge.</p>
     <p>He loves functional and object-oriented programming, refactoring, software quality and disciplines such as Test Driven Development.</p>
