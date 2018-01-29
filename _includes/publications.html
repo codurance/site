@@ -13,9 +13,32 @@
                 {% include post.html post=post %}
             {% endfor %}
 
+
+        </div>
+        <!-- Right sidebar -->
+        <div class="col-md-3">
+		        {% include newsletter_form.html bg="" %}
+            {% unless include.filter == "newsletters" %}
+            <div class="posts margin-bottom-40">
+              {% include latest_publications.html publication=include.latest_publications_type %}
+            </div>
+            <div class="posts margin-bottom-40">
+              <div class="headline-v2">
+                <h2>{% t publications-books.title  %}</h2>
+              </div>
+              <div>
+                <img src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="the software craftsman book">
+                <h4><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t publications-books.subtitle %}</a></h4>
+              </div>
+            </div>
+            {% endunless %}
+        </div>
+         <!-- End right sidebar -->
+
+         
             <!--Pagination-->
             {% if paginator.total_pages > 1 %}
-            <div class="text-center">
+            <div class=" col-md-9 text-center">
                 <ul class="pagination">
 
                     {% if paginator.previous_page %}
@@ -44,26 +67,5 @@
             </div>
             {% endif %}
             <!--End Pagination-->
-
-        </div>
-        <!-- Right sidebar -->
-        <div class="col-md-3">
-		        {% include newsletter_form.html bg="" %}
-            {% unless include.filter == "newsletters" %}
-            <div class="posts margin-bottom-40">
-              {% include latest_publications.html publication=include.latest_publications_type %}
-            </div>
-            <div class="posts margin-bottom-40">
-              <div class="headline-v2">
-                <h2>{% t publications-books.title  %}</h2>
-              </div>
-              <div>
-                <img src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="the software craftsman book">
-                <h4><a href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t publications-books.subtitle %}</a></h4>
-              </div>
-            </div>
-            {% endunless %}
-        </div>
-         <!-- End right sidebar -->
     </div>
 </div>
