@@ -8,13 +8,13 @@ title: Events
 		{% include featured_events.html %}	
 	</div>
 	<div class="services-section"  >
-		<h2>{% t events-lscc.title  %}</h2>
-		<hr class="divider">	
+    <h2 class="title-v2 title-center">{% t events-lscc.title  %}</h2>
 		{% include lscc_events.html %}	
 	</div>
 </div>
 
-<script src="{{ "/assets/unify-1.9/js/events.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/assets/custom/js/events.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ '/assets/custom/js/handlebars.js' | prepend: site.baseurl }}"></script>
 <script>
 
  if ( window.addEventListener ) { 
