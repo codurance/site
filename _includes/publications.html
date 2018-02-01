@@ -31,13 +31,10 @@
                         <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30" >
                             <!-- Static Quote -->
                             <article class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100">
-                                <span class="g-color-white-opacity-0_8 g-font-size-60 g-line-height-0">
-                                    “
-                                </span>
-                                <h2 class="h3 g-color-white g-font-weight-600 mb-4">In the future, design principles won’t be about design</h2>
-                                <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">Alex Teseira</h3>
+                                <h2 class="h3 g-color-white g-font-weight-600 mb-4"> Interested in joining us?</h2>
+                                <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase"> Learn more</h3>
                 
-                                <a class="u-link-v2" href="#!"></a>
+                                <a class="u-link-v2" href="{{ '/careers' | prepend: site.baseurl }}"></a>
                             </article>
                             <!-- End Static Quote -->
                         </div>
@@ -72,6 +69,8 @@
                             {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
                             <a class="u-pagination-v1__item u-pagination-v1-4 {% if 1==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14" href="{{ pageUrl }}">1</a>
                     </li>
+                    {% endif %}
+                    {% if distanceFromStart > 1  %}
                     <li class="list-inline-item g-hidden-sm-down">
                             <a class="g-pa-7-14">...</a>
                     </li>
@@ -87,10 +86,12 @@
                     </li>
                     {% endfor %}
                     {% assign distanceFromEnd = paginator.total_pages | minus: endPage %}
-                    {% if distanceFromEnd > 0  %}
+                    {% if distanceFromEnd > 1  %}
                     <li class="list-inline-item g-hidden-sm-down">
                             <a class="g-pa-7-14">...</a>
-                          </li>
+                    </li>
+                    {% endif %}
+                    {% if distanceFromEnd > 0  %}
                     <li class="list-inline-item">
                             {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
                             <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="{{ pageUrl | append: '/page:num' | replace: ':num', paginator.total_pages | replace: '//', '/' }}">{{ paginator.total_pages }}</a>
