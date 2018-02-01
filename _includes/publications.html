@@ -67,7 +67,7 @@
                     {% assign endPage = startPage | plus: 10 %}
                     {% if endPage > paginator.total_pages %}{% assign endPage = paginator.total_pages %}{% endif %}
                     {% assign distanceFromStart = startPage | minus: 1 %}
-                    {% if distanceFromStart > 1  %}
+                    {% if distanceFromStart > 0  %}
                     <li class="list-inline-item">
                             {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
                             <a class="u-pagination-v1__item u-pagination-v1-4 {% if 1==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14" href="{{ pageUrl }}">1</a>
@@ -87,7 +87,7 @@
                     </li>
                     {% endfor %}
                     {% assign distanceFromEnd = paginator.total_pages | minus: endPage %}
-                    {% if distanceFromEnd > 1  %}
+                    {% if distanceFromEnd > 0  %}
                     <li class="list-inline-item g-hidden-sm-down">
                             <a class="g-pa-7-14">...</a>
                           </li>
