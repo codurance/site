@@ -30,7 +30,9 @@
   <script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/custombox/custombox.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.modal-window.js' | prepend: site.baseurl }}"></script>
-
+  <script src="{{ '/assets/unify-2.4/vendor/masonry/dist/masonry.pkgd.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/unify-2.4/vendor/imagesloaded/imagesloaded.pkgd.min.js' | prepend: site.baseurl }}"></script>
+ 
 
 
  <!-- JS Plugins Init. -->
@@ -55,6 +57,14 @@
         $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
         
         $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+        
+        $('.masonry-grid').imagesLoaded().then(function () {
+          $('.masonry-grid').masonry({
+            columnWidth: '.masonry-grid-sizer',
+            itemSelector: '.masonry-grid-item',
+            percentPosition: true
+          });
+        });
         
         if (typeof onJQueryLoaded === 'function') {
           onJQueryLoaded();
