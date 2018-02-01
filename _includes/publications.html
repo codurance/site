@@ -48,10 +48,12 @@
             </div>
     
             <!-- Pagination -->
+        {% if paginator.total_pages > 1 %}
             <nav class="text-center" aria-label="Page Navigation">
                 <ul class="list-inline">
+                    {% if paginator.previous_page %}
                     <li class="list-inline-item float-left g-hidden-xs-down">
-                        <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!"
+                        <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
                             aria-label="Previous">
                             <span aria-hidden="true">
                                 <i class="fa fa-angle-left g-mr-5"></i> Previous
@@ -59,14 +61,20 @@
                             <span class="sr-only">Previous</span>
                         </a>
                     </li>
+                    {% endif %}
+                    {% for page in (1..paginator.total_pages) %} 
                     <li class="list-inline-item">
-                        <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14" href="#!">1</a>
+                            {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
+                            {% if page == 1 %}
+                                <a class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14" href="{{ pageUrl }}">{{ page }}</a>
+                            {% else %}
+                                <a class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14" href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/' }}">{{ page }}</a>
+                            {% endif %}
                     </li>
-                    <li class="list-inline-item">
-                        <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#!">2</a>
-                    </li>
+                    {% endfor %}
+                    {% if paginator.next_page %}
                     <li class="list-inline-item float-right g-hidden-xs-down">
-                        <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#!"
+                        <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="{{ paginator.next_page_path | prepend: site.baseurl }}"
                             aria-label="Next">
                             <span aria-hidden="true">
                                 Next
@@ -75,8 +83,10 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </li>
+                    {% endif %}
                 </ul>
             </nav>
+            {% endif %}
             <!-- End Pagination -->
         </div>
     </div>
