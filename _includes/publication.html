@@ -6,8 +6,10 @@
           <h1 class="g-color-white g-font-weight-600 g-mb-30">{{ page.title }}</h1>
           <p class="lead g-color-white-opacity-0_6">{{ page.abstract }}</p>
         </div>
+        {% if  page.asset-type != "newsletter" %}
         <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.author }}</span>
         <span class="g-color-white-opacity-0_7 g-font-weight-700 mx-3">·</span>
+        {% endif %}
         <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
       </div>
     </div>
@@ -80,7 +82,7 @@
       </div>
       <!-- End Social Icons -->
       {% for member in site.data.team %}
-      {% if page.author == member.name %}
+      {% if page.author == member.name and page.asset-type != "newsletter" %}
       <!-- Author -->
       <div class="g-brd-top g-brd-gray-light-v3 g-pt-60 g-pb-100">
         <div class="row justify-content-between">
