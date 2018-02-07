@@ -5,7 +5,6 @@ name: test-driving-algorithms
 image:
     src: /assets/custom/img/videos/test-driving-algorithms.jpg
 title: "Test Driving Algorithms"
-hidden: true
 video-url: https://www.youtube.com/embed/iZjgj1S0FCY?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx
 date: 2014-12-05 10:00:00 +01:00
 ---

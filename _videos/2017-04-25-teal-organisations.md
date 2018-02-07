@@ -4,9 +4,7 @@ layout: video
 name: teal-organisations
 image:
  src: /assets/custom/img/videos/teal-organisations.jpg
-
 title: "Teal Organisations"
-hidden: true
 video-url: https://www.youtube.com/embed/rANER40aUxs
 date: 2017-04-25 10:00:00 +00:00
 ---

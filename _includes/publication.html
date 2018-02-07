@@ -18,6 +18,12 @@
   <div class="row justify-content-center">
     <div class="col-lg-9">
       <div class="g-mb-40">
+        {% if include.widgets contains "video_frame" %}
+        <img class="img-fluid d-block full-width">
+        <iframe style="height: 400px; width: 100%;" src="{{ page.video-url }}"></iframe>
+        </img>
+        {% endif %}
+
         {{ content }}
       </div>
     </div>

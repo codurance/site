@@ -6,7 +6,6 @@ image:
  src: /assets/custom/img/videos/complex-refactoring-in-simple-steps-I.jpg
 
 title: "Complex refactoring in simple steps Part I"
-hidden: true
 video-url: https://www.youtube.com/embed/ntjg6rE6lss
 date: 2016-09-01 11:59:00 +01:00
 ---
