@@ -6,7 +6,6 @@ location: "Devoxx France"
 image:
     src: /assets/custom/img/videos/software-craftsmanship.png
 title: "Test Driving Algorithms"
-hidden: true
 video-url: https://www.youtube.com/embed/AQlsOPMKgBE
 date: 2014-04-17 10:00:00 +01:00
 ---

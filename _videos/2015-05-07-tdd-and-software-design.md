@@ -6,7 +6,6 @@ location: "Hangout on Air"
 image:
     src: /assets/custom/img/videos/tdd-and-software-design.jpg
 title: "TDD and Software Design"
-hidden: true
 video-url: https://www.youtube.com/embed/ty3p5VDcoOI
 date: 2015-05-07 10:00:00 +01:00
 ---

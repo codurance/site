@@ -4,9 +4,7 @@ layout: video
 name: mars-rover
 image:
  src: /assets/custom/img/videos/2017_09_05_mars_rover.jpg
-
 title: "Outside-In Classicist TDD - Mars Rover"
-hidden: true
 video-url: https://www.youtube.com/embed/24vzFAvOzo0
 date: 2017-09-05 10:00:00 +00:00
 ---

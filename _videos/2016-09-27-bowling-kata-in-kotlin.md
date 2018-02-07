@@ -6,7 +6,6 @@ image:
  src: /assets/custom/img/videos/bowling-kata-kotlin.png
 
 title: "Bowling Kata in Kotlin"
-hidden: true
 video-url: https://www.youtube.com/embed/bp0GhlY03wA
 date: 2016-09-27 08:59:00 +01:00
 ---

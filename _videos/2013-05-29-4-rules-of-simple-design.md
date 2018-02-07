@@ -6,7 +6,6 @@ location: " I T.A.K.E. Unconference- Bucharest, Romania"
 image:
     src: /assets/custom/img/videos/4-rules-of-simple-design.png
 title: "4 Rules of Simple Design"
-hidden: true
 video-url: https://www.youtube.com/embed/kKbNOMI3tlg?list=PLGS1QE37I5lQX33-yrnNasV_dHRh2oSkx
 date: 2013-05-29 10:00:00 +01:00
 ---

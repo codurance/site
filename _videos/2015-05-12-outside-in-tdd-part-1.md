@@ -5,7 +5,6 @@ name: outside-in-tdd-part-1
 image:
     src: /assets/custom/img/videos/outside-in-tdd-part-1.png
 title: "Outside-In TDD part 1"
-hidden: true
 video-url: https://www.youtube.com/embed/XHnuMjah6ps
 date: 2015-05-12 10:00:00 +01:00
 ---

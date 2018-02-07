@@ -15,15 +15,25 @@ tags:
 ---
 
 In the previous posts, we took a look at how functions are the core pieces in functional programming languages. We talked about <a href="https://codurance.com/2017/11/02/side-effects/">pure functions, referential transparency, side effects</a> and <a href="https://codurance.com/2017/12/07/recursion/">recursion</a> in the previous posts. In this post, we are going to explore some properties of functions and how we can use them in a functional programming language.
-<h3>Function definition</h3>
+
+### Function definition
+
 A function is a black box that given an input <b>always</b> gives you back the same output. As we stated before, a function does not have any side effects; if it has any, it could be a procedure but not a function. Function is a term that comes from Mathematics and there is no concept of side effect in there. A function accepts a set of input values; we call that the domain of a function. The output of a function is called <i>codomain</i> and the set of outputs is called the <i>image</i> of the function. We can decompose them like this:
-<pre class="prettyprint"><code>f: A -> B</code></pre>
+
+```
+f: A -> B</code></pre>
+```
+
 Where A is the domain and B is the codomain. For example, for the function <span style="padding:0" class="prettyprint"><code>f(x) = 2x</code></span> we can decompose it as it follows:
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2018-01-18-functions/diagram.png" alt="domain-codomain-image" width="363" height="303" style="margin: 0 auto;" />
+
+![domain-codomain-image]({{ site.baseurl }}/assets/custom/img/blog/2018-01-18-functions/diagram.png)
+
 Where as we stated, <span style="padding:0" class="prettyprint"><code>A</code></span> is the domain, <span style="padding:0" class="prettyprint"><code>B</code></span> is the codomain and <span style="padding:0" class="prettyprint"><code>[2, 4, 6]</code></span> is the image of the function.
-<h3>Arity</h3>
+
+### Arity
 Arity is the number of arguments that a function takes. We say that the arity of <span style="padding:0" class="prettyprint"><code>f(x: Int)</code></span> is 1, or that is a unary function, or that is a function with one argument. Therefore, the arity of a function can be expressed with a number or the spring term. Unary, binary, ternary, etc... Are words that come from Latin, but mathematicians usually use Greek instead of Latin so usually they interchange those words for the same ones coming from Greek. We can say as well that the arity of a function is monadic, dyadic or triadic.
-<h3>Function composition</h3>
+
+### Function composition
 Function composition is one of the bases of functional programming. The idea is that if you have a function <span style="padding:0" class="prettyprint"><code>f = A->B</code></span> and a function <span style="padding:0" class="prettyprint"><code>g = B->C</code></span> you can create a 3rd function <span style="padding:0" class="prettyprint"><code>h = A->C</code></span> which internally uses <span style="padding:0" class="prettyprint"><code>f</code></span> and <span style="padding:0" class="prettyprint"><code>g</code></span> to create that <span style="padding:0" class="prettyprint"><code>C</code></span>, that is: <span style="padding:0" class="prettyprint"><code>h = g(f(x))</code></span>. If we express it in mathematical terms we can say that <span style="padding:0" class="prettyprint"><code>h = f∘g</code></span> readed as "h is equal to f after g" or what is the same: <span style="padding:0" class="prettyprint"><code>h = C<sub>g</sub>f</code></span>
 An example of function composition is: 
 <pre class="prettyprint"><code>def intToString(i: Int) : String = i.toString

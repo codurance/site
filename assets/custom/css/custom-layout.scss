@@ -139,6 +139,28 @@ $orange-colour: #e67e22;
     &-tag-margin {   /* 0 0 1 0 */
       margin-right: 10px;
     }
+    
+    & h2 {
+      color: #000 !important;
+      font-size: 21px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+
+    & h3 {
+      color: #000 !important;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 8px;
+    }
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-style: none;
+    }
+
 }
 
 .headline-v2 {   /* 0 0 1 0 */

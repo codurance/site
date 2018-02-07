@@ -5,7 +5,6 @@ name: craft-thinking
 image:
  src: /assets/custom/img/videos/craft-thinking.png
 title: "Craft Thinking"
-hidden: true
 video-url: https://www.youtube.com/embed/AjDcPOydSM8 
 date: 2017-11-30 10:00:00 +00:00
 ---
