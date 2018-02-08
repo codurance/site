@@ -257,6 +257,18 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   become_a_craftsperson:
+    title: Software Craftsperson
+    what_we_look_for: We are looking for Software Craftspeople that share the same values of pragmatism, professionalism and transparency that we do. Working exclusively in London and Barcelona (we don’t like to travel very far), we support our clients in many ways and you will have the opportunity to work on a wide range of different internal and clients projects.
+    projects_title: Projects you'll work on
+    projects_description: Perhaps you’ll work on a client project from our offices with our team delivery approach. This may be a greenfield project for a Startup, or helping to build a mission-critical system for a large enterprise client. Perhaps you’ll work as an embedded craftsman, working within our client's existing development to help them to get better at writing their own software. Or maybe you're more interested in helping to introduce the values of Craftsmanship to an organisation through coaching & mentoring.
+    about_you_title: What about you?
+    mindset_title: Mindset
+    mindset_description: elf a software crafter. For you, writing code is not just a job but also a passion. TDD is second nature to you and that's how you write code. You prefer to work in small increments, trying things out and iterating rapidly, tightening the feedback loop as much as possible.
+    collaboration_title: Collaboration
+    collaboration_description: You are a team player. You understand that software lives on long after it is first delivered and that many different people will contribute to it over its lifetime. You enjoy frequent collaboration, including pair-programming.
+    deliberate_learning_title: Deliberate Learning
+    deliberate_learning_description: You spend a considerable amount of time investing in your craft, learning new technologies and practicing different techniques and approaches. You create for creation's sake, building pet projects or contributing to open-source development. You don't do this because a client or employer asks you to; you do it because you want to.
    become_a_craftsman:
      title: Become a Craftsperson
      apply_title: Become a Craftsperson
