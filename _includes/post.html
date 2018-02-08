@@ -9,7 +9,9 @@
 <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
   <!-- Blog Grid Modern Blocks -->
   <article class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3">
-    <img class="g-bg-white img-fluid w-100 g-rounded-top-5" src="{{ postImgUrl }}" alt="{{ post.title }}">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <img class="g-bg-white img-fluid w-100 g-rounded-top-5" src="{{ postImgUrl }}" alt="{{ post.title }}">
+    </a>
     <div class="g-bg-white g-pa-30 g-rounded-bottom-5">
       <ul class="list-inline g-color-gray-dark-v4 g-font-weight-600 g-font-size-12">
           {% unless post.asset-type == "newsletter" %}
