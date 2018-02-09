@@ -388,23 +388,23 @@ careers-become_an_apprentice:
    more_info: Read the full description
 careers-hiring_process:
    title: Hiring process
-   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
+   description: Our hiring process will help us to understand your current breadth and depth of skill and expertise. We provide transparent feedback throughout the process, favouring tight-feedback loops. You will have the opportunity to get to meet us and gain a better understanding of our company.
    step_1:
     title: Telephone Interview
-    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.</p>
+    description: 30 minute call where we’ll get to know each other and to see what values we have in common. It’s a two way conversation, and we want to understand if we may be a good fit for each other. Cultural fit is to an extent, more important that technical skill and expertise at this stage.
    step_2:
     title: Coding Exercise
-    description:  <p>We will ask for a coding exercise (as an exception) only if we think that a deeper understanding of a person's programming skills is needed. In most cases this phase is not necessary. We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
+    description:  We will ask for a coding exercise (as an exception) only if we think that a deeper understanding of a person's programming skills is needed. In most cases this phase is not necessary. We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.
    step_3:
     title: Pair Programming
-    description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftspeople .</p>
+    description: A 2-hour pair programming session, either at our offices or remotely. You’ll bring your own laptop, with choice of IDE and tooling up to you. We’ll tackle a coding kata together, and we’re more focused on how we approach the problem than the end output.
    step_4:
     title: Final Interview
-    description: <p>A final face-to-face or remote interview with our co-founders. </p>
+    description: A final face-to-face interview, this stage is more conversational and will focus on macro-level design, systems architecture and other other areas that we look for in our Craftspeople. By this stage, we’ll have a better understanding of the breadth and depth of skills that you possess.
    step_5:
     title: Offer
-    description: <p>We will send you the job offer, including the details for the benefits package and the contract.</p>
-   additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftspeople and a final interview with the founders.</p>
+    description: We will send you the job offer, including the details for the benefits package and the contract.
+   additional_information: We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftspeople and a final interview with the founders.
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong>
