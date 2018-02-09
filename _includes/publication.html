@@ -97,7 +97,7 @@
             <div class="media-body">
               <h4 class="h5 g-color-black g-font-weight-600">{{ page.author | author_links}}</h4>
               <p class="g-color-gray-dark-v5 mb-4">{{ member.fullDescription }}</p>
-              <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{ site.baseurl }}/publications/author/{{ page.author | replace: ' ', '-' | downcase }}">All author posts</a>
+              <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{ page.author | author_url }}">All author posts</a>
             </div>
           </div>
         </div>
