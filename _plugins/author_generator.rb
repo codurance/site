@@ -76,8 +76,7 @@ module Jekyll
                post_authors = [ post_authors ]
           end
           post_authors.each do |author|
-            author_dir = author.downcase
-            author_dir[" "] = "-"
+            author_dir = author.downcase.gsub(" ", "-")
             self.write_author_index(File.join(dir, author_dir), author)
           end
         end
@@ -134,9 +133,9 @@ module Jekyll
     def author_url(author)
         basedir = @context.registers[:site].config['author_dir'] || "authors"
         baseurl = @context.registers[:site].config['baseurl']
-        dir = author.downcase
-        dir [" "] = "-"
-        "#{baseurl}/#{basedir}/#{dir}/"
+        author_dir = author.downcase.gsub(" ", "-")
+
+        "#{baseurl}/#{basedir}/#{author_dir}/"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
