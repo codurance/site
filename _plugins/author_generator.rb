@@ -76,7 +76,7 @@ module Jekyll
                post_authors = [ post_authors ]
           end
           post_authors.each do |author|
-            author_dir = author.downcase.gsub(" ", "-")
+            author_dir = AuthorNameToPath.parse(author)
             self.write_author_index(File.join(dir, author_dir), author)
           end
         end
@@ -133,7 +133,7 @@ module Jekyll
     def author_url(author)
         basedir = @context.registers[:site].config['author_dir'] || "authors"
         baseurl = @context.registers[:site].config['baseurl']
-        author_dir = author.downcase.gsub(" ", "-")
+        author_dir = AuthorNameToPath.parse(author)
 
         "#{baseurl}/#{basedir}/#{author_dir}/"
     end
@@ -150,6 +150,12 @@ module Jekyll
       result
     end
 
+  end
+
+  module AuthorNameToPath
+    def self.parse(name)
+        name.downcase.gsub(" ", "-")
+    end
   end
 
 end
