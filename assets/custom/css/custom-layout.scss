@@ -718,3 +718,14 @@ blockquote.no-left-border {
     padding-right: 20px;
     } 
 }
+
+/*  slick slides equalize height -----
+-----------------------------*/
+.slick-track{
+  display: flex;
+
+  .slick-slide{
+      display: flex;
+      height: auto;
+  }
+}

@@ -354,7 +354,7 @@ careers-join-how_to_apply:
 
 careers-open_positions:
    title: You like to build well-crafted software, we do too!
-   description: <p>We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice, we would love to hear from you.</p>
+   description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice, we would love to hear from you.
 careers-become_a_craftsman:
    title: Become a Craftsperson
    description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
@@ -368,23 +368,23 @@ careers-become_an_apprentice:
    more_info: Read the full description
 careers-hiring_process:
    title: Hiring process
-   description: <p>We aim to keep our hiring process as straightforward and transparent as possible.</p>
+   description: We aim to keep our hiring process as straightforward and transparent as possible.
    step_1:
     title: Telephone Interview
-    description: <p>30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.</p>
+    description: 30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.
    step_2:
     title: Coding Exercise
-    description:  <p>We will ask for a coding exercise (as an exception) only if we think that a deeper understanding of a person's programming skills is needed. In most cases this phase is not necessary. We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.</p>
+    description:  We will ask for a coding exercise (as an exception) only if we think that a deeper understanding of a person's programming skills is needed. In most cases this phase is not necessary. We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.
    step_3:
     title: Pair Programming
-    description: <p>Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftspeople .</p>
+    description: Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftspeople .
    step_4:
     title: Final Interview
-    description: <p>A final face-to-face or remote interview with our co-founders. </p>
+    description: A final face-to-face or remote interview with our co-founders.
    step_5:
     title: Offer
-    description: <p>We will send you the job offer, including the details for the benefits package and the contract.</p>
-   additional_information: <p>We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftspeople and a final interview with the founders.</p>
+    description: We will send you the job offer, including the details for the benefits package and the contract.
+   additional_information: We may skip or change the order of the steps depending on how much we know about each candidate. The only two steps that are always part of every selection process are pair-programming with one or more craftspeople and a final interview with the founders.
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: We are excited to announce that Codurance is an <strong>official JetBrains partner.</strong>
