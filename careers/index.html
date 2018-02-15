@@ -50,9 +50,10 @@ title: Careers
                 </div>
                 <!-- End Icon Blocks -->
             </div>
-            <div class="col-xs-12 text-center">
-                <a href="#craftsman-form" data-modal-target="#craftsman-form" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Apply Now</a>
-            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="#craftsman-form" data-modal-target="#craftsman-form" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Apply Now</a>
         </div>
     </div>
 </section>
@@ -247,14 +248,3 @@ title: Careers
 <!-- Static Apply Form -->
 
 <!-- End Static Apply Form -->
-<script >
-  $(document).ready(function () {
-    $.HSCore.components.HSCarousel.init('.js-carousel');
-
-    $('#carousel1').slick('setOption', 'customPaging', function (slider, i) {
-      var title = $(slider.$slides[i]).data('title');
-
-      return '<i class="u-dot-line-v1 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-15--sm"><span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2 g-brd-primary--active g-transition--ease-in g-transition-0_2"></span></i><span class="g-hidden-sm-down g-color-black g-font-size-15">' + title + '</span>';
-    }, true);
-  });
-</script>
