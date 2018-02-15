@@ -257,6 +257,28 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   become_a_craftsperson:
+    title: Software Craftsperson
+    what_we_look_for: We are looking for Software Craftspeople that share the same values of pragmatism, professionalism and transparency that we do. Working exclusively in London and Barcelona (we don’t like to travel very far), we support our clients in many ways and you will have the opportunity to work on a wide range of different internal and clients projects.
+    projects_title: Projects you'll work on
+    projects_description: Perhaps you’ll work on a client project from our offices with our team delivery approach. This may be a greenfield project for a Startup, or helping to build a mission-critical system for a large enterprise client. Perhaps you’ll work as an embedded craftsman, working within our client's existing development to help them to get better at writing their own software. Or maybe you're more interested in helping to introduce the values of Craftsmanship to an organisation through coaching & mentoring.
+    about_you_title: What about you?
+    mindset_title: Mindset
+    mindset_description: You consider yourself a software crafter. For you, writing code is not just a job but also a passion. TDD is second nature to you and that's how you write code. You prefer to work in small increments, trying things out and iterating rapidly, tightening the feedback loop as much as possible.
+    collaboration_title: Collaboration
+    collaboration_description: You are a team player. You understand that software lives on long after it is first delivered and that many different people will contribute to it over its lifetime. You enjoy frequent collaboration, including pair-programming.
+    deliberate_learning_title: Deliberate Learning
+    deliberate_learning_description: You spend a considerable amount of time investing in your craft, learning new technologies and practicing different techniques and approaches. You create for creation's sake, building pet projects or contributing to open-source development. You don't do this because a client or employer asks you to; you do it because you want to.
+    practices_title: Practices
+    practices_description: You have a good experience with Extreme Programming practices (specially TDD and CI), DevOps (experience setting up build pipelines and automation (Continuous Deployment)), and a good understanding of different Agile practices and how they can help a team to work effectively.
+    design_and_architecture_title: Design and Architecture
+    design_and_architecture_description: You have a good appreciation for software design at the micro and macro level, including familiarity with SOLID principles and Domain Driven Design (DDD). You naturally follow Clean Code principles (have you read the book?). You also have some understanding of different types of architecture including layered and hexagonal architectures, microservices, CQRS and Event Sourcing. You understand the basic principles of security, logging, monitoring, and supporting projects in production.
+    technology_stacks_title: Technology Stacks
+    technology_stacks_description: Although we are always exploring different technologies, currently, the three main technology stacks we use are&#58; JVM (Java/Clojure/Scala), .Net (C#/F#), or Node.JS. Most of our projects use Amazon AWS or Azure as a cloud solution. We expect a solid experience in at least one of the languages we use and familiarity with cloud solutions.
+    personality_title: Personality
+    personality_description: Although we are always exploring different technologies, currently, the three main technology stacks we use are&#58; JVM (Java/Clojure/Scala), .Net (C#/F#), or Node.JS. Most of our projects use Amazon AWS or Azure as a cloud solution. We expect a solid experience in at least one of the languages we use and familiarity with cloud solutions.
+    skills_and_expertise_title: Skills & Expertise
+    skills_and_expertise_description: We believe that skill and expertise is acquired through deliberate practice and learning. You will have skills across some of these areas, though the depth of expertise may vary. A humility and desire to learn is more important to us than someones current expertise, as we believe that we are all continuously learning. That being said, you should identify with the following areas&#58;
    become_a_craftsman:
      title: Become a Craftsperson
      apply_title: Become a Craftsperson
@@ -368,19 +390,19 @@ careers-become_an_apprentice:
    more_info: Read the full description
 careers-hiring_process:
    title: Hiring process
-   description: We aim to keep our hiring process as straightforward and transparent as possible.
+   description: Our hiring process will help us to understand your current breadth and depth of skill and expertise. We provide transparent feedback throughout the process, favouring tight-feedback loops. You will have the opportunity to get to meet us and gain a better understanding of our company.
    step_1:
     title: Telephone Interview
-    description: 30 minute call where we’ll get to know each other and to see what values we both share. It’s a two way conversation, and we want to understand if we may be a good fit for each other.
+    description: 30 minute call where we’ll get to know each other and to see what values we have in common. It’s a two way conversation, and we want to understand if we may be a good fit for each other. Cultural fit is to an extent, more important that technical skill and expertise at this stage.
    step_2:
     title: Coding Exercise
     description:  We will ask for a coding exercise (as an exception) only if we think that a deeper understanding of a person's programming skills is needed. In most cases this phase is not necessary. We expect this to be completed within 1-2 weeks. In return, we commit to spending 2 hours reviewing your submission, providing detailed feedback on the strengths and potential areas for improvement.
    step_3:
     title: Pair Programming
-    description: Pair programming exercise which can be done in our office or remotely. This is done with one or two of our craftspeople .
+    description: A 2-hour pair programming session, either at our offices or remotely. You’ll bring your own laptop, with choice of IDE and tooling up to you. We’ll tackle a coding kata together, and we’re more focused on how we approach the problem than the end output.
    step_4:
     title: Final Interview
-    description: A final face-to-face or remote interview with our co-founders.
+    description: A final face-to-face interview, this stage is more conversational and will focus on macro-level design, systems architecture and other other areas that we look for in our Craftspeople. By this stage, we’ll have a better understanding of the breadth and depth of skills that you possess.
    step_5:
     title: Offer
     description: We will send you the job offer, including the details for the benefits package and the contract.
