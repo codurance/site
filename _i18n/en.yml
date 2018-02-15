@@ -376,7 +376,7 @@ careers-join-how_to_apply:
 
 careers-open_positions:
    title: You like to build well-crafted software, we do too!
-   description: <p>We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice, we would love to hear from you.</p>
+   description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice, we would love to hear from you.
 careers-become_a_craftsman:
    title: Become a Craftsperson
    description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>

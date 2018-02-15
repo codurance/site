@@ -76,8 +76,7 @@ module Jekyll
                post_authors = [ post_authors ]
           end
           post_authors.each do |author|
-            author_dir = author.downcase
-            author_dir[" "] = "-"
+            author_dir = AuthorNameToPath.parse(author)
             self.write_author_index(File.join(dir, author_dir), author)
           end
         end
@@ -114,15 +113,12 @@ module Jekyll
     # Returns string
     #
     def author_links(authors)
-      dir = @context.registers[:site].config['author_dir'] || "authors"
-      baseurl = @context.registers[:site].config['baseurl']
       if String.try_convert(authors)
                authors = [ authors ]
       end
       authors = authors.map do |author|
-        author_dir = author.downcase
-        author_dir [" "] = "-"
-        "<a class='author' href='#{baseurl}/#{dir}/#{author_dir}/'>#{author}</a>"
+        author_url = author_url(author)
+        "<a class='author' href='#{author_url}'>#{author}</a>"
       end
       case authors.length
       when 0
@@ -132,6 +128,14 @@ module Jekyll
       else
         "#{authors[0...-1].join(', ')}, #{authors[-1]}"
       end
+    end
+
+    def author_url(author)
+        basedir = @context.registers[:site].config['author_dir'] || "authors"
+        baseurl = @context.registers[:site].config['baseurl']
+        author_dir = AuthorNameToPath.parse(author)
+
+        "#{baseurl}/#{basedir}/#{author_dir}/"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
@@ -146,6 +150,12 @@ module Jekyll
       result
     end
 
+  end
+
+  module AuthorNameToPath
+    def self.parse(name)
+        name.downcase.gsub(" ", "-")
+    end
   end
 
 end

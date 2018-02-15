@@ -144,15 +144,26 @@ $orange-colour: #e67e22;
       color: #000 !important;
       font-size: 21px;
       line-height: 32px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     & h3 {
       color: #000 !important;
       font-size: 18px;
       line-height: 25px;
-      margin-bottom: 8px;
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
+
+    & h4 {
+      color: #000 !important;
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
 
     & img {
       max-width: 100%;
@@ -706,4 +717,15 @@ blockquote.no-left-border {
   .casestudy-header-path {
     padding-right: 20px;
     } 
+}
+
+/*  slick slides equalize height -----
+-----------------------------*/
+.slick-track{
+  display: flex;
+
+  .slick-slide{
+      display: flex;
+      height: auto;
+  }
 }
