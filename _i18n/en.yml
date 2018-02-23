@@ -257,6 +257,22 @@ events-lscc:
 careers:
    title: Come work with us
    email: join-us@codurance.com
+   attitude_title: Attitude
+   attitude_description: We are looking for people who have a great attitude to learning and a real love for the skills required of a good software development professional. We offer a vibrant environment where you will grow as a professional. We are proud of our culture of learning. We are a community of professionals where we help and support each other.
+   experience_title: Experience
+   experience_description: XP skills are very important to us. We expect you to be proficient at Test Driven Development, Pair Programming, Simple Design, and Continuous Integration. You will have a good appreciation for Clean Code. We work in Agile environments so we expect successful applicant to be able to work effectively in such an environment.
+   drive_title: Drive
+   drive_description: We believe that our occupation is more than just a job. We apply deliberate learning practices to acquire new skills and to deepen our existing expertise. We do this out of a sense of professional pride, constantly striving to improve. We are looking for people who share our drive to continuously improve, to learn and to mentor those around them.
+   about_us:
+    title: What About Us?
+    culture_title: Culture of Learning
+    culture_description: Our time is dedicated to continuous learning. We have a strong desire to acquire new skills, and to strengthen our existing expertise. We are all at different stages of our careers, and as such, look to support, learn and collaborate together.
+    transparency_title: Transparency
+    transparency_description: Transparency is one of our key values. Every person inside Codurance has full access to the company's financials and each other salaries. We believe that to have meaningful conversations, everyone should have the same information.
+    autonomy_title: Autonomy
+    autonomy_description: There are no hierarchies or managers in the company. Any small group of people who feel passionate about a subject or want to change how things are done in the company can start an Initiative, with the full remit to see this from Ideation through to Delivery.
+    software_craftsmanship_title: Software Craftsmanship
+    software_craftsmanship_description: Software Craftsmanship is at the heart of our company. To us, this represents a state of mind. As professionals, we take great pride in the quality of our work. Balanced with a constant sense of pragmatism, we aspire to continuously deliver well-crafted software to our clients.
    become_a_craftsperson:
     title: Software Craftsperson
     what_we_look_for: We are looking for Software Craftspeople that share the same values of pragmatism, professionalism and transparency that we do. Working exclusively in London and Barcelona (we don’t like to travel very far), we support our clients in many ways and you will have the opportunity to work on a wide range of different internal and clients projects.
@@ -269,7 +285,7 @@ careers:
     software_design: I am a Craftsperson passionate about TDD, Pair Programming, and Micro Design. I program in Java and my favorite editor is IntelliJ IDEA. Test Driving code comes as second nature to me; I always keep SOLID principles and the 4 Rules of Simple Design in mind while I am developing software. I regularly do coding katas to keep my skills sharp. I am interested in learning more about Domain Driven Design and Architectural Patterns. I’m also currently in the process of understanding my the AWS ecosystems works and its usage.
     architecture_title: Architecture
     architecture: I love test driving software, especially outside-in. ‘Growing Object-Oriented Software’ is still one my favorites. I appreciate the value of fast running tests at 1different levels to achieve different objectives. I have a keen interest in high-level architecture, such as Hexagonal, Microservices, Event Sourcing and CQRS. I have used these on different projects and understand their pros and cons. I also have a keen interest in technologies, frameworks, and cloud platforms that enable that. I am learning how to advise customers within the context of high-level consultancy.
-    consultancy_title: Consultancy
+    consultancy_title: Consultancy 
     consultancy: I am an XP practitioner. I have deep knowledge of various languages and platforms. I understand Agile Process to an expert-level. I look forward to joining large projects where I use my experience to get up to speed quickly so I am in a position to provide valuable advice. I am still a developer at heart and love getting involved in roles that are focused on more hands-on development. I am a polyglot, with a keen interest in Functional Programming. I like contributing back to the software development community through speaking and conferences and writing articles on the Codurance Blog.
     process_and_ux_title: Process & UX
     process_and_ux: I am a UX designer and Agile Product Manager. I enjoy facilitating meetings where I help stakeholders to understand well-crafted user journeys for their product. I often act as a product owner for a project, understanding the needs of stakeholders, combined with my understanding of Agile Processes. I have a keen interest in Design Thinking and the concept of co-creation. I am constantly learning and regularly attend training courses, conferences, and meetups to gain a deeper understanding of my field. I mentor more junior people in my company to become better practitioners of Agile practices.
