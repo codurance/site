@@ -1,5 +1,6 @@
 ---
 layout: post
+category: careers
 name: 2017-10-01-find-a-workplace-where-you-can-grow
 title: Find a workplace where you can grow
 date: 2017-10-01 10:20:00 +00:00

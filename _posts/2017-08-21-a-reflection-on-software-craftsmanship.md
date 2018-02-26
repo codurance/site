@@ -1,5 +1,6 @@
 ---
 layout: post
+category: careers
 name: a-reflection-on-software-craftsmanship
 title: A reflection on Software Craftsmanship
 date: 2017-08-21 08:00:00 +00:00

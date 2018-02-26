@@ -1,6 +1,7 @@
 --- 
 layout: default 
 title: Careers 
+category: careers
 ---
 <!-- Heading -->
 <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
@@ -182,6 +183,43 @@ title: Careers
     </div>
 </section>
 <!-- End Our Roles --> 
+<!-- Life at Codurance -->
+<section id ="publications" class="g-py-50">
+    <div class="container">
+        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40 g-pb-20">
+            <h2 class="text-uppercase u-heading-v2__title g-mb-10">Life at Codurance</h2>
+        </div>
+        <div class="row mx-0">
+            {% for post in site.categories[page.category] %}
+                {% if post.image.src and post.image.src contains '://' %} 
+                    {% assign postImgUrl = post.image.src %} 
+                {% elsif post.image.src%} 
+                    {% assign postImgUrl = post.image.src | prepend: site.baseurl %} 
+                {% else %} 
+                    {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %} 
+                {% endif %}
+                <div class="col-lg-4 px-0 g-mb-30">
+                    <!-- Article -->
+                    <article class="u-block-hover">
+                        <figure class="g-overflow-hidden" style="height: 240px;">
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ postImgUrl }}">
+                        </figure>
+
+                        <div class="text-center g-brd-arou`nd g-brd-top-none g-brd-gray-light-v4 g-pa-40">
+                            <h3 class="h4 text-uppercase g-font-weight-600 g-mb-10">
+                            <a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </h3>
+                            <a class="text-uppercase g-font-weight-600 g-font-size-12" href="#{{ post.url | prepend: site.baseurl }}">Read More</a>
+                        </div>
+                    </article>
+                    <!-- End Article -->
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Life at Codurance -->
 <!-- Contact Us--> 
 <section>
     <div class="g-mb-50">
