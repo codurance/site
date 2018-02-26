@@ -11,8 +11,7 @@ title: Careers
             <h4 class="g-font-weight-200">{% t careers-open_positions.description %}</h4> 
         </div>
         <div class="text-center">
-            <a href="#craftsman-form" data-modal-target="#craftsman-form" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Apply Now</a>
-            {% include apply_form.html title="Become a Craftsperson" target="craftsman" %}
+            <a href="#our_roles" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Our Roles</a>
         </div>
     </div>
 </section>
@@ -144,18 +143,14 @@ title: Careers
                 <!-- End Icon Blocks -->
             </div>
         </div>
-
-        <div class="text-center">
-            <a href="#craftsman-form" data-modal-target="#craftsman-form" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Apply Now</a>
-        </div>
     </div>
 </section>
 <!-- End About You -->
 <!-- Our Roles --> 
-<section class="g-bg-gray-light-v5 g-py-50">
+<section id="our_roles" class="g-bg-gray-light-v5 g-py-50">
     <div class="container">
         <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40 g-pb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">Our Roles</h2>
+            <h2 class="text-uppercase u-heading-v2__title g-mb-10">{% t careers.our_roles_title %}</h2>
         </div>
         <!-- Banners -->
         <div class="row align-items-stretch">
@@ -163,8 +158,8 @@ title: Careers
             <!-- Article -->
             <article class="h-100 text-center u-block-hover info-v3-2 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_2--after g-color-white text-uppercase g-py-210 g-px-30" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/temp2.jpg">
             <div class="g-flex-middle-item g-pos-rel g-z-index-2">
-                <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">Software Craftspeople</h3>
-                <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">Lorem Ipsum</em>
+                <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">{% t careers.software_craftspeople_title %}</h3>
+                <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">{%t careers.software_craftspeople_description %}</em>
                 <a class="btn btn-md u-btn-white g-font-weight-600 g-font-size-11 text-uppercase" href="{{ site.baseurl }}/careers/become_a_craftsperson">Learn More</a>
             </div>
             </article>
@@ -175,9 +170,8 @@ title: Careers
             <!-- Article -->
             <article class="h-100 text-center u-block-hover info-v3-2 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_2--after g-color-white text-uppercase g-py-210 g-px-30" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/temp1.jpg">
             <div class="g-flex-middle-item g-pos-rel g-z-index-2">
-                <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">Apprentices
-                </h3>
-                <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">Lorem Ipsum</em>
+                <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">{%t careers.apprentices_title %}</h3>
+                <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">{%t careers.apprentices_description %}</em>
                 <a class="btn btn-md u-btn-white g-font-weight-600 g-font-size-11 text-uppercase" href="{{ site.baseurl }}/careers/become_an_apprentice">Learn More</a>
             </div>
             </article>
@@ -188,88 +182,54 @@ title: Careers
     </div>
 </section>
 <!-- End Our Roles --> 
-<!-- Interested -->
-<section class="g-py-50 g-pb-100">
-    <div class="container">
-        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40 g-pb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">Interested?</h2>
-        </div>
-        <!-- Dynamic Process -->
-        <div id="carousel1" class="js-carousel" data-infinite="true" data-pagi-classes="js-pagination u-carousel-indicators-v30 g-pos-abs g-top-0">
-            <div class="js-slide g-pt-70 g-pt-150--sm" data-title="{% t careers-hiring_process.step_1.title %}">
-                <!-- Dynamic Process -->
-                <div class="row no-gutters w-100">
-                <div class="col-lg-6 g-bg-black g-pa-60 g-pa-100--sm">
-                    <h3 class="h4 g-color-white g-font-weight-700 g-mb-25">{% t careers-hiring_process.step_1.title %}</h3>
-                    <div class="g-mb-50">
-                        <p class="g-color-white-opacity-0_7 g-mb-30">{% t careers-hiring_process.step_1.description %}</p>
-                    </div>
+<!-- Contact Us--> 
+<section>
+    <div class="g-mb-50">
+        <div class="g-pos-rel">
+            <div class="container text-center g-pt-100 g-pb-50">
+                <div class="g-max-width-645 mx-auto g-mb-40">
+                    <h2 class="h1 mb-3">Still have questions?</h2>
+                    <p></p>
                 </div>
-                <div class="col-lg-6 g-min-height-400 g-bg-size-cover g-bg-pos-center" style="background-image: url({{ site.baseurl }}/assets/custom/img/blog/2015-11-01-incremental-design.jpg);"></div>
-                </div>
-                <!-- End Dynamic Process -->
-            </div>
-
-            <div class="js-slide g-pt-70 g-pt-150--sm" data-title="{% t careers-hiring_process.step_2.title %}">
-                <!-- Dynamic Process -->
-                <div class="row no-gutters w-100">
-                <div class="col-lg-6 g-bg-black g-pa-60 g-pa-100--sm">
-                    <h3 class="h4 g-color-white g-font-weight-700 g-mb-25">{% t careers-hiring_process.step_2.title %}</h3>
-                    <div class="g-mb-50">
-                        <p class="g-color-white-opacity-0_7 g-mb-30">{% t careers-hiring_process.step_2.description %}</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 g-min-height-400 g-bg-size-cover g-bg-pos-center" style="background-image: url({{ site.baseurl }}/assets/custom/img/blog/2015-11-01-incremental-design.jpg);"></div>
-                </div>
-                <!-- End Dynamic Process -->
-            </div>
-
-            <div class="js-slide g-pt-70 g-pt-150--sm" data-title="{% t careers-hiring_process.step_3.title %}">
-                <!-- Dynamic Process -->
-                <div class="row no-gutters w-100">
-                <div class="col-lg-6 g-bg-black g-pa-60 g-pa-100--sm">
-                    <h3 class="h4 g-color-white g-font-weight-700 g-mb-25">{% t careers-hiring_process.step_3.title %}</h3>
-                    <div class="g-mb-50">
-                        <p class="g-color-white-opacity-0_7 g-mb-30">{% t careers-hiring_process.step_3.description %}</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 g-min-height-400 g-bg-size-cover g-bg-pos-center" style="background-image: url({{ site.baseurl }}/assets/custom/img/blog/2015-11-01-incremental-design.jpg);"></div>
-                </div>
-                <!-- End Dynamic Process -->
-            </div>
-
-            <div class="js-slide g-pt-70 g-pt-150--sm" data-title="{% t careers-hiring_process.step_4.title %}">
-                <!-- Dynamic Process -->
-                <div class="row no-gutters w-100">
-                <div class="col-lg-6 g-bg-black g-pa-60 g-pa-100--sm">
-                    <h3 class="h4 g-color-white g-font-weight-700 g-mb-25">{% t careers-hiring_process.step_4.title %}</h3>
-                    <div class="g-mb-50">
-                        <p class="g-color-white-opacity-0_7 g-mb-30">{% t careers-hiring_process.step_4.description %}</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 g-min-height-400 g-bg-size-cover g-bg-pos-center" style="background-image: url({{ site.baseurl }}/assets/custom/img/blog/2015-11-01-incremental-design.jpg);"></div>
-                </div>
-                <!-- End Dynamic Process -->
-            </div>
-
-            <div class="js-slide g-pt-70 g-pt-150--sm" data-title="{% t careers-hiring_process.step_5.title %}">
-                <!-- Dynamic Process -->
-                <div class="row no-gutters w-100">
-                <div class="col-lg-6 g-bg-black g-pa-60 g-pa-100--sm">
-                    <h3 class="h4 g-color-white g-font-weight-700 g-mb-25">{% t careers-hiring_process.step_5.title %}</h3>
-                    <div class="g-mb-50">
-                        <p class="g-color-white-opacity-0_7 g-mb-30">{% t careers-hiring_process.step_5.description %}</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 g-min-height-400 g-bg-size-cover g-bg-pos-center" style="background-image: url({{ site.baseurl }}/assets/custom/img/blog/2015-11-01-incremental-design.jpg);"></div>
-                </div>
-                <!-- End Dynamic Process -->
+                <a class="btn u-shadow-v33 g-color-white g-bg-primary g-bg-main--hover g-rounded-30 g-px-35 g-py-13" href="#modal6" data-modal-target="#modal6" data-modal-effect="blur">Contact Us</a>
             </div>
         </div>
-        <!-- End Dynamic Process -->
+    </div>
+<section>
+<section>
+    <div id="modal6" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>         
+        <!-- Business Hours -->
+        <h4>{% t company-contact-form.title %}</h4>
+        <p>{% t company-contact-form.offices_introduction %}:
+            <ul>
+            <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
+            <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
+            </ul>
+        </p>
+        <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
+        <form action="https://formspree.io/hello@codurance.com" method="POST">
+            <input type="hidden" name="_next" value="/aboutus/thanks"/>
+            <input type="hidden" name="_subject" value="Codurance Contact"/>
+            <div class="col-sm-12">
+                <div class="input-group margin-bottom-10">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <textarea rows="8" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+                <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+            </div>
+        </form>
     </div>
 </section>
-<!-- End Interested -->
-<!-- Static Apply Form -->
-
-<!-- End Static Apply Form -->
+<!-- End Contact Us --> 
