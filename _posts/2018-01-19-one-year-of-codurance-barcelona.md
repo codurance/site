@@ -23,7 +23,7 @@ During this year many things happened, some really good, others not so good, but
 
 I remember myself making the presentation in London of what was going to be Codurance Barcelona, with pictures of tropical beaches and sunny places. It all started as an idea and now, one year after it’s a reality.
 
-The first stop was to build a good team. And I have to say, sorry for not being humble, but we did it really well. Our Barcelona team is the best team I could ever imagine for us. I could mention them all, but many of you know them and if not, you can find us at [codurance company]. Alvaro has been there from the beginning, we started together this an he was the first productive employee in Codurance Barcelona. 
+The first stop was to build a good team. And I have to say, sorry for not being humble, but we did it really well. Our Barcelona team is the best team I could ever imagine for us. I could mention them all, but many of you know them and if not, you can find us [here](https://codurance.com/company/). Alvaro has been there from the beginning, we started together this an he was the first productive employee in Codurance Barcelona. 
 
 The first Craftsperson to join us was Rachel, she represents the fresh air coming into the room, the energy and happiness, the power of engagement. Her trajectory in the company hasn’t stop growing day by day, and I can see a great future for her in Codurance. I feel her as a personal victory, amazed me from day one.
 
