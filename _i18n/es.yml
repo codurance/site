@@ -270,6 +270,15 @@ careers:
        continuous_learning:
           title: Aprendizaje Continuo
           description: Valoramos el aprendizaje y la práctica continua. Organizamos reuniones internas la mayoría de las tardes durante la semana, cubriendo cualquier tema desde Category Theory y programación funcional hasta ayudarnos a aprender tecnologías e idiomas específicos como Kotlin y Rust. Cada dos semanas, nos reunimos para nuestros “Evening Catchups”, donde realizamos ‘lightning talks’ y discusiones en grupo mientras cenamos juntos. Una vez al mes, organizamos nuestro ‘Codurance Open Space’, donde nos reunimos (independientemente de nuestros proyectos) para llevar a cabo un día de ‘unconference’ en nuestras oficinas. Realizamos muchas más actividades, y nos encantaría que aportaras tus propias ideas mientras crecemos juntos.     
+   become_a_craftsperson:
+    title: Software Craftsperson
+    what_we_look_for: Buscamos Software Craftpeople con quienes comparten los mismos valores del pragmatismo, profesionalismo y transparencia. Trabajando exclusivamente en Londres y Barcelona(No nos gusta viajar muy lejos), soportamos a nuestros clientes en variedad de maneras y tendrás la oportunidad de trabajar en en una amplitud de proyectos internos o con clientes.
+    projects_title: Projectos que apoyaras
+    projects_description: Tal vez trabajaras en on proyecto interno para nuestros clientes con nuestro enfoque de entrega de equipo. Esto puede ser un proyecto nuevo para un Startup, o ayudar a construir un sistema de misión crítica para un cliente de una gran empresa. Tal vez trabaje como un ‘Embedded Craftsman’, trabajando dentro del desarrollo existente de nuestro cliente para ayudarlo a mejorar al escribir su propio software. O tal vez esté más interesado en ayudar a presentar los valores de la artesanía a una organización a través del asesoramiento y la tutoría.
+    about_you_title: Y tu? 
+    personas_heading: Perfil de un Software Craftsperson
+    personas_subtitle: Nuestros 'Craftpeople' tienen una gran variedad de experiencias y habilidades, y profindidad en una o mas áreas. El viaje de cada 'Craftsperson' es única y se unen a nosotros en diferentes etapas de sus carreras.
+    software_design_title: Diseño de Software
    become_a_craftsman:
      join_title: Unete a Codurance
      apply_title: Aplicar
