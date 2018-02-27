@@ -58,6 +58,9 @@
         
         $.HSCore.components.HSModalWindow.init('[data-modal-target]');
         
+        $('[data-toggle="popover"]').popover();
+        
+        
 
         $('#carousel1').slick('setOption', 'customPaging', function (slider, i) {
           var title = $(slider.$slides[i]).data('title');
