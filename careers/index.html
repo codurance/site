@@ -9,10 +9,10 @@ category: careers
     <div class="container g-color-white text-center g-py-120">
         <div class="u-heading-v2-6--bottom g-brd-primary g-mb-40">
             <h2 class="text-uppercase u-heading-v2__title g-mb-10">We Want You</h2>
-            <h4 class="g-font-weight-200">{% t careers-open_positions.description %}</h4> 
+            <h4 class="g-font-weight-200">{% t careers-open_positions.description %}</h4>
         </div>
         <div class="text-center">
-            <a href="#our_roles" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">Our Roles</a>
+            <a href="#our_roles" class="btn btn-md u-btn-primary g-mr-10 g-mb-15">{% t careers.our_roles_title %}</a>
         </div>
     </div>
 </section>
@@ -20,8 +20,9 @@ category: careers
 <!-- About Us -->
 <section class="g-bg-gray-light-v5 g-py-50">
     <div class="container">
-        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">{%t careers.about_us.title %}</h2>
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{%t careers.about_us.title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
         </div>
         <div class="row">
             <div class="col-md-6 col-xl-3 g-mb-30">
@@ -113,8 +114,9 @@ category: careers
 <!-- About You -->
 <section>
     <div class="container g-py-50">
-        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">What About You?</h2>
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">What about you?</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
         </div>
         <div class="row">
             <div class="col-lg-4 g-mb-30">
@@ -150,8 +152,10 @@ category: careers
 <!-- Our Roles --> 
 <section id="our_roles" class="g-bg-gray-light-v5 g-py-50">
     <div class="container">
-        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40 g-pb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">{% t careers.our_roles_title %}</h2>
+        <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.our_roles_title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
         </div>
         <!-- Banners -->
         <div class="row align-items-stretch">
@@ -186,8 +190,10 @@ category: careers
 <!-- Life at Codurance -->
 <section id ="publications" class="g-py-50">
     <div class="container">
-        <div class="u-heading-v2-6--bottom text-center g-brd-primary g-mb-40 g-pb-20">
-            <h2 class="text-uppercase u-heading-v2__title g-mb-10">Life at Codurance</h2>
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.life_at_codurance_title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+            <p class="lead mb-0">{% t careers.life_at_codurance_subtitle %}</p>
         </div>
         <div class="row mx-0">
             {% for post in site.categories[page.category] limit: 3 %}
@@ -225,9 +231,10 @@ category: careers
     <div class="g-mb-50">
         <div class="g-pos-rel">
             <div class="container text-center g-pt-100 g-pb-50">
-                <div class="u-heading-v2-6--bottom g-brd-primary g-mb-40">
-                    <h2 class="text-uppercase u-heading-v2__title g-mb-10">{% t careers.contact_us_title %}</h2>
-                    <h4 class="g-font-weight-200">{% t careers.contact_us_subtitle %}</h4> 
+                <div class="text-center mb-4">
+                    <h2 class="h3 text-uppercase mb-3">{% t careers.contact_us_title %}</h2>
+                    <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+                    <p class="lead mb-0">{% t careers.contact_us_subtitle %}</p>
                 </div>
                 <a class="btn u-shadow-v33 g-color-white g-bg-primary g-bg-main--hover g-rounded-30 g-px-35 g-py-13" href="#modal6" data-modal-target="#modal6" data-modal-effect="blur">Contact Us</a>
             </div>
