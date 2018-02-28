@@ -255,21 +255,32 @@ events-lscc:
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
 careers:    
    title: Trabaja con nosotros
-   email: join-us@codurance.es
-   our_people: 
-       title: Nuestras Personas
-       description: Nuestras personas nos definen. Aprenda más sobre la vida de nuestros aprendices y craftspeople.
-   culture:
-       title: Nuestra Cultura
-       structure:
-          title: Estructura
-          description: No hay jerarquías o managers en nuestra empresa. Damos más importancia a la colaboración y el reconocimiento entre nosotros que en títulos. Nos organizamos para tomar decisiones, utilizando 'Initiative Circles' para mejorar nuestra empresa y proyectos. Nuestro cofundador, Sandro Mancuso, profundiza en este concepto en el video "Teal Organisations”.
-       transparency:
-          title: Transparencia
-          description: En nuestra compañía valoramos la transparencia. . Como no tenemos managers, creemos que toda la información debería estar disponible para todos. Confiamos en que nuestra gente, dada esta información, puede contribuir a la manera en que nuestra compañía crece. Por lo tanto, cada persona dentro de Codurance tiene acceso completo a las finanzas de la compañía y a todos los salarios. Utilizamos Trello y Slack para estar al día del progreso de nuestros ‘Initiative Circles’, cómo se desarrollan nuestros proyectos, y de qué decisiones tenemos que tomar como negocio.
-       continuous_learning:
-          title: Aprendizaje Continuo
-          description: Valoramos el aprendizaje y la práctica continua. Organizamos reuniones internas la mayoría de las tardes durante la semana, cubriendo cualquier tema desde Category Theory y programación funcional hasta ayudarnos a aprender tecnologías e idiomas específicos como Kotlin y Rust. Cada dos semanas, nos reunimos para nuestros “Evening Catchups”, donde realizamos ‘lightning talks’ y discusiones en grupo mientras cenamos juntos. Una vez al mes, organizamos nuestro ‘Codurance Open Space’, donde nos reunimos (independientemente de nuestros proyectos) para llevar a cabo un día de ‘unconference’ en nuestras oficinas. Realizamos muchas más actividades, y nos encantaría que aportaras tus propias ideas mientras crecemos juntos.     
+   email: join-us@codurance.es  
+   attitude_title: Actitud
+   attitude_description: Buscamos personas que tengan una gran actitud de aprendizaje y un verdadero amor por las habilidades requeridas de un desarrollo de software profesional. Ofrecemos un ambiente vibrante donde crecerás como profesional. Estamos orgullosos de nuestra cultura de aprendizaje. Somos una comunidad de profesionales donde nos ayudamos y apoyamos mutuamente.
+   experience_title: Experiencia
+   experience_description: Las habilidades en XP son muy importantes para nosotros. Esperamos que sea competente en Desarrollo impulsado por prueba, Programación por pares, Diseño simple e Integración continua. Tendrá un buen aprecio por Clean Code. Trabajamos en entornos Agile, por lo que esperamos que el candidato exitoso pueda trabajar de manera efectiva en dicho entorno.
+   drive_title: Drive
+   drive_description: We believe that our occupation is more than just a job. We apply deliberate learning practices to acquire new skills and to deepen our existing expertise. We do this out of a sense of professional pride, constantly striving to improve. We are looking for people who share our drive to continuously improve, to learn and to mentor those around them.
+   our_roles_title: Our Roles
+   software_craftspeople_title: Software Craftspeople
+   software_craftspeople_description: Our Craftspeople have a broad range of skill and varying depths of expertise. Learn more about what it means to be a Craftsperson.
+   apprentices_title: Apprentices
+   apprentices_description: An intensive 3-month programme of learning that will provide you with the skills required to become a productive Craftsperson. Learn more about the programme here.
+   contact_us_title: Still have questions?
+   contact_us_subtitle: If you'd like to know more about Codurance before applying, feel free to drop us a message here. We'll answer your questions but will respect your privacy. Once you're ready to apply, then we can talk further.
+   life_at_codurance_title: Life at Codurance
+   life_at_codurance_subtitle: Everyone within Codurnace applies deliberate practice to learning, and we share our experiences with the wider communities in many ways. Here are some examples of how we like to contribute back to the development community.
+   about_us:
+    title: What About Us?
+    culture_title: Culture of Learning
+    culture_description: Our time is dedicated to continuous learning. We have a strong desire to acquire new skills, and to strengthen our existing expertise. We are all at different stages of our careers, and as such, look to support, learn and collaborate together.
+    transparency_title: Transparency
+    transparency_description: Transparency is one of our key values. Every person inside Codurance has full access to the company's financials and each other salaries. We believe that to have meaningful conversations, everyone should have the same information.
+    autonomy_title: Autonomy
+    autonomy_description: There are no hierarchies or managers in the company. Any small group of people who feel passionate about a subject or want to change how things are done in the company can start an Initiative, with the full remit to see this from Ideation through to Delivery.
+    software_craftsmanship_title: Craftsmanship
+    software_craftsmanship_description: Software Craftsmanship is at the heart of our company. As professionals, we take great pride in the quality of our work. Balanced with a constant sense of pragmatism, we aspire to continuously deliver well-crafted software to our clients. 
    become_a_craftsperson:
     title: Software Craftsperson
     what_we_look_for: Buscamos Software Craftpeople con quienes comparten los mismos valores del pragmatismo, profesionalismo y transparencia. Trabajando exclusivamente en Londres y Barcelona(No nos gusta viajar muy lejos), soportamos a nuestros clientes en variedad de maneras y tendrás la oportunidad de trabajar en en una amplitud de proyectos internos o con clientes.
