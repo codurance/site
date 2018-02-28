@@ -17,7 +17,7 @@ tags:
 
 There are models to describe the process of learning as <a href="http://wiki.c2.com/?DreyfusModel">Dreyfus model</a> or <a href="http://wiki.c2.com/?ShuHaRi" target="_blank">Shuhari</a>, but I'd like to explain another process when learning a new technical skill. It is composed of 2 phases: 
 
-1. **Fascination**. This is when we learn a new concept that sounds really good to solve our problems, and we apply it in any place we have an apportuninity. We are so convinced about its advantages that it seems we have a radar to detect a place in which we can apply it. It's like the first stage at Shuhari, but we are absolutely fascinated and we don't believe in _another world_.
+1. **Fascination**. This is when we learn a new concept that sounds really good to solve our problems, and we apply it in any place we have an apportunity. We are so convinced about its advantages that it seems we have a radar to detect a place in which we can apply it. It's like the first stage at Shuhari, but we are absolutely fascinated and we don't believe in _another world_.
 
 2. **Questioning**. This is when we have assimilated that concept and we are able to decide where it's convenient to implement it. We have learnt from the previous stage and now we are moderate and reasonable about our decisions.
 
