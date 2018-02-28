@@ -15,11 +15,11 @@ tags:
 
 ---
 
-There are models to describe the process of learning as <a href="http://wiki.c2.com/?DreyfusModel">Dreyfus model</a> or <a href="http://wiki.c2.com/?ShuHaRi" target="_blank">Shuhari</a>, but I'd explain another process when learning a new technical skill. It would be composed by 2 phases: 
+There are models to describe the process of learning as <a href="http://wiki.c2.com/?DreyfusModel">Dreyfus model</a> or <a href="http://wiki.c2.com/?ShuHaRi" target="_blank">Shuhari</a>, but I'd like to explain another process when learning a new technical skill. It is composed of 2 phases: 
 
-1. **Fascination**. When we learn a new concept that sounds really good to solve our problems and we apply it in any place we have an apportuninity. And we are so convinced about its advantages that it seems we have a radar to detect a place in which we can apply it. It's like the first stage at Shuhari, but we are absolutely fascinated and we don't believe in _another world_.
+1. **Fascination**. This is when we learn a new concept that sounds really good to solve our problems, and we apply it in any place we have an apportuninity. We are so convinced about its advantages that it seems we have a radar to detect a place in which we can apply it. It's like the first stage at Shuhari, but we are absolutely fascinated and we don't believe in _another world_.
 
-2. **Questioning**. When we have assimilated that concept and we are able to decide where it's convenient to implement it. We have learnt from the previous stage and now we are moderate and reasonable about our decisions.
+2. **Questioning**. This is when we have assimilated that concept and we are able to decide where it's convenient to implement it. We have learnt from the previous stage and now we are moderate and reasonable about our decisions.
 
 But sometimes it's really difficult to jump to the second stage, because we are continuously receiving messages about a concept for years. It's the case of **no duplication**. 
 
@@ -34,7 +34,7 @@ What's the reason of those extracted methods or that reuse?:
 One of the metrics we can find in static code analysis tools is the **percentage of duplicated lines**. Managers need metrics and this one is usually included as a guarantee of **quality code**. However, striving for a certain number of duplicated lines in a board can cause these consequences:
 
 * Over-generalization
-* Over-anticipate abstractions
+* Over-anticipated abstractions
 * Early decisions about common parts
 * Coupling
 * Levels of indirection, adding difficulty to understand the source code
@@ -50,8 +50,8 @@ That's the reason why I usually highlight **knowledge** when explaining the thir
 To sum up, some recommendations:
 
 * Try to postpone your decisions about duplicated code, because it's a question of trade-offs
-* When you find two apparently similar pieces of source code, question if you find a reason to have to change them at the same time
-* Use the metric about duplicated lines only as a **guidance**, but don't try to strive for a number in a board, compromising the understanding of source code
+* When you find two apparently similar pieces of source code, question whether you find a reason to have to change them at the same time
+* Use the metric about duplicated lines only as **guidance**, but don't try to strive for a number in a board, compromising the understanding of source code
 
 ## Further reading
 
