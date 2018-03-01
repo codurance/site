@@ -334,10 +334,12 @@ careers:
      lifestyle_title: Estilo de vida
      holidays_title: Vacaciones
      holidays_description: 22 Dias Laborales al año.
-     pensions_title: Descuento de gimnasio.
-     pensions_description: All covered, as standard. Incidentally, many of these came from Initiatve Circles in our early days (see above).
-     life_cover_title: Life Cover & Private Medical
-     life_cover_description: Lumpsum payment for life cover, and Dental cashback scheme for you and your children.
+     pensions_title: Bienestar
+     pensions_description: Todos nuestros empleados obtienen membresía de gimnasio con descuento
+     pensions_icon: icon-sport-010 u-line-icon-pro
+     life_cover_title: Viernes en la oficina
+     life_cover_description: Todos los viernes trabajamos desde la oficina en lugar de los sitios de los clientes
+     life_cover_icon: icon-education-153 u-line-icon-pro
      mentor_title: Mentor
      mentor_description: You will choose a mentor, who will guide you through your apprenticeship
    become_an_apprentice:
