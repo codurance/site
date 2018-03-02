@@ -1,9 +1,9 @@
 ---
-author: Nacho García
-date: 2018-03-05 08:00:00 +00:00
 layout: post
 asset-type: post
-slug: growing-your-career
+date: 2018-03-05 08:00:00 +00:00
+author: Nacho García
+name: growing-your-career
 title: Growing your career
 description: Some resources to improve as a developer
 tags:
