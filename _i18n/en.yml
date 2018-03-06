@@ -255,7 +255,7 @@ events-lscc:
    link_title: Find out more
    api_endpoint: https://api.meetup.com/london-software-craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=23964a489b632a356d3a23aaafa95dd93fb0d1b3
 careers:
-   title: Come work with us
+   title: We Want You
    email: join-us@codurance.com
    attitude_title: Attitude
    attitude_description: We are looking for people who have a great attitude to learning and a real love for the skills required of a good software development professional. We offer a vibrant environment where you will grow as a professional. We are proud of our culture of learning. We are a community of professionals where we help and support each other.
