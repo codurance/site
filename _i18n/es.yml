@@ -255,7 +255,8 @@ events-lscc:
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
 careers:    
    title: Trabaja con nosotros
-   email: join-us@codurance.es  
+   email: join-us@codurance.es
+   learn_more: Aprende más  
    attitude_title: Actitud
    attitude_description: Buscamos personas que tengan una gran actitud de aprendizaje y un verdadero amor por las habilidades requeridas de un desarrollo de software profesional. Ofrecemos un ambiente vibrante donde crecerás como profesional. Estamos orgullosos de nuestra cultura de aprendizaje. Somos una comunidad de profesionales donde nos ayudamos y apoyamos mutuamente.
    experience_title: Experiencia
