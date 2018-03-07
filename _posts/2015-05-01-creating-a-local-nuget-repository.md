@@ -19,9 +19,13 @@ I spend several hours each week on long-distance train journeys and often use th
 
 In the most simple cases, where a solution just needs a reference to a single DLL, local copies are an adequate solution. However, that is not always sufficient as some of the libraries I want to use are vastly more complex with extended dependency chains. I was really beginning to miss NuGet while working offline, so I decided to set up my own offline local NuGet repository. It is a surprisingly simple operation, yet I had to do quite a bit of hunting around to find all the steps I needed to perform and failed to find a them all listed in a single article. So here goes…
 
+## The Steps
+
 Firstly, you’ll need to create a local folder to house all your local NuGet packages. I created a folder called *‘LocalNugetRepository’* within the *Documents\Visual Studio 2013* folder, but you can call it whatever you like and place it anywhere you have sufficient privileges:
 
 ![Local repository folder]({{site.baseurl}}/assets/custom/img/blog/2015-05-01-creating-a-local-nuget-repository/local-folder.png)
+
+___
 
 The next step is to download the NuGet packages you wish to be able to use offline into this folder. Packages can be downloaded from [nuget.org](http://www.nuget.org). Importantly, you must be logged in to this site to be able to download packages, so go ahead and log in, or register for a new account if you don’t already have one.
 
@@ -34,6 +38,8 @@ Once you have successfully downloaded the *.nupkg* files you require into your l
 ![Adding a local package source]({{site.baseurl}}/assets/custom/img/blog/2015-05-01-creating-a-local-nuget-repository/nuget-settings.png)
 
 Enter the Name and Source of your local repository. The name can be any string and will be the name displayed in the NuGet Package Manager within Visual Studio.
+
+___
 
 Now that you have added the local package source, you will be able to use your offline local repository from within Visual Studio in the usual way, either via the Console or via the Package Dialog, by selecting it from the *Package Source* menu, without the need for an active internet connection:
 
