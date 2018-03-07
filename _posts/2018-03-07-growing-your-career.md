@@ -1,20 +1,22 @@
 ---
 layout: post
 asset-type: post
-date: 2018-03-05 08:00:00 +00:00
+date: 2018-03-07 14:00:00 +00:00
 author: Nacho García
 name: growing-your-career
 title: Growing your career
 description: Some resources to improve as a developer
+image:
+   src: /assets/custom/img/blog/2018-03-07-growing-your-career.jpg
 tags:
 - growth
 - first steps
 - craftsmanship
 ---
-As of now, there are a lot of developers in the IT indostry willing to advance in their professional carreers but don't know how.
-This pretends to be a quick reference for them.
+As of now, there are a lot of developers in the IT industry willing to advance in their professional careers who don't know how.
+This is meant to be a quick reference for them.
 
-One could argue to have put another resources - there is almost no reference to devops, infosec, agile, AI, iOS nor any new cool frontend framework like React or Angular - But in my opinion if you have done enough of the points of this generic list, you will have already the resources not to follow any list.
+One could argue to include resources - there is almost no reference to devops, infosec, agile, AI, iOS nor any new cool frontend framework like React or Angular - but in my opinion if you have done enough of the points of this generic list, you will have already the resources not to need any list.
 
 *Note: If you don't know English well, it's time for you to learn. Many resources and documentations are written in it*
 
@@ -37,9 +39,9 @@ One could argue to have put another resources - there is almost no reference to 
  * Practice, practice, and more practice. By reading and listening alone you won't achieve anything.
  * Contribute to open source projects if you can. Do stuff and put it in your public repository.
  * **Value yourself.**
- * Go to conferences, meetups, etc. Not only you will learn many things but also you will find other people to share points of view. Oh, and you will enjoy the so needed networking: You have to know people in the communities and the companies involved.
+ * Go to conferences, meetups, etc. Not only you will learn many things but also you will find other people to share points of view. Oh, and you will enjoy the all-important networking: You have to know people in the communities and the companies involved.
  * **Find the appropiate job for you.** They should facilitate and encourage your learning. You won't be able to grow professionaly if you don't like what you do or it's difficult for you to find time for your growth - *Speaking of appropriate jobs, do you know we're hiring? :)*
 
-Some times it will be hard. It will be OK, be confindent.
+Some times it will be hard. It will be OK, be confident.
 
-If you have the will, you will make it as high as you want to. And remember not to run but to enjoy yourself in the path. It is all we have.
+If you have the will, you will make it as high as you want to. And remember not to run but to enjoy yourself on the path. It is all we have.
