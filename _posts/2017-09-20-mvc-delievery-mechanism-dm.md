@@ -1,7 +1,7 @@
 ---
 layout: post
 asset-type: post
-name: mvc-delievery-mechanism-domain-model
+name: mvc-delivery-mechanism-domain-model
 title: MVC, Delivery Mechanism and Domain Model
 date: 2017-09-20 01:00:00 +00:00
 author: Sandro Mancuso
@@ -74,7 +74,7 @@ In [Domain Driven Design(DDD)][16] applications are normally split into 4 layers
 * **User Interface (View in MVC)**: Also known as **Presentation Layer**, it is responsible for presenting information and capturing commands of a user or another system. 
 * **Application Layer (Controller in MVC)**: Defines the behaviours the system is supposed to provide and directs the appropriate domain objects to execute those behaviours. This layer is normally kept thin, only coordinating the behaviour of different domain objects that together form a full business feature. This layer does not have state reflecting the system situation but can hold state that reflects the progress of a business feature. 
 * **Domain Layer (Model in MVC)**: Represents concepts of the business, information about the system situation and business rules. Business state is controlled and used here but the technical details of storing it are delegated to the Infrastructure layer. In MVC terms, this is the Model.
-* **Infrastructure Layer**: Provides generic technical capabilities that support the layers above. Exampleles would be message sending to the application, persistence, drawing UI components and support the pattern of interactions between the four layers through an architectural framework. 
+* **Infrastructure Layer**: Provides generic technical capabilities that support the layers above. Examples would be message sending to the application, persistence, drawing UI components and support the pattern of interactions between the four layers through an architectural framework. 
 
 _Note: I’ll leave the discussion around Layered and Hexagonal Architecture for a different blog post. For now, let’s just focus on separating concerns and keeping our domain model isolated._ 
 
@@ -134,7 +134,7 @@ As the application grows and we want to add different delivery mechanisms, or us
 
 # Summary
 
-In MVC, Controllers are very thin classes (just a few lines) which identify the request from the user, invoke the appropriate behaviour in the Model, and invoke the appropriate View once the Model returns. Controllers might also need to do deal with code related to the delivery mechanism (HTTP response codes, JSON converters, etc) but most of it should be delegated to other classes which also live in the controller layer. Model is not only about entities (state); it’s about all the behaviour of your system - the entire Domain Model.
+In MVC, Controllers are very thin classes (just a few lines) which identify the request from the user, invoke the appropriate behaviour in the Model, and invoke the appropriate View once the Model returns. Controllers might also need to deal with code related to the delivery mechanism (HTTP response codes, JSON converters, etc) but most of it should be delegated to other classes which also live in the controller layer. Model is not only about entities (state); it’s about all the behaviour of your system - the entire Domain Model.
 
 The choice of View technology impacts on how your layers are coupled and how your application is deployed. 
 

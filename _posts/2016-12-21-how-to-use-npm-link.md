@@ -17,6 +17,8 @@ tags:
 
 ---
 
+## Why 'npm link'?
+
 If you are working on a **node** project there may come a point where your app has a dependency on another custom module 
 you have created.
 
@@ -41,7 +43,9 @@ Luckily, the node package manager (**npm**) has a way to make development with d
 The [npm documentation](https://docs.npmjs.com/cli/link) defines **npm link** as a *'means to symlink a package folder'*. Put simply, it's a means to connect your parent application to a module you have locally on your machine. 
 When you run the application, any changes you make to the dependency will be reflected in the application.
 
-#### How to 'npm link'
+___
+
+## How to 'npm link'
 
 1. In the terminal, navigate to the folder of the dependency you want to modify and run the command `npm link`. 
 This makes the component globally available to the rest of your application.
