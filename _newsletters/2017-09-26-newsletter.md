@@ -102,7 +102,7 @@ Dr. Jason Brownlee's blog is aimed at getting people up to speed and productive 
 
 ====
 
-### [Outside-In Classicist TDD with Mars Rover Exercise](https://codurance.com/publications/videos////)
+### [Outside-In Classicist TDD with Mars Rover Exercise](https://codurance.com/videos/2017-09-05-mars-rover/)
 Our co-founder, Sandro Mancuso, tackles the Mars Rover Exercise using Outside-In Classicist TDD. IDE heavy video that shows how to tackle refactoring regardless of your TDD style.
 
 ====
