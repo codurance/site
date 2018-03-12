@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/videos/screencast-intro-curing-agile-hangover-with-craftsmanship.jpg
 title: "Curing Agile Hangover with Craftsmanship"
 hidden: true
-video-url: http://player.vimeo.com/video/44243846
+video-url: https://player.vimeo.com/video/44243846
 date: 2012-06-13 10:00:00 +01:00
 ---
 

@@ -6,7 +6,7 @@ location: "Software Craftsmanship North America (SCNA) - Chicago, USA"
 image:
     src: /assets/custom/img/videos/screencast-intro-craftsmanship-a-few-years-on.jpg
 title: "Craftsmanship: A Few Years On"
-video-url: http://player.vimeo.com/video/80839608
+video-url: https://player.vimeo.com/video/80839608
 date: 2013-11-09 10:00:00 +01:00
 ---
 
