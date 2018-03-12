@@ -217,7 +217,9 @@ category: careers
                     <!-- Article -->
                     <article class="u-block-hover g-brd-around g-brd-top-none g-brd-gray-light-v4  h-100">
                         <figure class="g-overflow-hidden" style="height: 240px;">
-                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ postImgUrl }}">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ postImgUrl }}">
+                            </a>
                         </figure>
 
                         <div class="text-center g-pa-40">
