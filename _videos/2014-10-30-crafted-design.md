@@ -6,7 +6,7 @@ location: "Lean Agile, Scotland"
 image:
     src: /assets/custom/img/videos/screencast-intro-crafted-design.jpg
 title: "Crafted Design"
-video-url: http://player.vimeo.com/video/107963074
+video-url: https://player.vimeo.com/video/107963074
 date: 2014-10-30 10:00:00 +01:00
 ---
 
