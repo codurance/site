@@ -14,15 +14,6 @@
   twitter: mashooq
   github: mashooq
 
-- id: pedro
-  name: Pedro Santos
-  image: /assets/custom/img/team/pedro_santos.jpg
-  role: Software Craftsman
-  fullDescription: >
-    <p>Pedro is a software craftsman with over twenty years experience. Passionate about the web, distributed systems and mobile technology. Advocate of agile practices and the software craftsmanship movement. Has been key in bringing Software Craftsmanship practices into several organizations.</p><p>Member of developer groups such as: London Software Craftsmanship Community, NSCoders and Agile Barcelona. Frequent speaker on subjects such as: Software Craftsmanship, web and mobile solutions.</p>
-  twitter: pedromsantos
-  github: pedromsantos
-
 - id: robert
   name: Robert Firek
   image: /assets/custom/img/team/robert_firek.jpg
