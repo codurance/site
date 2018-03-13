@@ -309,16 +309,16 @@ careers:
      subtitle: Our interview process will help us to understand your breadth and depth of expertise, with tight feedback loops running throughout. We all carry different skills and areas of expertise, and encourage people at all stages of their journey's to apply.
      step_1:
       title: Telephone Interview
-      description: 30 minute call where we’ll get to know each other and to see what values we have in common. It’s a two way conversation, and we want to understand if we may be a good fit for each other. Cultural fit is to an extent, more important that technical skill and expertise at this stage.
+      description: 30 minute call where we’ll get to know each other and to see what values we have in common. At this stage, we’re more interested in your mindset and any values of principles that are important to you.
      step_2:
       title: Pair Programming
-      description: A 2-hour pair programming session, either at our offices or remotely. You’ll bring your own laptop, with choice of IDE and tooling up to you. We’ll tackle a coding kata together, and we’re more focused on how we approach the problem than the end output.
+      description: A 2-hour pair programming session at our offices (or remote). You’ll bring your own laptop, with your choice of IDE and tooling up to you. We’ll tackle a coding kata together, with more focus on your coding and software design skills.
      step_3:
       title: Final Interview
-      description: A final face-to-face interview, this stage is more conversational and will focus on macro-level design, systems architecture and other other areas that we look for in our Craftspeople. By this stage, we’ll have a better understanding of the breadth and depth of skills that you possess.
+      description: A 2-hour face to face interview, this stage is more conversational and will focus on macro-level design, systems architecture and other other areas that we look for in our Craftspeople.
      step_4:
       title: Offer
-      description: We will send you the job offer, including the details for the benefits package and the contract.
+      description: At this stage we’ll have an understanding of your breadth and depth of expertise, which in turn helps us to make an offer. We will send you the job offer, including the details for the benefits package and the contract.
      become_a_craftsman:
      title: Become a Craftsperson
      apply_title: Become a Craftsperson
