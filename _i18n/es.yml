@@ -301,8 +301,21 @@ careers:
      consultancy: Soy un practicado de los valores XP. Tengo un profundo conocimiento de varias lenguas y plataformas. Entiendo el proceso Agile a un nivel experto. Me gusta aplicarme a grandes proyectos donde puedo utilizar mi experiencia para ponerme al día de manera rápida tal que estoy en posición para proporcionar valiosos consejos. Sigo siendo un desarrollador de corazón y me encanta involucrarme en roles que se enfocan en un desarrollo más práctico. Soy un políglota, con un gran interés en la Programación Funcional. Me gusta contribuir a la comunidad de desarrollo de software a través de charlas y conferencias y escribir artículos en el Blog de Codurance.
      process_and_ux_title: Proceso y UX
      process_and_ux: Soy diseñadora de UX y administradora de productos ágiles. Disfruto en facilitar reuniones donde ayudo a los interesados ​​a comprender como diseñar bien los viajes que toman los usuarios de sus productos. A menudo actúo como propietario de un producto para un proyecto, entendiendo las necesidades de las partes interesadas, combinado con mi comprensión de los Procesos Ágiles. Tengo un gran interés en “Design Thinking” y el concepto de co-creación. Estoy constantemente aprendiendo y asistiendo regularmente en cursos de capacitación, conferencias y reuniones para obtener una comprensión más profunda de mi campo. Asesoro a personas jóvenes en mi empresa para convertirme en mejor practicante de prácticas ágiles.
-    interview_process_title: Proceso de entrevista
-    interview_process_subtitle: Nuestro proceso de entrevista nos ayudará a comprender su amplitud y profundidad de experiencia. Todos llevamos diferentes habilidades y áreas de especialización, y alentamos a las personas en todas las etapas de su viaje a aplicar.
+    hiring_process:
+     title: Proceso de entrevista
+     subtitle: Nuestro proceso de entrevista nos ayudará a comprender su amplitud y profundidad de experiencia. Todos llevamos diferentes habilidades y áreas de especialización, y alentamos a las personas en todas las etapas de su viaje a aplicar.
+     step_1:
+      title: Entrevista telefónica
+      description: Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.
+     step_2:
+      title: Programación en pareja
+      description: Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.
+     step_3:
+      title: Entrevista técnica
+      description: Charla técnica con uno de nuestros Artesanos senior y/o principal.
+     step_4:
+      title: Entrevista final
+      description: Entrevista final con los fundadores.
    become_a_craftsman:
      join_title: Unete a Codurance
      apply_title: Aplicar
