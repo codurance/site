@@ -723,12 +723,12 @@ blockquote.no-left-border {
 -----------------------------*/
 .slick-track{
   display: flex;
-
-  .slick-slide{
-      display: flex;
-      height: auto;
-  }
 }
+.slick-slide{
+    display: flex;
+    height: auto;
+}
+
 /* Events
 ------------------------------------*/
 #lssc_events h2 {
