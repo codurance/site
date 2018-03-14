@@ -1,112 +1,110 @@
-<section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="{{ page.image.src | prepend: site.baseurl }}" style="background-image: url(&quot;{{ page.image.src | prepend: site.baseurl }}&quot;);">
-  <div class="container text-center g-pos-rel g-z-index-1 g-pb-50">
-    <div class="row d-flex justify-content-center align-content-end flex-wrap g-min-height-200">
-      <div class="col-lg-7 mt-auto">
-        <div class="mb-5">
-          <h1 class="g-color-white g-font-weight-600 g-mb-30">{{ page.title }}</h1>
-          <p class="lead g-color-white-opacity-0_6">{{ page.abstract }}</p>
+<section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="{{ page.image.src | prepend: site.baseurl }}"
+    style="background-image: url(&quot;{{ page.image.src | prepend: site.baseurl }}&quot;);">
+    <div class="container text-center g-pos-rel g-z-index-1 g-pb-50">
+        <div class="row d-flex justify-content-center align-content-end flex-wrap g-min-height-300">
+            <div class="col-lg-7 mt-auto">
+                <div class="mb-5">
+                    <h1 class="g-color-white g-font-weight-600 g-mb-30">{{ page.title }}</h1>
+                    <h1 class="g-color-white g-font-weight-600 g-mb-30">{{ assets["page.image.src"].width }}</h1>
+                    <p class="lead g-color-white-opacity-0_6">{{ page.abstract }}</p>
+                </div>
+                {% if page.asset-type != "newsletter" %}
+                <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.author }}</span>
+                <span class="g-color-white-opacity-0_7 g-font-weight-700 mx-3">·</span>
+                {% endif %}
+                <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
+            </div>
         </div>
-        {% if  page.asset-type != "newsletter" %}
-        <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.author }}</span>
-        <span class="g-color-white-opacity-0_7 g-font-weight-700 mx-3">·</span>
-        {% endif %}
-        <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="container g-pt-50 g-pb-30 blog">
-  <div class="row justify-content-center">
-    <div class="col-lg-9">
-      <div class="g-mb-40">
-        {% if include.widgets contains "video_frame" %}
-        <img class="img-fluid d-block full-width">
-        <iframe style="height: 400px; width: 100%;" src="{{ page.video-url }}"></iframe>
-        </img>
-        {% endif %}
-
-        {{ content }}
-      </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <div class="g-mb-40">
+                {% if include.widgets contains "video_frame" %}
+                <img class="img-fluid d-block full-width">
+                <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url }}"></iframe>
+                </img>
+                {% endif %} {{ content }}
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <section class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-9">
-      {% if page.tags.size > 0 %}
-      <!-- Tags -->
-      <div class="g-mb-40">
-        <ul class="u-list-inline mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            {% if page.tags.size > 0 %}
+            <!-- Tags -->
+            <div class="g-mb-40">
+                <ul class="u-list-inline mb-5">
 
-          {% for tag in page.tags %}
-          <li class="list-inline-item g-mb-10">
-            <a class="u-tags-v1 g-brd-around g-brd-gray-dark-v5 g-brd-primary--hover g-color-black g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 g-rounded-50 g-py-4 g-px-15" href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}">{{ tag }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <!-- End Tags -->
-      {% endif %}
-
-      <!-- Social Icons -->
-      <div class="text-center">
-        <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-3">Share:</h3>
-        <ul class="list-inline g-mb-60">
-          <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover" href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
-              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
-              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&hashtags={{ page.tags | join: ',' }}">
-              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
-              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-google-plus--hover" href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
-              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-google-plus"></i>
-              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-google-plus"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-linkedin--hover" href="http://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&summary={{ page.abstract }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
-              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
-              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item g-mx-2">
-            <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-reddit--hover" href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
-              <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-reddit"></i>
-              <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-reddit"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- End Social Icons -->
-      {% for member in site.data.team %}
-      {% if page.author == member.name and page.asset-type != "newsletter" %}
-      <!-- Author -->
-      <div class="g-brd-top g-brd-gray-light-v3 g-pt-60 g-pb-100">
-        <div class="row justify-content-between">
-          <div class="media">
-            <img class="d-flex g-width-100 g-height-100 rounded-circle g-mr-30" src="{{ member.image  | prepend: site.baseurl }}" alt="{{ page.author }} Image">
-            <div class="media-body">
-              <h4 class="h5 g-color-black g-font-weight-600">{{ page.author | author_links}}</h4>
-              <p class="g-color-gray-dark-v5 mb-4">{{ member.fullDescription }}</p>
-              <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{ page.author | author_url }}">All author posts</a>
+                    {% for tag in page.tags %}
+                    <li class="list-inline-item g-mb-10">
+                        <a class="u-tags-v1 g-brd-around g-brd-gray-dark-v5 g-brd-primary--hover g-color-black g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                            href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}">{{ tag }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Author -->
+            <!-- End Tags -->
+            {% endif %}
 
-      {% break %}
-      {% endif %}
-      {% endfor %}
+            <!-- Social Icons -->
+            <div class="text-center">
+                <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-3">Share:</h3>
+                <ul class="list-inline g-mb-60">
+                    <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover" href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&hashtags={{ page.tags | join: ',' }}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-google-plus--hover" href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-google-plus"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-google-plus"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-linkedin--hover" href="http://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&summary={{ page.abstract }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-reddit--hover" href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-reddit"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-reddit"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Social Icons -->
+            {% for member in site.data.team %} {% if page.author == member.name and page.asset-type != "newsletter" %}
+            <!-- Author -->
+            <div class="g-brd-top g-brd-gray-light-v3 g-pt-60 g-pb-100">
+                <div class="row justify-content-between">
+                    <div class="media">
+                        <img class="d-flex g-width-100 g-height-100 rounded-circle g-mr-30" src="{{ member.image  | prepend: site.baseurl }}" alt="{{ page.author }} Image">
+                        <div class="media-body">
+                            <h4 class="h5 g-color-black g-font-weight-600">{{ page.author | author_links}}</h4>
+                            <p class="g-color-gray-dark-v5 mb-4">{{ member.fullDescription }}</p>
+                            <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{ page.author | author_url }}">All author posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Author -->
+
+            {% break %} {% endif %} {% endfor %}
+        </div>
     </div>
-  </div>
 </section>

@@ -1,13 +1,14 @@
 - id: ubs 
   name: UBS
-  image: /assets/custom/img/team/sandro_mancuso.jpg
+  image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
   website: ubs.com
   services: 
   - software_creation
   - expert_advice
 
-  -id: acuris 
+
+- id: acuris 
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
   alt-text: Acuris logo
