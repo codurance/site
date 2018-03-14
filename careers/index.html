@@ -1,202 +1,291 @@
+--- 
+layout: default 
+title: Careers 
+category: careers
 ---
-layout: default
-title: Careers
----
-
-<div class="breadcrumbs-v3 ourpeople"></div>
-
-<div class="container content">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="headline-center margin-bottom-60">
-                <h2>{% t careers-open_positions.title %}</h2>
-                <blockquote class="hero no-left-border">{% t careers-open_positions.description %}</blockquote>
-            </div>
+<!-- Heading -->
+<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_3--after" style="height: 140%; background-image: url({{ site.baseurl }}/assets/custom/img/careers/careers_hero.jpg); transform: translate3d(0px, -40.0274px, 0px);"></div>
+    <div class="container g-color-white text-center g-py-120">
+        <div class="u-heading-v2-6--bottom g-brd-primary g-mb-40">
+            <h2 class="text-uppercase u-heading-v2__title g-mb-10">{% t careers.title %}</h2>
+            <h4 class="g-font-weight-200">{% t careers-open_positions.description %}</h4>
+        </div>
+        <div class="text-center">
+            <a href="#our_roles" class="btn btn-md u-btn-primary text-uppercase g-mr-10 g-mb-15">{% t careers.our_roles_title %}</a>
         </div>
     </div>
+</section>
+<!-- End Heading -->
+<!-- About Us -->
+<section class="g-bg-gray-light-v5 g-py-50">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{%t careers.about_us.title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+        </div>
         <div class="row">
-          <div class="col-lg-6 g-mb-60">
-            <!-- Icon Blocks -->
-            <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-px-30 g-pb-20 h-100">
-              <span class="u-icon-v3 g-color-white g-bg-orange g-pull-50x-up ">
-                <i class="icon-diamond u-line-icon-pro"></i>
-              </span>
-              <h3 class="h5 g-color-black g-mb-10">{% t careers-become_a_craftsman.title %}</h3>
-              <p class="g-color-gray-dark-v4 g-mb-20">{% t careers-become_a_craftsman.description %}</p>
-                <a href="{{ '/careers/become_a_craftsman' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more">{% t careers-become_a_craftsman.more_info %}</a>
-            </div>
-            <!-- End Icon Blocks -->
-          </div>
+            <div class="col-md-6 col-xl-3 g-mb-30">
+                <!-- Article -->
+                <article class="u-block-hover u-bg-overlay g-color-white g-bg-black-opacity-0_1--after text-center g-rounded-3">
+                    <!-- Article Image -->
+                    <img class="w-100 u-block-hover__main--zoom-v1" src="{{ site.baseurl }}/assets/custom/img/careers/Orange_Image.svg" alt="Image Description">
+                    <!-- End Article Image -->
 
-          <div class="col-lg-6 g-mb-60">
-            <!-- Icon Blocks -->
-            <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-px-30 g-pb-20 h-100">
-              <span class="u-icon-v3 g-color-white g-bg-orange g-pull-50x-up ">
-                <i class="icon-graduation u-line-icon-pro"></i>
-              </span>
-              <h3 class="h5 g-color-black g-mb-10">{% t careers-become_an_apprentice.title %}</h3>
-              <p class="g-color-gray-dark-v4 g-mb-20">{% t careers-become_an_apprentice.description %}<br/></p>
-              
-                <a href="{{ '/careers/become_an_apprentice' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more">{% t careers-become_an_apprentice.more_info %}</a>
+                    <!-- Article Content -->
+                    <div class="u-block-hover__additional g-flex-middle g-z-index-2 g-ma-20">
+                        <div class="align-self-baseline w-100">
+                            <h3 class="h4 d-inline-block">{%t careers.about_us.culture_title %} </h3>
+                        </div>
+                        <div class="g-flex-middle-item">
+                            <span class="d-block g-color-white-opacity-0_9">{%t careers.about_us.culture_description %}</span>
+                        </div>
+                    </div>
+                    <!-- End Article Content -->
+                </article>
+                <!-- End Article -->
             </div>
-            <!-- End Icon Blocks -->
-          </div>
+
+            <div class="col-md-6 col-xl-3 g-mb-30">
+              <!-- Article -->
+                <article class="u-block-hover u-bg-overlay g-color-white g-bg-black-opacity-0_1--after text-center g-rounded-3">
+                    <!-- Article Image -->
+                    <img class="w-100 u-block-hover__main--zoom-v1" src="{{ site.baseurl }}/assets/custom/img/careers/Red_Image.svg" alt="Image Description">
+                    <!-- End Article Image -->
+
+                    <!-- Article Content -->
+                    <div class="u-block-hover__additional g-flex-middle g-z-index-2 g-ma-20">
+                        <div class="align-self-baseline w-100">
+                            <h3 class="h4 d-inline-block">{%t careers.about_us.transparency_title %} </h3>
+                        </div>
+                        <div class="g-flex-middle-item">
+                            <span class="d-block g-color-white-opacity-0_9">{%t careers.about_us.transparency_description %}</span>
+                        </div>
+                    </div>
+                    <!-- End Article Content -->
+                </article>
+                <!-- End Article -->
+            </div>
+
+            <div class="col-md-6 col-xl-3 g-mb-30">
+                  <!-- Article -->
+                <article class="u-block-hover u-bg-overlay g-color-white g-bg-black-opacity-0_1--after text-center g-rounded-3">
+                    <!-- Article Image -->
+                    <img class="w-100 u-block-hover__main--zoom-v1" src="{{ site.baseurl }}/assets/custom/img/careers/Yellow_Image.svg" alt="Image Description">
+                    <!-- End Article Image -->
+
+                    <!-- Article Content -->
+                    <div class="u-block-hover__additional g-flex-middle g-z-index-2 g-ma-20">
+                        <div class="align-self-baseline w-100">
+                            <h3 class="h4 d-inline-block">{%t careers.about_us.autonomy_title %} </h3>
+                        </div>
+                        <div class="g-flex-middle-item">
+                            <span class="d-block g-color-white-opacity-0_9">{%t careers.about_us.autonomy_description %}</span>
+                        </div>
+                    </div>
+                    <!-- End Article Content -->
+                </article>
+                <!-- End Article -->
+            </div>
+
+            <div class="col-md-6 col-xl-3 g-mb-30">
+                  <!-- Article -->
+                <article class="u-block-hover u-bg-overlay g-color-white g-bg-black-opacity-0_1--after text-center g-rounded-3">
+                    <!-- Article Image -->
+                    <img class="w-100 u-block-hover__main--zoom-v1" src="{{ site.baseurl }}/assets/custom/img/careers/GreyScale_Image.svg" alt="Image Description">
+                    <!-- End Article Image -->
+
+                    <!-- Article Content -->
+                    <div class="u-block-hover__additional g-flex-middle g-z-index-2 g-ma-20">
+                        <div class="align-self-baseline w-100">
+                            <h3 class="h4 d-inline-block">{%t careers.about_us.software_craftsmanship_title %} </h3>
+                        </div>
+                        <div class="g-flex-middle-item">
+                            <span class="d-block g-color-white-opacity-0_9">{%t careers.about_us.software_craftsmanship_description %}</span>
+                        </div>
+                    </div>
+                    <!-- End Article Content -->
+                </article>
+                <!-- End Article -->
+            </div>
+    </div>
+</section>
+<!-- End About Us -->
+<!-- About You -->
+<section>
+    <div class="container g-py-50">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{%t careers.become_a_craftsperson.about_you_title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v22 g-bg-secondary rounded g-pa-30 h-100">
+                    <h3 class="h5 g-color-black mb-20">{%t careers.attitude_title %}</h3>
+                    <p class="g-color-gray-dark-v4">{%t careers.attitude_description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="heading heading-v4 margin-bottom-20">
-                <h2>{% t careers-hiring_process.title %}</h2>
-                {% t careers-hiring_process.description %}
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v22 g-bg-secondary rounded g-pa-30 h-100">
+                    <h3 class="h5 g-color-black mb-20">{%t careers.experience_title %}</h3>
+                    <p class="g-color-gray-dark-v4">{%t careers.experience_description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v22 g-bg-secondary rounded g-pa-30 h-100">
+                    <h3 class="h5 g-color-black mb-20">{%t careers.drive_title %}</h3>
+                    <p class="g-color-gray-dark-v4">{%t careers.drive_description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
             </div>
         </div>
     </div>
-    <ul class="row u-timeline-v2-wrap list-unstyled">
-        <li class="col-md-12 g-mb-40">
-          <div class="row">
-            <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
-                <h4 class="h5">Phase 1</h4>
+    <div id="our_roles"></div>
+</section>
+<!-- End About You -->
+<!-- Our Roles --> 
+<section class="g-bg-gray-light-v5 g-py-50">
+    <div class="container">
+        <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.our_roles_title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+        </div>
+        <!-- Banners -->
+        <div class="row align-items-stretch">
+            <div class="col-md-7 g-mb-30">
+                <!-- Article -->
+                <article class="h-100 text-center info-v3-2 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_2--after g-color-white text-uppercase g-py-210 g-px-30" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/temp2.jpg">
+                    <div class="flex-align-baseline g-pos-rel g-z-index-2">
+                        <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">{% t careers.software_craftspeople_title %}</h3>
+                    </div>    
+                    <div class="g-flex-middle-item g-pos-rel g-z-index-2">
+                        <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">{%t careers.software_craftspeople_description %}</em>
+                    </div>
+                    <div class="flex-align-bottom g-pos-rel g-z-index-2">
+                        <a class="btn btn-md u-btn-primary text-uppercase" href="{{ site.baseurl }}/careers/become_a_craftsperson">{% t careers.learn_more %}</a>
+                    </div>                    
+                </article>
+                <!-- End Article -->
             </div>
-            <div class="g-max-width-600 col-md-9 g-orientation-left g-pl-40--md">
-              <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
-                <i class="d-block g-width-18 g-height-18 g-bg-orange g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
-              </div>
-              <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
-                <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
-                </div>
-                <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
-                </div>
-                <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
-                  <h3 class="g-font-weight-300">{% t careers-hiring_process.step_1.title %}</h3>
-                </header>
-                <div class="row">
-                  <div class="col-md-12 g-mb-20 g-mb-0--md">
-                        {% t careers-hiring_process.step_1.description %}
-                </div>
-                </div>
-              </article>
+
+            <div class="col-md-5 g-mb-30">
+                <!-- Article -->
+                <article class="h-100 text-center info-v3-2 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_2--after g-color-white text-uppercase g-py-210 g-px-30" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/temp1.jpg">
+                    <div class="flex-align-baseline g-pos-rel g-z-index-2">
+                        <h3 class="g-font-weight-700 g-letter-spacing-3 g-mb-20">{%t careers.apprentices_title %}</h3>
+                    <div>                    
+                    <div class="g-flex-middle-item g-pos-rel g-z-index-2">
+                        <em class="d-block g-letter-spacing-3 g-font-weight-300 g-font-style-normal g-mb-40">{%t careers.apprentices_description %}</em>
+                    </div>
+                    <div class="flex-align-bottom g-pos-rel g-z-index-2">
+                        <a class="btn btn-md u-btn-primary text-uppercase" href="{{ site.baseurl }}/careers/become_an_apprentice">{% t careers.learn_more %}</a>
+                    </div>                
+                </article>
+                <!-- End Article -->
             </div>
-          </div>
-        </li>
-        <li class="col-md-12 g-mb-40">
-          <div class="row">
-            <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
-                    <h4 class="h5">Phase 2</h4>
-                    <h5 class="h6">Optional</h5>
+        </div>
+        <!-- End Banners -->
+    </div>
+</section>
+<!-- End Our Roles --> 
+<!-- Life at Codurance -->
+<section id ="publications" class="g-py-50">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.life_at_codurance_title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+            <p class="lead mb-0">{% t careers.life_at_codurance_subtitle %}</p>
+        </div>
+        <div class="row mx-0">
+            {% for post in site.categories[page.category] limit: 3 %}
+                {% if post.image.src and post.image.src contains '://' %} 
+                    {% assign postImgUrl = post.image.src %} 
+                {% elsif post.image.src%} 
+                    {% assign postImgUrl = post.image.src | prepend: site.baseurl %} 
+                {% else %} 
+                    {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %} 
+                {% endif %}
+                <div class="col-lg-4 px-0 g-mb-30">
+                    <!-- Article -->
+                    <article class="u-block-hover g-brd-around g-brd-top-none g-brd-gray-light-v4  h-100">
+                        <figure class="g-overflow-hidden" style="height: 240px;">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{ postImgUrl }}">
+                            </a>
+                        </figure>
+
+                        <div class="text-center g-pa-40">
+                            <h3 class="h4 text-uppercase g-font-weight-600 g-mb-10">
+                            <a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </h3>
+                            <a class="text-uppercase g-font-weight-600 g-font-size-12" href="#{{ post.url | prepend: site.baseurl }}">Read More</a>
+                        </div>
+                    </article>
+                    <!-- End Article -->
+                </div>
+            {% endfor %}
             </div>
-            <div class="g-max-width-600 col-md-9 g-orientation-left g-pl-40--md">
-              <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
-                <i class="d-block g-width-18 g-height-18 g-bg-orange g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
-              </div>
-              <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
-                <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
-                </div>
-                <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
-                </div>
-                <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
-                  <h3 class="g-font-weight-300">{% t careers-hiring_process.step_2.title %}</h3>
-                </header>
-                <div class="row">
-                  <div class="col-md-12 g-mb-20 g-mb-0--md">
-                        {% t careers-hiring_process.step_2.description %}
-                </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </li>
-        <li class="col-md-12 g-mb-40">
-          <div class="row">
-            <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
-                    <h4 class="h5">Phase 3</h4>
-            </div>
-            <div class="g-max-width-600 col-md-9 g-orientation-left g-pl-40--md">
-              <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
-                <i class="d-block g-width-18 g-height-18 g-bg-orange g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
-              </div>
-              <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
-                <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
-                </div>
-                <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
-                </div>
-                <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
-                  <h3 class="g-font-weight-300">{% t careers-hiring_process.step_3.title %}</h3>
-                </header>
-                <div class="row">
-                  <div class="col-md-12 g-mb-20 g-mb-0--md">
-                        {% t careers-hiring_process.step_3.description %}
-                </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </li>
-        <li class="col-md-12 g-mb-40">
-          <div class="row">
-            <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
-                    <h4 class="h5">Phase 4</h4>
-            </div>
-            <div class="g-max-width-600 col-md-9 g-orientation-left g-pl-40--md">
-              <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
-                <i class="d-block g-width-18 g-height-18 g-bg-orange g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
-              </div>
-              <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
-                <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
-                </div>
-                <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
-                </div>
-                <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
-                  <h3 class="g-font-weight-300">{% t careers-hiring_process.step_4.title %}</h3>
-                </header>
-                <div class="row">
-                  <div class="col-md-12 g-mb-20 g-mb-0--md">
-                        {% t careers-hiring_process.step_4.description %}
-                </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </li>
-        <li class="col-md-12 g-mb-40">
-          <div class="row">
-            <div class="col-md-3 text-md-right g-pt-20--md g-pr-40--md g-mb-20">
-                    <h4 class="h5">Phase 5</h4>
-            </div>
-            <div class="g-max-width-600 col-md-9 g-orientation-left g-pl-40--md">
-              <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
-                <i class="d-block g-width-18 g-height-18 g-bg-orange g-brd-around g-brd-3 g-brd-gray-light-v5 rounded-circle"></i>
-              </div>
-              <article class="g-pos-rel g-bg-gray-light-v5 g-pa-30">
-                <div class="g-hidden-sm-down u-triangle-inclusive-v1--right g-top-30 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--right__back g-brd-gray-light-v5-right"></div>
-                </div>
-                <div class="g-hidden-md-up u-triangle-inclusive-v1--top g-left-20 g-z-index-2">
-                  <div class="u-triangle-inclusive-v1--top__back g-brd-gray-light-v5-bottom"></div>
-                </div>
-                <header class="g-brd-bottom g-brd-gray-light-v4 g-pb-10 g-mb-25">
-                  <h3 class="g-font-weight-300">{% t careers-hiring_process.step_5.title %}</h3>
-                </header>
-                <div class="row">
-                  <div class="col-md-12 g-mb-20 g-mb-0--md">
-                        {% t careers-hiring_process.step_5.description %}
-                </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </li>
-    </ul>
-    <div class="row">
-        <div class="col-md-12">
-            {% t careers-hiring_process.additional_information %}
         </div>
     </div>
-</div>
+</section>
+<!-- End Life at Codurance -->
+<!-- Contact Us--> 
+<section class="g-bg-gray-light-v5 g-py-50">
+    <div class="g-mb-50">
+        <div class="g-pos-rel">
+            <div class="container text-center ">
+                <div class="text-center mb-4">
+                    <h2 class="h3 text-uppercase mb-3">{% t careers.contact_us_title %}</h2>
+                    <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+                    <p class="lead mb-0">{% t careers.contact_us_subtitle %}</p>
+                </div>
+                <a class="btn btn-md u-btn-primary text-uppercase" href="#modal6" data-modal-target="#modal6" data-modal-effect="blur">Contact Us</a>
+            </div>
+        </div>
+    </div>
+<section>
+<section>
+    <div id="modal6" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>         
+        <!-- Business Hours -->
+        <h4>{% t company-contact-form.title %}</h4>
+        <p>{% t company-contact-form.offices_introduction %}:
+            <ul>
+            <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
+            <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
+            </ul>
+        </p>
+        <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
+        <form action="https://formspree.io/hello@codurance.com" method="POST">
+            <input type="hidden" name="_next" value="/aboutus/thanks"/>
+            <input type="hidden" name="_subject" value="Codurance Contact"/>
+            <div class="col-sm-12">
+                <div class="input-group margin-bottom-10">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <textarea rows="8" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
+                <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End Contact Us --> 

@@ -256,20 +256,66 @@ events-lscc:
 careers:    
    title: Trabaja con nosotros
    email: join-us@codurance.es
-   our_people: 
-       title: Nuestras Personas
-       description: Nuestras personas nos definen. Aprenda más sobre la vida de nuestros aprendices y craftspeople.
-   culture:
-       title: Nuestra Cultura
-       structure:
-          title: Estructura
-          description: No hay jerarquías o managers en nuestra empresa. Damos más importancia a la colaboración y el reconocimiento entre nosotros que en títulos. Nos organizamos para tomar decisiones, utilizando 'Initiative Circles' para mejorar nuestra empresa y proyectos. Nuestro cofundador, Sandro Mancuso, profundiza en este concepto en el video "Teal Organisations”.
-       transparency:
-          title: Transparencia
-          description: En nuestra compañía valoramos la transparencia. . Como no tenemos managers, creemos que toda la información debería estar disponible para todos. Confiamos en que nuestra gente, dada esta información, puede contribuir a la manera en que nuestra compañía crece. Por lo tanto, cada persona dentro de Codurance tiene acceso completo a las finanzas de la compañía y a todos los salarios. Utilizamos Trello y Slack para estar al día del progreso de nuestros ‘Initiative Circles’, cómo se desarrollan nuestros proyectos, y de qué decisiones tenemos que tomar como negocio.
-       continuous_learning:
-          title: Aprendizaje Continuo
-          description: Valoramos el aprendizaje y la práctica continua. Organizamos reuniones internas la mayoría de las tardes durante la semana, cubriendo cualquier tema desde Category Theory y programación funcional hasta ayudarnos a aprender tecnologías e idiomas específicos como Kotlin y Rust. Cada dos semanas, nos reunimos para nuestros “Evening Catchups”, donde realizamos ‘lightning talks’ y discusiones en grupo mientras cenamos juntos. Una vez al mes, organizamos nuestro ‘Codurance Open Space’, donde nos reunimos (independientemente de nuestros proyectos) para llevar a cabo un día de ‘unconference’ en nuestras oficinas. Realizamos muchas más actividades, y nos encantaría que aportaras tus propias ideas mientras crecemos juntos.     
+   learn_more: Aprende más  
+   attitude_title: Actitud
+   attitude_description: Buscamos personas que tengan una gran actitud de aprendizaje y un verdadero amor por las habilidades requeridas de un desarrollo de software profesional. Ofrecemos un ambiente vibrante donde crecerás como profesional. Estamos orgullosos de nuestra cultura de aprendizaje. Somos una comunidad de profesionales donde nos ayudamos y apoyamos mutuamente.
+   experience_title: Experiencia
+   experience_description: Las habilidades en XP son muy importantes para nosotros. Esperamos que sea competente en Desarrollo impulsado por prueba, Programación por pares, Diseño simple e Integración continua. Tendrá un buen aprecio por Clean Code. Trabajamos en entornos Agile, por lo que esperamos que el candidato exitoso pueda trabajar de manera efectiva en dicho entorno.
+   drive_title: Aprendizaje Deliberado
+   drive_description: Para nosotros nuestra ocupación es más que solo un trabajo. Aplicamos prácticas de aprendizaje deliberadas para adquirir nuevas habilidades y profundizar nuestra experiencia existente. Hacemos esto por orgullo profesional, esforzándonos constantemente por mejorar. Estamos buscando personas que compartan nuestro deseo de mejorar continuamente, aprender y ser mentores de quienes los rodean.
+   our_roles_title: Nuestros Roles
+   software_craftspeople_title: Software Craftspeople
+   software_craftspeople_description: Nuestros Craftspeople tienen una amplitud de habilidades y diversas profundidades de experiencia. Aprenda más sobre lo que significa ser un Craftsperson.
+   apprentices_title: Aprendices
+   apprentices_description: Un programa intensivo de aprendizaje de 3 meses que le proporcionará las habilidades necesarias para convertirse en un Artesano productivo. Aprenda más sobre el programa aquí.
+   contact_us_title: Tienes mas preguntas?
+   contact_us_subtitle: Si desea obtener más información sobre Codurance antes de aplicar, siéntase libre de enviarnos un mensaje aquí. Responderemos a sus preguntas pero respetaremos su privacidad. Una vez que esté listo para presentar una aplicación, podremos hablar más.
+   life_at_codurance_title: Vida en Codurance
+   life_at_codurance_subtitle: Todos en Codurance aplicamos prácticas deliberadas para el aprendizaje, y compartimos nuestras experiencias con las comunidades externas de muchas maneras. Aquí hay algunos ejemplos de cómo nos gusta contribuir a la comunidad de desarrollo.
+   about_us:
+    title: Sobre Nosotros
+    culture_title: Cultura de aprendizaje
+    culture_description: Dedicamos nuestro tiempo al aprendizaje continuo. Tenemos un fuerte deseo de adquirir nuevas habilidades y fortalecer nuestra experiencia existente. Todos estamos en diferentes etapas de nuestras carreras, y como tal, buscamos apoyar, aprender y colaborar juntos.
+    transparency_title: Transparencia
+    transparency_description: La transparencia es uno de nuestros valores clave. Cada persona dentro de Codurance tiene acceso completo a las finanzas de la compañía y a todos los salarios. Creemos que para tener conversaciones significativas, todos deben tener acceso a la misma información.
+    autonomy_title: Autonomia
+    autonomy_description: No hay jerarquías o managers en nuestra empresa. Cualquier grupo pequeño de personas que sientan pasión por un tema o quieran cambiar la forma en que se hacen las cosas en la empresa puede comenzar una Iniciativa, con el cometido completo de ver esto desde la Ideación hasta la Entrega.
+    software_craftsmanship_title: Craftsmanship
+    software_craftsmanship_description: Software Craftsmanship esta al corazón de nuestra compañía. Como profesionales, tomamos orgullo en la calidad de nuestro trabajo. Equilibrado con un sentido constante de pragmatismo, aspiramos a ofrecer continuamente software bien diseñado a nuestros clientes.
+   become_a_craftsperson:
+    title: Software Craftsperson
+    what_we_look_for: Buscamos Software Craftpeople con quienes compartimos los mismos valores del pragmatismo, profesionalismo y transparencia. Trabajando exclusivamente en Londres y Barcelona(No nos gusta viajar muy lejos), soportamos a nuestros clientes en variedad de maneras y tendrás la oportunidad de trabajar en en una amplitud de proyectos internos o con clientes.
+    projects_title: Projectos que apoyaras
+    projects_description: Tal vez trabajaras en un proyecto interno para nuestros clientes con nuestro enfoque de entrega de equipo. Esto puede ser un proyecto nuevo para un Startup, o ayudar a construir un sistema de misión crítica para un cliente de una gran empresa. Tal vez trabaje como un ‘Embedded Craftsman’, trabajando dentro del desarrollo existente de nuestro cliente para ayudarlo a mejorar al escribir su propio software. O tal vez esté más interesado en ayudar a presentar los valores de la artesanía a una organización a través del asesoramiento y la tutoría.
+    about_you_title: Sobre Usted
+    personas:
+     heading: Perfil de un Software Craftsperson
+     subtitle: Nuestros Craftpeople tienen una gran variedad de experiencias y habilidades, y profundidad en una o mas áreas. El viaje de cada Craftsperson es único y se unen a nosotros en diferentes etapas de sus carreras.
+     coding_title: Coding 
+     coding: Test Driven Development is second nature to us, our people are at different levels on the journey towards competence. For some, it is a case of small steps towards an emerging design, others feel comfortable in taking larger leaps during their TDD lifecycle. We all keep good design principles, such as SOLID, in mind while we develop software, however as our experience grows, we look wider and go to first principles such as simplicity and coupling and cohesion to a point where we have an intuitive understanding. We love to pair program and see it as an opportunity to learn from each other. We are proficient with at least one language and pride ourselves in our fluency with our chosen development environment. As our seniority grows we delve deeper into software design and take an active interest in subjects like Domain Driven Design, Architectural Patterns, Security and other more wholistic characteristic of the software product.
+     automation_and_ops_title: Automation & Operations
+     automation_and_ops: We are automators. Although our craftspeople range in their automation skills, all of us aspire to become skilled in crafting effective continuous delivery pipelines and systems that are easy to operate in production. We aspire to a DevOps culture. Most of us are skilled, to a good level, on the coding side and consider infrastructure as code as an important skillset. We enjoy working with cloud offerings such as Amazon Web Service, Microsoft Azure, and Google Cloud Platform. We find technologies such as Docker, Kubernetes, Terraform, Puppet, etc. to be extremely valuable to achieving effective delivery pipelines and reliable platforms. We refrain from our engineering but at the same time aspire to use the modern technologies to increase, among other, efficiency, productivity, and reliability of our software development process and software product.
+     architecture_title: Architecture
+     architecture: Our more junior people have a good awareness of architectural patterns. This awareness grows to a solid expertise among our more senior people. We know that there is no silver bullet when it comes to architectures and keep a keen interest in all flavours, not just the most popular at a particular time. We all have a practical understanding of modern architectural patterns such as Hexagonal, Microservices, Event Sourcing and CQRS. We believe architecture needs to evolve as the product evolves. We appreciate the value of fast running tests at different levels to achieve different objectives. For us Test Driven Development doesn't start and stop at unit tests. We have used different levels of testing and understand their pros and cons. Our understanding of architecture and development process grows as our experience grows. Our interest in technologies, frameworks, and cloud platforms allow us to provide the right platform for the target architecture.
+     consultancy_title: Consultancy 
+     consultancy: Our senior craftspeople are expert consultants. We start developing the associated, hard to master, skills from the beginning by creating many opportunities where our more junior people can practice in safe and supportive environments. Our senior craftspeople are skilled trainers, mentors, facilitators, advisors, experts, and leaders. They help our clients at all levels of the software development effort, ranging from advising on product management to coaching individuals on how to test drive code. Our ability to operate at this wide range helps us provide highly effective consultancy to our clients. We are always training our less senior people on the job and off the job to become the next generation of leaders and advisors. We also understand that not everyone likes to operate in this area and provide opportunities for people to grow in areas that they find more interesting and a natural fit.
+     process_and_ux_title: Process & UX
+     process_and_ux: Although majority of our people are software developers, we understand that an effective software development teams is much more than that. We believe that everyone should have the "T" shape where they have an awareness of a wide breath of skills and expertise in a narrower set. Our UX designers, Business Analysts and Agile Product Managers specialise in product development. They may start more specific such as UX designer, Business Analyst but over time gain expertise in other complimentary skills relating to product development. They are good facilitators and see the value of bring the whole-team together on the journey. Our more senior craftspeople often act as a product owners for our clients, understanding the needs of stakeholders, combined with a deep understanding of Agile Processes. We value concepts such as Design Thinking and Co-creation. We are constantly learning and regularly attend training courses, conferences, and meet-ups to gain a deeper understanding this field.
+    hiring_process:
+     title: Proceso de entrevista
+     subtitle: Nuestro proceso de entrevista nos ayudará a comprender su amplitud y profundidad de experiencia. Todos llevamos diferentes habilidades y áreas de especialización, y alentamos a las personas en todas las etapas de su viaje a aplicar.
+     step_1:
+      title: Entrevista telefónica
+      description: Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.
+     step_2:
+      title: Programación en pareja
+      description: Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.
+     step_3:
+      title: Entrevista técnica
+      description: Charla técnica con uno de nuestros Artesanos senior y/o principal.
+     step_4:
+      title: Entrevista final
+      description: Entrevista final con los fundadores.
    become_a_craftsman:
      join_title: Unete a Codurance
      apply_title: Aplicar
@@ -286,29 +332,31 @@ careers:
      hiring_title: Hiring process
      hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
    benefits:
-     title: What you'll get
-     description: Our product is our people. We firmly belive that your job and associated benefits should allow you to flourish both personally and professionally. 
-     learning_title: Learning and Development
-     conf_title: Conferences
-     conf_description: 5 days of conference budget per year, including T&L and tickets, covered by us. We’ll pay for you as well, so need need to use holiday days.
-     training_title: Training 
-     training_description: Unlimited training budget! So long as the course is relevant for the company and you'll do a lightening talk on the subject, we’re happy to pay for it.
-     books_title: Books
-     books_description: Found something interesting to read that doesn’t already live in our office or digital library? We’ll cover book expenses - and ask to read it after you as well!.
-     culture_title: Culture
-     experts_title: Internal Community of Experts
-     experts_description: Whether at client projects, our intenal and external events, you’ll be working alongside Craftsperson that share your passion for learning.
-     transparency_title: Transparency
-     transparency_description: All of our salaries and finances are available to everyone from day one. Nothing to hide here.  
-     autonomy_title: Autonomy
-     autonomy_description: Got an idea? Form a circle, take ownership, run with it and deliver it.
-     lifestyle_title: Lifestyle
-     holidays_title: Holidays
-     holidays_description: Pretty standard stuff. 28 days per year.
-     pensions_title: Pensions & Income Protection
-     pensions_description: All covered, as standard. Incidentally, many of these came from Initiatve Circles in our early days (see above).
-     life_cover_title: Life Cover & Private Medical
-     life_cover_description: Lumpsum payment for life cover, and Dental cashback scheme for you and your children.
+     title: Beneficios
+     description: Nuestro producto es nuestra gente. Creemos firmemente que su trabajo y los beneficios asociados deben permitirle prosperar de manera personal y profesional.
+     learning_title: Aprendizaje y Desarollo
+     conf_title: Conferencias
+     conf_description: 5 días de conferencia por año, incluyendo transporte, habitación y boletos cubierto por nosotros. Pagaremos por usted también así que no hay necesidad de utilizar días de vacaciones. 
+     training_title: Entrenamiento
+     training_description: ¡Presupuesto de entrenamiento sin limite! Siempre que el curso tenga relevancia para la empresa y usted haga una aclaración sobre el tema, nos complace pagarlo.
+     books_title: Libros
+     books_description: ¿Encontró algo interesante para leer que aún no se encuentra en nuestra oficina o biblioteca digital? Cubriremos los gastos del libro, ¡y le pediremos leerlo después de usted también!
+     culture_title: Cultura
+     experts_title: Comunidad interna de expertos
+     experts_description: Ya sea en proyectos de clientes, nuestros eventos internos o externos, trabajarás junto a Craftsperson’s para compartir su pasión por el aprendizaje.
+     transparency_title: Transparencia
+     transparency_description: Todos nuestros salarios y finanzas están disponibles para todos desde el primer día. Nada que ocultar aquí.  
+     autonomy_title: Autonomía 
+     autonomy_description: ¿Tienes algún idea? Forme un “Initiative Circle”, tome posesión, corra con él y entréguelo.
+     lifestyle_title: Estilo de vida
+     holidays_title: Vacaciones
+     holidays_description: 22 Dias Laborales al año.
+     pensions_title: Bienestar
+     pensions_description: Todos nuestros empleados obtienen membresía de gimnasio con descuento
+     pensions_icon: icon-sport-010 u-line-icon-pro
+     life_cover_title: Viernes en la oficina
+     life_cover_description: Todos los viernes trabajamos desde la oficina en lugar de los sitios de los clientes
+     life_cover_icon: icon-education-153 u-line-icon-pro
      mentor_title: Mentor
      mentor_description: You will choose a mentor, who will guide you through your apprenticeship
    become_an_apprentice:
@@ -372,37 +420,37 @@ careers-join-how_to_apply:
         <p>Un CV actualizado es siempre de ayuda. También queremos que nos envíes tus enlaces a blogs, repositorios de código y cualquier otro recurso que nos ayude a comprender tu lado profesional.</p>
 careers-open_positions:
    title: Te gusta escribir software bien hecho, ¡a nosotros también!  
-   description: <p>Estamos buscando gente que, como nosotros, comparta los valores de la Artesanía del Software. Tanto si eres un Artesano del software con experiencia como si eres un Aprendiz, nos gustaría conocerte.</p>
+   description: Estamos buscando gente que, como nosotros, comparta los valores de la Artesanía del Software. Tanto si eres un Artesano del software con experiencia como si eres un Aprendiz, nos gustaría conocerte.
 careers-become_a_craftsman:
    title: Conviértete en Artesano de Software 
-   description: <p>Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.</p>
+   description: Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.
    link_title: Aplicar 
    apply_title: Estoy interesado
    more_info: Lee la descripción completa
 careers-become_an_apprentice:
    title: Conviértete en Aprendiz
-   description: <p>Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.</p>
+   description: Aspiras a convertirte en un Artesano de Software, estás listo para emprender tu viaje de aprendizaje bajo la guía de tu mentor.
    link_title: Aplicar
    more_info: Lee la descripción completa
 careers-hiring_process:
    title: Proceso de contratación 
-   description: <p>Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato:</p>
+   description: Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato&#58;
    step_1:
      title: Entrevista telefónica
-     description: <p>Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.</p>
+     description: Entrevista telefónica de 30-45 minutos donde tratamos de entender tu perfil a rasgos generales, y también te explicamos las cosas importantes que consideramos que deberías conocer antes de decidir si continúas con el proceso.
    step_2:
      title: Ejercicio de programación
-     description:  <p>Verificación de habilidades de programación. Si consideramos que las habilidades de programación (principalmente TDD y diseño de software) que has demostrado durante la entrevista telefónica no coinciden con nuestras expectativas, te pediremos que hagas un ejercicio de programación y que nos lo envíes una vez lo hayas terminado (no hay un tiempo límite para completar el ejercicio). Nosotros lo revisaremos y te daremos nuestra opinión (es una promesa).</p>
+     description:  Verificación de habilidades de programación. Si consideramos que las habilidades de programación (principalmente TDD y diseño de software) que has demostrado durante la entrevista telefónica no coinciden con nuestras expectativas, te pediremos que hagas un ejercicio de programación y que nos lo envíes una vez lo hayas terminado (no hay un tiempo límite para completar el ejercicio). Nosotros lo revisaremos y te daremos nuestra opinión (es una promesa).
    step_3:
      title: Programación en pareja
-     description: <p>Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.</p>
+     description: Un ejercicio de programación en pareja que puedes hacer en nuestras oficinas o en remoto. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.
    step_4:
      title: Entrevista técnica
-     description: <p>Charla técnica con uno de nuestros Artesanos senior y/o principal. </p>
+     description: Charla técnica con uno de nuestros Artesanos senior y/o principal.
    step_5:
      title: Entrevista final
-     description: <p>Entrevista final con los fundadores.</p>
-   additional_information: <p>Dependiendo de cuánto conozcamos a cada candidato, podemos cambiar el orden de los pasos o saltarnos algunos de ellos. Los únicos dos pasos que siempre forman parte de todo proceso de selección son la programación en pareja con uno o más Artesanos y la entrevista final con los fundadores.</p>
+     description: Entrevista final con los fundadores.
+   additional_information: Dependiendo de cuánto conozcamos a cada candidato, podemos cambiar el orden de los pasos o saltarnos algunos de ellos. Los únicos dos pasos que siempre forman parte de todo proceso de selección son la programación en pareja con uno o más Artesanos y la entrevista final con los fundadores.
 partners-jetbrains-partnership:
    title: JetBrains & Codurance
    subtitle: Estamos muy orgullosos de anunciar que Codurance es <strong>socio oficial de JetBrains.</strong>

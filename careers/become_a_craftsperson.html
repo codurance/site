@@ -1,0 +1,408 @@
+--- 
+layout: default 
+title: Become a Craftsperson 
+---
+
+<!-- Heading -->
+<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_3--after" style="height: 140%; background-image: url({{ site.baseurl }}/assets/custom/img/careers/careers_hero.jpg); transform: translate3d(0px, -40.0274px, 0px);"></div>
+    <div class="container g-color-white text-center g-py-90">
+        <div class="u-heading-v2-6--bottom g-brd-primary g-mb-40">
+            <h2 class="text-uppercase u-heading-v2__title g-mb-10">{% t careers.become_a_craftsperson.title %}</h2>
+            <h4 class="g-font-weight-200">{% t careers.become_a_craftsperson.what_we_look_for %}</h4>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-md u-btn-primary text-uppercase g-mr-10 g-mb-15" data-modal-target="#craftsman-form" href="#craftsman-form">Apply Now</a>
+            {% include apply_form.html title = "Become a Craftsperson" target = "craftsman" %}
+        </div>
+    </div>
+</section>
+<!-- End Heading -->
+<!-- Begin Craftsperson Persona Carousel --> 
+<section class="g-py-50">
+    <div class="container g-pos-rel">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.become_a_craftsperson.personas.heading %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+            <p class="lead mb-0">{% t careers.become_a_craftsperson.personas.subtitle %}</p>
+        </div>
+        <div class="row justify-content-end align-items-center">
+            <div class="col-sm-6 g-mb-30 g-mb-0--sm">
+            <!-- Carousel - Info -->
+            <div id="personaCarousel" class="js-carousel g-bg-secondary g-pos-rel" data-infinite="true" data-nav-for="#carouselCus2" data-in-effect="slideInUp" data-out-effect="slideInDown" data-pagi-classes="u-carousel-indicators-v35--main g-absolute-centered--x g-bottom-20">
+                <div class="js-slide d-flex g-min-height-50vh g-flex-centered g-pa-50">
+                    <div class="text-center">
+                        <div class="mb-5">
+                        <h2 class="h1 mb-3">{% t careers.become_a_craftsperson.personas.coding_title %}</h2>
+                        <p>{% t careers.become_a_craftsperson.personas.coding %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-slide d-flex g-min-height-50vh g-flex-centered g-pa-50">
+                    <div class="text-center">
+                        <div class="mb-5">
+                        <h2 class="h1 mb-3">{% t careers.become_a_craftsperson.personas.automation_and_ops_title %}</h2>
+                        <p>{% t careers.become_a_craftsperson.personas.automation_and_ops %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-slide d-flex g-min-height-50vh g-flex-centered g-pa-50">
+                    <div class="text-center">
+                        <div class="mb-5">
+                        <h2 class="h1 mb-3">{% t careers.become_a_craftsperson.personas.architecture_title %}</h2>
+                        <p>{% t careers.become_a_craftsperson.personas.architecture %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-slide d-flex g-min-height-50vh g-flex-centered g-pa-50">
+                    <div class="text-center">
+                        <div class="mb-5">
+                        <h2 class="h1 mb-3">{% t careers.become_a_craftsperson.personas.consultancy_title %}</h2>
+                        <p>{% t careers.become_a_craftsperson.personas.consultancy %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-slide d-flex g-min-height-50vh g-flex-centered g-pa-50">
+                    <div class="text-center">
+                        <div class="mb-5">
+                        <h2 class="h1 mb-3">{% t careers.become_a_craftsperson.personas.process_and_ux_title %}</h2>
+                        <p>{% t careers.become_a_craftsperson.personas.process_and_ux %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Carousel - Info -->
+            </div>
+
+            <div class="col-sm-6">
+            <!-- Carousel - Image -->
+            <div id="carouselCus2" class="js-carousel g-pos-rel" data-infinite="true" data-nav-for="#personaCarousel" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-40 g-height-40 g-color-white g-color-primary--hover g-font-size-40" data-arrow-left-classes="fa fa-angle-left g-left-40" data-arrow-right-classes="fa fa-angle-right g-right-40">
+                <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/coding.jpg"></div>
+                <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/automationandops.jpg"></div>
+                <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/architecture.jpg"></div>
+                <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/consultancy.jpg"></div>
+                <div class="js-slide g-min-height-50vh g-bg-size-cover g-bg-pos-top-center" data-bg-img-src="{{ site.baseurl }}/assets/custom/img/careers/processandux.jpg"></div>                    
+            </div>
+            <!-- End Carousel - Image -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Craftsperson Persona Carousel --> 
+
+<!-- call to action -->
+<section class="g-bg-orange g-color-white g-pa-30">
+    <div class="d-md-flex justify-content-md-center text-center">
+        <div class="align-self-md-center">
+            <p class="lead g-font-weight-400 g-color-white g-mr-20--md g-mb-15 g-mb-0--md">Interested in joining our teams in London or Barcelona?</p>
+        </div>
+        <div class="align-self-md-center">
+            <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" data-modal-target="#craftsman-form" href="#craftsman-form">Apply Now</a>
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+<!-- benefits -->
+<section class="g-py-50 g-bg-gray-light-v5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.benefits.title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+        </div>
+        <!-- Icon Blocks -->
+        <div class="row">
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                    <div class="media">
+                        <div class="d-flex align-self-baseline mr-3">
+                        <span class="u-icon-v3 g-bg-lightred g-color-white g-rounded-50x">
+                            <i class="icon-media-129 u-line-icon-pro"></i>
+                        </span>
+                        </div>
+                        <div class="media-body align-self-center">
+                        <p class="mb-0">
+                            <span class="g-font-weight-700">{%t careers.benefits.conf_title %}</span>
+                            {%t careers.benefits.conf_description %}
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-blue g-color-white g-rounded-50x">
+                        <i class="icon-education-064 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.training_title %}</span>
+                        {%t careers.benefits.training_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-orange g-color-white g-rounded-50x">
+                        <i class="icon-education-116 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.books_title %}</span>
+                        {%t careers.benefits.books_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+        </div>
+        <!-- End Icon Blocks -->
+
+        <!-- Icon Blocks -->
+        <div class="row">
+            <div class="col-lg-4 g-mb-30">
+            <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                    <div class="media">
+                        <div class="d-flex align-self-baseline mr-3">
+                        <span class="u-icon-v3 g-bg-orange g-color-white g-rounded-50x">
+                            <i class="icon-education-090 u-line-icon-pro"></i>
+                        </span>
+                        </div>
+                        <div class="media-body align-self-center">
+                        <p class="mb-0">
+                            <span class="g-font-weight-700">{%t careers.benefits.experts_title %}</span>
+                            {%t careers.benefits.experts_description %}
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-lightred g-color-white g-rounded-50x">
+                        <i class="icon-education-139 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.transparency_title %}</span>
+                        {%t careers.benefits.transparency_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-blue g-color-white g-rounded-50x">
+                        <i class="icon-education-192 u-line-icon-pro"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.autonomy_title %}</span>
+                        {%t careers.benefits.autonomy_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+        </div>
+        <!-- End Icon Blocks -->
+
+        <!-- Icon Blocks -->
+        <div class="row">
+            <div class="col-lg-4 g-mb-30">
+            <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                    <div class="media">
+                        <div class="d-flex align-self-baseline mr-3">
+                        <span class="u-icon-v3 g-bg-lightred g-color-white g-rounded-50x">
+                            <i class="icon-hotel-restaurant-175 u-line-icon-pro"></i>
+                        </span>
+                        </div>
+                        <div class="media-body align-self-center">
+                        <p class="mb-0">
+                            <span class="g-font-weight-700">{%t careers.benefits.holidays_title %}</span>
+                            {%t careers.benefits.holidays_description %}
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-blue g-color-white g-rounded-50x">
+                        <i class="{%t careers.benefits.pensions_icon %}"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.pensions_title %}</span>
+                        {%t careers.benefits.pensions_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-20 h-100">
+                <div class="media">
+                    <div class="d-flex align-self-baseline mr-3">
+                    <span class="u-icon-v3 g-bg-orange g-color-white g-rounded-50x">
+                        <i class="{%t careers.benefits.life_cover_icon %}"></i>
+                    </span>
+                    </div>
+                    <div class="media-body align-self-center">
+                    <p class="mb-0">
+                        <span class="g-font-weight-700">{%t careers.benefits.life_cover_title %}</span>
+                        {%t careers.benefits.life_cover_description %}
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+</section>
+<!-- end benefits --> 
+<!-- Interview Process -->
+<section class="g-py-50 g-pb-100">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="h3 text-uppercase mb-3">{% t careers.become_a_craftsperson.hiring_process.title %}</h2>
+            <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
+            <p class="lead mb-0">{% t careers.become_a_craftsperson.hiring_process.subtitle %}</p>
+        </div>
+        <!-- Icon Blocks -->
+        <ul class="row list-inline u-info-v9-1 mb-0">
+            <li class="col-md-3 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                    <div class="g-mb-5">
+                        <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                        <i class="icon-communication-006 u-line-icon-pro"></i>
+                        </span>
+                    </div>
+                    <div class="g-mb-25">
+                        <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                            <i  class="fa fa-check"></i>
+                        </span>
+                    </div>
+                    <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                        <span class="g-color-main g-font-weight-700">01.</span>
+                        {% t careers.become_a_craftsperson.hiring_process.step_1.title %}
+                    </h3>
+                    <p>{% t careers.become_a_craftsperson.hiring_process.step_1.description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </li>
+            <li class="col-md-3 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                    <div class="g-mb-5">
+                        <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                        <i class="icon-education-121 u-line-icon-pro"></i>
+                        </span>
+                    </div>
+                    <div class="g-mb-25">
+                        <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                            <i class="fa fa-check"></i>
+                        </span>
+                    </div>
+                    <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                        <span class="g-color-main g-font-weight-700">02.</span>
+                        {% t careers.become_a_craftsperson.hiring_process.step_2.title %}
+                    </h3>
+                    <p>{% t careers.become_a_craftsperson.hiring_process.step_2.description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </li>
+            <li class="col-md-3 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                    <div class="g-mb-5">
+                        <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                            <i class="icon-communication-180 u-line-icon-pro"></i>
+                        </span>
+                    </div>
+                    <div class="g-mb-25">
+                        <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                            <i class="fa fa-check"></i>
+                        </span>
+                    </div>
+                    <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                        <span class="g-color-main g-font-weight-700">03.</span>
+                        {% t careers.become_a_craftsperson.hiring_process.step_3.title %}
+                    </h3>
+                    <p>{% t careers.become_a_craftsperson.hiring_process.step_3.description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </li>
+            <li class="col-md-3 list-inline-item g-mx-0 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-block-hover text-center g-px-40">
+                    <div class="g-mb-5">
+                        <span class="u-icon-v1 g-width-85 g-height-85 g-color-main g-font-size-50 rounded-circle">
+                            <i class="icon-education-167 u-line-icon-pro"></i>
+                        </span>
+                    </div>
+                    <div class="g-mb-25">
+                        <span class="u-icon-v2 u-shadow-v22 g-width-25 g-height-25 g-color-primary g-bg-white g-font-size-9 rounded-circle">
+                            <i class="fa fa-check"></i>
+                        </span>
+                    </div>
+                    <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
+                        <span class="g-color-main g-font-weight-700">04.</span>
+                        {% t careers.become_a_craftsperson.hiring_process.step_4.title %}
+                    </h3>
+                    <p>{% t careers.become_a_craftsperson.hiring_process.step_4.description %}</p>
+                </div>
+                <!-- End Icon Blocks -->
+            </li>
+        </ul>
+        <!-- End Icon Blocks -->
+    </div>
+</section>
+<!-- End Interview Process -->

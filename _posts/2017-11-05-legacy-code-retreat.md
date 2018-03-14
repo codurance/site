@@ -1,5 +1,6 @@
 ---
 layout: post
+category: careers
 name: 2017-11-05-legacy-code-retreat
 title: Legacy Coderetreat - Overcoming challenges together
 date: 2017-11-05 09:00:00 +00:00
