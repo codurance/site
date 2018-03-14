@@ -307,7 +307,7 @@ careers:
      subtitle: Our interview process will help us to understand your breadth and depth of expertise, with tight feedback loops running throughout. We all carry different skills and areas of expertise, and encourage people at all stages of their journey's to apply.
      step_1:
       title: Telephone Interview
-      description: 30 minute call where we’ll get to know each other and to see what values we have in common. At this stage, we’re more interested in your mindset and any values of principles that are important to you.
+      description: 30 minute call where we’ll get to know each other and to see what values we have in common. At this stage, we’re more interested in your mindset and any values or principles that are important to you.
      step_2:
       title: Pair Programming
       description: A 2-hour pair programming session at our offices (or remote). You’ll bring your own laptop, with your choice of IDE and tooling up to you. We’ll tackle a coding kata together, with more focus on your coding and software design skills.
