@@ -46,7 +46,7 @@ h3 Introduce the interface when needed
 
 p Let's get back to the above example with the scenario where we don't have an interface and just one class called <code>BankAccount</code>, at this time we don't need to differentiate because we only have one kind of Bank Account in the system. When we have another account that differs in behaviour then we can create the <code>BankAccount</code> interface and have two implementations <code>CurrentAccount</code> and say <code>SavingsAccount</code>. Only the construction will change at this point, the contract will not. Even if we started with the <code>BankAccount</code> interface in the first place, the construction would change to add the new account type. You can introduce the interface at the refactoring stage of you TDD cycle just before you add the second implementation of the Bank Account.
 
-h3 Conslusion
+h3 Conclusion
 
 p In summary, indiscriminate use of anything is usually not a good approach. Interfaces with single implementations are not necessary. I've seen codebases where there is a proliferation of interfaces with one implementation. In some cases certain libraries and frameworks necessitate the need for an interface even when one is not needed. I would seriously consider different alternatives to these libraries and frameworks, of course you may not have an alternative. 
 
