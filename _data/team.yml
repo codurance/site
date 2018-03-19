@@ -452,4 +452,17 @@
   github: SafouraBoyot
 
 
+- id: sirlexis
+  name: Alexander Agyapong
+  image: /assets/custom/img/team/alex_agyapong.png
+  role: Apprentice
+  fullDescription:
+    <p>Alex is a technology enthusiast who believes that if anything is worth doing then it must be done well. He discovered a deep passion for programming when playing with QBasic at the age of fifteen. He went on to complete a bachelor’s degree in Computer Science.</p>
+    <p>Shortly after graduation, Alex joined the British Army as a soldier fulfilling one of his childhood dreams. He later retrained as a mathematics teacher working in secondary schools across London.</p>
+    <p>His passion for software development propelled him to complete several pet projects in order to keep up to date with modern frameworks and technologies. Alex is a life-long learner and looking forward to gaining deeper understanding and knowledge of software craftsmanship at Codurance.</p>
+    <p>In his spare time, Alex enjoys spending time his family, running, hill walking and weightlifting.</p>
+  twitter: alex_agyapong1
+  github: sirlexis
+
+
 
