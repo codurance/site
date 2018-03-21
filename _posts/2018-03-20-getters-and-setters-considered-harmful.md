@@ -23,8 +23,8 @@ An object is a JavaBean when it adheres to the following conventions:
 
 1. It must have a zero-argument constructor which cannot fail.
 2. It has properties which are accessed and mutated via ‘getter’ and ‘setter’ methods.
-3. For any property of a bean called `Foo` then the accessor method must be called `getFoo`.
-4. For the property Foo the setter method must be called `setFoo`. In the case where the property is of type boolean then the getter may alternatively be called `isFoo`.
+3. For any property of a bean called `Foo` then the accessor method must be called `getFoo`. In the case of boolean properties, the getter may alternatively be called `isFoo`.
+4. The setter method for Foo must be called `setFoo`.
 5. A bean is not obliged to present both a getter and a setter for every property: a property with getter and no setter is read-only; a property with setter and no getter is write-only.
 
 The specification describes many different use cases, but it is clear from the above description that JavaBeans were conceived of as objects with behaviour, not mere bags of data. The idea has faded into obscurity, but while JavaBeans have been largely forgotten, the idiom of getter and setter methods in Java has persisted.
