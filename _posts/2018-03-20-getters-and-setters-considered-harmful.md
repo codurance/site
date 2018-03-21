@@ -31,9 +31,7 @@ The specification describes many different use cases, but it is clear from the a
 
 ## The Metaphor is Wrong
 
-The concept of “get” and “set” seems natural enough, but is it correct? The JavaBeans convention uses “get” to mean query, which is an operation without side effects. But in the real world, getting is an action that does alter state: if I get a book off the shelf, the book is no longer on the shelf.
-
-You may object that this is mere pedantry, but I think this misconception encourages us to think wrongly about the way we write our objects to interact with each other. For example, if we had a Thermometer class then most Java devs would write code to read the temperature like this:
+The concept of “get” and “set” seems natural enough, but is it correct? The JavaBeans convention uses “get” to mean query, which is an operation without side effects, but in the real world getting is an action that does alter state: if I get a book off the shelf, the book is no longer on the shelf. You may object that this is mere pedantry, but I think this misconception encourages us to think wrongly about the way we write our objects to interact with each other. For example, if we had a Thermometer class then most Java devs would write code to read the temperature like this:
 
 ```java
 Temperature t = thermometer.getTemperature();
