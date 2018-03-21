@@ -13,7 +13,7 @@ tags:
 - first steps
 - craftsmanship
 ---
-As of now, there are a lot of developers in the IT industry willing to advance in their professional careers who don't know how.
+ As of now, there are a lot of developers in the IT industry willing to advance in their professional careers who don't know how.
 This is meant to be a quick reference for them.
 
 One could argue to include resources - there is almost no reference to devops, infosec, agile, AI, iOS nor any new cool frontend framework like React or Angular - but in my opinion if you have done enough of the points of this generic list, you will have already the resources not to need any list.
@@ -33,6 +33,9 @@ One could argue to include resources - there is almost no reference to devops, i
    * [Refactoring: Improving the Design of Existing Code](https://www.goodreads.com/book/show/44936.Refactoring)
    * [Working Effectively with Legacy Code](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code)
    * [Domain Driven Design Destilled](https://www.goodreads.com/book/show/28602719-domain-driven-design-distilled) *- Maybe later you will have time to read [Implementing Domain-Driven Design](https://www.goodreads.com/book/show/15756865-implementing-domain-driven-design) or [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.goodreads.com/book/show/179133.Domain_Driven_Design)*
+
+{% include banner_ad_big.html %}
+
  * Some of the videos that can help you:
    * [One of the many screencasts of Sandro Mancuso](https://www.youtube.com/watch?v=XHnuMjah6ps)
    * [Videos on clean code by Uncle Bob](https://www.youtube.com/watch?v=SXkgYZw0evs&t=107s)
