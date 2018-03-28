@@ -51,7 +51,7 @@ As we saw in previous posts ([1, ](http://codurance.com/2016/04/28/async-systems
 > * If no partition or key is present choose a partition in a round-robin fashion
 
 We'll use `item_id` as a key. Consumers contained in different instances of the Law Enforcement service are only interested in particular partitions, as they're keeping internal state for some items. Let's inspect different Kafka consumer implementations to see which is the most convenient for our use case.
-
+{% include mid_banner_ad.html %}
 ## Kafka Consumers
 
 There are three consumers in Kafka: [High level consumer](https://cwiki.apache.org/confluence/display/KAFKA/Consumer+Group+Example), [Simple Consumer](https://cwiki.apache.org/confluence/display/KAFKA/0.8.0+SimpleConsumer+Example) and [New Consumer](http://kafka.apache.org/090/javadoc/index.html?org/apache/kafka/clients/consumer/KafkaConsumer.html)

@@ -72,7 +72,7 @@ class WordCountSpec extends StreamingSuiteBase {
 ```
 
 You don't need to work directly with the DStream abstraction. The input will be a sequence of input collections, and every collection will be consumed with a tick of Spark Streaming internal clock. You can find more examples about what you can do with this library [here](https://github.com/holdenk/spark-testing-base/wiki/StreamingSuiteBase).
-
+{% include mid_banner_ad.html %}
 ## Joining Streaming and Batch Processing
 
 One classical scenario in Stream Processing is joining a stream with a database in order to enrich, filter or transform the events contained on the stream. Thanks to [Spark 2.0](https://spark.apache.org/releases/spark-release-2-0-0.html) and [Structured Streaming](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/spark-sql-structured-streaming.html), Streaming and Batch are aligned, and somehow hidden, in a layer of abstraction.

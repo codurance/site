@@ -32,7 +32,7 @@ For those people who never attended a Coderetreat, it's a full day event where w
 Coderetreats started in 2009, with the current format emerging in 2010 after sharing experiences from previous event. We acknowledge the work of those who are responsible for the organization of the GDCR year after year, and in particularly those who were there at the beginning: Corey Haines, Gary Bernhardt, Nayan Hajratwala, Patrick Welsh, Alex Bolboaca, Maria Diaconu, Erik Talboom, Adrian Bolboaca, Jim Hurne, Martin Klose and Alissa Conaty, to name a few.
 
 Several weeks before GDCR, we hosted our first Legacy Coderetreat. We were encouraged by the high turnout for both of these events and continue to be inspired by the contribution made from the folks that attend. We’ll continue working with this format of practising, because it breaks comfort zones when facing problems in a different way, as well as it helps to grow the community. See you in the next Coderetreat!
-
+{% include mid_banner_ad.html %}
 ### About the author
 Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things. Raquel is a constant apprentice who strives for common sense, pragmatism and simplicity, and also enjoys sharing her knowledge and learning from others.
 

@@ -140,8 +140,8 @@ aws lambda create-function \
 ```
 
 Make the script executable ```chmod +x deploy.sh``` and deploy your lambda ```./deploy.sh```. You may get the following error: "The role defined for the function cannot be assumed by Lambda." This is because the role has not been replicated through in the Amazon infra. Just run the deploy script again. It will complain that the role already exists but this time the lambda creation should pass. In the future we will look at a status check to make sure that the role has been fully created before we deploy the function.
-
-### Step 5: The Execution!
+{% include mid_banner_ad.html %}
+### Step 4: The Execution!
 
 Invoke your lambda with the below command. You should see the result in the file called ```output.txt```
  
@@ -149,7 +149,7 @@ Invoke your lambda with the below command. You should see the result in the file
 aws lambda invoke --invocation-type RequestResponse --function-name helloworld --payload '[""]' output.txt
 ```
 
-### Step 6: The Cleanup
+### Step 5: The Cleanup
 
 To delete the lambda function and then the role paste the following in ```delete.sh```
 
@@ -163,5 +163,5 @@ aws iam delete-role --role-name $role
 
 Then make the script executable ```chmod +x delete.sh``` and execute ```./delete.sh```
 
-### Step 7: Relax ... you have arrived ;)
+### Step 6: Relax ... you have arrived ;)
 ... and wait for the next post on AWS frolics 

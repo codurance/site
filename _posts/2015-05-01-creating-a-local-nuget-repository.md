@@ -33,6 +33,7 @@ Once you are logged in, search for the packages you require and click the *‘Do
 
 ![Downloading packages from nuget.org]({{site.baseurl}}/assets/custom/img/blog/2015-05-01-creating-a-local-nuget-repository/nuget-download.png)
 
+{% include mid_banner_ad.html %}
 Once you have successfully downloaded the *.nupkg* files you require into your local repository folder, head into Visual Studio and open the NuGet Settings dialog via *Tools > NuGet Package Manager > Package Manager Settings*. Click the Package Sources tab within the settings dialog, followed by the ‘plus’ icon in the top left to add a new package source:
 
 ![Adding a local package source]({{site.baseurl}}/assets/custom/img/blog/2015-05-01-creating-a-local-nuget-repository/nuget-settings.png)
