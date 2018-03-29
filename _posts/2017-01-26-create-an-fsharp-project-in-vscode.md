@@ -89,6 +89,7 @@ nuget FsUnit
 nuget FsCheck
 nuget nunit.console // <- !!!This line should be present!!!
 ```
+{% include mid_banner_ad.html %}
 * Open ```build.fsx```
 * Add ```open Fake.Testing``` after ```open Fake```
 
