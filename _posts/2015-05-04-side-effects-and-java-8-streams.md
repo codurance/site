@@ -79,7 +79,7 @@ When in fact we'll have:
 - Third. My number is 4
 
 A clever reader could state that the problem was the inclusion of some non-stream operation in the middle of a lazy pipeline. That could be true. For instance when you work in asynchronous code like promises in Node.js is quite important not to mix sequential code with the async chain without a lot of a thought.
-
+{% include mid_banner_ad.html %}
 ## Understanding laziness through Optional API.
 
 Non-immediate execution using threads, RxJava, streams or any "lazy" construct could be confusing for a Java developer used to sequential flows. This is a really silly example using Java 8 Optional API that confused me the first time that I saw it:
@@ -131,8 +131,8 @@ There are another problems about using Stream as backbone of our flows. Once a S
 
 I would discourage passing around streams in teams with little experience with Java 8. If we decide to apply side effects during the pipeline, I would avoid any side effect that implies some kind of locking or coordination between threads. That said, I would recommend experimenting with these ideas in your spare time, as I found that the best way of learning is by applying [the core ideas of Java 8 Streams](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html#package.description):
 
-> * No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
-> * Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
-> * Laziness-seeking. Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first String with three consecutive vowels" need not examine all the input strings. Stream operations are divided into intermediate (Stream-producing) operations and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
-> * Possibly unbounded. While collections have a finite size, streams need not. Short-circuiting operations such as limit(n) or findFirst() can allow computations on infinite streams to complete in finite time.
-> * Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
+* No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
+* Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
+* Laziness-seeking. Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first String with three consecutive vowels" need not examine all the input strings. Stream operations are divided into intermediate (Stream-producing) operations and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
+* Possibly unbounded. While collections have a finite size, streams need not. Short-circuiting operations such as limit(n) or findFirst() can allow computations on infinite streams to complete in finite time.
+* Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.

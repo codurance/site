@@ -28,7 +28,7 @@ An assembly is a unit of deployment in .Net. A Visual Studio project has a 1 on 
 ## Dependency management
 
 I don't want to reference System.Web across all code, so I create a separate assembly where I "isolate" the code that depends on that assembly. When I hear this argument, most of the time it equates to distrust among team members. Or, I don't trust other developers, so to avoid them referencing System.Web on business classes, I segregate them in another project that does not reference System.Web. Can you hear yourself? There may be a compelling reason to isolate a dependency in a separate assembly, but the reason should not be: to avoid other developers making a mess.
-
+{% include mid_banner_ad.html %}
 ## How do I do it?
 
 My solutions start with two projects one for production code and one for tests. The question to ask before creating a project is: Do I need to deploy and version this part of the code independently? Only if the answer is yes do I create a new project.

@@ -108,7 +108,7 @@ There is a difference between trying to uncover unknowns as early as possible an
 > Do not mix exploratory work with feature development. 
 
 Among the four categories above, I find there is value to create separate spikes for Technical, Architecture, and Macro Design investigations but not so much for Micro Design. That’s an area of my code that naturally emerge through [Outside-In TDD][2]. Discovery at micro design level normally have far less impact in the project than discovery at higher levels. That means that focusing on up-front design at micro level is normally a waste of time, but the same is not true for the other levels.  
-
+{% include mid_banner_ad.html %}
 ### User Interface changes and impacts
 
 Another argument to start development from the domain model (Inside-Out) is that the user interface (UI) is volatile and its implementation should be done after the domain model is finished. Well, it is often true that the UI changes more often than the business rules do, but do all the UI changes really impact the backend? Let’s have a look at the most common types of UI changes and their respective impact on the backend code:

@@ -36,6 +36,7 @@ Let's imagine that we're modeling a really small slice of Twitter. A user can tw
 
 > * It's not possible to optimise write and read queries if you share your data model and technology. Certain queries to that system could require joining different tables which may prove problematic at a larger scale. Normalised models are suitable for optimising writing scenarios; you just need to write in a single table without having to worry about propagating changes between different denormalised views. They also save storage space for obvious reasons. Nowadays memory is cheap and to be honest, most of the apps that I've worked in the past read more than write.
 
+{% include mid_banner_ad.html %}
 ## Benefits of getting into an event world
 
 CQRS enables you to go for another architectural style called Event Sourcing. In that approach your event store becomes the single source of truth. Alberto Brandolini created a technique called Event Storming that allows you to model your system around events. This approach tries to model your system as humans would, or as the business would see it: a flow of commands and events. A command in our example would be *Create a Tweet* and the event, always in past tense, would be *Created Tweet*. A command can generate different events and per event we can have different consumers of it. That means that we have flexibility to change our read side, like *Read a Timeline*, in the future.

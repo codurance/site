@@ -85,7 +85,7 @@ CREATE TABLE suspended_users (
 ```
 
 I've deliberately left out the Primary Key from this DDL so we can discuss different options.
-
+{% include mid_banner_ad.html %}
 ## Understanding Clustering Keys
 
 Previously we used clustering keys to provide some order into our data. Let's go with that option:

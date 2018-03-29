@@ -51,7 +51,7 @@ Another dimension to design bias is the direction used to design. To make the ex
 **Usability bias:** Some developers prefer to design the UI first, then the domain model, and finally the database. These developers believe that the usability of their application is the most important aspect and that the backend should only exist to satisfy the needs of the front-end. 
 
 **Outside-In bias:** Similar to the _usability bias_, some developers not only prefer to start from the UI (outside) but also drive the whole design and tests in a single direction, from the outside to the inside. They also focus on slicing features in small vertical slices in order to deploy often. You can read more on [A Case for Outside-In Development](https://codurance.com/2017/10/23/outside-in-design/).
-
+{% include mid_banner_ad.html %}
 ## Non-functional bias
 
 There is no doubt that any meaningful application will have a set of critical non-functional requirements that needs to be considered carefully and factored into its design. Although this is often true, some developers are very focused on maximising performance, throughput, scalability, security, maintainability, logging, monitoring, and many other aspects even when there is no clear need for them. Although there are many ways to design applications in a way where the design of the non-functional aspects do not conflict with the design of the functional requirements, quite often we see them interleaved. That is normally a result of the **non-functional design bias**.  
