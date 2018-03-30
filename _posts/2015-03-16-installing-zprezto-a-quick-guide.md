@@ -78,7 +78,7 @@ Lastly, set Zsh as your default shell.
 To apply all the changes, simply restart your terminal.
 
 The official repository provides more instructions and troubleshooting [here](https://github.com/sorin-ionescu/prezto).
-
+{% include mid_banner_ad.html %}
 ### Fiddling with dotfiles.
 
 As you are now changing shells, it's important to make sure you're loading the correct information regarding alias' and PATH variables on each shell start-up.

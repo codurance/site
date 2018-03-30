@@ -102,7 +102,7 @@ Docker's `build` command will take our `Dockerfile` and build the image tagged a
 The variable `%build.number%` is a built-in **TeamCity** variable containing the current build number.
 
 <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-01-docker-meets-continuous-deployment/release_step_1.png" alt="Release Build Image Step" title="Release Build Image Step" class="img img-responsive style-screengrab">
-
+{% include mid_banner_ad.html %}
 ### Push Image
 
 The image created in the previous step exists only on the agent machine. To make the image available to others we need to store it in a repository. We can use **Docker Hub**, but in our example we use a private repository available under the address `repository.private`. We can execute the following command to push the image to the repository.
