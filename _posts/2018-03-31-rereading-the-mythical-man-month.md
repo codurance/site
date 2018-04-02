@@ -20,9 +20,9 @@ tags:
 
 ---
 
-One of my best childhood memories is listening to the stories that my maternal grandfather, a very curious man, told me. However, not only we lose a lot of details over time, but also we age and the same story can provide us different information after years. Last summer I reread _Robinson Crusoe_ by _Daniel Defoe_ after more than 20 years and I discovered an absolutely different book. 
+One of my best childhood memories is listening to the stories that my maternal grandfather, a very curious man, told me. However, not only do we lose a lot of details over time, but also we age and the same story can provide us different information after years. Last summer I reread _Robinson Crusoe_ by _Daniel Defoe_ after more than 20 years and I discovered an absolutely different book. 
 
-Now I've had the same experience with <a href="http://wiki.c2.com/?MythicalManMonth" target="_blank">The Mythical Man-Month</a> by <a href="http://wiki.c2.com/?FredBrooks" target="_blank">Fred Brooks</a>, the father of the IBM System/360. This book was published in **1975** and it was reissued in its 20th Anniversary with four new chapters. On the one hand, it contains problems which still happen nowadays and it's worthwhile reading, because:
+Now I've had the same experience with <a href="http://wiki.c2.com/?MythicalManMonth" target="_blank">The Mythical Man-Month</a> by <a href="http://wiki.c2.com/?FredBrooks" target="_blank">Fred Brooks</a>, the father of the IBM System/360. This book was published in **1975** and it was reissued on its 20th Anniversary with four new chapters. On the one hand, it contains problems which still happen nowadays and it's worthwhile reading, because:
 
 > Those who cannot remember the past are condemned to repeat it. -- Jorge Santayana
 
@@ -56,7 +56,7 @@ Testing phase was the most mis-scheduled part of programming, because it was at 
 
 * **Gutless Estimating**
 
-When an omelette, promised in two minutes, has not set in two minutes, the customer has two choices: wait or eat it raw (or partially burned, when turning up the heat). Software managers might have the same courage and firmness than chefs, avoiding false scheduling. _We need to develop and publicize productivity figures, bug-incidence figures, estimating rules, and so on. The whole profession can only profit from sharing such data._
+When an omelette, promised in two minutes, has not set in two minutes, the customer has two choices: wait or eat it raw (or partially burned, when turning up the heat). Software managers might have the same courage and firmness as do chefs, avoiding false scheduling. _We need to develop and publicize productivity figures, bug-incidence figures, estimating rules, and so on. The whole profession can only profit from sharing such data._
 
 * **Regenerative Schedule Disaster**
 
@@ -145,7 +145,7 @@ Following Aristotle, he talked about two types of difficulties in software proje
     * Imperfect and inefficient communication among developers
     * ...
 
-Brooks prized technical developments as _potential silver bullets_: high-level languages advances, OOP, Artificial Intelligence, Expert Systems, _automatic_ programming, graphical programming, program verification (not _error-proof programs_, but _meeting specification_), environments, tools and workstations. On the other hand, he valued _buy vs. build_, requirements refinement and rapid prototyping, incremental development (growing, not building, software) and being great designers, because _software construction is a creative process_.
+Brooks considered technical developments as _potential silver bullets_: high-level languages advances, OOP, Artificial Intelligence, Expert Systems, _automatic_ programming, graphical programming, program verification (not _error-proof programs_, but _meeting specification_), environments, tools and workstations. On the other hand, he valued _buy vs. build_, requirements refinement and rapid prototyping, incremental development (growing, not building, software) and being great designers, because _software construction is a creative process_.
 
 # End-to-end skeleton system
 
