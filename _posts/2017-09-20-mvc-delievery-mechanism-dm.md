@@ -61,7 +61,7 @@ But that was not enough. We still had problems. The full application had to be r
 <br/>
 
 Although we changed were the View and Controller lived over time, where does MVC fit when it comes to the wider architecture of an application?
-
+{% include mid_banner_ad.html %}
 ## Domain Driven Design and Layered architecture 
 
 In [Domain Driven Design(DDD)][16] applications are normally split into 4 layers: 
