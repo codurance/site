@@ -85,6 +85,9 @@ title: Company
                   <!-- End User Position -->
                   <hr class="g-brd-gray-light-v4 g-my-20">
                   <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
+                  
+                  <p class="g-line-height-1_8"><a href="/publications/author/{{ member.name | downcase | replace: ' ','-'}}/">See blogs by {{member.name| truncatewords: 1}}</a></p>
+ 
                 </div>
               </div>
             </div>
