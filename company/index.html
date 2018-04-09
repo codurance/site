@@ -98,7 +98,7 @@ title: Company
                   {% endfor %}
 
                   {% if isAuthor == true %}
-                  <p class="g-line-height-1_8"><a href="/publications/author/{{ member.name | downcase | replace: ' ','-' | prepend: site.baseurl}}/">See blogs by {{member.name| truncatewords: 1}}</a></p>
+                  <p class="g-line-height-1_8"><a href="{{site.baseurl}}/publications/author/{{ member.name | downcase | replace: ' ','-' }}/">See blogs by {{member.name| truncatewords: 1}}</a></p>
                   {% endif %}
                   {% assign isAuthor = false %}
                 </div>
