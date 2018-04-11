@@ -11,17 +11,19 @@ RUN gem install bundler
 RUN gem install rspec-core -v '3.4.1'
 RUN gem install jekyll
 
-ADD Gemfile /tmp/Gemfile 
-ADD Gemfile.lock /tmp/Gemfile.lock
+WORKDIR /site
 
-RUN cd /tmp && bundle install
+COPY Gemfile .
+COPY Gemfile.lock .
+
+RUN bundle install
+
+COPY . .
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-WORKDIR /site
-
-ADD start_site.sh /start_site.sh 
+CMD bundle exec rake serve
 EXPOSE 4000
-ENTRYPOINT ["/start_site.sh"]
+

@@ -1,0 +1,41 @@
+---
+version: '3.1'
+
+services:
+
+  site:
+    build: .
+    command: bundle exec rake servequick
+    container_name: codurance-site
+    volumes: 
+      - '${PWD}/aboutus:/site/aboutus:z'
+      - '${PWD}/assets:/site/assets:z'
+      - '${PWD}/blog:/site/blog:z'
+      - '${PWD}/careers:/site/careers:z'
+      - '${PWD}/clients:/site/clients:z'
+      - '${PWD}/company:/site/company:z'
+      - '${PWD}/_data:/site/_data:z'
+      - '${PWD}/events:/site/events:z'
+      - '${PWD}/_events:/site/_events:z'
+      - '${PWD}/_i18n:/site/_i18n:z'
+      - '${PWD}/_includes:/site/_includes:z'
+      - '${PWD}/_layouts:/site/_layouts:z'
+      - '${PWD}/_newsletters:/site/_newsletters:z'
+      - '${PWD}/_plugins:/site/_plugins:z'
+      - '${PWD}/policies:/site/policies:z'
+      - '${PWD}/_posts:/site/_posts:z'
+      - '${PWD}/projects:/site/projects:z'
+      - '${PWD}/pubication:/site/pubication:z'
+      - '${PWD}/publications:/site/publications:z'
+      - '${PWD}/services:/site/services:z'
+      - '${PWD}/_utility:/site/_utility:z'
+      - '${PWD}/videos:/site/videos:z'
+      - '${PWD}/_videos:/site/_videos:z'
+      - '${PWD}/work-with-us:/site/work-with-us:z'
+      - '${PWD}/404.html:/site/404.html:z'
+      - '${PWD}/index.html:/site/index.html:z'
+      - '${PWD}/Rakefile:/site/Rakefile:z'
+    ports:
+      - '4000:4000'
+    
+
