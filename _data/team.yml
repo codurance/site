@@ -465,5 +465,19 @@
   twitter: alex_agyapong1
   github: sirlexis
 
+- id: tonygeorgiadis
+  name: Tony Georgiadis
+  image: /assets/custom/img/team/tony_georgiadis.jpg
+  role: Apprentice
+  fullDescription:
+    <p>It was at the age of 15 when Tony wrote his first program, a mIRC script for chat room battles (kicks, bans, room take overs etc.) and realised that coding is what he really loves to do!</p>
+    <p>Tony studied Computer Science in Greece and then obtained his Masters Degree in Holland. As part of his thesis he created a Serious Computer Game that aimed at preventing alcohol addiction.</p>
+    <p>Tony believes that what’s worth doing needs to be done right and puts his heart into things he likes doing! He also believes that our will is a very powerful "tool", making us capable of achieving (almost) anything we can dream of!</p>
+    <p>Tony has been working as a programmer for almost three years, focusing on creating web applications. He believes that creating high quality software nowadays is very important, since software is ubiquitous.</p>
+    <p>He recently discovered the Software Craftsmanship world. He got to appreciate the value of all the principles and approaches it utilises, particularly how much they can contribute to creating robust software.</p>
+    <p>Tony’s dream is to become a successful Master Software Craftsman, a mentor for Apprentices and help spread the word!</p>
+    <p>In his spare time, Tony runs and participates in the Greek Theatre Group of London. He also enjoys spending time with his partner and friends, reading books, learning/performing magic tricks, playing the guitar, cooking and doing fitness activities and sports!</p>
+  github: tonycodurance
+
 
 
