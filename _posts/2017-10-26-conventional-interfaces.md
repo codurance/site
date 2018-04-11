@@ -91,7 +91,7 @@ Let's break down at a high level what the functions are really doing.
 
 Note how both implementations are now based on a similar composition of stages. 
 It is also worth nothing how each number contained in the list provided by each enumeration emulates a signal going through a serie of stages, filter followed by map, map followed by filter, respectively. Both implementations finish up by folding or reducing the signals using `+` and `:` respectively.
-
+{% include mid_banner_ad.html %}
 ### Breaking down the implementation of both functions
 
 It was a truly insightful moment when I realized that indeed both functions are almost identical in structure as opposed to how it seemed at first. The reason why the given implementations are so different is the mixing of concerns that hides the signal-flow structure. To prove this, let's take a deeper look at the implementations to analyze where the mixing of concerns happens.

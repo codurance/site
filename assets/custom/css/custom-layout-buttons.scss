@@ -149,3 +149,18 @@ $white-colour: #fff;
         transition: .3s;
     }
 }
+
+.ban-btn-offblack {
+    color: #fff;
+    background-color: #2D2D2D;
+    border-color: #fff;
+  }
+  
+  .ban-btn-offblack:hover, .ban-btn-offblack.active {
+    border-color: #fff;
+    background-color:#fff;
+  }
+  
+  .ban-btn-offblack:hover, .ban-btn-offblack:focus, .ban-btn-offblack.active {
+    color: #000;
+  }
