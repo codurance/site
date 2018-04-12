@@ -85,7 +85,7 @@ This process should be done collaboratively with the whole team, including produ
 The same process described above can be used for behaviours at lower levels, like components. The difference is that instead of talking about high-level behaviour, functional areas, and services, we would be talking about low-level behaviour, classes and methods.
 
 More details about behaviour discovery at different levels in separate posts. 
-
+{% include mid_banner_ad.html %}
 ### IDD Iterative Development
 
 IDD advises that a software team should work on a single theme of work (epic) at a time. This minimises dependencies between teams, keeps a team focused on delivery, and keep the design of different areas of the application stable and consistent. 

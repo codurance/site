@@ -92,7 +92,7 @@ The interesting class is the MultithreadedStressTester though:
 ```
 
 If you execute that test you will receive different results and sometimes it's even passing! That's because this test is not deterministic, we can't assure how the threads will interleave in every execution. If we want to be as sure as possible that this test finds the possible bug, we should increase the number of threads and iterations, but with the obvious time trade-off.
-
+{% include mid_banner_ad.html %}
 You can use a more deterministic approach using [Weaver](https://github.com/google/thread-weaver). To understand how it works, let's illustrate it with an example. Let's say that we have an in-memory and not thread-safe store:
 
 ```java

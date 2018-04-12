@@ -37,7 +37,7 @@ manually test the effects of your changes at the user interface level and iterat
 This was particularly true for me when it came to working with the *Search Component*. Once the app was started, modifying the *Search Component* in place thereafter would **not** result in any observable changes.
 
 Luckily, the node package manager (**npm**) has a way to make development with dependencies a lot easier via the `npm link` command.
-
+{% include mid_banner_ad.html %}
 #### 'npm link' in a nutshell
 
 The [npm documentation](https://docs.npmjs.com/cli/link) defines **npm link** as a *'means to symlink a package folder'*. Put simply, it's a means to connect your parent application to a module you have locally on your machine. 
