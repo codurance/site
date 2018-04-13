@@ -465,6 +465,19 @@
   twitter: alex_agyapong1
   github: sirlexis
 
+- id: tonygeorgiadis
+  name: Tony Georgiadis
+  image: /assets/custom/img/team/tony_georgiadis.jpg
+  role: Apprentice
+  fullDescription:
+    <p>It was at the age of 15 when Tony wrote his first program, a mIRC script for chat room battles (kicks, bans, room take overs etc.) and realised that coding is what he really loves to do!</p>
+    <p>Tony studied Computer Science in Greece and then obtained his Masters Degree in Holland. As part of his thesis he created a Serious Computer Game that aimed at preventing alcohol addiction.</p>
+    <p>Tony believes that what’s worth doing needs to be done right and puts his heart into things he likes doing! He also believes that our will is a very powerful "tool", making us capable of achieving (almost) anything we can dream of!</p>
+    <p>Tony has been working as a programmer for almost three years, focusing on creating web applications. He believes that creating high quality software nowadays is very important, since software is ubiquitous.</p>
+    <p>He recently discovered the Software Craftsmanship world. He got to appreciate the value of all the principles and approaches it utilises, particularly how much they can contribute to creating robust software.</p>
+    <p>Tony’s dream is to become a successful Master Software Craftsman, a mentor for Apprentices and help spread the word!</p>
+    <p>In his spare time, Tony runs and participates in the Greek Theatre Group of London. He also enjoys spending time with his partner and friends, reading books, learning/performing magic tricks, playing the guitar, cooking and doing fitness activities and sports!</p>
+  github: tonycodurance
 
 - id: keithsmale
   name: Keith Smale
@@ -475,3 +488,13 @@
     <p>With a passion for digital product development, Keith is a team player who strives to maximise business value whilst building great products.</p>
     <p>Outside of work, Keith spends his time with his family, mostly chasing after his young daughter.</p>
 
+- id: marcoencarnacao
+  name: Marco Encarnação
+  image: /assets/custom/img/team/marco_encarnacao.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Marco was first exposed to programming around 12 shortly after his father bought him a wonderful ZX Spectrum 128K + 2. After that he developed a strong interest in programming leading him to pursue a career as a software developer. He has worked with Pascal, C, C++, Visual Basic, VB.NET, C#, Java and others.</p>
+    <p>Marco has been working with the .NET Stack since 2007, but started his career with Java. To keep up with front end development trends and practices, Marco reads blogs and regularly tries various front end frameworks/libraries.</p> 
+    <p>Marco understands the need to be pragmatic, reuse existing solutions, investigate 3rd party libraries and utilise shelf components. He has worked and spearheaded many time-critical projects.</p>
+    <p>He’s particularly interested in subjects such as DDD, Event SOA, CQRS and Event Sourcing but more importantly, embraces Simple Design as the foundation to build clean, maintainable and scalable code.</p>
+    <p>In his spare time, Marco likes to work on developing his own ideas. Marco believes that in order for the mind to perform well, it needs to be in sync with the body, so he saves part of the day to workout. He is also interested in a variety of other subjects such as economics, science, astronomy and motorsports.</p>
