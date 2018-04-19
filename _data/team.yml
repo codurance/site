@@ -486,3 +486,13 @@
     <p>Marco understands the need to be pragmatic, reuse existing solutions, investigate 3rd party libraries and utilise shelf components. He has worked and spearheaded many time-critical projects.</p>
     <p>He’s particularly interested in subjects such as DDD, Event SOA, CQRS and Event Sourcing but more importantly, embraces Simple Design as the foundation to build clean, maintainable and scalable code.</p>
     <p>In his spare time, Marco likes to work on developing his own ideas. Marco believes that in order for the mind to perform well, it needs to be in sync with the body, so he saves part of the day to workout. He is also interested in a variety of other subjects such as economics, science, astronomy and motorsports.</p>
+
+- id: laullobet
+  name: Lau Llobet
+  image: /assets/custom/img/team/lau_llobet.png
+  role: Apprentice
+  fullDescription:
+    <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code, that was right after finishing his software engineering degree. Since then he has dealt with several field of programming practise such as research, startups and education taking this practices into account. He loves languages and their ability to define and deliver concepts.</p>
+    <p>He considers the pursue for a communicative attitude (both in teamworking and shaping code) as much as important as training the logical skills needed to make code just work.</p>
+    <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
+    
