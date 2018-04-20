@@ -273,18 +273,6 @@
   twitter: yefoakira
   github: miyamotoakira
 
-- id: marco
-  name: Marco Consolaro
-  image: /assets/custom/img/team/marco_consolaro.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Marco learned to code in Basic on an MSX at a young age. He didn't follow his father's wish for him to study chemistry but pursued instead what he always considered his natural vocation and graduated in Computer Science at Venice University Ca' Foscari in 2001.</p>
-    <p>He worked in many different teams in Italy and UK since, always looking to learn and cherishing what worked best in each one. When his journey took him to discover the Agile principles he quickly realized the effectiveness of such an approach in both technical and organizational sides.<br/>He now strongly believes that an iterative approach based on trust, transparency, self-organization and quick feedback loops is the real key to success for any team of any discipline, not just software development.<br/>
-    His dream and challenge are to see these principles understood and implemented at any level in businesses, including public administrations.</p>
-    <p>In his spare time he has co-founded two startups and is always looking for the next idea. But what he loves the most is traveling with the family and can't wait for his toddler son to grow up and learn to code... unless he prefers chemistry!</p>
-  twitter: consolondon
-  github: conso
-
 - id: nachogarcia
   name: Nacho García
   image: /assets/custom/img/team/nacho_garcia.jpg
@@ -496,4 +484,13 @@
     <p>Marco was first exposed to programming around age 12, shortly after his father bought him a wonderful ZX Spectrum 128K + 2. After that he developed a strong interest in programming leading him to pursue a career as a software developer. He has worked with Pascal, C, C++, Visual Basic, VB.NET, C#, Java and others.</p>
     <p>Marco has been working with the .NET Stack since 2007, but started his career with Java. Marco understands the need to be pragmatic, reuse existing solutions, investigate 3rd party libraries and utilise components off the shelf. He has worked and spearheaded many time-critical projects.</p>
     <p>He’s particularly interested in subjects such as DDD, Event SOA, CQRS and Event Sourcing but more importantly, embraces Simple Design as the foundation to build clean, maintainable and scalable code.</p>
-    <p>In his spare time, Marco likes to work on developing his own ideas. Marco believes that in order for the mind to perform well, it needs to be in sync with the body, so he saves part of the day to workout. He is also interested in a variety of other subjects such as economics, science, astronomy and motorsports which he was lucky enough to experience closely as part of his collaboration with Williams F1.</p>
+    <p>In his spare time, Marco likes to work on developing his own ideas. Marco believes that in order for the mind to perform well, it needs to be in sync with the body, so he saves part of the day to workout. He is also interested in a variety of other subjects such as economics, science, astronomy and motorsports.</p>
+
+- id: laullobet
+  name: Lau Llobet
+  image: /assets/custom/img/team/lau_llobet.png
+  role: Apprentice
+  fullDescription:
+    <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
+    <p>He considers the pursuit for a communicative attitude (both in teamworking and shaping code) as important as training the logical skills needed to write code.</p>
+    <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
