@@ -4,11 +4,14 @@ name: 2018-01-18-functions
 title: Functions
 date: 2018-01-18 07:00:00 +00:00
 author: Christian Panadero Martinez
+canonical:
+  name: Christian's personal blog
+  href: http://panavtec.me/functional-programming-notes-functions
 image:
    src: /assets/custom/img/blog/2018-01-18-functions/functions.jpg
 tags:
 - functional programming
-- Scala
+- scala
 - functions 
 - partial application
 - Higer order functions
