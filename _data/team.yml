@@ -494,3 +494,13 @@
     <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
     <p>He considers the pursuit for a communicative attitude (both in teamworking and shaping code) as important as training the logical skills needed to write code.</p>
     <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
+
+- id: johnhearn
+  name: John Hearn
+  image: /assets/custom/img/team/john_hearn.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>John has always loved building stuff and understanding how things work. As a teenager he would write computer games for his friends or build amplifiers in his bedroom out of old music equipment. Building on his interests, he studied Physics at university before becoming an Electronics Engineer, gradually specialising in embedded software and then software in general. During his career he has been lucky enough to work in a variety of companies from small startups to large corporations, in the private and public sectors and in three countries.</p>
+    <p>He considers programming to be an enormously creative and rewarding activity, and to do it well even more so. The best thing, for him, is that there is always so much more to learn.</p>
+    <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
+  github: johnhearn
