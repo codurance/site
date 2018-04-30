@@ -506,3 +506,13 @@
     <p>Now Pedro has joined Codurance with a mission, to convey and share his expertise and passion for quality software to the industry and the community.</p>
   twitter: ppardalj
   github: ppardalj
+
+- id: johnhearn
+  name: John Hearn
+  image: /assets/custom/img/team/john_hearn.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>John has always loved building stuff and understanding how things work. As a teenager he would write computer games for his friends or build amplifiers in his bedroom out of old music equipment. Building on his interests, he studied Physics at university before becoming an Electronics Engineer, gradually specialising in embedded software and then software in general. During his career he has been lucky enough to work in a variety of companies from small startups to large corporations, in the private and public sectors and in three countries.</p>
+    <p>He considers programming to be an enormously creative and rewarding activity, and to do it well even more so. The best thing, for him, is that there is always so much more to learn.</p>
+    <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
+  github: johnhearn
