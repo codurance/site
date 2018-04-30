@@ -1,5 +1,5 @@
 ---
-author: Raquel M. Carmena
+author: Raquel M Carmena
 layout: video
 name: intermediate-step-gilded-rose-kata
 image:
