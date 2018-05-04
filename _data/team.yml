@@ -506,3 +506,13 @@
     <p>He considers programming to be an enormously creative and rewarding activity, and to do it well even more so. The best thing, for him, is that there is always so much more to learn.</p>
     <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
   github: johnhearn
+
+- id: vfarah-if
+  name: Vincent Farah
+  image: /assets/custom/img/team/vincent_farah.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Vincent loves finding solutions to real world problems and making people’s lives easier through good solutions. His motto is keep things simple. He has worked for software houses, start-ups, telecommunications, manufacturing, financial, service industries and a few more since 1995.</p>
+    <p>It started in high school, working for a friend of a friend, setting up mail shots in clipper and dbase to earn pocket money. A few years after high school he ran into the same gentleman that remembered the success of his high school project, and invited him to join his software-house as an apprentice learning C++. Completing their apprenticeship program, and enjoying software development immensely, he started his professional path working in other industries within South Africa, refining his skills and interests using different programming languages and processes. Keen on getting international exposure, he immigrated to the UK with a focus on web technologies, developing his skills and passion for best practices, hence finally being part of the Codurance team.</p>
+    <p>Outside of work, you will often find him kayaking down rivers and navigating beautiful coast paths, downhill mountain biking and flying kites with his boys.</p>
+  github: vfarah-if
