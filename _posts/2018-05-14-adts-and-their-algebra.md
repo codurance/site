@@ -1,8 +1,8 @@
 ---
 layout: post
 asset-type: post
-name: adts-and-its-algebra
-title: Algebraic data types and its algebra
+name: adts-and-their-algebra
+title: Algebraic data types and their algebra
 description: The algebra of algebraic data types
 date: 2018-05-14 08:00:00 +00:00
 author: Christian Panadero Martinez
