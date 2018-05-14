@@ -75,7 +75,7 @@ Having defined our numbers and variables the last step is to define operations. 
 <h4>Sum types</h4>
 Also called disjoint unions in some languages, are types that can be either one value or another. Let's take Boolean for a moment as an example, Boolean can be True Or False. The cardinality for this type is: 1 (True) + 1 (False). Do you see why it is a sum type? To check the cardinality of a sum type we sum the cardinality of each of its possible values.
 
-Do you remember when we defined <a href="/functional-programming-notes-lists">list</a> in the previous post? If we fix the parameter to be unit (a single habitant) we can say that a List can be either <span class="crayon-inline"><code>Empty (Nil)</code></span> or a <span class="crayon-inline"><code>Node (::)</code></span>, therefore its structure is another sum type.
+Do you remember when we defined <a href="https://codurance.com/2018/04/27/lists/">list</a> in the previous post? If we fix the parameter to be unit (a single habitant) we can say that a List can be either <span class="crayon-inline"><code>Empty (Nil)</code></span> or a <span class="crayon-inline"><code>Node (::)</code></span>, therefore its structure is another sum type.
 
 There is an alternative encoding which uses <span class="crayon-inline"><code>Either[A, B]</code></span>, that type can be either A or B so our previous <span class="crayon-inline"><code>List</code></span> definition:
 
@@ -196,7 +196,7 @@ The cardinality of a function that goes from <span class="crayon-inline"><code>A
 <span class="crayon-inline"><code>1 ^ a = 1</code></span> is equivalent to: <span class="crayon-inline"><code>A => ()</code></span>
 
 <h3>Currying</h3>
-We discussed currying <a href="/functional-programming-notes-higher-order-functions">before</a> <span class="crayon-inline"><code>(A, B) => C</code></span> is the same as <span class="crayon-inline"><code>A => B => C</code></span>. We can formulate that in an algebraic way:
+We discussed currying <a href="https://codurance.com/2018/01/18/functions/">before</a> <span class="crayon-inline"><code>(A, B) => C</code></span> is the same as <span class="crayon-inline"><code>A => B => C</code></span>. We can formulate that in an algebraic way:
 
 <pre class="prettyprint"><code>(A, B) -> C ≅ A -> B -> C
 C ^ (A, B) ≅ C ^ B ^ A
