@@ -41,13 +41,15 @@
   twitter: stevelydford
   github: stevelydford
 
-- id: ana
-  name: Ana Nogal
-  image: /assets/custom/img/team/ana_nogal.jpg
-  role: Software Craftsman
-  fullDescription: <p>Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C. She had the opportunity to work in a wide variety of projects, with various languages and technologies for the past 20 years from client/server to web and mobile applications.</p>
-  twitter: anainogal
-  github: ananogal
+- id: david_hall
+  name: David Hall
+  image: /assets/custom/img/team/david_hall.jpg
+  role: Head of Business Development
+  fullDescription:
+    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
+    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
+    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
+  twitter: davidgrhall
 
 - id: anacelli
   name: Ana Rita Marchina
@@ -172,16 +174,6 @@
     <p>He is really into mechanical keyboards, blogging and loves snowboarding.</p>
   twitter: panavtec
   github: panavtec
-
-- id: david_hall
-  name: David Hall
-  image: /assets/custom/img/team/david_hall.jpg
-  role: Head of Business Development
-  fullDescription:
-    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
-    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
-    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
-  twitter: davidgrhall
 
 - id: charlie
   name: Carlos Esteban Raffellini
