@@ -23,7 +23,3 @@ group :jekyll_plugins do
   gem 'jekyll-pug'
 end
 
-group :test do
-  gem 'rspec'
-  gem 'test_xml'
-end
