@@ -35,7 +35,7 @@
 - id: stevelydford
   name: Steve Lydford
   image: /assets/custom/img/team/steve_lydford.jpg
-  role: Head of Delivery
+  role: Head of Delivery 
   fullDescription: >
       <p>Steve is a Software Craftsman and author with over 18 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
@@ -178,7 +178,7 @@
 - id: charlie
   name: Carlos Esteban Raffellini
   image: /assets/custom/img/team/carlos_raffellini.jpg
-  role: Software Craftsman
+  role: Software Craftsman 
   fullDescription:
     <p>Carlos has worked in the e-commerece industry for over four years. He enjoys sharing and improving his software development knowledge.</p>
     <p>He loves functional and object-oriented programming, refactoring, software quality and disciplines such as Test Driven Development.</p>
@@ -318,7 +318,7 @@
     <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
   twitter: andrzejrehmann
   github: hoto
-
+ 
 - id: danielbergquist
   name: Daniel Bergquist
   image: /assets/custom/img/team/daniel_bergquist.jpg
@@ -364,20 +364,20 @@
     <p>His other interests include his family, diy and motorcycling.</p>
   github: neilkidd-codurance
 
-- id: terrybalfour
-  name: Terry Balfour
+- id: terrybalfour 
+  name: Terry Balfour 
   image: /assets/custom/img/team/terry_balfour.jpg
-  role: Software Craftsman
+  role: Software Craftsman 
   fullDescription:
-    <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects.  He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p>
-    <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p>
+    <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects.  He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p> 
+    <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p> 
     <p>Outside of work Terry enjoys travelling, mountain biking and has recently started renovating a farm in rural France (even though he knows nothing about building….yet!)</p>
-  github: terrybalfourcodurance
+  github: terrybalfourcodurance 
 
-- id: danielperez
-  name: Daniel Pérez
+- id: danielperez 
+  name: Daniel Pérez 
   image: /assets/custom/img/team/daniel_perez.jpg
-  role: Software Craftsperson
+  role: Software Craftsperson 
   fullDescription:
     <p>At the age of twelve Daniel knew that he wanted to work with something related to computers. At nineteen he started studying Software Development at University of Girona.</p>
     <p>After he started attending the Barcelona Software Craftsmanship community he discovered many areas to improve in his software development skillset.</p>
@@ -386,8 +386,8 @@
   twitter: DaniArchel
   github: Archel
 
-- id: kevinokrah
-  name: Kevin Okrah
+- id: kevinokrah 
+  name: Kevin Okrah 
   image: /assets/custom/img/team/kevin_okrah.jpg
   role: Analyst Craftsman
   fullDescription:
@@ -405,7 +405,7 @@
     <p>He also finds particularly weird to talk about himself in third person. ;-)</p>
   twitter: _ascandroli
   github: ascandroli
-
+  
 - id: ggsbv
   name: Sandro Viljoen
   image: /assets/custom/img/team/sandro_viljoen.jpg
