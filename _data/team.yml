@@ -564,3 +564,13 @@
     <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
   twitter: thegreathathor
   github: AngelsG
+  
+- id: sdavies
+  name: Sam Davies
+  image: /assets/custom/img/team/sam_davies.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before joining Codurance he worked for a major UK retailer on their website, from developing a front-end framework to help product teams to move faster, to APIs those teams would use.</p>
+    <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
+    <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
+  github: upsd
