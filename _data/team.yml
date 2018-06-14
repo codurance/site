@@ -553,3 +553,14 @@
     <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
   twitter: cristina_verdi
   github: cristinaverdi
+
+- id: angelsg
+  name: Àngels Gilabert
+  image: /assets/custom/img/team/angels_gilabert.jpg
+  role: Head of Recruitment
+  fullDescription:
+    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
+    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
+    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
+  twitter: thegreathathor
+  github: AngelsG
