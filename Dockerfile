@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM docker.io/ruby:2.3.1
 
 RUN apt-get update 
 RUN apt-get install -y --no-install-recommends apt-utils
@@ -14,17 +14,19 @@ RUN gem install bundler
 RUN gem install rspec-core -v '3.4.1'
 RUN gem install jekyll
 
-ADD Gemfile /tmp/Gemfile 
-ADD Gemfile.lock /tmp/Gemfile.lock
-
-RUN cd /tmp && bundle install
-
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-WORKDIR /site
+WORKDIR /usr/local/src
 
-ADD start_site.sh /start_site.sh 
+COPY Gemfile .
+COPY Gemfile.lock .
+
+RUN bundle install
+
+COPY . .
+
+CMD bundle exec rake serve
+
 EXPOSE 4000
-ENTRYPOINT ["/start_site.sh"]
