@@ -540,3 +540,12 @@
     <p>In his free time he likes to go to the gym or play football, sing and compose songs, watch movies, read anything interesting and enjoy good (and healthy) meals.</p>
   github: fmaylinch
   
+- id: sdavies
+  name: Sam Davies
+  image: /assets/custom/img/team/sam_davies.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before joining Codurance he worked for a major UK retailer on their website, from developing a front-end framework to help product teams to move faster, to APIs those teams would use.</p>
+    <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
+    <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
+  github: upsd
