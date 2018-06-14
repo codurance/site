@@ -4,34 +4,61 @@
 
 You can serve the site through [docker](#installing-if-you-like-docker) or [natively](#installing-if-you-like-ruby) on your machine.
 
-### Installing if you like Docker
+### Building if you like Docker
 
 ##### TL;DR
-1. [install docker](https://www.docker.com/community-edition)
-- `docker build --tag codurance-site:local -f ./Dockerfile-local .`
-- ``docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local``
+1. [Install docker](https://www.docker.com/community-edition)
+1. [Install docker compose](https://docs.docker.com/compose/install/) (on Mac and Windows it comes with docker)
 
-##### More details
+Build image:
 
-You need to execute the following command to prepare an image and run a container:
+    docker-compose build
 
-```
-# you need to do this only once - this builds the container with all the dependencies for running the site
-docker build --tag codurance-site:local -f ./Dockerfile-local .
-```
-```
-# you need to run this every time you want to stand up the local server - it should watch for changes in the local files automatically though
-docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local 
-```
+Run container in a watch and auto rebuild mode:
 
-If you want to run a different rake target on the container start use:
+    docker-compose up
 
-```
-docker run -i -t -v `pwd`:/site -p 4000:4000 -e RAKE_TARGET="your_target" codurance-site:local
-```
+Remove container:
+    
+    docker-compose down
+
+Destroy container:
+
+    docker-compose down
+
+##### Detailed docker commands
+
+You need to do this only once - this builds the image with all the dependencies inside.
+If you change the project dependencies (Gemfile) then rebuild the image again.
+    
+    docker-compose build
+
+Run this to run the container with only the latest posts (faster rebuild).
+Source files are mounted inside the container from your host machine.
+Site will be rebuilt automatically when you change the source code.
+
+    docker-compose up
+
+Open site:
+
+    localhost:4000
+    
+Run this if you want all posts (slower rebuild):
+
+    docker-compose -f docker-compose.yml up
+
+If you want to start the container with a different command use:
+
+    docker-compose run site <command>
+
+Destroy the container and all volumes for this project.
+Run this if your container is broken.
+
+    docker-compose down
+
 ----
 
-### Installing if you like ruby
+### Building if you like ruby
 
 1. install rvm https://rvm.io/
 - `rvm install ruby`
@@ -82,23 +109,17 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 This problem happens with Linux systems:
 
-```
-header files for ruby at /usr/lib/ruby/include/ruby.h not found
-```
+    header files for ruby at /usr/lib/ruby/include/ruby.h not found
 
 in case `ruby-dev` package is not installed:
 
-```
-sudo apt-get install ruby-dev
-```
+    sudo apt-get install ruby-dev
 
 ## extconf.rb failed
 
 `zlib` is necessary for building `libxml2`:
 
-```
-sudo apt-get install zlib1g-dev
-```
+    sudo apt-get install zlib1g-dev
 
 ## Gem problems?
 
