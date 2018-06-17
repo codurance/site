@@ -529,3 +529,56 @@
     <p> He has been working with TDD since 2012 and with BDD (and outside-in TDD) since 2014, which he both advocates and practices regularly.</p>
     <p>Jon has given talks on TDD and BDD and has also delivered training programmes on Node, ES6, TDD and BDD</p>
   github: jon-acker
+  
+- id: fmaylinch
+  name: Ferran Maylinch
+  image: /assets/custom/img/team/ferran_maylinch.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Ferran has done full-stack, mobile and many trendy technologies, but he still remembers writing GOTO instructions in Basic many years ago on his ZX Spectrum.</p>
+    <p>He is always eager to learn and understand things at a deeper level. Since he also loves teaching, he worked on some code academies like Ironhack or Ubiqum.</p>
+    <p>In his free time he likes to go to the gym or play football, sing and compose songs, watch movies, read anything interesting and enjoy good (and healthy) meals.</p>
+  github: fmaylinch
+
+- id: cristinaverdi
+  name: Cristina Verdi
+  image: /assets/custom/img/team/cristina_verdi.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in  R+D+i departments  designing and building software for the citizens of the future.</p>
+    <p>She discovered her passion for software by creating digital, interactive maps using Geographic Information Systems technologies like ArcGis and maintaning GIS databases while studying environmental engineering in Barcelona.</p>
+    <p>She understands very well that due to society evolution business also evolves, In consequence, software has to be crafted in a way that it is resilient and flexible allowing constant adaption to changes in the environment. She has joined Codurance because she knows that crafting software in such a way, requires a high level of mastery, dedication, and passion. Also, she is aware about the key role that data plays in the present, and the challenges that its management brings into the tech scene; accordingly, she has special interest in the data engineering field.</p>
+    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day. </p>
+    <p>She constantly looks for ways to give back to the community what she receives from it. In her opinion, collaboration between peers, collectivity and mutualism are the key to success.</p>
+    <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
+  twitter: cristina_verdi
+  github: cristinaverdi
+
+- id: angelsg
+  name: Àngels Gilabert
+  image: /assets/custom/img/team/angels_gilabert.jpg
+  role: Head of Recruitment
+  fullDescription:
+    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
+    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
+    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
+  twitter: thegreathathor
+  github: AngelsG
+  
+- id: sdavies
+  name: Sam Davies
+  image: /assets/custom/img/team/sam_davies.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before joining Codurance he worked for a major UK retailer on their website, from developing a front-end framework to help product teams to move faster, to APIs those teams would use.</p>
+    <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
+    <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
+  github: upsd
+- id: magda-firek
+  name: Magdalena Kocerba-Firek
+  image: /assets/custom/img/team/magda_firek.jpg
+  role: Administrative Assistant
+  fullDescription:
+    <p>Magda is helping in office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
+    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
+    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
