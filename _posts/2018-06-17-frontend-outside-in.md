@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: frontend-outside-in
-title: Is it possible to TDD Outside-In on front-end?
+title: Is it possible to Outside-In TDD on front-end?
 date: 2018-06-17 08:10:00 +00:00
 author: Nacho García
 description: Learn to Outside-In TDD in front-end
@@ -15,12 +15,12 @@ tags:
 - outside-in
 - frontend
 ---
-Traditionally, because of lack of tools or knoledge, there have not been that many good practices in front-end development.
-You probably just made the jQuery work and if you were lucky you used selenium to automate the tests from a user perspective.
+Traditionally, because of lack of tools or knowledge, there have not been that many good practices in front-end development.
+You probably just made the jQuery work and if you were lucky you used Selenium to automate the tests from a user perspective.
 
-Which led to this
+Which led to this:
 
-![Inverted testing pyramid]({{ "/assets/custom/img/blog/2018-06-17-frontend-outside-in/inverted-pyramid.jpg" | absolute_url }})
+![Inverted testing pyramid]({{site.baseurl}}/assets/custom/img/blog/2018-06-17-frontend-outside-in/inverted-pyramid.jpg)
 
 An inverted testing pyramid, which gives slow feedback (I'm looking at you, 8h test battery) alongside [many other issues](https://martinfowler.com/bliki/TestPyramid.html).
 
@@ -51,12 +51,12 @@ These are going to be our next steps:
 5. Drive our design from that test, creating unit tests and implementing components
 6. Enjoy the robustness and speed of our tests
 
-If you want to see the final solution already, it is in [this repository](https://github.com/nachogarcia/learning-outside-in).
+If you already want to see the final solution, it is in [this repository](https://github.com/nachogarcia/learning-outside-in).
 
 ### Create App
 This is our acceptance criteria:
 
-> When I am in the hope page
+> When I am in the home page
 
 > Then 5 random phrases from Chuck Norris will show
 
@@ -73,7 +73,7 @@ If you are consuming a 3rd party and you're worried about the contract changing,
 
 If the contract is owned by your team, just don't break it ;).
 
-Sice we're using [axios](https://github.com/axios/axios) for the requests, we will use it for mocking.
+Since we're using [axios](https://github.com/axios/axios) for the requests, we will use it for mocking.
 
 To mount the application we will use [Enzyme's](http://airbnb.io/enzyme/docs/api/) mount (because we want the whole app) and [one little hack](https://github.com/facebook/jest/issues/2157) to wait for promises resolution.
 
@@ -134,9 +134,9 @@ It will probably remind you of how tests are written with tools like Selenium. I
 ### Outside-in TDD
 Ok. We have created our acceptance criteria from a user perspective. Now what.
 
-It's time for [TDD double loop]({{ "/2015-05-12-outside-in-tdd-part-1/" | absolute_url }}) to kick in!
+It's time for [TDD double loop]({{site.baseurl}}/videos/2015-05-12-outside-in-tdd-part-1/) to kick in!
 
-![TDD double loop]({{ "/assets/custom/img/blog/2018-06-17-frontend-outside-in/tdd-double-loop.png" | absolute_url }})
+![TDD double loop]({{site.baseurl}}/assets/custom/img/blog/2018-06-17-frontend-outside-in/tdd-double-loop.png)
 
 We will begin by creating unit tests for our container. For instance, let's test that it shows the phrases:
 
@@ -179,4 +179,4 @@ If we need to, now is the moment to implement a e2e test (maybe we want to test 
 
 If you didn't before, you might want to check the final solution, it is in [this repository](https://github.com/nachogarcia/learning-outside-in).
 
-Keep in mind that this solution is one of many to solve our needs. You can use many other frameworks like [Cypress](https://www.cypress.io/) or [Protractor](https://www.protractortest.org/) whith their advantages and disadvantages.
+Keep in mind that this solution is one of many to solve our needs. You can use many other frameworks like [Cypress](https://www.cypress.io/) or [Protractor](https://www.protractortest.org/) with their advantages and disadvantages.
