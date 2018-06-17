@@ -7,7 +7,7 @@ date: 2018-06-17 08:10:00 +00:00
 author: Nacho García
 description: Learn to Outside-In TDD in front-end
 image:
-   src: /assets/custom/img/blog/2018-06-17-frontend-outside-in/front-code.jpeg
+   src: /assets/custom/img/blog/2018-06-17-frontend-outside-in/front-code.jpg
 tags:
 - craftsmanship
 - software design
