@@ -43,12 +43,13 @@ But probably testing the correctness of the system is left to the e2e tests, mak
 Either for the sake of being able to do outside-in or to be able to leave the e2e to test browser integration and some happy paths instead of everything.
 
 These are going to be our next steps:
- 1. Create a brand new app with 1 use case
- 2. Mock our APIs
- 3. Mount our whole application
- 4. Start testing our acceptance criteria
- 5. Drive our design from that test, creating unit tests and implementing components
- 6. Enjoy the robustness and speed of our tests
+
+1. Create a brand new app with 1 use case
+2. Mock our APIs
+3. Mount our whole application
+4. Start testing our acceptance criteria
+5. Drive our design from that test, creating unit tests and implementing components
+6. Enjoy the robustness and speed of our tests
 
 If you want to see the final solution already, it is in [this repository](https://github.com/nachogarcia/learning-outside-in)
 
@@ -62,7 +63,7 @@ This is our acceptance criteria
 We have joined with our backend folks and we have come up with an API definition. This contract will go to a mock server for development purposes.
 
 In this case, we're going to create a React app using [Create react app](https://github.com/facebook/create-react-app).
-Of course this could have been any other framework, the methodology remains the same.
+Of course this could have been any other framework (or without one), the methodology remains the same.
 
 ### Setup tests (Mock API and mount App)
 We're going to mock our API so it returns a fixture with the example in our contract.
@@ -77,7 +78,7 @@ Sice we're using [axios](https://github.com/axios/axios) for the requests, we wi
 To mount the application we will be use [Enzyme's](http://airbnb.io/enzyme/docs/api/) mount (because we want the whole app)
 and [one little hack](https://github.com/facebook/jest/issues/2157) to wait for promises resolution.
 
-```javascript
+```
 import React from 'react'
 import { Provider } from 'react-redux'
 import MockAdapter from 'axios-mock-adapter'
@@ -107,7 +108,7 @@ There are discussions about how to call these kind of tests: Component testing, 
 
 But here we're going to see that the hardest part was how to name them and the setup, because the test itself if this simple:
 
-```javascript
+```
 import randomPhraseResponse from 'src/test/fixtures/randomPhraseResponse'
 import mountApp from 'src/test/setupAcceptanceTests'
 
@@ -140,12 +141,13 @@ It's time for [TDD double loop]({{ "/2015-05-12-outside-in-tdd-part-1/" | absolu
 
 We will begin by creating unit tests for our container. For instance, let's test that it shows the phrases:
 
-```javascript
+```
+import randomPhrases from 'src/test/fixtures/randomPhrases'
+
 describe('App', () => {
   let wrapper
 
   beforeEach(() => {
-    getRandomPhrases = jest.fn()
     wrapper = shallow(<App phrases={randomPhrases}/>)
   })
 
