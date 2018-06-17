@@ -2,12 +2,12 @@
 layout: post
 asset-type: post
 name: frontend-outside-in
-title: Is it possible to TDD Outside-In on front-end?
+title: Is it possible to TDD on front-end outside-in?
 date: 2018-06-18 12:10:00 +00:00
 author: Nacho García
-description: Learn to Outside-In TDD in front-end
+description:
 image:
-   src: /assets/custom/img/blog/2018-06-18-frontend-outside-in/front-code.jpeg
+   src: /assets/custom/img/blog/2018-06-18-frontend-outside-in/something.jpg
 tags:
 - craftsmanship
 - software design
@@ -15,23 +15,22 @@ tags:
 - outside-in
 - frontend
 ---
-Traditionally, by lack of tools or knoledge, there have not been that many good practices in front end development.
-You probably just made the Jquery work and if you were lucky you used selenium to automate the tests from a user perspective.
+Traditionally there have not been that many good practices in front end development:
+You just made the Jquery work and if you were lucky you used selenium to automate the tests from a user perspective.
 
 Which led to this
 
-![Inverted testing pyramid]({{ "/assets/custom/img/blog/2018-06-18-frontend-outside-in/inverted-pyramid.jpg" | absolute_url }})
+![Inverted testing pyramid]({{ "" | absolute_url }})
 
 An inverted testing pyramid, which gives slow feedback (I'm looking at you, 8h test battery) alongside [many other issues](https://martinfowler.com/bliki/TestPyramid.html)
 
-Latest frameworks (React, Vue, Angular...) are encouraging unit testing and people are embracing the power it provides.
+Latest frameworks (react, vue, angular...) are encouraging unit testing and people are embracing the power it provides.
 But we still have some way to go to be as mature as backend development is.
 
 ## How is it currently tested
 In the best case, probably you have:
-
- - Mounted (shallow rather) individual components, without their dependencies nor children and test their behaviour
- - Tested your functions separately: actions, reducers, services, store...
+ * Mounted (shallow rather) individual components, without their dependencies nor children and test their behaviour
+ * Tested your functions separately: actions, reducers, services, store...
 
 If you are doing TDD, of course you will have done that writing every test first, right?
 
@@ -56,9 +55,7 @@ If you want to see the final solution already, it is in [this repository](https:
 This is our acceptance criteria
 
 > When I am in the hope page
-
 > Then 5 random phrases from Chuck Norris will show
-
 We have joined with our backend folks and we have come up with an API definition. This contract will go to a mock server for development purposes.
 
 In this case, we're going to create a React app using [Create react app](https://github.com/facebook/create-react-app).
@@ -88,7 +85,7 @@ import App from '../App'
 import store from 'src/store'
 
 const axiosMocked = new MockAdapter(axios)
-axiosMocked.onGet(API_URL + '/jokes/random/5').reply(200, randomPhraseResponse)
+axiosMocked.onGet(`${API_URL}/jokes/random/5`).reply(200, randomPhraseResponse)
 
 async function mountApp() {
   const app = mount(<Provider store={store}>
