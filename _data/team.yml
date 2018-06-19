@@ -583,7 +583,6 @@
     <p>Magda is helping in office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
     <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
     <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
-
 - id: chris-bimson
   name: Chris Bimson
   image: /assets/custom/img/team/chris_bimson.jpg
@@ -594,3 +593,13 @@
     <p>Chris is an advocate of the principles of agile software development and believes that to be successful teams have to care about their craft and must constantly strive to improve it.</p>
     <p>When he is not writing code, or reading about writing code, he enjoys travelling, history and cricket.</p>
   github: christopher-bimson
+- id: mjansky
+  name: Mattsi Jansky
+  image: /assets/custom/img/team/mattsi_jansky.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Mattsi is an ambitious software developer that loves to learn and belives in "doing it right the first time", prioritising quality software over risky shortcuts.</p>
+    <p>Before joining Codurance he experienced a broad career across full-stack and back-end development roles in education, international e-commerce and financial technology focusing on the ASP.Net stack.</p>
+    <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
+  twitter: mattsijansky
+  github: Mattsi-Jansky
