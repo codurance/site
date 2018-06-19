@@ -46,6 +46,7 @@ var submitApplication = function (title, target) {
     var blog = $(fieldName(target, 'blog')).val();
     var message = $(fieldName(target, 'message')).val().replace('"', "'");
     var craftmanship = $(fieldName(target, 'craftmanship')).val().replace('"', "'");
+    var consent = $(fieldName(target, 'consent')).is(':checked');
 
     var errors = "";
     if (!firstName) {
@@ -66,6 +67,10 @@ var submitApplication = function (title, target) {
     if(!message) {
         errors += "<br>Tell us about yourself";
     }
+    if(!consent) {
+        errors += "<br>Accept privacy policy";
+    }
+
 
     if(errors) {
         $('#input-error-msg-' + target).show();
@@ -86,6 +91,7 @@ var submitApplication = function (title, target) {
     bodyMessage += 'Blog: ' + blog + '\r\n\r\n';
     bodyMessage += 'About Software Craftsmanship: ' + craftmanship + '\r\n\r\n';
     bodyMessage += 'About Him/Her ' + message + '\r\n';
+    bodyMessage += 'I Agree ' + consent + '\r\n';
 
     var emailAddresses = {
        'London': 'join-us@codurance.com',
