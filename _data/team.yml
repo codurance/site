@@ -519,6 +519,19 @@
     <p>Outside of work, you will often find him kayaking down rivers and navigating beautiful coastal paths, mountain biking and flying kites with his boys.</p>
   github: vfarah-if
 
+- id: gabriele 
+  name: Gabriele Cipriano 
+  image: /assets/custom/img/team/gabriele_cipriano.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Gabriele has been a science enthusiast all his life.</p>
+    <p>He started programming at the at age of 15, at that time he ended up developing a simplified version of Space Invaders in Assembly, not a smart choice technology-wise but since then he can not live without the daily sensation of making something work.</p>
+    <p>He strongly believes that code should be simple rather than easy, be readable and just enough to pass all the tests.</p>
+    <p>He is currently exploring functional programming paradigm and mainly dealing with JVM based languages.</p>
+    <p>When not coding you can probably find him cycling somewhere in the world or trying to remove excess coriander from his food.</p>
+  github: gummytrain
+  twitter: rovout
+
 - id: jonacker
   name: Jon Acker
   image: /assets/custom/img/team/jon_acker.jpg
