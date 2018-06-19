@@ -58,7 +58,20 @@
           <textarea name="{{ include.target }}-message" class="form-control" rows="10" id="message"></textarea>
         </div>
       </div>
+      <div class ="row">
+        <div class="col-md-12 margin-bottom-20">
+          <label class="form-check-inline u-check g-pl-25">
+            <input  name="{{include.target}}-consent" id="consent" class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+              <i class="fa" data-check-icon=""></i>
+            </div>
+            I Accept
+          </label>
+          <small class="form-text text-muted g-font-size-default g-mt-10">By filling the "I Accept" checkbox and submitting this form you expressly consent to <a href="https://codurance.com/policies/privacy" target="_blank">our privacy policy</a> </small>
+        </div>
+      </div>
     </div>
+    
     <div id="input-error-msg-{{ include.target }}" class="row" style="display: none;" >
       <div class="col-md-12 ">
         <div class="alert alert-danger">
@@ -81,8 +94,12 @@
         </div>
       </div>
     </div>
+
     <hr></hr>
+    
     <button type="button" class="btn-u btn-u-default" onclick="Custombox.modal.close();">Close</button>
     <button id="{{ include.target }}-apply-btn" type="button" class="btn-u btn-u-primary" onclick="submitApplication('{{ include.title }}', '{{ include.target }}');" >Apply</button>
+    <hr></hr>
+    
   </form>
 </div>
