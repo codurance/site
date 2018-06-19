@@ -574,6 +574,7 @@
     <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
     <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
   github: upsd
+
 - id: magda-firek
   name: Magdalena Kocerba-Firek
   image: /assets/custom/img/team/magda_firek.jpg
@@ -582,6 +583,16 @@
     <p>Magda is helping in office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
     <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
     <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
+- id: chris-bimson
+  name: Chris Bimson
+  image: /assets/custom/img/team/chris_bimson.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Chris is a programmer, team leader and certified Scrum Master who helps teams write clean, well-crafted code, create great products and deliver them regularly and reliably.</p>
+    <p>His first programming experience was typing BASIC listings from various magazines into an Atari 800XL some time in the late 80’s or early 90’s. He has been developing software for money since 2002, primarily on Windows, progressing from Delphi to .NET and into the cloud with Azure.</p>
+    <p>Chris is an advocate of the principles of agile software development and believes that to be successful teams have to care about their craft and must constantly strive to improve it.</p>
+    <p>When he is not writing code, or reading about writing code, he enjoys travelling, history and cricket.</p>
+  github: christopher-bimson
 - id: mjansky
   name: Mattsi Jansky
   image: /assets/custom/img/team/mattsi_jansky.jpg
