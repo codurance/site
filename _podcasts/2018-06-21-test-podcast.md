@@ -1,12 +1,12 @@
 ---
-author: Raquel M Carmena
+author: Sandro Mancuso
 layout: podcast
-name: test-podcast-sandro
+name: be-in-control-of-your-career
 image:
- src: /assets/custom/img/videos/intermediate-step-gilded-rose-kata.png
-title: "Test podcast Sandro"
-video-url: https://www.youtube.com/embed/4DTRY1u7cXg
-date: 2018-04-24 16:00:00 +00:00
+ src: /assets/custom/img/podcasts/2018_06_21_sandro_mancuso-it-career-energizer.png
+title: "Be In Control of Your Career"
+video-url: http://itcareerenergizer.com/e61/
+date: 2018-06-21 16:00:00 +00:00
 ---
 
-This is just a podcast test.
+Phil Burgess from IT Career Energizer has Sandro Mancuso as his guest to talk about careers. Sandro gives sound advice to all who are looking to succeed in whatever field they work in. 
