@@ -175,17 +175,6 @@
   twitter: panavtec
   github: panavtec
 
-- id: charlie
-  name: Carlos Esteban Raffellini
-  image: /assets/custom/img/team/carlos_raffellini.jpg
-  role: Software Craftsman 
-  fullDescription:
-    <p>Carlos has worked in the e-commerece industry for over four years. He enjoys sharing and improving his software development knowledge.</p>
-    <p>He loves functional and object-oriented programming, refactoring, software quality and disciplines such as Test Driven Development.</p>
-    <p>He embraces the Software Craftsmanship ideas and aspires to become a Software Craftsman.</p>
-  twitter: raffellinic
-  github: charlyraffellini
-
 - id: rachel
   name: Raquel M Carmena
   image: /assets/custom/img/team/raquel_m_carmena.jpg
@@ -543,16 +532,6 @@
     <p>Jon has given talks on TDD and BDD and has also delivered training programmes on Node, ES6, TDD and BDD</p>
   github: jon-acker
   
-- id: fmaylinch
-  name: Ferran Maylinch
-  image: /assets/custom/img/team/ferran_maylinch.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Ferran has done full-stack, mobile and many trendy technologies, but he still remembers writing GOTO instructions in Basic many years ago on his ZX Spectrum.</p>
-    <p>He is always eager to learn and understand things at a deeper level. Since he also loves teaching, he worked on some code academies like Ironhack or Ubiqum.</p>
-    <p>In his free time he likes to go to the gym or play football, sing and compose songs, watch movies, read anything interesting and enjoy good (and healthy) meals.</p>
-  github: fmaylinch
-
 - id: cristinaverdi
   name: Cristina Verdi
   image: /assets/custom/img/team/cristina_verdi.jpg
