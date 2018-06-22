@@ -17,7 +17,7 @@ layout: default
       <h2>{% t index-activity.title %}</h2>
     </div>
     <div class="row blog-boxes margin-bottom-40">
-      {% assign blog = site.posts %}
+      {% assign blog = site.posts | concat: site.podcasts | sort: 'date' | reverse %}
       {% include latest_highlights.html param=blog %}
 
       {% assign video = site.videos | reverse %}
@@ -26,6 +26,7 @@ layout: default
       {% assign event = site.events | reverse %}
       {% include latest_highlights.html param=event %}
     </div>
+
   </div>
 
 
