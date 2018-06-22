@@ -136,13 +136,15 @@ company-contact-form:
    name_placeholder: Nombre
    text_placeholder: Escribe tu mensaje aquí...
    button_title: Enviar
+publications-podcasts:
+   title: Podcasts
 publications-videos:
    title: Videos
 publications-books:
    title: Libros
    subtitle: The Software Craftsman&#58; de nuestro co-fundador Sandro Mancuso
 publications-all:
-   title: Todo
+   title: Todos
 publications-posts:
    title: Posts
 publications-tweet_feed:

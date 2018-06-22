@@ -143,6 +143,8 @@ publications-books:
    subtitle: The Software Craftsman&#58; by our co-founder Sandro Mancuso
 publications-all:
    title: All
+publications-podcasts:
+   title: Podcasts
 publications-posts:
    title: Posts
 publications-tweet_feed:

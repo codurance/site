@@ -30,6 +30,8 @@ collections:
     output: true
   posts:
     output: true
+  podcasts:
+    output: true
   videos:
     output: true
   events:
