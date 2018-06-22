@@ -1,5 +1,6 @@
 ---
 author: Sandro Mancuso
+asset-type: podcast
 layout: podcast
 name: software-craftsmanship-podcast
 image:
