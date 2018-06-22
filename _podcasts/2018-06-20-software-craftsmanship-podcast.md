@@ -7,7 +7,7 @@ image:
  src: /assets/custom/img/podcasts/2018_06_21-yellow-duck-podcast.jpg
 title: "A Conversation About Software Crafstmanship"
 video-url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328003169&amp;color=ff5500
-date: 2018-06-20 16:00:00 +00:00
+date: 2018-06-15 16:00:00 +00:00
 ---
 
 Marcin Kraszewski from [Devskiller's Yellow Duck Podcast](https://soundcloud.com/theyellowduckpodcast) invited Sandro Mancuso to talk about Software Craftsmanship.

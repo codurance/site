@@ -4,7 +4,7 @@ asset-type: podcast
 layout: podcast
 name: be-in-control-of-your-career
 image:
- src: /assets/custom/img/podcasts/2018_06_21_sandro_mancuso-it-career-energizer.png
+ src: /assets/custom/img/podcasts/2018_06_21_sandro_mancuso-it-career-energizer.jpg
 title: "Be In Control of Your Career"
 video-url: https://app.stitcher.com/splayer/f/137907/54837407
 date: 2018-06-21 16:00:00 +00:00
