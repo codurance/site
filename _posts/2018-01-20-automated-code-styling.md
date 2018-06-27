@@ -2,9 +2,9 @@
 author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
-title: "Automated Coding Style (or why not to use it)"
+title: "Autoformatting and Automated Coding Style (or why not to use it)"
 date: 2018-01-20 09:25:06
-description: Should you use an automated coding style system like Sonarqube? Let's look at the evolution of style
+description: Should you use an autoformatting tool or an automated coding style system like Sonarqube? Let's look at my thought evolution.
 image: 
     src: /assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
 tags: 
@@ -24,6 +24,12 @@ Then came the realization that we are on this together. Suddenly it was not abou
 
 But the problem with a coding style guide was that it could only be enforced through some kind of tool. Enter Stylecop and then SonarQube. Hey, presto, easy way to check that all the rules are being followed. But still require for people to run the tools. So why not add it to your build system? Furthermore, as it is already there why not fail the build if all the rules are not being followed.
 
-Of course, this has the issue that on legacy code the amount of rules broken is enormous (I've had a project with over 60k rule breaks). But hey, you just put a limit bigger than 0 to the rules that you break and presto, new code should fail the build, while old code will work. At some point that old code will be changed. So all is good. Meanwhile, your tool
+Of course, this has the issue that on legacy code the amount of rules broken is enormous (I've had a project with over 60k rule breaks). But hey, you just put a limit bigger than 0 to the rules that you break and presto, new code should fail the build, while old code will work. At some point that old code will be changed. So all is good. Meanwhile, your tool keeps giving warnings that you are ignoring, and after a while, you are completely immunized to it.
+
+And then, I was able to start applying techniques that I have learned (like pair programming, TDD, ...) and suddenly the need of tools to force code style guidelines dissapeared, every member of the team was responsible of each others code and style.
+
+There is also the lack of subtletly and special cases on tools that do check for style and do automated formatting (which was the original twitter complains). 
 
 # The Current Approach
+
+Can I still see use for something like Sonarqube? As an advisory tool there is. I don't think I will want to use it again as a build stopper. 
