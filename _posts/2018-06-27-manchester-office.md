@@ -20,7 +20,7 @@ Manchester is a wonderfully vibrant city with a lively tech scene and very activ
 
 We see Manchester as a prominent city when it comes to Agile and Software Craftsmanship, and quite a few companies are already keen to work with us.
 
-Manchester is a great city and a place where many of us from Codurance would love to be. We think that London, Manchester and Barcelona are some of the best cities in Europe to work and live. We envisage a close connection between the three offices. Good rail links between London and Manchester, and the many direct flights every day between all three cities will make it easy for our people to collaborate across our offices.
+Manchester is a great city and a place where many of us from Codurance would love to be. We think that London, Manchester and Barcelona are some of the best cities in Europe to work and live. We envisage a close connection between the three offices. Good rail links between London and Manchester, and the many direct flights every day between all three cities will make it easy for our people to collaborate across our offices. The office is 15 minutes walking from the Piccadilly station, next to Manchester Central Library. You can find it here in the [map](https://goo.gl/f1yWFa).
 
 ## What’s next?
 
