@@ -4,7 +4,7 @@ asset-type: post
 name: manchester-office
 title: Manchester Office
 date: 2018-06-27 00:05:00 +00:00
-author: Sandro Mancuso
+author: Sandro Mancuso, Mashooq Badar
 description: Manchester Office
 image:
    src: /assets/custom/img/blog/2018-06-27-manchester-office.jpg
