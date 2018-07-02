@@ -584,3 +584,13 @@
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
+  
+  id: shamid
+  name: Sarirah Hamid
+  image: /assets/custom/img/team/sarirah_hamid.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Sarirah has a passion for building purposeful applications. Before joining Codurance, she worked on developing software that uses NLP to collate and organise qualitative data for analysing consumer trends. She enjoys the process of talking with clients and honing in on asking the right questions to decipher business needs and translating that at a macro design level.</p>
+    <p>Firmly believing that software development holds space for a creative mindset, she is keen to learn, share and collaborate on how to craft elegant code that builds clean solutions to real world problems.</p>
+    <p>Languages of choice - C#, Python.</p><p>Curious about - Machine learning techniques and ethical AI</p>
+    <p>Outside of work she enjoys photography, yoga and baking whilst listening to podcasts.</p>
