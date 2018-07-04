@@ -58,14 +58,6 @@
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
 
-- id: alex
-  name: Alessandro Di Gioia
-  image: /assets/custom/img/team/alex_digioia.jpg
-  role: Software Craftsman
-  fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
-  twitter: Parajao
-  github: Parajao
-
 - id: matthew
   name: Matthew Butt
   image: /assets/custom/img/team/matthew_butt.jpg
@@ -105,14 +97,6 @@
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
   twitter: srodrigoDev
   github: srodrigo
-
-- id: hkoundi
-  name: Halima Koundi
-  image: /assets/custom/img/team/halima_koundi.jpg
-  role: Software Craftswoman
-  fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance, Halima has levelled up her engineering skills and embraced the values of software craftsmanship. As a skilled professional she aims at delivering value by building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing diversity to the tech community.</p>
-  twitter: hkoundi
-  github: halimakoundi
 
 - id: alvarogarcia
   name: Alvaro Garcia
@@ -584,7 +568,15 @@
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
-
+- id: shamid
+  name: Sarirah Hamid
+  image: /assets/custom/img/team/sarirah_hamid.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Sarirah has a passion for building purposeful applications. Before joining Codurance, she worked on developing software that uses NLP to collate and organise qualitative data for analysing consumer trends. She enjoys the process of talking with clients and honing in on asking the right questions to decipher business needs and translating that at a macro design level.</p>
+    <p>Firmly believing that software development holds space for a creative mindset, she is keen to learn, share and collaborate on how to craft elegant code that builds clean solutions to real world problems.</p>
+    <p>Languages of choice - C#, Python.</p><p>Curious about - Machine learning techniques and ethical AI</p>
+    <p>Outside of work she enjoys photography, yoga and baking whilst listening to podcasts.</p>
 - id: scottedwards
   name: Scott Edwards
   image: /assets/custom/img/team/scott_edwards.jpg
