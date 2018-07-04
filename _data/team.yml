@@ -584,3 +584,14 @@
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
+
+- id: scottedwards
+  name: Scott Edwards
+  image: /assets/custom/img/team/scott_edwards.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Scott is a passionate software developer who believes in doing things right the first time. He particularly enjoys working C# and SQL Server and is excited to accelerate his learning curve drastically working as an apprentice at Codurance.</p>
+   <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
+   <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
+  twitter: scotteza
+  github: scotteza
