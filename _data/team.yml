@@ -568,8 +568,7 @@
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
-  
-  id: shamid
+- id: shamid
   name: Sarirah Hamid
   image: /assets/custom/img/team/sarirah_hamid.jpg
   role: Apprentice
@@ -578,3 +577,13 @@
     <p>Firmly believing that software development holds space for a creative mindset, she is keen to learn, share and collaborate on how to craft elegant code that builds clean solutions to real world problems.</p>
     <p>Languages of choice - C#, Python.</p><p>Curious about - Machine learning techniques and ethical AI</p>
     <p>Outside of work she enjoys photography, yoga and baking whilst listening to podcasts.</p>
+- id: scottedwards
+  name: Scott Edwards
+  image: /assets/custom/img/team/scott_edwards.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Scott is a passionate software developer who believes in doing things right the first time. He particularly enjoys working C# and SQL Server and is excited to accelerate his learning curve drastically working as an apprentice at Codurance.</p>
+   <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
+   <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
+  twitter: scotteza
+  github: scotteza
