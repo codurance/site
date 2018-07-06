@@ -30,7 +30,7 @@
 
 - id: fabric
   name: Construyendo Microservicios Seguros con Microsoft Service Fabric
-  author: Steve Lydford & Alessandro Di Gioia
+  author: Steve Lydford
   description: Aprenda cómo construir microservicios de alta disponibilidad y seguros, con Service Fabric y Azure
   page: /services/training/service-fabric-training
 
@@ -40,8 +40,3 @@
   description: Aprenda a utilizar las herramientas de Docker, para permitir continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
-- id: crafting_swift_apps
-  name: Craftsmanship Aplicado a Apps para Mobiles en Swift
-  author: Ana Nogal
-  description: Para desarrolladores móviles experimentados que desean crear aplicaciones fiables.
-  page: /services/training/crafting-swift-mobile-apps
