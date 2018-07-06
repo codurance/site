@@ -40,8 +40,4 @@
   description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
-- id: crafting_swift_apps
-  name: Crafting Swift Mobile Apps
-  author: Ana Nogal
-  description: For experienced mobile developers that want to build reliable apps.
-  page: /services/training/crafting-swift-mobile-apps
+

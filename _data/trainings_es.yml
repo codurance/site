@@ -40,8 +40,3 @@
   description: Aprenda a utilizar las herramientas de Docker, para permitir continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
-- id: crafting_swift_apps
-  name: Craftsmanship Aplicado a Apps para Mobiles en Swift
-  author: Ana Nogal
-  description: Para desarrolladores móviles experimentados que desean crear aplicaciones fiables.
-  page: /services/training/crafting-swift-mobile-apps
