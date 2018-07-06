@@ -30,7 +30,7 @@
 
 - id: fabric
   name: Construyendo Microservicios Seguros con Microsoft Service Fabric
-  author: Steve Lydford & Alessandro Di Gioia
+  author: Steve Lydford
   description: Aprenda cómo construir microservicios de alta disponibilidad y seguros, con Service Fabric y Azure
   page: /services/training/service-fabric-training
 

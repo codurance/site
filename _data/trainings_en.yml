@@ -30,7 +30,7 @@
 
 - id: fabric
   name: Building Reliable Microservices with Microsoft Service Fabric
-  author: Steve Lydford & Alessandro Di Gioia
+  author: Steve Lydford
   description: Learn how to build highly available and reliable microservices with Service Fabric and Azure
   page: /services/training/service-fabric-training
 
