@@ -581,3 +581,14 @@
    <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
   twitter: scotteza
   github: scotteza
+
+- id: chrisreinmuller
+  name: Chris Reinmuller
+  image: /assets/custom/img/team/chris_reinmuller.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Chris has a background in digital production and has helped a research institute in Switzerland to communicate about their rocket and non-rocket science for a couple of years, primarily by developing web services and improving web user experience. During this time he had a sniff around more ambitious IT projects and that made him go back to university and learn about information systems and operations research. Bursting with new knowledge, he is now keen on feeding his potential into a new career as a software engineer.</p>
+   <p>He’s joining Codurance as an aspiring Software Craftsmanship Apprentice and has started the journey towards mastery of delivering high-quality software. His favourite hobbyhorse is Java and he embraces test-driven development and the extreme programming methodology.</p>
+   <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is an inveterate Trekkie.</p>
+  twitter: SIR_XOPHER
+  github: SirXOPHER
