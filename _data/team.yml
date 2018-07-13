@@ -371,7 +371,7 @@
 - id: ggsbv
   name: Sandro Viljoen
   image: /assets/custom/img/team/sandro_viljoen.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Sandro discovered his unmistakable passion for programming in 2016. From the onset, he became obsessed with doing things the right way. His hobby quickly became his addiction, as he spent any free time honing his skills.</p>
     <p>With a few IT certificates behind his name, he joined the Project codeX program in 2017 for an arduous year of Web Development in JavaScript, under the mentorship of a formidable Software Craftsman.</p>
@@ -385,7 +385,7 @@
 - id: safouraboyot
   name: Safoura Boyot
   image: /assets/custom/img/team/safoura_boyot.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Safoura has been working as a software developer and team leader in Java projects for a number of years.</p>
     <p>Her passion for coding started when she first used Visual Basic in high school and immediately she knew that she wanted to become a software developer in the future.</p>
@@ -410,7 +410,7 @@
 - id: tonygeorgiadis
   name: Tony Georgiadis
   image: /assets/custom/img/team/tony_georgiadis.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>It was at the age of 15 when Tony wrote his first program, a mIRC script for chat room battles (kicks, bans, room take overs etc.) and realised that coding is what he really loves to do!</p>
     <p>Tony studied Computer Science in Greece and then obtained his Masters Degree in Holland. As part of his thesis he created a Serious Computer Game that aimed at preventing alcohol addiction.</p>
