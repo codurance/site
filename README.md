@@ -124,3 +124,9 @@ in case `ruby-dev` package is not installed:
 ## Gem problems?
 
 If other things don't make sense - follow this guide to clear out your cached gems and start the process again: https://coderwall.com/p/x3z2ag/cleanup-rvm
+
+## Problems with installation of ffi gem on MacOS
+
+To install ffi gem in the newer versions of MacOS you need install Xcode tool first. After restarting your terminal, the following command need to be executed:
+
+    brew install libtool automake autoconf

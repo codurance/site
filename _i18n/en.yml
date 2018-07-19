@@ -3,6 +3,7 @@ office:
    lat: "51.523876"
    lon: "-0.100533"
    central: London
+   man: Manchester
 analytics:
   google-id: UA-46289079-1
 sections:
