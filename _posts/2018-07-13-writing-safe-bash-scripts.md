@@ -8,9 +8,9 @@ canonical:
     name: my personal blog
     href: https://alvarogarcia7.github.io/blog/2018/07/13/writing-safe-bash-scripts/
 image:
-    src: /assets/custom/img/blog/too-many-cooks.jpg
+    src: /assets/custom/img/blog/Watch-Your-Step-Label-LABEL_TRIANGLE_04_1000.png
     attribution:
-        text: by Adi Bolboaca
+        text: by compliancesigns.com
 tags:
 - bash
 - safety
