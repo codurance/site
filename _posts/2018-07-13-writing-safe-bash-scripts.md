@@ -470,6 +470,7 @@ function process_file {
 
 
 The full script:
+
 ```
 $ cat s2.sh
 #!/usr/bin/env bash
