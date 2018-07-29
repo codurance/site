@@ -97,4 +97,4 @@ In conclusion, I found argument maps to be a great way to distill a piece of tex
 
 ------
 
-Many thanks to my collegue <a href="publications/author/raquel-m-carmena/">**Rachel M. Carmena**</a> for her review, suggestions and encourangement.
+Many thanks to my collegue <a href="publications/author/raquel-m-carmena/">**Rachel M. Carmena**</a> for her review, suggestions and encouragement.
