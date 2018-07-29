@@ -20,7 +20,7 @@ On the other hand I’ve been lurking on [Kialo](https://www.kialo.com/) and rea
 
 So I thought it might be interesting to break down Ron’s #noestimates reasoning using this technique and maybe learn something new on the way.
 
-To create the diagram the first thing to do ts to extract the claims from the text. It is normal in these situations for some claims to be repeated, mixed together and restated in other terms. What’s great about the argument map is that at the end of the process not only do you have a distilled version of the original claims but, more importantly, a list of the assumptions or premises underlying the argument. These are often the places where disagreement is hiding and can be very enlightening.
+To create the diagram the first thing to do is to extract the claims from the text. It is normal in these situations for some claims to be repeated, mixed together and restated in other terms. What’s great about the argument map is that at the end of the process not only do you have a distilled version of the original claims but, more importantly, a list of the assumptions or premises underlying the argument. These are often the places where disagreement is hiding and can be very enlightening.
 
 The following is an extract from Ron's post with the claims highlighted in **bold**. Between each numbered point I’ve added a note (as objectively as possible) to map the text to one or more unambiguous claims. Let’s see how it goes.
 
@@ -71,7 +71,7 @@ And last but not least we have the headline claim about the hashtag being a good
 
 The next step is to translate the claims and their supporting claims into a tree structure. The online mind mapping tool MindMup has a free [argument visualizer](http://argument.mindmup.com/) which works great. This is the result.
 
-![Argument Map](/assets/custom/img/blog/2018-07-29-argument-maps/argument-map.png)
+![Argument Map]({{site.baseurl}}/assets/custom/img/blog/2018-07-29-argument-maps/argument-map.png)
 
 It was actually quite hard to be totally objective but I think it gives a faithful summary of the flow of reasoning. At the top we have the main contention and underneath a hierarchy of other claims that support it.
 
