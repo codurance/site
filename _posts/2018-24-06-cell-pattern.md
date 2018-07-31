@@ -14,7 +14,6 @@ image:
 tags: 
 - Design Patterns
 ---
-# Inspiration
 In an animal body, signals are sent from one area of the body to another through the endocrine system (and other systems). The hormonal transport system. What happens is that a cell will do some processing (often based on some form of input or trigger) and after the processing, it is able to emit a hormone. That hormone is transported in the endocrine system until it reaches a cell with a matching receptor. The cell with the matching receptor will recieve the hormone and begin doing some processing of its own.
 
 For me, the big difference in the computational ability of a biological system and an digital system is that a biological system is massively parallelisable. Each cell works completely independently of each other and all processing is fire and forget.
