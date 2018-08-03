@@ -4,7 +4,7 @@ asset-type: post
 name: e-reader-story
 title: An E-reader story
 date: 2018-07-16 08:00:00 +00:00
-author: Jorge Gueorguiev García
+author: Jorge Gueorguiev Garcia
 description: An E-reader story
 image:
    src: /assets/custom/img/blog/2018-07-16-e-reader-story/irex_iliad.jpg
