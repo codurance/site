@@ -592,3 +592,13 @@
    <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is an inveterate Trekkie.</p>
   twitter: SIR_XOPHER
   github: SirXOPHER
+
+- id: atorres
+  name: André Guelfi Torres
+  image: /assets/custom/img/team/andre_torres.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Andre is a software developer from Brazil that discovered his passion for programming while working as tech support for an ERP in the fashion industry, later he become a developer in the same company working with Delphi.</p>
+    <p>A year and half later he joins another company as the only developer in the company to build an event management system using Delphi.</p>
+    <p>In 2017 he decides to move to Europe and lands a job in the gaming industry in London, where he stayed working in the payments team for almost a year, until he joins codurance.</p>
+  github: andre2w
