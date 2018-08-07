@@ -82,19 +82,19 @@ interface of the system have a more generic and broader responsibility.
 Quite often, these methods are responsible to trigger loads of business
 rules and/or complex workflows.
 
-Imaging that the input to our system is a huge XML file representing a
+Imagine that the input to our system is a huge XML file representing a
 trade. Also imagine that the first method invoked to handle that is
-called "processTrade(tradeXML)", located in a TradeService class. What
+called `processTrade(tradeXML)`, located in a TradeService class. What
 is the responsibility of this method? It is to process a trade, right?
 Should it have a different name? Our system is expected to "process" all
 trades received so it is fair to say that the first method handling the
 request (or reading from a queue) should be called processTrade.
 
-In another example, imagine that an user added a few items to her
+In another example, imagine that a user added a few items to her
 shopping basket (web application), provided some payment details and
 clicked on the "place order" button. In our back end, we will have a
 method handling this request that probably will be called something like
-placeOrder(order). Fair, right?
+`placeOrder(order)`. Fair, right?
 
 ###Developing an idea
 
@@ -104,7 +104,7 @@ the code is from the system's interface, the narrower and more
 specific its responsibility will be.</blockquote> 
 
 In both examples above, by their names, you can argue that the methods
-processTrade and placeOrder have a single responsibility. One processes
+`processTrade` and `placeOrder` have a single responsibility. One processes
 the incoming trade and the other places a customer order. So, when
 developers take into account **just** the *outside view* of the SRP,
 they feel comfortable to add as much code as they need to satisfy these
@@ -122,7 +122,7 @@ a single reason to change it. This leads to a complementary idea.
 
 
 <blockquote>In general, the closer the class is to the system's interface, the
-more delegation the class will do. The further way the class is from
+more delegation the class will do. The further away the class is from
 the system's interface, less delegation the class will do.</blockquote>
 
 A general example would be, in a traditional Java web application, the
