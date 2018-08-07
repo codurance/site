@@ -61,9 +61,11 @@ Run this if your container is broken.
 
 As docker "18.06.0-ce-win72 (19098)", you need to setup COMPOSE_CONVERT_WINDOWS_PATHS environment variable and restart the docker service before running `docker-compose build`:
 
-	`SET COMPOSE_CONVERT_WINDOWS_PATHS=1`
-	`net stop com.docker.service`
-	`net start com.docker.service`
+	```
+	SET COMPOSE_CONVERT_WINDOWS_PATHS=1
+	net stop com.docker.service
+	net start com.docker.service
+	```
 	
 Then you can run `docker-compose build`
 
