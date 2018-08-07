@@ -30,6 +30,10 @@ task :servequick do
   sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
 end
 
+task :servequickes do
+  sh 'bundle exec jekyll serve --config _config.yml,_config_es.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
+end
+
 task :en do
   sh 'rm -rf _site'
   sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --incremental --limit_posts 3'

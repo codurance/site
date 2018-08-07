@@ -240,6 +240,27 @@ p Another harsh rule. One that in production will depend a lot on the optimizati
 
 h3 Description
 
+p All sequences, collections used need to be infinite collections. You can't use collections that need to have a fixed size specified.
+
+h3 Expected Outcome
+
+p
+
+   strong Lazy Evaluation of Sequences
+   |
+   | Lazyness has some considerations regarding perfomance and not performing difficult calculations when they are not needed. Furthermore, reading from a file, database or network can be consideded an infinite sequence. 
+
+hr
+
+h2
+   a(class="anchor" name="oneargumentfunctions")
+   img.bullet-image(src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png")
+   | One argument functions
+
+p Personally, I have found this rule the most difficult to apply. There are some cases at the moment that I have found either very difficult or creating a massive number of additional functions.
+
+h3 Description
+
 p Each function should have a single parameter. You need to be explicit, just using the fact that the language works by automatically applying currying is not enough (Haskel, F#, ...) The parameter can be a structure/map or some other complex type (don't think this restricts to primitives).
 
 h3 Expected Outcome
