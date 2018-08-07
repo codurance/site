@@ -593,3 +593,13 @@
     <p>Javier appreciates the beauty and geometry in things and nature. So, he loves capturing  a panoramic or a macro picture. He is husband, father of a little kid, and loves sharing moments with his family. He enjoys riding his electric longboard to commute to work.</p>
   twitter: HJavixCS
   github: HJavixCS
+
+- id: luismoral
+  name: Luis Moral
+  image: /assets/custom/img/team/luis_moral.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Luis started poking with computers as kid when he got his first MSX1 computer, a cassette recorder and a QBasic book; first playing games, then trying to develop them. He has always liked to build things, so he stepped from legos to building stuff in the computer.</p>
+   <p>Since he graduated from University in 2003, he has been working mainly as a Java backend developer in various cities and industries, increasing his love for it but decreasing his hope to find a place where quality standards where not view as a time buffer to reduce the development time when suited.</p>
+   <p>He joined Codurance in his quest to find a place with code quality standards, motivated colleages, where he can learn and share his experiences with others and go home feeling that he has done a good job.</p>
+  github: luis-moral
