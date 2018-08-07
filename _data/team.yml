@@ -582,3 +582,13 @@
    <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is an inveterate Trekkie.</p>
   twitter: SIR_XOPHER
   github: SirXOPHER
+
+- id: luismoral
+  name: Luis Moral
+  image: /assets/custom/img/team/luis_moral.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Luis started poking with computers as kid when he got his first MSX1 computer, a cassette recorder and a QBasic book, first playing games, then trying to develop them. He has always liked to build things, so he steeped from legos to building stuff in the computer.</p>
+   <p>Since he graduated from University in 2003, he has been working mainly as java backend developer in various cities and industries, increasing his love for it but decreasing his hope to find a place where quality standards where not view as a time buffer to reduce the development time when suited.</p>
+   <p>He joined Codurance in his quest to find a place with code quality standards, motivated colleages, where he can learn and share his experiences with others and go home feeling that he a made a good job.</p>
+  github: luis-moral
