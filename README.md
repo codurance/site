@@ -56,6 +56,20 @@ Run this if your container is broken.
 
     docker-compose down
 
+	
+##### Notes for Windows users
+
+As docker "18.06.0-ce-win72 (19098)", you need to setup COMPOSE_CONVERT_WINDOWS_PATHS environment variable and restart the docker service before running `docker-compose build`:
+
+	SET COMPOSE_CONVERT_WINDOWS_PATHS=1
+	net stop com.docker.service
+	net start com.docker.service
+	
+Then you can run `docker-compose build`
+
+Starting the container with `docker-compose up` doesnt seem to work but starting it with `docker run -p 4000:4000 -d <imageid>` does, the downside
+is that you will have to run `docker-compose build`, `docker images` and `docker run -p 4000:4000 -d <imageid>` to check each update you make.
+	
 ----
 
 ### Building if you like ruby
