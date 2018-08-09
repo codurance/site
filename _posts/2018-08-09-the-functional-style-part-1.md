@@ -3,7 +3,7 @@ author: Richard Wild
 layout: post
 asset-type: post
 title: "The Functional Style - Part 1"
-date: 2018-08-07 00:00:00
+date: 2018-08-09 00:00:00
 description: A design pattern reminiscent of the command pattern mixed with an event bus
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
@@ -41,7 +41,7 @@ Functions with this character are said to be “pure.” When functions are not 
 
 > Eliminating side effects, i.e., changes in state that do not depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming.
 
-Functional programming, therefore, is programming so as to avoid these side effects wherever possible. But understanding it this way intellectually was insufficient for me to see the real strength of programming in the functional style. In the end it was learning Clojure, which also taught me how to make good use of the Java streams API, that showed me the benefits of functional programming. I now find I view programming problems differently, and the functional style permits me to express my intent much more directly in my code.
+Functional programming, therefore, is programming so as to avoid these side effects wherever possible. But understanding it this way intellectually was insufficient for me to see the real strength of programming in the functional style. In the end it was learning Clojure, which also taught me how to make good use of the Java streams API, that showed me the benefits of functional programming. I find that I now view programming problems differently, and the functional style permits me to express my intent much more directly in my code.
 
 ## Side effects and imperative languages.
 
@@ -53,7 +53,7 @@ Elements in most imperative programming languages can be broken into three class
 - Statements: assign a variable, reassign a variable, call a procedure, etc.
 - Expressions: code that yields a value.
 
-Of these three, statements are the imperative part of imperative programming. Statements cause side effects. Now, almost everyone agrees now that global variables are a Bad Thing; they’re bad because a global variable can be changed at any time by a statement anywhere in the code, which makes the code very difficult to understand and debug. This is why we prefer to keep globally-accessible data constant. Functional programming takes this idea further, and asserts that it is better not even to modify local, private variables.
+Of these three, statements are the imperative part of imperative programming. Statements cause side effects. Now, almost everyone agrees that global variables are a Bad Thing. Why? They’re bad because a global variable can be changed at any time by a statement anywhere in the code, which makes the code very difficult to understand and debug. This is why we prefer to keep globally-accessible data constant. Functional programming takes this idea further, and asserts that it is better not even to modify local, private variables.
 
 Functional programming is therefore programming without statements, more or less. In general only control structures and expressions are used, and then even the control structures are actually expressions. Maybe you’re wondering what I mean by that. You almost certainly already know an example and possibly use it regularly. Consider this (stupid) code:
 
