@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
-- Functional Programming
+- functional programming
 ---
 # An introduction.
 
