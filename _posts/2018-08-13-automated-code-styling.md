@@ -2,17 +2,17 @@
 author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
-title: "Autoformatting and Automated Coding Style (or why not to use it)"
-date: 2018-08-07 08:01:00
-description: Should you use an autoformatting tool or an automated coding style system like Sonarqube? Let's look at my thought evolution.
+title: "Automated Coding Style (or why not to use it)"
+date: 2018-08-11 08:01:00
+description: Where I describe my issues with tools like Stylecop and Sonarqube for documentation comments.
 image: 
-    src: /assets/custom/img/blog/2018-01-05-tetris-failed-experiment-next-steps/tetris.png
+    src: /assets/custom/img/blog/2018-08-13-automated-code-styling/caffeine-coffe-cup-6347.jpg
 tags: 
 - software processes
 ---
 # Intro
 
-Recently I have the "privilege" of going through some Javadoc on a project that needs to move from Java 7. The linter for javadoc was tightened for Java 8. Of course, the project did fail to build on Java 8. It fail on so many javadocs.
+Recently I have had the "privilege" of going through some Javadoc on a project that needs to move from Java 7. The linter for javadoc was tightened for Java 8. Of course, the project did fail to build on Java 8. It fail on so many javadocs.
 
 # The Evolution
 
@@ -26,13 +26,37 @@ Clearly having the document wasn't enough. Here enters stylecop, as an "easy" wa
 
 The issue is that on legacy code the amount of rules broken is enormous (I've had a project with over 60k rule breaks). But hey, you just put a limit bigger than 0 to the number of breaks that you will allow and presto, new code should fail the build, while old code will work. At some point that old code will be changed. So all is good. Meanwhile, your tool keeps giving warnings that you are ignoring, and after a while, you are completely immunized to it.
 
-But is not the only issue. It is not even the bad one.
+But is not the only issue. It is not even the bad one. Look at this code below
+
+```
+/**
+ *
+ *
+ */
+```
+
+That is a Javadoc that I have seen (multiple times, in fact).
+
+Because I have used far more C# through the years, I can give you also some bad examples of documentation comments on it, like:
+
+```
+/// <summary>
+/// The constructor
+/// <summary>
+```
+
+Both are enough to pass SonarQube or Stylecop (rules can be tightened a bit). But I hope we can agree that they are not useful and a waste of screen space and developer effort. Furthermore, there is a lack of subtletly and handling of special cases on tools that do check coding style. Because sometimes you need to apply logic that is just too specific for one example to be worthy of spending time codifying that "rule".
+
+# The Now
+
+I learned to dislike using an automated tool for documentation comments. They are just not fit for the task. I have my own thinking about when to use documentation comments:
+
+- First, only use documentation comments on a public API, when people are going to use your library without being able to easily see the source code. I will not consider having the repo open to qualify as easily. Only if the code is in the same project can be considered so.
+- Second, the only true way of deciding if documentation code is needed is through any of: Pair Programming, Code Review, someone asking questions.
+- Third, the most important reasons for the documentation to exist are: to explain what is doing, how the parameters will be used, and what is the meaning of the return.
 
 
-And then, I was able to start applying techniques that I have learned (like pair programming, TDD, ...) and suddenly the need of tools to force code style guidelines dissapeared, every member of the team was responsible of each others code and style.
 
-There is also the lack of subtletly and special cases on tools that do check for style and do automated formatting.
-
-# The Current Approach
-
-Can I still see use for something like Sonarqube? As an advisory tool there is. I don't think I will want to use it again as a build stopper. 
+<sub>
+Photo by Kaboompics .com from Pexels
+</sub>
