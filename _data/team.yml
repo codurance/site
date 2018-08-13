@@ -443,7 +443,7 @@
 - id: pjbaraud
   name: Pierre-Jean Baraud
   image: /assets/custom/img/team/pierre_jean_baraud.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Pierre-Jean's first attempt at Clean Code was at the age of 2 when he tried to shampoo his father's Apple II computer. Since then, he learnt better ways to get rid of Code Smells but his mindset for curiosity and experiment did not change.</p>
     <p>Pierre-Jean believes that sharing his passion and promoting a culture of openness are the best way to achieve his goals. He has worked for 7 years as a Java developer in the Asset Management industry and realized quickly the benefits of the Software Craftsmanship principles in his daily activities.</p>
