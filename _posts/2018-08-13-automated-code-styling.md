@@ -12,7 +12,7 @@ tags:
 ---
 # Intro
 
-Recently I have had the "privilege" of going through some Javadoc on a project that needs to move from Java 7. The linter for javadoc was tightened for Java 8. Of course, the project did fail to build on Java 8. It fail on so many javadocs.
+Recently I have had the "privilege" of going through some Javadoc on a project that needs to move from Java 7. The linter for javadoc was tightened for Java 8. Of course, the project failed to build on Java 8. It failed on so many javadocs.
 
 # The Evolution
 
@@ -51,7 +51,7 @@ Both are enough to pass SonarQube or Stylecop (rules can be tightened a bit). Bu
 
 I learned to dislike using an automated tool for documentation comments. They are just not fit for the task. I have my own thinking about when to use documentation comments:
 
-- First, only use documentation comments on a public API, when people are going to use your library without being able to easily see the source code. I will not consider having the repo open to qualify as easily. Only if the code is in the same project can be considered so.
+- First, only use documentation comments on a public API, when people are going to use your library without being able to easily see the source code. I don't think an open repo can qualify as easily accessible in this context; Only if the code is in the same project can be considered easily accessible.
 - Second, the only true way of deciding if documentation code is needed is through any of: Pair Programming, Code Review, someone asking questions.
 - Third, the most important reasons for the documentation to exist are: to explain what is doing, how the parameters will be used, and what is the meaning of the return.
 
