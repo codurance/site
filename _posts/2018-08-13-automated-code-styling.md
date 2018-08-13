@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Automated Coding Style (or why not to use it)"
-date: 2018-08-11 08:01:00
+date: 2018-08-13 08:01:00
 description: Where I describe my issues with tools like Stylecop and Sonarqube for documentation comments.
 image: 
     src: /assets/custom/img/blog/2018-08-13-automated-code-styling/caffeine-coffe-cup-6347.jpg
