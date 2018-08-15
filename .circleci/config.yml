@@ -1,0 +1,52 @@
+version: 2.0
+
+references:
+  common_info: &common_info
+    working_directory: ~/codurance/site
+    parallelism: 1
+    shell: /bin/bash --login
+    docker:
+      - image: codurance/website_build_base
+    environment:
+      WEBSITE_INDEX_DOCUMENT: index.html
+      AWS_REGION: eu-west-1
+      BUCKET_NAME: codurance-site-pr
+
+jobs:
+  production:
+    <<: *common_info
+    steps:
+      - checkout
+      - run: |
+          echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
+          echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
+      - run: _utility/build_site_prb.sh $FOLDER_NAME
+      - run: aws configure set preview.cloudfront true
+      - run: _utility/deploy_en_site.sh
+      - run: _utility/deploy_es_site.sh
+  pullrequest:
+    <<: *common_info
+    steps:
+      - checkout
+      - run: |
+          echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
+          echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
+      - run: _utility/build_site_prb.sh $FOLDER_NAME
+      - run: aws configure set preview.cloudfront true
+      - run: _utility/deploy_prb.sh $FOLDER_NAME
+      - run: _utility/create_commit_status.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $GITHUB_TOKEN $PREVIEW_URL $CIRCLE_SHA1
+
+workflows:
+  version: 2
+  prod:
+    jobs:
+      - production:
+          filters:
+            branches:
+              only: master
+  pre:
+    jobs:
+      - pullrequest:
+          filters:
+            branches:
+              ignore: master
