@@ -10,6 +10,11 @@ RUN apt-get clean
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 RUN dpkg-reconfigure --frontend=noninteractive locales
 
+# This steps are needed to have aws cli installed on the system
+RUN apt-get -y install python3 python-pip python-dev
+RUn pip install --upgrade pip
+RUN pip install awscli --upgrade --user
+
 RUN gem install bundler
 RUN gem install rspec-core -v '3.4.1'
 RUN gem install jekyll
