@@ -12,7 +12,7 @@ RUN dpkg-reconfigure --frontend=noninteractive locales
 
 # This steps are needed to have aws cli installed on the system
 RUN apt-get -y install python3 python-pip python-dev
-RUn pip install --upgrade pip
+RUN pip install --upgrade pip
 RUN pip install awscli --upgrade --user
 RUN echo 'export PATH=~/.local/bin:$PATH' >>~/.bash_profile
 
