@@ -3,7 +3,7 @@ FROM docker.io/ruby:2.3.1
 RUN apt-get update 
 RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -y locales
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs
 RUN npm install pug -g
 RUN apt-get clean
