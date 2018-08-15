@@ -1,6 +1,7 @@
 version: 2.0
+
 references:
-  build:
+  build: &build
     working_directory: ~/codurance/site
     parallelism: 1
     shell: /bin/bash --login
@@ -16,6 +17,7 @@ references:
           echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
           echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
       - run: _utility/build_site_prb.sh $FOLDER_NAME
+
 jobs:
   production:
     <<: *build
