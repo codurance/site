@@ -14,6 +14,7 @@ RUN dpkg-reconfigure --frontend=noninteractive locales
 RUN apt-get -y install python3 python-pip python-dev
 RUn pip install --upgrade pip
 RUN pip install awscli --upgrade --user
+RUN echo 'export PATH=~/.local/bin:$PATH' >>~/.bash_profile
 
 RUN gem install bundler
 RUN gem install rspec-core -v '3.4.1'
