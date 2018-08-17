@@ -4,7 +4,7 @@ layout: post
 asset-type: post
 title: "The Functional Style - Part 1"
 date: 2018-08-09 00:00:00
-description: A design pattern reminiscent of the command pattern mixed with an event bus
+description: Functional programming explained for the pragmatic programmer. Part 1. An introduction.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
 abstract: Functional programming explained for the pragmatic programmer.
