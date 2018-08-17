@@ -153,7 +153,7 @@ void countDown(int from) {
 }
 ```
 
-It behaves exactly the same, but now nothing gets reassigned. The functional goodness here comes with two costs: firstly, a slight decrease in readability. The second cost we will come to shortly.
+It behaves exactly the same, but now nothing gets re-assigned. The functional goodness here comes with two costs: firstly, a slight decrease in readability. The second cost we will come to shortly.
 
 To rewrite our roman numerals function into a recursive algorithm, it will be easier if first we flatten the nested loops into a single loop like this:
 
@@ -307,7 +307,7 @@ private long factorial(long n) {
 }
 ```
 
-The recursive call to `factorial` is not in tail position, because its result must be multiplied with `n` to calculate the return value for the outer function call. But why does this matter? It matters because, as Guy L. Steele observed in a paper to the ACM in 1977, a subroutine call in tail position can be replaced with a _go to_. Unlike a subroutine, goto does not anticipate control returning to the calling routine, so no return address is pushed on the call stack.
+The recursive call to `factorial` is not in tail position, because its result must be multiplied with `n` to calculate the return value for the outer function call. But why does this matter? It matters because, as Guy L. Steele observed in a paper to the ACM in 1977, a subroutine call in tail position can be replaced with a _goto_. Unlike a subroutine call, a goto does not anticipate control returning to the calling routine, so no return address is pushed on the call stack.
 
 We can show Steele’s observation with a diagram showing two nested subroutine calls:
 
@@ -524,7 +524,7 @@ String convert() {
 
 which yields **XIV**, fourteen.
 
-In part 1 I said that programming without ever reassigning the value of a symbol could lead to an explosion in the number of symbols. At least it seems that it should. This process of repeatedly replacing a function call with its implementation has been very laborious, but it did not result in an increase in the number of symbols used in the program. This quality of pure functions is called referential transparency.
+In part 1 I said that programming without ever re-assigning the value of a symbol could lead to an explosion in the number of symbols. At least it seems that it should. This process of repeatedly replacing a function call with its implementation has been very laborious, but it did not result in an increase in the number of symbols used in the program. This quality of pure functions is called referential transparency.
 
 ### Are you recommending we should program this way?
 
