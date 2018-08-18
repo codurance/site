@@ -18,6 +18,7 @@ jobs:
     docker:
       - image: codurance/website_build_base
     steps:
+      - run: echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
       - checkout
       - run: _utility/build_site_prb.sh $FOLDER_NAME
       - persist_to_workspace:
