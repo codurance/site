@@ -23,9 +23,9 @@ jobs:
       - run: _utility/build_site_prb.sh $FOLDER_NAME
       - persist_to_workspace:
           root: .
-          path:
-            - _utility/
-            - _site/
+          paths:
+            - _utility
+            - _site
 
   production:
     <<: *common_info
