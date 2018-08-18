@@ -59,19 +59,19 @@ workflows:
   version: 2
   prod:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: master
       - production:
           requires:
             - build
-    filters:
-      branches:
-        only: master
   pre:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: master
       - pullrequest:
           requires:
             - build
-    filters:
-      branches:
-        ignore: master
