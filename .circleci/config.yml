@@ -24,8 +24,8 @@ jobs:
       - persist_to_workspace:
           root: .
           path:
-            - _utility
-            - _site
+            - _utility/
+            - _site/
 
   production:
     <<: *common_info
