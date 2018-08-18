@@ -23,7 +23,8 @@ jobs:
       - run: _utility/build_site_prb.sh $FOLDER_NAME
       - persist_to_workspace:
           root: .
-          path: .
+          path:
+            - .
 
   production:
     <<: *common_info
@@ -56,22 +57,21 @@ jobs:
 
 workflows:
   version: 2
-  build:
-    jobs:
-      - build
   prod:
     jobs:
+      - build
       - production:
           requires:
             - build
-          filters:
-            branches:
-              only: master
+    filters:
+      branches:
+        only: master
   pre:
     jobs:
+      - build
       - pullrequest:
           requires:
             - build
-          filters:
-            branches:
-              ignore: master
+    filters:
+      branches:
+        ignore: master
