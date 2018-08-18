@@ -144,3 +144,13 @@ If other things don't make sense - follow this guide to clear out your cached ge
 To install ffi gem in the newer versions of MacOS you need install Xcode tool first. After restarting your terminal, the following command need to be executed:
 
     brew install libtool automake autoconf
+
+## CI docker images preparation
+There are two images used to build and deploy the application. The necessary commands to update them is here. Be aware that if you do it using the tag latest it will affect the master branch at the moment
+
+
+docker build --file=Dockerfile_build_base -t codurance/website_build_base:latest .
+docker push codurance/website_build_base:latest 
+
+docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
+docker push codurance/website_deployment_base:latest 
