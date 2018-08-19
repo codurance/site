@@ -28,7 +28,7 @@ Both rules apply simultaneously in any given number, so:
 - **LIX** is 59, i.e. 50 + (10 - 1)
 - **CXL** is 140, i.e. 100 + (50 - 10).
 
-Armed with this knowledge, we can write a specification for converting hindu-arabic numbers to roman numerals:
+Armed with this knowledge, we can write a specification in Groovy for converting hindu-arabic numbers to roman numerals:
 
 ```groovy
 class NumeralsShould extends Specification {
@@ -376,7 +376,7 @@ class Numerals {
 }
 ```
 
-We can calculate the roman representation of 14 by plugging values in directly for the `remainder`, `numeralIndex` and `roman` arguments. I have cheated slightly by setting the argument index to 8; I did that to skip straight over the numerals with higher value. Otherwise, this exercise, which is already quite long-winded, would become considerably worse:
+We can calculate the roman representation of 14 by plugging values in directly for the `remainder`, `numeralIndex` and `roman` arguments. I have cheated a little bit by setting the argument index to 8; I did that to skip straight over the numerals with higher value. Otherwise, this exercise, which is already quite long-winded, would become considerably longer:
 
 ```groovy
 String convert() {
@@ -384,7 +384,7 @@ String convert() {
 }
 ```
 
-Because the `convert(int, int, String)` method is a pure function, we are able to copy its implementation straight over its invocation, like this. I have also copied literal values over `numeral.value` and `numeral.symbol` because they can be looked up by eye:
+There is a property of pure functions, as the `convert(int, int, String)` method is, that we are able to copy the implementation straight over its invocation, like this:
 
 ```groovy
 String convert() {
@@ -399,7 +399,7 @@ String convert() {
 }
 ```
 
-Now, some of the paths through that code are guaranteed not to be taken: 14 is clearly not equal to 0 and it is clearly greater than 10. So, we can manually delete all the branches that are guaranteed not to be taken, and the code is reduced down to this:
+This property of pure functions is called _referential transparency_. I have also copied literal values over `numeral.value` and `numeral.symbol` because they were being looked up from an array by a literal index value, therefore this simplification was possible. Now, some of the paths through that code are guaranteed not to be taken: 14 is clearly not equal to 0 and it is clearly greater than 10. So we can manually delete all the branches that are guaranteed not to be taken, and the code reduces down to this:
 
 ```groovy
 String convert() {
@@ -524,7 +524,7 @@ String convert() {
 
 which yields **XIV**, fourteen.
 
-In part 1 I said that programming without ever re-assigning the value of a symbol could lead to an explosion in the number of symbols. At least it seems that it should. This process of repeatedly replacing a function call with its implementation has been very laborious, but it did not result in an increase in the number of symbols used in the program. This quality of pure functions is called referential transparency.
+In the previous article I said that programming without ever re-assigning the value of a symbol could lead to an explosion in the number of symbols. At least it seems that it should. But this process of repeatedly replacing a function call with its implementation, although very laborious, did not result in an increase in the number of symbols used in the program.
 
 ### Are you recommending we should program this way?
 
