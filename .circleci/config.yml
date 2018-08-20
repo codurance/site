@@ -5,33 +5,53 @@ references:
     working_directory: ~/codurance/site
     parallelism: 1
     shell: /bin/bash --login
-    docker:
-      - image: codurance/website_build_base
+
+  deploy_info: &deploy_info
     environment:
       WEBSITE_INDEX_DOCUMENT: index.html
       AWS_REGION: eu-west-1
       BUCKET_NAME: codurance-site-pr
 
 jobs:
+  build:
+    <<: *common_info
+    docker:
+      - image: codurance/website_build_base
+    steps:
+      - run: echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
+      - checkout
+      - run: _utility/build_site_prb.sh $FOLDER_NAME
+      - persist_to_workspace:
+          root: .
+          paths:
+            - _utility
+            - _site
+
   production:
     <<: *common_info
+    <<: *deploy_info
+    docker:
+      - image: codurance/website_deployment_base
     steps:
-      - checkout
+      - attach_workspace:
+          at: .
       - run: |
           echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
           echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
-      - run: _utility/build_site_prb.sh $FOLDER_NAME
       - run: aws configure set preview.cloudfront true
       - run: _utility/deploy_en_site.sh
       - run: _utility/deploy_es_site.sh
   pullrequest:
     <<: *common_info
+    <<: *deploy_info
+    docker:
+      - image: codurance/website_deployment_base
     steps:
-      - checkout
+      - attach_workspace:
+          at: .
       - run: |
           echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
           echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
-      - run: _utility/build_site_prb.sh $FOLDER_NAME
       - run: aws configure set preview.cloudfront true
       - run: _utility/deploy_prb.sh $FOLDER_NAME
       - run: _utility/create_commit_status.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $GITHUB_TOKEN $PREVIEW_URL $CIRCLE_SHA1
@@ -40,13 +60,19 @@ workflows:
   version: 2
   prod:
     jobs:
-      - production:
+      - build:
           filters:
             branches:
               only: master
+      - production:
+          requires:
+            - build
   pre:
     jobs:
-      - pullrequest:
+      - build:
           filters:
             branches:
               ignore: master
+      - pullrequest:
+          requires:
+            - build
