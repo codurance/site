@@ -26,6 +26,7 @@ jobs:
           paths:
             - _utility
             - _site
+            - _site_es
 
   production:
     <<: *common_info
