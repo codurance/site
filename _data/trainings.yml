@@ -40,3 +40,8 @@
   description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
   page: /services/training/devops-training
 
+- id: crafting_webapps
+  name: Crafting Webapps
+  author: Nacho García
+  description: Discover how to build webapps that scale driven by tests and framework agnostic.
+  page: /services/training/crafting-webapps
