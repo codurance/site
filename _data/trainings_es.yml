@@ -44,5 +44,5 @@
 - id: crafting_webapps
   name: Crafting Webapps
   author: Nacho García
-  description: Descubra cómo crear webapps agnósticas que escalan guiadas por test.
+  description: Descubra cómo crear aplicaciones web, que escalan, agnósticas de framework, guiadas por los tests.
   page: /services/training/crafting-webapps
