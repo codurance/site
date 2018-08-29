@@ -12,7 +12,7 @@ tags:
 ---
 [SoCraTes Germany 2018](https://www.socrates-conference.de) is over and it has been a great one. Many insights, new ideas, and opportunities to reflect. Here are my notes.
 
-# Saturday
+# Friday
 
 It started with learning how to make a coffee with an [Aeropress and KanBan](https://twitter.com/AnnNat/status/1033015354967121921). A delicious example of how feedback loops and reflection can make you go faster.
 
@@ -26,7 +26,7 @@ Frustration took over for me, I tilted. Thanks for your kind words [Yulia](https
 
 This is the kind of surprise I go to SoCraTes for. Mind flipped and ego shrunk I headed to the sauna.
 
-# Sunday
+# Saturday
 
 I cannot share the content of the next session, the topic was Sexism. I hope by hearing examples of bad behaviours I can learn to recognise them, in myself and in others. I think hearing them told directly made me empathise.
 A simple suggestion, as an ally, was to compliment colleagues. I want to read more on this subject and [these](https://stackoverflow.blog/2017/10/04/3-ways-can-ally-women-tech/) seems like simple suggestions.
