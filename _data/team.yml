@@ -412,7 +412,7 @@
 - id: laullobet
   name: Lau Llobet
   image: /assets/custom/img/team/lau_llobet.png
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
     <p>He considers the pursuit for a communicative attitude (both in teamworking and shaping code) as important as training the logical skills needed to write code.</p>
