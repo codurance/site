@@ -33,7 +33,7 @@ A simple suggestion, as an ally, was to compliment colleagues. I want to read mo
 
 [OWASP Juice shop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) (one of the few technical sessions I went to). Run a node application on your laptop and try to hack into it. I think this was marvelously gamified, each hack awarding a new achievement in varying difficulty levels. Wow!
 
-The most important takeaway from the next session, working intercultural teams, is that culture has an influence in how we think about power distance, the need for rules, and the balance between individualism and collectivism, long and short term thinking, and "masculinity and femininity". These differ from person to person and do influence our ability to communicate and collaborate.
+The most important takeaway from the next session, working with intercultural teams, is that culture has an influence in how we think about power distance, the need for rules, and the balance between individualism and collectivism, long and short term thinking, and "masculinity and femininity". These differ from person to person and do influence our ability to communicate and collaborate.
 One everyday example of this is that the perception of time is culturally mediate: "5 minutes" actually means something different depending on who are you talking with.
 
 Refuctoring was another "technical" session: start with a plain Fizz-Buzz implementation in JavaScript and turn it into the most [diabolically intricate piece of code](https://github.com/Hackerkegeln/refuctoring/blob/socratees2018/src/fizz-buzz-generator.js) we could. The insight for me happened when the code crossed my mental ability to model its behaviour, which happened upon inlining a function.
