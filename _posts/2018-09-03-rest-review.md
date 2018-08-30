@@ -4,7 +4,7 @@ layout: post
 asset-type: post
 title: "Rest Review"
 date: 2018-08-30 08:01:00
-description: Where I talk about what is, and what is not, the REST architecture/.
+description: Where I talk about what is, and what is not, the REST architecture.
 image: 
     src: /assets/custom/img/blog/2018-08-13-automated-code-styling/caffeine-coffe-cup-6347.jpg
 tags: 
