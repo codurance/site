@@ -90,6 +90,10 @@ Richardson's model set on level 2 the use of HTTP verbs. There are a few availab
 
 One last thing that I want to mention is that if you start writing Swagger or any other API documentation, you most certaintly are not going to end having a REST API. For the swagger documentation to work, the endpoints need to be known. But a REST API known endpoints should only be the entry points. Any other endpoint is provided as a link, and therefore the actual value is unimportant.
 
+## Versioning
+
+Currently, what I have seen mostly talked about regarding versioning is the three possibilites of having a version number at the root of the URI (https://myapi.codurance.com/v2/clients), on a specific endpoint of a resource (https://myapi.codurance.com/clients/v2), or versioning the resource (Content-Type=application/vnd.codclient/v2+json). If you follow the REST architectural style, other than the entry endpoint, the client doesn't need to know what the endpoints are, that is what links are for. Therefore there is no point on versioning endpoints. And if you entry point doesn't change, then there is no point on versioning the root. You end with the versioning of the resource to indicate that changes have happened.
+
 ## Other readings
 
 It seems that my colleague [Carlos](https://codurance.com/publications/author/carlos-morera-de-la-chica/) wrote a [post](https://codurance.com/2016/08/02/what-does-RESTful-really-mean/) on the same vein as this one two years ago. Certains misconceptions don't seem to dissapear. 
