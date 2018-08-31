@@ -487,7 +487,7 @@
 - id: cristinaverdi
   name: Cristina Verdi
   image: /assets/custom/img/team/cristina_verdi.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Cristina is a software developer and continuous learner who has had the opportunity to work in  R+D+i departments  designing and building software for the citizens of the future.</p>
     <p>She discovered her passion for software by creating digital, interactive maps using Geographic Information Systems technologies like ArcGis and maintaning GIS databases while studying environmental engineering in Barcelona.</p>
