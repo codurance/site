@@ -12,7 +12,7 @@ tags:
 - Architecture
 ---
 
-There are two events that have happened recently close to each other. The first one was a decision to actually learn GraphQl. I have been thinking about it for a while, but now is time to actually put the effort on it. The second one was a talk with my colleague [Luciano](https://codurance.com/publications/author/luciano-palma/) in which I incorrectly made a remark about resources on REST. Because of both (for the former as I want to compare, for the latter to assert my knowledge), I decided to re-read both the [Fielding PhD dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and the book [Rest in Practice](http://restinpractice.com/book/) by Robinson, Webber and Parastatidis.
+There are two events that have happened recently close to each other. The first one was a decision to actually learn GraphQL. I have been thinking about it for a while, but now is time to actually put the effort on it. The second one was a talk with my colleague [Luciano](https://codurance.com/publications/author/luciano-palma/) in which I incorrectly made a remark about resources on REST. Because of both (for the former as I want to compare, for the latter to assert my knowledge), I decided to re-read both the [Fielding PhD dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and the book [Rest in Practice](http://restinpractice.com/book/) by Robinson, Webber and Parastatidis.
 
 So here is a review of REST.
 
@@ -28,14 +28,14 @@ One thing that I completely forgot is that he worked on quite a few projects lik
 
 ### Rest In Practice
 
-I think this was a fantastic book with a really good introduction to REST apis. When it came the time for me to work on my first Web Api, I read this book as it had all glowy recomendations. After reading it a second time a few years later, I can say that is still fresh and on point.
+I think this was a fantastic book with a really good introduction to REST APIs. When it came the time for me to work on my first Web API, I read this book as it had all glowy recomendations. After reading it a second time a few years later, I can say that is still fresh and on point.
 
-## Web Api != REST Api
+## Web API != REST API
 
-Having an API that uses http doesn't mean that you are have a REST Api. I think this is an important distinction, as a lot of programmers I have seen do mix them. A Web API is an API that can be accessed trought the network. A REST api is an api that follows the REST architectural style.
+Having an API that uses http doesn't mean that you have a REST API. I think this is an important distinction, as a lot of programmers I have seen do mix them. A Web API is an API that can be accessed through the network. A REST API is an API that follows the REST architectural style.
 
 ## Architectural Style
-REST is not an specific architecture. You can have any number of architectures that can be called REST. But if your architecture, and your API doesn't obey the constraints and elements below it cannot be called a REST architecure/api. They are defined on title 5 of Fielding's dissertation. I will enumerate them here, but you can go back to the source for the full description.
+REST is not an specific architecture. You can have any number of architectures that can be called REST. But if your architecture, and your API doesn't obey the constraints and elements below it cannot be called a REST architecure/API. They are defined on title 5 of Fielding's dissertation. I will enumerate them here, but you can go back to the source for the full description.
 
 ### Constraints of REST
 The six constrains indicated by Fielding are
@@ -53,7 +53,7 @@ The four elements are indicated below
 1. Identification of resources
 2. Manipulation of resources through representations
 3. Self descriptive messages
-4. HATEOAS
+4. HATEOAS (Hypermedia as the Engine of the Application State)
 
 ## Richardson's maturity Levels
 
@@ -65,12 +65,12 @@ He establishes four levels as below,
 
 * Level 0 - One uri/one verb -> Which basically is just HTTP Tunneling
 * Level 1 - Multiple uri/one verb -> We are introducing the idea of resources
-* Level 2 - Multiple uri/multiple verbs -> Full use of http verbs. Let me point out that the REST architectural style doesn't really care about Http verbs per ser in regards to creating an API. But because they have defined semantics (as long as the server/API respects them), it helps with the self-description of message that Fielding identified as an element.
-* Level 3 - HATEOAS -> The "end" of the journey. Now you have a REST Api.
+* Level 2 - Multiple uri/multiple verbs -> Full use of HTTP verbs. Let me point out that the REST architectural style doesn't really care about HTTP verbs per ser in regards to creating an API. But because they have defined semantics (as long as the server/API respects them), it helps with the self-description of message that Fielding identified as an element.
+* Level 3 - HATEOAS -> The "end" of the journey. Now you have a REST API.
 
 ## Rest is about hypermedia.
 
-Look at that last level. REST is an architectural style defined to solve Network distributed hypermedia systems. Without Hypermedia there is no REST. If your API doesn't work through the use of hypermedia, you don't have a REST api. Maybe you don't need hypermedia to solve your problems. But then use the correct term.
+Look at that last level. REST is an architectural style defined to solve Network distributed hypermedia systems. Without Hypermedia there is no REST. If your API doesn't work through the use of hypermedia, you don't have a REST API. Maybe you don't need hypermedia to solve your problems. But then use the correct term.
 
 ## Resources
 
@@ -80,20 +80,20 @@ Once I understood that resources are not associated to the datastore, resources 
 
 ## REST and HTTP
 
-A REST api  doesn't need HTTP. The definition of the REST architectural style doesn't talk about HTTP. In fact HTTP was molded around the ideas that would become REST.
+A REST API  doesn't need HTTP. The definition of the REST architectural style doesn't talk about HTTP. In fact HTTP was molded around the ideas that would become REST.
 
-But is normal that we use HTTP for REST Apis because is the same architectural style. And the facilities of HTTP provide you the elements and constraints of REST.
+But is normal that we use HTTP for REST APIs because is the same architectural style. And the facilities of HTTP provide you the elements and constraints of REST.
 
-Richardson's model set on level 2 the use of HTTP verbs. There are a few available. The most importants being GET, because is the one that allows caching, and POST, which is a catch all. Could use the others as well. Each one has well defined sematics. Though Robinson, Webber and Parastatidis did have an example in which they were going to partially update a resource and they end using POST (which now would be reserved for PATCH)
+Richardson's model set on level 2 the use of HTTP verbs. There are a few available. The most importants being GET, because is the one that allows caching, and POST, which is a catch all. You could use the others as well. Each one has well defined sematics. Though Robinson, Webber and Parastatidis did have an example in which they were going to partially update a resource and they end using POST (which now would be reserved for PATCH)
 
-## Swagger is not conductive of REST
+## Swagger is not conducive of REST
 
-One last thing that I want to mention is that if you start writing Swagger or any other API documentation, you most certaintly are not going to end having a REST api. For the swagger documentation to work, the endpoints need to be known. But a REST api known endpoints should only be the entry points. Any other endpoint is provided as a link, and therefore the actual value is unimportant.
+One last thing that I want to mention is that if you start writing Swagger or any other API documentation, you most certaintly are not going to end having a REST API. For the swagger documentation to work, the endpoints need to be known. But a REST API known endpoints should only be the entry points. Any other endpoint is provided as a link, and therefore the actual value is unimportant.
 
 ## Other readings
 
 It seems that my colleague [Carlos](https://codurance.com/publications/author/carlos-morera-de-la-chica/) wrote a [post](https://codurance.com/2016/08/02/what-does-RESTful-really-mean/) on the same vein as this one two years ago. Certains misconceptions don't seem to dissapear. 
 
-## Comparison with Graphql
+## Comparison with GraphQL
 
-I'm quite looking forward to create my own comparison, as the few presentations that I have seen about Graphql seem to miss the mark when criticing REST. Hopefully it will not take me long to have something to say about it.
+I'm quite looking forward to create my own comparison, as the few presentations that I have seen about GraphQL seem to miss the mark when criticing REST. Hopefully it will not take me long to have something to say about it.
