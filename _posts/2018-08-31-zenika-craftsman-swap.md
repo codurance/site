@@ -6,7 +6,7 @@ title: "Zenika craftsman swap"
 date: 2018-08-31 08:01:00
 description: Summary and lessons learned during my craftsman swap in Paris
 image:
-    src: /assets/custom/img/blog/2018-08-30-craftsman-swap/znk.png
+    src: /assets/custom/img/blog/2018-08-31-craftsman-swap/znk.png
 tags:
 - software processes
 - software craftsmanship
