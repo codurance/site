@@ -12,7 +12,7 @@ tags:
 - Architecture
 ---
 
-There are two events that have happened recently close to each other. The first one was a decision to actually learn GraphQL. I have been thinking about it for a while, but now is time to actually put the effort on it. The second one was a talk with my colleague [Luciano](https://codurance.com/publications/author/luciano-palma/) in which I incorrectly made a remark about resources on REST. Because of both (for the former as I want to compare, for the latter to assert my knowledge), I decided to re-read both the [Fielding PhD dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and the book [Rest in Practice](http://restinpractice.com/book/) by Robinson, Webber and Parastatidis.
+There are two events that have happened recently close to each other. The first one was a decision to actually learn GraphQL. I have been thinking about it for a while, but now is time to actually put the effort on it. The second one was a talk with my colleague [Luciano](https://codurance.com/publications/author/luciano-palma/) in which I incorrectly made a remark about resources on REST. Because of both (for the former as I want to compare, for the latter to assert my knowledge), I decided to re-read both the [Fielding PhD dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and the book [REST in Practice](http://restinpractice.com/book/) by Robinson, Webber and Parastatidis.
 
 So here is a review of REST.
 
@@ -26,19 +26,19 @@ The first three chapters about analysis of (web) architectures are fantastic. He
 
 One thing that I completely forgot is that he worked on quite a few projects like Http/1.0, Http/1.1, Apache, ... and that Http itself is based on REST (mostly, as he does talk about the definitely not RESTful cookies and the need to support non RESTful existing extensions).
 
-### Rest In Practice
+### REST In Practice
 
-I think this was a fantastic book with a really good introduction to REST APIs. When it came the time for me to work on my first Web API, I read this book as it had all glowy recomendations. After reading it a second time a few years later, I can say that is still fresh and on point.
+I think this was a fantastic book with a really good introduction to REST APIs. When it came the time for me to work on my first Web API, I read this book as it had all glowing recomendations. After reading it a second time a few years later, I can say that is still fresh and on point.
 
 ## Web API != REST API
 
 Having an API that uses http doesn't mean that you have a REST API. I think this is an important distinction, as a lot of programmers I have seen do mix them. A Web API is an API that can be accessed through the network. A REST API is an API that follows the REST architectural style.
 
-## Architectural Style
-REST is not an specific architecture. You can have any number of architectures that can be called REST. But if your architecture, and your API doesn't obey the constraints and elements below it cannot be called a REST architecure/API. They are defined on title 5 of Fielding's dissertation. I will enumerate them here, but you can go back to the source for the full description.
+## Architectural style
+REST is not an specific architecture. You can have any number of architectures that can be called REST. But if your architecture and your API don't obey the constraints and elements below it cannot be called a REST architecure/API. They are defined on title 5 of Fielding's dissertation. I will enumerate them here, but you can go back to the source for the full description.
 
 ### Constraints of REST
-The six constrains indicated by Fielding are
+The six constrains indicated by Fielding are:
 
 1. Client-Server
 2. Stateless
@@ -48,14 +48,14 @@ The six constrains indicated by Fielding are
 6. (Optional) Code on Demand
 
 ###  Elements of REST
-The four elements are indicated below
+The four elements are indicated below.
 
 1. Identification of resources
 2. Manipulation of resources through representations
 3. Self descriptive messages
 4. HATEOAS (Hypermedia as the Engine of the Application State)
 
-## Richardson's maturity Levels
+## Richardson's maturity levels
 
 Richardson introduces the ideas of his maturity levels to the wider world at the Qcon conference of 2008 through a [presentation](https://www.crummy.com/writing/speaking/2008-QCon/) he made. At least that's the first reference I found to them.
 
@@ -68,7 +68,7 @@ He establishes four levels as below,
 * Level 2 - Multiple uri/multiple verbs -> Full use of HTTP verbs. Let me point out that the REST architectural style doesn't really care about HTTP verbs per ser in regards to creating an API. But because they have defined semantics (as long as the server/API respects them), it helps with the self-description of message that Fielding identified as an element.
 * Level 3 - HATEOAS -> The "end" of the journey. Now you have a REST API.
 
-## Rest is about hypermedia.
+## REST is about hypermedia.
 
 Look at that last level. REST is an architectural style defined to solve Network distributed hypermedia systems. Without Hypermedia there is no REST. If your API doesn't work through the use of hypermedia, you don't have a REST API. Maybe you don't need hypermedia to solve your problems. But then use the correct term.
 
@@ -88,7 +88,7 @@ Richardson's model set on level 2 the use of HTTP verbs. There are a few availab
 
 ## Swagger is not conducive of REST
 
-One last thing that I want to mention is that if you start writing Swagger or any other API documentation, you most certaintly are not going to end having a REST API. For the swagger documentation to work, the endpoints need to be known. But a REST API known endpoints should only be the entry points. Any other endpoint is provided as a link, and therefore the actual value is unimportant.
+One last thing that I want to mention is that if you start writing Swagger or any other API documentation, you most certainly are not going to end having a REST API. For the swagger documentation to work, the endpoints need to be known. But a REST API known endpoints should only be the entry points. Any other endpoint is provided as a link, and therefore the actual value is unimportant.
 
 ## Versioning
 
