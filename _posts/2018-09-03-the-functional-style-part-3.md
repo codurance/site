@@ -138,7 +138,7 @@ then assembling an array of the results in the same order as the inputs:
 
 ### Map by example.
 
-Ok so this is interesting but a [bit mathematical](https://en.wikipedia.org/wiki/Map_(mathematics). How often would you do this anyway? Actually, a lot more often than you may think. As usual, an example explains things best, so let’s do some RNA transcription. This exercise from exercism.io is very simple: an input string of bases needs to be transcribed to an output string, and the bases translate like this:
+Ok so this is interesting but a [bit mathematical](https://en.wikipedia.org/wiki/Map_(mathematics). How often would you do this anyway? Actually, a lot more often than you may think. As usual, an example explains things best, so let’s take a look at a simple exercise I lifted from [https://exercism.io/](exercism.io) when I was learning Clojure. The exercise is called "RNA Transcription" and it is very simple: an input string of bases needs to be transcribed to an output string. The bases translate like this:
 
 * C → G
 * G → C
