@@ -227,7 +227,8 @@ Now we’re in a position to use map as a verb. In Java, there is a function pro
 char basePair(char base) {
     if (pairs.containsKey(base))
         return pairs.get(base);
-    throw new IllegalArgumentException("Not a base " + base);
+    else
+        throw new IllegalArgumentException("Not a base " + base);
 }
 
 String transcribe(String dna) {
