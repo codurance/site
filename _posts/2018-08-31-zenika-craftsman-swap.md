@@ -35,7 +35,7 @@ In the afternoon I paired with [Romain](https://twitter.com/RomainVernoux), who 
 
 After work Romain organised a kata where we practiced mob programming. We had one developer playing the role of the “driver’, who would type what the other developers were instructing her. We would rotate the driver role every 10 minutes. We used the bowling kata as an exercise and all the code was test-driven. During the mob, many different and interesting ideas were suggested. We ended up not finishing the exercise (although we were very close) but had good discussions. 
 
-On Tuesday I paired with [Mickaël](https://twitter.com/mickaelroupie). During our pairing session we had an interesting conversation on how they separate the different architectural layers of their frontend application and where we should introduce a few new fields that came from the server and the logic that maps to those fields before sending them back. Thanks to Typescript, we were a little bit safer when introducing those new fields as the compiler guided us a few times when implementing those conversions. 
+On Tuesday I paired with [Mickaël](https://www.linkedin.com/in/mickaelroupie/). During our pairing session we had an interesting conversation on how they separate the different architectural layers of their frontend application and where we should introduce a few new fields that came from the server and the logic that maps to those fields before sending them back. Thanks to Typescript, we were a little bit safer when introducing those new fields as the compiler guided us a few times when implementing those conversions. 
 
 After work, they introduced me to the very French “Apéritif” in the Zenika terrace — it was pleasure to enjoy some French goodies :)
 
