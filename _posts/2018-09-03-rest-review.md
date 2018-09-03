@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Rest Review"
-date: 2018-08-30 08:01:00
+date: 2018-09-03 08:00:00
 description: Where I talk about what is, and what is not, the REST architecture.
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
