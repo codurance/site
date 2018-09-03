@@ -334,7 +334,7 @@ Lack of typing aside, Clojure is somewhat more concise than the Java version, an
   (map base-pair dna))
 ```
 
-If we want it to return a string instead of a list (which is what `map` gives us), the only change required would be:
+The business end of this code is the last line `(map base-pair dna)` - it is worth pointing out else you might have missed it. It means `map` the `base-pair` function over the `dna` string (which behaves as a sequence). If we want it to return a string instead of a list (which is what `map` gives us), the only change required would be:
 
 ```clojure
 (apply str (map base-pair dna))
