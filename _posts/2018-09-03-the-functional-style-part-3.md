@@ -367,7 +367,9 @@ namespace RnaTranscription
 }
 ```
 
-We can do it in a more functional way like this, and it turns out to be considerably less verbose than the Java Streams version. For “map” in a Java stream, read “select” in C# instead:
+Again, C# does not present us with the problems we encountered in Java, because a string in C# is enumerable and all 'primitives' can be treated as objects with behaviour.
+
+We can rewrite the program it in a more functional way like this, and it turns out to be considerably less verbose than the Java Streams version. For “map” in a Java stream, read “select” in C# instead:
 
 ```csharp
 public string Transcribe(string dna)
@@ -376,7 +378,7 @@ public string Transcribe(string dna)
 }
 ```
 
-Or, if you like, you can use the LINQ syntactic sugar:
+Or, if you like, you can use LINQ for its syntactic sugar:
 
 ```csharp
 public string Transcribe(string dna)
@@ -405,4 +407,4 @@ In the imperative style, this would require either multiple loops, or one loop w
 
 ## Next time:
 
-While I was learning functional programming and getting used to the Java streams API, every time I wrote a loop, the very next thing I would do is consider how I could rewrite it as a stream. It is usually possible. In C#, the ReSharper plugin for Visual Studio automatically suggests this for you. Now that I have internalised the functional style, I just go straight for the stream and don’t even bother with the loop unless I really need one. In the next article we will continue our exploration of first-class functions, and how we can use the functional style to make our code more expressive, with a look at filter and reduce.
+While I was learning functional programming and getting used to the Java streams API, every time I wrote a loop, the very next thing I would do is consider how I could rewrite it as a stream. It is usually possible. In C#, the ReSharper plugin for Visual Studio automatically suggests this kind of refactoring for you. Now that I have internalised the functional style, I just go straight for the stream and don’t even bother with the loop unless I really need one. In the next article we will continue our exploration of first-class functions, and how we can use the functional style to make our code more expressive, with a look at filter and reduce.
