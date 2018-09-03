@@ -71,11 +71,15 @@ So we’ve been using first-class functions for a long time. But it is probably 
 In Javascript it has long been standard practice to pass functions to other functions to be used as callbacks, just as in the Win32 api. This idea is integral to the HTML DOM, where first-class functions can be added as event listeners to DOM elements:
 
 ```javascript
+function myEventListener() {
+	alert("I was clicked!")
+}
+...
 var myBtn = document.getElementById("myBtn")
-myBtn.addEventListener("click", function() {
-    alert("I was clicked!")
-})
+myBtn.addEventListener("click", myEventListener)
 ```
+
+Just as in C, the lack of parentheses on the `myEventListener` function name when it is referenced in the call to `addEventListener` means that it is not executed immediately. Instead, the function is associated with the `click` event on the DOM element in question. When the element is clicked, _then_ the function is invoked and the alert happens.
 
 The popular jQuery library streamlines the process by proving a function that selects DOM elements by means of a query string, and presents useful functions for manipulating the elements and adding event listeners to them:
 
@@ -87,7 +91,7 @@ $("#myBtn").click(function() {
 
 First-class functions are also the means for achieving asynchronous I/O, as used on the `XMLHttpRequest` object that is the basis for Ajax. The same idea is ubiquitous in Node.js too: when you want to make a non-blocking function call, you pass it a reference to a function for it to call you back on when it is done.
 
-But there is something else here too. These are not only examples of functions as a first-class objects. They are also examples of _lambda functions_. Specifically, this part:
+But there is something else here too. The second of these is not only an example of a first-class function. It is also an example of a _lambda function_. Specifically, this part:
 
 ```javascript
 function() {
@@ -95,7 +99,7 @@ function() {
 }
 ```
 
-A lambda function (often just called a _lambda_) is an unnamed function. They could have just called them anonymous functions, and then everyone would have known straight away what they are. But that doesn’t sound as impressive, so lambdas it is. The point of a lambda is where you need a function in that place and only there, there is no need to create a named function elsewhere so you simply define it right there instead. It doesn’t need a name. If you _did_ need to reuse it somewhere else then you would consider defining it as a named function and referencing it by name instead. Without lambda functions, programming with jQuery and Node would be very tiresome indeed.
+A lambda function (often just called a _lambda_) is an unnamed function. They could have just called them anonymous functions, and then everyone would have known straight away what they are. But that doesn’t sound as impressive, so lambdas it is. The point of a lambda is where you need a function in that place and only there; it is not needed anywhere else so you simply define it right there and then. It doesn’t need a name. If you _did_ need to reuse it somewhere else then you would consider defining it as a named function and referencing it by name instead, like I did in the first Javascript example. Without lambda functions, programming with jQuery and Node would be very tiresome indeed.
 
 Lambda functions are defined various ways in different languages:
 
