@@ -99,7 +99,7 @@ function() {
 }
 ```
 
-A lambda function (often just called a _lambda_) is an unnamed function. They could have just called them anonymous functions, and then everyone would have known straight away what they are. But that doesn’t sound as impressive, so lambdas it is. The point of a lambda is where you need a function in that place and only there; it is not needed anywhere else so you simply define it right there and then. It doesn’t need a name. If you _did_ need to reuse it somewhere else then you would consider defining it as a named function and referencing it by name instead, like I did in the first Javascript example. Without lambda functions, programming with jQuery and Node would be very tiresome indeed.
+A lambda function (often just called a _lambda_) is an unnamed function. They could have just called them anonymous functions, and then everyone would have known straight away what they are. But that doesn’t sound as impressive, so lambda functions it is. The point of a lambda function is where you need a function in that place and only there; since it is not needed anywhere else you simply define it right there. It doesn’t need a name. If you _did_ need to reuse it somewhere else then you would consider defining it as a named function and referencing it by name instead, like I did in the first Javascript example. Without lambda functions, programming with jQuery and Node would be very tiresome indeed.
 
 Lambda functions are defined various ways in different languages:
 
@@ -136,7 +136,7 @@ then assembling an array of the results in the same order as the inputs:
 
 **A’** = map( _f_, **A** ) = [**a1’**, **a2’**, **a3’**, **a4’**]
 
-### Map in use.
+### Map by example.
 
 Ok so this is interesting but a [bit mathematical](https://en.wikipedia.org/wiki/Map_(mathematics). How often would you do this anyway? Actually, a lot more often than you may think. As usual, an example explains things best, so let’s do some RNA transcription. This exercise from exercism.io is very simple: an input string of bases needs to be transcribed to an output string, and the bases translate like this:
 
@@ -236,7 +236,7 @@ String transcribe(String dna) {
             .map(base -> basePair(base))
             .collect(
                     StringBuilder::new,
-                    StringBuilder::appendCodePoint,
+                    StringBuilder::append,
                     StringBuilder::append)
             .toString();
 }
@@ -246,13 +246,26 @@ String transcribe(String dna) {
 
 So let’s critique that solution. The best thing that can be said about it is that the loop has gone. If you think about it, looping is a kind of clerical activity that we really shouldn’t have to be concerned with most of the time. Usually, we loop because we want to do something to every element in a collection. What we _really_ want to do here is take this input sequence and generate an output sequence from it. Streaming takes care of the basic admin work of iterating for us. It is, in fact, a design pattern - a functional design pattern - but I shall not mention its name just yet. I don’t want to scare you off.
 
-I have to admit that the rest of that code is not great. The first bit of non-greatness is this:
+I have to admit that the rest of the code is not that great, and it is mostly due to the fact that primitives in Java are not objects. The first bit of non-greatness is this:
 
 ```java
 mapToObj(c -> (char) c)
 ```
 
-We had to do this because Java treats primitives and objects differently. I’m not going to try to defend it: it sucks. If there were a convenient way of getting a Stream of Character objects from a String, or even an array of Characters, then there would be no problem, but we haven't been blessed with one. Dealing with primitives is not the sweet spot for FP in Java - come to think of it, it’s not even any good for OO programming - so maybe we shouldn’t be so obsessed with primitives. What if we designed them out of the code? We could create an enumeration for the bases:
+We had to do this because Java treats primitives and objects differently, and although the language does have wrapper classes for the primitives, there is no way to directly get a collection of Character objects from a String.
+
+The other bit of less-than-awesomeness is this:
+
+```
+.collect(
+        StringBuilder::new,
+        StringBuilder::append,
+        StringBuilder::append)
+```
+
+It is far from obvious why it is necessary to call `append` twice. I will explain that later, but the time is not right for that now.
+
+I’m not going to try to defend this code: it sucks. If there were a convenient way of getting a Stream of Character objects from a String, or even an array of Characters, then there would be no problem, but we haven't been blessed with one. Dealing with primitives is not the sweet spot for FP in Java - come to think of it, it’s not even any good for OO programming - so maybe we shouldn’t be so obsessed with primitives. What if we designed them out of the code? We could create an enumeration for the bases:
 
 ```java
 enum Base {
@@ -303,7 +316,7 @@ This is a lot better. The `pairs::get` is a method reference, it refers to the `
 
 ### In Clojure.
 
-Lack of typing aside, Clojure is somewhat more concise than the Java version:
+Lack of typing aside, Clojure is somewhat more concise than the Java version, and it gives us no difficulty in mapping over the characters of a string. The most important abstraction in Clojure is the sequence; all the collection types can be treated as sequences, and strings are no exception:
 
 ```clojure
 (def pairs {\C, "G",
@@ -320,7 +333,7 @@ Lack of typing aside, Clojure is somewhat more concise than the Java version:
   (map base-pair dna))
 ```
 
-Strings are sequences in Clojure so there is no awkwardness mapping over them, and the only change required to make it return a string would be:
+If we want it to return a string instead of a list (which is what `map` gives us), the only change required would be:
 
 ```clojure
 (apply str (map base-pair dna))
