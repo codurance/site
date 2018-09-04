@@ -3,7 +3,7 @@ author: Richard Wild
 layout: post
 asset-type: post
 title: "The Functional Style - Part 3"
-date: 2018-09-03 00:00:00
+date: 2018-09-04 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 3. First-class Functions I - Lambda Functions & Map.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
