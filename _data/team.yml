@@ -602,3 +602,12 @@
    <p>Since he graduated from University in 2003, he has been working mainly as a Java backend developer in various cities and industries, increasing his love for it but decreasing his hope to find a place where quality standards where not view as a time buffer to reduce the development time when suited.</p>
    <p>He joined Codurance in his quest to find a place with code quality standards, motivated colleages, where he can learn and share his experiences with others and go home feeling that he has done a good job.</p>
   github: luis-moral
+
+- id: simionb
+  name: Simion Iulian Belea
+  image: /assets/custom/img/team/simionb.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
+   <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
+  github: simion-iulian
