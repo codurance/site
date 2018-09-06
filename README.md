@@ -18,9 +18,9 @@ Run container in a watch and auto rebuild mode:
 
     docker-compose up
 
-Remove container:
+Stop container:
     
-    docker-compose down
+    docker-compose stop
 
 Destroy container:
 
@@ -45,11 +45,11 @@ Open site:
     
 Run this if you want all posts (slower rebuild):
 
-    docker-compose -f docker-compose.yml up
+    docker-compose run --service-ports site bundle exec rake serve
 
 If you want to start the container with a different command use:
 
-    docker-compose run site <command>
+    docker-compose run --service-ports site <command>
 
 Destroy the container and all volumes for this project.
 Run this if your container is broken.
