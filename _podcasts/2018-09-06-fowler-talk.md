@@ -7,7 +7,7 @@ image:
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 1"
 video-url: https://www.podbean.com/media/player/6xc36-991670?from=site&vjs=1&skin=1&fonts=Helvetica&auto=0&download=
-date: 2018-09-05 08:00:00 +00:00
+date: 2018-09-07 08:00:00 +00:00
 ---
 
 Our first try into creating a regular podcast, where Chris Reinmuller, Sam Davies and myself discuss about the talk done by Martin Fowler at AgileAus 2018.
