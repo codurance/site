@@ -5,7 +5,7 @@ name: intermediate-step-gilded-rose-kata
 image:
  src: /assets/custom/img/videos/intermediate-step-gilded-rose-kata.png
 title: "Intermediate step of Gilded Rose Kata"
-video-url: https://www.youtube.com/embed/4DTRY1u7cXg
+video-url: https://www.youtube.com/embed/JkaRA9y0aPc
 date: 2018-04-24 16:00:00 +00:00
 ---
 
