@@ -316,13 +316,6 @@
   twitter: DaniArchel
   github: Archel
 
-- id: kevinokrah 
-  name: Kevin Okrah 
-  image: /assets/custom/img/team/kevin_okrah.jpg
-  role: Analyst Craftsman
-  fullDescription:
-    <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>
-
 - id: ascandroli
   name: Alejandro Scandroli
   image: /assets/custom/img/team/alejandro_scandroli.jpg
