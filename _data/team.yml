@@ -611,3 +611,14 @@
    <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
    <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
   github: simion-iulian
+
+- id: alfredo
+  name: Alfredo Fernández
+  image: /assets/custom/img/team/alfredo_fernandez.jpg
+  role: Software Craftsperson
+  fullDescription:
+   <p>Alfredo wrote his first website at the age of twelve and started playing with Visual Basic 5 at fourteen.</p>
+   <p>He loves learning and sharing and that's why he is been involved in different software communities since the start of his career. As a student, he skipped classes to attend the sessions of the first dotnet user group in Barcelona.</p>
+   <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
+  twitter: alfredodev
+  github: alfredodev
