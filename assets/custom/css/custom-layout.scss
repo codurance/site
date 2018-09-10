@@ -222,6 +222,19 @@ $orange-colour: #e67e22;
   margin-right: 25%;
 }
 
+/* Apprenticeship */
+
+
+.howworks-boxes-container{
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.howworks-box{
+  border-left: 3px solid $orange-colour;
+}
+
 .services {
   & .client-descriptions { /* 0 0 2 0 */
     margin-bottom: 50px;
@@ -470,6 +483,10 @@ i.no-border {   /* 0 0 1 1 */
 .img-center {   /* 0 0 1 0 */
   display: block;
   margin: 0 auto;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .jetbrains-logo-partners { /* 0 0 1 0 */
