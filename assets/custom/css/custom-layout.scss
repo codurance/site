@@ -224,7 +224,6 @@ $orange-colour: #e67e22;
 
 /* Apprenticeship */
 
-
 .howworks-boxes-container{
   padding-top: 2rem;
   margin: 0 auto;
@@ -233,6 +232,12 @@ $orange-colour: #e67e22;
 .howworks-box{
   border-left: 3px solid $orange-colour;
 }
+
+.skillsneeded {
+  
+}
+
+/* Services */
 
 .services {
   & .client-descriptions { /* 0 0 2 0 */

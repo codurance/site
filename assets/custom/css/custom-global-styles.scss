@@ -52,3 +52,15 @@ img.bullet-image {
     padding: 0 !important;
     margin: 0 !important;
  }
+
+h1, h2, h3, h4, h5 {
+    &.title-v2{
+        color: #555;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &.title-center{
+        text-align: center;
+    }
+}
