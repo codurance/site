@@ -44,7 +44,7 @@
             </div>
             <!-- End Navigation -->
 
-            <!-- Search -->
+            <!-- Language Picker -->
             <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg">
               <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
                 {% for domain in site.domains %}
@@ -53,13 +53,14 @@
 
                 <i class="fa fa-angle-down g-ml-3"></i>
               </a>
+              
               <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-z-index-2 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
                 {% for domain in site.domains %}
-                <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ site.baseurl }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
+                  <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
                 {% endfor %}
               </ul>
             </div>
-            <!-- End Search -->
+            <!-- End Language Picker -->
           </div>
         </nav>
       </div>
