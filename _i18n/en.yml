@@ -367,7 +367,16 @@ careers:
      apply_title: Apply now
      description: Our apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
      how_works_title: How does it work?
-     how_works_description: The priority is for you to acquire the basic set of skills necessary to become recognised, as Software Craftsperson, by the rest of the company. You will choose a mentor from our craftspeople who will help understand your strengths and weaknesses based on the core skill sets needed. 
+     how_works_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to gain peer-recognition of being at the level of a Software Craftsperson, then we look forward to receiving your application. 
+     how_works:
+      box1_title: 3 Month Programme
+      box1_description: Hands-on, intensive modules covering the essentials of Software Design, XP practices, Clean Code and DDD.
+      box2_title: Expert Guidance
+      box2_description: You will be mentored by our Craftspeople, skilled professionals with a breadth and depth of expertise.
+      box3_title: Paid Apprenticeship
+      box3_description: We pay you a full-time salary throughout the Apprentice programme - essentially, we pay you to learn.
+      box4_title: Hands-On Learning
+      box4_description: All concepts are taught through hands-on exercises, coding katas, group discussions and code reviews.
      background_title: What background do I need to have?
      background_description: You are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design.
      is_it_for_me_title: Is this the programme for me?
