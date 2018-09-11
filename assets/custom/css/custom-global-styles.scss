@@ -12,6 +12,8 @@
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
+$orange-colour: #e67e22;
+
 body {  /* 0 0 0 1 */
     font-size: 14px;
 }
@@ -21,7 +23,15 @@ x:-moz-any-link {  /* 0 0 1 1 */
 }
 
 li > a {  /* 0 0 0 2 */
-    color: #e67e22;
+    color: $orange-colour;
+}
+
+.bg-color-highlight {
+   background-color: $orange-colour;
+   
+   h1, h2, h3, h4, h5, p, li, li a, label {
+    color: white;
+   }
 }
 
 blockquote {
