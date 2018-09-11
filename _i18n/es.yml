@@ -334,34 +334,6 @@ careers:
      personality_description: Due to the nature of our work (we are a consultancy company and we work directly with our clients in all our projects), it is important that you have good communication skills and like working as part of a team. You are able to present your opinions and ideas in a clear, collaborative, respectfull and effective manner. You havea strong desire to build well-crafted software, constantly improve yourself, and to help others do the same. You are constantly learning and can describe all the different ways you achieve that. You consider yourself a technologist and is always keen to explore and work with different technologies. You don\'t shy away form leadership roles and are comfortable to lead by example.
      hiring_title: Hiring process
      hiring_description: Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-   benefits:
-     title: Beneficios
-     description: Nuestro producto es nuestra gente. Creemos firmemente que su trabajo y los beneficios asociados deben permitirle prosperar de manera personal y profesional.
-     learning_title: Aprendizaje y Desarollo
-     conf_title: Conferencias
-     conf_description: 5 días de conferencia por año, incluyendo transporte, habitación y boletos cubierto por nosotros. Pagaremos por usted también así que no hay necesidad de utilizar días de vacaciones. 
-     training_title: Entrenamiento
-     training_description: ¡Presupuesto de entrenamiento sin limite! Siempre que el curso tenga relevancia para la empresa y usted haga una aclaración sobre el tema, nos complace pagarlo.
-     books_title: Libros
-     books_description: ¿Encontró algo interesante para leer que aún no se encuentra en nuestra oficina o biblioteca digital? Cubriremos los gastos del libro, ¡y le pediremos leerlo después de usted también!
-     culture_title: Cultura
-     experts_title: Comunidad interna de expertos
-     experts_description: Ya sea en proyectos de clientes, nuestros eventos internos o externos, trabajarás junto a Craftsperson’s para compartir su pasión por el aprendizaje.
-     transparency_title: Transparencia
-     transparency_description: Todos nuestros salarios y finanzas están disponibles para todos desde el primer día. Nada que ocultar aquí.  
-     autonomy_title: Autonomía 
-     autonomy_description: ¿Tienes algún idea? Forme un “Initiative Circle”, tome posesión, corra con él y entréguelo.
-     lifestyle_title: Estilo de vida
-     holidays_title: Vacaciones
-     holidays_description: 22 Dias Laborales al año.
-     pensions_title: Bienestar
-     pensions_description: Todos nuestros empleados obtienen membresía de gimnasio con descuento
-     pensions_icon: icon-sport-010 u-line-icon-pro
-     life_cover_title: Viernes en la oficina
-     life_cover_description: Todos los viernes trabajamos desde la oficina en lugar de los sitios de los clientes
-     life_cover_icon: icon-education-153 u-line-icon-pro
-     mentor_title: Mentor
-     mentor_description: You will choose a mentor, who will guide you through your apprenticeship
    become_an_apprentice:
      title: Aprendizaje en Codurance
      apply_title: Inscribite abora
