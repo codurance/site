@@ -224,17 +224,32 @@ $orange-colour: #e67e22;
 
 /* Apprenticeship */
 
-.howworks-boxes-container{
+.howworks-boxes-container {
   padding-top: 2rem;
   margin: 0 auto;
 }
 
-.howworks-box{
+.howworks-box {
   border-left: 3px solid $orange-colour;
 }
 
-.skillsneeded {
-  
+.skills {
+  .title-v2 {
+    padding-left: 40px;
+  }
+}
+
+.skill-list {
+  li {
+    height: 20px;
+    margin: 10px 0;
+    background: url('{{ site.baseurl }}/assets/custom/img/circled-tick.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    list-style: none;
+    padding-left: 25px;
+    line-height: 20px;
+  }
 }
 
 /* Services */
