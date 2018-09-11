@@ -604,3 +604,14 @@
    <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
   twitter: alfredodev
   github: alfredodev
+
+- id: jim-b
+  name: Jim Bourke
+  image: /assets/custom/img/team/alfredo_fernandez.jpg
+  role: Analyst Craftsman
+  fullDescription:
+   <p>Jim is a Business Analyst/Product Owner who has over 20 years experience in software projects. He has an extensive background with the Financial Services industry, especially within the derivatives markets, where he took a sojourn from his IT career to work as a trader.</p>
+   <p>Jim loves to work in collaborative teams, and enjoys working as a conduit between the business stakeholders and the delivery team, helping the team to understand business requirements and devise solutions. He has been an active participant in the Software Craftsmanship movement since its early days, and also enjoys attending various community Meetups. He is passionate about continuously learning and finding new ways to develop his skills, relishing the challenge of adapting in a fast evolving industry and helping his colleagues to develop as software professionals.</p>
+   <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
+  twitter: bourkemeister
+  github: bourkemeister
