@@ -24,17 +24,15 @@ title: Company
         {% for page in site.pages %}
         {% assign allAuthors = allAuthors | push:page.author %}
         {% endfor %}
-
         {% assign teamMembersSize = site.data.team | size %}
-        {% assign columnSize = 6 %}
+
+        <div class="container content">
+            <div class="row team margin-bottom-10">
         {% for member in site.data.team %}
         {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
         {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
-        {% if currentElementInColumn == 1 %}
-        <div class="row team margin-bottom-10">
-          {% endif %}
           <!-- TEAM MEMBER -->
-          <div class="col-md-2 col-sm-4 col-xs-6" >
+          <div class="col-md-2 col-sm-3 col-4" >
             <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
               <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
               <span>{{member.name}}</span>
@@ -105,11 +103,9 @@ title: Company
               </div>
             </div>
           </div>
-          {% if currentElementInColumn == columnSize or elementsDisplayed == teamMembersSize %}
-          {% assign currentElementInColumn = 0 %}
-        </div>
-        {% endif %}
         {% endfor %}
+      </div>
+      </div>
       </div>
       <div class="margin-bottom-40">
         <a id="ourculture"></a>
