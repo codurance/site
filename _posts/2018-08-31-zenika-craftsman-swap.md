@@ -13,10 +13,8 @@ tags:
 - agile
 - xp
 ---
-The past week of the 6th of August I did a craftsman swap and I would like to share how was my experience, the lessons that I've learned and how fun it was.
 On the week of 6th of August I took part on a craftsman swap between [Zenika](https://www.zenika.com/) and Codurance and I would like to share my experience, the lessons I’ve learned, and how much fun I had. While Zenika was hosting me in Paris, Codurance hosted [Abdellah Zeroual](http://twitter.com/abdezeros) in London 
 
-A craftsman swap works basically like a student exchange where in this case Codurance and Zenika will exchange a craftsperson for a week. In this week you will be working with different people, in different projects to have an overall idea on how the other company works and it is a good place to interchange ideas, find differences in our workflow and basically bring fresh ideas back home.
 A craftsman swap is an exchange of craftspeople for a week. Each company sends a craftsperson to work for a week with the other company. During that week, the hosting companies provide an environment where the visiting craftsperson can work with different people and different projects, with the objective to share and learn skills. Besides technical skills, the visiting craftsperson also shares how their company is organised and run and also learn how the hosting company is organised and run. The main idea behind the craftsman swap is to have cross-pollination of ideas across companies and help our industry to evolve.
 
 Below is the summary of my week at Zenika Paris.
@@ -43,7 +41,7 @@ After work, they introduced me to the very French “Apéritif” in the Zenika 
 <br/>
 
 # Days 3 & 4 - Enedis
-On the following two days I paired with Maël on a project for an electrical company called Enedis.
+On the following two days I paired with <a href="https://fr.linkedin.com/in/maelbesson">Maël</a> on a project for an electrical company called Enedis.
 
 Maël firstly introduced me to the people in the company and gave me an explanation about the the problem they were trying to solve. As you can imagine, there is a lot of hardware involved in a project for an electrical company and the testing part can be very complicated. Because of that, they implemented a very interesting testing solution where they can mix together business rules and technical steps. It was great for me to see it as it was completely different from the kind of projects I normally work on. We paired both days introducing new steps in the testing tool doing TDD. 
 
@@ -65,13 +63,13 @@ After lunch, Xavier organized a mobbing session where we used Haskell to solve t
 
 It is always good to be outside our comfort zone, meet new people, and see different solutions to similar problems. Some of the highlights of this exchange include: 
 
-Meet like-minded craftspeople
-Have the opportunity to be embedded in the culture of a like-minded company abroad
-Learn different ways of working with clients
-Pairing with different people and in different projects, maximising the knowledge share between companies.
-Get to know the internal organisation of a like-minded company and feel welcome to openly ask questions.
-Bring back to Codurance many ideas we can apply to make our company better.
-Have the opportunity to share Codurance’s culture with Zenika and hopefully provide them with ideas they could benefit.  
+- Meet like-minded craftspeople
+- Have the opportunity to be embedded in the culture of a like-minded company abroad
+- Learn different ways of working with clients
+- Pairing with different people and in different projects, maximising the knowledge share between companies.
+- Get to know the internal organisation of a like-minded company and feel welcome to openly ask questions.
+- Bring back to Codurance many ideas we can apply to make our company better.
+- Have the opportunity to share Codurance’s culture with Zenika and hopefully provide them with ideas they could benefit.  
 
 The craftsman swap was a great professional opportunity for me. I would like to thank everyone at Zenika for being great hosts, for taking the time to share so much about your company with me, and for making me feel at home. I hope to meet you all again in the future. Also a big thanks to Codurance for choosing me to represent our company and make this exchange possible. 
 
