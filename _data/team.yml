@@ -159,17 +159,6 @@
   twitter: panavtec
   github: panavtec
 
-- id: rachel
-  name: Raquel M Carmena
-  image: /assets/custom/img/team/raquel_m_carmena.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things.</p>
-    <p>She loves new challenges and finds it very difficult to choose a single favourite area in her profession. For the past 10 years Raquel has worked in different projects, with different technologies, and in different industries. She lives and breathes business and values from her software products, services and ideas.</p>
-    <p>Raquel is a constant apprentice who strives for common sense, pragmatism and simplicity, and also enjoys sharing her knowledge and learning from others.</p>
-  twitter: bberrycarmen
-  github: rachelcarmena
-
 - id: francesco
   name: Francesco Gigli
   image: /assets/custom/img/team/francesco_gigli.jpg
@@ -326,13 +315,6 @@
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
   github: Archel
-
-- id: kevinokrah 
-  name: Kevin Okrah 
-  image: /assets/custom/img/team/kevin_okrah.jpg
-  role: Analyst Craftsman
-  fullDescription:
-    <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>
 
 - id: ascandroli
   name: Alejandro Scandroli
@@ -611,3 +593,25 @@
    <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
    <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
   github: simion-iulian
+
+- id: alfredo
+  name: Alfredo Fernández
+  image: /assets/custom/img/team/alfredo_fernandez.jpg
+  role: Software Craftsperson
+  fullDescription:
+   <p>Alfredo wrote his first website at the age of twelve and started playing with Visual Basic 5 at fourteen.</p>
+   <p>He loves learning and sharing and that's why he is been involved in different software communities since the start of his career. As a student, he skipped classes to attend the sessions of the first dotnet user group in Barcelona.</p>
+   <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
+  twitter: alfredodev
+  github: alfredodev
+
+- id: jim-b
+  name: Jim Bourke
+  image: /assets/custom/img/team/jim_bourke.jpg
+  role: Analyst Craftsman
+  fullDescription:
+   <p>Jim is a Business Analyst/Product Owner who has over 20 years experience in software projects. He has an extensive background with the Financial Services industry, especially within the derivatives markets, where he took a sojourn from his IT career to work as a trader.</p>
+   <p>Jim loves to work in collaborative teams, and enjoys working as a conduit between the business stakeholders and the delivery team, helping the team to understand business requirements and devise solutions. He has been an active participant in the Software Craftsmanship movement since its early days, and also enjoys attending various community Meetups. He is passionate about continuously learning and finding new ways to develop his skills, relishing the challenge of adapting in a fast evolving industry and helping his colleagues to develop as software professionals.</p>
+   <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
+  twitter: bourkemeister
+  github: bourkemeister
