@@ -17,7 +17,7 @@ aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME/en --exclude "es/*" --acl publ
 aws cloudfront create-invalidation --distribution-id EML2BUMD54HSC --paths "/$FOLDER_NAME/en"
 
 
-cd ../..
+cd ..
 cd _site_es/
 echo "Synchronizing to folder: $FOLDER_NAME/es"
 aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME/es --acl public-read
