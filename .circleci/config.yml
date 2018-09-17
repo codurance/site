@@ -52,7 +52,7 @@ jobs:
           at: .
       - run: |
           echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
-          echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
+          echo 'export PREVIEW_URL=http://${BUCKET_NAME}.s3-website-eu-west-1.amazonaws.com/${FOLDER_NAME}/en/${WEBSITE_INDEX_DOCUMENT}' >> $BASH_ENV
       - run: aws configure set preview.cloudfront true
       - run: _utility/deploy_prb.sh $FOLDER_NAME
       - run: _utility/create_commit_status.sh $CIRCLE_PROJECT_USERNAME $CIRCLE_PROJECT_REPONAME $GITHUB_TOKEN $PREVIEW_URL $CIRCLE_SHA1
