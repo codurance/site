@@ -7,15 +7,15 @@ task :buildboth do
 end
 
 task :buildprb do
-  sh 'bundle exec jekyll build --config _config.yml,_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config _config.yml --trace'
 end
 
 task :buildesprb do
-  sh 'bundle exec jekyll build --config _config.yml,_config_es.yml,_config_prb.yml --trace --destination _site_es/'
+  sh 'bundle exec jekyll build --config _config.yml,_config_es.yml --trace --destination _site_es/'
 end
 
 task :buildenprb do
-  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml,_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config _config.yml,_config_en.yml --trace'
 end
 
 task :serve do
