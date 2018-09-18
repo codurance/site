@@ -401,7 +401,7 @@ order to move, we also need to know the effect that moving forwards has on its p
 And now we can write a function to move the robot ahead along its current bearing:
 
 ```clojure
-(defn move-ahead [robot]able
+(defn move-ahead [robot]
   (let [{ {x :x, y :y} :coordinates, bearing :bearing} robot]
     (let [{delta-x :delta-x, delta-y :delta-y} (translations bearing)]
       (assoc robot :coordinates {:x (+ x delta-x), :y (+ y delta-y)}))))
