@@ -10,7 +10,6 @@
 <meta property="og:site_name" content="Codurance" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
 <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-{% if  %}
 {% if page.image.src %}
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl}}{{ page.image.src }}" />
 {% else %}
