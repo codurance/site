@@ -10,7 +10,14 @@
 <meta property="og:site_name" content="Codurance" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
 <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-<meta property="og:image" content="{% if page.image.src %}{{ page.image.src }}{% else %}/assets/custom/img/codurance.png{% endif %}" />
+{% if page.image.src %}
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl}}{{ page.image.src }}" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl}}/assets/custom/img/codurance-small.png" />
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl}}/assets/custom/img/codurance.png" />
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl}}/assets/custom/img/codurance-big.png" />
+{% endif %}
+
 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
 <meta property="fb:app_id" content="1988440268098611" />
 
