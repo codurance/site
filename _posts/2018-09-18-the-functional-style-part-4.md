@@ -13,8 +13,8 @@ tags:
 ---
 # First-Class Functions II: Filter, Reduce & more.
 
-In the previous article I introduced the concept of first-class functions and lambdas, and demonstrated the technique of
-'mapping' a function over an array as an alternative to explicit iteration. I went on to assert that the majority of the 
+In the previous article I introduced the concept of first-class functions and lambdas, demonstrated the technique of
+'mapping' a function over an array and advanced it as an alternative to explicit iteration. I went on to assert that the majority of the 
 loops we write are either for that purpose of mapping one type of array into another, or they are for filtering elements
 from an array, searching for elements in an array, sorting them, or accumulating totals. I promised to show examples of 
 all these. I’d better make good on my promise, so to begin I'm going to plunder classical antiquity for an example.
@@ -24,7 +24,7 @@ all these. I’d better make good on my promise, so to begin I'm going to plunde
 This is an algorithm for finding prime numbers, discovered by the greek scholar Eratosthenes in the 3rd century BC. It
 is very simple. To find all the prime numbers up to some number _n_ what you do is:
 
-1. Iterate all the natural numbers **i** from 2 up to (**n**  ∕ 2) − 1.
+1. Iterate all the natural numbers **i** where 2 ≤ **i** ≤ (**n**  ∕ 2).
 1. For each **i**, mark every multiple **m** of **i** as non-prime, where 2**i** ≤ **m** ≤ **n**.
 1. When you’re done, all the natural numbers up to **n** that remain unmarked are prime.
 
@@ -80,7 +80,7 @@ public List<Integer> primes() {
 
 Even if the `IntStream` is new to you hopefully its purpose is clear: it gives us a stream of integers from 1 to 
 `limit`. The `.boxed()` call maps the stream of ints to a stream of Integers so that we can collect it to a List in the 
-terminating operation because you cannot create a List of primitives (if you recall from the previous article, 
+terminating operation, because you cannot create a List of primitives (if you recall from the previous article, 
 primitives in Java are a pain).
 
 Now, we could collect the primes to a Set instead, and that might in fact be more appropriate because we only want each 
@@ -128,12 +128,12 @@ public static void main(String[] args) {
 
 Maybe you begin to see the appeal of the functional style. Just declare what you want to happen and have the language 
 arrange it for you. No more worrying about fencepost errors! The previous version of the code appends a space after
-every number, and if it was important to you that it should not then fixing it would be quite awkward. How many 
+every number, and if it was important to you that it should not, fixing it would be quite awkward. How many 
 situations have you had to program your way out of before that this could have helped you with? I've been there often.
 
 I really want to stress this point. This is programmer labour saving right here. Not the kind of labour saving in the 
 way some have dreamed of for decades: where people express their wishes in some natural language while the machine 
-writes the program for you. The reason that dream was misguided is that the syntax never really was the hardest part of 
+writes the program for you. The reason that dream was misguided is that the syntax never really has been the hardest part of 
 programming. Programming has always been about analysing a problem and codifying it so unambiguously that it can be 
 executed by a machine. The functional style does not change that. Rather, the functional style helps you with the 
 problems that are already solved, such as _appending these strings together while inserting spaces between them_. You 
@@ -232,8 +232,8 @@ first we need to get a stream of integers from 1 up to **n**. This will do it fo
 
 ```java
 IntStream.iterate(1, n -> n += 1)
-               .takeWhile(n -> n <= 10)
-               .forEach(System.out::println);
+        .takeWhile(n -> n <= 10)
+        .forEach(System.out::println);
 ```
 
 Usually mathematicians define factorial the other way around, i.e. counting downwards:
@@ -302,10 +302,11 @@ user=> (robot {:x -2 :y 1} :east)
 {:coordinates {:x -2, :y 1}, :bearing :east}
 ```
 
-In Clojure a map (aka a dictionary in other languages) is defined by curly braces enclosing a number of key-value pairs,
+In Clojure a hash-map literal is defined by curly braces enclosing a number of key-value pairs,
 e.g. `{:key1 value1 :key2 value2 ...}`. The names prefixed with colons (e.g. `:east`) are merely symbols; they stand for
-nothing other than themselves. Symbols can be compared, i.e. `(= :foo :foo)` is true while `(= :foo :bar)` is false,
-which makes them handy for map keys and other uses.
+nothing other than themselves. They do not need to be declared because they have no value except for their names.
+Symbols can be compared, i.e. `(= :foo :foo)` is true while `(= :foo :bar)` is false, which makes them handy for map 
+keys and other uses.
 
 Now, to be able to turn, we need to know the effect of rotating left or right depending on our robot’s bearing. So let's
 build a data structure to hold the rotations:
@@ -327,11 +328,28 @@ directions. Using it, we can define a function to turn a robot right:
     (assoc robot :bearing (-> rotations bearing :right))))
 ```
 
-The `->` symbol here is called the “thread-first” macro; it is a shorthand for `(:right (bearing rotations))` or, in other 
-words, get the left-right rotations for the robot’s current bearing and then the new bearing on rotating right. The
+There is quite a lot going on in those three lines of code. To help you understand it, the first thing to know is that 
+you can get the value from a map for a given key like this:
+
+```
+user=> (def a-map {:key1 "value 1" :key2 "value 2"})
+#'user/a-map
+user=> (:key1 a-map)
+"value 1"
+user=> (:key2 a-map)
+"value 2"
+```
+
+That is how `(:bearing robot)` gets the robot's current bearing.
+The `->` symbol is called the “thread-first” macro; it is a shorthand for `(:right (bearing rotations))` or, in other 
+words, get the rotations corresponding to the robot’s current bearing and then the new bearing after rotating right. The
 thread-first and thread-last macros are Clojure's answer to the build-up of close-parens that occurs at the end of Lisp 
-forms, which some people find objectionable about the language. They also allow the composed functions to be 
+forms, which some people find objectionable about the language. They also allow composed functions to be 
 written in left-to-right order, which some people may find more natural (I do).
+
+The `assoc` function behaves as if it adds or replaces key-value pairs in a map. In this case, it appears to update the
+robot's bearing. All data structures in Clojure are immutable, of course, so what it does _really_ is create a new map while 
+leaving the original unchanged.
 
 The function for turning a robot left is similar, and we could of course extract the common functionality if we wished to:
 
@@ -340,10 +358,6 @@ The function for turning a robot left is similar, and we could of course extract
   (let [bearing (:bearing robot)]
     (assoc robot :bearing (-> rotations bearing :left))))
 ```
-
-The `assoc` function behaves as if it adds or replaces key/value pairs in a map. In this case, it appears to update the
-bearing. All data structures in Clojure are immutable, of course, so what it does _really_ is create a new map while 
-leaving the original unchanged.
 
 We can easily test the turning functions in the REPL:
 
@@ -425,7 +439,7 @@ a function that can decode an instruction and apply the relevant function to the
 ```
 
 and then it is a simple matter of iterating the instruction sequence, keeping track of the robot state as we go, and 
-calling `do-step` on each instruction and interim robot state:
+calling `do-step` on each instruction to get the next robot state:
 
 ```clojure
 (defn simulate [steps initial-robot]
@@ -435,7 +449,7 @@ calling `do-step` on each instruction and interim robot state:
       (recur (rest remaining-steps) (do-step robot (first remaining-steps))))))
 ```
 
-### So...
+### So...?
 
 But wait! This is just another loop that calculates an accumulated result. It is reducible, as if you hadn’t guessed. 
 Of course you did. So this will work too:
