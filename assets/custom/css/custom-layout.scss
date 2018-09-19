@@ -241,13 +241,14 @@ $orange-colour: #e67e22;
 
 .skill-list {
   li {
+    display: inline-block;
     height: 20px;
     margin: 10px 0;
     background: url('{{ site.baseurl }}/assets/custom/img/circled-tick.png');
     background-repeat: no-repeat;
     background-size: 20px 20px;
     list-style: none;
-    padding-left: 25px;
+    padding-left: 30px;
     line-height: 20px;
   }
 }
