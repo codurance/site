@@ -3,7 +3,7 @@ author: Richard Wild
 layout: post
 asset-type: post
 title: "The Functional Style - Part 4"
-date: 2018-09-18 00:00:00
+date: 2018-09-19 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 4. First-class Functions II - Filter, Reduce & more.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
@@ -535,6 +535,29 @@ public Robot Simulate(string instructions, Robot initialRobot)
 }
 ```
 
+### MapReduce.
+
+I should not close without mentioning this, because you've almost certainly heard this term. It's a “Big Data” technique 
+and that, along with functional programming, is one of today's most fashionable topics. In the last two episodes we've 
+examined techniques called “map” and “reduce” so you could quite reasonably figure that you know now how MapReduce 
+works. However, it's slightly more complicated. MapReduce crunches data in three or four general processing steps, though they 
+will all look familiar to you. We call it MapReduce because FilterMapShuffleReduce doesn't have the same ring to 
+it, I guess:
+
+1. Filter the dataset (if necessary) to get only the records you are interested in.
+1. Transform the dataset by applying some function to each record (the 'map' step). 
+1. Group together records in the transformed dataset. This is sometimes called the 'shuffle' step, but other 
+explanations (like the MongoDB documentation) lump this operation in with the map step. The grouping works by computing
+some identity value for each record and using these as keys in a hashmap - every key is associated with an
+array of records that all share the same key.
+1. Aggregate down the transformed dataset by applying a reducing function in the same way we described above to each array 
+(the 'reduce' step). The final result of the MapReduce operation is a set of key-value pairs.
+
+If you've been following the last two episodes of this series closely then you know now how to do all of that. So be 
+sure to polish up your resume and go get yourself a high-paying gig as a data scientist!
+
+### Next time.
+
 Hopefully by now I’ve begun to convince you that looping is a construct you should only reach for when you really need 
 it, and in most cases you don’t. LINQ, Streams and similar features in other modern languages can achieve a lot of these 
 use cases for you with far less typing and administrative work. Just as we saw with the example of sorting in the 
@@ -543,8 +566,7 @@ to sort an array efficiently, to search for an item, to remove duplicates, to gr
 to concentrate on the aspects that are particular to your problem domain. The signal-to-noise ratio in your code is thus 
 improved, making it cleaner, more understandable, and less likely to harbour bugs.
 
-### Next time.
-
-In this and the last article we have had a pretty thorough look at first-class functions. Next time, we will introduce 
-a closely related concept, higher-order functions, and I will attempt to explain the dreaded Monad pattern. In fact I 
-hope that I will be able not only to help you understand it, but also convince you of its utility.
+In last two articles we have taken a pretty thorough look at first-class functions. Next time, we will introduce 
+a closely related concept, higher-order functions. We will also take a look at function composition, and I will attempt 
+to explain the dreaded Monad pattern. In fact I hope that I will be able not only to help you understand it, but also 
+convince you of its utility.
