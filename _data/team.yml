@@ -41,13 +41,15 @@
   twitter: stevelydford
   github: stevelydford
 
-- id: ana
-  name: Ana Nogal
-  image: /assets/custom/img/team/ana_nogal.jpg
-  role: Software Craftsman
-  fullDescription: <p>Ana is an iOS Craftsman experienced in test driving apps in Swift and Objective-C. She had the opportunity to work in a wide variety of projects, with various languages and technologies for the past 20 years from client/server to web and mobile applications.</p>
-  twitter: anainogal
-  github: ananogal
+- id: david_hall
+  name: David Hall
+  image: /assets/custom/img/team/david_hall.jpg
+  role: Head of Business Development
+  fullDescription:
+    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
+    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
+    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
+  twitter: davidgrhall
 
 - id: anacelli
   name: Ana Rita Marchina
@@ -55,14 +57,6 @@
   role: Marketing Exec / Office Manager
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
-
-- id: alex
-  name: Alessandro Di Gioia
-  image: /assets/custom/img/team/alex_digioia.jpg
-  role: Software Craftsman
-  fullDescription: <p>Alessandro started his career over 15 years ago and has worked for a variety of companies ranging from small start ups to large enterprises. His professional life changed around 10 years ago when he came across Agile methodologies, specially eXtreme Programming.</p><p>He likes concise, expressive, and readable code as well as making existing solutions better when needed.</p><p>He is always trying to learn better ways of developing software, being in a Object-Oriented or Functional style. His favourite programming languages at the moment are C#, F# and JavaScript.</p><p>Although he considers himself a learner he likes to share his experience with others, never compromising on quality.</p>
-  twitter: Parajao
-  github: Parajao
 
 - id: matthew
   name: Matthew Butt
@@ -103,14 +97,6 @@
   fullDescription: <p>Software developer interested in Functional Programming and Domain Driven Design. He has worked building web and mobile applications in two different countries.</p><p>Sergio loves to try different flavours of programming. He has worked mainly with Java, but has recently discovered Scala and Kotlin and developed a big interest in functional languages such as Haskell. He believes in working with different technologies as a way to improve his programming skills.</p><p>Sergio embraces TDD and Simple Design in order to build clean and maintainable code.</p>
   twitter: srodrigoDev
   github: srodrigo
-
-- id: hkoundi
-  name: Halima Koundi
-  image: /assets/custom/img/team/halima_koundi.jpg
-  role: Software Craftswoman
-  fullDescription: <p>During her career, Halima worked as a consultant in various projects ranging from large integrated enterprise software to small single purpose websites. She has been attracted to the technical side of software after working on data migration projects and decided to retrain and learn how to code.</p><p>Joining Codurance, Halima has levelled up her engineering skills and embraced the values of software craftsmanship. As a skilled professional she aims at delivering value by building robust and resilient software. City Lead organiser at Women Who Code London, Halima is actively working on bringing diversity to the tech community.</p>
-  twitter: hkoundi
-  github: halimakoundi
 
 - id: alvarogarcia
   name: Alvaro Garcia
@@ -172,38 +158,6 @@
     <p>He is really into mechanical keyboards, blogging and loves snowboarding.</p>
   twitter: panavtec
   github: panavtec
-
-- id: david_hall
-  name: David Hall
-  image: /assets/custom/img/team/david_hall.jpg
-  role: Head of Business Development
-  fullDescription:
-    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
-    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
-    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
-  twitter: davidgrhall
-
-- id: charlie
-  name: Carlos Esteban Raffellini
-  image: /assets/custom/img/team/carlos_raffellini.jpg
-  role: Software Craftsman 
-  fullDescription:
-    <p>Carlos has worked in the e-commerece industry for over four years. He enjoys sharing and improving his software development knowledge.</p>
-    <p>He loves functional and object-oriented programming, refactoring, software quality and disciplines such as Test Driven Development.</p>
-    <p>He embraces the Software Craftsmanship ideas and aspires to become a Software Craftsman.</p>
-  twitter: raffellinic
-  github: charlyraffellini
-
-- id: rachel
-  name: Raquel M Carmena
-  image: /assets/custom/img/team/raquel_m_carmena.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Raquel discovered her profession when she was 12 years old, when playing with databases and DOS commands in the back office of a computer shop. She keeps as a treasure her notebook with a computer architecture and how data were stored in a diskette among other things.</p>
-    <p>She loves new challenges and finds it very difficult to choose a single favourite area in her profession. For the past 10 years Raquel has worked in different projects, with different technologies, and in different industries. She lives and breathes business and values from her software products, services and ideas.</p>
-    <p>Raquel is a constant apprentice who strives for common sense, pragmatism and simplicity, and also enjoys sharing her knowledge and learning from others.</p>
-  twitter: bberrycarmen
-  github: rachelcarmena
 
 - id: francesco
   name: Francesco Gigli
@@ -273,18 +227,6 @@
   twitter: yefoakira
   github: miyamotoakira
 
-- id: marco
-  name: Marco Consolaro
-  image: /assets/custom/img/team/marco_consolaro.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Marco learned to code in Basic on an MSX at a young age. He didn't follow his father's wish for him to study chemistry but pursued instead what he always considered his natural vocation and graduated in Computer Science at Venice University Ca' Foscari in 2001.</p>
-    <p>He worked in many different teams in Italy and UK since, always looking to learn and cherishing what worked best in each one. When his journey took him to discover the Agile principles he quickly realized the effectiveness of such an approach in both technical and organizational sides.<br/>He now strongly believes that an iterative approach based on trust, transparency, self-organization and quick feedback loops is the real key to success for any team of any discipline, not just software development.<br/>
-    His dream and challenge are to see these principles understood and implemented at any level in businesses, including public administrations.</p>
-    <p>In his spare time he has co-founded two startups and is always looking for the next idea. But what he loves the most is traveling with the family and can't wait for his toddler son to grow up and learn to code... unless he prefers chemistry!</p>
-  twitter: consolondon
-  github: conso
-
 - id: nachogarcia
   name: Nacho García
   image: /assets/custom/img/team/nacho_garcia.jpg
@@ -295,17 +237,6 @@
   twitter: nachokyoku
   github: nachogarcia
 
-- id: ivanbadia
-  name: Ivan Badia
-  image: /assets/custom/img/team/ivan_badia.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Ivan is a software developer eager to learn new skills and technologies. He is interested in creating well-crafted software and he is a firm believer in agile values and its potential to build happy teams which deliver exceptional products.</p>
-    <p>He started learning coding when he was sixteen with the book “Application Programming in Structured C”. He realized that coding was so fun that he decided to earn a living coding. He started his professional career in 2004 and since then, has had the opportunity to work in a wide variety of projects.</p>
-    <p>In his spare time, Ivan loves traveling and spending time with his wife and son.</p>
-  twitter: ibadiam
-  github: ivanbadia
-
 - id: lilianacarneiro
   name: Liliana Carneiro
   image: /assets/custom/img/team/liliana_carneiro.jpg
@@ -315,17 +246,6 @@
     <p>She is very enthusiastic, energetic and enjoys challenges.</p>
     <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
   twitter: lilistahr
-
-- id: dancohen
-  name: Dan Cohen
-  image: /assets/custom/img/team/dan_cohen.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Dan first started coding with the wave of independant game developers on Newgrounds in the early 2000s. A big lover of hackathons and startup culture, he loves to build and experiment with code.</p>
-    <p>He is a huge fan of open source software and believes deeply in a culture of sharing and openness, in software and in life.</p>
-    <p>With three years of experience working in the .NET ecosystem, he knows he has a lot to learn and is keen to keep pushing forwards, digging deeper and understanding more.</p>
-  twitter: hackingdandan
-  github: cohen990
 
 - id: andrzejrehmann
   name: Andrzej Rehmann
@@ -338,16 +258,6 @@
     <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
   twitter: andrzejrehmann
   github: hoto
- 
-- id: danielbergquist
-  name: Daniel Bergquist
-  image: /assets/custom/img/team/daniel_bergquist.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Daniel has experience as a developer, product manager and software development coach. He has taught hundreds of people to learn to code, and believes that great code starts with people who are passionate about their craft.</p>
-    <p>His primary tech stack is NodeJS, although his lifelong love of learning means he is always investigating new languages and technologies. His reading list always contains more books than he can ever read! Away from the keyboard, his time is mostly spent enjoying time with his wife and young son.</p>
-  twitter: _dbugsy
-  github: dbugsy
 
 - id: richardwild
   name: Richard Wild
@@ -397,7 +307,7 @@
 - id: danielperez 
   name: Daniel Pérez 
   image: /assets/custom/img/team/daniel_perez.jpg
-  role: Apprentice 
+  role: Software Craftsperson 
   fullDescription:
     <p>At the age of twelve Daniel knew that he wanted to work with something related to computers. At nineteen he started studying Software Development at University of Girona.</p>
     <p>After he started attending the Barcelona Software Craftsmanship community he discovered many areas to improve in his software development skillset.</p>
@@ -405,13 +315,6 @@
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
   github: Archel
-
-- id: kevinokrah 
-  name: Kevin Okrah 
-  image: /assets/custom/img/team/kevin_okrah.jpg
-  role: Analyst Craftsman
-  fullDescription:
-    <p>After graduating with a Bachelors in Computer Science and a Masters in Information Systems Management at Brunel University Kevin has gone on to become a Product Owner/Business Analyst. He has worked in a wide range of industries from financial services to the travel industry.</p> <p>Kevin is a product focused enthusiast whole loves to work in teams to solve problems and deliver great products. He is a passionate believer in agile methods to deliver software projects.</p> <p>In his free time he likes to play video games, hang out with friends, weightlifting and go travelling.</p>
 
 - id: ascandroli
   name: Alejandro Scandroli
@@ -429,7 +332,7 @@
 - id: ggsbv
   name: Sandro Viljoen
   image: /assets/custom/img/team/sandro_viljoen.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Sandro discovered his unmistakable passion for programming in 2016. From the onset, he became obsessed with doing things the right way. His hobby quickly became his addiction, as he spent any free time honing his skills.</p>
     <p>With a few IT certificates behind his name, he joined the Project codeX program in 2017 for an arduous year of Web Development in JavaScript, under the mentorship of a formidable Software Craftsman.</p>
@@ -443,7 +346,7 @@
 - id: safouraboyot
   name: Safoura Boyot
   image: /assets/custom/img/team/safoura_boyot.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Safoura has been working as a software developer and team leader in Java projects for a number of years.</p>
     <p>Her passion for coding started when she first used Visual Basic in high school and immediately she knew that she wanted to become a software developer in the future.</p>
@@ -468,7 +371,7 @@
 - id: tonygeorgiadis
   name: Tony Georgiadis
   image: /assets/custom/img/team/tony_georgiadis.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>It was at the age of 15 when Tony wrote his first program, a mIRC script for chat room battles (kicks, bans, room take overs etc.) and realised that coding is what he really loves to do!</p>
     <p>Tony studied Computer Science in Greece and then obtained his Masters Degree in Holland. As part of his thesis he created a Serious Computer Game that aimed at preventing alcohol addiction.</p>
@@ -488,13 +391,227 @@
     <p>With a passion for digital product development, Keith is a team player who strives to maximise business value whilst building great products.</p>
     <p>Outside of work, Keith spends his time with his family, mostly chasing after his young daughter.</p>
 
-- id: marcoencarnacao
-  name: Marco Encarnação
-  image: /assets/custom/img/team/marco_encarnacao.jpg
+- id: laullobet
+  name: Lau Llobet
+  image: /assets/custom/img/team/lau_llobet.png
+  role: Software Craftsman
+  fullDescription:
+    <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
+    <p>He considers the pursuit for a communicative attitude (both in teamworking and shaping code) as important as training the logical skills needed to write code.</p>
+    <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
+
+- id: ppardalj
+  name: Pedro Pardal
+  image: /assets/custom/img/team/pedro_pardal.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>The first contact of Pedro with software development was the day that he started running his own private server of an old multiplayer massive online game; since that moment, he knew he wanted to study computer programming.</p>
+    <p>Right before he graduated in his MSc Computer Engineer degree, he ended up finalist of the annual programming contest of Tuenti, which led him to his first job as a software engineer.</p>
+    <p>In the following years, he has worked in a variety of companies across Europe, with a focus on web technologies, developing his skills and passion for best practices as a means to deliver high quality software products.</p>
+    <p>Now Pedro has joined Codurance with a mission, to convey and share his expertise and passion for quality software to the industry and the community.</p>
+  twitter: ppardalj
+  github: ppardalj
+
+- id: johnhearn
+  name: John Hearn
+  image: /assets/custom/img/team/john_hearn.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>John has always loved building stuff and understanding how things work. As a teenager he would write computer games for his friends or build amplifiers in his bedroom out of old music equipment. Building on his interests, he studied Physics at university before becoming an Electronics Engineer, gradually specialising in embedded software and then software in general. During his career he has been lucky enough to work in a variety of companies from small startups to large corporations, in the private and public sectors and in three countries.</p>
+    <p>He considers programming to be an enormously creative and rewarding activity, and to do it well even more so. The best thing, for him, is that there is always so much more to learn.</p>
+    <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
+  github: johnhearn
+
+- id: pjbaraud
+  name: Pierre-Jean Baraud
+  image: /assets/custom/img/team/pierre_jean_baraud.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Pierre-Jean's first attempt at Clean Code was at the age of 2 when he tried to shampoo his father's Apple II computer. Since then, he learnt better ways to get rid of Code Smells but his mindset for curiosity and experiment did not change.</p>
+    <p>Pierre-Jean believes that sharing his passion and promoting a culture of openness are the best way to achieve his goals. He has worked for 7 years as a Java developer in the Asset Management industry and realized quickly the benefits of the Software Craftsmanship principles in his daily activities.</p>
+    <p>You can find him in DIY activities, debating with peers to improve his knowledge or understanding of any topic or sharing with others what he has learnt.</p>
+  github: pierre-jean
+
+- id: vfarah-if
+  name: Vincent Farah
+  image: /assets/custom/img/team/vincent_farah.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Vincent loves finding solutions to real world problems and making people’s lives easier with practical solutions. His motto is "keep things simple". He has worked for software houses, start-ups, telecommunications, manufacturing, financial industries and a few more, since 1995.</p>
+    <p>It started in high school, working for a friend of a friend, setting up mail shots in clipper and dbase to earn pocket money. A few years after high school he ran into the same gentleman that remembered the success of his high school project, and invited him to join his software-house as an apprentice. Completing their apprenticeship program, and enjoying software development immensely, he started his professional path within South Africa, refining his skills and interests using different programming languages and processes. Keen on getting international exposure, he immigrated to the UK with a focus on web technologies, distributed systems and developed his skills and passion for best practices, hence finally being part of the Codurance team.</p>
+    <p>Outside of work, you will often find him kayaking down rivers and navigating beautiful coastal paths, mountain biking and flying kites with his boys.</p>
+  github: vfarah-if
+
+- id: gabriele 
+  name: Gabriele Cipriano 
+  image: /assets/custom/img/team/gabriele_cipriano.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Gabriele has been a science enthusiast all his life.</p>
+    <p>He started programming at the at age of 15, at that time he ended up developing a simplified version of Space Invaders in Assembly, not a smart choice technology-wise but since then he can not live without the daily sensation of making something work.</p>
+    <p>He strongly believes that code should be simple rather than easy, be readable and just enough to pass all the tests.</p>
+    <p>He is currently exploring functional programming paradigm and mainly dealing with JVM based languages.</p>
+    <p>When not coding you can probably find him cycling somewhere in the world or trying to remove excess coriander from his food.</p>
+  github: gummytrain
+  twitter: rovout
+
+- id: jonacker
+  name: Jon Acker
+  image: /assets/custom/img/team/jon_acker.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>
+    Jon as been a programmer for over 15 years, working first in C and later in PHP and Javascript, he as built and worked on a large variety of web applications from small sites to enterprise financial applications.</p>
+    <p> He has been working with TDD since 2012 and with BDD (and outside-in TDD) since 2014, which he both advocates and practices regularly.</p>
+    <p>Jon has given talks on TDD and BDD and has also delivered training programmes on Node, ES6, TDD and BDD</p>
+  github: jon-acker
+  
+- id: cristinaverdi
+  name: Cristina Verdi
+  image: /assets/custom/img/team/cristina_verdi.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in  R+D+i departments  designing and building software for the citizens of the future.</p>
+    <p>She discovered her passion for software by creating digital, interactive maps using Geographic Information Systems technologies like ArcGis and maintaning GIS databases while studying environmental engineering in Barcelona.</p>
+    <p>She understands very well that due to society evolution business also evolves, In consequence, software has to be crafted in a way that it is resilient and flexible allowing constant adaption to changes in the environment. She has joined Codurance because she knows that crafting software in such a way, requires a high level of mastery, dedication, and passion. Also, she is aware about the key role that data plays in the present, and the challenges that its management brings into the tech scene; accordingly, she has special interest in the data engineering field.</p>
+    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day. </p>
+    <p>She constantly looks for ways to give back to the community what she receives from it. In her opinion, collaboration between peers, collectivity and mutualism are the key to success.</p>
+    <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
+  twitter: cristina_verdi
+  github: cristinaverdi
+
+- id: angelsg
+  name: Àngels Gilabert
+  image: /assets/custom/img/team/angels_gilabert.jpg
+  role: Head of Recruitment
+  fullDescription:
+    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
+    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
+    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
+  twitter: thegreathathor
+  github: AngelsG
+  
+- id: sdavies
+  name: Sam Davies
+  image: /assets/custom/img/team/sam_davies.jpg
   role: Apprentice
   fullDescription:
-    <p>Marco was first exposed to programming around 12 shortly after his father bought him a wonderful ZX Spectrum 128K + 2. After that he developed a strong interest in programming leading him to pursue a career as a software developer. He has worked with Pascal, C, C++, Visual Basic, VB.NET, C#, Java and others.</p>
-    <p>Marco has been working with the .NET Stack since 2007, but started his career with Java. To keep up with front end development trends and practices, Marco reads blogs and regularly tries various front end frameworks/libraries.</p> 
-    <p>Marco understands the need to be pragmatic, reuse existing solutions, investigate 3rd party libraries and utilise shelf components. He has worked and spearheaded many time-critical projects.</p>
-    <p>He’s particularly interested in subjects such as DDD, Event SOA, CQRS and Event Sourcing but more importantly, embraces Simple Design as the foundation to build clean, maintainable and scalable code.</p>
-    <p>In his spare time, Marco likes to work on developing his own ideas. Marco believes that in order for the mind to perform well, it needs to be in sync with the body, so he saves part of the day to workout. He is also interested in a variety of other subjects such as economics, science, astronomy and motorsports.</p>
+    <p>Before joining Codurance he worked for a major UK retailer on their website, from developing a front-end framework to help product teams to move faster, to APIs those teams would use.</p>
+    <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
+    <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
+  github: upsd
+
+- id: magda-firek
+  name: Magdalena Kocerba-Firek
+  image: /assets/custom/img/team/magda_firek.jpg
+  role: Administrative Assistant
+  fullDescription:
+    <p>Magda is helping in office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
+    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
+    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
+
+- id: chris-bimson
+  name: Chris Bimson
+  image: /assets/custom/img/team/chris_bimson.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Chris is a programmer, team leader and certified Scrum Master who helps teams write clean, well-crafted code, create great products and deliver them regularly and reliably.</p>
+    <p>His first programming experience was typing BASIC listings from various magazines into an Atari 800XL some time in the late 80’s or early 90’s. He has been developing software for money since 2002, primarily on Windows, progressing from Delphi to .NET and into the cloud with Azure.</p>
+    <p>Chris is an advocate of the principles of agile software development and believes that to be successful teams have to care about their craft and must constantly strive to improve it.</p>
+    <p>When he is not writing code, or reading about writing code, he enjoys travelling, history and cricket.</p>
+  github: christopher-bimson
+
+- id: mjansky
+  name: Mattsi Jansky
+  image: /assets/custom/img/team/mattsi_jansky.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Mattsi is an ambitious software developer that loves to learn and belives in "doing it right the first time", prioritising quality software over risky shortcuts.</p>
+    <p>Before joining Codurance he experienced a broad career across full-stack and back-end development roles in education, international e-commerce and financial technology focusing on the ASP.Net stack.</p>
+    <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
+  twitter: mattsijansky
+  github: Mattsi-Jansky
+
+- id: scottedwards
+  name: Scott Edwards
+  image: /assets/custom/img/team/scott_edwards.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Scott is a passionate software developer who believes in doing things right the first time. He particularly enjoys working C# and SQL Server and is excited to accelerate his learning curve drastically working as an apprentice at Codurance.</p>
+   <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
+   <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
+  twitter: scotteza
+  github: scotteza
+
+- id: chrisreinmuller
+  name: Chris Reinmuller
+  image: /assets/custom/img/team/chris_reinmuller.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Chris has a background in digital production and has helped a research institute in Switzerland to communicate about their rocket and non-rocket science for a couple of years, primarily by developing web services and improving web user experience. During this time he had a sniff around more ambitious IT projects and that made him go back to university and learn about information systems and operations research. Bursting with new knowledge, he is now keen on feeding his potential into a new career as a software engineer.</p>
+   <p>He’s joining Codurance as an aspiring Software Craftsmanship Apprentice and has started the journey towards mastery of delivering high-quality software. His favourite hobbyhorse is Java and he embraces test-driven development and the extreme programming methodology.</p>
+   <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is an inveterate Trekkie.</p>
+  twitter: SIR_XOPHER
+  github: SirXOPHER
+
+- id: atorres
+  name: André Guelfi Torres
+  image: /assets/custom/img/team/andre_torres.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Andre is a software developer from Brazil who discovered his passion for programming while working as tech support for an ERP in the fashion industry. Later, he became a developer in the same company working with Delphi.</p>
+    <p>A year and half later he joined another company, as the only developer, to build an event management system using Delphi.</p>
+    <p>In 2017 he decided to move to Europe and landed a job in the gaming industry in London, where he stayed working in the payments team for almost a year, until he joined Codurance.</p>
+  github: andre2w
+
+- id: javiercastillo
+  name: Javier Castillo Suazo
+  image: /assets/custom/img/team/javier_castillo.jpg
+  role: Engagement Manager
+  fullDescription:
+    <p>Javier is a software engineer and Agile enthusiast having over 19 of experience in the sectors of software development, financial, automotive and energy. During those years he has being performing roles as full-stack developer, team leader, project manager and Certified Scrum Master. He loves working with new challenges, new knowledge, cultural diversity. Also enjoys sharing its expertise and learning from others.</p>
+    <p>As an Agile and Lean practitioner and passionate about it, Javier is pursuing to become an agent of change for team mates, the organization and the business. Javier is still learning new ways to help and inspire people and organizations to adopt and embrace the agile methodologies and mindset.</p>
+    <p>Javier appreciates the beauty and geometry in things and nature. So, he loves capturing  a panoramic or a macro picture. He is husband, father of a little kid, and loves sharing moments with his family. He enjoys riding his electric longboard to commute to work.</p>
+  twitter: HJavixCS
+  github: HJavixCS
+
+- id: luismoral
+  name: Luis Moral
+  image: /assets/custom/img/team/luis_moral.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Luis started poking with computers as kid when he got his first MSX1 computer, a cassette recorder and a QBasic book; first playing games, then trying to develop them. He has always liked to build things, so he stepped from legos to building stuff in the computer.</p>
+   <p>Since he graduated from University in 2003, he has been working mainly as a Java backend developer in various cities and industries, increasing his love for it but decreasing his hope to find a place where quality standards where not view as a time buffer to reduce the development time when suited.</p>
+   <p>He joined Codurance in his quest to find a place with code quality standards, motivated colleages, where he can learn and share his experiences with others and go home feeling that he has done a good job.</p>
+  github: luis-moral
+
+- id: simionb
+  name: Simion Iulian Belea
+  image: /assets/custom/img/team/simionb.jpg
+  role: Apprentice
+  fullDescription:
+   <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
+   <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
+  github: simion-iulian
+
+- id: alfredo
+  name: Alfredo Fernández
+  image: /assets/custom/img/team/alfredo_fernandez.jpg
+  role: Software Craftsperson
+  fullDescription:
+   <p>Alfredo wrote his first website at the age of twelve and started playing with Visual Basic 5 at fourteen.</p>
+   <p>He loves learning and sharing and that's why he is been involved in different software communities since the start of his career. As a student, he skipped classes to attend the sessions of the first dotnet user group in Barcelona.</p>
+   <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
+  twitter: alfredodev
+  github: alfredodev
+
+- id: jim-b
+  name: Jim Bourke
+  image: /assets/custom/img/team/jim_bourke.jpg
+  role: Analyst Craftsman
+  fullDescription:
+   <p>Jim is a Business Analyst/Product Owner who has over 20 years experience in software projects. He has an extensive background with the Financial Services industry, especially within the derivatives markets, where he took a sojourn from his IT career to work as a trader.</p>
+   <p>Jim loves to work in collaborative teams, and enjoys working as a conduit between the business stakeholders and the delivery team, helping the team to understand business requirements and devise solutions. He has been an active participant in the Software Craftsmanship movement since its early days, and also enjoys attending various community Meetups. He is passionate about continuously learning and finding new ways to develop his skills, relishing the challenge of adapting in a fast evolving industry and helping his colleagues to develop as software professionals.</p>
+   <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
+  twitter: bourkemeister
+  github: bourkemeister

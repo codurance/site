@@ -4,34 +4,75 @@
 
 You can serve the site through [docker](#installing-if-you-like-docker) or [natively](#installing-if-you-like-ruby) on your machine.
 
-### Installing if you like Docker
+### Building if you like Docker
 
 ##### TL;DR
-1. [install docker](https://www.docker.com/community-edition)
-- `docker build --tag codurance-site:local -f ./Dockerfile-local .`
-- ``docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local``
+1. [Install docker](https://www.docker.com/community-edition)
+1. [Install docker compose](https://docs.docker.com/compose/install/) (on Mac and Windows it comes with docker)
 
-##### More details
+Build image:
 
-You need to execute the following command to prepare an image and run a container:
+    docker-compose build
 
-```
-# you need to do this only once - this builds the container with all the dependencies for running the site
-docker build --tag codurance-site:local -f ./Dockerfile-local .
-```
-```
-# you need to run this every time you want to stand up the local server - it should watch for changes in the local files automatically though
-docker run -i -t -v `pwd`:/site -p 4000:4000 codurance-site:local 
-```
+Run container in a watch and auto rebuild mode:
 
-If you want to run a different rake target on the container start use:
+    docker-compose up
 
-```
-docker run -i -t -v `pwd`:/site -p 4000:4000 -e RAKE_TARGET="your_target" codurance-site:local
-```
+Stop container:
+    
+    docker-compose stop
+
+Destroy container:
+
+    docker-compose down
+
+##### Detailed docker commands
+
+You need to do this only once - this builds the image with all the dependencies inside.
+If you change the project dependencies (Gemfile) then rebuild the image again.
+    
+    docker-compose build
+
+Run this to run the container with only the latest posts (faster rebuild).
+Source files are mounted inside the container from your host machine.
+Site will be rebuilt automatically when you change the source code.
+
+    docker-compose up
+
+Open site:
+
+    localhost:4000
+    
+Run this if you want all posts (slower rebuild):
+
+    docker-compose run --service-ports site bundle exec rake serve
+
+If you want to start the container with a different command use:
+
+    docker-compose run --service-ports site <command>
+
+Destroy the container and all volumes for this project.
+Run this if your container is broken.
+
+    docker-compose down
+
+	
+##### Notes for Windows users
+
+As docker "18.06.0-ce-win72 (19098)", you need to setup COMPOSE_CONVERT_WINDOWS_PATHS environment variable and restart the docker service before running `docker-compose build`:
+
+	SET COMPOSE_CONVERT_WINDOWS_PATHS=1
+	net stop com.docker.service
+	net start com.docker.service
+	
+Then you can run `docker-compose build`
+
+Starting the container with `docker-compose up` doesnt seem to work but starting it with `docker run -p 4000:4000 -d <imageid>` does, the downside
+is that you will have to run `docker-compose build`, `docker images` and `docker run -p 4000:4000 -d <imageid>` to check each update you make.
+	
 ----
 
-### Installing if you like ruby
+### Building if you like ruby
 
 1. install rvm https://rvm.io/
 - `rvm install ruby`
@@ -82,24 +123,34 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 This problem happens with Linux systems:
 
-```
-header files for ruby at /usr/lib/ruby/include/ruby.h not found
-```
+    header files for ruby at /usr/lib/ruby/include/ruby.h not found
 
 in case `ruby-dev` package is not installed:
 
-```
-sudo apt-get install ruby-dev
-```
+    sudo apt-get install ruby-dev
 
 ## extconf.rb failed
 
 `zlib` is necessary for building `libxml2`:
 
-```
-sudo apt-get install zlib1g-dev
-```
+    sudo apt-get install zlib1g-dev
 
 ## Gem problems?
 
 If other things don't make sense - follow this guide to clear out your cached gems and start the process again: https://coderwall.com/p/x3z2ag/cleanup-rvm
+
+## Problems with installation of ffi gem on MacOS
+
+To install ffi gem in the newer versions of MacOS you need install Xcode tool first. After restarting your terminal, the following command need to be executed:
+
+    brew install libtool automake autoconf
+
+## CI docker images preparation
+There are two images used to build and deploy the application. The necessary commands to update them is here. Be aware that if you do it using the tag latest it will affect the master branch at the moment
+
+
+docker build --file=Dockerfile_build_base -t codurance/website_build_base:latest .
+docker push codurance/website_build_base:latest 
+
+docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
+docker push codurance/website_deployment_base:latest 

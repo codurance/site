@@ -20,80 +20,92 @@ title: Company
         <div class="headline">
           <h2>{% t company-the_team.title %}</h2>
         </div>
+        {% assign allAuthors = "" | split: "," %}
+        {% for page in site.pages %}
+        {% assign allAuthors = allAuthors | push:page.author %}
+        {% endfor %}
         {% assign teamMembersSize = site.data.team | size %}
-        {% assign columnSize = 6 %}
-        {% for member in site.data.team %}
-        {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
-        {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
-        {% if currentElementInColumn == 1 %}
-        <div class="row team margin-bottom-10">
-          {% endif %}
-          <!-- TEAM MEMBER -->
-          <div class="col-md-2 col-sm-4 col-xs-6" >
-            <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
-              <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
-              <span>{{member.name}}</span>
-            </a>
-          </div>
-          <!-- MODAL CLASS -->
-          <div id="team-{{member.id}}"  class="g-max-width-800 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;" >
-            <button type="button" class="close" onclick="Custombox.modal.close();">
-              <i class="hs-icon hs-icon-close"></i>
-            </button>
 
-            <div class="g-pa-20">
-              <div class="row">
-                <div class="col-lg-4 g-mb-40 g-mb-0--lg">
-                  <!-- User Image -->
-                  <div class="u-block-hover g-pos-rel g-mb-20">
-                    <figure>
-                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{member.image | prepend: site.baseurl}}" alt="Image for {member.name}}">
-                    </figure>
+        <div class="container content">
+          <div class="row team margin-bottom-10">
+          {% for member in site.data.team %}
+          {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
+          {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
+            <!-- TEAM MEMBER -->
+            <div class="col-md-2 col-sm-3 col-4" >
+              <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1" title="{{member.name}}" style="background-color: #fff">
+                <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
+                <span>{{member.name}}</span>
+              </a>
+            </div>
+            <!-- MODAL CLASS -->
+            <div id="team-{{member.id}}"  class="g-max-width-800 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;" >
+              <button type="button" class="close" onclick="Custombox.modal.close();">
+                <i class="hs-icon hs-icon-close"></i>
+              </button>
+
+              <div class="g-pa-20">
+                <div class="row">
+                  <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+                    <!-- User Image -->
+                    <div class="u-block-hover g-pos-rel g-mb-20">
+                      <figure>
+                        <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{member.image | prepend: site.baseurl}}" alt="Image for {member.name}}">
+                      </figure>
+                    </div>
+                    <!-- End User Image -->
                   </div>
-                  <!-- User Image -->
-                </div>
 
-                <div class="col-lg-8">
-                  <!-- User Details -->
-                  <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
-                    <h2 class="g-font-weight-300 g-mr-10">{{member.name}}</h2>
-                    <ul class="list-inline mb-0">
-                      {% if member.github != null %}
-                      <li class="list-inline-item g-mx-2">
-                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://github.com/{{member.github}}">
-                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
-                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
-                        </a>
-                      </li>
-                      {% endif %}
+                  <div class="col-lg-8">
+                    <!-- User Details -->
+                    <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
+                      <h2 class="g-font-weight-300 g-mr-10">{{member.name}}</h2>
+                      <ul class="list-inline mb-0">
+                        {% if member.github != null %}
+                        <li class="list-inline-item g-mx-2">
+                          <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://github.com/{{member.github}}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+                          </a>
+                        </li>
+                        {% endif %}
 
-                      {% if member.twitter != null %}
-                      <li class="list-inline-item g-mx-2">
-                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://twitter.com/{{member.twitter}}">
-                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
-                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      {% endif %}
-                    </ul>
+                        {% if member.twitter != null %}
+                        <li class="list-inline-item g-mx-2">
+                          <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://twitter.com/{{member.twitter}}">
+                            <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                            <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                    <!-- End User Details -->
+
+                    <!-- User Position -->
+                    <h4 class="h6 g-font-weight-300 g-mb-10">
+                      <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}</h4>
+                    <!-- End User Position -->
+                    <hr class="g-brd-gray-light-v4 g-my-20">
+                    <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
+          
+                    {% for item in allAuthors %}
+                    {% if member.name == item %}
+                    {% assign isAuthor = true %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if isAuthor == true %}
+                    <p class="g-line-height-1_8"><a href="{{site.baseurl}}/publications/author/{{ member.name | downcase | replace: ' ','-' }}/">See blogs by {{member.name| truncatewords: 1}}</a></p>
+                    {% endif %}
+                    {% assign isAuthor = false %}
+                    </div>
                   </div>
-                  <!-- End User Details -->
-
-                  <!-- User Position -->
-                  <h4 class="h6 g-font-weight-300 g-mb-10">
-                    <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}</h4>
-                  <!-- End User Position -->
-                  <hr class="g-brd-gray-light-v4 g-my-20">
-                  <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
                 </div>
               </div>
-            </div>
+            {% endfor %}
           </div>
-          {% if currentElementInColumn == columnSize or elementsDisplayed == teamMembersSize %}
-          {% assign currentElementInColumn = 0 %}
         </div>
-        {% endif %}
-        {% endfor %}
       </div>
       <div class="margin-bottom-40">
         <a id="ourculture"></a>
@@ -165,6 +177,7 @@ title: Company
             <!-- Google Map -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.422201900834!2d-0.1025175!3d51.5238156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50c8c7114f%3A0x6245fac5ecb52d7f!2sCodurance!5e0!3m2!1sen!2suk!4v1482344076628" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2993.3761207556017!2d2.1571825!3d41.3876375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28e9bc26acb%3A0x366a95b98e89fe6e!2sCodurance!5e0!3m2!1sen!2ses!4v1510071069861" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2374.428671684242!2d-2.2476929!3d53.4786700!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1a89dfbec21%3A0x960b23d326691bce!2sCodurance!5e0!3m2!1sen!2suk!4v1532348506836" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
             <!-- End Google Map -->
           </div>
           <div class="col-md-6 col-sm-6">
@@ -174,6 +187,7 @@ title: Company
             <ul>
               <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
               <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
+              <li><b>{%t office.man %}</b>: {{ site.office.phone.man }}</li>
             </ul>
             </p>
             <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>

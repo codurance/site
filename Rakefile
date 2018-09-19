@@ -1,12 +1,3 @@
-require 'rspec/core/rake_task'
-
-SPEC_DIRECTORY = '_spec'
-
-RSpec::Core::RakeTask.new(:spec) do |task|
-  task.pattern = Dir.glob("#{SPEC_DIRECTORY}/**/*_spec.rb")
-  task.rspec_opts = '--color'
-end
-
 task :build do
   sh 'bundle exec jekyll build --config _config.yml,_config_default.yml --trace'
 end
@@ -36,7 +27,11 @@ task :servees do
 end
 
 task :servequick do
-  sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --incremental --limit_posts 3 --port 4000 --host 0.0.0.0'
+  sh 'bundle exec jekyll serve --config _config.yml,_config_en.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
+end
+
+task :servequickes do
+  sh 'bundle exec jekyll serve --config _config.yml,_config_es.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
 end
 
 task :en do
@@ -49,6 +44,4 @@ task :es do
   sh 'bundle exec jekyll serve --config _config.yml,_config_es.yml --watch --incremental --limit_posts 3'
 end
 
-
-
-task :default => :spec
+task :default => :servequick

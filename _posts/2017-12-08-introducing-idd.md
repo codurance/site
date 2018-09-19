@@ -40,7 +40,7 @@ IDD puts together a cohesive set of new and existing methods to create a more pr
 IDD focus on the design and development of the functional aspects of a system, including architecture, macro and micro design.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/architecture_macro_micro_design.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/architecture_macro_micro_design.png" alt="architecture, macro and micro design" class="img img-responsive" style="height: 60%; width: 60%;"/>
 </center>
 <br/>  
 
@@ -49,7 +49,7 @@ IDD focus on the design and development of the functional aspects of a system, i
 IDD focus on the interactions between actors and the application, and between the different behaviours inside the application. Internal behaviour is discovered by decomposing behaviour triggered by actors. The process is repeated for each behaviour identified, breaking them down into smaller behaviours until there is no smaller behaviour. Course-grain behaviours become clients for fine-grain behaviours. Each behaviour is created to satisfy the needs of an existing behaviour or external need. This is what we call _outside-in design_. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/business_flow.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/business_flow.png" alt="architecture, macro and micro design" class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 <br/>  
 
@@ -95,7 +95,7 @@ Each theme of work is broken down into features, which are prioritised on the te
 Before committing to a feature, the team must understand how actors will be interacting the application in order to benefit from the feature. A horizontal exploration of the delivery mechanism must be done before dividing a feature in small vertical slices. Feature slicing should be done from the outside to the inside, in other words, from the delivery mechanism to the persistence or integration points. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/feature_slicing.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/feature_slicing.png" alt="architecture, macro and micro design" class="img img-responsive" style="height: 60%; width: 60%;"/>
 </center>
 <br/>  
 
@@ -118,7 +118,7 @@ In IDD, we start designing and testing from the input (outside) to the output (i
 IDD aligns design and test-driven development (TDD) to the execution flow. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/IDD.png" alt=“alignment of execution flow, testing and design” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-12-08-introducting-idd/IDD.png" alt="alignment of execution flow, testing and design" class="img img-responsive" style="height: 70%; width: 70%;"/>
 </center>
 
 ## Summary 
