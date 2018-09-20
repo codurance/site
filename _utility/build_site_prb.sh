@@ -14,8 +14,8 @@ else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
   rake buildenprb
-  export enUrl=$(cat _config.yml | ruby read_yaml_value.rb "_config.yml" "domains.en")	
-  export esUrl=$(cat _config.yml | ruby read_yaml_value.rb "_config.yml" "domains.es")
+  export enUrl=$(ruby ./_utility/read_yaml_value.rb "_config.yml" "domains.en")	
+  export esUrl=$(ruby ./_utility/read_yaml_value.rb "_config.yml" "domains.es")
   sed -i "s#${enUrl}#${esUrl}#g" ./_site_es/sitemap.xml
 fi
 
