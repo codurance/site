@@ -8,6 +8,8 @@ if [[ "$FOLDER_NAME" != "site-master" ]]; then
   echo "baseurl: /$FOLDER_NAME" > _config_prb.yml
   cat _config_prb.yml
   rake buildenprb
+  $(ruby read_yaml_value.rb "_config.yml" "domains.en")	
+  $(ruby read_yaml_value.rb "_config.yml" "domains.es")
 else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
