@@ -1,4 +1,4 @@
-# readyaml.rb
+# read_yaml_value.rb
 require 'yaml'
 
 file = ARGV[0]
