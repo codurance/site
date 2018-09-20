@@ -12,10 +12,7 @@ else
   echo "baseurl: ''" > _config_prb.yml
   rake buildesprb
   rake buildenprb
-  pip install shyaml
-  export enUrl=$(cat _config.yml | shyaml get-value domains.en)
-  export esUrl=$(cat _config.yml | shyaml get-value domains.es)
-  sed -i "s#${enUrl}#${esUrl}#g" ./_site_es/sitemap.xml
-
+  
+  sed -i '' 's/codurance.com/codurance.es/g' ./_site_es/sitemap.xml
 fi
 
