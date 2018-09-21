@@ -1,4 +1,19 @@
-(function() {
+window.codurance  = window.codurance || {}
+
+window.codurance.cookieMessage = (function() {
+    const COOKIE_NAME = 'has-cookie-consent';
+    var messageElement = document.getElementById('cookie-message');
+    var acceptButton = document.getElementById('cookie-message-accept');
+    
+    if (!messageElement) {
+        throw 'no element found for cookie message';
+    }
+
+    if(!acceptButton) {
+        throw 'no element found for cookie message accept';
+    }
+
+    var onConsentCallbacks = [];
 
     /**
      * Set cookie
@@ -9,7 +24,7 @@
      * @param string path
      * @see http://www.quirksmode.org/js/cookies.html
      */
-    function createCookie(name,value,days,path) {
+    function createCookie(name, value, days, path) {
         if (days) {
             var date = new Date();
             date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -36,26 +51,56 @@
         return null;
     }
 
-    var cookieMessage = document.getElementById('cookie-message');
-    if (cookieMessage == null) {
-        return;
+    function showMessage() {
+        messageElement.style.display = 'block';
     }
-    var cookie = readCookie('seen-cookie-message');
-    if (cookie != null && cookie == 'yes') {
-        cookieMessage.style.display = 'none';
-    } else {
-        cookieMessage.style.display = 'block';
+
+    function hideMessage() {
+        messageElement.style.display = 'none';
     }
-    
-    // Set/update cookie
-    var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
-    if (cookieExpiry == null) {
-        cookieExpiry = 30;
+
+    function hasConsent() {
+        var cookie = readCookie('has-cookie-consent');
+        var hasConsent = cookie != null && cookie == 'yes';
+        return hasConsent;
     }
-    var cookiePath = cookieMessage.getAttribute('data-cookie-path');
-    if (cookiePath == null) {
-        cookiePath = "/";
+
+    function setConsent() {
+        // Set/update cookie
+        var cookieExpiry = 60;
+        var cookiePath =  "/";
+
+        createCookie(COOKIE_NAME, 'yes', cookieExpiry, cookiePath);
     }
-    createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
+
+    function onConsent(callback){
+        onConsentCallbacks.push(callback);
+    }
+
+    function triggerOnConsent () {
+        onConsentCallbacks.forEach(function(callback){
+            callback.call(null);
+        });
+    }
+
+    function init () {
+        if (hasConsent()) {
+            return;
+        } 
+        
+        showMessage();
+
+        acceptButton.addEventListener('click', function(){
+            setConsent();
+            hideMessage();
+            triggerOnConsent();
+        });
+    }
+
+    init();
+
+    return {
+        onConsent: onConsent
+    };
 
 })();

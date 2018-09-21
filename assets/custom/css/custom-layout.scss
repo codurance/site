@@ -738,6 +738,14 @@ blockquote.no-left-border {
 
 /* Cookie Message
 ----------------------------------*/
-.js_enabled #cookie-message {
-  display: none;
+#cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  margin: 0 auto; 
+  background-color: #d5e6ed;
+  font-size: 1.2rem
 }
