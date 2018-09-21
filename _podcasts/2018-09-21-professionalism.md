@@ -6,7 +6,7 @@ name: codurance-talks-episode-2
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 2"
-video-url: https://www.podbean.com/media/player/yztrb-9a5ca9?from=site
+video-url: https://www.podbean.com/media/player/yztrb-9a5ca9?from=site&vjs=1&skin=1&fonts=Helvetica&auto=0&download=
 date: 2018-09-21 08:00:00 +00:00
 ---
 
