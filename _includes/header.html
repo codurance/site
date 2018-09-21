@@ -46,12 +46,17 @@
                 <li class="nav-item g-mx-25--lg g-mr-0--lg">
                   <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
                 </li>
+                {% for domain in site.domains %}
+                  <li class="nav-item g-mx-25--lg g-mr-0--lg g-hidden-sm-up"> 
+                    <a  href="{{ domain[1] }}{{ page.url }}" class="nav-link px-0">{{ domain[0] | upcase }}</a> 
+                  </li>
+                {% endfor %}
               </ul>
             </div>
             <!-- End Navigation -->
 
             <!-- Language Picker -->
-            <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg">
+            <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg g-hidden-xs-down">
               <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
                 {% for domain in site.domains %}
                 {% if domain[0] == site.lang %} {{ domain[0] | upcase }}&nbsp; {% endif %}
