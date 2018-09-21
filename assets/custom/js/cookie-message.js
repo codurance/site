@@ -57,6 +57,7 @@ window.codurance.cookieMessage = (function() {
 
     function hideMessage() {
         messageElement.style.display = 'none';
+        messageElement.classList.add('accepted');
     }
 
     function hasConsent() {

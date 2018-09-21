@@ -747,5 +747,15 @@ blockquote.no-left-border {
 
   margin: 0 auto; 
   background-color: #d5e6ed;
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+#cookie-message.accepted{
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  display: block!important;
 }
