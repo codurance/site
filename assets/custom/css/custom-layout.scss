@@ -253,6 +253,7 @@ $orange-colour: #e67e22;
   }
 }
 
+
 .testimonials-carousel-container{
   margin: 0 auto;
 }
@@ -273,10 +274,14 @@ $orange-colour: #e67e22;
   }
 }
 
-.testimonial-picture{
-  height: 260px;
+.testimonial-picture {
+  height: 275px;
   background-size: cover;
   background-repeat: no-repeat; 
+
+  @media (max-width: 767px) {
+    height: 160px;
+  }
 }
 
 .testimonial-preview {
