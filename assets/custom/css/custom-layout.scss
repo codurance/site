@@ -284,6 +284,32 @@ $orange-colour: #e67e22;
   }
 }
 
+.quote {
+  font-size: 14px;
+}
+
+.curly-quotes:before, .curly-quotes:after {
+  font-family: Georgia, serif;
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  line-height: 48px;
+  font-size: 50px;
+  opacity: .2;
+}
+
+.curly-quotes:before {
+  content: '\201C';
+  margin-right: 4px;
+  margin-left: 0px;
+}
+
+.curly-quotes:after {
+  content: '\201D';
+  margin-left: 4px;
+  margin-right: -8px;
+}
+
 .testimonial-preview {
   img {
     width: 60px;
