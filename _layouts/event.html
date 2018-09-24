@@ -8,49 +8,42 @@ group:
   <div class="blog-author bg-color-white margin-bottom-30">
       <div class="row">
           <div class="col-sm-3 pull-left">
-		{% if page.image.src %}
-			{% assign eventImage = page.image.src %}
-		{% else %}
-			{% assign eventImage = site.default_post_image %}
-		{% endif %}
-		<img class="img-fluid" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
-		{% if page.speaker %}
-			<h3>{{ page.speaker | author_links }}</h3>
-		{% endif %}
-          </div>
-          <div class="col-sm-9">
-            <div class="blog-author-desc">
-              <div class="overflow-h">
-                  	<h1>{{ page.title }}</h1>
-			<ul style="list-style:none;float:none;">							
-				{% if page.event-dates %}
-				<li> {{ page.event-dates.starts | date_to_string }}
-				{% if page.event-dates.ends %}
-						- {{ page.event-dates.ends | date_to_string }}              
-					{% endif %}
-				</li>
-				{% if page.speaker %}
-				<li>{% t event.author_title %} {{ page.speaker | author_links }}</li>
-				{% endif %}
-				<li>{% t event.location_title %} </li><li> {{ page.location }}</li>
-				{% endif %}
-				<li><a href="{{ page.event-page-url }}"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {% t event.link_title %} </span></a></li>
-			</ul>
+							{% if page.image.src %}
+								{% assign eventImage = page.image.src %}
+							{% else %}
+								{% assign eventImage = site.default_post_image %}
+							{% endif %}
+							<img class="img-fluid" id="author-img" src="{{ eventImage }}" alt="{{ page.title }}">
+							{% if page.speaker %}
+								<h3>{{ page.speaker | author_links }}</h3>
+							{% endif %}
+					</div>
+					<div class="col-sm-9">
+						<div class="blog-author-desc">
+							<div class="overflow-h">
+										<h1>{{ page.title }}</h1>
+								<ul style="list-style:none;float:none;">							
+									{% if page.event-dates %}
+									<li> {{ page.event-dates.starts | date_to_string }}
+									{% if page.event-dates.ends %}
+											- {{ page.event-dates.ends | date_to_string }}              
+										{% endif %}
+									</li>
+									{% if page.speaker %}
+									<li>{% t event.author_title %} {{ page.speaker | author_links }}</li>
+									{% endif %}
+									<li>{% t event.location_title %} </li><li> {{ page.location }}</li>
+									{% endif %}
+									<li><a href="{{ page.event-page-url }}"><i class="fa fa-tags"></i><span class="blog-tag-margin"> {% t event.link_title %} </span></a></li>
+								</ul>
               </div>
             </div> 
           </div>
         </div>
-	<div class="row col-sm-9">
-	<p>{{ content }}</p>
-	</div>
-	<div class="row">
-		<div id="sharethisButtons">
-			<span class='pull-right st_twitter_large' displayText='Tweet' st_url='{{ site.url }}{{ page.url }}'></span>
-			<span class='pull-right st_linkedin_large' displayText='LinkedIn' st_url='{{ site.url }}{{ page.url }}'></span>
-			<span class='pull-right st_email_large' displayText='Email' st_url='{{ site.url }}{{ page.url }}'></span>
-			<span class='pull-right st_sharethis_large' displayText='ShareThis' st_url='{{ site.url }}{{ page.url }}'></span>
-		</div>
-	</div>
+			<div class="row col-sm-9">
+				<p>{{ content }}</p>
+				{% include social_icons.html %}
+			</div>
 
   </div>
 </div>     
