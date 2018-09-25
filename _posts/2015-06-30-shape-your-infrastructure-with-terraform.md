@@ -30,7 +30,7 @@ AWS provides many different interfaces which allow automation of an infrastructu
 ### Plan
 
 #### Infrastructure diagram
-<img src="{{ site.baseurl }}/assets/custom/img/blog/terraform/ShapeYourInfrastructure_VPC.png" class="img-responsive blog-post-image" />To demonstrate the use of Terraform we need to introduce some example infrastructure: let's provision a structure which will support a simple web service running in AWS. This web service will expose an API via a web proxy server. The service also requires a database and this database should have a separate EC2 instance to ease database maintenance. Instances responsible for business logic will be hidden in a private subnet and only the web proxy
+<img src="{{ site.baseurl }}/assets/custom/img/blog/terraform/ShapeYourInfrastructure_VPC.png" class="img-fluid blog-post-image" />To demonstrate the use of Terraform we need to introduce some example infrastructure: let's provision a structure which will support a simple web service running in AWS. This web service will expose an API via a web proxy server. The service also requires a database and this database should have a separate EC2 instance to ease database maintenance. Instances responsible for business logic will be hidden in a private subnet and only the web proxy
 server will be available to the wider internet. At the same time our service needs to connect to external resources - therefore a NAT instance will take the responsibility of managing network connections from within the private subnet. All of these resources will constitute a single [Virtual Private Cloud](http://aws.amazon.com/vpc/) (VPC).
 
 
