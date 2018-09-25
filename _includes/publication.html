@@ -24,7 +24,11 @@
             <div>
                 {% if include.widgets contains "video_frame" %}
                 <img class="img-fluid d-block full-width">
-                <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url }}"></iframe>
+                    {% if page.video-url contains 'https://www.youtube.com' %}
+                        <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url | replace: 'https://www.youtube.com', 'https://www.youtube-nocookie.com' }}"></iframe>
+                    {% else %}
+                        <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url }}"></iframe>
+                    {% endif %}
                 </img>
                 {% endif %} {{ content }}
             </div>
