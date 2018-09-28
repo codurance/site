@@ -50,7 +50,7 @@ title: JetBrains
 			<p>{% t partners-jetbrains-products.subtitle  %}</p>
 		</div>
 		<div class="news-v3 margin-bottom-30 bg-color-white"> 
-			<div class="img-responsive full-width"> <iframe height="500" width="100%" src="https://www.youtube.com/embed/XHnuMjah6ps" frameborder="0" allowfullscreen="true"></iframe> </div>
+			<div class="img-responsive full-width"> <iframe height="500" width="100%" src="https://www.youtube-nocookie.com/embed/XHnuMjah6ps" frameborder="0" allowfullscreen="true"></iframe> </div>
 			<div class="news-v3-in"> 
 			<ul class="list-inline posted-info">
 			<li>{% t partners-jetbrains-product.published %}</li> 
