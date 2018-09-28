@@ -60,8 +60,6 @@
         
         $('[data-toggle="popover"]').popover();
         
-        
-
         $('#carousel1').slick('setOption', 'customPaging', function (slider, i) {
           var title = $(slider.$slides[i]).data('title');
 
@@ -73,7 +71,6 @@
 
           return '<i class="u-dot-line-v1 g-brd-gray-light-v2--before g-brd-gray-light-v2--after g-mb-15--sm"><span class="u-dot-line-v1__inner g-bg-white g-bg-primary--before g-brd-gray-light-v2 g-brd-primary--active g-transition--ease-in g-transition-0_2"></span></i><span class="g-hidden-sm-down g-color-black g-font-size-15">' + title + '</span>';
         }, true);
-        
 
         $('.masonry-grid').imagesLoaded().then(function () {
           $('.masonry-grid').masonry({
@@ -86,25 +83,32 @@
         if (typeof onJQueryLoaded === 'function') {
           onJQueryLoaded();
         }
-
-
       });
 
       $(window).on('load', function () {
         $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
       });
-
-      $(window).on('resize', function () {
-        setTimeout(function () {
-          var gaEvents = window.googleAnalyticsEvents;
-          gaEvents.functions.forEach(function(fireEvent){
-            fireEvent(gaEvents.environment);
-          });
-
-        }, 200);
-      });
   </script>
 
-  <!-- JS for setting Cookie for Cookie Message-->
   <script src="{{ '/assets/custom/js/cookie-message.js' | prepend: site.baseurl }}"></script>
+
+  <script>
+    if(codurance.cookieMessage.hasConsent()) {
+      ga('set', 'anonymizeIp', undefined);
+    } else {
+      codurance.cookieMessage.onConsent(function(){
+        ga('set', 'anonymizeIp', undefined);
+      });
+    }
+    ga('send', 'pageview');
+    
+    $(window).on('resize', function () {
+      setTimeout(function () {
+        var gaEvents = window.googleAnalyticsEvents;
+        gaEvents.functions.forEach(function(fireEvent){
+          fireEvent(gaEvents.environment);
+        });
+      }, 200);
+    });
+  </script>

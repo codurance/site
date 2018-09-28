@@ -87,15 +87,18 @@
 {% endif %}
 
 <script>
+    window.codurance = window.codurance || {};
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', '{% t analytics.google-id %}', 'codurance.com');
-    ga('send', 'pageview');
+    ga('set', 'forceSSL', true);
+
     window.googleAnalyticsEvents = { environment: {ga:ga}, functions: []};
-    // fire all events at onload - see _includes/foot.html
+    // fire all events at onload/resize - see _includes/foot.html
 </script>
 
 <script type="text/javascript" src="https://secure.leadforensics.com/js/113763.js" ></script>
