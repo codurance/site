@@ -607,3 +607,12 @@
    <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
   twitter: bourkemeister
   github: bourkemeister
+
+- id: solange
+  name: Solange U. Gasengayire
+  image: /assets/custom/img/team/solange.png
+  role: Apprentice
+  fullDescription:
+    <p>Coming soon...</p>
+  twitter: sgasengayire
+  github: SolangeUG
