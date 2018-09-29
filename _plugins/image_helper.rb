@@ -23,7 +23,7 @@ module Jekyll
 
     def render(context)
       if @img
-        "<p></p><img src=\"#{@img}\"  alt=\"#{@alt}\" title=\"#{@alt}\" class=\"img img-center img-responsive style-screengrab\">"
+        "<p></p><img src=\"#{@img}\"  alt=\"#{@alt}\" title=\"#{@alt}\" class=\"img img-center img-fluid style-screengrab\">"
       end
       
     end

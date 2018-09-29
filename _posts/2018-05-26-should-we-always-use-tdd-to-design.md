@@ -40,7 +40,7 @@ The problem with this definition is that it does not only define software design
 Software design happens at many different levels and not all design techniques are suitable for every level. Although systems can present multiple levels of details, I'll simplify the different levels where design can happen for sake of simplicity.  
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-05-26-should-we-always-use-TDD-to-design/architecture_macro_micro_design.png" alt="architecture, macro and micro design" class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-05-26-should-we-always-use-TDD-to-design/architecture_macro_micro_design.png" alt="architecture, macro and micro design" class="img img-fluid" style="height: 60%; width: 60%;"/>
 </center>
 <br/>  
 

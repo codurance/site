@@ -21,7 +21,7 @@ categories:
 
 As you could remember from previous posts, [Part 1](http://codurance.com/2016/04/28/async-systems-with-sync-clients/) and   [Part 2](http://codurance.com/2016/04/30/akka-basics/), we're implementing a solution that integrates a sync client with an async system. Today we'll see how to keep track of the async operations so we can provide a sync response to the client. Let's start with the architectural diagram.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-fluid style-screengrab">
 
 We can understand the system through an example. The police sends us a request to delete an illegal item, and it expects a response in 10 seconds. Relevant statuses, for this example, are:
 
@@ -94,7 +94,7 @@ Meanwhile in a negative balance state we could define different rules, as how ma
 
 Let's see a diagram about the architecture that we're going to implement from a lower point of view:
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/fsm.png" alt="FSM architecture" title="FSM architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/fsm.png" alt="FSM architecture" title="FSM architecture" class="img img-center img-fluid style-screengrab">
 
 The Law enforcement service will contain multiple instances of ItemCensor actor.
 
