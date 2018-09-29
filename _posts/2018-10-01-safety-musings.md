@@ -2,7 +2,7 @@
 author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
-title: "Future Languages"
+title: "Safety Musings"
 date: 2018-09-29 08:00:00
 description: Where I muse about safety
 image: 
@@ -11,7 +11,7 @@ tags:
 - Software Craftsmanship
 ---
 
-So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert Martin (Unble Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which you will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
+So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert Martin (Unble Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
 
 ## Discussing about what are functional languages
 
