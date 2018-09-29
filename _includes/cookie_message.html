@@ -1,0 +1,14 @@
+<!-- This was obtained from https://github.com/studio24/cookie-message-->
+
+<!-- Cookie Message -->
+<div id="cookie-message" class="g-pb-20 g-pt-20 g-bg-black-opacity-0_9 g-color-white-opacity-0_8" style="display: none;">
+  <div class="row">
+    <div class="col-lg-10 g-pl-50 g-pt-20">
+        {% t cookie-message.content %}
+        <a href="{{ '/policies/cookie' | prepend: site.baseurl }}" target="_blank" title="{% t cookie-message.view-policy %}">{% t cookie-message.view-policy %}</a>
+    </div>
+    <div class="col-lg-2 g-pr-50">
+      <a id="cookie-message-accept" class="btn btn-u btn-more pull-right" title="{% t cookie-message.accept %}"> {% t cookie-message.accept %}</a>
+    </div>
+  </div>
+</div>

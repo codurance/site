@@ -89,10 +89,15 @@ footer-useful_links:
    link_4_title: Careers
    link_5_title: About us
    link_6_title: Privacy policy
+   link_7_title: Cookie policy
 footer-contact:
    title: Contact Us
    phone_title: Phone
    email_title: Email
+cookie-message:
+   content: Codurance uses cookies to ensure we give you the best experience on our website.
+   view-policy: View our Cookie Policy
+   accept: Accept
 company-who_are_we:
    title: Who are we?
    subtitle: <p>We build well-crafted software and help development teams to get better at continuously delivering software through the application of Extreme Programming practices and Software Craftsmanship values. Software Craftsmanship is at the heart of our company. In 2010, the founders started the <a href="http://londonswcraft.com/">London Software Craftsmanship Community (LSCC)</a> which has grown to become the largest and most active Software Craftsmanship community in the world, with more than 3,500 developers that meet a few times a month to share and learn. Codurance was founded in 2013 and inherited the same community spirit. Since 2013, we have been organising <a href="http://socratesuk.org/">SoCraTes UK</a>&mdash;an International Software Craftsmanship Gathering that attracts software craftspeople from all over Europe.

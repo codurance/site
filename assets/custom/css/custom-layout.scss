@@ -735,3 +735,27 @@ blockquote.no-left-border {
   color:#585f69;
 
 }
+
+/* Cookie Message
+----------------------------------*/
+#cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  margin: 0 auto; 
+  background-color: #d5e6ed;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+#cookie-message.accepted{
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  display: block!important;
+}

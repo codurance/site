@@ -64,15 +64,21 @@
                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
               </h4>
             </li>
-            <li class="g-pos-rel g-py-10 g-brd-white-opacity-0_1 g-py-10">
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
                 <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/company' | prepend: site.baseurl }}">{% t footer-useful_links.link_5_title %}</a>
                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
               </h4>
             </li>
-            <li class="g-pos-rel g-py-10 g-brd-white-opacity-0_1 g-py-10">
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
               <h4 class="h6 g-pr-20 mb-0">
                 <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/policies/privacy' | prepend: site.baseurl }}">{% t footer-useful_links.link_6_title %}</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+            </li>
+            <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+              <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="{{ '/policies/cookie' | prepend: site.baseurl }}">{% t footer-useful_links.link_7_title %}</a>
                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
               </h4>
             </li>
@@ -150,3 +156,6 @@
   </div>
 </footer>
 <!-- End Copyright Footer -->
+<!-- Cookie Message-->
+{% include cookie_message.html %}
+<!-- End Cookie Message -->
