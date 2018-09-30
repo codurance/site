@@ -73,20 +73,6 @@ Taking into account what I said above, do they have a place on my toolbox? Well 
 
 I think I need to point here that all general purpose programming languages are Turing complete. What that means is that you could create the same application on any of them. The difference is the difficulty to hit some of the functional and non-functional requirements. Some languages will make fulfilling some requirements easier, some languages will make fulfilling some requirements more difficult. Languages are another tool. You should select the most appropriate based on what requirements are more important.
 
-## Musings about techniques
-
-But what about how we code? Are there techniques that make developing a solution safer? I do think so.
-
-I currently think that TDD is the best thing since slice bread. Which will not stop me from changing my tune if I find something that is like slice bread with melted Biscoff spread on top.
-
-TDD, Walking skeleton, integration testing, performance and load testing ... those are tools that we, Codurance, value and always try to spread our love for. But you can go further if the safety/security requirements demand it, like formal proofs (which there are not the panacea either, I know cases where they have failed).
-
-Saying that you don't need test is factually wrong. The interactions in most current systems tend to be too complicated for anyone to know all the possible permutations. You need automated tests, at several levels, that are run often (where often depends on the level of the test), that stop your system for being deployed if they fail.
-
-But also that is not enough by itself. You need to be able to check that your production code, on the server, or on the robot that is using it, performs according to expectations. You need to know when things go beyond safe parameters.
-
-Redundant test and check systems are not out of place when your software goes into an aeroplane or a car.
-
 ## Famous problems
 
 Just to illustrate a few cases where we, developers, have failed, through language choices or techniques used.
