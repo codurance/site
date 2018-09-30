@@ -47,7 +47,7 @@ The boilerplate (directly through the actual production code or indirectly throu
 
 Tony C. Hoare, between lots of other stuff, created `Null`. He is recorded as saying (well, I did have the privilege to see him at Code Mesh saying so) that `Null` was his $1million mistake (or probably 1 billion by now). How many errors have happened (and will happen), because a method/function could return null? How much boilerplate code has been written to check for null values? Why languages do still allow nulls? `Null` doesn't represent anything useful. If something went wrong either we fail the program completely or we indicate some other way what is exactly the issue at hand. `Null` is a meaningless construct of absolutely no interest. `Null` makes our systems more likely to crash
 
-As an aside,one of the things that I like from the C# language spec group is that they have not been afraid to break compatibility to improve the basis of the language. The did it when generics came to the language, and they have done it again when they decided that objects, by default, will not allow null.
+As an aside, one of the things that I like from the C# language spec group is that they have not been afraid to break compatibility to improve the basis of the language. The did it when generics came to the language, and they have done it again when they decided that objects, by default, will not allow null.
 
 ## Safe Languages?
 
