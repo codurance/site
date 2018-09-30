@@ -92,11 +92,11 @@ Redundant test and check systems are not out of place when your software goes in
 Just to illustrate a few cases where we, developers, have failed, through language choices or techniques used.
 
 - London Ambulance Service System Failure
-    You can read a nice review at [Erick Musik website](https://erichmusick.com/writings/technology/1992-london-ambulance-cad-failure.html). This one is (or was) taught at London universities.
+<br>You can read a nice review at [Erick Musik website](https://erichmusick.com/writings/technology/1992-london-ambulance-cad-failure.html). This one is (or was) taught at London universities.
 - Banking failures
-    So many to look at just in the UK. RBS group 2012, HSBC 2015, RBS 2015, TBS 2018, ...
+<br>So many to look at just in the UK. RBS group 2012, HSBC 2015, RBS 2015, TBS 2018, ...
 - Therac 25
-  You can read the entry [at Wikipedia for it](https://en.wikipedia.org/wiki/Therac-25)
+<br>You can read the entry [at Wikipedia for it](https://en.wikipedia.org/wiki/Therac-25)
 
 ## Conclusions
 
