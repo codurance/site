@@ -2,7 +2,7 @@
 author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
-title: "Safety Musings"
+title: "Safety Musings 1 (Languages)"
 date: 2018-09-29 08:00:00
 description: Where I muse about safety
 image: 
@@ -11,7 +11,7 @@ tags:
 - Software Craftsmanship
 ---
 
-So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert Martin (Unble Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
+So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Unble Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
 
 ## Discussing about what are functional languages
 
@@ -21,9 +21,9 @@ But that led me to start thinking about characteristics of languages. And it is 
 
 As a result, they become safer languages. There is less code created to create a feature, therefore the number of parts that can fail is smaller and those parts are much easier to test. The code is simpler (but that doesn't make creating it is easier).
 
-### Types and Paradigms
+## Paradigms
 
-The first time I attended NDC London was the only time I have seen Uncle Bob on stage live (on 2014, where I watched presentations by [Scott Wlaschin](https://vimeo.com/113588389) and [Andrea Magnorsky](https://vimeo.com/113716254) that led me to learn F#). On that presentation he talked about the fact that the Functional Paradigm appeared first, then Object Oriented, then Structure (all within a few years, between the late 50s and early 60s), but then the adoption by the general community was on the reverse. We needed to learn to use Structured programming, before we could move to OOP. And we needed to do OOP before we were ready to move to FP.
+The first time I attended NDC London was the only time I have seen Martin on stage live (on 2014, where I watched presentations by [Scott Wlaschin](https://vimeo.com/113588389) and [Andrea Magnorsky](https://vimeo.com/113716254) that led me to learn F#). On that presentation he talked about the fact that the Functional Paradigm appeared first, then Object Oriented, then Structure (all within a few years, between the late 50s and early 60s), but then the adoption by the general community was on the reverse. We needed to learn to use Structured programming, before we could move to OOP. And we needed to do OOP before we were ready to move to FP.
 
 My colleague Richard, points to the fact that you can divide these paradigms based on the constraints that they give you:
 
@@ -33,15 +33,20 @@ My colleague Richard, points to the fact that you can divide these paradigms bas
 - **Functional programming** imposes constraints on mutating state. Instead of changing the values of things unrestrained, the language imposes discipline so that you know where the mutating state lives, and the language additionally protects you against synchronization problems (safety feature).
 * * *
 
-Types do represent constraints as well. We can have dynamic or static typed languages, and weakly or strongly typed languages. They represent constraints around what we can pass around.
+Looking at the paradigms from the constraints point of view, it makes sense that we went first with structured programming. It becomes much easier to add constraints little by little. The easiest ones first, then the most difficult ones later. We are automating discipline bit by bit into the way that we work.
 
-All these possibilities are orthogonal to each other. All these are independent dimensions on which languages can exist.
+## Types
+
+Types do represent constraints around the data we can pass around. As such, we are talking about three types here: Primitives, Structs and Objects. But we also talk about two set of behaviours that languages can show: dynamic or static, and strong or weak. The more restrictive a language is, the less errors that can appear in the code. The compiler will help you and stop you from doing things that don't make sense. You will need to provide specific constructs to convert between types (for primitives and structs) or to link logically types together (for objects), like Interfaces, Mixins, Protocols, ...
+
+
+All these possibilities, both paradigm and types, are orthogonal to each other. All these are independent dimensions on which languages can exist.
 
 ## Boilerplate
 
 If I look at statically typed OOP languages, to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. The offshot, is that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce a type into another (and let's not talk about void pointers here).
 
-The boilerplate (directly through the actual production code or indirectly through tests) is neccessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But could we avoid all this boilerplate?
+The boilerplate (directly through the actual production code or indirectly through tests) is neccessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
 
 ## Null
 
@@ -72,17 +77,6 @@ My current favourite language is Clojure (dynamic), and I like quite a lot Elixi
 Taking into account what I said above, do they have a place on my toolbox? Well yes, there is still plenty of work that doesn't require those safety measures. And on those areas, any language can be used. Of course, you need to be sure that you don't create code that will completely wipe out a computer unintentionally). Websites that do not process payments, games, library applications, video processing systems, small scripts, ... usually do not have the same safety/security needs. 
 
 I think I need to point here that all general purpose programming languages are Turing complete. What that means is that you could create the same application on any of them. The difference is the difficulty to hit some of the functional and non-functional requirements. Some languages will make fulfilling some requirements easier, some languages will make fulfilling some requirements more difficult. Languages are another tool. You should select the most appropriate based on what requirements are more important.
-
-## Famous problems
-
-Just to illustrate a few cases where we, developers, have failed, through language choices or techniques used.
-
-- London Ambulance Service System Failure
-<br>You can read a nice review at [Erick Musik website](https://erichmusick.com/writings/technology/1992-london-ambulance-cad-failure.html). This one is (or was) taught at London universities.
-- Banking failures
-<br>So many to look at just in the UK. RBS group 2012, HSBC 2015, RBS 2015, TBS 2018, ...
-- Therac 25
-<br>You can read the entry [at Wikipedia for it](https://en.wikipedia.org/wiki/Therac-25)
 
 ## Conclusions
 
