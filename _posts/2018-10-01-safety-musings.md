@@ -76,4 +76,4 @@ I think I need to point here that all general purpose programming languages are 
 
 ## Next
 
-There will be a second post about Techniques. And then a conclusion (same post, another one, ...)
+There will be a second post about Techniques (because they too affect the safety of our code). And then a conclusion (same post, another one, ...)
