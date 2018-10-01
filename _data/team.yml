@@ -627,3 +627,14 @@
     <p>Chris enjoys reading, middle distance running and films.</p>
   twitter: chriseyre2000
   github: chriseyre2000
+
+- id: marco_vermeulen
+  name: Marco Vermeulen
+  image: /assets/custom/img/team/marco_vermeulen.png
+  role: Software Craftsman
+  fullDescription:
+    <p>Marco is passionate about writing well crafted code, driven and guided by tests. As a proponent of BDD, he has successfully applied this technique in the Enterprise as well as on Open Source Projects.</p>
+    <p>He is an avid supporter of FLOSS and is the creator of SDKMAN!, the Software Development Kit Manager.</p>
+    <p>In his spare time he loves exploring woodlands with his lovely wife Renza and their two dogs, Layla and Bonnie.</p>
+  twitter: marc0der
+  github: marc0der
