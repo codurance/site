@@ -616,3 +616,14 @@
     <p>Coming soon...</p>
   twitter: sgasengayire
   github: SolangeUG
+
+- id: chris_eyre
+  name: Christopher Eyre
+  image: /assets/custom/img/team/chris_eyre.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Chris has over 20 years of experience working in the software development across a range of industries. He has worked in Defence, Banking, Insurance, Futures Trading, Betting and Digital Publishing. </p>
+    <p>Chris is a life long learner, keen on Agile and Lean processes and equaly at home talking to stakeholders and developers.</p>
+    <p>Chris enjoys reading, middle distance running and films.</p>
+  twitter: chriseyre2000
+  github: chriseyre2000
