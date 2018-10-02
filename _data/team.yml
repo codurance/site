@@ -648,3 +648,13 @@
     <p>In his spare time he loves exploring woodlands with his lovely wife Renza and their two dogs, Layla and Bonnie.</p>
   twitter: marc0der
   github: marc0der
+
+- id: daniel_parkin
+  name: Dan Parkin
+  image: /assets/custom/img/team/dan_parkin.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Before joining Codurance Dan worked at a digital agency in Manchester working with a variety of clients in different industries. He loves learning about software craftsmanship, design and delivery.</p>
+    <p>Outside of work he enjoys music production, playing guitar, attempting to learn German and reading about all things software.</p>
+  twitter: danpkn
+  github: squaretechre
