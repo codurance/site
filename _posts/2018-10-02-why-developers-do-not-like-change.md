@@ -3,10 +3,10 @@ author: Sam Davies
 layout: post
 asset-type: post
 title: "Why developers do not like organisational change"
-date: 2018-10-01 00:00:00
+date: 2018-10-02 09:00:00
 description: A glimpse into the mind of developers when organisational changes are proposed.
 image: 
-    src: /assets/custom/img/blog/2018-10-01-architecture.jpg
+    src: /assets/custom/img/blog/2018-10-02-architecture.jpg
 abstract: A glimpse into the mind of developers when organisational changes are proposed.
 ---
 This post will endeavour to explore the reasons why developers do not like organisational change, and how not
