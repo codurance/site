@@ -48,7 +48,7 @@ Company X wish to make some changes, if you were one of those developers, which 
 If you are like the majority of people, you will prefer option `B`, despite the fact that both options present potential
 losses (in this case, your job).
 
-Unfortunately, when changes are proposed not all of the facts are not known and so you would not be able to make such a 
+Unfortunately, when changes are proposed not all of the facts are known and so you would not be able to make such a 
 decision as above. There normally is a large amount of uncertainty, and your decision to remain at a company will be a 
 gamble.
 
