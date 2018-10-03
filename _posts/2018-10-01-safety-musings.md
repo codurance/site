@@ -24,7 +24,7 @@ As a result, they become safer languages. There is less code written to create a
 ## Language Division
 ### Paradigms
 
-The first time I attended NDC London was the only time I have seen Martin on stage live (on 2014, where I watched presentations by [Scott Wlaschin](https://vimeo.com/113588389) and [Andrea Magnorsky](https://vimeo.com/113716254) that led me to learn F#). On that presentation he talked about the fact that the Functional Paradigm appeared first, then Object Oriented, then Structured (all within a few years, between the late 50s and early 60s), but then the adoption by the general community was on the reverse: We needed to learn to use Structured programming before we could move to OOP; and we needed to do OOP before we were ready to move to FP.
+The first time I attended NDC London was also the first time I have seen Martin on stage live (on 2014, where I watched presentations by [Scott Wlaschin](https://vimeo.com/113588389) and [Andrea Magnorsky](https://vimeo.com/113716254) that led me to learn F#). On that presentation he talked about the fact that the Functional Paradigm appeared first, then Object Oriented, then Structured (all within a few years, between the late 50s and early 60s), but then the adoption by the general community was on the reverse: We needed to learn to use Structured programming before we could move to OOP; and we needed to do OOP before we were ready to move to FP.
 
 My colleague [Richard](https://codurance.com/publications/author/richard-wild/) points to the fact that you can divide these paradigms based on the constraints that they give you:
 
@@ -36,7 +36,7 @@ My colleague [Richard](https://codurance.com/publications/author/richard-wild/) 
 
 Looking at the paradigms from the constraints point of view, it makes sense that we went first with structured programming. It becomes much easier to add constraints little by little. The easiest ones first, then the most difficult ones later. We are automating discipline bit by bit into the way that we work.
 
-A recommendation on structured programming, one that wasn't really enforced by the compiler/interpreter of the language is the avoidance of global state. Is interesting as well that in OOP languages, the recommended way of dealing with the state of objects is to hide the state and only allow access through the public methods of the object. We did recognise that state changes are problematic. 
+But we don't only rely on the language for constrains: a recommendation on structured programming, one that wasn't really enforced by the compiler/interpreter of the language, is the avoidance of global state. Is interesting as well that in OOP languages, the recommended way of dealing with the state of objects is to hide the state and only allow access through the public methods of the object. We did recognise that state changes are problematic. 
 
 ### Types
 
