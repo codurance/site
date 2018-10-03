@@ -11,7 +11,7 @@ tags:
 - Software Craftsmanship
 ---
 
-So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Unble Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
+So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Uncle Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
 
 ## Discussing about what are functional languages
 
@@ -19,7 +19,7 @@ The other night I was discussing with some colleagues what is a Functional Langu
 
 But that led me to start thinking about characteristics of languages. And it is true that a statically typed language doesn't require as many tests as a dynamically typed language because there is a whole type of errors that will be stopped. It is also true that on a language that has immutability, there is another whole type of errors that will not happen, because nothing can just change the values. Furthermore, I have found that expressing logic on them creates less cruft code (both for dynamic or typed) than an OOP language.
 
-As a result, they become safer languages. There is less code created to create a feature, therefore the number of parts that can fail is smaller and those parts are much easier to test. The code is simpler (but that doesn't make creating it is easier).
+As a result, they become safer languages. There is less code written to create a feature, therefore the number of parts that can fail is smaller and those parts are much easier to test. The code is simpler (but that doesn't necessarily make creating it is easier).
 
 ## Language Division
 ### Paradigms
@@ -36,27 +36,34 @@ My colleague [Richard](https://codurance.com/publications/author/richard-wild/) 
 
 Looking at the paradigms from the constraints point of view, it makes sense that we went first with structured programming. It becomes much easier to add constraints little by little. The easiest ones first, then the most difficult ones later. We are automating discipline bit by bit into the way that we work.
 
+A recommendation on structured programming, one that wasn't really enforced by the compiler/interpreter of the language is the avoidance of global state. Is interesting as well that in OOP languages, the recommended way of dealing with the state of objects is to hide the state and only allow access through the public methods of the object. We did recognise that state changes are problematic. 
+
 ### Types
 
-Types do represent constraints around the data we can pass around. As such, we are talking about four types here: Primitives, Structures, Objects and Functions (for those languages that treat Functions as [first-class citizens](https://en.m.wikipedia.org/wiki/First-class_function)). But we also talk about two set of behaviours that languages can show: dynamic or static, and strong or weak. The more restrictive a language is, the less errors that can appear in the code. On statically typed languages, the compiler  will help you and stop you from doing things that don't make sense. You will need to provide specific constructs to convert between types (for primitives and structs) or to link logically types together (for objects), like Interfaces, Mixins, Protocols, ...
+Types do represent constraints around the data we can pass around. As such, we are talking about four types here: Primitives, Structures, Objects and Functions (for those languages that treat Functions as [first-class citizens](https://en.m.wikipedia.org/wiki/First-class_function)). But we also talk about two set of behaviours that languages can show: dynamic or static, and strong or weak. The more restrictive a language is, the less errors that can appear in the code. On strongly statically typed languages, the compiler  will help you and stop you from doing things that don't make sense. You will need to provide specific constructs to convert between types (for primitives and structs) or to link logically types together (for objects), like Interfaces, Mixins, Protocols, ...
 
 What types are available, the extent and limitations of those types will indicate the suitability of the language for an specific domain. An example could be the JS Number type compared to the options provided by C#. We know that float numbers are not adequate for the processing of monetary transactions. JS only offers a 64-bit float number type, which is inadequate, while C# provides a decimal type especially designed for such operations. Another is the void pointer on C, that basically allows you avoid constraints on what is being referenced. It looks like a powerful tool, but at the same time it weakens your software, as that void pointer could be anything and you need to start asserting the contents before using it.
 
 ### Operation Kinds
 
-In the above definition of Functional Programming we talked about immutability of state. That is one of the two ways that you could have side effects on a program. The second type of side effect that can happen in a program is the communication with external systems to the program: Console, clock, database, web, ... If we follow the idea above that we can establish constraints around different parts of the programming environment, we can as well establish constraints around side effects created by accessing those external systems. I can say that an operation is an effectful operation if they access those systems, and any other operation that calls it, it is, by extension, an effectul operation as well. If you are into Functional Programming, this probably rings a few bells for you. These restrictions exist in Haskell, through the use of the IO Monad. After further discussions with my colleagues, I thought about this distinction, that sadly is conflated with types on Haskell (though probably, from a design point of view, is the easiest thing to add).
+In the above definition of Functional Programming we talked about immutability of state. That is one of the two ways that you could have side effects on a program. The second type of side effect that can happen in a program is the communication with external systems to the program: Console, clock, database, web, ... If we follow the idea above that we can establish constraints around different parts of the language, we can as well establish constraints around side effects created by accessing those external systems. I can say that an operation is an effectful operation if they access those systems, and any other operation that calls it, it is, by extension, an effectul operation as well. If you are into Functional Programming, this probably rings a few bells for you. These restrictions exist in Haskell, through the use of the IO Monad. After further discussions with my colleagues, I thought about this distinction, that sadly is conflated with types on Haskell (though pro
+bably, from a design point of view, is the easiest thing to add).
 
-Could I design a structured language where operation kinds are explicit? I see no reason why not. Could I design an oop language where operation kinds are explicit? I see no reason why not. If you write an IO function at the deepest level of your Haskell application you still create a valid application. The only issue is that now you have to declare every single function on the chain has to declare also that is an IO operation. The code becomes a pain to write (and probably once you start mixing with other monads means that you need to write an awful lot of unnecessary code if you restructured your application).
+Another example that could be useful are static methods. A static method on most OOP languages can call other static methods on the class, can call static variables, but cannot call non-static methods on the object.
+
+Could I design a structured language where operation kinds for external access are explicit? I see no reason why not. Could I design an OOP language where operation kinds for external access are explicit? I see no reason why not. 
+
+Of course you can go go against what the language provides: If you write an IO function at the deepest level of your Haskell application you still create a valid application. The only issue is that now you have to declare every single function on the chain has to declare also that is an IO operation. The code becomes a pain to write (and probably once you start mixing with other monads means that you need to write an awful lot of unnecessary code).
 
 ### Orthogonality
 
-All these possibilities, both paradigm and types, are orthogonal to each other. All these are independent dimensions on which languages can exist. Different combinations produce languages that can be safer or unsafer. These characteristics needs to be understood to know when a language can be used.
+All these possibilities (paradigms, types, and operation kinds) are orthogonal to each other. All these are independent dimensions on which languages can exist. Different combinations produce languages that can be safer or unsafer. These characteristics needs to be understood to know when a language can be used.
 
 ## Boilerplate
 
 If I look at statically typed OOP languages (mostly those without [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)), to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
 
-The boilerplate (directly through the actual production code or indirectly through tests) is neccessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
+The boilerplate (directly through the actual production code or indirectly through tests) is necessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
 
 ## Null
 
