@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Safety Musings 1 (Languages)"
-date: 2018-09-29 08:00:00
+date: 2018-10-04 08:00:00
 description: Where I muse about safety
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
@@ -11,7 +11,7 @@ tags:
 - Software Craftsmanship
 ---
 
-So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Uncle Bob) has been talking about the necessity of a code similar to the Hippocratic oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hyppocratic oath did not stop the need for the Medical license)
+So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Uncle Bob) has been talking about the necessity of a code similar to the Hippocratic Oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hippocratic Oath did not stop the need for the Medical license)
 
 ## Discussing about what are functional languages
 
@@ -46,12 +46,11 @@ What types are available, the extent and limitations of those types will indicat
 
 ### Operation Kinds
 
-In the above definition of Functional Programming we talked about immutability of state. That is one of the two ways that you could have side effects on a program. The second type of side effect that can happen in a program is the communication with external systems to the program: Console, clock, database, web, ... If we follow the idea above that we can establish constraints around different parts of the language, we can as well establish constraints around side effects created by accessing those external systems. I can say that an operation is an effectful operation if they access those systems, and any other operation that calls it, it is, by extension, an effectul operation as well. If you are into Functional Programming, this probably rings a few bells for you. These restrictions exist in Haskell, through the use of the IO Monad. After further discussions with my colleagues, I thought about this distinction, that sadly is conflated with types on Haskell (though pro
-bably, from a design point of view, is the easiest thing to add).
+In the above definition of Functional Programming we talked about immutability of state. That is one of the two ways that you could have side effects on a program. The second type of side effect that can happen in a program is the communication with external systems to the program: Console, clock, database, web, ... If we follow the idea above that we can establish constraints around different parts of the language, we can as well establish constraints around side effects created by accessing those external systems. I can say that an operation is an effectful operation if they access those systems, and any other operation that calls it, it is, by extension, an effectul operation as well. If you are into Functional Programming, this probably rings a few bells for you. These restrictions exist in Haskell, through the use of the IO Monad. As I was discussing with my colleagues I thought about this construct as separate of type, even if in Haskell they are somehow conflated (though probably, from a design point of view, is the easiest thing to add).
 
-Another example that could be useful are static methods. A static method on most OOP languages can call other static methods on the class, can call static variables, but cannot call non-static methods on the object.
+Another example that could be useful are static methods. A static method on most OOP languages can call other static methods of the class, can call static members of the class, but cannot call non-static methods on the object. The only way to call dynamic methods is if the receiving object is either pass as a parameter to the static method or if it is created within the static method.
 
-Could I design a structured language where operation kinds for external access are explicit? I see no reason why not. Could I design an OOP language where operation kinds for external access are explicit? I see no reason why not. 
+Could I design a structured language where operation kinds for external access are explicit? I see no reason why not. Could I design an OOP language where operation kinds for external access are explicit? I see no reason why not.
 
 Of course you can go go against what the language provides: If you write an IO function at the deepest level of your Haskell application you still create a valid application. The only issue is that now you have to declare every single function on the chain has to declare also that is an IO operation. The code becomes a pain to write (and probably once you start mixing with other monads means that you need to write an awful lot of unnecessary code).
 
@@ -61,7 +60,7 @@ All these possibilities (paradigms, types, and operation kinds) are orthogonal t
 
 ## Boilerplate
 
-If I look at statically typed OOP languages (mostly those without [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)), to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
+If I look at statically typed OOP languages (mostly those without [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)), to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application due to type mismatch. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
 
 The boilerplate (directly through the actual production code or indirectly through tests) is necessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
 
@@ -77,7 +76,7 @@ When code is immutable, it is far easier to reason about it. You don't have to t
 
 If we are creating software that affects people's live (as in keeping them alive, or not made them broke) should we not use safe languages? It is not irresponsible to use a language which is easy to crash or write code that is incorrect? Multiple failures have been documented created, between other things, by the code that developers have written. Software developers have killed people (unintentionally, not counting weapon's software). Software developers have sent people into bankruptcy because issues on their code. Would you be happy about doing it? Would you care?
 
-There is an spectrum here where we can put languages based on how safe they are, where some languages (C, Javascript) are on one end, and other languages (Haskell, Rust) are on the other end. I do believe that the type of software were we people's live it is a stake should only be created with the safer kind. It is not about time to market, it is not about fun coding, it is not hitting the sales numbers.
+There is an spectrum here where we can put languages based on how safe they are, where some languages (C, Javascript) are on one end, and other languages (Haskell, Rust) are on the other end. I do believe that the type of software were people's live it is a stake should only be created with the safer kind. It is not about time to market, it is not about fun coding, it is not hitting the sales numbers.
 
 ## My favourite languages
 
@@ -89,4 +88,4 @@ I think I need to point here that all general purpose programming languages are 
 
 ## Next
 
-There will be a second post about Techniques (because they too affect the safety of our code). And then a conclusion (same post, another one, ...)
+I have exposed these general ideas about languages. A following post will talk about Techniques (because they too affect the safety of our code). And then a conclusion (on the same post, or maybe a separate one, ...)
