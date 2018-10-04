@@ -60,7 +60,7 @@ All these possibilities (paradigms, types, and operation kinds) are orthogonal t
 
 ## Boilerplate
 
-If I look at statically typed OOP languages (mostly those without [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)), to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application due to type mismatch. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
+If I look at statically typed OOP languages, to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application due to type mismatch. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
 
 The boilerplate (directly through the actual production code or indirectly through tests) is necessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
 
@@ -80,7 +80,7 @@ There is an spectrum here where we can put languages based on how safe they are,
 
 ## My favourite languages
 
-My current favourite language is Clojure (dynamic), and I like quite a lot Elixir (dynamic), Ruby (dynamic), Python (dynamic), and the two main languages on .Net, C# (static) and F# (static with Hindley-Milner type inference). ... Well, darn, F# is the closest to a safe language under my above descriptions.
+My current favourite language is Clojure (dynamic), and I like quite a lot Elixir (dynamic), Ruby (dynamic), Python (dynamic), and the two main languages on .Net, C# (static) and F# (static with [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)). ... Well, darn, F# is the closest to a safe language under my above descriptions.
 
 Taking into account what I said above, do they have a place on my toolbox? Well yes, there is still plenty of work that doesn't require those safety measures. And on those areas, any language can be used. Of course, you need to be sure that you don't create code that will completely wipe out a computer unintentionally). Websites that do not process payments, games, library applications, video processing systems, small scripts, ... usually do not have the same safety/security needs. 
 
