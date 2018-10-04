@@ -89,3 +89,8 @@ I think I need to point here that all general purpose programming languages are 
 ## Next
 
 I have exposed these general ideas about languages. A following post will talk about Techniques (because they too affect the safety of our code). And then a conclusion (on the same post, or maybe a separate one, ...)
+
+
+<sub>
+Photo: ["Relax for two"](https://www.flickr.com/photos/ljsilver71/15594809946/in/photolist-pL4tFy-VHcszq-7jSLxJ-8s6rV-8jRh4c-4LzZ51-8vQLAD-6hyhot-4wFAm7-4GEgVi-98eqBQ-8MMD3T-5RQ1zi-6WwPZu-5KgdKq-99CYDD-512veB-cHFqk-fnQew4-5twYoy-eorjVa-6SMh7C-fnbKD-8nWT7Q-6Jfb53-5hzYpj-bVRfPz-2bo9zF-4LzXT7-nYpqVw-daupwD-76FZr1-5uineQ-4LvJCP-rdtanu-5CrSDu-d8SX2u-Vf8KaN-6LdgXC-U4WtBe-gwP4K-6LzpPc-8QUSF1-55fFs5-7JcDc2-X2JzLj-E4f3d-4YQKBm-dg12bH-8omyeg) by Ricardo Maria Mantero is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+</sub>
