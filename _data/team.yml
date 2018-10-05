@@ -58,17 +58,6 @@
   fullDescription: <p>Ana’s many responsibilities include office management, marketing, HR, bookkeeping, events and assisting the co­founders with their work. Graduated in Marketing and Hospitality Management, she has been working in areas such as hotels, banks, offices and fashion industries.</p> <p>Interested in organising things, she loves the creative and dynamic nature of her work. She is a strong believer in the power of a good, healthy and peaceful environment at work. For Ana, passion, love and care are key to a happy and successful life – in and out of the office.</p>
   twitter: titacelli
 
-- id: matthew
-  name: Matthew Butt
-  image: /assets/custom/img/team/matthew_butt.jpg
-  role: Software Craftsperson
-  fullDescription: >
-    <p>Matthew believes that people and their relationships should be at the heart of our work as software developers. Since he started working with code in 2000 he has always focused on creating well-crafted software, and building close collaborative relationships within and beyond the technical team.</p>
-    <p>Recently Matthew has worked primarily on the .NET platform, and he is experienced in giving new life to legacy code written in C# and VB, as well as crafting projects that take advantage of the latest developments on the platform.</p>
-    <p>Matthew is passionate about teaching excellence in software development, and he is equally at home running a one-hour workshop or designing and implementing a six-month apprenticeship programme. He is a regular participant in the wider Software Craftsmanship and Extreme programming communities.</p>
-  twitter: bnathyuw
-  github: bnathyuw
-
 - id: giulia
   name: Giulia Mantuano
   image: /assets/custom/img/team/giulia_mantuano.jpg
