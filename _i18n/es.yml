@@ -369,14 +369,20 @@ careers:
      mentor_title: Mentor
      mentor_description: You will choose a mentor, who will guide you through your apprenticeship
    become_an_apprentice:
-     title: Programa de Aprendizaje
-     apply_title: Conviertete en un aprendiz
+     title: Aprendizaje en Codurance
+     apply_title: Inscribite abora
      description: Apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
      how_works_title: How does it work?
-     how_works_description:
-         You will be asked to choose a mentor, a Software Craftsperson that will coach & guide you throughout your apprenticeship. Your focus will be on self-improvement, honing your technical skills and practices by working on internal projects, as well as person projects and Katas. 
-         <p> 
-         <p>The priority is for you to acquire the basic set of skills necessary to become recognised, as software craftsman, by the rest of the company. We regularly send our apprentices to training courses.
+     how_works_description: Si tienes pasión por aprender y quieres la oportunidad de aprender las tecnologías y prácticas necesarias para obtener el reconocimiento de estar al nivel de un artesano de software, entonces esperamos recibir su solicitud
+     how_works:
+      box1_title: Programa de 3 meses
+      box1_description: Módulos prácticos e intensivos que cubren los aspectos esenciales del diseño de software, prácticas de XP, código limpio y DDD.
+      box2_title: Orientación experta
+      box2_description: Serás guiado por nuestros artesanos, profesionales calificados con una amplia y profunda experiencia.
+      box3_title: Aprendizaje pagado
+      box3_description: Te pagamos un salario de a tiempo completo a través del programa de aprendices, en esencia, te pagamos por aprender.
+      box4_title: Aprendizaje práctico
+      box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
      background_title: What background do I need to have?
      background_description:
            At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. 

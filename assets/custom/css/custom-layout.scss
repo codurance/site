@@ -222,6 +222,138 @@ $orange-colour: #e67e22;
   margin-right: 25%;
 }
 
+/* Apprenticeship */
+
+.howworks-boxes-container {
+  padding-top: 1.5rem;
+  margin: 0 auto;
+}
+
+.howworks-box {
+  border-left: 3px solid $orange-colour;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.skills {
+  .title-v2 {
+    padding-left: 40px;
+  }
+}
+
+.skill-list {
+  li {
+    display: inline-block;
+    height: 20px;
+    margin: 10px 0;
+    background: url('{{ site.baseurl }}/assets/custom/img/circled-tick.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    list-style: none;
+    padding-left: 30px;
+    line-height: 20px;
+  }
+}
+
+
+.testimonials-carousel-container{
+  margin: 0 auto;
+
+  .quote {
+    font-size: 14px;
+  }
+  
+  .curly-quotes:before, .curly-quotes:after {
+    font-family: Georgia, serif;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 48px;
+    font-size: 50px;
+    opacity: .2;
+  }
+  
+  .curly-quotes:before {
+    content: '\201C';
+    margin-right: 4px;
+    margin-left: 0px;
+  }
+  
+  .curly-quotes:after {
+    content: '\201D';
+    margin-left: 4px;
+    margin-right: -8px;
+  }
+}
+
+#testimonials-carousel {
+  .indicators {
+    z-index: 99;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+
+    li {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
+
+.testimonial-picture {
+  height: 275px;
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  @media (max-width: 767px) {
+    height: 160px;
+  }
+}
+
+.testimonial-preview {
+  img {
+    width: 60px;
+  }
+}
+
+.become-apprentice {
+  text-align: center;
+  position: relative;
+
+  .time-line {
+    position: absolute;
+    border-top: #000 solid 5px;
+    width: 100%;
+    top: 30px;
+  }
+
+  .step-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .step-tick {
+
+    img{
+      height: 24px;
+      margin: 30px 0;
+    }
+  }
+
+  .step-description{
+    h1{
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+  }
+
+
+}
+
+/* Services */
+
 .services {
   & .client-descriptions { /* 0 0 2 0 */
     margin-bottom: 50px;
@@ -470,6 +602,10 @@ i.no-border {   /* 0 0 1 1 */
 .img-center {   /* 0 0 1 0 */
   display: block;
   margin: 0 auto;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .jetbrains-logo-partners { /* 0 0 1 0 */
