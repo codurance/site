@@ -22,7 +22,7 @@ Almost a year ago [Amir](https://twitter.com/amirbazazi) [posted](http://coduran
  (Do not use Google Chrome to download since, for some reason, it will download the file but marks it as unsafe and deletes it).
 2. Unzip the downloaded archive
 3. Execute "install.bat" to install Babun to C:\Users\YOURUSER\\.babun or execute "install.bat /t PATH_TO_INTALLATION_LOCATION"
- When the installation finishes you should be greeted with this ... <img src="https://raw.githubusercontent.com/babun/babun.github.io/master/images/screenshots/screen_welcome.png" class="img img-responsive style-screengrab ">
+ When the installation finishes you should be greeted with this ... <img src="https://raw.githubusercontent.com/babun/babun.github.io/master/images/screenshots/screen_welcome.png" class="img img-fluid style-screengrab ">
 
 ### One more tweek
 We already have a cool prompt, try to navigate to a git repository. We want just a bit more :) Let's try a more colourful theme.
@@ -47,10 +47,10 @@ But don't despair, we will fix it :)
 
 You need a font that supports powerline. I suggest [Consolas for powerline](https://github.com/runsisi/consolas-font-for-powerline), but any font that supports powerline should work. 
 
-1. Download it, double click it and select install on the dialog: <img src="http://imgur.com/0vQXJyS.png" class="img img-responsive style-screengrab">
+1. Download it, double click it and select install on the dialog: <img src="http://imgur.com/0vQXJyS.png" class="img img-fluid style-screengrab">
 
-2. Right click on the top bar of the terminal, you should see a pop up menu, select options <img src="http://imgur.com/GQjMkDe.png" class="img img-responsive style-screengrab">
+2. Right click on the top bar of the terminal, you should see a pop up menu, select options <img src="http://imgur.com/GQjMkDe.png" class="img img-fluid style-screengrab">
 
-3. In the dialog select Text on the left and then select a new font. Select Powerline Consolas or just Consolas. Press 'Ok' and 'Ok'. <img src="http://imgur.com/I0KnSVi.png" class="img img-responsive style-screengrab">
+3. In the dialog select Text on the left and then select a new font. Select Powerline Consolas or just Consolas. Press 'Ok' and 'Ok'. <img src="http://imgur.com/I0KnSVi.png" class="img img-fluid style-screengrab">
 
-4. Marvel at your shiny command prompt :) <img src="http://imgur.com/41klopT.png" class="img img-responsive style-screengrab">
+4. Marvel at your shiny command prompt :) <img src="http://imgur.com/41klopT.png" class="img img-fluid style-screengrab">

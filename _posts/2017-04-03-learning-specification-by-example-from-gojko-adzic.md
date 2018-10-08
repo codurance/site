@@ -44,7 +44,7 @@ As Gojko writes in “Bridging the Communication Gap”:
 
 > ## _In order to get the most out of acceptance tests, we need to distill what should be done from the discussion and not really focus on how it is going to work._
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2017-04-03-specification-by-example/specification-by-example.jpg" alt="Specification By Example" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2017-04-03-specification-by-example/specification-by-example.jpg" alt="Specification By Example" class="img-fluid"/>
 
 When people mix up the “WHAT” and the "HOW" they create specifications that are difficult to read for business people. It is common to get specifications that include lines of code. That must be avoided because acceptance tests are a deliverable that needs to be written by business people together with developers and testers to ensure a common understanding of what needs to be built so that we can meet client's expectations.
 "HOW" should also be kept separate from the "WHAT" as the Acceptance tests are *Living Documentation*: the examples are the only executable part of the test, and they should clearly show the relationship between the inputs and the outputs otherwise they can't be automated. If we include unnecessary details, the specification becomes impossible to maintain, change, and execute and will go out of date very quickly.

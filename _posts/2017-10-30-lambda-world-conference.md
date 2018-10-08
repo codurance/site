@@ -38,7 +38,7 @@ I'm in this profession because of Maths, so I had fun with the talk about _Maths
 My favourite speaker at the event was <a href="https://twitter.com/_zainabali_" target="_blank">**Zainab Ali**</a>. She talked about _recursion schemes_ in the best pedagogical way, based on the paper <a href="https://maartenfokkinga.github.io/utwente/mmf91m.pdf" target="_blank">_Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire_</a>. She showed how _recursion schemes_ make recursion generic, removing much of the boilerplate associated with it.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/hylomorphism.png" alt="Hylomorphism" class="img img-responsive" width="80%"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/hylomorphism.png" alt="Hylomorphism" class="img img-fluid" width="80%"/>
 <small>Slide from <a href="http://slides.com/zainabali_/peeling_the_banana#/" target="_blank">'Peeling the Banana - Recursion schemes from first principles'</a> by Zainab Ali</small>
 </center>
 <br/>
@@ -48,14 +48,14 @@ My favourite speaker at the event was <a href="https://twitter.com/_zainabali_" 
 Do you know another technical conference which provides its own beer, _functional_ beer?
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/functional-beer.jpg" alt="Functional Beer" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/functional-beer.jpg" alt="Functional Beer" class="img img-fluid"/>
 </center>
 <br/>
 
 Organizers deserve my warmest congratulations, because it was one of the best conferences I've ever attended. It was the third edition of this awesome event and, despite the high number of attendees, it kept its high quality, the personal attention and its family atmosphere. <a href="https://twitter.com/Jorge__Galindo">**Jorge Galindo**</a> is one of the organizers and his daughter is growing at the same time as the event, getting used to face a huge audience:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/jorge-galindo-s-daughter.jpg" alt="Jorge Galindo" class="img img-responsive" width="50%"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-30-lambda-world-conference/jorge-galindo-s-daughter.jpg" alt="Jorge Galindo" class="img img-fluid" width="50%"/>
 </center>
 <br/>
 

@@ -26,7 +26,7 @@ This is the sixth post in the series about integrating sync clients with async s
 
 Nowadays everybody agrees with the famous [testing pyramid](http://googletesting.blogspot.com.es/2015/04/just-say-no-to-more-end-to-end-tests.html):
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/pyramid.png" alt="Testing pyramid" title="Testing pyramid" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/pyramid.png" alt="Testing pyramid" title="Testing pyramid" class="img img-center img-fluid style-screengrab">
 
 Harder to achieve is an agreement on what integration, unit, functional or acceptance means. It is reasonable as applications are structured differently depending on language, architecture and domain. I'll try to distill some essences though:
 

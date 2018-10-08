@@ -28,7 +28,7 @@ You are shy; introvert and terrified by the thought of addressing a crowd full o
 You probably are also refrained by the imposter syndrome and think you have nothing to teach to anyone.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/find-a-workplace-where-you-can-grow/ana-coaching-at-women-who-code-london.jpg" alt="Ana coaching at Women Who Code London" class="img img-responsive" />
+<img src="{{site.baseurl}}/assets/custom/img/blog/find-a-workplace-where-you-can-grow/ana-coaching-at-women-who-code-london.jpg" alt="Ana coaching at Women Who Code London" class="img img-fluid" />
 </center>
 <br/> 
 
@@ -48,7 +48,7 @@ Thinking that people with a fixed mindset are set for a life of frustration and 
 People with a fixed mindset put in an environment where skills are presented as learnable; where learning and perseverance are valued; and where the leaders are presented both as resources for learning and constantly learning and improving their skills; should eventually develop an appetite for learning and experience a mindshift.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/find-a-workplace-where-you-can-grow/functional-programming-night.jpg" alt="Functional Programming night" class="img img-responsive" />
+<img src="{{site.baseurl}}/assets/custom/img/blog/find-a-workplace-where-you-can-grow/functional-programming-night.jpg" alt="Functional Programming night" class="img img-fluid" />
 </center>
 <br/> 
 

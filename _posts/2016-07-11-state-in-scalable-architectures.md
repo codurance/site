@@ -22,7 +22,7 @@ Handling state is one of the cornerstones of software development. Most of busin
 
 [Ted Malaska's](https://twitter.com/tedmalaska) [presentation](https://www.youtube.com/watch?v=sD-rvRkK_u4) about [Spark](http://spark.apache.org/) serves as inspiration for this post. In this screenshot, Ted shows a list of concepts that we have to understand when learning to code:
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/learning-to-code.png" alt="Learning to code" title="Learning to code" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/learning-to-code.png" alt="Learning to code" title="Learning to code" class="img img-center img-fluid style-screengrab">
 
 You can stop reading here and spend some time thinking about your conceptions of state at any of those levels. When you're done, come back here and let's try to define more formally what state is.
 
