@@ -93,6 +93,7 @@
 
   <script src="{{ '/assets/custom/js/cookie-message.js' | prepend: site.baseurl }}"></script>
 
+  <!-- Start of Google analytics configuration -->
   <script>
     if(codurance.cookieMessage.hasConsent()) {
       ga('set', 'anonymizeIp', undefined);
@@ -112,3 +113,25 @@
       }, 200);
     });
   </script>
+  <!-- End of Google analytics configuration -->
+
+  <!-- Start of HubSpot Embed Code -->
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3042464.js"></script> -->
+  <script>
+      var loadHubsopot = function() {
+        var scriptTag = document.createElement('script');
+        scriptTag.src = '//js.hs-scripts.com/3042464.js';
+        document.head.appendChild(scriptTag);
+      };
+
+      var hasConsent = codurance.cookieMessage.hasConsent();
+      if(hasConsent) {
+        loadHubsopot();
+      } else {
+        codurance.cookieMessage.onConsent(function(){
+          loadHubsopot();
+        });
+      }
+  </script>  
+  <!-- End of HubSpot Embed Code -->
+
