@@ -93,7 +93,7 @@ None
 
 ### Why
 
-The idea of doing this kata as part of the list of katas to use for functional calisthenics came out of the discussion on Hacker News linked above. One of the solutions to the kata, and the one I used the only time I have completed it, uses recursion with backtracking. But one of our rules says [no use of explicit recursion]({% post_url 2017-10-12-functional-calisthenics %}#noexplicitrecursion). I am currently working on it, so a pointer for you is the use of reduce in which the accumulator is a collection of boards with the state after placing a queen. I have also to look into Philip's Wadler paper regarding the [*List of successes method*](https://link.springer.com/chapter/10.1007/3-540-15975-4_33) (paywall)
+The idea of doing this kata as part of the list of katas to use for functional calisthenics came out of the discussion on Hacker News linked above. One of the solutions to the kata, and the one I used the only time I have completed it, uses recursion with backtracking. But one of our rules says #noexplicitrecursion). I am currently working on it, so a pointer for you is the use of reduce in which the accumulator is a collection of boards with the state after placing a queen. I have also to look into Philip's Wadler paper regarding the [*List of successes method*](https://link.springer.com/chapter/10.1007/3-540-15975-4_33) (paywall)
 
 
 
