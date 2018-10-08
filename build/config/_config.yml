@@ -1,5 +1,5 @@
 source: ./src
-destination: ./output
+destination: ./output/_site
 url: "https://codurance.com"
 domains: 
    en: "https://codurance.com"

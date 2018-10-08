@@ -13,7 +13,7 @@ task :buildprb do
 end
 
 task :buildesprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination _site_es/'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination output/_site_es/'
 end
 
 task :buildenprb do
