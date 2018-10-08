@@ -37,32 +37,32 @@ Sticky-sessions are not managed out of the box by the Azure platform, one way to
 
 Go to the application settings on your Windows Azure Web Service (WAWS) platform and look for the App service plan menu. There you will find the Scale out menu.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/20.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/20.png" alt="" class="img-fluid"/>
 
 Unfortunately scaling functionality is not part of the Free Service Plan.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/21.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/21.png" alt="" class="img-fluid"/>
 
 So we need to select the S1 Standard plan to be able to access scaling options and configure the scaling of our application. We can see that for the moment we have only one instance running.
 We can manually add another instance of our application. Or we can scale given the CPU usage in percentage of our application.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/22.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/22.png" alt="" class="img-fluid"/>
 
 I modified the home page template to add some dummy code and get the page to fetch blog posts multiple times, triggering many requests to the server.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/23.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/23.png" alt="" class="img-fluid"/>
 
 Looking back into the Azure portal, we can see that the scaling took place.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/24.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/24.png" alt="" class="img-fluid"/>
 
 And I even received an email letting me know that my application is scaling.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/25.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/25.png" alt="" class="img-fluid"/>
 
 After about twenty minutes without activity on the website, and having removed the code that caused extra load on the CPUs, our application has been automatically scaled back down to one instance.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/26.png" alt="" class="img-responsive"/>
+<img src="{{ site.baseurl }}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/26.png" alt="" class="img-fluid"/>
 
 In this part of the series, we have showed how to automatically scale an Umbraco installation, without having to worry about anything other than the cost.
 However scaling an application requires you to manage the its state at a global level. 

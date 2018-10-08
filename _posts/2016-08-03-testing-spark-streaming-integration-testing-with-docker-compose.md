@@ -117,7 +117,7 @@ def countWithSpecialWords(lines: DStream[String], specialWords: RDD[String]): DS
 
 
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/spark-architecture.png" alt="Example architecture" title="Example architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/spark-architecture.png" alt="Example architecture" title="Example architecture" class="img img-center img-fluid style-screengrab">
 
 
 Events are received from Kafka, that stream is joined with a Cassandra table that contains special words. Those events contains words separated by space and we want to count (if a word appears twice) the words on that stream. There are two external dependencies so our `sbt-docker-compose.yml` will have to start those for us.

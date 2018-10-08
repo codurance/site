@@ -27,7 +27,7 @@ According to the [official documentation](http://kafka.apache.org/documentation.
 
 Kafka runs as a cluster and the nodes are called brokers. Brokers can be leaders or replicas to provide high-availability and fault tolerance. Brokers are in charge of partitions, being the distribution unit where messages are stored. Those messages are ordered and they're accessible by an index called offset. A set of partitions forms a topic, being a feed of messages. A partition can have different consumers, and they access to the messages using its own offset. Producers publish messages into Kafka topics. This diagram from [Kafka's documentation](http://kafka.apache.org/documentation.html#intro_topics) could help to understand this:
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/topic.png" alt="Kafka's topic" title="Kafka's topic" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/topic.png" alt="Kafka's topic" title="Kafka's topic" class="img img-center img-fluid style-screengrab">
 
 ## Queuing vs publish-subscribe
 
@@ -36,11 +36,11 @@ Consumer groups is another key concept and helps to explain why Kafka is more fl
 You can have a mix of both approaches, having different logical consumer groups, for different needs, and several consumers inside of every group to increase throughput through parallelism. Again, another diagram from [Kafka's documentation](http://kafka.apache.org/documentation.html#intro_topics):
 
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/consumer-groups.png" alt="Kafka's consumer groups" title="Kafka's consumer groups" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/consumer-groups.png" alt="Kafka's consumer groups" title="Kafka's consumer groups" class="img img-center img-fluid style-screengrab">
 
 ## Understanding our needs
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-responsive style-screengrab">
+<img src="{{ site.baseurl }}/assets/custom/img/blog/law_enforcement.png" alt="Law enforcement architecture" title="Law enforcement architecture" class="img img-center img-fluid style-screengrab">
 
 As we saw in previous posts ([1, ](http://codurance.com/2016/04/28/async-systems-with-sync-clients/)[2, ](http://codurance.com/2016/04/30/akka-basics/)[3](http://codurance.com/2016/05/10/finite-state-machines-with-akka/)) the Items service publishes messages into a Kafka topic called `item_deleted`. This message will live in one partition of the topic. To define in which partition the message will live, Kafka provides [three alternatives](https://kafka.apache.org/090/javadoc/org/apache/kafka/clients/producer/Partitioner.html):
 

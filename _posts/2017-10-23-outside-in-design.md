@@ -21,7 +21,7 @@ There is no reason to have a backend when there is no front-end. There is no rea
 Many developers focus on implementing the Domain Model before defining how it is going to be used by the external world. The way users (via User Interface) or other systems (via APIs, Messages) interact with the system is treated as a lesser concern. Doing business analyses and focusing on modelling the domain first is what I have learned at university over two decades ago. That is also what I learned with my seniors during the first half of my career. Led by the belief that the front-end changes more often than the business rules, we opted for creating a fully _decoupled_ and _robust_ backend system first, leaving the UI to a later stage. This approach is what I call _inside-out development_. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/inside-out.png" alt=“inside-out” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/inside-out.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -54,7 +54,7 @@ Let’s look at some of the disadvantages of this approach:
 Without the guidance of a well-defined and concrete need from the external world (being a user interface or API — delivery mechanism), we can easily build things that are not needed. When we finally define the delivery mechanism and try to plug it in, we quickly realise that the backend does not exactly satisfies all the needs of the delivery mechanism. At this point we need to either write some plumbing code to connect both sides, change the backend or worse, compromise on the usability defined by the delivery mechanism so that we can reuse the code in the backend as is. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/delivery-mechanism_vs_domain-model.png" alt=“delivery mechanism vs domain model” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/delivery-mechanism_vs_domain-model.png" alt=“delivery mechanism vs domain model” class="img img-fluid" style="height: 60%; width: 60%;"/>
 </center>
 <br/>
 
@@ -99,7 +99,7 @@ Let’s look at some categories of exploratory work:
 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/architecture_macro_micro_design.png" alt=“architecture, macro and micro design” class="img img-responsive" style="height: 60%; width: 60%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/architecture_macro_micro_design.png" alt=“architecture, macro and micro design” class="img img-fluid" style="height: 60%; width: 60%;"/>
 </center>
 <br/>
 
@@ -157,7 +157,7 @@ In order to agree on how we should design software, we should first agree with a
 Outside-In development is an approach that focuses on building just enough well-engineered code to satisfy an external need, reducing accidental complexity by removing speculative work.  
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/outside-in.png" alt=“inside-out” class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/outside-in.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -174,7 +174,7 @@ Without constraints our imagination runs wildly. And so does over-engineering. W
 In Outside-in development, instead of working on the domain model first and then the persistence and UI, only releasing to production when the whole feature is done, we prefer to work in small increments and drive the development from the UI.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/sliced-feature.png" alt="sliced feature" class="img img-responsive" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-10-23-outside-in-design/sliced-feature.png" alt="sliced feature" class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/> 
 

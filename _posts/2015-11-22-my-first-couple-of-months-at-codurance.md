@@ -85,7 +85,7 @@ It is a privilege to be able to work alongside very experienced craftsmen from o
 
 This is my first job where the company has a completely flat hierarchy and where we share similar values.
 
-<center><img src="{{ site.baseurl }}/assets/custom/img/blog/greatCompanyCulture.jpg" class="img-responsive" width="95%" height="95%"/></center>
+<center><img src="{{ site.baseurl }}/assets/custom/img/blog/greatCompanyCulture.jpg" class="img-fluid" width="95%" height="95%"/></center>
 
 
 ### Closing note

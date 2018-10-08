@@ -36,14 +36,14 @@ So, we should aim at killing every mutation with tests.
 When I heard about it I thought about that game I played when I was just a teenager: _Super Pang_.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/super-pang-game.jpg" alt="Super Pang Game" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/super-pang-game.jpg" alt="Super Pang Game" class="img img-fluid"/>
 </center>
 <br/>
 
 And I imagined a situation such as this:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/super-pang-mutation-testing.jpg" alt="Super Pang - Mutation Testing" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/super-pang-mutation-testing.jpg" alt="Super Pang - Mutation Testing" class="img img-fluid"/>
 </center>
 
 It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
@@ -61,14 +61,14 @@ status arg3 = ((from.getParam1() < from.getParam2())? BLACK: WHITE);
 If we don’t have a test which considers the same value for `param1` and `param2`, a mutation will survive when applying <a href="http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY" target="_blank">_Conditional Boundary Mutator_</a>:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/survived-mutation.png" alt="Survived mutation" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/survived-mutation.png" alt="Survived mutation" class="img img-fluid"/>
 </center>
 <br/>
 
 PIT report shows the affected line:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/pit-report-boundaries.jpg" alt="PIT Report" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/pit-report-boundaries.jpg" alt="PIT Report" class="img img-fluid"/>
 </center>
 <br/>
 
@@ -81,7 +81,7 @@ It’s common to find `equals` and `hashCode` methods in Java which are only use
 For example, a property is added to a class without updating `equals` and `hashCode` methods, so PIT statistics results in:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/pit-statistics.png" alt="PIT Statistics" class="img img-fluid"/>
 </center>
 <br/>
 
@@ -96,7 +96,7 @@ assertTrue(reflectionEquals(actualObject, expectedObject));
 In that case, we can succeed in killing every mutation:
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/new-pit-statistics.png" alt="PIT Statistics" class="img img-responsive"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2017-09-01-coverage/new-pit-statistics.png" alt="PIT Statistics" class="img img-fluid"/>
 </center>
 <br/>
 

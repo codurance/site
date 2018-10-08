@@ -37,7 +37,7 @@ On Tuesday I paired with [Mickaël](https://www.linkedin.com/in/mickaelroupie/).
 
 After work, they introduced me to the very French “Apéritif” in the Zenika terrace — it was pleasure to enjoy some French goodies :)
 
-<center><img src="{{ site.baseurl }}/assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/apperol.jpg" alt="zenika labs" width="550" height="322" class="img-responsive" /></center>
+<center><img src="{{ site.baseurl }}/assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/apperol.jpg" alt="zenika labs" width="550" height="322" class="img-fluid" /></center>
 <br/>
 
 # Days 3 & 4 - Enedis
@@ -54,7 +54,7 @@ In the last day I met [Xavier](http://twitter.com/xdetant), who is the CTO of th
 
 That day I also discovered how much I suck at table football. Those guys are really good — I think I didn’t even see the ball during the matches. Thanks for that. :)
 
-<center><img src="{{ site.baseurl }}/assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/tablesoccer.jpg" alt="table soccer" width="550" height="322" class="img-responsive" /></center>
+<center><img src="{{ site.baseurl }}/assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/tablesoccer.jpg" alt="table soccer" width="550" height="322" class="img-fluid" /></center>
 <br/>
 After lunch, Xavier organized a mobbing session where we used Haskell to solve the "Potter Kata". This was a surprise to me, I didn't expect to do any Haskell during this visit. We were using TDD in baby steps to solve the exercise and we created a few types to represent some domain concepts. Thanks to that exercise I discovered how to deal with RealFloat and Fractional and a few conversion methods between numbers in Haskell.
 

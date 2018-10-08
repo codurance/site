@@ -47,7 +47,7 @@ If we think in a relational database the concept is similar. We have different t
 
 Netflix has created a tool called [Falcor](http://netflix.github.io/falcor) that tries to solve this concrete problem. Clients won't talk with the backend services directly anymore, instead of they will send queries to a Falcor service that will do the routing, aggregations, projections and optimizations. This is an image from Falcor's official documentation.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/falcor-network-diagram.png" class="img-responsive" />
+<img src="{{ site.baseurl }}/assets/custom/img/blog/falcor-network-diagram.png" class="img-fluid" />
 
 They based that platform on the idea of JSON Graph. Let me explain it briefly. JSON is in essence a tree structure. However, most of our data has relationships so it should be modeled like a graph. Using REST design programmers usually solve that problem through ids, but that makes our life really difficult (think about problems like cache invalidation). As they say:
 
@@ -55,7 +55,7 @@ They based that platform on the idea of JSON Graph. Let me explain it briefly. J
 
 They borrow the idea from unix filesystem. That filesystem is a tree, but thanks to symlinks you can emulate the behaviour of a graph. That has massive implications in the way that Falcor optimises calls to backend services. Instead of keeping some values in a denormalised fashion, Falcor keeps references to that normalised value, so, if you ask for a value that has been already retrieved, Falcor will avoid that call. Also That makes cache invalidation much easier.
 
-<img src="{{ site.baseurl }}/assets/custom/img/blog/falcor-services-diagram.png" class="img-responsive" />
+<img src="{{ site.baseurl }}/assets/custom/img/blog/falcor-services-diagram.png" class="img-fluid" />
 
 As you can see in the example, we don't store denormalised documents for titles inside of genres, but a reference through a titles map indexed by id.
 I can show you some code that I've been working on for a proof of concept. Falcor server side is currently only available on Node.js but [there are plans to porting it into another platforms](https://twitter.com/falcorjs/status/575657256475189248).
