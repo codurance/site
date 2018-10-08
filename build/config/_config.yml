@@ -1,3 +1,5 @@
+source: ./src
+destination: ./output
 url: "https://codurance.com"
 domains: 
    en: "https://codurance.com"
