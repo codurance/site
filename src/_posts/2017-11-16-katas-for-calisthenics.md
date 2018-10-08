@@ -13,7 +13,7 @@ tags:
 ---
 # The Setup
 
-While working on katas to test the [functional calisthenics]({% post_url 2017-10-12-functional-calisthenics %}) I realized that some of the rules were not going to be covered by the rules for the katas that I had choosen. Therefore, some additional rules/premises/requirements to the katas were needed. Here I have three of the katas that we have used in the past for OOP and one kata that came out of the [HN discussion](https://news.ycombinator.com/item?id=15507081) on the post.
+While working on katas to test the I realized that some of the rules were not going to be covered by the rules for the katas that I had choosen. Therefore, some additional rules/premises/requirements to the katas were needed. Here I have three of the katas that we have used in the past for OOP and one kata that came out of the [HN discussion](https://news.ycombinator.com/item?id=15507081) on the post.
 
 # The Katas
 
@@ -63,7 +63,7 @@ The easiest kata in this post (on its original form), but still difficult enough
 
 ### Why
 
-Of the katas on this post is the one on which more concepts are present. Which makes it interesting when comparing the solution with OOP. Use of the [side effects at the boundaries]({% post_url 2017-10-12-functional-calisthenics %}#sideeffectsattheboundaries) is explicit with the changes introduced to the rules.
+Of the katas on this post is the one on which more concepts are present. Which makes it interesting when comparing the solution with OOP. Use of the  is explicit with the changes introduced to the rules.
 
 
 ## <a class="anchor" name="bankkata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">Bank Kata
@@ -80,9 +80,6 @@ Of the katas on this post is the one on which more concepts are present. Which m
 
 - The information must be stored on a file or database.
 
-### Why
-
-The kata itself is interesting because of the already present dependency on date. The change added is to reflect the rule of [side effects at the boundaries]({% post_url 2017-10-12-functional-calisthenics %}#sideeffectsattheboundaries). Also, because of the use of an external file/database is easy to think about the use of [infinite sequences]({% post_url 2017-10-12-functional-calisthenics %}#infinitesequences).
 
 ## <a class="anchor" name="8queenskata"></a><img src="{{ site.baseurl }}/assets/custom/img/blog/lambda_small.png" class="bullet-image">8 Queens Kata
 
