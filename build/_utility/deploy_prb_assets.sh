@@ -10,7 +10,7 @@ fi
 
 FOLDER_NAME=$1
 
-cd _site/
+cd output/_site/
 
 echo "Synchronizing assets to folder: $FOLDER_NAME/assets"
 aws s3 sync ./assets s3://codurance-site-pr/$FOLDER_NAME/assets --size-only --acl public-read

@@ -10,7 +10,7 @@ fi
 
 FOLDER_NAME=$1
 
-cd _site/
+cd output/_site/
 
 echo "Synchronizing to folder: $FOLDER_NAME"
 aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME --exclude "assets/*" --acl public-read
