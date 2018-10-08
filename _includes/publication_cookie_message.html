@@ -1,0 +1,14 @@
+<div class="js-cookie-message g-pb-120 g-pt-120 g-bg-black-opacity-0_9 g-color-white-opacity-0_8" style="display:none;">
+    <div class="row">
+        <div class="col-lg-10 g-pl-50 g-pt-20">
+        <div>
+                {% t cookie-message.publication-message %}
+        </div>
+        {% t cookie-message.content %}
+        <a href="{{ '/policies/cookie' | prepend: site.baseurl }}" target="_blank" title="{% t cookie-message.view-policy %}">{% t cookie-message.view-policy %}</a>
+        </div>
+        <div class="col-lg-2 g-pr-50">
+        <a class="js-cookie-message-accept btn btn-u btn-more pull-right" title="{% t cookie-message.accept %}"> {% t cookie-message.accept %}</a>
+        </div>
+    </div>
+</div>   
