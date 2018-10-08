@@ -118,17 +118,6 @@
   twitter: guillemf
   github: guillemf
 
-- id: cyplo
-  name: Cyryl Płotnicki
-  image: /assets/custom/img/team/cyryl_plotnicki.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p> Cyryl spent most of his professional life building and maintaining larger backend systems, mainly within the .Net and JVM ecosystems. Gradually he became interested in the people management side of the work as well. Via this interest he found the software craftsmanship community and never looked back. He is focused on extracting clients' needs and helping them to get value out of the work quickly. </p>
-    <p> Interested in making the systems, whether physical or virtual, more secure. Open source advocate with strong data privacy focus. He tries to try at least one new programming language a year, focusing on Rust lately. </p>
-    <p> Outside of work, Cyryl likes to relax by taking part in the local hackerspace community, making electronics and machine parts. </p>
-  twitter: cyplo
-  github: cyplo
-
 - id: christian
   name: Christian Panadero Martinez
   image: /assets/custom/img/team/christian_panadero.jpg
