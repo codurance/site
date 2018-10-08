@@ -94,13 +94,9 @@ workflows:
       - production:
           requires:
             - build
-      - prod-asset-approval:
-          type: approval
-          requires:
-            - production
       - production-assets-deploy:
           requires:
-            - prod-asset-approval
+            - production
   pre:
     jobs:
       - build:
@@ -110,10 +106,6 @@ workflows:
       - pullrequest:
           requires:
             - build
-      - pre-asset-approval:
-          type: approval
-          requires:
-            - pullrequest
       - pre-assets-deploy:
           requires:
-            - pre-asset-approval
+            - pullrequest
