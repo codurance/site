@@ -2,14 +2,15 @@ window.codurance  = window.codurance || {}
 
 window.codurance.cookieMessage = (function() {
     const COOKIE_NAME = 'has-cookie-consent';
-    var messageElement = document.getElementById('cookie-message');
-    var acceptButton = document.getElementById('cookie-message-accept');
+    var messageElements = document.getElementsByClassName('js-cookie-message');
+    var acceptButtons = document.getElementsByClassName('js-cookie-message-accept');
+    var cookieIframeContainers = document.getElementsByClassName('js-iframe-container');
     
-    if (!messageElement) {
+    if (!messageElements.length) {
         throw 'no element found for cookie message';
     }
 
-    if(!acceptButton) {
+    if(!acceptButtons.length) {
         throw 'no element found for cookie message accept';
     }
 
@@ -52,12 +53,34 @@ window.codurance.cookieMessage = (function() {
     }
 
     function showMessage() {
-        messageElement.style.display = 'block';
+        for (let index = 0; index < messageElements.length; index++) {
+            const messageElement = messageElements[index];
+            messageElement.style.display = 'block';
+        }
+    }
+
+    function showConsentDependentIframes() {
+        for (let index = 0; index < cookieIframeContainers.length; index++) {
+            const container = cookieIframeContainers[index];
+
+            var iframeUrl = container.getAttribute('js-iframe-url');
+            
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("src", iframeUrl);
+            iframe.style.width = '100%';
+            iframe.style.height = '400px';
+            iframe.style.border = 'none';
+
+            container.appendChild(iframe);
+        }
     }
 
     function hideMessage() {
-        messageElement.style.display = 'none';
-        messageElement.classList.add('accepted');
+        for (let index = 0; index < messageElements.length; index++) {
+            const messageElement = messageElements[index];
+            messageElement.style.display = 'none';
+            messageElement.classList.add('accepted');
+        }
     }
 
     function hasConsent() {
@@ -86,16 +109,21 @@ window.codurance.cookieMessage = (function() {
 
     function init () {
         if (hasConsent()) {
+            showConsentDependentIframes();
             return;
         } 
         
         showMessage();
 
-        acceptButton.addEventListener('click', function(){
-            setConsent();
-            hideMessage();
-            triggerOnConsent();
-        });
+        for (let index = 0; index < acceptButtons.length; index++) {
+            const acceptButton = acceptButtons[index];
+            acceptButton.addEventListener('click', function(){
+                setConsent();
+                hideMessage();
+                showConsentDependentIframes();
+                triggerOnConsent();
+            });
+        }
     }
 
     init();

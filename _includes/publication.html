@@ -27,7 +27,9 @@
                     {% if page.video-url contains 'https://www.youtube.com' %}
                         <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url | replace: 'https://www.youtube.com', 'https://www.youtube-nocookie.com' }}"></iframe>
                     {% else %}
-                        <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url }}"></iframe>
+                        <div class="js-iframe-container" js-iframe-url="{{ page.video-url }}">
+                        </div>
+                        {% include publication_cookie_message.html %}
                     {% endif %}
                 </img>
                 {% endif %} {{ content }}
