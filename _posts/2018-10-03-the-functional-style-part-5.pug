@@ -1,0 +1,335 @@
+---
+author: Richard Wild
+layout: post
+asset-type: post
+title: "The Functional Style - Part 5"
+date: 2018-10-03 00:00:00
+description: Functional programming explained for the pragmatic programmer. Part 5. Higher-order functions I - Function composition & Monads.
+image: 
+    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+abstract: Functional programming explained for the pragmatic programmer.
+tags: 
+- functional programming
+---
+style.
+  .inline-code { font-family: monospace; font-size: 90%; color: #bd4147; background-color: #f8f9fa; padding: .2rem .4rem; border-radius: .25rem }
+  .math { font-family: Georgia, serif; font-size: 1.2em }
+  .fn { font-style: italic }
+  .var { font-style: italic; font-weight: bold }
+  .quotation { font-style: italic; margin: 0em 3em 1em 3em }
+
+h1 Higher-order functions I: Function composition & Monads.
+
+p We have seen several cases of functions as first-class citizens so far now, and the kinds of uses we can put them to. Just to recap, a function is a first-class citizen when it can be used as a value, just like any other value type. When a function accepts another function as its argument, or yields another function as its return value, or both, it is said to be a #[em higher-order function]. We actually already saw an example in the previous article, if you recall this method from the sieve of eratosthenes:
+
+pre
+  code.hljs.java.
+    private Predicate<Integer> notInNonPrimesUpTo(int limit) {
+        var sieve = new HashSet<Integer>();
+        for (var n = 2; n <= (limit / 2); n++)
+            for (var nonPrime = (n * 2); nonPrime <= limit; nonPrime += n)
+                sieve.add(nonPrime);
+        return candidate -> !sieve.contains(candidate);
+    }
+
+p Here we are returning a #[span.inline-code Predicate], which is a function that yields a boolean value. This means that #[span.inline-code notInNonPrimesUpTo] is a higher-order function. It builds the sieve and yields a function that tests whether a number is within the sieve or not.
+
+p We’ve seen other examples too. Remember #[span.inline-code map]? It takes a function and applies it to all the elements in an array, yielding another array. #[span.inline-code map] is a higher-order function. So is #[span.inline-code filter]: it takes a predicate and calls it on every element of an array to decide whether or not to include them in its output. #[span.inline-code qsort] is a higher-order function too, because it takes a comparator function and uses it to determine the order of any two elements in the array, without knowing the types of the elements. So don’t be intimidated by the term higher-order function, it does not mean something rarified or exalted. You almost certainly use some kind of higher-order functions regularly in your work. In fact, it’s impossible to make use of first-class functions without using higher-order functions as well.
+
+h3 Function composition.
+
+p In the functional programming world, you’ll hear this term a lot. Composition means applying a function to the output of another function, and considering this as a function in its own right. Say you have a function #[span.math.fn f] that takes an value #[span.math.var x] as its argument and returns a value #[span.math.var y]:
+
+p.
+  #[span.math #[span.fn f] ( #[span.var x] ) = #[span.var y]]
+
+p and you have another function #[span.math.fn g] that takes #[span.math.var y] as its argument and returns #[span.math.var z]:
+
+p.
+  #[span.math #[span.fn g] ( #[span.var y] ) = #[span.var z]]
+
+p clearly, then, you can apply #[span.math.fn g] to the output of #[span.math.fn f] like this:
+
+p.
+  #[span.math #[span.fn g] ( #[span.fn f] ( #[span.var x] ) ) = #[span.var z]]
+
+p This implies, therefore, that there is a third function #[span.math.fn h] that maps #[span.math.var x] directly to #[span.math.var z]:
+
+p.
+  #[span.math #[span.fn h] ( #[span.var x] ) = #[span.var z]]
+
+p Functional programmers would say that #[span.math.fn h] is the composition of functions #[span.math.fn f] and #[span.math.fn g]. In Haskell this would be defined like:
+
+pre
+  code.hljs.haskell.
+    h = g . f
+
+p In Haskell minimalism is prized as a virtue. In Clojure, rather more verbose, it would be defined like this:
+
+pre
+  code.hljs.clojure.
+      (def h (comp f g))
+
+h3 Plumbing.
+
+p Functional programming devotees tend to view function composition in terms like my explanation above, and they like to wax lyrical about its power. My own outlook is rather more prosaic. The idea of composing functions together is not novel. Doug McIlroy wrote this in a memo in 1964:
+
+p.quotation We should have some ways of coupling programs like garden hose -- screw in another segment when it becomes when it becomes necessary to massage data in another way.
+
+p The idea Doug was getting at was later realised in Unix as pipes, probably the single feature that makes Unix shell scripting so powerful. Unix pipes are a system of inter-process communication; they can be created and used directly by processes via system calls, but they can also be created in the shell by using the | symbol, like this:
+
+pre program1 | program2
+
+p The effect is to create a pipe that reads everything written to standard output by #[span.inline-code program1] and feeds it verbatim to #[span.inline-code program2] via its standard input. This means that you can chain programs together like building blocks to accomplish tasks that none of the programs can do by themselves. For example, if I wanted to find the top 3 largest Java programs in a directory by lines of code, I could do this:
+
+pre.
+  wc -l *.java | grep \.java | sort -nr | head -n 3
+      82 Book.java
+      43 Isbn.java
+      38 Genre.java
+
+p McIlroy put it this way:
+
+p.quotation This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together.
+
+p Replace “programs” with “functions” and you have the principle of composability.
+
+h3 Connascence of execution.
+
+p Personally I think the value of writing functions that “do one thing and do it well” pretty much self-evident, but it might not be clear yet why it is a good idea to write functions to work together, i.e. to be composable. Maybe you have heard of <a href="http://connascence.io/">connascence</a>? Connascence refers to things being coupled to each other in various kinds of ways. For each type of coupling there is a type of connascence to describe it, such as:
+
+ul
+  li Connascence of name - if the name of a thing is changed, other things must be renamed to match or the program will break. Usually function calls work by connascence of name. Modern refactoring IDEs can help you when renaming things by automatically updating all the other names that need to be changed to match.
+  li Connascence of type - two or more things must have the same type. In statically-typed languages this can usually be enforced by the compiler, but if you’re working in a dynamically typed language then you must take care to match up types by yourself.
+  li Connascence of meaning - also often referred to as “magic values”, this refers to things that must be set to specific values which have certain meanings and, if altered, will break the program.
+  li Connascence of execution - things must happen in a certain order, in other words, temporal coupling.
+
+p There are other types of connascence, but it is the last one which is important to us here. It is frequently critical in programming that things are done in a certain order:
+
+pre.
+    email = createEmail()
+    email.sender("walter@lebowski.com")
+    email.addRecipient("thedude@lebowski.com")
+    email.subject("Proposal")
+    mailer.send(email)
+    email.body("Let's go bowling")
+
+p In this code it’s pretty clear that everything must be set up on the email #[em before] it is sent. Setting the email body afterward the mail is sent, as the code snippet does, will have no effect, at best, and in the worst case scenario it might cause an error.
+
+p But we can design things so that it becomes impossible to do things out of order:
+
+pre.
+    email = emailBuilder()
+        .sender("walter@example.com")
+        .addRecipient("thedude@example.com")
+        .subject("Proposal")
+        .body("Let's go bowling")
+        .build()
+    mailer.send(email)
+
+p You need an #[span.inline-code email] object to pass to #[span.inline-code mailer.send()] and the only way to create one and set it up is to use the builder; in this way it is impossible to add anything to the email after it has been built, and therefore the object that is passed to #[span.inline-code mailer.send()] is guaranteed not to be tampered with afterwards. The builder pattern seen above is a very common way to turn imperative operations into composable functions. You can use it to wrap things that aren’t in the functional style and make them seem like they are.
+
+h3 The dreaded monad.
+
+p I put it off for four chapters but we had to mention monads eventually. Don’t be afraid. As always, I have an example to illustrate the point with, and hopefully it will get the idea across clearly enough. I have a little Java project that implements a simple REST API that I use to try out ideas on. It implements a set of endpoints that pretend to serve a library. You can search for books with it, view their details, borrow and return them, etc. The code for the endpoint you can use to find a book by its ISBN number looks like this:
+
+pre
+  code.hljs.java.
+      public LibraryResponse findBookByIsbn(Request request) {
+          try {
+              Isbn isbn = isbnFromPath(request);
+              Book book = findBookByIsbn(isbn);
+              SingleBookResult result = new SingleBookResult(book);
+              String responseBody = new Gson().toJson(result);
+              return new LibraryResponse(200, "application/json", responseBody);
+          } catch (IllegalArgumentException e) {
+              return new LibraryResponse(400, "text/plain", "ISBN is not valid");
+          } catch (Exception e) {
+              LOG.error(e.getMessage(), e);
+              return new LibraryResponse(500, "text/plain", "Problem at our end, sorry!");
+          }
+      }
+
+p So let’s critique this code. I really don’t like the exception handlers here. They constitute special cases, and one of the things I have learned through experience is that special cases are the enemy of clean code. They disrupt the flow of the program and they make splendid hiding places for bugs. Exceptions bring their own evil with them, because they are essentially gotos in disguise, but worse still, only one of the exception handlers here is actually handling exceptional behaviour. We don’t need to go into the details of the web framework being used here (it’s spark-java); suffice to say that all web frameworks can be configured to trap unhandled exceptions and return a preconfigured HTTP response when they happen. Different responses can be mapped to different exception classes: it would be appropriate to return the HTTP 500 response when a top-level #[span.inline-code Exception] is thrown, so we can remove it from the #[span.inline-code findBookByIsbn] method.
+
+p On the other hand, the 400 response “ISBN is not valid” is due to invalid input from the client and is very much part of the API contract. The #[span.inline-code isbnFromPath] method is throwing an #[span.inline-code IllegalArgumentException] when the parameter value from the client does not match the right format for an ISBN number. This obscures the logic because it is not immediately obvious where the exception is coming from.
+
+p There is something more that seems to be missing entirely there. What happens when #[span.inline-code findBookByIsbn] does not find the book? That should result in an HTTP 404 response and, in use, so it does, so where did that happen? Examining #[span.inline-code findBookByIsbn] we see the answer:
+
+pre
+    code.hljs.java.
+        Book findBookByIsbn(Isbn isbn) {
+            return bookRepository.retrieve(isbn).orElseThrow(() ->
+                Spark.halt(NOT_FOUND_404, BOOK_NOT_FOUND));
+        }
+
+p That makes things even worse! Now we’re throwing an exception which causes the framework to return an HTTP 404 response, which is not evident at all in the endpoint implementation.
+
+p So what can we do about it? We #[em could] improve things by creating specific exception types for the different outcomes, but that would still be using exceptions - which are just disguised gotos - as a means of control flow. Alternatively, we could rewrite the code not to depend on exceptions at all:
+
+pre
+    code.hljs.java.
+        public LibraryResponse findBookByIsbn(Request request) {
+            Isbn isbn = isbnFromPath(request);
+            if (isbn.valid()) {
+                Optional<Book> book = findBookByIsbn(isbn);
+                if (book.isPresent()) {
+                    SingleBookResult result = new SingleBookResult(book.get());
+                    String responseBody = new Gson().toJson(result);
+                    return new LibraryResponse(200, "application/json", responseBody);
+                } else {
+                    return new LibraryResponse(404, "text/plain", "Book not found");
+                }
+            } else {
+                return new LibraryResponse(400, "text/plain", "ISBN is not valid");
+            }
+        }
+
+p At least all the different execution paths are now present in the method, but this code is hardly great either. A better solution is hinted at in there, though, by #[span.inline-code findBookByIsbn] which is now returning an #[span.inline-code Optional<Book>]. The #[span.inline-code Optional] type speaks to us: it says that it may or may not return a book and that we must handle both eventualities. What we need is a way to make it similarly explicit that #[span.inline-code findBookByIsbn] will return #[em either] a valid ISBN number #[em or] some kind of invalid request error.
+
+p In Haskell there is the #[span.inline-code Either] type that lets you do exactly that, and it is frequently used for error handling. #[span.inline-code Either] values may be either #[span.inline-code Left] or #[span.inline-code Right] and the programmer must deal with both. Conventionally, the #[span.inline-code Left] constructor is used for indicating an error and the #[span.inline-code Right] constructor for wrapping a non-erroneous value. Personally I’m not a fan of the use of “left” and “right” in this way. Those words are only meaningful to me when indicating spatial orientation. Anyway, since version 8 Java has its own idiom for building this kind of construct, which has been established by the #[span.inline-code Stream] and #[span.inline-code Optional] classes. We can follow the same design by creating a #[span.inline-code MaybeValid] type to wrap values that may be valid or not:
+
+pre
+    code.hljs.java.
+        interface MaybeValid&lt;T> {
+
+            &lt;U> MaybeValid&lt;U> map(Function&lt;T, U> mapping);
+
+            &lt;U> MaybeValid&lt;U> flatMap(Function&lt;T, MaybeValid&lt;U>> mapping);
+
+            T ifInvalid(Function&lt;RequestError, T> defaultValueProvider);
+        }
+
+p The #[span.inline-code ifInvalid] method is the terminating operation; it is intended to return the wrapped value when it is valid, and the #[span.inline-code defaultValueProvider] function will supply the value when it is not valid. We can conveniently provide separate implementations for valid values and invalid values, respectively:
+
+pre
+    code.hljs.java.
+        public class Valid&lt;T> implements MaybeValid&lt;T> {
+
+            private final T value;
+
+            public Valid(T value) {
+                this.value = value;
+            }
+
+            @Override
+            public &lt;U> MaybeValid&lt;U> map(Function&lt;T, U> mapping) {
+                return new Valid&lt;>(mapping.apply(value));
+            }
+
+            @Override
+            public &lt;U> MaybeValid&lt;U> flatMap(Function&lt;T, MaybeValid&lt;U>> mapping) {
+                return mapping.apply(value);
+            }
+
+            @Override
+            public T ifInvalid(Function&lt;RequestError, T> unused) {
+                return value;
+            }
+        }
+
+p The key parts here are that #[span.inline-code ifInvalid] returns the wrapped value rather than executing the supplied function, while #[span.inline-code map] applies the wrapped value to the mapping function and returns a new #[span.inline-code ValidRequest] instance wrapping the mapped value. #[span.inline-code flatMap] just applies the mapping function and returns the result, since it is already wrapped in a #[span.inline-code MaybeValid] instance.
+
+pre
+    code.hljs.java.
+        public class Invalid&lt;T> implements MaybeValid&lt;T> {
+
+            private final RequestError error;
+
+            public Invalid(RequestError error) {
+                this.error = error;
+            }
+
+            @Override
+            public &lt;U> MaybeValid&lt;U> map(Function&lt;T, U> unused) {
+                return new Invalid&lt;>(error);
+            }
+
+            @Override
+            public &lt;U> MaybeValid&lt;U> flatMap(Function&lt;T, MaybeValid&lt;U>> mapping) {
+                return new Invalid&lt;>(error);
+            }
+
+            @Override
+            public T ifInvalid(Function&lt;RequestError, T> defaultValueProvider) {
+                return defaultValueProvider.apply(error);
+            }
+        }
+
+p The differences are that the #[span.inline-code map] and #[span.inline-code flatMap] methods simply return another #[span.inline-code InvalidRequest] instance, while #[span.inline-code ifInvalid] uses the #[span.inline-code defaultValueProvider] function to supply the return value. The default value provider receives the request error as its argument so that it can do something sensible with it.
+
+p All of this means that we need to wrap the #[span.inline-code isbnFromPath] method in order to return a #[span.inline-code MaybeValid] instance:
+
+pre
+    code.hljs.java.
+        MaybeValid&lt;Isbn> maybeValidIsbn(Request request) {
+            Isbn isbn = isbnFromPath(request);
+            return isbn.valid()
+                    ? new Valid&lt;>(isbn)
+                    : new Invalid&lt;>(new RequestError(400, "ISBN is not valid"));
+        }
+
+p And we must give a similar treatment to #[span.inline-code findBookByIsbn]:
+
+pre
+    code.hljs.java.
+        MaybeValid&lt;Book> maybeValidBook(Isbn isbn) {
+            Optional&lt;Book> book = findBookByIsbn(isbn);
+            return book.isPresent()
+                    ? new Valid&lt;>(book.get())
+                    : new Invalid&lt;>(new RequestError(404, "Book not found"));
+        }
+
+p Notice that the Invalid paths contain HTTP status codes in them, therefore this code #[em must] live in the layer of the application that deals with HTTP requests and responses. It would be inappropriate anywhere else.
+
+p Now we can rewrite the endpoint like this:
+
+pre
+    code.hljs.java.
+        public LibraryResponse findBookByIsbn(Request request) {
+            return maybeValidIsbn(request)
+                .flatMap(isbn -> maybeValidBook(isbn))
+                .map(book -> new SingleBookResult(book))
+                .map(result -> new Gson().toJson(result))
+                .map(json -> new LibraryResponse(200, "application/json", json))
+                .ifInvalid(error -> new LibraryResponse(error.httpStatus(), "text/plain", error.body()));
+        }
+
+p Some of the lambdas could be replaced with method references but I left them as they are to bear the closest resemblance to the original code. There are other possibilities for further refactoring too. But notice how it reads clearly now as a sequence of chained operations. This is possible because the original was a indeed chain of composable functions: the return value from each function was passed as the sole argument to the next. The use of higher-order functions has allowed us to encapsulate the logic pertaining to validation errors inside the #[span.inline-code MaybeInvalid] subtypes. In the library service there are several endpoints with requirements similar to this and #[span.inline-code MaybeInvalid] can be used to simplify all of them.
+
+h3 So about the monad...?
+
+p I mentioned the dread word “monad” earlier, and obviously #[span.inline-code MaybeInvalid] is one otherwise I wouldn’t have brought it up. So what #[em is] a monad exactly? Unfortunately, I need to clear up some possible confusion first because the word is overloaded. You may have heard of a “monadic” function: this usage originated in APL and it means a function with one argument. A function with two arguments is dyadic, and one with three arguments is triadic: you get the idea. That is a completely different and unrelated meaning of the word. The monad we are talking about here is a design pattern.
+
+p Doubtless you are already familiar with design patterns. The ones you already know, like Strategy, Command, Visitor etc. are all object-oriented design patterns. Monad is a functional design pattern. The monad pattern defines what it means to chain operations together, enabling the programmer to build pipelines that process data in a series of steps, just like we have above:
+
+ol
+    li Retrieve the ISBN number from the request (may be invalid, i.e. wrong format).
+    li Look up the book by its ISBN number (may be invalid, i.e. not found).
+    li Create a #[span.inline-code SingleBookResult] DTO from the retrieved book.
+    li Map the DTO to a JSON string.
+    li Create a #[span.inline-code LibraryResponse] with status 200 containing the JSON.
+
+p Each step may be ‘decorated’ with the additional processing rules provided by the monad. In our case, the additional rules are:
+
+ul
+    li The step actions are only to be performed when the value is valid.
+    li When the value is invalid then the error is passed along instead.
+
+p The terminating operation #[span.inline-code ifInvalid] makes the final decision about what to return: it returns the wrapped value if it is valid, otherwise it uses the supplied default value provider to build a suitable response from the client request error.
+
+p More formally, the monad pattern is usually defined as an assemblage of the following three components, which together are known as a #[em kleisi triple:]
+
+ol
+    li A #[em type constructor] that maps every possible type to its corresponding monadic type. This wording does not make much sense in Java. To understand it, think of generic types, e.g: #[span.inline-code Isbn] → #[span.inline-code MaybeValid&lt;Isbn>].
+    li A #[em unit function] that wraps a value in an underlying type with an instance of the corresponding monadic type, e.g: #[span.inline-code new Valid&lt;Isbn>(isbn)].
+    li A #[em binding operation] that takes a function and applies it to the underlying type. The function returns a new monadic type, which becomes the return value of the binding operation, e.g: #[span.inline-code map(book -> new SingleBookResult(book))] which yields a #[span.inline-code MaybeValid&lt;SingleBookResult>].
+
+p If you have these three components, you have a monad.
+
+p The point of a monad is not the ability to chain function calls together - you can do that easily enough without one. The purpose of a monad is to group the chained function calls inside an abstraction that embodies some kind of meaning, and from which the functionality cannot escape. It’s the abstraction that’s important.
+
+h3 Next time.
+
+p In the next article we will continue our investigation of higher-order functions with a look at currying and how it is useful. To do this we will implement a kata in Clojure. It will be a rather more involved exercise than the others have been in this series.
+
