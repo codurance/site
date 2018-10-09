@@ -39,7 +39,7 @@ These rules are constraints on how to create your code and are only intended to 
 *  [Infinite Sequences ](#infinitesequences)
 *  [One argument functions](#oneargumentfunctions) 
 
-##Name Everything [nameeverything]
+##Name Everything
 
 Most basic one. It will seem harsh for experienced functional programmers. First one to be broken on production code.
 
