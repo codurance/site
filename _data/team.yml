@@ -623,3 +623,14 @@
     <p>Outside of work he enjoys music production, playing guitar, attempting to learn German and reading about all things software.</p>
   twitter: danpkn
   github: squaretechre
+
+- id: bartomeu_galmes
+  name: Bartomeu Galmés
+  image: /assets/custom/img/team/bartomeu_galmes.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Bartomeu started wondering about how computers work when he was a child. This led him to pursue a computer sciences bachelor's degree, specializing on software engineering. He has worked as Full stack developer mainly developing applications for internal use. His main interests are architecture and cloud computing.</p>
+    <p>He joined Codurance as a way to challenge himself improving programming skills and other software-related skills.</p>
+    <p>When he is not in front of the keyboard, he is playing guitar or reading some books.</p>
+  twitter: bartomeugm
+  github: bartomeugm
