@@ -1,3 +1,5 @@
+source: ./src
+destination: ./output/_site
 url: "https://codurance.com"
 domains: 
    en: "https://codurance.com"
@@ -49,7 +51,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate-v2
   - jekyll-multiple-languages-plugin
-  - jekyll-pug
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 

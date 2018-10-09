@@ -49,3 +49,4 @@ node_modules
 Makefile
 
 .pug-cache
+output/*
