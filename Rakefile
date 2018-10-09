@@ -1,5 +1,3 @@
-
-
 task :build do
   sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_default.yml --trace'
 end
