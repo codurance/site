@@ -51,7 +51,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate-v2
   - jekyll-multiple-languages-plugin
-  - jekyll-pug
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico", "_posts"]
 
