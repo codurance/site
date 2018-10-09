@@ -49,3 +49,5 @@ node_modules
 Makefile
 
 .pug-cache
+
+tools/snapshots/backstop_data/*
