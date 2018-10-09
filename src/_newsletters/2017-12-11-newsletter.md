@@ -105,7 +105,6 @@ Mashooq Badar explores the notion of Fractured Skill within software development
 
 ====
 
-### [Katas For Functional Calisthenics](https://codurance.com/2017/11/16/katas-for-functional-calisthenics/)
 Jorge Gueorguiev Garcia recently posted about functional calisthenics (https://codurance.com/2017/10/12/functional-calisthenics/) . In this post, he provides additional rules/premises/requirements for three katas.
 
 ====

@@ -51,3 +51,4 @@ Makefile
 .pug-cache
 
 tools/snapshots/backstop_data/*
+output/*

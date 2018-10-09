@@ -160,17 +160,6 @@ var equalizeHeights = function() {
     $('.equalheight').height(maxHeight);
 }
 
-$(document).ready(function() {
-    equalizeHeights();
-
-    //This function is necessary so Safari can redraw the menu 
-    $(".dropdown").click(function(){
-        return true;
-    });
-
-    announcementOnDevConsole();
-});
-
 $(window).resize(function () {
     equalizeHeights();
 });
@@ -197,3 +186,39 @@ $(window).resize(function () {
 		});
 	});
 })();
+  
+var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+  
+      if (!header.id) {
+        var originalContent = header.innerHTML;
+        var link = originalContent.split(' ').join('');
+        
+        var a = document.createElement('a');
+        a.title = originalContent;
+        a.name = link.toLowerCase();
+        a.classList = 'anchor';
+        header.appendChild(a);
+      }
+
+      header.insertBefore(a, header.firstChild);
+    }
+};
+
+$(document).ready(function() {
+    equalizeHeights();
+
+    //This function is necessary so Safari can redraw the menu 
+    $(".dropdown").click(function(){
+        return true;
+    });
+
+    // add anchor links to headers on posts
+    for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, document.getElementById('js-publication-content'));
+    }
+
+    announcementOnDevConsole();
+});

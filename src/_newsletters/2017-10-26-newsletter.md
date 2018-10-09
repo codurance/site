@@ -77,7 +77,6 @@ Part of a larger series on the relationship between design patterns and category
 
 ====
 
-### [Functional Calisthenics](https://codurance.com/2017/10/12/functional-calisthenics/)
 Our Craftsman, Jorge Gueorguiev Garcia, reflects on his recent usage of Clojure in a project, his realisation that he was effectively writing OO code with the syntac of Clojure, and how a series of katas helped him to refocus on the functional paradigm.
 
 ====
