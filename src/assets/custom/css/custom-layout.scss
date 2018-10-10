@@ -16,6 +16,10 @@ title: CSS
 
 $orange-colour: #e67e22;
 
+.header-logo {
+  width: 224px;
+}
+
 .feature-panel { /* 0 0 1 0 */
   background: url("{{ site.baseurl }}/assets/custom/img/home/codurance-pair-programming.jpg") no-repeat center center;
   height: 550px;
