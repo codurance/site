@@ -226,4 +226,9 @@ $(document).ready(function() {
     }
 
     announcementOnDevConsole();
+
+    // Used by the 404 page to load custom search list
+    if(window.codurance.onLunrLoaded) {
+        window.codurance.onLunrLoaded();
+    }
 });
