@@ -188,6 +188,11 @@ $(window).resize(function () {
 })();
   
 var linkifyAnchors = function (level, containingElement) {
+    
+    if (!containingElement) {
+        return
+    }
+    
     var headers = containingElement.getElementsByTagName("h" + level);
     for (var h = 0; h < headers.length; h++) {
       var header = headers[h];
