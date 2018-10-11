@@ -133,9 +133,21 @@ module Jekyll
     def author_url(author)
         basedir = @context.registers[:site].config['author_dir'] || "authors"
         baseurl = @context.registers[:site].config['baseurl']
+
+        # puts "Author_url called for #{author}"
+
         author_dir = AuthorNameToPath.parse(author)
 
-        "#{baseurl}/#{basedir}/#{author_dir}/"
+        # result = "#{baseurl}/#{basedir}/#{author_dir}/"
+
+        # AuthorNameToPath.log "Now author_url called with #{result}"
+
+        # result
+
+        author_dir
+
+
+        'https://example.com'
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
@@ -154,8 +166,16 @@ module Jekyll
 
   module AuthorNameToPath
     def self.parse(name)
-        name.downcase.gsub(" ", "-")
+
+        result = name.downcase.gsub(" ", "-")
+     #   puts "Author Name to path called for #{name} #{result}"
+
+        result
     end
+
+    def log(msg)
+      puts msg
+    end  
   end
 
 end

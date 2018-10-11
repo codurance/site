@@ -12,6 +12,7 @@ gem 'rdiscount'
 gem 'jekyll-sitemap'
 gem 'jekyll-multiple-languages-plugin'
 
+gem 'rspec'
 
 group :jekyll_plugins do
   gem "jekyll-paginate-v2"

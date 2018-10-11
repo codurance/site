@@ -27,7 +27,7 @@ task :servees do
 end
 
 task :servequick do
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_en.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
+  sh 'bundle exec jekyll serve --verbose --config build/config/_config.yml,build/config/_config_en.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
 end
 
 task :servequickes do
@@ -43,5 +43,11 @@ task :es do
   sh 'rm -rf _site'
   sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_es.yml --watch --incremental --limit_posts 3'
 end
+
+task :test do
+  # ruby 'test/_plugins/author_generator_spec.rb'
+
+  sh 'bundle exec rspec'
+end  
 
 task :default => :servequick
