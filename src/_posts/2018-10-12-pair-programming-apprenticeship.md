@@ -8,7 +8,10 @@ description: How to prepare for the pair programming interview when you don't ha
 image: 
     src: /assets/custom/img/blog/2018-10-12-pair-programming/coaching-coders-coding-7374.jpg
 tags: 
-- Software Craftsmanship, Pair Programming, Apprenticeship, TDD
+- Software Craftsmanship
+- Pair Programming
+- Apprenticeship 
+- TDD
 ---
 # Joining Codurance - the pair programming interview experience
 
