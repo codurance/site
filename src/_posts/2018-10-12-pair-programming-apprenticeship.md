@@ -1,96 +1,45 @@
 ---
-author: Jorge Gueorguiev Garcia
+author: Simion Iulian Belea
 layout: post
 asset-type: post
-title: "Safety Musings 1 (Languages)"
-date: 2018-10-04 08:00:00
-description: Where I muse about safety
-image: 
-    src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
+title: "Joining Codurance - the pair programming interview experience"
+date: 2018-10-12 16:15:00
+description: How to prepare for the pair programming interview when you don't have much experience with TDD.
 tags: 
-- Software Craftsmanship
+- Software Craftsmanship, Pair Programming, Apprenticeship, TDD
 ---
+# Joining Codurance - the pair programming interview experience
 
-So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Uncle Bob) has been talking about the necessity of a code similar to the Hippocratic Oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hippocratic Oath did not stop the need for the Medical license)
+This article is aimed at those who have little or no experience with pair programming and test driven development. I had the opportunity to go through a pair programming interview to join Codurance and I didn't have any previous experience with test driven development or pair programming  and the preparation I outline in this article helped to pass the interview.
 
-## Discussing about what are functional languages
+The purpose of a pair programming interview is to discover your technical ability but also how it's like to work with you. If you are a recent graduate you might have read, and even done some katas on test-driven development and some companies have a pair-programming session as part of the hiring process. It was my first pair-programming interview I had little idea about how to go about it so I set out to find a solution. My starting point was some unit testing and refactoring done during my previous internship. Most of my "pair" experience was around discussing code and I started to learn TDD on my own. I had a week to prepare. With such a short time I knew I had to make a learning plan in order to succeed. 
 
-The other night I was discussing with some colleagues what is a Functional Language. On their definition, only pure statically typed languages can be called Functional Languages. No IO Monad, or any other way of controlling side effects through the type system, no functional language. My contention was that immutability (and with it the reduction of side effects) is enough for a language to be called functional. Their thinking eliminates Clojure, Elixir, Erlang and a few others. Instead of seeing functional languages as a spectrum, it was an all or nothing.
+I read as much as I could on pair programming interviews and two articles were really outstanding. One was Eumir Gaspar's [article](https://medium.freecodecamp.org/things-ive-learned-from-pair-programming-interviews-35a4db7d7443) that outlined the perspectives of both the interviewer and the interviewee. Just after reading this article I started making a list of questions I would ask during the interview. The other [article](https://targetjobs.co.uk/employer-hubs/thoughtworks/472520-thoughtworks-pair-programming-interview-and-technical-test-insider-advice-for-graduates) was from ThoughtWorks by Rufus Raghunath. His tip around taking my time and having a strategy to talk about coupled well with me writing down a plan for the session. This was critical as the interviewer told me one of the reasons I passed the interview was because I thought ahead instead of just jumping into the code.
 
-But that led me to start thinking about characteristics of languages. And it is true that a statically typed language doesn't require as many tests as a dynamically typed language because there is a whole type of errors that will be stopped. It is also true that on a language that has immutability, there is another whole type of errors that will not happen, because nothing can just change the values. Furthermore, I have found that expressing logic on them creates less cruft code (both for dynamic or typed) than an OOP language.
+I also asked a friend who had more experience to do a practice pairing with me. He proved to be much tougher than the interviewer in the end and this practice pairing proved to be very useful in terms of feedback on how I was doing TDD incorrectly.
 
-As a result, they become safer languages. There is less code written to create a feature, therefore the number of parts that can fail is smaller and those parts are much easier to test. The code is simpler (but that doesn't necessarily make creating it is easier).
+Because I was allowed to bring my own laptop and IDE I prepared an empty boilerplate and I started getting familiar and comfortable using the IDEs keyboard shortcuts so no time would be wasted for setup or for running the tests. 
 
-## Language Division
-### Paradigms
+Since I never paired in the XP way before I realized I was not used to talking at all while coding. Most of my coding was done focusing deeply on the code. So besides learning TDD I had to get used to communicating my intentions and coding decisions. I made a list of katas and started doing one every day.
 
-The first time I attended NDC London was also the first time I have seen Martin on stage live (on 2014, where I watched presentations by [Scott Wlaschin](https://vimeo.com/113588389) and [Andrea Magnorsky](https://vimeo.com/113716254) that led me to learn F#). On that presentation he talked about the fact that the Functional Paradigm appeared first, then Object Oriented, then Structured (all within a few years, between the late 50s and early 60s), but then the adoption by the general community was on the reverse: We needed to learn to use Structured programming before we could move to OOP; and we needed to do OOP before we were ready to move to FP.
+I also sketched a test plan, as well as drawing some helper classes and logic that I might end up with. The idea is to use the plan as a hypothesis to test, not as a plan to follow to the letter. The plan helped in figuring out which way I could take if I felt stuck by taking off some of the interview pressure and having where to orient my attention to. This way I could see how far I got into solving the kata and how I could continue.
 
-My colleague [Richard](https://codurance.com/publications/author/richard-wild/) points to the fact that you can divide these paradigms based on the constraints that they give you:
+After two of them I got the basics and I started doing the out loud, to get used to talking about what I was doing and to ask questions when I got stuck. This also helped getting out of the habit of being too focused on the code and it was easier to make the interview more conversational. This also revealed obvious impediments around syntax that I could easily address, like how I was handling the parameters in the assertions and in the test annotations. It's important to show that the language doesn't stop you from coding.
 
-* * *
-- **Structured programming** imposes constraints on direct transfer of control (GOTOs). It taught us that all algorithms can be broken down into sequence, selection, and iteration, and they can be implemented with control structures that are easier to comprehend than tangled spaghetti code (there's the safety feature).
-- **Object-oriented programming** imposes constraints on indirect transfer of control, i.e. dynamic dispatch (function pointers). Function pointers are useful for creating abstractions and inverting dependencies. So OO programming provides a means for achieving these things, managed by the compiler, while removing the ability to create pointers to functions so that you can't shoot yourself in the foot (safety feature).
-- **Functional programming** imposes constraints on mutating state. Instead of changing the values of things unrestrained, the language imposes discipline so that you know where the mutating state lives, and the language additionally protects you against synchronization problems (safety feature).
-* * *
+I first attempted a solution on my own then I would check on GitHub to see how others tried to solve them. This is enough to give you an idea about how to write tests first, then rewrite the code then follow the Red Green Refactor technique to keep coding. Later in the exercise you might be tempted to make more than one test pass since you suddenly see you can just copy paste, yet is that a good thing to do at that moment? It also helps you prevent over-reacting and this preparation can make you calmer during the interview. It will also lead to a conversation about your assumptions when you write the code and how you deal with the uncertainties around them.
 
-Looking at the paradigms from the constraints point of view, it makes sense that we went first with structured programming. It becomes much easier to add constraints little by little. The easiest ones first, then the most difficult ones later. We are automating discipline bit by bit into the way that we work.
+You might suddenly observe that you can go back to a previous idea and see that you have a better one throughout the kata. This led to asking questions like: how do I deal with edge cases when I'm expecting the test to fail but it's actually passing? What's a way I can make it fail without coupling it with the functionality I'm testing? How do I change the program afterwards so it's able to pass the test again?
 
-But we don't only rely on the language for constrains: a recommendation on structured programming, one that wasn't really enforced by the compiler/interpreter of the language, is the avoidance of global state. Is interesting as well that in OOP languages, the recommended way of dealing with the state of objects is to hide the state and only allow access through the public methods of the object. We did recognise that state changes are problematic. 
+Doing this training will lead also to questions that are important in communicating with your pairing interviewer like: Am I allowed to use a certain framework, library or API during the interview or have a look on StackOverflow for something very specific? This can help you a lot in deciding what questions to ask about the rules of communication that you can use or negotiate during the interview. This will help you take off pressure from yourself that you need to code well as you're already confident in your skill and focus on your connection with the interviewer where you can show good communication skills and create good rapport through what you discuss about.
 
-### Types
+This practice and preparation will also provide a guide about what things you can understand better like which parts of String and Arrays manipulation that you're not so good at and that you can train to be proficient in their use impromptu during the interview and improve your chances of making a good impression as you can address them before the interview and be confident that you prepared well enough for it.
 
-Types do represent constraints around the data we can pass around. As such, we are talking about four types here: Primitives, Structures, Objects and Functions (for those languages that treat Functions as [first-class citizens](https://en.m.wikipedia.org/wiki/First-class_function)). But we also talk about two set of behaviours that languages can show: dynamic or static, and strong or weak. The more restrictive a language is, the less errors that can appear in the code. On strongly statically typed languages, the compiler  will help you and stop you from doing things that don't make sense. You will need to provide specific constructs to convert between types (for primitives and structs) or to link logically types together (for objects), like Interfaces, Mixins, Protocols, ...
+To explore TDD further I looked at how others did katas on YouTube. This proved very valuable as the ones doing the katas were voicing their intentions into how they coded and their questions about the refactorings revealed a bit about their thought process. This was helpful during the interview as I could ask questions and voice what were the possible next moves, which led to a discussion about how would be best to proceed given the limited time and the complexity of the solutions I thought of. This also helped with a discussion about how to proceed with the rest of the exercise that was not finished during the time we had for the interview. 
 
-What types are available, the extent and limitations of those types will indicate the suitability of the language for an specific domain. An example could be the JS Number type compared to the options provided by C#. We know that float numbers are not adequate for the processing of monetary transactions. JS only offers a 64-bit float number type, which is inadequate, while C# provides a decimal type especially designed for such operations. Another is the void pointer on C, that basically allows you avoid constraints on what is being referenced. It looks like a powerful tool, but at the same time it weakens your software, as that void pointer could be anything and you need to start asserting the contents before using it.
-
-### Operation Kinds
-
-In the above definition of Functional Programming we talked about immutability of state. That is one of the two ways that you could have side effects on a program. The second type of side effect that can happen in a program is the communication with external systems to the program: Console, clock, database, web, ... If we follow the idea above that we can establish constraints around different parts of the language, we can as well establish constraints around side effects created by accessing those external systems. I can say that an operation is an effectful operation if they access those systems, and any other operation that calls it, it is, by extension, an effectul operation as well. If you are into Functional Programming, this probably rings a few bells for you. These restrictions exist in Haskell, through the use of the IO Monad, and others. As I was discussing with my colleagues I thought about this construct as separate of type, even if in Haskell they are somehow conflated (though probably, from a design point of view, is the easiest thing to add).
-
-Another example for this idea of constraints regarding the calling of methods that is not directly tied to types is static methods. A static method on most OOP languages can call other static methods of the class, can call static members of the class, but cannot call non-static methods on the object. The only way to call dynamic methods is if the receiving object is either pass as a parameter to the static method or if it is created within the static method.
-
-Could I design a structured language where operation kinds for external access are explicit? I see no reason why not. Could I design an OOP language where operation kinds for external access are explicit? I see no reason why not.
-
-Of course you can go go against what the language provides: If you write an IO function at the deepest level of your Haskell application you still create a valid application. The only issue is that now you have to declare every single function on the chain has to declare also that is an IO operation. The code becomes a pain to write (and probably once you start mixing with other monads means that you need to write an awful lot of unnecessary code).
-
-### Orthogonality
-
-All these possibilities (paradigms, types, and operation kinds) are orthogonal to each other. All these are independent dimensions on which languages can exist. Different combinations produce languages that can be safer or unsafer. These characteristics needs to be understood to know when a language can be used.
-
-## Boilerplate
-
-If I look at statically typed OOP languages, to create something that is maintainable the amount of code that I need to create has always looked excesive. But all those interfaces, all those design patterns perform necessary functions in a system of a minimum size and complexity. Dynamically typed OOP languages tend to require far less boilerplate, you can concentrate on the actual task. It is offset by the fact that you need a very comprehensive test suite to guarantee that there is nothing going wrong on your application due to type mismatch. The compiler will not stop you sending the wrong type of object. Weakly typed languages are the worst on that regard, because you can forcibly coerce any type into another.
-
-The boilerplate (directly through the actual production code or indirectly through tests) is necessary to allow maintainability of a code base while at the same time trying to ascertain it's correct behaviour. But the more boilerplate you have to write, the more likely that an error could be introduced. Could we avoid all this boilerplate?
-
-## Null
-
-[Tony Hoare](https://en.wikipedia.org/wiki/Tony_Hoare), between lots of other stuff, created `Null`. He is recorded as saying (well, I did have the privilege to see him at Code Mesh saying so) that `Null` was [his $1 billion mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare). How many errors have happened (and will happen), because a method/function could return null? How much boilerplate code has been written to check for null values? Why languages do still allow nulls? `Null` doesn't represent anything useful. If something went wrong either we fail the program completely or we indicate some other way what is exactly the issue at hand. `Null` is a meaningless construct of absolutely no interest. `Null` makes our systems more likely to crash.
-
-## Safe(r) Languages?
-
-A lot of boilerplate can be removed through the use of higher levels of abstraction. This is the place where functional languages tend to live in. Creating a loop for the nth time is a waste of time, so functionality like map and reduce eliminates unneeded development. Looping is a solved problem. Same with other constructs. I have to say that OOP languages started to catch up on this and have been offering for some time libraries and functions that provide this functionality (Linq on C# and Streams on Java as examples). The removal of this boilerplate from our code means that there are less places where our systems can fail. Also, it means that we can dedicate more time to the actual task that we need to do, that is solve the need for which we are creating the code.
-
-When code is immutable, it is far easier to reason about it. You don't have to think what external code could modify the parameters and values that you are utilising. That code is also easier to test, because there are less possible options as to what can happen with the code. If you look at what are consider best practices in OOP, we want to restrict who and how can modify an object state. We don't allow unfettered access. Only through the methods that we expose the state can be changed. We don't have the immutability, but we try to limit the mutability. But because we don't have that immutability by default, we are, again, adding boilerplate for a solution that does not provide the same level of safety.
-
-If we are creating software that affects people's live (as in keeping them alive, or not made them broke) should we not use safe languages? It is not irresponsible to use a language which is easy to crash or write code that is incorrect? Multiple failures have been documented created, between other things, by the code that developers have written. Software developers have killed people (unintentionally, not counting weapon's software). Software developers have sent people into bankruptcy because issues on their code. Would you be happy about doing it? Would you care?
-
-There is an spectrum here where we can put languages based on how safe they are, where some languages (C, Javascript) are on one end, and other languages (Haskell, Rust) are on the other end. I do believe that the type of software were people's live it is a stake should only be created with the safer kind. It is not about time to market, it is not about fun coding, it is not hitting the sales numbers.
-
-## My favourite languages
-
-My current favourite language is Clojure (dynamic), and I like quite a lot Elixir (dynamic), Ruby (dynamic), Python (dynamic), and the two main languages on .Net, C# (static) and F# (static with [Hindley-Milner type inference](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)). ... Well, darn, F# is the closest to a safe language under my above descriptions.
-
-Taking into account what I said above, do they have a place on my toolbox? Well yes, there is still plenty of work that doesn't require those safety measures. And on those areas, any language can be used. Of course, you need to be sure that you don't create code that will completely wipe out a computer unintentionally). Websites that do not process payments, games, library applications, video processing systems, small scripts, ... usually do not have the same safety/security needs. 
-
-I think I need to point here that all general purpose programming languages are Turing complete. What that means is that you could create the same application on any of them. The difference is the difficulty to hit some of the functional and non-functional requirements. Some languages will make fulfilling some requirements easier, some languages will make fulfilling some requirements more difficult. Languages are another tool. You should select the most appropriate based on what requirements are more important.
-
-## Next
-
-I have exposed these general ideas about languages. A following post will talk about Techniques (because they too affect the safety of our code). And then a conclusion (on the same post, or maybe a separate one, ...)
-
-
-<sub>
-Photo: ["Relax for two"](https://www.flickr.com/photos/ljsilver71/15594809946/in/photolist-pL4tFy-VHcszq-7jSLxJ-8s6rV-8jRh4c-4LzZ51-8vQLAD-6hyhot-4wFAm7-4GEgVi-98eqBQ-8MMD3T-5RQ1zi-6WwPZu-5KgdKq-99CYDD-512veB-cHFqk-fnQew4-5twYoy-eorjVa-6SMh7C-fnbKD-8nWT7Q-6Jfb53-5hzYpj-bVRfPz-2bo9zF-4LzXT7-nYpqVw-daupwD-76FZr1-5uineQ-4LvJCP-rdtanu-5CrSDu-d8SX2u-Vf8KaN-6LdgXC-U4WtBe-gwP4K-6LzpPc-8QUSF1-55fFs5-7JcDc2-X2JzLj-E4f3d-4YQKBm-dg12bH-8omyeg) by Ricardo Maria Mantero is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
-</sub>
+To sum up here is how I learnt TDD quickly and how to prepare for the interview
+1. Doing simple katas and learning to write the tests first
+2. Finding the really bad "don'ts"and address them (language and framework familiarity)
+3. Writing down a test plan to think a bit ahead and take off some of the interview pressure.
+4. Voicing what I was doing while I was coding, especially when I needed to make a bigger change
+5. Getting used to communicating programming intentions and assumptions while pairing
+6. Practice pairing with somebody who has done it, if possible.
