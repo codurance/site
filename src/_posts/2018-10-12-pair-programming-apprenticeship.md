@@ -3,8 +3,10 @@ author: Simion Iulian Belea
 layout: post
 asset-type: post
 title: "Joining Codurance - the pair programming interview experience"
-date: 2018-10-12 16:15:00
+date: 2018-10-12 08:00:00
 description: How to prepare for the pair programming interview when you don't have much experience with TDD.
+image: 
+    src:assets/custom/img/blog/2018-10-12-pair-programming/coaching-coders-coding-7374.jpg
 tags: 
 - Software Craftsmanship, Pair Programming, Apprenticeship, TDD
 ---
