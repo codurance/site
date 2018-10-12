@@ -1,0 +1,94 @@
+---
+layout: default
+permalink: /404.html
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Page not found</h1>
+
+      <p>{% t not-found.title %}</p>
+
+      <div id="search-suggestions" style="display:none;">
+        <b>{% t not-found.subtitle %}</b>
+        <ul id="search-suggestions-list">
+        <ul>
+      </div>
+
+    </div>
+  </div>
+  <img src="{{ '/assets/custom/img/404.png' | prepend: site.baseurl }}" class="img img-center img-fluid style-screengrab" style="margin-top:1em; margin-bottom:1em;"></img>
+</div>
+
+<!-- send a 404 event to Google Analytics-->
+  <script>
+    ga('send', 'event', 'error', '404', 'page: ' + document.location.pathname + document.location.search + ' ref: ' + document.referrer);
+  </script>
+
+<!-- find suggestions based on the URL accessed-->
+  <script type="text/javascript">
+    (function(){
+      var index, search_items={};
+      var MAX_RESULT_COUNT = 5;
+
+      function addResultsToPage(results){
+        $('#search-suggestions-list li').remove();
+        results.forEach(function(result){
+          $('#search-suggestions-list').append(
+              $('<li>')
+              .append($('<a>')
+                .attr('href',result.url)
+                .text(result.title)
+              )
+          );
+        });
+        $('#search-suggestions').show();
+      }
+
+      function searchMatchingPages(term){
+        var results = index.search(term)
+                      .map(function(search_result){return {url:search_result.ref, title:search_items[search_result.ref]}})
+                      .slice(0, MAX_RESULT_COUNT);
+        if((!results || results.length == 0) && term.indexOf("pubication") > 0 ){
+          window.location = window.location.pathname.replace("pubication", "publication");
+          return;
+        }
+        if(results.length>0){
+          addResultsToPage(results);
+        }
+      }
+
+      function addToSearchItems(url, title){
+        if(url && url.trim()!='' && title && title.trim()!=''){
+          search_items[url] = title;
+          index.add({ url:url, title:title });
+        }
+      }
+
+      function searchIfReady(){
+        searchMatchingPages(window.location.pathname);
+      }
+
+      window.codurance = window.codurance || {};
+      window.codurance.onLunrLoaded = function() {
+        index = lunr(function () {
+          this.field('url', {boost: 10});
+          this.field('title');
+          this.ref('url');
+        });
+
+        {% for page in site.pages %}
+        addToSearchItems('{{page.url | escape }}','{{page.title | escape }}');
+        {% endfor %}
+        
+        {% for post in site.posts %}
+        addToSearchItems('{{post.url | escape }}','{{post.title | escape }}');
+        {% endfor %}
+      
+        lunrLoaded = true;
+        searchIfReady(); 
+      }
+    }());
+  </script>
+
+

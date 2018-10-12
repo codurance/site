@@ -1,0 +1,72 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/* --------------------------------------
+ Global Styles
+ -------------------------------------- */
+
+/*
+   CSS specificity calculator: https://specificity.keegan.st/
+   Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
+   Specificity ranges from lowest to highest (more generic to more specific)
+ */
+
+$orange-colour: #e67e22;
+
+body {  /* 0 0 0 1 */
+    font-size: 14px;
+}
+
+x:-moz-any-link {  /* 0 0 1 1 */
+    margin: 0;
+}
+
+li > a {  /* 0 0 0 2 */
+    color: $orange-colour;
+}
+
+blockquote {
+	border: none;
+	padding: 18px;
+	font-size: 28px;
+	background: #f3f3f3;
+	border-left: solid 2px #666;
+}
+
+blockquote p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.anchor {
+    display:block;
+    height:85px; /* this is the height of your header */
+    margin-top:-85px; /* this is again negative value of the height of your header */
+    visibility:hidden;
+}
+
+img.bullet-image {
+    float:left;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+h1, h2, h3, h4, h5 {
+    &.title-v2{
+        color: #555;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &.title-center{
+        text-align: center;
+    }
+}
+
+.text-orange{
+    color: $orange-colour;
+}

@@ -1,0 +1,62 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "smallest",
+      "width": 360,
+      "height": 640
+    },
+    {
+      "label": "large",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "label": "huge",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+
+  "misMatchThreshold" : 0.15,
+  
+  
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {"label": "Codurance Homepage", "url": "http://localhost:4000/", "referenceUrl": "https://codurance.com/"},
+    {"label": "Codurance Clients",  "url": "http://localhost:4000/clients/", "referenceUrl": "https://codurance.com/clients/"},
+    {"label": "Codurance Services", "url": "http://localhost:4000/services/", "referenceUrl": "https://codurance.com/services/"},
+    {"label": "Codurance Training", "url": "http://localhost:4000/services/training/", "referenceUrl": "https://codurance.com/services/training/"},
+    {"label": "Codurance Crafting Code", "url": "http://localhost:4000/services/training/crafting-code/", "referenceUrl": "https://codurance.com/services/training/crafting-code/"},
+    {"label": "Codurance Publications", "url": "http://localhost:4000/publications/", "referenceUrl": "https://codurance.com/publications/"},
+    {"label": "Codurance The software craftsman", "url": "http://localhost:4000/publications/the-software-craftsman/", "referenceUrl": "https://codurance.com/publications/the-software-craftsman/"},
+    {"label": "the-functional-style-part-3", "url": "http://localhost:4000/2018/09/04/the-functional-style-part-3/", "referenceUrl": "https://codurance.com/2018/09/04/the-functional-style-part-3/"},
+    {"label": "author", "url": "http://localhost:4000/publications/author/mashooq-badar/", "referenceUrl": "https://codurance.com/publications/author/mashooq-badar/"},
+    {"label": "events", "url": "http://localhost:4000/events/", "referenceUrl": "https://codurance.com/events/"},
+    {"label": "company", "url": "http://localhost:4000/company/", "referenceUrl": "https://codurance.com/company/"},
+    {"label": "careers", "url": "http://localhost:4000/careers/", "referenceUrl": "https://codurance.com/careers/"},
+    {"label": "become_a_craftsperson", "url": "http://localhost:4000/careers/become_a_craftsperson/", "referenceUrl": "https://codurance.com/careers/become_a_craftsperson/"},
+    {"label": "become_an_apprentice", "url": "http://localhost:4000/careers/become_an_apprentice/", "referenceUrl": "https://codurance.com/careers/become_an_apprentice/"},
+    {"label": "privacy", "url": "http://localhost:4000/policies/privacy/", "referenceUrl": "https://codurance.com/policies/privacy/"},
+    {"label": "cookie", "url": "http://localhost:4000/policies/cookie/", "referenceUrl": "https://codurance.com/policies/cookie/"}
+  
+
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

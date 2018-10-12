@@ -108,7 +108,7 @@ In case of other problems, refer to the [troubleshooting section](#troubleshooti
 
 ## Previewing changes for a pull request
 
-![illustration of how to go the site preview](how-to-go-to-site-preview.png)
+![illustration of how to go the site preview](docs/assets/how-to-go-to-site-preview.png)
 
 We have a bot that makes a preview of the site for every branch that you create. 
 

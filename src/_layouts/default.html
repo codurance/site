@@ -1,0 +1,27 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body >
+
+<div class="wrapper">
+<!--=== Header ===-->
+{% include header.html %}
+<!--=== End Header ===-->
+{{ content }}
+<!--=== Copyright ===-->
+{% include footer.html %}
+<!--=== End Copyright ===-->
+</div>
+
+{% include foot.html %}
+
+</body>
+</html>
