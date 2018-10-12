@@ -9,7 +9,9 @@
                     <p class="lead g-color-white-opacity-0_6">{{ page.abstract }}</p>
                 </div>
                 {% if page.asset-type != "newsletter" %}
-                <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.author }}</span>
+                <a href="{{site.baseurl}}/publications/author/{{ page.author | downcase | replace: ' ','-' }}/">
+                    <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.author }}</span>
+                </a>
                 <span class="g-color-white-opacity-0_7 g-font-weight-700 mx-3">·</span>
                 {% endif %}
                 <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
@@ -52,7 +54,7 @@
                     {% for tag in page.tags %}
                     <li class="list-inline-item g-mb-10">
                         <a class="u-tags-v1 g-brd-around g-brd-gray-dark-v5 g-brd-primary--hover g-color-black g-color-white--hover g-bg-primary--hover g-font-weight-600 g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                            href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}">{{ tag }}</a>
+                        href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}">{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -73,7 +75,7 @@
                         <div class="media-body">
                             <h4 class="h5 g-color-black g-font-weight-600">{{ page.author | author_links}}</h4>
                             <p class="g-color-gray-dark-v5 mb-4">{{ member.fullDescription }}</p>
-                            <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{ page.author | author_url }}">All author posts</a>
+                            <a class="btn u-btn-outline-black g-brd-gray-light-v1 g-font-weight-600 g-font-size-12 text-uppercase g-py-12 g-px-25" href="{{site.baseurl}}/publications/author/{{ page.author | downcase | replace: ' ','-' }}/">All author posts</a>
                         </div>
                     </div>
                 </div>
