@@ -158,3 +158,18 @@ docker push codurance/website_deployment_base:latest
 ## Backstopjs
 
 We have some documentation for backstop [here](tools/snapshots/README.md)
+
+Backstopjs can be used to regression test websites. It does this by capturing screenshots of the two sites and comparing them.
+This is especially useful if you are refactoring css. 
+
+See the linked documents to show how to install.
+
+Once installed here are the commands to make it work:
+
+```
+backstop reference
+backstop test
+```
+
+The first captures a snapshot of the reference site (currently set to https://codurance.com)
+The second runs it against the local version of the site (locahost:4000) and compares the differences.
