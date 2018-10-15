@@ -38,6 +38,11 @@
                 <div id="js-publication-content">
                     {{ content }}
                 </div>
+
+                {% if page.canonical %}
+                <hr/>
+                <p class="cross-post"><a href="{{ page.canonical.href }}">This post was cross-posted to {{ page.canonical.name }}.</a></p>
+                {% endif %}
             </div>
         </div>
     </div>
