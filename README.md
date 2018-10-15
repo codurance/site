@@ -154,3 +154,7 @@ docker push codurance/website_build_base:latest
 
 docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
 docker push codurance/website_deployment_base:latest 
+
+## Backstopjs
+
+We have some documentation for backstop [here](tools/snapshots/README.md)
