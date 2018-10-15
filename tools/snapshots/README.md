@@ -33,18 +33,14 @@ Care needs to be taken when choosing pages to compare. Dynamically generated lis
 
 ## Using backstop for a docker container instead of local installation
 
-backstopjs provides a docker container that allows you 
+backstopjs provides a docker container that allows you to run without installing it. 
 
 Found here: https://blog.docksal.io/visual-regression-testing-with-backstopjs-in-a-docker-container-dfd1b9ae8582
 
-```
-docker run --rm -v $(pwd):/src backstopjs/backstopjs --version
-```
-
-You can add a shell alias (in .bashrc, .zshrc, etc.) for convenience:
+I have created three bash scripts to abstract the running of backstopjs without deploying it:
 
 ```
-alias backstop='docker run --rm -v $(pwd):/src docksal/backstopjs "$@"'
+docker-backstop-setup.sh
+docker-backstop-reference.sh
+docker-backtop-test.sh
 ```
-
-This will work exactly like a natively installed backstop.
