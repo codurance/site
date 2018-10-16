@@ -56,7 +56,7 @@ Run this if your container is broken.
 
     docker-compose down
 
-#####Problems in docker
+##### Problems in docker
 If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
 
 This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
