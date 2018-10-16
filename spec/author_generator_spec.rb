@@ -1,7 +1,6 @@
 require 'jekyll'
 require 'jekyll/tagging'
 require_relative '../src/_plugins/author_generator.rb'
-require 'test/unit'
 require 'date' 
 
 class TestFilters
@@ -17,6 +16,7 @@ class Config
 
 end
 
+# This is a horrible way to mock things, looking for a better solution.
 def method_missing(m, *args, &block)
   
   if (m == 'registers')
@@ -26,7 +26,7 @@ def method_missing(m, *args, &block)
 end  
 
 
-describe "AuthorGenerator" do
+describe 'AuthorGenerator' do
 
   let(:subject) { TestFilters.new }
 
@@ -36,6 +36,12 @@ describe "AuthorGenerator" do
      end 
   end
 
+  describe 'AuthorNameToPath lowercases and hyphenates' do
+    it 'can handle Harry Potter' do
+      expect( Jekyll::AuthorNameToPath.parse("Harry Potter")).to eq('harry-potter')
+    end
+  end  
+
 
   describe 'date_transform' do
     it 'correctly formats date' do
@@ -43,5 +49,24 @@ describe "AuthorGenerator" do
       expect(subject.date_to_html_string(date)).to eq('<span class="month">JUL</span> <span class="day">31</span> <span class="year">1980</span> ') 
     end
   end
+
+  describe 'author_links' do
+    it 'handles a null item' do
+      expect(subject.author_links(nil)).to eq("")
+    end
+
+    it 'handles an empty string' do
+      expect(subject.author_links("")).to eq("")
+    end
+
+    it 'handles a single element list' do
+      expect(subject.author_links('Harry Potter')).to eq("<a class='author' href='/authors/harry-potter/'>Harry Potter</a>")
+    end
+
+    it 'handles element list' do
+      expect(subject.author_links(['Harry Potter', 'Ron Weasley'])).to eq("<a class='author' href='/authors/harry-potter/'>Harry Potter</a>, <a class='author' href='/authors/ron-weasley/'>Ron Weasley</a>")
+    end
+
+  end  
 
 end

@@ -45,8 +45,6 @@ task :es do
 end
 
 task :test do
-  # ruby 'test/_plugins/author_generator_spec.rb'
-
   sh 'bundle exec rspec'
 end  
 

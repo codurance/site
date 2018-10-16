@@ -117,10 +117,14 @@ module Jekyll
                authors = [ authors ]
       end
       authors = authors.map do |author|
-        author_url = author_url(author)
-        "<a class='author' href='#{author_url}'>#{author}</a>"
+        if author == ""
+          "" 
+        else
+          author_url = author_url(author)
+          "<a class='author' href='#{author_url}'>#{author}</a>"
+        end
       end
-      case authors.length
+      case authors.length || 0
       when 0
         ""
       when 1
@@ -133,21 +137,9 @@ module Jekyll
     def author_url(author)
         basedir = @context.registers[:site].config['author_dir'] || "authors"
         baseurl = @context.registers[:site].config['baseurl']
-
-        # puts "Author_url called for #{author}"
-
         author_dir = AuthorNameToPath.parse(author)
 
-        # result = "#{baseurl}/#{basedir}/#{author_dir}/"
-
-        # AuthorNameToPath.log "Now author_url called with #{result}"
-
-        # result
-
-        author_dir
-
-
-        'https://example.com'
+        "#{baseurl}/#{basedir}/#{author_dir}/"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
@@ -166,16 +158,8 @@ module Jekyll
 
   module AuthorNameToPath
     def self.parse(name)
-
-        result = name.downcase.gsub(" ", "-")
-     #   puts "Author Name to path called for #{name} #{result}"
-
-        result
+        name.downcase.gsub(" ", "-")
     end
-
-    def log(msg)
-      puts msg
-    end  
   end
 
 end
