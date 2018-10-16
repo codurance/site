@@ -55,20 +55,6 @@ Destroy the container and all volumes for this project.
 Run this if your container is broken.
 
     docker-compose down
-
-##### Problems in docker
-If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
-
-This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
-
-This can be fixed with:
-
-```
-docker system prune -a
-```
-
-After this the next doxker operation will download the correct image.
-
 	
 ##### Notes for Windows users
 
@@ -92,7 +78,6 @@ is that you will have to run `docker-compose build`, `docker images` and `docker
 - `rvm use ruby`
 - `gem install bundler`
 - `bundle install`
-
 
 run locally:
 
@@ -131,6 +116,19 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 
 # Troubleshooting
+
+## Problems in docker
+If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
+
+This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
+
+This can be fixed with:
+
+```
+docker system prune -a
+```
+
+After this the next docker operation will download the correct image.
 
 ## Header files for ruby not found
 
