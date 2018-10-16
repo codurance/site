@@ -634,3 +634,14 @@
     <p>When he is not in front of the keyboard, he is playing guitar or reading some books.</p>
   twitter: bartomeugm
   github: bartomeugm
+
+- id: antonio_ruiz
+  name: Antonio Ruiz
+  image: /assets/custom/img/team/antonio_ruiz.jpg
+  role: Apprentice
+  fullDescription: 
+    <p>Toni made a change career and found the software development a true passion.</p>
+    <p>He loves learning about software craftmanship and collaborate with people that shares the same values and willing to learn.</p>
+    <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
+  twitter: __toniruiz
+  github: devtoni
