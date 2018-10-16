@@ -226,7 +226,7 @@ For a great comparison between the Classicist TDD (Chicago Style) and Outside-In
 
 For more about Outside-In Design, have a look at my [Interaction Driven Design (IDD) talk][4]. 
 
-For a full demonstration of Outside-In TDD, have a look at my [three part screen cast][7]. 
+For a full demonstration of Outside-In TDD, have a look at my three part screen cast: [Part 1][7], [Part 2][9], [Part 3][10]. 
 
 For a summary of the differences between Outside-In TDD and Classicist, have a look at this [blog post][1]. 
 
@@ -239,6 +239,8 @@ For a summary of the differences between Outside-In TDD and Classicist, have a l
 [6]: https://cleancoders.com/videos/comparativeDesign
 [7]: https://codurance.com/videos/2015-05-12-outside-in-tdd-part-1/
 [8]: https://codurance.com/2018/05/26/should-we-always-use-tdd-to-design/
+[9]: https://codurance.com/videos/2015-05-12-outside-in-tdd-part-2/
+[10]: https://codurance.com/videos/2015-05-12-outside-in-tdd-part-3/
 
 
 
