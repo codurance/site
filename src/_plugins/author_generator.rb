@@ -116,22 +116,15 @@ module Jekyll
       if String.try_convert(authors)
                authors = [ authors ]
       end
+
+      authors = authors.select {|item| item != ""} || []
+
       authors = authors.map do |author|
-        if author == ""
-          "" 
-        else
-          author_url = author_url(author)
-          "<a class='author' href='#{author_url}'>#{author}</a>"
-        end
+        author_url = author_url(author)
+        "<a class='author' href='#{author_url}'>#{author}</a>"  
       end
-      case authors.length || 0
-      when 0
-        ""
-      when 1
-        authors[0].to_s
-      else
-        "#{authors[0...-1].join(', ')}, #{authors[-1]}"
-      end
+
+      authors.join(', ')
     end
 
     def author_url(author)
