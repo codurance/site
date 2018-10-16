@@ -44,4 +44,8 @@ task :es do
   sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_es.yml --watch --incremental --limit_posts 3'
 end
 
+task :test do
+  sh 'bundle exec rspec'
+end  
+
 task :default => :servequick
