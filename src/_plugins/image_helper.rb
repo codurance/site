@@ -8,6 +8,7 @@ require 'open-uri'
 module Jekyll
 
   class ImageTag < Liquid::Tag
+
     @img = nil
     @alt = ""
 
@@ -28,7 +29,7 @@ module Jekyll
         end  
 
         if @img[0] == ("/")
-          @img = @context.registers[:site].config['baseurl'] + @img
+          @img = "#{context.registers[:site].config['baseurl']}#{@img}"
         end  
 
         "<p></p><img src=\"#{@img}\"  alt=\"#{@alt}\" title=\"#{@alt}\" class=\"img img-center img-fluid style-screengrab\">"

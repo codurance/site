@@ -2,7 +2,7 @@ require 'jekyll'
 require 'jekyll/tagging'
 require_relative '../../src/_plugins/image_helper.rb'
 
-class DummyImageConfig
+class DummyImageContext
   attr_reader :config
 
   def registers
@@ -31,9 +31,9 @@ describe 'ImageTag' do
 
       tag = Jekyll::ImageTag.send :new, 'img', '/assets/custom/img/blog/ncraft-2017/event-storming-with-brandolini.jpg "ALT"', token
 
-      tag.context = DummyImageConfig.new  
+      context = DummyImageContext.new  
 
-      expect(tag.render(nil)).to eq('<p></p><img src="baseurl/assets/custom/img/blog/ncraft-2017/event-storming-with-brandolini.jpg"  alt="ALT" title="ALT" class="img img-center img-fluid style-screengrab">')
+      expect(tag.render(context)).to eq('<p></p><img src="baseurl/assets/custom/img/blog/ncraft-2017/event-storming-with-brandolini.jpg"  alt="ALT" title="ALT" class="img img-center img-fluid style-screengrab">')
     end
 
     it 'Leaves non-relative images alone' do
@@ -51,9 +51,9 @@ describe 'ImageTag' do
         expect(token).to receive :line_number
   
         tag = Jekyll::ImageTag.send :new, 'img', 'baseurl/a-real-image.jpg ""', token
-        tag.context = DummyImageConfig.new  
+        context = DummyImageContext.new  
     
-        expect{tag.render(nil)}.to raise_error "Missing alt text: please describe the image for a blind user"
+        expect{tag.render(context)}.to raise_error "Missing alt text: please describe the image for a blind user"
     end
 
     it 'will throw an exception when an img is missing an alt tag' do
@@ -61,9 +61,9 @@ describe 'ImageTag' do
         expect(token).to receive :line_number
   
         tag = Jekyll::ImageTag.send :new, 'img', 'baseurl/a-real-image.jpg', token
-        tag.context = DummyImageConfig.new  
+        context = DummyImageContext.new  
     
-        expect{tag.render(nil)}.to raise_error "Missing alt text: please describe the image for a blind user"
+        expect{tag.render(context)}.to raise_error "Missing alt text: please describe the image for a blind user"
     end
 
 end    
