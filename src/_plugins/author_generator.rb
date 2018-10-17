@@ -96,9 +96,7 @@ module Jekyll
 
     def generate(site)
       site.write_author_indexes
-      #puts "site.authors #{site.authors}"
     end
-
   end
 
 
@@ -113,8 +111,12 @@ module Jekyll
     # Returns string
     #
     def author_links(authors)
+      if authors == nil
+        return ''
+      end  
+
       if String.try_convert(authors)
-               authors = [ authors ]
+        authors = [ authors ]
       end
 
       authors = authors.select {|item| item != ""} || []
