@@ -28,7 +28,7 @@ Good food always makes for a good conference (you guessed I'm french here).
 Developers are fun and keyboards are a good way to socialise.
 
 
-{% img /assets/custom/img/blog/ncraft-2017/bigdata-at-criteo.jpg "Fundamental Lessions: Know your dependencies, eliminate your dependency on the internet, use a cache" %}
+{% img /assets/custom/img/blog/ncraft-2017/bigdata-at-criteo.jpg "Fundamental Lessons: Know your dependencies, eliminate your dependency on the internet, use a cache" %}
 Big data can be so big [you DDOS yourself](http://ncrafts.io/speaker/SavarinAnna).
 
 
