@@ -12,7 +12,7 @@ tags:
 - functional programming
 ---
 
-# Higher-order functions I: Function composition & Monads.
+# Higher-order functions I: Function composition and the Monad pattern.
 
 ### What is a higher-order function?
 
