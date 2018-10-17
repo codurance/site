@@ -126,16 +126,15 @@ In this code, an email object is created, then the sender, recipient and subject
 But we can design things so that it becomes impossible to do things out of order:
 
 ```
-email = emailBuilder()
-    .sender("walter@example.com")
-    .addRecipient("thedude@example.com")
-    .subject("Proposal")
-    .body("Let's go bowling")
-    .build()
-mailer.send(email)
+mailer.send(emailBuilder()
+        .sender("walter@example.com")
+        .addRecipient("thedude@example.com")
+        .subject("Proposal")
+        .body("Let's go bowling")
+        .build())
 ```
 
-You need an email object to pass to `mailer.send` so we make it so that the only way to create one and set it up is to use the builder. We remove all setter methods on the email class so that impossible to modify anything to the email after it has been built. Therefore the object that is passed to `mailer.send` is guaranteed not to be tampered with afterwards. The builder pattern seen above is a very common way to turn imperative operations into composable functions. You can use it to wrap things that aren’t in the functional style and make them seem like they are.
+Since we need an email object to pass to `mailer.send`, we make it so that the only way to create one and set it up is to use the builder. We remove all setter methods on the email class so that impossible to modify anything to the email after it has been built. Therefore the object that is passed to `mailer.send` is guaranteed not to be tampered with afterwards. The builder pattern seen above is a very common way to turn imperative operations into composable functions. You can use it to wrap things that aren’t in the functional style and make them seem like they are.
 
 ### The dread Monad.
 
@@ -319,7 +318,7 @@ Some of the lambdas could be replaced with method references but I left them as 
 
 ### So what about the monad...?
 
-I mentioned the dread word “monad” earlier, and you've probably guessed that `MaybeValid` is one, otherwise I wouldn’t have brought it up. So what _is_ a monad exactly? You may possibly have heard the word in the context of a “monadic function” - this is a completely different usage. It means a function with one argument (a function with two arguments is dyadic, and one with three arguments is triadic, etc.); this usage originated in APL and it has nothing to do with what we're talking about here. The monad we are talking about here is a design pattern.
+I mentioned the dread word “monad” earlier, and you've probably guessed that `MaybeValid` is one, otherwise I wouldn’t have brought it up. So what _is_ a monad exactly? First we need to clear one thing up, because you may have heard the word in the context of a “monadic function” - this is a completely different usage. It means a function with one argument (a function with two arguments is dyadic, and one with three arguments is triadic, etc.); this usage originated in APL and it has nothing to do with what we're talking about here. The monad we are talking about is a design pattern.
 
 Doubtless you are already familiar with design patterns. The ones you already know, like Strategy, Command, Visitor etc. are all object-oriented design patterns. Monad is a functional design pattern. The Monad pattern defines what it means to chain operations together, enabling the programmer to build pipelines that process data in a series of steps, just like we have above:
 
@@ -352,7 +351,7 @@ If you first came across the Monad pattern while learning Haskell, then most lik
 
 In my view, a Monad wraps a typed value (of any type) and maintains some additional state separately from the type of the wrapped value. We have seen two examples here. In the case of the `Optional` monad, the additional state is whether or not the value is present. In the case of the `MaybeValid` monad, it is whether or not the value is valid, plus a validation error in the case that it is not. Notice that there are _two_ types here: the monadic type (e.g. `Optional`) and the wrapped type.
 
-You can supply the Monad with a function that operates on the encapsulated value. Whatever the type is of the wrapped value, the function's argument must match it. The Monad will pass its wrapped value to the function and will yield a new Monad, of the same monadic type, encapsulating the value returned by function. This is called a "binding operation". The encapsulated type of the new Monad may be different and that is fine. For example, if you have an `Optional` wrapping a `Date`, you may bind a function that maps a `Date` to a `String` and the result will be an `Optional` wrapping a `String`. If there is some additional functionality associated with the Monad's additional state, the Monad handles it as part of the binding operation. For example, when you pass a function to an empty `Optional`, the function will not executed; the result is another empty `Optional`. In this way, you can call a chain of composed functions in sequence, morphing from type to type, all within the context of the Monad.
+You can supply the Monad with a function that operates on the encapsulated value. Whatever the type is of the wrapped value, the function's argument must match it. The Monad will pass its wrapped value to the function and will yield a new Monad, of the same monadic type, encapsulating the value returned by function. This is called a “binding operation”. The encapsulated type of the new Monad may be different and that is fine. For example, if you have an `Optional` wrapping a `Date`, you may bind a function that maps a `Date` to a `String` and the result will be an `Optional` wrapping a `String`. If there is some additional functionality associated with the Monad's additional state, the Monad handles it as part of the binding operation. For example, when you pass a function to an empty `Optional`, the function will not executed; the result is another empty `Optional`. In this way, you can call a chain of composed functions in sequence, morphing from type to type, all within the context of the Monad.
 
 Finally, the Monad provides a means for you to handle the value, taking account of the additional monadic state, in whatever the appropriate manner is given the context of your program. The appropriate behaviour is, naturally, handled using first-class functions. The other functions used in the binding operations are thus decoupled from the additional state maintained in the Monad and freed from all responsibility for dealing with it.
 
