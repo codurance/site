@@ -30,7 +30,7 @@ private Predicate<Integer> notInNonPrimesUpTo(int limit) {
 }
 ```
 
-That function is returning a `Predicate`. A predicate is a function that yields a boolean value. This means that `notInNonPrimesUpTo` a higher-order function: it builds the sieve and yields a function that tests whether a number is within the sieve or not.
+That function is returning a `Predicate`. A predicate is a function that yields a boolean value. This means that `notInNonPrimesUpTo` is a higher-order function: it builds the sieve and yields a function that tests whether a number is within the sieve or not.
 
 We’ve seen other examples too. Do you remember `map` from part three? It takes a function and applies it to all the elements in an array, yielding another array. `map` is a higher-order function. So is `filter` because it takes a predicate, tests it on every element of an array, and uses the result of the predicate to decide whether to keep the element or discard it. `qsort` is a higher-order function too, because it takes a comparator function and uses it to determine the order of any two elements in the array, without knowing the types of the elements. So the previous article was full of higher-order functions, and you shouldn't be intimidated by the term. It does not mean anything rarified or exalted. You are almost certainly using some kind of higher-order functions regularly in your work. In fact, first-class functions are useless without higher-order functions to pass them into or return them from.
 
