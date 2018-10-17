@@ -55,7 +55,6 @@ Destroy the container and all volumes for this project.
 Run this if your container is broken.
 
     docker-compose down
-
 	
 ##### Notes for Windows users
 
@@ -79,7 +78,6 @@ is that you will have to run `docker-compose build`, `docker images` and `docker
 - `rvm use ruby`
 - `gem install bundler`
 - `bundle install`
-
 
 run locally:
 
@@ -119,6 +117,19 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 # Troubleshooting
 
+## Problems in docker
+If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
+
+This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
+
+This can be fixed with:
+
+```
+docker system prune -a
+```
+
+After this the next docker operation will download the correct image.
+
 ## Header files for ruby not found
 
 This problem happens with Linux systems:
@@ -154,3 +165,22 @@ docker push codurance/website_build_base:latest
 
 docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
 docker push codurance/website_deployment_base:latest 
+
+## Backstopjs
+
+We have some documentation for backstop [here](tools/snapshots/README.md)
+
+Backstopjs can be used to regression test websites. It does this by capturing screenshots of the two sites and comparing them.
+This is especially useful if you are refactoring css. 
+
+See the linked documents to show how to install.
+
+Once installed here are the commands to make it work:
+
+```
+backstop reference
+backstop test
+```
+
+The first captures a snapshot of the reference site (currently set to https://codurance.com)
+The second runs it against the local version of the site (locahost:4000) and compares the differences.
