@@ -58,7 +58,7 @@ There was a lot of work to do in my case.
 My mentor and I agreed on a strategy for learning; with test driven development as the main goal.
 We did set up a work plan for each week, and reviewed my progress weekly. The usual workload was roughly as: TDD katas in C# every week, in javascript every other week; reading a number of chapters of various books every week, studying a cloud design pattern and when possible implementing it; one blog post every two weeks (I did not always made this one); do a lightning talk every fortnight at the Codurance catch ups. 
 
-{% img /assets/custom/img/blog/my-first-year-at-codurance/a_typical_work_week.png "" %}
+{% img /assets/custom/img/blog/my-first-year-at-codurance/a_typical_work_week.png "Trello Board showing an apprenticeship week" %}
 
 Each week, after his day of work at the client, Alex would come to the Codurance office and spend an evening of about 3 hours or more and sit with me, reviewing my learnings asking questions, answering mines, and pair programming with me.
 <br/>

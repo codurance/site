@@ -23,6 +23,10 @@ module Jekyll
 
     def render(context)
       if @img
+        if (@alt || "") == "" 
+          raise "Missing alt text: please describe the image for a blind user"
+        end  
+        
         "<p></p><img src=\"#{@img}\"  alt=\"#{@alt}\" title=\"#{@alt}\" class=\"img img-center img-fluid style-screengrab\">"
       end
       

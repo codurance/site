@@ -17,18 +17,18 @@ It was full of fun, socialising and learning.
 
 Here are some of my takeways of those three days of awesomeness:
 
-{% img /assets/custom/img/blog/ncraft-2017/event-storming-with-brandolini.jpg "" %}
+{% img /assets/custom/img/blog/ncraft-2017/event-storming-with-brandolini.jpg "Alberto Brandolini adding a post-it to a wall covered in post-its" %}
 "If you have an event driven architecture, the gap between post-its (resulting from the event storming session) and the code should be small". [Alberto Brandolini](http://twitter.com/ziobrando).
 
-{% img /assets/custom/img/blog/ncraft-2017/ncraft-buffet.jpg "" %}
+{% img /assets/custom/img/blog/ncraft-2017/ncraft-buffet.jpg "Food buffet at NCrafts" %}
 Good food always makes for a good conference (you guessed I'm french here).
 
 
-{% img /assets/custom/img/blog/ncraft-2017/customised-keyboard.jpg "" %}
+{% img /assets/custom/img/blog/ncraft-2017/customised-keyboard.jpg "A custom built keyboard - including android, apple and DON'T PANIC keys" %}
 Developers are fun and keyboards are a good way to socialise.
 
 
-{% img /assets/custom/img/blog/ncraft-2017/bigdata-at-criteo.jpg "" %}
+{% img /assets/custom/img/blog/ncraft-2017/bigdata-at-criteo.jpg "Fundamental Lessions: Know your dependencies, eliminate your dependency on the internet, use a cache" %}
 Big data can be so big [you DDOS yourself](http://ncrafts.io/speaker/SavarinAnna).
 
 
