@@ -16,7 +16,7 @@ tags:
 
 ### What is a higher-order function?
 
-In the previous article we saw several examples of functions as first-class citizens and some of the kinds of uses they can be put to. Just to recap, a function is a first-class citizen when it is as a value in its own right, and can be passed around just like any other type of value. 
+In the previous article we saw several examples of functions as first-class citizens and some of the kinds of uses they can be put to. Just to recap, a function is a first-class citizen when it is a value in its own right, and can be passed around a program just like any other type of value. 
 
 Now, when a function accepts another function as its argument, or it yields another function as its return value - or both - it is said to be a _higher-order function_. We actually already saw an example in the previous article, if you recall the Sieve of Eratosthenes exercise, which had this function in it:
 
@@ -36,7 +36,7 @@ We’ve seen other examples too. Do you remember `map` from part 3? It takes a f
 
 ### Function composition.
 
-You'll hear about this a lot in the functional programming world. To compose two functions means to arrange them so that the result of one function is applied directly as the input of the other function. Your code is probably full of examples of this, but if the code is not structured so as to highlight this fact then you may not always notice. Functional programmers are always alert to notice when functions are arranged this way, and they typically consider the two composed functions as a third function in its own right. Let me explain what I mean by that.
+You'll hear about this a lot in the functional programming world. To compose two functions means to arrange them so that the result of one function is applied directly as the input of the other function. Your code is probably full of examples of this, but if the code is not structured so as to highlight this fact then you may not always notice. Functional programmers are always alert to notice when functions are arranged this way, because it allows the possibility of certain programming structures, which we will come to shortly. Programmers steeped in the functional style often find it useful to consider two composed functions as a third function in its own right. Let me explain what I mean by that.
 
 <p>Say you have a function <span style="font-family: Georgia, serif; font-size: 1.2em; font-style: italic">f</span> that takes a value <span style="font-family: Georgia, serif; font-size: 1.2em; font-weight: bold">x</span> as its argument and returns a value <span style="font-family: Georgia, serif; font-size: 1.2em; font-weight: bold">y</span> :</p>
 
@@ -74,7 +74,7 @@ Functional programming devotees tend to view function composition this way. Pers
 
 other than that the first example is slightly more concise. FP devotees like to wax lyrical about the power of function composition, while my own outlook is rather more prosaic.
 
-### Plumbing.
+### Function composition as plumbing.
 
 The idea of composing functions together is not novel. In 1964, Doug McIlroy wrote this in a memo:
 
@@ -103,7 +103,7 @@ Replace “programs” with “functions” and you have the principle of compos
 
 ### Connascence of execution.
 
-So, I think the value of writing functions that “do one thing and do it well” pretty much self-evident, but it might not be clear yet why it is a good idea to write functions to be composable, i.e. work together. You may have heard of [connascence](http://connascence.io/). Connascence is a way of describing things that are coupled to each other in various kinds of ways. There are many different types of connascence, including:
+So, I think the value of writing functions that “do one thing and do it well” pretty much self-evident, but it might not be clear yet why it is a good idea to write functions to be composable, i.e. to work together. You may have heard of [connascence](http://connascence.io/). Connascence is a way of describing things that are coupled to each other in various kinds of ways. There are many different types of connascence, including:
 
 - Connascence of name - if the name of a thing is changed, other things must be renamed to match or the program will break. Usually function calls work by connascence of name. Modern refactoring IDEs can help you when renaming things by automatically updating all the other names that need to be changed to match.
 - Connascence of type - two or more things must have the same type. In statically-typed languages this can usually be enforced by the compiler, but if you’re working in a dynamically typed language then you must take care to match up types by yourself.
@@ -139,7 +139,7 @@ You need an email object to pass to `mailer.send` so we make it so that the only
 
 ### The dread Monad.
 
-When I first envisaged this series of articles, I thought I was not going to mention monads at all, but as it developed I realised that any discussion of the functional style would be incomplete without them. What's more, they turn up sometimes without announcing themselves. I personally have found other explanations of the Monad to be quite unhelpful, and I believe this is why they have got their reputation for being hard to understand. I will try to explain it here in terms of code, which I hope will convey the concept clearly enough. As always, I have an example to illustrate the point with, this time it is a little Java project that I use to try out ideas on. It implements a simple webservice API comprising a set of endpoints that pretend to serve a library. You can search for books with it, view their details, borrow and return them, etc. There is an endpoint to retrieve a book by its ISBN number, and its implementation looks like this:
+When I first envisaged this series of articles, I thought I was not going to mention monads at all, but as it developed I realised that any discussion of the functional style would be incomplete without them. Moreover, Monads turn up sometimes without announcing themselves. I struggled for a long time to understand the Monad, and the explanations I found were quite unhelpful, and I believe this is why they have got their reputation for being hard to understand. I will try to explain it here in terms of code, which I hope will convey the concept clearly enough. As always, I have an example to illustrate the point with; it is a little Java project that I use to try out ideas on, which implements a simple webservice API comprising a set of endpoints that pretend to serve a library. You can search for books with it, view their details, borrow and return them, etc. There is an endpoint to retrieve a book by its ISBN number, and its implementation looks like this:
 
 ```java
 public LibraryResponse findBookByIsbn(Request request) {
@@ -162,7 +162,7 @@ I deliberately messed up this code a little for our purposes here - though it's 
 
 Exceptions bring their own evil with them, being essentially gotos in disguise, but worse still, only one of the exception handlers here is handling genuinely exceptional behaviour. The other is handling part of the API's specified behaviour. We'll come back to that in a moment.
 
-Now, we don’t need to go into the details of the web framework being used here (it’s spark-java); suffice to say that all web frameworks can be configured to trap unhandled exceptions and return a preconfigured HTTP response when they happen. Different responses can be mapped to different exception classes: it would be appropriate to return the HTTP 500 response when a top-level `Exception` is thrown, so we can remove that `catch` block from the `findBookByIsbn` method.
+Now, we don’t need to go into the details of the web framework being used here (it’s [spark-java](http://sparkjava.com/)); suffice to say that all web frameworks can be configured to trap unhandled exceptions and return a preconfigured HTTP response when they happen. Different responses can be mapped to different exception classes: it would be appropriate to return the HTTP 500 response when a top-level `Exception` is thrown, so we can remove that `catch` block from the `findBookByIsbn` method.
 
 On the other hand, the 400 response “ISBN is not valid” is due to invalid input from the client and is very much part of the specified API behaviour. The `isbnFromPath` method is throwing an `IllegalArgumentException` when the parameter value from the client does not match the right format for an ISBN number. This is what I meant by a disguised GOTO; it obscures the logic because it is not immediately obvious where the exception is coming from.
 
@@ -174,7 +174,7 @@ Book findBookByIsbn(Isbn isbn) {
 }
 ```
 
-This makes things even worse! Now we’re throwing an exception which causes the framework to return an HTTP 404 response, which is not evident at all in the endpoint implementation.
+This makes things even worse! Here we're making use of a framework feature by which an exception encodes an HTTP 404 response within it. This is important control flow that is completely obscured in the endpoint implementation.
 
 So what can we do about it? We _could_ improve things by creating specific exception types for the different outcomes, but we would still be using exceptions as a means of control flow. Alternatively, we could rewrite the code not to depend on exceptions at all:
 
@@ -196,9 +196,9 @@ public LibraryResponse findBookByIsbn(Request request) {
 }
 ```
 
-At least all the different execution paths are now present in the method, but this code is hardly great either. A better solution is hinted at in there, though, by `findBookByIsbn` which has been modified now to return an `Optional<Book>`. That `Optional` type speaks something to us: it says that it may or may not return a book and that we must handle both eventualities. What we need is a way to make it similarly explicit that `findBookByIsbn` will return _either_ a valid ISBN number _or_ some kind of invalid request error.
+At least all the different execution paths are now present in the method. This code is hardly great either, although a better solution is hinted at in there by the `findBookByIsbn` method which has been modified now to return an `Optional<Book>`. That `Optional` type speaks something to us: it says that it may or may not return a book and that we must handle both eventualities, although Optional can be used far more neatly than it is there. What we need is a way to make it similarly explicit that `findBookByIsbn` will return _either_ a valid ISBN number _or_ some kind of invalid request error.
 
-In Haskell there is the `Either` type that lets you do exactly that, and it is frequently used for error handling. `Either` values may be either `Left` or `Right` and the programmer must deal with both. Conventionally, the `Left` constructor is used for indicating an error and the `Right` constructor for wrapping a non-erroneous value. Personally I’m not a fan of the use of “left” and “right” in this way: those words only have meaning to me in terms of spatial orientation. Anyway, Java has its own stereotyped construct for building this kind of thing, which has been established by the `Stream` and `Optional` classes. We could create a `MaybeValid` type to wrap values that may be valid or not, and by designing it to resemble the aforementioned built-in types we could cause the least astonishment:
+In Haskell there is the `Either` type that lets you do exactly that, and it is frequently used for error handling. `Either` values may be either `Left` or `Right` and the programmer must deal with both. Conventionally, the `Left` constructor is used for indicating an error and the `Right` constructor for wrapping a non-erroneous value. Personally I’m not a fan of the use of “left” and “right” in this way: those words only have meaning to me in terms of spatial orientation. Anyway, Java has its own stereotypical construction for this kind of thing, which has been established by the `Stream` and `Optional` classes. We could create a `MaybeValid` type to wrap values that may be valid or not, and by designing it to resemble the aforementioned built-in types we could cause the least astonishment:
 
 ```java
 interface MaybeValid<T> {
@@ -273,7 +273,7 @@ public class Invalid<T> implements MaybeValid<T> {
 
 The crucial differences are:
 
-- The `map` and `flatMap` methods do not execute the mapping functions; they simply return another `InvalidRequest` instance. The reason they have to create a new instance is because the wrapped type might have changed (`U` instead of `T`).
+- The `map` and `flatMap` methods do not execute the mapping functions; they simply return another `InvalidRequest` instance. The reason they have to create a new instance is because the wrapped type might change (from `T` to `U`).
 - The terminating `ifInvalid` method uses the `defaultValueProvider` function to supply the return value.
 - The default value provider is provided with the request error as its argument in case it needs it in order to return the appropriate result.
 
@@ -298,7 +298,7 @@ MaybeValid<Book> maybeValidBook(Isbn isbn) {
 }
 ```
 
-Notice that the invalid paths contain HTTP status codes in them, therefore this code _must_ live in the application component that is dealing with HTTP requests and responses. It would be inappropriate for it to live anywhere else.
+Please note that `RequestError` is _not_ an exception; it does, however, contain an HTTP status code, therefore this code _must_ live in the application component that is dealing with HTTP requests and responses. It would be inappropriate for it to live anywhere else: in a service class, for example.
 
 Now we can rewrite the endpoint like this:
 
@@ -313,13 +313,13 @@ public LibraryResponse findBookByIsbn(Request request) {
 }
 ```
 
-Some of the lambdas could be replaced with method references but I left them as they are to bear the closest resemblance to the original code. There are other possibilities for further refactoring too. But notice how it reads clearly now as a sequence of chained operations. This is possible because the original was a indeed chain of composable functions: the return value from each function was passed as the sole argument to the next. The use of higher-order functions has allowed us to encapsulate the logic pertaining to validation errors inside the `MaybeInvalid` subtypes. In the library service there are several endpoints with requirements similar to this and `MaybeInvalid` can be used to simplify all of them.
+Some of the lambdas could be replaced with method references but I left them as they are to bear the closest resemblance to the original code. There are other possibilities for further refactoring too. But notice how it reads clearly now as a sequence of chained operations. This is possible because the original was a indeed chain of composable functions: the return value from each function was passed as the sole argument to the next. The use of higher-order functions has allowed us to encapsulate the logic pertaining to validation errors inside the `MaybeValid` subtypes. In the library service there are several endpoints with requirements similar to this and the `MaybeValid` class could be used to simplify all of them.
 
-### So about the monad...?
+### So what about the monad...?
 
-I mentioned the dread word “monad” earlier, and you've probably guessed that `MaybeValid` is one, otherwise I wouldn’t have brought it up. So what _is_ a monad exactly? You may possibly have heard the word in the context of a “monadic function”: this is a completely different usage. It means a function with one argument; (a function with two arguments is dyadic, and one with three arguments is triadic, etc.) this usage originated in APL and it has nothing to do with what we're talking about here. The monad we are talking about here is a design pattern.
+I mentioned the dread word “monad” earlier, and you've probably guessed that `MaybeValid` is one, otherwise I wouldn’t have brought it up. So what _is_ a monad exactly? You may possibly have heard the word in the context of a “monadic function” - this is a completely different usage. It means a function with one argument (a function with two arguments is dyadic, and one with three arguments is triadic, etc.); this usage originated in APL and it has nothing to do with what we're talking about here. The monad we are talking about here is a design pattern.
 
-Doubtless you are already familiar with design patterns. The ones you already know, like Strategy, Command, Visitor etc. are all object-oriented design patterns. Monad is a functional design pattern. The monad pattern defines what it means to chain operations together, enabling the programmer to build pipelines that process data in a series of steps, just like we have above:
+Doubtless you are already familiar with design patterns. The ones you already know, like Strategy, Command, Visitor etc. are all object-oriented design patterns. Monad is a functional design pattern. The Monad pattern defines what it means to chain operations together, enabling the programmer to build pipelines that process data in a series of steps, just like we have above:
 
 1. Retrieve the ISBN number from the request (may be invalid, i.e. wrong format).
 1. Look up the book by its ISBN number (may be invalid, i.e. not found).
@@ -334,6 +334,8 @@ Each step may be ‘decorated’ with the additional processing rules provided b
 
 The terminating operation `ifInvalid` makes the final decision about what to return: it returns the wrapped value if it is valid, otherwise it uses the supplied default value provider to build a suitable response from the client request error.
 
+### A formal definition.
+
 More formally, the monad pattern is usually defined as an assemblage of the following three components, which together are known as a _kleisi triple:_
 
 - A _type constructor_ that maps every possible type to its corresponding monadic type. This wording does not make much sense in Java. To understand it, think of generic types, e.g: `Isbn` → `MaybeValid<Isbn>`.
@@ -344,11 +346,11 @@ If you have these three components, you have a monad.
 
 ### I heard Monads are all about encapsulating side-effects.
 
-If you first came across the Monad pattern while learning Haskell, then most likely you would have learnt about it in the shape of the I/O Monad. The Haskell tutorial on I/O literally advises you not to worry about the Monad part for now, that you don't need to understand it in order to do I/O. Personally, that would just have the effect of making me worry more. Probably because of this, people who learn Haskell think that the purpose of a Monad is to encapsulate side-effects such as I/O. I'm not going to disagree, I cannot comment on that, but personally I do not understand the Monad pattern that way.
+If you first came across the Monad pattern while learning Haskell, then most likely you would have learnt about it in the shape of the I/O Monad. The Haskell tutorial on I/O literally advises you not to worry about the Monad part for now, that you don't need to understand it in order to do I/O. Personally, that would just have the effect of making me worry more. Probably because of this, people who learn Haskell think that the purpose of a Monad is to encapsulate side-effects such as I/O. I'm not going to disagree, I cannot comment on that, but I have not come to understand the Monad pattern that way.
 
-In my view, a Monad wraps a typed value (of any type) and maintains some additional state separately from the type of the wrapped value. We have seen two examples here. In the case of the `Optional` monad, the additional state is whether or not the value is present. In the case of the `MaybeValid` monad, it is whether or not the value is valid, plus a validation error in the case that it is not.
+In my view, a Monad wraps a typed value (of any type) and maintains some additional state separately from the type of the wrapped value. We have seen two examples here. In the case of the `Optional` monad, the additional state is whether or not the value is present. In the case of the `MaybeValid` monad, it is whether or not the value is valid, plus a validation error in the case that it is not. Notice that there are _two_ types here: the monadic type (e.g. `Optional`) and the wrapped type.
 
-You can supply the Monad with a function that operates on the encapsulated value. Whatever the type is of the wrapped value, the function's argument must match it. The Monad will call the function and yield a similar Monad encapsulating the value returned by function. This is called "binding". The encapsulated type of the new Monad may be different and that is fine. For example, if you have an `Optional` wrapping a `Date`, you may pass it a function that maps a `Date` to a `String` and the result will be an `Optional` wrapping a `String`. If there is some additional functionality associated with the Monad's additional state, the Monad takes care of it as part of the binding operation. For example, when you pass a function to an empty `Optional`, the function will not executed; the result is another empty `Optional`. In this way, you can call a chain of composed functions in sequence, morphing from type to type, all in the context of the Monad.
+You can supply the Monad with a function that operates on the encapsulated value. Whatever the type is of the wrapped value, the function's argument must match it. The Monad will pass its wrapped value to the function and will yield a new Monad, of the same monadic type, encapsulating the value returned by function. This is called a "binding operation". The encapsulated type of the new Monad may be different and that is fine. For example, if you have an `Optional` wrapping a `Date`, you may bind a function that maps a `Date` to a `String` and the result will be an `Optional` wrapping a `String`. If there is some additional functionality associated with the Monad's additional state, the Monad handles it as part of the binding operation. For example, when you pass a function to an empty `Optional`, the function will not executed; the result is another empty `Optional`. In this way, you can call a chain of composed functions in sequence, morphing from type to type, all within the context of the Monad.
 
 Finally, the Monad provides a means for you to handle the value, taking account of the additional monadic state, in whatever the appropriate manner is given the context of your program. The appropriate behaviour is, naturally, handled using first-class functions. The other functions used in the binding operations are thus decoupled from the additional state maintained in the Monad and freed from all responsibility for dealing with it.
 
