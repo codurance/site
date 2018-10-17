@@ -121,7 +121,7 @@ mailer.send(email)
 email.body("Let's go bowling")
 ```
 
-In this code, it creates an email object, then sets the sender, recipient and subject, and sends it. _After_ it has sent the email, it then sets the email body. Almost certainly this is wrong, and the likely outcome is the email will be sent with an empty body. An outcome that is slightly less likely, but cannot be ruled out, is that an error might occur because setting the body on the email after it has been sent is an invalid thing to do.
+In this code, an email object is created, then the sender, recipient and subject are set, then the email is sent. _After_ the email has been sent, it then sets the email body. Almost certainly this is wrong, and the likely outcome is the email will be sent with an empty body. Slightly less likely, but an outcome that cannot be ruled out, is that setting the body on the email after it has been sent might cause an error. Either way it is bad.
 
 But we can design things so that it becomes impossible to do things out of order:
 
