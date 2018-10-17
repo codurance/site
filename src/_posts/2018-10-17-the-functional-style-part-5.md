@@ -200,7 +200,7 @@ At least all the different execution paths are now present in the method. This c
 
 ### Maybe it's valid, maybe it isn't.
 
-In Haskell there is the `Either` type that lets you do exactly that, and it is frequently used for error handling. `Either` values may be either `Left` or `Right` and the programmer must deal with both. Conventionally, the `Left` constructor is used for indicating an error and the `Right` constructor for wrapping a non-erroneous value. Personally I’m not a fan of the use of “left” and “right” in this way: those words only have meaning to me in terms of spatial orientation. Anyway, Java has its own stereotypical construction for this kind of thing, which has been established by the `Stream` and `Optional` classes. We could create a `MaybeValid` type to wrap values that may be valid or not, and by designing it to resemble the aforementioned built-in types we could cause the least astonishment:
+In Haskell there is the `Either` type that lets you do exactly that, and it is frequently used for error handling. `Either` values may be either `Left` or `Right` and the programmer must deal with both. Conventionally, the `Left` constructor is used for indicating an error and the `Right` constructor for wrapping a non-erroneous value. Personally I’m not a fan of the use of “left” and “right” in this way: those words only have meaning to me in terms of spatial orientation. Anyway, Java has its own stereotypical construction for this kind of thing, which has been established by the `Stream` and `Optional` classes. We could create a `MaybeValid` type to wrap values that may be valid or not, and by designing it to resemble the built-in types we could cause the least astonishment:
 
 ```java
 interface MaybeValid<T> {
