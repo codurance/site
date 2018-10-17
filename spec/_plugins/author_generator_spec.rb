@@ -8,12 +8,12 @@ class TestFilters
   include Jekyll::Filters
 
   def initialize()
-    @context = DummyConfig.new
+    @context = DummyAuthorGeneratorConfig.new
   end
 
 end 
 
-class DummyConfig
+class DummyAuthorGeneratorConfig
   attr_reader :config
 
   def registers

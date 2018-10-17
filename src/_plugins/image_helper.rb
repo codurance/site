@@ -26,7 +26,11 @@ module Jekyll
         if (@alt || "") == "" 
           raise "Missing alt text: please describe the image for a blind user"
         end  
-        
+
+        if @img[0] == ("/")
+          @img = @context.registers[:site].config['baseurl'] + @img
+        end  
+
         "<p></p><img src=\"#{@img}\"  alt=\"#{@alt}\" title=\"#{@alt}\" class=\"img img-center img-fluid style-screengrab\">"
       end
       
