@@ -1,6 +1,6 @@
 require 'jekyll'
 require 'jekyll/tagging'
-require_relative '../src/_plugins/author_generator.rb'
+require_relative '../../src/_plugins/author_generator.rb'
 require 'date' 
 
 
@@ -8,12 +8,12 @@ class TestFilters
   include Jekyll::Filters
 
   def initialize()
-    @context = DummyConfig.new
+    @context = DummyAuthorGeneratorConfig.new
   end
 
 end 
 
-class DummyConfig
+class DummyAuthorGeneratorConfig
   attr_reader :config
 
   def registers
@@ -21,20 +21,16 @@ class DummyConfig
   end  
 
   def config
-    self
+    { 
+      'author_dir' => 'author_dir', 
+      'baseurl' => 'baseurl' 
+    }
   end  
 
-  def [](a)
-    if a == nil
-      return ''
-    end
-    a
-  end  
 end
 
 
 describe 'AuthorGenerator' do
-
 
   let(:subject) { TestFilters.new }
 
@@ -82,6 +78,18 @@ describe 'AuthorGenerator' do
       expect(subject.author_links(['Harry Potter', '', 'Ron Weasley'])).to eq("<a class='author' href='baseurl/author_dir/harry-potter/'>Harry Potter</a>, <a class='author' href='baseurl/author_dir/ron-weasley/'>Ron Weasley</a>")
     end
 
-  end  
+  end
+  
+  describe "Generate Authors" do
+    
+    it 'Generate calls write_author_indexes' do
+      site = double  
+      expect(site).to receive :write_author_indexes
+      
+      genAuthor = Jekyll::GenerateAuthor.new
+      genAuthor.generate(site)
+    end
 
+  end
+  
 end
