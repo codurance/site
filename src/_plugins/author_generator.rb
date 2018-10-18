@@ -68,6 +68,7 @@ module Jekyll
 
     # Loops through the list of author pages and processes each one.
     def write_author_indexes
+      seen_author = []
       if self.layouts.key? 'author_index'
         dir = self.config['author_dir'] || 'authors'
         (self.posts.docs + self.collections['videos'].docs).each do |post|
@@ -77,7 +78,11 @@ module Jekyll
           end
           post_authors.each do |author|
             author_dir = AuthorNameToPath.parse(author)
-            self.write_author_index(File.join(dir, author_dir), author)
+            #Only do this once per author, otherwise overwriting files and duplicating index
+            if !seen_author.include?(author)
+              self.write_author_index(File.join(dir, author_dir), author)
+              seen_author << author
+            end
           end
         end
       # Throw an exception if the layout couldn't be found.
