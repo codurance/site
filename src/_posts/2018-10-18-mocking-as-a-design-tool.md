@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: mocking-as-a-design-tool
 title: Mocking as a Design Tool
-date: 2018-10-16 00:05:00 +00:00
+date: 2018-10-18 00:05:00 +00:00
 author: Sandro Mancuso
 description: Mocking as a design tool.
 image:
-   src: /assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/01-association.png
+   src: /assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/01-association.png
 tags:
 - tdd
 - design
@@ -29,10 +29,10 @@ However, when building systems with a complex domain, where business flows are n
 Let's look at the relationship between modules A, B and C. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/01-association.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/01-association.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
-	
+
 **Association**
 
 The diagram above describes that A is _associated_ with B and C. By the direction of the association we can say that A uses B and C but B and C do not know A. 
@@ -42,7 +42,7 @@ But are B and C _part_ of A or just _used_ by A?
 **Composition**
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/02-composition.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/02-composition.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 	
@@ -51,7 +51,7 @@ The diagram above describes that B and C are _part_ of A, that means, their life
 **Aggregation**
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/03-aggregation.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/03-aggregation.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 	
@@ -120,7 +120,7 @@ Mocking as a design tool makes more sense when using [Outside-In TDD (London Sch
 Let's say we will have an endpoint called `PaymentsAPI` that will parse the JSON received via HTTP request, will call the _main flow_, and will return the HTTP code and confirmation JSON to the frontend app. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/04-delivery-mechanism.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/04-delivery-mechanism.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -129,7 +129,7 @@ Now we need to define the domain module that is going to be called by the `Payme
 If you follow the [Clean Architecture][2], [Domain Driven Design][3], or [Interaction Driven Design][4], we will need a module that will orchestrate the business flow. This module plays the role of a Use Case (Clean Architecture), Application Service (DDD) or Action (IDD). I'll use the IDD naming and call it `CheckoutAction`.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/05-mock-action.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/05-mock-action.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -144,7 +144,7 @@ Now that we know that the `CheckoutAction` is the entry point to our domain mode
 When looking at the logic related to payments, orders, delivery or notification, how do they relate to the `CheckoutAction`? 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/06-checkout-relation-question.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/06-checkout-relation-question.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -161,28 +161,28 @@ First, let's discuss what should be the responsibility of CheckoutAction. If we 
 Now, let's look at Payments. We could add or remove payment methods, payment gateways, country specific logic, and fraud detection. Speaking to the business we discovered that before adding a new payment method or gateway to the platform, a different a group of people would get involved, sign contracts with providers, and these people are not the same ones that would be involved in other areas of the system. Should any of that impact the checkout flow? I would rather not have the changes in `Payments` affect the other areas. That would make the `Payments` module compatible with the Open/Closed Principle, that means, we could add or remove payment methods, gateways, etc, with no impact in the rest of the system. With that in mind, I'm quite confident to make the payments module totally independent from `CheckoutAction`, that means, an aggregation. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/07-checkout-payment.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/07-checkout-payment.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
 So, what about `Orders`? Speaking to the business we discovered that `Orders` have their own life cycle (new, waiting confirmation, paid, rejected, fulfilled, etc) and different parts of the system and internal users need orders information, mainly in the back office. This is enough information to make the decision of keeping `Orders` logic separate from the checkout process. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/08-checkout-orders.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/08-checkout-orders.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
 Delivery is a complex part of the domain as it involves different service providers in different parts of the world. They also charge different rates, have different contractual models, etc. Deciding which delivery options are available to users all over the world according to their delivery address is not a simple task. This information is maintained by a different back office team. It looks pretty safe to assume that `Delivery` should also be kept isolated from the rest of the checkout flow. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/09-checkout-delivery.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/09-checkout-delivery.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
 Finally we discuss the `Notifications`. The only thing we got from the business is that we would need to send an notification to the user with the result of the checkout process — either the payment has been received and the order recorded or the payment was rejected. Although I have a gut feel that this logic can grow and be reused, I don't have enough evidence of that, so in this case I'll keep it as a sub-module of the checkout process.  
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/10-checkout-notification.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/10-checkout-notification.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
@@ -193,14 +193,14 @@ In order to gather the information above and decide what would be a composition 
 With the decision of what behaviour goes together (composition) and what behaviour is going to be in a separate module (aggregation), we just need to figure out how these modules are going to talk to each other. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/11-checkout-sequence-with-mocks.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/11-checkout-sequence-with-mocks.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
 At this point is when I use Outside-In TDD (London School) to test-drive the full implementation of `CheckoutAction`, using mocks to define the public interface of `Payments`, `Orders`, and `Delivery`. Their interface should be limited to the information that `CheckoutAction` needs, reducing coupling and increasing cohesion among modules. 
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-16-mocking-as-a-design-tool/12-checkout-full-flow.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/12-checkout-full-flow.png" alt=“inside-out” class="img img-fluid" style="height: 70%; width: 70%;"/>
 </center>
 <br/>
 
