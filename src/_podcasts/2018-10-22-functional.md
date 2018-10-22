@@ -7,7 +7,7 @@ image:
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 4 - Functional Programming"
 video-url: https://www.podbean.com/media/player/rbik2-9d082d?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
-date: 2018-10-22 13:00:00 +00:00
+date: 2018-10-22 17:00:00 +00:00
 ---
 
 It's time to talk about Functional Programming. Chris Bemson hosting, with Gabriel Cipriano, Richard Wild and Jorge Gueorguiev Garcia given their opinions
