@@ -100,6 +100,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-tagging
+  jekyll-watch
   rake
   rdiscount
   rspec
