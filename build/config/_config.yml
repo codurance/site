@@ -46,6 +46,13 @@ pagination:
   paginate_path: "/page:num"
   sort_reverse: true 
 
+# Exclude the assets from the sitemap
+defaults:
+  - scope:
+      path: assets/*
+    values:
+      sitemap: false 
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

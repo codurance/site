@@ -30,3 +30,17 @@ It is also possible to add viewports within scenarios to exercise specific condi
 all of the tests.
 
 Care needs to be taken when choosing pages to compare. Dynamically generated lists will frequently differ between reference and actual. We have also set a 0.15% global difference threshold to allow some variation. This may need to be reduced for specific tests.
+
+## Using backstop for a docker container instead of local installation
+
+backstopjs provides a docker container that allows you to run without installing it. 
+
+Found here: https://blog.docksal.io/visual-regression-testing-with-backstopjs-in-a-docker-container-dfd1b9ae8582
+
+I have created three bash scripts to abstract the running of backstopjs without deploying it:
+
+```
+docker-backstop-setup.sh
+docker-backstop-reference.sh
+docker-backtop-test.sh
+```
