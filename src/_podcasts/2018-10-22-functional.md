@@ -12,9 +12,7 @@ date: 2018-10-22 17:00:00 +00:00
 
 It's time to talk about Functional Programming. Chris Bimson hosting, with Gabriele Cipriano, Richard Wild and Jorge Gueorguiev Garcia given their opinions.
 
-We mention briefly the books:
-- [Purescript by Example](https://leanpub.com/purescript) by Phil Freeman.
-- [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) by Paul Chiusano and Runar Bjarnason.
+We mention briefly the books: [Purescript by Example](https://leanpub.com/purescript) by Phil Freeman and [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) by Paul Chiusano and Runar Bjarnason.
 
 
 <sub>
