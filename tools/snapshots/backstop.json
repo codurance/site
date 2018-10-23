@@ -2,27 +2,25 @@
   "id": "backstop_default",
   "viewports": [
     {
-      "label": "smallest",
+      "label": "phone",
       "width": 360,
       "height": 640
     },
     {
-      "label": "large",
+      "label": "macbook-pro",
       "width": 1440,
       "height": 900
     },
     {
-      "label": "huge",
+      "label": "desktop",
       "width": 1920,
       "height": 1080
     }
   ],
 
-  "misMatchThreshold" : 0.15,
+  "misMatchThreshold" : 0.5,
   
   
-  "onBeforeScript": "puppet/onBefore.js",
-  "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {"label": "Codurance Homepage", "url": "http://localhost:4000/", "referenceUrl": "https://codurance.com/"},
     {"label": "Codurance Clients",  "url": "http://localhost:4000/clients/", "referenceUrl": "https://codurance.com/clients/"},
