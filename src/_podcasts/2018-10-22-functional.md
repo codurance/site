@@ -10,9 +10,9 @@ video-url: https://www.podbean.com/media/player/rbik2-9d082d?from=yiiadmin&downl
 date: 2018-10-22 17:00:00 +00:00
 ---
 
-It's time to talk about Functional Programming. Chris Bemson hosting, with Gabriel Cipriano, Richard Wild and Jorge Gueorguiev Garcia given their opinions
+It's time to talk about Functional Programming. Chris Bimson hosting, with Gabriele Cipriano, Richard Wild and Jorge Gueorguiev Garcia given their opinions.
 
-We mention briefly the book [Purescript by Example](https://leanpub.com/purescript) by Phil Freeman.
+We mention briefly the books: [Purescript by Example](https://leanpub.com/purescript) by Phil Freeman and [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) by Paul Chiusano and Runar Bjarnason.
 
 
 <sub>
