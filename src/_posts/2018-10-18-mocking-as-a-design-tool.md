@@ -20,7 +20,7 @@ Mocking is still a point on contention among TDD practitioners. The biggest comp
 * **System:** mock at the boundaries of the system (I/O)
 * **Layering:** mock at the boundaries of each layer.  
 
-If we think about mocks as a testing took, this is a very sound advice and most TDD practitioners would agree with that, including myself. 
+If we think about mocks as a testing tool, this is a very sound advice and most TDD practitioners would agree with that, including myself. 
 
 However, when building systems with a complex domain, where business flows are not linear (flows that touch different areas of the domain model and each area might trigger their own sub-flows), restricting the use of mocks to the boundaries described above is not enough. 
 
