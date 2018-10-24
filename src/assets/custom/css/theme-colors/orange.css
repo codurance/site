@@ -447,10 +447,6 @@ a.read-more:hover {
 
 /* Sliders
 ------------------------------------*/
-/* Main Parallax Sldier */
-.da-slide h2 i {
-	background-color: rgba(230, 126, 34, 0.8);
-}
 
 /* Sequence Parallax Sldier */
 .sequence-inner {
@@ -509,18 +505,6 @@ a.read-more:hover {
 .service-alternative .service:hover { 
 	background:#e67e22;
 } 
-
-/* Thumbnail (Recent Work)
-------------------------------------*/
-.thumbnail-style h3 a:hover {
-	color:#e67e22;
-}
-.thumbnail-style a.btn-more {
-	background:#e67e22;
-}
-.thumbnail-style a.btn-more:hover {
-	box-shadow:0 0 0 2px #d35400;
-}
 
 /* Typography
 ------------------------------------*/
@@ -583,32 +567,6 @@ blockquote.hero.hero-default:hover {
 	color: #e67e22;
 }
 
-/* Tabs
-------------------------------------*/
-/* Tabs v1 */
-.tab-v1 .nav-tabs { 
-	border-bottom: solid 2px #e67e22; 	
-}
-.tab-v1 .nav-tabs > .active > a, 
-.tab-v1 .nav-tabs > .active > a:hover, 
-.tab-v1 .nav-tabs > .active > a:focus { 
-	background: #e67e22; 
-}
-.tab-v1 .nav-tabs > li > a:hover { 
-	background: #e67e22; 
-}
-
-/* Tabs v2 */
-.tab-v2 .nav-tabs li.active a {
-	border-top: solid 2px #e67e22;
-}
-
-/* Tabs v3 */
-.tab-v3 .nav-pills li a:hover,
-.tab-v3 .nav-pills li.active a {
-	background: #e67e22;
-	border: solid 1px #d35400;
-}
 
 /* Accardion
 ------------------------------------*/
@@ -629,11 +587,7 @@ blockquote.hero.hero-default:hover {
 	background: #e67e22;
 }
 
-/* Info Blocks
-------------------------------------*/
-.info-blocks:hover i.icon-info-blocks {
-	color: #e67e22;
-}
+
 
 /* Breadcrumb
 ------------------------------------*/
@@ -643,11 +597,6 @@ blockquote.hero.hero-default:hover {
 	color:#e67e22;
 }
 
-/* About Page
-------------------------------------*/
-.team .thumbnail-style:hover h3 a {
-	color:#e67e22 !important;
-}
 
 /* Social Icons */
 .team ul.team-socail li i:hover {
@@ -663,11 +612,6 @@ blockquote.hero.hero-default:hover {
 	color:#e67e22; 
 }
 
-/* Privacy Page
-------------------------------------*/
-.privacy a:hover {
-	color:#e67e22; 
-}
 
 /* Portfolio Page
 ------------------------------------*/
@@ -694,30 +638,12 @@ blockquote.hero.hero-default:hover {
 	color:#e67e22;
 }
 
-/* Blog Tags */
-ul.blog-tags a:hover {
-	background: #e67e22;
-}
-.blog-post-tags ul.blog-tags a:hover {
-  background:  #e67e22;
-}
-
 /* Blog Photos */
 .blog-photos li img:hover {
 	box-shadow: 0 0 0 2px #e67e22;
 }
 
-/* Blog Latest Tweets */
-.blog-twitter .blog-twitter-inner:hover {
-	border-color: #e67e22;
-	border-top-color: #e67e22;	
-}
-.blog-twitter .blog-twitter-inner:hover:after {
-	border-top-color: #e67e22;	
-}
-.blog-twitter .blog-twitter-inner a {
-	color: #e67e22;
-}
+
 
 /* Blog Item Page
 ------------------------------------*/
@@ -747,13 +673,6 @@ ul.blog-tags a:hover {
 .glyphicons-demo a:hover {
 	color: #e67e22;
 	text-decoration: none;
-}
-
-/* Social Icons
-------------------------------------*/
-.social-icons-v1 i:hover {
-  color: #fff;
-  background: #e67e22;
 }
 
 /* Magazine Page
@@ -805,11 +724,6 @@ ul.blog-tags a:hover {
   background: #e67e22; 
 }
 
-/* GLYPHICONS Icons Page Style */
-.bs-glyphicons li:hover {
-  color: #e67e22;
-}
-
 /* Navigation
 ------------------------------------*/
 /* Pagination */
@@ -827,19 +741,7 @@ ul.blog-tags a:hover {
   border-color: #d35400;   
 }
 
-/* Pager */
-.pager li > a:hover, 
-.pager li > a:focus {
-  background: #d35400;
-  border-color: #d35400;   
-}
-.pager.pager-v2 li > a:hover, 
-.pager.pager-v2 li > a:focus,
-.pager.pager-v3 li > a:hover, 
-.pager.pager-v3 li > a:focus {
-  color: #fff;
-  background: #e67e22;
-}
+
 
 /* Registration and Login Page v2
 ------------------------------------*/
@@ -916,17 +818,7 @@ ul.blog-tags a:hover {
 	color: #e67e22;
 }
 
-/* Funny Boxes
-------------------------------------*/
-.funny-boxes p a {
-  color: #e67e22;
-}
-.funny-boxes .funny-boxes-img li i {
-  color: #e67e22;
-}
-.funny-boxes-colored p, .funny-boxes-colored h2 a, .funny-boxes-colored .funny-boxes-img li, .funny-boxes-colored .funny-boxes-img li i {
-  color: #fff;
-}
+
 
 /* Sidebar Sub Navigation
 ------------------------------------*/
@@ -943,47 +835,6 @@ blockquote.bq-green {
 blockquote:hover,
 blockquote.text-right:hover {
   border-color: #e67e22;
-}
-.quote-v1 p::before {
-  color: #e67e22;
-}
-
-/* Green Left Bordered Funny Box */
-.funny-boxes-left-green {
-  border-left: solid 2px #e67e22;
-}
-.funny-boxes-left-green:hover {
-  border-left-color: #e67e22;
-}
-
-/* Testimonials Default
-------------------------------------*/
-/* Testimonials */
-.testimonials .carousel-arrow i:hover {
-  background: #e67e22;
-}
-
-/* Testimonials Default */
-.testimonials-bg-default .item p {
-  background: #e67e22;
-}
-.testimonials.testimonials-bg-default .item p:after,
-.testimonials.testimonials-bg-default .item p:after {
-  border-top-color: #e67e22;
-}
-.testimonials-bg-default .carousel-arrow i {
-  background: #e67e22;
-}
-.testimonials.testimonials-bg-default .carousel-arrow i:hover {
-  background: #d35400;
-}
-
-/* Promo Page
-------------------------------------*/
-/* Promo Box */
-.promo-box:hover strong, 
-.promo-box:hover strong a {
-	color: #e67e22;
 }
 
 /* Typography
@@ -1028,17 +879,6 @@ i.icon-bg-u {
   background: #e67e22;
 }
 
-/* Line Icon Page
-------------------------------------*/
-.line-icon-page .item:hover {
-	color: #e67e22;
-}
-
-/* Colored Content Boxes
-------------------------------------*/
-.service-block-u {
-  background: #e67e22;
-}
 
 /* Panels (Portlets)
 ------------------------------------*/
@@ -1053,15 +893,6 @@ i.icon-bg-u {
 ------------------------------------*/
 .owl-btn:hover {
   background: #e67e22;
-}
-
-/* Counter
-------------------------------------*/
-.counters span.counter-icon i {
-	background: #e67e22;
-}
-.counters span.counter-icon i:after {
-	border-top: 7px solid #e67e22;
 }
 
 /* SKy-Forms
@@ -1094,9 +925,6 @@ i.icon-bg-u {
 }
 .profile .name-location span i,
 .profile .name-location span a:hover {
-	color: #e67e22;
-}
-.share-list li i {
 	color: #e67e22;
 }
 .profile .comment-list-v2 li:hover i,
@@ -1214,52 +1042,9 @@ i.icon-bg-u {
   border-color: #e67e22;
 }
 
-/* Testimonials v3 Title 
-------------------------------------*/
-.testimonials-v3 .testimonials-v3-title p {
-  color: #e67e22;
-}
-
-.testimonials-v3 .owl-buttons .owl-prev:hover,
-.testimonials-v3 .owl-buttons .owl-next:hover {
-  background:  #e67e22;
-}
-
-/* Content Boxes v4 
-------------------------------------*/
-.content-boxes-v4 i {
-  color: #e67e22;
-}
-
 /* Thumbnails v1 
 ------------------------------------*/
 .thumbnails-v1 .read-more {
-  color: #e67e22;
-}
-
-/* Thumbnails v6 
-------------------------------------*/
-.testimonials-v6 .testimonials-info:hover {
-  border-color: #e67e22;
-}
-
-/* Team v1 
-------------------------------------*/
-.team-v1 li:hover > p:before {
-  background:  #e67e22;
-}
-
-/* Team v4
-------------------------------------*/
-.team-v4 .team-social-v4 a:hover {
-  color: #e67e22;
-}
-
-/* Team v5 & v6 & v7
-------------------------------------*/
-.team-v5 small,
-.team-v6 small,
-.team-v7 .team-v7-position {
   color: #e67e22;
 }
 
@@ -1275,18 +1060,6 @@ i.icon-bg-u {
   background:  #e67e22;
 }
 
-/* Portfolio Box
-------------------------------------*/
-.portfolio-box .portfolio-box-in i {
-  background:  #e67e22;
-}
-
-/* Flat Background Block v1
-------------------------------------*/
-.flat-bg-block-v1 .checked-list i {
-  color: #e67e22;
-}
-
 /* Owl Carousel v5
 ------------------------------------*/
 .owl-carousel-v5 .owl-controls .owl-page.active span,
@@ -1294,72 +1067,6 @@ i.icon-bg-u {
   background:  #e67e22;
 }
 
-/* Content Boxes v5
-------------------------------------*/
-.content-boxes-v5:hover i {
-  background:  #e67e22;
-}
-
-/* Block Grid v1
-------------------------------------*/
-.block-grid-v1:hover {
-  border-color: #e67e22;
-}
-
-/* Block Grid v2
-------------------------------------*/
-.block-grid-v2 li:hover .block-grid-v2-info {
-  border-color: #e67e22;
-}
-
-/* Content Boxes v6
-------------------------------------*/
-.content-boxes-v6:hover i:after {
-  border-color: #e67e22;
-}
-.content-boxes-v6:hover i {
-  background:  #e67e22;
-}
-
-/* Portfolio Box-v2
-------------------------------------*/
-.portfolio-box-v2 .portfolio-box-v2-in i {
-  background: rgba(230, 126, 34, 0.8);
-}
-.portfolio-box-v2 .portfolio-box-v2-in i:hover {
-  background:  #e67e22;
-}
-
-/* Service Block v1
-------------------------------------*/
-.service-block-v1 i {
-  background:  #e67e22;
-}
-
-/* Service Block v4
-------------------------------------*/
-.service-block-v4 .service-desc i {
-  color: #e67e22;
-}
-
-/* Service Block v7
-------------------------------------*/
-.service-block-v7 i {
-  background: #e67e22;
-}
-
-/* Service Block v8
-------------------------------------*/
-.service-block-v8 .service-block-desc h3::after {
-  background: #e67e22;
-}
-
-/* Testimonials bs
-------------------------------------*/
-.testimonials-bs .carousel-control-v2 i:hover {
-  border-color: #e67e22;
-  color: #e67e22;
-}
 
 /* Fusion Portfolio
 ------------------------------------*/
@@ -1387,12 +1094,6 @@ i.icon-bg-u {
 }
 .cube-portfolio .cbp-caption-activeWrap.default-transparent-hover {
   background: rgba(230, 126, 34, .9) !important;
-}
-
-/* Recent Works
-------------------------------------*/
-.owl-work-v1 .item a:hover span {
-  border-bottom-color: #e67e22;
 }
 
 /* Footer Default
@@ -1431,11 +1132,6 @@ i.icon-bg-u {
   color: #e67e22;
 }
 
-/* Top Control
-------------------------------------*/
-#topcontrol:hover {
-  background-color: #e67e22;
-}
 
 /* News Info
 ------------------------------------*/
@@ -1445,9 +1141,7 @@ i.icon-bg-u {
 .news-v1 h3 a:hover {
     color: #e67e22;
 }
-.news-v2 .news-v2-desc h3 a:hover {
-    color: #e67e22 !important;
-}
+
 .news-v3 .post-shares li span {
   background: #e67e22;
 }
@@ -1458,11 +1152,6 @@ i.icon-bg-u {
   color: #e67e22 !important;
 }
 
-/* Blog Trending
-------------------------------------*/
-.blog-trending small a:hover {
-  color: #e67e22;
-}
 
 /* Blog Masonry
 ------------------------------------*/
@@ -1482,22 +1171,6 @@ i.icon-bg-u {
   color: #e67e22;
 }
 
-/* Process v1
-------------------------------------*/
-.process-v1 .process-in > li i {
-  background: #e67e22;
-}
-
-/* Featured Blog
-------------------------------------*/
-.featured-blog h2::after {
-  background: #e67e22;
-}
-.featured-blog .featured-img i:hover {
-  color: #fff;
-  background: #e67e22;
-}
-
 .rgba-default {
   background-color: rgba(230, 126, 34, 1);
 }
@@ -1505,12 +1178,6 @@ i.icon-bg-u {
 /* Blog Latest Posts
 ------------------------------------*/
 .blog-latest-posts h3 a:hover {
-	color: #e67e22 !important;
-}
-
-/* Blog Trending
-------------------------------------*/
-.blog-trending h3 a:hover {
 	color: #e67e22 !important;
 }
 
@@ -1527,10 +1194,6 @@ i.icon-bg-u {
 ------------------------------------*/
 .footer-v8 .footer .column-one a:hover {
 	color: #e67e22;
-}
-.footer-v8 .footer .tags-v4 a:hover {
-	border-color: #e67e22;
-	background-color: #e67e22;
 }
 .footer-v8 .footer .footer-lists li a:hover {
 	color: #e67e22;
