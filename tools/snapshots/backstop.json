@@ -22,14 +22,14 @@
   "misMatchThreshold" : 0.5,
 
   
-  "hideSelectors" : ["#cookie-message", "div.divimage", "section.dzsparallaxer", ".lssc_events"],
+  "_hideSelectors" : ["#cookie-message", "div.divimage", "section.dzsparallaxer", "#lssc_events"],
   
   "scenarios": [
     {"label": "Codurance Homepage", "url": "http://localhost:4000/", "referenceUrl": "https://codurance.com/"},
     {"label": "Codurance Clients",  "url": "http://localhost:4000/clients/", "referenceUrl": "https://codurance.com/clients/"},
     {"label": "Codurance Services", "url": "http://localhost:4000/services/", "referenceUrl": "https://codurance.com/services/"},
     {"label": "Codurance Training", "url": "http://localhost:4000/services/training/", "referenceUrl": "https://codurance.com/services/training/"},
-    {"label": "Codurance Crafting Code", "url": "http://localhost:4000/services/training/crafting-code/", "referenceUrl": "https://codurance.com/services/training/crafting-code/"},
+    {"label": "Codurance Crafting Code", "url": "http://localhost:4000/services/training/crafting-code/", "referenceUrl": "https://codurance.com/services/training/crafting-code/", "hideSelectors": ["section.dzsparallaxer"]},
     {"label": "Codurance Publications", "url": "http://localhost:4000/publications/", "referenceUrl": "https://codurance.com/publications/"},
     {"label": "Codurance The software craftsman", "url": "http://localhost:4000/publications/the-software-craftsman/", "referenceUrl": "https://codurance.com/publications/the-software-craftsman/", "misMatchThreshold" : 3},
     {"label": "the-functional-style-part-3", "url": "http://localhost:4000/2018/09/04/the-functional-style-part-3/", "referenceUrl": "https://codurance.com/2018/09/04/the-functional-style-part-3/"},
