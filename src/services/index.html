@@ -18,79 +18,269 @@ title: Services
     <p>{% t services-subheader.subtitle %}</p>
   </div>
 
+  <!-- Icon Blocks -->
+  <section class="g-bg-secondary">
+      <div class="container g-pt-40">
+        <div class="row">
+          <div class="col-lg-4 g-mb-60">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-education-087 u-line-icon-pro"></i>
+              </span>
+              <h3 class="h5 g-color-black g-mb-10">{% t services-discovery.title %}</h3>
+              <!-- <p class="g-color-gray-dark-v4 g-mb-20">{% t services-discovery.subtitle %}</p> -->
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#discovery">{% t services-read-more %}</a>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+
+          <div class="col-lg-4 g-mb-60">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-finance-009 u-line-icon-pro"></i>
+              </span>
+              <h3 class="h5 g-color-black g-mb-10">{% t services-new-development.title %}</h3>
+              <!-- <p class="g-color-gray-dark-v4 g-mb-20">{% t services-new-development.subtitle %}</p> -->
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#new-development">{% t services-read-more %}</a>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+
+          <div class="col-lg-4 g-mb-60">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v19 g-bg-white text-center g-rounded-5 g-px-30 g-pb-30">
+              <span class="u-icon-v3 g-bg-primary g-color-white g-pull-50x-up g-rounded-5 g-mb-5">
+                <i class="icon-finance-256 u-line-icon-pro"></i>
+              </span>
+              <h3 class="h5 g-color-black g-mb-10">{% t services-existing-development.title %}</h3>
+              <!-- <p class="g-color-gray-dark-v4 g-mb-20">{% t services-existing-development.subtitle %}</p> -->
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#existing-development">{% t services-read-more %}</a>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Icon Blocks -->
+
 </div>
 
-<div class="services-section container">
-
-  <div class="title">
-    <h2>{% t services-section_1.title %}</h2>
-  </div>
-
-  <div class="row">
-
-    <!-- Software creation section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="software-creation">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-software_creation.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t services-software_creation-embedded_craftsmen.title %}</h4>
-                <p class="card-text">{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-self_contained_teams.title %}</h4>
-                <p class="card-text">{% t services-software_creation-self_contained_teams.subtitle %}</p>		
-                <h4 class="h5">{% t services-software_creation-continous_delivery.title %}</h4>
-                <p class="card-text">{% t services-software_creation-continous_delivery.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-ux_ui_design.title %}</h4>
-                <p class="card-text">{% t services-software_creation-ux_ui_design.subtitle %}</p>
-            </div>
-          </div>
-    </div>
-
-    <!-- Expert advice section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="expert-advice">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-expert_advice.title %}
-            </h3>          
-            <div class="card-block">
-              <h4 class="h5">{% t services-expert_advice-enterprise_architecture.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-software_architecture_and_design.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-continous_delivery.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-continous_delivery.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-xp.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-xp.subtitle %}</p>
-            </div>
-          </div>
-    </div>
-
-    <!-- training section -->
-    <div class="col-md-4 d-flex align-items-stretch" id="training">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-training_coaching.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t training-software-development-practices.title %}</h4>
-                <p class="card-text">{% t training-software-development-practices.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-development-practices.link_title %}</a></p>
-                <h4 class="h5">{% t training-software-architecture-and-cloud.title %}</h4>
-                <p class="card-text">{% t training-software-architecture-and-cloud.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-architecture-and-cloud.link_title %}</a></p>
-                <h4 class="h5">{% t training-technologies.title %}</h4>
-                <p class="card-text">{% t training-technologies.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-technologies.link_title %}</a></p>
-                <h4 class="h5">{% t training-coaching-and-mentoring.title %}</h4>
-                <p class="card-text">{% t training-coaching-and-mentoring.subtitle %}</p>
-            </div>
-          </div>
+ <!-- Discovery Block -->
+ <section id="discovery" class="container g-pt-60 g-pb-60">
+  <div class="row justify-content-center g-mb-60">
+    <div class="col-lg-7">
+      <!-- Heading -->
+      <div class="text-center">
+        <h2 class="h3 g-color-black text-uppercase mb-2">{% t services-discovery.title %}</h2>
+        <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+        <p class="lead mb-0">{% t services-discovery.subtitle %}</p>
+      </div>
+      <!-- End Heading -->
     </div>
   </div>
-
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-lg-9 g-mb-30">
+      <!-- Teams -->
+      <article class="u-shadow-v22">
+        <figure class="g-pos-rel">
+          <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-discovery.teams-title %}">
+
+          <figcaption class="g-pos-abs g-top-20 g-left-20">
+            <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-discovery.teams-title %}</a>
+          </figcaption>
+        </figure>
+
+        <div class="g-pa-20">
+          <h3 class="h4 g-font-weight-300 g-mb-15">
+            <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-discovery.teams-subtitle %}</a>
+          </h3>
+
+          <div class="g-mb-30">
+            <p>{% t services-discovery.teams-description %}</p>
+            <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+          </div>
+        </div>
+      </article>
+      <!-- End Teams -->
+    </div>
+
+    <div class="col-lg-3 g-mb-30">
+      <!-- Advice -->
+      <article class="u-shadow-v22">
+        <figure class="g-pos-rel">
+          <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-discovery.advice-title %}">
+
+          <figcaption class="g-pos-abs g-top-20 g-left-20">
+            <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-discovery.advice-title %}</a>
+          </figcaption>
+        </figure>
+
+        <div class="g-pa-20">
+          <h3 class="h4 g-font-weight-300 g-mb-15">
+            <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-discovery.advice-subtitle %}</a>
+          </h3>
+
+          <div class="g-mb-30">
+            <p>{% t services-discovery.advice-description %}</p>
+            <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+          </div>
+        </div>
+      </article>
+      <!-- End Advice -->
+    </div>
+
+  </div>
+</section>
+<!-- End Discovery Block -->
+
+<!-- New Development Block -->
+<div class="gray-section">
+  <section id="new-development" class="container g-pt-60 g-pb-60">
+    <div class="row justify-content-center g-mb-60">
+      <div class="col-lg-7">
+        <!-- Heading -->
+        <div class="text-center">
+          <h2 class="h3 g-color-black text-uppercase mb-2">{% t services-new-development.title %}</h2>
+          <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+          <p class="lead mb-0">{% t services-new-development.subtitle %}</p>
+        </div>
+        <!-- End Heading -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 g-mb-30">
+        <!-- Advice -->
+        <article class="u-shadow-v22">
+          <figure class="g-pos-rel">
+            <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-new-development.advice-title %}">
+  
+            <figcaption class="g-pos-abs g-top-20 g-left-20">
+              <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-new-development.advice-title %}</a>
+            </figcaption>
+          </figure>
+  
+          <div class="g-pa-20">
+            <h3 class="h4 g-font-weight-300 g-mb-15">
+              <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-new-development.advice-subtitle %}</a>
+            </h3>
+  
+            <div class="g-mb-30">
+              <p>{% t services-new-development.advice-description %}</p>
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+            </div>
+          </div>
+        </article>
+        <!-- End Advice -->
+      </div>
+
+      <div class="col-lg-9 g-mb-30">
+        <!-- Teams -->
+        <article class="u-shadow-v22">
+          <figure class="g-pos-rel">
+            <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-new-development.teams-title %}">
+  
+            <figcaption class="g-pos-abs g-top-20 g-left-20">
+              <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-new-development.teams-title %}</a>
+            </figcaption>
+          </figure>
+  
+          <div class="g-pa-20">
+            <h3 class="h4 g-font-weight-300 g-mb-15">
+              <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-new-development.teams-subtitle %}</a>
+            </h3>
+  
+            <div class="g-mb-30">
+              <p>{% t services-new-development.teams-description %}</p>
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+            </div>
+          </div>
+        </article>
+        <!-- End Teams -->
+      </div>
+
+    </div>
+  </section>
+</div>
+  <!-- End New Development Block -->
+
+  <!-- Existing Development Block -->
+ <section id="existing-development" class="container g-pt-60 g-pb-60">
+    <div class="row justify-content-center g-mb-60">
+      <div class="col-lg-7">
+        <!-- Heading -->
+        <div class="text-center">
+          <h2 class="h3 g-color-black text-uppercase mb-2">{% t services-existing-development.title %}</h2>
+          <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+          <p class="lead mb-0">{% t services-existing-development.subtitle %}</p>
+        </div>
+        <!-- End Heading -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 g-mb-30">
+        <!-- Teams -->
+        <article class="u-shadow-v22">
+          <figure class="g-pos-rel">
+            <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-existing-development.teams-title %}">
+  
+            <figcaption class="g-pos-abs g-top-20 g-left-20">
+              <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-existing-development.teams-title %}</a>
+            </figcaption>
+          </figure>
+  
+          <div class="g-pa-20">
+            <h3 class="h4 g-font-weight-300 g-mb-15">
+              <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-existing-development.teams-subtitle %}</a>
+            </h3>
+  
+            <div class="g-mb-30">
+              <p>{% t services-existing-development.teams-description %}</p>
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+            </div>
+          </div>
+        </article>
+        <!-- End Teams -->
+      </div>
+  
+      <div class="col-lg-3 g-mb-30">
+        <!-- Advice -->
+        <article class="u-shadow-v22">
+          <figure class="g-pos-rel">
+            <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/custom/img/services/consulting.jpg" alt="{% t services-existing-development.advice-title %}">
+  
+            <figcaption class="g-pos-abs g-top-20 g-left-20">
+              <a class="btn btn-sm u-btn-primary rounded-0" href="#!">{% t services-existing-development.advice-title %}</a>
+            </figcaption>
+          </figure>
+  
+          <div class="g-pa-20">
+            <h3 class="h4 g-font-weight-300 g-mb-15">
+              <a class="u-link-v5 g-color-main g-color-primary--hover g-text-underline--none--hover" href="#!">{% t services-existing-development.advice-subtitle %}</a>
+            </h3>
+  
+            <div class="g-mb-30">
+              <p>{% t services-existing-development.advice-description %}</p>
+              <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#!">{% t services-read-more %}</a>
+            </div>
+          </div>
+        </article>
+        <!-- End Advice -->
+      </div>
+  
+      
+    </div>
+  </section>
+  <!-- End Existing Development Block -->
+
+  <div class="row justify-content-center g-mb-60">
+      <div class="col-lg-3 offset-lg-3 g-mb-30">
       <div class="text-center margin-top-20">
         <a href="{{ '/company#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
       </div>
     </div>
-		<div class="col-md-6">
+		<div class="col-lg-3 g-mb-30">
       <div class="text-center margin-top-20">
         <a href="{{ '/services/training' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
       </div>

@@ -163,10 +163,36 @@ services-header:
    title: Crafted solutions
    subtitle: Tailored to you
 services-subheader:
-   title: Your partner in creating well-crafted software
-   subtitle: We understand that everyone is different and will tailor our approach according to the needs of your business and organisation. We will help you build well-crafted software that is relevant to your needs. We provide <strong>teams</strong> to create valuable, in-time, and quality software, <strong>expert advice</strong> to fast-track your initiatives, and <strong>training and coaching</strong> to better equip your developers with the right skills and attitudes.
-services-section_1:
-   title: We can help with ...
+   title: Your technology partner, across all stages of your software product lifecycle.
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+services-discovery:
+   title: Discovery Phase
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   teams-title: Delivery Teams
+   teams-subtitle: Validating your product idea through rapid feedback is essential for its long-term growth.
+   teams-description: Our Delivery Teams will build a proof of concept to validate your product idea through research and rapid deployment. When you’re ready to grow your product, our focus on quality will help reduce cost of refactoring in the future.<ul><li>UX Research</li><li>MVP</li><li>Lean</li><li>Continuous Delivery</li></ul>
+   advice-title: Advice &amp; Training
+   advice-subtitle: Building a software product involves more than just technology.
+   advice-description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+services-new-development:
+   title: New Development
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   teams-title: Delivery Teams
+   teams-subtitle: Balancing project delivery with internal capacity is critical to exceeding your business goals. 
+   teams-description: We partner with your existing technology teams to deliver products, sharing our values of Craftsmanship as we go.<ul><li>Technology</li><li>Design</li><li>Continuous Delivery</li><li>Practices</li></ul>
+   advice-title: Advice &amp; Training
+   advice-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   advice-description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+services-existing-development:
+   title: Existing Development
+   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   teams-title: Delivery Teams
+   teams-subtitle: Whether you are migrating, repurposing or developing from new, mission-critical applications require experience and skill.
+   teams-description: <ul><li>Cloud Migrations</li><li>Refactoring Legacy Systems</li></ul>
+   advice-title: Advice &amp; Training
+   advice-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   advice-description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+services-read-more: Read More
 services-section_2:
    title: Businesses we have helped
    finance: FINANCE

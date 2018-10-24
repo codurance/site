@@ -29,6 +29,11 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # Komodo
 *.komodoproject
