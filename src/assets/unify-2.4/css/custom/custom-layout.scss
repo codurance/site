@@ -2,6 +2,8 @@
 title: CSS
 ---
 
+$baseurl: '{{ site.baseurl }}';
+
 /* --------------------------------------
    Layout
    -------------------------------------- */
@@ -17,7 +19,7 @@ title: CSS
 $orange-colour: #e67e22;
 
 .feature-panel { /* 0 0 1 0 */
-  background: url("{{ site.baseurl }}/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
+  background: url($baseurl + "/assets/img/custom/home/codurance-pair-programming.jpg") no-repeat center center;
   height: 550px;
   background-size: cover;
   width: auto;
@@ -382,25 +384,25 @@ i.no-border {   /* 0 0 1 1 */
 
 .breadcrumbs-v3 {   
   &.ourpeople { /* 0 0 2 0 */
-    background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
+    background: url($baseurl + "/assets/img/custom/careers/ourpeople.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
   &.ourclients { /* 0 0 2 0 */
-    background: url("{{ site.baseurl }}/assets/img/custom/clients/ourclients.jpg") no-repeat;
+    background: url($baseurl + "/assets/img/custom/clients/ourclients.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
   &.ourservices { /* 0 0 2 0 */
-    background: url("{{ site.baseurl }}/assets/img/custom/services/ourservices.jpg") no-repeat;
+    background: url($baseurl + "/assets/img/custom/services/ourservices.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
   &.thesoftwarecraftsman { /* 0 0 2 0 */
-    background: url("{{ site.baseurl }}/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg") no-repeat;
+    background: url($baseurl + "/assets/img/custom/thesoftwarecraftsman/book-page-image.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
   }
@@ -512,7 +514,7 @@ i.no-border {   /* 0 0 1 1 */
     height: auto;
     padding: 50px 0;
     position: relative;
-    background: url("{{ site.baseurl }}/assets/img/custom/case-study/paralax.jpg") repeat fixed;
+    background: url($baseurl + "/assets/img/custom/case-study/paralax.jpg") repeat fixed;
     background-size: cover;
   }
 

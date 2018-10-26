@@ -46,6 +46,10 @@ pagination:
   paginate_path: "/page:num"
   sort_reverse: true 
 
+sass:
+  sass_dir: "./css"
+  style: compressed
+
 # Exclude the assets from the sitemap
 defaults:
   - scope:

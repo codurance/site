@@ -1,0 +1,14 @@
+---
+# Front matter component to ensure Jekyll properly reads file.
+---
+
+$baseurl: '{{ site.baseurl }}';
+
+//imports
+@import "../assets/custom/css/custom-blocks";
+@import "../assets/custom/css/custom-layout";
+@import "../assets/custom/css/custom-media-queries";
+@import "../assets/custom/css/custom-global-styles";
+@import "../assets/custom/css/custom-navbar-or-navigation";
+@import "../assets/custom/css/custom-layout-colours";
+@import "../assets/custom/css/custom-layout-buttons";
