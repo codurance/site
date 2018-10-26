@@ -13,6 +13,6 @@ FOLDER_NAME=$1
 cd output/_site/
 
 echo "Synchronizing to folder: $FOLDER_NAME"
-aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME --exclude "assets/*" --acl public-read
+aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME --exclude "assets/*" --acl public-read --content-encoding gzip
 aws cloudfront create-invalidation --distribution-id EML2BUMD54HSC --paths "/$FOLDER_NAME/*"
 
