@@ -26,12 +26,106 @@ class DummyAuthorGeneratorConfig
       'baseurl' => 'baseurl' 
     }
   end  
-
 end
 
+describe "Generate Author" do
+
+  it 'fails to generate if no author index' do
+    site = double 
+    allow(site).to receive(:config).and_return({})
+    allow(site).to receive(:layouts).and_return({'no_author_index' => nil})
+    genAuthor = Jekyll::GenerateAuthor.new   
+    expect{genAuthor.generate(site)}.to raise_exception(UncaughtThrowError, /uncaught throw "No 'author_index' layout found."/)
+  end  
+
+  it 'GenerateAuthor calls write_author_indexes with no posts and no collections' do
+    site = double 
+    allow(site).to receive(:layouts).and_return({'author_index' => 42})
+    allow(site).to receive(:config).and_return({'no_author_dir' => 'no_authors'})
+  
+    posts = double
+    collection_docs = double
+    allow(site).to receive(:posts).and_return(posts)
+    allow(posts).to receive(:docs).and_return([])
+    
+    allow(site).to receive(:collections).and_return( {'videos' => collection_docs})
+
+    allow(collection_docs).to receive(:docs).and_return([])
+    
+    author_index_writer = double
+
+    genAuthor = Jekyll::GenerateAuthor.new       
+    genAuthor.write_author_indexes(site, author_index_writer)
+  end
+
+  it 'GenerateAuthor calls write author with one author from each' do
+    site = double 
+    allow(site).to receive(:layouts).and_return({'author_index' => 42})
+    allow(site).to receive(:config).and_return({'no_author_dir' => 'no_authors'})
+  
+    posts = double
+    collection_docs = double
+    allow(site).to receive(:posts).and_return(posts)
+
+    author_record = double
+
+    allow(posts).to receive(:docs).and_return([ author_record ])
+
+    allow(author_record).to receive(:data).and_return( {'author' => 'A.A. Aaardvark'} )
+    
+    allow(site).to receive(:collections).and_return( {'videos' => collection_docs})
+
+    video_docs = double
+    allow(video_docs).to receive(:data).and_return( {'author' => 'B B Barracuda'} ) 
+
+    allow(collection_docs).to receive(:docs).and_return( [video_docs] )
+  
+    allow(site).to receive(:source).and_return("source/")
+    allow(site).to receive(:site_payload).and_return("payload")
+
+    author_index_writer = double
+
+    expect(author_index_writer).to receive(:write_author_index).with("A.A. Aaardvark")
+    expect(author_index_writer).to receive(:write_author_index).with("B B Barracuda")
+
+    genAuthor = Jekyll::GenerateAuthor.new   
+    genAuthor.write_author_indexes(site, author_index_writer) 
+  end  
+end
+
+describe 'AuthorIndexWriter' do
+
+  it 'Write an author works without author_dir, only called once' do
+    site = double
+
+    allow(site).to receive(:config).and_return({'foo' => 'bar'})
+    allow(site).to receive(:source).and_return('./source')
+    allow(site).to receive(:layouts).and_return('layouts')
+    allow(site).to receive(:site_payload).and_return('site_payload')
+    allow(site).to receive(:dest).and_return('./dest')
+
+    author_index = double
+
+    allow(Jekyll::AuthorIndex).to receive(:new).with(site, './source', 'authors/jkr', 'JKR').and_return(author_index).once
+
+
+    expect(author_index).to receive(:render).with('layouts', 'site_payload')
+    expect(author_index).to receive(:write).with('./dest')
+
+    pages = double
+
+    expect(site).to receive(:pages).and_return(pages)
+
+    expect(pages).to receive(:<<).once
+
+    subject = Jekyll::AuthorIndexWriter.new site 
+    subject.write_author_index("JKR")
+    subject.write_author_index("JKR")
+  end  
+
+end  
 
 describe 'AuthorGenerator' do
-
   let(:subject) { TestFilters.new }
 
   describe 'author_url works for Harry Potter' do
@@ -77,19 +171,7 @@ describe 'AuthorGenerator' do
     it 'handles element list with empty element' do
       expect(subject.author_links(['Harry Potter', '', 'Ron Weasley'])).to eq("<a class='author' href='baseurl/author_dir/harry-potter/'>Harry Potter</a>, <a class='author' href='baseurl/author_dir/ron-weasley/'>Ron Weasley</a>")
     end
-
   end
   
-  describe "Generate Authors" do
-    
-    it 'Generate calls write_author_indexes' do
-      site = double  
-      expect(site).to receive :write_author_indexes
-      
-      genAuthor = Jekyll::GenerateAuthor.new
-      genAuthor.generate(site)
-    end
-
-  end
   
 end

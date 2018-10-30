@@ -45,54 +45,7 @@ module Jekyll
       meta_description_prefix  = site.config['author_meta_description_prefix'] || 'author: '
       self.data['description'] = "#{meta_description_prefix}#{author}"
     end
-
   end
-
-
-  # The Site class is a built-in Jekyll class with access to global site config information.
-  class Site
-
-    # Creates an instance of AuthorIndex for each author page, renders it, and
-    # writes the output to a file.
-    #
-    #  +author_dir+ is the String path to the author folder.
-    #  +author+     is the author currently being processed.
-    def write_author_index(author_dir, author)
-      index = AuthorIndex.new(self, self.source, author_dir, author)
-      index.render(self.layouts, site_payload)
-      index.write(self.dest)
-      # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
-      self.pages << index
-
-    end
-
-    # Loops through the list of author pages and processes each one.
-    def write_author_indexes
-      seen_author = []
-      if self.layouts.key? 'author_index'
-        dir = self.config['author_dir'] || 'authors'
-        (self.posts.docs + self.collections['videos'].docs).each do |post|
-          post_authors = post.data["author"]
-          if String.try_convert(post_authors)
-               post_authors = [ post_authors ]
-          end
-          post_authors.each do |author|
-            author_dir = AuthorNameToPath.parse(author)
-            #Only do this once per author, otherwise overwriting files and duplicating index
-            if !seen_author.include?(author)
-              self.write_author_index(File.join(dir, author_dir), author)
-              seen_author << author
-            end
-          end
-        end
-      # Throw an exception if the layout couldn't be found.
-      else
-        throw "No 'author_index' layout found."
-      end
-    end
-
-  end
-
 
   # Jekyll hook - the generate method is called by jekyll, and generates all of the author pages.
   class GenerateAuthor < Generator
@@ -100,10 +53,46 @@ module Jekyll
     priority :high
 
     def generate(site)
-      site.write_author_indexes
+      author_index_writer = AuthorIndexWriter.new site
+      write_author_indexes(site, author_index_writer)
+    end
+
+    def write_author_indexes(site, author_index_writer)
+      if !(site.layouts.key? 'author_index') 
+        throw "No 'author_index' layout found."      
+      end  
+      
+      (site.posts.docs + site.collections['videos'].docs).each do |post|
+        post_authors = [post.data["author"]].flatten()
+        post_authors.each do |author|
+          author_index_writer.write_author_index(author)
+        end
+      end
     end
   end
 
+  class AuthorIndexWriter
+
+    def initialize(site)
+      @seen_author = []
+      @site = site
+      @dir = @site.config['author_dir'] || 'authors'
+    end  
+
+    def write_author_index(author)
+      #Only do this once per author
+      if !@seen_author.include?(author)
+        @seen_author << author
+        author_dir = File.join(@dir, AuthorNameToPath.parse(author))
+        index = AuthorIndex.new(@site, @site.source, author_dir, author)
+        index.render(@site.layouts, @site.site_payload)
+        index.write(@site.dest)
+        # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
+        @site.pages << index
+      end
+    end
+
+  end  
 
   # Adds some extra filters used during the author creation process.
   module Filters
