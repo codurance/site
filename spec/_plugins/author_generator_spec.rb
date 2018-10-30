@@ -54,8 +54,10 @@ describe "Generate Author" do
     
     author_index_writer = double
 
+    allow(Jekyll::AuthorIndexWriter).to receive(:new).and_return(author_index_writer)
+
     genAuthor = Jekyll::GenerateAuthor.new       
-    genAuthor.write_author_indexes(site, author_index_writer)
+    genAuthor.generate(site)
   end
 
   it 'GenerateAuthor calls write author with one author from each' do
@@ -88,8 +90,11 @@ describe "Generate Author" do
     expect(author_index_writer).to receive(:write_author_index).with("A.A. Aaardvark")
     expect(author_index_writer).to receive(:write_author_index).with("B B Barracuda")
 
+    
+    allow(Jekyll::AuthorIndexWriter).to receive(:new).and_return(author_index_writer)
+
     genAuthor = Jekyll::GenerateAuthor.new   
-    genAuthor.write_author_indexes(site, author_index_writer) 
+    genAuthor.generate(site) 
   end  
 end
 
@@ -107,7 +112,6 @@ describe 'AuthorIndexWriter' do
     author_index = double
 
     allow(Jekyll::AuthorIndex).to receive(:new).with(site, './source', 'authors/jkr', 'JKR').and_return(author_index).once
-
 
     expect(author_index).to receive(:render).with('layouts', 'site_payload')
     expect(author_index).to receive(:write).with('./dest')
@@ -172,6 +176,5 @@ describe 'AuthorGenerator' do
       expect(subject.author_links(['Harry Potter', '', 'Ron Weasley'])).to eq("<a class='author' href='baseurl/author_dir/harry-potter/'>Harry Potter</a>, <a class='author' href='baseurl/author_dir/ron-weasley/'>Ron Weasley</a>")
     end
   end
-  
-  
+
 end

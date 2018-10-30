@@ -91,7 +91,6 @@ module Jekyll
         @site.pages << index
       end
     end
-
   end  
 
   # Adds some extra filters used during the author creation process.
