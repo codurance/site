@@ -24,7 +24,6 @@ office:
     lnd: +44 207 4902967
     man: +44 207 4902967
 
-tag_page_layout: tag_page
 tag_page_dir: publications/tag
 tag_page_layout: tag
 
@@ -45,6 +44,13 @@ pagination:
   per_page: 20
   paginate_path: "/page:num"
   sort_reverse: true 
+
+# Exclude the assets from the sitemap
+defaults:
+  - scope:
+      path: assets/*
+    values:
+      sitemap: false 
 
 plugins:
   - jekyll-sitemap

@@ -68,6 +68,7 @@ module Jekyll
 
     # Loops through the list of author pages and processes each one.
     def write_author_indexes
+      seen_author = []
       if self.layouts.key? 'author_index'
         dir = self.config['author_dir'] || 'authors'
         (self.posts.docs + self.collections['videos'].docs).each do |post|
@@ -77,7 +78,11 @@ module Jekyll
           end
           post_authors.each do |author|
             author_dir = AuthorNameToPath.parse(author)
-            self.write_author_index(File.join(dir, author_dir), author)
+            #Only do this once per author, otherwise overwriting files and duplicating index
+            if !seen_author.include?(author)
+              self.write_author_index(File.join(dir, author_dir), author)
+              seen_author << author
+            end
           end
         end
       # Throw an exception if the layout couldn't be found.
@@ -96,9 +101,7 @@ module Jekyll
 
     def generate(site)
       site.write_author_indexes
-      #puts "site.authors #{site.authors}"
     end
-
   end
 
 
@@ -113,21 +116,22 @@ module Jekyll
     # Returns string
     #
     def author_links(authors)
+      if authors == nil
+        return ''
+      end  
+
       if String.try_convert(authors)
-               authors = [ authors ]
+        authors = [ authors ]
       end
+
+      authors = authors.select {|item| item != ""} || []
+
       authors = authors.map do |author|
         author_url = author_url(author)
-        "<a class='author' href='#{author_url}'>#{author}</a>"
+        "<a class='author' href='#{author_url}'>#{author}</a>"  
       end
-      case authors.length
-      when 0
-        ""
-      when 1
-        authors[0].to_s
-      else
-        "#{authors[0...-1].join(', ')}, #{authors[-1]}"
-      end
+
+      authors.join(', ')
     end
 
     def author_url(author)

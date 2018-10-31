@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "jekyll", ">=3.8.0"
-
+gem "jekyll-watch"
 gem 'rake'
 
 gem 'builder'
@@ -12,6 +12,7 @@ gem 'rdiscount'
 gem 'jekyll-sitemap'
 gem 'jekyll-multiple-languages-plugin'
 
+gem 'rspec'
 
 group :jekyll_plugins do
   gem "jekyll-paginate-v2"
