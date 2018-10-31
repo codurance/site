@@ -66,10 +66,9 @@ module Jekyll
 
         FileUtils.mkdir_p(fs_path_to_dir)
 
-        File.open(File.join(fs_path_to_dir, alias_file), 'w') do |file|
-          file.write(alias_template(destination_path))
-        end
-
+        file = File.open(File.join(fs_path_to_dir, alias_file), 'w')          
+        file.write(alias_template(destination_path))
+        
         alias_sections.size.times do |sections|
           @site.static_files << Jekyll::AliasFile.new(@site, @site.dest, alias_sections[0, sections + 1].join('/'), '')
         end
