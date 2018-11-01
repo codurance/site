@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run: build/_utility/build_site_prb.sh $FOLDER_NAME
       - store_test_results:
-          path: /coverage
+          path: /root/codurance/site/coverage
       - persist_to_workspace:
           root: .
           paths:
