@@ -38,7 +38,7 @@ describe "Generate Author" do
     expect{genAuthor.generate(site)}.to raise_exception(UncaughtThrowError, /uncaught throw "No 'author_index' layout found."/)
   end  
 
-  it 'GenerateAuthor calls write_author_indexes with no posts and no collections' do
+  it 'GenerateAuthor does not calls write_author_indexes if there are no posts and no collections' do
     site = double 
     allow(site).to receive(:layouts).and_return({'author_index' => 42})
     allow(site).to receive(:config).and_return({'no_author_dir' => 'no_authors'})
@@ -58,9 +58,11 @@ describe "Generate Author" do
 
     genAuthor = Jekyll::GenerateAuthor.new       
     genAuthor.generate(site)
+
+    expect(author_index_writer).to receive(:write_author_index).exactly(0).times()
   end
 
-  it 'GenerateAuthor calls write author with one author from each' do
+  it 'GenerateAuthor calls write write_author_indexes with one author from each' do
     site = double 
     allow(site).to receive(:layouts).and_return({'author_index' => 42})
     allow(site).to receive(:config).and_return({'no_author_dir' => 'no_authors'})
