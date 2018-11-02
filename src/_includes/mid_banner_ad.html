@@ -1,3 +1,7 @@
+{% assign now_date = 'now' | date: '%s' %}
+{% assign banner_until_date = "2018-10-04" | date: '%s' %}
+
+{% if now_date < banner_until_date %}
 <section class="g-pa-30 g-mt-50 g-mb-50" style="margin: 0 calc(50% - 50vw); background-color: #2D2D2D">
     <div class="container">
         <div class="row justify-content-center">
@@ -15,3 +19,4 @@
         </div>
     </div>
 </section>
+{% endif %}
