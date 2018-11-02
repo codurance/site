@@ -18,7 +18,7 @@ tags:
 Scala can be used to build Android applications, as an alternative to Java or Kotlin. Unlike them, setting up an Android project in Scala with SBT is not straightforward, and can give us some headaches to get it right. To show how this can be done, we are going to create new project template using the Android SDK Plugin for SBT.
 
 ##Required tools
-In order to develop Android apps in Scala, you need a minimum set of tools: [SBT](http://www.scala-sbt.org/) and [Android SDK](https://developer.android.com/studio/index.html).
+In order to develop Android apps in Scala, you need a minimum set of tools: [SBT](http://www.scala-sbt.org/) and [Android SDK](https://developer.android.com/studio/).
 
 ###Install SBT
 You can install SBT on Mac OSX using [Homebrew](http://brew.sh/).
@@ -30,8 +30,8 @@ $ brew install sbt
 To install SBT on other operating systems, you can follow the [instructions](http://www.scala-sbt.org/0.13/docs/Setup.html) on the official documentation.
 
 ###Install the Android SDK
-You can just download the latest version of the Android SDK from the [Developer website](https://developer.android.com/studio/index.html) and follow the installation instructions.
-Alternatively, you can install [Android Studio](https://developer.android.com/studio/index.html), which comes with the Android SDK and emulators.
+You can just download the latest version of the Android SDK from the [Developer website](hhttps://developer.android.com/studio/) and follow the installation instructions.
+Alternatively, you can install [Android Studio](https://developer.android.com/studio/), which comes with the Android SDK and emulators.
 
 ###Set the ANDROID_HOME environment variable
 On Mac OSX/Linux, you can just export the variable
@@ -148,7 +148,7 @@ libraryDependencies ++=
 We don't even need to use the SBT plugin to generate this template. If we prefer to craft our own minimum project, we could just create the project structure for SBT and Android manually, and add only the setup that we need.
 
 ##Run the project
-You will need to have an [connected Android device](https://developer.android.com/studio/run/device.html) or an [running emulator](https://developer.android.com/studio/run/emulator.html).
+You will need to have an [connected Android device](https://developer.android.com/studio/run/device) or an [running emulator](https://developer.android.com/studio/run/emulator).
 
 Once this is done, the final step is to run the application from sbt:
 
@@ -183,7 +183,7 @@ run <<= run in Android
 ##Integration with Android Studio
 From this point, you could develop your Android apps in Scala using a text editor and sbt. But it would be good to be able to use the official IDE, which offers a lot of useful tools. It's also possible to use IntelliJ, but I won't go into this detail in this post.
 
-Before we start, we'll need to install both the [Scala](https://plugins.jetbrains.com/plugin/1347) and [SBT plugins](https://plugins.jetbrains.com/plugin/5007) for Android Studio.
+Before we start, we'll need to install both the [Scala](https://plugins.jetbrains.com/plugin/1347-scala) and [SBT plugins](https://plugins.jetbrains.com/plugin/5007) for Android Studio.
 
 To import our project, open Android Studio and select `Import project (Eclipse, ADT, Gradle, etc.)`.
 

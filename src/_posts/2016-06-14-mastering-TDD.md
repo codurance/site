@@ -58,16 +58,16 @@ You have [this article](http://codurance.com/2015/05/12/does-tdd-lead-to-good-de
 As an iOS developer, I tend to be more of a mockist since I drive my tests from the UI. And developing an app in Swift has some challenging aspects since we don't have a Mocking framework... We do it all "by hand"...So yes knowing very well what kind of **_test double_** you need is a good thing. People tend to call them all mocks but as [Martin Fowler](https://twitter.com/martinfowler) said [here](http://martinfowler.com/articles/mocksArentStubs.html): 
 > Mocks aren't stubs
 
-But if you still have doubts about **_test doubles_**, this [excellent article](http://blog.8thlight.com/uncle-bob/2014/05/14/TheLittleMocker.html) by [Uncle Bob](https://twitter.com/unclebobmartin) will definitely shed a light on it… (and I even found a version for Swift [here](http://clean-swift.com/swifty-little-mocker/)). Magical! 
+But if you still have doubts about **_test doubles_**, this [excellent article](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html) by [Uncle Bob](https://twitter.com/unclebobmartin) will definitely shed a light on it… (and I even found a version for Swift [here](http://clean-swift.com/swifty-little-mocker/)). Magical! 
 
 ## **_Setting your priorities_**
 
-Yes, that's a really important one: use the [**_Transformation Priority Premise_**](https://blog.8thlight.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html) to avoid big steps and to guide you into the generalization of your code. As [Uncle Bob](https://twitter.com/unclebobmartin) said:
+Yes, that's a really important one: use the [**_Transformation Priority Premise_**](https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html) to avoid big steps and to guide you into the generalization of your code. As [Uncle Bob](https://twitter.com/unclebobmartin) said:
 
 > [...]Refactorings have counterparts called Transformations. Refactorings are simple operations that change the structure of code without changing its behavior. Transformations are simple operations that change the behavior of code.
 
 Another good article is [this one](http://codurance.com/2015/05/18/applying-transformation-priority-premise-to-roman-numerals-kata/) by [Pedro Santos](https://twitter.com/pedromsantos). 
-Don't forget that during the refactor phase your design skills are put to test: as [Sandro Mancuso](https://twitter.com/sandromancuso) said [here](http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/): 
+Don't forget that during the refactor phase your design skills are put to test: as [Sandro Mancuso](https://twitter.com/sandromancuso) said [here](https://codurance.com/2015/05/12/does-tdd-lead-to-good-design/): 
 
 > TDD is not a design tool. It’s a software development workflow that prompts for code improvement in its lifecycle. [...]
 > The great thing about TDD is that it is constantly asking us “Hey, can you make your code better? See how hard testing this class is becoming? OK, you made it work. Here’s your green bar. Now make it better.”

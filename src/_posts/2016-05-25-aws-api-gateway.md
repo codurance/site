@@ -13,7 +13,7 @@ tags:
 - serverless
 ---
 
-In a [previous post](/2016/05/11/aws-lambdas) I showed you how to create and deploy an AWS Lambda. We will continue that work and look at updating just the code for that lambda. We will also add a REST endpoint to the AWS Lambda using [AWS API Gateway](https://aws.amazon.com/api-gateway). 
+In a [previous post](/2016/05/11/aws-lambdas) I showed you how to create and deploy an AWS Lambda. We will continue that work and look at updating just the code for that lambda. We will also add a REST endpoint to the AWS Lambda using [AWS API Gateway](https://aws.amazon.com/api-gateway/). 
 
 
 So before you continue ... if you haven't already, please follow the instruction in the [previous post](/2016/05/11/aws-lambdas) to make sure you have a running AWS Lambda instance.

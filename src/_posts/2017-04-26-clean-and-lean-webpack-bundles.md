@@ -82,7 +82,7 @@ So by now you have a nice readable Webpack configuration and you have upgraded y
  
 A simple visual tool for examining your bundle is the [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/). It provides a provides a nice looking pie chart of your bundle composition allowing you to quickly understand which dependencies contribute to the size of the overall result. 
 
-For the less visual, and for other useful alternatives take a look at [Survive JS](https://survivejs.com/webpack/optimizing/analyzing-build-statistics).
+For the less visual, and for other useful alternatives take a look at [Survive JS](https://survivejs.com/webpack/optimizing/build-analysis/).
 
 Once you have a picture of your dependencies and their weight, then start thinking about **which ones are really required**.
  

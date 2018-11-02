@@ -60,7 +60,7 @@ If you want your environment to do more, here are some of the tools I use to imp
     *   If you use the VIM emulator, `:wa` will not trigger the reformatting - you must use the save shortcut
 4.  (Optional) Rebind the default `ctrl+shift+s` shortcut to `ctrl+s` for more convenience
 
-### Clippy linting hinting ([clippy](https://crates.io/crates/clippy))
+### Clippy linting hinting ([clippy](https://crates.io/crates/clipp/))
 
 ![picture of clippy from microsoft word](http://images.dailytech.com/nimage/19706_Clippy3.jpg)
 
@@ -71,7 +71,7 @@ Clippy is... clippy but for Rust. It will make suggestions about improvements to
 3.  `cd` to root directory of your project
 4.  `rustup run nightly cargo clippy`
 
-### Watch tasks ([cargo-watch](https://crates.io/crates/cargo-watch))
+### Watch tasks ([cargo-watch](https://crates.io/crates/cargo-watch/))
 
 When I'm writing code - I hate having to flip to the terminal to compile and run the tests and ensure it's all good. I like to use watch tasks to continuously run my tests. Rust has an option for this.  
 

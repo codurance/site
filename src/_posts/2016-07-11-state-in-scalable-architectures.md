@@ -110,7 +110,7 @@ State is data at a given instant in time. But what is the lifespan of that state
 
 * Stream scoped: this is the domain of near real time analytics. State is scoped for a window of time to calculate some analytics such as average, count or max.
 
-* Durable scoped: some data will stand even longer than the code that created it. In order to be sure about its durability we need to store it in some disk based engine like [Cassandra](http://cassandra.apache.org/), [Hadoop](http://hadoop.apache.org/) or [S3](https://aws.amazon.com/documentation/s3/).
+* Durable scoped: some data will stand even longer than the code that created it. In order to be sure about its durability we need to store it in some disk based engine like [Cassandra](http://cassandra.apache.org/), [Hadoop](http://hadoop.apache.org/) or [S3](https://docs.aws.amazon.com/s3/index.html#lang/en_us).
 
 Let's focus on state that should be stored for an undefined period of time.
 

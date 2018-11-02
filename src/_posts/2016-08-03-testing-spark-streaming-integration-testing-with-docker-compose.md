@@ -29,7 +29,7 @@ We [previously](http://robdmoore.id.au/blog/2015/01/26/testing-i-dont-even/) saw
 
 ### What is Docker Compose
 
-[Docker](https://www.docker.com/what-docker) provides a lightweight and secure paradigm for virtualisation. As a consequence Docker is the perfect candidate to set up and dispose container(processes) for integration testing. You can wrap your application or external dependencies in Docker containers and managing their lifecycle with ease.
+[Docker](https://www.docker.com/why-docker) provides a lightweight and secure paradigm for virtualisation. As a consequence Docker is the perfect candidate to set up and dispose container(processes) for integration testing. You can wrap your application or external dependencies in Docker containers and managing their lifecycle with ease.
 
 Orchestrating the relationships, order of execution or shared resources of a bunch of containers could be cumbersome and tedious. Instead of baking our own solutions with Bash scripts, we can use [Docker Compose](https://docs.docker.com/compose/).
 

@@ -15,7 +15,7 @@ tags:
 
 # Multiple projects in Visual Studio solutions considered harmful
 
-I agree with [Chad Myers](https://lostechies.com/chadmyers/author/chadmyers/) when he defines a common project anti-pattern [“Many projects in a Visual Studio Solution”](https://lostechies.com/chadmyers/2008/07/16/project-anti-pattern-many-projects-in-a-visual-studio-solution-file/).
+I agree with Chad Myers when he defines a common project anti-pattern [“Many projects in a Visual Studio Solution”](https://lostechies.com/chadmyers/2008/07/16/project-anti-pattern-many-projects-in-a-visual-studio-solution-file/).
 
 ## Fast feedback loop
 

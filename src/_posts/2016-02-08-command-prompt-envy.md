@@ -26,7 +26,7 @@ Almost a year ago [Amir](https://twitter.com/amirbazazi) [posted](http://coduran
 
 ### One more tweek
 We already have a cool prompt, try to navigate to a git repository. We want just a bit more :) Let's try a more colourful theme.
-Let's use the "Bullet train" [theme](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
+Let's use the "Bullet train" [theme](https://github.com/caiogondim/bullet-train.zsh)
 
 Execute the folowing commands
  ```

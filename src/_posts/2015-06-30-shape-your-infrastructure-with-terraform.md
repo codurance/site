@@ -22,7 +22,7 @@ Unfortunately the reality is not necessarily so simple. When you start your jour
 
 AWS provides many different interfaces which allow automation of an infrastructure process. You can use a REST API or CLI to create your own script. This is probably the most flexible solution, but at the same time it can be time consuming.
 
-[Terraform](https://terraform.io/) from HashiCorp can give you similar flexibility and at the same time you don't have to spend weeks to write bash or python scripts to provision your cloud.
+[Terraform](https://www.terraform.io/) from HashiCorp can give you similar flexibility and at the same time you don't have to spend weeks to write bash or python scripts to provision your cloud.
 
 ## Terraform for the rescue - plan, apply, update, destroy.
 
@@ -36,7 +36,7 @@ server will be available to the wider internet. At the same time our service nee
 
 #### Provider
 
-We are now ready to introduce Terraform. We need to create configuration files which will describe components required to build our infrastructure. Configuration files can be written in [HashiCorp Configuration Language](https://terraform.io/docs/configuration/) (similar to YAML) or JSON. All configuration files should have extension ***.tf*** and be stored in the same directory. Terraform automatically combines all resources defined in ***.tf*** files.
+We are now ready to introduce Terraform. We need to create configuration files which will describe components required to build our infrastructure. Configuration files can be written in [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/) (similar to YAML) or JSON. All configuration files should have extension ***.tf*** and be stored in the same directory. Terraform automatically combines all resources defined in ***.tf*** files.
 
 Before we add any resource we have know where our resources are going to exist. To do that we have to create a *provider* definition.
 

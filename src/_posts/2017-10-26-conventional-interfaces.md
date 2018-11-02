@@ -12,7 +12,7 @@ tags:
 - SICP
 ---
 
-Whilst reading [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html), also known as the **SICP** book, I discovered the concept of **Sequences as Conventional Interfaces**. Even though it is an idea that I was somewhat familiar with, it was the first time I encountered a more formal definition for it. Reading about it has helped me to better understand its full power.
+Whilst reading [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html), also known as the **SICP** book, I discovered the concept of **Sequences as Conventional Interfaces**. Even though it is an idea that I was somewhat familiar with, it was the first time I encountered a more formal definition for it. Reading about it has helped me to better understand its full power.
 
 
 Most of the ideas and some of the code samples contained in this post originally come from the SICP book. Although it is written using Lisp the ideas and concepts are applicable to most languages. We will be following them in **Haskell** as it is the language I am currently learning and enjoying, its terse syntax also makes it a great fit for a blog post. 
@@ -242,4 +242,4 @@ orElse xs _  = xs
 
 ## References
 
-[SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
+[SICP](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)

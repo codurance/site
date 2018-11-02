@@ -24,7 +24,7 @@ you have created.
 
 For example, at one of our clients, my colleagues and I are responsible for a shared component called the 
 *Search Component*. Like many of the 'shared' libraries used in this particular project, the *Search Component* is published to, 
-and accessed from a private [Artifactory](https://www.jfrog.com/Artifactory/) repository. It can be inserted anywhere in the application (usually the header), allowing the user to 
+and accessed from a private [Artifactory](https://jfrog.com/Artifactory/) repository. It can be inserted anywhere in the application (usually the header), allowing the user to 
 easily search the site's content and instantly see a results summary. 
 
 <img src="{{ site.baseurl }}/assets/custom/img/blog/2016_12_21_how_to_npm_link/search-component.png" class="img img-fluid"> 
