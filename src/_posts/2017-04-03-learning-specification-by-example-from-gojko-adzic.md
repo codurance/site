@@ -16,7 +16,7 @@ tags:
 - apprenticeship
 
 ---
-I recently had the pleasure to attend Gojko Adzic’s [“Specification by Example: From User Stories to Acceptance Test"](https://skillsmatter.com/courses/559-gojko-adzic-specification-by-example) training course … taught by Gojko himself! Having read his brilliant books: [“Bridging the Communication Gap”](https://gojko.net/books/bridging-the-communication-gap) and [“Specification by Example. How successful teams deliver the right Software”](https://gojko.net/books/specification-by-example/), I was very excited to get the chance to discuss my experiences of applying spec-by-example with the man himself. My goals for the course were as follows:
+I recently had the pleasure to attend Gojko Adzic’s “Specification by Example: From User Stories to Acceptance Test" training course … taught by Gojko himself! Having read his brilliant books: [“Bridging the Communication Gap”](https://gojko.net/books/bridging-the-communication-gap) and [“Specification by Example. How successful teams deliver the right Software”](https://gojko.net/books/specification-by-example/), I was very excited to get the chance to discuss my experiences of applying spec-by-example with the man himself. My goals for the course were as follows:
 
 * Learn something that I couldn't find in Gojko's books.
 * Refine my approach to Specification by Example
