@@ -68,6 +68,7 @@ Then you can run `docker-compose build`
 
 Starting the container with `docker-compose up` doesnt seem to work but starting it with `docker run -p 4000:4000 -d <imageid>` does, the downside
 is that you will have to run `docker-compose build`, `docker images` and `docker run -p 4000:4000 -d <imageid>` to check each update you make.
+Note (Jorge): `docker-compose up` works for me, but there is no automated refresh
 	
 ----
 
