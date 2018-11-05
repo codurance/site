@@ -56,8 +56,8 @@ Well, don't forget that Swift, first of all, is a type-safe language. And it's a
 Yes, you would have to learn a new language... But it's Swift!
 Not convinced yet? Take a look at these 2 articles that compare server side Swift (in this case Vapor) with a lot of other well-known languages:
 
-- [Server Side Swift vs. The Other Guys — 1: Input](https://medium.com/@qutheory/server-side-swift-vs-the-other-guys-1-input-ec48d7be37b7#.pjqw1mint)  
-- [Server Side Swift vs. The Other Guys — 2: Speed](https://medium.com/@qutheory/server-side-swift-vs-the-other-guys-2-speed-ca65b2f79505#.iiykwonuy)
+- [Server Side Swift vs. The Other Guys — 1: Input](https://medium.com/@codevapor/server-side-swift-vs-the-other-guys-1-input-ec48d7be37b7)  
+- [Server Side Swift vs. The Other Guys — 2: Speed](https://medium.com/@codevapor/server-side-swift-vs-the-other-guys-2-speed-ca65b2f79505)
 
 Please note that these tests were made before Swift 3.0 came out.
 

@@ -384,9 +384,9 @@ of this blog post.
 yourself where the hell aProduct() and aShoppingBasket() come from,
 check the code in here:*
 
-[ProductBuilder.java](https://gist.github.com/1988792)
+[ProductBuilder.java](https://gist.github.com/sandromancuso/1988792)
 
-[ShoppingBasketBuilder.java](https://gist.github.com/1988805)
+[ShoppingBasketBuilder.java](https://gist.github.com/sandromancuso/1988805)
 
 *For more information about the original problem that triggered all
 this, please read [part 1](/2012/03/06/extract-inject-kill-breaking/)

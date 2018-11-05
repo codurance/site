@@ -13,7 +13,7 @@ tags:
 ---
 
 
-I had the pleasure of attending [Alberto Brandolini's Domain Driven Design Modeling workshop](https://skillsmatter.com/courses/562-alberto-brandolini-s-ddd-modelling-workshop) during the last week of June 2017. I was very excited to learn [Event Storming](http://eventstorming.com/) directly from the author and further having the chance to learn more about DDD.
+I had the pleasure of attending [Alberto Brandolini's Domain Driven Design Modeling workshop](https://skillsmatter.com/courses/562-alberto-brandolini-ddd-modelling-workshop) during the last week of June 2017. I was very excited to learn [Event Storming](http://eventstorming.com/) directly from the author and further having the chance to learn more about DDD.
 
 # Learning experience
 

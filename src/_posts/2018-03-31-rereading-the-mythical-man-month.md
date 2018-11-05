@@ -199,7 +199,7 @@ And _if the system design is to be free to change, the organization must be prep
 
 A few days ago, I saw this tweet by <a href="https://practicingdeveloper.com/" target="_blank">Gregory Brown</a>:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Protip?src=hash&amp;ref_src=twsrc%5Etfw">#Protip</a>: If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag <a href="https://twitter.com/conways_law?ref_src=twsrc%5Etfw">@conways_law</a> and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) <a href="https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw">March 16, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">#Protip: If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag <a href="https://twitter.com/conways_law?ref_src=twsrc%5Etfw">@conways_law</a> and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) <a href="https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw">March 16, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Acknowledgments

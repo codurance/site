@@ -82,7 +82,7 @@ You can go to the [Io language website](http://iolanguage.com/) and
 download the language or click
 [here](http://github.com/stevedekorte/io/zipball/master) to go start
 downloading it. As there is no Ubuntu package for that, you will be
-downloading the Io's source code. This will point to [Steve Dekorte's version](https://github.com/stevedekorte/io). I ended up downloading
+downloading the Io's source code. This will point to [Steve Dekorte's version](https://github.com/IoLanguage/io). I ended up downloading
 [Jeremy Tregunna's version](https://github.com/jeremytregunna/io). It
 should work the same. Check each one is the most up-to-date.
 

@@ -20,7 +20,7 @@ In this second post of the three parts series about how to scale an Umbraco webs
 
 ### A one-click process, maybe a few more clicks
 
-If you don't have one yet, create your [Windows Azure Free Trial subscription](https://azure.microsoft.com/en-gb/pricing/free-trial/), then log into your portal.
+If you don't have one yet, create your [Windows Azure Free Trial subscription](https://azure.microsoft.com/en-gb/free/), then log into your portal.
 
 <img src="{{site.baseurl}}/assets/custom/img/blog/2016-06-20-umbraco-on-azure/03.png" alt="" class="img-fluid"/>
 

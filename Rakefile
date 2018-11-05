@@ -46,6 +46,10 @@ end
 
 task :test do
   sh 'bundle exec rspec'
+end
+
+task :checklinks do
+  sh 'ruby ./tools/broken-links-detector/detect_broken_links.rb'
 end  
 
 task :default => :servequick

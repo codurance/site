@@ -14,7 +14,7 @@ tags:
 
 Recently, I decided to include Swagger documentation to our time sheet application. Although Swagger provides tools to help clients integrate with your REST API the most powerful feature, in my opinion, is that it acts as "living documentation" for the API. Adding Swagger to my the application had a couple of pleasant side-effects:
 
-Idiomatic Clojure encourages the use of data structures such as maps. This work really well because JSON to/from Clojure Map translation, and persistence becomes straight forward whether you are using the [org.clojure/java.jdbc](https://github.com/clojure/java.jdbc) or persisting to a document database such as MongoDB. However, The problem with this approach is that understanding your entities becomes difficult. You often need to resort to the DDL for this purpose and in case of some databases you may not even have that. In cases where you are using migrations - your DDL may be scattered across many migrations over time. The Swagger support provided by [metosin/compojure-api](https://github.com/metosin/compojure-api) uses [prismatic/schema](https://github.com/Prismatic/schema) to define your API. Here is an example of what Activity and a list of Activities looks like in my time sheet application:
+Idiomatic Clojure encourages the use of data structures such as maps. This work really well because JSON to/from Clojure Map translation, and persistence becomes straight forward whether you are using the [org.clojure/java.jdbc](https://github.com/clojure/java.jdbc) or persisting to a document database such as MongoDB. However, The problem with this approach is that understanding your entities becomes difficult. You often need to resort to the DDL for this purpose and in case of some databases you may not even have that. In cases where you are using migrations - your DDL may be scattered across many migrations over time. The Swagger support provided by [metosin/compojure-api](https://github.com/metosin/compojure-api) uses [plumatic/schema](https://github.com/plumatic/schema) to define your API. Here is an example of what Activity and a list of Activities looks like in my time sheet application:
 
 ```clojure 
 (def Activity {
@@ -25,7 +25,7 @@ Idiomatic Clojure encourages the use of data structures such as maps. This work 
 
 (def Activities [Activity])
 ```
-Prismatic Schema provides other features such as attribute optionality, value optionality, custom schema types etc. See [README](https://github.com/Prismatic/schema) for more details. 
+Prismatic Schema provides other features such as attribute optionality, value optionality, custom schema types etc. See [README](https://github.com/plumatic/schema) for more details. 
 
 Now that I have a single place where I can go to fully understand how my entities/value-objects looks like. The same entities/value-objects are used in my route definitions to define the REST API.
 

@@ -23,7 +23,7 @@ tags:
   * MacOs
   * Linux
 * CLR
-  * [.Net Framework](https://www.microsoft.com/net/download/framework) (Windows)
+  * [.Net Framework](https://www.microsoft.com/net/download) (Windows)
   * [Mono](http://www.mono-project.com/) (MacOs, Linux)
 * [VSCode](https://code.visualstudio.com/)
    * With ionide extensions for VSCode ([http://ionide.io/](http://ionide.io/))

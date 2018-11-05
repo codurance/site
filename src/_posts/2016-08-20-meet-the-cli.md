@@ -28,9 +28,9 @@ What enables code written in C#, F# and VB.Net to run within the same applicatio
 
 ### A standardised specification
 
-When I was working on a legacy website, developed in VB.Net, I had to implement [PayPal Payments Pro](https://developer.paypal.com/webapps/developer/docs/classic/lifecycle/sdks/).  After some searching, I found out that the PayPal team provided several SDKs for different platforms, including .Net, to consume their [API](https://developer.paypal.com/webapps/developer/docs/classic/). And guess what? The .Net SDK was developed in C#… 
+When I was working on a legacy website, developed in VB.Net, I had to implement [PayPal Payments Pro](https://developer.paypal.com/docs/directory/#paypal-sdks).  After some searching, I found out that the PayPal team provided several SDKs for different platforms, including .Net, to consume their [API](https://developer.paypal.com/docs/classic/api/). And guess what? The .Net SDK was developed in C#… 
 But in the .Net world, that’s not a problem.
-I just referenced the [dll](https://msdn.microsoft.com/en-us/library/ms682589.aspx) (compiled .net library, similar to the Java equivalent .jar containing .class files) in my project and was good to go. No need to build a client API and re-invent what was already implemented by brilliant developers!
+I just referenced the [dll](https://docs.microsoft.com/en-gb/windows/desktop/Dlls/dynamic-link-libraries) (compiled .net library, similar to the Java equivalent .jar containing .class files) in my project and was good to go. No need to build a client API and re-invent what was already implemented by brilliant developers!
 
 All thanks to the CLI.
 
@@ -48,7 +48,7 @@ Through the platform-specific Common Language Runtime (CLR).Net provides the VES
 The CLR is somewhat equivalent to the Java Virtual Machine as it compiles the Intermediate Language code, previously compiled from C# or F# , into machine code. But the CLR does more than that: it provides services to managed code such as exception handling, garbage collection, security…
 But what is managed code? [Managed code](http://en.wikipedia.org/wiki/Managed_code) is code written in a language that is compliant with the CLS specification such as C# or .Managed C++, and thus can be compiled to Intermediate Language. ([read more](http://www.developer.com/net/cplus/article.php/2197621/Managed-Unmanaged-Native-What-Kind-of-Code-Is-This.htm))
 
-To sum up, what makes possible for C#, F#, J#, VB.Net, [Clojure](http://www.clojure.org/about/clojureclr) , and other .Net languages to run together is that they are all compiled to the identical intermediate code. The compilation of code in .Net is done twice: first to compile from the language specific code to the Common Intermediate Language; and secondly from the CIL to native machine code [at runtime](https://msdn.microsoft.com/en-us/library/ht8ecch6%28v=vs.90%29.aspx).
+To sum up, what makes possible for C#, F#, J#, VB.Net, [Clojure](http://www.clojure.org/about/clojureclr) , and other .Net languages to run together is that they are all compiled to the identical intermediate code. The compilation of code in .Net is done twice: first to compile from the language specific code to the Common Intermediate Language; and secondly from the CIL to native machine code [at runtime](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ht8ecch6(v=vs.90)).
 
-If you want to explore other implementations of the Common Language Infrastructure specification, you can have a look at the open source [Mono platform](http://www.mono-project.com/docs/about-mono/), or at Microsoft’s open source implementation [.Net Core](https://www.microsoft.com/net/core/platform).
+If you want to explore other implementations of the Common Language Infrastructure specification, you can have a look at the open source [Mono platform](http://www.mono-project.com/docs/about-mono/), or at Microsoft’s open source implementation [.Net Core](https://www.microsoft.com/net/learn/dotnet/what-is-dotnet).
 

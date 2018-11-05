@@ -16,7 +16,7 @@ canonical:
 
 ---
 
-Last month I attended [Fast Track to RESTful Microservices training](https://skillsmatter.com/courses/541-fast-track-to-restful-to-microservices) at [Skillsmatter](https://skillsmatter.com). During the course, we explored what REST APIs can offer to web applications in general and microservices communication in particular. Personally, the most important outcome of the course is a better understanding of what REST really means and what are its pros and cons.
+Last month I attended [Fast Track to RESTful Microservices training](https://skillsmatter.com/courses/541-fast-track-to-restful-microservices) at [Skillsmatter](https://skillsmatter.com). During the course, we explored what REST APIs can offer to web applications in general and microservices communication in particular. Personally, the most important outcome of the course is a better understanding of what REST really means and what are its pros and cons.
 
 During most of my career, I've been focused on mobile technologies, therefore, being on the consuming side of web APIs. Most APIs that I've ever consumed were supposed to be RESTful, now that I better understand what RESTful means I can say that 99%  of them weren't even close to RESTful (Clients are broken because of something being added in the server side sounds familiar?).
 

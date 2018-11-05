@@ -26,7 +26,7 @@ So I decided to carry out a big refactoring and apply the VIPER architectural pa
 
 ## So what's VIPER?
 
-VIPER stands for View, Interactor, Presenter, Entity, and Router, and it's a version of the [clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) applied for iOS.
+VIPER stands for View, Interactor, Presenter, Entity, and Router, and it's a version of the [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) applied for iOS.
 It's not my intention to take a deep-dive into VIPER in this article, but if you are interested in learning more, [here](https://www.objc.io/issues/13-architecture/viper/), you have a good definition of the architecture, and [here](https://swifting.io/blog/2016/03/07/8-viper-to-be-or-not-to-be/) you can find a good explanation that can help you decide if you want to use it in your app or not. The section "Benefits of VIPER" in [this article](https://brigade.engineering/brigades-experience-using-an-mvc-alternative-36ef1601a41f#.d8zy2b507) explain quite well why I decided to use VIPER.
 
 ## Make it work

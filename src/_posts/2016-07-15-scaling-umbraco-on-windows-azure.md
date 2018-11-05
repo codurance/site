@@ -33,7 +33,7 @@ Scaling up will allow your application to get more resources on the same instanc
 Scaling out on Windows Azure consists of spinning additional instances of the application. 
 Load balancing between the instances is provided by the platform and thus does not require further configuration. 
 The application must therefore be multi-instance safe. This requires extra care to ensure that items such as how the data is consumed by the application, the handling of user sessions and access to resources are thread safe. 
-Sticky-sessions are not managed out of the box by the Azure platform, one way to ensure continuity of sessions on multi-instances is to store sessions in the [Azure session state provider](https://msdn.microsoft.com/library/azure/gg185668.aspx) or in the Azure Redis Cache; another way would be to leverage the [routing capabilities in Windows Azure](https://channel9.msdn.com/shows/Cloud+Cover/Cloud-Cover-Episode-24-Routing-in-Windows-Azure/) to route requests to stateful instances.
+Sticky-sessions are not managed out of the box by the Azure platform, one way to ensure continuity of sessions on multi-instances is to store sessions in the [Azure session state provider](https://docs.microsoft.com/en-us/previous-versions/azure/azure-services/gg185668(v=azure.100)) or in the Azure Redis Cache; another way would be to leverage the [routing capabilities in Windows Azure](https://channel9.msdn.com/shows/Cloud+Cover/Cloud-Cover-Episode-24-Routing-in-Windows-Azure/) to route requests to stateful instances.
 
 Go to the application settings on your Windows Azure Web Service (WAWS) platform and look for the App service plan menu. There you will find the Scale out menu.
 

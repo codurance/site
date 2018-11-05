@@ -100,5 +100,5 @@ model.get('teamsById['789']['name', 'memberCount']');
 There are no silver bullets in software and nobody is claiming than Falcor or GraphQL are going to solve every single problem with client/server integration. However, if you have an application with a lot of clients and your backend has a complex data model, it might be worth giving this new paradigm a try.
 
 * [Falcor](http://netflix.github.io/falcor)
-* [GraphQL](https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html)
+* [GraphQL](https://reactjs.org/blog/2015/05/01/graphql-introduction.html)
 * [Demand-Driven Architecture](http://www.infoq.com/presentations/domain-driven-architecture)

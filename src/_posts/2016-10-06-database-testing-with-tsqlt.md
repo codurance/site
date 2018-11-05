@@ -29,7 +29,7 @@ SQL Server Express is a free lightweight version of Microsoft’s SQL Server dat
 ###Installing MSSQL Server Manager
 
 SQL Server Management studio provides us with a powerful user interface to access, manage and configure our MS SQL database server.
-If you don’t already have it, [install it](https://msdn.microsoft.com/en-us/library/mt238290.aspx). Please note this will take some time.
+If you don’t already have it, [install it](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017). Please note this will take some time.
 
 ###Downloading tSQLt
 
@@ -46,7 +46,7 @@ Once you have SQL Server Express up and running, and MSSQL Management Studio ins
 
 The tSQLt team provides a quick start example database and a set of tests to help developers get started quickly on how the framework works.
 Let’s try the example together.
-First unzip the tSQLt folder you downloaded, and make sure that CLRs are enabled on your development server. Enabling [CLR integration](https://msdn.microsoft.com/en-us/library/ms131048.aspx) allows us to run managed code, such as C#, on our SQL Server database.
+First unzip the tSQLt folder you downloaded, and make sure that CLRs are enabled on your development server. Enabling [CLR integration](https://docs.microsoft.com/en-us/sql/relational-databases/clr-integration/clr-integration-enabling?view=sql-server-2017) allows us to run managed code, such as C#, on our SQL Server database.
 
 <img src="{{ site.baseurl }}/assets/custom/img/blog/db-testing/db-testing-2.png" alt="" class="img-fluid"/>
 

@@ -31,7 +31,7 @@ A concept I was very curious about was the [Walking Skeleton](http://blog.codecl
 
 ### Taking on the challenge
 
-I had started the project in [Scala](http://www.scala-lang.org/) and used [SBT](http://www.scala-sbt.org/) as a build tool, both of which I'd never used before in a project. As I had limited experience with functional programming, I watched the videos from the Coursera Lectures on [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun). Solving some of the riddles there was quite fun! Unfortunately, that didn't help with the hurdles and hiccups of using SBT and a couple of plugins that didn't play well with the newest Scala version. Quite a couple of times I got stuck and had to ask my mentor for help. But pairing with him always brought a great deal of motivation and progress.
+I had started the project in [Scala](http://www.scala-lang.org/) and used [SBT](http://www.scala-sbt.org/) as a build tool, both of which I'd never used before in a project. As I had limited experience with functional programming, I watched the videos from the Coursera Lectures on [Functional Programming Principles in Scala](https://www.coursera.org/learn/progfun1). Solving some of the riddles there was quite fun! Unfortunately, that didn't help with the hurdles and hiccups of using SBT and a couple of plugins that didn't play well with the newest Scala version. Quite a couple of times I got stuck and had to ask my mentor for help. But pairing with him always brought a great deal of motivation and progress.
 
 ### Making the first steps
 

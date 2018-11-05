@@ -30,7 +30,7 @@ Javascript frameworks organise code and simplify interaction with web browser. S
 
 The source code cannot exist without tests. [QUnit](http://qunitjs.com/), [Jasmine](http://jasmine.github.io/) or [Mocha](http://mochajs.org/) are unit test frameworks that can help you to test your code. Unit test libraries already provide basic assertions, but you can extend this functionality by using [chai](http://chaijs.com/) or [should.js](http://shouldjs.github.io/) libraries. If you want to use mocks, stubs and spies in your code, there are libraries for that too (e.g. [sinon](http://sinonjs.org/)).
 
-Node.js is the best choice if you need some environment to run tests. [Karma](http://karma-runner.github.io/) or [Testem](https://github.com/airportyh/testem) give us possibility to verify behaviours in web browsers. Tests can be also executed as part of a Continuous Integration pipeline using a headless browser ([PhantomJS](http://phantomjs.org/)).
+Node.js is the best choice if you need some environment to run tests. [Karma](http://karma-runner.github.io/) or [Testem](https://github.com/testem/testem) give us possibility to verify behaviours in web browsers. Tests can be also executed as part of a Continuous Integration pipeline using a headless browser ([PhantomJS](http://phantomjs.org/)).
 
 ### I’ve got a choice
 
