@@ -664,7 +664,7 @@
 
 - id: nick_white
   name: Nick White
-  image: /assets/custom/img/team/nick.png
+  image: /assets/custom/img/team/nick_white.png
   role: Apprentice
   fullDescription:
     <p>Originally from a musical background, Nick began his career in software working on a large image-processing application in the film industry. It wasn't long before he discovered the huge benefits of incorporating software craftsmanship principles into his coding.</p>
