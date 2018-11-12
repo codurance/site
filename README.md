@@ -185,4 +185,3 @@ backstop test
 
 The first captures a snapshot of the reference site (currently set to https://codurance.com)
 The second runs it against the local version of the site (locahost:4000) and compares the differences.
-
