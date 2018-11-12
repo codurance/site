@@ -52,3 +52,5 @@ Makefile
 
 tools/snapshots/backstop_data/*
 output/*
+
+coverage/*

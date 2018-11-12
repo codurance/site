@@ -21,6 +21,9 @@ jobs:
       - run: echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
       - checkout
       - run: build/_utility/build_site_prb.sh $FOLDER_NAME
+      - store_artifacts:
+          path: /root/codurance/site/coverage
+          destination: rspec-coverage
       - persist_to_workspace:
           root: .
           paths:

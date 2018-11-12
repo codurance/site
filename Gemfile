@@ -14,6 +14,8 @@ gem 'jekyll-multiple-languages-plugin'
 
 gem 'rspec'
 
+gem 'simplecov', require: false, group: :test
+
 group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-feed"
