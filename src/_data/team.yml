@@ -661,4 +661,14 @@
     <p>David is multi-faceted. When he doesn't think or build software, he thinks about various disciplines such as political philosophy, economics, sociology, psychology, natural science and machine intelligence (also known as "artificial intelligence", but he doesn't like that term). He loves to delve into any subject he finds interesting. He is fascinated by space opera in film, television or video games.</p>
   twitter: dgraciac
   github: dgraciac  
-  
+
+- id: nick_white
+  name: Nick White
+  image: /assets/custom/img/team/nick_white.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Originally from a musical background, Nick began his career in software working on a large image-processing application in the film industry. It wasn't long before he discovered the huge benefits of incorporating software craftsmanship principles into his coding.</p>
+    <p>He's looking forward to honing his craft and learning from the very best as an apprentice at Codurance.</p>
+    <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
+  github: nawhi
+
