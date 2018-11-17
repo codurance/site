@@ -44,9 +44,9 @@ public class PowersOf2
 
 When run it prints out: `2 4 8 16 32 64 128 256`
 
-What happens is, the `Power` method is declared to return an `IEnumerable` instance, and the foreach loop calls `MoveNext` on it repeatedly. However, the `Power` method does not explicitly create an instance of `IEnumerable`. By using the `yield return` statement, the method itself defines an iterator instead. At this point, control returns to the foreach loop whereupon its body is executed once. Then it calls `MoveNext` on the iterator, which causes control to return to the point immediately after the `yield return` statement. All state internal to the `Power` method is preserved from before. In this case, it will iterate the for loop again. Control thus continually jumps between the foreach loop and the `yield return` statement until finally `Power` exits without calling `yield return` again.
+What happens is, the `Power` method is declared to return an `IEnumerable` instance, and the foreach loop calls `MoveNext` on it repeatedly. However, the `Power` method does not explicitly create an instance of `IEnumerable`. By using the `yield return` statement, the method itself defines an iterator instead. The value returned is the first iterated element. At this point, control returns to the foreach loop whereupon its body is executed once. Then it calls `MoveNext` on the iterator, which causes control to return to the point immediately after the `yield return` statement. All state internal to the `Power` method is preserved from before. In this case, it will iterate the for loop again and supply the next iterated element. Control thus continually jumps between the foreach loop and the `yield return` statement until finally `Power` exits without calling `yield return` again.
 
-As [the documentation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield) explains it, the principal use case for `yield return` is to implement an iterator for a custom collection type in a method, without the need to create a new `IEnumerable` or `IEnumerator` implementation, which would require a new class. It gives another example to illustrate this point.
+As [the documentation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield) explains it, the principal use case for `yield return` is to implement an iterator for a custom collection type in a method, without the need to create a new `IEnumerable` or `IEnumerator` implementation, thus avoiding the need to define a new class. It gives another example to illustrate this point.
 
 ### But what if the iterator method never exits?
 
@@ -73,11 +73,7 @@ static void Main()
 }
 ```
 
-Now we _have_ to break out of the loop because clearly `Numbers` will never exit normally. So what would be the point of that?
-
-A deep and profound point, in fact.
-
-What we have now is an `IEnumerable` that purports to contain all the natural numbers, which is an infinite set.
+Now we _have_ to break out of the loop because clearly `Numbers` will never exit normally. So what would be the point of that? A deep and profound point, in fact. What we have now is an `IEnumerable` that purports to contain all the natural numbers, which is an infinite set.
 
 ### Surely that is impossible!
 
@@ -102,13 +98,13 @@ I said that the `Stream.iterate` was interesting and that I would come back to i
 Stream.iterate(n * 2, nonPrime -> nonPrime += n)
 ```
 
-It generates a stream of integers beginning at `(n * 2)` and increasing by `n` each time. Notice there is no upper bound there. The part that makes it stop taking integers from the stream when they exceed the value of `limit` is here:
+It generates a stream of integers beginning at `(n * 2)` and increasing by `n` each time. Notice there is no upper bound there. The part that makes it stop taking integers from the stream - when they exceed the value of `limit` - is here:
 
 ```java
       .takeWhile(nonPrime -> nonPrime <= limit)
 ```
 
-Also, if you recall in the previous article we saw several uses of the `range` function in Clojure. In each case I used it something like this:
+Also, if you recall in the previous article we saw several uses of the `range` function in Clojure. In each case I used it in this manner:
 
 ```clojure
 (range 1 10)
@@ -121,11 +117,13 @@ user=> (take 5 (range))
 (0 1 2 3 4)
 ```
 
-That's right, `range` with no arguments is another purportedly infinite list of integers. However, if you execute `(range)` in the REPL without `(take)` then it will hang and do nothing. It is waiting for something to be taken. Just as with the Java stream and the C# yield loop, it is only when values are requested that the sequences are generated. This is why the evaluation is said to be lazy. An ‘eagerly’ evaluated sequence generates all its values immediately on creation, just as `(range 1 10)` does. A ‘lazily’ evaluated sequence only generates its values on demand. It is this deferred execution that enables the pretence of infinite sequences. With a wink and a knowing nod, the pretence can be maintained, provided the program never actually asks for the promise to be fulfilled.
+That's right, `range` with no arguments is another purportedly infinite list of integers. However, if you execute `(range)` in the REPL by itself then it will hang and do nothing. It is waiting for something to be taken. Just as with the Java stream, and the C# `yield` loop, it is only when values are requested that they are generated. This is why the evaluation is said to be lazy. An ‘eagerly’ evaluated sequence generates all its values immediately on creation, just as `(range 1 10)` does. A ‘lazily’ evaluated sequence only generates its values on demand. It is this deferred execution that enables the pretence of infinite sequences. With a wink and a knowing nod, the pretence can be maintained, provided the program never actually asks for the promise to be fulfilled.
 
 ### Loop indices.
 
-Earlier in the series I asserted that the functional style means hardly ever having to write a loop again. Mapping a function over a sequence does indeed cover a great many use cases, but it’s still true that sometimes you need to keep an iteration counter. Now, in a language like C# or Java, rather than go through the contortions necessary to do it in a functional style, I wouldn’t bother. I would just use a traditional for loop instead:
+As you have probably figured out by now, I like a clever trick as much as the next person, but I like it best if it can be put to some practical use that makes my code better. So it is with lazy evaluation.
+
+Earlier in the series, I asserted that the adopting functional style means you will hardly ever have to write a loop again. Mapping and reducing do indeed cover a great many use cases, but nevertheless sometimes you do need to keep track of your iteration with some kind of counter. For the sake of pragmatism, rather than go through the contortions necessary to do it in a functional style in a language like C# or Java, I wouldn’t bother. I would just use a traditional for loop instead:
 
 ```java
 public void IterateWithIndex()
@@ -136,9 +134,9 @@ public void IterateWithIndex()
 }
 ```
 
-Although I _do_ prefer not to mutate state unnecessarily, I hold simplicity as a higher virtue, and in some imperative languages this is still the simplest way to tackle the problem. All else being equal, I would choose three lines of simple code that mutates state over half a dozen lines of complicated functional code that does the same job.
+I _do_ prefer not to mutate state unnecessarily, but I consider simplicity a higher virtue still, and in some languages this is still the simplest way to tackle the problem. All else being equal, I would choose three lines of simple code that mutates state over half a dozen lines of inscrutable functional code that does the same job.
 
-I said _some_ imperative languages, because as a counter-example, Groovy provides an `eachWithIndex` method that allows this to be done without the administration work:
+Some languages give you an easy way out-of-the-box to iterate a sequence in a functional style while also giving you an iteration counter. Groovy provides an `eachWithIndex` method that allows this to be done without the administration work:
 
 ```groovy
 [
@@ -154,7 +152,7 @@ I said _some_ imperative languages, because as a counter-example, Groovy provide
 }
 ```
 
-Getting back on to lazy sequences, the problem could be solved in Clojure an interesting way by using `(range)`:
+Swerving back to lazy evaluation, the problem could be solved in Clojure in an interesting way by using `(range)`:
 
 ```clojure
 (map (fn [i number] (format "%d: %s" i number))
@@ -162,20 +160,22 @@ Getting back on to lazy sequences, the problem could be solved in Clojure an int
      '("one" "two" "three" "four" "five"))
 ```
 
-Recall that `map` over multiple sequences keeps going until one of the sequences runs out. Clearly that isn't going to be the sequence returned by `(range)`, so it keeps counting up until the other list is exhausted. Therefore the result is:
+Recall that `map` on multiple sequences keeps going until the shortest of the sequences runs out. Clearly the lazily evaluated sequence is not going to run out first, so it keeps counting up until the other list is exhausted. Therefore, the result is:
 
 ```
 ("0: one" "1: two" "2: three" "3: four" "4: five")
 ```
 
-That said, for this case I wouldn’t do this, because Clojure also provides the `map-indexed` function which does a similar job to `eachWithIndex` in Groovy:
+That said, Clojure also provides the `map-indexed` function which does a similar job to `eachWithIndex` in Groovy:
 
 ```clojure
 (map-indexed (fn [i number] (format "%d: %s" i number))
              '("one" "two" "three" "four" "five"))
 ```
 
-One situation I faced in the real world recently which required a loop counter was where I wanted to parameterize my log messages, so I chose a template format similar to that used in C#:
+### You're going round in circles. Show me an example where lazy evaluation really helps.
+
+One situation I faced in the real world recently, which required a loop index, was tht I wanted to write log messages with parameters in them. I chose a template format similar to that used in C#, i.e.:
 
 ```
 The {0} has a problem. Cause of failure: {1}. Recommended solution: {2}.
@@ -209,9 +209,9 @@ private String replaceParameters(String template, String... parameters) {
 {% endraw  %}
 ```
 
-but I really don’t think that is an improvement. Recall what I said about the sweet spot for functional programming? This isn’t it either. For one thing, I've had to break it into more lines to try to aid readability, so it lacks the clarity of the original. And it still mutates state anyway - the `AtomicInteger` is being incremented - so it's not really that functional either.
+but I don’t think this is pragmtic. Rather, I think this is using the functional style just for its own sake, not because it is better. Recall what I said about the sweet spot for functional programming? This isn’t it either. For one thing, I've had to break it into more lines to try to aid readability, so it lacks the clarity of the original. And it still mutates state anyway - the `AtomicInteger` is being incremented.
 
-What about in a properly functional language? In Clojure we can’t use `map-indexed` for this, because this job calls for the use of `reduce` instead, and there is no `reduce-indexed` function. But what we _do_ have is `zipmap`, sometimes called “zip” in other languages. It is so named because its behaviour is reminiscent of the action of a zipper fastening:
+So I'd use an old-fashioned `for` loop instead, but what about in a properly functional language where we cannot? In Clojure, the `map-indexed` function won't help here. This job calls for the use of `reduce` instead, and there is no `reduce-indexed` function. What we _do_ have is `zipmap`, sometimes called “zip” in other languages. It is so named because its behaviour is reminiscent of the action of a zipper fastening:
 
 ```clojure
 user=> (zipmap [1 2 3] ["one" "two" "three"])
@@ -222,7 +222,7 @@ We can use it to write a parameter replacement function using `reduce` like this
 
 ```clojure
 {% raw  %}
-(defn replace-parameter [string [i parameter]]
+(defn- replace-parameter [string [i parameter]]
   (clojure.string/replace string (format "{%d}" i) parameter))
 
 (defn replace-parameters [template parameters]
@@ -239,7 +239,7 @@ user=> (replace-parameters
 "The time machine has a problem. Cause of failure: out of plutonium. Recommended solution: find lightning bolt."
 ```
 
-### Building our own lazy sequences.
+### Being lazy ourselves.
 
 We’ve played a bit with lazy sequences out of the box, so let’s do a little exercise that involves building one of our own. You may have heard of Pascal’s Triangle. In mathematical terms, Pascal’s Triangle is a triangular array of the binomial coefficients, but you don’t really need to know what that means because it is very simple to construct. You begin by placing a 1 at the apex and then build a triangle by placing rows of numbers below, offset to the left and right of the numbers above, so that each row has one more number in it than the one above. Each number is equal to the sum of the two numbers above it; for numbers on the edge of the triangle, absent numbers are treated as zero. This diagram should make it clear:
 
@@ -301,15 +301,15 @@ user=> (nth triangle 10)
 [1 10 45 120 210 252 210 120 45 10 1]
 ```
 
-Obviously, although `triangle` appears to be a sequence, no actual sequence ever exists in memory, unless you happen to build one yourself out of the results. If you read back to the `yield return` example in C# at the beginning, you will see the same behaviour there. Paradoxically, using unlimited collections requires less memory!
+Obviously, although `triangle` appears to be a sequence, no actual sequence ever exists in memory, unless you happen to build one yourself out of the results. If you read back to the `yield return` example in C# at the beginning, you will see the same behaviour there. Paradoxically, unlimited collections require less memory!
 
 ### Do repeat yourself.
 
 To finish our exploration of lazy evaluation, let's have a bit of fun. As someone once drily observed, the kata of FizzBuzz is popular because it avoids the awkwardness of realising no-one in the room can remember how to binary search an array. If you’re one of the handful of people in the world not familiar with the game, it’s dead simple: you count through the numbers while replacing all multiples of three with “Fizz,” all multiples of five with “Buzz,” and all multiples of both with “FizzBuzz.”
 
-<p style="margin: 0em 3em 1em 3em">N.B. It is usually said to have originated as a drinking game, and indeed I did play a drinking game like this at university, although the Warwick Rules were slightly different. As we played it, buzz was four not five, and there was an additional rule: when the decimal number contained a digit 3 then you also had to say “fizz” and when it contained 4 you had to say “buzz.” Therefore, 12 was “fizzbuzz,” 13 was “fizz,” 14 was “buzz” and 15 was “fizz” again. This made it a bit more complicated and us more drunk.<br/>
+<p style="margin: 0em 3em 1em 3em; font-style: italic">N.B. It is usually said to have originated as a drinking game, and indeed I did play a drinking game like this at university, although the Warwick Rules were slightly different. As we played it, buzz was four not five, and there was an additional rule: when the decimal number contained a digit 3 then you also had to say “fizz” and when it contained 4 you had to say “buzz.” Therefore, 12 was “fizzbuzz,” 13 was “fizz,” 14 was “buzz” and 15 was “fizz” again. This made it a bit more complicated and therefore we got more drunk.<br/><br/>
 
-We once tried playing it with binary numbers during a band social, but the baritone sax player objected on the grounds that he was a law student not a scientist. So we agreed to do it in roman numerals instead, thus killing two katas in one.</p>
+We once tried during a band social playing it with binary numbers, but the baritone sax player objected on the grounds that he was a law student not a scientist. So we agreed to do it in roman numerals instead, thus killing two katas in one.</p>
 
 If there is a canonical implementation, in Java it probably looks something like this:
 
@@ -340,11 +340,11 @@ Maybe it isn’t an arithmetic problem at all though. The whole cycle repeats co
 
 _number, number, Fizz, number, Buzz, Fizz, number, number, Fizz, Buzz, number, Fizz, number, number, FizzBuzz_
 
-so perhaps we can treat it that way in our program. Clojure has a function called `cycle` which produces a lazy sequence that endlessly repeats a supplied pattern:
+so perhaps we can treat it that way in our program. Clojure has a function called `cycle` which lazily repeats a supplied pattern endlessly:
 
 ```
-user=> (take 9 (cycle [nil nil "Fizz"]))
-(nil nil "Fizz" nil nil "Fizz" nil nil "Fizz")
+user=> (take 10 (cycle [nil nil "Fizz"]))
+(nil nil "Fizz" nil nil "Fizz" nil nil "Fizz" nil)
 ```
 
 If we had a function that mapped over these three lazy sequences we could produce a lazily evaluated FizzBuzz implementation out of them:
@@ -382,4 +382,4 @@ Isn’t that cool?
 
 ### Next time.
 
-In the next article, we will conclude our whistle-stop tour of functional programming with a look at persistent data structures.
+In the next article, I will conclude our examination of the practical aspects of functional programming. I will take a look at how functional languages are able to implement immutable data structures while simultaneously giving the impression that they are mutable.
