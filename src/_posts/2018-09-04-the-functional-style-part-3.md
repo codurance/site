@@ -409,3 +409,15 @@ In the imperative style, this would require either multiple loops, or one loop w
 ## Next time:
 
 While I was learning functional programming and getting used to the Java streams API, every time I wrote a loop, the very next thing I would do is consider how I could rewrite it as a stream. It is usually possible. In C#, the ReSharper plugin for Visual Studio automatically suggests this kind of refactoring for you. Now that I have internalised the functional style, I just go straight for the stream and don’t even bother with the loop unless I really need one. In the next article we will continue our exploration of first-class functions, and how we can use the functional style to make our code more expressive, with a look at filter and reduce.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. [First Steps](/2018/08/17/the-functional-style-part-2/)
+1. First-Class Functions I: Lambda Functions & Map
+1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
+1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
+1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
+1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)

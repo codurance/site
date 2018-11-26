@@ -566,3 +566,15 @@ Another thing I hope to have communicated is the power of REPL-driven developmen
 ### Next time.
 
 As my colleague Jorge likes to say, we are going to infinity...and beyond! In the next article we will examine lazy evaluation, and how it promises you everything - so long as you don’t actually ask for it.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. [First Steps](/2018/08/17/the-functional-style-part-2/)
+1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
+1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
+1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
+1. Higher-Order Functions II: Currying
+1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)

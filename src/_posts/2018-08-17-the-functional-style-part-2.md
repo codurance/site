@@ -533,3 +533,15 @@ Not at all. When I'm programming in an imperative language, I still use iteratio
 ### Next time:
 
 If this was all there was to functional programming, I would forgive you for thinking it not worth the hype. Fortunately this is not all, by a long way. We have seen some functional programming here, but not what I would call the functional style. When you program in a functional style, you very rarely need to write loops of any kind. A loop is a means to an end, not an end in itself. The functional style lets you program more in terms of your desired ends, and bother less about the means to achieve them. In the next article I will begin to broach this subject. We will introduce first-class functions and lambda expressions, and how their use can often avoid the need to write explicit loops at all.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. First Steps
+1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
+1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
+1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
+1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
+1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)

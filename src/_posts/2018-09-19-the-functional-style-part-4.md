@@ -570,3 +570,15 @@ In last two articles we have taken a pretty thorough look at first-class functio
 a closely related concept, higher-order functions. We will also take a look at function composition, and I will attempt 
 to explain the dreaded Monad pattern. In fact I hope that I will be able not only to help you understand it, but also 
 convince you of its utility.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. [First Steps](/2018/08/17/the-functional-style-part-2/)
+1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
+1. First-Class Functions II: Filter, Reduce & More
+1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
+1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
+1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
