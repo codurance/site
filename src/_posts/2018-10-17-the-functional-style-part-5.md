@@ -360,3 +360,15 @@ In other words, the Monad provides another tool in your box for creating abstrac
 ### Next time.
 
 In the next article we will continue our investigation of higher-order functions. We will take a look at currying, and how, despite seeming on the face of it very arcane, in fact it is very useful. To do this we will solve an exercise in Clojure, which will be a rather more involved exercise than the others we have seen in this series so far. We will go through it step by step and get a glimpse of the power of REPL-driven development.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. [First Steps](/2018/08/17/the-functional-style-part-2/)
+1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
+1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
+1. Higher-Order Functions I: Function Composition and Monads
+1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
+1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)

@@ -387,3 +387,15 @@ Isn’t that cool?
 ### Next time.
 
 In the next article, I will conclude our examination of the practical aspects of functional programming. I will take a look at persistent data structures, which is how functional languages are able to implement immutable data structures that give the impression of being mutable, while at the same time making the most efficient use of memory by avoiding unnecessary duplication of data.
+
+<hr/>
+
+## The whole series:
+
+1. [Introduction](/2018/08/09/the-functional-style-part-1/)
+1. [First Steps](/2018/08/17/the-functional-style-part-2/)
+1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
+1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
+1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
+1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
+1. Lazy Evaluation
