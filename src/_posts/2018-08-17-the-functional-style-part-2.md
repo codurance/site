@@ -545,3 +545,4 @@ If this was all there was to functional programming, I would forgive you for thi
 1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
+1. [Persistent Data Structures](/2018/11/29/the-functional-style-part-8/)
