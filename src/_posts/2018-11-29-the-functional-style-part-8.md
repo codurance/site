@@ -30,11 +30,13 @@ and we construct a new list by adding an element to it:
 
 then we now have two lists, one equal to `(1 2 3)` and the other `(0 1 2 3)`. Does this mean that, in order to modify a data structure in the functional style, we have to make a whole copy of the original, in order to preserve it unchanged? That would seem grossly inefficient.
 
-However, there are ways of making data structures _appear_ to be modifiable while preserving them original intact for any parts of the program still holding references to it. Such data structures are said to be ‘persistent’, contrasting with ones that are mutable, which are said to be ‘ephemeral’. Data structures are _fully_ persistent if every version of the structure can be modified, which is the type we will discuss here. Structures are _partially_ persistent when only the most recent version can be modified.
+However, there are ways of making data structures _appear_ to be modifiable while preserving the original intact for any parts of the program that still hold references to it. Such data structures are said to be ‘persistent’, in contrast with ‘ephemeral’ data structures, which are mutable. Data structures are _fully_ persistent when every version of the structure can be modified, which is the type we will discuss here. Structures are _partially_ persistent when only the most recent version can be modified.
 
 ### Fully stacked.
 
-For this example we are going to turn to our old friend, the stack. Now, we are creating a _functional_ stack here, of course, so our interface looks like this:
+The stack is a very good example for how to implement a persistent data structure, because it also shows a side benefit of this technique. The code happens to get simpler too; we will come to that in a moment.
+
+Because we are creating a _functional_ stack here, our interface looks like this:
 
 ```java
 public interface Stack<T> {
@@ -47,15 +49,22 @@ public interface Stack<T> {
 }
 ```
 
-We can’t ever modify anything, so when on pushing or popping we get a new `Stack` instance reflecting our pushed or popped stack. We’ll also provide a static method for obtaining a brand new stack:
+Given that this is a persistent data structure, we can’t ever modify it, so on pushing or popping we get a new `Stack` instance that reflects our pushed or popped stack. Any parts of the program that are holding references to previous states of the stack will continue to see that state unchanged. 
+
+For obtaining a brand new stack, we will provide a static factory method:
 
 ```java
-static <T> Stack<T> create() {
-    return new EmptyStack<T>();
+public interface Stack<T> {
+    
+    ... // pop, top, push
+    
+    static <T> Stack<T> create() {
+        return new EmptyStack<T>();
+    }
 }
 ```
 
-It might seem a strange design choice to create a specific implementation for an empty stack, but it works out very tidily when we do:
+It might seem a strange design choice to create a specific implementation for an empty stack, but when we do it works out very tidily. This is the benefit I mentioned earlier:
 
 ```java
 public class EmptyStack<T> implements Stack<T> {
@@ -77,7 +86,7 @@ public class EmptyStack<T> implements Stack<T> {
 }
 ```
 
-As you can see, `top` returns empty and `pop` throws an illegal state exception. I think in this case throwing an exception is reasonable because, given the last-in-first-out nature of stacks and the typical uses they are put to, attempting to pop an empty stack almost certainly does indicate a bug in the program rather than a user error.
+As you can see, `top` returns empty and `pop` throws an illegal state exception. I think it is reasonable to throw an exception in this case, because given the _last in first out_ nature of stacks and their typical uses, any attempt to pop an empty stack indicates a probable bug in the program rather than a user error.
 
 As for the non-empty implementation, that looks like this:
 
@@ -109,9 +118,11 @@ public class NonEmptyStack<T> implements Stack<T> {
 }
 ```
 
-It’s worth noting that choosing separate implementations for the empty and non-empty cases avoided the need for any conditional logic. There are no `if` statements in the above code. In use, the stack behaves like this:
+It’s worth noting that choosing separate implementations for the empty and non-empty cases avoided the need for any conditional logic. There are no `if` statements in the above code.
 
-1. `create` returns an `EmptyStack` instance.
+In use, the stack behaves like this:
+
+1. `Stack.create` returns an `EmptyStack` instance.
 1. Pushing on it returns a `NonEmptyStack` with the pushed value as its top.
 1. When another value is pushed on top of the non-empty stack, another NonEmptyStack instance is created with the newly pushed value on top:
 
@@ -119,7 +130,7 @@ It’s worth noting that choosing separate implementations for the empty and non
     <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_1.png" title="How the functional stack evolves as values are pushed on to it" alt="Evolution of the functional stack as values are pushed">
 </p>
 
-The timeline runs from left to right, and the ovals at the bottom of the diagram represent the ‘view’ the client sees of the stack. The regions bounded by dashed lines indicate that all the boxes within are all the same instance in memory. The direction of the arrows show that each NonEmptyStack instance holds a reference to another stack instance, either empty or non-empty. This reference is what will be returned when the stack is popped, and that is where things get clever:
+The timeline here runs from left to right, and the ovals at the bottom of the diagram represent the ‘view’ the client sees of the stack. The regions bounded by dashed lines indicate that all the boxes within are all the same object instance. The direction of the arrows show that each NonEmptyStack instance holds a reference to another stack instance, its parent, which will either be empty or non-empty. This parent object reference is what will be returned when the stack is popped, and that is where things get clever:
 
 <p style="margin: 2em 0em 2em 10em">
     <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_2.png" title="Popping values from the functional stack" alt="Popping values from the functional stack">
@@ -133,19 +144,21 @@ On popping the stack, the client simply shifts its view to the previously pushed
 
 This is basically the same as the first diagram, except that we have dispensed with the horizontal dashed regions and instead made it explicit that the stack is a single data structure rather than several copies. We are simply representing each `Stack` instance, whether empty or not, as a single box. Initially the client sees an empty stack; on pushing, a non-empty stack instance is created which points at the empty stack, and the client shifts its view to the new instance. When the client pushes a second time, another non-empty stack instance is created which points at the previous non-empty stack, and the client shifts its view again. The stack tells the client where to point its view next, via the return value of the push and pop operations, but it is the client that actually shifts its view. The stack does not move anything.
 
-We already mentioned the possibility that the clients might not be all the same, so now let’s explicitly imagine that the three ovals are representing three different clients’ views of one single stack structure. Client 1 is looking at a newly created stack, while client 2 has pushed once on it, and client 3 has pushed twice on it:
+Now you might be thinking that "the client shifts its view" implies _something_ is being mutated, and indeed it does, but this is simply a variable holding a reference to a Stack instance. We have discussed at length already in part 2 of the series how to manage changing scalar values without having to reassign variables.
+
+We already mentioned the possibility that different parts of the program might be holding separate and different views on the stack structure, so now let’s explicitly imagine that the three ovals represent three different clients’ views of one single stack structure. Client 1 is looking at a newly created stack, client 2 has pushed once on it, and client 3 has pushed twice on it:
 
 <p style="margin: 2em 0em 2em 10em">
     <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_4.png" title="Multiple clients with different views on the same functional stack" alt="Multiple clients can maintain their own different viewpoints on the same stack structure">
 </p>
 
-If client 2 pushed something on the stack, the effect would be this:
+If client 2 subsequently pushed something on the stack, the effect would look like this:
 
 <p style="margin: 2em 0em 2em 10em">
     <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_5.png" title="The effect of client 2 pushing on the shared functional stack" alt="When client 2 pushes on the shared stack, the value it pushed is not visible to the other clients">
 </p>
 
-Notice that the directions of the arrows ensure that neither client 1 or client 3 are affected by what client 2 did: client 3 cannot follow the arrow backwards to see the value that was just pushed, and nor can client 1. Similarly if client 1 pushed on the stack neither of the others would be affected by that either:
+Notice the directions of the arrows ensure that neither client 1 or client 3 are affected by what client 2 did: client 3 cannot follow the arrow backwards to see the value that was just pushed, and nor can client 1. Similarly if client 1 pushed on the stack neither of the others would be affected by that either:
 
 <p style="margin: 2em 0em 2em 10em">
     <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_6.png" title="The effect of client 1 pushing on the shared functional stack" alt="When client 1 pushes on the shared stack, the value it pushed is not visible to the other clients either">
@@ -153,27 +166,27 @@ Notice that the directions of the arrows ensure that neither client 1 or client 
 
 The other thing to note about this data structure is that nothing is duplicated. All three clients share the same EmptyStack instance, and clients 2 and 3 also share the NonEmptyStack that was pushed first. Everything that _could_ be shared _is_ shared. Nothing is copied whenever any of them push, and popping does not cause any links in the structure to be broken.
 
-So when _do_ things get deleted? Eventually we must reclaim resources or our program may run out of memory. If a stack element has been popped and no part of the program is holding a reference to it any more, in time it will be reclaimed by the garbage collector. Indeed, garbage collection is an essential feature for functional programming in any language.
+So when _do_ things get deleted? Eventually we must reclaim resources or our program may run out of memory. If a stack element has been popped, and no part of the program is holding a reference to it any more, in time it will be reclaimed by the garbage collector. Indeed, garbage collection is an essential feature for functional programming in any language.
 
 ### Cons cells, CAR and CDR.
 
-Maybe this stack structure seems familiar; if it does, there’s a good reason for that. It’s known as a _linked list_ and it is a standard data structure in computer science. Usually a linked list is represented in a diagram something like this:
+This stack structure might seem familiar to you. If it does, it's for good reason. This structure is known as a _linked list_ and it is a foundational data structure in computer science. Usually linked lists are represented by a diagram something like this:
 
-<p style="margin: 2em 0em 2em 8em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/linked_list.png" title="The linked list data structure" alt="The linked list data structure">
+<p style="margin: 2em 0em 2em 12em">
+    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/linked_list.png" title="The linked list data structure" alt="The linked list data structure">
 </p>
 
-The list is a chain of elements, and each element contains a pair of pointers. One of the two pointers points to a value. The other one points at the next element in the chain. The final element in the chain does not point to another element. In this way a chain of values can be linked together. An advantage usually cited for this kind of data structure, in imperative programming, is that it is very easy to insert a value in the middle of a list: all you need to do is create the new element, link it to the following element, and re-point the preceding element in the list to the new element. By contrast, an array would require shuffling all the elements down after the inserted element in order to make room for it, which could be a very expensive operation indeed. On the other hand, linked lists perform badly at random access, which is an O(n) operation, because to find the nth element you must traverse the preceding (n - 1) elements. Conversely, with an array you can access any element in constant O(1) time.
+The list is a chain of elements, and each element contains a pair of pointers. One of the two pointers points to a value. The other one points at the next element in the chain, except for the final element in the chain which does not point to another element. In this way a chain of values can be linked together. One advantage usually cited for this kind of data structure, in imperative programming, is that it is very cheap to insert a value in the middle of a list: all you need to do is create the new element, link it to the following element, and re-point the preceding element in the list to the new element. The elements of a linked list do not have to be contiguous in memory, nor do they need to be stored in order, unlike an array. An array would require shuffling all the elements down after the inserted element in order to make room for it, which could be a very expensive operation indeed. On the other hand, linked lists perform poorly for random access, which is an O(n) operation. This is because to find the nth element you must traverse the preceding (n - 1) elements, unlike an array where you can access any element in constant O(1) time.
 
-Linked lists are a foundational data structure in functional programming. The Lisp programming language is built on them. A single element of a linked list is referred to in Lisp as a cons cell:
+Linked lists are an essential data structure in functional programming. The Lisp programming language is literally built out of them. In Lisp, a single element of a linked list is referred to as a _cons cell_:
 
-<p style="margin: 2em 0em 2em 20em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/cons_cell.png" title="A cons cell" alt="The cons cell is the building block of the Lisp programming language">
+<p style="margin: 2em 0em 2em 22em">
+    <img style="max-width: 38%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/cons_cell.png" title="A cons cell" alt="The cons cell is the building block of the Lisp programming language">
 </p>
 
-The CAR pointer points to the value of the cons cell while the CDR pointer points to the next element in the list. CAR and CDR are archaic terms which are not in general use any more, but I mention them because you might come across them. The Lisp programming language was first implemented on an IBM 704 mainframe, and the implementers found it convenient to store a cons cell in a machine word. The pointer to the cell value was stored in the “address” part of the word, while the pointer to the next cell was stored in the “decrement” part. It was convenient because the machine had instructions that could be used to access both of these values directly, when the cell was loaded into a register. Hence, _contents of the address part of the register_ and _contents of the decrement part of the register_ or CAR and CDR for short.
+The CAR pointer points to the value of the cons cell while the CDR pointer points to the next element in the list. CAR and CDR are archaic terms which are not in general use any more, but I mention them for historical interest, and perhaps you might come across them. The Lisp programming language was first implemented on an IBM 704 mainframe, and the implementers found it convenient to store a cons cell in a machine word. The pointer to the cell value was stored in the “address” part of the word, while the pointer to the next cell was stored in the “decrement” part. It was convenient because the machine had instructions that could be used to access both of these values directly, when the cell was loaded into a register. Hence, _contents of the address part of the register_ and _contents of the decrement part of the register_ or CAR and CDR for short.
 
-This nomenclature made it into the language; Lisp used `car` as the keyword for returning the first element of a list, and cdr for returning the rest of the list. Nowadays, Clojure uses `first` and `rest` for these instead, which is much more transparent: it is hardly appropriate to name fundamental language operations after the architecture of a particular machine from the 1950s. Other languages might refer to them as _head_ and _tail_ instead.
+This nomenclature made it into the language; Lisp used `car` as the keyword for returning the first element of a list, and `cdr` for returning the rest of the list. Nowadays, Clojure uses `first` and `rest` for these instead, which is much more transparent: it is hardly appropriate to name fundamental language operations after the architecture of a computer from the 1950s. Other languages might refer to them as _head_ and _tail_ instead.
 
 The creation of a new cons cell is referred to as _cons-ing_ and it therefore means to create a list by prepending an element at the beginning of another list:
 
@@ -184,15 +197,21 @@ user => (cons 0 (list 1 2 3))
 
 Just as we saw in the stack example, cons-ing an element onto a list does not alter the list for any other part of the program that is still using it.
 
-### B-Trees.
+### Binary trees.
 
-That’s all fine, but what about if we want to insert a value in a list, or append it to the end? In this case duplication is necessary; we will have to duplicate all the elements up to the point in the list where the new element is to be inserted. In the worst case, where we want to append an element to the end, we will be forced to duplicate the entire list. So another approach is to use a binary tree instead of a linked list. This is an ordered data structure in which every element has zero, one or two pointers to other elements in the structure: one of them points to an element whose value is considered ‘less’ than the current element, and the other points to an element whose value is considered ‘greater,’ by whatever comparison is appropriate for the type of data held in the tree:
+That’s all fine, but what about if we want to insert a value in a list, or append it to the end? In this case duplication is necessary; we will have to duplicate all the elements up to the point in the list where the new element is to be inserted. In the worst case - appending an element to the end - we will be forced to duplicate the entire list.
+
+Another approach is to use a binary tree instead of a linked list. This is an ordered data structure in which every element has zero, one or two pointers to other elements in the structure: one points to an element whose value is considered lower than the current element, and the other points to an element whose value is considered greater, by whatever comparison is appropriate for the type of data held in the tree:
 
 <p style="margin: 2em 0em 2em 17em">
     <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/b_tree_1.png" title="A B-Tree" alt="A B-Tree holds data in an ordered structure">
 </p>
 
-This structure _t_ holds a tree of elements that are ordered alphabetically: A, B, C, D, F, G, H. Notice that E is missing. Following the arrows down, elements to the left have lower value than elements to the right, so you can easily traverse the tree to find a value by comparing the value with each element in turn and following the tree down+left or down+right accordingly. Such data structures are therefore good for searching, and they are commonly used for indexing database tables. Now let us imagine that we want to insert the missing value E into this tree, which might look in code like this:
+A binary tree can be searched considerably more efficiently than a linked list, but it needs to be balanced for optimum performance. To be optimal, the top element of the tree must be the median of all the values in the tree, and the same must be true for the top elements of all the sub-trees as well. In the worst case, when a binary tree becomes completely skewed down either side, it becomes indistinguishable from a linked list.
+
+The structure _t_ above holds a tree of elements that are ordered alphabetically: A, B, C, D, F, G, H. Notice that E is missing. Following the arrows down, elements to the left have lower value than elements to the right, so you can easily traverse the tree to find a value by comparing the value with each element in turn and following the tree down+left or down+right accordingly. Such data structures are therefore good for searching, and a generalised variant called a [B-tree](https://en.wikipedia.org/wiki/B-tree) is commonly used for indexing database tables.
+
+Now let us imagine that we want to insert the missing value E into this tree, which might look in code like this:
 
 ```
 t' = t.insert(E)
@@ -236,7 +255,7 @@ My reason for including this section in the series is partly technical interest 
 
 ### Next time.
 
-This concludes our introduction to the fascinating subject of functional programming. I hope it’s been useful. In the next article, we will finish up by discussing the declarative nature of the functional style, whether functional programming and object-oriented programming can live together, and the tension between the functional style and efficiency.
+This concludes our introduction to the fascinating subject of functional programming. I hope it’s been useful. In the next article, we will finish up with some final thoughts. We will discuss the declarative nature of the functional style, and whether functional and object-oriented programming styles can live together. We will briefly look at one of the benefits of functional programming that I did not really go into much in this series - ease of concurrency - and consider the tension between the functional style and efficiency concerns.
 
 <hr/>
 
