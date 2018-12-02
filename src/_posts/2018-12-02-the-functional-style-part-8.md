@@ -3,7 +3,7 @@ author: Richard Wild
 layout: post
 asset-type: post
 title: "The Functional Style - Part 8"
-date: 2018-11-29 00:00:00
+date: 2018-12-02 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 8. Persistent data structures.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
