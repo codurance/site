@@ -46,7 +46,9 @@ index-services-training:
    description_line_4: CULTIVANDO UNA CULTURA DE CRAFTSMANSHIP
    link_title: Más información
 index-clients:
-   title: Clientes &amp; Socios
+   title: Clientes
+index-partners:
+   title: Socios
 index-clients-footer:
    title: Somos socios oficiales de Jetbrains en consultoría y formación.
    link_title: Más información
@@ -249,7 +251,9 @@ clients:
    trinitymirror_description: Trinity Mirror es un galardonado portfolio de periódicos, sitios web y productos digitales. Estamos ayudándoles a convertir su plataforma de publicaciones en una arquitectura basada en microservicios. También les estamos ayudando a transformar la organización de su equipo y sus habilidades, para que se alineen con Continuous Delivery.
    findmypast_description: Findmypast es un líder mundial en genealogía online. Hemos provisto craftspeople embebidos para trabajar dentro de sus equipos para mejorar el estado general de los sistemas y las cualificaciones de los equipos en Test Driven Development, Clean Code y Pair Programming
    aspectcapital_description: Aspect Capital Limited (Aspect) is a UK-based investment manager with offices in London, Stamford (CT) and Hong Kong. We are providing expertise embeded into their existing team. Our craftsmen are working alongside their own people to help build the next generation of their offering.
-
+   moonpig_description: Moonpig have been offering a range of gifts and greetings cards online sine 2000. Our Craftspeople have helped Moonpig by both working within teams to design and deliver production software and coaching their developers on XP practices and software design.
+   ey_description: EY is one of the largest professional services firms in the world and is one of the “Big Four” accounting firms. Our Craftspeople are helping them evolve their XP practices and deliver world-class software.
+   roche_description: Roche is a Swiss multinational healthcare company that operates worldwide. We are working with them to improve the way they are building the next generation of their digital platforms, helping the team deliver quality systems continuously.
 clients-partners:
    title: Socios
    subtitle: Nuestros socios comparten nuestros valores y nos dan la amplitud necesaria para proveer un servicio completo a nuestros clientes y nosotros ayudamos a nuestros socios a conseguir lo mismo.
