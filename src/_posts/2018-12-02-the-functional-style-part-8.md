@@ -126,20 +126,20 @@ In use, the stack behaves like this:
 1. Pushing on it returns a `NonEmptyStack` with the pushed value as its top.
 1. When another value is pushed on top of the non-empty stack, another NonEmptyStack instance is created with the newly pushed value on top:
 
-<p style="margin: 2em 0em 2em 8em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_1.png" title="How the functional stack evolves as values are pushed on to it" alt="Evolution of the functional stack as values are pushed">
+<p style="width: 550px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_1.png" title="How the functional stack evolves as values are pushed on to it" alt="Evolution of the functional stack as values are pushed">
 </p>
 
 The timeline here runs from left to right, and the ovals at the bottom of the diagram represent the ‘view’ the client sees of the stack. The regions bounded by dashed lines indicate that all the boxes within are all the same object instance. The direction of the arrows show that each NonEmptyStack instance holds a reference to another stack instance, its parent, which will either be empty or non-empty. This parent object reference is what will be returned when the stack is popped, and that is where things get clever:
 
-<p style="margin: 2em 0em 2em 10em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_2.png" title="Popping values from the functional stack" alt="Popping values from the functional stack">
+<p style="width: 450px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_2.png" title="Popping values from the functional stack" alt="Popping values from the functional stack">
 </p>
 
 On popping the stack, the client simply shifts its view to the previously pushed element. Nothing gets deleted. This means that, if there were two clients with a view of the same stack, one client could pop it without affecting the other client’s view of the stack. The same is true of pushing:
 
-<p style="margin: 2em 0em 2em 10em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_3.png" title="The client shifting its view as it pushes on the functional stack" alt="As the client pushes on the functional stack, it shifts its view from the old top to the new top">
+<p style="width: 420px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_3.png" title="The client shifting its view as it pushes on the functional stack" alt="As the client pushes on the functional stack, it shifts its view from the old top to the new top">
 </p>
 
 This is basically the same as the first diagram, except that we have dispensed with the horizontal dashed regions and instead made it explicit that the stack is a single data structure rather than several copies. We are simply representing each `Stack` instance, whether empty or not, as a single box. Initially the client sees an empty stack; on pushing, a non-empty stack instance is created which points at the empty stack, and the client shifts its view to the new instance. When the client pushes a second time, another non-empty stack instance is created which points at the previous non-empty stack, and the client shifts its view again. The stack tells the client where to point its view next, via the return value of the push and pop operations, but it is the client that actually shifts its view. The stack does not move anything.
@@ -148,20 +148,20 @@ Now you might be thinking that "the client shifts its view" implies _something_ 
 
 We already mentioned the possibility that different parts of the program might be holding separate and different views on the stack structure, so now let’s explicitly imagine that the three ovals represent three different clients’ views of one single stack structure. Client 1 is looking at a newly created stack, client 2 has pushed once on it, and client 3 has pushed twice on it:
 
-<p style="margin: 2em 0em 2em 10em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_4.png" title="Multiple clients with different views on the same functional stack" alt="Multiple clients can maintain their own different viewpoints on the same stack structure">
+<p style="width: 420px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_4.png" title="Multiple clients with different views on the same functional stack" alt="Multiple clients can maintain their own different viewpoints on the same stack structure">
 </p>
 
 If client 2 subsequently pushed something on the stack, the effect would look like this:
 
-<p style="margin: 2em 0em 2em 10em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_5.png" title="The effect of client 2 pushing on the shared functional stack" alt="When client 2 pushes on the shared stack, the value it pushed is not visible to the other clients">
+<p style="width: 420px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_5.png" title="The effect of client 2 pushing on the shared functional stack" alt="When client 2 pushes on the shared stack, the value it pushed is not visible to the other clients">
 </p>
 
 Notice the directions of the arrows ensure that neither client 1 or client 3 are affected by what client 2 did: client 3 cannot follow the arrow backwards to see the value that was just pushed, and nor can client 1. Similarly if client 1 pushed on the stack neither of the others would be affected by that either:
 
-<p style="margin: 2em 0em 2em 10em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_6.png" title="The effect of client 1 pushing on the shared functional stack" alt="When client 1 pushes on the shared stack, the value it pushed is not visible to the other clients either">
+<p style="width: 420px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/functional_stack_6.png" title="The effect of client 1 pushing on the shared functional stack" alt="When client 1 pushes on the shared stack, the value it pushed is not visible to the other clients either">
 </p>
 
 The other thing to note about this data structure is that nothing is duplicated. All three clients share the same EmptyStack instance, and clients 2 and 3 also share the NonEmptyStack that was pushed first. Everything that _could_ be shared _is_ shared. Nothing is copied whenever any of them push, and popping does not cause any links in the structure to be broken.
@@ -172,16 +172,16 @@ So when _do_ things get deleted? Eventually we must reclaim resources or our pro
 
 This stack structure might seem familiar to you. If it does, it's for good reason. This structure is known as a _linked list_ and it is a foundational data structure in computer science. Usually linked lists are represented by a diagram something like this:
 
-<p style="margin: 2em 0em 2em 12em">
-    <img style="max-width: 65%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/linked_list.png" title="The linked list data structure" alt="The linked list data structure">
+<p style="width: 400px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/linked_list.png" title="The linked list data structure" alt="The linked list data structure">
 </p>
 
 The list is a chain of elements, and each element contains a pair of pointers. One of the two pointers points to a value. The other one points at the next element in the chain, except for the final element in the chain which does not point to another element. In this way a chain of values can be linked together. One advantage usually cited for this kind of data structure, in imperative programming, is that it is very cheap to insert a value in the middle of a list: all you need to do is create the new element, link it to the following element, and re-point the preceding element in the list to the new element. The elements of a linked list do not have to be contiguous in memory, nor do they need to be stored in order, unlike an array. An array would require shuffling all the elements down after the inserted element in order to make room for it, which could be a very expensive operation indeed. On the other hand, linked lists perform poorly for random access, which is an O(n) operation. This is because to find the nth element you must traverse the preceding (n - 1) elements, unlike an array where you can access any element in constant O(1) time.
 
 Linked lists are an essential data structure in functional programming. The Lisp programming language is literally built out of them. In Lisp, a single element of a linked list is referred to as a _cons cell_:
 
-<p style="margin: 2em 0em 2em 22em">
-    <img style="max-width: 38%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/cons_cell.png" title="A cons cell" alt="The cons cell is the building block of the Lisp programming language">
+<p style="width: 180px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/cons_cell.png" title="A cons cell" alt="The cons cell is the building block of the Lisp programming language">
 </p>
 
 The CAR pointer points to the value of the cons cell while the CDR pointer points to the next element in the list. CAR and CDR are archaic terms which are not in general use any more, but I mention them for historical interest, and perhaps you might come across them. The Lisp programming language was first implemented on an IBM 704 mainframe, and the implementers found it convenient to store a cons cell in a machine word. The pointer to the cell value was stored in the “address” part of the word, while the pointer to the next cell was stored in the “decrement” part. It was convenient because the machine had instructions that could be used to access both of these values directly, when the cell was loaded into a register. Hence, _contents of the address part of the register_ and _contents of the decrement part of the register_ or CAR and CDR for short.
@@ -203,8 +203,8 @@ That’s all fine, but what about if we want to insert a value in a list, or app
 
 Another approach is to use a binary tree instead of a linked list. This is an ordered data structure in which every element has zero, one or two pointers to other elements in the structure: one points to an element whose value is considered lower than the current element, and the other points to an element whose value is considered greater, by whatever comparison is appropriate for the type of data held in the tree:
 
-<p style="margin: 2em 0em 2em 17em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/b_tree_1.png" title="A B-Tree" alt="A B-Tree holds data in an ordered structure">
+<p style="width: 300px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/b_tree_1.png" title="A B-Tree" alt="A B-Tree holds data in an ordered structure">
 </p>
 
 A binary tree can be searched considerably more efficiently than a linked list, but it needs to be balanced for optimum performance. To be optimal, the top element of the tree must be the median of all the values in the tree, and the same must be true for the top elements of all the sub-trees as well. In the worst case, when a binary tree becomes completely skewed down either side, it becomes indistinguishable from a linked list.
@@ -219,8 +219,8 @@ t' = t.insert(E)
 
 As before, we want this insertion operation to leave the original tree _t_ unmodified, while at the same time we would like to reuse as much of _t_ as possible in order to minimise duplication. The result looks like this:
 
-<p style="margin: 2em 0em 2em 12em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/b_tree_2.png" title="Inserting an element into a persistent B-Tree structure" alt="The result of inserting an element into a persistent B-tree structure">
+<p style="width: 420px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/b_tree_2.png" title="Inserting an element into a persistent B-Tree structure" alt="The result of inserting an element into a persistent B-tree structure">
 </p>
 
 To achieve the insertion of E it has been necessary to duplicate D, G, F, while A, B, C are shared between the two data structures, but the effect is that, following the arrows from t the original data structure is unchanged, while following the arrows from _t'_ we see a data structure that now also includes E in the proper position.
@@ -229,20 +229,20 @@ To achieve the insertion of E it has been necessary to duplicate D, G, F, while 
 
 The linked list and the binary tree have one vital thing in common: both are examples of _directed acyclic graphs_. If you haven’t heard this term before, don’t be dismayed, because it’s very simple. A _graph_ is a collection of things (nodes, points, vertices, whatever) that have connections between them:
 
-<p style="margin: 2em 0em 2em 20em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/graph.png" title="A graph" alt="A graph is a collection of objects that are connected">
+<p style="width: 200px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/graph.png" title="A graph" alt="A graph is a collection of objects that are connected">
 </p>
 
 The graph is _directed_ when the connections only go one way:
 
-<p style="margin: 2em 0em 2em 20em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/directed_graph.png" title="A directed graph" alt="A directed graph is when the connections between the objects are unidirectional">
+<p style="width: 200px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/directed_graph.png" title="A directed graph" alt="A directed graph is when the connections between the objects are unidirectional">
 </p>
 
 Finally, the graph is _acyclic_ when there are no cycles, that is to say, it is impossible to follow the graph from any point and return back at that same point:
 
-<p style="margin: 2em 0em 2em 20em">
-    <img style="max-width: 75%" src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/directed_acyclic_graph.png" title="A directed acyclic graph" alt="A directed graph is acyclic when there are no cycles anywhere in the graph">
+<p style="width: 200px; margin: 2em auto">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/the-functional-style/directed_acyclic_graph.png" title="A directed acyclic graph" alt="A directed graph is acyclic when there are no cycles anywhere in the graph">
 </p>
 
 It is the directed acyclic nature of these structures - that the connections can be followed in one direction only and never loop back on themselves - that make it possible for us to ‘bolt on’ additional structure to give the appearance of modification or copying, while leaving unaffected any parts of the program that are still looking at the original version of the structure.
