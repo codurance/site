@@ -4,7 +4,7 @@ layout: post
 asset-type: post
 title: "The Functional Style - Part 7"
 date: 2018-11-26 00:00:00
-description: Functional programming explained for the pragmatic programmer. Part 6. Lazy evaluation.
+description: Functional programming explained for the pragmatic programmer. Part 7. Lazy evaluation.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
 abstract: Functional programming explained for the pragmatic programmer.
@@ -399,3 +399,4 @@ In the next article, I will conclude our examination of the practical aspects of
 1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. Lazy Evaluation
+1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
