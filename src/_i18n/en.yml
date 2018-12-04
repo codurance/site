@@ -46,7 +46,9 @@ index-services-training:
    description_line_4: GROWING A CRAFTSMANSHIP CULTURE
    link_title: Learn more
 index-clients:
-   title: Clients &amp; Partners
+   title: Clients
+index-partners:
+   title: Partners
 index-clients-footer:
    title: We are an official Jetbrains Consulting & Training Partner.
    link_title: Find out more
@@ -251,6 +253,9 @@ clients:
    trinitymirror_description: Trinity Mirror is an award winning portfolio of newspapers, websites and digital products. We are helping them take their publishing platform to a micro-services based architecture. We are also helping them transform their team organisation and skills so they are aligned towards Continuous Delivery.
    findmypast_description: Findmypast is a world leader in online genealogy. We have provided embedded craftspeople to work within their teams in order to improve the over all state of the systems and to upskill the teams in Test Driven Development, Clean Code, and Pair Programming
    aspectcapital_description: Aspect Capital Limited (Aspect) is a UK-based investment manager with offices in London, Stamford (CT) and Hong Kong. We are providing expertise embeded into their existing team. Our craftsmen are working alongside their own people to help build the next generation of their offering.
+   moonpig_description: Moonpig have been offering a range of gifts and greetings cards online sine 2000. Our Craftspeople have helped Moonpig by both working within teams to design and deliver production software and coaching their developers on XP practices and software design.
+   ey_description: EY is one of the largest professional services firms in the world and is one of the “Big Four” accounting firms. Our Craftspeople are helping them evolve their XP practices and deliver world-class software.
+   roche_description: Roche is a Swiss multinational healthcare company that operates worldwide. We are working with them to improve the way they are building the next generation of their digital platforms, helping the team deliver quality systems continuously.
 clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.

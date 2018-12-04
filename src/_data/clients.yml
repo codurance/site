@@ -19,7 +19,7 @@
 
 - id: socgen 
   name: Societe Generale
-  image: /assets/custom/img/home/clients/societygenerale.jpg
+  image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
   website: societegenerale.com 
   services: 
@@ -46,6 +46,15 @@
   - training_and_coaching
   - expert_advice
 
+- id: ey 
+  name: EY
+  image: /assets/custom/img/home/clients/ey.png
+  alt-text: EY logo
+  website: ey.com 
+  services: 
+  - software_creation
+  - expert_advice
+
 - id: aspectcapital 
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect_capital.jpeg
@@ -68,7 +77,7 @@
 
 - id: asos 
   name: ASOS
-  image: /assets/custom/img/home/clients/asos-logo.jpg
+  image: /assets/custom/img/home/clients/asos-logo.png
   alt-text: ASOS logo
   website: asos.com
   services: 
@@ -77,7 +86,7 @@
 
 - id: mango 
   name: Mango
-  image: /assets/custom/img/home/clients/mango.jpg
+  image: /assets/custom/img/home/clients/mango.png
   alt-text: MANGO logo
   website: mango.com
   services: 
@@ -93,6 +102,16 @@
   - software_creation
   - expert_advice
 
+- id: moonpig 
+  name: Moonpig
+  image: /assets/custom/img/home/clients/moonpig.png
+  alt-text: Moonpig logo
+  website: moonpig.com
+  services: 
+  - software_creation
+  - expert_advice
+  - training_and_coaching
+
 - id: coniq 
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
@@ -103,7 +122,7 @@
 
 - id: aws
   name: Amazon Web Services
-  image: /assets/custom/img/home/clients/aws.svg
+  image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
   website: aws.amazon.com
   services: 
@@ -119,9 +138,17 @@
   - software_creation
   - expert_advice
 
+- id: roche 
+  name: Roche
+  image: /assets/custom/img/home/clients/roche.png
+  alt-text: Roche logo
+  website: roche.com 
+  services: 
+  - expert_advice
+
 - id: findmypast 
   name: Findmypast
-  image: /assets/custom/img/home/clients/findmypast.jpg
+  image: /assets/custom/img/home/clients/findmypast.png
   alt-text: Find My Past logo
   website: findmypast.co.uk
   services: 
