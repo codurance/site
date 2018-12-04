@@ -7,3 +7,15 @@
     margin: 10px 0 10px;
   }
 }
+
+.index-client-logo
+{
+  width: 180px !important;
+  height: 120px !important;
+}
+
+.index-partner-logo
+{
+  width: 210px !important;
+  height: 146px !important;
+}
