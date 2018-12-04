@@ -399,4 +399,4 @@ In the next article, I will conclude our examination of the practical aspects of
 1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. Lazy Evaluation
-1. [Persistent Data Structures](/2018/12/02/the-functional-style-part-8/)
+1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
