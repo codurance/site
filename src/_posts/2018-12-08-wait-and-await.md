@@ -13,8 +13,7 @@ tags:
 
 While I wait to put the effort on my Safety Musings part 2 post, I decided to talk about a small little thing regarding the retrieval of results on C# while using async.
 
-This came to mind as I was looking at someone add `Wait()` to get the result of her async method.
-
+This came to mind as I was looking at someone add `Wait()` to get the result of the async method.
 
 So let's have some small piece of code, that does nothing of interest, but throw an exception within the async.
 
