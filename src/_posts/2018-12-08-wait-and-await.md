@@ -11,9 +11,9 @@ tags:
 - C#
 ---
 
-While I take my time to put the effort on my Safety Musings part 2 post, I'have decided to talk about a small little thing regarding the retrieval of results on C# while using async.
+While I take my time to put the effort on my Safety Musings part 2 post, I have decided to talk about a small little thing regarding the retrieval of results on C# while using async.
 
-This came to mind as I was looking at someone add `Wait()` to get the result of the async method.
+This came to mind as I was looking at someone add `Wait()` to get the result of the async method. It trigger some memory, and I decided to play a bit to confirm what I remembered (my memory ain't great).
 
 So lets have some small piece of code, that does nothing of interest, but throws an exception within the async call.
 
@@ -25,8 +25,8 @@ So lets have some small piece of code, that does nothing of interest, but throws
             var thing = new TheThing();
             try
             {
-                thing.Calling().Wait();
-                //thing.Calling().GetAwaiter().GetResult();
+                thing.CallingAsync().Wait();
+                //thing.CallingAsync().GetAwaiter().GetResult();
             }
             catch (ArgumentException e)
             {
@@ -34,9 +34,9 @@ So lets have some small piece of code, that does nothing of interest, but throws
                 Console.WriteLine($"Message: {e.Message}");
                 Console.WriteLine($"Stack: {e.StackTrace}");
             }
-            catch (Exception e)
+            catch (AggregateException e)
             {
-                Console.WriteLine("This is a base exception");
+                Console.WriteLine("This is an aggregate exception");
                 Console.WriteLine($"Message: {e.Message}");
                 Console.WriteLine($"Stack: {e.StackTrace}");
             }
@@ -48,7 +48,7 @@ So lets have some small piece of code, that does nothing of interest, but throws
     
     public class TheThing
     {
-        public async Task Calling ()
+        public async Task CallingAsync()
         {
             for (int i = 0; i < 4; i++ ) {
                 Receiving(i);
@@ -67,33 +67,27 @@ So lets have some small piece of code, that does nothing of interest, but throws
     }
 ```
 
-If we run it like it is, with `thing.Calling().Wait();` the results are as follow:
+If we run it like it is, with `thing.CallingAsync().Wait();` the results are as follow:
 
 ```
-This is a base exception
+This is an aggregate exception
 Message: One or more errors occurred. (Hey, this is an exception)
 Stack:    at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
    at System.Threading.Tasks.Task.Wait()
    at AwaitForMe.Program.Main(String[] args) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 14
 ```
 
-If we comment the line mentioned and uncomment `thing.Calling().GetAwaiter().GetResult()` the results change:
+If we comment the line mentioned and uncomment `thing.CallingAsync().GetAwaiter().GetResult()` the results change:
 
 ```
 This is an argument exception
 Message: Hey, this is an exception
 Stack:    at AwaitForMe.TheThing.Receiving(Int32 number) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 52
-   at AwaitForMe.TheThing.Calling() in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 40
+   at AwaitForMe.TheThing.CallingAsync() in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 40
    at AwaitForMe.Program.Main(String[] args) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 15
 ```
 
 
-So `Wait()` does three things different than `GetAwaiter().GetResult()`:
-
-- It changes the type of exception to the base Exception.
-- It changes the message of the exception.
-- It generates a different stack trace (one that is not very util, if I may say).
-
-So, if you ever have the need to use `Wait()` maybe think about using `GetAwaiter().GetResult()` instead.
+So `Wait()` collects exceptions into an `AggregateException`, while `GetAwaiter().GetResult()` returns the exception thrown. The problem with the `AggregateException` is that the type of Exception and the Stack Trace become hidden within the `InnerException`. So, for example, if you need to log the exception that is being thrown, unless the logger knows how to unroll the exception, `Wait()` gives you back information that is not very useful. Which one should you use will then depend on the rest of the system that you are using.
 
 Oh, additional bit, if you wonder what happens with `Result` on a task that returns a value, the issue is the same as with `Wait()`.
