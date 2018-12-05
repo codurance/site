@@ -11,11 +11,11 @@ tags:
 - C#
 ---
 
-While I wait to put the effort on my Safety Musings part 2 post, I decided to talk about a small little thing regarding the retrieval of results on C# while using async.
+While I take my time to put the effort on my Safety Musings part 2 post, I'have decided to talk about a small little thing regarding the retrieval of results on C# while using async.
 
 This came to mind as I was looking at someone add `Wait()` to get the result of the async method.
 
-So let's have some small piece of code, that does nothing of interest, but throw an exception within the async.
+So lets have some small piece of code, that does nothing of interest, but throws an exception within the async call.
 
 ```C#
  class Program
@@ -90,10 +90,10 @@ Stack:    at AwaitForMe.TheThing.Receiving(Int32 number) in C:\Users\akira\code\
 
 So `Wait()` does three things different than `GetAwaiter().GetResult()`:
 
-- It changes the type of exception the base Exception
-- It changes the message of the exception
+- It changes the type of exception to the base Exception.
+- It changes the message of the exception.
 - It generates a different stack trace (one that is not very util, if I may say).
 
-If you ever have the need to use `Wait()` maybe think about using `GetAwaiter().GetResult()` instead.
+So, if you ever have the need to use `Wait()` maybe think about using `GetAwaiter().GetResult()` instead.
 
-Oh, if you wonder what happens with `Result` on a task that returns a value, the issue is the same as with `Wait()`.
+Oh, additional bit, if you wonder what happens with `Result` on a task that returns a value, the issue is the same as with `Wait()`.
