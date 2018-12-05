@@ -72,7 +72,8 @@ If we run it like it is, with `thing.CallingAsync().Wait();` the results are as 
 ```
 This is an aggregate exception
 Message: One or more errors occurred. (Hey, this is an exception)
-Stack:    at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+Stack:    
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
    at System.Threading.Tasks.Task.Wait()
    at AwaitForMe.Program.Main(String[] args) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 14
 ```
@@ -82,7 +83,8 @@ If we comment the line mentioned and uncomment `thing.CallingAsync().GetAwaiter(
 ```
 This is an argument exception
 Message: Hey, this is an exception
-Stack:    at AwaitForMe.TheThing.Receiving(Int32 number) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 52
+Stack:   
+   at AwaitForMe.TheThing.Receiving(Int32 number) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 52
    at AwaitForMe.TheThing.CallingAsync() in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 40
    at AwaitForMe.Program.Main(String[] args) in C:\Users\akira\code\tests\AwaitForMe\AwaitForMe\Program.cs:line 15
 ```
