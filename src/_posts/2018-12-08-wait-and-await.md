@@ -68,7 +68,8 @@ So let's have some small piece of code, that does nothing of interest, but throw
     }
 ```
 
-If we run it like it is, with `thing.Calling().Wait();` the results are as follow.
+If we run it like it is, with `thing.Calling().Wait();` the results are as follow:
+
 ```
 This is a base exception
 Message: One or more errors occurred. (Hey, this is an exception)
@@ -78,6 +79,7 @@ Stack:    at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, Cancell
 ```
 
 If we comment the line mentioned and uncomment `thing.Calling().GetAwaiter().GetResult()` the results change:
+
 ```
 This is an argument exception
 Message: Hey, this is an exception
@@ -88,6 +90,7 @@ Stack:    at AwaitForMe.TheThing.Receiving(Int32 number) in C:\Users\akira\code\
 
 
 So `Wait()` does three things different than `GetAwaiter().GetResult()`:
+
 - It changes the type of exception the base Exception
 - It changes the message of the exception
 - It generates a different stack trace (one that is not very util, if I may say).
