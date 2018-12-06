@@ -28,7 +28,7 @@ Now I've had the same experience with <a href="http://wiki.c2.com/?MythicalManMo
 
 On the other hand, it mentions concepts that I didn't realize for the first time I read it when I was studying in 1998. Here you'll find some of my notes about it.
 
-# Software as a craft
+## Software as a craft
 
 The book starts talking about **the craft of system programming** and the joys and woes inherent in it. Among joys, we find: **always learning**. 
 
@@ -38,7 +38,7 @@ When talking about the need of paperwork in project management: _To the new mana
 
 Let's remember this book was written in **1975** and terms like _craftsmanship_ and _craftsman_ were used.
 
-# Brooks's Law
+## Brooks's Law
 
 Software projects suffered delays because of these reasons:
 
@@ -72,17 +72,17 @@ Another study by **Stutzke** added a comment about the new people:
 
 > (They) must be team players willing to pitch in and work within the process, and not attempt to alter or improve the process itself!.
 
-# The System Architect
+## The System Architect
 
 It was thought that the system might be the product of one mind. It was important to keep a conceptual integrity and one System Architect might design it all, from the top down. _Ideas from implementers can break that integrity._ However, _the architect must always be prepared to show an implementation for any feature he describes, but he must not attempt to dictate the implementation._
 
-# Sociological barriers
+## Sociological barriers
 
 Managers considered that senior people were _too valuable_ to use for actual programming. On the other hand, management jobs carried higher prestige. To overcome this problem, Bell Labs abolished all job titles and there were only: _member of the technical staff_.
 
 It was thought that managers needed to be sent to technical refresher courses, meanwhile senior technical people needed to be sent to management training. Only when talent permitted, senior people could manage groups (_emotionally ready_) and _delight in building programs with their own hands_ (_technically ready_).
 
-# Fallacies about the Waterfall model
+## Fallacies about the Waterfall model
 
 In the new chapters of the book (1995), fallacies about Waterfall model are included:
 
@@ -92,15 +92,15 @@ In the new chapters of the book (1995), fallacies about Waterfall model are incl
 
 The author regretted the waterfall-oriented projects after **most thoughtful practitioners had recognized its inadequacy and abandoned it**. However, it took too long before that experience spread.
 
-# Monoliths
+## Monoliths
 
 Nowadays, there is a trending goal replacing monoliths by microservices. However, in 1975, there were problems of space and costs and a more monolithic program was the solution, because it took less space.
 
-# Testing the specification
+## Testing the specification
 
 In order to avoid bugs, the specification might be tested, **before any code exists**. In this way, developers wouldn't _invent their way through the gaps and obscurities_.
 
-# Top-down design by refinement steps
+## Top-down design by refinement steps
 
 In **1971**, **Niklaus Wirth** formalized a design procedure by a sequence of **refinement steps**:
 
@@ -112,7 +112,7 @@ _From this process one identifies modules of solution or of data whose further r
 
 _The degree of this **modularity** determines the adaptability and changeability of the program._
 
-# Communication in source code
+## Communication in source code
 
 It's said that _a computer program is a message from a man to a machine_. On the other hand, _it tells its story to the human user_, so documentation was important. In order to solve the problem with the maintenance of that documentation, they decided to write **self-documenting programs**:
 
@@ -125,7 +125,7 @@ It's said that _a computer program is a message from a man to a machine_. On the
 
 The drawback of such an approach to documentation was the increase in the size of the source code that might be stored.
 
-# No Silver Bullet
+## No Silver Bullet
 
 Brooks wrote that there was no silver bullet:
 
@@ -147,7 +147,7 @@ Following Aristotle, he talked about two types of difficulties in software proje
 
 Brooks considered technical developments as _potential silver bullets_: high-level languages advances, OOP, Artificial Intelligence, Expert Systems, _automatic_ programming, graphical programming, program verification (not _error-proof programs_, but _meeting specification_), environments, tools and workstations. On the other hand, he valued _buy vs. build_, requirements refinement and rapid prototyping, incremental development (growing, not building, software) and being great designers, because _software construction is a creative process_.
 
-# End-to-end skeleton system
+## End-to-end skeleton system
 
 In **1971**, **Harlan Mills** _proposed that any software system should be grown by incremental development. That is, the system should first be made to run, even though it does nothing useful except call the proper set of dummy subprograms. Then, bit by bit it is fleshed out, with the subprograms in turn being developed into actions or calls to empty stubs in the level below._
 
@@ -157,11 +157,11 @@ _The morale effects are startling. Enthusiasm jumps when there is a running syst
 
 _One always has, at every stage in the process, a working system._
 
-# Building every night
+## Building every night
 
 Rebuilding the development system every night and running the test cases were really hard, devoting a lot of resources, but they realized that it was rewarding, not only for discovering and fixing trouble as soon as possible, but also for the team morale and emotional state.
 
-# Information hiding
+## Information hiding
 
 In **1971** and **1972**, <a href="http://wiki.c2.com/?DavidParnas">David Parnas</a> wrote several articles about **information-hiding** concept. 
 
@@ -171,7 +171,7 @@ In the Operating System/360 project, it was decided that all programmers should 
 
 Parnas is also the author of the concept of designing a software product as a _family_ of related products. 
 
-# People
+## People
 
 Brooks's experience with IBM Operating System/360 convinced him that:
 
@@ -183,13 +183,13 @@ In **1987**, <a href="http://wiki.c2.com/?TomDeMarco" target="_blank">Tom DeMarc
 
 It reminds me of a post I wrote about my own concept of software quality, <a href="/2017/07/09/P3-Quality/">P3 Quality</a>, in which **People** is the key factor.
 
-# Start-up firms
+## Start-up firms
 
 In **1973**, **E. F. Schumacher** published <a href="https://www.goodreads.com/book/show/1117634.Small_Is_Beautiful" target="_blank">Small is Beautiful: Economics as if People Mattered</a> proposing a theory of organizing enterprises with _many semi-autonomous units_, called **quasi-firms**, with _a large amount of freedom, to give the greatest possible chance to creativity and entrepreneurship_.
 
 Brooks includes several examples of good results putting such organizational ideas into practice and how **microcomputer revolution** created hundreds of small **start-up firms**, marked by **enthusiasm**, **freedom**, and **creativity**.
 
-# Conway's Law
+## Conway's Law
 
 In **1968**, <a href="https://twitter.com/conways_law" target="_blank">Melvin E. Conway</a> published <a href="http://www.melconway.com/Home/pdf/committees.pdf" target="_blank">How do committees invent?</a> where he related the organization chart with the first software design:
 
@@ -202,6 +202,6 @@ A few days ago, I saw this tweet by <a href="https://practicingdeveloper.com/" t
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">#Protip: If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag <a href="https://twitter.com/conways_law?ref_src=twsrc%5Etfw">@conways_law</a> and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) <a href="https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw">March 16, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-# Acknowledgments
+## Acknowledgments
 
 Thanks to my friends <a href="https://twitter.com/marcvege" target="_blank">Marc Villagrasa</a> and <a href="https://twitter.com/MikeGonYe" target="_blank">Mike González</a>, good and kind people, because I reread this book because of them. I hope I have been able to make it more enjoyable.
