@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Codurance Values"
-date: 2018-12-06 09:00:00
+date: 2018-12-10 08:00:00
 description: Values that we, as a company, have reached.
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
