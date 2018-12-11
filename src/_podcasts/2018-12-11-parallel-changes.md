@@ -6,8 +6,8 @@ name: codurance-talks-episode-7
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 7 - Parallel Changes"
-video-url: https://www.podbean.com/media/player/4ffjk-9f9b22?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
-date: 2018-11-19 12:00:00 +00:00
+video-url: https://www.podbean.com/media/player/fev7y-a19862?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
+date: 2018-12-11 12:00:00 +00:00
 ---
 
 So this comes later than I wanted, due to my lack of sound skills (one day it will feel professional). But here we are Alvaro and Alfredo explaining me about Parallel Changes. What they are, how to implement them, and just wooing me with the idea. It is also the last podcast before Christmas. We will be looking at bringing more after New Year.
