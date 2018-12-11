@@ -269,3 +269,4 @@ This concludes our introduction to the fascinating subject of functional program
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
 1. Persistent Data Structures
+1. [Pragmatism](/2018/12/11/the-functional-style-part-9/)
