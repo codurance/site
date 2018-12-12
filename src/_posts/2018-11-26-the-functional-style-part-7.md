@@ -400,4 +400,4 @@ In the next article, I will conclude our examination of the practical aspects of
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. Lazy Evaluation
 1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
-1. [Pragmatism](/2018/12/11/the-functional-style-part-9/)
+1. [Pragmatism](/2018/12/12/the-functional-style-part-9/)

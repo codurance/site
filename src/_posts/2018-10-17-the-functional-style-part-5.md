@@ -373,4 +373,4 @@ In the next article we will continue our investigation of higher-order functions
 1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
 1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
 1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
-1. [Pragmatism](/2018/12/11/the-functional-style-part-9/)
+1. [Pragmatism](/2018/12/12/the-functional-style-part-9/)

@@ -579,4 +579,4 @@ As my colleague Jorge likes to say, we are going to infinity...and beyond! In th
 1. Higher-Order Functions II: Currying
 1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
 1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
-1. [Pragmatism](/2018/12/11/the-functional-style-part-9/)
+1. [Pragmatism](/2018/12/12/the-functional-style-part-9/)

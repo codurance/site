@@ -3,7 +3,7 @@ author: Richard Wild
 layout: post
 asset-type: post
 title: "The Functional Style - Part 9"
-date: 2018-12-11 00:00:00
+date: 2018-12-12 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 9. Pragmatism.
 image: 
     src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
