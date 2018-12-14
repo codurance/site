@@ -1,7 +1,4 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-@function  tint($color, $percentage) {
+@function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
 }
 
