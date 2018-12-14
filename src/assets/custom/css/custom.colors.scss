@@ -1,0 +1,31 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+@function  tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+$codurance-orange: #ef7726;
+$codurance-orange-high: tint($codurance-orange, 25%);
+$codurance-orange-mid: tint($codurance-orange, 50%);
+$codurance-orange-low: tint($codurance-orange, 75%);
+$codurance-red: #d60d47;
+$codurance-red-high: tint($codurance-red, 25%);
+$codurance-red-mid: tint($codurance-red, 50%);
+$codurance-red-low: tint($codurance-red, 75%);
+$codurance-yellow: #ffd000;
+$codurance-yellow-high: tint($codurance-yellow, 25%);
+$codurance-yellow-mid: tint($codurance-yellow, 50%);
+$codurance-yellow-low: tint($codurance-yellow, 75%);
+$codurance-aubergine: #5c64b9;
+$codurance-aubergine-high: tint($codurance-aubergine, 25%);
+$codurance-aubergine-mid: tint($codurance-aubergine, 50%);
+$codurance-aubergine-low: tint($codurance-aubergine, 75%);
+$codurance-green: #185466;
+$codurance-green-high: tint($codurance-green, 25%);
+$codurance-green-mid: tint($codurance-green, 50%);
+$codurance-green-low: tint($codurance-green, 75%);
+$codurance-lightgreen: #61bfbb;
+$codurance-lightgreen-high: tint($codurance-lightgreen, 25%);
+$codurance-lightgreen-mid: tint($codurance-lightgreen, 50%);
+$codurance-lightgreen-low: tint($codurance-lightgreen, 75%);
