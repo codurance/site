@@ -13,11 +13,29 @@
  */
 
 $codurance-orange: #ef7726;
+$codurance-orange-high: lighten($codurance-orange, 25%);
+$codurance-orange-mid: lighten($codurance-orange, 50%);
+$codurance-orange-low: lighten($codurance-orange, 75%);
 $codurance-red: #d60d47;
+$codurance-red-high: lighten($codurance-red, 25%);
+$codurance-red-mid: lighten($codurance-red, 50%);
+$codurance-red-low: lighten($codurance-red, 75%);
 $codurance-yellow: #ffd000;
+$codurance-yellow-high: lighten($codurance-yellow, 25%);
+$codurance-yellow-mid: lighten($codurance-yellow, 50%);
+$codurance-yellow-low: lighten($codurance-yellow, 75%);
 $codurance-aubergine: #5c64b9;
+$codurance-aubergine-high: lighten($codurance-aubergine, 25%);
+$codurance-aubergine-mid: lighten($codurance-aubergine, 50%);
+$codurance-aubergine-low: lighten($codurance-aubergine, 75%);
 $codurance-green: #185466;
+$codurance-green-high: lighten($codurance-green, 25%);
+$codurance-green-mid: lighten($codurance-green, 50%);
+$codurance-green-low: lighten($codurance-green, 75%);
 $codurance-lightgreen: #61bfbb;
+$codurance-lightgreen-high: lighten($codurance-lightgreen, 25%);
+$codurance-lightgreen-mid: lighten($codurance-lightgreen, 50%);
+$codurance-lightgreen-low: lighten($codurance-lightgreen, 75%);
 
 $orange-colour: #e67e22;
 
