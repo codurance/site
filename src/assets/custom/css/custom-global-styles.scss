@@ -11,6 +11,7 @@
    Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
    Specificity ranges from lowest to highest (more generic to more specific)
  */
+@import 'custom-colors';
 
 $orange-colour: #e67e22;
 
@@ -53,7 +54,7 @@ img.bullet-image {
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
- }
+}
 
 h1, h2, h3, h4, h5 {
     &.title-v2{
@@ -69,4 +70,8 @@ h1, h2, h3, h4, h5 {
 
 .text-orange{
     color: $orange-colour;
+}
+
+.text-orange-low{
+    color: $codurance-orange-low;
 }
