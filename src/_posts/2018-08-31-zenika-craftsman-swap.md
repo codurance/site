@@ -8,10 +8,9 @@ description: Summary and lessons learned during my craftsman swap in Paris
 image:
     src: /assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/znk.png
 tags:
-- software processes
-- software craftsmanship
-- agile
-- xp
+- codurance
+- craftsmanship
+- craftswap
 ---
 On the week of 6th of August I took part on a craftsman swap between [Zenika](https://www.zenika.com/) and Codurance and I would like to share my experience, the lessons I’ve learned, and how much fun I had. While Zenika was hosting me in Paris, Codurance hosted [Abdellah Zeroual](http://twitter.com/abdezeros) in London 
 
