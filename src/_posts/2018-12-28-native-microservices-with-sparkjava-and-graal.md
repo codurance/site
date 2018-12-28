@@ -190,7 +190,7 @@ Nonetheless, apart from a nicer syntax, Kotlin is very similar to Java. There ar
 
 # The need for Clojure
 
-Using Clojure to build microservices is an interesting idea. Services are naturally functional in nature, in fact a service *is* a function and the dynamic nature of language might make it idea for some data-centric situations.
+Using Clojure to build microservices is an interesting idea. Services are naturally functional in nature, in fact a service *is* a function and the dynamic nature of the language might make it ideal for some data-centric situations.
 
 Rather than using Gradle, we'll start with a new [Leiningen] project:
 
@@ -280,7 +280,7 @@ Once again the native binary is roughly 15M and again the start-up time is almos
 
 This use of Graal with other JVM based languages is a very attractive proposition and worth more investigation, however I do have some concerns about production use. Mainly if something were to go wrong there is very little information in the public domain to help you out, and still less outside of pure Java. On the other hand these are all open source projects so nothing is hidden :)
 
-Another limitation is that many libraries simply don't work with Graal. This is not altogether negative because it will encourage us to go back to simple coding practices however you may have a dependency which you can't change and this could cause major hassle. I think the main drawback initially will be reflection driven mapping, whether of the serialisation or ORM varieties. Quite a lot of effort is already being done to make many libraries and [frameworks](https://github.com/micronaut-projects/micronaut-core/issues/329) [compatible]([https://jira.spring.io/browse/SPR-16991) with Graal but it's still early days.
+Another limitation is that many libraries simply don't work with Graal. This is not altogether negative because it will encourage us to go back to simple coding practices however you may have a dependency which you can't change and this could cause major hassle. I think the main drawback initially will be reflection driven mapping, whether of the serialisation or ORM varieties. Quite a lot of effort is already being done to make many libraries and [frameworks](https://github.com/micronaut-projects/micronaut-core/issues/329) [compatible](https://jira.spring.io/browse/SPR-16991) with Graal but it's still early days.
 
 A third, primarily practical, consideration is the extremely slow compilation of the native image. Even this very simple example takes almost a minute to build. Of course you could do development compiling only to bytecode but then compatibility problems could slip through. A continuous build pipeline and comprehensive tests would be a way to mitigate this risk.
 
