@@ -80,7 +80,7 @@ So far so useless. As I said, this only becomes a really effective programming t
 
 It presented the player with a grid of squares, each of which may or may not have a mine on it. The idea was that you would left-click on a square and, if it contained a mine, game over. If it did not contain a mine then the square would be uncovered and you continued the game. If the square was not adjacent to a square with a mine in it, it would be blank and what’s more, the game would automatically uncover any adjacent squares that also did not have mines in them. However, if the uncovered square was adjacent to one or more mines, it would show a number indicating how many of its adjacent squares contained mines. In this way you could deduce which squares contained mines and mark them by right-clicking on them. The objective of the game was to uncover all the squares without mines on them.
 
-Anyway, this makes for quite a nice coding exercise: write a program that, given a string representing a minesweeper board, outputs a board of idential dimensions that includes numbers indicating how many of each cell’s neighbours contains a mine. For example, given this input:
+Anyway, this makes for quite a nice coding exercise: write a program that, given a string representing a minesweeper board, outputs a board of identical dimensions that includes numbers indicating how many of each cell’s neighbours contains a mine. For example, given this input:
 
 ```
 "      *   \n"
