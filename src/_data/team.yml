@@ -625,3 +625,12 @@
     <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
   github: nawhi
 
+- id: alasdair_smith
+  name: Alasdair Smith
+  image: /assets/custom/img/team/alasdair_smith.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Although relatively new to the professional world of software development, Alasdair has been developing as hobby since an early age. Initially, he was drawn to development in the C programming language after discovering an interest in penetration testing and exploit development. After a brief stint working as a penetration tester, Alasdair chose to adjust his career path to focus more specifically on becoming a developer. Since then, he has graduated university with an undergraduate degree in Computer Science and worked for a software consultancy developing bespoke web applications. </p>
+    <p>As an Apprentice at Codurance Alasdair hopes to improve and expand his software development skill set. He believes strongly in the principles behind craftsmanship and mastery and seeks to apply those principles at every opportunity. </p>
+    <p>Outside of work Alasdair enjoys, riding his motorbike, Thai boxing, travelling and hanging out with friends.</p>
+  github: midmandle
