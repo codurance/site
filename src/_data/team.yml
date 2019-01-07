@@ -62,17 +62,6 @@
   twitter: gryffskin
   github: gryff
 
-- id: alvarogarcia
-  name: Alvaro Garcia
-  image: /assets/custom/img/team/alvaro_garcia.jpg
-  role: Software Craftsman
-  fullDescription: >
-    <p>Alvaro is a software developer who firmly believes in the eXtreme Programming methodology. He's embarked on a lifelong learning process and is now in a symbiotic exchange process with the Barcelona Software Craftsmanship meetup, where he is a co-organizer.</p>
-    <p>He enjoys reading and reviewing technology books, providing feedback to the author whenever possible, to create the best experience for the final reader.</p>
-    <p>Alvaro has been working in the IT industry for product companies, consulting firms and as a freelancer since 2005.</p>
-  twitter: alvarobiz
-  github: alvarogarcia7
-
 - id: chris
   name: Chris Jeffery
   image: /assets/custom/img/team/chris_jeffery.jpg
@@ -594,18 +583,18 @@
   name: Antonio Ruiz
   image: /assets/custom/img/team/antonio_ruiz.jpg
   role: Apprentice
-  fullDescription: 
+  fullDescription:
     <p>Toni made a change career and found the software development a true passion.</p>
     <p>He loves learning about software craftmanship and collaborate with people that shares the same values and willing to learn.</p>
     <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
   twitter: __toniruiz
   github: devtoni
-  
+
 - id: david_gracia
   name: David Gracia
   image: /assets/custom/img/team/david_gracia.png
   role: Apprentice
-  fullDescription: 
+  fullDescription:
     <p>David loves to build solid, robust and expressive software. He continually investigates better ways of doing his job. He always tries to be proud of his work and wants his work to last as long as possible as a result of quality and good design.</p>
     <p>He firmly believes that the way to extend the Software Craftsmanship is through practice, example and communication.</p>
     <p>He prefers the backend to the frontend because it is more independent of passing technological fashions.</p>
@@ -613,7 +602,7 @@
     <p>He has professional experience in the Java backend ecosystem.</p>
     <p>David is multi-faceted. When he doesn't think or build software, he thinks about various disciplines such as political philosophy, economics, sociology, psychology, natural science and machine intelligence (also known as "artificial intelligence", but he doesn't like that term). He loves to delve into any subject he finds interesting. He is fascinated by space opera in film, television or video games.</p>
   twitter: dgraciac
-  github: dgraciac  
+  github: dgraciac
 
 - id: nick_white
   name: Nick White
