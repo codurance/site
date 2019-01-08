@@ -19,7 +19,7 @@ tags:
 
 
 
-# Design Patterns And the Apprenticeship
+# Design patterns and the apprenticeship
 
 This article is an account of how I learned applying patterns. It condenses concepts from the first two weeks of the apprenticeship program.
 
@@ -35,7 +35,7 @@ In TDD by Example, Kent Beck walks the reader through a detailed description of 
 
 In 4 Rules of Simple Design, Corey Haines makes the distinction between testing for state and testing for behavior, as well as how tests drive design and the code design feeds back into how we further write the tests.
 
-#Business Rules and First Tests
+#Business rules and the first tests
 
 One way to look at business rules is to split them in two categories: indicative, and optative. This is an idea from [Richard Wild](https://codurance.com/publications/author/richard-wild/), a fellow Codurance craftsman.
 
