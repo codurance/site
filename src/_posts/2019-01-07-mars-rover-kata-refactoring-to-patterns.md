@@ -4,7 +4,7 @@ asset-type: post
 name: mars-rover-kata-refactoring-to-patterns
 title: Mars Rover Kata - Refactoring to Patterns
 date: 2019-01-08 07:20:00 +00:00
-author: Simion Iulian Belea
+author: Simion Iulian Belea, Sam Davies
 description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
 image: 
     src: /assets/custom/img/blog/mars-rover.jpg
