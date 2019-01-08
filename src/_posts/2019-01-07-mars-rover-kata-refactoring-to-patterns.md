@@ -4,7 +4,7 @@ asset-type: post
 name: mars-rover-kata-refactoring-to-patterns
 title: Mars Rover Kata - Refactoring to Patterns
 date: 2019-01-08 07:20:00 +00:00
-author: Simion Iulian Belea, Sam Davies
+author: Simion Iulian Belea
 description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
 image: 
     src: /assets/custom/img/blog/mars-rover.jpg
@@ -19,7 +19,7 @@ tags:
 
 
 
-**Introduction**
+# Design Patterns And the Apprenticeship
 
 This article is an account of how I learned applying patterns. It condenses concepts from the first two weeks of the apprenticeship program.
 
@@ -35,9 +35,9 @@ In TDD by Example, Kent Beck walks the reader through a detailed description of 
 
 In 4 Rules of Simple Design, Corey Haines makes the distinction between testing for state and testing for behavior, as well as how tests drive design and the code design feeds back into how we further write the tests.
 
-**Business Rules and First Tests**
+#Business Rules and First Tests
 
-One way to look at business rules is to split them in two categories: indicative, and optative. An idea from Richard Wild, a fellow Codurance craftsman.
+One way to look at business rules is to split them in two categories: indicative, and optative. This is an idea from [Richard Wild](https://codurance.com/publications/author/richard-wild/), a fellow Codurance craftsman.
 
 Indicative rules are specifications that don&#39;t change or are easy to change, like the dead and alive state for a cell in the Conway&#39;s Game of Life, or the world has a size in the case of Mars Rover.
 
@@ -53,7 +53,7 @@ In the case of the this kata the indicative rules are the ones about the world s
 
 [<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">a828cd</span>](https://github.com/simion-iulian/mars_rover_article/commit/a828cda5dd7f28e10539062c9dfe2bef1123dc89#diff-52aa4cc276944cec2c0f7f1e877030a9) - Decided that the simplest thing, and one that would take a bigger leap would be to return a variable. After that we also extracted the formatting of the String being displayed and kept it consistent with the business rules. We also decided the initial position would be injected in the constructor.
 
-**Starting to code towards our first abstraction**
+#Starting to code towards our first abstraction
 
 At this point one can go either to start building the turning algorithm or the moving algorithm. We decided to go with the moving. Once we got that going the next dilemma was to either start wrapping around the world, the &quot;rainy&quot; path where we would need to start designing for an edge case or the &quot;happy&quot; path, to move in other directions.
 
@@ -103,7 +103,7 @@ Repeating for all turning possibilities until both turning right and left are im
 
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6c78e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/6c78e3a3f557f78e464da6edfee0cedf1ddaa566) - Refactored to using immutability and renamed the Coordinate to Rover as it has behavior and Position would point to being just a wrapper.
 
-**Refactoring to State and Command patterns**
+#Refactoring to State and Command patterns
 
 Now we decided to abstract some of the execution details so they are self contained in classes.
 
@@ -133,4 +133,4 @@ The last step is to show the use of the Command pattern by abstracting away the 
 
 And that&#39;s it, condensing the concepts learned in the first two weeks of apprenticeship using the Mars Rover kata.
 
-It was done over a few pair programming sessions by Simion Iulian Belea and Sam Davies.
+It was done over a few pair programming sessions by Simion Iulian Belea and [Sam Davies](https://codurance.com/publications/author/sam-davies/).
