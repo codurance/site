@@ -21,11 +21,11 @@ tags:
 
 # Design patterns and the apprenticeship
 
-This article is an account of how I learned applying patterns. It condenses concepts from the first two weeks of the apprenticeship program.
+This article is an account of how I learned to apply patterns. It condenses concepts from the first two weeks of the apprenticeship program by making use of a programming kata.
 
-A kata is a very good exercise where you&#39;re given a specific set of rules and then one can use that exercise to learn different concepts, as well as different programming languages. One has an isolated domain problem where he can seek a different solution everytime. This can lead to a better understanding of how to solve a specific set of problems.
+A kata is an exercise where you're given a specific set of rules and it can get as specific as having an isolated domain problem. This can be used to learn the useful concepts needed solving problems within that domain. Doing it repeatedly and attempting a different solution each time leads to a better understanding of how to solve that set of problems.
 
-In this article I&#39;m going to go through the Mars Rover and how I used this kata to learn both classic test-driven development together with how to refactor things and also how to apply the Command and State design patterns.Applying patterns to such a simple problem is over-engineering. Yet as a guide tool to learn about refactoring and to train a sense of where they can be applied it's a very good exercise.
+In this article I&#39;m going to go through the Mars Rover kata and how I used it kata to learn both classic test-driven development together with how to refactor things and also how to apply the Command and State design patterns. Applying patterns to such a simple problem is over-engineering. However, this provides a guidefor learning about refactoring and to train a sense of where they can be applied it's a very good exercise.
 
 I provide the commits following the red-green-refactor pattern as it&#39;s like the &quot;making of&quot; part of a movie. The metaphor of film editing has a good resemblance with the one of editing code. It can be useful to know about the different steps of the creative process than to just watch the end result if one&#39;s purpose is to learn about development process.
 
