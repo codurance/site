@@ -17,10 +17,6 @@ tags:
 
 ---
 
-
-
-# Design patterns and the apprenticeship
-
 This article is an account of how I learned to apply patterns. It condenses concepts from the first two weeks of the apprenticeship program by making use of a programming kata.
 
 A kata is an exercise where you're given a specific set of rules and it can get as specific as having an isolated domain problem. This can be used to learn the useful concepts needed solving problems within that domain. Doing it repeatedly and attempting a different solution each time leads to a better understanding of how to solve that set of problems.
