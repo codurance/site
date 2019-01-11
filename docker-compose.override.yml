@@ -7,10 +7,10 @@ services:
     build: .
     command: bundle exec rake servequick
     volumes:
-      - '${PWD}/src:/usr/local/site/src:ro'
-      - '${PWD}/build/config:/usr/local/site/build/config:ro'
-      - '${PWD}/Gemfile:/usr/local/site/Gemfile:ro'
-      - '${PWD}/Rakefile:/usr/local/site/Rakefile:ro'
+      - '${PWD}/src:/usr/local/src/src:ro'
+      - '${PWD}/build/config:/usr/local/src/build/config:ro'
+      - '${PWD}/Gemfile:/usr/local/src/Gemfile:ro'
+      - '${PWD}/Rakefile:/usr/local/src/Rakefile:ro'
     ports:
       - '4000:4000'
     
