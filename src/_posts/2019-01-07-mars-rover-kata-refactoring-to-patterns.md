@@ -41,7 +41,18 @@ Optative rules are the ones that change, and often contain &quot;if&quot; and &q
 
 In the case of the this kata the indicative rules are the ones about the world size, as well as the number of commands. The optative rules are around the commands themselves.
 
-[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">fc05fc</span>](https://github.com/simion-iulian/mars_rover_article/commit/fc05fc4d36fbe2b672b4a7c61e110aaf58800823#diff-52aa4cc276944cec2c0f7f1e877030a9) - After a bit of debate we chose to test that the rover stays in the same position given an empty command. This sets the stage for the next test, as we decided to design changing the coordinate before designing the turning algorithm.
+```diff
+public class Hello1
+{
+   public static void Main()
+   {
+-      System.Console.WriteLine("Hello, World!");
++      System.Console.WriteLine("Rock all night long!");
+   }
+}
+```
+
+[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">99e1d0</span>](https://github.com/simion-iulian/mars_rover_article/commit/99e1d0ba08c3fcb18e10608a29701745fdf87f46) - After a bit of debate we chose to test that the rover stays in the same position given an empty command. This sets the stage for the next test, as we decided to design changing the coordinate before designing the turning algorithm.
 
 [<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">c2ab91</span>](https://github.com/simion-iulian/mars_rover_article/commit/c2ab914988326536257e6bd29eb82185586e0e2d#diff-52aa4cc276944cec2c0f7f1e877030a9) - Following [TPP](https://codurance.com/2015/05/18/applying-transformation-priority-premise-to-roman-numerals-kata/)  we return a literal as the simplest step to make the test pass.
 
