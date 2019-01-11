@@ -41,6 +41,11 @@ Optative rules are the ones that change, and often contain &quot;if&quot; and &q
 
 In the case of the this kata the indicative rules are the ones about the world size, as well as the number of commands. The optative rules are around the commands themselves.
 
+
+
+<details>
+  <summary>Click to expand!</summary>
+
 ```diff
 public class Hello1
 {
@@ -51,6 +56,8 @@ public class Hello1
    }
 }
 ```
+
+</details>
 
 [<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">99e1d0</span>](https://github.com/simion-iulian/mars_rover_article/commit/99e1d0ba08c3fcb18e10608a29701745fdf87f46) - After a bit of debate we chose to test that the rover stays in the same position given an empty command. This sets the stage for the next test, as we decided to design changing the coordinate before designing the turning algorithm.
 
