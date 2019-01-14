@@ -72,7 +72,7 @@ for
 | Zero(_) -> "Is Zero!!"
 ```
 
-The `x`, is not the data that we pass to the Pattern, is the data that is returned! We pass the data implicilty. But wait, if I don't use the return data, do I need to return it at all? And the answer is no. So now we replace
+The `x` is not the data that we pass to the Pattern, is the data that is returned! We pass the data implicilty. But wait, if I don't use the return data, do I need to return it at all? And the answer is no. So now we replace
 
 ```F#
 let (|Zero|_|) (number) = if number = 0 then Some(number) else None
