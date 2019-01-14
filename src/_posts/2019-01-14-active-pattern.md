@@ -13,7 +13,7 @@ tags:
 
 Last week I was pointed by someone to Active Patterns in F#. And it has been quite an interesting discovery.
 
-Active Patterns are used on F# to partition data. Those partitions then can be used on pattern matching. Microsoft's [webpage](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/active-patterns) compares them to discriminated unions.
+Active Patterns are used on F# to partition data. Those partitions then can be used with pattern matching. Microsoft's [webpage](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/active-patterns) compares them to discriminated unions.
 
 How they can be used? Well, you could look at the above link, or just follow this post (or, in fact, do both).
 
