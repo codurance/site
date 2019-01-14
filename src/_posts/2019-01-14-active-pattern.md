@@ -63,7 +63,7 @@ As you can see there are a few differences on the code. If we concentrate on the
 If we look at what is the answer that we are providing, we realize that we are not using the number at all, so in fact we could change the line
 
 ```F#
-|Zero(x) -> "Is Zero!!"
+| Zero(x) -> "Is Zero!!"
 ```
 
 for
