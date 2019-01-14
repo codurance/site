@@ -8,7 +8,7 @@ description: A very interesting construct on F#
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
-- F#
+- FSharp
 - functional programming
 ---
 
