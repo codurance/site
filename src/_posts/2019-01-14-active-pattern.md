@@ -9,6 +9,7 @@ image:
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
 - F#
+- functional programming
 ---
 
 Last week I was pointed by someone to Active Patterns in F#. And it has been quite an interesting discovery.
