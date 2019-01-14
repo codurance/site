@@ -154,6 +154,6 @@ with
 let (|Zero|Positive|Negative|) (number) = if number = 0 then Zero elif number > 0 then Positive else Negative
 ```
 
-Which in this case looks a bit stupid to me, as I'm nearly back to the original code.
+Which in this case looks a bit pointless to me, as I'm nearly back to the original code. It will have it's uses, though.
 
 Active Patterns are an intersting construct, especially when using the Active Pattern multiple times.
