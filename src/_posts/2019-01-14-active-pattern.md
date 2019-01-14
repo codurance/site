@@ -145,8 +145,8 @@ Finally, we could make single big pattern, replacing
 
 ```F#
 let (|Zero|_|) (number) = if number = 0 then Some(Zero) else None
-let (|Positive|_|) (number) = if number > 0 then Some("Positive") else None
-let (|Negative|_|) (number) = if number < 0 then Some(number) else None
+let (|Positive|_|) (number) = if number > 0 then Some(Positive) else None
+let (|Negative|_|) (number) = if number < 0 then Some(Negative) else None
 ```
 
 with
