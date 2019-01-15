@@ -2,7 +2,8 @@
 layout: post
 asset-type: post
 name: mars-rover-kata-refactoring-to-patterns
-title: Mars Rover Kata - Refactoring to Patterns
+title: Mars Rover Kata
+Refactoring to Patterns
 date: 2019-01-14 07:20:00 +00:00
 author: Simion Iulian Belea
 description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
@@ -222,7 +223,7 @@ public String execute(String commands) {
 ```
 
 ```diff
- for(String command:individualCommands) {
+ for (String command:individualCommands) {
       if(command.equals(MOVE_COMMAND))
 -        y++;
 +        if(cardinal.equals("N"))
@@ -234,7 +235,8 @@ public String execute(String commands) {
 </details>
 
 <details>
-<summary>Cleaning code - we refactor the North and South literals to fields</summary>
+<summary>Cleaning code
+we refactor the North and South literals to fields</summary>
 
 ```diff
  for (String command:individualCommands) {
@@ -249,10 +251,11 @@ public String execute(String commands) {
 ```
 </details>
 
-<details><summary>Clarifying intent for how we check direction - applying **SRP**</summary>
+<details><summary>Clarifying intent for how we check direction
+applying **SRP**</summary>
 
 ```diff
- for (String command:individualCommands) {
+for(String command:individualCommands) {
       if(command.equals(MOVE_COMMAND))
 -        if(cardinal.equals(NORTH))
 +        if(facing(NORTH))
@@ -267,67 +270,128 @@ public String execute(String commands) {
 ```
 </details>
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">e5d3ef</span>](https://github.com/simion-iulian/mars_rover_article/commit/e5d3ef23580b43c4fc287576f5ed818b2b2d263f) - Clarifying concepts around what is input and what is a command by renaming variables
+<details><summary>
+Clarifying concepts around what is input and what is a command by renaming variables
+</summary>
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">cef9e5</span>](https://github.com/simion-iulian/mars_rover_article/commit/cef9e5dfd91c31ef0eb982d19160146423679642) - Clarifying intent by extracting method that handles moving - applying **SRP**
+```diff
+- public String execute(String commands) {
++ public String execute(String input) {
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">3951a1</span>](https://github.com/simion-iulian/mars_rover_article/commit/3951a11f123eb1dc8484397fb938d57a9cb33a68) - Cleaning code - extracted coordinate formatting to field
+-    String[] individualCommands = commands.split("");
++    String[] commands = input.split("");
 
-[<span style=" font-weight: bold;  color: #6AA84F; padding-right: 5px;">ed42a0</span>](https://github.com/simion-iulian/mars_rover_article/commit/ed42a0911d4a33047e260152a99944078234d72c) - Implemented moving horizontally. Extracted method that expresses intent for vertical and horizontal movements.
+-    for (String command:individualCommands) {
++    for (String command:commands) {
+```
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">2ff4e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/2ff4e3446329d499f92d8eaedd494159f7be4321) - Cleaning code - clarified how the String is split into individual characters.
+</details>
+
+<details><summary>Clarifying intent by extracting method that handles moving applying **SRP**
+</summary>
+
+```diff   
+  if(isMove(command))
+-        if(facing(NORTH))
+-          y++;
+-        if(facing(SOUTH))
+-          y--;
++        move();
+```
+
+```diff
++private void move() {
++    if(facing(NORTH))
++      y++;
++    if(facing(SOUTH))
++      y--;
++  }
+```
+</details>
+
+[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">3951a1</span>](https://github.com/simion-iulian/mars_rover_article/commit/3951a11f123eb1dc8484397fb938d57a9cb33a68)
+Cleaning code
+extracted coordinate formatting to field
+
+[<span style=" font-weight: bold;  color: #6AA84F; padding-right: 5px;">ed42a0</span>](https://github.com/simion-iulian/mars_rover_article/commit/ed42a0911d4a33047e260152a99944078234d72c)
+Implemented moving horizontally. Extracted method that expresses intent for vertical and horizontal movements.
+
+[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">2ff4e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/2ff4e3446329d499f92d8eaedd494159f7be4321)
+Cleaning code - clarified how the String is split into individual characters.
 
 This decision though leads to a larger class that needs refactoring. So the decision at this point is whether one has enough for an abstraction for the moving logic or to continue in order to discover another pattern in the code. We decided to continue with implementing the turning logic as we could always come back at abstracting the moving into class that would know by itself which way to move.
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">68e1a8c</span>](https://github.com/simion-iulian/mars_rover_article/commit/68e1a8cbda65b8042717a1a461ccfd4fe1d8ecfb?diff=unified#diff-52aa4cc276944cec2c0f7f1e877030a9) - Continuing by wrapping the coordinate logic into a class
+[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">68e1a8c</span>](https://github.com/simion-iulian/mars_rover_article/commit/68e1a8cbda65b8042717a1a461ccfd4fe1d8ecfb?diff=unified#diff-52aa4cc276944cec2c0f7f1e877030a9)
+Continuing by wrapping the coordinate logic into a class
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">76d636</span>](https://github.com/simion-iulian/mars_rover_article/commit/76d63670df343468b6fda02ac6af5ddeceaa13d8) - Shadowing the new class along the old implementation
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">76d636</span>](https://github.com/simion-iulian/mars_rover_article/commit/76d63670df343468b6fda02ac6af5ddeceaa13d8)
+Shadowing the new class along the old implementation
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">a0f5110</span>](https://github.com/simion-iulian/mars_rover_article/commit/a0f5110f26dacb5feed88a0f34dcab479a9e7267) - Deleting the old implementation and delegating all coordinate responsibilities to the Position object
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">a0f5110</span>](https://github.com/simion-iulian/mars_rover_article/commit/a0f5110f26dacb5feed88a0f34dcab479a9e7267)
+Deleting the old implementation and delegating all coordinate responsibilities to the Position object
 
-[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">3ad34d</span>](https://github.com/simion-iulian/mars_rover_article/commit/3ad34daeb41ab3df4f114c593a04f4d1bb56c3dd) - Adding failing test for turning right
+[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">3ad34d</span>](https://github.com/simion-iulian/mars_rover_article/commit/3ad34daeb41ab3df4f114c593a04f4d1bb56c3dd)
+Adding failing test for turning right
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">8e5c98</span>](https://github.com/simion-iulian/mars_rover_article/commit/8e5c98e8c6f6bb0f080ece34057e83b6a3a553e1) - Simplest thing to make the test pass
+[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">8e5c98</span>](https://github.com/simion-iulian/mars_rover_article/commit/8e5c98e8c6f6bb0f080ece34057e83b6a3a553e1)
+Simplest thing to make the test pass
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">000836</span>](https://github.com/simion-iulian/mars_rover_article/commit/0008368273817c7ca4617f49b7b7569f66224d18) - Refactored responsibility to Position
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">000836</span>](https://github.com/simion-iulian/mars_rover_article/commit/0008368273817c7ca4617f49b7b7569f66224d18)
+Refactored responsibility to Position
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">fda3d2</span>](https://github.com/simion-iulian/mars_rover_article/commit/fda3d2f0de907ed66ad311c7e12046a1249cc507) - Implemented turning right twice
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">fda3d2</span>](https://github.com/simion-iulian/mars_rover_article/commit/fda3d2f0de907ed66ad311c7e12046a1249cc507)
+Implemented turning right twice
 
 Repeating for all turning possibilities until both turning right and left are implemented.
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">093f06</span>](https://github.com/simion-iulian/mars_rover_article/commit/093f067a0104a179d384ba9507acb3af7ffc0817) - Test for both directions passing.
+[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">093f06</span>](https://github.com/simion-iulian/mars_rover_article/commit/093f067a0104a179d384ba9507acb3af7ffc0817)
+Test for both directions passing.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c6cfb3a</span>](https://github.com/simion-iulian/mars_rover_article/commit/c6cfb3a152e3854269db42d0f715c16502fe33d8?diff=unified) - At this point there seems to be a good deal of feature envy between the Position object and the Mars Rover, so we rename Position to Rover.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c6cfb3a</span>](https://github.com/simion-iulian/mars_rover_article/commit/c6cfb3a152e3854269db42d0f715c16502fe33d8?diff=unified)
+At this point there seems to be a good deal of feature envy between the Position object and the Mars Rover, so we rename Position to Rover.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6c78e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/6c78e3a3f557f78e464da6edfee0cedf1ddaa566) - Refactored to using immutability and renamed the Coordinate to Rover as it has behavior and Position would point to being just a wrapper.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6c78e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/6c78e3a3f557f78e464da6edfee0cedf1ddaa566)
+Refactored to using immutability and renamed the Coordinate to Rover as it has behavior and Position would point to being just a wrapper.
 
 #Refactoring to State and Command patterns
 
 Now we decided to abstract some of the execution details so they are self contained in classes.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38ad</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38ad) - When introducing another concept - Cardinal - we are having a deeper level of delegation therefore it&#39;s a good idea to have a small unit test in order to show its behavior.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38ad</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38ad)
+When introducing another concept
+Cardinal
+we are having a deeper level of delegation therefore it&#39;s a good idea to have a small unit test in order to show its behavior.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">f896a2</span>](https://github.com/simion-iulian/mars_rover_article/commit/f896a26bfad71f99020231c340c07c593ed61459) - Refactoring to use the Cardinal in the constructor and to initialize using a factory method.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">f896a2</span>](https://github.com/simion-iulian/mars_rover_article/commit/f896a26bfad71f99020231c340c07c593ed61459)
+Refactoring to use the Cardinal in the constructor and to initialize using a factory method.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">309694</span>](https://github.com/simion-iulian/mars_rover_article/commit/30969435e977d249c37b569740e02367d2c2513b) - Delegating moving logic to be self-contained in the Cardinal. Shadowing the implementation along the old one in each of the conditions until we can have a unique call and all the tests are passing with the refactored call.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">309694</span>](https://github.com/simion-iulian/mars_rover_article/commit/30969435e977d249c37b569740e02367d2c2513b)
+Delegating moving logic to be self-contained in the Cardinal. Shadowing the implementation along the old one in each of the conditions until we can have a unique call and all the tests are passing with the refactored call.
 
 It also makes the code easier to follow and read. In the case of the **MarsRoverController** and the **Rover** classes it is only one level of delegating, with the cardinal it&#39;s deeper therefore a unit test is justified. This would show the deeper behavior of the collaborators of the Rover
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38a</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38add0b7adf613448df4a7a2f85b0e82ad6a6) - The direction uses a switch logic to change positions and it is possible to have each cardinal point be self containing, knowing only of it&#39;s right and left coordinate.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38a</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38add0b7adf613448df4a7a2f85b0e82ad6a6)
+The direction uses a switch logic to change positions and it is possible to have each cardinal point be self containing, knowing only of it&#39;s right and left coordinate.
 
 Delegating a call to its own right() and left() methods would make use of the State pattern and lets the cardinal manage the switching. In a way looks like a water molecule that has one big atom in the middle and two neighboring ones to its left and right. Naming the Cardinal State subtype methods to left() and right() distances the implementation from turning and makes it more reusable in another context. It makes the switch go away, and also puts the responsibility of switching state to the cardinal and not to the rover. The cognitive load of the class is less because before the refactoring the Rover class had to know about all the mappings and now the mappings are self-contained.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6080dc</span>](https://github.com/simion-iulian/mars_rover_article/commit/6080dc18ab125fb26b344bf761feedcb230710f8) - Shadowing and removing the old implementation. Adapting it to work with the Rover
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6080dc</span>](https://github.com/simion-iulian/mars_rover_article/commit/6080dc18ab125fb26b344bf761feedcb230710f8)
+Shadowing and removing the old implementation. Adapting it to work with the Rover
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">bf79f1b</span>](https://github.com/simion-iulian/mars_rover_article/commit/bf79f1b) - Full refactor of Rover into polymorphic call for cardinal and state pattern
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">bf79f1b</span>](https://github.com/simion-iulian/mars_rover_article/commit/bf79f1b)
+Full refactor of Rover into polymorphic call for cardinal and state pattern
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">21924ca</span>](https://github.com/simion-iulian/mars_rover_article/commit/21924ca) - Cleaning up code, moving things locally for readability and to keep things close to where the behavior is implemented
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">21924ca</span>](https://github.com/simion-iulian/mars_rover_article/commit/21924ca)
+Cleaning up code, moving things locally for readability and to keep things close to where the behavior is implemented
 
 The last step is to show the use of the Command pattern by abstracting away the calls of command execution into command objects.
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">5aa83d4</span>](https://github.com/simion-iulian/mars_rover_article/commit/5aa83d4) - Implemented Command, CommandFactory and started refactoring invocation to commands instead of the controller
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">5aa83d4</span>](https://github.com/simion-iulian/mars_rover_article/commit/5aa83d4)
+Implemented Command, CommandFactory and started refactoring invocation to commands instead of the controller
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c5b0fe7</span>](https://github.com/simion-iulian/mars_rover_article/commit/c5b0fe7) - Final touch - Moving commands into their own folder, changing the conditional to use a HashMap to store the commands and naming the command Strings accordingly.
+[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c5b0fe7</span>](https://github.com/simion-iulian/mars_rover_article/commit/c5b0fe7)
+Final touch
+Moving commands into their own folder, changing the conditional to use a HashMap to store the commands and naming the command Strings accordingly.
 
 And that&#39;s it, condensing the concepts learned in the first two weeks of apprenticeship using the Mars Rover kata.
 
