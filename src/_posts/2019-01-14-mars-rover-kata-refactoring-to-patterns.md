@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: mars-rover-kata-refactoring-to-patterns
 title: Mars Rover Kata - Refactoring to Patterns
-date: 2019-01-08 07:20:00 +00:00
+date: 2019-01-14 07:20:00 +00:00
 author: Simion Iulian Belea
 description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
 image: 
@@ -41,47 +41,231 @@ Optative rules are the ones that change, and often contain &quot;if&quot; and &q
 
 In the case of the this kata the indicative rules are the ones about the world size, as well as the number of commands. The optative rules are around the commands themselves.
 
-
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>After a bit of debate we chose to test that the rover stays in the same position given an empty command. This sets the stage for the next test, as we decided to design changing the coordinate before designing the turning algorithm.
+</summary>
 
 ```diff
-public class Hello1
-{
-   public static void Main()
-   {
--      System.Console.WriteLine("Hello, World!");
-+      System.Console.WriteLine("Rock all night long!");
-   }
+
+public class MarsRover {
+  public MarsRover(int x, int y, String cardinal) {}
+  public String execute(String commands) {
+    return null;
+  }
 }
+```
+```diff
+
+public class MarsRoverShould {
+  @Test
+  void return_initial_position_of_rover_without_any_command() {
+    final String emptyCommand = "";
+
+    assertThat(new MarsRover(1,2,"N").execute(emptyCommand)
+    is("1 2 N"));
+  }
+}
+```
+</details>
+
+<details>
+ <summary>Following TPP we return a literal as the simplest step to make the test pass.</summary>
+
+```diff
+  public String execute(String commands) {
+-    return null;
++    return "1 2 N";
+  }
+}
+```
+</details>
+
+<details>
+<summary>We changed to a parameterized test as we&#39;re going to have very similar test cases and our intent would be more explicit.</summary>
+
+```diff
+
+- @Test
+-  void return_initial_position_of_rover_without_any_command() {
++  @ParameterizedTest
++  @CsvSource({"1, 2, N, '1 2 N'"})
++  void return_initial_position_of_rover_without_any_command(int initialX, int initialY, String initialCardinal, String expectedCoordinate) {
+    final String emptyCommand = "";
+-    assertThat(new MarsRover(1,2,"N").execute(emptyCommand), CoreMatchers.is("1 2 N"));
++    assertThat(new MarsRover(initialX, initialY, initialCardinal).execute(emptyCommand), CoreMatchers.is(expectedCoordinate));
+  }
 ```
 
 </details>
 
-[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">99e1d0</span>](https://github.com/simion-iulian/mars_rover_article/commit/99e1d0ba08c3fcb18e10608a29701745fdf87f46) - After a bit of debate we chose to test that the rover stays in the same position given an empty command. This sets the stage for the next test, as we decided to design changing the coordinate before designing the turning algorithm.
+<details> <summary>Decided that the simplest thing, and one that would take a bigger leap would be to return a variable. After that we also extracted the formatting of the String being displayed and kept it consistent with the business rules. We also decided the initial position would be injected in the constructor. </summary>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">c2ab91</span>](https://github.com/simion-iulian/mars_rover_article/commit/c2ab914988326536257e6bd29eb82185586e0e2d#diff-52aa4cc276944cec2c0f7f1e877030a9) - Following [TPP](https://codurance.com/2015/05/18/applying-transformation-priority-premise-to-roman-numerals-kata/)  we return a literal as the simplest step to make the test pass.
+```diff
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">953b95</span>](https://github.com/simion-iulian/mars_rover_article/commit/953b95a7e08b537ac7b51a74268781237aade73c#diff-c99b66330f280788f1696e82e23ca80a) - We changed to a parameterized test as we&#39;re going to have very similar test cases and our intent would be more explicit.
+  @ParameterizedTest
+-  @CsvSource({"1, 2, N, '1 2 N'"})
+-  void return_initial_position_of_rover_without_any_command(int initialX, int initialY, String initialCardinal, String expectedCoordinate) {
++  @CsvSource({
+    "1, 2, N, '1 2 N'",
+    "1, 3, N, '1 3 N'"
+  })
++  void return_initial_position_of_rover_without_any_command(
+    int initialX, int initialY, String initialCardinal,
+    String expectedCoordinate) {
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">a828cd</span>](https://github.com/simion-iulian/mars_rover_article/commit/a828cda5dd7f28e10539062c9dfe2bef1123dc89#diff-52aa4cc276944cec2c0f7f1e877030a9) - Decided that the simplest thing, and one that would take a bigger leap would be to return a variable. After that we also extracted the formatting of the String being displayed and kept it consistent with the business rules. We also decided the initial position would be injected in the constructor.
+    final String emptyCommand = "";
+    final MarsRover rover = new MarsRover(initialX, initialY, initialCardinal);
 
+    final String actualCoordinate = rover.execute(emptyCommand);
+
+    assertThat(new MarsRover(initialX, initialY, initialCardinal).execute(emptyCommand), CoreMatchers.is(expectedCoordinate));
+    assertThat(actualCoordinate, CoreMatchers.is(expectedCoordinate));
+  }
+
+```
+
+
+```diff
+public class MarsRover {
++  private final int x;
++  private final int y;
++  private final String cardinal;
+  public MarsRover(int x, int y, String cardinal) {
++    this.x = x;
++    this.y = y;
++    this.cardinal = cardinal;
+  }
+
+  public String execute(String commands) {
+-    return "1 2 N";
++    return formatCoordinate();
+  }
+
++  private String formatCoordinate() {
++    return String.format("%d %d %s", x, y, cardinal);
+  }
+}
+
+```
+</details>
 #Starting to code towards our first abstraction
 
 At this point one can go either to start building the turning algorithm or the moving algorithm. We decided to go with the moving. Once we got that going the next dilemma was to either start wrapping around the world, the &quot;rainy&quot; path where we would need to start designing for an edge case or the &quot;happy&quot; path, to move in other directions.
 
 We decided for the happy path. It introduces some duplication. That points to us that we could use an abstraction for moving the rover. In a larger context this is relevant for the user story one implements. Do we implement for something that is more &quot;deliverable&quot; and works straight away. This is something of immediate use to a product owner or the business. Going for the edge case would be making things more robust. So one important thing to take into account in the real-world is what the business needs at the moment and prioritize which feature gets implemented first.
+<details> <summary>We come back to our initial decision to start testing for changing the coordinate given a direction. Initially the test fails and introducing a conditional in order to increment the Y variable, as well as refactored the command to a field.</summary>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">6e69b0</span>](https://github.com/simion-iulian/mars_rover_article/commit/6e69b0263b25ccbd2a88bf3d5d9df5c2c74a8b5f) - This is where we come to our initial decision to start testing for changing the coordinate given a direction. Initially the test fails and introducing a conditional in order to increment the Y variable, as well as refactored the command to a field.
+```diff
+public String execute(String commands) {
++    if(commands.equals(MOVE_COMMAND))
++         y++;
+  return formatCoordinate();
+}
+```
+```diff
++@ParameterizedTest
++  @CsvSource({
++    "1, 2, N, M, '1 3 N'",
++    "1, 3, N, M, '1 4 N'"
++  })
++  public void
++  move(
++    int initialX, int initialY, String initialCardinal,
++    String commands,
++    String expectedCoordinate
++  ) {
++    final MarsRover rover = new MarsRover(initialX, initialY,+ initialCardinal);
++
++    String actualCoordinate = rover.execute(commands);
++
++    assertThat(actualCoordinate, is(expectedCoordinate));
++  }
+```
+</details>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">fc2e5b</span>](https://github.com/simion-iulian/mars_rover_article/commit/fc2e5b014d9d58a2630e000cab77c6eb62d7cd67) - Test fails with multiple move commands so we decide to split the input and parse multiple commands.
+<details><summary>Test fails with multiple move commands so we decide to split the input and parse multiple commands.</summary>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">9b09d2</span>](https://github.com/simion-iulian/mars_rover_article/commit/9b09d215b5990a420711305349d02b64ce3a259d) - We decide to duplicate the if condition so we can move towards the Southern direction.
+```diff
+@ParameterizedTest
+  @CsvSource({
+    "1, 2, N, M, '1 3 N'",
++    "1, 3, N, MM, '1 5 N'"
+  })
+```
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">4af91a</span>](https://github.com/simion-iulian/mars_rover_article/commit/4af91ab319a20b78f8b400c11808e24b73fab3b7) - Cleaning code - we refactor the North and South literals to fields -
+```diff
+public String execute(String commands) {
+-    if(commands.equals(MOVE_COMMAND))
+-      y++;
++    String[] individualCommands = commands.split("");
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">4658e9</span>](https://github.com/simion-iulian/mars_rover_article/commit/4658e93138d63e9b4b196bbc88ff6d8eff829400) - Clarifying intent for how we check direction - applying **SRP**
++    for (String command:individualCommands) {
++      if(command.equals(MOVE_COMMAND))
++        y++;
++    }
+    return formatCoordinate();
+  }
+```
+
+</details>
+
+<details> <summary>We decide to duplicate the if condition so we can move towards the Southern direction.</summary>
+
+```diff
+@ParameterizedTest
+  @CsvSource({
+    "1, 2, N, M, '1 3 N'",
+    "1, 3, N, MM, '1 5 N'"
++    "1, 3, N, MMMMM, '1 8 N'",
++    "1, 8, S, M, '1 7 S'",
+  })
+```
+
+```diff
+ for(String command:individualCommands) {
+      if(command.equals(MOVE_COMMAND))
+-        y++;
++        if(cardinal.equals("N"))
++          y++;
++        if(cardinal.equals("S"))
++          y--;
+    }
+```
+</details>
+
+<details>
+<summary>Cleaning code - we refactor the North and South literals to fields</summary>
+
+```diff
+ for (String command:individualCommands) {
+      if(command.equals(MOVE_COMMAND))
+-        if(cardinal.equals("N"))
++        if(cardinal.equals(NORTH))
+          y++;
+-        if(cardinal.equals("S"))
++        if(cardinal.equals(SOUTH))
+          y--;
+    }
+```
+</details>
+
+<details><summary>Clarifying intent for how we check direction - applying **SRP**</summary>
+
+```diff
+ for (String command:individualCommands) {
+      if(command.equals(MOVE_COMMAND))
+-        if(cardinal.equals(NORTH))
++        if(facing(NORTH))
+          y++;
+-        if(cardinal.equals(SOUTH))
++        if(facing(SOUTH))
+          y--;
+ }
++ private boolean facing(String direction) {
++    return this.cardinal.equals(direction);
++  }
+```
+</details>
 
 [<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">e5d3ef</span>](https://github.com/simion-iulian/mars_rover_article/commit/e5d3ef23580b43c4fc287576f5ed818b2b2d263f) - Clarifying concepts around what is input and what is a command by renaming variables
 
