@@ -6,7 +6,11 @@ title: "The Functional Style - Part 4"
 date: 2018-09-19 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 4. First-class Functions II - Filter, Reduce & more.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-4.jpeg
+    attribution:
+       text: Avital Pinnick
+       href: https://www.flickr.com/photos/14028151@N04/5876239957/
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming
