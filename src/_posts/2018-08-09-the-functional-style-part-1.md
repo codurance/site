@@ -6,7 +6,11 @@ title: "The Functional Style - Part 1"
 date: 2018-08-09 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 1. An introduction.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-1.jpeg
+    attribution:
+       text: Photo by Sean McClean
+       href: https://en.wikipedia.org/wiki/Falkirk_Wheel#/media/File:FalkirkWheelSide_2004_SeanMcClean.jpg
+           
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming

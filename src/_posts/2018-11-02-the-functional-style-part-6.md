@@ -6,7 +6,11 @@ title: "The Functional Style - Part 6"
 date: 2018-11-02 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 6. Higher-order functions II - Currying.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-6.jpeg
+    attribution:
+       text: Nick Youngson 
+       href: http://nyphotographic.com/ 
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming

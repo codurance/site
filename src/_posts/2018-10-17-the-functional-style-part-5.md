@@ -6,7 +6,11 @@ title: "The Functional Style - Part 5"
 date: 2018-10-17 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 5. Higher-order functions I - Function composition & Monads.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-5.jpeg
+    attribution:
+       text: Hans Schou
+       href: https://schou.dk/artikler/bestlock/IMG_2525.JPG
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming

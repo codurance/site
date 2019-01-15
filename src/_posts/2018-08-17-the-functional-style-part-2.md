@@ -6,7 +6,11 @@ title: "The Functional Style - Part 2"
 date: 2018-08-17 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 2. First steps.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-2.jpeg
+    attribution:
+       text: Created by Wolfgang Beyer with the program Ultra Fractal 3. - Own work, CC BY-SA 3.0
+       href: https://commons.wikimedia.org/w/index.php?curid=322042
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming
