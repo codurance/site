@@ -630,7 +630,7 @@
   image: /assets/custom/img/team/jordi_creus.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Jordi is a software developer specialised in the web environment. He practices agile methodologies and he is always willing to learn new technologies and methodologies.</p>
-    <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling the technical debt and legacy code.</p>
+    <p>Jordi is a software developer specialised in web environment. He practices agile methodologies and is always willing to learn new technologies and methodologies.</p>
+    <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
     <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
   github: monitotxi
