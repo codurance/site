@@ -624,3 +624,13 @@
     <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
   github: RoryCollins
   twitter: Rory_Collins_
+
+- id: jordi_creus
+  name: Jordi Creus
+  image: /assets/custom/img/team/jordi_creus.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Jordi is a software developer specialised in web environment. He practices agile methodologies and is always willing to learn new technologies and methodologies.</p>
+    <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
+    <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
+  github: monitotxi
