@@ -1,5 +1,5 @@
 {% if post.image.thumbnail %}
-		{% assign imageSrc = post.image.thumbnail %}
+  {% assign postImgUrl = post.image.thumbnail %}
 {% elsif post.image.src and post.image.src contains '://' %} 
   {% assign postImgUrl = post.image.src %} 
 {% elsif post.image.src%} 
