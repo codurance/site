@@ -1,11 +1,12 @@
-{% if post.image.src and post.image.src contains '://' %} 
+{% if post.image.thumbnail %}
+		{% assign imageSrc = post.image.thumbnail %}
+{% else if post.image.src and post.image.src contains '://' %} 
   {% assign postImgUrl = post.image.src %} 
 {% elsif post.image.src%} 
   {% assign postImgUrl = post.image.src | prepend: site.baseurl %} 
 {% else %} 
   {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %} 
 {% endif %}
-
 <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
   <!-- Blog Grid Modern Blocks -->
   <article class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3">
