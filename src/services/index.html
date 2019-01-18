@@ -3,100 +3,207 @@ layout: default
 title: Services
 ---
 
-<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
-  <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_3--after" style="height: 140%; background-image: url({{ site.baseurl }}/assets/custom/img/services/ourservices.jpg); transform: translate3d(0px, -40.0274px, 0px);"></div>
-  <div class="container g-color-white text-center g-py-120">
-    <h3 class="h1 g-font-weight-600 text-uppercase mb-2">{% t services-header.title %}</h3>
-    <p class="g-font-weight-300 g-color-white g-font-size-22 text-uppercase">{% t services-header.subtitle %}</p>
+<!-- Hero -->
+<section class="services-hero height-is-based-on-content">
+  <div class="container g-z-index-1 g-py-100">
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">Quality Software, Effectively
+      Delivered</h1>
+    <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+      <p class="services-hero-sub-title mb-0">Recognised industry leaders in driving continuous delivery through
+        quality practices and expertise.</p>
+    </div>
   </div>
 </section>
 
-<div class="gray-section">
-
-  <div class="services-subheader container">
-    <h2>{% t services-subheader.title %}</h2>
-    <p>{% t services-subheader.subtitle %}</p>
-  </div>
-
-</div>
-
 <div class="services-section container">
-
-  <div class="title">
-    <h2>{% t services-section_1.title %}</h2>
-  </div>
-
-  <div class="row">
-
-    <!-- Software creation section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="software-creation">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-software_creation.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t services-software_creation-embedded_craftsmen.title %}</h4>
-                <p class="card-text">{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-self_contained_teams.title %}</h4>
-                <p class="card-text">{% t services-software_creation-self_contained_teams.subtitle %}</p>		
-                <h4 class="h5">{% t services-software_creation-continous_delivery.title %}</h4>
-                <p class="card-text">{% t services-software_creation-continous_delivery.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-ux_ui_design.title %}</h4>
-                <p class="card-text">{% t services-software_creation-ux_ui_design.subtitle %}</p>
-            </div>
+  <!-- Hero content 5: Expert Advice -->
+  <div class="section">
+    <div class="services-two-col-content">
+      <div class="row">
+        <div class="col-lg-6 g-mb-50 g-mb-0--lg">
+          <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Expert Advice</h2>
           </div>
-    </div>
 
-    <!-- Expert advice section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="expert-advice">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-expert_advice.title %}
-            </h3>          
-            <div class="card-block">
-              <h4 class="h5">{% t services-expert_advice-enterprise_architecture.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-software_architecture_and_design.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-continous_delivery.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-continous_delivery.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-xp.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-xp.subtitle %}</p>
-            </div>
-          </div>
-    </div>
+          <p class="lead">To understand how you can improve, it's critical to understand your current software delivery
+            capability.</p>
+          <p class="g-mb-30">We will review your capability at teh process, technology, architecture, practices levels.
+            We
+            will provide technical
+            direction and coaching programmes to help your organisation on its path to sustainable effective software
+            delivery.
+          </p>
 
-    <!-- training section -->
-    <div class="col-md-4 d-flex align-items-stretch" id="training">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-training_coaching.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t training-software-development-practices.title %}</h4>
-                <p class="card-text">{% t training-software-development-practices.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-development-practices.link_title %}</a></p>
-                <h4 class="h5">{% t training-software-architecture-and-cloud.title %}</h4>
-                <p class="card-text">{% t training-software-architecture-and-cloud.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-architecture-and-cloud.link_title %}</a></p>
-                <h4 class="h5">{% t training-technologies.title %}</h4>
-                <p class="card-text">{% t training-technologies.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-technologies.link_title %}</a></p>
-                <h4 class="h5">{% t training-coaching-and-mentoring.title %}</h4>
-                <p class="card-text">{% t training-coaching-and-mentoring.subtitle %}</p>
-            </div>
-          </div>
-    </div>
-  </div>
+          <a class="btn btn-md u-btn-primary rounded-0 g-mr-15" href="#!">Learn More</a>
+        </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="text-center margin-top-20">
-        <a href="{{ '/company#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
-      </div>
-    </div>
-		<div class="col-md-6">
-      <div class="text-center margin-top-20">
-        <a href="{{ '/services/training' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
+        <div class="col-lg-6 align-self-center">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/custom/img/home/codurance-pair-programming.jpg" alt="Image Description">
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Hero content 5: Effective Delivery -->
+  <div class="section">
+    <div class="services-two-col-content">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <img class="img-fluid" src="{{site.baseurl}}/assets/custom/img/home/codurance-pair-programming.jpg" alt="Image Description">
+        </div>
+        <div class="col-lg-6 g-mb-50 g-mb-0--lg">
+          <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Effective Delivery</h2>
+          </div>
+
+          <p class="lead">To understand how you can improve, it's critical to understand your current software delivery
+            capability.</p>
+          <p class="g-mb-30">We have the software delivery capability to help deliver on your business objectives. Our
+            expert teams will evolve your
+            existing software and delivery process towards frequent and continuous delivery, whilst our feature teams
+            have
+            the full capability to.
+          </p>
+
+          <a class="services-two-col-content-cta--right btn btn-md u-btn-primary rounded-0 g-mr-15" href="#!">Learn
+            More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Expertise -->
+  <div class="section">
+    <div class="services-three-col-spotlights">
+      <div class="services-three-col-spotlights-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Our Expertise</h2>
+      </div>
+      <!-- Banners -->
+      <div class="row align-items-stretch">
+        <div class="col-lg-4">
+          <!-- Article -->
+          <article class="h-100 text-center g-overflow-hidden">
+            <div class="h-100 u-block-hover--scale g-min-height-200 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_3--after g-transition-0_5 g-pa-20"
+              data-bg-img-src="{{site.baseurl}}/assets/custom/img/home/codurance-pair-programming.jpg">
+              <div class="g-flex-middle-item g-brd-white-opacity-0_5 g-font-size-24 g-pos-rel g-z-index-1">
+                <h3 class="h1 g-color-white g-font-weight-700 text-uppercase g-letter-spacing-3 mb-0">Extreme
+                  Programming
+                  Practices</h3>
+              </div>
+              <a class="u-link-v2" href="#!"></a>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+
+        <div class="col-lg-4">
+          <!-- Article -->
+          <article class="h-100 text-center g-overflow-hidden">
+            <div class="h-100 u-block-hover--scale g-min-height-200 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_3--after g-transition-0_5 g-pa-20"
+              data-bg-img-src="{{site.baseurl}}/assets/custom/img/home/codurance-pair-programming.jpg">
+              <div class="g-flex-middle-item g-brd-white-opacity-0_5 g-font-size-24 g-pos-rel g-z-index-1">
+                <h3 class="h1 g-color-white g-font-weight-700 text-uppercase g-letter-spacing-3 mb-0">Continuous
+                  Delivery</h3>
+              </div>
+              <a class="u-link-v2" href="#!"></a>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+
+        <div class="col-lg-4">
+          <!-- Article -->
+          <article class="h-100 text-center g-overflow-hidden">
+            <div class="h-100 u-block-hover--scale g-min-height-200 g-flex-middle g-bg-cover g-bg-size-cover g-bg-black-opacity-0_3--after g-transition-0_5 g-pa-20"
+              data-bg-img-src="{{site.baseurl}}/assets/custom/img/home/codurance-pair-programming.jpg">
+              <div class="g-flex-middle-item g-brd-white-opacity-0_5 g-font-size-24 g-pos-rel g-z-index-1">
+                <h3 class="h1 g-color-white g-font-weight-700 text-uppercase g-letter-spacing-3 mb-0">Cloud
+                  Architecture</h3>
+              </div>
+              <a class="u-link-v2" href="#!"></a>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+      </div>
+      <!-- End Banners -->
+    </div>
+  </div>
+
+  <!-- Our Partners -->
+  <div class="section">
+    <div class="container">
+      <div class="services-three-col-spotlights-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Our Partners</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm" src="{{site.baseurl}}/assets/custom/img/home/partners/github.png"
+            alt="GitHub Logo"> </div>
+        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm" src="{{site.baseurl}}/assets/custom/img/home/partners/aws.png"
+            alt="AWS Logo"> </div>
+        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm" src="{{site.baseurl}}/assets/custom/img/home/partners/jetbrainsLogo.png"
+            alt="Jetbrains Logo"> </div>
+        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm" src="{{site.baseurl}}/assets/custom/img/home/partners/google.png"
+            alt="Google Logo"> </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us -->
+  <div class="section">
+    <div class="row">
+      <div class="services-contact-form-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Get In Touch</h2>
+        <p>Contact us to find out how we can help.</p>
+      </div>
+      <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "3042464",
+          formId: "cb743506-bc2e-4fec-b08d-f21fe41f7378",
+          cssClass: "",
+          onFormReady: function () {
+            addStyleOverridesToHead();
+            forceFormEmbedToApplyUpdatedStyles();
+
+            function addStyleOverridesToHead() {
+              var openSansLink = createOpenSansLinkElement();
+              var head = getIframeHeadElement();
+
+              head.append(openSansLink);
+              head.append(styleTagWith('*{ font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }'));
+              head.append(styleTagWith('.hs-input { width: 100% !important; max-width: 100% !important; background-color: #fff !important; }'));
+              head.append(styleTagWith('.hs-input[type=checkbox], .hs-input[type=radio] { width: 1rem !important; }'));
+              head.append(styleTagWith('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }'));
+              head.append(styleTagWith('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }'));
+              head.append(styleTagWith('.submitted-message { text-align: center; }'));
+            }
+
+            function createOpenSansLinkElement() {
+              var openSansLink = document.createElement("link");
+              openSansLink.rel = "stylesheet";
+              openSansLink.href = "https://fonts.googleapis.com/css?family=Open+Sans";
+              return openSansLink;
+            }
+
+            function getIframeHeadElement() {
+              var hubspotFormIFrame = $("#hs-form-iframe-0");
+              return hubspotFormIFrame.contents().find("head");
+            }
+
+            function styleTagWith(css) {
+              return '<style type="text/css">' + css + '</style>';
+            }
+
+            function forceFormEmbedToApplyUpdatedStyles() {
+              $('input[name="firstname"]').val('').change();
+            }
+          }
+        });
+      </script>
+    </div>
+  </div>
 </div>
-
-

@@ -357,9 +357,50 @@ $orange-colour: #e67e22;
 
 }
 
-/* Services */
+/* Services HubSpot Contact Form */
+.hbspt-form, .hs-form-iframe {
+  width: 85% !important;
+  margin: auto;
+}
 
+.hbspt-form {
+  height: 100% !important;
+}
+
+/* Services */
 .services {
+
+  /* Hero */
+  &-hero {
+    background-color: #185466;
+
+    &-title, &-sub-title {
+      color: #fff;
+    }
+  }
+
+  /* Two Col Content */
+  &-two-col-content {
+    &-cta--right {
+      float: right;
+    }
+  }
+
+  /* Three Col Spotlights */
+  &-three-col-spotlights {
+    &-title {
+      text-align: center;
+    }
+  }
+
+  /* Contact Form */
+  &-contact-form {
+    &-title {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
   & .client-descriptions { /* 0 0 2 0 */
     margin-bottom: 50px;
     margin-top: 50px;
@@ -422,7 +463,7 @@ $orange-colour: #e67e22;
   }
   
   &-section { /* 0 0 1 0 */
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
 
     & .header { /* 0 0 2 0 */
       text-align: center;
@@ -492,6 +533,7 @@ $orange-colour: #e67e22;
     }
   }
 }
+
 /* Consultancy */
 
 .introduction .service-header {   /* 0 0 2 0 */
