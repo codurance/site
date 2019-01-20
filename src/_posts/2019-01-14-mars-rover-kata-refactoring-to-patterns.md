@@ -309,20 +309,112 @@ Clarifying concepts around what is input and what is a command by renaming varia
 ```
 </details>
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">3951a1</span>](https://github.com/simion-iulian/mars_rover_article/commit/3951a11f123eb1dc8484397fb938d57a9cb33a68)
-Cleaning code
-extracted coordinate formatting to field
+<details>
+<summary>Cleaning code inside MarsRover - extracted coordinate formatting to field. Removing duplication and clarifying intent of moving vertically.</summary>
 
-[<span style=" font-weight: bold;  color: #6AA84F; padding-right: 5px;">ed42a0</span>](https://github.com/simion-iulian/mars_rover_article/commit/ed42a0911d4a33047e260152a99944078234d72c)
-Implemented moving horizontally. Extracted method that expresses intent for vertical and horizontal movements.
+```diff
+public class MarsRover {
++  private final int UP = 1;
++  private final int DOWN = -1;
++  private final String COORDINATE_FORMAT = "%d %d %s";
++  private String MOVE_COMMAND = "M";
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">2ff4e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/2ff4e3446329d499f92d8eaedd494159f7be4321)
-Cleaning code - clarified how the String is split into individual characters.
+public String execute(String input) {
+  private void move() {
+    if(facing(NORTH))
+-      y++;
++      moveVertically(UP);
+    if(facing(SOUTH))
+-      y--;
++      moveVertically(DOWN);
+  }
++  private void moveVertically(int stepSize) {
++    y += stepSize;
++  }
+  private String formatCoordinate() {
+-    return String.format("%d %d %s", x, y, cardinal);
++    return String.format(COORDINATE_FORMAT, x, y, cardinal);
+  }
+```
+</details>
+<details>
+<summary>Implemented moving horizontally and extracted method that expresses intent for horizontal movements.</summary>
 
-This decision though leads to a larger class that needs refactoring. So the decision at this point is whether one has enough for an abstraction for the moving logic or to continue in order to discover another pattern in the code. We decided to continue with implementing the turning logic as we could always come back at abstracting the moving into class that would know by itself which way to move.
+```diff
+...
++  private final String EAST = "E";
++  private final int RIGHT = 1;
+...
++ if(facing(EAST))
++      moveHorizontally(RIGHT);
+...
++  private void moveHorizontally(int stepSize) {
++    x += stepSize;
++  }
+```
+</details>
 
-[<span style=" font-weight: bold;  color: #1155CC; padding-right: 5px;">68e1a8c</span>](https://github.com/simion-iulian/mars_rover_article/commit/68e1a8cbda65b8042717a1a461ccfd4fe1d8ecfb?diff=unified#diff-52aa4cc276944cec2c0f7f1e877030a9)
-Continuing by wrapping the coordinate logic into a class
+<details>
+<summary>Cleaning code - clarified how the String is split into individual characters.</summary>
+
+```diff
++private final String INTO_CHARACTERS = "";
+...
+- for (String command:commands) {
++ for (String command : commandsFrom(input)) {
+
++  private String[] commandsFrom(String input) {
++    return input.split(INTO_CHARACTERS);
++  }  
+```
+</details>  
+  
+At this point we have a larger class that needs refactoring. So the decision at this point is whether one has enough for an abstraction for the moving logic or to continue in order to discover another pattern in the code. We decided to continue with implementing the turning logic as we could always come back at abstracting the moving into class that would know by itself which way to move.
+<details>
+<summary>Continuing by wrapping the coordinate logic into a class. We're using "Extract parameter object" from IntelliJ in order to automatically refactor the constructor to also use Coordinate in the test.</summary>
+
+```diff
++class Coordinate {
++  private final int x;
++  private final int y;
++  private final String cardinal;
++
++  Coordinate(int x, int y, String cardinal) {
++    this.x = x;
++    this.y = y;
++    this.cardinal = cardinal;
++  }
++
++  public int X() {
++    return x;
++  }
++
++  public int Y() {
++    return y;
++  }
++
++  public String cardinal() {
++    return cardinal;
++  }
++}
+```
+```diff
+-  public MarsRover(int x, int y, String cardinal) {
+-    this.x = x;
+-    this.y = y;
+-    this.cardinal = cardinal;
++  public MarsRover(Coordinate coordinate) {
++    this.x = coordinate.X();
++    this.y = coordinate.Y();
++    this.cardinal = coordinate.cardinal();
++    this.coordinate = coordinate;
++  }
+```
+```diff
+-    final MarsRover rover = new MarsRover(initialX, initialY, initialCardinal);
++    final MarsRover rover = new MarsRover(new Coordinate(initialX, initialY, initialCardinal));
+```
+</details>
 
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">76d636</span>](https://github.com/simion-iulian/mars_rover_article/commit/76d63670df343468b6fda02ac6af5ddeceaa13d8)
 Shadowing the new class along the old implementation
