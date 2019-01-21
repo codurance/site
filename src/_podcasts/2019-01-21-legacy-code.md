@@ -14,7 +14,7 @@ New Year, new podcast available. It is time to talk about Legacy Code. [Sam Davi
 
 Links :
 
-[Working Effectively with Legacy Code](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code) by Michael C. Feathers
+[Working Effectively with Legacy Code](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code) by Michael C. Feathers. Which is the third, or is it fourth, time that we link it. Do read it. It is that good.
 
 <sub>
 Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
