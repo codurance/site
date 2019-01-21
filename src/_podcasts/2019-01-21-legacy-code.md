@@ -10,7 +10,7 @@ video-url: https://www.podbean.com/media/player/fev7y-a19862?from=yiiadmin&downl
 date: 2019-01-21 12:00:00 +00:00
 ---
 
-New Year, new podcast available. It is time to talk about Legacy Code. Sam Davies and Chris Bimson return, with the new addition of Andre Torres, who this time took charge of the editing.
+New Year, new podcast available. It is time to talk about Legacy Code. [Sam Davies](https://codurance.com/publications/author/sam-davies/) and [Chris Bimson](https://github.com/christopher-bimson) return, with the new addition of [Andre Torres](https://github.com/andre2w), who this time took charge of the editing.
 
 Links :
 
