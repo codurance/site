@@ -6,7 +6,7 @@ name: codurance-talks-episode-8
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 8 - Legacy Code"
-video-url: https://www.podbean.com/media/player/fev7y-a19862?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
+video-url: https://www.podbean.com/media/player/2yuxa-a53d35?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
 date: 2019-01-21 12:00:00 +00:00
 ---
 
