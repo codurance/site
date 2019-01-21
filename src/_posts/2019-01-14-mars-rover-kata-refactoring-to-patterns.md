@@ -148,7 +148,7 @@ public class MarsRover {
 
 ```
 </details>
-#Starting to code towards our first abstraction
+# Coding towards the first abstraction
 
 At this point one can go either to start building the turning algorithm or the moving algorithm. We decided to go with the moving. Once we got that going the next dilemma was to either start wrapping around the world, the &quot;rainy&quot; path where we would need to start designing for an edge case or the &quot;happy&quot; path, to move in other directions.
 
@@ -552,11 +552,58 @@ Adding to the test
 
 </details>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c6cfb3a</span>](https://github.com/simion-iulian/mars_rover_article/commit/c6cfb3a152e3854269db42d0f715c16502fe33d8?diff=unified)
-At this point there seems to be a good deal of feature envy between the Position object and the Mars Rover, so we rename Position to Rover.
+<details>
+<summary>At this point there seems to be a good deal of feature envy between the Position object and the Mars Rover, so we rename Position to Rover and MarsRover to MarsRoverController.
+</summary>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6c78e3</span>](https://github.com/simion-iulian/mars_rover_article/commit/6c78e3a3f557f78e464da6edfee0cedf1ddaa566)
-Refactored to using immutability and renamed the Coordinate to Rover as it has behavior and Position would point to being just a wrapper.
+```diff
+-public class MarsRover {
++public class MarsRoverController {
+...
+-class Position {
++class Rover {
+```
+</details>
+
+<details><summary>Refactored to using immutability and renamed the Coordinate to Rover as it has behavior and Position would point to being just a wrapper.</summary>
+
+```diff
+
+class Rover {
+-  private int x;
+-  private int y;
+-  private String cardinal;
++  private final int x;
++  private final int y;
++  private final String cardinal;
+...
+
+Rover move() {
+    if(facing(SOUTH))
+      return moveVertically(DOWN);
+    if(facing(EAST))
+-      moveHorizontally(RIGHT);
++      return moveHorizontally(RIGHT);
+    if(facing(WEST))
+-      moveHorizontally(LEFT);
++      return moveHorizontally(LEFT);
+    return this;
+}
+...
+
+  private Rover moveVertically(int stepSize) {
+-    return new Rover(x, y+=stepSize, cardinal);
++    return new Rover(x, y + stepSize, cardinal);
+  }
+
+-  private void moveHorizontally(int stepSize) {
+-    x+=stepSize;
++  private Rover moveHorizontally(int stepSize) {
++    return new Rover(x + stepSize, y, cardinal);
+  }
+
+```
+</details>
 
 #Refactoring to State and Command patterns
 
