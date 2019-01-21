@@ -2,8 +2,7 @@
 layout: post
 asset-type: post
 name: mars-rover-kata-refactoring-to-patterns
-title: Mars Rover Kata
-Refactoring to Patterns
+title: Mars Rover Kata - Refactoring to Patterns
 date: 2019-01-14 07:20:00 +00:00
 author: Simion Iulian Belea
 description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
@@ -416,28 +415,142 @@ At this point we have a larger class that needs refactoring. So the decision at 
 ```
 </details>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">76d636</span>](https://github.com/simion-iulian/mars_rover_article/commit/76d63670df343468b6fda02ac6af5ddeceaa13d8)
-Shadowing the new class along the old implementation
+<details>
+<summary>Renamed Coordinate to Position</summary>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">a0f5110</span>](https://github.com/simion-iulian/mars_rover_article/commit/a0f5110f26dacb5feed88a0f34dcab479a9e7267)
-Deleting the old implementation and delegating all coordinate responsibilities to the Position object
+```diff
+-class Coordinate {
++class Position {
+```
+</details>
 
-[<span style=" font-weight: bold; color: #d32f2f; padding-right: 5px;">3ad34d</span>](https://github.com/simion-iulian/mars_rover_article/commit/3ad34daeb41ab3df4f114c593a04f4d1bb56c3dd)
-Adding failing test for turning right
+<details>
+<summary>Deleting the old implementation and delegating all coordinate responsibilities to the Position object</summary>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">8e5c98</span>](https://github.com/simion-iulian/mars_rover_article/commit/8e5c98e8c6f6bb0f080ece34057e83b6a3a553e1)
-Simplest thing to make the test pass
+```diff
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">000836</span>](https://github.com/simion-iulian/mars_rover_article/commit/0008368273817c7ca4617f49b7b7569f66224d18)
-Refactored responsibility to Position
+- private int x;
+- private int y;
+- private String cardinal;
+  private Position position;
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">fda3d2</span>](https://github.com/simion-iulian/mars_rover_article/commit/fda3d2f0de907ed66ad311c7e12046a1249cc507)
-Implemented turning right twice
 
-Repeating for all turning possibilities until both turning right and left are implemented.
+  private void moveVertically(int stepSize) {
+-    position = new Position(x(), position.y()+stepSize, cardinal);
++    position = new Position(x(), position.y()+stepSize, position.cardinal());
+  }
+  private void moveHorizontally(int stepSize) {
+-    position = new Position(position.x()+stepSize, position.y(), cardinal);
++    position = new Position(position.x()+stepSize, position.y(), position.cardinal());
+  }
+```
+</details>
 
-[<span style=" font-weight: bold; color: #6AA84F; padding-right: 5px;">093f06</span>](https://github.com/simion-iulian/mars_rover_article/commit/093f067a0104a179d384ba9507acb3af7ffc0817)
-Test for both directions passing.
+<details>
+<summary>Adding failing test for turning right</summary>
+
+```diff
++ @ParameterizedTest
++ @CsvSource({
++   "N, R, E",
++ })
++ void turn(
++   String initialCardinal,
++   String commands,
++   String expectedCardinal) {
++
++  final Position initialPosition = new Position(1, 1, initialCardinal);
++    final MarsRover rover = new MarsRover(initialPosition);
+
++  final String actualPosition = rover.execute(commands);
+
++  final String expectedPosition = "1 1 " + expectedCardinal;
+
++  assertThat(actualPosition, is(expectedPosition));
++}
+```
+</details>
+<details>
+<summary>Simplest thing to make the test pass</summary>
+
+```diff
+    for (String command : commandsFrom(input)) {
+      if(isMove(command))
+        move();
++      if(command.equals("R"))
++        position = new Position(position.x(), position.y(), "E");
+    }
+```
+</details>
+
+<details>
+<summary>Refactored responsibility to Position</summary>
+
+
+```diff
+class MarsRover{
+...
+  if(command.equals("R"))
+-        position = new Position(position.x(), position.y(), "E");
++        position = position.turn();
+```
+
+```diff
+class Position{
+...
++ public Position turn() {
++    return new Position(x, y, "E");
++ }
+
+```
+
+</details>
+<details>
+<summary>Implemented turning right twice. Repeating for all turning possibilities until both turning right and left are implemented.</summary>
+
+```diff
+Adding to the test
+
+ @CsvSource({
+    "N, R, E",
++    "N, RR, S",
+  })
+```
+
+```diff
+  public Position turn() {
+-    return new Position(x, y, "E");
++    if(cardinal.equals("N"))
++        return new Position(x, y, "E");
++    return new Position(x,y,"S");
+  }
+```
+</details>
+
+<details>
+<summary>Added test for both directions passing.</summary>
+
+```diff
++  @ParameterizedTest
++  @CsvSource({
++    "1, 2, N, LMLMLMLMM, '1 3 N'",
++  })
++  public void
++  move_and_turn(
++    int initialX, int initialY, String initialCardinal,
++    String commands,
++    String expectedCoordinate
++  ) {
++    final Position initialPosition = new Position(initialX, initialY, initialCardinal);
++    final MarsRover rover = new MarsRover(initialPosition);
++
++    String actualCoordinate = rover.execute(commands);
++
++    assertThat(actualCoordinate, is(expectedCoordinate));
++  }
+```
+
+</details>
 
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c6cfb3a</span>](https://github.com/simion-iulian/mars_rover_article/commit/c6cfb3a152e3854269db42d0f715c16502fe33d8?diff=unified)
 At this point there seems to be a good deal of feature envy between the Position object and the Mars Rover, so we rename Position to Rover.
