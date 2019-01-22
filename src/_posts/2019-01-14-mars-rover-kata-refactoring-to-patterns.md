@@ -606,13 +606,113 @@ Rover move() {
 </details>
 
 #Refactoring to State and Command patterns
+We decided to abstract the Cardinal switching details in a self contained class. Delegating a call to its own right() and left() methods would make use of the State pattern and lets the cardinal manage the switching. In a way looks like a water molecule that has one big atom in the middle and two neighboring ones to its left and right. Naming the Cardinal State subtype methods to left() and right() distances the implementation from turning and makes it more reusable in another context. It makes the switch go away, and also puts the responsibility of switching state to the cardinal and not to the rover. The cognitive load of the class is lesser because before the refactoring the Rover class had to know about all the mappings and now the mappings are self-contained.
 
-Now we decided to abstract some of the execution details so they are self contained in classes.
+<details><summary> The Cardinal interface with implementations and tests for its behavior.</summary>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38ad</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38ad)
-When introducing another concept
-Cardinal
-we are having a deeper level of delegation therefore it&#39;s a good idea to have a small unit test in order to show its behavior.
+```diff
+public interface Cardinal {
+  public Cardinal left();
+  public Cardinal right();
+  public String name();
+}
+```
+```diff
+public class North implements Cardinal{
+  private String name = "N";
+  public Cardinal left() { return new West();}
+  public Cardinal right() { return new East();}
+}
+public class South implements Cardinal{
+  private String name = "S";
+  public Cardinal left() { return new East();}
+  public Cardinal right() { return new West();}
+}
+public class East implements Cardinal{
+  private String name = "E";
+  public Cardinal left() { return new North();}
+  public Cardinal right() { return new South();}
+}
+public class West implements Cardinal{
+  private String name = "W";
+  public Cardinal left() { return new South();}
+  public Cardinal right() { return new North();}
+}
+```
+
+```diff
+public class EastCardinalShould {
+  @Test
+  void be_facing_south_when_turned_right() {
+    final Cardinal actual = new East().right();
+    assertThat(actual, is(new South()));
+  }
+  @Test
+  void be_facing_north_when_turned_left() {
+    final Cardinal actual = new East().left();
+    assertThat(actual, is(new North()));
+  }
+  @Test
+  void give_cardinal_name() {
+    final String actual = new East().name();
+    assertThat(actual, is("E"));
+  }
+}
+public class NorthCardinalShould {
+  @Test
+  void be_facing_east_when_turned_right() {
+    final Cardinal actual = new North().right();
+    final Cardinal expected = new East();
+    assertThat(actual, is(expected));
+  }
+  @Test
+  void be_facing_west_when_turned_left() {
+    final Cardinal actual = new North().left();
+    final Cardinal expected = new West();
+    assertThat(actual, is(expected));
+  }
+  @Test
+  void give_cardinal_name() {
+    final String actual = new North().name();
+    assertThat(actual, is("N"));
+  }
+}
+public class SouthCardinalShould {
+  @Test
+  void be_facing_east_when_turned_right() {
+    final Cardinal actual = new South().right();
+    assertThat(actual, is(new West()));
+  }
+  @Test
+  void be_facing_west_when_turned_left() {
+    final Cardinal actual = new South().left();
+    assertThat(actual, is(new East()));
+  }
+  @Test
+  void give_cardinal_name() {
+    final String actual = new South().name();
+    assertThat(actual, is("S"));
+  }
+}
+public class WestCardinalShould {
+  @Test
+  void be_facing_north_when_turned_right() {
+    final Cardinal actual = new West().right();
+    assertThat(actual, is(new North()));
+  }
+  @Test
+  void be_facing_south_when_turned_left() {
+    final Cardinal actual = new West().left();
+    assertThat(actual, is(new South()));
+  }
+  @Test
+  void give_cardinal_name() {
+    final String actual = new West().name();
+    assertThat(actual, is("W"));
+  }
+}
+```
+</details>
 
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">f896a2</span>](https://github.com/simion-iulian/mars_rover_article/commit/f896a26bfad71f99020231c340c07c593ed61459)
 Refactoring to use the Cardinal in the constructor and to initialize using a factory method.
@@ -625,7 +725,7 @@ It also makes the code easier to follow and read. In the case of the **MarsRover
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38a</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38add0b7adf613448df4a7a2f85b0e82ad6a6)
 The direction uses a switch logic to change positions and it is possible to have each cardinal point be self containing, knowing only of it&#39;s right and left coordinate.
 
-Delegating a call to its own right() and left() methods would make use of the State pattern and lets the cardinal manage the switching. In a way looks like a water molecule that has one big atom in the middle and two neighboring ones to its left and right. Naming the Cardinal State subtype methods to left() and right() distances the implementation from turning and makes it more reusable in another context. It makes the switch go away, and also puts the responsibility of switching state to the cardinal and not to the rover. The cognitive load of the class is less because before the refactoring the Rover class had to know about all the mappings and now the mappings are self-contained.
+
 
 [<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6080dc</span>](https://github.com/simion-iulian/mars_rover_article/commit/6080dc18ab125fb26b344bf761feedcb230710f8)
 Shadowing and removing the old implementation. Adapting it to work with the Rover
