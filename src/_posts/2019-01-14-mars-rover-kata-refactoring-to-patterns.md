@@ -21,7 +21,7 @@ This article is an account of how I learned to apply patterns. It condenses conc
 
 A kata is an exercise where you're given a specific set of rules and it can get as specific as having an isolated domain problem. This can be used to learn the useful concepts needed solving problems within that domain. Doing it repeatedly and attempting a different solution each time leads to a better understanding of how to solve that set of problems.
 
-In this article I&#39;m going to go through the Mars Rover kata and how I used it kata to learn both classic test-driven development together with how to refactor things and also how to apply the Command and State design patterns. Applying patterns to such a simple problem is over-engineering. However, this provides a guidefor learning about refactoring and to train a sense of where they can be applied it's a very good exercise.
+In this article I&#39;m going to go through the Mars Rover kata and how I used it kata to learn both classic test-driven development together with how to refactor things and also how to apply the Command and State design patterns. Applying patterns to such a simple problem is over-engineering. However, this provides a guide for learning about refactoring and to train a sense of where they can be applied it's a very good exercise.
 
 I provide the commits following the red-green-refactor pattern as it&#39;s like the &quot;making of&quot; part of a movie. The metaphor of film editing has a good resemblance with the one of editing code. It can be useful to know about the different steps of the creative process than to just watch the end result if one&#39;s purpose is to learn about development process.
 
