@@ -605,10 +605,10 @@ Rover move() {
 ```
 </details>
 
-#Refactoring to State and Command patterns
+# Refactoring to State and Command patterns
 We decided to abstract the Cardinal switching details in a self contained class. Delegating a call to its own right() and left() methods would make use of the State pattern and lets the cardinal manage the switching. In a way looks like a water molecule that has one big atom in the middle and two neighboring ones to its left and right. Naming the Cardinal State subtype methods to left() and right() distances the implementation from turning and makes it more reusable in another context. It makes the switch go away, and also puts the responsibility of switching state to the cardinal and not to the rover. The cognitive load of the class is lesser because before the refactoring the Rover class had to know about all the mappings and now the mappings are self-contained.
 
-<details><summary> The Cardinal interface with implementations and tests for its behavior.</summary>
+<details><summary>The Cardinal interface with implementations and tests for its behavior. Each cardinal point is self containing, knowing only of it's right and left coordinate.</summary>
 
 ```diff
 public interface Cardinal {
@@ -714,36 +714,207 @@ public class WestCardinalShould {
 ```
 </details>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">f896a2</span>](https://github.com/simion-iulian/mars_rover_article/commit/f896a26bfad71f99020231c340c07c593ed61459)
-Refactoring to use the Cardinal in the constructor and to initialize using a factory method.
+<details><summary>Refactoring to use the Cardinal in the constructor and to initialize using a factory method in the test. Replacing string with Cardinal class in the Rover</summary>
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">309694</span>](https://github.com/simion-iulian/mars_rover_article/commit/30969435e977d249c37b569740e02367d2c2513b)
-Delegating moving logic to be self-contained in the Cardinal. Shadowing the implementation along the old one in each of the conditions until we can have a unique call and all the tests are passing with the refactored call.
+```diff
+-  Rover(int x, int y, String cardinal) {
++  Rover(int x, int y, Cardinal cardinal) {
+```
 
-It also makes the code easier to follow and read. In the case of the **MarsRoverController** and the **Rover** classes it is only one level of delegating, with the cardinal it&#39;s deeper therefore a unit test is justified. This would show the deeper behavior of the collaborators of the Rover
+```diff
+MarsRoverShould
+...
+-    final Rover initialRover = new Rover(initialX, initialY, initialCardinal);
++    final Rover initialRover = new Rover(initialX, initialY, cardinalFor(initialCardinal));
+...
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">84f38a</span>](https://github.com/simion-iulian/mars_rover_article/commit/84f38add0b7adf613448df4a7a2f85b0e82ad6a6)
-The direction uses a switch logic to change positions and it is possible to have each cardinal point be self containing, knowing only of it&#39;s right and left coordinate.
++  Cardinal cardinalFor(String cardinal) {
++    if (cardinal.equals("N"))
++      return new North();
++    if (cardinal.equals("E"))
++      return new East();
++    if (cardinal.equals("S"))
++      return new South();
++    return new West();
++  }
+
+```
+
+</details>
+
+<details><summary>Delegating moving logic to be self-contained in the Cardinal. Shadowing the implementation along the old one in each of the conditions until we can have a unique call and all the tests are passing with the refactored call.</summary>
+
+```diff
+public interface Cardinal {
+  Cardinal left();
+  Cardinal right();
++  Rover move(int x, int y);
+  String name();
+}
+```
+```diff
+public class North implements Cardinal {
+  private final int stepSize = 1;
+  private String name = "N";
+...
++  @Override
++  public Rover move(int x, int y) {
++    return new Rover(x, y + stepSize, this);
++  }
+```
+
+```diff
+public class Rover {
+  ...
+  if(facing(NORTH))
+-      return moveVertically(UP);
++      return cardinal.move(x,y);
+```
+</details>
+
+It also 
+
+<details><summary>Full refactor of Rover into polymorphic call for cardinal with state pattern. Renaming MarsRover to MarsRoverController and Cardinal to Rover The code is easier to follow and read.</summary>
+
+```diff
+-public MarsRover(Cardinal cardinal) {
++public MarsRoverController(Rover rover) {
+
+-public Cardinal
++public Rover
+
+-public class East extends Cardinal {
++public class RoverFacingEast extends Rover {
+
+-public class North extends Cardinal {
++public class RoverFacingNorth extends Rover {
+
+-public class West extends Cardinal {
++public class RoverFacingWest extends Rover {
+
+-public class South extends Cardinal {
++public class RoverFacingSouth extends Rover {
+
+```
+
+</details>
+
+<details><summary>Cleaning up code, moving things locally for readability and to keep things close to where the behavior is implemented</summary>
+
+```diff
+public class MarsRoverController {
+-  private final String MOVE_COMMAND = "M";
+-  private final String RIGHT_COMMAND = "R";
+-  private final String LEFT_COMMAND = "L";
+-  private final String INTO_CHARACTERS = "";
+...
+  private boolean isTurnLeft(String command) {
++    String LEFT_COMMAND = "L";
+    return command.equals(LEFT_COMMAND);
+  }
+  private boolean isTurnRight(String command) {
++    String RIGHT_COMMAND = "R";
+    return command.equals(RIGHT_COMMAND);
+  }
+  private boolean isMove(String command) {
++    String MOVE_COMMAND = "M";
+    return command.equals(MOVE_COMMAND);
+  }
+  private String[] commandsFrom(String input) {
++    String INTO_CHARACTERS = "";
+    return input.split(INTO_CHARACTERS);
+  }
+```
+
+</details>
+
+<details><summary>The last step is to show the use of the Command pattern by abstracting away the calls of command execution into command objects. We use a Command interface and a CommandFactory. Started refactoring invocation to commands instead of the controller. Shadowing to check for tests are still passing with the new refactor.</summary>
+
+```diff
+interface Command {
+  Rover execute();
+}
+```
+
+```diff
+public class CommandFactory {
+  private Rover rover;
+  public CommandFactory(Rover rover) {
+    this.rover = rover;
+  }
+  public Command commandFrom(String command) {
+    if(command.equals("M")) {
+      return new MoveCommand(rover);
+    }
+    if(command.equals("R")) {
+      return new TurnRightCommand(rover);
+    }
+    throw new UnsupportedOperationException();
+  }
+}
+```
+
+```diff
+public class MarsRoverController {
+  private Rover rover;
+  public MarsRoverController(Rover rover) {
+    this.rover = rover;
+  }
+  public String execute(String input) {
+    for (String command : commandsFrom(input)) {
+-      if(isMove(command))      rover = rover.move();
++      if(isTurnRight(command)) rover = rover.right();
+      if(isMove(command))
+      {
+//        rover = rover.move();
++        rover = new CommandFactory(rover).commandFrom(command).execute();
+      }
++      if(isTurnRight(command)) {
++        rover = new CommandFactory(rover).commandFrom(command).execute();
++      }
+      if(isTurnLeft(command))  rover = rover.left();
+    }
+    return rover.formatPosition();
+```
+
+</details>
+
+<details><summary>Final touch: moving commands into their own folder, changing the conditional to use a HashMap to store the commands and naming the command Strings accordingly.</summary>
+
+```diff
+public class CommandFactory {
++  private static final String MOVE = "M";
++  private static final String LEFT = "L";
++  private static final String RIGHT = "R";
++  private static final String EMPTY = "";
++  private Map<String, Command> commands;
+
+  public CommandFactory(Rover rover) {
++   initializeCommands(rover);
+  }
+  public Command commandFrom(String command) {
+-    if(command.equals("M")) {
+-      return new MoveCommand(rover);
+-    }
+-    if(command.equals("R")) {
+-      return new TurnRightCommand(rover);
+-    }
+-    throw new UnsupportedOperationException();
++   return commands.get(command);
+  }
 
 
++  private void initializeCommands(Rover rover) {
++    commands = new HashMap<String,Command>(){{
++      put(MOVE, new MoveCommand(rover));
++      put(LEFT, new TurnLeftCommand(rover));
++      put(RIGHT, new TurnRightCommand(rover));
++      put(EMPTY, new EmptyCommand(rover));
++    }};
+  }
 
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">6080dc</span>](https://github.com/simion-iulian/mars_rover_article/commit/6080dc18ab125fb26b344bf761feedcb230710f8)
-Shadowing and removing the old implementation. Adapting it to work with the Rover
-
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">bf79f1b</span>](https://github.com/simion-iulian/mars_rover_article/commit/bf79f1b)
-Full refactor of Rover into polymorphic call for cardinal and state pattern
-
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">21924ca</span>](https://github.com/simion-iulian/mars_rover_article/commit/21924ca)
-Cleaning up code, moving things locally for readability and to keep things close to where the behavior is implemented
-
-The last step is to show the use of the Command pattern by abstracting away the calls of command execution into command objects.
-
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">5aa83d4</span>](https://github.com/simion-iulian/mars_rover_article/commit/5aa83d4)
-Implemented Command, CommandFactory and started refactoring invocation to commands instead of the controller
-
-[<span style=" font-weight: bold; color: #1155CC; padding-right: 5px;">c5b0fe7</span>](https://github.com/simion-iulian/mars_rover_article/commit/c5b0fe7)
-Final touch
-Moving commands into their own folder, changing the conditional to use a HashMap to store the commands and naming the command Strings accordingly.
+```
+</details>
 
 And that&#39;s it, condensing the concepts learned in the first two weeks of apprenticeship using the Mars Rover kata.
 
