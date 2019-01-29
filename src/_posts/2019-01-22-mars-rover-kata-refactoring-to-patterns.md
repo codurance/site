@@ -47,7 +47,6 @@ You can click on the lines with the triangle to expand the code example.
 </summary>
 
 ```diff
-
 public class MarsRover {
   public MarsRover(int x, int y, String cardinal) {}
   public String execute(String commands) {
@@ -903,7 +902,7 @@ public class CommandFactory {
 +   return commands.get(command);
   }
 
-
+{% raw  %}
 +  private void initializeCommands(Rover rover) {
 +    commands = new HashMap<String,Command>(){{
 +      put(MOVE, new MoveCommand(rover));
@@ -912,7 +911,7 @@ public class CommandFactory {
 +      put(EMPTY, new EmptyCommand(rover));
 +    }};
   }
-
+{% endraw  %}
 ```
 </details>
 
