@@ -5,7 +5,7 @@ name: an-extensive-introduction-to-dynamodb-part-1
 title: An (extensive) introduction to DynamoDB - Part 1
 date: 2019-02-04 15:55:00 +00:00
 author: Bartomeu Galmés
-description: An example of what is learned in the first few weeks of the apprenticeship with the Mars Rover kata.
+description: Deep diving on DynamoDB
 image: 
     src: /assets/custom/img/blog/2019-02-04-an-extensive-introduction-to-dynamodb-part-1/00-cloud.jpg
 tags: 
