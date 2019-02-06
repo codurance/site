@@ -70,17 +70,6 @@
   twitter: Chris_Jeffery
   github: chrisjeffery
 
-- id: guillem
-  name: Guillem Fernandez
-  image: /assets/custom/img/team/guillem_fernandez.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Guillem is a software developer that believes in creating code with dedication, time and care. Passionate about mobile development, has been bringing good practices and well crafted software to companies that wanted to move to mobile for the last seven years.</p>
-    <p>Coming from a C++ background moved to Objective-C and now to Swift. He loves to build tools and utilities to make developers work easier and more reliable.</p>
-    <p>Now it's time to bring software craftsmanship to Swift mobile, desktop and server.</p>
-  twitter: guillemf
-  github: guillemf
-
 - id: francesco
   name: Francesco Gigli
   image: /assets/custom/img/team/francesco_gigli.jpg
