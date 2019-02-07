@@ -3,7 +3,7 @@ author: Andre Torres
 layout: post
 asset-type: post
 title: "Working with the DynamoDB sdk"
-date: 2019-07-02 00:00:00
+date: 2019-02-07 00:00:00
 description: Migrating a ToDo app to DynamoDB
 image: 
     src: /assets/custom/img/blog/2019-01-15-aws-partnership.jpg
