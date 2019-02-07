@@ -905,7 +905,7 @@ public class CommandFactory {
 
 
 +  private void initializeCommands(Rover rover) {
-+    commands = new HashMap<String,Command>(){{
++    commands = new HashMap<String,Command>(){{"{{"}}
 +      put(MOVE, new MoveCommand(rover));
 +      put(LEFT, new TurnLeftCommand(rover));
 +      put(RIGHT, new TurnRightCommand(rover));
