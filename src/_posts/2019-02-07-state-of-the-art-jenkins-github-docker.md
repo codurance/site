@@ -6,7 +6,7 @@ title: State of the art Continuous Integration and Deployment Pipeline with Jenk
 date: 2019-02-07 07:00:00 +00:00
 author: Francesco Gigli
 image:
-    src: /assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/jenkins.png
+    src: /assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/jenkins.jpg
 tags:
     - continuous-integration
     - continuous-deployment
