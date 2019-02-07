@@ -10,9 +10,9 @@ image:
 tags:
     - continuous-integration
     - continuous-deployment
-    - Jenkins
-    - GitHub
-    - Docker
+    - jenkins
+    - github
+    - docker
 categories:
     - training
 abstract: The best configuration for Continuous Integration and Deployment that I have seen so far, explained in some details. 
