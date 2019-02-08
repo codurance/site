@@ -36,7 +36,7 @@ Commands:
 
 It's a very simplistic application and everything is saved to a json file. Recently I thought that having everything synced between my personal and work laptops would be a great idea. 
 
-Getting a relational database for that would be very annoying, I don't want do deal with a schema right now also I don't want to be stuck with my past decisions, and the application is already saving a json file, for this case DynamoDB is a good option (and if we chose a rdbms I could not write about Dynamo). 
+Getting a relational database for that would be very annoying, I don't want to deal with a schema right now also I don't want to be stuck with my past decisions, and the application is already saving a json file, for this case DynamoDB is a good option (and if we chose an rdbms I could not write about Dynamo). 
 
 ## Part 1 - Getting access to DynamoDB and the `aws` CLI
 
@@ -44,19 +44,19 @@ Getting a relational database for that would be very annoying, I don't want do d
 
 We need access to our application to read and write. Is good pratice to have a user for each application, so we will create one and assign a role to him.
 
-When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
+When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case, we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
 
   ![Create user screen](./create-user.png)
   
-> Add comand line command to create table. 
+> Add command line command to create a table. 
 
-Going forward we have the roles that will determine the kind of access that our user will have. In this case we are Reading and Writing into a DynamoDB table, so we don't want to give access to any other application. In this case we are giving the `AmazonDynamoDBFullAccess` you will have access to all tables and features, if you don't want that, is possible to create a custom policy just to access the desired resource. 
+Going forward we have the roles that will determine the kind of access that our user will have. The application is Reading and Writing into a DynamoDB table, so we don't want to give access to any other application, so the `AmazonDynamoDBFullAccess` you will have access to all tables and features. If you don't want that, is possible to create a custom policy just to access the desired resource. 
 
 ![Add role to user](./add-role.png)
 
 After the user is created we will be provided with an `Access Key ID` and a `Secret Access Key`, you need to keep those two keys in a safe place because you will need to use them to connect to DynamoDB, and you can't get another pair (It's possible to generate a new pair to the user). 
 
-In case you don't have the `aws` cli installed and configured you can follow those steps:
+In case you don't have the `aws` cli installed and configured you can follow these steps:
 - [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 - [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
     
@@ -71,13 +71,13 @@ We are making the changes in this application, but since we are not savages, we 
 
     How we are going to test our changes?
 
-Gadly, Amazon provies a local version of DynamoDB that can be used with docker, so I think we should use it.
+Gladly, Amazon provides a local version of DynamoDB that can be used with docker, so I think we should use it.
 
 <details>
   <summary>Setting up DynamoDB docker container</summary>
 
-  We can start creating a `docker-compose.yml` and mapping the ports, you don't have to make any other change, since the default configuration 
-  is what we want for testing, you can start the db using `docker-compose up`.
+We can start creating a `docker-compose.yml` and mapping the ports, you don't have to make any other change since the default configuration 
+is what we want for testing, you can start the db using `docker-compose up`.
   ```yml
   version: '3.1'
 
@@ -112,7 +112,7 @@ Gadly, Amazon provies a local version of DynamoDB that can be used with docker, 
 
 </details>
 
-With the cointainer running we can start to think about how we are going to setup our tests for the feature. The first thing is to bring the DynamoDB sdk to our project: 
+With the container running we can start to think about how we are going to set up our tests for the feature. The first thing is to bring the DynamoDB sdk to our project: 
 ```
 implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 ```
@@ -121,7 +121,7 @@ implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 
 Now we can finally start to write some code, we already have a repository and we want to be able to switch between implementations, so let's extract an interface from `LocalFileTaskRepository` with the method `save`. 
 
-First we extract an `interface` from our repository with the method `save`. 
+First, we extract an `interface` from our repository with the method `save`. 
 ```java
 interface TaskRepository {
     fun save(task: Task)
@@ -182,6 +182,7 @@ So, what's going on in this `createTable` method? Let's break down command by co
 ```java
 builder.tableName("tasqui")
 ```
+
 This is a fairly easy part, we are just setting the name of the table, then we have:
 
 ```java
@@ -193,9 +194,9 @@ builder.provisionedThroughput { provisionedThroughput ->
 
 This part is seeting the throughput for the table, which is the ability to read and write things to the db. We are setting the read and write throughput to 5, but what 5 means exactly? How the throughput is calculated? 
 
-The throughput is measured in `units`, each `unit` might have different values depending in which kind of operation you are doing. For reads each `unit` is 4Kb/s for consistently strong read, and 8Kb/s for eventually constent. While writing things get a bit easier, 1 `unit` is 1Kb/s and you don't have any difference between strong or eventual consistency. 
+The throughput is measured in `units`, each `unit` might have different values depending in which kind of operation you are doing. For reads, each `unit` is 4Kb/s for consistently strong read, and 8Kb/s for eventually consistent. While writing things get a bit easier, 1 `unit` is 1Kb/s and you don't have any difference between strong or eventual consistency. 
 
-In this case 5 was chosen since is the default value that Amazon gives to you in the free tier.  
+In this case, 5 was chosen since is the default value that Amazon gives to you in the free tier.  
 
 Moving to our actual table, we have to set the Primary Key:
 ```java
@@ -214,9 +215,9 @@ builder.attributeDefinitions(
 )
 ```
 
-This sets the primary key to be named `task_id` and to have a `Partition Key` only by defining the `keyType` to `HASH`, then we set type of our key, in this case is an `integer` so we set as `ScalarAttributeType.N`. You can also set has a `string` or `binary`.
+This sets the primary key to be named `task_id` and to have a `Partition Key` only by defining the `keyType` to `HASH`, then we set the type of our key, in this case, is an `integer` so we set as `ScalarAttributeType.N`. You can also set has a `string` or `binary`.
 
-Now everything is ready we can start move to write our assertion. We want the repository to save a task in the dabase, so we can query for the object that we just saved to see if he is really there. 
+Now everything is ready we can start moving to write our assertion. We want the repository to save a task in the database, so we can query for the object that we just saved to see if he is really there. 
 
 ```java
 
@@ -240,9 +241,9 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-The sdk provides the method `getItem` to query items especific records from the database, we have to build a `GetItemRequest` passing the `tableName` and the `key`. 
+The sdk provides the method `getItem` to query items specific records from the database, we have to build a `GetItemRequest` passing the `tableName` and the `key`. 
 
-The `key` is a map with the name of your Primary Key and the value that you want to query. The return of `getItem` is a `GetItemResponse` that have only two methods `item` and `consumedCapacity`. In this case we get the `item` which is `Map<String, Attribute>` where we can map to our Task object. Building the `AttributeValue` isn't very complex but the naming behind the methods isn't the best, so you can look at the [docs](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) to know what they do. Finally we compare the task from the database with our task. 
+The `key` is a map with the name of your Primary Key and the value that you want to query. The return of `getItem` is a `GetItemResponse` that have only two methods `item` and `consumedCapacity`. In this case we get the `item` which is `Map<String, Attribute>` where we can map to our Task object. Building the `AttributeValue` isn't very complex but the naming behind the methods isn't the best, so you can look at the [docs](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) to know what they do. Finally, we compare the task from the database with our task. 
 
 The only thing missing is our actual class and the call for the save method between the setup and the assert. 
 
@@ -310,7 +311,7 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
 }
 ```
 
-We transform the `Task` into `Map<String, AttributeValue>` and we use the `putItem` method with a `PutItemRequest` that we build to insert the item in the table. The insertion seems to be very straight forward besides the `.conditionExpression("attribute_not_exists(task_id)")`.  This `conditionExpression` method is way to filter or create checks before we make a change in our items, in this case we don't want to override a task if that task already exists, you can see the documentation about `conditionExpression` [here](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html).
+We transform the `Task` into `Map<String, AttributeValue>` and we use the `putItem` method with a `PutItemRequest` that we build to insert the item in the table. The insertion seems to be very straight forward beside the `.conditionExpression("attribute_not_exists(task_id)")`.  This `conditionExpression` method is a way to filter or create checks before we make a change in our items, we don't want to override a task if that task already exists, you can see the documentation about `conditionExpression` [here](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html).
 
 With everything ready, we run the tests, not the jewels, again and this happens: 
 
@@ -318,9 +319,9 @@ With everything ready, we run the tests, not the jewels, again and this happens:
 software.amazon.awssdk.services.dynamodb.model.ResourceInUseException: Cannot create preexisting table (Service: DynamoDb, Status Code: 400, Request ID: d9056558-bb38-4119-a89d-d2323e859a68)
 ```
 
-Wait, why? This is a tutorial, things are supposed to work out fine without erros, if I wanted erros I could have gone elsewhere. This error is happening because we created the table in the previous test, and everytime we run the tests we need a new table, a table so fresh that will move to Bel-Air to live with his uncle. So this time we are doing a `docker-compose down` to erase our container and setting up again with `docker-compose up -d`. Now our tests should be passing. 
+Wait, why? This is a tutorial, things are supposed to work out fine without errors, if I wanted errors I could have gone elsewhere. This error is happening because we created the table in the previous test, and every time we run the tests we need a new table, a table so fresh that will move to Bel-Air to live with his uncle. So this time we are doing a `docker-compose down` to erase our container and set up again with `docker-compose up -d`. Now our tests should be passing. 
 
-The test is passing, but is relying on the fact that the table don't exist. This isn't something good to have, so this must be fixed by deleting the table before the tests starts. This piece of code is added before the `createTable call` and run the test more than once with the same container (or just keep running the tests furiouly to see them passing one after another). 
+The test is passing but is relying on the fact that the table doesn't exist. This isn't something good to have, so this must be fixed by deleting the table before the tests start. This piece of code is added before the `createTable call` and run the test more than once with the same container (or just keep running the tests furiously to see them passing one after another). 
 
 ```java
 class DynamoDbTaskRepositoryShould {
@@ -351,12 +352,12 @@ class DynamoDbTaskRepositoryShould {
 
 With the first testing passing, it's time to move to the next step, we need to refactor our code. To be honest, this will be more kotlin than DynamoDB, so I will try to make it short (you also can skip, isn't like I will know that you don't refactor your code, you monster).
 
-The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead a new helper class could be created. 
+The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead, a new helper class could be created. 
 
 <details>
 <summary>1. Introducing the `DynamoDBHelper` </summary>
 
-In this case we can have a helper class that has all the methods that the tests are going to use incapsulated, so there is no need to worry with the implementation. 
+The helper class that has all the methods that the tests are going to use incapsulated, so there is no need to worry with the implementation. 
 The first step is to create the class and make that generate the `DynamoDBHelper` class with `DynamoDbClient` as a property. 
 
 Add the `DynamoDBHelper` with the property, and create a static function that connects to the database and create a new instance of `DynamoDBHelper`, and back in the test class just change the old `dynamoDbClient` variable to use
@@ -393,7 +394,7 @@ If all tests are passing, and should(I think), then it's time to move to the nex
 <details>
 <summary>2. Creating the table</summary>
 
-In this step we have to move code from the test class to the initialization of the helper. Start by extracting all the code for the table (create/delete) into a method.
+In this step, we have to move code from the test class to the initialization of the helper. Start by extracting all the code for the table (create/delete) into a method.
 
 ```java
 class DynamoDbTaskRepositoryShould {
@@ -484,7 +485,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-The tests are passing, unlikely Brexit, everything is going fine in the code but having to setup the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
+The tests are passing, unlikely Brexit, everything is going fine in the code but having to set up the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
 
 ```java
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
@@ -572,7 +573,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-Koltlin allow the creation of extention functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
+Koltlin allows the creation of extension functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
 
 Start adding a `companion object` inside the Task class:
 ```java
@@ -624,6 +625,7 @@ Now the test isn't cluttered with all the database code, the only thing missing 
 ```
 
 All the references for `task_id` and `tasqui` are using the variable instead of the string now. 
+
 ```java
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
