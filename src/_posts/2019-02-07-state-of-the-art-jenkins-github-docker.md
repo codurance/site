@@ -25,6 +25,8 @@ For the last two years I've worked in a Node project using GitHub for source man
 
 We have done a few improvements to the configuration 
 
+> TODO finish this section
+
 ## Caveat Emptor
 
 State of the art does not mean perfect. It is just the best thing I know of right now, I fully expect to learn more and look back at this as a good step toward something better.
