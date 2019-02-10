@@ -362,6 +362,7 @@ The first step is to create the class and make that generate the `DynamoDBHelper
 
 Add the `DynamoDBHelper` with the property, and create a static function that connects to the database and create a new instance of `DynamoDBHelper`, and back in the test class just change the old `dynamoDbClient` variable to use
 the one from the helper. 
+
 ```java
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     
@@ -650,3 +651,143 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 ```
 
 </details>
+
+## 3 - Retrieving data. 
+
+Moving forward with the changes, it's time to implement the retrival of the data from Dynamo. In the first test a query was implemented but to get all the data from the table a `scan` operation will be needed. 
+
+### 3.0 To Query or to Scan? 
+
+- Query: A query searches the table based in the Primary Key, a sort key can be used to refine the results, and the results are always sorted by the sort key. All queries are eventually consistent, and always scanned forward.
+
+- Scan: Examines every item in the table and return all data attributes. It's possible to use `ProjectionExpression` parameter to refine the scan. Since Scan dumps the entire table, then filter out the results, the operation will get slower if the table grows.
+
+### 3.1 Implementation
+
+Scan is the right option for the `all()` method, and the test can be approached in the following way:
+
+```java
+    @Test
+    internal fun `retrieve all Tasks`() {
+        val task1 = Task(1, "Task description")
+        val task2 = Task(2, "Another task description")
+        val dynamoDBHelper = DynamoDBHelper.connect()
+        val dynamoDbTaskRepository = DynamoDbTaskRepository(dynamoDBHelper.dynamoDbClient)
+        dynamoDBHelper.save(task1, task2)
+
+        val tasks = dynamoDbTaskRepository.all()
+
+        assertEquals(tasks, listOf(task1, task2))
+    }
+```
+
+The setup is basically the same thing from the previous one but the Task must be persisted using the `DynamoDBHelper`. The code from the repository can be used here: 
+```java
+    fun save(vararg tasks: Task) {
+        tasks.forEach {
+            dynamoDbClient.putItem(
+                PutItemRequest.builder()
+                    .tableName(tableName)
+                    .item(it.toAttributeMap())
+                    .conditionExpression("attribute_not_exists(task_id)")
+                    .build())
+        }
+    }
+```
+
+> To make easier to insert multiple tasks `vararg` can be used, it translate to the spread operator in java like `Task ...tasks`. 
+    
+
+Running the tests, everything is failing for the right reason, time to go for the production code. 
+
+```java
+
+class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
+
+    override fun all(): List<Task> {
+        val scanResponse = dynamoDbClient.scan { scan ->
+            scan.tableName("tasqui")
+            scan.limit(1)
+        }
+
+        return scanResponse.items().map { it.toTask() }
+    }
+    ...
+    private fun MutableMap<String, AttributeValue>.toTask() =
+        Task(this["id"]!!.n().toInt(), this["description"]!!.s() )
+}
+
+```
+
+This should make the tests to pass without any problem.
+
+### 3.1 Refactor
+
+Both tests are creating a new connecting to the datbase, we have to fix that to connect only once and to remove duplications of elements that will be used in the other tests. 
+
+The helper is being created every test and with the helper a new connecting is being created, this is a good thing to be created only once and at the start of the tests, also the `DynamoDBTaskRepository` can be instantiated every new test by junit. 
+
+```java
+class DynamoDbTaskRepositoryShould {
+
+    private val dynamoDBHelper: DynamoDBHelper = DynamoDBHelper.connect()
+    private lateinit var dynamoDbTaskRepository: DynamoDbTaskRepository
+
+    @BeforeEach
+    internal fun setUp() {
+        dynamoDbTaskRepository = DynamoDbTaskRepository(dynamoDBHelper.dynamoDbClient)
+    }
+
+    @Test
+    internal fun `add Task to DynamoDB`() {
+        val task = Task(1, "Task description")
+
+        dynamoDbTaskRepository.save(task)
+
+        val storedTask = dynamoDBHelper.findById(task.id.toString())
+        assertEquals(storedTask, task)
+    }
+
+    @Test
+    internal fun `retrieve all Tasks`() {
+        val task1 = Task(1, "Task description")
+        val task2 = Task(2, "Another task description")
+        dynamoDBHelper.save(task1, task2)
+
+        val tasks = dynamoDbTaskRepository.all()
+
+        assertEquals(tasks, listOf(task1, task2))
+    }
+}
+```
+
+Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the other change needed is to delete the table before each test. Recreating the table is easy, since there is no way to delete all the records the best way is to delete the table and create a new one. This is something that the repository is already doing, the changes done to have everything set are: 
+
+Make the `setupTable` public available:
+
+```java
+class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
+    fun setupTable() {
+        deleteTable()
+        createTable()
+    }
+}
+```
+
+and make the test recreate the table before every test: 
+
+```java
+class DynamoDbTaskRepositoryShould {
+
+    private val dynamoDBHelper: DynamoDBHelper = DynamoDBHelper.connect()
+    private lateinit var dynamoDbTaskRepository: DynamoDbTaskRepository
+
+    @BeforeEach
+    internal fun setUp() {
+        dynamoDbTaskRepository = DynamoDbTaskRepository(dynamoDBHelper.dynamoDbClient)
+        dynamoDBHelper.setupTable()
+    }
+    ...
+}
+```
+
