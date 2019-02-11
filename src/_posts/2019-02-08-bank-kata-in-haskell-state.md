@@ -4,13 +4,16 @@ asset-type: post
 name: bank-kata-in-haskell-state
 title: Bank kata in Haskell - dealing with state
 date: 2019-02-08 07:00:00 +00:00
-author: Liam Griffin-Jowett
+author: Liam Griffin
 image:
-    src: /assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/bank-kata-oop-diagram.png
+    src: /assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
+canonical:
+    name: my personal blog
+    href: https://medium.com/@Gryff/TODOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 tags:
     - functional-programming
     - haskell
-abstract: Dealing with state in the bank kata in Haskell
+abstract: How to work with state in functional programming when you can't hide it
 alias: [/2019/02/08/bank-kata-in-haskell-state]
 ---
 
@@ -21,7 +24,7 @@ In OO languages you usually have some sort of transaction repository that you ad
 It might look something like this:
 
 
-<p style="width: 420px; margin: 2em auto">
+<p style="margin: 2em auto">
     <img src="{{site.baseurl}}/assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/bank-kata-oop-diagram.png" title="bank kata OOP diagram" alt="bank kata OOP diagram">
 </p>
 
@@ -76,7 +79,7 @@ Now we return a tuple of `String` and `[Transaction]`, so we can use them somewh
 
 ```
 it "makes a statement" $ do
-  fst (getStatement [Withdraw 100]) `shouldBe` "Withdrew 100\n"
+  fst (getStatement [Withdrawal 100]) `shouldBe` "Withdrew 100\n"
 ```
 
 What might usage of this look like?
@@ -107,7 +110,7 @@ deposit amount transactions = ((), transactions ++ [Deposit amount])
 -- similar for withdraw
 ```
 
-Now what is returned from the function is similar in all cases - `(answer, [Transaction])`, where `answer` might be a string in case of `getStatement`, or nothing in case of just adding a deposit/withdrawal. Using these functions looks similar:
+Now what is returned from our functions is similar in all cases - `(answer, [Transaction])`, where `answer` might be a string in case of `getStatement`, or nothing in case of just adding a deposit/withdrawal. Using these functions looks similar:
 
 ```
 useMyBank :: (String, [Transaction])
@@ -149,7 +152,7 @@ useMyBank = do
   getStatement
 
 main = do
-  let statement = runState (useMyBank []) -- [] is our initial transactions
+  let statement = fst (runState (useMyBank [])) -- [] is our initial transactions
   print statement
 ```
 
@@ -162,8 +165,49 @@ it "stores deposits" $ do
   snd (runState (deposit 100) []) `shouldBe` [Deposit 100]
 
 it "makes a statement" $ do
-  fst (runState getStatement [Withdraw 100]) `shouldBe` "Withdrew 100\n"
+  fst (runState getStatement [Withdrawal 100]) `shouldBe` "Withdrew 100\n"
 ```
 
-Wonderful! But wait, we are not matching the requirements, we're returning the statement to the user and giving them the responsibility of printing it. Printing something involves using the `IO` monad, which means we need to combine two monads. This can be difficult for inexperienced Haskell developers to get to grips with, so I'll explain it in my next post.
+## Some small refactorings
+
+We are using `fst` and `snd` in various parts of our code to get the answer or the state of our program. This is such a common occurrence that there are helper functions to reduce the noise.
+
+```
+main = do
+  -- evalState gives us the value
+  let statement = evalState useMyBank []
+  print statement
+
+it "stores deposits" $ do
+  -- execState gives us the state
+  execState (deposit 100) [] `shouldBe` [Deposit 100]
+
+it "makes a statement" $ do
+  -- evalState gives us the value
+  evalState getStatement [Withdrawal 100] `shouldBe` "Withdrew 100\n"
+```
+
+Next up, notice that our `deposit` and `withdraw` methods return `()` as an answer because there's nothing to return. There is a helper function to wrap this called `modify`, that's lets you change the state without caring about the return value.
+
+```
+-- modify :: ([Transaction] -> [Transaction]) -> State [Transaction] ()
+
+deposit :: Int -> State [Transaction] ()
+deposit amount = modify (\transactions -> transactions ++ [Deposit amount])
+```
+
+Finally, the lambda in our `getStatement` also returns the transactions, so as not to lose the state. We can focus on just the return value, and keep the state in our monad, with function called `gets`.
+
+```
+-- gets :: ([Transaction] -> String) -> State [Transaction] String
+
+getStatement :: State [Transaction] String
+getStatement = gets generateStatement
+```
+
+The power of these functions is that I can extract what I really care about for my domain (e.g. generateStatement) and test that separately, without worrying about any state structure.
+
+## Next time
+
+Wonderful! But wait, we are not matching the requirements, we're returning the statement to the user and giving them the responsibility of printing it. Printing something involves using the `IO` monad, which means we need to combine two monads. This is not straightforward if you haven't tried it before, so I'll explain it in my next post.
 
