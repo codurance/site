@@ -1,4 +1,8 @@
-{% if post.image.src and post.image.src contains '://' %}
+{% if post.image.thumbnail and post.image.thumbnail contains '://' %}
+    {% assign postImgUrl = post.image.thumbnail %}    
+{% elsif post.image.thumbnail %}
+    {% assign postImgUrl = post.image.thumbnail | prepend: site.baseurl %} 
+{% elsif post.image.src and post.image.src contains '://' %}
     {% assign postImgUrl = post.image.src %} 
 {% elsif post.image.src %} 
     {% assign postImgUrl = post.image.src | prepend: site.baseurl %} 

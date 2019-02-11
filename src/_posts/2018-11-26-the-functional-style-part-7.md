@@ -6,7 +6,11 @@ title: "The Functional Style - Part 7"
 date: 2018-11-26 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 7. Lazy evaluation.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-7.jpeg
+    attribution:
+       text: Free for commercial use (no attribution required)
+       href: https://pixabay.com/en/sunset-hammock-relaxation-bali-2058002/
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming

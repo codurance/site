@@ -17,6 +17,8 @@
                 <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
             </div>
         </div>
+                <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
+        
     </div>
 </section>
 
@@ -27,7 +29,7 @@
                 {% if include.widgets contains "video_frame" %}
                 <img class="img-fluid d-block full-width">
                     {% if page.video-url contains 'https://www.youtube.com' %}
-                        <iframe style="height: 400px; width: 100%; border:none;" src="{{ page.video-url | replace: 'https://www.youtube.com', 'https://www.youtube-nocookie.com' }}"></iframe>
+                    <iframe width="100%" height="413" src="{{ page.video-url | replace: 'https://www.youtube.com', 'https://www.youtube-nocookie.com' }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     {% else %}
                         <div class="js-iframe-container" js-iframe-url="{{ page.video-url }}">
                         </div>

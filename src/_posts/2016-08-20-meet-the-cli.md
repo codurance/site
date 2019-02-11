@@ -14,7 +14,7 @@ tags:
 - windows 
 - standard
 - cli
-- csharp
+- CSharp
 - cross-platform
 categories:
 - technology

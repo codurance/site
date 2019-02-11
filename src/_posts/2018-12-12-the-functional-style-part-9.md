@@ -6,7 +6,11 @@ title: "The Functional Style - Part 9"
 date: 2018-12-12 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 9. Pragmatism.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-9.jpeg
+    attribution:
+       text: By Raphael - Web Gallery of Art (Public domain) 
+       href: https://commons.wikimedia.org/w/index.php?curid=75881
+       
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming

@@ -8,7 +8,7 @@ description: A tiny bit of async in your life
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
-- C#
+- CSharp
 ---
 
 While I take my time to put the effort on my Safety Musings part 2 post, I have decided to talk about a small little thing regarding the retrieval of results on C# while using async.

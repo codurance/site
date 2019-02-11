@@ -12,7 +12,7 @@ image:
     src: /assets/custom/img/blog/2017-11-23-delegates-as-type-aliases.jpg
 abstract: C# delegates can simplify your code by acting as type aliases for methods. Here I refactor a Factory class to use pattern.
 tags:
-- C#
+- CSharp
 - refactoring
 ---
 In this post I will walk through how to refactor a Factory, moving from a sequence of `if`s to a dictionary implementation, and using delegates as a type alias for my object creation methods.

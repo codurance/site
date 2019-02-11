@@ -6,7 +6,10 @@ title: "Active Pattern"
 date: 2019-01-14 05:00:00
 description: A very interesting construct on F#
 image: 
-    src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
+    src: /assets/custom/img/blog/2019/pattern-split.jpg
+    attribution:
+       text: Photo by Dmitri Popov on Unsplash
+       href: https://unsplash.com/@dmpop
 tags: 
 - FSharp
 - functional programming

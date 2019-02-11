@@ -70,17 +70,6 @@
   twitter: Chris_Jeffery
   github: chrisjeffery
 
-- id: guillem
-  name: Guillem Fernandez
-  image: /assets/custom/img/team/guillem_fernandez.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Guillem is a software developer that believes in creating code with dedication, time and care. Passionate about mobile development, has been bringing good practices and well crafted software to companies that wanted to move to mobile for the last seven years.</p>
-    <p>Coming from a C++ background moved to Objective-C and now to Swift. He loves to build tools and utilities to make developers work easier and more reliable.</p>
-    <p>Now it's time to bring software craftsmanship to Swift mobile, desktop and server.</p>
-  twitter: guillemf
-  github: guillemf
-
 - id: francesco
   name: Francesco Gigli
   image: /assets/custom/img/team/francesco_gigli.jpg
@@ -445,11 +434,11 @@
 - id: chrisreinmuller
   name: Chris Reinmuller
   image: /assets/custom/img/team/chris_reinmuller.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
-   <p>Chris has a background in digital production and has helped a research institute in Switzerland to communicate about their rocket and non-rocket science for a couple of years, primarily by developing web services and improving web user experience. During this time he had a sniff around more ambitious IT projects and that made him go back to university and learn about information systems and operations research. Bursting with new knowledge, he is now keen on feeding his potential into a new career as a software engineer.</p>
-   <p>He’s joining Codurance as an aspiring Software Craftsmanship Apprentice and has started the journey towards mastery of delivering high-quality software. His favourite hobbyhorse is Java and he embraces test-driven development and the extreme programming methodology.</p>
-   <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is an inveterate Trekkie.</p>
+   <p>Chris has a background in digital production and has helped a renowned research institute in Switzerland to communicate about their excellent science for a couple of years, primarily by developing web services and improving user experience. During this time he had a good sniff around more ambitious IT projects and that made him go back to university to learn more about information systems. Bursting with new knowledge, he was then feeding his potential into a new career as a software engineer.</p>
+   <p>Joining Codurance has propelled him forward on the journey towards mastery of delivering high-quality software. Applying the ideas of the Software Craftsmanship approach to development has been a great influence in growing his professional expertise. He is mostly developing on the JVM and he embraces test-driven development and the extreme programming methodology.</p>
+   <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is a bit of a Trekkie.</p>
   twitter: SIR_XOPHER
   github: SirXOPHER
 
@@ -508,10 +497,10 @@
 - id: solange
   name: Solange U. Gasengayire
   image: /assets/custom/img/team/solange.png
-  role: Apprentice
+  role: Software Craftswoman
   fullDescription:
     <p>With a passion for lifelong learning, Solange is always seeking out opportunities to expand her knowledge across a wide variety of fields. She fell in love with software development in her university years, when she realised how computer science concepts could be applied and utilised to solve real world problems in so many other different industries, like education and healthcare particularly.</p>
-    <p>Although she has an extensive experience as a Java professional and team lead, her will to contribute to large-scale, well-crafted, open-source projects unearthed a strong desire for continuous betterment alongside the best Software Craftspeople and mentors. It is with a multicultural background, a creative drive and a commitment to learning that she joins Codurance as an apprentice.</p>
+    <p>Although she has an extensive experience as a Java professional and team lead, her will to contribute to large-scale, well-crafted, open-source projects unearthed a strong desire for continuous betterment alongside the best Software Craftspeople and mentors. It is with a multicultural background, a creative drive and a commitment to learning that she joins Codurance as a craftswoman.</p>
     <p>Outside of work, Solange is involved in initiatives that promote affordable education opportunities for all. She loves people, trees, coffee, books, music, travelling, and enjoys all kinds of sports activities.</p>
   twitter: sgasengayire
   github: SolangeUG
@@ -597,10 +586,10 @@
 - id: nick_white
   name: Nick White
   image: /assets/custom/img/team/nick_white.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Originally from a musical background, Nick began his career in software working on a large image-processing application in the film industry. It wasn't long before he discovered the huge benefits of incorporating software craftsmanship principles into his coding.</p>
-    <p>He's looking forward to honing his craft and learning from the very best as an apprentice at Codurance.</p>
+    <p>He's excited about honing his craft and working with the very best as a craftsman at Codurance.</p>
     <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
   github: nawhi
 
@@ -624,3 +613,31 @@
     <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
   github: RoryCollins
   twitter: Rory_Collins_
+
+- id: jordi_creus
+  name: Jordi Creus
+  image: /assets/custom/img/team/jordi_creus.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Jordi is a software developer specialised in web environment. He practices agile methodologies and is always willing to learn new technologies and methodologies.</p>
+    <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
+    <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
+  github: monitotxi
+
+- id: anne_marie
+  name: Anne-Marie Mendonca
+  image: /assets/custom/img/team/anne_marie.jpg
+  role: Head of Recruitment (UK)
+  fullDescription:
+    <p>Anne-Marie manages the recruitment for our London and Manchester offices.</p>
+    <p>Anne-Marie enjoys her role in recruitment because it gives her the opportunity to engage with people so that she can understand their career aspirations and experience, which enables her to match their skills with a suitable role and environment.</p>
+    <p>She was inspired to join Codurance due to their culture of learning and flexible working environment for all staff, technical and non-technical.</p>
+    <p>In her spare time, Anne-Marie enjoys travelling, reading, and learning Spanish.</p>
+
+- id: jen_jem
+  name: Jen Jeremiciute
+  image: /assets/custom/img/team/jen_jem.jpg
+  role: Office & Finance Manager
+  fullDescription:
+    <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
+    <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>

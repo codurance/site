@@ -6,7 +6,11 @@ title: "The Functional Style - Part 8"
 date: 2018-12-04 00:00:00
 description: Functional programming explained for the pragmatic programmer. Part 8. Persistent data structures.
 image: 
-    src: /assets/custom/img/blog/2018-08-07-the-functional-style.png
+    src: /assets/custom/img/blog/the-functional-style/title-images/episode-8.jpeg
+    attribution:
+       text: Jean Louis Mazieres
+       href: https://www.flickr.com/photos/mazanto/25773599478
+
 abstract: Functional programming explained for the pragmatic programmer.
 tags: 
 - functional programming
