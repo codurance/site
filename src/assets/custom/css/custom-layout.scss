@@ -385,10 +385,19 @@ $orange-colour: #e67e22;
 
   /* Hero */
   &-hero {
-    background-color: #185466;
+    background-color: $codurance-green;
 
     &-title, &-sub-title {
       color: #fff;
+    }
+  }
+
+  /* Expert Advice */
+  &-expert-advice {
+    background-color: $codurance-green-dark-high;
+
+    &__card {
+      background-color: $codurance-green; 
     }
   }
 
