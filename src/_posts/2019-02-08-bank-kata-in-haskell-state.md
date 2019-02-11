@@ -35,13 +35,13 @@ This repository pattern is used to encapsulate the state, either in memory or fr
 
 First we'll define a type for our transactions:
 
-```
+```haskell
 data Transaction = Deposit Int | Withdrawal Int
 ```
 
 A `Transaction` can either be a `Deposit` or a `Withdrawal`. This is a sum type in Haskell, which you can relate to an enum in a static object-oriented language. They both wrap an `Int` which is the value of the transaction. Let's think about what we want our `deposit` function to look like.
 
-```
+```haskell
 deposit :: Int -> [Transaction] -> [Transaction]
 ```
 
@@ -49,14 +49,14 @@ deposit :: Int -> [Transaction] -> [Transaction]
 
 Now we can write a test for the behaviour we want `deposit` to have.
 
-```
+```haskell
 it "stores deposits" $ do
   deposit 100 [] `shouldBe` [Deposit 100]
 ```
 
 Writing the production code to pass this is simple:
 
-```
+```haskell
 deposit :: Int -> [Transaction] -> [Transaction]
 deposit amount transactions = transactions ++ [Deposit amount]
 ```
@@ -65,19 +65,19 @@ Withdraw will have the same function signature, but the body will add a Withdraw
 
 ## Making a statement
 
-```
+```haskell
 getStatement :: [Transaction] -> String
 ```
 
 `getStatement` will take our transactions and, for simplicity, return a nicely formatted string which will be our statement. And here we see the crux of the problem: once we return `String` we lose our list of transactions! Looks like we'll have to return them too.
 
-```
+```haskell
 getStatement :: [Transaction] -> (String, [Transaction])
 ```
 
 Now we return a tuple of `String` and `[Transaction]`, so we can use them somewhere else if needs be. I'll leave the function body as it's out of the scope of this article. For testing:
 
-```
+```haskell
 it "makes a statement" $ do
   fst (getStatement [Withdrawal 100]) `shouldBe` "Withdrew 100\n"
 ```
@@ -86,7 +86,7 @@ What might usage of this look like?
 
 ## Using our domain functions
 
-```
+```haskell
 useMyBank :: [Transaction] -> (String, [Transaction])
 useMyBank initialTransactions = let
   newTransactions = deposit 100 initialTransactions
@@ -103,7 +103,7 @@ We can start to see how this will be cumbersome to use. We can also see dupllica
 
 There's a pattern we're going to refactor to, called the State monad. In order to do this we'll need our functions to have a similar signature. So let's change depositing and withdrawing to match `getStatement`:
 
-```
+```haskell
 deposit :: Int -> [Transaction] -> ((), [Transaction])
 deposit amount transactions = ((), transactions ++ [Deposit amount])
 
@@ -112,7 +112,7 @@ deposit amount transactions = ((), transactions ++ [Deposit amount])
 
 Now what is returned from our functions is similar in all cases - `(answer, [Transaction])`, where `answer` might be a string in case of `getStatement`, or nothing in case of just adding a deposit/withdrawal. Using these functions looks similar:
 
-```
+```haskell
 useMyBank :: (String, [Transaction])
 useMyBank initialTransactions = let
   (_, newTransactions) = deposit 100 initialTransactions
@@ -125,7 +125,7 @@ The duplication is now more obvious. If only there was some abstraction to deal 
 
 ## Refactoring to the State monad
 
-```
+```haskell
 newtype State s a = State { runState :: s -> (a,s) }
 
 -- more concretely for our use case:
@@ -134,7 +134,7 @@ State [Transaction] a = { runState :: [Transaction] -> (a, [Transaction]) }
 
 `State` is just a wrapper around our function, and the `a` can change depending on if we are storing a transaction or getting a statement. So how do we use it? We have a type constructor `State` that takes a function of signature `s -> (a, s)` and returns us a `State` type.
 
-```
+```haskell
 deposit :: Int -> State [Transaction] ()
 deposit amount = State (\transactions -> ((), transactions ++ [Deposit amount]))
 
@@ -144,7 +144,7 @@ getStatement = State (\transactions -> (generateStatement transactions, transact
 
 What advantages do we get from using `State`? It encapsulates the storing of state as a side effect, so we can focus on the domain of our code (adding deposits/withdrawals, generating statements) without worrying about the structure of storing state.
 
-```
+```haskell
 useMyBank :: State [Transaction] String
 useMyBank = do
   deposit 200
@@ -160,7 +160,7 @@ We can see far more clearly what is happening, similar to what the procedural us
 
 Testing is similar to before:
 
-```
+```haskell
 it "stores deposits" $ do
   snd (runState (deposit 100) []) `shouldBe` [Deposit 100]
 
@@ -172,7 +172,7 @@ it "makes a statement" $ do
 
 We are using `fst` and `snd` in various parts of our code to get the answer or the state of our program. This is such a common occurrence that there are helper functions to reduce the noise.
 
-```
+```haskell
 main = do
   -- evalState gives us the value
   let statement = evalState useMyBank []
@@ -189,7 +189,7 @@ it "makes a statement" $ do
 
 Next up, notice that our `deposit` and `withdraw` methods return `()` as an answer because there's nothing to return. There is a helper function to wrap this called `modify`, that's lets you change the state without caring about the return value.
 
-```
+```haskell
 -- modify :: ([Transaction] -> [Transaction]) -> State [Transaction] ()
 
 deposit :: Int -> State [Transaction] ()
@@ -198,7 +198,7 @@ deposit amount = modify (\transactions -> transactions ++ [Deposit amount])
 
 Finally, the lambda in our `getStatement` also returns the transactions, so as not to lose the state. We can focus on just the return value, and keep the state in our monad, with function called `gets`.
 
-```
+```haskell
 -- gets :: ([Transaction] -> String) -> State [Transaction] String
 
 getStatement :: State [Transaction] String
