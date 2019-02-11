@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
 canonical:
     name: my personal blog
-    href: https://medium.com/@Gryff/TODOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    href: https://medium.com/@Gryff/bank-kata-in-haskell-dealing-with-state-3364c13b994f
 tags:
     - functional-programming
     - haskell
