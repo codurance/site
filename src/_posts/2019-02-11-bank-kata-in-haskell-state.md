@@ -3,10 +3,10 @@ layout: post
 asset-type: post
 name: bank-kata-in-haskell-state
 title: Bank kata in Haskell - dealing with state
-date: 2019-02-08 07:00:00 +00:00
+date: 2019-02-11 07:00:00 +00:00
 author: Liam Griffin
 image:
-    src: /assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
+    src: /assets/custom/img/blog/2019-02-11-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
 canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bank-kata-in-haskell-dealing-with-state-3364c13b994f
@@ -14,7 +14,7 @@ tags:
     - functional-programming
     - haskell
 abstract: How to work with state in functional programming when you can't hide it
-alias: [/2019/02/08/bank-kata-in-haskell-state]
+alias: [/2019/02/11/bank-kata-in-haskell-state]
 ---
 
 # Bank kata in Haskell - dealing with state
@@ -25,7 +25,7 @@ It might look something like this:
 
 
 <p style="margin: 2em auto">
-    <img src="{{site.baseurl}}/assets/custom/img/blog/2019-02-08-bank-kata-in-haskell-state/bank-kata-oop-diagram.png" title="bank kata OOP diagram" alt="bank kata OOP diagram">
+    <img src="{{site.baseurl}}/assets/custom/img/blog/2019-02-11-bank-kata-in-haskell-state/bank-kata-oop-diagram.png" title="bank kata OOP diagram" alt="bank kata OOP diagram">
 </p>
 
 
