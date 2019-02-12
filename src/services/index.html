@@ -85,7 +85,7 @@ title: Services
   <!-- Our Expertise -->
   <div class="section gray-section">
     <div class="container">
-      <div class="services-three-col-spotlights-title u-heading-v2-3--bottom g-brd-primary g-mb-50">
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
         <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Our Expertise</h2>
       </div>
 
@@ -248,21 +248,26 @@ title: Services
     </div>
   </div>
 
-  <!-- Our Partners -->
-  <div class="section">
+  <!-- Expert Advice Clients -->
+  <div class="section g-pb-0">
     <div class="container">
-      <div class="services-three-col-spotlights-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Our Partners</h2>
+
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Clients who received expert advice</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm"
-            src="{{site.baseurl}}/assets/custom/img/home/partners/github.png" alt="GitHub Logo"> </div>
-        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm"
-            src="{{site.baseurl}}/assets/custom/img/home/partners/aws.png" alt="AWS Logo"> </div>
-        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm"
-            src="{{site.baseurl}}/assets/custom/img/home/partners/jetbrainsLogo.png" alt="Jetbrains Logo"> </div>
-        <div class="col-md-3 text-center"> <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm"
-            src="{{site.baseurl}}/assets/custom/img/home/partners/google.png" alt="Google Logo"> </div>
+
+      <div class="row text-center g-mx-0--sm">
+
+        {% for client in site.data.clients %}
+          {% if client.services-page == "expert_advice" %}
+            <div class="col-6 col-md-4 col-lg-2 g-px-0--sm">
+              <div class="g-pb-50 g-px-30 g-ml-minus-1 g-mb-minus-1">
+                <img class="mx-auto g-width-120 g-max-width-100x" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
       </div>
     </div>
   </div>
