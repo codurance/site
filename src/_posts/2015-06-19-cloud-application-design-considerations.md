@@ -11,7 +11,7 @@ image:
         href: https://flic.kr/p/q2avm3
 
 tags:
-- Cloud
+- cloud
 - design
 
 ---

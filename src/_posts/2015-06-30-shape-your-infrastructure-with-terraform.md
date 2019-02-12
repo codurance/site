@@ -13,7 +13,7 @@ tags:
 - Terraform
 - aws
 - amazon-web-services
-- Cloud
+- cloud
 ---
 
 The popularity of cloud infrastructure services has hugely increased over the last few years. Companies value the flexibility and reliability provided by such services. The simplicity of the solutions delivered by cloud providers should remove the burden from the shoulders of busy Dev and Ops people and give the possibility to focus on real customer's needs.
