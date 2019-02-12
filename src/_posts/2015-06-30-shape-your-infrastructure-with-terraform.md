@@ -11,7 +11,7 @@ image:
         href: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TerraformedMoonFromEarth.jpg/240px-TerraformedMoonFromEarth.jpg
 tags:
 - Terraform
-- AWS
+- aws
 - Amazon-Web-Services
 - Cloud
 ---
