@@ -8,7 +8,7 @@ image:
    src: /assets/custom/img/blog/haskell-logo.png
 tags:
 - functional programming
-- Haskell
+- haskell
 - applicatives
 - functors
 ---

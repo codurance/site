@@ -8,7 +8,7 @@ image:
    src: /assets/custom/img/blog/sicp-post.jpg
 tags:
 - functional programming
-- Haskell
+- haskell
 - SICP
 ---
 
