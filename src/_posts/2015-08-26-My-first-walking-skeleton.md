@@ -16,7 +16,7 @@ tags:
 - Continuous-Deployment
 - Domain-Driven-Design
 - Heroku
-- Scala
+- scala
 - SBT
 - Cucumber
 - Travis
