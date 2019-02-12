@@ -53,8 +53,8 @@ title: Services
       <div class="services-two-col-content">
         <div class="row">
           <div class="col-lg-6 align-self-center">
-            <img class="img-fluid g-hidden-md-down" src="{{site.baseurl}}/assets/custom/img/services/advice_delivery_02.jpg"
-              alt="Image Description">
+            <img class="img-fluid g-hidden-md-down"
+              src="{{site.baseurl}}/assets/custom/img/services/advice_delivery_02.jpg" alt="Image Description">
           </div>
           <div class="col-lg-6 g-mb-50 g-mb-0--lg">
             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
@@ -292,31 +292,27 @@ title: Services
               forceFormEmbedToApplyUpdatedStyles();
 
               function addStyleOverridesToHead() {
-                var openSansLink = createOpenSansLinkElement();
-                var head = getIframeHeadElement();
+                var head = getHubSpotFormIframeHeadElement();
 
-                head.append(openSansLink);
-                head.append(styleTagWith('*{ font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }'));
-                head.append(styleTagWith('.hs-input { width: 100% !important; max-width: 100% !important; background-color: #fff !important; }'));
-                head.append(styleTagWith('.hs-input[type=checkbox], .hs-input[type=radio] { width: 1rem !important; }'));
-                head.append(styleTagWith('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }'));
-                head.append(styleTagWith('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }'));
-                head.append(styleTagWith('.submitted-message { text-align: center; }'));
+                var stylesToSetAllFieldsToOpenSans = styleTagFor('* { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }');
+                var stylesToSetAllLinksToCoduranceOrange = styleTagFor('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }');
+                var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
+                var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
+                var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
+
+                head.append(stylesToSetAllFieldsToOpenSans);
+                head.append(stylesToSetAllLinksToCoduranceOrange);
+                head.append(stylesToSetAllFormFieldBackgroundsToWhite);
+                head.append(stylesToCentreAlignFormSubmittedMessage);
+                head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
               }
 
-              function createOpenSansLinkElement() {
-                var openSansLink = document.createElement("link");
-                openSansLink.rel = "stylesheet";
-                openSansLink.href = "https://fonts.googleapis.com/css?family=Open+Sans";
-                return openSansLink;
-              }
-
-              function getIframeHeadElement() {
+              function getHubSpotFormIframeHeadElement() {
                 var hubspotFormIFrame = $("#hs-form-iframe-0");
                 return hubspotFormIFrame.contents().find("head");
               }
 
-              function styleTagWith(css) {
+              function styleTagFor(css) {
                 return '<style type="text/css">' + css + '</style>';
               }
 
