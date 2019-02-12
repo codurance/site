@@ -10,7 +10,7 @@ image:
         text: Image by Sean MacEntee (CC BY 2.0)
         href: https://www.flickr.com/photos/smemon/15944989872/in/photostream/
 tags:
-- Java
+- java
 - HTTPS
 - Security
 - Mutual Authentication

@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2017-11-23-java-optionals-for-more-expressive-code.png
 abstract: Java 8 Optionals allow you to write your method signatures to indicate that your method may or may not return a value. But there is more to Optional than merely checking whether the value is present and getting it if it is. Here I show how Optional also includes some features that can enhance your code's expressiveness.
 tags:
-- Java
+- java
 - craftsmanship
 - cleancode
 ---
