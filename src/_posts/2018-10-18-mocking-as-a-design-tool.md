@@ -9,7 +9,7 @@ description: Mocking as a design tool.
 image:
    src: /assets/custom/img/blog/2018-10-18-mocking-as-a-design-tool/01-association.png
 tags:
-- tdd
+- TDD
 - design
 - mocking
 ---

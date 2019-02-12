@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/2016-05-16-bowling.jpg
 tags:
 - craftsmanship
-- tdd
+- TDD
 - scala
 - clojure
 - FSharp
