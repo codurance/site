@@ -12,7 +12,7 @@ image:
 tags:
 - java
 - HTTPS
-- Security
+- security
 - Mutual Authentication
 --- 
 
