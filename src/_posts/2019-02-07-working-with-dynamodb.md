@@ -122,14 +122,14 @@ implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 Now we can finally start to write some code, we already have a repository and we want to be able to switch between implementations, so let's extract an interface from `LocalFileTaskRepository` with the method `save`. 
 
 First, we extract an `interface` from our repository with the method `save`. 
-```java
+```kotlin
 interface TaskRepository {
     fun save(task: Task)
 }
 ```
 
 Let's make a test for our repository. Starting our test we are going to need to connect to the database and create the table before doing any testing. 
-```java
+```kotlin
 class DynamoDBTaskRepositoryShould {
 
     @Test
@@ -145,7 +145,7 @@ class DynamoDBTaskRepositoryShould {
 
 The connection is very straightforward since we don't have to authenticate to connect to our local DynamoDB, the only thing that we have to do is to set our endpoint to be `http://localhost:8000`. With the `dynamoDbClient` now we can proceed to create the table.  
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     @Test
@@ -179,13 +179,13 @@ class DynamoDbTaskRepositoryShould {
 
 So, what's going on in this `createTable` method? Let's break down command by command and see:
 
-```java
+```kotlin
 builder.tableName("tasqui")
 ```
 
 This is a fairly easy part, we are just setting the name of the table, then we have:
 
-```java
+```kotlin
 builder.provisionedThroughput { provisionedThroughput ->
     provisionedThroughput.readCapacityUnits(5)
     provisionedThroughput.writeCapacityUnits(5)
@@ -199,7 +199,7 @@ The throughput is measured in `units`, each `unit` might have different values d
 In this case, 5 was chosen since is the default value that Amazon gives to you in the free tier.  
 
 Moving to our actual table, we have to set the Primary Key:
-```java
+```kotlin
 builder.keySchema(
     KeySchemaElement.builder()
         .attributeName("task_id")
@@ -219,7 +219,7 @@ This sets the primary key to be named `task_id` and to have a `Partition Key` on
 
 Now everything is ready we can start moving to write our assertion. We want the repository to save a task in the database, so we can query for the object that we just saved to see if he is really there. 
 
-```java
+```kotlin
 
 class DynamoDbTaskRepositoryShould {
 
@@ -247,7 +247,7 @@ The `key` is a map with the name of your Primary Key and the value that you want
 
 The only thing missing is our actual class and the call for the save method between the setup and the assert. 
 
-```java
+```kotlin
 
 class DynamoDbTaskRepositoryShould {
 
@@ -268,7 +268,7 @@ class DynamoDbTaskRepositoryShould {
 <details>
     <summary>DynamoDbTaskRepository implementation</summary>
 
-```java
+```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     override fun save(task: Task) {
@@ -292,7 +292,7 @@ Now we are right to implement the production code. We have the `dynamoDBClient` 
 1. Creating an `item` to be inserted
 1. Insert the item using `putItem`
 
-```java
+```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     override fun save(task: Task) {
@@ -323,7 +323,7 @@ Wait, why? This is a tutorial, things are supposed to work out fine without erro
 
 The test is passing but is relying on the fact that the table doesn't exist. This isn't something good to have, so this must be fixed by deleting the table before the tests start. This piece of code is added before the `createTable call` and run the test more than once with the same container (or just keep running the tests furiously to see them passing one after another). 
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     @Test
@@ -363,7 +363,7 @@ The first step is to create the class and make that generate the `DynamoDBHelper
 Add the `DynamoDBHelper` with the property, and create a static function that connects to the database and create a new instance of `DynamoDBHelper`, and back in the test class just change the old `dynamoDbClient` variable to use
 the one from the helper. 
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     
     companion object {
@@ -379,7 +379,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 }
 ```
 
-```java
+```kotlin
     @Test
     internal fun `add Task to DynamoDB`() {
 
@@ -397,7 +397,7 @@ If all tests are passing, and should(I think), then it's time to move to the nex
 
 In this step, we have to move code from the test class to the initialization of the helper. Start by extracting all the code for the table (create/delete) into a method.
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     @Test
@@ -418,7 +418,7 @@ class DynamoDbTaskRepositoryShould {
 
 Move that method to the `DynamoDBHelper` class, change so it can use the `dynamoDbClient` from the helper, and make the test call the method in the helper:
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     fun setupTable() {
         val tableExists = dynamoDbClient.listTables()
@@ -460,7 +460,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 }
 ```
 
-```java
+```kotlin
     @Test
     internal fun `add Task to DynamoDB`() {
 
@@ -488,7 +488,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
 The tests are passing, unlikely Brexit, everything is going fine in the code but having to set up the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
     init {
@@ -497,7 +497,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     ...
 }
 ```
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     @Test
@@ -531,7 +531,7 @@ class DynamoDbTaskRepositoryShould {
 
 This part is very like the previous one where the method will be moved to the helper and the test will use the newly created method. 
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
     init {
@@ -556,7 +556,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 }
 ```
 
-```java
+```kotlin
     @Test
     internal fun `add Task to DynamoDB`() {
 
@@ -577,14 +577,14 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 Koltlin allows the creation of extension functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
 
 Start adding a `companion object` inside the Task class:
-```java
+```kotlin
 data class Task(val id: Int, val description: String) {
     companion object
 }
 ```
 
 and them insde the helper add the extension method: 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     ...
     fun findById(taskId: String): Task {
@@ -611,7 +611,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
 Now the test isn't cluttered with all the database code, the only thing missing is to remove the `dynamoDbClient` and extract the strings inside the helper. 
 
-```java
+```kotlin
     @Test
     internal fun `add Task to DynamoDB`() {
         val dynamoDbHelper = DynamoDBHelper.connect()
@@ -627,7 +627,7 @@ Now the test isn't cluttered with all the database code, the only thing missing 
 
 All the references for `task_id` and `tasqui` are using the variable instead of the string now. 
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
     init {
@@ -666,7 +666,7 @@ Moving forward with the changes, it's time to implement the retrieval of the dat
 
 Scan is the right option for the `all()` method, and the test can be approached in the following way:
 
-```java
+```kotlin
     @Test
     internal fun `retrieve all Tasks`() {
         val task1 = Task(1, "Task description")
@@ -682,7 +682,7 @@ Scan is the right option for the `all()` method, and the test can be approached 
 ```
 
 The setup is basically the same thing from the previous one but the Task must be persisted using the `DynamoDBHelper`. The code from the repository can be used here: 
-```java
+```kotlin
     fun save(vararg tasks: Task) {
         tasks.forEach {
             dynamoDbClient.putItem(
@@ -700,7 +700,7 @@ The setup is basically the same thing from the previous one but the Task must be
 
 Running the tests, everything is failing for the right reason, time to go for the production code. 
 
-```java
+```kotlin
 
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
@@ -727,7 +727,7 @@ Both tests are creating a new connecting to the database, we have to fix that to
 
 The helper is being created every test and with the helper, a new connection is being created, this is a good thing to be created only once and at the start of the tests, also the `DynamoDBTaskRepository` can be instantiated every new test by junit. 
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     private val dynamoDBHelper: DynamoDBHelper = DynamoDBHelper.connect()
@@ -765,7 +765,7 @@ Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the 
 
 Make the `setupTable` public available:
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     fun setupTable() {
         deleteTable()
@@ -776,7 +776,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
 and make the test recreate the table before every test: 
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
 
     private val dynamoDBHelper: DynamoDBHelper = DynamoDBHelper.connect()
@@ -799,7 +799,7 @@ class DynamoDbTaskRepositoryShould {
 
 As always, we start with a test inserting something to the database, deleting what we just inserted and checking if that isn't in the database. 
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
     @Test
     internal fun `delete Task from the table`() {
@@ -815,7 +815,7 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-```java
+```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     fun findById(taskId: String): Task {
         val item = dynamoDbClient.getItem(
@@ -836,7 +836,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 The only new thing in this test is the `assertThrows<ItemNotFoundInTable>`, this checks if a method call will throw an exception, and the `ItemNotFoundInTable` is an exception created to be thrown by the helper in case there is no item returned. 
 Running the tests, they are failing for the right reasons, so it's time to move to the implementation. 
 
-```java
+```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     private val tableName = "tasqui"
@@ -859,7 +859,7 @@ The last method to be implemented is `nextId`, this words as the primary key gen
 In this case, a `Scan` limited to one record would have the desired effect since the `Scan` is in descending order. 
 
 The first test can start on a happy path where there's already an item in the database: 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
     @Test
     internal fun `retrieve the last inserted id plus one`() {
@@ -874,7 +874,7 @@ class DynamoDbTaskRepositoryShould {
 ```
 
 and the implementation would be:
-```java
+```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     private val tableName = "tasqui"
@@ -891,7 +891,7 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
 
 It's a `Scan` operation like in the one in `all()` but with a `scan.limit(1)` added. This will make the scan just retrieve only one item, then that item is converted to a `Task` and added 1 to the id. This will work when the table returns an item, but for an empty table will crash. To cover that case we add a test without inserting any task in the arrange part: 
 
-```java
+```kotlin
 class DynamoDbTaskRepositoryShould {
     @Test
     internal fun `first id should be 1`() {
@@ -902,7 +902,7 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-```java
+```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     private val tableName = "tasqui"
