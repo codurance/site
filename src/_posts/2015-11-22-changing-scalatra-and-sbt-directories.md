@@ -9,7 +9,7 @@ image:
 tags:
 - scalatra
 - scala
-- sbt
+- SBT
 - craftsmanship
 - domain-driven-design
 --- 
