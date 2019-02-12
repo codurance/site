@@ -19,7 +19,7 @@ tags:
 - kernel
 - virtual machine 
 - devops
-- Docker
+- docker
 - virtualisation
 - operating system
 --- 
