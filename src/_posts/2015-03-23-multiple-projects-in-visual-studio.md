@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/visual-studio-projects.jpg
 tags:
 - CSharp
-- .NET
+- .net
 - Visual-Studio
 - practices
 ---
