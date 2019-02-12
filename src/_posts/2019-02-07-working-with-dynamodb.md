@@ -654,11 +654,11 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 
 ## 3 - Retrieving data. 
 
-Moving forward with the changes, it's time to implement the retrival of the data from Dynamo. In the first test a query was implemented but to get all the data from the table a `scan` operation will be needed. 
+Moving forward with the changes, it's time to implement the retrieval of the data from Dynamo. In the first test, a query was implemented but to get all the data from the table a `scan` operation will be needed. 
 
 ### 3.0 To Query or to Scan? 
 
-- Query: A query searches the table based in the Primary Key, a sort key can be used to refine the results, and the results are always sorted by the sort key. All queries are eventually consistent, and always scanned forward.
+- Query: A query searches the table based in the Primary Key, a sort key can be used to refine the results, and the results are always sorted by the sort key. All queries are eventually consistent(unless said otherwise) and always scanned forward.
 
 - Scan: Examines every item in the table and return all data attributes. It's possible to use `ProjectionExpression` parameter to refine the scan. Since Scan dumps the entire table, then filter out the results, the operation will get slower if the table grows.
 
@@ -695,7 +695,7 @@ The setup is basically the same thing from the previous one but the Task must be
     }
 ```
 
-> To make easier to insert multiple tasks `vararg` can be used, it translate to the spread operator in java like `Task ...tasks`. 
+> To make easier to insert multiple tasks `vararg` can be used, it translates to the spread operator in java like `Task ...tasks`. 
     
 
 Running the tests, everything is failing for the right reason, time to go for the production code. 
@@ -723,9 +723,9 @@ This should make the tests to pass without any problem.
 
 ### 3.1 Refactor
 
-Both tests are creating a new connecting to the datbase, we have to fix that to connect only once and to remove duplications of elements that will be used in the other tests. 
+Both tests are creating a new connecting to the database, we have to fix that to connect only once and to remove duplications of elements that will be used in the other tests. 
 
-The helper is being created every test and with the helper a new connecting is being created, this is a good thing to be created only once and at the start of the tests, also the `DynamoDBTaskRepository` can be instantiated every new test by junit. 
+The helper is being created every test and with the helper, a new connection is being created, this is a good thing to be created only once and at the start of the tests, also the `DynamoDBTaskRepository` can be instantiated every new test by junit. 
 
 ```java
 class DynamoDbTaskRepositoryShould {
@@ -761,7 +761,7 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the other change needed is to delete the table before each test. Recreating the table is easy, since there is no way to delete all the records the best way is to delete the table and create a new one. This is something that the repository is already doing, the changes done to have everything set are: 
+Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the other change needed is to delete the table before each test. Recreating the table is easy since there is no way to delete all the records the best way is to delete the table and create a new one. This is something that the repository is already doing, the changes that were done to have everything set is: 
 
 Make the `setupTable` public available:
 
@@ -791,5 +791,135 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-    It's important to mention here, `Scan` will return the items in a descending order. So if the order is something important for you, a sorting step will have to take place after retrieving the items for the database. In case of a `Query` instead of a `Scan` the parameter `ScanIndexForward` can be set `true` and DynamoDB will return the items in a ascending order.
+    It's important to mention here, `Scan` will return the items in descending order. So if the order is something important for you, a sorting step will have to take place after retrieving the items for the database. In case of a `Query` instead of a `Scan` the parameter `ScanIndexForward` can be set `true` and DynamoDB will return the items in ascending order.
  
+ ## 4 - Deleting our stuff
+
+ There are moments that we are not into really doing something, and we don't want to be reminded that certain thing hasn't been done, that's just too much guilt tripping. That's why the `delete` method is very important. 
+
+As always, we start with a test inserting something to the database, deleting what we just inserted and checking if that isn't in the database. 
+
+```java
+class DynamoDbTaskRepositoryShould {
+    @Test
+    internal fun `delete Task from the table`() {
+        val task = Task(1, "Task description")
+        dynamoDBHelper.save(task)
+
+        dynamoDbTaskRepository.delete(task.id)
+
+        assertThrows<ItemNotFoundInTable> {
+            dynamoDBHelper.findById(task.id.toString())
+        }
+    }
+}
+```
+
+```java
+class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
+    fun findById(taskId: String): Task {
+        val item = dynamoDbClient.getItem(
+            GetItemRequest.builder()
+                .tableName(tableName)
+                .key(mapOf(primaryKey to AttributeValue.builder().n(taskId).build()))
+                .build()
+        ).item()
+
+        if (item.isEmpty())
+            throw ItemNotFoundInTable()
+
+        return Task.from(item)
+    }
+}
+```
+
+The only new thing in this test is the `assertThrows<ItemNotFoundInTable>`, this checks if a method call will throw an exception, and the `ItemNotFoundInTable` is an exception created to be thrown by the helper in case there is no item returned. 
+Running the tests, they are failing for the right reasons, so it's time to move to the implementation. 
+
+```java
+class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
+
+    private val tableName = "tasqui"
+
+    override fun delete(id: Int) {
+        dynamoDbClient.deleteItem { delete ->
+            delete.tableName(tableName)
+            delete.key(mapOf("task_id" to id.toAttributeValue()))
+        }
+    }
+    ...
+}
+```
+
+This is the easiest operation to do, only the `tableName` and the `key` need to be informed, and the deletion will happen. This part there isn't much to refactor, so we can skip for now. 
+
+## 5 - The final countdown (or counter)
+
+The last method to be implemented is `nextId`, this words as the primary key generator. The last item has to be retrieved and then we increment 1 to the item id. 
+In this case, a `Scan` limited to one record would have the desired effect since the `Scan` is in descending order. 
+
+The first test can start on a happy path where there's already an item in the database: 
+```java
+class DynamoDbTaskRepositoryShould {
+    @Test
+    internal fun `retrieve the last inserted id plus one`() {
+        val task = Task(1, "Task description")
+        dynamoDBHelper.save(task)
+
+        val nextId = dynamoDbTaskRepository.nextId()
+
+        assertEquals(2, nextId)
+    }
+}
+```
+
+and the implementation would be:
+```java
+class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
+
+    private val tableName = "tasqui"
+
+    override fun nextId(): Int {
+        val items = dynamoDbClient.scan { scan ->
+            scan.tableName(tableName)
+            scan.limit(1)
+        }.items()
+
+        return items[0].toTask().id + 1
+    }
+```
+
+It's a `Scan` operation like in the one in `all()` but with a `scan.limit(1)` added. This will make the scan just retrieve only one item, then that item is converted to a `Task` and added 1 to the id. This will work when the table returns an item, but for an empty table will crash. To cover that case we add a test without inserting any task in the arrange part: 
+
+```java
+class DynamoDbTaskRepositoryShould {
+    @Test
+    internal fun `first id should be 1`() {
+        val nextId = dynamoDbTaskRepository.nextId()
+
+        assertEquals(1, nextId)
+    }
+}
+```
+
+```java
+class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
+
+    private val tableName = "tasqui"
+
+    override fun nextId(): Int {
+        val items = dynamoDbClient.scan { scan ->
+            scan.tableName(tableName)
+            scan.limit(1)
+        }.items()
+
+        if (items.isEmpty())
+            return 1
+
+        return items[0].toTask().id + 1
+    }
+```
+
+There isn't much to do, just check if the response from DynamoDB is empty and return 1 for it. 
+
+All tests are passing, everything for the repository is implemented, the only thing missing is a real connecting to the DynamoDB client. 
