@@ -677,7 +677,7 @@ Scan is the right option for the `all()` method, and the test can be approached 
 
         val tasks = dynamoDbTaskRepository.all()
 
-        assertEquals(tasks, listOf(task1, task2))
+        assertEquals(listOf(task2, task1), tasks)
     }
 ```
 
@@ -714,7 +714,7 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
     }
     ...
     private fun MutableMap<String, AttributeValue>.toTask() =
-        Task(this["id"]!!.n().toInt(), this["description"]!!.s() )
+        Task(this["task_id"]!!.n().toInt(), this["description"]!!.s() )
 }
 
 ```
@@ -756,7 +756,7 @@ class DynamoDbTaskRepositoryShould {
 
         val tasks = dynamoDbTaskRepository.all()
 
-        assertEquals(tasks, listOf(task1, task2))
+        assertEquals(listOf(task2, task1), tasks)
     }
 }
 ```
@@ -791,3 +791,5 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
+    It's important to mention here, `Scan` will return the items in a descending order. So if the order is something important for you, a sorting step will have to take place after retrieving the items for the database. In case of a `Query` instead of a `Scan` the parameter `ScanIndexForward` can be set `true` and DynamoDB will return the items in a ascending order.
+ 
