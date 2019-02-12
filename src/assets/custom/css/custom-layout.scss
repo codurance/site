@@ -76,7 +76,7 @@ $orange-colour: #e67e22;
     padding-bottom: 20px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    
+
     &:after {   /* 0 0 2 1 */
       bottom: 0;
       left: 50%;
@@ -144,7 +144,7 @@ $orange-colour: #e67e22;
     &-tag-margin {   /* 0 0 1 0 */
       margin-right: 10px;
     }
-    
+
     & h2 {
       color: #000 !important;
       font-size: 21px;
@@ -267,7 +267,7 @@ $orange-colour: #e67e22;
   .quote {
     font-size: 14px;
   }
-  
+
   .curly-quotes:before, .curly-quotes:after {
     font-family: Georgia, serif;
     display: inline-block;
@@ -277,13 +277,13 @@ $orange-colour: #e67e22;
     font-size: 50px;
     opacity: .2;
   }
-  
+
   .curly-quotes:before {
     content: '\201C';
     margin-right: 4px;
     margin-left: 0px;
   }
-  
+
   .curly-quotes:after {
     content: '\201D';
     margin-left: 4px;
@@ -310,7 +310,7 @@ $orange-colour: #e67e22;
 .testimonial-picture {
   height: 275px;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 
   @media (max-width: 767px) {
     height: 160px;
@@ -394,11 +394,7 @@ $orange-colour: #e67e22;
 
   /* Expert Advice */
   &-expert-advice {
-    background-color: $codurance-green-dark-high;
-
-    &__card {
-      background-color: $codurance-green; 
-    }
+    background-color: $codurance-green;
   }
 
   /* Two Col Content */
@@ -483,7 +479,7 @@ $orange-colour: #e67e22;
       margin: 20px 0px;
     }
   }
-  
+
   &-section { /* 0 0 1 0 */
     // padding-bottom: 40px;
 
@@ -614,7 +610,7 @@ i.no-border {   /* 0 0 1 1 */
 
 /* Sponsoring section */
 
-.breadcrumbs-v3 {   
+.breadcrumbs-v3 {
   &.ourpeople { /* 0 0 2 0 */
     background: url("{{ site.baseurl }}/assets/custom/img/careers/ourpeople.jpg") no-repeat;
     background-size: cover;
@@ -638,7 +634,7 @@ i.no-border {   /* 0 0 1 1 */
     background-size: cover;
     background-position: center center;
   }
-  
+
   &.casestudy::after{ /* 0 0 2 0 */
     background-color: white;
     background-size: cover;
@@ -797,7 +793,7 @@ i.no-border {   /* 0 0 1 1 */
         color: black;
       }
     }
-    
+
     &-container{
       text-align: center;
     }
@@ -914,14 +910,14 @@ i.no-border {   /* 0 0 1 1 */
 }
 
 blockquote.no-left-border {
-  border-left-width: 0px; 
+  border-left-width: 0px;
 }
 
 
 @media (min-width: 768px) {
   .casestudy-header-path {
     padding-right: 20px;
-    } 
+    }
 }
 
 /*  slick slides equalize height -----
@@ -950,7 +946,7 @@ blockquote.no-left-border {
   z-index: 999;
   width: 100%;
 
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: #d5e6ed;
   font-size: 1.2rem;
   opacity: 1;
