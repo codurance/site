@@ -12,7 +12,7 @@ image:
       href: https://www.flickr.com/photos/btschanz/13793872333/
 tags:
 - FSharp
-- VSCode
+- vscode
 - Ionide
 - Tutorial
 
