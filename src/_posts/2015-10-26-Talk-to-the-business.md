@@ -11,7 +11,7 @@ image:
     src: /assets/custom/img/blog/DDD_SkillsMatter.jpg
 tags:
 - DDD
-- Learning
+- learning
 - Ubiquitous-language
 - Bounded-context
 ---
