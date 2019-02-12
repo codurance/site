@@ -77,7 +77,7 @@ My favorite session was the last one: swapping stations. Source code is not dele
 
 - Located mutability
 - Separation of Concerns (SoC)
-- Design
+- design
 - Naming
 - Short methods
 - Simplicity

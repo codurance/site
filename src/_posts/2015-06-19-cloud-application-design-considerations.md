@@ -12,7 +12,7 @@ image:
 
 tags:
 - Cloud
-- Design
+- design
 
 ---
 # Cloud Application Design Considerations
