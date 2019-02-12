@@ -13,7 +13,7 @@ image:
         text: Baton_long by Alain Delmas
         href: https://commons.wikimedia.org/wiki/File:Baton_long.jpg
 tags:
-- Kata
+- kata
 - TDD
 - iOS
 - Objective-C
