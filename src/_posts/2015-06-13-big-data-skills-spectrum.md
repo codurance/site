@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/big-data-spectrum-main.jpg
 tags:
 - Big-Data
-- Agile
+- agile
 - Team
 ---
 
