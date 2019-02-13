@@ -8,7 +8,7 @@ description: Values that we, as a company, have reached.
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
-- Codurance
+- codurance
 ---
 One of the great things of Codurance are our evening catchups. For a software consultancy, it is a great opportunity to socialize and learn with colleagues, who are usually working at separate clients. During those catchups we have lightning talk sessions, bbq (in the  summer), and round tables.
 

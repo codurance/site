@@ -11,7 +11,7 @@ image:
         href: http://www.freepik.com
 tags:
 - Continuous Deployment
-- Docker
+- docker
 - TeamCity
 --- 
 

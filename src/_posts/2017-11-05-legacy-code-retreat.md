@@ -10,7 +10,7 @@ image:
    src: /assets/custom/img/blog/2017-11-05-legacy-coderetreat/2017-10-27-full-office-at-coderetreat.jpg
 abstract: We all have something to share and learn from each other.
 tags:
-- personal-growth
+- personal growth
 - coderetreat
 - legacy-code
 - teamwork

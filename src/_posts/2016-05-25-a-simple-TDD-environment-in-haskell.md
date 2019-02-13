@@ -7,7 +7,7 @@ author: Liam Griffin
 image:
     src: /assets/custom/img/blog/2016-05-25-haskell.svg
 tags:
-- tdd
+- TDD
 - haskell
 ---
 

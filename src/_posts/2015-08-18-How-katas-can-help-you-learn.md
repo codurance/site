@@ -13,11 +13,11 @@ image:
         text: Baton_long by Alain Delmas
         href: https://commons.wikimedia.org/wiki/File:Baton_long.jpg
 tags:
-- Kata
+- kata
 - TDD
 - iOS
 - Objective-C
-- Learning
+- learning
 ---
 In the last couple of weeks I have spent my time doing katas to improve my Objective-C. As you may remember, I had an issue, [that you can revisit here](http://wp.me/p4i8Xl-7h).
 

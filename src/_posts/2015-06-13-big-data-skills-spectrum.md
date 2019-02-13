@@ -7,9 +7,9 @@ author: Mashooq Badar
 image:
     src: /assets/custom/img/blog/big-data-spectrum-main.jpg
 tags:
-- Big-Data
-- Agile
-- Team
+- big data
+- agile
+- team
 ---
 
 Big Data has been a hype for many years. I’ve seen a few “Big Data” projects start in the past with a lot of fanfare and promise.The promise has always been that “we will start getting a holistic picture of our departmental silos and gain numerous insights from our data that will help us get ahead of our competitors”. The promise was rarely, if ever, fulfilled and the “Big Data” team slowly faded into the rest of the melting pot that we call the “IT department” in most large enterprises.    
