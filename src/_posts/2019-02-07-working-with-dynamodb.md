@@ -34,7 +34,7 @@ Commands:
   delete  Delete a task
 ```
 
-It's a very simplistic application and everything is saved to a json file. Recently I thought that having everything synced between my personal and work laptops would be a great idea. 
+It's a very simplistic application and everything is saved to a JSON file. Recently I thought that having everything synced between my personal and work laptops would be a great idea. 
 
 Using a relational database for that would be very annoying. I don't want to deal with a schema right now and I don't want to be stuck with my past decisions. Since the application is already saving a JSON file, DynamoDB is a good option (and if I chose an RDBMS, I could not write about DynamoDB).
 
@@ -42,17 +42,17 @@ Using a relational database for that would be very annoying. I don't want to dea
 
 We need access to our application to read and write. Is good pratice to have a user for each application, so we will create one and assign a role to it.
 
-When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case, we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
+When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
 
   ![Create user screen](/assets/custom/img/blog/2019-02-13-create-user.png)
 
 > Add command line command to create a table. 
 
-Going forward we have the roles that will determine the kind of access that our user will have. The application is Reading and Writing into a DynamoDB table, so we don't want to give access to any other application, so the `AmazonDynamoDBFullAccess` you will have access to all tables and features. If you don't want that, is possible to create a custom policy just to access the desired resource. 
+Going forward we have to deterine the level of access our user will need and choose appropriate roles. The application is Reading and Writing from a single DynamoDB table, the `AmazonDynamoDBFullAccess` you will grant access to all tables and features. If you need to be more restrictive, it is possible to create a custom policy just to grant access the desired resource. 
 
 ![Add role to user](/assets/custom/img/blog/2019-02-13-add-role.png)
 
-After the user is created we will be provided with an `Access Key ID` and a `Secret Access Key`, you need to keep those two keys in a safe place because you will need to use them to connect to DynamoDB, and you can't get another pair (It's possible to generate a new pair to the user). 
+After the user is created we will be provided with an `Access Key ID` and a `Secret Access Key`, you need to keep those two keys in a safe place because you will need to use them to connect to DynamoDB. If something happens to the key pair you will have to create a new key pair.
 
 In case you don't have the `aws` cli installed and configured you can follow these steps:
 - [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
@@ -60,19 +60,19 @@ In case you don't have the `aws` cli installed and configured you can follow the
     
 Now we have everything set up, we can move forward and start the work at our application. 
 
-> Reminder: Always give the least access possible to a user, if your access keys leak you will have less trouble to recovery.
+> Reminder: Always give the [least previlege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) possible to a user, if your access keys leak you will have less trouble to recovery.
 
 ## Part 2 - Rolling with the changes
 
-Is possible to do those changes in a TDD way writing integration tests for all the methods that are going to be needed. The only question is:
+Is possible to do those changes in a test-driven way by writing integration tests for all the methods that are going to be needed. The only question is:
 
     How we are going to test our changes?
 
-Gladly, Amazon provides a local version of DynamoDB that can be used with docker, so I think we should use it.
+Fortunately, Amazon provides a local version of DynamoDB that can be used with docker, so I think we should use it.
 
 #### 2.0 - Setting up DynamoDB docker container
 
-We can start creating a `docker-compose.yml` and mapping the ports, you don't have to make any other change since the default configuration is what we want for testing, you can start the db using `docker-compose up`.
+We can start creating a `docker-compose.yml` and mapping the ports, no other changes are required since the default configuration is what we want for testing. You can start the db using `docker-compose up`.
 
 ```yml
 version: '3.1'
@@ -115,7 +115,7 @@ implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 
 ### 2.1 - The First Integration Test
 
-Now we can finally start to write some code, we already have a repository and we want to be able to switch between implementations, so let's extract an interface from `LocalFileTaskRepository` with the method `save`. 
+Now we can finally start to write some code, we already have a repository and we want to be able to switch between implementations. So let's extract an interface from `LocalFileTaskRepository` with the method `save`. 
 
 First, we extract an `interface` from our repository with the method `save`. 
 
@@ -190,9 +190,9 @@ builder.provisionedThroughput { provisionedThroughput ->
 }
 ```
 
-This part is seeting the throughput for the table, which is the ability to read and write things to the db. We are setting the read and write throughput to 5, but what 5 means exactly? How the throughput is calculated? 
+This part is seeting the throughput for the table, which is the ability to read and write things to the db. We are setting the read and write throughput to 5, but 5 what exactly? How the throughput is calculated? 
 
-The throughput is measured in `units`, each `unit` might have different values depending in which kind of operation you are doing. For reads, each `unit` is 4Kb/s for consistently strong read, and 8Kb/s for eventually consistent. While writing things get a bit easier, 1 `unit` is 1Kb/s and you don't have any difference between strong or eventual consistency. 
+The throughput is measured in `units`, each `unit` might have different values depending on which kind of operation you are doing. For reads, each `unit` is 4Kb/s for consistently strong read, and 8Kb/s for eventually consistent. Writes are a bit easier, 1 `unit` is 1Kb/s and you don't have any difference between strong or eventual consistency. 
 
 In this case, 5 was chosen since is the default value that Amazon gives to you in the free tier.  
 
@@ -214,9 +214,9 @@ builder.attributeDefinitions(
 )
 ```
 
-This sets the primary key to be named `task_id` and to have a `Partition Key` only by defining the `keyType` to `HASH`, then we set the type of our key, in this case, is an `integer` so we set as `ScalarAttributeType.N`. You can also set has a `string` or `binary`.
+This sets the Primary Key to be named `task_id` and to have a `Partition Key` only by defining the `keyType` to `HASH`, then we set the type of our key, in this case, is an `integer` so we set as `ScalarAttributeType.N`. You can also set has a `string` or `binary`.
 
-Now everything is ready we can start moving to write our assertion. We want the repository to save a task in the database, so we can query for the object that we just saved to see if he is really there. 
+Now everything is ready we can start writting our assertion. We want the repository to save a task in the database, so we can query for the object that we just saved to see if it is really there. 
 
 ```kotlin
 
@@ -240,7 +240,7 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-The sdk provides the method `getItem` to query items specific records from the database, we have to build a `GetItemRequest` passing the `tableName` and the `key`. 
+The sdk provides the method `getItem` to query specific items from the database, we have to build a `GetItemRequest` passing the `tableName` and the `key`. 
 
 The `key` is a map with the name of your Primary Key and the value that you want to query. The return of `getItem` is a `GetItemResponse` that have only two methods `item` and `consumedCapacity`. In this case we get the `item` which is `Map<String, Attribute>` where we can map to our Task object. Building the `AttributeValue` isn't very complex but the naming behind the methods isn't the best, so you can look at the [docs](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) to know what they do. Finally, we compare the task from the database with our task. 
 
@@ -750,7 +750,7 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the other change needed is to delete the table before each test. Recreating the table is easy since there is no way to delete all the records the best way is to delete the table and create a new one. This is something that the repository is already doing, the changes that were done to have everything set is: 
+Now with `DynamoDBHelper` and `DynamoDbTaskRepository` extracted as fields, the other change needed is to delete the table before each test. Recreating the table is easy since there is no way to delete all the items the best way is to delete the table and create a new one. This is something that the repository is already doing, the changes that were done to have everything set is: 
 
 Make the `setupTable` public available:
 
@@ -842,8 +842,8 @@ This is the easiest operation to do, only the `tableName` and the `key` need to 
 
 ## 5 - The final countdown (or counter)
 
-The last method to be implemented is `nextId`, this words as the primary key generator. The last item has to be retrieved and then we increment 1 to the item id. 
-In this case, a `Scan` limited to one record would have the desired effect since the `Scan` is in descending order. 
+The last method to be implemented is `nextId`, this words as the Primary Key generator. The last item has to be retrieved and then we increment 1 to the item id. 
+In this case, a `Scan` limited to one item would have the desired effect since the `Scan` is in descending order. 
 
 The first test can start on a happy path where there's already an item in the database: 
 
