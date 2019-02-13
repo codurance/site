@@ -19,6 +19,11 @@ I’ve just reached the end of Codurance’s utterly fantastic [Apprenticeship P
 
 On that note, here’s a collection of thoughts about how to get the most out of this amazing opportunity.
 
+<center>
+<img src="{{site.baseurl}}/assets/custom/img/blog/xkcd-pointers.png" alt=“pointers-comic” class="img img-fluid" style="height: 50%; width: 50%;"/>
+</center>
+<br/>
+
 ###  Start Somewhere
 With so many world-class developers packed into one office, it’s possible (especially for a junior new starter) to be a bit paralysed by their enormous expertise. When I arrived, I would try to get everything right first time and only ask for code review on polished, perfect work.
 
