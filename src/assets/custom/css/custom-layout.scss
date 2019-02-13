@@ -370,23 +370,11 @@ $orange-colour: #e67e22;
 /* Services */
 .services {
 
-  /* Expert Advice Image */
-  &-expert-advice-image {
-    object-fit: none;
-    object-position: -77px -180px;
-    width: 100%;
-    max-height: 330px;
-
-    /* md */
-    @media (min-width: 992px) {
-      max-height: 100%;
-    }
-  }
-
+  
   /* Hero */
   &-hero {
     background-color: $codurance-green;
-
+    
     &-title, &-sub-title {
       color: #fff;
     }
@@ -395,6 +383,24 @@ $orange-colour: #e67e22;
   /* Expert Advice */
   &-expert-advice {
     background-color: $codurance-green;
+
+    &-image {
+      object-fit: none;
+      object-position: -77px -180px;
+      width: 100%;
+      max-height: 330px;
+  
+      /* md */
+      @media (min-width: 992px) {
+        max-height: 100%;
+      }
+    }
+  }
+
+  /* Effective Delivery */
+  &-effective-delivery {
+    background-color: $codurance-green; 
+    color: white;
   }
 
   /* Two Col Content */
