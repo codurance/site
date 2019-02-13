@@ -9,7 +9,7 @@ image:
   src: /assets/custom/img/blog/2017-03-03-discovering-Codurance-during-my-first-week.jpg
 tags:
 - apprenticeship
-- life-at-codurance
+- life at codurance
 
 ---
 ## Respect

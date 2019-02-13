@@ -11,7 +11,7 @@ canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bank-kata-in-haskell-dealing-with-state-3364c13b994f
 tags:
-    - functional-programming
+    - functional programming
     - haskell
 abstract: How to work with state in functional programming when you can't hide it
 alias: [/2019/02/11/bank-kata-in-haskell-state]

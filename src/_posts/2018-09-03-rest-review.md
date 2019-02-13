@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
 - REST
-- Architecture
+- architecture
 ---
 
 There are two events that have happened recently close to each other. The first one was a decision to actually learn GraphQL. I have been thinking about it for a while, but now is time to actually put the effort on it. The second one was a talk with my colleague [Luciano](https://codurance.com/publications/author/luciano-palma/) in which I incorrectly made a remark about resources on REST. Because of both (for the former as I want to compare, for the latter to assert my knowledge), I decided to re-read both the [Fielding PhD dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and the book [REST in Practice](http://restinpractice.com/book/) by Robinson, Webber and Parastatidis.

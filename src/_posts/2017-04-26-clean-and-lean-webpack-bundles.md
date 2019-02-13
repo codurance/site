@@ -9,7 +9,7 @@ image:
   src: /assets/custom/img/blog/2017-04-26-webpack-bundles/webpack_visualiser.png
 tags:
 - Webpack
-- Javascript
+- javascript
 - Dependency management
 - Clean code
 

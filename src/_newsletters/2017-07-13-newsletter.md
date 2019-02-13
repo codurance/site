@@ -9,7 +9,7 @@ image:
   src: /assets/custom/img/newsletter/newsletter-default.png
 tags:
 - software craftsmanship
-- tdd
+- TDD
 - testing 
 - conference
 ---

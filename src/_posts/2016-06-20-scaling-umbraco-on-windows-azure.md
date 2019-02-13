@@ -14,7 +14,7 @@ tags:
 - windows-azure 
 - cms
 - umbraco
-- open-source
+- open source
 - website-solution
 ---
 
