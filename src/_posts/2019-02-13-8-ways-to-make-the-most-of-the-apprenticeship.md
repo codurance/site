@@ -20,7 +20,7 @@ I’ve just reached the end of Codurance’s utterly fantastic [Apprenticeship P
 On that note, here’s a collection of thoughts about how to get the most out of this amazing opportunity.
 
 <center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/xkcd-pointers.png" alt=“pointers-comic” class="img img-fluid" style="height: 25%; width: 25%;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/xkcd-pointers.png" alt=“pointers-comic” class="img img-fluid" style="width: 15em;"/>
 </center>
 <br/>
 
