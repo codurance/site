@@ -953,3 +953,10 @@ blockquote.no-left-border {
   opacity: 0;
   display: block!important;
 }
+
+
+/* Override for hljs styles
+----------------------------------*/
+.hljs {
+  background-color: #f8f9fa
+}
