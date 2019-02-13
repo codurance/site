@@ -384,7 +384,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-If all tests are passing, and should(I think), then it's time to move to the next step.
+If all tests are passing, and they should be (I think), then it's time to move to the next step.
 
 #### 2.2.1 Creating the table
 
