@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2019-02-13-working-dynamodb.png
     thumbnail: /assets/custom/img/blog/2019-02-13-working-dynamodb-thumbnail.png
     alt: Console application printing to do list
-abstract: In this post we are going to migrate an cli application from local storage to DynamoDB
+abstract: In this post we are going to migrate an CLI application from local storage to DynamoDB
 tags: 
 - dynamodb 
 - aws
@@ -17,7 +17,7 @@ tags:
 
 ## Part 0 - The application. 
 
-We have this application called **Tasqui** that can be found in [THIS](https://github.com/andre2w/tasqui) repository. It is another todo list for the command line, I know, very creative. 
+We have this application called **Tasqui** that can be found in [THIS](https://github.com/andre2w/tasqui) repository. It is another todo list for the command line. I know, very creative. 
 
 Right now this application has 3 main actions `add`, `tasks`, `remove`. 
 
@@ -36,11 +36,11 @@ Commands:
 
 It's a very simplistic application and everything is saved to a json file. Recently I thought that having everything synced between my personal and work laptops would be a great idea. 
 
-Getting a relational database for that would be very annoying, I don't want to deal with a schema right now also I don't want to be stuck with my past decisions, and the application is already saving a json file, for this case DynamoDB is a good option (and if we chose an rdbms I could not write about Dynamo). 
+Using a relational database for that would be very annoying. I don't want to deal with a schema right now and I don't want to be stuck with my past decisions. Since the application is already saving a JSON file, DynamoDB is a good option (and if I chose an RDBMS, I could not write about DynamoDB).
 
 ## Part 1 - Getting access to DynamoDB and the `aws` CLI
 
-We need access to our application to read and write. Is good pratice to have a user for each application, so we will create one and assign a role to him.
+We need access to our application to read and write. Is good pratice to have a user for each application, so we will create one and assign a role to it.
 
 When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case, we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
 
@@ -882,7 +882,7 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
     }
 ```
 
-It's a `Scan` operation like the one in `all()` but with `scan.attributesToGet("task_id")` so the response will only contain the `task_id` and will make smaller in general. Then that result is converted to the biggest integer. Kotlin has the elvis operator `?:` that helps to handle `null` values, so if there is no items returned the value will be zero. To cover that case we add a test without inserting any task in the arrange part: 
+It's a `Scan` operation like the one in `all()` but with `scan.attributesToGet("task_id")` so the response will only contain the `task_id` and will be smaller in general. Then that result is converted to the biggest integer. Kotlin has the elvis operator `?:` that helps to handle `null` values, so if there is no items returned the value will be zero. To cover that case we add a test without inserting any task in the arrange part: 
 
 ```kotlin
 class DynamoDbTaskRepositoryShould {
@@ -921,8 +921,8 @@ class Runner {
 }
 ```
 
-The only problem is that when we try to create a new repository a `DynamoDbClient` need to be injected. We don't have any production code for that, so we have to create a new one. 
-There's already a connecting being created in the helper, we can use the repository: 
+The only problem is that when we try to create a new repository a `DynamoDbClient` need to be injected. We don't have any production code for that, so we have to create a some. 
+There's already a connection being created in the helper, we can use the repository: 
 
 ```kotlin
 class DynamoDBConnection {
@@ -951,7 +951,7 @@ class Runner {
 }
 ```
 
-And change the commands to use the `TaskRepository` interface instead the implementations. 
+And change the commands to use the `TaskRepository` interface instead of the implementations. 
 
 ```kotlin
 class Tasqui : CliktCommand() {
@@ -988,7 +988,7 @@ class Delete(private val taskRepository: TaskRepository) : CliktCommand("Delete 
 ```
 
 This is a very simplistic way of doing the connection, it will get the `default` profile credentials from your `.aws/credentials` file in the home folder.
-Amazon provide the `ProfileCredentialsProvider` if you want a different profile. You can see more about other ways of authenticate [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html).
+Amazon provide the `ProfileCredentialsProvider` if you want a different profile. You can see more about other ways of authenticating [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html).
 
 ## Packging our application
 
