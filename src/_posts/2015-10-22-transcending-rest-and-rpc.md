@@ -7,7 +7,7 @@ author: Felipe Fernández
 image:
     src: /assets/custom/img/blog/falcor.jpg
 tags:
-- rest
+- REST
 - rpc
 - microservices
 

@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/2014-12-14-quality-cannot-be-measured.png
 tags:
 - craftsmanship
-- tdd
+- TDD
 - test-driven-development
 - quality
 - metrics

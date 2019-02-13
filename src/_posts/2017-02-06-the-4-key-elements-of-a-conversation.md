@@ -8,7 +8,7 @@ author: Giulia Mantuano
 image:
   src: /assets/custom/img/blog/2017-02-06-conversational-interface-design-fundamentals.jpg
 tags:
-- UX
+- ux
 - Chatbot
 - Conversation Design
 - Conversational Interfaces

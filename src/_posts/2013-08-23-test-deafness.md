@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/test-deafness.jpg
 tags:
 - craftsmanship
-- tdd
+- TDD
 ---
 
 A few months ago I was talking to a musician friend of mine. He is also

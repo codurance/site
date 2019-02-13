@@ -9,7 +9,7 @@ date: 2018-03-14 10:00:00
 image:
     src: /assets/custom/img/blog/socket.png
 tags:
-    - software-design 
+    - software design 
 abstract: Interfaces with single implementations are often not necessary! 
 ---
 

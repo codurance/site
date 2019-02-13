@@ -13,7 +13,7 @@ tags:
 - mouseless
 - productivity
 - shortcuts
-- visual-studio
+- Visual-Studio
 ---
 
 To be honest, I used to be quite a power mouse user. Looking back and trying to figure out why I got addicted, it probably happened when Microsoft released Word 6.0 with its twenty-some toolbars with thirty-some buttons in each toolbar. I didn't remember many shortcuts, except ```ctrl+c```, ```ctrl+v```, and ```ctrl+s```, which I did learn and instantly became a full-stack Word guru in the eyes of toolbar-only users.

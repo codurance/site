@@ -11,7 +11,7 @@ tags:
 - Ubiquitous Language
 - Bounded Context
 - Domain Driven Design
-- Communication
+- communication
 
 ---
 

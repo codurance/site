@@ -8,7 +8,7 @@ image:
    src: /assets/custom/img/blog/2017-12-07-recursion.jpg
 tags:
 - functional programming
-- Scala
+- scala
 - recursion
 ---
 

@@ -9,7 +9,7 @@ wordpress_id: 151
 categories:
 - development
 tags:
-- tdd
+- TDD
 image:
     src: http://mashb.files.wordpress.com/2011/10/complex.gif
 ---
