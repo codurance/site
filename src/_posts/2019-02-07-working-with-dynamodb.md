@@ -3,12 +3,12 @@ author: Andre Torres
 layout: post
 asset-type: post
 title: "Working with the DynamoDB"
-date: 2019-02-07 00:00:00
+date: 2019-02-13 00:00:00
 description: Migrating a ToDo app to DynamoDB
 image: 
-    src: /assets/custom/img/blog/2019-01-15-aws-partnership.jpg
-    thumbnail: /assets/custom/img/blog/2019-01-15-aws-partnership-thumbnail.png
-    alt: change this later
+    src: /assets/custom/img/blog/2019-02-13-working-dynamodb.png
+    thumbnail: /assets/custom/img/blog/2019-02-13-working-dynamodb-thumbnail.png
+    alt: Console application printing to do list
 abstract: In this post we are going to migrate an cli application from local storage to DynamoDB
 tags: 
 - dynamodb 
@@ -17,7 +17,7 @@ tags:
 
 ## Part 0 - The application. 
 
-We have this application called `Tasqui` which is another todo list for the command line, I know, very creative. 
+We have this application called **Tasqui** that can be found in [THIS](https://github.com/andre2w/tasqui) repository. It is another todo list for the command line, I know, very creative. 
 
 Right now this application has 3 main actions `add`, `tasks`, `remove`. 
 
@@ -988,4 +988,8 @@ class Delete(private val taskRepository: TaskRepository) : CliktCommand("Delete 
 ```
 
 This is a very simplistic way of doing the connection, it will get the `default` profile credentials from your `.aws/credentials` file in the home folder.
-Amazon provide the `ProfileCredentialsProvider` if you want a different profile. You can see more about other ways of authenticate [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html)
+Amazon provide the `ProfileCredentialsProvider` if you want a different profile. You can see more about other ways of authenticate [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html).
+
+## Packging our application
+
+After doing all the changes you really want to use that as an application, you can package using gradle and the command `gradle assembleDist` will generate a `zip` and a `tar` inside the `build/distributions` folder. You can use the `tasqui` inside that folder without having to call `java -jar` or passing any extra arguments besides the ones for the application.
