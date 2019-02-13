@@ -8,9 +8,9 @@ author: Francesco Gigli
 image:
     src: /assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/jenkins.jpg
 tags:
-    - continuous-integration
-    - continuous-deployment
-    - jenkins
+    - Continuous Integration
+    - Continuous Deployment
+    - Jenkins
     - github
     - docker
 categories:
