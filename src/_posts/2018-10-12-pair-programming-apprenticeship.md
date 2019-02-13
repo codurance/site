@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2018-10-12-pair-programming/coaching-coders-coding-7374.jpg
 tags: 
 - software craftsmanship
-- Pair Programming
+- pair-programming
 - apprenticeship 
 - TDD
 ---
