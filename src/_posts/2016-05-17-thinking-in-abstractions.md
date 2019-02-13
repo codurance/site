@@ -10,7 +10,7 @@ category: software-craftsmanship
 alias: [/2016/06/17/thinking-in-abstractions/]
 tags:
 - design 
-- clean-code
+- Clean code
 - abstractions
 ---
 

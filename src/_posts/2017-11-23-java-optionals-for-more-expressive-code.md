@@ -11,7 +11,7 @@ abstract: Java 8 Optionals allow you to write your method signatures to indicate
 tags:
 - java
 - craftsmanship
-- cleancode
+- Clean code
 ---
 Any of us who has programmed in a language that permits null references will have experienced what happens when you try to dereference one. Whether it results in a segfault or a NullPointerException, it’s always a bug. Tony Hoare described it as his [billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare). The problem typically occurs when a function returns a null reference to a client that was unanticipated by the developer of the client. Say, in code like this:
 

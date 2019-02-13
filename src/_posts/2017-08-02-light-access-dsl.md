@@ -8,7 +8,7 @@ image:
    src: /assets/custom/img/blog/2017-08-02-light-access.png
 tags:
 - craftsmanship
-- cleancode
+- Clean code
 - jdbc
 - postgresql
 ---
