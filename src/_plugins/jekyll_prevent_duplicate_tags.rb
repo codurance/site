@@ -10,7 +10,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
   if duplicates.size > 0
     collisions = duplicates.map {|tag|
       slug = slugify(tag)
-      colliding_tags = tags.filter {|t| slugify(t) == slug}.join(", ")
+      colliding_tags = tags.select {|t| slugify(t) == slug}.join(", ")
       "#{colliding_tags} (slug: #{slug})"
     }.join("\n")
 
