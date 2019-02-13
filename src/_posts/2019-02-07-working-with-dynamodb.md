@@ -40,19 +40,17 @@ Getting a relational database for that would be very annoying, I don't want to d
 
 ## Part 1 - Getting access to DynamoDB and the `aws` CLI
 
-<!-- Maybe add a I'm in gif -->
-
 We need access to our application to read and write. Is good pratice to have a user for each application, so we will create one and assign a role to him.
 
 When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case, we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
 
-  ![Create user screen](./create-user.png)
-  
+  ![Create user screen](/assets/custom/img/blog/2019-02-13-create-user.png)
+
 > Add command line command to create a table. 
 
 Going forward we have the roles that will determine the kind of access that our user will have. The application is Reading and Writing into a DynamoDB table, so we don't want to give access to any other application, so the `AmazonDynamoDBFullAccess` you will have access to all tables and features. If you don't want that, is possible to create a custom policy just to access the desired resource. 
 
-![Add role to user](./add-role.png)
+![Add role to user](/assets/custom/img/blog/2019-02-13-add-role.png)
 
 After the user is created we will be provided with an `Access Key ID` and a `Secret Access Key`, you need to keep those two keys in a safe place because you will need to use them to connect to DynamoDB, and you can't get another pair (It's possible to generate a new pair to the user). 
 
@@ -66,53 +64,51 @@ Now we have everything set up, we can move forward and start the work at our app
 
 ## Part 2 - Rolling with the changes
 
-### 2.0 - Adding the dependencies. 
-We are making the changes in this application, but since we are not savages, we are going to do in a TDD fashion (the best kind of fashion). The first thing that we have to think of is: 
+Is possible to do those changes in a TDD way writing integration tests for all the methods that are going to be needed. The only question is:
 
     How we are going to test our changes?
 
 Gladly, Amazon provides a local version of DynamoDB that can be used with docker, so I think we should use it.
 
-<details>
-  <summary>Setting up DynamoDB docker container</summary>
+#### 2.0 - Setting up DynamoDB docker container
 
-We can start creating a `docker-compose.yml` and mapping the ports, you don't have to make any other change since the default configuration 
-is what we want for testing, you can start the db using `docker-compose up`.
-  ```yml
-  version: '3.1'
+We can start creating a `docker-compose.yml` and mapping the ports, you don't have to make any other change since the default configuration is what we want for testing, you can start the db using `docker-compose up`.
 
-  services:
+```yml
+version: '3.1'
 
-    dynamo:
-      image: amazon/dynamodb-local:1.11.475
-      ports:
-        - "8000:8000"
-  ```
+services:
 
-  The default configuration is:
-  ```shell
-  Port:	8000 # => Default port
-  InMemory:	true # => The database will be saved in memory, everytime your container stops you will lose all the data
-  DbPath:	null # => Path of the database file, can't be used with InMemory
-  SharedDb:	false # => Use the same database independent of region and credentials
-  shouldDelayTransientStatuses:	false # => It's a delay to simulate the database in a real situation
-  CorsParams:	* # => CORS configuration to give access to foreign resources
-  ```
+dynamo:
+    image: amazon/dynamodb-local:1.11.475
+    ports:
+    - "8000:8000"
+```
 
-  We can see if everything is working by executing in our command line: 
+The default configuration is:
 
-  ```shell
-  $ aws dynamodb list-tables --endpoint-url http://localhost:8000
-  {
+```shell
+Port:	8000 # => Default port
+InMemory:	true # => The database will be saved in memory, everytime your container stops you will lose all the data
+DbPath:	null # => Path of the database file, can't be used with InMemory
+SharedDb:	false # => Use the same database independent of region and credentials
+shouldDelayTransientStatuses:	false # => It's a delay to simulate the database in a real situation
+CorsParams:	* # => CORS configuration to give access to foreign resources
+```
+
+We can see if everything is working by executing in our command line: 
+
+```shell
+$ aws dynamodb list-tables --endpoint-url http://localhost:8000
+{
     "TableNames": []
-  }
-  ```
+}
+```
 
-  The `--endpoint-url http://localhost:8000` is very important, without this option the request will be redirected to the default endpoint.
-
-</details>
+The `--endpoint-url http://localhost:8000` is very important, without this option the request will be redirected to the default endpoint.
 
 With the container running we can start to think about how we are going to set up our tests for the feature. The first thing is to bring the DynamoDB sdk to our project: 
+
 ```
 implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 ```
@@ -122,6 +118,7 @@ implementation 'software.amazon.awssdk:dynamodb:2.4.0'
 Now we can finally start to write some code, we already have a repository and we want to be able to switch between implementations, so let's extract an interface from `LocalFileTaskRepository` with the method `save`. 
 
 First, we extract an `interface` from our repository with the method `save`. 
+
 ```kotlin
 interface TaskRepository {
     fun save(task: Task)
@@ -129,6 +126,7 @@ interface TaskRepository {
 ```
 
 Let's make a test for our repository. Starting our test we are going to need to connect to the database and create the table before doing any testing. 
+
 ```kotlin
 class DynamoDBTaskRepositoryShould {
 
@@ -199,6 +197,7 @@ The throughput is measured in `units`, each `unit` might have different values d
 In this case, 5 was chosen since is the default value that Amazon gives to you in the free tier.  
 
 Moving to our actual table, we have to set the Primary Key:
+
 ```kotlin
 builder.keySchema(
     KeySchemaElement.builder()
@@ -265,9 +264,6 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-<details>
-    <summary>DynamoDbTaskRepository implementation</summary>
-
 ```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
@@ -277,10 +273,10 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
 
 }
 ```
-</details>
 
 Run the tests, and see them failing for the right reason. 
-```
+
+```shell
 kotlin.NotImplementedError: An operation is not implemented: not implemented
 
 	at com.github.andre2w.tasqui.DynamoDbTaskRepository.save(DynamoDBTaskRepository.kt:8)
@@ -289,6 +285,7 @@ kotlin.NotImplementedError: An operation is not implemented: not implemented
 ```
 
 Now we are right to implement the production code. We have the `dynamoDBClient` being injected in the repository, so the next steps are:
+
 1. Creating an `item` to be inserted
 1. Insert the item using `putItem`
 
@@ -345,17 +342,15 @@ class DynamoDbTaskRepositoryShould {
         ...
         }
     }
-        
+}      
 ```
 
 ### 2.2 - Refactoring
 
-With the first testing passing, it's time to move to the next step, we need to refactor our code. To be honest, this will be more kotlin than DynamoDB, so I will try to make it short (you also can skip, isn't like I will know that you don't refactor your code, you monster).
+With the first testing passing, it's time to move to the next step, we need to refactor our code. The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead, a new helper class could be created. 
 
-The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead, a new helper class could be created. 
 
-<details>
-<summary>1. Introducing the `DynamoDBHelper` </summary>
+#### 2.2.0 Introducing the `DynamoDBHelper`
 
 The helper class that has all the methods that the tests are going to use incapsulated, so there is no need to worry with the implementation. 
 The first step is to create the class and make that generate the `DynamoDBHelper` class with `DynamoDbClient` as a property. 
@@ -389,11 +384,9 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-If all tests are passing, and should(I think), then it's time to move to the next step
-</details>
+If all tests are passing, and should(I think), then it's time to move to the next step.
 
-<details>
-<summary>2. Creating the table</summary>
+#### 2.2.1 Creating the table
 
 In this step, we have to move code from the test class to the initialization of the helper. Start by extracting all the code for the table (create/delete) into a method.
 
@@ -486,7 +479,8 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-The tests are passing, unlikely Brexit, everything is going fine in the code but having to set up the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
+<!-- Maybe remove, so we don't trigger anyone -->
+The tests are passing, everything is going fine in the code but having to set up the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
 
 ```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
@@ -497,6 +491,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     ...
 }
 ```
+
 ```kotlin
 class DynamoDbTaskRepositoryShould {
 
@@ -524,10 +519,9 @@ class DynamoDbTaskRepositoryShould {
 
 }
 ```
-</details>
 
-<details>
-<summary>3. Getting a Task from the DB</summary>
+
+#### 2.2.2 Getting a Task from the DB
 
 This part is very like the previous one where the method will be moved to the helper and the test will use the newly created method. 
 
@@ -577,6 +571,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
 Koltlin allows the creation of extension functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
 
 Start adding a `companion object` inside the Task class:
+
 ```kotlin
 data class Task(val id: Int, val description: String) {
     companion object
@@ -584,6 +579,7 @@ data class Task(val id: Int, val description: String) {
 ```
 
 and them insde the helper add the extension method: 
+
 ```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     ...
@@ -603,11 +599,8 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
         Task(item["task_id"]!!.n().toInt(), item["description"]!!.s())
 }
 ```
-</details>
 
-
-<details>
-<summary>4. Final changes</summary>
+#### 2.2.3 Final changes
 
 Now the test isn't cluttered with all the database code, the only thing missing is to remove the `dynamoDbClient` and extract the strings inside the helper. 
 
@@ -650,8 +643,6 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     ...
 ```
 
-</details>
-
 ## 3 - Retrieving data. 
 
 Moving forward with the changes, it's time to implement the retrieval of the data from Dynamo. In the first test, a query was implemented but to get all the data from the table a `scan` operation will be needed. 
@@ -682,6 +673,7 @@ Scan is the right option for the `all()` method, and the test can be approached 
 ```
 
 The setup is basically the same thing from the previous one but the Task must be persisted using the `DynamoDBHelper`. The code from the repository can be used here: 
+
 ```kotlin
     fun save(vararg tasks: Task) {
         tasks.forEach {
@@ -697,11 +689,9 @@ The setup is basically the same thing from the previous one but the Task must be
 
 > To make easier to insert multiple tasks `vararg` can be used, it translates to the spread operator in java like `Task ...tasks`. 
     
-
 Running the tests, everything is failing for the right reason, time to go for the production code. 
 
 ```kotlin
-
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
     override fun all(): List<Task> {
@@ -716,7 +706,6 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
     private fun MutableMap<String, AttributeValue>.toTask() =
         Task(this["task_id"]!!.n().toInt(), this["description"]!!.s() )
 }
-
 ```
 
 This should make the tests to pass without any problem.
@@ -795,9 +784,7 @@ class DynamoDbTaskRepositoryShould {
  
  ## 4 - Deleting our stuff
 
- There are moments that we are not into really doing something, and we don't want to be reminded that certain thing hasn't been done, that's just too much guilt tripping. That's why the `delete` method is very important. 
-
-As always, we start with a test inserting something to the database, deleting what we just inserted and checking if that isn't in the database. 
+To err is human, to delete is forgetting. It's time to implement the delete method. As always, we start with a test inserting something to the database, deleting what we just inserted and checking if that isn't in the database. 
 
 ```kotlin
 class DynamoDbTaskRepositoryShould {
@@ -859,6 +846,7 @@ The last method to be implemented is `nextId`, this words as the primary key gen
 In this case, a `Scan` limited to one record would have the desired effect since the `Scan` is in descending order. 
 
 The first test can start on a happy path where there's already an item in the database: 
+
 ```kotlin
 class DynamoDbTaskRepositoryShould {
     @Test
@@ -874,6 +862,7 @@ class DynamoDbTaskRepositoryShould {
 ```
 
 and the implementation would be:
+
 ```kotlin
 class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
 
