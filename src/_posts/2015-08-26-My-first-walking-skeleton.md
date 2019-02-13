@@ -14,7 +14,7 @@ tags:
 - TDD
 - Continuous Deployment
 - Continuous Integration
-- domain-driven-design
+- Domain Driven Design
 - Heroku
 - scala
 - SBT

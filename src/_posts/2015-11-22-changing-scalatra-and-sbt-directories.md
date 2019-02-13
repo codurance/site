@@ -11,7 +11,7 @@ tags:
 - scala
 - SBT
 - craftsmanship
-- domain-driven-design
+- Domain Driven Design
 --- 
 
 Conventions are not always good. I recently started a new internal web project

@@ -10,7 +10,7 @@ canonical:
 image:
     src: /assets/custom/img/blog/DDD_SkillsMatter.jpg
 tags:
-- DDD
+- Domain Driven Design
 - learning
 - Ubiquitous-language
 - Bounded-context
