@@ -463,15 +463,6 @@
   twitter: HJavixCS
   github: HJavixCS
 
-- id: simionb
-  name: Simion Iulian Belea
-  image: /assets/custom/img/team/simionb.jpg
-  role: Apprentice
-  fullDescription:
-   <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
-   <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
-  github: simion-iulian
-
 - id: alfredo
   name: Alfredo Fernández
   image: /assets/custom/img/team/alfredo_fernandez.jpg
