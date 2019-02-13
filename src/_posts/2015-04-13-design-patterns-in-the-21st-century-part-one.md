@@ -14,7 +14,7 @@ image:
         href: https://flic.kr/p/D2Dti
 tags:
 - design-patterns
-- functional-programming
+- functional programming
 - java
 ---
 
