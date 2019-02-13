@@ -28,9 +28,9 @@ It wasn't long before I realised that writing perfect code up-front is quite a c
 
 One of the great things about Agile is that it values incremental improvement over getting it right first time. For a beginner, this means that progress matters far more than the starting point.
 
-These days, I’m much more comfortable approaching a colleague with something rubbish, and asking them to tear it apart. Then I can learn from the feedback, rinse and repeat. The apprenticeship program makes this possible by design: there’s no consequence if you get something wrong, and lack of knowledge is never met with condescension or disdain. It’s just an opportunity for growth.
+These days, I’m much more comfortable approaching a colleague with something rubbish, and asking them to tear it apart. Then I can learn from the feedback, rinse and repeat. The apprenticeship program makes this possible by design: there’s no consequence if you get something wrong, and lack of knowledge is _never_ met with condescension or disdain. It’s just an opportunity for growth.
 
-(This strategy isn’t unique to coding, of course: it’s Paul Saffo’s [“strong opinion, weakly held”][saffo] in disguise.)
+(This strategy isn’t unique to coding, of course: it’s Paul Saffo’s [“Strong Opinions weakly held”][saffo] in disguise.)
 
 ### Ask for help
 Software houses often value figuring things out for oneself. There are positive reasons for this: writing custom software means doing something nobody has done before, so creativity and problem-solving persistence are very useful.
@@ -46,7 +46,7 @@ Of course, this is missing the point. As Pedro Santos points out in [Agile Techn
 
 I came to realise that value judgments - situations where there may be some vague heuristics, but no consistent right answer - are where software craftspeople thrive. If nearly everyone gets it wrong, and you get it slightly less wrong, you’re slightly closer to craftsmanship.
 
-The only way to get comfortable making value judgments is experience, experimentation and practice. There are never any guarantees, of course: experience just leads you to make decisions that are more likely to be right in the circumstances. 
+The only way to get comfortable making value judgments is experience, experimentation and practice. There are never any guarantees, of course: experience just leads you to make decisions that are _more likely_ to be right in the circumstances.
 
 ### Take enough time to code
 When learning new programming skills, the little-and-often approach beloved of musicians and language learners isn’t necessarily best. It’s personal, of course, but I realised that when coding, especially in a pair, I’d often not really hit my stride until 60-90 minutes in. When as a musician I could make a big difference to my technical skill even in a focused half-hour a day, that just didn’t seem possible with programming. 
@@ -73,7 +73,7 @@ It’s important to mitigate this by respecting the XP principle of sustainable 
 ### Remember it’s your company too
 Apprentices are very much a part of Codurance as a whole. They are encouraged to attend and speak at evening catchups, Open Space Days, and meetups. Their opinions on recruitment, sales, management and company culture are valued and encouraged, even if (especially if!) they are controversial. After all, Codurance’s value is its people.
 
-These meetups are just as non-judgmental as the program itself. So it’s a great opportunity to polish presentation skills. It might be scary at first, but then I wished I’d done it more often!
+Internal events are just as non-judgmental as the program itself. So it’s a great opportunity to polish presentation skills. It might be scary at first, but then I wished I’d done it more often!
 
 ### Enjoy it
 This one’s easy :-)
