@@ -15,8 +15,6 @@ tags:
     - software craftsmanship
     - life at codurance
 ---
-# 8 ways to make the most of the Apprenticeship
-
 I’ve just reached the end of Codurance’s utterly fantastic [Apprenticeship Program][apply]. Looking back on the last three months, I wondered: what advice might I give to colleagues lucky enough to be starting the program in the future? What would I do differently if I could turn back the clock to day one?
 
 On that note, here’s a collection of thoughts about how to get the most out of this amazing opportunity.
