@@ -90,7 +90,7 @@ Jenkins needs access to GitHub. To do that create a username & password credenti
 
 Having configured the credentials it is time to create a new Multibranch Pipeline.
 
-[image: pipeline creation]
+![Pipeline creation in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pipeline_creation.jpg)
 
 The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it. Adapt it to suite your needs.
 
