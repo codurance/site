@@ -463,15 +463,6 @@
   twitter: HJavixCS
   github: HJavixCS
 
-- id: simionb
-  name: Simion Iulian Belea
-  image: /assets/custom/img/team/simionb.jpg
-  role: Apprentice
-  fullDescription:
-   <p>Simion is an engineer who is on his way to become a software craftsman after an adventure with creative technology. He is really passionate about learning new things, one of them is how to write good code, as well as how software relates to designing things.</p>
-   <p>Outside work he goes on long walks and also enjoys reading. Once a year he likes to create something at the intersection of art and technology.</p>
-  github: simion-iulian
-
 - id: alfredo
   name: Alfredo Fernández
   image: /assets/custom/img/team/alfredo_fernandez.jpg
@@ -497,10 +488,10 @@
 - id: solange
   name: Solange U. Gasengayire
   image: /assets/custom/img/team/solange.png
-  role: Apprentice
+  role: Software Craftswoman
   fullDescription:
     <p>With a passion for lifelong learning, Solange is always seeking out opportunities to expand her knowledge across a wide variety of fields. She fell in love with software development in her university years, when she realised how computer science concepts could be applied and utilised to solve real world problems in so many other different industries, like education and healthcare particularly.</p>
-    <p>Although she has an extensive experience as a Java professional and team lead, her will to contribute to large-scale, well-crafted, open-source projects unearthed a strong desire for continuous betterment alongside the best Software Craftspeople and mentors. It is with a multicultural background, a creative drive and a commitment to learning that she joins Codurance as an apprentice.</p>
+    <p>Although she has an extensive experience as a Java professional and team lead, her will to contribute to large-scale, well-crafted, open-source projects unearthed a strong desire for continuous betterment alongside the best Software Craftspeople and mentors. It is with a multicultural background, a creative drive and a commitment to learning that she joins Codurance as a craftswoman.</p>
     <p>Outside of work, Solange is involved in initiatives that promote affordable education opportunities for all. She loves people, trees, coffee, books, music, travelling, and enjoys all kinds of sports activities.</p>
   twitter: sgasengayire
   github: SolangeUG
@@ -586,10 +577,10 @@
 - id: nick_white
   name: Nick White
   image: /assets/custom/img/team/nick_white.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Originally from a musical background, Nick began his career in software working on a large image-processing application in the film industry. It wasn't long before he discovered the huge benefits of incorporating software craftsmanship principles into his coding.</p>
-    <p>He's looking forward to honing his craft and learning from the very best as an apprentice at Codurance.</p>
+    <p>He's excited about honing his craft and working with the very best as a craftsman at Codurance.</p>
     <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
   github: nawhi
 
