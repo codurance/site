@@ -12,8 +12,8 @@ image:
 tags:
 - Walking-Skeleton
 - TDD
-- continuous-integration
 - Continuous Deployment
+- Continuous Integration
 - domain-driven-design
 - Heroku
 - scala
