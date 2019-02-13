@@ -7,7 +7,7 @@ author: Mashooq Badar
 image:
     src: /assets/custom/img/blog/big-data-spectrum-main.jpg
 tags:
-- Big-Data
+- big data
 - agile
 - team
 ---
