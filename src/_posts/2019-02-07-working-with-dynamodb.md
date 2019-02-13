@@ -2,14 +2,14 @@
 author: Andre Torres
 layout: post
 asset-type: post
-title: "Working with the DynamoDB sdk"
+title: "Working with the DynamoDB"
 date: 2019-02-07 00:00:00
 description: Migrating a ToDo app to DynamoDB
 image: 
     src: /assets/custom/img/blog/2019-01-15-aws-partnership.jpg
     thumbnail: /assets/custom/img/blog/2019-01-15-aws-partnership-thumbnail.png
     alt: change this later
-abstract: Let's see the first steps to work with DynamoDB with the awssdk
+abstract: In this post we are going to migrate an cli application from local storage to DynamoDB
 tags: 
 - dynamodb 
 - aws
@@ -871,14 +871,18 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
     override fun nextId(): Int {
         val items = dynamoDbClient.scan { scan ->
             scan.tableName(tableName)
-            scan.limit(1)
+            scan.attributesToGet("task_id")
         }.items()
 
-        return items[0].toTask().id + 1
+        val lastId = items
+            .map { it["task_id"]!!.n().toInt()  }
+            .max() ?: 0
+
+        return lastId + 1
     }
 ```
 
-It's a `Scan` operation like in the one in `all()` but with a `scan.limit(1)` added. This will make the scan just retrieve only one item, then that item is converted to a `Task` and added 1 to the id. This will work when the table returns an item, but for an empty table will crash. To cover that case we add a test without inserting any task in the arrange part: 
+It's a `Scan` operation like the one in `all()` but with `scan.attributesToGet("task_id")` so the response will only contain the `task_id` and will make smaller in general. Then that result is converted to the biggest integer. Kotlin has the elvis operator `?:` that helps to handle `null` values, so if there is no items returned the value will be zero. To cover that case we add a test without inserting any task in the arrange part: 
 
 ```kotlin
 class DynamoDbTaskRepositoryShould {
@@ -891,24 +895,97 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-```kotlin
-class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskRepository {
-
-    private val tableName = "tasqui"
-
-    override fun nextId(): Int {
-        val items = dynamoDbClient.scan { scan ->
-            scan.tableName(tableName)
-            scan.limit(1)
-        }.items()
-
-        if (items.isEmpty())
-            return 1
-
-        return items[0].toTask().id + 1
-    }
-```
-
 There isn't much to do, just check if the response from DynamoDB is empty and return 1 for it. 
 
 All tests are passing, everything for the repository is implemented, the only thing missing is a real connecting to the DynamoDB client. 
+
+## 6 - Papers Please!
+
+With all the methods of the repository implemented, its possible to change the application to use the `DynamoDBTaskRepository`. 
+
+```kotlin
+class Runner {
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val taskRepository = DynamoDbTaskRepository()
+            val console = Console()
+
+            Tasqui()
+                .subcommands(Add(taskRepository),Tasks(taskRepository, console), Delete(taskRepository))
+                .main(args)
+        }
+    }
+
+}
+```
+
+The only problem is that when we try to create a new repository a `DynamoDbClient` need to be injected. We don't have any production code for that, so we have to create a new one. 
+There's already a connecting being created in the helper, we can use the repository: 
+
+```kotlin
+class DynamoDBConnection {
+    companion object {
+        fun connect() : DynamoDbClient  {
+            return DynamoDbClient.builder()
+                .build() ?: throw IllegalStateException()
+        }
+    }
+}
+```
+
+```kotlin
+class Runner {
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val taskRepository = DynamoDbTaskRepository(DynamoDBConnection.connect())
+            val console = Console()
+
+            Tasqui()
+                .subcommands(Add(taskRepository),Tasks(taskRepository, console), Delete(taskRepository))
+                .main(args)
+        }
+    }
+}
+```
+
+And change the commands to use the `TaskRepository` interface instead the implementations. 
+
+```kotlin
+class Tasqui : CliktCommand() {
+    override fun run() = Unit
+}
+
+class Add(private val taskRepository: TaskRepository) : CliktCommand("Add new task") {
+    private val description by argument("description", "Task description")
+
+    override fun run() {
+        taskRepository.save(Task(taskRepository.nextId(), description))
+    }
+}
+
+class Tasks(private val taskRepository: TaskRepository, private val console: Console)
+    : CliktCommand("Prints all tasks") {
+
+    override fun run() {
+        val tasks = taskRepository.all()
+
+        tasks.map { "${it.id} - ${it.description}" }
+            .forEach(console::print)
+    }
+}
+
+class Delete(private val taskRepository: TaskRepository) : CliktCommand("Delete a task") {
+    private val taskId by argument(help = "Id of the task to be deleted").int()
+
+    override fun run() {
+         taskRepository.delete(taskId)
+    }
+}
+
+```
+
+This is a very simplistic way of doing the connection, it will get the `default` profile credentials from your `.aws/credentials` file in the home folder.
+Amazon provide the `ProfileCredentialsProvider` if you want a different profile. You can see more about other ways of authenticate [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html)
