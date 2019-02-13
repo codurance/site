@@ -14,7 +14,7 @@ tags:
 - apprenticeship 
 - learning
 - sharing
-- life-at-codurance
+- life at codurance
 
 ---
 I participated in consultancy projects a few years ago, but they were the typical ones. We would visit a company for a few hours over several days, they gave us the information they thought was useful for us, we asked questions and more details and then we created a plan to help them by:

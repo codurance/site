@@ -8,7 +8,7 @@ author: Robert Firek
 image:
   src: /assets/custom/img/blog/2017-09-04-life-at-codurance-robert-firek/microphone.jpg
 tags:
-- life-at-codurance 
+- life at codurance 
 - career 
 - software craftsmanship
 - apprenticeship
