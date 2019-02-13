@@ -13,7 +13,7 @@ tags:
     - learning
     - apprenticeship
     - software craftsmanship
-    - life-at-codurance
+    - life at codurance
 ---
 # 8 ways to make the most of the Apprenticeship
 
