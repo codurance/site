@@ -12,7 +12,7 @@ canonical:
     name: Halima's blog
     href: https://medium.com/@hkoundi/find-a-workplace-where-you-can-grow-16172a5ab957/
 tags:
-- personal-growth
+- personal growth
 - craftsmanship
 ---
 
