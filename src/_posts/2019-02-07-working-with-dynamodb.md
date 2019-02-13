@@ -242,7 +242,7 @@ class DynamoDbTaskRepositoryShould {
 
 The sdk provides the method `getItem` to query specific items from the database, we have to build a `GetItemRequest` passing the `tableName` and the `key`. 
 
-The `key` is a map with the name of your Primary Key and the value that you want to query. The return of `getItem` is a `GetItemResponse` that have only two methods `item` and `consumedCapacity`. In this case we get the `item` which is `Map<String, Attribute>` where we can map to our Task object. Building the `AttributeValue` isn't very complex but the naming behind the methods isn't the best, so you can look at the [docs](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) to know what they do. Finally, we compare the task from the database with our task. 
+The `key` is a map with the name of your Primary Key and the value that you want to query. The return of `getItem` is a `GetItemResponse` that has only two methods `item` and `consumedCapacity`. In this case we get the `item` which is `Map<String, Attribute>` where we can map to our Task object. Building the `AttributeValue` isn't very complex but the naming behind the methods isn't the best, so you can look at the [docs](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) to know what they do. Finally, we compare the task from the database with our task. 
 
 The only thing missing is our actual class and the call for the save method between the setup and the assert. 
 
@@ -284,7 +284,7 @@ kotlin.NotImplementedError: An operation is not implemented: not implemented
 ...
 ```
 
-Now we are right to implement the production code. We have the `dynamoDBClient` being injected in the repository, so the next steps are:
+Now we are ready to implement the production code. We have the `dynamoDBClient` being injected in the repository, so the next steps are:
 
 1. Creating an `item` to be inserted
 1. Insert the item using `putItem`
@@ -318,7 +318,7 @@ software.amazon.awssdk.services.dynamodb.model.ResourceInUseException: Cannot cr
 
 Wait, why? This is a tutorial, things are supposed to work out fine without errors, if I wanted errors I could have gone elsewhere. This error is happening because we created the table in the previous test, and every time we run the tests we need a new table, a table so fresh that will move to Bel-Air to live with his uncle. So this time we are doing a `docker-compose down` to erase our container and set up again with `docker-compose up -d`. Now our tests should be passing. 
 
-The test is passing but is relying on the fact that the table doesn't exist. This isn't something good to have, so this must be fixed by deleting the table before the tests start. This piece of code is added before the `createTable call` and run the test more than once with the same container (or just keep running the tests furiously to see them passing one after another). 
+The test is passing but is relying on the fact that the table doesn't exist. This isn't great, so must be fixed by deleting the table before the tests start. This piece of code is added before the `createTable call` and run the test more than once with the same container (or just keep running the tests furiously to see them passing one after another). 
 
 ```kotlin
 class DynamoDbTaskRepositoryShould {
@@ -347,12 +347,12 @@ class DynamoDbTaskRepositoryShould {
 
 ### 2.2 - Refactoring
 
-With the first testing passing, it's time to move to the next step, we need to refactor our code. The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead, a new helper class could be created. 
+With the first test passing, it's time to move to the next step, we need to refactor our code. The first thing noticeable is all the DynamoDB code inside the test, creating the connection, deleting and creating the table, retrieving the Task, all that stuff should not be inside the test, instead, a new helper class could be created. 
 
 
 #### 2.2.0 Introducing the `DynamoDBHelper`
 
-The helper class that has all the methods that the tests are going to use incapsulated, so there is no need to worry with the implementation. 
+The helper class that has all the methods that the tests are going to use encapsulated, so there is no need to worry with the implementation. 
 The first step is to create the class and make that generate the `DynamoDBHelper` class with `DynamoDbClient` as a property. 
 
 Add the `DynamoDBHelper` with the property, and create a static function that connects to the database and create a new instance of `DynamoDBHelper`, and back in the test class just change the old `dynamoDbClient` variable to use
@@ -523,7 +523,7 @@ class DynamoDbTaskRepositoryShould {
 
 #### 2.2.2 Getting a Task from the DB
 
-This part is very like the previous one where the method will be moved to the helper and the test will use the newly created method. 
+This part is like the previous one where the method will be moved to the helper and the test will use the newly created method. 
 
 ```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
@@ -568,7 +568,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-Koltlin allows the creation of extension functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
+Kotlin allows the creation of extension functions, so it's possible to change the `buildTask` method to be something more idiomatic like `Task.from(item)` while making the method only visible inside the helper.
 
 Start adding a `companion object` inside the Task class:
 
@@ -578,7 +578,7 @@ data class Task(val id: Int, val description: String) {
 }
 ```
 
-and them insde the helper add the extension method: 
+add them insde the helper add the extension method: 
 
 ```kotlin
 class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
@@ -649,7 +649,7 @@ Moving forward with the changes, it's time to implement the retrieval of the dat
 
 ### 3.0 To Query or to Scan? 
 
-- Query: A query searches the table based in the Primary Key, a sort key can be used to refine the results, and the results are always sorted by the sort key. All queries are eventually consistent(unless said otherwise) and always scanned forward.
+- Query: A query searches the table based on the Primary Key, a sort key can be used to refine the results, and the results are always sorted by the sort key. All queries are eventually consistent(unless said otherwise) and always scanned forward.
 
 - Scan: Examines every item in the table and return all data attributes. It's possible to use `ProjectionExpression` parameter to refine the scan. Since Scan dumps the entire table, then filter out the results, the operation will get slower if the table grows.
 
@@ -712,7 +712,7 @@ This should make the tests to pass without any problem.
 
 ### 3.1 Refactor
 
-Both tests are creating a new connecting to the database, we have to fix that to connect only once and to remove duplications of elements that will be used in the other tests. 
+Both tests are creating a new connection to the database, we have to fix that to connect only once and to remove duplications of elements that will be used in the other tests. 
 
 The helper is being created every test and with the helper, a new connection is being created, this is a good thing to be created only once and at the start of the tests, also the `DynamoDBTaskRepository` can be instantiated every new test by junit. 
 
