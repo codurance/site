@@ -154,7 +154,7 @@ title: Services
         <div class="col-lg-7 g-py-50 g-px-20 g-px-80--lg">
           <header class="text-uppercase g-mb-25">
             <div class="g-mb-25">
-              <h2 class="h2 g-color-white mb-0">Expert Advice</h2>
+              <h2 class="h2 g-color-white mb-0">{%t services.expert-advice.title %}</h2>
             </div>
             <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
           </header>
@@ -165,11 +165,8 @@ title: Services
               <article
                 class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
                 <div class="g-flex-middle-item">
-                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">High-level Consulting</h4>
-                  <p class="g-color-white-opacity-0_7 mb-0">When your software is not evolving with your business, the
-                    root causes are often complex. Effective software delivery requires product strategy, team
-                    organisation, software process, software architecture, and software practices to align. Our experts
-                    will help you to identify these causes and create a plan on how to improve.</p>
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.high-level-consulting.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.high-level-consulting.body %}</p>
                 </div>
               </article>
               <!-- End Article -->
@@ -180,12 +177,8 @@ title: Services
               <article
                 class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
                 <div class="g-flex-middle-item">
-                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Technical Vision and
-                    Architecture Review</h4>
-                  <p class="g-color-white-opacity-0_7 mb-0">Whether you're managing a monolithic legacy system in
-                    production or at the early stages of designing your new product, we will help you review your
-                    architecture against your product and technology vision, so that it fits your present and future
-                    needs.</p>
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.technical-vision.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.technical-vision.body %}</p>
                 </div>
               </article>
               <!-- End Article -->
@@ -196,11 +189,8 @@ title: Services
               <article
                 class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
                 <div class="g-flex-middle-item">
-                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Discovery Phase</h4>
-                  <p class="g-color-white-opacity-0_7 mb-0">You have a particular area in mind for technology
-                    improvement and you’re looking for a partner but don’t necessarily know what to focus on. We will
-                    help you focus your efforts with a series of tailor made workshops to create a plan for
-                    improvements.</p>
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.discovery-phase.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.discovery-phase.body %}</p>
                 </div>
               </article>
               <!-- End Article -->
@@ -211,12 +201,8 @@ title: Services
               <article
                 class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
                 <div class="g-flex-middle-item">
-                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">Technical Coaching</h4>
-                  <p class="g-color-white-opacity-0_7 mb-0">A mismatch between your technical vision and your capability
-                    will have a direct impact on your ability to deliver value to your customers. Investing in the
-                    skills of your people will help to reduce this gap. We provide training and coaching in XP Practices
-                    (e.g. TDD, Pair Programming, Continuous Integration), Software Design, Clean Code, and Software
-                    Architecture.</p>
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.technical-coaching.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.technical-coaching.body %}</p>
                 </div>
               </article>
               <!-- End Article -->
@@ -229,17 +215,16 @@ title: Services
   </div>
 
   <!-- Clients who received Expert Advice -->
-  {% include_relative _includes/clients_section.html title="Clients who received Expert Advice" filter="expert_advice" %}
+  {% include_relative _includes/clients_section.html title="services.expert-advice.clients-title" filter="expert_advice" %}
 
   <!-- Looking for Training -->
   <div class="section gray-section">
     <div class="container text-center">
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Looking for training?</h2>
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.training.title %}</h2>
       </div>
-      <p class="lead g-px-100--md g-mb-20">We help teams in any phase of a project where they may benefit from focused
-        training.</p>
-      <a class="btn btn-md u-btn-primary rounded-0 w-100 g-width-auto--lg" href="/services/training/">Learn More</a>
+      <p class="lead g-px-100--md g-mb-20">{%t services.training.body %}</p>
+      <a class="btn btn-md u-btn-primary rounded-0 w-100 g-width-auto--lg" href="/services/training/">{%t services.learn-more %}</a>
     </div>
   </div>
 
@@ -249,7 +234,7 @@ title: Services
     <div class="container">
 
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Effective Delivery Teams</h2>
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.effective-delivery.title %}</h2>
       </div>
 
       <!-- Icon Blocks -->
@@ -264,12 +249,9 @@ title: Services
                 </span>
               </div>
               <div class="media-body">
-                <h3 class="h5 g-color-black mb-20">Feature Delivery Teams</h3>
+                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.feature-delivery.title %}</h3>
                 <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                <p class="g-color-gray-dark-v4 g-mb-0">Our teams are experts in XP practices and Continuous Delivery
-                  while maintaining a DevOps culture. Whether you have an existing product or starting anew, our teams
-                  will ensure that we help you deliver quality features, in time, to meet your business objectives. Our
-                  work will serve as an exemplar for your future development effort.</p>
+                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.feature-delivery.body %}</p>
               </div>
             </div>
           </div>
@@ -286,12 +268,9 @@ title: Services
                 </span>
               </div>
               <div class="media-body">
-                <h3 class="h5 g-color-black mb-20">Technical Delivery Teams</h3>
+                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.technical-delivery.title %}</h3>
                 <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                <p class="g-color-gray-dark-v4 g-mb-0">Your continuous delivery pipeline needs some improvements, you
-                  want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
-                  most challenging aspects of going from monolith to microservices. Our Technical Delivery Team take
-                  care of this for you so you can concentrate on building features to meet your business demand.</p>
+                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.technical-delivery.body %}</p>
               </div>
             </div>
           </div>
@@ -303,15 +282,15 @@ title: Services
   </section>
 
   <!-- Clients who benefitted from Effective Delivery -->
-  {% include_relative _includes/clients_section.html title="Clients who benefitted from more Effective Delivery" filter="effective_delivery" %}
+  {% include_relative _includes/clients_section.html title="services.effective-delivery.clients-title" filter="effective_delivery" %}
 
   <!-- Contact Us -->
   <div class="section">
     <div class="container">
       <div class="row">
         <div class="services-contact-form-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
-          <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Get In Touch</h2>
-          <p>Contact us to find out how we can help.</p>
+          <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.contact-us.title %}</h2>
+          <p>{%t services.contact-us.body %}</p>
         </div>
         <!--[if lte IE 8]>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
@@ -320,7 +299,7 @@ title: Services
         <script>
           hbspt.forms.create({
             portalId: "3042464",
-            formId: "cb743506-bc2e-4fec-b08d-f21fe41f7378",
+            formId: "{%t services.contact-us.formid %}",
             cssClass: "",
             onFormReady: function () {
               addStyleOverridesToHead();

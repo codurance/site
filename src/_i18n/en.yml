@@ -172,11 +172,53 @@ services:
     body: We will review your capability at the process, technology, architecture, practices
       levels. We will provide technical direction and coaching programmes to help your organisation on its
       path to sustainable effective software delivery.
+    high-level-consulting:
+      title: High-level Consulting
+      body: When your software is not evolving with your business, the
+        root causes are often complex. Effective software delivery requires product strategy, team
+        organisation, software process, software architecture, and software practices to align. Our experts
+        will help you to identify these causes and create a plan on how to improve.
+    technical-vision:
+      title: Technical Vision and Architecture Review
+      body: Whether you're managing a monolithic legacy system in
+        production or at the early stages of designing your new product, we will help you review your
+        architecture against your product and technology vision, so that it fits your present and future
+        needs.
+    discovery-phase:
+      title: Discovery Phase
+      body: You have a particular area in mind for technology
+        improvement and you’re looking for a partner but don’t necessarily know what to focus on. We will
+        help you focus your efforts with a series of tailor made workshops to create a plan for
+        improvements.
+    technical-coaching:
+      title: Technical Coaching
+      body: A mismatch between your technical vision and your capability
+        will have a direct impact on your ability to deliver value to your customers. Investing in the
+        skills of your people will help to reduce this gap. We provide training and coaching in XP Practices
+        (e.g. TDD, Pair Programming, Continuous Integration), Software Design, Clean Code, and Software
+        Architecture.
+    clients-title: Clients who received Expert Advice
+  training:
+    title: Looking for training?
+    body: We help teams in any phase of a project where they may benefit from focused training.
   effective-delivery:
-    title: Effective Delivery
+    title: Effective Delivery Teams
     subtitle: We have the software delivery capability to help deliver on your business objectives.
-    body: Ourexpert teams will evolve your existing software and delivery process towards frequent
+    body: Our expert teams will evolve your existing software and delivery process towards frequent
       and continuous delivery, whilst our feature teams have the full capability to.
+    feature-delivery:
+      title: Feature Delivery Teams
+      body: Our teams are experts in XP practices and Continuous Delivery
+        while maintaining a DevOps culture. Whether you have an existing product or starting anew, our teams
+        will ensure that we help you deliver quality features, in time, to meet your business objectives. Our
+        work will serve as an exemplar for your future development effort.
+    technical-delivery:
+      title: Technical Delivery Teams
+      body: Your continuous delivery pipeline needs some improvements, you
+        want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
+        most challenging aspects of going from monolith to microservices. Our Technical Delivery Team take
+        care of this for you so you can concentrate on building features to meet your business demand.
+    clients-title: Clients who benefitted from more Effective Delivery
   our-expertise:
     title: Our Expertise
     software-crasftsmanship: Software Craftsmanship
@@ -185,6 +227,10 @@ services:
     extreme-programming: Extreme Programming
     devops-culture: DevOps Culture
     technology-focused: Technology Focused
+  contact-us:
+    title: Get In Touch
+    body: Contact us to find out how we can help.
+    formid: cb743506-bc2e-4fec-b08d-f21fe41f7378
 services-training_coaching:
   title: Training & Coaching
   our_courses: Our Courses
