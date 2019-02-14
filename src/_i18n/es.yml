@@ -161,60 +161,12 @@ publications-tweet_feed:
 publications-post:
    author_title: Por
    date_title: Publicado
-services-header:
-   title: Soluciones artesanales
-   subtitle: Adaptadas a ti
-services-subheader:
-   title: Tu socio para crear un software bien hecho
-   subtitle: Entendemos que cada uno es diferente, por lo que adaptamos nuestro enfoque a las necesidades de cada negocio y organización. Le ayudaremos a construir software bien hecho que sea relevante a sus necesidades. Proporcionamos <strong>equipos</strong> para crear software de calidad, que aporta valor, dentro de los plazos establecidos; <strong>asesoramiento de expertos</strong> para acelerar sus iniciativas y <strong>formación y coaching</strong> para proveer a sus desarrolladores con las habilidades y actitud necesarias.
-services-section_1:
-   title: Ayudándote con ...
-services-section_2:
-   title: Negocios a los que hemos ayudado
-   finance: FINANZAS
-   retail: RETAIL
-   media: MEDIOS
-services-software_creation:
-   title: Creación de software
-   subtitle: <p><strong>Le ayudaremos a crear una solución a medida para su Pipeline de Continuous Delivery (Continuous Delivery Pipeline), para que los equipos puedan responder a las necesidades. Somos expertos en tecnologías para Continuous Delivery. Nos damos cuenta de cómo el equipo de desarrollo y el negocio deben estar alineados para obtener el máximo provecho de este enfoque.</strong></p>
-           <p>Nuestros craftspeople han perfeccionado su destreza en tecnologías y prácticas para poder entregar a tiempo y con calidad. Adaptamos nuestras practicas a sus necesidades.</p>
-services-software_creation-embedded_craftsmen:
-   title: Embedded Craftspeople
-   subtitle: Nuestros craftspeople pueden mejorar sus equipos para que ofrezcan conocimientos especializados en tecnologías especificas. También pueden formar el núcleo del equipo ayudando a inculcar las practicas de XP y los valores de Software Craftsmanship.
-services-software_creation-self_contained_teams:
-   title: Equipos Autónomos
-   subtitle: <p>Nuestros equipos están preparados para cubrir todas las funciones Agile y trabajan con product owners para garantizar que aportamos valor de manera constante. Le ayudamos a empezar rápido y a entregar el proyecto de la manera más eficaz. Tenemos expertos en diseño UX y UI, mobile, desarrollo de Front End y Back End, DevOps y Testing.</p>
-services-software_creation-continous_delivery:
-   title: Continuous Delivery Pipeline
-   subtitle: Somos expertos en tecnologías que habilitan Continuous Delivery y entendemos cómo negocio y desarrollo necesitan estar alineados para benficiar de este enfoque. Somos pragmáticos y entendemos que algunas limitaciones de la organización no pueden cambiar, por lo que ayudamos a adaptar el proceso para evitar dichas limitaciones.
-services-software_creation-ux_ui_design:
-   title: Diseño UX & UI
-   subtitle: Tenemos experiencia diseñando identidad visual y experiencias de usuario en ambientes Agile. Le ayudaremos a construir la identidad de la marca para su proyecto y a crear diseños de UX y UI como parte del desarrollo de software.
-services-expert_advice:
-   title: Asesoramiento de expertos
-   subtitle: <p><strong>Puedes usar nuestra experiencia para acelerar tus iniciativas</strong></p>
-           <p>Podemos ayudar a iniciar un nuevo proyecto, a inculcar las prácticas de XP o la cultura DevOps en sus equipos, planificar su evolución arquitectónica o adoptar una nueva tecnología</p>
-           <p>Estamos a su disposición para realizar talleres y participar contigo sobre una base a corto plazo para asegurar que su próxima iniciativa empieza con buen pie</p>
-services-expert_advice-enterprise_architecture:
-   title: Enterprise Architecture
-   subtitle: <p>Nuestros craftspeople tienen una amplia riqueza de conocimientos y experiencias en el trato con sistemas a gran escala en las finanzas, medios de comunicación y gobierno. Revisaremos su enfoque y ayudaremos a tomar las decisiones más eficaces para el futuro.</p>
-services-expert_advice-software_architecture_and_design:
-   title: Arquitectura de Software & Diseño
-   subtitle: Revisaremos su arquitectura actual y le ayudaremos a crear una vista sobre el riesgo de su solución de software actual. Podemos asesorar sobre la mejor manera de evolucionar la arquitectura para reducir dichos riesgos.
-services-expert_advice-continous_delivery:
-   title: Continuous Delivery
-   subtitle: Somos expertos en la creación de Continuous Delivery Pipelines. Entendemos que no es sólo un desafío técnico, sino también un desafío organizativo. Ayudamos a nuestros clientes a evolucionar su enfoque hacia Continuous Delivery -  alineando sus negocios, equipos y tecnología.
-services-expert_advice-xp:
-   title: Prácticas de Programación Extrema (XP)
-   subtitle: Las prácticas de programación extrema (XP) son la esencia de cada uno de nosotros en Codurance. Nos encanta formar y guiar a nuestros clientes en su adopción. Le aconsejamos sobre cómo adoptar las prácticas de XP y los valores de Software Craftsmanship para lograr un cambio positivo en los equipos de desarrollo de software.
 services-training_coaching:
-   title: Formación & asesoría
-   our_courses: Nuestros cursos
-   subtitle: <p><strong>Ofrecemos una gama de cursos de formación que generalmente tienen una duración de 2 días.</strong></p>
-           <p>Nuestros cursos de formación ayudan a los equipos a mejorar en Test Driven Development, Integración Continua y despliegues, Domain-Driven Design, Clean Code y principios SOLID, Behaviour Driven Development y en muchas otras prácticas de carácter técnico.</p>
-           <p>Ayudamos a los equipos en cualquier fase de un proyecto en los que puedan beneficiarse de una formación enfocada.</p>
-services-contact-us: Contacta con nosotros para más información ...
-services-browse-training: Examina nuestros cursos de formación ...
+  title: Formación & asesoría
+  our_courses: Nuestros cursos
+  subtitle: <p><strong>Ofrecemos una gama de cursos de formación que generalmente tienen una duración de 2 días.</strong></p>
+    <p>Nuestros cursos de formación ayudan a los equipos a mejorar en Test Driven Development, Integración Continua y despliegues, Domain-Driven Design, Clean Code y principios SOLID, Behaviour Driven Development y en muchas otras prácticas de carácter técnico.</p>
+    <p>Ayudamos a los equipos en cualquier fase de un proyecto en los que puedan beneficiarse de una formación enfocada.</p>
 training-software-development-practices:
    title: Prácticas de Desarrollo de Software
    subtitle: Ofrecemos cursos para ayudar a los desarrolladores a adoptar prácticas como Test Driven Development (TDD), Continuous Integration y Release Automation. También podemos personalizar nuestros cursos en base a las necesidades de su equipo.
@@ -244,7 +196,7 @@ clients:
    asos_description: ASOS es el minorista online de moda y belleza más grande de Reino Unido. Nuestros craftspeople están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
    mango_description: Mango es un minorista internacional con más de 2.700 tiendas en 105 países. Les hemos ayudado a reestructurar su actual arquitectura con microservicios para brindar una mejor experiencia al cliente.
    coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas dar a sus clientes planes de tarjetas y vales, basados en su fidelidad.
-   mands_description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index. 
+   mands_description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.
    accelad_description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
    crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar con música. Les hemos ayudado a crear su departamento de tecnología desde la base, proveyendo un equipo que formaba el núcleo de su esfuerzo de desarrollo de software, contratando sus propios desarrolladores para acabar tomando el mando.
    aws_description: AWS provee un conjunto de servicios en la nube mediante una plataforma para aplicaciones de software. Hemos creado una plataforma para el manejo de eventos para los eventos de su comunidad, como AWS Loft y AWS Summit
@@ -266,10 +218,10 @@ events-lscc:
    title: Comunidad de Software Craftsmanship Barcelona
    link_title: Más información
    api_endpoint: https://api.meetup.com/Barcelona-Software-Craftsmanship/events?photo-host=public&page=3&sig_id=70197872&fields=plain_text_description&sig=8b1f683e2179350cdfddc77eb6fc347a64242ec7
-careers:    
+careers:
    title: Trabaja con nosotros
    email: join-us@codurance.es
-   learn_more: Aprende más  
+   learn_more: Aprende más
    attitude_title: Actitud
    attitude_description: Buscamos personas que tengan una gran actitud de aprendizaje y un verdadero amor por las habilidades requeridas de un desarrollo de software profesional. Ofrecemos un ambiente vibrante donde crecerás como profesional. Estamos orgullosos de nuestra cultura de aprendizaje. Somos una comunidad de profesionales donde nos ayudamos y apoyamos mutuamente.
    experience_title: Experiencia
@@ -304,13 +256,13 @@ careers:
     personas:
      heading: Perfil de un Software Craftsperson
      subtitle: Nuestros Craftpeople tienen una gran variedad de experiencias y habilidades, y profundidad en una o mas áreas. El viaje de cada Craftsperson es único y se unen a nosotros en diferentes etapas de sus carreras.
-     coding_title: Coding 
+     coding_title: Coding
      coding: Test Driven Development is second nature to us, our people are at different levels on the journey towards competence. For some, it is a case of small steps towards an emerging design, others feel comfortable in taking larger leaps during their TDD lifecycle. We all keep good design principles, such as SOLID, in mind while we develop software, however as our experience grows, we look wider and go to first principles such as simplicity, coupling and cohesion to a point where we have an intuitive understanding. We love to pair program and see it as an opportunity to learn from each other. We are proficient with at least one language and pride ourselves in our fluency with our chosen development environment. As our seniority grows we delve deeper into software design and take an active interest in subjects like Domain Driven Design, Architectural Patterns, Security and other more wholistic characteristic of the software product.
      automation_and_ops_title: Automation & Operations
      automation_and_ops: We are automators. Although our craftspeople range in their automation skills, we all aspire to become skilled in crafting effective continuous delivery pipelines and systems that are easy to operate in production. We aspire to a DevOps culture. Most of us are skilled, to a good level, on the coding side and consider infrastructure as code as an important skillset. We enjoy working with cloud offerings such as Amazon Web Service, Microsoft Azure, and Google Cloud Platform. We find technologies such as Docker, Kubernetes, Terraform, Puppet, etc. to be extremely valuable to achieving effective delivery pipelines and reliable platforms. Whilst we refrain from over engineering, we also aspire to use modern technologies to increase the efficiency, productivity and reliability of our software development process and software product.
      architecture_title: Architecture
      architecture: Our more junior people have a good awareness of architectural patterns. This awareness grows to a solid expertise among our more senior people. We know that there is no silver bullet when it comes to architectures and keep a keen interest in all flavours, not just the most popular at a particular time. We all have a practical understanding of modern architectural patterns such as Hexagonal, Microservices, Event Sourcing and CQRS. We believe architecture needs to evolve as the product evolves. We appreciate the value of fast running tests at different levels to achieve different objectives. For us Test Driven Development doesn't start and stop at unit tests. We have used different levels of testing and understand their pros and cons. Our understanding of architecture and development process grows as our experience grows. Our interest in technologies, frameworks, and cloud platforms allow us to provide the right platform for the target architecture.
-     consultancy_title: Consultancy 
+     consultancy_title: Consultancy
      consultancy: Our senior craftspeople are expert consultants. We start developing the associated, hard to master, skills from the beginning by creating many opportunities where our more junior people can practice in safe and supportive environments. Our senior craftspeople are skilled trainers, mentors, facilitators, advisors, experts, and leaders. They help our clients at all levels of the software development effort, ranging from advising on product management to coaching individuals on how to test drive code. Our ability to operate at this wide range helps us provide highly effective consultancy to our clients. We are always training our less senior people, on and off the job, to become the next generation of leaders and advisors. We also understand that not everyone likes to operate in this area and provide opportunities for people to grow in areas that they find more interesting and a natural fit.
      process_and_ux_title: Process & UX
      process_and_ux: Whilst the majority of our people are software developers, we understand that an effective software development team is much more than that. We believe that everyone should have a "T" shape where they have an awareness of a wide breath of skills and expertise in a narrower set. Our UX designers, Business Analysts and Agile Product Managers specialise in product development. They may start more specific such as UX designer, Business Analyst but over time gain expertise in other complimentary skills relating to product development. They are good facilitators and see the value of bringing the whole-team together on the journey. Our more senior craftspeople often act as a product owners for our clients, understanding the needs of stakeholders, combined with a deep understanding of Agile Processes. We value concepts such as Design Thinking and Co-creation. We are constantly learning and regularly attend training courses, conferences, and meet-ups to gain a deeper understanding this field.
@@ -335,7 +287,7 @@ careers:
      apply_title_btn: Aplicar
      join_description: We are a company formed by craftspeople who care about the quality of the work we do and also who we do it with. We are always looking for the talented people who share our passion for writing well-crafted code and believe in the principles and values of Software Craftsmanship, Extreme Programming and Agile software development. For us, mastering a strong set of technical practices is as important as our understanding of different technology stacks we use. <br> Due to the nature of the work we do - working closely with our clients and their technical teams - good communication skills, willingness to learn and work with different technology stacks, fully embrace Extreme Programming practices and Agile methodologies, and confidence to express ideas are essential to join our team.
      practices_title: Practicas
-     practices_description: You have a good experience with Extreme Programming practices (Specially TDD and CI), DevOps (experience setting up build pipelines and automation (Continuous Deployment)), and a good understanding of different Agile practices and how they can help a team to work effectively. 
+     practices_description: You have a good experience with Extreme Programming practices (Specially TDD and CI), DevOps (experience setting up build pipelines and automation (Continuous Deployment)), and a good understanding of different Agile practices and how they can help a team to work effectively.
      design_title: Design and Architecture
      design_description: You have a good appreciation for software design at micro and macro level, including familirtity with SOLID principles and DDD (Domain Driven Design). You naturally follow Clean Code principles (have you read the book?). You also have some understanding of different types of architecture including layered and hexagonal architectures, microservices, CQRS, and Event Sourcing. You understand the basics principles of security, logging, monitoring, and supportin projects in production.
      technology_stacks_title: Technology stacks
@@ -349,7 +301,7 @@ careers:
      description: Nuestro producto es nuestra gente. Creemos firmemente que su trabajo y los beneficios asociados deben permitirle prosperar de manera personal y profesional.
      learning_title: Aprendizaje y Desarollo
      conf_title: Conferencias
-     conf_description: 5 días de conferencia por año, incluyendo transporte, habitación y boletos cubierto por nosotros. Pagaremos por usted también así que no hay necesidad de utilizar días de vacaciones. 
+     conf_description: 5 días de conferencia por año, incluyendo transporte, habitación y boletos cubierto por nosotros. Pagaremos por usted también así que no hay necesidad de utilizar días de vacaciones.
      training_title: Entrenamiento
      training_description: ¡Presupuesto de entrenamiento sin limite! Siempre que el curso tenga relevancia para la empresa y usted haga una aclaración sobre el tema, nos complace pagarlo.
      books_title: Libros
@@ -358,8 +310,8 @@ careers:
      experts_title: Comunidad interna de expertos
      experts_description: Ya sea en proyectos de clientes, nuestros eventos internos o externos, trabajarás junto a Craftsperson’s para compartir su pasión por el aprendizaje.
      transparency_title: Transparencia
-     transparency_description: Todos nuestros salarios y finanzas están disponibles para todos desde el primer día. Nada que ocultar aquí.  
-     autonomy_title: Autonomía 
+     transparency_description: Todos nuestros salarios y finanzas están disponibles para todos desde el primer día. Nada que ocultar aquí.
+     autonomy_title: Autonomía
      autonomy_description: ¿Tienes algún idea? Forme un “Initiative Circle”, tome posesión, corra con él y entréguelo.
      lifestyle_title: Estilo de vida
      holidays_title: Vacaciones
@@ -389,8 +341,8 @@ careers:
       box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
      background_title: What background do I need to have?
      background_description:
-           At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design. 
-           <p> 
+           At this level, we will expect that you are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design.
+           <p>
            <p>You have at least narrow experience of tools and technology, sufficient according to your current experience. You can communicate your ideas in a team setting and want to develop skills to convince others to your thinking. You have a strong desire to learn and hone your skills as an effective software developer. You like to teach as well as to learn.
      is_it_for_me_title: Is this the programme for me?
      is_it_for_me_description: If you are looking for a structured learning programme, complete with certifications, learning modules and regular training courses, then this isn’t the programme for you. If you are looking however for an intense education on what it means to be a Software Craftsperson, under the guidance of a mentor, learning the real-world technologies, practices and skills needed along the way, then we look forward to receiving your application.
@@ -438,12 +390,12 @@ careers-join-how_to_apply:
 
         <p>Un CV actualizado es siempre de ayuda. También queremos que nos envíes tus enlaces a blogs, repositorios de código y cualquier otro recurso que nos ayude a comprender tu lado profesional.</p>
 careers-open_positions:
-   title: Te gusta escribir software bien hecho, ¡a nosotros también!  
+   title: Te gusta escribir software bien hecho, ¡a nosotros también!
    description: Estamos buscando gente que, como nosotros, comparta los valores de la Artesanía del Software. Tanto si eres un Artesano del software con experiencia como si eres un Aprendiz, nos gustaría conocerte.
 careers-become_a_craftsman:
-   title: Conviértete en Artesano de Software 
+   title: Conviértete en Artesano de Software
    description: Tienes un firme deseo de hacer software de calidad, de mejorar continuamente, y de ayudar a los demás a hacer lo mismo. Tienes una amplia apreciación por la tecnología, con un profundo conocimiento de Java, .NET o Node.js.
-   link_title: Aplicar 
+   link_title: Aplicar
    apply_title: Estoy interesado
    more_info: Lee la descripción completa
 careers-become_an_apprentice:
@@ -452,7 +404,7 @@ careers-become_an_apprentice:
    link_title: Aplicar
    more_info: Lee la descripción completa
 careers-hiring_process:
-   title: Proceso de contratación 
+   title: Proceso de contratación
    description: Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato&#58;
    step_1:
      title: Entrevista telefónica
