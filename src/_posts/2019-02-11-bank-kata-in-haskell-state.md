@@ -4,7 +4,7 @@ asset-type: post
 name: bank-kata-in-haskell-state
 title: Bank kata in Haskell - dealing with state
 date: 2019-02-11 07:00:00 +00:00
-author: Liam Griffin
+author: Liam Griffin-Jowett
 image:
     src: /assets/custom/img/blog/2019-02-11-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
 canonical:
