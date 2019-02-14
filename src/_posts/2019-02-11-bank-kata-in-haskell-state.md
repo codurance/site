@@ -113,7 +113,7 @@ deposit amount transactions = ((), transactions ++ [Deposit amount])
 Now what is returned from our functions is similar in all cases - `(answer, [Transaction])`, where `answer` might be a string in case of `getStatement`, or nothing in case of just adding a deposit/withdrawal. Using these functions looks similar:
 
 ```haskell
-useMyBank :: (String, [Transaction])
+useMyBank :: [Transaction] -> (String, [Transaction])
 useMyBank initialTransactions = let
   (_, newTransactions) = deposit 100 initialTransactions
   (_, newTransactions2) = withdraw 50 newTransactions
