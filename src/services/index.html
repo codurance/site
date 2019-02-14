@@ -196,7 +196,7 @@ title: Services
               <!-- End Article -->
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
               <!-- Article -->
               <article
                 class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
@@ -206,6 +206,10 @@ title: Services
                 </div>
               </article>
               <!-- End Article -->
+            </div>
+
+            <div class="col-sm-12">
+              <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
             </div>
           </div>
         </div>
@@ -223,7 +227,7 @@ title: Services
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
         <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.training.title %}</h2>
       </div>
-      <p class="lead g-px-100--md g-mb-20">{%t services.training.body %}</p>
+      <p class="lead g-px-100--md g-mb-30">{%t services.training.body %}</p>
       <a class="btn btn-md u-btn-primary rounded-0 w-100 g-width-auto--lg" href="/services/training/">{%t services.learn-more %}</a>
     </div>
   </div>
@@ -237,9 +241,8 @@ title: Services
         <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.effective-delivery.title %}</h2>
       </div>
 
-      <!-- Icon Blocks -->
       <div class="row">
-        <div class="col-lg-6 g-mb-30">
+        <div class="col-lg-6 g-mb-50">
           <!-- Icon Blocks -->
           <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
             <div class="media g-mb-15">
@@ -277,7 +280,12 @@ title: Services
           <!-- End Icon Blocks -->
         </div>
       </div>
-      <!-- End Icon Blocks -->
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -285,6 +293,7 @@ title: Services
   {% include_relative _includes/clients_section.html title="services.effective-delivery.clients-title" filter="effective_delivery" %}
 
   <!-- Contact Us -->
+  <a name="contact-us" class="anchor"></a>
   <div class="section">
     <div class="container">
       <div class="row">
