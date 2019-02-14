@@ -4,7 +4,7 @@ name: 2017-12-21-docker-multistage-haskell
 title: Shrinking Haskell Docker images using multi-stage builds
 description: Shrinking Haskell Docker images using multi-stage builds
 date: 2017-12-21 08:00:00 +00:00
-author: Liam Griffin
+author: Liam Griffin-Jowett
 layout: post
 asset-type: post
 image:

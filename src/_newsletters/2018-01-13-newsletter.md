@@ -75,7 +75,7 @@ Video interview with Gojko Adzic from Agile Prague in 2016.
 ===
 
 ### [Shrinking Haskell Docker images using multi-stage builds](https://codurance.com/2017/12/21/docker-multistage-haskell/)
-Liam Griffin explores Docker's new multi-stage build feature.
+Liam Griffin-Jowett explores Docker's new multi-stage build feature.
 
 ===
 
