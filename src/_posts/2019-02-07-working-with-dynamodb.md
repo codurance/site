@@ -44,13 +44,11 @@ We need access to our application to read and write. Is good pratice to have a u
 
 When creating a user for your application you must know which kind of permissions you will give to him, starting with the `Access Type`. In this case we are creating a user for our application, so we don't have any reason to give access to the AWS Management Console. 
 
-![Create user screen]({{site.baseurl}}/assets/custom/img/blog/2019-02-13-create-user.png "Creating a user in amazon console")
-
-> Add command line command to create a table. 
+![Create user screen]({{ '/assets/custom/img/blog/2019-02-13-create-user.png' | prepend: site.baseurl }})
 
 Going forward we have to deterine the level of access our user will need and choose appropriate roles. The application is Reading and Writing from a single DynamoDB table, the `AmazonDynamoDBFullAccess` you will grant access to all tables and features. If you need to be more restrictive, it is possible to create a custom policy just to grant access the desired resource. 
 
-![Add role to user]({{site.baseurl}}/assets/custom/img/blog/2019-02-13-add-role.png "Adding a role to the user")
+![Add role to user]({{ '/assets/custom/img/blog/2019-02-13-add-role.png' | prepend: site.baseurl }})
 
 After the user is created we will be provided with an `Access Key ID` and a `Secret Access Key`, you need to keep those two keys in a safe place because you will need to use them to connect to DynamoDB. If something happens to the key pair you will have to create a new key pair.
 
