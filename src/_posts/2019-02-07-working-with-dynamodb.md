@@ -15,7 +15,7 @@ tags:
 - aws
 ---
 
-DynamoDB is a NoSQL database provided by Amazon, it works as a key-value store or document database with really fast response times. It's fully managed, taking this burden from you and it has many features built in. In this post we are going to migrate an CLI application from using local storage to use DynamoDB, and go through the basic operations of its SDK in the JVM. 
+DynamoDB is a NoSQL database provided by Amazon, it works as a key-value store or document database with really fast response times. It's fully managed, taking this burden from you and it has many features built in. In this post, we are going to migrate a CLI application from using local storage to use DynamoDB and go through the basic operations of its SDK in the JVM. 
 
 ## Part 0 - The application. 
 
