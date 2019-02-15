@@ -387,16 +387,14 @@ $orange-colour: #e67e22;
   &-expert-advice {
     background-color: $codurance-green;
 
-    &-image {
-      object-fit: none;
-      object-position: -77px -180px;
-      width: 100%;
-      max-height: 330px;
+    /* md */
+    @media (min-width: 992px) {
+      background-image: url("{{site.baseurl}}/assets/custom/img/services/expert_advice_wide.jpg");
+      background-size: cover;
+    }
 
-      /* md */
-      @media (min-width: 992px) {
-        max-height: 100%;
-      }
+    &__content {
+      background-color: $codurance-green;
     }
   }
 
