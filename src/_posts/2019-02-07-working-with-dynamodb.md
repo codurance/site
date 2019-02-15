@@ -2,7 +2,7 @@
 author: Andre Torres
 layout: post
 asset-type: post
-title: "Working with the DynamoDB"
+title: "An introduction to DynamoDB and its SDK"
 date: 2019-02-13 00:00:00
 description: Migrating a ToDo app to DynamoDB
 image: 
@@ -14,6 +14,8 @@ tags:
 - dynamodb 
 - aws
 ---
+
+DynamoDB is a NoSQL database provided by Amazon, it works as a key-value store or document database with really fast response times. It's fully managed, taking this burden from you and it has many features built in. In this post, we are going to migrate a CLI application from using local storage to use DynamoDB and go through the basic operations of its SDK in the JVM. 
 
 ## Part 0 - The application. 
 
@@ -477,7 +479,6 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
     }
 ```
 
-<!-- Maybe remove, so we don't trigger anyone -->
 The tests are passing, everything is going fine in the code but having to set up the table manually isn't the best option, so just move that `setupTable` to the initialization of `DynamoDBHelper` and make it private.
 
 ```kotlin
@@ -517,7 +518,6 @@ class DynamoDbTaskRepositoryShould {
 
 }
 ```
-
 
 #### 2.2.2 Getting a Task from the DB
 
@@ -639,6 +639,7 @@ class DynamoDBHelper(val dynamoDbClient: DynamoDbClient) {
         return Task.from(item)
     }
     ...
+}
 ```
 
 ## 3 - Retrieving data. 
@@ -778,9 +779,9 @@ class DynamoDbTaskRepositoryShould {
 }
 ```
 
-    It's important to mention here, `Scan` will return the items in descending order. So if the order is something important for you, a sorting step will have to take place after retrieving the items for the database. In case of a `Query` instead of a `Scan` the parameter `ScanIndexForward` can be set `true` and DynamoDB will return the items in ascending order.
- 
- ## 4 - Deleting our stuff
+> It's important to mention here, `Scan` will return the items in descending order. So if the order is something important for you, a sorting step will have to take place after retrieving the items for the database. In case of a `Query` instead of a `Scan` the parameter `ScanIndexForward` can be set `true` and DynamoDB will return the items in ascending order.
+
+## 4 - Deleting Tasks
 
 To err is human, to delete is forgetting. It's time to implement the delete method. As always, we start with a test inserting something to the database, deleting what we just inserted and checking if that isn't in the database. 
 
@@ -878,6 +879,7 @@ class DynamoDbTaskRepository(private val dynamoDbClient: DynamoDbClient) : TaskR
 
         return lastId + 1
     }
+}
 ```
 
 It's a `Scan` operation like the one in `all()` but with `scan.attributesToGet("task_id")` so the response will only contain the `task_id` and will be smaller in general. Then that result is converted to the biggest integer. Kotlin has the elvis operator `?:` that helps to handle `null` values, so if there is no items returned the value will be zero. To cover that case we add a test without inserting any task in the arrange part: 
