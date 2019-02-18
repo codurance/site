@@ -163,19 +163,19 @@ publications-post:
    date_title: Publicado
 services:
   title: Software de calidad entregado efectivamente
-  subtitle: Lideres reconocidos en continuous delivery y practicas de calidad y pericia.
+  subtitle: Lideres reconocidos en continuous delivery y prácticas de calidad y pericia.
   learn-more: Más información
   expert-advice:
     title: Consejo experto
-    subtitle: Para saber como puedes mejorar es critico entender tus competencias actuales de delivery.
-    body: Revisaremos tus competencias en el proceso, tecnología, arquitectura, niveles de practica. 
+    subtitle: Para saber como puedes mejorar es crítico entender tus competencias actuales de delivery.
+    body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica. 
       Te proveeremos con directrices técnicas y programas de coaching para ayudar a tu organización 
       en su camino hacia una entrega efectiva y sostenible.
     high-level-consulting:
       title: Consultoría de alto nivel
       body: Cuando tu software no evoluciona con tu negocio las causas a menudo son complejas. 
         La entrega de software efectiva requiere una estrategia de producto, de organización de equipo, 
-        de proceso, arquitectura y practicas técnicas que se alineen.
+        de proceso, arquitectura y prácticas técnicas que se alineen.
         Nuestros expertos te ayudaran a identificar esas causas y a crear un plan de mejora.
     technical-vision:
       title: Visión técnica y revisión de arquitectura
@@ -192,7 +192,7 @@ services:
       body: Si tu visión técnica y tus capacidades no están alineadas tendrán un impacto directo en tu capacidad
         para entregar valor a tus clientes.
         Invertir en las habilidades de tu gente ayudara a reducir esta brecha.
-        Ofrecemos formación y coaching en practicas XP 
+        Ofrecemos formación y coaching en prácticas XP 
         (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
     clients-title: Clientes que han recibido consejo experto
   training:
