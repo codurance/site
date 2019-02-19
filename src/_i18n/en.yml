@@ -216,7 +216,7 @@ services:
       title: Technical Delivery Teams
       body: Your continuous delivery pipeline needs some improvements, you
         want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
-        most challenging aspects of going from monolith to microservices. Our Technical Delivery Team take
+        most challenging aspects of going from monolith to microservices. Our Technical Delivery Team will take
         care of this for you so you can concentrate on building features to meet your business demand.
     clients-title: Clients who benefitted from more Effective Delivery
   our-expertise:
