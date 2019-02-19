@@ -168,31 +168,31 @@ services:
   expert-advice:
     title: Consejo experto
     subtitle: Para saber como puedes mejorar es crítico entender tus competencias actuales de delivery.
-    body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica. 
-      Te proveeremos con directrices técnicas y programas de coaching para ayudar a tu organización 
+    body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica.
+      Te proveeremos con directrices técnicas y programas de coaching para ayudar a tu organización
       en su camino hacia una entrega efectiva y sostenible.
     high-level-consulting:
       title: Consultoría de alto nivel
-      body: Cuando tu software no evoluciona con tu negocio las causas a menudo son complejas. 
-        La entrega de software efectiva requiere una estrategia de producto, de organización de equipo, 
+      body: Cuando tu software no evoluciona con tu negocio las causas a menudo son complejas.
+        La entrega de software efectiva requiere una estrategia de producto, de organización de equipo,
         de proceso, arquitectura y prácticas técnicas que se alineen.
         Nuestros expertos te ayudaran a identificar esas causas y a crear un plan de mejora.
     technical-vision:
       title: Visión técnica y revisión de arquitectura
-      body: Tengas un monolito, código legacy o estés en la etapa de diseño de tu nuevo producto, 
-        te ayudaremos a revisar tu arquitectura en el contexto de tu visión de producto y tecnológica 
+      body: Tengas un monolito, código legacy o estés en la etapa de diseño de tu nuevo producto,
+        te ayudaremos a revisar tu arquitectura en el contexto de tu visión de producto y tecnológica
         para que se adecue a tus necesidades presentes y futuras.
     discovery-phase:
       title: Fase de descubrimiento
       body: Tienes un área en particular que quieres mejorar con tecnología y estas buscando un partner pero no sabes
-        exactamente en que enfocarte. 
+        exactamente en que enfocarte.
         Te ayudaremos a focalizar tus esfuerzos con una serie de talleres para crear un plan de mejora.
     technical-coaching:
       title: Coaching técnico
       body: Si tu visión técnica y tus capacidades no están alineadas tendrán un impacto directo en tu capacidad
         para entregar valor a tus clientes.
         Invertir en las habilidades de tu gente ayudara a reducir esta brecha.
-        Ofrecemos formación y coaching en prácticas XP 
+        Ofrecemos formación y coaching en prácticas XP
         (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
     clients-title: Clientes que han recibido consejo experto
   training:
@@ -201,8 +201,8 @@ services:
   effective-delivery:
     title: Entrega efectiva
     subtitle: Tenemos las habilidades de entrega de software para ayudarte a entregar tus objetivos de negocio.
-    body: Nuestros equipos expertos mejoraran tu software y proceso de entrega hacia entregas 
-      más frecuentes y continous delivery mientras nuestros equipos de feature tienen las capacidades 
+    body: Nuestros equipos expertos mejoraran tu software y proceso de entrega hacia entregas
+      más frecuentes y continous delivery mientras nuestros equipos de feature tienen las capacidades
       para llevar una idea al mercado.
     feature-delivery:
       title: Feature Delivery Teams
@@ -213,9 +213,9 @@ services:
     technical-delivery:
       title: Technical Delivery Teams
       body: Tus pipelines de continous delivery necesitan mejoras, no quieres dejar de dar servicio con tus deploys,
-        necesitas infraestructura para A/B testing o te enfrentas a los desafíos más complicados de pasar de monolito a 
-        microservicios. 
-        Nuestro equipo de technical delivery se encargara de esto por ti para que puedas concentrarte en 
+        necesitas infraestructura para A/B testing o te enfrentas a los desafíos más complicados de pasar de monolito a
+        microservicios.
+        Nuestro equipo de technical delivery se encargara de esto por ti para que puedas concentrarte en
         desarrollar las características que tu negocio necesita.
     clients-title: Clientes que se han beneficiado de entregas más efectivas
   our-expertise:
@@ -229,7 +229,7 @@ services:
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar como podemos colaborar.
-    formid: e5e75288-6fc6-4620-b7be-9699a8502ff6
+    formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
 services-training_coaching:
   title: Formación & asesoría
   our_courses: Nuestros cursos
