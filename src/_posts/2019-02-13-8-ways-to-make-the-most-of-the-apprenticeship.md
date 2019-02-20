@@ -4,8 +4,8 @@ comments: true
 date: 2019-02-13 11:49:00 +00:00
 layout: post
 asset-type: post
-slug: 8-ways-apprenticeship
-title: 8 ways to make the most of the apprenticeship
+slug: 8-ways-to-ace-the-apprenticeship
+title: 8 ways to ace the apprenticeship
 abstract: My thoughts on how to benefit from this amazing opportunity.
 image:
     src: /assets/custom/img/blog/road.png
