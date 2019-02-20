@@ -11,7 +11,7 @@ canonical:
     name: my personal blog
     href: TODOOOOOOOOOOOOOOOOOOOOOOOOO
 tags:
-    - functional-programming
+    - functional programming
     - haskell
 abstract: How to print, hold state, and keep things tested
 alias: [/2019/02/20/bank-kata-in-haskell-state]
