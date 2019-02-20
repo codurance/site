@@ -175,8 +175,19 @@ That wasn't so bad :) but there are two things I personally don't like.
 
 ## Use a typeclass constraint
 
-TODOOOOOOOOOO In haskell, type constraints are used to so that we have access to more functions to deal with our datatypes.
-Let's create a typeclass that represents the intent of printing a statement.
+In haskell, type constraints are used to so that we have access to more functions to deal with our datatypes. As a small example, consider this.
+
+```
+areTheseEqual :: a -> a -> Bool
+areTheseEqual a b = a == b
+```
+
+Trying to compile this throws an error: `No instance for (Eq a) arising from a use of ‘==’`.
+Our type `a` in the signature is as polymorphic as it gets. We know nothing about it, including whether two of that type can be compared for equality.
+
+The answer to this is hinted in the compiler output - we need to specify that `a` is an instance of the `Eq` class. If we do that we know we will have an `==` method available.
+
+Brief explanation aside, let's create a typeclass that represents the intent of printing a statement.
 
 ```
 class MonadStatementPrinter m where
@@ -217,7 +228,7 @@ instance MonadStatementPrinter (Writer String) where
   printStmt = tell
 ```
 
-Awesome. Now let's clear up the testing for `deposit` and `withdraw`. We don't need our `MonadStatementPrinter` constraint for these functions so we can use a simpler monad call `Identity`, that does nothing, and returns our result.
+Awesome. Now let's clear up the testing for `deposit` and `withdraw`. We don't need our `MonadStatementPrinter` constraint for these functions so we can use a simpler monad called `Identity` that does nothing, and returns our result.
 
 ```
 it "deposits money" $ do
