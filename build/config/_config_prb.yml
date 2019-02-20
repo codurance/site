@@ -1,3 +1,1 @@
-baseurl: /site-branch-name/es
-destination: ./output/_site/es
-languages: ["es"]
+baseurl: /something
