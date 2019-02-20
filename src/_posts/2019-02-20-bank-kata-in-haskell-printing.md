@@ -239,3 +239,5 @@ it "withdraws money" $ do
   runIdentity (execStateT (withdraw 100) newBank) `shouldBe` [Withdrawal 100]
 ```
 
+Et voila! Our functions are both dealing with state _and_ printing, and are covered by tests.
+
