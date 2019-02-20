@@ -1,123 +1,144 @@
-- id: ubs 
+- id: ubs
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
   website: ubs.com
-  services: 
+  services:
   - software_creation
   - expert_advice
 
 
-- id: acuris 
+- id: acuris
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
   alt-text: Acuris logo
   website: acuris.com
-  services: 
+  services:
   - software_creation
+  services-page: 
+    - effective_delivery
 
 
-- id: socgen 
+- id: socgen
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
-  website: societegenerale.com 
-  services: 
+  website: societegenerale.com
+  services:
   - expert_advice
   - training_and_coaching
 
 
-- id: mandg 
+- id: mandg
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
-  website: mandg.co.uk 
-  services: 
+  website: mandg.co.uk
+  services:
   - training_and_coaching
   - expert_advice
+  services-page: 
+    - effective_delivery
 
- 
-- id: flextrade 
-  name: Flextrade 
+
+- id: flextrade
+  name: Flextrade
   image: /assets/custom/img/home/clients/flextrade.png
   alt-text: Flextrade logo
   website: flextrade.com
-  services: 
+  services:
   - training_and_coaching
   - expert_advice
+  services-page: 
+    - expert_advice
 
-- id: ey 
+- id: ey
   name: EY
   image: /assets/custom/img/home/clients/ey.png
   alt-text: EY logo
-  website: ey.com 
-  services: 
+  website: ey.com
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - effective_delivery
 
-- id: aspectcapital 
+- id: aspectcapital
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect_capital.jpeg
   alt-text: Aspect Capital logo
-  website: aspectcapital.com 
-  services: 
+  website: aspectcapital.com
+  services:
   - software_creation
   - training_and_coaching
   - expert_advice
+  services-page: 
+    - expert_advice
 
-- id: tesco 
+- id: tesco
   name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
-  description: clients.tesco_description 
+  description: clients.tesco_description
   alt-text: Tesco logo
   website: tesco.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - effective_delivery
 
-- id: asos 
+- id: asos
   name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.png
   alt-text: ASOS logo
   website: asos.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page:
+    - expert_advice
 
-- id: mango 
+- id: mango
   name: Mango
   image: /assets/custom/img/home/clients/mango.png
   alt-text: MANGO logo
   website: mango.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - expert_advice
+    - effective_delivery
 
-- id: mands 
+- id: mands
   name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
   alt-text: Marks and Spencer logo
   website: marksandspencer.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - expert_advice
 
-- id: moonpig 
+- id: moonpig
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
   alt-text: Moonpig logo
   website: moonpig.com
-  services: 
+  services:
   - software_creation
   - expert_advice
   - training_and_coaching
+  services-page: 
+    - expert_advice
 
-- id: coniq 
+- id: coniq
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
   alt-text: Coniq logo
   website: coniq.com
-  services: 
+  services:
   - software_creation
 
 - id: aws
@@ -125,42 +146,48 @@
   image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
   website: aws.amazon.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - effective_delivery
 
 - id: trinitymirror
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
   alt-text: Trinity Mirror logo
   website: trinitymirror.com
-  services: 
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - effective_delivery
 
-- id: roche 
+- id: roche
   name: Roche
   image: /assets/custom/img/home/clients/roche.png
   alt-text: Roche logo
-  website: roche.com 
-  services: 
+  website: roche.com
+  services:
   - expert_advice
 
-- id: findmypast 
+- id: findmypast
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast.png
   alt-text: Find My Past logo
   website: findmypast.co.uk
-  services: 
+  services:
   - software_creation
   - expert_advice
 
-- id: accelad 
+- id: accelad
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
-  description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements. 
+  description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
   alt-text: Accelad logo
-  website: accelad.com 
-  services: 
+  website: accelad.com
+  services:
   - software_creation
   - expert_advice
+  services-page: 
+    - effective_delivery
