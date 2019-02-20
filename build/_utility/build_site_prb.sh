@@ -27,5 +27,7 @@ languages: ["es"]
 EOF
   rake buildprb
 
+  cp build/config/index.html output/_site/
+
   rake test
 fi
