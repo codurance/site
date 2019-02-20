@@ -563,7 +563,7 @@
 - id: david_gracia
   name: David Gracia
   image: /assets/custom/img/team/david_gracia.png
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>David loves to build solid, robust and expressive software. He continually investigates better ways of doing his job. He always tries to be proud of his work and wants his work to last as long as possible as a result of quality and good design.</p>
     <p>He firmly believes that the way to extend the Software Craftsmanship is through practice, example and communication.</p>
