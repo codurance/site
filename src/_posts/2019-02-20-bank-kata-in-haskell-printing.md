@@ -21,7 +21,7 @@ alias: [/2019/02/20/bank-kata-in-haskell-printing]
 
 ## Recap
 
-[Last post](https://codurance.com/2019/02/11/bank-kata-in-haskell-state/) we looked at dealing with state when using our bank account. Here's a recap of the code we ended up with:
+[Last post](/2019/02/11/bank-kata-in-haskell-state/) we looked at dealing with state when using our bank account. Here's a recap of the code we ended up with:
 
 ```haskell
 -- our bank functions
