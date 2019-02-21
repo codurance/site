@@ -24,27 +24,8 @@ index-activity:
    events_link_title: Ver todos los eventos
 index-services:
    title: Nuestros servicios
-index-services-software_creation:
-   title: Entrega efectiva
-   description_line_1: EMBEDDED CRAFTSPERSON
-   description_line_2: EQUIPOS AUTÓNOMOS (in situ & externo)
-   description_line_3: DISEÑO UX & UI
-   description_line_4: AGILE & CONTINUOUS DELIVERY
-   link_title: Más información
-index-services-expert_advice:
-   title: Consejo experto
-   description_line_1: ENTERPRISE ARCHITECTURE & DISEÑO
-   description_line_2: MICROSERVICIOS & DEVOPS
-   description_line_3: SOLUCIONES EN LA NUBE (Amazon AWS & Azure)
-   description_line_4: ALINEACIÓN DE NEGOCIOS Y TECNOLOGÍA
-   link_title: Más información
 index-services-training:
-   title: Formación & asesoría
-   description_line_1: TDD, CLEAN CODE & DISEÑO
-   description_line_2: LA NUBE, ARQUITECTURA & MICROSERVICIOS
-   description_line_3: MOVILIDAD, JVM, .NET & DEVOPS
-   description_line_4: CULTIVANDO UNA CULTURA DE CRAFTSMANSHIP
-   link_title: Más información
+  title: Formación & asesoría
 index-clients:
    title: Clientes
 index-partners:

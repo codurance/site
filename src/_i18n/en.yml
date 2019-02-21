@@ -24,27 +24,8 @@ index-activity:
    events_link_title: View all events
 index-services:
    title: Our services
-index-services-software_creation:
-   title: Effective Delivery
-   description_line_1: EMBEDDED CRAFTSMAN
-   description_line_2: SELF-CONTAINED TEAMS (on-site & off-site)
-   description_line_3: UX & UI DESIGN
-   description_line_4: AGILE & CONTINUOUS DELIVERY
-   link_title: Learn more
-index-services-expert_advice:
-   title: Expert Advice
-   description_line_1: ENTERPRISE ARCHITECTURE & DESIGN
-   description_line_2: MICROSERVICES & DEVOPS
-   description_line_3: CLOUD SOLUTIONS (Amazon AWS & Azure)
-   description_line_4: BUSINESS & TECHNOLOGY ALIGNMENT
-   link_title: Learn more
 index-services-training:
    title: Training & Coaching
-   description_line_1: TDD, CLEAN CODE & DESIGN
-   description_line_2: CLOUD, ARCHITECTURE & MICROSERVICES
-   description_line_3: MOBILE, JVM, .NET & DEVOPS
-   description_line_4: GROWING A CRAFTSMANSHIP CULTURE
-   link_title: Learn more
 index-clients:
    title: Clients
 index-partners:
