@@ -174,6 +174,8 @@ That wasn't so bad :) but there are two things I personally don't like.
 1. We are testing `innerPrintStatement` rather than the function actually being used by our users.
 2. Our constraint `Monad m =>` is far too generic and doesn't relay the intent of the statement printing code.
 
+Not to worry, from here it's quite easy to refactor to our other solution, which solves these problems.
+
 ## Use a typeclass constraint
 
 In haskell, type constraints are used to so that we have access to more functions to deal with our datatypes. As a small example, consider this.
