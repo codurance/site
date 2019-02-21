@@ -9,7 +9,7 @@ image:
     src: /assets/custom/img/blog/2019-02-20-bank-kata-in-haskell-printing/retro-printer.jpg
 canonical:
     name: my personal blog
-    href: TODOOOOOOOOOOOOOOOOOOOOOOOOO
+    href: https://medium.com/@Gryff/bank-kata-in-haskell-printing-a-statement-cd59e2c50ba7
 tags:
     - functional programming
     - haskell
