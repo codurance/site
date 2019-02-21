@@ -25,14 +25,14 @@ index-activity:
 index-services:
    title: Nuestros servicios
 index-services-software_creation:
-   title: Creación de Software
+   title: Entrega efectiva
    description_line_1: EMBEDDED CRAFTSPERSON
    description_line_2: EQUIPOS AUTÓNOMOS (in situ & externo)
    description_line_3: DISEÑO UX & UI
    description_line_4: AGILE & CONTINUOUS DELIVERY
    link_title: Más información
 index-services-expert_advice:
-   title: Asesoramiento de expertos
+   title: Consejo experto
    description_line_1: ENTERPRISE ARCHITECTURE & DISEÑO
    description_line_2: MICROSERVICIOS & DEVOPS
    description_line_3: SOLUCIONES EN LA NUBE (Amazon AWS & Azure)
@@ -85,7 +85,7 @@ footer-latest_blog:
    title: Últimos Blogs
 footer-useful_links:
    title: Enlaces de Interés
-   link_1_title: Asesoramiento de expertos
+   link_1_title: Consejo experto
    link_2_title: Entrega efectiva
    link_3_title: Formación
    link_4_title: Carreras
