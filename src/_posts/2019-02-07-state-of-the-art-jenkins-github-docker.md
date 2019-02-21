@@ -94,27 +94,27 @@ Having configured the credentials it is time to create a new Multibranch Pipelin
 
 The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it. Adapt it to suite your needs.
 
-[image: pipeline setup]
+![Pipeline setup in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pipeline_setup.jpg)
 
 If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile!
 
 Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
 
-[image: webhook]
+![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/webhook.jpg)
 
 You can configure which commits, branches, or PRs trigger the pipeline from the Branch Sources configuration in Jenkins. With the setup we looked at so far the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs. 
 
-[image: branches jenkins]
-[image: branches github]
+![Branches in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branches_jenkins.jpg)
+![Branches in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branches_github.jpg)
  
 In the case of PRs the pipeline is ran after a merge with master and it is visible together with the PR conversation.
 
-[image: pr jenkins]
-[image: pr github]
+![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
+![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pr_github.jpg)
  
 GitHub can also be configured to protect as a gatekeeper so that PRs with failing tests cannot be merged.
 
-[image: branch protection]
+![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branch_protection.jpg)
 
 ## Where to go from here?
 
