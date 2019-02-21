@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/2014_12_12/you_are_going_to_call_me_what.jpg
 tags:
 - craftsmanship
-- tdd
+- TDD
 - test-driven-development
 - naming
 - unit-test

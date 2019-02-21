@@ -13,7 +13,7 @@ image:
     src: /assets/custom/img/blog/2016-09-28-memento-iterations.png
 
 tags:
-- Swift
+- swift
 - Memento
 - VIPER
 - Separation of concerns

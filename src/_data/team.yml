@@ -55,7 +55,7 @@
   github: giuliamantuano
 
 - id: liam
-  name: Liam Griffin
+  name: Liam Griffin-Jowett
   image: /assets/custom/img/team/liam_griffin.jpg
   role: Software Craftsman
   fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
@@ -541,7 +541,7 @@
 - id: bartomeu_galmes
   name: Bartomeu Galmés
   image: /assets/custom/img/team/bartomeu_galmes.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Bartomeu started wondering about how computers work when he was a child. This led him to pursue a computer sciences bachelor's degree, specializing on software engineering. He has worked as Full stack developer. His main interests are software architecture and cloud computing.</p>
     <p>He joined Codurance as a way of challenging himself and gaining knowledge on other software-related areas.</p>
@@ -552,10 +552,10 @@
 - id: antonio_ruiz
   name: Antonio Ruiz
   image: /assets/custom/img/team/antonio_ruiz.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Toni made a change career and found the software development a true passion.</p>
-    <p>He loves learning about software craftmanship and collaborate with people that shares the same values and willing to learn.</p>
+    <p>He loves learning about software craftsmanship and collaborate with people that shares the same values and willing to learn.</p>
     <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
   twitter: __toniruiz
   github: devtoni
@@ -563,7 +563,7 @@
 - id: david_gracia
   name: David Gracia
   image: /assets/custom/img/team/david_gracia.png
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>David loves to build solid, robust and expressive software. He continually investigates better ways of doing his job. He always tries to be proud of his work and wants his work to last as long as possible as a result of quality and good design.</p>
     <p>He firmly believes that the way to extend the Software Craftsmanship is through practice, example and communication.</p>
@@ -632,3 +632,12 @@
   fullDescription:
     <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
     <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
+
+- id: jack
+  name: Jack Colemanzo
+  image: /assets/custom/img/team/jack_colemanzo.jpg
+  role: Head of Sales (Spain)
+  fullDescription:
+    <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
+    <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
+    <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>

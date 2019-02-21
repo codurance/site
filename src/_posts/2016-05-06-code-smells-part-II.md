@@ -16,7 +16,7 @@ category: software-craftsmanship
 alias: [/2016/05/07/code-smells-part-II/]
 tags:
 - design
-- clean-code
+- Clean code
 - anti-pattern
 - object-orientation-abusers
 - change-preventers

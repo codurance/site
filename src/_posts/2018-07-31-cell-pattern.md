@@ -12,7 +12,7 @@ canonical:
 image: 
     src: /assets/custom/img/blog/2018-07-31-cell-pattern/cell.jpg
 tags: 
-- Design Patterns
+- design-patterns
 ---
 In an animal body, signals are sent from one area of the body to another through the [endocrine system](http://www.ikonet.com/en/visualdictionary/static/us/hormones) (and other systems). The hormonal transport system. What happens is that a cell will do some processing (often based on some form of input or trigger) and after the processing, it is able to emit a hormone. That hormone is transported in the endocrine system until it reaches a cell with a matching receptor. The cell with the matching receptor will recieve the hormone and begin doing some processing of its own.
 

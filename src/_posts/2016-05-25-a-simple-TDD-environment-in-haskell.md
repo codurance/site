@@ -3,11 +3,11 @@ layout: post
 name: simple-tdd-environment-haskell
 title: A simple TDD environment in Haskell
 date: 2016-05-25 00:01:00 +00:00
-author: Liam Griffin
+author: Liam Griffin-Jowett
 image:
     src: /assets/custom/img/blog/2016-05-25-haskell.svg
 tags:
-- tdd
+- TDD
 - haskell
 ---
 

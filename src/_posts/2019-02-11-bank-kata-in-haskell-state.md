@@ -4,14 +4,14 @@ asset-type: post
 name: bank-kata-in-haskell-state
 title: Bank kata in Haskell - dealing with state
 date: 2019-02-11 07:00:00 +00:00
-author: Liam Griffin
+author: Liam Griffin-Jowett
 image:
     src: /assets/custom/img/blog/2019-02-11-bank-kata-in-haskell-state/London.bankofengland.arp.jpg
 canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bank-kata-in-haskell-dealing-with-state-3364c13b994f
 tags:
-    - functional-programming
+    - functional programming
     - haskell
 abstract: How to work with state in functional programming when you can't hide it
 alias: [/2019/02/11/bank-kata-in-haskell-state]
@@ -113,7 +113,7 @@ deposit amount transactions = ((), transactions ++ [Deposit amount])
 Now what is returned from our functions is similar in all cases - `(answer, [Transaction])`, where `answer` might be a string in case of `getStatement`, or nothing in case of just adding a deposit/withdrawal. Using these functions looks similar:
 
 ```haskell
-useMyBank :: (String, [Transaction])
+useMyBank :: [Transaction] -> (String, [Transaction])
 useMyBank initialTransactions = let
   (_, newTransactions) = deposit 100 initialTransactions
   (_, newTransactions2) = withdraw 50 newTransactions

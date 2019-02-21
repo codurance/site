@@ -3,7 +3,7 @@ layout: post
 name: bash-tips-easier-git-branch-deleting-and-checking-out
 title: 'Bash tips: Easier git branch deleting and checking out'
 date: 2017-07-31 00:00:00 +00:00
-author: Liam Griffin
+author: Liam Griffin-Jowett
 canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bash-tips-easier-git-branch-deleting-d93da0f0acec

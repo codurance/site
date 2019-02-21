@@ -10,7 +10,7 @@ image:
       text: Showing the main components of a class by Pluke (CC0)
       href: https://upload.wikimedia.org/wikipedia/commons/9/98/CPT-OOP-objects_and_classes_-_attmeth.svg
 tags:
-- Communication
+- communication
 
 ---
 

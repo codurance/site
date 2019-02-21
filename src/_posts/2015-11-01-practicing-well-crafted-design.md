@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/2015-11-01-incremental-design.jpg
 tags:
 - craftsmanship
-- domain-driven-design
+- Domain Driven Design
 - incremental-design
 - deliberate-practice
 categories:

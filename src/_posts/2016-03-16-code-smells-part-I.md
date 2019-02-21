@@ -15,7 +15,7 @@ image:
 alias: [/2016/03/17/code-smells-part-I/]
 tags:
 - design
-- clean-code
+- Clean code
 - anti-pattern
 - object-orientation-abusers
 - change-preventers

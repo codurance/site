@@ -3,100 +3,344 @@ layout: default
 title: Services
 ---
 
-<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
-  <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_3--after" style="height: 140%; background-image: url({{ site.baseurl }}/assets/custom/img/services/ourservices.jpg); transform: translate3d(0px, -40.0274px, 0px);"></div>
-  <div class="container g-color-white text-center g-py-120">
-    <h3 class="h1 g-font-weight-600 text-uppercase mb-2">{% t services-header.title %}</h3>
-    <p class="g-font-weight-300 g-color-white g-font-size-22 text-uppercase">{% t services-header.subtitle %}</p>
+<!-- Hero -->
+<section class="services-hero height-is-based-on-content">
+  <div class="container g-z-index-1 g-py-100">
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
+    <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+      <p class="services-hero-sub-title mb-0">{%t services.subtitle %}</p>
+    </div>
   </div>
 </section>
 
-<div class="gray-section">
+<div class="services-section">
+  <!-- Hero content 5: Expert Advice -->
+  <div class="section">
+    <div class="container g-mb-50">
+      <div class="services-two-col-content">
+        <div class="row">
 
-  <div class="services-subheader container">
-    <h2>{% t services-subheader.title %}</h2>
-    <p>{% t services-subheader.subtitle %}</p>
-  </div>
-
-</div>
-
-<div class="services-section container">
-
-  <div class="title">
-    <h2>{% t services-section_1.title %}</h2>
-  </div>
-
-  <div class="row">
-
-    <!-- Software creation section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="software-creation">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-software_creation.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t services-software_creation-embedded_craftsmen.title %}</h4>
-                <p class="card-text">{% t services-software_creation-embedded_craftsmen.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-self_contained_teams.title %}</h4>
-                <p class="card-text">{% t services-software_creation-self_contained_teams.subtitle %}</p>		
-                <h4 class="h5">{% t services-software_creation-continous_delivery.title %}</h4>
-                <p class="card-text">{% t services-software_creation-continous_delivery.subtitle %}</p>
-                <h4 class="h5">{% t services-software_creation-ux_ui_design.title %}</h4>
-                <p class="card-text">{% t services-software_creation-ux_ui_design.subtitle %}</p>
+          <div class="col-lg-6 g-mb-50 g-mb-0--lg">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+              <h2 class="text-uppercase g-color-black g-font-size-25 g-font-size-35--lg g-line-height-0_8 mb-4">{%t services.expert-advice.title %}</h2>
             </div>
+            <p class="lead">{%t services.expert-advice.subtitle %}</p>
+            <p class="g-mb-30">{%t services.expert-advice.body %}</p>
+            <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#expert-advice">{%t services.learn-more %}</a>
           </div>
-    </div>
 
-    <!-- Expert advice section-->
-    <div class="col-md-4 d-flex align-items-stretch" id="expert-advice">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-expert_advice.title %}
-            </h3>          
-            <div class="card-block">
-              <h4 class="h5">{% t services-expert_advice-enterprise_architecture.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-software_architecture_and_design.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-continous_delivery.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-continous_delivery.subtitle %}</p>
-              <h4 class="h5">{% t services-expert_advice-xp.title %}</h4>
-              <p class="card-text">{% t services-expert_advice-xp.subtitle %}</p>
-            </div>
+          <div class="col-lg-6 align-self-top">
+            <img class="img-fluid" src="{{site.baseurl}}/assets/custom/img/services/expert_advice.jpg"
+              alt="Image Description">
           </div>
-    </div>
 
-    <!-- training section -->
-    <div class="col-md-4 d-flex align-items-stretch" id="training">
-        <div class="card g-brd-lightred rounded-0 equal-height-column">
-            <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0"  style="background-image:url({{site.baseurl}}/assets/custom/img/services/service-bg-2.png);">
-              {% t services-training_coaching.title %}
-            </h3>          
-            <div class="card-block">
-                <h4 class="h5">{% t training-software-development-practices.title %}</h4>
-                <p class="card-text">{% t training-software-development-practices.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-development-practices.link_title %}</a></p>
-                <h4 class="h5">{% t training-software-architecture-and-cloud.title %}</h4>
-                <p class="card-text">{% t training-software-architecture-and-cloud.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-software-architecture-and-cloud.link_title %}</a></p>
-                <h4 class="h5">{% t training-technologies.title %}</h4>
-                <p class="card-text">{% t training-technologies.subtitle %} <a href="{{ '/services/training' | prepend: site.baseurl }}">{% t training-technologies.link_title %}</a></p>
-                <h4 class="h5">{% t training-coaching-and-mentoring.title %}</h4>
-                <p class="card-text">{% t training-coaching-and-mentoring.subtitle %}</p>
-            </div>
-          </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="text-center margin-top-20">
-        <a href="{{ '/company#contactus' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-contact-us %}</a>
+        </div>
       </div>
     </div>
-		<div class="col-md-6">
-      <div class="text-center margin-top-20">
-        <a href="{{ '/services/training' | prepend: site.baseurl }}" role="button" class="btn btn-u btn-more animated">{% t services-browse-training %}</a>
+    <div class="container">
+      <div class="services-two-col-content">
+        <div class="row">
+
+          <div class="col-lg-6 align-self-top">
+            <img class="img-fluid g-hidden-md-down"
+              src="{{site.baseurl}}/assets/custom/img/services/advice_delivery_02.jpg" alt="Image Description">
+          </div>
+
+          <div class="col-lg-6">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+              <h2 class="text-uppercase g-color-black g-font-size-25 g-font-size-35--lg g-line-height-0_8 mb-4">{%t services.effective-delivery.title %}</h2>
+            </div>
+            <p class="lead">{%t services.effective-delivery.subtitle %}</p>
+            <p class="g-mb-30">{%t services.effective-delivery.body %}</p>
+            <a class="btn btn-md u-btn-primary rounded-0 w-100 float-right g-width-auto--lg" href="#effective-delivery">{%t services.learn-more %}</a>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Our Expertise -->
+  <div class="section gray-section">
+    <div class="container">
+
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.our-expertise.title %}</h2>
+      </div>
+
+      <!-- Icon Blocks -->
+      <div class="row">
+        <div class="col-6 col-sm-4 g-mb-50">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-heart u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.software-crasftsmanship %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-6 col-sm-4 g-mb-50">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-paper-plane u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.agile-and-lean-processes %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-6 col-sm-4 g-mb-50">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-reload u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.continuous-delivery %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-6 col-sm-4 g-mb-50 g-mb-0--sm">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-control-forward u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.extreme-programming %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-6 col-sm-4">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-settings u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.devops-culture %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-6 col-sm-4">
+          <!-- Icon Blocks -->
+          <div class="text-center">
+            <span class="u-icon-v2 g-color-primary rounded-circle g-mb-20">
+              <i class="icon-screen-desktop u-line-icon-pro"></i>
+            </span>
+            <h3 class="h5 g-color-black">{%t services.our-expertise.technology-focused %}</h3>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+      </div>
+      <!-- End Icon Blocks -->
+    </div>
+  </div>
+
+  <!-- Expert Advice -->
+  <a name="expert-advice" class="anchor"></a>
+  <div class="services-expert-advice">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="g-hidden-md-down col-5"></div>
+
+        <div class="col-12 col-lg-7 g-py-50 g-px-20 g-px-80--lg services-expert-advice__content">
+          <header class="text-uppercase g-mb-25">
+            <div class="g-mb-25">
+              <h2 class="h2 g-color-white mb-0">{%t services.expert-advice.title %}</h2>
+            </div>
+            <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
+          </header>
+          <div class="row align-items-stretch">
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.high-level-consulting.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.high-level-consulting.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.technical-vision.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.technical-vision.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.discovery-phase.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.discovery-phase.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.expert-advice.technical-coaching.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.expert-advice.technical-coaching.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
+
+            <div class="col-sm-12">
+              <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Info Blocks -->
+    </div>
+  </div>
+
+  <!-- Clients who received Expert Advice -->
+  {% include_relative _includes/clients_section.html title="services.expert-advice.clients-title" filter="expert_advice" %}
+
+  <!-- Looking for Training -->
+  <div class="section gray-section">
+    <div class="container text-center">
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.training.title %}</h2>
+      </div>
+      <p class="lead g-px-100--md g-mb-30">{%t services.training.body %}</p>
+      <a class="btn btn-md u-btn-primary rounded-0 w-100 g-width-auto--lg" href="/services/training/">{%t services.learn-more %}</a>
+    </div>
+  </div>
+
+  <!-- Effective Delivery teams -->
+  <a name="effective-delivery" class="anchor"></a>
+  <section class="services-effective-delivery g-py-50">
+    <div class="container">
+
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.effective-delivery.title %}</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 g-mb-50">
+          <!-- Icon Blocks -->
+          <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+            <div class="media g-mb-15">
+              <div class="d-flex mr-4">
+                <span class="g-color-gray-dark-v5 g-font-size-26">
+                  <i class="icon-transport-056 u-line-icon-pro"></i>
+                </span>
+              </div>
+              <div class="media-body">
+                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.feature-delivery.title %}</h3>
+                <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.feature-delivery.body %}</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-lg-6 g-mb-30">
+          <!-- Icon Blocks -->
+          <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+            <div class="media g-mb-15">
+              <div class="d-flex mr-4">
+                <span class="g-color-gray-dark-v5 g-font-size-26">
+                  <i class="icon-medical-038 u-line-icon-pro"></i>
+                </span>
+              </div>
+              <div class="media-body">
+                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.technical-delivery.title %}</h3>
+                <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.technical-delivery.body %}</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients who benefitted from Effective Delivery -->
+  {% include_relative _includes/clients_section.html title="services.effective-delivery.clients-title" filter="effective_delivery" %}
+
+  <!-- Contact Us -->
+  <a name="contact-us" class="anchor"></a>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="services-contact-form-title u-heading-v2-3--bottom g-brd-primary g-mb-30">
+          <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.contact-us.title %}</h2>
+          <p>{%t services.contact-us.body %}</p>
+        </div>
+        <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "3042464",
+            formId: "{%t services.contact-us.formid %}",
+            cssClass: "",
+            onFormReady: function () {
+              addStyleOverridesToHead();
+              forceFormEmbedToApplyUpdatedStyles();
+
+              function addStyleOverridesToHead() {
+                var head = getHubSpotFormIframeHeadElement();
+
+                var stylesToSetAllFieldsToOpenSans = styleTagFor('* { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }');
+                var stylesToSetAllLinksToCoduranceOrange = styleTagFor('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }');
+                var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
+                var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
+                var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
+
+                head.append(stylesToSetAllFieldsToOpenSans);
+                head.append(stylesToSetAllLinksToCoduranceOrange);
+                head.append(stylesToSetAllFormFieldBackgroundsToWhite);
+                head.append(stylesToCentreAlignFormSubmittedMessage);
+                head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
+              }
+
+              function getHubSpotFormIframeHeadElement() {
+                var hubspotFormIFrame = $("#hs-form-iframe-0");
+                return hubspotFormIFrame.contents().find("head");
+              }
+
+              function styleTagFor(css) {
+                return '<style type="text/css">' + css + '</style>';
+              }
+
+              function forceFormEmbedToApplyUpdatedStyles() {
+                $('input[name="firstname"]').val('').change();
+              }
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </div>
 </div>
-
-

@@ -7,7 +7,7 @@ author: Toby Retallick
 image:
     src: /assets/custom/img/blog/jenkinsPost/jenkins-wide.png
 tags:
-    - continuous-integration
+    - Continuous Integration
     - Jenkins
 categories:
     - training

@@ -8,7 +8,7 @@ author: Carlos Raffellini
 image:
   src: /assets/custom/img/blog/2017-08-08-ddd-modeling.jpg
 tags:
-- DDD
+- Domain Driven Design
 - Event Storming
 ---
 
