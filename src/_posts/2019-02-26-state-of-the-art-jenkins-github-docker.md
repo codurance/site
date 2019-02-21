@@ -3,10 +3,10 @@ layout: post
 asset-type: post
 name: state-of-the-art-jenkins-github-docker
 title: State of the art Continuous Integration and Deployment Pipeline with Jenkins, GitHub, and Docker
-date: 2019-02-07 07:00:00 +00:00
+date: 2019-02-26 07:00:00 +00:00
 author: Francesco Gigli
 image:
-    src: /assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/jenkins.jpg
+    src: /assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/jenkins_bg.jpg
 tags:
     - Continuous Integration
     - Continuous Deployment
@@ -16,7 +16,7 @@ tags:
 categories:
     - training
 abstract: The best configuration for Continuous Integration and Deployment that I have seen so far, explained in some details. 
-alias: [/2019/02/07/state-of-the-art-jenkins-github-docker]
+alias: [/2019/02/26/state-of-the-art-jenkins-github-docker]
 ---
 
 ## Setting the stage
@@ -90,31 +90,31 @@ Jenkins needs access to GitHub. To do that create a username & password credenti
 
 Having configured the credentials it is time to create a new Multibranch Pipeline.
 
-![Pipeline creation in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pipeline_creation.jpg)
+![Pipeline creation in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/pipeline_creation.jpg)
 
 The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it. Adapt it to suite your needs.
 
-![Pipeline setup in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pipeline_setup.jpg)
+![Pipeline setup in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/pipeline_setup.jpg)
 
 If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile!
 
 Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
 
-![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/webhook.jpg)
+![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/webhook.jpg)
 
 You can configure which commits, branches, or PRs trigger the pipeline from the Branch Sources configuration in Jenkins. With the setup we looked at so far the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs. 
 
-![Branches in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branches_jenkins.jpg)
-![Branches in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branches_github.jpg)
+![Branches in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/branches_jenkins.jpg)
+![Branches in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/branches_github.jpg)
  
 In the case of PRs the pipeline is ran after a merge with master and it is visible together with the PR conversation.
 
-![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
-![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/pr_github.jpg)
+![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
+![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/pr_github.jpg)
  
 GitHub can also be configured to protect as a gatekeeper so that PRs with failing tests cannot be merged.
 
-![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-07-state-of-the-art-jenkins-github-docker/branch_protection.jpg)
+![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/2019-02-26-state-of-the-art-jenkins-github-docker/branch_protection.jpg)
 
 ## Where to go from here?
 
