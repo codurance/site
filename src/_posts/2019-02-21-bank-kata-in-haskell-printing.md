@@ -3,10 +3,10 @@ layout: post
 asset-type: post
 name: bank-kata-in-haskell-printing
 title: Bank kata in Haskell - printing a statement
-date: 2019-02-20 07:00:00 +00:00
+date: 2019-02-21 07:00:00 +00:00
 author: Liam Griffin-Jowett
 image:
-    src: /assets/custom/img/blog/2019-02-20-bank-kata-in-haskell-printing/retro-printer.jpg
+    src: /assets/custom/img/blog/2019-02-21-bank-kata-in-haskell-printing/retro-printer.jpg
 canonical:
     name: my personal blog
     href: https://medium.com/@Gryff/bank-kata-in-haskell-printing-a-statement-cd59e2c50ba7
@@ -14,7 +14,7 @@ tags:
     - functional programming
     - haskell
 abstract: How to print, hold state, and keep things tested
-alias: [/2019/02/20/bank-kata-in-haskell-printing]
+alias: [/2019/02/21/bank-kata-in-haskell-printing]
 ---
 
 # Bank kata in Haskell - printing a statement
