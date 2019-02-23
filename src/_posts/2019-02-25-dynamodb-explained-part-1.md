@@ -57,6 +57,6 @@ As a result, when using composite keys it is good practice to choose high-cardin
 
 As an example see how it works when looking for Jimi:
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-02-25-dynamodb-explained-part-1/02-finding-jimi.jpg "Findin Jimi")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-02-25-dynamodb-explained-part-1/02-finding-jimi.jpg "Finding Jimi")
         
-Tune in for the second post of the series when we will talk about data retrieval and indexing.
+Tune in for the second post of the series when we will talk about data retrieval and indexing. In addition, check An introduction to DynamoDB and its SDK post by my colleague Andre Torres for a hands-on introduction on DynamoDB SDK in Kotlin.
