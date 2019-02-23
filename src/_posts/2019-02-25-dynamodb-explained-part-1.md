@@ -30,6 +30,8 @@ Before getting started let's see where DynamoDB lives inside the database catego
 
 DynamoDB is a NoSQL, highly-available, low latency, scalable database that supports both key-value and document store data models. It follows a serverless approach, meaning that it is offered as a service, so the infrastructure is fully managed by AWS and works out-of-the-box with little configuration. This frees the user from managing instances, applying security patches and other infrastructure-related tasks. In addition, pricing can be very reasonable as it follows a pay-per-use model instead of charging for pre-provisioned computing resources.
 
+As there is no instance, the database concept, existent on most relational databases and also in some NoSQL like MongoDB, disappears and all is done on tables. Moreover, tables are schemaless meaning that the objects stored are not required to have the same attributes, providing more flexibility to the user.
+
 DynamoDB shines when providing high performance for large workloadst as it handles read and write throughput independently. Because of this, it is aimed at analytical operations but it can still work as a cheap, quick, low configuration solution for simple CRUD applications.
 
 For ease of use, AWS provides an SDK for several languages including as Java, .NET, Node.js, PHP, Python, Ruby, Go, C++ and JavaScript for browsers and IoT devices. In addition to all that, requests can be made using JSON over HTTP.
