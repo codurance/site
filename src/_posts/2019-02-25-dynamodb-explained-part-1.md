@@ -59,4 +59,4 @@ As an example see how it works when looking for Jimi:
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-02-25-dynamodb-explained-part-1/02-finding-jimi.jpg "Finding Jimi")
         
-Tune in for the second post of the series when we will talk about data retrieval and indexing. In addition, check [An introduction to DynamoDB and its SDK]({{site.baseurl}}/2019/02/13/working-with-dynamodb) post by my colleague Andre Torres for a hands-on introduction on DynamoDB SDK in Kotlin.
+Tune in for the second post of the series when we will talk about data retrieval and indexing. If meanwhile you want to give it a try please check [An introduction to DynamoDB and its SDK]({{site.baseurl}}/2019/02/13/working-with-dynamodb) post by my colleague Andre Torres for a hands-on introduction to DynamoDB SDK in Kotlin.
