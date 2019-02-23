@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: 2019-02-25-dynamodb-explained-part-1
 title: DynamoDB explained - Part 1
-date: 2019-02-25 15:55:00 +00:00
+date: 2019-02-20 15:55:00 +00:00
 author: Bartomeu Galmés
 description: Deep diving on DynamoDB
 image: 
@@ -30,7 +30,7 @@ Before getting started let's see where DynamoDB lives inside the database catego
 
 DynamoDB is a NoSQL, highly-available, low latency, scalable database that supports both key-value and document store data models. It follows a serverless approach, meaning that it is offered as a service, so the infrastructure is fully managed by AWS and works out-of-the-box with little configuration. This frees the user from managing instances, applying security patches and other infrastructure-related tasks. In addition, pricing can be very reasonable as it follows a pay-per-use model instead of charging for pre-provisioned computing resources.
 
-As there is no instance, the database concept, existent on most relational databases and also in some NoSQL like MongoDB, disappears and all is done on tables. Moreover, tables are schemaless meaning that the objects stored are not required to have the same attributes, providing more flexibility to the user.
+As there is no instance the database concept, existent on most relational databases and also in some NoSQL like MongoDB, disappears and all is done on tables. Moreover, tables are schemaless meaning that the objects stored are not required to have the same attributes, providing more flexibility to the user.
 
 DynamoDB shines when providing high performance for large workloadst as it handles read and write throughput independently. Because of this, it is aimed at analytical operations but it can still work as a cheap, quick, low configuration solution for simple CRUD applications.
 
@@ -59,4 +59,4 @@ As an example see how it works when looking for Jimi:
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-02-25-dynamodb-explained-part-1/02-finding-jimi.jpg "Finding Jimi")
         
-Tune in for the second post of the series when we will talk about data retrieval and indexing. In addition, check An introduction to DynamoDB and its SDK post by my colleague Andre Torres for a hands-on introduction on DynamoDB SDK in Kotlin.
+Tune in for the second post of the series when we will talk about data retrieval and indexing. In addition, check [An introduction to DynamoDB and its SDK]({{site.baseurl}}/2019/02/13/working-with-dynamodb) post by my colleague Andre Torres for a hands-on introduction on DynamoDB SDK in Kotlin.
