@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: 2019-02-25-dynamodb-explained-part-1
 title: DynamoDB explained - Part 1
-date: 2019-02-20 15:55:00 +00:00
+date: 2019-02-25 10:15:00 +00:00
 author: Bartomeu Galmés
 description: Deep diving on DynamoDB
 image: 
