@@ -11,7 +11,6 @@ canonical:
     name: Dev Rants
     href: https://devrants.blog/2019/02/24/taming-dependabot/
 tags:
-    - jenkins
     - dependabot
 abstract: How to work with dependabot in production
 alias: [/2019/02/24/taming-dependabot]
