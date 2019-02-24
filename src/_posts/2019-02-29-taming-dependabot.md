@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: taming-dependabot
 title: Taming Dependabot - how to use dependabot in the real world
-date: 2019-02-28 07:00:00 +00:00
+date: 2019-02-24 07:00:00 +00:00
 author: Christopher Eyre
 image:
     src: /assets/custom/img/blog/robot-sunset.jpg
@@ -14,7 +14,7 @@ tags:
     - jenkins
     - dependabot
 abstract: How to work with dependabot in production
-alias: [/2019/02/28/taming-dependabot]
+alias: [/2019/02/24/taming-dependabot]
 ---
 
 # Taming Dependabot
