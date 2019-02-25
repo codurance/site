@@ -119,6 +119,6 @@ One of my colleagues wrote a utility to manage a backlog of PR's:
 
 https://github.com/jaramir/ghpr
 
-This allows you to see the outstanding PR's for a team. You will need to host this yourself somewhere (Heroku works). Using this utility we can see how many PR's we need to work on.  It will take time and you will need to use the above list several times until you have a clean process.
+ This allows you to see the outstanding PR's for a team. This is hosted on ghpr.herokuapp.com. Using this utility we can see how many PR's we need to work on.  It will take time and you will need to use the above list several times until you have a clean process.
 
 Dependabot is not perfect.  It currently works one dependency at a time so linked items that need to stay in sync (react and react-dom) can cause issues. It has the ability to mark a limited time window during which it will automerge (limit it to your core business hours). This can result in 5 builds being triggered for the same project at the same time. Build servers will need to limit concurrency or performance tests will suffer. It will allow you to tame the upgrade treadmill.
