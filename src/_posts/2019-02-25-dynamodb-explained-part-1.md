@@ -20,7 +20,11 @@ tags:
 
 DynamoDB has been a bit of a buzzword recently, so after years working on relational and document databases I decided to give it a try. A lot of the assumptions I had made about DynamoDb before working with it turned out to be false, so I am hoping that this series of blog posts will help you decide if DynamoDB is appropriate for your next project.
 
-In this series of posts we will dive into DynamoDB and discover some of its quirks, which can differ a little from other databases. In this first post we will talk about what DynamoDB is and how it's approach to primary keys works. In the next post we will examine one of the most confusing aspects for people coming to DynamoDB from other databases - data retrieval - which works a little differently. We will see that, with a little help from indexes, we can achieve the most common use cases. The third and final part of this series will be focused on availability and scalability which are two big advantages of DynamoDB as AWS handles them for us.
+In this series of posts we will dive into DynamoDB and discover some of its quirks, which can differ a little from other databases. In this first post we will talk about what DynamoDB is and how it's approach to primary keys works.
+
+In the next post we will examine one of the most confusing aspects for people coming to DynamoDB from other databases - data retrieval - which works a little differently. We will see that, with a little help from indexes, we can achieve the most common use cases.
+
+The third and final part of this series will be focused on availability and scalability which are two big advantages of DynamoDB as AWS handles them for us.
 
 Before getting started let's see where DynamoDB lives inside the database categories.
 
@@ -44,7 +48,7 @@ A key difference is that by default not all attributes of a document can be effi
 
 # The DynamoDB Primary Key Approach
  
-Like many databases, DynamoDB requires you  define a primary key that uniquely identifies an element in a table. DynamoDB uses primary keys slightly differently from some other databases as the key has a direct impact on how data is physically stored, which in turn is critical for it's performance, as will be explained in the second part of this series. Similar to relational databases, the primary key can be simple or composite, the latter being compound of two attributes.
+Like many databases, DynamoDB requires you to define a primary key that uniquely identifies an element in a table. DynamoDB uses primary keys slightly differently from some other databases as the key has a direct impact on how data is physically stored, which in turn is critical for it's performance, as will be explained in the second part of this series. Similar to relational databases, the primary key can be simple or composite, the latter being compound of two attributes.
 
 DynamoDB uses it's own naming convention for  keys. A simple key is referred to as a partition key, and when using a composite key the first part is called (and behaves as) a partition key, and the second part is the sort key.
 
