@@ -598,7 +598,7 @@
   name: Rory Collins
   image: /assets/custom/img/team/rory_collins.jpg
   role: Software Craftsman
-  fullDescription: 
+  fullDescription:
     <p>Always one for solving a puzzle, Rory quickly took to programming and has spent the last ten years honing his craft across the retail and financial sectors, prior to joining Codurance.</p>
     <p>From this experience Rory has acquired a strong passion for designing and developing software systems correctly, utilising patterns and adhering to the SOLID principles to produce clean code.</p>
     <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
@@ -641,3 +641,14 @@
     <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
     <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
     <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
+
+- id: gabriele_lippi
+  name: Gabriele Lippi
+  image: /assets/custom/img/team/gabriele_lippi.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Gabriele discovered his passion for computers and coding during his studies in Philosophy. Deep curiosity and a true passion for knowledge in all its aspects, together with a strong will to learn, brought him to work first in a consultancy company as QA, then as a front-end developer in a start-up, joining the start-up hub Talent Garden, and later to join a firm of data visualization, where he had the opportunity to broaden again his horizons.</p>
+    <p>When he came across Software Craftsmanship, he immediately realized that he had found what he was looking for; now he's on his way to become a Software Craftsman.</p>
+    <p>Apart from coding, he enjoys read books, practice sports, trip around the world, and, above all, spend time whith his friends.</p>
+  github: glippi
+  twitter: gabriele_lippi
