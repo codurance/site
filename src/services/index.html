@@ -26,7 +26,7 @@ title: Services
             </div>
             <p class="lead">{%t services.expert-advice.subtitle %}</p>
             <p class="g-mb-30">{%t services.expert-advice.body %}</p>
-            <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#expert-advice">{%t services.learn-more %}</a>
+            {% include button.html href="#expert-advice" text="services.learn-more" %}
           </div>
 
           <div class="col-lg-6 align-self-top">
@@ -52,7 +52,7 @@ title: Services
             </div>
             <p class="lead">{%t services.effective-delivery.subtitle %}</p>
             <p class="g-mb-30">{%t services.effective-delivery.body %}</p>
-            <a class="btn btn-md u-btn-primary rounded-0 w-100 float-right g-width-auto--lg" href="#effective-delivery">{%t services.learn-more %}</a>
+            {% include button.html href="#effective-delivery" text="services.learn-more" css-class="float-right" %}
           </div>
 
         </div>
@@ -204,7 +204,7 @@ title: Services
             </div>
 
             <div class="col-sm-12">
-              <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
+              {% include button.html href="#contact-us" text="services.contact-us.title" %}
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@ title: Services
 
       <div class="row">
         <div class="col-sm-12 text-center">
-          <a class="btn btn-md u-btn-primary rounded-0 g-mr-15 w-100 g-width-auto--lg" href="#contact-us">{%t services.contact-us.title %}</a>
+          {% include button.html href="#contact-us" text="services.contact-us.title" %}
         </div>
       </div>
     </div>
@@ -283,7 +283,7 @@ title: Services
         <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.training.title %}</h2>
       </div>
       <p class="lead g-px-100--md g-mb-30">{%t services.training.body %}</p>
-      <a class="btn btn-md u-btn-primary rounded-0 w-100 g-width-auto--lg" href="/services/training/">{%t services.learn-more %}</a>
+      {% include button.html href="/services/training/" text="services.learn-more" %}
     </div>
   </div>
 
@@ -317,12 +317,14 @@ title: Services
                 var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
                 var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
                 var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
+                var stylesToMakeTheButtonsUppercase = styleTagFor('.hs-button { text-transform: uppercase; }');
 
                 head.append(stylesToSetAllFieldsToOpenSans);
                 head.append(stylesToSetAllLinksToCoduranceOrange);
                 head.append(stylesToSetAllFormFieldBackgroundsToWhite);
                 head.append(stylesToCentreAlignFormSubmittedMessage);
                 head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
+                head.append(stylesToMakeTheButtonsUppercase);
               }
 
               function getHubSpotFormIframeHeadElement() {
