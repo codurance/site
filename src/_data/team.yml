@@ -291,7 +291,7 @@
 
 - id: laullobet
   name: Lau Llobet
-  image: /assets/custom/img/team/lau_llobet.png
+  image: /assets/custom/img/team/lau_llobet.jpg
   role: Software Craftsman
   fullDescription:
     <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
@@ -340,19 +340,6 @@
     <p>It started in high school, working for a friend of a friend, setting up mail shots in clipper and dbase to earn pocket money. A few years after high school he ran into the same gentleman that remembered the success of his high school project, and invited him to join his software-house as an apprentice. Completing their apprenticeship program, and enjoying software development immensely, he started his professional path within South Africa, refining his skills and interests using different programming languages and processes. Keen on getting international exposure, he immigrated to the UK with a focus on web technologies, distributed systems and developed his skills and passion for best practices, hence finally being part of the Codurance team.</p>
     <p>Outside of work, you will often find him kayaking down rivers and navigating beautiful coastal paths, mountain biking and flying kites with his boys.</p>
   github: vfarah-if
-
-- id: gabriele
-  name: Gabriele Cipriano
-  image: /assets/custom/img/team/gabriele_cipriano.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Gabriele has been a science enthusiast all his life.</p>
-    <p>He started programming at the at age of 15, at that time he ended up developing a simplified version of Space Invaders in Assembly, not a smart choice technology-wise but since then he can not live without the daily sensation of making something work.</p>
-    <p>He strongly believes that code should be simple rather than easy, be readable and just enough to pass all the tests.</p>
-    <p>He is currently exploring functional programming paradigm and mainly dealing with JVM based languages.</p>
-    <p>When not coding you can probably find him cycling somewhere in the world or trying to remove excess coriander from his food.</p>
-  github: gabrielecipriano
-  twitter: rovout
 
 - id: cristinaverdi
   name: Cristina Verdi
@@ -487,7 +474,7 @@
 
 - id: solange
   name: Solange U. Gasengayire
-  image: /assets/custom/img/team/solange.png
+  image: /assets/custom/img/team/solange.jpg
   role: Software Craftswoman
   fullDescription:
     <p>With a passion for lifelong learning, Solange is always seeking out opportunities to expand her knowledge across a wide variety of fields. She fell in love with software development in her university years, when she realised how computer science concepts could be applied and utilised to solve real world problems in so many other different industries, like education and healthcare particularly.</p>
@@ -519,7 +506,7 @@
 
 - id: marco_vermeulen
   name: Marco Vermeulen
-  image: /assets/custom/img/team/marco_vermeulen.png
+  image: /assets/custom/img/team/marco_vermeulen.jpg
   role: Software Craftsman
   fullDescription:
     <p>Marco is passionate about writing well crafted code, driven and guided by tests. As a proponent of BDD, he has successfully applied this technique in the Enterprise as well as on Open Source Projects.</p>
@@ -562,7 +549,7 @@
 
 - id: david_gracia
   name: David Gracia
-  image: /assets/custom/img/team/david_gracia.png
+  image: /assets/custom/img/team/david_gracia.jpg
   role: Software Craftsman
   fullDescription:
     <p>David loves to build solid, robust and expressive software. He continually investigates better ways of doing his job. He always tries to be proud of his work and wants his work to last as long as possible as a result of quality and good design.</p>
@@ -598,7 +585,7 @@
   name: Rory Collins
   image: /assets/custom/img/team/rory_collins.jpg
   role: Software Craftsman
-  fullDescription: 
+  fullDescription:
     <p>Always one for solving a puzzle, Rory quickly took to programming and has spent the last ten years honing his craft across the retail and financial sectors, prior to joining Codurance.</p>
     <p>From this experience Rory has acquired a strong passion for designing and developing software systems correctly, utilising patterns and adhering to the SOLID principles to produce clean code.</p>
     <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
@@ -641,3 +628,26 @@
     <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
     <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
     <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
+
+- id: gabriele_lippi
+  name: Gabriele Lippi
+  image: /assets/custom/img/team/gabriele_lippi.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Gabriele discovered his passion for computers and coding during his studies in Philosophy. Deep curiosity and a true passion for knowledge in all its aspects, together with a strong will to learn, brought him to work first in a consultancy company as QA, then as a front-end developer in a start-up, joining the start-up hub Talent Garden, and later to join a firm of data visualization, where he had the opportunity to broaden again his horizons.</p>
+    <p>When he came across Software Craftsmanship, he immediately realized that he had found what he was looking for; now he's on his way to become a Software Craftsman.</p>
+    <p>Apart from coding, he enjoys reading books, practicing sports, travelling around the world, and, above all, spending time with his friends.</p>
+  github: glippi
+  twitter: gabriele_lippi
+
+- id: jorge_viana
+  name: Jorge Viana
+  image: /assets/custom/img/team/jorge_viana.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Jorge had his first computer at around the age of 10, a Sinclair ZX Spectrum with 48 KB of memory – one never forgets that.</p>
+    <p>At first he tought that personal computers were made to play games, but fortunately the computer came with a manual to a programming language (BASIC) with simple and fun examples, and this changed his live forever.</p>
+    <p>He tried to learn as much as he could on his own, and later when he arrived at high school he signed up for some classes with computer related topics.</p>
+    <p>After finishing high school he had to put his passion on hold for a while and he worked for many years in many different things until he had the opportunity to go to the university to study computer science.</p>
+    <p>Once he got the degree he started to work as a software developer only to find out that most of what we do is not science rather a complete mess and that there must be a better way to develop software.</p>
+    <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn and work alone? He is delighted that Codurance took him as an apprentice and he aspires to become a software craftsman.</p>

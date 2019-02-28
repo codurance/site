@@ -106,28 +106,6 @@ $orange-colour: #e67e22;
   width: 350px;
 }
 
-/* Homepage - Services section */
-
-.service-card {
-  &-inner {  /* 0 0 1 0 */
-    padding: 30px 5px;
-    text-align: center;
-  }
-
-  &-inner img { /* 0 0 1 1 */
-    display: block;
-    margin: 0 auto 5px auto;
-  }
-
-  &-inner h2 {   /* 0 0 1 1 */
-    color: white;
-  }
-
-  & li {   /* 0 0 1 1 */
-    padding-bottom: 8px;
-  }
-}
-
 /* Blog */
 
 .blog {

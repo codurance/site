@@ -71,7 +71,7 @@ $orange-colour: #e67e22;
     padding-bottom: 20px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    
+
     &:after {   /* 0 0 2 1 */
       bottom: 0;
       left: 50%;
@@ -95,28 +95,6 @@ $orange-colour: #e67e22;
 .homepage-blog-thumb img {  /* 0 0 1 1 */
   height: 240px;
   width: 350px;
-}
-
-/* Homepage - Services section */
-
-.service-card {
-  &-inner {  /* 0 0 1 0 */
-    padding: 30px 5px;
-    text-align: center;
-  }
-
-  &-inner img { /* 0 0 1 1 */
-    display: block;
-    margin: 0 auto 5px auto;
-  }
-
-  &-inner h2 {   /* 0 0 1 1 */
-    color: white;
-  }
-
-  & li {   /* 0 0 1 1 */
-    padding-bottom: 8px;
-  }
 }
 
 /* Blog */
@@ -250,7 +228,7 @@ $orange-colour: #e67e22;
       margin: 20px 0px;
     }
   }
-  
+
   &-section { /* 0 0 1 0 */
     padding-bottom: 40px;
 
@@ -380,7 +358,7 @@ i.no-border {   /* 0 0 1 1 */
 
 /* Sponsoring section */
 
-.breadcrumbs-v3 {   
+.breadcrumbs-v3 {
   &.ourpeople { /* 0 0 2 0 */
     background: url("{{ site.baseurl }}/assets/img/custom/careers/ourpeople.jpg") no-repeat;
     background-size: cover;
@@ -404,7 +382,7 @@ i.no-border {   /* 0 0 1 1 */
     background-size: cover;
     background-position: center center;
   }
-  
+
   &.casestudy::after{ /* 0 0 2 0 */
     background-color: white;
     background-size: cover;
@@ -559,7 +537,7 @@ i.no-border {   /* 0 0 1 1 */
         color: black;
       }
     }
-    
+
     &-container{
       text-align: center;
     }
@@ -676,12 +654,12 @@ i.no-border {   /* 0 0 1 1 */
 }
 
 blockquote.no-left-border {
-  border-left-width: 0px; 
+  border-left-width: 0px;
 }
 
 
 @media (min-width: 768px) {
   .casestudy-header-path {
     padding-right: 20px;
-    } 
+    }
 }
