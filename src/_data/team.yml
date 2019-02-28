@@ -291,7 +291,7 @@
 
 - id: laullobet
   name: Lau Llobet
-  image: /assets/custom/img/team/lau_llobet.png
+  image: /assets/custom/img/team/lau_llobet.jpg
   role: Software Craftsman
   fullDescription:
     <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
@@ -474,7 +474,7 @@
 
 - id: solange
   name: Solange U. Gasengayire
-  image: /assets/custom/img/team/solange.png
+  image: /assets/custom/img/team/solange.jpg
   role: Software Craftswoman
   fullDescription:
     <p>With a passion for lifelong learning, Solange is always seeking out opportunities to expand her knowledge across a wide variety of fields. She fell in love with software development in her university years, when she realised how computer science concepts could be applied and utilised to solve real world problems in so many other different industries, like education and healthcare particularly.</p>
@@ -506,7 +506,7 @@
 
 - id: marco_vermeulen
   name: Marco Vermeulen
-  image: /assets/custom/img/team/marco_vermeulen.png
+  image: /assets/custom/img/team/marco_vermeulen.jpg
   role: Software Craftsman
   fullDescription:
     <p>Marco is passionate about writing well crafted code, driven and guided by tests. As a proponent of BDD, he has successfully applied this technique in the Enterprise as well as on Open Source Projects.</p>
@@ -549,7 +549,7 @@
 
 - id: david_gracia
   name: David Gracia
-  image: /assets/custom/img/team/david_gracia.png
+  image: /assets/custom/img/team/david_gracia.jpg
   role: Software Craftsman
   fullDescription:
     <p>David loves to build solid, robust and expressive software. He continually investigates better ways of doing his job. He always tries to be proud of his work and wants his work to last as long as possible as a result of quality and good design.</p>
