@@ -14,8 +14,8 @@ title: Services
 </section>
 
 <div class="services-section">
-  <!-- Hero content 5: Expert Advice -->
   <div class="section">
+    <!-- Header Expert Advice -->
     <div class="container g-mb-50">
       <div class="services-two-col-content">
         <div class="row">
@@ -37,6 +37,7 @@ title: Services
         </div>
       </div>
     </div>
+    <!-- Header Effective Delivery -->
     <div class="container">
       <div class="services-two-col-content">
         <div class="row">
@@ -209,7 +210,6 @@ title: Services
           </div>
         </div>
       </div>
-      <!-- End Info Blocks -->
     </div>
   </div>
 
@@ -218,60 +218,50 @@ title: Services
 
   <!-- Effective Delivery teams -->
   <a name="effective-delivery" class="anchor"></a>
-  <section class="services-effective-delivery g-py-50">
+  <div class="services-effective-delivery">
     <div class="container">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-7 g-py-50 g-px-20 g-px-80--lg services-effective-delivery__content">
+          <header class="text-uppercase g-mb-25">
+            <div class="g-mb-25">
+              <h2 class="h2 g-color-white mb-0">{%t services.effective-delivery.title %}</h2>
+            </div>
+            <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
+          </header>
+          <div class="row align-items-stretch">
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                      class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.effective-delivery.feature-delivery.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.effective-delivery.feature-delivery.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
 
-      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.effective-delivery.title %}</h2>
-      </div>
+            <div class="col-sm-12 g-mb-25 g-mb-50--md">
+              <!-- Article -->
+              <article
+                      class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                <div class="g-flex-middle-item">
+                  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.effective-delivery.technical-delivery.title %}</h4>
+                  <p class="g-color-white-opacity-0_7 mb-0">{%t services.effective-delivery.technical-delivery.body %}</p>
+                </div>
+              </article>
+              <!-- End Article -->
+            </div>
 
-      <div class="row">
-        <div class="col-lg-6 g-mb-50">
-          <!-- Icon Blocks -->
-          <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-            <div class="media g-mb-15">
-              <div class="d-flex mr-4">
-                <span class="g-color-gray-dark-v5 g-font-size-26">
-                  <i class="icon-transport-056 u-line-icon-pro"></i>
-                </span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.feature-delivery.title %}</h3>
-                <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.feature-delivery.body %}</p>
-              </div>
+            <div class="col-sm-12">
+              {% include button.html href="#contact-us" text="services.contact-us.title" %}
             </div>
           </div>
-          <!-- End Icon Blocks -->
         </div>
-
-        <div class="col-lg-6 g-mb-30">
-          <!-- Icon Blocks -->
-          <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-            <div class="media g-mb-15">
-              <div class="d-flex mr-4">
-                <span class="g-color-gray-dark-v5 g-font-size-26">
-                  <i class="icon-medical-038 u-line-icon-pro"></i>
-                </span>
-              </div>
-              <div class="media-body">
-                <h3 class="h5 g-color-black mb-20">{%t services.effective-delivery.technical-delivery.title %}</h3>
-                <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                <p class="g-color-gray-dark-v4 g-mb-0">{%t services.effective-delivery.technical-delivery.body %}</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Icon Blocks -->
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          {% include button.html href="#contact-us" text="services.contact-us.title" %}
-        </div>
+        <div class="g-hidden-md-down col-5"></div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Clients who benefitted from Effective Delivery -->
   {% include_relative _includes/clients_section.html title="services.effective-delivery.clients-title" filter="effective_delivery" %}
