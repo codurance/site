@@ -12,7 +12,7 @@ hidden: true
 event-dates: 
  starts: 2019-03-27
  ends: 2019-03-27
-event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-43660372349
+event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-58113316494
 date: 2019-03-27 17:00:00
 ---
 
