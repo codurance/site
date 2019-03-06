@@ -1,18 +1,18 @@
 ---
 author: 
- - Sandro Mancuso
+ - Erik Torres
 layout: event
 name: barcelona-careers-open-house-2019-03
 location: "Carrer d'Aragó, 208, 4º4º, 08011 Barcelona"
 image:
     src: /assets/custom/img/events/openhouse-barcelona.png
-title: "Careers Open House (Barcelona)"
+title: "Barcelona Careers Open House"
 hidden: true
 event-dates: 
- starts: 2019-03-28
- ends: 2019-03-28
+ starts: 2019-03-27
+ ends: 2019-03-27
 event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-43660372349
-date: 2019-03-05 10:00:00
+date: 2019-03-27 17:00:00
 ---
 
 For developers who are looking for autonomy, mastery and purpose.
