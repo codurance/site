@@ -5,8 +5,7 @@ layout: event
 name: barcelona-careers-open-house-2019-03
 location: "Carrer d'Aragó, 208, 4º4º, 08011 Barcelona"
 image:
-    <!-- src: /assets/custom/img/events/openhouse-barcelona.png -->
-    src: /assets/custom/img/events/laptop.png
+    src: /assets/custom/img/events/openhouse-barcelona-2019.png
 title: "Codurance Barcelona: Careers Open House"
 hidden: true
 event-dates: 
