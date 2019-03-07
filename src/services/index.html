@@ -272,7 +272,10 @@ title: Services
         <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.training.title %}</h2>
       </div>
       <p class="lead g-px-100--md g-mb-30">{%t services.training.body %}</p>
-      {% include button.html href="/services/training/" text="services.learn-more" %}
+      {% capture training_link %}
+        {{site.baseurl}}/services/training/
+      {% endcapture %}
+      {% include button.html href=training_link text="services.learn-more" %}
     </div>
   </div>
 
