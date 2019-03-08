@@ -385,7 +385,17 @@ $orange-colour: #e67e22;
   /* Effective Delivery */
   &-effective-delivery {
     background-color: $codurance-green;
-    color: white;
+
+    /* md */
+    @media (min-width: 992px) {
+      background-image: url("{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg");
+      background-size: cover;
+      background-position: center right;
+    }
+
+    &__content {
+      background-color: $codurance-green;
+    }
   }
 
   /* Two Col Content */
