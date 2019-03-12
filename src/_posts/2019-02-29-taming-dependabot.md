@@ -65,7 +65,7 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-{% raw %}{{ checksum "package.json" }}{% endraw %}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
@@ -74,7 +74,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{% raw %}{{ checksum "package.json" }}{% endraw %}
 
       # run tests!
       - run: yarn test
