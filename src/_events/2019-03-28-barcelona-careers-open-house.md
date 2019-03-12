@@ -9,10 +9,10 @@ image:
 title: "Codurance Barcelona: Careers Open House"
 hidden: true
 event-dates: 
- starts: 2019-03-27
- ends: 2019-03-27
+ starts: 2019-04-04
+ ends: 2019-04-04
 event-page-url: https://www.eventbrite.co.uk/e/codurance-barcelona-career-open-house-tickets-58113316494
-date: 2019-03-27 17:00:00
+date: 2019-04-04 19:00:00
 ---
 
 For developers who are looking for autonomy, mastery and purpose.
