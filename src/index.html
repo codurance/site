@@ -40,63 +40,51 @@ layout: default
   </div>
 </div>
 <!-- Services panel -->
-<div class="section" id="services">
+<div class="section g-pb-25" id="services">
     <div class="container container-space">
-	    <div class="title-header">
-		    <h2>{% t index-services.title %}</h2>
+        <div class="title-header g-mb-50">
+            <h2>{% t index-services.title %}</h2>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-		        <div class="service-card">
-		            <div class="service-card-inner bg-dark-red">
-			            <img src="{{ '/assets/custom/img/home/services/software-creation-icon.png' | prepend: site.baseurl }}" />
-				    <h2 class="white">{% t index-services-software_creation.title %}</h2>
-		            </div>
-			    <div class="service-card-inner bg-red">
-				    <ul class="list-unstyled white">
-					    <li>{% t index-services-software_creation.description_line_1 %}</li>
-					    <li>{% t index-services-software_creation.description_line_2 %}</li>
-					    <li>{% t index-services-software_creation.description_line_3 %}</li>
-					    <li>{% t index-services-software_creation.description_line_4 %}</li>
-				    </ul>
-				    <a href="{{ '/services#software-creation' | prepend: site.baseurl }}"  role="button" class="btn btn-more btn-more-light animated">{% t index-services-software_creation.link_title  %}</a>
-			    </div>
-		        </div>
-	        </div>
-            <div class="col-md-4">
-		    <div class="service-card">
-		        <div class="service-card-inner bg-dark-orange">
-			        <img src="{{ '/assets/custom/img/home/services/expert-advice-icon.png' | prepend: site.baseurl }}" />
-				<h2 class="white">{% t index-services-expert_advice.title %}</h2>
-		        </div>
-		        <div class="service-card-inner bg-orange">
-				<ul class="list-unstyled white">
-					<li>{% t index-services-expert_advice.description_line_1 %}</li>
-					<li>{% t index-services-expert_advice.description_line_2 %}</li>
-					<li>{% t index-services-expert_advice.description_line_3 %}</li>
-					<li>{% t index-services-expert_advice.description_line_4 %}</li>
-				</ul>
-				<a href="{{ '/services#expert-advice' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light animated">{% t index-services-expert_advice.link_title  %}</a>
-		        </div>
-		    </div>
-	        </div>
-            <div class="col-md-4">
-		        <div class="service-card">
-		            <div class="service-card-inner bg-dark-yellow">
-			            <img src="{{ '/assets/custom/img/home/services/training-coaching-icon.png' | prepend: site.baseurl }}" />
-				    <h2 class="white">{% t index-services-training.title  %}</h2>
-		            </div>
-		            <div class="service-card-inner bg-yellow">
-				    <ul class="list-unstyled white">
-					    <li>{% t index-services-training.description_line_1 %}</li>
-					    <li>{% t index-services-training.description_line_2 %}</li>
-					    <li>{% t index-services-training.description_line_3 %}</li>
-					    <li>{% t index-services-training.description_line_4 %}</li>
-				    </ul>
-				    <a href="{{ '/services#training' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light animated">{% t index-services-training.link_title  %}</a>
-		            </div>
-		        </div>
-	        </div>
+        <div class="row d-flex">
+            <div class="col-md-4 d-flex flex-column g-mb-25 text-center">
+                <div class="bg-dark-red g-pa-25">
+                    <img src="{{ '/assets/custom/img/home/services/software-creation-icon.png' | prepend: site.baseurl }}" class="g-mb-25"/>
+                    <h2 class="white g-mb-0">{% t services.effective-delivery.title %}</h2>
+                </div>
+                <div class="bg-red g-pa-25 d-flex flex-column text-center" style="flex-grow: 1;">
+                    <p class="lead white g-mb-25" style="flex-grow: 1;">{% t services.effective-delivery.subtitle %}</p>
+                    <div>
+                        <a href="{{ '/services#effective-delivery' | prepend: site.baseurl }}" role="button"
+                           class="btn btn-more btn-more-light animated g-ma-0 align-self-end">{% t services.learn-more %}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column g-mb-25 text-center">
+                <div class="bg-dark-orange g-pa-25">
+                    <img src="{{ '/assets/custom/img/home/services/expert-advice-icon.png' | prepend: site.baseurl }}" class="g-mb-25"/>
+                    <h2 class="white g-mb-0">{%t services.expert-advice.title %}</h2>
+                </div>
+                <div class="bg-orange g-pa-25 d-flex flex-column text-center" style="flex-grow: 1;">
+                    <p class="lead white g-mb-25" style="flex-grow: 1;">{%t services.expert-advice.subtitle %}</p>
+                    <div>
+                        <a href="{{ '/services#expert-advice' | prepend: site.baseurl }}" role="button"
+                           class="btn btn-more btn-more-light animated g-ma-0 align-self-end">{% t services.learn-more %}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column g-mb-25 text-center">
+                <div class="bg-dark-yellow g-pa-25">
+                    <img src="{{ '/assets/custom/img/home/services/training-coaching-icon.png' | prepend: site.baseurl }}" class="g-mb-25"/>
+                    <h2 class="white g-mb-0">{% t index-services-training.title %}</h2>
+                </div>
+                <div class="bg-yellow g-pa-25 d-flex flex-column text-center" style="flex-grow: 1;">
+                    <p class="lead white g-mb-25" style="flex-grow: 1;">{%t services.training.body %}</p>
+                    <div>
+                        <a href="{{ '/services/training' | prepend: site.baseurl }}" role="button"
+                           class="btn btn-more btn-more-light animated g-ma-0 align-self-end">{% t services.learn-more %}</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -132,7 +120,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  
+
   </div>
 </div>
 <!-- End Clients & Partners-->
@@ -202,7 +190,7 @@ layout: default
 
             <div class="shortcode-html">
             </div>
-          
+
             <div class="section">
               <div class="container">
                 <div class="title-header">

@@ -20,35 +20,35 @@
             <!-- End Responsive Toggle Button -->
 
             <!-- Logo -->
-            <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand g-mr-50--lg">
+            <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand g-mr-25--lg g-mr-50--xl">
               <img src="{{ '/assets/custom/img/codurance.png' | prepend: site.baseurl }}" class="header-logo" alt="Codurance Logo">
             </a>
             <!-- End Logo -->
 
             <!-- Navigation -->
-            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm" id="navBar">
+            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm g-mr-25--lg" id="navBar">
               <ul class="nav navbar-nav text-uppercase g-font-weight-600 mr-auto">
-                <li class="nav-item g-mx-25--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/clients' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.clients %}</a>
                 </li>
-                <li class="nav-item g-mx-25--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/services' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.services%}</a>
                 </li>
-                <li class="nav-item g-mx-25--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/publications' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.publications%}</a>
                 </li>
-                <li class="nav-item g-mx-25--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/events' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.events%}</a>
                 </li>
-                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/company' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.company%}</a>
                 </li>
-                <li class="nav-item g-mx-25--lg g-mr-0--lg">
+                <li class="nav-item g-mx-15--lg g-mx-25--xl">
                   <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
                 </li>
                 {% for domain in site.domains %}
-                  <li class="nav-item g-mx-25--lg g-mr-0--lg g-hidden-sm-up"> 
-                    <a  href="{{ domain[1] }}{{ page.url }}" class="nav-link px-0">{{ domain[0] | upcase }}</a> 
+                  <li class="nav-item g-mx-20--lg g-mx-25--xl g-hidden-sm-up">
+                    <a  href="{{ domain[1] }}{{ page.url }}" class="nav-link px-0">{{ domain[0] | upcase }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -64,7 +64,7 @@
 
                 <i class="fa fa-angle-down g-ml-3"></i>
               </a>
-              
+
               <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-z-index-2 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
                 {% for domain in site.domains %}
                   <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
