@@ -21,11 +21,13 @@ alias: [/2019/02/21/state-of-the-art-jenkins-github-docker]
 
 ## Setting the stage
 
-For the last two years I've worked in a Node project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
+For the last two years I've worked in a Node.js project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
 
-We have done a few improvements to the configuration 
+We have done a few improvements to the configuration during this time and one of the change that I think had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
-> TODO finish this section
+Checking the outcome of the build before merging a PR prevents a lot of breakages due to tiny mistakes (forgot to run the linter, to add a given file, etc.). Later, once we started automating the update of dependencies (see [Taming dependabot]({{ site.baseurl }}{% post_url 2019-02-29-taming-dependabot %})), the feedback enabled a quicker and safer automation.
+
+From that experience comes the idea for this post: what is the ideal CI pipeline, for me, at this moment in time?
 
 ## Caveat Emptor
 
