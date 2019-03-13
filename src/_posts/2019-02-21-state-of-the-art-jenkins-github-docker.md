@@ -70,7 +70,15 @@ I’ve created [a simple Node web application](https://github.com/codurance/jenk
 
 ## The Dockerfile
 
-> TODO
+``` docker
+FROM node:lts-slim
+WORKDIR /opt/app
+COPY package.json yarn.lock ./
+RUN yarn
+COPY . .
+EXPOSE 8080
+CMD yarn start
+```
 
 It is one of the standard for deployment.
 
@@ -80,15 +88,49 @@ Works well as a cache.
 
 For this build the deployment will be just the publishing of the image to hub.docker.com.
 
+> TODO: finish this section
+
 ## The Jenkinsfile
 
-> stick the source here, commented?
+``` groovy
+pipeline {
+    agent any
 
-This file replaces the long web form normally used to configure jobs in Jenkins. The pipeline has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master (aka Trunk) branch is affected.
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker build -t codurance/jenkins-pipeline-blog:latest .'
+            }
+        }
 
-The pipeline also has a `post` section which integrates naturally with messaging systems, such as Slack.
-> The word 'post' has a meaning in the domain of messaging which can be confused with its pipeline meaning
-> Exapand the paragraph to solve the issue
+        stage('Test') {
+            steps {
+                sh 'docker run codurance/jenkins-pipeline-blog:latest yarn test'
+            }
+        }
+
+        stage('Deploy') {
+            when {
+                branch 'master'
+            }
+            steps {
+                sh 'docker push codurance/jenkins-pipeline-blog:latest'
+            }
+        }
+    }
+
+    post {
+        failure {
+            echo 'build is broken. notify team!'
+        }
+    }
+}
+```
+
+
+This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master (aka Trunk) branch is affected.
+
+The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These are intuitive extension points to integrate messaging systems, like Slack, in your workflow.
 
 ## The Jenkins setup
 
