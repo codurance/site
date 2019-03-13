@@ -39,26 +39,30 @@ Branches and Continuous integration? Yes, branches are a form of delayed integra
 
 ## Features
 
-The configuration of the build pipeline is versioned together with the source code
-* Backups
-* Atomic changes
-* Use branches to experiment with the configuration itself
+The configuration of the build pipeline is versioned together with the source code meaning you get:
 
-Building on branches
-* Can look at the build during code review
-* Know if a change is going to break the build before merging to master
-* Integration with Github (and BitBucket which I have no experience with)
-* Can automate merge of non breaking changes
+* History of old configs and ability to rollback
+* Atomic changes of config and source
+* Use of branches to experiment with the configuration itself
 
-Less queue time
-* The build is defined as a sequence of steps rather than jobs so it does not re-enter the queue
+Building and feedback from branches means you can:
+
+* Look at the outcome of the build during code review
+* Prevent branches from being merged if they break the build
+* Automate merge of non breaking changes
+
+Other minor things:
+
+* The build is defined as a sequence of steps rather than jobs so it does not re-enter the queue once it starts
+* Most of the configuration is done from a file on your local development environment instead of the Jenkins UI
 
 ## Drawbacks
 
 Jenkinsfile
-* You need to learn the syntax of the Jenkinsfile
+
+* You'll need to learn the syntax of the Jenkinsfile
 * There are two different syntax options (scripted and declarative) which you need to be aware of
-* The documentation on how to use the plugins is not always clear
+* The documentation on how to use the plugins is not always clear, with examples, and easy to use
 
 ## The app
 
