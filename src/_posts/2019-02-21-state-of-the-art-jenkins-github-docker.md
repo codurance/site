@@ -70,7 +70,7 @@ I’ve created [a simple Node web application](https://github.com/codurance/jenk
 
 ## The Dockerfile
 
-``` docker
+``` dockerfile
 FROM node:lts-slim
 WORKDIR /opt/app
 COPY package.json yarn.lock ./
