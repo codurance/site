@@ -661,4 +661,14 @@
     <p>Since starting to work as a developer, she decided that she wants to expand her knowledge in various other languages and become a better developer. After finding out about Codurance, she knew she had to join the Apprenticeship and work her way to become Craftswoman.</p>
     <p>When not working Aurelija likes to blog about her travels, places she visits and books she reads, other things she enjoys is dancing and being outdoors.</p>
   github: AurelijaZuba
-  twitter: DateWithBooks 
+  twitter: DateWithBooks
+
+- id: raul_mordillo
+  name: Raul Mordillo Lluva
+  image: /assets/custom/img/team/raul_mordillo.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Raul started his career abroad as an intern, after some years working in big companies and startups as a backend, he found out that they all lack of well crafted code and good mentoring. Pursuing a place where he could develop his skills, he joined Barcelona’s software craft community.
+    <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
+    <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
+  twitter: roaslin
