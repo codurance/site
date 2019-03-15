@@ -10,7 +10,7 @@ image:
     src: /assets/custom/img/blog/2019-02-25-dynamodb-explained-part-1/00-cloud.jpg
 tags: 
 - dynamodb
-- amazon web services
+- amazon-web-services
 - aws
 - databases
 - cloud

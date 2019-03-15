@@ -1,16 +1,18 @@
 ---
 layout: post
 asset-type: post
-name: aws-amplify 
+name: aws-amplify
 title: AWS Amplify
-date: 2019-03-12 07:00:00 +00:00
+date: 2019-03-12 18:00:00 +00:00
 author: Mashooq Badar
 image:
     src: /assets/custom/img/blog/aws-amplify.jpg
 tags:
-    - aws 
-    - cloud
+- amazon-web-services
+- cloud
+
 abstract: According to Amazon, AWS Amplify is the fastest way to scale web apps! We have noticed that a lot of AWS Documentation has been updated to promote Amplify. I took it for a quick spin to see if it lives up to the premise.
+
 ---
 
 Lately I spent a bit of time tinkering with AWS Amplify. It's a framework that provides a library, command line tools, and UI components to quickly get started with basic features that are common in most applications. The framework supports iOS, Android, Web and React Native applications. I concentrated on the Web part of the framework that has support for React, Angular, and Vue.
