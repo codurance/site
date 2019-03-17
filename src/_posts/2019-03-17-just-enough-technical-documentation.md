@@ -6,9 +6,9 @@ title: Just Enough Technical Documentation
 date: 2019-03-17 08:00:00 +01:00
 author: John Hearn
 image:
-    src: /assets/custom/img/blog/2019-03-12-just-enough-technical-documentation/fcc-valles-schematic.jpg
+    src: /assets/custom/img/blog/2019-03-17-just-enough-technical-documentation/fcc-valles-schematic.jpg
 abstract: Looking again at high-level design documentation for software projects in the context of the team and its needs.
-alias: [/2019/03/13/just-enough-technical-documentation]
+alias: [/2019/03/17/just-enough-technical-documentation]
 
 ---
 
@@ -34,7 +34,7 @@ Finally, we used standard HTML and a text-based diagramming tool: [PlantUML](htt
 
 We could then work on the documentation itself and the result is shown below (blurred to maintain confidentiality). 
 
-<img src="{{site.baseurl}}/assets/custom/img/blog/2019-03-12-just-enough-technical-documentation/tech-doc-blurred-resized.png" style="float:left; padding-left: 30px; padding-right: 50px"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2019-03-17-just-enough-technical-documentation/tech-doc-blurred-resized.png" style="float:left; padding-left: 30px; padding-right: 50px"/>
 The document consists of a standard HTML page and several PlantUML generated diagrams with a **narrative** running through it, including a short description of the content of the document, the format and its purpose.
 
 The top level includes a **context diagram** showing the system in the context of the main actors and the principal external dependencies.
