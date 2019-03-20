@@ -6,7 +6,7 @@ name: codurance-talks-episode-11
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 11 - How do I choose a Software Company to work with?"
-video-url: https://www.podbean.com/media/player/ng7iv-a9b88b?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
+video-url: https://www.podbean.com/media/player/7v7ch-ab71c8?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
 date: 2019-03-20 10:00:00 +00:00
 ---
 
