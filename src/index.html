@@ -99,7 +99,7 @@ layout: default
     <div class="row">
       {% for client in site.data.clients %}
       <div class="col-md-2 text-center">
-        <img class="index-client-logo g-opacity-0_6 g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
+        <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
       </div>
       {% endfor %}
     </div>
@@ -116,7 +116,7 @@ layout: default
     <div class="row">
       {% for partner in site.data.partners %}
       <div class="col-md-3 text-center">
-        <img class="index-partner-logo g-opacity-0_6 g-mb-0--sm" src="{{ partner.image | prepend: site.baseurl }}" alt="{{ partner.alt-text }}">
+        <img class="index-partner-logo g-mb-0--sm" src="{{ partner.image | prepend: site.baseurl }}" alt="{{ partner.alt-text }}">
       </div>
       {% endfor %}
     </div>
