@@ -122,10 +122,6 @@ company-contact-form:
    title: Contáctanos
    subtitle: También puedes utilizar el siguiente formulario para enviarnos un mensaje o directamente a nuestro correo electrónico
    offices_introduction: Por teléfono a nuestras oficinas
-   email_placeholder: Correo electrónico
-   name_placeholder: Nombre
-   text_placeholder: Escribe tu mensaje aquí...
-   button_title: Enviar
 publications-podcasts:
    title: Podcasts
 publications-videos:

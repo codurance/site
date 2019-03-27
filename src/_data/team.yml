@@ -254,18 +254,6 @@
   twitter: ggsbv
   github: ggsbv
 
-- id: safouraboyot
-  name: Safoura Boyot
-  image: /assets/custom/img/team/safoura_boyot.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Safoura has been working as a software developer and team leader in Java projects for a number of years.</p>
-    <p>Her passion for coding started when she first used Visual Basic in high school and immediately she knew that she wanted to become a software developer in the future.</p>
-    <p>She is a believer in continuous self-development both in her professional life and her personal life. She believes every second of life is precious and must be used to learn more and to dig deeper in an interesting subject!</p>
-    <p>She enjoys spending time with her partner, discovering London hidden gems, skating, swimming, astronomy and reading.</p>
-  twitter: Safouraaaaaaa
-  github: SafouraBoyot
-
 - id: tonygeorgiadis
   name: Tony Georgiadis
   image: /assets/custom/img/team/tony_georgiadis.jpg
@@ -514,16 +502,6 @@
     <p>In his spare time he loves exploring woodlands with his lovely wife Renza and their two dogs, Layla and Bonnie.</p>
   twitter: marc0der
   github: marc0der
-
-- id: daniel_parkin
-  name: Dan Parkin
-  image: /assets/custom/img/team/dan_parkin.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Before joining Codurance Dan worked at a digital agency in Manchester working with a variety of clients in different industries. He loves learning about software craftsmanship, design and delivery.</p>
-    <p>Outside of work he enjoys music production, playing guitar, attempting to learn German and reading about all things software.</p>
-  twitter: danpkn
-  github: squaretechre
 
 - id: bartomeu_galmes
   name: Bartomeu Galmés
