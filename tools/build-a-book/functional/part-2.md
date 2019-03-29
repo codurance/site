@@ -1,20 +1,3 @@
----
-author: Richard Wild
-layout: post
-asset-type: post
-title: "The Functional Style - Part 2"
-date: 2018-08-17 00:00:00
-description: Functional programming explained for the pragmatic programmer. Part 2. First steps.
-image: 
-    src: /assets/custom/img/blog/the-functional-style/title-images/episode-2.jpeg
-    attribution:
-       text: Created by Wolfgang Beyer with the program Ultra Fractal 3. - Own work, CC BY-SA 3.0
-       href: https://commons.wikimedia.org/w/index.php?curid=322042
-
-abstract: Functional programming explained for the pragmatic programmer.
-tags: 
-- functional programming
----
 # First steps.
 
 In the previous article, we introduced functional programming from first principles. It was a lot of verbiage and no practice. The idea of programming without side effects is all well and good, but we need to know how to actually do it. So let’s explore it by looking at some code. The roman numerals kata is a good exercise that we can use to illustrate these ideas.
@@ -315,11 +298,11 @@ The recursive call to `factorial` is not in tail position, because its result mu
 
 We can show Steele’s observation with a diagram showing two nested subroutine calls:
 
-![Fig. 1: The call stack builds up as subroutines call other subroutines](../../assets/custom/img/blog/the-functional-style/without_tail_call_elimination.png "Figure 1: Recursive subroutine calls build up the call stack")
+![Fig. 1: The call stack builds up as subroutines call other subroutines](functional/without_tail_call_elimination.png "Figure 1: Recursive subroutine calls build up the call stack")
 
 Here, routine A calls subroutine B, and then B calls subroutine C. When finished, C pops the return address off the call stack to return to B, and B pops the previous return address to return to A.
 
-![Fig. 2: With tail call elimination, the call stack does not build up](../../assets/custom/img/blog/the-functional-style/with_tail_call_elimination.png "Figure 2: With tail call elimination, recursive subroutine calls do not grow the stack")
+![Fig. 2: With tail call elimination, the call stack does not build up](functional/with_tail_call_elimination.png "Figure 2: With tail call elimination, recursive subroutine calls do not grow the stack")
 
 But, as Steele noticed, if the call to C is in tail position then B may as well go to C directly, leaving its own return address on top of the call stack, because C will pop that address and return directly to A. This is what we wanted to happen anyway. This is called _tail call elimination_ and the benefit is twofold: firstly, we’ve avoided one unnecessary jump instruction, and much more importantly, we’ve avoided growing the call stack.
 
@@ -539,15 +522,3 @@ Not at all. When I'm programming in an imperative language, I still use iteratio
 If this was all there was to functional programming, I would forgive you for thinking it not worth the hype. Fortunately this is not all, by a long way. We have seen some functional programming here, but not what I would call the functional style. When you program in a functional style, you very rarely need to write loops of any kind. A loop is a means to an end, not an end in itself. The functional style lets you program more in terms of your desired ends, and bother less about the means to achieve them. In the next article I will begin to broach this subject. We will introduce first-class functions and lambda expressions, and how their use can often avoid the need to write explicit loops at all.
 
 <hr/>
-
-## The whole series:
-
-1. [Introduction](/2018/08/09/the-functional-style-part-1/)
-1. First Steps
-1. [First-Class Functions I: Lambda Functions & Map](/2018/09/04/the-functional-style-part-3/)
-1. [First-Class Functions II: Filter, Reduce & More](/2018/09/19/the-functional-style-part-4/)
-1. [Higher-Order Functions I: Function Composition and Monads](/2018/10/17/the-functional-style-part-5/)
-1. [Higher-Order Functions II: Currying](/2018/11/02/the-functional-style-part-6/)
-1. [Lazy Evaluation](/2018/11/26/the-functional-style-part-7/)
-1. [Persistent Data Structures](/2018/12/04/the-functional-style-part-8/)
-1. [Pragmatism](/2018/12/12/the-functional-style-part-9/)

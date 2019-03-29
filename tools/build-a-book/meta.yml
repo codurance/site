@@ -1,14 +1,12 @@
-title: Test
+title: The Functional Style
 author:
-- Christopher Eyre
-- Sam Davies
-subtitle: A guide to modern software development
-abstract: A personal set of practices for software development
+- Richard Wild
+subtitle: Functional programming explained for the pragmatic programmer.
+abstract: Functional programming explained for the pragmatic programmer.
 keywords: 
-- Agile
-- Lean
+- Functional programming
 - Craftsmanship
 - Pragmatic
 subject: Software Development 
-description: A personal set of practices for software development.
+description: Functional programming explained for the pragmatic programmer..
 category: Software Development
