@@ -315,11 +315,11 @@ The recursive call to `factorial` is not in tail position, because its result mu
 
 We can show Steele’s observation with a diagram showing two nested subroutine calls:
 
-![Fig. 1: The call stack builds up as subroutines call other subroutines]({{site.baseurl}}/assets/custom/img/blog/the-functional-style/without_tail_call_elimination.png "Figure 1: Recursive subroutine calls build up the call stack")
+<!-- ![Fig. 1: The call stack builds up as subroutines call other subroutines](../../assets/custom/img/blog/the-functional-style/without_tail_call_elimination.png "Figure 1: Recursive subroutine calls build up the call stack") -->
 
 Here, routine A calls subroutine B, and then B calls subroutine C. When finished, C pops the return address off the call stack to return to B, and B pops the previous return address to return to A.
 
-![Fig. 2: With tail call elimination, the call stack does not build up]({{site.baseurl}}/assets/custom/img/blog/the-functional-style/with_tail_call_elimination.png "Figure 2: With tail call elimination, recursive subroutine calls do not grow the stack")
+<!-- ![Fig. 2: With tail call elimination, the call stack does not build up](../../assets/custom/img/blog/the-functional-style/with_tail_call_elimination.png "Figure 2: With tail call elimination, recursive subroutine calls do not grow the stack") -->
 
 But, as Steele noticed, if the call to C is in tail position then B may as well go to C directly, leaving its own return address on top of the call stack, because C will pop that address and return directly to A. This is what we wanted to happen anyway. This is called _tail call elimination_ and the benefit is twofold: firstly, we’ve avoided one unnecessary jump instruction, and much more importantly, we’ve avoided growing the call stack.
 

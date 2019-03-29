@@ -1,0 +1,1 @@
+pandoc -o functional.epub ../../src/_posts/2018-08-09-the-functional-style-part-1.md ../../src/_posts/2018-08-17-the-functional-style-part-2.md ../../src/_posts/2018-09-04-the-functional-style-part-3.md  --metadata-file=meta.yml  --toc --toc-depth=2 
