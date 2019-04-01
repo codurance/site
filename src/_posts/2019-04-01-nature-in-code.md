@@ -3,14 +3,16 @@ layout: post
 asset-type: post
 name: nature-in-code
 title: Nature In Code
-date: 2019-03-17 23:00:00 +01:00
+date: 2019-04-01 01:00:00 +01:00
 author: Solange U. Gasengayire
 image:
-    src: /assets/custom/img/blog/2019-03-17-nature-in-code/nature-in-code.jpg
+    src: /assets/custom/img/blog/2019-04-01-nature-in-code/nature-in-code.jpg
 abstract: How basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
-alias: [/2019/03/17/nature-in-code]
+alias: [/2019/04/01/nature-in-code]
 
 ---
+
+# Nature in Code
 
 A little over two years ago, while exploring the edX platform for online courses, I came across a fantastic one about programming for beginners called [Nature in Code: Biology in JavaScript][1]. This course shows how basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
 
@@ -19,7 +21,6 @@ In this post, we'll at how the aforementioned course teaches and translates scie
 ## The Hardy-Weinberg Model
 
 In biology, **evolution** is the change in genetic composition of a population over time. The course identifies four forces that lead to this change:
-
   - **natural selection**, as described by Charles Darwin, where <cite>individuals with characteristics best suited to their environment are more likely to survive, reproduce and pass their genes onto their children</cite>[<sup>1</sup>][2]
   - **genetic drift**, where the change in genetic composition is due to random chance
   - **migration**, which refers to population moving from one place to another
@@ -28,13 +29,12 @@ In biology, **evolution** is the change in genetic composition of a population o
 The course introduces the **Hardy-Weinberg Model** - also known as the `null` model, as being the model that describes how a system would behave without any of the forces of interest.
 
 It relies on the following simplifying assumptions:
-
 - an infinite population size
 - non-overlapping generations
 - sexual reproduction happens randomly
 - and none of the four forces above is in action
 
-Let's consider a basic model of a gene declined into two alleles a<sub>1</sub> and a<sub>2</sub>. A **gene** is defined as <cite>the basic physical and functional unit of heredity</cite>.[<sup>2</sup>][3] Every gene exists in multiple versions, called **alleles**, and these versions are the ones that make us unique.
+Let's consider a basic model of a **gene** declined into two **alleles** a<sub>1</sub> and a<sub>2</sub>. A **gene** is defined as <cite>the basic physical and functional unit of heredity</cite>.[<sup>2</sup>][3] Every gene exists in multiple versions, called **alleles**, and these versions are the ones that make us unique.
 
 For example, the human eye colour is predominantly determined by two genes, `OCA2` and `HERC2`. This last gene comes in two versions, the `C` and the `T` alleles. The combination of those two alleles is what will (mostly) determine an individual's eye colour. A person with two copies of the `C` allele will likely have blue eyes (72% probability). One with two copies of the `T` allele will likely have brown eyes (85% probability). And one with both alleles will have brown eyes with a 56% probability.
 
@@ -63,14 +63,14 @@ function hardy_weinberg_model() {
 	}
 }
 
-// calculating the next generation of genotype frequencies
+// calculate next generation data
 function next_genotype_generation() {
 	a1a1 = round(p * p, 2);
 	a2a2 = round(q * q, 2);
 	a1a2 = 2 * round(p * q, 2);
 }
 
-// round helper function
+// round a given number to n digit after the decimal point
 function round(value, n) {
 	const shifter = Math.pow(10, n);
 	return Math.round(value * shifter) / shifter;
@@ -83,16 +83,82 @@ When the simulation above is run, generation after generation, the Hardy-Weinber
 
 Mutation is the change in genetic sequence, and is the main cause of diversity among organisms. It generally happens during *cell replication*, which is the process during which a given cell will produce two identical replicas of its own DNA. It is during this process that a small change - a **small error** - might occur leading to mutation in one of the new cells. Although this (kind of) mistake is very rare, it manifest itself as **random** mutation.
 
-To implement this idea in JavaScript, as the DNA molecule is formed of four bases - adenine, guanine, cytosine, and thymine - we use an array to store our DNA as a sequence of the four bases. For example, for an individual, we'll represent their DNA sequence as `[A, G, C, C, A, T]`. Then, we represent a whole population as a two-dimensional array of similar sequences. As we'll be looking into changes in population over time, this leads to a 3D array where the third dimension is time.
+To implement this idea in JavaScript, as the DNA molecule is formed of four bases - adenine, guanine, cytosine, and thymine - we use an array to store a DNA sequence as a sequence of the four bases. For example, for an individual, we'll represent their DNA sequence as `[A, G, C, C, A, T]`. Then, we represent a whole population as a two-dimensional array of similar sequences. As we'll be looking into changes in population over time, this leads to a 3D array where the third dimension is time.
+
+Assuming we start with an identical population, our first generation (before mutation) can therefore be calculated as follows:
 
 ```javascript
-// TODO: add code and simulation for this section
+const BASES = ['A', 'G', 'C', 'T'];
+const number_of_sequences = 100;
+let sequences = []; //population array
+let original_sequence = [];
+
+function first_generation() {
+  first_sequence();
+  for (let i = 0; i < number_of_sequences; i++) {
+    sequences.push(original_sequence.slice());
+  }
+}
 ```
+where `first_sequence()` is a function that generates the original sequence, and we copy this sequence a hundred times.
+
+```javascript
+const sequence_length = 20;
+
+ // generating original sequence
+function first_sequence() {
+  for (let i = 0; i < sequence_length; i++) {
+    original_sequence.push(random_base(""));
+  }
+}
+
+// generating a random choice from the four DNA bases characters
+function random_base(current_base) {
+  let index;
+  let new_base;
+
+  do {
+    index = Math.floor(Math.random() * 4);
+    new_base = BASES[index];
+  } while (new_base === current_base);
+
+  return new_base;
+}
+```
+
+Now that we have a first generation, **mutation** will be expressed as a _random_ phenomenon over time, with a very low mutation probability of `1/10000` to translate its rarity. Running this simulation over a hundred generations, we get:
+
+```javascript
+const mutation_rate = 0.0001; // per base and generation
+const number_of_generations = 100;
+
+// mutation model
+function run_generations() {
+  for (let i = 0; i < number_of_generations; i++) {
+    // for each generation | current generation is i
+    for (let j = 0; j < sequences.length; j++) {
+      // for each sequence | current sequence is sequences[j]
+      for (let k = 0; k < sequences[j].length; k++) {
+        // for each base | current base is sequences[j][k]
+        if (Math.random() < mutation_rate) {
+          sequences[j][k] = random_base(sequences[j][k]);
+        }
+      }
+    }
+  }
+}
+```
+
+A log of the results to the console looks like this:
+
+<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-01-nature-in-code/mutation.png" width="400" height="600" alt="Migration model results"/>
+
+So, even a very low mutation probability will result in a significant increase in diversity over time.
+
 
 ## Migration: Spatial Models
 
 In studying migration, we build from the Hardy-Weinberg model, considering diploid individuals (having two copies of genetic material), but relax two of our previous simplifying assumptions.
-
 - First, we no longer consider to have an infinite population size.
 - Second, we are no longer assuming random sexual reproduction. Instead, we consider where individuals are in space. So, when mating, it's much more likely that an individual will choose a close-by partner, rather than an individual who is far away.
 
@@ -140,7 +206,6 @@ function init_grid() {
 ```
 
 Once we have our population initialised, we look at what happens generation after generation. In other words:
-
 - each individual chooses a mating partner in accordance with the maximum mating distance defined earlier
 - then we generate the children given the parents' genotypes, and store them in a temporary grid
 - and finally, once we've run through all the individuals, we replace the parent generation with the offspring generation.
@@ -158,7 +223,6 @@ function pick_mating_partner(position_i, position_j) {
 In the above snippet of code, `bounded_index` refers to a function that wraps around the grid (when necessary), and the `random_value_between` returns a random value between two given values.
 
 The function that generates the offspring once the parents' genotype is known can be broken down as follows:
-
 - when both parents are of the same genotype, then, as one would expect, the offspring will be of the same genotype
 - when the first parent is homozygous (identical alleles), and the other is heterozygous, a randomly generated probability determines which parent's genotype the child fully inherits from
 - when both parents are homozygous, but of different genotypes, a randomly generated probability determines whether the child is homozygous or heterozygous.
@@ -243,16 +307,17 @@ function homozygous_genotype_from(parent1, parent2) {
 
 The complete code for generating the **migration** spatial model and running a simulation over a 100 generations for example can be found [here][4]. And, with the help of [D3 visualisation library][5], we can generate a visualisation of how this model will evolve over time.
 
-```javascript
-// TODO: embed simulation
-```
+<iframe height="800" style="width: 100%;" scrolling="no" title="Migration Model" src="//codepen.io/SolangeUG/embed/preview/axbYVm/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/SolangeUG/pen/axbYVm/'>Migration Model</a> by Solange Gasengayire Umuhire
+  (<a href='https://codepen.io/SolangeUG'>@SolangeUG</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 
 ## Epidemics: The Spread of Infectious Diseases
 
 [Nature in Code, Biology in JavaScript][1] concludes the course by looking into how infectious diseases spread in a population. And this last chapter is my favourite of the entire course as it shows how programming (and software in general) can be used as a powerful tool to understand and find solutions to real world problems such as those caused by infectious diseases.
 
 Following the same modelling process as before, the course defines preconditions for an epidemic to occur:
-
 - a susceptible population
 - and an infectious agent that affects hosts and _can_ get passed on to other susceptible hosts. However, all infectious agents do not necessarily cause illness in their hosts.
 
@@ -260,9 +325,10 @@ Those preconditions give way to a [Susceptible-Infected-Recovered (SIR)][6] mode
 
 These three stages of evolution can be implemented in [code][7] following the same steps as before. And that leads to a simulation that looks like this:
 
-```javascript
-// TODO: embed simulation
-```
+<iframe height="860" style="width: 100%;" scrolling="no" title="Epidemics Model" src="//codepen.io/SolangeUG/embed/preview/zXYWJo/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/SolangeUG/pen/zXYWJo/'>Epidemics Model</a> by Solange Gasengayire Umuhire
+  (<a href='https://codepen.io/SolangeUG'>@SolangeUG</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Finally, in implementing recovery, we discover under which conditions an infectious disease can be slowed down and eventually stopped.
 
