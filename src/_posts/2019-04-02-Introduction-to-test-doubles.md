@@ -13,7 +13,7 @@ abstract: In this post we are going to migrate an CLI application from local sto
 tags: 
 - testing
 - mocking
-- test doubles
+- test-doubles
 ---
 
 # Test Doubles
@@ -30,7 +30,9 @@ For example, there's this `PaymentService` that has a logger:
 public interface Logger {
     void append(String text);
 }
+```
 
+```java
 public class PaymentService {
 
     private Logger logger;
