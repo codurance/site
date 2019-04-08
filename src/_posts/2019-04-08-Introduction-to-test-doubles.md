@@ -3,20 +3,21 @@ author: Andre Torres
 layout: post
 asset-type: post
 title: "Introduction to Test Doubles"
-date: 2019-04-02 00:00:00
+date: 2019-04-08 00:00:00
 description: A introduction to test doubles and how to use them.
 image: 
-    src: /assets/custom/img/blog/2019-02-13-working-dynamodb.png
-    thumbnail: /assets/custom/img/blog/2019-02-13-working-dynamodb-thumbnail.png
+    src: /assets/custom/img/blog/2019-04-02-test-doubles.jpg
+    thumbnail: /assets/custom/img/blog/2019-04-02-test-doubles.jpg
     alt: Console application printing to do list
-abstract: In this post we are going to migrate an CLI application from local storage to DynamoDB
+abstract: What are test doubles? Where they live? What do they eat?
 tags: 
 - testing
 - mocking
 - test-doubles
 ---
 
-# Test Doubles
+When you are writing unit test you are faced with many kinds of collaborators and they all have very specific behaviours, knowing which test double you have to use in the right time can
+make your life easier.
 
 ## Dummy
 
