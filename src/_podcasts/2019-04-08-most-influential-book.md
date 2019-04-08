@@ -15,8 +15,11 @@ In this episode hosted by [Jorge Gueorguiev Garcia](https://codurance.com/public
 talk about their most influential books and why you should read it. 
 
 Books mentioned in the episode:
-[Zend and the Art of Motorcycle Maintenance](https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance)
+
+[Zen and the Art of Motorcycle Maintenance](https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance)
+
 [Peak: Secrets from the New Science of Expertise](https://www.goodreads.com/book/show/26312997-peak?from_search=true)
+
 [Black Box Thinking: Why Some People Never Learn from Their Mistakes - But Some Do](https://www.goodreads.com/book/show/24611735-black-box-thinking?ac=1&from_search=true)
 
 <sub>
