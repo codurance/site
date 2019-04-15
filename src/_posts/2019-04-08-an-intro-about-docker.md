@@ -18,7 +18,7 @@ In this post we are going to see a few things:
 
 - [Before containers (Full Virtualisation)](#before-containers)
 - [What is a container? (Operating System Virtualisation)](#what-is)
-- [How docker works?](#how-docker-works)
+- [How does docker work?](#how-does-docker-work)
     - [Under the hood](#under-the-hood)
 - [What is the problem that Docker solves?](#problem-that-solves)
 - [Working with containers](#working-with-containers)
@@ -34,35 +34,35 @@ In this post we are going to see a few things:
     
 ## <a name="before-containers"></a>Before containers (Full Virtualisation)
 
-Before containers there was VMs, probably everyone here knows about this kind of virtualisation, when this was released in the early nineties it was a really good improvement for server space, now you could have systems isolated in their own environment, you wouldn’t need to have a entire server for an application, or to share the resources with other apps. You could have a VM with the right amount of resources and have a better use of your datacenter resources.
+Before containers there were VMs. Probably everyone here knows about this kind of virtualisation. When this was released in the early nineties it was a really good improvement for server space: now you could have systems isolated in their own environment, and you wouldn’t need to have a entire server for an application, or to share the resources with other apps. You could have a VM with the right amount of resources and make better use of your datacenter resources.
 
-This kind of virtualisation works by having a hypervisor that is in charge to simulate operations like I/O and privileged operations, and to keep things that belong to the virtual machine inside the virtual machine.
+This kind of virtualisation works by having a hypervisor that is in charge of simulating operations like I/O and privileged operations, and of keeping things that belong to the virtual machine inside the virtual machine.
 
-The thing with this kind of virtualisation is that add a big overhead with the Hypervisor and the guest O.S.
+The thing with this kind of virtualisation is that the Hypervisor and the guest O.S add a big overhead.
 
 ![]({{site.baseurl}}/assets/custom/img/blog/intro-docker/full-virtualisation.png "Full virtualization")
 
-This was very important because it allowed a better use of resources and  to use better our datacenter resources, and to have Infrastructure as a commodity.
+This was very important because it allowed a better use of datacenter resources, and to have Infrastructure as a commodity.
 
 ## <a name="what-is"></a>What is a container? (Operating System Virtualisation)
 
-A container is a different kind of virtualisation, instead of using an entire guest O.S. on top of a hypervisor that will translate every call, a container use the host O.S. and a group of commands to create an entire isolated area inside the same O.S., this is a more lightweight way of creating isolation inside the same host. 
+A container is a different kind of virtualisation. Instead of using an entire guest O.S. on top of a hypervisor that will translate every call, a container uses the host O.S. and a group of commands to create an entire isolated area inside the same O.S.. This is a more lightweight way of creating isolation inside the same host. 
 
 ![]({{site.baseurl}}/assets/custom/img/blog/intro-docker/os-virtualisation.png "Operating System virtualization")
 
-## <a name="how-docker-works"></a>How docker works?
+## <a name="how-does-docker-work"></a>How does docker work?
 
-Docker create containers through images, those images have everything that is needed to run the application, so if you have a postgres image, all the dependencies will be packaged inside the image, so no need to install anything to run something with docker (besides docker of course).
+Docker creates containers through images. These images have everything that is needed to run the application. For instance, if you have a postgres image, all the dependencies will be packaged inside the image, so no need to install anything to run something with Docker (besides Docker of course).
 
 ### <a name="under-the-hood"></a>Under the hood
 
 This isn't a full guide on how the insides of Docker works, but it's good to break a bit of the spell.
 
-Docker uses this library called `runC` that does all the orchestration to create a container, talking to the multiple tools that Linux provides. 
+Docker uses a library called `runC` that does all the orchestration to create a container, talking to the multiple tools that Linux provides. 
 
 So you can have some idea on how Docker works to create a container, we can try to understand some tools that are used.
 
-The first one is `chroot`, that's how Docker isolates a folder from the rest of your file system. so every time you create a new container Docker creates a folder and use `chroot` to isolate that folder from the rest of the file system. 
+The first one is `chroot`, that's how Docker isolates a folder from the rest of your file system. Every time you create a new container, Docker creates a folder and use `chroot` to isolate that folder from the rest of the file system. 
 
 ```
     /
@@ -73,11 +73,11 @@ The first one is `chroot`, that's how Docker isolates a folder from the rest of 
 
 The `chroot` will isolate the folder `your-container-id` and anything that is being run from that folder will not have access to anything in a parent level, so if you try to use the shell in `/bin/bash` it will be denied. 
 
-To isolate things like processes, network resources and interprocess communication Docker will use `namespaces`, when Linux start everything will be under the same namespace, and Docker start to add namespaces to isolate your container processes from the host. 
+To isolate things like processes, network resources and interprocess communication, Docker will use `namespaces`. When Linux starts, everything will be under the same namespace. Docker starts to add namespaces to isolate your container processes from the host. 
 
-For defining how much of the host resources Docker will use Control Groups, also named `cgroups`, which is a function that you can specify how much CPU time, memory, and I/O throughput a certain process can use, also can provide reporting of the use of those resources.
+To define how much of the host resources will be used, Docker uses Control Groups, also named `cgroups`. This is a function which allows you to specify how much CPU time, memory, and I/O throughput a certain process can use. It can also provide reporting of the use of those resources.
 
-Because of all those commands that are used to spawn a container Docker is limited to Linux, currently there's an effort to bring containers to windows), but the actual situation is that Windows and macOS are using Virtual Machines to run Docker.
+Because of all those commands that are used to spawn a container, Docker is limited to Linux. (Currently there's an effort to bring containers to Windows, but the actual situation is that Windows and macOS are using Virtual Machines to run Docker.)
 
 ## <a name="problem-that-solves"></a>What is the problem that Docker solves?
 
@@ -86,20 +86,20 @@ Why should I be using docker?
 Containers help you to deal with many problems:
 
 1. You can package complex applications to reduce the overhead of running in new environments
-    - Imagine starting in a company and needing a week to have your machine to run the application. Docker solves that problem.
-2. No more “It runs on my machine”, with docker you can have deterministic builds where everyone has the same environment.
-3. Portability, today all the big cloud companies have a container service, so if you want to move from one cloud to another, you can do without any problem.
+    - Imagine starting in a company and needing a week to set up your machine to run the application. Docker solves that problem.
+2. No more “It runs on _my_ machine”. With Docker you can have deterministic builds where everyone has the same environment.
+3. Portability: today all the big cloud companies have a container service, so if you want to move from one cloud to another, you can do so without any problem.
 
 ## <a name="working-with-containers"></a>Working with containers
 
-Docker create containers based in images that contains all the files needed to run the application, Docker will run the application and after that the container will be erased, nothing will be saved inside the container.
+Docker creates containers based on images that contain all the files needed to run the application, Docker will run the application and after that the container will be erased, nothing will be saved inside the container.
 
 We can start running our first container with:
 
 ```shell
 $ docker run hello-world
 ```
-The first thing it will show is that you don’t have the image `hello-world` so it will download. But where this image is comming from? Docker has a service called `Docker Hub` that stores and version docker images, it’s basically a GitHub for docker.
+The first thing it will show is that you don’t have the image `hello-world` so it will download it. But where is this image coming from? Docker has a service called `Docker Hub` that stores and versions docker images. It’s basically a GitHub for docker.
 
 ```
 Unable to find image 'hello-world:latest' locally
@@ -109,7 +109,7 @@ Digest: sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535
 Status: Downloaded newer image for hello-world:latest
 ```
 
-After the image is downloaded docker will create a new container, run the application and stop the container when everything is done:
+After the image is downloaded Docker will create a new container, run the application and stop the container when everything is done:
 
 ```
 Hello from Docker!
@@ -134,44 +134,48 @@ For more examples and ideas, visit:
   https://docs.docker.com/get-started/
 ```
 
-This is a very basic thing, and I think we can do better, what about running a web server? We run `docker run -p 8080:80 nginx` and wait for the image to be downloaded.
+This is a very basic thing, and I think we can do better. What about running a web server? We run `docker run -p 8080:80 nginx` and wait for the image to be downloaded.
 
-And then we can access `http://localhost:8080` and we are going to see the Nginx’s Welcome page. But wait this time we passed a new flag with some numbers and what do they mean?
+And then we can access `http://localhost:8080` and we are going to see the Nginx’s Welcome page. But wait: this time we passed a new flag (`-p`) with some numbers. What do they mean?
 
 ### Port
 
-When dealing with containers that work through ports we have to bind a localport to a container, Nginx like all webservers they always run in the port 80, and if we want to access that we need to bind to localhost, the idea behind binding a port is:
+When dealing with containers that work through ports, we have to bind a local port to a container. Like all webservers, Nginx always runs on port 80. If we want to access that we need to bind this port to localhost. The idea behind binding a port is:
 
-    docker run -p <local port>:<container port> <image>
+```shell
+docker run -p <local port>:<container port> <image>
+```
 
 This is probably one of the most used commands that you will encounter.
 
 ### Managing containers and Images
 
-We want to be able to delete a image, stop a container that is running, delete a previous container, to do that we have a set of commands:
+We want to be able to delete a image, stop a container that is running, and delete a previous container. To do that we have a set of commands:
 
-- `docker ps`: Show the running containers. Add the `-a` flag to show stopped containers.
-- `docker rm <contaier id or name>`: To delete a container
-- `docker images`: To show the downloaded images
-- `docker rmi <image id>`: To delete a image
+- `docker ps`: Show running containers. Add the `-a` flag to show stopped containers.
+- `docker rm <contaier id or name>`: Delete a container.
+- `docker images`: Show downloaded images.
+- `docker rmi <image id>`: Delete an image.
 
-Now we are able to do house cleaning and keep our images in the line.
+Now we are able to do housekeeping on our images.
 
 ## <a name="docker-compose"></a>docker-compose
 
-Running containers manually works but it isn't helpful as we want to be, we want to be able to create containers easily, with same configuration every time.
+Running containers manually works but it isn't helpful as we want to be. We want to be able to create containers easily, with the same configuration every time.
 
-That’s where `docker-compose` enters, `docker-compose` it’s an orchestration tool that can manage multiple containers at the same time for us. It’s based in an YAML file that we specify the container we want and it does all the work for us.
+That’s where `docker-compose` enters. `docker-compose` is an orchestration tool that can manage multiple containers at the same time for us. It’s based on a YAML file where we specify the container we want and it does all the work for us.
 
-A basic use case for using `docker-compose` it’s to help managing external dependencies of you application in a development environment, you can just setup a `docker-compose` file with your database, cache, smtp server and anyone running the application can easily start the containers with those dependencies.
+A basic use case for using `docker-compose` is to help managing external dependencies of your application in a development environment. You can just setup a `docker-compose` file with your database, cache and SMTP server, and anyone running the application can easily start the containers with those dependencies.
 
 ### Real world example
 
-The best way to learn something is by breaking production and the idea now is to use `docker-compose` in a real life situation, We have this java application where we can add and retrieve users through an Restful API. Those users are stored in a PostgresSQL database, but we don’t want to install postgres.
+The best way to learn something is by breaking production and the idea now is to use `docker-compose` in a real life situation. 
 
-So we are going to use `docker-compose` to provide postgres to everyone that is cloning the application.
+We have a java application where we can add and retrieve users through an RESTful API. 
 
-### Anatomy of a docker-compose script.
+Those users are stored in a PostgreSQL database, but we don’t want to install Postgres. So we are going to use `docker-compose` to provide Postgres to everyone who clones the application.
+
+### Anatomy of a docker-compose script
 
 ```yml
   version: '3.1'
@@ -188,11 +192,11 @@ So we are going to use `docker-compose` to provide postgres to everyone that is 
 ```
 
 - `version` tag indicates the minimum version of `docker-compose` that can be used with the script
-- `services` part is where our containers will be declared, we give a name to our service and we specify what we want for that service. In this case we have a PostgreSQL 10 image, there is the name of the image and the version separated by a colon.
-- `ports` we are binding the port `5432` in the container to the `5432` in our localhost like we did previously with the nginx container.
-- `environment` set environment variables like `POSTGRES_PASSWORD` AND `POSTGRES_DB` to define the password and to create a database named `realworld`, usually you can see possible variables in the documentation for the docker image in the docker hub.
+- `services`: this is where our containers will be declared. We give a name to our service and we specify what we want for that service. In this case we have a PostgreSQL 10 image. `postgres:10` is the name of the image and the version separated by a colon.
+- `ports`: we are binding the port `5432` in the container to the `5432` in our localhost like we did previously with the nginx container.
+- `environment`: set environment variables like `POSTGRES_PASSWORD` and `POSTGRES_DB` to define the password and create a database named `realworld`. Usually you can see possible variables in the documentation for the Docker image in Docker Hub.
 
-Now if we run `docker-compose up -d`, the `-d` flag means detached, so the process keep running in background. We will able to see the postgres instance running.
+Now, if we run `docker-compose up -d` (the `-d` flag means detached so the process keeps running in the background), we will able to see the Postgres instance running.
 
 So if we build a jar of the application it will be possible to run the application without any problem.
 
@@ -204,7 +208,7 @@ $ ./gradlew shadowJar
 $ java -jar build\libs\realworldkata-1.0-SNAPSHOT-all.jar
 ```
 
-Right now we can access `http://localhost.com:4321/database` and you should see `Tables created!` if everything is working. We can double check by accessing the container and checking if we see the table inside the database.
+Now, we can access `http://localhost.com:4321/database` and we should see `Tables created!` if everything is working. We can double check by accessing the container and checking if we see the table inside the database.
 
 First we check the ID of the container:
 
@@ -235,17 +239,17 @@ $ realworld=# \dt
 
 ## <a name="building-images"></a>Building images
 
-Now we can use images created by other people, but what if we want to use our own images? Can we use docker to distribute our application? Of course, this isn’t amateur hour.
+Now we can use images created by other people, but what if we want to use our own images? Can we use Docker to distribute our application? Of course; this isn’t amateur hour.
 
 You can build images through a `Dockerfile` where we are going to specify our dependencies and how to build and run the application.
 
-First we start to build our `Dockerfile` by specifying a base image. This base image is what we are going to use to run our application, it can be a ubuntu or a java image, for our application we are going to use the `adoptopenjdk/openjdk11-openj9` image, which is the OpenJ9 implementation by Eclipse Foundation.
+First we start to build our `Dockerfile` by specifying a base image. This base image can be a Ubuntu or a Java image. For our application we are going to use the `adoptopenjdk/openjdk11-openj9` image, which is the OpenJ9 implementation by Eclipse Foundation.
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
 ```
 
-With the base image in hands we can move to gather our source code to build the application, for that we need to set `WORKDIR` and use the `COPY` command to get our source files.
+With the base image in hand, we can move to gather our source code to build the application. For that we need to set `WORKDIR` and use the `COPY` command to get our source files.
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
@@ -253,7 +257,7 @@ WORKDIR /realworld
 COPY . /realworld
 ```
 
-We have the sources, we need to build our application now, so we need to `RUN` the command to generate a fat jar with all the dependencies.
+We have the sources; we need to build our application now, so we need to `RUN` the command to generate a fat jar with all the dependencies.
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
@@ -262,7 +266,7 @@ COPY . /realworld
 RUN ./gradlew shadowJar
 ```
 
-This is a web application that receive requests in a tcp port, to be able to receive requests in the container we `EXPOSE` the port that we want. The `EXPOSE` will say which port the container should expose to the docker network that `docker-compose` will create and also work as documentation to see which port you have to bind when running a container.
+This is a web application that receive requests in a TCP port. To be able to receive requests in the container we `EXPOSE` the port that we want. The `EXPOSE` will say which port the container should expose to the docker network that `docker-compose` will create and also work as documentation to see which port you have to bind when running a container.
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
@@ -272,7 +276,7 @@ RUN ./gradlew shadowJar
 EXPOSE 4321
 ```
 
-finally we can run the application by passing the `CMD` to start
+Finally we can run the application by passing the `CMD` to start
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
@@ -282,7 +286,7 @@ EXPOSE 4321
 CMD ["java", "-jar", "build/libs/realworldkata-1.0-SNAPSHOT-all.jar"]
 ```
 
-With the `Dockerfile` ready we can build a image and create a container from it.
+With the `Dockerfile` ready, we can build a image and create a container from it.
 
 ```shell
 $ docker build . --tag "realworld"
@@ -300,13 +304,13 @@ Exception in thread "main" java.lang.RuntimeException
         at realworld.Application.main(Application.java:65)
 ```
 
-The `--tag` flag is to give the image a name, you can also give a tag like `dev` or `staging`.
+The `--tag` flag is to give the image a name. You can also give a tag like `dev` or `staging`.
 
-The application is running as it should, the error is happening because the container don’t have access to the other container that runs postgres. Now that we know that everything is working, we can start to improve some parts of the container build.
+The application is running as it should; the error is happening because the container doesn't have access to the other container that runs postgres. Now that we know that everything is working, we can start to improve some parts of the container build.
 
 ### .dockerignore
 
-Like git that have a `.gitignore`, docker has a `.dockerignore` file that exclude files from the copy of your container. Let’s create one to not copy the IDE specific and output folders, so we have a faster build.
+Like git that have a `.gitignore`, docker has a `.dockerignore` file that exclude files from the copy of your container. Let’s create one to not copy the IDE-specific and output folders, so we have a faster build.
 
 ```
 .gradle/
@@ -317,26 +321,26 @@ out/
 
 ### <a name="multistage-build"></a>Multi-stage build
 
-We are creating the docker image with all our source code, and since we just want to run our application we don't have to distribute them with our final jar. Case we leave the source there anyone with the access to the image will be able to see it, also this make our image bigger without any need. To solve this we are going to do a `multi-stage` build. 
+We are creating the docker image with all our source code, and since we just want to run our application we don't have to distribute them with our final jar. Case we leave the source there anyone with the access to the image will be able to see it, also this will make our image bigger without any need. To solve this we are going to do a `multi-stage` build. 
 
-What is a `multi-stage` build?
+#### What is a `multi-stage` build?
 
 A multi stage build is a way of splitting the process of building a image between multiple containers with distinct steps, kinda like a CI build. To transform your regular build into a `multi-stage` one is easy, you just have to add another `FROM` in your `Dockerfile`. 
 
 In our case we want to split the environment that builds our application, and a lightweight one that will run. 
 
-First we are going to deal with the container that we already have, there are a few things that we have to do:
+First we are going to deal with the container that we already have. There are a few things that we have to do:
 
 - Give a name for the build stage
     We do that by adding the `as <name>` in front of the base image
 
-- Then we have to remove the things that is to run the application
+- Then we have to remove the things that are to run the application
     For that we remove the `EXPOSE` and the `CMD` from the the file, but don't delete, we are going to use it later.
 
-Now we can start to create our image that will run the application, 
+Now we can start to create our image that will run the application:
 
 - Defining the image.
-    We don't need a complete image with gradle or maven, in fact we don't even need the JDK, we just need the JRE,  so we can use the `adoptopenjdk/openjdk11:jre-11.0.2.9-alpine` image that only have the Java runtime and it's based in a lightweight linux distro called Alpine. 
+    We don't need a complete image with Gradle or Maven. In fact, we don't even need the JDK, we just need the JRE,  so we can use the `adoptopenjdk/openjdk11:jre-11.0.2.9-alpine` image that only has the Java runtime. It's based on a lightweight linux distro called Alpine. 
 
 - We can have the same `WORKDIR` from the previous stage.
 - Now we are going to `COPY` the jar that we build
@@ -363,9 +367,9 @@ CMD ["java", "-jar", "realworldkata-1.0-SNAPSHOT-all.jar"]
 
 Now we have our image being built properly we can add to our `docker-compose.yml`, but unlike the postgres image that we have already, we want to build the image based in the `Dockerfile` and also we need to set up some environment variables to connect to the database. 
 
-So we add a new service to the file, and instead of using `image` we are going to use `build` and pass the relative path to the `Dockerfile` that we want to build. 
+So we add a new service to the file. Instead of using `image`, we are going to use `build` and pass the relative path to the `Dockerfile` that we want to build. 
 
-We map the port and add the environment variable for the `DB_HOST` pointing to our `db` service and the postgres port, and for last we add the `depends_on` saying that we depend on the `db` service. 
+We map the port and add the environment variable for the `DB_HOST` pointing to our `db` service and the postgres port. Finally, we add the `depends_on` saying that we depend on the `db` service. 
 
 ```yml
 version: '3.1'
@@ -390,9 +394,9 @@ services:
       - db
 ```
 
-When we try to instantiate the containers but it isn't working yet, why? Idk yet, let's check the logs. 
+When we try to instantiate the containers, it isn't working yet: why? I don't know yet, let's check the logs. 
 
-This is the important part of our logs, `depends_on` waits the container to be ready but don't wait to run things post initialisation.
+This is the important part of our logs: `depends_on` waits the container to be ready but doesn't wait to run things post-initialisation.
 
 ```shell
 db_1         | fixing permissions on existing directory /var/lib/postgresql/data ... ok
@@ -412,18 +416,18 @@ db_1         | syncing data to disk ... ok
 
 ### <a name="basic-troubleshooting"></a>Basic troubleshooting
 
-In this case we have the "theory" that the application is trying to connect to the database before everything is ready, in this case we have to test that if we run the application after the database is ready everything will work. 
+In this case we have the "theory" that the application is trying to connect to the database before everything is ready. We have to test that if we run the application after the database is ready, everything will work. 
 
-The most basic thing that we can do to verify that is to spawn the containers and to start the application manually, but how to connect to the container using docker-compose? 
+The most basic thing that we can do to verify that is to spawn the containers and to start the application manually, but how can we connect to the container using `docker-compose`? 
 
-Just like running a single container in Docker, docker-compose provides the `run` method so we can use to access a shell inside our container. 
+Just like running a single container in Docker, `docker-compose` provides the `run` method which we can use to access a shell inside our container. 
 
 ```shell
 # docker-compose run <service> <command>
 docker-compose run realworld /bin/sh
 ```
 
-This will give access to the container with the application allowing to run:
+This will give access to the container with the application allowing us to run:
 
 ```shell
 $ java -jar realworldkata-1.0-SNAPSHOT-all.jar
@@ -431,11 +435,11 @@ SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ```
-if the application don't throw any error related to the database means that is working and we can proceed to create a solution to the problem.
+if the application doesn't throw any error related to the database, then it is working and we can proceed to create a solution to the problem.
 
 ### Hacking our way through
 
-How can this problem be solved? Adding script that keeps checking if the database is up, and only run the application when it's ready will do the work.
+How can this problem be solved? Adding a script that keeps checking if the database is up, and only runs the application when it's ready, will do the work.
 
 > Modern problems, require modern solutions.
 
@@ -459,15 +463,15 @@ How can this problem be solved? Adding script that keeps checking if the databas
     exec $@
 ```
 
-We already have a image ready, we could rebuild with the script and change the run command, but then we would have this check done everywhere that we are using the image, and we don't want that because in other places we might be using a database that isn't in a docker container. 
+We already have a image ready, so we could rebuild with the script and change the run command, but then we would have this check done everywhere that we are using the image, and we don't want that because in other places we might be using a database that isn't in a Docker container. 
 
-So we can override command from our image and run the script. 
+So we can override the command from our image and run the script. 
 
 The first thing we have to do is to put the script inside the container, we already have built the image so we can't use `COPY` again, in this case we can create a volume inside our container. 
 
 ### <a name="volumes"></a>Volumes
 
-So a volume is a way to mound a folder from the host machine into a container, everything inside that folder will be mirrored to the container, this is good when you want to save things like logs or to persist a database that you are running in a container. 
+A volume is a way to mount a folder from the host machine into a container. Everything inside that folder will be mirrored to the container. This is good when you want to save things like logs or to persist a database that you are running in a container. 
 
 We change the `docker-compose.yml` to add our new features:
 
@@ -501,20 +505,20 @@ We added the `volumes` tag linking the scripts folder inside our application fol
 
 ## <a name="flexible-build"></a>Making our image more flexible with ARG
 
-Right now the application is exposing the port "4321", and it's very inflexible any change is needed, the only way to do that would be having the mapping in the docker-compose file to map to a different port, but this can be more flexible using `ARG` in the Dockerfile. 
+Right now the application is exposing the port "4321", which is very inflexible. If any change is needed, the only way to do it would be having the mapping in the `docker-compose` file to map to a different port. This can be made more flexible using `ARG` in the `Dockerfile`. 
 
 What are the changes needed to do that? 
 
-Set the `ARG` key word in the docker file, this will receive the name of the argument and the default value. It's good to set a default value in case you don't want to be passing the value during the build every time.
+Set the `ARG` keyword in the `Dockerfile`. This will receive the name of the argument and the default value. It's good to set a default value in case you don't want to be passing the value during the build every time.
 
 ```Dockerfile
 # ARG NAME=<value>
 ARG PORT=4321
 ```
 
-Another thing to take care when using ARG is the scope, you cannot use an `ARG` that is declared in a `FROM` after the one that you are working with. Think like variables during code, you can't use something before declaring or that was declared inside other function. 
+Another thing to take care around when using `ARG` is the scope. You cannot use an `ARG` that is declared in a `FROM` after the one that you are working with. Think like variables during code: you can't use a variable before it's been declared, nor use a variable that was declared inside another function. 
 
-With the `ARG` created it's time to set the environment variable PORT so the application knows which port to use. This can be done using the `ENV` keyword.
+With the `ARG` created, it's time to set the environment variable PORT so the application knows which port to use. This can be done using the `ENV` keyword.
 
 ```Dockerfile
 # ENV NAME $arg 
@@ -544,14 +548,14 @@ EXPOSE $PORT
 CMD ["java", "-jar", "realworldkata-1.0-SNAPSHOT-all.jar"]
 ```
 
-And to build the container passing the argument
+And to build the container passing the argument:
 
 ```shell
 # docker build . --build-arg ARG=<value>
 $ docker build . -t realworld:ports --build-arg PORT=4332
 ```
 
-To check if the container is running with the right port you can see in the exposed ports with `docker ps` 
+To check if the container is running with the right port, you can see the exposed ports with `docker ps` 
 
 ```
 $ docker run -it realworld:args /bin/sh
@@ -561,9 +565,9 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 10b6105d1db2        realworld:args      "/bin/sh"           5 seconds ago       Up 4 seconds        4332/tcp            gravel_pit
 ```
 
-You can see in the column PORTS that is exposing the `4332/tcp` just like was passed in the build args, but what if you want to do that with `docker-compose`? Is there any way of passing `build-arg` through the yml file? Of course.
+You can see in the column `PORTS` that it is exposing `4332/tcp` just like was passed in the build args, but what if you want to do that with `docker-compose`? Is there any way of passing `build-arg` through the yml file? Of course.
 
-Change the `docker-compose.yaml` to pass the argument in the build part using the `args` tag, now that `build` will have multiple values `context`  has to be added to set the place where your `Dockerfile` will be. 
+Change the `docker-compose.yaml` to pass the argument in the build part using the `args` tag. Now that `build` will have multiple values. The key `context`  has to be added to set the place where your `Dockerfile` will be. 
 
 ```yml
 # ...
@@ -583,7 +587,7 @@ Change the `docker-compose.yaml` to pass the argument in the build part using th
     command: ["/scripts/wait-for-db.sh", "java", "-jar", "realworldkata-1.0-SNAPSHOT-all.jar"]
 ```
 
-With all the changes in place just run `docker-compose up` and it's possible to check if everything is running in the right port by trying to create the tables
+With all the changes in place, just run `docker-compose up` and it's possible to check if everything is running in the right port by trying to create the tables
 
 ```
 $ curl localhost:4332/database
@@ -592,7 +596,7 @@ Tables created!
 
 ## <a name="entrypoints"></a>Entrypoints
 
-`CMD` isn't the only way to start a container in Docker, in fact before the `CMD` is executed a container has a `ENTRYPOINT`, Sometimes you want your container to do a more complex start up and to execute a few commands or scripts before start your application. Docker will combine the `ENTRYPOINT` with the `CMD` passed to the container, so in the case that we have have in the `docker-compose.yml` that was just build the `[wait-for-db.sh](http://wait-for-db.sh)` could be split from the java command. 
+`CMD` isn't the only way to start a container in Docker, in fact before the `CMD` is executed a container has an `ENTRYPOINT`. Sometimes you want your container to do a more complex start up and to execute a few commands or scripts before start your application. Docker will combine the `ENTRYPOINT` with the `CMD` passed to the container, so in the case that we have in the `docker-compose.yml`, the command that was just building the `wait-for-db.sh` could be split from the `java` command. 
 
 So if the Dockerfile looked like this: 
 
@@ -612,17 +616,17 @@ ENTRYPOINT ["wait-for-db.sh"]
 CMD ["java", "-jar", "realworldkata-1.0-SNAPSHOT-all.jar"]
 ```
 
-This would be executed like `wait-for-db.sh java -jar realworldkata-1.0-SNAPSHOT-all.jar` so the script can do multiple things and at the end execute the application. 
+This would be executed like `wait-for-db.sh java -jar realworldkata-1.0-SNAPSHOT-all.jar`. The script can do multiple things and at the end execute the application. 
 
-Postges does something like that, instead of having the `postgres` command has the startup point it executes a script that sets the folder where the data will be stored, sets the password in the right environment variable and check if there is any `.sql` or `.sh` file to be run before starting the database. 
+Postges does something like this. Instead of having the `postgres` command as the startup point, it executes a script that sets the folder where the data will be stored, sets the password in the right environment variable and check if there is any `.sql` or `.sh` file to be run before starting the database. 
 
 [docker-library/postgres](https://github.com/docker-library/postgres/blob/ef04f3055bab11b10d3d5c41a659acfacf2c850b/10/docker-entrypoint.sh)
 
-> Don't start your application with `ENTRYPOINT`, use `CMD` so you can override the command with `docker run`.
+> Don't start your application with `ENTRYPOINT`. Use `CMD` so you can override the command with `docker run`.
 
 ## <a name="docker-hub"></a>Docker hub and container registry
 
-Building the same docker image in every machine isn't the most intuitive thing to do, and you want to use the image in other machine without having all the source code, but just with a `docker-compose.yml`. 
+Building the same docker image in every machine isn't the most intuitive thing to do. You might want to use the image in another machine without having all the source code, but just with a `docker-compose.yml`. 
 
 The first thing is to register an account on Docker Hub and to login with that account in the command line: 
 
@@ -630,7 +634,7 @@ The first thing is to register an account on Docker Hub and to login with that a
 $ docker login
 ```
 
-After the login you can push the images to the repositories, the repository is based in the tag name that you give when building the image, when building the first image there was the `--tag` flag to give a name to the image, and the repository in Docker Hub will use the same name. You can have multiple versions of the same image in a repository by adding a version to it. 
+After the login you can push the images to the repositories. The repository is based on the tag name that you give when building the image. When building the first image there was the `--tag` flag to give a name to the image; the repository in Docker Hub will use the same name. You can have multiple versions of the same image in a repository by adding a version to it. 
 
 ```shell
 # docker build . --tag <repository>/<image-name>:<version>
@@ -644,9 +648,9 @@ So we can build the image now, and when everything is set you can push using
 $ docker push andretorrescodurance/realworld:0.1
 ```
 
-> Case you don't add the repository before the image name you might have  trouble pushing the image to Docker Hub.
+> If you don't add the repository before the image name, you might have  trouble pushing the image to Docker Hub.
 
-Now instead of building from scratch you can just use the image from Docker Hub in your `docker-compose.yml` and run without sending the source files anywhere. 
+Now instead of building from scratch, you can just use the image from Docker Hub in your `docker-compose.yml` and run without sending the source files anywhere. 
 
 ```yml
 version: '3.1'
