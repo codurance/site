@@ -7,12 +7,13 @@ date: 2019-04-16 00:00:00
 description: Start using docker in your development environment.
 abstract: Today in this post, we build a docker image, docker-compose instantiate a container, and you push an image.
 image: 
-    src: /assets/custom/img/blog/intro-docker/containers.jpg  
-    thumbnail: /assets/custom/img/blog/intro-docker/docker.png
+    src: /assets/custom/img/blog/intro-docker/containers.jpg
+    thumbnail: /assets/custom/img/blog/intro-docker/containers.jpg
 tags: 
 - containers
 - docker
 - docker-compose
+- devops
 ---
 
 In this post we are going to see a few things:
@@ -22,11 +23,11 @@ In this post we are going to see a few things:
 - [Building images](#building-images)
     - [Multi-stage build](#multistage-build)
     - [Basic troubleshooting](#basic-troubleshooting)
-    - [Volumes](#volumes)
+- [Volumes](#volumes)
 - [Making our image more flexible with ARG](#flexible-build)
 - [Entrypoints](#entrypoints)
 - [Docker hub and container registry](#docker-hub)
-    - [Sources](#sources)
+- [Sources](#sources)
     
 
 ## <a name="docker-containers"></a>Docker: What is it?
