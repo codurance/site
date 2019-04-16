@@ -3,11 +3,12 @@ author: Andre Torres
 layout: post
 asset-type: post
 title: "Containers with Docker"
-date: 2019-04-08 00:00:00
-description: A introduction to test doubles and how to use them.
+date: 2019-04-16 00:00:00
+description: Start using docker in your development environment.
+abstract: Today in this post, we build a docker image, docker-compose instantiate a container, and you push an image.
 image: 
-    src: /assets/custom/img/blog/2019-04-02-test-doubles.jpg
-    thumbnail: /assets/custom/img/blog/2019-04-02-test-doubles.jpg
+    src: /assets/custom/img/blog/intro-docker/containers.jpg  
+    thumbnail: /assets/custom/img/blog/intro-docker/docker.png
 tags: 
 - containers
 - docker
@@ -16,11 +17,6 @@ tags:
 
 In this post we are going to see a few things:
 
-- [Before containers (Full Virtualisation)](#before-containers)
-- [What is a container? (Operating System Virtualisation)](#what-is)
-- [How does docker work?](#how-does-docker-work)
-    - [Under the hood](#under-the-hood)
-- [What is the problem that Docker solves?](#problem-that-solves)
 - [Working with containers](#working-with-containers)
 - [docker-compose](#docker-compose)
 - [Building images](#building-images)
@@ -32,63 +28,35 @@ In this post we are going to see a few things:
 - [Docker hub and container registry](#docker-hub)
     - [Sources](#sources)
     
-## <a name="before-containers"></a>Before containers (Full Virtualisation)
 
-Before containers there were VMs. Probably everyone here knows about this kind of virtualisation. When this was released in the early nineties it was a really good improvement for server space: now you could have systems isolated in their own environment, and you wouldn’t need to have a entire server for an application, or to share the resources with other apps. You could have a VM with the right amount of resources and make better use of your datacenter resources.
+## <a name="docker-containers"></a>Docker: What is it?
 
-This kind of virtualisation works by having a hypervisor that is in charge of simulating operations like I/O and privileged operations, and of keeping things that belong to the virtual machine inside the virtual machine.
+I could try to explain what a container is, but, the explanation found in the Docker website probably do a better job. The section [What is a container?](https://www.docker.com/resources/what-container) from the Docker website, descbribes a containers as a unit of software that packages up code and all its dependencies. This way applications become more reliable when changing from a environment  to another. Containers are lightweight, standalone, executable package of software.  
 
-The thing with this kind of virtualisation is that the Hypervisor and the guest O.S add a big overhead.
-
-![]({{site.baseurl}}/assets/custom/img/blog/intro-docker/full-virtualisation.png "Full virtualization")
-
-This was very important because it allowed a better use of datacenter resources, and to have Infrastructure as a commodity.
-
-## <a name="what-is"></a>What is a container? (Operating System Virtualisation)
-
-A container is a different kind of virtualisation. Instead of using an entire guest O.S. on top of a hypervisor that will translate every call, a container uses the host O.S. and a group of commands to create an entire isolated area inside the same O.S.. This is a more lightweight way of creating isolation inside the same host. 
-
-![]({{site.baseurl}}/assets/custom/img/blog/intro-docker/os-virtualisation.png "Operating System virtualization")
-
-## <a name="how-does-docker-work"></a>How does docker work?
-
-Docker creates containers through images. These images have everything that is needed to run the application. For instance, if you have a postgres image, all the dependencies will be packaged inside the image, so no need to install anything to run something with Docker (besides Docker of course).
-
-### <a name="under-the-hood"></a>Under the hood
-
-This isn't a full guide on how the insides of Docker works, but it's good to break a bit of the spell.
-
-Docker uses a library called `runC` that does all the orchestration to create a container, talking to the multiple tools that Linux provides. 
-
-So you can have some idea on how Docker works to create a container, we can try to understand some tools that are used.
-
-The first one is `chroot`, that's how Docker isolates a folder from the rest of your file system. Every time you create a new container, Docker creates a folder and use `chroot` to isolate that folder from the rest of the file system. 
-
-```
-    /
-    |-- tmp
-     |-- docker
-      |-- your-container-id # Folder to be isolated
-```
-
-The `chroot` will isolate the folder `your-container-id` and anything that is being run from that folder will not have access to anything in a parent level, so if you try to use the shell in `/bin/bash` it will be denied. 
-
-To isolate things like processes, network resources and interprocess communication, Docker will use `namespaces`. When Linux starts, everything will be under the same namespace. Docker starts to add namespaces to isolate your container processes from the host. 
-
-To define how much of the host resources will be used, Docker uses Control Groups, also named `cgroups`. This is a function which allows you to specify how much CPU time, memory, and I/O throughput a certain process can use. It can also provide reporting of the use of those resources.
-
-Because of all those commands that are used to spawn a container, Docker is limited to Linux. (Currently there's an effort to bring containers to Windows, but the actual situation is that Windows and macOS are using Virtual Machines to run Docker.)
-
-## <a name="problem-that-solves"></a>What is the problem that Docker solves?
+## What is the problem that Docker solves?
 
 Why should I be using docker?
 
 Containers help you to deal with many problems:
 
-1. You can package complex applications to reduce the overhead of running in new environments
-    - Imagine starting in a company and needing a week to set up your machine to run the application. Docker solves that problem.
-2. No more “It runs on _my_ machine”. With Docker you can have deterministic builds where everyone has the same environment.
-3. Portability: today all the big cloud companies have a container service, so if you want to move from one cloud to another, you can do so without any problem.
+- Unlike full virtualization you don't need a Hypervisor and a Guest O.S., all this overhead is excluded and it's way more lightweight than a VM.
+
+- Containers are deterministic, meaning that if the container runs in your machine, it will run everywhere. No problem with people adding or changing a dependency in the VM manually and not informing other people.
+
+- Easy to distribute, with a registry you can upload your container image and distribute easily, so you can have your pipeline to build a new image every time that something is merged to a branch and this will be available to everyone in QA, or you can have all the dev environment inside a container, so when someone new joins they can just pull the latest dev image and start work.
+
+- With a orchestration tool it's really easy to bring external dependencies like PostgreSQL, Redis. So if you have to run integration or end-to-end tests that require an empty database or something like wiremock, with docker-compose it's really easy.
+
+### What this is not?
+
+Before starting I need to clarify some things:
+
+- Docker containers are Linux containers, meaning that when you run Docker on your Windows or Mac it will start a VM under the hood. 
+- Docker will not solve all your devops problems
+- You still need knowledge about your environment to deploy to production
+- Like every tool, it isn't a silver bullet
+
+Why everything clarified, we can start. 
 
 ## <a name="working-with-containers"></a>Working with containers
 
@@ -677,33 +645,10 @@ services:
       - "./scripts:/scripts"
     command: ["/scripts/wait-for-db.sh", "java", "-jar", "realworldkata-1.0-SNAPSHOT-all.jar"]
 ```
+
+And with that change done, and the containers working, we can end this post. 
+
 ### <a name="sources"></a>Sources:
-
-[https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine](https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine)
-
-[https://www.codementor.io/blog/docker-technology-5x1kilcbow](https://www.codementor.io/blog/docker-technology-5x1kilcbow)
-
-[https://wxdublin.gitbooks.io/docker-code-walk/content/user_view.html](https://wxdublin.gitbooks.io/docker-code-walk/content/user_view.html)
-
-[http://web.archive.org/web/20150326185901/http://blog.dotcloud.com/under-the-hood-linux-kernels-on-dotcloud-part](http://web.archive.org/web/20150326185901/http://blog.dotcloud.com/under-the-hood-linux-kernels-on-dotcloud-part)
-
-[https://en.wikipedia.org/wiki/Chroot](https://en.wikipedia.org/wiki/Chroot)
-
-[https://blog.docker.com/2015/06/runc/](https://blog.docker.com/2015/06/runc/)
-
-[https://www.thegeekdiary.com/understanding-chroot-jail/](https://www.thegeekdiary.com/understanding-chroot-jail/)
-
-[https://unix.stackexchange.com/questions/105/chroot-jail-what-is-it-and-how-do-i-use-it](https://unix.stackexchange.com/questions/105/chroot-jail-what-is-it-and-how-do-i-use-it)
-
-[https://medium.com/@teddyking/linux-namespaces-850489d3ccf](https://medium.com/@teddyking/linux-namespaces-850489d3ccf)
-
-[https://en.wikipedia.org/wiki/Linux_namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
-
-[http://man7.org/linux/man-pages/man7/cgroups.7.html](http://man7.org/linux/man-pages/man7/cgroups.7.html)
-
-[https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/ch01](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/ch01)
-
-[https://www.linuxjournal.com/content/everything-you-need-know-about-linux-containers-part-i-linux-control-groups-and-process](https://www.linuxjournal.com/content/everything-you-need-know-about-linux-containers-part-i-linux-control-groups-and-process)
 
 [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 
