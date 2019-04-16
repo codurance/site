@@ -289,7 +289,9 @@ out/
 
 ### <a name="multistage-build"></a>Multi-stage build
 
-We are creating the docker image with all our source code, and since we just want to run our application we don't have to distribute them with our final jar. Case we leave the source there anyone with the access to the image will be able to see it, also this will make our image bigger without any need. To solve this we are going to do a `multi-stage` build. 
+We are creating the docker image with all our source code, and since we just want to run our application we don't have to distribute them with our final jar. 
+The source code for the application is inside the container, anyone with the access to the image will be able to see it, also this will make our image bigger without any need. 
+To solve this we are going to do a `multi-stage` build. 
 
 #### What is a `multi-stage` build?
 
