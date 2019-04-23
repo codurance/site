@@ -1,5 +1,6 @@
 # [Codurance Web Site](https://codurance.com/)
 Trello board: https://trello.com/b/Z6YDy6bw/2018-website-project
+Also this one: https://trello.com/b/0wWmhd6A/improving-our-website
 
 ## Setup the <del>development</del> writing environment 
 
