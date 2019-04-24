@@ -657,3 +657,12 @@
   fullDescription: 
     <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
     <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
+    
+- id: andrew_pattison
+  name: Andrew Pattison
+  image: /assets/custom/img/team/andrew_pattison.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Andrew has a background in Chemistry. As a teenager, he tried programming a few times, but he couldn't get his head round it. He didn't attempt coding again until his mid-twenties, after his PhD supervisor suggested it would be simpler to model a bank of froth flotation cells in C than in Excel. He tried that, but Notepad, a borrowed ANSI C reference book and a C compiler weren't much better. However, at that point, Microsoft released Visual Basic 2005 Express Edition and that is when Andrew discovered VB.NET and IntelliSense. Hallelujah! And with that, the coding bug caught hold and Andrew decided he didn't want to be a lab rat anymore.</p>
+    <p>Andrew then went on to work on many varied things. From working on the Gassco New PMS system, bringing Norwegian gas to the UK and continental Europe, to building and maintaing the Amnesty International .org website, defending human rights across the world.</p>
+    <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
