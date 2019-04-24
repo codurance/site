@@ -3,16 +3,15 @@ layout: post
 asset-type: post
 name: nature-in-code
 title: Nature In Code
-date: 2019-04-01 01:00:00 +01:00
+date: 2019-04-24 01:00:00 +01:00
 author: Solange U. Gasengayire
 image:
-    src: /assets/custom/img/blog/2019-04-01-nature-in-code/nature-in-code.jpg
+    src: /assets/custom/img/blog/2019-04-24-nature-in-code/nature-in-code.jpg
 abstract: How basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
-alias: [/2019/04/01/nature-in-code]
+alias: [/2019/04/24/nature-in-code]
 
 ---
 
-# Nature in Code
 
 A little over two years ago, while exploring the edX platform for online courses, I came across a fantastic one about programming for beginners called [Nature in Code: Biology in JavaScript][1]. This course shows how basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
 
@@ -151,7 +150,7 @@ function run_generations() {
 
 A log of the results to the console looks like this:
 
-<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-01-nature-in-code/mutation.png" width="400" height="600" alt="Migration model results"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-24-nature-in-code/mutation.png" width="440" height="600" alt="Migration model results" style="border: 1px solid #C4CBD1;"/>
 
 So, even a very low mutation probability will result in a significant increase in diversity over time.
 
@@ -307,9 +306,8 @@ function homozygous_genotype_from(parent1, parent2) {
 
 The complete code for generating the **migration** spatial model and running a simulation over a 100 generations for example can be found [here][4]. And, with the help of [D3 visualisation library][5], we can generate a visualisation of how this model will evolve over time.
 
-<iframe height="800" style="width: 100%;" scrolling="no" title="Migration Model" src="//codepen.io/SolangeUG/embed/preview/axbYVm/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/SolangeUG/pen/axbYVm/'>Migration Model</a> by Solange Gasengayire Umuhire
-  (<a href='https://codepen.io/SolangeUG'>@SolangeUG</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe style="height: 650px; width: 620px; border: 1px solid #C4CBD1;" scrolling="no" title="Migration Model"
+        src="https://solangeug.github.io/migration/">
 </iframe>
 
 
@@ -325,9 +323,8 @@ Those preconditions give way to a [Susceptible-Infected-Recovered (SIR)][6] mode
 
 These three stages of evolution can be implemented in [code][7] following the same steps as before. And that leads to a simulation that looks like this:
 
-<iframe height="860" style="width: 100%;" scrolling="no" title="Epidemics Model" src="//codepen.io/SolangeUG/embed/preview/zXYWJo/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/SolangeUG/pen/zXYWJo/'>Epidemics Model</a> by Solange Gasengayire Umuhire
-  (<a href='https://codepen.io/SolangeUG'>@SolangeUG</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe style="height: 740px; width: 620px; border: 1px solid #C4CBD1;" scrolling="no" title="Epidemics Model"
+        src="https://solangeug.github.io/epidemics/">
 </iframe>
 
 Finally, in implementing recovery, we discover under which conditions an infectious disease can be slowed down and eventually stopped.
