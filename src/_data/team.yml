@@ -649,3 +649,12 @@
     <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
     <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
     <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
+
+- id: andrew_pattison
+  name: Andrew Pattison
+  image: /assets/custom/img/team/andrew_pattison.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Andrew has a background in Chemistry. As a teenager, he tried programming a few times, but he couldn't get his head round it. He didn't attempt coding again until his mid-twenties, after his PhD supervisor suggested it would be simpler to model a bank of froth flotation cells in C than in Excel. He tried that, but Notepad, a borrowed ANSI C reference book and a C compiler weren't much better. However, at that point, Microsoft released Visual Basic 2005 Express Edition and that is when Andrew discovered VB.NET and IntelliSense. Hallelujah! And with that, the coding bug caught hold and Andrew decided he didn't want to be a lab rat anymore.</p>
+    <p>Andrew then went on to work on many varied things. From working on the Gassco New PMS system, bringing Norwegian gas to the UK and continental Europe, to building and maintaing the Amnesty International .org website, defending human rights across the world.</p>
+    <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
