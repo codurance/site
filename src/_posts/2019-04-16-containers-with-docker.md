@@ -57,7 +57,7 @@ Before starting I need to clarify some things:
 - You still need knowledge about your environment to deploy to production
 - Like every tool, it isn't a silver bullet
 
-Why everything clarified, we can start. 
+With everything clarified, we can start. 
 
 ## <a name="working-with-containers"></a>Working with containers
 
