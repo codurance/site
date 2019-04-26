@@ -20,18 +20,20 @@ In this post, we'll at how the aforementioned course teaches and translates scie
 ## The Hardy-Weinberg Model
 
 In biology, **evolution** is the change in genetic composition of a population over time. The course identifies four forces that lead to this change:
-  - **natural selection**, as described by Charles Darwin, where <cite>individuals with characteristics best suited to their environment are more likely to survive, reproduce and pass their genes onto their children</cite>[<sup>1</sup>][2]
-  - **genetic drift**, where the change in genetic composition is due to random chance
-  - **migration**, which refers to population moving from one place to another
-  - **mutation**, which is described as the *ultimate engine of diversity creation*.
 
-The course introduces the **Hardy-Weinberg Model** - also known as the `null` model, as being the model that describes how a system would behave without any of the forces of interest.
+- **natural selection**, as described by Charles Darwin, where <cite>individuals with characteristics best suited to their environment are more likely to survive, reproduce and pass their genes onto their children</cite>[<sup>1</sup>][2]
+- **genetic drift**, where the change in genetic composition is due to random chance
+- **migration**, which refers to population moving from one place to another
+- **mutation**, which is described as the *ultimate engine of diversity creation*.
+
+The course introduces the **Hardy-Weinberg Model** - also known as the `null` model - as being the model that describes how a system would behave without any of the forces of interest.
 
 It relies on the following simplifying assumptions:
+
 - an infinite population size
 - non-overlapping generations
 - sexual reproduction happens randomly
-- and none of the four forces above is in action
+- none of the four forces above is in action
 
 Let's consider a basic model of a **gene** declined into two **alleles** a<sub>1</sub> and a<sub>2</sub>. A **gene** is defined as <cite>the basic physical and functional unit of heredity</cite>.[<sup>2</sup>][3] Every gene exists in multiple versions, called **alleles**, and these versions are the ones that make us unique.
 
@@ -80,7 +82,7 @@ When the simulation above is run, generation after generation, the Hardy-Weinber
 
 ## Mutation: The Power Of Mistakes
 
-Mutation is the change in genetic sequence, and is the main cause of diversity among organisms. It generally happens during *cell replication*, which is the process during which a given cell will produce two identical replicas of its own DNA. It is during this process that a small change - a **small error** - might occur leading to mutation in one of the new cells. Although this (kind of) mistake is very rare, it manifest itself as **random** mutation.
+Mutation is the change in genetic sequence, and is the main cause of diversity among organisms. It generally happens during *cell replication*, which is the process during which a given cell will produce two identical replicas of its own DNA. It is during this process that a small change - a **small error** - might occur leading to mutation in one of the new cells. Although this (kind of) mistake is very rare, it manifests itself as **random** mutation.
 
 To implement this idea in JavaScript, as the DNA molecule is formed of four bases - adenine, guanine, cytosine, and thymine - we use an array to store a DNA sequence as a sequence of the four bases. For example, for an individual, we'll represent their DNA sequence as `[A, G, C, C, A, T]`. Then, we represent a whole population as a two-dimensional array of similar sequences. As we'll be looking into changes in population over time, this leads to a 3D array where the third dimension is time.
 
@@ -158,6 +160,7 @@ So, even a very low mutation probability will result in a significant increase i
 ## Migration: Spatial Models
 
 In studying migration, we build from the Hardy-Weinberg model, considering diploid individuals (having two copies of genetic material), but relax two of our previous simplifying assumptions.
+
 - First, we no longer consider to have an infinite population size.
 - Second, we are no longer assuming random sexual reproduction. Instead, we consider where individuals are in space. So, when mating, it's much more likely that an individual will choose a close-by partner, rather than an individual who is far away.
 
@@ -205,6 +208,7 @@ function init_grid() {
 ```
 
 Once we have our population initialised, we look at what happens generation after generation. In other words:
+
 - each individual chooses a mating partner in accordance with the maximum mating distance defined earlier
 - then we generate the children given the parents' genotypes, and store them in a temporary grid
 - and finally, once we've run through all the individuals, we replace the parent generation with the offspring generation.
@@ -222,6 +226,7 @@ function pick_mating_partner(position_i, position_j) {
 In the above snippet of code, `bounded_index` refers to a function that wraps around the grid (when necessary), and the `random_value_between` returns a random value between two given values.
 
 The function that generates the offspring once the parents' genotype is known can be broken down as follows:
+
 - when both parents are of the same genotype, then, as one would expect, the offspring will be of the same genotype
 - when the first parent is homozygous (identical alleles), and the other is heterozygous, a randomly generated probability determines which parent's genotype the child fully inherits from
 - when both parents are homozygous, but of different genotypes, a randomly generated probability determines whether the child is homozygous or heterozygous.
@@ -304,7 +309,7 @@ function homozygous_genotype_from(parent1, parent2) {
 }
 ```
 
-The complete code for generating the **migration** spatial model and running a simulation over a 100 generations for example can be found [here][4]. And, with the help of [D3 visualisation library][5], we can generate a visualisation of how this model will evolve over time.
+The complete code for generating the **migration** spatial model and running a simulation over a 100 generations for example can be found [here][4]. And, with the help of the [D3 visualisation library][5], we can generate a visualisation of how this model will evolve over time.
 
 <iframe style="height: 650px; width: 620px; border: 1px solid #C4CBD1;" scrolling="no" title="Migration Model"
         src="https://solangeug.github.io/migration/">
@@ -313,9 +318,10 @@ The complete code for generating the **migration** spatial model and running a s
 
 ## Epidemics: The Spread of Infectious Diseases
 
-[Nature in Code, Biology in JavaScript][1] concludes the course by looking into how infectious diseases spread in a population. And this last chapter is my favourite of the entire course as it shows how programming (and software in general) can be used as a powerful tool to understand and find solutions to real world problems such as those caused by infectious diseases.
+[Nature in Code: Biology in JavaScript][1] concludes the course by looking into how infectious diseases spread in a population. And this last chapter is my favourite of the entire course as it shows how programming (and software in general) can be used as a powerful tool to understand and find solutions to real world problems such as those caused by infectious diseases.
 
 Following the same modelling process as before, the course defines preconditions for an epidemic to occur:
+
 - a susceptible population
 - and an infectious agent that affects hosts and _can_ get passed on to other susceptible hosts. However, all infectious agents do not necessarily cause illness in their hosts.
 
