@@ -3,12 +3,12 @@ layout: post
 asset-type: post
 name: nature-in-code
 title: Nature In Code
-date: 2019-04-24 01:00:00 +01:00
+date: 2019-04-26 01:00:00 +01:00
 author: Solange U. Gasengayire
 image:
-    src: /assets/custom/img/blog/2019-04-24-nature-in-code/nature-in-code.jpg
+    src: /assets/custom/img/blog/2019-04-26-nature-in-code/nature-in-code.jpg
 abstract: How basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
-alias: [/2019/04/24/nature-in-code]
+alias: [/2019/04/26/nature-in-code]
 
 ---
 
@@ -150,7 +150,7 @@ function run_generations() {
 
 A log of the results to the console looks like this:
 
-<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-24-nature-in-code/mutation.png" width="440" height="600" alt="Migration model results" style="border: 1px solid #C4CBD1;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-26-nature-in-code/mutation.png" width="440" height="600" alt="Migration model results" style="border: 1px solid #C4CBD1;"/>
 
 So, even a very low mutation probability will result in a significant increase in diversity over time.
 
