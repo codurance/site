@@ -47,6 +47,7 @@ end
 task :_ruby_serve do
   sh 'mkdir -p output/_site'
   sh 'cp build/config/index.html output/_site/'
+  sh 'open http://localhost:4000/'
   sh 'ruby -run -ehttpd output/_site/ -p4000 > /dev/null 2>&1'
 end
 
