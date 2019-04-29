@@ -147,7 +147,7 @@ In the case of PRs the pipeline is ran after a merge with master and it is visib
 ![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
 ![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_github.jpg)
  
-GitHub can also be configured to protect as a gatekeeper so that PRs with failing tests cannot be merged.
+GitHub can also be configured as a gatekeeper so that PRs with failing tests cannot be merged. This feature is called (Protected branches)[https://help.github.com/en/articles/about-protected-branches]
 
 ![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branch_protection.jpg)
 
