@@ -37,7 +37,7 @@ end
 multitask servebothquick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
 
 task :_build_en_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3 --destination output/_site/en --baseurl /en --future'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3 --destination output/_site/en --baseurl /en'
 end
 
 task :_build_es_quick do
