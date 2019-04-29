@@ -134,7 +134,7 @@ The pipeline also has a section called `post` with steps such as `always` and `f
 
 ## The Jenkins setup
 
-Jenkins needs access to GitHub. To do that create a username & password credential in Jenkins, using a new GitHub personal token as the password. More details on https://support.cloudbees.com/hc/en-us/articles/224543927
+Jenkins needs access to GitHub. What worked in my case was to create a username & password credential, in Jenkins, using a new GitHub personal token as the password. YMMV. I found a detailed explanation on the [CloudBees knowledge base](https://support.cloudbees.com/hc/en-us/articles/224543927)
 
 Having configured the credentials it is time to create a new Multibranch Pipeline.
 
