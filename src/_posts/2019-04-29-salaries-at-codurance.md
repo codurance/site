@@ -7,8 +7,10 @@ date: 2019-04-29 00:00:00
 description: How salaries work at Codurance.
 abstract: First post about internal workings of Codurance, concentrating on salaires.
 image: 
-    src: /assets/custom/img/blog/intro-docker/containers.jpg
-    thumbnail: /assets/custom/img/blog/intro-docker/containers.jpg
+    src: /assets/custom/img/blog/money-with-greens.jpg
+    attribution:
+       text: Photo by Nattanan Kanchanaprat on Pixabay
+       href: https://pixabay.com/users/nattanan23-6312362/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2696228
 tags: 
 - codurance
 ---
@@ -30,4 +32,3 @@ The process is simple: the person that wants the review selects a sponsor, who t
 The combination of these two policies, open salaries and peer review, means that two people with the same impact on the company should be on the same salary ballpark (small discrepancies always will exist because we don’t have a fixed time of the year to take care of reviews). That seems fair to me. 
 
 There is one thing left I want to talk around salaries. As a Spaniard, I was greatly surprised when I came to the UK and found that salaries don’t increase automatically yearly with inflation. In Spain is the law (well, it was when I left). Codurance is the only company in the UK that I know of that does it. In January, independently of your personal raises, everyone’s salary is adjusted by inflation. So the typical problem that happens in most companies in which you lose acquisitive power if you don’t get a raise doesn’t happen at Codurance.
-
