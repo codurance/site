@@ -22,17 +22,11 @@ For the last two years I've worked on a Node.js project using GitHub for source 
 
 We have done a few improvements to the configuration during this time and one of the changes that I think had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
+*Wait... Branches and Continuous integration?!* Yes, branches are a form of delayed integration. Be mindful of the tradeoffs. Merge to master soon and often.
+
 Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes like forgetting to run the linter or to add a new file. Later, once we started automating the update of dependencies (see [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)), the feedback enabled a quicker and safer automation.
 
 From that experience comes the idea for this post: what is the ideal CI pipeline, for me, at this moment in time?
-
-## Caveat Emptor
-
-State of the art does not mean perfect. It is just the best thing I know of right now, I fully expect to learn more and look back at this as a good step toward something better.
-
-Jenkins is the tool I’ve used the most in this space. It is very possible that better results can be obtained with different tools but my experience is the limiting factor.
-
-Branches and Continuous integration? Yes, branches are a form of delayed integration. Be mindful of the tradeoffs. Merge to master soon and often.
 
 ## Features
 
@@ -159,13 +153,9 @@ GitHub can also be configured to protect as a gatekeeper so that PRs with failin
 
 ## Where to go from here?
 
-> TODO
+State of the art does not mean perfect. It is just the best thing I know of right now, I fully expect to learn more and look back at this as a good step toward something better.
 
-Add additional testing steps (eg. Performance tests)
-
-Plug-in your deployment instructions
-
-Manage external dependencies
+Jenkins is the tool I’ve used the most in this space. It is very possible that better results can be obtained with different tools but my experience is the limiting factor.
 
 ## Resources
 
