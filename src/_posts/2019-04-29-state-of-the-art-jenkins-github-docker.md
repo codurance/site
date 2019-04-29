@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: state-of-the-art-jenkins-github-docker
 title: State of the art Continuous Integration and Deployment Pipeline with Jenkins, GitHub, and Docker
-date: 2019-02-21 07:00:00 +00:00
+date: 2019-04-29 07:00:00 +00:00
 author: Francesco Gigli
 image:
     src: /assets/custom/img/blog/state-of-the-art-jenkins-github-docker/jenkins_bg.jpg
@@ -13,19 +13,16 @@ tags:
     - Jenkins
     - github
     - docker
-categories:
-    - training
 abstract: The best configuration for Continuous Integration and Deployment that I have seen so far, explained in some details. 
-alias: [/2019/02/21/state-of-the-art-jenkins-github-docker]
 ---
 
 ## Setting the stage
 
-For the last two years I've worked in a Node.js project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
+For the last two years I've worked on a Node.js project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
 
-We have done a few improvements to the configuration during this time and one of the change that I think had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
+We have done a few improvements to the configuration during this time and one of the changes that I think had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
-Checking the outcome of the build before merging a PR prevents a lot of breakages due to tiny mistakes (forgot to run the linter, to add a given file, etc.). Later, once we started automating the update of dependencies (see [Taming dependabot]({{ site.baseurl }}{% post_url 2019-02-29-taming-dependabot %})), the feedback enabled a quicker and safer automation.
+Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes like forgetting to run the linter or to add a new file. Later, once we started automating the update of dependencies (see [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)), the feedback enabled a quicker and safer automation.
 
 From that experience comes the idea for this post: what is the ideal CI pipeline, for me, at this moment in time?
 
@@ -58,15 +55,13 @@ Other minor things:
 
 ## Drawbacks
 
-Jenkinsfile
-
 * You'll need to learn the syntax of the Jenkinsfile
 * There are two different syntax options (scripted and declarative) which you need to be aware of
 * The documentation on how to use the plugins is not always clear, with examples, and easy to use
 
 ## The app
 
-I’ve created [a simple Node web application](https://github.com/codurance/jenkins-pipeline-blog) to serve as an example. This app has no external dependency so the build is simpler. If there is interest I will write a followup about extending this configuration to cope with external dependencies such as databases or other services. [twitter]
+I’ve created [a simple Node.js web application](https://github.com/codurance/jenkins-pipeline-blog) to serve as an example. This app has no external dependency to keep the build simple. If there is interest I will write a followup about extending this configuration to cope with external dependencies such as databases or other services without compromising isolation. [Tweet me @jaramir](https://twitter.com/jaramir).
 
 ## The Dockerfile
 
@@ -80,15 +75,13 @@ EXPOSE 8080
 CMD yarn start
 ```
 
-It is one of the standard for deployment.
+Docker is the most popular application containerization solution available. For a full introduction to Docker I'd recommend [Containers with Docker by Andre Torres]({{ site.baseurl }}/2019/04/16/containers-with-docker/).
 
-It makes it possible to replicate what happens in CI.
+Specifically for CI pipeline configuration Docker makes it easy to replicate on a developer machine what is happening in Jenkins. Which is very useful when investigating a failure.
 
-Works well as a cache.
+With the help of Docker Compose it is also possible to keep the build of an application with external dependencies isolated from any deployment.
 
-For this build the deployment will be just the publishing of the image to hub.docker.com.
-
-> TODO: finish this section
+For the deployment we will be simply publishing the image to hub.docker.com but you will have to replace it with the infrastructure you are using.
 
 ## The Jenkinsfile
 
@@ -128,7 +121,7 @@ pipeline {
 ```
 
 
-This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master (aka Trunk) branch is affected.
+This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master, or Trunk, branch is affected.
 
 The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These are intuitive extension points to integrate messaging systems, like Slack, in your workflow.
 
@@ -176,7 +169,7 @@ Manage external dependencies
 
 ## Resources
 
-* Example node project: https://github.com/codurance/jenkins-pipeline-blog
-* Jenkinsfile syntax: https://jenkins.io/doc/book/pipeline/syntax/
-* Jenkinsfile steps reference: https://jenkins.io/doc/pipeline/steps/
-* Multibranch pipeline: https://jenkins.io/doc/book/pipeline/multibranch/
+* Example Node.js project [https://github.com/codurance/jenkins-pipeline-blog](https://github.com/codurance/jenkins-pipeline-blog)
+* Jenkinsfile syntax [https://jenkins.io/doc/book/pipeline/syntax/](https://jenkins.io/doc/book/pipeline/syntax/)
+* Jenkinsfile steps reference [https://jenkins.io/doc/pipeline/steps/](https://jenkins.io/doc/pipeline/steps/)
+* Multibranch pipeline [https://jenkins.io/doc/book/pipeline/multibranch/](https://jenkins.io/doc/book/pipeline/multibranch/)
