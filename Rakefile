@@ -37,7 +37,7 @@ end
 multitask servebothquick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
 
 task :_build_en_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3 --destination output/_site/en --baseurl /en'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3 --destination output/_site/en --baseurl /en --future'
 end
 
 task :_build_es_quick do
@@ -47,7 +47,6 @@ end
 task :_ruby_serve do
   sh 'mkdir -p output/_site'
   sh 'cp build/config/index.html output/_site/'
-  sh 'open http://localhost:4000/'
   sh 'ruby -run -ehttpd output/_site/ -p4000 > /dev/null 2>&1'
 end
 
