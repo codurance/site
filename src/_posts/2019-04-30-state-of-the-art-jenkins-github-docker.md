@@ -73,7 +73,7 @@ EXPOSE 8080
 CMD yarn start
 ```
 
-Docker is the most popular application containerization solution available. For a full introduction to Docker I'd recommend [Containers with Docker by Andre Torres]({{ site.baseurl }}/2019/04/16/containers-with-docker/).
+Docker is the most popular application containerisation solution available. For a full introduction to Docker I'd recommend [Containers with Docker by Andre Torres]({{ site.baseurl }}/2019/04/16/containers-with-docker/).
 
 In this CI pipeline Docker isolates the application code from the Jenkins node. 
 
