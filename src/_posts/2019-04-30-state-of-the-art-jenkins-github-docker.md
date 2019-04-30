@@ -18,17 +18,19 @@ abstract: The best configuration for Continuous Integration and Deployment that 
 
 ## Setting the stage
 
-For the last two years I've worked on a Node.js project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
+For the last two years I've worked on a Node.js project. We used GitHub for source management and Jenkins for continuous integration. We also had a [deployment tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform.
 
-We have done a few improvements to the configuration during this time and one of the changes that had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
+We have done a few improvements to the configuration during this time. One of the changes that had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
-Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes; like forgetting to run the linter or to add a new file. Later on, once we started automating the update of dependencies (see [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)), the feedback enabled a quicker and safer automation.
+Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes. Like forgetting to run the linter or to add a new file. Once we decided to automate the update of dependencies the feedback made it quick and safe. Read [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)) for that part of the story.
+
 
 In this post I'm going to explain how to configure a Continuos Integration and Deployment Pipeline using:
 
-* Jenkins, specifically the Multibranch Pipeline plugin, and a Jenkinsfile for the build configuration
+* Jenkins for the build configuration. The Multibranch Pipeline for creating the builds. A Jenkinsfile for deciding what to execute in each build
 * GitHub to store the sources, check the build output, and to merge branches to master
-* Docker to isolate the build from the environment it is run into, be it a developer machine or a Jenkins node
+* Docker to isolate the build from the execution environment. Be it a developer machine or a Jenkins node
+
 
 ## Features
 
@@ -47,7 +49,7 @@ Building and feedback from branches means you can:
 Other minor things:
 
 * The build is defined as a sequence of steps rather than jobs so it does not re-enter the queue once it starts
-* Most of the configuration is done from a file on your local development environment instead of the Jenkins UI
+* You can do most of the build configuration by editing a file instead of using the Jenkins web UI
 
 ## Drawbacks
 
