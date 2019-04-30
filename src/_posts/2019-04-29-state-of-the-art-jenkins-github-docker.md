@@ -73,11 +73,11 @@ CMD yarn start
 
 Docker is the most popular application containerization solution available. For a full introduction to Docker I'd recommend [Containers with Docker by Andre Torres]({{ site.baseurl }}/2019/04/16/containers-with-docker/).
 
-Specifically for CI pipeline configuration Docker makes it easy to replicate on a developer machine what is happening in Jenkins. Which is very useful when investigating a failure.
+In this CI pipeline Docker isolates the application code from the Jenkins node. 
 
-With the help of Docker Compose it is also possible to keep the build of an application with external dependencies isolated from any deployment.
+Isolation enables replication. If the build fails in Jenkins and we need to investigate the failure we can be easily replicated on a developer machine since the state of the Jenkins node and its software have no effect within the container.
 
-For the deployment we will be simply publishing the image to hub.docker.com but you will have to replace it with the infrastructure you are using.
+Isolation also solves the issue of having different runtime environments. Different applications can each specify a different version of Node.js in the Dockerfile to use for testing and when deployed.
 
 ## The Jenkinsfile
 
@@ -118,6 +118,8 @@ pipeline {
 
 
 This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master, or Trunk, branch is affected.
+
+For the deployment we will be simply publishing the image to hub.docker.com but you will have to replace it with the infrastructure you are using.
 
 The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These are intuitive extension points to integrate messaging systems, like Slack, in your workflow.
 
