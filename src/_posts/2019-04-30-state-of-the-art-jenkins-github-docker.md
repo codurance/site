@@ -157,7 +157,7 @@ GitHub can also be configured as a gatekeeper so that PRs with failing tests can
 
 ![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branch_protection.jpg)
 
-With Jenkins and GitHub configured according to your workflow you are ready to start the development of the application.
+With the pipeline configured according to your workflow you are ready to start the development of the application.
 
 ## Where to go from here?
 
