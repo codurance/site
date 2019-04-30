@@ -57,7 +57,7 @@ Other minor things:
 
 ## The app
 
-I’ve created [a simple Node.js web application](https://github.com/codurance/jenkins-pipeline-blog) to serve as an example. This app has no external dependency to keep the build simple. If there is interest I will write a followup about extending this configuration to cope with external dependencies such as databases or other services without compromising isolation. [Tweet me @jaramir](https://twitter.com/jaramir).
+I’ve created [a Node.js web application](https://github.com/codurance/jenkins-pipeline-blog) to serve as an example. To keep the build simple the app has no external runtime dependencies, such as databases or services. It is possible to extend this configuration to cope with external dependencies without compromising isolation; for example by provisioning dependencies with Docker Compose.
 
 ## The Dockerfile
 
