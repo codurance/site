@@ -161,11 +161,11 @@ With Jenkins and GitHub configured according to your workflow you are ready to s
 
 ## Where to go from here?
 
-State of the art does not mean perfect. It is just the best thing I know of right now, I fully expect to learn more and look back at this as a good step toward something better.
+State of the art does not mean perfect. It is the best thing I know of right now, I want to learn more and look back at this as a good step toward something better.
 
-Jenkins is the tool I’ve used the most in this space. It is very possible that better results can be obtained with different tools but my experience is the limiting factor.
+Jenkins is the tool I’ve used the most in this space. It is very possible that with different tools we could get better results. My narrow experience is the limiting factor.
 
-An area not covered in this post is how to work with application that have external dependencies, I hope to cover that in a future post.
+An area not covered in this post is how to work with application that have external dependencies. I will cover that in a future post.
 
 Let me know what you think by tweeting me at [@jaramir](https://twitter.com/jaramir) or [@codurance](https://twitter.com/codurance).
 
