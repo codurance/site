@@ -117,9 +117,9 @@ pipeline {
 ```
 
 
-This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. The Deploy stage runs only when the master, or Trunk, branch is affected.
+This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web forms normally used to configure jobs in Jenkins. The pipeline in this example has three stages (Build, Test, Deploy) each implemented by steps. 
 
-For the deployment we will be simply publishing the image to hub.docker.com but you will have to replace it with the infrastructure you are using.
+The Deploy stage runs only when the master, or Trunk, branch is affected. In this example it is publishing the image to hub.docker.com but you will likely replace it with the infrastructure commands you are using to deploy your application.
 
 The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These are intuitive extension points to integrate messaging systems, like Slack, in your workflow.
 
