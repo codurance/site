@@ -77,7 +77,7 @@ Docker is the most popular application containerization solution available. For 
 
 In this CI pipeline Docker isolates the application code from the Jenkins node. 
 
-Isolation enables replication. If the build fails in Jenkins and we need to investigate the failure we can be easily replicated on a developer machine since the state of the Jenkins node and its software have no effect within the container.
+Isolation enables replication. If the build fails in Jenkins and we need to investigate the failure we can be replicated on a developer machine since the state of the Jenkins node and its software have no effect within the container.
 
 Isolation also solves the issue of having different runtime environments. Different applications can each specify a different version of Node.js in the Dockerfile to use for testing and when deployed.
 
