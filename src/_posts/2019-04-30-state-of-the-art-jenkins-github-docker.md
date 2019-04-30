@@ -139,7 +139,7 @@ The defaults offered by Jenkins are sensible for my workflow so I made very few 
 
 You can configure which commits, branches, or PRs trigger the pipeline. With the setup shown above the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs.
 
-Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
+Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
 
 ![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/webhook.jpg)
 
