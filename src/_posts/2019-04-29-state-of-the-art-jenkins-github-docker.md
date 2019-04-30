@@ -53,7 +53,7 @@ Other minor things:
 
 * You'll need to learn the syntax of the Jenkinsfile
 * There are two different syntax options (scripted and declarative) which you need to be aware of
-* The documentation on how to use the plugins is not always clear, with examples, and easy to use
+* The documentation on how to use the plugins is not always clear and often does not have any examples
 
 ## The app
 
