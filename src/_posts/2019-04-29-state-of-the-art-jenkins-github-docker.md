@@ -20,13 +20,17 @@ abstract: The best configuration for Continuous Integration and Deployment that 
 
 For the last two years I've worked on a Node.js project using GitHub for source management, Jenkins for continuous integration, and a [custom built tool](https://mergermarket.github.io/cdflow/) based on Docker and Terraform for the deployment.
 
-We have done a few improvements to the configuration during this time and one of the changes that I think had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
+We have done a few improvements to the configuration during this time and one of the changes that had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
 *Wait... Branches and Continuous integration?!* Yes, branches are a form of delayed integration. Be mindful of the tradeoffs. Merge to master soon and often.
 
-Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes like forgetting to run the linter or to add a new file. Later, once we started automating the update of dependencies (see [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)), the feedback enabled a quicker and safer automation.
+Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes; like forgetting to run the linter or to add a new file. Later on, once we started automating the update of dependencies (see [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)), the feedback enabled a quicker and safer automation.
 
-From that experience comes the idea for this post: what is the ideal CI pipeline, for me, at this moment in time?
+In this post I'm going to explain how to configure a Continuos Integration and Deployment Pipeline using:
+
+* Jenkins, specifically the Multibranch Pipeline plugin, and a Jenkinsfile for the build configuration
+* GitHub to store the sources, check the build output, and to merge branches to master
+* Docker to isolate the build from the environment it is run into, be it a developer machine or a Jenkins node
 
 ## Features
 
