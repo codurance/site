@@ -131,35 +131,43 @@ Having configured the credentials it is time to create a new Multibranch Pipelin
 
 ![Pipeline creation in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pipeline_creation.jpg)
 
-The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it. Adapt it to suite your needs.
+The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it.
 
 ![Pipeline setup in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pipeline_setup.jpg)
 
-If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile!
+You can configure which commits, branches, or PRs trigger the pipeline. With the setup shown above the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs.
+
+![Branches in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branches_jenkins.jpg)
+![Branches in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branches_github.jpg)
+
+In the case of PRs the pipeline is ran after a merge with master and it is visible together with the PR conversation.
+
+![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
+![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_github.jpg)
+
+If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile.
 
 Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
 
 ![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/webhook.jpg)
 
-You can configure which commits, branches, or PRs trigger the pipeline from the Branch Sources configuration in Jenkins. With the setup we looked at so far the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs. 
-
-![Branches in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branches_jenkins.jpg)
-![Branches in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branches_github.jpg)
- 
-In the case of PRs the pipeline is ran after a merge with master and it is visible together with the PR conversation.
-
-![Pull Requests in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_jenkins.jpg)
-![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_github.jpg)
- 
 GitHub can also be configured as a gatekeeper so that PRs with failing tests cannot be merged. This feature is called (Protected branches)[https://help.github.com/en/articles/about-protected-branches]
 
 ![Branch Protection in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/branch_protection.jpg)
+
+With Jenkins and GitHub configured according to your workflow you are ready to start the development of the application.
 
 ## Where to go from here?
 
 State of the art does not mean perfect. It is just the best thing I know of right now, I fully expect to learn more and look back at this as a good step toward something better.
 
 Jenkins is the tool I’ve used the most in this space. It is very possible that better results can be obtained with different tools but my experience is the limiting factor.
+
+An area not covered in this post is how to work with application that have external dependencies, I hope to cover that in a future post.
+
+Let me know what you think by tweeting me at [@jaramir](https://twitter.com/jaramir) or [@codurance](https://twitter.com/codurance).
+
+Happy Hacking!
 
 ## Resources
 
