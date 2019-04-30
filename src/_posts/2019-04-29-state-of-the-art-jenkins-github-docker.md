@@ -131,13 +131,17 @@ Having configured the credentials it is time to create a new job in Jenkins. Whe
 
 ![Pipeline creation in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pipeline_creation.jpg)
 
-The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it.
+The defaults offered by Jenkins are sensible for my workflow so I made very few modifications to it. If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile.
 
 ![Pipeline setup in Jenkins]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pipeline_setup.jpg)
 
 You can configure which commits, branches, or PRs trigger the pipeline. With the setup shown above the pipeline will be triggered when pushing to master, pushing to branches, and when creating PRs.
 
-When clicking on a freestyle Jenkins job (the most common type) a familiar sight is the list of decreasing build numbers. This is now one more click away because each branch or PR gets its own sequence of build numbers.
+Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
+
+![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/webhook.jpg)
+
+When clicking on a freestyle Jenkins job a familiar sight is the list of decreasing build numbers. This is now one more click away because each branch and PR gets its own sequence of build numbers.
 
 The build state for branches in GitHub is reported via crosses and tick marks that link back to Jenkins.
 
@@ -146,12 +150,6 @@ The build state for branches in GitHub is reported via crosses and tick marks th
 In the case of PRs the pipeline is ran after a merge with master and it is visible together with the PR conversation.
 
 ![Pull Requests in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/pr_github.jpg)
-
-If you are used to freestyle Jenkins job you will probably be surprised by the small amount of options available. That is because we have already defined the entire build pipeline in the Jenkinsfile.
-
-Once you save the config it is a good idea to check the webhook in GitHub. Jenkins will configure a webhook in the repository in order to trigger the pipeline as soon as a commit is pushed or a PR is created. It requires Jenkins to be reachable from Internet, preferably with a valid SSL certificate.
-
-![Webhook in GitHub]({{site.baseurl}}/assets/custom/img/blog/state-of-the-art-jenkins-github-docker/webhook.jpg)
 
 GitHub can also be configured as a gatekeeper so that PRs with failing tests cannot be merged. This feature is called (Protected branches)[https://help.github.com/en/articles/about-protected-branches]
 
