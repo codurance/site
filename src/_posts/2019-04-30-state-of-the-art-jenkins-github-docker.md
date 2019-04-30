@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: state-of-the-art-jenkins-github-docker
 title: State of the art Continuous Integration and Deployment Pipeline with Jenkins, GitHub, and Docker
-date: 2019-04-29 07:00:00 +00:00
+date: 2019-04-30 11:50:00 +01:00
 author: Francesco Gigli
 image:
     src: /assets/custom/img/blog/state-of-the-art-jenkins-github-docker/jenkins_bg.jpg
