@@ -34,7 +34,7 @@ In this post I'm going to explain how to configure a Continuos Integration and D
 
 ## Features
 
-The configuration of the build pipeline is versioned together with the source code meaning you get:
+The configuration of the build pipeline is versioned together with the source code. This gives you:
 
 * History of old configs and ability to rollback
 * Atomic changes of config and source
@@ -123,7 +123,7 @@ This [groovy](http://groovy-lang.org/syntax.html) file replaces the long web for
 
 The Deploy stage runs only when the master, or Trunk, branch is affected. In this example it is publishing the image to hub.docker.com but you will likely replace it with the infrastructure commands you are using to deploy your application.
 
-The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These are intuitive extension points to integrate messaging systems, like Slack, in your workflow.
+The pipeline also has a section called `post` with steps such as `always` and `failure` which are triggered after the build completes. These extension points can integrate messaging systems, like Slack, in your workflow.
 
 ## The Jenkins setup
 
