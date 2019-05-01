@@ -91,10 +91,18 @@ title: Company
                     </div>
                     <!-- End User Details -->
 
-                    <!-- User Position -->
+                    <!-- User Position & Email -->
                     <h4 class="h6 g-font-weight-300 g-mb-10">
-                      <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}</h4>
-                    <!-- End User Position -->
+                      <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}
+                    </h4>
+                    {% if member.email != null %}
+                    <h4 class="h6 g-font-weight-300 g-mb-10">
+                      <i class="icon-envelope g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> 
+                      <a href="mailto:{{member.email}}">{{member.email}}</a>
+                    </h4>
+                    {% endif %}
+                    <!-- End User Position & Email -->
+                    
                     <hr class="g-brd-gray-light-v4 g-my-20">
                     <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
           
