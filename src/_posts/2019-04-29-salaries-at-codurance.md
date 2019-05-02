@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Salaries at Codurance"
-date: 2019-04-29 00:00:00
+date: 2019-05-02 08:00:00
 description: How salaries work at Codurance.
 abstract: First post about internal workings of Codurance, concentrating on salaires.
 image: 
