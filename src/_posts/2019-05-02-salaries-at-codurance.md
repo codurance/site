@@ -5,7 +5,7 @@ asset-type: post
 title: "Salaries at Codurance"
 date: 2019-05-02 08:00:00
 description: How salaries work at Codurance.
-abstract: First post about internal workings of Codurance, concentrating on salaires.
+abstract: First post about internal workings of Codurance, concentrating on salaries.
 image: 
     src: /assets/custom/img/blog/money-with-greens.jpg
     attribution:
