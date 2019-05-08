@@ -6,13 +6,14 @@
 <meta name="author" content="Codurance Ltd">
 
 <!-- Open Graph Protocol  -->
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}" />
-<meta property="og:site_name" content="Codurance" />
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
-<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-<meta property="og:image" content="{{ '/assets/custom/img/codurance.png' | prepend: site.url }}" />
-<meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
-<meta property="fb:app_id" content="1988440268098611" />
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Codurance" />
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ page.url | prepend: site.url }}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ '/assets/custom/img/codurance.png' | prepend: site.url }}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ page.image.src }}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
+<meta prefix="og: http://ogp.me/ns#" property="fb:app_id" content="1988440268098611" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
