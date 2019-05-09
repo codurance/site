@@ -5,6 +5,8 @@
   fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
   github: sandromancuso
+  linkedin: sandromancuso
+  email: sandro.mancuso@codurance.com
 
 - id: mash
   name: Mashooq Badar
@@ -32,6 +34,7 @@
     <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
     <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
   twitter: davidgrhall
+  linkedin: davidgrahamhall
 
 - id: jack
   name: Jack Colemanzo
@@ -200,6 +203,8 @@
     <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>
   twitter: yefoakira
   github: miyamotoakira
+  linkedin: jgueorguiev
+  email: jorge.gueorguiev@codurance.com
 
 - id: lilianacarneiro
   name: Liliana Carneiro
@@ -448,6 +453,7 @@
    <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
   twitter: scotteza
   github: scotteza
+  linkedin: scott-edwards-b1a68817
 
 - id: chrisreinmuller
   name: Chris Reinmuller
@@ -513,6 +519,7 @@
     <p>Outside of work, Solange is involved in initiatives that promote affordable education opportunities for all. She loves people, trees, coffee, books, music, travelling, and enjoys all kinds of sports activities.</p>
   twitter: sgasengayire
   github: SolangeUG
+  email: solange@codurance.com
 
 - id: danbunea
   name: Dan Bunea
@@ -534,6 +541,7 @@
     <p>Chris enjoys reading, middle distance running and films.</p>
   twitter: chriseyre2000
   github: chriseyre2000
+  linkedin: christopher-eyre-09470921
 
 - id: marco_vermeulen
   name: Marco Vermeulen
@@ -684,4 +692,6 @@
     <p>Andrew has a background in Chemistry. As a teenager, he tried programming a few times, but he couldn't get his head round it. He didn't attempt coding again until his mid-twenties, after his PhD supervisor suggested it would be simpler to model a bank of froth flotation cells in C than in Excel. He tried that, but Notepad, a borrowed ANSI C reference book and a C compiler weren't much better. However, at that point, Microsoft released Visual Basic 2005 Express Edition and that is when Andrew discovered VB.NET and IntelliSense. Hallelujah! And with that, the coding bug caught hold and Andrew decided he didn't want to be a lab rat anymore.</p>
     <p>Andrew then went on to work on many varied things. From working on the Gassco New PMS system, bringing Norwegian gas to the UK and continental Europe, to building and maintaing the Amnesty International .org website, defending human rights across the world.</p>
     <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
+  linkedin: andrew-pattison-602b3647
+  email: andrew.pattison@codurance.com
 
