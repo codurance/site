@@ -14,7 +14,7 @@ tags:
 - codurance
 ---
 
-So this is the second post about the internal workings of Codurance. While in the [previous one](https://codurance.com/2019/05/02/salaries-at-codurance/) I looked at how salary and reviews work, here I want to concentrate on something that allows me to take an active part in shaping our organisation: : Initiative Circles (IC from now on).
+So this is the second post about the internal workings of Codurance. While in the [previous one](https://codurance.com/2019/05/02/salaries-at-codurance/) I looked at how salary and reviews work, here I want to concentrate on something that allows me to take an active part in shaping our organisation: Initiative Circles (IC from now on).
 
 I have always wanted to make my life and the life of my colleagues better. There is no company that will not benefit from improvements, some far more than others. At Codurance, with Initiative Circles, anyone has the opportunity to improve the lives of their co-workers, from small improvements to much more significant changes. At Codurance, through ICs, we have addressed disparate topics  such as: Paid Slack, BitWarden for password keeping, the Progress Structure that is the subject of my next post, salary alignment with the local market, health insurance , Peer Review Process, The Podcasts, …
 
