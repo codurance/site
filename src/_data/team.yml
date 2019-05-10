@@ -5,6 +5,8 @@
   fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
   github: sandromancuso
+  linkedin: sandromancuso
+  email: sandro.mancuso@codurance.com
 
 - id: mash
   name: Mashooq Badar
@@ -13,14 +15,6 @@
   fullDescription: <p>Mash is a pragmatic software craftsman always looking to improve his software creation skills and helping others do the same. He firmly believes that a well-rounded software craftsman must have a keen interest in all aspects of software creation, including; process, people, technology, user experience, development, operation, maintenance, and social impact. He relishes the daily challenges that Codurance brings to him–stretching his existing knowledge and expertise allowing him to constantly grow as a professional.</p><p>Mash is an advisor and a leader. During his diverse career, he has succeeded in invigorating large ailing software projects as well as creating highly effective software teams and departments. His broad and deep technical knowledge, organisational skills, craft focus, and empathy to people involved have been integral to his success. He has worked in many roles for charities, investment banks, consultancies, government, media and cloud providers. He prides himself at being a hands-on software developer and believes that software development skills are very hard to learn and the best way to maintain them is to apply them.</p>
   twitter: mashooq
   github: mashooq
-
-- id: rob
-  name: Robert Taylor
-  image: /assets/custom/img/team/rob_taylor.jpg
-  role: Software Craftsman
-  fullDescription: <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p><p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p><p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
-  twitter: roberttaylor426
-  github: roberttaylor426
 
 - id: stevelydford
   name: Steve Lydford
@@ -40,6 +34,78 @@
     <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
     <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
   twitter: davidgrhall
+  linkedin: davidgrahamhall
+
+- id: jack
+  name: Jack Colemanzo
+  image: /assets/custom/img/team/jack_colemanzo.jpg
+  role: Head of Sales (Spain)
+  fullDescription:
+    <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
+    <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
+    <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
+
+- id: fernando_rafart
+  name: Fernando Rafart
+  image: /assets/custom/img/team/fernando_rafart.jpg
+  role: Head of Professional Services (Spain) 
+  fullDescription: 
+    <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
+    <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
+
+- id: angelsg
+  name: Àngels Gilabert
+  image: /assets/custom/img/team/angels_gilabert.jpg
+  role: Head of Recruitment
+  fullDescription:
+    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
+    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
+    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
+  twitter: thegreathathor
+  github: AngelsG
+
+- id: anne_marie
+  name: Anne-Marie Mendonca
+  image: /assets/custom/img/team/anne_marie.jpg
+  role: Head of Recruitment (UK)
+  fullDescription:
+    <p>Anne-Marie manages the recruitment for our London and Manchester offices.</p>
+    <p>Anne-Marie enjoys her role in recruitment because it gives her the opportunity to engage with people so that she can understand their career aspirations and experience, which enables her to match their skills with a suitable role and environment.</p>
+    <p>She was inspired to join Codurance due to their culture of learning and flexible working environment for all staff, technical and non-technical.</p>
+    <p>In her spare time, Anne-Marie enjoys travelling, reading, and learning Spanish.</p>
+
+- id: emma_booth
+  name: Emma Booth
+  image: /assets/custom/img/team/emma_booth.jpg
+  role: Business Development Manager
+  email: emma.booth@codurance.com
+  linkedin: emma-booth-36785b45
+  fullDescription:
+    <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
+    <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
+    <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
+
+- id: john_rihana
+  name: John Rihana
+  image: /assets/custom/img/team/john_rihana.jpg
+  role: Business Development Manager
+  fullDescription:
+    <p>John is our Business Development Manager in London, having recently moved across from Australia. John began his career as a data analyst, looking for answers among volumes of data to help businesses make better decisions. While doing this he found it highly enjoyable and rewarding working alongside people, enabling them through hard decisions and coming up with creative solutions.</p>
+    <p>Leaving the spreadsheets behind, he transitioned into sales full time, working within large software organisations such as myob and AT&T. While there he thoroughly enjoyed helping the businesses he worked with through complex problems, helping these businesses succeed.</p>
+    <p>John sees himself as an advisor to his clients, constantly creating value by helping them think through unfamiliar problems, offering his unique point of view on key threats and opportunities as well as well as lead them through a process they may have never done before.</p>
+  linkedin: john-rihana-861b27a6
+  email: john.rihana@codurance.com
+
+- id: rob
+  name: Robert Taylor
+  image: /assets/custom/img/team/rob_taylor.jpg
+  role: Software Craftsman
+  fullDescription: 
+    <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
+    <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
+    <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
+  twitter: roberttaylor426
+  github: roberttaylor426
 
 - id: giulia
   name: Giulia Mantuano
@@ -137,6 +203,8 @@
     <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>
   twitter: yefoakira
   github: miyamotoakira
+  linkedin: jgueorguiev
+  email: jorge.gueorguiev@codurance.com
 
 - id: lilianacarneiro
   name: Liliana Carneiro
@@ -333,17 +401,6 @@
   twitter: cristina_verdi
   github: cristinaverdi
 
-- id: angelsg
-  name: Àngels Gilabert
-  image: /assets/custom/img/team/angels_gilabert.jpg
-  role: Head of Recruitment
-  fullDescription:
-    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
-    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
-    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
-  twitter: thegreathathor
-  github: AngelsG
-
 - id: sdavies
   name: Sam Davies
   image: /assets/custom/img/team/sam_davies.jpg
@@ -384,6 +441,7 @@
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
+  linkedin: mjjansky
 
 - id: scottedwards
   name: Scott Edwards
@@ -395,6 +453,7 @@
    <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
   twitter: scotteza
   github: scotteza
+  linkedin: scott-edwards-b1a68817
 
 - id: chrisreinmuller
   name: Chris Reinmuller
@@ -460,6 +519,7 @@
     <p>Outside of work, Solange is involved in initiatives that promote affordable education opportunities for all. She loves people, trees, coffee, books, music, travelling, and enjoys all kinds of sports activities.</p>
   twitter: sgasengayire
   github: SolangeUG
+  email: solange@codurance.com
 
 - id: danbunea
   name: Dan Bunea
@@ -481,6 +541,7 @@
     <p>Chris enjoys reading, middle distance running and films.</p>
   twitter: chriseyre2000
   github: chriseyre2000
+  linkedin: christopher-eyre-09470921
 
 - id: marco_vermeulen
   name: Marco Vermeulen
@@ -538,6 +599,7 @@
     <p>He's excited about honing his craft and working with the very best as a craftsman at Codurance.</p>
     <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
   github: nawhi
+  linkedin: nick9white
 
 - id: alasdair_smith
   name: Alasdair Smith
@@ -570,16 +632,6 @@
     <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
   github: monitotxi
 
-- id: anne_marie
-  name: Anne-Marie Mendonca
-  image: /assets/custom/img/team/anne_marie.jpg
-  role: Head of Recruitment (UK)
-  fullDescription:
-    <p>Anne-Marie manages the recruitment for our London and Manchester offices.</p>
-    <p>Anne-Marie enjoys her role in recruitment because it gives her the opportunity to engage with people so that she can understand their career aspirations and experience, which enables her to match their skills with a suitable role and environment.</p>
-    <p>She was inspired to join Codurance due to their culture of learning and flexible working environment for all staff, technical and non-technical.</p>
-    <p>In her spare time, Anne-Marie enjoys travelling, reading, and learning Spanish.</p>
-
 - id: jen_jem
   name: Jen Jeremiciute
   image: /assets/custom/img/team/jen_jem.jpg
@@ -587,15 +639,6 @@
   fullDescription:
     <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
     <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
-
-- id: jack
-  name: Jack Colemanzo
-  image: /assets/custom/img/team/jack_colemanzo.jpg
-  role: Head of Sales (Spain)
-  fullDescription:
-    <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
-    <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
-    <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
 
 - id: gabriele_lippi
   name: Gabriele Lippi
@@ -640,23 +683,6 @@
     <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
     <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
   twitter: roaslin
-
-- id: emma_booth
-  name: Emma Booth
-  image: /assets/custom/img/team/emma_booth.jpg
-  role: Business Development Manager
-  fullDescription:
-    <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
-    <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
-    <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
-
-- id: fernando_rafart
-  name: Fernando Rafart
-  image: /assets/custom/img/team/fernando_rafart.jpg
-  role: Head of Professional Services (Spain) 
-  fullDescription: 
-    <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
-    <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
     
 - id: andrew_pattison
   name: Andrew Pattison
@@ -666,14 +692,6 @@
     <p>Andrew has a background in Chemistry. As a teenager, he tried programming a few times, but he couldn't get his head round it. He didn't attempt coding again until his mid-twenties, after his PhD supervisor suggested it would be simpler to model a bank of froth flotation cells in C than in Excel. He tried that, but Notepad, a borrowed ANSI C reference book and a C compiler weren't much better. However, at that point, Microsoft released Visual Basic 2005 Express Edition and that is when Andrew discovered VB.NET and IntelliSense. Hallelujah! And with that, the coding bug caught hold and Andrew decided he didn't want to be a lab rat anymore.</p>
     <p>Andrew then went on to work on many varied things. From working on the Gassco New PMS system, bringing Norwegian gas to the UK and continental Europe, to building and maintaing the Amnesty International .org website, defending human rights across the world.</p>
     <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
+  linkedin: andrew-pattison-602b3647
+  email: andrew.pattison@codurance.com
 
-- id: john_rihana
-  name: John Rihana
-  image: /assets/custom/img/team/john_rihana.jpg
-  role: Business Development Manager
-  fullDescription:
-    <p>John is our Business Development Manager in London, having recently moved across from Australia. John began his career as a data analyst, looking for answers among volumes of data to help businesses make better decisions. While doing this he found it highly enjoyable and rewarding working alongside people, enabling them through hard decisions and coming up with creative solutions.</p>
-
-    <p>Leaving the spreadsheets behind, he transitioned into sales full time, working within large software organisations such as myob and AT&T. While there he thoroughly enjoyed helping the businesses he worked with through complex problems, helping these businesses succeed.</p>
-
-    <p>John sees himself as an advisor to his clients, constantly creating value by helping them think through unfamiliar problems, offering his unique point of view on key threats and opportunities as well as well as lead them through a process they may have never done before.</p>
