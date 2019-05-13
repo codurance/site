@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Initiative Circles at Codurance"
-date: 2019-05-10 08:00:00
+date: 2019-05-13 08:00:00
 description: How Initiative Circles work at Codurance.
 abstract: Second post about internal workings of Codurance, concentrating on Initiative Circles.
 image: 
