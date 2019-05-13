@@ -10,6 +10,7 @@ image:
     src: /assets/custom/img/blog/meeting2.png
     attribution:
        text: Photo by Sandro Viljoen
+       href: https://twitter.com/ggsbv
 tags: 
 - codurance
 ---
