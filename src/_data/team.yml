@@ -96,6 +96,23 @@
   linkedin: john-rihana-861b27a6
   email: john.rihana@codurance.com
 
+- id: magda-firek
+  name: Magdalena Kocerba-Firek
+  image: /assets/custom/img/team/magda_firek.jpg
+  role: Office Manager 
+  fullDescription:
+    <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
+    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
+    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
+
+- id: jen_jem
+  name: Jen Jeremiciute
+  image: /assets/custom/img/team/jen_jem.jpg
+  role: Office & Finance Manager
+  fullDescription:
+    <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
+    <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
+
 - id: rob
   name: Robert Taylor
   image: /assets/custom/img/team/rob_taylor.jpg
@@ -411,15 +428,6 @@
     <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
   github: upsd
 
-- id: magda-firek
-  name: Magdalena Kocerba-Firek
-  image: /assets/custom/img/team/magda_firek.jpg
-  role: Office Manager 
-  fullDescription:
-    <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
-    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
-    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
-
 - id: chris-bimson
   name: Chris Bimson
   image: /assets/custom/img/team/chris_bimson.jpg
@@ -631,14 +639,6 @@
     <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
     <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
   github: monitotxi
-
-- id: jen_jem
-  name: Jen Jeremiciute
-  image: /assets/custom/img/team/jen_jem.jpg
-  role: Office & Finance Manager
-  fullDescription:
-    <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
-    <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
 
 - id: gabriele_lippi
   name: Gabriele Lippi
