@@ -113,6 +113,16 @@
     <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
     <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
 
+- id: lilianacarneiro
+  name: Liliana Carneiro
+  image: /assets/custom/img/team/liliana_carneiro.jpg
+  role: Office Manager
+  fullDescription:
+    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
+    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
+    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
+  twitter: lilistahr
+
 - id: rob
   name: Robert Taylor
   image: /assets/custom/img/team/rob_taylor.jpg
@@ -222,16 +232,6 @@
   github: miyamotoakira
   linkedin: jgueorguiev
   email: jorge.gueorguiev@codurance.com
-
-- id: lilianacarneiro
-  name: Liliana Carneiro
-  image: /assets/custom/img/team/liliana_carneiro.jpg
-  role: Office Manager
-  fullDescription:
-    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
-    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
-    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
-  twitter: lilistahr
 
 - id: andrzejrehmann
   name: Andrzej Rehmann
