@@ -5,7 +5,7 @@ asset-type: post
 title: "Microservices adventures: Ignoring platform complexity"
 date: 2019-05-18 08:00:00
 description: "Microservices adventures: Ignoring platform complexity"
-abstract: Shifting complexity from the services to the platform.
+abstract: Microservice architecture is shifting complexity from the services to the platform.
 image: 
     src: /assets/custom/img/blog/three-monkeys.jpg
     attribution:
@@ -15,8 +15,6 @@ tags:
 - devops
 - microservices
 ---
-
-== Microservices failure: Ignoring platform complexity
 
 I think there is a common misconception about microservices out there.
 
@@ -35,7 +33,7 @@ In my opinion, the price is the increase in platform complexity.
 > Microservices shift the complexity from the services to the platform.
 > Ignoring this fact results in the suboptimal results.
 
-== Complexity
+## Complexity
 
 > Complex - many parts with intricate arrangements, organized (easy) or disorganized (hard)
 
@@ -54,7 +52,7 @@ When going from a monolith to microservices, we split services reducing their co
 
 Because designing a platform for distributed systems on a large scale is not yet a mainstream concept, many companies don't realize they have to change tactics and fall short when giving in the microservices hype.
 
-== Platform definition
+## Platform definition
 
 The software which is not a shelfware eventually ends up running on a platform.
 The platform is all the things which enable the software to run and perform its duty.
@@ -64,9 +62,9 @@ My definition of a software platform includes:
 
 * *Platform topology* - existing infrastructure
 * *Services* - executable units of software
-** *Core services* - executables required to fulfill business needs
-** *Support services* - executables monitoring core services and the platform itself
-** *Service Orchestration* - executables assigning which service goes where also responsible for scaling and destroying services
+   - *Core services* - executables required to fulfill business needs
+   - *Support services* - executables monitoring core services and the platform itself
+   - *Service Orchestration* - executables assigning which service goes where also responsible for scaling and destroying services
 * *Service Configuration* - configuration which changes depending on the environment
 * *Service Secrets* - configuration which should not be source controlled
 * *Service Discovery* - detection of services
@@ -103,7 +101,7 @@ The platform is like a free puppy.
 The upfront cost may be zero, but when the puppy grows and multiplies the maintenance costs grows exponentially.
 Eventually, a badly designed and poorly maintained platform behaves in the most unexpected ways up to a point where instead of fixing the current one, it's cheaper to create a new one.
 
-== Platform as an afterthought
+## Platform as an afterthought
 
 There are two cases when starting with microservices architecture:
 
@@ -118,7 +116,7 @@ The platform usually comes up in the conversations as the "supporting" role, rar
 Companies who change their viewpoint and reverse this situation shall be the one to reap the full benefits of microservice architecture.
 Who knows, maybe even all of the devops catchphrases from the company "we are hiring" page will then come alive like in a fairy tale and mingle among the dancing developers.
 
-== Monitoring, observability and debuggability
+## Monitoring, observability and debuggability
 
 Monitoring is gathering and displaying data so it can be analyzed.
 To monitor a system, it must be observable.
@@ -129,10 +127,10 @@ The tools and techniques needed to analyze a system composed of couple services 
 Where one can manage to manually gather and sift through metrics for a few services, doing so for dozens is not sustainable.
 Any large scale microservice system needs tools to automatically gather all the essential metrics and display them in a format consumable to humans.
 
-=== Black box
+### Black box
 
 The opposite of an observable system is a "black box," where the only things we can measure are the inputs and outputs (or a lack thereof).
-In this hugely entertaining https://www.youtube.com/watch?v=30jNsCVLpAE[talk] Bryan Cantrill talks about the art of debuggability:
+In this entertaining [talk](https://www.youtube.com/watch?v=30jNsCVLpAE) Bryan Cantrill talks about the art of debuggability:
 
 > The art of debugging isn't to guess the answer - it is to be able to ask the right questions to know how to answer them.
 > Answered questions are facts, not a hypothesis.
@@ -143,7 +141,7 @@ When a deployment is a non-event, nobody congratulates the people behind it.
 In my opinion, successfully pulling out microservices architecture requires putting more effort into the platform itself than on the services running on it.
 Companies need to realize they are creating a platform first, and the services running on it are the afterthought.
 
-== Platform engineers
+## Platform engineers
 
 > Systems are as good as the people who designed it.
 
@@ -170,20 +168,20 @@ There is this one twisted interpretation of DevOps where the premise is that you
 That's never going to happen.
 Most developers don't care and do not want to learn about system administration.
 
-== Common oversights
+## Common oversights
 
 > "Some people change their ways when they see the light; others when they feel the heat."
 
 In my opinion, the most common oversights when dealing with microservices are:
 
-=== 1. Lack of monitoring
+### 1. Lack of monitoring
 
 >  "It’s pretty incredible when we stop assuming we know what’s going on."
 
 Observability needs to be built into the platform from the very beginning.
 Don't make a mistake of going into production and then worry about observability, at that time it may be too late.
 
-SLIs, SLAs, and SLOs, which boils down to https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos[availability], should be agreed up front and be monitored.
+SLIs, SLAs, and SLOs, which boils down to [availability](https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos), should be agreed up front and be monitored.
 To monitor those values, you need observability.
 
 Often there is a question who should be looking at the monitoring, and my answer would be to ask this:
@@ -195,7 +193,7 @@ However, if there is a penalty for breaking the SLA, then the answer clarifies i
 
 > "People are not afraid of failure, they are afraid of blame."
 
-=== 2. Wrong tools for alerts (or no alerting)
+### 2. Wrong tools for alerts (or no alerting)
 
 Getting spammed by dozens of occurrences of the same alert makes the receivers desensitized.
 Same types of alerts should automatically get grouped.
@@ -207,12 +205,12 @@ You don't want people working on the same issue in parallel without knowing the 
 Every alert needs at least the source of origin and the action to follow.
 Humans fix problems quickly if there is a clear procedure for how to deal with them.
 
-=== 3. Not following the https://12factor.net/[twelve factors] rules
+### 3. Not following the [twelve factors](https://12factor.net) rules
 
 It makes me sad when I see an application in 2019 which instead of logging to stdout logs to a file.
 Twelve factors rules are the basics and the lowest hanging fruits to pick.
 
-=== 4. Making artifacts mutable
+### 4. Making artifacts mutable
 
 Having to rebuild the artifact to change its configuration makes me cry — every time.
 Artifacts should be built once and be deployable to any environment.
@@ -222,7 +220,7 @@ Immutable artifacts are useful because every build is slightly different.
 The same artifact built twice may behave differently in the same conditions.
 We want to avoid that.
 
-=== 5. Not having a common logging strategy
+### 5. Not having a common logging strategy
 
 Nobody looks at logs for fun.
 We use them when debugging or when creating a baseline for the system pulse (think heart rate monitor but for software).
@@ -233,7 +231,7 @@ If you cannot enforce a common strategy, then automatically normalize the log st
 
 Standardized logging scheme is also crucial for making useful dashboards.
 
-=== 6. Not https://zipkin.apache.org/[tracing] network calls
+### 6. Not [tracing](https://zipkin.apache.org/) network calls
 
 When a function call crash we get a stack trace with all the calls from start to finish.
 In microservices, calls can jump from service to service, and when one fails, it's crucial to see the whole flow.
@@ -244,18 +242,18 @@ Tracking individual calls may seem daunting at first, but implementation is stra
 Usually, it's a middle man which marks the network calls and logs the event.
 Logs are then used to produce visualizations.
 
-=== 7. Designing pipelines without automated rollbacks
+### 7. Designing pipelines without automated rollbacks
 
 To have an automated rollback, you need auto detection when something goes wrong.
 How the system detects and decides if something went wrong separates Continuous Deployment wannabes from the pros.
 
-=== 8. Not requiring health checks
+### 8. Not requiring health checks
 
 Every service needs to answer one fundamental question: is it healthy or not.
 Of course, health check status from the application should be just one of many metrics collected by the orchestrator to decide if a service is healthy.
 There may be many issues that the service is not aware of.
 
-=== 9. Not using a Service Mesh
+### 9. Not using a Service Mesh
 
 When replacing function calls (monolith) for network calls (microservices), we need to accommodate for latency, network errors, and packet drops.
 Doing retries directly from the service may seem harmless, but it may cause system-wide cascading failures and put unnecessary strain on the network.
@@ -266,7 +264,7 @@ It is true that we are still making a network call to a service mesh, but it is 
 Service mesh also gives us essential features like retries policies, call timeouts, and deadlines.
 It also makes it easier to have a system-wide call tracing.
 
-=== 10. Not adapting the tools with scale
+### 10. Not adapting the tools with scale
 
 Many years ago, I joined a project where, at the very beginning, the platform was running just a handful of services.
 The tool for orchestrating services was very primitive.
@@ -285,7 +283,7 @@ It took more than a year to acknowledge the problem and design a new platform fr
 Conclusion: the platform needs to be checked periodically to asses if it still suits the needs of a system.
 
 
-== Ending words
+## Ending words
 
 Its been about 10 years since the microservices became mainstream.
 The industry is still coming up with new tools, solutions, and patterns to make our life easier.
