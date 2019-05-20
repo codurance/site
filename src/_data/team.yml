@@ -48,8 +48,8 @@
 - id: fernando_rafart
   name: Fernando Rafart
   image: /assets/custom/img/team/fernando_rafart.jpg
-  role: Head of Professional Services (Spain) 
-  fullDescription: 
+  role: Head of Professional Services (Spain)
+  fullDescription:
     <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
     <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
 
@@ -99,7 +99,7 @@
 - id: magda-firek
   name: Magdalena Kocerba-Firek
   image: /assets/custom/img/team/magda_firek.jpg
-  role: Office Manager 
+  role: Office Manager
   fullDescription:
     <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
     <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
@@ -127,7 +127,7 @@
   name: Robert Taylor
   image: /assets/custom/img/team/rob_taylor.jpg
   role: Software Craftsman
-  fullDescription: 
+  fullDescription:
     <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
     <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
     <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
@@ -301,19 +301,6 @@
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
   github: Archel
-
-- id: ascandroli
-  name: Alejandro Scandroli
-  image: /assets/custom/img/team/alejandro_scandroli.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Alejandro is a technology tinkerer with a deep interest in the intricate craft of software development. He's passionate about building, growing and leading teams to develop large-scale products and services.</p>
-    <p>He has a very broad range of experience in technologies and companies, yet always willing to learn more.</p>
-    <p>Being interested in most areas of software development, he has worn many hats during his career&colon; do-it-all IT guy, sysadmin, programmer, <i>(hands-on)</i> software architect, open source developer, project manager, <i>(elastic)</i> team leader, coach, entrepreneur, CTO and Software Craftsman.</p>
-    <p>He is a mindful husband and proud father of two young girls.</p>
-    <p>He also finds particularly weird to talk about himself in third person. ;-)</p>
-  twitter: _ascandroli
-  github: ascandroli
 
 - id: ggsbv
   name: Sandro Viljoen
@@ -662,7 +649,7 @@
     <p>After finishing high school he had to put his passion on hold for a while and he worked for many years in many different things until he had the opportunity to go to the university to study computer science.</p>
     <p>Once he got the degree he started to work as a software developer only to find out that most of what we do is not science rather a complete mess and that there must be a better way to develop software.</p>
     <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn and work alone? He is delighted that Codurance took him as an apprentice and he aspires to become a software craftsman.</p>
- 
+
 - id: aurelija_zubaviciute
   name: Aurelija Zubaviciute
   image: /assets/custom/img/team/aurelija_zubaviciute.jpg
@@ -683,7 +670,7 @@
     <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
     <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
   twitter: roaslin
-    
+
 - id: andrew_pattison
   name: Andrew Pattison
   image: /assets/custom/img/team/andrew_pattison.jpg
