@@ -26,7 +26,7 @@ But seriously.
 
 Microservices were supposed to enable companies to perform gazillion deployments per day, scale the system up to infinity, reduce the codebase complexity, and save money at the same time.
 
-However, few asked what is the price for all of this?
+Few, however, ask what is the price for this?
 
 In my opinion, the price is the increase in platform complexity.
 
@@ -147,13 +147,13 @@ Companies need to realize they are creating a platform first, and the services r
 
 Systems fail, and that is something to be expected and embraced.
 However, they should also self recover.
-How do you ask?
+How, you ask?
 Preferably without the input of humans.
 
-> With any advanced automation the weakest link is always the human.
+> With any advanced automation, the weakest link is always the human.
 
-Creating a self-healing system requires to monitor itself.
-To monitor a platform, you need observability.
+Self-healing system requires self-monitoring capabilities.
+To monitor anything, you need observability.
 Observability and monitoring should then be a priority, not an afterthought.
 To design, setup, and maintain platform monitoring, we need platform engineers.
 
@@ -163,10 +163,6 @@ Our job should not only be fixing the problems but primarily making sure that th
 When dealing with complex platforms, we need full time "platform engineers."
 Those are either system administrators who can code or coders who know system administration.
 They write code to make the platform more observable, stable, and developer friendly.
-
-There is this one twisted interpretation of DevOps where the premise is that you could get "rid" of system administrators and end up with only developers who would manage services in production.
-That's never going to happen.
-Most developers don't care and do not want to learn about system administration.
 
 ## Common oversights
 
@@ -212,9 +208,9 @@ Twelve factors rules are the basics and the lowest hanging fruits to pick.
 
 ### 4. Making artifacts mutable
 
-Having to rebuild the artifact to change its configuration makes me cry — every time.
+Having to rebuild the artifact to change its runtime configuration makes me cry — every time.
 Artifacts should be built once and be deployable to any environment.
-You can pass the config with env variables or read an external config file.
+You can pass or select the config with environment variables or read an external config file.
 
 Immutable artifacts are useful because every build is slightly different.
 The same artifact built twice may behave differently in the same conditions.
@@ -239,7 +235,7 @@ In microservices, calls can jump from service to service, and when one fails, it
 It is incredibly useful and insightful to be able to trace a single call throughout the system.
 
 Tracking individual calls may seem daunting at first, but implementation is straightforward.
-Usually, it's a middle man which marks the network calls and logs the event.
+Usually, it's a middleman which marks the network calls and logs the event.
 Logs are then used to produce visualizations.
 
 ### 7. Designing pipelines without automated rollbacks
@@ -258,7 +254,7 @@ There may be many issues that the service is not aware of.
 When replacing function calls (monolith) for network calls (microservices), we need to accommodate for latency, network errors, and packet drops.
 Doing retries directly from the service may seem harmless, but it may cause system-wide cascading failures and put unnecessary strain on the network.
 
-Instead of forcing each service to deal with network failures, we can use a middle man called Service Mesh, which is designed to handle those cases.
+Instead of forcing each service to deal with network failures, we can use a middleman called Service Mesh, which is designed to handle those cases.
 It is true that we are still making a network call to a service mesh, but it is safer because the call is not leaving the host.
 
 Service mesh also gives us essential features like retries policies, call timeouts, and deadlines.
@@ -288,9 +284,9 @@ Conclusion: the platform needs to be checked periodically to asses if it still s
 Its been about 10 years since the microservices became mainstream.
 The industry is still coming up with new tools, solutions, and patterns to make our life easier.
 Keeping up with "devops" technology can be fatiguing and overwhelming, so instead, I think it is better to learn the underlying concepts which are universal and evolve slowly.
-That, I hope, is what I'm trying to do here; figure out what those microservices are all about.
+
 In our minds, we create models to approximate the concepts we learn.
-I know that my models have big holes in them and needs a major overhaul, so if you see any obvious and stupid mistakes, please share with me!
+I know that my models have holes in them, so if you have some inputs, please share with me.
 
 Andy
 
