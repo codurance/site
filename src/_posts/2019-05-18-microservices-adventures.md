@@ -160,9 +160,12 @@ To design, setup, and maintain platform monitoring, we need platform engineers.
 Humans should be in the loop only when the system cannot repair itself.
 Our job should not only be fixing the problems but primarily making sure that those problems never occur again or gets fixed automatically next time.
 
-When dealing with complex platforms, we need full time "platform engineers."
+When dealing with complex platforms, we need "platform engineers."
 Those are either system administrators who can code or coders who know system administration.
 They write code to make the platform more observable, stable, and developer friendly.
+
+Best results are achieved when the platform engineers are not an isolated team but part of the development teams.
+An ideal situation is when all your developers can be considered platform engineers.
 
 ## Common oversights
 
