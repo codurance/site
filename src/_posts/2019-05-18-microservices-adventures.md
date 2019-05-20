@@ -211,7 +211,7 @@ Twelve factors rules are the basics and the lowest hanging fruits.
 
 ### 4. Making artifacts mutable
 
-Twelve factors rules are the basics and the lowest hanging fruit.
+It is unacceptable to have to rebuild the artifact to change its runtime configuration.
 Artifacts should be built once and be deployable to any environment.
 You can pass or select the config with environment variables or read an external config file.
 
