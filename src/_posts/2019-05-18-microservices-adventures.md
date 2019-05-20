@@ -260,7 +260,7 @@ Doing retries directly from the service may seem harmless, but it may cause syst
 Instead of forcing each service to deal with network failures, we can use a middleman called Service Mesh, which is designed to handle those cases.
 It is true that we are still making a network call to a service mesh, but it is safer because the call is not leaving the host.
 
-Service mesh also gives us essential features like retries policies, call timeouts, and deadlines.
+Service mesh also gives us essential features like retries policies, call timeouts, deadlines and [circuit breaking](https://martinfowler.com/bliki/CircuitBreaker.html).
 It also makes it easier to have a system-wide call tracing.
 
 ### 10. Not adapting the tools with scale
