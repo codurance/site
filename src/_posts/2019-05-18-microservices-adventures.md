@@ -152,7 +152,7 @@ Preferably without the input of humans.
 
 > With any advanced automation, the weakest link is always the human.
 
-Self-healing system requires self-monitoring capabilities.
+A self-healing system requires self-monitoring capabilities.
 To monitor anything, you need observability.
 Observability and monitoring should then be a priority, not an afterthought.
 To design, setup, and maintain platform monitoring, we need platform engineers.
@@ -211,7 +211,7 @@ Twelve factors rules are the basics and the lowest hanging fruits.
 
 ### 4. Making artifacts mutable
 
-Having to rebuild the artifact to change its runtime configuration is unacceptable.
+It is unacceptable to have to rebuild the artifact to change its runtime configuration.
 Artifacts should be built once and be deployable to any environment.
 You can pass or select the config with environment variables or read an external config file.
 
