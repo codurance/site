@@ -207,11 +207,11 @@ Humans fix problems quickly if there is a clear procedure for how to deal with t
 ### 3. Not following the [twelve factors](https://12factor.net) rules
 
 It makes me sad when I see an application in 2019 which instead of logging to stdout logs to a file.
-Twelve factors rules are the basics and the lowest hanging fruits to pick.
+Twelve factors rules are the basics and the lowest hanging fruits.
 
 ### 4. Making artifacts mutable
 
-Having to rebuild the artifact to change its runtime configuration makes me cry — every time.
+Having to rebuild the artifact to change its runtime configuration is unacceptable.
 Artifacts should be built once and be deployable to any environment.
 You can pass or select the config with environment variables or read an external config file.
 
