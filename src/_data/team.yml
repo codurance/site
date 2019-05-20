@@ -96,6 +96,33 @@
   linkedin: john-rihana-861b27a6
   email: john.rihana@codurance.com
 
+- id: magda-firek
+  name: Magdalena Kocerba-Firek
+  image: /assets/custom/img/team/magda_firek.jpg
+  role: Office Manager
+  fullDescription:
+    <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
+    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
+    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
+
+- id: jen_jem
+  name: Jen Jeremiciute
+  image: /assets/custom/img/team/jen_jem.jpg
+  role: Office & Finance Manager
+  fullDescription:
+    <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
+    <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
+
+- id: lilianacarneiro
+  name: Liliana Carneiro
+  image: /assets/custom/img/team/liliana_carneiro.jpg
+  role: Office Manager
+  fullDescription:
+    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
+    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
+    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
+  twitter: lilistahr
+
 - id: rob
   name: Robert Taylor
   image: /assets/custom/img/team/rob_taylor.jpg
@@ -205,16 +232,6 @@
   github: miyamotoakira
   linkedin: jgueorguiev
   email: jorge.gueorguiev@codurance.com
-
-- id: lilianacarneiro
-  name: Liliana Carneiro
-  image: /assets/custom/img/team/liliana_carneiro.jpg
-  role: Office Manager
-  fullDescription:
-    <p>Liliana is the Office Manager in our Barcelona office. She is responsible for organising all administrative activities, HR, Marketing and events. Graduated in Law, she worked in law firms, government organisations and banks. She also worked in fashion for the music industry.</p>
-    <p>She is very enthusiastic, energetic and enjoys challenges.</p>
-    <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
-  twitter: lilistahr
 
 - id: andrzejrehmann
   name: Andrzej Rehmann
@@ -397,15 +414,6 @@
     <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
     <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
   github: upsd
-
-- id: magda-firek
-  name: Magdalena Kocerba-Firek
-  image: /assets/custom/img/team/magda_firek.jpg
-  role: Office Manager
-  fullDescription:
-    <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
-    <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
-    <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
 
 - id: chris-bimson
   name: Chris Bimson
@@ -618,14 +626,6 @@
     <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
     <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
   github: monitotxi
-
-- id: jen_jem
-  name: Jen Jeremiciute
-  image: /assets/custom/img/team/jen_jem.jpg
-  role: Office & Finance Manager
-  fullDescription:
-    <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
-    <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
 
 - id: gabriele_lippi
   name: Gabriele Lippi
