@@ -288,8 +288,3 @@ Its been about 10 years since the microservices became mainstream.
 The industry is still coming up with new tools, solutions, and patterns to make our life easier.
 Keeping up with "devops" technology can be fatiguing and overwhelming, so instead, I think it is better to learn the underlying concepts which are universal and evolve slowly.
 
-In our minds, we create models to approximate the concepts we learn.
-I know that my models have holes in them, so if you have some inputs, please share with me.
-
-Andy
-
