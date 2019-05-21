@@ -5,7 +5,7 @@ asset-type: post
 title: "Creating a Jenkinsfile pipeline"
 date: 2019-05-21 08:00:00
 description: "Creating a Jenkinsfile pipeline"
-abstract: ""
+abstract: "Basics of setting up a Jenkins multibranch pipeline job and defining a Jenkinsfile."
 image: 
     src: /assets/custom/img/blog/2019-05-21-creating-a-jenkinsfile-pipeline/pipeline.jpg
     attribution:
