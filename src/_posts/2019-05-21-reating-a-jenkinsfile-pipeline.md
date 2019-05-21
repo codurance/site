@@ -14,7 +14,7 @@ image:
 tags: 
 - devops
 - Jenkins
-- ci
+- Continuous Integration
 ---
 
 Basics of setting up a Jenkins multibranch pipeline job and defining a Jenkinsfile.
