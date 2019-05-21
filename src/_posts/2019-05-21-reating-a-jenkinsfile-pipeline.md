@@ -93,7 +93,7 @@ pipeline {
 
 ### Detecting changes by polling
 
-Jenkins can be immediately notified by changes (e.g. new commits) in your repository by an external webhook, but if you don’t know how to set it up you can always start with Jenkins polling your git repository and checking for new changes.
+Jenkins can be immediately notified by changes (e.g., new commits) in your repository by an external webhook, but if you don’t know how to set it up, you can always start with Jenkins polling your git repository and checking for new changes.
 
 Activate `Scan Multibranch Pipeline Triggers` making Jenkins `git fetch` for new changes in 1-minute intervals. When new commits or branches are detected Jenkins will automatically start a build.
 
@@ -105,7 +105,7 @@ Click on `Save` and Jenkins will start the first scan.
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-21-creating-a-jenkinsfile-pipeline/007.png "") 
 
-What happened is that Jenkins cloned the repository and looked in each branch for a Jenkinsfile. When it finds a match it creates nested jobs for each branch and runs builds for them. In our current set up Jenkins will do this cycle every minute.
+What happened is that Jenkins cloned the repository and looked in each branch for a Jenkinsfile. When it finds a match, it creates nested jobs for each branch and runs builds for them. In our current set up, Jenkins will do this cycle every minute.
 
 At the time of writing this article, only `master` branch matches my job criteria. So only one job has been created.
 
@@ -131,7 +131,7 @@ This is the same log view we saw before but logs are going to be refreshed every
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-21-creating-a-jenkinsfile-pipeline/010.png "") 
 
-From my experience, this view is the best way to debug issues with multibranch pipelines. If you ever see a timeout on a `git` command it usually means Jenkins can’t access the git repository.
+From my experience, this view is the best way to debug issues with multibranch pipelines. If you ever see a timeout on a `git` command, it usually means Jenkins can’t access the git repository.
 
 Following log tells us that only 1 branch has been detected and Jenkins already have a build for the commit on that branch.
 
@@ -146,7 +146,7 @@ Go back to nested jobs view and click on the job for the `master` branch.
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-21-creating-a-jenkinsfile-pipeline/012.png "") 
 
-If the referenced git repository never changes then no build will be ever run again. If you want to you can always trigger a build manually by clicking on the `Build Now` link. This is useful when the build fails for random reasons.
+If the referenced git repository never changes, then no build will be ever run again. If you want to, you can always trigger a build manually by clicking on the `Build Now` link. This is useful when the build fails for random reasons.
 
 ---
 
