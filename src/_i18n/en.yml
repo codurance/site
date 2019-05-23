@@ -1,9 +1,32 @@
 office:
-   email: hello@codurance.com
-   lat: "51.523876"
-   lon: "-0.100533"
-   central: London
-   man: Manchester
+  email: hello@codurance.com
+  lat: "51.523876"
+  lon: "-0.100533"
+  central: London
+  bcn:
+    city: Barcelona
+    address: "Carrer Aragó 208 4º,\n08011 Barcelona"
+    phone: +34 937 82 28 82
+    contact_name: Jack Colemanzo
+    contact_phone: +34 937 82 28 82
+    contact_email: jack.coleman@codurance.com
+    contact_image: ''
+  ldn:
+    city: London
+    address: "5th Floor,\n15 Northburgh Street,\nEC1V 0JR"
+    phone: +44 207 4902967
+    contact_name: John Rihana
+    contact_phone: +44 207 4902967
+    contact_email: john.rihana@codurance.com
+    contact_image: ''
+  man:
+    city: Manchester
+    address: "2 Mount Street,\nManchester\nM2 5WQ"
+    phone: +44 207 4902967
+    contact_name: Emma Booth
+    contact_phone: +44 207 4902967
+    contact_email: emma.booth@codurance.com
+    contact_image: ''
 analytics:
   google-id: UA-46289079-1
 sections:
