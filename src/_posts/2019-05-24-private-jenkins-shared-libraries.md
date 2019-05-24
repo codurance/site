@@ -3,7 +3,7 @@ author: Andrzej Rehmann
 layout: post
 asset-type: post
 title: "Private Jenkins Shared Libraries"
-date: 2019-05-21 08:00:00
+date: 2019-05-24 08:00:00
 description: "Private Jenkins Shared Libraries"
 abstract: "How to use Jenkins Shared Libraries with private git repositories, semantic versioning and unit tests."
 image: 
