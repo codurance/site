@@ -51,11 +51,11 @@ Let me ask you this: How do you want to test new pipeline features? Is it ok for
 
 In an ideal world, all pipelines would be dead simple, idempotent, written in a declarative way (e.g. using [ansible playbooks](https://docs.ansible.com/ansible/devel/user_guide/playbooks.html)) with no logic in them and you should be able to test run them locally without the CI server present.
 
-But if in Jenkins pipelines you are going to use [groovy](http://groovy-lang.org/) then it is very common to have a logic-creep infesting the stages of your pipelines. In this case, if you use JSL then you can unit test the code as if you would test any other groovy code.
+However, if in Jenkins pipelines, you are going to use [groovy](http://groovy-lang.org/), then it isn't uncommon to have a logic-creep infesting the stages of your pipelines. In this case, if you use JSL then you can unit test the code as if you would test any other groovy code.
 
-Currently, it is very hard to test any infrastructure related code as a whole as it requires an expensive mix of mocking, isolation and idempotency. But if you have a chance to easily unit test part of a pipeline then do so. From my experience when you have to unit tests a big chunk of pipeline it means that that code should be extracted as a (Jenkins) plugin because a plugin for it does not exist yet.
+Currently, it is tough to test any infrastructure related code as a whole as it requires an expensive mix of mocking, isolation, and idempotency. However, if you have a chance to easily unit test part of a pipeline, then do so. From my experience when you have to unit tests a big chunk of the pipeline it means that that code should be extracted as a (Jenkins) plugin because a plugin for it does not exist yet.
 
-Some automation tools have “dry run” mode but with more complex scenarios it falls short. Unfortunately, testability is still not a primary concern with most infrastructure tools.
+Some automation tools have "dry run" mode, but with more complex scenarios, it falls short. Unfortunately, testability is still not a primary concern with most infrastructure tools.
 
 ---
 
@@ -403,7 +403,7 @@ To clone a private JSL repository Jenkins needs to be able to authenticate with 
     ```
 
 3. By adding an ssh key to your Jenkins instance and reference JSL with private ssh URL e.g. `git@github.com:hoto/jenkins-shared-library.git`
-This can actually be tricky to configure correctly so depending on your Jenkins setup try other approaches first. Also, this approach is not my favourite as it is “magical” because it hides the details of how Jenkins authenticates and which ssh key is used.
+This can actually be tricky to configure correctly so depending on your Jenkins setup try other approaches first. Also, this approach is not my favourite as it is "magical" because it hides the details of how Jenkins authenticates and which ssh key is used.
 
 Also, JSL repository obviously does not have to be hosted on GitHub (it does not even need to be a git repository), it could be hosted from a private GitLab or Bitbucket etc.
 
@@ -598,7 +598,7 @@ The `vars` directory hosts scripts that define global variables accessible from 
     └── simplePipeline.groovy
 ```
 
-Official [documentation](https://jenkins.io/doc/book/pipeline/shared-libraries/) is using “global variables” for something that to me looks like functions. I’m not a Jenkins or groovy expert so I’m gonna use the same nomenclature as to not confuse people.
+Official [documentation](https://jenkins.io/doc/book/pipeline/shared-libraries/) is using "global variables" for something that to me looks like functions. I’m not a Jenkins or groovy expert so I’m gonna use the same nomenclature as to not confuse people.
 
 The only file in my `vars` folder: `simplePipeline.groovy` is a [custom step](https://jenkins.io/doc/book/pipeline/shared-libraries/#defining-custom-steps) directive. It is a step because it contains a function with a special declaration `call(Map args)` .
 
@@ -610,7 +610,7 @@ def call(Map args) {
 
 That `call` function will be triggered when you call `simplePipeline(args)` from anywhere in the pipeline.
 
-I’m not going to go into many details here but take note that there are a couple of other different “global variables” you can use.
+I’m not going to go into many details here but take note that there are a couple of other different "global variables" you can use.
 
 ---
 
