@@ -3,11 +3,11 @@ author: Andrzej Rehmann
 layout: post
 asset-type: post
 title: "Private Jenkins Shared Libraries"
-date: 2019-05-24 08:00:00
+date: 2019-05-25 08:00:00
 description: "Private Jenkins Shared Libraries"
 abstract: "How to use Jenkins Shared Libraries with private git repositories, semantic versioning and unit tests."
 image: 
-    src: /assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/001.jpeg
+    src: /assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/001.jpeg
     attribution:
        text: Photo by j zamora on Unsplash
        href: https://unsplash.com/photos/GWOTvo3qq7U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
@@ -110,11 +110,11 @@ cd jenkinsfile-examples
 docker-compose pull
 docker-compose up
 ```
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/002.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/002.png "")
 
 Jenkins should be available in your web browser on `localhost:8080`
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/003.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/003.png "")
 
 There are a couple of jobs there already. Their config is based on the Jenkinsfiles `<job_name>.groovy` files located in the `jenkinsfiles` directory inside the repository. Editing, creating or deleting any of those Jenkinsfiles will cause the change to be reflected immediately in Jenkins (sometimes refreshing the page is required).
 
@@ -191,9 +191,9 @@ What should be interesting to us about this job is that it:
 
 Let’s run it and go through the build logs.
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/004.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/004.png "")
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/005.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/005.png "")
 
 Breaking down the logs:
 
@@ -285,7 +285,7 @@ simplePipeline([jsl: jsl])
 
 Also, you could split the build phase from the deployment phase when the pipeline grows to make things easier to maintain.
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/006.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/006.png "")
 
 ### Using classes
 
@@ -349,7 +349,7 @@ pipeline {
 }
 ```
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/007.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/007.png "")
 ---
 
 ## Making Jenkins Shared Library private
@@ -476,11 +476,11 @@ If this was a real case scenario I would just use a Jenkins instance and create 
 
 To show you how to use Jenkins instance to test your JSL repository a pre-made job config is included in `jenkinsfile-examples` project called [`C-001-jenkins-shared-library-build-and-test`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/configs/C-001-jenkins-shared-library-build-and-test.xml):
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/008.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/008.png "")
 
 Because my JSL project is a standard gradle git repository there are only two things you need to specify in a multi-branch pipeline job: project repository location (GitHub) and location of Jenkinsfile (root). Open `C-001-jenkins-shared-library-build-and-test` job settings to verify that:
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/009.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/009.png "")
 
 Let’s have a look at the `jenkinsfile-shared-library` [`Jenkinsfile`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/Jenkinsfile) and then finally run the job.
 
@@ -560,7 +560,7 @@ jsl = library(
 
 On top of it, the identifier points to a library version using an environment variable `${env.BRANCH_NAME}`. When you combine this with a multi-branch pipeline job and gated pull requests you are technically able to add new pipeline features and unit test them at the same time before you merge them into master branch. Think of it, the possibilities are endless… But honestly, I don’t think cramming all of your pipelines features into a single Jenkinsfile is practical. More likely you would end up using a couple of components and that’s it.
 
-![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-24-private-jenkins-shared-libraries/010.png "")
+![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/010.png "")
 
 First build of `Unit Tests` stage took `1min 15s` yet after retrying the same build it took only `4s` as all of the depenencies has been already cached on the host. This is done by passing some extra arguments to docker to mount the gradle cache from the host `args ‘-v /root/.gradle:/home/gradle/.gradle’` Otherwise each new stage would have to download all of the depencencies each time as each stage is a fresh docker container.
 
