@@ -472,7 +472,7 @@ This repository is a standard [gradle](https://gradle.org/) groovy project, ther
 
 I've included a Jenkinsfile in the project but it is unused as I don't want to pay for a machine running Jenkins. I still wanted automatic testing of my shared library project on every push to the repository so I've added a [`.circleci/config.yml`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/.circleci/config.yml) file and hooked up my GitHub repository to a free [circleci](https://circleci.com/gh/hoto/jenkinsfile-loader/tree/master) online service.
 
-If this was a real case scenario I would just use a Jenkins instance and create a multi-branch pipeline job referencing the shared library repository. But there is no jenkins-as-a-service so I'm using circle ci in this example.
+If this were a real case scenario, I would use a Jenkins instance and create a multi-branch pipeline job referencing the shared library repository. However, there is no jenkins-as-a-service, so I'm using circle ci in this example.
 
 To show you how to use Jenkins instance to test your JSL repository a pre-made job config is included in `jenkinsfile-examples` project called [`C-001-jenkins-shared-library-build-and-test`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/configs/C-001-jenkins-shared-library-build-and-test.xml):
 
