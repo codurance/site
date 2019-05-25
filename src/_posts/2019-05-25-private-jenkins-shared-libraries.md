@@ -32,7 +32,7 @@ This article assumes the reader is somehow familiar with Jenkinsfiles or at leas
 Your company may be going through the Agile/DevOps transformation, and suddenly there is this push to use Continuous Integration (CI) and maybe even Continous Delivery/Deployment (CD) for every project. Or maybe it is just the teams themselves who want to start using a CI and are looking for a guide to this fancy DevOps stuff. Whatever your case may be, there are usually three common questions when starting building and deploying applications:
 
 * What CI should we use?
-* Our pipelines are pretty similar. Wow can we avoid duplication?
+* Our pipelines are pretty similar. How can we avoid duplication?
 * Is it reasonable to unit test the pipelines?
 
 In my opinion, only the first question is usually taken into consideration at the beginning of the CI journey, and the last two materialise only after the newly automated pipelines grow and require a dedicated person to mainta… Wait a minute this is not what DevOps was supposed t… Well, never mind, let's keep going.
