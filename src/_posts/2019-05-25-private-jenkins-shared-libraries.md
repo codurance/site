@@ -246,18 +246,18 @@ Purpose of `050-shared-library-where-is-it-cloned` job is only to show how Jenki
 
 ### Using global variables
 
-Job [`051-shared-library-using-global-variables`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/jenkinsfiles/051-shared-library-using-global-variables.groovy) is utilising Jenkins [scripted pipeline](https://jenkins.io/doc/book/pipeline/syntax/#scripted-pipeline) model with fluent interface design pattern making it possible to write elegant, generic and reusable pipelines. If you have a lot of similar projects you could make a template repository with generic Jenkinsfile using this approach and very easily script the creation of new projects and their pipelines.
+Job [`051-shared-library-using-global-variables`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/jenkinsfiles/051-shared-library-using-global-variables.groovy) is utilising Jenkins [scripted pipeline](https://jenkins.io/doc/book/pipeline/syntax/#scripted-pipeline) model with fluent interface design pattern making it possible to write elegant, generic, and reusable pipelines. If you have a lot of similar projects, you could make a template repository with generic Jenkinsfile using this approach and easily script the creation of new projects and their pipelines.
 
-This model is my preferred one as it offers the most power, reusability and versatility while making the pipelines easy to read at the same time. I recommend you try it first.
+This model is my preferred one as it offers the most power, reusability, and versatility while making the pipelines easy to read at the same time. I recommend you try it first.
 
 There are two strategies to write pipelines like this:
 
-1. Abstract everything including the commands themselves.
-This only works when all projects follow the same convention which is known to everybody in the company.
+1. Abstract everything, including the commands themselves.
+This only works when all projects follow the same convention, which is known to everybody in the company.
 A drawback of doing so will make it hard to tell what commands are used to build a project with just looking at the Jenkinsfile.
 
 2. Abstract everything but the commands.
-This is useful when your company does not have a single convention to build similar projects. If you have lot's of legacy projects then using this strategy will probably save you some headaches.
+This is useful when your company does not have a single convention to build similar projects. If you have lot's of legacy projects, then using this strategy will probably save you some headaches.
 
 This example is using strategy #2:
 
