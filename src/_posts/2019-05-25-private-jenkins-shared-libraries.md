@@ -5,7 +5,7 @@ asset-type: post
 title: "Private Jenkins Shared Libraries"
 date: 2019-05-25 08:00:00
 description: "Private Jenkins Shared Libraries"
-abstract: "How to use Jenkins Shared Libraries with private git repositories, semantic versioning and unit tests."
+abstract: "How to use Jenkins Shared Libraries with private git repositories, semantic versioning, and unit tests."
 image: 
     src: /assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/001.jpeg
     attribution:
@@ -19,31 +19,31 @@ tags:
 
 The official documentation for Jenkins Shared Libraries is pretty good, but not perfect.
 
-This article expands on how to use [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) with private git repositories, semantically version and unit test your libraries and provides working examples which you can run yourself.
+This article expands on how to use [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) with private git repositories, semantically version, and unit test your libraries and provides working examples which you can run yourself.
 
 ## Short Intro
 
-Jenkins Shared Library is a very useful tool when dealing with multiple similar pipelines. If you are looking for a way to reduce code duplication in your Jenkins pipelines then this article may be the right place to start.
+Jenkins Shared Library is a handy tool when dealing with multiple similar pipelines. If you are looking for a way to reduce code duplication in your Jenkins pipelines, then this article may be the right place to start.
 
 This article assumes the reader is somehow familiar with Jenkinsfiles or at least with the concept of a Pipeline as Code. Here is a [link](https://codurance.com/2019/05/21/creating-a-jenkinsfile-pipeline/) to my basic introduction into Jenkinsfiles if you are new to it.
 
 ## For those new to the CI
 
-Your company may be going through the Agile/DevOps transformation and suddenly there is this push to use Continuous Integration (CI) and maybe even Continous Delivery/Deployment (CD) for every project. Or maybe it is just the teams themselves who want to start using a CI and are looking for a guide to this fancy DevOps stuff. Whatever your case may be, there are usually three common questions when starting building and deploying applications:
+Your company may be going through the Agile/DevOps transformation, and suddenly there is this push to use Continuous Integration (CI) and maybe even Continous Delivery/Deployment (CD) for every project. Or maybe it is just the teams themselves who want to start using a CI and are looking for a guide to this fancy DevOps stuff. Whatever your case may be, there are usually three common questions when starting building and deploying applications:
 
 * What CI should we use?
-* Our pipelines are pretty similar, how can we avoid duplication?
+* Our pipelines are pretty similar. Wow can we avoid duplication?
 * Is it reasonable to unit test the pipelines?
 
-To be honest only the first question is usually taken into consideration at the beginning of the CI journey and the last two materialise only after the newly automated pipelines grow and require a dedicated person to mainta… Wait a minute this is not what DevOps was supposed t… Well, never mind, let’s keep going.
+In my opinion, only the first question is usually taken into consideration at the beginning of the CI journey, and the last two materialise only after the newly automated pipelines grow and require a dedicated person to mainta… Wait a minute this is not what DevOps was supposed t… Well, never mind, let’s keep going.
 
 > What CI should we use?
 
-The answer to this question is u̶n̶f̶o̶r̶t̶u̶n̶a̶t̶e̶l̶y̶ usually ["Jenkins"](https://jenkins.io/) as it is still the most popular and feature-rich CI on the market. Oh and it’s free, which makes it by default one of the best candidates in the eyes of your management.
+The answer to this question is u̶n̶f̶o̶r̶t̶u̶n̶a̶t̶e̶l̶y̶ usually ["Jenkins"](https://jenkins.io/) as it is still the most popular and feature-rich CI on the market. Oh, and it’s free, which makes it by default one of the best candidates in the eyes of your management.
 
-> Our pipelines are pretty similar, how can we avoid duplication?
+> Our pipelines are pretty similar. How can we avoid duplication?
 
-This is more interesting as there are a couple of options for Jenkins. One option is to use [Jenkins Job DSL](https://github.com/jenkinsci/job-dsl-plugin) plugin (JDSL) to completely automate the initial creation and content of your jobs, but using JDSL usually implies that there is one Jenkins instance for multiple teams or a central one for the whole company (this works well when all projects follow the same convention). Also, the initial cost of creating a quality [seed JDSL job](https://github.com/jenkinsci/job-dsl-plugin/wiki/Tutorial---Using-the-Jenkins-Job-DSL) can be time-consuming and it pays itself of the more jobs you create with it. So what if you don’t want to heavily invest in JDSL? My answer to that is to try [Jenkins Shared Library](https://jenkins.io/doc/book/pipeline/shared-libraries/) (JSL). Although it is possible to combine JDSL with JSL, in this article, I’m going to focus on JSL alone.
+This question is more interesting as there are a couple of options for Jenkins. One option is to use [Jenkins Job DSL](https://github.com/jenkinsci/job-dsl-plugin) plugin (JDSL) to automate the initial creation and content of your jobs completely, but using JDSL usually implies that there is one Jenkins instance for multiple teams or a central one for the whole company (this works well when all projects follow the same convention). Also, the initial cost of creating a quality [seed JDSL job](https://github.com/jenkinsci/job-dsl-plugin/wiki/Tutorial---Using-the-Jenkins-Job-DSL) can be time-consuming and it pays itself of the more jobs you create with it. So what if you don’t want to invest in JDSL heavily? My answer to that is to try [Jenkins Shared Library](https://jenkins.io/doc/book/pipeline/shared-libraries/) (JSL). Although it is possible to combine JDSL with JSL, in this article, I’m going to focus on JSL alone.
 
 > Is it reasonable to unit test the pipelines?
 
