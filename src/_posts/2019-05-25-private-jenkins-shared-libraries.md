@@ -35,15 +35,15 @@ Your company may be going through the Agile/DevOps transformation, and suddenly 
 * Our pipelines are pretty similar. Wow can we avoid duplication?
 * Is it reasonable to unit test the pipelines?
 
-In my opinion, only the first question is usually taken into consideration at the beginning of the CI journey, and the last two materialise only after the newly automated pipelines grow and require a dedicated person to mainta… Wait a minute this is not what DevOps was supposed t… Well, never mind, let’s keep going.
+In my opinion, only the first question is usually taken into consideration at the beginning of the CI journey, and the last two materialise only after the newly automated pipelines grow and require a dedicated person to mainta… Wait a minute this is not what DevOps was supposed t… Well, never mind, let's keep going.
 
 > What CI should we use?
 
-The answer to this question is u̶n̶f̶o̶r̶t̶u̶n̶a̶t̶e̶l̶y̶ usually ["Jenkins"](https://jenkins.io/) as it is still the most popular and feature-rich CI on the market. Oh, and it’s free, which makes it by default one of the best candidates in the eyes of your management.
+The answer to this question is u̶n̶f̶o̶r̶t̶u̶n̶a̶t̶e̶l̶y̶ usually ["Jenkins"](https://jenkins.io/) as it is still the most popular and feature-rich CI on the market. Oh, and it's free, which makes it by default one of the best candidates in the eyes of your management.
 
 > Our pipelines are pretty similar. How can we avoid duplication?
 
-This question is more interesting as there are a couple of options for Jenkins. One option is to use [Jenkins Job DSL](https://github.com/jenkinsci/job-dsl-plugin) plugin (JDSL) to automate the initial creation and content of your jobs completely, but using JDSL usually implies that there is one Jenkins instance for multiple teams or a central one for the whole company (this works well when all projects follow the same convention). Also, the initial cost of creating a quality [seed JDSL job](https://github.com/jenkinsci/job-dsl-plugin/wiki/Tutorial---Using-the-Jenkins-Job-DSL) can be time-consuming and it pays itself of the more jobs you create with it. So what if you don’t want to invest in JDSL heavily? My answer to that is to try [Jenkins Shared Library](https://jenkins.io/doc/book/pipeline/shared-libraries/) (JSL). Although it is possible to combine JDSL with JSL, in this article, I’m going to focus on JSL alone.
+This question is more interesting as there are a couple of options for Jenkins. One option is to use [Jenkins Job DSL](https://github.com/jenkinsci/job-dsl-plugin) plugin (JDSL) to automate the initial creation and content of your jobs completely, but using JDSL usually implies that there is one Jenkins instance for multiple teams or a central one for the whole company (this works well when all projects follow the same convention). Also, the initial cost of creating a quality [seed JDSL job](https://github.com/jenkinsci/job-dsl-plugin/wiki/Tutorial---Using-the-Jenkins-Job-DSL) can be time-consuming and it pays itself of the more jobs you create with it. So what if you don't want to invest in JDSL heavily? My answer to that is to try [Jenkins Shared Library](https://jenkins.io/doc/book/pipeline/shared-libraries/) (JSL). Although it is possible to combine JDSL with JSL, in this article, I'm going to focus on JSL alone.
 
 > Is it reasonable to unit test the pipelines?
 
@@ -92,13 +92,13 @@ In short, JSL comes with the benefits and costs similar to creating and maintain
 
 > JSL is usually a [semantically](https://semver.org/) versioned [gradle](https://gradle.org/) [groovy](http://groovy-lang.org/) project kept in a git repository which is git cloned by Jenkins and put on a [classpath](https://jenkins.io/doc/developer/plugin-development/dependencies-and-class-loading/) when a [pipeline](https://jenkins.io/doc/book/pipeline/) job using a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) request for it. (yikes!)
 
-If you understood the previous paragraph then you probably already have a good picture in your mind how it all works together. If not then don’t worry, we will go step by step and explain along the way.
+If you understood the previous paragraph then you probably already have a good picture in your mind how it all works together. If not then don't worry, we will go step by step and explain along the way.
 
 To figure out what Jenkins is actually doing behind the scenes we are going to run the most basic pipeline job which uses JSL.
 
 ### Setting up a Jenkins instance
 
-To demonstrate what Jenkins is doing when using a JSL I will need a Jenkins instance. I’m going to run one on my local machine and for that I’m going to use my GitHub [project](https://github.com/hoto/jenkinsfile-examples) with a dockerized Jenkins, a couple of exemplary Jenkinsfiles and another dockerized service which will load my Jenkinsfiles from a folder and tell Jenkins to create jobs out of them.
+To demonstrate what Jenkins is doing when using a JSL I will need a Jenkins instance. I'm going to run one on my local machine and for that I'm going to use my GitHub [project](https://github.com/hoto/jenkinsfile-examples) with a dockerized Jenkins, a couple of exemplary Jenkinsfiles and another dockerized service which will load my Jenkinsfiles from a folder and tell Jenkins to create jobs out of them.
 
 This setup is only for demonstration purposes and is not suitable for production usage.
 
@@ -158,7 +158,7 @@ $ tree
 
 ### Referencing a Shared Library
 
-Let’s run a job called [`050-shared-library-where-is-it-cloned`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/jenkinsfiles/050-shared-library-where-is-it-cloned.groovy) which uses a following Jenkinsfile `050-shared-library-where-is-it-cloned.groovy` (as you can see Jenkinsfiles can be named whatever but in your projects keep the convention of calling it `Jenkinsfile`):
+Let's run a job called [`050-shared-library-where-is-it-cloned`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/jenkinsfiles/050-shared-library-where-is-it-cloned.groovy) which uses a following Jenkinsfile `050-shared-library-where-is-it-cloned.groovy` (as you can see Jenkinsfiles can be named whatever but in your projects keep the convention of calling it `Jenkinsfile`):
 
 ```groovy
 library(
@@ -189,7 +189,7 @@ What should be interesting to us about this job is that it:
 1. Request a `library` located at https://github.com/hoto/jenkins-shared-library referencing git tag `1.0.4`
 2. Create a stage which lists the location where the library is located. This is only to reveal the magic behind what Jenkins has done behind the scene.
 
-Let’s run it and go through the build logs.
+Let's run it and go through the build logs.
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/004.png "")
 
@@ -204,7 +204,7 @@ Loading library jenkins-shared-library@1.0.4
 Attempting to resolve 1.0.4 from remote references...
 ```
 
-It can’t find it so it clones the referenced git repository `https://github.com/hoto/jenkins-shared-library.git` and checks out a commit tagged `1.0.4`:
+It can't find it so it clones the referenced git repository `https://github.com/hoto/jenkins-shared-library.git` and checks out a commit tagged `1.0.4`:
 
 ```
 git init /var/jenkins_home/workspace/050-shared-library-where-is-it-cloned@libs/jenkins-shared-library
@@ -238,7 +238,7 @@ drwxr-xr-x 4 jenkins jenkins 4096 Nov  4 18:49 test
 drwxr-xr-x 2 jenkins jenkins 4096 Nov  4 18:49 vars
 ```
 
-Purpose of `050-shared-library-where-is-it-cloned` job is only to show how Jenkins downloads the shared library into its workspace. Now let’s run something more useful.
+Purpose of `050-shared-library-where-is-it-cloned` job is only to show how Jenkins downloads the shared library into its workspace. Now let's run something more useful.
 
 ---
 
@@ -257,7 +257,7 @@ This only works when all projects follow the same convention which is known to e
 A drawback of doing so will make it hard to tell what commands are used to build a project with just looking at the Jenkinsfile.
 
 2. Abstract everything but the commands.
-This is useful when your company does not have a single convention to build similar projects. If you have lot’s of legacy projects then using this strategy will probably save you some headaches.
+This is useful when your company does not have a single convention to build similar projects. If you have lot's of legacy projects then using this strategy will probably save you some headaches.
 
 This example is using strategy #2:
 
@@ -354,7 +354,7 @@ pipeline {
 
 ## Making Jenkins Shared Library private
 
-In the examples I’m using in this post the referenced JSL is cloned from my public [repository](https://github.com/hoto/jenkins-shared-library/tree/1.0.4) on GitHub. By reference I mean this part:
+In the examples I'm using in this post the referenced JSL is cloned from my public [repository](https://github.com/hoto/jenkins-shared-library/tree/1.0.4) on GitHub. By reference I mean this part:
 
 ```groovy
 jsl = library(
@@ -411,7 +411,7 @@ Also, JSL repository obviously does not have to be hosted on GitHub (it does not
 
 ## Structure of a Jenkins Shared Library
 
-We’ve looked how to use a JSL, but how do we structure the JSL repository? Let’s deconstruct the shared library repository used in this article.
+We've looked how to use a JSL, but how do we structure the JSL repository? Let's deconstruct the shared library repository used in this article.
 
 The source code is located at https://github.com/hoto/jenkins-shared-library/tree/1.0.4 .
 
@@ -453,7 +453,7 @@ $ tree -a
 
 ### Unit testing shared library
 
-Let’s break this project down starting from the top.
+Let's break this project down starting from the top.
 
 ```
 ├── .circleci
@@ -468,11 +468,11 @@ Let’s break this project down starting from the top.
 ├── gradlew.bat
 ```
 
-This repository is a standard [gradle](https://gradle.org/) groovy project, there is nothing special about it. It’s using a gradle wrapper `gradlew` checked into the source control. This is a standard procedure, doing so makes it possible to ensure the CI is using the same gradle version as developers. Another advantage is that by using `gradlew` (unix) or `gradlew.bat` (windows) script you don’t need gradle installed, it will download gradle binary into the repository.
+This repository is a standard [gradle](https://gradle.org/) groovy project, there is nothing special about it. It's using a gradle wrapper `gradlew` checked into the source control. This is a standard procedure, doing so makes it possible to ensure the CI is using the same gradle version as developers. Another advantage is that by using `gradlew` (unix) or `gradlew.bat` (windows) script you don't need gradle installed, it will download gradle binary into the repository.
 
-I’ve included a Jenkinsfile in the project but it is unused as I don’t want to pay for a machine running Jenkins. I still wanted automatic testing of my shared library project on every push to the repository so I’ve added a [`.circleci/config.yml`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/.circleci/config.yml) file and hooked up my GitHub repository to a free [circleci](https://circleci.com/gh/hoto/jenkinsfile-loader/tree/master) online service.
+I've included a Jenkinsfile in the project but it is unused as I don't want to pay for a machine running Jenkins. I still wanted automatic testing of my shared library project on every push to the repository so I've added a [`.circleci/config.yml`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/.circleci/config.yml) file and hooked up my GitHub repository to a free [circleci](https://circleci.com/gh/hoto/jenkinsfile-loader/tree/master) online service.
 
-If this was a real case scenario I would just use a Jenkins instance and create a multi-branch pipeline job referencing the shared library repository. But there is no jenkins-as-a-service so I’m using circle ci in this example.
+If this was a real case scenario I would just use a Jenkins instance and create a multi-branch pipeline job referencing the shared library repository. But there is no jenkins-as-a-service so I'm using circle ci in this example.
 
 To show you how to use Jenkins instance to test your JSL repository a pre-made job config is included in `jenkinsfile-examples` project called [`C-001-jenkins-shared-library-build-and-test`](https://github.com/hoto/jenkinsfile-examples/blob/blog-jenkins-shared-libraries/configs/C-001-jenkins-shared-library-build-and-test.xml):
 
@@ -482,7 +482,7 @@ Because my JSL project is a standard gradle git repository there are only two th
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/009.png "")
 
-Let’s have a look at the `jenkinsfile-shared-library` [`Jenkinsfile`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/Jenkinsfile) and then finally run the job.
+Let's have a look at the `jenkinsfile-shared-library` [`Jenkinsfile`](https://github.com/hoto/jenkins-shared-library/blob/1.0.4/Jenkinsfile) and then finally run the job.
 
 ```groovy
 jsl = library(
@@ -540,11 +540,11 @@ pipeline {
 
 There are two things worth noticing about this particular pipeline:
 
-1. It’s using docker as an agent for every stage making it very easy to run as only docker is needed on a Jenkins executor. No tools and compilers have to be installed on Jenkins, everything comes from a docker container.
+1. It's using docker as an agent for every stage making it very easy to run as only docker is needed on a Jenkins executor. No tools and compilers have to be installed on Jenkins, everything comes from a docker container.
 
 2. It uses a neat trick of referencing itself when building and testing itself.
 
-If you haven’t noticed the pipeline is using a shared library which points to itself:
+If you haven't noticed the pipeline is using a shared library which points to itself:
 
 ```groovy
 jsl = library(
@@ -558,11 +558,11 @@ jsl = library(
 )
 ```
 
-On top of it, the identifier points to a library version using an environment variable `${env.BRANCH_NAME}`. When you combine this with a multi-branch pipeline job and gated pull requests you are technically able to add new pipeline features and unit test them at the same time before you merge them into master branch. Think of it, the possibilities are endless… But honestly, I don’t think cramming all of your pipelines features into a single Jenkinsfile is practical. More likely you would end up using a couple of components and that’s it.
+On top of it, the identifier points to a library version using an environment variable `${env.BRANCH_NAME}`. When you combine this with a multi-branch pipeline job and gated pull requests, you are technically able to add new pipeline features and unit test them at the same time before you merge them into the master branch. Think of it; the possibilities are endless… But honestly, I don't think cramming all of your pipelines features into a single Jenkinsfile is practical. More likely you would end up using a couple of components, and that's it.
 
 ![alt text]({{site.baseurl}}/assets/custom/img/blog/2019-05-25-private-jenkins-shared-libraries/010.png "")
 
-First build of `Unit Tests` stage took `1min 15s` yet after retrying the same build it took only `4s` as all of the depenencies has been already cached on the host. This is done by passing some extra arguments to docker to mount the gradle cache from the host `args ‘-v /root/.gradle:/home/gradle/.gradle’` Otherwise each new stage would have to download all of the depencencies each time as each stage is a fresh docker container.
+First, build of `Unit Tests` stage took `1min 15s` yet after retrying the same build it took only `4s` as all of the dependencies has been already cached on the host. This is done by passing some extra arguments to docker to mount the gradle cache from the host `args '-v /root/.gradle:/home/gradle/.gradle'` Otherwise each new stage would have to download all of the dependencies each time as each stage is a new docker container.
 
 ### Shared Library classes
 
@@ -587,7 +587,7 @@ In groovy you can use either classes or scripts. IMHO most of the logic should b
 
 The `src` directory is similar to a standard Java source directory structure. This directory is added to the classpath when executing a pipeline.
 
-In tests, I’m using [spock](http://spockframework.org/) test framework which is a nice benefit of using groovy for unit tests.
+In tests, I'm using [spock](http://spockframework.org/) test framework which is a nice benefit of using groovy for unit tests.
 
 ### Shared Library global variables
 
@@ -598,7 +598,7 @@ The `vars` directory hosts scripts that define global variables accessible from 
     └── simplePipeline.groovy
 ```
 
-Official [documentation](https://jenkins.io/doc/book/pipeline/shared-libraries/) is using "global variables" for something that to me looks like functions. I’m not a Jenkins or groovy expert so I’m gonna use the same nomenclature as to not confuse people.
+Official [documentation](https://jenkins.io/doc/book/pipeline/shared-libraries/) is using "global variables" for something that to me looks like functions. I'm not a Jenkins or groovy expert so I'm gonna use the same nomenclature as to not confuse people.
 
 The only file in my `vars` folder: `simplePipeline.groovy` is a [custom step](https://jenkins.io/doc/book/pipeline/shared-libraries/#defining-custom-steps) directive. It is a step because it contains a function with a special declaration `call(Map args)` .
 
@@ -610,7 +610,7 @@ def call(Map args) {
 
 That `call` function will be triggered when you call `simplePipeline(args)` from anywhere in the pipeline.
 
-I’m not going to go into many details here but take note that there are a couple of other different "global variables" you can use.
+I'm not going to go into many details here but take note that there are a couple of other different "global variables" you can use.
 
 ---
 
@@ -714,10 +714,10 @@ bitbucket(buildData).jobSucceeded()
 ```
 
 ## The End
-To wrap this up. Jenkins Shared Library takes time and effort to learn and set up properly. Try to make your pipelines as declarative as possible and unit test only the parts with logic in them.
+To wrap this up. Jenkins Shared Library takes time and effort to learn and set up correctly. Try to make your pipelines as declarative as possible and unit test only the parts with logic in them.
 
-Before you write any custom code for your pipeline in groovy, check if there is a plugin for it first. Jenkins has thousands of them and that’s the main reason it is so popular.
+Before you write any custom code for your pipeline in groovy, check if there is a plugin for it first. Jenkins has thousands of them, and that's the main reason it is so popular.
 
 If you are blessed and you are dealing with only containers in production using [proper tools](https://github.com/garystafford/cd-maturity-model/blob/requirejs/images/IaC_Maturity_Model%20v2_1.pdf) you should have it easier to make your pipelines simple.
 
-On the other hand, if you are dealing with a ton of legacy apps, no containers and obscure bash scripts then instead of rewriting pipelines to groovy maybe have a look at Ansible? But that’s a topic for another time.
+On the other hand, if you are dealing with a ton of legacy apps, no containers and obscure bash scripts then instead of rewriting pipelines to groovy maybe have a look at Ansible? However, that's a topic for another time.
