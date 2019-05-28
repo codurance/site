@@ -28,9 +28,21 @@
                         </ul>
                     </div>
                 {% for post in paginator.posts %} 
-                    {% if forloop.index0 == 0%}
+                    {% if forloop.index0 == 0 %}
                         {% include postwide.html post=post  %}
-                    {% elsif forloop.index0 ==2 %} 
+                    {% elsif forloop.index0 == 1 %}
+                        <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30" >
+                            <!-- Static Quote -->
+                            <article class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100" style="background-color: #185466 !important;"> 
+                                <h2 class="h3 g-color-white g-font-weight-600 mb-4">Did you hone your skills today?</h2>
+                                <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">Try Katalyst</h3>
+                
+                                <a class="u-link-v2" href="http://katalyst.codurance.com"></a>
+                            </article>
+                            <!-- End Static Quote -->
+                        </div>
+                        {% include post.html post=post %}
+                    {% elsif forloop.index0 == 2 %} 
                         {% include post.html post=post %}
                         <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30" >
                             <!-- Static Quote -->

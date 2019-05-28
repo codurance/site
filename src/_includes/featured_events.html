@@ -2,7 +2,7 @@
   {% assign events = site.events | reverse %}
 	{% for post in events | limit:3 %}
 	<div class="col-md-4 md-margin-bottom-40">
-		<div class="blog-box homepage-blog-thumb">
+		<div class="blog-box">
 			<a href="{{ post.event-page-url }}">
         <img class="img-fluid bordered" src="{% if post.image.src %} {{ post.image.src | prepend: site.baseurl }} {% else %} {{ site.default_post_image | prepend: site.baseurl }} {% endif %}" alt="{{ post.title }}">
 			</a>
@@ -13,7 +13,7 @@
 					<p>{{ post.event-dates.starts | date_to_string }}</p>
 				{% else %}
 					<p>{{ post.event-dates.starts | date_to_string }} - {{ post.event-dates.ends | date_to_string }}</p>
-				{% endif %}	
+				{% endif %}
 				<p>{{ post.content | strip_html | truncatewords:30 }}</p>
 			</div>
 		</div>

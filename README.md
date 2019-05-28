@@ -1,5 +1,6 @@
 # [Codurance Web Site](https://codurance.com/)
 Trello board: https://trello.com/b/Z6YDy6bw/2018-website-project
+This link is old please visit if you aim for past documentation: https://trello.com/b/0wWmhd6A/improving-our-website
 
 ## Setup the <del>development</del> writing environment 
 
@@ -161,12 +162,15 @@ To install ffi gem in the newer versions of MacOS you need install Xcode tool fi
 ## CI docker images preparation
 There are two images used to build and deploy the application. The necessary commands to update them is here. Be aware that if you do it using the tag latest it will affect the master branch at the moment
 
-
+```
 docker build --file=Dockerfile_build_base -t codurance/website_build_base:latest .
 docker push codurance/website_build_base:latest 
+```
 
+```
 docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
 docker push codurance/website_deployment_base:latest 
+```
 
 ## Backstopjs
 

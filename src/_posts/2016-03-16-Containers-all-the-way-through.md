@@ -75,13 +75,13 @@ A container creates an OS like environment, inside which one or more programs ca
 Looking at these enclosures or rounded rectangles within each other, we can already see how it is containers all the way through.
 
 <div class="row blog-boxes">
-   <div class="blog-box homepage-blog-thumb col-md-4"> 
+   <div class="blog-box col-md-4"> 
     <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/bare-metal-systems.png" alt="Bare Metal Systems" title="Bare Metal Systems" class=" img-fluid style-screengrab" style="max-height: 100%; max-width: 100%;"> 
    </div>
-   <div class="blog-box homepage-blog-thumb col-md-4">
+   <div class="blog-box col-md-4">
     <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/virtual-systems.png" alt="Virtual Systems" title="Virtual Systems" class="img-fluid style-screengrab" style="max-height: 100%; max-width: 100%;">
    </div>
-   <div class="blog-box homepage-blog-thumb col-md-4">
+   <div class="blog-box col-md-4">
     <img src="{{ site.baseurl }}/assets/custom/img/blog/2016-03-16-containers-all-the-way-through/container-systems.png" alt="Container Systems" title="Container Systems" class="img img-fluid style-screengrab" style="max-height: 100%; max-width: 100%;"> 
   </div>
 </div>
