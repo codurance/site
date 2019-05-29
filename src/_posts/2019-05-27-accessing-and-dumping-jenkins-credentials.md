@@ -26,7 +26,7 @@ Jenkins offers a credentials store where we can keep our secrets and access them
 > Jenkins is an easy pick when it comes to intelligence gathering.
 
 To provide the best service as consultants, we often need all the information the client can give us.  
-Usually, the client gives us on paper full access to the codebase and the infrastructure.
+Usually, the client gives us, on paper, full access to the codebase and the infrastructure.
 Sometimes, however, the things we would like to check are temporarily out of our reach.
 We, of course, try to request permission to gain access, but it can take quite a while.
 It may also be the case where nobody knows how to access the requested resource.
@@ -41,14 +41,15 @@ There is no need for that; we already have the approval.
 We are the Consultants.  
 
 But seriously.  
-Giving access to a Jenkins equals permitting them to view all stored secrets. 
+
+Giving access to a Jenkins equals a permit to view all stored there secrets.  
 If you don't want people to poke around, don't give them any access to your CI.
 
 > The answers you seek, Jenkins shall leak.
 
-Sometimes we encounter entities which are reluctant to share.
-It could be an attempt to hide those customers password stored in production DB encoded with base64.
-We don't judge; stuff happens, deadlines must be met, we understand. We just need to know.
+Sometimes we encounter entities which are, let's say, reluctant to share.  
+It could be many different reasons. However, we don't judge; stuff happens, deadlines must be met, we understand. 
+All we need is to have a full picture of the situation.
 
 > We don't know them; they don't know us; however, Jenkins doesn't choose sides.
 
@@ -58,6 +59,8 @@ Now you know.
 Be the hero.
 
 > Encryption, decryption, Jenkins provides plain text subscription.
+
+Even if you don't need to stealthily obtain the credentials from your own company it is still good to know about the vulnerabilities when using Jenkins.
 
 ## Credentials storage
 
