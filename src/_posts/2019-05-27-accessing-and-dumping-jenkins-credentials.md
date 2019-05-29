@@ -53,7 +53,7 @@ All we need is to have a full picture of the situation.
 
 > We don't know them; they don't know us; however, Jenkins doesn't choose sides.
 
-What do you do when you join a project and the person with the vital knowledge has long left, and nobody knows how to access that windows 98 machine in production.
+What do you do when you join a project and the person with the vital knowledge has long left, and nobody knows how to access that windows 98 machine in production. 
 Jenkins knows.  
 Now you know.  
 Be the hero.
