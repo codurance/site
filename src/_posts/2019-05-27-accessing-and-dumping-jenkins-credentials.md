@@ -85,7 +85,7 @@ Later in this post, I will talk about what can be done to minimize the leakage o
 
 ## Creating credentials
 
-If you want to follow this post and run the examples yourself, you can spin up a pre-made Jenkins instance from my [jenkinsfile-examples][0] repository in less then 1min (depending on your bandwidth):
+If you want to follow this post and run the examples yourself, you can spin up a pre-configured Jenkins instance from my [jenkinsfile-examples][0] repository in less then a minute (depending on your bandwidth):
 
 ```bash
 git clone https://github.com/hoto/jenkinsfile-examples.git
