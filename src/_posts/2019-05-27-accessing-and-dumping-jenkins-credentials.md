@@ -113,9 +113,9 @@ If you want, you can add more secrets, but I will be using the existing secrets.
 
 Now that we've covered creating credentials, let's move on to accessing them from a `Jenkinsfile`.
 
-## Secrets access from a Jenkinsfile
+## Accessing credentials from a Jenkinsfile
 
-We will be focusing on job `130-accessing-credentials`. 
+We will be running job `130-accessing-credentials`. 
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/005.png)
 
@@ -254,7 +254,7 @@ In this case, each character is printed separately, and Jenkins does not redact 
 
 ### Listing ids of secrets
 
-You can list all credentials ids by listing the `$JENKINS_HOME/credentials.xml` file.
+You can list all credentials ids by reading the `$JENKINS_HOME/credentials.xml` file.
 
 Code:
 
@@ -277,6 +277,9 @@ Log output:
 <id>production-docker-ee-certificate</id>
 ```
 
+---
+
+
 ## Accessing `System` and other credential values from the UI 
 
 Jenkins has two types of credentials: `System` and `Global`.
@@ -287,16 +290,21 @@ Jenkins has two types of credentials: `System` and `Global`.
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/008.png)
 
-Although most credentials are stored in `http://localhost:8080/credentials/` view, you can find additional secrets in:
-1. `http://localhost:8080/configure` - some plugins create password type fields there.
-2. `http://localhost:8080/configureSecurity/` - look for AD credentials.
+Although most credentials are stored in `http://localhost:8080/credentials/` view, you can find additional secrets in:  
+
+1. `http://localhost:8080/configure` - some plugins create password type fields in this view
+
+2. `http://localhost:8080/configureSecurity/` - look for stuff like AD credentials
 
 ### Grabbing credentials using a browser inspection tool
 
-By definition `System` credentials are not accessible from jobs, but we can decrypt them from the Jenkins GUI, given we have admin privileges. Jenkins sends the encrypted value of each secret to the UI.  
-This is a huge security flaw.
+By definition `System` credentials are not accessible from jobs, but we can decrypt them from the Jenkins UI.  
+To do so you need admin privileges. 
 
-To view encrypted secret:
+> Jenkins sends the encrypted value of each secret to the UI.  
+> This is a huge security flaw.
+
+To grab encrypted secret:
  
 1. Navigate to `http://localhost:8080/credentials/` 
 2. Update any of the credentials.
@@ -311,11 +319,12 @@ To view encrypted secret:
 In my case the encrypted secret is `{AQAAABAAAAAgPT7JbBVgyWiivobt0CJEduLyP0lB3uyTj+D5WBvVk6jyG6BQFPYGN4Z3VJN2JLDm}`.
 
 To decrypt any credentials we can use Jenkins console which requires admin privileges to access.  
-If you don't have admin privileges, try to elevate your permissions by looking for an admin user in `Global` credentials and log as admin first.
 
-Navigate to `http://localhost:8080/script`, which opens the `Script Console`.  
+> If you don't have admin privileges, try to elevate your permissions by looking for an admin user in `Global` credentials.
 
-Tell jenkins to decrypt and print out the secret:
+To open `Script Console` navigate to `http://localhost:8080/script`.
+
+Tell jenkins to decrypt and print out the secret value:
 
 ```groovy
 println hudson.util.Secret.decrypt("{AQAAABAAAAAgPT7JbBVgyWiivobt0CJEduLyP0lB3uyTj+D5WBvVk6jyG6BQFPYGN4Z3VJN2JLDm}")
@@ -362,10 +371,11 @@ This script is not finished though. You can look up all the class names in the J
 
 ## How Jenkins stores credentials
 
-Long story short to access and decrypt Jenkins credentials you need three files.  
+To access and decrypt Jenkins credentials you need three files.  
 
-Encrypted credentials are in `credentials.xml` file.  
-To decrypt them you need the `master.key` and `hudson.util.Secret` files.
+* `credentials.xml` - holds encrypted credentials
+* `hudson.util.Secret` - decrypts `credentials.xml` entries, it is itself encrypted
+* `master.key` - decrypts `hudson.util.Secret`
 
 All three files are located inside Jenkins home directory:
 
@@ -390,13 +400,13 @@ The ones I found are in python, like this [one][4].
 I would include the source code here, but unfortunately, that repository does not have a license.
 
 Python cryptography module is not included in the python standard library, it has to be installed as a dependency.
-Because I don't want to deal with python runtime and external dependencies I wrote my decryptor in Go.
+Because I don't want to deal with python runtime and external dependencies I wrote my [own][5] decryptor in Go.
 Go binaries are self-contained and require only the kernel to run.
 
 Side note: Jenkins is using `AES-128-ECB` algorithm which is not included in the Go standard library.
 That algorithm was deliberately excluded from the library in 2009 to discourage people from using it.
 
-Source code for this tool is [here][5].
+Source code for this tool can be found [here][5].
 To see it in action run job `131-dumping-credentials` using the following Jenkinsfile:
 
 ```groovy
