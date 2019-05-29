@@ -362,9 +362,9 @@ This script is not finished though. You can look up all the class names in the J
 
 ## How Jenkins stores credentials
 
-Long story short to access and decrypt Jenkins credentials you need three files.
+Long story short to access and decrypt Jenkins credentials you need three files.  
 
-Encrypted credentials are in `credentials.xml` file.
+Encrypted credentials are in `credentials.xml` file.  
 To decrypt them you need the `master.key` and `hudson.util.Secret` files.
 
 All three files are located inside Jenkins home directory:
@@ -374,14 +374,14 @@ All three files are located inside Jenkins home directory:
     $JENKINS_HOME/secrets/hudson.util.Secret
 
 Because Jenkins is open source, someone already reverse engineered the encryption and decryption procedure.
-If you are interested in the details read this fascinating [blog][3]
+If you are interested in the details read this fascinating [blog][3].
 
 Secrets are encrypted in `credentials.xml` using `AES-128` with `hudson.util.Secret` as the key then `base64` encoded.  
 `hudson.util.Secret` binary file is encrypted itself with `master.key`.  
 `master.key` is stored in plain text.
 
-> `credentials.xml` stores both `Global` and `System` credentials.
-> To access all three files to decrypt those secrets you do not need admin privileges.
+> `credentials.xml` stores both `Global` and `System` credentials.  
+> To access all three files to decrypt those secrets you do NOT need admin privileges.
 
 ## Decrypting and dumping credentials
 
@@ -431,7 +431,7 @@ pipeline {
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/013.png)
 
-This tool can also be run locally (with 3 required files copied over) or on the Jenkins host via ssh.
+This tool can also be run on the Jenkins host via ssh. It's only ~6MB and will work on any linux distribution.
 
 > By decrypting `credentials.xml` this way, we can print the values of both `Global` and `System` credentials without the admin privileges.
 
@@ -439,22 +439,21 @@ This tool can also be run locally (with 3 required files copied over) or on the 
 
 ## Prevention and best practices
 
-I don’t think there is a way to mitigate security vulnerabilities when using a CI completely.
+I don’t think there is a way to completely mitigate security vulnerabilities when using a CI.
 We can only make it a bit more time consuming to let the attacker get our secrets by setting up layers and creating moving targets.
 
 ### 1. Hide Jenkins behind a VPN
 
 This is an easy pick and my #1 advice to anyone using a Jenkins.
 Prevent most basic attacks by hiding your Jenkins from the public internet.
-I know VPNs are annoying to use, but nowadays the internet connection is so fast you should not even notice it.
+I know VPNs are annoying, but nowadays the internet connection is so fast you should not even notice it.
 
 ### 2. Regularly update Jenkins
 
-Often Jenkinses are left for months and even years never updated.
+Often Jenkinses are left for months and even years without an update.
 Old versions are full of known holes and vulnerabilities.
 Same for plugins and the OS, don't hesitate to update them as well.
-In my 4 years dealing with Jenkinses, I only had a problem once when updating, but a built-in "rollback" feature saved me.
-If you are worried about regular updating, then set up an automatic backup of the Jenkins disk every 24h.
+If you are worried about updating, then set up an automatic backup of the Jenkins disk every 24h.
 
 ### 3. Follow the principle of least privilege 
 
@@ -487,11 +486,10 @@ All developers on a project can know all secrets, that should not be a problem.
 ### 8. Accept that you will get hacked
 
 If you have something worth stealing, someone will try to steal it.
-You may think that if someone stole your source code and dumped your databases, it's game over, but that is not necessarily true.
-Even if your production database credentials are stolen but the customers' secrets inside it are properly one-way hashed there is nothing that the attacker can do with that stolen data (with the current level of technology).
-The only thing your company loses then is it's credibility.
 
-You have to know your threat model to incorporate accurate security measures.
+You may think that if someone stole your source code and dumped your databases, it's game over, but that is not necessarily true.
+For example if your production database is dumped but the customers' secrets inside it are properly one-way hashed then the damage is vastly reduced.
+The only thing your company looses then is its credibility.
 
 
 
