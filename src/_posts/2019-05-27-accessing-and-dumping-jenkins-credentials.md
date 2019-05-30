@@ -26,24 +26,25 @@ Jenkins offers a credentials store where we can keep our secrets and access them
 > Jenkins is an easy pick when it comes to intelligence gathering.
 
 To provide the best service as consultants, we often need all the information the client can give us.  
-Usually, the client gives us, on paper, full access to the codebase and the infrastructure.
-Sometimes, however, the things we would like to check are temporarily out of our reach.
-We, of course, try to request permission to gain access, but it can take quite a while.
-It may also be the case where nobody knows how to access the requested resource.
-We can speed up things a little bit by poking around in Jenkins and finding the way in ourselves.
+Usually, the client provides us full access to the codebase and the infrastructure.
 
-If we've been granted full access on paper from the beginning, then there is no ethical dilemma here.
+Sometimes, however, the things we would like to check are, let's say, temporarily out of our reach.
+We, of course, can request permission for access, but it can take quite a while.
+It could also be the case where nobody knows how to access the resource.
+
+We can speed up things a little bit by poking around in Jenkinses and finding the way in ourselves.
+If we've been granted full access on paper, then there is no ethical dilemma here.
 
 > To make a good first impression ask Jenkins for a confession.
 
-We could be delayed by questions like "why do you need that?" or "I will have to talk with my supervisor first."  
-There is no need for that; we already have the approval. 
-We are the Consultants.  
+By requesting access, we could be delayed by questions like "why do you need that?" or "I will have to talk with my supervisor first."  
+There is no need for that; we already have the approvals. 
+We are the Consultants.   
 
 But seriously.  
 
-Giving access to a Jenkins equals a permit to view all stored there secrets.  
-If you don't want people to poke around, don't give them any access to your CI.
+Giving access to a Jenkins equals a license to view all secrets stored there.  
+If you don't want people to poke around, don't give them ANY access to your CI.
 
 > The answers you seek, Jenkins shall leak.
 
@@ -53,7 +54,7 @@ All we need is to have a full picture of the situation.
 
 > We don't know them; they don't know us; however, Jenkins doesn't choose sides.
 
-What do you do when you join a project and the person with the vital knowledge has long left, and nobody knows how to access that windows 98 machine in production. 
+What do you do when you join a project and the person with the vital knowledge has long left, and nobody knows how to access that windows 98 machine in production?  
 Jenkins knows.  
 Now you know.  
 Be the hero.
