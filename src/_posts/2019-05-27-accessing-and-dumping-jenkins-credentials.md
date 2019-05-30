@@ -3,11 +3,11 @@ author: Andrzej Rehmann
 layout: post
 asset-type: post
 title: "Accessing and dumping Jenkins credentials"
-date: 2019-05-27 08:00:00
+date: 2019-05-30 08:00:00
 description: "Accessing and dumping Jenkins credentials"
 abstract: "Creating, accessing, and dumping Jenkins credentials."
 image: 
-    src: /assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/jenkins-credentials-banner-low-res.jpg
+    src: /assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/jenkins-credentials-banner-low-res.jpg
     attribution:
        text: Photo by Stefan Steinbauer on Unsplash
        href: https://unsplash.com/photos/HK8IoD-5zpg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
@@ -98,18 +98,18 @@ Open `localhost:8080`, where you should see a Jenkins with a couple of jobs.
 To browse and add secrets, click on `Credentials`.  
 My Jenkins instance already has some pre-made credentials created by me.
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/001.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/001.png)
 
 To add secrets hover over `(global)` to show a ▼ sign and click on it.  
 Select `Add credentials` where you can finally add secrets.
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/002.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/002.png)
 
 If you want, you can add more secrets, but I will be using the existing secrets.
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/003.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/003.png)
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/004.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/004.png)
 
 Now that we've covered creating credentials, let's move on to accessing them from a `Jenkinsfile`.
 
@@ -117,7 +117,7 @@ Now that we've covered creating credentials, let's move on to accessing them fro
 
 We will be running job `130-accessing-credentials`. 
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/005.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/005.png)
 
 Job `130-accessing-credentials` has a following [Jenkinsfile][1]:
 
@@ -227,7 +227,7 @@ pipeline {
 
 All examples for different types of secrets can be found in the official Jenkins [documentation][2].
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/006.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/006.png)
 
 Running the job and checking the logs uncovers that Jenkins tries to redact the secrets from the build log by matching for secrets values and replacing them with stars `****`.  
 We can see the actual secret values if we print them in such a way that a simple match and replace won't work.  
@@ -246,7 +246,7 @@ username.collect { it }=[g, i, t, l, a, b, a, d, m, i, n]
 
 In this case, each character is printed separately, and Jenkins does not redact the values.
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/007.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/007.png)
 
 > Anyone with write access to a repository built on Jenkins can uncover all `Global` credentials by modifying a `Jenkinsfile`.
 
@@ -288,7 +288,7 @@ Jenkins has two types of credentials: `System` and `Global`.
 
 `Global` same as System but also accessible from jobs.  
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/008.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/008.png)
 
 Although most credentials are stored in `http://localhost:8080/credentials/` view, you can find additional secrets in:  
 
@@ -312,9 +312,9 @@ To grab encrypted secret:
 4. Inspect the dotted element.
 5. Copy text value of `value`
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/009.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/009.png)
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/010.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/010.png)
 
 In my case the encrypted secret is `{AQAAABAAAAAgPT7JbBVgyWiivobt0CJEduLyP0lB3uyTj+D5WBvVk6jyG6BQFPYGN4Z3VJN2JLDm}`.
 
@@ -330,7 +330,7 @@ Tell jenkins to decrypt and print out the secret value:
 println hudson.util.Secret.decrypt("{AQAAABAAAAAgPT7JbBVgyWiivobt0CJEduLyP0lB3uyTj+D5WBvVk6jyG6BQFPYGN4Z3VJN2JLDm}")
 ```
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/011.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/011.png)
 
 There you have it; now you can decrypt any Jenkins secret (if you have admin privileges).
 
@@ -437,9 +437,9 @@ pipeline {
 }
 ```
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/012.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/012.png)
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-05-27-accessing-and-dumping-jenkins-credentials/013.png)
+![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/013.png)
 
 This tool can also be run on the Jenkins host via ssh. It's only ~6MB and will work on any linux distribution.
 
