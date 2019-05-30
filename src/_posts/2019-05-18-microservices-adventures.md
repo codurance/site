@@ -16,19 +16,11 @@ tags:
 - microservices
 ---
 
-I think there is a common misconception about microservices out there.
+Microservices were supposed to enable companies to perform many deployments per day, scale the system up automatically to handle any level of demand, reduce the codebase complexity and save money at the same time.
 
-The popular opinion is that microservices supposed to be the cure for all of our problems.
-However, I say that by themselves, they can only cure half of them.
-To cure the other half, you are supposed to combine microservices with the latest DevBizSecDbaQaOps practices and transform your company into the ultimate buzzword producing killing machine and achieve Continuous Deployment nirvana.
+Few, however, ask what the cost of this is?
 
-But seriously.
-
-Microservices were supposed to enable companies to perform gazillion deployments per day, scale the system up to infinity, reduce the codebase complexity, and save money at the same time.
-
-Few, however, ask what is the price for this?
-
-In my opinion, the price is the increase in platform complexity.
+In my opinion, the cost is the increase in platform complexity.
 
 > Microservices shift the complexity from the services to the platform.
 > Ignoring this fact results in the suboptimal results.
