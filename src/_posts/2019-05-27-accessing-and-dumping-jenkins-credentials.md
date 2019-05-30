@@ -65,19 +65,18 @@ Even if you don't need to stealthily obtain the credentials from your own compan
 
 ## Credentials storage
 
-I did not use the word “secure” anywhere in the introduction because the way any CI server stores credentials are by nature, insecure.
+I did not use the word “secure” anywhere in the introduction because the way any CI server stores credentials, are by nature, insecure.
 
-CI servers cannot use one-way hashes (like bcrypt) to encode secrets because when requested by the pipeline, those secrets need to be restored into their original form.
+CI servers cannot use one-way hashes (like bcrypt) to encode secrets because when requested by the pipeline, those secrets need to be restored into their original form.  
 One-way hashes are then out of the picture, what's left is two-way encryption.
 This means two things:
 
-1. Anyone with "Create jobs" permissions can view secrets in plain form.
-2. Jenkins encrypts secrets at rest but keeps the decryption key somewhere on its host.
+1. Jenkins encrypts secrets at rest but keeps the decryption key somewhere on its host.
+2. Anyone who can create jobs on Jenkins can view all secrets in plain text.
 
-You may be wondering why Jenkins even bother encrypting the secrets if they can be retrieved just by asking.
-The only reasonable idea that comes to my mind is that Jenkins creators wanted to make it a little bit harder to gain access to plain format secrets when the attacker gains ssh access to the Jenkins host.
+You may be wondering why Jenkins even bother encrypting the secrets if they can be retrieved in their pure form just by asking. I don't have a good answer for that.
 
-However, using Jenkins credentials store is infinitely better than keeping plain secrets in the project repository.
+However, using Jenkins credentials store is infinitely better than keeping secrets in the project repository.
 Later in this post, I will talk about what can be done to minimize the leakage of secrets from Jenkins.
 
 
@@ -86,7 +85,7 @@ Later in this post, I will talk about what can be done to minimize the leakage o
 
 ## Creating credentials
 
-If you want to follow this post and run the examples yourself, you can spin up a pre-configured Jenkins instance from my [jenkinsfile-examples][0] repository in less then a minute (depending on your bandwidth):
+If you want to follow this post and run the examples yourself, you can spin up a pre-configured Jenkins instance from my [jenkinsfile-examples][0] repository in less then a minute (depending on your internet bandwidth):
 
 ```bash
 git clone https://github.com/hoto/jenkinsfile-examples.git
@@ -107,6 +106,9 @@ Select `Add credentials` where you can finally add secrets.
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/002.png)
 
 If you want, you can add more secrets, but I will be using the existing secrets.
+
+> My advice is to provide a meaningful `ID` and use the same value for `Description`.  
+> `user` is not a good `ID`, `github-rw-user` is better.
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/003.png)
 
@@ -230,10 +232,11 @@ All examples for different types of secrets can be found in the official Jenkins
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/006.png)
 
-Running the job and checking the logs uncovers that Jenkins tries to redact the secrets from the build log by matching for secrets values and replacing them with stars `****`.  
-We can see the actual secret values if we print them in such a way that a simple match and replace won't work.  
+Running the job and checking the logs uncovers that Jenkins tries to redact the secrets from the build log by looking for secrets values and replacing them with stars `****`.  
+We can see the actual secret values if we print them in such a way that a simple match-and-replace won't work.  
+This way, each character is printed separately, and Jenkins does not redact the values.
 
-Code:
+Example code:
 
 ```groovy
 print 'username.collect { it }=' + username.collect { it }
@@ -245,16 +248,15 @@ Log output:
 username.collect { it }=[g, i, t, l, a, b, a, d, m, i, n]
 ```
 
-In this case, each character is printed separately, and Jenkins does not redact the values.
-
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/007.png)
 
-> Anyone with write access to a repository built on Jenkins can uncover all `Global` credentials by modifying a `Jenkinsfile`.
+> Anyone with write access to a repository built on Jenkins can uncover all `Global` credentials by modifying a `Jenkinsfile` in that repository.
 
-> Anyone with "creates job" privileges can uncover all `Global` secrets by creating a pipeline job.
+> Anyone who can create jobs on Jenkins can uncover all `Global` secrets by creating a pipeline job.
 
 ### Listing ids of secrets
 
+Before you ask Jenkins for a credential you need to know its id.  
 You can list all credentials ids by reading the `$JENKINS_HOME/credentials.xml` file.
 
 Code:
@@ -285,9 +287,9 @@ Log output:
 
 Jenkins has two types of credentials: `System` and `Global`.
 
-`System` is accessible only from Jenkins configuration (e.g., plugins).
+> `System` credentials are accessible only from Jenkins configuration (e.g., plugins).
 
-`Global` same as System but also accessible from jobs.  
+> `Global` credentials are the same as `System` but are also accessible from Jenkins jobs.
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-05-30-accessing-and-dumping-jenkins-credentials/008.png)
 
@@ -505,7 +507,7 @@ The only thing your company looses then is its credibility.
 
 
 [0]: https://github.com/hoto/jenkinsfile-examples
-[1]: https://github.com/hoto/jenkinsfile-examples/blob/master/jenkinsfiles/130-credentials-masking.groovy 
+[1]: https://github.com/hoto/jenkinsfile-examples/blob/master/jenkinsfiles/130-accessing-credentials.groovy
 [2]: https://jenkins.io/doc/pipeline/steps/credentials-binding/
 [3]: http://xn--thibaud-dya.fr/jenkins_credentials.html
 [4]: https://github.com/tweksteen/jenkins-decrypt/blob/master/decrypt.py
