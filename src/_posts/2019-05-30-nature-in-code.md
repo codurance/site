@@ -7,6 +7,9 @@ date: 2019-05-30 22:00:00 +01:00
 author: Solange U. Gasengayire
 image:
     src: /assets/custom/img/blog/2019-05-30-nature-in-code/nature.jpg
+    attribution:
+        text: Photo by Laura Ockel on Unsplash
+        href: https://unsplash.com/photos/EKp6aH87nqM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 abstract: How basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
 alias: [/2019/05/30/nature-in-code]
 
