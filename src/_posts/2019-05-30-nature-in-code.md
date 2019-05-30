@@ -3,17 +3,17 @@ layout: post
 asset-type: post
 name: nature-in-code
 title: Nature In Code
-date: 2019-04-26 01:00:00 +01:00
+date: 2019-05-30 22:00:00 +01:00
 author: Solange U. Gasengayire
 image:
-    src: /assets/custom/img/blog/2019-04-26-nature-in-code/nature-in-code.jpg
+    src: /assets/custom/img/blog/2019-05-30-nature-in-code/nature.jpg
 abstract: How basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
-alias: [/2019/04/26/nature-in-code]
+alias: [/2019/05/30/nature-in-code]
 
 ---
 
 
-A little over two years ago, while exploring the edX platform for online courses, I came across a fantastic one about programming for beginners called [Nature in Code: Biology in JavaScript][1]. This course shows how basic programming constructs can be used as a powerful tool to describe, understand and reason about our natural world.
+A little over two years ago, while exploring the edX platform for online courses, I came across a fantastic one about programming for beginners called [Nature in Code: Biology in JavaScript][1]. This course shows how **basic programming constructs** can be used as a powerful tool to describe, understand and reason about our natural world.
 
 In this post, we'll look at how the aforementioned course teaches and translates scientific ideas such as evolution and epidemics, using simple models, into code. As a starting point, we define a `null` model, then we look into how mutation and migration (two of the main forces that lead to evolution) are implemented. And then, building from the previous ideas, we will briefly touch on how the spread of infectious diseases can be represented in code.
 
@@ -150,7 +150,7 @@ function run_generations() {
 
 A log of the results to the console looks like this:
 
-<img src="{{site.baseurl}}/assets/custom/img/blog/2019-04-26-nature-in-code/mutation.png" width="440" height="600" alt="Migration model results" style="border: 1px solid #C4CBD1;"/>
+<img src="{{site.baseurl}}/assets/custom/img/blog/2019-05-30-nature-in-code/mutation.png" width="440" height="600" alt="Migration model results" style="border: 1px solid #C4CBD1;"/>
 
 So, even a very low mutation probability will result in a significant increase in diversity over time.
 
