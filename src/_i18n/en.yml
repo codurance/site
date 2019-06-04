@@ -3,6 +3,7 @@ office:
   lat: "51.523876"
   lon: "-0.100533"
   central: London
+offices:
   ldn:
     city: London
     address: "5th Floor,\n15 Northburgh Street,\nEC1V 0JR"

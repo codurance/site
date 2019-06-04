@@ -263,14 +263,17 @@ category: careers
         <p>{% t company-contact-form.offices_introduction %}:
             <ul>
                 <li>
-                    <b>{%t office.central %}</b>:
-                    {{ site.office.phone.lnd }}</li>
+                    <b>{% t offices.ldn.city %}</b>:
+                    {% t offices.ldn.phone %}
+                </li>
                 <li>
-                    <b>Barcelona</b>:
-                    {{ site.office.phone.bcn }}</li>
+                    <b>{% t offices.bcn.city %}</b>:
+                    {% t offices.bcn.phone %}
+                </li>
                 <li>
-                    <b>{%t office.man %}</b>:
-                    {{ site.office.phone.man }}</li>
+                    <b>{% t offices.man.city %}</b>:
+                    {% t offices.man.phone %}
+                </li>
             </ul>
         </p>
         <p>{% t company-contact-form.subtitle %}:
