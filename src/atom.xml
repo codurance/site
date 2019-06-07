@@ -1,5 +1,5 @@
 ---
-title: Atom Feed 
+title: Atom Feed
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -13,17 +13,31 @@ title: Atom Feed
         <email>{{ site.email }}</email>
     </author>
     <rights>Copyright (c) {{ site.sitename }}</rights>
-    {% for post in site.posts limit:15 %}
+    {%- for post in site.posts limit:15 -%}
     <entry>
         <id>{{ post.url}}</id>
         <title>{{ post.title | xml_escape }}</title>
         <link href="{{ site.url }}{{ post.url }}"/>
         <published>{{ post.date | date_to_xmlschema }}</published>
-        {% if post.excerpt %}
-        <summary type="html">{{ post.excerpt | markdownify | xml_escape }}</summary>
-        {% else %}
-        <content type="html">{{ post.content | xml_escape }}</content>
-        {% endif %}
+        {%- if post.excerpt -%}
+            <summary type="html">{{ post.excerpt | markdownify | xml_escape }}</summary>
+        {%- else -%}
+            <content type="html">{{ post.content | xml_escape }}</content>
+        {%- endif -%}
+        <author>
+            <name>{{ post.author }}</name>
+            {%- for member in site.data.team -%}
+                {%- if post.author == member.name -%}
+                    {%- if member.twitter -%}
+                        <url>https://twitter.com/{{ member.twitter }}</url>
+                    {%- endif -%}
+                    {%- if member.email -%}
+                        <email>{{ member.email }}</email>
+                    {%- endif -%}
+                    {%- break -%}
+                {%- endif -%}
+            {%- endfor -%}
+        </author>
     </entry>
-    {% endfor %}
+    {%- endfor -%}
 </feed>
