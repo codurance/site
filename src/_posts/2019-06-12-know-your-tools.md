@@ -14,8 +14,11 @@ tags:
 - craftsmanship
 ---
 
+At Codurance we consider important the knowledge of your tools. Links back to craftsmanship.
+
 Clerical stuff usage first time I saw someone using an application I was handling.
 
-Mouse Lost of focus
+Alt+Enter for refactorings
 
+Mouse Lost of focus
 I'm an Emacs user. Evil
