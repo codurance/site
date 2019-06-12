@@ -16,26 +16,6 @@
   twitter: mashooq
   github: mashooq
 
-- id: david_hall
-  name: David Hall
-  image: /assets/custom/img/team/david_hall.jpg
-  role: Head of Business Development
-  fullDescription:
-    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
-    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
-    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
-  twitter: davidgrhall
-  linkedin: davidgrahamhall
-
-- id: stevelydford
-  name: Steve Lydford
-  image: /assets/custom/img/team/steve_lydford.jpg
-  role: Head of Professional Services
-  fullDescription: >
-      <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
-  twitter: stevelydford
-  github: stevelydford
-
 - id: rob
   name: Robert Taylor
   image: /assets/custom/img/team/rob_taylor.jpg
@@ -46,6 +26,26 @@
     <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
   twitter: roberttaylor426
   github: roberttaylor426
+
+- id: stevelydford
+  name: Steve Lydford
+  image: /assets/custom/img/team/steve_lydford.jpg
+  role: Head of Professional Services
+  fullDescription: >
+      <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
+  twitter: stevelydford
+  github: stevelydford
+
+- id: david_hall
+  name: David Hall
+  image: /assets/custom/img/team/david_hall.jpg
+  role: Head of Business Development
+  fullDescription:
+    <p>David is responsible for Business Development, focusing on both our new and existing client projects. He started his career at Skills Matter, helping to grow their European community of technology professionals through organising and promoting user groups, conferences and expert-led training sessions on Agile, Open Source technologies and development practices.</p>
+    <p>With time also spent at Amazon Web Services, he has a passion for supporting and building technology communities, believing that cool things happen when smart people come together to learn and share ideas.</p>
+    <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
+  twitter: davidgrhall
+  linkedin: davidgrahamhall
 
 - id: giulia
   name: Giulia Mantuano
@@ -587,26 +587,6 @@
   github: glippi
   twitter: gabriele_lippi
 
-- id: emma_booth
-  name: Emma Booth
-  image: /assets/custom/img/team/emma_booth.jpg
-  role: Business Development Manager
-  email: emma.booth@codurance.com
-  linkedin: emma-booth-36785b45
-  twitter: codurance_emma
-  fullDescription:
-    <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
-    <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
-    <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
-
-- id: fernando_rafart
-  name: Fernando Rafart
-  image: /assets/custom/img/team/fernando_rafart.jpg
-  role: Head of Professional Services (Spain)
-  fullDescription:
-    <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
-    <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
-
 - id: jorge_viana
   name: Jorge Viana
   image: /assets/custom/img/team/jorge_viana.jpg
@@ -639,6 +619,26 @@
     <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
     <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
   twitter: roaslin
+
+- id: emma_booth
+  name: Emma Booth
+  image: /assets/custom/img/team/emma_booth.jpg
+  role: Business Development Manager
+  email: emma.booth@codurance.com
+  linkedin: emma-booth-36785b45
+  twitter: codurance_emma
+  fullDescription:
+    <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
+    <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
+    <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
+
+- id: fernando_rafart
+  name: Fernando Rafart
+  image: /assets/custom/img/team/fernando_rafart.jpg
+  role: Head of Professional Services (Spain)
+  fullDescription:
+    <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
+    <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
 
 - id: andrew_pattison
   name: Andrew Pattison
