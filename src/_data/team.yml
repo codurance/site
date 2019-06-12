@@ -214,8 +214,8 @@
   image: /assets/custom/img/team/jorge_gueorguiev.jpg
   role: Software Craftsperson
   fullDescription:
-    <p>Although he started early (with QuickBasic and Turbo Pascal), took him a while to center into the developer way of living. Nonetheless, he has more than 10 years experience as software developer at different levels. His main experience is around C# and .Net, but has a keen interest in other languages, especially around functional programming.</p>
-    <p>In his experience two maxims have been revealed, Simple is Beautiful and Make Everyone's Life Easy. Because of them, his personal goal is to improve the experience of fellow developers (which always translates to happy customers)</p>
+    <p>Although he started early (with QuickBasic and Turbo Pascal), took him a while to center into the developer way of living. Nonetheless, he started his professional career back in 2000, and has been a software developer at different levels. His main experience before Codurance was around C# and .Net, but since joining has worked mostly on the JVM stack, using Java and Clojure (he does have a strong interest on functional languages).</p>
+    <p>In his experience two maxims have been revealed, `Simple is Beautiful` and `Make Everyone's Life Easy`. Because of them, his personal goal is to improve the experience of fellow developers (which always translates to happy customers)</p>
     <p>Outside of work, you can find him either playing online or dancing away, or just improving his craft (that is the way of the developer).</p>
   twitter: yefoakira
   github: miyamotoakira
