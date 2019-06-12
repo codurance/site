@@ -16,26 +16,6 @@
   twitter: mashooq
   github: mashooq
 
-- id: rob
-  name: Robert Taylor
-  image: /assets/custom/img/team/rob_taylor.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
-    <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
-    <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
-  twitter: roberttaylor426
-  github: roberttaylor426
-
-- id: stevelydford
-  name: Steve Lydford
-  image: /assets/custom/img/team/steve_lydford.jpg
-  role: Head of Professional Services
-  fullDescription: >
-      <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
-  twitter: stevelydford
-  github: stevelydford
-
 - id: david_hall
   name: David Hall
   image: /assets/custom/img/team/david_hall.jpg
@@ -46,6 +26,26 @@
     <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
   twitter: davidgrhall
   linkedin: davidgrahamhall
+
+- id: stevelydford
+  name: Steve Lydford
+  image: /assets/custom/img/team/steve_lydford.jpg
+  role: Head of Professional Services
+  fullDescription: >
+      <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
+  twitter: stevelydford
+  github: stevelydford
+
+- id: rob
+  name: Robert Taylor
+  image: /assets/custom/img/team/rob_taylor.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
+    <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
+    <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
+  twitter: roberttaylor426
+  github: roberttaylor426
 
 - id: giulia
   name: Giulia Mantuano
