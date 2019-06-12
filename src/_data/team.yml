@@ -660,4 +660,14 @@
     <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
   linkedin: andrew-pattison-602b3647
   email: andrew.pattison@codurance.com
+  
+- id: krzysztof_napierala
+  name: Krzysztof Napierala
+  image: /assets/custom/img/team/krzysztof_napierala.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Krzysztof has been a fan of clean code and TDD approach for more than nine years with experience in various industry types, including energy, banking, and insurance.</p>
+    <p>His main technology stack contains .NET, SQL Server, and Vue.js, which he mostly used for back end and full stack desktop and web applications.</p>
+    <p>He strives to develop his skills constantly trying to learn something new every day.</p>
+    <p>In his free time, he likes to swim, visit historic places and hang out with friends.</p>
 
