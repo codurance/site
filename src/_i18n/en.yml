@@ -552,6 +552,10 @@ projects:
                      <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Coniq:
+    metadescription: We helped Coniq to deliver their MVPs through the adoption of Agile processes and technical practices.
+    intro: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
+    focused: Software Craftsmanship
+    keywords: Product Owner, Product Backlog, Scrum, Agile, MVPs, Rally
     metaheader: A Software Craftsmanship mindset helped to empower Coniq's in-house development team, enabling them to deliver their own quality software more frequently.
     subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project.</p>
     about: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
