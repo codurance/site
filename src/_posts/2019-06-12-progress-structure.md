@@ -40,7 +40,7 @@ Finally, the competency matrix that we are using is not a tick-all-boxes idea. I
 <center><img alt="Spider Net of Competencies" src="/assets/custom/img/blog/2019/spider-net.png"/></center>
 
 ##  It is a Marathon, not a sprint.
-I think this is something that needs to be understood. It takes years to reach Principal (the highest seniority) level. You need a broad knowledge and experience. You need to have seen multiple projects, with different characteristics, so for any new assignments you can reach into your own drawer of solutions, approaches, tricks to move forward satisfactorily a project. Trying to race here only leads to disappointment. Or as they saying goes: Rome wasn’t built in a day.
+I think this is something that needs to be understood. It takes years to reach Principal (the highest seniority) level. You need a broad knowledge and experience. You need to have seen multiple projects, with different characteristics, so for any new assignments you can reach into your own drawer of solutions/approaches/tricks to move forward satisfactorily a project. Trying to race here only leads to disappointment. Or as the saying goes: Rome wasn’t built in a day.
 
 ## Mentorship
 Mentoring is one of the most important ways in which we can help people to improve and progress. Therefore, we are introducing mentoring (non-compulsory) for every level of seniority. A mentor will become a guide and helper, to allow the mentee to move forwards. It is important however that the mentee the one in charge of his/her own progression. The mentor is there to lend a hand, provide advice, and help with getting Codurance to provide the resource/opportunities/solutions that the mentee required.
