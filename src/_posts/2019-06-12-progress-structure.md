@@ -6,10 +6,10 @@ title: "Know your tool"
 date: 2019-06-12 05:00:00
 description: Why I think learning to use your IDE is important.
 image: 
-    src: /assets/custom/img/blog/2019/pattern-split.jpg
+    src: /assets/custom/img/blog/2019/forest-path-reduced.jpg
     attribution:
-       text: Photo by Dmitri Popov on Unsplash
-       href: https://unsplash.com/@dmpop
+       text: Photo by Jens Lelie on Unsplash
+       href: https://unsplash.com/@leliejens
 tags: 
 - codurance
 ---
