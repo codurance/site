@@ -15,7 +15,7 @@ title: Clients
     {% for client in site.data.clients %}
     <div class="d-flex justify-content-between">
       <div class="d-block mr-5">
-        <img class="g-width-120" src="{{ client.image }}" alt="{{ client.alt-text }}">
+        <img class="g-width-120" src="{{site.baseurl}}{{ client.image }}" alt="{{ client.alt-text }}">
       </div>
       <div class="d-block">
         <h2 class="h4 g-color-black g-font-weight-600">{{ client.name }}</h2>
