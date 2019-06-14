@@ -37,6 +37,8 @@ Originally I saw this as trying to get well rounded people that is useful on eve
 
 Finally, the competency matrix that we are using is not a tick-all-boxes idea. It provides a general idea of  expectations.
 
+<center><img alt="Spider Net of Competencies" src="/assets/custom/img/blog/2019/spider-net.png"/></center>
+
 ##  It is a Marathon, not a sprint.
 I think this is something that needs to be understood. It takes years to reach Principal (the highest seniority) level. You need a broad knowledge and experience. You need to have seen multiple projects, with different characteristics, so for any new assignments you can reach into your own drawer of solutions, approaches, tricks to move forward satisfactorily a project. Trying to race here only leads to disappointment. Or as they saying goes: Rome wasn’t built in a day.
 
