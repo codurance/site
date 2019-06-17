@@ -5,10 +5,8 @@
     <h2>The whole series:</h2>
     </p>
     <ol>
-    {% assign count = '0' %}
     {% for post in site.posts reversed %}
     {% if post.series == page.series %}
-        {% capture count %}{{ count | plus: '1' }}{% endcapture %}
         <li>
         {% if page.url == post.url %}
             {{post.title}}
