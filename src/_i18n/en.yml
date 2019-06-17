@@ -256,6 +256,7 @@ clients:
    ey_description: EY is one of the largest professional services firms in the world and is one of the “Big Four” accounting firms. Our Craftspeople are helping them evolve their XP practices and deliver world-class software.
    roche_description: Roche is a Swiss multinational healthcare company that operates worldwide. We are working with them to improve the way they are building the next generation of their digital platforms, helping the team deliver quality systems continuously.
    coniq_case_study: Case study for Coniq
+   asos_case_study: Case study for Asos
 clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
@@ -531,17 +532,21 @@ projects:
     title: Let us help you to create better software
     subtitle: Tell us about the project in the form bellow and we'll get back to you soon
   ASOS:
+    metadescription: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
+    intro: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
+    focused: Software Craftsmanship
+    keywords: Continuous Delivery, Continuous Integration, CI/CD, DevOps, Code Quality, TDD, Extreme Programming, Azure, .NET
     metaheader: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
     subtitle: <p>A multi-staged, multi-team manual deployment process was having a negative impact on the organisations ability to deploy changes frequently.</p>
               <p>Software Craftsmanship was seen as a way to raise overall code quality, whilst providing a platform for the journey to Continuous Delivery.</p>
     about: ASOS is an online fashion retailer, selling cutting-edge fashion and supporting a thriving fashion community Having started as a fashion blog, the brand now offers its clients mobile apps and a magazine in addition to its website offering Last year, ASOS had over 13.4 million active customers.
-    the_challenge: <p>With over 123 million unique visits to their site per month and with 95 million page views per day, ASOS were struggling to adapt their systems and to ensure performance during peak periods (e g Black Friday). One of the key problems was a multi-stage, multi-team manual deployment process requiring the coordination of a large number of staff and manual testing.</p>
-                   <p>In an effort to modernise and improve their IT capabilities, ASOS underwent a programme to improve the speed of change, the ease, and rate of delivery and a general upskilling of staff in this area. They realised they were missing some key skills, particularly around agile technical practices, and asked us to help.</p>
+    the_challenge: <p>ASOS were struggling to adapt their systems and to ensure performance during peak trading periods, e.g Black Friday. One of the key problems was a multi-stage, manual deployment process that required the coordination of multiple teams and manual testing.</p>
+                   <p>In an effort to modernise and improve their IT capabilities, ASOS underwent an improvement program to improve their speed of change and rate of delivery. Central to this was the adoption of modern software development practices and techniques, particularly around Extreme Programming.</p>
     our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
-                     <p>The work was in NET ASP NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
-                     <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and a <a href="/services">culture of DevOps</a> </p>
-    outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly Iterations are more organized and ceremonies are delivering more value.</p>
-             <p>We changed the technical practices within the team, raising the overall quality of code. Several team members that went through the training courses have been promoted into key engineering leadership positions.</p>
+                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
+                     <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices. We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
+    outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly. Iterations are more organized and ceremonies are delivering more value.</p>
+             <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
   Tesco:
     metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
