@@ -28,7 +28,7 @@ One of the things that we decided at the beginning is that we were not trying to
 
 The other important aspect is that we are a consultancy, and therefore the skills chosen for advancement are to improve our capacity as consultants.
 
-## Progress Structure.
+## Progress Structure
 So how is the progress structure setup? We have a collection of disciplines — areas where we want people to improve. Each discipline is divided into at most 5 levels. Each level has one or more skills/experiences. The idea is that they represent a continuous advancement on the difficulty or knowledge required. Then there are the spider nets, an approximate shape of the levels on each discipline that we expect a person at each level to have reached. We want to allow for some flexibility as some of the “requirements” really depend on being provided with opportunities to develop in these areas. Sometimes people are so well advanced around a specific area that compensates for lack in others. But in general, for a consultancy, well rounded individuals, that can cover all the job/projects possibilities is better.
 
 A detail that I believe is important is that your career advancement will not depend on someone of higher seniority level vacating a position. Each person's progress is their own, and will not be affected by the progression of their colleagues.
@@ -39,7 +39,7 @@ Finally, we use a competency matrix, a description of the expected skills based 
 
 <center><img alt="Spider Net of Competencies" src="/assets/custom/img/blog/2019/spider-net.png"/></center>
 
-##  It is a Marathon, not a sprint.
+##  It is a Marathon, not a sprint
 I think this is something that needs to be understood. It takes years to reach Principal (the highest seniority) level. You need a broad knowledge and experience. You need to have seen multiple projects, with different characteristics, so for any new assignments you can reach into your own drawer of solutions/approaches/tricks to move forward satisfactorily a project. Trying to race here only leads to disappointment. Or as the saying goes: Rome wasn’t built in a day.
 
 ## Mentorship
