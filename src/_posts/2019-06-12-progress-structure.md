@@ -3,7 +3,7 @@ author: Jorge Gueorguiev Garcia
 layout: post
 asset-type: post
 title: "Progress Structure"
-date: 2019-06-12 05:00:00
+date: 2019-06-17 05:00:00
 description: We have introduced a progress structure at Codurance. Here there is some information.
 image: 
     src: /assets/custom/img/blog/2019/forest-path-reduced.jpg
