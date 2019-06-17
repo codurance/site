@@ -38,7 +38,8 @@ title: Clients
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
-        {% include button.html href=project.page-location translated_text=project.title %}
+        {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
+        {% include button.html href=project.page-location translated_text=button-text %}
         {% endfor %}
       </div>
     </div>

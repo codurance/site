@@ -530,6 +530,7 @@ projects:
     title: Let us help you to create better software
     subtitle: Tell us about the project in the form bellow and we'll get back to you soon
   ASOS:
+    link-text: Case Study for Asos
     metadescription: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
     intro: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
     focused: Software Craftsmanship
@@ -556,6 +557,7 @@ projects:
                      <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Coniq:
+    link-text: Case Study at Coniq
     metadescription: We helped Coniq to deliver their MVPs through the adoption of Agile processes and technical practices.
     intro: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
     focused: Software Craftsmanship
