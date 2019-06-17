@@ -37,7 +37,7 @@ Originally I saw this as trying to get well rounded people that are useful on ev
 
 Finally, we use a competency matrix, a description of the expected skills based on discipline and levels. This then creates a set of recommended shapes for our craftspeople at each seniority level.
 
-<center><img alt="Spider Net of Competencies" src="/assets/custom/img/blog/2019/spider-net.png"/></center>
+<center><img alt="Spider Net of Competencies" src="{{site.baseurl}}/assets/custom/img/blog/2019/spider-net.png"/></center>
 
 ##  It is a Marathon, not a sprint
 I think this is something that needs to be understood. It takes years to reach Principal (the highest seniority) level. You need a broad knowledge and experience. You need to have seen multiple projects, with different characteristics, so for any new assignments you can reach into your own drawer of solutions/approaches/tricks to move forward satisfactorily a project. Trying to race here only leads to disappointment. Or as the saying goes: Rome wasn’t built in a day.
