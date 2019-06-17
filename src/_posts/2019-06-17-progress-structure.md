@@ -10,6 +10,7 @@ image:
     attribution:
        text: Photo by Jens Lelie on Unsplash
        href: https://unsplash.com/@leliejens
+series: "Codurance internal workings"
 tags: 
 - codurance
 ---

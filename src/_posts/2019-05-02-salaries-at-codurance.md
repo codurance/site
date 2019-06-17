@@ -11,6 +11,7 @@ image:
     attribution:
        text: Photo by Nattanan Kanchanaprat on Pixabay
        href: https://pixabay.com/users/nattanan23-6312362/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2696228
+series: "Codurance internal workings"
 tags: 
 - codurance
 ---

@@ -11,6 +11,7 @@ image:
     attribution:
        text: Photo by Sandro Viljoen
        href: https://twitter.com/ggsbv
+series: "Codurance internal workings"
 tags: 
 - codurance
 ---
