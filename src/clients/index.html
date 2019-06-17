@@ -37,11 +37,9 @@ title: Clients
         </ul>
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
-        {% capture case_study %}{% t clients.{{client.id}}_case_study %}{% endcapture %}
-        {% if case_study != "" %}
-        {% capture url %}projects/software-craftsmanship-at-{{client.id}}{% endcapture %}
-        {% include button.html href=url translated_text=case_study %}
-        {% endif %}
+        {% for project in client.projects %}
+        {% include button.html href=project.page-location translated_text=project.title %}
+        {% endfor %}
       </div>
     </div>
     <hr class="g-my-50">
