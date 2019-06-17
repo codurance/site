@@ -341,7 +341,7 @@ The terminating operation `ifInvalid` makes the final decision about what to ret
 
 ### A formal definition.
 
-More formally, the monad pattern is usually defined as an assemblage of the following three components, which together are known as a _kleisli triple:_
+More formally, the monad pattern is usually defined as an assemblage of the following three components, which together are known as a _Kleisli triple:_
 
 - A _type constructor_ that maps every possible type to its corresponding monadic type. This wording does not make much sense in Java. To understand it, think of generic types, e.g: `Isbn` → `MaybeValid<Isbn>`.
 - A _unit function_ that wraps a value in an underlying type with an instance of the corresponding monadic type, e.g: `new Valid<Isbn>(isbn)`.
