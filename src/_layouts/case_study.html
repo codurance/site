@@ -2,97 +2,52 @@
 layout: default
 ---
 
-<div class="breadcrumbs" style="background-color: whitesmoke;">
-  <div class="container">
-    <h1 class="pull-left">Software Craftsmanship at {{ page.identifier }} </h1>
-    <ul class="pull-right breadcrumb casestudy-header-path">
-      <li><a href="{{ '/clients' | prepend: site.baseurl }}"> Clients </a></li>
-      <li><a href="{{ '/clients' | prepend: site.baseurl }}">Projects</a></li>
-      <li class="active"> {{ page.identifier }} </li>
-    </ul>
-  </div>
-</div>
-
-<div class="breadcrumbs-v3 casestudy">
-  <div class="container">
-    <div class="col-md-12 casestudy-logo">
-      <img src="{{ site.baseurl }}/assets/custom/img/case-study/{{ page.identifier }}.png" class="img-fluid bordered" alt="">
+<div class="container content-lg">
+    <div class="title-v1">
+        <h2>{{ page.identifier }} & Codurance</h2>
+        <p>{% t projects.{{ page.identifier }}.metaheader %}</p>
     </div>
-    <div class="col-md-12 casestudy-metaheader" style="text-align:center">
-      {% t projects.{{ page.identifier }}.subtitle %}
-    </div>
-  </div>
-</div>
-
-<div class="casestudy-flat-testimonials casestudy-bg-image-v1 parallaxBg" style="background-position: 50% -58px;">
-  <div class="container">
     <div class="row">
-      {{ content }}
+        <div class="col-md-6 content-boxes-v3 margin-bottom-40">
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u fa fa-check"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">About {{ page.identifier }}</h2>
+                    <p>{% t projects.{{ page.identifier }}.intro %}</p>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u fa fa-check"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">Our work</h2>
+                    <p>{% t projects.{{ page.identifier }}.metadescription %}</p>
+                </div>
+            </div>
+            <div class="row margin-bottom-40 text-center">
+                {% capture url %}{{site.baseurl}}/company/#contactus{% endcapture %}
+                {% include button.html href=url text="partners-jetbrains-partnership.link_title" %}
+	    </div>
+        </div>
+        <div class="col-md-6 text-center">
+	    <img class="img-fluid bordered" src="{{ site.baseurl }}/assets/custom/img/case-study/{{ page.identifier }}.png" alt="{{ page.identifier }} logo"/>
+	</div>
     </div>
-  </div>
-</div>
 
-<div class="container content">
-  <div class="row casestudy-row">
-    <div class="casestudy-box margin-bottom-30">
-      <div class="margin-bottom-40">
-        <div class="headline">
-          <h2>{% t projects.about %} {{ page.identifier }} </h2>
-        </div>
-        {% t projects.{{ page.identifier }}.about %}
-      </div>
+    <div class="title-v1">
+        <h2 class="text-center">The Project</h2>
     </div>
-
-    <div class="casestudy-main">
-      <div class="margin-bottom-40">
-        <div class="headline">
-          <h2>{% t projects.the_challenge %}</h2>
-        </div>
-        {% t projects.{{ page.identifier }}.the_challenge %}
-      </div>
-      <div class="margin-bottom-40">
-        <div class="headline">
-          <h2>{% t projects.our_sc_approach %}</h2>
-        </div>
-        {% t projects.{{ page.identifier }}.our_sc_approach %}
-      </div>
-      <div class="margin-bottom-40 casestudy-outcome">
-        <div class="headline">
-          <h2>{% t projects.outcome %}</h2>
-        </div>
-        {% t projects.{{ page.identifier }}.outcome %}
-      </div>
-    </div>
-    <div class="casestudy-next-button-container">
-      <a href="{{ page.next | prepend: site.baseurl }}" class="casestudy-next-button btn btn-u animated">{% t projects.next %}</a>
-    </div>
-  </div>
-
-  <div class="casestudy-contact col-md-6 col-sm-offset-3">
-    <!-- Business Hours -->
-    <h3 class="text-center">{% t projects.contact-form.title %}</h3>
-    <p class="text-center">{% t projects.contact-form.subtitle %}</p><br/>
     <div class="row">
-      <form class="sky-form" action="https://formspree.io/hello@codurance.com" method="POST">
-        <input type="hidden" name="_next" value="/aboutus/thanks" />
-        <input type="hidden" name="_subject" value="Codurance Contact" />
-        <div class="col-sm-6">
-          <div class="input-group margin-bottom-10">
-            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-            <input placeholder="{% t company-contact-form.name_placeholder %}" class="form-control" type="text" name="name" required>
-          </div>
+        <div class="news-v3 margin-bottom-30 bg-color-white">
+            <h3 class="text-center">The Challenge</h3>
+           <p>{% t projects.{{ page.identifier }}.the_challenge %}</p>
         </div>
-        <div class="col-sm-6">
-          <div class="input-group margin-bottom-20">
-            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-            <input class="form-control" type="email" placeholder="{% t company-contact-form.email_placeholder %}" name="_replyto" required>
-          </div>
+        <div class="news-v3 margin-bottom-30 bg-color-white">
+            <h3 class="text-center">Approach</h3>
+           <p>{% t projects.{{ page.identifier }}.our_sc_approach %}</p>
         </div>
-        <div class="col-sm-12">
-          <textarea rows="5" class="form-control margin-bottom-20" name="body" required placeholder="{% t company-contact-form.text_placeholder %}"></textarea>
-          <button id="Send" value="{% t company-contact-form.button_title %}" class="btn btn-more btn-u animated pull-right" type="submit">{% t company-contact-form.button_title %}</button>
+        <div class="news-v3 margin-bottom-30 bg-color-white">
+            <h3 class="text-center">Outcome</h3>
+           <p>{% t projects.{{ page.identifier }}.outcome %}</p>
         </div>
-      </form>
     </div>
-  </div>
 </div>

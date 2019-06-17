@@ -15,7 +15,7 @@ title: Clients
     {% for client in site.data.clients %}
     <div class="d-flex justify-content-between">
       <div class="d-block mr-5">
-        <img class="g-width-120" src="{{ client.image }}" alt="{{ client.alt-text }}">
+        <img class="g-width-120" src="{{site.baseurl}}{{ client.image }}" alt="{{ client.alt-text }}">
       </div>
       <div class="d-block">
         <h2 class="h4 g-color-black g-font-weight-600">{{ client.name }}</h2>
@@ -37,6 +37,11 @@ title: Clients
         </ul>
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
+        {% capture case_study %}{% t clients.{{client.id}}_case_study %}{% endcapture %}
+        {% if case_study != "" %}
+        {% capture url %}projects/software-craftsmanship-at-{{client.id}}{% endcapture %}
+        {% include button.html href=url translated_text=case_study %}
+        {% endif %}
       </div>
     </div>
     <hr class="g-my-50">

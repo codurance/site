@@ -255,6 +255,7 @@ clients:
    moonpig_description: Moonpig have been offering a range of gifts and greetings cards online sine 2000. Our Craftspeople have helped Moonpig by both working within teams to design and deliver production software and coaching their developers on XP practices and software design.
    ey_description: EY is one of the largest professional services firms in the world and is one of the “Big Four” accounting firms. Our Craftspeople are helping them evolve their XP practices and deliver world-class software.
    roche_description: Roche is a Swiss multinational healthcare company that operates worldwide. We are working with them to improve the way they are building the next generation of their digital platforms, helping the team deliver quality systems continuously.
+   coniq_case_study: Case study for Coniq
 clients-partners:
    title: Partners
    subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
@@ -552,7 +553,11 @@ projects:
                      <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling individuals on Software Craftsmanship techniques such as Test Driven Development (TDD) and Refactoring. Furthermore, we helped the Product Owner to improve the requirements and advised on project strategy. We supported the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Coniq:
-    metaheader: A Software Craftsmanship mindset helped to empower Coniq's in-house development team, enabling them to deliver their own quality software more frequently.
+    metadescription: We helped Coniq to deliver their MVPs through the adoption of Agile processes and technical practices.
+    intro: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
+    focused: Software Craftsmanship
+    keywords: Product Owner, Product Backlog, Scrum, Agile, MVPs, Rally
+    metaheader: We partnered with Coniq to help their development team to deliver quality software more frequently.
     subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project.</p>
     about: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
     the_challenge: <p>Coniq wanted to build an application that, in conjunction with their clients existing EPOS (Electronic Point of Sale) software, would read barcode scans in store to provide their end customer with loyalty points and discounts.</p>
