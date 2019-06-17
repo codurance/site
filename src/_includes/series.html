@@ -1,0 +1,23 @@
+{% if page.series %}
+<hr/>
+<div class="">
+    <p>
+    <h2>The whole series:</h2>
+    </p>
+    <ol>
+    {% assign count = '0' %}
+    {% for post in site.posts reversed %}
+    {% if post.series == page.series %}
+        {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+        <li>
+        {% if page.url == post.url %}
+            {{post.title}}
+        {% else %}
+            <a href="{{post.url}}">{{post.title}}</a>
+        {% endif %}
+        </li>
+    {% endif %}
+    {% endfor %}
+    </ol>
+</div>
+{% endif %}
