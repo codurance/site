@@ -97,6 +97,9 @@
   - expert_advice
   services-page:
     - expert_advice
+  projects:
+    - page-location: projects/software-craftsmanship-at-asos
+      project-name: ASOS
 
 - id: mango
   name: Mango
@@ -140,6 +143,9 @@
   website: coniq.com
   services:
   - software_creation
+  projects:
+    - page-location: projects/software-craftsmanship-at-coniq
+      project-name: Coniq
 
 - id: aws
   name: Amazon Web Services
