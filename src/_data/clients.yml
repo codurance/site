@@ -86,6 +86,11 @@
   - expert_advice
   services-page: 
     - effective_delivery
+  projects:
+    - page-location: projects/software-craftsmanship-at-tesco-plc
+      project-name: Tesco-API
+    - page-location: projects/software-craftsmanship-at-tesco-scheduling
+      project-name: Tesco-SAPI
 
 - id: asos
   name: ASOS
