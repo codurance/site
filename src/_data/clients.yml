@@ -88,9 +88,9 @@
     - effective_delivery
   projects:
     - page-location: projects/software-craftsmanship-at-tesco-plc
-      project-name: Tesco-API
+      project-name: Tesco-forecasting
     - page-location: projects/software-craftsmanship-at-tesco-scheduling
-      project-name: Tesco-SAPI
+      project-name: Tesco-scheduling
 
 - id: asos
   name: ASOS

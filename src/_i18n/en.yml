@@ -547,8 +547,8 @@ projects:
     outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly. Iterations are more organized and ceremonies are delivering more value.</p>
              <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
-  Tesco-API:
-    link-text: Case Study at Tesco (Number 1)
+  Tesco-forecasting:
+    link-text: Case Study at Tesco (Forecasting)
     metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
@@ -561,8 +561,8 @@ projects:
     our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Working in conjunction with Tesco’s development team in Bangalore, we created a web application that would help demand planners to order the right amount of product from suppliers. The web application was connected to the legacy database through the new custom API.</p>
                      <p>InIn addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling their developers on Extreme Programming techniques such as Test Driven Development (TDD) and Refactoring, whilst supporting the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
-  Tesco-SAPI:
-    link-text: Case Study at Tesco (Number 2)
+  Tesco-scheduling:
+    link-text: Case Study at Tesco (Scheduling)
     metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
