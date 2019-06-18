@@ -530,7 +530,7 @@ projects:
     title: Let us help you to create better software
     subtitle: Tell us about the project in the form bellow and we'll get back to you soon
   ASOS:
-    link-text: Case Study for Asos
+    link-text: Case Study at Asos
     metadescription: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
     intro: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
     focused: Software Craftsmanship
