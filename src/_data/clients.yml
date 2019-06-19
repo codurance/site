@@ -86,6 +86,11 @@
   - expert_advice
   services-page: 
     - effective_delivery
+  projects:
+    - page-location: projects/software-craftsmanship-at-tesco-forecasting
+      project-name: Tesco-forecasting
+    - page-location: projects/software-craftsmanship-at-tesco-scheduling
+      project-name: Tesco-scheduling
 
 - id: asos
   name: ASOS
