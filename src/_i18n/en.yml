@@ -548,7 +548,7 @@ projects:
              <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
   Tesco-forecasting:
-    link-text: Case Study at Tesco (Forecasting)
+    link-text: Forecasting Project
     metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
@@ -562,7 +562,7 @@ projects:
                      <p>InIn addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling their developers on Extreme Programming techniques such as Test Driven Development (TDD) and Refactoring, whilst supporting the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Tesco-scheduling:
-    link-text: Case Study at Tesco (Scheduling)
+    link-text: Scheduling Project
     metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
