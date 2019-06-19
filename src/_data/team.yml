@@ -7,6 +7,7 @@
   github: sandromancuso
   linkedin: sandromancuso
   email: sandro.mancuso@codurance.com
+  office: london
 
 - id: mash
   name: Mashooq Badar
@@ -15,6 +16,7 @@
   fullDescription: <p>Mash is a pragmatic software craftsman always looking to improve his software creation skills and helping others do the same. He firmly believes that a well-rounded software craftsman must have a keen interest in all aspects of software creation, including; process, people, technology, user experience, development, operation, maintenance, and social impact. He relishes the daily challenges that Codurance brings to him–stretching his existing knowledge and expertise allowing him to constantly grow as a professional.</p><p>Mash is an advisor and a leader. During his diverse career, he has succeeded in invigorating large ailing software projects as well as creating highly effective software teams and departments. His broad and deep technical knowledge, organisational skills, craft focus, and empathy to people involved have been integral to his success. He has worked in many roles for charities, investment banks, consultancies, government, media and cloud providers. He prides himself at being a hands-on software developer and believes that software development skills are very hard to learn and the best way to maintain them is to apply them.</p>
   twitter: mashooq
   github: mashooq
+  office: london
 
 - id: rob
   name: Robert Taylor
@@ -26,6 +28,7 @@
     <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
   twitter: roberttaylor426
   github: roberttaylor426
+  office: london
 
 - id: stevelydford
   name: Steve Lydford
@@ -35,6 +38,7 @@
       <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
   github: stevelydford
+  office: london
 
 - id: david_hall
   name: David Hall
@@ -46,6 +50,7 @@
     <p>He spends his time outside of work attempting to keep on top of DIY projects, most of which are self-inflicted.</p>
   twitter: davidgrhall
   linkedin: davidgrahamhall
+  office: london
 
 - id: giulia
   name: Giulia Mantuano
@@ -59,6 +64,7 @@
     <p>She believes in continuous learning, and her current interest is Product Strategy and User Experience Design for Conversational Interfaces and Internet of Things technologies.</p>
   twitter: giuliamantuano
   github: giuliamantuano
+  office: london
 
 - id: liam
   name: Liam Griffin-Jowett
@@ -67,6 +73,7 @@
   fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
   twitter: gryffskin
   github: gryff
+  office: manchester
 
 - id: chris
   name: Chris Jeffery
@@ -75,6 +82,7 @@
   fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavaScript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
   github: chrisjeffery
+  office: london
 
 - id: francesco
   name: Francesco Gigli
@@ -86,6 +94,7 @@
     <p>Some things have remained the same&colon; the desire to understand the behaviour of systems, the fearless crossing of system boundaries and responsibilities, and the love for good design and usable interfaces.</p>
   twitter: jaramir
   github: jaramir
+  office: london
 
 - id: eriktorres
   name: Erik Torres Serrano
@@ -97,6 +106,7 @@
     <p>Away from the keyboard, he loves the outdoors and spending time with his wife and son.</p>
   twitter: ertorser
   github: etorres
+  office: barcelona
 
 - id: lucianopalma
   name: Luciano Palma
@@ -109,6 +119,7 @@
    <p>He also loves coffee and spending time in the outdoors.</p>
   twitter: pspluciano
   github: lpalma
+  office: london
 
 - id: nacho
   name: Nacho Cougil
@@ -120,6 +131,7 @@
    <p>Nacho enjoys spending time with his family (wife and daughter) and also likes to play basketball, football, and body combat. He loves running and has run marathons and even longer distances by the mountains.</p>
   twitter: icougil
   github: cougil
+  office: barcelona
 
 - id: jorge
   name: Jorge Gueorguiev Garcia
@@ -133,6 +145,7 @@
   github: miyamotoakira
   linkedin: jgueorguiev
   email: jorge.gueorguiev@codurance.com
+  office: london
 
 - id: lilianacarneiro
   name: Liliana Carneiro
@@ -143,6 +156,7 @@
     <p>She is very enthusiastic, energetic and enjoys challenges.</p>
     <p>On her spare time she practices Muay Thai and dives. Liliana also likes travelling and writing about it on her travel blog and newspapers.</p>
   twitter: lilistahr
+  office: barcelona
 
 - id: andrzejrehmann
   name: Andrzej Rehmann
@@ -155,6 +169,7 @@
     <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
   twitter: andrzejrehmann
   github: hoto
+  office: london
 
 - id: richardwild
   name: Richard Wild
@@ -167,6 +182,7 @@
     <p>Aside from programming, Richard is a keen club runner with the Bedford Harriers, doing all distances from 5K to marathons. He also enjoys cycling, blogging and making music.</p>
   twitter: richardjwild
   github: richardjwild
+  office: london
 
 - id: christinaripleygonzalez
   name: Christina Ripley-Gonzalez
@@ -178,6 +194,7 @@
     <p>Christina has a passion for self-improvement and is always looking for new learning opportunities, across a wide variety of subject matters.</p>
     <p>Outside of work, Christina is an avid consumer of sci-fi and fantasy books as well as enjoying weightlifting and bouldering amongst other strength-based activities.</p>
   github: trinkeg
+  office: london
 
 - id: neilkidd
   name: Neil Kidd
@@ -190,6 +207,7 @@
     <p>In addition to attending meetups, he has co-organised the Devs In The Ditch and Agile Staffordshire user groups.</p>
     <p>His other interests include his family, diy and motorcycling.</p>
   github: neilkidd-codurance
+  office: london
 
 - id: terrybalfour
   name: Terry Balfour
@@ -200,6 +218,7 @@
     <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p>
     <p>Outside of work Terry enjoys travelling, mountain biking and has recently started renovating a farm in rural France (even though he knows nothing about building….yet!)</p>
   github: terrybalfourcodurance
+  office: london
 
 - id: danielperez
   name: Daniel Pérez
@@ -212,6 +231,7 @@
     <p>In his free time he likes to play board games, video games and basketball.</p>
   twitter: DaniArchel
   github: Archel
+  office: barcelona
 
 - id: ggsbv
   name: Sandro Viljoen
@@ -226,6 +246,7 @@
     <p>In his spare time, Sandro enjoys spending time with his loved ones, cooking and playing video games, like Dota 2 and Path of Exile.</p>
   twitter: ggsbv
   github: ggsbv
+  office: london
 
 - id: tonygeorgiadis
   name: Tony Georgiadis
@@ -240,6 +261,7 @@
     <p>Tony’s dream is to become a successful Master Software Craftsman, a mentor for Apprentices and help spread the word!</p>
     <p>In his spare time, Tony runs and participates in the Greek Theatre Group of London. He also enjoys spending time with his partner and friends, reading books, learning/performing magic tricks, playing the guitar, cooking and doing fitness activities and sports!</p>
   github: tonycodurance
+  office: london
 
 - id: keithsmale
   name: Keith Smale
@@ -249,6 +271,7 @@
     <p>Keith has been a Business Analyst/Product Owner for over 6 years in the financial services sector and also has experience working in operational teams.</p>
     <p>With a passion for digital product development, Keith is a team player who strives to maximise business value whilst building great products.</p>
     <p>Outside of work, Keith spends his time with his family, mostly chasing after his young daughter.</p>
+  office: london
 
 - id: laullobet
   name: Lau Llobet
@@ -258,6 +281,7 @@
     <p>Lau Llobet discovered his passion for programming methodologies when he read the Clean Code book, directly after finishing his software engineering degree. Since then he has had the opportunity to practice clean code in several fields, including research, startups and education. He loves languages and their ability to define and deliver concepts.</p>
     <p>He considers the pursuit for a communicative attitude (both in teamworking and shaping code) as important as training the logical skills needed to write code.</p>
     <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
+  office: barcelona
 
 - id: ppardalj
   name: Pedro Pardal
@@ -270,6 +294,7 @@
     <p>Now Pedro has joined Codurance with a mission, to convey and share his expertise and passion for quality software to the industry and the community.</p>
   twitter: ppardalj
   github: ppardalj
+  office: barcelona
 
 - id: johnhearn
   name: John Hearn
@@ -281,6 +306,7 @@
     <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
   twitter: johnhearnbcn
   github: johnhearn
+  office: barcelona
 
 - id: pjbaraud
   name: Pierre-Jean Baraud
@@ -291,6 +317,7 @@
     <p>Pierre-Jean believes that sharing his passion and promoting a culture of openness are the best way to achieve his goals. He has worked for 7 years as a Java developer in the Asset Management industry and realized quickly the benefits of the Software Craftsmanship principles in his daily activities.</p>
     <p>You can find him in DIY activities, debating with peers to improve his knowledge or understanding of any topic or sharing with others what he has learnt.</p>
   github: pierre-jean
+  office: london
 
 - id: vfarah-if
   name: Vincent Farah
@@ -301,6 +328,7 @@
     <p>It started in high school, working for a friend of a friend, setting up mail shots in clipper and dbase to earn pocket money. A few years after high school he ran into the same gentleman that remembered the success of his high school project, and invited him to join his software-house as an apprentice. Completing their apprenticeship program, and enjoying software development immensely, he started his professional path within South Africa, refining his skills and interests using different programming languages and processes. Keen on getting international exposure, he immigrated to the UK with a focus on web technologies, distributed systems and developed his skills and passion for best practices, hence finally being part of the Codurance team.</p>
     <p>Outside of work, you will often find him kayaking down rivers and navigating beautiful coastal paths, mountain biking and flying kites with his boys.</p>
   github: vfarah-if
+  office: london
 
 - id: cristinaverdi
   name: Cristina Verdi
@@ -315,6 +343,7 @@
     <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
   twitter: cristina_verdi
   github: cristinaverdi
+  office: barcelona
 
 - id: angelsg
   name: Àngels Gilabert
@@ -326,6 +355,7 @@
     <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
   twitter: thegreathathor
   github: AngelsG
+  office: barcelona
 
 - id: sdavies
   name: Sam Davies
@@ -336,6 +366,7 @@
     <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
     <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
   github: upsd
+  office: london
 
 - id: magda-firek
   name: Magdalena Kocerba-Firek
@@ -345,6 +376,7 @@
     <p>Magda is doing office management, HR and bookkeeping. She studied economy and auditing and graduated from the University of Economics in Wroclaw.</p>
     <p>Before she joined Codurance, she worked as a supply assistant and accountant where she melded her artistic nature with good organisational skills. Very cheerful and open to people. She believes that a good working atmosphere can improve your life.</p>
     <p>After work she loves spending time crafting jewellery and discovering her artistic side.</p>
+  office: london
 
 - id: chris-bimson
   name: Chris Bimson
@@ -356,6 +388,7 @@
     <p>Chris is an advocate of the principles of agile software development and believes that to be successful teams have to care about their craft and must constantly strive to improve it.</p>
     <p>When he is not writing code, or reading about writing code, he enjoys travelling, history and cricket.</p>
   github: christopher-bimson
+  office: london
 
 - id: mjansky
   name: Mattsi Jansky
@@ -368,6 +401,7 @@
   twitter: mattsijansky
   github: Mattsi-Jansky
   linkedin: mjjansky
+  office: london
 
 - id: scottedwards
   name: Scott Edwards
@@ -380,6 +414,7 @@
   twitter: scotteza
   github: scotteza
   linkedin: scott-edwards-b1a68817
+  office: london
 
 - id: chrisreinmuller
   name: Chris Reinmuller
@@ -392,6 +427,7 @@
   twitter: SIR_XOPHER
   github: SirXOPHER
   linkedin: chrisreinmuller
+  office: london
 
 - id: atorres
   name: André Guelfi Torres
@@ -402,6 +438,7 @@
     <p>A year and half later he joined another company, as the only developer, to build an event management system using Delphi.</p>
     <p>In 2017 he decided to move to Europe and landed a job in the gaming industry in London, where he stayed working in the payments team for almost a year, until he joined Codurance.</p>
   github: andre2w
+  office: london
 
 - id: alfredo
   name: Alfredo Fernández
@@ -413,6 +450,7 @@
    <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
   twitter: alfredodev
   github: alfredodev
+  office: london
 
 - id: jim-b
   name: Jim Bourke
@@ -424,6 +462,7 @@
    <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
   twitter: bourkemeister
   github: bourkemeister
+  office: london
 
 - id: solange
   name: Solange U. Gasengayire
@@ -436,6 +475,7 @@
   twitter: sgasengayire
   github: SolangeUG
   email: solange@codurance.com
+  office: london
 
 - id: danbunea
   name: Dan Bunea
@@ -446,6 +486,7 @@
     <p>Outside of Codurance, Dan loves to paint (mainly large colourful abstract paintings), travel, read, watch FC Barcelona, enjoy life in general.</p>
   twitter: danbunea
   github: DanBunea
+  office: barcelona
 
 - id: chris_eyre
   name: Christopher Eyre
@@ -458,6 +499,7 @@
   twitter: chriseyre2000
   github: chriseyre2000
   linkedin: christopher-eyre-09470921
+  office: london
 
 - id: bartomeu_galmes
   name: Bartomeu Galmés
@@ -469,6 +511,7 @@
     <p>When he is not in front of the keyboard, he is playing guitar or reading some books.</p>
   twitter: bartomeugm
   github: bartomeugm
+  office: barcelona
 
 - id: antonio_ruiz
   name: Antonio Ruiz
@@ -480,6 +523,7 @@
     <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
   twitter: __toniruiz
   github: devtoni
+  office: barcelona
 
 - id: david_gracia
   name: David Gracia
@@ -494,6 +538,7 @@
     <p>David is multi-faceted. When he doesn't think or build software, he thinks about various disciplines such as political philosophy, economics, sociology, psychology, natural science and machine intelligence (also known as "artificial intelligence", but he doesn't like that term). He loves to delve into any subject he finds interesting. He is fascinated by space opera in film, television or video games.</p>
   twitter: dgraciac
   github: dgraciac
+  office: barcelona
 
 - id: nick_white
   name: Nick White
@@ -505,6 +550,7 @@
     <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
   github: nawhi
   linkedin: nick9white
+  office: london
 
 - id: alasdair_smith
   name: Alasdair Smith
@@ -516,6 +562,7 @@
     <p>Outside of work Alasdair enjoys riding his motorbike, Thai boxing, travelling and hanging out with friends.</p>
   github: midmandle
   linkedin: alasdair-smith
+  office: manchester
 
 - id: rory_collins
   name: Rory Collins
@@ -527,6 +574,7 @@
     <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
   github: RoryCollins
   twitter: Rory_Collins_
+  office: london
 
 - id: jordi_creus
   name: Jordi Creus
@@ -537,6 +585,7 @@
     <p>He has extensive experience creating and defining the architecture of web applications from scratch, as well as controlling technical debt and legacy code.</p>
     <p>In his free time he enjoys traveling, landscape photography, inline skating and video games.</p>
   github: monitotxi
+  office: barcelona
 
 - id: anne_marie
   name: Anne-Marie Mendonca
@@ -547,6 +596,7 @@
     <p>Anne-Marie enjoys her role in recruitment because it gives her the opportunity to engage with people so that she can understand their career aspirations and experience, which enables her to match their skills with a suitable role and environment.</p>
     <p>She was inspired to join Codurance due to their culture of learning and flexible working environment for all staff, technical and non-technical.</p>
     <p>In her spare time, Anne-Marie enjoys travelling, reading, and learning Spanish.</p>
+  office: london
 
 - id: jen_jem
   name: Jen Jeremiciute
@@ -555,6 +605,7 @@
   fullDescription:
     <p>An experienced Finance & Office Manager who always finds ways to improve processes to be timesaving and efficient; loves learning and progressing in whatever she does. She received her AAT diploma in 2012 and has been working in finances ever since starting with personal tax returns and SME. She was also helping businesses with office management and any other business admin required.</p>
     <p>In her free time, she loves travelling, meeting with friends, writing and tons more...</p>
+  office: london
 
 - id: jack
   name: Jack Colemanzo
@@ -564,6 +615,7 @@
     <p>Jack is our commercial lead in Spain, creating new business opportunities and managing our key accounts. His outlook on sales has always been to incorporate the culture and core values of the business into the sales process, this helps align departments, creating a natural fit for new projects, smooth management of existing ones and allows him to create concepts like Software Craftsaleship.</p>
     <p>With over 10 years of experience in a variety of commercial environments from international publishing in South America to agile digital agencies in Barcelona, Jack has always helped the strategic growth of the business and their clients. His passion for professional development led him to becoming a certified leadership coach and his natural curiosity in people has helped build lasting relationships to deliver successful projects.</p>
     <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
+  office: barcelona
 
 - id: gabriele_lippi
   name: Gabriele Lippi
@@ -575,6 +627,7 @@
     <p>Apart from coding, he enjoys reading books, practicing sports, travelling around the world, and, above all, spending time with his friends.</p>
   github: glippi
   twitter: gabriele_lippi
+  office: barcelona
 
 - id: jorge_viana
   name: Jorge Viana
@@ -587,6 +640,7 @@
     <p>After finishing high school he had to put his passion on hold for a while and he worked for many years in many different things until he had the opportunity to go to the university to study computer science.</p>
     <p>Once he got the degree he started to work as a software developer only to find out that most of what we do is not science rather a complete mess and that there must be a better way to develop software.</p>
     <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn and work alone? He is delighted that Codurance took him as an apprentice and he aspires to become a software craftsman.</p>
+  office: barcelona
 
 - id: aurelija_zubaviciute
   name: Aurelija Zubaviciute
@@ -598,6 +652,7 @@
     <p>When not working Aurelija likes to blog about her travels, places she visits and books she reads, other things she enjoys is dancing and being outdoors.</p>
   github: AurelijaZuba
   twitter: DateWithBooks
+  office: london
 
 - id: raul_mordillo
   name: Raul Mordillo Lluva
@@ -608,6 +663,7 @@
     <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
     <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
   twitter: roaslin
+  office: barcelona
 
 - id: emma_booth
   name: Emma Booth
@@ -620,6 +676,7 @@
     <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
     <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
     <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
+  office: manchester
 
 - id: fernando_rafart
   name: Fernando Rafart
@@ -628,6 +685,7 @@
   fullDescription:
     <p>Fernando’s career started in 1994 and has grown as Software Developer/Architect, Project Manager, IT Manager and CTO/CIO, with a demonstrated track record in Information Technology (IT) Management, delivering value through technological innovation and adoption of digital transformation across the organization.</p>
     <p>Fernando has extensive experience managing software development teams and aligning business strategy with digital opportunities in multinational, medium or start-up sized companies (global and multicultural), from Strategy to Implementation. He is capable of developing and delivering, from IT strategy to project implementation and Application Maintenance.</p>
+  office: barcelona
 
 - id: andrew_pattison
   name: Andrew Pattison
@@ -639,7 +697,8 @@
     <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
   linkedin: andrew-pattison-602b3647
   email: andrew.pattison@codurance.com
-  
+  office: manchester
+
 - id: krzysztof_napierala
   name: Krzysztof Napierala
   image: /assets/custom/img/team/krzysztof_napierala.jpg
@@ -649,6 +708,7 @@
     <p>His main technology stack contains .NET, SQL Server, and Vue.js, which he mostly used for back end and full stack desktop and web applications.</p>
     <p>He strives to develop his skills constantly trying to learn something new every day.</p>
     <p>In his free time, he likes to swim, visit historic places and hang out with friends.</p>
+  office: london
 
 - id: john_rihana
   name: John Rihana
@@ -660,3 +720,4 @@
     <p>John sees himself as an advisor to his clients, constantly creating value by helping them think through unfamiliar problems, offering his unique point of view on key threats and opportunities as well as well as lead them through a process they may have never done before.</p>
   linkedin: john-rihana-861b27a6
   email: john.rihana@codurance.com
+  office: london
