@@ -565,7 +565,7 @@ projects:
     metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
-    metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
+    metaheader: Codurance helped quickstart the new scheduling system of Tesco
     subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
     intro: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s outdated scheduling application for grocery deliveries had limits on the number of deliveries and the features available. In order to optimise the number of vans needed, reduce costs and simplify maintenance, the business needed a new application with an algorithmic solution specifically designed for their needs. This would enable the business to retain the ability to make future feature changes and optimise the delivery schedule based on an improved algorithm.</p>
