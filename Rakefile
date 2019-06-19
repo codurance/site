@@ -1,11 +1,3 @@
-task :build do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_default.yml --trace'
-end
-
-task :buildboth do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_default.yml --trace'
-end
-
 task :buildprb do
   sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_prb.yml --trace'
 end
@@ -18,46 +10,29 @@ task :buildenprb do
   sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml,build/config/_config_prb.yml --trace'
 end
 
-task :serve do
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_en.yml --watch --trace --port 4000 --host 0.0.0.0'
-end
-
-task :servees do
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_es.yml --watch --trace --port 4000 --host 0.0.0.0'
-end
-
-task :servequick do
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_en.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
-end
-
-task :servequickes do
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_es.yml --watch --limit_posts 3 --port 4000 --host 0.0.0.0'
-end
-
-multitask servebothquick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
+multitask serve:      [:_build_en,       :_build_es,       :_ruby_serve]
+multitask servequick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
 
 task :_build_en_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3 --destination output/_site/en --baseurl /en'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en  --limit_posts 3 '
 end
 
 task :_build_es_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --incremental --limit_posts 3 --destination output/_site/es --baseurl /es'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es  --limit_posts 3 '
+end
+
+task :_build_en do
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en'
+end
+
+task :_build_es do
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es'
 end
 
 task :_ruby_serve do
   sh 'mkdir -p output/_site'
   sh 'cp build/config/index.html output/_site/'
   sh 'ruby -run -ehttpd output/_site/ -p4000 > /dev/null 2>&1'
-end
-
-task :en do
-  sh 'rm -rf _site'
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_en.yml --watch --incremental --limit_posts 3'
-end
-
-task :es do
-  sh 'rm -rf _site'
-  sh 'bundle exec jekyll serve --config build/config/_config.yml,build/config/_config_es.yml --watch --incremental --limit_posts 3'
 end
 
 task :test do

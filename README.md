@@ -47,7 +47,7 @@ Open site:
     
 Run this if you want all posts (slower rebuild):
 
-    docker-compose run --service-ports site bundle exec rake serve
+    docker-compose run --service-ports site rake serve
 
 If you want to start the container with a different command use:
 
@@ -84,7 +84,7 @@ Note (Jorge): `docker-compose up` works for me, but there is no automated refres
 
 run locally:
 
-1. `bundle exec rake servequick`
+1. `rake servequick`
 
 In case of other problems, refer to the [troubleshooting section](#troubleshooting).
 
