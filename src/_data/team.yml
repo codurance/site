@@ -721,3 +721,21 @@
   linkedin: john-rihana-861b27a6
   email: john.rihana@codurance.com
   office: london
+
+- id: domingo_espinosa
+  name: Domingo Espinosa
+  image: /assets/custom/img/team/domingo_espinosa.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Domingo Espinosa is a software developer with 10 years of experience in different companies and sectors.He spent last years works in eHealth Software Solutions with Java.</p>
+      <p>In the university he was very involved in the Junior Company of Gran Canaria, GCC, occupying different roles and positions, even becoming its president.</p>
+      <p>When he finished his degree, he started working with a colleague developing software for some companies on the island. Looking for a new approach from his career, he move to Madrid and after to Barcelona.</p>
+      <p>After some years working in different companies, and after some meetups, he discovers that he can be improved as a programmer, and that there is a better way to make code and program.</p>
+      <p>In the last year he has discovered Software Craftsmanship world. During this last year he has tried to follow this path in his company.</p>
+      <p>When he discovered the Codurance apprentice program, he decided to apply and be able to fulfill the dream of being a Craftsman, and in the future be able to guide others and transmit their knowledge.</p>
+      <p>Because since he has discovered the Software Craftsmanship world, he believes that there is a better way to deal with software development.</p>
+      <p>In his spare time, Domingo is dedicated to training for triathlons and open waters swing, he likes to spend time with his family. He also likes to collect Funkos and comics.</p>
+  github: DomingoEspinosa
+  twitter: gornovah
+  email: domingo.espinosa@codurance.com
+  office: barcelona
