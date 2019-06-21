@@ -736,7 +736,7 @@
   email: ruth.diaz@codurance.com
   office: barcelona
 
-  - id: domingo_espinosa
+- id: domingo_espinosa
   name: Domingo Espinosa
   image: /assets/custom/img/team/domingo_espinosa.jpg
   role: Apprentice
