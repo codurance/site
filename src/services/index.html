@@ -6,21 +6,42 @@ title: Services
 <!-- Hero -->
 <section class="services-hero height-is-based-on-content">
   <div class="container g-z-index-1 g-py-100">
-    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">Quality software, professionally delivered</h1>
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">Quality software, Professionally Delivered</h1>
     <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
         <p class="services-hero-sub-title mb-0">We coach, we advise, we deliver</p>
     </div>
   </div>
 </section>
-  <!-- Our Expertise -->
-  <div class="section gray-section">
+
+  <!-- SC PIONEERS 2 -->
+  <section class="container gray-section g-pt-40 g-pb-20">
+      <div class="row">
+        <div class="col-lg-6 g-mb-40">
+          <img class="img-fluid" src="{{ '/assets/custom/img/sandro-pioneer.jpg' | prepend: site.baseurl }}" alt="Pioneers">
+        </div>
+
+        <div class="col-lg-6 g-mb-60">
+          <div class="mb-2">
+            <h2 class="h3 g-color-black text-uppercase mb-2">We are Software Craftsmanship pioneers</h2>
+            <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+          </div>
+          <div class="mb-5">
+            <p class="mb-5">We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.</p>
+            <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="#effective-delivery">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- OFFERINGS -->
+  <div class="section">
       <div class="container">
   
         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center">
-            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">We are Software Craftsmanship pioneers</h2>
+            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">Our offerings</h2>
         </div>
         <div class="lead g-mb-20 text-center">
-            We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
+            Our offerings and expertise are based on a solid core of Software Craftsmanship values, XP Practices, a Devops  Culture, and Agile Processes.
         </div>
         <div class="row">
             <div class="col-lg-4 align-self-center g-mb-30">
@@ -85,8 +106,7 @@ title: Services
   
             <div class="col-lg-4 align-self-center g-mb-30">
               <div class="g-px-10">
-                <img class="img-fluid" 
-                src="{{ '/assets/custom/img/offering-circle.png' | prepend: site.baseurl }}" alt="Offerings circle">
+                <img class="img-fluid" src="{{ '/assets/custom/img/offering-circle.png' | prepend: site.baseurl }}" alt="Offerings circle">
               </div>
             </div>
           </div>
@@ -206,6 +226,9 @@ title: Services
 
     </div>
   </div>
+
+<!-- Clients-->
+
 
   <!-- Clients who benefitted from Effective Delivery -->
   {% include_relative _includes/clients_section.html title="services.effective-delivery.clients-title" filter="effective_delivery" %}
