@@ -221,10 +221,18 @@ title: Company
             <![endif]-->
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
             <script>
-hbspt.forms.create({
-  portalId: "3042464",
-  formId: "fc98f934-21cd-4f2a-b427-f8cf1ce3b6bc"
-});
+            hbspt.forms.create({
+              portalId: "3042464",
+              formId: "fc98f934-21cd-4f2a-b427-f8cf1ce3b6bc",
+              onFormSubmit: function() {
+                              ga('send', {
+                                hitType: 'event',
+                                eventCategory: 'traininglead',
+                                eventAction: 'submit',
+                                eventLabel: 'companypage'
+                              });
+                        },
+            });
             </script>
           </div>
         </div>
