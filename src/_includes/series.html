@@ -5,16 +5,19 @@
     <h2>The whole series:</h2>
     </p>
     <ol>
-    {% for post in site.posts reversed %}
-    {% if post.series == page.series %}
-        <li>
-        {% if page.url == post.url %}
-            {{post.title}}
-        {% else %}
-             <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
-        {% endif %}
-        </li>
-    {% endif %}
+    {% for collection in site.collections %}
+        {% assign posts = site[collection.label] | sort:'date' %}
+        {% for post in posts %}
+            {% if post.series == page.series %}
+            <li>
+                {% if page.url == post.url %}
+                    {{post.title}}
+                {% else %}
+                    <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+                {% endif %}
+            </li>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
     </ol>
 </div>
