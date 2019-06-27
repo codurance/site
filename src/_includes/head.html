@@ -1,4 +1,4 @@
-<title>{% if page.title %}{{ page.title }}{% else %}Software Craftsmanship and Agile Development{% endif %} | Codurance | Craft at Heart | London | Barcelona</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Software Craftsmanship and Agile Development{% endif %} | Codurance | Craft at Heart | London | Barcelona</title>
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,6 +110,13 @@
 
     ga('create', '{% t analytics.google-id %}', 'codurance.com');
     ga('set', 'forceSSL', true);
+
+    // code for installing Google Tag Manager
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WMKBC5G');
 
     window.googleAnalyticsEvents = { environment: {ga:ga}, functions: []};
     // fire all events at onload/resize - see _includes/foot.html
