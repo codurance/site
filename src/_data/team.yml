@@ -742,4 +742,16 @@
   twitter: gornovah
   email: domingo.espinosa@codurance.com
   office: barcelona
+
+- id: damian_pumar
+  name: Damián Pumar
+  image: /assets/custom/img/team/damian_pumar.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Damián is a fan of clean code and design patterns, he loves to read code and collaborate with open source.</p>
+      <p>He has been working on the .NET stack for several years developing desktop and web applications. Before joining Codurance, he worked as the technical leader, also he has given training courses teaching and promoting best software development practices.</p>
+      <p>In his spare time he likes hang out with his friends and listen music.</p>
+  github: damianpumar
+  email: damian.pumar@codurance.com
+  office: barcelona
   
