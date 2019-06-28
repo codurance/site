@@ -120,7 +120,7 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 # Troubleshooting
 
-## Problems in docker
+## Problem with ruby dependencies in docker
 If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
 
 This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
@@ -132,6 +132,35 @@ docker system prune -a
 ```
 
 After this the next docker operation will download the correct image.
+
+## Problem with files permissions in docker (linux)
+
+When using `selinux` (e.g. on Fedora) you may encounter an error that a mounted file cannot be accessed from a docker container.
+
+Example error:
+
+```
+$ docker-compoe up
+Starting site_site_1 ... done
+Attaching to site_site_1
+site_1  | /usr/local/bundle/gems/bundler-1.16.6/lib/bundler/definition.rb:33:in `build': /usr/local/src/Gemfile not found (Bundler::GemfileNotFound)
+```
+
+Problem is with permissions for mounted files and folders.
+To check the files permissions inside container run:
+
+```
+$ docker-compose run site ls -la
+-??????????  ? ?    ?        ?            ? Gemfile
+-??????????  ? ?    ?        ?            ? Rakefile
+-rw-rw-r--.  1 root root  6269 Jun 28 13:07 README.md
+```
+
+If you see questions marks like in the example above for the mounted files it could mean that selinux prohibits docker from accessing them from your disk.
+
+To fix this problem change selinux policies for the whole project:
+
+    sudo chcon -Rt svirt_sandbox_file_t site/
 
 ## Header files for ruby not found
 
