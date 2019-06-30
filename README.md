@@ -140,9 +140,8 @@ When using `selinux` (e.g. on Fedora) you may encounter an error that a mounted 
 Example error:
 
 ```
-$ docker-compoe up
+$ docker-compose up
 Starting site_site_1 ... done
-Attaching to site_site_1
 site_1  | /usr/local/bundle/gems/bundler-1.16.6/lib/bundler/definition.rb:33:in `build': /usr/local/src/Gemfile not found (Bundler::GemfileNotFound)
 ```
 
