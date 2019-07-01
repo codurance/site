@@ -13,7 +13,7 @@ tags:
 ---
 
 # Our London Office Has Moved!!!!
-## 3 Sutton Lane, London, EC1M 5PU
+## New Address: Codurance Ltd, 3 Sutton Lane, London, EC1M 5PU
 
 We've been hard at work finding a new London office space that caters for the growth of the company and also provides us with a diverse space. 
 
