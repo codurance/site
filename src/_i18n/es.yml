@@ -141,9 +141,14 @@ publications-post:
 services:
   title: Software de calidad entregado efectivamente
   subtitle: Lideres reconocidos en continuous delivery y prácticas de calidad y pericia.
+  we-acd: We advise, we coach, we deliver
+  software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
+  we-advise-subtitle: Te asesoramos en la entrega de Software de calidad de forma efectiva.
+  we-coach-subtitle: Te entrenamos en habilidades de diseño de Software y delivery.
+  we-deliver-subtitle: Entregamos soluciones de Software de calidad.
   learn-more: Más información
-  expert-advice:
-    title: Consejo experto
+  we-advise:
+    title: We advise
     subtitle: Para saber como puedes mejorar es crítico entender tus competencias actuales de delivery.
     body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica.
       Te proveeremos con directrices técnicas y programas de coaching para ayudar a tu organización
@@ -171,12 +176,15 @@ services:
         Invertir en las habilidades de tu gente ayudara a reducir esta brecha.
         Ofrecemos formación y coaching en prácticas XP
         (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
-    clients-title: Clientes que han recibido consejo experto
-  training:
-    title: ¿Estas buscando formación?
-    body: Ayudamos a equipos en cualquier fase de un proyecto donde se puedan beneficiar de formación focalizada.
-  effective-delivery:
-    title: Entrega efectiva
+  we-coach:
+    title: We coach
+    body: Nuestros cursos ayudan a tu a equipo a mejorar en prácticas XP, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development y muchas otras prácticas técnicas.
+    trainings:
+      title1: Crafting code
+      title2: Serverless Architecture con AWS
+      title3: Y más...
+  we-deliver:
+    title: We deliver
     subtitle: Tenemos las habilidades de entrega de software para ayudarte a entregar tus objetivos de negocio.
     body: Nuestros equipos expertos mejoraran tu software y proceso de entrega hacia entregas
       más frecuentes y continous delivery mientras nuestros equipos de feature tienen las capacidades
@@ -195,14 +203,11 @@ services:
         Nuestro equipo de technical delivery se encargara de esto por ti para que puedas concentrarte en
         desarrollar las características que tu negocio necesita.
     clients-title: Clientes que se han beneficiado de entregas más efectivas
+  our-clients:
+    title: Nuestros clientes
   our-expertise:
     title: Nuestra experiencia
-    software-crasftsmanship: Software Craftsmanship
-    agile-and-lean-processes: Agile and Lean Processes
-    continuous-delivery: Continuous Delivery
-    extreme-programming: Extreme Programming
-    devops-culture: DevOps Culture
-    technology-focused: Technology Focused
+    subtitle: Nuestra oferta y experiencia se basan en valores Software Craftmanship, en prácticas XP, en cultura Devops y en procesos Agile.
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar como podemos colaborar.
