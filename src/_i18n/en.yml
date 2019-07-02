@@ -202,12 +202,6 @@ services:
   our-expertise:
     title: Our Expertise
     subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship value, XP Practices, a Devops culture, and Agile Processes.
-    software-crasftsmanship: Software Craftsmanship
-    agile-and-lean-processes: Agile and Lean Processes
-    continuous-delivery: Continuous Delivery
-    extreme-programming: Extreme Programming
-    devops-culture: DevOps Culture
-    technology-focused: Technology Focused
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.
