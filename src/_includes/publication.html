@@ -17,8 +17,7 @@
                 <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
             </div>
         </div>
-                <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
-        
+        <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
     </div>
 </section>
 
@@ -36,9 +35,21 @@
                         {% include publication_cookie_message.html %}
                     {% endif %}
                 </img>
-                {% endif %} 
+                {% endif %}
                 <div id="js-publication-content">
-                    {{ content }}
+                    {% assign paragraphs = content | split: "<p>" %}
+                    {% assign paragraph_count = paragraphs | size %}
+                    {% if paragraph_count < 3 %}
+                        {{content}}
+                        {% include related_publications.html %}
+                    {% else %}
+                        {% for paragraph in paragraphs %}
+                            {% if forloop.index0 == 2 %}
+                                {% include related_publications.html %}
+                            {% endif %}
+                            <p>{{paragraph}}
+                        {% endfor %}
+                    {% endif %}
                 </div>
 
                 {% if page.canonical %}
