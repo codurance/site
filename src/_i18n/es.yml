@@ -147,6 +147,7 @@ services:
   we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
   we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más información
+  see-more: Ver Más
   we-advise:
     title: We advise
     subtitle: Para saber como puedes mejorar es crítico entender tus competencias actuales de delivery.

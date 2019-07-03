@@ -148,6 +148,7 @@ services:
   we-coach-subtitle: We coach software design and delivery skills.
   we-deliver-subtitle: We deliver quality software solutions.
   learn-more: Learn More
+  see-more: See More
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
