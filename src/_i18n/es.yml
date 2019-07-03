@@ -140,12 +140,12 @@ publications-post:
    date_title: Publicado
 services:
   title: Software de calidad entregado efectivamente
-  subtitle: Lideres reconocidos en continuous delivery y prácticas de calidad y pericia.
+  subtitle: Lideres reconocidos en continuous delivery y prácticas de calidad y habilidad.
   we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
-  we-advise-subtitle: Te asesoramos en la entrega de Software de calidad de forma efectiva.
-  we-coach-subtitle: Te entrenamos en habilidades de diseño de Software y delivery.
-  we-deliver-subtitle: Entregamos soluciones de Software de calidad.
+  software-craftsmanship-pioneers: Somos pioneros en software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
+  we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.
+  we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
+  we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más información
   we-advise:
     title: We advise
@@ -207,7 +207,7 @@ services:
     title: Nuestros clientes
   our-expertise:
     title: Nuestra experiencia
-    subtitle: Nuestra oferta y experiencia se basan en valores Software Craftmanship, en prácticas XP, en cultura Devops y en procesos Agile.
+    subtitle: Nuestra oferta y experiencia se basan en valores de Software Craftmanship, en prácticas XP, en cultura DevOps y en procesos Agile.
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar como podemos colaborar.
