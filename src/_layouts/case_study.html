@@ -14,20 +14,14 @@ layout: default
 
 <section class="container g-pt-100 g-pb-70">
     <div class="row">
-        <!-- <div class="col-md-8">
-            <div class="g-mb-30">
-                
-            </div>
-            <div class="g-mb-30">
-                <h2 class="h2 g-color-black g-font-weight-700 mb-4">Our work</h2>
-                
-            </div>
-        </div> -->
-
-        
-
 
         <div class="col-md-8 g-mb-30">
+
+            <span class="d-block g-font-weight-600 g-font-size-20 mb-2">Our work</span>
+            <p class="g-color-primary g-color-primary--before g-color-primary--after g-font-weight-600 g-font-size-30 g-line-height-1_8 mb-5">
+                {% t projects.{{ page.identifier }}.metadescription %}
+            </p>
+
             <span class="d-block g-font-weight-600 g-font-size-20 mb-2">The Project</span>
             <h2 class="h1 g-color-black g-font-weight-700 mb-4">The Challenge</h2>
             <p class="lead">{% t projects.{{ page.identifier }}.the_challenge %}</p>    
@@ -52,10 +46,10 @@ layout: default
                 <p class="lead">{% t projects.{{ page.identifier }}.intro %}</p>
             </div>
 
-            <div class="mb-5">
+            <!-- <div class="mb-5">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-3">Our work</h3>
                 <p class="lead">{% t projects.{{ page.identifier }}.metadescription %}</p>
-            </div>
+            </div> -->
 
             <div class="mb-5">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-3">Services:</h3>
