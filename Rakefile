@@ -1,13 +1,13 @@
 task :buildprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_prb.yml --trace --lsi'
 end
 
 task :buildesprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination output/_site_es/'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination output/_site_es/ --lsi'
 end
 
 task :buildenprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml,build/config/_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml,build/config/_config_prb.yml --trace --lsi'
 end
 
 multitask serve:      [:_build_en,       :_build_es,       :_ruby_serve]
