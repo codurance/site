@@ -66,13 +66,13 @@ footer-latest_blog:
    title: Latest Blogs
 footer-useful_links:
    title: Useful Links
-   link_1_title: Expert Advice
-   link_2_title: Effective Delivery
-   link_3_title: Training
-   link_4_title: Careers
-   link_5_title: About us
-   link_6_title: Privacy policy
-   link_7_title: Cookie policy
+   we-advise: We advise
+   we-coach: We coach
+   we-deliver: We deliver
+   careers: Careers
+   about-us: About us
+   privacy-policy: Privacy policy
+   cookie-policy: Cookie policy
 footer-contact:
    title: Contact Us
    phone_title: Phone
