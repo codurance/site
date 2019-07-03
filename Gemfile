@@ -11,6 +11,7 @@ gem 'therubyracer' # undeclared dependency of jekyll-less
 gem 'rdiscount'
 gem 'jekyll-sitemap'
 gem 'jekyll-multiple-languages-plugin'
+gem 'classifier-reborn'
 
 gem 'rspec'
 
