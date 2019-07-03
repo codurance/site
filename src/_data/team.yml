@@ -621,14 +621,15 @@
 - id: jorge_viana
   name: Jorge Viana
   image: /assets/custom/img/team/jorge_viana.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Jorge had his first computer at around the age of 10, a Sinclair ZX Spectrum with 48 KB of memory – one never forgets that.</p>
     <p>At first he tought that personal computers were made to play games, but fortunately the computer came with a manual to a programming language (BASIC) with simple and fun examples, and this changed his live forever.</p>
     <p>He tried to learn as much as he could on his own, and later when he arrived at high school he signed up for some classes with computer related topics.</p>
     <p>After finishing high school he had to put his passion on hold for a while and he worked for many years in many different things until he had the opportunity to go to the university to study computer science.</p>
     <p>Once he got the degree he started to work as a software developer only to find out that most of what we do is not science rather a complete mess and that there must be a better way to develop software.</p>
-    <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn and work alone? He is delighted that Codurance took him as an apprentice and he aspires to become a software craftsman.</p>
+    <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn or work alone? He then joined Codurance where he found people sharing the same values and trying to make a difference in the software industry.</p>
+  github: jorgeviana
   office: barcelona
 
 - id: aurelija_zubaviciute
@@ -741,5 +742,17 @@
   github: DomingoEspinosa
   twitter: gornovah
   email: domingo.espinosa@codurance.com
+  office: barcelona
+
+- id: damian_pumar
+  name: Damián Pumar
+  image: /assets/custom/img/team/damian_pumar.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Damián is a fan of clean code and design patterns, he loves to read code and collaborate with open source.</p>
+      <p>He has been working on the .NET stack for several years developing desktop and web applications. Before joining Codurance, he worked as the technical leader, also he has given training courses teaching and promoting best software development practices.</p>
+      <p>In his spare time he likes hang out with his friends and listen music.</p>
+  github: damianpumar
+  email: damian.pumar@codurance.com
   office: barcelona
   
