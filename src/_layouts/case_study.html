@@ -2,7 +2,89 @@
 layout: default
 ---
 
-<div class="container content-lg">
+<!-- Hero -->
+<section class="services-hero height-is-based-on-content">
+    <div class="container g-z-index-1 g-py-100 text-center">
+        <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{{ page.company-name }} & Codurance</h1>
+        <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+        <p class="services-hero-sub-title mb-0">{% t projects.{{ page.identifier }}.metaheader %}</p>
+        </div>
+    </div>
+</section>
+
+<section class="container g-pt-100 g-pb-70">
+    <div class="row">
+        <!-- <div class="col-md-8">
+            <div class="g-mb-30">
+                
+            </div>
+            <div class="g-mb-30">
+                <h2 class="h2 g-color-black g-font-weight-700 mb-4">Our work</h2>
+                
+            </div>
+        </div> -->
+
+        
+
+
+        <div class="col-md-8 g-mb-30">
+            <span class="d-block g-font-weight-600 g-font-size-20 mb-2">The Project</span>
+            <h2 class="h1 g-color-black g-font-weight-700 mb-4">The Challenge</h2>
+            <p class="lead">{% t projects.{{ page.identifier }}.the_challenge %}</p>    
+
+            
+            <h2 class="h1 g-color-black g-font-weight-700 mb-4">Approach</h2>
+            <p>{% t projects.{{ page.identifier }}.our_sc_approach %}</p>
+
+
+            <h2 class="h1 g-color-black g-font-weight-700 mb-4">Outcome</h2>
+            <p>{% t projects.{{ page.identifier }}.outcome %}</p>
+
+        </div>
+
+        <div class="col-md-4 g-mb-30">
+            <div class="mb-5">
+                <img class="img-fluid bordered" src="{{ site.baseurl }}/assets/custom/img/case-study/{{ page.image-name }}.png" alt="{{ page.identifier }} logo"/>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-3">About {{ page.company-name }}</h3>
+                <p class="lead">{% t projects.{{ page.identifier }}.intro %}</p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-3">Our work</h3>
+                <p class="lead">{% t projects.{{ page.identifier }}.metadescription %}</p>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-3">Services:</h3>
+                <ul class="list-unstyled">
+                    {% assign clients = site.data.clients | where:'name', page.company-name %}
+                    {% for client in clients %}
+                        {% for service in client.services %}
+                        <li class="my-3">
+                            <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                            <span class="g-color-gray-dark-v4 g-text-underline--none--hover">{% t clients.{{service}}_title %}</span>
+                        </li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-3">Date:</h3>
+                <span class="d-block">
+                    <i class="align-middle g-color-gray-dark-v5 g-font-size-24 g-pos-rel g-top-1 mr-2 icon-finance-078 u-line-icon-pro"></i>
+                    27 May 2017
+                </span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- <div class="container content-lg">
     <div class="title-v1">
         <h2>{{ page.company-name }} & Codurance</h2>
         <p>{% t projects.{{ page.identifier }}.metaheader %}</p>
@@ -50,4 +132,4 @@ layout: default
            <p>{% t projects.{{ page.identifier }}.outcome %}</p>
         </div>
     </div>
-</div>
+</div> -->
