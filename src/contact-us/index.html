@@ -62,24 +62,7 @@ title: Contact Us
             <!-- End Google Map -->
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 offset-md-3 offset-sm-3">
-            <!-- Business Hours -->
-            <h3>{% t company-contact-form.title %}</h3>
-            <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}"
-              target="_blank">{% t office.email %}</a></p><br />
-              <!--[if lte IE 8]>
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                <![endif]-->
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                    portalId: "3042464",
-                    formId: "fc98f934-21cd-4f2a-b427-f8cf1ce3b6bc"
-                  });
-                </script>
-          </div>
-        </div>
+  {% include contact_form.html %}
       </div>
     </div>
   </div>
