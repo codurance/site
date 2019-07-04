@@ -210,9 +210,18 @@ title: Company
             <h3>{% t company-contact-form.title %}</h3>
             <p>{% t company-contact-form.offices_introduction %}:
             <ul>
-              <li><b>{%t office.central %}</b>: {{ site.office.phone.lnd }}</li>
-              <li><b>Barcelona</b>: {{ site.office.phone.bcn }}</li>
-              <li><b>{%t office.man %}</b>: {{ site.office.phone.man }}</li>
+                <li>
+                    <b>{% t offices.ldn.city %}</b>:
+                    {% t offices.ldn.phone %}
+                </li>
+                <li>
+                    <b>{% t offices.bcn.city %}</b>:
+                    {% t offices.bcn.phone %}
+                </li>
+                <li>
+                    <b>{% t offices.man.city %}</b>:
+                    {% t offices.man.phone %}
+                </li>
             </ul>
             </p>
             <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>

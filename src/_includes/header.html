@@ -28,26 +28,26 @@
             <!-- Navigation -->
             <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm g-mr-25--lg" id="navBar">
               <ul class="nav navbar-nav text-uppercase g-font-weight-600 mr-auto">
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
                   <a href="{{ '/clients' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.clients %}</a>
                 </li>
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
                   <a href="{{ '/services' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.services%}</a>
                 </li>
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
                   <a href="{{ '/publications' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.publications%}</a>
                 </li>
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
-                  <a href="{{ '/events' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.events%}</a>
-                </li>
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
                   <a href="{{ '/company' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.company%}</a>
                 </li>
-                <li class="nav-item g-mx-15--lg g-mx-25--xl">
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
                   <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
                 </li>
+                <li class="nav-item g-mx-15--lg g-mx-20--xl">
+                    <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.contact%}</a>
+                </li>
                 {% for domain in site.domains %}
-                  <li class="nav-item g-mx-20--lg g-mx-25--xl g-hidden-sm-up">
+                  <li class="nav-item g-mx-20--lg g-mx-20--xl g-hidden-sm-up">
                     <a  href="{{ domain[1] }}{{ page.url }}" class="nav-link px-0">{{ domain[0] | upcase }}</a>
                   </li>
                 {% endfor %}
