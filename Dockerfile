@@ -1,4 +1,4 @@
-FROM codurance/website_build_base:latest
+FROM codurance/website_build_base:experimental
 
 COPY . .
 

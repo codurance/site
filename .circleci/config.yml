@@ -16,7 +16,7 @@ jobs:
   build:
     <<: *common_info
     docker:
-      - image: codurance/website_build_base
+      - image: codurance/website_build_base:experimental
     steps:
       - run: echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
       - checkout
@@ -48,7 +48,7 @@ jobs:
       - run: build/_utility/deploy_en_assets.sh
       - run: build/_utility/deploy_es_site.sh
       - run: build/_utility/deploy_es_media.sh
-      - run: build/_utility/deploy_es_assets.sh  
+      - run: build/_utility/deploy_es_assets.sh
   pullrequest:
     <<: *common_info
     <<: *deploy_info
