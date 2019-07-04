@@ -1,0 +1,143 @@
+---
+layout: default
+title: Our Story
+---
+<!--=== Content Part ===-->
+
+<section class="services-hero height-is-based-on-content">
+  <div class="container g-z-index-1 g-py-100 text-center">
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">Our Story</h1>
+    <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+    </div>
+  </div>
+</section>
+
+<div class="container content">
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="margin-bottom-40">
+        <a id="whoarewe"></a>
+        <div class="headline">
+          <h2>{% t company-who_are_we.title %}</h2>
+        </div>
+        <div>
+          {% t company-who_are_we.subtitle %}
+        </div>
+      </div>
+      <div class="margin-bottom-40">
+        <a id="ourculture"></a>
+        <div class="headline">
+          <h2>{% t company-our_culture.title  %}</h2>
+        </div>
+        {% t company-our_culture.subtitle %}
+      </div>
+      <div class="margin-bottom-40">
+        <a id="howwework"></a>
+        <div class="headline">
+          <h2>{% t company-how_we_work.title  %}</h2>
+        </div>
+        <p>{% t company-how_we_work.subtitle  %}</p>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="block-centered equalheight">
+              <i class="icon-heart icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-software_craftsmanship.title  %}</h3>
+              <p>{% t company-how_we_work-software_craftsmanship.subtitle  %}</p>		            
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-paper-plane icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-agile_and_lean.title %}</h3>
+              <p>{% t company-how_we_work-agile_and_lean.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-reload icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-continous_delivery.title %}</h3>
+              <p>{% t company-how_we_work-continous_delivery.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-control-forward icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-xp.title %}</h3>
+              <p>{% t company-how_we_work-xp.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-settings icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-devops.title %}</h3>
+              <p>{% t company-how_we_work-devops.subtitle %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="block-centered equalheight">
+              <i class="icon-screen-desktop icon-color-red no-border"></i>
+              <h3>{% t company-how_we_work-technology.title %}</h3>
+              <p>{% t company-how_we_work-technology.subtitle %}</p>			        
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <a id="contactus" class="contact-section"></a>
+            <div class="headline">
+              <h2>{% t company-contact.title %}</h2>
+            </div>                        
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <!-- Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1241.2376771170846!2d-0.10212284154412113!3d51.52284059490941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b5120a02e0d%3A0xa3cd99412c91cea!2s3rd+Floor%2C+3+Sutton+Ln%2C+Farringdon%2C+London+EC1M+5PU!5e0!3m2!1sen!2suk!4v1560424088154" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2993.3761207556017!2d2.1571825!3d41.3876375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28e9bc26acb%3A0x366a95b98e89fe6e!2sCodurance!5e0!3m2!1sen!2ses!4v1510071069861" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2374.428671684242!2d-2.2476929!3d53.4786700!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1a89dfbec21%3A0x960b23d326691bce!2sCodurance!5e0!3m2!1sen!2suk!4v1532348506836" width="600" height="450" frameborder="0" style="border:0" class="map"></iframe>
+            <!-- End Google Map -->
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <!-- Business Hours -->
+            <h3>{% t company-contact-form.title %}</h3>
+            <p>{% t company-contact-form.offices_introduction %}:
+            <ul>
+                <li>
+                    <b>{% t offices.ldn.city %}</b>:
+                    {% t offices.ldn.phone %}
+                </li>
+                <li>
+                    <b>{% t offices.bcn.city %}</b>:
+                    {% t offices.bcn.phone %}
+                </li>
+                <li>
+                    <b>{% t offices.man.city %}</b>:
+                    {% t offices.man.phone %}
+                </li>
+            </ul>
+            </p>
+            <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
+            <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+            hbspt.forms.create({
+              portalId: "3042464",
+              formId: "fc98f934-21cd-4f2a-b427-f8cf1ce3b6bc",
+              onFormSubmit: function() {
+                              ga('send', {
+                                hitType: 'event',
+                                eventCategory: 'traininglead',
+                                eventAction: 'submit',
+                                eventLabel: 'companypage'
+                              });
+                        },
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
