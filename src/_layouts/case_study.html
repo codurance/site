@@ -7,7 +7,7 @@ layout: default
     <div class="container g-z-index-1 g-py-100 text-center">
         <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{{ page.company-name }} & Codurance</h1>
         <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
-        <p class="services-hero-sub-title mb-0">{% t projects.{{ page.identifier }}.metaheader %}</p>
+        <p class="services-hero-sub-title mb-0">{% t projects.{{ page.identifier }}.short_description %}</p>
         </div>
     </div>
 </section>
@@ -19,7 +19,7 @@ layout: default
 
             <span class="h4 d-block g-font-weight-600 mb-2">Our work</span>
             <p class="h2 g-color-primary g-color-primary--before g-color-primary--after g-font-weight-600 g-line-height-1_8 mb-5">
-                {% t projects.{{ page.identifier }}.metadescription %}
+                {% t projects.{{ page.identifier }}.long_description%}
             </p>
 
             <span class="h4 d-block g-font-weight-600 mb-2">The Project</span>
@@ -41,7 +41,7 @@ layout: default
 
             <div class="mb-5">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-3">About {{ page.company-name }}</h3>
-                <p class="lead">{% t projects.{{ page.identifier }}.intro %}</p>
+                <p class="lead">{% t projects.{{ page.identifier }}.client_description %}</p>
             </div>
 
             <div class="mb-5">
