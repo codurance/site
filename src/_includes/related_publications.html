@@ -1,21 +1,15 @@
-<div class="float-right g-max-width-250 g-mr-minus-100--lg ml-5">
-  <h6 class="g-font-weight-600 text-uppercase mb-4">
-    {% t post-related_posts.title%}
-  </h6>
-  <ul class="list-unstyled g-brd-y g-brd-gray-light-v3 g-font-size-13 py-4">
-    <li>
-      {% for post in site.related_posts %}
-        <article class="media mb-3">
-          <img src="{{ post.image.src | prepend: site.baseurl }}" class="w-25 mr-3">
-          <div class="media-body align-self-center">
-            <span class="g-color-black g-font-weight-600 g-font-size-12 mb-0">
-              <a class="u-link-v5 g-color-black g-color-primary--hover" href="{{ post.url | prepend: site.baseurl }}">
-                {{post.title}}
-              </a>
-            </span>
-          </div>
-        </article>
+<section class="g-bg-gray-light-v5">
+  <div class="container g-py-50">
+
+    <h6 class="g-color-black g-font-weight-600 text-center text-uppercase mb-5">{% t post-related_posts.title%}</h6>
+
+    <div class="row row-eq-height">
+      {% assign related_posts = site.related_posts | slice: 0, 3 %}
+
+      {% for post in related_posts %}
+        {% include post.html post=post %}
       {% endfor %}
-    </li>
-  </ul>
-</div>
+
+    </div>
+  </div>
+</section>
