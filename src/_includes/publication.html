@@ -37,19 +37,7 @@
                 </img>
                 {% endif %}
                 <div id="js-publication-content">
-                    {% assign paragraphs = content | split: "<p>" %}
-                    {% assign paragraph_count = paragraphs | size %}
-                    {% if paragraph_count < 3 %}
-                        {{content}}
-                        {% include related_publications.html %}
-                    {% else %}
-                        {% for paragraph in paragraphs %}
-                            {% if forloop.index0 == 2 %}
-                                {% include related_publications.html %}
-                            {% endif %}
-                            <p>{{paragraph}}
-                        {% endfor %}
-                    {% endif %}
+                    {{content}}
                 </div>
 
                 {% if page.canonical %}
@@ -70,6 +58,9 @@
         </div>
     </div>
 </section>
+
+{% include related_publications.html %}
+
 <section class="container g-pt-50">
     <div class="row justify-content-center">
         <div class="col-lg-9">
