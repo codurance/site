@@ -39,8 +39,10 @@ sections:
    services: Servicios
    publications: Publicaciones
    events: Eventos
-   company: Empresa
    careers: Carreras
+   about-us: Sobre nosotros
+   our-story: Nuestra historia
+   our-people: Nuestra gente
    contact: Contáctanos
 index-banner:
    title: Pragmatismo, Habilidad, Transparencia.

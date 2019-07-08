@@ -38,8 +38,10 @@ sections:
    services: Services
    publications: Publications
    events: Events
-   company: Company
    careers: Careers
+   about-us: About Us
+   our-story: Our Story
+   our-people: Our People
    contact: Contact Us
 index-banner:
    title: Pragmatic, Skilled, Transparent.
