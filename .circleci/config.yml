@@ -20,9 +20,7 @@ jobs:
     steps:
       - run: echo 'export FOLDER_NAME=site-${CIRCLE_BRANCH}' >> $BASH_ENV
       - checkout
-      - run:
-          command: build/_utility/build_site_prb.sh $FOLDER_NAME
-          no_output_timeout: 3h
+      - run: build/_utility/build_site_prb.sh $FOLDER_NAME
       - store_artifacts:
           path: /root/codurance/site/coverage
           destination: rspec-coverage
