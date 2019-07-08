@@ -12,7 +12,7 @@ title: Our People
 <!-- Hero -->
 <section class="services-hero height-is-based-on-content">
   <div class="container g-z-index-1 g-py-100 text-center">
-    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">Our People</h1>
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{% t our-people.title %}</h1>
     <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
     </div>
   </div>
@@ -140,12 +140,12 @@ title: Our People
   <div class="container">
       <div class="row">
         <div class="col-md-9 align-self-center">
-          <h3 class="h3">We are hiring</h3>
-          <p class="lead g-mb-20 g-mb-0--md g-color-white">Are you looking for autonomy, mastery and purpose in your career? We are looking for people that share the same values of pragmatism, professionalism and transparency that we do.</p>
+          <h3 class="h3">{% t our-people.we-are-hiring.title %}</h3>
+          <p class="lead g-mb-20 g-mb-0--md g-color-white">{% t our-people.we-are-hiring.subtitle %}</p>
         </div>
     
         <div class="col-md-3 align-self-center text-md-right">
-          <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/careers/' | prepend: site.baseurl }}">{%t services.learn-more %}</a>
+          <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/careers/' | prepend: site.baseurl }}">{% t our-people.we-are-hiring.learn-more %}</a>
         </div>
       </div>
   </div>
