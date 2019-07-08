@@ -39,8 +39,10 @@ sections:
    services: Servicios
    publications: Publicaciones
    events: Eventos
-   company: Empresa
    careers: Carreras
+   about-us: Sobre nosotros
+   our-people: Nuestra gente
+   our-story: Nuestra historia
    contact: Contáctanos
 index-banner:
    title: Pragmatismo, Habilidad, Transparencia.
@@ -97,8 +99,9 @@ footer-useful_links:
    we-advise: We advise
    we-coach: We coach
    we-deliver: We deliver
+   our-people: Nuestra gente
+   our-story: Nuestra historia
    careers: Carreras
-   about-us: Acerca de
    privacy-policy: Política de privacidad
    cookie-policy: Política de Cookies
 footer-contact:
@@ -110,6 +113,14 @@ cookie-message:
    view-policy: Ver nuestra Política de Cookies
    accept: Aceptar
    publication-message: Esta publicación utiliza cookies, para verla debe aceptar nuestra política de cookies.
+our-story:
+   title: Nuestra historia
+our-people:
+   title: Nuestra gente
+   we-are-hiring:
+      title: Estamos contratando
+      subtitle: ¿Buscas autonomía, maestría y propósito en tu carrera? Estamos buscando personas que compartan nuestros valores de pragmatismo, profesionalismo y transparencia.
+      learn-more: Más información
 company-who_are_we:
    title: ¿Quiénes somos?
    subtitle: <p>Construimos software bien elaborado y ayudamos a equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3,500 desarrolladores que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
