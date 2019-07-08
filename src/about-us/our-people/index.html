@@ -136,17 +136,4 @@ title: Our People
   </div>
 </div>
 
-<div class="section g-color-white" style="background-color: rgb(24, 84, 102);">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-9 align-self-center">
-          <h3 class="h3">{% t our-people.we-are-hiring.title %}</h3>
-          <p class="lead g-mb-20 g-mb-0--md g-color-white">{% t our-people.we-are-hiring.subtitle %}</p>
-        </div>
-    
-        <div class="col-md-3 align-self-center text-md-right">
-          <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/careers/' | prepend: site.baseurl }}">{% t our-people.we-are-hiring.learn-more %}</a>
-        </div>
-      </div>
-  </div>
-</div>
+{% include_relative _includes/we_are_hiring.html %}
