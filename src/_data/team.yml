@@ -502,18 +502,6 @@
   github: bartomeugm
   office: barcelona
 
-- id: antonio_ruiz
-  name: Antonio Ruiz
-  image: /assets/custom/img/team/antonio_ruiz.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Toni made a change career and found the software development a true passion.</p>
-    <p>He loves learning about software craftsmanship and collaborate with people that shares the same values and willing to learn.</p>
-    <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
-  twitter: __toniruiz
-  github: devtoni
-  office: barcelona
-
 - id: david_gracia
   name: David Gracia
   image: /assets/custom/img/team/david_gracia.jpg
@@ -722,7 +710,7 @@
     <p>In her spare time, She’s a musician (bass player and percussion), and do her tracks at home with Ableton Live.</p>
     <p>She does love games (board games, videogames, RPG games) and technology, She loves to learn and She’s always willing to help and improve the world. She can’t live without coffee.</p>
   linkedin: rdiaztic
-  soundcloud: www.soundcloud.com/jukabox 
+  soundcloud: www.soundcloud.com/jukabox
   email: ruth.diaz@codurance.com
   office: barcelona
 
@@ -755,4 +743,3 @@
   github: damianpumar
   email: damian.pumar@codurance.com
   office: barcelona
-  
