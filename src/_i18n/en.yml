@@ -40,8 +40,8 @@ sections:
    events: Events
    careers: Careers
    about-us: About Us
-   our-story: Our Story
    our-people: Our People
+   our-story: Our Story
    contact: Contact Us
 index-banner:
    title: Pragmatic, Skilled, Transparent.
@@ -98,8 +98,8 @@ footer-useful_links:
    we-advise: We advise
    we-coach: We coach
    we-deliver: We deliver
-   our-story: Our story
    our-people: Our people
+   our-story: Our story
    careers: Careers
    privacy-policy: Privacy policy
    cookie-policy: Cookie policy
