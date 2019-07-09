@@ -165,6 +165,9 @@
   - expert_advice
   services-page: 
     - effective_delivery
+  projects:
+    - page-location: projects/software-craftsmanship-at-aws
+      project-name: AWS
 
 - id: trinitymirror
   name: Trinity Mirror
