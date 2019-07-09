@@ -502,18 +502,6 @@
   github: bartomeugm
   office: barcelona
 
-- id: antonio_ruiz
-  name: Antonio Ruiz
-  image: /assets/custom/img/team/antonio_ruiz.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Toni made a change career and found the software development a true passion.</p>
-    <p>He loves learning about software craftsmanship and collaborate with people that shares the same values and willing to learn.</p>
-    <p>In his spare time he likes to go outside and enjoy the nature, do observational astronomy and practice sports.</p>
-  twitter: __toniruiz
-  github: devtoni
-  office: barcelona
-
 - id: david_gracia
   name: David Gracia
   image: /assets/custom/img/team/david_gracia.jpg
@@ -609,7 +597,7 @@
 - id: gabriele_lippi
   name: Gabriele Lippi
   image: /assets/custom/img/team/gabriele_lippi.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Gabriele discovered his passion for computers and coding during his studies in Philosophy. Deep curiosity and a true passion for knowledge in all its aspects, together with a strong will to learn, brought him to work first in a consultancy company as QA, then as a front-end developer in a start-up, joining the start-up hub Talent Garden, and later to join a firm of data visualization, where he had the opportunity to broaden again his horizons.</p>
     <p>When he came across Software Craftsmanship, he immediately realized that he had found what he was looking for; now he's on his way to become a Software Craftsman.</p>
@@ -621,14 +609,15 @@
 - id: jorge_viana
   name: Jorge Viana
   image: /assets/custom/img/team/jorge_viana.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Jorge had his first computer at around the age of 10, a Sinclair ZX Spectrum with 48 KB of memory – one never forgets that.</p>
     <p>At first he tought that personal computers were made to play games, but fortunately the computer came with a manual to a programming language (BASIC) with simple and fun examples, and this changed his live forever.</p>
     <p>He tried to learn as much as he could on his own, and later when he arrived at high school he signed up for some classes with computer related topics.</p>
     <p>After finishing high school he had to put his passion on hold for a while and he worked for many years in many different things until he had the opportunity to go to the university to study computer science.</p>
     <p>Once he got the degree he started to work as a software developer only to find out that most of what we do is not science rather a complete mess and that there must be a better way to develop software.</p>
-    <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn and work alone? He is delighted that Codurance took him as an apprentice and he aspires to become a software craftsman.</p>
+    <p>He then heard about Agile, XP and Software Craftsmanship and he tried to learn as much as he could on his own, but who wants to learn or work alone? He then joined Codurance where he found people sharing the same values and trying to make a difference in the software industry.</p>
+  github: jorgeviana
   office: barcelona
 
 - id: aurelija_zubaviciute
@@ -721,7 +710,7 @@
     <p>In her spare time, She’s a musician (bass player and percussion), and do her tracks at home with Ableton Live.</p>
     <p>She does love games (board games, videogames, RPG games) and technology, She loves to learn and She’s always willing to help and improve the world. She can’t live without coffee.</p>
   linkedin: rdiaztic
-  soundcloud: www.soundcloud.com/jukabox 
+  soundcloud: www.soundcloud.com/jukabox
   email: ruth.diaz@codurance.com
   office: barcelona
 
@@ -754,4 +743,3 @@
   github: damianpumar
   email: damian.pumar@codurance.com
   office: barcelona
-  

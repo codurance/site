@@ -1,9 +1,36 @@
 office:
-   email: hello@codurance.com
-   lat: "51.523876"
-   lon: "-0.100533"
-   central: London
-   man: Manchester
+  email: hello@codurance.com
+  lat: "51.523876"
+  lon: "-0.100533"
+  central: London
+offices:
+  ldn:
+    city: London
+    address: "3 Sutton Lane,\nEC1M 5PU"
+    phone: +44 207 4902967
+    contact_name: John Rihana
+    contact_phone: +44 207 4902967
+    contact_email: john.rihana@codurance.com
+    contact_image: 'TODO'
+    map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4628276007556!2d-0.10320388349156587!3d51.5230703796377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50c8c7114f%3A0x6245fac5ecb52d7f!2sCodurance!5e0!3m2!1sen!2suk!4v1562144527823!5m2!1sen!2suk'
+  man:
+    city: Manchester
+    address: "2 Mount Street,\nManchester\nM2 5WQ"
+    phone: +44 161 302 6795
+    contact_name: Emma Booth
+    contact_phone: +44 161 302 6795
+    contact_email: emma.booth@codurance.com
+    contact_image: 'TODO'
+    map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2374.428671684242!2d-2.2476929!3d53.4786700!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1a89dfbec21%3A0x960b23d326691bce!2sCodurance!5e0!3m2!1sen!2suk!4v1532348506836'
+  bcn:
+    city: Barcelona
+    address: "Carrer Aragó 208 4º,\n08011 Barcelona"
+    phone: +34 937 82 28 82
+    contact_name: Jack Colemanzo
+    contact_phone: +34 937 82 28 82
+    contact_email: jack.coleman@codurance.com
+    contact_image: 'TODO'
+    map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2993.3761207556017!2d2.1571825!3d41.3876375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28e9bc26acb%3A0x366a95b98e89fe6e!2sCodurance!5e0!3m2!1sen!2ses!4v1510071069861'
 analytics:
   google-id: UA-46289079-1
 sections:
@@ -11,8 +38,10 @@ sections:
    services: Services
    publications: Publications
    events: Events
-   company: Company
    careers: Careers
+   about-us: About Us
+   our-people: Our People
+   our-story: Our Story
    contact: Contact Us
 index-banner:
    title: Pragmatic, Skilled, Transparent.
@@ -66,13 +95,14 @@ footer-latest_blog:
    title: Latest Blogs
 footer-useful_links:
    title: Useful Links
-   link_1_title: Expert Advice
-   link_2_title: Effective Delivery
-   link_3_title: Training
-   link_4_title: Careers
-   link_5_title: About us
-   link_6_title: Privacy policy
-   link_7_title: Cookie policy
+   we-advise: We advise
+   we-coach: We coach
+   we-deliver: We deliver
+   our-people: Our people
+   our-story: Our story
+   careers: Careers
+   privacy-policy: Privacy policy
+   cookie-policy: Cookie policy
 footer-contact:
    title: Contact Us
    phone_title: Phone
@@ -82,6 +112,14 @@ cookie-message:
    view-policy: View our Cookie Policy
    accept: Accept
    publication-message: This publication uses cookies, to watch it you must accept our cookie policy.
+our-story:
+   title: Our Story
+our-people:
+   title: Our People
+   we-are-hiring:
+      title: We are hiring
+      subtitle: Are you looking for autonomy, mastery and purpose in your career? We are looking for people that share the same values of pragmatism, professionalism and transparency that we do.
+      learn-more: Learn More
 company-who_are_we:
    title: Who are we?
    subtitle: <p>We build well-crafted software and help development teams to get better at continuously delivering software through the application of Extreme Programming practices and Software Craftsmanship values. Software Craftsmanship is at the heart of our company. In 2010, the founders started the <a href="http://londonswcraft.com/">London Software Craftsmanship Community (LSCC)</a> which has grown to become the largest and most active Software Craftsmanship community in the world, with more than 3,500 developers that meet a few times a month to share and learn. Codurance was founded in 2013 and inherited the same community spirit. Since 2013, we have been organising <a href="http://socratesuk.org/">SoCraTes UK</a>&mdash;an International Software Craftsmanship Gathering that attracts software craftspeople from all over Europe.
@@ -142,13 +180,16 @@ services:
   title: Quality Software, Effectively Delivered
   subtitle: Recognised industry leaders in driving continuous delivery through
     quality practices and expertise.
+  we-acd: We advise, we coach, we deliver
+  software-craftsmanship-pioneers: We are Software Craftsmanship pioneers. We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
+  we-advise-subtitle: We advise on creating an effective software delivery capability.
+  we-coach-subtitle: We coach software design and delivery skills.
+  we-deliver-subtitle: We deliver quality software solutions.
   learn-more: Learn More
-  expert-advice:
-    title: Expert Advice
-    subtitle: To understand how you can improve, it's critical to understand your current software delivery capability.
-    body: We will review your capability at the process, technology, architecture, practices
-      levels. We will provide technical direction and coaching programmes to help your organisation on its
-      path to sustainable effective software delivery.
+  see-more: See More
+  we-advise:
+    title: We advise
+    subtitle: We advise on creating an effective software delivery capability.
     high-level-consulting:
       title: High-level Consulting
       body: When your software is not evolving with your business, the
@@ -174,15 +215,16 @@ services:
         skills of your people will help to reduce this gap. We provide training and coaching in XP Practices
         (e.g. TDD, Pair Programming, Continuous Integration), Software Design, Clean Code, and Software
         Architecture.
-    clients-title: Clients who received Expert Advice
-  training:
-    title: Looking for training?
-    body: We help teams in any phase of a project where they may benefit from focused training.
-  effective-delivery:
-    title: Effective Delivery
-    subtitle: We have the software delivery capability to help deliver on your business objectives.
-    body: Our expert teams will evolve your existing software and delivery process towards frequent
-      and continuous delivery, whilst our feature teams have the full capability to take you from idea to market.
+  we-coach:
+    title: We coach
+    subtitle: We help teams in any phase of a project where they may benefit from focused training.
+    body: Our training courses help teams get better at XP practices, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.
+    trainings:
+      title1: Crafting code
+      title2: Serverless Architecture using AWS
+      title3: And more...
+  we-deliver:
+    title: We deliver
     feature-delivery:
       title: Feature Delivery Teams
       body: Our teams are experts in XP practices and Continuous Delivery
@@ -195,15 +237,11 @@ services:
         want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
         most challenging aspects of going from monolith to microservices. Our Technical Delivery Team will take
         care of this for you so you can concentrate on building features to meet your business demand.
-    clients-title: Clients who benefitted from more Effective Delivery
+  our-clients:
+    title: Our clients
   our-expertise:
     title: Our Expertise
-    software-crasftsmanship: Software Craftsmanship
-    agile-and-lean-processes: Agile and Lean Processes
-    continuous-delivery: Continuous Delivery
-    extreme-programming: Extreme Programming
-    devops-culture: DevOps Culture
-    technology-focused: Technology Focused
+    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship value, XP Practices, a Devops culture, and Agile Processes.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.
@@ -529,11 +567,11 @@ projects:
     subtitle: Tell us about the project in the form bellow and we'll get back to you soon
   ASOS:
     link-text: Case Study at Asos
-    metadescription: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
-    intro: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
+    long_description: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
+    client_description: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, CI/CD, DevOps, Code Quality, TDD, Extreme Programming, Azure, .NET
-    metaheader: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
+    short_description: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
     subtitle: <p>A multi-staged, multi-team manual deployment process was having a negative impact on the organisations ability to deploy changes frequently.</p>
               <p>Software Craftsmanship was seen as a way to raise overall code quality, whilst providing a platform for the journey to Continuous Delivery.</p>
     about: ASOS is an online fashion retailer, selling cutting-edge fashion and supporting a thriving fashion community Having started as a fashion blog, the brand now offers its clients mobile apps and a magazine in addition to its website offering Last year, ASOS had over 13.4 million active customers.
@@ -547,12 +585,12 @@ projects:
              <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
   Tesco-forecasting:
     link-text: Forecasting Project
-    metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
+    long_description: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
-    metaheader: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
+    short_description: Software Craftsmanship helped Tesco to greatly increase their Supply Chain forecasting accuracy ...
     subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
-    intro: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
+    client_description: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s Supply Chain division would forecast product demand using a legacy mainframe application. Changes were made to the forecasts using external such tools (for instance, spreadsheets), which was having a negative impact on their ability to trace irregularities or opportunities in its warehouses. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
                    <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work in other projects at Tesco.</p>
     our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Working in conjunction with Tesco’s development team in Bangalore, we created a web application that would help demand planners to order the right amount of product from suppliers. The web application was connected to the legacy database through the new custom API.</p>
@@ -560,12 +598,12 @@ projects:
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Tesco-scheduling:
     link-text: Scheduling Project
-    metadescription: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
+    long_description: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
-    metaheader: Codurance helped quickstart the new scheduling system at Tesco
+    short_description: Codurance helped quickstart the new scheduling system at Tesco
     subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
-    intro: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
+    client_description: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s outdated scheduling application for grocery deliveries had limits on the number of deliveries and the features available. In order to optimise the number of vans needed, reduce costs and simplify maintenance, the business needed a new application with an algorithmic solution specifically designed for their needs. This would enable the business to retain the ability to make future feature changes and optimise the delivery schedule based on an improved algorithm.</p>
     our_sc_approach: <p>We began by prototyping a new algorithm for scheduling the delivery of grocery orders and to gradually replace the existing system for more locations. We integrated with the customer-facing website on one side and the third party algorithm on the other, with our time split between rapidly develop features and pairing with other developers to improve their skills.</p>
                      <p>We worked in collaboration between a third party vendor and a partner team in Bangalore to identify to help solve several challenging database integrations. In addition, we spent a few weeks in India to deliver training on Software Design and Test Driven Development.</p>
@@ -573,11 +611,11 @@ projects:
     outcome: <p>We delivered a solution that was tested initially in one location, before being slowly rolled out to replace the existing system on a store by store basis. Our team provided the foundations for Tesco’s development team to move faster in continuously rolling out the solution to more locations and through the continued, incremental deployment of new features.</p>
   Coniq:
     link-text: Case Study at Coniq
-    metadescription: We helped Coniq to deliver their MVPs through the adoption of Agile processes and technical practices.
-    intro: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
+    long_description: We helped Coniq to deliver their MVPs through the adoption of Agile processes and technical practices.
+    client_description: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
     focused: Software Craftsmanship
     keywords: Product Owner, Product Backlog, Scrum, Agile, MVPs, Rally
-    metaheader: We partnered with Coniq to help their development team to deliver quality software more frequently.
+    short_description: We partnered with Coniq to help their development team to deliver quality software more frequently.
     subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project.</p>
     about: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
     the_challenge: <p>Coniq wanted to build an application that, in conjunction with their clients existing EPOS (Electronic Point of Sale) software, would read barcode scans in store to provide their end customer with loyalty points and discounts.</p>
@@ -588,7 +626,7 @@ projects:
                      <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
     outcome: <p>By working closely with the Coniq team and through regular communication, we were able to deliver the MVPs within the budget available for the project. Upon handover, the Coniq team were able to take over full ownership of the project and had the skills and processes in place to work through the remainder of their product backlog.</p>
   AWS:
-    metaheader: Software Craftsmanship helped our team to build an AWS-based, serverless event registration platform for Amazon in just 6 weeks.
+    short_description: Software Craftsmanship helped our team to build an AWS-based, serverless event registration platform for Amazon in just 6 weeks.
     subtitle: <p>Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business.</p>
               <p>Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.</p>
     about: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
@@ -602,3 +640,13 @@ projects:
                      <p>Part of the feature set included a reporting tool to provide the business with detailed reports on the event. We spent time to help train the AWS marketing team on how to use the system.</p>
     outcome: <p>Given the tight feedback loops and real-time interactions with the Product Owner, we were able to deliver both the MVPs for the project and several additional features ahead of the deadline. The event team were able to respond quickly to demand via the real-time data analysis (for instance session scheduling, staff rotas) and report session take-up and popularity to stakeholders.</p>
              <p>AWS invited Codurance to add additional features to the system so that it could be used at future events. Our team also gave a talk on Software Craftsmanship at the AWS Summit London 2016.</p>
+  MANDS:
+    link-text: Case study at M&S
+    short_description: We helped transition their processes to cater for new projects
+    long_description: We provided mentoring and support at M&S, while there was a cultural transformation helping them prepare for their new projects and environment.
+    client_description: Marks and Spencer is a major British multinational retailer, specialising in the selling of clothing, home products and luxury food products.
+    the_challenge: <p>Marks and Spencers’ engineering department was entering a period of cultural change, with people being re-assigned to new teams ahead of several large digital projects. 
+    our_sc_approach: <p>With our connections to the wider community and passion for Software Craftsmanship, Codurance were seen as a partner that could help to raise both code quality and to help establish a new team with this department through mentoring and guidance.
+    outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.
+             <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.
+             <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.

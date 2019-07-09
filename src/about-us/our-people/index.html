@@ -1,0 +1,139 @@
+---
+layout: default
+title: Our People
+---
+<!--=== Content Part ===-->
+<style type="text/css">
+  .team-member-name { font-size: 1.1em; }
+  .team-member-role { font-size: 0.9em; color: #555; }
+  a.team-member:hover { text-decoration: none; }
+</style>
+
+<!-- Hero -->
+<section class="services-hero height-is-based-on-content">
+  <div class="container g-z-index-1 g-py-100 text-center">
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{% t our-people.title %}</h1>
+    <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+    </div>
+  </div>
+</section>
+
+<div class="container content">
+  <div class="row ">
+    <div class="col-md-12">
+      <a id="theteam"></a>
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center"> 
+          <h2>{% t company-the_team.title %}</h2>
+      </div>
+
+      {% assign allAuthors = "" | split: "," %}
+      {% for page in site.pages %}
+      {% assign allAuthors = allAuthors | push:page.author %}
+      {% endfor %}
+      {% assign teamMembersSize = site.data.team | size %}
+
+      <div class="container content">
+        <div class="row team margin-bottom-10">
+        {% for member in site.data.team %}
+        {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
+        {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
+          <!-- TEAM MEMBER -->
+          <div class="col-md-3 col-sm-4 col-6 pb-4" >
+            <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1 team-member" title="{{member.name}}" style="background-color: #fff">
+              <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
+              <span class="pt-1">
+                <div class="team-member-name">{{member.name}}</div>
+                <div class="team-member-role">{{member.role}}</div>
+              </span>
+            </a>
+          </div>
+          <!-- MODAL CLASS -->
+          <div id="team-{{member.id}}"  class="g-max-width-800 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;" >
+            <button type="button" class="close" onclick="Custombox.modal.close();">
+              <i class="hs-icon hs-icon-close btn-pointer-cursor"></i>
+            </button>
+
+            <div class="g-pa-20">
+              <div class="row">
+                <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+                  <!-- User Image -->
+                  <div class="u-block-hover g-pos-rel g-mb-20">
+                    <figure>
+                      <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{member.image | prepend: site.baseurl}}" alt="Image for {member.name}}">
+                    </figure>
+                  </div>
+                  <!-- End User Image -->
+                </div>
+
+                <div class="col-lg-8">
+                  <!-- User Details -->
+                  <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
+                    <h2 class="g-font-weight-300 g-mr-10">{{member.name}}</h2>
+                    <ul class="list-inline mb-0">
+                      {% if member.github != null %}
+                      <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://github.com/{{member.github}}">
+                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+                        </a>
+                      </li>
+                      {% endif %}
+
+                      {% if member.twitter != null %}
+                      <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://twitter.com/{{member.twitter}}">
+                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      {% endif %}
+
+                      {% if member.linkedin != null %}
+                      <li class="list-inline-item g-mx-2">
+                        <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle" href="https://linkedin.com/in/{{member.linkedin}}">
+                          <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
+                          <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
+                        </a>
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+                  <!-- End User Details -->
+
+                  <!-- User Position & Email -->
+                  <h4 class="h6 g-font-weight-300 g-mb-10">
+                    <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}
+                  </h4>
+                  {% if member.email != null %}
+                  <h4 class="h6 g-font-weight-300 g-mb-10">
+                    <i class="icon-envelope g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> 
+                    <a href="mailto:{{member.email}}">{{member.email}}</a>
+                  </h4>
+                  {% endif %}
+                  <!-- End User Position & Email -->
+                  
+                  <hr class="g-brd-gray-light-v4 g-my-20">
+                  <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
+        
+                  {% for item in allAuthors %}
+                  {% if member.name == item %}
+                  {% assign isAuthor = true %}
+                  {% endif %}
+                  {% endfor %}
+
+                  {% if isAuthor == true %}
+                  <p class="g-line-height-1_8"><a href="{{site.baseurl}}/publications/author/{{ member.name | downcase | replace: ' ','-' }}/">See blogs by {{member.name| truncatewords: 1}}</a></p>
+                  {% endif %}
+                  {% assign isAuthor = false %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include_relative _includes/we_are_hiring.html %}

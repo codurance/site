@@ -1,71 +1,15 @@
-  {% assign posts = site.posts %}
-  {% assign relatedPosts = ""  %}
+<section class="g-bg-gray-light-v5">
+  <div class="container g-py-50">
 
-  {% for post in posts %}
-  {% assign rank = "" %}
-  {% for otherPostTag in post.tags %}
-  {% for currentTag in include.tags %}
-  {% if otherPostTag == currentTag and page.title != post.title %}
-  {% assign rank = rank | append:"I" %}
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
+    <h6 class="g-color-black g-font-weight-600 text-center text-uppercase mb-5">{% t post-related_posts.title%}</h6>
 
-  {% if rank.size > 0 %}
-  {% assign relatedPosts = relatedPosts | append:rank %}
-  {% assign relatedPosts = relatedPosts | append:"$" %}
-  {% assign relatedPosts = relatedPosts | append:post.url %}
-  {% assign relatedPosts = relatedPosts | append:"$" %}
-  {% assign relatedPosts = relatedPosts | append:post.title %}
-  {% assign relatedPosts = relatedPosts | append:"$" %}
-  {% assign relatedPosts = relatedPosts | append:post.image.src %}
-  {% assign relatedPosts = relatedPosts | append:"$" %}
-  {% assign relatedPosts = relatedPosts | append:post.author %}
-  {% assign relatedPosts = relatedPosts | append:"|" %}
-  {% endif %}
-  {% endfor %}
+    <div class="row row-eq-height">
+      {% assign related_posts = site.related_posts | slice: 0, 3 %}
 
-  {% if relatedPosts.size > 0 %}
+      {% for post in related_posts %}
+        {% include post.html post=post %}
+      {% endfor %}
 
-  <div class="posts margin-bottom-40">
-    <div class="headline-v2">
-      <h2>{% t post-related_posts.title%}</h2>
-    </div>
-
-  {% assign relatedPostsArray = relatedPosts | split:"|" | sort | reverse %}
-  {% for relatedPost in relatedPostsArray limit: 7 %}
-  {% assign relevantPostAttributes = relatedPost | split:"$" %}
-  {% assign postUrl = relevantPostAttributes[1] %}
-  {% assign postTitle = relevantPostAttributes[2] %}
-  {% assign postImageUrl = relevantPostAttributes[3] %}
-  {% assign author = relevantPostAttributes[4] %}
-
-  {% if postImageUrl == empty %}
-  {% assign postImgUrl = site.default_post_image | prepend: site.baseurl %}
-  {% elsif postImageUrl contains '://' %}
-  {% assign postImgUrl = postImageUrl %}
-  {% else %}
-  {% assign postImgUrl = postImageUrl | prepend: site.baseurl %}
-  {% endif %}
-  
-  <div class="blog-thumb blog-thumb-circle margin-bottom-15">
-    <div class="blog-thumb-hover">
-      <a href="{{ postUrl | prepend: site.baseurl }}">
-        <img class="rounded-x" src="{{postImgUrl}}" alt="{{ post.title }}"></img>
-      </a>
-      <a class="hover-grad" href="{{ postUrl | prepend: site.baseurl }}">
-        <i class="fa fa-hand-spock-o"></i>
-      </a>
-    </div>
-    <div class="blog-thumb-desc">
-      <h3><a href="{{ postUrl | prepend: site.baseurl }}">{{ postTitle }}</a></h3>
-      <ul class="blog-thumb-info">
-        <li>
-          {{ author }}
-        </li>
-      </ul>
     </div>
   </div>
-  {% endfor %} 
-  </div>
-  {% endif %}
+</section>

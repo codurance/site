@@ -1,31 +1,27 @@
-  <!-- Expert Advice Clients -->
-  <div class="section g-pb-30">
-    <div class="container">
-
-      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-50 text-center">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t include.title %}</h2>
+  <div class="section">
+      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center"> 
+        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.our-clients.title %}</h2> 
       </div>
+    <div class="container">
+      <div class="row">
+          {% for client in site.data.clients %}
+          <div class="col-sm-3 col-md-3 px-0 text-center">
+              <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                <img class="mx-auto g-width-100 u-block-hover__main--grayscale g-opacity-0_4 g-opacity-1--hover g-cursor-pointer" 
+                src="{{ client.image | prepend: site.baseurl }}" 
+                alt="{{ client.alt-text }}">
+              </div>
+          </div>
+          {% endfor %}
 
-      <div class="row js-carousel" data-autoplay="true" data-slides-show="6" data-infinite="true" data-responsive='[
-        {
-          "breakpoint": 992,
-          "settings": {
-            "slidesToShow": 4
-          }
-        },
-        {
-          "breakpoint": 768,
-          "settings": {
-            "slidesToShow": 2
-          }
-        }]'>
-        {% for client in site.data.clients %}
-          {% if client.services-page contains include.filter %}
-            <div class="js-slide js-slide g-brd-around g-brd-gray-light-v3--hover g-transition-0_2 rounded g-pa-20 g-mx-10">
-              <img class="mx-auto g-width-120 g-max-width-100x" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
-            </div>
-          {% endif %}
-        {% endfor %}
+
+          <div class="col-sm-3 col-md-3 px-0 text-center">
+              <div class="u-block-hover g-brd-left g-brd-bottom g-brd-gray-light-v4 g-py-40">
+                  <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" style="margin: 14px;" 
+                  href="{{ '/clients/' | prepend: site.baseurl }}">{%t services.see-more %}</a>
+              </div>
+          </div>
+
       </div>
     </div>
   </div>
