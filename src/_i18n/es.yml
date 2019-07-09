@@ -657,3 +657,13 @@ projects:
     the_challenge: <p>M&G wanted their new integration system project to be built on the  Microsoft Azure Cloud platform and needed external expertise and guidance to help support their existing architecture and development teams. 
     our_sc_approach: <p>We provided a team of Software Craftspeople with expertise in Azure, .Net, Node and Web front-end technologies. In conjunction with M&G’s other teams and architects, they formed the core of a delivery team that built a scalable, distributed and highly available integration system that is responsible for propagating, querying and reporting the investment trades in a standardised format. Technologies included Google Apigee, Azure Data Lake, Data Lake Analytics, Data Factory, Databricks, Cosmos DB and Functions.
     outcome: <p>We helped M&G to instill a culture of learning within their teams, running regular coaching sessions to improve their Test Driven Development and other skills.
+  MANDS:
+    link-text: Case study at M&S
+    short_description: We helped transition their processes to cater for new projects
+    long_description: We provided mentoring and support at M&S, while there was a cultural transformation helping them prepare for their new projects and environments.
+    client_description: Marks and Spencer is a major British multinational retailer, specialising in the selling of clothing, home products and luxury food products.
+    the_challenge: <p>Marks and Spencers’ engineering department was entering a period of cultural change, with people being re-assigned to new teams ahead of several large digital projects.
+    our_sc_approach: <p>With our connections to the wider community and passion for Software Craftsmanship, Codurance were seen as a partner that could help to raise both code quality and to help establish a new team with this department through mentoring and guidance.
+    outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.
+             <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.	
+             <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.
