@@ -38,8 +38,10 @@ sections:
    services: Services
    publications: Publications
    events: Events
-   company: Company
    careers: Careers
+   about-us: About Us
+   our-people: Our People
+   our-story: Our Story
    contact: Contact Us
 index-banner:
    title: Pragmatic, Skilled, Transparent.
@@ -96,8 +98,9 @@ footer-useful_links:
    we-advise: We advise
    we-coach: We coach
    we-deliver: We deliver
+   our-people: Our people
+   our-story: Our story
    careers: Careers
-   about-us: About us
    privacy-policy: Privacy policy
    cookie-policy: Cookie policy
 footer-contact:
@@ -109,6 +112,14 @@ cookie-message:
    view-policy: View our Cookie Policy
    accept: Accept
    publication-message: This publication uses cookies, to watch it you must accept our cookie policy.
+our-story:
+   title: Our Story
+our-people:
+   title: Our People
+   we-are-hiring:
+      title: We are hiring
+      subtitle: Are you looking for autonomy, mastery and purpose in your career? We are looking for people that share the same values of pragmatism, professionalism and transparency that we do.
+      learn-more: Learn More
 company-who_are_we:
    title: Who are we?
    subtitle: <p>We build well-crafted software and help development teams to get better at continuously delivering software through the application of Extreme Programming practices and Software Craftsmanship values. Software Craftsmanship is at the heart of our company. In 2010, the founders started the <a href="http://londonswcraft.com/">London Software Craftsmanship Community (LSCC)</a> which has grown to become the largest and most active Software Craftsmanship community in the world, with more than 3,500 developers that meet a few times a month to share and learn. Codurance was founded in 2013 and inherited the same community spirit. Since 2013, we have been organising <a href="http://socratesuk.org/">SoCraTes UK</a>&mdash;an International Software Craftsmanship Gathering that attracts software craftspeople from all over Europe.
@@ -615,10 +626,10 @@ projects:
                      <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
     outcome: <p>By working closely with the Coniq team and through regular communication, we were able to deliver the MVPs within the budget available for the project. Upon handover, the Coniq team were able to take over full ownership of the project and had the skills and processes in place to work through the remainder of their product backlog.</p>
   AWS:
+    link-text: Case Study at AWS
     short_description: Software Craftsmanship helped our team to build an AWS-based, serverless event registration platform for Amazon in just 6 weeks.
-    subtitle: <p>Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business.</p>
-              <p>Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.</p>
-    about: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
+    long_description: Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business. Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.
+    client_description: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
     the_challenge: <p>AWS wanted to create a custom event registration system for their Pop-Up Loft event series in the UK, since existing third-party solutions compromised on the overall customer experience. This system would include a fully-functional event website, real-time data reporting functionality and an on-site event check-in system.</p>
                    <p>AWS saw this as an ideal opportunity to create a brand new system on AWS, using the internally developed ‘Gold Standard’ serverless architecture design and Amazon services such as Amazon Lambda, CloudFront, API Gateway and Amazon S3. The front end was developed in Angular JS and Clojure was used to build the backend.</p>
                    <p>AWS had limited internal resources to develop the project and needed a partner with expertise in both their technologies, security requirements and Agile methodologies.</p>

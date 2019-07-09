@@ -131,6 +131,9 @@
   - expert_advice
   services-page: 
     - expert_advice
+  projects:
+    - page-location: projects/software-craftsmanship-at-mands
+      project-name: MANDS
 
 - id: moonpig
   name: Moonpig
@@ -165,6 +168,9 @@
   - expert_advice
   services-page: 
     - effective_delivery
+  projects:
+    - page-location: projects/software-craftsmanship-at-aws
+      project-name: AWS
 
 - id: trinitymirror
   name: Trinity Mirror
