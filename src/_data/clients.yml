@@ -39,6 +39,9 @@
   - expert_advice
   services-page: 
     - effective_delivery
+  projects:
+    - page-location: projects/software-craftsmanship-at-mandg
+      project-name: MANDG
 
 
 - id: flextrade
