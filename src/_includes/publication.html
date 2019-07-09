@@ -1,5 +1,13 @@
-<section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="{{ page.image.src | prepend: site.baseurl }}"
-    style="background-image: url(&quot;{{ page.image.src | prepend: site.baseurl }}&quot;);">
+{% if page.image.src and page.image.src contains '://' %}
+    {% assign pageImgUrl = page.image.src %}
+{% elsif page.image.src %}
+    {% assign pageImgUrl = page.image.src | prepend: site.baseurl %}
+{% else %}
+    {% assign pageImgUrl = site.default_post_image | prepend: site.baseurl %}
+{% endif %}
+<section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after"
+         data-bg-img-src="{{ pageImgUrl }}"
+         style="background-image: url(&quot;{{ pageImgUrl }}&quot;);">
     <div class="container text-center g-pos-rel g-z-index-1 g-pb-50">
         <div class="row d-flex justify-content-center align-content-end flex-wrap g-min-height-300">
             <div class="col-lg-7 mt-auto">
@@ -17,8 +25,7 @@
                 <span class="g-color-white-opacity-0_7 g-font-weight-300 g-font-size-12">{{ page.date | date_to_string }}</span>
             </div>
         </div>
-                <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
-        
+        <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
     </div>
 </section>
 
@@ -36,9 +43,9 @@
                         {% include publication_cookie_message.html %}
                     {% endif %}
                 </img>
-                {% endif %} 
+                {% endif %}
                 <div id="js-publication-content">
-                    {{ content }}
+                    {{content}}
                 </div>
 
                 {% if page.canonical %}
@@ -59,6 +66,9 @@
         </div>
     </div>
 </section>
+
+{% include related_publications.html %}
+
 <section class="container g-pt-50">
     <div class="row justify-content-center">
         <div class="col-lg-9">

@@ -1,24 +1,24 @@
 task :buildprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_prb.yml --trace --lsi'
 end
 
 task :buildesprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination output/_site_es/'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml,build/config/_config_prb.yml --trace --destination output/_site_es/ --lsi'
 end
 
 task :buildenprb do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml,build/config/_config_prb.yml --trace'
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml,build/config/_config_prb.yml --trace --lsi'
 end
 
 multitask serve:      [:_build_en,       :_build_es,       :_ruby_serve]
 multitask servequick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
 
 task :_build_en_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en  --limit_posts 3 '
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en  --limit_posts 10'
 end
 
 task :_build_es_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es  --limit_posts 3 '
+  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es  --limit_posts 10'
 end
 
 task :_build_en do
