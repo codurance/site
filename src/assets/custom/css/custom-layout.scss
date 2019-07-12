@@ -954,3 +954,15 @@ blockquote.no-left-border {
 .hljs {
   background-color: #f8f9fa
 }
+
+#mc_embed_signup {
+  position: fixed;
+  top: auto;
+  right: 5px;
+  bottom: 5px;
+  left: auto;
+}
+
+#mc_embed_signup.show {
+  display: inline-block !important;
+}

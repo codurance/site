@@ -31,7 +31,7 @@
   <script src="{{ '/assets/unify-2.4/js/components/hs.modal-window.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/masonry/dist/masonry.pkgd.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/imagesloaded/imagesloaded.pkgd.min.js' | prepend: site.baseurl }}"></script>
-  
+
   <script src="{{ '/assets/lib/js/lunr.min.js' | prepend: site.baseurl }}" type="text/javascript" ></script>
 
  <!-- JS Plugins Init. -->
@@ -54,18 +54,18 @@
         $.HSCore.components.HSGoTo.init('.js-go-to');
 
         $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
-        
+
         $.HSCore.components.HSModalWindow.init('[data-modal-target]');
-        
+
         $('.js-mega-menu').HSMegaMenu({
           event: 'hover',
           pageContainer: $('.container'),
           breakpoint: 767,
           hideTimeOut: 0
         });
-        
+
         $('[data-toggle="popover"]').popover();
-        
+
         $('#carousel1').slick('setOption', 'customPaging', function (slider, i) {
           var title = $(slider.$slides[i]).data('title');
 
@@ -85,10 +85,20 @@
             percentPosition: true
           });
         });
-        
+
         if (typeof onJQueryLoaded === 'function') {
           onJQueryLoaded();
         }
+
+        $(window).on('scroll', function () {
+          console.log($(window).scrollTop());
+          if ($(window).scrollTop() > $(document).height() * 0.5) {
+            $('#mc_embed_signup').modal({
+              backdrop: false,
+              show: true
+            });
+          }
+        })
       });
 
       $(window).on('load', function () {
@@ -109,7 +119,7 @@
       });
     }
     ga('send', 'pageview');
-    
+
     $(window).on('resize', function () {
       setTimeout(function () {
         var gaEvents = window.googleAnalyticsEvents;
@@ -137,6 +147,6 @@
           loadHubsopot();
         });
       }
-  </script>  
+  </script>
   <!-- End of HubSpot Embed Code -->
 
