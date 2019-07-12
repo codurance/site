@@ -966,3 +966,7 @@ blockquote.no-left-border {
 #mc_embed_signup.show {
   display: inline-block !important;
 }
+
+body.modal-open {
+  overflow: auto !important;
+}
