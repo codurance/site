@@ -742,3 +742,33 @@
   github: damianpumar
   email: damian.pumar@codurance.com
   office: barcelona
+
+- id: james_birnie
+  name: James Birnie
+  image: /assets/custom/img/team/james_birnie.jpg
+  role: Principal Craftsperson
+  fullDescription:
+      <p>James has been working in commercial software since the 1990s when TDD was something you studied but never did, Agile and Lean were words used to describe athletes and Pipelines were things for carrying oil.</p>
+      <p>James worked for 9 years in a startup where he learned the hard way about splitting the monolith, continuous delivery and Agile transformations. In 2015 he started a new life as a consultant at ThoughtWorks where he carved a niche as a transformation specialist.</p>
+      <p>After 4 years as a consultant James was delighted to take up a new challenge at Codurance. He is looking forward to immersing himself in the Software Craftsmanship community whilst helping Codurance to grow its business and mature its offerings.</p>
+  github: jimbobbirnie
+  twitter: runningChairJB
+  email: james.birnie@codurance.com
+  office: london
+
+- id: davidhalewood
+  name: David Halewood
+  image: /assets/custom/img/team/david_halewood.jpg
+  role: Apprentice
+  fullDescription:
+      <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
+      <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
+      <p>For many years David spent his time living in a cabin in the woods teaching children of all ages outdoor skills and learning how to "unplug" from their devices and reconnect to nature.</p>
+      <p>The irony of his career change is not lost on him.</p>
+      <p>He is constantly looking for ways to be a better developer and a better person, including attending conferences, meet-ups and giving back to the community.</p>
+      <p>In his spare time David loves to tinker with electronics, make pots on the wheel, play guitar and piano and enjoys a kick-a-bout or two each week.</p>
+  github: haletothewood
+  twitter: craftercoder
+  linkedin: david-halewood-uk
+  email: david.halewood@codurance.com
+  office: London
