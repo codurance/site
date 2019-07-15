@@ -743,3 +743,20 @@
   github: damianpumar
   email: damian.pumar@codurance.com
   office: barcelona
+
+- id: davidhalewood
+  name: David Halewood
+  image: /assets/custom/img/team/david_halewood.jpg
+  role: Apprentice
+  fullDescription:
+      <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
+      <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
+      <p>For many years David spent his time living in a cabin in the woods teaching children of all ages outdoor skills and learning how to "unplug" from their devices and reconnect to nature.</p>
+      <p>The irony of his career change is not lost on him.</p>
+      <p>He is constantly looking for ways to be a better developer and a better person, including attending conferences, meet-ups and giving back to the community.</p>
+      <p>In his spare time David loves to tinker with electronics, make pots on the wheel, play guitar and piano and enjoys a kick-a-bout or two each week.</p>
+  github: haletothewood
+  twitter: craftercoder
+  linkedin: david-halewood-uk
+  email: david.halewood@codurance.com
+  office: London
