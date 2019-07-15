@@ -146,6 +146,9 @@
   - training_and_coaching
   services-page: 
     - expert_advice
+  projects:
+    - page-location: projects/software-craftsmanship-at-moonpig
+      project-name: MOONPIG
 
 - id: coniq
   name: Coniq
