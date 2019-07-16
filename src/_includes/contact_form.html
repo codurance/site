@@ -23,6 +23,9 @@
                     eventAction: 'submit',
                     eventLabel: 'servicepage'
                   });
+
+                window.location.hash = 'thankyou';
+                ga('send', 'pageview');
             },
             onFormReady: function () {
               addStyleOverridesToHead();
