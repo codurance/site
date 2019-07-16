@@ -772,3 +772,16 @@
   linkedin: david-halewood-uk
   email: david.halewood@codurance.com
   office: London
+
+- id: richard_hopwood
+  name: Richard Hopwood
+  image: /assets/custom/img/team/richard_hopwood.jpg
+  role: Software Craftsperson
+  fullDescription:
+      <p>Richard has been writing code since he was 6 and has never stopped, his professional career started in the ‘90s as a C++ developer in the days of Visual SourceSafe, Borland OWL, and VAX Systems. Over the past 15 years he has become a passionate advocate of software craftsmanship and building strong, self organising teams who believe in doing things “the right way.”</p>
+      <p>Outside of work Richard is a keen motorcyclist and gamer who probably spends more time than he should in virtual reality these days.</p>
+  github: vecta
+  twitter: BigHairyCoder
+  linkedin: richard-hopwood-41140647
+  email: richard.hopwood@codurance.com
+  office: Manchester
