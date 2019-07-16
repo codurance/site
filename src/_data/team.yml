@@ -772,3 +772,16 @@
   linkedin: david-halewood-uk
   email: david.halewood@codurance.com
   office: London
+
+- id: oscar_manzano
+  name: Òscar Manzano
+  image: /assets/custom/img/team/oscar_manzano.jpg
+  role: Software Craftsman
+  fullDescription:
+      <p>Òscar discovered the magic of programming at the age of 11. That was when he took his first programming course. It was about Basic programming language. Afterwards, he took 3 other programming courses (GW-Basic, C and other related disciplines like MS-DOS, DBaseIII,...very old-fashion stuff). </p>
+      <p>By the age of 16 he joined his first IT company and since then he has worked in the IT private sector, he started-up 3 companies, and worked in the research industry for +10 years. During those years he worked as an IT Consultant, Software Engineer, PM and CTO in several companies and research centres.</p>
+      <p>As a final note, he is a self-motivated person that looks for becoming a better craftsperson.</p>
+      <p>In his leasure time he likes enjoying quality time with his family, indoor cycling (computerised!), reading about technology and discovering new places.</p>
+  github: oscarmanzano
+  email: oscar.manzano@codurance.com
+  office: barcelona
