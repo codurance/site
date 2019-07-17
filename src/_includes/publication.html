@@ -40,7 +40,7 @@
                     {% for member in site.data.team %}
                     {% if page.author == member.name and page.asset-type != "newsletter" %}
                     <div class="media">
-                        <img class="u-icon-v3 g-rounded-50 g-mr-30" src="{{ member.image  | prepend: site.baseurl }}" alt="{{ page.author }} Image">
+                        <img class="u-icon-v2 g-rounded-50 g-mr-30" src="{{ member.image  | prepend: site.baseurl }}" alt="{{ page.author }} Image">
                         <div class="media-body">
                             <h5 class="g-color-black g-font-weight-600">{{ page.author | author_links}}</h5>
                             <a class="g-font-weight-600 g-font-size-12"
@@ -54,28 +54,28 @@
                 <div class="col g-my-15 text-right">
                     <ul class="list-inline my-0">
                         <li class="list-inline-item g-mx-2">
-                            <a class="u-icon-v3 g-rounded-50 g-color-white g-bg-facebook u-icon-slide-up--hover g-bg-gray-dark-v4--hover"
+                            <a class="u-icon-v2 g-rounded-50 g-color-facebook g-color-facebook--hover u-icon-slide-up--hover"
                                href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
                                 <i class="fa fa-facebook u-icon__elem-regular"></i>
                                 <i class="fa fa-facebook u-icon__elem-hover"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
-                            <a class="u-icon-v3 g-rounded-50 g-color-white g-bg-twitter u-icon-slide-up--hover g-bg-gray-dark-v4--hover"
+                            <a class="u-icon-v2 g-rounded-50 g-color-twitter g-color-twitter--hover u-icon-slide-up--hover"
                                href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&hashtags={{ page.tags | join: ',' }}">
                                 <i class="fa fa-twitter u-icon__elem-regular"></i>
                                 <i class="fa fa-twitter u-icon__elem-hover"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
-                            <a class="u-icon-v3 g-rounded-50 g-color-white g-bg-linkedin u-icon-slide-up--hover g-bg-gray-dark-v4--hover"
+                            <a class="u-icon-v2 g-rounded-50 g-color-linkedin g-color-linkedin--hover u-icon-slide-up--hover"
                                href="http://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&summary={{ page.abstract }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
                                 <i class="fa fa-linkedin u-icon__elem-regular"></i>
                                 <i class="fa fa-linkedin u-icon__elem-hover"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
-                            <a class="u-icon-v3 g-rounded-50 g-color-white g-bg-reddit u-icon-slide-up--hover g-bg-gray-dark-v4--hover"
+                            <a class="u-icon-v2 g-rounded-50 g-color-reddit g-color-reddit--hover u-icon-slide-up--hover"
                                href="http://www.reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}">
                                 <i class="fa fa-reddit u-icon__elem-regular"></i>
                                 <i class="fa fa-reddit u-icon__elem-hover"></i>

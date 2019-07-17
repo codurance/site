@@ -68,6 +68,14 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.g-color-reddit {
+    color: #FF4301;
+}
+
 .g-bg-reddit {
   background-color: #FF4301;
+}
+
+.g-color-reddit--hover:hover {
+    color: #FF4301 !important;
 }
