@@ -772,3 +772,20 @@
   linkedin: david-halewood-uk
   email: david.halewood@codurance.com
   office: London
+
+- id: sherlockqiao
+  name: Zhiqiang (Sherlock) Qiao
+  image: /assets/custom/img/team/sherlock_qiao.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
+      <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
+      <p>He started his professional career in 2007 after graduation. He worked as a software developer and project architect in projects to deliver business software from scratch for various automotive OEM and suppliers. He had experiences in requirement analysis, backend and frontend development, integration, and maintenance.</p>
+      <p>For now, he is focused on learning how to design software to better adapted to changes.</p>
+      <p>He loves a lot of things in life. Cycling, trekking, kayaking, fixing things, or just doing anything with his wife. He started learning classical guitar two years ago and still keeps working on that. Good luck to that!</p>
+      <p>By the way, his first name (志强) is pronounced as [t͡siː][kʰœːŋ] in Chinese. And you are welcomed to call his nickname “Sherlock”, as it’s much easier LOL.</p>
+  github: sherlockq
+  twitter: sherlockq
+  linkedin: zhiqiang-qiao
+  email: sherlock.qiao@codurance.com
+  office: London
