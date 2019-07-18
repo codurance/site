@@ -37,19 +37,25 @@
         <div class="col-lg-9 container">
             <div class="row">
                 <div class="col g-my-15 text-left">
-                    {% for member in site.data.team %}
-                    {% if page.author == member.name and page.asset-type != "newsletter" %}
-                    <div class="media">
-                        <img class="u-icon-v2 g-rounded-50 g-mr-30" src="{{ member.image  | prepend: site.baseurl }}" alt="{{ page.author }} Image">
-                        <div class="media-body">
-                            <h5 class="g-color-black g-font-weight-600">{{ page.author | author_links}}</h5>
-                            <a class="g-font-weight-600 g-font-size-12"
-                               href="{{site.baseurl}}/publications/author/{{ page.author | downcase | replace: ' ','-' }}/">See author's bio and posts</a>
+                    {% assign author = site.data.team | where: "name", page.author | first %}
+                    {% if author and page.asset-type != "newsletter" %}
+                        <div class="media">
+                            <img class="u-icon-v2 g-rounded-50 g-mr-30" src="{{ author.image  | prepend: site.baseurl }}" alt="{{ author.name }} Image">
+                            <div class="media-body">
+                                <h5 class="g-color-black g-font-weight-600">{{ author.name | author_links}}</h5>
+                                <a class="g-font-weight-600 g-font-size-12"
+                                   href="{{site.baseurl}}/publications/author/{{ author.name | downcase | replace: ' ','-' }}/">See author's bio and posts</a>
+                            </div>
                         </div>
-                    </div>
-                    {% break %}
+                    {% else %}
+                        <div class="media">
+                            <div class="media-body">
+                                <h5 class="g-color-black g-font-weight-600">{{ page.author | author_links}}</h5>
+                                <a class="g-font-weight-600 g-font-size-12"
+                                   href="{{site.baseurl}}/publications/author/{{ page.author | downcase | replace: ' ','-' }}/">See other author's posts</a>
+                            </div>
+                        </div>
                     {% endif %}
-                    {% endfor %}
                 </div>
                 <div class="w-100 g-hidden-md-up"></div>
                 <div class="col g-my-15 text-center text-md-right">
