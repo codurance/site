@@ -771,8 +771,8 @@
   twitter: craftercoder
   linkedin: david-halewood-uk
   email: david.halewood@codurance.com
-  office: London
-  
+  office: london
+
 - id: sherlockqiao
   name: Zhiqiang (Sherlock) Qiao
   image: /assets/custom/img/team/sherlock_qiao.jpg
@@ -788,8 +788,8 @@
   twitter: sherlockq
   linkedin: zhiqiang-qiao
   email: sherlock.qiao@codurance.com
-  office: London
-  
+  office: london
+
 - id: oscar_manzano
   name: Òscar Manzano
   image: /assets/custom/img/team/oscar_manzano.jpg
@@ -814,4 +814,4 @@
   twitter: BigHairyCoder
   linkedin: richard-hopwood-41140647
   email: richard.hopwood@codurance.com
-  office: Manchester
+  office: manchester
