@@ -2,7 +2,9 @@
   name: Sandro Mancuso
   image: /assets/custom/img/team/sandro_mancuso.jpg
   role: Software Craftsman and Co-Founder
-  fullDescription: <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks. </p><p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
+  fullDescription:
+    <p>Software craftsman, <a href="http://www.amazon.co.uk/dp/0134052501">author</a>, and founder of the <a href="http://londonswcraft.com">London Software Craftsmanship Community (LSCC)</a>. Sandro has been coding since a very young age but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks.</p>
+    <p>During his career Sandro had the opportunity to work in a good variety of projects, with different languages, technologies, and across many different industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned by his work on evolving and spreading Software Craftsmanship and is frequently invited to speak in many conferences around the world. His professional aspiration is to raise the bar of the software industry by helping developers become better at and care more about their craft.</p>
   twitter: sandromancuso
   github: sandromancuso
   linkedin: sandromancuso
@@ -13,7 +15,9 @@
   name: Mashooq Badar
   image: /assets/custom/img/team/mash_badar.jpg
   role: Software Craftsman and Co-Founder
-  fullDescription: <p>Mash is a pragmatic software craftsman always looking to improve his software creation skills and helping others do the same. He firmly believes that a well-rounded software craftsman must have a keen interest in all aspects of software creation, including; process, people, technology, user experience, development, operation, maintenance, and social impact. He relishes the daily challenges that Codurance brings to him–stretching his existing knowledge and expertise allowing him to constantly grow as a professional.</p><p>Mash is an advisor and a leader. During his diverse career, he has succeeded in invigorating large ailing software projects as well as creating highly effective software teams and departments. His broad and deep technical knowledge, organisational skills, craft focus, and empathy to people involved have been integral to his success. He has worked in many roles for charities, investment banks, consultancies, government, media and cloud providers. He prides himself at being a hands-on software developer and believes that software development skills are very hard to learn and the best way to maintain them is to apply them.</p>
+  fullDescription:
+    <p>Mash is a pragmatic software craftsman always looking to improve his software creation skills and helping others do the same. He firmly believes that a well-rounded software craftsman must have a keen interest in all aspects of software creation, including; process, people, technology, user experience, development, operation, maintenance, and social impact. He relishes the daily challenges that Codurance brings to him–stretching his existing knowledge and expertise allowing him to constantly grow as a professional.</p>
+    <p>Mash is an advisor and a leader. During his diverse career, he has succeeded in invigorating large ailing software projects as well as creating highly effective software teams and departments. His broad and deep technical knowledge, organisational skills, craft focus, and empathy to people involved have been integral to his success. He has worked in many roles for charities, investment banks, consultancies, government, media and cloud providers. He prides himself at being a hands-on software developer and believes that software development skills are very hard to learn and the best way to maintain them is to apply them.</p>
   twitter: mashooq
   github: mashooq
   office: london
@@ -34,8 +38,11 @@
   name: Steve Lydford
   image: /assets/custom/img/team/steve_lydford.jpg
   role: Head of Professional Services
-  fullDescription: >
-      <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p><p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p><p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p><p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
+  fullDescription:
+    <p>Steve is a Software Craftsman and author with over 20 years professional experience. He first discovered his passion for code at the age of seven, when his father brought home a Sinclair Spectrum and a portable black and white television. The countless hours spent typing in listings from Sinclair User magazine sparked an enthusiasm for programming that has stayed with him for life.</p>
+    <p>During his career, Steve has worked on projects in a wide variety of sectors including retail e-commerce, finance, education, media, government and healthcare, developing large-scale, resilient, distributed systems on an assortment of platforms. He currently specialises in solutions built on the Microsoft .Net stack, with a particular interest in cloud computing using the Microsoft Azure platform.</p>
+    <p>Steve is a pragmatic problem solver with a focus on the delivery of high-quality, robust and maintainable code. He is a passionate advocate of continuous improvement, both for software and software developers and believes that the future success of the software industry relies on the sharing of knowledge gained through experience.</p>
+    <p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
   github: stevelydford
   office: london
@@ -56,7 +63,7 @@
   name: Giulia Mantuano
   image: /assets/custom/img/team/giulia_mantuano.jpg
   role: UX Craftswoman
-  fullDescription: >
+  fullDescription:
     <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years, developing both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
     <p>Giulia joined Codurance driven by the desire to apply the Software Craftsmanship mindset and values to the whole product and service design process.</p>
     <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, backed up by her Integrated Design background and the mastery of User Experience Design skills.</p>
@@ -70,7 +77,9 @@
   name: Liam Griffin-Jowett
   image: /assets/custom/img/team/liam_griffin.jpg
   role: Software Craftsperson
-  fullDescription: <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions. </p><p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
+  fullDescription:
+    <p>Liam is a developer with experience building cloud-based .NET applications on Azure, but is also interested in functional languages such as Haskell. After moving to London 2 years ago he became involved in the London Software Craftsmanship Community and particularly loves the hands-on sessions.</p>
+    <p>Liam is keen to adopt the benefits of functional programming styles in his use of OOP focused languages, such as C#, and share this knowledge with others.</p>
   twitter: gryffskin
   github: gryff
   office: manchester
@@ -79,7 +88,10 @@
   name: Chris Jeffery
   image: /assets/custom/img/team/chris_jeffery.jpg
   role: Software Craftsman
-  fullDescription: <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p><p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavaScript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p><p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
+  fullDescription:
+    <p>Chris is a front end developer with more than five years of experience working both in startup and enterprise environments, and is an active member of the Software Craftsmanship community.</p>
+    <p>He has worked primarily with JavaScript and jQuery to build user interfaces for clients. He is always looking for ways to make front end code easier to maintain and faster to develop, and has lead the migration of a large codebase from css to sass. He is an advocate of improving JavaScript testing practices and has experience leading teams on testing strategy and introducing testing to untested systems.</p>
+    <p>Recently, Chris has lead a greenfield project using React, Redux and Radium. He advocates functional and reactive design paradigms in JavaScript and finds that they simplify testing, help reduce bug density, and make for more maintainable systems.</p>
   twitter: Chris_Jeffery
   github: chrisjeffery
   office: london
@@ -113,10 +125,10 @@
   image: /assets/custom/img/team/luciano_palma.jpg
   role: Software Craftsperson
   fullDescription:
-   <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
-   <p>He likes Functional and Object-Oriented Programming, but is also looking forward to learn other programming paradigms in order to improve his skills and his contribution to the software community.</p>
-   <p>Believing that software is about people, Luciano enjoys reading books on a variety of topics, giving him a better understanding about the world, society, and changing the way he approaches software.</p>
-   <p>He also loves coffee and spending time in the outdoors.</p>
+    <p>Luciano is a software developer whose mind is full of curiosity about the world and the people living in it.</p>
+    <p>He likes Functional and Object-Oriented Programming, but is also looking forward to learn other programming paradigms in order to improve his skills and his contribution to the software community.</p>
+    <p>Believing that software is about people, Luciano enjoys reading books on a variety of topics, giving him a better understanding about the world, society, and changing the way he approaches software.</p>
+    <p>He also loves coffee and spending time in the outdoors.</p>
   twitter: pspluciano
   github: lpalma
   office: london
@@ -126,9 +138,9 @@
   image: /assets/custom/img/team/nacho_cougil.jpg
   role: Software Craftsman
   fullDescription:
-   <p>Nacho started to play with computers at a very early age. As a kid, he starting playing with the neighbour's MSX and Commodore 64 computers. At some point, he learned how to write instructions for those computers to modify the games to his advantage. From that moment he was hooked.</p>
-   <p>Always concerned with questions like <i>"how does it work?" and "how can we make it better?"</i>, Nacho loves to share his knowledge with others and at the same time learn from others. As a natural progression to this attitude, he founded the <a href="http://www.barcelonajug.org">Barcelona Java Users Group</a> and the <a href="http://www.jbcnconf.com">Java and JVM Barcelona Conference</a>.</p>
-   <p>Nacho enjoys spending time with his family (wife and daughter) and also likes to play basketball, football, and body combat. He loves running and has run marathons and even longer distances by the mountains.</p>
+    <p>Nacho started to play with computers at a very early age. As a kid, he starting playing with the neighbour's MSX and Commodore 64 computers. At some point, he learned how to write instructions for those computers to modify the games to his advantage. From that moment he was hooked.</p>
+    <p>Always concerned with questions like <i>"how does it work?" and "how can we make it better?"</i>, Nacho loves to share his knowledge with others and at the same time learn from others. As a natural progression to this attitude, he founded the <a href="http://www.barcelonajug.org">Barcelona Java Users Group</a> and the <a href="http://www.jbcnconf.com">Java and JVM Barcelona Conference</a>.</p>
+    <p>Nacho enjoys spending time with his family (wife and daughter) and also likes to play basketball, football, and body combat. He loves running and has run marathons and even longer distances by the mountains.</p>
   twitter: icougil
   github: cougil
   office: barcelona
@@ -214,8 +226,8 @@
   image: /assets/custom/img/team/terry_balfour.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects.  He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p>
-    <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools.  He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p>
+    <p>Terry is a Product Owner/Business Analyst who has over fifteen years’ experience of delivering software projects. He has worked in a wide range of industries from Banking and Financial Services to the Education and ‘not for profit’ sectors.</p>
+    <p>He loves helping teams to be the best that they can be and believes that the best approach to managing projects is to understand the needs of each individual situation and create a solution for it while drawing upon a set of well defined tools. He has been an active member of the meetup communities in London and Brighton for many years and is constantly learning new skills.</p>
     <p>Outside of work Terry enjoys travelling, mountain biking and has recently started renovating a farm in rural France (even though he knows nothing about building….yet!)</p>
   github: terrybalfourcodurance
   office: london
@@ -324,10 +336,10 @@
   image: /assets/custom/img/team/cristina_verdi.jpg
   role: Software Craftsperson
   fullDescription:
-    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in  R+D+i departments  designing and building software for the citizens of the future.</p>
+    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in R+D+i departments designing and building software for the citizens of the future.</p>
     <p>She discovered her passion for software by creating digital, interactive maps using Geographic Information Systems technologies like ArcGis and maintaning GIS databases while studying environmental engineering in Barcelona.</p>
     <p>She understands very well that due to society evolution business also evolves, In consequence, software has to be crafted in a way that it is resilient and flexible allowing constant adaption to changes in the environment. She has joined Codurance because she knows that crafting software in such a way, requires a high level of mastery, dedication, and passion. Also, she is aware about the key role that data plays in the present, and the challenges that its management brings into the tech scene; accordingly, she has special interest in the data engineering field.</p>
-    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day. </p>
+    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day.</p>
     <p>She constantly looks for ways to give back to the community what she receives from it. In her opinion, collaboration between peers, collectivity and mutualism are the key to success.</p>
     <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
   twitter: cristina_verdi
@@ -397,9 +409,9 @@
   image: /assets/custom/img/team/scott_edwards.jpg
   role: Software Craftsman
   fullDescription:
-   <p>Scott is a passionate craftsman who believes in doing things right the first time. He particularly enjoys working in C# and SQL Server, but is always happy to explore new development stacks and approaches.</p>
-   <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
-   <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
+    <p>Scott is a passionate craftsman who believes in doing things right the first time. He particularly enjoys working in C# and SQL Server, but is always happy to explore new development stacks and approaches.</p>
+    <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
+    <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
   twitter: scotteza
   github: scotteza
   linkedin: scott-edwards-b1a68817
@@ -410,9 +422,9 @@
   image: /assets/custom/img/team/chris_reinmuller.jpg
   role: Software Craftsman
   fullDescription:
-   <p>Chris has a background in digital production and has helped a renowned research institute in Switzerland to communicate about their excellent science for a couple of years, primarily by developing web services and improving user experience. During this time he had a good sniff around more ambitious IT projects and that made him go back to university to learn more about information systems. Bursting with new knowledge, he was then feeding his potential into a new career as a software engineer.</p>
-   <p>Joining Codurance has propelled him forward on the journey towards mastery of delivering high-quality software. Applying the ideas of the Software Craftsmanship approach to development has been a great influence in growing his professional expertise. He is mostly developing on the JVM and he embraces test-driven development and the extreme programming methodology.</p>
-   <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is a bit of a Trekkie.</p>
+    <p>Chris has a background in digital production and has helped a renowned research institute in Switzerland to communicate about their excellent science for a couple of years, primarily by developing web services and improving user experience. During this time he had a good sniff around more ambitious IT projects and that made him go back to university to learn more about information systems. Bursting with new knowledge, he was then feeding his potential into a new career as a software engineer.</p>
+    <p>Joining Codurance has propelled him forward on the journey towards mastery of delivering high-quality software. Applying the ideas of the Software Craftsmanship approach to development has been a great influence in growing his professional expertise. He is mostly developing on the JVM and he embraces test-driven development and the extreme programming methodology.</p>
+    <p>Chris didn’t get around too much as a youngster and so he’s on a mission to catch up with travelling the world that has so far brought him to a few distant places on nearly all of the continents. He enjoys the parklife, trips to the coast and exploring the urban jungle. He’s got a healthy video gaming habit and is a bit of a Trekkie.</p>
   twitter: SIR_XOPHER
   github: SirXOPHER
   linkedin: chrisreinmuller
@@ -434,9 +446,9 @@
   image: /assets/custom/img/team/alfredo_fernandez.jpg
   role: Software Craftsperson
   fullDescription:
-   <p>Alfredo wrote his first website at the age of twelve and started playing with Visual Basic 5 at fourteen.</p>
-   <p>He loves learning and sharing and that's why he is been involved in different software communities since the start of his career. As a student, he skipped classes to attend the sessions of the first dotnet user group in Barcelona.</p>
-   <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
+    <p>Alfredo wrote his first website at the age of twelve and started playing with Visual Basic 5 at fourteen.</p>
+    <p>He loves learning and sharing and that's why he is been involved in different software communities since the start of his career. As a student, he skipped classes to attend the sessions of the first dotnet user group in Barcelona.</p>
+    <p>He has more than ten years of experience working with the dotnet ecosystem and javascript.</p>
   twitter: alfredodev
   github: alfredodev
   office: london
@@ -446,9 +458,9 @@
   image: /assets/custom/img/team/jim_bourke.jpg
   role: Analyst Craftsman
   fullDescription:
-   <p>Jim is a Business Analyst/Product Owner who has over 20 years experience in software projects. He has an extensive background with the Financial Services industry, especially within the derivatives markets, where he took a sojourn from his IT career to work as a trader.</p>
-   <p>Jim loves to work in collaborative teams, and enjoys working as a conduit between the business stakeholders and the delivery team, helping the team to understand business requirements and devise solutions. He has been an active participant in the Software Craftsmanship movement since its early days, and also enjoys attending various community Meetups. He is passionate about continuously learning and finding new ways to develop his skills, relishing the challenge of adapting in a fast evolving industry and helping his colleagues to develop as software professionals.</p>
-   <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
+    <p>Jim is a Business Analyst/Product Owner who has over 20 years experience in software projects. He has an extensive background with the Financial Services industry, especially within the derivatives markets, where he took a sojourn from his IT career to work as a trader.</p>
+    <p>Jim loves to work in collaborative teams, and enjoys working as a conduit between the business stakeholders and the delivery team, helping the team to understand business requirements and devise solutions. He has been an active participant in the Software Craftsmanship movement since its early days, and also enjoys attending various community Meetups. He is passionate about continuously learning and finding new ways to develop his skills, relishing the challenge of adapting in a fast evolving industry and helping his colleagues to develop as software professionals.</p>
+    <p>Outside of Codurance, Jim loves to travel and is an avid reader of history. He also enjoys going to the theatre and watching as much rugby, cricket and football as time permits.</p>
   twitter: bourkemeister
   github: bourkemeister
   office: london
@@ -482,7 +494,7 @@
   image: /assets/custom/img/team/chris_eyre.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Software craftsman and <a href="https://leanpub.com/development2019">author</a> Chris has over 25 years of experience working in the software development across a range of industries. He has worked in Defence, Banking, Insurance, Futures Trading, Betting and Digital Publishing. </p>
+    <p>Software craftsman and <a href="https://leanpub.com/development2019">author</a> Chris has over 25 years of experience working in the software development across a range of industries. He has worked in Defence, Banking, Insurance, Futures Trading, Betting and Digital Publishing.</p>
     <p>Chris is a life long learner, keen on Agile and Lean processes and equaly at home talking to stakeholders and developers.</p>
     <p>Chris enjoys reading, middle distance running and films.</p>
   twitter: chriseyre2000
@@ -534,8 +546,8 @@
   image: /assets/custom/img/team/alasdair_smith.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Although relatively new to the professional world of software development, Alasdair has been developing as hobby since an early age. Initially, he was drawn to development in the C programming language after discovering an interest in penetration testing and exploit development. After a brief stint working as a penetration tester, Alasdair chose to adjust his career path to focus more specifically on becoming a developer. Since then, he has graduated university with an undergraduate degree in Computer Science and worked for a software consultancy developing bespoke web applications. </p>
-    <p>As a Software Craftsman at Codurance Alasdair strives to be professional, honest and approachable. He believes strongly in the principles behind craftsmanship and mastery and seeks to apply those principles at every opportunity. </p>
+    <p>Although relatively new to the professional world of software development, Alasdair has been developing as hobby since an early age. Initially, he was drawn to development in the C programming language after discovering an interest in penetration testing and exploit development. After a brief stint working as a penetration tester, Alasdair chose to adjust his career path to focus more specifically on becoming a developer. Since then, he has graduated university with an undergraduate degree in Computer Science and worked for a software consultancy developing bespoke web applications.</p>
+    <p>As a Software Craftsman at Codurance Alasdair strives to be professional, honest and approachable. He believes strongly in the principles behind craftsmanship and mastery and seeks to apply those principles at every opportunity.</p>
     <p>Outside of work Alasdair enjoys riding his motorbike, Thai boxing, travelling and hanging out with friends.</p>
   github: midmandle
   linkedin: alasdair-smith
@@ -718,14 +730,14 @@
   image: /assets/custom/img/team/domingo_espinosa.jpg
   role: Apprentice
   fullDescription:
-      <p>Domingo Espinosa is a software developer with 10 years of experience in different companies and sectors.</p>
-      <p>He is a Java specialist, always looking for continuous improvement. He is a great team player with a serene and warm personality.</p>
-      <p>During his University years, he was very involved in the Junior Enterprise of Gran Canaria, GCC, occupying different roles and positions, including president.</p>
-      <p>When he finished his degree, together with a partner, he developed software for companies in Gran Canaria.</p>
-      <p>Looking to expand his professional expertise, he moved to Madrid and a few years later to Barcelona, where he worked in different companies of national relevance.</p>
-      <p>In the quest of improving, after some meetups, he discovered a better approach to coding and programming. This is when gets into the Software Craftsmanship world. Since then, he has followed this path.</p>
-      <p>For him, being part of the Codurance apprentice program, is fulfilling the dream of being a Craftsman. In the future, he would like to be able to guide others and spread his passion and expertise.</p>
-      <p>In his spare time, Domingo trains for triathlons and swims in open waters. He likes to spend time with his family.</p>
+    <p>Domingo Espinosa is a software developer with 10 years of experience in different companies and sectors.</p>
+    <p>He is a Java specialist, always looking for continuous improvement. He is a great team player with a serene and warm personality.</p>
+    <p>During his University years, he was very involved in the Junior Enterprise of Gran Canaria, GCC, occupying different roles and positions, including president.</p>
+    <p>When he finished his degree, together with a partner, he developed software for companies in Gran Canaria.</p>
+    <p>Looking to expand his professional expertise, he moved to Madrid and a few years later to Barcelona, where he worked in different companies of national relevance.</p>
+    <p>In the quest of improving, after some meetups, he discovered a better approach to coding and programming. This is when gets into the Software Craftsmanship world. Since then, he has followed this path.</p>
+    <p>For him, being part of the Codurance apprentice program, is fulfilling the dream of being a Craftsman. In the future, he would like to be able to guide others and spread his passion and expertise.</p>
+    <p>In his spare time, Domingo trains for triathlons and swims in open waters. He likes to spend time with his family.</p>
   github: DomingoEspinosa
   twitter: gornovah
   email: domingo.espinosa@codurance.com
@@ -736,9 +748,9 @@
   image: /assets/custom/img/team/damian_pumar.jpg
   role: Apprentice
   fullDescription:
-      <p>Damián is a fan of clean code and design patterns, he loves to read code and collaborate with open source.</p>
-      <p>He has been working on the .NET stack for several years developing desktop and web applications. Before joining Codurance, he worked as the technical leader, also he has given training courses teaching and promoting best software development practices.</p>
-      <p>In his spare time he likes hang out with his friends and listen music.</p>
+    <p>Damián is a fan of clean code and design patterns, he loves to read code and collaborate with open source.</p>
+    <p>He has been working on the .NET stack for several years developing desktop and web applications. Before joining Codurance, he worked as the technical leader, also he has given training courses teaching and promoting best software development practices.</p>
+    <p>In his spare time he likes hang out with his friends and listen music.</p>
   github: damianpumar
   email: damian.pumar@codurance.com
   office: barcelona
@@ -748,9 +760,9 @@
   image: /assets/custom/img/team/james_birnie.jpg
   role: Principal Craftsperson
   fullDescription:
-      <p>James has been working in commercial software since the 1990s when TDD was something you studied but never did, Agile and Lean were words used to describe athletes and Pipelines were things for carrying oil.</p>
-      <p>James worked for 9 years in a startup where he learned the hard way about splitting the monolith, continuous delivery and Agile transformations. In 2015 he started a new life as a consultant at ThoughtWorks where he carved a niche as a transformation specialist.</p>
-      <p>After 4 years as a consultant James was delighted to take up a new challenge at Codurance. He is looking forward to immersing himself in the Software Craftsmanship community whilst helping Codurance to grow its business and mature its offerings.</p>
+    <p>James has been working in commercial software since the 1990s when TDD was something you studied but never did, Agile and Lean were words used to describe athletes and Pipelines were things for carrying oil.</p>
+    <p>James worked for 9 years in a startup where he learned the hard way about splitting the monolith, continuous delivery and Agile transformations. In 2015 he started a new life as a consultant at ThoughtWorks where he carved a niche as a transformation specialist.</p>
+    <p>After 4 years as a consultant James was delighted to take up a new challenge at Codurance. He is looking forward to immersing himself in the Software Craftsmanship community whilst helping Codurance to grow its business and mature its offerings.</p>
   github: jimbobbirnie
   twitter: runningChairJB
   email: james.birnie@codurance.com
@@ -761,57 +773,57 @@
   image: /assets/custom/img/team/david_halewood.jpg
   role: Apprentice
   fullDescription:
-      <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
-      <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
-      <p>For many years David spent his time living in a cabin in the woods teaching children of all ages outdoor skills and learning how to "unplug" from their devices and reconnect to nature.</p>
-      <p>The irony of his career change is not lost on him.</p>
-      <p>He is constantly looking for ways to be a better developer and a better person, including attending conferences, meet-ups and giving back to the community.</p>
-      <p>In his spare time David loves to tinker with electronics, make pots on the wheel, play guitar and piano and enjoys a kick-a-bout or two each week.</p>
+    <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
+    <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
+    <p>For many years David spent his time living in a cabin in the woods teaching children of all ages outdoor skills and learning how to "unplug" from their devices and reconnect to nature.</p>
+    <p>The irony of his career change is not lost on him.</p>
+    <p>He is constantly looking for ways to be a better developer and a better person, including attending conferences, meet-ups and giving back to the community.</p>
+    <p>In his spare time David loves to tinker with electronics, make pots on the wheel, play guitar and piano and enjoys a kick-a-bout or two each week.</p>
   github: haletothewood
   twitter: craftercoder
   linkedin: david-halewood-uk
   email: david.halewood@codurance.com
-  office: London
-  
+  office: london
+
 - id: sherlockqiao
   name: Zhiqiang (Sherlock) Qiao
   image: /assets/custom/img/team/sherlock_qiao.jpg
   role: Apprentice
   fullDescription:
-      <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
-      <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
-      <p>He started his professional career in 2007 after graduation. He worked as a software developer and project architect in projects to deliver business software from scratch for various automotive OEM and suppliers. He had experiences in requirement analysis, backend and frontend development, integration, and maintenance.</p>
-      <p>For now, he is focused on learning how to design software to better adapted to changes.</p>
-      <p>He loves a lot of things in life. Cycling, trekking, kayaking, fixing things, or just doing anything with his wife. He started learning classical guitar two years ago and still keeps working on that. Good luck to that!</p>
-      <p>By the way, his first name (志强) is pronounced as [t͡siː][kʰœːŋ] in Chinese. And you are welcomed to call his nickname “Sherlock”, as it’s much easier LOL.</p>
+    <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
+    <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
+    <p>He started his professional career in 2007 after graduation. He worked as a software developer and project architect in projects to deliver business software from scratch for various automotive OEM and suppliers. He had experiences in requirement analysis, backend and frontend development, integration, and maintenance.</p>
+    <p>For now, he is focused on learning how to design software to better adapted to changes.</p>
+    <p>He loves a lot of things in life. Cycling, trekking, kayaking, fixing things, or just doing anything with his wife. He started learning classical guitar two years ago and still keeps working on that. Good luck to that!</p>
+    <p>By the way, his first name (志强) is pronounced as [t͡siː][kʰœːŋ] in Chinese. And you are welcomed to call his nickname “Sherlock”, as it’s much easier LOL.</p>
   github: sherlockq
   twitter: sherlockq
   linkedin: zhiqiang-qiao
   email: sherlock.qiao@codurance.com
-  office: London
-  
+  office: london
+
 - id: oscar_manzano
   name: Òscar Manzano
   image: /assets/custom/img/team/oscar_manzano.jpg
   role: Software Craftsman
   fullDescription:
-      <p>Òscar discovered the magic of programming at the age of 11. That was when he took his first programming course. It was about Basic programming language. Afterwards, he took 3 other programming courses (GW-Basic, C and other related disciplines like MS-DOS, DBaseIII,...very old-fashion stuff). </p>
-      <p>By the age of 16 he joined his first IT company and since then he has worked in the IT private sector, he started-up 3 companies, and worked in the research industry for +10 years. During those years he worked as an IT Consultant, Software Engineer, PM and CTO in several companies and research centres.</p>
-      <p>As a final note, he is a self-motivated person that looks for becoming a better craftsperson.</p>
-      <p>In his leasure time he likes enjoying quality time with his family, indoor cycling (computerised!), reading about technology and discovering new places.</p>
+    <p>Òscar discovered the magic of programming at the age of 11. That was when he took his first programming course. It was about Basic programming language. Afterwards, he took 3 other programming courses (GW-Basic, C and other related disciplines like MS-DOS, DBaseIII,...very old-fashion stuff).</p>
+    <p>By the age of 16 he joined his first IT company and since then he has worked in the IT private sector, he started-up 3 companies, and worked in the research industry for +10 years. During those years he worked as an IT Consultant, Software Engineer, PM and CTO in several companies and research centres.</p>
+    <p>As a final note, he is a self-motivated person that looks for becoming a better craftsperson.</p>
+    <p>In his leasure time he likes enjoying quality time with his family, indoor cycling (computerised!), reading about technology and discovering new places.</p>
   github: oscarmanzano
   email: oscar.manzano@codurance.com
   office: barcelona
-  
+
 - id: richard_hopwood
   name: Richard Hopwood
   image: /assets/custom/img/team/richard_hopwood.jpg
   role: Software Craftsperson
   fullDescription:
-      <p>Richard has been writing code since he was 6 and has never stopped, his professional career started in the ‘90s as a C++ developer in the days of Visual SourceSafe, Borland OWL, and VAX Systems. Over the past 15 years he has become a passionate advocate of software craftsmanship and building strong, self organising teams who believe in doing things “the right way.”</p>
-      <p>Outside of work Richard is a keen motorcyclist and gamer who probably spends more time than he should in virtual reality these days.</p>
+    <p>Richard has been writing code since he was 6 and has never stopped, his professional career started in the ‘90s as a C++ developer in the days of Visual SourceSafe, Borland OWL, and VAX Systems. Over the past 15 years he has become a passionate advocate of software craftsmanship and building strong, self organising teams who believe in doing things “the right way.”</p>
+    <p>Outside of work Richard is a keen motorcyclist and gamer who probably spends more time than he should in virtual reality these days.</p>
   github: vecta
   twitter: BigHairyCoder
   linkedin: richard-hopwood-41140647
   email: richard.hopwood@codurance.com
-  office: Manchester
+  office: manchester
