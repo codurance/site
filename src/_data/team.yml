@@ -63,7 +63,7 @@
   name: Giulia Mantuano
   image: /assets/custom/img/team/giulia_mantuano.jpg
   role: UX Craftswoman
-  fullDescription: >
+  fullDescription:
     <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years, developing both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
     <p>Giulia joined Codurance driven by the desire to apply the Software Craftsmanship mindset and values to the whole product and service design process.</p>
     <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, backed up by her Integrated Design background and the mastery of User Experience Design skills.</p>
@@ -336,10 +336,10 @@
   image: /assets/custom/img/team/cristina_verdi.jpg
   role: Software Craftsperson
   fullDescription:
-    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in  R+D+i departments  designing and building software for the citizens of the future.</p>
+    <p>Cristina is a software developer and continuous learner who has had the opportunity to work in R+D+i departments designing and building software for the citizens of the future.</p>
     <p>She discovered her passion for software by creating digital, interactive maps using Geographic Information Systems technologies like ArcGis and maintaning GIS databases while studying environmental engineering in Barcelona.</p>
     <p>She understands very well that due to society evolution business also evolves, In consequence, software has to be crafted in a way that it is resilient and flexible allowing constant adaption to changes in the environment. She has joined Codurance because she knows that crafting software in such a way, requires a high level of mastery, dedication, and passion. Also, she is aware about the key role that data plays in the present, and the challenges that its management brings into the tech scene; accordingly, she has special interest in the data engineering field.</p>
-    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day. </p>
+    <p>Over the years, she has sharpened an holistic thinking when approaching problem solving and combines her analytical skills together with creative thinking to reach valid and innovative solutions to the challenges that we face day by day.</p>
     <p>She constantly looks for ways to give back to the community what she receives from it. In her opinion, collaboration between peers, collectivity and mutualism are the key to success.</p>
     <p>During her free time, she enjoys listening to music, specially rockabilly and garage. She loves films and documentaries and has taken the personal challenge of reducing her carbon footprint.</p>
   twitter: cristina_verdi
@@ -494,7 +494,7 @@
   image: /assets/custom/img/team/chris_eyre.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Software craftsman and <a href="https://leanpub.com/development2019">author</a> Chris has over 25 years of experience working in the software development across a range of industries. He has worked in Defence, Banking, Insurance, Futures Trading, Betting and Digital Publishing. </p>
+    <p>Software craftsman and <a href="https://leanpub.com/development2019">author</a> Chris has over 25 years of experience working in the software development across a range of industries. He has worked in Defence, Banking, Insurance, Futures Trading, Betting and Digital Publishing.</p>
     <p>Chris is a life long learner, keen on Agile and Lean processes and equaly at home talking to stakeholders and developers.</p>
     <p>Chris enjoys reading, middle distance running and films.</p>
   twitter: chriseyre2000
@@ -546,8 +546,8 @@
   image: /assets/custom/img/team/alasdair_smith.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Although relatively new to the professional world of software development, Alasdair has been developing as hobby since an early age. Initially, he was drawn to development in the C programming language after discovering an interest in penetration testing and exploit development. After a brief stint working as a penetration tester, Alasdair chose to adjust his career path to focus more specifically on becoming a developer. Since then, he has graduated university with an undergraduate degree in Computer Science and worked for a software consultancy developing bespoke web applications. </p>
-    <p>As a Software Craftsman at Codurance Alasdair strives to be professional, honest and approachable. He believes strongly in the principles behind craftsmanship and mastery and seeks to apply those principles at every opportunity. </p>
+    <p>Although relatively new to the professional world of software development, Alasdair has been developing as hobby since an early age. Initially, he was drawn to development in the C programming language after discovering an interest in penetration testing and exploit development. After a brief stint working as a penetration tester, Alasdair chose to adjust his career path to focus more specifically on becoming a developer. Since then, he has graduated university with an undergraduate degree in Computer Science and worked for a software consultancy developing bespoke web applications.</p>
+    <p>As a Software Craftsman at Codurance Alasdair strives to be professional, honest and approachable. He believes strongly in the principles behind craftsmanship and mastery and seeks to apply those principles at every opportunity.</p>
     <p>Outside of work Alasdair enjoys riding his motorbike, Thai boxing, travelling and hanging out with friends.</p>
   github: midmandle
   linkedin: alasdair-smith
@@ -814,7 +814,7 @@
   github: oscarmanzano
   email: oscar.manzano@codurance.com
   office: barcelona
-  
+
 - id: richard_hopwood
   name: Richard Hopwood
   image: /assets/custom/img/team/richard_hopwood.jpg
