@@ -33,8 +33,6 @@ Go to your client project and select configure. Create a post-build action and s
 
 ![archive artifacts](/assets/custom/img/blog/jenkinsPost/archiveArtifacts.png)
 
-{% include mid_banner_ad.html %}
-
 ## Step 3: Install the Copy Artifact plugin
 
 Next you need to install the [Copy Artifact plugin](https://wiki.jenkins.io/display/JENKINS/Copy+Artifact+Plugin) in the Manage Plugins section of Jenkins. Go to "[PROJECT-NAME]-Output" > configure and add a new build step. Because you have installed the Copy Artifact plugin you should see an option called ‘copy artifacts from another project’ in the drop down menu. Specify the folder or files you want copied and set the location path. Notice that we set set our location to "var/www/clients/…". This leads to a new folder on the server (we were using an Apache server on an Amazon EC2 instance). Don't do what we did and set the path using an http address(!).

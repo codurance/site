@@ -140,7 +140,7 @@ aws lambda create-function \
 ```
 
 Make the script executable ```chmod +x deploy.sh``` and deploy your lambda ```./deploy.sh```. You may get the following error: "The role defined for the function cannot be assumed by Lambda." This is because the role has not been replicated through in the Amazon infra. Just run the deploy script again. It will complain that the role already exists but this time the lambda creation should pass. In the future we will look at a status check to make sure that the role has been fully created before we deploy the function.
-{% include mid_banner_ad.html %}
+
 ### Step 4: The Execution!
 
 Invoke your lambda with the below command. You should see the result in the file called ```output.txt```

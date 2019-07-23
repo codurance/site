@@ -1,22 +1,17 @@
-{% assign now_date = 'now' | date: '%s' %}
-{% assign banner_until_date = "2018-10-04" | date: '%s' %}
-
-{% if now_date < banner_until_date %}
-<section class="g-pa-30 g-mt-50 g-mb-50" style="margin: 0 calc(50% - 50vw); background-color: #2D2D2D">
+<div id="middle-banner">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <div class="row">
-                    <div class="col-md-3 text-center">
-                        <img class="g-width-220" src="/assets/custom/img/sc-london18_white.png" alt="SC London" />
-                    </div>
-                    <div class="col-md-9 g-flex-middle-item text-right">
-                        <h4 class="g-font-weight-400 g-color-white text-left" style="color: #fff!important; font-size: 12pt;">Join us at SC London 2018 and celebrate the 10 year anniversary of the Software Craftsmanship Movement. Featuring <b>Uncle Bob Martin, Michael Feathers, Sandro Mancuso</b> and many more!</h4>
-                        <a class="btn btn-md ban-btn-offblack text-uppercase" href="http://sc-london.com/#about"> Learn More</a>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12 text-center col-lg-2 text-lg-left align-self-center">
+                <img class="img-fluid g-width-50x g-width-auto--lg" src="{{ '/assets/custom/img/sc-london19.png' | prepend: site.baseurl}}" alt="SC London"/>
+            </div>
+            <div class="col-12 text-center col-lg-8 g-my-25">
+                <h4 class="g-font-weight-400 g-color-white">
+                    The place where passionate Software Craftspeople, <br/>
+                    Community, Experts & Thought Leaders come together
+                </h4>
+                <br/>
+                <a class="btn btn-md ban-btn-offblack text-uppercase" href="http://sc-london.com/#about" target="_blank">Book your ticket now!</a>
             </div>
         </div>
     </div>
-</section>
-{% endif %}
+</div>

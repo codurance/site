@@ -82,8 +82,6 @@ There can not be an if without an else. Switches and pattern matching should alw
 
 **Complete functions.** A function should know how to deal with all possible values passed as arguments.
 
-{% include mid_banner_ad.html %}
-
 ## Do Not Use Intermediate Variables
 
 This rule is mostly preparation work.
