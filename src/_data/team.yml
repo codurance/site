@@ -827,3 +827,16 @@
   linkedin: richard-hopwood-41140647
   email: richard.hopwood@codurance.com
   office: manchester
+
+- id: andrei_bogomja
+  name: Andrei Bogomja
+  image: /assets/custom/img/team/andrei_bogomja.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Andrei discovered his passion for programming and software engineering while studying publishing in London.</p>
+    <p>While not being a stranger to the world of computers and IT, he worked for quite a while in creative industries as a graphic designer, photographer, and video editor for a post-production company. The revelation about his next career move came to him while he was working on a project not directly related to programming in which he discovered his passion for the field. After gaining his degree in publishing, he enrolled for an undergraduate Computing course at the University of London.</p>
+    <p>Andrei likes to create high-quality software by writing code that is clean, simple and bug-free. He is pleased to have the opportunity to learn the best of TDD and Extreme Programming practices from the software craftspeople at Codurance.</p>
+    <p>When not coding in Java or tweaking JVM knobs, he likes to spend time with his family and take pictures of his cat.</p>
+  github: ifqthenp
+  email: andrejs.bogomja@codurance.com
+  office: london
