@@ -1,5 +1,3 @@
-{% include mid_banner_ad.html %}
-
 {% if page.image.src and page.image.src contains '://' %}
     {% assign pageImgUrl = page.image.src %}
 {% elsif page.image.src %}
@@ -24,6 +22,8 @@
         <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
     </div>
 </section>
+
+{% include mid_banner_ad.html %}
 
 <section class="container">
     <div class="row">
