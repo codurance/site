@@ -33,7 +33,7 @@
                     {% assign author = site.data.team | where: "name", page.author | first %}
                     {% if author and page.asset-type != "newsletter" %}
                         <div class="media">
-                            <img class="u-icon-v2 g-rounded-50 g-mr-30" src="{{ author.image  | prepend: site.baseurl }}" alt="{{ author.name }} Image">
+                            <img class="u-icon-v2 g-rounded-50 g-mr-15" src="{{ author.image  | prepend: site.baseurl }}" alt="{{ author.name }} Image">
                             <div class="media-body">
                                 <h5 class="g-color-black g-font-weight-600">{{ author.name | author_links}}</h5>
                                 <a class="g-font-weight-600 g-font-size-12"
