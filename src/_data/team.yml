@@ -840,3 +840,16 @@
   github: ifqthenp
   email: andrejs.bogomja@codurance.com
   office: london
+
+- id: ivan_katzarski
+  name: Ivan Katzarski
+  image: /assets/custom/img/team/ivan_katzarski.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Ivan’s background starts with a degree in Economics, however, this was never his passion. Of all Economics subjects, he enjoyed Behavioural Economics where working with people was essential. Luckily, his path led him to a second degree in Software Development where he was finally able to fully dedicate his time to what he is most passionate about.</p>
+    <p>His professional career started in the utility sector where he learned about the full software lifecycle. He was involved in customer interaction, requirements gathering, software deployment, configuration, Linux administration and security, and in writing small pieces of software to support internal processes.</p>
+    <p>Ivan loves learning about and implementing new technologies and software engineering paradigms. He strongly believes that technology should not be created or used just for the sake of the technology itself. While picking up and learning about new software is extremely exciting, the aim of the engineer should be to improve people’s lives and him or herself through his craft. Improvement is more beneficial, fun and easier when done with other people, teamwork is key.</p>
+    <p>In his free time, Ivan enjoys sports (especially basketball) and trying new types of food. He is also a big fan of anime and fantasy books.</p>
+  github: ikatzarski
+  email: ivan.katzarski@codurance.com
+  office: london
