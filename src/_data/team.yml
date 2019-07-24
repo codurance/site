@@ -838,3 +838,16 @@
   github: ikatzarski
   email: ivan.katzarski@codurance.com
   office: london
+
+- id: matt_gray
+  name: Matt Gray
+  image: /assets/custom/img/team/matt_gray.jpg
+  role: Apprentice
+  fullDescription:
+    <p> Matt has a varied work background which includes music production, audio editing and sound design for computer games, writing music for film, TV and various independent record labels; DJing, technical support at a music technology college; and for the 5 years prior to beginning the apprenticeship at Codurance, teaching and managing Computer Science departments in secondary schools.</p>
+    <p> With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts using Python and various teaching tools, as well as learning enough Computer Science theory to teach it at A-Level, whilst also picking up a bit of Java, OO design, Javascript and HTML along the way.</p>
+    <p> He developed a strong passion for solving problems using well written code, which urged him to shift career paths once again and begin his journey towards mastery in software craftsmanship. He has spent the last couple of years relentlessly studying and practicing Java programming and TDD and is extremely excited to have become a part of the software craftsmanship community.</p>
+    <p> In his free time he enjoys making and listening to music, playing trombone in his band and spending time with family, friends and especially his 3 year old son.</p>
+  github: mattgraygithub
+  email: matthew.gray@codurance.com
+  office: london
