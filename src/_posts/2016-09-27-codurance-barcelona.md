@@ -7,6 +7,9 @@ slug: codurance-barcelona
 title: Codurance Barcelona
 image:
     src: /assets/custom/img/blog/2016-09-27-codurance-barcelona.jpg
+    attribution:
+            text: Photo by Bert Kaufmann on Flickr
+            href: https://www.flickr.com/photos/22746515@N02/2419053076
 tags:
 - codurance
 ---
