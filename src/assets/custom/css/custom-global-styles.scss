@@ -80,18 +80,20 @@ h1, h2, h3, h4, h5 {
     color: #FF4301 !important;
 }
 
-#middle-banner {
-    background-color: #2D2D2D;
-    overflow: hidden;
-    position: relative;
+.closable-with-cookie {
     display: none;
+    position: relative;
 
     .closer {
         position: absolute;
         top: 5px;
         right: 5px;
-        color: white;
     }
+}
+
+#middle-banner {
+    background-color: #2D2D2D;
+    overflow: hidden;
 }
 
 

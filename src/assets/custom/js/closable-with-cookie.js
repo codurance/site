@@ -49,10 +49,11 @@ $(function () {
   function init(index, closable) {
     var cookieName = $(closable).data('cookie-name');
 
+    createCloseButton(closable, cookieName);
+
     if (hasCookie(cookieName)) {
       close(closable);
     } else {
-      createCloseButton(closable, cookieName);
       open(closable);
     }
   }
