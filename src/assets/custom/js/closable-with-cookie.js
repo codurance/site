@@ -5,6 +5,10 @@ $(function () {
     $(closable).hide();
   }
 
+  function open (closable) {
+    $(closable).show();
+  }
+
   function readCookie (name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -32,7 +36,7 @@ $(function () {
   }
 
   function createCloseButton (closable, cookieName) {
-    var closer = $('<button>Close</button>');
+    var closer = $('<button class="closer btn btn-sm btn-dark">&times;</button>');
 
     closer.on('click', function () {
       close(closable);
@@ -49,6 +53,7 @@ $(function () {
       close(closable);
     } else {
       createCloseButton(closable, cookieName);
+      open(closable);
     }
   }
 

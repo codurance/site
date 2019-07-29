@@ -83,5 +83,15 @@ h1, h2, h3, h4, h5 {
 #middle-banner {
     background-color: #2D2D2D;
     overflow: hidden;
+    position: relative;
+    display: none;
+
+    .closer {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: white;
+    }
 }
+
 
