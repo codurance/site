@@ -710,24 +710,6 @@
   email: ruth.diaz@codurance.com
   office: barcelona
 
-- id: domingo_espinosa
-  name: Domingo Espinosa
-  image: /assets/custom/img/team/domingo_espinosa.jpg
-  role: Apprentice
-  fullDescription:
-    <p>Domingo Espinosa is a software developer with 10 years of experience in different companies and sectors.</p>
-    <p>He is a Java specialist, always looking for continuous improvement. He is a great team player with a serene and warm personality.</p>
-    <p>During his University years, he was very involved in the Junior Enterprise of Gran Canaria, GCC, occupying different roles and positions, including president.</p>
-    <p>When he finished his degree, together with a partner, he developed software for companies in Gran Canaria.</p>
-    <p>Looking to expand his professional expertise, he moved to Madrid and a few years later to Barcelona, where he worked in different companies of national relevance.</p>
-    <p>In the quest of improving, after some meetups, he discovered a better approach to coding and programming. This is when gets into the Software Craftsmanship world. Since then, he has followed this path.</p>
-    <p>For him, being part of the Codurance apprentice program, is fulfilling the dream of being a Craftsman. In the future, he would like to be able to guide others and spread his passion and expertise.</p>
-    <p>In his spare time, Domingo trains for triathlons and swims in open waters. He likes to spend time with his family.</p>
-  github: DomingoEspinosa
-  twitter: gornovah
-  email: domingo.espinosa@codurance.com
-  office: barcelona
-
 - id: damian_pumar
   name: Damián Pumar
   image: /assets/custom/img/team/damian_pumar.jpg
