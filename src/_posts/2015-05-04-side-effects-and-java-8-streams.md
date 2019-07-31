@@ -79,7 +79,7 @@ When in fact we'll have:
 - Third. My number is 4
 
 A clever reader could state that the problem was the inclusion of some non-stream operation in the middle of a lazy pipeline. That could be true. For instance when you work in asynchronous code like promises in Node.js is quite important not to mix sequential code with the async chain without a lot of a thought.
-{% include mid_banner_ad.html %}
+
 ## Understanding laziness through Optional API.
 
 Non-immediate execution using threads, RxJava, streams or any "lazy" construct could be confusing for a Java developer used to sequential flows. This is a really silly example using Java 8 Optional API that confused me the first time that I saw it:

@@ -10,12 +10,12 @@ role_aliases = {
   "Software Craftsman" => "Software Craftspeople",
   "Software Craftswoman" => "Software Craftspeople",
   "Software Craftsperson" => "Software Craftspeople",
+  "Principal Craftsperson" => "Software Craftspeople",
   "Head of Recruitment (UK)" => "Head of Recruitment",
   "Head of Sales (Spain)" => "Head of Sales",
   "Head of Professional Services (Spain)" => "Head of Professional Services",
   "Analyst Craftsman" => "Analyst Craftspeople",
   "Analyst Craftsperson" => "Analyst Craftspeople"
-
 }
 
 team = YAML.load_file('team.yml').map { |person|

@@ -67,3 +67,33 @@ h1, h2, h3, h4, h5 {
         text-align: center;
     }
 }
+
+.g-color-reddit {
+    color: #FF4301;
+}
+
+.g-bg-reddit {
+  background-color: #FF4301;
+}
+
+.g-color-reddit--hover:hover {
+    color: #FF4301 !important;
+}
+
+.persisted-closable {
+    display: none;
+    position: relative;
+
+    .closer {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+#middle-banner {
+    background-color: #2D2D2D;
+    overflow: hidden;
+}
+
+

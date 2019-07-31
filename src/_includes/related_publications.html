@@ -3,13 +3,18 @@
 
     <h6 class="g-color-black g-font-weight-600 text-center text-uppercase mb-5">{% t post-related_posts.title%}</h6>
 
-    <div class="row row-eq-height">
+    <div class="row mb-5">
+      <div class="col text-center">
+        {% include tags.html tags=page.tags %}
+      </div>
+    </div>
+
+    <div class="row">
       {% assign related_posts = site.related_posts | slice: 0, 3 %}
 
       {% for post in related_posts %}
         {% include post.html post=post %}
       {% endfor %}
-
     </div>
   </div>
 </section>

@@ -635,10 +635,10 @@ projects:
                      <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
     outcome: <p>By working closely with the Coniq team and through regular communication, we were able to deliver the MVPs within the budget available for the project. Upon handover, the Coniq team were able to take over full ownership of the project and had the skills and processes in place to work through the remainder of their product backlog.</p>
   AWS:
+    link-text: Case Study at AWS
     short_description: Software Craftsmanship helped our team to build an AWS-based, serverless event registration platform for Amazon in just 6 weeks.
-    subtitle: <p>Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business.</p>
-              <p>Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.</p>
-    about: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
+    long_description: Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business. Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.
+    client_description: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
     the_challenge: <p>AWS wanted to create a custom event registration system for their Pop-Up Loft event series in the UK, since existing third-party solutions compromised on the overall customer experience. This system would include a fully-functional event website, real-time data reporting functionality and an on-site event check-in system.</p>
                    <p>AWS saw this as an ideal opportunity to create a brand new system on AWS, using the internally developed ‘Gold Standard’ serverless architecture design and Amazon services such as Amazon Lambda, CloudFront, API Gateway and Amazon S3. The front end was developed in Angular JS and Clojure was used to build the backend.</p>
                    <p>AWS had limited internal resources to develop the project and needed a partner with expertise in both their technologies, security requirements and Agile methodologies.</p>
@@ -649,14 +649,21 @@ projects:
                      <p>Part of the feature set included a reporting tool to provide the business with detailed reports on the event. We spent time to help train the AWS marketing team on how to use the system.</p>
     outcome: <p>Given the tight feedback loops and real-time interactions with the Product Owner, we were able to deliver both the MVPs for the project and several additional features ahead of the deadline. The event team were able to respond quickly to demand via the real-time data analysis (for instance session scheduling, staff rotas) and report session take-up and popularity to stakeholders.</p>
              <p>AWS invited Codurance to add additional features to the system so that it could be used at future events. Our team also gave a talk on Software Craftsmanship at the AWS Summit London 2016.</p>
+  MANDG:
+    link-text: Case Study at M&G
+    short_description: We provided expertise and guidance for upskilling and Azure migration.
+    long_description: We helped M&G on their Azure migration, while at the same time upskilling their developers and improving their codebase.
+    client_description: M&G are one of the UK’s largest and longest established investment houses, with more than 80 years’ experience of asset management. M&G manage £285.8 billion of customer assets (as of June 2018) in investments including bonds, equities, infrastructure, property, alternatives and cash, across 23 territories.
+    the_challenge: <p>M&G wanted their new integration system project to be built on the  Microsoft Azure Cloud platform and needed external expertise and guidance to help support their existing architecture and development teams. 
+    our_sc_approach: <p>We provided a team of Software Craftspeople with expertise in Azure, .Net, Node and Web front-end technologies. In conjunction with M&G’s other teams and architects, they formed the core of a delivery team that built a scalable, distributed and highly available integration system that is responsible for propagating, querying and reporting the investment trades in a standardised format. Technologies included Google Apigee, Azure Data Lake, Data Lake Analytics, Data Factory, Databricks, Cosmos DB and Functions.
+    outcome: <p>We helped M&G to instill a culture of learning within their teams, running regular coaching sessions to improve their Test Driven Development and other skills.
   MANDS:
     link-text: Case study at M&S
     short_description: We helped transition their processes to cater for new projects
-    long_description: We provided mentoring and support at M&S, while there was a cultural transformation helping them prepare for their new projects and environment.
+    long_description: We provided mentoring and support at M&S, while there was a cultural transformation helping them prepare for their new projects and environments.
     client_description: Marks and Spencer is a major British multinational retailer, specialising in the selling of clothing, home products and luxury food products.
-    the_challenge: <p>Marks and Spencers’ engineering department was entering a period of cultural change, with people being re-assigned to new teams ahead of several large digital projects. 
+    the_challenge: <p>Marks and Spencers’ engineering department was entering a period of cultural change, with people being re-assigned to new teams ahead of several large digital projects.
     our_sc_approach: <p>With our connections to the wider community and passion for Software Craftsmanship, Codurance were seen as a partner that could help to raise both code quality and to help establish a new team with this department through mentoring and guidance.
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.
-             <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.
+             <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.	
              <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.
-
