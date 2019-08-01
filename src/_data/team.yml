@@ -820,3 +820,15 @@
   github: mattgraygithub
   email: matthew.gray@codurance.com
   office: london
+
+  - id: enric_jorda
+  name: Enric Jorda
+  image: /assets/custom/img/team/enric_jorda.jpg
+  role: Apprentice
+  fullDescription:
+    <p> Enric has been playing with computers since his teens, developing games with school friends brought him to become first a front end developer and then a game developer, prior to joining Codurance. </p>
+    <p> After working in a lot of projects for the last 15 years, he has realized that working correctly, tooling and doing things the right way saves time. And now he is having fun like child learning the craftsman way. </p>
+    <p> In his free time he enjoys spending time with his family and playing with his 2 daughters. He also tries to find a bit of time for his padel addiction. </p>
+  github: enricjorda
+  email: enric.jorda@codurance.com
+  office: barcelona
