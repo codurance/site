@@ -170,19 +170,6 @@
   twitter: lilistahr
   office: barcelona
 
-- id: andrzejrehmann
-  name: Andrzej Rehmann
-  image: /assets/custom/img/team/andrzej_rehmann.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Andrzej is a software developer with a weak spot for automation done right.</p>
-    <p>He believes that the only way to go fast is to go clean and that software development is a marathon not a sprint.</p>
-    <p>Having been both on the development and operation side of software projects he acknowledges the complexity of both words.</p>
-    <p>Outside of working hours he likes to sit back and relax with a good sci-fi audiobook.</p>
-  twitter: andrzejrehmann
-  github: hoto
-  office: london
-
 - id: richardwild
   name: Richard Wild
   image: /assets/custom/img/team/richard_wild.jpg
