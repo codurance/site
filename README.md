@@ -82,6 +82,13 @@ Note (Jorge): `docker-compose up` works for me, but there is no automated refres
 - `gem install bundler`
 - `bundle install`
 
+note that you will need to have GSL (GNU Scientific Library) installed for Ruby to be able to install the gsl gem.
+
+- Debian/Ubuntu: `apt-get install libgsl0-dev`
+- Fedora/SuSE: `yum install gsl-devel`
+- Gentoo: `emerge sci-libs/gsl`
+- OS X: `brew install gsl`
+
 run locally:
 
 1. `rake servequick`
