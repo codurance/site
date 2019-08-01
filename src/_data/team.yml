@@ -820,3 +820,18 @@
   github: mattgraygithub
   email: matthew.gray@codurance.com
   office: london
+
+- id: gregory_cann
+  name: Gregory Cann
+  image: /assets/custom/img/team/gregory_cann.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Greg has been around computers since before he could walk, and has always been fascinated by them.</p>
+    <p>He first started tinkering with computers in junior school assembling hardware for friends and family.</p>
+    <p>He has been passionate about it all his life, learning Turbo Pascal and Java when reaching high school.</p>
+    <p>He went on to his first job at a Mobile Marketing agency building SMS Gateways and websites at the birth of the mobile era.</p>
+    <p>He avidly pursues technology in all forms, and is conscious that passion and pragmatism is important and constantly exploring ways to make things better.</p>
+    <p>He has spent the last 10+ years honing his skill the fintech industry, both leading and working with great people and pursuing his purpose and dream of building great things together.</p>
+  github: codurance-greg-cann
+  email: gregory.cann@codurance.com
+  office: london
