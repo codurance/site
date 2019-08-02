@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: london-office
 title: New London Office
-date: 2019-07-01 00:05:00 +00:00
+date: 2019-08-02 00:05:00 +00:00
 author: Sandro Mancuso, Mashooq Badar
 description: London Office
 image:
-   src: /assets/custom/img/blog/2019-07-01-new-london-office/sign.jpg
+   src: /assets/custom/img/blog/2019-08-02-new-london-office/office-main/New-Office-10.jpg
 tags:
 - codurance
 ---
@@ -22,7 +22,7 @@ The search took a few months but we have found a great space at 3 Sutton Lane, L
 
 We look forward to welcoming you to our new home!
 
-Here are a few photos of the new space:-
+Here are a few photos of our new space:-
 
 </br>
-{% include post_gallery.html %}
+{% include new_office_post_gallery.html %}
