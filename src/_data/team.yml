@@ -688,8 +688,7 @@
   name: Ruth Díaz
   image: /assets/custom/img/team/ruth_diaz.jpg
   role: Office Manager
-  fullDescription:
-    <p>She’s joining as Office Manager at Barcelona Office.</p>
+  fullDescription: <p>She’s joining as Office Manager at Barcelona Office.</p>
     <p>She’s graduated in Business Administration Management, and has been working in companies like Booking.com, King (Candy Crush mobile games), Sellbytel Group or Duty-Free among others.</p>
     <p>Games and music are her passion and fill her spare time (she plays electric bass and play board games). Living without coffee is not an option.</p>
   linkedin: rdiaztic
@@ -819,6 +818,19 @@
     <p> In his free time he enjoys making and listening to music, playing trombone in his band and spending time with family, friends and especially his 3 year old son.</p>
   github: mattgraygithub
   email: matthew.gray@codurance.com
+
+- id: tacuma_bellford
+  name: Tacuma Bellford
+  image: /assets/custom/img/team/tacuma_bellford.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Tacuma’s background is in Linguistics and enjoys learning languages, for machines and humans. Computational Linguistics, is what sparked his interest in software development. His motivation comes from the thought of being able to bring ideas to life using technology.</p>
+    <p>His professional career began at a startup solving a problem in the medical education sector. He was involved in the front end aspect of development and also in some decisions regarding the direction of the platform.</p>
+    <p>Tacuma is focused on improving his craft in software development. He is keen on further development of fundamental principles and practices that are core to crafting high quality software. Tacuma is also passionate about sharing knowledge and being an effective team member. His passion for knowledge sharing and diversity inspired him to create Black Devs London, which is a Meetup group that provides a support network for Black developers in London.</p>
+    <p>Tacuma enjoys spending time with his family, learning languages, and playing or watching basketball. Fun fact, Tacuma is a huge Hip Hop fan and was a member of a Hip Hop group, in which he performed with while stationed in Tokyo, Japan.</p>
+  github: takumab
+  linkedin: tacumabell
+  email: tacuma.bellford@codurance.com
   office: london
 
 - id: gregory_cann
