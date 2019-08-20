@@ -847,3 +847,16 @@
   github: ferwguerra
   email: fernando.guerra@codurance.com
   office: barcelona
+
+- id: josep_mir
+  name: Josep Mir
+  image: /assets/custom/img/team/josep_mir.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Josep spent most of his youth studying different degrees in computer science, always trying to gather more knowledge from this wide field. It was everything around the software engineering process which hooked him to this science.</p>
+    <p>In his professional career he has been working for a big international consultancy company and also for a small new born startup. This experience brought him the perspective from both worlds, where things are difficult and slow to change and also where the changes are continuous and dealing with uncertainty is just a daily routine.</p>
+  github: jmir17
+  linkedin: jmir17
+  email: josep.mir@codurance.com
+  office: barcelona
+  
