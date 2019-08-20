@@ -108,24 +108,26 @@ title: Our Story
           </div>
           <div class="col-md-6 col-sm-6">
             <!-- Business Hours -->
-            <h3>{% t company-contact-form.title %}</h3>
-            <p>{% t company-contact-form.offices_introduction %}:
-            <ul>
-                <li>
-                    <b>{% t offices.ldn.city %}</b>:
-                    {% t offices.ldn.phone %}
-                </li>
-                <li>
-                    <b>{% t offices.bcn.city %}</b>:
-                    {% t offices.bcn.phone %}
-                </li>
-                <li>
-                    <b>{% t offices.man.city %}</b>:
-                    {% t offices.man.phone %}
-                </li>
-            </ul>
-            </p>
-            <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
+            <div class="offices-info">
+              <h3>{% t company-contact-form.title %}</h3>
+              <p>{% t company-contact-form.offices_introduction %}:
+              <ul>
+                  <li>
+                      <b>{% t offices.ldn.city %}</b>:
+                      {% t offices.ldn.phone %}
+                  </li>
+                  <li>
+                      <b>{% t offices.bcn.city %}</b>:
+                      {% t offices.bcn.phone %}
+                  </li>
+                  <li>
+                      <b>{% t offices.man.city %}</b>:
+                      {% t offices.man.phone %}
+                  </li>
+              </ul>
+              </p>
+              <p>{% t company-contact-form.subtitle %}: <a href="mailto:{% t office.email %}" target="_blank">{% t office.email %}</a></p><br/>
+            </div>
             <!--[if lte IE 8]>
               <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
             <![endif]-->
