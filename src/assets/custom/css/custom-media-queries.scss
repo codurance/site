@@ -45,6 +45,22 @@
             }
         }
     }
+
+    .client-image {
+        position: absolute;
+    }
+
+    .client-body {
+        padding-top: 6em;
+    }
+
+    .client-name {
+        display: none;
+    }
+
+    .client-project {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Laptop */
