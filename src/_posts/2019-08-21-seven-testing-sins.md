@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: seven-testing-sins
 title: Seven Testing Sins and How To Avoid Them
-date: 2019-08-08 00:05:00 +00:00
+date: 2019-08-21 18:00:00 +00:00
 author: Sam Davies
 description: Seven testing mistakes and how to avoid them by writing readable test code
 image:
