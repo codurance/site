@@ -14,7 +14,7 @@ tags:
 ---
 
 # Seven Testing Sins and How To Avoid Them
-Within this article I will be using Java within code snippets, whilst also using [JUnit](https://junit.org/junit5/) and
+Throughout this article I will be using Java within code snippets, whilst also using [JUnit](https://junit.org/junit5/) and
 [Mockito](https://site.mockito.org).
 
 This article aims to provide examples of test code which can be:
