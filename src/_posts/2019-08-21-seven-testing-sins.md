@@ -88,7 +88,8 @@ of course ignoring a similar thing happening with our friend "Darth Vader".
 
 This level of mutation **distracts** from what is happening in the test. If we revisit my earlier sentence for a second:
 
-    It is very likely within tests you will have a desire to construct objects used within a test to be in a certain state
+> It is very likely within tests you will have a desire to construct objects used within a test to be in a certain state
+
 However, what is happening in the above test is actually two stages:
 
 - Construct objects
