@@ -7,7 +7,7 @@ date: 2019-08-08 00:05:00 +00:00
 author: Sam Davies
 description: Seven testing mistakes and how to avoid them by writing readable test code
 image:
-   src: /assets/custom/img/blog/
+   src: /assets/custom/img/blog/seven-testing-sins.jpg
 tags:
 - testing
 - mocking
