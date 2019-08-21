@@ -241,6 +241,7 @@ void denies_entry_for_someone_who_is_not_old_enough() {
 ```
 
 Now when we look at the above we know that:
+
 - `SEVENTEEN_YEARS` is the value used to represent 17 years, we have left no doubt in the reader's mind. It is not seconds
 or minutes, it is years.
 - `MINIMUM_AGE_FOR_ENTRY` is the value for which someone has to be to be allowed to enter the nightclub. The reader
