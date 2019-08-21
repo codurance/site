@@ -14,7 +14,7 @@ tags:
 ---
 
 # Seven Testing Sins and How To Avoid Them
-Within this article I will be using Java within code snippets, whilst also using [JUnit](https://junit.org/junit5/) and
+Throughout this article I will be using Java within code snippets, whilst also using [JUnit](https://junit.org/junit5/) and
 [Mockito](https://site.mockito.org).
 
 This article aims to provide examples of test code which can be:
@@ -88,7 +88,8 @@ of course ignoring a similar thing happening with our friend "Darth Vader".
 
 This level of mutation **distracts** from what is happening in the test. If we revisit my earlier sentence for a second:
 
-    It is very likely within tests you will have a desire to construct objects used within a test to be in a certain state
+> It is very likely within tests you will have a desire to construct objects used within a test to be in a certain state
+
 However, what is happening in the above test is actually two stages:
 
 - Construct objects
@@ -113,6 +114,7 @@ void inform_when_character_is_luke_skywalker() {
 As we can see from the above, we have reduced the number of lines of code, as well as the mutation of objects. However,
 in the process we have lost the meaning of what the - now parameters of `Character` - represent in the test. In order
 for the `isLuke()` method to return true the `Character` object we pass in must have the following:
+
 - Name of "Luke Skywalker"
 - Have a father named "Darth Vader"
 - Be a Jedi
@@ -216,6 +218,7 @@ void denies_entry_for_someone_who_is_not_old_enough() {
 ```
 
 Reading the above you might have a few questions, such as:
+
 - what does the `17` mean?
 - what does the `21` mean in the constructor?
 
@@ -429,7 +432,8 @@ The above code is not perfect, but it certainly provides a high level overview o
 context of the current test.
 
 ## Closing words
-I hope you enjoyed this article and will spend a refactoring step or two next time you finish writing a test.
+I hope you enjoyed this article and will spend a refactoring step or two next time you finish writing a test. Until
+next time, I leave you with the following quote:
 
 >"Programs must be written for people to read, and only incidentally for machines to execute." 
 ― Harold Abelson, Structure and Interpretation of Computer Programs
