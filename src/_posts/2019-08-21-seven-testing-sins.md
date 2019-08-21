@@ -432,7 +432,8 @@ The above code is not perfect, but it certainly provides a high level overview o
 context of the current test.
 
 ## Closing words
-I hope you enjoyed this article and will spend a refactoring step or two next time you finish writing a test.
+I hope you enjoyed this article and will spend a refactoring step or two next time you finish writing a test. Until
+next time, I leave you with the following quote:
 
 >"Programs must be written for people to read, and only incidentally for machines to execute." 
 ― Harold Abelson, Structure and Interpretation of Computer Programs
