@@ -27,7 +27,7 @@ tests, which in turn will help to make them easier to maintain in the future.
 Creating good examples is challenging and so as a reader I encourage you to use the examples simply as a tool to
 appreciate the underlying message of this article, which is to strive for readable test code.
 
-## Generic test names
+## 1. Generic test names
 You might have seen tests named like the below
 
 ```java
@@ -58,7 +58,7 @@ As we can see from the above, it does a better job of explaining what this test 
 name your test file something like `TranslatorShould` you can form a reasonable sentence in your mind when you combine
 the test file and the individual test name: `Translator should translate from number to word`.
 
-## Mutation in test setup
+## 2. Mutation in test setup
 It is very likely within tests you will have a desire to construct objects used within a test to be in a certain state.
 There are different ways of doing this, the below shows one such way. In this snippet we are deciding whether a 
 character is in fact "Luke Skywalker", based on information contained in that object (imagine this is what the `isLuke()`
@@ -140,7 +140,7 @@ void inform_when_character_is_luke_skywalker() {
 
 With the above there might be a few more lines, but it attempts to explain what is important within the test.
 
-## Assertion madness
+## 3. Assertion madness
 During testing you are going to assert/verify something has happened in your system (commonly located near the end of 
 each test). This is a very important step within the test, and it could be tempting to add a number of assertions, 
 asserting values of a returned object for example.
@@ -195,7 +195,7 @@ void successfully_upgrades_user() {
 Now we are comparing the user that is upgraded against what we expect the object to look like after being upgraded. In
 order to do this you will need the object being compared (`User`) to have overridden `equals` and `hashCode`.
 
-## Magic values
+## 4. Magic values
 Have you ever looked at a number or a string and wondered what it represents? I have and those precious seconds of
 having to parse lines of code can start to add up quickly. We have an example of such code below.
 
@@ -251,7 +251,7 @@ it could be improved.
 
 The key here is to reduce the time readers of your code need to spend attempting to parse lines of code.
 
-## Hard to read test names
+## 5. Hard to read test names
 
 ```java
 @Test
@@ -288,7 +288,7 @@ This is a matter of preference, and should be agreed by those who contribute to 
 sentence. Therefore, the use of snake case closely follows physical spaces present in a normal written sentence.
 However, Java does not allow spaces in method names and it is the best we have, short of using something like Spock.
 
-## Setters for dependency injection
+## 6. Setters for dependency injection
 Often for testing you want to be able to inject dependencies for a given object (also known as "collaborating objects"
 or simply "collaborators"). You might have seen something like the below in order to achieve this:
 
@@ -361,7 +361,7 @@ void save_a_product() {
 This solution has enabled us to avoid mutating the `ProductService` whilst documenting the injection of a collaborator
 via the `withRepository()` method.
 
-## Non-descriptive verifications
+## 7. Non-descriptive verifications
 As mentioned previously your tests will often contain verification statements. Instead of rolling your own you will
 often utilise a library to do this. However, you have to be careful not to mask the intent of your verifications. To
 get an idea of what I am talking about, take a look at the following example.
