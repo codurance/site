@@ -9,7 +9,8 @@ description: Seven testing mistakes and how to avoid them by writing readable te
 image:
    src: /assets/custom/img/blog/
 tags:
-- codurance
+- testing
+- mocking
 ---
 
 # Seven Testing Sins and How To Avoid Them
