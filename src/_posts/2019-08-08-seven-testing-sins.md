@@ -188,11 +188,12 @@ void successfully_upgrades_user() {
 
     User upgradedUser = service.upgrade(someBasicUser);
     
-    assertThat(upgradedUser.name(), is(expectedUserAfterUpgrading));
+    assertThat(upgradedUser, is(expectedUserAfterUpgrading));
 }
 ```
 
-Now we are comparing the user that is upgraded against what we expect the object to look like after being upgraded.
+Now we are comparing the user that is upgraded against what we expect the object to look like after being upgraded. In
+order to do this you will need the object being compared (`User`) to have overridden `equals` and `hashCode`.
 
 ## Magic values
 Have you ever looked at a number or a string and wondered what it represents? I have and those precious seconds of
