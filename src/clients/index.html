@@ -16,11 +16,11 @@ title: Clients
   <div class="container">
     {% for client in site.data.clients %}
     <div class="d-flex justify-content-between">
-      <div class="d-block mr-5">
+      <div class="d-block mr-5 client-image">
         <img class="g-width-120" src="{{site.baseurl}}{{ client.image }}" alt="{{ client.alt-text }}">
       </div>
-      <div class="d-block">
-        <h2 class="h4 g-color-black g-font-weight-600">{{ client.name }}</h2>
+      <div class="d-block client-body">
+        <h2 class="h4 g-color-black g-font-weight-600 client-name">{{ client.name }}</h2>
         <ul class="list-inline g-font-size-13">
           <li class="list-inline-item mr-4">
             <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
@@ -41,7 +41,7 @@ title: Clients
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
         {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
-        {% include button.html href=project.page-location translated_text=button-text %}
+        {% include button.html href=project.page-location translated_text=button-text css-class="client-project" %}
         {% endfor %}
       </div>
     </div>
