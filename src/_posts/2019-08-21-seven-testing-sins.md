@@ -114,6 +114,7 @@ void inform_when_character_is_luke_skywalker() {
 As we can see from the above, we have reduced the number of lines of code, as well as the mutation of objects. However,
 in the process we have lost the meaning of what the - now parameters of `Character` - represent in the test. In order
 for the `isLuke()` method to return true the `Character` object we pass in must have the following:
+
 - Name of "Luke Skywalker"
 - Have a father named "Darth Vader"
 - Be a Jedi
@@ -217,6 +218,7 @@ void denies_entry_for_someone_who_is_not_old_enough() {
 ```
 
 Reading the above you might have a few questions, such as:
+
 - what does the `17` mean?
 - what does the `21` mean in the constructor?
 
