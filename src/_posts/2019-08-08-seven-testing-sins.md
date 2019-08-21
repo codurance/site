@@ -427,7 +427,7 @@ private void verifyNoErrorMessageIsAddedTo(UIComponent component) {
 The above code is not perfect, but it certainly provides a high level overview of what we are verifying, within the
 context of the current test.
 
-## Summary
+## Closing words
 I hope you enjoyed this article and will spend a refactoring step or two next time you finish writing a test.
 
 >"Programs must be written for people to read, and only incidentally for machines to execute." 
