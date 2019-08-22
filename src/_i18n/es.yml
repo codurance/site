@@ -164,6 +164,10 @@ company-contact-form:
    title: Contáctanos
    subtitle: También puedes utilizar el siguiente formulario para enviarnos un mensaje o directamente a nuestro correo electrónico
    offices_introduction: Por teléfono a nuestras oficinas
+   button_title: "Aplicar"
+   name_placeholder: "Nombre"
+   email_placeholder: "Email"
+   text_placeholder: "Tu mensaje"
 publications-podcasts:
    title: Podcasts
 publications-videos:
@@ -221,6 +225,7 @@ services:
         (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
   we-coach:
     title: We coach
+    subtitle: Ayudamos a los equipos en cualquier fase de un proyecto a que puedan beneficiarse de una capacitación específica.
     body: Nuestros cursos ayudan a tu a equipo a mejorar en prácticas XP, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development y muchas otras prácticas técnicas.
     trainings:
       title1: Crafting code
@@ -331,6 +336,7 @@ careers:
    contact_us_subtitle: Si desea obtener más información sobre Codurance antes de aplicar, siéntase libre de enviarnos un mensaje aquí. Responderemos a sus preguntas pero respetaremos su privacidad. Una vez que esté listo para presentar una aplicación, podremos hablar más.
    life_at_codurance_title: Vida en Codurance
    life_at_codurance_subtitle: Todos en Codurance aplicamos prácticas deliberadas para el aprendizaje, y compartimos nuestras experiencias con las comunidades externas de muchas maneras. Aquí hay algunos ejemplos de cómo nos gusta contribuir a la comunidad de desarrollo.
+   button_title: "Contáctanos"
    about_us:
     title: Sobre Nosotros
     culture_title: Cultura de aprendizaje
