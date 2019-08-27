@@ -646,18 +646,6 @@
     <p>In his free time, he likes to swim, visit historic places and hang out with friends.</p>
   office: london
 
-- id: john_rihana
-  name: John Rihana
-  image: /assets/custom/img/team/john_rihana.jpg
-  role: Business Development Manager
-  fullDescription:
-    <p>John is our Business Development Manager in London, having recently moved across from Australia. John began his career as a data analyst, looking for answers among volumes of data to help businesses make better decisions. While doing this he found it highly enjoyable and rewarding working alongside people, enabling them through hard decisions and coming up with creative solutions.</p>
-    <p>Leaving the spreadsheets behind, he transitioned into sales full time, working within large software organisations such as myob and AT&T. While there he thoroughly enjoyed helping the businesses he worked with through complex problems, helping these businesses succeed.</p>
-    <p>John sees himself as an advisor to his clients, constantly creating value by helping them think through unfamiliar problems, offering his unique point of view on key threats and opportunities as well as well as lead them through a process they may have never done before.</p>
-  linkedin: john-rihana-861b27a6
-  email: john.rihana@codurance.com
-  office: london
-
 - id: ruth_diaz
   name: Ruth Díaz
   image: /assets/custom/img/team/ruth_diaz.jpg
