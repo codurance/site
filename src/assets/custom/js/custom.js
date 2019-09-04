@@ -35,8 +35,8 @@ var submitTrainingContactForm = function() {
 
 var announcementOnDevConsole = function(){
 	try{
-		var main="display:block;font-family:'Open Sans', Arial, sans-serif;font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;height:34px;line-height:17px;margin-bottom:10px;margin-top:5px;text-align:center;text-shadow:none;";
-		var link="cursor:pointer;display:inline-block;font-family:'Roboto Slab', sans-serif;font-size:14px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;height:25px;letter-spacing:normal;line-height:25.7143px;margin-bottom:5px;margin-left:0px;margin-right:0px;margin-top:10px;outline-style:none;padding-bottom:10px;padding-left:12px;padding-right:12px;padding-top:10px;text-align:center;";
+		var main="display:block;font-family:'Open Sans',Arial, sans-serif;font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;height:34px;line-height:17px;margin-bottom:10px;margin-top:5px;text-align:center;text-shadow:none;";
+		var link="color:blue;text-decoration: underline;";
 		var isNewEnoughBrowser = "repeat" in String.prototype;
 		if(isNewEnoughBrowser){
             window.console.log("MMMMMMMMMMMMMMMMMMMMMMMMNklxNMMMMM\n" +
