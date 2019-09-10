@@ -16,7 +16,7 @@ tags:
 
 Hello,
 
-It has been a busy few months for the team and we're pleased to bring the newsletter back, including some useful resources for you to take advantage of, such as an article on 'The Fine Art of Fast Development', a talk on building 'Sustainable and Empathetic Cross-Functional Teams' and, if you haven't already checked it out yet, Katalyst[https://katalyst.codurance.com/], our new handy skill-honing tool. Please feel free to share the newsletter with your colleagues for their own learning and development! 
+It has been a busy few months for the team and we're pleased to bring the newsletter back, including some useful resources for you to take advantage of, such as an article on 'The Fine Art of Fast Development', a talk on building 'Sustainable and Empathetic Cross-Functional Teams' and, if you haven't already checked it out yet, [Katalyst](https://katalyst.codurance.com/), our new handy skill-honing tool. Please feel free to share the newsletter with your colleagues for their own learning and development! 
 
 Until next time, 
 The Codurance team
@@ -27,7 +27,7 @@ The Codurance team
 ------------------------------------------------------------
 Since our last update, we're delighted to report Codurance's continued expansion, with new homes for both the London and Barcelona offices and the launch of Software Crafters North, a group run by our new Manchester branch as we continue to grow. SC London returns this October for a third consecutive year, with a raft of impressive thought-leaders scheduled to share their crafting expertise with the community - we're looking forward to seeing you there!
 
-We kicked off 2019 by achieving AWS Partner Status[https://codurance.com/2019/01/15/codurance-gain-aws-partner-status/], recognising the expertise, skill and experience of our people in the AWS Cloud ecosystem and its various services. As part of our commitment to contributing to the development community, we're pleased to announce that 7 of our talented apprentices have recently graduated to Craftsperson level, creating expert practitioners able to contribute to and share Craftsmanship values within the software development realm.
+We kicked off 2019 by achieving [AWS Partner Status](https://codurance.com/2019/01/15/codurance-gain-aws-partner-status/), recognising the expertise, skill and experience of our people in the AWS Cloud ecosystem and its various services. As part of our commitment to contributing to the development community, we're pleased to announce that 7 of our talented apprentices have recently graduated to Craftsperson level, creating expert practitioners able to contribute to and share Craftsmanship values within the software development realm.
 
 Last but by no means least, we've had the pleasure of working on some truly exciting international client projects - coaching, advising and delivering exceptional software. We're excited to see what's next for the business over the course of the rest of the year and welcome you to follow our journey. 
 
@@ -60,7 +60,7 @@ In this article David Lloyd provides strategies that can be implemented in order
 ===
 
 ### [Am I Delivering Value?](https://codurance.com/2019/04/17/am-i-delivering-value/)
-There comes a time in everyone's career when this question becomes persistent in one's mind. Our co-founder Mash Badar[https://codurance.com/publications/author/mashooq-badar/] discusses how the alignment of individual, team and organisation is key to delivering value within the context of software delivery.
+There comes a time in everyone's career when this question becomes persistent in one's mind. Our co-founder [Mash Badar](https://codurance.com/publications/author/mashooq-badar/) discusses how the alignment of individual, team and organisation is key to delivering value within the context of software delivery.
 
 ===
 
@@ -77,7 +77,7 @@ The Codurance team have recently been fascinated by this podcast, documenting th
 ===
 
 ### [Codurance Talks](https://codurance.com/publications/podcasts/)
-Over the last few months the Codurance team have been steadily recording podcasts covering technology, Software Craftsmanship and everything in-between. Subscribe directly via Podbean[https://codurancetalks.podbean.com/] or Apple Podcasts[https://podcasts.apple.com/gb/podcast/codurance-talks/id1449839202] to keep up with each episode, or find each release our website.  
+Over the last few months the Codurance team have been steadily recording podcasts covering technology, Software Craftsmanship and everything in-between. Subscribe directly via [Podbean](https://codurancetalks.podbean.com/) or [Apple Podcasts](https://podcasts.apple.com/gb/podcast/codurance-talks/id1449839202) to keep up with each episode, or find each release our website.  
 
 ===
 
