@@ -846,3 +846,15 @@
   linkedin: ggomezsullain
   email: gonzalo.gomez@codurance.com
   office: barcelona
+
+- id: daniel_bird
+  name: Daniel Bird
+  image: /assets/custom/img/team/daniel_bird.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Daniel has worked within the creative industry for over six years and is an advocate for clean, modern and usable designs that perform well to business goals. Due to his consistent curiosity and desire to learn, he has acquired the necessary knowledge and skills to produce creative and engaging digital solutions.</p>
+    <p>He discovered a compelling interest in development early in his career when he was exposed to developing emails. From there he has moved on to discover the world of web development and front end technologies. He realised that with his interests, there was no better place to be than surrounded by like-minded people at the top of their game.</p>
+    <p>In his spare time, he is either; striving towards fluency in another language, getting together with friends, reading / educating himself, or consuming murder podcasts and documentaries.</p>
+  linkedin: birddaniel
+  email: daniel.bird@codurance.com
+  office: london
