@@ -858,3 +858,16 @@
   linkedin: birddaniel
   email: daniel.bird@codurance.com
   office: london
+
+- id: jordan_robinson
+  name: Jordan Robinson
+  image: /assets/custom/img/team/jordan_robinson.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Jordan is a focused developer with an endless craving for a good technical challenge. He makes a point of learning new technologies and methodologies on a daily basis - his current interests include Clojure and Docker.</p>
+    <p>Jordan constantly strives to deliver the best experience possible for clients, while creating maintainable and elegant solutions. He believes in the importance of a collaborative approach, with all members of a team being involved in the decision-making process.</p>
+  github: jordanrobinson
+  twitter: 0xjrobinson
+  linkedin: jordanrobinsonuk
+  email: jordan.robinson@codurance.com
+  office: manchester
