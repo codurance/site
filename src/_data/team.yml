@@ -882,3 +882,13 @@
     <p>Outside of work he enjoys reading, travelling and generally having good food to eat. He likes to enjoy the finer things in life, given he wants to make the most out of it.</p>
   email: ade@codurance.com
   office: london
+
+- id: marius.alexandru.ignat
+  name: Alexandru Ignat
+  image: /assets/custom/img/team/alex_ignat.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Alex is result-oriented DevOps Consultant with more than 5 years experience in IT infrastructure.</p>
+    <p>He likes to promote agnostic cloud-native solution aproaches.His goal is to constantly improve himself as a software developer.</p>
+  email: marius.alexandru.ignat@codurance.com
+  office: london
