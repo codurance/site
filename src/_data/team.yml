@@ -883,6 +883,7 @@
   email: ade@codurance.com
   office: london
 
+<<<<<<< HEAD
 - id: alex_ignat
   name: Alexandru Ignat
   image: /assets/custom/img/team/alex_ignat.jpg
@@ -892,3 +893,16 @@
     <p>He likes to promote agnostic cloud-native solution approaches. His goal is to constantly improve himself as a software developer.</p>
   email: marius.alexandru.ignat@codurance.com
   office: london
+=======
+- id: karolina_kondzielewska
+  name: Karolina Kondzielewska
+  image: /assets/custom/img/team/karolina_kondzielewska.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>When Karolina started working as a tester she was given the nickname “X-Ray Karolina” due to her amazing ability for finding well hidden bugs.</p>
+    <p>She holds a masters in Philosophy, so she has a habit of asking “why?” and she always tries to think outside the box. She believes that quality assurance starts before any line of code is being written and offers a good combination of exploratory and automation testing.</p>
+    <p>In her free time she loves being active and she is training to be a Pilates instructor.</p>
+  linkedin: karolinakond
+  email: karolina.kondzielewska@codurance.com
+  office: london
+>>>>>>> master
