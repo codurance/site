@@ -883,6 +883,16 @@
   email: ade@codurance.com
   office: london
 
+- id: alex_ignat
+  name: Alexandru Ignat
+  image: /assets/custom/img/team/alex_ignat.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Alex is result-oriented DevOps Consultant with more than 5 years experience in IT infrastructure.</p>
+    <p>He likes to promote agnostic cloud-native solution approaches. His goal is to constantly improve himself as a software developer.</p>
+  email: marius.alexandru.ignat@codurance.com
+  office: london
+  
 - id: karolina_kondzielewska
   name: Karolina Kondzielewska
   image: /assets/custom/img/team/karolina_kondzielewska.jpg
