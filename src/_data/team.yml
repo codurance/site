@@ -904,3 +904,14 @@
   linkedin: karolinakond
   email: karolina.kondzielewska@codurance.com
   office: london
+
+- id: laurence_lord
+  name: Laurence Lord
+  image: /assets/custom/img/team/laurence_lord.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Since experiments on a ZX Spectrum in 1988, Laurence has learnt to build websites, Node applications, web architectures and digital teams. After studying Visual Communications Laurence collaborated with individuals, small teams and large corporate clients in creative, financial and eCommerce businesses – always focusing on who the end user is, what we want to say to them and how we want them to feel.</p>
+    <p>Imaginative and pragmatic, Laurence is a web engineer with a solid understanding of why writing high quality code is a good idea. He loves to make complicated things seem simple – and therefore easy to iterate upon – and came to Codurance to be surrounded by like minded, passionate people.</p>
+    <p>When not exploring the value of excellent software Laurence loves time with his wife, surfing, exploring beautiful places and putting ink to paper to create surreal fine art.</p>
+  email: laurence.lord@codurance.com
+  office: london
