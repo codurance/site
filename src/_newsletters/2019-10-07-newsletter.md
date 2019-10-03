@@ -64,10 +64,12 @@ Ben Crothers' piece includes some handy hints on identifying your cognitive bias
 
 ### [Modelling Bounded Contexts with the Bounded Context Design Canvas: a Workshop Recipe](https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab)
 In this article Nike Tune provides a workshop process to follow in a bid to answer the question "how do we break a large system into smaller, more manageable modular components?".
+
 ===
 
 ### [How Netflix Works: the (hugely simplified) Complex Stuff that Happens Every Time you Hit Play](https://medium.com/refraction-tech-everything/how-netflix-works-the-hugely-simplified-complex-stuff-that-happens-every-time-you-hit-play-3a40c9be254b)
 Mayukh Nair's interesting article delves into the architecture behind Netflix's 700+ microservices and their relationship with Amazon Web Services (AWS).
+
 ===
 
 We are looking for passionate and like-minded software professionals to join our team.
