@@ -914,3 +914,14 @@
       <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
   email: angus.paterson@codurance.com
   office: london
+
+- id: mark_gray
+  name: Mark Gray
+  image: /assets/custom/img/team/mark_gray.jpg
+  role: Software Craftsman
+  fullDescription:
+      <p>Mark is fascinated by mathematics, programming and science in general. Mark is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+      <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+  twitter: markrgray
+  email: mark.gray@codurance.com
+  office: london
