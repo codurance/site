@@ -55,7 +55,7 @@ window.codurance.cookieMessage = (function() {
     function showMessage() {
         for (let index = 0; index < messageElements.length; index++) {
             const messageElement = messageElements[index];
-            messageElement.style.visibility= 'visible';
+            messageElement.style.display = 'block';
         }
     }
 
@@ -78,7 +78,7 @@ window.codurance.cookieMessage = (function() {
     function hideMessage() {
         for (let index = 0; index < messageElements.length; index++) {
             const messageElement = messageElements[index];
-            messageElement.style.visibility = 'hidden';
+            messageElement.style.display = 'none';
             messageElement.classList.add('accepted');
         }
     }
