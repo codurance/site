@@ -914,3 +914,12 @@
       <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
   email: angus.paterson@codurance.com
   office: london
+
+- id: sid_sivanandam
+  name: Sid Sivanandam
+  image: /assets/custom/img/team/sid_sivanandam.jpg
+  role: Senior Internal Recruiter
+  fullDescription:
+      <p>Awaiting Bio</p>
+  email: sidhaesh.sivanandam@codurance.com
+  office: london
