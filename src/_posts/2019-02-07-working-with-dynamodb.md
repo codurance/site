@@ -1,5 +1,5 @@
 ---
-author: Andre Guelfi Torres
+author: André Guelfi Torres
 layout: post
 asset-type: post
 title: "An introduction to DynamoDB and its SDK"
