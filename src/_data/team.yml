@@ -928,6 +928,16 @@
   email: riccardo.toni@codurance.com
   office: london
 
+- id: jose_rh
+  name: José E. Rodriguez
+  image: /assets/custom/img/team/jose_e_rodriguez.jpg
+  role: Managing Director (Spain)
+  fullDescription:
+    <p>I lead and support a team of exceptional people whose purpose is to accelerate organizations and to help them reach their goals.</p>
+    <p>Together we help organizations tackle the challenges they face, guiding and mentoring them as they evolve by improving how they work.</p>
+  twitter: jrhuerta
+  office: barcelona
+
 - id: sid_sivanandam
   name: Sid Sivanandam
   image: /assets/custom/img/team/sid_sivanandam.jpg
