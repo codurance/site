@@ -959,4 +959,14 @@
       <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
   twitter: markrgray
   email: mark.gray@codurance.com
+
+- id: etienne_mustow
+  name: Etienne Mustow
+  image: /assets/custom/img/team/etienne_mustow.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance. </p>
+      <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+      <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit. </p>
+  email: etienne.mustow@codurance.com
   office: london
