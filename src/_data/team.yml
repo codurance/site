@@ -937,3 +937,26 @@
     <p>Together we help organizations tackle the challenges they face, guiding and mentoring them as they evolve by improving how they work.</p>
   twitter: jrhuerta
   office: barcelona
+
+- id: sid_sivanandam
+  name: Sid Sivanandam
+  image: /assets/custom/img/team/sid_sivanandam.jpg
+  role: Senior Internal Recruiter
+  fullDescription:
+    <p>Sid recruits for our London and Manchester offices.</p>
+    <p>Sid has been recruiting in technology for the last 5 years and really enjoys listening to people's stories. He takes immense pleasure in identifying people's career aspirations and finding the right role and work culture for them.</p>
+    <p>In his spare time he enjoys watching Star Trek (the original series), travelling and eating ramen.</p>
+  linkedin: sid-sivanandam
+  email: sidhaesh.sivanandam@codurance.com
+  office: london
+
+- id: mark_gray
+  name: Mark Gray
+  image: /assets/custom/img/team/mark_gray.jpg
+  role: Software Craftsman
+  fullDescription:
+      <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+      <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+  twitter: markrgray
+  email: mark.gray@codurance.com
+  office: london
