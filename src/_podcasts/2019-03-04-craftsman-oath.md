@@ -1,5 +1,5 @@
 ---
-author: Andre Guelfi Torres
+author: André Guelfi Torres
 asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-10

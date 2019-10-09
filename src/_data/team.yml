@@ -915,13 +915,48 @@
   email: angus.paterson@codurance.com
   office: london
 
+- id: riccardo_toni
+  name: Riccardo Toni
+  image: /assets/custom/img/team/riccardo_toni.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before starting as a software developer Riccardo worked in the music industry, as a musician at first and then as an artist manager and consultant in both Italy and the UK.
+    <p>He later gained some experience working with JVM based languages and Pivotal’s tech stack, across different systems from legacy monoliths to cloud based microservices. This gave him the opportunity to observe in different circumstances how often the success of a software product can be jeopardised by some poor choices in software design as well as over-engineered architectures or lack of communication and feedback inside the organisations. Therefore he ended up becoming a fiery sponsor of the Software Craftsmanship movement and a TDD, Extreme Programming and Clean Code advocate.</p>
+    <p>Within the last few years, his continuous learning approach gave him the opportunity to grow quickly - sharing his learning and absorbing technical knowledge from his fellow colleagues, adopting a collaborative attitude and always remaining curious and inquisitive.</p>
+    <p>He inherited from his past experience, in other contexts, a set of soft skills such as a natural ability to comprehend the business domain and the business needs, negotiate solutions, understand different perspectives or mitigate contrasts.</p>
+    <p>In his free time he loves cycling, swimming, playing drums, cooking, reading and listening to jazz music.</p>
+  email: riccardo.toni@codurance.com
+  office: london
+
+- id: sid_sivanandam
+  name: Sid Sivanandam
+  image: /assets/custom/img/team/sid_sivanandam.jpg
+  role: Senior Internal Recruiter
+  fullDescription:
+    <p>Sid recruits for our London and Manchester offices.</p>
+    <p>Sid has been recruiting in technology for the last 5 years and really enjoys listening to people's stories. He takes immense pleasure in identifying people's career aspirations and finding the right role and work culture for them.</p>
+    <p>In his spare time he enjoys watching Star Trek (the original series), travelling and eating ramen.</p>
+  linkedin: sid-sivanandam
+  email: sidhaesh.sivanandam@codurance.com
+  office: london
+
+- id: mark_gray
+  name: Mark Gray
+  image: /assets/custom/img/team/mark_gray.jpg
+  role: Software Craftsman
+  fullDescription:
+      <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+      <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+  twitter: markrgray
+  email: mark.gray@codurance.com
+
 - id: etienne_mustow
   name: Etienne Mustow
   image: /assets/custom/img/team/etienne_mustow.jpg
   role: Apprentice
   fullDescription:
-      <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance.  </p>
-      <p> He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
-      <p>  In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit. </p>
+      <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance. </p>
+      <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+      <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit. </p>
   email: etienne.mustow@codurance.com
   office: london
