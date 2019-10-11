@@ -1,3 +1,50 @@
+- id: adevinta
+  name: Adevinta
+  image: /assets/custom/img/home/clients/adevinta-logo.png
+  alt-text: Adevinta Logo
+  website: adevinta.com
+  services:
+  - software_creation
+
+
+- id: bankable
+  name: Bankable
+  image: /assets/custom/img/home/clients/bankable-logo.png
+  alt-text: Bankable Logo
+  website: bnkbl.com
+  services:
+  - software_creation
+
+
+- id: cazoo
+  name: Cazoo
+  image: /assets/custom/img/home/clients/cazoo-logo.png
+  alt-text: Cazoo Logo
+  website: cazoo.co.uk
+  services:
+  - software_creation
+
+
+- id: cxLoyalty
+  name: cxLoyalty
+  image: /assets/custom/img/home/clients/cxLoyalty-logo.png
+  alt-text: cxLoyalty Logo
+  website: cxloyalty.com
+  services:
+  - software_creation
+  - expert_advice
+
+
+- id: eclinicalworks
+  name: eClinicalWorks
+  image: /assets/custom/img/home/clients/eclinicalworks-logo.png
+  alt-text: eClinicalWorks Logo
+  website: eclinicalworks.com
+  services:
+  - software_creation
+  - expert_advice
+
+
 - id: ubs
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
@@ -68,7 +115,7 @@
 
 - id: aspectcapital
   name: Aspect Capital
-  image: /assets/custom/img/home/clients/aspect_capital.jpeg
+  image: /assets/custom/img/home/clients/aspect_capital.png
   alt-text: Aspect Capital logo
   website: aspectcapital.com
   services:
