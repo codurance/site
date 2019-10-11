@@ -659,7 +659,7 @@
 - id: davidhalewood
   name: David Halewood
   image: /assets/custom/img/team/david_halewood.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
     <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
@@ -676,7 +676,7 @@
 - id: sherlockqiao
   name: Zhiqiang (Sherlock) Qiao
   image: /assets/custom/img/team/sherlock_qiao.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
     <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
@@ -719,7 +719,7 @@
 - id: andrei_bogomja
   name: Andrei Bogomja
   image: /assets/custom/img/team/andrei_bogomja.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Andrei discovered his passion for programming and software engineering while studying publishing in London.</p>
     <p>While not being a stranger to the world of computers and IT, he worked for quite a while in creative industries as a graphic designer, photographer, and video editor for a post-production company. The revelation about his next career move came to him while he was working on a project not directly related to programming in which he discovered his passion for the field. After gaining his degree in publishing, he enrolled for an undergraduate Computing course at the University of London.</p>
@@ -732,7 +732,7 @@
 - id: ivan_katzarski
   name: Ivan Katzarski
   image: /assets/custom/img/team/ivan_katzarski.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Ivan’s background starts with a degree in Economics, however, this was never his passion. Of all Economics subjects, he enjoyed Behavioural Economics where working with people was essential. Luckily, his path led him to a second degree in Software Development where he was finally able to fully dedicate his time to what he is most passionate about.</p>
     <p>His professional career started in the utility sector where he learned about the full software lifecycle. He was involved in customer interaction, requirements gathering, software deployment, configuration, Linux administration and security, and in writing small pieces of software to support internal processes.</p>
@@ -745,7 +745,7 @@
 - id: matt_gray
   name: Matt Gray
   image: /assets/custom/img/team/matt_gray.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Matt has a varied work background which includes music production, audio editing and sound design for computer games, writing music for film, TV and various independent record labels; DJing, technical support at a music technology college; and for the 5 years prior to beginning the apprenticeship at Codurance, teaching and managing Computer Science departments in secondary schools.</p>
     <p>With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts using Python and various teaching tools, as well as learning enough Computer Science theory to teach it at A-Level, whilst also picking up a bit of Java, OO design, Javascript and HTML along the way.</p>
@@ -758,7 +758,7 @@
 - id: tacuma_bellford
   name: Tacuma Bellford
   image: /assets/custom/img/team/tacuma_bellford.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Tacuma’s background is in Linguistics and enjoys learning languages, for machines and humans. Computational Linguistics, is what sparked his interest in software development. His motivation comes from the thought of being able to bring ideas to life using technology.</p>
     <p>His professional career began at a startup solving a problem in the medical education sector. He was involved in the front end aspect of development and also in some decisions regarding the direction of the platform.</p>
