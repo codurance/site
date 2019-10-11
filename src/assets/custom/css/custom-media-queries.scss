@@ -61,6 +61,21 @@
     .client-project {
         margin-bottom: 1rem;
     }
+
+    .video-bg {
+        display: none;
+    }
+
+    .bg-slider {
+        display: block;
+    }
+}
+
+@media (max-width: 1224px) {
+    .video-bg-wrapper,
+    .feature-panel {
+        height: 550px;
+    }
 }
 
 /* Laptop */
