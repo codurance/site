@@ -861,7 +861,7 @@ In this example we are creating a `bar graph`, in the left menu you can set the 
 
 ### Buckets
 
-![]({{ '/assets/custom/img/blog/2019-10-11-Visualisation-2.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Visualisation-2.png' | prepend: site.baseurl }})
 
 1. `Aggregation`: Is how your are going to group your data, you might want a time using the `Date Histogram`, or something to group the endpoints that you have using a specific field.
 2. `Field`: Is the field that you are going to use to split the data, in case you need a more complex aggregation, you will be able to use the `QueryDSL` as an input.
