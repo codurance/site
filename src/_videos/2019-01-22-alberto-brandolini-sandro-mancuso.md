@@ -3,7 +3,7 @@ author: Sandro Mancuso
 layout: video
 name: sandro-mancuso-alberto-brandolini-on-software-design
 image:
- src: /assets/custom/img/videos/2019-01-22-sandro_mancuso_and_alberto_brandolini.png
+ src: /assets/custom/img/videos/2019-01-22-sandro_mancuso_and_alberto_brandolini.jpg
 title: "Sandro Mancuso & Alberto Brandolini on Software Design"
 video-url: https://www.youtube.com/embed/M-byoAOezfc
 date: 2019-01-22 10:00:00 +00:00
