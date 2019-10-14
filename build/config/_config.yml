@@ -66,3 +66,5 @@ sass:
   sass_dir: assets/custom/css/_sass
 
 languages: ["en", "es"]
+
+future: true

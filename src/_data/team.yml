@@ -108,18 +108,6 @@
   github: jaramir
   office: london
 
-- id: eriktorres
-  name: Erik Torres Serrano
-  image: /assets/custom/img/team/erik_torres.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Erik is a software developer with over ten years experience developing concurrent and distributed systems. He strongly believes in pragmatism, practice and team working.</p>
-    <p>Erik is a lifelong learner, always looking for new ways to improve software quality, including coding practices, security and performance. He especially enjoys sharing his passion for development with others. Lately, you can find him improving his craft and helping others improve theirs in the Barcelona Java User Group and in the Software Craftsmanship Community.</p>
-    <p>Away from the keyboard, he loves the outdoors and spending time with his wife and son.</p>
-  twitter: ertorser
-  github: etorres
-  office: barcelona
-
 - id: lucianopalma
   name: Luciano Palma
   image: /assets/custom/img/team/luciano_palma.jpg
@@ -671,7 +659,7 @@
 - id: davidhalewood
   name: David Halewood
   image: /assets/custom/img/team/david_halewood.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
     <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
@@ -688,7 +676,7 @@
 - id: sherlockqiao
   name: Zhiqiang (Sherlock) Qiao
   image: /assets/custom/img/team/sherlock_qiao.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
     <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
@@ -731,7 +719,7 @@
 - id: andrei_bogomja
   name: Andrei Bogomja
   image: /assets/custom/img/team/andrei_bogomja.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Andrei discovered his passion for programming and software engineering while studying publishing in London.</p>
     <p>While not being a stranger to the world of computers and IT, he worked for quite a while in creative industries as a graphic designer, photographer, and video editor for a post-production company. The revelation about his next career move came to him while he was working on a project not directly related to programming in which he discovered his passion for the field. After gaining his degree in publishing, he enrolled for an undergraduate Computing course at the University of London.</p>
@@ -744,7 +732,7 @@
 - id: ivan_katzarski
   name: Ivan Katzarski
   image: /assets/custom/img/team/ivan_katzarski.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Ivan’s background starts with a degree in Economics, however, this was never his passion. Of all Economics subjects, he enjoyed Behavioural Economics where working with people was essential. Luckily, his path led him to a second degree in Software Development where he was finally able to fully dedicate his time to what he is most passionate about.</p>
     <p>His professional career started in the utility sector where he learned about the full software lifecycle. He was involved in customer interaction, requirements gathering, software deployment, configuration, Linux administration and security, and in writing small pieces of software to support internal processes.</p>
@@ -757,7 +745,7 @@
 - id: matt_gray
   name: Matt Gray
   image: /assets/custom/img/team/matt_gray.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Matt has a varied work background which includes music production, audio editing and sound design for computer games, writing music for film, TV and various independent record labels; DJing, technical support at a music technology college; and for the 5 years prior to beginning the apprenticeship at Codurance, teaching and managing Computer Science departments in secondary schools.</p>
     <p>With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts using Python and various teaching tools, as well as learning enough Computer Science theory to teach it at A-Level, whilst also picking up a bit of Java, OO design, Javascript and HTML along the way.</p>
@@ -770,7 +758,7 @@
 - id: tacuma_bellford
   name: Tacuma Bellford
   image: /assets/custom/img/team/tacuma_bellford.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Tacuma’s background is in Linguistics and enjoys learning languages, for machines and humans. Computational Linguistics, is what sparked his interest in software development. His motivation comes from the thought of being able to bring ideas to life using technology.</p>
     <p>His professional career began at a startup solving a problem in the medical education sector. He was involved in the front end aspect of development and also in some decisions regarding the direction of the platform.</p>
@@ -892,7 +880,7 @@
     <p>He likes to promote agnostic, cloud-native solution approaches. His goal is to constantly improve himself as a software developer.</p>
   email: marius.alexandru.ignat@codurance.com
   office: london
-  
+
 - id: karolina_kondzielewska
   name: Karolina Kondzielewska
   image: /assets/custom/img/team/karolina_kondzielewska.jpg
@@ -925,4 +913,60 @@
       <p>A sucker for a tight grid system and 'Swiss Style' typography, Angus believes that effective visual communication relies on a clean, uncluttered aesthetic underpinned by a strong concept.</p>
       <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
   email: angus.paterson@codurance.com
+  office: london
+
+- id: riccardo_toni
+  name: Riccardo Toni
+  image: /assets/custom/img/team/riccardo_toni.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before starting as a software developer Riccardo worked in the music industry, as a musician at first and then as an artist manager and consultant in both Italy and the UK.
+    <p>He later gained some experience working with JVM based languages and Pivotal’s tech stack, across different systems from legacy monoliths to cloud based microservices. This gave him the opportunity to observe in different circumstances how often the success of a software product can be jeopardised by some poor choices in software design as well as over-engineered architectures or lack of communication and feedback inside the organisations. Therefore he ended up becoming a fiery sponsor of the Software Craftsmanship movement and a TDD, Extreme Programming and Clean Code advocate.</p>
+    <p>Within the last few years, his continuous learning approach gave him the opportunity to grow quickly - sharing his learning and absorbing technical knowledge from his fellow colleagues, adopting a collaborative attitude and always remaining curious and inquisitive.</p>
+    <p>He inherited from his past experience, in other contexts, a set of soft skills such as a natural ability to comprehend the business domain and the business needs, negotiate solutions, understand different perspectives or mitigate contrasts.</p>
+    <p>In his free time he loves cycling, swimming, playing drums, cooking, reading and listening to jazz music.</p>
+  email: riccardo.toni@codurance.com
+  office: london
+
+- id: jose_rh
+  name: José E. Rodriguez
+  image: /assets/custom/img/team/jose_e_rodriguez.jpg
+  role: Managing Director (Spain)
+  fullDescription:
+    <p>I lead and support a team of exceptional people whose purpose is to accelerate organizations and to help them reach their goals.</p>
+    <p>Together we help organizations tackle the challenges they face, guiding and mentoring them as they evolve by improving how they work.</p>
+  twitter: jrhuerta
+  office: barcelona
+
+- id: sid_sivanandam
+  name: Sid Sivanandam
+  image: /assets/custom/img/team/sid_sivanandam.jpg
+  role: Senior Internal Recruiter
+  fullDescription:
+    <p>Sid recruits for our London and Manchester offices.</p>
+    <p>Sid has been recruiting in technology for the last 5 years and really enjoys listening to people's stories. He takes immense pleasure in identifying people's career aspirations and finding the right role and work culture for them.</p>
+    <p>In his spare time he enjoys watching Star Trek (the original series), travelling and eating ramen.</p>
+  linkedin: sid-sivanandam
+  email: sidhaesh.sivanandam@codurance.com
+  office: london
+
+- id: mark_gray
+  name: Mark Gray
+  image: /assets/custom/img/team/mark_gray.jpg
+  role: Software Craftsman
+  fullDescription:
+      <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+      <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+  twitter: markrgray
+  email: mark.gray@codurance.com
+
+- id: etienne_mustow
+  name: Etienne Mustow
+  image: /assets/custom/img/team/etienne_mustow.jpg
+  role: Apprentice
+  fullDescription:
+      <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance. </p>
+      <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+      <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit. </p>
+  email: etienne.mustow@codurance.com
   office: london
