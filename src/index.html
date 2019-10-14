@@ -3,11 +3,26 @@ layout: default
 ---
 <!-- feature panel -->
 <div class="feature-panel">
-        <div class="jumbotron">
-		<h1>{% t index-banner.title %}</h1>
-	    <h3>{% t index-banner.subtitle %}</h3>
-	    <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
-        </div>
+  <div class="jumbotron">
+	  <h1>{% t index-banner.title %}</h1>
+	  <h3>{% t index-banner.subtitle %}</h3>
+	  <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
+  </div>
+</div>
+
+<div class="video-bg-wrapper">
+  <video controls="false" playsinline autoplay muted poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}" loop class="video-bg">
+    <source src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}" type="video/mp4">
+    <source src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}" type="video/ogg">
+    <source src="{{ '/assets/custom/video/home/home-hero.webm' | prepend: site.baseurl }}" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class='bg-slider'>
+  <div class='bg-slide1'></div>
+  <div class='bg-slide2'></div>
+  <div class='bg-slide3'></div>
 </div>
 
 <!-- Activity panel -->
@@ -17,8 +32,8 @@ layout: default
       <h2>{% t index-activity.title %}</h2>
     </div>
     <div class="row blog-boxes margin-bottom-40">
-      {% assign blog = site.posts | concat: site.podcasts | sort: 'date' | reverse %}
-      {% include latest_highlights.html param=blog %}
+      {% assign podcast = site.podcasts | sort: 'date' | reverse %}
+      {% include latest_highlights.html param=podcast %}
 
       {% assign video = site.videos | reverse %}
       {% include latest_highlights.html param=video %}
