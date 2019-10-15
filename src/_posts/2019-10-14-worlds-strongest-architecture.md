@@ -15,3 +15,20 @@ tags:
 # World's Strongest Architecture
 In July 2016 Eddie Hall achieved something no man before him had, managing to deadlift 500kg (or half a ton). This
 article is for those who want to improve their decision making when it comes to software architecture.
+
+## Optimising for the deadlift
+The year before he lifted 500kg, he broke his own world record by lifting 465kg. He was no stranger to the deadlift,
+and no stranger to breaking world records. This article could be dedicated exclusively to the feats of "The Beast",
+however we want to focus on one aspect in particular, and this is optimisation.
+
+You see, what Eddie achieved does not happen by magic. All of the training, and the eating was centred around becoming
+one of the strongest men in history. In order to do this he had to decide what he wanted to optimise. Eddie was required
+to be strong, for a very short amount of time. Therefore, it would make no sense for him to try and be the best 800m
+runner. If running was not going to contribute to his goal, you bet he was not going to do it. The same goes for his
+structure (or physical architecture). He was consuming enough calories to enable him to be strong, not to have washboard
+abs.
+
+## So how does this relate to architecture?
+You might be wondering something like "the above is interesting, but how does it relate to software architecture?".
+Well, for now the key takeaways should be that like Eddie, we must decide what we are optimising for when building
+software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
