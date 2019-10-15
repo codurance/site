@@ -13,4 +13,5 @@ tags:
 ---
 
 # World's Strongest Architecture
-In July 2016 Eddie Hall achieved something no man before him had, managing to deadlift 500kg (or half a ton).
+In July 2016 Eddie Hall achieved something no man before him had, managing to deadlift 500kg (or half a ton). This
+article is for those who want to improve their decision making when it comes to software architecture.
