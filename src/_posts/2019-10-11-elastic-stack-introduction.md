@@ -15,9 +15,9 @@ tags:
 
 # Introduction
 
-But when the software that you are running is critical for your company you can't have logs just for analysing things that happened some time ago, having the client tells you that your application is broken while you didn't even know what was happening is a real problem, and one of the ways to deal with that is using monitoring and logging. 
+When you are running software that is critical for your company you can't have logs just for analysing things that happened some time ago, having the client tells you that your application is broken while you didn't even know what was happening is a real problem, and one of the ways to deal with that is using monitoring and logging. 
 
-Most applications will have logging, even if is to a text file that later someone will use tools like `grep` or `tail` to see what's going on, but that's a very passive way to see the logs, you have to take action, and probably you will only look at the logs when there's something wrong. What you need is to have your logs telling you what is happening, and today we are going to build the first step for that. 
+Most applications will have logging, even if it is just a text file that will require the use of tools like grep or tail to see what's going on. But that's a very passive way to see the logs, as you have to take action, and probably you will only look at the logs when there's something wrong. What you need is to have your logs telling you what is happening, and today we are going to build the first step for that. 
 
 By the title you already probably know that we are going to talk about the `Elasticstack`, my intention with this post is to have the basics to start collecting and analysing your logs without you having to deal with all the hardships of that I went through. 
 
