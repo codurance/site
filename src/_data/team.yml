@@ -909,9 +909,9 @@
   image: /assets/custom/img/team/angus_paterson.jpg
   role: Senior Graphic Designer
   fullDescription:
-      <p>Angus is a multiskilled graphic and digital designer with a keen interest in code and technology. He has over 15 years of industry experience working for start-ups, well-established brands and agencies.</p>
-      <p>A sucker for a tight grid system and 'Swiss Style' typography, Angus believes that effective visual communication relies on a clean, uncluttered aesthetic underpinned by a strong concept.</p>
-      <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
+    <p>Angus is a multiskilled graphic and digital designer with a keen interest in code and technology. He has over 15 years of industry experience working for start-ups, well-established brands and agencies.</p>
+    <p>A sucker for a tight grid system and 'Swiss Style' typography, Angus believes that effective visual communication relies on a clean, uncluttered aesthetic underpinned by a strong concept.</p>
+    <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
   email: angus.paterson@codurance.com
   office: london
 
@@ -955,18 +955,19 @@
   image: /assets/custom/img/team/mark_gray.jpg
   role: Software Craftsman
   fullDescription:
-      <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
-      <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+    <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+    <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
   twitter: markrgray
   email: mark.gray@codurance.com
+  office: london
 
 - id: etienne_mustow
   name: Etienne Mustow
   image: /assets/custom/img/team/etienne_mustow.jpg
   role: Apprentice
   fullDescription:
-      <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance. </p>
-      <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
-      <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit. </p>
+    <p>Etienne, an ex-Biomedical Sciences undergraduate, started his professional software development career at a remote software consultancy where he developed his Ruby background. He has since worked in FinTech and Marketing Tech start-ups before joining Codurance.</p>
+    <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+    <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit.</p>
   email: etienne.mustow@codurance.com
   office: london
