@@ -28,7 +28,18 @@ runner. If running was not going to contribute to his goal, you bet he was not g
 structure (or physical architecture). He was consuming enough calories to enable him to be strong, not to have washboard
 abs.
 
-## So how does this relate to architecture?
+### So how does this relate to architecture?
 You might be wondering something like "the above is interesting, but how does it relate to software architecture?".
 Well, for now the key takeaways should be that like Eddie, we must decide what we are optimising for when building
 software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
+
+## Ineffective discussions around architecture
+Many of you reading this will have been involved in (or aware of) discussions around which architecture to choose.
+Often, someone might suggest using the thing that is new and shiny, and a game of buzzword bingo commences, where you
+will hear phrases such as the below:
+
+- "Microservices must be used"
+- "Kubernetes will solve this problem"
+- "We must be data-driven"
+- "The capability we need is to deploy seven million times a day"
+- "The solution needs to be scalable"
