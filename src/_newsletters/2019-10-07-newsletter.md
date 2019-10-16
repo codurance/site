@@ -16,9 +16,9 @@ tags:
 
 Welcome back!
 
-In September we also hosted a successful London Careers Open House, welcoming many budding Craftspeople to our office for a highly enjoyable evening of talks and networking.
+In October we also hosted a successful London Careers Open House, welcoming many budding Craftspeople to our office for a highly enjoyable evening of talks and networking.
 
-Keeping up-to-date with technology trends is part of what we do and therefore this month we're pleased to include a word from Principal Craftsperson James Birnie. You can also find included in this issue a podcast episode featuring our co-founder Sandro Mancuso, an article on ‘7 Testing Sins' and an introduction to Category Theory for Programmers - enjoy!  
+Keeping up-to-date with technology trends is part of what we do and therefore this month we're pleased to include a word from Principal Craftsperson James Birnie. You can find included in this issue a podcast episode featuring our co-founder Sandro Mancuso, an article on ‘7 Testing Sins' and an introduction to Category Theory for Programmers - enjoy! 
 
 Until next time, 
 The Codurance team
