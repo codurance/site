@@ -972,3 +972,15 @@
     <p>In his free time, Etienne enjoys reading manga, learning Spanish and keeping fit.</p>
   email: etienne.mustow@codurance.com
   office: london
+
+- id: arnaud_claudel
+  name: Arnaud Claudel
+  image: /assets/custom/img/team/arnaud_claudel.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Arnaud started to work in a big IT company but quickly got tired of the lack of quality in his projects.</p>
+    <p>He then tried to find new ways of working and met a lot of passioned people accross meetups.</p>
+    <p>When looking for his post-graduation job, Software Craftsmanship began the most important keyword to filter the offers, this is why he eventually ended up at Codurance.</p>
+    <p>During his freetime, he likes to listen to classical music, (try to) do some sports and explore the city.</p>
+  email: arnaud.claudel@codurance.com
+  office: london
