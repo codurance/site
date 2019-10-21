@@ -49,3 +49,17 @@ In general, discussions usually become ineffective when the people in the room d
 to make sensible decisions. With respect to architecture, it is usually that people do not have enough context
 around what they need to optimise for. That's great, but let's look at a few examples to illustrate what is meant
 by this.
+
+#### Example 1 - PoC (Proof of Concept)
+Imagine you are part of a team to produce a proof of concept using 3D technology for presentations (via a headset). The
+key here is to understand the context, which is you are creating this PoC to prove a concept. This means you need to
+optimise everything you do to contribute to that goal. Below we will look at what bad might look like:
+
+##### Bad
+* Spending months debating architecture, with nothing to show
+* Choosing a programming language no one on the team knows, because you can
+* Dedicating too much time attempting to "polish" the code
+
+As previously mentioned, once we understand what is to be achieved - validating a concept - then we can make sensible
+decisions, removing waste and focus on what really matters. If we can run a presentation using 3D technology, then we 
+have done enough to enable the experiment to commence (which can be done multiple ways).
