@@ -55,11 +55,23 @@ Imagine you are part of a team to produce a proof of concept using 3D technology
 key here is to understand the context, which is you are creating this PoC to prove a concept. This means you need to
 optimise everything you do to contribute to that goal. Below we will look at what bad might look like:
 
-##### Bad
-* Spending months debating architecture, with nothing to show
-* Choosing a programming language no one on the team knows, because you can
-* Dedicating too much time attempting to "polish" the code
+- Spending months debating architecture, with nothing to show
+- Choosing a programming language no one on the team knows, because you can
+- Dedicating too much time attempting to "polish" the code
 
 As previously mentioned, once we understand what is to be achieved - validating a concept - then we can make sensible
 decisions, removing waste and focus on what really matters. If we can run a presentation using 3D technology, then we 
 have done enough to enable the experiment to commence (which can be done multiple ways).
+
+#### Example 2 - Website
+In another example, imagine you are tasked with producing a website to capture interest in a restaurant that is due to
+open soon. This is preferred to be done by people placing their email addresses, so they can be notified of updates and
+given vouchers for when it opens. Let's take a look at what bad might look like.
+
+- Provisioning a kubernetes cluster just for the website
+- Creating a set of microservices to handle the subscription process
+
+All the owners of the restaurant want is the ability to capture potential customers (using email addresses). Therefore,
+they want something that can be created quickly to provide this capability. For example, a static website could be
+created and hosted in something like Amazon S3, and add something like Mailchimp to take care of capturing interested
+members of the public.
