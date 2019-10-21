@@ -7,7 +7,7 @@ date: 2019-10-11 00:00:00 +00:00
 author: André Guelfi Torres
 description: An introduction on how to use the Elastic Stack to monitor your applications
 image:
- src: /assets/custom/img/blog/2019-10-11-elastic-stack-introduction/monitor.jpg
+ src: /assets/custom/img/blog/2019-10-11-elastic-stack-introduction/monitor.jpeg
 tags:
 - monitoring
 - logging
