@@ -75,3 +75,28 @@ All the owners of the restaurant want is the ability to capture potential custom
 they want something that can be created quickly to provide this capability. For example, a static website could be
 created and hosted in something like Amazon S3, and add something like Mailchimp to take care of capturing interested
 members of the public.
+
+## Understanding What They Want
+The previous examples might have made you think, they might have made you roll your eyes in disagreement. Crucially,
+it must have made you think about past (or current) software endeavours and whether you understood what the customer
+actually wanted. If it did not then I have work to do! Therefore, let's take a look at what "they" - the customer -
+really wants.
+
+What the customer wants: an ability for a member of the public to navigate to a web page and enter their email address,
+which will be stored somewhere so those details can be used. Okay, let's add some things that they want to make it a
+bit more concrete:
+
+- restaurant brand on website
+- address of restaurant clearly visible
+- text stating they will receive discounts in return for their interest
+
+The above will seem fairly straightforward to the restaurant owner, and in they don't actually want a lot! Let's
+now document what we (as developers) might want when we see the above:
+
+- front-end needs to be written in a front-end technology such as React or Vue
+- it will require a service to be created in the back end, so we can subscribe users
+
+Not everyone will think exactly the same as the above, but often it is the case. Often we don't make sound
+architectural decisions because we are optimising for what we want and not what the customer wants. Using something
+like React for the front end might seem like a sensible (and fashionable) decision, but our context does not 
+necessarily require it, making it a premature optimisation which for what the customer wants right now, is simply waste.
