@@ -43,3 +43,9 @@ will hear phrases such as the below:
 - "We must be data-driven"
 - "The capability we need is to deploy seven million times a day"
 - "The solution needs to be scalable"
+
+### How does one avoid such discussions?
+In general, discussions usually become ineffective when the people in the room do not have sufficient information
+to make sensible decisions. With respect to architecture, it is usually that people do not have enough context
+around what they need to optimise for. That's great, but let's look at a few examples to illustrate what is meant
+by this.
