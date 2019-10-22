@@ -1006,7 +1006,7 @@
   fullDescription:
     <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
     <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
-    <p>In his free time, Edward goes rock-climbing and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar. </p>
+    <p>In his free time, Edward goes rock-climbing, plays chess and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar. </p>
   email: edward.rixon@codurance.com
   linkedin: edwardrixon
   office: london
@@ -1022,4 +1022,18 @@
     <p>He's always looking for developing high quality software in order to make developers and users life easier.</p>
     <p>Outside of work he enjoys the vast variety of craft beers, going out in nice weather to cycle around the city, playing a bit of table tennis and learning new languages, human and programming.</p>
   email: jocelyn.facchini@codurance.com
+  office: london
+
+- id: jose_wenzel
+  name: José Pablo Wenzel
+  image: /assets/custom/img/team/jose_wenzel.jpg
+  role: Apprentice
+  fullDescription:
+    <p>José started his development career in Chile where he worked in an advertisement start-up doing administration jobs, after this he joined the development team on this company, to help with the management of SQL servers. He worked with Centos servers and squid3, python and SQL.</p>
+    <p>After a while working in this company, and not having formal education, he decided to get into the university, where he studied at nights learning languages like java and C#. whilst doing this he stopped working in a development environment and started working in a market research company, where he stayed for 2 years. On a business trip, he found out about SoCraTes and Codurance.</p>
+    <p>He's very interested in best practices and tiding up code, he's always willing to learn and help others that might need his help.</p>
+    <p>In his free time, you can find him playing videogames, dungeons and dragons, watching anime, or just having a beer with some friends.</p>
+  github: jpwenzelc
+  linkedin: josewenzel
+  email: jose.campos@codurance.com
   office: london
