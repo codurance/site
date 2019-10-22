@@ -113,3 +113,8 @@ describe certain factors that might shape what you optimise for.
 How teams are (or going to be) organised within a company can have an impact on architecture. For instance, if you
 have a large amount of people who will be distributed, it might mean you opt for an architecture that gives them full
 autonomy.
+
+Closely related, if you find that teams are starting to step on each other's toes
+(accessing each other's database tables etc), you might want to introduce an architecture that establishes clear
+boundaries between teams (and their associated data). This could be a hard network boundary (via an API), or a softer
+boundary via a service within the codebase (e.g. one package talking to a service in another package in Java).
