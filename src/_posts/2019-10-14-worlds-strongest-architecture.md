@@ -110,3 +110,6 @@ similar to X? Would this affect the decisions you make in terms of architecture?
 describe certain factors that might shape what you optimise for.
 
 ### Topology of Teams
+How teams are (or going to be) organised within a company can have an impact on architecture. For instance, if you
+have a large amount of people who will be distributed, it might mean you opt for an architecture that gives them full
+autonomy.
