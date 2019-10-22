@@ -1026,7 +1026,7 @@
 
 - id: jose_wenzel
   name: José Pablo Wenzel
-  image: /assets/custom/img/team/jose_wenzel.jpeg
+  image: /assets/custom/img/team/jose_wenzel.jpg
   role: Apprentice
   fullDescription:
     <p>José started his development career in Chile where he worked in an advertisement start-up doing administration jobs, after this he joined the development team on this company, to help with the management of SQL servers. He worked with Centos servers and squid3, python and SQL.</p>
