@@ -24,7 +24,7 @@ however we want to focus on one aspect in particular, and this is optimisation.
 You see, what Eddie achieved does not happen by magic. All of the training, and the eating was centred around becoming
 one of the strongest men in history. In order to do this he had to decide what he wanted to optimise. Eddie was required
 to be strong, for a very short amount of time. Therefore, it would make no sense for him to try and be the best 800m
-runner. If running was not going to contribute to his goal, you bet he was not going to do it. The same goes for his
+runner. If running was not going to contribute to his goal, you can bet he was not going to do it. The same goes for his
 structure (or physical architecture). He was consuming enough calories to enable him to be strong, not to have washboard
 abs.
 
