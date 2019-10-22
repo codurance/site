@@ -30,7 +30,7 @@ abs.
 
 ### So how does this relate to architecture?
 You might be wondering something like "the above is interesting, but how does it relate to software architecture?".
-Well, for now the key takeaways should be that like Eddie, we must decide what we are optimising for when building
+Well, for now the key takeaway should be that like Eddie, we must decide what we are optimising for when building
 software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
 
 ## Ineffective discussions around architecture
