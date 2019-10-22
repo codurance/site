@@ -997,3 +997,15 @@
     <p>She loves the summer, the beach, restoring old furniture, airplanes and a winter afternoon of reading or watching a movie  in front of the fireplace.</p>
   email: helena.abellan@codurance.com
   office: barcelona
+
+- id: edward_rixon
+  name: Edward Rixon
+  image: /assets/custom/img/team/edward_rixon.jpeg
+  role: Apprentice
+  fullDescription:
+    <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
+    <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
+    <p>In his free time, Edward goes rock-climbing and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar. </p>
+  email: edward.rixon@codurance.com
+  linkedin: edwardrixon
+  office: london
