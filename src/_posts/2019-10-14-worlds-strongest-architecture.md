@@ -101,3 +101,12 @@ architectural decisions because we are optimising for what we want and not what 
 like React for the front end might seem like a sensible (and fashionable) decision, but our context does not 
 necessarily require it, making it a premature optimisation which for what the customer wants right now. Therefore,
 it is simply waste.
+
+## Knowing What to Optimise For
+To make sound architectural decisions we must first understand what the customer (of our software) wants. The examples
+previously discussed do somewhat simplify the real world. For example, say someone in your company wants X, you will
+make decisions based off of the information you have about X. But what if someone else in the company wanted something 
+similar to X? Would this affect the decisions you make in terms of architecture? Quite possibly. Therefore, I will
+describe certain factors that might shape what you optimise for.
+
+### Topology of Teams
