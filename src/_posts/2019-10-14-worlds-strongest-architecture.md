@@ -99,4 +99,5 @@ now document what we (as developers) might want when we see the above:
 Not everyone will think exactly the same as the above, but often it is the case. Often we don't make sound
 architectural decisions because we are optimising for what we want and not what the customer wants. Using something
 like React for the front end might seem like a sensible (and fashionable) decision, but our context does not 
-necessarily require it, making it a premature optimisation which for what the customer wants right now, is simply waste.
+necessarily require it, making it a premature optimisation which for what the customer wants right now. Therefore,
+it is simply waste.
