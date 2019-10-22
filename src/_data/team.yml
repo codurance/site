@@ -528,18 +528,6 @@
     <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
   office: barcelona
 
-- id: gabriele_lippi
-  name: Gabriele Lippi
-  image: /assets/custom/img/team/gabriele_lippi.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Gabriele discovered his passion for computers and coding during his studies in Philosophy. Deep curiosity and a true passion for knowledge in all its aspects, together with a strong will to learn, brought him to work first in a consultancy company as QA, then as a front-end developer in a start-up, joining the start-up hub Talent Garden, and later to join a firm of data visualization, where he had the opportunity to broaden again his horizons.</p>
-    <p>When he came across Software Craftsmanship, he immediately realized that he had found what he was looking for; now he's on his way to become a Software Craftsman.</p>
-    <p>Apart from coding, he enjoys reading books, practicing sports, travelling around the world, and, above all, spending time with his friends.</p>
-  github: glippi
-  twitter: gabriele_lippi
-  office: barcelona
-
 - id: aurelija_zubaviciute
   name: Aurelija Zubaviciute
   image: /assets/custom/img/team/aurelija_zubaviciute.jpg
@@ -955,10 +943,10 @@
   image: /assets/custom/img/team/etienne_mustow.jpg
   role: Apprentice
   fullDescription:
-      <p>Etienne’s love of tech comes from an early age. He used to learn various subjects by playing educational computer games his mum would buy him for a windows PC. These games sparked his interest in logical problems and solutions, leading to his inquisitive nature.</p>
-      <p>In 2017, Etienne decided to make the sink-or-swim decision to drop out of his Biomedical Sciences undergraduate degree to pursue software development, gaining a place on the intensive course at Makers Academy. Since then, Etienne has worked in the financial and marketing tech sectors and chooses Ruby as his go-to language.</p>
-      <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
-      <p>Etienne can be found on local basketball courts, watching top quality anime, reading manga, singing or dancing to afrobeats when not at his computer.</p>
+    <p>Etienne’s love of tech comes from an early age. He used to learn various subjects by playing educational computer games his mum would buy him for a windows PC. These games sparked his interest in logical problems and solutions, leading to his inquisitive nature.</p>
+    <p>In 2017, Etienne decided to make the sink-or-swim decision to drop out of his Biomedical Sciences undergraduate degree to pursue software development, gaining a place on the intensive course at Makers Academy. Since then, Etienne has worked in the financial and marketing tech sectors and chooses Ruby as his go-to language.</p>
+    <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+    <p>Etienne can be found on local basketball courts, watching top quality anime, reading manga, singing or dancing to afrobeats when not at his computer.</p>
   email: etienne.mustow@codurance.com
   office: london
 
