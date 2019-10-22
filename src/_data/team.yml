@@ -1010,3 +1010,16 @@
   email: edward.rixon@codurance.com
   linkedin: edwardrixon
   office: london
+
+- id: jocelyn_facchini
+  name: Jocelyn Facchini
+  image: /assets/custom/img/team/jocelyn_facchini.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Jocelyn started to get curious about programming at the age of 13 whilst using IRC clients, which was running a quiz game and allowed him to explore the scripts behind the game. It was only during his University studies that he discovered how facinating programming was which lead him to graduate with a Masters degree in Distributed Systems.</p>
+    <p>Coming from a musical background in parallel, he knows the importance of continous practice and how rewarding it is in the long run.</p>
+    <p>He first heard about eXtreme Programming during his studies and after a few years he discovered how to use the practice of TDD which was a revelation of what programming means for him. Having understood the power of fundamental principles in software development, he started to fill up his e-book reader library.</p>
+    <p>He's always looking for developing high quality software in order to make developers and users life easier.</p>
+    <p>Outside of work he enjoys the vast variety of craft beers, going out in nice weather to cycle around the city, playing a bit of table tennis and learning new languages, human and programming.</p>
+  email: jocelyn.facchini@codurance.com
+  office: london
