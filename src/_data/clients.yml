@@ -93,7 +93,7 @@
 
 - id: flextrade
   name: Flextrade
-  image: /assets/custom/img/home/clients/flextrade.png
+  image: /assets/custom/img/home/clients/flextrade-logo.png
   alt-text: Flextrade logo
   website: flextrade.com
   services:
@@ -115,7 +115,7 @@
 
 - id: aspectcapital
   name: Aspect Capital
-  image: /assets/custom/img/home/clients/aspect_capital.jpeg
+  image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
   website: aspectcapital.com
   services:
@@ -240,7 +240,7 @@
 
 - id: findmypast
   name: Findmypast
-  image: /assets/custom/img/home/clients/findmypast.png
+  image: /assets/custom/img/home/clients/findmypast-logo.png
   alt-text: Find My Past logo
   website: findmypast.co.uk
   services:
