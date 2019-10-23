@@ -90,13 +90,20 @@ In another example, imagine you are tasked with producing a website to capture i
 open soon. This is preferred to be done by people placing their email addresses, so they can be notified of updates and
 given vouchers for when it opens. Let's take a look at what bad might look like.
 
-- Provisioning a kubernetes cluster just for the website
+- Provisioning a Kubernetes cluster just for the website
 - Creating a set of microservices to handle the subscription process
 
 All the owners of the restaurant want is the ability to capture potential customers (using email addresses). Therefore,
 they want something that can be created quickly to provide this capability. For example, a static website could be
 created and hosted in something like Amazon S3, and add something like Mailchimp to take care of capturing interested
 members of the public.
+
+Alternatively, you could provision an entire Kubernetes cluster for the website, however this might not be wise. By
+doing this you would be making some assumptions. One of which is that the restaurant business need such infrastructure
+to support their simple website. Another is that the restaurant are going to want to pay for the running of this, which
+will most likely not be true. You see, similarly to the previous example, the restaurant are also trying to validate
+something. The something being interest in their restaurant. Therefore, they are likely (and wise) to only want to
+have minimal investment in such activities at this stage.
 
 ## Understanding What They Want
 The previous examples might have made you think, they might have made you roll your eyes in disagreement. Crucially,
