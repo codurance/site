@@ -105,6 +105,10 @@ will most likely not be true. You see, similarly to the previous example, the re
 something. The something being interest in their restaurant. Therefore, they are likely (and wise) to only want to
 have minimal investment in such activities at this stage.
 
+If one of the optimisations of the restaurant business is to keep costs low, creating your own subscription process
+instead of using an off-the-shelf version should only be used when it can be proved that it is more economically viable
+than building it yourself.
+
 ## Understanding What They Want
 The previous examples might have made you think, they might have made you roll your eyes in disagreement. Crucially,
 it must have made you think about past (or current) software endeavours and whether you understood what the customer
