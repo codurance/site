@@ -79,6 +79,11 @@ If it is a specialist language for developing 3D applications, which will in tur
 faster to validate, then this is much better reasoning. Otherwise, stick to what you have the skills for as it will
 mean you can just focus on the problem, and not get distracted with nuanced language features or syntax.
 
+The last point has a hard truth to it. That is, if you have not yet validated the PoC, why spend more time polishing
+the code? If no one has validated it is useful and it could have some traction with a particular market segment, why
+waste effort? Furthermore, often PoCs are re-written post-validation as the focus is different. When producing a PoC
+the focus is usually to prove a concept (all in the name really), whereas the stage after this might be slightly
+different and this is where a bit more polish might be welcomed.
 
 #### Example 2 - Website
 In another example, imagine you are tasked with producing a website to capture interest in a restaurant that is due to
