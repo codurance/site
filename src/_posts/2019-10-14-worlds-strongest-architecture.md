@@ -123,8 +123,8 @@ bit more concrete:
 - address of restaurant clearly visible
 - text stating they will receive discounts in return for their interest
 
-The above will seem fairly straightforward to the restaurant owner, and in they don't actually want a lot! Let's
-now document what we (as developers) might want when we see the above:
+The above will seem fairly straightforward to the restaurant owner, and in the context of other software projects, they
+don't actually want a lot! Let's now document what we (as developers) might want when we see the above:
 
 - front-end needs to be written in a front-end technology such as React or Vue
 - it will require a service to be created in the back end, so we can subscribe users
