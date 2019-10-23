@@ -61,7 +61,19 @@ optimise everything you do to contribute to that goal. Below we will look at wha
 
 As previously mentioned, once we understand what is to be achieved - validating a concept - then we can make sensible
 decisions, removing waste and focus on what really matters. If we can run a presentation using 3D technology, then we 
-have done enough to enable the experiment to commence (which can be done multiple ways).
+have done enough to enable the experiment to commence (which can be done multiple ways). On the contrary if we spend
+too much time discussing architecture, we are losing time that could be spent on producing something that can prove
+the underlying hypothesis of the project. Furthermore, people often underestimate how much time they have after
+delivering something tangible. Often there is a lull, where you can evaluate what you have produced. It is not
+normally the case that the person asking for the software product will then have an entire backlog ready for you to
+work on straight away. This is because they themselves have work to do, taking the product to show investors etc.
+
+The previous paragraph talks about how we should not spend too much time discussing architecture, without anything
+tangible to show. This however, does not mean we should not have architectural discussions, they just need to be
+tailored to the context. If the PoC was for a platform to help people manage microservices, then the architecture
+might be even more important and might warrant more focus. These conversations should still be centered around what is
+to be optimised for.
+
 
 #### Example 2 - Website
 In another example, imagine you are tasked with producing a website to capture interest in a restaurant that is due to
