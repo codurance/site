@@ -74,6 +74,11 @@ tailored to the context. If the PoC was for a platform to help people manage mic
 might be even more important and might warrant more focus. These conversations should still be centered around what is
 to be optimised for.
 
+Similarly, choosing a programming language no one on the team knows just because you can is probably not the best idea.
+If it is a specialist language for developing 3D applications, which will in turn make the PoC easier to build and
+faster to validate, then this is much better reasoning. Otherwise, stick to what you have the skills for as it will
+mean you can just focus on the problem, and not get distracted with nuanced language features or syntax.
+
 
 #### Example 2 - Website
 In another example, imagine you are tasked with producing a website to capture interest in a restaurant that is due to
