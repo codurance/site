@@ -131,9 +131,12 @@ don't actually want a lot! Let's now document what we (as developers) might want
 
 Not everyone will think exactly the same as the above, but often it is the case. Often we don't make sound
 architectural decisions because we are optimising for what we want and not what the customer wants. Using something
-like React for the front end might seem like a sensible (and fashionable) decision, but our context does not 
+like React for the front-end might seem like a sensible (and fashionable) decision, but our context does not 
 necessarily require it, making it a premature optimisation which for what the customer wants right now. Therefore,
 it is simply waste.
+
+We have already discussed creating our own subscription process in the previous section, so I won't labour the point
+here.
 
 ## Knowing What to Optimise For
 To make sound architectural decisions we must first understand what the customer (of our software) wants. The examples
