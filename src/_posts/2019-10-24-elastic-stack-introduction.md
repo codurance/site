@@ -382,7 +382,7 @@ Nodes are one of the most basic constructs that stores and indexes the data. The
 
 An index is a collection of documents with similar characteristics, they are like tables in a relational database.
 
-The Indexes are more flexible than a relational database, since they are lightweight you can create multiple indexes without further ado. In logging for example, you can create an index for each day and have the type to be the kind of log that you have.
+The Indexes are more flexible than a relational database, since they are lightweight you can create multiple indexes without much difficulty. In logging for example, you can create an index for each day and have the type to be the kind of log that you have.
 
 
 Every day a new index will be created, you wouldn't do that for a relational DB. 
@@ -625,7 +625,7 @@ We don't want to keep all the indexes `hot`, so we can start to change the state
 
 For `warm` indexes we have some options that weren't previously available in the `hot` one, the `actions` section allows us to do some changes when changing the state of the index. 
 
-The first one that we can see is `forcemerge` this option, when set to `1`, tells `Elasticsearch` to merge all the indexes that are going from `hot` to `warm`. This is helpful because in `Elastisearch` when you delete a document, that document it isn't really deleted, but only marked has deleted, and during the merge those documents marked are going to be properly deleted, like you would send the files to the `Trash bin` then delete them from your system after.
+The first one that we can see is `forcemerge` this option, when set to `1`, tells `Elasticsearch` to merge all the indexes that are going from `hot` to `warm`. This is helpful because in `Elastisearch` when you delete a document, that document isn't really deleted, but only marked has deleted. During the merge the documents marked as deleted are going to be properly deleted, like you would send the files to the `Trash bin` and then delete them from your system later.
 
 Then we have `shrink` which is used to reduce the number of shards of an index. Since we are not writing in that index anymore we don't need all shards that we allocated previously. 
 
@@ -919,4 +919,4 @@ We have the message getting the stats from our server, there are four columns, b
 
 # That's all for today
 
-In this post we saw the components of the Elastic Stack, how to start using them, and the importance of having your logs organized, also you can always resort to their documentation [here](https://www.elastic.co/guide/index.html) if you want to see if they support any functionality that isn't mentioned in the post. 
+In this post we saw the components of the Elastic Stack, how to start using them and the importance of having your logs organized. Also you can always resort to the Elastic Stack documentation [here](https://www.elastic.co/guide/index.html) to see what other functionality is supported that isn't mentioned in my post. 
