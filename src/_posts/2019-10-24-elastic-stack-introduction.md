@@ -919,4 +919,4 @@ We have the message getting the stats from our server, there are four columns, b
 
 # That's all for today
 
-In this post we saw the components of the Elastic Stack, how to start using them and the importance of having your logs organized. Also you can always resort to the Elastic Stack documentation [here](https://www.elastic.co/guide/index.html) to see what other functionality is supported that isn't mentioned in my post. 
+In this post we saw the components of the Elastic Stack, how to start using them and the importance of having your logs organised. Also you can always resort to the Elastic Stack documentation [here](https://www.elastic.co/guide/index.html) to see what other functionality is supported that isn't mentioned in my post. 
