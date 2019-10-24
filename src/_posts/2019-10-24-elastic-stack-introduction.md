@@ -378,17 +378,12 @@ Nodes are one of the most basic constructs that stores and indexes the data. The
 - Data node: This holds the data and performs CRUD operations, aggregations and searches.
 - Ingest node: This transforms and enriches the data before indexing.
 
-### Cluster
-
-A Cluster is a group of nodes that can be in multiple machines. Clusters can reorganise the data when it's growing to spread the data. {Keith : Not sure what you mean here.}
-
 ### Index
 
 An index is a collection of documents with similar characteristics, they are like tables in a relational database.
 
-The Indexes are more flexible than a relational database, since they are lightweight you can create multiple indexes without further ado. In logging for example, you can create an index for each day and have the type to be the kind of log that you have e.g:
+The Indexes are more flexible than a relational database, since they are lightweight you can create multiple indexes without much difficulty. In logging for example, you can create an index for each day and have the type to be the kind of log that you have.
 
-{Keith: Did you miss an example here?}
 
 Every day a new index will be created, you wouldn't do that for a relational DB. 
 
@@ -630,7 +625,7 @@ We don't want to keep all the indexes `hot`, so we can start to change the state
 
 For `warm` indexes we have some options that weren't previously available in the `hot` one, the `actions` section allows us to do some changes when changing the state of the index. 
 
-The first one that we can see is `forcemerge` this option, when set to `1`, tells `Elasticsearch` to merge all the indexes that are going from `hot` to `warm`. This is helpful because makes in `Elastisearch` when you delete a document it isn't deleted, but only marked has deleted, and during the merge those documents marked are going to be properly deleted. {Keith: Not sure what you are trying to say in this last sentance.}
+The first one that we can see is `forcemerge` this option, when set to `1`, tells `Elasticsearch` to merge all the indexes that are going from `hot` to `warm`. This is helpful because in `Elastisearch` when you delete a document, that document isn't really deleted, but only marked has deleted. During the merge the documents marked as deleted are going to be properly deleted, like you would send the files to the `Trash bin` and then delete them from your system later.
 
 Then we have `shrink` which is used to reduce the number of shards of an index. Since we are not writing in that index anymore we don't need all shards that we allocated previously. 
 
@@ -922,4 +917,6 @@ We have the message getting the stats from our server, there are four columns, b
 ![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Console-2.png' | prepend: site.baseurl }})
 
 
-{Keith: I would include some sort of ending.}
+# That's all for today
+
+In this post we saw the components of the Elastic Stack, how to start using them and the importance of having your logs organised. Also you can always resort to the Elastic Stack documentation [here](https://www.elastic.co/guide/index.html) to see what other functionality is supported that isn't mentioned in my post. 
