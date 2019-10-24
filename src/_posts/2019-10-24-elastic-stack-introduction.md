@@ -7,7 +7,7 @@ date: 2019-10-24 00:00:00 +00:00
 author: André Guelfi Torres
 description: An introduction on how to use the Elastic Stack to monitor your applications
 image:
- src: /assets/custom/img/blog/2019-10-11-elastic-stack-introduction/monitor.jpeg
+ src: /assets/custom/img/blog/2019-10-24-elastic-stack-introduction/monitor.jpeg
 tags:
 - monitoring
 - logging
@@ -819,7 +819,7 @@ In the `Kibana` home we opted to connect to an Index in `Elastisearch` using a p
 
 The `Discovery` area allows you to visualise and search data stored in `Elastichsearch`. 
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Discovery-1.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Discovery-1.png' | prepend: site.baseurl }})
 
 ### 1 - Filters
 
@@ -860,7 +860,7 @@ We need a way to visualise all that data that is stored nicely, and Visualise al
 
 In this example we are creating a `bar graph`. In the left menu you can set the options to create a graph.
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Visualisation-1.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Visualisation-1.png' | prepend: site.baseurl }})
 
 1. `Aggregation`: Is the kind of operation that you want to perform, which can be operations `count`, `sum` and `average`. There are also more complex operations like `Standard Deviation` and operations using other values. 
 2. `Field`: Is the field that you want to use to make the calculation and the value to be displayed. For simple aggregations you can select the field straightway from the dropdown and for more complex queries you can use `QueryDSL` and `JSON` to find the values.
@@ -868,7 +868,7 @@ In this example we are creating a `bar graph`. In the left menu you can set the 
 
 ### Buckets
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Visualisation-2.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Visualisation-2.png' | prepend: site.baseurl }})
 
 1. `Aggregation`: Is how your are going to group your data. You might want a time using the `Date Histogram` or something to group the endpoints that you have using a specific field.
 2. `Field`: Is the field that you are going to use to split the data. In case you need a more complex aggregation, you will be able to use the `QueryDSL` as an input.
@@ -878,7 +878,7 @@ In this example we are creating a `bar graph`. In the left menu you can set the 
 
 Now we can put together the visualisation that we built into `Dashboards`, so we can aggregate all the data that we want to see into one place. You can add the visualisations that you created and resize them to fit the screen the way you want. Also you can change the search for them and even have them in full screen to be displayed really nicely.
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Dashboard-1.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Dashboard-1.png' | prepend: site.baseurl }})
 
 ## Dev Tools
 
@@ -888,7 +888,7 @@ Kibana also provides you with the `Dev Tools` sections that have some tools to h
 
 We saw that `Elasticsearch` has a REST-like API, well the console provides an easy way to interact with the API. Providing auto-complete and connecting straight away to `Elasticsearch` so you don't have to build the entire request by hand. You can make a request just by having the method and the path, you can also write `JSON` with verification and completion. 
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Console-1.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Console-1.png' | prepend: site.baseurl }})
 
 ```
 GET _template/transfers_template
@@ -919,7 +919,7 @@ We have the message getting the stats from our server, there are four columns, b
 %{NUMBER:stats1} \| %{NUMBER:stats2} \| %{NUMBER:stats3} \| %{NUMBER:stats4}
 ```
 
-![]({{ '/assets/custom/img/blog/2019-10-11-elastic-stack-introduction/Console-2.png' | prepend: site.baseurl }})
+![]({{ '/assets/custom/img/blog/2019-10-24-elastic-stack-introduction/Console-2.png' | prepend: site.baseurl }})
 
 
 {Keith: I would include some sort of ending.}
