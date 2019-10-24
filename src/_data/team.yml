@@ -764,7 +764,7 @@
 - id: enric_jorda
   name: Enric Jorda
   image: /assets/custom/img/team/enric_jorda.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Enric has been playing with computers since his teens where he would develop games with school friends. This led him to become a front-end developer and then a games developer, prior to joining Codurance.</p>
     <p>After working on numerous projects for the last 15 years, he realised that working correctly, tooling and doing things the right way saves time. Now, he is having fun like a child learning the Craftsman way.</p>
