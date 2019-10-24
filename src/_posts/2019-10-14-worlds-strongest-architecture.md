@@ -154,3 +154,16 @@ Closely related, if you find that teams are starting to step on each other's toe
 (accessing each other's database tables etc), you might want to introduce an architecture that establishes clear
 boundaries between teams (and their associated data). This could be a hard network boundary (via an API), or a softer
 boundary via a service within the codebase (e.g. one package talking to a service in another package in Java).
+
+### Performance
+If you ever find yourself in a situation where you need to create a highly performant system, this will (and should)
+affect the decisions you make with your architecture. And architectural decisions will not just be confined to macro
+design (how you arrange your systems), but also at micro level, i.e. creating performant code. Even within the context
+of having to create highly performant systems, different approaches will be taken. For instance, some might spend
+more time focusing at the macro level, others might spend a bit more time (either through necessity) at the micro level,
+ensuring the code they write is optimal, in terms of performance.
+
+Interestingly, optimising for performance is not simply about creating a system that performs its desired functionality
+in a timely manner. You see what that previous sentence says is: the system must be performant when it is running. This
+also means it must be running and ready to run its ultra performant code. This will further impact our architectural
+decisions because it is yet another aspect to optimise for.
