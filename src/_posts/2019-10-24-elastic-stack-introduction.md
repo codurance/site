@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: elastic-stack-introduction
 title: Elastic Stack Introduction
-date: 2019-10-11 00:00:00 +00:00
+date: 2019-10-24 00:00:00 +00:00
 author: André Guelfi Torres
 description: An introduction on how to use the Elastic Stack to monitor your applications
 image:
