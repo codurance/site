@@ -167,3 +167,15 @@ Interestingly, optimising for performance is not simply about creating a system 
 in a timely manner. You see what that previous sentence says is: the system must be performant when it is running. This
 also means it must be running and ready to run its ultra performant code. This will further impact our architectural
 decisions because it is yet another aspect to optimise for.
+
+### The Caveat
+There is of course a caveat. That is, when speaking to your customer (often referred to as "the business"), they will
+want to optimise for *everything*. The software must be high performance, ultra reliable. If you can name it, they will
+want it. The trick here is to understand what they actually want to optimise for, or is it? It's not, that sentence
+should read as the below:
+
+> The trick here is to understand what they need to *optimise* for
+
+What can they simply not have if they want their software to provide the desired functionality? And then out of that
+(hopefully much smaller) list, what can be deferred for now. Hopefully, you will have a list of criteria which
+everything you do can be optimised for.
