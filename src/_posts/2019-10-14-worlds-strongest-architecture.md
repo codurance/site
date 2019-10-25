@@ -17,7 +17,7 @@ This article is for those who want to improve their decision making when it come
 
 ## Optimising for the deadlift
 In July 2016 Eddie Hall achieved something no man before him had, managing to deadlift 500kg (or half a ton). The year 
-before he lifted 500kg, he broke his own world record by lifting 465kg. He was no stranger to the deadlift,
+before, he broke his own world record by lifting 465kg. He was no stranger to the deadlift,
 and no stranger to breaking world records. This article could be dedicated exclusively to the feats of "The Beast",
 however we want to focus on one aspect in particular, and this is optimisation.
 
