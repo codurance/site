@@ -27,7 +27,6 @@ runner. If running was not going to contribute to his goal, you can bet he was n
 structure (or physical architecture). He was consuming enough calories to enable him to be strong, not to have washboard
 abs.
 
-### So how does this relate to architecture?
 You might be wondering something like "the above is interesting, but how does it relate to software architecture?".
 Well, for now the key takeaway should be that like Eddie, we must decide what we are optimising for when building
 software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
