@@ -5,7 +5,7 @@ name: worlds-strongest-architecture
 title: World's Strongest Architecture
 date: 2019-08-21 00:00:00 +00:00
 author: Sam Davies
-description: Exploring the parallels between Eddie Hall deadlifting 500kg and software architecture
+description: Taking inspiration from Eddie Hall deadlifting 500kg to improve software architecture decision making
 image:
    src: /assets/custom/img/blog/seven-testing-sins.jpg
 tags:
