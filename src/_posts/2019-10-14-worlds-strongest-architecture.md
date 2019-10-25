@@ -179,3 +179,14 @@ should read as the below:
 What can they simply not have if they want their software to provide the desired functionality? And then out of that
 (hopefully much smaller) list, what can be deferred for now. Hopefully, you will have a list of criteria which
 everything you do can be optimised for.
+
+Similarly to Eddie, you are going to have to decide what you want to optimise for, otherwise you are going to be left
+wanting everything.
+
+## Closing Words
+In this article we have taken inspiration from Eddie Hall and how he had to decide what he needed to optimise for.
+We have explored what can lead to ineffective discussions around architecture, and how we can ensure we don't fall into
+this trap. Furthermore, supporting examples were used in an attempt to illustrate what bad architectural decisions
+might look like. Hopefully as a reader you have appreciated the attempt to convey the importance of understanding
+your customer, and how decisions without the context of what is to be optimised can lead to the implementation of an
+ill-suited architecture.
