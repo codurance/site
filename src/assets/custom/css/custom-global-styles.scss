@@ -97,3 +97,44 @@ h1, h2, h3, h4, h5 {
 }
 
 
+// Background colour overides
+
+.g-bg-green {
+    background-color: $codurance-green!important;
+}
+
+.g-bg-orange {
+    background-color: $codurance-orange!important;
+}
+
+
+// Pagination - hover / active color overides 
+
+.u-pagination-v1-4:hover {
+    color: #555!important;
+    border-color: $codurance-orange!important;
+}
+
+.u-pagination-v1-4--active {
+    background-color: $codurance-orange!important;
+    border-color: $codurance-orange!important;
+}
+
+
+// Unifty template overides
+
+a {
+    color: $codurance-orange;
+}
+
+.u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link {
+    color: $codurance-orange!important;
+}
+
+.g-color-primary {
+    color: $codurance-orange!important;
+}
+
+.g-brd-primary {
+    border-color: $codurance-orange!important;   
+}

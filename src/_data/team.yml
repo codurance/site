@@ -271,18 +271,6 @@
   github: ppardalj
   office: barcelona
 
-- id: johnhearn
-  name: John Hearn
-  image: /assets/custom/img/team/john_hearn.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>John has always loved building stuff and understanding how things work. As a teenager he would write computer games for his friends or build amplifiers in his bedroom out of old music equipment. Building on his interests, he studied Physics at university before becoming an Electronics Engineer, gradually specialising in embedded software and then software in general. During his career he has been lucky enough to work in a variety of companies from small startups to large corporations, in the private and public sectors and in three countries.</p>
-    <p>He considers programming to be an enormously creative and rewarding activity, and to do it well even more so. The best thing, for him, is that there is always so much more to learn.</p>
-    <p>Outside of work, you will often find him hiking and enjoying nature. He likes to organise trips to the mountains and especially enjoys sleeping under the stars.</p>
-  twitter: johnhearnbcn
-  github: johnhearn
-  office: barcelona
-
 - id: pjbaraud
   name: Pierre-Jean Baraud
   image: /assets/custom/img/team/pierre_jean_baraud.jpg
@@ -314,6 +302,7 @@
     <p>Before joining Codurance he worked for a major UK retailer on their website, from developing a front-end framework to help product teams to move faster, to APIs those teams would use.</p>
     <p>He loves working with passionate individuals, and those that share a desire to better not just themselves and others, but the software they write.</p>
     <p>Outside of work he enjoys keeping fit and walking in the outdoors.</p>
+  twitter: Software_Sam_D
   github: upsd
   office: london
 
@@ -539,18 +528,6 @@
     <p>Jack spends his free time growing his cultural compass and developing his communication skills through travel, reading and socialising, and hopes his son grows into a wise and compassionate little crafter.</p>
   office: barcelona
 
-- id: gabriele_lippi
-  name: Gabriele Lippi
-  image: /assets/custom/img/team/gabriele_lippi.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Gabriele discovered his passion for computers and coding during his studies in Philosophy. Deep curiosity and a true passion for knowledge in all its aspects, together with a strong will to learn, brought him to work first in a consultancy company as QA, then as a front-end developer in a start-up, joining the start-up hub Talent Garden, and later to join a firm of data visualization, where he had the opportunity to broaden again his horizons.</p>
-    <p>When he came across Software Craftsmanship, he immediately realized that he had found what he was looking for; now he's on his way to become a Software Craftsman.</p>
-    <p>Apart from coding, he enjoys reading books, practicing sports, travelling around the world, and, above all, spending time with his friends.</p>
-  github: glippi
-  twitter: gabriele_lippi
-  office: barcelona
-
 - id: aurelija_zubaviciute
   name: Aurelija Zubaviciute
   image: /assets/custom/img/team/aurelija_zubaviciute.jpg
@@ -659,7 +636,7 @@
 - id: davidhalewood
   name: David Halewood
   image: /assets/custom/img/team/david_halewood.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>David Halewood is a recent convert from an Outdoor Educator of 10 years to a software engineer.</p>
     <p>He has spent the last 18 months as a C# developer working on creating tools for database developers at Redgate Software in Cambridge, UK.</p>
@@ -676,7 +653,7 @@
 - id: sherlockqiao
   name: Zhiqiang (Sherlock) Qiao
   image: /assets/custom/img/team/sherlock_qiao.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Zhiqiang has recently moved from Shanghai to London and started his new adventure here.</p>
     <p>He was so lucky to find his love with computers and programming on an Apple II. Since then, he has never been tired of having tremendous fun in these things; to make life easier through coding, to enjoy the beauty in code, and to cooperate with and learn from great coders.</p>
@@ -719,7 +696,7 @@
 - id: andrei_bogomja
   name: Andrei Bogomja
   image: /assets/custom/img/team/andrei_bogomja.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Andrei discovered his passion for programming and software engineering while studying publishing in London.</p>
     <p>While not being a stranger to the world of computers and IT, he worked for quite a while in creative industries as a graphic designer, photographer, and video editor for a post-production company. The revelation about his next career move came to him while he was working on a project not directly related to programming in which he discovered his passion for the field. After gaining his degree in publishing, he enrolled for an undergraduate Computing course at the University of London.</p>
@@ -732,7 +709,7 @@
 - id: ivan_katzarski
   name: Ivan Katzarski
   image: /assets/custom/img/team/ivan_katzarski.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Ivan’s background starts with a degree in Economics, however, this was never his passion. Of all Economics subjects, he enjoyed Behavioural Economics where working with people was essential. Luckily, his path led him to a second degree in Software Development where he was finally able to fully dedicate his time to what he is most passionate about.</p>
     <p>His professional career started in the utility sector where he learned about the full software lifecycle. He was involved in customer interaction, requirements gathering, software deployment, configuration, Linux administration and security, and in writing small pieces of software to support internal processes.</p>
@@ -745,7 +722,7 @@
 - id: matt_gray
   name: Matt Gray
   image: /assets/custom/img/team/matt_gray.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Matt has a varied work background which includes music production, audio editing and sound design for computer games, writing music for film, TV and various independent record labels; DJing, technical support at a music technology college; and for the 5 years prior to beginning the apprenticeship at Codurance, teaching and managing Computer Science departments in secondary schools.</p>
     <p>With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts using Python and various teaching tools, as well as learning enough Computer Science theory to teach it at A-Level, whilst also picking up a bit of Java, OO design, Javascript and HTML along the way.</p>
@@ -758,7 +735,7 @@
 - id: tacuma_bellford
   name: Tacuma Bellford
   image: /assets/custom/img/team/tacuma_bellford.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Tacuma’s background is in Linguistics and enjoys learning languages, for machines and humans. Computational Linguistics, is what sparked his interest in software development. His motivation comes from the thought of being able to bring ideas to life using technology.</p>
     <p>His professional career began at a startup solving a problem in the medical education sector. He was involved in the front end aspect of development and also in some decisions regarding the direction of the platform.</p>
@@ -787,7 +764,7 @@
 - id: enric_jorda
   name: Enric Jorda
   image: /assets/custom/img/team/enric_jorda.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Enric has been playing with computers since his teens where he would develop games with school friends. This led him to become a front-end developer and then a games developer, prior to joining Codurance.</p>
     <p>After working on numerous projects for the last 15 years, he realised that working correctly, tooling and doing things the right way saves time. Now, he is having fun like a child learning the Craftsman way.</p>
@@ -796,23 +773,10 @@
   email: enric.jorda@codurance.com
   office: barcelona
 
-- id: fernando_guerra
-  name: Fernando Guerra
-  image: /assets/custom/img/team/fernando_guerra.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Fernando was in contact with computing from a very young age. Starting with video games, he entered the world of programming at age 15.</p>
-    <p>He continued to be interested in software development and graduated as an information systems engineer in Argentina. He worked at Thales, a French consultant for 6 years, and later at Mercado Libre, the largest e-commerce site in Latin America for 4 years. He currently moved to Barcelona to discover new ways of working. He specializes in Java but likes to discover new technologies constantly.</p>
-    <p>He finds the leadership and conformation of the teams interesting and how team relationships affect the product he generates. He is passionate about creating new products linked to his interests, such as music and football.</p>
-    <p>In his spare time, he enjoys playing football, getting together with friends or playing video games.</p>
-  github: ferwguerra
-  email: fernando.guerra@codurance.com
-  office: barcelona
-
 - id: josep_mir
   name: Josep Mir
   image: /assets/custom/img/team/josep_mir.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Josep spent most of his youth studying different degrees in computer science, always trying to gather more knowledge from this wide field. It was everything around the software engineering process which hooked him to this science.</p>
     <p>In his professional career he has been working for a big international consultancy company and also for a small new born startup. This experience brought him the perspective from both worlds, where things are difficult and slow to change and also where the changes are continuous and dealing with uncertainty is just a daily routine.</p>
@@ -902,4 +866,137 @@
     <p>Imaginative and pragmatic, Laurence is a web engineer with a solid understanding of why writing high quality code is a good idea. He loves to make complicated things seem simple – and therefore easy to iterate upon – and came to Codurance to be surrounded by like minded, passionate people.</p>
     <p>When not exploring the value of excellent software Laurence loves time with his wife, surfing, exploring beautiful places and putting ink to paper to create surreal fine art.</p>
   email: laurence.lord@codurance.com
+  office: london
+
+- id: angus_paterson
+  name: Angus Paterson
+  image: /assets/custom/img/team/angus_paterson.jpg
+  role: Senior Graphic Designer
+  fullDescription:
+    <p>Angus is a multiskilled graphic and digital designer with a keen interest in code and technology. He has over 15 years of industry experience working for start-ups, well-established brands and agencies.</p>
+    <p>A sucker for a tight grid system and 'Swiss Style' typography, Angus believes that effective visual communication relies on a clean, uncluttered aesthetic underpinned by a strong concept.</p>
+    <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
+  email: angus.paterson@codurance.com
+  office: london
+
+- id: riccardo_toni
+  name: Riccardo Toni
+  image: /assets/custom/img/team/riccardo_toni.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Before starting as a software developer Riccardo worked in the music industry, as a musician at first and then as an artist manager and consultant in both Italy and the UK.
+    <p>He later gained some experience working with JVM based languages and Pivotal’s tech stack, across different systems from legacy monoliths to cloud based microservices. This gave him the opportunity to observe in different circumstances how often the success of a software product can be jeopardised by some poor choices in software design as well as over-engineered architectures or lack of communication and feedback inside the organisations. Therefore he ended up becoming a fiery sponsor of the Software Craftsmanship movement and a TDD, Extreme Programming and Clean Code advocate.</p>
+    <p>Within the last few years, his continuous learning approach gave him the opportunity to grow quickly - sharing his learning and absorbing technical knowledge from his fellow colleagues, adopting a collaborative attitude and always remaining curious and inquisitive.</p>
+    <p>He inherited from his past experience, in other contexts, a set of soft skills such as a natural ability to comprehend the business domain and the business needs, negotiate solutions, understand different perspectives or mitigate contrasts.</p>
+    <p>In his free time he loves cycling, swimming, playing drums, cooking, reading and listening to jazz music.</p>
+  email: riccardo.toni@codurance.com
+  office: london
+
+- id: jose_rh
+  name: José E. Rodriguez
+  image: /assets/custom/img/team/jose_e_rodriguez.jpg
+  role: Managing Director (Spain)
+  fullDescription:
+    <p>I lead and support a team of exceptional people whose purpose is to accelerate organizations and to help them reach their goals.</p>
+    <p>Together we help organizations tackle the challenges they face, guiding and mentoring them as they evolve by improving how they work.</p>
+  twitter: jrhuerta
+  office: barcelona
+
+- id: sid_sivanandam
+  name: Sid Sivanandam
+  image: /assets/custom/img/team/sid_sivanandam.jpg
+  role: Senior Internal Recruiter
+  fullDescription:
+    <p>Sid recruits for our London and Manchester offices.</p>
+    <p>Sid has been recruiting in technology for the last 5 years and really enjoys listening to people's stories. He takes immense pleasure in identifying people's career aspirations and finding the right role and work culture for them.</p>
+    <p>In his spare time he enjoys watching Star Trek (the original series), travelling and eating ramen.</p>
+  linkedin: sid-sivanandam
+  email: sidhaesh.sivanandam@codurance.com
+  office: london
+
+- id: mark_gray
+  name: Mark Gray
+  image: /assets/custom/img/team/mark_gray.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
+    <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
+  twitter: markrgray
+  email: mark.gray@codurance.com
+  office: london
+
+- id: etienne_mustow
+  name: Etienne Mustow
+  image: /assets/custom/img/team/etienne_mustow.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Etienne’s love of tech comes from an early age. He used to learn various subjects by playing educational computer games his mum would buy him for a windows PC. These games sparked his interest in logical problems and solutions, leading to his inquisitive nature.</p>
+    <p>In 2017, Etienne decided to make the sink-or-swim decision to drop out of his Biomedical Sciences undergraduate degree to pursue software development, gaining a place on the intensive course at Makers Academy. Since then, Etienne has worked in the financial and marketing tech sectors and chooses Ruby as his go-to language.</p>
+    <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
+    <p>Etienne can be found on local basketball courts, watching top quality anime, reading manga, singing or dancing to afrobeats when not at his computer.</p>
+  email: etienne.mustow@codurance.com
+  office: london
+
+- id: arnaud_claudel
+  name: Arnaud Claudel
+  image: /assets/custom/img/team/arnaud_claudel.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Arnaud started to work in a big IT company but quickly got tired of the lack of quality in his projects.</p>
+    <p>He then tried to find new ways of working and met a lot of passioned people across meetups.</p>
+    <p>When looking for his post-graduation job, Software Craftsmanship began the most important keyword to filter the offers, this is why he eventually ended up at Codurance.</p>
+    <p>During his freetime, he likes to listen to classical music, (try to) do some sports and explore the city.</p>
+  email: arnaud.claudel@codurance.com
+  office: london
+
+- id: helena_abellan
+  name: Helena Abellán
+  image: /assets/custom/img/team/helena_abellan.jpg
+  role: Head of Communications and Marketing (Spain)
+  fullDescription:
+    <p>Helena is Head of Communications and Marketing at Codurance Spain. She is an educational and psychologist and journalist, and for more than 18 years has been exclusively dedicated to working in communications and marketing.</p>
+    <p>She expanded her studies with a Postgraduate Digital Media and Online Content degree at the Ramón Llull University. With the rise of the internet she  decided to devote herself to digital communication and then became interested in branded content and content marketing and trained in this discipline. Later she completed her studies with a specialization in Applied Neuromarketing from the University of Barcelona.</p>
+    <p>She has worked for both brand and agency. The experience of working as the client and also as a service provider has given her a holistic vision regarding the expectations that need to be met in marketing and communication.</p>
+    <p>She likes to live and work as a scout&#58; "Scouts leave the world better than how they found it". She believes that the best way to do her best is to be part of a team that aspires to exceed customer expectations, grows in their abilities, are cohesive and maintain healthy relationships.</p>
+    <p>She loves the summer, the beach, restoring old furniture, airplanes and a winter afternoon of reading or watching a movie  in front of the fireplace.</p>
+  email: helena.abellan@codurance.com
+  office: barcelona
+
+- id: edward_rixon
+  name: Edward Rixon
+  image: /assets/custom/img/team/edward_rixon.jpeg
+  role: Apprentice
+  fullDescription:
+    <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
+    <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
+    <p>In his free time, Edward goes rock-climbing, plays chess and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar. </p>
+  email: edward.rixon@codurance.com
+  linkedin: edwardrixon
+  office: london
+
+- id: jocelyn_facchini
+  name: Jocelyn Facchini
+  image: /assets/custom/img/team/jocelyn_facchini.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Jocelyn started to get curious about programming at the age of 13 whilst using IRC clients, which was running a quiz game and allowed him to explore the scripts behind the game. It was only during his University studies that he discovered how facinating programming was which lead him to graduate with a Masters degree in Distributed Systems.</p>
+    <p>Coming from a musical background in parallel, he knows the importance of continous practice and how rewarding it is in the long run.</p>
+    <p>He first heard about eXtreme Programming during his studies and after a few years he discovered how to use the practice of TDD which was a revelation of what programming means for him. Having understood the power of fundamental principles in software development, he started to fill up his e-book reader library.</p>
+    <p>He's always looking for developing high quality software in order to make developers and users life easier.</p>
+    <p>Outside of work he enjoys the vast variety of craft beers, going out in nice weather to cycle around the city, playing a bit of table tennis and learning new languages, human and programming.</p>
+  email: jocelyn.facchini@codurance.com
+  office: london
+
+- id: jose_wenzel
+  name: José Pablo Wenzel
+  image: /assets/custom/img/team/jose_wenzel.jpg
+  role: Apprentice
+  fullDescription:
+    <p>José started his development career in Chile where he worked in an advertisement start-up doing administration jobs, after this he joined the development team on this company, to help with the management of SQL servers. He worked with Centos servers and squid3, python and SQL.</p>
+    <p>After a while working in this company, and not having formal education, he decided to get into the university, where he studied at nights learning languages like java and C#. whilst doing this he stopped working in a development environment and started working in a market research company, where he stayed for 2 years. On a business trip, he found out about SoCraTes and Codurance.</p>
+    <p>He's very interested in best practices and tiding up code, he's always willing to learn and help others that might need his help.</p>
+    <p>In his free time, you can find him playing videogames, dungeons and dragons, watching anime, or just having a beer with some friends.</p>
+  github: jpwenzelc
+  linkedin: josewenzel
+  email: jose.campos@codurance.com
   office: london
