@@ -29,7 +29,9 @@ abs.
 
 You might be wondering something like "the above is interesting, but how does it relate to software architecture?".
 Well, for now the key takeaway should be that like Eddie, we must decide what we are optimising for when building
-software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
+software. I am sure Eddie would love to be a world class sportsman in all sports, however it is not practical in reality
+and we must decide what we actually want. An appreciation of this can help to avoid chasing "snake oil" and 
+"silver bullets".
 
 So enough about deadlifts, let's move on to discuss some software!
 
