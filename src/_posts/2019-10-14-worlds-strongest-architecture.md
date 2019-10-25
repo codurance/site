@@ -33,6 +33,8 @@ You might be wondering something like "the above is interesting, but how does it
 Well, for now the key takeaway should be that like Eddie, we must decide what we are optimising for when building
 software. An appreciation of this can help to avoid chasing "snake oil" and "silver bullets".
 
+So enough about deadlifts, let's move on to discuss some software!
+
 ## Ineffective discussions around architecture
 Many of you reading this will have been involved in (or aware of) discussions around which architecture to choose.
 Often, someone might suggest using the thing that is new and shiny, and a game of buzzword bingo commences, where you
