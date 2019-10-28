@@ -70,8 +70,8 @@ delivering something tangible. Often there is a lull, where you can evaluate wha
 normally the case that the person asking for the software product will then have an entire backlog ready for you to
 work on straight away. This is because they themselves have work to do, taking the product to show investors etc.
 
-The previous paragraph talks about how we should not spend too much time discussing architecture, without anything
-tangible to show. This however, does not mean we should not have architectural discussions, they just need to be
+One should not spend too much time discussing architecture, without anything tangible to show. This however, does not
+mean we should not have architectural discussions, they just need to be
 tailored to the context. If the PoC was for a platform to help people manage microservices, then the architecture
 might be even more important and might warrant more focus. These conversations should still be centered around what is
 to be optimised for.
