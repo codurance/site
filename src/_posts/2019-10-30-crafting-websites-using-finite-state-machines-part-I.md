@@ -364,9 +364,6 @@ Code:
 
 ![view tests]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/view%20tests.png "View tests")
 
-and the app:
-
-![VIDEO]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/todos.mov "Video")
 
 ## Goals revised
 
