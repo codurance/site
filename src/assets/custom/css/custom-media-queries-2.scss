@@ -21,6 +21,11 @@
     .image-side-by-side-text {  /* 0 0 1 0 */
         float: none;
     }
+    .img-fluid {
+        width: 80%;
+        height: auto;
+        padding: 20%;
+    }
 }
 
 /* Landscape phone to portrait tablet */

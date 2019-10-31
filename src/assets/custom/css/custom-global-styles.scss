@@ -96,6 +96,35 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 
+// Imagery
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.img-border-orange-yellow {
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.img-border-orange-yellow img {
+    position: relative;
+    z-index: 2;
+}
+
+.img-border-orange-yellow:after {
+    content: '';
+    background: rgb(239,119,38);
+    background: linear-gradient(90deg, rgba(239,119,38,1) 0%, rgba(255,220,64,1) 57%);
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    width: 100%;
+    height: calc(100% - 10px);
+    z-index: 1;
+}
 
 // Background colour overides
 

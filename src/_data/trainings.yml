@@ -1,3 +1,9 @@
+- id: introduction_to_functional_programming
+  name: Introduction to Functional Programming
+  author: Jorge Gueorguiev García
+  description: A course to learn some of the basics of functional programming for those who are already coding proficient.
+  page: /services/training/introduction-to-functional-programming
+
 - id: crafting_code
   name: Crafting Code
   author: Sandro Mancuso
