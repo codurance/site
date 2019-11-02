@@ -21,12 +21,27 @@ tags:
 
 
 [Code on Gitlab](https://gitlab.com/danbunea/how-to-solve-it-crafting-web-apps)
-[Presentation](http://www.danbunea.ro/presentations/crafting%20web%20apps.html)
 
-## PROBLEM
+**Table of contents**
 
-## How should we start crafting a web app?
+- PROBLEM: How should we start crafting a web app?
+- SOLUTION
+  * THEORY
+  * Strategy
+    + Goals
+  * Tactics
+    + Patterns
+    + Techniques
+  * PRACTICE
+    + Step 1 Draw the diagram of the UI state machine
+    + Step 2: Domain modelling
+    + Step 3: Solve the data problem
+    + Step 4: Build the UI
+  * Goals revised
+  * Part II - what will be discussed
 
+
+# PROBLEM: How should we start crafting a web app?
 
 The requirements come, we have some UI mockups and now we need to start developing a web app. What is the first step we need to do?
 
@@ -40,6 +55,10 @@ Let's go back a bit. If this was not a specific web app but rather a generic one
 
 In the following lines I will try to address exactly this questions. We'll start with a little bit of theory, then we'll put it in practice:
 
+<a name="solution"/>
+
+# SOLUTION
+
 ## THEORY
 
 ## Strategy
@@ -47,7 +66,7 @@ In the following lines I will try to address exactly this questions. We'll start
 
 We'll have to think a bit strategically and a little bit tactically. For the strategy, what would be our goals:
 
-###Goals
+### Goals
 
 * Break the complexity down (state machines, separation of concerns)
 * Build robustness into the system (atomicity with rollback)
@@ -64,12 +83,15 @@ Steps don't need to be sequential, in fact it is recommended to do the last two 
 
 ## Tactics
 
+### Patterns 
 
 We will be using a few patterns:
 
 * finite state machines
 * separation of concerns using MVC
 * atomicity = all or nothing
+
+### Techniques 
 
 and a few Techniques:
 
@@ -84,7 +106,7 @@ We'll rebuild the famous TodoMVC web application (even though some people suffer
 ![todomvc gif]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/todos.gif "TodoMVC")
 
 
-###Step 1 Draw the diagram of the UI state machine
+### Step 1 Draw the diagram of the UI state machine
 
 
 So let's start with Step 1 - Finite state machine
@@ -369,6 +391,8 @@ Code:
 
 
 The complexity problem -solved by making a state machine and using separation of concerns.
+
+## Parth II - what remains to be discussed
 
 The Robustness problem - TDD is a clear step forward but we can go further:
 
