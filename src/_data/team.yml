@@ -1010,3 +1010,17 @@
     <p>In his spare time, Stéphane enjoys playing games with his friends around a table or online, owning a collection of 80+ board games. He is also an aficionado of old technologies and emulation in particular.</p>
   email: stephane.meny@codurance.com
   office: london
+
+- id: sylvester_loreto
+  name: Sylvester Abreu Loreto
+  image: /assets/custom/img/team/sylvester_loreto.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Sylvester started programming by learning Turbo Pascal in the late 90's. He moved to Borland Delphi 5 in the early 2000s where he programmed (for fun) two games, Snake (as per Nokia) and Space Invaders. Around this time, Sylvester was exposed to LAMP and the .Net suite where he learned Visual Basic, Visual C++ (Direct X), C# and ASP.Net.</p>
+    <p>Since 2012, Sylvester has been developing Web and Ops Enterprise solutions in multi-disciplined teams, working closely with the business.</p>
+    <p>Sylvester has engaged across the entire product lifecycle from defining the requirements with Product Owners all the way to maintaining them in production.</p>
+    <p>In his free time, Sylvester enjoys learning and sharing knowledge around multiple subjects including martial arts and how to be a better version of himself.</p>
+  email: sylvester.loreto@codurance.com
+  github: sylvester-loreto-codurance
+  linkedin: sylvester-loreto
+  office: london
