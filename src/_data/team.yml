@@ -555,7 +555,6 @@
   name: Emma Booth
   image: /assets/custom/img/team/emma_booth.jpg
   role: Business Development Manager
-  email: emma.booth@codurance.com
   linkedin: emma-booth-36785b45
   twitter: codurance_emma
   fullDescription:
@@ -821,7 +820,6 @@
   github: jordanrobinson
   twitter: 0xjrobinson
   linkedin: jordanrobinsonuk
-  email: jordan.robinson@codurance.com
   office: manchester
 
 - id: ade_adegboye
