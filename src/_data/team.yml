@@ -258,19 +258,6 @@
     <p>Lau spends his leisure time getting involved in history, music and theater activities and books.</p>
   office: barcelona
 
-- id: ppardalj
-  name: Pedro Pardal
-  image: /assets/custom/img/team/pedro_pardal.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>The first contact of Pedro with software development was the day that he started running his own private server of an old multiplayer massive online game; since that moment, he knew he wanted to study computer programming.</p>
-    <p>Right before he graduated in his MSc Computer Engineer degree, he ended up finalist of the annual programming contest of Tuenti, which led him to his first job as a software engineer.</p>
-    <p>In the following years, he has worked in a variety of companies across Europe, with a focus on web technologies, developing his skills and passion for best practices as a means to deliver high quality software products.</p>
-    <p>Now Pedro has joined Codurance with a mission, to convey and share his expertise and passion for quality software to the industry and the community.</p>
-  twitter: ppardalj
-  github: ppardalj
-  office: barcelona
-
 - id: pjbaraud
   name: Pierre-Jean Baraud
   image: /assets/custom/img/team/pierre_jean_baraud.jpg
