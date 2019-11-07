@@ -285,7 +285,7 @@
 - id: angelsg
   name: Àngels Gilabert
   image: /assets/custom/img/team/angels_gilabert.jpg
-  role: Head of Recruitment
+  role: Analyst Craftsperson
   fullDescription:
     <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
     <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
@@ -555,7 +555,6 @@
   name: Emma Booth
   image: /assets/custom/img/team/emma_booth.jpg
   role: Business Development Manager
-  email: emma.booth@codurance.com
   linkedin: emma-booth-36785b45
   twitter: codurance_emma
   fullDescription:
@@ -821,7 +820,6 @@
   github: jordanrobinson
   twitter: 0xjrobinson
   linkedin: jordanrobinsonuk
-  email: jordan.robinson@codurance.com
   office: manchester
 
 - id: ade_adegboye
@@ -1001,14 +999,28 @@
   email: jose.campos@codurance.com
   office: london
 
-- id: eloy_acosta
-  name: Omar Eloy Acosta Padron
-  image: /assets/custom/img/team/eloy_acosta.jpg
+- id: stephane_meny
+  name: Stéphane Meny
+  image: /assets/custom/img/team/stephane_meny.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Stéphane started programming at a young age when his father brought home a Tandy 1000 computer. His first programs were written in Basic, guessing which family member was in front of the computer based on the age given. Later, as a teenager he would often be that guy who knows about computers, fixing various issues for his friends and their parents.</p>
+    <p>He got his A-levels in Biology and his masters in Computer Science, using his studies as an excuse to travel around France and Ireland. His career started in Nice, followed by Belfort and Strasbourg, to then finally settle in London.</p>
+    <p>Passionate about agility, he keeps looking for occasions to discuss with and learn from his peers in the Software Craftsmanship and eXtreme programming communities.</p>
+    <p>In his spare time, Stéphane enjoys playing games with his friends around a table or online, owning a collection of 80+ board games. He is also an aficionado of old technologies and emulation in particular.</p>
+  email: stephane.meny@codurance.com
+  office: london
+
+- id: sylvester_loreto
+  name: Sylvester Abreu Loreto
+  image: /assets/custom/img/team/sylvester_loreto.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Eloy is constantly improving personal and professional skills for providing quality software solutions and systems.</p>
-    <p>His first contact with computers was in his childhood with the Epson QX 10.</p>
-    <p>Since he obtained a degree of Licentiate in Computer Engineering by the ULPGC, he has been involved in managing and developing projects for several companies using a wide variety of technologies and practices.</p>
-    <p>When he is away from electronic devices, you might find him playing badminton, watching science fiction or spending time with friends.</p>
-  email: eloy.acosta@codurance.com
+    <p>Sylvester started programming by learning Turbo Pascal in the late 90's. He moved to Borland Delphi 5 in the early 2000s where he programmed (for fun) two games, Snake (as per Nokia) and Space Invaders. Around this time, Sylvester was exposed to LAMP and the .Net suite where he learned Visual Basic, Visual C++ (Direct X), C# and ASP.Net.</p>
+    <p>Since 2012, Sylvester has been developing Web and Ops Enterprise solutions in multi-disciplined teams, working closely with the business.</p>
+    <p>Sylvester has engaged across the entire product lifecycle from defining the requirements with Product Owners all the way to maintaining them in production.</p>
+    <p>In his free time, Sylvester enjoys learning and sharing knowledge around multiple subjects including martial arts and how to be a better version of himself.</p>
+  email: sylvester.loreto@codurance.com
+  github: sylvester-loreto-codurance
+  linkedin: sylvester-loreto
   office: london
