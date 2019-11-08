@@ -7,7 +7,7 @@ date: 2019-08-21 00:00:00 +00:00
 author: Sam Davies
 description: Taking inspiration from Eddie Hall deadlifting 500kg to improve software architecture decision making
 image:
-   src: /assets/custom/img/blog/seven-testing-sins.jpg
+   src: /assets/custom/img/blog/worlds-strongest-architecture.jpg
 tags:
 - architecture
 ---
