@@ -11,8 +11,6 @@ image:
 tags:
 - architecture
 ---
-
-# World's Strongest Architecture
 This article was inspired by SCLConf 2019 and covers in more detail the lightning talk I gave at an LSCC meetup recently.
 Thank you to those who listened to the talk I created (quite quickly) between the conference and attending the meetup.
 
