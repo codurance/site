@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: worlds-strongest-architecture
 title: World's Strongest Architecture
-date: 2019-08-21 00:00:00 +00:00
+date: 2019-11-11 16:00:00 +00:00
 author: Sam Davies
 description: Taking inspiration from Eddie Hall deadlifting 500kg to improve software architecture decision making
 image:
