@@ -13,7 +13,10 @@ tags:
 ---
 
 # World's Strongest Architecture
-This article is for those who want to improve their decision making when it comes to software architecture.
+This article was inspired by SCLConf 2019 and covers in more detail the lightning talk I gave at an LSCC meetup recently.
+Thank you to those who listened to the talk I created (quite quickly) between the conference and attending the meetup.
+
+It is for those who want to improve their decision making when it comes to software architecture.
 
 ## Optimising for the deadlift
 In July 2016 Eddie Hall achieved something no man before him had, managing to deadlift 500kg (or half a ton). The year 
