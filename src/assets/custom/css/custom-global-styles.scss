@@ -96,4 +96,82 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 
+// Imagery
 
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.img-border-orange-yellow {
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.img-border-orange-yellow img {
+    position: relative;
+    z-index: 2;
+}
+
+.img-border-orange-yellow:after {
+    content: '';
+    background: rgb(239,119,38);
+    background: linear-gradient(90deg, rgba(239,119,38,1) 0%, rgba(255,220,64,1) 57%);
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    width: 100%;
+    height: calc(100% - 10px);
+    z-index: 1;
+}
+
+// Background colour overides
+
+.g-bg-green {
+    background-color: $codurance-green!important;
+}
+
+.g-bg-orange {
+    background-color: $codurance-orange!important;
+}
+
+
+// Pagination - hover / active color overides 
+
+.u-pagination-v1-4:hover {
+    color: #555!important;
+    border-color: $codurance-orange!important;
+}
+
+.u-pagination-v1-4--active {
+    background-color: $codurance-orange!important;
+    border-color: $codurance-orange!important;
+}
+
+
+// Unifty template overides
+
+a {
+    color: $codurance-orange;
+}
+
+.u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link {
+    color: $codurance-orange!important;
+}
+
+.g-color-primary {
+    color: $codurance-orange!important;
+}
+
+.g-brd-primary {
+    border-color: $codurance-orange!important;   
+}
+
+
+// Iconography 
+
+.icon-services-large {
+    width: 130px;
+    padding: 30px;
+}
