@@ -24,7 +24,8 @@ tags:
 
 **Table of contents**
 
-- PROBLEM: How should we start crafting a web app?
+- PROBLEM
+  * How should we start crafting a web app?
 - SOLUTION
   * THEORY
   * Strategy
@@ -38,7 +39,7 @@ tags:
     + Step 3: Solve the data problem
     + Step 4: Build the UI
   * Goals revised
-  * Part II - what will be discussed
+- Part II - what will be discussed
 
 
 # PROBLEM: How should we start crafting a web app?
@@ -73,7 +74,8 @@ We'll have to think a bit strategically and a little bit tactically. For the str
 
 Ok, but how can this be done?
 
-Well, we'll do it in 4 Steps
+Well, we'll do it in 4 Steps:
+
 1. Finite state machine diagram (state/transitions starting from the UI)
 2. States (domain modelling for the states)
 3. Transitions (TDD the controller)
@@ -83,7 +85,7 @@ Steps don't need to be sequential, in fact it is recommended to do the last two 
 
 ## Tactics
 
-### Patterns 
+### Patterns
 
 We will be using a few patterns:
 
@@ -91,7 +93,7 @@ We will be using a few patterns:
 * separation of concerns using MVC
 * atomicity = all or nothing
 
-### Techniques 
+### Techniques
 
 and a few Techniques:
 
@@ -263,8 +265,6 @@ Test fails! Good... now we write the code to make it pass:
                 (init!))))
 ```
 
-[![TDD](https://img.youtube.com/vi/CvEoXuoAhCg/0.jpg)](https://www.youtube.com/watch?v=CvEoXuoAhCg)
-
 Any refactorings? No, let's move to the second test and so on until we solve the entire data problem, one test at a time, making sure it fails, then making it pass, then refactoring the code. We end up with this:
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20tests.png "Controller tests")
@@ -300,6 +300,18 @@ How about edit state:
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/edit%20todo%20model%20to%20view.png "mode to view, edit mode")
 
 Now that we know how the data corresponds to the UI, we can move on to doing the actual UI. We'll use react/reagent to break the UI into components:
+
+```
+screen_component
+	todo_input_component
+		text_input_component
+	todos_list_component
+		todo_list_item
+	todos_count_component
+	todos_filter_component
+```
+
+The final version will be like:
 
 ![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/component%20hierarchy%20and%20UI%20relations.png "component hierarchy")
 
