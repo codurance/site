@@ -3,10 +3,10 @@ author: Dan Bunea
 layout: post
 asset-type: post
 title: "Crafting web apps using finite state machines - Part 1"
-date: 2019-10-30 00:00:00
+date: 2019-11-15 00:00:00
 description: A practical approach to crafting web applications, with the goals of breaking the complexity down (state machines, separation of concerns) and building robustness right into the system (atomicity with rollback).
 image:
-    src: /assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20to%20diagram.png
+    src: /assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20to%20diagram.png
     attribution:
 
 abstract: Crafting web apps using finite state machines, separation of concerns and atomicity.
@@ -105,7 +105,7 @@ and a few Techniques:
 
 We'll rebuild the famous TodoMVC web application (even though some people suffer from TodoMVC fatigue), focusing on what we said before.
 
-![todomvc gif]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/todos.gif "TodoMVC")
+![todomvc gif]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/todos.gif "TodoMVC")
 
 
 ### Step 1 Draw the diagram of the UI state machine
@@ -132,7 +132,7 @@ list (filtered or not)
 
 and now let's put it in a diagram:
 
-![state diagram]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/state%20diagram.png "State diagram")
+![state diagram]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/state%20diagram.png "State diagram")
 
 Now using this diagram we'll move to step 2 and we'll do the code according to it.
 
@@ -267,7 +267,7 @@ Test fails! Good... now we write the code to make it pass:
 
 Any refactorings? No, let's move to the second test and so on until we solve the entire data problem, one test at a time, making sure it fails, then making it pass, then refactoring the code. We end up with this:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20tests.png "Controller tests")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20tests.png "Controller tests")
 
 Solve the data problem (TDD the model/controller) Done!
 
@@ -281,11 +281,13 @@ Code:
 
 Now let's have another look again to see the correspondence between the transitions and the controller functions:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20to%20diagram.png "Controller to functions")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/controller%20to%20diagram.png "Controller to functions")
 
 while the data in the model corresponds to:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/model%20to%20diagram.png "Model to diagram")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/model%20to%20diagram.png "Model to diagram")
+
+It is also worth mentioning that we're using the Reagent library, where the model is an atom that is watched for changes. When the atom is changed (in our case by the controller functions, thus the transitions) it will tell the UI to repaint.
 
 ### Step 4: Build the UI
 
@@ -293,11 +295,11 @@ We will need now to make sure that our states can be represented on the screen.
 
 For instance when we're in list mode, filtered:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/filtered%20list%20model%20to%20view.png "model to view, filtered mode")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/filtered%20list%20model%20to%20view.png "model to view, filtered mode")
 
 How about edit state:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/edit%20todo%20model%20to%20view.png "mode to view, edit mode")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/edit%20todo%20model%20to%20view.png "mode to view, edit mode")
 
 Now that we know how the data corresponds to the UI, we can move on to doing the actual UI. We'll use react/reagent to break the UI into components:
 
@@ -313,7 +315,7 @@ screen_component
 
 The final version will be like:
 
-![]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/component%20hierarchy%20and%20UI%20relations.png "component hierarchy")
+![]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/component%20hierarchy%20and%20UI%20relations.png "component hierarchy")
 
 Then we'll test drive the entire UI starting by planning the tests:
 
@@ -396,7 +398,7 @@ Code:
 - [The final code for the views tests](https://gitlab.com/danbunea/how-to-solve-it-crafting-web-apps/blob/master/test/todomvc/views_should.cljs)
 - [The final code for the views](https://gitlab.com/danbunea/how-to-solve-it-crafting-web-apps/blob/master/src/todomvc/views.cljs)
 
-![view tests]({{site.baseurl}}/assets/custom/img/blog/2019-10-30-crafting-websites-using-finite-state-machines-part-I/crafting/view%20tests.png "View tests")
+![view tests]({{site.baseurl}}/assets/custom/img/blog/2019-11-15-crafting-websites-using-finite-state-machines-part-I/crafting/view%20tests.png "View tests")
 
 
 ## Goals revised
