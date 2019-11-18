@@ -1023,3 +1023,14 @@
     <p>When he is away from electronic devices, you might find him playing badminton, watching science fiction or spending time with friends.</p>
   email: eloy.acosta@codurance.com
   office: london
+
+  id: giulio_perrone
+  name: Giulio Perrone
+  role: Apprentice
+  fullDescription:
+    <p>Giulio had his first contact with programming thanks to World of Warcraft, where he tried to contribute to private servers and played with C# and MySQL on his machine. He would later start learning PHP to understand how web applications worked back then, serving as a catalyst for experimenting with other languages and frameworks.</p>
+    <p>Having been exposed to different work environments ranging from commercial boards to NGOs, he has sharpened his skills and developed a passion for Software Craftmanship, which he now advocates vigorously.</p>
+    <p>In his free time, you'll find him exploring the city, trying to convert everyone to Python and fighting invisible ninjas in gymnastics gyms.</p>
+  email: giulio.perrone@codurance.com
+  linkedin: perroneg
+  office: london
