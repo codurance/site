@@ -5,7 +5,7 @@ layout: podcast
 name: codurance-talks-episode-18
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
-title: "Codurance Talks - Episode 17 - Codurance"
+title: "Codurance Talks - Episode 18 - Codurance"
 video-url: https://www.podbean.com/media/player/3nejq-c7d5ef?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
 date: 2019-11-16 06:00:00 +00:00
 ---
