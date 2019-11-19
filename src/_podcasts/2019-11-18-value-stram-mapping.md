@@ -10,7 +10,7 @@ video-url: https://www.podbean.com/media/player/3nejq-c7d5ef?from=yiiadmin&downl
 date: 2019-11-18 06:00:00 +00:00
 ---
 
-For this episode, [Solange](https://codurance.com/publications/author/solange-u.-gasengayire/) hosts a talk around Value Street Mapping. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts, while [Mash](https://codurance.com/publications/author/mashooq-badar/) and [Chris](https://github.com/christopher-bimson) provided the knowledge.
+On this episode [Solange](https://codurance.com/publications/author/solange-u.-gasengayire/) hosts a talk around Value Stream Mapping. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts, while [Mash](https://codurance.com/publications/author/mashooq-badar/) and [Chris](https://github.com/christopher-bimson) provide the knowledge.
 
 Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
