@@ -949,7 +949,7 @@
 
 - id: edward_rixon
   name: Edward Rixon
-  image: /assets/custom/img/team/edward_rixon.jpeg
+  image: /assets/custom/img/team/edward_rixon.jpg
   role: Apprentice
   fullDescription:
     <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
