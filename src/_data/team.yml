@@ -269,18 +269,6 @@
   github: pierre-jean
   office: london
 
-- id: angelsg
-  name: Àngels Gilabert
-  image: /assets/custom/img/team/angels_gilabert.jpg
-  role: Analyst Craftsperson
-  fullDescription:
-    <p>Angels is responsible for Talent Acquisition as Head of Recruitment. She’s worked in business development, has recruited for several tech companies, and worked as Coach at a bootcamp, introducing junior developers into Craftsmanship values, managing the community and partnerships.</p>
-    <p>She’s also a Certified Scrum Master passionate about Organizational Development who loves to contribute improving processes and creating healthy environments that brings the best of every individual.</p>
-    <p>Enthusiastic about science, technology, entrepreneurship, psychology, sci-fi and music, spends most of her spare time learning on different topics and helping developers as career advisor.</p>
-  twitter: thegreathathor
-  github: AngelsG
-  office: barcelona
-
 - id: sdavies
   name: Sam Davies
   image: /assets/custom/img/team/sam_davies.jpg
@@ -954,7 +942,7 @@
   fullDescription:
     <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
     <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
-    <p>In his free time, Edward goes rock-climbing, plays chess and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar. </p>
+    <p>In his free time, Edward goes rock-climbing, plays chess and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar.</p>
   email: edward.rixon@codurance.com
   linkedin: edwardrixon
   office: london
