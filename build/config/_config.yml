@@ -27,6 +27,8 @@ office:
 tag_page_dir: publications/tag
 tag_page_layout: tag
 
+emptyArray: []
+
 collections:
   newsletters:
     output: true
