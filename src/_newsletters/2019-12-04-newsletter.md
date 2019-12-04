@@ -16,13 +16,14 @@ tags:
 
 Hello!
 
-The advent of the close of 2019 is a natural time for a period of reflection. This year has been one of great change and growth for Codurance, welcoming many new Craftspeople to the company and engaging with clients on groundbreaking new projects. While we are pleased to celebrate our business successes, we're equally and immensely proud that our ethos and values have continued to resonate across our flourishing teams.  
+The close of 2019 is a natural time for a period of reflection. This year has been one of great change and growth for Codurance, welcoming many new Craftspeople to the company and engaging with clients on groundbreaking new projects. While we are pleased to celebrate our business successes, we're equally and immensely proud that our ethos and values have continued to resonate across our flourishing teams.  
 
 In this issue of our newsletter, we are pleased to include an important message from our company founders, contemplating on the nature of our craft and our place within the community. Our talented Craftspeople have been busy hosting webinars, publishing books and writing informative blog posts for your perusal. We hope that you find these resources useful for sharing and discussing within your own teams. 
 
 We would like to take this opportunity to wish you a happy festive season and a prosperous new year ahead. 
 
 Until next time, 
+
 The Codurance team
 
 
@@ -71,12 +72,12 @@ Dylan Beattie’s talk presents an engaging and alternative perspective on the c
 
 ===
 
-If you share our passion for creating well-crafted software and are ready for a chance to learn the practices required of a Software Craftsperson, the Codurance Apprenticeship is the programme for you. Join the March 2020 cohort in London or Barcelona, here.
+If you share our passion for creating well-crafted software and are ready for a chance to learn the practices required of a Software Craftsperson, the Codurance Apprenticeship is the programme for you. Join the March 2020 cohort in London or Barcelona, [here.](https://codurance.com/careers/become_an_apprentice/)
 
 ===
 
 ### [Post Quantum Cryptography](https://events.codemotion.com/webinars/post-quantum-cryptography/)
-You may remember James Birnie’s recent newsletter piece on post-quantum cryptography. He recently hosted a talk on this very subject for Code Motion, focusing on Shor’s algorithm - one for security and quantum fans alike. 
+You may remember James Birnie’s recent [newsletter](https://codurance.com/newsletters/2019-10-07-newsletter/) piece on post-quantum cryptography. He recently hosted a talk on this very subject for Code Motion, focusing on Shor’s algorithm - one for security and quantum fans alike. 
 
 ===
 
