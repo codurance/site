@@ -34,7 +34,10 @@ $orange-colour: #e67e22;
   position: relative;
 
   & h1 { /* 0 0 1 1 */
-    font-family: 'Oxygen', sans-serif;
+    //font-family: 'Oxygen', sans-serif;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     color: white;
     line-height: 70px;
   }
@@ -157,12 +160,15 @@ $orange-colour: #e67e22;
   & h1,    /* 0 0 1 1 */
   & h2 {   /* 0 0 1 1 */
     color: #333;
-    font-size: 28px;
+    font-size: 38px;
     position: relative;
     margin-bottom: 15px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    //font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
     &:after {   /* 0 0 2 1 */
       bottom: 0;

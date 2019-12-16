@@ -17,6 +17,7 @@ $orange-colour: #e67e22;
 
 body {  /* 0 0 0 1 */
     font-size: 14px;
+    font-family: proxima-nova, sans-serif;
 }
 
 x:-moz-any-link {  /* 0 0 1 1 */
@@ -107,6 +108,11 @@ h1, h2, h3, h4, h5 {
     background-color: $codurance-orange!important;
 }
 
+.g-bg-gradient-orange-red {
+    background: linear-gradient(0deg, rgba(239,70,38,1) 0%, rgba(214,13,71,1) 100%);
+    color: #FFFFFF!important;
+}
+
 
 // Pagination - hover / active color overides 
 
@@ -121,7 +127,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-// Unifty template overides
+// Unify template overides
 
 a {
     color: $codurance-orange;
@@ -147,3 +153,38 @@ a {
     height: 150px;
     padding: 30px;
 } 
+
+
+// Typography
+
+.nav-link {
+    color: #444444;
+    font-size: 1.1em;
+} 
+
+.feature-panel h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    line-height: 70px;
+    font-size: 4em;
+}
+
+.jumbotron h3 {
+    color: white;
+    padding: 10px 0 20px 0;
+}
+
+.btn-more {
+    border-radius: 44px!important;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white!important;
+    font-weight: 700!important;
+    background: rgb(239,119,38)!important;;
+    border: none!important;
+    background: linear-gradient(0deg, rgba(239,70,38,1) 0%, rgba(214,13,71,1) 100%)!important;
+}
