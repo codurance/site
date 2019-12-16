@@ -2,7 +2,7 @@
 author: Jorge Gueorguiev Garcia
 asset-type: podcast
 layout: podcast
-name: codurance-talks-episode-19
+name: codurance-talks-episode-20
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 20 - Lift and Shift at Bankable"
