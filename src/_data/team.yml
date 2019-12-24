@@ -426,18 +426,6 @@
   github: bartomeugm
   office: barcelona
 
-- id: nick_white
-  name: Nick White
-  image: /assets/custom/img/team/nick_white.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Originally from a musical background, Nick began his career in software working on a large image-processing application in the film industry. It wasn't long before he discovered the huge benefits of incorporating software craftsmanship principles into his coding.</p>
-    <p>He's excited about honing his craft and working with the very best as a craftsman at Codurance.</p>
-    <p>When away from the keyboard, Nick likes to get outdoors, read and listen to loud music.</p>
-  github: nawhi
-  linkedin: nick9white
-  office: london
-
 - id: alasdair_smith
   name: Alasdair Smith
   image: /assets/custom/img/team/alasdair_smith.jpg
