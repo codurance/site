@@ -195,19 +195,6 @@
   github: terrybalfourcodurance
   office: london
 
-- id: danielperez
-  name: Daniel Pérez
-  image: /assets/custom/img/team/daniel_perez.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>At the age of twelve Daniel knew that he wanted to work with something related to computers. At nineteen he started studying Software Development at University of Girona.</p>
-    <p>After he started attending the Barcelona Software Craftsmanship community he discovered many areas to improve in his software development skillset.</p>
-    <p>He likes to learn new things and improve himself every day by going to coding dojos, reading books and attending talks related to his profession.</p>
-    <p>In his free time he likes to play board games, video games and basketball.</p>
-  twitter: DaniArchel
-  github: Archel
-  office: barcelona
-
 - id: ggsbv
   name: Sandro Viljoen
   image: /assets/custom/img/team/sandro_viljoen.jpg
