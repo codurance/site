@@ -63,4 +63,10 @@ curl -v localhost:5000/now-nocache
 
 This demonstrates how to test a cdn in a docker container.
 
+## What about other CDN's
 
+Now if you really want to test a real life CDN there is this project: https://github.com/Mahoney/wiremock-heroku
+
+This allows you to deploy wiremock into Heroku.
+If you configure your CDN to serve this Heroku app as the origin then you can completely test the behaviour of the CDN.
+Wiremock gives you a programmable web server that gives you an API that allows the response to change, so it's possible to have a page return a fix value once then start returning errors.
