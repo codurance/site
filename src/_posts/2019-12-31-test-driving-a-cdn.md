@@ -3,14 +3,14 @@ layout: post
 asset-type: post
 name: test-driving-a-cdn
 title: Test Driving a CDN
-date: 2019-12-24 10:00:00 +00:00
+date: 2019-12-31 10:00:00 +00:00
 author: Christopher Eyre
 image:
     src: /assets/custom/img/blog/swan.png
 tags:
     - varnish
 abstract: How to test drive a CDN
-alias: [/2019/12/24/test-driving-a-cdn]
+alias: [/2019/12/31/test-driving-a-cdn]
 ---
 
 # How to test drive a Content Delivery Network
@@ -61,4 +61,6 @@ This version has cache headers and will not be cached:
 curl -v localhost:5000/now-nocache
 ```
 
-This demonstrates how to test cache headers.
+This demonstrates how to test a cdn in a docker container.
+
+
