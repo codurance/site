@@ -15,10 +15,12 @@ alias: [/2019/12/31/test-driving-a-cdn]
 
 # How to test drive a Content Delivery Network
 
-
 Content Delivery Networks are a great way to massively increase the peformance of your website.
 
 A CDN is a cache that sits between your website and the user.
+
+This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. One site that I worked on was able to handle heavy loads (tens of thousands of concurrent sessions on google analytics) despite the website being served from a single heroku node. This site was able to publish updates in around a second. We explicitly managed what we needed to cache, applied the update to our site and then told the CDN to invalidate the changed pages.
+Typically a CDN will allow you to have brief bursts of heavy load and will only charge a small amount for the additional usage - this is much cheaper than having to keep scaling up servers.
 
 ![CDN Diagram: Client to CDN to Origin]({{site.baseurl}}/assets/custom/img/blog/cdn.png)
 
@@ -66,13 +68,19 @@ This version has cache headers and will not be cached:
 curl -v localhost:5000/now-nocache
 ```
 
-This demonstrates how to test a cdn in a docker container.
+This demonstrates how to test a cdn in a docker container. This will become more useful if you want to have greater control over the configuration. Varnish is configured using Varnish Configuaration Language (see `https://varnish-cache.org/docs/2.1/tutorial/vcl.html`) - which allows complete control over how a website behaves. 
+
+For example you can check for a cookie and return a different page depending upon the value (logged in users get one, unauthenticated get another). 
+It's possible to conditionally add headers (so that the origin, while public will only respond if sent the correct header). 
+You can also change the response so that details about the application are masked. It is amazing how many sites advertise the exact version of a webserver that they are using. This can be seen simply using curl: `curl -v bbc.co.uk`
+You can use the CDN to alter the behaviour of a hosted website without changing the hosted site itself. This can allow you to add a quick fix for a problem while a real solution is being applied. 
+It's advisable not to tell a CDN to cache forever as any mistakes may reside in a browser indefinately - this can be a problem if you are caching a javacript library and accidently cache a broken version.
 
 ## Learnings while preparing the sample.
 
-Alpine docker images are reasonably fast to start.
+Alpine docker images are reasonably fast to start and download compared to the full fat versions. These are the very small docker images
 
-The tests need to wait on the varnish server being started. Normally I would have used the wait-for-it.sh script that allows waiting for a given service to be completed. However since I am using an alpine docker container (this is the very small docker image) we don't have bash available. This means that I have used the golang `waitforit` utility. 
+The tests need to wait on the varnish server being started. Normally I would have used the wait-for-it.sh script that allows waiting for a given service to be completed. However since I am using an alpine docker container we don't have bash available. This means that I have used the golang `waitforit` utility. 
 
 Also note the various network options used in the docker-compose. You can use an alias of another docker container name as a local dns entry if it is listed in the depends_on section. This is even accessable to the tests run inside the container.
 
@@ -81,5 +89,6 @@ Also note the various network options used in the docker-compose. You can use an
 Now if you really want to test a real life CDN there is this project: `https://github.com/Mahoney/wiremock-heroku`
 
 This allows you to deploy wiremock into Heroku.
+
 If you configure your CDN to serve this Heroku app as the origin then you can completely test the behaviour of the CDN.
 Wiremock gives you a programmable web server that gives you an API that allows the response to change, so it's possible to have a page return a fix value once then start returning errors. This provides the ability for you to test the entire of the HTTP spec should you wish to do so, but this is beyond the scope of this article.
