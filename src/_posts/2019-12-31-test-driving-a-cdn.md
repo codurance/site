@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: test-driving-a-cdn
-title: Test Driving a CDN
+title: How to test drive a Content Delivery Network
 date: 2019-12-31 10:00:00 +00:00
 author: Christopher Eyre
 image:
@@ -15,27 +15,25 @@ abstract: How to test drive a CDN
 alias: [/2019/12/31/test-driving-a-cdn]
 ---
 
-# How to test drive a Content Delivery Network
-
 ## The problem being solved
 
-How not to break the internet:  
+How not to break the internet.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T73h5bmD8Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction
 
-A CDN is a cache that sits between your website and the user.
+A Content Delivery Network (CDN) is a cache that sits between your website and the user.
 
 This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. This avoids the 'breaks the internet' moment when a website fails due to excessive load. My niece received a christmas present of an `invisibility cloak` that needs an app to make it work. The website could not handle the load of the majority of the sold products being activated on Christmas morning. Careful use of a CDN (amoung other techniques) can be used to avoid embarrasing mistakes.
 
-Content Delivery Networks are a great way to massively increase the peformance of your website.
+CDNs are a great way to massively increase the peformance of your website.
 
 ![CDN Diagram: Client to CDN to Origin]({{site.baseurl}}/assets/custom/img/blog/cdn.png)
 
 Your website is the origin in this diagram. 
 
-By default this will start caching every request. Once you start adding cache headers to your pages then you can control how the CDN will cache the page. There are going to be parts of the site that you will not want to cache. Keep these seperated by a defined path structure to make your life easier (an /api prefix works well here). 
+By default this will start caching every request. Once you start adding cache headers to your pages then you can control how the CDN will cache the page. There are going to be parts of the site that you will not want to cache. Keep these seperated by a defined path structure to make your life easier (an `/api` prefix works well here). 
 
 The advantage of this is that the CDN will be able to provide content to your users far faster than you can as they will be closer to them. This can take 100ms away from a call to the USA from Europe. This will make a significant difference.
 
@@ -51,9 +49,11 @@ There are several CDN's available to use, the one that I am most familar with is
 
 I am going to demonstrate how to configure the express web server to be cached via Varnish in a set of docker images. This will allow tests to be written to demonstrate that the caching is working as expected before deploying to a real environment.
 
-The sample code can be found here: 
+## How
 
-`https://github.com/chriseyre2000/cdn-experiment/`
+I have written some sample code can be found here: 
+
+[https://github.com/chriseyre2000/cdn-experiment/]
 
 This consists of a simple express application that is being run in a docker container. 
 Docker Compose is used to create linked docker images.
@@ -63,6 +63,7 @@ This can be started using:
 `docker-compose build && docker-compose up`
 
 The raw application is exposed on port 3000
+
 The cached application is exposed on port 5000
 
 This is an endpoint that is cached:
@@ -221,11 +222,11 @@ Also note the various network options used in the docker-compose. You can use an
 
 ## What about other CDNs
 
-Now if you really want to test a real life CDN there is this project: `https://github.com/Mahoney/wiremock-heroku`
+Now if you really want to test a real life CDN there is this project: [https://github.com/Mahoney/wiremock-heroku]
 
 This allows you to deploy wiremock into Heroku.
 
 If you configure your CDN to serve this Heroku app as the origin then you can completely test the behaviour of the CDN.
-Wiremock gives you a programmable web server that gives you an API that allows the response to change, so it's possible to have a page return a fix value once then start returning errors. This provides the ability for you to test the entire of the HTTP spec should you wish to do so, but this is beyond the scope of this article.
+Wiremock gives you a programmable web server that gives you an API that allows the response to change, so it's possible to have a page return a fix value once then start returning errors. This provides the ability for you to test the entirety of the HTTP spec should you wish to do so, but this is beyond the scope of this article.
 
 Typically the CDN is controlled by an infrastructure team within your organisation. Allowing the configuration to be test driven will allow you to use far more of the advanced features of the CDN.
