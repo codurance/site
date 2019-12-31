@@ -53,7 +53,7 @@ I am going to demonstrate how to configure the express web server to be cached v
 
 I have written some sample code can be found here: 
 
-[https://github.com/chriseyre2000/cdn-experiment/]
+[Sample code](https://github.com/chriseyre2000/cdn-experiment/)
 
 This consists of a simple express application that is being run in a docker container. 
 Docker Compose is used to create linked docker images.
@@ -193,7 +193,7 @@ repeating the call gives:
 1577782639781* Closing connection 0
 ```
 
-This demonstrates how to test a cdn in a docker container. This will become more useful if you want to have greater control over the configuration. Varnish is configured using Varnish Configuaration Language (see `https://varnish-cache.org/docs/2.1/tutorial/vcl.html`) - which allows complete control over how a website behaves. 
+This demonstrates how to test a cdn in a docker container. This will become more useful if you want to have greater control over the configuration. Varnish is configured using Varnish Configuaration Language: [Varnish Documentation](https://varnish-cache.org/docs/2.1/tutorial/vcl.html) - which allows complete control over how a website behaves. 
 
 For example you can check for a cookie and return a different page depending upon the value (logged in users get one, unauthenticated get another). 
 
@@ -222,7 +222,7 @@ Also note the various network options used in the docker-compose. You can use an
 
 ## What about other CDNs
 
-Now if you really want to test a real life CDN there is this project: [https://github.com/Mahoney/wiremock-heroku]
+Now if you really want to test a real life CDN there is this project: [wiremock heroku sample](https://github.com/Mahoney/wiremock-heroku)
 
 This allows you to deploy wiremock into Heroku.
 
