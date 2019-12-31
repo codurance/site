@@ -65,7 +65,7 @@ Add the following entry to your root `docker-compose.yml` (create one if necessa
 
 This describes a `visual_regression_tests` Docker container using the official `backstopjs` image, version `4.4.2`. The version can be left out, but it's important that it be there for repeatability. You can use Dependabot to keep it up-to-date by creating a Dockerfile for it (until [Dependabot adds Docker Compose support](https://github.com/dependabot/feedback/issues/82)), which is [described below](#customfonts). Of course, you should copy the latest version number from [the BackstopJS Docker image releases](https://hub.docker.com/r/backstopjs/backstopjs/builds) and use that; `4.4.2` may be outdated at time of reading. If you're using a Docker container for your website as well you should add a `link` entry to that container.
 
-The last part is the key; the volume configuration `./test/visual:/src`. This maps the local realtive path `./test/visual` to `/src` in the container. You may change `./test/visual` to any relative path you like, but `/src` must be constant because that is where BackstopJS will look inside the container for it's configuration.
+The last part is the key; the volume configuration `./test/visual:/src`. This maps the local relative path `./test/visual` to `/src` in the container. You may change `./test/visual` to any relative path you like, but `/src` must be constant because that is where BackstopJS will look inside the container for it's configuration.
 
 ### BackstopJS
 
