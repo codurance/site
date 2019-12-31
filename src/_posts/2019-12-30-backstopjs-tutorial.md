@@ -136,7 +136,7 @@ The `backstop.json` file is your main means of interacting with BackstopJS and t
 }
 ```
 
-The first thing I'd advise changing i the `viewports` property. This property determines the resolutions that the site will be tested at. The default is not very extensive, and in my current team we've settled on the following viewport configuration:
+The first thing I'd advise changing is the `viewports` property. This property determines the resolutions that the site will be tested at. The default is not very extensive, and in my current team we've settled on the following viewport configuration:
 
 ```(json)
   "viewports": [
