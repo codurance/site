@@ -27,7 +27,7 @@ How not to break the internet:
 
 A CDN is a cache that sits between your website and the user.
 
-This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. This avoids the 'breaks the internet' moment when a website fails due to excessive load. My niece received a christmas present of an `invisibility cloak` that needs an app to make it `work`. The website could not handle the load of the majority of the sold products being activated on Christmas morning. Careful use of a CDN (amoung other techniques) can be used to avoid embarrasing mistakes.
+This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. This avoids the 'breaks the internet' moment when a website fails due to excessive load. My niece received a christmas present of an `invisibility cloak` that needs an app to make it work. The website could not handle the load of the majority of the sold products being activated on Christmas morning. Careful use of a CDN (amoung other techniques) can be used to avoid embarrasing mistakes.
 
 Content Delivery Networks are a great way to massively increase the peformance of your website.
 
@@ -35,9 +35,11 @@ Content Delivery Networks are a great way to massively increase the peformance o
 
 Your website is the origin in this diagram. 
 
-By default this will start caching every request. Once you start adding cache headers to your pages then you can control how the CDN will cache the page. 
+By default this will start caching every request. Once you start adding cache headers to your pages then you can control how the CDN will cache the page. There are going to be parts of the site that you will not want to cache. Keep these seperated by a defined path structure to make your life easier (an /api prefix works well here). 
 
-The advantage of this is that the CDN will be able to provide content to your users far faster than you can as they will be closer to them. In addition the majority of the load on your site will be removed (the only visitors are the CDN nodes with an expired cache). If the site is static and the cache has been warmed up (each page visited) then it is possible to briefly turn off the origin site and still have the site up. This makes deploying a site that is under heavy load possible.
+The advantage of this is that the CDN will be able to provide content to your users far faster than you can as they will be closer to them. This can take 100ms away from a call to the USA from Europe. This will make a significant difference.
+
+In addition the majority of the load on your site will be removed (the only visitors are the CDN nodes with an expired cache). If the site is static and the cache has been warmed up (each page visited) then it is possible to briefly turn off the origin site and still have the site up. This makes deploying a site that is under heavy load possible.
 
 Another benefit is that you can set the CDN to serve stale content. This means that should a cached page subsequently start to fail then the server will return the previously cached version. This will greatly increase the reliability of your site. 
 
@@ -206,6 +208,8 @@ It's advisable not to tell a CDN to cache forever as any mistakes may reside in 
 I would also recommend configuring your CDN programatically so that it is testable and repeatable. Be very careful of having the CDN do too much work as you will encounter odd edge conditions such as having an error page cached.
 
 Make sure that you know how to purge a specific page. The site that I worked on added this to a chatbot in slack. It was able to purge a page by sending it a slack message - this was ideal when you had to support a problem and were away from your machine.
+
+It is possible to use AWS S3 as a cache but it's advisable to add a CDN in front of it so that you can control the returned headers.
 
 ## Learnings while preparing the sample.
 
