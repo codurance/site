@@ -308,12 +308,14 @@
   image: /assets/custom/img/team/mattsi_jansky.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Mattsi is an ambitious software developer that loves to learn and belives in "doing it right the first time", prioritising quality software over risky shortcuts.</p>
-    <p>Before joining Codurance he experienced a broad career across full-stack and back-end development roles in education, international e-commerce and financial technology focusing on the ASP.Net stack.</p>
+    <p>Mattsi is an ambitious software developer that loves to learn and belives in "doing it right the first time", putting quality software first.</p>
+    <p>Before joining Codurance he experienced a broad career across full-stack and back-end development roles in education, international e-commerce and financial technology, all focusing on the ASP.Net stack.</p>
+    <p>More recently he has worked extensively in NodeJS microservices with React front-ends and AWS infrastructure, in financial publishing.</p>
     <p>Outside of work he enjoys weightlifting, Chess, music, festivals, and tabletop games, and takes an enthusiastic interest in science, technology and self-improvement.</p>
   twitter: mattsijansky
   github: Mattsi-Jansky
   linkedin: mjjansky
+  email: mattsi.jansky@codurance.com
   office: london
 
 - id: scottedwards
