@@ -11,7 +11,7 @@ tags:
     - varnish
     - CDN
     - TDD
-abstract: How to test drive a CDN
+abstract: An introduction to CDN's and how to test drive them
 alias: [/2019/12/31/test-driving-a-cdn]
 ---
 
