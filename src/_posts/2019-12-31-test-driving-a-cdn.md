@@ -15,12 +15,20 @@ alias: [/2019/12/31/test-driving-a-cdn]
 
 # How to test drive a Content Delivery Network
 
-Content Delivery Networks are a great way to massively increase the peformance of your website.
+## The problem being solved
+
+How not to break the internet.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T73h5bmD8Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 A CDN is a cache that sits between your website and the user.
 
-This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. One site that I worked on was able to handle heavy loads (tens of thousands of concurrent sessions on google analytics) despite the website being served from a single heroku node. This site was able to publish updates in around a second. We explicitly managed what we needed to cache, applied the update to our site and then told the CDN to invalidate the changed pages.
-Typically a CDN will allow you to have brief bursts of heavy load and will only charge a small amount for the additional usage - this is much cheaper than having to keep scaling up servers.
+This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. This avoids the 'breaks the internet' moment when a website fails due to excessive load. My niece received a christmas present of an `invisibility cloak` that needs an app to make it `work`. The website could not handle the load of the majority of the sold products being activated on Christmas morning. Careful use of a CDN (amoung other techniques) can be used to avoid embarrasing mistakes.
+
+## Introduction
+
+Content Delivery Networks are a great way to massively increase the peformance of your website.
+
 
 ![CDN Diagram: Client to CDN to Origin]({{site.baseurl}}/assets/custom/img/blog/cdn.png)
 
@@ -31,6 +39,10 @@ By default this will start caching every request. Once you start adding cache he
 The advantage of this is that the CDN will be able to provide content to your users far faster than you can as they will be closer to them. In addition the majority of the load on your site will be removed (the only visitors are the CDN nodes with an expired cache). If the site is static and the cache has been warmed up (each page visited) then it is possible to briefly turn off the origin site and still have the site up. This makes deploying a site that is under heavy load possible.
 
 Another benefit is that you can set the CDN to serve stale content. This means that should a cached page subsequently start to fail then the server will return the previously cached version. This will greatly increase the reliability of your site. 
+
+One site that I worked on was able to handle heavy loads (tens of thousands of concurrent sessions on google analytics) despite the website being served from a single heroku node. This site was able to publish updates in around a second. We explicitly managed what we needed to cache, applied the update to our site and then told the CDN to invalidate the changed pages.
+
+Typically a CDN will allow you to have brief bursts of heavy load and will only charge a small amount for the additional usage - which is much cheaper than having to keep scaling up servers.
 
 There are several CDN's available to use, the one that I am most familar with is Fastly. Fastly is a distributed version of Varnish cache. Varnish cache is available to run as a docker image. This means that it is possible to test drive your CDN.
 
@@ -198,7 +210,7 @@ The tests need to wait on the varnish server being started. Normally I would hav
 
 Also note the various network options used in the docker-compose. You can use an alias of another docker container name as a local dns entry if it is listed in the depends_on section. This is even accessable to the tests run inside the container.
 
-## What about other CDN's
+## What about other CDNs
 
 Now if you really want to test a real life CDN there is this project: `https://github.com/Mahoney/wiremock-heroku`
 
