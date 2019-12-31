@@ -33,7 +33,7 @@ This article will explain how to set up BackstopJS and some good practices I've 
 
 ## Why
 
-Why use visual regression testing? I'll assume that you appreciate why testing as a general practice is necessary, so here are several scenarios that visual regression tests will catch and other testing techniuqes won't:
+Why use visual regression testing? I'll assume that you appreciate why testing as a general practice is necessary, so here are several scenarios that visual regression tests will catch and other testing techniques won't:
 
 * CSS regressions: Often we'll make a change to a CSS style to move that one button into the space we'd like it to be, but how do we know that it hasn't had an undesirable knock-on effect on some other part of the website that uses the same CSS class? Instead of checking every page manually (which we will most often forget to do), run your visual regression tests.
 * Responsiveness: Most often we're working on a 1080p screen, but many (perhaps most) of our users will be using their smartphones. Visual regression tests can test an assortment of different screen sizes, giving you confidence that your changes haven't broken the responsive page at other sizes and saving you time manually testing the page at different resolutions.
