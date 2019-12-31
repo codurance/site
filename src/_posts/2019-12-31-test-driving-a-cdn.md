@@ -9,6 +9,8 @@ image:
     src: /assets/custom/img/blog/swan.png
 tags:
     - varnish
+    - CDN
+    - TDD
 abstract: How to test drive a CDN
 alias: [/2019/12/31/test-driving-a-cdn]
 ---
@@ -17,18 +19,17 @@ alias: [/2019/12/31/test-driving-a-cdn]
 
 ## The problem being solved
 
-How not to break the internet.
+How not to break the internet:  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T73h5bmD8Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Introduction
 
 A CDN is a cache that sits between your website and the user.
 
 This is useful when your site becomes popular and you don't want to have to keep scaling up your webserver to handle the load. This avoids the 'breaks the internet' moment when a website fails due to excessive load. My niece received a christmas present of an `invisibility cloak` that needs an app to make it `work`. The website could not handle the load of the majority of the sold products being activated on Christmas morning. Careful use of a CDN (amoung other techniques) can be used to avoid embarrasing mistakes.
 
-## Introduction
-
 Content Delivery Networks are a great way to massively increase the peformance of your website.
-
 
 ![CDN Diagram: Client to CDN to Origin]({{site.baseurl}}/assets/custom/img/blog/cdn.png)
 
@@ -44,7 +45,7 @@ One site that I worked on was able to handle heavy loads (tens of thousands of c
 
 Typically a CDN will allow you to have brief bursts of heavy load and will only charge a small amount for the additional usage - which is much cheaper than having to keep scaling up servers.
 
-There are several CDN's available to use, the one that I am most familar with is Fastly. Fastly is a distributed version of Varnish cache. Varnish cache is available to run as a docker image. This means that it is possible to test drive your CDN.
+There are several CDN's available to use, the one that I am most familar with is Fastly. Fastly is a distributed version of Varnish cache. Varnish cache is available to run as a docker image. This means that it is possible to test drive your CDN! 
 
 I am going to demonstrate how to configure the express web server to be cached via Varnish in a set of docker images. This will allow tests to be written to demonstrate that the caching is working as expected before deploying to a real environment.
 
@@ -193,14 +194,18 @@ This demonstrates how to test a cdn in a docker container. This will become more
 
 For example you can check for a cookie and return a different page depending upon the value (logged in users get one, unauthenticated get another). 
 
-It's possible to conditionally add headers (so that the origin, while public will only respond if sent the correct header). 
+It's possible to conditionally add headers (so that the origin, while public will only respond if sent the correct header). This allows developers to check that the origin is healthy - which will makes isolating problems much easier.
 
 You can also change the response so that details about the application are masked. It is amazing how many sites advertise the exact version of a webserver that they are using. 
 This can be seen simply using curl: `curl -v bbc.co.uk`
 
-You can use the CDN to alter the behaviour of a hosted website without changing the hosted site itself. This can allow you to add a quick fix for a problem while a real solution is being applied.
+You can use the CDN to alter the behaviour of a hosted website without changing the hosted site itself. This can allow you to apply a quick fix for a problem while a real solution is being prepared. For example you can put a holding page up for a specific url.
 
 It's advisable not to tell a CDN to cache forever as any mistakes may reside in a browser indefinately - this can be a problem if you are caching a javacript library and accidently cache a broken version.
+
+I would also recommend configuring your CDN programatically so that it is testable and repeatable. Be very careful of having the CDN do too much work as you will encounter odd edge conditions such as having an error page cached.
+
+Make sure that you know how to purge a specific page. The site that I worked on added this to a chatbot in slack. It was able to purge a page by sending it a slack message - this was ideal when you had to support a problem and were away from your machine.
 
 ## Learnings while preparing the sample.
 
@@ -218,3 +223,5 @@ This allows you to deploy wiremock into Heroku.
 
 If you configure your CDN to serve this Heroku app as the origin then you can completely test the behaviour of the CDN.
 Wiremock gives you a programmable web server that gives you an API that allows the response to change, so it's possible to have a page return a fix value once then start returning errors. This provides the ability for you to test the entire of the HTTP spec should you wish to do so, but this is beyond the scope of this article.
+
+Typically the CDN is controlled by an infrastructure team within your organisation. Allowing the configuration to be test driven will allow you to use far more of the advanced features of the CDN.
