@@ -7,6 +7,9 @@ date: 2018-01-13 09:00:00 +00:00
 author: David Hall
 image:
   src: /assets/custom/img/newsletter/newsletter-default.png
+  attribution: 
+    text: Photo by Amador Loureiro on Unsplash
+    href: https://unsplash.com/photos/BVyNlchWqzs
 tags:
 - software craftsmanship
 - TDD
