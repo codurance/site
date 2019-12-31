@@ -56,11 +56,66 @@ This is an endpoint that is cached:
 curl -v localhost:5000/now
 ```
 
+Returns
+
+```
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 5000 (#0)
+> GET /now HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/7.64.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 13
+< ETag: W/"d-ALnVQnzapyFibAJUsj/ugNkTGeo"
+< Date: Tue, 31 Dec 2019 08:54:54 GMT
+< X-Varnish: 32775
+< Age: 0
+< Via: 1.1 varnish-v4
+< Accept-Ranges: bytes
+< Connection: keep-alive
+< 
+* Connection #0 to host localhost left intact
+1577782494578* Closing connection 0
+
+```
+
 A repeated call will return the same result:
 
 ```
 curl -v localhost:5000/now
 ```
+
+```
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 5000 (#0)
+> GET /now HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/7.64.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 13
+< ETag: W/"d-ALnVQnzapyFibAJUsj/ugNkTGeo"
+< Date: Tue, 31 Dec 2019 08:54:54 GMT
+< X-Varnish: 32778 32776
+< Age: 39
+< Via: 1.1 varnish-v4
+< Accept-Ranges: bytes
+< Connection: keep-alive
+< 
+* Connection #0 to host localhost left intact
+1577782494578* Closing connection 0
+```
+
+Notice that the body is the same yet the age is reported.
 
 This version has cache headers and will not be cached:
 
@@ -68,12 +123,71 @@ This version has cache headers and will not be cached:
 curl -v localhost:5000/now-nocache
 ```
 
+```
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 5000 (#0)
+> GET /now-nocache HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/7.64.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Cache-control: private, max-age=0, no-cache
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 13
+< ETag: W/"d-rBzErqEgrVIYGMP1QHJVW2pE10k"
+< Date: Tue, 31 Dec 2019 08:56:38 GMT
+< X-Varnish: 32780
+< Age: 0
+< Via: 1.1 varnish-v4
+< Accept-Ranges: bytes
+< Connection: keep-alive
+< 
+* Connection #0 to host localhost left intact
+1577782598029* Closing connection 0
+```
+
+repeating the call gives:
+
+```
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 5000 (#0)
+> GET /now-nocache HTTP/1.1
+> Host: localhost:5000
+> User-Agent: curl/7.64.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Cache-control: private, max-age=0, no-cache
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 13
+< ETag: W/"d-FVW0D0z387XypqaGgxU3K6yNXX4"
+< Date: Tue, 31 Dec 2019 08:57:19 GMT
+< X-Varnish: 6
+< Age: 0
+< Via: 1.1 varnish-v4
+< Accept-Ranges: bytes
+< Connection: keep-alive
+< 
+* Connection #0 to host localhost left intact
+1577782639781* Closing connection 0
+```
+
 This demonstrates how to test a cdn in a docker container. This will become more useful if you want to have greater control over the configuration. Varnish is configured using Varnish Configuaration Language (see `https://varnish-cache.org/docs/2.1/tutorial/vcl.html`) - which allows complete control over how a website behaves. 
 
 For example you can check for a cookie and return a different page depending upon the value (logged in users get one, unauthenticated get another). 
+
 It's possible to conditionally add headers (so that the origin, while public will only respond if sent the correct header). 
-You can also change the response so that details about the application are masked. It is amazing how many sites advertise the exact version of a webserver that they are using. This can be seen simply using curl: `curl -v bbc.co.uk`
-You can use the CDN to alter the behaviour of a hosted website without changing the hosted site itself. This can allow you to add a quick fix for a problem while a real solution is being applied. 
+
+You can also change the response so that details about the application are masked. It is amazing how many sites advertise the exact version of a webserver that they are using. 
+This can be seen simply using curl: `curl -v bbc.co.uk`
+
+You can use the CDN to alter the behaviour of a hosted website without changing the hosted site itself. This can allow you to add a quick fix for a problem while a real solution is being applied.
+
 It's advisable not to tell a CDN to cache forever as any mistakes may reside in a browser indefinately - this can be a problem if you are caching a javacript library and accidently cache a broken version.
 
 ## Learnings while preparing the sample.
