@@ -7,6 +7,9 @@ date: 2019-12-31 10:00:00 +00:00
 author: Christopher Eyre
 image:
     src: /assets/custom/img/blog/swan.png
+    attribution:
+        text: Public domain photo from Pixabay
+        href: https://pixabay.com/photos/beautiful-bird-blue-calm-color-16736/
 tags:
     - varnish
     - CDN
