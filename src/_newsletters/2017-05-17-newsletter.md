@@ -17,10 +17,6 @@ tags:
 - conference
 ---
 
-  attribution: 
-    text: Photo by Amador Loureiro on Unsplash
-    href: https://unsplash.com/photos/BVyNlchWqzs
-
 Hi,
 
 Welcome to our first newsletter!
