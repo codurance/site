@@ -20,7 +20,7 @@ Our first newsletter of 2020 starts off with a reflection from Craftsperson Jorg
 
 We also cover consultancy skills that aren't taught in business school and a talk on machine learning - enjoy! 
 
-Until next time,
+Until next time
 The Codurance team
 
 
