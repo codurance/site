@@ -7,6 +7,9 @@ date: 2019-12-04 15:00:00 +00:00
 author: Emma Booth
 image:
   src: /assets/custom/img/newsletter/newsletter-default.png
+  attribution: 
+    text: Photo by Amador Loureiro on Unsplash
+    href: https://unsplash.com/photos/BVyNlchWqzs
 tags:
 - software craftsmanship
 - TDD
