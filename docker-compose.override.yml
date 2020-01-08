@@ -5,7 +5,7 @@ services:
 
   site:
     build: .
-    command: bundle exec rspec
+    command: rake servequick
     volumes:
       - '${PWD}/src:/usr/local/src/src:ro'
       - '${PWD}/build/config:/usr/local/src/build/config:ro'
