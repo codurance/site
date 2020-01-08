@@ -7,15 +7,28 @@ describe 'author index' do
     site = double
     file = double
 
+    video = double
+    newsletter = double
+    post = double
+
+    allow(video).to receive(:data).and_return({ 'author' => "Author", 'title' => "Star Wars: The Empire Strikes Back"})
+    allow(newsletter).to receive(:data).and_return({ 'author' => "NotOurAuthor", 'title' => "Truck Simulator Weekly"})
+    allow(post).to receive(:data).and_return({ 'author' => "Author", 'title' => "I Don't Like Bundle Very Much" })
+
     allow(Jekyll::Utils).to receive(:merged_file_read_opts)
     allow(File).to  receive(:read).and_return(file)
 
     allow(site).to receive(:in_source_dir)
     allow(site).to receive(:file_read_opts)
     allow(site).to receive(:config).and_return({})
+    allow(site).to receive(:collections).and_return({ 
+      "videos" => [ video ],
+      "newsletters" => [  newsletter ],
+      "posts" => [ post ]
+      })
     
     author_index = Jekyll::AuthorIndex.new(site, "base", "author_dir", "Author") 
-    expect(author_index.data).to eq({ 'author' => "Author", 'description' => 'author: Author', 'title' => "Author"})
+    expect(author_index.data).to eq({ 'author' => "Author", 'description' => 'author: Author', "publications" => [video, post], 'title' => "Author"})
   end  
 end  
 
