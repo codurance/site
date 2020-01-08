@@ -5,7 +5,10 @@ This link is old please visit if you aim for past documentation: [https://trello
 
 ## Run the tests
 
-`docker-compose -f docker-compose.override.yml build && docker-compose -f docker-compose.override.yml run site bundle exec rspec`
+- Build the docker-compose-override site image with...
+  - `docker-compose -f docker-compose.override.yml build`
+- You only need to do that once. Now you can run the tests quickly & easily with...
+  - `docker-compose -f docker-compose.override.yml run site bundle exec rspec`
 
 ## Setup the ~development~ writing environment
 

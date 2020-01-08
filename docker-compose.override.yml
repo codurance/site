@@ -5,12 +5,13 @@ services:
 
   site:
     build: .
-    command: rake servequick
+    command: bundle exec rspec
     volumes:
       - '${PWD}/src:/usr/local/src/src:ro'
       - '${PWD}/build/config:/usr/local/src/build/config:ro'
       - '${PWD}/Gemfile:/usr/local/src/Gemfile:ro'
       - '${PWD}/Rakefile:/usr/local/src/Rakefile:ro'
+      - '${PWD}/spec:/usr/local/src/spec:ro'
     ports:
       - '4000:4000'
     
