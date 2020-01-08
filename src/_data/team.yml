@@ -968,3 +968,26 @@
     <p>When he is not super busy balancing the books, Zabih can be found playing snooker or watching documentary movies. He also loves to spend time with his family, especially his newest addition (baby girl) to the family!</p>
   email: zabih.safdari@codurance.com
   office: london
+
+- id: david_welch
+  name: David Welch
+  image: /assets/custom/img/team/david_welch.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>David has been fascinated by computers since primary school and has a range of programming experience including embedded systems, single-page webapps, and Excel VBA addons! Much of David's current work has been on developing serverless applications in AWS for the purpose of orchestrating flows such as media transcoding and data processing.</p>
+    <p>In his free time he is slowly learning to play the Piano and enjoys Boardgames in Pubs; his favourite drink is a coffee porter and his favourite game is Sushi GO!.  He also enjoys playing around with Maths.</p>
+  github: djwelch
+  email: david.welch@codurance.com
+  office: london
+
+- id: nichole_mellekas
+  name: Nichole Mellekas
+  image: /assets/custom/img/team/nichole_mellekas.jpg
+  role: Marketing Manager
+  fullDescription:
+    <p>Nichole is the Marketing Manager at Codurance in London. She has worked in Sales and Marketing for the past 9 years in the United States and the United Kingdom.  She now lives and works in the United Kingdom full time. She specializes in digital marketing with an emphasis on lead generation and brand awareness. Her latest love is podcasting.</p>
+    <p>Marketing has always been a passion for Nichole, even before the paychecks were rolling in. The love of marketing comes from a place of wanting to understand how and why people communicate and having a chance to influence and improve those interactions. In so many words, she’s a digital anthropologist.</p>
+    <p>In her spare time, she loves to travel, go to the beach, eat, drink, and explore. You will always find her with an iced coffee in hand regardless of the weather.</p>
+  linkedin: nicholemellekas
+  email: nichole.mellekas@codurance.com
+  office: london
