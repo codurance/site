@@ -681,18 +681,6 @@
   email: enric.jorda@codurance.com
   office: barcelona
 
-- id: josep_mir
-  name: Josep Mir
-  image: /assets/custom/img/team/josep_mir.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Josep spent most of his youth studying different degrees in computer science, always trying to gather more knowledge from this wide field. It was everything around the software engineering process which hooked him to this science.</p>
-    <p>In his professional career he has been working for a big international consultancy company and also for a small new born startup. This experience brought him the perspective from both worlds, where things are difficult and slow to change and also where the changes are continuous and dealing with uncertainty is just a daily routine.</p>
-  github: jmir17
-  linkedin: jmir17
-  email: josep.mir@codurance.com
-  office: barcelona
-
 - id: gonzalo_gomez_sullain
   name: Gonzalo Gómez Sullain
   image: /assets/custom/img/team/gonzalo_gomez_sullain.png
@@ -862,10 +850,10 @@
   role: Head of Communications and Marketing (Spain)
   fullDescription:
     <p>Helena is Head of Communications and Marketing at Codurance Spain. She is an educational and psychologist and journalist, and for more than 18 years has been exclusively dedicated to working in communications and marketing.</p>
-    <p>She expanded her studies with a Postgraduate Digital Media and Online Content degree at the Ramón Llull University. With the rise of the internet she  decided to devote herself to digital communication and then became interested in branded content and content marketing and trained in this discipline. Later she completed her studies with a specialization in Applied Neuromarketing from the University of Barcelona.</p>
+    <p>She expanded her studies with a Postgraduate Digital Media and Online Content degree at the Ramón Llull University. With the rise of the internet she decided to devote herself to digital communication and then became interested in branded content and content marketing and trained in this discipline. Later she completed her studies with a specialization in Applied Neuromarketing from the University of Barcelona.</p>
     <p>She has worked for both brand and agency. The experience of working as the client and also as a service provider has given her a holistic vision regarding the expectations that need to be met in marketing and communication.</p>
     <p>She likes to live and work as a scout&#58; "Scouts leave the world better than how they found it". She believes that the best way to do her best is to be part of a team that aspires to exceed customer expectations, grows in their abilities, are cohesive and maintain healthy relationships.</p>
-    <p>She loves the summer, the beach, restoring old furniture, airplanes and a winter afternoon of reading or watching a movie  in front of the fireplace.</p>
+    <p>She loves the summer, the beach, restoring old furniture, airplanes and a winter afternoon of reading or watching a movie in front of the fireplace.</p>
   email: helena.abellan@codurance.com
   office: barcelona
 
@@ -975,7 +963,7 @@
   role: Software Craftsperson
   fullDescription:
     <p>David has been fascinated by computers since primary school and has a range of programming experience including embedded systems, single-page webapps, and Excel VBA addons! Much of David's current work has been on developing serverless applications in AWS for the purpose of orchestrating flows such as media transcoding and data processing.</p>
-    <p>In his free time he is slowly learning to play the Piano and enjoys Boardgames in Pubs; his favourite drink is a coffee porter and his favourite game is Sushi GO!.  He also enjoys playing around with Maths.</p>
+    <p>In his free time he is slowly learning to play the Piano and enjoys Boardgames in Pubs; his favourite drink is a coffee porter and his favourite game is Sushi GO!. He also enjoys playing around with Maths.</p>
   github: djwelch
   email: david.welch@codurance.com
   office: london
@@ -985,7 +973,7 @@
   image: /assets/custom/img/team/nichole_mellekas.jpg
   role: Marketing Manager
   fullDescription:
-    <p>Nichole is the Marketing Manager at Codurance in London. She has worked in Sales and Marketing for the past 9 years in the United States and the United Kingdom.  She now lives and works in the United Kingdom full time. She specializes in digital marketing with an emphasis on lead generation and brand awareness. Her latest love is podcasting.</p>
+    <p>Nichole is the Marketing Manager at Codurance in London. She has worked in Sales and Marketing for the past 9 years in the United States and the United Kingdom. She now lives and works in the United Kingdom full time. She specializes in digital marketing with an emphasis on lead generation and brand awareness. Her latest love is podcasting.</p>
     <p>Marketing has always been a passion for Nichole, even before the paychecks were rolling in. The love of marketing comes from a place of wanting to understand how and why people communicate and having a chance to influence and improve those interactions. In so many words, she’s a digital anthropologist.</p>
     <p>In her spare time, she loves to travel, go to the beach, eat, drink, and explore. You will always find her with an iced coffee in hand regardless of the weather.</p>
   linkedin: nicholemellekas
