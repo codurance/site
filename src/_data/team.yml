@@ -632,10 +632,11 @@
   image: /assets/custom/img/team/matt_gray.jpg
   role: Software Craftsman
   fullDescription:
-    <p>Matt has a varied work background which includes music production, audio editing and sound design for computer games, writing music for film, TV and various independent record labels; DJing, technical support at a music technology college; and for the 5 years prior to beginning the apprenticeship at Codurance, teaching and managing Computer Science departments in secondary schools.</p>
-    <p>With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts using Python and various teaching tools, as well as learning enough Computer Science theory to teach it at A-Level, whilst also picking up a bit of Java, OO design, Javascript and HTML along the way.</p>
-    <p>He developed a strong passion for solving problems using well written code, which urged him to shift career paths once again and begin his journey towards mastery in software craftsmanship. He has spent the last couple of years relentlessly studying and practicing Java programming and TDD and is extremely excited to have become a part of the software craftsmanship community.</p>
-    <p>In his free time he enjoys making and listening to music, playing trombone in his band and spending time with family, friends and especially his 3 year old son.</p>
+    <p>Matt’s work background includes music and sound production for computer games, film, TV and various record labels; teaching and technical support at a music and sound technology college; and in recent years teaching and managing Computer Science departments in secondary schools.</p>
+    <p>With Computer Science replacing ICT in the school curriculum, he was tasked with teaching programming concepts and techniques using Python, JavaScript, Java and various teaching tools, as well as learning enough Computer Science theory and practice to teach the subject at A-Level and beyond.</p>
+    <p>He developed a strong passion for solving problems using efficient, well-written and elegant code, which urged him to shift career paths once again and begin his journey towards mastery in Software Craftsmanship. He has spent the last 3 years relentlessly studying and practicing Java programming, OO design, TDD and agile ways of working. More recently he has been delving deeper into the world of functional programming, Clojure; and also front-end development with JavaScript, Typescript and React.</p>
+    <p>Matt is extremely grateful and excited to have been given the opportunity to extend his learning even more through completing the Codurance Apprenticeship programme. He is now joyfully gaining more and more knowledge and experience working as part of his first Codurance development team.</p>
+    <p>In his free time Matt enjoys reading, making and listening to music, playing Trombone in his band and spending time with family, friends and especially his 3 year old son.</p>
   github: mattgraygithub
   email: matthew.gray@codurance.com
   office: london
