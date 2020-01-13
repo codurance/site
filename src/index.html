@@ -5,8 +5,10 @@ layout: default
 <div class="feature-panel">
   <div class="jumbotron">
 	  <h1>{% t index-banner.title %}</h1>
-	  <h3>{% t index-banner.subtitle %}</h3>
-	  <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">{% t index-banner.link_title %}</a>
+	  <h3 class="h2">{% t index-banner.subtitle %}</h3>
+	  <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">
+      <span>{% t index-banner.link_title %}</span>
+    </a>
   </div>
 </div>
 
@@ -26,12 +28,13 @@ layout: default
 </div>
 
 <!-- Activity panel -->
-<div class="section gray-section">
+<div class="section bg-gradient-off-white">
+  
   <div class="container">
     <div class="title-header">
-      <h2>{% t index-activity.title %}</h2>
+      <h2 class="h3">{% t index-activity.title %}</h2>
     </div>
-    <div class="row blog-boxes margin-bottom-40">
+    <div class="row blog-boxes margin-bottom-40 blog-boxes--shadow">
       {% assign podcast = site.podcasts | sort: 'date' | reverse %}
       {% include latest_highlights.html param=podcast %}
 
@@ -41,16 +44,12 @@ layout: default
       {% assign event = site.events | reverse %}
       {% include latest_highlights.html param=event %}
     </div>
-
   </div>
 
 
   <div class="text-center">
-    <a class="btn u-btn-primary btn-codurance-color g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25" href="{{ '/publications' | prepend: site.baseurl }}">
-      <span class="g-pos-rel g-top-2">{% t index-activity.publications_link_title %}</span>
-      <span class="align-middle u-icon-v3 g-width-20 g-height-20 g-color-black g-bg-white g-font-size-12 rounded-circle g-ml-30">
-        <i class="fa fa-angle-right"></i>
-      </span>
+    <a class="btn u-btn-outline g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25" href="{{ '/publications' | prepend: site.baseurl }}">
+      <span class="g-pos-rel g-top-2 g-font-weight-600">{% t index-activity.publications_link_title %}</span>
     </a>
   </div>
 </div>
@@ -60,11 +59,11 @@ layout: default
 {% include_relative services/_includes/we_advise_coach_deliver.html %}
 
 <!-- Clients & Partners-->
-<div class="section gray-section">
+<div class="section bg-gradient-off-white">
   <div class="container">
 
     <div class="title-header">
-      <h2>{% t index-clients.title %}</h2>
+      <h2 class="h3">{% t index-clients.title %}</h2>
     </div>
     <div class="row">
       {% for client in site.data.clients %}
@@ -77,7 +76,7 @@ layout: default
   </div>
 </div>
 
-<div class="section">
+<div class="section bg-gradient-off-white">
     <div class="container">
 
     <div class="title-header">
@@ -96,16 +95,17 @@ layout: default
 <!-- End Clients & Partners-->
 
 <!-- skill and practices panel -->
-<div class="section gray-section">
+<div class="section bg-gradient-off-white">
   <div class="container">
     <div class="title-header">
 		  <h2>{% t index-how_we_work.title %}</h2>
-      <p>{% t index-how_we_work.subtitle %}</p>
     </div>
-
+    <div class="container mb-5 text-center">    
+      <p class="lead mb-o">{% t index-how_we_work.subtitle %}</p>   
+    </div>
     <div class="row no-gutters g-mb-50">
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-heart u-line-icon-pro"></i>
                 </span>
@@ -113,7 +113,7 @@ layout: default
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-paper-plane u-line-icon-pro"></i>
                 </span>
@@ -121,7 +121,7 @@ layout: default
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-reload u-line-icon-pro"></i>
                 </span>
@@ -129,7 +129,7 @@ layout: default
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-control-forward u-line-icon-pro"></i>
                 </span>
@@ -137,7 +137,7 @@ layout: default
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-settings u-line-icon-pro"></i>
                 </span>
@@ -145,7 +145,7 @@ layout: default
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="u-shadow-v21--hover g-brd-around g-brd-gray-light-v4 g-brd-transparent--hover g-bg-white--hover g-transition-0_3 g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
               <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
                   <i class="icon-screen-desktop u-line-icon-pro"></i>
                 </span>
@@ -158,70 +158,115 @@ layout: default
 
 <!-- values panel-->
 
-            <div class="shortcode-html">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="shortcode-html">
             </div>
 
             <div class="section">
               <div class="container">
                 <div class="title-header">
                   <h2>{% t index-software_craftsmanship.title %}</h2>
-                  <p>{% t index-software_craftsmanship.subtitle  %}</p>
                 </div>
+                <div class="container mb-5 text-center g-pb-20">
+                  <p class="lead mb-o">{% t index-software_craftsmanship.subtitle  %}</p>
+                </div>
+                
 
 
                 <div class="row">
-                  <div class="col-lg-4 g-mb-30">
+
+
+                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
                     <!-- Article -->
-                    <article>
-                      <img class="img-fluid w-100 g-mb-20" src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" alt="The Craftsman Book Cover">
+                    <article class="box-shadow">
+                    <a class="u-link-v5 g-color-main" href="https://www.goodreads.com/book show/23215733-the-software-craftsman">
+                    
+                      <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" alt="The Craftsman Book Cover">
 
-                      <h3 class="text-uppercase g-font-size-15">
-                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="https://www.goodreads.com/book/show/23215733-the-software-craftsman">{% t index-software_craftsmanship-book.title %}</a>
-                      </h3>
+                      <div class="g-pa-30-30-20">
 
-                      <p>{% t index-software_craftsmanship-book.subtitle%}</p>
+                        <h3 class="h4 g-font-weight-800 g-mb-15">
+                          {% t index-software_craftsmanship-book.title %}
+                        </h3>
 
-                      <strong>
-                        <a class="text-uppercase g-font-size-12" href="{{ '/publications/the-software-craftsman' | prepend: site.baseurl }}">{% t index-software_craftsmanship-book.link_title  %}</a>
-                      </strong>
+                       <p class="g-pb-30">{% t index-software_craftsmanship-book.subtitle%}</p>
+
+                        <span class="block-cta">
+                          {% t index-software_craftsmanship-book.link_title  %}
+                        </span>
+
+                      </div>
+                      </a>
                     </article>
+                    
                     <!-- End Article -->
                   </div>
 
-                  <div class="col-lg-4 g-mb-30">
-                    <!-- Article -->
-                    <article>
-                      <img class="img-fluid w-100 g-mb-20" src="{{ '/assets/custom/img/home/socrates-uk.jpg' | prepend: site.baseurl }}" alt="Socrates Conference Logo">
 
-                      <h3 class="text-uppercase g-font-size-15">
-                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="http://socratesuk.org/">{% t index-software_craftsmanship-socrates.title %}</a>
-                      </h3>
+                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
+                    <!-- Article -->               
+                      <article class="box-shadow">
+                        <a class="u-link-v5 g-color-main" href="http://socratesuk.org/">
+                          <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/socrates-uk.jpg' | prepend: site.baseurl }}" alt="Socrates Conference Logo">
 
-                      <p>{% t index-software_craftsmanship-socrates.subtitle %}</p>
+                          <div class="g-pa-30-30-20">
 
-                      <strong>
-                        <a class="text-uppercase g-font-size-12" href="http://socratesuk.org/">{% t index-software_craftsmanship-socrates.link_title %}</a>
-                      </strong>
-                    </article>
+                            <h3 class="h4 g-font-weight-800 g-mb-15">
+                              {% t index-software_craftsmanship-socrates.title %}
+                            </h3>
+
+                            <p class="g-pb-30">{% t index-software_craftsmanship-socrates.subtitle %}</p>
+
+                            <span class="block-cta">
+                              {% t index-software_craftsmanship-socrates.link_title %}
+                            </span>
+
+                          </div>
+                        </a>
+                      </article>                
                     <!-- End Article -->
                   </div>
 
-                  <div class="col-lg-4 g-mb-30">
+                  
+                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
                     <!-- Article -->
-                    <article>
-                      <img class="img-fluid w-100 g-mb-20" src="{{ '/assets/custom/img/home/lscc.jpg' | prepend: site.baseurl }}" alt="LSCC Logo">
+                    <article class="box-shadow">
+                      <a class="u-link-v5 g-color-main" href="https://www.meetup.com/london-software-craftsmanship">                 
+                        <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/lscc.jpg' | prepend: site.baseurl }}" alt="LSCC Logo">
 
-                      <h3 class="text-uppercase g-font-size-15">
-                        <a class="u-link-v5 g-color-main g-color-primary--hover" href="https://www.meetup.com/london-software-craftsmanship">{% t index-software_craftsmanship-lscc.title %}</a>
-                      </h3>
+                        <div class="g-pa-30-30-20">
 
-                      <p>{% t index-software_craftsmanship-lscc.subtitle %}</p>
+                          <h3 class="h4 g-font-weight-800 g-mb-15">
+                            {% t index-software_craftsmanship-lscc.title %}
+                          </h3>
 
-                      <strong>
-                        <a class="text-uppercase g-font-size-12" href="https://www.meetup.com/london-software-craftsmanship">{% t index-software_craftsmanship-lscc.link_title  %}</a>
-                      </strong>
+                          <p class="g-pb-30">{% t index-software_craftsmanship-lscc.subtitle %}</p>
+
+                          <span class="block-cta">
+                            {% t index-software_craftsmanship-lscc.link_title  %}
+                          </span>
+
+                        </div>
+
+                      </a>
                     </article>
                     <!-- End Article -->
+
+
                   </div>
                 </div>
               </div>

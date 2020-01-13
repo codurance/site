@@ -5,7 +5,7 @@ layout: event
 name: kata
 image:
     src: /assets/custom/img/events/kata_leap-year.png
-title: "KATALYST<br>LATEST KATA - LEAP YEAR"
+title: "Katalyst latest kata - Leap year"
 hidden: true
 event-dates: 
  starts: 2019-10-10
