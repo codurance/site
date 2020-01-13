@@ -184,6 +184,8 @@ $orange-colour: #e67e22;
 
 /* Home Page Latest Highlights */
 .highlight-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
