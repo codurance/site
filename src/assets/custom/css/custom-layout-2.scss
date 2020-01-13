@@ -182,6 +182,12 @@ $orange-colour: #e67e22;
   }
 }
 
+/* Home Page Latest Highlights */
+.highlight-card {
+  display: flex;
+  overflow: hidden;
+}
+
 /* Our Story Page */
 
 .our-story-map {
@@ -1051,4 +1057,10 @@ blockquote.no-left-border {
 ----------------------------------*/
 .hljs {
   background-color: #f8f9fa
+}
+
+/* Layout utilities
+----------------------------------*/
+.height-100pc {
+  height: 100%;
 }

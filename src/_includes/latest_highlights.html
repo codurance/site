@@ -21,11 +21,11 @@
 	{% else %}
 		{% assign date = post.date %}
 	{% endif %}
-      <div class="col-sm-6 col-lg-4 g-mb-30">
+      <div class="col-sm-6 col-lg-4 g-mb-30 highlight-card">
 					<article>
 							<div class="latest-highlights-image" style="background: top center / cover no-repeat url({{ imageSrc  | prepend: site.baseurl }})"></div>
 
-							<div class="g-bg-white g-pa-30-30-20">
+							<div class="g-bg-white g-pa-30-30-20 height-100pc">
 								<p class="small g-mb-10">
 									<time>{{ date | date_to_string }}</time>
 								</p>
