@@ -288,14 +288,14 @@ clients:
    header: ¡Estamos orgullosos de nuestros clientes y socios!
    ubs_description: UBS es una empresa global que provee servicios a clientes privados, empresas e instituciones. Hemos ayudado a UBS a crear una plataforma de informes normativos para cumplir con los últimos reglamentos financieros en curso. También les hemos ayudado a crear sus equipos a distancia para encargarse del trabajo de informes normativos. Estos equipos son bien conocidos dentro de UBS por su efectividad, prácticas de XP y valores de Software Craftsmanship.
    acuris_description: Acuris está especializado en sacar provecho de la información para suscriptores en una variedad de mercados. Nuestro equipo de Software Craftspeople están ayudando a Acuris a implementar la siguiente generación de plataformas de publicación.
-   socgen_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftspeople jes han ayudado a adoptar Prácticas XP y Continuous Delivery.
+   socgen_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftspeople han ayudado a adoptar Prácticas XP y Continuous Delivery.
    mandg_description: M&G es una de las empresas de inversión más grandes y con más historia de Reino Unido (más de 80 años de experiencia). Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de formación regulares para enseñarles Test Driven Development y Clean Code.
    flextrade_description: FlexTrade Systems es el líder global en sistemas de gestión de ejecución de alto rendimiento y de gestión de pedidos para la renta variable, divisas, opciones, futuros y renta fija. Hemos ayudado a mejorar las habilidades de desarrollo de software de su equipo mediante la organización de sesiones de formación a medida en Diseño de Software y técnicas de Test Driven Development avanzadas.
    tesco_description: Tesco es un retail líder. Hemos estado trabajando con ellos para crear la nueva generación de servicios de reparto a domicilio y previsión de suministro. También estamos ayudando a mejorar la cualificación profesional de sus equipos de desarrollo.
    asos_description: ASOS es el retail online de moda y belleza más grande de Reino Unido. Nuestros craftspeople están embebidos en sus equipos para ayudarles continuamente a mejorar su tecnología y prácticas. También organizamos un programa de formación y asesoría a medida para sus equipos de desarrollo.
    mango_description: Mango es un retail de moda internacional con más de 2.700 tiendas en 105 países. Les hemos ayudado a reestructurar su actual arquitectura (con microservicios) para brindar una mejor experiencia al cliente.
    coniq_description: Coniq provee plataformas de mercados basados en información y fidelidad. Hemos desarrollado aplicaciones ePOS que permiten a las tiendas proveer a sus clientes planes de tarjetas y vales, basados en su fidelidad.
-   mands_description: Marks and Spencer plc is a major British multinational retailer headquartered in the City of Westminster, London. It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.
+   mands_description: Marks and Spencer plc es un retailer multinacional británico con sede en City of Westminster, London. Se encuentra en la lista London Stock Exchange y forma parte del FTSE 100 Index.
    accelad_description: Raphton Analyzer es un asistente de software para la detección temprana de  errores. Hemos trabajado con la marca ayudando a que los equipos de diseño a mejoraran sus capacidades técnicas.
    crowdmix_description: Crowdmix es una plataforma de medios de comunicación social para compartir e interactuar a través de la música. Les hemos ayudado a crear su departamento de tecnología desde la base, a través de un equipo que formaba el núcleo de desarrollo de software y contratando el equipo de desarrolladores necesario para crear ese equipo interno.
    aws_description: AWS provee un conjunto de servicios en la nube mediante una plataforma para aplicaciones de software. Hemos creado una plataforma para que puedan gestionar los eventos de su comunidad, como AWS Loft y AWS Summit.
@@ -320,7 +320,7 @@ events-lscc:
 careers:
    title: Trabaja con nosotros
    email: join-us@codurance.es
-   learn_more: Aprende más
+   learn_more: Más información
    attitude_title: Actitud
    attitude_description: Buscamos personas que tengan una gran actitud de aprendizaje y un verdadero amor por las habilidades requeridas de un desarrollo de software profesional. Ofrecemos un ambiente vibrante donde crecerás como profesional. Estamos orgullosos de nuestra cultura de aprendizaje. Somos una comunidad de profesionales donde nos ayudamos y apoyamos mutuamente.
    experience_title: Experiencia
@@ -329,9 +329,9 @@ careers:
    drive_description: Para nosotros nuestra ocupación es más que solo un trabajo. Aplicamos prácticas de aprendizaje deliberadas para adquirir nuevas habilidades y profundizar nuestra experiencia existente. Hacemos esto por orgullo profesional, esforzándonos constantemente por mejorar. Estamos buscando personas que compartan nuestro deseo de mejorar continuamente, aprender y ser mentores de quienes los rodean.
    our_roles_title: Nuestros Roles
    software_craftspeople_title: Software Craftspeople
-   software_craftspeople_description: Nuestros Craftspeople tienen una amplitud de habilidades y diversas profundidades de experiencia. Aprenda más sobre lo que significa ser un Craftsperson.
+   software_craftspeople_description: Nuestros Craftspeople tienen una amplitud de habilidades y diversas profundidades de experiencia. Infórmate sobre lo que significa ser un Craftsperson.
    apprentices_title: Aprendices
-   apprentices_description: Un programa intensivo de aprendizaje de 3 meses que le proporcionará las habilidades necesarias para convertirse en un Artesano productivo. Aprenda más sobre el programa aquí.
+   apprentices_description: Un programa intensivo de aprendizaje de 3 meses que le proporcionará las habilidades necesarias para convertirse en un Artesano productivo. Infórmate sobre el programa.
    contact_us_title: ¿Tienes más preguntas?
    contact_us_subtitle: Si necesitas más información sobre Codurance antes de aplicar, siéntete libre de enviarnos un mensaje y preguntarnos lo que necesites. Responderemos a tus preguntas y respetaremos tu privacidad. Cuando hayas recabado la información que necesitas y estés listo/a para presentar tu candidatura hablaremos al respecto.
    life_at_codurance_title: Vida en Codurance
