@@ -474,7 +474,9 @@ $orange-colour: #e67e22;
 
   /* Hero */
   &-hero {
-    background-color: $codurance-green;
+    background-image: url("{{site.baseurl}}/assets/custom/img/bg-pattern.jpg");
+    background-size: cover;
+    background-position: center;
 
     &-title, &-sub-title {
       color: #fff;
