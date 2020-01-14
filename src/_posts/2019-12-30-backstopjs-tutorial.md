@@ -3,7 +3,7 @@ author: Mattsi Jansky
 layout: post
 asset-type: post
 title: Testing Your Website for Visual Regressions With BackstopJS
-date: 2019-12-30 00:00:00
+date: 2020-01-16 00:00:00
 description: This article explains how to set up BackstopJS visual regression tests and some good practices I've picked up from using it in anger
 image:
     src: /assets/custom/img/blog/2019-12-30-backstopjs/heading.jpg
@@ -23,9 +23,9 @@ tags:
 
 Snapshot testing compares a "snapshot" of the output of a prior version of your software to output from the latest version, to check for unintended changes. When a difference is found you either approve it, by updating the expected output snapshot, or fix the cause of the difference.
 
-Visual regression testing is a form of snapshot testing that tests a web front-end. It goes beyond testing the markup or layout by testing the rendered page captured in an emulated browser. As such they can "catch CSS Curve Balls" as BackstopJS says.
+Visual regression testing is a form of snapshot testing that tests a web front-end. It goes beyond testing the markup or layout by testing the rendered page captured in an emulated browser. As such they can "catch CSS Curve Balls" [as BackstopJS says](https://garris.github.io/BackstopJS/).
 
-BackstopJS is a framework for visual regression testing, written in Javascript. It treats your web service as a black box, so your website doesn't need to be written in Javascript to work with BackstopJS. One of the benefits it offers is a very comprehensive and helpful diff between your snapshots, embedded in a HTML report that it generates. An example below shows how the scrubber diff method allows you to see both test and reference snapshots simultaneously. You can move the red line to change where the boundry lies. There's also the diff method, which highlights anything that's changed in bright pink. Or you can flick between seing the whole reference or test snapshot to spot what's changed.
+BackstopJS is a framework for visual regression testing, written in Javascript. It treats your web service as a black box, so your website doesn't need to be written in Javascript to work with BackstopJS. One of the benefits it offers is a very comprehensive and helpful diff between your snapshots, embedded in a HTML report that it generates. An example below shows how the scrubber diff method allows you to see both test and reference snapshots simultaneously. You can move the red line to change where the boundry lies.
 
 This article will explain how to set up BackstopJS and some good practices I've picked up from using it in anger. You'll need to have some awareness of Docker Compose and Yarn or NPM.
 
@@ -35,7 +35,7 @@ This article will explain how to set up BackstopJS and some good practices I've 
 
 Why use visual regression testing? I'll assume that you appreciate why testing as a general practice is necessary, so here are several scenarios that visual regression tests will catch and other testing techniques won't:
 
-* CSS regressions: Often we'll make a change to a CSS style to move that one button into the space we'd like it to be, but how do we know that it hasn't had an undesirable knock-on effect on some other part of the website that uses the same CSS class? Instead of checking every page manually (which we will most often forget to do), run your visual regression tests.
+* CSS regressions: Often we'll make a change to a CSS style to move that one button into the space we'd like it to be, but how do we know that it hasn't had an undesirable knock-on effect on some other part of the website that uses the same CSS class? Instead of checking every element that may match your CSS selector manually (which we will most often forget to do), run your visual regression tests.
 * Responsiveness: Most often we're working on a 1080p screen, but many (perhaps most) of our users will be using their smartphones. Visual regression tests can test an assortment of different screen sizes, giving you confidence that your changes haven't broken the responsive page at other sizes and saving you time manually testing the page at different resolutions.
 * Dependabot: It's a wonderful tool that saves you from manually keeping all of your dependencies up-to-date. In my current team [we use dependabot aggressively](/2019/02/24/taming-dependabot/); we have extensive testing and auto-merge any Dependabot PRs that pass all our tests. In fact, in terms of PRs or commits it's the most active member of our team by far. However, you can't place your trust in Dependabot's auto-merge in the front-end if you aren't testing for visual regressions. Before we introduced visual regression testing we had instances where Dependabot would automatically update to a new version of a dependency that introduced a visual change (at one point even removing a prominent navigation link), and it would be automatically merged and deployed to production. We trust Dependabot to change our software's behaviour because we have extensive tests of that behaviour, and we trust it to change our software's visual appearance because we have visual regression tests.
 
@@ -54,7 +54,7 @@ Ultimately, your workflow should look like:
 
 The first step to creating a repeatable visual regression test is to run the tests on the same platform every time. Otherwise, you're in for trouble. Small changes in things like font rendering between operating systems can prevent the reference snapshots generated on your local machine from matching the test snapshots generated on your CI server. And if your CI server has multiple test runners on different platforms you've got even more unpredictability on your hands. To get around issues like these we use Docker containers via Docker Compose. This guaruntees the same platform for every test run. This approach also has the advantage that you don't need to install BackstopJS locally and end up with different versions of it on each developer's machine; instead you have one consistent version, and Dependabot can keep it up-to-date. The disadvantage is of course that it's slower.
 
-Add the following entry to your root `docker-compose.yml` (create one if necessary):
+Add the following entry to your root `docker-compose.yml` ([create one](https://docs.docker.com/compose/gettingstarted/) if necessary):
 
 ```(docker-compose)
   visual_regression_tests:
@@ -63,7 +63,7 @@ Add the following entry to your root `docker-compose.yml` (create one if necessa
       - ./test/visual:/src
 ```
 
-This describes a `visual_regression_tests` Docker container using the official `backstopjs` image, version `4.4.2`. The version can be left out, but it's important that it be there for repeatability. You can use Dependabot to keep it up-to-date by creating a Dockerfile for it (until [Dependabot adds Docker Compose support](https://github.com/dependabot/feedback/issues/82)), which is [described below](#customfonts). Of course, you should copy the latest version number from [the BackstopJS Docker image releases](https://hub.docker.com/r/backstopjs/backstopjs/builds) and use that; `4.4.2` may be outdated at time of reading. If you're using a Docker container for your website as well you should add a `link` entry to that container.
+This describes a `visual_regression_tests` Docker container using the official `backstopjs` image, version `4.4.2`. The version can be left out, but it's important that it be there for repeatability. You can use Dependabot to keep it up-to-date by creating a Dockerfile for it (until [Dependabot adds Docker Compose support](https://github.com/dependabot/feedback/issues/82)), which is [described below](#customfonts). Of course, you should copy the latest version number from [the BackstopJS Docker image releases](https://hub.docker.com/r/backstopjs/backstopjs/builds) and use that; `4.4.2` may be outdated at time of reading. If you're using a Docker container for your website as well you should add [a `depends_on` entry](https://docs.docker.com/compose/compose-file/#depends_on) to that container.
 
 The last part is the key; the volume configuration `./test/visual:/src`. This maps the local relative path `./test/visual` to `/src` in the container. You may change `./test/visual` to any relative path you like, but `/src` must be constant because that is where BackstopJS will look inside the container for it's configuration.
 
@@ -78,7 +78,7 @@ cd ./test/visual
 backstop init
 ```
 
-First we install BackstopJS (NPM alternative: `npm install -g backstopjs`) and then create the folder where our container expects to find the configuration (so change this as you like, but ensure it's consistent with the Docker Compose volume). Then we open the folder and initialise a BackstopJS config there. This creates a few files; `backstop.json`, and `backstop_data/engine_scripts`. The engine scripts are basic defaults that determine how to run the browser emulator. Unless you're doing something very esoteric you shouldn't need to change most of them. But `engine_scripts/cookies.json` is worth noting; it allows you to enter faked cookies into the browser emulator, this can be useful to send a token to an authenticated web service.
+First we install BackstopJS (NPM alternative: `npm install -g backstopjs`) and then create the folder where our container expects to find the configuration (so change this as you like, but ensure it's consistent with the Docker Compose volume). Then we open the folder and initialise a BackstopJS config there. This creates a few files; `backstop.json`, and `backstop_data/engine_scripts`. The engine scripts are basic defaults that determine how to run the browser emulator. Unless you're doing something unusual you shouldn't need to change most of them.
 
 Before going any further, create a `.gitignore` in your BackstopJS folder with the following entries:
 
@@ -168,13 +168,15 @@ The first thing I'd advise changing is the `viewports` property. This property d
   ]
   ```
 
-The next interesting property is `scenarios`. A scenario defines a test, and you'll want to add one for each major section of your website. With a blog for example you may want to test the blog page and the blog list page, so you would have two scenarios. The real trick here that will lead you to either jubilation or despair is figuring out _when_ to take the snapshot. Browsers, Javascript, web services and HTTP are all such fickle beasts; they may load slightly faster or slower each time you create a snapshot. For your visual regression tests to be repeatable you need them to reliably create the snapshot when the page is loaded. If you don't you'll find many test failures caused because the font hadn't loaded in yet, or a pop-up hasn't appeared yet, or a HTTP request to an AJAX dependency hadn't completed yet, et cetra. As such _a lot_ of the scenario configuration options are about _when_ to decide that the page has finished loading. This is the real meat of the configuration and each possible option is documented in [BackstopJS's readme](https://github.com/garris/BackstopJS#using-backstopjs), but a few key ones to highlight are:
+The next interesting property is `scenarios`. A scenario defines a test, and you'll want to add one for each major section of your website. With a blog for example you may want to test the blog page and the blog list page, so you would have two scenarios. 
 
-* `cookiePath`: This enables you to set different cookies for different scenarios
+The real trick here that will lead you to either jubilation or despair is figuring out _when_ to take the snapshot. Browsers, Javascript, web services and HTTP are all such fickle beasts; they may load slightly faster or slower each time you create a snapshot. For your visual regression tests to be repeatable you need them to create the snapshot only when the page has finished loading. If you don't you'll find many test failures caused because the font hadn't loaded in yet, or a pop-up hasn't appeared yet, or a HTTP request to an AJAX dependency hadn't completed yet, et cetra. As such _a lot_ of the scenario configuration options are about _when_ to decide that the page has finished loading. This is the real meat of the configuration and each possible option is documented in [BackstopJS's readme](https://github.com/garris/BackstopJS#using-backstopjs), but a few key ones to highlight are:
+
+* `cookiePath`: This enables you to enter faked cookies into the browser emulator, this can be useful to send a token to an authenticated web service. Just set it to a relative path to a JSON file; the expected format is described in a sample file, `engine_scripts/cookies.json`.
 * `url`: This is the full address of the web page being tested. If you're using a Docker container to host your site you may use the name of the container, like `http://website:8080/myPage`. Otherwise, you may run it locally and use something like `http://localhost:8080/myPage`.
 * `readyEvent`: Listen out for a console log telling you the page is fully loaded before starting. This is useful for repeatability.
-* `readySelector`: Similar to the above, this configures Backstop to wait until a particular element (defined by CSS selector) is appearing before starting. **I would strongly recommend using this setting and setting it to something that won't appear on any of your error pages**. If your service doesn't work during a visual regression test you may not know until after you get the report and are staring at a diff between your reference and a 404 page. But if your `readySelector` fails you get a timeout error in the output that lets you know that the expected page hasn't loaded, so you get the feedback sooner.
-* `delay`: **I strongly recommend that you never use this setting if you can avoid it whatsoever**. It allows you to set an arbitrary time to wait for the page to load before assuming it'll be ready to test. By default it is 0, which means no delay. If you find yourself using this setting, it's because you haven't found a reliable method to tell the browser that the page is loaded. You should only use this as an absolute last resort.
+* `readySelector`: Similar to the above, this configures Backstop to wait until a particular element (defined by CSS selector) is appearing before starting. **I recommend using this setting and setting it to something that won't appear on any of your error pages**. If your service doesn't work during a visual regression test you may not know until after you get the report and are staring at a diff between your reference and a 404 page. But if your `readySelector` fails you get a timeout error in the output that lets you know that the expected page hasn't loaded, so you get the feedback sooner.
+* `delay`: **Avoid using this setting if you can**. It allows you to set an arbitrary time to wait for the page to load before assuming it'll be ready to test. By default it is 0, which means no delay. If you find yourself using this setting, it's because you haven't found a reliable method to tell the browser that the page is loaded. You should only use this as an absolute last resort.
 * `hideSelectors`/`removeSelectors`: If you have some problematic element on the page that you either can't rely on to load in a reliable, timely fashion, or which has some random element that changes each time it's loaded then you can hide those elements using either of these properties.
 * `scrollToSelector`: BackstopJS will capture the entire document, not just the visible section (unless configured otherwise). However, you may want to trigger some event via scrolling. This setting makes Backstop scroll to a particular selector.
 * `selectors`: By default BackstopJS will capture the entire document. But if you want to test a specific set of regions, you can use this to limit the elements used to generate the snapshot. It's the opposite of `hideSelectors`/`removeSelectors` (but they can be used together). It's especially useful when you want to break a complex page down into smaller parts; you'll get more specific feedback on individual components, making regressions easier to identify.
@@ -212,7 +214,7 @@ RUN apt-get update && apt-get install -y fonts-lato
 RUN apt-get update && apt-get install -y fonts-font-awesome
 ```
 
-This is a very basic Dockerfile that extends the official BackstopJS image (remember to include the version!) and uses `apt-get` to install the requisite fonts. You should be able to find the package name of any font you need by searching [Debian's package registry](https://www.debian.org/distrib/packages). Then you just need to change your docker-compose entry to build your BackstopJS directory, like so:
+This is a very basic Dockerfile that extends the official BackstopJS image (remember to include the version!) and uses `apt-get` to install the requisite fonts. This way the browser emulator won't need to download the fonts as they're already installed. You should be able to find the package name of any font you need by searching [Debian's package registry](https://www.debian.org/distrib/packages). Then you just need to change your docker-compose entry to build your BackstopJS directory, like so:
 
 ```(docker-compose)
   visual_regression_tests:
@@ -228,14 +230,18 @@ You'll want to add a step to your build to run the visual regression tests. If y
 For Jenkins you can achieve this with the [HTML Publisher Plugin](https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin). Though the [official jenkins support guide](https://github.com/garris/BackstopJS/tree/master/examples/Jenkins) involves setting up a Jenkins job in the traditional web interface, I'd advise against that and use [the declarative Jenkinsfile method](https://jenkins.io/blog/2017/02/10/declarative-html-publisher/). If you already have a declarative Jenkinsfile just add something like the following to your `always` post-step in your Jenkinsfile:
 
 ```(Groovy)
-    publishHTML target: [
-        allowMissing: false,
-        alwaysLinkToLastBuild: false,
-        keepAll: true,
-        reportDir: 'test/visual/backstop_data/',
-        reportFiles: 'report/index.html',
-        reportName: 'visual regression tests report'
-        ]
+post {
+  always {
+    publishHTML(target: [
+      allowMissing: false,
+      alwaysLinkToLastBuild: true,
+      keepAll: true,
+      reportDir: './test/visual/backstop_data',
+      reportFiles: 'html_report/index.html',
+      reportName: 'Visual Regression Tests Report'
+    ])
+  }
+}
 ```
 
 ## Testing Repeatability
