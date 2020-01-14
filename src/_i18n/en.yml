@@ -436,6 +436,32 @@ careers:
       box3_description: We pay you a full-time salary throughout the Apprentice programme - essentially, we pay you to learn.
       box4_title: Hands-On Learning
       box4_description: All concepts are taught through hands-on exercises, coding katas, group discussions and code reviews.
+    skills:
+      title: What skills & experience do I need
+      description: Our Apprentices join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Apprentices brings to the course though, as a minimum, we require the following 'essential' skills for all Apprentices.
+      box1_title: Expected knowledge & skills
+      box1_description: <li>Familiarity with C#, Java or Node.js tech stacks.</li>
+        <li>Demonstrable attitude for self-learning and  awareness of the need for quality and good practices.</li>
+        <li>At least 3 years of experience working in a software development environment.</li>
+        <li>Be comfortable with OO design, modelling and executing CRUD commands on relational database and be able to write tests (though we don't expect you to be able to test drive).</li>
+      box2_title: Desired knowledge & skills
+      box2_description: <li>Comfortable with Agile/Scrum/XP/Software Craftsmanship principles.</li>
+        <li>Be able to test drive code using both classicist and London school (including testing and refactoring legacy code).</li>
+        <li>Be comfortable with full stack web applications and macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
+        <li>Be comfortable with OO design (SOLID, 4 rules of simple design, coupling/cohesion), DDD and design patterns.</li>
+    apply_description: Interested in joining our teams in London, Manchester or Barcelona?
+    testimonials:
+      title: Hear from past apprentices
+      description: At the end of the apprentice programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
+      carousel_item_1:
+        author: Liam Griffin-Jowett
+        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my apprenticeship than I would have in many years in a normal developer role. Being paid to learn is awesome.
+      carousel_item_2:
+        author: Luciano Palma
+        quote:  I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.
+    hiring_process:
+      step_2:
+        title: We will ask you to complete a coding exercise. We will spend a minimum of 2-hours reviewing your submission, highlight strengths and any areas for improvement.
     background_title: What background do I need to have?
     background_description: You are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design.
     is_it_for_me_title: Is this the programme for me?
