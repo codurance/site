@@ -128,7 +128,7 @@ company-who_are_we:
   title: ¿Quiénes somos?
   subtitle: <p>Construimos software bien elaborado y ayudamos a los equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3.500 desarrolladores/as que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
     </p>
-    <p> Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentesd en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
+    <p>Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentesd en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
     </p>
 company-the_team:
   title: El equipo
@@ -528,7 +528,7 @@ partners-jetbrains-partnership-benefit1:
   subtitle: Las herramientas de JetBrains pueden ser utilizadas para mejorar aún más tus <strong>prácticas de programación extrema</strong>. Nosotros te podemos enseñar cómo.
 partners-jetbrains-partnership-benefit2:
   title: Herramientas de JetBrains
-  subtitle: Te podemos ayudar a integrar las herramientas de JetBrains en tu próximo proyecto, de manera que puedas obtener software de <strong> calidad </strong> de manera <strong>más rápida</strong>.
+  subtitle: Te podemos ayudar a integrar las herramientas de JetBrains en tu próximo proyecto, de manera que puedas obtener software de <strong> calidad</strong> de manera <strong>más rápida</strong>.
 partners-jetbrains-products:
   title: Trabajando con JetBrains Intellij IDEA
   subtitle: ¿Quieres tener una idea de cómo te puede ayudar JetBrains en tu próximo proyecto? A continuación, Sandro Mancuso proporciona un tutorial avanzado en Test Driven Development utilizando <a href="https://www.jetbrains.com/idea/">JetBrains IntelliJ IDE</a>.
@@ -593,7 +593,7 @@ projects:
     the_challenge: <p>ASOS were struggling to adapt their systems and to ensure performance during peak trading periods, e.g Black Friday. One of the key problems was a multi-stage, manual deployment process that required the coordination of multiple teams and manual testing.</p>
                    <p>In an effort to modernise and improve their IT capabilities, ASOS underwent an improvement program to improve their speed of change and rate of delivery. Central to this was the adoption of modern software development practices and techniques, particularly around Extreme Programming.</p>
     our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
-                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
+                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability.</p>
                      <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices. We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
     outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly. Iterations are more organized and ceremonies are delivering more value.</p>
              <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
