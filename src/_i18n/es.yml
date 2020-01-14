@@ -128,7 +128,7 @@ company-who_are_we:
   title: ¿Quiénes somos?
   subtitle: <p>Construimos software bien elaborado y ayudamos a los equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3.500 desarrolladores/as que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
     </p>
-    <p> Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentesd en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
+    <p>Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentesd en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
     </p>
 company-the_team:
   title: El equipo
@@ -439,6 +439,32 @@ careers:
       box3_description: Te pagamos un salario de a tiempo completo a través del programa de aprendices. Resumiendo; cobrarás mientras aprendes.
       box4_title: Aprendizaje práctico
       box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
+    skills:
+      title: What skills & experience do I need
+      description: Our Apprentices join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Apprentices brings to the course though, as a minimum, we require the following 'essential' skills for all Apprentices.
+      box1_title: Expected knowledge & skills
+      box1_description: <li>Familiarity with C#, Java or Node.js tech stacks.</li>
+                        <li>Demonstrable attitude for self-learning and  awareness of the need for quality and good practices.</li>
+                        <li>At least 3 years of experience working in a software development environment.</li>
+                        <li>Be comfortable with OO design, modelling and executing CRUD commands on relational database and be able to write tests (though we don't expect you to be able to test drive).</li>
+      box2_title: Desired knowledge & skills
+      box2_description: <li>Comfortable with Agile/Scrum/XP/Software Craftsmanship principles.</li>
+                        <li>Be able to test drive code using both classicist and London school (including testing and refactoring legacy code).</li>
+                        <li>Be comfortable with full stack web applications and macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
+                        <li>Be comfortable with OO design (SOLID, 4 rules of simple design, coupling/cohesion), DDD and design patterns.</li>
+    apply_description: Interested in joining our teams in London, Manchester or Barcelona?
+    testimonials:
+      title: Hear from past apprentices
+      description: At the end of the apprentice programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
+      carousel_item_1:
+        author: Liam Griffin-Jowett
+        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my apprenticeship than I would have in many years in a normal developer role. Being paid to learn is awesome.
+      carousel_item_2:
+        author: Luciano Palma
+        quote:  I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.
+    hiring_process:
+      step_2:
+        title: We will ask you to complete a coding exercise. We will spend a minimum of 2-hours reviewing your submission, highlight strengths and any areas for improvement.
     background_title: ¿Qué experiencia necesitas?
     background_description:
       Esperamos que te desenvuelvas en al menos un idioma que elijas en las plataformas JVM, .NET y / o Node JS. También que conozcas las metodologías Agile y que puedas aplicarlas. Necesitas tener conocimientos básicos de diseño a nivel micro y macro.Te desenvuelves correctamente comunicando tus ideas en equipo. Te apasiona aprender y perfeccionar tus habilidades como desarrollador de software. Te gusta tanto aprender como enseñar.
@@ -528,7 +554,7 @@ partners-jetbrains-partnership-benefit1:
   subtitle: Las herramientas de JetBrains pueden ser utilizadas para mejorar aún más tus <strong>prácticas de programación extrema</strong>. Nosotros te podemos enseñar cómo.
 partners-jetbrains-partnership-benefit2:
   title: Herramientas de JetBrains
-  subtitle: Te podemos ayudar a integrar las herramientas de JetBrains en tu próximo proyecto, de manera que puedas obtener software de <strong> calidad </strong> de manera <strong>más rápida</strong>.
+  subtitle: Te podemos ayudar a integrar las herramientas de JetBrains en tu próximo proyecto, de manera que puedas obtener software de <strong> calidad</strong> de manera <strong>más rápida</strong>.
 partners-jetbrains-products:
   title: Trabajando con JetBrains Intellij IDEA
   subtitle: ¿Quieres tener una idea de cómo te puede ayudar JetBrains en tu próximo proyecto? A continuación, Sandro Mancuso proporciona un tutorial avanzado en Test Driven Development utilizando <a href="https://www.jetbrains.com/idea/">JetBrains IntelliJ IDE</a>.
@@ -593,7 +619,7 @@ projects:
     the_challenge: <p>ASOS were struggling to adapt their systems and to ensure performance during peak trading periods, e.g Black Friday. One of the key problems was a multi-stage, manual deployment process that required the coordination of multiple teams and manual testing.</p>
                    <p>In an effort to modernise and improve their IT capabilities, ASOS underwent an improvement program to improve their speed of change and rate of delivery. Central to this was the adoption of modern software development practices and techniques, particularly around Extreme Programming.</p>
     our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
-                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability. </p>
+                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability.</p>
                      <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices. We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
     outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly. Iterations are more organized and ceremonies are delivering more value.</p>
              <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
