@@ -78,7 +78,7 @@ index-how_we_work:
   link_title: Más información
 index-software_craftsmanship:
   title: Software Craftsmanship
-  subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos. Mejoramos nuestras habilidades a través de los programas de aprendizaje contínuo que realizamos, tanto internamente, como participando en las actividades de las disitintas comunidades de desarrollo de software.
+  subtitle: Software Craftsmanship está en el corazón de todo lo que hacemos. Mejoramos nuestras habilidades a través de los programas de aprendizaje continuo que realizamos, tanto internamente, como participando en las actividades de las distintas comunidades de desarrollo de software.
 index-software_craftsmanship-book:
   title: The Software Craftsman&#58; de nuestro Co-fundador Sandro Mancuso
   subtitle: El libro se define como "una enciclopedia sobre los comportamientos, atributos y la estructura de una organización que se adhiere a los principios de Software Craftsmanship". Una lectura obligatoria para cualquiera que desee comprender mejor los valores que se encuentran detrás del movimiento.
@@ -126,9 +126,9 @@ our-people:
     learn-more: Más información
 company-who_are_we:
   title: ¿Quiénes somos?
-  subtitle: <p>Construimos software bien elaborado y ayudamos a los equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con mas de 3.500 desarrolladores/as que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
+  subtitle: <p>Construimos software bien elaborado y ayudamos a los equipos de desarrollo a ser mejores en la entrega continuada de software mediante la aplicación de las prácticas de Programación Extrema y los valores de Software Craftsmanship. Software Craftsmanship está en el corazón de nuestra empresa. En 2010, los fundadores empezaron la <a href="http://londonswcraft.com/">comunidad de Software Craftsmanship en Londres (LSCC)</a>, que ha crecido hasta convertirse en la comunidad más grande y activa de Software Craftsmanship a nivel mundial, con más de 3.500 desarrolladores/as que se encuentran varias veces al mes para compartir y aprender. Codurance fue fundada en 2013 y heredó el espíritu de la comunidad. Desde 2013, organizamos <a href="http://socratesuk.org/">SoCraTes Reino Unido</a>, un encuentro internacional de Software Craftsmanship que atrae a software crafts[wo]men de toda Europa.
     </p>
-    <p>Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentesd en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
+    <p>Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentes en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
     </p>
 company-the_team:
   title: El equipo
@@ -138,7 +138,7 @@ company-our_culture:
     <p>La transparencia es uno de nuestros valores fundamentales. Cada persona en Codurance tiene acceso completo a las finanzas de la empresa y a todos los salarios. No existen jerarquías o directores en la empresa. Cualquier grupo de personas que sean apasionadas sobre un tema o deseen cambiar la forma de hacer las cosas en la empresa pueden empezar una iniciativa. El grupo debe de tener en cuenta todas las personas que puedan verse afectadas por su decisión y aceptar a cualquier persona interesada en unirse al grupo. El grupo tiene total competencia para tomar una decisión</p>
     <p>Los principios de Agile y Lean también están en nuestro núcleo; esto nos permite poder iterar las decisiones que se toman al plantear un proyecto; y esto nos permite avanzar, probar cosas nuevas, inspeccionar y adaptarnos.</p>
 company-how_we_work:
-  title: Como trabajamos
+  title: Cómo trabajamos
   subtitle: Nuestra forma de trabajar está basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe de aportar valor al negocio de manera constante, y contar con la calidad inherente que le permita evolucionar a medida que a las necesidades del negocio van cambiando.
 company-how_we_work-software_craftsmanship:
   title: Software Craftsmanship
@@ -148,13 +148,13 @@ company-how_we_work-agile_and_lean:
   subtitle: Creemos que un buen proceso aporta valor de manera incremental al negocio y proporciona un feedback rápido. Esta forma de trabajar nos permite inspeccionar, aprender y adaptarnos. No prescribimos procesos específicos. Ayudamos a los equipos a entender sus opciones y a tomar sus propias decisiones ya sea Scrum, Kanban, o una mezcla de prácticas Agile.
 company-how_we_work-continous_delivery:
   title: Continuous Delivery
-  subtitle: Entendemos que Continous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de despliegues y en la creación de continous delivery pipelines. Logramos continous delivery a través de una atención permanente a las necesidades del negocio, a la calidad del software y a las prácticas de XP.
+  subtitle: Entendemos que Continuous Delivery requiere que la organización esté alineada para ser capaz de ofrecer valor a las partes interesadas en frecuentes y pequeñas iteraciones. Somos expertos en la automatización de despliegues y en la creación de continuous delivery pipelines. Logramos continuous delivery a través de una atención permanente a las necesidades del negocio, a la calidad del software y a las prácticas de XP.
 company-how_we_work-xp:
   title: Programación Extrema (XP)
-  subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para nosotros. Este enfoque encaja perfectamente con nuestros valores de Software Craftsmanship. Somos expertos en estas prácticas y las aplicamos con éxito. Llevamos a cabo cursos de formación abiertos y gratuitos para quien quiera asisirtir, y participamos en eventos de la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
+  subtitle: Prácticas como Test-Driven Development (TDD), Pair Programming, Integración Continua y Shared Ownership son fundamentales para nosotros. Este enfoque encaja perfectamente con nuestros valores de Software Craftsmanship. Somos expertos en estas prácticas y las aplicamos con éxito. Llevamos a cabo cursos de formación abiertos y gratuitos para quien quiera asistir, y participamos en eventos de la comunidad para ayudar a nuestra industria a adoptar estas prácticas.
 company-how_we_work-devops:
   title: DevOps
-  subtitle: DevOps es una cultura que apoya continous delivery. Creemos que el despliegue, operación y mantenimiento de software son responsabilidad del equipo de desarrollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
+  subtitle: DevOps es una cultura que apoya continuous delivery. Creemos que el despliegue, operación y mantenimiento de software son responsabilidad del equipo de desarrollo, tanto como el desarrollo de las funcionalidades en primer lugar. Incluimos estabilidad, seguimiento y funciones de mantenimiento del entorno de producción desde el inicio.
 company-how_we_work-technology:
   title: Tecnología
   subtitle: Estamos enfocados en la JVM, .Net, Node.js, Movilidad (iOS y Android) y en tecnologías Web Front-end. Utilizamos herramientas de automatización tales como Ansible, Puppet, Powershell, Jenkins, Team City, VS Team Services y Github. Destacamos en despliegues en la nube, especialmente en AWS y Microsoft Azure. Todos nuestros craftspeople trabajan con la mayoría de lenguajes en dichas plataformas.
@@ -196,7 +196,7 @@ services:
   see-more: Ver más
   we-advise:
     title: We advise
-    subtitle: Para saber como puedes mejorar es necesario entender tus competencias actuales de delivery.
+    subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
     body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica.
       Te acompañaremos, con directrices técnicas y programas de coaching, para ayudar a tu organización
       en su camino hacia una entrega efectiva y sostenible.
@@ -235,20 +235,20 @@ services:
     title: We deliver
     subtitle: Tenemos las habilidades de entrega de software para ayudarte a entregar tus objetivos de negocio.
     body: Nuestros equipos expertos mejoraran tu software y procesos de entrega hacia entregas
-      más eficientes y continous delivery. Además nuestros equipos de feature tienen las capacidades necesarias
+      más eficientes y continuous delivery. Además nuestros equipos de feature tienen las capacidades necesarias
       para llevar una idea al mercado.
     feature-delivery:
       title: Feature Delivery Teams
-      body: Nuestros equipos son expertos en practicas XP, Continuous Delivery y cultura DevOps.
-        Tengas un producto existente o estés empezando uno nuevo, nuestros equipos se aseguraran de ayudarte a entregar
+      body: Nuestros equipos son expertos en prácticas XP, Continuous Delivery y cultura DevOps.
+        Tengas un producto existente o estés empezando uno nuevo, nuestros equipos se aseguran de ayudarte a entregar
         calidad y a tiempo para que puedas satisfacer tus objetivos de negocio. Nuestro trabajo servirá de ejemplo para tus futuros
         desarrollos.
     technical-delivery:
       title: Technical Delivery Teams
-      body: Tus pipelines de continous delivery necesitan mejoras, no quieres dejar de dar servicio con tus deploys,
+      body: Tus pipelines de continuous delivery necesitan mejoras, no quieres dejar de dar servicio con tus deploys,
         necesitas infraestructura para A/B testing o te enfrentas a los desafíos más complicados de pasar de monolito a
         microservicios.
-        Nuestro equipo de technical delivery se encargara de esto por ti para que puedas concentrarte en
+        Nuestro equipo de technical delivery se encargará de esto por ti para que puedas concentrarte en
         desarrollar las características que tu negocio necesita.
     clients-title: Clientes que se han beneficiado de entregas más efectivas
   our-clients:
@@ -291,7 +291,7 @@ clients:
   socgen_description: Societe Generale es una multinacional líder en servicios bancarios y financieros. Nuestros craftspeople han ayudado a adoptar Prácticas XP y Continuous Delivery.
   mandg_description: M&G es una de las empresas de inversión más grandes y con más historia de Reino Unido (más de 80 años de experiencia). Ayudamos a M&G a inculcar una cultura de aprendizaje en sus equipos. Organizamos sesiones de formación regulares para enseñarles Test Driven Development y Clean Code.
   flextrade_description: FlexTrade Systems es el líder global en sistemas de gestión de ejecución de alto rendimiento y de gestión de pedidos para la renta variable, divisas, opciones, futuros y renta fija. Hemos ayudado a mejorar las habilidades de desarrollo de software de su equipo mediante la organización de sesiones de formación a medida en Diseño de Software y técnicas de Test Driven Development avanzadas.
-  eclinicalworks_description: eClinicalWorks se fundó en 1999 con el objetivo de liberar a los profesionales de la medicina del uso excesivo de papel.También les permite realizar las conexiones que los proveedores necesiten, tanto a farmacias, como a laboratorios y cadenas de suministro. Estamos ayudando a alinear la visión técnica de eClinicalWorks con su estrategia de producto, que incluye la modernización de sus sistemas de legacy software.
+  eclinicalworks_description: eClinicalWorks se fundó en 1999 con el objetivo de liberar a los profesionales de la medicina del uso excesivo de papel.También les permite realizar las conexiones que los proveedores necesitan, tanto a farmacias, como a laboratorios y cadenas de suministro. Estamos ayudando a alinear la visión técnica de eClinicalWorks con su estrategia de producto, que incluye la modernización de sus sistemas de legacy software.
   cxLoyalty_description: cxLoyalty es una compañía con oficinas centrales en Stamford, que ofrece a sus clientes programas de compromiso y fidelización. Estamos ayudando a definir e implementar la visión técnica para la plataforma. Nuestros Craftspeople están ofreciendo soporte experto y experiencia en desarrollo en torno a su base de código Clojure.
   cazoo_description: La misión de Cazoo es transformar la forma en que las personas pueden comprar coches usados en Reino Unido, proporcionando una mejor selección, transparencia, comodidad y tranquilidad. Codurance está ayudando a construir este producto al mismo tiempo que ayudamos a construir una cultura de ingeniería basada en las prácticas de XP.
   bankable_description: Bankable ofrece una amplia gama de soluciones de pago bajo un modelo de "Banca como servicio". Nuestros Craftspeople están ayudando a construir su plataforma de próxima generación con la que podrán ofrecer a sus clientes una gama aún más amplia de soluciones.
@@ -355,7 +355,7 @@ careers:
   become_a_craftsperson:
     title: Software Craftsperson
     what_we_look_for: Buscamos Software Craftspeople que compartan los valores del pragmatismo, profesionalidad y transparencia. Trabajamos exclusivamente en Londres y Barcelona (no nos gusta viajar muy lejos).Como parte del equipo tendrás la oportunidad de trabajar en un amplio abanico de tecnologías, contextos y proyectos, tanto internos como de cliente. Te encargarás de hacer crecer el negocio de nuestros clientes. En algunos casos podrás hacerlo dando soporte en la entrega y desarrollo de software de calidad, y en otros, ayudando a introducir los valores y prácticas del movimiento de la artesanía del software en su organización mediante training, coaching y mentoring.
-    projects_title: Projectos que apoyaras
+    projects_title: Proyectos que apoyaras
     projects_description: Tal vez trabajaras en un proyecto interno para nuestros clientes con nuestro enfoque de entrega de equipo. Esto puede ser un proyecto nuevo para un Startup, o ayudar a construir un sistema de misión crítica para un cliente de una gran empresa. Tal vez trabaje como un ‘Embedded Craftsman’, trabajando dentro del desarrollo existente de nuestro cliente para ayudarlo a mejorar al escribir su propio software. O tal vez esté más interesado en ayudar a presentar los valores de la artesanía a una organización a través del asesoramiento y la tutoría.
     about_you_title: Sobre ti
     personas:
@@ -373,7 +373,7 @@ careers:
       process_and_ux: Si bien la mayoría de los miembros de Codurance son desarrolladores/as de software, entendemos que un equipo de desarrollo de software efectivo es mucho más que eso. Creemos que es interesante una forma de "T" en la que haya un conocimiento amplio de un abanico de habilidades y experiencia más concreta y profunda en un aspecto más concreto. Nuestros UX designers, Business Analysts y Agile Product Managers se especializan en el desarrollo de productos. Pueden comenzar de manera más específica, como diseñador de experiencia de usuario, analista de negocios, pero con el tiempo adquieren experiencia en otras habilidades complementarias relacionadas con el desarrollo de productos. Son buenos facilitadores y ven el valor y la necesidad de que todo el equipo se suba al barco para participar del viaje. Nuestros artesanos más experimentados a menudo actúan como product owners para nuestros clientes, entendiendo las necesidades que se plantean y cómo se aplican los procesos Agile para resolverlas. Valoramos conceptos como Design Thinking y Co-creation. Estamos constantemente aprendiendo y asistimos regularmente a cursos de capacitación, conferencias y workshops para ampliar nuestros conocimiento en este área.
     hiring_process:
       title: Proceso de entrevista
-      subtitle: Nuestro proceso de entrevista nos ayudará a conocer tu experiencia. Todos comntamos con diferentes habilidades y áreas de especialización. Te animamos a que tomes la iniciativa de formar parte de este equipo, sea cual sea la etapa del viaje en el que te encuentras.
+      subtitle: Nuestro proceso de entrevista nos ayudará a conocer tu experiencia. Todos contamos con diferentes habilidades y áreas de especialización. Te animamos a que tomes la iniciativa de formar parte de este equipo, sea cual sea la etapa del viaje en el que te encuentras.
       step_1:
         title: Entrevista telefónica
         description: Entrevista telefónica de 30-45 minutos en la que tener una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
@@ -420,7 +420,7 @@ careers:
     autonomy_description: ¿Tienes alguna idea? Forma un “Initiative Circle”, trabájala junto con los otros miembros que quieran formar parte de ella y entrégala.
     lifestyle_title: Estilo de vida
     holidays_title: Vacaciones
-    holidays_description: 25 Dias Laborales al año.
+    holidays_description: 25 Días Laborales al año.
     pensions_title: Bienestar
     pensions_description: Todos nuestros empleados tienen descuento en el gimnasio.
     pensions_icon: icon-sport-010 u-line-icon-pro
@@ -449,14 +449,14 @@ careers:
       description: Nuestros aprendices se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque, una serie de habilidades básicas que necesitas tener.
       box1_title: Conocimientos y skills requeridos.
       box1_description: <li>Familirizado con C#, Java or Node.js tech stacks.</li>
-                        <li>Actitud demostrable para el autoaprendizaje y estar alineado con la importancia y la necesidad de calidad y buenas prácticas en el desarrollo de software.</li>
-                        <li>Al menos 3 años de experiencia trabajando en entornos de desarrollo de software.</li>
-                        <li>Sentirse cómodo con OO design, SQL commands, ser capaz de escribir test(aunque no esperamos que sea capaz de hacer TDD).</li>
+        <li>Actitud demostrable para el autoaprendizaje y estar alineado con la importancia y la necesidad de calidad y buenas prácticas en el desarrollo de software.</li>
+        <li>Al menos 3 años de experiencia trabajando en entornos de desarrollo de software.</li>
+        <li>Sentirse cómodo con OO design, SQL commands, ser capaz de escribir test(aunque no esperamos que sea capaz de hacer TDD).</li>
       box2_title: Conocimientos y skill deseados.
       box2_description: <li>Sentirse cómodo con los principios Agile/Scrum/XP/Software Craftsmanship</li>
-                        <li>Se capaz de hacer test drive code utlizando tanto el método clásico como la escuela de Londres (incluidos testing y refactoring legacy code).</li>
-                        <li>Sentirse cómodo con full stack web applications y macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
-                        <li>Sentirse cómodo con OO design (SOLID, 4 reglas del simple design, coupling/cohesion), DDD y design patterns.</li>
+        <li>Se capaz de hacer test drive code utilizando tanto el método clásico como la escuela de Londres (incluidos testing y refactoring legacy code).</li>
+        <li>Sentirse cómodo con full stack web applications y macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
+        <li>Sentirse cómodo con OO design (SOLID, 4 reglas del simple design, coupling/cohesion), DDD y design patterns.</li>
     apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester or Barcelona?
     testimonials:
       title: Testimonios de algunos de nuestros aprendices
@@ -466,10 +466,10 @@ careers:
         quote: El impacto fue enorme en términos de crecimiento como desarrollador. Encontrar el espacio para concentrarme exclusivamente en la superación personal, unido a contar con la orientación necesaria para no perder la dirección, fue algo que me hizo sentir especialmente bien. Aprendí más durante los meses de mi aprendizaje que en muchos años en mi un rol habitual de desarrollador. Y poder cobrar un sueldo mientras aprendes es increíble.
       carousel_item_2:
         author: Luciano Palma
-        quote: Sentí que el proceso era más valioso que la graduación en si misma. He podido aprender a través de los errores, recibir feedback y mejorar continuamente durante el proceso. Ahora me siento más seguro trabajando en equipo, exponiendo mis ideas y recibiendo el feedback de mis colegas..
+        quote: Sentí que el proceso era más valioso que la graduación en sí misma. He podido aprender a través de los errores, recibir feedback y mejorar continuamente durante el proceso. Ahora me siento más seguro trabajando en equipo, exponiendo mis ideas y recibiendo el feedback de mis colegas..
     hiring_process:
       step_2:
-        title: Te pediremos que completes un ejercicio de codificación. Dedicaremos un mínimo de 2 horas a revisar tu envío, remarcar cuáles son las fortalezas que vemos y las áreas en las que penmsamos que puedes mejorar.
+        title: Te pediremos que completes un ejercicio de codificación. Dedicaremos un mínimo de 2 horas a revisar tu envío, remarcar cuáles son las fortalezas que vemos y las áreas en las que pensamos que puedes mejorar.
     background_title: ¿Qué experiencia necesitas?
     background_description:
       Esperamos que te desenvuelvas en al menos un idioma que elijas en las plataformas JVM, .NET y / o Node JS. También que conozcas las metodologías Agile y que puedas aplicarlas. Necesitas tener conocimientos básicos de diseño a nivel micro y macro.Te desenvuelves correctamente comunicando tus ideas en equipo. Te apasiona aprender y perfeccionar tus habilidades como desarrollador de software. Te gusta tanto aprender como enseñar.
@@ -487,8 +487,8 @@ careers-how_we_grow:
 careers-our_people:
   title: Nuestra gente
   description: <p>Nuestra gente pone una gran dedicación en dominar sus habilidades en el desarrollo de software y apoyar a los demás a hacer lo mismo. Igualmente, nuestros craftspeople son unos miembros de equipo eficaces y comprometidos a construir el software adecuado de la manera más eficaz. Dejamos que nuestro trabajo hable por sí mismo. Nos esforzamos por mejorarnos constantemente a nosotros, a nuestro equipo y a los proyectos en los que trabajamos. Nuestros craftspeople son pragmáticos y entienden que&#58; saber dónde aplicar un enfoque particular es tan importante como saber cómo aplicarlo.</p>
-               <p>Entendemos y abrazamos los procesos y prácticas Agile. Somos expertos en prácticas como TDD, Integración Continua, Pair Programming y Continous Deployment.</p>
-               <p>Nuestro conocimiento en tecnología es extenso en toda la empresa y profundo en cada uno de nosotros. Nos gusta la madurez de las herramientas y APIs que ofrecen las plataformas de la JVM y .NET y la flexibilidad de Node JS y Ruby. Somos conscientes de la importancia de una UX y una UI bien elaboradas y por lo tanto, construimos nuestra excelencia en Wireframing, Diseño de UI, así como interfaces web y móviles. Las plataformas en la nube nos permiten concentrarnos más en el negocio en lugar de en la infraestructura. Somos conscientes de la importancia del Big Data y Data Science y nos mantenemos al día de las técnicas y tecnologías asociadas. Nuestros craftspeople cubren una amplia gama de tecnologías, incluyendo pero no limitado a&#58; Java, C#, JavaScript, Scala, Clojure, Ruby, F#, CSS, Objective C, Swift, Cassandra, Kafka, AWS y Azure.</p>
+    <p>Entendemos y abrazamos los procesos y prácticas Agile. Somos expertos en prácticas como TDD, Integración Continua, Pair Programming y Continuous Deployment.</p>
+    <p>Nuestro conocimiento en tecnología es extenso en toda la empresa y profundo en cada uno de nosotros. Nos gusta la madurez de las herramientas y APIs que ofrecen las plataformas de la JVM y .NET y la flexibilidad de Node JS y Ruby. Somos conscientes de la importancia de una UX y una UI bien elaboradas y por lo tanto, construimos nuestra excelencia en Wireframing, Diseño de UI, así como interfaces web y móviles. Las plataformas en la nube nos permiten concentrarnos más en el negocio en lugar de en la infraestructura. Somos conscientes de la importancia del Big Data y Data Science y nos mantenemos al día de las técnicas y tecnologías asociadas. Nuestros craftspeople cubren una amplia gama de tecnologías, incluyendo pero no limitado a&#58; Java, C#, JavaScript, Scala, Clojure, Ruby, F#, CSS, Objective C, Swift, Cassandra, Kafka, AWS y Azure.</p>
 careers-apprentice:
   title: Programa Apprentice-craftspeople
   description: <p>Ejecutamos el Programa Apprentice-craftspeople para personas que comparten nuestra pasión por software craftsmanship, pero aún no han tenido las oportunidades de aprendizaje adecuadas. Cada crafts[wo]men selecciona un mentor, que le guiará y apoyará durante su aprendizaje. Trabajan con su mentor, en un programa a medida para la adquisición de habilidades, culminando en la graduación como software Crafts[wo]man. Evitamos trabajar en el cliente a tiempo completo para el apprentice-craftspeople si creemos que no está aportando a sus necesidades de aprendizaje. La prioridad para ellos es adquirir el conjunto básico de habilidades necesarias para ser reconocidos, como software crafts[wo]man, por el resto de la compañía. Enviamos regularmente a nuestros apprentice-craftspeople a cursos de formación.</p>
@@ -506,17 +506,17 @@ careers-join-apprentice:
 careers-join-how_to_apply:
   title: Cómo unirte?
   description: <p>Si piensas que Codurance es para ti envíanos un correo electrónico a <a href="mailto:join-us@codurance.es">join-us@codurance.es</a> y cuéntanos tu historia. Si te quedas sin ideas aquí tienes algunas sugerencias:</p>
-               <ul>
-               <li>¿Qué significa para ti Software Craftsmanship?</li>
-               <li>¿Con qué tecnologías y prácticas te encuentras cómodo?</li>
-               <li>¿Qué tecnologías y prácticas estás aprendiendo o te gustaría aprender?</li>
-               <li>¿Qué libros te gustan o te gustaría leer?</li>
-               <li>¿En qué comunidades participas activamente?</li>
-               <li>¿A qué conferencias atiendes?</li>
-               <li>¿Tienes algún proyecto personal en el que estás trabajando?</li>
-               <li>¿Has contribuido a proyectos open-source?</li>
-               </ul>
-               <p>Un CV actualizado siempre ayuda. También nos gustaría que nos envíes tus enlaces a post qye hayas escrito en blogs, repositorios de código y cualquier otro recurso que nos ayude a conocer tu lado profesional.</p>
+    <ul>
+    <li>¿Qué significa para ti Software Craftsmanship?</li>
+    <li>¿Con qué tecnologías y prácticas te encuentras cómodo?</li>
+    <li>¿Qué tecnologías y prácticas estás aprendiendo o te gustaría aprender?</li>
+    <li>¿Qué libros te gustan o te gustaría leer?</li>
+    <li>¿En qué comunidades participas activamente?</li>
+    <li>¿A qué conferencias atiendes?</li>
+    <li>¿Tienes algún proyecto personal en el que estás trabajando?</li>
+    <li>¿Has contribuido a proyectos open-source?</li>
+    </ul>
+    <p>Un CV actualizado siempre ayuda. También nos gustaría que nos envíes tus enlaces al post que hayas escrito en blogs, repositorios de código y cualquier otro recurso que nos ayude a conocer tu lado profesional.</p>
 careers-open_positions:
   title: Te gusta escribir software bien hecho, ¡a nosotros también!
   description: Estamos buscando personas que, como nosotros, compartan los valores del Software Crafts[wo]manship Tanto si ya tienes experiencia como si todavía eres junior, nos gustaría conocerte.
@@ -567,10 +567,10 @@ partners-jetbrains-product:
   published: Publicado 12 Mayo 2015
   title: Oustide-In Test Driven Development (parte I)
   description: <p>A diferencia de anteriores screencast, este tutorial no está pensado para ayudarte si estás empezando a aprender TDD. Inspirado en recientes <a href="https://twitter.com/sandromancuso/status/588503877235781632">discusiones en Twitter</a> y en un debate público sobre TDD y diseño de software, decidimos realizar este vídeo para mostrar la forma en la que Sandro escribe normalmente su código. Se trata de una forma distinta de a la que habitualmente se enseña.</p>
-               <p>En este screencast de 3 partes podrás seguir el enfoque de diseño ¨justo a tiempo¨ y entender los razonamientos que hay detrás de algunas de sus observaciones. Verás que no siempre sigue las reglas y que se basa más en su propia intuición para evolucionar su diseño. Pensando en voz alta a lo largo del vídeo, Sandro tiene como objetivo ayudarte a seguir todo lo que él considera está teniendo en cuenta en cada test y cuando refactoriza el código. Este vídeo ofrece un buen ejemplo de TDD 'Outside-In' y demuestra las principales diferencias con el enfoque clasicista.</p>
-               <p>Si tienes poca experiencia en TDD es mejor que sigas el enfoque clasicista, diseñando menos por adelantado y obteniendo feedback del código antes de evolucionar su diseño.</p>
-               <p>Para más información acerca de las diferencias entre los estilos de TDD, por favor, visita el post de Sandro, <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
-               <p>Para ver las partes 2 y 3 de la serie, <a href="/videos">visita nuestra página de vídeos</a>.</p>
+    <p>En este screencast de 3 partes podrás seguir el enfoque de diseño ¨justo a tiempo¨ y entender los razonamientos que hay detrás de algunas de sus observaciones. Verás que no siempre sigue las reglas y que se basa más en su propia intuición para evolucionar su diseño. Pensando en voz alta a lo largo del vídeo, Sandro tiene como objetivo ayudarte a seguir todo lo que él considera está teniendo en cuenta en cada test y cuando refactoriza el código. Este vídeo ofrece un buen ejemplo de TDD 'Outside-In' y demuestra las principales diferencias con el enfoque clasicista.</p>
+    <p>Si tienes poca experiencia en TDD es mejor que sigas el enfoque clasicista, diseñando menos por adelantado y obteniendo feedback del código antes de evolucionar su diseño.</p>
+    <p>Para más información acerca de las diferencias entre los estilos de TDD, por favor, visita el post de Sandro, <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
+    <p>Para ver las partes 2 y 3 de la serie, <a href="/videos">visita nuestra página de vídeos</a>.</p>
 event:
   author_title: Presentando
   location_title: Lugar
@@ -613,22 +613,22 @@ projects:
     subtitle: Explícanos tu proyecto o tus necesidades y nos pondremos en contacto contigo lo antes posible.
   ASOS:
     link-text: Case Study at Asos
-    long_description: Ayudamos a ASOS a lanzar software de mejor calidad y con más frecuencia, a través de la implementación de práctricas de Continuous Integration y Continuous Delivery aplicando DevOps culture.
+    long_description: Ayudamos a ASOS a lanzar software de mejor calidad y con más frecuencia, a través de la implementación de prácticas de Continuous Integration y Continuous Delivery aplicando DevOps culture.
     client_description: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
     focused: Software Craftsmanship
     keywords: Continuous Delivery, Continuous Integration, CI/CD, DevOps, Code Quality, TDD, Extreme Programming, Azure, .NET
     short_description: El enfoque Software Craftsmanship ayudó a los equipos de ASOS a ofrecer entregas de mayor valor y de manera más frecuente.
     subtitle: <p>Los procesos de implementación manuales que estaban llevando a cabo algunos equipos en diferentes etapas estaban teniendo un impacto negativo en la capacidad de la organización para implementar cambios con la agilidad y frecuencia que era necesaria.</p>
-              <p>Aplicar las forma de trabajar a través del Software Craftsmanship permitió aumentar la calidad general del código, y proporcionar una plataforma con la que iniciar el camino hacia el Continuous Delivery.</p>
+      <p>Aplicar las forma de trabajar a través del Software Craftsmanship permitió aumentar la calidad general del código, y proporcionar una plataforma con la que iniciar el camino hacia el Continuous Delivery.</p>
     about: ASOS es un retail de moda online. Empezó como un blog de moda y en la actualidad la marca ofrece a sus clientes sus productos a través de aplicación móvil, una revista además de su sitio web. El año pasado, ASOS tenía más de 13.4 millones clientes activos.
     the_challenge: <p>ASOS necesitaba adaptar sus sistemas y garantizar el rendimiento durante los períodos pico de negociación, por ejemplo, el Black Friday. Uno de los problemas clave fue un proceso de implementación manual de varias etapas que requirió la coordinación de múltiples equipos y pruebas manuales.</p>
-                   <p>En un esfuerzo por modernizar y mejorar sus capacidades de IT, ASOS se sometió a un proceso de mejora para optimizar su capacidad de adaptarse a los cambios y tasas de entrega. Un aspecto fundamental fue la adopción de prácticas y técnicas modernas de desarrollo de software, particularmente en torno al Extreme Programming.</p>
-    our_sc_approach: <p>Les ayudamos construyendo y rediseñando rápidamente algunos de sus sistemas centrales, agregando niveles de redundancia y almacenamiento en caché que les permitieron hacer frente al picos de tráfico en sus plataformas. También construimos bibliotecas de contingencia para implementar la recuperación ante posibles desastres e implementamos grupos de alta disponibilidad entre regiones.</p>
-                     <p>El trabajo fue en .NET ASP.NET MVC con bases de datos SQL Azure y alojado en Azure. También se emplearon tecnologías de almacenamiento en caché de código abierto como Redis, para mejorar la disponibilidad.</p>
-                     <p>Si bien los equipos de desarrollo de ASOS ya estaban familiarizados y trabajaban con metodologías Agile identificamos la necesidad de optimizar algunas de sus prácticas. Aplicamos un programa de entrenamiento de Software Craftsmanship a gran escala en sus más de 40 equipos de desarrollo, introduciendo o reforzando habilidades clave en torno a estas metodologías.<a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
+      <p>En un esfuerzo por modernizar y mejorar sus capacidades de IT, ASOS se sometió a un proceso de mejora para optimizar su capacidad de adaptarse a los cambios y tasas de entrega. Un aspecto fundamental fue la adopción de prácticas y técnicas modernas de desarrollo de software, particularmente en torno al Extreme Programming.</p>
+    our_sc_approach: <p>Les ayudamos construyendo y rediseñando rápidamente algunos de sus sistemas centrales, agregando niveles de redundancia y almacenamiento en caché que les permitieron hacer frente a los picos de tráfico en sus plataformas. También construimos bibliotecas de contingencia para implementar la recuperación ante posibles desastres e implementamos grupos de alta disponibilidad entre regiones.</p>
+      <p>El trabajo fue en .NET ASP.NET MVC con bases de datos SQL Azure y alojado en Azure. También se emplearon tecnologías de almacenamiento en caché de código abierto como Redis, para mejorar la disponibilidad.</p>
+      <p>Si bien los equipos de desarrollo de ASOS ya estaban familiarizados y trabajaban con metodologías Agile identificamos la necesidad de optimizar algunas de sus prácticas. Aplicamos un programa de entrenamiento de Software Craftsmanship a gran escala en sus más de 40 equipos de desarrollo, introduciendo o reforzando habilidades clave en torno a estas metodologías.<a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
     outcome: <p>ASOS ha dado pasos significativos en el camino hacia el desarrollo de software ágil, adoptando rápidamente una serie de nuevas técnicas. Las iteraciones están ahora mucho más organizadas y se están haciendo entregas de mejoras con más valor.</p>
-             <p>Mejoramos las prácticas técnicas dentro de los equipos, haciendo posible que puedan lanzar a producción software de mayor calidad y con mayor frecuencia.</p>
-             <p>ASOS continúa prosperando y mejorandO. Nos sentimos orgullosos de la ayuda que brindamos mientras estuvimos allí. Creemos que la actitud y el deseo de crecimiento y transformación de ASOS se alinearon bien con la experiencia, el entrenamiento y el apoyo de Codurance, lo que resultó muy enriquecedor para los equipos implicados.</p>
+      <p>Mejoramos las prácticas técnicas dentro de los equipos, haciendo posible que puedan lanzar a producción software de mayor calidad y con mayor frecuencia.</p>
+      <p>ASOS continúa prosperando y mejorandO. Nos sentimos orgullosos de la ayuda que brindamos mientras estuvimos allí. Creemos que la actitud y el deseo de crecimiento y transformación de ASOS se alinearon bien con la experiencia, el entrenamiento y el apoyo de Codurance, lo que resultó muy enriquecedor para los equipos implicados.</p>
   Tesco-forecasting:
     link-text: Case Study at Tesco forecasting
     long_description: Nuestros Software Craftspeople ayudaron a Tesco a aumentar la calidad de su código y hacer entregas de valor con mayor frecuencia a través de Continuous Integration y Continuous Delivery.
@@ -636,11 +636,11 @@ projects:
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
     short_description: El enfoque Software Craftsmanship ayudó a Tesco a aumentar en gran medida la precisión del pronóstico de su cadena de suministro.
     subtitle: <p>Tesco quería mejorar su capacidad para ejecutar promociones y descuentos en tiendas actualizando legacy mainframe application. Software craftsmanship fue vista como una forma ideal de sentar las bases para construir una nueva solución.</p>
-    client_description: Tesco es una multinacional con ingresos de más de £ 54 mil millones y con cerca de 7,000 tiendas en todo el mundo. Tesco se ha establecido como el quinto minorista más grande a nivel mundial y como el líder en el sector der supermercados en el Reino Unido.
+    client_description: Tesco es una multinacional con ingresos de más de £ 54 mil millones y con cerca de 7,000 tiendas en todo el mundo. Tesco se ha establecido como el quinto minorista más grande a nivel mundial y como el líder en el sector de supermercados en el Reino Unido.
     the_challenge: <p>La división de la cadena de suministro de Tesco pronosticará la demanda de productos utilizando una legacy mainframe application. Se realizaron cambios en los pronósticos utilizando por ejemplo hojas de cálculo, lo que estaba teniendo un impacto negativo en su capacidad para rastrear irregularidades u oportunidades en sus almacenes. Sin mejoras en la aplicación existente, el negocio se vio limitado en su capacidad de ejecutar campañas con descuento y ofertas especiales para sus clientes de la tienda.</p>
-                   <p>Tesco quería construir una nueva API que ayudara a resolver este problema y elevar la calidad del código dentro del equipo de desarrollo existente. Fuimos invitados a trabajar en este proyecto basado en nuestro trabajo previo en otros proyectos en Tesco.</p>
+      <p>Tesco quería construir una nueva API que ayudará a resolver este problema y elevar la calidad del código dentro del equipo de desarrollo existente. Fuimos invitados a trabajar en este proyecto basado en nuestro trabajo previo en otros proyectos en Tesco.</p>
     our_sc_approach: <p>Con nuestros Software Craftsmen liderando su equipo existente, creamos la nueva API desde cero. Trabajando conjuntamente con el equipo de desarrollo de Tesco creamos una aplicación web que ayudaría a los planificadores de compras a pedir a los proveedores la cantidad correcta de productos. La aplicación web se conectó a la base de datos heredada a través de la nueva API personalizada.</p>
-                     <p>Configuramos un pipeline e infraestructura de Integración continua / Entrega continua (CI / CD) para ejecutar la aplicación en producción. Trabajar a diario con el equipo nos permitió compartir conocimiento para poder capacitar a sus desarrolladores en técnicas de Extream Programing, como Test Driven Development (TDD) y Refactoring. También apoyamos al equipo asociado en Bangalore para que pudieran reestructurar sus pruebas y establecer un mejor flujo de trabajo de Git.</p>
+      <p>Configuramos un pipeline e infraestructura de Integración continua / Entrega continua (CI / CD) para ejecutar la aplicación en producción. Trabajar a diario con el equipo nos permitió compartir conocimiento para poder capacitar a sus desarrolladores en técnicas de Extrem Programing, como Test Driven Development (TDD) y Refactoring. También apoyamos al equipo asociado en Bangalore para que pudieran reestructurar sus pruebas y establecer un mejor flujo de trabajo de Git.</p>
     outcome: <p>Creamos una solución sólida y sostenible que ha permitido a Tesco mejorar la precisión de sus pronósticos. Tuvimos un impacto positivo en el desarrollo técnico y profesional del equipo.</p>
   Tesco-scheduling:
     link-text: Scheduling Project
@@ -649,16 +649,16 @@ projects:
     keywords: Continuous Delivery, Continuous Integration, DevOps, Code Quality, Quality of Code, TDD, Extreme Programming, Test Driven Development, Refactoring, API
     short_description: Codurance ayudó a iniciar rápidamente el nuevo sistema de programación en Tesco.
     subtitle: <p>Tesco quería mejorar su capacidad para ejecutar promociones y descuentos en tiendas actualizando su legacy mainframe application. Software craftsmanship ha sido la forma ideal de sentar las bases para construir una nueva solución.</p>
-    client_description: Tesco es una multinacional con ingresos de más de £ 54 mil millones y con cerca de 7,000 tiendas en todo el mundo. Tesco se ha establecido como el quinto minorista más grande a nivel mundial y como el líder en el sector der supermercados en el Reino Unido.
+    client_description: Tesco es una multinacional con ingresos de más de £ 54 mil millones y con cerca de 7,000 tiendas en todo el mundo. Tesco se ha establecido como el quinto minorista más grande a nivel mundial y como el líder en el sector de supermercados en el Reino Unido.
     the_challenge: <p>La división de la cadena de suministro de Tesco pronosticará la demanda de productos utilizando una legacy mainframe application. Se realizaron cambios en los pronósticos utilizando por ejemplo hojas de cálculo, lo que estaba teniendo un impacto negativo en su capacidad para rastrear irregularidades u oportunidades en sus almacenes. Sin mejoras en la aplicación existente, el negocio se vio limitado en su capacidad de ejecutar campañas con descuento y ofertas especiales para sus clientes de la tienda.</p>
-                   <p>La aplicación de programación obsoleta de Tesco para las entregas tenía límites en la cantidad de entregas y las funciones disponibles. Para optimizar la cantidad de camionetas necesarias, reducir costes y simplificar el mantenimiento, la empresa necesitaba una nueva aplicación con una solución algorítmica específicamente diseñada para sus necesidades. Esto permitiría a la empresa conservar la capacidad de realizar cambios futuros en las funciones y optimizar los calendarios de las entregas.</p>
+      <p>La aplicación de programación obsoleta de Tesco para las entregas tenía límites en la cantidad de entregas y las funciones disponibles. Para optimizar la cantidad de camionetas necesarias, reducir costes y simplificar el mantenimiento, la empresa necesitaba una nueva aplicación con una solución algorítmica específicamente diseñada para sus necesidades. Esto permitiría a la empresa conservar la capacidad de realizar cambios futuros en las funciones y optimizar los calendarios de las entregas.</p>
     our_sc_approach: <p>Comenzamos creando prototipos de un nuevo algoritmo para programar la entrega de pedidos y reemplazar gradualmente el sistema existente por más ubicaciones. Nos integramos con el sitio web orientado al cliente por un lado y el algoritmo de terceros por el otro, con nuestro trabajo y energías puestos entre desarrollar rápidamente características y mejorar las habilidades de los desarrolladores de los equipos implicados.</p>
-                     <p>Trabajamos en colaboración entre un proveedor externo y un equipo asociado en Bangalore para identificar y ayudar a resolver varias integraciones de bases de datos desafiantes. Además, pasamos unas semanas en India para brindar capacitación sobre diseño de software y desarrollo basado en pruebas.</p>
-                     <p>Cuando nos unimos al proyecto, se produjo una gran cantidad de deuda técnica en un corto período de tiempo. Realizamos una revisión del código y ayudamos al resto del equipo de desarrollo a reestructurar el código, incluida la introducción de una gama completa de pruebas.</p>
+      <p>Trabajamos en colaboración entre un proveedor externo y un equipo asociado en Bangalore para identificar y ayudar a resolver varias integraciones de bases de datos desafiantes. Además, pasamos unas semanas en India para brindar capacitación sobre diseño de software y desarrollo basado en pruebas.</p>
+      <p>Cuando nos unimos al proyecto, se produjo una gran cantidad de deuda técnica en un corto período de tiempo. Realizamos una revisión del código y ayudamos al resto del equipo de desarrollo a reestructurar el código, incluida la introducción de una gama completa de pruebas.</p>
     outcome: <p>Entregamos una solución que se probó inicialmente en una ubicación, antes de implementarse por completo y reemplazar el sistema existente, tienda por tienda. Nuestro equipo proporcionó las bases para que el equipo de desarrollo de Tesco se mueva más rápido en el despliegue continuo de la solución a más ubicaciones y mediante la implementación continua e incremental de nuevas características.</p>
   Coniq:
     link-text: Case Study at Coniq
-    long_description: Ayudamos a Coniq a mejorar la entegra de sus MVP a través de la adopción de procesos ágiles y buenas prácticas en el ámbito técnico.
+    long_description: Ayudamos a Coniq a mejorar la entrega de sus MVP a través de la adopción de procesos ágiles y buenas prácticas en el ámbito técnico.
     client_description: Coniq ofrece un software de marketing de fidelización líder en la industria que permite a sus clientes conocer mejor el comportamiento de los clientes.
     focused: Software Craftsmanship
     keywords: Product Owner, Product Backlog, Scrum, Agile, MVPs, Rally
@@ -686,7 +686,7 @@ projects:
                      <p>El trabajo se realizó en nuestras oficinas, con un canal regular de comunicación con el Product Owner. Esto fue particularmente efectivo al proporcionar comentarios en tiempo real sobre las opciones de diseño para el front-end y para las pruebas de los usuarios. Las funciones se enviaron directamente a un entorno de test mediante la integración continua, con demos y retrospectivas regulares en las oficinas de AWS en Londres.</p>
                      <p>Parte del conjunto de características incluía una herramienta de informes para proporcionar a la empresa informes detallados sobre el evento. Dedicamos tiempo a ayudar a capacitar al equipo de marketing de AWS sobre cómo usar el sistema.</p>
     outcome: <p>Dados los flujos de feedback ajustados y las interacciones en tiempo real con el Product Owner, pudimos entregar los MVP para el proyecto y varias features adicionales antes del deadline establecido. El equipo pudo responder rápidamente a la demanda a través del análisis de datos en tiempo real (por ejemplo, programación de sesiones, rotación de personal) e informar a las partes interesadas.</p>
-             <p>AWS invitó a Codurance a agregar funciones adicionales al sistema para poder utilizarlo en el futuro. Nuestro equipo aportó participón con una talk sobre Software Craftsmanship en la AWS Summit London 2016.</p>
+             <p>AWS invitó a Codurance a agregar funciones adicionales al sistema para poder utilizarlo en el futuro. Nuestro equipo aportó participó con una talk sobre Software Craftsmanship en la AWS Summit London 2016.</p>
   MANDG:
     link-text: Case Study at M&G
     short_description: Ofrecimos experiencia y conocimiento en la migración de Azure.
@@ -694,7 +694,7 @@ projects:
     client_description: M&G es una de las casas de inversión más grandes y establecidas del Reino Unido, con más de 80 años de experiencia en gestión de activos. M&G gestiona £ 285.8 mil millones de activos de clientes (a junio de 2018) en inversiones que incluyen bonos, acciones, infraestructura, propiedad y cash en 23 territorios.
     the_challenge: <p>M&G quería que su nuevo proyecto de sistema de integración se construyera sobre la plataforma Microsoft Azure Cloud. Necesitaba experiencia y asesoría externa para ayudar a sus equipos de arquitectura y desarrollo.</p>
     our_sc_approach: <p>Proporcionamos un equipo de expertos en software con experiencia en tecnologías front-end de Azure, .Net, Node y Web. Junto con los otros equipos y arquitectos de M&G, formaron el núcleo de un equipo de delivery que construyó un sistema de integración escalable, distribuido y de alta disponibilidad, encargado de propagar, consultar y reportar las transacciones de inversión en un formato estandarizado. Las tecnologías incluyeron Google Apigee, Azure Data Lake, Data Lake Analytics, Data Factory, Databricks, Cosmos DB y Functions.</p>
-    outcome: <p>Ayudamos a M&G a inculcar una cultura de aprendizaje dentro de sus equipos, ejecutando sesiones de couching regulares para mejorar su Test Driven Development y otras habilidades.</p>
+    outcome: <p>Ayudamos a M&G a inculcar una cultura de aprendizaje dentro de sus equipos, ejecutando sesiones de coaching regulares para mejorar su Test Driven Development y otras habilidades.</p>
   MANDS:
     link-text: Case study at M&S
     short_description: Hemos ayudado en la transformación de sus procesos para afrontar sus nuevos proyectos
@@ -703,5 +703,5 @@ projects:
     the_challenge: <p>El departamento de ingeniería de Marks and Spencers estaba en un proceso de cambio cultural, con personas reasignadas a nuevos equipos y que habían participado en varios proyectos digitales de gran envergadura.</p>
     our_sc_approach: Por nuestras conexiones con la comunidad y la pasión por el Software Craftsmanship, Codurance fue considerado como un socio que ayudaría a mejorar la calidad del código y a establecer un nuevo equipo con este departamento a través de tutoría y la asesoría.
     outcome: <p>A través del trabajo minucioso de los mentores pudimos aumentar el conocimiento y las prácticas técnicas en nuestros respectivos equipos. También establecimos prácticas y convenciones que otros equipos pudieron adoptar y contribuir.</p>
-             <p>Debido a la distacia respecto a la oficina de Londres y el cambio en las prácticas laborales, uno de los mayores desafíos fue preparar al departamento para trabajar en remoto.</p>
+             <p>Debido a la distancia respecto a la oficina de Londres y el cambio en las prácticas laborales, uno de los mayores desafíos fue preparar al departamento para trabajar en remoto.</p>
              <p>Con ese fin, pasamos mucho tiempo trabajando con los equipos para ayudarlos a establecer las herramientas y protocolos adecuados para que el trabajo remoto sea lo más efectivo posible.</p>
