@@ -14,7 +14,16 @@ image:
 tags:
 - architecture
 ---
-Intro to go here
+On the internet there are a few different perspectives on Fear Driven Development (FDD). The
+perspective I want to focus on here is below:
+
+> The impact of fear on decision making whilst one is making software changes to a system.
+
+Close your eyes and imagine someone looking at some code on a computer screen, they need to make
+a change to that code. They then do something you would not expect, and you want to ask them why
+they chose to make that decision (you can't, because they are in your imagination). This decision
+was not driven by rational thinking, it was driven by something far worse. That is where we will
+focus our attention in this article. The code. 
 
 ## Where the fear starts
 Links I want to reference in this section:
