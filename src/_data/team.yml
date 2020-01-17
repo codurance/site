@@ -379,17 +379,6 @@
   email: solange@codurance.com
   office: london
 
-- id: danbunea
-  name: Dan Bunea
-  image: /assets/custom/img/team/dan_bunea.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>For the last 17 years Dan has enjoyed being a software developer / system architect / team lead / technical manager. Always pursuing simplicity (as the opposite of complexity) and not easiness, always looking for fast feedback. Pragmatic and on the hunt for efficacy. Always eager to learn and always trying to discover new and better ways to make software.</p>
-    <p>Outside of Codurance, Dan loves to paint (mainly large colourful abstract paintings), travel, read, watch FC Barcelona, enjoy life in general.</p>
-  twitter: danbunea
-  github: DanBunea
-  office: barcelona
-
 - id: chris_eyre
   name: Christopher Eyre
   image: /assets/custom/img/team/chris_eyre.jpg
@@ -980,7 +969,7 @@
   linkedin: nicholemellekas
   email: nichole.mellekas@codurance.com
   office: london
-  
+
 - id: emily_reboul
   name: Emily Reboul
   image: /assets/custom/img/team/emily_reboul.jpg
