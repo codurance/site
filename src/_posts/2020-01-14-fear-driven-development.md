@@ -16,6 +16,11 @@ tags:
 ---
 Intro to go here
 
+## Where the fear starts
+Links I want to reference in this section:
+* https://wiki.c2.com/?FearDrivenDevelopment
+* https://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx
+
 ## Append-only programming
 
 ## Copy and paste programming
