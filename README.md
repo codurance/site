@@ -3,6 +3,13 @@
 Trello board: [https://trello.com/b/Z6YDy6bw/2018-website-project](https://trello.com/b/Z6YDy6bw/2018-website-project)
 This link is old please visit if you aim for past documentation: [https://trello.com/b/0wWmhd6A/improving-our-website](https://trello.com/b/0wWmhd6A/improving-our-website)
 
+## Run the tests
+
+- Build the docker-compose-override site image with...
+  - `docker-compose -f docker-compose.override.yml build`
+- You only need to do that once. Now you can run the tests quickly & easily with...
+  - `docker-compose -f docker-compose.override.yml run site bundle exec rspec`
+
 ## Setup the ~development~ writing environment
 
 You can serve the site through [docker](#building-if-you-like-docker) or [natively](#building-if-you-like-ruby) on your machine.
