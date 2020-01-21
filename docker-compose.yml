@@ -5,7 +5,7 @@ services:
   site:
     image: codurance/site:latest
     ports:
-      - "80:80"
+      - "4000:4000"
     networks:
       network:
         aliases:
