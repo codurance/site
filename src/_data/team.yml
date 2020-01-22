@@ -810,18 +810,6 @@
   email: mark.gray@codurance.com
   office: london
 
-- id: etienne_mustow
-  name: Etienne Mustow
-  image: /assets/custom/img/team/etienne_mustow.jpg
-  role: Apprentice
-  fullDescription:
-    <p>Etienne’s love of tech comes from an early age. He used to learn various subjects by playing educational computer games his mum would buy him for a windows PC. These games sparked his interest in logical problems and solutions, leading to his inquisitive nature.</p>
-    <p>In 2017, Etienne decided to make the sink-or-swim decision to drop out of his Biomedical Sciences undergraduate degree to pursue software development, gaining a place on the intensive course at Makers Academy. Since then, Etienne has worked in the financial and marketing tech sectors and chooses Ruby as his go-to language.</p>
-    <p>He was drawn to Codurance as he realised the importance of knowing fundamental principles, applying them and perfecting craft when writing code as opposed to simply writing whatever works first-time. Etienne’s motivated by seeing his impact, technological or otherwise, improve project or business decisions.</p>
-    <p>Etienne can be found on local basketball courts, watching top quality anime, reading manga, singing or dancing to afrobeats when not at his computer.</p>
-  email: etienne.mustow@codurance.com
-  office: london
-
 - id: arnaud_claudel
   name: Arnaud Claudel
   image: /assets/custom/img/team/arnaud_claudel.jpg
