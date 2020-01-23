@@ -43,14 +43,14 @@ $white-colour: #fff;
 // }
 
 .btn-more {
-    border-radius: 44px!important;
+    //border-radius: 44px!important;
     font-size: 15px;
     margin: 10px 0;
     padding: 10px 30px;
     background-color: transparent;
     color: white!important;
     font-weight: 700!important;
-    background: rgb(239,119,38)!important;
+    background: #EF7726!important;
     border: none!important;
     background-color:transparent!important;
     overflow: hidden!important;
@@ -67,7 +67,8 @@ $white-colour: #fff;
         margin-left: -150px;
         margin-top: -150px;
         z-index: 0;
-        background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%) !important;
+        //background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%) !important;
+        background: $orange-colour;
         transition: all 0.3s ease;
         transform-origin: center;
     }

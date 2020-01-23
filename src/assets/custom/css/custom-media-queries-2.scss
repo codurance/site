@@ -36,13 +36,20 @@
     .feature-panel { /* 0 0 1 0 */
         & .jumbotron { /* 0 0 2 0 */
             & h1 { /* 0 0 2 1 */
-                line-height: 40px;
+                font-size: 2.35em;
             }
 
             & h3 { /* 0 0 2 1 */
-                font-size: 14px;
-                line-height: 17px;
+                font-size: 1.5em;
             }
+        }
+    }
+
+    .title-header {  /* 0 0 1 0 */
+
+        & h1,    /* 0 0 1 1 */
+        & h2 {   /* 0 0 1 1 */
+            font-size: 1.75em;
         }
     }
 
@@ -68,6 +75,10 @@
 
     .bg-slider {
         display: block;
+    }
+
+    .col-md-2--2up-mobile {
+        width: 50%;
     }
 }
 

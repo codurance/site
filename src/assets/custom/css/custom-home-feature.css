@@ -14,10 +14,9 @@
     font-weight: 700;
     font-style: normal;
     color: white;
-    line-height: 70px;
     font-size: 4em;
 }
-  
+
 .feature-panel .jumbotron {
     background: transparent;
     color: white;
@@ -85,21 +84,21 @@
 }
   
 .bg-slide1 {
-    background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-code.jpg")no-repeat center;
+    background: url("https://codurance.com/assets/custom/img/home/home-hero-code.jpg")no-repeat center;
     background-size: cover;
     animation:slide-fade 8s infinite;
     -webkit-animation:slide-fade 8s infinite;
 }
 
 .bg-slide2 {
-    background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-group.jpg")no-repeat center;
+    background: url("https://codurance.com/assets/custom/img/home/home-hero-group.jpg")no-repeat center;
     background-size: cover;
     animation:slide-fade2 8s infinite;
     -webkit-animation:slide-fade2 8s infinite;
 }
   
 .bg-slide3 {
-    background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-sandro.jpg")no-repeat center;
+    background: url("https://codurance.com/assets/custom/img/home/home-hero-sandro.jpg")no-repeat center;
     background-size: cover;
     animation:slide-fade3 8s infinite;
     -webkit-animation:slide-fade3 8s infinite;
