@@ -11,6 +11,7 @@
    Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
    Specificity ranges from lowest to highest (more generic to more specific)
  */
+
 @import 'custom-colors';
 
 $orange-colour: #e67e22;
@@ -98,23 +99,9 @@ h1, h2, h3, h4, h5 {
 }
 
 
-// Background colour overides
 
-.g-bg-green {
-    background-color: $codurance-green!important;
-}
-
-.g-bg-orange {
-    background-color: $codurance-orange!important;
-}
-
-.g-bg-gradient-orange-red {
-    background: linear-gradient(0deg, rgba(239,70,38,1) 0%, rgba(214,13,71,1) 100%);
-    color: #FFFFFF!important;
-}
-
-
-// Pagination - hover / active color overides 
+/* Pagination - hover / active color overides 
+   -------------------------------------- */
 
 .u-pagination-v1-4:hover {
     color: #555!important;
@@ -127,7 +114,9 @@ h1, h2, h3, h4, h5 {
 }
 
 
-// Unify template overides
+
+/* Unify template overides 
+   -------------------------------------- */
 
 a {
     color: $codurance-orange;
@@ -151,33 +140,17 @@ a {
     margin: auto;
 }
 
-
-// Backgrounds 
-
-.bg-gradient-off-white {
-    background: rgb(255,255,255);
-    background: linear-gradient(177deg, rgba(255,255,255,1) 6%, rgba(0,0,0,0.039653361344537785) 100%);
-    position: relative;
+.icon-md {
+    width: auto;
+    height: 115px;
+    padding-bottom: 45px;
+    background-color: transparent;
 }
 
 
-.bg-gradient-blush {
-    background: rgb(214,13,71);
-    background: linear-gradient(45deg, rgba(214,13,71,1) 0%, rgba(239,119,38,1) 100%);
-    position: relative;
 
-    &:before {
-        content: '';
-        background: rgb(255,255,255);
-        background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-        width: 100%;
-        height: 80%;
-        position: absolute;
-        bottom: 0;
-    }
-}
-
-// Hero icons
+/* icons
+   -------------------------------------- */
 
 .icon-large {
     width: 200px;
@@ -186,7 +159,9 @@ a {
 }
 
 
-// Buttons
+
+/* Buttons
+   -------------------------------------- */
 
 .u-btn-outline {
     background-color: transparent;
@@ -202,97 +177,12 @@ a {
     }
 }
 
-// Typography
+
+
+/* Typography
+   -------------------------------------- */
 
 .nav-link {
     color: #444444;
     font-size: 1.1em;
-} 
-
-.feature-panel h1 {
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    line-height: 70px;
-    font-size: 4em;
-}
-
-.jumbotron h3 {
-    color: white;
-    padding: 10px 0 20px 0;
-}
-
-.block-cta {
-  position: absolute;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #444444;
-  bottom: 25px;
-  font-size: 0.8em;
-}
-
-.block-cta:after {
-    content: '';
-    bottom: -2px;
-    left: 0;
-    height: 2px;
-    width: 25px;
-    margin-left: 0;
-    position: absolute;
-    background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.box-shadow:hover .block-cta:after {
-    width: 100%;
-    transition: all 0.7s ease;
-}
-
-.u-text-icon {
-    font-size: 1.25em;
-}
-
-.btn-more {
-    border-radius: 44px!important;
-    font-size: 20px;
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: transparent;
-    color: white!important;
-    font-weight: 700!important;
-    background: rgb(239,119,38)!important;
-    border: none!important;
-    background-color:transparent!important;
-    overflow: hidden!important;
-    position: relative;
-
-    &:after {
-        content: '';
-        height: 300px;
-        width: 300px;
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -150px;
-        margin-top: -150px;
-        z-index: 0;
-        background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%) !important;
-        transition: all 0.3s ease;
-        transform-origin: center;
-    }
-
-    span {
-        z-index: 1;
-        position: relative;
-    }
-}
-
-.btn-more:hover {
-    &:after {
-        transform: rotate(180deg);
-        transition: all 0.7s ease;
-    }
 }

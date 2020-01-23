@@ -1,7 +1,9 @@
-<a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg {{ include.css-class }} btn-codurance-color" href="{{ include.href }}">
-{% if include.text %}    
-    {% t include.text %}
-{% else %}
-    {{ include.translated_text }}
-{% endif %}
+<a class="{{ include.css-class }} btn btn-more" href="{{ include.href }}">
+    <span>
+        {% if include.text %}    
+            {% t include.text %}
+        {% else %}
+            {{ include.translated_text }}
+        {% endif %}
+    </span>
 </a>

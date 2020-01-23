@@ -11,17 +11,19 @@
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
-/* Section colours */
+/* Section colours
+   -------------------------------------- */
 @import 'custom-colors';
 
 
 .gray-section {
     background: #fafafa;
-    border-top: solid 1px #eee;
-    border-bottom: solid 1px #eee;
+    // border-top: solid 1px #eee;
+    // border-bottom: solid 1px #eee;
 }
 
-/* Foreground colours */
+/* Foreground colours
+   -------------------------------------- */
 
 .white,         /* 0 0 1 0 */
 p.white,        /* 0 0 1 1 */
@@ -29,7 +31,8 @@ ul.white li {   /* 0 0 1 2 */
     color: white;
 }
 
-/* Background colours */
+/* Background colours
+   -------------------------------------- */
 
 .bg-dark-red {   /* 0 0 1 0 */
     background-color: #cc0000;
@@ -55,6 +58,28 @@ ul.white li {   /* 0 0 1 2 */
     background-color: #ffcc33;
 }
 
+.bg-green {
+    background-color: $codurance-green!important;
+}
+
 .bg-white {   /* 0 0 1 0 */
     background-color: #fff;
+}
+
+.bg-light-gray {
+    background-color: #EAEDED;
+}
+
+/* Background gradients
+   -------------------------------------- */
+
+.bg-gradient-orange-red {
+    background: linear-gradient(0deg, rgba(239,70,38,1) 0%, rgba(214,13,71,1) 100%);
+    color: #FFFFFF!important;
+}
+
+.bg-gradient-midnight-blue {
+    background: rgb(20,13,66);
+    background: linear-gradient(45deg, rgba(10,11,60,1) 0%, rgba(15,17,85,1) 100%);
+    position: relative;
 }

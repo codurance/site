@@ -12,147 +12,28 @@ title: CSS
    Specificity ranges from lowest to highest (more generic to more specific)
 */
 
-/* Home Page */
 @import 'custom-colors';
+$orange-colour: #e67e22;
+
+/* Homepage
+   -------------------------------------- */
+
+/*  General */
 
 html {
   scroll-behavior: smooth;
 }
 
-$orange-colour: #e67e22;
-
 .header-logo {
   width: 224px;
 }
-
-.feature-panel { /* 0 0 1 0 */
-  background: rgba(0, 0, 0, 0.5);
-  height: 800px;
-  background-size: cover;
-  width: auto;
-  z-index: 1;
-  position: relative;
-  background-image: url(../img/bg-swoosh-wh.png);
-  background-position: 50% 101%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  & h1 { /* 0 0 1 1 */
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    line-height: 70px;
-  }
-
-  & .jumbotron { /* 0 0 2 0 */
-    background: transparent;
-    color: white;
-    text-align: center;
-    margin: auto;
-    width: 80%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    & h3 { /* 0 0 2 1 */
-      color: white;
-    }
-  }
-}
-
-/*  Home Page - Background Video */
-
-.video-bg-wrapper {
-  position: absolute;
-  height: 800px;
-  width: 100%;
-  overflow: hidden;
-  top: 93px;
-}
-
-.video-bg {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  width: auto;
-  z-index: 0;
-  max-width: 130% !important;
-}
-
-/*  Home Page - Fallback Video Slider */
-
-.bg-slider {
-  position: absolute;
-  height: 570px;
-  width: 100%;
-  top: 74px;
-  overflow: hidden;
-  display: none;
-}
-
-.bg-slide1,
-.bg-slide2,
-.bg-slide3 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.bg-slide1 {
-  background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-code.jpg")no-repeat center;
-  background-size: cover;
-  animation:slide-fade 8s infinite;
-  -webkit-animation:slide-fade 8s infinite;
-}
-
-.bg-slide2 {
-  background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-group.jpg")no-repeat center;
-  background-size: cover;
-  animation:slide-fade2 8s infinite;
-  -webkit-animation:slide-fade2 8s infinite;
-}
-
-.bg-slide3 {
-  background: url("{{ site.baseurl }}/assets/custom/img/home/home-hero-sandro.jpg")no-repeat center;
-  background-size: cover;
-  animation:slide-fade3 8s infinite;
-  -webkit-animation:slide-fade3 8s infinite;
-}
-
-@keyframes slide-fade {
-  0%      {opacity: 1}
-  33.333% {opacity: 0}
-  66.666% {opacity: 0}
-  100%    {opacity: 1}
-}
-
-@keyframes slide-fade2 {
-  0%      {opacity: 0}
-  33.333% {opacity: 1}
-  66.666% {opacity: 0}
-  100%    {opacity: 0}
-}
-
-@keyframes slide-fade3 {
-  0%      {opacity: 0}
-  33.333% {opacity: 0}
-  66.666% {opacity: 1}
-  100%    {opacity: 0}
-}
-
-/*  Home Page - Heading Titles */
 
 .section {   /* 0 0 1 0 */
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+/*  Typography */
 
 .title-header {  /* 0 0 1 0 */
   z-index: 1;
@@ -170,24 +51,41 @@ $orange-colour: #e67e22;
     font-weight: 800;
     font-style: normal;
     text-transform: capitalize;
-
-    // &:after {   /* 0 0 2 1 */
-    //   bottom: 0;
-    //   left: 50%;
-    //   height: 2px;
-    //   width: 70px;
-    //   content: " ";
-    //   margin-left: -35px;
-    //   position: absolute;
-    //   background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
-    //   border-radius: 2px;
-    // }
   }
 
   & p {   /* 0 0 1 1 */
     font-size: 17px;
     font-weight: 200;
   }
+}
+
+/* CTA blocks  */
+
+.block-cta {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #444444;
+  bottom: 25px;
+  font-size: 0.8em;
+}
+
+.block-cta:after {
+  content: '';
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 25px;
+  margin-left: 0;
+  position: absolute;
+  background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.box-shadow:hover .block-cta:after {
+  width: 100%;
+  transition: all 0.7s ease;
 }
 
 .box-shadow {
@@ -201,11 +99,9 @@ $orange-colour: #e67e22;
   }
 }
 
-.display-flex {
-  display: flex;
-}
 
-/* Our Story Page */
+/* Our story page
+   -------------------------------------- */
 
 .our-story-map {
     height: 240px;
@@ -216,7 +112,9 @@ $orange-colour: #e67e22;
     padding-left: 50px;
 }
 
-/* Blog */
+
+/* Blog page
+   -------------------------------------- */
 
 .blog {
     &-thumb {   /* 0 0 1 0 */
@@ -293,6 +191,7 @@ $orange-colour: #e67e22;
   }
 }
 
+
 /* Author */
 
 #author-img {   /* 0 0 1 0 */
@@ -312,14 +211,20 @@ $orange-colour: #e67e22;
   width: 450px;
 }
 
-/* Services */
+
+
+/* Services page
+   -------------------------------------- */
 
 .divider {   /* 0 0 1 0 */
   margin-left: 25%;
   margin-right: 25%;
 }
 
-/* Apprenticeship */
+
+
+/* Apprenticeship page
+   -------------------------------------- */
 
 .howworks-boxes-container {
   padding-top: 1.5rem;
@@ -351,7 +256,6 @@ $orange-colour: #e67e22;
     line-height: 20px;
   }
 }
-
 
 .testimonials-carousel-container{
   margin: 0 auto;
@@ -449,7 +353,11 @@ $orange-colour: #e67e22;
 
 }
 
-/* Services HubSpot Contact Form */
+
+
+/* Services HubSpot Contact Form
+   -------------------------------------- */
+
 .hbspt-form, .hs-form-iframe {
   width: 85% !important;
   margin: auto;
@@ -469,7 +377,11 @@ $orange-colour: #e67e22;
   background-color: $codurance-green;
 }
 
-/* Services */
+
+
+/* Services
+   -------------------------------------- */
+
 .services {
 
   /* Hero */
@@ -662,12 +574,16 @@ $orange-colour: #e67e22;
   }
 }
 
+
+
 /* Consultancy */
 
 .introduction .service-header {   /* 0 0 2 0 */
   color: $orange-colour !important;
   font-size: 40px !important;
 }
+
+
 
 /* Training */
 
@@ -690,6 +606,8 @@ $orange-colour: #e67e22;
 #training-contact-form {
   box-shadow: none;
 }
+
+
 
 /* Skills and practices section */
 
@@ -717,6 +635,8 @@ i.no-border {   /* 0 0 1 1 */
 .news-v1 a {   /* 0 0 1 1 */
   color: $orange-colour;
 }
+
+
 
 /* Sponsoring section */
 
@@ -760,6 +680,8 @@ i.no-border {   /* 0 0 1 1 */
   }
 }
 
+
+
 /* Clients section */
 
 .client-links {   /* 0 0 1 0 */
@@ -772,6 +694,13 @@ i.no-border {   /* 0 0 1 1 */
     padding: 20px;
   }
 }
+
+/* Icons */
+
+.u-line-icon-pro {
+  stroke:white!important;
+}
+
 /* Partners */
 
 .img-center {   /* 0 0 1 0 */
@@ -952,6 +881,7 @@ i.no-border {   /* 0 0 1 1 */
   }
 }
 
+
 /*Quote v2
 ------------------------------------*/
 .quote-v2 {
@@ -1041,14 +971,14 @@ blockquote.no-left-border {
 }
 
 /* Events
-------------------------------------*/
+-------------------------------------------------*/
 #lssc_events h2 {
   color:#585f69;
 
 }
 
 /* Cookie Message
-----------------------------------*/
+-------------------------------------------------*/
 #cookie-message {
   position: fixed;
   bottom: 0;
@@ -1073,7 +1003,7 @@ blockquote.no-left-border {
 
 
 /* Override for hljs styles
-----------------------------------*/
+-------------------------------------------------*/
 .hljs {
   background-color: #f8f9fa
 }

@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+
 <!-- feature panel -->
 <div class="feature-panel">
   <div class="jumbotron">
 	  <h1>{% t index-banner.title %}</h1>
 	  <h3 class="h2">{% t index-banner.subtitle %}</h3>
-	  <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-light">
+	  <a href="{{ '/services' | prepend: site.baseurl }}" role="button" class="btn btn-more btn-more-large">
       <span>{% t index-banner.link_title %}</span>
     </a>
   </div>
@@ -27,13 +28,16 @@ layout: default
   <div class='bg-slide3'></div>
 </div>
 
+
+
 <!-- Activity panel -->
-<div class="section bg-gradient-off-white">
-  
+<div class="section">
   <div class="container">
+
     <div class="title-header">
       <h2 class="h3">{% t index-activity.title %}</h2>
     </div>
+    
     <div class="row blog-boxes margin-bottom-40 blog-boxes--shadow">
       {% assign podcast = site.podcasts | sort: 'date' | reverse %}
       {% include latest_highlights.html param=podcast %}
@@ -44,44 +48,53 @@ layout: default
       {% assign event = site.events | reverse %}
       {% include latest_highlights.html param=event %}
     </div>
-  </div>
+
+    <div class="text-center">
+      <a class="btn u-btn-outline g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25" href="{{ '/publications' | prepend: site.baseurl }}">
+        <span class="g-pos-rel g-top-2 g-font-weight-600">{% t index-activity.publications_link_title %}</span>
+      </a>
+    </div>
+
+  </div><!-- end container -->  
+</div><!-- end section -->
 
 
-  <div class="text-center">
-    <a class="btn u-btn-outline g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25" href="{{ '/publications' | prepend: site.baseurl }}">
-      <span class="g-pos-rel g-top-2 g-font-weight-600">{% t index-activity.publications_link_title %}</span>
-    </a>
-  </div>
+
+<!-- We advise, we coach, we deliver panel -->
+<div class="bg-gradient-midnight-blue g-color-white">
+  {% include_relative services/_includes/we_advise_coach_deliver.html %}
 </div>
 
-<!-- Services panel -->
-<!-- We advise, we coach, we deliver  -->
-{% include_relative services/_includes/we_advise_coach_deliver.html %}
 
-<!-- Clients & Partners-->
-<div class="section bg-gradient-off-white">
+<!-- Clients panel -->
+<div class="section">
   <div class="container">
 
     <div class="title-header">
       <h2 class="h3">{% t index-clients.title %}</h2>
     </div>
+
     <div class="row">
       {% for client in site.data.clients %}
-      <div class="col-md-2 text-center">
+      <div class="col-md-2 text-center u-pad-none">
         <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
       </div>
       {% endfor %}
     </div>
 
-  </div>
-</div>
+	</div><!-- end container -->
+</div><!-- end section -->
 
-<div class="section bg-gradient-off-white">
+
+
+<!-- Partner panel -->
+<div class="section gray-section">
     <div class="container">
 
     <div class="title-header">
       <h2>{% t index-partners.title %}</h2>
     </div>
+
     <div class="row">
       {% for partner in site.data.partners %}
       <div class="col-md-3 text-center">
@@ -90,184 +103,129 @@ layout: default
       {% endfor %}
     </div>
 
-  </div>
-</div>
-<!-- End Clients & Partners-->
+	</div><!-- end container -->
+</div><!-- end section -->
+
+
 
 <!-- skill and practices panel -->
-<div class="section bg-gradient-off-white">
+<div class="section bg-gradient-midnight-blue">
   <div class="container">
+
     <div class="title-header">
-		  <h2>{% t index-how_we_work.title %}</h2>
+		  <h2 class="g-color-white">{% t index-how_we_work.title %}</h2>
     </div>
+
     <div class="container mb-5 text-center">    
-      <p class="lead mb-o">{% t index-how_we_work.subtitle %}</p>   
+      <p class="lead mb-o g-color-white">{% t index-how_we_work.subtitle %}</p>   
     </div>
+
     <div class="row no-gutters g-mb-50">
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-heart u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value1_title %}</h3>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-paper-plane u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value2_title %}</h3>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-reload u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value3_title %}</h3>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-control-forward u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value4_title %}</h3>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-settings u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value5_title %}</h3>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
-              <span class="u-icon-v3 u-shadow-v24 g-bg-white g-color-primary rounded-circle mb-4">
-                  <i class="icon-screen-desktop u-line-icon-pro"></i>
-                </span>
-              <h3 class="h5 g-color-black g-font-weight-600 mb-3">{% t index-how_we_work.value6_title %}</h3>
-            </div>
-          </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-software-craftsmanship.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value1_title %}</h3>
         </div>
-	</div>
-</div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-agile.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value2_title %}</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-continuous-delivery.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value3_title %}</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-xp.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value4_title %}</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-devops.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value5_title %}</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-technology.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-black g-font-weight-600 mb-3 g-color-white">{% t index-how_we_work.value6_title %}</h3>
+        </div>
+      </div>
+
+    </div><!-- end row -->
+
+	</div><!-- end container -->
+</div><!-- end section -->
+
+
 
 <!-- values panel-->
+<div class="section">
+  <div class="container">
 
+      <div class="title-header">
+        <h2>{% t index-software_craftsmanship.title %}</h2>
+      </div>
+
+      <div class="container mb-5 text-center g-pb-20">
+        <p class="lead mb-o">{% t index-software_craftsmanship.subtitle  %}</p>
+      </div>
+      
+      <div class="row">
         
+        <div class="col-sm-6 col-lg-4 g-mb-30 u-display-flex">
+          <article class="box-shadow">
+            <a class="u-link-v5 g-color-main" href="https://www.goodreads.com/book show/23215733-the-software-craftsman">  
+              <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" alt="The Craftsman Book Cover">          
+              <div class="g-pa-30-30-20">
+                <h3 class="h4 g-font-weight-800 g-mb-15">{% t index-software_craftsmanship-book.title %}</h3>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="shortcode-html">
-            </div>
-
-            <div class="section">
-              <div class="container">
-                <div class="title-header">
-                  <h2>{% t index-software_craftsmanship.title %}</h2>
-                </div>
-                <div class="container mb-5 text-center g-pb-20">
-                  <p class="lead mb-o">{% t index-software_craftsmanship.subtitle  %}</p>
-                </div>
-                
-
-
-                <div class="row">
-
-
-                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
-                    <!-- Article -->
-                    <article class="box-shadow">
-                    <a class="u-link-v5 g-color-main" href="https://www.goodreads.com/book show/23215733-the-software-craftsman">
-                    
-                      <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/the-software-craftsman-book.jpg' | prepend: site.baseurl }}" alt="The Craftsman Book Cover">
-
-                      <div class="g-pa-30-30-20">
-
-                        <h3 class="h4 g-font-weight-800 g-mb-15">
-                          {% t index-software_craftsmanship-book.title %}
-                        </h3>
-
-                       <p class="g-pb-30">{% t index-software_craftsmanship-book.subtitle%}</p>
-
-                        <span class="block-cta">
-                          {% t index-software_craftsmanship-book.link_title  %}
-                        </span>
-
-                      </div>
-                      </a>
-                    </article>
-                    
-                    <!-- End Article -->
-                  </div>
-
-
-                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
-                    <!-- Article -->               
-                      <article class="box-shadow">
-                        <a class="u-link-v5 g-color-main" href="http://socratesuk.org/">
-                          <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/socrates-uk.jpg' | prepend: site.baseurl }}" alt="Socrates Conference Logo">
-
-                          <div class="g-pa-30-30-20">
-
-                            <h3 class="h4 g-font-weight-800 g-mb-15">
-                              {% t index-software_craftsmanship-socrates.title %}
-                            </h3>
-
-                            <p class="g-pb-30">{% t index-software_craftsmanship-socrates.subtitle %}</p>
-
-                            <span class="block-cta">
-                              {% t index-software_craftsmanship-socrates.link_title %}
-                            </span>
-
-                          </div>
-                        </a>
-                      </article>                
-                    <!-- End Article -->
-                  </div>
-
-                  
-                  <div class="col-sm-6 col-lg-4 g-mb-30 display-flex">
-                    <!-- Article -->
-                    <article class="box-shadow">
-                      <a class="u-link-v5 g-color-main" href="https://www.meetup.com/london-software-craftsmanship">                 
-                        <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/lscc.jpg' | prepend: site.baseurl }}" alt="LSCC Logo">
-
-                        <div class="g-pa-30-30-20">
-
-                          <h3 class="h4 g-font-weight-800 g-mb-15">
-                            {% t index-software_craftsmanship-lscc.title %}
-                          </h3>
-
-                          <p class="g-pb-30">{% t index-software_craftsmanship-lscc.subtitle %}</p>
-
-                          <span class="block-cta">
-                            {% t index-software_craftsmanship-lscc.link_title  %}
-                          </span>
-
-                        </div>
-
-                      </a>
-                    </article>
-                    <!-- End Article -->
-
-
-                  </div>
-                </div>
+                <p class="g-pb-30">{% t index-software_craftsmanship-book.subtitle%}</p>
+                <span class="block-cta">{% t index-software_craftsmanship-book.link_title  %}</span>
               </div>
-            </div>
+            </a>
+          </article>       
+        </div><!-- end col-sm-6 -->
+
+        <div class="col-sm-6 col-lg-4 g-mb-30 u-display-flex">
+          <article class="box-shadow">
+            <a class="u-link-v5 g-color-main" href="http://socratesuk.org/">
+              <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/socrates-uk.jpg' | prepend: site.baseurl }}" alt="Socrates Conference Logo">        
+              <div class="g-pa-30-30-20">
+                <h3 class="h4 g-font-weight-800 g-mb-15">{% t index-software_craftsmanship-socrates.title %}</h3>
+                <p class="g-pb-30">{% t index-software_craftsmanship-socrates.subtitle %}</p>
+                <span class="block-cta">{% t index-software_craftsmanship-socrates.link_title %}</span>
+              </div>
+            </a>
+          </article>       
+        </div><!-- end col-sm-6 -->
+
+        <div class="col-sm-6 col-lg-4 g-mb-30 u-display-flex">
+          <article class="box-shadow">
+            <a class="u-link-v5 g-color-main" href="https://www.meetup.com/london-software-craftsmanship">
+              <img class="img-fluid w-100" src="{{ '/assets/custom/img/home/lscc.jpg' | prepend: site.baseurl }}" alt="LSCC Logo">    
+              <div class="g-pa-30-30-20">
+                <h3 class="h4 g-font-weight-800 g-mb-15">{% t index-software_craftsmanship-lscc.title %}</h3>         
+                <p class="g-pb-30">{% t index-software_craftsmanship-socrates.subtitle %}</p>
+                <span class="block-cta">{% t index-software_craftsmanship-socrates.link_title %}</span>
+              </div>
+            </a>
+          </article>       
+        </div><!-- end col-sm-6 -->
+
+      </div>
+
+	</div><!-- end container -->
+</div><!-- end section -->
