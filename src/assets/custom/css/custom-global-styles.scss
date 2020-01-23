@@ -16,173 +16,224 @@
 
 $orange-colour: #e67e22;
 
-body {  /* 0 0 0 1 */
-    font-size: 15px;
-    font-family: proxima-nova, sans-serif;
+body {
+  /* 0 0 0 1 */
+  font-size: 15px;
+  font-family: proxima-nova, sans-serif;
 }
 
-x:-moz-any-link {  /* 0 0 1 1 */
-    margin: 0;
+x:-moz-any-link {
+  /* 0 0 1 1 */
+  margin: 0;
 }
 
-li > a {  /* 0 0 0 2 */
-    color: $orange-colour;
+li > a {
+  /* 0 0 0 2 */
+  color: $orange-colour;
 }
 
 blockquote {
-	border: none;
-	padding: 18px;
-	font-size: 28px;
-	background: #f3f3f3;
-	border-left: solid 2px #666;
+  border: none;
+  padding: 18px;
+  font-size: 28px;
+  background: #f3f3f3;
+  border-left: solid 2px #666;
 }
 
 blockquote p {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .anchor {
-    display: block;
-    height: 73px; /* this is the height of your header */
-    margin-top: -73px; /* this is again negative value of the height of your header */
-    visibility: hidden;
+  display: block;
+  height: 73px; /* this is the height of your header */
+  margin-top: -73px; /* this is again negative value of the height of your header */
+  visibility: hidden;
 }
 
 img.bullet-image {
-    float:left;
+  float: left;
 }
 
 .nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-h1, h2, h3, h4, h5 {
-    &.title-v2{
-        color: #555;
-        position: relative;
-        margin-bottom: 30px;
-    }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  &.title-v2 {
+    color: #555;
+    position: relative;
+    margin-bottom: 30px;
+  }
 
-    &.title-center{
-        text-align: center;
-    }
+  &.title-center {
+    text-align: center;
+  }
 }
 
 .g-color-reddit {
-    color: #FF4301;
+  color: #ff4301;
 }
 
 .g-bg-reddit {
-  background-color: #FF4301;
+  background-color: #ff4301;
 }
 
 .g-color-reddit--hover:hover {
-    color: #FF4301 !important;
+  color: #ff4301 !important;
 }
 
 .persisted-closable {
-    display: none;
-    position: relative;
+  display: none;
+  position: relative;
 
-    .closer {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
+  .closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
 }
 
 #middle-banner {
-    background-color: #2D2D2D;
-    overflow: hidden;
+  background-color: #2d2d2d;
+  overflow: hidden;
 }
 
+// Imagery
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
 
-/* Pagination - hover / active color overides 
+.img-border-orange-yellow {
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.img-border-orange-yellow img {
+  position: relative;
+  z-index: 2;
+}
+
+.img-border-orange-yellow:after {
+  content: '';
+  background: rgb(239, 119, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 119, 38, 1) 0%,
+    rgba(255, 220, 64, 1) 57%
+  );
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 100%;
+  height: calc(100% - 10px);
+  z-index: 1;
+}
+
+.latest-highlights-image {
+  width: 100%;
+  padding-top: 66%;
+}
+
+// Background colour overides
+
+.g-bg-green {
+  background-color: $codurance-green !important;
+}
+
+.g-bg-orange {
+  background-color: $codurance-orange !important;
+}
+
+// Pagination - hover / active color overides
+
+/* Pagination - hover / active color overides
    -------------------------------------- */
 
 .u-pagination-v1-4:hover {
-    color: #555!important;
-    border-color: $codurance-orange!important;
+  color: #555 !important;
+  border-color: $codurance-orange !important;
 }
 
 .u-pagination-v1-4--active {
-    background-color: $codurance-orange!important;
-    border-color: $codurance-orange!important;
+  background-color: $codurance-orange !important;
+  border-color: $codurance-orange !important;
 }
 
-
-
-/* Unify template overides 
+/* Unify template overides
    -------------------------------------- */
 
 a {
-    color: $codurance-orange;
+  color: $codurance-orange;
 }
 
-.u-header__section--light .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link {
-    color: $codurance-orange!important;
+.u-header__section--light
+  .navbar-nav:not([class*='u-main-nav-v'])
+  .active
+  > .nav-link {
+  color: $codurance-orange !important;
 }
 
 .g-color-primary {
-    color: $codurance-orange!important;
+  color: $codurance-orange !important;
 }
 
 .g-brd-primary {
-    border-color: $codurance-orange!important;   
+  border-color: $codurance-orange !important;
 }
 
-.lead { 
-    font-size: 1.3em;
-    max-width: 750px;
-    margin: auto;
+.lead {
+  font-size: 1.3em;
+  max-width: 750px;
+  margin: auto;
 }
 
 .icon-md {
-    width: auto;
-    height: 115px;
-    padding-bottom: 45px;
-    background-color: transparent;
+  width: auto;
+  height: 115px;
+  padding-bottom: 45px;
+  background-color: transparent;
 }
-
-
 
 /* icons
    -------------------------------------- */
 
 .icon-large {
-    width: 200px;
-    height: 200px;
-    padding: 30px;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
 }
-
-
 
 /* Buttons
    -------------------------------------- */
 
 .u-btn-outline {
-    background-color: transparent;
-    border: 2px solid #444444;
-    color: #444444;
-    font-size: 1em;
-    transition: all 0.3s ease;
+  background-color: transparent;
+  border: 2px solid #444444;
+  color: #444444;
+  font-size: 1em;
+  transition: all 0.3s ease;
 
-    &:hover {
-        background-color: rgba(0,0,0,0.05);
-        color: #444444!important;
-        transition: all 0.7s ease;
-    }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #444444 !important;
+    transition: all 0.7s ease;
+  }
 }
-
-
 
 /* Typography
    -------------------------------------- */
 
 .nav-link {
-    color: #444444;
-    font-size: 1.1em;
+  color: #444444;
+  font-size: 1.1em;
 }

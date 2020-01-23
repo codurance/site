@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Apprenticeship at Codurance
-category: careers 
+category: careers
 ---
 
 <!-- Heading -->
@@ -27,7 +27,7 @@ category: careers
                 <h2 class="h3 text-uppercase mb-3">{% t careers.become_an_apprentice.how_works_title %}</h2>
                 <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
             </div>
-            
+
             {% include apply_form.html target="apprentice" %}
 
             <div class="row margin-bottom-20">
@@ -95,31 +95,25 @@ category: careers
     <div class="container content-md">
         <div class="text-center margin-bottom-60">
             <div class="text-center mb-4">
-                <h2 class="h3 text-uppercase mb-3">What skills & experience do I need</h2>
+                <h2 class="h3 text-uppercase mb-3">{% t careers.become_an_apprentice.skills.title %}</h2>
                 <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
             </div>
             <div class="row margin-bottom-20">
-                <p class="space-lg-hor">Our Apprentices join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Apprentices brings to the course though, as a minimum, we require the following 'essential' skills for all Apprentices.</p>
+                <p class="space-lg-hor">{% t careers.become_an_apprentice.skills.description %}</p>
             </div>
         </div>
 
         <div class="row skills">
             <div class="col-lg-6 g-ma-0--lg g-mb-30">
-                <h5 class="title-v2">Expected knowledge & skills</h5>
+                <h5 class="title-v2">{% t careers.become_an_apprentice.skills.box1_title %}</h5>
                 <ul class="skill-list">
-                    <li>Familiarity with C#, Java or Node.js tech stacks.</li>
-                    <li>Demonstrable attitude for self-learning and  awareness of the need for quality and good practices.</li>
-                    <li>At least 3 years of experience working in a software development environment.</li>
-                    <li>Be comfortable with OO design, modelling and executing CRUD commands on relational database and be able to write tests (though we don't expect you to be able to test drive).</li>
+                    {% t careers.become_an_apprentice.skills.box1_description %}
                 </ul>
              </div>
             <div class="col-lg-6">
-                <h5 class="title-v2">Desired knowledge & skills</h5>
+                <h5 class="title-v2">{% t careers.become_an_apprentice.skills.box2_title %}</h5>
                 <ul class="skill-list">
-                    <li>Comfortable with Agile/Scrum/XP/Software Craftsmanship principles.</li>
-                    <li>Be able to test drive code using both classicist and London school (including testing and refactoring legacy code).</li>
-                    <li>Be comfortable with full stack web applications and macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
-                    <li>Be comfortable with OO design (SOLID, 4 rules of simple design, coupling/cohesion), DDD and design patterns.</li>
+                    {% t careers.become_an_apprentice.skills.box2_description %}
                 </ul>
             </div>
          </div>
@@ -131,7 +125,7 @@ category: careers
 <section class="g-bg-orange g-color-white g-pa-30">
     <div class="d-md-flex justify-content-md-center text-center">
         <div class="align-self-md-center">
-            <p class="lead g-font-weight-400 g-color-white g-mr-20--md g-mb-15 g-mb-0--md">Interested in joining our teams in London, Manchester or Barcelona?</p>
+            <p class="lead g-font-weight-400 g-color-white g-mr-20--md g-mb-15 g-mb-0--md">{% t careers.become_an_apprentice.apply_description %}</p>
         </div>
         <div class="align-self-md-center">
             <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" data-modal-target="#apprentice-form" href="#craftsman-form">{% t careers.become_an_apprentice.apply_title %}</a>
@@ -145,12 +139,12 @@ category: careers
     <div class="container content-md">
         <div class="text-center margin-bottom-60">
             <div class="text-center mb-4">
-                <h2 class="h3 text-uppercase mb-3">Hear from past apprentices</h2>
+                <h2 class="h3 text-uppercase mb-3">{% t careers.become_an_apprentice.testimonials.title %}</h2>
                 <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2">
                 </div>
             </div>
             <div class="row margin-bottom-20">
-                <p class="space-lg-hor">At the end of the apprentice programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.</p>
+                <p class="space-lg-hor">{% t careers.become_an_apprentice.testimonials.description %}</p>
             </div>
         </div>
 
@@ -164,9 +158,6 @@ category: careers
                         <li data-target="#testimonials-carousel" data-slide-to="1" class="testimonial-preview">
                                 <img src="{{ site.baseurl }}/assets/custom/img/team/luciano_palma.jpg" class="img-responsive" />
                         </li>
-                        <li data-target="#testimonials-carousel" data-slide-to="2" class="testimonial-preview">
-                                <img src="{{ site.baseurl }}/assets/custom/img/team/cristina_verdi.jpg" class="img-responsive" />
-                        </li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -176,12 +167,12 @@ category: careers
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div>
-                                        <p class="h5 mb-1">Liam Griffin-Jowett </p>
+                                        <p class="h5 mb-1">{% t careers.become_an_apprentice.testimonials.carousel_item_1.author %}</p>
                                         <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2">
                                         </div>
                                     </div>
                                     <div class="quote">
-                                        <div class="curly-quotes">The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my apprenticeship than I would have in many years in a normal developer role. Being paid to learn is awesome.</div>
+                                        <div class="curly-quotes">{% t careers.become_an_apprentice.testimonials.carousel_item_1.quote %}</div>
                                     </div>
                                 </div>
                             </div>
@@ -193,32 +184,15 @@ category: careers
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                                     <div>
-                                        <p class="h5 mb-1">Luciano Palma</p>
+                                        <p class="h5 mb-1">{% t careers.become_an_apprentice.testimonials.carousel_item_2.author %}</p>
                                         <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2">
                                         </div>
                                     </div>
                                     <div class="quote">
-                                        <div class="curly-quotes">I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.</div>
+                                        <div class="curly-quotes">{% t careers.become_an_apprentice.testimonials.carousel_item_2.quote %}</div>
                                     </div>
                                 </div>
-                            </div> 
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4 g-hidden-xs-down">
-                                    <div class="testimonial-picture" style="background-image: url('{{ site.baseurl }}/assets/custom/img/team/cristina_verdi.jpg')" ></div>
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                    <div>
-                                        <p class="h5 mb-1">Cristina Verdi</p>
-                                        <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2">
-                                        </div>
-                                    </div>
-                                    <div class="quote">
-                                        <div class="curly-quotes">At a technical level, this program has enhanced my expertise in Software Design and TDD. On the other side, I have developed a critical thinking mindset and learned to assess which solution is most appropriate depending on the context. However, the biggest impact is on a personal level since work has become a great source of personal satisfaction, has allowed me to find not only coworkers but friends who share the same passion for software.</div>
-                                    </div>
-                                </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,9 +206,9 @@ category: careers
 <section class="g-py-50 g-pb-100 g-bg-gray-light-v5"">
     <div class="container">
         <div class="text-center mb-4">
-            <h2 class="h3 text-uppercase mb-3">Become an apprentice</h2>
+            <h2 class="h3 text-uppercase mb-3">{% t careers-become_an_apprentice.title %}</h2>
             <div class="d-inline-block g-width-60 g-height-1 g-bg-orange mb-2"></div>
-            <p class="lead mb-0">Our interview process will help us to understand your breadth and depth of expertise. We all carry different skills and areas of expertise, and encourage people at all stages of their journey's to apply. We provide inmmediate feedback at the end of each stage and whether we will progress to tbe next. Depending on your availability, the entire process can take as little as 7 days.</p></p>
+            <p class="lead mb-0">{% t careers.become_a_craftsperson.hiring_process.subtitle %}</p>
         </div>
         <!-- Icon Blocks -->
         <ul class="row list-inline u-info-v9-1 mb-0">
@@ -274,9 +248,9 @@ category: careers
                     </div>
                     <h3 class="g-color-primary g-font-weight-600 g-font-size-17 text-uppercase mb-3">
                         <span class="g-color-main g-font-weight-700">02.</span>
-                        Coding Exercise
+                        {% t careers.become_a_craftsperson.hiring_process.step_2.title %}
                     </h3>
-                    <p>We will ask you to complete a coding exercise. We will spend a minimum of 2-hours reviewing your submission, highlight strengths and any areas for improvement.</p>
+                    <p>{% t careers.become_an_apprentice.hiring_process.step_2.title %}</p>
                 </div>
                 <!-- End Icon Blocks -->
             </li>

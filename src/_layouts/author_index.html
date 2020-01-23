@@ -46,24 +46,17 @@ group:
   </div>
   <hr/>
 
-  <!-- Merging two collections as {% assign publications = site.posts | concat: site.videos %} is not supported -->
-  {% assign publications = site.posts %}
-  {% for video in site.videos %}
-    {% assign publications = publications | push: video %}
-  {% endfor %}
-
-  {% assign author_publications = publications | where: 'author', page.author | sort: 'date' | reverse %}
-  {% if author_publications.size > 0 %}
+  {% if page.publications.size > 0 %}
   <div class="g-bg-gray-light-v5">    
     <h2 class="margin-bottom-20">{% t author.publications-title %}</h2>
     <div class="container">
         <div class="masonry-grid row g-mb-70">
             <div class="masonry-grid-sizer col-sm-1"></div>
-                {% for post in author_publications %}
+                {% for post in page.publications %}
                      {% include post.html post=post %}
                 {% endfor %}
         </div>
     </div>
-</div>
+  </div>
   {% endif %}
 </div>

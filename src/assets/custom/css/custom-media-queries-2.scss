@@ -18,81 +18,109 @@
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-    .image-side-by-side-text {  /* 0 0 1 0 */
-        float: none;
-    }
+  .image-side-by-side-text {
+    /* 0 0 1 0 */
+    float: none;
+  }
+  .img-fluid {
+    width: 80%;
+    height: auto;
+    padding: 20%;
+  }
+
+  .client-client-logo-cta {
+    max-width: 100%;
+    padding: 15px 15px 15px 15px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .practice {  /* 0 0 1 0 */
-        min-width: 0px;
-    }
+  .practice {
+    /* 0 0 1 0 */
+    min-width: 0px;
+  }
 
-    .feature-panel, .jumbotron { /* 0 0 1 0 */
-        padding-top: 0px;
-    }
+  .feature-panel,
+  .jumbotron {
+    /* 0 0 1 0 */
+    padding-top: 0px;
+  }
 
-    .feature-panel { /* 0 0 1 0 */
-        & .jumbotron { /* 0 0 2 0 */
-            & h1 { /* 0 0 2 1 */
-                font-size: 2.35em;
-            }
-
-            & h3 { /* 0 0 2 1 */
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    .title-header {  /* 0 0 1 0 */
-
-        & h1,    /* 0 0 1 1 */
-        & h2 {   /* 0 0 1 1 */
-            font-size: 1.75em;
-        }
-    }
-
-    .section {   /* 0 0 1 0 */
-        padding-top: 50px;
-        padding-bottom: 50px;
+  .feature-panel {
+    /* 0 0 1 0 */
+    & .jumbotron {
+      /* 0 0 2 0 */
+      & h1 {
+        /* 0 0 2 1 */
+        font-size: 2.35em;
       }
-      
 
-    .client-image {
-        position: absolute;
+      & h3 {
+        /* 0 0 2 1 */
+        font-size: 1.5em;
+      }
     }
+  }
 
-    .client-body {
-        padding-top: 6em;
-    }
+  .title-header {
+    /* 0 0 1 0 */
 
-    .client-name {
-        display: none;
+    & h1,    /* 0 0 1 1 */
+        & h2 {
+      /* 0 0 1 1 */
+      font-size: 1.75em;
     }
+  }
 
-    .client-project {
-        margin-bottom: 1rem;
-    }
+  .section {
+    /* 0 0 1 0 */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-    .video-bg {
-        display: none;
-    }
+  .client-image {
+    position: absolute;
+  }
 
-    .bg-slider {
-        display: block;
-    }
+  .client-body {
+    padding-top: 6em;
+  }
 
-    .col-md-2--2up-mobile {
-        width: 50%;
-    }
+  .client-name {
+    display: none;
+  }
+
+  .client-project {
+    margin-bottom: 1rem;
+  }
+
+  .video-bg {
+    display: none;
+  }
+
+  .bg-slider {
+    display: block;
+  }
+
+  .col-md-2--2up-mobile {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1224px) {
-    .video-bg-wrapper,
-    .feature-panel {
-        height: 550px;
-    }
+  .video-bg-wrapper,
+  .feature-panel {
+    height: 550px;
+  }
+}
+
+/* min-widths */
+
+@media (min-width: 768px) {
+  .client-client-logo-cta {
+    max-width: 190px;
+  }
 }
 
 /* Laptop */

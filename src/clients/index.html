@@ -33,7 +33,7 @@ title: Clients
           <li class="list-inline-item">
             <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
             {% capture service-category %}clients.{{service}}_title{% endcapture %}
-            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#">{% t {{service-category}} %}</a>
+            <span class="g-color-gray-dark-v5 g-text-underline--none--hover">{% t {{service-category}} %}</span>
           </li>
           {% endfor %}
         </ul>
