@@ -11,13 +11,15 @@
    Specificity components: [Inline styles] [IDs] [Classes, attributes and pseudo-classes] [Elements and pseudo-elements]
    Specificity ranges from lowest to highest (more generic to more specific)
  */
+
 @import 'custom-colors';
 
 $orange-colour: #e67e22;
 
 body {
   /* 0 0 0 1 */
-  font-size: 14px;
+  font-size: 15px;
+  font-family: proxima-nova, sans-serif;
 }
 
 x:-moz-any-link {
@@ -154,6 +156,9 @@ h5 {
 
 // Pagination - hover / active color overides
 
+/* Pagination - hover / active color overides
+   -------------------------------------- */
+
 .u-pagination-v1-4:hover {
   color: #555 !important;
   border-color: $codurance-orange !important;
@@ -164,7 +169,8 @@ h5 {
   border-color: $codurance-orange !important;
 }
 
-// Unifty template overides
+/* Unify template overides
+   -------------------------------------- */
 
 a {
   color: $codurance-orange;
@@ -185,18 +191,49 @@ a {
   border-color: $codurance-orange !important;
 }
 
-// Iconography
+.lead {
+  font-size: 1.3em;
+  max-width: 750px;
+  margin: auto;
+}
 
-.icon-services-large {
-  width: 130px;
+.icon-md {
+  width: auto;
+  height: 115px;
+  padding-bottom: 45px;
+  background-color: transparent;
+}
+
+/* icons
+   -------------------------------------- */
+
+.icon-large {
+  width: 200px;
+  height: 200px;
   padding: 30px;
 }
 
-// Client Grid CTA
+/* Buttons
+   -------------------------------------- */
 
-.client-client-logo-cta {
-  width: 100%;
-  text-align: center;
-  height: 120px;
-  padding: 50px 15px 15px 15px;
+.u-btn-outline {
+  background-color: transparent;
+  border: 2px solid #444444;
+  color: #444444;
+  font-size: 1em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #444444 !important;
+    transition: all 0.7s ease;
+  }
+}
+
+/* Typography
+   -------------------------------------- */
+
+.nav-link {
+  color: #444444;
+  font-size: 1.1em;
 }
