@@ -31,6 +31,7 @@
   .client-client-logo-cta {
     max-width: 100%;
     padding: 15px 15px 15px 15px;
+    margin-top: 0;
   }
 }
 
@@ -117,11 +118,11 @@
 
 /* min-widths */
 
-@media (min-width: 768px) {
-  .client-client-logo-cta {
-    max-width: 190px;
-  }
-}
+// @media (min-width: 768px) {
+//   .client-client-logo-cta {
+//     max-width: 190px;
+//   }
+// }
 
 /* Laptop */
 
