@@ -20,30 +20,7 @@ $orange-colour: #e67e22;
 $gray-colour: #687074;
 $white-colour: #fff;
 
-// .btn-more {   /* 0 0 1 0 */
-//     border-radius: 6px;
-//     font-size: 18px;
-//     margin: 10px 0;
-//     padding: 10px 30px;
-
-//     &-light {  /* 0 0 1 0 */
-//         background-color: transparent;
-//         border: 1px solid $white-colour;
-//         color: $white-colour;
-
-//         &:hover {  /* 0 0 2 0 */
-//             background-color: $white-colour;
-//             color: $gray-colour;
-//         }
-//     }
-
-//     &:hover {  /* 0 0 2 0 */
-//         transition: .3s;
-//     }
-// }
-
 .btn-more {
-    //border-radius: 44px!important;
     font-size: 15px;
     margin: 10px 0;
     padding: 10px 30px;
@@ -52,26 +29,8 @@ $white-colour: #fff;
     font-weight: 700!important;
     background: #EF7726!important;
     border: none!important;
-    background-color:transparent!important;
     overflow: hidden!important;
     position: relative;
-
-    &:after {
-        content: '';
-        height: 300px;
-        width: 300px;
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -150px;
-        margin-top: -150px;
-        z-index: 0;
-        //background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%) !important;
-        background: $orange-colour;
-        transition: all 0.3s ease;
-        transform-origin: center;
-    }
 
     span {
         z-index: 1;
@@ -90,13 +49,13 @@ $white-colour: #fff;
     font-size: 20px;
 }
 
-.btn-small {   
+.btn-small {
     border-radius: 6px;
     font-size: 18px;
     margin: 10px 0;
     padding: 5px 10px;
 
-    &-orange {  
+    &-orange {
         background-color: transparent;
         border: 1px solid $orange-colour;
         color: $orange-colour;
@@ -104,13 +63,13 @@ $white-colour: #fff;
         text-transform: uppercase;
         margin-left: 10px;
 
-        &:hover {  
+        &:hover {
             background-color: $orange-colour;
             color: $white-colour;
         }
     }
 
-    &:hover {  
+    &:hover {
         transition: .3s;
     }
 }
@@ -204,12 +163,12 @@ $white-colour: #fff;
     background-color: #2D2D2D;
     border-color: #fff;
   }
-  
+
   .ban-btn-offblack:hover, .ban-btn-offblack.active {
     border-color: #fff;
     background-color:#fff;
   }
-  
+
   .ban-btn-offblack:hover, .ban-btn-offblack:focus, .ban-btn-offblack.active {
     color: #000;
   }
