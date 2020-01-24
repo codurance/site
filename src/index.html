@@ -18,27 +18,10 @@ layout: default
 </div>
 
 <div class="video-bg-wrapper">
-  <video
-    controls="false"
-    playsinline
-    autoplay
-    muted
-    poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}"
-    loop
-    class="video-bg"
-  >
-    <source
-      src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}"
-      type="video/mp4"
-    />
-    <source
-      src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}"
-      type="video/ogg"
-    />
-    <source
-      src="{{ '/assets/custom/video/home/home-hero.webm' | prepend: site.baseurl }}"
-      type="video/webm"
-    />
+  <video controls="false" playsinline autoplay muted poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}" loop class="video-bg">
+    <source src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}" type="video/mp4"/>
+    <source src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}" type="video/ogg" />
+    <source src="{{ '/assets/custom/video/home/home-hero.webm' | prepend: site.baseurl }}" type="video/webm" />
     Your browser does not support the video tag.
   </video>
 </div>
@@ -57,14 +40,23 @@ layout: default
     </div>
 
     <div class="row blog-boxes margin-bottom-40 blog-boxes--shadow">
-      {% assign podcast = site.podcasts | sort: 'date' | reverse %} {% include
-      latest_highlights.html param=podcast %} {% assign entries =
-      site.emptyArray %} {% for podcast in site.podcasts %} {% assign entries =
-      entries | push: podcast %} {% endfor %} {% for video in site.videos %} {%
-      assign entries = entries | push: video %} {% endfor %} {% assign media =
-      entries | sort: 'date' | reverse %} {% include latest_highlights.html
-      param=media %} {% assign event = site.events | reverse %} {% include
-      latest_highlights.html param=event %}
+      {% assign podcast = site.posts | sort: 'date' | reverse %}
+      {% include latest_highlights.html param=podcast %}
+
+      {% assign entries = site.emptyArray %}
+      {% for podcast in site.podcasts %}
+        {% assign entries = entries | push: podcast %}
+      {% endfor %}
+
+      {% for video in site.videos %}
+        {% assign entries = entries | push: video %}
+      {% endfor %}
+
+      {% assign media = entries | sort: 'date' | reverse %}
+      {% include latest_highlights.html param=media %}
+
+      {% assign event = site.events | reverse %}
+      {% include latest_highlights.html param=event %}
     </div>
 
     <div class="text-center">
