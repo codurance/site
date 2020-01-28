@@ -646,18 +646,6 @@
   email: gregory.cann@codurance.com
   office: london
 
-- id: enric_jorda
-  name: Enric Jorda
-  image: /assets/custom/img/team/enric_jorda.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Enric has been playing with computers since his teens where he would develop games with school friends. This led him to become a front-end developer and then a games developer, prior to joining Codurance.</p>
-    <p>After working on numerous projects for the last 15 years, he realised that working correctly, tooling and doing things the right way saves time. Now, he is having fun like a child learning the Craftsman way.</p>
-    <p>In his free time, he enjoys spending time with his family and playing with his 2 daughters. He also tries to find time for his padel addiction.</p>
-  github: enricjorda
-  email: enric.jorda@codurance.com
-  office: barcelona
-
 - id: gonzalo_gomez_sullain
   name: Gonzalo Gómez Sullain
   image: /assets/custom/img/team/gonzalo_gomez_sullain.png
