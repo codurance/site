@@ -39,6 +39,14 @@ In another post by [Scott Hanselman](https://www.hanselman.com/blog/FearDrivenDe
 there are descriptions of FDD pertaining to organisational fear and the fear of losing your job. 
 However, we will focus our attention on the small section at the bottom about changing code.
 
+So where does this fear start? Well as some of posts above talk about, it could be some of the
+following:
+
+* fear of losing your job
+* unfamiliar with codebase
+* lack of context of what needs to be done
+* pressure from others on this change (e.g. management)
+
 ## Append-only programming
 
 ## Copy and paste programming
