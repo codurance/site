@@ -59,9 +59,8 @@ This point is being fantastic, one of the most fascinating challenges this month
 aligned and in real-time within our three offices of Codurance: London, Manchester, and Barcelona. 
 It is not something we say on paper because it looks good at the brand level, it is a reality. 
 My day to day is spent talking with Nichole, ​​David, and Angus, three of the colleagues who dedicate 
-part of their work to issues related to the communication and marketing of the brand. If this 
-workflows can be carried out is only possible if the communication channel and the availability 
-of the partners is flawless. Thank you for your help in these first months, colleagues.
+part of their work to issues related to the communication and marketing of the brand. Thank you 
+for your help in these first months, colleagues.
 
 So, if you are reading this post and you think Codurance can be your new professional home, I encourage 
 you to submit your application. We are in the process of hiring and we need developers. If you like 
