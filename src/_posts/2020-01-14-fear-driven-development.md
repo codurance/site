@@ -26,9 +26,18 @@ was not driven by rational thinking, it was driven by something far worse. That 
 focus our attention in this article. The code. 
 
 ## Where the fear starts
-Links I want to reference in this section:
-* https://wiki.c2.com/?FearDrivenDevelopment
-* https://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx
+FDD is alluded to [in the C2 wiki](https://wiki.c2.com/?FearDrivenDevelopment) as "maintaining the
+code is hard because you don't know what unintended effects your changes have" in reference to
+what is known as "legacy code". Let's start there and define what legacy code is:
+
+> Code that you are afraid to change 
+
+Nice and simple right? That definition is simple, and deliberately so. The focus of this post is not
+to define what legacy code is.
+
+In another post by [Scott Hanselman](https://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx)
+there are descriptions of FDD pertaining to organisational fear and the fear of losing your job. 
+However, we will focus our attention on the small section at the bottom about changing code.
 
 ## Append-only programming
 
