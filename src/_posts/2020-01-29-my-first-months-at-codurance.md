@@ -8,7 +8,7 @@ author: Helena Abellán
 image:
     src: /assets/custom/img/blog/my-first-month-at-codurance.png
 tags:
-    - life-at-codurance
+    - life at codurance
 ---
 
 A few days ago I completed five months as part of the Codurance team in Spain. It has 
