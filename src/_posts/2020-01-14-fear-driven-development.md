@@ -95,9 +95,10 @@ Therefore, these can categorised as symptoms of fear, they culminate with other 
 a recipe for FDD.
 
 Context is everything, and if I have not done a good enough job of setting this at the start of
-the post, then you will probably be wondering what I am talking about right now. Context is
-delicate, and assuming that you incorrectly framed a piece of information, the recipient(s) of this
-will now have a broken-context.
+the post, then you will probably be wondering what I am talking about right now. As a reader, did
+the fact that I switched the format from the previous section throw you? Context is delicate, and
+assuming that you incorrectly framed a piece of information, the recipient(s) of this will now have
+a broken-context.
 
 Many of have a broken-context, and some examples are below:
 
