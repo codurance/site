@@ -82,6 +82,31 @@ to screw up your first feature on the new team fills you with fear:
 
 The scenario I have just described can create fear.
 ### Lack of context
+This can be found in the both the previous sections, in that Mr Unfamiliar:
+
+* did not have any documentation to work with
+* had not previously worked with the codebase
+
+and Mrs New:
+
+* possibly did not have sufficient knowledge of the system in her new team
+
+Therefore, these can categorised as symptoms of fear, they culminate with other factors to create
+a recipe for FDD.
+
+Context is everything, and if I have not done a good enough job of setting this at the start of
+the post, then you will probably be wondering what I am talking about right now. Context is
+delicate, and assuming that you incorrectly framed a piece of information, the recipient(s) of this
+will now have a broken-context.
+
+Many of have a broken-context, and some examples are below:
+
+* a user story where the details are vague and fuzzy
+* unsure why a particular story is relevant
+* uncertain how your team fits into the bigger picture
+
+To keep scope-creep from happening here, I will leave it as that. Just be aware that a lack of
+context can be a contributing factor to FDD.
 ### Pressure from others
 
 ## Append-only programming
