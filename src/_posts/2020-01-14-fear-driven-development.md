@@ -43,8 +43,16 @@ So where does this fear start? Well, it could be some of the
 following:
 
 * unfamiliar with codebase
+* new to the team (and don't want to screw this up)
 * lack of context of what needs to be done
 * pressure from others on this change (e.g. management)
+
+Let's take a closer look at each of these, adding some more context.
+
+### Unfamiliar with codebase
+### New to the team
+### Lack of context
+### Pressure from others
 
 ## Append-only programming
 
