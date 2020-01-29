@@ -67,6 +67,20 @@ but nobody will help because everyone who knew anything about the system left a 
 
 The scenario I have just described can create fear.
 ### New to the team
+Day one, an exciting day indeed. It is your first day on your new team, you want to be accepted by
+your new team, and so feel the need to prove yourself (no bread jokes here). It is the standup and
+you are extremely excited to pick up a story, so like Mr Unfamiliar in the previous scenario, you
+volunteer.
+
+As you settle in back at your desk, the reality sets in. Sure, you know the language and have been
+using it in production for a while now. But as you get further and further into the ticket, you
+realise you might have to change a few different parts of the system. This feeling of not wanting
+to screw up your first feature on the new team fills you with fear:
+
+* "what if I break something?"
+* "how will the team lead react?"
+
+The scenario I have just described can create fear.
 ### Lack of context
 ### Pressure from others
 
