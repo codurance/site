@@ -53,10 +53,14 @@ Let's take a closer look at each of these, adding some more context.
 You arrive for work one day and your manager (if you have one) informs you there is a requirement
 for something to be changed on system x. The name system x rings a bell, was it from a water cooler
 chat last week? You know what's coming. They ask who would like to volunteer to implement this
-change in the dark and mysterious system x. So like the good person you are, put your hand up and
-announce "I will!". Everyone is staring at you, in envy of your bravery.
+change in the dark and mysterious system x. So like the good person you are, you raise your hand
+and announce "I will!". Everyone is staring at you, in envy of your bravery.
 
 You now wonder what you have got yourself into, and soon you will find out.
+
+After you clone the project, you search in vain for a README, this search continues as you tell
+yourself "there must be something to tell me about this system". Well sadly for you there isn't,
+this project was finished two years ago and the third party who built it left immediately.
 ### New to the team
 ### Lack of context
 ### Pressure from others
