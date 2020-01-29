@@ -119,8 +119,13 @@ even result in you doing something that is rushed an could actually make the sys
 The scenario I have just described can create fear.
 
 ## Where the fear leads
+We have looked at what can create fear, now we look at what fear can do. In particular, what havoc
+fear can reap on a codebase. It might start small, but as the FDD is practised time and time again,
+the codebase suffers.
 
+Let's look at some code examples of how FDD can manifest itself.
 ### Append-only programming
+
 
 ### Copy and paste programming
 
