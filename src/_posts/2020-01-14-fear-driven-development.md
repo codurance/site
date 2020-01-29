@@ -117,8 +117,11 @@ The pressure applied to you by your manager might make you fearful of what you a
 even result in you doing something that is rushed an could actually make the system worse.
 
 The scenario I have just described can create fear.
-## Append-only programming
 
-## Copy and paste programming
+## Where the fear leads
 
-## Tunnel-vision programming
+### Append-only programming
+
+### Copy and paste programming
+
+### Tunnel-vision programming
