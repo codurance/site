@@ -50,6 +50,13 @@ following:
 Let's take a closer look at each of these, adding some more context.
 
 ### Unfamiliar with codebase
+You arrive for work one day and your manager (if you have one) informs you there is a requirement
+for something to be changed on system x. The name system x rings a bell, was it from a water cooler
+chat last week? You know what's coming. They ask who would like to volunteer to implement this
+change in the dark and mysterious system x. So like the good person you are, put your hand up and
+announce "I will!". Everyone is staring at you, in envy of your bravery.
+
+You now wonder what you have got yourself into, and soon you will find out.
 ### New to the team
 ### Lack of context
 ### Pressure from others
