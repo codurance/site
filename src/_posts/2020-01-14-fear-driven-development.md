@@ -61,6 +61,11 @@ You now wonder what you have got yourself into, and soon you will find out.
 After you clone the project, you search in vain for a README, this search continues as you tell
 yourself "there must be something to tell me about this system". Well sadly for you there isn't,
 this project was finished two years ago and the third party who built it left immediately.
+
+Without any documentation or anybody to ask, you are left all alone. Sure you can ask for help
+but nobody will help because everyone who knew anything about the system left a long time ago.
+
+The scenario I have just described can create fear.
 ### New to the team
 ### Lack of context
 ### Pressure from others
