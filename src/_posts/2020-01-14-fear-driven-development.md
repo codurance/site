@@ -125,8 +125,60 @@ the codebase suffers.
 
 Let's look at some code examples of how FDD can manifest itself.
 ### Append-only programming
+Imagine the following is a method within a system
+```
+method save(people) {
+    for each person save them to the database
+    ...
+}
+```
 
+Now one day there is a requirement to also save products in a system, fear could cause someone to do
+the below:
+```
+method save(people, products) {
+    for each person save them to the database
+    ...
 
+    for each product save them to the database
+    ...
+}
+```
+
+Resulting in a method which now saves people and products, the programmer has appended a new
+feature to an existing feature, without considering whether this is the right thing to do. This is
+what fear does, it makes us miss things, a step in a process.
+
+Furthermore, what if there is a requirement to save dogs in the system 
+(what kind of system is this), if FDD takes the guise of append-only programming you might see:
+
+```
+method save(people, products, dogs) {
+    for each person save them to the database
+    ...
+
+    for each product save them to the database
+    ...
+
+    for each dog save them to the database
+    ...
+}
+```
+
+Many could argue "well it's all in one place isn't it?". This is true, it most definitely is and
+this is in danger of becoming a very large and unwieldy method, with low cohesion. It does not stop
+there, it also means:
+
+* merging code is going to be a nightmare due to many people touching the same method for multiple
+reasons
+* it is much harder to identify who owns this method, due to the "save whatever you want" code
+present in there
+* more time consuming to implement features because you will have to resolve merge conflicts very
+frequently
+
+The cascading effects of append-only programming are very real, and will have could have been
+mitigated by taking more time, with the absence of fear, to think about the change being made to
+a software system.
 ### Copy and paste programming
 
 ### Tunnel-vision programming
