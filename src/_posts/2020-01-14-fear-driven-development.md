@@ -109,7 +109,14 @@ Many of have a broken-context, and some examples are below:
 To keep scope-creep from happening here, I will leave it as that. Just be aware that a lack of
 context can be a contributing factor to FDD.
 ### Pressure from others
+"Is it ready yet?" is the sound of your manager. Now, you like your manager, but the way he seems
+stuck to your desk when something "needs" to be delivered can sometimes be distracting. This is the
+story of pressure, and how it can evoke fear.
 
+The pressure applied to you by your manager might make you fearful of what you are doing. It might
+even result in you doing something that is rushed an could actually make the system worse.
+
+The scenario I have just described can create fear.
 ## Append-only programming
 
 ## Copy and paste programming
