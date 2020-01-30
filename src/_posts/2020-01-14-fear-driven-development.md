@@ -292,3 +292,14 @@ agonising over the name of a method/function, or spend months reviewing the desi
 Of course, everything depends on context and spending 10 days agonising over the name of a method
 might be acceptable if you are a maintainer of a library where the public interfaces you provide
 to your consumers are of paramount importance. It depends!
+
+## A final message
+This post provides examples of how fear can start, and where it can lead. As a reader (and maybe a
+developer/programmer/wizard) you are in control, it is your decisions and those of your teammates
+that will decide whether your code is consumed by fear, or guarded by courage.
+
+We are all in this together trying to do our best, and if you spot someone practising FDD, help
+them out and share the wisdom.
+
+If you enjoyed this please reach out to me on [Twitter](https://twitter.com/Software_Sam_D) and
+share with others.
