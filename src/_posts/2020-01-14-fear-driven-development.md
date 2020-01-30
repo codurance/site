@@ -219,3 +219,16 @@ call another part of the system (e.g. `getProductsOverOneHundredPounds`) to get 
 information (not knowing or caring how this is done)? This can be achieved by modularising code in
 your codebase.
 ### Tunnel-vision programming
+This infliction on a codebase can be found in both the aforementioned examples. It is simply when
+one is so focused on a particular task, that they do not step back to see the bigger picture. You
+are so concerned with implementing feature x, that you do not consider how it fits together with y
+and z.
+
+Tunnel-vision programming could be described as selfish, I might be tempted to define it as the
+below:
+
+> Satisfying one's immediate needs whilst degrading the health of the codebase
+
+Now, this can happen with or without fear. There are many different types of people working on
+codebases all around the world. Not all of them will be motivated to keep a codebase tidy, the
+decisions made might be driven by many factors, including fear.
