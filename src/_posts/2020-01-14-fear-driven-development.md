@@ -237,3 +237,37 @@ decisions made might be driven by many factors, including fear.
 Everything before now has provided context of how a codebase can be negatively impacted by fear,
 now I want to look at some techniques and tips for how we can avoid FDD being practised on our
 codebases.
+
+### Tests
+The title above is simple. Having meaningful tests can instill confidence that you are not breaking
+anything. If you are a practitioner of TDD, then this will also help you to have confidence, and
+most importantly for me, structure to how you work.
+
+If you want to come along and change the below:
+```
+method getProductsOverOneHundredPounds() {
+    select all products where price is greater than £100
+    return products found
+}
+```
+
+And in the codebase there is also a test for this:
+```
+method testForGetProductsOverOneHundredPounds() {
+    get result from getProductsOverOneHundredPounds
+    
+    result should equal expected result
+}
+```
+
+Then when you are going to make a change in `getProductsOverOneHundredPounds`, you will get quick
+feedback that something has been broken by the change you have made, because you will have run the
+tests (say it once more!). For instance, you might "accidentally" have changed the code to:
+```
+method getProductsOverOneHundredPounds() {
+    select all products where price is greater than £1000
+    return products found
+}
+```
+
+Fortunately your test might catch that extra `0` you added and you can revert your change. No fear.
