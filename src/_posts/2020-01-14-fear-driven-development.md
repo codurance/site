@@ -271,3 +271,5 @@ method getProductsOverOneHundredPounds() {
 ```
 
 Fortunately your test might catch that extra `0` you added and you can revert your change. No fear.
+
+### Taking a step back
