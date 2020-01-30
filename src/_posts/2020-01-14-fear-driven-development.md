@@ -180,5 +180,42 @@ The cascading effects of append-only programming are very real, and will have co
 mitigated by taking more time, with the absence of fear, to think about the change being made to
 a software system.
 ### Copy and paste programming
+There are other ways FDD can inflict pain on a codebase, one such way is copy and paste programming.
+Let's look at an example to help demonstrate this. Imagine in a codebase there is some code which
+retrieves data from a database, namely selecting all products where their price is greater than
+£100:
+```
+method getProductsOverOneHundredPounds() {
+    select all products where price is greater than £100
+    return products found
+}
+```
 
+Now the above is pseudo-code, but imagine that in the actual code the first line of the method
+contains some SQL query that will be responsible for selecting the products, based on the
+aforementioned criteria.
+
+What if, due to fear a programmer when having to perform the exact same query copies the code
+elsewhere:
+```
+method getProductsOverOneHundredPounds() {
+    select all products where price is greater than £100
+    return products found
+}
+
+method howManyProductsAreOverOneHundredPounds() {
+    select all products where price is greater than £100
+    return how many products found 
+}
+```
+
+Now this choice means that the SQL required to execute this query is now spread over two places in
+the codebase. This will create many problems:
+
+* if the query is to be changed (e.g. schema changes), it has to be done in two places, and a
+developer won't necessarily know this is the case
+* who owns the data? Should the second method know how to get this information, or should it simply
+call another part of the system (e.g. `getProductsOverOneHundredPounds`) to get this
+information (not knowing or caring how this is done)? This can be achieved by modularising code in
+your codebase.
 ### Tunnel-vision programming
