@@ -232,3 +232,8 @@ below:
 Now, this can happen with or without fear. There are many different types of people working on
 codebases all around the world. Not all of them will be motivated to keep a codebase tidy, the
 decisions made might be driven by many factors, including fear.
+
+## Where the fear stops
+Everything before now has provided context of how a codebase can be negatively impacted by fear,
+now I want to look at some techniques and tips for how we can avoid FDD being practised on our
+codebases.
