@@ -273,3 +273,22 @@ method getProductsOverOneHundredPounds() {
 Fortunately your test might catch that extra `0` you added and you can revert your change. No fear.
 
 ### Taking a step back
+The technique of taking a step back from a situation is a skill that is not just appropriate for
+creating and designing software. However, in a software context it can be practised by methods such
+as the below:
+
+* having breaks during pairing sessions to reflect on what was done in the last session
+* taking time to review the design of a codebase/system at regular intervals
+* before rushing to merge some code, spending some time reading your code, analysing it
+* get someone else's view on your code/decision (feedback)
+
+Now if this all sounds simple, there is a good reason for this. It is simple to explain but often
+people find this difficult in practice. For example, factors such as an inflated ego could mean
+that one rushes their code to be merged, without accepting the fact that it could be in a better
+place first.
+
+It is important to note for readers not to take this advice to the extreme. Don't spend 10 days
+agonising over the name of a method/function, or spend months reviewing the design of your system.
+Of course, everything depends on context and spending 10 days agonising over the name of a method
+might be acceptable if you are a maintainer of a library where the public interfaces you provide
+to your consumers are of paramount importance. It depends!
