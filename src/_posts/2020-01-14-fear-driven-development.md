@@ -12,7 +12,9 @@ image:
       text: Photo by Luis Reyes on Unsplash
       href: https://unsplash.com/photos/mTorQ9gFfOg
 tags:
-- architecture
+- software
+- decision-making
+- legacy-code
 ---
 On the internet there are a few different perspectives on Fear Driven Development (FDD). The
 perspective I want to focus on here is below:
@@ -25,7 +27,7 @@ they chose to make that decision (you can't, because they are in your imaginatio
 was not driven by rational thinking, it was driven by something far worse. That is where we will
 focus our attention in this article. The code. 
 
-## Where the fear starts
+## 1. Where the fear starts
 FDD is alluded to [in the C2 wiki](https://wiki.c2.com/?FearDrivenDevelopment) as "maintaining the
 code is hard because you don't know what unintended effects your changes have" in reference to
 what is known as "legacy code". Let's start there and define what legacy code is:
@@ -119,7 +121,7 @@ even result in you doing something that is rushed an could actually make the sys
 
 The scenario I have just described can create fear.
 
-## Where the fear leads
+## 2. Where the fear leads
 We have looked at what can create fear, now we look at what fear can do. In particular, what havoc
 fear can reap on a codebase. It might start small, but as the FDD is practised time and time again,
 the codebase suffers.
@@ -241,7 +243,7 @@ Now, this can happen with or without fear. There are many different types of peo
 codebases all around the world. Not all of them will be motivated to keep a codebase tidy, the
 decisions made might be driven by many factors, including fear.
 
-## Where the fear stops
+## 3. Where the fear stops
 Everything before now has provided context of how a codebase can be negatively impacted by fear,
 now I want to look at some techniques and tips for how we can avoid FDD being practised on our
 codebases.
