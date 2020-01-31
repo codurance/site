@@ -108,6 +108,7 @@ Many of have a broken-context, and some examples are below:
 
 To keep scope-creep from happening here, I will leave it as that. Just be aware that a lack of
 context can be a contributing factor to FDD.
+
 ### Pressure from others
 "Is it ready yet?" is the sound of your manager. Now, you like your manager, but the way he seems
 stuck to your desk when something "needs" to be delivered can sometimes be distracting. This is the
@@ -124,8 +125,10 @@ fear can reap on a codebase. It might start small, but as the FDD is practised t
 the codebase suffers.
 
 Let's look at some code examples of how FDD can manifest itself.
+
 ### Append-only programming
 Imagine the following is a method within a system
+
 ```
 method save(people) {
     for each person save them to the database
@@ -135,6 +138,7 @@ method save(people) {
 
 Now one day there is a requirement to also save products in a system, fear could cause someone to do
 the below:
+
 ```
 method save(people, products) {
     for each person save them to the database
@@ -179,11 +183,13 @@ frequently
 The cascading effects of append-only programming are very real, and will have could have been
 mitigated by taking more time, with the absence of fear, to think about the change being made to
 a software system.
+
 ### Copy and paste programming
 There are other ways FDD can inflict pain on a codebase, one such way is copy and paste programming.
 Let's look at an example to help demonstrate this. Imagine in a codebase there is some code which
 retrieves data from a database, namely selecting all products where their price is greater than
 £100:
+
 ```
 method getProductsOverOneHundredPounds() {
     select all products where price is greater than £100
@@ -197,6 +203,7 @@ aforementioned criteria.
 
 What if, due to fear a programmer when having to perform the exact same query copies the code
 elsewhere:
+
 ```
 method getProductsOverOneHundredPounds() {
     select all products where price is greater than £100
@@ -218,6 +225,7 @@ developer won't necessarily know this is the case
 call another part of the system (e.g. `getProductsOverOneHundredPounds`) to get this
 information (not knowing or caring how this is done)? This can be achieved by modularising code in
 your codebase.
+
 ### Tunnel-vision programming
 This infliction on a codebase can be found in both the aforementioned examples. It is simply when
 one is so focused on a particular task, that they do not step back to see the bigger picture. You
@@ -244,6 +252,7 @@ anything. If you are a practitioner of TDD, then this will also help you to have
 most importantly for me, structure to how you work.
 
 If you want to come along and change the below:
+
 ```
 method getProductsOverOneHundredPounds() {
     select all products where price is greater than £100
@@ -252,6 +261,7 @@ method getProductsOverOneHundredPounds() {
 ```
 
 And in the codebase there is also a test for this:
+
 ```
 method testForGetProductsOverOneHundredPounds() {
     get result from getProductsOverOneHundredPounds
@@ -263,6 +273,7 @@ method testForGetProductsOverOneHundredPounds() {
 Then when you are going to make a change in `getProductsOverOneHundredPounds`, you will get quick
 feedback that something has been broken by the change you have made, because you will have run the
 tests (say it once more!). For instance, you might "accidentally" have changed the code to:
+
 ```
 method getProductsOverOneHundredPounds() {
     select all products where price is greater than £1000
