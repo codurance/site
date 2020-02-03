@@ -251,7 +251,9 @@ codebases.
 ### Tests
 The title above is simple. Having meaningful tests can instill confidence that you are not breaking
 anything. If you are a practitioner of TDD, then this will also help you to have confidence, and
-most importantly for me, structure to how you work.
+most importantly for me, structure to how you work. Furthermore, testing can help provide a
+direction for the production code to follow, often providing an accessible way for teammates to
+clarify their understanding of requirements.
 
 If you want to come along and change the below:
 
