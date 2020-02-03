@@ -742,7 +742,7 @@
 - id: riccardo_toni
   name: Riccardo Toni
   image: /assets/custom/img/team/riccardo_toni.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Before starting as a software developer Riccardo worked in the music industry, as a musician at first and then as an artist manager and consultant in both Italy and the UK.
     <p>He later gained some experience working with JVM based languages and Pivotal’s tech stack, across different systems from legacy monoliths to cloud based microservices. This gave him the opportunity to observe in different circumstances how often the success of a software product can be jeopardised by some poor choices in software design as well as over-engineered architectures or lack of communication and feedback inside the organisations. Therefore he ended up becoming a fiery sponsor of the Software Craftsmanship movement and a TDD, Extreme Programming and Clean Code advocate.</p>
@@ -788,7 +788,7 @@
 - id: arnaud_claudel
   name: Arnaud Claudel
   image: /assets/custom/img/team/arnaud_claudel.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Arnaud started to work in a big IT company but quickly got tired of the lack of quality in his projects.</p>
     <p>He then tried to find new ways of working and met a lot of passioned people across meetups.</p>
@@ -813,7 +813,7 @@
 - id: edward_rixon
   name: Edward Rixon
   image: /assets/custom/img/team/edward_rixon.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
     <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
@@ -838,7 +838,7 @@
 - id: jose_wenzel
   name: José Pablo Wenzel
   image: /assets/custom/img/team/jose_wenzel.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>José started his development career in Chile where he worked in an advertisement start-up doing administration jobs, after this he joined the development team on this company, to help with the management of SQL servers. He worked with Centos servers and squid3, python and SQL.</p>
     <p>After a while working in this company, and not having formal education, he decided to get into the university, where he studied at nights learning languages like java and C#. whilst doing this he stopped working in a development environment and started working in a market research company, where he stayed for 2 years. On a business trip, he found out about SoCraTes and Codurance.</p>
@@ -890,7 +890,7 @@
 - id: giulio_perrone
   name: Giulio Perrone
   image: /assets/custom/img/team/giulio_perrone.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
     <p>Giulio had his first contact with programming thanks to World of Warcraft, where he tried to contribute to private servers and played with C# and MySQL on his machine. He would later start learning PHP to understand how web applications worked back then, serving as a catalyst for experimenting with other languages and frameworks.</p>
     <p>Having been exposed to different work environments ranging from commercial boards to NGOs, he has sharpened his skills and developed a passion for Software Craftmanship, which he now advocates vigorously.</p>
