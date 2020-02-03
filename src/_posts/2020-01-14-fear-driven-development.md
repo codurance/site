@@ -7,7 +7,7 @@ date: 2019-11-11 16:00:00 +00:00
 author: Sam Davies
 description: A look at Fear Driven Development and how to tackle it
 image:
-   src: /assets/custom/img/blog/worlds-strongest-architecture.jpg
+   src: /assets/custom/img/blog/Sam-Code-Fear.jpg
    attribution:
       text: Photo by Luis Reyes on Unsplash
       href: https://unsplash.com/photos/mTorQ9gFfOg
