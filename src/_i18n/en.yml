@@ -461,7 +461,8 @@ careers:
         quote: I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.
     hiring_process:
       step_2:
-        title: We will ask you to complete a coding exercise. We will spend a minimum of 2-hours reviewing your submission, highlight strengths and any areas for improvement.
+        title: Coding exercise
+        description: We will ask you to complete a coding exercise. We will spend a minimum of 2-hours reviewing your submission, highlight strengths and any areas for improvement.
     background_title: What background do I need to have?
     background_description: You are a productive developer in the language of your choice on the JVM, .NET, and/or Node JS platforms. You know of Agile processes and practices and can apply them and are looking to become an expert in reasoning about them. You have basic knowledge of micro level and macro level design.
     is_it_for_me_title: Is this the programme for me?
