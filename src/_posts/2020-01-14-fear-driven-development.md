@@ -23,7 +23,7 @@ perspective I want to focus on here is below:
 
 Close your eyes and imagine someone looking at some code on a computer screen, they need to make
 a change to that code. They then do something you would not expect, and you want to ask them why
-they chose to make that decision (you can't, because they are in your imagination). This decision
+they chose to make that decision (you can't because they are in your imagination). This decision
 was not driven by rational thinking, it was driven by something far worse. That is where we will
 focus our attention in this article. The code. 
 
@@ -37,7 +37,7 @@ what is known as "legacy code". Let's start there and define what legacy code is
 Nice and simple right? That definition is simple, and deliberately so. The focus of this post is not
 to define what legacy code is.
 
-In another post by [Scott Hanselman](https://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx)
+In another post by [Scott Hanselman](https://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx),
 there are descriptions of FDD pertaining to organisational fear and the fear of losing your job. 
 However, we will focus our attention on the small section at the bottom about changing code.
 
@@ -71,7 +71,7 @@ The scenario I have just described can create fear.
 ### New to the team
 Day one, an exciting day indeed. It is your first day on your new team, you want to be accepted by
 your new team, and so feel the need to prove yourself (no bread jokes here). It is the standup and
-you are extremely excited to pick up a story, so like Mr Unfamiliar in the previous scenario, you
+you are extremely excited to pick up a story, so like Mr. Unfamiliar in the previous scenario, you
 volunteer.
 
 As you settle in back at your desk, the reality sets in. Sure, you know the language and have been
@@ -84,16 +84,16 @@ to screw up your first feature on the new team fills you with fear:
 
 The scenario I have just described can create fear.
 ### Lack of context
-This can be found in the both the previous sections, in that Mr Unfamiliar:
+This can be found in both the previous sections, in that Mr. Unfamiliar:
 
 * did not have any documentation to work with
 * had not previously worked with the codebase
 
-and Mrs New:
+and Mrs. New:
 
 * possibly did not have sufficient knowledge of the system in her new team
 
-Therefore, these can categorised as symptoms of fear, they culminate with other factors to create
+Therefore, these can be categorised as symptoms of fear, they culminate with other factors to create
 a recipe for FDD.
 
 Context is everything, and if I have not done a good enough job of setting this at the start of
@@ -117,7 +117,7 @@ stuck to your desk when something "needs" to be delivered can sometimes be distr
 story of pressure, and how it can evoke fear.
 
 The pressure applied to you by your manager might make you fearful of what you are doing. It might
-even result in you doing something that is rushed an could actually make the system worse.
+even result in you doing something that is rushed and could actually make the system worse.
 
 The scenario I have just described can create fear.
 
@@ -218,7 +218,7 @@ method howManyProductsAreOverOneHundredPounds() {
 }
 ```
 
-Now this choice means that the SQL required to execute this query is now spread over two places in
+Now, this choice means that the SQL required to execute this query is now spread over two places in
 the codebase. This will create many problems:
 
 * if the query is to be changed (e.g. schema changes), it has to be done in two places, and a
@@ -285,7 +285,7 @@ method getProductsOverOneHundredPounds() {
 }
 ```
 
-Fortunately your test might catch that extra `0` you added and you can revert your change. No fear.
+Fortunately, your test might catch that extra `0` you added and you can revert your change. No fear.
 
 ### Taking a step back
 The technique of taking a step back from a situation is a skill that is not just appropriate for
