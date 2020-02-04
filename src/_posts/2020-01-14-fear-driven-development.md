@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: fear-driven-development
 title: Fear Driven Development and How To Tackle It
-date: 2019-11-11 16:00:00 +00:00
+date: 2020-02-04 13:00:00 +00:00
 author: Sam Davies
 description: A look at Fear Driven Development and how to tackle it
 image:
