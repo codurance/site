@@ -958,3 +958,14 @@
     <p>In his free time he likes to do CrossFit and outdoor sports, astronomy, reading books and Netflix, for sure.</p>
   email: kristian.munoz@codurance.com
   office: barcelona
+
+- id: ewan_sheldon
+  name: Ewan Sheldon
+  image: /assets/custom/img/team/ewan_sheldon.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Ewan has spent three years working as a software engineer with a small tech startup, since graduating from Makers Academy, working on a number of products including cloud-based WiFi management dashboards and venue booking platforms for food traders.</p>
+    <p>He is eager to learn from good people around him to improve his technical and professional skills.</p>
+    <p>In his spare time, Ewan enjoys films, cryptic crosswords and baking, and is a big Arsenal fan.</p>
+  email: ewan.sheldon@codurance.com
+  office: london
