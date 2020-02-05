@@ -102,13 +102,13 @@ the fact that I switched the format from the previous section throw you? Context
 assuming that you incorrectly framed a piece of information, the recipient(s) of this will now have
 a broken-context.
 
-Many of have a broken-context, and some examples are below:
+Many of us will have experienced a broken-context, and some examples are below:
 
 * a user story where the details are vague and fuzzy
 * unsure why a particular story is relevant
 * uncertain how your team fits into the bigger picture
 
-To keep scope-creep from happening here, I will leave it as that. Just be aware that a lack of
+To keep scope-creep from happening here, I will leave it at that. Just be aware that a lack of
 context can be a contributing factor to FDD.
 
 ### Pressure from others
