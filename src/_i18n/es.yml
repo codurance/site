@@ -375,17 +375,17 @@ careers:
       title: Proceso de entrevista
       subtitle: Nuestro proceso de entrevista nos ayudará a conocer tu experiencia. Todos contamos con diferentes habilidades y áreas de especialización. Te animamos a que tomes la iniciativa de formar parte de este equipo, sea cual sea la etapa del viaje en el que te encuentras.
       step_1:
-        title: Entrevista telefónica
-        description: Entrevista telefónica de 30-45 minutos en la que tener una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
+        title: Entrevista inicial
+        description: Suele ser una llamada de de 30 minutos con nuestro equipo de reclutamiento en la que tendremos una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
       step_2:
-        title: Programación en pareja
-        description: Un ejercicio de programación en pareja que te invitamos a hacer en nuestras oficinas. En este ejercicio te acompañarán uno o dos de nuestros Craftsperson.
-      step_3:
         title: Entrevista técnica
-        description: Charla técnica con uno de nuestros Craftsperson senior y/o Principal.
+        description: Charla técnica de aproximadamente 45 minutos con uno de nuestros Craftspeople senior y/o Principal. Es una buena oportunidad para preguntar cualquier cosa técnica que te interese.
+      step_3:
+        title: Pair programming
+        description: Un ejercicio de programación en pareja en nuestras oficinas (o en remoto). En este ejercicio te acompañarán uno o dos de nuestros craftspeople. Hareís un coding kata junto, puedes verlo como una ocasión de demostrar tus habilidades!
       step_4:
         title: Entrevista final
-        description: Entrevista final con los fundadores.
+        description: Felicidades por llegar hasta esta etapa! En esta última fase conoceras a tu futuro equipo y descubrirás nuestro entorno de trabajo antes de finalizar el proceso.
   become_a_craftsman:
     join_title: Unete a Codurance
     apply_title: Inscríbete
@@ -468,9 +468,20 @@ careers:
         author: Luciano Palma
         quote: Sentí que el proceso era más valioso que la graduación en sí misma. He podido aprender a través de los errores, recibir feedback y mejorar continuamente durante el proceso. Ahora me siento más seguro trabajando en equipo, exponiendo mis ideas y recibiendo el feedback de mis colegas..
     hiring_process:
+      title: Proceso de entrevista
+      subtitle: Nuestro proceso de entrevista nos ayudará a conocer tu experiencia. Todos contamos con diferentes habilidades y áreas de especialización. Te animamos a que tomes la iniciativa de formar parte de este equipo, sea cual sea la etapa del viaje en el que te encuentras.
+      step_1:
+        title: Entrevista inicial
+        description: Suele ser una llamada de de 30 minutos con nuestro equipo de reclutamiento en la que tener una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
       step_2:
-        title: Ejercicio de programación
-        description: Te pediremos que completes un ejercicio de programación. Dedicaremos un mínimo de 2 horas a revisar tu envío, remarcar cuáles son las fortalezas que vemos y las áreas en las que pensamos que puedes mejorar.
+        title: Entrevista técnica
+        description: Charla técnica de aproximadamente 45 minutos con uno de nuestros Craftspeople senior y/o Principal. Es una buena oportunidad para preguntar cualquier tema de carácter técnico que te interese.
+      step_3:
+        title: Pair programming
+        description: Un ejercicio de programación en pareja en nuestras oficinas (o en remoto). En este ejercicio te acompañarán uno o dos de nuestros craftspeople. Haréis un coding kata juntos. Puedes verlo como una ocasión de demostrar tus habilidades!
+      step_4:
+        title: Entrevista final
+        description: Felicidades por llegar hasta esta etapa! En esta última fase conoceras a tu futuro equipo y descubrirás nuestro entorno de trabajo antes de finalizar el proceso.
     background_title: ¿Qué experiencia necesitas?
     background_description:
       Esperamos que te desenvuelvas en al menos un idioma que elijas en las plataformas JVM, .NET y / o Node JS. También que conozcas las metodologías Agile y que puedas aplicarlas. Necesitas tener conocimientos básicos de diseño a nivel micro y macro.Te desenvuelves correctamente comunicando tus ideas en equipo. Te apasiona aprender y perfeccionar tus habilidades como desarrollador de software. Te gusta tanto aprender como enseñar.
@@ -532,25 +543,6 @@ careers-become_an_apprentice:
   description: Aspiras a convertirte en un Craftsperson, estás listo/a para emprender tu viaje de aprendizaje guiado/a por tu mentor.
   link_title: Inscríbete
   more_info: Lee la descripción completa
-careers-hiring_process:
-  title: Proceso de selección
-  description: Nuestro proceso de selección tiene entre 3 y 5 pasos, dependiendo del candidato&#58;
-  step_1:
-    title: Entrevista telefónica
-    description: Entrevista telefónica de 30-45 minutos en la que tratamos de entender tu perfil a rasgos generales, y también te explicamos aquello que consideramos que es importante que conozcas de nosotros.
-  step_2:
-    title: Ejercicio de programación
-    description: Quizá te pidamos un ejercicio en el que podamos entender mejor tus habilidades de programación (principalmente TDD y diseño de software). Una vez lo hayas terminado y nos lo hagas llegar lo revisaremos y te daremos nuestro feedback. ¡Prometido!
-  step_3:
-    title: Programación en pareja
-    description: Un ejercicio de programación en pareja que harás en nuestras oficinas. Para este ejercicio te acompañarán uno o dos de nuestros Artesanos.
-  step_4:
-    title: Entrevista técnica
-    description: Charla técnica con uno de nuestros Artesanos senior y/o principal.
-  step_5:
-    title: Entrevista final
-    description: Entrevista final con los fundadores.
-  additional_information: Dependiendo de cuánto conozcamos a cada candidato, podemos cambiar el orden de los pasos o saltarnos algunos de ellos. Los únicos dos pasos que siempre forman parte de todo proceso de selección son la programación en pareja con uno o más Artesanos y la entrevista final con los fundadores.
 partners-jetbrains-partnership:
   title: JetBrains & Codurance
   subtitle: Estamos muy orgullosos de anunciar que Codurance es <strong>socio oficial de JetBrains.</strong>
@@ -666,7 +658,7 @@ projects:
     short_description: Nos asociamos con Coniq para ayudar a su equipo de desarrollo a entregar software de mejor calidad y con mayor frecuencia.
     subtitle: <p>Coniq quería proporcionar a sus clientes una flexibilidad aún mayor en sus servicios. Se requería una nueva aplicación EPOS pero con recursos internos limitados, así que construir la aplicación fue un desafío. Los principios de Software Craftsmanship se consideraron la mejor forma de optimizar la calidad de los equipos existentes, y Codurance como un socio ideal para poner en marcha el proyecto.</p>
     about: Coniq ofrece un software de marketing de fidelización líder en la industria que permite a sus clientes conocer mejor el comportamiento de los clientes.
-    the_challenge: <p>Coniq quería crear una aplicación que, junto con el software EPOS  (Electronic Point of Sale) que ya tenían sus clientes, leería los códigos de barras en las tiendas para proporcionar a sus clientes finales puntos de para su programa de fidelización y descuentos.</p>
+    the_challenge: <p>Coniq quería crear una aplicación que, junto con el software EPOS (Electronic Point of Sale) que ya tenían sus clientes, leería los códigos de barras en las tiendas para proporcionar a sus clientes finales puntos de para su programa de fidelización y descuentos.</p>
                    <p>Dado el tamaño relativamente pequeño del equipo de desarrollo interno que había, nos comprometimos a poner en marcha el proyecto desde la conceptualización del mismo hasta la entrega (gradual) del proyecto.</p>
     our_sc_approach: <p>Comenzamos construyendo user journeys y wireframes con los stakeholders de negocio de Coniq. Uno de sus diseñadores internos produjo una serie de diseños de alto nivel en Photoshop. Estos diseños formarían parte de los criterios de aceptación de las features.</p>
                      <p>Adoptamos una metodología basada en Scrum para el proyecto, trabajando en features en sprints cada 2 semanas acordados con el Product Owner de Coniq. El backlog de producto se mantuvo dentro del Rally y, como no habían utilizado Aguile de este tipo con aterioridad, nuestro equipo guió al Product Owner en la gestión del backlog y las liturgias propias de Scrum.</p>
