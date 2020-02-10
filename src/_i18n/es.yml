@@ -379,10 +379,10 @@ careers:
         description: Suele ser una llamada de de 30 minutos con nuestro equipo de reclutamiento en la que tendremos una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
       step_2:
         title: Entrevista técnica
-        description: Charla técnica de aproximadamente 45 minutos con uno de nuestros Craftspeople senior y/o Principal. Es una buena oportunidad para preguntar cualquier cosa técnica que te interese.
+        description: Charla técnica de aproximadamente 45 minutos con uno de nuestros Craftspeople senior y/o Principal. Es una buena oportunidad para preguntar cualquier tema de carácter técnico que te interese.
       step_3:
         title: Pair programming
-        description: Un ejercicio de programación en pareja en nuestras oficinas (o en remoto). En este ejercicio te acompañarán uno o dos de nuestros craftspeople. Hareís un coding kata junto, puedes verlo como una ocasión de demostrar tus habilidades!
+        description: Un ejercicio de programación en pareja en nuestras oficinas (o en remoto). En este ejercicio te acompañarán uno o dos de nuestros craftspeople. Haréis un coding kata juntos. Puedes verlo como una ocasión de demostrar tus habilidades!
       step_4:
         title: Entrevista final
         description: Felicidades por llegar hasta esta etapa! En esta última fase conoceras a tu futuro equipo y descubrirás nuestro entorno de trabajo antes de finalizar el proceso.
@@ -472,7 +472,7 @@ careers:
       subtitle: Nuestro proceso de entrevista nos ayudará a conocer tu experiencia. Todos contamos con diferentes habilidades y áreas de especialización. Te animamos a que tomes la iniciativa de formar parte de este equipo, sea cual sea la etapa del viaje en el que te encuentras.
       step_1:
         title: Entrevista inicial
-        description: Suele ser una llamada de de 30 minutos con nuestro equipo de reclutamiento en la que tener una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
+        description: Suele ser una llamada de de 30 minutos con nuestro equipo de reclutamiento en la que tendremos una primera toma de contacto y trataremos de entender tu perfil. Por nuestra parte te explicaremos todo aquello que consideramos que necesitas conocer antes de decidir si continúas con el proceso.
       step_2:
         title: Entrevista técnica
         description: Charla técnica de aproximadamente 45 minutos con uno de nuestros Craftspeople senior y/o Principal. Es una buena oportunidad para preguntar cualquier tema de carácter técnico que te interese.
