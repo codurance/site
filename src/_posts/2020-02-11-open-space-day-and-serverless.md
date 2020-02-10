@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: open-space-day-and-serverless
 title: Open Space Day And Serverless
-date: 2020-02-10 00:00:00 +00:00
+date: 2020-02-11 00:00:00 +00:00
 author: Riccardo Toni
 image:
     src: /assets/custom/img/blog/2020-02-11-open-space-day-and-serverless/blog-main.jpg
