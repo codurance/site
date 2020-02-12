@@ -668,16 +668,6 @@
   linkedin: jordanrobinsonuk
   office: manchester
 
-- id: ade_adegboye
-  name: Ade Adegboye
-  image: /assets/custom/img/team/ade_adegboye.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Ade is someone who likes to experiment with things. He likes to try and do things in different ways if the normal approach does not seem to work out so well.</p>
-    <p>His career as a QA Tester was mainly by coincidence as his first role after studying was in the area of testing, now he says it really suits him better. His attitude is that he enjoys finding faults with software so it can be made better, apparently that really gets him out of bed in the mornings.</p>
-    <p>Outside of work he enjoys reading, travelling and generally having good food to eat. He likes to enjoy the finer things in life, given he wants to make the most out of it.</p>
-  office: london
-
 - id: alex_ignat
   name: Alexandru Ignat
   image: /assets/custom/img/team/alex_ignat.jpg
