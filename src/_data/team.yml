@@ -8,7 +8,6 @@
   twitter: sandromancuso
   github: sandromancuso
   linkedin: sandromancuso
-  email: sandro.mancuso@codurance.com
   office: london
 
 - id: mash
@@ -132,7 +131,6 @@
   twitter: yefoakira
   github: miyamotoakira
   linkedin: jgueorguiev
-  email: jorge.gueorguiev@codurance.com
   office: london
 
 - id: lilianacarneiro
@@ -302,7 +300,6 @@
   twitter: mattsijansky
   github: Mattsi-Jansky
   linkedin: mjjansky
-  email: mattsi.jansky@codurance.com
   office: london
 
 - id: scottedwards
@@ -376,7 +373,6 @@
     <p>Outside of work, Solange is involved in initiatives that promote affordable education opportunities for all. She loves people, trees, coffee, books, music, travelling, and enjoys all kinds of sports activities.</p>
   twitter: sgasengayire
   github: SolangeUG
-  email: solange@codurance.com
   office: london
 
 - id: chris_eyre
@@ -504,7 +500,6 @@
     <p>Andrew then went on to work on many varied things. From working on the Gassco New PMS system, bringing Norwegian gas to the UK and continental Europe, to building and maintaing the Amnesty International .org website, defending human rights across the world.</p>
     <p>When Andrew isn't in front of a computer, he spends his time with his family. He recently started to learn Karate with his eldest son. And hes a huge fan of F1.</p>
   linkedin: andrew-pattison-602b3647
-  email: andrew.pattison@codurance.com
   office: manchester
 
 - id: krzysztof_napierala
@@ -527,7 +522,6 @@
     <p>Games and music are her passion and fill her spare time (she plays electric bass and play board games). Living without coffee is not an option.</p>
   linkedin: rdiaztic
   soundcloud: www.soundcloud.com/jukabox
-  email: ruth.diaz@codurance.com
   office: barcelona
 
 - id: james_birnie
@@ -540,7 +534,6 @@
     <p>After 4 years as a consultant James was delighted to take up a new challenge at Codurance. He is looking forward to immersing himself in the Software Craftsmanship community whilst helping Codurance to grow its business and mature its offerings.</p>
   github: jimbobbirnie
   twitter: runningChairJB
-  email: james.birnie@codurance.com
   office: london
 
 - id: davidhalewood
@@ -557,7 +550,6 @@
   github: haletothewood
   twitter: craftercoder
   linkedin: david-halewood-uk
-  email: david.halewood@codurance.com
   office: london
 
 - id: sherlockqiao
@@ -574,7 +566,6 @@
   github: sherlockq
   twitter: sherlockq
   linkedin: zhiqiang-qiao
-  email: sherlock.qiao@codurance.com
   office: london
 
 - id: andrei_bogomja
@@ -587,7 +578,6 @@
     <p>Andrei likes to create high-quality software by writing code that is clean, simple and bug-free. He is pleased to have the opportunity to learn the best of TDD and Extreme Programming practices from the software craftspeople at Codurance.</p>
     <p>When not coding in Java or tweaking JVM knobs, he likes to spend time with his family and take pictures of his cat.</p>
   github: ifqthenp
-  email: andrejs.bogomja@codurance.com
   office: london
 
 - id: ivan_katzarski
@@ -600,7 +590,6 @@
     <p>Ivan loves learning about and implementing new technologies and software engineering paradigms. He strongly believes that technology should not be created or used just for the sake of the technology itself. While picking up and learning about new software is extremely exciting, the aim of the engineer should be to improve people’s lives and him or herself through his craft. Improvement is more beneficial, fun and easier when done with other people, teamwork is key.</p>
     <p>In his free time, Ivan enjoys sports (especially basketball) and trying new types of food. He is also a big fan of anime and fantasy books.</p>
   github: ikatzarski
-  email: ivan.katzarski@codurance.com
   office: london
 
 - id: matt_gray
@@ -614,7 +603,6 @@
     <p>Matt is extremely grateful and excited to have been given the opportunity to extend his learning even more through completing the Codurance Apprenticeship programme. He is now joyfully gaining more and more knowledge and experience working as part of his first Codurance development team.</p>
     <p>In his free time Matt enjoys reading, making and listening to music, playing Trombone in his band and spending time with family, friends and especially his 3 year old son.</p>
   github: mattgraygithub
-  email: matthew.gray@codurance.com
   office: london
 
 - id: tacuma_bellford
@@ -628,7 +616,6 @@
     <p>Tacuma enjoys spending time with his family, learning languages, and playing or watching basketball. Fun fact, Tacuma is a huge Hip Hop fan and was a member of a Hip Hop group, in which he performed with while stationed in Tokyo, Japan.</p>
   github: takumab
   linkedin: tacumabell
-  email: tacuma.bellford@codurance.com
   office: london
 
 - id: gregory_cann
@@ -643,7 +630,6 @@
     <p>He avidly pursues technology in all forms, and is conscious that passion and pragmatism is important and constantly exploring ways to make things better.</p>
     <p>He has spent the last 10+ years honing his skill in the fintech industry, both leading and working with great people and pursuing his purpose and dream of building great things together.</p>
   github: codurance-greg-cann
-  email: gregory.cann@codurance.com
   office: london
 
 - id: gonzalo_gomez_sullain
@@ -657,7 +643,6 @@
     <p>In his spare time, he is a fan of playing and attending football matches (no matter the team!) and is a fan of a rejuvenating swim. He can otherwise be found listening to techno music and trying to learn other languages</p>
   github: threenary
   linkedin: ggomezsullain
-  email: gonzalo.gomez@codurance.com
   office: barcelona
 
 - id: daniel_bird
@@ -669,7 +654,6 @@
     <p>He discovered a compelling interest in development early in his career when he was exposed to developing emails. From there he has moved on to discover the world of web development and front end technologies. He realised that with his interests, there was no better place to be than surrounded by like-minded people at the top of their game.</p>
     <p>In his spare time, he is either; striving towards fluency in another language, getting together with friends, reading / educating himself, or consuming murder podcasts and documentaries.</p>
   linkedin: birddaniel
-  email: daniel.bird@codurance.com
   office: london
 
 - id: jordan_robinson
@@ -692,7 +676,6 @@
     <p>Ade is someone who likes to experiment with things. He likes to try and do things in different ways if the normal approach does not seem to work out so well.</p>
     <p>His career as a QA Tester was mainly by coincidence as his first role after studying was in the area of testing, now he says it really suits him better. His attitude is that he enjoys finding faults with software so it can be made better, apparently that really gets him out of bed in the mornings.</p>
     <p>Outside of work he enjoys reading, travelling and generally having good food to eat. He likes to enjoy the finer things in life, given he wants to make the most out of it.</p>
-  email: ade@codurance.com
   office: london
 
 - id: alex_ignat
@@ -702,7 +685,6 @@
   fullDescription:
     <p>Alex is a result-oriented DevOps Consultant with more than 5 years experience in IT infrastructure.</p>
     <p>He likes to promote agnostic, cloud-native solution approaches. His goal is to constantly improve himself as a software developer.</p>
-  email: marius.alexandru.ignat@codurance.com
   office: london
 
 - id: karolina_kondzielewska
@@ -714,7 +696,6 @@
     <p>She holds a masters in Philosophy, so she has a habit of asking “why?” and she always tries to think outside the box. She believes that quality assurance starts before any line of code is being written and offers a good combination of exploratory and automation testing.</p>
     <p>In her free time she loves being active and she is training to be a Pilates instructor.</p>
   linkedin: karolinakond
-  email: karolina.kondzielewska@codurance.com
   office: london
 
 - id: laurence_lord
@@ -725,7 +706,6 @@
     <p>Since experiments on a ZX Spectrum in 1988, Laurence has learnt to build websites, Node applications, web architectures and digital teams. After studying Visual Communications Laurence collaborated with individuals, small teams and large corporate clients in creative, financial and eCommerce businesses – always focusing on who the end user is, what we want to say to them and how we want them to feel.</p>
     <p>Imaginative and pragmatic, Laurence is a web engineer with a solid understanding of why writing high quality code is a good idea. He loves to make complicated things seem simple – and therefore easy to iterate upon – and came to Codurance to be surrounded by like minded, passionate people.</p>
     <p>When not exploring the value of excellent software Laurence loves time with his wife, surfing, exploring beautiful places and putting ink to paper to create surreal fine art.</p>
-  email: laurence.lord@codurance.com
   office: london
 
 - id: angus_paterson
@@ -736,7 +716,6 @@
     <p>Angus is a multiskilled graphic and digital designer with a keen interest in code and technology. He has over 15 years of industry experience working for start-ups, well-established brands and agencies.</p>
     <p>A sucker for a tight grid system and 'Swiss Style' typography, Angus believes that effective visual communication relies on a clean, uncluttered aesthetic underpinned by a strong concept.</p>
     <p>When taking a break from the world of visual design you will find Angus wandering around the Barbican or retreating to his garden studio to immerse himself in curating DJ sets for his monthly radio show and producing records for his label, Bokhari.</p>
-  email: angus.paterson@codurance.com
   office: london
 
 - id: riccardo_toni
@@ -749,7 +728,6 @@
     <p>Within the last few years, his continuous learning approach gave him the opportunity to grow quickly - sharing his learning and absorbing technical knowledge from his fellow colleagues, adopting a collaborative attitude and always remaining curious and inquisitive.</p>
     <p>He inherited from his past experience, in other contexts, a set of soft skills such as a natural ability to comprehend the business domain and the business needs, negotiate solutions, understand different perspectives or mitigate contrasts.</p>
     <p>In his free time he loves cycling, swimming, playing drums, cooking, reading and listening to jazz music.</p>
-  email: riccardo.toni@codurance.com
   office: london
 
 - id: jose_rh
@@ -771,7 +749,6 @@
     <p>Sid has been recruiting in technology for the last 5 years and really enjoys listening to people's stories. He takes immense pleasure in identifying people's career aspirations and finding the right role and work culture for them.</p>
     <p>In his spare time he enjoys watching Star Trek (the original series), travelling and eating ramen.</p>
   linkedin: sid-sivanandam
-  email: sidhaesh.sivanandam@codurance.com
   office: london
 
 - id: mark_gray
@@ -782,7 +759,6 @@
     <p>Mark is fascinated by mathematics, programming and science in general. He is the founder of FSharp.TV and the organiser of the F# Meetup in Cambridge, where the language was invented. He is also the organiser of the general functional meetup group in Cambridge.</p>
     <p>Mark loves astronomy and can quite literally talk for hours about the stars and space.</p>
   twitter: markrgray
-  email: mark.gray@codurance.com
   office: london
 
 - id: arnaud_claudel
@@ -794,7 +770,6 @@
     <p>He then tried to find new ways of working and met a lot of passioned people across meetups.</p>
     <p>When looking for his post-graduation job, Software Craftsmanship began the most important keyword to filter the offers, this is why he eventually ended up at Codurance.</p>
     <p>During his freetime, he likes to listen to classical music, (try to) do some sports and explore the city.</p>
-  email: arnaud.claudel@codurance.com
   office: london
 
 - id: helena_abellan
@@ -807,7 +782,6 @@
     <p>She has worked for both brand and agency. The experience of working as the client and also as a service provider has given her a holistic vision regarding the expectations that need to be met in marketing and communication.</p>
     <p>She likes to live and work as a scout&#58; "Scouts leave the world better than how they found it". She believes that the best way to do her best is to be part of a team that aspires to exceed customer expectations, grows in their abilities, are cohesive and maintain healthy relationships.</p>
     <p>She loves the summer, the beach, restoring old furniture, airplanes and a winter afternoon of reading or watching a movie in front of the fireplace.</p>
-  email: helena.abellan@codurance.com
   office: barcelona
 
 - id: edward_rixon
@@ -818,7 +792,6 @@
     <p>Edward had been working as a developer for a few years, mostly on a large European-wide pharmaceutical application, integrating pharmacies to the manufacturers of the medicine they dispense, to ensure the validity of the medicine. During this project, he learnt a lot about Azure and dot net, as well as how to develop applications for a large enterprise project.</p>
     <p>He found that the quality of his colleagues started to drop as time went on, as well as feeling he had reached a bit of a plateau with his learning. This prompted him to start looking for a role that fit better with his outlook on learning and personal development. So after discovering Codurance and finding out about their ethos of craftsmanship, the idea of working for Codurance really appealed to him.</p>
     <p>In his free time, Edward goes rock-climbing, plays chess and plays some video games, one of them being a sim racing game. He participates in online competitive races every Sunday, using his steering wheel, pedals and VR headset. It's super fun and immersive. Recently he joined the rest of his online community on a trip to the Nordschelife track in Germany. He also plays Dungeons and Dragons at the pub some evenings, like to read and watch videos about physics and astronomy, cycles regularly, and plays the bass guitar.</p>
-  email: edward.rixon@codurance.com
   linkedin: edwardrixon
   office: london
 
@@ -832,7 +805,6 @@
     <p>He first heard about eXtreme Programming during his studies and after a few years he discovered how to use the practice of TDD which was a revelation of what programming means for him. Having understood the power of fundamental principles in software development, he started to fill up his e-book reader library.</p>
     <p>He's always looking for developing high quality software in order to make developers and users life easier.</p>
     <p>Outside of work he enjoys the vast variety of craft beers, going out in nice weather to cycle around the city, playing a bit of table tennis and learning new languages, human and programming.</p>
-  email: jocelyn.facchini@codurance.com
   office: london
 
 - id: jose_wenzel
@@ -846,7 +818,6 @@
     <p>In his free time, you can find him playing videogames, dungeons and dragons, watching anime, or just having a beer with some friends.</p>
   github: jpwenzelc
   linkedin: josewenzel
-  email: jose.campos@codurance.com
   office: london
 
 - id: stephane_meny
@@ -858,7 +829,6 @@
     <p>He got his A-levels in Biology and his masters in Computer Science, using his studies as an excuse to travel around France and Ireland. His career started in Nice, followed by Belfort and Strasbourg, to then finally settle in London.</p>
     <p>Passionate about agility, he keeps looking for occasions to discuss with and learn from his peers in the Software Craftsmanship and eXtreme programming communities.</p>
     <p>In his spare time, Stéphane enjoys playing games with his friends around a table or online, owning a collection of 80+ board games. He is also an aficionado of old technologies and emulation in particular.</p>
-  email: stephane.meny@codurance.com
   office: london
 
 - id: sylvester_loreto
@@ -870,7 +840,6 @@
     <p>Since 2012, Sylvester has been developing Web and Ops Enterprise solutions in multi-disciplined teams, working closely with the business.</p>
     <p>Sylvester has engaged across the entire product lifecycle from defining the requirements with Product Owners all the way to maintaining them in production.</p>
     <p>In his free time, Sylvester enjoys learning and sharing knowledge around multiple subjects including martial arts and how to be a better version of himself.</p>
-  email: sylvester.loreto@codurance.com
   github: sylvester-loreto-codurance
   linkedin: sylvester-loreto
   office: london
@@ -884,7 +853,6 @@
     <p>His first contact with computers was in his childhood with the Epson QX 10.</p>
     <p>Since he obtained a degree of Licentiate in Computer Engineering by the ULPGC, he has been involved in managing and developing projects for several companies using a wide variety of technologies and practices.</p>
     <p>When he is away from electronic devices, you might find him playing badminton, watching science fiction or spending time with friends.</p>
-  email: eloy.acosta@codurance.com
   office: london
 
 - id: giulio_perrone
@@ -895,7 +863,6 @@
     <p>Giulio had his first contact with programming thanks to World of Warcraft, where he tried to contribute to private servers and played with C# and MySQL on his machine. He would later start learning PHP to understand how web applications worked back then, serving as a catalyst for experimenting with other languages and frameworks.</p>
     <p>Having been exposed to different work environments ranging from commercial boards to NGOs, he has sharpened his skills and developed a passion for Software Craftmanship, which he now advocates vigorously.</p>
     <p>In his free time, you'll find him exploring the city, trying to convert everyone to Python and fighting invisible ninjas in gymnastics gyms.</p>
-  email: giulio.perrone@codurance.com
   linkedin: perroneg
   office: london
 
@@ -907,7 +874,6 @@
     <p>Zabih is our Office/Finance Manager with a First-Class honour’s degree in Accounting and Finance from Birkbeck University of London and AAT advance Diploma qualification. Zabih has over 7 years’ experience in financial and management accounts. Previously, he worked for Media Firm where he was Head of Finance for 4 years. Prior to that Zabih was with the United Nations and Norwegian Embassy as a programme officer in Kabul, Afghanistan.</p>
     <p>Zabih is a hard-working, enthusiastic team player. And whether it’s matching the day books with the ledger control accounts, resolving client queries or processing payments, he likes to think the oil he adds to Codurance financial cogs help keep the company moving’ on up.</p>
     <p>When he is not super busy balancing the books, Zabih can be found playing snooker or watching documentary movies. He also loves to spend time with his family, especially his newest addition (baby girl) to the family!</p>
-  email: zabih.safdari@codurance.com
   office: london
 
 - id: david_welch
@@ -918,7 +884,6 @@
     <p>David has been fascinated by computers since primary school and has a range of programming experience including embedded systems, single-page webapps, and Excel VBA addons! Much of David's current work has been on developing serverless applications in AWS for the purpose of orchestrating flows such as media transcoding and data processing.</p>
     <p>In his free time he is slowly learning to play the Piano and enjoys Boardgames in Pubs; his favourite drink is a coffee porter and his favourite game is Sushi GO!. He also enjoys playing around with Maths.</p>
   github: djwelch
-  email: david.welch@codurance.com
   office: london
 
 - id: nichole_mellekas
@@ -930,7 +895,6 @@
     <p>Marketing has always been a passion for Nichole, even before the paychecks were rolling in. The love of marketing comes from a place of wanting to understand how and why people communicate and having a chance to influence and improve those interactions. In so many words, she’s a digital anthropologist.</p>
     <p>In her spare time, she loves to travel, go to the beach, eat, drink, and explore. You will always find her with an iced coffee in hand regardless of the weather.</p>
   linkedin: nicholemellekas
-  email: nichole.mellekas@codurance.com
   office: london
 
 - id: emily_reboul
@@ -944,7 +908,6 @@
     She will probably ask a lot of questions in return so do tell her if it feels too much like an interview!</p>
     <p>Other than that she loves reading books about everything and anything, outdoor activities (like hiking) and board games.</p>
   linkedin: crematogaster
-  email: emily.reboul@codurance.com
   office: barcelona
 
 - id: kristian_munoz
@@ -956,7 +919,6 @@
     He found out what he really liked and has been working as a backend developer since then.</p>
     <p>He has experience with PHP but if you ask him he will tell you the great things about Kotlin.</p>
     <p>In his free time he likes to do CrossFit and outdoor sports, astronomy, reading books and Netflix, for sure.</p>
-  email: kristian.munoz@codurance.com
   office: barcelona
 
 - id: ewan_sheldon
@@ -967,5 +929,4 @@
     <p>Ewan started his software career by studying at Makers Academy, and has since spent three years working as an engineer with a small tech startup, developing a number of products including cloud-based WiFi management dashboards and venue booking platforms for food traders.</p>
     <p>He is eager to learn from good people around him to improve his technical and professional skills.</p>
     <p>In his spare time, he enjoys films, cryptic crosswords and baking, and is a big Arsenal fan.</p>
-  email: ewan.sheldon@codurance.com
   office: london
