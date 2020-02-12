@@ -969,3 +969,16 @@
     <p>In his spare time, he enjoys films, cryptic crosswords and baking, and is a big Arsenal fan.</p>
   email: ewan.sheldon@codurance.com
   office: london
+
+- id: matt_belcher
+  name: Matt Belcher
+  image: /assets/custom/img/team/matt_belcher.jpg
+  role: Principal Craftsperson
+  fullDescription:
+    <p>After completing his degree in Computer Science, Matt joined a medium-sized online travel company as a Systems Developer. During his time there he got the opportunity to work with a team of consultants from ThoughtWorks on building the first Service-Oriented-Architecture within the company. That was Matt’s first experience working in an Agile manner and following XP practices. From there, his passion for Agile practices and software craftsmanship grew and a year later he joined ThoughtWorks. </p>
+    <p>During 8 years with ThoughtWorks, Matt worked with a large number of clients across many locations, tech stacks, languages and technical architectures. He played numerous roles during his time from Software Developer to Technical Lead. Matt is passionate about helping Organisations improve their software delivery capabilities, whether it be through embedding good technical practices or establishing a clear technical vision. </p>
+    <p> In his spare time, Matt enjoys travelling, playing the guitar and keeping fit. He also currently learning Vietnamese. </p>
+  github: MattBelcher
+  twitter: matt_p_belcher
+  email: matthew.belcher@codurance.com
+  office: london
