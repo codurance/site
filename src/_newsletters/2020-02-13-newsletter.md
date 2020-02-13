@@ -3,13 +3,13 @@ layout: newsletter
 asset-type: newsletter
 name: newsletter-february-2020
 title: 'Newsletter - February 2020'
-date: 2020-01-07 15:00:00 +00:00
+date: 2020-02-13 15:00:00 +00:00
 author: Nichole Mellekas
 image:
   src: /assets/custom/img/newsletter/podcast_mic.jpg
 tags:
   - software craftsmanship
-  - TDD
+  - Agile
   - testing
   - newsletter
 ---
@@ -24,6 +24,8 @@ As for the rest of the newsletter, we've included lots of content that will hope
 
 Until next time,   
 The Codurance team
+
+===
 
 # Reflection on Leadership and Effectiveness
 
@@ -54,6 +56,8 @@ This is a very large topic but also a very important one. I recommend that we al
 ### [Agile is a Dirty Word](https://www.youtube.com/watch?v=2vUgi8OGw5E&utm_source=newsletter&utm_medium=email&utm_campaign=feb2020)
 
 James Birnie's presentation, “Agile is a Dirty Word” is a wonderful mixture of dry humour, real-life anecdotes, and tales of dysfunctional business that everyone can relate to. This talk is not just a lament against dysfunction, but it’s become a playbook of practical steps that can be used to effect lasting change in any organisation.
+
+===
 
 ## Video
 
