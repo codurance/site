@@ -111,7 +111,7 @@ The Codurance Barcelona team is hosting a series of meetup events focusing on TD
 
 ### London Software Craftsmanship Community
 
-The LSCC is hosting a Coding Dojo at Moonpig on February 16th. For more details and to reserve your spot, please [sign up here](https://www.meetup.com/london-software-craftsmanship/?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020).
+The LSCC is hosting a Coding Dojo at Moonpig on February 17th. For more details and to reserve your spot, please [sign up here](https://www.meetup.com/london-software-craftsmanship/?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020).
 
 ===
 
@@ -147,7 +147,7 @@ This book will help you get started with AWS Lambda and the Serverless Applicati
 
 ### [Your Code As a Crime Scene: Use Forensic Techniques to Arrest Defects, Bottlenecks, and Bad Design in Your Programs](https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020)
 
-This book will help you get started with AWS Lambda and the Serverless Application Model. Lambda is Amazon’s engine for running event-driven functions, and SAM is an open-source toolkit that greatly simplifies deploying Lambda services. Together, they make it easy to create auto-scaling APIs and cloud services designed for serverless.
+In this book, you'll learn forensic psychology techniques to successfully maintain your software. You'll learn how to apply these techniques on projects both large and small. Come join the hunt for better code!
 
 ### [Software Design X-Rays: Fix Technical Debt and Behavioral Code Analysis](https://www.goodreads.com/book/show/36517037-software-design-x-rays?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020)
 
