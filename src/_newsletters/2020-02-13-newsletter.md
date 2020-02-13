@@ -111,7 +111,7 @@ The Codurance Barcelona team is hosting a series of meetup events focusing on TD
 
 ### London Software Craftsmanship Community
 
-The LSCC is hosting a Coding Dojo at Moonpig on February 16th. For more details and to reserve your spot, please [sign up here](https://www.meetup.com/london-software-craftsmanship/?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020).
+The LSCC is hosting a Coding Dojo at Moonpig on February 17th. For more details and to reserve your spot, please [sign up here](https://www.meetup.com/london-software-craftsmanship/?utm_source=newsletter&utm_medium=email&utm_campaign=feb2020).
 
 ===
 
