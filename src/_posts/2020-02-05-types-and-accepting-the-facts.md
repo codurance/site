@@ -190,6 +190,9 @@ Those two are different constructs in the languages but they are the same abstra
 We could see the difference between type systems and how do they work. We also spoke a little about abstractions, which we will cover more in the next part where we have start building using our type system more and more to help us to write an application. In case you want to know more about type systems I recommend you to go straight to the sources:
 
 [What To Know Before Debating Type Systems](https://blog.steveklabnik.com/posts/2010-07-17-what-to-know-before-debating-type-systems)
+
 [Using the type system to ensure correct code](https://fsharpforfunandprofit.com/posts/correctness-type-checking/)
+
 [Type System - Wikipedia](https://en.wikipedia.org/wiki/Type_system)
+
 [An Introduction To Programming Type Systems](https://www.smashingmagazine.com/2013/04/introduction-to-programming-type-systems/)
