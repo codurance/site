@@ -6,9 +6,13 @@ title: Types and accepting the fact that I might not be that smart.
 date: 2020-02-05 00:00:00 +00:00
 author: André Guelfi Torres
 image:
-    src: /assets/custom/img/blog/my-first-month-at-codurance.png
+    src: /assets/custom/img/blog/jigsaw-types.jpg
+    attribution:
+        text: Photo by Gabriel Crismariu on Unsplash
+        href: https://unsplash.com/photos/sOK9NjLArCw
 tags:
     - types
+abstract: Let's talk about the basics of type systems and how they can help us
 ---
 
 # Types and accepting the fact that I might not be that smart.
