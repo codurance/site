@@ -114,7 +114,7 @@ In case of other problems, refer to the [troubleshooting section](#troubleshooti
 
 ### Adding an abstract to a post
 
-- See [Jenkins example post](/site/blob/master/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
+- See [Jenkins example post](https://github.com/codurance/site/blob/master/src/_posts/2014-10-03-guide-to-deploying-artifacts-with-jenkins.md), especially the ``abstract`` field.
 - Note: comments can only be single line
 - Note: Even if they are too long, they'll be cut to 30 words
 
