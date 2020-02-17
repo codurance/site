@@ -400,18 +400,6 @@
   linkedin: alasdair-smith
   office: manchester
 
-- id: rory_collins
-  name: Rory Collins
-  image: /assets/custom/img/team/rory_collins.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Always one for solving a puzzle, Rory quickly took to programming and has spent the last ten years honing his craft across the retail and financial sectors, prior to joining Codurance.</p>
-    <p>From this experience Rory has acquired a strong passion for designing and developing software systems correctly, utilising patterns and adhering to the SOLID principles to produce clean code.</p>
-    <p>When Rory doesn't have his nose in a technical book, he can often be found in his kitchen, at the local board game café, or enjoying a Stephen King novel.</p>
-  github: RoryCollins
-  twitter: Rory_Collins_
-  office: london
-
 - id: jordi_creus
   name: Jordi Creus
   image: /assets/custom/img/team/jordi_creus.jpg
