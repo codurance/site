@@ -45,154 +45,169 @@
           </li>
         </ul>
       </div>
-      {% for post in paginator.posts %} {% if forloop.index0 == 0 %} {% include
-      postwide.html post=post %} {% elsif forloop.index0 == 1 %}
-      <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
-        <!-- Static Quote -->
-        <article
-          class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-green"
-        >
-          <h2 class="h3 g-color-white g-font-weight-600 mb-4">
-            Did you hone your skills today?
-          </h2>
-          <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
-            Try Katalyst
-          </h3>
-          <a class="u-link-v2" href="http://katalyst.codurance.com"></a>
-        </article>
-        <!-- End Static Quote -->
-      </div>
-      {% include post.html post=post %} {% elsif forloop.index0 == 2 %} {%
-      include post.html post=post %}
-      <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
-        <!-- Static Quote -->
-        <article
-          class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-orange"
-        >
-          <h2 class="h3 g-color-white g-font-weight-600 mb-4">
-            Interested in joining us?
-          </h2>
-          <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
-            Learn more
-          </h3>
+      {% for post in paginator.posts %}
+        {% if forloop.index0 == 0 %}
+          {% include postwide.html post=post %}
+        {% elsif forloop.index0 == 1 %}
+          <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
+            <!-- Static Quote -->
+            <article
+              class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-green"
+            >
+              <h2 class="h3 g-color-white g-font-weight-600 mb-4">
+                Did you hone your skills today?
+              </h2>
+              <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
+                Try Katalyst
+              </h3>
+              <a class="u-link-v2" href="http://katalyst.codurance.com"></a>
+            </article>
+            <!-- End Static Quote -->
+          </div>
+          {% include post.html post=post %}
+        {% elsif forloop.index0 == 2 %}
+          {% include post.html post=post %}
+          <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
+            <!-- Static Quote -->
+            <article
+              class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-orange"
+            >
+              <h2 class="h3 g-color-white g-font-weight-600 mb-4">
+                Interested in joining us?
+              </h2>
+              <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
+                Learn more
+              </h3>
 
-          <a
-            class="u-link-v2"
-            href="{{ '/careers' | prepend: site.baseurl }}"
-          ></a>
-        </article>
-        <!-- End Static Quote -->
-      </div>
-      {% elsif forloop.index0 == 4 %} {%
-      include post.html post=post %}
-      <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
-        <!-- Static Quote -->
-        <article
-                class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-red"
-        >
-          <h2 class="h3 g-color-white g-font-weight-600 mb-4">
-            Are you receiving the Codurance newsletter?
-          </h2>
-          <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
-            SIGN UP
-          </h3>
+              <a
+                class="u-link-v2"
+                href="{{ '/careers' | prepend: site.baseurl }}"
+              ></a>
+            </article>
+            <!-- End Static Quote -->
+          </div>
+        {% elsif forloop.index0 == 4 %}
+          {% include post.html post=post %}
+          <div class="masonry-grid-item col-sm-6 col-lg-4 g-mb-30">
+            <!-- Static Quote -->
+            <article
+                    class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-primary text-center g-rounded-5 g-pa-30 g-py-100 g-bg-red"
+            >
+              <h2 class="h3 g-color-white g-font-weight-600 mb-4">
+                Are you receiving the Codurance newsletter?
+              </h2>
+              <h3 class="g-color-white-opacity-0_8 g-font-size-13 text-uppercase">
+                SIGN UP
+              </h3>
 
-          <a
-                  target="_blank"
-                  class="u-link-v2"
-                  href="https://mailchi.mp/codurance/newsletter-subscription"
-          ></a>
-        </article>
-        <!-- End Static Quote -->
-      </div>
-      {% else %} {% include post.html post=post %} {% endif %} {% endfor %}
+              <a
+                      target="_blank"
+                      class="u-link-v2"
+                      href="https://mailchi.mp/codurance/newsletter-subscription"
+              ></a>
+            </article>
+            <!-- End Static Quote -->
+          </div>
+        {% else %}
+          {% include post.html post=post %}
+        {% endif %}
+      {% endfor %}
     </div>
 
     <!-- Pagination -->
     {% if paginator.total_pages > 1 %}
-    <nav class="text-center" aria-label="Page Navigation">
-      <ul class="list-inline">
-        {% if paginator.previous_page %}
-        <li class="list-inline-item float-left g-hidden-xs-down">
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16"
-            href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
-            aria-label="Previous"
-          >
-            <span aria-hidden="true">
-              <i class="fa fa-angle-left g-mr-5"></i> Previous
-            </span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        {% endif %} {% assign startPage = paginator.page | minus: 3 %} {% if
-        startPage < 1 %}{% assign startPage = 1 %}{% endif %} {% assign endPage
-        = startPage | plus: 10 %} {% if endPage > paginator.total_pages %}{%
-        assign endPage = paginator.total_pages %}{% endif %} {% assign
-        distanceFromStart = startPage | minus: 1 %} {% if distanceFromStart > 0
-        %}
-        <li class="list-inline-item">
-          {% assign pageUrl = '/publications/:filter' | replace: ':filter',
-          include.filter | prepend: site.baseurl %}
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 {% if 1==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
-            href="{{ pageUrl }}"
-            >1</a
-          >
-        </li>
-        {% endif %} {% if distanceFromStart > 1 %}
-        <li class="list-inline-item g-hidden-sm-down">
-          <a class="g-pa-7-14">...</a>
-        </li>
-        {% endif %} {% for page in (startPage..endPage) %}
-        <li class="list-inline-item">
-          {% assign pageUrl = '/publications/:filter' | replace: ':filter',
-          include.filter | prepend: site.baseurl %} {% if page == 1 %}
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
-            href="{{ pageUrl }}"
-            >{{ page }}</a
-          >
-          {% else %}
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
-            href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/' }}"
-            >{{ page }}</a
-          >
+      <nav class="text-center" aria-label="Page Navigation">
+        <ul class="list-inline">
+          {% if paginator.previous_page %}
+            <li class="list-inline-item float-left g-hidden-xs-down">
+              <a
+                class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16"
+                href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+                aria-label="Previous"
+              >
+                <span aria-hidden="true">
+                  <i class="fa fa-angle-left g-mr-5"></i> Previous
+                </span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
           {% endif %}
-        </li>
-        {% endfor %} {% assign distanceFromEnd = paginator.total_pages | minus:
-        endPage %} {% if distanceFromEnd > 1 %}
-        <li class="list-inline-item g-hidden-sm-down">
-          <a class="g-pa-7-14">...</a>
-        </li>
-        {% endif %} {% if distanceFromEnd > 0 %}
-        <li class="list-inline-item">
-          {% assign pageUrl = '/publications/:filter' | replace: ':filter',
-          include.filter | prepend: site.baseurl %}
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14"
-            href="{{ pageUrl | append: '/page:num' | replace: ':num', paginator.total_pages | replace: '//', '/' }}"
-            >{{ paginator.total_pages }}</a
-          >
-        </li>
-        {% endif %} {% if paginator.next_page %}
-        <li class="list-inline-item float-right g-hidden-xs-down">
-          <a
-            class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16"
-            href="{{ paginator.next_page_path | prepend: site.baseurl }}"
-            aria-label="Next"
-          >
-            <span aria-hidden="true">
-              Next
-              <i class="fa fa-angle-right g-ml-5"></i>
-            </span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-        {% endif %}
-      </ul>
-    </nav>
+          {% assign startPage = paginator.page | minus: 3 %}
+          {% if startPage < 1 %}
+            {% assign startPage = 1 %}
+          {% endif %}
+          {% assign endPage = startPage | plus: 10 %}
+          {% if endPage > paginator.total_pages %}
+            {% assign endPage = paginator.total_pages %}
+          {% endif %}
+          {% assign distanceFromStart = startPage | minus: 1 %}
+          {% if distanceFromStart > 0 %}
+            <li class="list-inline-item">
+              {% assign pageUrl = '/publications/:filter' | replace: ':filter',
+              include.filter | prepend: site.baseurl %}
+              <a
+                class="u-pagination-v1__item u-pagination-v1-4 {% if 1==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
+                href="{{ pageUrl }}"
+                >1</a
+              >
+            </li>
+          {% endif %}
+          {% if distanceFromStart > 1 %}
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="g-pa-7-14">...</a>
+            </li>
+          {% endif %}
+          {% for page in (startPage..endPage) %}
+            <li class="list-inline-item">
+              {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
+              {% if page == 1 %}
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
+                  href="{{ pageUrl }}"
+                  >{{ page }}</a
+                >
+              {% else %}
+                <a
+                  class="u-pagination-v1__item u-pagination-v1-4 {% if page==paginator.page %} u-pagination-v1-4--active {% endif %} g-rounded-50 g-pa-7-14"
+                  href="{{ pageUrl | append: '/page:num' | replace: ':num', page | replace: '//', '/' }}"
+                  >{{ page }}</a
+                >
+              {% endif %}
+            </li>
+          {% endfor %}
+          {% assign distanceFromEnd = paginator.total_pages | minus: endPage %}
+          {% if distanceFromEnd > 1 %}
+            <li class="list-inline-item g-hidden-sm-down">
+              <a class="g-pa-7-14">...</a>
+            </li>
+          {% endif %}
+          {% if distanceFromEnd > 0 %}
+            <li class="list-inline-item">
+              {% assign pageUrl = '/publications/:filter' | replace: ':filter', include.filter | prepend: site.baseurl %}
+              <a
+                class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14"
+                href="{{ pageUrl | append: '/page:num' | replace: ':num', paginator.total_pages | replace: '//', '/' }}"
+                >{{ paginator.total_pages }}</a
+              >
+            </li>
+          {% endif %}
+          {% if paginator.next_page %}
+            <li class="list-inline-item float-right g-hidden-xs-down">
+              <a
+                class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16"
+                href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+                aria-label="Next"
+              >
+                <span aria-hidden="true">
+                  Next
+                  <i class="fa fa-angle-right g-ml-5"></i>
+                </span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
     {% endif %}
     <!-- End Pagination -->
   </div>
