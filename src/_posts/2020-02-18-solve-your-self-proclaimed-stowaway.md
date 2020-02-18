@@ -1,7 +1,7 @@
 ---
 layout: post
 asset-type: post
-name: solution-to-a-self-proclaimed-stowaway
+name: solution-to-imposter-syndrome
 title: Solution to an apprentice's self proclaimed Imposter Syndrome
 date: 2020-02-18 00:00:00 +00:00
 author: José Pablo Wenzel
