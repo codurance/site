@@ -7,7 +7,7 @@ date: 2020-02-18 00:00:00 +00:00
 author: José Pablo Wenzel
 description: Some tips and tricks to overcome your Imposter Syndrome
 image:
-    src: /assets/custom/img/blog/2020-02-18-solve-your-self-proclaimed-stowaway/imposter-landscape.jpg
+    src: /assets/custom/img/blog/2020-02-18-solution-to-imposter-syndrome/imposter-landscape.jpg
 tags:
     - life at codurance
     - apprenticeship
@@ -19,7 +19,7 @@ I have heard more than once from former apprentices, that during the program it 
 That is why the beginning of the program was unnecessarily challenging for me. On the one hand, coming to a place where all my colleagues are renowned professionals in the industry, and on the other hand, to enter a program where my fellow apprentices have different levels of experience and expertise.
 In this post, I will talk about the practices that helped me overcome the fear of getting called out on my self-imposed feelings of inexperience and under qualification.
 
-![Imposter Picture]({{site.baseurl}}/assets/custom/img/blog/2020-02-18-solve-your-self-proclaimed-stowaway/imposter.jpg)
+![Imposter Picture]({{site.baseurl}}/assets/custom/img/blog/2020-02-18-solution-to-imposter-syndrome/imposter.jpg)
 
 ## Don't look for the bouncer
 
