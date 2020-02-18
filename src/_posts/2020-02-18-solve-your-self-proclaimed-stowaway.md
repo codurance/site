@@ -5,10 +5,12 @@ name: solution-to-a-self-proclaimed-stowaway
 title: Solution to an apprentice's self proclaimed Imposter Syndrome
 date: 2020-02-18 00:00:00 +00:00
 author: José Pablo Wenzel
+description: Some tips and tricks to overcome your Imposter Syndrome
 image:
     src: /assets/custom/img/blog/2020-02-18-solve-your-self-proclaimed-stowaway/imposter-landscape.jpg
 tags:
     - life at codurance
+    - apprenticeship
 ---
 
 # How to go through the apprenticeship program without feeling like an imposter
