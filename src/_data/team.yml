@@ -910,3 +910,15 @@
   twitter: matt_p_belcher
   email: matthew.belcher@codurance.com
   office: london
+
+- id: dmitri_bontoft
+  name: Dmitri Bontoft
+  image: /assets/custom/img/team/dmitri_bontoft.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Having discovered code on a friend's ZX81 at the age of 10, pair programming started early for Dmitri.</p>
+    <p>He still believes that coding, at its most rewarding, is a social activity and that there's nothing better than the appreciation of our colleagues and the people who benefit from our software.</p>
+    <p>When he isn't coding he likes to travel, meet new people and discover new ways of thinking. Ideally while swimming, mountain biking or skiing in beautiful parts of the world.</p>
+  github: DmitriBontoft
+  email: dmitri.bontoft@codurance.com
+  office: london
