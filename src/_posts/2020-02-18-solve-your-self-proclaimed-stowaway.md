@@ -18,7 +18,6 @@ That is why the beginning of the program was unnecessarily challenging for me. O
 In this post, I will talk about the practices that helped me overcome the fear of getting called out on my self-imposed feelings of inexperience and under qualification.
 
 ![Imposter Picture]({{site.baseurl}}/assets/custom/img/blog/2020-02-18-solve-your-self-proclaimed-stowaway/imposter.jpg)
-Source [Pablo Stanley](https://twitter.com/pablostanley/status/1052652598254129153)
 
 ## Don't look for the bouncer
 
