@@ -29,8 +29,6 @@ There are several pilars to build a team uppon, if you want to levarage the chan
 Now imagine the team is composed of skilled and experienced members, but they are in different locations, or perhaps working remote, or working alternate days from home, or even in different time zone.
 
 This is a perfectly valid team set up in our brand new highly connected world, and defy the traditional ways of working, and put our engineering practices under the loupe, make us thrive to find the best to coupe with the new context, but still using the best known practices in its escense.
-
-![RemotePairingPic1: openSpace1]({{site.baseurl}}/assets/custom/img/blog/2020-02-20-remote-pairing-a-strue-story/blog-pic1.jpg)
  
 ## Pair Prorgramming
 Pair programming is considered a Core Practice among those 12 practices ennumerated within the XP scope, and is basically a social activity, is the point where two developers join to work together in the same tool they use to produce their craft, create enriched code that emerges from their interaction.
@@ -68,17 +66,3 @@ Pair programming is though, and requires practice and some sort of expertice fro
 There are innumerable ammount of developers that object the benefits of it without even trying it. Trust me, try it, give it a run and evaluate the results. You'll be tired but the outcome of your craft will be benefitial for the whole team and you'll also will learn from your pair.
 
 And do not allow remote working prevent you from doing it, above I left some hints based on our experience working in a Codurance project where, despite its ups and downs, we managed to work collaboratively as a team with the involvement of Barcelona, London and Manchester team memebers.
-
-
-
-
-
-
-
-
-
-
-
-
-
-![RemotePairingPic1: openSpace2]({{site.baseurl}}/assets/custom/img/blog/2020-02-20-remote-pairing-a-strue-story/blog-pic1.jpg)
