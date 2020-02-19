@@ -14,7 +14,7 @@ image:
 tags:
     - software craftsmanship
     - life at codurance
-    - pair programming
+    - pair-programming
 ---
 
 ## Context
