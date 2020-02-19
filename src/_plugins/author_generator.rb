@@ -44,8 +44,11 @@ module Jekyll
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['author_meta_description_prefix'] || 'author: '
       self.data['description'] = "#{meta_description_prefix}#{author}"
-      self.data['publications'] = site.collections.values.flatten.select do |post| post.data["author"] == author end
-      
+      # Posts should be sorted by date descendingly
+      publications = site.collections.values.flatten.select do |post| post.data["author"] == author end
+      publications = publications.sort_by{ |post| post.data["date"] }.reverse
+      self.data['publications'] = publications
+    
     end
   end
 
