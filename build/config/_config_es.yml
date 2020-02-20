@@ -1,2 +1,4 @@
 # jekyll-multiple-languages-plugin settings:
 languages: ["es"]
+# Fix the errorous redirection to English version from jekyll-redirect-from plugin
+url: "https://codurance.es"
