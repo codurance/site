@@ -3,7 +3,8 @@ author: Jorge Gueorguiev Garcia
 asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-20
-image: src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
+image:
+    src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 20 - Pair Programming"
 video-url: https://www.podbean.com/media/player/juc49-d44633?from=yiiadmin&download=1&version=1&skin=1&btn-skin=107&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
 date: 2020-02-20 05:00:00 +00:00
