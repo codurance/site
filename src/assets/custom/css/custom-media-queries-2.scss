@@ -21,6 +21,16 @@
     .image-side-by-side-text {  /* 0 0 1 0 */
         float: none;
     }
+    .img-fluid {
+        width: 80%;
+        height: auto;
+        padding: 20%;
+    }
+
+    .client-client-logo-cta {
+        max-width: 100%;
+        padding: 15px 15px 15px 15px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -69,12 +79,21 @@
     .bg-slider {
         display: block;
     }
+
 }
 
 @media (max-width: 1224px) {
     .video-bg-wrapper,
     .feature-panel {
         height: 550px;
+    }
+}
+
+/* min-widths */
+
+@media (min-width: 768px) {
+    .client-client-logo-cta {
+        max-width: 190px;
     }
 }
 

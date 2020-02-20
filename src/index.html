@@ -32,11 +32,20 @@ layout: default
       <h2>{% t index-activity.title %}</h2>
     </div>
     <div class="row blog-boxes margin-bottom-40">
-      {% assign podcast = site.podcasts | sort: 'date' | reverse %}
+      {% assign podcast = site.posts | sort: 'date' | reverse %}
       {% include latest_highlights.html param=podcast %}
 
-      {% assign video = site.videos | reverse %}
-      {% include latest_highlights.html param=video %}
+      {% assign entries = site.emptyArray %}
+      {% for podcast in site.podcasts %}
+        {% assign entries = entries | push: podcast %}
+      {% endfor %}
+
+      {% for video in site.videos %}
+        {% assign entries = entries | push: video %}
+      {% endfor %}
+
+      {% assign media = entries | sort: 'date' | reverse %}
+      {% include latest_highlights.html param=media %}
 
       {% assign event = site.events | reverse %}
       {% include latest_highlights.html param=event %}
@@ -72,6 +81,9 @@ layout: default
         <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
       </div>
       {% endfor %}
+      <div class="client-client-logo-cta">
+        <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/clients' | prepend: site.baseurl }}">See More</a>
+      </div>
     </div>
 
   </div>

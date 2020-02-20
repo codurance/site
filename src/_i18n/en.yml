@@ -246,7 +246,7 @@ services:
     title: Our clients
   our-expertise:
     title: Our Expertise
-    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship value, XP Practices, a Devops culture, and Agile Processes.
+    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship values, XP Practices, a Devops culture, and Agile Processes.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.

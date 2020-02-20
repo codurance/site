@@ -7,6 +7,9 @@ date: 2017-05-17 09:00:00 +00:00
 author: Mashooq Badar
 image:
   src: /assets/custom/img/newsletter/newsletter-default.png
+  attribution: 
+    text: Photo by Amador Loureiro on Unsplash
+    href: https://unsplash.com/photos/BVyNlchWqzs
 tags:
 - software craftsmanship
 - TDD

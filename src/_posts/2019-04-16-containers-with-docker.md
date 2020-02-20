@@ -9,6 +9,9 @@ abstract: Today in this post, we build a docker image, docker-compose instantiat
 image: 
     src: /assets/custom/img/blog/intro-docker/containers.jpg
     thumbnail: /assets/custom/img/blog/intro-docker/containers.jpg
+    attribution:
+      text: Photo by Klaus Tan on Unsplash
+      href: https://unsplash.com/photos/fN603qcEA7g
 tags: 
 - containers
 - docker
