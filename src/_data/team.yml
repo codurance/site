@@ -61,13 +61,14 @@
 - id: giulia
   name: Giulia Mantuano
   image: /assets/custom/img/team/giulia_mantuano.jpg
-  role: UX Craftswoman
+  role: Product Craftswoman
   fullDescription:
-    <p>Giulia has worked as a design consultant and art director in an integrated communications agency for more than ten years, developing both the design talent and business knowledge necessary for creating meaningful holistic brand experiences.</p>
+    <p>Giulia is a strong and positive Product Leader.</p>
+    <p>For more than 15 years she provided Art Direction, Brand Strategy, UX Design, and UX Research consultancy to startups, and small and medium-sized enterprises in a wide variety of sectors, including public, electronics, healthcare, food and beverage, and advertising agencies.</p>
     <p>Giulia joined Codurance driven by the desire to apply the Software Craftsmanship mindset and values to the whole product and service design process.</p>
-    <p>She is a Certified Scrum Master and Certified Scrum Product Owner with a strong focus on the present and the future of a product, backed up by her Integrated Design background and the mastery of User Experience Design skills.</p>
-    <p>Aiming to bridge stakeholders and development teams, she facilitates their collaboration in designing solutions that balance business needs, technical feasibility and user expectations, with tools like Impact Mapping and User Story Mapping.</p>
-    <p>She believes in continuous learning, and her current interest is Product Strategy and User Experience Design for Conversational Interfaces and Internet of Things technologies.</p>
+    <p>Aiming at bridging and aligning stakeholders and product teams, she facilitates their collaboration to deliver software products that better address customers needs and solve business problems, by adopting Design Thinking, Lean and Agile practices, and tools accordingly to the challenges the customer faces.</p>
+    <p>Giulia is a Certified Scrum Master and Product Owner with a strong focus on the present and the future of a product backed up by her Integrated Design background and the mastery of User Experience Design skills. She is Nielsen Norman Group UX Certified and an ICAgile Certified Professional in Agile Coaching. She coaches and leads teams in Agile and Lean practices.</p>
+    <p>Outside of Codurance Giulia is an amateur boxer. Her last achievement was winning the International Championship Women Winter Box Cup 2019 in the 69Kg category.</p>
   twitter: giuliamantuano
   github: giuliamantuano
   office: london
