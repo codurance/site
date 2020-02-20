@@ -39,8 +39,8 @@ describe 'author index' do
   it 'Author\'s publications are sorted descendingly by date' do
     site = double
     file = double
-    early_post = double
-    late_post = double
+    old_post = double
+    new_post = double
 
     allow(Jekyll::Utils).to receive(:merged_file_read_opts)
     allow(File).to receive(:read).and_return(file)
@@ -49,14 +49,14 @@ describe 'author index' do
     allow(site).to receive(:file_read_opts)
     allow(site).to receive(:config).and_return({})
     
-    allow(early_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2000,1,1) })
-    allow(late_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2001,1,1) })
+    allow(old_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2000,1,1) })
+    allow(new_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2001,1,1) })
     allow(site).to receive(:collections).and_return({ 
-      "posts" => [ early_post, late_post ]
+      "posts" => [ old_post, new_post ]
       })
     
     author_index = Jekyll::AuthorIndex.new(site, "", "", "Author") 
-    expect(author_index.data["publications"]).to eq([late_post, early_post])
+    expect(author_index.data["publications"]).to eq([new_post, old_post])
   end  
 end  
 
