@@ -131,8 +131,6 @@ company-who_are_we:
     </p>
     <p>Nuestros craftspeople son reconocidos por su experiencia tecnológica, especialmente en Web, Devops, Big Data, Continuous Delivery y Cloud Platforms. Participamos como ponentes en muchas conferencias en todo el mundo, escribimos <a href="http://codurance.com/blog/">blogs</a> y creamos <a href="http://codurance.com/videos/">screencasts</a>.
     </p>
-company-the_team:
-  title: El equipo
 company-our_culture:
   title: Nuestra cultura
   subtitle: <p>Nuestros craftspeople y aprendices son el núcleo de nuestra empresa. Nos llamamos craftspeople como una manera de expresar la pasión que tenemos por la creación de software bien elaborado. Como muchos de nosotros llegamos a Codurance a través de las comunidades de Crafts[wo]manship (Londres y algunas otras en Europa), está en nuestro ADN organizar sesiones internas en las que aprender y compartir conocimiento con los demás. Nuestra gente nunca está sola, incluso cuando trabajan con un cliente. Nos ayudamos los unos a los otros constantemente, sin importar en qué proyecto estamos trabajando.</p>
