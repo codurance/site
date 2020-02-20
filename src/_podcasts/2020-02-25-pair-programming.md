@@ -14,6 +14,14 @@ First podcast for the new year, from a studio!!!!. And we are talking about some
 
 As part of the podcast we mentioned the post by [Birgitta Böckeler](https://twitter.com/birgitta410) and [Nina Siesseger](https://sssggr.net/): [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
 
+The Group Photo:
+![Group Photo]({{site.baseurl}}/assets/custom/img/podcasts/podcast-20-pair-programming/podcast-pairprogramming-group.jpg)
+
+Alasdair and Mattsi
+![Alasdair and Mattsi]({{site.baseurl}}/assets/custom/img/podcasts/podcast-20-pair-programming/podcast-pairprogramming-alasdair-mattsi.jpg)
+
+Laurence and Jorge
+![Laurence and Jorge]({{site.baseurl}}/assets/custom/img/podcasts/podcast-20-pair-programming/podcast-pairprogramming-laurence-jorge.jpg)
 
 Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
