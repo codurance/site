@@ -19,7 +19,13 @@
                 </div>
             </div>
         </div>
-        <a href="{{ page.image.attribution.href }}" target="_blank"><span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span></a>
+        {% if page.image.attribution.href %}
+        <a href="{{ page.image.attribution.href }}" target="_blank">
+        {% endif %}
+            <span class="g-color-white-opacity-0_5 g-font-size-10 pull-right">{{ page.image.attribution.text }}</span>
+        {% if page.image.attribution.href %}
+        </a>
+        {% endif %}
     </div>
 </section>
 
