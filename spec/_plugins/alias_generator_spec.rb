@@ -13,10 +13,10 @@ describe 'author index' do
 
     allow(video).to receive(:data).and_return({ 'author' => "Author", 'title' => "Star Wars: The Empire Strikes Back"})
     allow(newsletter).to receive(:data).and_return({ 'author' => "NotOurAuthor", 'title' => "Truck Simulator Weekly"})
-    allow(post).to receive(:data).and_return({ 'author' => "Author", 'title' => "I Don't Like Bundle Very Much" })
+    allow(post).to receive(:data).and_return({ 'author' => "Author", 'title' => "I Don't Like Bundle Very Much"})
 
     allow(Jekyll::Utils).to receive(:merged_file_read_opts)
-    allow(File).to  receive(:read).and_return(file)
+    allow(File).to receive(:read).and_return(file)
 
     allow(site).to receive(:in_source_dir)
     allow(site).to receive(:file_read_opts)
@@ -28,7 +28,35 @@ describe 'author index' do
       })
     
     author_index = Jekyll::AuthorIndex.new(site, "base", "author_dir", "Author") 
-    expect(author_index.data).to eq({ 'author' => "Author", 'description' => 'author: Author', "publications" => [video, post], 'title' => "Author"})
+    
+    expect(author_index.data['author']).to eq("Author")
+    expect(author_index.data['description']).to eq("author: Author")
+    expect(author_index.data['publications']).to include(video, post)
+    expect(author_index.data['publications']).not_to include(newsletter)
+    expect(author_index.data['title']).to eq("Author")
+  end
+
+  it 'Author\'s publications are sorted descendingly by date' do
+    site = double
+    file = double
+    old_post = double
+    new_post = double
+
+    allow(Jekyll::Utils).to receive(:merged_file_read_opts)
+    allow(File).to receive(:read).and_return(file)
+
+    allow(site).to receive(:in_source_dir)
+    allow(site).to receive(:file_read_opts)
+    allow(site).to receive(:config).and_return({})
+    
+    allow(old_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2000,1,1) })
+    allow(new_post).to receive(:data).and_return({ 'author' => "Author", 'title' => "", 'date' => Date.new(2001,1,1) })
+    allow(site).to receive(:collections).and_return({ 
+      "posts" => [ old_post, new_post ]
+      })
+    
+    author_index = Jekyll::AuthorIndex.new(site, "", "", "Author") 
+    expect(author_index.data["publications"]).to eq([new_post, old_post])
   end  
 end  
 
