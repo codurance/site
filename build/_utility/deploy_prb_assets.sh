@@ -13,10 +13,10 @@ FOLDER_NAME=$1
 cd output/_site/
 
 echo "Synchronizing assets to folder: $FOLDER_NAME/en/assets"
-aws s3 sync ./en/assets s3://codurance-site-pr/$FOLDER_NAME/en/assets --size-only --acl public-read
+aws s3 sync ./en/assets s3://codurance-site-pr/$FOLDER_NAME/en/assets --size-only --acl public-read --delete
 
 echo "Synchronizing assets to folder: $FOLDER_NAME/es/assets"
-aws s3 sync ./es/assets s3://codurance-site-pr/$FOLDER_NAME/es/assets --size-only --acl public-read
+aws s3 sync ./es/assets s3://codurance-site-pr/$FOLDER_NAME/es/assets --size-only --acl public-read --delete
 
 aws cloudfront create-invalidation --distribution-id EML2BUMD54HSC --paths "/$FOLDER_NAME/*"
 
