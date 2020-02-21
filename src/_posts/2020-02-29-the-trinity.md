@@ -29,11 +29,13 @@ I started to get involved, got deeper into the Software Craftsmanship idea, dive
 </center>
 </br>
 
-**Agile** helps engage the product, the business, and the interaction a development team has with them.
+**Agile** helps engage the business and the development team around a product, and tries to improve the interaction among them.
 
 **eXtreme Programming** esablished principles and practices that help teams develop not only a product but also a culture of ownership on what the team is building.
 
 **Software Craftsmanship** is more on a personal level, is the passion and the devotion you put into cultivating your skills, sharing knowledge, acquiring broader understanding and the way you embrace the endeavours you are given in a professional life.
+
+All of them share the same vision: give visibility, shorten the feedback loop, enrich the interaction between stakeholders, as corolary, build a better product.
 
 Each vertex of the trinity compliments the other, and on the contrary with the infamous [Iron Triangle](https://en.wikipedia.org/wiki/Project_management_triangle), growing one of them will help expand the others.
 
