@@ -24,11 +24,6 @@ Later on I found myself attracted by the idea that developing software would als
 
 I started to get involved, got deeper into the Software Craftsmanship idea, dived into XP practices and inevitably matched them all with my Software Engineer and Agile Coaching background, and after ruminate on it for a while, I arrived to the the following statement:
 
-<center>
-<img src="{{site.baseurl}}/assets/custom/img/blog/2020-02-29-the-trinity.jpg" alt=“Trinity” class="img img-fluid" style="height: 20%; width: 30%;"/>
-</center>
-</br>
-
 **Agile** helps engage the business and the development team around a product, and tries to improve the interaction among them.
 
 **eXtreme Programming** esablished principles and practices that help teams develop not only a product but also a culture of ownership on what the team is building.
