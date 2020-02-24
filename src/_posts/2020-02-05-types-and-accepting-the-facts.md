@@ -17,19 +17,21 @@ abstract: Let's talk about the basics of type systems and how they can help us
 
 # Types and accepting the fact that I might not be that smart.
 
-I've said quite a few times that I like static typing, but to be honest, I'm probably not the most knowledgeable person around using typing and I wanted to change that. What's going to be the aim of this post? 
+I've said quite a few times that I like static typing, but to be honest, I'm probably not the most knowledgeable person around using typing and I wanted to change that. What's going to be the point of this post? 
 
 I will present some different type systems, provide some examples of how we can use types to solve some code smells, and give more safety to our codebase.
 
 ## Why do I like types?
 
-Usually, I'm not the smartest person in the room. Part of the time I'm at the bottom of the list. A short summary of things I can't do are as follows:
+Usually, I'm not the smartest person in the room, most of the time I'm at the bottom of the list. A short summary of things I can't remember are:
+
+
 
 - Remember the return type for that method that I just created.
 - Remember all the places that I have to change something because of some refactoring, like adding a new field to a constructor.
-- Juggling multiple variables in my head and trying to memorize their types, e.g: Multiple fields that you have to pass for a method.
+- Keep track of multiple variables in my head while trying to memorize their types, e.g: multiple fields that you have to pass for a method.	
 
-Just like the monkeys from 2001: A Space Odyssey, I know how to use tools and how to write better code. I try to rely on every tool, automation, and check that is provided, and we have many things in that area, like compilers, unit tests, and static code analysis.
+Just like the monkeys from 2001: A Space Odyssey, I know how to use tools and how to write better code. I try to rely on every tool, automation and check that is provided, and we have many things in that area, like compilers, unit tests and static code analysis.
 
 Now I'm going to focus on types, but before that let's go through the basics of type systems, so we have context and I can make this post longer to give the false impression that I'm smart and I really understand type systems. 
 
@@ -39,7 +41,7 @@ Type systems can go from very relaxed and they will try to make things work with
 
 ### Dynamic Typing
 
-In dynamically typed languages, you don't have much enforcement on the types that you pass around, you don't have to say which type you want to return or to pass in the parameters, doesn't mean that you should pass anything if you try to call a method or field that doesn't exists your code will break, but besides that, it doesn't matter much. 
+In dynamically typed languages, you don't have much enforcement on the types that you pass around. You don't have to say which type you want to return or to pass in the parameters. However, that doesn't mean that you should pass anything if you try to call a method or field that doesn't exist your code will break, but besides that, it doesn't matter much. 
 
 ```javascript
 function printText(text) {
@@ -47,13 +49,13 @@ function printText(text) {
 }
 ```
 
-See the method above, it has zero enforcement of that will receive or return, it will just print to the console, and that's how dynamic typed languages work, variables have their types assigned at runtime at the moment you pass the value, you don't have to worry with that beforehand. 
+See the method above, it has zero enforcement that will receive or return, it will just print to the console, and that's how dynamically typed languages work. Variables have their types assigned at runtime at the moment you pass the value, you don't have to worry with that beforehand.	
 
-When talking about Dynamic Typed languages we have to understand that dynamic typed languages might have different ways of dealing with typecasting, the more permissive ones are called Weakly typed, an example of the is JavaScript (No hate please. Just dropping facts).
+When talking about Dynamic Typed languages you have to understand that dynamically typed languages might have different ways of dealing with typecasting; the more permissive ones are called Weakly-Typed, an example of this is JavaScript (no hate please. Just dropping facts).
 
 ### Weak Typing
 
-Is the more relaxed version of typing that you can find, usually the interpreter will try to make some  conversions in the types so the operations can be done, let's try to do some calculations with JavaScript:
+This is the more relaxed version of typing that you can find. Usually the interpreter will try to make some conversions in the types so the operations can be done. Let's try to do some calculations with JavaScript:	
 
 ```javascript
     1 + 1   // 2
@@ -63,11 +65,11 @@ Is the more relaxed version of typing that you can find, usually the interpreter
     "1" - 1 // 0
 ```
 
-Let's try to understand what's going on there. The first result is obviously right, but why do we get `"11"` When we try to sum a string with an integer? Under the hood the JavaScript engine is casting the other value to make the operation successful, instead of throwing an error the integer is transformed into a string and concatenated to the other string, the same thing for the third operation. 
+The first result is obviously right, but why do we get "11" when we try to sum a string with an integer? Under the hood the JavaScript engine is casting the other value to make the operation successful, instead of throwing an error the integer is transformed into a string and concatenated to the other string, the same thing for the third operation.	
 
-So why do the last two ones are done over the integer value? In JavaScript, strings have the `+` operator but not the `-`, so to not throw an error the interpreter cast the string value to an integer that has the minus operation. 
+So why are the last two done over the integer value? In JavaScript, strings have the `+` operator but not the `-`, so to not throw an error the interpreter cast the string value to an integer that has the minus operation.
 
-The main thing with Weak Typed systems is that they give preference to casting values and trying to make the operation to happen instead of throwing an error, doesn't mean that they will do the operation 100% of the time, but at least they will try.
+The main thing with Weak Typed systems is that they give preference to casting values and trying to make the operation happen instead of throwing an error, doesn't mean that they will do the operation 100% of the time, but at least they will try.
 
 ### Strong Typing
 
@@ -97,11 +99,11 @@ We still enforce neither parameter nor return type, but what Ruby does is try to
 
 Leaving the land of Dynamic Typed languages and getting into a more strict place, we have static types. Probably everyone is familiar with at least one static language like Java, C#, C++, C, Delphi, and many others.
 
-When dealing with Static Typing we have to be more explicit about our intentions, we need to let people know what we are expecting and what we giving them back, it's like a contract. When we reproduce the same code we did for Ruby and JavaScript in Java we get:
+When dealing with Static Typing we have to be more explicit about our intentions, we need to let people know what we are expecting and what we are giving them back, it's like a contract. When we reproduce the same code we did for Ruby and JavaScript in Java we get:	
 
 ```java
 public void printText(String text) {
-    System.out.printLn(text);
+    System.out.println(text);
 }
 ```
 
@@ -149,17 +151,16 @@ So keep that in mind, even with the safety of a compiler we can't be 100% that o
 
 ## So static types are better than dynamic ones?
 
-Well, not exactly. A compile-time check gives you a guard rail against some problems. Said that relying on types purely to avoid problems isn't the best way to go, even with statically typed languages you are bound to commit mistakes like the one shown previously.
-
-The Ruby and Rails community use unit testing to solve the lack of the compile enforcement but you still need to test your code for runtime exceptions, static languages will not need all this coverage but you still need to test for edge cases in the input and nulls. 
+Well, not exactly. Compile-time check gives you a guard rail against some problems. Having said that, relying on types purely to avoid problems isn't the best way to go, even with statically typed languages you are bound to commit mistakes like the one shown previously.	
+The Ruby and Rails community uses unit testing to solve the lack of the compile enforcement but you still need to test your code for runtime exceptions, static languages will not need all this coverage but you still need to test for edge cases in the input and nulls.
 
 The kind of project that you are doing is also something important when deciding between static or dynamic types. In case you are prototyping something and want to move fast a language that forces you to take care of all cases might not be the best, but it will shine in mission-critical applications that shouldn't crash. 
 
-One of the main reasons to use a static typed language is to try to catch bugs earlier. Is quite well known that the earlies we catch bugs/problems the cheaper is to fix them, if you never heard about that you can read more about that [here](https://www.researchgate.net/publication/255965523_Integrating_Software_Assurance_into_the_Software_Development_Life_Cycle_SDLC). 
+One of the main reasons to use a statically typed language is to try and catch bugs earlier. It is quite well known that the earliest we catch bugs/problems, the cheaper it is to fix them, if you never heard about that you can read more about that [here](https://www.researchgate.net/publication/255965523_Integrating_Software_Assurance_into_the_Software_Development_Life_Cycle_SDLC).
 
 ## Types and abstractions
 
-Remember the reasons that I mentioned earlier? One way to avoid those problems is to abstract those problems in a way that we can reason with more simple terms and that they are presented, force them to tell us what do they mean. 
+Remember the reasons that I mentioned earlier? One way to avoid those problems is to abstract those problems in a way that we can easily reason with simple terms and force them to tell us what they mean.	
 
 There are many ways to create the same abstraction, we can use different types and end up having the same result. 
 
@@ -185,7 +186,7 @@ Those two are different constructs in the languages but they are the same abstra
 
 ## Wrapping up and References
 
-We could see the difference between type systems and how they work. We also spoke a little about abstractions, which we will cover more in the next part where we have started building using our type system more and more to help us to write an application. In case you want to know more about type systems I recommend you to go straight to the sources:
+We could see the difference between type systems and how they work. We also spoke a little about abstractions, which we will cover more in the next part where we have started building using our type system more and more to help us to write an application. In case you want to know more about type systems I recommend you to go straight to these sources:	
 
 [What To Know Before Debating Type Systems](https://blog.steveklabnik.com/posts/2010-07-17-what-to-know-before-debating-type-systems)
 
