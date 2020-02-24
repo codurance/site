@@ -207,7 +207,9 @@ docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_b
 docker push codurance/website_deployment_base:latest 
 ```
 
-## Backstopjs
+## Tests
+
+### Visual Regression Tests
 
 We have some documentation for backstop [here](tools/snapshots/README.md)
 

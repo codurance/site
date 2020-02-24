@@ -15,7 +15,7 @@ backstop reference
 backstop test
 ```
 
-This will open a browser showing the differences. 
+This will open a browser showing the differences.
 Differences are highlighted in purple.
 
 Currently these tests are set up to compare local development with the production site.

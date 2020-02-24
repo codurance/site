@@ -36,6 +36,7 @@ function runBackstopCommand {
   command=$1
 
   cleanup
+  docker-compose build visual_regression_tests
   docker-compose up -d site
   waitForHttp localhost:4000/en/assets/custom/img/blog/swan.png #We wait on an image because Jekyll loads images last
   docker-compose run visual_regression_tests $command
