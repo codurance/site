@@ -60,6 +60,7 @@ window.codurance.cookieMessage = (function() {
     }
 
     function showConsentDependentIframes() {
+        hideMessage();
         for (let index = 0; index < cookieIframeContainers.length; index++) {
             const container = cookieIframeContainers[index];
 
@@ -79,6 +80,7 @@ window.codurance.cookieMessage = (function() {
         for (let index = 0; index < messageElements.length; index++) {
             const messageElement = messageElements[index];
             messageElement.style.visibility = 'hidden';
+            messageElement.style.display = 'none';
             messageElement.classList.add('accepted');
         }
     }
@@ -119,7 +121,6 @@ window.codurance.cookieMessage = (function() {
             const acceptButton = acceptButtons[index];
             acceptButton.addEventListener('click', function(){
                 setConsent();
-                hideMessage();
                 showConsentDependentIframes();
                 triggerOnConsent();
             });
