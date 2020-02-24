@@ -10,9 +10,9 @@ video-url: https://www.podbean.com/media/player/juc49-d44633?from=yiiadmin&downl
 date: 2020-02-20 05:00:00 +00:00
 ---
 
-First podcast for the new year, from a studio!!!!. And we are talking about something we love: Pair Programming. Listen to [Laurence](https://www.linkedin.com/in/laurencelord/), [Alasdair](https://www.linkedin.com/in/alasdair-smith) and [Mattsi](https://codurance.com/publications/author/mattsi-jansky/) talk about it's use on both your normal workflow and interviews.
+First podcast for the new year, from a studio!!!!. And we are talking about something we love: Pair Programming. Listen to <a href="https://www.linkedin.com/in/laurencelord/" target="_blank">Laurence</a>, <a href="https://www.linkedin.com/in/alasdair-smith" target="_blank">Alasdair</a> and <a href="https://codurance.com/publications/author/mattsi-jansky/" target="_blank">Mattsi</a> talk about it's use on both your normal workflow and interviews.
 
-As part of the podcast we mentioned the post by [Birgitta Böckeler](https://twitter.com/birgitta410) and [Nina Siesseger](https://sssggr.net/): [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
+As part of the podcast we mentioned the post by <a href="https://twitter.com/birgitta410" target="_blank">Birgitta Böckeler</a> and <a href="https://sssggr.net/" target="_blank">Nina Siesseger</a>: <a href="https://martinfowler.com/articles/on-pair-programming.html" target="_blank">On Pair Programming</a>
 
 The Group Photo:
 ![Group Photo]({{site.baseurl}}/assets/custom/img/podcasts/podcast-20-pair-programming/podcast-pairprogramming-group.jpg)
@@ -23,9 +23,9 @@ Alasdair and Mattsi
 Laurence and Jorge
 ![Laurence and Jorge]({{site.baseurl}}/assets/custom/img/podcasts/podcast-20-pair-programming/podcast-pairprogramming-laurence-jorge.jpg)
 
-Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+<sub>
+Photo: <a href="https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/" target="_blank">Prairie Dog</a> by DigiPD is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">CC0</a>
 
 
-Music: ["Sweeter Vermouth" by Kevin MacLeod](https://incompetech.com/music/royalty-free/music.html) is licensed under [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/)
-
+Music: <a href="https://incompetech.com/music/royalty-free/music.html" target="_blank">"Sweeter Vermouth" by Kevin MacLeod</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>
 </sub>
