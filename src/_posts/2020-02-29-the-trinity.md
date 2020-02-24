@@ -42,5 +42,5 @@ Each vertex of the trinity compliments the other, and on the contrary with the i
 I know the statement might be missing details, but I still strongly believe in the categorization. In any case, I would love to read your thoughts on the matter, I am open to discuss and receive your feedback.
 
 
-**PS:** I must confess I was thinking on calling this post _The Holy Trinity for proper software development_ but that could be too much and would have diverted the discussion towards a polemic field I am not interested in: we claim here and there that Software Craftsmanship is not a religion, nor Agile.
+**PS:** I must confess I was thinking on calling this post _The Holy Trinity for proper software development_ but that could be too much and would have diverted the discussion towards the controversy: we´ve said many times, nor Agile nor Craftsmanship are a religion.
 
