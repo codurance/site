@@ -16,26 +16,20 @@ tags:
     - software craftsmanship
 ---
 
-I was thinking a lot on this idea and even before joining Codurance I made a much long essay attempting to embrace the topic, but I never dared to publish it.
+I come from an agile background. I was an agile coach. Well, I’m still an agile coach, but it may be rusty due to lack of use.  Back in time, XP was a fancy word and craftsmanship was simply something exclusive for handcrafts workers and blacksmiths.
 
-I come definitely from an agile background, I was a coach myself (well, I am, the coach is still there although maybe rusty due to lack of use) but back in time, XP was for me a fancy world and craftsmanship was simply something exclusive for handcrafts worker, blacksmiths and even for some homework.
+Later on, I found myself attracted to the idea that developing software would be a craft, and developers can become craftspeople. I started to get involved. I got deeper into the Software Craftsmanship idea, dove into XP practices, and inevitably matched them with my Software Engineer and Agile Coaching background after ruminating on it for a while, I arrived   at the following conclusion:
 
-Later on I found myself attracted by the idea that developing software would also be a craft, and developers can become craftspersons.
+**Agile** helps to engage the business and the development team around a product and tries to improve the interaction among them.
 
-I started to get involved, got deeper into the Software Craftsmanship idea, dived into XP practices and inevitably matched them all with my Software Engineer and Agile Coaching background, and after ruminate on it for a while, I arrived to the the following statement:
+**Extreme Programming** establishes principles and practices that help teams develop not only a product but also a culture of ownership on what the team is building.
 
-**Agile** helps engage the business and the development team around a product, and tries to improve the interaction among them.
+**Software Craftsmanship** is more on a personal level. It is the passion and the devotion you put into cultivating your skills, sharing knowledge, acquiring broader understanding, and the way you embrace the endeavours you are given in professional life.
 
-**eXtreme Programming** esablished principles and practices that help teams develop not only a product but also a culture of ownership on what the team is building.
-
-**Software Craftsmanship** is more on a personal level, is the passion and the devotion you put into cultivating your skills, sharing knowledge, acquiring broader understanding and the way you embrace the endeavours you are given in a professional life.
-
-All of them share the same vision: give visibility, shorten the feedback loop, enrich the interaction between stakeholders, as corolary, build a better product.
+All of them share the same vision: give visibility, shorten the feedback loop, enrich the interaction between stakeholders, as a corollary, build a better product.
 
 Each vertex of the trinity compliments the other, and on the contrary with the infamous [Iron Triangle](https://en.wikipedia.org/wiki/Project_management_triangle), growing one of them will help expand the others.
 
-I know the statement might be missing details, but I still strongly believe in the categorization. In any case, I would love to read your thoughts on the matter, I am open to discuss and receive your feedback.
-
-
-**PS:** I must confess I was thinking on calling this post _The Holy Trinity for proper software development_ but that could be too much and would have diverted the discussion towards the controversy: we´ve said many times, nor Agile nor Craftsmanship are a religion.
-
+I know the statement might be missing details, but I still strongly believe in the categorization. 
+ 
+**PS:** I must confess I was thinking of calling this post The Holy Trinity for proper software development, but that could be too much and would have diverted the discussion towards the controversy: we´ve said many times, nor Agile nor Craftsmanship are a religion.
