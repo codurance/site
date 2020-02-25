@@ -9,8 +9,8 @@ description: An essay on the relationship between these three practices and prin
 image:
     src: /assets/custom/img/blog/2020-02-29-the-trinity.jpg
     attribution:
-      text: Photo by Cristian Castillo Unsplash
-      href: https://unsplash.com/photos/H5mhDv0-NZA
+      text: Photo by Richard Cohen on Unsplash
+      href: https://unsplash.com/photos/RXMsI5ZIksI
 tags:
     - agile
     - software craftsmanship
