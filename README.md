@@ -151,6 +151,14 @@ tags:
 ---
 ```
 
+### Adding links in your post
+Links can be added to a post in a couple of ways. The preference is to make sure that `target="_blank"` is used so that any links open in a new browser tab and do not take the user away from the blog post or the website.
+
+To use `target="_blank"` the only currently supported by our Jekyll version is to include links as HTML in the markdown. So for example -
+```
+<a href="https://www.example.com" target="_blank">Link Example</a>
+```
+
 ### Adding a video to the publications
 
 - Add an md file to the folder: `videos/_posts` (You can use older videos post as a template)
