@@ -936,3 +936,17 @@
   email: thomas.spencer@codurance.com
   twitter: TomSpencerr
   office: london
+
+- id: alexis_pavlidis
+  name: Alexis Pavlidis
+  image: /assets/custom/img/team/alexis_pavlidis.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Alexis has been programming for more than 7 years since he was 16, Pascal was his first language but he is not that old. After completing his degree in Computer Science, Alexis worked for two years as a software engineer, mostly with Java EE, and Javascript.<p>
+    <p>He is passionate about building well-crafted software, deliver value to the business, and he always strives for better quality.</p>
+    <p>When he is not coding, he enjoys spending his time improving his craft by reading technical books, attending local meetups, or learning a new programming language. He is a coffee geek, he likes traveling and practicing his boxing skills.</p>
+  linkedin: apavlidi
+  email: aleksis.pavlidis@codurance.com
+  github: apavlidi
+  twitter: alpavlidi
+  office: london
