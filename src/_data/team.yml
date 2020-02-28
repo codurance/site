@@ -479,17 +479,6 @@
     <p>In his free time, he likes to swim, visit historic places and hang out with friends.</p>
   office: london
 
-- id: ruth_diaz
-  name: Ruth Díaz
-  image: /assets/custom/img/team/ruth_diaz.jpg
-  role: Office Manager
-  fullDescription: <p>She’s joining as Office Manager at Barcelona Office.</p>
-    <p>She’s graduated in Business Administration Management, and has been working in companies like Booking.com, King (Candy Crush mobile games), Sellbytel Group or Duty-Free among others.</p>
-    <p>Games and music are her passion and fill her spare time (she plays electric bass and play board games). Living without coffee is not an option.</p>
-  linkedin: rdiaztic
-  soundcloud: www.soundcloud.com/jukabox
-  office: barcelona
-
 - id: james_birnie
   name: James Birnie
   image: /assets/custom/img/team/james_birnie.jpg
