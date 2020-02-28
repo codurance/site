@@ -7,10 +7,10 @@ date: 2020-02-20 00:00:00 +00:00
 author: Gonzalo Gomez Sullain
 description: Describe the ways to approach pair programming with distributed teams from a personal experience
 image:
-   src: /assets/custom/img/blog/2020-02-20-remote-pairing-a-true-story/post-main.jpg
+   src: /assets/custom/img/blog/2020-02-20-remote-pairing-a-true-story/johanneke-kroesbergen-kamps-gkm7jk_vdXU-unsplash.jpg
    attribution:
-      text: Photo by Michael Hoyt on Unsplash
-      href: https://unsplash.com/photos/K6PQngnMdDE
+      text: Photo by Johanneke Kroesbergen-Kamps on Unsplash
+      href: https://unsplash.com/photos/gkm7jk_vdXU
 tags:
     - software craftsmanship
     - life at codurance
