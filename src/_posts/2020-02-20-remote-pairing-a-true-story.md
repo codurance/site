@@ -17,8 +17,6 @@ tags:
     - pair-programming
 ---
 
-## Context
-
 When you join a project, you might face a brand new world with new stakeholders to deal with, a different technological landscape, and new team members. On the other hand, new expectations and a clean slate to start defining the practices the team is going to embrace based on each of their backgrounds.
 
 The challenge goes beyond those inherent to the project. It is key to establish new team dynamics, how the work is split, how requirements are refined, and how the workload is handled.
@@ -29,11 +27,11 @@ There are several ways to build a team. If you want your project to succeed, a g
 
 Now imagine the team is composed of skilled and experienced members, but they are in different locations, different time zones, or perhaps working remote, or even working alternate days from home.
 
-This is a perfectly valid team set up in our brand new highly connected worldIt defies the traditional ways of working, putting our engineering practices under a microscope, and makes us try to find the best ways to cope with the new context, while still using best practices.
+This is a perfectly valid team set up in our brand new highly connected world. It defies the traditional ways of working, putting our engineering practices under a microscope, and makes us try to find the best ways to cope with the new context, while still using best practices.
 
 ## Pair Programming
 
-Pair programming is considered a Core Practice among those 12 practices enumerated within the XP scope. It is basically a social activity and iswhere two developers work together in the same tool they use to produce their craft with the goal of creating enriched code that emerges from their interaction.
+Pair programming is considered a Core Practice among those 12 practices enumerated within the XP scope. It is basically a social activity and is where two developers work together in the same tool they use to produce their craft with the goal of creating enriched code that emerges from their interaction.
 
 Working in pairs relates deeply with other core practices such as [Code Ownership](https://ronjeffries.com/xprog/what-is-extreme-programming/#collective), [Code Standards](https://ronjeffries.com/xprog/what-is-extreme-programming/#coding), and even helps build the [Metaphor](https://ronjeffries.com/xprog/what-is-extreme-programming/#metaphor) of the system across the team.
 
@@ -51,7 +49,7 @@ Pair programming is a demanding activity and remote pairing is even more demandi
     
 -   Get a comfortable headset for your team, avoid microphones that capture too much environmental noise.
     
--   There are dozens of tools available, but stick to a video conferencing tool that allows only one person at a time share their screen. We want one driver at a time.
+-   There are dozens of tools available but stick to a video conferencing tool that allows only one person at a timeshare their screen. We want one driver at a time.
     
 -   Ask questions and be prepared to explain keep your pair engaged
     
