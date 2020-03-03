@@ -916,3 +916,17 @@
   github: apavlidi
   twitter: alpavlidi
   office: london
+
+- id: javier_chacana
+  name: Javier Chacana
+  image: /assets/custom/img/team/javier_chacana.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Javier joined the Software Craftsmanship community in Chile, back in 2016, where along with other friends and colleagues, ran the first Latin American Socrates the same year and one more time 2017.</p>
+    <p> Mainly identified as a backend developer, he has played other roles including Lead developer, Head of Engineering, Mentor, DevOps engineer, tea drinker, etc. since 2009.</p>
+    <p>The last couple of years, he spent his time working as a remote freelance developer and consultant for companies from Chile, Indonesia and China.</p>
+    <p>When not working, he likes to play videogames (mainly RPGs), take long walks, watch documentaries, read blog entries and explore Quora.</p>
+  linkedin: javierchacana
+  email: javier.chacana@codurance.com
+  twitter: jchacana
+  office: barcelona
