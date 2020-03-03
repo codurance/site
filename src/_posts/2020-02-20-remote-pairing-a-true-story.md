@@ -49,15 +49,15 @@ Pair programming is a demanding activity and remote pairing is even more demandi
     
 -   Get a comfortable headset for your team, avoid microphones that capture too much environmental noise.
     
--   There are dozens of tools available but stick to a video conferencing tool that allows only one person at a timeshare their screen. We want one driver at a time.
+-   There are dozens of tools available but stick to a video conferencing tool that allows only one person at a time to share their screen. We want one driver at a time.
     
--   Ask questions and be prepared to explain keep your pair engaged
+-   Ask questions and be prepared to explain to keep your pair engaged.
     
--   It is as simple to say "here" or "there" when referring to something to change or add. Use the method or functions names and line numbers to reference a location in the file.
+-   It is not as simple to say "here" or "there" when referring to something to change or add. Use the method or functions names and line numbers to reference a location in the file.
     
 -   When more information is needed, invite someone who can help to your video conference to alleviate any doubts.
     
--   You can also try [mob programming](https://en.wikipedia.org/wiki/Mob_programming) ( it didn’t work for me, but I know many of my colleagues have had great experiences doing mob remotely).
+-   You can also try [mob programming](https://en.wikipedia.org/wiki/Mob_programming) (it didn’t work for me, but I know many of my colleagues have had great experiences doing mob remotely).
     
 
 Other than the above, basically use common sense and general pairing guidelines. Here are some suggestions that might help you throughout your pairing experiences:
