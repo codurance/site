@@ -33,22 +33,3 @@
   author: Mashooq Badar
   description: For developers wanting to learn how to build an enterprise system from scratch
   page: /services/training/enterprise-application-development
-
-- id: fabric
-  name: Building Reliable Microservices with Microsoft Service Fabric
-  author: Steve Lydford
-  description: Learn how to build highly available and reliable microservices with Service Fabric and Azure
-  page: /services/training/service-fabric-training
-
-- id: docker
-  name: Zero to Continous Delivery with Docker
-  author: Robert Firek
-  description: Learn to use Docker tools to enable continuous deployment, horizontal scalability & zero downtime.
-  page: /services/training/devops-training
-
-
-- id: crafting_webapps
-  name: Crafting Webapps
-  author: Nacho García
-  description: Discover how to build web applications that scale, driven by tests, and framework agnostic.
-  page: /services/training/crafting-webapps

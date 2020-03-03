@@ -445,29 +445,6 @@
   twitter: DateWithBooks
   office: london
 
-- id: raul_mordillo
-  name: Raul Mordillo Lluva
-  image: /assets/custom/img/team/raul_mordillo.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Raul started his career abroad as an intern, after some years working in big companies and startups as a backend, he found out that they all lack of well crafted code and good mentoring. Pursuing a place where he could develop his skills, he joined Barcelona’s software craft community.
-    <p>He is always willing to learn and grasp new technologies and share knowledge with his peers while sharing jokes.</p>
-    <p>In his free time, he loves to learn new languages and get to know people from different nationalities, moreover he likes to practice sports, ride his motorcycle, and travel whenever possible and he is also a cheese lover.</p>
-  twitter: roaslin
-  office: barcelona
-
-- id: emma_booth
-  name: Emma Booth
-  image: /assets/custom/img/team/emma_booth.jpg
-  role: Business Development Manager
-  linkedin: emma-booth-36785b45
-  twitter: codurance_emma
-  fullDescription:
-    <p>Emma is our Manchester-based Business Development Manager and has over 6 years of software sales experience, providing solutions for both corporate and public sector organisations. Emma began her career with a Fortune 500 technology distributor before taking on the challenge of working for a small start-up, providing high-quality software for educational establishments.</p>
-    <p>Emma’s expertise lies in building relationships with key stakeholders to position essential tools and services, aligned with an organisation’s key objectives. She was drawn to working with Codurance due to the impressive team of passionate and motivated craftspeople, committed to making a difference to software development practice. A Manchester native, Emma is keen to engage with the Northern tech community and share the Codurance ethos.</p>
-    <p>In her spare time, Emma likes to unwind by reading crime thrillers, playing board games, listening to comedy podcasts and attempting to visit the local gym.</p>
-  office: manchester
-
 - id: andrew_pattison
   name: Andrew Pattison
   image: /assets/custom/img/team/andrew_pattison.jpg
@@ -489,17 +466,6 @@
     <p>He strives to develop his skills constantly trying to learn something new every day.</p>
     <p>In his free time, he likes to swim, visit historic places and hang out with friends.</p>
   office: london
-
-- id: ruth_diaz
-  name: Ruth Díaz
-  image: /assets/custom/img/team/ruth_diaz.jpg
-  role: Office Manager
-  fullDescription: <p>She’s joining as Office Manager at Barcelona Office.</p>
-    <p>She’s graduated in Business Administration Management, and has been working in companies like Booking.com, King (Candy Crush mobile games), Sellbytel Group or Duty-Free among others.</p>
-    <p>Games and music are her passion and fill her spare time (she plays electric bass and play board games). Living without coffee is not an option.</p>
-  linkedin: rdiaztic
-  soundcloud: www.soundcloud.com/jukabox
-  office: barcelona
 
 - id: james_birnie
   name: James Birnie
@@ -935,4 +901,18 @@
   github: TomSpencerLondon
   email: thomas.spencer@codurance.com
   twitter: TomSpencerr
+  office: london
+
+- id: alexis_pavlidis
+  name: Alexis Pavlidis
+  image: /assets/custom/img/team/alexis_pavlidis.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Alexis has been programming for more than 7 years since he was 16, Pascal was his first language but he is not that old. After completing his degree in Computer Science, Alexis worked for two years as a software engineer, mostly with Java EE, and Javascript.<p>
+    <p>He is passionate about building well-crafted software, deliver value to the business, and he always strives for better quality.</p>
+    <p>When he is not coding, he enjoys spending his time improving his craft by reading technical books, attending local meetups, or learning a new programming language. He is a coffee geek, he likes traveling and practicing his boxing skills.</p>
+  linkedin: apavlidi
+  email: aleksis.pavlidis@codurance.com
+  github: apavlidi
+  twitter: alpavlidi
   office: london
