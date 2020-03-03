@@ -7,7 +7,7 @@ date: 2020-03-15 00:00:00 +00:00
 author: Gonzalo Gomez Sullain
 description: An essay on the relationship between these three practices and principles
 image:
-    src: /assets/custom/img/blog/2020-03-15-the-trinity.jpg
+    src: /assets/custom/img/blog/2020-03-17-the-trinity.jpg
     attribution:
       text: Photo by Richard Cohen on Unsplash
       href: https://unsplash.com/photos/RXMsI5ZIksI
