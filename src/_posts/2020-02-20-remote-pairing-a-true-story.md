@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: remote-pairing-a-true-story
 title: Remote Pairing a true story
-date: 2020-02-20 00:00:00 +00:00
+date: 2020-03-03 00:00:00 +00:00
 author: Gonzalo Gomez Sullain
 description: Describe the ways to approach pair programming with distributed teams from a personal experience
 image:
-   src: /assets/custom/img/blog/2020-02-20-remote-pairing-a-true-story/johanneke-kroesbergen-kamps-gkm7jk_vdXU-unsplash.jpg
+   src: /assets/custom/img/blog/2020-03-03-remote-pairing-a-true-story/johanneke-kroesbergen-kamps-gkm7jk_vdXU-unsplash.jpg
    attribution:
       text: Photo by Johanneke Kroesbergen-Kamps on Unsplash
       href: https://unsplash.com/photos/gkm7jk_vdXU
