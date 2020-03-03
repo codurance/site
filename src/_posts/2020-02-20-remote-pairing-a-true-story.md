@@ -71,7 +71,7 @@ Other than the above, basically use common sense and general pairing guidelines.
 -   Shift the pairs and balance skills, as whilst pairing isn't a mentoring activity, it won't work if none of the pair members have experience on the topic or technology.
     
 
-We are craftspeople, we like to solve complex problems in the best way possible, using the best methods that engineering practices encourage. In the hyperconnected context we live in, we can definitely find a proper way to work remotely as effectively as if we are together location.
+We are craftspeople, we like to solve complex problems in the best way possible, using the best methods that engineering practices encourage. In the hyperconnected context we live in, we can definitely find a proper way to work remotely as effectively as if we are together sitting next to each other.
 
 ## Conclusion
 
