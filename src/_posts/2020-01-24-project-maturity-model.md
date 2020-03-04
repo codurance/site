@@ -6,10 +6,10 @@ title: Project Matirity Model
 date: 2020-02-24 10:00:00 +00:00
 author: Christopher Eyre
 image:
-    src: /assets/custom/img/blog/swan.png
+    src: /assets/custom/img/blog/railway.png
     attribution:
         text: Public domain photo from Pixabay
-        href: https://pixabay.com/photos/beautiful-bird-blue-calm-color-16736/
+        href: https://pixabay.com/photos/rails-soft-gleise-railway-3309912/
 tags:
     - project
 abstract: A year of improvements to a project
