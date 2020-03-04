@@ -57,7 +57,7 @@ And there was also space for technical discussions:
 
 The topic with most attendees, tracing some parallelism with what happened in the last [London Open Space](https://codurance.com/2020/02/11/open-space-day-and-serverless/) in January, was the talk about Serverless, which seems to be a trending topic lately around the industry and of course in Codurance we are not extent of that trend, as we are preparing several training sessions for our clients on that, and luckily the experts on the matter could share with us much of the insights their experience has given so far.
 
-On the other hand, the other talk that received recognition was the one discussing the experiences and guidelines about remote pairing in a Codurance project. Both of the talks were widely accepted by the attendees and resulted in a very engaged and fluid debate about the topics reviewed.
+On the other hand, the other talk that received recognition was the one discussing the experiences and guidelines about [remote pairing in a Codurance project](https://codurance.com/2020/03/03/remote-pairing-a-true-story/). Both of the talks were widely accepted by the attendees and resulted in a very engaged and fluid debate about the topics reviewed.
 
 Each Open Space concludes with a final closing session, in which, as you can imagine, all the participants gather in the room and review all the talks, one by one, where at least one of the attendees of each talk gives a highlight of the content.
 
