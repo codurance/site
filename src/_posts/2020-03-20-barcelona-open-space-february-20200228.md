@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: barcelona-open-space-february-2020
-title: Barcelona OpenSpace event
+title: Barcelona Open Space event
 date: 2020-03-05 00:00:00 +00:00
 author: Gonzalo Gomez Sullain
 description: Check out what happened during the latest Open Space in our Barcelona office
