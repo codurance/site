@@ -11,7 +11,7 @@ image:
         text: Public domain photo from Pixabay
         href: https://pixabay.com/photos/rails-soft-gleise-railway-3309912/
 tags:
-    - project
+    - project improvements
 abstract: A year of improvements to a project
 alias: [/2020/02/34/project-maturity-model]
 ---
@@ -19,7 +19,7 @@ alias: [/2020/02/34/project-maturity-model]
 ## A Year in the life of a Project
 
 This article describes the evolution of a project over the course of a year. It has not been the full time focus of the team. 
-I want to describe the process in terms of the Capability Maturity Model. The CMM is intended for organisational effectiveness, but is easier to discuss in a smaller setting.
+I want to describe the process in terms of the Capability Maturity Model. The CMM is intended for organisational effectiveness, but is easier to discuss in a smaller setting. 
 
 Here are the stages:
 
@@ -32,12 +32,12 @@ Here are the stages:
 The team that I lead had shortly before I took over the team lead position had inherited a project. 
 I am going to call it Project A to keep it anonymous.
 
-Project A consists of a dozen microservices. The team had previously been under instructions not to spend more time than absolutely necessary on Project A as they had other important things to work on. 
+Project A consists of a dozen services. Whether these count as microservices is another matter (they are independently deployable, theoretically replaceable, and use rabbit mq and REST to communicate). The team had previously been under instructions not to spend more time than absolutely necessary on Project A as they had other important things to work on. 
 
 ### Level 1 - Initial
 
-The team does not understand the project. Errors are resolved by restarting one of the microservices.
-The team had added automated build triggers to rebuild the microservices every day.
+The team does not understand the project. Errors are resolved by restarting one of the services.
+The team had added automated build triggers to rebuild the services every day.
 Errors are found by support incidents being raised. 
 Most of our users are in another timezone so problems are typically reported at the end of the working day.
 
@@ -90,7 +90,7 @@ We added [Dependabot](/2019/02/24/taming-dependabot/) to all of our projects to 
 
 ### Second Crisis
 
-We started to get compliants that our users were not recieving emails.
+We started to get complaints that our users were not recieving emails.
 This was odd as we could see in the logs that some emails were being sent out.
 
 We used datadog to produce a dashboard that produces graphs of both the signals that an email should be sent along with a list of the number of emails actually sent.
@@ -101,7 +101,7 @@ One of our internal services had changed it's contract and one of the services c
 ### Level 3 Defined
 
 We now started to reduce the most frequent group of errors whenever we had a quiet time. Datadog has a great option to detect patterns in the logs and create groups out of them. 
-These form obvious targets for reducing the errors. We started adding alerts for speicific problems to ensure that we know about a problem before the users tell us.
+These form obvious targets for reducing the errors. We started adding alerts for specific problems to ensure that we know about a problem before the users tell us.
 
 We were still occasionally getting problems reported just before hometime on a Friday. Solving these is much quicker now.
 
@@ -114,7 +114,7 @@ The diagrams are getting more accurate by this point.
 
 ## Further Improvements
 
-We added integration tests to check that the access codes that we needed for each remote service were still accurate. We are integrating with over 100 almost identical services and they are undergoing an upgrade program! This means that the tests will be broken first thing on Monday morning, allowing us to fix things before outr users need the data.
+We added integration tests to check that the access codes that we needed for each remote service were still accurate. We are integrating with over 100 almost identical services and they are undergoing an upgrade program! This means that the tests will be broken first thing on Monday morning, allowing us to fix things before our users need the data.
 
 One of the services used AWS S3 to store messages that could not be parsed. Expanding this to other parts of the service greatly assisted fixing (or at least quieting) some strange errors.
 
@@ -122,7 +122,7 @@ One of the services was responsible for querying an external service (which had 
 
 The first attempt to standardise this involved having a test check each feed each day and report those that were broken. This was good at spotting broken items, but made fixing them labour intensive.
 
-The second attempt was better: use railway oriented programming. This is a technique which models the success and error conditions as two parrallel railway tracks. An error shunts the train onto the error track. If it remained there then this would be normal error handling. The railway trick is to have corrective processes that can restore the train to the main track. In our specific case this meant changing the error handler of the primary feed to call the secondary feed should an error occour. This allowed us to cater for unreliable feeds for the small price of one service being able to call another. This small change eliminated 30% of the daily errors!
+The second attempt was better: use railway oriented programming. This is a technique which models the success and error conditions as two parallel railway tracks. An error shunts the train onto the error track. If it remained there then this would be normal error handling. The railway trick is to have corrective processes that can restore the train to the main track. In our specific case this meant changing the error handler of the primary feed to call the secondary feed should an error occour. This allowed us to cater for unreliable feeds for the small price of one service being able to call another. This small change eliminated 30% of the daily errors!
 
 I use a three level approach for logs. Errors are for things that the system cannot correct for itself. Warnings are for things that may be wrong, but could just be expected and incomplete. Information messages are the background items that show you that the system is functioning, and give you a easier time to locate a problem when viewed in context.
 
