@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: project-maturity-model
-title: Project Matirity Model
+title: Project Maturity Model
 date: 2020-02-24 10:00:00 +00:00
 author: Christopher Eyre
 image:
@@ -60,7 +60,7 @@ I like to document systems using graphviz. This is a compiler that allows genera
 
 There are samples for this here: https://github.com/chriseyre2000/sample-readme
 
-I started using graphviz to draw data flow diagrams for each of the microservices in Project A.
+I started using graphviz to draw data flow diagrams for each of the services in Project A.
 These were checked into source control alongside the projects.
 
 The idea of the data flow digram is to follow the chain of data use through the system.
