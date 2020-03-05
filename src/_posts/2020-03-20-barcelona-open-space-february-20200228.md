@@ -23,7 +23,7 @@ Have you ever been in an Open Space? It’s an inspiring and fulfilling event, w
 
 1. Whoever comes are the right people
 1. Whatever happens, is the only thing that could have
-1. Whenever it starts is the right timefsdgfdgdf
+1. Whenever it starts is the right time
 1. When it’s over, it’s over
 
 If during the course of the gathering, any person finds themselves in a situation where they are neither learning nor contributing, they can go to some more productive place.
