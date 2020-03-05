@@ -930,3 +930,16 @@
   email: javier.chacana@codurance.com
   twitter: jchacana
   office: barcelona
+
+- id: sebastian_kulinski
+  name: Sebastian Kulinski
+  image: /assets/custom/img/team/sebastian_kulinski.jpg
+  role: Apprentice
+  fullDescription:
+    <p>Sebastian took his first steps into professional software development by attending Software Crafters meetups when he experienced XP Programming for first time and got hooked.<p>
+    <p>Previously working for a digital marketing agency, focused on social media, as  a backend developer in PHP he got experience in solving problems.</p>
+    <p>He wants to share experiences and support others in achieving their goals while developing his programming skills. In his free time he enjoys hiking, playing guitar and climbing occasionally.</p>
+  linkedin: sebastian-kulinski
+  email: Sebastian.kulinski@codurance.com
+  github: morinslash
+  office: Barcelona
