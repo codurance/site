@@ -11,9 +11,6 @@ role_aliases = {
   "Software Craftswoman" => "Software Craftspeople",
   "Software Craftsperson" => "Software Craftspeople",
   "Principal Craftsperson" => "Software Craftspeople",
-  "Head of Recruitment (UK)" => "Head of Recruitment",
-  "Head of Sales (Spain)" => "Head of Sales",
-  "Head of Professional Services (Spain)" => "Head of Professional Services",
   "Analyst Craftsman" => "Analyst Craftspeople",
   "Analyst Craftsperson" => "Analyst Craftspeople"
 }
@@ -26,13 +23,29 @@ team = YAML.load_file('team.yml').map { |person|
 roles = team.map { |person| person['role'] }.uniq
 offices = team.map { |person| person['office'] }.uniq
 
-# sites = team.map { |p| p[:] }.uniq
-offices.each { |office|
+def office_header(office)
+  separator = "#{'-' * office.length}"
+  puts separator
   puts office
+  puts separator
+end
+
+total_employees = 0
+
+offices.each { |office|
+  employees = 0
+  office_header(office)
   roles.each { |role|
     count = team.count { |person| person['role'] == role and person['office'] == office }
     if count > 0 then
       puts "#{count} #{role}"
+      employees += count
     end
   }
+  puts "(#{employees} employees at #{office})"
+  total_employees += employees
 }
+
+puts "-------"
+puts "#{total_employees} employees"
+
