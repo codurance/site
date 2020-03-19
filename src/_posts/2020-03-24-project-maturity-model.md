@@ -40,7 +40,7 @@ Project A consists of a dozen services. Whether these count as microservices is 
 
 The team had previously been under instructions not to spend more time than absolutely necessary on Project A as they had other important things to work on. 
 
-### Level 1 - Initial
+### Level 1 Initial
 
 The team does not understand the project. Errors are resolved by restarting one of the services.
 The team had added automated build triggers to rebuild the services every day.
