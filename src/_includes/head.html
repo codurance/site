@@ -84,6 +84,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/idea.min.css">
 
 <!-- CSS Customization -->
+<link rel="stylesheet" href="{{ '/assets/custom/css/flexslider.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-blocks.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-2.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-home-feature.css' | prepend: site.baseurl }}">
@@ -127,3 +128,12 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/kotlin.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/dockerfile.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="{{ '/assets/custom/js/jquery.flexslider.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" charset="utf-8">
+ $(window).load(function() {
+  $('.flexslider').flexslider();
+ });
+</script>
