@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: project-maturity-model
 title: Project Maturity Model
-date: 2020-03-24 10:00:00 +00:00
+date: 2020-03-25 10:00:00 +00:00
 author: Christopher Eyre
 description: A year of improvements in the life of a project. Illustrates the need for actively watching logs and the use of railway-oriented programming.
 image:
@@ -16,7 +16,7 @@ tags:
     - devops
     - practices
 abstract: A year of improvements to a project
-alias: [/2020/03/34/project-maturity-model]
+alias: [/2020/03/25/project-maturity-model]
 ---
 
 ## A Year in the life of a Project
