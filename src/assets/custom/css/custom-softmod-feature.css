@@ -1,7 +1,9 @@
 /* SoftMod Section
    ------------- */
 
-/* --Backgrounds-- */
+
+/* -- Backgrounds -- */
+
 .bg-slate {
     background-color: #2B3342;
 }
@@ -14,32 +16,37 @@
     background-color: #FB7268;
 }
 
-/* --Padding-- */
-.padding-top50 {
+
+
+/* -- Padding -- */
+
+.padding-top--50 {
     padding-top: 50px;
 }
 
-.padding-top220 {
+.padding-top--220 {
     padding-top: 220px;
 }
 
-.padding-bottom0 {
+.padding-bottom--0 {
     padding-bottom: 0px;
 }
 
-.padding-bottom20 {
+.padding-bottom--20 {
     padding-bottom: 20px;
 }
 
-.padding-bottom100 {
+.padding-bottom--100 {
     padding-bottom: 100px;
 }
 
-.padding50 {
-    padding:50px;
+.padding--50 {
+    padding: 50px;
 }
 
-/* --Element Position-- */
+
+
+/* -- Element Position -- */
 
 .p-relative {
     position: relative;
@@ -49,7 +56,10 @@
     bottom: -120px;
 }
 
-/* --Text-- */
+
+
+/* -- Text -- */
+
 .text-white{
     color: white;
 }
@@ -62,7 +72,10 @@
     max-width: 600px;
 }
 
-/* --Buttons-- */
+
+
+
+/* -- Buttons -- */
 
 .btn-std {
     font-size: 15px;
@@ -80,7 +93,10 @@
     background:#0F4071;
 }
 
-/* --Border-- */
+
+
+
+/* -- Border -- */
 
 .shadow-grey {
     box-shadow: 0px 0.1px 5px 0.1px #88888856;
@@ -88,7 +104,8 @@
 
 
 
-/* --Custom Blocks-- */
+/* -- Custom Blocks -- */
+
 .container-slim {
     padding-left: 15px;
     padding-right: 15px;
@@ -97,7 +114,8 @@
 }
 
 
-/* --Device Breakpoints-- */
+/* -- Device Breakpoints -- */
+
 @media (min-width: 576px) {
 
 }
