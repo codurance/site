@@ -2,6 +2,13 @@
    ------------- */
 
 
+
+.txt-900 {
+    font-weight: 900;
+}
+
+
+
 /* -- Backgrounds -- */
 
 .bg-slate {
@@ -16,6 +23,14 @@
     background-color: #FB7268;
 }
 
+
+
+/* -- Containers -- */
+
+.mx-width-1096 {
+    max-width: 1100px;
+    margin: auto;
+}
 
 
 /* -- Padding -- */
