@@ -9,7 +9,7 @@
 }
 
 .bg-white {
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .bg-coral {
@@ -77,20 +77,12 @@
 
 /* -- Buttons -- */
 
-.btn-std {
-    font-size: 15px;
-    margin: 10px;
-    padding: 10px 30px;
-    font-weight: 700 !important;
-    border: none !important;
-    overflow: hidden !important;
-    position: relative;
-    cursor: pointer;
-    transition: .2s ease;
+.btn--coral {
+    background:#FB7268!important;
 }
 
-.btn-blue {
-    background:#0F4071;
+.btn--blue {
+    background:#0F4071!important;
 }
 
 
