@@ -1,46 +1,68 @@
 /* SoftMod Section
    ------------- */
 
-/* --Backgrounds-- */
-.purple-bg {
+
+
+.text-900 {
+    font-weight: 900;
+}
+
+
+.text-700 {
+    font-weight: 700;
+}
+
+
+
+/* -- Backgrounds -- */
+
+.bg-slate {
     background-color: #2B3342;
 }
 
-.white-bg {
-    background-color: white;
+.bg-white {
+    background-color: #FFFFFF;
 }
 
-.peach-bg {
+.bg-coral {
     background-color: #FB7268;
-
 }
 
-/* --Padding-- */
-.padding-top50 {
-    padding-top: 50px;
+.bg-sheen {
+    background: rgb(252,249,241);
+    background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);    
 }
 
-.padding-top220 {
-    padding-top: 220px;
+
+
+/* -- Grid -- */
+
+.grid {
+	display: grid;
+	grid-gap: 140px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 500px;
+} 
+
+.grid-item--intro {
+    padding-left: 50px;
+	align-items: center;
+	display: flex;
 }
 
-.padding-bottom0 {
-    padding-bottom: 0px;
+.grid-item--intro-image {
+    background-color: #FB7268;
 }
 
-.padding-bottom20 {
-    padding-bottom: 20px;
+.section--testimonials {
+    background:url('https://picture.bestsecret.com/medias/sys_master/images/13257493643294.jpg');
+    background-size: 100% auto;
+    background-position-y: 290px;
+    background-repeat: no-repeat;
 }
 
-.padding-bottom100 {
-    padding-bottom: 100px;
-}
 
-.padding50 {
-    padding:50px;
-}
-
-/* --Element Position-- */
+/* -- Element Position -- */
 
 .p-relative {
     position: relative;
@@ -50,7 +72,10 @@
     bottom: -120px;
 }
 
-/* --Text-- */
+
+
+/* -- Text -- */
+
 .text-white{
     color: white;
 }
@@ -63,25 +88,23 @@
     max-width: 600px;
 }
 
-/* --Buttons-- */
 
-.btn-std {
-    font-size: 15px;
-    margin: 10px;
-    padding: 10px 30px;
-    font-weight: 700 !important;
-    border: none !important;
-    overflow: hidden !important;
-    position: relative;
-    cursor: pointer;
-    transition: .2s ease;
+
+
+/* -- Buttons -- */
+
+.btn--coral {
+    background:#FB7268!important;
 }
 
-.btn-blue {
-    background:#0F4071;
+.btn--blue {
+    background:#0F4071!important;
 }
 
-/* --Border-- */
+
+
+
+/* -- Border -- */
 
 .shadow-grey {
     box-shadow: 0px 0.1px 5px 0.1px #88888856;
@@ -89,7 +112,8 @@
 
 
 
-/* --Custom Blocks-- */
+/* -- Custom Blocks -- */
+
 .container-slim {
     padding-left: 15px;
     padding-right: 15px;
@@ -98,7 +122,8 @@
 }
 
 
-/* --Device Breakpoints-- */
+/* -- Device Breakpoints -- */
+
 @media (min-width: 576px) {
 
 }
