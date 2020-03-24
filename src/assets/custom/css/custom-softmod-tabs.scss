@@ -1,0 +1,165 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/*
+SCSS variables and mixins
+*/
+$color__main: #444;
+$color__active: grey;
+$background__active: #eee;
+$width__tabs-side: 150px;
+$breakpoint: 800px;
+@mixin tab-active() {
+  background: $color__main;
+  color: $background__active;
+}
+
+
+.tabbed-content {
+  background: #fff;
+  box-shadow: 1px 1px 6px #ccc;
+  max-width: 600px;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.tabs {
+  ul {
+    margin: 0;
+    padding: 0 0 1em 0;
+    font-weight: bold;
+
+    li {
+      background: $background__active;
+
+      a {
+        padding: .5em 1em;
+
+        &:hover,
+        &.active {
+          @include tab-active();
+        }
+      }
+    }
+  }
+}
+
+.item {
+  margin-bottom: 2px;
+
+  &::before {
+    cursor: pointer;
+    font-weight: bold;
+    background: $background__active;
+    padding: .5em;
+    display: block;
+  }
+
+  &.active {
+    &::before {
+      @include tab-active();
+    }
+
+    .item-content {
+      padding: 1em;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint) {
+  .item {
+    &.active {
+      .item-content {
+        padding-top: 0;
+      }
+    }
+  }
+  .tabs-side {
+    .tabs {
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+/*
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+
+// Accordion for small screens (mobile first principle)
+.tabbed-content {
+  .tabs {
+    display: none;
+  }
+
+  .item {
+    min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+    &::before {
+      content: attr(data-title); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+    }
+
+    .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want.
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+
+    &.active {
+      .item-content {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+// Tabs for larger screens
+@media all and (min-width: $breakpoint) {
+  .tabbed-content {
+    .tabs {
+      display: block;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+        }
+      }
+    }
+
+    .item {
+      min-height: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    // Tabs on the side (works only on big screens)
+    &.tabs-side {
+      .tabs {
+        width: $width__tabs-side;
+        float: left;
+
+        li {
+          display: block;
+        }
+      }
+
+      .item {
+        margin-left: $width__tabs-side;
+      }
+    }
+  }
+}
