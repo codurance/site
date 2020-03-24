@@ -917,3 +917,15 @@
   email: Sebastian.kulinski@codurance.com
   github: morinslash
   office: Barcelona
+
+- id: daniel_acott
+  name: Daniel Acott
+  image: /assets/custom/img/team/daniel_acott.jpg
+  role: New Business Manager
+  fullDescription:
+    <p>Daniel is responsible for managing new business at Codurance. His career path has focused on global business development and technical training, and an accomplished history of developing and executing business strategy with wireless technologies within the telecommunications industry in his native home Australia.</p>
+    <p>Once finding out about Codurance he was fascinated by the culture of the company as well as the clear passion each member of the team has.</p>
+    <p>In his spare time he enjoys travelling, going to concerts, watching tech videos on Youtube and playing sport.</p>
+  linkedin: danielacott
+  email: daniel.acott@codurance.com
+  office: London
