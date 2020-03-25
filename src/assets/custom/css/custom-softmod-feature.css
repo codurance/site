@@ -1,17 +1,27 @@
 /* SoftMod Section
+   backgroundimages set in custom-layout-2.scss
    ------------- */
 
-
-
+   
 .text-900 {
     font-weight: 900;
 }
-
 
 .text-700 {
     font-weight: 700;
 }
 
+.text-navy {
+    color: #0E4072;
+}
+
+
+/* -- Backgrounds -- */
+
+.g-mt-neg100 {
+    top: -50px;
+    position: relative;
+}
 
 
 /* -- Backgrounds -- */
@@ -34,6 +44,12 @@
 }
 
 
+/* -- Case Studies-- */
+
+.card {
+    border: none!important;
+}
+
 
 /* -- Grid -- */
 
@@ -50,18 +66,6 @@
 	display: flex;
 }
 
-.grid-item--intro-image {
-    background-color: #FB7268;
-}
-
-.section--testimonials {
-    background:url('https://picture.bestsecret.com/medias/sys_master/images/13257493643294.jpg');
-    background-size: 100% auto;
-    background-position-y: 290px;
-    background-repeat: no-repeat;
-}
-
-
 /* -- Element Position -- */
 
 .p-relative {
@@ -71,7 +75,6 @@
 .bottom {
     bottom: -120px;
 }
-
 
 
 /* -- Text -- */
@@ -89,8 +92,6 @@
 }
 
 
-
-
 /* -- Buttons -- */
 
 .btn--coral {
@@ -102,14 +103,11 @@
 }
 
 
-
-
 /* -- Border -- */
 
 .shadow-grey {
     box-shadow: 0px 0.1px 5px 0.1px #88888856;
 }
-
 
 
 /* -- Custom Blocks -- */

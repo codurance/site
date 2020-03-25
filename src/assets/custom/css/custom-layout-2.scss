@@ -1066,3 +1066,22 @@ blockquote.no-left-border {
 .hljs {
   background-color: #f8f9fa;
 }
+
+/* Softmod pages
+-------------------------------------------------*/
+.grid-item--intro-image {
+  background-image: url('{{site.baseurl}}/assets/custom/img/softmod/softmod-hero.jpg');
+  background-size: cover;
+}
+
+.section--testimonials {
+  background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
+  background-size: 100% auto;
+  background-position-y: 325px;
+  background-repeat: no-repeat;
+}
+
+.bg-contact {
+  background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-contact.jpg');
+  background-size: cover;
+}
