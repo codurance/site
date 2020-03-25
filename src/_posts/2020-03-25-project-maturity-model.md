@@ -5,12 +5,7 @@ name: project-maturity-model
 title: Project Maturity Model
 date: 2020-03-25 10:00:00 +00:00
 author: Christopher Eyre
-description: A year of improvements in the life of a project. 
-This is what happened when a team had to support a system that they had not written and did not understand. The improvements are matched against the steps of the Capability Maturity Model.
-
-The key steps are 1. document in diagrams what you have, 2. Automate updates to the system, 3. Log everything and create dashboards so that you know that it is working, 4. Use these dashboards to show what needs to be fixed urgently. 
-
-The later section includes the term Railway oriented programming. This is a technique to allow a process to recover from an error. The classic approach when an error happens is to store the result somewhere (a log) and just fail. Railway oriented programming allows attempts to recover at various steps (after having stored the error). This makes for a more stable system.
+description: A year of improvements in the life of a project. This is what happened when a team had to support a system that they had not written and did not understand. The improvements are matched against the steps of the Capability Maturity Model. The key steps are 1. document in diagrams what you have, 2. Automate updates to the system, 3. Log everything and create dashboards so that you know that it is working, 4. Use these dashboards to show what needs to be fixed urgently. The later section includes the term Railway oriented programming. This is a technique to allow a process to recover from an error. The classic approach when an error happens is to store the result somewhere (a log) and just fail. Railway oriented programming allows attempts to recover at various steps (after having stored the error). This makes for a more stable system.
 
 image:
     src: /assets/custom/img/blog/railway.png
