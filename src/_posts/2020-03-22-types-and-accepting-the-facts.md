@@ -89,7 +89,7 @@ There are so many smells in that snippet that made me sick, jokes aside we have 
 
 ### Fastening the type seatbelt
 
-Let's start with the dates, you know there are not multiple date format and isn't a problem that we face frequently. We have to date fields that are going to throw and exception just when we execute the query, the problem is that is already too late, we don't want them to reach the database.
+Let's start with the dates, you know there are not multiple date format and isn't a problem that we face frequently. We have to date fields that are going to throw an exception just when we execute the query, the problem is that is already too late, we don't want them to reach the database.
 
 ```java
 class SearchService {
@@ -124,7 +124,7 @@ class DateTimeFormatter {
 
 Now with the parser being done in the service we replace exceptions related to our database for `DateTimeParseException`, this makes way easier to capture the right exception instead of trying to figure it out what was happening. What we have now is better than the previous code using strings all around but we can and must do better. The `SearchService` is throwing `DateTimeParseException` and we can handle that case in the controller and return something like `400 - Bad Request`.
 
-Now let's take care of the IATA, the IATA specification (source: Wikipedia, I didn't read the specification) says that's a code compose by three letters. In this case, we can create a class for it and add the validation. 
+Now let's take care of the IATA, the IATA specification (source: Wikipedia, I didn't read the specification) says that's a code composed by three letters. In this case, we can create a class for it and add the validation. 
 
 ```java
 class InvalidIATAException extends InvalidArgumentException {}
@@ -168,17 +168,17 @@ class SearchRepository {
 }
 ```    
 
-With those changes we can at least guarantee that the dates passed to the database are valid and the formatting don't matter much at this point now because we it's encapsulated inside of a class. We can't confirm that the date exists in the database but there won't be any exceptions thrown when the query is executed. 
+With those changes, we can at least guarantee that the dates passed to the database are valid and the formatting don't matter much at this point now because it's encapsulated inside of a class. We can't confirm that the date exists in the database but there won't be any exceptions thrown when the query is executed. 
 
 The state of the services and repositories are improving, said that there's still quite some work that can be done. We are doing all the validations inside the SearchService. 
 
-Just a clarification, The Application Layer is the part that handles the communication, in this case it would be the controller. The controller isn't related to the business but just a way of input/output for our domain. This diagram shows the boundires between them:
+Just a clarification, The Application Layer is the part that handles the communication, in this case, it would be the controller. The controller isn't related to the business but just a way of input/output for our domain. This diagram shows the boundaries between them:
 
 ![Diagram of the application with the controller, flight service and flight repository]({{ '/assets/custom/img/blog/2020-03-22-types-and-accepting-the-facts/application-diagram.jpg' | prepend: site.baseurl }})
 
-We use types, dependency injection and interfaces to abstract what the application is doing. The `FlightSearchService` don't care if the data is comming through HTTP, RPC or even a CLI. The same goes for the `FlightSearchRepository`, it just cares that you can store and retrieve the data later, the how doesn't matter for the business, that's an application responsability. 
+We use types, dependency injection and interfaces to abstract what the application is doing. The `FlightSearchService` don't care if the data is coming through HTTP, RPC or even a CLI. The same goes for the `FlightSearchRepository`, it just cares that you can store and retrieve the data later, the how doesn't matter for the business, that's an application responsibility. 
 
-Continuing with the changes. Now we can see that the problem with the codebase is that is the service which is part of our business domain and we are filling with application code that has nothing to do with it. The solution for that is moving that code up the the application layer.
+Continuing with the changes. Now we can see that the problem with the codebase is that is the service which is part of our business domain and we are filling with application code that has nothing to do with it. The solution for that is moving that code up the application layer.
 
 ```java
 class SearchService {
@@ -475,7 +475,7 @@ public class FlightSearchController {
 
 This code doesn't look too bad, but what if we start do add more validations with different status code? we are going to have to add more and more catch clauses, if we have to implement the catch in multiple places, how can we be sure that we are not forgetting anything? In Java, the compiler doesn't do exhaustive checks. This is when we use Sealed Classes and the when clause. 
 
-Sealed Classes is a construct that allows you to create restricted hierarchies, other people will not be able to extend from the outside of sealed classes. They are like a powerful version of an Enum, we can use a sealed class to represent the result of our search.  
+Sealed Class is a construct that allows you to create restricted hierarchies, other people will not be able to extend from the outside of sealed classes. They are like a powerful version of an Enum, we can use a sealed class to represent the result of our search.  
 
 ```kotlin
 class SearchResult {
@@ -517,8 +517,9 @@ You should also search for the methods of your language that are immutable, like
 
 During the examples, there were also many constructors with validations and more code than the usual, if you are doing that a lot you should totally learn about Static Factories that are mentioned in Effective Java, it will teach you how to write more idiomatic constructors for your classes.
 
-There's also Inline classes, that's something that is comming to the next version of Kotlin and to some future version in Java. When you need to wrap a single value like an Id. I will not give any examples but you can check the those two sources for [Kotlin](https://kotlinlang.org/docs/reference/inline-classes.html) and [Java](https://www.infoq.com/articles/inline-classes-java/)
+There's also Inline classes, that's something that is coming to the next version of Kotlin and to some future version in Java. When you need to wrap a single value like an Id. I will not give any examples but you can check those two sources for [Kotlin](https://kotlinlang.org/docs/reference/inline-classes.html) and [Java](https://www.infoq.com/articles/inline-classes-java/)
 
 ## Sources
 
 - Primitive Obsession
+- Data Clumps
