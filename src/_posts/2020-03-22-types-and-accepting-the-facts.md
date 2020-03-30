@@ -42,7 +42,7 @@ Now that we receive that request, we have to understand what composes a search:
 - The origin and the destination must be different.
 - The origin and the destination must be valid IATA
 
-We can have all those validations without creating a class, imagine that we have a controller that will receive that, parse the JSON and send to a service.
+We can have all those validations without creating a class. Imagine that we have a controller that will receive that, parse the JSON, and send to a service.
 
 The code for the application is:
 
@@ -126,7 +126,7 @@ class DateTimeFormatter {
 }
 ```
 
-Now with the parser being done in the service we replace exceptions related to our database for `DateTimeParseException`, this makes way easier to capture the right exception instead of trying to figure it out what was happening. What we have now is better than the previous code using strings all around but we can and must do better. The `SearchService` is throwing `DateTimeParseException` and we can handle that case in the controller and return something like `400 - Bad Request`.
+Now with the parser being done in the service we replace exceptions related to our database for DateTimeParseException, this makes it way easier to capture the right exception instead of trying to figure it out what was happening. What we have now is better than the previous code using strings all around but we can and must do better. The `SearchService` is throwing `DateTimeParseException` and we can handle that case in the controller and return something like `400 - Bad Request`.
 
 Now let's take care of the IATA, the IATA specification (source: Wikipedia, I didn't read the specification) says that's a code composed by three letters. In this case, we can create a class for it and add the validation. 
 
@@ -172,17 +172,17 @@ class SearchRepository {
 }
 ```    
 
-With those changes, we can at least guarantee that the dates passed to the database are valid and the formatting don't matter much at this point now because it's encapsulated inside of a class. We can't confirm that the date exists in the database but there won't be any exceptions thrown when the query is executed. 
-
-The state of the services and repositories are improving, said that there's still quite some work that can be done. We are doing all the validations inside the SearchService. 
+With those changes, we can at least guarantee that the dates passed to the database are valid and the formatting doesn't matter much at this point now because it's encapsulated inside of a class. We can't confirm that the date exists in the database but there won't be any exceptions thrown when the query is executed. 
 
 Just a clarification, The Application Layer is the part that handles the communication, in this case, it would be the controller. The controller isn't related to the business but just a way of input/output for our domain. This diagram shows the boundaries between them:
 
 ![Diagram of the application with the controller, flight service and flight repository]({{ '/assets/custom/img/blog/2020-03-22-types-and-accepting-the-facts/application-diagram.jpg' | prepend: site.baseurl }})
 
-We use types, dependency injection and interfaces to abstract what the application is doing. The `FlightSearchService` don't care if the data is coming through HTTP, RPC or even a CLI. The same goes for the `FlightSearchRepository`, it just cares that you can store and retrieve the data later, the how doesn't matter for the business, that's an application responsibility. 
+We use types, dependency injection and interfaces to abstract what the application is doing. The `FlightSearchService` doesn't care if the data is coming through HTTP, RPC or even a CLI. The same goes for the `FlightSearchRepository`, it just cares that you can store and retrieve the data later, the how doesn't matter for the business, that's an application responsibility. 
 
-Continuing with the changes. Now we can see that the problem with the codebase is that is the service which is part of our business domain and we are filling with application code that has nothing to do with it. The solution for that is moving that code up the application layer.
+Continuing with the changes. The problem with the codebase is that it's being filled with application code that isn't relevant. The solution for that is moving that code up the application layer.
+
+
 
 ```java
 class SearchService {
@@ -226,7 +226,7 @@ All those things that I've said here aren't made up shit that I'm coming to try 
 
 ### Throwing Exception where, when, how?
 
-We already mentioned about the Domain and the Application layer, where should we be adding the validation for the values that we have. For things like parsing dates or a JSON which is explicit out of the business domain, it's better to make them live inside the Application Layer so we can test the Business Layer without having to worry about that, also the way we drive the application might be different depending on what you want. That isn't something that our Business should be worried about.
+We already mentioned the Domain and the Application layer, where should we be adding the validation for the values that we have. For things like parsing dates or a JSON which is explicit out of the business domain, it's better to make them live inside the Application Layer so we can test the Business Layer without having to worry about that, also the way we drive the application might be different depending on what you want. That isn't something that our Business should be worried about.
 
 ## Abstracting your way out of problems
 
@@ -389,7 +389,7 @@ public class NullExample {
 
 This snippet will throw a NullPointerException but at any moment we were warned that the method would return null, we might know for reading the documentation or the code. We can add a null check before calling `home.length()`, that solves the problem of the exception that we are getting, we still have the problem that we have to do that after every call of the method, and human beings are unreliable to do repetitive tasks like that. Do you know who is good checking that kind of stuff? The compiler of course. 
 
-With all the advance of the modern society and Java, there's a quite decent way of dealing with this problem. Java provides us with the `Optional<>` that can wrap null values for us. The main advantage of using an Optional is that we can't use the value straight away (please, don't call `.get()` straight away), we explicitly have to deal with the possibility of a null value. This is way better than returning null or just throwing an exception. The final result would be: 
+With all the advances in modern society and Java, there's a quite decent way of dealing with this problem. Java provides us with the `Optional<>` that can wrap null values for us. The main advantage of using an Optional is that we can't use the value straight away (please, don't call `.get()` straight away), we explicitly have to deal with the possibility of a null value. This is way better than returning null or just throwing an exception. The final result would be: 
 
 ```java
 public class OptionalExample {    
@@ -521,7 +521,7 @@ You should also search for the methods of your language that are immutable, like
 
 During the examples, there were also many constructors with validations and more code than the usual, if you are doing that a lot you should totally learn about Static Factories that are mentioned in Effective Java, it will teach you how to write more idiomatic constructors for your classes.
 
-There's also Inline classes, that's something that is coming to the next version of Kotlin and to some future version in Java. When you need to wrap a single value like an Id. I will not give any examples but you can check those two sources for [Kotlin](https://kotlinlang.org/docs/reference/inline-classes.html) and [Java](https://www.infoq.com/articles/inline-classes-java/)
+There's also Inline classes, that's something that is coming to the next version of Kotlin and to some future version in Java. When you need to wrap a single value like an Id. I will not give any examples but you can check those two sources for [Kotlin](https://kotlinlang.org/docs/reference/inline-classes.html) and [Java](https://www.infoq.com/articles/inline-classes-java/).
 
 ## Sources
 
