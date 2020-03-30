@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: types-and-accepting-the-facts-2
 title: Types and accepting the fact that I might not be that smart. - Part 2
-date: 2020-03-22 00:00:00 +00:00
+date: 2020-03-31 00:00:00 +00:00
 author: André Guelfi Torres
 image:
     src: /assets/custom/img/blog/jigsaw-types.jpg
