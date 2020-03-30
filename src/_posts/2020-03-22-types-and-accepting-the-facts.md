@@ -17,12 +17,12 @@ tags:
 abstract: Let's continue our conversation about types and see how to apply then on the day to day
 ---
 
-We already spoke about the different type systems and how they work, now it's time to write some code and see
+We already spoke about the different type systems and how they work [here](https://codurance.com/2020/02/25/types-and-accepting-the-facts/), now it's time to write some code and see
 how type can help us.
 
 ## The Flight Search Example
 
-Imagine that we are building a company that searches for flights on multiple websites, we are exposing an endpoint that accepts JSON. Right now we are only dealing with simple searches where all flights will have a return and the accepted JSON is:
+Imagine that we are building a company that searches for flights on multiple websites. We are exposing an endpoint that accepts JSON. Right now we are only dealing with simple searches where all flights will have a return and the accepted JSON is:
 
 ```json
 {
@@ -35,13 +35,15 @@ Imagine that we are building a company that searches for flights on multiple web
 
 Now that we receive that request, we have to understand what composes a search:
 
-- Start and End dates
-- The Start date has to be earlier than the End date.
-- An Origin and Destination
-- The Origin and the destination must be different.
-- The Origin and Destination must be valid IATA
+- The start and end dates
+- The start date has to be earlier than the end date.
+- An origin and destination
+- The origin and the destination must be different.
+- The origin and the destination must be valid IATA
 
 We can have all those validations without creating a class, imagine that we have a controller that will receive that, parse the JSON and send to a service.
+
+The code for the application is:
 
 ```java
     public class FlightSearchController {
@@ -63,10 +65,6 @@ We can have all those validations without creating a class, imagine that we have
     } 
 ```
 
-Now all the validations that we have to do must live inside the `SearchSevice`, not only the business validations, we must do validations that are related to application code like date formatting, but not only that, in this way inside our class we will have to deal with multiple parameters that we will have to pass them together every time we need a `SearchRequest`.
-
-When we take a look inside the `SearchService` class we can see how all those fields are being handled. 
-
 ```java
 class SearchService {
 
@@ -85,11 +83,16 @@ class SearchRepository {
 }
 ```
 
-There are so many smells in that snippet that made me sick, jokes aside we have to see that we are moving all the validations to the edge of the application, this will only blow up when we make a database call. This might be a problem for error handling because we want to tell the person that called the API which kind of error is, a database problem would usually be a `5XX`, but in reality, could be a `4XX` since the problem is in the payload that was sent, not in the database. 
+There are so many smells in that snippet that made me sick. Jokes aside we have to see that we are moving all the validations to the edge of the application, this will only blow up when we make a database call with invalid parameters. This might be a problem for error handling because we want to tell the person that called the API which kind of error is, a database problem would usually be a `5XX`, but in reality, could be a `4XX` since the problem is in the payload that was sent, not in the database. 
 
 ### Fastening the type seatbelt
 
-Let's start with the dates, you know there are not multiple date format and isn't a problem that we face frequently. We have to date fields that are going to throw an exception just when we execute the query, the problem is that is already too late, we don't want them to reach the database.
+There are two types of validations that have to be done in this part:
+
+- Application validations: It's related to the JSON and checking if all the values are parseable to the proper type. 
+- Business validations: See if the data will comply with the business rule like the starting date being before than the ending date.
+
+Let's start with the dates, there are not multiple date formats and isn't a problem that we face frequently. Parsing the `startDate` and `endDate` parameters to `LocalDate` in the `SearchService` will help us to always have a valid date when searching in the database. In case an invalid date is sent a `DateTimeException` exception will be thrown, which makes easier to identify that is a problem with the data and not the database.
 
 ```java
 class SearchService {
