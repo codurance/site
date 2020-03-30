@@ -525,5 +525,7 @@ There's also Inline classes, that's something that is coming to the next version
 
 ## Sources
 
-- Primitive Obsession
-- Data Clumps
+- [Primitive Obsession](https://wiki.c2.com/?PrimitiveObsession)
+- [Data Clumps](https://martinfowler.com/bliki/DataClump.html)
+- [KotlinConf 2019: The Power of Types by Danny Preussler](https://www.youtube.com/watch?v=t3DBzaeid74)
+- [KotlinConf 2019: Testing: Testing by Christina Lee](https://www.youtube.com/watch?v=SIr7mcnVy98)
