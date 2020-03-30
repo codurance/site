@@ -15,6 +15,7 @@ tags:
     - java
     - kotlin
 abstract: Let's continue our conversation about types and see how to apply then on the day to day
+description: Let's continue our conversation about types and see how to apply then on the day to day
 ---
 
 We already spoke about the different type systems and how they work [here](https://codurance.com/2020/02/25/types-and-accepting-the-facts/), now it's time to write some code and see
