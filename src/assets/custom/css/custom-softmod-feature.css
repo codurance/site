@@ -16,10 +16,24 @@
 }
 
 
-/* -- Backgrounds -- */
+/* -- Spacing -- */
 
 .g-mt-neg100 {
     top: -50px;
+    position: relative;
+}
+
+.pad-top-none {
+    padding-top: 0!important;
+}
+
+.g-mt-neg150 {
+    top: -150px;
+    position: relative;
+}
+
+.g-mt-neg200 {
+    top: -200px;
     position: relative;
 }
 
@@ -28,6 +42,10 @@
 
 .bg-slate {
     background-color: #2B3342;
+}
+
+.bg-blue {
+    background-color:#0F4071!important;
 }
 
 .bg-white {
@@ -39,15 +57,31 @@
 }
 
 .bg-sheen {
-    background: rgb(252,249,241);
-    background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);    
+    position:relative;
 }
-
+  
+.bg-sheen:after {
+    content:'';
+    background: rgb(252,249,241);
+    background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);   
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    right: 100px;
+}
+  
+.z-index-1 {
+    z-index: 1;
+    position: relative;
+}
 
 /* -- Case Studies-- */
 
 .card {
     border: none!important;
+    min-height: 381px;
 }
 
 
@@ -57,13 +91,18 @@
 	display: grid;
 	grid-gap: 140px;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 500px;
+	grid-template-rows: 600px;
 } 
 
 .grid-item--intro {
     padding-left: 50px;
 	align-items: center;
 	display: flex;
+}
+
+.grid-item--intro div {
+    max-width: 400px;
+    margin: auto;
 }
 
 /* -- Element Position -- */
@@ -83,6 +122,10 @@
     color: white;
 }
 
+.text-coral{
+    color: #FA7268;
+}
+
 .center {
     text-align: center;
 }
@@ -90,7 +133,6 @@
 .text-mxwidth {
     max-width: 600px;
 }
-
 
 /* -- Buttons -- */
 

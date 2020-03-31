@@ -5,9 +5,9 @@
 /*
 SCSS variables and mixins
 */
-$color__main: #444;
-$color__active: grey;
-$background__active: #eee;
+$color__main: transparent;
+$color__active: transparent;
+$background__active: transparent;
 $width__tabs-side: 150px;
 $breakpoint: 800px;
 @mixin tab-active() {
@@ -17,11 +17,10 @@ $breakpoint: 800px;
 
 
 .tabbed-content {
-  background: #fff;
-  box-shadow: 1px 1px 6px #ccc;
+  background: transparent;
   max-width: 800px;
-  padding: 1em;
-  margin: 1em auto;
+  padding: 0 0 1px 0;
+  margin: 0 auto;
 }
 
 .tabs {
@@ -33,13 +32,23 @@ $breakpoint: 800px;
     li {
       background: $background__active;
       width: calc(100%/6);
+      float:left;
+      text-align: center;
+      min-height: 50px;
+      font-weight: normal;
 
       a {
-        padding: .5em 1em;
+        padding: .3em 1em;
+        font-size: 14px;
+        line-height: 16px;
+        color: #444444;
+        text-decoration: none;
 
         &:hover,
         &.active {
           @include tab-active();
+          font-weight: 700;
+          color: #444444;
         }
       }
     }
@@ -63,7 +72,6 @@ $breakpoint: 800px;
     }
 
     .item-content {
-      padding: 1em;
       -webkit-transition: opacity 0.3s ease-in-out;
       -moz-transition: opacity 0.3s ease-in-out;
       -o-transition: opacity 0.3s ease-in-out;
@@ -71,6 +79,18 @@ $breakpoint: 800px;
       transition: opacity 0.3s ease-in-out;
     }
   }
+}
+
+.item-content-grid {
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 500px;
+  width: 100%;
+}
+
+.item-left,
+.item-right {
+  padding: 30px;
 }
 
 @media all and (min-width: $breakpoint) {
