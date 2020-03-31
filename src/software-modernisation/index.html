@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+
 
 <section>
   <div class="container grid grid--2up">
@@ -9,7 +12,7 @@ layout: default
     <div class="grid-item grid-item--intro">
       <div>
         <h1 class="text-900">Software Modernisation</h1>
-        <p class="h4">
+        <p class="h4 text-700">
           Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible
         </p>
         <p>
@@ -31,7 +34,7 @@ layout: default
   </div>
 
   <div class="intro-image">
-
+    <img class="thumbnail card-img-top" src="{{ '/assets/custom/img/softmod/softmod-hero.jpg' | prepend: site.baseurl }}">
   </div>
 
 
@@ -337,3 +340,11 @@ layout: default
     </div>
   </div>
 </section>
+
+
+<script>
+  var image = document.getElementsByClassName('thumbnail');
+  new simpleParallax(image, {
+    maxTransition: 60
+  });
+</script>

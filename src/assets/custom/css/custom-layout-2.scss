@@ -1081,6 +1081,11 @@ blockquote.no-left-border {
   top: 0;
 }
 
+.intro-image img {
+  width: 100%;
+  height: auto;
+}
+
 .section--testimonials {
   background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
   background-size: 100% auto;
@@ -1147,6 +1152,7 @@ blockquote.no-left-border {
 .list-ticks li {
   padding: 0 0 5px 30px;
   position: relative;
+  font-weight: 700;
 }
 
 .list-ticks li:before {
