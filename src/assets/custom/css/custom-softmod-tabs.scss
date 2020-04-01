@@ -5,6 +5,7 @@
 /*
 SCSS variables and mixins
 */
+
 $color__main: transparent;
 $color__active: transparent;
 $background__active: transparent;
@@ -14,7 +15,6 @@ $breakpoint: 800px;
   background: $color__main;
   color: $background__active;
 }
-
 
 .tabbed-content {
   background: transparent;
@@ -56,7 +56,7 @@ $breakpoint: 800px;
 }
 
 .item {
-  margin-bottom: 2px;
+  margin-bottom: 15px;
 
   &::before {
     cursor: pointer;
@@ -64,11 +64,14 @@ $breakpoint: 800px;
     background: $background__active;
     padding: .5em;
     display: block;
+    border-radius: 3px;
   }
 
   &.active {
     &::before {
       @include tab-active();
+      border-radius: 0px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
 
     .item-content {
@@ -81,19 +84,13 @@ $breakpoint: 800px;
   }
 }
 
-.item-content-grid {
-  display: grid;
-	grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 500px;
-  width: 100%;
-}
-
-.item-left,
-.item-right {
-  padding: 30px;
+.item-content-grid__item-left,
+.item-content-grid__item-right {
+  padding: 15px 15px 30px 15px;
 }
 
 @media all and (min-width: $breakpoint) {
+
   .item {
     &.active {
       .item-content {
@@ -101,12 +98,25 @@ $breakpoint: 800px;
       }
     }
   }
+
   .tabs-side {
     .tabs {
       li {
         margin-bottom: 2px;
       }
     }
+  }
+
+  .item-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    width: 100%;
+  }
+
+  .item-content-grid__item-left,
+  .item-content-grid__item-right {
+    padding: 30px;
   }
 }
 
@@ -117,6 +127,7 @@ This is the minimum CSS that you will need in order for this to work
 
 // Accordion for small screens (mobile first principle)
 .tabbed-content {
+
   .tabs {
     display: none;
   }
@@ -125,6 +136,12 @@ This is the minimum CSS that you will need in order for this to work
     min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
     &::before {
       content: attr(data-title); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+      background-color:#FFFFFF;
+      color: #555555;
+      background-image: url('{{site.baseurl}}/assets/custom/img/softmod/icon-plus.svg');
+      background-size: 25px auto;
+      background-position: right 10px center;
+      background-repeat: no-repeat;
     }
 
     .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want.
@@ -138,6 +155,11 @@ This is the minimum CSS that you will need in order for this to work
         opacity: 1;
         visibility: visible;
         height: auto;
+      }
+      &::before {
+        background-color:#0E4072;
+        color: #FFFFFF;
+        background-image: none;
       }
     }
   }

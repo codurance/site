@@ -1,0 +1,492 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/* SoftMod Section
+   backgroundimages set in custom-layout-2.scss
+   ------------- */
+
+/********************************
+    Helpers - Text
+********************************/ 
+
+.text-900 {
+    font-weight: 900;
+}
+
+.text-700 {
+    font-weight: 700;
+}
+
+.text-navy {
+    color: #0E4072;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-coral {
+    color: #FA7268;
+}
+
+.mx-width-600 {
+    max-width: 600px;
+}
+
+/********************************
+    Helpers - Shadow
+********************************/ 
+
+.box-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/********************************
+    Helpers - Spacing
+********************************/
+
+.g-mt-neg100 {
+    top: -50px;
+    position: relative;
+}
+
+.pad-top-none {
+    padding-top: 0!important;
+}
+
+.g-mt-neg150 {
+    top: -150px;
+    position: relative;
+}
+
+.g-mt-neg200 {
+    top: -200px;
+    position: relative;
+}
+
+/********************************
+    Helpers - Backgrounds
+********************************/
+
+.bg-slate {
+    background-color: #2B3342;
+}
+
+.bg-blue {
+    background-color:#0F4071!important;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-coral {
+    background-color: #FB7268;
+}
+  
+.bg-slate--pattern {
+    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-slate--pattern.jpg');
+    background-size: cover;
+}
+
+@media (min-width: 800px) {
+
+    .bg-sustainable-change {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-sustainable-change.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .bg-innovation {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-innovation.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .bg-technology {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-technology.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .bg-business-alignment {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-business-alignment.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .bg-people-culture {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-people-culture.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .bg-risk-management {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-risk-management.png');
+        background-position: center bottom 20px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+.bg-testimonials {
+    background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
+    background-size: 100% auto;
+    background-position-y: 360px;
+    background-repeat: no-repeat;
+}
+
+.bg-sheen {
+    position:relative;
+}
+  
+.bg-sheen:after {
+    content:'';
+    background: rgb(252,249,241);
+    background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);   
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    right: 0;
+}
+
+@media (min-width: 1200px) {
+
+    .bg-sheen:after {
+        right: 100px;
+    };
+}
+
+/********************************
+    Helpers - Positioning
+********************************/
+
+.z-index-1 {
+    z-index: 1;
+    position: relative;
+}
+
+.p-relative {
+    position: relative;
+}
+
+
+/********************************
+    Helpers - Containers
+********************************/
+
+.container-slim {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+
+    .container-slim {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-slim {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container-slim {
+        max-width: 800px;
+    }
+}
+
+/********************************
+    Component - Buttons
+********************************/
+
+.btn--coral {
+    background:#FB7268!important;
+}
+
+.btn--blue {
+    background:#0F4071!important;
+}
+
+/********************************
+    Component - Lists
+********************************/
+
+.list-ticks {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+  
+.list-ticks li {
+    padding: 0 0 5px 30px;
+    position: relative;
+    font-weight: 700;
+}
+  
+.list-ticks li:before {
+    content: '';
+    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/icon-tick.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-size: 20px;
+    left: 0px;
+    top: 2px;
+}
+
+/********************************
+    Module - Hero
+********************************/
+
+.sm-hero {
+    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-hero-dark.jpg');
+    background-size: cover;
+}
+
+.sm-hero__grid {
+    display: block;
+}
+
+.sm-hero__grid__grid-item--intro {
+	align-items: center;
+    display: flex;
+    z-index: 2;
+    position: relative;
+}
+
+.sm-hero__grid__grid-item--intro div {
+    max-width: 400px;
+    margin: auto;
+    color: #FFFFFF!important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sm-hero__grid__grid-item--intro div p {
+    color: #FFFFFF!important;
+}
+
+.sm-hero__grid__grid-item--intro-image {
+    display: none;
+}
+
+.sm-hero__grid__grid-item--intro-image img {
+    width: 400px;
+    height: 400px;
+    height: auto;
+}
+
+.sm-hero__grid__grid-item--intro h1 {
+    padding-left: 80px;
+}
+
+.icon-sm {
+    position: absolute;
+    width: 60px;
+    left: 0px;
+    top: 15px;
+	stroke-dasharray: 1400;
+	stroke-dashoffset: 1400;
+    animation: dash 3s linear forwards;
+    fill: #FFFFFF;
+}
+
+.icon-sm circle {
+	opacity: 0;
+	animation: dot 0.5s linear forwards;
+	animation-delay: 2.2s;
+}
+
+.box-stroke {
+    fill: none;
+    stroke:#FFFFFF;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:4px;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dot {
+	to {
+	    opacity: 1;
+	}
+}
+
+@media (min-width: 992px) {
+
+    .sm-hero {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    .sm-hero__grid__grid-item--intro h1 {
+        padding-left: 0px;
+    }
+
+    .icon-sm {
+        top: -12px;
+    }
+
+    .box-stroke {
+        fill: none;
+        stroke:#555555;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-width:4px;
+    }
+
+    .icon-sm {
+        left: -75px;
+    }
+
+    .sm-hero__grid {
+        display: grid;
+        grid-gap: 140px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 600px;
+    }
+
+    .sm-hero__grid__grid-item--intro {
+        padding-left: 50px; 
+    }
+
+    .sm-hero__grid__grid-item--intro div, .sm-hero__grid__grid-item--intro div p {
+        color: #555555!important;
+    }
+
+    .sm-hero__grid__grid-item--intro-image {
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-hero.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        height: 750px;
+        top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/********************************
+    Module - Case Studies
+********************************/
+
+.case-studies {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  .case-studies:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 7%;
+    background: linear-gradient(
+      34deg,
+      rgba(252, 249, 241, 1) 52%,
+      rgba(252, 244, 244, 1) 100%
+    );
+    z-index: -1;
+  }
+  .case-studies__cases-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .case-studies__case {
+    display: inline-block;
+    flex: 1;
+    width: 25%;
+    margin: 0 10px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+      0 1px 10px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    min-width: 230px;
+    max-width: 300px;
+  }
+  .case-studies__case:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .case-studies__case-img-container {
+    width: 100%;
+    padding-top: 62%;
+    background-position: top center;
+    background-size: cover;
+  }
+  .case-studies__case-text-container {
+    padding: 1rem;
+    background: white;
+  }
+  .case-studies__case-text-container > .link-button {
+    white-space: nowrap;
+    padding: 6% 10%;
+    margin-top: 10%;
+    display: inline-block;
+  }
+  @media (max-width: 999px) {
+    .case-studies__cases-wrapper {
+      justify-content: center;
+    }
+    .case-studies__cases-wrapper > .wrap-break {
+      display: block;
+      width: 100%;
+    }
+    .case-studies__case {
+      margin: 0 2rem 4rem;
+    }
+  }
+  @media (max-width: 999px) {
+    .case-studies {
+      padding-bottom: 3rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .case-studies {
+      padding-top: 3rem;
+    }
+    .case-studies:before {
+      right: 0;
+    }
+  }
+  @media (max-width: 587px) {
+    .case-studies__case {
+      text-align: center;
+    }
+  }
