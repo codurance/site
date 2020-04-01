@@ -159,7 +159,7 @@ This is the minimum CSS that you will need in order for this to work
       &::before {
         background-color:#0E4072;
         color: #FFFFFF;
-        background-image: none;
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/icon-minus.svg');
       }
     }
   }
