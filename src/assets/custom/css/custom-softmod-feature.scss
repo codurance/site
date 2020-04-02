@@ -34,6 +34,12 @@
     max-width: 600px;
 }
 
+@media (min-width: 768px) {
+    .text-center--bp768 {
+        text-align: center;
+    }
+}
+
 /********************************
     Helpers - Shadow
 ********************************/ 
@@ -46,23 +52,45 @@
     Helpers - Spacing
 ********************************/
 
-.g-mt-neg100 {
-    top: -50px;
-    position: relative;
-}
-
 .pad-top-none {
     padding-top: 0!important;
 }
 
-.g-mt-neg150 {
-    top: -150px;
-    position: relative;
-}
+@media (min-width: 992px) {
 
-.g-mt-neg200 {
-    top: -200px;
-    position: relative;
+    .g-mt-neg100--desk {
+        top: -100px!important;
+        position: relative;
+    }
+
+    .g-pt-0--desk {
+        padding-top: 0px!important;
+    }
+
+    .g-pt-50--desk {
+        padding-top: 50px!important;
+    }
+
+    .g-pt-100--desk {
+        padding-top: 100px!important;
+    }
+    
+    .g-pb-25--desk {
+        padding-bottom: 25px!important;
+    }
+
+    .g-pb-50--desk {
+        padding-bottom: 50px!important;
+    }
+
+    .g-pb-100--desk {
+        padding-bottom: 100px!important;
+    }
+
+    .g-pb-200--desk {
+        padding-bottom: 200px!important;
+    }
+
 }
 
 /********************************
@@ -86,8 +114,14 @@
 }
   
 .bg-slate--pattern {
-    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-slate--pattern.jpg');
+    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-hero-dark.jpg');
     background-size: cover;
+}
+
+.bg-testimonials {
+    background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 800px) {
@@ -133,20 +167,20 @@
         background-repeat: no-repeat;
         background-size: 100% auto;
     }
-}
 
-.bg-testimonials {
-    background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
-    background-size: 100% auto;
-    background-position-y: 360px;
-    background-repeat: no-repeat;
+    .bg-testimonials {
+        background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
+        background-size: 110% auto;
+        background-position-y: 360px;
+        background-repeat: no-repeat;
+    }
 }
 
 .bg-sheen {
     position:relative;
 }
   
-.bg-sheen:after {
+.bg-sheen:before {
     content:'';
     background: rgb(252,249,241);
     background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);   
@@ -160,9 +194,21 @@
 
 @media (min-width: 1200px) {
 
-    .bg-sheen:after {
+    .bg-sheen:before {
         right: 100px;
     };
+
+    .bg-sheen:after {
+        content: '';
+        right: 100px;
+        background-color:#293341;
+        position: absolute;
+        width:100%;
+        height: 450px;
+        bottom: 0;
+        z-index: 0;
+        right: 0;
+    };  
 }
 
 /********************************
@@ -177,7 +223,6 @@
 .p-relative {
     position: relative;
 }
-
 
 /********************************
     Helpers - Containers
@@ -216,12 +261,41 @@
 ********************************/
 
 .btn--coral {
-    background:#FB7268!important;
+    background-color:rgba(251, 114, 104, 1)!important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color:rgba(251, 114, 104, 0.8)!important;
+        transition: all 0.3s ease;
+    }
 }
 
 .btn--blue {
-    background:#0F4071!important;
+    background-color:rgba(15, 64, 113, 1)!important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color:rgba(15, 64, 113, 0.8)!important;
+        transition: all 0.3s ease;
+    }
 }
+
+@media (max-width: 587px) {
+    .btn--wide-mobile {
+        width: 100%;
+    }
+}
+
+/********************************
+    Component - HS Form
+********************************/
+
+.sm-enquiry .hbspt-form,
+.sm-enquiry .hs-form-iframe {
+    width: 100%!important;
+    max-width: 550px!important;
+}
+
 
 /********************************
     Component - Lists
@@ -275,7 +349,6 @@
 }
 
 .sm-hero__grid__grid-item--intro div {
-    max-width: 400px;
     margin: auto;
     color: #FFFFFF!important;
     padding-top: 50px;
@@ -288,23 +361,27 @@
 
 .sm-hero__grid__grid-item--intro-image {
     display: none;
+    overflow: hidden;
 }
 
 .sm-hero__grid__grid-item--intro-image img {
-    width: 400px;
-    height: 400px;
+    width: 110%;
     height: auto;
+    bottom: 0;
+    left: 0;
 }
 
 .sm-hero__grid__grid-item--intro h1 {
     padding-left: 80px;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-size: 3.5;
 }
 
 .icon-sm {
     position: absolute;
     width: 60px;
     left: 0px;
-    top: 15px;
 	stroke-dasharray: 1400;
 	stroke-dashoffset: 1400;
     animation: dash 3s linear forwards;
@@ -349,7 +426,7 @@
     }
 
     .icon-sm {
-        top: -12px;
+        top: 0px;
     }
 
     .box-stroke {
@@ -488,5 +565,8 @@
   @media (max-width: 587px) {
     .case-studies__case {
       text-align: center;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }

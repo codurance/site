@@ -114,6 +114,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav {
   *height: 0;
+  display: none;;
 }
 .flex-direction-nav a {
   text-decoration: none;
@@ -276,5 +277,8 @@ html[xmlns] .flexslider .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;
+  }
+  .flex-direction-nav {
+    display: block;
   }
 }
