@@ -88,6 +88,8 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides {
   zoom: 1;
+  display: flex;
+  align-items: center;
 }
 .flexslider .slides img {
   height: auto;
