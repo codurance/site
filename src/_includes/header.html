@@ -85,3 +85,7 @@
       </div>
 </header>
 <!-- End Header -->
+
+{% if page.url == "/" or page.url == "/careers/" %}
+   {% include sm_cta_slice.html%}
+{% endif %}
