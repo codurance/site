@@ -8,8 +8,23 @@ $(window).on('resize', function (e) {
   }, 250);
 });
 
+window.addEventListener('resize', makeFirstTabActiveOnDesktop);
+
+function makeFirstTabActiveOnDesktop(){
+  var tabs = $('.tabbed-content').find('.tabs');
+  if (tabs.is(':visible')) {
+    tabs.find('a[href$="#sustainable-change"]').addClass('active');
+    $('.tabbed-content').find("#sustainable-change").addClass('active');
+  }
+}
+
 function tabControl() {
   var tabs = $('.tabbed-content').find('.tabs');
+  if (tabs.is(':visible')) {
+    desktopClickHandler();
+  } else {
+    mobileClickHandler();
+  }
 
   function desktopClickHandler() {
     tabs.find('a').on('click', function (event) {
@@ -55,9 +70,5 @@ function tabControl() {
     });
   }
 
-  if (tabs.is(':visible')) {
-    desktopClickHandler();
-  } else {
-    mobileClickHandler();
-  }
+
 }
