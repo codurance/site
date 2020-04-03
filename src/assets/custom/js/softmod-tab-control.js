@@ -1,9 +1,9 @@
 tabControl();
 
 var resizeTimer;
-$(window).on('resize', function(e) {
+$(window).on('resize', function (e) {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function() {
+  resizeTimer = setTimeout(function () {
     tabControl();
   }, 250);
 });
@@ -40,12 +40,22 @@ function tabControl() {
           'slow');
     }
 
+    function makeItemInactive(){
+      var container = $(this).parents('.tabbed-content');
+      $(this).removeClass('active');
+      container.find('.tabs a.active').removeClass('active');
+    }
+
     $('.item').on('click', function () {
-      makeItemActive.call(this);
+      if ($(this).hasClass('active')) {
+        makeItemInactive.call(this);
+      } else {
+        makeItemActive.call(this);
+      }
     });
   }
 
-  if(tabs.is(':visible')) {
+  if (tabs.is(':visible')) {
     desktopClickHandler();
   } else {
     mobileClickHandler();
