@@ -10,8 +10,9 @@ $(window).on('resize', function(e) {
 
 function tabControl() {
   var tabs = $('.tabbed-content').find('.tabs');
-  if(tabs.is(':visible')) {
-    tabs.find('a').on('click', function(event) {
+
+  function desktopClickHandler() {
+    tabs.find('a').on('click', function (event) {
       event.preventDefault();
       var target = $(this).attr('href'),
           tabs = $(this).parents('.tabs'),
@@ -22,18 +23,31 @@ function tabControl() {
       $(this).addClass('active');
       $(target).addClass('active');
     });
-  } else {
-    $('.item').on('click', function() {
+  }
+
+  function mobileClickHandler() {
+    function makeItemActive() {
       var container = $(this).parents('.tabbed-content'),
           currId = $(this).attr('id'),
           items = container.find('.item');
       container.find('.tabs a').removeClass('active');
       items.removeClass('active');
       $(this).addClass('active');
-      container.find('.tabs a[href$="#'+ currId +'"]').addClass('active');
+      container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
       $('html,body').animate({
-            scrollTop: $(this).offset().top-80},
+            scrollTop: $(this).offset().top - 80
+          },
           'slow');
+    }
+
+    $('.item').on('click', function () {
+      makeItemActive.call(this);
     });
+  }
+
+  if(tabs.is(':visible')) {
+    desktopClickHandler();
+  } else {
+    mobileClickHandler();
   }
 }
