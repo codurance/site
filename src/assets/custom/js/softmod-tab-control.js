@@ -8,40 +8,28 @@ $(window).on('resize', function (e) {
   }, 250);
 });
 
-window.addEventListener('resize', makeFirstTabActiveOnDesktop);
-
-function makeFirstTabActiveOnDesktop(){
-  var tabs = $('.tabbed-content').find('.tabs');
-  if (tabs.is(':visible')) {
-    tabs.find('a[href$="#sustainable-change"]').addClass('active');
-    $('.tabbed-content').find("#sustainable-change").addClass('active');
-  }
-}
+var activeContent = "";
 
 function tabControl() {
-  var tabs = $('.tabbed-content').find('.tabs');
-  if (tabs.is(':visible')) {
-    desktopClickHandler();
-  } else {
-    mobileClickHandler();
-  }
-
-  function desktopClickHandler() {
-    tabs.find('a').on('click', function (event) {
-      event.preventDefault();
-      var target = $(this).attr('href'),
-          tabs = $(this).parents('.tabs'),
-          buttons = tabs.find('a'),
-          item = tabs.parents('.tabbed-content').find('.item');
-      buttons.removeClass('active');
-      item.removeClass('active');
-      $(this).addClass('active');
-      $(target).addClass('active');
-    });
-  }
+  isOnLargeScreen() ? tabControlOnLargeScreen() : tabControlOnSmallScreen();
 }
 
-function mobileClickHandler() {
+function isOnLargeScreen() {
+  return tabs().is(':visible');
+}
+
+function tabControlOnLargeScreen() {
+  if (activeContent === "") {
+    displaySustainableChangeTabContent();
+  } else {
+    tabs().find('a[href$="#' + activeContent + '"]').addClass('active');
+    tabs().find('#' + activeContent).addClass('active');
+  }
+  handleClickOnLargeScreen();
+}
+
+function tabControlOnSmallScreen() {
+
   $('.item').on('click', function () {
     if ($(this).hasClass('active')) {
       makeItemInactive.call(this);
@@ -58,10 +46,13 @@ function mobileClickHandler() {
     items.removeClass('active');
     $(this).addClass('active');
     container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
+
     $('html,body').animate({
           scrollTop: $(this).offset().top - 80
         },
         'slow');
+
+    activeContent = this;
   }
 
   function makeItemInactive() {
@@ -69,4 +60,27 @@ function mobileClickHandler() {
     $(this).removeClass('active');
     container.find('.tabs a.active').removeClass('active');
   }
+}
+
+function tabs() {
+  return $('.tabbed-content').find('.tabs');
+}
+
+function handleClickOnLargeScreen() {
+  tabs().find('a').on('click', function (event) {
+    event.preventDefault();
+    var target = $(this).attr('href'),
+        tabs = $(this).parents('.tabs'),
+        buttons = tabs.find('a'),
+        item = tabs.parents('.tabbed-content').find('.item');
+    buttons.removeClass('active');
+    item.removeClass('active');
+    $(this).addClass('active');
+    $(target).addClass('active');
+  });
+}
+
+function displaySustainableChangeTabContent() {
+  tabs().find('a[href$="#sustainable-change"]').addClass('active');
+  tabs().find("#sustainable-change").addClass('active');
 }
