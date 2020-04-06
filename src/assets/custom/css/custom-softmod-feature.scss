@@ -114,12 +114,19 @@
 }
   
 .bg-slate--pattern {
-    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-hero-dark.jpg');
-    background-size: cover;
+    background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-slate-pattern-2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .bg-testimonials {
     background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-testimonials.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-compass-cta {
+    background:url('{{site.baseurl}}/assets/custom/img/softmod/bg-compass-cta.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -208,6 +215,9 @@
         bottom: 0;
         z-index: 0;
         right: 0;
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-slate-pattern-2.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     };  
 }
 
