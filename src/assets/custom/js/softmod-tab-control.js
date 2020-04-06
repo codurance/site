@@ -22,8 +22,8 @@ function tabControlOnLargeScreen() {
   if (activeContent === "") {
     displaySustainableChangeTabContent();
   } else {
-    tabs().find('a[href$="#' + activeContent + '"]').addClass('active');
-    tabs().find('#' + activeContent).addClass('active');
+    tabs().find('a[href$="'+ activeContent + '"]').addClass('active');
+    tabs().find(activeContent).addClass('active');
   }
   handleClickOnLargeScreen();
 }
@@ -47,12 +47,17 @@ function tabControlOnSmallScreen() {
     $(this).addClass('active');
     container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
 
+    activeContent = "#" + $(this).attr('id');
+    console.log("Active content on small screen: ",activeContent);
+    console.log(this);
+
+
     $('html,body').animate({
           scrollTop: $(this).offset().top - 80
         },
         'slow');
 
-    activeContent = this;
+
   }
 
   function makeItemInactive() {
@@ -77,6 +82,8 @@ function handleClickOnLargeScreen() {
     item.removeClass('active');
     $(this).addClass('active');
     $(target).addClass('active');
+    activeContent = target;
+    console.log("Active content on large screen: ",activeContent);
   });
 }
 
