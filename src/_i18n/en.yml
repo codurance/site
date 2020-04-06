@@ -687,3 +687,19 @@ projects:
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.</p>
              <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
              <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
+software-modernisation:
+  hero-title: Software Modernisation
+  hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible
+  hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
+  hero-cta: Tell us about your challenges
+  problems-title: How We Solve Your Problems
+  problems-introduction: Whichever stage of the digital journey your business is on, we can help evolve
+  tabs-sustainable-change-title: Sustainable Change
+    sustainable-change-description: Business can move only as fast as we can deliver quality software
+  tabs-innovation-title: Innovation
+  tabs-technology-title: Technology
+  tabs-business-alignment-title: Business Alignment
+  tabs-people-and-culture-title: People & Culture
+  tabs-risk-management-title: Risk Management
+  clients-title: How we’ve helped our clients
+  clients-introduction: Take a look at how we’ve helped some of our clients tackle similar challenges
