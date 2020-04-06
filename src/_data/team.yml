@@ -916,3 +916,18 @@
   linkedin: danielacott
   email: daniel.acott@codurance.com
   office: London
+
+- id: florian_kempenich
+  name: Florian Kempenich
+  image: /assets/custom/img/team/florian_kempenich.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>As he started in our industry, Florian was an idealist. He believed that because software was human-made it would be possible to do away with the inherent complexity of natural things and build it clear, understandable, maintainable. When he found out not everyone shared the same perspective, Software Craft, and the Software Craft Community, came to the rescue.</p>
+    <p>Fast forward a couple of years, after having practiced TDD daily, turned many pieces of legacy code into prose, and converted originally reluctant people to the wonderful world of maintainable code, he realized that technical fluency was only one piece of the puzzle. Just as important, if not more, is the ability for a group of people to work together and collaborate constructively on a shared objective. He found great value in the practice of mindfulness, empathy and transparent communication.</p>
+    <p>Lately, he is interested in figuring out how to best combine the technical and human sides of our work to deliver continuous business value and grow our engagement with the client.</p>
+    <p>If you’re interested in knowing more, he is very approachable and always happy to have a quick chat.</p>
+  email: florian.kempenich@codurance.com
+  github: FlorianKempenich
+  twitter: ThisIsFlorianK
+  linkedin: FlorianKempenich
+  office: London
