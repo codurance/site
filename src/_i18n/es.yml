@@ -703,13 +703,17 @@ software-modernisation:
   hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
   hero-cta: Explícanos tus retos
   problems-title: Missing Text
-  problems-introduction: Missing Text
-  tabs-sustainable-change-title: Cambio sostenible
-    sustainable-change-description: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad
-  tabs-innovation-title: Innovación
-  tabs-technology-title: Tecnología
-  tabs-business-alignment-title: Aproximación de negocio
-  tabs-people-and-culture-title: Personas y cultura
-  tabs-risk-management-title: Gestión de riesgos
+  sustainable-change-title: Cambio sostenible
+  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad. 
+  innovation-title: Innovación
+  innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+  technology-title: Tecnología
+  technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
+  business-alignment-title: Aproximación de negocio
+  business-alignment-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
+  people-and-culture-title: Personas y cultura
+  people-and-culture-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
+  risk-management-title: Gestión de riesgos
+  risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
   clients-title: Cómo hemos ayudado a nuestros clientes
-  clients-introduction: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
+  clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.

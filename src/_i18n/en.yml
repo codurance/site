@@ -693,13 +693,17 @@ software-modernisation:
   hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
   hero-cta: Tell us about your challenges
   problems-title: How We Solve Your Problems
-  problems-introduction: Whichever stage of the digital journey your business is on, we can help evolve
-  tabs-sustainable-change-title: Sustainable Change
-    sustainable-change-description: Business can move only as fast as we can deliver quality software
-  tabs-innovation-title: Innovation
-  tabs-technology-title: Technology
-  tabs-business-alignment-title: Business Alignment
-  tabs-people-and-culture-title: People & Culture
-  tabs-risk-management-title: Risk Management
+  sustainable-change-title: Sustainable Change
+  sustainable-change-intro: Business can move only as fast as we can deliver quality software
+  innovation-title: Innovation
+  innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
+  technology-title: Technology
+  technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
+  business-alignment-title: Business Alignment
+  business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
+  people-and-culture-title: People and Culture
+  people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
+  risk-management-title: Risk Management
+  risk-management-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
   clients-title: How we’ve helped our clients
-  clients-introduction: Take a look at how we’ve helped some of our clients tackle similar challenges
+  clients-intro: Take a look at how we’ve helped some of our clients tackle similar challenges.
