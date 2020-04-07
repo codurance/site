@@ -693,10 +693,31 @@ software-modernisation:
   hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
   hero-cta: Tell us about your challenges
   problems-title: How We Solve Your Problems
+  what: What?
+  how: How?
+
   sustainable-change-title: Sustainable Change
   sustainable-change-intro: Business can move only as fast as we can deliver quality software
+  sus-change-li-1: Reduce lead time
+  sus-change-li-2: Reduce cost of change
+  sus-change-li-3: Frequent and safer releases to production
+  sus-change-li-4: Reduce technical debt
+  sus-change-li-5: Reduce defect rate
+  sus-change-how-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
   innovation-title: Innovation
   innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
+  innovation-li-1: Stay competitive
+  innovation-li-2: Easy to experiment
+  innovation-li-3: Data-driven decisions
+  innovation-li-4: Fast feedback
+  innovation-how-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+
+
+
+
+
+
   technology-title: Technology
   technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
   business-alignment-title: Business Alignment

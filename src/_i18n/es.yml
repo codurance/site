@@ -703,10 +703,35 @@ software-modernisation:
   hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
   hero-cta: Explícanos tus retos
   problems-title: Missing Text
+  what: ¿Qué?
+  how: ¿Cómo?
+
   sustainable-change-title: Cambio sostenible
-  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad. 
+  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+  sus-change-li-1: Reducir el tiempo de entrega
+  sus-change-li-2: Reducir el coste del cambio
+  sus-change-li-3: Lanzamientos frecuentes y más seguros a producción
+  sus-change-li-4: Reducir technical debt
+  sus-change-li-5: Reducir la tasa de defectos
+  sus-change-how-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
   innovation-title: Innovación
   innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+  innovation-li-1: Mantener la competitividad
+  innovation-li-2: Fácil de experimentar
+  innovation-li-3: Data driven decisions
+  innovation-li-4: Respuesta rápida
+  innovation-how-details: Contained experiments;Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
+
+
+
+
+
+
+
+
+
+
   technology-title: Tecnología
   technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
   business-alignment-title: Aproximación de negocio
