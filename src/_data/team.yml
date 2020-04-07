@@ -931,3 +931,15 @@
   twitter: ThisIsFlorianK
   linkedin: FlorianKempenich
   office: London
+
+- id: cherry_tsui
+  name: Cherry Tsui
+  image: /assets/custom/img/team/cherry_tsui.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Cherry first stumbled upon programming when deciding which courses to take for her university’s physics program. Since then she has completed her computer science degree and gained a number of years of professional development experience. Prior to her time at Codurance, she worked for a company which specializes in product reviews aggregation and later for an ecommerce company.</p>
+    <p>One of her main goals is to continuously improve her craft as a software engineer and to learn new technologies. She is an avid traveller and spent the last year and a half exploring South America and South-East Asia before joining Codurance. In her free time, she also enjoys climbing rocks, live music, and dancing.</p>
+  email: cherry.tsui@codurance.com
+  github: cherryt
+  linkedin: tsuicherry
+  office: London
