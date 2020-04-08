@@ -755,18 +755,22 @@ software-modernisation:
   card-1-heading: ASOS
   card-1-subheading: Enhanced business agility through software modernisation
   card-1-button: Download Case Study
+  card-1-url: https://info.codurance.com/en/asos-case-study
 
   card-2-heading: Mango
   card-2-subheading: Strategic advice, cultural change, and monolith to microservices migration
   card-2-button: Download Case Study
+  card-2-url: https://info.codurance.com/en/mango-case-study
 
   card-3-heading: eClinicalWorks
   card-3-subheading: Architecture modularisation and large scale code redesign and refactoring
   card-3-button: Download Case Study
+  card-3-url: https://info.codurance.com/en/eclinicalworks-case-study
 
   card-4-heading: BestSecret
   card-4-subheading: Cloud migration, architecture evolution and cultural alignment
   card-4-button: Download Case Study
+  card-4-url: https://info.codurance.com/en/best-secret-case-study
 
   testimonials-heading: Hear it from our clients
   testimonials-subheading: Don’t take it from us. Here’s what our clients had to say about Codurance.
