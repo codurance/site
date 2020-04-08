@@ -702,9 +702,12 @@ software-modernisation:
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
   hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
   hero-cta: Explícanos tus retos
-  problems-title: Missing Text
+  problems-title: ¿Cómo podemos ayudarte?
+  problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
   what: Qué
   how: Cómo
+  home-page-banner-text: PLACEHOLDER - We’ve just launched Software Modernization
+  home-page-banner-link: PLACEHOLDER - Find out more
 
   sustainable-change-title: Cambio sostenible
   sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
@@ -758,18 +761,43 @@ software-modernisation:
   risk-management-li-5: Reducir el tiempo medio de recuperación;
   risk-management-how-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   clients-title: Cómo hemos ayudado a nuestros clientes
   clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
+
+  card-1-heading: ASOS
+  card-1-subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
+  card-1-button: Descarga el Case Study
+  card-1-url: https://info.codurance.com/es/asos-case-study
+
+  card-2-heading: Mango
+  card-2-subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
+  card-2-button: Descarga el Case Study
+  card-2-url: https://info.codurance.com/es/mango-case-study
+
+  card-3-heading: eClinicalWorks
+  card-3-subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
+  card-3-button: Descarga el Case Study
+  card-3-url: https://info.codurance.com/es/eclinicalworks-case-study
+
+  card-4-heading: BestSecret
+  card-4-subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
+  card-4-button: Descarga el Case Study
+  card-4-url: https://info.codurance.com/es/best-secret-case-study
+
+  testimonials-heading: La opinión de nuestros clientes
+  testimonials-subheading: La opinión de nuestros clientes
+  testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
+  testimonials-bestsecret-p2: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
+  bestsecret-name-and-position: José López, Vice President of Engineering en BestSecret
+  testimonials-cazoo-p1: En Cazoo estamos construyendo una fuerte cultura de ingeniería en torno a los valores y prácticas de software craftsmanship y XP.  Además estamos ayudando a crecer a nuestro equipo de ingeniería para ofrecer una mejor experiencia para los clientes de nuestro negocio. Codurance nos ayuda a lograr eso.
+  testimonials-cazoo-p2: Codurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
+  cazoo-name-and-position: Ian Kershaw, Software Engineering Director en Cazoo
+  testimonials-hedgefund: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
+  hedgefund-name-and-position: Aaron Matthews, Director de desarrollo de software, Systematic Hedge Fund
+
+  compassCTA-subheading: Evalúa la madurez del desarrollo de software de tu organización
+  compassCTA-button: Empezar
+  contact-heading: Explícanos tus retos
+  contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos como podemos ayudarte.
+
+  hubspot-form-id: eefd17d6-3382-410d-a6fe-daa6ad8911fe
