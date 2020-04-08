@@ -1,8 +1,9 @@
-<title>{% if page.title %}{{ page.title }}{% else %}Software Craftsmanship and Agile Development{% endif %} | Codurance | Craft at Heart | London | Barcelona</title>
+<title>{% if page.url == "/software-modernisation/" %}{{ page.title }}{% else %}{% if page.title %}{{ page.title }}{% else %}Software Craftsmanship and Agile Development{% endif %} | Codurance | Craft at Heart | London | Barcelona{% endif %}</title>
+
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Our team of dedicated software craftspeople provide consultancy, software development, and training services to clients seeking high quality development processes and software solutions.">
+<meta name="description" content="{% if page.url == '/software-modernisation/' %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provide consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}">
 <meta name="author" content="Codurance Ltd">
 
 <!-- Open Graph Protocol  -->
