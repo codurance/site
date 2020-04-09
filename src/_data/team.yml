@@ -170,19 +170,6 @@
   github: trinkeg
   office: London
 
-- id: neilkidd
-  name: Neil Kidd
-  image: /assets/custom/img/team/neil_kidd.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Since graduating from Staffordshire University in 2000, Neil has worked as a software developer and team lead in the .Net ecosystem.</p>
-    <p>He discovered agile, lean, xp, theory of constraints and kanban in 2007 and believes in incremental, continuous improvement.</p>
-    <p>Neil has a particular interest in the soft side of his work. Enjoying helping people to excel in teamwork, process and self improvement.</p>
-    <p>In addition to attending meetups, he has co-organised the Devs In The Ditch and Agile Staffordshire user groups.</p>
-    <p>His other interests include his family, diy and motorcycling.</p>
-  github: neilkidd-codurance
-  office: London
-
 - id: terrybalfour
   name: Terry Balfour
   image: /assets/custom/img/team/terry_balfour.jpg
@@ -301,19 +288,6 @@
   twitter: mattsijansky
   github: Mattsi-Jansky
   linkedin: mjjansky
-  office: London
-
-- id: scottedwards
-  name: Scott Edwards
-  image: /assets/custom/img/team/scott_edwards.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Scott is a passionate craftsman who believes in doing things right the first time. He particularly enjoys working in C# and SQL Server, but is always happy to explore new development stacks and approaches.</p>
-    <p>In a past life in Cape Town he worked for several financial institutions as both a team lead and a software developer.</p>
-    <p>Scott enjoys being outdoors, longboarding and spending time exploring London.</p>
-  twitter: scotteza
-  github: scotteza
-  linkedin: scott-edwards-b1a68817
   office: London
 
 - id: chrisreinmuller
@@ -930,3 +904,30 @@
   email: Sebastian.kulinski@codurance.com
   github: morinslash
   office: Barcelona
+
+- id: daniel_acott
+  name: Daniel Acott
+  image: /assets/custom/img/team/daniel_acott.jpg
+  role: New Business Manager
+  fullDescription:
+    <p>Daniel is responsible for managing new business at Codurance. His career path has focused on global business development and technical training, and an accomplished history of developing and executing business strategy with wireless technologies within the telecommunications industry in his native home Australia.</p>
+    <p>Once finding out about Codurance he was fascinated by the culture of the company as well as the clear passion each member of the team has.</p>
+    <p>In his spare time he enjoys travelling, going to concerts, watching tech videos on Youtube and playing sport.</p>
+  linkedin: danielacott
+  email: daniel.acott@codurance.com
+  office: London
+
+- id: florian_kempenich
+  name: Florian Kempenich
+  image: /assets/custom/img/team/florian_kempenich.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>As he started in our industry, Florian was an idealist. He believed that because software was human-made it would be possible to do away with the inherent complexity of natural things and build it clear, understandable, maintainable. When he found out not everyone shared the same perspective, Software Craft, and the Software Craft Community, came to the rescue.</p>
+    <p>Fast forward a couple of years, after having practiced TDD daily, turned many pieces of legacy code into prose, and converted originally reluctant people to the wonderful world of maintainable code, he realized that technical fluency was only one piece of the puzzle. Just as important, if not more, is the ability for a group of people to work together and collaborate constructively on a shared objective. He found great value in the practice of mindfulness, empathy and transparent communication.</p>
+    <p>Lately, he is interested in figuring out how to best combine the technical and human sides of our work to deliver continuous business value and grow our engagement with the client.</p>
+    <p>If you’re interested in knowing more, he is very approachable and always happy to have a quick chat.</p>
+  email: florian.kempenich@codurance.com
+  github: FlorianKempenich
+  twitter: ThisIsFlorianK
+  linkedin: FlorianKempenich
+  office: London
