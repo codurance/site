@@ -97,6 +97,7 @@ or the shorter form:
 defsomething name [optional parameters], do: ...
 
 ```
+
 The later form makes sense for simple operations.
 
 In this code this is used to define a `module`, a `public function` and a `private function`
@@ -138,13 +139,13 @@ Functions in Elixir are called by the module, so we would call `String.downcase(
 Anonymous functions are slightly different.
 
 The anonymous function defined here
+
 ```
 my_fun = fun a -> a + 1 end
-```
 
-would need to be called as:
 
-```
+# would need to be called as:
+
 my_fun.(7)
 ```
 
