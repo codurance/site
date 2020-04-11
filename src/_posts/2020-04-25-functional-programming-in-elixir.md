@@ -53,32 +53,32 @@ Elixir uses snake_case for filenames, variables and functions, but PascalCase fo
 ```
 defmodule Words do
 
-	@seperators ~r/[ _,!&@$%^&:]/u
+  @seperators ~r/[ _,!&@$%^&:]/u
 
-	def count(sentence) do
+  def count(sentence) do
     Enum.reduce(String.split(String.downcase(sentence), @seperators, trim: true), %{}, &update_map/2)
   end
 
-	defp update_map(word, acc) do
-  	Map.update(acc, word, 1, &(&1 + 1))
+  defp update_map(word, acc) do
+    Map.update(acc, word, 1, &(&1 + 1))
   end
 end
 ```
 I'll repeat that with line numbers so that it is easier to discuss (these are not part of the language):
 
 ```
-01 defmodule Words do
+01  defmodule Words do
 02
-03 @seperators ~r/[ _,!&@$%^&:]/u
+03    @seperators ~r/[ _,!&@$%^&:]/u
 04
-05	def count(sentence) do
-06    Enum.reduce(String.split(String.downcase(sentence), @seperators, trim: true), %{}, &update_map/2)
-07  end
+05    def count(sentence) do
+06      Enum.reduce(String.split(String.downcase(sentence), @seperators, trim: true), %{}, &update_map/2)
+07    end
 08
-09	defp update_map(word, acc) do
-10  	Map.update(acc, word, 1, &(&1 + 1))
-11  end    
-12 end
+09	  defp update_map(word, acc) do
+10      Map.update(acc, word, 1, &(&1 + 1))
+11    end    
+12  end
 ```
 
 Line #01 defines the module, providing a scope for the functions. It ends on line #12
@@ -90,10 +90,9 @@ All blocks follow one of two patterns:
 defsomething name [optional parameters] do
 ...
 end
-```
 
-or the shorter form:
-```
+# or the shorter form:
+
 defsomething name [optional parameters], do: ...
 
 ```
@@ -143,7 +142,6 @@ The anonymous function defined here
 ```
 my_fun = fun a -> a + 1 end
 
-
 # would need to be called as:
 
 my_fun.(7)
@@ -179,15 +177,15 @@ Version 2
 ```
 defmodule Words do
 
-	@seperators ~r/[ _,!&@$%^&:]/u
+  @seperators ~r/[ _,!&@$%^&:]/u
 
-	def count(sentence) do
+  def count(sentence) do
     String.split(String.downcase(sentence), @seperators, trim: true)
-		|> Enum.reduce( %{}, &update_map/2)
+    |> Enum.reduce( %{}, &update_map/2)
   end
 
-	defp update_map(word, acc) do
-  	Map.update(acc, word, 1, &(&1 + 1))
+  defp update_map(word, acc) do
+    Map.update(acc, word, 1, &(&1 + 1))
   end
 end
 ```
@@ -199,18 +197,16 @@ We can go much further with this:
 
 ### Second Refactor
 
-Version 3
-
 ```
 defmodule Words do
 
-	@seperators ~r/[ _,!&@$%^&:]/u
+  @seperators ~r/[ _,!&@$%^&:]/u
 
-	def count(sentence) do
+  def count(sentence) do
     sentence
     |> String.downcase()
     |> String.split(@seperators, trim: true)
-		|> Enum.reduce( %{}, &update_map/2)
+    |> Enum.reduce( %{}, &update_map/2)
   end
 
 	defp update_map(word, acc) do
@@ -219,7 +215,7 @@ defmodule Words do
 end
 ```
 
-This reads much better. You now can see the order of execution.
+This is a clearer read. You now can see the order of execution.
 
 This hopefully will make understanding the Elixir library of functions easier.
 The first parameter is normally where data will arrive via a pipeline.
