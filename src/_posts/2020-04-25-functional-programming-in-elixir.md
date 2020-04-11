@@ -163,9 +163,9 @@ Here we are using the short form of an anonymous function.
 `&(&1 + 1)` is equivalent to the anonymous function that I defined above `fn a -> a + 1 end`.
 It again uses the capture operator and references positional parameters by index.
 
-### First refactor
-
 This finishes the first pass through the module, but we can do better.
+
+### First refactor
 
 Elixir has some more syntactic sugar that will help here. You can use the pipeline operator `|>` to remove the nesting.
 
