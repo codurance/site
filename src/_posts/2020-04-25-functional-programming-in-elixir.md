@@ -45,10 +45,14 @@ Hyphenated words such as co-operative are considered a single word.
 
 In Elixir functions live in modules.
 
-
 This is from the file words.ex
 
 Elixir uses snake_case for filenames, variables and functions, but PascalCase for modules.
+
+Nested modules are represented by a dot in the name simulating namespaces in other languages, so that
+`Module.Special` is a valid module name.
+
+You can call public functions from another namespace, but not the private ones. Functions behave much like static functions do in C#, if you swap the class name for the module.
 
 ```
 defmodule Words do
@@ -103,7 +107,7 @@ In this code this is used to define a `module`, a `public function` and a `priva
 
 Line #03 defines a module attribute. This is equivalent to a constant in other languages, but is more like a C preprocessor macro. Module attributes gets substituted at compile time. You have to define it in the file before you use it. You are allowed to redefine it throughout the module. These are not visible outside the module nor do they exist at runtime.
 
-This uses a regex `sigil` `~r` with a unicode switch on the end. This defines a simple regex that splits on certain characters.
+This uses a regex `sigil` `~r` with a unicode switch on the end. This defines a simple regex that splits on certain characters. Sigils are mapped to functions so `~r` becomes `sigil_w/2`. You can use this to define your own if you need to.
 
 Line #05 defines a public function. This ends on line #7. Elixir has no return statement as the last expression result in a function is the return value.
 
@@ -133,6 +137,8 @@ Here the `trim: true` option tells `String.split/3` to ignore empty items in the
 The first is the data to reduce. This can be any type that implements the `enumerable protocol`. 
 The second is the initial value of the accumulator, here an empty map `%{}`.
 The third uses the capture operator `&` to turn a function name into an `anonymous function`.
+
+Protocols are the equivalent of interfaces. They provide a set of methods that a module must define for a data type. Enum requires the type to implement the Enumerable protocol. The `iex` REPL environment provides built in help, from `iex` type `h Enumerable` to get the documentation on the Enumerable protocol. 
 
 Functions in Elixir are called by the module, so we would call `String.downcase('FIsh')`.
 Anonymous functions are slightly different.
@@ -216,6 +222,57 @@ end
 ```
 
 This is a clearer read. You now can see the order of execution.
+
+### Third Refactor
+
+Now I am going to add a typespec to the code. The code so far looks untyped, but that is only because we have not restricted anything.
+
+```
+defmodule Words do
+
+  @seperators ~r/[ _,!&@$%^&:]/u
+
+  @spec count(String.t()) :: map
+  def count(sentence) when is_binary(sentence) do
+    sentence
+    |> String.downcase()
+    |> String.split(@seperators, trim: true)
+    |> Enum.reduce( %{}, &update_map/2)
+  end
+
+  @spec counter(list, map) :: map
+	defp update_map(word, acc) do
+  	Map.update(acc, word, 1, &(&1 + 1))
+  end
+end
+```
+
+Here i have made three edits to the solution. Each of the functions now has a `typespec` and I have added a guard clause to `count/1`. Typespecs allow static checking of the code. It's not a required part of the language but does add value in larger projects. There is a tool called [dialyzer](https://hexdocs.pm/dialyzex/Mix.Tasks.Dialyzer.html) that can be used to staticly check a codebase to ensure that all uses of a function conform to the typespec. Recent versions of Elixir (from version 1.10) will check that a functions signature matches the typespec if a typespec is provided.
+
+`is_binary/1` is a guard clause. This can be used to assist with the definition of a type. Functions in Elixir use pattern matching which permits a function to have multiple clauses. Guard clauses provide the ability to add some extra details. The name binary comes from Erlang, since it can be used to parse a binary file.
+
+It's fairly common to have functions return two tuples `{:ok, details}` and `{:error, reason}`.
+Here is a process/1 function:
+
+```
+def process({:ok, details} = body) where is_string(details) do
+  IO.puts(details)
+  body
+end
+
+def process(body = {:error, reason}) do
+  IO.puts("Error, #{reason}")
+  body
+end
+```
+
+This demonstrates a two clause function. If details is not a string then the first clause will not match and you will get a run time exception. The `= body` is used for pattern matching to capture the entire tuple. This matching can happen on the left or the right. Pattern matching is also used to deconstruct the tuple to obtain the details. In both cases the input is passed on to the output making them easy to chain with pipelines. This allows some sophisticated validation to be applied without needing to use an `if`.
+
+
+Elixir takes the following maxim from Erlang `Unless you can handle an error "let it crash".`
+
+For more details on why see [Joe Armstrong's doctorial thesis](http://erlang.org/download/armstrong_thesis_2003.pdf)
+
 
 This hopefully will make understanding the Elixir library of functions easier.
 The first parameter is normally where data will arrive via a pipeline.
