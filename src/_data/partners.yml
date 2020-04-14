@@ -26,3 +26,10 @@
   description: Google's mission is to organise the world’s information and make it universally accessible and useful.
   alt-text: Google Logo
   website: google.com
+
+- id: skillsmatter
+  name: skllsmatter
+  image: /assets/custom/img/home/partners/skillsmatter.png
+  description: Skills Matter powers the world’s most innovative businesses by bringing together technology creators, users and adopters to learn skills, share expertise, and evolve ideas. 
+  alt-text: skillsmatter Logo
+  website: skillsmatter.com

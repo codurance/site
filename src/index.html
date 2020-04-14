@@ -110,9 +110,9 @@ layout: default
 
     <div class="row">
       {% for partner in site.data.partners %}
-      <div class="col-md-3 text-center">
+      <div class="col-md-partners text-center">
         <img
-          class="index-partner-logo g-mb-0--sm"
+          class="g-mb-0--sm img-responsive"
           src="{{ partner.image | prepend: site.baseurl }}"
           alt="{{ partner.alt-text }}"
         />

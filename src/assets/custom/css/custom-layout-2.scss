@@ -751,6 +751,11 @@ i.no-border {
 
 /* Partners */
 
+.col-md-partners {
+  width: 20%;
+  padding: 30px;
+}
+
 .img-center {
   /* 0 0 1 0 */
   display: block;
@@ -779,6 +784,7 @@ i.no-border {
     margin-left: 30px;
   }
 }
+
 
 /* Post with text side by side images */
 .image-side-by-side-text {
