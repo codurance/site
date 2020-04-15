@@ -280,11 +280,12 @@
 }
 
 .btn--blue {
-    background-color:rgba(15, 64, 113, 1)!important;
+    background-color:rgba(15, 64, 113, 1);
     transition: all 0.3s ease;
 
     &:hover {
-        background-color:rgba(15, 64, 113, 0.8)!important;
+        background-color:rgba(15, 64, 113, 0.8);
+        color: #FFFFFF;
         transition: all 0.3s ease;
     }
 }
