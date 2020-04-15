@@ -687,3 +687,107 @@ projects:
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.</p>
              <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
              <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
+software-modernisation:
+  hero-title: Software Modernisation
+  hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible
+  hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
+  hero-cta: Tell us about your challenges
+  problems-title: How We Solve Your Problems
+  problems-introduction: Whichever stage of the digital journey your business is on, we can help evolve
+  what: What
+  how: How
+  home-page-banner-text: We are recognised Software Modernisation experts
+  home-page-banner-link: Find out more
+
+  sustainable-change-title: Sustainable Change
+  sustainable-change-intro: Business can move only as fast as we can deliver quality software
+  sus-change-li-1: Reduce lead time
+  sus-change-li-2: Reduce cost of change
+  sus-change-li-3: Frequent and safer releases to production
+  sus-change-li-4: Reduce technical debt
+  sus-change-li-5: Reduce defect rate
+  sus-change-how-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
+  innovation-title: Innovation
+  innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
+  innovation-li-1: Stay competitive
+  innovation-li-2: Easy to experiment
+  innovation-li-3: Data-driven decisions
+  innovation-li-4: Fast feedback
+  innovation-how-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+
+  technology-title: Technology
+  technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
+  technology-li-1: Effectiveness and productivity
+  technology-li-2: Competitive advantage
+  technology-li-3: Cost reduction
+  technology-li-4: Technology refresh
+  technology-li-5: Mitigation against end-of-life
+  technology-how-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
+
+  business-alignment-title: Business Alignment
+  business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
+  business-alignment-li-1: Technology led business evolution
+  business-alignment-li-2: Faster quality feedback
+  business-alignment-li-3: Closer collaboration
+  business-alignment-li-4: Embrace change
+  business-alignment-how-details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+
+  people-and-culture-title: People and Culture
+  people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
+  people-and-culture-li-1: Talent retention and attraction
+  people-and-culture-li-2: Staff development
+  people-and-culture-li-3: Culture of learning
+  people-and-culture-li-4: Leadership at all levels
+  people-and-culture-li-5: Team autonomy
+  people-and-culture-how-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+
+  risk-management-title: Risk Management
+  risk-management-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
+  risk-management-li-1: Real-time system intelligence
+  risk-management-li-2: System observability
+  risk-management-li-3: Security
+  risk-management-li-4: Operational excellence
+  risk-management-li-5: Reduce mean time to recover
+  risk-management-how-details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
+
+  clients-title: How we’ve helped our clients
+  clients-intro: Take a look at how we’ve helped some of our clients tackle similar challenges.
+
+  card-1-heading: ASOS
+  card-1-subheading: Enhanced business agility through software modernisation
+  card-1-button: Download Case Study
+  card-1-url: https://info.codurance.com/en/asos-case-study
+
+  card-2-heading: Mango
+  card-2-subheading: Strategic advice, cultural change, and monolith to microservices migration
+  card-2-button: Download Case Study
+  card-2-url: https://info.codurance.com/en/mango-case-study
+
+  card-3-heading: eClinicalWorks
+  card-3-subheading: Architecture modularisation and large scale code redesign and refactoring
+  card-3-button: Download Case Study
+  card-3-url: https://info.codurance.com/en/eclinicalworks-case-study
+
+  card-4-heading: BestSecret
+  card-4-subheading: Cloud migration, architecture evolution and cultural alignment
+  card-4-button: Download Case Study
+  card-4-url: https://info.codurance.com/en/best-secret-case-study
+
+  testimonials-heading: Hear it from our clients
+  testimonials-subheading: Don’t take it from us. Here’s what our clients had to say about Codurance.
+  testimonials-bestsecret-p1: Codurance helped us identify the friction and tackle the barriers in our development process, where increased lead times were causing frustration from ideation to release.
+  testimonials-bestsecret-p2: Their recognised expertise provides us with truthful analysis of our situation, and defined clear solutions to our pain points, ultimately to increase business value.
+  bestsecret-name-and-position: José López Vice President of Engineering at BestSecret
+  testimonials-cazoo-p1: At Cazoo we are building a strong engineering culture around the values ​​and practices of software craftsmanship and XP whilst simultaneously growing our engineering team at pace to deliver a great new experience for used car customers. Codurance helps us to achieve that.
+  testimonials-cazoo-p2: Codurance was a natural choice, being closely aligned with the culture we are trying to establish as well as being able to meet the significant demand for engineers in order to deliver. I have no hesitation with recommending Codurance for any organization looking to improve their culture of engineering excellence or in the delivery of high quality engineered solutions.
+  cazoo-name-and-position: Ian Kershaw, Software Engineering Director at Cazoo
+  testimonials-hedgefund: In terms of cultural fit, Codurance was able to walk the fine line between balancing a focus on quality (within a legacy codebase), whilst understanding business goals and needs. This was extremely important because it allowed initially sceptical team members to bond and learn from Codurance.
+  hedgefund-name-and-position: Aaron Matthews Director of Software Development at a Systematic Hedge Fund
+
+  compassCTA-subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
+  compassCTA-button: Try our Compass tool
+  contact-heading: Tell us about your challenges
+  contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
+
+  hubspot-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964

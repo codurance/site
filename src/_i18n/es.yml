@@ -697,3 +697,107 @@ projects:
     outcome: <p>A través del trabajo minucioso de los mentores pudimos aumentar el conocimiento y las prácticas técnicas en nuestros respectivos equipos. También establecimos prácticas y convenciones que otros equipos pudieron adoptar y contribuir.</p>
              <p>Debido a la distancia respecto a la oficina de Londres y el cambio en las prácticas laborales, uno de los mayores desafíos fue preparar al departamento para trabajar en remoto.</p>
              <p>Con ese fin, pasamos mucho tiempo trabajando con los equipos para ayudarlos a establecer las herramientas y protocolos adecuados para que el trabajo remoto sea lo más efectivo posible.</p>
+software-modernisation:
+  hero-title: Software Modernisation
+  hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
+  hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
+  hero-cta: Explícanos tus retos
+  problems-title: ¿Cómo podemos ayudarte?
+  problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
+  what: Qué
+  how: Cómo
+  home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
+  home-page-banner-link: Saber más
+
+  sustainable-change-title: Cambio sostenible
+  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+  sus-change-li-1: Reducir el tiempo de entrega
+  sus-change-li-2: Reducir el coste del cambio
+  sus-change-li-3: Lanzamientos frecuentes y más seguros a producción
+  sus-change-li-4: Reducir technical debt
+  sus-change-li-5: Reducir la tasa de defectos
+  sus-change-how-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
+  innovation-title: Innovación
+  innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+  innovation-li-1: Mantener la competitividad
+  innovation-li-2: Fácil de experimentar
+  innovation-li-3: Data driven decisions
+  innovation-li-4: Respuesta rápida
+  innovation-how-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
+
+  technology-title: Tecnología
+  technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
+  technology-li-1: Eficacia y productividad
+  technology-li-2: Ventaja competitiva
+  technology-li-3: Reducción de costes
+  technology-li-4: Actualización tecnológica
+  technology-li-5: Mitigación frente al end-of-life
+  technology-how-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
+
+  business-alignment-title: Aproximación de negocio
+  business-alignment-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
+  business-alignment-li-1: Aprovechar la tecnología para impulsar la evolución del negocio
+  business-alignment-li-2: Respuesta de calidad más rápida
+  business-alignment-li-3: Colaboración más estrecha
+  business-alignment-li-4: Aceptación de los cambios
+  business-alignment-how-details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
+
+  people-and-culture-title: Personas y cultura
+  people-and-culture-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
+  people-and-culture-li-1: Contratación y retención de talento
+  people-and-culture-li-2: Capacitación del personal
+  people-and-culture-li-3: Cultura de aprendizaje
+  people-and-culture-li-4: Liderazgo en todos los niveles
+  people-and-culture-li-5: Autonomía del equipo
+  people-and-culture-how-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
+
+  risk-management-title: Gestión de riesgos
+  risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
+  risk-management-li-1: Real-time system intelligence
+  risk-management-li-2: System observability
+  risk-management-li-3: Seguridad
+  risk-management-li-4: Operational excellence
+  risk-management-li-5: Reducir el tiempo medio de recuperación
+  risk-management-how-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
+
+  clients-title: Cómo hemos ayudado a nuestros clientes
+  clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
+
+  card-1-heading: ASOS
+  card-1-subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
+  card-1-button: Descarga el Case Study
+  card-1-url: https://info.codurance.com/es/asos-case-study
+
+  card-2-heading: Mango
+  card-2-subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
+  card-2-button: Descarga el Case Study
+  card-2-url: https://info.codurance.com/es/mango-case-study
+
+  card-3-heading: eClinicalWorks
+  card-3-subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
+  card-3-button: Descarga el Case Study
+  card-3-url: https://info.codurance.com/es/eclinicalworks-case-study
+
+  card-4-heading: BestSecret
+  card-4-subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
+  card-4-button: Descarga el Case Study
+  card-4-url: https://info.codurance.com/es/best-secret-case-study
+
+  testimonials-heading: La opinión de nuestros clientes
+  testimonials-subheading: ¿Qué dicen nuestros clientes de nuestro trabajo?
+  testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
+  testimonials-bestsecret-p2: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
+  bestsecret-name-and-position: José López, Vice President of Engineering en BestSecret
+  testimonials-cazoo-p1: En Cazoo estamos construyendo una fuerte cultura de ingeniería en torno a los valores y prácticas de software craftsmanship y XP.  Además estamos ayudando a crecer a nuestro equipo de ingeniería para ofrecer una mejor experiencia para los clientes de nuestro negocio. Codurance nos ayuda a lograr eso.
+  testimonials-cazoo-p2: Codurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
+  cazoo-name-and-position: Ian Kershaw, Software Engineering Director en Cazoo
+  testimonials-hedgefund: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
+  hedgefund-name-and-position: Aaron Matthews, Director de desarrollo de software, Systematic Hedge Fund
+
+  compassCTA-subheading: Evalúa la madurez del desarrollo de software de tu organización
+  compassCTA-button: Empezar
+  contact-heading: Explícanos tus retos
+  contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos cómo podemos ayudarte.
+
+  hubspot-form-id: 33a91f21-af06-460a-aa1d-9718b278a83e
