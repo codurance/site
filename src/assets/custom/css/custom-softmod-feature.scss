@@ -271,11 +271,10 @@
 ********************************/
 
 .btn--coral {
-    background-color:rgba(251, 114, 104, 1)!important;
-    transition: all 0.3s ease;
+    background-color:rgba(251, 114, 104, 1);
 
     &:hover {
-        background-color:rgba(251, 114, 104, 0.8)!important;
+        background-color:rgba(251, 114, 104, 0.8);
         transition: all 0.3s ease;
     }
 }
