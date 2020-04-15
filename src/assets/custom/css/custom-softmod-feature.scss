@@ -102,7 +102,7 @@
 }
 
 .bg-blue {
-    background-color:#0F4071!important;
+    background-color:#0F4071;
 }
 
 .bg-white {
@@ -276,6 +276,7 @@
     &:hover {
         background-color:rgba(251, 114, 104, 0.8);
         transition: all 0.3s ease;
+        color: #FFFFFF;
     }
 }
 
