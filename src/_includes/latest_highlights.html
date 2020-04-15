@@ -7,6 +7,9 @@
 {% else %}
   {% assign imageSrc = site.default_post_image %}
 {% endif %}
+{% if post.target %}
+  {% assign target = post.target %}
+{% endif %}
 {% if post.abstract %}
   {% assign introductionToPost = post.abstract %}
 {% else %}
@@ -24,7 +27,7 @@
 {% endif %}
 <div class="col-sm-6 col-lg-4 g-mb-30 u-display-flex">
   <article class="box-shadow">
-    <a class="u-link-v5 g-color-main" href="{{ linkUrl }}">
+    <a class="u-link-v5 g-color-main" href="{{ linkUrl }}" target="{{ target }}">
       <div class="latest-highlights-image" style="background: top center / cover no-repeat url({{ imageSrc  | prepend: site.baseurl }})"></div>
       <div class="g-pa-30-30-20">
         <p class="small g-mb-10 text-uppercase g-mb-15">
