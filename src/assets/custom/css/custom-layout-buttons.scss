@@ -32,6 +32,10 @@ $white-colour: #fff;
     overflow: hidden;
     position: relative;
 
+    &:hover {
+        color:rgba(255,255,255,0.8)!important;
+    }
+
     span {
         z-index: 1;
         position: relative;
