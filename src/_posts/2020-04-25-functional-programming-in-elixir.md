@@ -8,10 +8,10 @@ author: Christopher Eyre
 description: An iterated example of solving a problem in Elixir, illustrating the clarity of a functional language. 
 
 image:
-    src: /assets/custom/img/blog/brew-2672319_640.png
+    src: /assets/custom/img/blog/potion.png
     attribution:
         text: Public domain photo from Pixabay
-        href: https://pixabay.com/vectors/brew-potion-alchemy-magic-seller-2672319/
+        href: https://pixabay.com/photos/wine-glass-magic-potion-1129366/
 tags:
     - functional programming
     - elixir
