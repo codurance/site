@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: functional-programming-in-elixir
 title: Functional Programming in Elixir
-date: 2020-04-25 10:00:00 +00:00
+date: 2020-04-16 10:00:00 +00:00
 author: Christopher Eyre
 description: An iterated example of solving a problem in Elixir, illustrating the clarity of a functional language. 
 
@@ -17,7 +17,7 @@ tags:
     - elixir
     - kata
 abstract: An iterated example of solving a problem in Elixir, illustrating the clarity of a functional language. 
-alias: [/2020/04/25/functional-programming-in-elixir]
+alias: [/2020/04/16/functional-programming-in-elixir]
 ---
 
 ## Solving a simple problem in Elixir
