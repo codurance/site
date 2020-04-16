@@ -6,7 +6,6 @@ title: Functional Programming in Elixir
 date: 2020-04-16 10:00:00 +00:00
 author: Christopher Eyre
 description: An iterated example of solving a problem in Elixir, illustrating the clarity of a functional language. 
-
 image:
     src: /assets/custom/img/blog/potion.png
     attribution:
