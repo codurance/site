@@ -182,10 +182,10 @@ Version 2
 ```
 defmodule Words do
 
-  @seperators ~r/[ _,!&@$%^&:]/u
+  @separator ~r/[ _,!&@$%^&:]/u
 
   def count(sentence) do
-    String.split(String.downcase(sentence), @seperators, trim: true)
+    String.split(String.downcase(sentence), @separator, trim: true)
     |> Enum.reduce( %{}, &update_map/2)
   end
 
@@ -205,12 +205,12 @@ We can go much further with this:
 ```
 defmodule Words do
 
-  @seperators ~r/[ _,!&@$%^&:]/u
+  @seperator ~r/[ _,!&@$%^&:]/u
 
   def count(sentence) do
     sentence
     |> String.downcase()
-    |> String.split(@seperators, trim: true)
+    |> String.split(@seperator, trim: true)
     |> Enum.reduce( %{}, &update_map/2)
   end
 
@@ -229,19 +229,19 @@ Now I am going to add a typespec to the code. The code so far looks untyped, but
 ```
 defmodule Words do
 
-  @seperators ~r/[ _,!&@$%^&:]/u
+  @separator ~r/[ _,!&@$%^&:]/u
 
   @spec count(String.t()) :: map
   def count(sentence) when is_binary(sentence) do
     sentence
     |> String.downcase()
-    |> String.split(@seperators, trim: true)
+    |> String.split(@separator, trim: true)
     |> Enum.reduce( %{}, &update_map/2)
   end
 
   @spec counter(list, map) :: map
-	defp update_map(word, acc) do
-  	Map.update(acc, word, 1, &(&1 + 1))
+  defp update_map(word, acc) do
+    Map.update(acc, word, 1, &(&1 + 1))
   end
 end
 ```
@@ -254,7 +254,7 @@ It's fairly common to have functions return two tuples `{:ok, details}` and `{:e
 Here is a process/1 function:
 
 ```
-def process({:ok, details} = body) where is_string(details) do
+def process({:ok, details} = body) when is_string(details) do
   IO.puts(details)
   body
 end
