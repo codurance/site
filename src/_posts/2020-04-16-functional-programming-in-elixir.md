@@ -56,10 +56,10 @@ You can call public functions from another namespace, but not the private ones. 
 ```
 defmodule Words do
 
-  @seperators ~r/[ _,!&@$%^&:]/u
+  @seperator ~r/[ _,!&@$%^&:]/u
 
   def count(sentence) do
-    Enum.reduce(String.split(String.downcase(sentence), @seperators, trim: true), %{}, &update_map/2)
+    Enum.reduce(String.split(String.downcase(sentence), @seperator, trim: true), %{}, &update_map/2)
   end
 
   defp update_map(word, acc) do
@@ -72,10 +72,10 @@ I'll repeat that with line numbers so that it is easier to discuss (these are no
 ```
 01  defmodule Words do
 02
-03    @seperators ~r/[ _,!&@$%^&:]/u
+03    @seperator ~r/[ _,!&@$%^&:]/u
 04
 05    def count(sentence) do
-06      Enum.reduce(String.split(String.downcase(sentence), @seperators, trim: true), %{}, &update_map/2)
+06      Enum.reduce(String.split(String.downcase(sentence), @seperator, trim: true), %{}, &update_map/2)
 07    end
 08
 09	  defp update_map(word, acc) do
