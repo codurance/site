@@ -2,18 +2,19 @@
   function nodeListToArray(nodeList) {
     return Array.prototype.slice.call(nodeList);
   }
+
   var TABBER = window.document.querySelector(".tabbed-content");
   var TABS_WRAPPER = TABBER.querySelector(".tabs");
   var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("a"));
   var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
 
-  setUpClickHandlers();
-  setUpResizeListener();
-
   function isLargeScreen() {
     var largeScreenTabsAreVisible = TABS_WRAPPER.scrollHeight > 0;
     return largeScreenTabsAreVisible;
   }
+
+  setUpClickHandlers();
+  setUpResizeListener();
 
   function setUpClickHandlers() {
     ITEMS.forEach(function (item) {
@@ -27,16 +28,21 @@
 
   function handleTabClick(event) {
     event.preventDefault();
+    makeTabActive(this.hash);
+  }
 
-    var target = $(this).attr("href");
-    var tabs = $(this).parents(".tabs");
-    var buttons = tabs.find("a");
-    var item = tabs.parents(".tabbed-content").find(".item");
+  function makeTabActive(tabHash) {
+    var currentTab = TABS_WRAPPER.querySelector("a.active");
+    var currentItem = TABBER.querySelector(".item.active");
 
-    buttons.removeClass("active");
-    item.removeClass("active");
-    $(this).addClass("active");
-    $(target).addClass("active");
+    currentTab && currentTab.classList.remove("active");
+    currentItem && currentItem.classList.remove("active");
+
+    var newTab = TABS_WRAPPER.querySelector("[href='" + tabHash + "']");
+    var newItem = TABBER.querySelector(tabHash);
+
+    newTab && newTab.classList.add("active");
+    newItem && newItem.classList.add("active");
   }
 
   function handleItemClick() {
@@ -44,28 +50,23 @@
       return;
     }
 
-    if ($(this).hasClass("active")) {
-      makeItemInactive.call(this);
-      return;
-    }
-    makeItemActive.call(this);
+    var item = this;
+
+    item.classList.contains("active")
+      ? makeItemInactive(item)
+      : makeItemActive(item);
   }
 
-  function makeItemInactive() {
-    var container = $(this).parents(".tabbed-content");
-    $(this).removeClass("active");
-    container.find(".tabs a.active").removeClass("active");
+  function makeItemInactive(item) {
+    const relatedTab = TABS_WRAPPER.querySelector("a.active");
+    item.classList.remove("active");
+    relatedTab && relatedTab.classList.remove("active");
   }
 
-  function makeItemActive() {
-    var container = $(this).parents(".tabbed-content"),
-      currId = $(this).attr("id"),
-      items = container.find(".item");
-    container.find(".tabs a").removeClass("active");
-    items.removeClass("active");
-    $(this).addClass("active");
-    container.find('.tabs a[href$="#' + currId + '"]').addClass("active");
-    scrollToNode(this);
+  function makeItemActive(item) {
+    const tabHash = "#" + item.id;
+    makeTabActive(tabHash);
+    scrollToNode(item);
   }
 
   function scrollToNode(node) {
@@ -113,10 +114,11 @@
   }
 
   function displaySustainableChangeTabContent() {
-    $(".tabbed-content")
-      .find(".tabs")
-      .find('a[href$="#sustainable-change"]')
-      .addClass("active");
-    $(".tabbed-content").find("#sustainable-change").addClass("active");
+    var ID = "#sustainable-change";
+    var sustainableChangeTab = TABBER.querySelector('a[href="' + ID + '"]');
+    var sustainableChangeItem = TABBER.querySelector(ID);
+
+    sustainableChangeTab.classList.add("active");
+    sustainableChangeItem.classList.add("active");
   }
 })();
