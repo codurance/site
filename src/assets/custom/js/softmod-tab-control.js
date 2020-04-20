@@ -1,14 +1,12 @@
 tabControl();
 
 var resizeTimer;
-$(window).on('resize', function (e) {
+$(window).on('resize', function () {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function () {
     tabControl();
   }, 100);
 });
-
-var activeContent = "";
 
 function tabControl() {
   isOnLargeScreen() ? tabControlOnLargeScreen() : tabControlOnSmallScreen();
@@ -17,6 +15,8 @@ function tabControl() {
 function isOnLargeScreen() {
   return tabs().is(':visible');
 }
+
+var activeContent = "";
 
 function tabControlOnLargeScreen() {
   if (activeContent === "") {
