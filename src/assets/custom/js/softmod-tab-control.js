@@ -11,7 +11,6 @@ $(window).on('resize', function (e) {
 var activeContent = "";
 
 function tabControl() {
-  console.log(activeContent);
   isOnLargeScreen() ? tabControlOnLargeScreen() : tabControlOnSmallScreen();
 }
 
@@ -31,14 +30,11 @@ function tabControlOnLargeScreen() {
 
 function tabControlOnSmallScreen() {
   $('.item').on('click', function () {
-
+    if ($(this).hasClass('active')) {
+      makeItemInactive.call(this);
+    } else {
       makeItemActive.call(this);
-
-    // if ($(this).hasClass('active')) {
-    //   makeItemInactive.call(this);
-    // } else {
-    //   makeItemActive.call(this);
-    // }
+    }
   });
 }
 
@@ -58,7 +54,7 @@ function makeItemActive() {
   $(this).addClass('active');
   container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
   activeContent = "#" + $(this).attr('id');
-  scrollTo(this);
+  scrollToNode(this);
 }
 
 function tabs() {
@@ -83,12 +79,21 @@ function handleClickOnLargeScreen() {
 function displaySustainableChangeTabContent() {
   tabs().find('a[href$="#sustainable-change"]').addClass('active');
   $('.tabbed-content').find("#sustainable-change").addClass('active');
-  scrollTo(tabs().find('a[href$="#sustainable-change"]'));
 }
 
-function scrollTo(tab){
-  $('html,body').animate({
-        scrollTop: $(tab).offset().top - 80
-      },
-      'slow');
+function scrollToNode(node) {
+  function getTotalOffset(node, total) {
+    total = total ? total + node.offsetTop : node.offsetTop;
+    if (node.offsetParent && node.offsetParent.offsetTop) {
+      return getTotalOffset(node.offsetParent, total);
+    }
+    return total;
+  }
+
+  var totalOffset = getTotalOffset(node);
+  var SPACING = 6;
+  var header = document.querySelector("header");
+  var headerHeight = header ? header.clientHeight : 74;
+  var yPosition = totalOffset - SPACING - headerHeight;
+  window.scrollTo({top: yPosition, behaviour: "smooth"});
 }
