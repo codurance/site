@@ -69,16 +69,16 @@
     scrollToNode(item);
   }
 
-  function scrollToNode(node) {
-    function getTotalOffset(node, total) {
-      total = total ? total + node.offsetTop : node.offsetTop;
-      if (node.offsetParent && node.offsetParent.offsetTop) {
-        return getTotalOffset(node.offsetParent, total);
+  function scrollToItem(item) {
+    function getTotalOffset(item, total) {
+      total = total ? total + item.offsetTop : item.offsetTop;
+      if (item.offsetParent && item.offsetParent.offsetTop) {
+        return getTotalOffset(item.offsetParent, total);
       }
       return total;
     }
 
-    var totalOffset = getTotalOffset(node);
+    var totalOffset = getTotalOffset(item);
     var SPACING = 6;
     var header = document.querySelector("header");
     var headerHeight = header ? header.clientHeight : 74;
