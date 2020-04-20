@@ -65,8 +65,8 @@
   }
 
   function makeItemInactive(item) {
-    const relatedTab = TABS_WRAPPER.querySelector("a.active");
     item.classList.remove("active");
+    const relatedTab = TABS_WRAPPER.querySelector("a.active");
     relatedTab && relatedTab.classList.remove("active");
   }
 
