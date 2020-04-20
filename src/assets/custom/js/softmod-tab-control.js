@@ -31,11 +31,14 @@ function tabControlOnLargeScreen() {
 
 function tabControlOnSmallScreen() {
   $('.item').on('click', function () {
-    if ($(this).hasClass('active')) {
-      makeItemInactive.call(this);
-    } else {
+
       makeItemActive.call(this);
-    }
+
+    // if ($(this).hasClass('active')) {
+    //   makeItemInactive.call(this);
+    // } else {
+    //   makeItemActive.call(this);
+    // }
   });
 }
 
@@ -55,11 +58,7 @@ function makeItemActive() {
   $(this).addClass('active');
   container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
   activeContent = "#" + $(this).attr('id');
-
-  $('html,body').animate({
-        scrollTop: $(this).offset().top - 80
-      },
-      'slow');
+  scrollTo(this);
 }
 
 function tabs() {
@@ -82,11 +81,14 @@ function handleClickOnLargeScreen() {
 }
 
 function displaySustainableChangeTabContent() {
-  console.log("diplay suss change!");
   tabs().find('a[href$="#sustainable-change"]').addClass('active');
   $('.tabbed-content').find("#sustainable-change").addClass('active');
+  scrollTo(tabs().find('a[href$="#sustainable-change"]'));
+}
+
+function scrollTo(tab){
   $('html,body').animate({
-        scrollTop: $(tabs().find('a[href$="#sustainable-change"]')).offset().top - 80
+        scrollTop: $(tab).offset().top - 80
       },
       'slow');
 }
