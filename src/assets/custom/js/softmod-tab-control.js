@@ -1,7 +1,7 @@
 tabControl();
 
 var resizeTimer;
-$(window).on('resize', function () {
+$(window).on("resize", function () {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function () {
     tabControl();
@@ -13,7 +13,7 @@ function tabControl() {
 }
 
 function isOnLargeScreen() {
-  return tabs().is(':visible');
+  return tabs().is(":visible");
 }
 
 var activeContent = "";
@@ -22,15 +22,17 @@ function tabControlOnLargeScreen() {
   if (activeContent === "") {
     displaySustainableChangeTabContent();
   } else {
-    tabs().find('a[href$="' + activeContent + '"]').addClass('active');
-    tabs().find(activeContent).addClass('active');
+    tabs()
+      .find('a[href$="' + activeContent + '"]')
+      .addClass("active");
+    tabs().find(activeContent).addClass("active");
   }
   handleClickOnLargeScreen();
 }
 
 function tabControlOnSmallScreen() {
-  $('.item').on('click', function () {
-    if ($(this).hasClass('active')) {
+  $(".item").on("click", function () {
+    if ($(this).hasClass("active")) {
       makeItemInactive.call(this);
     } else {
       makeItemActive.call(this);
@@ -39,46 +41,48 @@ function tabControlOnSmallScreen() {
 }
 
 function makeItemInactive() {
-  var container = $(this).parents('.tabbed-content');
-  $(this).removeClass('active');
-  container.find('.tabs a.active').removeClass('active');
+  var container = $(this).parents(".tabbed-content");
+  $(this).removeClass("active");
+  container.find(".tabs a.active").removeClass("active");
   activeContent = "";
 }
 
 function makeItemActive() {
-  var container = $(this).parents('.tabbed-content'),
-      currId = $(this).attr('id'),
-      items = container.find('.item');
-  container.find('.tabs a').removeClass('active');
-  items.removeClass('active');
-  $(this).addClass('active');
-  container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
-  activeContent = "#" + $(this).attr('id');
+  var container = $(this).parents(".tabbed-content"),
+    currId = $(this).attr("id"),
+    items = container.find(".item");
+  container.find(".tabs a").removeClass("active");
+  items.removeClass("active");
+  $(this).addClass("active");
+  container.find('.tabs a[href$="#' + currId + '"]').addClass("active");
+  activeContent = "#" + $(this).attr("id");
   scrollToNode(this);
 }
 
 function tabs() {
-  return $('.tabbed-content').find('.tabs');
+  return $(".tabbed-content").find(".tabs");
 }
 
 function handleClickOnLargeScreen() {
-  tabs().find('a').on('click', function (event) {
-    event.preventDefault();
-    var target = $(this).attr('href'),
-        tabs = $(this).parents('.tabs'),
-        buttons = tabs.find('a'),
-        item = tabs.parents('.tabbed-content').find('.item');
-    buttons.removeClass('active');
-    item.removeClass('active');
-    $(this).addClass('active');
-    $(target).addClass('active');
-    activeContent = target;
-  });
+  tabs()
+    .find("a")
+    .on("click", function (event) {
+      event.preventDefault();
+      var target = $(this).attr("href"),
+        tabs = $(this).parents(".tabs"),
+        buttons = tabs.find("a"),
+        item = tabs.parents(".tabbed-content").find(".item");
+      buttons.removeClass("active");
+      item.removeClass("active");
+      $(this).addClass("active");
+      $(target).addClass("active");
+      activeContent = target;
+    });
 }
 
 function displaySustainableChangeTabContent() {
-  tabs().find('a[href$="#sustainable-change"]').addClass('active');
-  $('.tabbed-content').find("#sustainable-change").addClass('active');
+  tabs().find('a[href$="#sustainable-change"]').addClass("active");
+  $(".tabbed-content").find("#sustainable-change").addClass("active");
 }
 
 function scrollToNode(node) {
@@ -95,5 +99,5 @@ function scrollToNode(node) {
   var header = document.querySelector("header");
   var headerHeight = header ? header.clientHeight : 74;
   var yPosition = totalOffset - SPACING - headerHeight;
-  window.scrollTo({top: yPosition, behaviour: "smooth"});
+  window.scrollTo({ top: yPosition, behaviour: "smooth" });
 }
