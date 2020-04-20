@@ -50,11 +50,18 @@
       return;
     }
 
-    var item = this;
+    toggleItem(this);
+  }
 
-    item.classList.contains("active")
-      ? makeItemInactive(item)
-      : makeItemActive(item);
+  function toggleItem(item) {
+    var itemIsActive = item.classList.contains("active");
+
+    if (itemIsActive) {
+      makeItemInactive(item);
+    } else {
+      makeItemActive(item);
+      scrollToItem(item);
+    }
   }
 
   function makeItemInactive(item) {
@@ -66,7 +73,6 @@
   function makeItemActive(item) {
     const tabHash = "#" + item.id;
     makeTabActive(tabHash);
-    scrollToNode(item);
   }
 
   function scrollToItem(item) {
@@ -101,7 +107,6 @@
     if (newLayout === currentLayout) {
       return;
     }
-
     currentLayout = newLayout;
 
     var noActiveTabs = document.querySelector(".tabs .active") === null;
