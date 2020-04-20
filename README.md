@@ -83,28 +83,31 @@ Starting the container with `docker-compose up` doesnt seem to work but starting
 is that you will have to run `docker-compose build`, `docker images` and `docker run -p 4000:4000 -d <imageid>` to check each update you make.
 Note (Jorge): `docker-compose up` works for me, but there is no automated refresh
 
-----
+---
 
 ### Building if you like ruby
 
-- install [rvm](https://rvm.io/)
-  - `rvm install ruby`
-  - `rvm use ruby`
-  - `gem install bundler`
-  - `bundle install`
-
-note that you will need to have GSL (GNU Scientific Library) installed for Ruby to be able to install the gsl gem.
+Install GSL (GNU Scientific Library) for Ruby:
 
 - Debian/Ubuntu: `apt-get install libgsl0-dev`
 - Fedora/SuSE: `yum install gsl-devel`
 - Gentoo: `emerge sci-libs/gsl`
 - OS X: `brew install gsl`
 
-run locally:
+Install [Ruby Version Manager](https://rvm.io/), Ruby and Bundler:
 
+- `rvm install ruby`
+- `rvm use ruby`
+- `gem install bundler`
+
+Now run Bundler and serve the site locally:
+
+- `bundle install`
 - `rake servequick`
 
-In case of other problems, refer to the [troubleshooting section](#troubleshooting).
+The site should now be running on http://localhost:4000
+
+In case of problems, refer to the [troubleshooting section](#troubleshooting).
 
 ## Flight Rules
 
@@ -112,23 +115,23 @@ In case of other problems, refer to the [troubleshooting section](#troubleshooti
 
 To do a post in the website you need to follow the following guidelines:
 
-1) Add a file with the following name format `YYYY-MM-DD-name-of-post.md` in `src/_posts`. the name of the file will also
- be the url of the post. `eg. https://url.com/YYYY/MM/DD/name-of-post`
- 
-2) Create a folder with the same name in `src/assets/custom/img/blog` where your images will be stored
+1. Add a file with the following name format `YYYY-MM-DD-name-of-post.md` in `src/_posts`. the name of the file will also
+   be the url of the post. `eg. https://url.com/YYYY/MM/DD/name-of-post`
 
-3) The following metadata is needed for technical and SEO purposes.
+2. Create a folder with the same name in `src/assets/custom/img/blog` where your images will be stored
 
-  - `author: John Doe` (Same name on the `team.yml` so we can redirect to all your posts) 
-  - `date:` (format YYYY-MMM-DD 00:00:00)
-  - `layout: post`
-  - `asset-type: post`
-  - `title` this is the displayed title on the website
-  - `abstract` this is a subtitle that is displayed only in the post page, try to make is concise.
-  - `description` this is needed for sharing purposes, do a quick summary of what is the post about
-  - `image: src:` this is the banner's picture path
-  - `tags` add the tags that you feel go according to the post, is important that you don't repeat other tags with different
-   spelling, to check the tags that exist you can run the python script `src/list-tags.py`.
+3. The following metadata is needed for technical and SEO purposes.
+
+- `author: John Doe` (Same name on the `team.yml` so we can redirect to all your posts)
+- `date:` (format YYYY-MMM-DD 00:00:00)
+- `layout: post`
+- `asset-type: post`
+- `title` this is the displayed title on the website
+- `abstract` this is a subtitle that is displayed only in the post page, try to make is concise.
+- `description` this is needed for sharing purposes, do a quick summary of what is the post about
+- `image: src:` this is the banner's picture path
+- `tags` add the tags that you feel go according to the post, is important that you don't repeat other tags with different
+  spelling, to check the tags that exist you can run the python script `src/list-tags.py`.
 
 You can see an example here:
 
@@ -152,9 +155,11 @@ tags:
 ```
 
 ### Adding links in your post
+
 Links can be added to a post in a couple of ways. The preference is to make sure that `target="_blank"` is used so that any links open in a new browser tab and do not take the user away from the blog post or the website.
 
 To use `target="_blank"` the only currently supported by our Jekyll version is to include links as HTML in the markdown. So for example -
+
 ```
 <a href="https://www.example.com" target="_blank">Link Example</a>
 ```
@@ -179,7 +184,7 @@ If you don't have a PR, you can just replace the branch name in the link below:
 
 ### Problem with ruby dependencies in docker
 
-If after a pull you can't get docker compose to work and it's complaining about ```Bundler::GemNotFound``` or similar.
+If after a pull you can't get docker compose to work and it's complaining about `Bundler::GemNotFound` or similar.
 
 This probably means that the docker image has been updated and you local machines "latest" is not in fact the latest.
 
@@ -264,7 +269,7 @@ docker push codurance/website_deployment_base:latest
 We have some documentation for backstop [here](tools/snapshots/README.md)
 
 Backstopjs can be used to regression test websites. It does this by capturing screenshots of the two sites and comparing them.
-This is especially useful if you are refactoring css. 
+This is especially useful if you are refactoring css.
 
 See the linked documents to show how to install.
 
