@@ -88,12 +88,10 @@
 
   function setUpResizeListener() {
     var resizeTimer;
-    $(window).on("resize", function () {
+    window.onresize = function () {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        handleResize();
-      }, 100);
-    });
+      resizeTimer = setTimeout(handleResize, 100);
+    };
   }
 
   var currentLayout = isLargeScreen() ? "large" : "small";
