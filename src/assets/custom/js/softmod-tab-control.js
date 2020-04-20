@@ -1,50 +1,45 @@
-tabControl();
+setUpClickHandlers();
+setUpResizeListener();
 
-var resizeTimer;
-$(window).on("resize", function () {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function () {
-    tabControl();
-  }, 100);
-});
-
-function tabControl() {
-  isOnLargeScreen() ? tabControlOnLargeScreen() : tabControlOnSmallScreen();
+function isLargeScreen() {
+  return $(".tabbed-content").find(".tabs").is(":visible");
 }
 
-function isOnLargeScreen() {
-  return tabs().is(":visible");
+function setUpClickHandlers() {
+  $(".item").on("click", handleItemClick);
+  $(".tabbed-content").find(".tabs").find("a").on("click", handleTabClick);
 }
 
-var activeContent = "";
+function handleTabClick(event) {
+  event.preventDefault();
 
-function tabControlOnLargeScreen() {
-  if (activeContent === "") {
-    displaySustainableChangeTabContent();
-  } else {
-    tabs()
-      .find('a[href$="' + activeContent + '"]')
-      .addClass("active");
-    tabs().find(activeContent).addClass("active");
+  var target = $(this).attr("href");
+  var tabs = $(this).parents(".tabs");
+  var buttons = tabs.find("a");
+  var item = tabs.parents(".tabbed-content").find(".item");
+
+  buttons.removeClass("active");
+  item.removeClass("active");
+  $(this).addClass("active");
+  $(target).addClass("active");
+}
+
+function handleItemClick() {
+  if (isLargeScreen()) {
+    return;
   }
-  handleClickOnLargeScreen();
-}
 
-function tabControlOnSmallScreen() {
-  $(".item").on("click", function () {
-    if ($(this).hasClass("active")) {
-      makeItemInactive.call(this);
-    } else {
-      makeItemActive.call(this);
-    }
-  });
+  if ($(this).hasClass("active")) {
+    makeItemInactive.call(this);
+    return;
+  }
+  makeItemActive.call(this);
 }
 
 function makeItemInactive() {
   var container = $(this).parents(".tabbed-content");
   $(this).removeClass("active");
   container.find(".tabs a.active").removeClass("active");
-  activeContent = "";
 }
 
 function makeItemActive() {
@@ -55,34 +50,7 @@ function makeItemActive() {
   items.removeClass("active");
   $(this).addClass("active");
   container.find('.tabs a[href$="#' + currId + '"]').addClass("active");
-  activeContent = "#" + $(this).attr("id");
   scrollToNode(this);
-}
-
-function tabs() {
-  return $(".tabbed-content").find(".tabs");
-}
-
-function handleClickOnLargeScreen() {
-  tabs()
-    .find("a")
-    .on("click", function (event) {
-      event.preventDefault();
-      var target = $(this).attr("href"),
-        tabs = $(this).parents(".tabs"),
-        buttons = tabs.find("a"),
-        item = tabs.parents(".tabbed-content").find(".item");
-      buttons.removeClass("active");
-      item.removeClass("active");
-      $(this).addClass("active");
-      $(target).addClass("active");
-      activeContent = target;
-    });
-}
-
-function displaySustainableChangeTabContent() {
-  tabs().find('a[href$="#sustainable-change"]').addClass("active");
-  $(".tabbed-content").find("#sustainable-change").addClass("active");
 }
 
 function scrollToNode(node) {
@@ -100,4 +68,37 @@ function scrollToNode(node) {
   var headerHeight = header ? header.clientHeight : 74;
   var yPosition = totalOffset - SPACING - headerHeight;
   window.scrollTo({ top: yPosition, behaviour: "smooth" });
+}
+
+function setUpResizeListener() {
+  var resizeTimer;
+  $(window).on("resize", function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      handleResize();
+    }, 100);
+  });
+}
+
+var currentLayout = isLargeScreen() ? "large" : "small";
+
+function handleResize() {
+  var newLayout = isLargeScreen() ? "large" : "small";
+  if (newLayout === currentLayout) {
+    return;
+  }
+
+  var noActiveTabs = document.querySelector(".tabs .active") === null;
+
+  if (newLayout === "large" && noActiveTabs) {
+    displaySustainableChangeTabContent();
+  }
+}
+
+function displaySustainableChangeTabContent() {
+  $(".tabbed-content")
+    .find(".tabs")
+    .find('a[href$="#sustainable-change"]')
+    .addClass("active");
+  $(".tabbed-content").find("#sustainable-change").addClass("active");
 }
