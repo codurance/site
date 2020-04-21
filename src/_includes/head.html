@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="{% if site.lang == 'es' %}@codurance_es{% else %}@codurance{% endif %}"/>
 <meta name="twitter:title" content="{% if page.url == '/software-modernisation/' and site.lang == 'es' %}{{ page.title-es }}{% elsif page.url == '/software-modernisation/' and site.lang != 'es' %}{{ page.title }}{% else %}{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}{% endif %}" />
-<meta name="twitter:description" content="{% if page.url == '/software-modernisation/' and site.lang == 'es' %}{{ page.description-es }}{% elsif page.url == '/software-modernisation/' and site.lang != 'es' %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provide consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
+<meta name="twitter:description" content="{% if site.lang == 'es' and page.description-es%}{{ page.description-es }}{% elsif page.description %}{{ page.description }}{% else %} Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
 <meta name="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url }}{% endif %}" />
 
 <!-- Favicon -->
