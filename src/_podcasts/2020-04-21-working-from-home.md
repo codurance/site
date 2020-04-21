@@ -13,7 +13,7 @@ date: 2020-04-21 05:00:00 +00:00
 
 As we are in the middle of a pandemic that has forced many of us to change our normal routines. Some of our craftspeople join this episode of the podcast to talk about their varied experiences while working from home.
 
-Our guests are <a href="https://codurance.com/publications/author/francesco-gigli/" target="_blank">Francesco Gigli</a>, <a href="https://github.com/AurelijaZuba" target="_blank">Aurelija Zubaviciute</a>, and <a href="https://codurance.com/publications/author/jos%C3%A9-pablo-wenzel/" target="_blank">José Wenzel</a>, explain about how they work, tools they used, and other tidbits with our host, <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia/" target="_blank">Jorge Gueorguiev García</a>.
+Our guests are <a href="https://codurance.com/publications/author/francesco-gigli/" target="_blank">Francesco Gigli</a>, <a href="https://github.com/AurelijaZuba" target="_blank">Aurelija Zubaviciute</a>, and <a href="https://codurance.com/publications/author/jos%C3%A9-pablo-wenzel/" target="_blank">José Wenzel</a>, and they explain about how they work, tools they used, and other tidbits with our host, <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia/" target="_blank">Jorge Gueorguiev García</a>.
 
 Interested in joining the team?
 You can find out about our open roles here: <a href="https://codurance.com/careers/#our_roles" target="_blank">Our Roles</a>
