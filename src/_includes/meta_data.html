@@ -1,10 +1,10 @@
-<!--title-->
-{% assign suffix = " | Codurance | Craft at Heart | London | Barcelona" %}
-{% if page.url == "/software-modernisation/" and site.lang == "es" %}
-    {% assign title = page.title-es | append: suffix %}
+<!--Title-->
+{% if site.lang == "es" and page.title-es %}
+    {% assign title = page.title-es %}
 {% elsif page.url == "/software-modernisation/" and site.lang != "es" %}
-    {% assign title = page.title | append: suffix %}
+    {% assign title = page.title %}
 {% else %}
+    {% assign suffix = " | Codurance | Craft at Heart | London | Barcelona" %}
     {% if page.title %}
         {% assign title = page.title | append: suffix %}
     {% else %}
@@ -12,11 +12,36 @@
     {% endif %}
 {% endif %}
 
-<!--description-->
+<!--Description-->
 {% if site.lang == 'es' and page.description-es %}
     {% assign description =  page.description-es %}
 {% elsif page.description %}
     {% assign description = page.description %}
 {% else %}
-    {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}{% endif %}
+    {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}
+{% endif %}
+
+<!--Open Graph URL-->
+{% assign og_url = page.url | prepend: site.url %}
+
+<!--Open Graph Image-->
+{% if page.image.src %}
+    {% assign og_image =  page.image.src | prepend: site.url %}
+{% else %}
+    {% assign og_image = '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url %}
+{% endif %}
+
+<!--Open Graph Type-->
+{% if page.title %}
+    {% assign og_type = "article" %}
+{% else %}
+    {% assign og_type = "website" %}
+{% endif %}
+
+<!--Twitter Site-->
+{% if site.lang == 'es' %}
+    {% assign twitter_site = "@codurance_es" %}
+{% else %}
+    {% assign twitter_site = "@codurance"  %}
+{% endif %}
 
