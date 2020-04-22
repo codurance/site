@@ -57,3 +57,10 @@
         {% assign twitter_title = "Codurance" %}
     {% endif %}
 {% endif %}
+
+<!--Twitter Image-->
+{% if page.image.src %}
+    {% assign twitter_image = page.image.src | prepend: site.url %}
+{% else %}
+    {% assign twitter_image = '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url %}
+{% endif %}
