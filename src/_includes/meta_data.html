@@ -1,0 +1,22 @@
+<!--title-->
+{% assign suffix = " | Codurance | Craft at Heart | London | Barcelona" %}
+{% if page.url == "/software-modernisation/" and site.lang == "es" %}
+    {% assign title = page.title-es | append: suffix %}
+{% elsif page.url == "/software-modernisation/" and site.lang != "es" %}
+    {% assign title = page.title | append: suffix %}
+{% else %}
+    {% if page.title %}
+        {% assign title = page.title | append: suffix %}
+    {% else %}
+        {% assign title = "Software Craftsmanship and Agile Development" | append: suffix %}
+    {% endif %}
+{% endif %}
+
+<!--description-->
+{% if site.lang == 'es' and page.description-es %}
+    {% assign description =  page.description-es %}
+{% elsif page.description %}
+    {% assign description = page.description %}
+{% else %}
+    {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}{% endif %}
+
