@@ -1,14 +1,15 @@
 <!--Title-->
 {% assign suffix = " | Codurance" %}
+
+{% if site.lang == "es" %}
+    {% assign title = page.title | append: suffix %}
+{% endif %}
+
 {% if site.lang == "es" and page.title-es %}
     {% assign title = page.title-es | append: suffix %}
 {% endif %}
 
 {% if site.lang != "es" and page.title %}
-    {% assign title = page.title | append: suffix %}
-{% endif %}
-
-{% if site.lang == "es" and !page.title-es %}
     {% assign title = page.title | append: suffix %}
 {% endif %}
 
