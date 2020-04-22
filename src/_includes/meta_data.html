@@ -45,3 +45,15 @@
     {% assign twitter_site = "@codurance"  %}
 {% endif %}
 
+<!--Twitter Title-->
+{% if page.url == '/software-modernisation/' and site.lang == 'es' %}
+    {% assign twitter_title = page.title-es %}
+{% elsif page.url == '/software-modernisation/' and site.lang != 'es' %}
+    {% assign twitter_title = page.title %}
+{% else %}
+    {% if page.title %}
+        {% assign twitter_title = page.title %}
+    {% else %}
+        {% assign twitter_title = "Codurance" %}
+    {% endif %}
+{% endif %}
