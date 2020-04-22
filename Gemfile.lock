@@ -115,7 +115,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-watch
-  rake
+  rake (>= 12.3.3)
   rb-gsl
   rdiscount
   rspec
@@ -123,4 +123,4 @@ DEPENDENCIES
   therubyracer
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
