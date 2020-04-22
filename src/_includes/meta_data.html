@@ -1,16 +1,20 @@
 <!--Title-->
+{% assign suffix = " | Codurance" %}
 {% if site.lang == "es" and page.title-es %}
-    {% assign title = page.title-es %}
-{% elsif page.url == "/software-modernisation/" and site.lang != "es" %}
-    {% assign title = page.title %}
-{% else %}
-    {% assign suffix = " | Codurance | Craft at Heart | London | Barcelona" %}
-    {% if page.title %}
-        {% assign title = page.title | append: suffix %}
-    {% else %}
-        {% assign title = "Software Craftsmanship and Agile Development" | append: suffix %}
-    {% endif %}
+    {% assign title = page.title-es | append: suffix %}
 {% endif %}
+
+{% if site.lang != "es" and page.title %}
+    {% assign title = page.title | append: suffix %}
+{% endif %}
+
+{% if site.lang == "es" and !page.title-es %}
+    {% assign title = page.title | append: suffix %}
+{% endif %}
+
+{% unless page.title or page.title-es %}
+    {% assign title = "Software Craftsmanship and Agile Development" | append: suffix %}
+{% endunless %}
 
 <!--Description-->
 {% if site.lang == 'es' and page.description-es %}
