@@ -5,7 +5,7 @@ name: terraform-with-multiple-environments
 title: Terraform With Multiple Environments
 date: 2020-04-13 10:00:00 +00:00
 author: Jorge Gueorguiev Garcia
-description: The couple of options that I have used in production to handle multiple enviroments.
+description: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here, and look at a third option.
 
 image:
     src: /assets/custom/img/blog/railway.png
@@ -17,13 +17,47 @@ tags:
     - devops
     - terraform
     - practices
-abstract: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here.
+abstract: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here, and look at a third option.
 ---
 
+# The Setup
 
-I haven't written on my company blog for quite a while (been paying attention to the podcasts and my personal one), but I thought it was time to add a blog post.
+I haven't written on my company blog for quite a while (been paying attention to the podcasts and my personal one), but I thought it was time to add a blog post. Part of what I am going to say here is coloured by using Terraform only on AWS.
 
-The reason why I wanted to write comes because of this post that I have just discovered: [Recommended Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/part1.html). On it Hashicorp is recommending the use of workspaces to control different environments. 
+The topic I have chosen is because of this post that I have just discovered this post [Recommended Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/part1.html). On it Hashicorp is recommending the use of workspaces to control different environments. Which is a change of recommendation from what I remember from February/March 2019.
 
-Back at the beginning of 2019 I started using Terraform for an AWS project. The basis of the infrastructure I was doing was quite similar to a previous project that I worked on (both in Clojure), but that project used extensively bash scripts to deal with the creation of an ELB environment. You don't want to use bash scripts for everything. So I decided to learn and use terraform. Terraform is awesome
+# The First Way - Single Account with Workspaces
 
+Back at the beginning of 2019 I started using Terraform for an AWS project. The basis of the infrastructure I was doing was quite similar to a previous project that I worked on (both in Clojure), but that project used extensively bash scripts to deal with the creation of an ELB environment. You don't want to use bash scripts for everything, it is painful, messy ... soul crushing. So I decided to learn and use terraform. Terraform is awesome (not perfect, small niggling issues here and there). Because on that project I had only one AWS account (I know better know), I needed to find a way to deploy multiple environments from the single setup. For that I used [workspaces](https://www.terraform.io/docs/state/workspaces.html). When you are using workspaces you use a single set of files and then you have two options for the data/variables that can change, either you use different tfvar files, one per environment, passing it as a parameter to the terraform call (e.g., `terraform plan -var-file=env.dev.tfvars`). The other option, which is the one used, is to create maps that hve the necessary values, and then using the lookup functionality to get the information, so the code on your tf file could look like this:
+
+```hcl
+variable "workspace_to_retention_policy_map" {
+  description = "The retention period of cloudwatch logs"
+  type = map
+  default = {
+    dev     = 7
+    staging = 7
+    prod    = 365
+  }
+}
+
+locals {
+  retention_policy  = lookup(var.workspace_to_retention_policy_map, terraform.workspace, 7)
+  # or even better if you don't need the default
+  retention_policy2 = var.workspace
+}
+```
+
+I actually like having together the values that change per environment, so it becomes very easy to deal with.
+
+# The Second Way - Multiple accounts, single Workspace
+
+At my current project we used a different approach. We have an AWS account per environment. We could have used the same workspace setup, but that is complicated by the fact that the state is stored on the AWS account using S3.
+
+So the approach was to have an `environments` folder, and inside a folder per environment.
+
+# The Third Way - Multiple accounts, multiple workspaces
+
+But, wait - you say - does that mean I can't use workspaces with multiple accounts? Well, of course not. The above approach was based on the fact that we were keeping the terraform state of each account within each account. But if you switch to a single centralised place, then you wouldn't have the issue, and therefore you could go with using workspaces on multiple accounts. And Terraform uses a big number of backends especifically for this: [Artifactory](https://www.terraform.io/docs/backends/types/artifactory.html), [Consul](https://www.terraform.io/docs/backends/types/consul.html), [etcd v2](https://www.terraform.io/docs/backends/types/etcd.html) and [etcd v3](https://www.terraform.io/docs/backends/types/etcdv3.html), some "random" [http rest](https://www.terraform.io/docs/backends/types/http.html), [swift](https://www.terraform.io/docs/backends/types/swift.html), [Postgres](https://www.terraform.io/docs/backends/types/pg.html) and their own [Terraform Enterprise)(https://www.terraform.io/docs/backends/types/terraform-enterprise.html). 
+
+Can I use a single s3 backend with a different profile than the rest of the system
