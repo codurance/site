@@ -49,8 +49,9 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: auto;
   display: block;
+  margin: auto;
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -69,6 +70,15 @@ html[xmlns] .flexslider .slides {
 .no-js .flexslider .slides > li:first-child {
   display: block;
 }
+
+.max-height-20 {
+  max-height: 20px;
+}
+
+.max-height-30 {
+  max-height: 30px;
+}
+
 /* ====================================================================================================================
  * DEFAULT THEME
  * ====================================================================================================================*/
