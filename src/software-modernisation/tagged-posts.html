@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign tag = "life at codurance" %}
+
+<div class="g-bg-gray-light-v5">
+    {% for post in site.posts %}
+      {% if post.tags contains tag %}
+        <div>
+        <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=100>
+        <div>{{ post.title }}</div>
+          <div>
+          {{post.description}}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+</div>
