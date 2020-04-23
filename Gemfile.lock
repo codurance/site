@@ -63,7 +63,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.1.1)
-    rake (12.3.2)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-gsl (1.16.0.6)
       gsl
@@ -115,7 +115,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-watch
-  rake
+  rake (>= 12.3.3)
   rb-gsl
   rdiscount
   rspec
@@ -123,4 +123,4 @@ DEPENDENCIES
   therubyracer
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
