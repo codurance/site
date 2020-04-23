@@ -26,6 +26,19 @@
     {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}
 {% endif %}
 
+<!--Twitter Title-->
+
+{% assign og_title = "Codurance" %}
+
+{% if page.title %}
+    {% assign og_title = page.title %}
+{% endif %}
+
+{% if site.lang == "es" and page.title-es %}
+    {% assign og_title = page.title-es %}
+{% endif %}
+
+
 <!--Open Graph URL-->
 {% assign og_url = page.url | prepend: site.url %}
 
@@ -51,7 +64,6 @@
 {% endif %}
 
 <!--Twitter Title-->
-
 {% assign twitter_title = "Codurance" %}
 
 {% if page.title %}
