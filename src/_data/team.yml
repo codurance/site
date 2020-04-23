@@ -943,3 +943,18 @@
   github: cherryt
   linkedin: tsuicherry
   office: London
+
+- id: natalie_grey
+  name: Natalie Gray
+  image: /assets/custom/img/team/natalie_gray.jpg
+  role: Client and Partner Engagement Lead
+  fullDescription:
+    <p>Natalie is responsible for building deep and lasting relationships with Codurance’s clients and partners. She has more than 20 years experience in the tech industry, having played pivotal roles at a variety of tech companies spanning business development, partner management, product development and community building.</p>
+    <p>Natalie believes that collaboration is the best way to drive business, project and product success and loves connecting people with shared interests to create greater value. Codurance therefore was a natural fit for her next career step as an organization that shares and supports these values both within the team and its wider clients and community ecosystem.</p>
+    <p>Natalie is an advocate for driving greater inclusion and diversity within UK tech. She is an Ambassador for the Tech Talent Charter, D&I Lead for the AWS UK User Group and Mentor for Global Diversity CFP Day.</p>
+    <p>Outside of work, Natalie enjoys trying new things; she has recently hosted a podcast, built a website and gave her first ‘proper’ talk in public. In her spare time, you will find Natalie chasing around after her 2 children and Chester the cockapoo or on vacation in Andalucia, Spain where she lived and ran a guesthouse in a former life!</p>  
+  email: natalie.gray@codurance.com
+  github: nataliejgray
+  twitter: natjgray
+  linkedin: nataliejgray
+  office: London
