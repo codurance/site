@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign tag = "life at codurance" %}
+{% assign soft_mod_articles = site.posts | where: 'tags', tag  %}
 
 <div class="g-bg-gray-light-v5">
   {% for post in site.posts %}
@@ -22,5 +23,33 @@ layout: default
         </div>
       </div>
     {% endif %}
+  {% endfor %}
+</div>
+
+
+{% assign soft_mod_articles = site.posts | where: 'tags', tag %}
+</br>
+</br>
+<div class="g-bg-gray-light-v5">
+  {% for post in soft_mod_articles limit: 3 %}
+      {% if forloop.index0 == 0 %}
+        <div>
+          <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=300>
+          <div>{{ post.title }}</div>
+          <div>
+            {{post.date}}</br>
+            {{post.description}}
+          </div>
+        </div></br>
+      {% else %}
+      <div>
+        <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=200>
+        <div>{{ post.title }}</div>
+        <div>
+          {{post.date}}</br>
+          {{post.description}}
+        </div>
+      </div></br>
+      {% endif %}
   {% endfor %}
 </div>
