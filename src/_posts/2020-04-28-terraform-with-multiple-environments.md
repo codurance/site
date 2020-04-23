@@ -15,7 +15,7 @@ image:
 tags:
     - infrastructure
     - devops
-    - terraform
+    - Terraform
     - practices
 abstract: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here, and look at a third option.
 ---
