@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: terraform-with-multiple-environments
 title: Terraform With Multiple Environments
-date: 2020-04-13 10:00:00 +00:00
+date: 2020-04-22 10:00:00 +00:00
 author: Jorge Gueorguiev Garcia
 description: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here, and look at a third option.
 
