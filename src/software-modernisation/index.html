@@ -281,7 +281,9 @@ metarobots: index,follow
   </div></div>
 </section><!-- Case Studies -->
 
-
+{% if site.data.toggles.feature-sm-blogs == 'on' %}
+  {% include sm_blog_cards.html  %}
+{% endif %}
 
 <section class="section bg-testimonials g-pb-200--desk">
   <div class="container-slim center">
