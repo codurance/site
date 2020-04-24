@@ -1,9 +1,6 @@
----
-layout: default
----
 <section>
 <div class="g-bg-gray-light-v5">
-  {% assign tag = "life at codurance" %}
+  {% assign tag = {{include.tag}} %}
   {% assign soft_mod_articles = site.posts | where: 'tags', tag %}
   {% for post in soft_mod_articles limit: 3 %}
       {% if forloop.index0 == 0 %}
