@@ -28,7 +28,9 @@ The topic I have chosen is because of this post that I discovered recently: [Rec
 
 # The first way - Single account with workspaces
 
-Back at the beginning of 2019 I started using Terraform for an AWS project. The basis of the infrastructure I was doing was quite similar to a previous project that I worked on (both in Clojure), but that project used extensively bash scripts to deal with the creation of an ELB environment. You don't want to use bash scripts for everything, it is painful, messy ... soul crushing. So I decided to learn and use terraform. Terraform is awesome (not perfect, small niggling issues here and there). Because on that project I had only one AWS account (I know better know), I needed to find a way to deploy multiple environments from the single setup. For that I used [workspaces](https://www.terraform.io/docs/state/workspaces.html). When you are using workspaces you use a single set of files and then you have two options for the data/variables that can change, either you use different tfvar files, one per environment, passing it as a parameter to the terraform call (e.g., `terraform plan -var-file=env.dev.tfvars`). As an example, `env.dev.tfvars` could include
+Back at the beginning of 2019 I started using Terraform for an AWS project. The basis of the infrastructure I was doing was quite similar to a previous project that I worked on (both in Clojure), but that project used extensively bash scripts to deal with the creation of an ELB environment. You don't want to use bash scripts for everything, it is painful, messy ... soul crushing. So I decided to learn and use terraform. Terraform is awesome (not perfect, small niggling issues here and there). Because on that project I had only one AWS account (I know better now), I needed to find a way to deploy multiple environments from the single setup. For that I used [workspaces](https://www.terraform.io/docs/state/workspaces.html). When you are using workspaces you use a single set of files and then you have two options for the data/variables that can change, either you use different tfvar files, one per environment, passing it as a parameter to the terraform call (e.g., `terraform plan -var-file=env.dev.tfvars`).
+
+As an example, `env.dev.tfvars` could include
 
 ```
 retention_policy = 7
@@ -40,7 +42,7 @@ and `prod.dev.tfvars` would include
 retention_policy = 365
 ```
 
-The other option, which is the one I used, is to create maps that hve the necessary values, and then using the lookup functionality to get the information, so the code on your tf file could look like this:
+The other option, which is the one I used, is to create maps that have the necessary values, and then using the lookup functionality to get the information, so the code on your tf file could look like this:
 
 ```
 variable "workspace_to_retention_policy_map" {
@@ -60,7 +62,7 @@ locals {
 }
 ```
 
-I actually like having together the values that change per environment, so it is to see what changes between environment, but it does create far more noise within the file.
+I actually like having together the values that change per environment, so it easy to see what changes between environment, but it does create far more noise within the file.
 
 As I said, at that point workspaces were not recommended for multiple environments
 
@@ -94,4 +96,4 @@ So the approach was to have an `environments` folder, and inside a folder per en
 
 But, wait - you say - does that mean I can't use workspaces with multiple accounts? Well, of course not. The above approach was based on the fact that we were keeping the terraform state of each account within each account. But if you switch to a single centralised place, then you wouldn't have the issue, and therefore you could go with using workspaces on multiple accounts. And Terraform uses a big number of backends especifically for this: [Artifactory](https://www.terraform.io/docs/backends/types/artifactory.html), [Consul](https://www.terraform.io/docs/backends/types/consul.html), [etcd v2](https://www.terraform.io/docs/backends/types/etcd.html) and [etcd v3](https://www.terraform.io/docs/backends/types/etcdv3.html), some "random" [http rest](https://www.terraform.io/docs/backends/types/http.html), [swift](https://www.terraform.io/docs/backends/types/swift.html), [Postgres](https://www.terraform.io/docs/backends/types/pg.html) and their own [Terraform Enterprise)(https://www.terraform.io/docs/backends/types/terraform-enterprise.html). 
 
-Can I use a single s3 backend with a different profile than the rest of the system
+Can I use a single s3 backend with a different profile (a different account) than the rest of the system. Well, yes, the backend can use different credentials than the rest of the setup. In fact, I discovered recently that you can have multiple providers (mixing or multiple accounts of the same one), give them different aliases, and choose for each resource which provider to use.
