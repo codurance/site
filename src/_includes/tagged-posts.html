@@ -1,35 +1,35 @@
 <section>
-<div class="g-bg-gray-light-v5">
-  {% assign tag = {{include.tag}} %}
-  {% assign soft_mod_articles = site.posts | where: 'tags', tag %}
-  {% for post in soft_mod_articles limit: 3 %}
-      {% if forloop.index0 == 0 %}
-        <div>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=300>
-          </a>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-          <div>{{ post.title }}</div>
-          </a>
-          <div>
-            {{post.date}}</br>
-            {{post.description}}
-          </div>
-        </div></br>
-      {% else %}
-      <div>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=200>
-        </a>
-        <a href="{{ post.url | prepend: site.baseurl }}">
+  <div class="g-bg-gray-light-v5">
+    {% assign tag = {{include.tag}} %}
+    {% assign articles = site.posts | where: 'tags', tag %}
+    {% for post in articles limit: 4 %}
+    {% if forloop.index0 == 0 %}
+    <div>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=300>
+      </a>
+      <a href="{{ post.url | prepend: site.baseurl }}">
         <div>{{ post.title }}</div>
-        </a>
-        <div>
-          {{post.date}}</br>
-          {{post.description}}
-        </div>
-      </div></br>
-      {% endif %}
-  {% endfor %}
-</div>
+      </a>
+      <div>
+        {{post.date}}</br>
+        {{post.description}}
+      </div>
+    </div></br>
+    {% else %}
+    <div>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <img src="{{post.image.src | prepend: site.baseurl}}" alt="{{post.title}}" width=200>
+      </a>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div>{{ post.title }}</div>
+      </a>
+      <div>
+        {{post.date}}</br>
+        {{post.description}}
+      </div>
+    </div></br>
+    {% endif %}
+    {% endfor %}
+  </div>
 </section>
