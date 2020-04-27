@@ -10,6 +10,8 @@ categories:
 - process
 image:
     src: http://mashb.files.wordpress.com/2012/08/125072659262p56k.jpg
+tags:
+- software modernisation
 ---
 
 Agile process promotes the view that system design emerges and evolves throughout it's life. It is a result of continuos discussions and decisions by the teams.

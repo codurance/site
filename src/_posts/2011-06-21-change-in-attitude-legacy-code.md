@@ -4,6 +4,8 @@ layout: post
 name: change-in-attitude-legacy-code
 title: "A change in attitude - Legacy code"
 date: 2011-06-21 03:31:00 +01:00
+tags:
+- software modernisation
 ---
 
 <blockquote>Attitude is a little thing that makes a big difference.
