@@ -97,7 +97,7 @@ Unlike with workspaces, it is very difficult to make mistakes here. After all yo
 
 But, wait - you say - does that mean I can't use workspaces with multiple accounts? Well, of course not. The above approach was based on the fact that we were keeping the terraform state of each account within each account. But if you switch to a single centralised place, then you wouldn't have the issue, and therefore you could go with using workspaces on multiple accounts. And Terraform uses a big number of backends specifically for this: [Artifactory](https://www.terraform.io/docs/backends/types/artifactory.html), [Consul](https://www.terraform.io/docs/backends/types/consul.html), [etcd v2](https://www.terraform.io/docs/backends/types/etcd.html) and [etcd v3](https://www.terraform.io/docs/backends/types/etcdv3.html), some "random" [http rest](https://www.terraform.io/docs/backends/types/http.html), [swift](https://www.terraform.io/docs/backends/types/swift.html), [Postgres](https://www.terraform.io/docs/backends/types/pg.html) and their own [Terraform Enterprise](https://www.terraform.io/docs/backends/types/terraform-enterprise.html). 
 
-Can I use a single s3 backend with a different profile (a different account) than the rest of the system. Well, yes, the backend can use different credentials than the rest of the setup. In fact, I discovered recently that you can have multiple providers (mixing or multiple accounts of the same one), give them different aliases, and choose for each resource which provider to use.
+Can I use a single s3 backend with a different profile (different account) than the rest of the system?. Well, yes, the backend can use different credentials than the rest of the setup. In fact, I discovered recently that you can have multiple providers (mixing or multiple accounts of the same one), give them different aliases, and choose for each resource which provider to use.
 
 In fact, some very quick code here on how to deal with it, using a centralized state storage such as [Azure](https://azure.microsoft.com/) Blob Storage (mostly because I did not have access to the "proper" ones, but I had access to the Codurance Azure playground account).
 
@@ -160,7 +160,7 @@ profile="codurance"
 The profile being the one used by terraform to check on my aws credentials file.
 
 
-Finally, to get the ball rolling is the same as with using workspaces on the first section. But now I can handle separate accounts because I am using the single centralized state location.
+Finally, to get the ball rolling with this workspace setup, you will use the same commands that you will need on the first section. But now I can handle separate accounts because I am using the single centralized state location.
 
 # What to choose
 
