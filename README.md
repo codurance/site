@@ -282,3 +282,21 @@ backstop test
 
 The first captures a snapshot of the reference site (currently set to https://codurance.com)
 The second runs it against the local version of the site (locahost:4000) and compares the differences.
+
+## Feature Toggles
+
+We are using [toggles.yml](src/_data/toggles.yml) to set toggles to "on" or "off". This file is in `.gitignore` so you can set change values locally without risk of commiting them accidentally. 
+
+### Toggle a feature on in Production
+
+Make changes to feature toggles for Production by [editing toggles.yml](https://github.com/codurance/site/edit/master/src/_data/toggles.yml) via the GitHub and commiting to `master` or via a pull request. Assuming this triggers a rebuild and redeploy this should toggle your feature.
+
+### Using the feature toggle
+
+The simplest thing is a simple conditional:
+
+```liquid
+{% if site.data.toggles.my-feature == 'on' %}
+  {% include my-component.html %}
+{% endif %}
+```
