@@ -182,6 +182,10 @@ publications-tweet_feed:
 publications-post:
   author_title: By
   date_title: Posted
+publications:
+  content-type: Publications
+  teaser-cta: Learn More
+  view-all: View all publications
 services:
   title: Quality Software, Effectively Delivered
   subtitle: Recognised industry leaders in driving continuous delivery through
@@ -792,3 +796,10 @@ software-modernisation:
   contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
 
   hubspot-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964
+
+curated-publications:
+  softmod:
+    tag: life at codurance
+    intro-title: Software Modernisation Publications
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna sed felis semper
+    
