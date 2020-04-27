@@ -101,7 +101,7 @@ Can I use a single s3 backend with a different profile (a different account) tha
 
 In fact, some very quick code here on how to deal with it, using a centralized state storage such as [Azure](https://azure.microsoft.com/) Blob Storage (mostly because I did not have access to the "proper" ones, but I had access to the Codurance Azure playground account).
 
-First the `remote.tf` file, where we indicate where we will store the state for all workspaces
+First the `remote.tf` file, on which we indicate where we will store the state for all workspaces
 
 ```hcl
 terraform {
