@@ -1,5 +1,3 @@
-<!------Start Title Meta------->
-<!--Web Title-->
 {% assign suffix = " | Codurance" %}
 
 {% if site.lang == "es" %}
@@ -18,7 +16,7 @@
     {% assign title = "Software Craftsmanship and Agile Development" | append: suffix %}
 {% endunless %}
 
-<!--Social Titles-->
+
 {% assign social_title = "Codurance" %}
 
 {% if page.title %}
@@ -28,9 +26,8 @@
 {% if site.lang == "es" and page.title-es %}
     {% assign social_title = page.title-es %}
 {% endif %}
-<!------End Title Meta------->
 
-<!------Description Meta------->
+
 {% if site.lang == 'es' and page.description-es %}
     {% assign description =  page.description-es %}
 {% elsif page.description %}
@@ -39,7 +36,7 @@
     {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}
 {% endif %}
 
-<!------Start Social Card Image Meta------->
+
 {% if page.image.src %}
     {% assign og_image =  page.image.src | prepend: site.url %}
     {% assign twitter_image = page.image.src | prepend: site.url %}
@@ -47,23 +44,20 @@
     {% assign og_image = '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url %}
     {% assign twitter_image = '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url %}
 {% endif %}
-<!------End Social Card Image Meta------->
 
-<!------Start Social Specific Meta------->
-<!--Open Graph URL-->
+
 {% assign og_url = page.url | prepend: site.url %}
 
-<!--Open Graph Type-->
 {% if page.title %}
     {% assign og_type = "article" %}
 {% else %}
     {% assign og_type = "website" %}
 {% endif %}
 
-<!--Twitter Site-->
+
 {% if site.lang == 'es' %}
     {% assign twitter_site = "@codurance_es" %}
 {% else %}
     {% assign twitter_site = "@codurance"  %}
 {% endif %}
-<!------End Social Specific Meta------->
+
