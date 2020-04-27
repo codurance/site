@@ -64,7 +64,7 @@ locals {
 
 I actually like having together the values that change per environment, so it easy to see what changes between environment, but it does create far more noise within the file.
 
-As I said, at that point workspaces were not recommended for multiple environments. You have to be quite aware on when to do `terraform workspace select`, or better only do it through your ci, so you don't make any mistake.
+As I said, at that point workspaces were not recommended for multiple environments. You have to be quite aware on when to do `terraform workspace select`, or better only do it through your CI, so you don't make any mistake.
 
 # The second way - Multiple accounts, single workspace
 
