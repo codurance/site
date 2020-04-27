@@ -285,7 +285,7 @@ The second runs it against the local version of the site (locahost:4000) and com
 
 ## Feature Toggles
 
-We are using [toggles.yml](src/_data/toggles.yml) to set toggles to "on" or "off". This file is in `.gitignore` so you can set change values locally without risk of commiting them accidentally. 
+We are using [toggles.yml](src/_data/toggles.yml) to set toggles to "on" or "off". This file is in `.gitignore` so you can change values locally without risk of commiting the changes accidentally. 
 
 First add a file `src/_data/toggles.yml` and include your feature toggle settings, e.g.
 
