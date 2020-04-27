@@ -40,8 +40,13 @@ title: Clients
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
-        {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
-        {% include button.html href=project.page-location translated_text=button-text css-class="client-project" %}
+          {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
+          {% if project.page-location %}
+            {% capture button-url %}{{project.page-location}}{% endcapture %}
+          {% else %}
+            {% capture button-url %}{% t projects.{{project.project-name}}.page-location %}{% endcapture %}
+          {% endif %}
+          {% include button.html href=button-url translated_text=button-text css-class="client-project" %}
         {% endfor %}
       </div>
     </div>
