@@ -143,7 +143,7 @@ resource "aws_vpc" "example" {
 }
 ```
 
-Finally, for this test I choose to use two separate tfvars files;
+Finally, for this test I choose to use two separate **tfvars** files;
 
 `dev.env.tfvars`
 
