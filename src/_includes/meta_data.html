@@ -1,0 +1,63 @@
+{% assign suffix = " | Codurance" %}
+
+{% if site.lang == "es" %}
+    {% assign title = page.title | append: suffix %}
+{% endif %}
+
+{% if site.lang == "es" and page.title-es %}
+    {% assign title = page.title-es | append: suffix %}
+{% endif %}
+
+{% if site.lang != "es" and page.title %}
+    {% assign title = page.title | append: suffix %}
+{% endif %}
+
+{% unless page.title or page.title-es %}
+    {% assign title = "Software Craftsmanship and Agile Development" | append: suffix %}
+{% endunless %}
+
+
+{% assign social_title = "Codurance" %}
+
+{% if page.title %}
+    {% assign social_title = page.title %}
+{% endif %}
+
+{% if site.lang == "es" and page.title-es %}
+    {% assign social_title = page.title-es %}
+{% endif %}
+
+
+{% if site.lang == 'es' and page.description-es %}
+    {% assign description =  page.description-es %}
+{% elsif page.description %}
+    {% assign description = page.description %}
+{% else %}
+    {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}
+{% endif %}
+
+
+{% if page.image.src %}
+    {% assign og_image =  page.image.src | prepend: site.url %}
+    {% assign twitter_image = page.image.src | prepend: site.url %}
+{% else %}
+    {% assign og_image = '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url %}
+    {% assign twitter_image = '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url %}
+{% endif %}
+
+
+{% assign og_url = page.url | prepend: site.url %}
+
+{% if page.title %}
+    {% assign og_type = "article" %}
+{% else %}
+    {% assign og_type = "website" %}
+{% endif %}
+
+
+{% if site.lang == 'es' %}
+    {% assign twitter_site = "@codurance_es" %}
+{% else %}
+    {% assign twitter_site = "@codurance"  %}
+{% endif %}
+
