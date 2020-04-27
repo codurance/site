@@ -3,15 +3,15 @@ layout: post
 asset-type: post
 name: terraform-with-multiple-environments
 title: Terraform With Multiple Environments
-date: 2020-04-22 10:00:00 +00:00
+date: 2020-04-28 05:00:00 +00:00
 author: Jorge Gueorguiev Garcia
 description: I have used a couple of different approaches to support multiple environments for Terraform deployments. We will investigate them here, and look at a third option.
 
 image:
-    src: /assets/custom/img/blog/railway.png
+    src: /assets/custom/img/blog/server_rack.jpg
     attribution:
-        text: Public domain photo from Pixabay
-        href: https://pixabay.com/photos/rails-soft-gleise-railway-3309912/
+        text: seeweb with license CC BY-SA 2.0
+        href: https://ccsearch.creativecommons.org/photos/4e445a8b-1791-43d5-8d3d-0f1847bf006a
 tags:
     - infrastructure
     - devops
