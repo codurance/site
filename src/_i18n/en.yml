@@ -687,6 +687,10 @@ projects:
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.</p>
              <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
              <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
+  Mango:
+    link-text: Case Study at Mango
+    page-location: https://info.codurance.com/en/mango-case-study
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible

@@ -697,7 +697,11 @@ projects:
     outcome: <p>A través del trabajo minucioso de los mentores pudimos aumentar el conocimiento y las prácticas técnicas en nuestros respectivos equipos. También establecimos prácticas y convenciones que otros equipos pudieron adoptar y contribuir.</p>
              <p>Debido a la distancia respecto a la oficina de Londres y el cambio en las prácticas laborales, uno de los mayores desafíos fue preparar al departamento para trabajar en remoto.</p>
              <p>Con ese fin, pasamos mucho tiempo trabajando con los equipos para ayudarlos a establecer las herramientas y protocolos adecuados para que el trabajo remoto sea lo más efectivo posible.</p>
-software-modernisation:
+  Mango:
+    link-text: Case Study at Mango
+    page-location: https://info.codurance.com/es/mango-case-study
+
+oftware-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
   hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.

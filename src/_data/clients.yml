@@ -167,6 +167,8 @@
   services-page:
     - expert_advice
     - effective_delivery
+  projects:
+    - project-name: Mango
 
 - id: mands
   name: Marks and Spencer
