@@ -43,6 +43,8 @@
   services:
     - software_creation
     - expert_advice
+  projects:
+    - project-name: eClinicalWorks
 
 
 - id: ubs

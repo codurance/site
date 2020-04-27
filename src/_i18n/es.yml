@@ -700,6 +700,8 @@ projects:
   Mango:
     link-text: Case Study at Mango
     page-location: https://info.codurance.com/es/mango-case-study
+  eClinicalWorks:
+    link-text: Case Study at eClinicalWorks
 
 oftware-modernisation:
   hero-title: Software Modernisation
