@@ -70,7 +70,7 @@ As I said, at that point workspaces were not recommended for multiple environmen
 
 At my current project we are using a different approach. We have an AWS account per environment. We could have used the same workspace setup, but that is complicated by the fact that the state is stored on the AWS account using S3 (solution, next section).
 
-So the approach was to have an `environments` folder, and inside a folder per environment. Each folder (dev, test, prod, whatever you use) has the same files (your variables file, your outputs file, your main/setup files). But as you should have all environments looking the same (or pretty similar), what you can do is symlink those files, and add a tfvars file for the data that needs to change (not disimilar to what we saw on [The first way](#thefirstway-singleaccountwithworkspaces)). Any infrastructure that is only present on an environment could be added into an additional file(s). You will have something like this
+So the approach was to have an `environments` folder, and inside a folder per environment (dev, test, prod or whatever you use). Each folder has the same files (your variables file, your outputs file, your main/setup files). Because you should have all environments looking the same (or pretty similar), what you can do is symlink those files, and add a **tfvars** file for the data that needs to change (not disimilar to what we saw on [The first way](#thefirstway-singleaccountwithworkspaces)). Any infrastructure that is only present on an environment could be added into an additional file(s). You will have something like this
 
 
     - environments
