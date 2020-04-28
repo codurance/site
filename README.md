@@ -282,3 +282,24 @@ backstop test
 
 The first captures a snapshot of the reference site (currently set to https://codurance.com)
 The second runs it against the local version of the site (locahost:4000) and compares the differences.
+
+## Feature Toggles
+
+We are using [toggles.yml](src/_data/toggles.yml) to set toggles "on" or "off". 
+
+```yml
+feature-my-feature: "on"
+feature-some-other-feature: "off"
+```
+
+The simpliest use of toggles would be a simple conditional:
+
+```liquid
+{% if site.data.toggles.my-feature == 'on' %}
+  {% include my-component.html %}
+{% endif %}
+```
+
+### Tidy up
+
+It should go without saying that once a feature has been switched on in production and is considered stable the toggle should be removed from the codebase.
