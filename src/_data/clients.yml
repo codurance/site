@@ -44,7 +44,9 @@
     - software_creation
     - expert_advice
   projects:
-    - project-name: eClinicalWorks
+    - page-location: https://info.codurance.com/en/eclinicalworks-case-study
+    - page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
+      project-name: eClinicalWorks
 
 
 - id: ubs
@@ -155,7 +157,9 @@
   services-page:
     - expert_advice
   projects:
-    - project-name: ASOS
+    - page-location: https://info.codurance.com/en/asos-case-study
+    - page-location-es: https://info.codurance.com/es/asos-case-study
+      project-name: ASOS
 
 - id: mango
   name: Mango
@@ -169,7 +173,9 @@
     - expert_advice
     - effective_delivery
   projects:
-    - project-name: Mango
+    - page-location: https://info.codurance.com/en/mango-case-study
+    - page-location-es: https://info.codurance.com/es/mango-case-study
+      project-name: Mango
 
 - id: mands
   name: Marks and Spencer
