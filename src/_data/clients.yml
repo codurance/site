@@ -45,7 +45,7 @@
     - expert_advice
   projects:
     - page-location: https://info.codurance.com/en/eclinicalworks-case-study
-    - page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
+      page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
       project-name: eClinicalWorks
 
 
@@ -158,7 +158,7 @@
     - expert_advice
   projects:
     - page-location: https://info.codurance.com/en/asos-case-study
-    - page-location-es: https://info.codurance.com/es/asos-case-study
+      page-location-es: https://info.codurance.com/es/asos-case-study
       project-name: ASOS
 
 - id: mango
@@ -174,7 +174,7 @@
     - effective_delivery
   projects:
     - page-location: https://info.codurance.com/en/mango-case-study
-    - page-location-es: https://info.codurance.com/es/mango-case-study
+      page-location-es: https://info.codurance.com/es/mango-case-study
       project-name: Mango
 
 - id: mands
