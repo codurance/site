@@ -1,6 +1,6 @@
 - id: bestsecret
   name: BestSecret
-  image: /assets/custom/img/home/clients/logo-bestsecret.svg
+  image: /assets/custom/img/home/clients/bestsecret-logo.png
   alt-text: BestSecret logo
   website: bestsecret.com
   services:
