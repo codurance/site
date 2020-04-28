@@ -285,24 +285,14 @@ The second runs it against the local version of the site (locahost:4000) and com
 
 ## Feature Toggles
 
-We are using [toggles.yml](src/_data/toggles.yml) to set toggles to "on" or "off". This file is in `.gitignore` so you can change values locally without risk of commiting the changes accidentally. 
-
-First add a file `src/_data/toggles.yml` and include your feature toggle settings, e.g.
+We are using [toggles.yml](src/_data/toggles.yml) to set toggles "on" or "off". 
 
 ```yml
 feature-my-feature: "on"
 feature-some-other-feature: "off"
 ```
 
-A similar file exists in the repo on GitHub with it's own settings.
-
-### Toggle a feature on in Production
-
-Make changes to feature toggles for Production by [editing the toggles.yml on GitHub](https://github.com/codurance/site/edit/master/src/_data/toggles.yml) and commiting it to `master` directly or via a pull request. Assuming this commit triggers a rebuild and redeploy your changes should take affect.
-
-### Using the feature toggle
-
-The simplest implimentation is a simple conditional:
+The simpliest use of toggles would be a simple conditional:
 
 ```liquid
 {% if site.data.toggles.my-feature == 'on' %}
