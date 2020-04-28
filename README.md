@@ -103,9 +103,11 @@ Install [Ruby Version Manager](https://rvm.io/), Ruby and Bundler:
 Now run Bundler and serve the site locally:
 
 - `bundle install`
-- `rake servequick`
+- `rake servequick`\*
 
 The site should now be running on http://localhost:4000
+
+_\*`rake serve_quicker` is also available which rebuilds faster by only rebuilding the EN language website._
 
 In case of problems, refer to the [troubleshooting section](#troubleshooting).
 
@@ -285,7 +287,7 @@ The second runs it against the local version of the site (locahost:4000) and com
 
 ## Feature Toggles
 
-We are using [toggles.yml](src/_data/toggles.yml) to set toggles "on" or "off". 
+We are using [toggles.yml](src/_data/toggles.yml) to set toggles "on" or "off".
 
 ```yml
 feature-my-feature: "on"
