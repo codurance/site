@@ -1,9 +1,10 @@
-$smallMax: 767px;
 $mediumMin: 768px;
-$mediumMax: 1023px;
 $largeMin: 1024px;
-$largeMax: 1199px;
 $extraLargeMin: 1200px;
+
+$smallMax: 767px;
+$mediumMax: 1023px;
+$largeMax: 1199px;
 
 @mixin small {
   @media (max-width: $smallMax) {
