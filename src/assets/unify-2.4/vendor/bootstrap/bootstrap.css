@@ -4038,35 +4038,6 @@ tbody.collapse.show {
   color: #fff;
 }
 
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-}
-
-.card > hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
 .card-body {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
@@ -4164,27 +4135,12 @@ tbody.collapse.show {
       flex-direction: column;
 }
 
-.card-deck .card {
-  margin-bottom: 15px;
-}
-
 @media (min-width: 576px) {
   .card-deck {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px;
-  }
-  .card-deck .card {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex: 1 0 0%;
-        flex: 1 0 0%;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 0;
-    margin-left: 15px;
   }
 }
 
@@ -4195,23 +4151,10 @@ tbody.collapse.show {
       flex-direction: column;
 }
 
-.card-group .card {
-  margin-bottom: 15px;
-}
-
 @media (min-width: 576px) {
   .card-group {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-  }
-  .card-group .card {
-    -ms-flex: 1 0 0%;
-        flex: 1 0 0%;
-    margin-bottom: 0;
-  }
-  .card-group .card + .card {
-    margin-left: 0;
-    border-left: 0;
   }
   .card-group .card:first-child {
     border-top-right-radius: 0;
@@ -4253,20 +4196,12 @@ tbody.collapse.show {
   }
 }
 
-.card-columns .card {
-  margin-bottom: 0.75rem;
-}
-
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
             column-gap: 1.25rem;
-  }
-  .card-columns .card {
-    display: inline-block;
-    width: 100%;
   }
 }
 
