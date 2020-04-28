@@ -1,14 +1,14 @@
 - id: bestsecret
-  name: Best Secret
+  name: BestSecret
   image:
-  alt-text: Best Secret logo
+  alt-text: BestSecret logo
   website: bestsecret.com
   services:
-    - software_modernisation
+    - software_creation
   projects:
     - page-location: https://info.codurance.com/en/best-secret-case-study
       page-location-es: https://info.codurance.com/es/best-secret-case-study
-      project-name: Best Secret
+      project-name: bestSecret
 
 
 - id: adevinta

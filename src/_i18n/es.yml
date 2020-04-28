@@ -309,6 +309,7 @@ clients:
   moonpig_description: Moonpig ofrece una variedad de regalos y tarjetas de felicitación online desde 2000. Nuestros Craftspeople han ayudado a Moonpig, trabajando conjuntamente con sus equipos, para diseñar y entregar software de producción y formando a sus desarrolladores en prácticas de XP y diseño de software.
   ey_description: EY es una de las firmas de servicios profesionales más grandes del mundo y es una de las marcas”Big Four". Nuestros Craftspeople están colaborando con sus equipos para evolucionar sus prácticas de XP.
   roche_description: Roche es una multinacional suiza de healthcare que opera en todo el mundo. Estamos trabajando con ellos para mejorar la manera de construir la próxima generación de sus plataformas digitales, ayudando al equipo a entregar de manera continua sistemas de calidad.
+  bestsecret_description: BestSecret es un retail y comunidad exclusiva de moda (acceso solo a través de invitación) con un catálogo de más de 30.000 productos y más de 3.000 diseñadores que venden sus productos en toda Europa. Les ayudamos a implementar Cloud, evolución de arquitectura, y transformación cultural.
 clients-partners:
   title: Socios
   subtitle: Nuestros socios comparten nuestros valores y nos aportan lo necesario para proveer un servicio completo a nuestros clientes. Nosotros también actuamos como partners de otras marcas a las que complementamos con nuestros servicios.
@@ -701,6 +702,8 @@ projects:
     link-text: Case Study at Mango
   eClinicalWorks:
     link-text: Case Study at eClinicalWorks
+  bestSecret:
+    link-text: Case Study at BestSecret
 
 oftware-modernisation:
   hero-title: Software Modernisation
