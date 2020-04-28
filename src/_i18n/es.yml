@@ -610,23 +610,7 @@ projects:
     title: Te ayudamos a crear un software mejor.
     subtitle: Explícanos tu proyecto o tus necesidades y nos pondremos en contacto contigo lo antes posible.
   ASOS:
-    link-text: Case Study at Asos
-    long_description: Ayudamos a ASOS a lanzar software de mejor calidad y con más frecuencia, a través de la implementación de prácticas de Continuous Integration y Continuous Delivery aplicando DevOps culture.
-    client_description: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
-    focused: Software Craftsmanship
-    keywords: Continuous Delivery, Continuous Integration, CI/CD, DevOps, Code Quality, TDD, Extreme Programming, Azure, .NET
-    short_description: El enfoque Software Craftsmanship ayudó a los equipos de ASOS a ofrecer entregas de mayor valor y de manera más frecuente.
-    subtitle: <p>Los procesos de implementación manuales que estaban llevando a cabo algunos equipos en diferentes etapas estaban teniendo un impacto negativo en la capacidad de la organización para implementar cambios con la agilidad y frecuencia que era necesaria.</p>
-      <p>Aplicar las forma de trabajar a través del Software Craftsmanship permitió aumentar la calidad general del código, y proporcionar una plataforma con la que iniciar el camino hacia el Continuous Delivery.</p>
-    about: ASOS es un retail de moda online. Empezó como un blog de moda y en la actualidad la marca ofrece a sus clientes sus productos a través de aplicación móvil, una revista además de su sitio web. El año pasado, ASOS tenía más de 13.4 millones clientes activos.
-    the_challenge: <p>ASOS necesitaba adaptar sus sistemas y garantizar el rendimiento durante los períodos pico de negociación, por ejemplo, el Black Friday. Uno de los problemas clave fue un proceso de implementación manual de varias etapas que requirió la coordinación de múltiples equipos y pruebas manuales.</p>
-      <p>En un esfuerzo por modernizar y mejorar sus capacidades de IT, ASOS se sometió a un proceso de mejora para optimizar su capacidad de adaptarse a los cambios y tasas de entrega. Un aspecto fundamental fue la adopción de prácticas y técnicas modernas de desarrollo de software, particularmente en torno al Extreme Programming.</p>
-    our_sc_approach: <p>Les ayudamos construyendo y rediseñando rápidamente algunos de sus sistemas centrales, agregando niveles de redundancia y almacenamiento en caché que les permitieron hacer frente a los picos de tráfico en sus plataformas. También construimos bibliotecas de contingencia para implementar la recuperación ante posibles desastres e implementamos grupos de alta disponibilidad entre regiones.</p>
-      <p>El trabajo fue en .NET ASP.NET MVC con bases de datos SQL Azure y alojado en Azure. También se emplearon tecnologías de almacenamiento en caché de código abierto como Redis, para mejorar la disponibilidad.</p>
-      <p>Si bien los equipos de desarrollo de ASOS ya estaban familiarizados y trabajaban con metodologías Agile identificamos la necesidad de optimizar algunas de sus prácticas. Aplicamos un programa de entrenamiento de Software Craftsmanship a gran escala en sus más de 40 equipos de desarrollo, introduciendo o reforzando habilidades clave en torno a estas metodologías.<a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
-    outcome: <p>ASOS ha dado pasos significativos en el camino hacia el desarrollo de software ágil, adoptando rápidamente una serie de nuevas técnicas. Las iteraciones están ahora mucho más organizadas y se están haciendo entregas de mejoras con más valor.</p>
-      <p>Mejoramos las prácticas técnicas dentro de los equipos, haciendo posible que puedan lanzar a producción software de mayor calidad y con mayor frecuencia.</p>
-      <p>ASOS continúa prosperando y mejorandO. Nos sentimos orgullosos de la ayuda que brindamos mientras estuvimos allí. Creemos que la actitud y el deseo de crecimiento y transformación de ASOS se alinearon bien con la experiencia, el entrenamiento y el apoyo de Codurance, lo que resultó muy enriquecedor para los equipos implicados.</p>
+    link-text: Case Study at ASOS
   Tesco-forecasting:
     link-text: Case Study at Tesco forecasting
     long_description: Nuestros Software Craftspeople ayudaron a Tesco a aumentar la calidad de su código y hacer entregas de valor con mayor frecuencia a través de Continuous Integration y Continuous Delivery.
