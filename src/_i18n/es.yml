@@ -183,6 +183,10 @@ publications-tweet_feed:
 publications-post:
   author_title: Por
   date_title: Publicado
+publications:
+  content-type: Publicaciones
+  teaser-cta: Más información
+  view-all: Ver todas las publicaciones
 services:
   title: Software de calidad entregado efectivamente
   subtitle: Líderes reconocidos en continuous delivery y prácticas de calidad en el desarrollo de software.
@@ -802,3 +806,11 @@ software-modernisation:
   contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos cómo podemos ayudarte.
 
   hubspot-form-id: 33a91f21-af06-460a-aa1d-9718b278a83e
+
+curated-publications:
+  softmod:
+    tag: life at codurance
+    intro-title: Software Modernisation Publications
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna sed felis semper
+    
+
