@@ -1,10 +1,13 @@
-<p>{{include.title}}</p>
-<p>{{include.description}}</p>
 <p>{% t publications.content-type  %}</p>
 <p>{% t publications.teaser-cta  %}</p>
 <p>{% t publications.view-all  %}</p>
 
-<section>
+<section class="curated-publications">
+  <header class="curated-publications--intro section-intro">
+    <h2 class="section-intro--title">{{include.title}}</h2>
+    <p class="section-intro--description">{{include.description}}</p>
+  </header>
+  
   <div class="g-bg-gray-light-v5">
     {% assign tag = {{include.tag}} %}
     {% assign articles = site.posts | where: 'tags', tag %}
