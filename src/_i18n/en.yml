@@ -282,6 +282,7 @@ clients:
   software_creation_title: Software Creation
   expert_advice_title: Expert Advice
   training_and_coaching_title: Training & Coaching
+  software_modernisation_title: Software Modernisation
   header: We are helping our clients create quality solutions.
   eclinicalworks_description: eClinicalWorks was founded in 1999 with a simple goal&#58; Rid doctors’ offices of paper and make every connection providers need — to pharmacies, labs, and supply chains. We are helping to align eClinicalWorks’ technical vision to their product strategy, which includes modernising their legacy software systems.
   cxLoyalty_description: cxLoyalty is a private company based in Stamford, Connecticut that provides customer engagement and loyalty programs. We are helping to both define and implement the technical vision for cxLoyalty’s end to end loyalty platform. Our Craftspeople are providing expert support and development expertise around their Clojure codebase.
@@ -306,6 +307,7 @@ clients:
   moonpig_description: Moonpig have been offering a range of gifts and greetings cards online since 2000. Our Craftspeople have contributed to deliver production software while coaching their developers on XP practices and software design.
   ey_description: EY is one of the largest professional services firms in the world and is one of the “Big Four” accounting firms. Our Craftspeople took part on their delivery of world-class software and help them evolve their XP practices.
   roche_description: Roche is a Swiss multinational healthcare company that operates worldwide. We are working with them to improve the way they are building the next generation of their digital platforms, helping the team deliver quality systems continuously.
+  bestsecret_description: BestSecret is an exclusive (invitation-only) fashion community and online retailer with a catalog of more than 30,000 items by more than 3,000 designers shipping throughout Europe. We helped them to implement Cloud migration, architecture evolution and cultural alignment.
 clients-partners:
   title: Partners
   subtitle: Our partners share our values and give us the breadth needed to provide a complete service to our clients, and we help our partners do the same.
@@ -599,23 +601,7 @@ projects:
     title: Let us help you to create better software
     subtitle: Tell us about the project in the form bellow and we'll get back to you soon
   ASOS:
-    link-text: Case Study at Asos
-    long_description: We helped ASOS to release higher quality software to production, more frequently, through the adoption of Continuous Integration and Continuous Delivery practices, within a DevOps culture.
-    client_description: ASOS is the UK's largest independent online fashion and beauty retailer, with an average of over 55 million visits to their website each month.
-    focused: Software Craftsmanship
-    keywords: Continuous Delivery, Continuous Integration, CI/CD, DevOps, Code Quality, TDD, Extreme Programming, Azure, .NET
-    short_description: A Software Craftmanship mindset helped ASOS's teams to deliver value more frequently.
-    subtitle: <p>A multi-staged, multi-team manual deployment process was having a negative impact on the organisations ability to deploy changes frequently.</p>
-              <p>Software Craftsmanship was seen as a way to raise overall code quality, whilst providing a platform for the journey to Continuous Delivery.</p>
-    about: ASOS is an online fashion retailer, selling cutting-edge fashion and supporting a thriving fashion community Having started as a fashion blog, the brand now offers its clients mobile apps and a magazine in addition to its website offering Last year, ASOS had over 13.4 million active customers.
-    the_challenge: <p>ASOS were struggling to adapt their systems and to ensure performance during peak trading periods, e.g Black Friday. One of the key problems was a multi-stage, manual deployment process that required the coordination of multiple teams and manual testing.</p>
-                   <p>In an effort to modernise and improve their IT capabilities, ASOS underwent an improvement program to improve their speed of change and rate of delivery. Central to this was the adoption of modern software development practices and techniques, particularly around Extreme Programming.</p>
-    our_sc_approach: <p>We helped by rapidly building and re-architecting some of their core systems, adding in levels of redundancy and caching that allowed them to cope with peak traffic. We also built fallover contingency libraries to implement cross-region disaster recovery and implemented cross-region high availability clusters.</p>
-                     <p>The work was in .NET ASP.NET MVC with SQL Azure databases, hosted in Azure The site also employed some open source caching technologies such as Redis, to improve availability.</p>
-                     <p>Whilst their existing development teams were already fairly established, particularly around Agile processes, we identified the need for these teams to be upskilled technical Agile practices. We implemented a large-scale Software Craftsmanship coaching program across their 40+ development teams, introducing or reinforcing key skills around <a href="/services">Extreme Programming (XP)</a>, TDD, SOLID principles, <a href="/services">Continuous Integration</a>, <a href="/services">Continuous Delivery</a> and encouraging a <a href="/services">DevOps culture</a></p>
-    outcome: <p>ASOS has made significant steps along the road to Agile software development, adopting a host of new techniques rapidly. Iterations are more organized and ceremonies are delivering more value.</p>
-             <p>We improved the technical practices within the teams, enabling their teams to release higher-quality software to production more frequently.</p>
-             <p>ASOS continues to thrive and improve and we are proud of the help we provided while there We believe that ASOS's attitude and desire for growth and change aligned well with Codurance's expertise, coaching, and support, resulting in many enriching experiences for ASOS's staff.</p>
+    link-text: Case Study at ASOS
   Tesco-forecasting:
     link-text: Forecasting Project
     long_description: Our Software Craftspeople helped Tesco to raise their code quality and to deliver value more frequently through Continuous Integration and Continuous Delivery.
@@ -691,6 +677,14 @@ projects:
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.</p>
              <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
              <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
+  Mango:
+    link-text: Case Study at Mango
+  eClinicalWorks:
+    link-text: Case Study at eClinicalWorks
+  bestSecret:
+    link-text: Case Study at BestSecret
+
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible

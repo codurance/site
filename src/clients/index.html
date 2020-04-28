@@ -40,8 +40,22 @@ title: Clients
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
-        {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
-        {% include button.html href=project.page-location translated_text=button-text css-class="client-project" %}
+          {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
+
+          {% if site.lang == 'es' and project.page-location-es %}
+            {% capture button-url %}{{project.page-location-es}}{% endcapture %}
+          {% else %}
+            {% capture button-url %}{{project.page-location}}{% endcapture %}
+          {% endif %}
+
+          {% assign pageLocationPrefix = project.page-location | slice: 0, 8 %}
+          {% if pageLocationPrefix == 'https://' %}
+            {% assign target = '_blank' %}
+          {% else %}
+            {% assign target = '_self' %}
+          {% endif %}
+
+          {% include button.html href=button-url translated_text=button-text css-class="client-project" target=target %}
         {% endfor %}
       </div>
     </div>

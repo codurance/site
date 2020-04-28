@@ -1,3 +1,16 @@
+- id: bestsecret
+  name: BestSecret
+  image: /assets/custom/img/home/clients/bestsecret-logo.png
+  alt-text: BestSecret logo
+  website: bestsecret.com
+  services:
+    - software_modernisation
+  projects:
+    - page-location: https://info.codurance.com/en/best-secret-case-study
+      page-location-es: https://info.codurance.com/es/best-secret-case-study
+      project-name: bestSecret
+
+
 - id: adevinta
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
@@ -43,6 +56,11 @@
   services:
     - software_creation
     - expert_advice
+    - software_modernisation
+  projects:
+    - page-location: https://info.codurance.com/en/eclinicalworks-case-study
+      page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
+      project-name: eClinicalWorks
 
 
 - id: ubs
@@ -150,10 +168,12 @@
   services:
     - software_creation
     - expert_advice
+    - software_modernisation
   services-page:
     - expert_advice
   projects:
-    - page-location: projects/software-craftsmanship-at-asos
+    - page-location: https://info.codurance.com/en/asos-case-study
+      page-location-es: https://info.codurance.com/es/asos-case-study
       project-name: ASOS
 
 - id: mango
@@ -164,9 +184,14 @@
   services:
     - software_creation
     - expert_advice
+    - software_modernisation
   services-page:
     - expert_advice
     - effective_delivery
+  projects:
+    - page-location: https://info.codurance.com/en/mango-case-study
+      page-location-es: https://info.codurance.com/es/mango-case-study
+      project-name: Mango
 
 - id: mands
   name: Marks and Spencer
