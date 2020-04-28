@@ -621,6 +621,7 @@ projects:
     outcome: <p>ASOS ha dado pasos significativos en el camino hacia el desarrollo de software ágil, adoptando rápidamente una serie de nuevas técnicas. Las iteraciones están ahora mucho más organizadas y se están haciendo entregas de mejoras con más valor.</p>
       <p>Mejoramos las prácticas técnicas dentro de los equipos, haciendo posible que puedan lanzar a producción software de mayor calidad y con mayor frecuencia.</p>
       <p>ASOS continúa prosperando y mejorandO. Nos sentimos orgullosos de la ayuda que brindamos mientras estuvimos allí. Creemos que la actitud y el deseo de crecimiento y transformación de ASOS se alinearon bien con la experiencia, el entrenamiento y el apoyo de Codurance, lo que resultó muy enriquecedor para los equipos implicados.</p>
+    page-location: https://info.codurance.com/es/asos-case-study
   Tesco-forecasting:
     link-text: Case Study at Tesco forecasting
     long_description: Nuestros Software Craftspeople ayudaron a Tesco a aumentar la calidad de su código y hacer entregas de valor con mayor frecuencia a través de Continuous Integration y Continuous Delivery.

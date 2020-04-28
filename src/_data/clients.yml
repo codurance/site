@@ -155,8 +155,7 @@
   services-page:
     - expert_advice
   projects:
-    - page-location: projects/software-craftsmanship-at-asos
-      project-name: ASOS
+    - project-name: ASOS
 
 - id: mango
   name: Mango
