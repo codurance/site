@@ -48,7 +48,14 @@ title: Clients
             {% capture button-url %}{{project.page-location}}{% endcapture %}
           {% endif %}
 
-          {% include button.html href=button-url translated_text=button-text css-class="client-project" %}
+          {% assign pageLocationPrefix = project.page-location | slice: 0, 8 %}
+          {% if pageLocationPrefix == 'https://' %}
+            {% assign target = '_blank' %}
+          {% else %}
+            {% assign target = '_self' %}
+          {% endif %}
+
+          {% include button.html href=button-url translated_text=button-text css-class="client-project" target=target %}
         {% endfor %}
       </div>
     </div>
