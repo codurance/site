@@ -36,7 +36,7 @@ var submitTrainingContactForm = function() {
 var announcementOnDevConsole = function(){
 	try{
 		var main="display:block;font-family:'Open Sans',Arial, sans-serif;font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;height:34px;line-height:17px;margin-bottom:10px;margin-top:5px;text-align:center;text-shadow:none;";
-		var link="color:blue;text-decoration: underline;";
+		var link="text-decoration: underline;";
 		var isNewEnoughBrowser = "repeat" in String.prototype;
 		if(isNewEnoughBrowser){
             window.console.log("MMMMMMMMMMMMMMMMMMMMMMMMNklxNMMMMM\n" +
