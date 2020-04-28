@@ -66,6 +66,7 @@ default_post_image: "/assets/custom/img/home/computerdesk_original_opt_bw.jpg"
 
 sass:
   sass_dir: assets/custom/css/_sass
+  style: compressed
 
 languages: ["en", "es"]
 
