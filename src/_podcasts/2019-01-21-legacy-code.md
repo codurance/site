@@ -8,6 +8,8 @@ image:
 title: "Codurance Talks - Episode 8 - Legacy Code"
 video-url: https://www.podbean.com/media/player/2yuxa-a53d35?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
 date: 2019-01-21 12:00:00 +00:00
+tags:
+- software modernisation
 ---
 
 New Year, new podcast available. It is time to talk about Legacy Code. [Sam Davies](https://codurance.com/publications/author/sam-davies/) and [Chris Bimson](https://github.com/christopher-bimson) return, with the new addition of [Andre Torres](https://github.com/andre2w), who this time took charge of the editing.

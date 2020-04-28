@@ -8,6 +8,8 @@ image:
 title: "Codurance Talks - Episode 18 - Value Stream Mapping"
 video-url: https://www.podbean.com/media/player/3nejq-c7d5ef?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
 date: 2019-11-18 06:00:00 +00:00
+tags:
+- software modernisation
 ---
 
 On this episode [Solange](https://codurance.com/publications/author/solange-u.-gasengayire/) hosts a talk around Value Stream Mapping. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts, while [Mash](https://codurance.com/publications/author/mashooq-badar/) and [Chris](https://github.com/christopher-bimson) provide the knowledge.

@@ -14,6 +14,7 @@ tags:
 - cloud 
 - partnerships 
 - aws
+- software modernisation
 ---
 
 ### We are pleased to announce that Codurance has achieved [AWS Consulting Partner status](https://aws.amazon.com/partners/find/partnerdetails/?n=Codurance%20Ltd&id=001E000001dA58LIAS) in the AWS Partner Network. This status recognises the expertise, skill and experience of our people in the [AWS Cloud](https://aws.amazon.com/) ecosystem and its various services.

@@ -8,6 +8,7 @@ image:
     src: /assets/custom/img/blog/wrong-time.jpeg
 tags:
 - craftsmanship
+- software modernisation
 ---
 
 No one wakes up in the morning and say "Today I'm gonna screw up. Today

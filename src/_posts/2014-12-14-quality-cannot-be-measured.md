@@ -12,6 +12,7 @@ tags:
 - test-driven-development
 - quality
 - metrics
+- software modernisation
 ---
 
 We cannot effectively measure what we can't precisely define. And this is definitely true when it comes to software quality. What is software quality? What does quality mean? Quality for whom? Compared to what? In which context? Are we talking about quality from a developer's perspective, from a manager's perspective, or from a user's perspective?

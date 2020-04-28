@@ -11,6 +11,7 @@ tags:
 - agile
 - teams
 - managers
+- software modernisation
 ---
 
 _(The following story was a bit altered in order to keep it short(ish) and to protect the innocents)_
