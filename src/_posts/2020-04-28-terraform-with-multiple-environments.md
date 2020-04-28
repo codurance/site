@@ -97,7 +97,7 @@ But, wait - you say - does that mean I can't use workspaces with multiple accoun
 
 Can I use a single s3 backend with a different profile (different account) than the rest of the system? Well, yes, the backend can use different credentials than the rest of the setup. In fact, I discovered recently that you can have multiple providers (mixing or multiple accounts of the same one), give them different aliases, and choose for each resource which provider to use.
 
-In fact, some very quick code here on how to deal with it, using a centralized state storage such as [Azure](https://azure.microsoft.com/) Blob Storage (mostly because I did not have access to the "proper" ones, but I had access to the Codurance Azure playground account).
+Let's gonna show you some very quick code here on how to deal with it, using a centralized state storage such as [Azure](https://azure.microsoft.com/) Blob Storage (mostly because I did not have access to the "proper" ones, but I had access to the Codurance Azure playground account).
 
 First the `remote.tf` file, on which we indicate where we will store the state for all workspaces
 
