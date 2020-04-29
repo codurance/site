@@ -1,0 +1,17 @@
+@mixin freed__bold {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  margin-top: 0;
+
+  @include small {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  @include medium-large-and-extra-large {
+    font-size: 44px;
+    line-height: 1.25;
+    margin-bottom: 19px;
+  }
+}

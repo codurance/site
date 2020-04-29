@@ -37,6 +37,7 @@
 }
 
 .section-intro--title {
+  @include freed__bold;
   @include medium-large-and-extra-large {
     text-align: center;
   }
