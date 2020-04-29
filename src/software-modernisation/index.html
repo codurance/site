@@ -281,10 +281,6 @@ metarobots: index,follow
   </div></div>
 </section><!-- Case Studies -->
 
-{% if site.data.toggles.feature-sm-blogs == 'on' %}
-  {% include software_modernisation_curated_publications.html %}
-{% endif %}
-
 <section class="section bg-testimonials g-pb-200--desk">
   <div class="container-slim center">
     <h4 class="text-center h2 text-700">{% t software-modernisation.testimonials-heading %}</h4>
@@ -317,8 +313,6 @@ metarobots: index,follow
   </div>
 </section><!-- Testimonials -->
 
-
-
 <section class="bg-slate bg-slate--pattern center">
 
   <div class="container-slim center bg-coral bg-compass-cta g-px-25 g-py-50 text-center g-mt-neg100--desk">
@@ -348,6 +342,10 @@ metarobots: index,follow
     </div>
   </div>
 </section>
+
+{% if site.data.toggles.feature-sm-blogs == 'on' %}
+  {% include software_modernisation_curated_publications.html %}
+{% endif %}
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
