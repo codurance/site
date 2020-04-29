@@ -1,3 +1,55 @@
-.cta__secondary-light {
-  background-color: rgba(255, 255, 0, 0.1);
+@mixin cta {
+  @include bold;
+  display: inline-block;
+  font-size: 20px;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @include small {
+    padding: 20px 40px;
+  }
+
+  @include medium-large-and-extra-large {
+    padding: 20px 30px;
+  }
+}
+
+@mixin secondary {
+  background: transparent;
+  border-style: solid;
+  border-width: 2px;
+}
+
+@mixin secondary-light {
+  &,
+  &:hover,
+  &:focus {
+    color: white;
+    border-color: white;
+  }
+}
+
+@mixin secondary-dark {
+  &,
+  &:hover,
+  &:focus {
+    color: $grey-dark;
+    border-color: $grey-dark;
+  }
+}
+
+@mixin cta__secondary-light {
+  @include cta;
+  @include secondary;
+  @include secondary-light;
+}
+
+@mixin cta__secondary-dark {
+  @include cta;
+  @include secondary;
+  @include secondary-dark;
 }

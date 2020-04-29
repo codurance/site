@@ -24,7 +24,10 @@
       </article>
     {% endfor %}
   </div>
-  <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications--cta cta__secondary-light">
-    {% t publications.view-all %}
-  </a>
+
+  <footer class="curated-publications--cta-space">
+    <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications--cta">
+      {% t publications.view-all %}
+    </a>
+  </footer>
 </section>

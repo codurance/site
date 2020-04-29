@@ -1,0 +1,33 @@
+.software-mod-problems {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: $sheen;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  @include extra-large {
+    &:before {
+      right: 100px;
+    }
+    &:after {
+      content: "";
+      background-color: #293341;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      bottom: 0;
+      height: 450px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}

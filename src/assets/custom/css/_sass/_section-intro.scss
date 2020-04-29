@@ -1,22 +1,7 @@
-@mixin lateral-spacing {
-  @include small {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  @include medium {
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  @include large-and-extra-large {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1510px;
-    padding-left: 49px;
-    padding-right: 49px;
-  }
-}
+.section-intro {
+  @include lateral-spacing;
+  @include max-width;
 
-@mixin vertical-spacing {
   @include small {
     padding-top: 71px;
     padding-bottom: 64px;
@@ -29,11 +14,6 @@
     padding-top: 145px;
     padding-bottom: 75px;
   }
-}
-
-.section-intro {
-  @include lateral-spacing;
-  @include vertical-spacing;
 }
 
 .section-intro--title {

@@ -1,6 +1,15 @@
-@mixin freed__bold {
+@mixin bold {
   font-family: "Proxima Nova";
   font-weight: 700;
+}
+
+@mixin reg {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+}
+
+@mixin freed__bold {
+  @include bold;
   margin-top: 0;
 
   @include small {
@@ -17,8 +26,7 @@
 }
 
 @mixin base__reg {
-  font-family: "Proxima Nova";
-  font-weight: 400;
+  @include bold;
   margin-bottom: 0;
   margin-top: 0;
   line-height: 1.5;
