@@ -5,9 +5,8 @@
   </header>
 
   <div class="curated-publications--cards">
-    {% assign tag = {{include.tag}} %}
-    {% assign articles = site.posts | where: 'tags', tag %}
-    {% for post in articles limit: 4 %}
+    {% assign posts = site.posts | where: 'tags', include.tag %}
+    {% for post in posts limit: 4 %}
       <article class="curated-publications--card card">
         <a class="card--image-link" href="{{ post.url | prepend: site.baseurl }}">
           <img
@@ -25,7 +24,7 @@
       </article>
     {% endfor %}
   </div>
-  <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | slugify}}" class="curated-publications--cta cta__secondary-light">
+  <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications--cta cta__secondary-light">
     {% t publications.view-all %}
   </a>
 </section>
