@@ -15,3 +15,19 @@
     margin-bottom: 19px;
   }
 }
+
+@mixin base__reg {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.5;
+
+  @include small {
+    font-size: 18px;
+  }
+
+  @include medium-large-and-extra-large {
+    font-size: 28px;
+  }
+}
