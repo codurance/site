@@ -10,8 +10,8 @@ description: I have used a couple of different approaches to support multiple en
 image:
     src: /assets/custom/img/blog/server_rack.jpg
     attribution:
-        text: seeweb with license CC BY-SA 2.0
-        href: https://ccsearch.creativecommons.org/photos/4e445a8b-1791-43d5-8d3d-0f1847bf006a
+        text: jyrki huusko with license CC BY 2.0
+        href: https://search.creativecommons.org/photos/9d2b84b5-8c67-4eae-af77-5a086104cc4e
 tags:
     - infrastructure
     - devops
