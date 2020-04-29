@@ -1,11 +1,49 @@
+@mixin lateral-spacing {
+  @include small {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include medium {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  @include large-and-extra-large {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1510px;
+    padding-left: 49px;
+    padding-right: 49px;
+  }
+}
+
+@mixin vertical-spacing {
+  @include small {
+    padding-top: 71px;
+    padding-bottom: 64px;
+  }
+  @include medium {
+    padding-top: 95px;
+    padding-bottom: 66px;
+  }
+  @include large-and-extra-large {
+    padding-top: 145px;
+    padding-bottom: 75px;
+  }
+}
+
 .section-intro {
-  background-color: rgba(255, 0, 255, 0.1);
+  @include lateral-spacing;
+  @include vertical-spacing;
 }
 
 .section-intro--title {
-  background-color: rgba(255, 0, 255, 0.1);
+  @include medium-large-and-extra-large {
+    text-align: center;
+  }
 }
 
 .section-intro--description {
-  background-color: rgba(255, 0, 255, 0.1);
+  @include medium-large-and-extra-large {
+    text-align: center;
+  }
 }
