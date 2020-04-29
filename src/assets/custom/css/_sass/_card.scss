@@ -1,17 +1,26 @@
 .card {
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 0 8px;
+  overflow: hidden;
 }
 
 .card--image-link {
-  background-color: rgba(0, 255, 0, 0.1);
+  display: block;
 }
 
 .card--image {
-  background-color: rgba(0, 255, 0, 0.1);
+  display: block;
+  width: 100%;
 }
 
 .card--title {
-  background-color: rgba(0, 255, 0, 0.1);
+  @include freed-bold;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  height: 76px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card--description {

@@ -11,6 +11,7 @@ $site-base-url: {{ site.baseurl }};
 @import "cta";
 @import "card";
 
+@import "cards-layout";
 @import "curated-publications";
 @import "section-intro";
 

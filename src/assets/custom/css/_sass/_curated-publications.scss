@@ -2,17 +2,10 @@
   background: $sheen;
 }
 
-.curated-publications--intro {
-}
-
 .curated-publications--cards {
   @include medium-large-and-extra-large {
     margin-bottom: -152px;
   }
-}
-
-.curated-publications--card {
-  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .curated-publications--cta-space {

@@ -17,8 +17,15 @@
 }
 
 .section-intro--title {
-  @include freed__bold;
+  @include freed-bold__responsive;
+  margin-top: 0;
+
+  @include small {
+    margin-bottom: 24px;
+  }
+
   @include medium-large-and-extra-large {
+    margin-bottom: 19px;
     text-align: center;
   }
 }

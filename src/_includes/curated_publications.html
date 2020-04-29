@@ -1,28 +1,30 @@
 <section class="curated-publications">
-  <header class="curated-publications--intro section-intro">
+  <header class="section-intro">
     <h2 class="section-intro--title">{{include.title}}</h2>
     <p class="section-intro--description">{{include.description}}</p>
   </header>
 
-  <div class="curated-publications--cards">
-    {% assign posts = site.posts | where: 'tags', include.tag %}
-    {% for post in posts limit: 4 %}
-      <article class="curated-publications--card card">
-        <a class="card--image-link" href="{{ post.url | prepend: site.baseurl }}">
-          <img
-            class="card--image"
-            src="{{post.image.src | prepend: site.baseurl}}"
-            alt="{{post.title}}"
-            width="200"
-          />
-        </a>
-        <h3 class="card--title">{{ post.title }}</h3>
-        <p class="card--description">{{post.description}}</p>
-        <a class="card--cta__text" href="{{ post.url | prepend: site.baseurl }}">
-          {% t publications.teaser-cta %}
-        </a>
-      </article>
-    {% endfor %}
+  <div class="curated-publications--cards cards-layout">
+    <div class="cards-layout--inner">
+      {% assign posts = site.posts | where: 'tags', include.tag %}
+      {% for post in posts limit: 5 %}
+        <article class="cards-layout--card card">
+          <a class="card--image-link" href="{{ post.url | prepend: site.baseurl }}">
+            <img
+              class="card--image"
+              src="{{post.image.src | prepend: site.baseurl}}"
+              alt="{{post.title}}"
+              width="200"
+            />
+          </a>
+          <h3 class="card--title">{{ post.title }}</h3>
+          <p class="card--description">{{post.description}}</p>
+          <a class="card--cta__text" href="{{ post.url | prepend: site.baseurl }}">
+            {% t publications.teaser-cta %}
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 
   <footer class="curated-publications--cta-space">

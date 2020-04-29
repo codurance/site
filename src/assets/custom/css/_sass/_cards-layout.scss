@@ -1,0 +1,28 @@
+$number-of-cards-in-carousel: 5;
+$max-width-of-cards: 370px;
+$spacing-around-cards: 30px;
+
+$total-max-width-of-cards: $number-of-cards-in-carousel * $max-width-of-cards;
+$total-width-of-spacing: (1 + $number-of-cards-in-carousel) * $spacing-around-cards;
+
+.cards-layout {
+  overflow-x: scroll;
+}
+.cards-layout--inner {
+  max-width: $total-max-width-of-cards + $total-width-of-spacing;
+  width: calc((#{$number-of-cards-in-carousel} * (100vw - (2 * #{$spacing-around-cards}))) + #{$total-width-of-spacing});
+}
+.cards-layout--card {
+  float: left;
+  margin-left: $spacing-around-cards / 2;
+  margin-right: $spacing-around-cards / 2;
+  max-width: $max-width-of-cards;
+  width: calc(100vw - #{2 * $spacing-around-cards});
+
+  &:first-child {
+    margin-left: $spacing-around-cards;
+  }
+  &:last-child {
+    margin-right: $spacing-around-cards;
+  }
+}
