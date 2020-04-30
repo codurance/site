@@ -1,32 +1,136 @@
-$number-of-cards-in-carousel: 5;
-$max-width-of-cards: 370px;
-$spacing-around-cards: 30px;
-
-$total-max-width-of-cards: $number-of-cards-in-carousel * $max-width-of-cards;
-$total-width-of-spacing: (1 + $number-of-cards-in-carousel) *
-  $spacing-around-cards;
-
 .cards-layout {
-  overflow-x: scroll;
+  @include lateral-spacing;
+  @include max-width;
 }
-.cards-layout__inner {
-  max-width: $total-max-width-of-cards + $total-width-of-spacing;
-  width: calc(
-    (#{$number-of-cards-in-carousel} * (100vw - (2 * #{$spacing-around-cards}))) +
-      #{$total-width-of-spacing}
-  );
-}
-.cards-layout__card {
-  float: left;
-  margin-left: $spacing-around-cards / 2;
-  margin-right: $spacing-around-cards / 2;
-  max-width: $max-width-of-cards;
-  width: calc(100vw - #{2 * $spacing-around-cards});
 
-  &:first-child {
-    margin-left: $spacing-around-cards;
+@include small {
+  $max-width-of-cards: 370px;
+
+  $number-of-cards-in-carousel: 5;
+  $spacing-around-cards: 30px;
+
+  $total-max-width-of-cards: $number-of-cards-in-carousel * $max-width-of-cards;
+  $total-width-of-spacing: (1 + $number-of-cards-in-carousel) *
+    $spacing-around-cards;
+
+  .cards-layout {
+    margin-left: -$spacing-around-cards;
+    margin-right: -$spacing-around-cards;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
-  &:last-child {
-    margin-right: $spacing-around-cards;
+  .cards-layout__inner {
+    max-width: $total-max-width-of-cards + $total-width-of-spacing;
+    width: calc(
+      (
+          #{$number-of-cards-in-carousel} * (100vw -
+                (2 * #{$spacing-around-cards}))
+        ) + #{$total-width-of-spacing}
+    );
+  }
+  .cards-layout__card {
+    float: left;
+    margin-left: $spacing-around-cards / 2;
+    margin-right: $spacing-around-cards / 2;
+    max-width: $max-width-of-cards;
+    width: calc(100vw - #{2 * $spacing-around-cards});
+
+    &:first-child {
+      margin-left: $spacing-around-cards;
+    }
+    &:last-child {
+      margin-right: $spacing-around-cards;
+    }
+  }
+}
+
+@include medium {
+  $width-of-cards: 370px;
+  $space-between-cards: 27px;
+
+  .cards-layout__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards-layout__card {
+    flex-basis: calc(50% - #{$space-between-cards / 2});
+    width: $width-of-cards;
+
+    &:nth-child(2n + 1) {
+      margin-right: $space-between-cards / 2;
+    }
+    &:nth-child(2n) {
+      margin-left: $space-between-cards / 2;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 35px;
+    }
+
+    &:nth-child(5) {
+      display: none;
+    }
+  }
+}
+
+@include large-and-extra-large {
+  .cards-layout__inner {
+    display: flex;
+  }
+}
+
+@include large {
+  $width-of-cards: 340px;
+  $space-between-cards: 40.5px;
+
+  .cards-layout__card {
+    width: $width-of-cards;
+
+    &:nth-child(1) {
+      margin-right: $space-between-cards / 2;
+    }
+
+    &:nth-child(2) {
+      margin-left: $space-between-cards / 2;
+      margin-right: $space-between-cards / 2;
+    }
+
+    &:nth-child(3) {
+      margin-left: $space-between-cards / 2;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      display: none;
+    }
+  }
+}
+
+@include extra-large {
+  $width-of-cards: 340px;
+  $space-between-cards: 50px;
+
+  .cards-layout__card {
+    width: $width-of-cards;
+
+    &:nth-child(1) {
+      margin-right: $space-between-cards / 2;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-left: $space-between-cards / 2;
+      margin-right: $space-between-cards / 2;
+    }
+
+    &:nth-child(4) {
+      margin-left: $space-between-cards / 2;
+    }
+
+    &:nth-child(5) {
+      display: none;
+    }
   }
 }
