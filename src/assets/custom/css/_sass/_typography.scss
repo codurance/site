@@ -14,7 +14,7 @@
   line-height: 38px;
 }
 
-@mixin freed-bold__responsive {
+@mixin freed-bold--responsive {
   @include freed-bold;
 
   @include medium-large-and-extra-large {
@@ -23,7 +23,7 @@
   }
 }
 
-@mixin base__reg {
+@mixin base--reg {
   @include bold;
   margin-bottom: 0;
   margin-top: 0;

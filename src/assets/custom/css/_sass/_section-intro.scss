@@ -16,8 +16,8 @@
   }
 }
 
-.section-intro--title {
-  @include freed-bold__responsive;
+.section-intro__title {
+  @include freed-bold--responsive;
   margin-top: 0;
 
   @include small {
@@ -30,7 +30,7 @@
   }
 }
 
-.section-intro--description {
+.section-intro__description {
   @include medium-large-and-extra-large {
     text-align: center;
   }

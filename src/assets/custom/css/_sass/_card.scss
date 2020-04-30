@@ -5,11 +5,11 @@
   overflow: hidden;
 }
 
-.card--image-link {
+.card__image-link {
   display: block;
 }
 
-.card--image {
+.card__image {
   background-size: cover;
   background-position: center center;
   display: block;
@@ -17,7 +17,7 @@
   padding-top: 230 / 370 * 100%;
 }
 
-.card--title {
+.card__title {
   @include freed-bold;
   margin-top: 40px;
   margin-bottom: 25px;
@@ -25,10 +25,10 @@
   overflow: hidden;
 }
 
-.card--description {
+.card__description {
   background-color: rgba(0, 255, 0, 0.1);
 }
 
-.card--cta__text {
+.card__cta--text {
   background-color: rgba(0, 255, 0, 0.1);
 }

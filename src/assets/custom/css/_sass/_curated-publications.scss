@@ -2,13 +2,13 @@
   background: $sheen;
 }
 
-.curated-publications--cards {
+.curated-publications__cards {
   @include medium-large-and-extra-large {
     margin-bottom: -150px;
   }
 }
 
-.curated-publications--cta-space {
+.curated-publications__cta-space {
   @include lateral-spacing;
   text-align: center;
 
@@ -22,14 +22,14 @@
   }
 }
 
-.curated-publications--cta {
+.curated-publications__cta {
   margin-bottom: 30px;
   margin-top: 30px;
 
   @include small {
-    @include cta__secondary-dark;
+    @include cta--secondary-dark;
   }
   @include medium-large-and-extra-large {
-    @include cta__secondary-light;
+    @include cta--secondary-light;
   }
 }

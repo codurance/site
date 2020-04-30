@@ -3,16 +3,20 @@ $max-width-of-cards: 370px;
 $spacing-around-cards: 30px;
 
 $total-max-width-of-cards: $number-of-cards-in-carousel * $max-width-of-cards;
-$total-width-of-spacing: (1 + $number-of-cards-in-carousel) * $spacing-around-cards;
+$total-width-of-spacing: (1 + $number-of-cards-in-carousel) *
+  $spacing-around-cards;
 
 .cards-layout {
   overflow-x: scroll;
 }
-.cards-layout--inner {
+.cards-layout__inner {
   max-width: $total-max-width-of-cards + $total-width-of-spacing;
-  width: calc((#{$number-of-cards-in-carousel} * (100vw - (2 * #{$spacing-around-cards}))) + #{$total-width-of-spacing});
+  width: calc(
+    (#{$number-of-cards-in-carousel} * (100vw - (2 * #{$spacing-around-cards}))) +
+      #{$total-width-of-spacing}
+  );
 }
-.cards-layout--card {
+.cards-layout__card {
   float: left;
   margin-left: $spacing-around-cards / 2;
   margin-right: $spacing-around-cards / 2;

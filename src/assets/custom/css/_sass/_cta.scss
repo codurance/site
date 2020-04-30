@@ -42,13 +42,13 @@
   }
 }
 
-@mixin cta__secondary-light {
+@mixin cta--secondary-light {
   @include cta;
   @include secondary;
   @include secondary-light;
 }
 
-@mixin cta__secondary-dark {
+@mixin cta--secondary-dark {
   @include cta;
   @include secondary;
   @include secondary-dark;
