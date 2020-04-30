@@ -697,3 +697,10 @@
     }
   }
 }
+
+.sm-form-holder {
+  @include medium-large-and-extra-large {
+    position: relative;
+    z-index: 20;
+  }
+}
