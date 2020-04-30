@@ -5,7 +5,7 @@ name: what-is-software-modernisation
 title: What is Software Modernisation and why do you want to do it?
 date: 2020-05-05 05:00:00 +00:00
 author: Mashooq Badar
-description: ToDo
+description: Software Modernisation is about ensuring that software is a strategic asset to enable your business and gain a competitive advantage. It is necessary when a legacy of tactical changes have resulted in software that is holding your business hostage.
 
 image:
     src: /assets/custom/img/blog/server_rack.jpg
@@ -15,10 +15,8 @@ image:
 tags:
     - software modernisation
 
-abstract: ToDo
+abstract: Software Modernisation is about ensuring that software is a strategic asset to enable your business and gain a competitive advantage. It is necessary when a legacy of tactical changes have resulted in software that is holding your business hostage.
 ---
-
-# What is software modernisation and why do you want to do it?
 
 The goal of software is to provide value to the business. Businesses evolve and their software must evolve with it. If the alignment between software and business is frictionless then it is not merely a passive part of the organisation but an engine for innovation to allow the business to march ahead of the competition.
 
@@ -27,10 +25,10 @@ The trouble is that rarely software is a frictionless part of the business, let 
 
 The problem is that this decline is often so slow that we become accustomed and the true cost of difficult to change, and often defective, software is hidden. We only see that change is already costly and adding modernisation to that cost is difficult. The alternative is much worse! We fail to see that the cost of not modernising is much bigger than the direct cost of building the next feature or the loss in revenues due to a defect. 
 
-The ultimate cost to your business is the inability to evolve according to the market needs and to innovate to lead the market. It is also related to the cost of attracting and developing the best talent in a very competitive software industry. Business must understand this true cost in its entirety and weigh the cost of modernising against the true cost. It is very rare that a truly strategic business plan can forgo investment in the software that enables that business. Ultimately, keeping your software and the ability to change software in the best shape possible must be seen as an investment and not a cost.
+The ultimate cost to your business is the inability to evolve according to the market needs and to innovate to lead the market. It is also related to the cost of attracting and developing the best talent in a very competitive software industry. Businesses must understand this true cost in its entirety and weigh the cost of modernising against the true cost. It is very rare that a truly strategic business plan can forgo investment in the software that enables that business. Ultimately, keeping your software and the ability to change software in the best shape possible must be seen as an investment and not a cost.
 
 
-> “Make the change easy, then make the easy change" - Kent Beck
+> “Make the change easy, then make the easy change." - Kent Beck
 
 Kent Beck's advice is as applicable at the highest level as it is at the code level. For software to be a strategic asset for business, it must be ready for the next change, and if it is not ready then we must make it ready for that change before making the change. Not working in this way leads to the slow decline that I mentioned earlier and "making the change easy" becomes more and more difficult.
  
