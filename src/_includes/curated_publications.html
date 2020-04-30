@@ -15,7 +15,7 @@
           <h3 class="card__title">{{ post.title }}</h3>
           <p class="card__description">{{post.description}}</p>
           <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
-            {% t publications.teaser-cta %}
+            {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
           </a>
         </article>
       {% endfor %}

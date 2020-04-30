@@ -8,17 +8,80 @@
   font-weight: 400;
 }
 
-@mixin freed-bold {
-  @include bold;
+@mixin freed {
   font-size: 28px;
   line-height: 38px;
 }
 
-@mixin freed-bold--responsive {
-  @include freed-bold;
+@mixin freed--responsive {
+  @include freed;
 
   @include medium-large-and-extra-large {
     font-size: 44px;
     line-height: 1.25;
   }
+}
+
+@mixin freed-bold {
+  @include bold;
+  @include freed;
+}
+
+@mixin freed-bold--responsive {
+  @include bold;
+  @include freed--responsive;
+}
+
+@mixin mercer {
+  font-size: 23px;
+  line-height: 33px;
+}
+
+@mixin mercer-bold {
+  @include bold;
+  @include mercer;
+}
+
+@mixin mercer-reg {
+  @include reg;
+  @include mercer;
+}
+
+@mixin base {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin base--responsive {
+  @include base;
+
+  @include medium-large-and-extra-large {
+    font-size: 28px;
+    line-height: 43px;
+  }
+}
+
+@mixin base-bold {
+  @include base;
+  @include bold;
+}
+
+@mixin base-bold--responsive {
+  @include base--responsive;
+  @include bold;
+
+  @include medium-large-and-extra-large {
+    font-size: 28px;
+    line-height: 43px;
+  }
+}
+
+@mixin base-reg {
+  @include base;
+  @include reg;
+}
+
+@mixin base-reg--responsive {
+  @include base--responsive;
+  @include reg;
 }
