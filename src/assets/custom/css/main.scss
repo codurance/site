@@ -1,7 +1,7 @@
 ---
 ---
 
-$site-base-url: "{{ site.baseurlxxx }}";
+$site-base-url: "{{ site.baseurl }}";
 
 @import "spacing";
 @import "breakpoints";
