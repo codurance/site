@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: what-is-software-modernisation
-title: What is Software Modernisation and why do we need it
+title: What is Software Modernisation and why do you want to do it?
 date: 2020-05-05 05:00:00 +00:00
 author: Mashooq Badar
 description: ToDo
