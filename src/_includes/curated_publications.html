@@ -10,12 +10,7 @@
       {% for post in posts limit: 5 %}
         <article class="cards-layout--card card">
           <a class="card--image-link" href="{{ post.url | prepend: site.baseurl }}">
-            <img
-              class="card--image"
-              src="{{post.image.src | prepend: site.baseurl}}"
-              alt="{{post.title}}"
-              width="200"
-            />
+            <span class="card--image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
           </a>
           <h3 class="card--title">{{ post.title }}</h3>
           <p class="card--description">{{post.description}}</p>
