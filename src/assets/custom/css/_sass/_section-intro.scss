@@ -3,12 +3,12 @@
   @include max-width;
 
   @include small {
-    padding-top: 71px;
-    padding-bottom: 64px;
+    padding-top: 70px;
+    padding-bottom: 65px;
   }
   @include medium {
     padding-top: 95px;
-    padding-bottom: 66px;
+    padding-bottom: 65px;
   }
   @include large-and-extra-large {
     padding-top: 145px;
@@ -21,11 +21,11 @@
   margin-top: 0;
 
   @include small {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @include medium-large-and-extra-large {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     text-align: center;
   }
 }
