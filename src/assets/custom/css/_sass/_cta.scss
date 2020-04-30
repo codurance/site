@@ -1,7 +1,7 @@
 @mixin cta {
   @include bold;
-  display: inline-block;
   font-size: 20px;
+  padding: 20px 35px;
 
   &,
   &:hover,
@@ -10,11 +10,11 @@
   }
 
   @include small {
-    padding: 20px 40px;
+    display: block;
   }
 
   @include medium-large-and-extra-large {
-    padding: 20px 30px;
+    display: inline-block;
   }
 }
 
