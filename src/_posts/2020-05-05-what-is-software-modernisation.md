@@ -3,11 +3,11 @@ layout: post
 asset-type: post
 name: what-is-software-modernisation
 title: What is Software Modernisation and why do you want to do it?
-title-es: Spanish Title TODO
+title-es: ¿Qué es Software Modernisation y por qué puedes necesitarlo?
 date: 2020-05-05 05:00:00 +00:00
 author: Mashooq Badar
 description: Software Modernisation is about ensuring that software is a strategic asset to enable your business and gain a competitive advantage. It is necessary when a legacy of tactical changes have resulted in software that is holding your business hostage.
-description-es: Spanish Description TODO
+description-es: Software Modernisation consiste en garantizar que el software sea un activo estratégico para habilitar en el negocio y obtener ventajas competitivas. Es necesario cuando un negocio se encuentra de manos atadas con el software por un legacy de cambios estrategicos /tacticos.
 
 image:
     src: /assets/custom/img/blog/2020-05-05-what-is-software-modernisation/what-is-soft-mod.jpg
