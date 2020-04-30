@@ -16,3 +16,5 @@ $site-base-url: "{{ site.baseurl }}";
 @import "section-intro";
 
 @import "software-mod-problems";
+@import "custom-softmod-features";
+@import "flexslider"
