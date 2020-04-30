@@ -1,11 +1,3 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
-/* SoftMod Section
-   backgroundimages set in custom-layout-2.scss
-   ------------- */
-
 /********************************
     Helpers - Text
 ********************************/
@@ -27,7 +19,7 @@
 }
 
 .text-coral {
-  color: #fa7268;
+  color: $coral;
 }
 
 .mx-width-600 {
