@@ -22,18 +22,3 @@
     line-height: 1.25;
   }
 }
-
-@mixin base--reg {
-  @include bold;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 1.5;
-
-  @include small {
-    font-size: 18px;
-  }
-
-  @include medium-large-and-extra-large {
-    font-size: 28px;
-  }
-}
