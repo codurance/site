@@ -183,44 +183,6 @@
     }
 }
 
-.bg-sheen {
-    position:relative;
-}
-
-.bg-sheen:before {
-    content:'';
-    background: rgb(252,249,241);
-    background: linear-gradient(34deg, rgba(252,249,241,1) 52%, rgba(252,244,244,1) 100%);
-    position: absolute;
-    width:100%;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    right: 0;
-}
-
-@media (min-width: 1200px) {
-
-    .bg-sheen:before {
-        right: 100px;
-    };
-
-    .bg-sheen:after {
-        content: '';
-        right: 100px;
-        background-color:#293341;
-        position: absolute;
-        width:100%;
-        height: 450px;
-        bottom: 0;
-        z-index: 0;
-        right: 0;
-        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/bg-slate-pattern-2.jpg');
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-    };
-}
-
 /********************************
     Helpers - Positioning
 ********************************/
@@ -300,7 +262,6 @@
 /********************************
     Component - HS Form
 ********************************/
-
 .sm-enquiry .hbspt-form,
 .sm-enquiry .hs-form-iframe {
     width: 100%!important;

@@ -1,19 +1,35 @@
 .curated-publications {
-  background-color: rgba(0, 255, 0, 0.1);
+  background: $sheen;
 }
 
-.curated-publications--intro {
-  background-color: rgba(0, 255, 0, 0.1);
+.curated-publications__cards {
+  @include medium-large-and-extra-large {
+    margin-bottom: -150px;
+  }
 }
 
-.curated-publications--cards {
-  background-color: rgba(0, 255, 0, 0.1);
+.curated-publications__cta-space {
+  @include lateral-spacing;
+  text-align: center;
+
+  @include small {
+    padding-bottom: 50px;
+  }
+  @include medium-large-and-extra-large {
+    background-color: #1e2631;
+    padding-top: 225px;
+    padding-bottom: 120px;
+  }
 }
 
-.curated-publications--card {
-  background-color: rgba(0, 255, 0, 0.1);
-}
+.curated-publications__cta {
+  margin-bottom: 30px;
+  margin-top: 30px;
 
-.curated-publications--cta {
-  background-color: rgba(0, 255, 0, 0.1);
+  @include small {
+    @include cta--secondary-dark;
+  }
+  @include medium-large-and-extra-large {
+    @include cta--secondary-light;
+  }
 }

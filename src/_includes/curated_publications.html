@@ -1,33 +1,30 @@
-<p>{% t publications.content-type %}</p>
-
 <section class="curated-publications">
-  <header class="curated-publications--intro section-intro">
-    <h2 class="section-intro--title">{{include.title}}</h2>
-    <p class="section-intro--description">{{include.description}}</p>
+  <header class="section-intro">
+    <h2 class="section-intro__title">{{include.title}}</h2>
+    <p class="section-intro__description">{{include.description}}</p>
   </header>
 
-  <div class="curated-publications--cards">
-    {% assign tag = {{include.tag}} %}
-    {% assign articles = site.posts | where: 'tags', tag %}
-    {% for post in articles limit: 4 %}
-      <article class="curated-publications--card card">
-        <a class="card--image-link" href="{{ post.url | prepend: site.baseurl }}">
-          <img
-            class="card--image"
-            src="{{post.image.src | prepend: site.baseurl}}"
-            alt="{{post.title}}"
-            width="200"
-          />
-        </a>
-        <h3 class="card--title">{{ post.title }}</h3>
-        <p class="card--description">{{post.description}}</p>
-        <a class="card--cta__text" href="{{ post.url | prepend: site.baseurl }}">
-          {% t publications.teaser-cta %}
-        </a>
-      </article>
-    {% endfor %}
+  <div class="curated-publications__cards cards-layout">
+    <div class="cards-layout__inner">
+      {% assign posts = site.posts | where: 'tags', include.tag %}
+      {% for post in posts limit: 5 %}
+        <article class="cards-layout__card card">
+          <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
+            <span class="card__image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
+          </a>
+          <h3 class="card__title">{{ post.title }}</h3>
+          <p class="card__description">{{post.description}}</p>
+          <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
+            {% t publications.teaser-cta %}
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   </div>
-  <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ tag | downcase | replace: ' ','-'}}" class="curated-publications--cta cta__secondary-light">
-    {% t publications.view-all %}
-  </a>
+
+  <footer class="curated-publications__cta-space">
+    <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications__cta">
+      {% t publications.view-all %}
+    </a>
+  </footer>
 </section>

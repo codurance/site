@@ -1,11 +1,37 @@
 .section-intro {
-  background-color: rgba(255, 0, 255, 0.1);
+  @include lateral-spacing;
+  @include max-width;
+
+  @include small {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+  @include medium {
+    padding-top: 95px;
+    padding-bottom: 65px;
+  }
+  @include large-and-extra-large {
+    padding-top: 145px;
+    padding-bottom: 75px;
+  }
 }
 
-.section-intro--title {
-  background-color: rgba(255, 0, 255, 0.1);
+.section-intro__title {
+  @include freed-bold--responsive;
+  margin-top: 0;
+
+  @include small {
+    margin-bottom: 25px;
+  }
+
+  @include medium-large-and-extra-large {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
-.section-intro--description {
-  background-color: rgba(255, 0, 255, 0.1);
+.section-intro__description {
+  @include medium-large-and-extra-large {
+    text-align: center;
+  }
 }
