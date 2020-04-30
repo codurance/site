@@ -1,10 +1,7 @@
 ---
 ---
-{% if site.baseurl %}
-    $site-base-url: {{ site.baseurl }};
-{% else %}
-    $site-base-url: '';
-{% endif %}
+
+$site-base-url: "{{ site.baseurlxxx }}";
 
 @import "spacing";
 @import "breakpoints";
