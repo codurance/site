@@ -120,26 +120,19 @@
     </div>
 </section>
 
-
 {% if site.data.toggles.feature-sm-blog-in-page-banner == 'on' %}
-
-    <div class="container section g-pt-200 g-pb-100"> 
-        <div>
-        {% include software_modernisation_in-page_banner--publications.html %}
-        </div>
-    </div>
-
+    {% assign posttags = page.tags %}
+    {% for posttag in posttags %}
+        {% if posttag == 'software modernisation' %}
+            <div class="container section g-pt-200 g-pb-100">
+                <div>
+                    {% include software_modernisation_in-page_banner--publications.html %}
+                </div>
+            </div>
+            {% break %}
+        {% endif %}
+    {% endfor %}
 {% endif %}
-
-
-
-
-
-
-
-
-
-
 
 <section class="container g-pt-50 blog">
     <div class="row justify-content-center">
