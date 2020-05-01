@@ -23,8 +23,8 @@
   </div>
 
   <footer class="curated-publications__cta-space">
-    <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications__cta">
-      {% t publications.view-all %}
-    </a>
+    {% assign href = {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }} %}
+    {% assign text = site.translations[site.lang].publications.view-all %}
+    {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
   </footer>
 </section>
