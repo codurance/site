@@ -5,6 +5,9 @@ date: 2012-08-14 22:50:42+00:00
 layout: post
 slug: encouraging-collaboration-via-design-committee
 title: Encouraging Collaboration via Design Committee
+title-es: Fomentar la colaboración a través del Design Committee
+description: Agile promotes the idea that the design of the system emerges and evolves throughout its life and therefore is the result of the consensus of the teams. In large projects with multiple teams, it is recommended to work with a Design Committee to facilitate decision making.
+description-es: Agile promueve la idea de que el diseño del sistema emerge y evoluciona a lo largo de su vida y por tanto es el resultado del consenso por parte de los equipos. En proyectos grandes con múltiples equipos se recomienda trabajar con un Design Committee para facilitar la toma de decisión.
 wordpress_id: 201
 categories:
 - process

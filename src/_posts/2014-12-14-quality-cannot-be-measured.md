@@ -2,6 +2,9 @@
 layout: post
 name: quality-cannot-be-measured
 title: Code quality cannot be measured
+title-es: La calidad del código no puede medirse
+description: How can we measure software quality? Quality is contextual and subject to comparisons. No code analysis tool guarantees its quality and although it cannot be measured, there are indications to know if we are dealing with a quality code.
+description-es: ¿Cómo podemos medir la calidad del software?La calidad es contextual y está sujeta a comparaciones. Ninguna herramienta de análisis de código garantiza su calidad y aunque no se puede medir existen indicios para saber si estamos ante un código de calidad.
 date: 2014-12-14 00:27:00 +00:00
 author: Sandro Mancuso
 image:

@@ -2,6 +2,9 @@
 layout: post
 name: project-sizing
 title: Project Sizing
+title-es: Estimación de proyecto
+description: Many times clients request an approximate figure to assess whether the project is economically feasible. Our estimates are based on a well-understood scope, but the scope evolves throughout the project. Our goal is to provide them with a viable product within the budget that, most of the time, they have established.
+description-es: Muchas veces los clientes solicitan una cifra aproximada para que valorar si el proyecto es factible en términos económicos. Nuestras estimaciones se basan en un alcance bien entendido, pero el alcance evoluciona a lo largo del proyecto. Nuestro objetivo es proporcionarles un producto viable dentro del presupuesto que, la mayor parte de las veces, tienen establecido.
 date: 2015-03-23 14:30:00 +00:00
 author: Mashooq Badar
 image:

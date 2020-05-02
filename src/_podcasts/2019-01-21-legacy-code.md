@@ -3,6 +3,8 @@ author: Jorge Gueorguiev Garcia
 asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-8
+title: Codurance Talks - Episode 8 - Legacy Code
+description: In this episode of Codurance Talks, our craftspeople discuss legacy code, what makes it hard to maintain, and strategies for improvement.  
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 8 - Legacy Code"

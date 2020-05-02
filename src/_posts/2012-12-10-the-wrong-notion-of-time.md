@@ -2,6 +2,9 @@
 layout: post
 name: the-wrong-notion-of-time
 title: The Wrong Notion of Time
+title-es: La equivocada noción del tiempo
+description: Our job is to deliver solutions that meet the needs of our customers and make it easy to iterate quickly when needed. Good time management and estimates are necessary to meet those expectations.
+description-es: Nuestro trabajo es entregar soluciones que satisfagan las necesidades de nuestros clientes y que sea fácil hacer iteraciones rápidamente cuando sea necesario. Es necesario hacer una buena gestión del tiempo y las estimaciones para cumplir con esas expectativas.
 date: 2012-12-10 23:38:00.000000000 +00:00
 author: Sandro Mancuso
 image:

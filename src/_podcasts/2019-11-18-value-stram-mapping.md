@@ -3,6 +3,10 @@ author: Jorge Gueorguiev Garcia
 asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-18
+title: Codurance Talks - Episode 18 - Value Stream Mapping
+title-es: Codurance Talks - Episode 18 - Mapeo de flujo de valor
+description: In this episode of Codurance Talks, our craftspeople discuss value stream mapping. Our guests deep dive into what value stream mapping is and how it is applied to both business strategy and software development.
+description-es: En este episodio de Codurance Talks, nuestros craftspeople debaten sobre cómo mapear el flujo de valor. Nuestros invitados profundizan en qué es el mapeo de flujo de valor y cómo se aplica tanto a la estrategia de negocio como al desarrollo de software.
 image: 
   src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks - Episode 18 - Value Stream Mapping"
