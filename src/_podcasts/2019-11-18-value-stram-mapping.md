@@ -15,12 +15,13 @@ date: 2019-11-18 06:00:00 +00:00
 tags:
 - software modernisation
 ---
-
+</br>
+</br>
 In this episode of Codurance Talks, our craftspeople discuss value stream mapping. Our guests' deep dive into what value stream mapping is and how it is applied to both business strategy and software development. They also cover where value stream mapping originated, the different characteristics, the best way to reduce bottlenecks, and much more.
 
-Our guests on this episode are [Mash Badar](https://codurance.com/publications/author/mashooq-badar/) Co-Found of Codurance , <a href="https://github.com/christopher-bimson" target="_blank">Chris Bimson</a> and [Jorge Gueorguiev García](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) seasoned craftspeople and our host seasoned craftswoman [Solange Gasengayire](https://codurance.com/publications/author/solange-u.-gasengayire/).
+Our guests on this episode are <a href="https://codurance.com/publications/author/mashooq-badar/" target="_blank">Mash Badar</a> Co-Founder of Codurance, <a href="https://github.com/christopher-bimson" target="_blank">Chris Bimson</a> and <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia/" target="_blank">Jorge Gueorguiev García</a> seasoned craftspeople and our host seasoned craftswoman <a href="https://codurance.com/publications/author/solange-u.-gasengayire/" target="_blank">Solange Gasengayire</a>.
 
-Vocabulary: </br>
+**Vocabulary:** </br>
 Lead time: One of the most important things, the time it takes for goods to enter your process and for the value or goods to come out of the process. </br>
 Cycle time: How long a particular stage takes. </br>
 Wait time: The time in between processes. </br>
