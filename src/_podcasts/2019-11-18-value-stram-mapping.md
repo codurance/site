@@ -16,11 +16,17 @@ tags:
 - software modernisation
 ---
 
-On this episode [Solange](https://codurance.com/publications/author/solange-u.-gasengayire/) hosts a talk around Value Stream Mapping. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts, while [Mash](https://codurance.com/publications/author/mashooq-badar/) and [Chris](https://github.com/christopher-bimson) provide the knowledge.
+In this episode of Codurance Talks, our craftspeople discuss value stream mapping. Our guests' deep dive into what value stream mapping is and how it is applied to both business strategy and software development. They also cover where value stream mapping originated, the different characteristics, the best way to reduce bottlenecks, and much more.
 
-Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+Our guests on this episode are [Mash Badar](https://codurance.com/publications/author/mashooq-badar/) Co-Found of Codurance , <a href="https://github.com/christopher-bimson" target="_blank">Chris Bimson</a> and [Jorge Gueorguiev García](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) seasoned craftspeople and our host seasoned craftswoman [Solange Gasengayire](https://codurance.com/publications/author/solange-u.-gasengayire/).
 
+Vocabulary: </br>
+Lead time: One of the most important things, the time it takes for goods to enter your process and for the value or goods to come out of the process. </br>
+Cycle time: How long a particular stage takes. </br>
+Wait time: The time in between processes. </br>
+Queue time: Each stage would most likely not be synchronized with each other, so the previous stage is producing and is queueing up if the next stage is slower.
 
-Music: ["Sweeter Vermouth" by Kevin MacLeod](https://incompetech.com/music/royalty-free/music.html) is licensed under [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/)
-
+<sub>
+Photo: <a href="https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/" target="_blank">Prairie Dog</a> by DigiPD is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">CC0</a><br/>
+Music: <a href="https://incompetech.com/music/royalty-free/music.html" target="_blank">"Sweeter Vermouth" by Kevin MacLeod</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>
 </sub>
