@@ -2,10 +2,10 @@
   <div class="sm-cta-block__lh"></div>
   <div class="sm-cta-block__rh bg-coral">
     <div>
-      <p class="text-center text-white h4">{% t software-modernisation.home-page-banner-text %}</p>
-      <a class="btn btn-more btn--blue btn--wide-mobile text-center" href="{{ '/software-modernisation/' | prepend: site.baseurl }}">
-        {% t software-modernisation.home-page-banner-link %}
-      </a>
+      <p class="text-center text-white h4">{% t software-modernisation.home-page-banner-text %}</p>  
+      {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
+      {% assign text = site.translations[site.lang].software-modernisation.home-page-banner-link %}
+      {% include cta_primary_blue_link.html class="text-center" href=href text=text %}
     </div>
   </div>
 </div>

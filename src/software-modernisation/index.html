@@ -317,9 +317,9 @@ metarobots: index,follow
 
   <div class="container-slim center bg-coral bg-compass-cta g-px-25 g-py-50 text-center g-mt-neg100--desk">
     <p class="lead mx-width-600 text-white g-pb-25">{% t software-modernisation.compassCTA-subheading %}</p>
-    <a class="btn btn-more btn--wide-mobile btn--blue" target="blank" href="http://compass.codurance.com">
-      {% t software-modernisation.compassCTA-button %}
-    </a>
+      {% assign href = "http://compass.codurance.com" %}
+      {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
+      {% include cta_primary_blue_link.html class="text-center" href=href text=text target="blank" %} 
   </div>
 
   <div id="get-in-touch" class="software-modernisation__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
