@@ -800,9 +800,11 @@ software-modernisation:
 
   hubspot-form-id: 33a91f21-af06-460a-aa1d-9718b278a83e
 
+  in-page-banner-publications-title: ¿Te ha parecido interesante?
+  in-page-banner-publications-text: Descubre otros contenidos relacionados con Software Modernisation
+  in-page-banner-publications-link: Te puede interesar
+
 curated-publications:
   softmod:
     intro-title: Software Modernisation Publications
     intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna sed felis semper
-    
-

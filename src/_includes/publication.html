@@ -120,6 +120,16 @@
     </div>
 </section>
 
+{% if site.data.toggles.feature-sm-blog-in-page-banner == 'on' %}
+    {% assign posttags = page.tags %}
+    {% for posttag in posttags %}
+        {% if posttag == 'software modernisation' %}
+            {% include software_modernisation_in-page_banner--publications.html %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
 <section class="container g-pt-50 blog">
     <div class="row justify-content-center">
         <div class="col-lg-9">
@@ -129,6 +139,7 @@
         </div>
     </div>
 </section>
+
 
 {% include related_publications.html %}
 
