@@ -124,11 +124,7 @@
     {% assign posttags = page.tags %}
     {% for posttag in posttags %}
         {% if posttag == 'software modernisation' %}
-            <div class="container section g-pt-200 g-pb-100">
-                <div>
-                    {% include software_modernisation_in-page_banner--publications.html %}
-                </div>
-            </div>
+            {% include software_modernisation_in-page_banner--publications.html %}
             {% break %}
         {% endif %}
     {% endfor %}
