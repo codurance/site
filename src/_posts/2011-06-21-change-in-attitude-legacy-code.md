@@ -2,7 +2,10 @@
 author: Sandro Mancuso
 layout: post
 name: change-in-attitude-legacy-code
-title: "A change in attitude - Legacy code"
+title: A change in attitude - Legacy code
+title-es: Un cambio de actitud - Legacy code
+description: Working with legacy code is like solving a great puzzle. Everyone's attitude when facing this challenge will make the difference between working with legacy code or not being rewarding. Software Modernisation is a very interesting challenge with a good attitude to solve it.
+description-es: Trabajar con código heredado es como resolver un gran rompecabezas. La actitud de cada uno al enfrentarnos a ese reto marcará la diferencia entre que el trabajo con legacy code sea o no gratificante. Software Modernisation es un desafío muy interesante con una buena actitud para resolverlo.
 date: 2011-06-21 03:31:00 +01:00
 tags:
 - software modernisation

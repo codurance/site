@@ -2,7 +2,10 @@
 author: Sandro Mancuso
 layout: post
 name: the-best-approach-to-software
-title: "The best approach to software development"
+title: The best approach to software development
+title-es: El mejor enfoque para el desarrollo de software
+description: How the understanding of the best way to approach software development has evolved over the years. There is no single answer, but there are certain technologies, methodologies and techniques that are more appropriate for each context.
+description-es: Cómo ha evolucionado a lo largo de los años la forma de entender cuál es la mejor manera de enfocar el desarrollo de software. No hay una única respuesta, pero sí que existen ciertas tecnologías, metodologías y técnicas más adecuadas para cada contexto.
 date: 2012-08-15 04:08:00 +01:00
 tags:
 - software modernisation

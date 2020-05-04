@@ -1,7 +1,10 @@
 ---
 layout: post
 name: becoming-evergreen
-title: 'Becoming Evergreen'
+title: Becoming Evergreen
+title-es: Convertirse en Evergreen
+description: If your systems are in a situation where consistency and coupling are not correct, or deliveries take forever, it is time to take action and make decisions.
+description-es: Si sus sistemas se encuentran en una situación en la que la coherencia y el coupling no son correctos, o las entregas implican una eternidad, es el momento de tomar medidas y decisiones.
 date: 2015-08-05 21:00:00 +01:00
 author: Steve Lydford
 image:

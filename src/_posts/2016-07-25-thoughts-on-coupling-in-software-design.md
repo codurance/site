@@ -2,8 +2,11 @@
 layout: post
 name: Thoughts on Coupling in Software Design
 title: Thoughts on Coupling in Software Design
+title-es: Reflexiones sobre Coupling en el diseño de software
 date: 2016-07-25 10:00:00 +00:00
 author: Ioan Fagarasan
+description: Software coupling is inevitable, but achieving low copling should be one of the main goals in system design. In this way individual modules can be more easily modified and errors can be reported much more easily and corrected faster.
+description-es: El coupling en software es inevitable pero conseguir un copling bajo debería ser uno de los objetivos principales en el diseño del sistema. De ese modo los módulos individuales podrán modificarse más fácilmente y los errores ppodrán señalarse con mucha más facilidad y corregirse más rápido.
 image:
     src: /assets/custom/img/blog/2016-07-25-thoughts-on-coupling-in-software-design.png
 alias: [/2016/07/25/thoughts-on-coupling-in-software-design]
