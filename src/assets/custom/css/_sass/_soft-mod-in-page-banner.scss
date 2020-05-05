@@ -18,12 +18,12 @@
 }
 
 .soft-mod-cta-block__main {
+  @include lateral-spacing;
   align-items: center;
   background-color: $coral;
   display: flex;
   height: 400px;
   justify-content: center;
-  padding: 0 1.5rem;
   text-align: center;
 
   @include medium-large-and-extra-large {
