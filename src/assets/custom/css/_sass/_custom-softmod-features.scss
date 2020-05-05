@@ -215,26 +215,6 @@
 }
 
 /********************************
-    Component - Buttons
-********************************/
-
-.btn--coral {
-  background-color: rgba(251, 114, 104, 1);
-
-  &:hover {
-    background-color: rgba(251, 114, 104, 0.8);
-    transition: all 0.3s ease;
-    color: #ffffff;
-  }
-}
-
-@media (max-width: 587px) {
-  .btn--wide-mobile {
-    width: 100%;
-  }
-}
-
-/********************************
     Component - HS Form
 ********************************/
 .sm-enquiry .hbspt-form,
@@ -552,13 +532,11 @@
   position: relative;
   height: 100%;
 }
-.case-studies__case-text-container > .btn {
+.case-studies__case-button {
+  bottom: 10px;
+  left: 10px;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  bottom: 1rem;
+  right: 10px;
 }
 
 @media (max-width: 1199px) {
