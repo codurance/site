@@ -25,6 +25,23 @@
   transition: all 0.3s ease;
 }
 
+@mixin primary-coral {
+  background-color: $coral;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $coral--light;
+    color: #ffffff;
+  }
+}
+
+.cta--primary-coral {
+  @include cta;
+  @include primary;
+  @include primary-coral;
+}
+
 @mixin primary-navy {
   background-color: $navy;
   color: #ffffff;

@@ -25,9 +25,9 @@ metarobots: index,follow
         <p class="g-pt-10">
           {% t software-modernisation.hero-introduction %}
         </p>
-        <a class="btn btn-more btn--coral btn--wide-mobile text-center" href="#get-in-touch">
-          {% t software-modernisation.hero-cta %}
-        </a>
+        {% assign href = "#get-in-touch" %}
+        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+        {% include cta_primary_link.html color='coral' href=href text=text %} 
       </div>
     </div>
     <div class="sm-hero__grid__grid-item sm-hero__grid__grid-item--intro-image">
