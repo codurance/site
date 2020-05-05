@@ -1,0 +1,37 @@
+.soft-mod-in-page-banner {
+  min-height: 400px;
+}
+
+.soft-mod-cta-block__image {
+  @include small {
+    display: none;
+  }
+
+  @include medium-large-and-extra-large {
+    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-cta.jpg");
+    background-position: center;
+    background-size: cover;
+    float: left;
+    height: 400px;
+    width: 50%;
+  }
+}
+
+.soft-mod-cta-block__main {
+  align-items: center;
+  background-color: $coral;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  @include medium-large-and-extra-large {
+    float: left;
+    width: 50%;
+  }
+}
+
+.soft-mod-cta-block__inner {
+  max-width: 500px;
+}
