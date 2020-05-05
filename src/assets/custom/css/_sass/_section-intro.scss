@@ -31,6 +31,8 @@
 }
 
 .section-intro__description {
+  @include base-reg--responsive;
+
   @include medium-large-and-extra-large {
     text-align: center;
   }

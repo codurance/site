@@ -1,4 +1,4 @@
-<section class="curated-publications">
+<section class="curated-publications {{include.class}}">
   <header class="section-intro">
     <h2 class="section-intro__title">{{include.title}}</h2>
     <p class="section-intro__description">{{include.description}}</p>
@@ -15,7 +15,7 @@
           <h3 class="card__title">{{ post.title }}</h3>
           <p class="card__description">{{post.description}}</p>
           <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
-            {% t publications.teaser-cta %}
+            {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
           </a>
         </article>
       {% endfor %}
@@ -23,8 +23,8 @@
   </div>
 
   <footer class="curated-publications__cta-space">
-    <a href="{{site.baseurl}}/{{site.tag_page_dir}}/{{ include.tag | slugify}}" class="curated-publications__cta">
-      {% t publications.view-all %}
-    </a>
+    {% assign href = {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }} %}
+    {% assign text = site.translations[site.lang].publications.view-all %}
+    {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
   </footer>
 </section>

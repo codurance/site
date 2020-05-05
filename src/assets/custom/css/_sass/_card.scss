@@ -10,25 +10,71 @@
 }
 
 .card__image {
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
   display: block;
   height: 0;
+  margin-bottom: 40px;
   padding-top: 230 / 370 * 100%;
 }
 
+$card-lateral-internal-spacing: 30px;
+
 .card__title {
-  @include freed-bold;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  height: 75px;
+  @include mercer-bold;
+  height: 70px;
+  margin: 0 $card-lateral-internal-spacing 20px;
   overflow: hidden;
 }
 
 .card__description {
-  background-color: rgba(0, 255, 0, 0.1);
+  @include base-reg;
+  height: 55px;
+  margin: 0 $card-lateral-internal-spacing 45px;
+  overflow: hidden;
 }
 
 .card__cta--text {
-  background-color: rgba(0, 255, 0, 0.1);
+  @include base-bold;
+  color: $grey-dark;
+  height: 25px;
+  margin: 0 $card-lateral-internal-spacing 35px;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  .card__cta-decoration {
+    left: 10px;
+    position: relative;
+    top: -5px;
+    width: 25px;
+
+    &,
+    &:after,
+    &:before {
+      background-color: $coral;
+      height: 2px;
+      display: inline-block;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 9px;
+    }
+
+    &:after {
+      top: -4px;
+      transform: rotate(45deg);
+    }
+    &:before {
+      bottom: -4px;
+      transform: rotate(-45deg);
+    }
+  }
 }
