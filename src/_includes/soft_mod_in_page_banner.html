@@ -2,7 +2,7 @@
   <div class="soft-mod-cta-block__image"></div>
   <div class="soft-mod-cta-block__main">
     <div class="soft-mod-cta-block__inner">
-      <p class="text-center text-white h4">{% t software-modernisation.home-page-banner-text %}</p>  
+      <p class="soft-mod-cta-block__description">{% t software-modernisation.home-page-banner-text %}</p>  
       {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
       {% assign text = site.translations[site.lang].software-modernisation.home-page-banner-link %}
       {% include cta_primary_blue_link.html href=href text=text %}

@@ -22,6 +22,11 @@
   }
 }
 
+@mixin freed-reg {
+  @include reg;
+  @include freed;
+}
+
 @mixin freed-bold {
   @include bold;
   @include freed;
