@@ -228,17 +228,6 @@
   }
 }
 
-.btn--blue {
-  background-color: rgba(15, 64, 113, 1);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: rgba(15, 64, 113, 0.8);
-    color: #ffffff;
-    transition: all 0.3s ease;
-  }
-}
-
 @media (max-width: 587px) {
   .btn--wide-mobile {
     width: 100%;
