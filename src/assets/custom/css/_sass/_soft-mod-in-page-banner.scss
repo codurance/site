@@ -36,8 +36,14 @@
   max-width: 500px;
 }
 
+.soft-mod-cta-block__title {
+  @include mercer-bold;
+  color: white;
+  margin: 0 0 10px;
+}
+
 .soft-mod-cta-block__description {
   @include base-reg;
   color: white;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
 }
