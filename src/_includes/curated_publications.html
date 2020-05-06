@@ -19,8 +19,10 @@
           <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
             <span class="card__image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
           </a>
-          <h3 class="card__title">{{ article_title }}</h3>
-          <p class="card__description">{{ article_description }}</p>
+          <div class="card__main">
+            <h3 class="card__title">{{ article_title }}</h3>
+            <p class="card__description">{{ article_description }}</p>
+          </div>
           <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
             {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
           </a>

@@ -14,31 +14,31 @@
   background-size: cover;
   display: block;
   height: 0;
-  margin-bottom: 40px;
   padding-top: 230 / 370 * 100%;
 }
 
-$card-lateral-internal-spacing: 30px;
+.card__main {
+  padding: 30px;
+  flex-grow: 1;
+}
 
 .card__title {
   @include mercer-bold;
-  height: 70px;
-  margin: 0 $card-lateral-internal-spacing 20px;
+  margin: 0 0 20px;
+  min-height: 55px;
   overflow: hidden;
 }
 
 .card__description {
   @include base-reg;
-  height: 55px;
-  margin: 0 $card-lateral-internal-spacing 45px;
+  margin: 0 0 45px;
   overflow: hidden;
 }
 
 .card__cta--text {
   @include base-bold;
   color: $grey-dark;
-  height: 25px;
-  margin: 0 $card-lateral-internal-spacing 35px;
+  padding: 0 30px 30px;
 
   &,
   &:hover,
