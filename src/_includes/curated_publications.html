@@ -21,7 +21,9 @@
           </a>
           <div class="card__main">
             <h3 class="card__title">{{ article_title }}</h3>
-            <p class="card__description">{{ article_description }}</p>
+            <div class="card__description-fade-out">
+              <p class="card__description">{{ article_description }}</p>
+            </div>
           </div>
           <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
             {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>

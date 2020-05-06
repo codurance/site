@@ -29,10 +29,42 @@
   overflow: hidden;
 }
 
+$line-height: 28px;
+$description-max-height: 7 * $line-height;
+
+.card__description-fade-out {
+  overflow: hidden;
+  max-height: $description-max-height;
+
+  &::before {
+    content: "";
+    float: left;
+    height: $description-max-height;
+    width: 1px;
+  }
+  &::after {
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255)
+    );
+    content: "";
+    float: right;
+    height: $line-height;
+    left: 100%;
+    margin-left: -50%;
+    padding-right: 1px;
+    position: relative;
+    top: #{$description-max-height - $line-height};
+    width: 50%;
+  }
+}
+
 .card__description {
   @include base-reg;
-  margin: 0 0 45px;
-  overflow: hidden;
+  float: right;
+  width: 100%;
+  margin: 0 0 0 -1px;
 }
 
 .card__cta--text {
