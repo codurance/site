@@ -22,14 +22,25 @@
   flex-grow: 1;
 }
 
+$line-height: 28px;
+
 .card__title {
+  $line-height: 28px;
   @include mercer-bold;
   margin: 0 0 20px;
-  min-height: 55px;
   overflow: hidden;
+
+  @include small-and-medium {
+    min-height: 2 * $line-height;
+  }
+  @include large {
+    min-height: 3 * $line-height;
+  }
+  @include extra-large {
+    min-height: 2 * $line-height;
+  }
 }
 
-$line-height: 28px;
 $description-max-height: 7 * $line-height;
 
 .card__description-fade-out {
