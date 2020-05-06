@@ -192,26 +192,8 @@
 .container-slim {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-@media (min-width: 768px) {
-  .container-slim {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container-slim {
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-slim {
-    max-width: 800px;
-  }
+  @include max-width--column;
 }
 
 /********************************

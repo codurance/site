@@ -1,6 +1,6 @@
 .cards-layout {
   @include lateral-spacing;
-  @include max-width;
+  @include max-width--out-there;
 }
 
 .cards-layout__inner {
