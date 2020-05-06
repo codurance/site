@@ -14,31 +14,63 @@
   background-size: cover;
   display: block;
   height: 0;
-  margin-bottom: 40px;
   padding-top: 230 / 370 * 100%;
 }
 
-$card-lateral-internal-spacing: 30px;
+.card__main {
+  padding: 30px;
+  flex-grow: 1;
+}
 
 .card__title {
   @include mercer-bold;
-  height: 70px;
-  margin: 0 $card-lateral-internal-spacing 20px;
+  margin: 0 0 20px;
+  min-height: 55px;
   overflow: hidden;
+}
+
+$line-height: 28px;
+$description-max-height: 7 * $line-height;
+
+.card__description-fade-out {
+  overflow: hidden;
+  max-height: $description-max-height;
+
+  &::before {
+    content: "";
+    float: left;
+    height: $description-max-height;
+    width: 1px;
+  }
+  &::after {
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255)
+    );
+    content: "";
+    float: right;
+    height: $line-height;
+    left: 100%;
+    margin-left: -50%;
+    padding-right: 1px;
+    position: relative;
+    top: #{$description-max-height - $line-height};
+    width: 50%;
+  }
 }
 
 .card__description {
   @include base-reg;
-  height: 55px;
-  margin: 0 $card-lateral-internal-spacing 45px;
-  overflow: hidden;
+  float: right;
+  width: 100%;
+  margin: 0 0 0 -1px;
 }
 
 .card__cta--text {
   @include base-bold;
   color: $grey-dark;
-  height: 25px;
-  margin: 0 $card-lateral-internal-spacing 35px;
+  padding: 0 30px 30px;
 
   &,
   &:hover,

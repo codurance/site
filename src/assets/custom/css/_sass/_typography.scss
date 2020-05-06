@@ -8,17 +8,21 @@
   font-weight: 400;
 }
 
+@mixin dudler {
+  font-size: 40px;
+  line-height: 2.5;
+}
+
 @mixin freed {
   font-size: 28px;
-  line-height: 38px;
+  line-height: 1.75;
 }
 
 @mixin freed--responsive {
   @include freed;
 
   @include medium-large-and-extra-large {
-    font-size: 44px;
-    line-height: 1.25;
+    @include dudler;
   }
 }
 
@@ -38,13 +42,26 @@
 }
 
 @mixin mercer {
-  font-size: 23px;
-  line-height: 33px;
+  font-size: 21px;
+  line-height: 1.313;
+}
+
+@mixin mercer-responsive {
+  @include mercer;
+
+  @include medium-large-and-extra-large {
+    @include freed;
+  }
 }
 
 @mixin mercer-bold {
   @include bold;
   @include mercer;
+}
+
+@mixin mercer-bold--responsive {
+  @include bold;
+  @include mercer-responsive;
 }
 
 @mixin mercer-reg {
@@ -61,8 +78,7 @@
   @include base;
 
   @include medium-large-and-extra-large {
-    font-size: 28px;
-    line-height: 43px;
+    @include mercer;
   }
 }
 
@@ -76,8 +92,7 @@
   @include bold;
 
   @include medium-large-and-extra-large {
-    font-size: 28px;
-    line-height: 43px;
+    @include mercer;
   }
 }
 

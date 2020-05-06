@@ -3,6 +3,10 @@
   @include max-width;
 }
 
+.cards-layout__inner {
+  display: flex;
+}
+
 @include small {
   $max-width-of-cards: 370px;
 
@@ -19,6 +23,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
   }
+
   .cards-layout__inner {
     max-width: $total-max-width-of-cards + $total-width-of-spacing;
     width: calc(
@@ -28,6 +33,7 @@
         ) + #{$total-width-of-spacing}
     );
   }
+
   .cards-layout__card {
     float: left;
     margin-left: $spacing-around-cards / 2;
@@ -49,7 +55,6 @@
   $space-between-cards: 27px;
 
   .cards-layout__inner {
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -72,12 +77,6 @@
     &:nth-child(5) {
       display: none;
     }
-  }
-}
-
-@include large-and-extra-large {
-  .cards-layout__inner {
-    display: flex;
   }
 }
 
