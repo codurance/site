@@ -8,12 +8,19 @@
     <div class="cards-layout__inner">
       {% assign posts = site.posts | where: 'tags', include.tag %}
       {% for post in posts limit: 5 %}
+        {% if site.lang == "es" %}
+          {% assign article_title = post.title-es %}
+          {% assign article_description = post.description-es %}
+        {% else %}
+          {% assign article_title = post.title %}
+          {% assign article_description = post.description %}
+        {% endif %}
         <article class="cards-layout__card card">
           <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
             <span class="card__image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
           </a>
-          <h3 class="card__title">{{ post.title }}</h3>
-          <p class="card__description">{{post.description}}</p>
+          <h3 class="card__title">{{ article_title }}</h3>
+          <p class="card__description">{{ article_description }}</p>
           <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
             {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
           </a>
