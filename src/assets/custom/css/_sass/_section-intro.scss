@@ -1,19 +1,8 @@
 .section-intro {
   @include lateral-spacing;
   @include max-width;
-
-  @include small {
-    padding-top: 70px;
-    padding-bottom: 65px;
-  }
-  @include medium {
-    padding-top: 95px;
-    padding-bottom: 65px;
-  }
-  @include large-and-extra-large {
-    padding-top: 145px;
-    padding-bottom: 75px;
-  }
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-intro__title {

@@ -11,14 +11,10 @@
 .curated-publications__cta-space {
   @include lateral-spacing;
   text-align: center;
-
-  @include small {
-    padding-bottom: 50px;
-  }
+  padding-bottom: 50px;
   @include medium-large-and-extra-large {
     background-color: #1e2631;
-    padding-top: 225px;
-    padding-bottom: 120px;
+    padding-top: 200px;
   }
 }
 
