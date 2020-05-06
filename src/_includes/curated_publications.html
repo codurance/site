@@ -30,7 +30,9 @@
   </div>
 
   <footer class="curated-publications__cta-space">
-    {% assign href = {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }} %}
+    {% capture href %}
+      {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }}
+    {% endcapture %}
     {% assign text = site.translations[site.lang].publications.view-all %}
     {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
   </footer>
