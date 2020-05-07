@@ -25,7 +25,6 @@
 $line-height: 28px;
 
 .card__title {
-  $line-height: 28px;
   @include mercer-bold;
   margin: 0 0 20px;
   overflow: hidden;
