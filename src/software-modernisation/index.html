@@ -27,7 +27,7 @@ metarobots: index,follow
         </p>
         {% assign href = "#get-in-touch" %}
         {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %} 
+        {% include cta_primary_link.html color='coral' href=href text=text %}
       </div>
     </div>
     <div class="sm-hero__grid__grid-item sm-hero__grid__grid-item--intro-image">
@@ -328,7 +328,7 @@ metarobots: index,follow
     <p class="lead mx-width-600 text-white g-pb-25">{% t software-modernisation.compassCTA-subheading %}</p>
     {% assign href = "http://compass.codurance.com" %}
     {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
-    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %} 
+    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
   </div>
 
   <div id="get-in-touch" class="software-modernisation__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
@@ -352,9 +352,7 @@ metarobots: index,follow
   </div>
 </section>
 
-{% if site.data.toggles.feature-sm-blogs == 'on' %}
-  {% include software_modernisation_curated_publications.html %}
-{% endif %}
+{% include software_modernisation_curated_publications.html %}
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
