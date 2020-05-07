@@ -15,8 +15,8 @@ $site-base-url: "{{ site.baseurl }}";
 @import "curated-publications";
 @import "section-intro";
 
-@import "software-modernisation";
+@import "soft-mod";
 @import "soft-mod-in-page-banner";
-@import "software-mod-problems";
-@import "custom-softmod-features";
+@import "soft-mod-problems";
+@import "soft-mod-misc";
 @import "flexslider";

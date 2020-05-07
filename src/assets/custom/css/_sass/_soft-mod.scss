@@ -1,12 +1,12 @@
 body:not(.feature-soft-mod-webinar) {
-  .software-modernisation__form-holder {
+  .soft-mod__form-holder {
     @include medium-large-and-extra-large {
       position: relative;
       z-index: 20;
     }
   }
 
-  .software-modernisation__curated-publications {
+  .soft-mod__curated-publications {
     @include medium-large-and-extra-large {
       margin-top: -100px;
       padding-top: 100px;
