@@ -13,10 +13,11 @@ $site-base-url: "{{ site.baseurl }}";
 
 @import "cards-layout";
 @import "curated-publications";
+@import "hero-teaser";
 @import "section-intro";
 
+@import "flexslider";
 @import "soft-mod";
 @import "soft-mod-in-page-banner";
 @import "soft-mod-problems";
 @import "soft-mod-misc";
-@import "flexslider";
