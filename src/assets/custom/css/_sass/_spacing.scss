@@ -1,7 +1,22 @@
 @mixin max-width {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1510px;
+}
+
+@mixin max-width--out-there {
+  @include max-width;
+  max-width: 1308px;
+}
+
+@mixin max-width--column {
+  @include max-width;
+
+  @include small-and-medium {
+    max-width: 720px;
+  }
+  @include large-and-extra-large {
+    max-width: 800px;
+  }
 }
 
 @mixin lateral-spacing {
