@@ -352,7 +352,9 @@ metarobots: index,follow
   </div>
 </section>
 
-{% include soft_mod_webinar_hero_teaser.html %}
+{% if site.data.toggles.feature-soft-mod-webinar == 'on' %}
+  {% include soft_mod_webinar_hero_teaser.html %}
+{% endif %}
 
 {% include soft_mod_curated_publications.html %}
 
