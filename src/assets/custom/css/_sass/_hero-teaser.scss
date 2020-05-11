@@ -1,0 +1,32 @@
+.hero-teaser {
+
+}
+
+.hero-teaser__image {
+  height: 0;
+  padding-top: 23 / 36 * 100%;
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/SoftMod__Webinar-CTA.png");
+  background-size: cover;
+}
+
+.hero-teaser__content {
+  @include lateral-spacing;
+
+  @include small {
+    background-color: $coral;
+  }
+}
+
+.hero-teaser__content-type {
+  color: white;
+}
+
+.hero-teaser__title {
+  @include freed-bold;
+  color: white;
+}
+
+.hero-teaser__description {
+  @include mercer-reg;
+  color: white;
+}

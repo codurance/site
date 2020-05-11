@@ -9,7 +9,10 @@ layout: compress
 {% include head.html %}
 </head>
 
-<body >
+{% if site.data.toggles.feature-soft-mod-webinar == 'on' %}
+  {% assign toggle = "feature-soft-mod-webinar" %}
+{% endif %}
+<body class="{{toggle}}">
 
 <div class="wrapper">
 <!--=== Header ===-->

@@ -15,7 +15,7 @@
 
 @mixin freed {
   font-size: 28px;
-  line-height: 1.75;
+  line-height: 38px;
 }
 
 @mixin freed--responsive {
@@ -104,4 +104,15 @@
 @mixin base-reg--responsive {
   @include base--responsive;
   @include reg;
+}
+
+@mixin ponti {
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@mixin ponti-bold {
+  @include ponti;
+  @include bold;
 }
