@@ -2,6 +2,8 @@
   background: $sheen;
 }
 
+$vertical-space: 100px;
+
 .hero-teaser__inner {
   @include max-width--out-there;
   position: relative;
@@ -16,29 +18,29 @@
     }
   }
   @include medium {
-    padding-bottom: #{100px + 40px};
+    padding-bottom: $vertical-space + 40px;
     padding-left: $lateral-space--medium;
     padding-right: 2 * $lateral-space--medium;
-    padding-top: #{100px + 40px};
+    padding-top: $vertical-space + 40px;
 
     &::after {
-      bottom: #{100px + 15px};
+      bottom: $vertical-space + 15px;
       left: 50%;
       right: $lateral-space--medium;
-      top: #{100px + 15px};
+      top: $vertical-space + 15px;
     }
   }
   @include large-and-extra-large {
-    padding-bottom: 100px;
+    padding-bottom: $vertical-space;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
-    padding-top: #{100px + 40px};
+    padding-top: $vertical-space + 40px;
 
     &::after {
-      bottom: #{100px + 25px};
+      bottom: $vertical-space + 25px;
       left: 2 * $lateral-space--large;
       right: 50%;
-      top: #{100px + 40px};
+      top: $vertical-space + 40px;
     }
   }
 }
@@ -56,15 +58,15 @@
     z-index: 10;
   }
   @include medium {
-    bottom: 100px;
+    bottom: $vertical-space;
     left: $lateral-space--medium;
-    top: 100px;
+    top: $vertical-space;
     width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
-    bottom: #{100px + 40px};
+    bottom: $vertical-space + 40px;
     left: $lateral-space--large;
-    top: 100px;
+    top: $vertical-space;
     width: calc(57% - #{2 * $lateral-space--large});
   }
 }
