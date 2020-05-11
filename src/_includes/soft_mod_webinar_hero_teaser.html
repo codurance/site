@@ -1,11 +1,13 @@
 <section class="hero-teaser">
-  <div class="hero-teaser__image"></div>
-  <div class="hero-teaser__content">
-    <h2 class="hero-teaser__content-type">Webinar</h2>
-    <h3 class="hero-teaser__title">Software Modernisation in distributed work times</h3>
-    <p class="hero-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna sed</p>
-    {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
-    {% assign text = site.translations[site.lang].software-modernisation.home-page-banner-link %}
-    {% include cta_primary_link.html color='coral' href=href text=text %}
+  <div class="hero-teaser__inner">
+    <div class="hero-teaser__image"></div>
+    <div class="hero-teaser__content">
+      <h2 class="hero-teaser__content-type">Webinar</h2>
+      <h3 class="hero-teaser__title">Software Modernisation in distributed work times</h3>
+      <p class="hero-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna sed</p>
+      {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
+      {% assign text = site.translations[site.lang].software-modernisation.home-page-banner-link %}
+      {% include cta_primary_link.html color='coral' href=href text=text %}
+    </div>
   </div>
 </section>

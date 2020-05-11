@@ -1,9 +1,12 @@
 .hero-teaser {
+  background: $sheen;
+}
+
+.hero-teaser__inner {
+  @include max-width--out-there;
   position: relative;
 
   @include medium-large-and-extra-large {
-    background: $sheen;
-
     &::after {
       background-color: #fda09b;
       background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
