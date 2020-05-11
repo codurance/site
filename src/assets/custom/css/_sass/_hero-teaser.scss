@@ -2,18 +2,36 @@
   position: relative;
 
   @include medium-large-and-extra-large {
-    @include lateral-spacing;
     background: $sheen;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding: #{100px + 40px} #{23px + 25px};
+
+    &::after {
+      background-color: #fda09b;
+      bottom: #{100px + 15px};
+      content: "";
+      position: absolute;
+      right: 23px;
+      top: #{100px + 15px};
+      width: 50%;
+    }
   }
 }
 
 .hero-teaser__image {
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/SoftMod__Webinar-CTA.png");
   background-size: cover;
-  height: 0;
-  padding-top: 23 / 36 * 100%;
+
+  @include small {
+    height: 0;
+    padding-top: 230 / 360 * 100%;
+  }
+  @include medium-large-and-extra-large {
+    bottom: 100px;
+    position: absolute;
+    top: 100px;
+    width: 50%;
+    z-index: 10;
+  }
 }
 
 .hero-teaser__content {
@@ -25,8 +43,11 @@
     @include lateral-spacing;
   }
   @include medium-large-and-extra-large {
+    margin-left: 50%;
     padding-left: 40px;
     padding-right: 40px;
+    position: relative;
+    z-index: 20;
   }
 }
 
