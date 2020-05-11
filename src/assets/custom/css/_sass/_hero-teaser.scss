@@ -47,6 +47,7 @@ $vertical-space: 100px;
 
 .hero-teaser__image {
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/softmod-in-distributed-worktimes-hero.jpg");
+  background-position: center;
   background-size: cover;
 
   @include small {
