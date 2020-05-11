@@ -6,6 +6,8 @@
 
     &::after {
       background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
       content: "";
       position: absolute;
     }
