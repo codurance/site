@@ -17,26 +17,26 @@
   }
   @include medium {
     padding-bottom: #{100px + 40px};
-    padding-left: #{23px};
-    padding-right: #{23px + 25px};
+    padding-left: $lateral-space--medium;
+    padding-right: 2 * $lateral-space--medium;
     padding-top: #{100px + 40px};
 
     &::after {
       bottom: #{100px + 15px};
       left: 50%;
-      right: 23px;
+      right: $lateral-space--medium;
       top: #{100px + 15px};
     }
   }
   @include large-and-extra-large {
     padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
     padding-top: #{100px + 40px};
 
     &::after {
       bottom: #{100px + 25px};
-      left: 105px;
+      left: 2 * $lateral-space--large;
       right: 50%;
       top: #{100px + 40px};
     }
@@ -57,15 +57,15 @@
   }
   @include medium {
     bottom: 100px;
-    left: 23px;
+    left: $lateral-space--medium;
     top: 100px;
-    width: calc(60% - (2 * 23px));
+    width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
     bottom: #{100px + 40px};
-    left: 50px;
+    left: $lateral-space--large;
     top: 100px;
-    width: calc(57% - (2 * 50px));
+    width: calc(57% - #{2 * $lateral-space--large});
   }
 }
 
@@ -75,8 +75,8 @@
   padding-top: 40px;
 
   @include small {
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: $lateral-space--small;
+    padding-right: $lateral-space--small;
   }
   @include medium-large-and-extra-large {
     position: relative;
@@ -84,13 +84,13 @@
   }
   @include medium {
     margin-left: 40%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
   }
   @include large-and-extra-large {
     margin-left: 43%;
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
   }
 }
 
@@ -99,7 +99,7 @@
 
   @include small {
     color: white;
-    right: 16px;
+    right: $lateral-space--small;
     position: absolute;
     top: 30px;
   }
