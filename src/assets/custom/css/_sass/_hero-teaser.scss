@@ -1,32 +1,70 @@
 .hero-teaser {
+  position: relative;
 
+  @include medium-large-and-extra-large {
+    @include lateral-spacing;
+    background: $sheen;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
 }
 
 .hero-teaser__image {
-  height: 0;
-  padding-top: 23 / 36 * 100%;
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/SoftMod__Webinar-CTA.png");
   background-size: cover;
+  height: 0;
+  padding-top: 23 / 36 * 100%;
 }
 
 .hero-teaser__content {
-  @include lateral-spacing;
+  background-color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
   @include small {
-    background-color: $coral;
+    @include lateral-spacing;
+  }
+  @include medium-large-and-extra-large {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .hero-teaser__content-type {
-  color: white;
+  @include ponti-bold;
+
+  @include small {
+    color: white;
+    right: 16px;
+    position: absolute;
+    top: 30px;
+  }
+  @include medium-large-and-extra-large {
+    color: $coral;
+    margin: 0 0 30px;
+  }
 }
 
 .hero-teaser__title {
   @include freed-bold;
-  color: white;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 20px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 15px;
+  }
 }
 
 .hero-teaser__description {
   @include mercer-reg;
-  color: white;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 35px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 25px;
+  }
 }

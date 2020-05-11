@@ -21,8 +21,8 @@
 
 @mixin lateral-spacing {
   @include small {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @include medium {
     padding-left: 23px;
