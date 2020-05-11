@@ -751,9 +751,15 @@ i.no-border {
 
 /* Partners */
 
+.row--partners {
+  text-align: center;
+}
+
 .col-md-partners {
-  width: 20%;
-  padding: 30px;
+  width: 25%;
+  padding: 30px 50px;
+  margin: auto;
+  display: inline-block;
 }
 
 .img-center {
