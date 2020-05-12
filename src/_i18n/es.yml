@@ -804,6 +804,13 @@ software-modernisation:
   in-page-banner-publications-text: Descubre otros contenidos relacionados con Software Modernisation
   in-page-banner-publications-link: Te puede interesar
 
+  webinar:
+    teaser:
+      title: Software Modernisation en tiempos de trabajo distribuído
+      description: En este webinar Sandro Mancuso, Co-founder y José Rodríguez Huerta, Managing Director, explican porqué una organización necesita Software Modernisation en el contexto actual y a qué retos se enfrenta.
+      cta: Ver webinar
+      cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
+
 curated-publications:
   softmod:
     intro-title: Sobre Software Modernisation
