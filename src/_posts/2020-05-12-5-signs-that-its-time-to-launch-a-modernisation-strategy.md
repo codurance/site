@@ -1,7 +1,7 @@
 ---
 layout: post
 asset-type: post
-name: 5-signs-that-it's-time-to-launch-a-modernisation-strategy
+name: 5-signs-that-its-time-to-launch-a-modernisation-strategy
 title: 5 signs that it is time to launch a modernisation strategy
 title-es: 5 señales de que es momento de lanzar una estrategia de modernización
 date: 2020-05-12 00:00:00 +00:00
@@ -10,7 +10,7 @@ description: All too often business change becomes impossible. If the following 
 description-es: Muy a menudo los cambios en la estrategia de negocio resultan difíciles de implementar de forma ágil y rápida. Si los siguientes puntos te resultan demasiado familiares, es momento de que tu organización implemente una estrategia de modernización.
 
 image:
-    src: /assets/custom/img/blog/2020-05-12-5-signs-that-it's-time-to-launch-a-modernisation-strategy/5 signs it's time to launch Software Modernisation.jpg
+    src: /assets/custom/img/blog/2020-05-12-5-signs-that-its-time-to-launch-a-modernisation-strategy/5-signs-softmod-blog-post.jpg
 tags:
     - software modernisation
     - legacy-code
