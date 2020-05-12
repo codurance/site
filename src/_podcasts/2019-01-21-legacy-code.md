@@ -8,7 +8,7 @@ description: In this episode of Codurance Talks, our craftspeople discuss legacy
 title-es: Codurance Talks - Episodio 8 - Legacy Code
 description-es: En este episodio de Codurance Talks, nuestros craftspeople charlan sonre legacy code, qué hace que su mantenimiento sea tan costoso y cuáles son las estrategias de mejora más recomendables.  
 image: 
-  src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
+  src: /assets/custom/img/podcasts/podcast-8-legacy-code/podcast-legacy-code.jpg
 video-url: https://www.podbean.com/media/player/2yuxa-a53d35?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0
 date: 2019-01-21 12:00:00 +00:00
 tags:
