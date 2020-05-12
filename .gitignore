@@ -43,6 +43,7 @@ validation-staus.json
 .CVS
 .idea
 node_modules
+vendor
 
 # intellij idea files
 *.iml
