@@ -1,10 +1,6 @@
-.hero-teaser {
-  background: $sheen;
-}
-
 $vertical-space: 100px;
 
-.hero-teaser__inner {
+.hero-teaser {
   @include max-width--out-there;
   position: relative;
 
