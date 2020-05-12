@@ -79,7 +79,7 @@ $description-max-height: 4 * $line-height;
 
 .card__cta--text {
   @include base-bold;
-  color: $grey-dark;
+  color: $grey--dark;
   padding: 0 30px 30px;
 
   &,

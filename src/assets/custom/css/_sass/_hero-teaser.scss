@@ -1,32 +1,137 @@
 .hero-teaser {
+  background: $sheen;
+}
 
+$vertical-space: 100px;
+
+.hero-teaser__inner {
+  @include max-width--out-there;
+  position: relative;
+
+  @include medium-large-and-extra-large {
+    &::after {
+      background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
+      content: "";
+      position: absolute;
+    }
+  }
+  @include medium {
+    padding-bottom: $vertical-space + 40px;
+    padding-left: $lateral-space--medium;
+    padding-right: 2 * $lateral-space--medium;
+    padding-top: $vertical-space + 40px;
+
+    &::after {
+      bottom: $vertical-space + 15px;
+      left: 50%;
+      right: $lateral-space--medium;
+      top: $vertical-space + 15px;
+    }
+  }
+  @include large-and-extra-large {
+    padding-bottom: $vertical-space;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+    padding-top: $vertical-space + 40px;
+
+    &::after {
+      bottom: $vertical-space + 25px;
+      left: 2 * $lateral-space--large;
+      right: 50%;
+      top: $vertical-space + 40px;
+    }
+  }
 }
 
 .hero-teaser__image {
-  height: 0;
-  padding-top: 23 / 36 * 100%;
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/SoftMod__Webinar-CTA.png");
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/softmod-in-distributed-worktimes-hero.jpg");
+  background-position: left center;
   background-size: cover;
+
+  @include small {
+    height: 0;
+    padding-top: 230 / 360 * 100%;
+  }
+  @include medium-large-and-extra-large {
+    position: absolute;
+    z-index: 10;
+  }
+  @include medium {
+    bottom: $vertical-space;
+    left: $lateral-space--medium;
+    top: $vertical-space;
+    width: calc(60% - #{2 * $lateral-space--medium});
+  }
+  @include large-and-extra-large {
+    bottom: $vertical-space + 40px;
+    left: $lateral-space--large;
+    top: $vertical-space;
+    width: calc(57% - #{2 * $lateral-space--large});
+  }
 }
 
 .hero-teaser__content {
-  @include lateral-spacing;
+  background-color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
   @include small {
-    background-color: $coral;
+    padding-left: $lateral-space--small;
+    padding-right: $lateral-space--small;
+  }
+  @include medium-large-and-extra-large {
+    position: relative;
+    z-index: 20;
+  }
+  @include medium {
+    margin-left: 40%;
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+  }
+  @include large-and-extra-large {
+    margin-left: 43%;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
   }
 }
 
 .hero-teaser__content-type {
-  color: white;
+  @include ponti-bold;
+
+  @include small {
+    color: white;
+    right: $lateral-space--small;
+    position: absolute;
+    top: 30px;
+  }
+  @include medium-large-and-extra-large {
+    color: $coral;
+    margin: 0 0 30px;
+  }
 }
 
 .hero-teaser__title {
   @include freed-bold;
-  color: white;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 20px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 15px;
+  }
 }
 
 .hero-teaser__description {
   @include mercer-reg;
-  color: white;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 35px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 25px;
+  }
 }
