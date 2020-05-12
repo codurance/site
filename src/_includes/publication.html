@@ -31,10 +31,10 @@
     <div class="row">
         <div class="col-lg-9 container">
             <div class="row container--blog-meta">
-                <div class="col text-left g-font-size-12 g-mt-15 g-mb-10 icon-calander">
+                <div class="col text-left g-font-size-12 g-mt-15 g-mb-10 col-3 col-md-2">
                 {{ page.date | date_to_string }}
                 </div>  
-                <div class="col text-right g-mt-10">
+                <div class="col text-right g-mt-10 col-md-10">
                     {% include tags.html tags=page.tags %}
                 </div>
             </div>
