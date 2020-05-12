@@ -118,6 +118,29 @@ html {
 /* Blog page
    -------------------------------------- */
 
+.icon-calander {
+  content: '';
+  background: url('{{ site.baseurl }}/assets/custom/img/icon-calander.svg');
+  background-size: auto 85%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 27px;
+  margin-left: 15px;
+}
+
+.container--blog-meta {
+  background-color:#FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.09);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-top: -45px;
+
+  .row {
+    padding: 0px;
+    background-color: red;
+  }
+}
+
 .blog {
   &-thumb {
     /* 0 0 1 0 */
@@ -205,6 +228,10 @@ html {
   width: 100%;
 }
 
+.media .u-icon-v2 {
+  border: none;
+}
+
 /* Team */
 
 .img-hover-v1 span {
@@ -218,6 +245,19 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 450px;
+}
+
+.g-bg-cover--text-overlay {
+  position: relative;
+  background-position: center;
+}
+
+.g-bg-cover--text-overlay::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* Services page
