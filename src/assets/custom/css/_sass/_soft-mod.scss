@@ -1,11 +1,11 @@
-body:not(.feature-soft-mod-webinar) {
-  .soft-mod__form-holder {
-    @include medium-large-and-extra-large {
-      position: relative;
-      z-index: 20;
-    }
+.soft-mod__form-holder {
+  @include medium-large-and-extra-large {
+    position: relative;
+    z-index: 20;
   }
+}
 
+body:not(.feature-soft-mod-webinar) {
   .soft-mod__curated-publications {
     @include medium-large-and-extra-large {
       margin-top: -100px;
@@ -16,3 +16,13 @@ body:not(.feature-soft-mod-webinar) {
   }
 }
 
+body.feature-soft-mod-webinar {
+  .soft-mod--hero-teaser {
+    @include medium-large-and-extra-large {
+      margin-top: -100px;
+      padding-top: 150px;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
