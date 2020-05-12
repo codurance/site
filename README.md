@@ -103,11 +103,9 @@ Install [Ruby Version Manager](https://rvm.io/), Ruby and Bundler:
 Now run Bundler and serve the site locally:
 
 - `bundle install`
-- `rake servequick`\*
+- `rake servequick`
 
 The site should now be running on http://localhost:4000
-
-_\*`rake serve_quicker` is also available which rebuilds faster by only rebuilding the EN language website._
 
 In case of problems, refer to the [troubleshooting section](#troubleshooting).
 
