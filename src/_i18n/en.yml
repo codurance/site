@@ -795,6 +795,13 @@ software-modernisation:
   in-page-banner-publications-text: Discover all of the Software Modernisation resources!
   in-page-banner-publications-link: Find out more
 
+  webinar:
+    teaser:
+      title: Software modernisation in distributed work times
+      description: In this webinar, Sandro Mancuso, Co-Founder of Codurance and José Enrique Rodríguez Huerta, Managing Director of Codurance Spain, explains why organisations need Software Modernisation in the current context and the challenges it addresses.
+      cta: Watch Webinar
+      cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
+
 curated-publications:
   softmod:
     intro-title: Software Modernisation Publications
