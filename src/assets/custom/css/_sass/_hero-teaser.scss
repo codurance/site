@@ -134,6 +134,7 @@
     padding-right: $lateral-space--medium;
   }
   @include large-and-extra-large {
+    box-shadow: rgba(0,0,0,0.16) 0 0 8px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
   }
