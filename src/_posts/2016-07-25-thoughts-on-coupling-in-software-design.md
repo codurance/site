@@ -17,6 +17,8 @@ tags:
 - software modernisation
 categories:
 - software-creation
+pinned_locations: 
+    - soft-mod
 ---
 
 Coupling is a software metric that describes how closely connected two routines or modules are. It is a measure of quality. The concept was introduced by Larry Constantine in the 1960s and was formulized in a 1974 article for the IBM Systems Journal, Structured Design, and in the 1979 [book](http://www.win.tue.nl/~wstomv/quotes/structured-design.html) by the same name.

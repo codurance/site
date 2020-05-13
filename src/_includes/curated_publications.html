@@ -6,7 +6,7 @@
 
   <div class="curated-publications__cards cards-layout">
     <div class="cards-layout__inner">
-      {% assign posts = site.posts | where: 'tags', include.tag %}
+      {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
       {% for post in posts limit: 5 %}
         {% if site.lang == "es" %}
           {% assign article_title = post.title-es %}

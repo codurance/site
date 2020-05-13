@@ -14,6 +14,8 @@ image:
         href: https://flic.kr/p/dtRXDQ
 tags:
 - software modernisation
+pinned_locations: 
+    - soft-mod
 ---
 
 > “It is only when the cold season comes that we know the Pine and Cypress to be evergreens.” - *Chinese Proverb*
