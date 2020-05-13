@@ -10,8 +10,14 @@
 
   @include medium-large-and-extra-large {
     margin-top: -100px;
-    padding-top: 100px;
+    padding-top: 200px;
     position: relative;
     z-index: 10;
+  }
+}
+
+.soft-mod__webinar-teaser {
+  @include medium-large-and-extra-large {
+    margin-bottom: 50px;
   }
 }

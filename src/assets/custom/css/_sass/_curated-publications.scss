@@ -1,3 +1,12 @@
+.curated-publications__hero {
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 70px;
+  }
+}
+
 .curated-publications__cards {
   @include medium-large-and-extra-large {
     margin-bottom: -150px;

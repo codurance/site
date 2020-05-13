@@ -1,5 +1,3 @@
-$vertical-space: 100px;
-
 .hero-teaser--image-position-left,
 .hero-teaser--image-position-right {
   @include max-width--out-there;
@@ -15,23 +13,22 @@ $vertical-space: 100px;
     }
   }
   @include medium {
-    padding-bottom: $vertical-space + 40px;
-    padding-top: $vertical-space + 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 
     &::after {
-      bottom: $vertical-space + 15px;
-      top: $vertical-space + 15px;
+      bottom: 15px;
+      top: 15px;
     }
   }
   @include large-and-extra-large {
-    padding-bottom: $vertical-space;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
-    padding-top: $vertical-space + 40px;
+    padding-top: 40px;
 
     &::after {
-      bottom: $vertical-space + 25px;
-      top: $vertical-space + 40px;
+      bottom: 25px;
+      top: 40px;
     }
   }
 }
@@ -85,13 +82,13 @@ $vertical-space: 100px;
     z-index: 10;
   }
   @include medium {
-    bottom: $vertical-space;
-    top: $vertical-space;
+    bottom: 0;
+    top: 0;
     width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
-    bottom: $vertical-space + 40px;
-    top: $vertical-space;
+    bottom: 40px;
+    top: 0;
     width: calc(57% - #{2 * $lateral-space--large});
   }
 
