@@ -8,7 +8,7 @@ title-es: Codurance Talks - Episode 18 - Mapeo de flujo de valor
 description: In this episode of Codurance Talks, our craftspeople discuss value stream mapping. Our guests deep dive into what value stream mapping is and how it is applied to both business strategy and software development.
 description-es: En este episodio de Codurance Talks, nuestros craftspeople debaten sobre cómo mapear el flujo de valor. Nuestros invitados profundizan en qué es el mapeo de flujo de valor y cómo se aplica tanto a la estrategia de negocio como al desarrollo de software.
 image: 
-  src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
+  src: /assets/custom/img/podcasts/podcast-18-value-stream-mapping/podcast-value-stream-mapping.jpg
 title: "Codurance Talks - Episode 18 - Value Stream Mapping"
 video-url: https://www.podbean.com/media/player/3nejq-c7d5ef?from=yiiadmin&download=1&version=1&vjs=1&skin=1&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1
 date: 2019-11-18 06:00:00 +00:00
