@@ -10,15 +10,15 @@
     {% if site.lang == "es" %}
       {% assign title = post.title-es %}
       {% assign description = post.description-es %}
-      {% assign cta = teaser.cta %}
     {% else %}
       {% assign title = post.title %}
       {% assign description = post.description %}
-      {% assign cta = teaser.cta %}
     {% endif %}
+    {% assign content_type = site.translations[site.lang]publications.content-type %}
+    {% assign cta = site.translations[site.lang]publications.teaser-cta %}
     {% assign cta-href = post.url | prepend: site.baseurl %}
     {% assign image_src = post.image.src | prepend: site.baseurl %}
-    {% include hero_teaser.html content_type='Publication' cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
+    {% include hero_teaser.html content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
   {% endfor %}
 
 

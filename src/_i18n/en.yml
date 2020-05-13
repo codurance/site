@@ -183,7 +183,7 @@ publications-post:
   author_title: By
   date_title: Posted
 publications:
-  content-type: Publications
+  content-type: Publication
   teaser-cta: Learn More
   view-all: View all publications
 services:
