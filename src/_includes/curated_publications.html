@@ -4,12 +4,26 @@
     <p class="section-intro__description">{{include.description}}</p>
   </header>
 
-  {% assign teaser = site.translations[site.lang]software-modernisation.webinar.teaser %}
-  {% assign title = teaser.title %}
-  {% assign description = teaser.description %}
-  {% assign cta = teaser.cta %}
-  {% assign cta-href = teaser.cta-href %}
-  {% include hero_teaser.html content_type='Webinar' cta=cta cta-href=cta-href heading=heading image_position="right" title=title description=description %}
+
+  {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
+  {% for post in posts limit: 1 %}
+    {% if site.lang == "es" %}
+      {% assign title = post.title-es %}
+      {% assign description = post.description-es %}
+      {% assign cta = teaser.cta %}
+    {% else %}
+      {% assign title = post.title %}
+      {% assign description = post.description %}
+      {% assign cta = teaser.cta %}
+    {% endif %}
+    {% assign cta-href = post.url | prepend: site.baseurl %}
+    {% assign image_src = post.image.src | prepend: site.baseurl %}
+    {% include hero_teaser.html content_type='Publication' cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
+  {% endfor %}
+
+
+
+
 
   <div class="curated-publications__cards cards-layout">
     <div class="cards-layout__inner">
