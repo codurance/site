@@ -1,11 +1,8 @@
-<section class="hero-teaser">
-  <div class="hero-teaser__image"></div>
-  <div class="hero-teaser__content">
-    <h2 class="hero-teaser__content-type">Webinar</h2>
-    <h3 class="hero-teaser__title">{% t software-modernisation.webinar.teaser.title %}</h3>
-    <p class="hero-teaser__description">{% t software-modernisation.webinar.teaser.description %}</p>
-    {% assign href = site.translations[site.lang].software-modernisation.webinar.teaser.cta-href %}
-    {% assign text = site.translations[site.lang].software-modernisation.webinar.teaser.cta %}
-    {% include cta_primary_link.html color='coral' href=href text=text target="_blank" %}
-  </div>
-</section>
+{% assign teaser = site.translations[site.lang]software-modernisation.webinar.teaser %}
+{% assign title = teaser.title %}
+{% assign description = teaser.description %}
+{% assign cta = teaser.cta %}
+{% assign cta-href = teaser.cta-href %}
+{% assign image_position = 'left' %}
+{% capture image_src %}{{site.baseurl}}/assets/custom/img/softmod/softmod-in-distributed-worktimes-hero.jpg{% endcapture %}
+{% include hero_teaser.html content_type='Webinar' cta=cta cta-href=cta-href image_position=image_position image_src=image_src heading=heading title=title description=description %}

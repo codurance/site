@@ -1,6 +1,7 @@
 $vertical-space: 100px;
 
-.hero-teaser {
+.hero-teaser--image-position-left,
+.hero-teaser--image-position-right {
   @include max-width--out-there;
   position: relative;
 
@@ -15,14 +16,10 @@ $vertical-space: 100px;
   }
   @include medium {
     padding-bottom: $vertical-space + 40px;
-    padding-left: $lateral-space--medium;
-    padding-right: 2 * $lateral-space--medium;
     padding-top: $vertical-space + 40px;
 
     &::after {
       bottom: $vertical-space + 15px;
-      left: 50%;
-      right: $lateral-space--medium;
       top: $vertical-space + 15px;
     }
   }
@@ -34,16 +31,49 @@ $vertical-space: 100px;
 
     &::after {
       bottom: $vertical-space + 25px;
-      left: 2 * $lateral-space--large;
-      right: 50%;
       top: $vertical-space + 40px;
     }
   }
 }
 
+.hero-teaser--image-position-left {
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: 2 * $lateral-space--medium;
+
+    &::after {
+      left: 50%;
+      right: $lateral-space--medium;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 2 * $lateral-space--large;
+      right: 50%;
+    }
+  }
+}
+
+.hero-teaser--image-position-right {
+  @include medium {
+    padding-left: 2 * $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+
+    &::after {
+      left: $lateral-space--medium;
+      right: 50%;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 50%;
+      right: 2 * $lateral-space--large;
+    }
+  }
+}
+
 .hero-teaser__image {
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/softmod-in-distributed-worktimes-hero.jpg");
-  background-position: left center;
+  background-color: #aaa;
   background-size: cover;
 
   @include small {
@@ -56,15 +86,36 @@ $vertical-space: 100px;
   }
   @include medium {
     bottom: $vertical-space;
-    left: $lateral-space--medium;
     top: $vertical-space;
     width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
     bottom: $vertical-space + 40px;
-    left: $lateral-space--large;
     top: $vertical-space;
     width: calc(57% - #{2 * $lateral-space--large});
+  }
+
+  .hero-teaser--image-position-left & {
+    background-position: left center;
+
+    @include medium {
+      left: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: $lateral-space--large;
+    }
+  }
+  .hero-teaser--image-position-right & {
+    background-position: right center;
+
+    @include medium {
+      left: auto;
+      right: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: auto;
+      right: $lateral-space--large;
+    }
   }
 }
 
@@ -82,14 +133,29 @@ $vertical-space: 100px;
     z-index: 20;
   }
   @include medium {
-    margin-left: 40%;
     padding-left: $lateral-space--medium;
     padding-right: $lateral-space--medium;
   }
   @include large-and-extra-large {
-    margin-left: 43%;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
+  }
+
+  .hero-teaser--image-position-left & {
+    @include medium {
+      margin-left: 40%;
+    }
+    @include large-and-extra-large {
+      margin-left: 43%;
+    }
+  }
+  .hero-teaser--image-position-right & {
+    @include medium {
+      margin-right: 40%;
+    }
+    @include large-and-extra-large {
+      margin-right: 43%;
+    }
   }
 }
 
