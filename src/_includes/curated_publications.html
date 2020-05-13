@@ -17,7 +17,7 @@
     {% assign cta = site.translations[site.lang]publications.teaser-cta %}
     {% assign cta-href = post.url | prepend: site.baseurl %}
     {% assign image_src = post.image.src | prepend: site.baseurl %}
-    {% include hero_teaser.html content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
+    {% include hero_teaser.html class="curated-publications__hero" content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
   {% endfor %}
 
   <div class="curated-publications__cards cards-layout">
