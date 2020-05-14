@@ -6,10 +6,13 @@ const simulatePageLoad = () => {
   window.document.dispatchEvent(DOMContentLoaded_event);
 };
 
-const addLink = ({ href, id }) => {
+const addLink = ({ href, id, target }) => {
   const link = window.document.createElement("a");
   link.id = id;
   link.href = href;
+  if (target) {
+    link.target = target;
+  }
   window.document.body.append(link);
 };
 
@@ -33,6 +36,11 @@ describe("External Links", () => {
       href: "https://another.com",
       id: "externalLink2",
     });
+    addLink({
+      href: "https://another.com",
+      id: "linkWithExistingTarget",
+      target: "_parent",
+    });
     simulatePageLoad();
   });
 
@@ -43,5 +51,8 @@ describe("External Links", () => {
   it(`internal links open in the same tab`, () => {
     expect($("#linkToOurWebsite").target).not.toBe("_blank");
     expect($("#internalAnchor").target).not.toBe("_blank");
+  });
+  it(`links that has a target defined are not changed`, () => {
+    expect($("#linkWithExistingTarget").target).toBe("_parent");
   });
 });
