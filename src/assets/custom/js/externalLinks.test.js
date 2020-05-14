@@ -13,6 +13,8 @@ const addLink = ({ href, id }) => {
   window.document.body.append(link);
 };
 
+const $ = (selector) => window.document.querySelector(selector);
+
 describe("External Links", () => {
   beforeEach(() => {
     addLink({
@@ -34,10 +36,11 @@ describe("External Links", () => {
     simulatePageLoad();
   });
 
-  it(`ensures external links open in new tabs and internal ones don't`, () => {
-    const $ = (selector) => window.document.querySelector(selector);
+  it(`external links open in new tabs`, () => {
     expect($("#externalLink1").target).toBe("_blank");
     expect($("#externalLink2").target).toBe("_blank");
+  });
+  it(`internal links open in the same tab`, () => {
     expect($("#linkToOurWebsite").target).not.toBe("_blank");
     expect($("#internalAnchor").target).not.toBe("_blank");
   });
