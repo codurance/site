@@ -14,60 +14,31 @@ const addLink = ({ href, id }) => {
 };
 
 describe("External Links", () => {
-  describe("When the page loads with two external links", () => {
-    beforeEach(() => {
-      addLink({
-        href: "https://test.com",
-        id: "link1",
-      });
-      addLink({
-        href: "https://another.com",
-        id: "link2",
-      });
-      simulatePageLoad();
+  beforeEach(() => {
+    addLink({
+      href: "https://external.com",
+      id: "externalLink1",
     });
-
-    it(`ensures both links open in new tabs`, () => {
-      const link1 = window.document.querySelector("#link1");
-      expect(link1.target).toBe("_blank");
-      const link2 = window.document.querySelector("#link2");
-      expect(link2.target).toBe("_blank");
+    addLink({
+      href: "http://our-site.com/",
+      id: "linkToOurWebsite",
     });
+    addLink({
+      href: "#internal-anchor",
+      id: "internalAnchor",
+    });
+    addLink({
+      href: "https://another.com",
+      id: "externalLink2",
+    });
+    simulatePageLoad();
   });
 
-  describe("When the page loads with an internal link", () => {
-    beforeEach(() => {
-      addLink({
-        href: "#internal-anchor",
-        id: "internal",
-      });
-      addLink({
-        href: "https://test.com",
-        id: "external",
-      });
-      simulatePageLoad();
-    });
-
-    it(`only the external link opens in a new tab`, () => {
-      const external = window.document.querySelector("#external");
-      expect(external.target).toBe("_blank");
-      const internal = window.document.querySelector("#internal");
-      expect(internal.target).not.toBe("_blank");
-    });
-  });
-
-  describe("When the page loads with a link to another page on our website", () => {
-    beforeEach(() => {
-      addLink({
-        href: "http://our-site.com/",
-        id: "link-back-home",
-      });
-      simulatePageLoad();
-    });
-
-    it(`only the external link opens in a new tab`, () => {
-      const internal = window.document.querySelector("#link-back-home");
-      expect(internal.target).not.toBe("_blank");
-    });
+  it(`ensures external links open in new tabs and internal ones don't`, () => {
+    const $ = (selector) => window.document.querySelector(selector);
+    expect($("#externalLink1").target).toBe("_blank");
+    expect($("#externalLink2").target).toBe("_blank");
+    expect($("#linkToOurWebsite").target).not.toBe("_blank");
+    expect($("#internalAnchor").target).not.toBe("_blank");
   });
 });
