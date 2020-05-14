@@ -54,7 +54,7 @@ describe("External Links", () => {
     expect($("#internalAnchor").target).not.toBe("_blank");
   });
 
-  it(`links that has a target defined are not changed`, () => {
+  it(`links that have a target defined are not changed`, () => {
     expect($("#linkWithExistingTarget").target).toBe("_parent");
   });
 });
