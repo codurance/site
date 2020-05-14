@@ -142,3 +142,9 @@ $(document).ready(function() {
         window.codurance.onLunrLoaded();
     }
 });
+
+var openExternalLinksInNewTab = function (){
+
+};
+
+window.addEventListener('DOMContentLoaded', openExternalLinksInNewTab);
