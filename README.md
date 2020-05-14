@@ -5,10 +5,26 @@ This link is old please visit if you aim for past documentation: [https://trello
 
 ## Run the tests
 
-- Build the docker-compose-override site image with...
-  - `docker-compose -f docker-compose.override.yml build`
-- You only need to do that once. Now you can run the tests quickly & easily with...
-  - `docker-compose -f docker-compose.override.yml run site bundle exec rspec`
+### Ruby Tests using RSpec
+
+We have a small corner of functionality covered by [RSpec](https://rspec.info/) tests.
+This is a good base for adding more coverage of Ruby based logic within the application.
+
+- Build the docker-compose-override site image with:
+  `docker-compose -f docker-compose.override.yml build`
+
+- You only need to do that once. Now you can run the tests with:
+  `docker-compose -f docker-compose.override.yml run site bundle exec rspec`
+
+### Javscript tests using Jest
+
+Where we have Javascript coverage it is tested using [Jest](https://jestjs.io/)
+
+- Asssuming you have [Node](https://nodejs.org/en/) installed then run:
+  ```bash
+  npm install
+  npm test
+  ```
 
 ## Setup the ~development~ writing environment
 

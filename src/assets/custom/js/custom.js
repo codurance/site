@@ -1,7 +1,3 @@
-var fieldName = function (target, field) {
-     return '[name=' + target + '-' + field + ']';
-};
-
 var submitTrainingContactForm = function() {
     var $inputs = $('#training-contact-form :input');
     var data = {};

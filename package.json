@@ -1,0 +1,28 @@
+{
+  "name": "codurance-website",
+  "version": "1.0.0",
+  "description": "Codurance website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codurance/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codurance/site/issues"
+  },
+  "homepage": "https://github.com/codurance/site#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "jest": {
+    "testURL": "http://our-site.com/path/"
+  }
+}
