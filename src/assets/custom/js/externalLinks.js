@@ -1,11 +1,14 @@
 var openExternalLinksInNewTab = function () {
-  function nodeListToArray(nodeList) {
-    return Array.prototype.slice.call(nodeList);
+  function isInternal(link) {
+    return link.href.indexOf(window.location.href) === 0;
   }
 
-  var links = nodeListToArray(window.document.querySelectorAll("a"));
+  var links = window.document.querySelectorAll("a");
 
-  links.forEach(function (link) {
+  Array.prototype.forEach.call(links, function (link) {
+    if (isInternal(link)) {
+      return;
+    }
     link.target = "_blank";
   });
 };

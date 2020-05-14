@@ -6,17 +6,24 @@ const simulatePageLoad = () => {
   window.document.dispatchEvent(DOMContentLoaded_event);
 };
 
+const addLink = ({ href, id }) => {
+  const link = window.document.createElement("a");
+  link.id = id;
+  link.href = href;
+  window.document.body.append(link);
+};
+
 describe("External Links", () => {
   describe("When the page loads with two external links", () => {
     beforeEach(() => {
-      const externalLink1 = window.document.createElement("a");
-      externalLink1.id = "link1";
-      externalLink1.href = "https://test.com";
-      const externalLink2 = window.document.createElement("a");
-      externalLink2.id = "link2";
-      externalLink2.href = "https://another.com";
-      window.document.body.append(externalLink1);
-      window.document.body.append(externalLink2);
+      addLink({
+        href: "https://test.com",
+        id: "link1",
+      });
+      addLink({
+        href: "https://another.com",
+        id: "link2",
+      });
       simulatePageLoad();
     });
 
@@ -25,6 +32,27 @@ describe("External Links", () => {
       expect(link1.target).toBe("_blank");
       const link2 = window.document.querySelector("#link2");
       expect(link2.target).toBe("_blank");
+    });
+  });
+
+  describe("When the page loads with an internal link", () => {
+    beforeEach(() => {
+      addLink({
+        href: "#internal-anchor",
+        id: "internal",
+      });
+      addLink({
+        href: "https://test.com",
+        id: "external",
+      });
+      simulatePageLoad();
+    });
+
+    it(`only the external link opens in a new tab`, () => {
+      const external = window.document.querySelector("#external");
+      expect(external.target).toBe("_blank");
+      const internal = window.document.querySelector("#internal");
+      expect(internal.target).not.toBe("_blank");
     });
   });
 });
