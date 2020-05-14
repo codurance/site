@@ -5,7 +5,7 @@ name: building-a-business-case-for-your-software-modernisation-initiative
 title: Building a business case for your software modernisation initiative
 title-es: Construyendo un business case para tu iniciativa de Software Modernisation
 date: 2020-05-18 00:00:00 +00:00
-author: José E. Rodriguez
+author: José E. Rodríguez Huerta
 description: In this article, we answer some of the most common questions that come up when helping our clients build a business case for a Software Modernisation initiative.
 description-es: En este artículo, respondemos algunas de las preguntas más habituales que surgen cuando ayudamos a nuestros clientes a construir un business case para una iniciativa de Software Modernisation.
 
