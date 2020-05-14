@@ -4,6 +4,11 @@
   }
 
   var TABBER = window.document.querySelector(".tabbed-content");
+
+  if(TABBER === null){
+    return;
+  }
+
   var TABS_WRAPPER = TABBER.querySelector(".tabs");
   var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("a"));
   var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
