@@ -110,6 +110,7 @@ window.codurance.cookieMessage = (function() {
     }
 
     function init () {
+        
         if (hasConsent()) {
             showConsentDependentIframes();
             return;
