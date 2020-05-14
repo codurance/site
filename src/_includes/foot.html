@@ -108,6 +108,18 @@
 
   <script src="{{ '/assets/custom/js/cookie-message.js' | prepend: site.baseurl }}"></script>
 
+  <script>
+  if(codurance.cookieMessage.hasConsent()) {
+    dataLayer.push({'anonymizeIp': 'false'});
+  } else {
+    codurance.cookieMessage.onConsent(function(){
+      dataLayer.push({'anonymizeIp': 'false'});
+    });
+  }
+</script>
+
+
+
   <!-- Start of Google analytics configuration
   <script>
     if(codurance.cookieMessage.hasConsent()) {
