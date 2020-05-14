@@ -1,7 +1,11 @@
+@mixin style-card-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 0 8px;
+}
+
 .card {
+  @include style-card-box-shadow;
   background-color: white;
   border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 0 8px;
   overflow: hidden;
 }
 
