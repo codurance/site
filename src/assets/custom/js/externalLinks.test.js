@@ -48,10 +48,12 @@ describe("External Links", () => {
     expect($("#externalLink1").target).toBe("_blank");
     expect($("#externalLink2").target).toBe("_blank");
   });
+
   it(`internal links open in the same tab`, () => {
     expect($("#linkToOurWebsite").target).not.toBe("_blank");
     expect($("#internalAnchor").target).not.toBe("_blank");
   });
+
   it(`links that has a target defined are not changed`, () => {
     expect($("#linkWithExistingTarget").target).toBe("_parent");
   });
