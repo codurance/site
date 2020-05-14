@@ -21,5 +21,8 @@
   "homepage": "https://github.com/codurance/site#readme",
   "devDependencies": {
     "jest": "^26.0.1"
+  },
+  "jest": {
+    "testURL": "http://our-site.com/path/"
   }
 }

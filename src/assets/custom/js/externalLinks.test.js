@@ -55,4 +55,19 @@ describe("External Links", () => {
       expect(internal.target).not.toBe("_blank");
     });
   });
+
+  describe("When the page loads with a link to another page on our website", () => {
+    beforeEach(() => {
+      addLink({
+        href: "http://our-site.com/",
+        id: "link-back-home",
+      });
+      simulatePageLoad();
+    });
+
+    it(`only the external link opens in a new tab`, () => {
+      const internal = window.document.querySelector("#link-back-home");
+      expect(internal.target).not.toBe("_blank");
+    });
+  });
 });

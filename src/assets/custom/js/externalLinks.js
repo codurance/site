@@ -1,6 +1,7 @@
 var openExternalLinksInNewTab = function () {
   function isInternal(link) {
-    return link.href.indexOf(window.location.href) === 0;
+    var origin = window.location.protocol + "//" + window.location.hostname;
+    return link.href.indexOf(origin) === 0;
   }
 
   var links = window.document.querySelectorAll("a");
