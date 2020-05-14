@@ -144,7 +144,10 @@ $(document).ready(function() {
 });
 
 var openExternalLinksInNewTab = function (){
-
+    let isInternalLink = "https://codurance.com/";
+    if (isInternalLink){
+        return;
+    }
 };
 
 window.addEventListener('DOMContentLoaded', openExternalLinksInNewTab);
