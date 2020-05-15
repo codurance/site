@@ -1,15 +1,14 @@
-.soft-mod-in-page-banner {
+.in-page-banner {
   min-height: 400px;
+  overflow: hidden;
 }
 
-.soft-mod-cta-block__image {
+.in_page_banner__image {
   @include small {
     display: none;
   }
 
   @include medium-large-and-extra-large {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-cta.jpg");
-    background-position: center;
     background-size: cover;
     float: left;
     height: 400px;
@@ -17,7 +16,7 @@
   }
 }
 
-.soft-mod-cta-block__main {
+.in_page_banner__main {
   @include lateral-spacing;
   align-items: center;
   background-color: $coral;
@@ -32,17 +31,17 @@
   }
 }
 
-.soft-mod-cta-block__inner {
+.in_page_banner__inner {
   max-width: 500px;
 }
 
-.soft-mod-cta-block__title {
+.in_page_banner__title {
   @include mercer-bold;
   color: white;
   margin: 0 0 10px;
 }
 
-.soft-mod-cta-block__description {
+.in_page_banner__description {
   @include base-reg;
   color: white;
   margin: 0 0 30px;

@@ -1,11 +1,5 @@
-<div class="soft-mod-in-page-banner">
-  <div class="soft-mod-cta-block__image"></div>
-  <div class="soft-mod-cta-block__main">
-    <div class="soft-mod-cta-block__inner">
-      <p class="soft-mod-cta-block__description">{% t software-modernisation.home-page-banner-text %}</p>  
-      {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
-      {% assign text = site.translations[site.lang].software-modernisation.home-page-banner-link %}
-      {% include cta_primary_link.html color='navy' href=href text=text %}
-    </div>
-  </div>
-</div>
+{% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
+{% capture description %}{% t software-modernisation.home-page-banner-text %}{% endcapture %}
+{% assign cta_href = "/software-modernisation/" | prepend: site.baseurl %}
+{% capture cta_text %}{% t software-modernisation.home-page-banner-link %}{% endcapture %}
+{% include in_page_banner.html background_image=background_image cta_href=cta_href cta_text=cta_text description=description %}
