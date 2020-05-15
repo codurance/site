@@ -9,4 +9,4 @@ author: Demo
 ---
 
 ​
-{% include soft_mod_cheat_sheet_cta_banner.html %}
+{% include in_page_banner--soft-mod-cheat-sheet.html %}

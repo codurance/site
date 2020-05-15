@@ -18,7 +18,7 @@ $site-base-url: "{{ site.baseurl }}";
 
 @import "flexslider";
 @import "soft-mod";
-@import "soft-mod-in-page-banner";
-@import "_soft-mod-cheat-sheet-cta-banner";
+@import "in-page-banner";
+@import "soft-mod-cheat-sheet-cta-banner";
 @import "soft-mod-problems";
 @import "soft-mod-misc";
