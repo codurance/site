@@ -7,16 +7,18 @@
 
 .soft-mod__testimonials {
   background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.png");
-  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
 
-  @media (min-width: 800px) {
+  @include small {
+    background-size: cover;
+  }
+  @include medium-large-and-extra-large {
     background-size: 110% auto;
     background-position-y: 360px;
   }
-  @media (min-width: 992px) {
-    padding-bottom: 200px !important;
+  @include large-and-extra-large {
+    padding-bottom: 200px;
   }
 }
 
