@@ -174,10 +174,16 @@ tags:
 
 Links can be added to a post in a couple of ways. The preference is to make sure that `target="_blank"` is used so that any links open in a new browser tab and do not take the user away from the blog post or the website.
 
-To use `target="_blank"` the only currently supported by our Jekyll version is to include links as HTML in the markdown. So for example -
+Javascript on the website will add target blank to any external links when the DOM loads, so you can use markdown style links like this:
 
+```markdown
+[Link Example](https://www.example.com)
 ```
-<a href="https://www.example.com" target="_blank">Link Example</a>
+
+To explicitly set the target of a link you can use HTML in the markdown like this:
+
+```html
+<a href="https://www.example.com" target="custom">Link Example</a>
 ```
 
 ### Adding a video to the publications
