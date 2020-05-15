@@ -22,7 +22,7 @@ pinned_locations:
 
 If you are reading this article, you are probably thinking of modernising some critical systems in your organisation.
 
-[BANNER CTA DOWNLOAD CHEAT SHEET]
+{% include soft-mod-cheat-sheet-banner.html %}
 
 Stating a clear business case is essential to get your project off the ground. It will allow you to convey your idea and start the conversation around what needs to happen and how the business will benefit from it.
 
@@ -352,6 +352,6 @@ A good place to start is to evaluate various modernisation approaches to select 
 
 Writing a business case is a solid step in that direction. Here are some materials we have prepared to make that process easier.
 
-[BANNER CTA DOWNLOAD CHEAT SHEET]
+{% include soft-mod-cheat-sheet-banner.html %}
 
 Recommendation: We have prepared a small cheat sheet to help you think through your business case creation. Take some time to answer the questions provided, in order to get an overview of all the areas you might want to consider doing some research on before you start writing.
