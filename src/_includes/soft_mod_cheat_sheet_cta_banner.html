@@ -10,6 +10,18 @@
           {% t software-modernisation.cheat-sheet-cta-banner-text %}
         </p>
         {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
+
+        {% if site.baseurl == "/en" %}
+          {% capture href %}
+            https://info.codurance.com{{ site.baseurl }}/case-for-change-questionnaire
+          {% endcapture %}
+        {% elsif site.baseurl == "/es" %}
+          {% capture href %}
+            https://info.codurance.com{{ site.baseurl }}/case-for-change-questionnaire
+          {% endcapture %}
+        {% endif %}
+
+
         {% assign text = site.translations[site.lang].software-modernisation.cheat-sheet-cta-banner-link %}
         {% include cta_primary_link.html color='navy' href=href text=text %}
       </div>
