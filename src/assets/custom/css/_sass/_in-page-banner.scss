@@ -2,7 +2,7 @@
   min-height: 400px;
 }
 
-.soft-mod-cta-block__image {
+.in_page_banner__image {
   @include small {
     display: none;
   }
@@ -17,7 +17,7 @@
   }
 }
 
-.soft-mod-cta-block__main {
+.in_page_banner__main {
   @include lateral-spacing;
   align-items: center;
   background-color: $coral;
@@ -32,17 +32,17 @@
   }
 }
 
-.soft-mod-cta-block__inner {
+.in_page_banner__inner {
   max-width: 500px;
 }
 
-.soft-mod-cta-block__title {
+.in_page_banner__title {
   @include mercer-bold;
   color: white;
   margin: 0 0 10px;
 }
 
-.soft-mod-cta-block__description {
+.in_page_banner__description {
   @include base-reg;
   color: white;
   margin: 0 0 30px;
