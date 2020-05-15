@@ -27,3 +27,10 @@
     width: 50%;
   }
 }
+
+.soft-mod-cheat-sheet-cta-block__title {
+  @include mercer-bold;
+  color: white;
+  margin: 0 0 10px;
+  display: block;
+}
