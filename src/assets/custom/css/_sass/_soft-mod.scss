@@ -6,7 +6,20 @@
 }
 
 .soft-mod__testimonials {
+  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 50px;
+
+  @media (min-width: 800px) {
+    background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+    background-size: 110% auto;
+    background-position-y: 360px;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 992px) {
+    padding-bottom: 200px !important;
+  }
 }
 
 .soft-mod__publications {
