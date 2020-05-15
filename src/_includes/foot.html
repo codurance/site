@@ -110,37 +110,13 @@
 
   <script>
   if(codurance.cookieMessage.hasConsent()) {
-    dataLayer.push({'anonymizeIp': 'false'});
+      dataLayer.push({'anonymizeIp': 'false'});
   } else {
     codurance.cookieMessage.onConsent(function(){
       dataLayer.push({'anonymizeIp': 'false'});
     });
   }
 </script>
-
-
-
-  <!-- Start of Google analytics configuration
-  <script>
-    if(codurance.cookieMessage.hasConsent()) {
-      ga('set', 'anonymizeIp', undefined) ;
-    } else {
-      codurance.cookieMessage.onConsent(function(){
-        ga('set', 'anonymizeIp', undefined);
-      });
-    }
-    ga('send', 'pageview');
-
-    $(window).on('resize', function () {
-      setTimeout(function () {
-        var gaEvents = window.googleAnalyticsEvents;
-        gaEvents.functions.forEach(function(fireEvent){
-          fireEvent(gaEvents.environment);
-        });
-      }, 200);
-    });
-  </script>
- End of Google analytics configuration -->
 
   <!-- Start of HubSpot Embed Code -->
   <script>
