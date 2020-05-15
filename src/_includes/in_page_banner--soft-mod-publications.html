@@ -1,18 +1,8 @@
 <div class="container section g-pt-200 g-pb-100">
-  <div class="in-page-banner">
-    <div class="in_page_banner__image"></div>
-    <div class="in_page_banner__main">
-      <div class="in_page_banner__inner">
-        <h3 class="in_page_banner__title">
-          {% t software-modernisation.in-page-banner-publications-title %}
-        </h3>
-        <p class="in_page_banner__description">
-          {% t software-modernisation.in-page-banner-publications-text %}
-        </p>
-        {% assign href = "/software-modernisation/" | prepend: site.baseurl %}
-        {% assign text = site.translations[site.lang].software-modernisation.in-page-banner-publications-link %}
-        {% include cta_primary_link.html color='navy' href=href text=text %}
-      </div>
-    </div>
-  </div>
+  {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
+  {% capture description %}{% t software-modernisation.in-page-banner-publications-text %}{% endcapture %}
+  {% assign cta_href = "/software-modernisation/" | prepend: site.baseurl %}
+  {% capture cta_text %}{% t software-modernisation.in-page-banner-publications-link %}{% endcapture %}
+  {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
+  {% include in_page_banner.html background_image=background_image cta_href=cta_href cta_text=cta_text description=description title=title %}
 </div>
