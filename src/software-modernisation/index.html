@@ -290,15 +290,13 @@ metarobots: index,follow
   </div>
 </section><!-- Case Studies -->
 
-<section class="section bg-testimonials g-pb-200--desk">
-  <div class="container-slim center">
-    <h4 class="text-center h2 text-700">{% t software-modernisation.testimonials-heading %}</h4>
-    <p class="lead text-center">
-      {% t software-modernisation.testimonials-subheading %}
-    </p>
+<section class="soft-mod__testimonials bg-testimonials g-pb-200--desk">
+  {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
+  {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
+  {% include section_intro.html description=description title=title %}
 
-    <!--  Testimonials Flexslider -->
-    <div class="flexslider g-mt-50">
+  <div class="container-slim center">
+    <div class="flexslider">
     <ul class="slides box-shadow">
       <li class="g-px-50 g-py-30 text-center">
         <p>{% t software-modernisation.testimonials-bestsecret-p1 %}</p>
@@ -320,7 +318,7 @@ metarobots: index,follow
     </ul>
     </div>
   </div>
-</section><!-- Testimonials -->
+</section>
 
 <section class="bg-slate bg-slate--pattern center">
 
@@ -332,10 +330,10 @@ metarobots: index,follow
   </div>
 
   <div id="get-in-touch" class="soft-mod__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
-    <h2 class="text-center h2 text-700 g-pb-15"> {% t software-modernisation.contact-heading %}</h2>
-    <p class="lead mx-width-600 g-pb-35">
-      {% t software-modernisation.contact-subheading %}
-    </p>
+    {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
+    {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
+    {% include section_intro.html description=description title=title %}
+    
     <div class="sm-enquiry g-pt-50">
       <!-- Hubspot Form Embed - Test Software Modernisation-->
       <!--[if lte IE 8]>
