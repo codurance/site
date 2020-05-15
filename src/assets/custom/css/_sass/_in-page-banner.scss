@@ -8,7 +8,6 @@
   }
 
   @include medium-large-and-extra-large {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-cta.jpg");
     background-position: center;
     background-size: cover;
     float: left;
