@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: promises-and-lies
-title: Functional Programming in Elixir
+title: Promises and Lies
 date: 2020-05-19 10:00:00 +00:00
 author: Christopher Eyre
 description: Adding timeouts to promises in Javascript.
@@ -13,7 +13,7 @@ image:
         href: https://pixabay.com/photos/lying-promises-deception-dishonesty-1562272/
 tags:
     - javascript
-    - promise
+    - node
     - reliability
 abstract: Adding timeouts to promises in Javascript. Introducing lie.js 
 alias: [/2020/05/19/promises-and-lies]
@@ -22,7 +22,7 @@ alias: [/2020/05/19/promises-and-lies]
 ## Promises in Javascript
 
 Promises were added to Javascript as a standard means to avoid nesting callback functions.
-Before promises each function could have it's own functions that would be called once the job is completed. They are mostly used for asynchronous events. Promises are really a Future - this even it going to happen at some point. They are not a means of lazy evaluation or for process control.
+Before promises each function could have it's own functions that would be called once the job is completed. They are mostly used for asynchronous events. They are not a means of lazy evaluation or for process control. Functions that have an async result typically now return a Promise.
 
 Promises have the following format:
 
