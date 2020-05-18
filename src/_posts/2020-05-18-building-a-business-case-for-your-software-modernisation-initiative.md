@@ -18,8 +18,6 @@ pinned_locations:
   - soft-mod
 ---
 
-# Building a business case for your Software Modernisation initiative
-
 If you are reading this article, you are probably thinking of modernising some critical systems in your organisation.
 
 {% include soft-mod-cheat-sheet-banner.html %}
@@ -348,4 +346,4 @@ Writing a business case is a solid step in that direction. Here are some materia
 
 {% include soft-mod-cheat-sheet-banner.html cta_href=cta_href %}
 
-Recommendation: We have prepared a small cheat sheet to help you think through your business case creation. Take some time to answer the questions provided, in order to get an overview of all the areas you might want to consider doing some research on before you start writing.
+**Recommendation:** We have prepared a small cheat sheet to help you think through your business case creation. Take some time to answer the questions provided, in order to get an overview of all the areas you might want to consider doing some research on before you start writing.
