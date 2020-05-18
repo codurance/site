@@ -22,7 +22,7 @@ alias: [/2020/05/19/promises-and-lies]
 ## Promises in Javascript
 
 Promises were added to Javascript as a standard means to avoid nesting callback functions.
-Before promises each function could have it's own functions that would be called once the job is completed. They are mostly used for asynchronous events. They are not a means of lazy evaluation or for process control. Functions that have an async result typically now return a Promise.
+Without promises each function could have its own functions to be called once the job is complete. They are mostly used for asynchronous events. They are not a means of lazy evaluation or for process control. Functions that have an async result typically now return a Promise.
 
 Promises have the following format:
 
