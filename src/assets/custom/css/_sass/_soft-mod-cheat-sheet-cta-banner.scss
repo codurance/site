@@ -1,10 +1,4 @@
 .soft-mod-cheat-sheet-cta-banner {
-  @include small {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  @include medium-large-and-extra-large {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
