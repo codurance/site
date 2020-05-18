@@ -27,7 +27,7 @@ Without promises each function could have its own functions to be called once th
 Promises have the following format:
 
 ```javascript
-var promiseObj = new Promise(executor);
+const promise = new Promise(executor);
 ```
 
 where executor is a function that looks like:
