@@ -16,11 +16,11 @@ tags:
   - business case
 pinned_locations:
   - soft-mod
+in_page_banner: none
 ---
 
 If you are reading this article, you are probably thinking of modernising some critical systems in your organisation.
 
-{% include soft-mod-cheat-sheet-banner.html %}
 
 Stating a clear business case is essential to get your project off the ground. It will allow you to convey your idea and start the conversation around what needs to happen and how the business will benefit from it.
 

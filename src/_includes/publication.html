@@ -136,7 +136,7 @@
 {% if site.data.toggles.feature-sm-blog-in-page-banner == 'on' %}
     {% assign posttags = page.tags %}
     {% for posttag in posttags %}
-        {% if posttag == 'software modernisation' %}
+        {% if page.in_page_banner != 'none' and posttag == 'software modernisation' %}
             {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
             {% capture description %}{% t software-modernisation.in-page-banner-publications-text %}{% endcapture %}
             {% assign cta_href = "/software-modernisation/" | prepend: site.baseurl %}
