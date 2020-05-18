@@ -26,6 +26,8 @@ Stating a clear business case is essential to get your project off the ground. I
 
 In this article, we answer some of the most common questions that come up when helping our clients build their business cases for software modernisation initiatives. We share ideas we use when approaching these scenarios and some of our recommendations. We give examples of how you can approach your research and other aspects of your business case. We will also be using a simple modernisation case that entails migrating from on-premise infrastructure to a cloud-native solution to illustrate some of the points.
 
+{% include soft-mod-cheat-sheet-banner.html %}
+
 ## Why would you want to build a business case in the first place?
 
 The answer is simple: to get support and focus. While it may be clear to you that there is a problem that needs to be solved, most of the time, you are not working in a vacuum. Many actors in the organisation will have a direct impact on the feasibility and success of the project.
