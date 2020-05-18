@@ -46,7 +46,7 @@ promiseObj.then(console.log('It worked'))
           .finally( console.log('It is over') )
 ```
 
-You would typically do more in each block but this gives the idea. It is possible to return a promise from a promise so that they can be chained. Note that the catch at the end of a chain will catch whichever reject happens first.
+It is possible to return a promise from a promise so that they can be chained. Note that the catch at the end of a chain will catch whichever reject happens first.
 
 Once a promise has resolved to a value, then it will always resolve to the same value.
 You can therefore call then on a given promise multiple times and it will always return the same result. I'll come back to this concept later.
