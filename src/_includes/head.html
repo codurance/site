@@ -14,6 +14,19 @@
  <meta name="robots" content="{{ page.metarobots }}" />
 {% endif %}
 
+<!-- Google Tag Manager -->
+<script>
+  var cookie = document.cookie;
+  if (cookie.includes("has-cookie-consent=yes")){
+    console.log("I Have a Cookie");
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WH8CK39');
+  }
+</script>
+<!-- End Google Tag Manager -->
 
 <!-- Open Graph Protocol  -->
 <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{social_title}}" />
@@ -114,20 +127,6 @@
 {% if page.canonical %}
 <link rel="canonical" href="{{ page.canonical.href }}" />
 {% endif %}
-
-<script>
-    dataLayer = [{
-      'anonymizeIp': 'true'
-    }];
-</script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WH8CK39');</script>
-<!-- End Google Tag Manager -->
 
 <script type="text/javascript" src="https://secure.leadforensics.com/js/113763.js" ></script>
 <noscript><img alt="" src="https://secure.leadforensics.com/113763.png?trk_user=113763&trk_tit=jsdisabled&trk_ref=jsdisabled&trk_loc=jsdisabled" height="0px" width="0px" style="display:none;" /></noscript>
