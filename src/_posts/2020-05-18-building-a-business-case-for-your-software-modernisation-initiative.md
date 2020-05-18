@@ -46,9 +46,7 @@ Knowing your audience is one of the aspects you should keep in mind while creati
 
 One crucial aspect to consider is that although you may be talking to a broad audience and an ample range of stakeholders, not all of them are equally important. So start by mapping out your audience and prioritising them is a must. It will be impossible to have a productive conversation if you don't know who your audience is.
 
-![](https://lh6.googleusercontent.com/wn9gvB1q_dzHHiME_LYeYwyBODo5YcZyAK87mIKAgXxuJCzqRsLlk2zRgz5mPKcM5wGn7F_Srlv9sQULr0KBx4_oGdm-c-i0p6VMxHA6Olq2ZJQFBQ-X5-Z672wJ5GAqMGS36Soh)
-
-[STAKEHOLDERS PRIORITISATION IMAGE]
+![Stakeholder priortisation diagram]({{site.baseurl}}/assets/custom/img/blog/2020-05-18-building-a-business-case-for-your-software-modernisation-initiative/stakeholder-priortisation.jpg)
 
 An excellent way to start is to list out who your stakeholders are. Then prioritise them according to two dimensions: the influence they have, and how much impact your initiative will have on them. Once that is done, you can start with stakeholders who are in the high-influence, high-impact quadrant, and move on from there.
 
@@ -66,15 +64,15 @@ The main topics you should focus on:
 
 - What the payoff is for the audience and business
 
-On this particular topic, you may want to check out or [list of questions to help you gather the information that you need as part of your research](https://docs.google.com/document/d/1j-8e9OpMusX3LAXHv6f0ynnvkzuY9_5ZfPcqaD-nPGY/edit#).
+
+{% if site.lang == "en" %}On this particular topic, you may want to check out our <a href="https://info.codurance.com/{{ site.lang }}/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>. 
+{% else %}On this particular topic, you may want to check out our <a href="https://info.codurance.com/{{ site.lang }}/cuestionario-para-preparar-la-gestion-del-cambio" target="_blank">list of questions to help you gather the information that you need as part of your research</a>.{% endif %}
 
 ### Motivation
 
 What is in it for me? Everyone who is going to be listening to your presentation, looking at your slides, or reading your document will have this question in mind. Make sure that as part of the payoff, you give a clear answer to this question for each audience.
 
-![](https://lh6.googleusercontent.com/iXj48GTsTKj16FA4XbmdZzK6Tycm-5Zm59Y5TaPiFZdKNPynkBWXHx5wNRc_fSMlIwlnVBBmSZnbgxSUz2dXrKENlUlZAnn256dyQFHOYKf1L3H4J7tVaods6pxQkXvpyW9mawLR)
-
-[VENN DIAGRAM OF THE THREE]
+![Venn diagram showing where you want your case to live]({{site.baseurl}}/assets/custom/img/blog/2020-05-18-building-a-business-case-for-your-software-modernisation-initiative/where-you-want-your-case-to-live.jpg)
 
 In the intersection between the answer to those three questions is where you want your case to live.
 
@@ -146,9 +144,7 @@ ROI = (Current Value of Investment − Cost of Investment) / Cost of Investment
 
 Which means we have to connect the current value of the investment to some kind of monetary benefit. To do this you need to find metrics that allow you to make the jump into economic value. Obtaining a value directly can be extremely difficult so, sometimes you need to be satisfied with a target measurement that is known to be a leading indicator of that value.
 
-![](https://lh6.googleusercontent.com/YfPOePq4IAKkuLo08oYxHMZ6inMeaOgKSe2DPwRHV4_JQZ-oXPJeVC1g7faQJrV4Dwt1ouG74p0OfZZIkZ2bgvhU8UJ9VJvTaair2PKTFtzMEakESQuZcIe8d-dkfJHZvXtghZRv)
-
-[2D MAP OF AREAS. X IS MORE CERTAIN TO LESS, and Y IS DOWNSIDE TO UPSIDE ]
+![Map of areas in which to build a business case]({{site.baseurl}}/assets/custom/img/blog/2020-05-18-building-a-business-case-for-your-software-modernisation-initiative/map-of-areas.jpg)
 
 There are four areas you may want to consider when figuring out where this initiative you are building a case for, provides the return for your business. As usual, which areas and metrics you end up using will be dependent on the business, objectives and audience itself.
 
@@ -252,9 +248,7 @@ In general, the business cases that win funding are those that tell the most com
 
 Think of the organisation as the protagonist overcoming a challenge, or seizing an opportunity.
 
-![](https://lh5.googleusercontent.com/KDkpI5QLj3vvZhmGI5UaAEK4fZ_EFRjPW5lTxaHRWTekveXIQITrdj1rbsGTqZbIADaaJN7JUsvJQriClywWj4I1hnNlfRaSepc6zD0fFp5xcx8k4Aq-H9L1HCW6vN_3b-zSXQWB)
-
-[IMAGE OF THREE ACT STRUCTURE]
+![Three Act Structure]({{site.baseurl}}/assets/custom/img/blog/2020-05-18-building-a-business-case-for-your-software-modernisation-initiative/three-act-structures.jpg)
 
 Like any other story, the three acts structure lends itself as a great way to organise your account and content. If you are not familiar with it here is the order in which you could do it:
 
@@ -352,6 +346,6 @@ A good place to start is to evaluate various modernisation approaches to select 
 
 Writing a business case is a solid step in that direction. Here are some materials we have prepared to make that process easier.
 
-{% include soft-mod-cheat-sheet-banner.html %}
+{% include soft-mod-cheat-sheet-banner.html cta_href=cta_href %}
 
 Recommendation: We have prepared a small cheat sheet to help you think through your business case creation. Take some time to answer the questions provided, in order to get an overview of all the areas you might want to consider doing some research on before you start writing.
