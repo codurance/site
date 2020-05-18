@@ -5,6 +5,23 @@
   }
 }
 
+.soft-mod__testimonials {
+  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+  background-repeat: no-repeat;
+  padding-top: 50px;
+
+  @include small {
+    background-size: cover;
+  }
+  @include medium-large-and-extra-large {
+    background-size: 110% auto;
+    background-position-y: 360px;
+  }
+  @include large-and-extra-large {
+    padding-bottom: 200px;
+  }
+}
+
 .soft-mod__publications {
   background: $sheen;
 
