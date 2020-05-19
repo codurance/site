@@ -958,3 +958,16 @@
   twitter: natjgray
   linkedin: nataliejgray
   office: London
+
+- id: harish_babu
+  name: Harish Babu
+  image: /assets/custom/img/team/harish_babu.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Born in India, Harish started coding websites when he was in high school. His first professional job was at the age of 23 as a Sharepoint Consultant. Since then, he has shown a passion for writing good quality Software and has followed prescribed software engineering disciplines including Test-Driven Development, Domain-Driven Design, Hexagonal Architecture, and Continuous Delivery. He is proficient in C# and JavaScript and has taken a keen interest in Functional Programming recently.</p>
+    <p>Harish enjoys reading, listening to podcasts, writing blogs, playing video games, good wine, and cooking. </p>
+  email: harish.babu@codurance.com
+  github: chekkan
+  twitter: chekkanz
+  linkedin: devhhb
+  office: London
