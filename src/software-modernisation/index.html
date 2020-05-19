@@ -38,7 +38,7 @@ metarobots: index,follow
 
 
 
-<section class="section soft-mod-problems">
+<section id="how-we-solve-your-problems" class="section soft-mod-problems">
   <div class="container z-index-1">
 
     <div class="text-center--bp768 g-pb-50--desk g-pt-50--desk">
@@ -215,7 +215,7 @@ metarobots: index,follow
 
 
 
-<section class="section bg-slate g-pb-0 g-pb-100--desk g-pt-50--desk">
+<section id="how-we-help-our-clients" class="section bg-slate g-pb-0 g-pb-100--desk g-pt-50--desk">
   <div class="container">
 
     <h2 class="text-center--bp768 text-700 text-white">{% t software-modernisation.clients-title %}</h2>
@@ -290,7 +290,7 @@ metarobots: index,follow
   </div>
 </section><!-- Case Studies -->
 
-<section class="soft-mod__testimonials">
+<section id="testimonials" class="soft-mod__testimonials">
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
   {% include section_intro.html description=description title=title %}
@@ -320,7 +320,7 @@ metarobots: index,follow
   </div>
 </section>
 
-<section class="bg-slate bg-slate--pattern center">
+<section id="compass-by-codurance" class="bg-slate bg-slate--pattern center">
 
   <div class="container-slim center bg-coral bg-compass-cta g-px-25 g-py-50 text-center g-mt-neg100--desk">
     <p class="lead mx-width-600 text-white g-pb-25">{% t software-modernisation.compassCTA-subheading %}</p>
@@ -333,7 +333,7 @@ metarobots: index,follow
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
     {% include section_intro.html description=description title=title %}
-    
+
     <div class="sm-enquiry g-pt-50">
       <!-- Hubspot Form Embed - Test Software Modernisation-->
       <!--[if lte IE 8]>
@@ -350,7 +350,7 @@ metarobots: index,follow
   </div>
 </section>
 
-<div class=soft-mod__publications>
+<div id="publications" class=soft-mod__publications>
   {% if site.data.toggles.feature-soft-mod-webinar == 'on' %}
     {% include soft_mod_webinar_hero_teaser.html %}
   {% endif %}
