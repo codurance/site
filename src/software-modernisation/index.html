@@ -37,22 +37,14 @@ metarobots: index,follow
 </section><!-- sm-hero -->
 
 <section id="how-we-solve-your-problems" class="section soft-mod-problems">
+  {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
+  {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
+  {% assign cta_href = "#get-in-touch" %}
+  {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
+  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+
   <div class="container z-index-1">
-
-    <div class="text-center--bp768 g-pb-50--desk g-pt-50--desk">
-      <h2 class="text-700">{% t software-modernisation.problems-title %}</h2>
-      <p class="lead g-pb-25">
-        {% t software-modernisation.problems-introduction %}
-      </p>
-      {% assign href = "#get-in-touch" %}
-      {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-      {% include cta_primary_link.html color='coral' href=href text=text %}
-      </a>
-    </div>
-
-
     <div class="tabbed-content g-pt-50">
-
       <nav class="tabs">
         <ul>
           <li><a href="#sustainable-change" class="active">{% t software-modernisation.sustainable-change-title %}</a></li>
