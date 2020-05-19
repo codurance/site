@@ -1,3 +1,11 @@
+.curated-publications {
+  padding-top: 50px;
+}
+
+.curated-publications__intro {
+  padding-bottom: 50px;
+}
+
 .curated-publications__hero {
   @include small {
     display: none;

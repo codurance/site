@@ -172,6 +172,15 @@
 /********************************
     Component - HS Form
 ********************************/
+.sm-enquiry {
+  @include small {
+    padding-top: 40px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 50px;
+  }
+}
+
 .sm-enquiry .hbspt-form,
 .sm-enquiry .hs-form-iframe {
   width: 100% !important;

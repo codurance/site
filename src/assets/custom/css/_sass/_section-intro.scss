@@ -1,8 +1,6 @@
 .section-intro {
   @include lateral-spacing;
   @include max-width--column;
-  padding-top: 50px;
-  padding-bottom: 50px;
   text-align: left;
 
   @include medium-large-and-extra-large {
@@ -12,8 +10,14 @@
 
 .section-intro__title {
   @include mercer-bold--responsive;
-  margin-bottom: 25px;
   margin-top: 0;
+
+  @include small {
+    margin-bottom: 25px;
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 15px;
+  }
 }
 
 .section-intro__description {
