@@ -18,7 +18,7 @@
   text-align: center;
   padding-bottom: 50px;
   @include medium-large-and-extra-large {
-    background-color: #1e2631;
+    background-color: $slate;
     padding-top: 200px;
   }
 }
