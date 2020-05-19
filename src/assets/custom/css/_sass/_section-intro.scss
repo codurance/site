@@ -18,6 +18,7 @@
 
 .section-intro__description {
   @include base-reg--responsive;
+  margin-top: 0;
 
   &:not(:last-child) {
     margin-bottom: 20px;
