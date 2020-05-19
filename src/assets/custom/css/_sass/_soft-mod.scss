@@ -1,17 +1,22 @@
 .soft-mod__testimonials {
-  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
   padding-top: 50px;
   overflow: hidden;
 
   @include small {
     background-size: cover;
+    background-position: center 380px;
+    padding-bottom: 50px;
   }
-  @include medium-large-and-extra-large {
-    background-size: 110% auto;
-    background-position-y: 360px;
+  @include medium {
+    background-size: 140% auto;
+    background-position: center 300px;
+    padding-bottom: 150px;
   }
   @include large-and-extra-large {
+    background-size: 110% auto;
+    background-position: center 310px;
     padding-bottom: 200px;
   }
 }
@@ -28,13 +33,6 @@
 
 .soft-mod__sheen-container {
   background: $sheen;
-
-  @include medium-large-and-extra-large {
-    margin-top: -100px;
-    padding-top: 200px;
-    position: relative;
-    z-index: 10;
-  }
 }
 
 .soft-mod__webinar-teaser {

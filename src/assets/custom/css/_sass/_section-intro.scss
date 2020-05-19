@@ -9,7 +9,7 @@
 }
 
 .section-intro__title {
-  @include mercer-bold--responsive;
+  @include freed-bold;
   margin-top: 0;
 
   @include small {
@@ -21,7 +21,7 @@
 }
 
 .section-intro__description {
-  @include base-reg--responsive;
+  @include mercer-reg;
   margin-top: 0;
 
   &:not(:last-child) {

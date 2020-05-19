@@ -16,9 +16,10 @@ $site-base-url: "{{ site.baseurl }}";
 @import "hero-teaser";
 @import "section-intro";
 
+@import "compass-teaser";
 @import "flexslider";
-@import "soft-mod";
 @import "in-page-banner";
+@import "soft-mod";
 @import "soft-mod-cheat-sheet-cta-banner";
 @import "soft-mod-problems";
 @import "soft-mod-misc";
