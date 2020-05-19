@@ -321,7 +321,6 @@ metarobots: index,follow
 </section>
 
 <section class="bg-slate bg-slate--pattern center">
-  {% include compass_on_page_cta.html %}
   <div id="get-in-touch" class="soft-mod__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
@@ -342,11 +341,11 @@ metarobots: index,follow
   </div>
 </section>
 
-<div id="publications" class=soft-mod__publications>
+<div class=soft-mod__sheen-part>
+  {% include compass_on_page_cta.html %}
   {% if site.data.toggles.feature-soft-mod-webinar == 'on' %}
     {% include soft_mod_webinar_hero_teaser.html %}
   {% endif %}
-
   {% include soft_mod_curated_publications.html %}
 </div>
 

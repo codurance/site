@@ -1,4 +1,4 @@
-<section class="curated-publications {{include.class}}">
+<section id="{{ include.id }}" class="curated-publications {{include.class}}">
   {% include section_intro.html description=include.description title=include.title %}
 
   {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
