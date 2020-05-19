@@ -9,6 +9,7 @@
   background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
   padding-top: 50px;
+  overflow: hidden;
 
   @include small {
     background-size: cover;
