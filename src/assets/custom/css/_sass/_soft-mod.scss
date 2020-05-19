@@ -1,22 +1,24 @@
 .soft-mod__testimonials {
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
-  padding-top: 50px;
   overflow: hidden;
 
   @include small {
     background-size: cover;
     background-position: center 380px;
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   @include medium {
-    background-size: 140% auto;
-    background-position: center 300px;
+    background-size: 135% auto;
+    background-position: center 370px;
     padding-bottom: 150px;
+    padding-top: 80px;
   }
   @include large-and-extra-large {
     background-size: 110% auto;
     background-position: center 310px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
 }
@@ -44,13 +46,24 @@
 .soft-mod__our-clients,
 .soft-mod__get-in-touch {
   background-color: $slate;
+}
 
+.soft-mod__our-clients {
   @include small {
     padding-bottom: 50px;
     padding-top: 50px;
   }
   @include medium-large-and-extra-large {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+}
+
+.soft-mod__get-in-touch {
+  @include medium {
+    padding-top: 50px;
+  }
+  @include large-and-extra-large {
     padding-top: 100px;
   }
 }

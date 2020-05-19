@@ -24,17 +24,27 @@
 .curated-publications__cta-space {
   @include lateral-spacing;
   text-align: center;
-  padding-bottom: 50px;
+
+  @include small {
+    padding-bottom: 50px;
+  }
+
   @include medium-large-and-extra-large {
     background-color: $slate;
-    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-top: 165px;
+  }
+
+  @include medium {
+    padding-top: 165px;
+  }
+
+  @include large-and-extra-large {
+    padding-top: 210px;
   }
 }
 
 .curated-publications__cta {
-  margin-bottom: 30px;
-  margin-top: 30px;
-
   @include small {
     @include cta--secondary-dark;
   }
