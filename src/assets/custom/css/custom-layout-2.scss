@@ -12,7 +12,7 @@ title: CSS
    Specificity ranges from lowest to highest (more generic to more specific)
 */
 
-@import 'custom-colors';
+@import "colors";
 $orange-colour: #e67e22;
 
 /* Homepage
@@ -75,7 +75,7 @@ html {
 }
 
 .block-cta:after {
-  content: '';
+  content: "";
   bottom: -2px;
   left: 0;
   height: 2px;
@@ -119,8 +119,8 @@ html {
    -------------------------------------- */
 
 .icon-calander {
-  content: '';
-  background: url('{{ site.baseurl }}/assets/custom/img/icon-calander.svg');
+  content: "";
+  background: url("{{ site.baseurl }}/assets/custom/img/icon-calander.svg");
   background-size: auto 85%;
   background-position: left top;
   background-repeat: no-repeat;
@@ -129,8 +129,8 @@ html {
 }
 
 .container--blog-meta {
-  background-color:#FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.09);
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.09);
   border-radius: 3px;
   margin-bottom: 20px;
   margin-top: -45px;
@@ -229,7 +229,7 @@ html {
 }
 
 .g-bg-cover--text-overlay::after {
-  content: '';
+  content: "";
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
@@ -270,7 +270,7 @@ html {
     display: inline-block;
     height: 20px;
     margin: 10px 0;
-    background: url('{{ site.baseurl }}/assets/custom/img/circled-tick.png');
+    background: url("{{ site.baseurl }}/assets/custom/img/circled-tick.png");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     list-style: none;
@@ -298,13 +298,13 @@ html {
   }
 
   .curly-quotes:before {
-    content: '\201C';
+    content: "\201C";
     margin-right: 4px;
     margin-left: 0px;
   }
 
   .curly-quotes:after {
-    content: '\201D';
+    content: "\201D";
     margin-left: 4px;
     margin-right: -8px;
   }
@@ -402,7 +402,7 @@ html {
 .services {
   /* Hero */
   &-hero {
-    background-image: url('{{site.baseurl}}/assets/custom/img/bg-pattern.jpg');
+    background-image: url("{{site.baseurl}}/assets/custom/img/bg-pattern.jpg");
     background-size: cover;
     background-position: center;
 
@@ -418,7 +418,7 @@ html {
 
     /* md */
     @media (min-width: 992px) {
-      background-image: url('{{site.baseurl}}/assets/custom/img/services/expert_advice_wide_2.jpg');
+      background-image: url("{{site.baseurl}}/assets/custom/img/services/expert_advice_wide_2.jpg");
       background-size: cover;
     }
 
@@ -433,7 +433,7 @@ html {
 
     /* md */
     @media (min-width: 992px) {
-      background-image: url('{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg');
+      background-image: url("{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg");
       background-size: cover;
       background-position: center right;
     }
@@ -686,7 +686,7 @@ i.no-border {
 .breadcrumbs-v3 {
   &.ourpeople {
     /* 0 0 2 0 */
-    background: url('{{ site.baseurl }}/assets/custom/img/careers/ourpeople.jpg')
+    background: url("{{ site.baseurl }}/assets/custom/img/careers/ourpeople.jpg")
       no-repeat;
     background-size: cover;
     background-position: center center;
@@ -694,7 +694,7 @@ i.no-border {
 
   &.ourclients {
     /* 0 0 2 0 */
-    background: url('{{ site.baseurl }}/assets/custom/img/clients/ourclients.jpg')
+    background: url("{{ site.baseurl }}/assets/custom/img/clients/ourclients.jpg")
       no-repeat;
     background-size: cover;
     background-position: center center;
@@ -702,7 +702,7 @@ i.no-border {
 
   &.ourservices {
     /* 0 0 2 0 */
-    background: url('{{ site.baseurl }}/assets/custom/img/services/ourservices.jpg')
+    background: url("{{ site.baseurl }}/assets/custom/img/services/ourservices.jpg")
       no-repeat;
     background-size: cover;
     background-position: center center;
@@ -710,7 +710,7 @@ i.no-border {
 
   &.thesoftwarecraftsman {
     /* 0 0 2 0 */
-    background: url('{{ site.baseurl }}/assets/custom/img/thesoftwarecraftsman/book-page-image.jpg')
+    background: url("{{ site.baseurl }}/assets/custom/img/thesoftwarecraftsman/book-page-image.jpg")
       no-repeat;
     background-size: cover;
     background-position: center center;
@@ -738,7 +738,7 @@ i.no-border {
 .client-links {
   /* 0 0 1 0 */
   text-align: center;
-  font: 400 16px/21px 'Lato', sans-serif;
+  font: 400 16px/21px "Lato", sans-serif;
   padding: 0 15px;
   text-transform: uppercase;
 
@@ -754,8 +754,8 @@ i.no-border {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -806,7 +806,6 @@ i.no-border {
     margin-left: 30px;
   }
 }
-
 
 /* Post with text side by side images */
 .image-side-by-side-text {
@@ -871,7 +870,7 @@ i.no-border {
     height: auto;
     padding: 50px 0;
     position: relative;
-    background: url('{{ site.baseurl }}/assets/custom/img/case-study/paralax.jpg')
+    background: url("{{ site.baseurl }}/assets/custom/img/case-study/paralax.jpg")
       repeat fixed;
     background-size: cover;
   }
@@ -897,7 +896,7 @@ i.no-border {
       left: 50%;
       height: 1px;
       width: 70px;
-      content: ' ';
+      content: " ";
       margin-left: -35px;
       position: absolute;
       background: $orange-colour;
@@ -947,7 +946,7 @@ i.no-border {
       bottom: 0px;
       height: 1px;
       width: 100%;
-      content: ' ';
+      content: " ";
       position: absolute;
       left: 0;
       background: black;
@@ -991,7 +990,7 @@ i.no-border {
   left: 50%;
   top: -75px;
   font-size: 80px;
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   margin-left: -25px;
   font-family: Georgia, serif;
@@ -1019,7 +1018,7 @@ i.no-border {
   left: 50%;
   top: -75px;
   font-size: 80px;
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   margin-left: -25px;
   font-family: Georgia, serif;
@@ -1094,4 +1093,3 @@ blockquote.no-left-border {
 .hljs {
   background-color: #f8f9fa;
 }
-

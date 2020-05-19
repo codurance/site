@@ -12,7 +12,7 @@
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
-@import 'custom-colors';
+@import "colors";
 
 $orange-colour: #e67e22;
 
@@ -124,7 +124,7 @@ h5 {
 }
 
 .img-border-orange-yellow:after {
-  content: '';
+  content: "";
   background: rgb(239, 119, 38);
   background: linear-gradient(
     90deg,
@@ -181,7 +181,7 @@ a {
 }
 
 .u-header__section--light
-  .navbar-nav:not([class*='u-main-nav-v'])
+  .navbar-nav:not([class*="u-main-nav-v"])
   .active
   > .nav-link {
   color: $codurance-orange !important;
