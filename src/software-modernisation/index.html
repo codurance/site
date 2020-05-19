@@ -320,22 +320,14 @@ metarobots: index,follow
   </div>
 </section>
 
-<section id="compass-by-codurance" class="bg-slate bg-slate--pattern center">
-
-  <div class="container-slim center bg-coral bg-compass-cta g-px-25 g-py-50 text-center g-mt-neg100--desk">
-    <p class="lead mx-width-600 text-white g-pb-25">{% t software-modernisation.compassCTA-subheading %}</p>
-    {% assign href = "http://compass.codurance.com" %}
-    {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
-    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
-  </div>
-
+<section class="bg-slate bg-slate--pattern center">
+  {% include compass_on_page_cta.html %}
   <div id="get-in-touch" class="soft-mod__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
     {% include section_intro.html description=description title=title %}
 
     <div class="sm-enquiry g-pt-50">
-      <!-- Hubspot Form Embed - Test Software Modernisation-->
       <!--[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
       <![endif]-->
