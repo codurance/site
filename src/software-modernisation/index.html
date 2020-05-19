@@ -367,18 +367,3 @@ metarobots: index,follow
     orientation: 'up',
   });
 </script>
-
-<script>
-  window.onload = function scrollToSectionFromURL() {
-    const sectionId = window.location.hash;
-    const sectionToScrollTo = sectionId ? document.querySelector(sectionId) : null;
-
-    if (!sectionId || !sectionToScrollTo) return;
-
-    const navbar = document.getElementById('js-header');
-    const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
-    const yPosition = sectionToScrollTo.offsetTop - navbarHeight;
-
-    window.scrollTo({top: yPosition, behavior: 'smooth'})
-  }
-</script>
