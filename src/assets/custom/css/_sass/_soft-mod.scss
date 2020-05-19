@@ -33,8 +33,23 @@
   }
 }
 
+.soft-mod__our-clients,
 .soft-mod__get-in-touch {
   background-color: $slate;
   text-align: center;
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
 }
 
+.soft-mod__our-clients {
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

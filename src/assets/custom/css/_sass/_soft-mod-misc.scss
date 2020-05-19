@@ -83,10 +83,6 @@
     Helpers - Backgrounds
 ********************************/
 
-.bg-slate {
-  background-color: #2b3342;
-}
-
 .bg-blue {
   background-color: #0f4071;
 }
@@ -97,12 +93,6 @@
 
 .bg-coral {
   background-color: #fb7268;
-}
-
-.bg-slate--pattern {
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .bg-compass-cta {
