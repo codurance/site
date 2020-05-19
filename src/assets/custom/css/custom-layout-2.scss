@@ -388,12 +388,12 @@ html {
 
 .btn-codurance-color {
   color: white;
-  background-color: $codurance-orange;
-  border-color: $codurance-orange;
+  background-color: $orange;
+  border-color: $orange;
 }
 
 .codurance-green-background {
-  background-color: $codurance-green;
+  background-color: $green;
 }
 
 /* Services
@@ -414,7 +414,7 @@ html {
 
   /* Expert Advice */
   &-expert-advice {
-    background-color: $codurance-midnightblue;
+    background-color: $midnightblue;
 
     /* md */
     @media (min-width: 992px) {
@@ -423,13 +423,13 @@ html {
     }
 
     &__content {
-      background-color: $codurance-midnightblue;
+      background-color: $midnightblue;
     }
   }
 
   /* Effective Delivery */
   &-effective-delivery {
-    background-color: $codurance-midnightblue;
+    background-color: $midnightblue;
 
     /* md */
     @media (min-width: 992px) {
@@ -439,7 +439,7 @@ html {
     }
 
     &__content {
-      background-color: $codurance-midnightblue;
+      background-color: $midnightblue;
     }
   }
 
