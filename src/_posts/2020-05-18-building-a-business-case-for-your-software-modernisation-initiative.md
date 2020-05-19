@@ -65,8 +65,8 @@ The main topics you should focus on:
 - What the payoff is for the audience and business
 
 
-{% if site.lang == "en" %}On this particular topic, you may want to check out our <a href="https://info.codurance.com/{{ site.lang }}/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>. 
-{% else %}On this particular topic, you may want to check out our <a href="https://info.codurance.com/{{ site.lang }}/cuestionario-para-preparar-la-gestion-del-cambio" target="_blank">list of questions to help you gather the information that you need as part of your research</a>.{% endif %}
+On this particular topic, you may want to check out our <a href="https://info.codurance.com/en/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>. 
+
 
 ### Motivation
 
