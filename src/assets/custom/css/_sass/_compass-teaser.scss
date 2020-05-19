@@ -6,10 +6,13 @@
   background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 25px;
   text-align: center;
 
+  @include small {
+    padding: 50px 25px;
+  }
   @include medium-large-and-extra-large {
+    padding: 50px;
     position: relative;
     top: -100px;
   }
