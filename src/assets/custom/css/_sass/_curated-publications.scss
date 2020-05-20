@@ -34,10 +34,7 @@
     background-color: $slate;
     padding-bottom: 100px;
   }
-  @include medium {
-    padding-top: 165px;
-  }
-  @include large-and-extra-large {
+  @include medium-large-and-extra-large {
     padding-top: 210px;
   }
 }
