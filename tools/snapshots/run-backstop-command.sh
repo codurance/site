@@ -24,7 +24,7 @@ function waitForHttp {
   printf ' website started!'
 }
 
-trap cleanup EXIT # Run `cleanup` if the script exits unexpectedly
+trap cleanup EXIT
 
 function runBackstopCommand {
   command=$1
