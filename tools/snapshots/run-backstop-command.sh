@@ -26,7 +26,7 @@ function waitForHttp {
 
 function hasWebsiteFinishedBuilding {
   containerId=$(dc ps -q site)
-  numberOfSuccesses=$(dr logs $containerId | grep -o "Build complete" | wc -l | tr -d ' ')
+  numberOfSuccesses=$(docker logs $containerId | grep -o "Build complete" | wc -l | tr -d ' ')
   echo $(if [numberOfSuccesses -eq 2] then true else false fi)
 }
 
