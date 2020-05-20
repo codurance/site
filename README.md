@@ -288,24 +288,22 @@ docker push codurance/website_deployment_base:latest
 
 ## Tests
 
-### Visual Regression Tests
+### Visual Regression
 
-We have some documentation for backstop [here](tools/snapshots/README.md)
 
-Backstopjs can be used to regression test websites. It does this by capturing screenshots of the two sites and comparing them.
-This is especially useful if you are refactoring css.
+Under the hood we are using [Backstop.js](https://garris.github.io/BackstopJS/)
 
-See the linked documents to show how to install.
 
-Once installed here are the commands to make it work:
+This command sets up a Docker image with the website and Backstop running side by side:
 
 ```
-backstop reference
-backstop test
+npm test:visual
 ```
 
-The first captures a snapshot of the reference site (currently set to https://codurance.com)
-The second runs it against the local version of the site (locahost:4000) and compares the differences.
+Approve intended changes with `npm test:visual-approve`
+
+_Reference files should already exist but if you do need to regenerate them run `./tools/snapshots/create-visual-regression-references.sh`_
+
 
 ## Feature Toggles
 
