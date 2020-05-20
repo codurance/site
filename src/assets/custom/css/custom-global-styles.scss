@@ -12,7 +12,7 @@
    Specificity ranges from lowest to highest (more generic to more specific)
  */
 
-@import 'custom-colors';
+@import "colors";
 
 $orange-colour: #e67e22;
 
@@ -124,7 +124,7 @@ h5 {
 }
 
 .img-border-orange-yellow:after {
-  content: '';
+  content: "";
   background: rgb(239, 119, 38);
   background: linear-gradient(
     90deg,
@@ -147,15 +147,15 @@ h5 {
 // Background colour overides
 
 .g-bg-green {
-  background-color: $codurance-green !important;
+  background-color: $green !important;
 }
 
 .g-bg-orange {
-  background-color: $codurance-orange !important;
+  background-color: $orange !important;
 }
 
 .g-bg-red {
-  background-color: $codurance-red !important;
+  background-color: $red !important;
 }
 
 // Pagination - hover / active color overides
@@ -165,34 +165,34 @@ h5 {
 
 .u-pagination-v1-4:hover {
   color: #555 !important;
-  border-color: $codurance-orange !important;
+  border-color: $orange !important;
 }
 
 .u-pagination-v1-4--active {
-  background-color: $codurance-orange !important;
-  border-color: $codurance-orange !important;
+  background-color: $orange !important;
+  border-color: $orange !important;
 }
 
 /* Unify template overides
    -------------------------------------- */
 
 a {
-  color: $codurance-orange;
+  color: $orange;
 }
 
 .u-header__section--light
-  .navbar-nav:not([class*='u-main-nav-v'])
+  .navbar-nav:not([class*="u-main-nav-v"])
   .active
   > .nav-link {
-  color: $codurance-orange !important;
+  color: $orange !important;
 }
 
 .g-color-primary {
-  color: $codurance-orange !important;
+  color: $orange !important;
 }
 
 .g-brd-primary {
-  border-color: $codurance-orange !important;
+  border-color: $orange !important;
 }
 
 .lead {

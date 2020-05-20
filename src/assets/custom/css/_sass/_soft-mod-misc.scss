@@ -49,11 +49,6 @@
 }
 
 @media (min-width: 992px) {
-  .g-mt-neg100--desk {
-    top: -100px !important;
-    position: relative;
-  }
-
   .g-pt-0--desk {
     padding-top: 0px !important;
   }
@@ -83,10 +78,6 @@
     Helpers - Backgrounds
 ********************************/
 
-.bg-slate {
-  background-color: #2b3342;
-}
-
 .bg-blue {
   background-color: #0f4071;
 }
@@ -97,18 +88,6 @@
 
 .bg-coral {
   background-color: #fb7268;
-}
-
-.bg-slate--pattern {
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.bg-compass-cta {
-  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 @media (min-width: 800px) {
@@ -173,8 +152,10 @@
 ********************************/
 
 .container-slim {
-  padding-left: 15px;
-  padding-right: 15px;
+  @include small {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   @include max-width--column;
 }
@@ -182,6 +163,15 @@
 /********************************
     Component - HS Form
 ********************************/
+.sm-enquiry {
+  @include small {
+    padding-top: 40px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 50px;
+  }
+}
+
 .sm-enquiry .hbspt-form,
 .sm-enquiry .hs-form-iframe {
   width: 100% !important;

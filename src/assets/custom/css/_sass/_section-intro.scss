@@ -1,28 +1,33 @@
 .section-intro {
   @include lateral-spacing;
   @include max-width--column;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  text-align: left;
+
+  @include medium-large-and-extra-large {
+    text-align: center;
+  }
 }
 
 .section-intro__title {
-  @include mercer-bold--responsive;
+  @include freed-bold;
   margin-top: 0;
 
   @include small {
     margin-bottom: 25px;
   }
-
   @include medium-large-and-extra-large {
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
   }
 }
 
 .section-intro__description {
-  @include base-reg--responsive;
+  @include mercer-reg;
+  margin-top: 0;
 
-  @include medium-large-and-extra-large {
-    text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }

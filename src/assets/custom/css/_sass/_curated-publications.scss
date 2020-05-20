@@ -1,3 +1,11 @@
+.curated-publications {
+  padding-top: 50px;
+}
+
+.curated-publications__intro {
+  padding-bottom: 50px;
+}
+
 .curated-publications__hero {
   @include small {
     display: none;
@@ -16,17 +24,22 @@
 .curated-publications__cta-space {
   @include lateral-spacing;
   text-align: center;
-  padding-bottom: 50px;
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
   @include medium-large-and-extra-large {
-    background-color: #1e2631;
-    padding-top: 200px;
+    background-color: $slate;
+    padding-bottom: 100px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 210px;
   }
 }
 
 .curated-publications__cta {
-  margin-bottom: 30px;
-  margin-top: 30px;
-
   @include small {
     @include cta--secondary-dark;
   }

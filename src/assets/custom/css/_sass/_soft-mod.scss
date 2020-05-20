@@ -1,40 +1,66 @@
-.soft-mod__form-holder {
-  @include medium-large-and-extra-large {
-    position: relative;
-    z-index: 20;
-  }
-}
-
 .soft-mod__testimonials {
-  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
-  padding-top: 50px;
+  overflow: hidden;
 
   @include small {
     background-size: cover;
+    background-position: center 380px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
-  @include medium-large-and-extra-large {
-    background-size: 110% auto;
-    background-position-y: 360px;
+  @include medium {
+    background-size: 135% auto;
+    background-position: center 370px;
+    padding-bottom: 150px;
+    padding-top: 80px;
   }
   @include large-and-extra-large {
+    background-size: 110% auto;
+    background-position: center 310px;
+    padding-top: 100px;
     padding-bottom: 200px;
   }
 }
 
-.soft-mod__publications {
-  background: $sheen;
-
-  @include medium-large-and-extra-large {
-    margin-top: -100px;
-    padding-top: 200px;
-    position: relative;
-    z-index: 10;
+.soft-mod__testimonials-intro {
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 20px;
   }
+  @include medium-large-and-extra-large {
+    padding-bottom: 60px;
+  }
+}
+
+.soft-mod__sheen-container {
+  background: $sheen;
 }
 
 .soft-mod__webinar-teaser {
   @include medium-large-and-extra-large {
     margin-bottom: 50px;
+  }
+}
+
+.soft-mod__our-clients,
+.soft-mod__get-in-touch {
+  background-color: $slate;
+}
+
+.soft-mod__our-clients {
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+}
+
+.soft-mod__get-in-touch {
+  @include medium-large-and-extra-large {
+    padding-top: 50px;
   }
 }

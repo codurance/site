@@ -13,7 +13,7 @@
 */
 
 /* Buttons - used across multiple pages */
-@import 'custom-colors';
+@import "colors";
 
 $dark-orange-colour: #d35400;
 $orange-colour: #e67e22;
@@ -21,170 +21,185 @@ $gray-colour: #687074;
 $white-colour: #fff;
 
 .btn-more {
-    font-size: 15px;
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: transparent;
-    color: white;
-    font-weight: 700;
-    background: #EF7726;
-    border: none;
-    overflow: hidden;
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  background: #ef7726;
+  border: none;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  span {
+    z-index: 1;
     position: relative;
-
-    &:hover {
-        color:rgba(255,255,255,0.8)!important;
-    }
-
-    span {
-        z-index: 1;
-        position: relative;
-    }
+  }
 }
 
 .btn-more:hover {
-    &:after {
-        transform: rotate(180deg);
-        transition: all 0.7s ease;
-    }
+  &:after {
+    transform: rotate(180deg);
+    transition: all 0.7s ease;
+  }
 }
 
 .btn-more-large {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .btn-small {
-    border-radius: 6px;
-    font-size: 18px;
-    margin: 10px 0;
-    padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 5px 10px;
 
-    &-orange {
-        background-color: transparent;
-        border: 1px solid $orange-colour;
-        color: $orange-colour;
-        font-size: 11px;
-        text-transform: uppercase;
-        margin-left: 10px;
-
-        &:hover {
-            background-color: $orange-colour;
-            color: $white-colour;
-        }
-    }
+  &-orange {
+    background-color: transparent;
+    border: 1px solid $orange-colour;
+    color: $orange-colour;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 10px;
 
     &:hover {
-        transition: .3s;
+      background-color: $orange-colour;
+      color: $white-colour;
     }
+  }
+
+  &:hover {
+    transition: 0.3s;
+  }
 }
 
-.button-with-bg-image span {   /* 0 0 1 1 */
-    font-size: 24px;
-    margin: 0;
-    position: absolute;
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    color: $white-colour;
+.button-with-bg-image span {
+  /* 0 0 1 1 */
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  color: $white-colour;
 }
 
 .btn-u {
-    &-orange { /* 0 0 1 0 */
-        background: $orange-colour;
+  &-orange {
+    /* 0 0 1 0 */
+    background: $orange-colour;
 
-        &:hover, /* 0 0 2 0 */
+    &:hover, /* 0 0 2 0 */
         &:focus, /* 0 0 2 0 */
         &:active, /* 0 0 2 0 */
-        &.active { /* 0 0 2 0 */
-            background: $dark-orange-colour;
-            color: $white-colour;
-            text-decoration: none;
-        }
+        &.active {
+      /* 0 0 2 0 */
+      background: $dark-orange-colour;
+      color: $white-colour;
+      text-decoration: none;
     }
+  }
 
-    &.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
-        color: white !important;
-        background-color: $orange-colour;
-    }
+  &.btn-brd.btn-u-orange:hover {
+    /* 0 0 4 0 */
+    color: white !important;
+    background-color: $orange-colour;
+  }
 }
 
-.btn-brd.btn-u-orange { /* 0 0 2 0 */
-    border-color: $orange-colour;
+.btn-brd.btn-u-orange {
+  /* 0 0 2 0 */
+  border-color: $orange-colour;
 
-    &:hover { /* 0 0 3 0 */
-        color: $dark-orange-colour;
-        border-color: $dark-orange-colour;
-    }
+  &:hover {
+    /* 0 0 3 0 */
+    color: $dark-orange-colour;
+    border-color: $dark-orange-colour;
+  }
 
-    &.btn-brd-hover:hover {   /* 0 0 4 0 */
-        background: $dark-orange-colour;
-    }
-}
-
-.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
+  &.btn-brd-hover:hover {
+    /* 0 0 4 0 */
     background: $dark-orange-colour;
+  }
+}
+
+.open.dropdown-toggle.btn-u-orange {
+  /* 0 0 3 0 */
+  background: $dark-orange-colour;
+  color: $white-colour;
+  text-decoration: none;
+}
+
+#sharethisButtons {
+  /* 0 1 0 0 */
+  padding-bottom: 30px;
+}
+
+.btn-less {
+  /* 0 0 1 0 */
+  border-radius: 6px;
+  font-size: x-small;
+  margin: 10px 0;
+  padding: 5px 10px;
+
+  &-light {
+    /* 0 0 1 0 */
+    background-color: transparent;
+    border: 1px solid $white-colour;
     color: $white-colour;
-    text-decoration: none;
-}
 
-#sharethisButtons {   /* 0 1 0 0 */
-    padding-bottom: 30px;
-}
-
-
-.btn-less {   /* 0 0 1 0 */
-    border-radius: 6px;
-    font-size: x-small;
-    margin: 10px 0;
-    padding: 5px 10px;
-
-    &-light {  /* 0 0 1 0 */
-        background-color: transparent;
-        border: 1px solid $white-colour;
-        color: $white-colour;
-
-        &:hover {  /* 0 0 2 0 */
-            background-color: $white-colour;
-            color: $gray-colour;
-        }
+    &:hover {
+      /* 0 0 2 0 */
+      background-color: $white-colour;
+      color: $gray-colour;
     }
+  }
 
-    &:hover {  /* 0 0 2 0 */
-        transition: .3s;
-    }
+  &:hover {
+    /* 0 0 2 0 */
+    transition: 0.3s;
+  }
 }
 
 .ban-btn-offblack {
-    color: #fff;
-    background-color: #2D2D2D;
-    border-color: #fff;
-  }
+  color: #fff;
+  background-color: #2d2d2d;
+  border-color: #fff;
+}
 
-  .ban-btn-offblack:hover, .ban-btn-offblack.active {
-    border-color: #fff;
-    background-color:#fff;
-  }
+.ban-btn-offblack:hover,
+.ban-btn-offblack.active {
+  border-color: #fff;
+  background-color: #fff;
+}
 
-  .ban-btn-offblack:hover, .ban-btn-offblack:focus, .ban-btn-offblack.active {
-    color: #000;
-  }
+.ban-btn-offblack:hover,
+.ban-btn-offblack:focus,
+.ban-btn-offblack.active {
+  color: #000;
+}
 
-  .how-we-work-container {
-      height: 220px;
-  }
+.how-we-work-container {
+  height: 220px;
+}
 
-  .btn-pointer-cursor {
-      cursor: pointer;
-  }
+.btn-pointer-cursor {
+  cursor: pointer;
+}
 
-  .hs-button {
-      background: green!important;
-  }
+.hs-button {
+  background: green !important;
+}

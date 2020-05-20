@@ -36,25 +36,15 @@ metarobots: index,follow
   </div><!-- grid -->
 </section><!-- sm-hero -->
 
-
-
 <section id="how-we-solve-your-problems" class="section soft-mod-problems">
+  {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
+  {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
+  {% assign cta_href = "#get-in-touch" %}
+  {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
+  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+
   <div class="container z-index-1">
-
-    <div class="text-center--bp768 g-pb-50--desk g-pt-50--desk">
-      <h2 class="text-700">{% t software-modernisation.problems-title %}</h2>
-      <p class="lead g-pb-25">
-        {% t software-modernisation.problems-introduction %}
-      </p>
-      {% assign href = "#get-in-touch" %}
-      {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-      {% include cta_primary_link.html color='coral' href=href text=text %}
-      </a>
-    </div>
-
-
     <div class="tabbed-content g-pt-50">
-
       <nav class="tabs">
         <ul>
           <li><a href="#sustainable-change" class="active">{% t software-modernisation.sustainable-change-title %}</a></li>
@@ -213,9 +203,7 @@ metarobots: index,follow
   </div>
 </section>
 
-
-
-<section id="how-we-help-our-clients" class="section bg-slate g-pb-0 g-pb-100--desk g-pt-50--desk">
+<section id="how-we-help-our-clients" class="soft-mod__our-clients">
   <div class="container">
 
     <h2 class="text-center--bp768 text-700 text-white">{% t software-modernisation.clients-title %}</h2>
@@ -293,7 +281,7 @@ metarobots: index,follow
 <section id="testimonials" class="soft-mod__testimonials">
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
-  {% include section_intro.html description=description title=title %}
+  {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
 
   <div class="container-slim center">
     <div class="flexslider">
@@ -320,22 +308,19 @@ metarobots: index,follow
   </div>
 </section>
 
-<section id="compass-by-codurance" class="bg-slate bg-slate--pattern center">
+<div class=soft-mod__sheen-container>
+  {% include compass_teaser.html %}
+  {% include soft_mod_webinar_hero_teaser.html %}
+  {% include soft_mod_curated_publications.html %}
+</div>
 
-  <div class="container-slim center bg-coral bg-compass-cta g-px-25 g-py-50 text-center g-mt-neg100--desk">
-    <p class="lead mx-width-600 text-white g-pb-25">{% t software-modernisation.compassCTA-subheading %}</p>
-    {% assign href = "http://compass.codurance.com" %}
-    {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
-    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
-  </div>
-
-  <div id="get-in-touch" class="soft-mod__form-holder container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
+<section id="get-in-touch" class="soft-mod__get-in-touch">
+  <div class="container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
     {% include section_intro.html description=description title=title %}
 
-    <div class="sm-enquiry g-pt-50">
-      <!-- Hubspot Form Embed - Test Software Modernisation-->
+    <div class="sm-enquiry">
       <!--[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
       <![endif]-->
@@ -349,14 +334,6 @@ metarobots: index,follow
     </div>
   </div>
 </section>
-
-<div id="publications" class=soft-mod__publications>
-  {% if site.data.toggles.feature-soft-mod-webinar == 'on' %}
-    {% include soft_mod_webinar_hero_teaser.html %}
-  {% endif %}
-
-  {% include soft_mod_curated_publications.html %}
-</div>
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
