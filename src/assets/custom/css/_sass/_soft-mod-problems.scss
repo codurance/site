@@ -12,7 +12,20 @@
     z-index: 0;
   }
 
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  @include medium-and-large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   @include extra-large {
+    padding-top: 100px;
+
+
     &:before {
       right: 100px;
     }
