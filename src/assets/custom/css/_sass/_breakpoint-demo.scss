@@ -1,0 +1,49 @@
+.breakpoint-demo {
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+
+  @include small {
+    &:after {
+      content: ": small";
+    }
+  }
+
+  @include small-and-medium {
+    border-bottom: 0.125rem solid red;
+  }
+
+  @include small-medium-and-large {
+    border-right: 0.125rem solid yellow;
+  }
+
+  @include medium {
+    &:after {
+      content: ": medium";
+    }
+  }
+
+  @include medium-and-large {
+    border-left: 0.25rem solid cyan;
+  }
+
+  @include medium-large-and-extra-large {
+    border-top: 0.25rem solid lime;
+  }
+
+  @include large {
+    &:after {
+      content: ": large";
+    }
+  }
+
+  @include large-and-extra-large {
+    border-bottom: 0.3rem solid red;
+  }
+
+  @include extra-large {
+    &:after {
+      content: ": extra-large";
+    }
+  }
+}

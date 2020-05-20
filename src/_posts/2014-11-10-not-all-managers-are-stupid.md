@@ -2,6 +2,9 @@
 layout: post
 name: not-all-managers-are-stupid
 title: Not all managers are stupid
+title-es: No todos los managers son estúpidos
+description: Managers have a broader view of needs. As craftspeople we care about software, but we must understand and know the context of decisions that can affect the entire organization.
+description-es: Los managers tienen una visión más amplia de las necesidades. Como craftspeople nos preocupamos por el software, pero hay que entender y conocer el contexto de las decisiones que pueden afectar a toda la organización.
 date: 2014-11-10 04:20:00 +00:00
 author: Sandro Mancuso
 image:
@@ -11,6 +14,7 @@ tags:
 - agile
 - teams
 - managers
+- software modernisation
 ---
 
 _(The following story was a bit altered in order to keep it short(ish) and to protect the innocents)_

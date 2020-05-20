@@ -4,42 +4,47 @@ title: Services
 ---
 
 <!-- Hero -->
-<section class="services-hero height-is-based-on-content">
+<section class="bg-gradient-midnight-blue height-is-based-on-content">
   <div class="container g-z-index-1 g-py-100 text-center">
-    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
+    <h1 class="services-hero-title g-font-weight-900 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
     <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
       <p class="services-hero-sub-title mb-0">{%t services.subtitle %}</p>
     </div>
   </div>
 </section>
 
+<div class="section g-pt-0 g-pb-0"> 
+  <div>
+    {% include soft_mod_in_page_banner.html %}
+  </div>
+</div>
+
 <!-- We advise, we coach, we deliver  -->
 {% include_relative _includes/we_advise_coach_deliver.html %}
 
 
 <!-- Our Expertise -->
-<div class="section gray-section">
+<div class="section bg-gradient-midnight-blue">
   <div class="container">
 
-    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center">
-        <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title">{%t services.our-expertise.title %}</h2>
+    <div class="title-header">
+      <h2 class="h3 g-color-white">{%t services.our-expertise.title %}</h2>
     </div>
-    <div class="lead g-mb-20 text-center">
+
+    <div class="lead g-mb-20 text-center g-color-white">
         {%t services.our-expertise.subtitle %}
     </div>
 
     <div class="row">
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-wrench u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">Bespoke Software</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-bespoke.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">Bespoke Software</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Quality Product Development</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Enterprise Systems Engineering</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Fast Prototyping</li>
+            <li class="g-color-white g-py-5">Quality Product Development</li>
+            <li class="g-color-white g-py-5">Enterprise Systems Engineering</li>
+            <li class="g-color-white g-py-5">Fast Prototyping</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -47,15 +52,13 @@ title: Services
 
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-reload u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">Continuous Delivery</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-continuous-delivery.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">Continuous Delivery</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Continuous Delivery Pipeline</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Pragmatic Testing Strategy</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Frequent Low Risk Deployments</li>
+            <li class="g-color-white g-py-5">Continuous Delivery Pipeline</li>
+            <li class="g-color-white g-py-5">Pragmatic Testing Strategy</li>
+            <li class="g-color-white g-py-5">Frequent Low Risk Deployments</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -63,15 +66,13 @@ title: Services
 
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-rocket u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">Software Modernisation</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-modernisation.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">Software Modernisation</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Monolith to Microservices</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Reviving EOL to Strategic</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Migration from Legacy</li>
+            <li class="g-color-white g-py-5">Monolith to Microservices</li>
+            <li class="g-color-white g-py-5">Reviving EOL to Strategic</li>
+            <li class="g-color-white g-py-5">Migration from Legacy</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -81,15 +82,13 @@ title: Services
     <div class="row">
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-cloud-upload u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">Cloud Engineering</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-cloud.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">Cloud Engineering</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Migration to Cloud</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Serverless Architecture</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Infrastructure as Code</li>
+            <li class="g-color-white g-py-5">Migration to Cloud</li>
+            <li class="g-color-white g-py-5">Serverless Architecture</li>
+            <li class="g-color-white g-py-5">Infrastructure as Code</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -97,15 +96,13 @@ title: Services
 
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-magic-wand u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">UX Design</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-ux.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">UX Design</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Lean UX Development</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">UX Research</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">UI Design</li>
+            <li class="g-color-white g-py-5">Lean UX Development</li>
+            <li class="g-color-white g-py-5">UX Research</li>
+            <li class="g-color-white g-py-5">UI Design</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -113,15 +110,13 @@ title: Services
 
       <div class="col-md-4 g-mb-30">
         <!-- Icon Blocks -->
-        <div class="g-brd-around--md g-brd-gray-light-v4 text-center g-pa-10 g-px-30--lg g-py-40--lg">
-          <span class="d-block g-color-gray-dark-v4 g-font-size-40 g-mb-15">
-            <i class="icon-graduation u-line-icon-pro"></i>
-          </span>
-          <h3 class="h5 g-color-primary g-mb-10">Upskill</h3>
+        <div class="text-center g-pa-10 g-px-30--lg g-py-40--lg">
+          <img class="icon-md" src="{{ '/assets/custom/img/home/icon-upskill.svg' | prepend: site.baseurl }}">
+          <h3 class="h5 g-color-white g-mb-10 g-font-weight-900">Upskill</h3>
           <ul class="list-unstyled g-px-30 g-mb-0">
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Clean Code and Refactoring</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Cloud Deployment Strategies</li>
-            <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10">Software Design and Testing</li>
+            <li class="g-color-white g-py-5">Clean Code and Refactoring</li>
+            <li class="g-color-white g-py-5">Cloud Deployment Strategies</li>
+            <li class="g-color-white g-py-5">Software Design and Testing</li>
           </ul>
         </div>
         <!-- End Icon Blocks -->
@@ -131,7 +126,31 @@ title: Services
   </div>
 </div>
 
-{% include_relative _includes/clients_section.html title="services.our-clients.title" %}
+
+
+
+
+<!-- Clients panel -->
+<div class="section">
+  <div class="container">
+
+    <div class="title-header">
+      <h2 class="h3">{% t index-clients.title %}</h2>
+    </div>
+
+    <div class="row">
+      {% for client in site.data.clients %}
+      <div class="col-md-2 col-md-2--2up-mobile text-center u-pad-none">
+        <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
+      </div>
+      {% endfor %}
+    </div>
+
+  </div><!-- end container -->
+</div><!-- end section -->
+
+
+
 
 
 <!-- We advise-->
@@ -144,18 +163,17 @@ title: Services
           <div class="row no-gutters">
             <div class="g-hidden-md-down col-5"></div>
 
-            <div class="col-12 col-lg-7 g-py-50 g-px-20 g-px-80--lg services-expert-advice__content">
-              <header class="text-uppercase g-mb-25">
-                <div class="g-mb-25">
-                  <h2 class="h2 g-color-white mb-0">{%t services.we-advise.title %}</h2>
+            <div class="col-12 col-lg-7 g-py-75 g-px-80--lg bg-gradient-midnight-blue">
+              <header class="g-mb-25">
+                <div class="g-mb-40">
+                  <h2 class="h1 g-color-white mb-0 g-font-weight-900">{%t services.we-advise.title %}</h2>
                 </div>
-                <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
               </header>
               <div class="row align-items-stretch">
                 <div class="col-sm-12 g-mb-25 g-mb-50--md">
                   <!-- Article -->
                   <article
-                          class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                          class="h-100 g-flex-middle g-transition-0_3">
                     <div class="g-flex-middle-item">
                       <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.we-advise.high-level-consulting.title %}</h4>
                       <p class="g-color-white-opacity-0_7 mb-0">{%t services.we-advise.high-level-consulting.body %}</p>
@@ -167,7 +185,7 @@ title: Services
                 <div class="col-sm-12 g-mb-25 g-mb-50--md">
                   <!-- Article -->
                   <article
-                          class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                          class="h-100 g-flex-middle g-transition-0_3">
                     <div class="g-flex-middle-item">
                       <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.we-advise.technical-vision.title %}</h4>
                       <p class="g-color-white-opacity-0_7 mb-0">{%t services.we-advise.technical-vision.body %}</p>
@@ -179,7 +197,7 @@ title: Services
                 <div class="col-sm-12 g-mb-25 g-mb-50--md">
                   <!-- Article -->
                   <article
-                          class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                          class="h-100 g-flex-middle g-transition-0_3">
                     <div class="g-flex-middle-item">
                       <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.we-advise.discovery-phase.title %}</h4>
                       <p class="g-color-white-opacity-0_7 mb-0">{%t services.we-advise.discovery-phase.body %}</p>
@@ -218,11 +236,13 @@ title: Services
         <div class="services-two-col-content">
           <div class="row">  
             <div class="col-lg-6 g-mb-50 g-mb-0--lg">
-              <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
-                <h2 class="text-uppercase g-color-black g-font-size-25 g-font-size-32--lg g-line-height-0_8 mb-2">{%t services.we-coach.title %}</h2>
-              </div>
+              <header class="g-mb-25">
+                <div>
+                  <h2 class="h1 mb-0 g-font-weight-900">{%t services.we-coach.title %}</h2>
+                </div>
+              </header>
               <div class="mb-5">
-                  <p class="lead">{%t services.we-coach.subtitle %}</p>
+                  <p class="lead g-mb-20">{%t services.we-coach.subtitle %}</p>
                   <p class="">{%t services.we-coach.body %}</p>
           
                   <ul class="list-unstyled g-font-size-13 mb-0">
@@ -240,8 +260,8 @@ title: Services
                     </li>
                   </ul>
               </div>
-              <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" 
-                href="{{ '/services/training/' | prepend: site.baseurl }}">{%t services.learn-more %}</a>
+              <a class="btn btn-more btn-more-light" 
+                href="{{ '/services/training/' | prepend: site.baseurl }}"><span>{%t services.learn-more %}</span></a>
             </div>
   
             <div class="col-lg-6 align-self-top">
@@ -262,18 +282,17 @@ title: Services
         <div class="container">
           <div class="row no-gutters">
             <div class="g-hidden-md-down col-5"></div>
-            <div class="col-12 col-lg-7 g-py-50 g-px-20 g-px-80--lg services-expert-advice__content">
-              <header class="text-uppercase g-mb-25">
-                <div class="g-mb-25">
-                  <h2 class="h2 g-color-white mb-0">{%t services.we-deliver.title %}</h2>
+            <div class="col-12 col-lg-7 g-py-75 g-px-80--lg bg-gradient-midnight-blue">
+              <header class="g-mb-25">
+                <div class="g-mb-40">
+                  <h2 class="h1 g-color-white mb-0 g-font-weight-900">{%t services.we-deliver.title %}</h2>
                 </div>
-                <div class="g-width-70 g-brd-bottom g-brd-2 g-brd-primary"></div>
               </header>
               <div class="row align-items-stretch">
                 <div class="col-sm-12 g-mb-25 g-mb-50--md">
                   <!-- Article -->
                   <article
-                          class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                          class="h-100 g-flex-middle g-transition-0_3">
                     <div class="g-flex-middle-item">
                       <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.we-deliver.feature-delivery.title %}</h4>
                       <p class="g-color-white-opacity-0_7 mb-0">{%t services.we-deliver.feature-delivery.body %}</p>
@@ -285,7 +304,7 @@ title: Services
                 <div class="col-sm-12 g-mb-25 g-mb-50--md">
                   <!-- Article -->
                   <article
-                          class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-transition-0_3 g-px-20">
+                          class="h-100 g-flex-middle g-transition-0_3">
                     <div class="g-flex-middle-item">
                       <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{%t services.we-deliver.technical-delivery.title %}</h4>
                       <p class="g-color-white-opacity-0_7 mb-0">{%t services.we-deliver.technical-delivery.body %}</p>

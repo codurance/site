@@ -2,6 +2,9 @@
 layout: post
 name: does-tdd-lead-to-good-design
 title: Does TDD really lead to good design?
+title-es: Hacer TDD ¿nos conduce a un buen diseño?
+description: TDD is not a design tool, a software development workflow that involves code improvements in its life cycle. Practicing and understanding the myriad of design guidelines available will make TDD much easier and more useful.
+description-es: TDD no es una herramienta de diseño, un flujo de trabajo de desarrollo de software que implica mejoras en el código en su ciclo de vida. Practicar y comprender la gran cantidad de pautas de diseño disponibles hará que TDD sea mucho más fácil y útil.
 date: 2015-05-12 14:32:00 +00:00
 author: Sandro Mancuso
 image:
@@ -11,6 +14,9 @@ tags:
 - quality
 - TDD
 - design
+- software modernisation
+pinned_locations: 
+    - soft-mod
 ---
 
 Recently I tweeted that [TDD can’t lead to a good design if we don’t know what good design looks like](https://twitter.com/sandromancuso/status/588503877235781632). I was also saying that we probably should teach design before TDD (or at least, at the same time). This tweet led to a discussions with [J.B. Rainsberger](https://twitter.com/jbrains), [Ron Jeffries](https://twitter.com/RonJeffries), and a few others. J.B. and I ended up having a live [discussion on Hangout on Air](https://www.youtube.com/watch?v=ty3p5VDcoOI) later on. 

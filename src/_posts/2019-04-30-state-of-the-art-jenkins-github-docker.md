@@ -22,7 +22,7 @@ For the last two years I've worked on a Node.js project. We used GitHub for sour
 
 We have done a few improvements to the configuration during this time. One of the changes that had a positive impact was to run the CI pipeline on branches and to see the feedback in GitHub.
 
-Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes. Like forgetting to run the linter or to add a new file. Once we decided to automate the update of dependencies the feedback made it quick and safe. Read [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/29/taming-dependabot)) for that part of the story.
+Checking the outcome of the build before merging a PR prevented a lot of breakages due to tiny mistakes. Like forgetting to run the linter or to add a new file. Once we decided to automate the update of dependencies the feedback made it quick and safe. Read [Taming dependabot by Christopher Eyre]({{ site.baseurl }}/2019/02/24/taming-dependabot)) for that part of the story.
 
 
 In this post I'm going to explain how to configure a Continuos Integration and Deployment Pipeline using:

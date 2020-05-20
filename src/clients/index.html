@@ -6,7 +6,7 @@ title: Clients
 <!-- Hero -->
 <section class="services-hero height-is-based-on-content">
     <div class="container g-z-index-1 g-py-100 text-center">
-        <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{% t clients.header %}</h1>
+        <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15 g-font-weight-900">{% t clients.header %}</h1>
         <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
         </div>
     </div>
@@ -24,7 +24,7 @@ title: Clients
         <ul class="list-inline g-font-size-13">
           <li class="list-inline-item mr-4">
             <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-communication-101 u-line-icon-pro"></i>
-            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="https://{{ client.website }}">
+            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="https://{{ client.website }}" target="_blank">
               {{ client.website }}
             </a>
           </li>
@@ -33,15 +33,29 @@ title: Clients
           <li class="list-inline-item">
             <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
             {% capture service-category %}clients.{{service}}_title{% endcapture %}
-            <a class="g-color-gray-dark-v5 g-text-underline--none--hover" href="#">{% t {{service-category}} %}</a>
+            <span class="g-color-gray-dark-v5 g-text-underline--none--hover">{% t {{service-category}} %}</span>
           </li>
           {% endfor %}
         </ul>
         {% capture description %}clients.{{client.id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
-        {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
-        {% include button.html href=project.page-location translated_text=button-text css-class="client-project" %}
+          {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
+
+          {% if site.lang == 'es' and project.page-location-es %}
+            {% capture button-url %}{{project.page-location-es}}{% endcapture %}
+          {% else %}
+            {% capture button-url %}{{project.page-location}}{% endcapture %}
+          {% endif %}
+
+          {% assign pageLocationPrefix = project.page-location | slice: 0, 8 %}
+          {% if pageLocationPrefix == 'https://' %}
+            {% assign target = '_blank' %}
+          {% else %}
+            {% assign target = '_self' %}
+          {% endif %}
+
+          {% include button.html href=button-url translated_text=button-text css-class="client-project" target=target %}
         {% endfor %}
       </div>
     </div>

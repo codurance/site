@@ -1,45 +1,51 @@
+
 {% for post in include.param limit:1 %}
-	{% if post.image.thumbnail %}
-		{% assign imageSrc = post.image.thumbnail %}
-	{% elsif post.image.src %}
-		{% assign imageSrc = post.image.src %}
-	{% else %}
-		{% assign imageSrc = site.default_post_image %}
-	{% endif %}
-	{% if post.abstract %}
-		{% assign introductionToPost = post.abstract %}
-	{% else %}
-		{% assign introductionToPost = post.content %}
-	{% endif %}
-	{% if post.event-page-url %}
-		{% assign linkUrl = post.event-page-url %}
-	{% else %}
-		{% assign linkUrl = post.url | prepend: site.baseurl %}
-	{% endif %}
-	{% if post.event-dates %}
-		{% assign date = post.event-dates.starts %}
-	{% else %}
-		{% assign date = post.date %}
-	{% endif %}
-      <div class="col-sm-6 col-lg-4 g-mb-30">
-					<article>
-							<img class="img-fluid w-100" src="{{ imageSrc  | prepend: site.baseurl }}" alt="Image Description">
+{% if post.image.thumbnail %}
+  {% assign imageSrc = post.image.thumbnail %}
+{% elsif post.image.src %}
+  {% assign imageSrc = post.image.src %}
+{% else %}
+  {% assign imageSrc = site.default_post_image %}
+{% endif %}
+{% if post.target %}
+  {% assign target = post.target %}
+{% endif %}
+{% if post.abstract %}
+  {% assign introductionToPost = post.abstract %}
+{% else %}
+  {% assign introductionToPost = post.content %}
+{% endif %}
+{% if post.event-page-url %}
+  {% assign linkUrl = post.event-page-url %}
+{% else %}
+  {% assign linkUrl = post.url | prepend: site.baseurl %}
+{% endif %}
+{% if post.event-dates %}
+  {% assign date = post.event-dates.starts %}
+{% else %}
+  {% assign date = post.date %}
+{% endif %}
+<div class="col-sm-6 col-lg-4 g-mb-30 u-display-flex">
+  <article class="box-shadow">
+    <a class="u-link-v5 g-color-main" href="{{ linkUrl }}" target="{{ target }}">
+      <div class="latest-highlights-image" style="background: top center / cover no-repeat url({{ imageSrc  | prepend: site.baseurl }})"></div>
+      <div class="g-pa-30-30-20">
+        <p class="small g-mb-10 text-uppercase g-mb-15">
+          <time>{{ date | date_to_string }}</time> - {% t
+          publications-post.author_title %} {{ post.author | author_links }}
+        </p>
 
-							<div class="g-bg-white g-pa-30-30-20">
-								<p class="small g-mb-10">
-									<time>{{ date | date_to_string }}</time>
-								</p>
+        <h3 class="h4 g-font-weight-800 g-mb-15">
+          {{ post.title | truncatewords: 8 }}
+        </h3>
 
-								<h3 class="h6 text-uppercase g-font-weight-600 g-mb-10">
-									<a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="{{ linkUrl }}">{{ post.title | truncatewords: 8 }}</a>
-								</h3>
+        <p class="g-pb-30">
+          {{ introductionToPost | markdownify | strip_html | truncatewords:30 }}
+        </p>
 
-								<div class="small g-mb-10">
-									{% t publications-post.author_title %} {{ post.author | author_links }}
-								</div>
-
-								<p>{{ introductionToPost | markdownify | strip_html | truncatewords:30 }}</p>
-							</div>
-						</article>
-        </div>
+        <span class="block-cta">{% t publications.teaser-cta  %}</span>
+      </div>
+    </a>
+  </article>
+</div>
 {% endfor %}

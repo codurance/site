@@ -1,0 +1,126 @@
+@mixin style-card-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 0 8px;
+}
+
+.card {
+  @include style-card-box-shadow;
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.card__image-link {
+  display: block;
+}
+
+.card__image {
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  height: 0;
+  padding-top: 230 / 370 * 100%;
+}
+
+.card__main {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+$line-height: 28px;
+
+.card__title {
+  @include mercer-bold;
+  margin: 0 0 20px;
+  overflow: hidden;
+
+  @include small-and-medium {
+    min-height: 2 * $line-height;
+  }
+  @include large {
+    min-height: 3 * $line-height;
+  }
+  @include extra-large {
+    min-height: 2 * $line-height;
+  }
+}
+
+$description-max-height: 4 * $line-height;
+
+.card__description-fade-out {
+  overflow: hidden;
+  max-height: $description-max-height;
+
+  &::before {
+    content: "";
+    float: left;
+    height: $description-max-height;
+    width: 1px;
+  }
+  &::after {
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255)
+    );
+    content: "";
+    float: right;
+    height: $line-height;
+    left: 100%;
+    margin-left: -50%;
+    padding-right: 1px;
+    position: relative;
+    top: #{$description-max-height - $line-height};
+    width: 50%;
+  }
+}
+
+.card__description {
+  @include base-reg;
+  float: right;
+  width: 100%;
+  margin: 0 0 0 -1px;
+}
+
+.card__cta--text {
+  @include base-bold;
+  color: $grey--dark;
+  padding: 0 30px 30px;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  .card__cta-decoration {
+    left: 10px;
+    position: relative;
+    top: -5px;
+    width: 25px;
+
+    &,
+    &:after,
+    &:before {
+      background-color: $coral;
+      height: 2px;
+      display: inline-block;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 9px;
+    }
+
+    &:after {
+      top: -4px;
+      transform: rotate(45deg);
+    }
+    &:before {
+      bottom: -4px;
+      transform: rotate(-45deg);
+    }
+  }
+}

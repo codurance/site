@@ -1,0 +1,344 @@
+---
+layout: default
+title: Software Modernisation | Evolve your strategic systems
+title-es: Software Modernisation | Aumenta la escalabilidad de tu negocio
+description: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible through software modernisation.
+description-es: Moderniza los sistemas legacy para mejorar el rendimiento de los sistemas, reducir el time to market e impulsar un cambio cultural.
+image:
+   src: /assets/custom/img/softmod/metaimgs/softmod-opengraph-card-linkedIn.jpg
+metarobots: index,follow
+---
+
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+<section class="sm-hero">
+  <div class="container sm-hero__grid">
+    <div class="sm-hero__grid__grid-item sm-hero__grid__grid-item--intro">
+      <div>
+        <h1 class="text-900 position-relative">
+          <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><defs></defs><g data-name="Layer 2"><g data-name="Layer 1"><path class="box-stroke" d="M143.85 59.65L84.01 94.52v89.9L22.9 152.27v-45.93l38.62 21.39v26.37l-19.48-10.25V73.42L61.52 85l43.29-25.35-42.52-24.92L22.9 58.29v23.76L3 71.89v-22.2L84.01 3l77.65 43.63v93.39l-38.22 22.2v-29.85"/><circle class="box-stroke" cx="124.13" cy="121.42" r="10"/></g></g></svg>
+          {% t software-modernisation.hero-title %}
+        </h1>
+        <p class="h4 text-700">
+          {% t software-modernisation.hero-sub-title %}
+        </p>
+        <p class="g-pt-10">
+          {% t software-modernisation.hero-introduction %}
+        </p>
+        {% assign href = "#get-in-touch" %}
+        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+        {% include cta_primary_link.html color='coral' href=href text=text %}
+      </div>
+    </div>
+    <div class="sm-hero__grid__grid-item sm-hero__grid__grid-item--intro-image">
+      <img class="img-parallax" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
+    </div>
+  </div><!-- grid -->
+</section><!-- sm-hero -->
+
+<section id="how-we-solve-your-problems" class="soft-mod-problems">
+  {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
+  {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
+  {% assign cta_href = "#get-in-touch" %}
+  {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
+  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+
+  <div class="container z-index-1">
+    <div class="tabbed-content g-pt-50">
+      <nav class="tabs">
+        <ul>
+          <li><a href="#sustainable-change" class="active">{% t software-modernisation.sustainable-change-title %}</a></li>
+          <li><a class="g-pt-15" href="#innovation">{% t software-modernisation.innovation-title %}</a></li>
+          <li><a class="g-pt-15"href="#technology">{% t software-modernisation.technology-title %}</a></li>
+          <li><a href="#business-alignment">{% t software-modernisation.business-alignment-title %}</a></li>
+          <li><a href="#people-culture">{% t software-modernisation.people-and-culture-title %}</a></li>
+          <li><a href="#risk-management">{% t software-modernisation.risk-management-title %}</a></li>
+        </ul>
+      </nav><!-- tabs -->
+
+      <article id="sustainable-change" class="item active" data-title="Sustainable Change">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-sustainable-change">
+              <span class="h2 text-900 text-white">{% t software-modernisation.sustainable-change-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.sus-change-li-1 %}</li>
+                <li>{% t software-modernisation.sus-change-li-2 %}</li>
+                <li>{% t software-modernisation.sus-change-li-3 %}</li>
+                <li>{% t software-modernisation.sus-change-li-4 %}</li>
+                <li>{% t software-modernisation.sus-change-li-5 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.sus-change-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #sustainable-change -->
+
+      <article id="innovation" class="item" data-title="Innovation">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-innovation">
+              <span class="h2 text-900 text-white">{% t software-modernisation.innovation-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.innovation-li-1 %}</li>
+                <li>{% t software-modernisation.innovation-li-2 %}</li>
+                <li>{% t software-modernisation.innovation-li-3 %}</li>
+                <li>{% t software-modernisation.innovation-li-4 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.innovation-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #innovation -->
+
+      <article id="technology" class="item" data-title="Technology">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-technology">
+              <span class="h2 text-900 text-white">{% t software-modernisation.technology-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.technology-li-1 %}</li>
+                <li>{% t software-modernisation.technology-li-2 %}</li>
+                <li>{% t software-modernisation.technology-li-3 %}</li>
+                <li>{% t software-modernisation.technology-li-4 %}</li>
+                <li>{% t software-modernisation.technology-li-5 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.technology-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #technology -->
+
+      <article id="business-alignment" class="item" data-title="Business Alignment">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-business-alignment">
+              <span class="h2 text-900 text-white">{% t software-modernisation.business-alignment-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.business-alignment-li-1 %}</li>
+                <li>{% t software-modernisation.business-alignment-li-2 %}</li>
+                <li>{% t software-modernisation.business-alignment-li-3 %}</li>
+                <li>{% t software-modernisation.business-alignment-li-4 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.business-alignment-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #business-alignment -->
+
+      <article id="people-culture" class="item" data-title="People and Culture">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-people-culture">
+              <span class="h2 text-900 text-white">{% t software-modernisation.people-and-culture-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.people-and-culture-li-1 %}</li>
+                <li>{% t software-modernisation.people-and-culture-li-2 %}</li>
+                <li>{% t software-modernisation.people-and-culture-li-3 %}</li>
+                <li>{% t software-modernisation.people-and-culture-li-4 %}</li>
+                <li>{% t software-modernisation.people-and-culture-li-5 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.people-and-culture-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #people-culture -->
+
+      <article id="risk-management" class="item" data-title="Risk Management">
+        <div class="item-content">
+          <div class="item-content-grid">
+            <div class="item-content-grid__item-left bg-blue bg-risk-management">
+              <span class="h2 text-900 text-white">{% t software-modernisation.risk-management-intro %}</span>
+            </div>
+            <div class="item-content-grid__item-right bg-white g-pt-35">
+              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <ul class="g-pb-15 list-ticks">
+                <li>{% t software-modernisation.risk-management-li-1 %}</li>
+                <li>{% t software-modernisation.risk-management-li-2 %}</li>
+                <li>{% t software-modernisation.risk-management-li-3 %}</li>
+                <li>{% t software-modernisation.risk-management-li-4 %}</li>
+                <li>{% t software-modernisation.risk-management-li-5 %}</li>
+              </ul>
+              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <p>
+                {% t software-modernisation.risk-management-how-details %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article><!-- #risk-management -->
+
+    </div><!-- Tabbed Content -->
+
+  </div>
+</section>
+
+<section id="how-we-help-our-clients" class="soft-mod__our-clients">
+  <div class="container">
+
+    <h2 class="text-center--bp768 text-700 text-white">{% t software-modernisation.clients-title %}</h2>
+    <p class="lead text-white text-center--bp768">
+      {% t software-modernisation.clients-intro %}
+    </p>
+
+    <div class="case-studies__cases-wrapper g-pt-50">
+      <div class="case-studies__case">
+        <div
+          class="case-studies__case-img-container"
+          style="background-image: url(https://info.codurance.com/hubfs/thumb-eclinicalworks.png);"
+        >
+          <!-- <img src="https://info.codurance.com/hubfs/thumb-eclinicalworks.png" alt=""> -->
+        </div>
+        <div class="case-studies__case-text-container">
+          <h3 class="h4 text-700">{% t software-modernisation.card-3-heading %}</h3>
+          <p>{% t software-modernisation.card-3-subheading %}</p>
+          {% assign href = site.translations[site.lang].software-modernisation.card-3-url %}
+          {% assign text = site.translations[site.lang].software-modernisation.card-3-button %}
+          {% include cta_primary_link.html class="case-studies__case-button" color='coral' target="_blank" href=href text=text %}
+        </div>
+      </div>
+      <div class="case-studies__case">
+        <div
+          class="case-studies__case-img-container"
+          style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-asos.png);"
+        >
+          <!-- <img src="https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-asos.png" alt=""> -->
+        </div>
+        <div class="case-studies__case-text-container">
+          <h3 class="h4 text-700">{% t software-modernisation.card-1-heading %}</h3>
+          <p>{% t software-modernisation.card-1-subheading %}</p>
+          {% assign href = site.translations[site.lang].software-modernisation.card-1-url %}
+          {% assign text = site.translations[site.lang].software-modernisation.card-1-button %}
+          {% include cta_primary_link.html class="case-studies__case-button" color='coral' target="_blank" href=href text=text %}
+        </div>
+      </div>
+      <div class="wrap-break"></div>
+      <div class="case-studies__case">
+        <div
+          class="case-studies__case-img-container"
+          style="background-image: url(https://info.codurance.com/hubfs/thumb-mango.png);"
+        >
+          <!-- <img src="https://info.codurance.com/hubfs/thumb-mango.png" alt=""> -->
+        </div>
+        <div class="case-studies__case-text-container">
+          <h3 class="h4 text-700">{% t software-modernisation.card-2-heading %}</h3>
+          <p>{% t software-modernisation.card-2-subheading %}</p>
+          {% assign href = site.translations[site.lang].software-modernisation.card-2-url %}
+          {% assign text = site.translations[site.lang].software-modernisation.card-2-button %}
+          {% include cta_primary_link.html class="case-studies__case-button" color='coral' target="_blank" href=href text=text %}
+        </div>
+      </div>
+      <div class="case-studies__case">
+        <div
+          class="case-studies__case-img-container"
+          style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-BestSecret.jpg);"
+        >
+          <!-- <img src="https://info.codurance.com/hubfs/thumb-mango.png" alt=""> -->
+        </div>
+        <div class="case-studies__case-text-container">
+          <h3 class="h4 text-700">{% t software-modernisation.card-4-heading %}</h3>
+          <p>{% t software-modernisation.card-4-subheading %}</p>
+          {% assign href = site.translations[site.lang].software-modernisation.card-4-url %}
+          {% assign text = site.translations[site.lang].software-modernisation.card-4-button %}
+          {% include cta_primary_link.html class="case-studies__case-button" color='coral' target="_blank" href=href text=text %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- Case Studies -->
+
+<section id="testimonials" class="soft-mod__testimonials">
+  {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
+  {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
+  {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
+
+  <div class="container-slim center">
+    <div class="flexslider">
+    <ul class="slides box-shadow">
+      <li class="g-px-50 g-py-30 text-center">
+        <p>{% t software-modernisation.testimonials-bestsecret-p1 %}</p>
+        <p>{% t software-modernisation.testimonials-bestsecret-p2 %}</p>
+        <span class="small text-navy text-700">{% t software-modernisation.bestsecret-name-and-position %}</span>
+      </li>
+      <li class="g-px-50 g-py-30 text-center">
+        <p>{% t software-modernisation.testimonials-cazoo %}</p>
+        <span class="small text-navy text-700">{% t software-modernisation.cazoo-name-and-position %}</span>
+      </li>
+      <li class="g-px-50 g-py-30 text-center">
+        <p>{% t software-modernisation.testimonials-hedgefund %}</p>
+        <span class="small text-navy text-700">{% t software-modernisation.hedgefund-name-and-position %}</span>
+      </li>
+      <li class="g-px-50 g-py-30 text-center">
+        <p>{% t software-modernisation.testimonials-ecw %}</p>
+        <span class="small text-navy text-700">{% t software-modernisation.ecw-name-and-position %}</span>
+      </li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<div class=soft-mod__sheen-container>
+  {% include compass_teaser.html %}
+  {% include soft_mod_webinar_hero_teaser.html %}
+  {% include soft_mod_curated_publications.html %}
+</div>
+
+<section id="get-in-touch" class="soft-mod__get-in-touch">
+  <div class="container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
+    {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
+    {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
+    {% include section_intro.html description=description title=title %}
+
+    <div class="sm-enquiry">
+      <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "3042464",
+          formId: "{% t software-modernisation.hubspot-form-id %}"
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+<script>
+  var image = document.getElementsByClassName('img-parallax');
+  new simpleParallax(image, {
+    scale: 1.15,
+    orientation: 'up',
+  });
+</script>

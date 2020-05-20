@@ -44,6 +44,12 @@ module Jekyll
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['author_meta_description_prefix'] || 'author: '
       self.data['description'] = "#{meta_description_prefix}#{author}"
+      # Posts should be sorted by date descendingly
+      self.data['publications'] = site.collections.values
+                                    .flatten
+                                    .select do |post| post.data["author"] == author end
+                                    .sort_by{ |post| post.data["date"] }
+                                    .reverse
     end
   end
 
@@ -60,9 +66,9 @@ module Jekyll
     def write_author_indexes(site, author_index_writer)
       if !(site.layouts.key? 'author_index') 
         throw "No 'author_index' layout found."      
-      end  
+      end
       
-      (site.posts.docs + site.collections['videos'].docs).each do |post|
+      site.collections.values.map(&:docs).flatten.each do |post|
         post_authors = [post.data["author"]].flatten()
         post_authors.each do |author|
           author_index_writer.write_author_index(author)

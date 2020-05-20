@@ -1,0 +1,48 @@
+.in-page-banner {
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.in_page_banner__image {
+  @include small {
+    display: none;
+  }
+
+  @include medium-large-and-extra-large {
+    background-size: cover;
+    float: left;
+    height: 400px;
+    width: 50%;
+  }
+}
+
+.in_page_banner__main {
+  @include lateral-spacing;
+  align-items: center;
+  background-color: $coral;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+
+  @include medium-large-and-extra-large {
+    float: left;
+    width: 50%;
+  }
+}
+
+.in_page_banner__inner {
+  max-width: 500px;
+}
+
+.in_page_banner__title {
+  @include mercer-bold;
+  color: white;
+  margin: 0 0 10px;
+}
+
+.in_page_banner__description {
+  @include base-reg;
+  color: white;
+  margin: 0 0 30px;
+}

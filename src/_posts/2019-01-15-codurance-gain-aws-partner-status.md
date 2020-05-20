@@ -2,18 +2,21 @@
 author: David Hall
 layout: post
 asset-type: post
-title: "Codurance Achieve AWS Partnership Status"
+title: Codurance Achieve AWS Partnership Status
+title-es: Codurance partnership de AWS
 date: 2019-01-15 00:00:00
-description: Codurance have been accepted as an AWS Consulting Partner
+description: Becoming an AWS Consulting Partner recognizes the experience, skill, and expertise of our team in the AWS Cloud ecosystem and its diverse services.
+description-es: Convertirnos en AWS Consulting Partner reconoce la experiencia, la habilidad y la experiencia de nuestro equipo en el ecosistema de AWS Cloud y sus diversos servicios.
 image: 
     src: /assets/custom/img/blog/2019-01-15-aws-partnership.jpg
     thumbnail: /assets/custom/img/blog/2019-01-15-aws-partnership-thumbnail.png
     alt: Photo by Lim changwon on Unsplash
-abstract: Codurance were accepted into the AWS Partnership Program (APN).
+abstract: Becoming an AWS Consulting Partner recognizes the experience, skill, and expertise of our team in the AWS Cloud ecosystem and its diverse services.
 tags: 
 - cloud 
 - partnerships 
 - aws
+- software modernisation
 ---
 
 ### We are pleased to announce that Codurance has achieved [AWS Consulting Partner status](https://aws.amazon.com/partners/find/partnerdetails/?n=Codurance%20Ltd&id=001E000001dA58LIAS) in the AWS Partner Network. This status recognises the expertise, skill and experience of our people in the [AWS Cloud](https://aws.amazon.com/) ecosystem and its various services.

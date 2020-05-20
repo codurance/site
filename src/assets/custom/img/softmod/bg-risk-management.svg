@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="223.446" height="202.723" viewBox="0 0 223.446 202.723">
+  <g id="Group_1605" data-name="Group 1605" transform="translate(-1379.997 -3544)">
+    <g id="Group_1565" data-name="Group 1565" transform="translate(1401.34 3545)">
+      <g id="Group_1558" data-name="Group 1558" transform="translate(0 0)">
+        <g id="Group_1554" data-name="Group 1554">
+          <g id="Group_1551" data-name="Group 1551">
+            <path id="Path_606" data-name="Path 606" d="M775.756,681.085H758.121V659.6q-1.231-.275-2.456-.59c-.306-.079-.611-.163-.916-.245s-.6-.159-.9-.244q-1.219-.343-2.422-.724L740.64,676.38l-30.507-17.7,10.786-18.588-.279-.26-.312-.291q-.478-.452-.949-.912c-.208-.2-.415-.4-.62-.608s-.407-.41-.61-.615q-.463-.47-.918-.946c-.1-.1-.2-.206-.293-.31l-.261-.277-18.531,10.883L680.285,616.34l18.531-10.883q-.561-1.746-1.043-3.525t-.887-3.573H675.395v-35.27h21.489q.275-1.23.589-2.456c.079-.307.163-.611.245-.916s.16-.6.245-.9q.342-1.219.723-2.422L680.1,545.608,697.8,515.1l18.588,10.785.261-.28.288-.309q.453-.479.914-.952.3-.31.605-.618t.618-.611q.469-.462.945-.917l.31-.293.277-.261-10.883-18.531,30.414-17.861,10.883,18.531q1.745-.561,3.525-1.044t3.573-.886V480.364h17.635" transform="translate(-675.395 -480.364)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path id="Path_607" data-name="Path 607" d="M734.737,564.751a59.4,59.4,0,0,0,0,118.795" transform="translate(-634.376 -523.788)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+          <g id="Group_1553" data-name="Group 1553" transform="translate(100.742 0.001)">
+            <g id="Group_1550" data-name="Group 1550">
+              <path id="Path_606-2" data-name="Path 606" d="M675.395,681.085H693.03V659.6q1.23-.275,2.456-.59c.306-.078.611-.163.916-.245s.6-.159.9-.244q1.219-.343,2.422-.723l10.784,18.586,30.507-17.7-10.786-18.588.279-.26c.1-.1.208-.193.311-.291q.478-.452.949-.912.312-.3.62-.608t.61-.615q.463-.47.918-.946l.293-.31.261-.277,18.531,10.883,17.861-30.414-18.531-10.883q.561-1.745,1.043-3.525t.887-3.573h21.491V563.089H754.267q-.275-1.23-.589-2.456c-.079-.307-.163-.611-.245-.916s-.16-.6-.245-.9q-.342-1.219-.723-2.422l18.586-10.784-17.7-30.507-18.588,10.786-.261-.28-.288-.309q-.453-.479-.914-.952c-.2-.207-.4-.414-.605-.618s-.411-.409-.618-.612q-.469-.462-.945-.917l-.311-.293-.277-.261,10.883-18.531-30.414-17.861-10.883,18.531q-1.745-.561-3.525-1.044t-3.573-.886V480.364H675.395" transform="translate(-675.395 -480.364)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path id="Path_607-2" data-name="Path 607" d="M675.395,564.751a59.4,59.4,0,0,1,0,118.8" transform="translate(-675.395 -523.788)" fill="none" stroke="#e0e0e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_951" data-name="Rectangle 951" width="123.459" height="50.117" transform="matrix(0.848, -0.53, 0.53, 0.848, 1395.308, 3678.661)" fill="#0e4072"/>
+    <g id="Ellipse_86" data-name="Ellipse 86" transform="translate(1454 3599)" fill="none" stroke="#e0e0e0" stroke-width="4">
+      <circle cx="46.5" cy="46.5" r="46.5" stroke="none"/>
+      <circle cx="46.5" cy="46.5" r="44.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_952" data-name="Rectangle 952" width="56.118" height="24.447" transform="matrix(0.848, -0.53, 0.53, 0.848, 1391.122, 3697.366)" fill="#e0e0e0"/>
+    <path id="Path_612" data-name="Path 612" d="M0,0H45.228V11H0Z" transform="matrix(0.848, -0.53, 0.53, 0.848, 1420.228, 3687.405)" fill="#e0e0e0"/>
+    <rect id="Rectangle_953" data-name="Rectangle 953" width="8.118" height="24.447" transform="matrix(0.848, -0.53, 0.53, 0.848, 1379.997, 3704.318)" fill="#e0e0e0"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M25.907,4.459a3,3,0,0,1,5.187,0L54.378,44.492A3,3,0,0,1,51.785,49H5.215a3,3,0,0,1-2.593-4.508Z" transform="translate(1473 3614)" fill="#fa7268"/>
+    <text id="_" data-name="!" transform="translate(1497 3656)" fill="#0e4072" font-size="37" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>

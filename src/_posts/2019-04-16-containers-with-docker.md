@@ -9,6 +9,9 @@ abstract: Today in this post, we build a docker image, docker-compose instantiat
 image: 
     src: /assets/custom/img/blog/intro-docker/containers.jpg
     thumbnail: /assets/custom/img/blog/intro-docker/containers.jpg
+    attribution:
+      text: Photo by Klaus Tan on Unsplash
+      href: https://unsplash.com/photos/fN603qcEA7g
 tags: 
 - containers
 - docker
@@ -122,7 +125,7 @@ This is probably one of the most used commands that you will encounter.
 We want to be able to delete an image, stop a container that is running, and delete a previous container. To do that we have a set of commands:
 
 - `docker ps`: Show running containers. Add the `-a` flag to show stopped containers.
-- `docker rm <contaier id or name>`: Delete a container.
+- `docker rm <container id or name>`: Delete a container.
 - `docker images`: Show downloaded images.
 - `docker rmi <image id>`: Delete an image.
 
@@ -249,7 +252,8 @@ Finally, we can run the application by passing the `CMD` to start
 
 ```Dockerfile
 FROM adoptopenjdk/openjdk11-openj9
-WORKDIR /realworldCOPY . /realworld
+WORKDIR /realworld
+COPY . /realworld
 RUN ./gradlew shadowJar
 EXPOSE 4321
 CMD ["java", "-jar", "build/libs/realworldkata-1.0-SNAPSHOT-all.jar"]

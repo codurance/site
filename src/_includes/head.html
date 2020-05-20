@@ -1,25 +1,35 @@
-<title>{% if page.title %}{{ page.title }}{% else %}Software Craftsmanship and Agile Development{% endif %} | Codurance | Craft at Heart | London | Barcelona</title>
+{% include meta_data.html %}
+
+<title>
+{{title}}
+</title>
+
  <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Our team of dedicated software craftspeople provide consultancy, software development, and training services to clients seeking high quality development processes and software solutions.">
+<meta name="description" content="{{description}}" />
 <meta name="author" content="Codurance Ltd">
 
+{% if page.metarobots %}
+ <meta name="robots" content="{{ page.metarobots }}" />
+{% endif %}
+
+
 <!-- Open Graph Protocol  -->
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{social_title}}" />
 <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Codurance" />
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ page.url | prepend: site.url }}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/assets/custom/img/codurance_open_graph.png' | prepend: site.url }}{% endif %}" />
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{description}}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{og_url}}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{og_image}}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{{og_type}}" />
 <meta prefix="og: http://ogp.me/ns#" property="fb:app_id" content="1988440268098611" />
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@codurance" />
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Codurance{% endif %}" />
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions.{% endif %}" />
-<meta name="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url }}{% endif %}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{twitter_site}}"/>
+<meta name="twitter:title" content="{{social_title}}" />
+<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:image" content="{{twitter_image}}" />
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{ '/assets/custom/img/favicon.ico' | prepend: site.baseurl }}">
@@ -84,17 +94,22 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/idea.min.css">
 
 <!-- CSS Customization -->
+<link rel="stylesheet" href="{{ '/assets/custom/css/main.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-blocks.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-2.css' | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ '/assets/custom/css/custom-home-feature.css' | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ '/assets/custom/css/custom-utility-classes.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-media-queries-2.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-global-styles.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-navbar-or-navigation.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-colours.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-buttons.css' | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ '/assets/custom/css/custom-softmod-tabs.css' | prepend: site.baseurl }}">
+
 
 <!--fonts -->
-<link href='https://fonts.googleapis.com/css?family=Oxygen:700,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://use.typekit.net/msw1qsq.css">
 
 {% if page.canonical %}
 <link rel="canonical" href="{{ page.canonical.href }}" />
@@ -108,7 +123,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '{% t analytics.google-id %}', 'codurance.com');
+    ga('create', '{% t analytics.google-id %}', 'auto');
     ga('set', 'forceSSL', true);
 
     window.googleAnalyticsEvents = { environment: {ga:ga}, functions: []};

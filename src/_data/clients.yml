@@ -1,10 +1,23 @@
+- id: bestsecret
+  name: BestSecret
+  image: /assets/custom/img/home/clients/bestsecret-logo.png
+  alt-text: BestSecret logo
+  website: bestsecret.com
+  services:
+    - software_modernisation
+  projects:
+    - page-location: https://info.codurance.com/en/best-secret-case-study
+      page-location-es: https://info.codurance.com/es/best-secret-case-study
+      project-name: bestSecret
+
+
 - id: adevinta
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
   alt-text: Adevinta Logo
   website: adevinta.com
   services:
-  - software_creation
+    - software_creation
 
 
 - id: bankable
@@ -13,7 +26,7 @@
   alt-text: Bankable Logo
   website: bnkbl.com
   services:
-  - software_creation
+    - software_creation
 
 
 - id: cazoo
@@ -22,7 +35,7 @@
   alt-text: Cazoo Logo
   website: cazoo.co.uk
   services:
-  - software_creation
+    - software_creation
 
 
 - id: cxLoyalty
@@ -31,8 +44,8 @@
   alt-text: cxLoyalty Logo
   website: cxloyalty.com
   services:
-  - software_creation
-  - expert_advice
+    - software_creation
+    - expert_advice
 
 
 - id: eclinicalworks
@@ -41,18 +54,23 @@
   alt-text: eClinicalWorks Logo
   website: eclinicalworks.com
   services:
-  - software_creation
-  - expert_advice
+    - software_creation
+    - expert_advice
+    - software_modernisation
+  projects:
+    - page-location: https://info.codurance.com/en/eclinicalworks-case-study
+      page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
+      project-name: eClinicalWorks
 
 
 - id: ubs
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
-  website: ubs.com
+  website: www.ubs.com
   services:
-  - software_creation
-  - expert_advice
+    - software_creation
+    - expert_advice
 
 
 - id: acuris
@@ -61,8 +79,8 @@
   alt-text: Acuris logo
   website: acuris.com
   services:
-  - software_creation
-  services-page: 
+    - software_creation
+  services-page:
     - effective_delivery
 
 
@@ -72,19 +90,19 @@
   alt-text: Societ Generale Logo
   website: societegenerale.com
   services:
-  - expert_advice
-  - training_and_coaching
+    - expert_advice
+    - training_and_coaching
 
 
 - id: mandg
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
-  website: mandg.co.uk
+  website: www.mandg.co.uk
   services:
-  - training_and_coaching
-  - expert_advice
-  services-page: 
+    - training_and_coaching
+    - expert_advice
+  services-page:
     - effective_delivery
   projects:
     - page-location: projects/software-craftsmanship-at-mandg
@@ -97,9 +115,9 @@
   alt-text: Flextrade logo
   website: flextrade.com
   services:
-  - training_and_coaching
-  - expert_advice
-  services-page: 
+    - training_and_coaching
+    - expert_advice
+  services-page:
     - expert_advice
 
 - id: ey
@@ -108,21 +126,21 @@
   alt-text: EY logo
   website: ey.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - effective_delivery
 
 - id: aspectcapital
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
-  website: aspectcapital.com
+  website: www.aspectcapital.com
   services:
-  - software_creation
-  - training_and_coaching
-  - expert_advice
-  services-page: 
+    - software_creation
+    - training_and_coaching
+    - expert_advice
+  services-page:
     - expert_advice
 
 - id: tesco
@@ -132,9 +150,9 @@
   alt-text: Tesco logo
   website: tesco.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - effective_delivery
   projects:
     - page-location: projects/software-craftsmanship-at-tesco-forecasting
@@ -148,12 +166,14 @@
   alt-text: ASOS logo
   website: asos.com
   services:
-  - software_creation
-  - expert_advice
+    - software_creation
+    - expert_advice
+    - software_modernisation
   services-page:
     - expert_advice
   projects:
-    - page-location: projects/software-craftsmanship-at-asos
+    - page-location: https://info.codurance.com/en/asos-case-study
+      page-location-es: https://info.codurance.com/es/asos-case-study
       project-name: ASOS
 
 - id: mango
@@ -162,11 +182,16 @@
   alt-text: MANGO logo
   website: mango.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+    - software_modernisation
+  services-page:
     - expert_advice
     - effective_delivery
+  projects:
+    - page-location: https://info.codurance.com/en/mango-case-study
+      page-location-es: https://info.codurance.com/es/mango-case-study
+      project-name: Mango
 
 - id: mands
   name: Marks and Spencer
@@ -174,9 +199,9 @@
   alt-text: Marks and Spencer logo
   website: marksandspencer.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - expert_advice
   projects:
     - page-location: projects/software-craftsmanship-at-mands
@@ -188,10 +213,10 @@
   alt-text: Moonpig logo
   website: moonpig.com
   services:
-  - software_creation
-  - expert_advice
-  - training_and_coaching
-  services-page: 
+    - software_creation
+    - expert_advice
+    - training_and_coaching
+  services-page:
     - expert_advice
 
 - id: coniq
@@ -200,7 +225,7 @@
   alt-text: Coniq logo
   website: coniq.com
   services:
-  - software_creation
+    - software_creation
   projects:
     - page-location: projects/software-craftsmanship-at-coniq
       project-name: Coniq
@@ -211,9 +236,9 @@
   alt-text: Amazon Web Services logo
   website: aws.amazon.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - effective_delivery
   projects:
     - page-location: projects/software-craftsmanship-at-aws
@@ -225,9 +250,9 @@
   alt-text: Trinity Mirror logo
   website: trinitymirror.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - effective_delivery
 
 - id: roche
@@ -236,7 +261,7 @@
   alt-text: Roche logo
   website: roche.com
   services:
-  - expert_advice
+    - expert_advice
 
 - id: findmypast
   name: Findmypast
@@ -244,8 +269,8 @@
   alt-text: Find My Past logo
   website: findmypast.co.uk
   services:
-  - software_creation
-  - expert_advice
+    - software_creation
+    - expert_advice
 
 - id: accelad
   name: AccelaD
@@ -254,7 +279,7 @@
   alt-text: Accelad logo
   website: accelad.com
   services:
-  - software_creation
-  - expert_advice
-  services-page: 
+    - software_creation
+    - expert_advice
+  services-page:
     - effective_delivery

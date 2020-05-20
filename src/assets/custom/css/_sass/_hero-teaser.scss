@@ -1,0 +1,197 @@
+.hero-teaser--image-position-left,
+.hero-teaser--image-position-right {
+  @include max-width--out-there;
+  position: relative;
+
+  @include medium-large-and-extra-large {
+    &::after {
+      background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
+      content: "";
+      position: absolute;
+    }
+  }
+  @include medium {
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    &::after {
+      bottom: 15px;
+      top: 15px;
+    }
+  }
+  @include large-and-extra-large {
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+    padding-top: 40px;
+
+    &::after {
+      bottom: 25px;
+      top: 40px;
+    }
+  }
+}
+
+.hero-teaser--image-position-left {
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: 2 * $lateral-space--medium;
+
+    &::after {
+      left: 50%;
+      right: $lateral-space--medium;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 2 * $lateral-space--large;
+      right: 50%;
+    }
+  }
+}
+
+.hero-teaser--image-position-right {
+  @include medium {
+    padding-left: 2 * $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+
+    &::after {
+      left: $lateral-space--medium;
+      right: 50%;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 50%;
+      right: 2 * $lateral-space--large;
+    }
+  }
+}
+
+.hero-teaser__image {
+  background-color: #aaa;
+  background-size: cover;
+
+  @include small {
+    height: 0;
+    padding-top: 230 / 360 * 100%;
+  }
+  @include medium-large-and-extra-large {
+    position: absolute;
+    z-index: 10;
+  }
+  @include medium {
+    bottom: 0;
+    top: 0;
+    width: calc(60% - #{2 * $lateral-space--medium});
+  }
+  @include large-and-extra-large {
+    bottom: 40px;
+    top: 0;
+    width: calc(57% - #{2 * $lateral-space--large});
+  }
+
+  .hero-teaser--image-position-left & {
+    background-position: left center;
+
+    @include medium {
+      left: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: $lateral-space--large;
+    }
+  }
+  .hero-teaser--image-position-right & {
+    background-position: right center;
+
+    @include medium {
+      left: auto;
+      right: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: auto;
+      right: $lateral-space--large;
+    }
+  }
+}
+
+.hero-teaser__content {
+  background-color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  @include small {
+    padding-left: $lateral-space--small;
+    padding-right: $lateral-space--small;
+  }
+  @include medium-large-and-extra-large {
+    position: relative;
+    z-index: 20;
+  }
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+  }
+  @include large-and-extra-large {
+    @include style-card-box-shadow;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+  }
+
+  .hero-teaser--image-position-left & {
+    @include medium {
+      margin-left: 40%;
+    }
+    @include large-and-extra-large {
+      margin-left: 43%;
+    }
+  }
+  .hero-teaser--image-position-right & {
+    @include medium {
+      margin-right: 40%;
+    }
+    @include large-and-extra-large {
+      margin-right: 43%;
+    }
+  }
+}
+
+.hero-teaser__content-type {
+  @include ponti-bold;
+
+  @include small {
+    color: white;
+    right: $lateral-space--small;
+    position: absolute;
+    top: 30px;
+  }
+  @include medium-large-and-extra-large {
+    color: $coral;
+    margin: 0 0 30px;
+  }
+}
+
+.hero-teaser__title {
+  @include freed-bold;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 20px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 15px;
+  }
+}
+
+.hero-teaser__description {
+  @include mercer-reg;
+  color: $grey--dark;
+
+  @include small {
+    margin: 0 0 35px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 25px;
+  }
+}

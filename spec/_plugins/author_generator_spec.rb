@@ -56,7 +56,7 @@ describe "Generate Author" do
 
     allow(Jekyll::AuthorIndexWriter).to receive(:new).and_return(author_index_writer)
 
-    genAuthor = Jekyll::GenerateAuthor.new       
+    genAuthor = Jekyll::GenerateAuthor.new
     genAuthor.generate(site)
 
     expect(author_index_writer).to receive(:write_author_index).exactly(0).times()
@@ -68,31 +68,24 @@ describe "Generate Author" do
     allow(site).to receive(:config).and_return({'no_author_dir' => 'no_authors'})
   
     posts = double
-    collection_docs = double
-    allow(site).to receive(:posts).and_return(posts)
+    videos = double
 
     author_record = double
-
     allow(posts).to receive(:docs).and_return([ author_record ])
-
     allow(author_record).to receive(:data).and_return( {'author' => 'A.A. Aaardvark'} )
-    
-    allow(site).to receive(:collections).and_return( {'videos' => collection_docs})
+    allow(site).to receive(:collections).and_return( {'videos' => videos, 'posts' => posts})
 
     video_docs = double
-    allow(video_docs).to receive(:data).and_return( {'author' => 'B B Barracuda'} ) 
+    allow(video_docs).to receive(:data).and_return( {'author' => 'B B Barracuda'} )
 
-    allow(collection_docs).to receive(:docs).and_return( [video_docs] )
-  
+    allow(videos).to receive(:docs).and_return( [video_docs] )
     allow(site).to receive(:source).and_return("source/")
     allow(site).to receive(:site_payload).and_return("payload")
 
     author_index_writer = double
-
     expect(author_index_writer).to receive(:write_author_index).with("A.A. Aaardvark")
     expect(author_index_writer).to receive(:write_author_index).with("B B Barracuda")
 
-    
     allow(Jekyll::AuthorIndexWriter).to receive(:new).and_return(author_index_writer)
 
     genAuthor = Jekyll::GenerateAuthor.new   

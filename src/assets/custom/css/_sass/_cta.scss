@@ -1,0 +1,96 @@
+@mixin cta {
+  @include bold;
+  font-size: 15px;
+  text-align: center;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @include small {
+    display: block;
+    padding: 10px;
+  }
+
+  @include medium-large-and-extra-large {
+    display: inline-block;
+    padding: 10px 25px;
+  }
+}
+
+@mixin primary {
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@mixin primary-coral {
+  background-color: $coral;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $coral--light;
+    color: #ffffff;
+  }
+}
+
+.cta--primary-coral {
+  @include cta;
+  @include primary;
+  @include primary-coral;
+}
+
+@mixin primary-navy {
+  background-color: $navy;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $navy--light;
+    color: #ffffff;
+  }
+}
+
+.cta--primary-navy {
+  @include cta;
+  @include primary;
+  @include primary-navy;
+}
+
+@mixin secondary {
+  background: transparent;
+  border-style: solid;
+  border-width: 2px;
+}
+
+@mixin secondary-light {
+  &,
+  &:hover,
+  &:focus {
+    color: white;
+    border-color: white;
+  }
+}
+
+@mixin secondary-dark {
+  &,
+  &:hover,
+  &:focus {
+    color: $grey--dark;
+    border-color: $grey--dark;
+  }
+}
+
+@mixin cta--secondary-light {
+  @include cta;
+  @include secondary;
+  @include secondary-light;
+}
+
+@mixin cta--secondary-dark {
+  @include cta;
+  @include secondary;
+  @include secondary-dark;
+}

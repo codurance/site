@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Our People
+redirect_from:
+  - /aboutus/
+  - /aboutus/ourteam.html
+  - /aboutus/ourteam/
 ---
 <!--=== Content Part ===-->
 <style type="text/css">
@@ -12,7 +16,7 @@ title: Our People
 <!-- Hero -->
 <section class="services-hero height-is-based-on-content">
   <div class="container g-z-index-1 g-py-100 text-center">
-    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15">{% t our-people.title %}</h1>
+    <h1 class="services-hero-title g-font-weight-300 g-letter-spacing-1 g-mb-15 g-font-weight-800">{% t our-people.title %}</h1>
     <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
     </div>
   </div>
@@ -22,9 +26,6 @@ title: Our People
   <div class="row ">
     <div class="col-md-12">
       <a id="theteam"></a>
-      <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center"> 
-          <h2>{% t company-the_team.title %}</h2>
-      </div>
 
       {% assign allAuthors = "" | split: "," %}
       {% for page in site.pages %}
@@ -100,17 +101,11 @@ title: Our People
                   </div>
                   <!-- End User Details -->
 
-                  <!-- User Position & Email -->
+                  <!-- User Position-->
                   <h4 class="h6 g-font-weight-300 g-mb-10">
                     <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> {{member.role}}
                   </h4>
-                  {% if member.email != null %}
-                  <h4 class="h6 g-font-weight-300 g-mb-10">
-                    <i class="icon-envelope g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> 
-                    <a href="mailto:{{member.email}}">{{member.email}}</a>
-                  </h4>
-                  {% endif %}
-                  <!-- End User Position & Email -->
+                  <!-- End User Position-->
                   
                   <hr class="g-brd-gray-light-v4 g-my-20">
                   <p class="lead g-line-height-1_8">{{member.fullDescription}}</p>
