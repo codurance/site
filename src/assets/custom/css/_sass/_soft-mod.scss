@@ -60,10 +60,7 @@
 }
 
 .soft-mod__get-in-touch {
-  @include medium {
+  @include medium-large-and-extra-large {
     padding-top: 50px;
-  }
-  @include large-and-extra-large {
-    padding-top: 100px;
   }
 }
