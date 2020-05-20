@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:visual": "./tools/snapshots/run-visual-regression-tests.sh"
   },
   "repository": {
     "type": "git",
