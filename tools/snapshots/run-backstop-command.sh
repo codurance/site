@@ -24,12 +24,6 @@ function waitForHttp {
   printf ' website started!'
 }
 
-function hasWebsiteFinishedBuilding {
-  containerId=$(dc ps -q site)
-  numberOfSuccesses=$(docker logs $containerId | grep -o "Build complete" | wc -l | tr -d ' ')
-  echo $(if [numberOfSuccesses -eq 2] then true else false fi)
-}
-
 trap cleanup EXIT # Run `cleanup` if the script exits unexpectedly
 
 function runBackstopCommand {
@@ -38,6 +32,7 @@ function runBackstopCommand {
   cleanup
   docker-compose build visual_regression_tests
   docker-compose up -d site
+  hasWebsiteFinishedBuilding
   waitForHttp localhost:4000/en/assets/custom/img/blog/swan.png #We wait on an image because Jekyll loads images last
   docker-compose run visual_regression_tests $command
 }
