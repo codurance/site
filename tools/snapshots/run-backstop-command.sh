@@ -4,15 +4,15 @@ function cleanup {
   docker-compose down -v
 }
 
-function waitForHttp {
+function waitForWebsiteToStart {
   attempt_counter=0
   max_attempts=120
 
   printf 'Visual regression tests are waiting for the website to start'
 
-  until $(curl --output /dev/null --silent --head --fail $1); do
+  until [ "$(hasWebsiteFinishedBuilding)" = "true" ]; do
       if [ ${attempt_counter} -eq ${max_attempts} ];then
-        echo "Can't connect to website for visual regression tests"
+        echo "Website is taking too long to start, or has failed to start."
         exit 1
       fi
 
@@ -24,6 +24,11 @@ function waitForHttp {
   printf ' website started!'
 }
 
+function hasWebsiteFinishedBuilding {
+  numberOfSuccesses=$(docker-compose logs site | grep -o "Build complete" | wc -l | tr -d ' ')
+  if [ "$numberOfSuccesses" = "2" ]; then echo 'true'; else echo 'false'; fi
+}
+
 trap cleanup EXIT
 
 function runBackstopCommand {
@@ -32,6 +37,7 @@ function runBackstopCommand {
   cleanup
   docker-compose build visual_regression_tests
   docker-compose up -d site
-  waitForHttp localhost:4000/en/assets/custom/img/blog/swan.png #We wait on an image because Jekyll loads images last
+  waitForWebsiteToStart
+  
   docker-compose run visual_regression_tests $command
 }
