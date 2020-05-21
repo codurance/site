@@ -819,3 +819,14 @@ curated-publications:
   softmod:
     intro-title: Sobre Software Modernisation
     intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
+
+software-delivery:
+  hero-title: Software Delivery
+  hero-sub-title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa quam. Nulla blandit lacus a finibus rhoncus. Maecenas auctor, elit id aliquam semper, nisl.
+  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget massa quam. Nulla blandit lacus a finibus rhoncus. Maecenas auctor, elit id aliquam semper, nisl.
+  hero-cta: Explícanos tus retos
+  problems-title: ¿Cómo podemos ayudarte?
+  problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
+  what: Qué
+  how: Cómo
+  hubspot-form-id: 5f5e4e87-4cdb-4b78-a13f-0ce5bbc1a6eb
