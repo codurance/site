@@ -21,7 +21,7 @@
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
-    {"label": "Codurance Homepage", "url": "http://localcodurance.com:4000/en/", "removeSelectors": ["video"], "delay": 300},
+    {"label": "Codurance Homepage", "url": "http://localcodurance.com:4000/en/", "removeSelectors": ["video", ".bg-slider"], "delay": 300},
     {"label": "Codurance Clients",  "url": "http://localcodurance.com:4000/en/clients/", "removeSelectors": [".dzsparallaxer", ".u-line-icon-pro"]},
     {"label": "Codurance Services", "url": "http://localcodurance.com:4000/en/services/", "removeSelectors": [".dzsparallaxer"]},
     {"label": "Codurance Training", "url": "http://localcodurance.com:4000/en/services/training/", "removeSelectors": [".dzsparallaxer"]},
