@@ -10,6 +10,7 @@ $site-base-url: "{{ site.baseurl }}";
 @import "backgrounds";
 @import "cta";
 @import "card";
+@import "site-navbar-height";
 
 @import "cards-layout";
 @import "curated-publications";
