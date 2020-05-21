@@ -3,6 +3,11 @@
   font-weight: 700;
 }
 
+@mixin semibold {
+  font-family: proxima-nova;
+  font-weight: 600;
+}
+
 @mixin reg {
   font-family: proxima-nova;
   font-weight: 400;
@@ -94,6 +99,11 @@
   @include medium-large-and-extra-large {
     @include mercer;
   }
+}
+
+@mixin base-semibold {
+  @include base;
+  @include semibold;
 }
 
 @mixin base-reg {
