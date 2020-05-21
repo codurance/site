@@ -1,8 +1,40 @@
-<nav class="site-navbar">
-    <div class="site-navbar__inner">
-
-    </div>
-</nav>
+<header data-js-target="site-navigation">
+  <nav class="site-navbar">
+      <div class="site-navbar__inner">
+        <a class="site-navbar__navigation-link" href="{{ '/' | prepend: site.baseurl }}">
+          <img class="site-navbar__logo" src="{{ '/assets/custom/img/codurance-typemark-mono-blk.svg' | prepend: site.baseurl }}" alt="Codurance logo" />
+        </a>
+        <ul class="site-navbar__main-link-container">
+          <li class="site-navbar__main-link">
+            <a class="nav-link px-0" href="{{ '/clients' | prepend: site.baseurl }}">{% t sections.clients %}</a>
+          </li>
+          <li class="site-navbar__main-link">
+            <a class="nav-link px-0" href="{{ '/services' | prepend: site.baseurl }}">{% t sections.services%}</a>
+          </li>
+          <li class="site-navbar__main-link">
+            <a class="nav-link px-0" href="{{ '/publications' | prepend: site.baseurl }}">{% t sections.publications%}</a>
+          </li>
+          <li class="site-navbar__main-link">
+            <a class="nav-link px-0" href="{{ '/careers' | prepend: site.baseurl }}">{% t sections.careers%}</a>
+          </li>
+          <li class="site-navbar__main-link">
+            <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">{% t sections.about-us%}</a>
+            {%- comment -%} <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1" style="display: none;">
+              <li class="dropdown-item">
+                <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link g-px-0" href="{{ '/about-us/our-story' | prepend: site.baseurl }}">{% t sections.our-story%}</a>
+              </li>
+            </ul> {%- endcomment -%}
+          </li>
+          <li class="site-navbar__main-link">
+              <a class="nav-link px-0" href="{{ '/contact-us' | prepend: site.baseurl }}">{% t sections.contact%}</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</header>
 
   {%- comment -%} Logo
   main nav

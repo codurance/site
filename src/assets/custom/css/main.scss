@@ -2,6 +2,7 @@
 ---
 
 $site-base-url: "{{ site.baseurl }}";
+$site-navbar-height: 106px;
 
 @import "spacing";
 @import "breakpoints";
@@ -11,11 +12,12 @@ $site-base-url: "{{ site.baseurl }}";
 @import "cta";
 @import "card";
 
+@import "site-navbar";
+
 @import "cards-layout";
 @import "curated-publications";
 @import "hero-teaser";
 @import "section-intro";
-@import "site-navbar";
 
 @import "compass-teaser";
 @import "flexslider";

@@ -1,11 +1,41 @@
 .site-navbar {
   @include lateral-spacing;
+  background: white;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+  padding-bottom: 40px;
   padding-top: 40px;
-  padding-right: 40px;
+  width: 100%;
+  z-index: 100;
 }
 
+.site-navbar--on-scroll {
+  @extend .site-navbar;
+  position: fixed;
+  top: 0;
+}
+
+
 .site-navbar__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
+}
+
+.site-navbar__logo {
+  width: 190px;
+}
+
+.site-navbar__main-link-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
