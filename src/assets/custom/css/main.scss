@@ -4,6 +4,8 @@
 $site-base-url: "{{ site.baseurl }}";
 $site-navbar-height: 106px;
 
+$global-max-width: 960px;
+
 @import "spacing";
 @import "breakpoints";
 @import "typography";
