@@ -1,6 +1,10 @@
 <section id="compass-by-codurance" class="compass-teaser">
   <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>
-  {% assign href = "http://compass.codurance.com" %}
+  {% if site.lang == 'es' %}
+      {% assign href = "http://compass-es.codurance.com" %}
+    {% else %}
+      {% assign href = "http://compass.codurance.com" %}
+  {% endif %}
   {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
   {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
 </section>
