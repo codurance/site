@@ -36,7 +36,11 @@ metarobots: index,follow
   </div><!-- grid -->
 </section><!-- sm-hero -->
 
-<section id="how-we-solve-your-problems" class="soft-mod-problems">
+
+<section class="soft-mod-problems">
+  {%- assign anchor_id = "how-we-solve-your-problems" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
   {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
   {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
   {% assign cta_href = "#get-in-touch" %}
@@ -203,7 +207,9 @@ metarobots: index,follow
   </div>
 </section>
 
-<section id="how-we-help-our-clients" class="soft-mod__our-clients">
+<section class="soft-mod__our-clients">
+  {%- assign anchor_id = "how-we-help-our-clients" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
 
     <h2 class="text-center--bp768 text-700 text-white">{% t software-modernisation.clients-title %}</h2>
@@ -278,7 +284,10 @@ metarobots: index,follow
   </div>
 </section><!-- Case Studies -->
 
-<section id="testimonials" class="soft-mod__testimonials">
+<section class="soft-mod__testimonials">
+  {%- assign anchor_id = "testimonials" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
   {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
@@ -314,7 +323,10 @@ metarobots: index,follow
   {% include soft_mod_curated_publications.html %}
 </div>
 
-<section id="get-in-touch" class="soft-mod__get-in-touch">
+<section class="soft-mod__get-in-touch">
+  {%- assign anchor_id = "get-in-touch" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
   <div class="container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}

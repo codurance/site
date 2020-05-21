@@ -1,4 +1,7 @@
-<section id="compass-by-codurance" class="compass-teaser">
+<section class="compass-teaser">
+  {%- assign anchor_id = "compass-by-codurance" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
   <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>
   {% if site.lang == 'es' %}
       {% assign href = "http://compass-es.codurance.com" %}
