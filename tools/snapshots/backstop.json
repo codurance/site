@@ -23,7 +23,7 @@
   "scenarios": [
     {"label": "Codurance Homepage", "url": "http://localcodurance.com:4000/en/", "removeSelectors": ["video", ".bg-slider"], "delay": 300},
     {"label": "Codurance Clients",  "url": "http://localcodurance.com:4000/en/clients/", "removeSelectors": [".dzsparallaxer", ".u-line-icon-pro"]},
-    {"label": "Codurance Services", "url": "http://localcodurance.com:4000/en/services/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "Codurance Services", "url": "http://localcodurance.com:4000/en/services/", "removeSelectors": [".dzsparallaxer", ".grecaptcha-badge"]},
     {"label": "Codurance Training", "url": "http://localcodurance.com:4000/en/services/training/", "removeSelectors": [".dzsparallaxer"]},
     {"label": "Codurance Crafting Code", "url": "http://localcodurance.com:4000/en/services/training/crafting-code/", "removeSelectors": [".dzsparallaxer"]},
     {"label": "Codurance Publications", "url": "http://localcodurance.com:4000/en/publications/", "removeSelectors": [".dzsparallaxer"]},
