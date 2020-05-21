@@ -15,6 +15,7 @@ $site-base-url: "{{ site.baseurl }}";
 @import "curated-publications";
 @import "hero-teaser";
 @import "section-intro";
+@import "site-navbar";
 
 @import "compass-teaser";
 @import "flexslider";
