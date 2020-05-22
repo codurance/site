@@ -1,3 +1,5 @@
+$timing-and-ease: 0.3s ease-out;
+
 .site-navbar {
   @include lateral-spacing;
   background: white;
@@ -43,7 +45,9 @@
 .site-navbar__main-link {
   @include base-semibold;
   color: $off-black;
+  display: inline-block;
   margin-right: 30px;
+  transition: color $timing-and-ease;
 
   &:hover {
     color: $coral;
@@ -54,4 +58,39 @@
 .site-navbar__main-link--active {
   @extend .site-navbar__main-link;
   color: $coral;
+}
+
+.site-navbar__drop-down {
+  margin-right: 13px;
+  position: relative;
+
+  & > .site-navbar__main-link {
+    &::after,
+    &::before {
+      background: $off-black;
+      border-radius: 30px;
+      content: '';
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      transform-origin: left center;
+      transition: all $timing-and-ease;
+      width: 10px;
+    }
+    &::after {
+      transform: translate(-18px, -1px) rotate(-45deg);  }
+    &::before {
+      transform: translate(91px, -8px) rotate(45deg);  }
+  }
+}
+
+.site-navbar__drop-down > .site-navbar__main-link:hover {
+  &::after,
+  &::before {
+    background: $coral;
+  }
+  &::after {
+    transform: translate(-18px, -1px) rotate(-45deg);  }
+  &::before {
+    transform: translate(91px, -8px) rotate(45deg);  }
 }
