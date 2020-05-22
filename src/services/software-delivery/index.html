@@ -7,6 +7,7 @@ description-es: Software Delivery Description ES
 image:
    src: /assets/custom/img/softmod/metaimgs/softmod-opengraph-card-linkedIn.jpg
 ---
+{% assign service_line_translations = site.translations[site.lang].software-delivery %}
 
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
@@ -16,17 +17,16 @@ image:
       <div>
         <h1 class="text-900 position-relative">
           <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><defs></defs><g data-name="Layer 2"><g data-name="Layer 1"><path class="box-stroke" d="M143.85 59.65L84.01 94.52v89.9L22.9 152.27v-45.93l38.62 21.39v26.37l-19.48-10.25V73.42L61.52 85l43.29-25.35-42.52-24.92L22.9 58.29v23.76L3 71.89v-22.2L84.01 3l77.65 43.63v93.39l-38.22 22.2v-29.85"/><circle class="box-stroke" cx="124.13" cy="121.42" r="10"/></g></g></svg>
-          {% t software-delivery.hero-title %}
+          {{ service_line_translations.hero-title }}
         </h1>
         <p class="h4 text-700">
-          {% t software-delivery.hero-sub-title %}
+          {{ service_line_translations.hero-sub-title }}
         </p>
         <p class="g-pt-10">
-          {% t software-delivery.hero-introduction %}
+          {{ service_line_translations.hero-introduction }}
         </p>
         {% assign href = "#get-in-touch" %}
-        {% assign text = site.translations[site.lang].software-delivery.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %}
+        {% include cta_primary_link.html color='coral' href=href text=service_line_translations.hero-cta %}
       </div>
     </div>
     <div class="sm-hero__grid__grid-item sm-hero__grid__grid-item--intro-image">
@@ -36,11 +36,8 @@ image:
 </section><!-- sm-hero -->
 
 <section id="how-we-solve-your-problems" class="soft-mod-problems">
-  {% capture title %}{% t software-delivery.problems-title %}{% endcapture %}
-  {% capture description %}{% t software-delivery.problems-introduction %}{% endcapture %}
   {% assign cta_href = "#get-in-touch" %}
-  {% capture cta_text %}{% t software-delivery.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=service_line_translations.hero-cta description=service_line_translations.problems-introduction title=service_line_translations.problems-title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
@@ -62,7 +59,7 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.sustainable-change-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.sus-change-li-1 %}</li>
                 <li>{% t software-modernisation.sus-change-li-2 %}</li>
@@ -70,7 +67,7 @@ image:
                 <li>{% t software-modernisation.sus-change-li-4 %}</li>
                 <li>{% t software-modernisation.sus-change-li-5 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.sus-change-how-details %}
               </p>
@@ -86,14 +83,14 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.innovation-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.innovation-li-1 %}</li>
                 <li>{% t software-modernisation.innovation-li-2 %}</li>
                 <li>{% t software-modernisation.innovation-li-3 %}</li>
                 <li>{% t software-modernisation.innovation-li-4 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.innovation-how-details %}
               </p>
@@ -109,7 +106,7 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.technology-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.technology-li-1 %}</li>
                 <li>{% t software-modernisation.technology-li-2 %}</li>
@@ -117,7 +114,7 @@ image:
                 <li>{% t software-modernisation.technology-li-4 %}</li>
                 <li>{% t software-modernisation.technology-li-5 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.technology-how-details %}
               </p>
@@ -133,14 +130,14 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.business-alignment-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.business-alignment-li-1 %}</li>
                 <li>{% t software-modernisation.business-alignment-li-2 %}</li>
                 <li>{% t software-modernisation.business-alignment-li-3 %}</li>
                 <li>{% t software-modernisation.business-alignment-li-4 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.business-alignment-how-details %}
               </p>
@@ -156,7 +153,7 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.people-and-culture-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.people-and-culture-li-1 %}</li>
                 <li>{% t software-modernisation.people-and-culture-li-2 %}</li>
@@ -164,7 +161,7 @@ image:
                 <li>{% t software-modernisation.people-and-culture-li-4 %}</li>
                 <li>{% t software-modernisation.people-and-culture-li-5 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.people-and-culture-how-details %}
               </p>
@@ -180,7 +177,7 @@ image:
               <span class="h2 text-900 text-white">{% t software-modernisation.risk-management-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-delivery.what %}</span>
+              <span class="h4 text-700">{{ service_line_translations.what }}</span>
               <ul class="g-pb-15 list-ticks">
                 <li>{% t software-modernisation.risk-management-li-1 %}</li>
                 <li>{% t software-modernisation.risk-management-li-2 %}</li>
@@ -188,7 +185,7 @@ image:
                 <li>{% t software-modernisation.risk-management-li-4 %}</li>
                 <li>{% t software-modernisation.risk-management-li-5 %}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-delivery.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ service_line_translations.how }}</span>
               <p>
                 {% t software-modernisation.risk-management-how-details %}
               </p>
@@ -327,7 +324,7 @@ image:
       <script>
         hbspt.forms.create({
           portalId: "3042464",
-          formId: "{% t software-delivery.hubspot-form-id %}"
+          formId: "{{ service_line_translations.hubspot-form-id }}"
         });
       </script>
     </div>
