@@ -5,7 +5,7 @@
 </script>
 
 <!-- Header -->
-<header >
+{%- comment -%} <header > {%- endcomment -%}
 
   {%- comment -%} <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -85,7 +85,7 @@
 
   {% include site_navbar.html %}
 
-</header>
+{%- comment -%} </header> {%- endcomment -%}
 <!-- End Header -->
 
 {% if page.url == "/" or page.url == "/careers/" %}
