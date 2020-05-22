@@ -61,36 +61,40 @@ $timing-and-ease: 0.3s ease-out;
 }
 
 .site-navbar__drop-down {
-  margin-right: 13px;
+  margin-right: 15px;
   position: relative;
 
   & > .site-navbar__main-link {
-    &::after,
-    &::before {
+    &::before,
+    &::after {
       background: $off-black;
       border-radius: 30px;
       content: '';
       display: inline-block;
       height: 2px;
       position: absolute;
-      transform-origin: left center;
+      transform-origin: center;
       transition: all $timing-and-ease;
       width: 10px;
     }
-    &::after {
-      transform: translate(-18px, -1px) rotate(-45deg);  }
     &::before {
-      transform: translate(91px, -8px) rotate(45deg);  }
+      transform: translate(82px, 14px) rotate(45deg);
+    }
+    &::after {
+      transform: translate(13px, 14px) rotate(-45deg);
+    }
   }
 }
 
 .site-navbar__drop-down > .site-navbar__main-link:hover {
-  &::after,
-  &::before {
+  &::before,
+  &::after{
     background: $coral;
   }
-  &::after {
-    transform: translate(-18px, -1px) rotate(-45deg);  }
   &::before {
-    transform: translate(91px, -8px) rotate(45deg);  }
+    transform: translate(82px, 14px) rotate(-45deg);
+  }
+  &::after {
+    transform: translate(13px, 14px) rotate(45deg);
+  }
 }
