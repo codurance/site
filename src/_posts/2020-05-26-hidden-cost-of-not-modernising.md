@@ -15,7 +15,6 @@ tags:
   - software modernisation
 pinned_locations:
   - soft-mod
-in_page_banner: none
 ---
 
 ## Introduction
