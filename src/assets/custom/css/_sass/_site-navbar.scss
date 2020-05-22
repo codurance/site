@@ -2,8 +2,8 @@
   @include lateral-spacing;
   background: white;
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-top: 35px;
   width: 100%;
   z-index: 100;
 }
@@ -22,7 +22,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: $global-max-width;
 }
 
 .site-navbar__logo {
@@ -38,4 +38,20 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.site-navbar__main-link {
+  @include base-semibold;
+  color: $off-black;
+  margin-right: 30px;
+
+  &:hover {
+    color: $coral;
+    text-decoration: none;
+  }
+}
+
+.site-navbar__main-link--active {
+  @extend .site-navbar__main-link;
+  color: $coral;
 }
