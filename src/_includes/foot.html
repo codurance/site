@@ -27,6 +27,7 @@
   <script src="{{ '/assets/unify-2.4/js/components/hs.onscroll-animation.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.go-to.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/custom/js/custom.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/custom/js/site-navbar.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/custombox/custombox.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.modal-window.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/masonry/dist/masonry.pkgd.min.js' | prepend: site.baseurl }}"></script>
@@ -94,10 +95,10 @@
         }
       });
 
-      $(window).on('load', function () {
+      {%- comment -%} $(window).on('load', function () {
         $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
-      });
+      }); {%- endcomment -%}
   </script>
 
 <!--Flexslider Init-->
