@@ -36,13 +36,13 @@ All cost savings are welcome, provided they don’t compromise quality, but cost
 ## Understanding Opportunity Cost
 In order to understand the true cost of doing nothing it is necessary to understand how much a new piece of functionality is worth and how long you are delaying its release because of the current state of your technology. 
 
-### The Value of a Release
+## The Value of a Release
 
 If your product is based on feature subscriptions and you have pre-sold new functionality to a number of clients then it will be very easy to understand the value of a feature.
 Sometimes it can be possible to assess the potential size of a market or market segment that will be enabled by a new feature. For example, I once worked at a company where they were trying to implement the US tax rules in their checkout. Without this feature they could not trade in the US beyond a certain level so they had to turn trade away. So in this case they could estimate reasonably well the value of this new feature.
 In most cases, however, it is not easy to understand the value of a feature. Estimates can be made about the size of the opportunity that will be opened up but until the feature is usable, at least to MVP standard, by real customers, it won’t be possible to understand the size of the opportunities that are being missed until after the feature is released. The best most organisations can hope to achieve is to estimate the value of features being built based on some average value of previous features.
 
-### The Length of Delay
+## The Length of Delay
 
 If assessing the value of a feature is not complex enough, bordering on impossible, prior to release, it may seem extremely daunting to understand how long features are being delayed by systems and processes that need modernisation. Counter intuitively, it is relatively easy to understand how quickly you can release new features after a software modernisation program and the answer lies in the State of DevOps Report.
 For nearly a decade the SODOR has surveyed thousands of technology professionals from thousands of organisations around the world in order to help us to understand what a high performing organisation, and in the latest 2019 version, an Elite organisation can look like. A well managed software modernisation program has the potential to elevate your organisation to the level of a high performing or elite organisation so that you can release new features with a lead time as little as days or hours. In order to calculate the upper bound for the length of delay of value, we need look no further, therefore, than the current lead time for new features.
