@@ -1,3 +1,9 @@
 {% assign translations = site.translations[site.lang].curated-publications.softmod %}
 
-{% include curated_publications.html id="publications" tag="software modernisation" pinned_location="soft-mod" title=translations.intro-title description=translations.intro-description class='soft-mod__curated-publications' %}
+<div class="soft-mod__curated-publications">
+  {%- assign anchor_id = "publications" -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
+  {% include curated_publications.html tag="software modernisation" pinned_location="soft-mod" title=translations.intro-title description=translations.intro-description  %}
+</div>
+

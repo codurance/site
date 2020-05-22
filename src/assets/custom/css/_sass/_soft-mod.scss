@@ -1,3 +1,12 @@
+.on-page-anchor {
+  top: calc(-50px - #{$site-navbar-height-base});
+}
+@media (min-width: 992px) and (max-width: $largeMax) {
+  .on-page-anchor {
+    top: calc(-50px - #{$site-navbar-height-large});
+  }
+}
+
 .soft-mod__testimonials {
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
@@ -38,8 +47,21 @@
 }
 
 .soft-mod__webinar-teaser {
+  @include small {
+    .on-page-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
   @include medium-large-and-extra-large {
     margin-bottom: 50px;
+  }
+}
+
+.soft-mod__curated-publications {
+  @include small {
+    .on-page-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
   }
 }
 
@@ -62,5 +84,16 @@
 .soft-mod__get-in-touch {
   @include medium-large-and-extra-large {
     padding-top: 50px;
+  }
+
+  @include small {
+    .on-page-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
+  @media (min-width: 992px) and (max-width: $largeMax) {
+    .on-page-anchor {
+      top: calc(40px - #{$site-navbar-height-large});
+    }
   }
 }
