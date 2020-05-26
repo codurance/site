@@ -810,3 +810,23 @@ curated-publications:
   softmod:
     intro-title: Software Modernisation publications
     intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
+service-line-template:
+  hero-title: Lorum Ipsum
+  hero-sub-title: Lorem ipsum dolor sit
+  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  hero-cta: Lorem ipsum dolor
+  problems-title: Lorem ipsum dolor sit amet
+  problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+
+  home-page-banner-text: Lorem ipsum dolor sit amet,
+  home-page-banner-link: Lorem ipsum
+
+  clients-title: Lorem ipsum dolor sit amet
+  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+
+  hubspot-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964
+
+  in-page-banner-publications-title: Lorem ipsum
+  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  in-page-banner-publications-link: Find out more
