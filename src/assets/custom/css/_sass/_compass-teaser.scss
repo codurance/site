@@ -11,12 +11,7 @@
   @include small {
     padding: 50px 25px;
   }
-  @include medium {
-    padding: 50px;
-    position: relative;
-    top: -100px;
-  }
-  @include large-and-extra-large {
+  @include medium-large-and-extra-large {
     padding: 50px;
     position: relative;
     top: #{-2 * $vertical-overlap};

@@ -36,7 +36,7 @@
 .soft-mod__sheen-container {
   background: $sheen;
 
-  @include large-and-extra-large {
+  @include medium-large-and-extra-large {
     padding-top: $vertical-overlap;
   }
 }
@@ -49,8 +49,6 @@
   }
   @include medium-large-and-extra-large {
     margin-bottom: 50px;
-  }
-  @include large-and-extra-large {
     margin-top: -$vertical-overlap;
   }
 }
@@ -108,10 +106,7 @@
   }
 
   @include medium-large-and-extra-large {
-    padding-top: 100px;
-  }
-
-  @include large-and-extra-large {
     margin-top: -150px;
+    padding-top: 100px;
   }
 }

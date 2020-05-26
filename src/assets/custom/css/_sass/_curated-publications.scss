@@ -29,12 +29,7 @@
     padding-bottom: 50px;
     padding-top: 50px;
   }
-  @include medium {
-    background-color: $slate;
-    padding-bottom: $vertical-overlap;
-    padding-top: #{(2 * $vertical-overlap)};
-  }
-  @include large-and-extra-large {
+  @include medium-large-and-extra-large {
     background-color: $slate;
     padding-bottom: #{(2 * $vertical-overlap)};
     padding-top: #{(2 * $vertical-overlap)};
