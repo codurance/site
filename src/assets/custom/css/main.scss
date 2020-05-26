@@ -3,7 +3,7 @@
 
 $site-base-url: "{{ site.baseurl }}";
 
-@import "spacing";
+@import "lateral-spacing";
 @import "breakpoints";
 @import "typography";
 @import "colors";
