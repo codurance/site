@@ -825,8 +825,6 @@ service-line-template:
   clients-title: Lorem ipsum dolor sit amet
   clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 
-  hubspot-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964
-
   in-page-banner-publications-title: Lorem ipsum
   in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   in-page-banner-publications-link: Find out more
