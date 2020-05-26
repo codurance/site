@@ -88,3 +88,23 @@
     }
   }
 }
+
+.soft-mod__get-in-touch-form {
+  @include max-width--column;
+  background-color: white;
+  padding-bottom: 100px;
+
+  @include small {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include medium-large-and-extra-large {
+    padding-top: 100px;
+  }
+
+  @include large-and-extra-large {
+    margin-top: -150px;
+  }
+}
