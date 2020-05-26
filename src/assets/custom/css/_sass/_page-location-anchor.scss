@@ -1,4 +1,10 @@
-.on-page-anchor {
+.page-location-anchor {
   position: relative;
   display: block;
+  top: calc(-50px - #{$site-navbar-height-base});
+
+  @media (min-width: 992px) and (max-width: $largeMax) {
+    .page-location-anchor {
+      top: calc(-50px - #{$site-navbar-height-large});
+    }
 }
