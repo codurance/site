@@ -35,6 +35,10 @@
 
 .soft-mod__sheen-container {
   background: $sheen;
+
+  @include large-and-extra-large {
+    padding-top: $vertical-overlap;
+  }
 }
 
 .soft-mod__webinar-teaser {
@@ -45,6 +49,9 @@
   }
   @include medium-large-and-extra-large {
     margin-bottom: 50px;
+  }
+  @include large-and-extra-large {
+    margin-top: -$vertical-overlap;
   }
 }
 
@@ -84,7 +91,7 @@
   }
   @media (min-width: 992px) and (max-width: $largeMax) {
     .page-location-anchor {
-      top: calc(40px - #{$site-navbar-height-large});
+      top: calc(40px - #{$site-navbar-height-distorted});
     }
   }
 }
