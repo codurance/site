@@ -91,6 +91,13 @@
 }
 
 @media (min-width: 800px) {
+  .bg-placeholder {
+    background-image: url("#{$site-base-url}/assets/custom/img/placeholders/meta-social-image.png");
+    background-position: center bottom 40px;
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+  }
+
   .bg-sustainable-change {
     background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-sustainable-change.svg");
     background-position: center bottom 40px;
