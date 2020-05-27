@@ -323,7 +323,8 @@ metarobots: index,follow
   {% include soft_mod_curated_publications.html %}
 </div>
 
-{% include get_in_touch.html %}
+{% capture hubSpotId %}{% t software-modernisation.hubspot-form-id %}{% endcapture %}
+{% include get_in_touch.html hubSpotId=hubSpotId %}
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
