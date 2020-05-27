@@ -210,10 +210,7 @@ metarobots: noindex,nofollow
   {% include compass_teaser.html %}
 </div>
 
-{% capture hubSpotId %}{% t software-modernisation.hubspot-form-id %}{% endcapture %}
-{% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
-{% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
-{% include get_in_touch.html hubSpotId=hubSpotId title=title description=description %}
+{% include services_contact_form.liquid %}
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
