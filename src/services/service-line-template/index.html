@@ -208,15 +208,13 @@ metarobots: noindex,nofollow
 
 <div class=soft-mod__sheen-container>
   {% include compass_teaser.html %}
-  {% include soft_mod_webinar_hero_teaser.html %}
-  {% include soft_mod_curated_publications.html %}
 </div>
 
 <section class="soft-mod__get-in-touch">
   {%- assign anchor_id = "get-in-touch" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
+  <div class="soft-mod__get-in-touch-form">
 
-  <div class="container-slim bg-white g-pt-50 g-pt-100--desk g-pb-100 text-center">
     {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
     {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
     {% include section_intro.html description=description title=title %}

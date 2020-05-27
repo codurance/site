@@ -17,7 +17,7 @@
 
 .curated-publications__cards {
   @include medium-large-and-extra-large {
-    margin-bottom: -150px;
+    margin-bottom: -#{(1.5 * $vertical-overlap)};
   }
 }
 
@@ -29,13 +29,10 @@
     padding-bottom: 50px;
     padding-top: 50px;
   }
-
   @include medium-large-and-extra-large {
     background-color: $slate;
-    padding-bottom: 100px;
-  }
-  @include medium-large-and-extra-large {
-    padding-top: 210px;
+    padding-bottom: #{(2 * $vertical-overlap)};
+    padding-top: #{(2 * $vertical-overlap)};
   }
 }
 

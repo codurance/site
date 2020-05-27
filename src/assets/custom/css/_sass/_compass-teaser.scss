@@ -14,7 +14,7 @@
   @include medium-large-and-extra-large {
     padding: 50px;
     position: relative;
-    top: -100px;
+    top: #{-2 * $vertical-overlap};
   }
 }
 

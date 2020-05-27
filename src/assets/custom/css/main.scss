@@ -2,8 +2,9 @@
 ---
 
 $site-base-url: "{{ site.baseurl }}";
+$vertical-overlap: 100px;
 
-@import "spacing";
+@import "lateral-spacing";
 @import "breakpoints";
 @import "typography";
 @import "colors";
