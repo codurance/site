@@ -210,29 +210,7 @@ metarobots: noindex,nofollow
   {% include compass_teaser.html %}
 </div>
 
-<section class="get-in-touch">
-  {%- assign anchor_id = "get-in-touch" -%}
-  {% include page_location_anchor.html anchor_id=anchor_id %}
-  <div class="get-in-touch__form">
-
-    {% capture title %}{% t software-modernisation.contact-heading %}{% endcapture %}
-    {% capture description %}{% t software-modernisation.contact-subheading %}{% endcapture %}
-    {% include section_intro.html description=description title=title %}
-
-    <div class="sm-enquiry">
-      <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-      <![endif]-->
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-      <script>
-        hbspt.forms.create({
-          portalId: "3042464",
-          formId: "{% t software-modernisation.hubspot-form-id %}"
-        });
-      </script>
-    </div>
-  </div>
-</section>
+{% include get_in_touch.html %}
 
 <script>
   var image = document.getElementsByClassName('img-parallax');
