@@ -106,7 +106,7 @@
   }
 
   @include medium-large-and-extra-large {
-    margin-top: -150px;
-    padding-top: 100px;
+    margin-top: #{(-1.5 * $vertical-overlap)};
+    padding-top: $vertical-overlap;
   }
 }
