@@ -20,19 +20,13 @@
             function addStyleOverridesToHead() {
               var head = getHubSpotFormIframeHeadElement();
 
-              var stylesToSetAllFieldsToOpenSans = styleTagFor('* { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }');
-              var stylesToSetAllLinksToCoduranceOrange = styleTagFor('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }');
-              var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
-              var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
-              var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
-              var stylesToMakeTheButtonsUppercase = styleTagFor('.hs-button { text-transform: uppercase; }');
+              var styleFonts = styleTagFor('* { font-family: proxima-nova, Helvetica, Arial, sans-serif !important; }');
+              var styleLinks = styleTagFor('a { text-decoration: none; color: #fb7268; } a:hover { text-decoration: underline }');
+              var styleRequiredMarker = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #fb7268; }');
 
-              head.append(stylesToSetAllFieldsToOpenSans);
-              head.append(stylesToSetAllLinksToCoduranceOrange);
-              head.append(stylesToSetAllFormFieldBackgroundsToWhite);
-              head.append(stylesToCentreAlignFormSubmittedMessage);
-              head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
-              head.append(stylesToMakeTheButtonsUppercase);
+              head.append(styleFonts);
+              head.append(styleLinks);
+              head.append(styleRequiredMarker);
             }
 
             function getHubSpotFormIframeHeadElement() {
