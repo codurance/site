@@ -12,56 +12,42 @@
       <script>
         hbspt.forms.create({
           portalId: "3042464",
-          formId: "{{ include.hubSpotId }}"
-          {% if include.custom_js %}
-            ,
-            onFormSubmit: function() {
-                  ga('send', {
-                    hitType: 'event',
-                    eventCategory: 'saleslead',
-                    eventAction: 'submit',
-                    eventLabel: 'servicepage'
-                  });
+          formId: "{{ include.hubSpotId }}",
+          onFormReady: function () {
+            addStyleOverridesToHead();
+            forceFormEmbedToApplyUpdatedStyles();
 
-                window.location.hash = 'thankyou';
-                ga('send', 'pageview');
-            },
-            onFormReady: function () {
-              addStyleOverridesToHead();
-              forceFormEmbedToApplyUpdatedStyles();
+            function addStyleOverridesToHead() {
+              var head = getHubSpotFormIframeHeadElement();
 
-              function addStyleOverridesToHead() {
-                var head = getHubSpotFormIframeHeadElement();
+              var stylesToSetAllFieldsToOpenSans = styleTagFor('* { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }');
+              var stylesToSetAllLinksToCoduranceOrange = styleTagFor('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }');
+              var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
+              var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
+              var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
+              var stylesToMakeTheButtonsUppercase = styleTagFor('.hs-button { text-transform: uppercase; }');
 
-                var stylesToSetAllFieldsToOpenSans = styleTagFor('* { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }');
-                var stylesToSetAllLinksToCoduranceOrange = styleTagFor('a { text-decoration: none; color: #ef7726; } a:hover { text-decoration: underline }');
-                var stylesToSetAllFormFieldBackgroundsToWhite = styleTagFor('.hs-input { background-color: #fff !important; }');
-                var stylesToCentreAlignFormSubmittedMessage = styleTagFor('.submitted-message { text-align: center; }');
-                var stylesToIncreaseSpacingBetweenRequiredMarkAndField = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #ef7726; }');
-                var stylesToMakeTheButtonsUppercase = styleTagFor('.hs-button { text-transform: uppercase; }');
-
-                head.append(stylesToSetAllFieldsToOpenSans);
-                head.append(stylesToSetAllLinksToCoduranceOrange);
-                head.append(stylesToSetAllFormFieldBackgroundsToWhite);
-                head.append(stylesToCentreAlignFormSubmittedMessage);
-                head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
-                head.append(stylesToMakeTheButtonsUppercase);
-              }
-
-              function getHubSpotFormIframeHeadElement() {
-                var hubspotFormIFrame = $("#hs-form-iframe-0");
-                return hubspotFormIFrame.contents().find("head");
-              }
-
-              function styleTagFor(css) {
-                return '<style type="text/css">' + css + '</style>';
-              }
-
-              function forceFormEmbedToApplyUpdatedStyles() {
-                $('input[name="firstname"]').val('').change();
-              }
+              head.append(stylesToSetAllFieldsToOpenSans);
+              head.append(stylesToSetAllLinksToCoduranceOrange);
+              head.append(stylesToSetAllFormFieldBackgroundsToWhite);
+              head.append(stylesToCentreAlignFormSubmittedMessage);
+              head.append(stylesToIncreaseSpacingBetweenRequiredMarkAndField);
+              head.append(stylesToMakeTheButtonsUppercase);
             }
-          {% endif %}
+
+            function getHubSpotFormIframeHeadElement() {
+              var hubspotFormIFrame = $("#hs-form-iframe-0");
+              return hubspotFormIFrame.contents().find("head");
+            }
+
+            function styleTagFor(css) {
+              return '<style type="text/css">' + css + '</style>';
+            }
+
+            function forceFormEmbedToApplyUpdatedStyles() {
+              $('input[name="firstname"]').val('').change();
+            }
+          }
         });
       </script>
     </div>
