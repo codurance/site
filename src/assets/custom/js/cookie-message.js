@@ -128,7 +128,6 @@ window.codurance.cookieMessage = (function() {
     }
 
     init();
-
     return {
         hasConsent: hasConsent,
         onConsent: onConsent
