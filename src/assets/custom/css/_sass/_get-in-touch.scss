@@ -17,7 +17,7 @@
   }
 }
 
-.get-in-touch__form {
+.get-in-touch__inner {
   @include max-width--column;
   background-color: white;
   padding-bottom: 100px;
@@ -34,28 +34,28 @@
   }
 }
 
-.sm-enquiry {
+.get-in-touch__form {
   @include small {
     padding-top: 40px;
   }
   @include medium-large-and-extra-large {
     padding-top: 50px;
   }
-}
 
-.sm-enquiry .hbspt-form,
-.sm-enquiry .hs-form-iframe {
-  width: 100% !important;
-  max-width: 550px !important;
-}
+  .hbspt-form,
+  .hs-form-iframe {
+    width: 100% !important;
+    max-width: 550px !important;
+  }
 
-.hs-form-58727484-8758-489d-acfa-9a4956308ce6_6145720f-1db3-4a25-a9e5-3edb3baa1ecf
-  .hs-main-font-element,
-.submitted-message.hs-main-font-element {
-  border: 1px solid #fb7268 !important;
-  text-align: center !important;
-  width: 94% !important;
-  display: block !important;
-  padding: 10px !important;
-  margin-bottom: 20px !important;
+  .hs-form-58727484-8758-489d-acfa-9a4956308ce6_6145720f-1db3-4a25-a9e5-3edb3baa1ecf
+    .hs-main-font-element,
+  .submitted-message.hs-main-font-element {
+    border: 1px solid #fb7268 !important;
+    text-align: center !important;
+    width: 94% !important;
+    display: block !important;
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+  }
 }
