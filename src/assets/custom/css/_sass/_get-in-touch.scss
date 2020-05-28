@@ -33,10 +33,10 @@
 }
 
 .get-in-touch__form {
+  @include lateral-spacing;
+
   @include small {
     padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   @include medium-large-and-extra-large {
     padding-top: 50px;
@@ -44,8 +44,15 @@
 
   .hbspt-form,
   .hs-form-iframe {
-    width: 100% !important;
-    max-width: 550px !important;
+    @include small {
+      width: 100% !important;
+    }
+    @include medium-large-and-extra-large {
+      width: 85% !important;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 850px;
+    }
   }
 
   .hs-form-58727484-8758-489d-acfa-9a4956308ce6_6145720f-1db3-4a25-a9e5-3edb3baa1ecf
