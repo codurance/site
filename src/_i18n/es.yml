@@ -196,7 +196,6 @@ services:
   we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
   we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más información
-  see-more: Ver más
   we-advise:
     title: We advise
     subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
@@ -254,8 +253,6 @@ services:
         Nuestro equipo de technical delivery se encargará de esto por ti para que puedas concentrarte en
         desarrollar las características que tu negocio necesita.
     clients-title: Clientes que se han beneficiado de entregas más efectivas
-  our-clients:
-    title: Nuestros clientes
   our-expertise:
     title: Nuestra experiencia
     subtitle: Nuestra oferta y experiencia se basan en valores de Software Craftmanship, en prácticas XP, en cultura DevOps y en procesos Agile.

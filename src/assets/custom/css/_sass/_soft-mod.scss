@@ -61,12 +61,9 @@
   }
 }
 
-.soft-mod__our-clients,
-.soft-mod__get-in-touch {
-  background-color: $slate;
-}
-
 .soft-mod__our-clients {
+  background-color: $slate;
+
   @include small {
     padding-bottom: 50px;
     padding-top: 50px;
@@ -74,39 +71,5 @@
   @include medium-large-and-extra-large {
     padding-bottom: 50px;
     padding-top: 100px;
-  }
-}
-
-.soft-mod__get-in-touch {
-  @include medium-large-and-extra-large {
-    padding-top: 50px;
-  }
-
-  @include small {
-    .page-location-anchor {
-      top: calc(0px - #{$site-navbar-height-base});
-    }
-  }
-  @media (min-width: 992px) and (max-width: $largeMax) {
-    .page-location-anchor {
-      top: calc(40px - #{$site-navbar-height-distorted});
-    }
-  }
-}
-
-.soft-mod__get-in-touch-form {
-  @include max-width--column;
-  background-color: white;
-  padding-bottom: 100px;
-
-  @include small {
-    padding-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @include medium-large-and-extra-large {
-    margin-top: #{(-1.5 * $vertical-overlap)};
-    padding-top: $vertical-overlap;
   }
 }

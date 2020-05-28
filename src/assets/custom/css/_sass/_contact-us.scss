@@ -1,0 +1,55 @@
+.offices {
+  @include lateral-spacing;
+  background: $sheen;
+  padding-top: 50px;
+
+  @include small {
+    padding-bottom: $vertical-overlap;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 2 * $vertical-overlap;
+  }
+}
+
+.offices__inner {
+  @include max-width--out-there;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+
+  @include small-and-medium {
+    flex-direction: column;
+  }
+  @include large-and-extra-large {
+    flex-direction: row;
+  }
+}
+
+.offices__location {
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  @include small-and-medium {
+    width: 100%;
+
+    &:nth-of-type(2) {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  @include large-and-extra-large {
+    max-width: 33%;
+  }
+  @include large {
+    &:nth-of-type(2) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  @include extra-large {
+    &:nth-of-type(2) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
