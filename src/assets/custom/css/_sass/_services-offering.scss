@@ -4,5 +4,8 @@ div.services-section__inner {
 
 .compass-container {
   background: $sheen;
-  padding-top: 300px;
+
+  @include medium-large-and-extra-large {
+    padding-top: 300px;
+  }
 }
