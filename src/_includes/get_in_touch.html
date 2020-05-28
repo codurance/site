@@ -23,10 +23,12 @@
               var styleFonts = styleTagFor('* { font-family: proxima-nova, Helvetica, Arial, sans-serif !important; }');
               var styleLinks = styleTagFor('a { text-decoration: none; color: #fb7268; } a:hover { text-decoration: underline }');
               var styleRequiredMarker = styleTagFor('.hs-form-required { margin-left: 0.5rem; color: #fb7268; }');
+              var styleButton = styleTagFor('.hs-button.primary { background: #fb7268; border-color: #fb7268;}');
 
               head.append(styleFonts);
               head.append(styleLinks);
               head.append(styleRequiredMarker);
+              head.append(styleButton);
             }
 
             function getHubSpotFormIframeHeadElement() {
