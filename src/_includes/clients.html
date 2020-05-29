@@ -1,0 +1,18 @@
+<!-- Clients panel -->
+<div class="section">
+  <div class="container">
+
+    <div class="title-header">
+      <h2 class="h3">{% t index-clients.title %}</h2>
+    </div>
+
+    <div class="row">
+      {% for client in site.data.clients %}
+      <div class="col-md-2 col-md-2--2up-mobile text-center u-pad-none">
+        <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
+      </div>
+      {% endfor %}
+    </div>
+
+  </div><!-- end container -->
+</div><!-- end section -->
