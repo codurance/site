@@ -6,8 +6,13 @@ layout: default
     Hero Teaser Light Image Left
 </h2>
 
-{% include hero_teaser.html content_type='Webinar' cta='cta' cta-href='#' image_position='left' image_src='http://placekitten.com/1080/600' title='title' description='description' %}
+<div style="margin-bottom: 50px">
+    {% include hero_teaser.html content_type='Service' cta='Learn More' cta-href='#' image_position='left' image_src='http://placekitten.com/1080/600' title='Hero Teaser Light Image Left' description=lorem_ipsum %}
+</div>
 
+<div style="margin-bottom: 50px">
+{% include hero_teaser.html content_type='Service' cta='Learn More' cta-href='#' image_position='right' image_src='http://placekitten.com/1080/600' title='Hero Teaser Light Image Right' description=lorem_ipsum %}
+</div>
 
 
 
