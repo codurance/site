@@ -6,6 +6,6 @@
   background: $sheen;
 
   @include medium-large-and-extra-large {
-    padding-top: 300px;
+    padding-top: $vertical-overlap;
   }
 }
