@@ -3,9 +3,9 @@
 }
 
 .services-compass-cta {
-  background: $sheen;
+  background: $slate;
 
   @include medium-large-and-extra-large {
-    padding-top: 300px;
+    padding-top: $vertical-overlap;
   }
 }
