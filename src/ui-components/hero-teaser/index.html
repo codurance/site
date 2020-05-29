@@ -4,14 +4,6 @@ layout: default
 
 {% assign lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing. Phasellus rutrum urna sed felis semper, a consequat odio ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing. Phasellus rutrum urna sed felis semper, a consequat odio' %}
 
-<div style="margin-bottom: 50px">
-    {% include hero_teaser.html content_type='Service' cta='Learn More' cta-href='#' image_position='left' image_src='http://placekitten.com/1080/600' title='Hero Teaser Light Image Left' description=lorem_ipsum %}
-</div>
-
-<div style="margin-bottom: 50px">
-{% include hero_teaser.html content_type='Service' cta='Learn More' cta-href='#' image_position='right' image_src='http://placekitten.com/1080/600' title='Hero Teaser Light Image Right' description=lorem_ipsum %}
-</div>
-
-
-
-
+{%- include section_intro.html title="Hero Teaser" class="ui-components__header" -%}
+{%- include hero_teaser.html class="ui-components__hero-teaser-example" content_type='Service' cta='Learn More' cta-href='#' image_position='left' image_src='http://placekitten.com/1080/600' title='Hero Teaser, Light, Image: Left' description=lorem_ipsum -%}
+{%- include hero_teaser.html class="ui-components__hero-teaser-example" content_type='Service' cta='Learn More' cta-href='#' image_position='right' image_src='http://placekitten.com/1080/600' title='Hero Teaser, Light, Image: Right' description=lorem_ipsum -%}
