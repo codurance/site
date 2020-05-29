@@ -2,7 +2,7 @@
   background-color: $slate;
 
   @include medium-large-and-extra-large {
-    padding-top: 50px;
+    padding-top: #{(0.5 * $vertical-overlap)};
   }
 
   @include small {
@@ -25,10 +25,9 @@
   @include small {
     padding-top: 50px;
   }
-
   @include medium-large-and-extra-large {
     margin-top: #{(-1.5 * $vertical-overlap)};
-    padding-top: $vertical-overlap;
+    padding-top: 60px;
   }
 }
 
@@ -44,15 +43,7 @@
 
   .hbspt-form,
   .hs-form-iframe {
-    @include small {
-      width: 100% !important;
-    }
-    @include medium-large-and-extra-large {
-      width: 85% !important;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 850px;
-    }
+    width: 100% !important;
   }
 
   .hs-form-58727484-8758-489d-acfa-9a4956308ce6_6145720f-1db3-4a25-a9e5-3edb3baa1ecf
