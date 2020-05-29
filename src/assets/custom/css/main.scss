@@ -14,11 +14,12 @@ $vertical-overlap: 100px;
 @import "site-navbar-height";
 
 @import "cards-layout";
+@import "clients";
 @import "curated-publications";
 @import "get-in-touch";
 @import "hero-teaser";
-@import "section-intro";
 @import "page-location-anchor";
+@import "section-intro";
 
 @import "compass-teaser";
 @import "contact-us";
@@ -29,3 +30,4 @@ $vertical-overlap: 100px;
 @import "soft-mod-cheat-sheet-cta-banner";
 @import "soft-mod-misc";
 @import "soft-mod-problems";
+
