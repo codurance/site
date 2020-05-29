@@ -1,4 +1,12 @@
-<section class="hero-teaser--image-position-{{ include.image_position}} {{ include.class }}" id="{{ include.id }}">
+{%- capture theme -%}
+  {%- if include.theme -%}
+    {{ include.theme }}
+  {%- else -%}
+    light
+  {%- endif -%}
+{%- endcapture -%}
+
+<section class="hero-teaser--image-position-{{ include.image_position}} hero-teaser--theme-{{ theme }} {{ include.class }}" id="{{ include.id }}">
   <div class="hero-teaser__image" style="background-image: url({{ include.image_src }})"></div>
   <div class="hero-teaser__content">
     <h2 class="hero-teaser__content-type">{{ include.content_type }}</h2>

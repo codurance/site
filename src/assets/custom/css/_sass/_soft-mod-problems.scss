@@ -25,13 +25,12 @@
   @include extra-large {
     padding-top: 100px;
 
-
     &:before {
       right: 100px;
     }
     &:after {
       content: "";
-      background-color: #293341;
+      background-color: $slate;
       background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
