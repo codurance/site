@@ -1,8 +1,6 @@
-<!-- Clients panel -->
 <div class="clients">
-
+  {%- include page_location_anchor.html anchor_id="clients" -%}
   {%- include section_intro.html title="You're in good company" -%}
-
   <div class="clients__logo-container">
     {% for client in site.data.clients limit:12 %}
       <img class="clients__logo" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
