@@ -198,7 +198,7 @@
     Component - Icon
 ********************************/
 
-.icon-sm {
+.service-line-icon {
   position: absolute;
   width: 52px;
   left: 0px;
@@ -206,12 +206,17 @@
   stroke-dashoffset: 1400;
   animation: dash 3s linear forwards;
   fill: #ffffff;
-}
 
-.icon-sm circle {
-  opacity: 0;
-  animation: dot 0.5s linear forwards;
-  animation-delay: 2.2s;
+  @media (min-width: 992px) {
+    left: -67px;
+    top: -14px;
+  }
+
+  circle {
+    opacity: 0;
+    animation: dot 0.5s linear forwards;
+    animation-delay: 2.2s;
+  }
 }
 
 .box-stroke {
@@ -305,20 +310,12 @@
     padding-left: 0px;
   }
 
-  .icon-sm {
-    top: -14px;
-  }
-
   .box-stroke {
     fill: none;
     stroke: #555555;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 4px;
-  }
-
-  .icon-sm {
-    left: -67px;
   }
 
   .sm-hero__grid {
