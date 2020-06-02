@@ -1,4 +1,4 @@
-.teaser-group {
+.teaser-group__card {
   @include max-width--out-there;
   position: relative;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.teaser-group:nth-of-type(odd) {
+.teaser-group__card:nth-of-type(odd) {
   @include medium {
     padding-left: $lateral-space--medium;
     padding-right: 2 * $lateral-space--medium;
@@ -50,7 +50,7 @@
   }
 }
 
-.teaser-group:nth-of-type(even) {
+.teaser-group__card:nth-of-type(even) {
   @include medium {
     padding-left: 2 * $lateral-space--medium;
     padding-right: $lateral-space--medium;
@@ -68,7 +68,7 @@
   }
 }
 
-.teaser-group__image {
+.teaser-group__card__image {
   background-color: #aaa;
   background-size: cover;
 
@@ -91,7 +91,7 @@
     width: calc(57% - #{2 * $lateral-space--large});
   }
 
-  .teaser-group:nth-of-type(odd) & {
+  .teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
 
     @include medium {
@@ -101,7 +101,7 @@
       left: $lateral-space--large;
     }
   }
-  .teaser-group:nth-of-type(even) & {
+  .teaser-group__card:nth-of-type(even) & {
     background-position: right center;
 
     @include medium {
@@ -115,7 +115,7 @@
   }
 }
 
-.teaser-group__content {
+.teaser-group__card__content {
   background-color: $slate;
 
   @include small {
@@ -139,7 +139,7 @@
     padding-top: 60px;
   }
 
-  .teaser-group:nth-of-type(odd) & {
+  .teaser-group__card:nth-of-type(odd) & {
     @include medium {
       margin-left: 40%;
     }
@@ -147,7 +147,7 @@
       margin-left: 43%;
     }
   }
-  .teaser-group:nth-of-type(even) & {
+  .teaser-group__card:nth-of-type(even) & {
     @include medium {
       margin-right: 40%;
     }
@@ -157,7 +157,7 @@
   }
 }
 
-.teaser-group__content-type {
+.teaser-group__card__content-type {
   @include ponti-bold;
 
   @include small {
@@ -172,12 +172,12 @@
   }
 }
 
-.teaser-group__title,
-.teaser-group__description {
+.teaser-group__card__title,
+.teaser-group__card__description {
   color: white;
 }
 
-.teaser-group__title {
+.teaser-group__card__title {
   @include freed-bold;
 
   @include small {
@@ -188,7 +188,7 @@
   }
 }
 
-.teaser-group__description {
+.teaser-group__card__description {
   @include mercer-reg;
 
   @include small {
