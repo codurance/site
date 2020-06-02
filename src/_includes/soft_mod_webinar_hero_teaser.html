@@ -5,7 +5,7 @@
 {% assign cta-href = teaser.cta-href %}
 {% assign image_position = 'left' %}
 {% capture image_src %}{{site.baseurl}}/assets/custom/img/softmod/softmod-in-distributed-worktimes-hero.jpg{% endcapture %}
-{%- assign anchor_id = "webinar" -%}
+{%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.webinar} -%}
 
 <div class="soft-mod__webinar-teaser">
   {% include page_location_anchor.html anchor_id=anchor_id %}

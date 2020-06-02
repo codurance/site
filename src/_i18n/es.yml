@@ -812,6 +812,15 @@ software-modernisation:
       cta: Ver webinar
       cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
 
+  page-sections:
+    how-we-solve-your-problems: como-podemos-ayudarte
+    how-we-help-our-clients: como-adyudamos-nuestros-clientes
+    testimonials: opinion-de-nuestros-clientes
+    compass: compass-by-codurance
+    webinar: webinar-software-modernisation-trabajo-distribuido
+    publications: publicaciones
+    get-in-touch: contacto
+
 curated-publications:
   softmod:
     intro-title: Sobre Software Modernisation
