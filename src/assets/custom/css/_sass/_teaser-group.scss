@@ -1,0 +1,211 @@
+.teaser-group--image-position-left,
+.teaser-group--image-position-right {
+  @include max-width--out-there;
+  position: relative;
+
+  @include medium-large-and-extra-large {
+    &::after {
+      background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
+      content: "";
+      position: absolute;
+    }
+  }
+  @include medium {
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    &::after {
+      bottom: 15px;
+      top: 15px;
+    }
+  }
+  @include large-and-extra-large {
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+    padding-top: 40px;
+
+    &::after {
+      bottom: 25px;
+      top: 40px;
+    }
+  }
+}
+
+.teaser-group--image-position-left {
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: 2 * $lateral-space--medium;
+
+    &::after {
+      left: 50%;
+      right: $lateral-space--medium;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 2 * $lateral-space--large;
+      right: 50%;
+    }
+  }
+}
+
+.teaser-group--image-position-right {
+  @include medium {
+    padding-left: 2 * $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+
+    &::after {
+      left: $lateral-space--medium;
+      right: 50%;
+    }
+  }
+  @include large-and-extra-large {
+    &::after {
+      left: 50%;
+      right: 2 * $lateral-space--large;
+    }
+  }
+}
+
+.teaser-group__image {
+  background-color: #aaa;
+  background-size: cover;
+
+  @include small {
+    height: 0;
+    padding-top: 230 / 360 * 100%;
+  }
+  @include medium-large-and-extra-large {
+    position: absolute;
+    z-index: 10;
+  }
+  @include medium {
+    bottom: 0;
+    top: 0;
+    width: calc(60% - #{2 * $lateral-space--medium});
+  }
+  @include large-and-extra-large {
+    bottom: 40px;
+    top: 0;
+    width: calc(57% - #{2 * $lateral-space--large});
+  }
+
+  .teaser-group--image-position-left & {
+    background-position: left center;
+
+    @include medium {
+      left: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: $lateral-space--large;
+    }
+  }
+  .teaser-group--image-position-right & {
+    background-position: right center;
+
+    @include medium {
+      left: auto;
+      right: $lateral-space--medium;
+    }
+    @include large-and-extra-large {
+      left: auto;
+      right: $lateral-space--large;
+    }
+  }
+}
+
+.teaser-group__content {
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  .teaser-group--theme-light & {
+    background-color: white;
+  }
+  .teaser-group--theme-dark & {
+    background-color: $slate;
+  }
+
+  @include small {
+    padding-left: $lateral-space--small;
+    padding-right: $lateral-space--small;
+  }
+  @include medium-large-and-extra-large {
+    position: relative;
+    z-index: 20;
+  }
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+  }
+  @include large-and-extra-large {
+    @include style-card-box-shadow;
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+  }
+
+  .teaser-group--image-position-left & {
+    @include medium {
+      margin-left: 40%;
+    }
+    @include large-and-extra-large {
+      margin-left: 43%;
+    }
+  }
+  .teaser-group--image-position-right & {
+    @include medium {
+      margin-right: 40%;
+    }
+    @include large-and-extra-large {
+      margin-right: 43%;
+    }
+  }
+}
+
+.teaser-group__content-type {
+  @include ponti-bold;
+
+  @include small {
+    color: white;
+    right: $lateral-space--small;
+    position: absolute;
+    top: 30px;
+  }
+  @include medium-large-and-extra-large {
+    color: $coral;
+    margin: 0 0 30px;
+  }
+}
+
+.teaser-group__title,
+.teaser-group__description {
+  .teaser-group--theme-light & {
+    color: $grey--dark;
+  }
+  .teaser-group--theme-dark & {
+    color: white;
+  }
+}
+
+.teaser-group__title {
+  @include freed-bold;
+
+  @include small {
+    margin: 0 0 20px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 15px;
+  }
+}
+
+.teaser-group__description {
+  @include mercer-reg;
+
+  @include small {
+    margin: 0 0 35px;
+  }
+  @include medium-large-and-extra-large {
+    margin: 0 0 25px;
+  }
+}
