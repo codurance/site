@@ -68,7 +68,7 @@
   }
 }
 
-.teaser-group__card__image {
+.teaser-group__card-image {
   background-color: #aaa;
   background-size: cover;
 
@@ -115,7 +115,7 @@
   }
 }
 
-.teaser-group__card__content {
+.teaser-group__card-content {
   background-color: $slate;
 
   @include small {
@@ -157,7 +157,7 @@
   }
 }
 
-.teaser-group__card__content-type {
+.teaser-group__card-content-type {
   @include ponti-bold;
 
   @include small {
@@ -172,12 +172,12 @@
   }
 }
 
-.teaser-group__card__title,
-.teaser-group__card__description {
+.teaser-group__card-title,
+.teaser-group__card-description {
   color: white;
 }
 
-.teaser-group__card__title {
+.teaser-group__card-title {
   @include freed-bold;
 
   @include small {
@@ -188,7 +188,7 @@
   }
 }
 
-.teaser-group__card__description {
+.teaser-group__card-description {
   @include mercer-reg;
 
   @include small {
