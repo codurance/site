@@ -59,3 +59,18 @@ $largeMax: 1199px;
     @content;
   }
 }
+
+$_DEPRECIATED_largeMin: 992px;
+$_DEPRECIATED_smallMax: 991px;
+
+@mixin _DEPRECIATED_small {
+  @media (max-width: $_DEPRECIATED_smallMax) {
+    @content;
+  }
+}
+
+@mixin _DEPRECIATED_large {
+  @media (min-width: $_DEPRECIATED_largeMin) {
+    @content;
+  }
+}

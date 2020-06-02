@@ -48,7 +48,7 @@
   padding-top: 0 !important;
 }
 
-@media (min-width: 992px) {
+@include _DEPRECIATED_large {
   .g-pt-0--desk {
     padding-top: 0px !important;
   }

@@ -44,7 +44,7 @@
   font-size: 3.5;
 }
 
-@media (max-width: 991px) {
+@include _DEPRECIATED_small {
   .service-line-hero__grid-item--intro h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@include _DEPRECIATED_large {
   .service-line-hero {
     background-color: transparent;
     background-image: none;
@@ -63,14 +63,6 @@
 
   .service-line-hero__grid-item--intro h1 {
     padding-left: 0px;
-  }
-
-  .box-stroke {
-    fill: none;
-    stroke: #555555;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 4px;
   }
 
   .service-line-hero__grid {
@@ -117,46 +109,5 @@
   .service-line-hero__grid-item--intro p,
   .service-line-hero__grid-item--intro a {
     margin-left: 0;
-  }
-}
-
-.service-line-icon {
-  position: absolute;
-  width: 52px;
-  left: 0px;
-  stroke-dasharray: 1400;
-  stroke-dashoffset: 1400;
-  animation: dash 3s linear forwards;
-  fill: #ffffff;
-
-  @media (min-width: 992px) {
-    left: -67px;
-    top: -14px;
-  }
-
-  circle {
-    opacity: 0;
-    animation: dot 0.5s linear forwards;
-    animation-delay: 2.2s;
-  }
-}
-
-.box-stroke {
-  fill: none;
-  stroke: #ffffff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 4px;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes dot {
-  to {
-    opacity: 1;
   }
 }
