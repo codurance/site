@@ -117,15 +117,9 @@
 }
 
 .hero-teaser__content {
+  background-color: white;
   padding-bottom: 40px;
   padding-top: 40px;
-
-  .hero-teaser--theme-light & {
-    background-color: white;
-  }
-  .hero-teaser--theme-dark & {
-    background-color: $slate;
-  }
 
   @include small {
     padding-left: $lateral-space--small;
@@ -180,12 +174,7 @@
 
 .hero-teaser__title,
 .hero-teaser__description {
-  .hero-teaser--theme-light & {
-    color: $grey--dark;
-  }
-  .hero-teaser--theme-dark & {
-    color: white;
-  }
+  color: $grey--dark;
 }
 
 .hero-teaser__title {
