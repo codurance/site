@@ -1,0 +1,12 @@
+---
+layout: default
+metarobots: noindex,nofollow
+title: Teaser Group | Codurance UI Components
+
+---
+
+{% assign lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing. Phasellus rutrum urna sed felis semper, a consequat odio ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing. Phasellus rutrum urna sed felis semper, a consequat odio' %}
+
+{%- include section_intro.html title="Teaser Group" class="ui-components__header" -%}
+{%- include teaser_group.html class="ui-components__teaser-group-example" content_type='UI Component' cta='Learn More' cta-href='#' icon=site.data.svgs.service-line-icon.software-modernisation image_position='left' image_src='http://placekitten.com/1080/600' title='Teaser Group, Image: Left' description=lorem_ipsum -%}
+{%- include teaser_group.html class="ui-components__teaser-group-example" content_type='UI Component' cta='Learn More' cta-href='#' icon=site.data.svgs.service-line-icon.placeholder image_position='right' image_src='http://placekitten.com/1080/600' title='Teaser Group, Image: Right' description=lorem_ipsum -%}

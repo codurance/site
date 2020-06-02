@@ -1,0 +1,113 @@
+.service-line-hero {
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-dark.jpg");
+  background-size: cover;
+}
+
+.service-line-hero__grid {
+  display: block;
+}
+
+.service-line-hero__grid-item--intro {
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  position: relative;
+}
+
+.service-line-hero__grid-item--intro div {
+  margin: auto;
+  color: #ffffff !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.service-line-hero__grid-item--intro div p {
+  color: #ffffff !important;
+}
+
+.service-line-hero__grid-item--intro-image {
+  display: none;
+  overflow: hidden;
+}
+
+.service-line-hero__grid-item--intro-image img {
+  width: 110%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.service-line-hero__grid-item--intro h1 {
+  padding-left: 80px;
+  line-height: 1;
+  padding-bottom: 10px;
+  font-size: 3.5;
+}
+
+@include _DEPRECIATED_small {
+  .service-line-hero__grid-item--intro h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .service-line-hero__grid-item--intro p,
+  .service-line-hero__grid-item--intro a {
+    margin-left: 6rem;
+  }
+}
+
+@include _DEPRECIATED_large {
+  .service-line-hero {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .service-line-hero__grid-item--intro h1 {
+    padding-left: 0px;
+  }
+
+  .service-line-hero__grid {
+    display: grid;
+    grid-gap: 140px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+  }
+
+  .service-line-hero__grid-item--intro {
+    padding-left: 65px;
+  }
+
+  .service-line-hero__grid-item--intro div,
+  .service-line-hero__grid-item--intro div p {
+    color: #555555 !important;
+  }
+
+  .service-line-hero__grid-item--intro-image {
+    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 750px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 587px) {
+  .service-line-hero__grid-item--intro h1 {
+    padding-left: 0;
+  }
+  .service-line-hero__grid-item--intro svg {
+    display: none;
+  }
+  .service-line-hero__grid-item--intro p,
+  .service-line-hero__grid-item--intro a {
+    margin-left: 0;
+  }
+}

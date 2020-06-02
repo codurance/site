@@ -1,0 +1,47 @@
+.service-line-icon {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+  width: 50px;
+
+  .service-line-hero & {
+    position: absolute;
+
+    .box-stroke {
+      animation: dash 3s linear forwards;
+      stroke-dasharray: 1400;
+      stroke-dashoffset: 1400;
+    }
+    .dot {
+      opacity: 0;
+      animation: dot 0.5s linear forwards;
+      animation-delay: 2.2s;
+    }
+
+    @include _DEPRECIATED_large {
+      left: -67px;
+      stroke: #555555;
+      top: -14px;
+    }
+    @include _DEPRECIATED_small {
+      left: 0px;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes dot {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  .teaser-group & {
+    //
+  }
+}

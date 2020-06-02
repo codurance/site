@@ -1,5 +1,5 @@
-.hero-teaser--image-position-left,
-.hero-teaser--image-position-right {
+.teaser-group--image-position-left,
+.teaser-group--image-position-right {
   @include max-width--out-there;
   position: relative;
 
@@ -33,7 +33,7 @@
   }
 }
 
-.hero-teaser--image-position-left {
+.teaser-group--image-position-left {
   @include medium {
     padding-left: $lateral-space--medium;
     padding-right: 2 * $lateral-space--medium;
@@ -51,7 +51,7 @@
   }
 }
 
-.hero-teaser--image-position-right {
+.teaser-group--image-position-right {
   @include medium {
     padding-left: 2 * $lateral-space--medium;
     padding-right: $lateral-space--medium;
@@ -69,7 +69,7 @@
   }
 }
 
-.hero-teaser__image {
+.teaser-group__image {
   background-color: #aaa;
   background-size: cover;
 
@@ -92,7 +92,7 @@
     width: calc(57% - #{2 * $lateral-space--large});
   }
 
-  .hero-teaser--image-position-left & {
+  .teaser-group--image-position-left & {
     background-position: left center;
 
     @include medium {
@@ -102,7 +102,7 @@
       left: $lateral-space--large;
     }
   }
-  .hero-teaser--image-position-right & {
+  .teaser-group--image-position-right & {
     background-position: right center;
 
     @include medium {
@@ -116,12 +116,12 @@
   }
 }
 
-.hero-teaser__content {
-  background-color: white;
-  padding-bottom: 40px;
-  padding-top: 40px;
+.teaser-group__content {
+  background-color: $slate;
 
   @include small {
+    padding-bottom: 65px;
+    padding-top: 60px;
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
   }
@@ -130,16 +130,17 @@
     z-index: 20;
   }
   @include medium {
-    padding-left: $lateral-space--medium;
-    padding-right: $lateral-space--medium;
+    padding: 35px 40px 50px;
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
+    padding-bottom: 90px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
+    padding-top: 60px;
   }
 
-  .hero-teaser--image-position-left & {
+  .teaser-group--image-position-left & {
     @include medium {
       margin-left: 40%;
     }
@@ -147,7 +148,7 @@
       margin-left: 43%;
     }
   }
-  .hero-teaser--image-position-right & {
+  .teaser-group--image-position-right & {
     @include medium {
       margin-right: 40%;
     }
@@ -157,7 +158,7 @@
   }
 }
 
-.hero-teaser__content-type {
+.teaser-group__content-type {
   @include ponti-bold;
 
   @include small {
@@ -172,12 +173,12 @@
   }
 }
 
-.hero-teaser__title,
-.hero-teaser__description {
-  color: $grey--dark;
+.teaser-group__title,
+.teaser-group__description {
+  color: white;
 }
 
-.hero-teaser__title {
+.teaser-group__title {
   @include freed-bold;
 
   @include small {
@@ -188,7 +189,7 @@
   }
 }
 
-.hero-teaser__description {
+.teaser-group__description {
   @include mercer-reg;
 
   @include small {
