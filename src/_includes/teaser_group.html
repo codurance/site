@@ -1,8 +1,8 @@
 <section class="teaser-group--image-position-{{ include.image_position}} {{ include.class }}" id="{{ include.id }}">
   <div class="teaser-group__image" style="background-image: url({{ include.image_src }})"></div>
   <div class="teaser-group__content">
-    <h2 class="teaser-group__content-type">{{ include.content_type }}</h2>
-    <h3 class="teaser-group__title">{{ include.icon }}{{ include.title }}</h3>
+    <h2 class="teaser-group__content-type">{{ include.icon }}{{ include.content_type }}</h2>
+    <h3 class="teaser-group__title">{{ include.title }}</h3>
     <p class="teaser-group__description">{{ include.description }}</p>
     {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta %}
   </div>

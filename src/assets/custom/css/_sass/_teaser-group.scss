@@ -118,10 +118,10 @@
 
 .teaser-group__content {
   background-color: $slate;
-  padding-bottom: 40px;
-  padding-top: 40px;
 
   @include small {
+    padding-bottom: 65px;
+    padding-top: 60px;
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
   }
@@ -130,13 +130,14 @@
     z-index: 20;
   }
   @include medium {
-    padding-left: $lateral-space--medium;
-    padding-right: $lateral-space--medium;
+    padding: 35px 40px 50px;
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
+    padding-bottom: 90px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
+    padding-top: 60px;
   }
 
   .teaser-group--image-position-left & {
