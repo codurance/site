@@ -1,5 +1,4 @@
-.teaser-group--image-position-left,
-.teaser-group--image-position-right {
+.teaser-group {
   @include max-width--out-there;
   position: relative;
 
@@ -33,7 +32,7 @@
   }
 }
 
-.teaser-group--image-position-left {
+.teaser-group:nth-of-type(odd) {
   @include medium {
     padding-left: $lateral-space--medium;
     padding-right: 2 * $lateral-space--medium;
@@ -51,7 +50,7 @@
   }
 }
 
-.teaser-group--image-position-right {
+.teaser-group:nth-of-type(even) {
   @include medium {
     padding-left: 2 * $lateral-space--medium;
     padding-right: $lateral-space--medium;
@@ -92,7 +91,7 @@
     width: calc(57% - #{2 * $lateral-space--large});
   }
 
-  .teaser-group--image-position-left & {
+  .teaser-group:nth-of-type(odd) & {
     background-position: left center;
 
     @include medium {
@@ -102,7 +101,7 @@
       left: $lateral-space--large;
     }
   }
-  .teaser-group--image-position-right & {
+  .teaser-group:nth-of-type(even) & {
     background-position: right center;
 
     @include medium {
@@ -140,7 +139,7 @@
     padding-top: 60px;
   }
 
-  .teaser-group--image-position-left & {
+  .teaser-group:nth-of-type(odd) & {
     @include medium {
       margin-left: 40%;
     }
@@ -148,7 +147,7 @@
       margin-left: 43%;
     }
   }
-  .teaser-group--image-position-right & {
+  .teaser-group:nth-of-type(even) & {
     @include medium {
       margin-right: 40%;
     }
