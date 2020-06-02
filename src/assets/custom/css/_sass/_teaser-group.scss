@@ -117,15 +117,9 @@
 }
 
 .teaser-group__content {
+  background-color: $slate;
   padding-bottom: 40px;
   padding-top: 40px;
-
-  .teaser-group--theme-light & {
-    background-color: white;
-  }
-  .teaser-group--theme-dark & {
-    background-color: $slate;
-  }
 
   @include small {
     padding-left: $lateral-space--small;
@@ -180,12 +174,7 @@
 
 .teaser-group__title,
 .teaser-group__description {
-  .teaser-group--theme-light & {
-    color: $grey--dark;
-  }
-  .teaser-group--theme-dark & {
-    color: white;
-  }
+  color: white;
 }
 
 .teaser-group__title {

@@ -1,14 +1,6 @@
-{%- capture theme -%}
-  {%- if include.theme -%}
-    {{ include.theme }}
-  {%- else -%}
-    light
-  {%- endif -%}
-{%- endcapture -%}
-
 {%- capture icon -%}{% if include.icon %}{{ include.icon }}{% endif %}{%- endcapture -%}
 
-<section class="teaser-group--image-position-{{ include.image_position}} teaser-group--theme-{{ theme }} {{ include.class }}" id="{{ include.id }}">
+<section class="teaser-group--image-position-{{ include.image_position}} {{ include.class }}" id="{{ include.id }}">
   <div class="teaser-group__image" style="background-image: url({{ include.image_src }})"></div>
   <div class="teaser-group__content">
     <h2 class="teaser-group__content-type">{{ include.content_type }}</h2>
