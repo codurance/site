@@ -19,15 +19,6 @@
   @include max-width--out-there;
   position: relative;
 
-  @include large-and-extra-large {
-    &::after {
-      background-color: #fda09b;
-      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
-      background-size: cover;
-      content: "";
-      position: absolute;
-    }
-  }
   @include medium {
     margin-bottom: 30px;
     padding-top: 40px;
@@ -40,7 +31,12 @@
     margin-bottom: 50px;
 
     &::after {
+      background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
       bottom: 25px;
+      content: "";
+      position: absolute;
       top: 40px;
     }
   }
