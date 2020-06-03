@@ -41,6 +41,11 @@
       }
     }
   }
+
+  @include small-and-medium {
+    width: 35px;
+  }
+
   .teaser-group__card & {
     //
   }
