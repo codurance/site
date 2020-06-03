@@ -19,7 +19,7 @@
   @include max-width--out-there;
   position: relative;
 
-  @include medium-large-and-extra-large {
+  @include large-and-extra-large {
     &::after {
       background-color: #fda09b;
       background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
