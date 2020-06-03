@@ -109,9 +109,10 @@
 
   @include small {
     padding-bottom: 65px;
-    padding-top: 60px;
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
+    padding-top: 60px;
+    text-align: center;
   }
   @include small-and-medium {
     background-position: center;
@@ -160,18 +161,15 @@
 .teaser-group__card-content-type {
   @include ponti-bold;
   align-items: center;
+  color: $coral;
   display: flex;
   flex-direction: row;
-  text-transform: uppercase;
 
   @include small {
-    color: white;
-    right: $lateral-space--small;
-    position: absolute;
-    top: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
   }
   @include medium-large-and-extra-large {
-    color: $coral;
     margin: 0 0 30px;
   }
 }
