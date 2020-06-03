@@ -114,8 +114,10 @@
     padding-right: $lateral-space--small;
   }
   @include small-and-medium {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 20;
 
     &::before {
       mix-blend-mode: multiply;
@@ -125,7 +127,6 @@
   @include medium {
     height: 100%;
     padding: 35px 40px 50px;
-    position: relative;
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
