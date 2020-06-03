@@ -38,7 +38,6 @@
     padding-left: $lateral-space--medium;
     padding-right: 2 * $lateral-space--medium;
   }
-
   @include large-and-extra-large {
     &::after {
       left: 2 * $lateral-space--large;
@@ -52,7 +51,6 @@
     padding-left: 2 * $lateral-space--medium;
     padding-right: $lateral-space--medium;
   }
-
   @include large-and-extra-large {
     &::after {
       left: 50%;
