@@ -1,3 +1,20 @@
+.teaser-group {
+  @include small-and-medium {
+    display: flex;
+  }
+  @include small {
+    flex-direction: column;
+  }
+  @include medium {
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 .teaser-group__card {
   @include max-width--out-there;
   position: relative;
@@ -12,8 +29,9 @@
     }
   }
   @include medium {
-    padding-bottom: 40px;
+    margin-bottom: 30px;
     padding-top: 40px;
+    width: calc(50% - 25px);
   }
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
@@ -83,46 +101,43 @@
 .teaser-group__card-content {
   background-color: $slate;
 
+  &::before {
+    background-color: $slate;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
   @include small {
     padding-bottom: 65px;
     padding-top: 60px;
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
   }
-  @include medium-large-and-extra-large {
-    position: relative;
-    z-index: 20;
+  @include small-and-medium {
+    &::before {
+      mix-blend-mode: multiply;
+      opacity: 0.8;
+    }
   }
   @include medium {
     padding: 35px 40px 50px;
-    &::before {
-      background-color: $slate;
-      bottom: 0;
-      content: '';
-      left: 0;
-      mix-blend-mode: multiply;
-      opacity: 0.8;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: -1;
-    }
+    position: relative;
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
+    position: relative;
+    z-index: 20;
     padding-bottom: 60px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 60px;
     &::before {
-      background-color: $slate;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: -1;
+      opacity: 1;
     }
   }
 
