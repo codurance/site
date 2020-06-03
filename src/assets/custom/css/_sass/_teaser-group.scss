@@ -124,6 +124,18 @@
   }
   @include medium {
     padding: 35px 40px 50px;
+    &::before {
+      background-color: $slate;
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: 0.7;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      mix-blend-mode: overlay;
+    }
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
@@ -131,6 +143,16 @@
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 60px;
+    &::before {
+      background-color: $slate;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
   }
 
   .teaser-group__card:nth-of-type(odd) & {
