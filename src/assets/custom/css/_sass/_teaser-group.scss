@@ -129,12 +129,12 @@
       bottom: 0;
       content: '';
       left: 0;
-      opacity: 0.7;
+      mix-blend-mode: multiply;
+      opacity: 0.8;
       position: absolute;
       right: 0;
       top: 0;
       z-index: -1;
-      mix-blend-mode: overlay;
     }
   }
   @include large-and-extra-large {
@@ -174,7 +174,7 @@
 }
 
 .teaser-group__card-content-type {
-  @include base-bold;
+  @include ponti-bold;
   align-items: center;
   display: flex;
   flex-direction: row;
