@@ -134,7 +134,7 @@
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 60px;
@@ -159,7 +159,11 @@
 }
 
 .teaser-group__card-content-type {
-  @include ponti-bold;
+  @include base-bold;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
 
   @include small {
     color: white;
