@@ -6,7 +6,7 @@
     flex-direction: column;
   }
   @include medium {
-    align-content: stretch;
+    align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -123,6 +123,7 @@
     }
   }
   @include medium {
+    height: 100%;
     padding: 35px 40px 50px;
     position: relative;
   }
