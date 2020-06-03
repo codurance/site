@@ -14,11 +14,6 @@
   @include medium {
     padding-bottom: 40px;
     padding-top: 40px;
-
-    &::after {
-      bottom: 15px;
-      top: 15px;
-    }
   }
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
@@ -34,10 +29,6 @@
 }
 
 .teaser-group__card:nth-of-type(odd) {
-  @include medium {
-    padding-left: $lateral-space--medium;
-    padding-right: 2 * $lateral-space--medium;
-  }
   @include large-and-extra-large {
     &::after {
       left: 2 * $lateral-space--large;
@@ -47,10 +38,6 @@
 }
 
 .teaser-group__card:nth-of-type(even) {
-  @include medium {
-    padding-left: 2 * $lateral-space--medium;
-    padding-right: $lateral-space--medium;
-  }
   @include large-and-extra-large {
     &::after {
       left: 50%;
@@ -63,21 +50,12 @@
   background-color: #aaa;
   background-size: cover;
 
-  @include small {
-    height: 0;
-    padding-top: 230 / 360 * 100%;
-  }
   @include small-and-medium {
     display: none;
   }
   @include medium-large-and-extra-large {
     position: absolute;
     z-index: 10;
-  }
-  @include medium {
-    bottom: 0;
-    top: 0;
-    width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
     bottom: 40px;
@@ -88,9 +66,6 @@
   .teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
 
-    @include medium {
-      left: $lateral-space--medium;
-    }
     @include large-and-extra-large {
       left: $lateral-space--large;
     }
@@ -98,10 +73,6 @@
   .teaser-group__card:nth-of-type(even) & {
     background-position: right center;
 
-    @include medium {
-      left: auto;
-      right: $lateral-space--medium;
-    }
     @include large-and-extra-large {
       left: auto;
       right: $lateral-space--large;
@@ -156,17 +127,11 @@
   }
 
   .teaser-group__card:nth-of-type(odd) & {
-    @include medium {
-      margin-left: 40%;
-    }
     @include large-and-extra-large {
       margin-left: 43%;
     }
   }
   .teaser-group__card:nth-of-type(even) & {
-    @include medium {
-      margin-right: 40%;
-    }
     @include large-and-extra-large {
       margin-right: 43%;
     }
