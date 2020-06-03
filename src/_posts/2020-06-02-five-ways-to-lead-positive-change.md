@@ -3,9 +3,11 @@ layout: post
 asset-type: post
 name: five-ways-to-lead-positive-change
 title: Five Ways to Lead Positive Change Through Software Modernisation
+title-es: 5 formas de liderar un cambio positivo a través de Software Modernisation
 date: 2020-06-02 00:00:00 +00:00
 author: James Birnie
 description: This article will help you understand which approach to Software Modernisation might be suitable for your organisation.
+description-es: Estas son algunas de las aproximaciones diferentes para liderar una iniciativa de Software Modernisation que  te pueden ayudar a decidir qué enfoque puede ser el más adecuado para tu organización.
 
 image:
   src: /assets/custom/img/blog/2020-06-02-five-ways-to-lead-positive-change/five-ways-to-lead-positive-change.jpg
