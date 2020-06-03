@@ -114,6 +114,9 @@
     padding-right: $lateral-space--small;
   }
   @include small-and-medium {
+    background-size: cover;
+    background-position: center;
+
     &::before {
       mix-blend-mode: multiply;
       opacity: 0.8;
