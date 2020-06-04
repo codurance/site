@@ -299,6 +299,11 @@ title: Services
 
 {% endif %}
 
+{% if site.data.toggles.service-line-teaser-group == "on" %}
+  {% assign data-file = site.data.service_lines %}
+  {% include teaser_group.html data-file=data-file %}
+{% endif %}
+
 {% include clients.html %}
 
 <div class="services-compass-cta" >
