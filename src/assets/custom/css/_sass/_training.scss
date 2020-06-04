@@ -9,6 +9,22 @@
         padding-right: $lateral-space--large;
     }
 }
+
+.training__title {
+    @include freed-bold;
+    color: white;
+}
+
+.training__description {
+    @include mercer-reg;
+    color: white;
+}
+
+.training__content {
+    @include lateral-spacing;
+    width: 50%;
+}
+
 .training__image {
     background-position: center;
     background-size: cover;
