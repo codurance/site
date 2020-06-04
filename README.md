@@ -218,6 +218,24 @@ docker system prune -a
 
 After this the next docker operation will download the correct image.
 
+### Problem with using rake servequick
+
+If after installing ruby you get this following error when doing bundle install
+
+```
+An error occurred while installing libv8 (3.16.14.19), and Bundler cannot continue.
+Make sure that `gem install libv8 -v '3.16.14.19' --source 'https://rubygems.org/'` succeeds before bundling.
+```
+
+you'll need to run the following commands to fix the error
+
+```bash
+$ brew install v8@3.15
+$ bundle config build.libv8 --with-system-v8
+$ bundle config build.therubyracer --with-v8-dir=$(brew --prefix v8@3.15)
+$ bundle install
+```  
+
 ### Problem with files permissions in docker (linux)
 
 When using `selinux` (e.g. on Fedora) you may encounter an error that a mounted file cannot be accessed from a docker container.
