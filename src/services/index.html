@@ -300,8 +300,10 @@ title: Services
 {% endif %}
 
 {% if site.data.toggles.service-line-teaser-group == "on" %}
-  {% assign data-file = site.data.service_lines %}
-  {% include teaser_group.html data-file=data-file %}
+  <section class="services__offerings">
+    {% assign data-file = site.data.service_lines %}
+    {% include teaser_group.html data-file=data-file %}
+  </section>
 {% endif %}
 
 {% include clients.html %}
