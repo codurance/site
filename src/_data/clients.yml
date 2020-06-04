@@ -12,7 +12,7 @@
       project-name: bestSecret
 
 - id: adevinta
-  pinned: true
+  pinned: false
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
   alt-text: Adevinta Logo
@@ -39,7 +39,7 @@
     - software_creation
 
 - id: cxLoyalty
-  pinned: true
+  pinned: false
   name: cxLoyalty
   image: /assets/custom/img/home/clients/cxloyalty-logo.png
   alt-text: cxLoyalty Logo
@@ -85,7 +85,7 @@
     - effective_delivery
 
 - id: socgen
-  pinned: true
+  pinned: false
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
@@ -95,7 +95,7 @@
     - training_and_coaching
 
 - id: mandg
-  pinned: true
+  pinned: false
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
@@ -110,7 +110,7 @@
       project-name: MANDG
 
 - id: flextrade
-  pinned: true
+  pinned: false
   name: Flextrade
   image: /assets/custom/img/home/clients/flextrade-logo.png
   alt-text: Flextrade logo
@@ -134,7 +134,7 @@
     - effective_delivery
 
 - id: aspectcapital
-  pinned: true
+  pinned: false
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
@@ -215,7 +215,7 @@
       project-name: MANDS
 
 - id: moonpig
-  pinned: true
+  pinned: false
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
   alt-text: Moonpig logo
@@ -228,7 +228,7 @@
     - expert_advice
 
 - id: coniq
-  pinned: true
+  pinned: false
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
   alt-text: Coniq logo
@@ -240,7 +240,7 @@
       project-name: Coniq
 
 - id: aws
-  pinned: true
+  pinned: false
   name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
@@ -255,7 +255,7 @@
       project-name: AWS
 
 - id: trinitymirror
-  pinned: true
+  pinned: false
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
   alt-text: Trinity Mirror logo
@@ -276,7 +276,7 @@
     - expert_advice
 
 - id: findmypast
-  pinned: true
+  pinned: false
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast-logo.png
   alt-text: Find My Past logo
@@ -286,7 +286,7 @@
     - expert_advice
 
 - id: accelad
-  pinned: true
+  pinned: false
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
   description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
