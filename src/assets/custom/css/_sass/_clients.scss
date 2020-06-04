@@ -10,7 +10,7 @@
 }
 
 .clients__logo-container {
-  @include max-width--column;
+  @include max-width--out-there;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -31,5 +31,6 @@
   }
   @include medium-large-and-extra-large {
     flex-basis: 115px;
+    margin: 10px 30px;
   }
 }
