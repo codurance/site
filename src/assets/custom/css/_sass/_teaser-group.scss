@@ -1,48 +1,47 @@
-.teaser-group--image-position-left,
-.teaser-group--image-position-right {
+.teaser-group {
+  @include small-and-medium {
+    display: flex;
+  }
+  @include small {
+    flex-direction: column;
+  }
+  @include medium {
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.teaser-group__card {
   @include max-width--out-there;
   position: relative;
 
-  @include medium-large-and-extra-large {
-    &::after {
-      background-color: #fda09b;
-      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
-      background-size: cover;
-      content: "";
-      position: absolute;
-    }
-  }
   @include medium {
-    padding-bottom: 40px;
-    padding-top: 40px;
-
-    &::after {
-      bottom: 15px;
-      top: 15px;
-    }
+    margin-bottom: 30px;
+    width: calc(50% - 25px);
   }
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 40px;
+    margin-bottom: 50px;
 
     &::after {
+      background-color: #fda09b;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
+      background-size: cover;
       bottom: 25px;
+      content: "";
+      position: absolute;
       top: 40px;
     }
   }
 }
 
-.teaser-group--image-position-left {
-  @include medium {
-    padding-left: $lateral-space--medium;
-    padding-right: 2 * $lateral-space--medium;
-
-    &::after {
-      left: 50%;
-      right: $lateral-space--medium;
-    }
-  }
+.teaser-group__card:nth-of-type(odd) {
   @include large-and-extra-large {
     &::after {
       left: 2 * $lateral-space--large;
@@ -51,16 +50,7 @@
   }
 }
 
-.teaser-group--image-position-right {
-  @include medium {
-    padding-left: 2 * $lateral-space--medium;
-    padding-right: $lateral-space--medium;
-
-    &::after {
-      left: $lateral-space--medium;
-      right: 50%;
-    }
-  }
+.teaser-group__card:nth-of-type(even) {
   @include large-and-extra-large {
     &::after {
       left: 50%;
@@ -69,22 +59,16 @@
   }
 }
 
-.teaser-group__image {
+.teaser-group__card-image {
   background-color: #aaa;
   background-size: cover;
 
-  @include small {
-    height: 0;
-    padding-top: 230 / 360 * 100%;
+  @include small-and-medium {
+    display: none;
   }
   @include medium-large-and-extra-large {
     position: absolute;
     z-index: 10;
-  }
-  @include medium {
-    bottom: 0;
-    top: 0;
-    width: calc(60% - #{2 * $lateral-space--medium});
   }
   @include large-and-extra-large {
     bottom: 40px;
@@ -92,23 +76,16 @@
     width: calc(57% - #{2 * $lateral-space--large});
   }
 
-  .teaser-group--image-position-left & {
+  .teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
 
-    @include medium {
-      left: $lateral-space--medium;
-    }
     @include large-and-extra-large {
       left: $lateral-space--large;
     }
   }
-  .teaser-group--image-position-right & {
+  .teaser-group__card:nth-of-type(even) & {
     background-position: right center;
 
-    @include medium {
-      left: auto;
-      right: $lateral-space--medium;
-    }
     @include large-and-extra-large {
       left: auto;
       right: $lateral-space--large;
@@ -116,69 +93,93 @@
   }
 }
 
-.teaser-group__content {
+.teaser-group__card-content {
   background-color: $slate;
+
+  &::before {
+    background-color: $slate;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
 
   @include small {
     padding-bottom: 65px;
-    padding-top: 60px;
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
+    padding-top: 60px;
+    text-align: center;
   }
-  @include medium-large-and-extra-large {
+  @include small-and-medium {
+    background-position: center;
+    background-size: cover;
     position: relative;
     z-index: 20;
+
+    &::before {
+      mix-blend-mode: multiply;
+      opacity: 0.8;
+    }
   }
   @include medium {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding: 35px 40px 50px;
   }
   @include large-and-extra-large {
     @include style-card-box-shadow;
-    padding-bottom: 90px;
+    position: relative;
+    z-index: 20;
+    padding-bottom: 60px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 60px;
+    &::before {
+      opacity: 1;
+    }
   }
 
-  .teaser-group--image-position-left & {
-    @include medium {
-      margin-left: 40%;
-    }
+  .teaser-group__card:nth-of-type(odd) & {
     @include large-and-extra-large {
       margin-left: 43%;
     }
   }
-  .teaser-group--image-position-right & {
-    @include medium {
-      margin-right: 40%;
-    }
+  .teaser-group__card:nth-of-type(even) & {
     @include large-and-extra-large {
       margin-right: 43%;
     }
   }
 }
 
-.teaser-group__content-type {
+.teaser-group__card-content-type {
   @include ponti-bold;
+  align-items: center;
+  color: $coral;
+  display: flex;
+  flex-direction: row;
 
   @include small {
-    color: white;
-    right: $lateral-space--small;
-    position: absolute;
-    top: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
   }
   @include medium-large-and-extra-large {
-    color: $coral;
     margin: 0 0 30px;
   }
 }
 
-.teaser-group__title,
-.teaser-group__description {
+.teaser-group__card-title,
+.teaser-group__card-description {
   color: white;
 }
 
-.teaser-group__title {
+.teaser-group__card-title {
   @include freed-bold;
 
   @include small {
@@ -189,7 +190,7 @@
   }
 }
 
-.teaser-group__description {
+.teaser-group__card-description {
   @include mercer-reg;
 
   @include small {

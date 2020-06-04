@@ -41,7 +41,13 @@
       }
     }
   }
+
+
   .teaser-group & {
-    //
+    margin-right: 20px;
+
+    @include small-and-medium {
+      width: 35px;
+    }
   }
 }
