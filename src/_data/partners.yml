@@ -1,42 +1,29 @@
 - id: github
   name: GitHub
   image: /assets/custom/img/home/partners/github.png
-  description: GitHub support a community where more than 31 million* people learn, share, and work together to build software.
   alt-text: GitHub Logo
-  website: github.com
 
 - id: aws
   name: AWS
   image: /assets/custom/img/home/partners/aws.png
-  description: Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services.
   alt-text: AWS Logo
-  website: https://aws.amazon.com/
 
 - id: jetbrains
   name: Jetbrains
   image: /assets/custom/img/home/partners/jetbrainsLogo.png
-  description: Jetbrains are renowned for their software development tools. help our clients make the most of these tools, supporting XP practices and quality software. We are experts in their tools such as Team City, ReSharper, and IntelliJ IDEA. We also help our clients adopt the Kotlin language.
   alt-text: Jetbrains Logo
-  website: jetbrains.com
-  read-more-url: /services/partners/jetbrains
 
 - id: google
   name: Google
   image: /assets/custom/img/home/partners/google.png
-  description: Google's mission is to organise the world’s information and make it universally accessible and useful.
   alt-text: Google Logo
-  website: google.com
 
 - id: skillsmatter
   name: skllsmatter
   image: /assets/custom/img/home/partners/skillsmatter.png
-  description: Skills Matter powers the world’s most innovative businesses by bringing together technology creators, users and adopters to learn skills, share expertise, and evolve ideas. 
   alt-text: skillsmatter Logo
-  website: skillsmatter.com
 
 - id: redislabs
   name: redislabs
   image: /assets/custom/img/home/partners/redislabs.png
-  description: Redis Labs is the home of Redis, the world’s most popular in-memory database, and commercial provider of Redis Enterprise, which delivers superior performance, matchless reliability, and unparalleled flexibility for personalization, machine learning, IoT, search, e-commerce, social, and metering solutions worldwide. 
   alt-text: Redislabs Logo
-  website: redislabs.com
