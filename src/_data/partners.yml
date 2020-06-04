@@ -27,3 +27,8 @@
   name: redislabs
   image: /assets/custom/img/home/partners/redislabs.png
   alt-text: Redislabs Logo
+
+- id: novoda
+  name: novoda
+  image: /assets/custom/img/home/partners/novoda.png
+  alt-text: Novoda Logo
