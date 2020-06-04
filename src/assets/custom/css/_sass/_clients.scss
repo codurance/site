@@ -1,4 +1,6 @@
 .clients {
+  text-align: center;
+
   @include small {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -34,5 +36,15 @@
     flex-basis: 115px;
     margin: 10px 30px;
     opacity: 0.8;
+  }
+}
+
+.clients__cta {
+  @include small {
+    margin: 20px $lateral-space--small;
+  }
+  @include medium-large-and-extra-large {
+    display: inline-block;
+    margin-top: 20px;
   }
 }
