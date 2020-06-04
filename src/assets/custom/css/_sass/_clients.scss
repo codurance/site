@@ -30,7 +30,9 @@
     max-width: 150px;
   }
   @include medium-large-and-extra-large {
+    filter: grayscale(100%);
     flex-basis: 115px;
     margin: 10px 30px;
+    opacity: 0.8;
   }
 }
