@@ -13,11 +13,7 @@
 */
 
 /* Buttons - used across multiple pages */
-<<<<<<< HEAD
 @import "colors";
-=======
-@import 'custom-colors';
->>>>>>> parent of 246d70fd... Amend colours to initial items
 
 $dark-orange-colour: #d35400;
 $orange-colour: #e67e22;
@@ -25,7 +21,6 @@ $gray-colour: #687074;
 $white-colour: #fff;
 
 .btn-more {
-<<<<<<< HEAD
   font-size: 15px;
   margin: 10px 0;
   padding: 10px 30px;
@@ -40,22 +35,6 @@ $white-colour: #fff;
   &:hover {
     color: rgba(255, 255, 255, 0.8) !important;
   }
-=======
-    font-size: 15px;
-    margin: 10px 0;
-    padding: 10px 30px;
-    background-color: transparent;
-    color: white;
-    font-weight: 700;
-    background: #EF7726;
-    border: none;
-    overflow: hidden;
-    position: relative;
-
-    &:hover {
-        color:rgba(255,255,255,0.8)!important;
-    }
->>>>>>> parent of 246d70fd... Amend colours to initial items
 
   span {
     z-index: 1;
@@ -75,7 +54,6 @@ $white-colour: #fff;
 }
 
 .btn-small {
-<<<<<<< HEAD
   border-radius: 6px;
   font-size: 18px;
   margin: 10px 0;
@@ -88,26 +66,6 @@ $white-colour: #fff;
     font-size: 11px;
     text-transform: uppercase;
     margin-left: 10px;
-=======
-    border-radius: 6px;
-    font-size: 18px;
-    margin: 10px 0;
-    padding: 5px 10px;
-
-    &-orange {
-        background-color: transparent;
-        border: 1px solid $orange-colour;
-        color: $orange-colour;
-        font-size: 11px;
-        text-transform: uppercase;
-        margin-left: 10px;
-
-        &:hover {
-            background-color: $orange-colour;
-            color: $white-colour;
-        }
-    }
->>>>>>> parent of 246d70fd... Amend colours to initial items
 
     &:hover {
       background-color: $orange-colour;
@@ -120,7 +78,6 @@ $white-colour: #fff;
   }
 }
 
-<<<<<<< HEAD
 .button-with-bg-image span {
   /* 0 0 1 1 */
   font-size: 24px;
@@ -144,50 +101,18 @@ $white-colour: #fff;
   &-orange {
     /* 0 0 1 0 */
     background: $orange-colour;
-=======
-.button-with-bg-image span {   /* 0 0 1 1 */
-    font-size: 24px;
-    margin: 0;
-    position: absolute;
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    color: $white-colour;
-}
-
-.btn-u {
-    &-orange { /* 0 0 1 0 */
-        background: $orange-colour;
->>>>>>> parent of 246d70fd... Amend colours to initial items
 
     &:hover, /* 0 0 2 0 */
         &:focus, /* 0 0 2 0 */
         &:active, /* 0 0 2 0 */
-<<<<<<< HEAD
         &.active {
       /* 0 0 2 0 */
       background: $dark-orange-colour;
       color: $white-colour;
       text-decoration: none;
-=======
-        &.active { /* 0 0 2 0 */
-            background: $dark-orange-colour;
-            color: $white-colour;
-            text-decoration: none;
-        }
->>>>>>> parent of 246d70fd... Amend colours to initial items
     }
   }
 
-<<<<<<< HEAD
   &.btn-brd.btn-u-orange:hover {
     /* 0 0 4 0 */
     color: white !important;
@@ -216,31 +141,6 @@ $white-colour: #fff;
   background: $dark-orange-colour;
   color: $white-colour;
   text-decoration: none;
-=======
-    &.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
-        color: white !important;
-        background-color: $orange-colour;
-    }
-}
-
-.btn-brd.btn-u-orange { /* 0 0 2 0 */
-    border-color: $orange-colour;
-
-    &:hover { /* 0 0 3 0 */
-        color: $dark-orange-colour;
-        border-color: $dark-orange-colour;
-    }
-
-    &.btn-brd-hover:hover {   /* 0 0 4 0 */
-        background: $dark-orange-colour;
-    }
-}
-
-.open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
-    background: $dark-orange-colour;
-    color: $white-colour;
-    text-decoration: none;
->>>>>>> parent of 246d70fd... Amend colours to initial items
 }
 
 #sharethisButtons {
@@ -255,7 +155,6 @@ $white-colour: #fff;
   margin: 10px 0;
   padding: 5px 10px;
 
-<<<<<<< HEAD
   &-light {
     /* 0 0 1 0 */
     background-color: transparent;
@@ -266,23 +165,6 @@ $white-colour: #fff;
       /* 0 0 2 0 */
       background-color: $white-colour;
       color: $gray-colour;
-=======
-.btn-less {   /* 0 0 1 0 */
-    border-radius: 6px;
-    font-size: x-small;
-    margin: 10px 0;
-    padding: 5px 10px;
-
-    &-light {  /* 0 0 1 0 */
-        background-color: transparent;
-        border: 1px solid $white-colour;
-        color: $white-colour;
-
-        &:hover {  /* 0 0 2 0 */
-            background-color: $white-colour;
-            color: $gray-colour;
-        }
->>>>>>> parent of 246d70fd... Amend colours to initial items
     }
   }
 
@@ -293,7 +175,6 @@ $white-colour: #fff;
 }
 
 .ban-btn-offblack {
-<<<<<<< HEAD
   color: #fff;
   background-color: #2d2d2d;
   border-color: #fff;
@@ -304,17 +185,6 @@ $white-colour: #fff;
   border-color: #fff;
   background-color: #fff;
 }
-=======
-    color: #fff;
-    background-color: #2D2D2D;
-    border-color: #fff;
-  }
-
-  .ban-btn-offblack:hover, .ban-btn-offblack.active {
-    border-color: #fff;
-    background-color:#fff;
-  }
->>>>>>> parent of 246d70fd... Amend colours to initial items
 
 .ban-btn-offblack:hover,
 .ban-btn-offblack:focus,
