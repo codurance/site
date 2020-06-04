@@ -1,6 +1,6 @@
 @mixin cta {
   @include bold;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 
   &,
@@ -27,12 +27,12 @@
 
 @mixin primary-coral {
   background-color: $coral;
-  color: #ffffff;
+  color: $off-black;
 
   &:hover,
   &:focus {
     background-color: $coral--light;
-    color: #ffffff;
+    color: $off-black;
   }
 }
 
@@ -44,12 +44,12 @@
 
 @mixin primary-navy {
   background-color: $navy;
-  color: #ffffff;
+  color: $white;
 
   &:hover,
   &:focus {
     background-color: $navy--light;
-    color: #ffffff;
+    color: $white;
   }
 }
 
@@ -69,8 +69,8 @@
   &,
   &:hover,
   &:focus {
-    color: white;
-    border-color: white;
+    color: $white;
+    color: $white;
   }
 }
 

@@ -10,7 +10,7 @@ layout: default
     <a
       href="{{ '/services' | prepend: site.baseurl }}"
       role="button"
-      class="btn btn-more btn-more-large"
+      class="cta--primary-coral"
     >
       <span>{% t index-banner.link_title %}</span>
     </a>
@@ -61,7 +61,7 @@ layout: default
 
     <div class="text-center">
       <a
-        class="btn u-btn-outline g-rounded-50 g-pl-25 g-pr-20 g-py-12 g-px-25"
+        class="cta--secondary cta--secondary-dark"
         href="{{ '/publications' | prepend: site.baseurl }}"
       >
         <span class="g-pos-rel g-top-2 g-font-weight-600"
@@ -75,7 +75,7 @@ layout: default
 <!-- end section -->
 
 <!-- We advise, we coach, we deliver panel -->
-<div class="bg-gradient-midnight-blue g-color-white">
+<div class="bg-slate g-color-white">
   {% include_relative services/_includes/we_advise_coach_deliver.html %}
 </div>
 
@@ -94,7 +94,7 @@ layout: default
       {% endfor %}
     </div>
     <div class="client-client-logo-cta">
-      <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/clients' | prepend: site.baseurl }}">See More</a>
+      <a class="cta--primary-coral" href="{{ '/clients' | prepend: site.baseurl }}">See More</a>
     </div>
   </div>
   <!-- end container -->
@@ -131,7 +131,7 @@ layout: default
 <!-- end section -->
 
 <!-- skill and practices panel -->
-<div class="section bg-gradient-midnight-blue">
+<div class="section bg-slate">
   <div class="container">
     <div class="title-header">
       <h2 class="g-color-white">{% t index-how_we_work.title %}</h2>

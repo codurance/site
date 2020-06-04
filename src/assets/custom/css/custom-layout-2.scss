@@ -13,7 +13,7 @@ title: CSS
 */
 
 @import 'custom-colors';
-$orange-colour: #e67e22;
+@import 'colors';
 
 /* Homepage
    -------------------------------------- */
@@ -82,7 +82,7 @@ html {
   width: 25px;
   margin-left: 0;
   position: absolute;
-  background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
+  background: $coral;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -198,7 +198,7 @@ html {
 
 .headline-v2 {
   /* 0 0 1 0 */
-  border-left: 2px solid $orange-colour !important;
+  border-left: 2px solid $coral!important;
 }
 
 .news-v3-in {
@@ -278,7 +278,7 @@ html {
 }
 
 .howworks-box {
-  border-left: 3px solid $orange-colour;
+  border-left: 3px solid $coral;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -411,9 +411,9 @@ html {
 }
 
 .btn-codurance-color {
-  color: white;
-  background-color: $codurance-orange;
-  border-color: $codurance-orange;
+  color: $off-black;
+  background-color: $coral;
+  border-color: $coral;
 }
 
 .codurance-green-background {
@@ -426,7 +426,7 @@ html {
 .services {
   /* Hero */
   &-hero {
-    background-image: url('{{site.baseurl}}/assets/custom/img/bg-pattern.jpg');
+    background-color: $coral;
     background-size: cover;
     background-position: center;
 
@@ -515,7 +515,7 @@ html {
 
     &-icon:hover {
       /* 0 0 3 0 */
-      background: $orange-colour;
+      background: $coral;
     }
 
     &-boxes {
@@ -527,7 +527,7 @@ html {
       &-box {
         /* 0 0 2 0 */
         padding: 20px 40px;
-        border-top: solid 2px $orange-colour;
+        border-top: solid 2px $coral;
       }
     }
   }
@@ -644,8 +644,8 @@ html {
 
 .introduction .service-header {
   /* 0 0 2 0 */
-  color: $orange-colour !important;
-  font-size: 40px !important;
+  color: $coral!important;
+  font-size: 40px!important;
 }
 
 /* Training */
@@ -654,7 +654,7 @@ html {
   &-link-btn {
     /* 0 0 1 0 */
     width: 150px;
-    color: $orange-colour !important;
+    color: $coral!important;
   }
 
   &-description {
@@ -702,7 +702,7 @@ i.no-border {
 
 .news-v1 a {
   /* 0 0 1 1 */
-  color: $orange-colour;
+  color: $coral;
 }
 
 /* Sponsoring section */
@@ -924,7 +924,7 @@ i.no-border {
       content: ' ';
       margin-left: -35px;
       position: absolute;
-      background: $orange-colour;
+      background: $coral;
     }
   }
 

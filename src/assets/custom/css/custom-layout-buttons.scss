@@ -14,20 +14,17 @@
 
 /* Buttons - used across multiple pages */
 @import 'custom-colors';
+@import 'colors';
 
-$dark-orange-colour: #d35400;
-$orange-colour: #e67e22;
 $gray-colour: #687074;
-$white-colour: #fff;
 
 .btn-more {
     font-size: 15px;
     margin: 10px 0;
     padding: 10px 30px;
-    background-color: transparent;
-    color: white;
+    background-color: $coral;
+    color: $off-black;
     font-weight: 700;
-    background: #EF7726;
     border: none;
     overflow: hidden;
     position: relative;
@@ -61,15 +58,15 @@ $white-colour: #fff;
 
     &-orange {
         background-color: transparent;
-        border: 1px solid $orange-colour;
-        color: $orange-colour;
+        border: 1px solid $coral;
+        color: $coral;
         font-size: 11px;
         text-transform: uppercase;
         margin-left: 10px;
 
         &:hover {
-            background-color: $orange-colour;
-            color: $white-colour;
+            background-color: $coral--light;
+            color: $white;
         }
     }
 
@@ -93,45 +90,45 @@ $white-colour: #fff;
     -webkit-justify-content: center;
     align-items: center;
     -webkit-align-items: center;
-    color: $white-colour;
+    color: $white;
 }
 
 .btn-u {
     &-orange { /* 0 0 1 0 */
-        background: $orange-colour;
+        background: $coral;
 
         &:hover, /* 0 0 2 0 */
         &:focus, /* 0 0 2 0 */
         &:active, /* 0 0 2 0 */
         &.active { /* 0 0 2 0 */
-            background: $dark-orange-colour;
-            color: $white-colour;
+            background: $coral--light;
+            color: $white;
             text-decoration: none;
         }
     }
 
     &.btn-brd.btn-u-orange:hover {   /* 0 0 4 0 */
-        color: white !important;
-        background-color: $orange-colour;
+        color: $white!important;
+        background-color: $coral;
     }
 }
 
 .btn-brd.btn-u-orange { /* 0 0 2 0 */
-    border-color: $orange-colour;
+    border-color: $coral;
 
     &:hover { /* 0 0 3 0 */
-        color: $dark-orange-colour;
-        border-color: $dark-orange-colour;
+        color: $coral--light;
+        border-color: $coral--light;
     }
 
     &.btn-brd-hover:hover {   /* 0 0 4 0 */
-        background: $dark-orange-colour;
+        background: $coral--light;
     }
 }
 
 .open.dropdown-toggle.btn-u-orange {   /* 0 0 3 0 */
-    background: $dark-orange-colour;
-    color: $white-colour;
+    background: $coral--light;
+    color: $white;
     text-decoration: none;
 }
 
@@ -148,11 +145,11 @@ $white-colour: #fff;
 
     &-light {  /* 0 0 1 0 */
         background-color: transparent;
-        border: 1px solid $white-colour;
-        color: $white-colour;
+        border: 1px solid $white;
+        color: $white;
 
         &:hover {  /* 0 0 2 0 */
-            background-color: $white-colour;
+            background-color: $white;
             color: $gray-colour;
         }
     }
@@ -163,14 +160,14 @@ $white-colour: #fff;
 }
 
 .ban-btn-offblack {
-    color: #fff;
+    color: $white;
     background-color: #2D2D2D;
-    border-color: #fff;
+    border-color:$white;
   }
 
   .ban-btn-offblack:hover, .ban-btn-offblack.active {
-    border-color: #fff;
-    background-color:#fff;
+    border-color: $white;
+    background-color: $white;
   }
 
   .ban-btn-offblack:hover, .ban-btn-offblack:focus, .ban-btn-offblack.active {
