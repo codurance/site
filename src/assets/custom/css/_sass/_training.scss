@@ -1,4 +1,6 @@
 .training {
+    display: flex;
+    align-items: center;
     background: salmon;
     @include max-width--out-there;
 
@@ -6,4 +8,11 @@
         padding-left: $lateral-space--large;
         padding-right: $lateral-space--large;
     }
+}
+.training__image {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    padding-top: 35%;
+    max-width: 585px;
 }
