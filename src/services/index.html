@@ -13,13 +13,13 @@ title: Services
   </div>
 </section>
 
-{% if site.data.toggles.service-line-teaser-group == "on" %}
+{% if site.data.toggles.service-line-updates == "on" %}
   <section class="services__offerings">
     {% assign data-file = site.data.service_lines %}
     {% include teaser_group.html data-file=data-file %}
   </section>
 
-{% elsif site.data.toggles.service-line-teaser-group == "off" %}
+{% elsif site.data.toggles.service-line-updates == "off" %}
 
   <div class="section g-pt-0 g-pb-0">
     <div>
