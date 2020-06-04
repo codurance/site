@@ -1,8 +1,9 @@
 <div class="clients">
   {%- include page_location_anchor.html anchor_id="clients" -%}
-  {%- include section_intro.html title="You're in good company" -%}
+  {%- include section_intro.html title=include.title -%}
   <div class="clients__logo-container">
-    {% for client in site.data.clients limit:12 %}
+    {% for client in site.data.clients %}
+      {% if include.pinned_only and client.pinned != true %}{% continue %}{% endif %}
       <img class="clients__logo" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
     {% endfor %}
   </div>
