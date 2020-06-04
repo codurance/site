@@ -1,0 +1,9 @@
+.training {
+    background: salmon;
+    @include max-width--out-there;
+
+    @include large-and-extra-large {
+        padding-left: $lateral-space--large;
+        padding-right: $lateral-space--large;
+    }
+}
