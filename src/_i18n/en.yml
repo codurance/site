@@ -256,6 +256,7 @@ services:
   training:
     title: Train with us
     description: Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Learn More
 services-training_coaching:

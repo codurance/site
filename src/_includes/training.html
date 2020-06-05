@@ -4,5 +4,5 @@
         <p class="training__description">{{ include.description }}</p>
         {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %}
     </div>
-    <div class="training__image" style="background-image: url('http://placekitten.com/780/590')"></div>
+    <div class="training__image" style="background-image: url({{ include.image }})"></div>
 </div>
