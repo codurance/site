@@ -260,6 +260,11 @@ services:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
     formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
+  training:
+    title: Entrena con nostros
+    description: ES Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    cta-href: /services/training/
+    cta-text: Ver mas
 services-training_coaching:
   title: Formación & asesoría
   our_courses: Nuestros cursos

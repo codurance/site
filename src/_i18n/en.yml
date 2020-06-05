@@ -253,6 +253,11 @@ services:
     title: Get In Touch
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
+  training:
+    title: Train with us
+    description: Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    cta-href: /services/training/
+    cta-text: Learn More
 services-training_coaching:
   title: Training & Coaching
   our_courses: Our Courses

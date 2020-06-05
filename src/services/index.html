@@ -19,7 +19,11 @@ title: Services
     {% include teaser_group.html data-file=data-file %}
   </section>
   <section class="services-training">
-    {% include training.html %}
+  {%- assign cta-href = site.baseurl | append: site.translations[site.lang].services.training.cta-href -%}
+  {%- assign cta-text = site.translations[site.lang].services.training.cta-text -%}
+  {%- assign title = site.translations[site.lang].services.training.title -%}
+  {%- assign description = site.translations[site.lang].services.training.description -%}
+    {% include training.html title=title description=description cta-text=cta-text cta-href=cta-href %}
   </section>
 
 {% elsif site.data.toggles.service-line-updates == "off" %}
