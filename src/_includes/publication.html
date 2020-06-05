@@ -133,20 +133,18 @@
     </div>
 </section>
 
-{% if site.data.toggles.feature-sm-blog-in-page-banner == 'on' %}
-    {% assign posttags = page.tags %}
-    {% for posttag in posttags %}
-        {% if page.in_page_banner != 'none' and posttag == 'software modernisation' %}
-            {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
-            {% capture description %}{% t software-modernisation.in-page-banner-publications-text %}{% endcapture %}
-            {% assign cta_href = "/software-modernisation/" | prepend: site.baseurl %}
-            {% capture cta_text %}{% t software-modernisation.in-page-banner-publications-link %}{% endcapture %}
-            {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
-            {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" cta_href=cta_href cta_text=cta_text description=description title=title %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
+{% assign posttags = page.tags %}
+{% for posttag in posttags %}
+    {% if page.in_page_banner != 'none' and posttag == 'software modernisation' %}
+        {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
+        {% capture description %}{% t software-modernisation.in-page-banner-publications-text %}{% endcapture %}
+        {% assign cta_href = "/software-modernisation/" | prepend: site.baseurl %}
+        {% capture cta_text %}{% t software-modernisation.in-page-banner-publications-link %}{% endcapture %}
+        {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
+        {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" cta_href=cta_href cta_text=cta_text description=description title=title %}
+        {% break %}
+    {% endif %}
+{% endfor %}
 
 <section class="container g-pt-50 blog">
     <div class="row justify-content-center">
