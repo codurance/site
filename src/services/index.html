@@ -14,9 +14,17 @@ title: Services
 </section>
 
 {% if site.data.toggles.service-line-updates == "on" %}
-  <section class="services__offerings">
+  <section class="services-offerings">
     {% assign data-file = site.data.service_lines %}
     {% include teaser_group.html data-file=data-file %}
+  </section>
+  <section class="services-training">
+    {%- assign title = site.translations[site.lang].services.training.title -%}
+    {%- assign description = site.translations[site.lang].services.training.description -%}
+    {%- assign cta-href = site.baseurl | append: site.translations[site.lang].services.training.cta-href -%}
+    {%- assign cta-text = site.translations[site.lang].services.training.cta-text -%}
+    {%- assign image = site.translations[site.lang].services.training.image -%}
+    {% include training_teaser.html title=title description=description cta-text=cta-text cta-href=cta-href image=image %}
   </section>
 
 {% elsif site.data.toggles.service-line-updates == "off" %}
