@@ -190,12 +190,13 @@ publications:
 services:
   title: Software de calidad entregado efectivamente
   subtitle: Líderes reconocidos en continuous delivery y prácticas de calidad en el desarrollo de software.
+  content-type: Servicio
   we-acd: We advise, we coach, we deliver
   software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
   we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.
   we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
   we-deliver-subtitle: Entregamos soluciones de software de calidad.
-  learn-more: Más información
+  learn-more: Más info
   we-advise:
     title: We advise
     subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
@@ -261,8 +262,8 @@ services:
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
     formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
   training:
-    title: Entrena con nostros
-    description: ES Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    title: Formación
+    description: Cursos de capacitación oriuentados a optimizar tus equipos
     image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Ver mas

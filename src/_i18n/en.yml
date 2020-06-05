@@ -190,12 +190,13 @@ services:
   title: Quality Software, Effectively Delivered
   subtitle: Recognised industry leaders in driving continuous delivery through
     quality practices and expertise.
+  content-type: Service
   we-acd: We advise, we coach, we deliver
   software-craftsmanship-pioneers: We are Software Craftsmanship pioneers. We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
   we-advise-subtitle: We advise on creating an effective software delivery capability.
   we-coach-subtitle: We coach software design and delivery skills.
   we-deliver-subtitle: We deliver quality software solutions.
-  learn-more: Learn More
+  learn-more: Learn more
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
@@ -254,8 +255,8 @@ services:
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
   training:
-    title: Train with us
-    description: Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    title: Training
+    description: Leverage focused training courses to upskill your teams
     image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Learn More

@@ -2,7 +2,7 @@
     <div class="training-teaser__content">
         <h2 class="training-teaser__title">{{ include.title }}</h2>
         <p class="training-teaser__description">{{ include.description }}</p>
-        {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %}
+        {% comment %} {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %} {% endcomment %}
     </div>
     <div class="training-teaser__image" style="background-image: url({{ include.image }})"></div>
 </div>
