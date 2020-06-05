@@ -1,5 +1,5 @@
 - id: bestsecret
-  pinned: true
+  featured: true
   name: BestSecret
   image: /assets/custom/img/home/clients/bestsecret-logo.png
   alt-text: BestSecret logo
@@ -12,7 +12,7 @@
       project-name: bestSecret
 
 - id: adevinta
-  pinned: false
+  featured: false
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
   alt-text: Adevinta Logo
@@ -21,7 +21,7 @@
     - software_creation
 
 - id: bankable
-  pinned: true
+  featured: true
   name: Bankable
   image: /assets/custom/img/home/clients/bankable-logo.png
   alt-text: Bankable Logo
@@ -30,7 +30,7 @@
     - software_creation
 
 - id: cazoo
-  pinned: true
+  featured: true
   name: Cazoo
   image: /assets/custom/img/home/clients/cazoo-logo.png
   alt-text: Cazoo Logo
@@ -39,7 +39,7 @@
     - software_creation
 
 - id: cxLoyalty
-  pinned: false
+  featured: false
   name: cxLoyalty
   image: /assets/custom/img/home/clients/cxloyalty-logo.png
   alt-text: cxLoyalty Logo
@@ -49,7 +49,7 @@
     - expert_advice
 
 - id: eclinicalworks
-  pinned: true
+  featured: true
   name: eClinicalWorks
   image: /assets/custom/img/home/clients/eclinicalworks-logo.png
   alt-text: eClinicalWorks Logo
@@ -64,7 +64,7 @@
       project-name: eClinicalWorks
 
 - id: ubs
-  pinned: true
+  featured: true
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
@@ -74,7 +74,7 @@
     - expert_advice
 
 - id: acuris
-  pinned: true
+  featured: true
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
   alt-text: Acuris logo
@@ -85,7 +85,7 @@
     - effective_delivery
 
 - id: socgen
-  pinned: false
+  featured: false
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
@@ -95,7 +95,7 @@
     - training_and_coaching
 
 - id: mandg
-  pinned: false
+  featured: false
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
@@ -110,7 +110,7 @@
       project-name: MANDG
 
 - id: flextrade
-  pinned: false
+  featured: false
   name: Flextrade
   image: /assets/custom/img/home/clients/flextrade-logo.png
   alt-text: Flextrade logo
@@ -122,7 +122,7 @@
     - expert_advice
 
 - id: ey
-  pinned: true
+  featured: true
   name: EY
   image: /assets/custom/img/home/clients/ey.png
   alt-text: EY logo
@@ -134,7 +134,7 @@
     - effective_delivery
 
 - id: aspectcapital
-  pinned: false
+  featured: false
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
@@ -147,7 +147,7 @@
     - expert_advice
 
 - id: tesco
-  pinned: true
+  featured: true
   name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
   description: clients.tesco_description
@@ -165,7 +165,7 @@
       project-name: Tesco-scheduling
 
 - id: asos
-  pinned: true
+  featured: true
   name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.png
   alt-text: ASOS logo
@@ -182,7 +182,7 @@
       project-name: ASOS
 
 - id: mango
-  pinned: true
+  featured: true
   name: Mango
   image: /assets/custom/img/home/clients/mango.png
   alt-text: MANGO logo
@@ -200,7 +200,7 @@
       project-name: Mango
 
 - id: mands
-  pinned: true
+  featured: true
   name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
   alt-text: Marks and Spencer logo
@@ -215,7 +215,7 @@
       project-name: MANDS
 
 - id: moonpig
-  pinned: false
+  featured: false
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
   alt-text: Moonpig logo
@@ -228,7 +228,7 @@
     - expert_advice
 
 - id: coniq
-  pinned: false
+  featured: false
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
   alt-text: Coniq logo
@@ -240,7 +240,7 @@
       project-name: Coniq
 
 - id: aws
-  pinned: false
+  featured: false
   name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
@@ -255,7 +255,7 @@
       project-name: AWS
 
 - id: trinitymirror
-  pinned: false
+  featured: false
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
   alt-text: Trinity Mirror logo
@@ -267,7 +267,7 @@
     - effective_delivery
 
 - id: roche
-  pinned: true
+  featured: true
   name: Roche
   image: /assets/custom/img/home/clients/roche.png
   alt-text: Roche logo
@@ -276,7 +276,7 @@
     - expert_advice
 
 - id: findmypast
-  pinned: false
+  featured: false
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast-logo.png
   alt-text: Find My Past logo
@@ -286,7 +286,7 @@
     - expert_advice
 
 - id: accelad
-  pinned: false
+  featured: false
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
   description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
