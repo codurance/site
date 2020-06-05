@@ -1,8 +1,8 @@
-.clients {
+.clients-teaser {
   text-align: center;
 }
 
-.clients__logo-container {
+.clients-teaser__logo-container {
   @include max-width--out-there;
   @include lateral-spacing;
   align-items: center;
@@ -14,7 +14,7 @@
   margin-top: 40px;
 }
 
-.clients__logo {
+.clients-teaser__logo {
   filter: grayscale(100%);
   opacity: 0.8;
   width: 115px;
@@ -33,7 +33,7 @@
   }
 }
 
-.clients__cta {
+.clients-teaser__cta {
   @include small {
     margin: 20px $lateral-space--small;
   }

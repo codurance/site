@@ -1,14 +1,14 @@
-<div class="clients {{ include.class }}">
+<div class="clients-teaser {{ include.class }}">
   {%- include page_location_anchor.html anchor_id="clients" -%}
   {%- include section_intro.html title=include.title -%}
-  <div class="clients__logo-container">
+  <div class="clients-teaser__logo-container">
     {% for client in site.data.clients %}
       {% if include.pinned_only and client.pinned != true %}{% continue %}{% endif %}
-      <img class="clients__logo" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
+      <img class="clients-teaser__logo" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
     {% endfor %}
   </div>
   {% if include.show_more_clients_cta %}
     {% assign cta_href = '/clients' | prepend: site.baseurl %}
-    {% include cta_primary_link.html color='coral' href=cta_href text="See More" class="clients__cta" %}
+    {% include cta_primary_link.html color='coral' href=cta_href text="See More" class="clients-teaser__cta" %}
   {% endif %}
 </div>
