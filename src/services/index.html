@@ -24,7 +24,7 @@ title: Services
   {%- assign cta-href = site.baseurl | append: site.translations[site.lang].services.training.cta-href -%}
   {%- assign cta-text = site.translations[site.lang].services.training.cta-text -%}
   {%- assign image = site.translations[site.lang].services.training.image -%}
-    {% include training.html title=title description=description cta-text=cta-text cta-href=cta-href image=image %}
+    {% include training_teaser.html title=title description=description cta-text=cta-text cta-href=cta-href image=image %}
   </section>
 
 {% elsif site.data.toggles.service-line-updates == "off" %}
