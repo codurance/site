@@ -16,20 +16,18 @@
 }
 
 .teaser-group__card {
-  @include max-width--out-there;
   position: relative;
 
   @include medium {
     margin-bottom: 30px;
     width: calc(50% - 15px);
-    margin-left: 0;
-    margin-right: 0;
   }
   @include large-and-extra-large {
+    @include max-width--out-there;
+    margin-bottom: 50px;
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
     padding-top: 40px;
-    margin-bottom: 50px;
 
     &::after {
       background-color: #fda09b;
@@ -101,7 +99,7 @@
   &::before {
     background-color: $slate;
     bottom: 0;
-    content: '';
+    content: "";
     left: 0;
     position: absolute;
     right: 0;
