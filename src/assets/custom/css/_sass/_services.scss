@@ -12,6 +12,10 @@
     padding-bottom: $vertical-overlap;
     padding-top: ($vertical-overlap * 3) + 50px;
   }
+  @include extra-large {
+    @include max-width;
+    max-width: calc(100% - (2 * #{$lateral-space--large}));
+  }
 }
 
 .services-effective-delivery {
