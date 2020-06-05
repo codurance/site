@@ -9,7 +9,7 @@
   }
   @include medium-large-and-extra-large {
     padding-top: 65px;
-    padding-bottom: 2 * $vertical-overlap;
+    padding-bottom: 20px + $vertical-overlap;
   }
 }
 
