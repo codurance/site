@@ -1,8 +1,8 @@
-<div class="training">
-    <div class="training__content">
-        <h2 class="training__title">{{ include.title }}</h2>
-        <p class="training__description">{{ include.description }}</p>
+<div class="training-teaser">
+    <div class="training-teaser__content">
+        <h2 class="training-teaser__title">{{ include.title }}</h2>
+        <p class="training-teaser__description">{{ include.description }}</p>
         {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %}
     </div>
-    <div class="training__image" style="background-image: url({{ include.image }})"></div>
+    <div class="training-teaser__image" style="background-image: url({{ include.image }})"></div>
 </div>
