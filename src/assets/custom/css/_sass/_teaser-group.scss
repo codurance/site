@@ -21,7 +21,9 @@
 
   @include medium {
     margin-bottom: 30px;
-    width: calc(50% - 25px);
+    width: calc(50% - 15px);
+    margin-left: 0;
+    margin-right: 0;
   }
   @include large-and-extra-large {
     padding-left: $lateral-space--large;

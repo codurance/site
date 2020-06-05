@@ -1,7 +1,15 @@
 .training {
-    display: flex;
-    align-items: center;
     @include max-width--out-there;
+    align-items: center;
+    display: flex;
+
+    @include small {
+        flex-direction: column-reverse;
+    }
+    @include medium {
+        padding-left: $lateral-space--medium;
+        padding-right: $lateral-space--medium;
+    }
 
     @include large-and-extra-large {
         padding-left: $lateral-space--large;
@@ -12,23 +20,48 @@
 .training__title {
     @include freed-bold;
     color: white;
+    margin-bottom: 15px;
 }
 
 .training__description {
     @include mercer-reg;
     color: white;
+    margin-bottom: 25px;
 }
 
 .training__content {
-    @include lateral-spacing;
-    width: 50%;
+    padding-right: 25px;
+
+    @include small {
+        width: 100%;
+        padding-left: 25px;
+        text-align: center;
+    }
+    @include medium-large-and-extra-large {
+        width: 50%;
+    }
+    @include large-and-extra-large {
+        padding-left: $lateral-space--large;
+    }
 }
 
 .training__image {
     background-color: $navy;
     background-position: center;
     background-size: cover;
-    max-width: 585px;
-    padding-top: 35%;
-    width: 50%;
+
+    @include small {
+        margin-bottom: 50px;
+        padding-top: 75%;
+        width: 100%;
+    }
+    @include medium-large-and-extra-large {
+        max-width: 585px;
+        padding-top: 35%;
+        width: 50%;
+    }
+
+    @include medium {
+        margin-left: 30px;
+    }
 }
