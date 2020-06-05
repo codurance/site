@@ -3,7 +3,6 @@ layout: default
 title: Services
 ---
 
-<!-- Hero -->
 <section class="bg-gradient-midnight-blue height-is-based-on-content">
   <div class="container g-z-index-1 g-py-100 text-center">
     <h1 class="services-hero-title g-font-weight-900 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
@@ -14,6 +13,8 @@ title: Services
 </section>
 
 {% if site.data.toggles.service-line-updates == "on" %}
+  {% capture description %}{%t services.secondary-intro %}{% endcapture %}
+  {% include section_intro.html class="services-secondary-intro" description=description %}
   <section class="services-offerings">
     {% assign data-file = site.data.service_lines %}
     {% include teaser_group.html data-file=data-file %}
@@ -26,7 +27,6 @@ title: Services
   </section>
 
 {% elsif site.data.toggles.service-line-updates == "off" %}
-
   <div class="section g-pt-0 g-pb-0">
     <div>
       {% include soft_mod_in_page_banner.html %}

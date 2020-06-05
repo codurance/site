@@ -1,5 +1,7 @@
 <header class="section-intro {{ include.class }}">
-  <h2 class="section-intro__title">{{include.title}}</h2>
+  {% if include.title and include.title != "" %}
+    <h2 class="section-intro__title">{{include.title}}</h2>
+  {% endif %}
 
   {% if include.description and include.description != "" %}
     <p class="section-intro__description">{{include.description}}</p>
