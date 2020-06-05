@@ -79,27 +79,8 @@ layout: default
   {% include_relative services/_includes/we_advise_coach_deliver.html %}
 </div>
 
-<!-- Clients panel -->
-<div class="section">
-  <div class="container">
-    <div class="title-header">
-      <h2 class="h3">{% t index-clients.title %}</h2>
-    </div>
-
-    <div class="row">
-      {% for client in site.data.clients %}
-      <div class="col-md-2 col-md-2--2up-mobile text-center u-pad-none">
-        <img class="index-client-logo g-pa-25 g-mb-0--sm" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}" />
-      </div>
-      {% endfor %}
-    </div>
-    <div class="client-client-logo-cta">
-      <a class="btn btn-md u-btn-primary text-uppercase w-100 g-width-auto--lg btn-codurance-color" href="{{ '/clients' | prepend: site.baseurl }}">See More</a>
-    </div>
-  </div>
-  <!-- end container -->
-</div>
-<!-- end section -->
+{% capture title %}{% t index-clients.title %}{% endcapture %}
+{% include clients_teaser.html class="home-page__client-logos" show_more_clients_cta=true title=title %}
 
 <div class="section g-pt-0 g-pb-0"> 
   <div>
