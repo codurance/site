@@ -1,41 +1,34 @@
 .clients {
   text-align: center;
-
-  @include small {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
-  @include medium-large-and-extra-large {
-    padding-top: 65px;
-    padding-bottom: 2 * $vertical-overlap;
-  }
 }
 
 .clients__logo-container {
   @include max-width--out-there;
+  @include lateral-spacing;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
   margin-top: 40px;
-
-  @include small {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .clients__logo {
   filter: grayscale(100%);
   opacity: 0.8;
+  width: 115px;
 
   @include small {
-    flex-basis: 30%;
-    max-width: 150px;
+    flex-basis: calc((100% - (3 * 40px)) / 3);
+    margin: 10px 20px;
   }
-  @include medium-large-and-extra-large {
-    flex-basis: 115px;
+  @include medium {
+    flex-basis: calc((100% - (4 * 50px)) / 4);
+    margin: 10px 25px;
+  }
+  @include large-and-extra-large {
+    flex-basis: calc((100% - (6 * 60px)) / 6);
     margin: 10px 30px;
   }
 }

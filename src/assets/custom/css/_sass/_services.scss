@@ -2,6 +2,17 @@
   padding-top: 50px;
 }
 
+.services-page-clients-teaser {
+  @include small {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 65px;
+    padding-bottom: 2 * $vertical-overlap;
+  }
+}
+
 .services-compass-cta {
   background: $slate;
 
