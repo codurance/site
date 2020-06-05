@@ -1,8 +1,8 @@
 <section class="teaser-group">
   {% for data-entry in data-file %}
     <article class="teaser-group__card">
-      <div class="teaser-group__card-image" style="background-image: url({{ data-entry.image-src }})"></div>
-      <div class="teaser-group__card-content" style="background-image: url({{ data-entry.image-src }})">
+      <div class="teaser-group__card-image" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})"></div>
+      <div class="teaser-group__card-content" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})">
         <h2 class="teaser-group__card-content-type">{{ data-entry.icon }}{{ data-entry.content-type }}</h2>
         <h3 class="teaser-group__card-title">{{ data-entry.title }}</h3>
         <p class="teaser-group__card-description">{{ data-entry.description }}</p>
