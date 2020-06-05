@@ -1,7 +1,6 @@
 .training {
     display: flex;
     align-items: center;
-    background: salmon;
     @include max-width--out-there;
 
     @include large-and-extra-large {
@@ -26,9 +25,10 @@
 }
 
 .training__image {
+    background-color: $navy;
     background-position: center;
     background-size: cover;
-    width: 50%;
-    padding-top: 35%;
     max-width: 585px;
+    padding-top: 35%;
+    width: 50%;
 }
