@@ -1,5 +1,11 @@
 .services-training {
   background-color: $navy;
+  background-image: url("#{$site-base-url}/assets/custom/img/services/training-bg.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: -$vertical-overlap * 3;
+  padding-bottom: $vertical-overlap;
+  padding-top: ($vertical-overlap * 3) + 50px;
 }
 
 .services-effective-delivery {
