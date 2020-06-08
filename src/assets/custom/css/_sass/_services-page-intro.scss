@@ -14,9 +14,15 @@
 }
 
 .services-page-intro__text-container {
-  @include lateral-spacing;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  background-color: white;
+
+  @include small {
+    padding: 50px $lateral-space--small;
+  }
+  @include medium-large-and-extra-large {
+    margin: -175px $lateral-space--medium 0;
+    padding: 70px 65px;
+  }
 }
 
 .services-page-intro__title {
