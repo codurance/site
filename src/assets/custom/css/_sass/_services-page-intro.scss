@@ -11,6 +11,10 @@
   @include medium-large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-medium.jpg");
   }
+  @include extra-large {
+    @include max-width;
+    max-width: calc(100% - (2 * #{$lateral-space--large}));
+  }
 }
 
 .services-page-intro__text-container {
