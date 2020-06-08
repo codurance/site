@@ -191,7 +191,7 @@ services:
   title: Software de calidad entregado efectivamente
   subtitle: Líderes reconocidos en continuous delivery y prácticas de calidad en el desarrollo de software.
   content-type: Servicio
-  secondary-intro: Trabajamos contigo para poner a tu alcance soluciones que ayuden a crear un futuro sostenible, escalable y adaptable para tu negocio. Juntos descubrimos tus necesidades organizacionales y cómo necesitas evolucionar. Nuestro equipo te ofrecerá las prácticas, tecnologías y habilidades necesarias para agregar valor continuamente y hacer posible la innovación.
+  lead-in: Trabajamos contigo para poner a tu alcance soluciones que ayuden a crear un futuro sostenible, escalable y adaptable para tu negocio. Juntos descubrimos tus necesidades organizacionales y cómo necesitas evolucionar. Nuestro equipo te ofrecerá las prácticas, tecnologías y habilidades necesarias para agregar valor continuamente y hacer posible la innovación.
   we-acd: We advise, we coach, we deliver
   software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
   we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.

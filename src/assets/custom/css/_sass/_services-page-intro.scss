@@ -9,9 +9,16 @@
 
 .services-page-intro__text-container {
   @include lateral-spacing;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 
 .services-page-intro__title {
   @include freed-bold;
+}
+
+.services-page-intro__lead-in {
+  @include mercer-reg;
+  margin-bottom: 0;
+  margin-top: 0;
 }

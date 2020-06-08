@@ -5,10 +5,7 @@ title: Services
 
 <main class="services-page">
   {% if site.data.toggles.service-line-updates == "on" %}
-    {% include services_page_intro.liquid %}
-
-    {% capture description %}{%t services.secondary-intro %}{% endcapture %}
-    {% include section_intro.html class="services-page__section-intro" description=description %}
+  {% include services_page_intro.liquid %}
 
     {% assign data-file = site.data.service_lines %}
     {% include teaser_group.html data-file=data-file %}

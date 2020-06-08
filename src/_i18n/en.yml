@@ -191,7 +191,7 @@ services:
   subtitle: Recognised industry leaders in driving continuous delivery through
     quality practices and expertise.
   content-type: Service
-  secondary-intro: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
+  lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
   we-acd: We advise, we coach, we deliver
   software-craftsmanship-pioneers: We are Software Craftsmanship pioneers. We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
   we-advise-subtitle: We advise on creating an effective software delivery capability.

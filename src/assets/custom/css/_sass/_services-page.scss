@@ -1,14 +1,3 @@
-.services-page__section-intro {
-  @include small {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
-  @include medium-large-and-extra-large {
-    padding-top: 65px;
-    padding-bottom: 80px;
-  }
-}
-
 .services-page__training-teaser {
   background-color: $navy;
   background-image: url("#{$site-base-url}/assets/custom/img/services/training-bg.png");
