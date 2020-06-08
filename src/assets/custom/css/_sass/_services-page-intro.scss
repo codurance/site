@@ -7,6 +7,11 @@
   padding-top: 200 / 360 * 100%;
 }
 
+.services-page-intro__text-container {
+  @include lateral-spacing;
+  padding-top: 50px;
+}
+
 .services-page-intro__title {
   @include freed-bold;
 }
