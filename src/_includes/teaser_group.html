@@ -1,12 +1,18 @@
 <section class="teaser-group">
   {% for data-entry in data-file %}
+    {% capture title %}{% if site.lang == 'es' %}{{ data-entry.es-title }}{% else %}{{ data-entry.en-title }}{% endif %}{% endcapture %}
+    {% capture description %}{% if site.lang == 'es' %}{{ data-entry.es-description }}{% else %}{{ data-entry.en-description }}{% endif %}{% endcapture %}
     <article class="teaser-group__card">
-      <div class="teaser-group__card-image" style="background-image: url({{ data-entry.image-src }})"></div>
-      <div class="teaser-group__card-content" style="background-image: url({{ data-entry.image-src }})">
-        <h2 class="teaser-group__card-content-type">{{ data-entry.icon }}{{ data-entry.content-type }}</h2>
-        <h3 class="teaser-group__card-title">{{ data-entry.title }}</h3>
-        <p class="teaser-group__card-description">{{ data-entry.description }}</p>
-        {% include cta_primary_link.html color='coral' href=data-entry.cta-href text=data-entry.cta-text %}
+      <div class="teaser-group__card-image" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})"></div>
+      <div class="teaser-group__card-content" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})">
+        <h2 class="teaser-group__card-content-type">{{ data-entry.icon }}{% t services.content-type %}</h2>
+        <h3 class="teaser-group__card-title">{{ title }}</h3>
+        <p class="teaser-group__card-description">{{ description }}</p>
+        {% if data-entry.cta-path %}
+          {% capture cta-href %}{{ data-entry.cta-path | prepend: site.baseurl }}{% endcapture %}
+          {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
+          {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
+        {% endif %}
       </div>
     </article>
   {% endfor %}
