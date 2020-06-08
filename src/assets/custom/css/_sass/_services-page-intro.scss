@@ -15,10 +15,16 @@
 
 .services-page-intro__title {
   @include freed-bold;
+  margin-bottom: 30px;
+}
+
+.services-page-intro__sub-title {
+  @include mercer-reg;
+  margin-bottom: 30px;
 }
 
 .services-page-intro__lead-in {
-  @include mercer-reg;
+  @include base-reg;
   margin-bottom: 0;
   margin-top: 0;
 }
