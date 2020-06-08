@@ -51,8 +51,7 @@
 }
 
 @include medium {
-  $width-of-cards: 370px;
-  $space-between-cards: 27px;
+  $space-between-cards: 25px;
 
   .cards-layout__inner {
     flex-wrap: wrap;
@@ -60,7 +59,7 @@
 
   .cards-layout__card {
     flex-basis: calc(50% - #{$space-between-cards / 2});
-    width: $width-of-cards;
+    width: 100%;
 
     &:nth-child(1) {
       display: none;
@@ -79,11 +78,10 @@
 }
 
 @include large {
-  $width-of-cards: 340px;
-  $space-between-cards: 40.5px;
+  $space-between-cards: 40px;
 
   .cards-layout__card {
-    width: $width-of-cards;
+    width: 100%;
 
     &:nth-child(1) {
       display: none;
@@ -105,11 +103,10 @@
 }
 
 @include extra-large {
-  $width-of-cards: 370px;
   $space-between-cards: 50px;
 
   .cards-layout__card {
-    width: $width-of-cards;
+    width: 100%;
 
     &:nth-child(1) {
       display: none;
