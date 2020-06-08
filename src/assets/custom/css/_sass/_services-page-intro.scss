@@ -26,23 +26,23 @@
 }
 
 .services-page-intro__title {
+  @include freed-bold--responsive;
+
   @include small {
-    @include freed-bold;
     margin-bottom: 30px;
   }
   @include medium-large-and-extra-large {
-    @include eames-bold;
     margin-bottom: 35px;
   }
 }
 
 .services-page-intro__sub-title {
+  @include mercer-reg--responsive;
+
   @include small {
-    @include mercer-reg;
     margin-bottom: 30px;
   }
   @include medium-large-and-extra-large {
-    @include dudler-reg;
     margin-bottom: 40px;
   }
 }
@@ -50,10 +50,6 @@
 .services-page-intro__lead-in {
   margin-bottom: 0;
   margin-top: 0;
-  @include small {
-    @include base-reg;
-  }
-  @include medium-large-and-extra-large {
-    @include freed-reg;
-  }
+
+  @include base-reg--responsive;
 }
