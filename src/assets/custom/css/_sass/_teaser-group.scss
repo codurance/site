@@ -72,25 +72,36 @@
     position: absolute;
     z-index: 10;
   }
+  @include large{
+    width: calc(57% - #{2 * $lateral-space--large});
+  }
   @include large-and-extra-large {
     bottom: 40px;
     top: 0;
-    width: calc(57% - #{2 * $lateral-space--large});
+  }
+  @include extra-large{
+    width: calc(57%);
   }
 
   .teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
-
-    @include large-and-extra-large {
+    @include large{
       left: $lateral-space--large;
+    }
+    @include extra-large {
+      left: 0;
     }
   }
   .teaser-group__card:nth-of-type(even) & {
     background-position: right center;
-
+    @include large{
+      right: $lateral-space--large;
+    }
     @include large-and-extra-large {
       left: auto;
-      right: $lateral-space--large;
+    }
+    @include extra-large{
+      right: 0;
     }
   }
 }
