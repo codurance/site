@@ -1,10 +1,16 @@
 .services-page-intro__image {
   background-color: $grey--dark;
-  background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small.png");
   background-position: center center;
   background-size: cover;
   height: 0;
   padding-top: 200 / 360 * 100%;
+
+  @include small {
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small.png");
+  }
+  @include medium-large-and-extra-large {
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-medium.jpg");
+  }
 }
 
 .services-page-intro__text-container {
