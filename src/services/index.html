@@ -3,14 +3,6 @@ layout: default
 title: Services
 ---
 
-<section class="bg-gradient-midnight-blue height-is-based-on-content">
-  <div class="container g-z-index-1 g-py-100 text-center">
-    <h1 class="services-hero-title g-font-weight-900 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
-    <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
-      <p class="services-hero-sub-title mb-0">{%t services.subtitle %}</p>
-    </div>
-  </div>
-</section>
 
 {% if site.data.toggles.service-line-updates == "on" %}
   {% capture description %}{%t services.secondary-intro %}{% endcapture %}
@@ -27,6 +19,15 @@ title: Services
   </section>
 
 {% elsif site.data.toggles.service-line-updates == "off" %}
+  <section class="bg-gradient-midnight-blue height-is-based-on-content">
+    <div class="container g-z-index-1 g-py-100 text-center">
+      <h1 class="services-hero-title g-font-weight-900 g-letter-spacing-1 g-mb-15">{%t services.title %}</h1>
+      <div class="lead g-font-weight-400 g-line-height-2 g-letter-spacing-0_5">
+        <p class="services-hero-sub-title mb-0">{%t services.subtitle %}</p>
+      </div>
+    </div>
+  </section>
+
   <div class="section g-pt-0 g-pb-0">
     <div>
       {% include soft_mod_in_page_banner.html %}
