@@ -27,6 +27,9 @@
     margin: -175px $lateral-space--medium 0;
     padding: 70px 65px;
   }
+  @include large-and-extra-large{
+    @include max-width--out-there;
+  }
 }
 
 .services-page-intro__title {
