@@ -55,12 +55,15 @@
   }
 }
 
-.teaser-group__card:nth-of-type(even) {
+.teaser-group__card:nth-of-type(even)::after {
+  @include large{
+    right: 2 * $lateral-space--large;
+  }
   @include large-and-extra-large {
-    &::after {
       left: 50%;
-      right: 2 * $lateral-space--large;
-    }
+  }
+  @include extra-large{
+    right: $lateral-space--large;
   }
 }
 
