@@ -1,4 +1,4 @@
-.services-secondary-intro {
+.services-page__section-intro {
   @include small {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -9,7 +9,7 @@
   }
 }
 
-.services-training {
+.services-page__training-teaser {
   background-color: $navy;
   background-image: url("#{$site-base-url}/assets/custom/img/services/training-bg.png");
   background-position: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.services-page-clients-teaser {
+.services-page__clients-teaser {
   @include small {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -40,7 +40,7 @@
   }
 }
 
-.services-compass-cta {
+.services-page__compass-cta {
   background: $slate;
 
   @include medium-large-and-extra-large {
