@@ -24,17 +24,28 @@
 }
 
 .services-page-intro__text-container {
+  @include extra-large {
+    @include max-width--out-there;
+  }
+}
+
+.services-page-intro__text-container-inner {
   background-color: white;
 
   @include small {
     padding: 50px $lateral-space--small;
   }
-  @include medium-large-and-extra-large {
+  @include medium {
     margin: -175px $lateral-space--medium 0;
     padding: 70px 65px;
   }
-  @include large-and-extra-large{
-    @include max-width--out-there;
+  @include large {
+    margin-left: $lateral-space--large;
+    margin-right: $lateral-space--large;
+  }
+  @include large-and-extra-large {
+    margin-top: -200px;
+    padding: 95px 130px 110px;
   }
 }
 

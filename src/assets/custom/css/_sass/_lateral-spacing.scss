@@ -9,7 +9,12 @@ $lateral-space--large: 50px;
 
 @mixin max-width--out-there {
   @include max-width;
-  max-width: 1200px;
+  max-width: 1200px + (2 * $lateral-space--large);
+
+  @include large-and-extra-large {
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+  }
 }
 
 @mixin max-width--column {

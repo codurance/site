@@ -1,4 +1,6 @@
 .teaser-group {
+  @include max-width--out-there;
+
   @include small-and-medium {
     display: flex;
   }
@@ -22,12 +24,7 @@
     margin-bottom: 30px;
     width: calc(50% - 15px);
   }
-  @include large {
-    padding-left: $lateral-space--large;
-    padding-right: $lateral-space--large;
-  }
   @include large-and-extra-large {
-    @include max-width--out-there;
     margin-bottom: 50px;
     padding-top: 40px;
 
@@ -44,70 +41,46 @@
 }
 
 .teaser-group__card:nth-of-type(odd)::after {
-  @include large {
-    left: 2 * $lateral-space--large;
-  }
   @include large-and-extra-large {
-    right: 50%;
-  }
-  @include extra-large {
     left: $lateral-space--large;
+    right: 50%;
   }
 }
 
 .teaser-group__card:nth-of-type(even)::after {
-  @include large{
-    right: 2 * $lateral-space--large;
-  }
   @include large-and-extra-large {
-      left: 50%;
-  }
-  @include extra-large{
+    left: 50%;
     right: $lateral-space--large;
   }
 }
 
 .teaser-group__card-image {
-  background-color: #aaa;
-  background-size: cover;
-
   @include small-and-medium {
     display: none;
   }
-  @include medium-large-and-extra-large {
-    position: absolute;
-    z-index: 10;
-  }
-  @include large {
-    width: calc(57% - #{2 * $lateral-space--large});
-  }
   @include large-and-extra-large {
+    background-color: #aaa;
+    background-size: cover;
     bottom: 40px;
+    position: absolute;
     top: 0;
-  }
-  @include extra-large {
-    width: calc(57%);
+    width: 57%;
+    z-index: 10;
   }
 
   .teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
-    @include large {
-      left: $lateral-space--large;
-    }
-    @include extra-large {
+
+    @include large-and-extra-large {
       left: 0;
     }
   }
 
   .teaser-group__card:nth-of-type(even) & {
     background-position: right center;
-    @include large {
-      right: $lateral-space--large;
-    }
+
     @include large-and-extra-large {
       left: auto;
-    }
-    @include extra-large {
       right: 0;
     }
   }
