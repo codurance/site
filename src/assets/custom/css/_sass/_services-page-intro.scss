@@ -1,3 +1,8 @@
+.services-page-intro__image{
+  background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small.png") ;
+  height: 200px;
+}
+
 .services-page-intro__title{
   @include freed-bold;
 }
