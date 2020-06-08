@@ -8,9 +8,34 @@
   font-weight: 400;
 }
 
+@mixin gaudi {
+  font-size: 55px;
+  line-height: 69px;
+}
+
+@mixin gaudi-bold {
+  @include bold;
+  @include gaudi;
+}
+
+@mixin eames {
+  font-size: 45px;
+  line-height: 56px;
+}
+
+@mixin eames-bold {
+  @include bold;
+  @include eames;
+}
+
 @mixin dudler {
-  font-size: 40px;
-  line-height: 2.5;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+@mixin dudler-reg {
+  @include reg;
+  @include dudler;
 }
 
 @mixin freed {
