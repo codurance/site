@@ -49,8 +49,13 @@
   @include small {
     margin-bottom: 30px;
   }
-  @include medium-large-and-extra-large {
+  @include medium {
     margin-bottom: 35px;
+  }
+  @include large-and-extra-large {
+    float: left;
+    margin-bottom: 100px;
+    width: calc(50% - (#{$lateral-space--large} / 2));
   }
 }
 
@@ -60,14 +65,22 @@
   @include small {
     margin-bottom: 30px;
   }
-  @include medium-large-and-extra-large {
+  @include medium {
     margin-bottom: 40px;
+  }
+  @include large-and-extra-large {
+    float: right;
+    margin-bottom: 100px;
+    width: calc(50% - (#{$lateral-space--large} / 2));
   }
 }
 
 .services-page-intro__lead-in {
+  @include base-reg--responsive;
   margin-bottom: 0;
   margin-top: 0;
 
-  @include base-reg--responsive;
+  @include large-and-extra-large {
+    clear: both;
+  }
 }
