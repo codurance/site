@@ -1,0 +1,73 @@
+.services-page-intro__image {
+  background-color: $grey--dark;
+  background-position: center center;
+  background-size: cover;
+  height: 0;
+
+  @include small {
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small.png");
+  }
+  @include small-and-medium {
+    padding-top: 200 / 360 * 100%;
+  }
+  @include medium {
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-medium.jpg");
+  }
+  @include large-and-extra-large {
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large.jpg");
+    padding-top: 650 / 1820 * 100%;
+  }
+  @include extra-large {
+    @include max-width;
+    max-width: calc(100% - (2 * #{$lateral-space--large}));
+  }
+}
+
+.services-page-intro__text-container {
+  @include max-width--out-there;
+}
+
+.services-page-intro__text-container-inner {
+  background-color: white;
+
+  @include small {
+    padding: 50px $lateral-space--small;
+  }
+  @include medium {
+    margin: -175px $lateral-space--medium 0;
+    padding: 70px 65px;
+  }
+  @include large-and-extra-large {
+    margin-top: -200px;
+    padding: 95px 130px 110px;
+  }
+}
+
+.services-page-intro__title {
+  @include freed-bold--responsive;
+
+  @include small {
+    margin-bottom: 30px;
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 35px;
+  }
+}
+
+.services-page-intro__sub-title {
+  @include mercer-reg--responsive;
+
+  @include small {
+    margin-bottom: 30px;
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 40px;
+  }
+}
+
+.services-page-intro__lead-in {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @include base-reg--responsive;
+}

@@ -1,3 +1,40 @@
+@mixin gaudi {
+  font-size: 55px;
+  line-height: 69px;
+}
+
+@mixin eames {
+  font-size: 45px;
+  line-height: 56px;
+}
+
+@mixin dudler {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+@mixin freed {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+@mixin mercer {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+@mixin base {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin ponti {
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
 @mixin bold {
   font-family: proxima-nova;
   font-weight: 700;
@@ -8,19 +45,25 @@
   font-weight: 400;
 }
 
-@mixin dudler {
-  font-size: 40px;
-  line-height: 2.5;
+@mixin gaudi-bold {
+  @include bold;
+  @include gaudi;
 }
 
-@mixin freed {
-  font-size: 28px;
-  line-height: 38px;
+@mixin eames-bold {
+  @include bold;
+  @include eames;
+}
+
+@mixin dudler-reg {
+  @include reg;
+  @include dudler;
 }
 
 @mixin freed--responsive {
-  @include freed;
-
+  @include small {
+    @include freed;
+  }
   @include medium-large-and-extra-large {
     @include dudler;
   }
@@ -41,11 +84,6 @@
   @include freed--responsive;
 }
 
-@mixin mercer {
-  font-size: 21px;
-  line-height: 33px;
-}
-
 @mixin mercer-responsive {
   @include mercer;
 
@@ -64,14 +102,14 @@
   @include mercer-responsive;
 }
 
+@mixin mercer-reg--responsive {
+  @include reg;
+  @include mercer-responsive;
+}
+
 @mixin mercer-reg {
   @include reg;
   @include mercer;
-}
-
-@mixin base {
-  font-size: 18px;
-  line-height: 28px;
 }
 
 @mixin base--responsive {
@@ -104,13 +142,6 @@
 @mixin base-reg--responsive {
   @include base--responsive;
   @include reg;
-}
-
-@mixin ponti {
-  font-size: 15px;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
 }
 
 @mixin ponti-bold {
