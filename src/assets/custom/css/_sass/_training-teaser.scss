@@ -18,18 +18,20 @@
 }
 
 .training-teaser__content {
-  padding-right: 25px;
-
   @include small {
     padding-left: 25px;
+    padding-right: 25px;
     text-align: center;
     width: 100%;
   }
   @include medium-large-and-extra-large {
+    padding-left: 10px;
+    padding-right: 30px;
     width: 50%;
   }
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
   }
 }
 
