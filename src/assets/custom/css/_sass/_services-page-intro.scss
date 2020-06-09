@@ -44,18 +44,24 @@
 }
 
 .services-page-intro__title {
-  @include freed-bold--responsive;
-
   @include small {
+    @include freed-bold;
     margin-bottom: 30px;
   }
   @include medium {
+    @include dudler-bold;
     margin-bottom: 35px;
+  }
+  @include large {
+    @include gaudi-bold;
   }
   @include large-and-extra-large {
     float: left;
     margin-bottom: 100px;
     width: calc(50% - (#{$lateral-space--large} / 2));
+  }
+  @include extra-large {
+    @include habib-bold;
   }
 }
 
