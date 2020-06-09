@@ -81,6 +81,8 @@
   margin-top: 0;
 
   @include large-and-extra-large {
+    @include max-width--column;
     clear: both;
+    text-align: center;
   }
 }
