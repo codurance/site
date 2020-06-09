@@ -17,18 +17,6 @@
   }
 }
 
-.training-teaser__title {
-  @include freed-bold;
-  color: white;
-  margin-bottom: 15px;
-}
-
-.training-teaser__description {
-  @include mercer-reg;
-  color: white;
-  margin-bottom: 25px;
-}
-
 .training-teaser__content {
   padding-right: 25px;
 
@@ -43,6 +31,18 @@
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
   }
+}
+
+.training-teaser__title {
+  @include freed-bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.training-teaser__description {
+  @include mercer-reg;
+  color: white;
+  margin-bottom: 25px;
 }
 
 .training-teaser__image {
