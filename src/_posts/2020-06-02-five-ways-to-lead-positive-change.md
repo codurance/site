@@ -19,7 +19,7 @@ pinned_locations:
 
 ### Introduction  
 
-There are many different approaches to [Software Modernisation](https://codurance.com/software-modernisation/). The right approach will depend on many factors such as the [business goals](https://codurance.com/2020/05/18/building-a-business-case-for-your-software-modernisation-initiative/) you have for the modernisation program, the current state of your systems and organisation, prevailing business pressures, the resources available to the program and the structures of resource allocation within your business.  
+There are many different approaches to [Software Modernisation](https://codurance.com/services/software-modernisation/). The right approach will depend on many factors such as the [business goals](https://codurance.com/2020/05/18/building-a-business-case-for-your-software-modernisation-initiative/) you have for the modernisation program, the current state of your systems and organisation, prevailing business pressures, the resources available to the program and the structures of resource allocation within your business.  
 
 In this article I’m going to outline some different ways of leading a Software Modernisation program with their pros and cons. The goal is to help the reader to understand which approach might be suitable for their organisation, the current state of its systems and the business value that it wants to unlock through software modernisation.  
 
@@ -47,7 +47,7 @@ With technology led change there will typically be a backlog of technology focus
 
 ### Bottom up Approach  
 
-A bottom up approach to [Software Modernisation](https://codurance.com/software-modernisation/) places the ownership of the modernisation goals at the level of the existing product teams. The organisation will understand that Software Modernisation is necessary as the current state of systems is making it hard to deliver on its business objectives. Each product team is empowered to create backlog items that deliver Software Modernisation goals and add them to its backlog. Typically the leadership of the organisation will mandate that a certain proportion of each team's resources should be allocated to modernisation items with the rest of the available resources assigned to feature work.  
+A bottom up approach to [Software Modernisation](https://codurance.com/services/software-modernisation/) places the ownership of the modernisation goals at the level of the existing product teams. The organisation will understand that Software Modernisation is necessary as the current state of systems is making it hard to deliver on its business objectives. Each product team is empowered to create backlog items that deliver Software Modernisation goals and add them to its backlog. Typically the leadership of the organisation will mandate that a certain proportion of each team's resources should be allocated to modernisation items with the rest of the available resources assigned to feature work.  
 
 #### Advantages  
 
@@ -126,4 +126,4 @@ Ultimately, every organisation is different. There are different reasons why sof
 
 Consider carefully how you can deliver on the goals of the business while keeping your stakeholders, and especially your budget holder, happy throughout. Showing value early and often will be key to building momentum and support within the wider organisation, ensuring your budget will not be questioned and giving you the best chance of long term success.  
 
-[Software Modernisation](https://codurance.com/software-modernisation/) can be a long and sometimes frustrating journey. As long as you and your stakeholders understand this and as long as you follow some of these principles to help you in choosing the methodology that gives you the best chance of long term success, then the journey should ultimately prove extremely rewarding.  
+[Software Modernisation](https://codurance.com/services/software-modernisation/) can be a long and sometimes frustrating journey. As long as you and your stakeholders understand this and as long as you follow some of these principles to help you in choosing the methodology that gives you the best chance of long term success, then the journey should ultimately prove extremely rewarding.  
