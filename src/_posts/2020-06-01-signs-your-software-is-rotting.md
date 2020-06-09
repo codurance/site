@@ -11,7 +11,8 @@ image:
    src: /assets/custom/img/blog/2020-06-01-signs-your-software-is-rotting/signs-your-software-is-rotting.jpg
 tags:
     - software modernisation
-    - software design, metrics
+    - software design
+    - metrics
     - extreme programming
 
 ---
