@@ -198,8 +198,8 @@ services:
   we-deliver-subtitle: We deliver quality software solutions.
   learn-more: Learn more
   page-intro:
-    title: Servicelines overview title Ipsum text here
-    sub-title: Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet Introduction text dolor sit amet, consectetur adipiscing elit. Etiam feugiat ligula nec nunc vehicula congue. Nulla turpis diam, rhoncus vitae consequat sit amet
+    title: Services & Solutions
+    sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
     lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
   we-advise:
     title: We advise
