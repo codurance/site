@@ -29,33 +29,35 @@ It’s also important to consider the wider environment and context in which our
 
 # Indicators of Software Rot #
 
-Now we have a common understanding of software rot, I’d like to outline some of the signs that might be indicative of software rot starting to set in. It’s important to note that the following points are more indicators and by themselves will not shine a light on the underlying reasons. Often teams might experience one or even many of the issues below, but be unclear as to where to start looking to resolve the issue(s). The point I’d like to stress is that if you observe any of the following issues in your teams, do look at your codebase as there is a strong possibility that it needs some urgent attention to address its unhealthy state.
+Now we have a common understanding of software rot, I’d like to outline some of the signs that might be indicative of software rot starting to set in. It is important to note that this section is referring to indicators only. That is to say, these signs will tell you have a problem but they won't necessarily tell you the underlying cause of the problem.
 
 ## Fragility ##
 
-Fragility refers to software that tends to break in many places whenever a change is made, often even in areas that are conceptually unrelated to the change being made. As this increases, the software becomes very difficult to maintain because every new change introduces numerous new defects. In the best case, these defects are caught early by an automated testing suite. Worse they are found in production by end-users. This fragility can then lead to a loss of credibility for the software and the team owning it. 
+Fragility refers to software that tends to break in many places whenever a change is made, often even in areas that are conceptually unrelated to the change being made. As this increases, the software becomes very difficult to maintain because every new change introduces numerous new defects. In the best case, these defects are caught early by an automated testing suite. In the worst case they are found in production by end-users. This fragility can then lead to a loss of credibility for the software and the team owning it. 
 
 ## Time to deliver features increases ##
 
-A particularly strong indicator of software rot is when a team starts to see the time to deliver new features to a codebase increase. An ever increasing amount of time needed to add new features to a codebase is a sign of code rigidity. This effectively means code that is difficult to change, more often than not because code is tightly coupled. For example, a new change causes a cascade of subsequent changes in dependent modules with the codebase. This results in teams often being fearful to address non-critical problems because they do not know the full impact of making one change, or how long that change will take. 
+A particularly strong indicator of software rot is when a team starts to see the time taken to deliver value increasing. An ever increasing amount of time needed to add new features is a sign of code rigidity. This effectively means code that is difficult to change, more often than not because code is tightly coupled. For example, a new change causes a cascade of subsequent changes in dependent modules within the codebase. This results in teams often being fearful to address non-critical problems because they do not know the full impact of making one change, or how long that change will take. 
 
 ## Struggling to keep pace with the demands of the business ##
 
-Closely linked to the previous point, when a team starts to struggle to keep pace with the demands of the organisation that is also an indication that the software codebase could be in an unhealthy state. For example, perhaps the domain modelling in the codebase is no longer a good fit and requires a new model to be designed in order to facilitate the needs of the business requirements. When a software team is unable to keep pace with the demands of the organisation there is a serious problem. It means that the organisation is at risk of losing any competitive edge it has in the market as it will take it longer to ship new features to its customers. This leaves the organisation open to be overtaken by competitors who are able to deliver new features to customers much faster and on a continuous basis.
+Closely linked to the previous point, when a team starts to struggle to keep pace with the demands of the organisation that is also an indication that the codebase could be in an unhealthy state. For example, perhaps the domain model in the codebase is no longer a good fit and requires a new design in order to facilitate the needs of the business requirements. When a software team is unable to keep pace with the demands of the organisation there is a serious problem. It means that the organisation is at risk of losing any competitive edge it has in the market as it takes longer to ship new features to its customers.
 
 ## Change Failure Rate ##
 
-It’s all well and good deploying your software to production frequently, but if these deployments result in breaking changes being introduced that impact your customer’s ability to use your product then that’s not good at all. We want to be deploying new changes into production regularly, but not at the cost of quality. Change Failure Rate is a metric that was introduced by the DevOps Research and Assessment team (DORA) and is a measure of how often a deployment to production results in a failure of some kind being introduced. A high or increasing change failure rate suggests that our software is not as healthy as it should be and is likely missing adequate quality gates on the path to production. I wrote about this in a previous article, which you can find here : https://codurance.com/2020/03/12/achieving-stability-and-speed-in-software-delivery.
+It’s all well and good deploying your software to production frequently, but if these deployments result in breaking changes being introduced that impact your customer’s ability to use your product then that’s not good at all. We want to be deploying into production regularly, but not at the cost of quality. Change Failure Rate is a metric that was introduced by the DevOps Research and Assessment team (DORA) and is a measure of how often a deployment to production results in a failure of some kind being introduced. A high or increasing change failure rate suggests that our software is not as healthy as it should be and is likely missing adequate quality gates on the path to production. I wrote about Change Failure Rate in more detail as part of a previous article, which you can find [here] (https://codurance.com/2020/03/12/achieving-stability-and-speed-in-software-delivery).
 
 ## Declining Software Metrics ##
 
-Software metrics are essentially measures of certain quality attributes of a codebase. It’s important to note that I’d advise against looking for absolute numbers across any of these attributes. Instead, it’s far more useful to focus on the trend over time. A decline tells us that our software has become unhealthy in a certain area and we should take action to resolve it, to avoid software rot setting in. 
+Software metrics are essentially measures of certain quality attributes of a codebase. It’s important to note that I’d advise against looking for absolute numbers across any of these attributes. Instead, it’s far more useful to focus on the trend over time. A decline tells us that our software has become less healthy in a certain area and we should take action to resolve it, to avoid software rot setting in. 
 
-There are a number of metrics that can be collected about a software codebase, the following list is therefore not exhaustive but a collection of those I have personally found useful in the teams I have worked with
+There are a number of metrics that can be collected about a software codebase, the following list is therefore not exhaustive but a collection of those I have personally found useful in the teams I have worked with : Cyclomatic Complexity, Coupling and Test Coverage.
+
 
 ### Cyclomatic Complexity ###
 
-Often I hear teams using the number of lines of code (LOC) in a given method/file as a measure of complexity. This alone isn’t a good enough metric. For example, a small software program totalling 50 lines of code doesn’t sound overly complex. But if those 50 lines of code contained 25 lines of consecutive “if-then” code constructs then the code is actually extremely complex indeed! This is where Cyclomatic Complexity comes into play. It is a measure of the number of different paths or branches. Based on graph theory and developed by Thomas J. McCabe, it provides a quantitative measure of the number of linearly independent paths through the source code. 
+Often I hear teams using the number of lines of code (LOC) in a given method/file as a measure of complexity. This alone isn’t a good enough metric. For example, a small software program totalling 50 lines of code doesn’t sound overly complex. But if those 50 lines of code contained 25 lines of consecutive “if-then” code constructs then the code is actually extremely complex indeed! This is where Cyclomatic Complexity is a much better metric. It is a measure of the number of different paths or branches. Based on graph theory and developed by Thomas J. McCabe, it provides a quantitative measure of the number of linearly independent paths through the source code. 
+
 
 ### Coupling ###
 
@@ -72,6 +74,12 @@ Technical Debt is a metaphor that was devised by Ward Cunningham, in 1992. He wr
 “Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise."
 
 Accruing some technical debt might be acceptable if it’s a conscious decision made as part of a trade-off exercise. For example, a team might optimise for short term speed to market and identify that it is possible to deliver a solution quickly for the immediate problem but will require some degree of re-work to support future changes. The team then might take on that technical debt but the important thing is to then tackle it as soon as possible, i.e. payback that debt. Teams that have a mounting level of technical debt is a tell-tale sign that many short term optimisations have been made but the debt taken on by those decisions has not been paid off. This is a dangerous situation to be in. Just like financial debt, interest can accrue on technical debt. Meaning that the effort required to tackle the technical debt in the codebase can increase over time. By not paying back their technical debt, teams run the risk of finding themselves in a position where they are simply unable to deliver new features without spending considerable amounts of time on refactoring the codebase. 
+
+
+### Developer Happiness ###
+
+Developer happiness can also be a good indicator of software rot. Developers spend the majority of their time working within a codebase. If that codebase is difficult to work with then it’s going to affect their morale which can lead to the overall team morale declining too. Paying attention to developer happiness can actually tell you quite a lot about the state of the codebase(s) they work on. A codebase that developers enjoy working with is generally a sign of a healthy codebase. Afterall, no developer really enjoys working with a complex, highly coupled and fragile codebase.  
+
 
 
 As mentioned previously, if you experience any of these issues in your teams then I’d strongly encourage you to take a closer look at your team’s software codebase. Knowing that these problems are good indicators that our software is not in a healthy position is a good starting point. But that still doesn’t help us in understanding the true underlying cause(s). These indicators mentioned can also be thought of across two dimensions: leading indicators and lagging indicators. We ultimately need to dig deeper into the software to address the problem(s).
@@ -123,3 +131,23 @@ A good example of an Information Radiator that I’ve seen many teams adopt is a
 
 This article has attempted to raise awareness of software rot by putting together a definition of what it means, some indicators to watch out for and finally some things to arm yourself with in order to address software rot. If you’re reading this article about to embark on building a new piece of software, you might think that software rot isn’t something you need to consider. I’d caution against that. By embracing the theory of Evolutionary Architecture upfront, your team can be on the front-foot to guard against and minimise software rot setting in. The combination of appropriate coupling and supporting incremental change will ensure your codebase complexity is low. Putting in place automated detection mechanisms such as codebase metrics and automated tests will allow you to quickly spot when your codebase is starting to drift off course and allow you to take appropriate action early to minimise the impact of any software rot.  It is also important to understand that it’s vital to continually nurture and evolve our software codebases. In an ever-changing world, software that stands still will naturally rot as the technology landscape and customer expectations rapidly change. Although authored back in 1974, Lehman’s laws of software evolution, particularly the first two are still very relevant today: “a system must be continually adapted or it becomes progressively less satisfactory”, “as a system evolves, its complexity increases unless work is done to maintain or reduce it”. 
 
+To recap, here is a breakdown of the indicators of software rot to watch out for and some of the ways to address them:
+
+Indicators of Software Rot:
+
+- Fragility
+- Time to deliver features increases
+- Struggling to keep pace with the demands of the Organisation
+- High Change Failure Rate
+- Declining Software Metrics
+- Mounting Technical Debt
+- Developer Morale
+
+Ways to Address Software Rot:
+
+- Value Testability
+- Strive for Simplicity
+- Support Incremental Change
+- Refactor, Small and Often
+- Establish Common Coding Guidelines
+- Information Radiators
