@@ -1,3 +1,13 @@
+@mixin habib {
+  font-size: 70px;
+  line-height: 88px;
+}
+
+@mixin gaudi {
+  font-size: 55px;
+  line-height: 69px;
+}
+
 @mixin gaudi {
   font-size: 55px;
   line-height: 69px;
@@ -45,6 +55,11 @@
   font-weight: 400;
 }
 
+@mixin habib-bold {
+  @include bold;
+  @include habib;
+}
+
 @mixin gaudi-bold {
   @include bold;
   @include gaudi;
@@ -57,6 +72,11 @@
 
 @mixin dudler-reg {
   @include reg;
+  @include dudler;
+}
+
+@mixin dudler-bold {
+  @include bold;
   @include dudler;
 }
 
