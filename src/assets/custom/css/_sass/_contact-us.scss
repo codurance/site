@@ -1,5 +1,4 @@
 .offices {
-  @include lateral-spacing;
   background: $sheen;
   padding-top: 50px;
 
@@ -12,6 +11,7 @@
 }
 
 .offices__inner {
+  @include lateral-spacing;
   @include max-width--out-there;
   align-items: flex-start;
   display: flex;
