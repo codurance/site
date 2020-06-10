@@ -1,0 +1,7 @@
+.services__curated-publications {
+  @include small {
+    .page-location-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
+}
