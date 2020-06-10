@@ -13,11 +13,11 @@
     float: left;
     height: 300px;
 
-    .in-page-banner--50-50 & {
+    .in-page-banner--even & {
       width: 50%;
     }
 
-    .in-page-banner--30-70 & {
+    .in-page-banner--right-heavy & {
       width: 30%;
     }
   }
@@ -35,11 +35,11 @@
   @include medium-large-and-extra-large {
     float: left;
 
-    .in-page-banner--50-50 & {
+    .in-page-banner--even & {
       width: 50%;
     }
 
-    .in-page-banner--30-70 & {
+    .in-page-banner--right-heavy & {
       width: 70%;
     }
   }
