@@ -11,7 +11,7 @@
   <div class="in_page_banner__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }}); background-position: {{ include.background_position | default: 'center'  }};"></div>
   <div class="in_page_banner__main">
     <div class="in_page_banner__inner">
-      {% if include.title %}
+      {% if include.title and include.title != '' %}
         <h3 class="in_page_banner__title">{{ include.title }}</h3>
       {% endif %}
       <p class="in_page_banner__description">{{ include.description }}</p>
