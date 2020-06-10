@@ -200,7 +200,7 @@ services:
   page-intro:
     title: Services & Solutions
     sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
-    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
+    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible.
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
@@ -806,6 +806,9 @@ software-modernisation:
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
   cheat-sheet-cta-banner-link: Download Questionnaire
+
+  business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
+  business-case-presentation-banner-cta-text: Download template
 
   webinar:
     teaser:

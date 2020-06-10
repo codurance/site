@@ -816,6 +816,9 @@ software-modernisation:
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
   cheat-sheet-cta-banner-link: Download Questionnaire
 
+  business-case-presentation-banner-text: Este documento te resultará muy útil si necesitas presentar una iniciativa de Software Modernisation. Podrás personalizarla con la imagen de marca de tu organización.
+  business-case-presentation-banner-cta-text: Descargar plantilla
+
   webinar:
     teaser:
       title: Software Modernisation en tiempos de trabajo distribuído
