@@ -209,16 +209,18 @@ sitemap: false
 
 {% assign featured_posts =  site.posts | where: 'pinned_locations', "testytest" %}
 {% if featured_posts.size == 1 %}
-  {% assign class = "soft-mod__sheen-container--one-publication" %}
+  {% assign sheen_container_class = "soft-mod__sheen-container--one-publication" %}
+  {% assign curated_publications_class = "services__curated-publications--one-publication" %}
 {% else %}
-  {% assign class = "soft-mod__sheen-container" %}
+  {% assign sheen_container_class = "soft-mod__sheen-container" %}
+  {% assign curated_publications_class = "services__curated-publications" %}
 {% endif %}
 
-<div class={{class}}>
+<div class={{sheen_container_class}}>
   {% include compass_teaser.html %}
 
   {% if featured_posts.size != 0 %}
-    {% include services_curated_publications.html service-line="softmod" tag="software modernisation" pinned_location="testytest" %}
+    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location="testytest" %}
   {% endif %}
 </div>
 

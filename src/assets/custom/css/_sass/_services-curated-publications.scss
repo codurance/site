@@ -5,3 +5,12 @@
     }
   }
 }
+
+.services__curated-publications--one-publication {
+   margin-top: -150px;
+   @include small {
+    .page-location-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
+}
