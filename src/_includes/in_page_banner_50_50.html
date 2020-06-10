@@ -1,9 +1,18 @@
-<div class="in-page-banner {{ include.class }}">
+{%- capture classModifier -%}
+  {%- if include.split and include.split == "50-50" -%}
+    in-page-banner--50-50
+  {%- elsif include.split and include.split == "30-70" -%}
+    in-page-banner--30-70
+  {%- endif -%}
+
+{%- endcapture -%}
+
+<div class="in-page-banner {{ classModifier | default: "in-page-banner--50-50" }} {{ include.class }}">
   <div class="in_page_banner__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }}); background-position: {{ include.background_position | default: 'center'  }};"></div>
   <div class="in_page_banner__main">
     <div class="in_page_banner__inner">
       {% if include.title %}
-        <h3 class="in_page_banner__title">{{ include.title }}</h3>        
+        <h3 class="in_page_banner__title">{{ include.title }}</h3>
       {% endif %}
       <p class="in_page_banner__description">{{ include.description }}</p>
       {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %}

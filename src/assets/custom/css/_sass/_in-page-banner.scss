@@ -12,7 +12,14 @@
     background-size: cover;
     float: left;
     height: 300px;
-    width: 50%;
+
+    .in-page-banner--50-50 & {
+      width: 50%;
+    }
+
+    .in-page-banner--30-70 & {
+      width: 30%;
+    }
   }
 }
 
@@ -27,7 +34,14 @@
 
   @include medium-large-and-extra-large {
     float: left;
-    width: 50%;
+
+    .in-page-banner--50-50 & {
+      width: 50%;
+    }
+
+    .in-page-banner--30-70 & {
+      width: 70%;
+    }
   }
 }
 
