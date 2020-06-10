@@ -207,9 +207,16 @@ sitemap: false
   </div>
 </section>
 
-<div class=soft-mod__sheen-container>
+{% assign featured_posts =  site.posts | where: 'pinned_locations', "testytest" %}
+{% if featured_posts.size == 1 %}
+  {% assign class = "soft-mod__sheen-container--one-publication" %}
+{% else %}
+  {% assign class = "soft-mod__sheen-container" %}
+{% endif %}
+
+<div class={{class}}>
   {% include compass_teaser.html %}
-  {% assign featured_posts =  site.posts | where: 'pinned_locations', "testytest" %}
+
   {% if featured_posts.size != 0 %}
     {% include services_curated_publications.html service-line="softmod" tag="software modernisation" pinned_location="testytest" %}
   {% endif %}
