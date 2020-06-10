@@ -210,7 +210,7 @@ sitemap: false
 <div class=soft-mod__sheen-container>
   {% include compass_teaser.html %}
   {% assign featured_posts =  site.posts | where: 'pinned_locations', "testytest" %}
-  {% if featured_posts != 0 %}
+  {% if featured_posts.size != 0 %}
     {% include services_curated_publications.html service-line="softmod" tag="software modernisation" pinned_location="testytest" %}
   {% endif %}
 </div>
