@@ -827,6 +827,9 @@ curated-publications:
   softmod:
     intro-title: Software Modernisation publications
     intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+  devops:
+    intro-title: Devops
+    intro-description: Devops bla bla bla
 
 service-line-template:
   hero-title: Lorum Ipsum
