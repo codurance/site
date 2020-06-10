@@ -17,6 +17,7 @@
     {% include hero_teaser.html class="curated-publications__hero" content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
   {% endfor %}
 
+  {% if posts.size > 1 %}
   <div class="curated-publications__cards cards-layout">
     <div class="cards-layout__inner">
       {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
@@ -46,11 +47,12 @@
     </div>
   </div>
 
-  <footer class="curated-publications__cta-space">
+  <div class="curated-publications__cta-space">
     {% capture href %}
       {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }}
     {% endcapture %}
     {% assign text = site.translations[site.lang].publications.view-all %}
     {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
-  </footer>
+  </div>
+  {% endif %}
 </section>
