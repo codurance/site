@@ -4,6 +4,6 @@
   {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.publications} -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
-  {% include curated_publications.html tag="software modernisation" pinned_location="soft-mod" title=translations.intro-title description=translations.intro-description  %}
+  {% include curated_publications.html tag=include.tag pinned_location=include.pinned_location title=translations.intro-title description=translations.intro-description  %}
 </div>
 
