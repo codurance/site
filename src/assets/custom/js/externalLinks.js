@@ -4,17 +4,26 @@ var openExternalLinksInNewTab = function () {
     return link.href.indexOf(origin) === 0;
   }
 
-  function hasExistingTarget(link) {
-    return !!link.target;
+  function hasNoTarget(link) {
+    return !link.target;
+  }
+
+  function hasNoRel(link) {
+    return !link.rel;
   }
 
   var links = window.document.querySelectorAll("a");
 
   Array.prototype.forEach.call(links, function (link) {
-    if (isInternal(link) || hasExistingTarget(link)) {
+    if (isInternal(link)) {
       return;
     }
-    link.target = "_blank";
+    if (hasNoTarget(link)) {
+      link.target = "_blank";
+    }
+    if (hasNoRel(link) && link.target === "_blank") {
+      link.rel = "noopener noreferrer";
+    }
   });
 };
 
