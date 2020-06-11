@@ -13,9 +13,5 @@
 
   @include small {
     display: none;
-
-    .page-location-anchor {
-      top: calc(0px - #{$site-navbar-height-base});
-    }
   }
 }
