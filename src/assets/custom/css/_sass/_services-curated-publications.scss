@@ -7,7 +7,9 @@
 }
 
 .services__curated-publications--one-publication {
-  margin-top: -150px;
+  .compass-teaser + & {
+    margin-top: -150px;
+  }
 
   @include small {
     display: none;
