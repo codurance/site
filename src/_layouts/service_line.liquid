@@ -19,7 +19,10 @@ layout: default
 
 <div class={{sheen_container_class}}>
   {% include compass_teaser.html %}
-  {% include soft_mod_webinar_hero_teaser.html %}
+
+  {%- if translations.webinar -%}
+    {% include soft_mod_webinar_hero_teaser.html %}
+  {%- endif -%}
 
   {% if featured_posts.size != 0 %}
     {% include curated_publications.html
