@@ -41,11 +41,8 @@
   }
 }
 
-.soft-mod__sheen-container--one-publication{
-  background: $sheen;
-
+.soft-mod__sheen-container--one-publication {
   @include medium-large-and-extra-large {
-    padding-top: $vertical-overlap;
     padding-bottom: 120px;
   }
 }
