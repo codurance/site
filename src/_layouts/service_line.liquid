@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+{{ content }}
+
+{% assign featured_posts =  site.posts | where: 'pinned_locations', page.curated_publications.location %}
+{% if featured_posts.size == 1 %}
+  {% assign sheen_container_class = "soft-mod__sheen-container--one-publication" %}
+  {% assign curated_publications_class = "services__curated-publications--one-publication" %}
+{% else %}
+  {% assign sheen_container_class = "soft-mod__sheen-container" %}
+  {% assign curated_publications_class = "services__curated-publications" %}
+{% endif %}
+
+<div class={{sheen_container_class}}>
+  {% include compass_teaser.html %}
+  {% include soft_mod_webinar_hero_teaser.html %}
+
+  {% if featured_posts.size != 0 %}
+    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location=page.curated_publications.location %}
+  {% endif %}
+</div>
+
+{% include services_contact_form.liquid %}
+
+<script>
+  var image = document.getElementsByClassName('img-parallax');
+  new simpleParallax(image, {
+    scale: 1.15,
+    orientation: 'up',
+  });
+</script>
