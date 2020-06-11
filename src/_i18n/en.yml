@@ -835,12 +835,6 @@ service-line-template:
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
-
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+  curated-publications:
+    intro-title: Example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
