@@ -200,7 +200,7 @@ services:
   page-intro:
     title: Services & Solutions
     sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
-    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
+    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible.
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
@@ -814,6 +814,10 @@ software-modernisation:
       cta: Watch Webinar
       cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
 
+  curated-publications:
+    intro-title: Software Modernisation publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
   page-sections:
     how-we-solve-your-problems: how-we-solve-your-problems
     how-we-help-our-clients: how-we-help-our-clients
@@ -822,11 +826,6 @@ software-modernisation:
     webinar: webinar
     publications: publications
     get-in-touch: get-in-touch
-
-curated-publications:
-  softmod:
-    intro-title: Software Modernisation publications
-    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
 
 service-line-template:
   hero-title: Lorum Ipsum
