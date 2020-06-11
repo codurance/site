@@ -1,58 +1,64 @@
-<section id="{{ include.id }}" class="curated-publications {{include.class}}">
-  {% include section_intro.html class="curated-publications__intro" description=include.description title=include.title %}
+{%- assign translations = site.translations[site.lang] -%}
 
-  {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
-  {% for post in posts limit: 1 %}
-    {% if site.lang == "es" %}
-      {% assign title = post.title-es %}
-      {% assign description = post.description-es %}
-    {% else %}
-      {% assign title = post.title %}
-      {% assign description = post.description %}
-    {% endif %}
-    {% assign content_type = site.translations[site.lang]publications.content-type %}
-    {% assign cta = site.translations[site.lang]publications.teaser-cta %}
-    {% assign cta-href = post.url | prepend: site.baseurl %}
-    {% assign image_src = post.image.src | prepend: site.baseurl %}
-    {% include hero_teaser.html class="curated-publications__hero" content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
-  {% endfor %}
+<div class={{include.class}}>
+  {% include page_location_anchor.html anchor_id=include.anchor_id %}
 
-  {% if posts.size > 1 %}
-    <div class="curated-publications__cards cards-layout">
-      <div class="cards-layout__inner">
-        {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
-        {% for post in posts limit: 5 %}
-          {% if site.lang == "es" %}
-            {% assign article_title = post.title-es %}
-            {% assign article_description = post.description-es %}
-          {% else %}
-            {% assign article_title = post.title %}
-            {% assign article_description = post.description %}
-          {% endif %}
-          <article class="cards-layout__card card">
-            <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
-              <span class="card__image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
-            </a>
-            <div class="card__main">
-              <h3 class="card__title">{{ article_title }}</h3>
-              <div class="card__description-fade-out">
-                <p class="card__description">{{ article_description }}</p>
+  <section id="{{ include.id }}" class="curated-publications">
+    {% include section_intro.html class="curated-publications__intro" description=include.description title=include.title %}
+
+    {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
+    {% for post in posts limit: 1 %}
+      {% if site.lang == "es" %}
+        {% assign title = post.title-es %}
+        {% assign description = post.description-es %}
+      {% else %}
+        {% assign title = post.title %}
+        {% assign description = post.description %}
+      {% endif %}
+      {% assign content_type = translations.publications.content-type %}
+      {% assign cta = translations.publications.teaser-cta %}
+      {% assign cta-href = post.url | prepend: site.baseurl %}
+      {% assign image_src = post.image.src | prepend: site.baseurl %}
+      {% include hero_teaser.html class="curated-publications__hero" content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
+    {% endfor %}
+
+    {% if posts.size > 1 %}
+      <div class="curated-publications__cards cards-layout">
+        <div class="cards-layout__inner">
+          {% assign posts = site.posts | where: 'pinned_locations', include.pinned_location %}
+          {% for post in posts limit: 5 %}
+            {% if site.lang == "es" %}
+              {% assign article_title = post.title-es %}
+              {% assign article_description = post.description-es %}
+            {% else %}
+              {% assign article_title = post.title %}
+              {% assign article_description = post.description %}
+            {% endif %}
+            <article class="cards-layout__card card">
+              <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
+                <span class="card__image" style="background-image: url({{post.image.src | prepend: site.baseurl}})"></span>
+              </a>
+              <div class="card__main">
+                <h3 class="card__title">{{ article_title }}</h3>
+                <div class="card__description-fade-out">
+                  <p class="card__description">{{ article_description }}</p>
+                </div>
               </div>
-            </div>
-            <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
-              {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
-            </a>
-          </article>
-        {% endfor %}
+              <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
+                {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
+              </a>
+            </article>
+          {% endfor %}
+        </div>
       </div>
-    </div>
 
-    <div class="curated-publications__cta-space">
-      {% capture href %}
-        {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }}
-      {% endcapture %}
-      {% assign text = site.translations[site.lang].publications.view-all %}
-      {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
-    </div>
-  {% endif %}
-</section>
+      <div class="curated-publications__cta-space">
+        {% capture href %}
+          {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }}
+        {% endcapture %}
+        {% assign text = site.translations[site.lang].publications.view-all %}
+        {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
+      </div>
+    {% endif %}
+  </section>
+</div>

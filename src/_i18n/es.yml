@@ -823,6 +823,10 @@ software-modernisation:
       cta: Ver webinar
       cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
 
+  curated-publications:
+    intro-title: Sobre Software Modernisation
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
+
   page-sections:
     how-we-solve-your-problems: como-podemos-ayudarte
     how-we-help-our-clients: como-adyudamos-nuestros-clientes
@@ -832,11 +836,6 @@ software-modernisation:
     publications: publicaciones
     get-in-touch: contacto
 
-curated-publications:
-  softmod:
-    intro-title: Sobre Software Modernisation
-    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
-
 service-line-template:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
@@ -845,12 +844,6 @@ service-line-template:
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
-
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+  curated-publications:
+    intro-title: ES example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

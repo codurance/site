@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+{% assign translations = site.translations[site.lang].[page.service-line] %}
+
 <script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
 {{ content }}
@@ -16,10 +19,20 @@ layout: default
 
 <div class={{sheen_container_class}}>
   {% include compass_teaser.html %}
-  {% include soft_mod_webinar_hero_teaser.html %}
+
+  {%- if translations.webinar -%}
+    {% include soft_mod_webinar_hero_teaser.html %}
+  {%- endif -%}
 
   {% if featured_posts.size != 0 %}
-    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location=page.curated_publications.location %}
+    {% include curated_publications.html
+      anchor_id=translations.page-sections.publications
+      class=curated_publications_class
+      pinned_location=page.curated_publications.location
+      tag=page.curated_publications.tag
+      title=translations.curated-publications.intro-title
+      description=translations.curated-publications.intro-description
+    %}
   {% endif %}
 </div>
 
