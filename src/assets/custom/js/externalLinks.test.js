@@ -63,7 +63,7 @@ describe("External Links", () => {
     expect($("#linkWithExistingTarget").target).toBe("_parent");
   });
 
-  it(`links that have a target but no rel are given the "noopener" rel`, () => {
+  it(`links that open in new tabs are given the "noopener" rel`, () => {
     expect($("#linkWithNoRel").rel).toBe("noopener noreferrer");
   });
 });
