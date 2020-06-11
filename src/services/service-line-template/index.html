@@ -207,7 +207,7 @@ sitemap: false
   </div>
 </section>
 
-{% assign featured_posts =  site.posts | where: 'pinned_locations', "testytest" %}
+{% assign featured_posts =  site.posts | where: 'pinned_locations', "service-line-example-page" %}
 {% if featured_posts.size == 1 %}
   {% assign sheen_container_class = "soft-mod__sheen-container--one-publication" %}
   {% assign curated_publications_class = "services__curated-publications--one-publication" %}
@@ -220,7 +220,7 @@ sitemap: false
   {% include compass_teaser.html %}
 
   {% if featured_posts.size != 0 %}
-    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location="testytest" %}
+    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location="service-line-example-page" %}
   {% endif %}
 </div>
 
