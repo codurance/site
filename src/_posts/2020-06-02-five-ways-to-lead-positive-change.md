@@ -14,6 +14,7 @@ image:
 tags:
   - software modernisation
 pinned_locations:
+  - service-line-example-page
   - soft-mod
 ---
 

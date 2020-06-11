@@ -41,6 +41,15 @@
   }
 }
 
+.soft-mod__sheen-container--one-publication{
+  background: $sheen;
+
+  @include medium-large-and-extra-large {
+    padding-top: $vertical-overlap;
+    padding-bottom: 120px;
+  }
+}
+
 .soft-mod__webinar-teaser {
   @include small {
     .page-location-anchor {
@@ -50,14 +59,6 @@
   @include medium-large-and-extra-large {
     margin-bottom: 50px;
     margin-top: -$vertical-overlap;
-  }
-}
-
-.soft-mod__curated-publications {
-  @include small {
-    .page-location-anchor {
-      top: calc(0px - #{$site-navbar-height-base});
-    }
   }
 }
 
