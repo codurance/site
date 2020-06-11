@@ -8,6 +8,9 @@ image:
    src: /assets/custom/img/placeholders/meta-social-image.png
 metarobots: noindex,nofollow
 sitemap: false
+
+curated_publications:
+  location: 'service-line-example-page'
 ---
 
 <section class="service-line-hero">
@@ -34,7 +37,6 @@ sitemap: false
     </div>
   </div>
 </section>
-
 
 <section class="soft-mod-problems">
   {%- assign anchor_id = "how-we-solve-your-problems" -%}
@@ -204,20 +206,3 @@ sitemap: false
     </div>
   </div>
 </section>
-
-{% assign featured_posts =  site.posts | where: 'pinned_locations', "service-line-example-page" %}
-{% if featured_posts.size == 1 %}
-  {% assign sheen_container_class = "soft-mod__sheen-container--one-publication" %}
-  {% assign curated_publications_class = "services__curated-publications--one-publication" %}
-{% else %}
-  {% assign sheen_container_class = "soft-mod__sheen-container" %}
-  {% assign curated_publications_class = "services__curated-publications" %}
-{% endif %}
-
-<div class={{sheen_container_class}}>
-  {% include compass_teaser.html %}
-
-  {% if featured_posts.size != 0 %}
-    {% include services_curated_publications.html class=curated_publications_class service-line="softmod" tag="software modernisation" pinned_location="service-line-example-page" %}
-  {% endif %}
-</div>
