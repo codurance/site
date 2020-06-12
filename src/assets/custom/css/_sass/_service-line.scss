@@ -1,4 +1,4 @@
-.soft-mod__testimonials {
+.service-line__testimonials {
   background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
   background-repeat: no-repeat;
   overflow: hidden;
@@ -23,7 +23,7 @@
   }
 }
 
-.soft-mod__testimonials-intro {
+.service-line__testimonials-intro {
   @include small {
     padding-bottom: 50px;
     padding-top: 20px;
@@ -33,7 +33,7 @@
   }
 }
 
-.soft-mod__sheen-container {
+.service-line__sheen-container {
   background: $sheen;
 
   @include medium-large-and-extra-large {
@@ -41,16 +41,13 @@
   }
 }
 
-.soft-mod__sheen-container--one-publication{
-  background: $sheen;
-
+.service-line__sheen-container--one-publication {
   @include medium-large-and-extra-large {
-    padding-top: $vertical-overlap;
     padding-bottom: 120px;
   }
 }
 
-.soft-mod__webinar-teaser {
+.service-line__webinar-teaser {
   @include small {
     .page-location-anchor {
       top: calc(0px - #{$site-navbar-height-base});
@@ -62,7 +59,7 @@
   }
 }
 
-.soft-mod__our-clients {
+.service-line__our-clients {
   background-color: $slate;
 
   @include small {
@@ -73,4 +70,55 @@
     padding-bottom: 50px;
     padding-top: 100px;
   }
+}
+
+.service-line-problems {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: $sheen;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  @include medium-and-large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include extra-large {
+    padding-top: 100px;
+
+    &:before {
+      right: 100px;
+    }
+    &:after {
+      content: "";
+      background-color: $slate;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      bottom: 0;
+      height: 450px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+.service-line-problems__intro {
+  position: relative;
+  z-index: 10;
 }

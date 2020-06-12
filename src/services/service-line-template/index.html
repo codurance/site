@@ -40,7 +40,7 @@ service-line: service-line-template
   </div>
 </section>
 
-<section class="soft-mod-problems">
+<section class="service-line-problems">
   {%- assign anchor_id = "how-we-solve-your-problems" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
@@ -48,7 +48,7 @@ service-line: service-line-template
   {% capture description %}{% t service-line-template.problems-introduction %}{% endcapture %}
   {% assign cta_href = "#get-in-touch" %}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
@@ -104,7 +104,7 @@ service-line: service-line-template
   </div>
 </section>
 
-<section class="soft-mod__our-clients">
+<section class="service-line__our-clients">
   {%- assign anchor_id = "how-we-help-our-clients" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
@@ -176,13 +176,13 @@ service-line: service-line-template
   </div>
 </section>
 
-<section class="soft-mod__testimonials">
+<section class="service-line__testimonials">
   {%- assign anchor_id = "testimonials" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
-  {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
+  {% include section_intro.html class="service-line__testimonials-intro" description=description title=title %}
 
   <div class="container-slim center">
     <div class="flexslider">
