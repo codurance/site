@@ -1,11 +1,20 @@
 .training-teaser {
-  @include max-width--out-there;
-  align-items: center;
   background-color: #f5f6fa;
   background-image: url("#{$site-base-url}/assets/custom/img/services/training-background.jpg");
   background-position: center;
   background-size: cover;
+
+  @include extra-large {
+    @include max-width;
+    max-width: calc(100% - (2 * #{$lateral-space--large}));
+  }
+}
+
+.training-teaser__inner {
+  @include max-width--out-there;
+  align-items: center;
   display: flex;
+  justify-content: space-between;
 
   @include small {
     flex-direction: column-reverse;
@@ -17,10 +26,6 @@
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
-  }
-  @include extra-large {
-    @include max-width;
-    max-width: calc(100% - (2 * #{$lateral-space--large}));
   }
 }
 
@@ -34,23 +39,17 @@
   @include medium-large-and-extra-large {
     padding-left: 10px;
     padding-right: 30px;
-    width: 50%;
-  }
-  @include large-and-extra-large {
-    padding-left: $lateral-space--large;
-    padding-right: $lateral-space--large;
   }
 }
 
 .training-teaser__image-area {
   @include small {
     margin-bottom: 50px;
+    width: 100%;
   }
   @include medium-large-and-extra-large {
-    width: 50%;
-  }
-  @include medium {
-    margin-left: 30px;
+    flex-shrink: 0;
+    width: 43%;
   }
 }
 
@@ -68,5 +67,11 @@
   background-color: #d4eaff;
   background-position: center;
   background-size: cover;
-  padding-top: 600 / 524 * 100%;
+
+  @include small {
+    padding-top: 5 / 9 * 100%;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 600 / 524 * 100%;
+  }
 }
