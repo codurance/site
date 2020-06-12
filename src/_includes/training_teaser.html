@@ -1,8 +1,10 @@
 <section class="training-teaser {{ include.class}}">
-    <div class="training-teaser__content">
-        <h2 class="training-teaser__title">{% t services.training.title %}</h2>
-        <p class="training-teaser__description">{% t services.training.description %}</p>
-        {% comment %} {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %} {% endcomment %}
-    </div>
+  <div class="training-teaser__text-area">
+    <h2 class="training-teaser__title">{% t services.training.title %}</h2>
+    <p class="training-teaser__description">{% t services.training.description %}</p>
+    {% comment %} {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %} {% endcomment %}
+  </div>
+  <div class="training-teaser__image-area">
     <div class="training-teaser__image" style="background-image: url({{ '/assets/custom/img/services/training-lighter.jpg' | prepend: site.baseurl }})"></div>
+  </div>
 </section>
