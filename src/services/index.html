@@ -13,8 +13,7 @@ title: Services
     <section class="services-page__training-teaser">
       {%- assign title = site.translations[site.lang].services.training.title -%}
       {%- assign description = site.translations[site.lang].services.training.description -%}
-      {%- assign image = site.translations[site.lang].services.training.image -%}
-      {% include training_teaser.html title=title description=description image=image %}
+      {% include training_teaser.html title=title description=description %}
     </section>
 
   {% elsif site.data.toggles.service-line-updates == "off" %}

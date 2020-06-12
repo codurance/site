@@ -268,7 +268,6 @@ services:
   training:
     title: Formación
     description: Cursos de capacitación oriuentados a optimizar tus equipos
-    image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Ver mas
 services-training_coaching:
