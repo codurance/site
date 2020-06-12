@@ -3,7 +3,7 @@
   background-size: cover;
 }
 
-.service-line-hero__grid {
+.service-line-hero__inner {
   display: block;
 }
 
@@ -65,7 +65,7 @@
     padding-left: 0px;
   }
 
-  .service-line-hero__grid {
+  .service-line-hero__inner {
     display: grid;
     grid-gap: 140px;
     grid-template-columns: repeat(2, 1fr);
