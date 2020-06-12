@@ -25,12 +25,12 @@
   color: #ffffff !important;
 }
 
-.service-line-hero__grid-item--intro-image {
+.service-line-hero__image {
   display: none;
   overflow: hidden;
 }
 
-.service-line-hero__grid-item--intro-image img {
+.service-line-hero__image img {
   width: 110%;
   height: auto;
   bottom: 0;
@@ -81,7 +81,7 @@
     color: #555555 !important;
   }
 
-  .service-line-hero__grid-item--intro-image {
+  .service-line-hero__image {
     background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
     background-size: cover;
     display: flex;
