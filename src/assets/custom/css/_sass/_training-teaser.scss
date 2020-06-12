@@ -1,6 +1,11 @@
 .training-teaser {
   @include max-width--out-there;
+
   align-items: center;
+  background-color: #f5f6fa;
+  background-image: url("#{$site-base-url}/assets/custom/img/services/training-background.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
 
   @include small {
@@ -10,10 +15,13 @@
     padding-left: $lateral-space--medium;
     padding-right: $lateral-space--medium;
   }
-
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
+  }
+  @include extra-large {
+    @include max-width;
+    max-width: calc(100% - (2 * #{$lateral-space--large}));
   }
 }
 
