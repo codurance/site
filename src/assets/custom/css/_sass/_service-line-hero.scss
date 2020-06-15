@@ -46,7 +46,7 @@
   color: #ffffff !important;
 }
 
-.service-line-hero__image {
+.service-line-hero__image-container {
   @include small-and-medium {
     display: none;
     overflow: hidden;
@@ -63,7 +63,7 @@
   }
 }
 
-.service-line-hero__image img {
+.service-line-hero__image {
   width: 110%;
   height: auto;
   bottom: 0;
