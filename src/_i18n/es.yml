@@ -448,7 +448,7 @@ careers:
     mentor_title: Mentor
     mentor_description: Podrás escoger un mentor/a que te guíe en tu proceso de aprendizaje.
   become_a_craftsperson_in_training:
-    title: Academy en Codurance
+    title: El Academy Program en Codurance
     apply_title: Inscríbete
     description: Los/as craftspeople-in-training comparten nuestra pasión por crear software bien diseñado, pero aún no han tenido las oportunidades de aprendizaje adecuadas para refinar su oficio.
     how_works_title: ¿Cómo trabajamos?
@@ -464,7 +464,7 @@ careers:
       box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
     skills:
       title: ¿Qué skills y experiencia necesitas?
-      description: Nuestros craftspeople-in-training se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque, una serie de habilidades básicas que necesitas tener.
+      description: Nuestros craftspeople-in-training se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque hay una serie de habilidades básicas que necesitas tener.
       box1_title: Conocimientos y skills requeridos.
       box1_description: <li>Familirizado con C#, Java or Node.js tech stacks.</li>
         <li>Actitud demostrable para el autoaprendizaje y estar alineado con la importancia y la necesidad de calidad y buenas prácticas en el desarrollo de software.</li>
@@ -475,7 +475,7 @@ careers:
         <li>Se capaz de hacer test drive code utilizando tanto el método clásico como la escuela de Londres (incluidos testing y refactoring legacy code).</li>
         <li>Sentirse cómodo con full stack web applications y macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
         <li>Sentirse cómodo con OO design (SOLID, 4 reglas del simple design, coupling/cohesion), DDD y design patterns.</li>
-    apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester or Barcelona?
+    apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester o Barcelona?
     testimonials:
       title: Testimonios de algunos de nuestros craftspeople-in-training
       description: Cuando acaba el programa de academy, se obtiene el reconocimiento de haber alcanzado el nivel de Software Craftsperson y en ese momento se empieza a trabajar en proyectos para clientes.
