@@ -5,7 +5,12 @@
   .service-line-hero & {
     position: absolute;
 
-    @include _DEPRECIATED_large {
+    @include medium {
+      left: 0;
+      fill: #555555;
+      top: -71px;
+    }
+    @include large-and-extra-large {
       left: -67px;
       fill: #555555;
       top: -14px;

@@ -7,7 +7,7 @@ layout: default
 <script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
 <section class="service-line-hero">
-  <div class="container service-line-hero__inner">
+  {%- comment -%} <div class="container service-line-hero__inner"> {%- endcomment -%}
     <div class="service-line-hero__grid-item service-line-hero__grid-item--intro">
       <div>
         <h1 class="text-900 position-relative">
@@ -28,7 +28,7 @@ layout: default
     <div class="service-line-hero__image">
       <img class="img-parallax" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
     </div>
-  </div>
+  {%- comment -%} </div> {%- endcomment -%}
 </section>
 
 {{ content }}

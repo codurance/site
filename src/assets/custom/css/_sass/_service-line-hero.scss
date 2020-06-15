@@ -1,24 +1,45 @@
 .service-line-hero {
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-dark.jpg");
-  background-size: cover;
+  @include max-width--out-there;
+
+  @include small-and-medium {
+    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-dark.jpg");
+    background-size: cover;
+  }
+  @include medium-large-and-extra-large {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.service-line-hero__inner {
-  display: block;
-}
+// .service-line-hero__inner {
+//   @include max-width--out-there;
+//   display: block;
+
+//   @include large-and-extra-large {
+//     min-height: 600px;
+//   }
+// }
 
 .service-line-hero__grid-item--intro {
-  align-items: center;
-  display: flex;
-  z-index: 2;
-  position: relative;
+  @include medium {
+    padding-left: 50px;
+    padding-top: 72px;
+  }
+  @include medium-large-and-extra-large {
+    width: 50%;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .service-line-hero__grid-item--intro div {
-  margin: auto;
-  color: #ffffff !important;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  // margin: auto;
+  // color: #ffffff !important;
+  // // padding-top: 50px;
+  // // padding-bottom: 50px;
 }
 
 .service-line-hero__grid-item--intro div p {
@@ -26,8 +47,26 @@
 }
 
 .service-line-hero__image {
-  display: none;
-  overflow: hidden;
+  @include small-and-medium {
+    display: none;
+    overflow: hidden;
+  }
+  @include large-and-extra-large {
+    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 750px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+  }
 }
 
 .service-line-hero__image img {
@@ -65,12 +104,12 @@
     padding-left: 0px;
   }
 
-  .service-line-hero__inner {
-    display: grid;
-    grid-gap: 140px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600px;
-  }
+  // .service-line-hero__inner {
+  //   display: grid;
+  //   grid-gap: 140px;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-template-rows: 600px;
+  // }
 
   .service-line-hero__grid-item--intro {
     padding-left: 65px;
@@ -81,22 +120,7 @@
     color: #555555 !important;
   }
 
-  .service-line-hero__image {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 50%;
-    left: 50%;
-    height: 750px;
-    top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-  }
+
 }
 
 @media (max-width: 587px) {
