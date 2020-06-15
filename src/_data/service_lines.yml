@@ -36,3 +36,6 @@ strategic-advice:
   en-description: Get the advice you need to create a roadmap for success
   es-description: Construye un roadmap para conseguir tus objetivos
   image-src: /assets/custom/img/services/serviceline-strategic-advice.jpg
+
+service-line-example:
+  icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><circle cx="82" cy="82" r="80"/></svg>

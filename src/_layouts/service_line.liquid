@@ -11,7 +11,7 @@ layout: default
     <div class="service-line-hero__grid-item service-line-hero__grid-item--intro">
       <div>
         <h1 class="text-900 position-relative">
-          {{ page.intro.icon }}
+          {{ site.data.service_lines[page.intro.icon_key].icon }}
           {% t software-modernisation.hero-title %}
         </h1>
         <p class="h4 text-700">
