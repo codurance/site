@@ -7,7 +7,6 @@ layout: default
 <script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
 <section class="service-line-hero">
-  {%- comment -%} <div class="container service-line-hero__inner"> {%- endcomment -%}
     <div class="service-line-hero__content-container">
       <h1 class="text-900 position-relative">
         {{ site.data.service_lines[page.service-line].icon }}
@@ -26,7 +25,6 @@ layout: default
     <div class="service-line-hero__image-container">
       <img class="service-line-hero__image" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
     </div>
-  {%- comment -%} </div> {%- endcomment -%}
 </section>
 
 {{ content }}
@@ -34,12 +32,3 @@ layout: default
 {%- include service_line_media_section.liquid -%}
 
 {% include services_contact_form.liquid %}
-
-{%- comment -%} <script>
-  var image = document.getElementsByClassName('img-parallax');
-  new simpleParallax(image, {
-    scale: 1.1,
-    orientation: 'up',
-    customWrapper: '.service-line-hero__image-container',
-  });
-</script> {%- endcomment -%}
