@@ -39,10 +39,8 @@
 
 {% if page.image.src %}
     {% assign og_image =  page.image.src | prepend: site.url %}
-    {% assign twitter_image = page.image.src | prepend: site.url %}
 {% else %}
     {% assign og_image = '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url %}
-    {% assign twitter_image = '/assets/custom/img/codurance-logo-artwork.png' | prepend: site.url %}
 {% endif %}
 
 
