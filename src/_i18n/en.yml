@@ -261,7 +261,6 @@ services:
   training:
     title: Training
     description: Leverage focused training courses to upskill your teams
-    image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Learn More
 services-training_coaching:
