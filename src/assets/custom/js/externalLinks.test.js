@@ -41,6 +41,11 @@ describe("External Links", () => {
       id: "linkWithExistingTarget",
       target: "_parent",
     });
+    addLink({
+      href: "https://another.com",
+      id: "linkWithNoRel",
+      target: "_blank",
+    });
     simulatePageLoad();
   });
 
@@ -56,5 +61,9 @@ describe("External Links", () => {
 
   it(`links that have a target defined are not changed`, () => {
     expect($("#linkWithExistingTarget").target).toBe("_parent");
+  });
+
+  it(`links that open in new tabs are given the "noopener" rel`, () => {
+    expect($("#linkWithNoRel").rel).toBe("noopener noreferrer");
   });
 });

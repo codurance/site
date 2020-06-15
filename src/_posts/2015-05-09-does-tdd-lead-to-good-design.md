@@ -15,8 +15,6 @@ tags:
 - TDD
 - design
 - software modernisation
-pinned_locations: 
-    - soft-mod
 ---
 
 Recently I tweeted that [TDD can’t lead to a good design if we don’t know what good design looks like](https://twitter.com/sandromancuso/status/588503877235781632). I was also saying that we probably should teach design before TDD (or at least, at the same time). This tweet led to a discussions with [J.B. Rainsberger](https://twitter.com/jbrains), [Ron Jeffries](https://twitter.com/RonJeffries), and a few others. J.B. and I ended up having a live [discussion on Hangout on Air](https://www.youtube.com/watch?v=ty3p5VDcoOI) later on. 

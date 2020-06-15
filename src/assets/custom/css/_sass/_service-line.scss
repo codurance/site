@@ -1,0 +1,124 @@
+.service-line__testimonials {
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include small {
+    background-size: cover;
+    background-position: center 380px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium {
+    background-size: 135% auto;
+    background-position: center 370px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+  }
+  @include large-and-extra-large {
+    background-size: 110% auto;
+    background-position: center 310px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+}
+
+.service-line__testimonials-intro {
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 60px;
+  }
+}
+
+.service-line__sheen-container {
+  background: $sheen;
+
+  @include medium-large-and-extra-large {
+    padding-top: $vertical-overlap;
+  }
+}
+
+.service-line__sheen-container--one-publication {
+  @include medium-large-and-extra-large {
+    padding-bottom: 120px;
+  }
+}
+
+.service-line__webinar-teaser {
+  @include small {
+    .page-location-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 50px;
+    margin-top: -$vertical-overlap;
+  }
+}
+
+.service-line__our-clients {
+  background-color: $slate;
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+}
+
+.service-line-problems {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: $sheen;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  @include medium-and-large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include extra-large {
+    padding-top: 100px;
+
+    &:before {
+      right: 100px;
+    }
+    &:after {
+      content: "";
+      background-color: $slate;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-slate-pattern-2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      bottom: 0;
+      height: 450px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+.service-line-problems__intro {
+  position: relative;
+  z-index: 10;
+}

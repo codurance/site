@@ -1,0 +1,17 @@
+.services__curated-publications {
+  @include small {
+    .page-location-anchor {
+      top: -$site-navbar-height-base
+    }
+  }
+}
+
+.services__curated-publications--one-publication {
+  .compass-teaser + & {
+    margin-top: -150px;
+  }
+
+  @include small {
+    display: none;
+  }
+}

@@ -1,9 +1,4 @@
 .services-page__training-teaser {
-  background-color: $navy;
-  background-image: url("#{$site-base-url}/assets/custom/img/services/training-bg.png");
-  background-position: center;
-  background-size: cover;
-
   @include small {
     padding-bottom: 50px;
   }
@@ -11,10 +6,6 @@
     margin-top: -$vertical-overlap * 3;
     padding-bottom: $vertical-overlap;
     padding-top: ($vertical-overlap * 3) + 50px;
-  }
-  @include extra-large {
-    @include max-width;
-    max-width: calc(100% - (2 * #{$lateral-space--large}));
   }
 }
 

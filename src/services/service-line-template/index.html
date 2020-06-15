@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: service_line
 title: Title of service line | strapline for service line
 title-es: Spanish title of service line | Spanish strapline for service line.
 description: Description for service line.
@@ -8,9 +8,12 @@ image:
    src: /assets/custom/img/placeholders/meta-social-image.png
 metarobots: noindex,nofollow
 sitemap: false
----
 
-<script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+curated_publications:
+  location: 'service-line-example-page'
+
+service-line: service-line-template
+---
 
 <section class="service-line-hero">
   <div class="container service-line-hero__grid">
@@ -37,8 +40,7 @@ sitemap: false
   </div>
 </section>
 
-
-<section class="soft-mod-problems">
+<section class="service-line-problems">
   {%- assign anchor_id = "how-we-solve-your-problems" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
@@ -46,7 +48,7 @@ sitemap: false
   {% capture description %}{% t service-line-template.problems-introduction %}{% endcapture %}
   {% assign cta_href = "#get-in-touch" %}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
@@ -102,7 +104,7 @@ sitemap: false
   </div>
 </section>
 
-<section class="soft-mod__our-clients">
+<section class="service-line__our-clients">
   {%- assign anchor_id = "how-we-help-our-clients" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
@@ -174,13 +176,13 @@ sitemap: false
   </div>
 </section>
 
-<section class="soft-mod__testimonials">
+<section class="service-line__testimonials">
   {%- assign anchor_id = "testimonials" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
-  {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
+  {% include section_intro.html class="service-line__testimonials-intro" description=description title=title %}
 
   <div class="container-slim center">
     <div class="flexslider">
@@ -206,17 +208,3 @@ sitemap: false
     </div>
   </div>
 </section>
-
-<div class=soft-mod__sheen-container>
-  {% include compass_teaser.html %}
-</div>
-
-{% include services_contact_form.liquid %}
-
-<script>
-  var image = document.getElementsByClassName('img-parallax');
-  new simpleParallax(image, {
-    scale: 1.15,
-    orientation: 'up',
-  });
-</script>

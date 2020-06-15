@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: service_line
 title: Software Modernisation | Evolve your strategic systems
 title-es: Software Modernisation | Aumenta la escalabilidad de tu negocio
 description: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible through software modernisation.
@@ -7,9 +7,14 @@ description-es: Moderniza los sistemas legacy para mejorar el rendimiento de los
 image:
    src: /assets/custom/img/softmod/metaimgs/softmod-opengraph-card-linkedIn.jpg
 metarobots: index,follow
----
+redirect_from: /software-modernisation/
 
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+curated_publications:
+  location: 'soft-mod'
+  tag: 'software modernisation'
+
+service-line: software-modernisation
+---
 
 <section class="service-line-hero">
   <div class="container service-line-hero__grid">
@@ -36,7 +41,7 @@ metarobots: index,follow
   </div><!-- grid -->
 </section><!-- service-line-hero -->
 
-<section class="soft-mod-problems">
+<section class="service-line-problems">
   {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-solve-your-problems} -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
@@ -44,7 +49,7 @@ metarobots: index,follow
   {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
   {% assign cta_href = "#get-in-touch" %}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="soft-mod-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
@@ -206,7 +211,7 @@ metarobots: index,follow
   </div>
 </section>
 
-<section class="soft-mod__our-clients">
+<section class="service-line__our-clients">
   {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-help-our-clients} -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
@@ -283,13 +288,13 @@ metarobots: index,follow
   </div>
 </section><!-- Case Studies -->
 
-<section class="soft-mod__testimonials">
+<section class="service-line__testimonials">
   {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.testimonials} -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
   {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
-  {% include section_intro.html class="soft-mod__testimonials-intro" description=description title=title %}
+  {% include section_intro.html class="service-line__testimonials-intro" description=description title=title %}
 
   <div class="container-slim center">
     <div class="flexslider">
@@ -315,19 +320,3 @@ metarobots: index,follow
     </div>
   </div>
 </section>
-
-<div class=soft-mod__sheen-container>
-  {% include compass_teaser.html %}
-  {% include soft_mod_webinar_hero_teaser.html %}
-  {% include soft_mod_curated_publications.html %}
-</div>
-
-{% include services_contact_form.liquid %}
-
-<script>
-  var image = document.getElementsByClassName('img-parallax');
-  new simpleParallax(image, {
-    scale: 1.15,
-    orientation: 'up',
-  });
-</script>

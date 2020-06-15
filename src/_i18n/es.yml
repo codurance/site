@@ -268,7 +268,6 @@ services:
   training:
     title: Formación
     description: Cursos de capacitación oriuentados a optimizar tus equipos
-    image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Ver mas
 services-training_coaching:
@@ -348,8 +347,8 @@ careers:
   our_roles_title: Nuestros Roles
   software_craftspeople_title: Software Craftspeople
   software_craftspeople_description: Nuestros Craftspeople tienen una habilidades y niveles de experiencia muy diversos. Infórmate sobre lo que significa ser un Craftsperson.
-  apprentices_title: Aprendices
-  apprentices_description: Un programa intensivo de aprendizaje de 3 meses que te proporcionará las habilidades necesarias para convertirte en Craftsperson. Infórmate sobre el programa.
+  craftspeople_in_training_title: Craftspeople-in-training
+  craftspeople_in_training_description: Un programa intensivo de aprendizaje de 3 meses que te proporcionará las habilidades necesarias para convertirte en Craftsperson. Infórmate sobre el programa.
   contact_us_title: ¿Tienes más preguntas?
   contact_us_subtitle: Si necesitas más información sobre Codurance antes de aplicar, siéntete libre de enviarnos un mensaje y preguntarnos lo que necesites. Responderemos a tus preguntas y respetaremos tu privacidad. Cuando hayas recabado la información que necesitas y estés listo/a para presentar tu candidatura hablaremos al respecto.
   life_at_codurance_title: Vida en Codurance
@@ -442,24 +441,24 @@ careers:
     life_cover_icon: icon-education-153 u-line-icon-pro
     mentor_title: Mentor
     mentor_description: Podrás escoger un mentor/a que te guíe en tu proceso de aprendizaje.
-  become_an_apprentice:
-    title: Aprendizaje en Codurance
+  become_a_craftsperson_in_training:
+    title: Academy en Codurance
     apply_title: Inscríbete
-    description: Los/as aprendices comparten nuestra pasión por crear software bien diseñado, pero aún no han tenido las oportunidades de aprendizaje adecuadas para refinar su oficio.
+    description: Los/as craftspeople-in-training comparten nuestra pasión por crear software bien diseñado, pero aún no han tenido las oportunidades de aprendizaje adecuadas para refinar su oficio.
     how_works_title: ¿Cómo trabajamos?
     how_works_description: Si tienes pasión por aprender y te gustaría tener la oportunidad de aprender las tecnologías y prácticas necesarias para convertirte en craftsperson esperamos tu solicitud.
     how_works:
       box1_title: Programa de 3 meses
       box1_description: Módulos prácticos e intensivos que cubren los aspectos esenciales del diseño de software, prácticas de XP, código limpio y DDD.
       box2_title: Orientación experta
-      box2_description: Estarás guiado/a por nuestros artesanos, profesionales altamente cualificados y con gran experiencia.
+      box2_description: Estarás guiado/a por nuestros Craftsperson, profesionales altamente cualificados y con gran experiencia.
       box3_title: Aprendizaje pagado
-      box3_description: Te pagamos un salario de a tiempo completo a través del programa de aprendices. Resumiendo; cobrarás mientras aprendes.
+      box3_description: Te pagamos un salario de a tiempo completo a través del Academy program. Resumiendo; cobrarás mientras aprendes.
       box4_title: Aprendizaje práctico
       box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
     skills:
       title: ¿Qué skills y experiencia necesitas?
-      description: Nuestros aprendices se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque, una serie de habilidades básicas que necesitas tener.
+      description: Nuestros craftspeople-in-training se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque, una serie de habilidades básicas que necesitas tener.
       box1_title: Conocimientos y skills requeridos.
       box1_description: <li>Familirizado con C#, Java or Node.js tech stacks.</li>
         <li>Actitud demostrable para el autoaprendizaje y estar alineado con la importancia y la necesidad de calidad y buenas prácticas en el desarrollo de software.</li>
@@ -472,11 +471,11 @@ careers:
         <li>Sentirse cómodo con OO design (SOLID, 4 reglas del simple design, coupling/cohesion), DDD y design patterns.</li>
     apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester or Barcelona?
     testimonials:
-      title: Testimonios de algunos de nuestros aprendices
-      description: Cuando acaba el programa de aprendizaje, se obtiene el reconocimiento de haber alcanzado el nivel de Software Craftsperson y en ese momento se empieza a trabajar en proyectos para clientes.
+      title: Testimonios de algunos de nuestros craftspeople-in-training
+      description: Cuando acaba el programa de academy, se obtiene el reconocimiento de haber alcanzado el nivel de Software Craftsperson y en ese momento se empieza a trabajar en proyectos para clientes.
       carousel_item_1:
         author: Liam Griffin-Jowett
-        quote: El impacto fue enorme en términos de crecimiento como desarrollador. Encontrar el espacio para concentrarme exclusivamente en la superación personal, unido a contar con la orientación necesaria para no perder la dirección, fue algo que me hizo sentir especialmente bien. Aprendí más durante los meses de mi aprendizaje que en muchos años en mi un rol habitual de desarrollador. Y poder cobrar un sueldo mientras aprendes es increíble.
+        quote: El impacto fue enorme en términos de crecimiento como desarrollador. Encontrar el espacio para concentrarme exclusivamente en la superación personal, unido a contar con la orientación necesaria para no perder la dirección, fue algo que me hizo sentir especialmente bien. Aprendí más durante los meses de mi academy que en muchos años en mi un rol habitual de desarrollador. Y poder cobrar un sueldo mientras aprendes es increíble.
       carousel_item_2:
         author: Luciano Palma
         quote: Sentí que el proceso era más valioso que la graduación en sí misma. He podido aprender a través de los errores, recibir feedback y mejorar continuamente durante el proceso. Ahora me siento más seguro trabajando en equipo, exponiendo mis ideas y recibiendo el feedback de mis colegas..
@@ -498,13 +497,13 @@ careers:
     background_title: ¿Qué experiencia necesitas?
     background_description:
       Esperamos que te desenvuelvas en al menos un idioma que elijas en las plataformas JVM, .NET y / o Node JS. También que conozcas las metodologías Agile y que puedas aplicarlas. Necesitas tener conocimientos básicos de diseño a nivel micro y macro.Te desenvuelves correctamente comunicando tus ideas en equipo. Te apasiona aprender y perfeccionar tus habilidades como desarrollador de software. Te gusta tanto aprender como enseñar.
-    is_it_for_me_title: El programa de aprendizaje ¿es para mí?
+    is_it_for_me_title: El programa de academy ¿es para mí?
     is_it_for_me_description: Si estás buscando un programa de aprendizaje estructurado, con certificaciones, una titulación, módulos de aprendizaje y cursos de capacitación regulares este no es el programa que necesitas. Sin embargo, si estás buscando una formación intensa sobre lo que significa ser un Software Craftsperson, acompañado por un mentor, que te ayude a prender las tecnologías, prácticas y habilidades del mundo real necesarias , esperamos recibir tu solicitud para formar parte del programa.
     how_long_title: ¿Cuánto tiempo dura el programa?
     how_long_description: Aproximadamente unos 3 meses, pero será tu mentor quien te guiará en este camino. Al final no hay examen. Cuando tu mentor consideré que estás preparado y otros 3 craftsperson consideren que lo estás podrás graduarte.
-    life_apprentice:
+    life_craftsperson_in_training:
       title: La vida del aprendiz.
-      description: ¿Quieres tener una idea de cómo es la vida como aprendiz? Estos testimonios de algunos de nuestros aprendices te pueden dar una idea de lo que significa embarcarte en este viaje.
+      description: ¿Quieres tener una idea de cómo es la vida como aprendiz? Estos testimonios de algunos de nuestros craftspeople-in-training te pueden dar una idea de lo que significa embarcarte en este viaje.
 careers-how_we_grow:
   title: ¿Cómo crecemos?
   description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad y para presentar en conferencias.</p>
@@ -823,6 +822,10 @@ software-modernisation:
       cta: Ver webinar
       cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
 
+  curated-publications:
+    intro-title: Sobre Software Modernisation
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
+
   page-sections:
     how-we-solve-your-problems: como-podemos-ayudarte
     how-we-help-our-clients: como-adyudamos-nuestros-clientes
@@ -832,11 +835,6 @@ software-modernisation:
     publications: publicaciones
     get-in-touch: contacto
 
-curated-publications:
-  softmod:
-    intro-title: Sobre Software Modernisation
-    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
-
 service-line-template:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
@@ -845,12 +843,6 @@ service-line-template:
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
-
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+  curated-publications:
+    intro-title: ES example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

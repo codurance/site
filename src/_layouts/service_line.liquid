@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% assign translations = site.translations[site.lang].[page.service-line] %}
+
+<script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+{{ content }}
+
+{%- include service_line_media_section.liquid -%}
+
+{% include services_contact_form.liquid %}
+
+<script>
+  var image = document.getElementsByClassName('img-parallax');
+  new simpleParallax(image, {
+    scale: 1.15,
+    orientation: 'up',
+  });
+</script>

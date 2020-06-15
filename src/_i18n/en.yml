@@ -200,7 +200,7 @@ services:
   page-intro:
     title: Services & Solutions
     sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
-    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible. 
+    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible.
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
@@ -261,7 +261,6 @@ services:
   training:
     title: Training
     description: Leverage focused training courses to upskill your teams
-    image: http://placekitten.com/780/590
     cta-href: /services/training/
     cta-text: Learn More
 services-training_coaching:
@@ -341,8 +340,8 @@ careers:
   our_roles_title: Our Roles
   software_craftspeople_title: Software Craftspeople
   software_craftspeople_description: Our Craftspeople have a broad range of skills and varying depths of expertise. Learn more about what it means to be a Craftsperson.
-  apprentices_title: Apprentices
-  apprentices_description: An intensive 3-month programme of learning that will provide you with the skills required to become a productive Craftsperson. Learn more about the programme here.
+  craftspeople_in_training_title: Craftspeople-in-training
+  craftspeople_in_training_description: An intensive 3-month programme of learning that will provide you with the skills required to become a productive Craftsperson. Learn more about the programme here.
   contact_us_title: Still have questions?
   contact_us_subtitle: If you'd like to know more about Codurance before applying, feel free to drop us a message here. We'll answer your questions but will respect your privacy. Once you're ready to apply, then we can talk further.
   life_at_codurance_title: Life at Codurance
@@ -434,10 +433,10 @@ careers:
     life_cover_icon: icon-medical-008 u-line-icon-pro
     mentor_title: Mentor
     mentor_description: You will choose a mentor, who will guide you throughout your apprenticeship.
-  become_an_apprentice:
-    title: Apprenticeship at Codurance
+  become_a_craftsperson_in_training:
+    title: Academy at Codurance
     apply_title: Apply now
-    description: Our apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
+    description: Our craftspeople-in-training share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
     how_works_title: How does it work?
     how_works_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to gain peer-recognition of being at the level of a Software Craftsperson, then we look forward to receiving your application.
     how_works:
@@ -446,12 +445,12 @@ careers:
       box2_title: Expert Guidance
       box2_description: You will be mentored by our Craftspeople, skilled professionals with a breadth and depth of expertise.
       box3_title: Paid Apprenticeship
-      box3_description: We pay you a full-time salary throughout the Apprentice programme - essentially, we pay you to learn.
+      box3_description: We pay you a full-time salary through the Academy programme - essentially, we pay you to learn.
       box4_title: Hands-On Learning
       box4_description: All concepts are taught through hands-on exercises, coding katas, group discussions and code reviews.
     skills:
       title: What skills & experience do I need
-      description: Our Apprentices join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Apprentices brings to the course though, as a minimum, we require the following 'essential' skills for all Apprentices.
+      description: Our Craftspeople-in-training join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each professional brings to the course though, as a minimum, we require the following 'essential' skills for all Craftspeople-in-training.
       box1_title: Expected knowledge & skills
       box1_description: <li>Familiarity with C#, Java or Node.js tech stacks.</li>
         <li>Demonstrable attitude for self-learning and awareness of the need for quality and good practices.</li>
@@ -464,11 +463,11 @@ careers:
         <li>Be comfortable with OO design (SOLID, 4 rules of simple design, coupling/cohesion), DDD and design patterns.</li>
     apply_description: Interested in joining our teams in London, Manchester or Barcelona?
     testimonials:
-      title: Hear from past apprentices
-      description: At the end of the apprentice programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
+      title: Hear from past craftspeople-in-training
+      description: At the end of the academy programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
       carousel_item_1:
         author: Liam Griffin-Jowett
-        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my apprenticeship than I would have in many years in a normal developer role. Being paid to learn is awesome.
+        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my academy than I would have in many years in a normal developer role. Being paid to learn is awesome.
       carousel_item_2:
         author: Luciano Palma
         quote: I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.
@@ -492,10 +491,10 @@ careers:
     is_it_for_me_title: Is this the programme for me?
     is_it_for_me_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to become a Software Craftsperson, under the guidance of a dedicated mentor, then we look forward to receiving your application.
     how_long_title: How long does it last
-    how_long_description: Your mentor will guide you through your apprenticeship which we expect to be a maximum of 6 months. There is no formal exam at the end - when your mentor is convinced that you are ready, and can convince at least 3 other craftspeople as well, then you graduate.
-    life_apprentice:
-      title: Life as an apprentice
-      description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
+    how_long_description: Your mentor will guide you through your academy which we expect to be a maximum of 6 months. There is no formal exam at the end - when your mentor is convinced that you are ready, and can convince at least 3 other craftspeople as well, then you graduate.
+    life_craftsperson_in_training:
+      title: Life as a craftsperson-in-training
+      description: Want to get a feel of what life as a craftsperson-in-training is like? These blogs from our current and recent craftspeople-in-training will show you what you can expect when you begin your journey with us.
 careers-how_we_grow:
   title: How we grow?
   description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -535,7 +534,7 @@ careers-join-how_to_apply:
                <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 careers-open_positions:
   title: You like to build well-crafted software, we do too!
-  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice.
+  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Craftsperson-in-training.
 careers-become_a_craftsman:
   title: Become a Craftsperson
   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
@@ -814,6 +813,10 @@ software-modernisation:
       cta: Watch Webinar
       cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
 
+  curated-publications:
+    intro-title: Software Modernisation publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
   page-sections:
     how-we-solve-your-problems: how-we-solve-your-problems
     how-we-help-our-clients: how-we-help-our-clients
@@ -823,11 +826,6 @@ software-modernisation:
     publications: publications
     get-in-touch: get-in-touch
 
-curated-publications:
-  softmod:
-    intro-title: Software Modernisation publications
-    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
-
 service-line-template:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
@@ -836,12 +834,6 @@ service-line-template:
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
-
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+  curated-publications:
+    intro-title: Example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
