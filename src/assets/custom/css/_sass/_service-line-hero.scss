@@ -54,17 +54,11 @@
   @include large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     width: 50%;
     left: 50%;
     height: 750px;
     top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 900px;
   }
 }
