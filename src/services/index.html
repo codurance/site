@@ -5,7 +5,7 @@ title: Services
 
 <main class="services-page">
   {% if site.data.toggles.service-line-updates == "on" %}
-  {% include services_page_intro.liquid %}
+    {% include services_page_intro.liquid %}
 
     {% assign data-file = site.data.service_lines %}
     {% include teaser_group.html data-file=data-file %}

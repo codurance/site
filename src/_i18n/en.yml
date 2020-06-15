@@ -199,8 +199,8 @@ services:
   learn-more: Learn more
   page-intro:
     title: Services & Solutions
-    sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
-    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible.
+    sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise.
+    lead-in: We partner with you to delivers solutions that help create a sustainable, scalable and adaptable future for your business. Together we discover your organizational needs and how you need to evolve. Our team will offer you the necessary practices, technologies and skills to continuously add value and make innovation possible.
   we-advise:
     title: We advise
     subtitle: We advise on creating an effective software delivery capability.
@@ -259,10 +259,11 @@ services:
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
   training:
-    title: Training
-    description: Leverage focused training courses to upskill your teams
-    cta-href: /services/training/
-    cta-text: Learn More
+    title: Trainings
+    description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
+    image: http://placekitten.com/780/590
+    cta-href: /services/training
+    cta-text: Learn more
 services-training_coaching:
   title: Training & Coaching
   our_courses: Our Courses
@@ -836,4 +837,4 @@ service-line-template:
 
   curated-publications:
     intro-title: Example of publications section
-    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
