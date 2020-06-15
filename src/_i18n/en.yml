@@ -445,13 +445,13 @@ careers:
       box1_description: Hands-on, intensive modules covering the essentials of Software Design, XP practices, Clean Code and DDD.
       box2_title: Expert Guidance
       box2_description: You will be mentored by our Craftspeople, skilled professionals with a breadth and depth of expertise.
-      box3_title: Paid Academy
-      box3_description: We pay you a full-time salary throughout the Craftsperson-in-training programme - essentially, we pay you to learn.
+      box3_title: Paid Apprenticeship
+      box3_description: We pay you a full-time salary through the Academy programme - essentially, we pay you to learn.
       box4_title: Hands-On Learning
       box4_description: All concepts are taught through hands-on exercises, coding katas, group discussions and code reviews.
     skills:
       title: What skills & experience do I need
-      description: Our Craftspeople-in-training join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Craftspeople-in-training brings to the course though, as a minimum, we require the following 'essential' skills for all Craftspeople-in-training.
+      description: Our Craftspeople-in-training join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each professional brings to the course though, as a minimum, we require the following 'essential' skills for all Craftspeople-in-training.
       box1_title: Expected knowledge & skills
       box1_description: <li>Familiarity with C#, Java or Node.js tech stacks.</li>
         <li>Demonstrable attitude for self-learning and awareness of the need for quality and good practices.</li>
@@ -465,7 +465,7 @@ careers:
     apply_description: Interested in joining our teams in London, Manchester or Barcelona?
     testimonials:
       title: Hear from past craftspeople-in-training
-      description: At the end of the craftsperson-in-training programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
+      description: At the end of the academy programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
       carousel_item_1:
         author: Liam Griffin-Jowett
         quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my academy than I would have in many years in a normal developer role. Being paid to learn is awesome.
@@ -535,7 +535,7 @@ careers-join-how_to_apply:
                <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 careers-open_positions:
   title: You like to build well-crafted software, we do too!
-  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice.
+  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Craftsperson-in-training.
 careers-become_a_craftsman:
   title: Become a Craftsperson
   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
