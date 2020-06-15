@@ -93,10 +93,10 @@
 }
 
 @include _DEPRECIATED_large {
-  .service-line-hero {
-    background-color: transparent;
-    background-image: none;
-  }
+  // .service-line-hero {
+  //   background-color: transparent;
+  //   background-image: none;
+  // }
 
   .service-line-hero__content-container h1 {
     padding-left: 0px;
@@ -121,15 +121,15 @@
 
 }
 
-@media (max-width: 587px) {
-  .service-line-hero__content-container h1 {
-    padding-left: 0;
-  }
-  .service-line-hero__content-container svg {
-    display: none;
-  }
-  .service-line-hero__content-container p,
-  .service-line-hero__content-container a {
-    margin-left: 0;
-  }
-}
+// @media (max-width: 587px) {
+//   .service-line-hero__content-container h1 {
+//     padding-left: 0;
+//   }
+//   .service-line-hero__content-container svg {
+//     display: none;
+//   }
+//   .service-line-hero__content-container p,
+//   .service-line-hero__content-container a {
+//     margin-left: 0;
+//   }
+// }
