@@ -37,10 +37,11 @@ layout: default
 
 {% include services_contact_form.liquid %}
 
-<script>
-  var image = document.querySelector('[data-js_target="parallax-img"]');
+{%- comment -%} <script>
+  var image = document.getElementsByClassName('img-parallax');
   new simpleParallax(image, {
-    scale: 1.15,
+    scale: 1.1,
     orientation: 'up',
+    customWrapper: '.service-line-hero__image-container',
   });
-</script>
+</script> {%- endcomment -%}
