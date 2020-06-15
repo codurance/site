@@ -50,6 +50,8 @@
 }
 
 .service-line-hero__image-container {
+  overflow: hidden;
+
   @include small-and-medium {
     display: none;
     overflow: hidden;
