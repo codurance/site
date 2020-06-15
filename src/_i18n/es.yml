@@ -199,8 +199,13 @@ services:
   learn-more: Más info
   page-intro:
     title: Servicios y soluciones
-    sub-title: Impulsa la innovación en tu organización a través de asesoramiento experto y experiencia técnica aplicada a la práctica
+    sub-title: Impulsa la innovación en tu organización a través de asesoramiento experto y experiencia técnica aplicada a la práctica.
     lead-in: Trabajamos contigo para poner a tu alcance soluciones que ayuden a crear un futuro sostenible, escalable y adaptable para tu negocio. Juntos descubrimos tus necesidades organizacionales y cómo necesitas evolucionar. Nuestro equipo te ofrecerá las prácticas, tecnologías y habilidades necesarias para agregar valor continuamente y hacer posible la innovación.
+  training:
+    title: Trainings
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
+    cta-text: Cómo lo hacemos
+    cta-href: /services/trainings
   we-advise:
     title: We advise
     subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
@@ -266,11 +271,11 @@ services:
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
     formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
   training:
-    title: Formación
-    description: Cursos de capacitación oriuentados a optimizar tus equipos
+    title: Trainings
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto.<br/><br/>Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
     image: http://placekitten.com/780/590
-    cta-href: /services/training/
-    cta-text: Ver mas
+    cta-href: /services/training
+    cta-text: Cómo lo hacemos
 services-training_coaching:
   title: Formación & asesoría
   our_courses: Nuestros cursos
@@ -846,4 +851,4 @@ service-line-template:
 
   curated-publications:
     intro-title: ES example of publications section
-    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
