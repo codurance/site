@@ -3,7 +3,9 @@
     <div class="training-teaser__text-area">
       <h2 class="training-teaser__title">{% t services.training.title %}</h2>
       <p class="training-teaser__description">{% t services.training.description %}</p>
-      {% comment %} {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta-text %} {% endcomment %}
+      {% capture cta-href %}{{ '/services/training/' | prepend: site.baseurl }}{% endcapture %}
+      {% capture cta-text %}{%t services.learn-more %}{% endcapture %}
+      {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
     </div>
     <div class="training-teaser__image-area">
       <div class="training-teaser__image" style="background-image: url({{ '/assets/custom/img/services/training-lighter.jpg' | prepend: site.baseurl }})"></div>
