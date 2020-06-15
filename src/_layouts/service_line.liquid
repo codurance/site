@@ -9,21 +9,19 @@ layout: default
 <section class="service-line-hero">
   {%- comment -%} <div class="container service-line-hero__inner"> {%- endcomment -%}
     <div class="service-line-hero__content-container">
-      <div>
-        <h1 class="text-900 position-relative">
-          {{ site.data.service_lines[page.service-line].icon }}
-          {% t software-modernisation.hero-title %}
-        </h1>
-        <p class="h4 text-700">
-          {% t software-modernisation.hero-sub-title %}
-        </p>
-        <p class="g-pt-10">
-          {% t software-modernisation.hero-introduction %}
-        </p>
-        {% assign href = "#get-in-touch" %}
-        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %}
-      </div>
+      <h1 class="text-900 position-relative">
+        {{ site.data.service_lines[page.service-line].icon }}
+        {% t software-modernisation.hero-title %}
+      </h1>
+      <p class="h4 text-700">
+        {% t software-modernisation.hero-sub-title %}
+      </p>
+      <p class="g-pt-10">
+        {% t software-modernisation.hero-introduction %}
+      </p>
+      {% assign href = "#get-in-touch" %}
+      {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+      {% include cta_primary_link.html color='coral' href=href text=text %}
     </div>
     <div class="service-line-hero__image-container">
       <img class="service-line-hero__image" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
