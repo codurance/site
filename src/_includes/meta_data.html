@@ -36,13 +36,13 @@
     {% assign description = "Our team of dedicated software craftspeople provides consultancy, software development, and training services to clients seeking high quality development processes and software solutions." %}
 {% endif %}
 
-
-{% if page.image.src %}
-    {% assign og_image =  page.image.src | prepend: site.url %}
-{% else %}
-    {% assign og_image = '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url %}
-{% endif %}
-
+{% capture og_image %}
+    {% if page.image.src %}
+        {{ page.image.src | prepend: site.url }}
+    {% else %}
+        {{ '/assets/custom/img/codurance_open_graph.jpg' | prepend: site.url }}
+    {% endif %}
+{% endcapture %}
 
 {% assign og_url = page.url | prepend: site.url %}
 
