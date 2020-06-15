@@ -23,10 +23,9 @@
 // }
 
 .service-line-hero__content-container {
-  @include medium {
-    padding-left: $lateral-space--medium;
+  @include small-and-medium {
+    padding-left: calc(#{$lateral-space--medium} + 65px);
     padding-right: $lateral-space--medium;
-    padding-top: 72px;
     width: 100%;
   }
   @include large-and-extra-large {
@@ -76,7 +75,7 @@
 }
 
 .service-line-hero__content-container h1 {
-  padding-left: 80px;
+  // padding-left: 80px;
   line-height: 1;
   padding-bottom: 10px;
   font-size: 3.5;

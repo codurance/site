@@ -15,9 +15,9 @@
       fill: #555555;
       top: -14px;
     }
-    @include _DEPRECIATED_small {
-      left: 0px;
-    }
+    // @include _DEPRECIATED_small {
+    //   left: 0px;
+    // }
   }
 
   .teaser-group & {
