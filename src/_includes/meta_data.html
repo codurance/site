@@ -48,7 +48,7 @@
     {%- endif -%}
 {%- endcapture -%}
 
-{%- assign og_image = social_share_image | prepend: site.url -%}
+{% assign og_image = social_share_image | prepend: site.url %}
 
 {% assign og_url = page.url | prepend: site.url %}
 
