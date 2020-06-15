@@ -24,14 +24,17 @@
 
 .service-line-hero__content-container {
   @include medium {
-    padding-left: 50px;
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
     padding-top: 72px;
+    width: 100%;
   }
-  @include medium-large-and-extra-large {
-    width: 50%;
+  @include large-and-extra-large {
+    padding-bottom: 50px;
+    padding-left: 65px;
     padding-right: 40px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    width: 50%;
   }
 }
 
@@ -106,7 +109,7 @@
   // }
 
   .service-line-hero__content-container {
-    padding-left: 65px;
+
   }
 
   .service-line-hero__content-container div,
