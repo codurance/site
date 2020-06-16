@@ -7,7 +7,7 @@
     background-size: cover;
   }
   @include large-and-extra-large {
-    background-size: 0;
+    background-image: none !important;
   }
   @include small {
     padding-top: 120px;
