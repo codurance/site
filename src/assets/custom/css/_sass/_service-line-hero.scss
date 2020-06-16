@@ -7,7 +7,6 @@
   }
   @include small-and-medium {
     background-color: #201d2b;
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-dark.jpg");
     background-size: cover;
   }
   @include medium-large-and-extra-large {
@@ -15,6 +14,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  @include large-and-extra-large {
+    background-size: 0;
   }
 }
 

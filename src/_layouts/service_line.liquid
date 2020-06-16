@@ -6,7 +6,7 @@ layout: default
 
 <script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
-<section class="service-line-hero">
+<section class="service-line-hero" style="background-image: url({{site.baseurl}}/assets/custom/img/softmod/bg-hero-dark.jpg)">
   <div class="service-line-hero__content-container">
     <h1 class="service-line-hero__title">
       {{ site.data.service_lines[page.service-line].icon }}
@@ -24,7 +24,7 @@ layout: default
     {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
     {% include cta_primary_link.html color='coral' href=href text=text %}
   </div>
-  <div class="service-line-hero__image-container">
+  <div class="service-line-hero__image-container" >
     <img class="service-line-hero__image" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
   </div>
 </section>
