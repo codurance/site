@@ -1,5 +1,6 @@
 <section class="teaser-group">
-  {% for data-entry in data-file %}
+  {% for service_line in data-file.service_lines_in_teaser_group %}
+    {% assign data-entry = data-file[service_line] %}
     {% capture title %}{% if site.lang == 'es' %}{{ data-entry.es-title }}{% else %}{{ data-entry.en-title }}{% endif %}{% endcapture %}
     {% capture description %}{% if site.lang == 'es' %}{{ data-entry.es-description }}{% else %}{{ data-entry.en-description }}{% endif %}{% endcapture %}
     <article class="teaser-group__card">

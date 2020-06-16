@@ -9,6 +9,11 @@ image:
 metarobots: index,follow
 redirect_from: /software-modernisation/
 
+intro:
+  background-image-small: /assets/custom/img/softmod/bg-hero-dark.jpg
+  background-image-large: /assets/custom/img/softmod/bg-hero-light.jpg
+  foreground-image-large: /assets/custom/img/softmod/img-hero.png
+
 curated_publications:
   location: 'soft-mod'
   tag: 'software modernisation'
@@ -16,30 +21,6 @@ curated_publications:
 service-line: software-modernisation
 ---
 
-<section class="service-line-hero">
-  <div class="container service-line-hero__grid">
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro">
-      <div>
-        <h1 class="text-900 position-relative">
-          {{ site.data.service_lines[0].icon }}
-          {% t software-modernisation.hero-title %}
-        </h1>
-        <p class="h4 text-700">
-          {% t software-modernisation.hero-sub-title %}
-        </p>
-        <p class="g-pt-10">
-          {% t software-modernisation.hero-introduction %}
-        </p>
-        {% assign href = "#get-in-touch" %}
-        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %}
-      </div>
-    </div>
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro-image">
-      <img class="img-parallax" src="{{ '/assets/custom/img/softmod/img-hero.png' | prepend: site.baseurl }}">
-    </div>
-  </div><!-- grid -->
-</section><!-- service-line-hero -->
 
 <section class="service-line-problems">
   {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-solve-your-problems} -%}
@@ -47,9 +28,11 @@ service-line: software-modernisation
 
   {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
   {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
-  {% assign cta_href = "#get-in-touch" %}
+  {%- capture href -%}
+      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
+  {%- endcapture -%}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">

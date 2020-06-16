@@ -694,7 +694,7 @@ projects:
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible
-  hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
+  hero-description: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
   hero-cta: Tell us about your challenges
   problems-title: How we solve your problems
   problems-introduction: Whichever stage of the digital journey your business is on, we&nbsp;can&nbsp;help&nbsp;you&nbsp;to&nbsp;evolve.
@@ -825,10 +825,10 @@ software-modernisation:
     publications: publications
     get-in-touch: get-in-touch
 
-service-line-template:
+service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
-  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  hero-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   hero-cta: Lorem ipsum dolor
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
