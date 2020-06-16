@@ -4,30 +4,7 @@ layout: default
 
 {% assign translations = site.translations[site.lang].[page.service-line] %}
 
-<script async src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-
-<section class="service-line-hero" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
-  <div class="service-line-hero__content-container">
-    <h1 class="service-line-hero__title">
-      {{ site.data.service_lines[page.service-line].icon }}
-      {{ translations.hero-title }}
-    </h1>
-    <p class="service-line-hero__sub-title">
-      {{ translations.hero-sub-title }}
-    </p>
-    <p class="service-line-hero__description">
-      {{ translations.hero-introduction }}
-    </p>
-    {%- capture href -%}
-      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
-    {%- endcapture -%}
-    {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-    {% include cta_primary_link.html color='coral' href=href text=text %}
-  </div>
-  <div class="service-line-hero__image-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-large }});">
-    <img class="service-line-hero__image" src="{{ site.baseurl }}{{ page.intro.foreground-image-large }}">
-  </div>
-</section>
+{%- include service_line_hero.liquid -%}
 
 {{ content }}
 
