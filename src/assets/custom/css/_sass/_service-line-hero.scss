@@ -66,4 +66,7 @@
 .service-line-hero__sub-title  {
   @include mercer-bold;
 
+  @include small-and-medium {
+    color: white;
+  }
 }
