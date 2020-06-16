@@ -59,23 +59,15 @@
 }
 
 .service-line-hero__title {
-  line-height: 1;
-  padding-bottom: 10px;
-  font-size: 3.5;
-}
+  @include dudler-bold;
+  position: relative;
 
-@include _DEPRECIATED_small {
-  .service-line-hero__title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  @include small-and-medium {
+    color: white;
   }
 }
 
 @include _DEPRECIATED_large {
-  .service-line-hero__title {
-    padding-left: 0px;
-  }
-
   .service-line-hero__content-container div,
   .service-line-hero__content-container div p {
     color: #555555 !important;
