@@ -57,15 +57,20 @@
 .service-line-hero__title {
   @include dudler-bold;
   position: relative;
-
-  @include small-and-medium {
-    color: white;
-  }
 }
 
 .service-line-hero__sub-title  {
   @include mercer-bold;
+}
 
+.service-line-hero__description {
+  @include mercer;
+  margin-bottom: 20px;
+}
+
+.service-line-hero__title,
+.service-line-hero__sub-title,
+.service-line-hero__description {
   @include small-and-medium {
     color: white;
   }
