@@ -25,17 +25,6 @@ $white-colour: #fff;
     margin: 10px 0;
     padding: 10px 30px;
 
-    &-light {  /* 0 0 1 0 */
-        background-color: transparent;
-        border: 1px solid $white-colour;
-        color: $white-colour;
-
-        &:hover {  /* 0 0 2 0 */
-            background-color: $white-colour;
-            color: $gray-colour;
-        }
-    }
-
     &:hover {  /* 0 0 2 0 */
         transition: .3s;
     }
