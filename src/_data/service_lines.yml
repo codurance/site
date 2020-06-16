@@ -1,4 +1,10 @@
-- software-modernisation:
+service_lines_in_teaser_group:
+  - software-modernisation
+  - software-delivery
+  - specialist-expertise
+  - strategic-advice
+
+software-modernisation:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.63 111.11"><path class="cls-1" d="M51.42 61.05L25 45.79V15.26L51.42 0l26.43 15.26v30.53zM28 44.05l23.42 13.53 23.43-13.53V17L51.42 3.46 28 17z"/><path class="cls-1" d="M26.43 89.91L0 74.65V44.12l26.43-15.26 26.44 15.26v30.53zM3 72.92l23.43 13.53 23.44-13.53V45.86L26.43 32.33 3 45.86z"/><path class="cls-1" d="M39.7 111.11L13.27 95.85V66.32L39.7 51.06l26.43 15.26v29.53zm-23.43-17l23.43 13.53 23.43-13.52V68.06L39.7 54.53 16.27 68.06zM100.63 76.02V60.9l-13.1-7.57-13.1 7.57v15.12l13.1 7.57 13.1-7.57z"/></svg>
   es-title: Software Modernisation
   en-title: Software Modernisation
@@ -7,7 +13,7 @@
   image-src: /assets/custom/img/services/serviceline-softmod.jpg
   cta-path: /services/software-modernisation/
 
-- software-delivery:
+software-delivery:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.28 111.74"><path class="cls-1" d="M1.55 63.34A1.54 1.54 0 010 61.81V26.06a1.55 1.55 0 01.77-1.33L33.06 6.1a1.53 1.53 0 011.53 2.65L3.08 26.94v34.87a1.54 1.54 0 01-1.53 1.53zM98.73 63.34a1.53 1.53 0 01-1.53-1.52V26.94L65.57 8.67A1.53 1.53 0 1167.1 6l32.4 18.7a1.54 1.54 0 01.76 1.33v35.79a1.52 1.52 0 01-1.53 1.52zM50.14 111.74a1.47 1.47 0 01-.76-.2L17 92.84a1.53 1.53 0 011.53-2.65l31.62 18.26L82.12 90a1.53 1.53 0 011.53 2.65l-32.74 18.9a1.5 1.5 0 01-.77.19z"/><path class="cls-1" d="M25.84 41.61a1.49 1.49 0 01-.76-.2L.79 27.38a1.53 1.53 0 011.53-2.65l24.28 14a1.53 1.53 0 01.56 2.09 1.51 1.51 0 01-1.32.79zM76.4 40.48a1.53 1.53 0 01-.76-2.85l21.28-12.29A1.53 1.53 0 1198.45 28L77.16 40.27a1.5 1.5 0 01-.76.21zM50.16 110.52a1.53 1.53 0 01-1.53-1.52V83.53a1.53 1.53 0 113.06 0V109a1.53 1.53 0 01-1.53 1.52z"/><circle class="cls-1" cx="50.4" cy="30.42" r="3.16"/><circle class="cls-1" cx="50.36" cy="16.79" r="3.16"/><circle class="cls-1" cx="50.32" cy="3.16" r="3.16"/><circle class="cls-1" cx="97.12" cy="80.68" r="3.16"/><circle class="cls-1" cx="85.08" cy="74.29" r="3.16"/><circle class="cls-1" cx="73.04" cy="67.89" r="3.16"/><circle class="cls-1" cx="3.16" cy="80.68" r="3.16"/><circle class="cls-1" cx="15.2" cy="74.29" r="3.16"/><circle class="cls-1" cx="27.23" cy="67.89" r="3.16"/><path class="cls-1" d="M63.36 63.33V47.77L49.89 40l-13.47 7.77v15.56l13.47 7.77 13.47-7.77z"/></svg>
   en-title: Software Delivery
   es-title: Entrega de Software
@@ -15,7 +21,7 @@
   es-description: Transforma rápidamente tu idea en software en producción con el que optimizar la experiencia de tus clientes. Impulsa la innovación y el ROI de tu software sin comprometer la calidad, con la tranquilidad de saber que tu proyecto está en manos de expertos. Te ayudaremos a definir, construir y entregar tus ideas transformadas en productos para mejorar el valor de tu negocio.
   image-src: /assets/custom/img/services/serviceline-software-delivery.jpg
 
-- specialist-expertise:
+specialist-expertise:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.53 108.46"><path class="cls-1" d="M59.29 26.86v20.07l17.39 10.04 17.38-10.04V26.86L76.68 16.82 59.29 26.86zM18.89 91.84a1.44 1.44 0 01-.75-.21L.75 81.6A1.52 1.52 0 010 80.3V60.22a1.52 1.52 0 01.75-1.3l17.39-10a1.49 1.49 0 011.5 0l17.36 10a1.5 1.5 0 01.75 1.3V80.3a1.5 1.5 0 01-.75 1.3l-17.38 10a1.5 1.5 0 01-.73.24zM3 79.43l15.89 9.17 15.88-9.17V61.09l-15.88-9.17L3 61.09zM71.45 66.91v13.33l11.54 6.66 11.54-6.66V66.91l-11.54-6.66-11.54 6.66zM48 108.46a1.53 1.53 0 01-.75-.2l-11.58-6.66a1.51 1.51 0 01-.75-1.3V87a1.49 1.49 0 01.75-1.29L47.21 79a1.49 1.49 0 011.5 0l11.54 6.67A1.47 1.47 0 0161 87v13.3a1.51 1.51 0 01-.75 1.3l-11.54 6.66a1.53 1.53 0 01-.71.2zm-10-9l10 5.8 10-5.8V87.84L48 82l-10 5.8zM13.28 48.26a1.53 1.53 0 01-.75-.2L1 41.4a1.49 1.49 0 01-.75-1.3V26.77A1.47 1.47 0 011 25.48l11.54-6.67a1.54 1.54 0 011.5 0l11.54 6.67a1.49 1.49 0 01.75 1.29V40.1a1.51 1.51 0 01-.75 1.3L14 48.06a1.59 1.59 0 01-.72.2zm-10-9l10 5.8 10-5.8V27.64l-10-5.79-10 5.79zM36.24 6.66v13.33l11.54 6.66 11.54-6.66V6.66L47.78 0 36.24 6.66z"/><path class="cls-1" transform="rotate(-30 48.563 53.132)" d="M38.85 51.63h19.4v3h-19.4z"/><path class="cls-1" transform="rotate(-30 57.476 68.16)" d="M39.74 66.65H75.2v3H39.74z"/><path class="cls-1" transform="rotate(-30 40.618 37.924)" d="M24.52 36.42h32.2v3h-32.2z"/><path class="cls-1" transform="rotate(-30 65.633 83.326)" d="M62.37 81.82h6.5v3h-6.5z"/><path class="cls-1" transform="rotate(-30 30.831 23.321)" d="M27.9 21.82h5.86v3H27.9z"/></svg>
   en-title: Specialist Expertise
   es-title: Experiencia especializada
@@ -23,10 +29,13 @@
   es-description: Mejora el time to market con unas entregas y operaciones de tu software mucho más fiables y de calidad. Nuestros expertos te ayudarán a poner en marcha y desarrollar iniciativas de mejora para optimizar la efectividad de las entregas y los equipos. Ponemos a tu alcance las habilidades que necesitas cuando las necesitas.
   image-src: /assets/custom/img/services/serviceline-specialist-expertise.jpg
 
-- strategic-advice:
+strategic-advice:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.2 111.34"><path class="cls-1" d="M95.72,84.25a1.49,1.49,0,0,1-.74-.2L68,68.47a1.49,1.49,0,0,1,1.49-2.57L94.2,80.17,93.87,57,24.78,17.09a1.49,1.49,0,0,1,0-2.55L48,.22a1.48,1.48,0,0,1,1.53,0L63.07,8.27a1.48,1.48,0,1,1-1.52,2.55L48.81,3.22,28.42,15.76,96.08,54.83a1.49,1.49,0,0,1,.74,1.26l.38,26.65a1.47,1.47,0,0,1-.73,1.3A1.44,1.44,0,0,1,95.72,84.25Z"/><path class="cls-1" d="M35,76.06a1.47,1.47,0,0,1-.73-.19L.75,57A1.48,1.48,0,0,1,0,55.65L.38,28.56a1.49,1.49,0,0,1,2.23-1.27L26.07,40.84a1.48,1.48,0,0,1-1.48,2.57L3.31,31.13,3,54.81l32.7,18.47A1.49,1.49,0,0,1,35,76.06Z"/><path class="cls-1" d="M48.79,111.34a1.52,1.52,0,0,1-.74-.2l-11.14-6.43a1.48,1.48,0,1,1,1.48-2.57l10.42,6L70.38,96.29,34.22,75.87a1.49,1.49,0,0,1,1.46-2.59L74.16,95a1.48,1.48,0,0,1,0,2.59L49.51,111.16A1.54,1.54,0,0,1,48.79,111.34Z"/><circle class="cls-1" cx="26.65" cy="97.51" r="3.07"/><circle class="cls-1" cx="14.96" cy="90.71" r="3.07"/><circle class="cls-1" cx="3.27" cy="83.91" r="3.07"/><polygon class="cls-1" points="61.68 62.99 61.68 47.89 48.6 40.34 35.52 47.89 35.52 62.99 48.6 70.54 61.68 62.99"/><circle class="cls-1" cx="93.06" cy="28.72" r="3.07"/><circle class="cls-1" cx="81.37" cy="21.91" r="3.07"/><circle class="cls-1" cx="69.68" cy="15.11" r="3.07"/></svg>
   en-title: Strategic Advice
   es-title: Asesoramiento estratégico
   en-description: Strategic technical advice you can trust. Understand where your systems are today. Get the insights your organisation needs to create a strategic roadmap for the future and align business and technology.
   es-description: ¿Necesitas comprender y evaluar en que punto se encuentra hoy en día tu estructura tecnológica? Trabajaremos contigo para analizar la situación actual y trazar un plan estratégico con el que podrás consolidar tu negocio a largo plazo y alinear el negocio y la tecnología.
   image-src: /assets/custom/img/services/serviceline-strategic-advice.jpg
+
+service-line-example:
+  icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><circle cx="82" cy="82" r="80"/></svg>

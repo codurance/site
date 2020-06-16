@@ -5,13 +5,19 @@
   .service-line-hero & {
     position: absolute;
 
-    @include _DEPRECIATED_large {
-      left: -67px;
-      fill: #555555;
-      top: -14px;
+    @include small-and-medium {
+      fill: #ffffff;
     }
-    @include _DEPRECIATED_small {
-      left: 0px;
+    @include large-and-extra-large {
+      fill: #555555;
+    }
+    @include small {
+      left: 0;
+      top: -71px;
+    }
+    @include medium-large-and-extra-large {
+      left: -67px;
+      top: -3px;
     }
   }
 
@@ -24,3 +30,4 @@
     }
   }
 }
+

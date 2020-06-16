@@ -9,46 +9,30 @@ image:
 metarobots: noindex,nofollow
 sitemap: false
 
+intro:
+  background-image-small: /assets/custom/img/placeholders/meta-social-image.png
+  background-image-large: /assets/custom/img/placeholders/meta-social-image.png
+  foreground-image-large: /assets/custom/img/placeholders/meta-social-image.png
+
 curated_publications:
   location: 'service-line-example-page'
 
-service-line: service-line-template
+service-line: service-line-example
+
 ---
 
-<section class="service-line-hero">
-  <div class="container service-line-hero__grid">
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro">
-      <div>
-        <h1 class="text-900 position-relative">
-          {{ site.data.svgs.service-line-icon.placeholder }}
-          {% t service-line-template.hero-title %}
-        </h1>
-        <p class="h4 text-700">
-          {% t service-line-template.hero-sub-title %}
-        </p>
-        <p class="g-pt-10">
-          {% t service-line-template.hero-introduction %}
-        </p>
-        {% assign href = "#get-in-touch" %}
-        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %}
-      </div>
-    </div>
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro-image" style="background-image: url({{ '/assets/custom/img/placeholders/meta-social-image.png' | prepend: site.baseurl }})">
-      <img class="img-parallax" src="{{ '/assets/custom/img/placeholders/meta-social-image.png' | prepend: site.baseurl }}">
-    </div>
-  </div>
-</section>
 
 <section class="service-line-problems">
   {%- assign anchor_id = "how-we-solve-your-problems" -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
-  {% capture title %}{% t service-line-template.problems-title %}{% endcapture %}
-  {% capture description %}{% t service-line-template.problems-introduction %}{% endcapture %}
-  {% assign cta_href = "#get-in-touch" %}
+  {% capture title %}{% t service-line-example.problems-title %}{% endcapture %}
+  {% capture description %}{% t service-line-example.problems-introduction %}{% endcapture %}
+  {%- capture href -%}
+      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
+  {%- endcapture -%}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
