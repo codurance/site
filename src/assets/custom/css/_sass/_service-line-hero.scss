@@ -6,6 +6,7 @@
     padding-bottom: 50px;
   }
   @include small-and-medium {
+    background-color: #201d2b;
     background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-dark.jpg");
     background-size: cover;
   }
