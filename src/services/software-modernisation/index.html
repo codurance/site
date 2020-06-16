@@ -23,9 +23,11 @@ service-line: software-modernisation
 
   {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
   {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
-  {% assign cta_href = "#get-in-touch" %}
+  {%- capture href -%}
+      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
+  {%- endcapture -%}
   {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-  {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
+  {% include section_intro.html class="service-line-problems__intro" cta_href=href cta_text=cta_text description=description title=title %}
 
   <div class="container z-index-1">
     <div class="tabbed-content g-pt-50">
