@@ -44,12 +44,12 @@
   overflow: hidden;
 
   @include small-and-medium {
+    background-size: 0;
     display: none;
     overflow: hidden;
   }
   @include large-and-extra-large {
     align-items: flex-end;
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-hero-light.jpg");
     background-size: cover;
     display: flex;
     flex-direction: row;
