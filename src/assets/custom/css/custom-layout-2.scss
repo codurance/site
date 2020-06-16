@@ -401,22 +401,6 @@ html {
     background-position: center;
   }
 
-  /* Effective Delivery */
-  &-effective-delivery {
-    background-color: $midnightblue;
-
-    /* md */
-    @media (min-width: 992px) {
-      background-image: url("{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg");
-      background-size: cover;
-      background-position: center right;
-    }
-
-    &__content {
-      background-color: $midnightblue;
-    }
-  }
-
   /* Contact Form */
   &-contact-form {
     &-title {
