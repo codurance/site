@@ -21,11 +21,13 @@
 }
 
 .service-line-hero__content-container {
+  $icon-space: 65px;
+
   @include small {
     padding-left: $lateral-space--medium;
   }
   @include medium {
-    padding-left: calc(#{$lateral-space--medium} + 65px);
+    padding-left: calc(#{$lateral-space--medium} + #{$icon-space});
   }
   @include small-and-medium {
     padding-right: $lateral-space--medium;
@@ -33,7 +35,7 @@
   }
   @include large-and-extra-large {
     padding-bottom: 50px;
-    padding-left: 65px;
+    padding-left: $icon-space;
     padding-right: 40px;
     padding-top: 50px;
     width: 50%;
