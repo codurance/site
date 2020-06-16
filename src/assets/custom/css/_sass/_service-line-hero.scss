@@ -7,6 +7,7 @@
   }
   @include small-and-medium {
     background-color: #201d2b;
+    background-position: center;
     background-size: cover;
   }
   @include medium-large-and-extra-large {
@@ -47,28 +48,29 @@
     display: none;
   }
   @include large-and-extra-large {
-    align-items: flex-end;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
     height: 750px;
     justify-content: center;
     left: 50%;
     max-width: 900px;
     overflow: hidden;
     position: absolute;
+    top: 0;
     width: 50%;
   }
 }
 
 .service-line-hero__image {
-  height: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .service-line-hero__title {
   @include dudler-bold;
-  position: relative;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .service-line-hero__sub-title  {
