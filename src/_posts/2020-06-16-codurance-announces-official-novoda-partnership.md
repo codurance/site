@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 title: Codurance announces official Novoda Partnership
 date: 2020-06-16 00:00:00 +00:00
-author: Nichole Mellekas
+author: Natalie Gray
 description: Codurance partners with Novoda to strengthen its digital product offering
 image:
     src: /assets/custom/img/blog/2020-06-16-codurance-announces-official-novoda-partnership/banner.jpg
