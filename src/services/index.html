@@ -11,18 +11,13 @@ metarobots: index,follow
 ---
 
 <main class="services-page">
-  {% if site.data.toggles.service-line-updates == "on" %}
-    {% include services_page_intro.liquid %}
+  {% include services_page_intro.liquid %}
 
-    {% assign data-file = site.data.service_lines %}
-    {% include teaser_group.html data-file=data-file %}
+  {% assign data-file = site.data.service_lines %}
+  {% include teaser_group.html data-file=data-file %}
 
-    {% include training_teaser.html class="services-page__training-teaser" %}
-
-  {% elsif site.data.toggles.service-line-updates == "off" %}
-
-  {% endif %}
-
+  {% include training_teaser.html class="services-page__training-teaser" %}
+  
   {% include clients_teaser.html class="services-page__clients-teaser" title="You're in good company" featured_clients_only=true %}
 
   <div class="services-page__compass-cta" >
