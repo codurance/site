@@ -43,12 +43,8 @@
 }
 
 .service-line-hero__image-container {
-  overflow: hidden;
-
   @include small-and-medium {
-    background-size: 0;
     display: none;
-    overflow: hidden;
   }
   @include large-and-extra-large {
     align-items: flex-end;
@@ -59,6 +55,7 @@
     justify-content: center;
     left: 50%;
     max-width: 900px;
+    overflow: hidden;
     position: absolute;
     width: 50%;
   }
