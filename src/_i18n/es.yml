@@ -98,16 +98,14 @@ footer:
 footer-latest_blog:
   title: Últimos posts del blog
 footer-useful_links:
-  title: Useful Links
-  we-advise: We advise
-  we-coach: We coach
-  we-deliver: We deliver
-  our-people: Nuestra gente
-  our-story: Nuestra historia
   careers: Carreras
-  privacy-policy: Política de privacidad
   cookie-policy: Política de Cookies
   newsletter-subscription: Suscripción a newsletter
+  our-people: Nuestra gente
+  our-story: Nuestra historia
+  privacy-policy: Política de privacidad
+  services: Servicios
+  title: Useful Links
 footer-contact:
   title: Contacto
   phone_title: Teléfono
