@@ -7,13 +7,17 @@
 
     @include small {
       left: 0;
-      fill: #555555;
       top: -71px;
+    }
+    @include small-and-medium {
+      fill: #ffffff;
     }
     @include medium-large-and-extra-large {
       left: -67px;
-      fill: #555555;
       top: -3px;
+    }
+    @include large-and-extra-large {
+      fill: #555555;
     }
   }
 
