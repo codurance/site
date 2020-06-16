@@ -710,7 +710,7 @@ projects:
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
-  hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
+  hero-description: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
   hero-cta: Explícanos tus retos
   problems-title: ¿Cómo podemos ayudarte?
   problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
@@ -844,7 +844,7 @@ software-modernisation:
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
-  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  hero-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   hero-cta: Lorem ipsum dolor
   problems-title: Lorem ipsum dolor sit amet
   problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
