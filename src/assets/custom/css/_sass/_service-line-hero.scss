@@ -28,10 +28,6 @@
   }
 }
 
-.service-line-hero__content-container div p {
-  color: #ffffff !important;
-}
-
 .service-line-hero__image-container {
   overflow: hidden;
 
@@ -67,9 +63,7 @@
   }
 }
 
-@include _DEPRECIATED_large {
-  .service-line-hero__content-container div,
-  .service-line-hero__content-container div p {
-    color: #555555 !important;
-  }
+.service-line-hero__sub-title  {
+  @include mercer-bold;
+
 }
