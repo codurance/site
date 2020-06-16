@@ -5,19 +5,19 @@
   .service-line-hero & {
     position: absolute;
 
+    @include small-and-medium {
+      fill: #ffffff;
+    }
+    @include large-and-extra-large {
+      fill: #555555;
+    }
     @include small {
       left: 0;
       top: -71px;
     }
-    @include small-and-medium {
-      fill: #ffffff;
-    }
     @include medium-large-and-extra-large {
       left: -67px;
       top: -3px;
-    }
-    @include large-and-extra-large {
-      fill: #555555;
     }
   }
 

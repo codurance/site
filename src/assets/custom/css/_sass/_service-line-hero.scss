@@ -1,23 +1,23 @@
 .service-line-hero {
   @include max-width--out-there;
 
-  @include small {
-    padding-top: 120px;
-    padding-bottom: 50px;
-  }
   @include small-and-medium {
     background-color: #201d2b;
     background-position: center;
     background-size: cover;
+  }
+  @include large-and-extra-large {
+    background-size: 0;
+  }
+  @include small {
+    padding-top: 120px;
+    padding-bottom: 50px;
   }
   @include medium-large-and-extra-large {
     min-height: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  @include large-and-extra-large {
-    background-size: 0;
   }
 }
 
