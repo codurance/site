@@ -17,29 +17,6 @@ service-line: service-line-example
 redirect_from: /services/service-line-template
 ---
 
-<section class="service-line-hero">
-  <div class="container service-line-hero__grid">
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro">
-      <div>
-        <h1 class="text-900 position-relative">
-          {% t service-line-template.hero-title %}
-        </h1>
-        <p class="h4 text-700">
-          {% t service-line-template.hero-sub-title %}
-        </p>
-        <p class="g-pt-10">
-          {% t service-line-template.hero-introduction %}
-        </p>
-        {% assign href = "#get-in-touch" %}
-        {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
-        {% include cta_primary_link.html color='coral' href=href text=text %}
-      </div>
-    </div>
-    <div class="service-line-hero__grid-item service-line-hero__grid-item--intro-image" style="background-image: url({{ '/assets/custom/img/placeholders/meta-social-image.png' | prepend: site.baseurl }})">
-      <img class="img-parallax" src="{{ '/assets/custom/img/placeholders/meta-social-image.png' | prepend: site.baseurl }}">
-    </div>
-  </div>
-</section>
 
 <section class="service-line-problems">
   {%- assign anchor_id = "how-we-solve-your-problems" -%}

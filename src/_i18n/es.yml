@@ -841,7 +841,7 @@ software-modernisation:
     publications: publicaciones
     get-in-touch: contacto
 
-service-line-template:
+service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
   hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
