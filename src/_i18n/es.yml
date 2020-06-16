@@ -187,11 +187,6 @@ publications:
   view-all: Ver todas las publicaciones
 services:
   content-type: Servicio
-  we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
-  we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.
-  we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
-  we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más info
   page-intro:
     title: Servicios y soluciones
