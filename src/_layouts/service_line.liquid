@@ -13,12 +13,14 @@ layout: default
       {{ translations.hero-title }}
     </h1>
     <p class="service-line-hero__sub-title">
-      {% t software-modernisation.hero-sub-title %}
+      {{ translations.hero-sub-title }}
     </p>
     <p class="service-line-hero__description">
-      {% t software-modernisation.hero-introduction %}
+      {{ translations.hero-introduction }}
     </p>
-    {% assign href = "#get-in-touch" %}
+    {%- capture href -%}
+      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
+    {%- endcapture -%}
     {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
     {% include cta_primary_link.html color='coral' href=href text=text %}
   </div>
