@@ -248,9 +248,6 @@ services:
         want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
         most challenging aspects of going from monolith to microservices. Our Technical Delivery Team will take
         care of this for you so you can concentrate on building features to meet your business demand.
-  our-expertise:
-    title: Our Expertise
-    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship values, XP Practices, a Devops culture, and Agile Processes.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.

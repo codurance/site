@@ -261,9 +261,6 @@ services:
         Nuestro equipo de technical delivery se encargará de esto por ti para que puedas concentrarte en
         desarrollar las características que tu negocio necesita.
     clients-title: Clientes que se han beneficiado de entregas más efectivas
-  our-expertise:
-    title: Nuestra experiencia
-    subtitle: Nuestra oferta y experiencia se basan en valores de Software Craftmanship, en prácticas XP, en cultura DevOps y en procesos Agile.
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
