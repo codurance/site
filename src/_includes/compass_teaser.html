@@ -1,13 +1,15 @@
-<section class="compass-teaser">
-  {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.compass} -%}
-  {% include page_location_anchor.html anchor_id=anchor_id %}
+<div class="{{ include.class }}">
+  <section class="compass-teaser">
+    {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.compass} -%}
+    {% include page_location_anchor.html anchor_id=anchor_id %}
 
-  <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>
-  {% if site.lang == 'es' %}
-      {% assign href = "http://compass.codurance.es" %}
-    {% else %}
-      {% assign href = "http://compass.codurance.com" %}
-  {% endif %}
-  {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
-  {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
-</section>
+    <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>
+    {% if site.lang == 'es' %}
+        {% assign href = "http://compass.codurance.es" %}
+      {% else %}
+        {% assign href = "http://compass.codurance.com" %}
+    {% endif %}
+    {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
+    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
+  </section>
+</div>

@@ -15,10 +15,6 @@ metarobots: index,follow
   {% include service_line_teaser_group.html %}
   {% include training_teaser.html class="services-page__training-teaser" %}
   {% include clients_teaser.html class="services-page__clients-teaser" title="You're in good company" featured_clients_only=true %}
-
-  <div class="services-page__compass-cta" >
-    {% include compass_teaser.html %}
-  </div>
-
+  {% include compass_teaser.html class="services-page__compass-cta" %}
   {% include services_contact_form.liquid %}
 </main>

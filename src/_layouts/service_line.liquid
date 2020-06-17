@@ -3,15 +3,10 @@ layout: default
 ---
 
 {% assign translations = site.translations[site.lang].[page.service-line] %}
-
 {%- include service_line_hero.liquid -%}
 
 {{ content }}
 
-<div class="service-line__sheen-container service-line__compass-teaser">
-  {% include compass_teaser.html %}
-</div>
-
+{% include compass_teaser.html class="service-line__sheen-container service-line__compass-teaser" %}
 {%- include service_line_media_section.liquid -%}
-
 {% include services_contact_form.liquid %}
