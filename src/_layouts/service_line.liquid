@@ -4,6 +4,7 @@ layout: default
 
 {% assign translations = site.translations[site.lang].[page.service-line] %}
 {%- include service_line_hero.liquid -%}
+{% include service_line_details_section.liquid %}
 
 {{ content }}
 
