@@ -649,14 +649,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
-  risk-management-li-1: Real-time system intelligence
-  risk-management-li-2: System observability
-  risk-management-li-3: Seguridad
-  risk-management-li-4: Operational excellence
-  risk-management-li-5: Reducir el tiempo medio de recuperación
-  risk-management-how-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
-
   clients-title: Cómo hemos ayudado a nuestros clientes
   clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
 
@@ -788,3 +780,10 @@ all-service-lines:
     tab-five-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
 
     tab-six-title: Gestión de riesgos
+    tab-six-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
+    tab-six-list-item-one: Real-time system intelligence
+    tab-six-list-item-two: System observability
+    tab-six-list-item-three: Seguridad
+    tab-six-list-item-four: Operational excellence
+    tab-six-list-item-five: Reducir el tiempo medio de recuperación
+    tab-six-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
