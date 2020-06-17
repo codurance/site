@@ -1,5 +1,5 @@
-<div class="{{ include.class }}">
-  <section class="compass-teaser">
+<section class="{{ include.class }}">
+  <div class="compass-teaser">
     {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.compass} -%}
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
@@ -11,5 +11,5 @@
     {% endif %}
     {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
     {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
-  </section>
-</div>
+  </div>
+</section>
