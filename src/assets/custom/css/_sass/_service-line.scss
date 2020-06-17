@@ -35,13 +35,15 @@
 
 .service-line__sheen-container {
   background: $sheen;
+}
 
+.service-line__compass-teaser {
   @include medium-large-and-extra-large {
     padding-top: $vertical-overlap;
   }
 }
 
-.service-line__sheen-container--one-publication {
+.service-line__media-section--one-publication {
   @include medium-large-and-extra-large {
     padding-bottom: 120px;
   }

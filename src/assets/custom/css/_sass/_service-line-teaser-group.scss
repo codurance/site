@@ -1,4 +1,4 @@
-.teaser-group {
+.service-line-teaser-group {
   @include max-width--out-there;
 
   @include small-and-medium {
@@ -17,7 +17,7 @@
   }
 }
 
-.teaser-group__card {
+.service-line-teaser-group__card {
   position: relative;
 
   @include medium {
@@ -40,21 +40,21 @@
   }
 }
 
-.teaser-group__card:nth-of-type(odd)::after {
+.service-line-teaser-group__card:nth-of-type(odd)::after {
   @include large-and-extra-large {
     left: $lateral-space--large;
     right: 50%;
   }
 }
 
-.teaser-group__card:nth-of-type(even)::after {
+.service-line-teaser-group__card:nth-of-type(even)::after {
   @include large-and-extra-large {
     left: 50%;
     right: $lateral-space--large;
   }
 }
 
-.teaser-group__card-image {
+.service-line-teaser-group__card-image {
   @include small-and-medium {
     display: none;
   }
@@ -68,7 +68,7 @@
     z-index: 10;
   }
 
-  .teaser-group__card:nth-of-type(odd) & {
+  .service-line-teaser-group__card:nth-of-type(odd) & {
     background-position: left center;
 
     @include large-and-extra-large {
@@ -76,7 +76,7 @@
     }
   }
 
-  .teaser-group__card:nth-of-type(even) & {
+  .service-line-teaser-group__card:nth-of-type(even) & {
     background-position: right center;
 
     @include large-and-extra-large {
@@ -86,7 +86,7 @@
   }
 }
 
-.teaser-group__card-content {
+.service-line-teaser-group__card-content {
   background-color: $slate;
 
   &::before {
@@ -139,20 +139,20 @@
     }
   }
 
-  .teaser-group__card:nth-of-type(odd) & {
+  .service-line-teaser-group__card:nth-of-type(odd) & {
     @include large-and-extra-large {
       margin-left: 43%;
     }
   }
 
-  .teaser-group__card:nth-of-type(even) & {
+  .service-line-teaser-group__card:nth-of-type(even) & {
     @include large-and-extra-large {
       margin-right: 43%;
     }
   }
 }
 
-.teaser-group__card-content-type {
+.service-line-teaser-group__card-content-type {
   @include ponti-bold;
   align-items: center;
   color: $coral;
@@ -168,12 +168,12 @@
   }
 }
 
-.teaser-group__card-title,
-.teaser-group__card-description {
+.service-line-teaser-group__card-title,
+.service-line-teaser-group__card-description {
   color: white;
 }
 
-.teaser-group__card-title {
+.service-line-teaser-group__card-title {
   @include freed-bold;
 
   @include small {
@@ -184,7 +184,7 @@
   }
 }
 
-.teaser-group__card-description {
+.service-line-teaser-group__card-description {
   @include mercer-reg;
 
   @include small {

@@ -186,14 +186,7 @@ publications:
   teaser-cta: Continúa
   view-all: Ver todas las publicaciones
 services:
-  title: Software de calidad entregado efectivamente
-  subtitle: Líderes reconocidos en continuous delivery y prácticas de calidad en el desarrollo de software.
   content-type: Servicio
-  we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
-  we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.
-  we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
-  we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más info
   page-intro:
     title: Servicios y soluciones
@@ -204,66 +197,6 @@ services:
     description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
     cta-text: Cómo lo hacemos
     cta-href: /services/trainings
-  we-advise:
-    title: We advise
-    subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
-    body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica.
-      Te acompañaremos, con directrices técnicas y programas de coaching, para ayudar a tu organización
-      en su camino hacia una entrega efectiva y sostenible.
-    high-level-consulting:
-      title: Consultoría de alto nivel
-      body: Cuando tu software no evoluciona con tu negocio el origen de ese problema está en causas que, a menudo, son complejas.Te ayudaremos a identificar esas causas y a crear un plan de mejora global.
-        La entrega de software efectiva requiere una estrategia de producto, de organización de equipo,
-        de proceso, arquitectura y prácticas técnicas, y todos esos elementos deben estar alineados.
-
-    technical-vision:
-      title: Visión técnica y revisión de arquitectura
-      body: Tanto si tienes un monolito, código legacy o si te encuentras en la etapa de diseño de tu nuevo producto,
-        te ayudaremos a revisar tu arquitectura, en el contexto de tu visión de producto y tecnológica,
-        para que se responda a tus necesidades, tanto presentes como futuras.
-    discovery-phase:
-      title: Fase de descubrimiento
-      body: Tienes un área en particular que necesitas mejorar desde un punto de vista tecnológico. Estás buscando un partner para que te ayude a conseguir ese objetivo, pero no sabes
-        exactamente en qué aspecto necesitas enfocarte.
-        Te ayudaremos a focalizar tus esfuerzos con una serie de sesiones de trabajo para crear un plan de mejora.
-    technical-coaching:
-      title: Coaching técnico
-      body: Si tu visión técnica y tus capacidades no están alineadas esto va a tener un impacto directo en tu capacidad
-        para entregar valor a tus clientes.
-        Invertir en las habilidades de tus equipos ayudará a reducir esta brecha.
-        Ofrecemos formación y coaching en prácticas XP
-        (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
-  we-coach:
-    title: We coach
-    subtitle: Ayudamos a los equipos en cualquier fase de un proyecto a que puedan beneficiarse de una capacitación específica.
-    body: Nuestros cursos ayudan a tu a equipo a mejorar en prácticas XP, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development entre otras prácticas técnicas.
-    trainings:
-      title1: Crafting code
-      title2: Serverless Architecture con AWS
-      title3: Y más...
-  we-deliver:
-    title: We deliver
-    subtitle: Tenemos las habilidades de entrega de software para ayudarte a entregar tus objetivos de negocio.
-    body: Nuestros equipos expertos mejoraran tu software y procesos de entrega hacia entregas
-      más eficientes y continuous delivery. Además nuestros equipos de feature tienen las capacidades necesarias
-      para llevar una idea al mercado.
-    feature-delivery:
-      title: Feature Delivery Teams
-      body: Nuestros equipos son expertos en prácticas XP, Continuous Delivery y cultura DevOps.
-        Tengas un producto existente o estés empezando uno nuevo, nuestros equipos se aseguran de ayudarte a entregar
-        calidad y a tiempo para que puedas satisfacer tus objetivos de negocio. Nuestro trabajo servirá de ejemplo para tus futuros
-        desarrollos.
-    technical-delivery:
-      title: Technical Delivery Teams
-      body: Tus pipelines de continuous delivery necesitan mejoras, no quieres dejar de dar servicio con tus deploys,
-        necesitas infraestructura para A/B testing o te enfrentas a los desafíos más complicados de pasar de monolito a
-        microservicios.
-        Nuestro equipo de technical delivery se encargará de esto por ti para que puedas concentrarte en
-        desarrollar las características que tu negocio necesita.
-    clients-title: Clientes que se han beneficiado de entregas más efectivas
-  our-expertise:
-    title: Nuestra experiencia
-    subtitle: Nuestra oferta y experiencia se basan en valores de Software Craftmanship, en prácticas XP, en cultura DevOps y en procesos Agile.
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.

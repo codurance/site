@@ -399,49 +399,6 @@ html {
     background-image: url("{{site.baseurl}}/assets/custom/img/bg-pattern.jpg");
     background-size: cover;
     background-position: center;
-
-    &-title,
-    &-sub-title {
-      color: #fff;
-    }
-  }
-
-  /* Expert Advice */
-  &-expert-advice {
-    background-color: $midnightblue;
-
-    /* md */
-    @media (min-width: 992px) {
-      background-image: url("{{site.baseurl}}/assets/custom/img/services/expert_advice_wide_2.jpg");
-      background-size: cover;
-    }
-
-    &__content {
-      background-color: $midnightblue;
-    }
-  }
-
-  /* Effective Delivery */
-  &-effective-delivery {
-    background-color: $midnightblue;
-
-    /* md */
-    @media (min-width: 992px) {
-      background-image: url("{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg");
-      background-size: cover;
-      background-position: center right;
-    }
-
-    &__content {
-      background-color: $midnightblue;
-    }
-  }
-
-  /* Two Col Content */
-  &-two-col-content {
-    &-cta--right {
-      float: right;
-    }
   }
 
   /* Contact Form */

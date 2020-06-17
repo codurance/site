@@ -185,73 +185,12 @@ publications:
   teaser-cta: Learn More
   view-all: View all publications
 services:
-  title: Quality Software, Effectively Delivered
-  subtitle: Recognised industry leaders in driving continuous delivery through
-    quality practices and expertise.
   content-type: Service
-  we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: We are Software Craftsmanship pioneers. We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
-  we-advise-subtitle: We advise on creating an effective software delivery capability.
-  we-coach-subtitle: We coach software design and delivery skills.
-  we-deliver-subtitle: We deliver quality software solutions.
   learn-more: Learn more
   page-intro:
     title: Services & Solutions
     sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise.
     lead-in: We partner with you to delivers solutions that help create a sustainable, scalable and adaptable future for your business. Together we discover your organizational needs and how you need to evolve. Our team will offer you the necessary practices, technologies and skills to continuously add value and make innovation possible.
-  we-advise:
-    title: We advise
-    subtitle: We advise on creating an effective software delivery capability.
-    high-level-consulting:
-      title: High-level Consulting
-      body: When your software is not evolving with your business, the
-        root causes are often complex. Effective software delivery requires product strategy, team
-        organisation, software process, software architecture, and software practices to align. Our experts
-        will help you to identify these causes and create a plan on how to improve.
-    technical-vision:
-      title: Technical Vision and Architecture Review
-      body: Whether you're managing a monolithic legacy system in
-        production or at the early stages of designing your new product, we will help you review your
-        architecture against your product and technology vision, so that it fits your present and future
-        needs.
-    discovery-phase:
-      title: Discovery Phase
-      body: You have a particular area in mind for technology
-        improvement and you’re looking for a partner but don’t necessarily know what to focus on. We will
-        help you focus your efforts with a series of tailor made workshops to create a plan for
-        improvements.
-    technical-coaching:
-      title: Technical Coaching
-      body: A mismatch between your technical vision and your capability
-        will have a direct impact on your ability to deliver value to your customers. Investing in the
-        skills of your people will help to reduce this gap. We provide training and coaching in XP Practices
-        (e.g. TDD, Pair Programming, Continuous Integration), Software Design, Clean Code, and Software
-        Architecture.
-  we-coach:
-    title: We coach
-    subtitle: We help teams in any phase of a project where they may benefit from focused training.
-    body: Our training courses help teams get better at XP practices, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.
-    trainings:
-      title1: Crafting code
-      title2: Serverless Architecture using AWS
-      title3: And more...
-  we-deliver:
-    title: We deliver
-    feature-delivery:
-      title: Feature Delivery Teams
-      body: Our teams are experts in XP practices and Continuous Delivery
-        while maintaining a DevOps culture. Whether you have an existing product or starting anew, our teams
-        will ensure that we help you deliver quality features, in time, to meet your business objectives. Our
-        work will serve as an exemplar for your future development effort.
-    technical-delivery:
-      title: Technical Delivery Teams
-      body: Your continuous delivery pipeline needs some improvements, you
-        want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
-        most challenging aspects of going from monolith to microservices. Our Technical Delivery Team will take
-        care of this for you so you can concentrate on building features to meet your business demand.
-  our-expertise:
-    title: Our Expertise
-    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship values, XP Practices, a Devops culture, and Agile Processes.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.
