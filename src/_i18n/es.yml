@@ -645,19 +645,9 @@ software-modernisation:
   hero-cta: Explícanos tus retos
   problems-title: ¿Cómo podemos ayudarte?
   problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
-  what: Qué
-  how: Cómo
+
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
-
-
-  sus-change-li-1: Reducir el tiempo de entrega
-  sus-change-li-2: Reducir el coste del cambio
-  sus-change-li-3: Lanzamientos frecuentes y más seguros a producción
-  sus-change-li-4: Reducir technical debt
-  sus-change-li-5: Reducir la tasa de defectos
-  sus-change-how-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-
 
   innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
   innovation-li-1: Mantener la competitividad
@@ -785,7 +775,19 @@ all-service-lines:
     get-in-touch: contacto
 
   tabber:
+    what: Qué
+    how: Cómo
+
     tab-one-title: Cambio sostenible
+    tab-one-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+    tab-one-list-item-one: Reducir el tiempo de entrega
+    tab-one-list-item-two: Reducir el coste del cambio
+    tab-one-list-item-three: Lanzamientos frecuentes y más seguros a producción
+    tab-one-list-item-four: Reducir technical debt
+    tab-one-list-item-five: Reducir la tasa de defectos
+    tab-one-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
+
     tab-two-title: Innovación
     tab-three-title: Tecnología
     tab-four-title: Aproximación de negocio

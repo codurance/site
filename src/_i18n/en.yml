@@ -637,20 +637,9 @@ software-modernisation:
   hero-cta: Tell us about your challenges
   problems-title: How we solve your problems
   problems-introduction: Whichever stage of the digital journey your business is on, we&nbsp;can&nbsp;help&nbsp;you&nbsp;to&nbsp;evolve.
-  what: What
-  how: How
+
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
-
-
-  sustainable-change-intro: Business can move only as fast as we can deliver quality software
-  sus-change-li-1: Reduce lead time
-  sus-change-li-2: Reduce cost of change
-  sus-change-li-3: Frequent and safer releases to production
-  sus-change-li-4: Reduce technical debt
-  sus-change-li-5: Reduce defect rate
-  sus-change-how-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-
 
   innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
   innovation-li-1: Stay competitive
@@ -777,7 +766,18 @@ all-service-lines:
     publications: publications
     get-in-touch: get-in-touch
   tabber:
+    what: What
+    how: How
+
     tab-one-title: Sustainable Change
+    tab-one-intro: Business can move only as fast as we can deliver quality software.
+    tab-one-list-item-one: Reduce lead time
+    tab-one-list-item-two: Reduce cost of change
+    tab-one-list-item-three: Frequent and safer releases to production
+    tab-one-list-item-four: Reduce technical debt
+    tab-one-list-item-five: Reduce defect rate
+    tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+
     tab-two-title: Innovation
     tab-three-title: Technology
     tab-four-title: Business Alignment

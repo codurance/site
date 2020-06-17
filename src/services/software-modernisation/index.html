@@ -65,20 +65,22 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-sustainable-change">
-              <span class="h2 text-900 text-white">{% t software-modernisation.sustainable-change-intro %}</span>
+              <span class="h2 text-900 text-white">
+              {{ all-service-lines.tabber.tab-one-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{% t software-modernisation.what %}</span>
+              <span class="h4 text-700">
+              {{ all-service-lines.tabber.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{% t software-modernisation.sus-change-li-1 %}</li>
-                <li>{% t software-modernisation.sus-change-li-2 %}</li>
-                <li>{% t software-modernisation.sus-change-li-3 %}</li>
-                <li>{% t software-modernisation.sus-change-li-4 %}</li>
-                <li>{% t software-modernisation.sus-change-li-5 %}</li>
+                <li>{{ all-service-lines.tabber.tab-one-list-item-one }}</li>
+                <li>{{ all-service-lines.tabber.tab-one-list-item-two }}</li>
+                <li>{{ all-service-lines.tabber.tab-one-list-item-three }}</li>
+                <li>{{ all-service-lines.tabber.tab-one-list-item-four }}</li>
+                <li>{{ all-service-lines.tabber.tab-one-list-item-five }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
               <p>
-                {% t software-modernisation.sus-change-how-details %}
+                {{ all-service-lines.tabber.tab-one-details }}
               </p>
             </div>
           </div>
@@ -89,7 +91,8 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-innovation">
-              <span class="h2 text-900 text-white">{% t software-modernisation.innovation-intro %}</span>
+              <span class="h2 text-900 text-white">
+              {% t software-modernisation.innovation-intro %}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
               <span class="h4 text-700">{% t software-modernisation.what %}</span>
