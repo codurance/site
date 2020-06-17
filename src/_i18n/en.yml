@@ -641,14 +641,6 @@ software-modernisation:
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
-  innovation-li-1: Stay competitive
-  innovation-li-2: Easy to experiment
-  innovation-li-3: Data-driven decisions
-  innovation-li-4: Fast feedback
-  innovation-how-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
-
-
   technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
   technology-li-1: Effectiveness and productivity
   technology-li-2: Competitive advantage
@@ -779,6 +771,13 @@ all-service-lines:
     tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
 
     tab-two-title: Innovation
+    tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
+    tab-two-list-item-one: Stay competitive
+    tab-two-list-item-two: Easy to experiment
+    tab-two-list-item-three: Data-driven decisions
+    tab-two-list-item-four: Fast feedback
+    tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+
     tab-three-title: Technology
     tab-four-title: Business Alignment
     tab-five-title: People and Culture

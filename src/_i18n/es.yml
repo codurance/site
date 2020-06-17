@@ -649,14 +649,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
-  innovation-li-1: Mantener la competitividad
-  innovation-li-2: Fácil de experimentar
-  innovation-li-3: Data driven decisions
-  innovation-li-4: Respuesta rápida
-  innovation-how-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
-
-
   technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
   technology-li-1: Eficacia y productividad
   technology-li-2: Ventaja competitiva
@@ -787,8 +779,14 @@ all-service-lines:
     tab-one-list-item-five: Reducir la tasa de defectos
     tab-one-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
 
-
     tab-two-title: Innovación
+    tab-two-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+    tab-two-list-item-one: Mantener la competitividad
+    tab-two-list-item-two: Fácil de experimentar
+    tab-two-list-item-three: Data driven decisions
+    tab-two-list-item-four: Respuesta rápida
+    tab-two-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
+
     tab-three-title: Tecnología
     tab-four-title: Aproximación de negocio
     tab-five-title: Personas y cultura
