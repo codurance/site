@@ -641,15 +641,6 @@ software-modernisation:
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
-  people-and-culture-li-1: Talent retention and attraction
-  people-and-culture-li-2: Staff development
-  people-and-culture-li-3: Culture of learning
-  people-and-culture-li-4: Leadership at all levels
-  people-and-culture-li-5: Team autonomy
-  people-and-culture-how-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
-
-
   risk-management-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
   risk-management-li-1: Real-time system intelligence
   risk-management-li-2: System observability
@@ -779,4 +770,12 @@ all-service-lines:
     tab-four-description: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
 
     tab-five-title: People and Culture
+    tab-five-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
+    tab-five-list-item-one: Talent retention and attraction
+    tab-five-list-item-two: Staff development
+    tab-five-list-item-three: Culture of learning
+    tab-five-list-item-four: Leadership at all levels
+    tab-five-list-item-five: Team autonomy
+    tab-five-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+
     tab-six-title: Risk Management

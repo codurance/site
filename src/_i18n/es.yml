@@ -649,15 +649,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  people-and-culture-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
-  people-and-culture-li-1: Contratación y retención de talento
-  people-and-culture-li-2: Capacitación del personal
-  people-and-culture-li-3: Cultura de aprendizaje
-  people-and-culture-li-4: Liderazgo en todos los niveles
-  people-and-culture-li-5: Autonomía del equipo
-  people-and-culture-how-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
-
-
   risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
   risk-management-li-1: Real-time system intelligence
   risk-management-li-2: System observability
@@ -788,4 +779,12 @@ all-service-lines:
     tab-four-description: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
 
     tab-five-title: Personas y cultura
+    tab-five-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
+    tab-five-list-item-one: Contratación y retención de talento
+    tab-five-list-item-two: Capacitación del personal
+    tab-five-list-item-three: Cultura de aprendizaje
+    tab-five-list-item-four: Liderazgo en todos los niveles
+    tab-five-list-item-five: Autonomía del equipo
+    tab-five-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
+
     tab-six-title: Gestión de riesgos
