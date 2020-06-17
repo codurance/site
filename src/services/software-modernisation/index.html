@@ -21,7 +21,12 @@ curated_publications:
 service-line: software-modernisation
 ---
 {% assign translations = site.translations[site.lang].[page.service-line] %}
-{%- assign all-service-lines = site.translations[site.lang].all-service-lines -%}
+
+{%- if site.lang == 'es' -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.es -%}
+{%- else -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.en -%}
+{%- endif -%}
 
 <section class="service-line-problems">
   {% include page_location_anchor.html
@@ -41,22 +46,22 @@ service-line: software-modernisation
       <nav class="tabs">
         <ul>
           <li><a href="#sustainable-change" class="active">
-            {{ all-service-lines.tabber.tab-one-title }}
+            {{ tabber-data.tab-one-title }}
           </a></li>
           <li><a class="g-pt-15" href="#innovation">
-            {{ all-service-lines.tabber.tab-two-title }}
+            {{ tabber-data.tab-two-title }}
           </a></li>
           <li><a class="g-pt-15"href="#technology">
-            {{ all-service-lines.tabber.tab-three-title }}
+            {{ tabber-data.tab-three-title }}
           </a></li>
           <li><a href="#business-alignment">
-            {{ all-service-lines.tabber.tab-four-title }}
+            {{ tabber-data.tab-four-title }}
           </a></li>
           <li><a href="#people-culture">
-            {{ all-service-lines.tabber.tab-five-title }}
+            {{ tabber-data.tab-five-title }}
           </a></li>
           <li><a href="#risk-management">
-            {{ all-service-lines.tabber.tab-six-title }}
+            {{ tabber-data.tab-six-title }}
           </a></li>
         </ul>
       </nav><!-- tabs -->
@@ -66,21 +71,21 @@ service-line: software-modernisation
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-sustainable-change">
               <span class="h2 text-900 text-white">
-              {{ all-service-lines.tabber.tab-one-intro }}</span>
+              {{ tabber-data.tab-one-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
               <span class="h4 text-700">
-              {{ all-service-lines.tabber.what }}</span>
+              {{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-one-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-one-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-one-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-one-list-item-four }}</li>
-                <li>{{ all-service-lines.tabber.tab-one-list-item-five }}</li>
+                <li>{{ tabber-data.tab-one-list-item-one }}</li>
+                <li>{{ tabber-data.tab-one-list-item-two }}</li>
+                <li>{{ tabber-data.tab-one-list-item-three }}</li>
+                <li>{{ tabber-data.tab-one-list-item-four }}</li>
+                <li>{{ tabber-data.tab-one-list-item-five }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-one-details }}
+                {{ tabber-data.tab-one-details }}
               </p>
             </div>
           </div>
@@ -92,19 +97,19 @@ service-line: software-modernisation
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-innovation">
               <span class="h2 text-900 text-white">
-              {{ all-service-lines.tabber.tab-two-intro }}</span>
+              {{ tabber-data.tab-two-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{{ all-service-lines.tabber.what }}</span>
+              <span class="h4 text-700">{{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-two-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-two-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-two-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-two-list-item-four }}</li>
+                <li>{{ tabber-data.tab-two-list-item-one }}</li>
+                <li>{{ tabber-data.tab-two-list-item-two }}</li>
+                <li>{{ tabber-data.tab-two-list-item-three }}</li>
+                <li>{{ tabber-data.tab-two-list-item-four }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-two-details }}
+                {{ tabber-data.tab-two-details }}
               </p>
             </div>
           </div>
@@ -115,20 +120,20 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-technology">
-              <span class="h2 text-900 text-white">{{ all-service-lines.tabber.tab-three-intro }}</span>
+              <span class="h2 text-900 text-white">{{ tabber-data.tab-three-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{{ all-service-lines.tabber.what }}</span>
+              <span class="h4 text-700">{{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-three-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-three-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-three-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-three-list-item-four }}</li>
-                <li>{{ all-service-lines.tabber.tab-three-list-item-five }}</li>
+                <li>{{ tabber-data.tab-three-list-item-one }}</li>
+                <li>{{ tabber-data.tab-three-list-item-two }}</li>
+                <li>{{ tabber-data.tab-three-list-item-three }}</li>
+                <li>{{ tabber-data.tab-three-list-item-four }}</li>
+                <li>{{ tabber-data.tab-three-list-item-five }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-three-details }}
+                {{ tabber-data.tab-three-details }}
               </p>
             </div>
           </div>
@@ -139,19 +144,19 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-business-alignment">
-              <span class="h2 text-900 text-white">{{ all-service-lines.tabber.tab-four-intro }}</span>
+              <span class="h2 text-900 text-white">{{ tabber-data.tab-four-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{{ all-service-lines.tabber.what }}</span>
+              <span class="h4 text-700">{{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-four-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-four-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-four-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-four-list-item-four }}</li>
+                <li>{{ tabber-data.tab-four-list-item-one }}</li>
+                <li>{{ tabber-data.tab-four-list-item-two }}</li>
+                <li>{{ tabber-data.tab-four-list-item-three }}</li>
+                <li>{{ tabber-data.tab-four-list-item-four }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-four-description }}
+                {{ tabber-data.tab-four-description }}
               </p>
             </div>
           </div>
@@ -162,20 +167,20 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-people-culture">
-              <span class="h2 text-900 text-white">{{ all-service-lines.tabber.tab-five-intro }}</span>
+              <span class="h2 text-900 text-white">{{ tabber-data.tab-five-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{{ all-service-lines.tabber.what }}</span>
+              <span class="h4 text-700">{{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-five-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-five-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-five-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-five-list-item-four }}</li>
-                <li>{{ all-service-lines.tabber.tab-five-list-item-five }}</li>
+                <li>{{ tabber-data.tab-five-list-item-one }}</li>
+                <li>{{ tabber-data.tab-five-list-item-two }}</li>
+                <li>{{ tabber-data.tab-five-list-item-three }}</li>
+                <li>{{ tabber-data.tab-five-list-item-four }}</li>
+                <li>{{ tabber-data.tab-five-list-item-five }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-five-details }}
+                {{ tabber-data.tab-five-details }}
               </p>
             </div>
           </div>
@@ -186,20 +191,20 @@ service-line: software-modernisation
         <div class="item-content">
           <div class="item-content-grid">
             <div class="item-content-grid__item-left bg-blue bg-risk-management">
-              <span class="h2 text-900 text-white">{{ all-service-lines.tabber.tab-six-intro }}</span>
+              <span class="h2 text-900 text-white">{{ tabber-data.tab-six-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
-              <span class="h4 text-700">{{ all-service-lines.tabber.what }}</span>
+              <span class="h4 text-700">{{ tabber-data.what }}</span>
               <ul class="g-pb-15 list-ticks">
-                <li>{{ all-service-lines.tabber.tab-six-list-item-one }}</li>
-                <li>{{ all-service-lines.tabber.tab-six-list-item-two }}</li>
-                <li>{{ all-service-lines.tabber.tab-six-list-item-three }}</li>
-                <li>{{ all-service-lines.tabber.tab-six-list-item-four }}</li>
-                <li>{{ all-service-lines.tabber.tab-six-list-item-five }}</li>
+                <li>{{ tabber-data.tab-six-list-item-one }}</li>
+                <li>{{ tabber-data.tab-six-list-item-two }}</li>
+                <li>{{ tabber-data.tab-six-list-item-three }}</li>
+                <li>{{ tabber-data.tab-six-list-item-four }}</li>
+                <li>{{ tabber-data.tab-six-list-item-five }}</li>
               </ul>
-              <span class="h4 text-700 g-mt-25">{{ all-service-lines.tabber.how }}</span>
+              <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
               <p>
-                {{ all-service-lines.tabber.tab-six-details }}
+                {{ tabber-data.tab-six-details }}
               </p>
             </div>
           </div>
