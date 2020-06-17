@@ -104,6 +104,16 @@
     &:before {
       right: 100px;
     }
+    &:after {
+      content: "";
+      background-color: $slate;
+      bottom: 0;
+      height: 450px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 0;
+    }
   }
 }
 
