@@ -641,15 +641,6 @@ software-modernisation:
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
-  technology-li-1: Effectiveness and productivity
-  technology-li-2: Competitive advantage
-  technology-li-3: Cost reduction
-  technology-li-4: Technology refresh
-  technology-li-5: Mitigation against end-of-life
-  technology-how-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
-
-
   business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
   business-alignment-li-1: Technology led business evolution
   business-alignment-li-2: Faster quality feedback
@@ -779,6 +770,14 @@ all-service-lines:
     tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
 
     tab-three-title: Technology
+    tab-three-intro: Leveraging new technologies should be straight forward and not a scary prospect
+    tab-three-list-item-one: Effectiveness and productivity
+    tab-three-list-item-two: Competitive advantage
+    tab-three-list-item-three: Cost reduction
+    tab-three-list-item-four: Technology refresh
+    tab-three-list-item-five: Mitigation against end-of-life
+    tab-three-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
+
     tab-four-title: Business Alignment
     tab-five-title: People and Culture
     tab-six-title: Risk Management

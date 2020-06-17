@@ -649,15 +649,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
-  technology-li-1: Eficacia y productividad
-  technology-li-2: Ventaja competitiva
-  technology-li-3: Reducción de costes
-  technology-li-4: Actualización tecnológica
-  technology-li-5: Mitigación frente al end-of-life
-  technology-how-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
-
-
   business-alignment-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
   business-alignment-li-1: Aprovechar la tecnología para impulsar la evolución del negocio
   business-alignment-li-2: Respuesta de calidad más rápida
@@ -788,6 +779,14 @@ all-service-lines:
     tab-two-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
 
     tab-three-title: Tecnología
+    tab-three-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
+    tab-three-list-item-one: Eficacia y productividad
+    tab-three-list-item-two: Ventaja competitiva
+    tab-three-list-item-three: Reducción de costes
+    tab-three-list-item-four: Actualización tecnológica
+    tab-three-list-item-five: Mitigación frente al end-of-life
+    tab-three-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
+
     tab-four-title: Aproximación de negocio
     tab-five-title: Personas y cultura
     tab-six-title: Gestión de riesgos
