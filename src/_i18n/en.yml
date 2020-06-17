@@ -755,15 +755,6 @@ software-modernisation:
     intro-title: Software Modernisation publications
     intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
 
-  page-sections:
-    how-we-solve-your-problems: how-we-solve-your-problems
-    how-we-help-our-clients: how-we-help-our-clients
-    testimonials: testimonials
-    compass: compass-by-codurance
-    webinar: webinar
-    publications: publications
-    get-in-touch: get-in-touch
-
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
@@ -775,3 +766,13 @@ service-line-example:
   curated-publications:
     intro-title: Example of publications section
     intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+all-service-lines:
+  page-sections:
+    how-we-solve-your-problems: how-we-solve-your-problems
+    how-we-help-our-clients: how-we-help-our-clients
+    testimonials: testimonials
+    compass: compass-by-codurance
+    webinar: webinar
+    publications: publications
+    get-in-touch: get-in-touch

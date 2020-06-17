@@ -763,15 +763,6 @@ software-modernisation:
     intro-title: Sobre Software Modernisation
     intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
 
-  page-sections:
-    how-we-solve-your-problems: como-podemos-ayudarte
-    how-we-help-our-clients: como-adyudamos-nuestros-clientes
-    testimonials: opinion-de-nuestros-clientes
-    compass: compass-by-codurance
-    webinar: webinar-software-modernisation-trabajo-distribuido
-    publications: publicaciones
-    get-in-touch: contacto
-
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
@@ -783,3 +774,13 @@ service-line-example:
   curated-publications:
     intro-title: ES example of publications section
     intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+all-service-lines:
+  page-sections:
+    how-we-solve-your-problems: como-podemos-ayudarte
+    how-we-help-our-clients: como-adyudamos-nuestros-clientes
+    testimonials: opinion-de-nuestros-clientes
+    compass: compass-by-codurance
+    webinar: webinar-software-modernisation-trabajo-distribuido
+    publications: publicaciones
+    get-in-touch: contacto

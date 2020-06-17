@@ -21,9 +21,8 @@ curated_publications:
 service-line: software-modernisation
 ---
 
-
 <section class="service-line-problems">
-  {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-solve-your-problems} -%}
+  {%- assign anchor_id = all-service-lines.page-sections.how-we-solve-your-problems -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
   {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
