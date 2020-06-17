@@ -23,9 +23,9 @@ service-line: software-modernisation
 {% assign translations = site.translations[site.lang].[page.service-line] %}
 
 {%- if site.lang == 'es' -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.es -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.es.[page.service-line] -%}
 {%- else -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.en -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.en.[page.service-line] -%}
 {%- endif -%}
 
 <section class="service-line-problems">
@@ -69,7 +69,7 @@ service-line: software-modernisation
       <article id="sustainable-change" class="item active" data-title="Sustainable Change">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-sustainable-change">
+            <div class="item-content-grid__item-left bg-blue bg-sustainable-change" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-one-image-path }})">
               <span class="h2 text-900 text-white">
               {{ tabber-data.tab-one-intro }}</span>
             </div>
@@ -95,7 +95,7 @@ service-line: software-modernisation
       <article id="innovation" class="item" data-title="Innovation">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-innovation">
+            <div class="item-content-grid__item-left bg-blue bg-innovation" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-two-image-path }})">
               <span class="h2 text-900 text-white">
               {{ tabber-data.tab-two-intro }}</span>
             </div>
@@ -119,7 +119,7 @@ service-line: software-modernisation
       <article id="technology" class="item" data-title="Technology">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-technology">
+            <div class="item-content-grid__item-left bg-blue bg-technology" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-three-image-path }})">
               <span class="h2 text-900 text-white">{{ tabber-data.tab-three-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
@@ -143,7 +143,7 @@ service-line: software-modernisation
       <article id="business-alignment" class="item" data-title="Business Alignment">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-business-alignment">
+            <div class="item-content-grid__item-left bg-blue bg-business-alignment" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-four-image-path }})">
               <span class="h2 text-900 text-white">{{ tabber-data.tab-four-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
@@ -166,7 +166,7 @@ service-line: software-modernisation
       <article id="people-culture" class="item" data-title="People and Culture">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-people-culture">
+            <div class="item-content-grid__item-left bg-blue bg-people-culture" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-five-image-path }})">
               <span class="h2 text-900 text-white">{{ tabber-data.tab-five-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
@@ -190,7 +190,7 @@ service-line: software-modernisation
       <article id="risk-management" class="item" data-title="Risk Management">
         <div class="item-content">
           <div class="item-content-grid">
-            <div class="item-content-grid__item-left bg-blue bg-risk-management">
+            <div class="item-content-grid__item-left bg-blue bg-risk-management" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-six-image-path }})">
               <span class="h2 text-900 text-white">{{ tabber-data.tab-six-intro }}</span>
             </div>
             <div class="item-content-grid__item-right bg-white g-pt-35">
