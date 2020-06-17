@@ -94,11 +94,13 @@ layout: default
     <div class="row--partners">
       {% for partner in site.data.partners %}
       <div class="col-md-partners text-center">
-        <img
-          class="g-mb-0--sm img-responsive"
-          src="{{ partner.image | prepend: site.baseurl }}"
-          alt="{{ partner.alt-text }}"
-        />
+        <a href="{{ partner.url }}" target="blank">
+          <img
+            class="g-mb-0--sm img-responsive"
+            src="{{ partner.image | prepend: site.baseurl }}"
+            alt="{{ partner.alt-text }}"
+          />
+        </a>
       </div>
       {% endfor %}
     </div>
