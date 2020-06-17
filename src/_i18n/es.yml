@@ -650,8 +650,7 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  sustainable-change-title: Cambio sostenible
-  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+
   sus-change-li-1: Reducir el tiempo de entrega
   sus-change-li-2: Reducir el coste del cambio
   sus-change-li-3: Lanzamientos frecuentes y más seguros a producción
@@ -659,7 +658,7 @@ software-modernisation:
   sus-change-li-5: Reducir la tasa de defectos
   sus-change-how-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
 
-  innovation-title: Innovación
+
   innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
   innovation-li-1: Mantener la competitividad
   innovation-li-2: Fácil de experimentar
@@ -667,7 +666,7 @@ software-modernisation:
   innovation-li-4: Respuesta rápida
   innovation-how-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
 
-  technology-title: Tecnología
+
   technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
   technology-li-1: Eficacia y productividad
   technology-li-2: Ventaja competitiva
@@ -676,7 +675,7 @@ software-modernisation:
   technology-li-5: Mitigación frente al end-of-life
   technology-how-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
 
-  business-alignment-title: Aproximación de negocio
+
   business-alignment-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
   business-alignment-li-1: Aprovechar la tecnología para impulsar la evolución del negocio
   business-alignment-li-2: Respuesta de calidad más rápida
@@ -684,7 +683,7 @@ software-modernisation:
   business-alignment-li-4: Aceptación de los cambios
   business-alignment-how-details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
 
-  people-and-culture-title: Personas y cultura
+
   people-and-culture-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
   people-and-culture-li-1: Contratación y retención de talento
   people-and-culture-li-2: Capacitación del personal
@@ -693,7 +692,7 @@ software-modernisation:
   people-and-culture-li-5: Autonomía del equipo
   people-and-culture-how-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
 
-  risk-management-title: Gestión de riesgos
+
   risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
   risk-management-li-1: Real-time system intelligence
   risk-management-li-2: System observability
@@ -784,3 +783,11 @@ all-service-lines:
     webinar: webinar-software-modernisation-trabajo-distribuido
     publications: publicaciones
     get-in-touch: contacto
+
+  tabber:
+    tab-one-title: Cambio sostenible
+    tab-two-title: Innovación
+    tab-three-title: Tecnología
+    tab-four-title: Aproximación de negocio
+    tab-five-title: Personas y cultura
+    tab-six-title: Gestión de riesgos

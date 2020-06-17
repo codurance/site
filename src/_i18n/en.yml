@@ -642,7 +642,7 @@ software-modernisation:
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  sustainable-change-title: Sustainable Change
+
   sustainable-change-intro: Business can move only as fast as we can deliver quality software
   sus-change-li-1: Reduce lead time
   sus-change-li-2: Reduce cost of change
@@ -651,7 +651,7 @@ software-modernisation:
   sus-change-li-5: Reduce defect rate
   sus-change-how-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
 
-  innovation-title: Innovation
+
   innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
   innovation-li-1: Stay competitive
   innovation-li-2: Easy to experiment
@@ -659,7 +659,7 @@ software-modernisation:
   innovation-li-4: Fast feedback
   innovation-how-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
 
-  technology-title: Technology
+
   technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
   technology-li-1: Effectiveness and productivity
   technology-li-2: Competitive advantage
@@ -668,7 +668,7 @@ software-modernisation:
   technology-li-5: Mitigation against end-of-life
   technology-how-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
 
-  business-alignment-title: Business Alignment
+
   business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
   business-alignment-li-1: Technology led business evolution
   business-alignment-li-2: Faster quality feedback
@@ -676,7 +676,7 @@ software-modernisation:
   business-alignment-li-4: Embrace change
   business-alignment-how-details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
 
-  people-and-culture-title: People and Culture
+
   people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
   people-and-culture-li-1: Talent retention and attraction
   people-and-culture-li-2: Staff development
@@ -685,7 +685,7 @@ software-modernisation:
   people-and-culture-li-5: Team autonomy
   people-and-culture-how-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
 
-  risk-management-title: Risk Management
+
   risk-management-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
   risk-management-li-1: Real-time system intelligence
   risk-management-li-2: System observability
@@ -776,3 +776,10 @@ all-service-lines:
     webinar: webinar
     publications: publications
     get-in-touch: get-in-touch
+  tabber:
+    tab-one-title: Sustainable Change
+    tab-two-title: Innovation
+    tab-three-title: Technology
+    tab-four-title: Business Alignment
+    tab-five-title: People and Culture
+    tab-six-title: Risk Management
