@@ -3,9 +3,9 @@
     return Array.prototype.slice.call(nodeList);
   }
 
-  var TABBER = window.document.querySelector(".tabbed-content");
+  var TABBER = window.document.querySelector("[data-tabber]");
 
-  if(TABBER === null){
+  if (TABBER === null) {
     return;
   }
 
