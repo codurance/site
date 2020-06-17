@@ -641,14 +641,6 @@ software-modernisation:
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
-  business-alignment-li-1: Technology led business evolution
-  business-alignment-li-2: Faster quality feedback
-  business-alignment-li-3: Closer collaboration
-  business-alignment-li-4: Embrace change
-  business-alignment-how-details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
-
-
   people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
   people-and-culture-li-1: Talent retention and attraction
   people-and-culture-li-2: Staff development
@@ -779,5 +771,12 @@ all-service-lines:
     tab-three-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
 
     tab-four-title: Business Alignment
+    tab-four-intro: Achieving business goals is much easier when technology and business are aligned
+    tab-four-list-item-one: Technology led business evolution
+    tab-four-list-item-two: Faster quality feedback
+    tab-four-list-item-three: Closer collaboration
+    tab-four-list-item-four: Embrace change
+    tab-four-description: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+
     tab-five-title: People and Culture
     tab-six-title: Risk Management
