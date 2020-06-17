@@ -1,35 +1,7 @@
 .tabber {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 1;
+  @include lateral-spacing;
   position: relative;
-}
-
-@media (min-width: 576px) {
-  .tabber {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .tabber {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .tabber {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .tabber {
-    max-width: 1140px;
-  }
+  z-index: 1;
 }
 
 $color__main: transparent;
