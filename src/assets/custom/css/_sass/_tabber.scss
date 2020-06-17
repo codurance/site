@@ -1,0 +1,219 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/*
+SCSS variables and mixins
+*/
+
+$color__main: transparent;
+$color__active: transparent;
+$background__active: transparent;
+$width__tabs-side: 150px;
+$breakpoint: 800px;
+@mixin tab-active() {
+  background: $color__main;
+  color: $background__active;
+}
+
+.tabbed-content {
+  background: transparent;
+  max-width: 900px;
+  padding: 0 0 1px 0;
+  margin: 0 auto;
+}
+
+.tabs {
+  ul {
+    margin: 0;
+    padding: 0 0 1em 0;
+    font-weight: bold;
+
+    li {
+      background: $background__active;
+      width: calc(100%/6);
+      float:left;
+      text-align: center;
+      min-height: 60px;
+      font-weight: normal;
+
+      a {
+        padding: .3em 2em;
+        font-size: 14px;
+        line-height: 17px;
+        color: #444444;
+        text-decoration: none;
+        position: relative;
+
+        &:hover,
+        &.active {
+          @include tab-active();
+          font-weight: 700;
+          color: #444444;
+          height: 60px;
+        }
+
+        &.active {
+          &:after {
+            content: '';
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #FB7268;
+          }
+        }
+      }
+    }
+  }
+}
+
+.item {
+  margin-bottom: 10px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.1), 0 0px 5px rgba(0,0,0,0.1);
+
+  &::before {
+    cursor: pointer;
+    font-weight: bold;
+    background: $background__active;
+    padding: .75em;
+    display: block;
+    border-radius: 3px;
+  }
+
+  &.active {
+    &::before {
+      @include tab-active();
+      border-radius: 0px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .item-content {
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.item-content-grid__item-left,
+.item-content-grid__item-right {
+  padding: 15px 15px 30px 15px;
+}
+
+@media (min-width: 990px) {
+  .tabs ul li a {
+    font-size: 16px;
+    line-height: 19px; 
+  }
+}
+
+@media all and (min-width: $breakpoint) {
+
+  .item {
+    box-shadow: none;
+    margin-bottom: 0;
+    &.active {
+      .item-content {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .tabs-side {
+    .tabs {
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  .item-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+  }
+
+  .item-content-grid__item-left,
+  .item-content-grid__item-right {
+    padding: 30px;
+  }
+}
+
+/*
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+
+// Accordion for small screens (mobile first principle)
+.tabbed-content {
+
+  .tabs {
+    display: none;
+  }
+
+  .item {
+    min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
+    &::before {
+      content: attr(data-title); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
+      background-color:#FFFFFF;
+      color: #555555;
+      background-image: url('{{site.baseurl}}/assets/custom/img/softmod/icon-plus.svg');
+      background-size: 25px auto;
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+    }
+
+    .item-content { // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want.
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+
+    &.active {
+      .item-content {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
+      &::before {
+        background-color:#0E4072;
+        color: #FFFFFF;
+        background-image: url('{{site.baseurl}}/assets/custom/img/softmod/icon-minus.svg');
+      }
+    }
+  }
+}
+
+
+// Tabs for larger screens
+@media all and (min-width: $breakpoint) {
+  .tabbed-content {
+    .tabs {
+      display: block;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+        }
+      }
+    }
+
+    .item {
+      min-height: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+  }
+}
