@@ -10,7 +10,7 @@
   }
 
   var TABS_WRAPPER = TABBER.querySelector("[data-tabber_nav]");
-  var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("a"));
+  var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("[data-nav_item]"));
   var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
 
   function isLargeScreen() {
@@ -37,7 +37,7 @@
   }
 
   function makeTabActive(tabHash) {
-    var currentTab = TABS_WRAPPER.querySelector("a.active");
+    var currentTab = TABS_WRAPPER.querySelector("[data-nav_item].active");
     var currentItem = TABBER.querySelector(".item.active");
 
     currentTab && currentTab.classList.remove("active");
@@ -71,7 +71,7 @@
 
   function makeItemInactive(item) {
     item.classList.remove("active");
-    const relatedTab = TABS_WRAPPER.querySelector("a.active");
+    const relatedTab = TABS_WRAPPER.querySelector("[data-nav_item].active");
     relatedTab && relatedTab.classList.remove("active");
   }
 
