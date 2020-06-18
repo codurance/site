@@ -629,6 +629,8 @@ projects:
   bestSecret:
     link-text: Case Study at BestSecret
 
+compass-teaser:
+    anchor-id: compass-by-codurance
 
 software-modernisation:
   hero-title: Software Modernisation
@@ -678,6 +680,8 @@ software-modernisation:
 
   compassCTA-subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
   compassCTA-button: Try our Compass tool
+
+
   contact-heading: Tell us about your challenges
   contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
 

@@ -1,6 +1,6 @@
 <section class="{{ include.class }}">
   <div class="compass-teaser">
-    {%- assign anchor_id = all-service-lines.page-sections.compass -%}
+  {%- assign anchor_id = site.translations[site.lang].compass-teaser.anchor-id -%}
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
     <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>

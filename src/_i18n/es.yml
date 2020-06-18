@@ -638,6 +638,9 @@ projects:
   bestSecret:
     link-text: Case Study at BestSecret
 
+compass-teaser:
+  anchor-id: compass-by-codurance
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
@@ -683,6 +686,8 @@ software-modernisation:
   hedgefund-name-and-position: Aaron Matthews - Director de desarrollo de software en una consultora de fondos de inversión
   testimonials-ecw: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
   ecw-name-and-position: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks
+
+
 
   compassCTA-subheading: Evalúa la madurez del desarrollo de software de tu organización
   compassCTA-button: Empezar
