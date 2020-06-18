@@ -1,8 +1,9 @@
 <div class="tabber" data-tabber>
     <div class="tabber__inner">
-        <nav class="tabber__tabs">
+        <nav class="tabber__tabs" data-tabs>
             <ul>
                 <li><a href="#sustainable-change" class="active">{% t software-modernisation.sustainable-change-title %}</a></li>
+                <li><a class="g-pt-15" href="#innovation">{% t software-modernisation.innovation-title %}</a></li>
             </ul>
         </nav>
 
@@ -29,5 +30,31 @@
                 </div>
             </div>
         </article>
+
+        <article id="innovation" class="item" data-title="Innovation">
+            <div class="item-content">
+                <div class="item-content-grid">
+                    <div class="item-content-grid__item-left bg-blue bg-innovation">
+                        <span class="h2 text-900 text-white">{% t software-modernisation.innovation-intro %}</span>
+                    </div>
+                    <div class="item-content-grid__item-right bg-white g-pt-35">
+                        <span class="h4 text-700">{% t software-modernisation.what %}</span>
+                        <ul class="g-pb-15 list-ticks">
+                            <li>{% t software-modernisation.innovation-li-1 %}</li>
+                            <li>{% t software-modernisation.innovation-li-2 %}</li>
+                            <li>{% t software-modernisation.innovation-li-3 %}</li>
+                            <li>{% t software-modernisation.innovation-li-4 %}</li>
+                        </ul>
+                        <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+                        <p>
+                            {% t software-modernisation.innovation-how-details %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article><!-- #innovation -->
+
+
+
     </div>
 </div>
