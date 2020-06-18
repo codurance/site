@@ -9,7 +9,7 @@
     return;
   }
 
-  var TABS_WRAPPER = TABBER.querySelector("[data-tabs]");
+  var TABS_WRAPPER = TABBER.querySelector("[data-tabber_nav]");
   var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("a"));
   var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
 
@@ -114,7 +114,7 @@
     }
     currentLayout = newLayout;
 
-    var noActiveTabs = document.querySelector("[data-tabs] .active") === null;
+    var noActiveTabs = document.querySelector("[data-tabber_nav] .active") === null;
 
     if (newLayout === "large" && noActiveTabs) {
       displaySustainableChangeTabContent();
