@@ -11,7 +11,7 @@
   margin: 0 auto;
   padding-top: 3.57143rem !important;
 
-  .tabs {
+  .tabber__tabs {
     display: none;
   }
 
@@ -53,7 +53,7 @@
 
 @media all and (min-width: 800px) {
   .tabber__inner {
-    .tabs {
+    .tabber__tabs {
       display: block;
 
       li {
@@ -84,7 +84,7 @@ $width__tabs-side: 150px;
   color: $background__active;
 }
 
-.tabs {
+.tabber__tabs {
   ul {
     margin: 0;
     padding: 0 0 1em 0;
@@ -166,7 +166,7 @@ $width__tabs-side: 150px;
 }
 
 @media (min-width: 990px) {
-  .tabs ul li a {
+  .tabber__tabs ul li a {
     font-size: 16px;
     line-height: 19px;
   }
@@ -184,7 +184,7 @@ $width__tabs-side: 150px;
   }
 
   .tabs-side {
-    .tabs {
+    .tabber__tabs {
       li {
         margin-bottom: 2px;
       }
