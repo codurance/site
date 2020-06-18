@@ -1,7 +1,7 @@
 {%- if site.lang == 'es' -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.es -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.es.[page.service-line] -%}
 {%- else -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.en -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.en.[page.service-line] -%}
 {%- endif -%}
 
 <section class="service-line-problems">
@@ -20,12 +20,12 @@
         <div class="tabbed-content g-pt-50">
             <nav class="tabs">
                 <ul>
-                    <li><a href="#sustainable-change" class="active">{% t software-modernisation.sustainable-change-title %}</a></li>
-                    <li><a class="g-pt-15" href="#innovation">{% t software-modernisation.innovation-title %}</a></li>
-                    <li><a class="g-pt-15"href="#technology">{% t software-modernisation.technology-title %}</a></li>
-                    <li><a href="#business-alignment">{% t software-modernisation.business-alignment-title %}</a></li>
-                    <li><a href="#people-culture">{% t software-modernisation.people-and-culture-title %}</a></li>
-                    <li><a href="#risk-management">{% t software-modernisation.risk-management-title %}</a></li>
+                    <li><a href="#sustainable-change" class="active">{{ tabber-data.tab-one-title }}</a></li>
+                    <li><a class="g-pt-15" href="#innovation">{{ tabber-data.tab-two-title }}</a></li>
+                    <li><a class="g-pt-15"href="#technology">{{ tabber-data.tab-three-title }}</a></li>
+                    <li><a href="#business-alignment">{{ tabber-data.tab-four-title }}</a></li>
+                    <li><a href="#people-culture">{{ tabber-data.tab-five-title }}</a></li>
+                    <li><a href="#risk-management">{{ tabber-data.tab-six-title }}</a></li>
                 </ul>
             </nav><!-- tabs -->
 
