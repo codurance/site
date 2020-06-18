@@ -21,6 +21,7 @@ curated_publications:
 service-line: software-modernisation
 ---
 {% assign translations = site.translations[site.lang].[page.service-line] %}
+{%- assign all-service-lines = site.translations[site.lang].all-service-lines -%}
 
 {%- if site.lang == 'es' -%}
   {%- assign tabber-data = site.data.service_lines_tabber.es.[page.service-line] -%}
@@ -217,7 +218,7 @@ service-line: software-modernisation
 </section>
 
 <section class="service-line__our-clients">
-  {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-help-our-clients} -%}
+  {%- assign anchor_id = all-service-lines.page-sections.how-we-help-our-clients -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
 
@@ -294,7 +295,7 @@ service-line: software-modernisation
 </section><!-- Case Studies -->
 
 <section class="service-line__testimonials">
-  {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.testimonials} -%}
+  {%- assign anchor_id = all-service-lines.page-sections.testimonials -%}
   {% include page_location_anchor.html anchor_id=anchor_id %}
 
   {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
