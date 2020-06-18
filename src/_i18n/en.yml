@@ -631,6 +631,8 @@ projects:
 
 compass-teaser:
     anchor-id: compass-by-codurance
+    subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
+    button: Try our Compass tool
 
 software-modernisation:
   hero-title: Software Modernisation
@@ -677,10 +679,6 @@ software-modernisation:
   hedgefund-name-and-position: Aaron Matthews - Director of Software Development at a Systematic Hedge Fund
   testimonials-ecw: “Pragmatism” is a widely discussed concept and but rarely taken into account when you are looking for software development partners. Codurance team embodies just the right amount of practicality with the overall vision and knowledge to bring positive change to any organization.
   ecw-name-and-position: Sapankumar Parikh - Vice President of Software Development at eClinicalWorks
-
-  compassCTA-subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
-  compassCTA-button: Try our Compass tool
-
 
   contact-heading: Tell us about your challenges
   contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
