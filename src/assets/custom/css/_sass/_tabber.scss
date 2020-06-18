@@ -11,10 +11,6 @@
   margin: 0 auto;
   padding-top: 3.57143rem !important;
 
-  .tabber__tabs {
-    display: none;
-  }
-
   .item {
     min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
     &::before {
@@ -51,9 +47,13 @@
   }
 }
 
+.tabber__nav {
+  display: none;
+}
+
 @media all and (min-width: 800px) {
   .tabber__inner {
-    .tabber__tabs {
+    .tabber__nav {
       display: block;
 
       li {
@@ -84,7 +84,7 @@ $width__tabs-side: 150px;
   color: $background__active;
 }
 
-.tabber__tabs {
+.tabber__nav {
   ul {
     margin: 0;
     padding: 0 0 1em 0;
@@ -166,7 +166,7 @@ $width__tabs-side: 150px;
 }
 
 @media (min-width: 990px) {
-  .tabber__tabs ul li a {
+  .tabber__nav ul li a {
     font-size: 16px;
     line-height: 19px;
   }
@@ -183,8 +183,8 @@ $width__tabs-side: 150px;
     }
   }
 
-  .tabber__tabs-side {
-    .tabber__tabs {
+  .tabber__nav-side {
+    .tabber__nav {
       li {
         margin-bottom: 2px;
       }
