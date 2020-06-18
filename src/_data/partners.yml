@@ -2,33 +2,46 @@
   name: GitHub
   image: /assets/custom/img/home/partners/github.png
   alt-text: GitHub Logo
+  url: https://github.com/
 
 - id: aws
   name: AWS
   image: /assets/custom/img/home/partners/aws.png
   alt-text: AWS Logo
+  url: https://aws.amazon.com/
 
 - id: jetbrains
   name: Jetbrains
   image: /assets/custom/img/home/partners/jetbrainsLogo.png
   alt-text: Jetbrains Logo
+  url: https://www.jetbrains.com/
 
 - id: google
   name: Google
   image: /assets/custom/img/home/partners/google.png
   alt-text: Google Logo
+  url: https://www.google.com/intl/en_uk/partners/about/
 
 - id: skillsmatter
   name: skllsmatter
   image: /assets/custom/img/home/partners/skillsmatter.png
   alt-text: skillsmatter Logo
+  url: https://skillsmatter.com/
 
 - id: redislabs
   name: redislabs
   image: /assets/custom/img/home/partners/redislabs.png
   alt-text: Redislabs Logo
+  url: https://redislabs.com/
 
 - id: novoda
   name: novoda
   image: /assets/custom/img/home/partners/novoda.png
   alt-text: Novoda Logo
+  url: https://novoda.com/
+
+- id: satalia
+  name: satalia
+  image: /assets/custom/img/home/partners/satalia.png
+  alt-text: Satalia Logo
+  url: https://www.satalia.com/

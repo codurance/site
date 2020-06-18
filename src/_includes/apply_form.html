@@ -7,20 +7,27 @@
   <script type='text/javascript' charset='utf-8'>
     whr(document).ready(function(){
       window.addEventListener('load', function(e) {
-        var locations = document.getElementsByClassName('whr-location');
-        for (var i = 0; i < locations.length; i++) {
-          locations[i].innerText = locations[i].innerText.replace(/(England, |Catalonia, )/, '');
+        var cities = document.getElementsByClassName('whr-group');
+        for (var i = 0; i < cities.length; i++) {
+          var aCity = cities[i].innerText;
+          if (aCity === 'Barcelona') {
+            cities[i].innerText += ', Spain';
+          }
+
+          if (aCity === 'London' || aCity === 'Manchester') {
+            cities[i].innerText += ', UK';
+          }
         }
       });
 
-      whr_embed(342253, {detail: 'titles', base: 'jobs', zoom: 'country', grouping: 'locations'});
+      whr_embed(342253, {detail: 'titles', base: 'jobs', zoom: 'city', grouping: 'locations'});
       whr(document).on('click', 'li.whr-item a', function(e) {
         e.preventDefault(); window.open(this.href, '_blank');
       });
     });
   </script>
   <style>
-    .whr-code, .whr-date {
+    .whr-code, .whr-date, .whr-dept {
       display: none;
     }
     .whr-group {
