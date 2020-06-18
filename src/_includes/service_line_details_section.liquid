@@ -1,5 +1,11 @@
+{%- if site.lang == 'es' -%}
+  {%- assign tabber-data = site.data.service_lines_tabber.es -%}
+{%- else -%}
+  {%- assign service-line-page-locations = site.data.service_lines_tabber.en -%}
+{%- endif -%}
+
 <section class="service-line-problems">
-    {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-solve-your-problems} -%}
+    {%- assign anchor_id = service-line-page-locations.how-we-solve-your-problems -%}
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
     {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
