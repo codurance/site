@@ -4,6 +4,12 @@ layout: default
 
 {% assign translations = site.translations[site.lang].[page.service-line] %}
 
+{%- if site.lang == 'es' -%}
+  {%- assign service-line-page-locations = site.data.service_line_page_section_anchors.es -%}
+{%- else -%}
+  {%- assign service-line-page-locations = site.data.service_line_page_section_anchors.en -%}
+{%- endif -%}
+
 {%- include service_line_hero.liquid -%}
 
 {{ content }}
