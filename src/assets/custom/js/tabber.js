@@ -31,20 +31,19 @@
     });
   }
 
-  function handleTabClick(event) {
-    event.preventDefault();
-    makeTabActive(this.hash);
+  function handleTabClick(e) {
+    makeTabActive(e.target.dataset.nav_item_id);
   }
 
-  function makeTabActive(tabHash) {
+  function makeTabActive(navItemId) {
     var currentTab = TABS_WRAPPER.querySelector("[data-nav_item].active");
     var currentItem = TABBER.querySelector(".item.active");
 
     currentTab && currentTab.classList.remove("active");
     currentItem && currentItem.classList.remove("active");
 
-    var newTab = TABS_WRAPPER.querySelector("[href='" + tabHash + "']");
-    var newItem = TABBER.querySelector(tabHash);
+    var newTab = TABS_WRAPPER.querySelector("[data-nav_item_id='" + navItemId + "']");
+    var newItem = TABBER.querySelector(navItemId);
 
     newTab && newTab.classList.add("active");
     newItem && newItem.classList.add("active");
