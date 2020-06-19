@@ -3,20 +3,29 @@
     return Array.prototype.slice.call(nodeList);
   }
 
-  var TABBER = window.document.querySelector("[data-tabber]");
+  var ACTIVE_CLASS = "active";
+
+  var SELECTORS = {
+    LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
+    LARGE_SCREEN_CONTROLS: "[data-large_screen_control]",
+    PANEL_ACTIVE: ".tabber__panel." + ACTIVE_CLASS,
+    PANEL: ".tabber__panel",
+    TABBER: "[data-tabber]",
+  };
+
+  var TABBER = window.document.querySelector(SELECTORS.TABBER);
 
   if (TABBER === null) {
     return;
   }
 
-  var TABS_WRAPPER = TABBER.querySelector("[data-large-screen-controls]");
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
-    TABS_WRAPPER.querySelectorAll("[data-nav_item]")
+    TABBER.querySelectorAll(SELECTORS.LARGE_SCREEN_CONTROLS)
   );
-  var PANEL = nodeListToArray(TABBER.querySelectorAll(".tabber__panel"));
+  var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
 
   function isLargeScreen() {
-    var largeScreenTabsAreVisible = TABS_WRAPPER.scrollHeight > 0;
+    var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS.scrollHeight > 0;
     return largeScreenTabsAreVisible;
   }
 
@@ -24,8 +33,8 @@
   setUpResizeListener();
 
   function setUpClickHandlers() {
-    PANEL.forEach(function (panel) {
-      panel.onclick = handleItemClick;
+    PANELS.forEach(function (panel) {
+      panel.onclick = handlePanelClick;
     });
 
     LARGE_SCREEN_CONTROLS.forEach(function (control) {
@@ -34,68 +43,69 @@
   }
 
   function handleLargeScreenControl(e) {
-    makeTabActive(e.target.dataset.nav_item_id);
+    makeTabActive(e.target.dataset.related_tab);
   }
 
   function makeTabActive(tabId) {
-    var currentLargeScreenControl = TABS_WRAPPER.querySelector(
-      "[data-nav_item].active"
+    var activeLargeScreenControl = TABBER.querySelector(
+      SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE
     );
-    var currentPanel = TABBER.querySelector(".tabber__panel.active");
+    var activePanel = TABBER.querySelector(SELECTORS.PANEL_ACTIVE);
 
-    currentLargeScreenControl &&
-      currentLargeScreenControl.classList.remove("active");
-    currentPanel && currentPanel.classList.remove("active");
+    activeLargeScreenControl &&
+      activeLargeScreenControl.classList.remove(ACTIVE_CLASS);
+    activePanel && activePanel.classList.remove(ACTIVE_CLASS);
 
-    var newLargeScreenControl = TABS_WRAPPER.querySelector(
-      "[data-tab-id='" + tabId + "']"
+    var newLargeScreenControl = TABBER.querySelector(
+      "[data-related_tab='" + tabId + "']"
     );
-    var newPanel = TABBER.querySelector(tabId);
+    var newPanel = TABBER.querySelector("#" + tabId);
 
-    newLargeScreenControl && newLargeScreenControl.classList.add("active");
-    newPanel && newPanel.classList.add("active");
+    newLargeScreenControl && newLargeScreenControl.classList.add(ACTIVE_CLASS);
+    newPanel && newPanel.classList.add(ACTIVE_CLASS);
   }
 
-  function handleItemClick() {
+  function handlePanelClick() {
     if (isLargeScreen()) {
       return;
     }
 
-    toggleItem(this);
+    togglePanel(this);
   }
 
-  function toggleItem(item) {
-    var itemIsActive = item.classList.contains("active");
+  function togglePanel(panel) {
+    var panelIsActive = panel.classList.contains(ACTIVE_CLASS);
 
-    if (itemIsActive) {
-      makeItemInactive(item);
+    if (panelIsActive) {
+      makePanelInactive(panel);
     } else {
-      makeItemActive(item);
-      scrollToItem(item);
+      makePanelActive(panel);
+      scrollToPanel(panel);
     }
   }
 
-  function makeItemInactive(item) {
-    item.classList.remove("active");
-    const relatedTab = TABS_WRAPPER.querySelector("[data-nav_item].active");
-    relatedTab && relatedTab.classList.remove("active");
+  function makePanelInactive(panel) {
+    panel.classList.remove(ACTIVE_CLASS);
+    const relatedTab = TABBER.querySelector(
+      SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE
+    );
+    relatedTab && relatedTab.classList.remove(ACTIVE_CLASS);
   }
 
-  function makeItemActive(item) {
-    const tabHash = "#" + item.id;
-    makeTabActive(tabHash);
+  function makePanelActive(panel) {
+    makeTabActive(panel.id);
   }
 
-  function scrollToItem(item) {
-    function getTotalOffset(item, total) {
-      total = total ? total + item.offsetTop : item.offsetTop;
-      if (item.offsetParent && item.offsetParent.offsetTop) {
-        return getTotalOffset(item.offsetParent, total);
+  function scrollToPanel(panel) {
+    function getTotalOffset(panel, total) {
+      total = total ? total + panel.offsetTop : panel.offsetTop;
+      if (panel.offsetParent && panel.offsetParent.offsetTop) {
+        return getTotalOffset(panel.offsetParent, total);
       }
       return total;
     }
 
-    var totalOffset = getTotalOffset(item);
+    var totalOffset = getTotalOffset(panel);
     var SPACING = 6;
     var header = document.querySelector("header");
     var headerHeight = header ? header.clientHeight : 74;
@@ -121,7 +131,7 @@
     currentLayout = newLayout;
 
     var noActiveTabs =
-      document.querySelector("[data-large-screen-controls] .active") === null;
+      document.querySelector(SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE) === null;
 
     if (newLayout === "large" && noActiveTabs) {
       displaySustainableChangeTabContent();
@@ -133,7 +143,7 @@
     var sustainableChangeTab = TABBER.querySelector('a[href="' + ID + '"]');
     var sustainableChangeItem = TABBER.querySelector(ID);
 
-    sustainableChangeTab.classList.add("active");
-    sustainableChangeItem.classList.add("active");
+    sustainableChangeTab.classList.add(ACTIVE_CLASS);
+    sustainableChangeItem.classList.add(ACTIVE_CLASS);
   }
 })();
