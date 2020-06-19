@@ -57,17 +57,17 @@ $width__tabs-side: 150px;
   }
 }
 
-.tabber__nav {
+.tabber_large_screen_controls {
   display: none;
 }
 
-.tabber__nav-list {
+.tabber_large_screen_controls-list {
   margin: 0;
   padding: 0 0 1em 0;
   font-weight: bold;
 }
 
-.tabber__nav-item {
+.tabber_large_screen_controls-item {
   background: $background__active;
   width: calc(100% / 6);
   float: left;
@@ -104,7 +104,7 @@ $width__tabs-side: 150px;
 
 @media all and (min-width: 800px) {
   .tabber__inner {
-    .tabber__nav {
+    .tabber_large_screen_controls {
       display: block;
 
       li {
@@ -162,7 +162,7 @@ $width__tabs-side: 150px;
 }
 
 @media (min-width: 990px) {
-  .tabber__nav ul li a {
+  .tabber_large_screen_controls ul li a {
     font-size: 16px;
     line-height: 19px;
   }
@@ -179,8 +179,8 @@ $width__tabs-side: 150px;
     }
   }
 
-  .tabber__nav-side {
-    .tabber__nav {
+  .tabber_large_screen_controls-side {
+    .tabber_large_screen_controls {
       li {
         margin-bottom: 2px;
       }
