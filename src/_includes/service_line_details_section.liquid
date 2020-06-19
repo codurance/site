@@ -1,8 +1,4 @@
-{%- if site.lang == 'es' -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.es.[page.service-line] -%}
-{%- else -%}
-  {%- assign tabber-data = site.data.service_lines_tabber.en.[page.service-line] -%}
-{%- endif -%}
+{%- assign tabber-data = site.data.service_lines_tabber[site.lang].[page.service-line] -%}
 
 <section class="service-line-problems">
     {%- assign anchor_id = service-line-page-locations.how-we-solve-your-problems -%}
