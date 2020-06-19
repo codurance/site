@@ -1,13 +1,3 @@
-$color__main: transparent;
-$color__active: transparent;
-$background__active: transparent;
-$width__tabs-side: 150px;
-
-@mixin tab-active() {
-  background: $color__main;
-  color: $background__active;
-}
-
 .tabber {
   @include lateral-spacing;
   position: relative;
@@ -20,45 +10,15 @@ $width__tabs-side: 150px;
   padding: 0 0 1px 0;
   margin: 0 auto;
   padding-top: 3.57143rem !important;
-
-  .tabber__panel {
-    min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
-    &::before {
-      content: attr(
-        data-title
-      ); // Instead of polluting the HTML with a duplicate set of tabs, we get the accordion using the data-title attribute.
-      background-color: #ffffff;
-      color: #555555;
-      background-image: url("{{site.baseurl}}/assets/custom/img/softmod/icon-plus.svg");
-      background-size: 25px auto;
-      background-position: right 10px center;
-      background-repeat: no-repeat;
-    }
-
-    .tabber-panel__content {
-      // We hide the inactive content with zero opacity instead of "display:none" because this allows us to apply transition effects if we want.
-      opacity: 0;
-      visibility: hidden;
-      height: 0;
-    }
-
-    &.active {
-      .tabber-panel__content {
-        opacity: 1;
-        visibility: visible;
-        height: auto;
-      }
-      &::before {
-        background-color: #0e4072;
-        color: #ffffff;
-        background-image: url("{{site.baseurl}}/assets/custom/img/softmod/icon-minus.svg");
-      }
-    }
-  }
 }
 
 .tabber_large_screen_controls {
-  display: none;
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    display: block;
+  }
 }
 
 .tabber_large_screen_controls-list {
@@ -68,126 +28,113 @@ $width__tabs-side: 150px;
 }
 
 .tabber_large_screen_controls-item {
-  background: $background__active;
-  width: calc(100% / 6);
-  float: left;
-  text-align: center;
-  min-height: 60px;
-  font-weight: normal;
-
-  padding: 0.3em 2em;
-  font-size: 14px;
-  line-height: 17px;
+  background: transparent;
   color: #444444;
+  float: left;
+  font-weight: normal;
+  list-style: none;
+  min-height: 60px;
+  padding: 0.3em 2em;
   position: relative;
+  text-align: center;
+  width: calc(100% / 6);
+
+  @include small-and-medium {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @include large-and-extra-large {
+    font-size: 16px;
+    line-height: 19px;
+  }
 
   &:hover,
   &.active {
-    @include tab-active();
+    background: transparent;
+    color: transparent;
     font-weight: 700;
     color: #444444;
     height: 60px;
   }
 
-  &.active {
-    &:after {
-      content: "";
-      width: 100%;
-      height: 5px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: #fb7268;
-    }
-  }
-}
-
-@media all and (min-width: 800px) {
-  .tabber__inner {
-    .tabber_large_screen_controls {
-      display: block;
-
-      li {
-        display: inline-block;
-
-        a {
-          display: block;
-        }
-      }
-    }
-
-    .tabber__panel {
-      min-height: 0;
-
-      &::before {
-        display: none;
-      }
-    }
+  &.active:after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fb7268;
   }
 }
 
 .tabber__panel {
+  min-height: 2em;
   margin-bottom: 10px;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.1);
 
+  @include medium-large-and-extra-large {
+    min-height: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
   &::before {
-    cursor: pointer;
-    font-weight: bold;
-    background: $background__active;
-    padding: 0.75em;
-    display: block;
-    border-radius: 3px;
+    @include small {
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      background-size: 25px auto;
+      background-color: transparent;
+      border-radius: 3px;
+      content: attr(data-title);
+      cursor: pointer;
+      display: block;
+      font-weight: bold;
+      padding: 0.75em;
+    }
+
+    @include medium-large-and-extra-large {
+      display: none;
+    }
+  }
+
+  &:not(.active) {
+    &::before {
+      background-color: #ffffff;
+      color: #555555;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/icon-plus.svg");
+    }
   }
 
   &.active {
-    &::before {
-      @include tab-active();
-      border-radius: 0px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
     .tabber-panel__content {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
       -webkit-transition: opacity 0.3s ease-in-out;
       -moz-transition: opacity 0.3s ease-in-out;
       -o-transition: opacity 0.3s ease-in-out;
       -ms-transition: opacity 0.3s ease-in-out;
       transition: opacity 0.3s ease-in-out;
     }
-  }
-}
-
-.tabber-panel__header,
-.tabber-panel__main {
-  padding: 15px 15px 30px 15px;
-}
-
-@media (min-width: 990px) {
-  .tabber_large_screen_controls ul li a {
-    font-size: 16px;
-    line-height: 19px;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .tabber__panel {
-    box-shadow: none;
-    margin-bottom: 0;
-    &.active {
-      .tabber-panel__content {
-        padding-top: 0;
-      }
+    &::before {
+      background-color: #0e4072;
+      background-image: url("#{$site-base-url}/assets/custom/img/softmod/icon-minus.svg");
+      border-radius: 0px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      color: #ffffff;
     }
   }
+}
 
-  .tabber_large_screen_controls-side {
-    .tabber_large_screen_controls {
-      li {
-        margin-bottom: 2px;
-      }
-    }
-  }
+.tabber-panel__content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
 
-  .tabber-panel__content-grid {
+.tabber-panel__content-grid {
+  @include medium-large-and-extra-large {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 500px;
@@ -196,9 +143,13 @@ $width__tabs-side: 150px;
       0 1px 10px rgba(0, 0, 0, 0.12);
     border-radius: 3px;
   }
+}
 
-  .tabber-panel__header,
-  .tabber-panel__main {
+.tabber-panel__header,
+.tabber-panel__main {
+  padding: 15px 15px 30px 15px;
+
+  @include medium-large-and-extra-large {
     padding: 30px;
   }
 }
