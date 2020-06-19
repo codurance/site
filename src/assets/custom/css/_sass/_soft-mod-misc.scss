@@ -204,26 +204,10 @@
   display: none;
 }
 
-
-
-
 @media (max-width: 1199px) {
   .wrap-break {
     width: 100%;
     display: block;
-  }
-}
-@media (max-width: 999px) {
-  .case-studies {
-    padding-bottom: 3rem;
-  }
-}
-@media (max-width: 700px) {
-  .case-studies {
-    padding-top: 3rem;
-  }
-  .case-studies:before {
-    right: 0;
   }
 }
 
