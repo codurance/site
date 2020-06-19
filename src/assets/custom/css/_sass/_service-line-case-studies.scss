@@ -86,6 +86,10 @@
   @include mercer-bold;
 }
 
+.case-studies__card-description {
+  @include base;
+}
+
 .case-studies__card-button {
   bottom: 10px;
   left: 10px;
