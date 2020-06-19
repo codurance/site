@@ -9,7 +9,7 @@
     return;
   }
 
-  var TABS_WRAPPER = TABBER.querySelector("[data-tabber_nav]");
+  var TABS_WRAPPER = TABBER.querySelector("[data-large-screen-controls]");
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
     TABS_WRAPPER.querySelectorAll("[data-nav_item]")
   );
@@ -121,7 +121,7 @@
     currentLayout = newLayout;
 
     var noActiveTabs =
-      document.querySelector("[data-tabber_nav] .active") === null;
+      document.querySelector("[data-large-screen-controls] .active") === null;
 
     if (newLayout === "large" && noActiveTabs) {
       displaySustainableChangeTabContent();
