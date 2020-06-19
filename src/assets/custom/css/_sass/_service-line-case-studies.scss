@@ -6,12 +6,12 @@
 }
 
 .service-line-case-studies__cards-wrapper {
+  @include max-width--out-there;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  max-width: 1024px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
