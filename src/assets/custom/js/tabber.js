@@ -121,7 +121,7 @@
   }
 
   function displaySustainableChangeTabContent() {
-    var ID = "#sustainable-change";
+    var ID = "#sustainable-change"; // TODO Replace hardcoded ID as part of https://codurance-online.leankit.com/card/1123517749
     var sustainableChangeTab = TABBER.querySelector('a[href="' + ID + '"]');
     var sustainableChangeItem = TABBER.querySelector(ID);
 
