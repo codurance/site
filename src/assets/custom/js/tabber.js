@@ -13,7 +13,7 @@
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
     TABS_WRAPPER.querySelectorAll("[data-nav_item]")
   );
-  var PANEL = nodeListToArray(TABBER.querySelectorAll(".item"));
+  var PANEL = nodeListToArray(TABBER.querySelectorAll(".tabber__panel"));
 
   function isLargeScreen() {
     var largeScreenTabsAreVisible = TABS_WRAPPER.scrollHeight > 0;
@@ -41,7 +41,7 @@
     var currentLargeScreenControl = TABS_WRAPPER.querySelector(
       "[data-nav_item].active"
     );
-    var currentPanel = TABBER.querySelector(".item.active");
+    var currentPanel = TABBER.querySelector(".tabber__panel.active");
 
     currentLargeScreenControl &&
       currentLargeScreenControl.classList.remove("active");

@@ -21,7 +21,7 @@ $width__tabs-side: 150px;
   margin: 0 auto;
   padding-top: 3.57143rem !important;
 
-  .item {
+  .tabber__panel {
     min-height: 2em; // We need a minimum height for each item or else the accordion buttons would dissapear
     &::before {
       content: attr(
@@ -116,7 +116,7 @@ $width__tabs-side: 150px;
       }
     }
 
-    .item {
+    .tabber__panel {
       min-height: 0;
 
       &::before {
@@ -126,7 +126,7 @@ $width__tabs-side: 150px;
   }
 }
 
-.item {
+.tabber__panel {
   margin-bottom: 10px;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.1);
 
@@ -169,7 +169,7 @@ $width__tabs-side: 150px;
 }
 
 @media all and (min-width: 800px) {
-  .item {
+  .tabber__panel {
     box-shadow: none;
     margin-bottom: 0;
     &.active {
