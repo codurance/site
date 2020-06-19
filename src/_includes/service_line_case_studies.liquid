@@ -3,10 +3,9 @@
   {% include page_location_anchor.html anchor_id=anchor_id %}
   <div class="container">
 
-    <h2 class="text-center--bp768 text-700 text-white">{% t software-modernisation.clients-title %}</h2>
-    <p class="lead text-white text-center--bp768">
-      {% t software-modernisation.clients-intro %}
-    </p>
+    {%- capture title -%}{% t software-modernisation.clients-title %}{%- endcapture -%}
+    {%- capture description -%}{% t software-modernisation.clients-intro %}{%- endcapture -%}
+    {% include section_intro.html class="service-line-case-studies__intro" title=title description=description %}
 
     <div class="case-studies__cases-wrapper g-pt-50">
       <div class="case-studies__case">
