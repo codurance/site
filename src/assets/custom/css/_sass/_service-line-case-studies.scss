@@ -11,30 +11,22 @@
   display: flex;
   align-items: stretch;
   margin: 0 auto;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
-  @include small {
+  @include small{
     flex-direction: column;
     justify-content: center;
   }
-  @include large-and-extra-large {
-    flex-direction: row;
-  }
+  // @include large-and-extra-large {
+  //   flex-direction: row;
+  // }
 }
-// @media (max-width: 1199px) {
-//   .service-line-case-studies__cards-wrapper {
-//   }
-// }
 
 .service-line-case-studies__card {
   display: flex;
   flex-direction: column;
-  // width: 23%;
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 10px rgba(0, 0, 0, 0.12);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  min-width: 230px;
-  max-width: 300px;
-  flex: 1;
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -42,20 +34,29 @@
 
   @include small {
     text-align: center;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  @include medium-large-and-extra-large {
     margin-left: $lateral-space--small;
     margin-right: $lateral-space--small;
-    &:nth-of-type(1) {
-      margin-left: 0;
-    }
-    &:nth-last-of-type(1) {
-      margin-right: 0;
+    margin-bottom: 40px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
     }
   }
+  // @include medium {
+  //   min-width: 230px;
+  //   max-width: 300px;
+  // }
+  // @include large-and-extra-large {
+  //   flex: 1;
+  //   margin-left: $lateral-space--small;
+  //   margin-right: $lateral-space--small;
+  //   &:nth-of-type(1) {
+  //     margin-left: 0;
+  //   }
+  //   &:nth-last-of-type(1) {
+  //     margin-right: 0;
+  //   }
+  // }
 }
 
 @media (max-width: 587px) {
@@ -95,12 +96,12 @@
 
 .wrap-break {
   height: 0;
-  width: 0;
-  display: none;
-}
 
-@media (max-width: 1199px) {
-  .wrap-break {
+  @include large-and-extra-large {
+    width: 0;
+    display: none;
+  }
+  @include medium {
     width: 100%;
     display: block;
   }
