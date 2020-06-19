@@ -2,7 +2,9 @@
 layout: default
 ---
 
-{% assign translations = site.translations[site.lang].[page.service-line] %}
+{%- assign translations = site.translations[site.lang].[page.service-line] -%}
+{%- assign service-line-page-locations = site.data.service_line_page_section_anchors[site.lang] -%}
+
 {%- include service_line_hero.liquid -%}
 {% include service_line_details_section.liquid %}
 

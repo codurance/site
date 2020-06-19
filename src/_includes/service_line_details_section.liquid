@@ -1,14 +1,13 @@
+{%- assign tabber-data = site.data.service_lines_tabber[site.lang].[page.service-line] -%}
+
 <section class="service-line-problems">
-    {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.how-we-solve-your-problems} -%}
+    {%- assign anchor_id = service-line-page-locations.how-we-solve-your-problems -%}
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
     {% capture title %}{% t software-modernisation.problems-title %}{% endcapture %}
     {% capture description %}{% t software-modernisation.problems-introduction %}{% endcapture %}
-    {%- capture href -%}
-        {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
-    {%- endcapture -%}
+    {%- capture cta_href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
     {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
-    {% include section_intro.html class="service-line-problems__intro" cta_href=href cta_text=cta_text description=description title=title %}
-
+    {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
     {% include soft_mod_tabber.liquid %}
 </section>

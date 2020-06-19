@@ -1,15 +1,15 @@
 <section class="{{ include.class }}">
   <div class="compass-teaser">
-    {%- assign anchor_id = {site.translations[site.lang].software-modernisation.page-sections.compass} -%}
+    {%- assign anchor_id = site.translations[site.lang].compass-teaser.anchor-id -%}
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
-    <p class="compass-teaser__description">{% t software-modernisation.compassCTA-subheading %}</p>
+    <p class="compass-teaser__description">{% t compass-teaser.subheading %}</p>
     {% if site.lang == 'es' %}
         {% assign href = "http://compass.codurance.es" %}
       {% else %}
         {% assign href = "http://compass.codurance.com" %}
     {% endif %}
-    {% assign text = site.translations[site.lang].software-modernisation.compassCTA-button %}
+    {% assign text = site.translations[site.lang].compass-teaser.button %}
     {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
   </div>
 </section>
