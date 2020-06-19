@@ -82,6 +82,10 @@
   height: 100%;
 }
 
+.case-studies__card-title {
+  @include mercer-bold;
+}
+
 .case-studies__card-button {
   bottom: 10px;
   left: 10px;
