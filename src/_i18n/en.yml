@@ -634,6 +634,9 @@ compass-teaser:
     subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
     button: Try our Compass tool
 
+get-in-touch:
+  anchor-id: get-in-touch
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible

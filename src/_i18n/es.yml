@@ -643,6 +643,9 @@ compass-teaser:
   subheading: Evalúa la madurez del desarrollo de software de tu organización
   button: Empezar
 
+get-in-touch:
+  anchor-id: contacto
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación

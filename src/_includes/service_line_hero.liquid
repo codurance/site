@@ -10,9 +10,7 @@
     <p class="service-line-hero__description">
       {{ translations.hero-description }}
     </p>
-    {%- capture href -%}
-      {%- if site.lang == 'es' -%}#contacto{%- else -%}#get-in-touch{%- endif -%}
-    {%- endcapture -%}
+    {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
     {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
     {% include cta_primary_link.html color='coral' href=href text=text %}
   </div>
