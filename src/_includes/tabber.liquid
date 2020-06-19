@@ -1,62 +1,58 @@
-{%- assign tabber-data = site.data.service_lines_tabber[site.lang].[example] -%}
+{%- assign tabber-data = site.data.service_lines_tabber.en.example-tabber -%}
 
 <div class="tabber" data-tabber>
     <div class="tabber__inner">
         <nav class="tabber__nav" data-tabber_nav>
             <ul class="tabber__nav-list">
-                <li class="tabber__nav-item active" data-nav_item data-nav_item_id="sustainable-change">{% t software-modernisation.sustainable-change-title %}</li>
-                <li class="tabber__nav-item" data-nav_item data-nav_item_id="innovation">{% t software-modernisation.innovation-title %}</li>
+                <li class="tabber__nav-item active" data-nav_item data-nav_item_id="sustainable-change">{{ tabber-data.tab-one-title }}</li>
+                <li class="tabber__nav-item" data-nav_item data-nav_item_id="innovation">{{ tabber-data.tab-two-title }}</li>
             </ul>
         </nav>
-
         <article id="sustainable-change" class="item active" data-title="Sustainable Change">
             <div class="item-content">
                 <div class="item-content-grid">
                     <div class="item-content-grid__item-left bg-blue bg-sustainable-change">
-                        <span class="h2 text-900 text-white">{% t software-modernisation.sustainable-change-intro %}</span>
+                        <span class="h2 text-900 text-white">{{ tabber-data.tab-one-intro }}</span>
                     </div>
                     <div class="item-content-grid__item-right bg-white g-pt-35">
-                        <span class="h4 text-700">{% t software-modernisation.what %}</span>
+                        <span class="h4 text-700">{{ tabber-data.what }}</span>
                         <ul class="g-pb-15 list-ticks">
-                            <li>{% t software-modernisation.sus-change-li-1 %}</li>
-                            <li>{% t software-modernisation.sus-change-li-2 %}</li>
-                            <li>{% t software-modernisation.sus-change-li-3 %}</li>
-                            <li>{% t software-modernisation.sus-change-li-4 %}</li>
-                            <li>{% t software-modernisation.sus-change-li-5 %}</li>
+                            <li>{{ tabber-data.tab-one-list-item-one }}</li>
+                            <li>{{ tabber-data.tab-one-list-item-two }}</li>
+                            <li>{{ tabber-data.tab-one-list-item-three }}</li>
+                            <li>{{ tabber-data.tab-one-list-item-four }}</li>
+                            <li>{{ tabber-data.tab-one-list-item-five }}</li>
                         </ul>
-                        <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
+                        <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
                         <p>
-                            {% t software-modernisation.sus-change-how-details %}
+                            {{ tabber-data.tab-one-details }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </article>
+        <article id="innovation" class="item" data-title="Innovation">
+            <div class="item-content">
+                <div class="item-content-grid">
+                    <div class="item-content-grid__item-left bg-blue bg-innovation">
+                        <span class="h2 text-900 text-white">{{ tabber-data.tab-two-intro }}</span>
+                    </div>
+                    <div class="item-content-grid__item-right bg-white g-pt-35">
+                        <span class="h4 text-700">{{ tabber-data.what }}</span>
+                        <ul class="g-pb-15 list-ticks">
+                            <li>{{ tabber-data.tab-two-list-item-one }}</li>
+                            <li>{{ tabber-data.tab-two-list-item-two }}</li>
+                            <li>{{ tabber-data.tab-two-list-item-three }}</li>
+                            <li>{{ tabber-data.tab-two-list-item-four }}</li>
+                            <li>{{ tabber-data.tab-two-list-item-five }}</li>
+                        </ul>
+                        <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
+                        <p>
+                            {{ tabber-data.tab-two-details }}
                         </p>
                     </div>
                 </div>
             </div>
         </article>
-
-        <article id="innovation" class="item" data-title="Innovation">
-            <div class="item-content">
-                <div class="item-content-grid">
-                    <div class="item-content-grid__item-left bg-blue bg-innovation">
-                        <span class="h2 text-900 text-white">{% t software-modernisation.innovation-intro %}</span>
-                    </div>
-                    <div class="item-content-grid__item-right bg-white g-pt-35">
-                        <span class="h4 text-700">{% t software-modernisation.what %}</span>
-                        <ul class="g-pb-15 list-ticks">
-                            <li>{% t software-modernisation.innovation-li-1 %}</li>
-                            <li>{% t software-modernisation.innovation-li-2 %}</li>
-                            <li>{% t software-modernisation.innovation-li-3 %}</li>
-                            <li>{% t software-modernisation.innovation-li-4 %}</li>
-                        </ul>
-                        <span class="h4 text-700 g-mt-25">{% t software-modernisation.how %}</span>
-                        <p>
-                            {% t software-modernisation.innovation-how-details %}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </article><!-- #innovation -->
-
-
-
     </div>
 </div>
