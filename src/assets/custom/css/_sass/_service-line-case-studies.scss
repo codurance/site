@@ -5,7 +5,7 @@
   }
 }
 
-.case-studies__cases-wrapper {
+.service-line-case-studies__cards-wrapper {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +26,7 @@
   flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
-  .case-studies__cases-wrapper {
+  .service-line-case-studies__cards-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
