@@ -198,33 +198,6 @@
     Module - Case Studies
 ********************************/
 
-.case-studies {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 4rem;
-  position: relative;
-}
-.case-studies:before {
-  content: "";
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 7%;
-  background: -o-linear-gradient(
-    56deg,
-    rgba(252, 249, 241, 1) 52%,
-    rgba(252, 244, 244, 1) 100%
-  );
-  background: linear-gradient(
-    34deg,
-    rgba(252, 249, 241, 1) 52%,
-    rgba(252, 244, 244, 1) 100%
-  );
-  z-index: -1;
-}
-
 .wrap-break {
   height: 0;
   width: 0;
