@@ -267,7 +267,7 @@
 - id: chris-bimson
   name: Chris Bimson
   image: /assets/custom/img/team/chris_bimson.jpg
-  role: Software Craftsman
+  role: Principal Craftsperson
   fullDescription:
     <p>Chris is a programmer, team leader and certified Scrum Master who helps teams write clean, well-crafted code, create great products and deliver them regularly and reliably.</p>
     <p>His first programming experience was typing BASIC listings from various magazines into an Atari 800XL some time in the late 80’s or early 90’s. He has been developing software for money since 2002, primarily on Windows, progressing from Delphi to .NET and into the cloud with Azure.</p>
