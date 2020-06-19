@@ -13,7 +13,7 @@
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
     TABS_WRAPPER.querySelectorAll("[data-nav_item]")
   );
-  var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
+  var PANEL = nodeListToArray(TABBER.querySelectorAll(".item"));
 
   function isLargeScreen() {
     var largeScreenTabsAreVisible = TABS_WRAPPER.scrollHeight > 0;
@@ -24,8 +24,8 @@
   setUpResizeListener();
 
   function setUpClickHandlers() {
-    ITEMS.forEach(function (item) {
-      item.onclick = handleItemClick;
+    PANEL.forEach(function (panel) {
+      panel.onclick = handleItemClick;
     });
 
     LARGE_SCREEN_CONTROLS.forEach(function (control) {
@@ -37,18 +37,23 @@
     makeTabActive(e.target.dataset.nav_item_id);
   }
 
-  function makeTabActive(navItemId) {
-    var currentTab = TABS_WRAPPER.querySelector("[data-nav_item].active");
-    var currentItem = TABBER.querySelector(".item.active");
+  function makeTabActive(tabId) {
+    var currentLargeScreenControl = TABS_WRAPPER.querySelector(
+      "[data-nav_item].active"
+    );
+    var currentPanel = TABBER.querySelector(".item.active");
 
-    currentTab && currentTab.classList.remove("active");
-    currentItem && currentItem.classList.remove("active");
+    currentLargeScreenControl &&
+      currentLargeScreenControl.classList.remove("active");
+    currentPanel && currentPanel.classList.remove("active");
 
-    var newTab = TABS_WRAPPER.querySelector("[data-nav_item_id='" + navItemId + "']");
-    var newItem = TABBER.querySelector(navItemId);
+    var newLargeScreenControl = TABS_WRAPPER.querySelector(
+      "[data-tab-id='" + tabId + "']"
+    );
+    var newPanel = TABBER.querySelector(tabId);
 
-    newTab && newTab.classList.add("active");
-    newItem && newItem.classList.add("active");
+    newLargeScreenControl && newLargeScreenControl.classList.add("active");
+    newPanel && newPanel.classList.add("active");
   }
 
   function handleItemClick() {
@@ -115,7 +120,8 @@
     }
     currentLayout = newLayout;
 
-    var noActiveTabs = document.querySelector("[data-tabber_nav] .active") === null;
+    var noActiveTabs =
+      document.querySelector("[data-tabber_nav] .active") === null;
 
     if (newLayout === "large" && noActiveTabs) {
       displaySustainableChangeTabContent();
