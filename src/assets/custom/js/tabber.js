@@ -10,7 +10,9 @@
   }
 
   var TABS_WRAPPER = TABBER.querySelector("[data-tabber_nav]");
-  var TABS = nodeListToArray(TABS_WRAPPER.querySelectorAll("[data-nav_item]"));
+  var LARGE_SCREEN_CONTROLS = nodeListToArray(
+    TABS_WRAPPER.querySelectorAll("[data-nav_item]")
+  );
   var ITEMS = nodeListToArray(TABBER.querySelectorAll(".item"));
 
   function isLargeScreen() {
@@ -26,12 +28,12 @@
       item.onclick = handleItemClick;
     });
 
-    TABS.forEach(function (tab) {
-      tab.onclick = handleTabClick;
+    LARGE_SCREEN_CONTROLS.forEach(function (control) {
+      control.onclick = handleLargeScreenControl;
     });
   }
 
-  function handleTabClick(e) {
+  function handleLargeScreenControl(e) {
     makeTabActive(e.target.dataset.nav_item_id);
   }
 
