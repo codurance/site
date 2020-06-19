@@ -254,10 +254,6 @@
     width: 100%;
     display: block;
   }
-  .case-studies__case {
-    margin: 0 1.5rem 3rem;
-    width: 80%;
-  }
 }
 @media (max-width: 999px) {
   .case-studies {
@@ -270,17 +266,6 @@
   }
   .case-studies:before {
     right: 0;
-  }
-}
-@media (max-width: 587px) {
-  .case-studies__case {
-    text-align: center;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .case-studies__case .btn {
-    width: 90%;
   }
 }
 
