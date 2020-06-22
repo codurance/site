@@ -9,17 +9,10 @@
   @include max-width--out-there;
   align-items: stretch;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 50px;
-
-  @include small{
-    flex-direction: column;
-    justify-content: center;
-  }
-  @include medium-and-large {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 .service-line-case-studies__card {
@@ -38,6 +31,7 @@
   @include small {
     margin-bottom: 40px;
     text-align: center;
+    max-width: 500px;
 
     &:nth-last-child(1) {
       margin-bottom: 0;
