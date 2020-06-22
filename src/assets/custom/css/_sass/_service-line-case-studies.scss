@@ -59,12 +59,6 @@
   // }
 }
 
-@media (max-width: 587px) {
-  .service-line-case-studies__card .btn {
-    width: 90%;
-  }
-}
-
 .case-studies__card-image {
   width: 100%;
   padding-top: 62%;
@@ -92,6 +86,10 @@
   left: 10px;
   position: absolute;
   right: 10px;
+
+  @include small {
+    width: 90%;
+  }
 }
 
 .wrap-break {
