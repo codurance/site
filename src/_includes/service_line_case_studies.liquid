@@ -1,0 +1,57 @@
+<section class="service-line-case-studies">
+  {%- assign anchor_id = service-line-page-locations.how-we-help-our-clients -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
+  {%- capture title -%}{% t service-line-case-studies.section-title %}{%- endcapture -%}
+  {%- capture description -%}{% t service-line-case-studies.section-description %}{%- endcapture -%}
+  {% include section_intro.html class="service-line-case-studies__intro" title=title description=description %}
+
+  <div class="service-line-case-studies__cards-wrapper">
+    <div class="service-line-case-studies__card">
+      <div class="case-studies__card-image" style="background-image: url(https://info.codurance.com/hubfs/thumb-eclinicalworks.png);"
+      >
+      </div>
+      <div class="case-studies__card-text-container">
+        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-three.heading %}</h3>
+        <p class="case-studies__card-description">{% t service-line-case-studies.card-three.subheading %}</p>
+        {% assign href = site.translations[site.lang].service-line-case-studies.card-three.url %}
+        {% assign text = site.translations[site.lang].service-line-case-studies.card-three.button %}
+        {% include cta_primary_link.html color='coral' target="_blank" href=href text=text %}
+      </div>
+    </div>
+    <div class="service-line-case-studies__card">
+      <div class="case-studies__card-image" style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-asos.png);">
+      </div>
+      <div class="case-studies__card-text-container">
+        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-one.heading %}</h3>
+        <p class="case-studies__card-description">{% t service-line-case-studies.card-one.subheading %}</p>
+        {% assign href = site.translations[site.lang].service-line-case-studies.card-one.url %}
+        {% assign text = site.translations[site.lang].service-line-case-studies.card-one.button %}
+        {% include cta_primary_link.html color='coral' target="_blank" href=href text=text %}
+      </div>
+    </div>
+    <div class="wrap-break"></div>
+    <div class="service-line-case-studies__card">
+      <div class="case-studies__card-image" style="background-image: url(https://info.codurance.com/hubfs/thumb-mango.png);">
+      </div>
+      <div class="case-studies__card-text-container">
+        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-two.heading %}</h3>
+        <p class="case-studies__card-description">{% t service-line-case-studies.card-two.subheading %}</p>
+        {% assign href = site.translations[site.lang].service-line-case-studies.card-two.url %}
+        {% assign text = site.translations[site.lang].service-line-case-studies.card-two.button %}
+        {% include cta_primary_link.html color='coral' target="_blank" href=href text=text %}
+      </div>
+    </div>
+    <div class="service-line-case-studies__card">
+      <div class="case-studies__card-image" style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-BestSecret.jpg);">
+      </div>
+      <div class="case-studies__card-text-container">
+        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-four.heading %}</h3>
+        <p class="case-studies__card-description">{% t service-line-case-studies.card-four.subheading %}</p>
+        {% assign href = site.translations[site.lang].service-line-case-studies.card-four.url %}
+        {% assign text = site.translations[site.lang].service-line-case-studies.card-four.button %}
+        {% include cta_primary_link.html color='coral' target="_blank" href=href text=text %}
+      </div>
+    </div>
+  </div>
+</section>
