@@ -156,6 +156,13 @@
 
 .tabber-panel__header {
   background-color: $navy;
-  background-position: center bottom 20px;
-  background-repeat: no-repeat;
+
+  @include small {
+    background-image: none !important;
+  }
+  @include medium-large-and-extra-large {
+    background-position: center bottom 20px;
+    background-repeat: no-repeat;
+  }
 }
+
