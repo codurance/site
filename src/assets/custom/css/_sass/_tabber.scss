@@ -166,3 +166,7 @@
   }
 }
 
+.tabber-panel__title {
+  @include freed-bold;
+  color: white;
+}
