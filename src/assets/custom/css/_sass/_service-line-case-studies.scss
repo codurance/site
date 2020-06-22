@@ -11,15 +11,15 @@
   display: flex;
   align-items: stretch;
   margin: 0 auto;
-  // flex-wrap: wrap;
 
   @include small{
     flex-direction: column;
     justify-content: center;
   }
-  // @include large-and-extra-large {
-  //   flex-direction: row;
-  // }
+  @include medium-and-large {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .service-line-case-studies__card {
@@ -27,6 +27,7 @@
   flex-direction: column;
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 10px rgba(0, 0, 0, 0.12);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-width: 230px;
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -42,21 +43,23 @@
       margin-bottom: 0;
     }
   }
-  // @include medium {
-  //   min-width: 230px;
-  //   max-width: 300px;
-  // }
-  // @include large-and-extra-large {
-  //   flex: 1;
-  //   margin-left: $lateral-space--small;
-  //   margin-right: $lateral-space--small;
-  //   &:nth-of-type(1) {
-  //     margin-left: 0;
-  //   }
-  //   &:nth-last-of-type(1) {
-  //     margin-right: 0;
-  //   }
-  // }
+  @include medium-and-large {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  @include medium-large-and-extra-large {
+    margin-left: $lateral-space--small;
+    margin-right: $lateral-space--small;
+  }
+  @include extra-large {
+    flex: 1;
+    &:nth-of-type(1) {
+      margin-left: 0;
+    }
+    &:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+  }
 }
 
 .case-studies__card-image {
@@ -86,21 +89,19 @@
   left: 10px;
   position: absolute;
   right: 10px;
-
-  @include small {
-    width: 90%;
-  }
 }
 
 .wrap-break {
   height: 0;
 
-  @include large-and-extra-large {
-    width: 0;
+  @include small {
     display: none;
   }
-  @include medium {
+  @include medium-and-large {
     width: 100%;
     display: block;
   }
+  // @include extra-large {
+  //   display: none;
+  // }
 }
