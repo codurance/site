@@ -86,6 +86,17 @@
   background-color: #fb7268;
 }
 
+@media (max-width: 799px) {
+  .bg-placeholder,
+  .bg-sustainable-change,
+  .bg-innovation,
+  .bg-technology,
+  .bg-business-alignment,
+  .bg-people-culture,
+  .bg-risk-management {
+    background-image: none !important;
+  }
+}
 @media (min-width: 800px) {
   .bg-placeholder {
     background-image: url("#{$site-base-url}/assets/custom/img/placeholders/meta-social-image.png");
