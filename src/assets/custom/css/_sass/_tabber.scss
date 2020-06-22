@@ -166,7 +166,47 @@
   }
 }
 
+.tabber-panel__main {
+  background-color: white;
+  padding-top: 35px;
+}
+
 .tabber-panel__title {
   @include freed-bold;
   color: white;
+}
+
+.tabber-panel__subtitle {
+  @include mercer-bold;
+  margin-bottom: 15px;
+}
+
+.tabber-panel__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.tabber-panel__tick-item {
+  @include base-bold;
+  padding: 0 0 5px 30px;
+  position: relative;
+
+  &:before {
+    background-color: transparent;
+    background-image: url("#{$site-base-url}/assets/custom/img/softmod/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    content: "";
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 2px;
+    width: 20px;
+  }
+}
+
+.tabber-panel__details {
+  @include base;
+  margin: 0;
 }

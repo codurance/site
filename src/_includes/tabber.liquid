@@ -14,19 +14,17 @@
                     <div class="tabber-panel__header" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-one-image-path }})">
                         <h3 class="tabber-panel__title">{{ tabber-data.tab-one-intro }}</h3>
                     </div>
-                    <div class="tabber-panel__main bg-white g-pt-35">
-                        <span class="h4 text-700">{{ tabber-data.what }}</span>
-                        <ul class="g-pb-15 list-ticks">
-                            <li>{{ tabber-data.tab-one-list-item-one }}</li>
-                            <li>{{ tabber-data.tab-one-list-item-two }}</li>
-                            <li>{{ tabber-data.tab-one-list-item-three }}</li>
-                            <li>{{ tabber-data.tab-one-list-item-four }}</li>
-                            <li>{{ tabber-data.tab-one-list-item-five }}</li>
+                    <div class="tabber-panel__main">
+                        <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].what }}</h4>
+                        <ul class="tabber-panel__list">
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-one-list-item-one }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-one-list-item-two }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-one-list-item-three }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-one-list-item-four }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-one-list-item-five }}</li>
                         </ul>
-                        <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
-                        <p>
-                            {{ tabber-data.tab-one-details }}
-                        </p>
+                        <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
+                        <p class="tabber-panel__details">{{ tabber-data.tab-one-details }}</p>
                     </div>
                 </div>
             </div>
@@ -37,19 +35,17 @@
                     <div class="tabber-panel__header" style="background-image: url({{ site.baseurl }}{{ tabber-data.tab-two-image-path }})">
                         <h3 class="tabber-panel__title">{{ tabber-data.tab-two-intro }}</h3>
                     </div>
-                    <div class="tabber-panel__main bg-white g-pt-35">
-                        <span class="h4 text-700">{{ tabber-data.what }}</span>
-                        <ul class="g-pb-15 list-ticks">
-                            <li>{{ tabber-data.tab-two-list-item-one }}</li>
-                            <li>{{ tabber-data.tab-two-list-item-two }}</li>
-                            <li>{{ tabber-data.tab-two-list-item-three }}</li>
-                            <li>{{ tabber-data.tab-two-list-item-four }}</li>
-                            <li>{{ tabber-data.tab-two-list-item-five }}</li>
+                    <div class="tabber-panel__main">
+                        <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].what }}</h4>
+                        <ul class="tabber-panel__list">
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-two-list-item-one }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-two-list-item-two }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-two-list-item-three }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-two-list-item-four }}</li>
+                            <li class="tabber-panel__tick-item">{{ tabber-data.tab-two-list-item-five }}</li>
                         </ul>
-                        <span class="h4 text-700 g-mt-25">{{ tabber-data.how }}</span>
-                        <p>
-                            {{ tabber-data.tab-two-details }}
-                        </p>
+                        <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
+                        <p class="tabber-panel__details">{{ tabber-data.tab-two-details }}</p>
                     </div>
                 </div>
             </div>
