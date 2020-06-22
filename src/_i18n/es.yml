@@ -661,26 +661,6 @@ software-modernisation:
   clients-title: Cómo hemos ayudado a nuestros clientes
   clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
 
-  card-1-heading: ASOS
-  card-1-subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
-  card-1-button: Descarga el Case Study
-  card-1-url: https://info.codurance.com/es/asos-case-study
-
-  card-2-heading: Mango
-  card-2-subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
-  card-2-button: Descarga el Case Study
-  card-2-url: https://info.codurance.com/es/mango-case-study
-
-  card-3-heading: eClinicalWorks
-  card-3-subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
-  card-3-button: Descarga el Case Study
-  card-3-url: https://info.codurance.com/es/eclinicalworks-case-study
-
-  card-4-heading: BestSecret
-  card-4-subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
-  card-4-button: Descarga el Case Study
-  card-4-url: https://info.codurance.com/es/best-secret-case-study
-
   testimonials-heading: La opinión de nuestros clientes
   testimonials-subheading: ¿Qué dicen nuestros clientes de nuestro trabajo?
   testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
@@ -728,3 +708,28 @@ service-line-example:
   curated-publications:
     intro-title: ES example of publications section
     intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+service-line-case-studies:
+  card-one:
+    heading: ASOS
+    subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/asos-case-study
+
+  card-two:
+    heading: Mango
+    subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/mango-case-study
+
+  card-three:
+    heading: eClinicalWorks
+    subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/eclinicalworks-case-study
+
+  card-four:
+    heading: BestSecret
+    subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/best-secret-case-study
