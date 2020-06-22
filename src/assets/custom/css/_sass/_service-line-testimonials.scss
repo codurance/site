@@ -26,3 +26,12 @@
   padding-top: 30px !important;
   text-align: center;
 }
+
+.flexslider__text {
+  @include base;
+}
+
+.flexslider__footnote {
+  @include base;
+  color: $navy;
+}
