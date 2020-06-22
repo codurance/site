@@ -658,9 +658,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  clients-title: Cómo hemos ayudado a nuestros clientes
-  clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
-
   testimonials-heading: La opinión de nuestros clientes
   testimonials-subheading: ¿Qué dicen nuestros clientes de nuestro trabajo?
   testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
@@ -710,6 +707,9 @@ service-line-example:
     intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 service-line-case-studies:
+  section-title: Cómo hemos ayudado a nuestros clientes
+  section-description: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
+
   card-one:
     heading: ASOS
     subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
