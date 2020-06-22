@@ -78,6 +78,7 @@
   position: relative;
 
   @include medium-large-and-extra-large {
+    height: 100%;
     min-height: 230px;
   }
 }
