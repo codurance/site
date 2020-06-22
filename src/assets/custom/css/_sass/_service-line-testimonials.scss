@@ -7,3 +7,22 @@
     padding-bottom: 60px;
   }
 }
+
+.service-line__flexslider-wrapper {
+  @include max-width--column;
+}
+
+.flexslider__inner {
+  border-radius: 7px;
+  box-shadow: 0 1px 3px rgba(255,255,255,0.12),0 1px 10px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.flexslider__item {
+  padding-bottom: 30px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 30px !important;
+  text-align: center;
+}
