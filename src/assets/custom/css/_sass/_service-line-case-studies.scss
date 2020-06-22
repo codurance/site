@@ -70,13 +70,16 @@
 }
 
 .case-studies__card-text-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 75px;
+  padding: 15px;
   background: white;
   position: relative;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include medium-large-and-extra-large {
+    min-height: 230px;
+  }
 }
 
 .case-studies__card-title {
@@ -85,13 +88,11 @@
 
 .case-studies__card-description {
   @include base;
-}
+  flex-grow: 1;
 
-.case-studies__card-button {
-  bottom: 10px;
-  left: 10px;
-  position: absolute;
-  right: 10px;
+  @include small {
+    margin-bottom: 30px;
+  }
 }
 
 .wrap-break {
