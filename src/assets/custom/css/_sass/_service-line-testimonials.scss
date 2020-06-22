@@ -1,0 +1,9 @@
+.service-line__testimonials-intro {
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+  @include medium-large-and-extra-large {
+    padding-bottom: 60px;
+  }
+}

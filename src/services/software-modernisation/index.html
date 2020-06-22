@@ -100,36 +100,3 @@ service-line: software-modernisation
 
   </div>
 </section><!-- Case Studies -->
-
-<section class="service-line__testimonials">
-  {%- assign anchor_id = service-line-page-locations.testimonials -%}
-  {% include page_location_anchor.html anchor_id=anchor_id %}
-
-  {% capture title %}{% t software-modernisation.testimonials-heading %}{% endcapture %}
-  {% capture description %}{% t software-modernisation.testimonials-subheading %}{% endcapture %}
-  {% include section_intro.html class="service-line__testimonials-intro" description=description title=title %}
-
-  <div class="container-slim center">
-    <div class="flexslider">
-    <ul class="slides box-shadow">
-      <li class="g-px-50 g-py-30 text-center">
-        <p>{% t software-modernisation.testimonials-bestsecret-p1 %}</p>
-        <p>{% t software-modernisation.testimonials-bestsecret-p2 %}</p>
-        <span class="small text-navy text-700">{% t software-modernisation.bestsecret-name-and-position %}</span>
-      </li>
-      <li class="g-px-50 g-py-30 text-center">
-        <p>{% t software-modernisation.testimonials-cazoo %}</p>
-        <span class="small text-navy text-700">{% t software-modernisation.cazoo-name-and-position %}</span>
-      </li>
-      <li class="g-px-50 g-py-30 text-center">
-        <p>{% t software-modernisation.testimonials-hedgefund %}</p>
-        <span class="small text-navy text-700">{% t software-modernisation.hedgefund-name-and-position %}</span>
-      </li>
-      <li class="g-px-50 g-py-30 text-center">
-        <p>{% t software-modernisation.testimonials-ecw %}</p>
-        <span class="small text-navy text-700">{% t software-modernisation.ecw-name-and-position %}</span>
-      </li>
-    </ul>
-    </div>
-  </div>
-</section>
