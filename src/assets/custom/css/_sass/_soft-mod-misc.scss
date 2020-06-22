@@ -87,53 +87,33 @@
 }
 
 @media (min-width: 800px) {
-  .bg-placeholder {
-    background-image: url("#{$site-base-url}/assets/custom/img/placeholders/meta-social-image.png");
-    background-position: center bottom 40px;
-    background-repeat: no-repeat;
-    background-size: 55% auto;
-  }
-
-  .bg-sustainable-change {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-sustainable-change.svg");
-    background-position: center bottom 40px;
-    background-repeat: no-repeat;
-    background-size: 55% auto;
-  }
-
-  .bg-innovation {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-innovation.svg");
-    background-position: center bottom 40px;
-    background-repeat: no-repeat;
-    background-size: 45% auto;
-  }
-
-  .bg-technology {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-technology.svg");
-    background-position: center bottom 30px;
-    background-repeat: no-repeat;
-    background-size: 70% auto;
-  }
-
-  .bg-business-alignment {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-business-alignment.svg");
-    background-position: center bottom 40px;
-    background-repeat: no-repeat;
-    background-size: 50% auto;
-  }
-
-  .bg-people-culture {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-people-culture.svg");
-    background-position: center bottom 50px;
-    background-repeat: no-repeat;
-    background-size: 60% auto;
-  }
-
+  .bg-placeholder,
+  .bg-sustainable-change,
+  .bg-innovation,
+  .bg-technology,
+  .bg-business-alignment,
+  .bg-people-and-culture,
   .bg-risk-management {
-    background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-risk-management.svg");
-    background-position: center bottom 50px;
+    background-position: center bottom 20px;
     background-repeat: no-repeat;
-    background-size: 40% auto;
+  }
+  .bg-sustainable-change {
+    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg");
+  }
+  .bg-innovation {
+    background-image: url("#{$site-base-url}/assets/custom/service-lines/software-modernisation/tabber-innovation.svg");
+  }
+  .bg-technology {
+    background-image: url("#{$site-base-url}/assets/custom/service-lines/software-modernisation/tabber-technology.svg");
+  }
+  .bg-business-alignment {
+    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg");
+  }
+  .bg-people-and-culture {
+    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg");
+  }
+  .bg-risk-management {
+    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg");
   }
 }
 
