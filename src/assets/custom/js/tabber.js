@@ -3,14 +3,10 @@
     return Array.prototype.slice.call(nodeList);
   }
 
-  var ACTIVE_CLASS = "active";
-
   var SELECTORS = {
-    LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
-    LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
-    PANEL_ACTIVE: ".tabber__panel." + ACTIVE_CLASS,
-    PANEL: ".tabber__panel",
     TABBER: "[data-tabber]",
+    LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
+    PANEL: "[data-tabber_panel]",
   };
 
   var TABBER = window.document.querySelector(SELECTORS.TABBER);
@@ -18,6 +14,12 @@
   if (TABBER === null) {
     return;
   }
+
+  var ACTIVE_CLASS = "active";
+
+  SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE =
+    SELECTORS.LARGE_SCREEN_CONTROL + "." + ACTIVE_CLASS;
+  SELECTORS.PANEL_ACTIVE = SELECTORS.PANEL + "." + ACTIVE_CLASS;
 
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
     TABBER.querySelectorAll(SELECTORS.LARGE_SCREEN_CONTROL)

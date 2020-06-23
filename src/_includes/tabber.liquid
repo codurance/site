@@ -7,7 +7,7 @@
   </nav>
   {% for tab in include.tabber_data %}
     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
-    <article id="{{ tab.id }}" class="tabber__panel tabber-panel {{ active_class }}" data-title="{{ tab.title }}">
+    <article id="{{ tab.id }}" class="tabber__panel tabber-panel {{ active_class }}" data-tabber_panel data-title="{{ tab.title }}">
       <div class="tabber-panel__content">
           <div class="tabber-panel__content-grid">
             <div class="tabber-panel__header" style="background-image: url({{ site.baseurl }}{{ tab.image-path }})">
