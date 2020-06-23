@@ -24,7 +24,7 @@ If you are reading this article, you are probably thinking of modernising some c
 
 Stating a clear business case is essential to get your project off the ground. It will allow you to convey your idea and start the conversation around what needs to happen and how the business will benefit from it.
 
-In this article, we answer some of the most common questions that come up when helping our clients build their business cases for [software modernisation initiatives]({{site.baseurl}}/services/software-modernisation/). We share ideas we use when approaching these scenarios and some of our recommendations. We give examples of how you can approach your research and other aspects of your business case. We will also be using a simple modernisation case that entails migrating from on-premise infrastructure to a cloud-native solution to illustrate some of the points.
+In this article, we answer some of the most common questions that come up when helping our clients build their business cases for [software modernisation](https://codurance.com/services/software-modernisation/) initiatives. We share ideas we use when approaching these scenarios and some of our recommendations. We give examples of how you can approach your research and other aspects of your business case. We will also be using a simple modernisation case that entails migrating from on-premise infrastructure to a cloud-native solution to illustrate some of the points.
 
 {% include soft-mod-cheat-sheet-banner.html %}
 
@@ -65,7 +65,7 @@ The main topics you should focus on:
 - What the payoff is for the audience and business
 
 
-On this particular topic, you may want to check out our <a href="https://info.codurance.com/en/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>. 
+On this particular topic, you may want to check out our <a href="https://info.codurance.com/en/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>.
 
 
 ### Motivation
