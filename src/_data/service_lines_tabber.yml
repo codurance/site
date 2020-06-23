@@ -62,7 +62,8 @@ en:
     tab-six-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
   example-tabber:
-    - id: Tab 1
+    - id: tab-1
+      title: Tab 1
       tab-one-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       tab-one-list-item-one: Reduce lead time
       tab-one-list-item-two: Reduce cost of change
@@ -72,7 +73,8 @@ en:
       tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
       tab-one-image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
-    - id: Tab 2
+    - id: tab-2
+      title: Tab 2
       tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
       tab-two-list-item-one: Stay competitive
       tab-two-list-item-two: Easy to experiment

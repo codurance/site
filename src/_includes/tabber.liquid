@@ -6,7 +6,7 @@
             <ul class="tabber_large_screen_controls-list">
                 {% for tab in tabber-data %}
                     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
-                    <li class="tabber_large_screen_controls-item {{ active_class }}" data-large_screen_control data-related_tab="sustainable-change">{{ tab.id }}</li>
+                    <li class="tabber_large_screen_controls-item {{ active_class }}" data-large_screen_control data-related_tab={{ tab.id }}>{{ tab.title }}</li>
                 {% endfor %}
             </ul>
         </nav>
