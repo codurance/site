@@ -8,5 +8,6 @@
     {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
     {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
 
-    {% include tabber.liquid %}
+    {% assign tabber_data = site.data.service_lines_tabber[site.lang].[page.service-line] %}
+    {% include tabber.liquid class="ui-components__example" tabber_data=tabber_data %}
 </section>

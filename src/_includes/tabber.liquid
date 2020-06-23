@@ -1,18 +1,14 @@
-{%- assign tabber-data = site.data.service_lines_tabber.en.example-tabber -%}
-
-{#{%- assign tabber-data = site.data.service_lines_tabber[site.lang].[page.service-line] -%}#}
-
 <div class="tabber {{ include.class }}" data-tabber>
     <div class="tabber__inner">
         <nav class="tabber_large_screen_controls" data-large_screen_controls>
             <ul class="tabber_large_screen_controls-list">
-                {% for tab in tabber-data %}
+                {% for tab in include.tabber_data %}
                     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
                     <li class="tabber_large_screen_controls-item {{ active_class }}" data-large_screen_control data-related_tab="{{ tab.id }}">{{ tab.title }}</li>
                 {% endfor %}
             </ul>
         </nav>
-        {% for tab in tabber-data %}
+        {% for tab in include.tabber_data %}
             {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
             <article id="{{ tab.id }}" class="tabber__panel tabber-panel {{ active_class }}" data-title="{{ tab.title }}">
                 <div class="tabber-panel__content">
