@@ -3,10 +3,11 @@
   <div class="in_page_banner__main">
     <div class="in_page_banner__inner">
       {% if include.title %}
-        <h3 class="in_page_banner__title">{{ include.title }}</h3>        
+        <h3 class="in_page_banner__title">{{ include.title }}</h3>
       {% endif %}
       <p class="in_page_banner__description">{{ include.description }}</p>
-      {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %}
+      {%- comment -%} {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %} {%- endcomment -%}
+      {%- include soft_mod_hubspot_in_page_banner_cta.liquid -%}
     </div>
   </div>
 </div>
