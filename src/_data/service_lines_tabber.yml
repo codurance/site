@@ -17,7 +17,7 @@ en:
 
     - id: innovation
       title: Innovation
-      intro: Continuous innovation is only possible when supported by well-designed and flexible software
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software.
       list:
         - Stay competitive
         - Easy to experiment
@@ -28,7 +28,7 @@ en:
 
     - id: technology
       title: Technology
-      intro: Leveraging new technologies should be straight forward and not a scary prospect
+      intro: Leveraging new technologies should be straight forward and not a scary prospect.
       list:
         - Effectiveness and productivity
         - Competitive advantage
@@ -40,7 +40,7 @@ en:
 
     - id: business-alignment
       title: Business Alignment
-      intro: Achieving business goals is much easier when technology and business are aligned
+      intro: Achieving business goals is much easier when technology and business are aligned.
       list:
         - Technology led business evolution
         - Faster quality feedback
@@ -51,7 +51,7 @@ en:
 
     - id: people-and-culture
       title: People and Culture
-      intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
+      intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent.
       list:
         - Talent retention and attraction
         - Staff development
@@ -63,7 +63,7 @@ en:
 
     - id: risk-management
       title: Risk Management
-      intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
+      intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought.
       list:
         - Real-time system intelligence
         - System observability
