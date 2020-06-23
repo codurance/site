@@ -25,7 +25,7 @@
   var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
 
   function isLargeScreen() {
-    var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS.scrollHeight > 0;
+    var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS[0].scrollHeight > 0;
     return largeScreenTabsAreVisible;
   }
 
