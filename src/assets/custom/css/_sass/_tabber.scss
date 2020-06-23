@@ -24,12 +24,12 @@
 
 .tabber_large_screen_controls-item {
   background: transparent;
+  border: 0 none;
   color: #444444;
+  cursor: pointer;
   float: left;
-  font-weight: normal;
-  list-style: none;
   min-height: 60px;
-  padding: 0.3em 2em;
+  padding: 5px 30px;
   position: relative;
   text-align: center;
   width: calc(100% / 6);
