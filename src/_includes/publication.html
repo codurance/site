@@ -141,7 +141,9 @@
         {% assign cta_href = "/services/software-modernisation/" | prepend: site.baseurl %}
         {% capture cta_text %}{% t software-modernisation.in-page-banner-publications-link %}{% endcapture %}
         {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
-        {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" cta_href=cta_href cta_text=cta_text description=description title=title %}
+        {%- capture hubspot-cta -%}{%- include soft_mod_husbpot_header_banner_cta.liquid -%}{%- endcapture -%}
+
+        {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" cta_href=cta_href cta_text=cta_text description=description title=title hubspot-cta=hubspot-cta %}
         {% break %}
     {% endif %}
 {% endfor %}
