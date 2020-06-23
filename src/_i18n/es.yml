@@ -658,18 +658,6 @@ software-modernisation:
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  testimonials-heading: La opinión de nuestros clientes
-  testimonials-subheading: ¿Qué dicen nuestros clientes de nuestro trabajo?
-  testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
-  testimonials-bestsecret-p2: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
-  bestsecret-name-and-position: José López - Vice President of Engineering en BestSecret
-  testimonials-cazoo: Codurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
-  cazoo-name-and-position: Ian Kershaw - Software Engineering Director en Cazoo
-  testimonials-hedgefund: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
-  hedgefund-name-and-position: Aaron Matthews - Director de desarrollo de software en una consultora de fondos de inversión
-  testimonials-ecw: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
-  ecw-name-and-position: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks
-
   contact-heading: Explícanos tus retos
   contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos cómo podemos ayudarte.
 
@@ -733,3 +721,24 @@ service-line-case-studies:
     subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
     button: Descarga el Case Study
     url: https://info.codurance.com/es/best-secret-case-study
+
+service-line-testimonials:
+  section-title: La opinión de nuestros clientes
+  section-description: ¿Qué dicen nuestros clientes de nuestro trabajo?
+
+  best-secret:
+    text-one: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
+    text-two: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
+    foot-note: José López - Vice President of Engineering en BestSecret
+
+  cazoo:
+    text: odurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
+    foot-note: Ian Kershaw - Software Engineering Director en Cazoo
+
+  hedgefund:
+    text: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
+    foot-note: Aaron Matthews - Director de desarrollo de software en una consultora de fondos de inversión
+
+  ecw:
+    text: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
+    foot-note: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks

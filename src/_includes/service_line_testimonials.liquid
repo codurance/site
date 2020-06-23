@@ -1,0 +1,32 @@
+<section class="service-line__testimonials">
+  {%- assign anchor_id = service-line-page-locations.testimonials -%}
+  {% include page_location_anchor.html anchor_id=anchor_id %}
+
+  {% capture title %}{% t service-line-testimonials.section-title %}{% endcapture %}
+  {% capture description %}{% t service-line-testimonials.section-description %}{% endcapture %}
+  {% include section_intro.html class="service-line__testimonials-intro" description=description title=title %}
+
+  <div class="service-line__flexslider-wrapper">
+    <div class="flexslider">
+      <ul class="flexslider__inner slides">
+        <li class="flexslider__item">
+          <p class="flexslider__text">{% t service-line-testimonials.best-secret.text-one %}</p>
+          <p class="flexslider__text">{% t service-line-testimonials.best-secret.text-two %}</p>
+          <footer class="flexslider__footnote">{% t service-line-testimonials.best-secret.foot-note %}</footer>
+        </li>
+        <li class="flexslider__item">
+          <p class="flexslider__text">{% t service-line-testimonials.cazoo.text %}</p>
+          <footer class="flexslider__footnote">{% t service-line-testimonials.cazoo.foot-note %}</footer>
+        </li>
+        <li class="flexslider__item">
+          <p class="flexslider__text">{% t service-line-testimonials.hedgefund.text %}</p>
+          <footer class="flexslider__footnote">{% t service-line-testimonials.hedgefund.foot-note %}</footer>
+        </li>
+        <li class="flexslider__item">
+          <p class="flexslider__text">{% t service-line-testimonials.ecw.text %}</p>
+          <footer class="flexslider__footnote">{% t service-line-testimonials.ecw.foot-note %}</footer>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
