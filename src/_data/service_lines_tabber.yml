@@ -64,25 +64,26 @@ en:
   example-tabber:
     - id: tab-1
       title: Tab 1
-      tab-one-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      tab-one-list-item-one: Reduce lead time
-      tab-one-list-item-two: Reduce cost of change
-      tab-one-list-item-three: Frequent and safer releases to production
-      tab-one-list-item-four: Reduce technical debt
-      tab-one-list-item-five: Reduce defect rate
-      tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-      tab-one-image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      list:
+        - Reduce lead time
+        - Reduce cost of change
+        - Frequent and safer releases to production
+        - Reduce technical debt
+        - Reduce defect rate
+      details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
     - id: tab-2
       title: Tab 2
-      tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
-      tab-two-list-item-one: Stay competitive
-      tab-two-list-item-two: Easy to experiment
-      tab-two-list-item-three: Data-driven decisions
-      tab-two-list-item-four: Fast feedback
-      tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
-      tab-two-image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
-
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software
+      list:
+        - Stay competitive
+        - Easy to experiment
+        - Data-driven decisions
+        - Fast feedback
+      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 es:
   what: Qué
   how: Cómo
