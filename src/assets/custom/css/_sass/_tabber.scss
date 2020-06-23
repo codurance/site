@@ -18,13 +18,8 @@
   }
   @include medium-large-and-extra-large {
     display: block;
+    padding-bottom: 15px;
   }
-}
-
-.tabber_large_screen_controls-list {
-  margin: 0;
-  padding: 0 0 1em 0;
-  font-weight: bold;
 }
 
 .tabber_large_screen_controls-item {
