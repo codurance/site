@@ -2,14 +2,6 @@
     Helpers - Text
 ********************************/
 
-.text-900 {
-  font-weight: 900;
-}
-
-.text-700 {
-  font-weight: 700;
-}
-
 .text-navy {
   color: #0e4072;
 }
@@ -74,58 +66,8 @@
     Helpers - Backgrounds
 ********************************/
 
-.bg-blue {
-  background-color: #0f4071;
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
 .bg-coral {
   background-color: #fb7268;
-}
-
-@media (max-width: 799px) {
-  .bg-placeholder,
-  .bg-sustainable-change,
-  .bg-innovation,
-  .bg-technology,
-  .bg-business-alignment,
-  .bg-people-and-culture,
-  .bg-risk-management {
-    background-image: none !important;
-  }
-}
-@media (min-width: 800px) {
-  .bg-placeholder,
-  .bg-sustainable-change,
-  .bg-innovation,
-  .bg-technology,
-  .bg-business-alignment,
-  .bg-people-and-culture,
-  .bg-risk-management {
-    background-position: center bottom 20px;
-    background-repeat: no-repeat;
-  }
-  .bg-sustainable-change {
-    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg");
-  }
-  .bg-innovation {
-    background-image: url("#{$site-base-url}/assets/custom/service-lines/software-modernisation/tabber-innovation.svg");
-  }
-  .bg-technology {
-    background-image: url("#{$site-base-url}/assets/custom/service-lines/software-modernisation/tabber-technology.svg");
-  }
-  .bg-business-alignment {
-    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg");
-  }
-  .bg-people-and-culture {
-    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg");
-  }
-  .bg-risk-management {
-    background-image: url("#{$site-base-url}/assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg");
-  }
 }
 
 /********************************
@@ -147,37 +89,6 @@
   }
 
   @include max-width--column;
-}
-
-/********************************
-    Component - Lists
-********************************/
-
-.list-ticks {
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-}
-
-.list-ticks li {
-  padding: 0 0 5px 30px;
-  position: relative;
-  font-weight: 700;
-}
-
-.list-ticks li:before {
-  content: "";
-  background-image: url("#{$site-base-url}/assets/custom/img/softmod/icon-tick.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  position: absolute;
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  background-size: 20px;
-  left: 0px;
-  top: 2px;
 }
 
 /********************************
