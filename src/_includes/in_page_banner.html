@@ -16,7 +16,8 @@
       {% endif %}
       <p class="in_page_banner__description">{{ include.description }}</p>
       {%- comment -%} {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %} {%- endcomment -%}
-      {%- include soft_mod_hubspot_in_page_banner_cta.liquid -%}
+
+      {{ include.hubspot-cta}}
     </div>
   </div>
 </div>
