@@ -1,8 +1,8 @@
-// .hs-cta-wrapper .cta_button {
-//   @include cta;
-//   @include primary;
-//   @include primary-navy;
-// }
+.hubspot-in-page-banner .cta_button {
+  @include cta;
+  @include primary;
+  @include primary-navy;
+}
 
 .hubspot-header-banner-cta .cta_button {
   @include cta;
