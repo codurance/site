@@ -1,5 +1,5 @@
 .in-page-banner {
-  min-height: 400px;
+  min-height: 300px;
   overflow: hidden;
 }
 
@@ -11,8 +11,15 @@
   @include medium-large-and-extra-large {
     background-size: cover;
     float: left;
-    height: 400px;
-    width: 50%;
+    height: 300px;
+
+    .in-page-banner--even & {
+      width: 50%;
+    }
+
+    .in-page-banner--right-heavy & {
+      width: 30%;
+    }
   }
 }
 
@@ -21,13 +28,20 @@
   align-items: center;
   background-color: $coral;
   display: flex;
-  height: 400px;
+  height: 300px;
   justify-content: center;
   text-align: center;
 
   @include medium-large-and-extra-large {
     float: left;
-    width: 50%;
+
+    .in-page-banner--even & {
+      width: 50%;
+    }
+
+    .in-page-banner--right-heavy & {
+      width: 70%;
+    }
   }
 }
 
