@@ -7,7 +7,7 @@
 
   var SELECTORS = {
     LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
-    LARGE_SCREEN_CONTROLS: "[data-large_screen_control]",
+    LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
     PANEL_ACTIVE: ".tabber__panel." + ACTIVE_CLASS,
     PANEL: ".tabber__panel",
     TABBER: "[data-tabber]",
@@ -20,8 +20,9 @@
   }
 
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
-    TABBER.querySelectorAll(SELECTORS.LARGE_SCREEN_CONTROLS)
+    TABBER.querySelectorAll(SELECTORS.LARGE_SCREEN_CONTROL)
   );
+
   var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
 
   function isLargeScreen() {
