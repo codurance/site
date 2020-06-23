@@ -1,6 +1,6 @@
 <div class="tabber {{ include.class }}" data-tabber>
     <div class="tabber__inner">
-        <nav class="tabber_large_screen_controls" data-large_screen_controls>
+        <nav class="tabber_large_screen_controls">
             <ul class="tabber_large_screen_controls-list">
                 {% for tab in include.tabber_data %}
                     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
