@@ -1,112 +1,9 @@
-/********************************
-    Helpers - Text
-********************************/
-
-.text-navy {
-  color: #0e4072;
-}
-
-.text-white {
-  color: #ffffff;
-}
-
-.text-coral {
-  color: $coral;
-}
-
-.mx-width-600 {
-  max-width: 600px;
-}
-
-@media (min-width: 768px) {
-  .text-center--bp768 {
-    text-align: center;
-  }
-}
-
-/********************************
-    Helpers - Shadow
-********************************/
-
-.box-shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-/********************************
-    Helpers - Spacing
-********************************/
-
-.pad-top-none {
-  padding-top: 0 !important;
-}
-
-@include _DEPRECIATED_large {
-  .g-pt-0--desk {
-    padding-top: 0px !important;
-  }
-
-  .g-pt-50--desk {
-    padding-top: 50px !important;
-  }
-
-  .g-pb-25--desk {
-    padding-bottom: 25px !important;
-  }
-
-  .g-pb-50--desk {
-    padding-bottom: 50px !important;
-  }
-
-  .g-pb-100--desk {
-    padding-bottom: 100px !important;
-  }
-}
-
-/********************************
-    Helpers - Backgrounds
-********************************/
-
-.bg-coral {
-  background-color: #fb7268;
-}
-
-/********************************
-    Helpers - Positioning
-********************************/
-
-.p-relative {
-  position: relative;
-}
-
-/********************************
-    Helpers - Containers
-********************************/
-
-.container-slim {
-  @include small {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @include max-width--column;
-}
-
-/********************************
-    Module - CTA slice
-********************************/
-
 .sm-cta-slice {
+  background-color: $coral;
   position: absolute;
   width: 100%;
   z-index: 5;
   line-height: 34px;
-
-  .sm-icon--cta {
-    width: 30px;
-    height: auto;
-    float: left;
-    margin-right: 15px;
-  }
 
   a {
     border-bottom: 1px solid #ffffff;
@@ -119,9 +16,8 @@
 
 .sm-icon--cta {
   width: 30px;
-  height: auto;
   float: left;
-  margin-right: 20px;
+  margin-right: 15px;
   fill: transparent;
   stroke: #ffffff;
   stroke-width: 5px;
