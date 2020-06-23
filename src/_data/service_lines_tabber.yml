@@ -3,63 +3,69 @@ en:
   how: How
 
   software-modernisation:
-    tab-one-title: Sustainable Change
-    tab-one-intro: Business can move only as fast as we can deliver quality software.
-    tab-one-list-item-one: Reduce lead time
-    tab-one-list-item-two: Reduce cost of change
-    tab-one-list-item-three: Frequent and safer releases to production
-    tab-one-list-item-four: Reduce technical debt
-    tab-one-list-item-five: Reduce defect rate
-    tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-    tab-one-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
+    - id: sustainable-change
+      tab-one-title: Sustainable Change
+      tab-one-intro: Business can move only as fast as we can deliver quality software.
+      tab-one-list-item-one: Reduce lead time
+      tab-one-list-item-two: Reduce cost of change
+      tab-one-list-item-three: Frequent and safer releases to production
+      tab-one-list-item-four: Reduce technical debt
+      tab-one-list-item-five: Reduce defect rate
+      tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      tab-one-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
-    tab-two-title: Innovation
-    tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
-    tab-two-list-item-one: Stay competitive
-    tab-two-list-item-two: Easy to experiment
-    tab-two-list-item-three: Data-driven decisions
-    tab-two-list-item-four: Fast feedback
-    tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
-    tab-two-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
+    - id: innovation
+      tab-two-title: Innovation
+      tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
+      tab-two-list-item-one: Stay competitive
+      tab-two-list-item-two: Easy to experiment
+      tab-two-list-item-three: Data-driven decisions
+      tab-two-list-item-four: Fast feedback
+      tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      tab-two-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
-    tab-three-title: Technology
-    tab-three-intro: Leveraging new technologies should be straight forward and not a scary prospect
-    tab-three-list-item-one: Effectiveness and productivity
-    tab-three-list-item-two: Competitive advantage
-    tab-three-list-item-three: Cost reduction
-    tab-three-list-item-four: Technology refresh
-    tab-three-list-item-five: Mitigation against end-of-life
-    tab-three-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
-    tab-three-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
+    - id: technology
+      tab-three-title: Technology
+      tab-three-intro: Leveraging new technologies should be straight forward and not a scary prospect
+      tab-three-list-item-one: Effectiveness and productivity
+      tab-three-list-item-two: Competitive advantage
+      tab-three-list-item-three: Cost reduction
+      tab-three-list-item-four: Technology refresh
+      tab-three-list-item-five: Mitigation against end-of-life
+      tab-three-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
+      tab-three-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
-    tab-four-title: Business Alignment
-    tab-four-intro: Achieving business goals is much easier when technology and business are aligned
-    tab-four-list-item-one: Technology led business evolution
-    tab-four-list-item-two: Faster quality feedback
-    tab-four-list-item-three: Closer collaboration
-    tab-four-list-item-four: Embrace change
-    tab-four-description: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
-    tab-four-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
+    - id: business-alignment
+      tab-four-title: Business Alignment
+      tab-four-intro: Achieving business goals is much easier when technology and business are aligned
+      tab-four-list-item-one: Technology led business evolution
+      tab-four-list-item-two: Faster quality feedback
+      tab-four-list-item-three: Closer collaboration
+      tab-four-list-item-four: Embrace change
+      tab-four-description: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+      tab-four-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
-    tab-five-title: People and Culture
-    tab-five-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
-    tab-five-list-item-one: Talent retention and attraction
-    tab-five-list-item-two: Staff development
-    tab-five-list-item-three: Culture of learning
-    tab-five-list-item-four: Leadership at all levels
-    tab-five-list-item-five: Team autonomy
-    tab-five-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
-    tab-five-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
+    - id: people-and-culture
+      tab-five-title: People and Culture
+      tab-five-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
+      tab-five-list-item-one: Talent retention and attraction
+      tab-five-list-item-two: Staff development
+      tab-five-list-item-three: Culture of learning
+      tab-five-list-item-four: Leadership at all levels
+      tab-five-list-item-five: Team autonomy
+      tab-five-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+      tab-five-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
-    tab-six-title: Risk Management
-    tab-six-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
-    tab-six-list-item-one: Real-time system intelligence
-    tab-six-list-item-two: System observability
-    tab-six-list-item-three: Security
-    tab-six-list-item-four: Operational excellence
-    tab-six-list-item-five: Reduce mean time to recover
-    tab-six-details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
-    tab-six-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
+    - id: risk-management
+      tab-six-title: Risk Management
+      tab-six-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
+      tab-six-list-item-one: Real-time system intelligence
+      tab-six-list-item-two: System observability
+      tab-six-list-item-three: Security
+      tab-six-list-item-four: Operational excellence
+      tab-six-list-item-five: Reduce mean time to recover
+      tab-six-details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
+      tab-six-image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
   example-tabber:
     - id: tab-1

@@ -1,5 +1,7 @@
 {%- assign tabber-data = site.data.service_lines_tabber.en.example-tabber -%}
 
+{#{%- assign tabber-data = site.data.service_lines_tabber[site.lang].[page.service-line] -%}#}
+
 <div class="tabber {{ include.class }}" data-tabber>
     <div class="tabber__inner">
         <nav class="tabber_large_screen_controls" data-large_screen_controls>

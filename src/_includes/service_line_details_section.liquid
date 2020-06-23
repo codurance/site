@@ -7,5 +7,6 @@
     {%- capture cta_href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
     {% capture cta_text %}{% t software-modernisation.hero-cta %}{% endcapture %}
     {% include section_intro.html class="service-line-problems__intro" cta_href=cta_href cta_text=cta_text description=description title=title %}
-    {% include soft_mod_tabber.liquid %}
+
+    {% include tabber.liquid %}
 </section>
