@@ -3,10 +3,14 @@
     return Array.prototype.slice.call(nodeList);
   }
 
+  var ACTIVE_CLASS = "active";
+
   var SELECTORS = {
     TABBER: "[data-tabber]",
     LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
+    LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
     PANEL: "[data-tabber_panel]",
+    PANEL_ACTIVE: "[data-tabber_panel]." + ACTIVE_CLASS,
   };
 
   var TABBER = window.document.querySelector(SELECTORS.TABBER);
@@ -14,12 +18,6 @@
   if (TABBER === null) {
     return;
   }
-
-  var ACTIVE_CLASS = "active";
-
-  SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE =
-    SELECTORS.LARGE_SCREEN_CONTROL + "." + ACTIVE_CLASS;
-  SELECTORS.PANEL_ACTIVE = SELECTORS.PANEL + "." + ACTIVE_CLASS;
 
   var LARGE_SCREEN_CONTROLS = nodeListToArray(
     TABBER.querySelectorAll(SELECTORS.LARGE_SCREEN_CONTROL)
