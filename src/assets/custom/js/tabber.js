@@ -135,16 +135,12 @@
       document.querySelector(SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE) === null;
 
     if (newLayout === "large" && noActiveTabs) {
-      displaySustainableChangeTabContent();
+      makeFirstTabActive();
     }
   }
 
-  function displaySustainableChangeTabContent() {
-    var ID = "#sustainable-change"; // TODO Replace hardcoded ID as part of https://codurance-online.leankit.com/card/1123517749
-    var sustainableChangeTab = TABBER.querySelector('a[href="' + ID + '"]');
-    var sustainableChangeItem = TABBER.querySelector(ID);
-
-    sustainableChangeTab.classList.add(ACTIVE_CLASS);
-    sustainableChangeItem.classList.add(ACTIVE_CLASS);
+  function makeFirstTabActive() {
+    LARGE_SCREEN_CONTROLS[0].classList.add(ACTIVE_CLASS);
+    PANELS[0].classList.add(ACTIVE_CLASS);
   }
 })();
