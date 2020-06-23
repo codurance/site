@@ -107,7 +107,7 @@
     }
 
     var totalOffset = getTotalOffset(panel);
-    var SPACING = 6;
+    var SPACING = 10;
     var header = document.querySelector("header");
     var headerHeight = header ? header.clientHeight : 74;
     var yPosition = totalOffset - SPACING - headerHeight;
