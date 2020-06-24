@@ -1,0 +1,5 @@
+{%- capture hubspot-id -%} 
+  {%- if site.lang == 'es' -%}041e3783-91f3-4bc1-8926-7376fa4faae0{%- else -%}06e1ce72-a796-4e1c-8ff1-1b9c7a67fe57{%- endif -%}
+{%- endcapture -%}
+
+{%- include hubspot_cta.liquid class="hubspot-header-banner-cta" hubspot-id=hubspot-id -%}

@@ -4,4 +4,5 @@
 {% capture description %}{% t software-modernisation.cheat-sheet-cta-banner-text %}{% endcapture %}
 {% capture cta_href %}{% t software-modernisation.cheat-sheet-cta-href %}{% endcapture %}
 {% capture cta_text %}{% t software-modernisation.cheat-sheet-cta-banner-link %}{% endcapture %}
-{% include in_page_banner.html background_image=background_image background_position=background_position class="soft-mod-cheat-sheet-cta-banner" cta_href=cta_href cta_text=cta_text description=description title=title split="right-heavy" %}
+{% capture hubspot-cta %}{%- include soft_mod_hubspot_cheat_sheet_banner_cta.liquid -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position class="soft-mod-cheat-sheet-cta-banner" cta_href=cta_href cta_text=cta_text description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
