@@ -139,12 +139,11 @@
         {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
         {% capture description %}{% t software-modernisation.in-page-banner-publications-text %}{% endcapture %}
         {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
+        {%- capture hubspot-id -%}
+            {%- if site.lang == 'es' -%}77a4144a-4c2a-44ce-8468-d9341d623e46{%- else -%}ad686d9b-1d11-4ef5-a68e-1cf1f0aff255{%- endif -%}
+        {%- endcapture -%}
         {%- capture hubspot-cta -%}
-            {%- include hubspot_cta.liquid
-                class="hubspot-in-page-banner"
-                hubspot-es-id="77a4144a-4c2a-44ce-8468-d9341d623e46"
-                hubspot-en-id="ad686d9b-1d11-4ef5-a68e-1cf1f0aff255"
-            -%}
+            {%- include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id -%}
         {%- endcapture -%}
 
         {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" description=description title=title hubspot-cta=hubspot-cta %}

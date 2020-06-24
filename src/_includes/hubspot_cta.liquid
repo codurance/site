@@ -1,19 +1,19 @@
 {%- if site.lang == 'es' -%}
-  <span class="{{ include.class }}" id="hs-cta-wrapper-{{ include.hubspot-es-id }}">
-    <span class="hs-cta-node hs-cta-{{ include.hubspot-es-id }}" id="hs-cta-{{ include.hubspot-es-id }}">
+  <span class="{{ include.class }}" id="hs-cta-wrapper-{{ include.hubspot-id }}">
+    <span class="hs-cta-node hs-cta-{{ include.hubspot-id }}" id="hs-cta-{{ include.hubspot-id }}">
       <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-      <a href="https://cta-redirect.hubspot.com/cta/redirect/3042464/{{ include.hubspot-es-id }}" ></a>
+      <a href="https://cta-redirect.hubspot.com/cta/redirect/3042464/{{ include.hubspot-id }}" ></a>
     </span>
     <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-    <script type="text/javascript"> hbspt.cta.load(3042464, '{{ include.hubspot-es-id }}', {}); </script>
+    <script type="text/javascript"> hbspt.cta.load(3042464, '{{ include.hubspot-id }}', {}); </script>
   </span>
 {%- else -%}
-  <span class="{{ include.class }}" id="hs-cta-wrapper-{{ include.hubspot-en-id }}">
-    <span class="hs-cta-node hs-cta-{{ include.hubspot-en-id }}" id="hs-cta-{{ include.hubspot-en-id }}">
+  <span class="{{ include.class }}" id="hs-cta-wrapper-{{ include.hubspot-id }}">
+    <span class="hs-cta-node hs-cta-{{ include.hubspot-id }}" id="hs-cta-{{ include.hubspot-id }}">
       <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-      <a href="https://cta-redirect.hubspot.com/cta/redirect/3042464/{{ include.hubspot-en-id }}" ></a>
+      <a href="https://cta-redirect.hubspot.com/cta/redirect/3042464/{{ include.hubspot-id }}" ></a>
     </span>
     <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-    <script type="text/javascript"> hbspt.cta.load(3042464, '{{ include.hubspot-en-id }}', {}); </script>
+    <script type="text/javascript"> hbspt.cta.load(3042464, '{{ include.hubspot-id }}', {}); </script>
   </span>
 {%- endif -%}
