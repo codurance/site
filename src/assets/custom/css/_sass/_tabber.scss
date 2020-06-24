@@ -149,6 +149,15 @@
   color: white;
 }
 
+@include small-and-medium {
+  .tabber-panel__title,
+  .tabber-panel__subtitle,
+  .tabber-panel__list,
+  .tabber-panel__details {
+    max-width: 800px;
+  }
+}
+
 .tabber-panel__subtitle {
   @include mercer-bold;
   margin-bottom: 15px;
