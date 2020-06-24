@@ -50,7 +50,7 @@ A sneaky problem that crops up more than you’d think is having misaligned tech
 
 ​The financial ramifications of holding onto legacy tech can really add up. Far too often businesses hold onto outdated systems that aren’t supporting business needs. The cost of doing so presents itself not only in the cost of the systems, but in maintenance, training new employees who lack tribal knowledge, outages, downtime, and the list goes on. One of the biggest wastes that many organisations don’t think about is the opportunities that aren’t realised because of legacy or inadequate systems. The amount of money that is wasted on things like outages and downtimes is often far smaller than that of those not realised opportunities.
 ​
-Above are just a few of the scenarios you may find yourself in that should spark concern. If these or similar problems ring true in your organisation then it’s time to consider a software modernisation strategy.
+Above are just a few of the scenarios you may find yourself in that should spark concern. If these or similar problems ring true in your organisation then it’s time to consider a [software modernisation](https://codurance.com/services/software-modernisation/) strategy.
 
 ​
 **Before you take any steps toward modernisation you should consider the following:**
