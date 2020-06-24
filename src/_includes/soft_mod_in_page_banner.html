@@ -1,6 +1,6 @@
 {% capture background_image %}/assets/custom/img/softmod/bg-cta.jpg{% endcapture %}
 {% capture title %}{% t software-modernisation.in-page-banner-publications-title %}{% endcapture %}
 {% capture description %}{% t software-modernisation.home-page-banner-text %}{% endcapture %}
-{% assign cta_href = "/services/software-modernisation/" | prepend: site.baseurl %}
-{% capture cta_text %}{% t software-modernisation.home-page-banner-link %}{% endcapture %}
-{% include in_page_banner.html background_image=background_image cta_href=cta_href cta_text=cta_text description=description title=title %}
+{%- capture hubspot-cta -%}{%- include soft_mod_hubspot_in_page_banner_cta.liquid -%}{%- endcapture -%}
+
+{% include in_page_banner.html background_image=background_image cta_href=cta_href cta_text=cta_text description=description title=title hubspot-cta=hubspot-cta %}

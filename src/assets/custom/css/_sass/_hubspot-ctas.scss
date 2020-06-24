@@ -1,0 +1,13 @@
+.hubspot-in-page-banner .cta_button {
+  @include cta;
+  @include primary;
+  @include primary-navy;
+}
+
+.hubspot-header-banner-cta .cta_button {
+  @include cta;
+  color: white;
+  padding: 0 !important;
+  border: none;
+  text-decoration: underline !important;
+}
