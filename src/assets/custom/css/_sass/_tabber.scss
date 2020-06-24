@@ -97,19 +97,15 @@
     visibility: hidden;
     height: 0;
   }
-
   .tabber-panel.active & {
     opacity: 1;
     visibility: visible;
     height: auto;
   }
+
   @include large-and-extra-large {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     width: 100%;
-    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
-      0 1px 10px rgba(0, 0, 0, 0.12);
-    border-radius: 3px;
   }
 }
 
