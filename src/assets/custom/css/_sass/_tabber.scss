@@ -23,12 +23,8 @@
   text-align: center;
   width: calc(100% / 6);
 
-  @include small {
+  @include small-and-medium {
     display: none;
-  }
-  @include medium {
-    font-size: 14px;
-    line-height: 17px;
   }
   @include large-and-extra-large {
     font-size: 16px;
@@ -52,14 +48,14 @@
 }
 
 .tabber__panel {
-  @include small {
+  @include small-and-medium {
     min-height: 2em;
     margin-bottom: 10px;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.1);
   }
 
   &::before {
-    @include small {
+    @include small-and-medium {
       background-position: right 10px center;
       background-repeat: no-repeat;
       background-size: 25px auto;
@@ -71,7 +67,7 @@
       font-weight: bold;
       padding: 0.75em;
     }
-    @include medium-large-and-extra-large {
+    @include large-and-extra-large {
       display: none;
     }
   }
@@ -112,7 +108,7 @@
 }
 
 .tabber-panel__content-grid {
-  @include medium-large-and-extra-large {
+  @include large-and-extra-large {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 500px;
@@ -127,7 +123,7 @@
 .tabber-panel__main {
   padding: 15px 15px 30px 15px;
 
-  @include medium-large-and-extra-large {
+  @include large-and-extra-large {
     padding: 30px;
   }
 }
@@ -135,10 +131,10 @@
 .tabber-panel__header {
   background-color: $navy;
 
-  @include small {
+  @include small-and-medium {
     background-image: none !important;
   }
-  @include medium-large-and-extra-large {
+  @include large-and-extra-large {
     background-position: center bottom 20px;
     background-repeat: no-repeat;
   }
