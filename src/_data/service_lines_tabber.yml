@@ -102,7 +102,7 @@ es:
 
   software-modernisation:
     - id: cambio-sostenible
-      title: Cambio Sostenible
+      title: Cambio sostenible
       intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
       list:
         - Reducir el tiempo de entrega
@@ -137,7 +137,7 @@ es:
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
     - id: aproximacion-de-negocio
-      title: Aproximación de Negocio
+      title: Aproximación de negocio
       intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
       list:
         - Aprovechar la tecnología para impulsar la evolución del negocio
@@ -148,7 +148,7 @@ es:
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
     - id: personas-y-cultura
-      title: Personas y Cultura
+      title: Personas y cultura
       intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
       list:
         - Contratación y retención de talento
@@ -160,7 +160,7 @@ es:
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
     - id: gestion-de-riesgos
-      title: Gestión de Riesgos
+      title: Gestión de riesgos
       intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
       list:
         - Real-time system intelligence
