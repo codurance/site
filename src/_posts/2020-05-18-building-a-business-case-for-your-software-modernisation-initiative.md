@@ -136,7 +136,7 @@ The more accurate and exact you want the result to be the more time you will hav
 
 ## How to measure ROI
 
-At some point during the business case, you will need to talk about ROI (or return on investment). The tricky thing about ROI is that, in general, we humans are great at the investment part but not so much in the return part, and rightly so. Knowing the return on something as complex as a Software Modernisation initiative is usually contingent on more variables than one can imagine.
+At some point during the business case, you will need to talk about ROI (or return on investment). The tricky thing about ROI is that, in general, we humans are great at the investment part but not so much in the return part, and rightly so. Knowing the return on something as complex as a [Software Modernisation](https://codurance.com/services/software-modernisation/) initiative is usually contingent on more variables than one can imagine.
 
 The overall formula for ROI is simple:
 
@@ -338,7 +338,7 @@ Overall you want to show that you have thought of how this benefits the business
 
 ## What is next?
 
-In today's world, Software Modernisation is no longer a matter of best practices, but a matter of survival.
+In today's world, [Software Modernisation](https://codurance.com/services/software-modernisation/) is no longer a matter of best practices, but a matter of survival.
 
 There are many challenges that leaders have to face when it comes to modernising legacy applications that form an obstacle for your business. No single approach to Software Modernisation solves all problems.
 
