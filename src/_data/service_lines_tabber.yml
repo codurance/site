@@ -110,7 +110,7 @@ es:
         - Lanzamientos frecuentes y más seguros a producción
         - Reducir technical debt
         - Reducir la tasa de defectos
-      details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      details: Proceso de lanzamiento estable y repetible; Continuous Delivery; Reserva de entrega automatizada; Prueba de automatización en múltiples niveles; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
     - id: innovacion
@@ -121,7 +121,7 @@ es:
         - Fácil de experimentar
         - Data driven decisions
         - Respuesta rápida
-      details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing; analítica; Feature flags
+      details: Contained experiments; Design thinking; Lean startup; Investigación de usuario; Habilitación Cloud; Big Data; A/B testing; Analítica; Feature flags
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
     - id: tecnologia
@@ -133,7 +133,7 @@ es:
         - Reducción de costes
         - Actualización tecnológica
         - Mitigación frente al end-of-life
-      details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
+      details: Cloud native; Arquitectura sin servidor; Integración de terceros; Implementación en contenedores; Escalamiento elástico; Seguridad; Automatización; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
     - id: aproximacion-de-negocio
@@ -144,7 +144,7 @@ es:
         - Respuesta de calidad más rápida
         - Colaboración más estrecha
         - Aceptación de los cambios
-      details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
+      details: Eliminar silos; Aproximar los equipos a los objetivos comerciales estratégicos; Aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
     - id: personas-y-cultura
@@ -156,7 +156,7 @@ es:
         - Cultura de aprendizaje
         - Liderazgo en todos los niveles
         - Autonomía del equipo
-      details: Tecnologías atractivas; formación; coaching y mentoring; grupos internos de prácticas; participación en grupos externos
+      details: Tecnologías atractivas; Formación; Coaching y mentoring; Grupos internos de prácticas; Participación en grupos externos
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
     - id: gestion-de-riesgos
