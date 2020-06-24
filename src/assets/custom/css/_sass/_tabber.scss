@@ -31,11 +31,7 @@
     line-height: 19px;
   }
 
-  &:hover,
-  &.active {
-    font-weight: 700;
-  }
-
+  &:hover:after,
   &.active:after {
     background-color: $coral;
     bottom: 0;
@@ -44,6 +40,10 @@
     left: 0;
     position: absolute;
     width: 100%;
+  }
+
+  &:not(.active):hover:after {
+    opacity: 0.5;
   }
 }
 
