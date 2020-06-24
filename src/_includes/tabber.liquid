@@ -8,22 +8,20 @@
   {% for tab in include.tabber_data %}
     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
     <article id="{{ tab.id }}" class="tabber__panel tabber-panel {{ active_class }}" data-tabber_panel data-title="{{ tab.title }}">
-      <div class="tabber-panel__content">
-          <div class="tabber-panel__content-grid">
-            <div class="tabber-panel__header" style="background-image: url({{ site.baseurl }}{{ tab.image-path }})">
-              <h3 class="tabber-panel__title">{{ tab.intro }}</h3>
-            </div>
-            <div class="tabber-panel__main">
-              <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].what }}</h4>
-              <ul class="tabber-panel__list">
-                {% for item in tab.list %}
-                  <li class="tabber-panel__tick-item">{{ item }}</li>
-                {% endfor %}
-              </ul>
-              <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
-              <p class="tabber-panel__details">{{ tab.details }}</p>
-            </div>
-          </div>
+      <div class="tabber-panel__inner">
+        <div class="tabber-panel__header" style="background-image: url({{ site.baseurl }}{{ tab.image-path }})">
+          <h3 class="tabber-panel__title">{{ tab.intro }}</h3>
+        </div>
+        <div class="tabber-panel__main">
+          <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].what }}</h4>
+          <ul class="tabber-panel__list">
+            {% for item in tab.list %}
+              <li class="tabber-panel__tick-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
+          <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
+          <p class="tabber-panel__details">{{ tab.details }}</p>
+        </div>
       </div>
     </article>
   {% endfor %}

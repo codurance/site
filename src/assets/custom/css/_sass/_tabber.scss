@@ -85,24 +85,24 @@
   }
 }
 
-.tabber-panel__content {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
+.tabber-panel__inner {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
-  .tabber__panel.active & {
+  .tabber-panel:not(.active) & {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .tabber-panel.active & {
     opacity: 1;
     visibility: visible;
     height: auto;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
   }
-}
-
-.tabber-panel__content-grid {
   @include large-and-extra-large {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
