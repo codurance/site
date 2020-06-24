@@ -136,6 +136,10 @@
 .tabber-panel__main {
   background-color: white;
   padding-top: 35px;
+
+  @include large-and-extra-large {
+    min-height: 500px;
+  }
 }
 
 .tabber-panel__title {
