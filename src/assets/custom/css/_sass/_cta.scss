@@ -1,5 +1,7 @@
 @mixin cta {
-  @include base-bold;
+  @include bold;
+  font-size: 17px;
+  line-height: 28px;
   text-align: center;
 
   &,
