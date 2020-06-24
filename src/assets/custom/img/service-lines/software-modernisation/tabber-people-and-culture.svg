@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	
+		<!ENTITY st0 "opacity:0.4;fill:none;stroke:#63F0A3;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7;enable-background:new    ;">
+	<!ENTITY st1 "fill:none;stroke:#E0E0E0;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;">
+	<!ENTITY st2 "fill:none;stroke:#E0E0E0;stroke-width:2;stroke-miterlimit:10;">
+	<!ENTITY st3 "fill:#FA7268;">
+	<!ENTITY st4 "fill:none;stroke:#E0E0E0;stroke-miterlimit:10;stroke-dasharray:3;">
+	<!ENTITY st5 "fill:none;stroke:#E0E0E0;stroke-width:2;">
+	<!ENTITY st6 "opacity:0.999;">
+	<!ENTITY st7 "fill:#F4C2BE;">
+	<!ENTITY st8 "fill:url(#Path_458_1_);">
+	<!ENTITY st9 "opacity:0.7;fill:url(#Path_459_1_);enable-background:new    ;">
+	<!ENTITY st10 "opacity:0.998;fill:#63F1A4;enable-background:new    ;">
+	<!ENTITY st11 "fill:none;stroke:#63F0A3;stroke-width:2;stroke-dasharray:7;">
+	<!ENTITY st12 "fill:none;">
+	<!ENTITY st13 "fill:#E0E0E0;">
+	<!ENTITY st14 "fill:#63F0A3;">
+	<!ENTITY st15 "fill:none;stroke:#E0E0E0;stroke-width:2;stroke-linejoin:bevel;">
+	<!ENTITY st16 "fill:none;stroke:#E0E0E0;stroke-width:2;stroke-linejoin:round;">
+	<!ENTITY st17 "fill:none;stroke:#2F8786;stroke-width:3;stroke-dasharray:7;">
+	<!ENTITY st18 "fill:none;stroke:#E0E0E0;stroke-width:3;stroke-miterlimit:10;">
+	<!ENTITY st19 "fill:#62F0A3;">
+	<!ENTITY st20 "fill:none;stroke:#2F8786;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7;">
+	<!ENTITY st21 "fill:#0E4072;">
+	<!ENTITY st22 "fill:none;stroke:#E0E0E0;stroke-width:4;">
+]>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450 250" style="enable-background:new 0 0 450 250;" xml:space="preserve">
+<g id="Group_1606" transform="translate(-815.448 -3541.5)">
+	<g id="Group_1604">
+		<g id="Group_1563" transform="translate(0 -16)">
+			<g id="Group_1562" transform="translate(8 9)">
+				<g id="Group_1561" transform="translate(814.246 3550)">
+					<path id="Path_1319" style="&st18;" d="M124,184.7v-73.7c0,0,4-47.9,55.8-47.2c51.8,0.7,55.2,50.6,55.2,50.6L248,147
+						c0,0,3.7,7.8-4.7,7.8s-8.4-0.4-8.4,2.6s0,23,0,23s-0.3,17.2-19.1,16.9"/>
+					<path id="Path_1320" style="&st18;" d="M311.1,142.4V68.7c0,0-4-47.9-55.8-47.2s-55.2,50.6-55.2,50.6L187,104.7
+						c0,0-3.7,7.8,4.7,7.8s8.4-0.4,8.4,2.6s0,23,0,23s0.3,17.2,19.1,16.9"/>
+					<path id="Path_1320-2" style="&st18;" d="M81.1,175.2v-46.1c0,0,2.5-29.9,34.9-29.5s34.5,31.6,34.5,31.6l8.2,20.4
+						c0,0,2.3,4.9-2.9,4.8s-5.3-0.3-5.2,1.6s0,14.4,0,14.4s-0.2,10.8-11.9,10.6"/>
+				</g>
+				<path id="Path_1320-3" style="&st18;" d="M1169.8,3683.1V3637c0,0-2.5-29.9-34.9-29.5s-34.5,31.6-34.5,31.6l-8.2,20.4
+					c0,0-2.3,4.9,2.9,4.8s5.3-0.3,5.2,1.6c0,1.9,0,14.4,0,14.4s0.2,10.8,11.9,10.6"/>
+			</g>
+			<ellipse id="Ellipse_78" style="&st19;" cx="1177.9" cy="3690.5" rx="6.4" ry="6.4"/>
+			<ellipse id="Ellipse_79" style="&st19;" cx="902.9" cy="3733.5" rx="6.4" ry="6.4"/>
+			<ellipse id="Ellipse_80" style="&st19;" cx="1040.5" cy="3756.5" rx="6.4" ry="6.4"/>
+			<ellipse id="Ellipse_81" style="&st19;" cx="1040.5" cy="3713.5" rx="6.4" ry="6.4"/>
+			<ellipse id="Ellipse_82" style="&st19;" cx="960.9" cy="3741.9" rx="4.4" ry="4.4"/>
+			<ellipse id="Ellipse_85" style="&st19;" cx="1119.9" cy="3699.9" rx="4.4" ry="4.4"/>
+			<path id="Path_610" style="&st20;" d="M960.9,3752.1v6.4h67.6"/>
+			<path id="Path_611" style="&st20;" d="M902.9,3747.2v37.3h275v-79.2"/>
+		</g>
+	</g>
+</g>
+</svg>
