@@ -6,11 +6,11 @@
 
 .hubspot-header-banner-cta .cta_button {
   @include bold;
-  font-size: 15px;
-  color: white;
-  padding: 0;
-  border: none;
   border-bottom: 1px solid #ffffff;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 0;
   white-space: nowrap;
 
   &:hover {
