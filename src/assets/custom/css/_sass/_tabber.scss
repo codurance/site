@@ -1,12 +1,14 @@
 .tabber {
   @include lateral-spacing;
-  background: transparent;
-  margin: 0 auto;
-  max-width: 900px;
-  padding-top: 3.57143rem !important;
-  padding: 0 0 1px 0;
   position: relative;
   z-index: 1;
+
+  @include small {
+    padding-top: 50px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 100px;
+  }
 }
 
 .tabber_large_screen_control {
