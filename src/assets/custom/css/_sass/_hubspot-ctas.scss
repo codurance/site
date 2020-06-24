@@ -5,9 +5,15 @@
 }
 
 .hubspot-header-banner-cta .cta_button {
-  @include cta;
+  @include bold;
+  font-size: 15px;
   color: white;
-  padding: 0 !important;
+  padding: 0;
   border: none;
-  text-decoration: underline !important;
+  border-bottom: 1px solid #ffffff;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
