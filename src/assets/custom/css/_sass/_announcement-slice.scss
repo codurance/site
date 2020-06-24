@@ -1,0 +1,42 @@
+.announcement-slice {
+  background-color: $coral;
+  color: white;
+  line-height: 34px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.announcement-slice__inner {
+  @include max-width;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.announcement-slice__icon {
+  fill: transparent;
+  float: left;
+  margin-right: 15px;
+  stroke-width: 5px;
+  stroke: white;
+  width: 30px;
+}

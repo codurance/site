@@ -3,123 +3,170 @@ en:
   how: How
 
   software-modernisation:
-    tab-one-title: Sustainable Change
-    tab-one-intro: Business can move only as fast as we can deliver quality software.
-    tab-one-list-item-one: Reduce lead time
-    tab-one-list-item-two: Reduce cost of change
-    tab-one-list-item-three: Frequent and safer releases to production
-    tab-one-list-item-four: Reduce technical debt
-    tab-one-list-item-five: Reduce defect rate
-    tab-one-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-    tab-one-image-path: /assets/custom/img/softmod/bg-sustainable-change.svg
+    - id: sustainable-change
+      title: Sustainable Change
+      intro: Business can move only as fast as we can deliver quality software.
+      list:
+        - Reduce lead time
+        - Reduce cost of change
+        - Frequent and safer releases to production
+        - Reduce technical debt
+        - Reduce defect rate
+      details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
-    tab-two-title: Innovation
-    tab-two-intro: Continuous innovation is only possible when supported by well-designed and flexible software
-    tab-two-list-item-one: Stay competitive
-    tab-two-list-item-two: Easy to experiment
-    tab-two-list-item-three: Data-driven decisions
-    tab-two-list-item-four: Fast feedback
-    tab-two-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
-    tab-two-image-path: /assets/custom/img/softmod/bg-innovation.svg
+    - id: innovation
+      title: Innovation
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software.
+      list:
+        - Stay competitive
+        - Easy to experiment
+        - Data-driven decisions
+        - Fast feedback
+      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
-    tab-three-title: Technology
-    tab-three-intro: Leveraging new technologies should be straight forward and not a scary prospect
-    tab-three-list-item-one: Effectiveness and productivity
-    tab-three-list-item-two: Competitive advantage
-    tab-three-list-item-three: Cost reduction
-    tab-three-list-item-four: Technology refresh
-    tab-three-list-item-five: Mitigation against end-of-life
-    tab-three-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
-    tab-three-image-path: /assets/custom/img/softmod/bg-technology.svg
+    - id: technology
+      title: Technology
+      intro: Leveraging new technologies should be straight forward and not a scary prospect.
+      list:
+        - Effectiveness and productivity
+        - Competitive advantage
+        - Cost reduction
+        - Technology refresh
+        - Mitigation against end-of-life
+      details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
-    tab-four-title: Business Alignment
-    tab-four-intro: Achieving business goals is much easier when technology and business are aligned
-    tab-four-list-item-one: Technology led business evolution
-    tab-four-list-item-two: Faster quality feedback
-    tab-four-list-item-three: Closer collaboration
-    tab-four-list-item-four: Embrace change
-    tab-four-description: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
-    tab-four-image-path: /assets/custom/img/softmod/bg-business-alignment.svg
+    - id: business-alignment
+      title: Business Alignment
+      intro: Achieving business goals is much easier when technology and business are aligned.
+      list:
+        - Technology led business evolution
+        - Faster quality feedback
+        - Closer collaboration
+        - Embrace change
+      details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
-    tab-five-title: People and Culture
-    tab-five-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
-    tab-five-list-item-one: Talent retention and attraction
-    tab-five-list-item-two: Staff development
-    tab-five-list-item-three: Culture of learning
-    tab-five-list-item-four: Leadership at all levels
-    tab-five-list-item-five: Team autonomy
-    tab-five-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
-    tab-five-image-path: /assets/custom/img/softmod/bg-people-culture.svg
+    - id: people-and-culture
+      title: People and Culture
+      intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent.
+      list:
+        - Talent retention and attraction
+        - Staff development
+        - Culture of learning
+        - Leadership at all levels
+        - Team autonomy
+      details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
-    tab-six-title: Risk Management
-    tab-six-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
-    tab-six-list-item-one: Real-time system intelligence
-    tab-six-list-item-two: System observability
-    tab-six-list-item-three: Security
-    tab-six-list-item-four: Operational excellence
-    tab-six-list-item-five: Reduce mean time to recover
-    tab-six-details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
-    tab-six-image-path: /assets/custom/img/softmod/bg-risk-management.svg
+    - id: risk-management
+      title: Risk Management
+      intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought.
+      list:
+        - Real-time system intelligence
+        - System observability
+        - Security
+        - Operational excellence
+        - Reduce mean time to recover
+      details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
+  example-tabber:
+    - id: tab-1
+      title: Tab 1
+      intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      list:
+        - Reduce lead time
+        - Reduce cost of change
+        - Frequent and safer releases to production
+        - Reduce technical debt
+        - Reduce defect rate
+      details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: tab-2
+      title: Tab 2
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software
+      list:
+        - Stay competitive
+        - Easy to experiment
+        - Data-driven decisions
+        - Fast feedback
+      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 es:
   what: Qué
   how: Cómo
 
   software-modernisation:
-    tab-one-title: Cambio sostenible
-    tab-one-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
-    tab-one-list-item-one: Reducir el tiempo de entrega
-    tab-one-list-item-two: Reducir el coste del cambio
-    tab-one-list-item-three: Lanzamientos frecuentes y más seguros a producción
-    tab-one-list-item-four: Reducir technical debt
-    tab-one-list-item-five: Reducir la tasa de defectos
-    tab-one-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-    tab-one-image-path: /assets/custom/img/softmod/bg-sustainable-change.svg
+    - id: cambio-sostenible
+      title: Cambio sostenible
+      intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+      list:
+        - Reducir el tiempo de entrega
+        - Reducir el coste del cambio
+        - Lanzamientos frecuentes y más seguros a producción
+        - Reducir technical debt
+        - Reducir la tasa de defectos
+      details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
-    tab-two-title: Innovación
-    tab-two-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
-    tab-two-list-item-one: Mantener la competitividad
-    tab-two-list-item-two: Fácil de experimentar
-    tab-two-list-item-three: Data driven decisions
-    tab-two-list-item-four: Respuesta rápida
-    tab-two-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
-    tab-two-image-path: /assets/custom/img/softmod/bg-innovation.svg
+    - id: innovacion
+      title: Innovación
+      intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+      list:
+        - Mantener la competitividad
+        - Fácil de experimentar
+        - Data driven decisions
+        - Respuesta rápida
+      details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
-    tab-three-title: Tecnología
-    tab-three-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
-    tab-three-list-item-one: Eficacia y productividad
-    tab-three-list-item-two: Ventaja competitiva
-    tab-three-list-item-three: Reducción de costes
-    tab-three-list-item-four: Actualización tecnológica
-    tab-three-list-item-five: Mitigación frente al end-of-life
-    tab-three-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
-    tab-three-image-path: /assets/custom/img/softmod/bg-technology.svg
+    - id: tecnologia
+      title: Tecnología
+      intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
+      list:
+        - Eficacia y productividad
+        - Ventaja competitiva
+        - Reducción de costes
+        - Actualización tecnológica
+        - Mitigación frente al end-of-life
+      details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
-    tab-four-title: Aproximación de negocio
-    tab-four-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
-    tab-four-list-item-one: Aprovechar la tecnología para impulsar la evolución del negocio
-    tab-four-list-item-two: Respuesta de calidad más rápida
-    tab-four-list-item-three: Colaboración más estrecha
-    tab-four-list-item-four: Aceptación de los cambios
-    tab-four-description: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
-    tab-four-image-path: /assets/custom/img/softmod/bg-business-alignment.svg
+    - id: aproximacion-de-negocio
+      title: Aproximación de negocio
+      intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
+      list:
+        - Aprovechar la tecnología para impulsar la evolución del negocio
+        - Respuesta de calidad más rápida
+        - Colaboración más estrecha
+        - Aceptación de los cambios
+      details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
-    tab-five-title: Personas y cultura
-    tab-five-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
-    tab-five-list-item-one: Contratación y retención de talento
-    tab-five-list-item-two: Capacitación del personal
-    tab-five-list-item-three: Cultura de aprendizaje
-    tab-five-list-item-four: Liderazgo en todos los niveles
-    tab-five-list-item-five: Autonomía del equipo
-    tab-five-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
-    tab-five-image-path: /assets/custom/img/softmod/bg-people-culture.svg
+    - id: personas-y-cultura
+      title: Personas y cultura
+      intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
+      list:
+        - Contratación y retención de talento
+        - Capacitación del personal
+        - Cultura de aprendizaje
+        - Liderazgo en todos los niveles
+        - Autonomía del equipo
+      details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
-    tab-six-title: Gestión de riesgos
-    tab-six-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
-    tab-six-list-item-one: Real-time system intelligence
-    tab-six-list-item-two: System observability
-    tab-six-list-item-three: Seguridad
-    tab-six-list-item-four: Operational excellence
-    tab-six-list-item-five: Reducir el tiempo medio de recuperación
-    tab-six-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
-    tab-six-image-path: /assets/custom/img/softmod/bg-risk-management.svg
+    - id: gestion-de-riesgos
+      title: Gestión de riesgos
+      intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
+      list:
+        - Real-time system intelligence
+        - System observability
+        - Seguridad
+        - Operational excellence
+        - Reducir el tiempo medio de recuperación
+      details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
