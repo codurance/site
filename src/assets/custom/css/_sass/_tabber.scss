@@ -7,6 +7,7 @@
     padding-top: 50px;
   }
   @include medium-large-and-extra-large {
+    @include max-width--out-there;
     padding-top: 100px;
   }
 }
@@ -114,10 +115,14 @@
 
 .tabber-panel__header,
 .tabber-panel__main {
-  padding: 15px 15px 30px 15px;
-
-  @include large-and-extra-large {
+  @include small-and-medium {
+    padding: 15px 15px 30px;
+  }
+  @include large {
     padding: 30px;
+  }
+  @include extra-large {
+    padding: 60px;
   }
 }
 
@@ -135,8 +140,10 @@
 
 .tabber-panel__main {
   background-color: white;
-  padding-top: 35px;
 
+  @include small-and-medium {
+    padding-top: 35px;
+  }
   @include large-and-extra-large {
     min-height: 500px;
   }

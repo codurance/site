@@ -91,9 +91,6 @@
   @include extra-large {
     padding-top: 100px;
 
-    &:before {
-      right: 100px;
-    }
     &:after {
       content: "";
       background-color: $slate;
