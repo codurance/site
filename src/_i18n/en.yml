@@ -201,6 +201,7 @@ services:
     image: http://placekitten.com/780/590
     cta-href: /services/training
     cta-text: Learn more
+  clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
   our_courses: Our Courses

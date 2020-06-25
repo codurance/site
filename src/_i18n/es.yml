@@ -197,6 +197,7 @@ services:
     description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
     cta-text: Cómo lo hacemos
     cta-href: /services/trainings
+  clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
