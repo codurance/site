@@ -73,7 +73,7 @@ en:
       details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
-  example-tabber:
+  service-line-example:
     - id: tab-1
       title: Tab 1
       intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
