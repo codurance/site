@@ -101,6 +101,39 @@ en:
       details: Agile and Lean software development; Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 
+    - id: practices-and-automation
+      title: Practices and Automation
+      intro: A strong set of quality practices and reliable automation is key for continuous delivery.
+      list:
+        - Test automation at multiple levels
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: architecture-and-design
+      title: Architecture and Design
+      intro: An evolutionary, robust and flexible software architecture is essential to support product evolution.
+      list:
+        - Break the monolith
+        - Migrate to the cloud
+        - Leverage pay per usage models
+        - Adapt to regulatory constraints
+        - Increase security
+        - Reduce development and deployment dependencies
+        - Reduce maintenance and operation costs
+      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: platform-and-technology
+      title: Platform and Technology
+      intro: Technology choice is part of the strategy of any software product.
+      list:
+        - Choose the right tool for each job
+        - Achieve high performance
+        - Establish a migration path
+        - Attract talent
+      details: Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks':' Node.js, React, Vue, Angular; Relational and NoSQL databases
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
   service-line-example:
     - id: tab-1
       title: Tab 1
@@ -226,3 +259,36 @@ es:
         - Atraer talento
       details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: practices-and-automation
+      title: Prácticas y Automatización
+      intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
+      list:
+        - Automatización de los test en múltiples niveles
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: architecture-and-design
+      title: Arquitectura y Diseño
+      intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
+      list:
+        - Romper el monolito
+        - Migración a cloud
+        - Aprovechar los modelos de pago por uso
+        - Adaptarse a las restricciones regulatorias
+        - Aumentar la seguridad
+        - Reduci las dependencias entre desarrollo e implementación
+        - Reducir los costes de mantenimiento y operación
+      details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: platform-and-technology
+      title: Plataformas y Tecnologías
+      intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
+      list:
+        - Elegir las herramientas adecuadas para cada trabajo
+        - Lograr un alto rendimiento
+        - Establecer una ruta de migración
+        - Atraer talento
+      details: Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend':' Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
