@@ -681,6 +681,10 @@ software-delivery:
   hero-description: <p> We can help you define and build the features you need by providing fully autonomous cross-functional teams or by simply providing highly qualified extra capacity.</p>
                     <p> Software Craftsmanship, Agile, and Lean are part of our DNA. This allows us to develop our work in highly collaborative environments, applying iterative and incremental development, and value-based prioritization of deliveries.</p>
 
+  curated-publications:
+    intro-title: Software Modernisation publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
