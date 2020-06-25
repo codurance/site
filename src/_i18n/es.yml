@@ -685,6 +685,13 @@ software-modernisation:
     intro-title: Sobre Software Modernisation
     intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
 
+software-delivery:
+  hero-title: Software Delivery
+  hero-sub-title: Desde el concepto hasta el software en producción, trabajamos para mejorar el rendimiento de forma rápida y continua.
+  hero-description:
+    Trabajamos contigo para definir y desarrollar lo que necesites. Te proporcionamos un equipo multifuncional altamente cualificado que participará en todo el proceso desde el inception hasta que el producto esté funcionando.
+    Software Craftsmanship, Agile y Lean son parte de nuestro ADN. Esto nos permite desaarollar nuestro trabajo en entornos altamente colaborativos, aplicando desarrollo iterativo e incremental y la priorización basada en valor de las entregas.
+
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
