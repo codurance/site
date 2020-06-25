@@ -114,6 +114,9 @@
   @include small-and-medium {
     padding: 15px 15px 30px;
   }
+  @include large-and-extra-large {
+    width: 50%;
+  }
   @include large {
     padding: 30px;
   }

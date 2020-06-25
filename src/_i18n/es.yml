@@ -197,6 +197,7 @@ services:
     description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
     cta-text: Cómo lo hacemos
     cta-href: /services/trainings
+  clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
@@ -660,7 +661,8 @@ software-modernisation:
 
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
-  cheat-sheet-cta-banner-link: Download Questionnaire
+  cheat-sheet-cta-href: https://info.codurance.com/es/case-for-change-questionnaire
+
 
   business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
   business-case-presentation-banner-cta-text: Download template
