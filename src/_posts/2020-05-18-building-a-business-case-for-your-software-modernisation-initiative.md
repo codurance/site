@@ -65,7 +65,7 @@ The main topics you should focus on:
 - What the payoff is for the audience and business
 
 
-On this particular topic, you may want to check out our <a href="https://info.codurance.com/en/case-for-change-questionnaire" target="_blank">list of questions to help you gather the information that you need as part of your research</a>.
+On this particular topic, you may want to check out our <a href="{% t software-modernisation.cheat-sheet-cta-href %}" target="_blank">list of questions to help you gather the information that you need as part of your research</a>.
 
 
 ### Motivation
@@ -346,6 +346,6 @@ A good place to start is to evaluate various modernisation approaches to select 
 
 Writing a business case is a solid step in that direction. Here are some materials we have prepared to make that process easier.
 
-{% include soft-mod-cheat-sheet-banner.html cta_href=cta_href %}
+{% include soft-mod-cheat-sheet-banner.html %}
 
 **Recommendation:** We have prepared a small cheat sheet to help you think through your business case creation. Take some time to answer the questions provided, in order to get an overview of all the areas you might want to consider doing some research on before you start writing.

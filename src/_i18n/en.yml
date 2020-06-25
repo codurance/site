@@ -661,7 +661,8 @@ software-modernisation:
 
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
-  cheat-sheet-cta-banner-link: Download Questionnaire
+  cheat-sheet-cta-href: https://info.codurance.com/en/case-for-change-questionnaire
+      
 
   business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
   business-case-presentation-banner-cta-text: Download template
