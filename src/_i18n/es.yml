@@ -201,12 +201,6 @@ services:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
     formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
-  training:
-    title: Trainings
-    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto.<br/><br/>Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
-    image: http://placekitten.com/780/590
-    cta-href: /services/training
-    cta-text: Cómo lo hacemos
 services-training_coaching:
   title: Formación & asesoría
   our_courses: Nuestros cursos
