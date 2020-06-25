@@ -11,7 +11,7 @@
       {{ translations.hero-description }}
     </p>
     {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
-    {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+    {%- capture text -%}{% t service-line-contact-cta %}{%- endcapture -%}
     {% include cta_primary_link.html color='coral' href=href text=text %}
   </div>
   <div class="service-line-hero__image-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-large }});">
