@@ -111,7 +111,7 @@ en:
 
     - id: architecture-and-design
       title: Architecture and Design
-      intro: An evolutionary, robust and flexible software architecture is essential to support product evolution.
+      intro: An evolutionary, robust, and flexible software architecture is essential to support product evolution.
       list:
         - Break the monolith
         - Migrate to the cloud
@@ -131,7 +131,7 @@ en:
         - Achieve high performance
         - Establish a migration path
         - Attract talent
-      details: Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks':' Node.js, React, Vue, Angular; Relational and NoSQL databases
+      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
   service-line-example:
