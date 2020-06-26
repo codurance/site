@@ -62,6 +62,9 @@
     padding-bottom: 50px;
     padding-top: 100px;
   }
+  @include extra-large {
+    @include max-width--framed;
+  }
 }
 
 .service-line-problems {
