@@ -66,17 +66,7 @@
 
 .service-line-problems {
   position: relative;
-
-  &:before {
-    content: "";
-    background: $sheen;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
+  background: $sheen;
 
   @include small {
     padding-bottom: 50px;
