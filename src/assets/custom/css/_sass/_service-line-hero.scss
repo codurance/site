@@ -1,5 +1,8 @@
+$section-top-padding: 50px;
+
 .service-line-hero {
-  @include max-width--out-there;
+  background-color: orange!important;
+  padding-top: $section-top-padding;
 
   @include small-and-medium {
     background-color: #201d2b;
@@ -15,10 +18,19 @@
   }
   @include medium-large-and-extra-large {
     min-height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
+  @include extra-large {
+    @include max-width--framed;
+    position: relative;
+  }
+}
+
+.service-line-hero__inner {
+  @include max-width--out-there;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: pink;
 }
 
 .service-line-hero__content-container {
@@ -36,10 +48,11 @@
   }
   @include large-and-extra-large {
     padding-bottom: 50px;
-    padding-left: $icon-space;
-    padding-right: 40px;
     padding-top: 50px;
     width: 50%;
+  }
+  @include extra-large {
+    padding-bottom: 70px;
   }
 }
 
@@ -47,7 +60,7 @@
   @include small-and-medium {
     display: none;
   }
-  @include large-and-extra-large {
+  @include large {
     background-size: cover;
     height: 750px;
     justify-content: center;
@@ -57,6 +70,15 @@
     position: absolute;
     top: 0;
     width: 50%;
+  }
+  @include extra-large {
+    height: 750px;
+    max-width: 750px;
+    position: absolute;
+    right: 50px;
+    width: 50%;
+    top: $section-top-padding;
+    z-index: 1;
   }
 }
 

@@ -89,6 +89,7 @@
   }
 
   @include extra-large {
+    @include max-width--framed;
     padding-top: 100px;
 
     &:after {
