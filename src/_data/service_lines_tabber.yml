@@ -73,6 +73,67 @@ en:
       details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
+  software-delivery:
+    - id: product-strategy
+      title: Product Strategy
+      intro: Aligning product and software design is key for business agility.
+      list:
+        - Discover business needs
+        - Align technical and product vision
+        - Improve user experience and customer satisfaction
+        - Achieve value-driven prioritization
+        - Innovate through experimentation
+      details: Build MVPs, Proof of Concepts, and Prototypes; Create a high-level technical strategy and roadmap; Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics; Usability testing; AB Testing; User research
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: people-and-process
+      title: People and Process
+      intro: People are at the heart of any software product.
+      list:
+        - Engage your stakeholders
+        - Establish a Software Craftsmanship mindset
+        - Nurture culture of learning
+        - Instill a DevOps culture
+        - Devise highly collaborative ways of working
+        - Achieve iterative and incremental development
+        - Develop fast feedback loops
+        - Attract talent
+      details: Agile and Lean software development; Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: practices-and-automation
+      title: Practices and Automation
+      intro: A strong set of quality practices and reliable automation is key for continuous delivery.
+      list:
+        - Test automation at multiple levels
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: architecture-and-design
+      title: Architecture and Design
+      intro: An evolutionary, robust, and flexible software architecture is essential to support product evolution.
+      list:
+        - Break the monolith
+        - Migrate to the cloud
+        - Leverage pay per usage models
+        - Adapt to regulatory constraints
+        - Increase security
+        - Reduce development and deployment dependencies
+        - Reduce maintenance and operation costs
+      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: platform-and-technology
+      title: Platform and Technology
+      intro: Technology choice is part of the strategy of any software product.
+      list:
+        - Choose the right tool for each job
+        - Achieve high performance
+        - Establish a migration path
+        - Attract talent
+      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
   service-line-example:
     - id: tab-1
       title: Tab 1
@@ -170,3 +231,64 @@ es:
         - Reducir el tiempo medio de recuperación
       details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
+
+  software-delivery:
+    - id: product-strategy
+      title: Estrategia de Producto
+      intro: Alinear el diseño de producto y software es clave para lograr la agilidad de negocio.
+      list:
+        - Descubrir las necesidades del negocio
+        - Alinear la visión técnica y de producto.
+        - Mejorar la experiencia de usuario y la satisfacción del cliente.
+        - Lograr una priorización basada en el valor.
+        - Innovar a través de la experimentación.
+      details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo d el Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: people-and-process
+      title: Procesos y Personas
+      intro: Las personas son el corazón de cualquier producto de software.
+      list:
+        - Involucrar a tus stakeholders
+        - Establecer una mentalidad de Software Craftsmanship
+        - Cultivar la cultura de aprendizaje
+        - Inculcar una cultura DevOps
+        - Diseñar formas de trabajo basadas en la colaboración
+        - Lograr un desarrollo iterativo e incremental
+        - Desarrollar circuitos de feedback rápidos y efectivos
+        - Atraer talento
+      details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: practices-and-automation
+      title: Prácticas y Automatización
+      intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
+      list:
+        - Automatización de los test en múltiples niveles
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: architecture-and-design
+      title: Arquitectura y Diseño
+      intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
+      list:
+        - Romper el monolito
+        - Migración a cloud
+        - Aprovechar los modelos de pago por uso
+        - Adaptarse a las restricciones regulatorias
+        - Aumentar la seguridad
+        - Reduci las dependencias entre desarrollo e implementación
+        - Reducir los costes de mantenimiento y operación
+      details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+
+    - id: platform-and-technology
+      title: Plataformas y Tecnologías
+      intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
+      list:
+        - Elegir las herramientas adecuadas para cada trabajo
+        - Lograr un alto rendimiento
+        - Establecer una ruta de migración
+        - Atraer talento
+      details: Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend':' Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg

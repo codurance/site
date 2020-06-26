@@ -12,24 +12,29 @@
   }
 }
 
-.tabber_large_screen_control {
-  background: transparent;
-  border: 0 none;
-  color: #444444;
-  cursor: pointer;
-  float: left;
-  min-height: 60px;
-  padding: 5px 30px;
-  position: relative;
-  text-align: center;
-  width: calc(100% / 6);
-
+.tabber__large-screen-controls {
   @include small-and-medium {
     display: none;
   }
   @include large-and-extra-large {
+    display: flex;
+  }
+}
+
+.tabber__large-screen-control {
+  @include large-and-extra-large {
+    background: transparent;
+    border: 0 none;
+    color: #444444;
+    cursor: pointer;
+    flex-basis: 0;
+    flex-grow: 1;
     font-size: 16px;
     line-height: 19px;
+    min-height: 60px;
+    padding: 5px 30px;
+    position: relative;
+    text-align: center;
   }
 
   &:hover:after,
@@ -69,6 +74,7 @@
       display: none;
     }
   }
+
   &.active {
     &::before {
       background-color: #0e4072;
@@ -76,6 +82,7 @@
       color: #ffffff;
     }
   }
+
   &:not(.active) {
     &::before {
       background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-plus.svg");
@@ -97,6 +104,7 @@
     visibility: hidden;
     height: 0;
   }
+
   .tabber-panel.active & {
     opacity: 1;
     visibility: visible;
