@@ -68,18 +68,33 @@
 }
 
 .service-line-hero__title {
-  @include dudler-bold;
+  @include ponti-bold;
+  align-items: center;
+  display: flex;
   margin-bottom: 25px;
-  position: relative;
 }
 
 .service-line-hero__sub-title  {
-  @include mercer-bold;
+  @include small {
+    @include mercer;
+  }
+  @include medium-and-large{
+    @include freed-bold;
+  }
+  @include extra-large {
+    @include eames-bold;
+  }
 }
 
 .service-line-hero__description {
-  @include mercer;
-  margin-bottom: 20px;
+  @include small-medium-and-large {
+    @include base;
+    margin-bottom: 30px;
+  }
+  @include extra-large {
+    @include mercer;
+    margin-bottom: 35px;
+  }
 }
 
 .service-line-hero__title,
