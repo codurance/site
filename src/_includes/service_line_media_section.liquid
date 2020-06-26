@@ -2,14 +2,14 @@
 
 {% if featured_posts.size == 1 %}
   {% assign spacing-modifier = "service-line__media-section--one-publication" %}
-  {% assign curated-publications-modifier = "services__curated-publications--small-margin-top" %}
+  {% assign curated-publications-modifier = "services__curated-publications--reduced-spacing-above" %}
 {% endif %}
 
 <div class="service-line__sheen-container {{ spacing-modifier }}">
   {%- if translations.webinar -%}
     {% include soft_mod_webinar_hero_teaser.html %}
   {% else %}
-    {% assign curated-publications-modifier = "services__curated-publications--small-margin-top" %}
+    {% assign curated-publications-modifier = "services__curated-publications--reduced-spacing-above" %}
   {%- endif -%}
 
   {% if featured_posts.size != 0 %}
