@@ -19,8 +19,6 @@
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 10px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  margin-left: $lateral-space--small;
-  margin-right: $lateral-space--small;
   min-width: 230px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
@@ -32,10 +30,16 @@
     margin-bottom: 40px;
     text-align: center;
     max-width: 500px;
+    margin-left: $lateral-space--small;
+    margin-right: $lateral-space--small;
 
     &:nth-last-child(1) {
       margin-bottom: 0;
     }
+  }
+  @include medium-large-and-extra-large{
+    margin-left: 10px;
+    margin-right: 10px;
   }
   @include medium-and-large {
     margin-bottom: 40px;

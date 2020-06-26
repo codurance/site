@@ -62,21 +62,15 @@
     padding-bottom: 50px;
     padding-top: 100px;
   }
+  @include extra-large {
+    @include max-width--framed;
+  }
 }
 
 .service-line-problems {
   position: relative;
-
-  &:before {
-    content: "";
-    background: $sheen;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
+  background-size: cover;
+  background-position: center;
 
   @include small {
     padding-bottom: 50px;
@@ -89,13 +83,14 @@
   }
 
   @include extra-large {
+    @include max-width--framed;
     padding-top: 100px;
 
     &:after {
       content: "";
       background-color: $slate;
       bottom: 0;
-      height: 450px;
+      height: 300px;
       position: absolute;
       right: 0;
       width: 100%;

@@ -706,7 +706,7 @@ service-line-case-studies:
 
   card-one:
     heading: ASOS
-    subheading: Enhanced business agility through software modernisation
+    subheading: Enhanced business agility through Software Modernisation
     button: Download Case Study
     url: https://info.codurance.com/en/asos-case-study
 
@@ -724,7 +724,7 @@ service-line-case-studies:
 
   card-four:
     heading: BestSecret
-    subheading: Cloud migration, architecture evolution and cultural alignment
+    subheading: Cloud migration, architecture evolution, and cultural alignment
     button: Download Case Study
     url: https://info.codurance.com/en/best-secret-case-study
 
