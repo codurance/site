@@ -681,9 +681,7 @@ software-modernisation:
 software-delivery:
   hero-title: Software Delivery
   hero-sub-title: Desde el concepto hasta el software en producción, trabajamos para mejorar el rendimiento de forma rápida y continua.
-  hero-description:
-    Trabajamos contigo para definir y desarrollar lo que necesites. Te proporcionamos un equipo multifuncional altamente cualificado que participará en todo el proceso desde el inception hasta que el producto esté funcionando.
-    Software Craftsmanship, Agile y Lean son parte de nuestro ADN. Esto nos permite desaarollar nuestro trabajo en entornos altamente colaborativos, aplicando desarrollo iterativo e incremental y la priorización basada en valor de las entregas.
+  hero-description: Trabajamos contigo para definir y desarrollar lo que necesites. Te proporcionamos un equipo multifuncional altamente cualificado que participará en todo el proceso desde el inception hasta que el producto esté funcionando.
 
   curated-publications:
     intro-title: Sobre Software Delivery

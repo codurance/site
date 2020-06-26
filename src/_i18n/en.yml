@@ -678,8 +678,7 @@ software-modernisation:
 software-delivery:
   hero-title: Software Delivery
   hero-sub-title: We help companies innovate by quickly bringing ideas to market from concept to software in production.
-  hero-description: <p> We can help you define and build the features you need by providing fully autonomous cross-functional teams or by simply providing highly qualified extra capacity.</p>
-                    <p> Software Craftsmanship, Agile, and Lean are part of our DNA. This allows us to develop our work in highly collaborative environments, applying iterative and incremental development, and value-based prioritization of deliveries.</p>
+  hero-description: We can help you define and build the features you need by providing fully autonomous cross-functional teams or by simply providing highly qualified extra capacity.
 
   curated-publications:
     intro-title: Software Delivery publications
