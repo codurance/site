@@ -16,6 +16,7 @@ tags:
   - business case
 pinned_locations:
   - soft-mod
+  - software-delivery
 in_page_banner: none
 ---
 

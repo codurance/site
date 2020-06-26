@@ -15,6 +15,7 @@ tags:
   - software modernisation
 pinned_locations:
   - soft-mod
+  - software-delivery
 ---
 
 ## Introduction
