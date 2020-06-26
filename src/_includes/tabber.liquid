@@ -2,7 +2,7 @@
   <nav class="tabber__large-screen-controls">
     {% for tab in include.tabber_data %}
       {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
-      <button class="tabber_large_screen_control {{ active_class }}" data-large_screen_control data-related_tab="{{ tab.id }}">{{ tab.title }}</button>
+      <button class="tabber__large-screen-control {{ active_class }}" data-large_screen_control data-related_tab="{{ tab.id }}">{{ tab.title }}</button>
     {% endfor %}
   </nav>
   {% for tab in include.tabber_data %}
