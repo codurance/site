@@ -66,6 +66,8 @@
 
 .service-line-problems {
   position: relative;
+  background-size: cover;
+  background-position: center;
 
   @include small {
     padding-bottom: 50px;
