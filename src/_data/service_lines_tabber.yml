@@ -330,7 +330,7 @@ es:
 
   specialist-expertise:
     - id: technical-expertise
-      title: Experiencia Técnica y Estratégica Aplicada a la Práctica
+      title: Experiencia técnica y estratégica aplicada a la práctica
       intro: Craftspeople integrados con sólidas habilidades técnicas.
       list:
         - Testing strategy y automatización
@@ -341,24 +341,24 @@ es:
         - Ingeniería de confiabilidad del sitio
         - Metodologías Agile y Lean
         - Diseño de producto y experiencia del usuario (UX)
-      details: Aumentar la capacidad durante los picos. Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+      details: Aumentar la capacidad durante los picos. Confíar en especialistas experimentados con las habilidades técnicas que necesitas.
 
     - id: upskilling
       title: Upskilling
       intro: Mejora las habilidades de tu equipo.
       list:
         - Coaches técnicos integrados en tus equipos.
-        - Comunidades de practicas
+        - Comunidades de prácticas
         - Desarrollo técnico y programas de formación.
-      details: Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto
+      details: Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto.
 
     - id: improvement-initiatives
-      title: Iniciativas de Mejora
+      title: Iniciativas de mejora
       intro: Implementa iniciativas de mejora.
       list:
         - Coaching Agile, Lean y de equipos
         - Diseño organizacional
-        - Prácticas Extreme programming
+        - Prácticas Extreme Programming
         - Ingeniería de calidad y automatización
         - Entrega continua
-      details: Orientar y apoyar iniciativas de mejora estratégica. Reforzar tu liderazgo técnico
+      details: Orientar y apoyar iniciativas de mejora estratégica. Reforzar tu liderazgo técnico.
