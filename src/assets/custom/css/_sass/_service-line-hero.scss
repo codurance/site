@@ -82,6 +82,7 @@ $medium-width-content-padding: 100px;
     display: none;
   }
   @include large-and-extra-large {
+    background-color: #cf5b66;
     background-size: cover;
     bottom: -50px;
     left: calc(50% + 100px);
