@@ -269,7 +269,7 @@ es:
 
   software-delivery:
     - id: product-strategy
-      title: Estrategia de Producto
+      title: Estrategia de producto
       intro: Alinear el diseño de producto y software es clave para lograr la agilidad de negocio.
       list:
         - Descubrir las necesidades del negocio
@@ -277,11 +277,11 @@ es:
         - Mejorar la experiencia de usuario y la satisfacción del cliente.
         - Lograr una priorización basada en el valor.
         - Innovar a través de la experimentación.
-      details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo d el Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
+      details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo del Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
     - id: people-and-process
-      title: Procesos y Personas
+      title: Procesos y personas
       intro: Las personas son el corazón de cualquier producto de software.
       list:
         - Involucrar a tus stakeholders
@@ -296,7 +296,7 @@ es:
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 
     - id: practices-and-automation
-      title: Prácticas y Automatización
+      title: Prácticas y automatización
       intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
         - Automatización de los test en múltiples niveles
@@ -304,7 +304,7 @@ es:
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
     - id: architecture-and-design
-      title: Arquitectura y Diseño
+      title: Arquitectura y diseño
       intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
       list:
         - Romper el monolito
@@ -312,20 +312,20 @@ es:
         - Aprovechar los modelos de pago por uso
         - Adaptarse a las restricciones regulatorias
         - Aumentar la seguridad
-        - Reduci las dependencias entre desarrollo e implementación
+        - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
       details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 
     - id: platform-and-technology
-      title: Plataformas y Tecnologías
+      title: Plataformas y tecnologías
       intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
       list:
         - Elegir las herramientas adecuadas para cada trabajo
         - Lograr un alto rendimiento
         - Establecer una ruta de migración
         - Atraer talento
-      details: Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend':' Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL
+      details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
   specialist-expertise:
