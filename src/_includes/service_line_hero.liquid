@@ -1,13 +1,15 @@
-<section class="service-line-hero" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
+<section class="service-line-hero">
  <div class="service-line-hero__inner">
     <div class="service-line-hero__content-container">
-      <h1 class="service-line-hero__title">
-        {{ site.data.service_lines[page.service-line].icon }}
-        {{ translations.hero-title }}
-      </h1>
-      <p class="service-line-hero__sub-title">
-        {{ translations.hero-sub-title }}
-      </p>
+      <div class="service-line-hero__small-background-wrapper" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
+        <h1 class="service-line-hero__title">
+          {{ site.data.service_lines[page.service-line].icon }}
+          {{ translations.hero-title }}
+        </h1>
+        <p class="service-line-hero__sub-title">
+          {{ translations.hero-sub-title }}
+        </p>
+      </div>
       <p class="service-line-hero__description">
         {{ translations.hero-description }}
       </p>
