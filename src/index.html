@@ -2,8 +2,21 @@
 layout: default
 ---
 
-<!-- feature panel -->
 <div class="feature-panel">
+  <div class="video-bg-wrapper">
+    <video controls="false" playsinline autoplay muted poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}" loop class="video-bg">
+      <source src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}" type="video/mp4"/>
+      <source src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}" type="video/ogg" />
+      <source src="{{ '/assets/custom/video/home/home-hero.webm' | prepend: site.baseurl }}" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="bg-slider">
+    <div class="bg-slide1"></div>
+    <div class="bg-slide2"></div>
+    <div class="bg-slide3"></div>
+  </div>
+  <div class="feature-panel--shaded-mask"></div>
   <div class="jumbotron">
     <h1>{% t index-banner.title %}</h1>
     <h3 class="h2">{% t index-banner.subtitle %}</h3>
@@ -17,20 +30,6 @@ layout: default
   </div>
 </div>
 
-<div class="video-bg-wrapper">
-  <video controls="false" playsinline autoplay muted poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}" loop class="video-bg">
-    <source src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}" type="video/mp4"/>
-    <source src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}" type="video/ogg" />
-    <source src="{{ '/assets/custom/video/home/home-hero.webm' | prepend: site.baseurl }}" type="video/webm" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<div class="bg-slider">
-  <div class="bg-slide1"></div>
-  <div class="bg-slide2"></div>
-  <div class="bg-slide3"></div>
-</div>
 
 <!-- Activity panel -->
 <div class="section">
