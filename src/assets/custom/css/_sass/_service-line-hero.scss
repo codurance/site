@@ -1,4 +1,5 @@
 $section-top-padding: 50px;
+$medium-width-content-padding: 100px;
 
 .service-line-hero {
   @include small-and-medium {
@@ -43,10 +44,10 @@ $section-top-padding: 50px;
     margin-right: -$lateral-space--small;
   }
   @include medium {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: -100px;
-    margin-right: -100px;
+    padding-left: $medium-width-content-padding;
+    padding-right: $medium-width-content-padding;
+    margin-left: -$medium-width-content-padding;
+    margin-right: -$medium-width-content-padding;
   }
   @include large-and-extra-large {
     background-size: 0;
@@ -58,8 +59,8 @@ $section-top-padding: 50px;
     @include lateral-spacing;
   }
   @include medium {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: $medium-width-content-padding;
+    padding-right: $medium-width-content-padding;
   }
   @include large-and-extra-large {
     max-width: 600px;
