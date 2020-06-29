@@ -16,6 +16,7 @@ tags:
 pinned_locations:
   - soft-mod
   - software-delivery
+  - specialist-expertise
 ---
 
 ## Introduction

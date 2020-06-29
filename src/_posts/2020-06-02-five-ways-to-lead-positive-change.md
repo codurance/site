@@ -17,6 +17,7 @@ pinned_locations:
   - service-line-example-page
   - soft-mod
   - software-delivery
+  - specialist-expertise
 ---
 
 ### Introduction  
