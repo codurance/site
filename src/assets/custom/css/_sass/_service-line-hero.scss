@@ -33,10 +33,10 @@ $medium-width-content-padding: 100px;
 
 .service-line-hero__small-background-wrapper {
   @include small-and-medium {
-    background-size: cover;
     background-position: center;
-    padding-top: 50px;
+    background-size: cover;
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   @include small {
     @include lateral-spacing;
@@ -44,10 +44,10 @@ $medium-width-content-padding: 100px;
     margin-right: -$lateral-space--small;
   }
   @include medium {
-    padding-left: $medium-width-content-padding;
-    padding-right: $medium-width-content-padding;
     margin-left: -$medium-width-content-padding;
     margin-right: -$medium-width-content-padding;
+    padding-left: $medium-width-content-padding;
+    padding-right: $medium-width-content-padding;
   }
   @include large-and-extra-large {
     background-size: 0;
