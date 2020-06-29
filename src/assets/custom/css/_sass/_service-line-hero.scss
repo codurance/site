@@ -19,17 +19,16 @@ $section-top-padding: 50px;
   @include medium-large-and-extra-large {
     min-height: 600px;
   }
+  @include large-and-extra-large {
+    position: relative;
+  }
   @include extra-large {
     @include max-width--framed;
-    position: relative;
   }
 }
 
 .service-line-hero__inner {
   @include max-width--out-there;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background: pink;
 }
 
@@ -50,6 +49,7 @@ $section-top-padding: 50px;
     padding-bottom: 50px;
     padding-top: 50px;
     width: 50%;
+    max-width: 600px;
   }
   @include extra-large {
     padding-bottom: 70px;
@@ -57,28 +57,24 @@ $section-top-padding: 50px;
 }
 
 .service-line-hero__image-container {
+  overflow: hidden;
+
   @include small-and-medium {
     display: none;
   }
-  @include large {
+  @include large-and-extra-large {
     background-size: cover;
-    height: 750px;
-    justify-content: center;
-    left: 50%;
-    max-width: 900px;
-    overflow: hidden;
+    bottom: -50px;
+    left: calc(50% + 100px);
     position: absolute;
-    top: 0;
-    width: 50%;
-  }
-  @include extra-large {
-    height: 750px;
-    max-width: 750px;
-    position: absolute;
-    right: 50px;
-    width: 50%;
     top: $section-top-padding;
     z-index: 1;
+  }
+  @include large {
+    right: 0;
+  }
+  @include extra-large {
+    right: 50px;
   }
 }
 
