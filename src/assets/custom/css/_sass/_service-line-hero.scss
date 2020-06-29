@@ -1,24 +1,13 @@
 $section-top-padding: 50px;
 
 .service-line-hero {
-  padding-top: $section-top-padding;
-
   @include small-and-medium {
-    background-color: #201d2b;
-    background-position: center;
-    background-size: cover;
+    padding-bottom: 50px;
   }
   @include large-and-extra-large {
     background-image: none !important;
-  }
-  @include small {
-    padding-top: 120px;
-    padding-bottom: 50px;
-  }
-  @include medium-large-and-extra-large {
     min-height: 600px;
-  }
-  @include large-and-extra-large {
+    padding-top: $section-top-padding;
     position: relative;
   }
   @include extra-large {
@@ -41,24 +30,44 @@ $section-top-padding: 50px;
   }
 }
 
-.service-line-hero__content-container {
-  $icon-space: 65px;
-
+.service-line-hero__small-background-wrapper {
+  @include small-and-medium {
+    background-size: cover;
+    background-position: top center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   @include small {
-    padding-left: $lateral-space--medium;
+    @include lateral-spacing;
+    margin-left: -$lateral-space--small;
+    margin-right: -$lateral-space--small;
   }
   @include medium {
-    padding-left: calc(#{$lateral-space--medium} + #{$icon-space});
-  }
-  @include small-and-medium {
-    padding-right: $lateral-space--medium;
-    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: -100px;
+    margin-right: -100px;
   }
   @include large-and-extra-large {
-    padding-bottom: 50px;
+    background-size: 0;
+  }
+}
+
+.service-line-hero__content-container {
+  @include small {
+    @include lateral-spacing;
+  }
+  @include medium {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @include large-and-extra-large {
+    max-width: 600px;
     padding-top: 50px;
     width: 50%;
-    max-width: 600px;
+  }
+  @include large {
+    padding-bottom: 50px;
   }
   @include extra-large {
     padding-bottom: 70px;
@@ -102,8 +111,11 @@ $section-top-padding: 50px;
 }
 
 .service-line-hero__sub-title  {
+  @include small-and-medium {
+    margin-bottom: 0;
+  }
   @include small {
-    @include mercer;
+    @include mercer-bold;
   }
   @include medium-and-large{
     @include freed-bold;
@@ -114,6 +126,9 @@ $section-top-padding: 50px;
 }
 
 .service-line-hero__description {
+  @include small-and-medium {
+    margin-top: 50px;
+  }
   @include small-medium-and-large {
     @include base;
     margin-bottom: 30px;
@@ -125,8 +140,7 @@ $section-top-padding: 50px;
 }
 
 .service-line-hero__title,
-.service-line-hero__sub-title,
-.service-line-hero__description {
+.service-line-hero__sub-title {
   @include small-and-medium {
     color: white;
   }
