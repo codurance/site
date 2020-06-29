@@ -1,7 +1,6 @@
 $section-top-padding: 50px;
 
 .service-line-hero {
-  background-color: orange!important;
   padding-top: $section-top-padding;
 
   @include small-and-medium {
@@ -29,7 +28,17 @@ $section-top-padding: 50px;
 
 .service-line-hero__inner {
   @include max-width--out-there;
-  background: pink;
+
+  @include large {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: $section-top-padding;
+  }
 }
 
 .service-line-hero__content-container {
