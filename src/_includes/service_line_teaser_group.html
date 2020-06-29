@@ -3,7 +3,7 @@
 <section class="service-line-teaser-group">
   {% for service_line in data.service_lines_in_teaser_group %}
     {% assign data-entry = data[service_line] %}
-    {% capture title %}{% if site.lang == 'es' %}{{ data-entry.es-title }}{% else %}{{ data-entry.en-title }}{% endif %}{% endcapture %}
+    {% capture title %}{{ data-entry.title }}{% endcapture %}
     {% capture description %}{% if site.lang == 'es' %}{{ data-entry.es-description }}{% else %}{{ data-entry.en-description }}{% endif %}{% endcapture %}
     <article class="service-line-teaser-group__card">
       <div class="service-line-teaser-group__card-image" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})"></div>
