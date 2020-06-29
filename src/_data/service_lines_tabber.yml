@@ -134,6 +134,41 @@ en:
       details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
+  specialist-expertise:
+    - id: technical-expertise
+      title: Hands-on Technical Expertise
+      intro: Embedded craftspeople with solid technical skills.
+      list:
+        - Testing strategy and automation
+        - Test-Driven Development (TDD)
+        - Cloud technologies
+        - Software architecture and design
+        - DevOps
+        - Site reliability engineering
+        - Agile and Lean methodologies
+        - Product Design and User Experience (UX)
+      details: Increase capacity during peaks. Rely on experienced specialists with the technical skills you need
+
+    - id: upskilling
+      title: Upskilling
+      intro: Improve your team's skills.
+      list:
+        - Technical coaches embedded in your teams
+        - Communities of practice
+        - Technical development and training programs
+      details: Help your team build the skills they need to excel in every area of your product delivery.
+
+    - id: improvement-initiatives
+      title: Improvement Initiatives
+      intro: Implement improvement initiatives.
+      list:
+        - Agile, Lean, and team(s) coaching
+        - Organisational design
+        - Extreme Programming practices
+        - Quality engineering and automation
+        - Continuous delivery
+      details: Guide and support strategic improvement initiatives. Supplement your technical leadership
+
   service-line-example:
     - id: tab-1
       title: Tab 1
@@ -292,3 +327,38 @@ es:
         - Atraer talento
       details: Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación':' Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend':' Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+  specialist-expertise:
+    - id: technical-expertise
+      title: Experiencia Técnica y Estratégica Aplicada a la Práctica
+      intro: Craftspeople integrados con sólidas habilidades técnicas.
+      list:
+        - Testing strategy y automatización
+        - Test-Driven Development (TDD)
+        - Tecnologías cloud
+        - Arquitectura y diseño de software
+        - DevOps
+        - Ingeniería de confiabilidad del sitio
+        - Metodologías Agile y Lean
+        - Diseño de producto y experiencia del usuario (UX)
+      details: Aumentar la capacidad durante los picos. Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+
+    - id: upskilling
+      title: Upskilling
+      intro: Mejora las habilidades de tu equipo.
+      list:
+        - Coaches técnicos integrados en tus equipos.
+        - Comunidades de practicas
+        - Desarrollo técnico y programas de formación.
+      details: Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto
+
+    - id: improvement-initiatives
+      title: Iniciativas de Mejora
+      intro: Implementa iniciativas de mejora.
+      list:
+        - Coaching Agile, Lean y de equipos
+        - Diseño organizacional
+        - Prácticas Extreme programming
+        - Ingeniería de calidad y automatización
+        - Entrega continua
+      details: Orientar y apoyar iniciativas de mejora estratégica. Reforzar tu liderazgo técnico
