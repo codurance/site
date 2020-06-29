@@ -34,7 +34,7 @@ $medium-width-content-padding: 100px;
 .service-line-hero__small-background-wrapper {
   @include small-and-medium {
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     padding-top: 50px;
     padding-bottom: 50px;
   }
