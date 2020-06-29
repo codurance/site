@@ -2,11 +2,13 @@ $section-top-padding: 50px;
 $medium-width-content-padding: 100px;
 
 .service-line-hero {
-  @include small-and-medium {
+  @include small {
     padding-bottom: 50px;
   }
+  @include medium {
+    padding-bottom: 100px;
+  }
   @include large-and-extra-large {
-    background-image: none !important;
     min-height: 600px;
     padding-top: $section-top-padding;
     position: relative;
