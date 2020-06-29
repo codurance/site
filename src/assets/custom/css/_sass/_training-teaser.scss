@@ -5,8 +5,7 @@
   background-size: cover;
 
   @include extra-large {
-    @include max-width;
-    max-width: calc(100% - (2 * #{$lateral-space--large}));
+    @include max-width--framed;
   }
 }
 

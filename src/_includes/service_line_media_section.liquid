@@ -8,6 +8,8 @@
 <div class="service-line__sheen-container {{ spacing-modifier }}">
   {%- if translations.webinar -%}
     {% include soft_mod_webinar_hero_teaser.html %}
+  {% else %}
+    {% assign curated-publications-modifier = "services__curated-publications--no-webinar" %}
   {%- endif -%}
 
   {% if featured_posts.size != 0 %}
