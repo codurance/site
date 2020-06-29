@@ -45,3 +45,9 @@
   image: /assets/custom/img/home/partners/satalia.png
   alt-text: Satalia Logo
   url: https://www.satalia.com/
+
+- id: microsoft
+  name: microsoft
+  image: /assets/custom/img/home/partners/microsoft.png
+  alt-text: Microsoft Logo
+  url: https://www.microsoft.com/en-gb/industry
