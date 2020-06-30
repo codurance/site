@@ -233,7 +233,7 @@ es:
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
   software-delivery:
-    - id: product-strategy
+    - id: estrategia-de-producto
       title: Estrategia de producto
       intro: Alinear el diseño de producto y software es clave para lograr la agilidad de negocio.
       list:
@@ -245,7 +245,7 @@ es:
       details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo del Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
 
-    - id: people-and-process
+    - id: procesos-y-personas
       title: Procesos y personas
       intro: Las personas son el corazón de cualquier producto de software.
       list:
@@ -260,7 +260,7 @@ es:
       details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
 
-    - id: practices-and-automation
+    - id: practicas-y-automatizacion
       title: Prácticas y automatización
       intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
@@ -268,7 +268,7 @@ es:
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
 
-    - id: architecture-and-design
+    - id: arquitectura-y-diseno
       title: Arquitectura y diseño
       intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
       list:
@@ -282,7 +282,7 @@ es:
       details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
 
-    - id: platform-and-technology
+    - id: plataformas-y-tecnologias
       title: Plataformas y tecnologías
       intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
       list:
