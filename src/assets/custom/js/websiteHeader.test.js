@@ -18,9 +18,12 @@ describe("Website Header", () => {
 
     describe("When the window is scrolled", () => {
       beforeEach(() => {
-        var simulatedEvent = document.createEvent("Event");
-        simulatedEvent.initEvent("scroll", true, true);
-        window.document.dispatchEvent(simulatedEvent);
+        window.document.dispatchEvent(
+          new Event("scroll", {
+            bubbles: true,
+            cancelable: true,
+          })
+        );
       });
 
       it("adds the hidden class to the header", () => {
