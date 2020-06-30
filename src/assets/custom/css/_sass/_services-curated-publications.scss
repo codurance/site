@@ -8,10 +8,14 @@
 
 .services__curated-publications--one-publication,
 .services__curated-publications--no-webinar {
-  &:first-child {
-    margin-top: -150px;
+  @include medium-large-and-extra-large {
+    &:first-child {
+      margin-top: -150px;
+    }
   }
+}
 
+.services__curated-publications--one-publication {
   @include small {
     display: none;
   }
