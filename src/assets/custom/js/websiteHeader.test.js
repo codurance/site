@@ -25,7 +25,7 @@ describe("Website Header", () => {
       header = window.document.querySelector(".website-header");
     });
 
-    it("does not hide the header", () => {
+    it("does NOT hide the header", () => {
       expect(header.classList).not.toContain("website-header--hide");
     });
 
@@ -37,8 +37,21 @@ describe("Website Header", () => {
         );
       });
 
-      it("does not hide the header", () => {
+      it("does NOT hide the header", () => {
         expect(header.classList).not.toContain("website-header--hide");
+      });
+    });
+
+    describe("When the window is scrolled by the height of the header", () => {
+      beforeEach(() => {
+        window.scrollY = headerHeight;
+        window.document.dispatchEvent(
+          new Event("scroll", { bubbles: true, cancelable: true })
+        );
+      });
+
+      it("does hide the header", () => {
+        expect(header.classList).toContain("website-header--hide");
       });
     });
   });
