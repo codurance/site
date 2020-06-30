@@ -48,7 +48,7 @@ describe("Website Header", () => {
       });
     });
 
-    describe("When the scroll down so far the header goes out of view", () => {
+    describe("When we scroll down so far the header goes out of view", () => {
       beforeEach(() => {
         simulateScrollingToY(headerHeight);
       });
