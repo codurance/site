@@ -243,7 +243,7 @@ es:
         - Lograr una priorización basada en el valor.
         - Innovar a través de la experimentación.
       details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo del Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
 
     - id: people-and-process
       title: Procesos y personas
@@ -258,7 +258,7 @@ es:
         - Desarrollar circuitos de feedback rápidos y efectivos
         - Atraer talento
       details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
 
     - id: practices-and-automation
       title: Prácticas y automatización
@@ -266,7 +266,7 @@ es:
       list:
         - Automatización de los test en múltiples niveles
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: architecture-and-design
       title: Arquitectura y diseño
@@ -280,7 +280,7 @@ es:
         - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
       details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: platform-and-technology
       title: Plataformas y tecnologías
@@ -291,4 +291,4 @@ es:
         - Establecer una ruta de migración
         - Atraer talento
       details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
