@@ -18,18 +18,19 @@ const arrangeMockHeader = () => {
 let header;
 
 describe("Website Header", () => {
-  describe("When the page loads with a Website Header in the DOM", () => {
+  describe("When the page loads with a Website Header", () => {
     beforeAll(() => {
       arrangeMockHeader();
       simulatePageLoad();
       header = window.document.querySelector(".website-header");
     });
 
-    it("does NOT hide the header", () => {
-      expect(header.classList).not.toContain("website-header--hide");
+    it("no special classes are applied", () => {
+      expect(header.classList).toContain("website-header");
+      expect(header.classList.length).toBe(1);
     });
 
-    describe("When the window is scrolled by less than the height of the header", () => {
+    describe("When we scroll down but not so far the header goes out of view", () => {
       beforeEach(() => {
         window.scrollY = headerHeight - 1;
         window.document.dispatchEvent(
@@ -37,12 +38,13 @@ describe("Website Header", () => {
         );
       });
 
-      it("does NOT hide the header", () => {
-        expect(header.classList).not.toContain("website-header--hide");
+      it("no special classes are applied", () => {
+        expect(header.classList).toContain("website-header");
+        expect(header.classList.length).toBe(1);
       });
     });
 
-    describe("When the window is scrolled by the height of the header", () => {
+    describe("When the scroll down so far the header goes out of view", () => {
       beforeEach(() => {
         window.scrollY = headerHeight;
         window.document.dispatchEvent(
@@ -50,8 +52,10 @@ describe("Website Header", () => {
         );
       });
 
-      it("does hide the header", () => {
-        expect(header.classList).toContain("website-header--hide");
+      it("a special class is applied to hide the header", () => {
+        expect(header.classList).toContain("website-header");
+        expect(header.classList).toContain("website-header--hidden");
+        expect(header.classList.length).toBe(2);
       });
     });
   });

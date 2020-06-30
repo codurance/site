@@ -1,5 +1,10 @@
 var websiteHeader = function () {
-  var HEADER = window.document.querySelector(".website-header");
+  var HEADER_SELECTOR = ".website-header";
+  var CLASS = {
+    HIDDEN: "website-header--hidden",
+  };
+
+  var HEADER = window.document.querySelector(HEADER_SELECTOR);
   window.addEventListener("scroll", handleScroll);
 
   function handleScroll() {
@@ -10,7 +15,7 @@ var websiteHeader = function () {
   }
 
   function hideNav() {
-    HEADER.classList.add("website-header--hide");
+    HEADER.classList.add(CLASS.HIDDEN);
   }
 
   function startingPositionIsInView() {

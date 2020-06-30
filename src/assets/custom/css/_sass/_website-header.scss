@@ -2,17 +2,11 @@
   background-color: white;
   font-size: 13px;
   height: 94px;
-  left: 0;
   padding-bottom: 15px;
   padding-top: 15px;
-  position: sticky;
-  right: 0;
-  top: 0;
-  transition: transform 1s;
-  z-index: 100;
   background-color: white;
 }
 
-.website-header--hide {
+.website-header--hidden {
   transform: translateY(-100%);
 }
