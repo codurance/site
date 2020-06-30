@@ -69,12 +69,15 @@
 
 .service-line-problems {
   position: relative;
-  background-size: cover;
-  background-position: center;
+  background-position: center top;
 
   @include small {
     padding-bottom: 50px;
     padding-top: 50px;
+  }
+
+  @include small-medium-and-large{
+    background-size: cover;
   }
 
   @include medium-and-large {
@@ -84,6 +87,8 @@
 
   @include extra-large {
     @include max-width--framed;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
     padding-top: 100px;
 
     &:after {
