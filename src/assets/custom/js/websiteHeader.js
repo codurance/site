@@ -23,6 +23,11 @@ var websiteHeader = function () {
   function handleScrollPosition(latestWindowPosition) {
     var upwardMovement = previousWindowPosition > latestWindowPosition;
 
+    if (atTheTop(latestWindowPosition)) {
+      restoreNaturalPosition();
+      return;
+    }
+
     if (startingPositionIsInView(latestWindowPosition)) {
       hideStickyHeader();
       return;
@@ -46,6 +51,15 @@ var websiteHeader = function () {
 
   function hideHeader() {
     HEADER.classList.add(CLASS.HIDDEN);
+  }
+
+  function restoreNaturalPosition() {
+    HEADER.classList.remove(CLASS.REVEALED);
+    HEADER.classList.remove(CLASS.HIDDEN);
+  }
+
+  function atTheTop(p) {
+    return p < 1;
   }
 
   function startingPositionIsInView(p) {

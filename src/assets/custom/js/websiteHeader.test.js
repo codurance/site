@@ -83,6 +83,17 @@ describe("Website Header", () => {
         expect(header.classList).toContain("website-header--revealed");
         expect(header.classList.length).toBe(2);
       });
+
+      describe("When we scroll all the way up to the top of the page", () => {
+        beforeEach(() => {
+          simulateScrollingToY(0);
+        });
+
+        it("we let the header return to it's natural position", () => {
+          expect(header.classList).toContain("website-header");
+          expect(header.classList.length).toBe(1);
+        });
+      });
     });
   });
 });
