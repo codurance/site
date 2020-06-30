@@ -25,7 +25,7 @@ const simulateScrollingToY = (y) => {
 let header;
 
 describe("Website Header", () => {
-  describe("When the page loads with a Website Header", () => {
+  describe("When a page with a Website Header loads", () => {
     beforeAll(() => {
       arrangeMockHeader();
       simulatePageLoad();
