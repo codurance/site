@@ -8,13 +8,14 @@ var websiteHeader = function () {
   window.addEventListener("scroll", handleScroll);
 
   function handleScroll() {
-    if (startingPositionIsInView()) {
-      return;
-    }
-    hideNav();
+    startingPositionIsInView() ? showHeader() : hideHeader();
   }
 
-  function hideNav() {
+  function showHeader() {
+    HEADER.classList.remove(CLASS.HIDDEN);
+  }
+
+  function hideHeader() {
     HEADER.classList.add(CLASS.HIDDEN);
   }
 

@@ -58,6 +58,18 @@ describe("Website Header", () => {
         expect(header.classList).toContain("website-header--hidden");
         expect(header.classList.length).toBe(2);
       });
+
+      describe("When we then scroll back up to the original header position", () => {
+        beforeEach(() => {
+          simulateScrollingToY(headerHeight - 1);
+        });
+
+        it("the hidden class is no longer applied", () => {
+          expect(header.classList).toContain("website-header");
+          expect(header.classList).not.toContain("website-header--hidden");
+          expect(header.classList.length).toBe(1);
+        });
+      });
     });
   });
 });
