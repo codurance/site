@@ -1,62 +1,102 @@
-.service-line-hero {
-  @include max-width--out-there;
+$section-top-padding: 50px;
+$medium-width-content-padding: 100px;
 
-  @include small-and-medium {
-    background-color: #201d2b;
-    background-position: center;
-    background-size: cover;
-  }
-  @include large-and-extra-large {
-    background-image: none !important;
-  }
+.service-line-hero {
   @include small {
-    padding-top: 120px;
     padding-bottom: 50px;
   }
-  @include medium-large-and-extra-large {
+  @include medium {
+    padding-bottom: 100px;
+  }
+  @include large-and-extra-large {
     min-height: 600px;
+    padding-top: $section-top-padding;
+    position: relative;
+  }
+  @include extra-large {
+    @include max-width--framed;
+  }
+}
+
+.service-line-hero__inner {
+  @include max-width--out-there;
+
+  @include large {
+    bottom: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: $section-top-padding;
+  }
+}
+
+.service-line-hero__small-background-wrapper {
+  @include small-and-medium {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include small {
+    @include lateral-spacing;
+    margin-left: -$lateral-space--small;
+    margin-right: -$lateral-space--small;
+  }
+  @include medium {
+    margin-left: -$medium-width-content-padding;
+    margin-right: -$medium-width-content-padding;
+    padding-left: $medium-width-content-padding;
+    padding-right: $medium-width-content-padding;
+  }
+  @include large-and-extra-large {
+    background-size: 0;
   }
 }
 
 .service-line-hero__content-container {
-  $icon-space: 65px;
-
   @include small {
-    padding-left: $lateral-space--medium;
+    @include lateral-spacing;
   }
   @include medium {
-    padding-left: calc(#{$lateral-space--medium} + #{$icon-space});
-  }
-  @include small-and-medium {
-    padding-right: $lateral-space--medium;
-    width: 100%;
+    padding-left: $medium-width-content-padding;
+    padding-right: $medium-width-content-padding;
   }
   @include large-and-extra-large {
-    padding-bottom: 50px;
-    padding-left: $icon-space;
-    padding-right: 40px;
+    max-width: 600px;
     padding-top: 50px;
     width: 50%;
+  }
+  @include large {
+    padding-bottom: 50px;
+  }
+  @include extra-large {
+    padding-bottom: 70px;
   }
 }
 
 .service-line-hero__image-container {
+  overflow: hidden;
+
   @include small-and-medium {
     display: none;
   }
   @include large-and-extra-large {
+    background-color: #cf5b66;
     background-size: cover;
-    height: 750px;
-    justify-content: center;
-    left: 50%;
-    max-width: 900px;
-    overflow: hidden;
+    bottom: -50px;
+    left: calc(50% + 100px);
     position: absolute;
-    top: 0;
-    width: 50%;
+    top: $section-top-padding;
+    z-index: 1;
+  }
+  @include large {
+    right: 0;
+  }
+  @include extra-large {
+    right: 50px;
   }
 }
 
@@ -68,23 +108,43 @@
 }
 
 .service-line-hero__title {
-  @include dudler-bold;
+  @include ponti-bold;
+  align-items: center;
+  display: flex;
   margin-bottom: 25px;
-  position: relative;
 }
 
 .service-line-hero__sub-title  {
-  @include mercer-bold;
+  @include small-and-medium {
+    margin-bottom: 0;
+  }
+  @include small {
+    @include mercer-bold;
+  }
+  @include medium-and-large{
+    @include freed-bold;
+  }
+  @include extra-large {
+    @include eames-bold;
+  }
 }
 
 .service-line-hero__description {
-  @include mercer;
-  margin-bottom: 20px;
+  @include small-and-medium {
+    margin-top: 50px;
+  }
+  @include small-medium-and-large {
+    @include base;
+    margin-bottom: 30px;
+  }
+  @include extra-large {
+    @include mercer;
+    margin-bottom: 35px;
+  }
 }
 
 .service-line-hero__title,
-.service-line-hero__sub-title,
-.service-line-hero__description {
+.service-line-hero__sub-title {
   @include small-and-medium {
     color: white;
   }

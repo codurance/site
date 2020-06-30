@@ -1,20 +1,26 @@
-<section class="service-line-hero" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
-  <div class="service-line-hero__content-container">
-    <h1 class="service-line-hero__title">
-      {{ site.data.service_lines[page.service-line].icon }}
-      {{ translations.hero-title }}
-    </h1>
-    <p class="service-line-hero__sub-title">
-      {{ translations.hero-sub-title }}
-    </p>
-    <p class="service-line-hero__description">
-      {{ translations.hero-description }}
-    </p>
-    {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
-    {%- capture text -%}{% t service-line-contact-cta %}{%- endcapture -%}
-    {% include cta_primary_link.html color='coral' href=href text=text %}
-  </div>
+<section class="service-line-hero">
+ <div class="service-line-hero__inner">
+    <div class="service-line-hero__content-container">
+      <div class="service-line-hero__small-background-wrapper" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
+        <h1 class="service-line-hero__title">
+          {{ site.data.service_lines[page.service-line].icon }}
+          {{ translations.hero-title }}
+        </h1>
+        <p class="service-line-hero__sub-title">
+          {{ translations.hero-sub-title }}
+        </p>
+      </div>
+      <p class="service-line-hero__description">
+        {{ translations.hero-description }}
+      </p>
+      {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
+      {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+      {% include cta_primary_link.html color='coral' href=href text=text %}
+    </div>
+ </div>
   <div class="service-line-hero__image-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-large }});">
+  {%- if page.intro.foreground-image-large -%}
     <img class="service-line-hero__image" src="{{ site.baseurl }}{{ page.intro.foreground-image-large }}">
+  {%- endif -%}
   </div>
 </section>
