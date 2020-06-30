@@ -8,21 +8,15 @@ var websiteHeader = function () {
   window.addEventListener("scroll", handleScroll);
 
   function handleScroll() {
-    startingPositionIsInView() ? setState("original") : setState("hidden");
+    startingPositionIsInView() ? showHeader() : hideHeader();
   }
 
-  function setState(state) {
-    switch (state) {
-      case "original":
-        HEADER.classList.remove(CLASS.HIDDEN);
-        break;
-      case "hidden":
-        HEADER.classList.add(CLASS.HIDDEN);
-        break;
+  function showHeader() {
+    HEADER.classList.remove(CLASS.HIDDEN);
+  }
 
-      default:
-        break;
-    }
+  function hideHeader() {
+    HEADER.classList.add(CLASS.HIDDEN);
   }
 
   function startingPositionIsInView() {
