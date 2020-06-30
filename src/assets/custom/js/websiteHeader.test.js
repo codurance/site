@@ -15,6 +15,13 @@ const arrangeMockHeader = () => {
   window.document.body.appendChild(header);
 };
 
+const simulateScrollingToY = (y) => {
+  window.scrollY = y;
+  window.document.dispatchEvent(
+    new Event("scroll", { bubbles: true, cancelable: true })
+  );
+};
+
 let header;
 
 describe("Website Header", () => {
@@ -32,10 +39,7 @@ describe("Website Header", () => {
 
     describe("When we scroll down but not so far the header goes out of view", () => {
       beforeEach(() => {
-        window.scrollY = headerHeight - 1;
-        window.document.dispatchEvent(
-          new Event("scroll", { bubbles: true, cancelable: true })
-        );
+        simulateScrollingToY(headerHeight - 1);
       });
 
       it("no special classes are applied", () => {
@@ -46,10 +50,7 @@ describe("Website Header", () => {
 
     describe("When the scroll down so far the header goes out of view", () => {
       beforeEach(() => {
-        window.scrollY = headerHeight;
-        window.document.dispatchEvent(
-          new Event("scroll", { bubbles: true, cancelable: true })
-        );
+        simulateScrollingToY(headerHeight);
       });
 
       it("a special class is applied to hide the header", () => {
