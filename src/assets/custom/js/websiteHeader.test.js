@@ -71,5 +71,18 @@ describe("Website Header", () => {
         });
       });
     });
+
+    describe("When we scroll up the page and are still a long way from the original header at the top", () => {
+      beforeEach(() => {
+        simulateScrollingToY(1000);
+        simulateScrollingToY(1000 - 1);
+      });
+
+      it("we reveal the header at the top of the viewport", () => {
+        expect(header.classList).toContain("website-header");
+        expect(header.classList).toContain("website-header--revealed");
+        expect(header.classList.length).toBe(2);
+      });
+    });
   });
 });

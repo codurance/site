@@ -7,6 +7,14 @@
   background-color: white;
 }
 
+.website-header--hidden,
+.website-header--revealed {
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
 .website-header--hidden {
   transform: translateY(-100%);
 }
