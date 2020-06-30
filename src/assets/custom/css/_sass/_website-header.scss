@@ -7,6 +7,7 @@
   background-color: white;
 }
 
+body:not(.toggle--slt-464-new-js) .website-header,
 .website-header--hidden,
 .website-header--revealed {
   left: 0;
