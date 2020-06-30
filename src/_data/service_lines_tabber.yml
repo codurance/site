@@ -84,7 +84,7 @@ en:
         - Achieve value-driven prioritization
         - Innovate through experimentation
       details: Build MVPs, Proof of Concepts, and Prototypes; Create a high-level technical strategy and roadmap; Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics; Usability testing; AB Testing; User research
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
 
     - id: people-and-process
       title: People and Process
@@ -99,7 +99,7 @@ en:
         - Develop fast feedback loops
         - Attract talent
       details: Agile and Lean software development; Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
 
     - id: practices-and-automation
       title: Practices and Automation
@@ -107,7 +107,7 @@ en:
       list:
         - Test automation at multiple levels
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: architecture-and-design
       title: Architecture and Design
@@ -121,7 +121,7 @@ en:
         - Reduce development and deployment dependencies
         - Reduce maintenance and operation costs
       details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: platform-and-technology
       title: Platform and Technology
@@ -132,7 +132,7 @@ en:
         - Establish a migration path
         - Attract talent
       details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
-      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
 
   service-line-example:
     - id: tab-1
