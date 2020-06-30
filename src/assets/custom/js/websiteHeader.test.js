@@ -22,7 +22,7 @@ describe("Website Header", () => {
       simulatePageLoad();
     });
 
-    it("does not initially add the hidden class to the header", () => {
+    it("does not hide the header", () => {
       const header = window.document.querySelector(".website-header");
       expect(header.classList).not.toContain("website-header--hide");
     });
@@ -31,14 +31,11 @@ describe("Website Header", () => {
       beforeEach(() => {
         window.scrollY = headerHeight - 1;
         window.document.dispatchEvent(
-          new Event("scroll", {
-            bubbles: true,
-            cancelable: true,
-          })
+          new Event("scroll", { bubbles: true, cancelable: true })
         );
       });
 
-      it("does not add the hidden class to the header", () => {
+      it("does not hide the header", () => {
         const header = window.document.querySelector(".website-header");
         expect(header.classList).not.toContain("website-header--hide");
       });
