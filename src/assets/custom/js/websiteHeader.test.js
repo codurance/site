@@ -3,7 +3,6 @@ require("./websiteHeader");
 
 jest.useFakeTimers();
 
-const fakeHeaderHeight = 100;
 let header;
 
 const mockRequestAnimationFrame = (cb) => setTimeout(cb, 0);
@@ -57,18 +56,6 @@ describe("Website Header", () => {
 });
 
 function createMockHeader() {
-  ensureHeaderUsesFakeHeight();
-  addFakeHeaderToJsDom();
-}
-
-function ensureHeaderUsesFakeHeight() {
-  Object.defineProperty(HTMLElement.prototype, "clientHeight", {
-    configurable: true,
-    value: fakeHeaderHeight,
-  });
-}
-
-function addFakeHeaderToJsDom() {
   const header = window.document.createElement("header");
   header.classList.add("website-header");
   window.document.body.appendChild(header);
