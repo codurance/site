@@ -262,7 +262,7 @@ es:
 
     - id: practicas-y-automatizacion
       title: Prácticas y automatización
-      intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
+      intro: Aplicar prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
         - Automatización de los test en múltiples niveles
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
@@ -284,7 +284,7 @@ es:
 
     - id: plataformas-y-tecnologias
       title: Plataformas y tecnologías
-      intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
+      intro: Elegir la tecnología a utilizar es parte de la estrategia de producto de software que queramos definir.
       list:
         - Elegir las herramientas adecuadas para cada trabajo
         - Lograr un alto rendimiento
