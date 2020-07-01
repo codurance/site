@@ -2,12 +2,12 @@ const { simulatePageLoad } = require("./simulatePageLoad");
 
 require("./websiteHeader");
 
-const headerHeight = 100;
+const fakeHeaderHeight = 100;
 
 const arrangeMockHeader = () => {
   Object.defineProperty(HTMLElement.prototype, "clientHeight", {
     configurable: true,
-    value: headerHeight,
+    value: fakeHeaderHeight,
   });
 
   const header = window.document.createElement("header");
@@ -39,7 +39,7 @@ describe("Website Header", () => {
 
     describe("When we scroll down but not so far the header goes out of view", () => {
       beforeEach(() => {
-        simulateScrollingToY(headerHeight - 1);
+        simulateScrollingToY(fakeHeaderHeight - 1);
       });
 
       it("no special classes are applied", () => {
@@ -50,7 +50,7 @@ describe("Website Header", () => {
 
     describe("When we scroll down so far the header goes out of view", () => {
       beforeEach(() => {
-        simulateScrollingToY(headerHeight);
+        simulateScrollingToY(fakeHeaderHeight);
       });
 
       it("a special class is applied to hide the header", () => {
@@ -61,7 +61,7 @@ describe("Website Header", () => {
 
       describe("When we then scroll back up to the original header position", () => {
         beforeEach(() => {
-          simulateScrollingToY(headerHeight - 1);
+          simulateScrollingToY(fakeHeaderHeight - 1);
         });
 
         it("the hidden class is no longer applied", () => {
