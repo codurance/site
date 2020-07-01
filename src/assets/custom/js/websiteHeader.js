@@ -1,9 +1,6 @@
 var websiteHeader = function () {
   var HEADER_SELECTOR = ".website-header";
-  var CLASS = {
-    HIDDEN: "website-header--hidden",
-    REVEALED: "website-header--revealed",
-  };
+  var REVEALED_CLASS = "website-header--revealed";
   var previousWindowPosition;
   var latestWindowPosition;
 
@@ -29,7 +26,6 @@ var websiteHeader = function () {
     }
 
     if (startingPositionIsInView(latestWindowPosition)) {
-      hideStickyHeader();
       return;
     }
 
@@ -37,26 +33,14 @@ var websiteHeader = function () {
       revealHeader();
       return;
     }
-
-    hideHeader();
   }
 
   function revealHeader() {
-    HEADER.classList.add(CLASS.REVEALED);
-    HEADER.classList.remove(CLASS.HIDDEN);
-  }
-
-  function hideStickyHeader() {
-    HEADER.classList.remove(CLASS.HIDDEN);
-  }
-
-  function hideHeader() {
-    HEADER.classList.add(CLASS.HIDDEN);
+    HEADER.classList.add(REVEALED_CLASS);
   }
 
   function restoreNaturalPosition() {
-    HEADER.classList.remove(CLASS.REVEALED);
-    HEADER.classList.remove(CLASS.HIDDEN);
+    HEADER.classList.remove(REVEALED_CLASS);
   }
 
   function atTheTop(p) {

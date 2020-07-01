@@ -37,47 +37,11 @@ describe("Website Header", () => {
       expect(header.classList.length).toBe(1);
     });
 
-    describe("When we scroll down but not so far the header goes out of view", () => {
-      beforeEach(() => {
-        simulateScrollingToY(fakeHeaderHeight - 1);
-      });
-
-      it("no special classes are applied", () => {
-        expect(header.classList).toContain("website-header");
-        expect(header.classList.length).toBe(1);
-      });
-    });
-
-    describe("When we scroll down so far the header goes out of view", () => {
-      beforeEach(() => {
-        simulateScrollingToY(fakeHeaderHeight);
-      });
-
-      it("a special class is applied to hide the header", () => {
-        expect(header.classList).toContain("website-header");
-        expect(header.classList).toContain("website-header--hidden");
-        expect(header.classList.length).toBe(2);
-      });
-
-      describe("When we then scroll back up to the original header position", () => {
-        beforeEach(() => {
-          simulateScrollingToY(fakeHeaderHeight - 1);
-        });
-
-        it("the hidden class is no longer applied", () => {
-          expect(header.classList).toContain("website-header");
-          expect(header.classList).not.toContain("website-header--hidden");
-          expect(header.classList.length).toBe(1);
-        });
-      });
-    });
-
     describe("When we scroll up the page and are still a long way from the original header position", () => {
       beforeEach(() => {
         simulateScrollingToY(1000);
         simulateScrollingToY(1000 - 1);
       });
-
       it("we reveal the header at the top of the viewport", () => {
         expect(header.classList).toContain("website-header");
         expect(header.classList).toContain("website-header--revealed");
