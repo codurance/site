@@ -1,6 +1,6 @@
 .website-navigation {
   background-color: white;
-  height: 100%;
+  padding: 22px 20px;
 }
 
 .website-navigation__home-link {
@@ -17,4 +17,9 @@
   @include _DEPRECIATED_small {
     margin-top: 5px;
   }
+}
+
+.website-navigation__menu-toggle {
+  right: -8px;
+  top: -10px;
 }
