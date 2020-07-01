@@ -1,12 +1,16 @@
 .website-header {
-  font-size: 13px;
-  height: 94px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
   background-color: white;
+  font-size: 13px;
+  height: 74px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+body:not(.toggle--slt-464-new-js) .website-header,
+.website-header--revealed {
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }

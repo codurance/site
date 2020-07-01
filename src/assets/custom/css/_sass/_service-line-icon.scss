@@ -1,9 +1,9 @@
 .service-line-icon {
   fill: white;
-  width: 50px;
 
   .service-line-hero & {
-    position: absolute;
+    width: 35px;
+    margin-right: 15px;
 
     @include small-and-medium {
       fill: #ffffff;
@@ -11,19 +11,12 @@
     @include large-and-extra-large {
       fill: #555555;
     }
-    @include small {
-      left: 0;
-      top: -71px;
-    }
-    @include medium-large-and-extra-large {
-      left: -67px;
-      top: -3px;
-    }
   }
 
   .service-line-teaser-group & {
     fill: white;
     margin-right: 20px;
+    width: 50px;
 
     @include small-and-medium {
       width: 35px;
