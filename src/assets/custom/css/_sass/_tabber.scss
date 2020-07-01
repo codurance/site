@@ -140,7 +140,7 @@
     background-image: none !important;
   }
   @include large-and-extra-large {
-    background-position: center bottom 20px;
+    background-position: center bottom 20px, center;
     background-repeat: no-repeat;
   }
 }
