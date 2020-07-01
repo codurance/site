@@ -40,6 +40,9 @@
 .services-page-intro__title-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   @include small {
     margin-bottom: 30px;
   }
@@ -49,8 +52,6 @@
   @include large-and-extra-large{
     margin-bottom: 100px;
   }
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .services-page-intro__title {
