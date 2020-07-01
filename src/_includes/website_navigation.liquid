@@ -1,7 +1,7 @@
 <nav class="website-navigation navbar navbar-expand-lg">
   <div class="container">
     <!-- Responsive Toggle Button -->
-    <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+    <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
       <span class="hamburger hamburger--slider">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -11,8 +11,8 @@
     <!-- End Responsive Toggle Button -->
 
     <!-- Logo -->
-    <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand g-mr-25--lg g-mr-50--xl">
-      <img src="{{ '/assets/custom/img/codurance.svg' | prepend: site.baseurl }}" class="header-logo" alt="Codurance Logo">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
+      {% include codurance_logo.liquid class="website-navigation__logo" %}
     </a>
     <!-- End Logo -->
 
@@ -33,7 +33,7 @@
         </li>
         <li class="nav-item hs-has-sub-menu g-mx-20--lg">
           <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">{% t sections.about-us%}</a>
-          <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1" style="display: none;">
+          <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top  g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1" style="display: none;">
             <li class="dropdown-item">
               <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
             </li>
@@ -55,7 +55,7 @@
     <!-- End Navigation -->
 
     <!-- Language Picker -->
-    <div class="g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg g-hidden-xs-down">
+    <div class="website-navigation__language-picker g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg g-hidden-xs-down">
       <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
         {% for domain in site.domains %}
         {% if domain[0] == site.lang %} {{ domain[0] | upcase }}&nbsp; {% endif %}

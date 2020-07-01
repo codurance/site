@@ -176,8 +176,11 @@ h5 {
 /* Unify template overides
    -------------------------------------- */
 
-a {
-  color: $orange;
+a,
+a:hover,
+a:focus,
+a:active {
+  color: $coral;
 }
 
 .u-header__section--light
@@ -189,10 +192,6 @@ a {
 
 .g-color-primary {
   color: $orange !important;
-}
-
-.g-brd-primary {
-  border-color: $orange !important;
 }
 
 .lead {

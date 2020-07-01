@@ -1,3 +1,20 @@
 .website-navigation {
   background-color: white;
+  height: 100%;
+}
+
+.website-navigation__home-link {
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.website-navigation__logo {
+  fill: #010101;
+  width: 175px;
+}
+
+.website-navigation__language-picker {
+  @include _DEPRECIATED_small {
+    margin-top: 5px;
+  }
 }
