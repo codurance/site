@@ -37,6 +37,22 @@
   }
 }
 
+.services-page-intro__title-wrapper {
+  display: flex;
+  align-items: center;
+  @include small {
+    margin-bottom: 30px;
+  }
+  @include medium {
+    margin-bottom: 40px;
+  }
+  @include large-and-extra-large{
+    margin-bottom: 100px;
+  }
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .services-page-intro__title {
   @include small {
     @include freed-bold;
@@ -50,8 +66,6 @@
     @include gaudi-bold;
   }
   @include large-and-extra-large {
-    float: left;
-    margin-bottom: 100px;
     width: calc(50% - (#{$lateral-space--large} / 2));
   }
   @include extra-large {
@@ -62,15 +76,7 @@
 .services-page-intro__sub-title {
   @include mercer-reg--responsive;
 
-  @include small {
-    margin-bottom: 30px;
-  }
-  @include medium {
-    margin-bottom: 40px;
-  }
   @include large-and-extra-large {
-    float: right;
-    margin-bottom: 100px;
     width: calc(50% - (#{$lateral-space--large} / 2));
   }
 }
