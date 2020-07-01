@@ -1,10 +1,9 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
 require("./websiteHeader");
 
-jest.useFakeTimers();
-
 let header;
 
+jest.useFakeTimers();
 const mockRequestAnimationFrame = (cb) => setTimeout(cb, 0);
 
 describe("Website Header", () => {
