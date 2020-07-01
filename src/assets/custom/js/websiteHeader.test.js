@@ -72,7 +72,7 @@ describe("Website Header", () => {
       });
     });
 
-    describe("When we scroll up the page and are still a long way from the original header at the top", () => {
+    describe("When we scroll up the page and are still a long way from the original header position", () => {
       beforeEach(() => {
         simulateScrollingToY(1000);
         simulateScrollingToY(1000 - 1);
