@@ -3,6 +3,7 @@ var websiteHeader = function () {
   var REVEALED_CLASS = "website-header--revealed";
   var previousWindowPosition;
   var latestWindowPosition;
+  var ticking;
 
   var getScrollPosition = function () {
     return window.pageYOffset || window.scrollY;
@@ -13,8 +14,16 @@ var websiteHeader = function () {
 
   function handleScroll() {
     latestWindowPosition = getScrollPosition();
-    handleScrollPosition(latestWindowPosition);
-    previousWindowPosition = latestWindowPosition;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        handleScrollPosition(latestWindowPosition);
+        previousWindowPosition = latestWindowPosition;
+        ticking = false;
+      });
+
+      ticking = true;
+    }
   }
 
   function handleScrollPosition(latestWindowPosition) {

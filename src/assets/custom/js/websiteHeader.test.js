@@ -1,33 +1,30 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
-
 require("./websiteHeader");
 
+jest.useFakeTimers();
+
 const fakeHeaderHeight = 100;
-
-const arrangeMockHeader = () => {
-  Object.defineProperty(HTMLElement.prototype, "clientHeight", {
-    configurable: true,
-    value: fakeHeaderHeight,
-  });
-
-  const header = window.document.createElement("header");
-  header.classList.add("website-header");
-  window.document.body.appendChild(header);
-};
-
-const simulateScrollingToY = (y) => {
-  window.scrollY = y;
-  window.document.dispatchEvent(
-    new Event("scroll", { bubbles: true, cancelable: true })
-  );
-};
-
 let header;
 
+const mockRequestAnimationFrame = (cb) =>
+  setTimeout(() => {
+    cb();
+  }, 1);
+
 describe("Website Header", () => {
+  beforeEach(() => {
+    jest
+      .spyOn(window, "requestAnimationFrame")
+      .mockImplementation(mockRequestAnimationFrame);
+  });
+
+  afterEach(() => {
+    window.requestAnimationFrame.mockRestore();
+  });
+
   describe("When a page with a Website Header loads", () => {
     beforeAll(() => {
-      arrangeMockHeader();
+      createMockHeader();
       simulatePageLoad();
       header = window.document.querySelector(".website-header");
     });
@@ -61,3 +58,31 @@ describe("Website Header", () => {
     });
   });
 });
+
+function createMockHeader() {
+  ensureHeaderUsesFakeHeight();
+  addFakeHeaderToJsDom();
+}
+
+function ensureHeaderUsesFakeHeight() {
+  Object.defineProperty(HTMLElement.prototype, "clientHeight", {
+    configurable: true,
+    value: fakeHeaderHeight,
+  });
+}
+
+function addFakeHeaderToJsDom() {
+  const header = window.document.createElement("header");
+  header.classList.add("website-header");
+  window.document.body.appendChild(header);
+}
+
+function simulateScrollingToY(y) {
+  window.scrollY = y;
+
+  window.document.dispatchEvent(
+    new Event("scroll", { bubbles: true, cancelable: true })
+  );
+
+  jest.runAllTimers();
+}
