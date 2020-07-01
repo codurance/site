@@ -33,11 +33,12 @@ var websiteHeader = function () {
       return;
     }
 
-    hideHeader();
-
     if (upwardMovement) {
       revealHeader();
+      return;
     }
+
+    hideHeader();
   }
 
   function revealHeader() {
