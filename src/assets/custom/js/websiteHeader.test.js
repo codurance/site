@@ -6,10 +6,7 @@ jest.useFakeTimers();
 const fakeHeaderHeight = 100;
 let header;
 
-const mockRequestAnimationFrame = (cb) =>
-  setTimeout(() => {
-    cb();
-  }, 1);
+const mockRequestAnimationFrame = (cb) => setTimeout(cb, 1);
 
 describe("Website Header", () => {
   beforeEach(() => {
