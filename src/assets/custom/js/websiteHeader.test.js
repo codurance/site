@@ -29,25 +29,43 @@ describe("Website Header", () => {
       expect(header.classList.length).toBe(1);
     });
 
-    describe("When we scroll up the page and are still a long way from the original header position", () => {
+    describe("Given we have scrolled a long way down the page (and are a long way from the header's natural position)", () => {
       beforeEach(() => {
         simulateScrollingToY(1000);
-        simulateScrollingToY(1000 - 1);
-      });
-      it("we reveal the header at the top of the viewport", () => {
-        expect(header.classList).toContain("website-header");
-        expect(header.classList).toContain("website-header--revealed");
-        expect(header.classList.length).toBe(2);
       });
 
-      describe("When we scroll all the way up to the top of the page", () => {
+      describe("When we then scroll up the page by just a couple of pixel", () => {
         beforeEach(() => {
-          simulateScrollingToY(0);
+          simulateScrollingToY(1000 - 2);
         });
 
-        it("we let the header return to it's natural position", () => {
+        it("we don't immediately reveal the header", () => {
           expect(header.classList).toContain("website-header");
+          expect(header.classList).not.toContain("website-header--revealed");
           expect(header.classList.length).toBe(1);
+        });
+      });
+
+      describe("When we then scroll up the page by at least three pixels", () => {
+        beforeEach(() => {
+          simulateScrollingToY(1000 - 3);
+        });
+
+        it("we reveal the header positioned at the top of the viewport", () => {
+          expect(header.classList).toContain("website-header");
+          expect(header.classList).toContain("website-header--revealed");
+          expect(header.classList.length).toBe(2);
+        });
+
+        describe("When we then scroll all the way up to the top of the page", () => {
+          beforeEach(() => {
+            simulateScrollingToY(0);
+          });
+
+          it("we let the header return to it's natural position", () => {
+            expect(header.classList).toContain("website-header");
+            expect(header.classList.length).toBe(1);
+          });
         });
       });
     });

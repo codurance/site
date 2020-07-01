@@ -27,7 +27,10 @@ var websiteHeader = function () {
   }
 
   function handleScrollPosition(latestWindowPosition) {
-    var upwardMovement = previousWindowPosition > latestWindowPosition;
+    var tolerance = 2;
+
+    var upwardMovement =
+      previousWindowPosition > latestWindowPosition + tolerance;
 
     if (atTheTop(latestWindowPosition)) {
       restoreNaturalPosition();
