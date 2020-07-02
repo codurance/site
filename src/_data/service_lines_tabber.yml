@@ -139,35 +139,24 @@ en:
       title: Hands-on Technical Expertise
       intro: Embedded craftspeople with solid technical skills.
       list:
-        - Testing strategy and automation
-        - Test-Driven Development (TDD)
-        - Cloud technologies
-        - Software architecture and design
-        - DevOps
-        - Site reliability engineering
-        - Agile and Lean methodologies
-        - Product Design and User Experience (UX)
-      details: Increase capacity during peaks. Rely on experienced specialists with the technical skills you need
+        - Increase capacity during peaks
+        - Rely on experienced specialists with the technical skills you need
+      details: Testing strategy and automation; Test-Driven Development (TDD); Cloud technologies; Software architecture and design; DevOps; Site reliability engineering; Agile and Lean methodologies; Product Design and User Experience (UX)
 
     - id: upskilling
       title: Upskilling
       intro: Improve your team's skills.
       list:
-        - Technical coaches embedded in your teams
-        - Communities of practice
-        - Technical development and training programs
-      details: Help your team build the skills they need to excel in every area of your product delivery.
+        - Help your team build the skills they need to excel in every area of your product delivery.
+      details: Technical coaches embedded in your teams; Communities of practice; Technical development and training programs
 
     - id: improvement-initiatives
       title: Improvement Initiatives
       intro: Implement improvement initiatives.
       list:
-        - Agile, Lean, and team(s) coaching
-        - Organisational design
-        - Extreme Programming practices
-        - Quality engineering and automation
-        - Continuous delivery
-      details: Guide and support strategic improvement initiatives. Supplement your technical leadership
+        - Guide and support strategic improvement initiatives
+        - Supplement your technical leadership
+      details: Agile, Lean, and team(s) coaching; Organisational design; Extreme Programming practices; Quality engineering and automation; Continuous delivery
 
   service-line-example:
     - id: tab-1
@@ -333,32 +322,21 @@ es:
       title: Experiencia técnica y estratégica aplicada a la práctica
       intro: Craftspeople integrados con sólidas habilidades técnicas.
       list:
-        - Testing strategy y automatización
-        - Test-Driven Development (TDD)
-        - Tecnologías cloud
-        - Arquitectura y diseño de software
-        - DevOps
-        - Ingeniería de confiabilidad del sitio
-        - Metodologías Agile y Lean
-        - Diseño de producto y experiencia del usuario (UX)
-      details: Aumentar la capacidad durante los picos; Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+        - Aumentar la capacidad durante los picos
+        - Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+      details: Testing strategy y automatización; Test-Driven Development (TDD); Tecnologías cloud; Arquitectura y diseño de software; DevOps; Ingeniería de confiabilidad del sitio; Metodologías Agile y Lean; Diseño de producto y experiencia del usuario (UX)
 
     - id: upskilling
       title: Upskilling
       intro: Mejora las habilidades de tu equipo.
       list:
-        - Coaches técnicos integrados en tus equipos.
-        - Comunidades de prácticas
-        - Desarrollo técnico y programas de formación.
-      details: Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
+        - Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
+      details: Coaches técnicos integrados en tus equipos; Comunidades de prácticas; Desarrollo técnico y programas de formación
 
     - id: iniciativas-de-mejora
       title: Iniciativas de mejora
       intro: Implementa iniciativas de mejora.
       list:
-        - Coaching Agile, Lean y de equipos
-        - Diseño organizacional
-        - Prácticas Extreme Programming
-        - Ingeniería de calidad y automatización
-        - Entrega continua
-      details: Orientar y apoyar iniciativas de mejora estratégica. Reforzar tu liderazgo técnico"
+        - Orientar y apoyar iniciativas de mejora estratégica
+        - Reforzar tu liderazgo técnico
+      details: Coaching Agile, Lean y de equipos; Diseño organizacional; Prácticas Extreme Programming; Ingeniería de calidad y automatización; Entrega continua
