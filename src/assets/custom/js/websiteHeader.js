@@ -1,6 +1,8 @@
 var websiteHeader = function () {
   var HEADER_SELECTOR = ".website-header";
   var REVEALED_CLASS = "website-header--revealed";
+  var tolerance = 2;
+
   var previousWindowPosition;
   var latestWindowPosition;
   var ticking;
@@ -27,8 +29,6 @@ var websiteHeader = function () {
   }
 
   function handleScrollPosition(latestWindowPosition) {
-    var tolerance = 2;
-
     var upwardMovement =
       previousWindowPosition > latestWindowPosition + tolerance;
     var downwardMovement =
@@ -58,7 +58,7 @@ var websiteHeader = function () {
   }
 
   function atTheTop(p) {
-    return p < 1;
+    return p < tolerance;
   }
 
   function startingPositionIsInView(p) {

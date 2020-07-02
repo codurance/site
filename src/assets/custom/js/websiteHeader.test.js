@@ -57,9 +57,9 @@ describe("Website Header", () => {
           expect(header.classList.length).toBe(2);
         });
 
-        describe("When we then scroll all the way up to the top of the page", () => {
+        describe("When we then scroll close to the top of the page", () => {
           beforeEach(() => {
-            simulateScrollingToY(0);
+            simulateScrollingToY(1);
           });
 
           it("we let the header return to it's natural position", () => {
