@@ -327,3 +327,38 @@ es:
         - Atraer talento
       details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
+
+  specialist-expertise:
+    - id: experiencia-tecnica
+      title: Experiencia técnica y estratégica aplicada a la práctica
+      intro: Craftspeople integrados con sólidas habilidades técnicas.
+      list:
+        - Testing strategy y automatización
+        - Test-Driven Development (TDD)
+        - Tecnologías cloud
+        - Arquitectura y diseño de software
+        - DevOps
+        - Ingeniería de confiabilidad del sitio
+        - Metodologías Agile y Lean
+        - Diseño de producto y experiencia del usuario (UX)
+      details: Aumentar la capacidad durante los picos; Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+
+    - id: upskilling
+      title: Upskilling
+      intro: Mejora las habilidades de tu equipo.
+      list:
+        - Coaches técnicos integrados en tus equipos.
+        - Comunidades de prácticas
+        - Desarrollo técnico y programas de formación.
+      details: Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
+
+    - id: iniciativas-de-mejora
+      title: Iniciativas de mejora
+      intro: Implementa iniciativas de mejora.
+      list:
+        - Coaching Agile, Lean y de equipos
+        - Diseño organizacional
+        - Prácticas Extreme Programming
+        - Ingeniería de calidad y automatización
+        - Entrega continua
+      details: Orientar y apoyar iniciativas de mejora estratégica. Reforzar tu liderazgo técnico"
