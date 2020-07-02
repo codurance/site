@@ -16,6 +16,7 @@ tags:
 pinned_locations:
     - soft-mod
     - software-delivery
+    - specialist-expertise
 ---
 
 The goal of software is to provide value to the business. Businesses evolve and their software must evolve with it. If the alignment between software and business is frictionless then it is not merely a passive part of the organisation but an engine for innovation to allow the business to march ahead of the competition.

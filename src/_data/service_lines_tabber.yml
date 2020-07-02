@@ -134,6 +134,41 @@ en:
       details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
 
+  specialist-expertise:
+    - id: technical-expertise
+      title: Hands-on Technical Expertise
+      intro: Embedded craftspeople with solid technical skills.
+      list:
+        - Testing strategy and automation
+        - Test-Driven Development (TDD)
+        - Cloud technologies
+        - Software architecture and design
+        - DevOps
+        - Site reliability engineering
+        - Agile and Lean methodologies
+        - Product Design and User Experience (UX)
+      details: Increase capacity during peaks. Rely on experienced specialists with the technical skills you need
+
+    - id: upskilling
+      title: Upskilling
+      intro: Improve your team's skills.
+      list:
+        - Technical coaches embedded in your teams
+        - Communities of practice
+        - Technical development and training programs
+      details: Help your team build the skills they need to excel in every area of your product delivery.
+
+    - id: improvement-initiatives
+      title: Improvement Initiatives
+      intro: Implement improvement initiatives.
+      list:
+        - Agile, Lean, and team(s) coaching
+        - Organisational design
+        - Extreme Programming practices
+        - Quality engineering and automation
+        - Continuous delivery
+      details: Guide and support strategic improvement initiatives. Supplement your technical leadership
+
   service-line-example:
     - id: tab-1
       title: Tab 1

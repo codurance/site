@@ -687,6 +687,15 @@ software-delivery:
     intro-title: Sobre Software Delivery
     intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
 
+specialist-expertise:
+  hero-title: Specialist Expertise
+  hero-sub-title: Aumenta la calidad y la fiabilidad de la entrega y las operaciones de tu software.
+  hero-description: Nuestros craftspeople especialistas trabajarán contigo para definir y ejecutar un plan con el que mejorar la calidad y confiabilidad de la entrega de tu software.
+
+  curated-publications:
+    intro-title: Sobre Specialist Expertise
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
+
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
