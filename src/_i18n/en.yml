@@ -189,8 +189,8 @@ services:
   learn-more: Learn more
   page-intro:
     title: Services & Solutions
-    sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise.
-    lead-in: We partner with you to delivers solutions that help create a sustainable, scalable and adaptable future for your business. Together we discover your organizational needs and how you need to evolve. Our team will offer you the necessary practices, technologies and skills to continuously add value and make innovation possible.
+    sub-title: We partner with you to deliver solutions that create a sustainable and adaptable future for your business
+    lead-in: Drive innovation within your organisation through agile software delivery, hands-on technical expertise, and expert advice. Our team will provide the necessary practices, technologies, and skills at each step of the project to ensure the highest quality is delivered. From inception to delivery our team will guide you, enabling your product vision to become a reality.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.

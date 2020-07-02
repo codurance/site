@@ -6477,7 +6477,10 @@
 
 /*Footer Logo*/
 .footer-logo {
-	margin: 17px 0 20px;
+  fill: white;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  width: 125px;
 }
 
 /*Latest List*/
