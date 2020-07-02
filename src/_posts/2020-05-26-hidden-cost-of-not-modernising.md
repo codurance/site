@@ -17,6 +17,7 @@ pinned_locations:
   - soft-mod
   - software-delivery
   - specialist-expertise
+  - strategic-advice
 ---
 
 ## Introduction

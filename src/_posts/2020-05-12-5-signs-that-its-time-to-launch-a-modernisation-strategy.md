@@ -18,6 +18,7 @@ pinned_locations:
   - soft-mod
   - software-delivery
   - specialist-expertise
+  - strategic-advice
 ---
 
 All too often business change becomes impossible. The systems that are supposed to make your life easier don’t. In fact, you feel as if you’re putting out fires most of the time instead of focusing on the task at hand. If the following pain points are all too familiar, it’s time your organisation implements a modernisation strategy.

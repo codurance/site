@@ -696,6 +696,15 @@ specialist-expertise:
     intro-title: Sobre Specialist Expertise
     intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
 
+strategic-advice:
+  hero-title: Strategic Advise
+  hero-sub-title: Desarrolla una estrategia tecnológica en la que puedas confiar
+  hero-description: Nuestros consultores te ayudarán a comprender en que punto se encuentran tus capacidades tecnológicas hoy en día, y te ofrecerán los conocimientos necesarios para abordar tus desafíos. Juntos definiremos una estrategia y una hoja de ruta para implementar esa solución con éxito.
+
+  curated-publications:
+    intro-title: Sobre Strategic Advise
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
+
 service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
