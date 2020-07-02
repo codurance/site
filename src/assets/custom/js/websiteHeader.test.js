@@ -67,6 +67,29 @@ describe("Website Header", () => {
             expect(header.classList.length).toBe(1);
           });
         });
+
+        describe("When we then scroll down the page by a couple of pixels", () => {
+          beforeEach(() => {
+            simulateScrollingToY(1000 - 1);
+          });
+
+          it("we don't immediately hide the header", () => {
+            expect(header.classList).toContain("website-header");
+            expect(header.classList).toContain("website-header--revealed");
+            expect(header.classList.length).toBe(2);
+          });
+        });
+
+        describe("When we then scroll down the page by three pixels", () => {
+          beforeEach(() => {
+            simulateScrollingToY(1000);
+          });
+
+          it("we let the header return to it's natural position", () => {
+            expect(header.classList).toContain("website-header");
+            expect(header.classList.length).toBe(1);
+          });
+        });
       });
     });
   });

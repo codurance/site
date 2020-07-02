@@ -31,8 +31,10 @@ var websiteHeader = function () {
 
     var upwardMovement =
       previousWindowPosition > latestWindowPosition + tolerance;
+    var downwardMovement =
+      previousWindowPosition < latestWindowPosition - tolerance;
 
-    if (atTheTop(latestWindowPosition)) {
+    if (atTheTop(latestWindowPosition) || downwardMovement) {
       restoreNaturalPosition();
       return;
     }
