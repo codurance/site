@@ -375,12 +375,13 @@ es:
 
   specialist-expertise:
     - id: experiencia-tecnica
-      title: Experiencia técnica y estratégica aplicada a la práctica
+      title: Experiencia técnica y estratégica en la práctica
       intro: Craftspeople integrados con sólidas habilidades técnicas.
       list:
         - Aumentar la capacidad durante los picos
         - Confíar en especialistas experimentados con las habilidades técnicas que necesitas
       details: Testing strategy y automatización; Test-Driven Development (TDD); Tecnologías cloud; Arquitectura y diseño de software; DevOps; Ingeniería de confiabilidad del sitio; Metodologías Agile y Lean; Diseño de producto y experiencia del usuario (UX)
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
 
     - id: upskilling
       title: Upskilling
@@ -388,6 +389,7 @@ es:
       list:
         - Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
       details: Coaches técnicos integrados en tus equipos; Comunidades de prácticas; Desarrollo técnico y programas de formación
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
 
     - id: iniciativas-de-mejora
       title: Iniciativas de mejora
@@ -396,6 +398,7 @@ es:
         - Orientar y apoyar iniciativas de mejora estratégica.
         - Reforzar tu liderazgo técnico
       details: Coaching Agile, Lean y de equipos; Diseño organizacional; Prácticas Extreme Programming; Ingeniería de calidad y automatización; Entrega continua
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
 
   strategic-advice:
     - id: estrategia-de-producto
