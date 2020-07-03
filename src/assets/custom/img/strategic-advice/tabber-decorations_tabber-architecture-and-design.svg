@@ -1,1 +1,43 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 250"><defs><style>.cls-1{fill:none;stroke:#e0e0e0;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#63f0a3;}.cls-3{fill:#e0e0e0;}</style></defs><polygon class="cls-1" points="154.74 125 154.74 84.51 119.68 64.27 84.62 84.51 84.62 125 119.68 145.24 154.74 125"/><polygon class="cls-1" points="225 165.49 225 125 189.94 104.76 154.87 125 154.87 165.49 189.94 185.73 225 165.49"/><polygon class="cls-1" points="295.13 125 295.13 84.51 260.06 64.27 225 84.51 225 125 260.06 145.24 295.13 125"/><polygon class="cls-1" points="365.38 165.49 365.38 125 330.32 104.76 295.26 125 295.26 165.49 330.32 185.73 365.38 165.49"/><line class="cls-1" x1="119.68" y1="64.27" x2="119.68" y2="15.18"/><line class="cls-1" x1="330.32" y1="234.82" x2="330.32" y2="185.73"/><line class="cls-1" x1="35.53" y1="124.94" x2="84.62" y2="124.94"/><line class="cls-1" x1="365.38" y1="124.94" x2="414.47" y2="124.94"/><circle class="cls-2" cx="154.87" cy="125" r="4.87"/><circle class="cls-2" cx="225" cy="125" r="4.87"/><circle class="cls-3" cx="154.87" cy="164.62" r="4.87" transform="translate(-70 141.82) rotate(-40.96)"/><circle class="cls-3" cx="225" cy="164.62" r="4.87" transform="translate(-52.83 187.79) rotate(-40.96)"/><circle class="cls-3" cx="295.26" cy="164.62" r="4.87"/><circle class="cls-3" cx="365.38" cy="164.62" r="4.87"/><circle class="cls-2" cx="295.26" cy="125" r="4.87"/><circle class="cls-3" cx="365.38" cy="125" r="4.87"/><circle class="cls-3" cx="84.65" cy="125" r="4.87"/><circle class="cls-3" cx="119.75" cy="64.27" r="4.87"/><path class="cls-3" d="M262.58,60.06a4.87,4.87,0,1,0,1.76,6.66A4.88,4.88,0,0,0,262.58,60.06Z"/><circle class="cls-3" cx="119.75" cy="143.08" r="4.87"/><path class="cls-3" d="M262.58,138.87a4.87,4.87,0,1,0,1.76,6.66A4.88,4.88,0,0,0,262.58,138.87Z"/><circle class="cls-3" cx="329.82" cy="184.28" r="4.87" transform="translate(-45.71 225.77) rotate(-35.5)"/><path class="cls-3" d="M332.27,101.55A4.87,4.87,0,1,0,334,108.2,4.87,4.87,0,0,0,332.27,101.55Z"/><circle class="cls-3" cx="189.94" cy="184.28" r="4.87" transform="translate(-71.7 144.54) rotate(-35.5)"/><path class="cls-3" d="M192.38,101.55a4.87,4.87,0,1,0,1.77,6.65A4.86,4.86,0,0,0,192.38,101.55Z"/><circle class="cls-3" cx="84.65" cy="85.38" r="4.87" transform="translate(-35.24 76.39) rotate(-40.96)"/><circle class="cls-3" cx="154.81" cy="85.38" r="4.87" transform="translate(-18.07 122.38) rotate(-40.96)"/><circle class="cls-3" cx="224.97" cy="84.95" r="4.87" transform="translate(-0.61 168.26) rotate(-40.96)"/><circle class="cls-3" cx="295.11" cy="84.73" r="4.87" transform="translate(16.71 214.19) rotate(-40.96)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450 278" style="enable-background:new 0 0 450 278;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#E0E0E0;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#63F0A3;}
+	.st2{fill:#E0E0E0;}
+</style>
+<polygon class="st0" points="154.7,125 154.7,84.5 119.7,64.3 84.6,84.5 84.6,125 119.7,145.2 "/>
+<polygon class="st0" points="225,165.5 225,125 189.9,104.8 154.9,125 154.9,165.5 189.9,185.7 "/>
+<polygon class="st0" points="295.1,125 295.1,84.5 260.1,64.3 225,84.5 225,125 260.1,145.2 "/>
+<polygon class="st0" points="365.4,165.5 365.4,125 330.3,104.8 295.3,125 295.3,165.5 330.3,185.7 "/>
+<line class="st0" x1="119.7" y1="64.3" x2="119.7" y2="15.2"/>
+<line class="st0" x1="330.3" y1="234.8" x2="330.3" y2="185.7"/>
+<line class="st0" x1="35.5" y1="124.9" x2="84.6" y2="124.9"/>
+<line class="st0" x1="365.4" y1="124.9" x2="414.5" y2="124.9"/>
+<circle class="st1" cx="154.9" cy="125" r="4.9"/>
+<circle class="st1" cx="225" cy="125" r="4.9"/>
+<circle class="st2" cx="154.9" cy="164.6" r="4.9"/>
+<circle class="st2" cx="225" cy="164.6" r="4.9"/>
+<circle class="st2" cx="295.3" cy="164.6" r="4.9"/>
+<circle class="st2" cx="365.4" cy="164.6" r="4.9"/>
+<circle class="st1" cx="295.3" cy="125" r="4.9"/>
+<circle class="st2" cx="365.4" cy="125" r="4.9"/>
+<circle class="st2" cx="84.7" cy="125" r="4.9"/>
+<circle class="st2" cx="119.8" cy="64.3" r="4.9"/>
+<path class="st2" d="M262.6,60.1c-2.3-1.4-5.3-0.6-6.7,1.8s-0.6,5.3,1.8,6.7c2.3,1.4,5.3,0.6,6.7-1.8
+	C265.7,64.4,264.9,61.4,262.6,60.1z"/>
+<circle class="st2" cx="119.8" cy="143.1" r="4.9"/>
+<path class="st2" d="M262.6,138.9c-2.3-1.4-5.3-0.6-6.7,1.8s-0.6,5.3,1.8,6.7c2.3,1.4,5.3,0.6,6.7-1.8
+	C265.7,143.2,264.9,140.2,262.6,138.9z"/>
+<circle class="st2" cx="329.8" cy="184.3" r="4.9"/>
+<path class="st2" d="M332.3,101.6c-2.3-1.4-5.3-0.6-6.7,1.7c-1.4,2.3-0.6,5.3,1.7,6.7c2.3,1.4,5.3,0.6,6.7-1.7c0,0,0,0,0,0
+	C335.4,105.9,334.6,102.9,332.3,101.6z"/>
+<circle class="st2" cx="189.9" cy="184.3" r="4.9"/>
+<path class="st2" d="M192.4,101.6c-2.3-1.4-5.3-0.6-6.7,1.8c-1.4,2.3-0.6,5.3,1.8,6.7c2.3,1.4,5.3,0.6,6.7-1.8c0,0,0,0,0,0
+	C195.5,105.9,194.7,102.9,192.4,101.6C192.4,101.6,192.4,101.6,192.4,101.6z"/>
+<circle class="st2" cx="84.7" cy="85.4" r="4.9"/>
+<circle class="st2" cx="154.8" cy="85.4" r="4.9"/>
+<ellipse transform="matrix(0.7552 -0.6555 0.6555 0.7552 -0.5992 168.2686)" class="st2" cx="225" cy="84.9" rx="4.9" ry="4.9"/>
+<circle class="st2" cx="295.1" cy="84.7" r="4.9"/>
+</svg>
