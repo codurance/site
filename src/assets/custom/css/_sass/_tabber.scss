@@ -142,6 +142,7 @@
   @include large-and-extra-large {
     background-position: center bottom 20px, center;
     background-repeat: no-repeat;
+    background-size: 100% auto, cover;
   }
 }
 
