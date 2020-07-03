@@ -142,6 +142,7 @@ en:
         - Increase capacity during peaks
         - Rely on experienced specialists with the technical skills you need
       details: Testing strategy and automation; Test-Driven Development (TDD); Cloud technologies; Software architecture and design; DevOps; Site reliability engineering; Agile and Lean methodologies; Product Design and User Experience (UX)
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
 
     - id: upskilling
       title: Upskilling
@@ -149,6 +150,7 @@ en:
       list:
         - Help your team build the skills they need to excel in every area of your product delivery.
       details: Technical coaches embedded in your teams; Communities of practice; Technical development and training programs
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
 
     - id: improvement-initiatives
       title: Improvement Initiatives
@@ -157,6 +159,7 @@ en:
         - Guide and support strategic improvement initiatives
         - Supplement your technical leadership
       details: Agile, Lean, and team(s) coaching; Organisational design; Extreme Programming practices; Quality engineering and automation; Continuous delivery
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
 
   strategic-advice:
     - id: product-strategy
