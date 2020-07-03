@@ -1,8 +1,11 @@
 var websiteHeader = function () {
   var HEADER_SELECTOR = ".website-header";
   var REVEALED_CLASS = "website-header--revealed";
+  var tolerance = 2;
+
   var previousWindowPosition;
   var latestWindowPosition;
+  var ticking;
 
   var getScrollPosition = function () {
     return window.pageYOffset || window.scrollY;
@@ -13,14 +16,25 @@ var websiteHeader = function () {
 
   function handleScroll() {
     latestWindowPosition = getScrollPosition();
-    handleScrollPosition(latestWindowPosition);
-    previousWindowPosition = latestWindowPosition;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        handleScrollPosition(latestWindowPosition);
+        previousWindowPosition = latestWindowPosition;
+        ticking = false;
+      });
+
+      ticking = true;
+    }
   }
 
   function handleScrollPosition(latestWindowPosition) {
-    var upwardMovement = previousWindowPosition > latestWindowPosition;
+    var upwardMovement =
+      previousWindowPosition > latestWindowPosition + tolerance;
+    var downwardMovement =
+      previousWindowPosition < latestWindowPosition - tolerance;
 
-    if (atTheTop(latestWindowPosition)) {
+    if (atTheTop(latestWindowPosition) || downwardMovement) {
       restoreNaturalPosition();
       return;
     }
@@ -44,7 +58,7 @@ var websiteHeader = function () {
   }
 
   function atTheTop(p) {
-    return p < 1;
+    return p < tolerance;
   }
 
   function startingPositionIsInView(p) {
