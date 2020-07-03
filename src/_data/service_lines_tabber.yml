@@ -407,7 +407,7 @@ es:
 
   strategic-advice:
     - id: estrategia-de-producto
-      title: Estrategia de Producto
+      title: Estrategia de producto
       intro: Crea una estrategia técnica de alto nivel y una hoja de ruta.
       list:
         - Alinear la visión técnica y de producto.
@@ -418,7 +418,7 @@ es:
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
 
     - id: procesos-y-personas
-      title: Procesos y Personas
+      title: Procesos y personas
       intro: Las personas son el corazón de cualquier producto de software.
       list:
         - Evolucionar la cultura de tu empresa
@@ -428,7 +428,7 @@ es:
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
 
     - id: practicas-y-automatizacion
-      title: Prácticas y Automatización
+      title: Prácticas y automatización
       intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
         - Reducir la cantidad de defectos
@@ -439,7 +439,7 @@ es:
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: Arquitectura-y-diseno
-      title: Arquitectura y Diseño
+      title: Arquitectura y diseño
       intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
       list:
         - Aumentar la escalabilidad
@@ -454,7 +454,7 @@ es:
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: plataformas-y-tecnologia
-      title: Plataformas y Tecnología
+      title: Plataformas y tecnología
       intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
       list:
         - Elegir la herramienta adecuada para cada trabajo
