@@ -171,6 +171,7 @@ en:
         - Assess product experience
         - Design a product roadmap
       details: Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
 
     - id: people-and-process
       title: People and Process
@@ -180,6 +181,7 @@ en:
         - Assess and improve ways of working and processes
         - Assess skills and capability
       details: Agile and Lean software development; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
 
     - id: practices-and-automation
       title: Practices and Automation
@@ -190,6 +192,7 @@ en:
         - Assess technical quality
         - Perform root cause analysis
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: architecture-and-design
       title: Architecture and Design
@@ -204,6 +207,7 @@ en:
         - Reduce development and deployment dependencies
         - Reduce maintenance and operation costs
       details: Evolutionary architecture (incremental); Serverless; Microservices;  Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: platform-and-technology
       title: Platform and Technology
@@ -213,6 +217,7 @@ en:
         - Establish a migration path
         - Leverage cloud platforms and containerisation
       details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg
 
   service-line-example:
     - id: tab-1
@@ -402,7 +407,7 @@ es:
 
   strategic-advice:
     - id: estrategia-de-producto
-      title: Estrategia de Producto
+      title: Estrategia de producto
       intro: Crea una estrategia técnica de alto nivel y una hoja de ruta.
       list:
         - Alinear la visión técnica y de producto.
@@ -410,18 +415,20 @@ es:
         - Evaluar la experiencia del producto
         - Diseñar una hoja de ruta del producto
       details: Mapeo customer journeys; Mapeo value stream; Plan de servicio y diseño; Analítica de producto
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
 
     - id: procesos-y-personas
-      title: Procesos y Personas
+      title: Procesos y personas
       intro: Las personas son el corazón de cualquier producto de software.
       list:
         - Evolucionar la cultura de tu empresa
         - Evaluar y mejorar formas de trabajo y procesos
         - Evaluar habilidades y capacidades
       details: Desarrollo de software a través de Agile and Lean; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
 
     - id: practicas-y-automatizacion
-      title: Prácticas y Automatización
+      title: Prácticas y automatización
       intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
         - Reducir la cantidad de defectos
@@ -429,9 +436,10 @@ es:
         - Evaluar la calidad técnica
         - Realizar análisis de causa raíz
       details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: Arquitectura-y-diseno
-      title: Arquitectura y Diseño
+      title: Arquitectura y diseño
       intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
       list:
         - Aumentar la escalabilidad
@@ -440,15 +448,17 @@ es:
         - Aprovechar los modelos de pago por uso
         - Adaptarse a las restricciones regulatorias
         - Aumentar la seguridad
-        - Reduci las dependencias entre desarrollo e implementación
+        - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
       details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: plataformas-y-tecnologia
-      title: Plataformas y Tecnología
+      title: Plataformas y tecnología
       intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
       list:
         - Elegir la herramienta adecuada para cada trabajo
         - Establecer una ruta de migración
         - Aprovechar las plataformas cloud y la "contenedorización"
       details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg
