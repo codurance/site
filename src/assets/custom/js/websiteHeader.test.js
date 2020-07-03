@@ -5,6 +5,7 @@ let header;
 
 jest.useFakeTimers();
 const mockRequestAnimationFrame = (cb) => setTimeout(cb, 0);
+const triggerMockRequestAnimationFrame = () => jest.runAllTimers();
 
 describe("Website Header", () => {
   beforeEach(() => {
@@ -108,5 +109,5 @@ function simulateScrollingToY(y) {
     new Event("scroll", { bubbles: true, cancelable: true })
   );
 
-  jest.runAllTimers();
+  triggerMockRequestAnimationFrame();
 }
