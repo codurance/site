@@ -448,7 +448,7 @@ es:
         - Aprovechar los modelos de pago por uso
         - Adaptarse a las restricciones regulatorias
         - Aumentar la seguridad
-        - Reduci las dependencias entre desarrollo e implementación
+        - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
       details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
