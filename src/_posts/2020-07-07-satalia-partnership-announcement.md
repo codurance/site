@@ -2,11 +2,11 @@
 layout: post
 asset-type: post
 title: Codurance announces official Satalia Partnership
-date: 2020-07-03 00:00:00 +00:00
+date: 2020-07-07 00:00:00 +00:00
 author: Natalie Gray
 description: Codurance partners with Satalia to offer its clients market leading AI-powered optimisation capability
 image:
-    src: /assets/custom/img/blog/2020-07-03-satalia-partnership-announcement/banner.jpeg
+    src: /assets/custom/img/blog/2020-07-07-satalia-partnership-announcement/banner.jpeg
     attribution: 
         text: Photo by Hudson Hintze on Unsplash
         href: https://unsplash.com/photos/vpxeE7s-my4
