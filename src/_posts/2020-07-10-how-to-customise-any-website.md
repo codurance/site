@@ -10,8 +10,6 @@ image:
     src: /assets/custom/img/blog/cat.jpg
 tags:
     - javascript
-    - node
-    - infrastructure
 abstract: Making changes to any website.
 alias: [/2020/07/10/how-to-customise-any-website]
 ---
