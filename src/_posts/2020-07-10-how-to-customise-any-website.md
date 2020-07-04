@@ -7,7 +7,7 @@ date: 2020-07-10 10:00:00 +00:00
 author: Christopher Eyre
 description: How to Customise Any Website.
 image:
-    src: /assets/custom/img/blog/cat.png
+    src: /assets/custom/img/blog/cat.jpg
 tags:
     - javascript
     - node
