@@ -28,12 +28,12 @@ This is where the browser extension Tampermonkey comes in (I am a Chrome user, t
 
 If you install this extension it will allow you to run your own scripts after the page has loaded.
 
-Tampermonkey can be obtained from (https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)[Tampermonkey Extension]
+Tampermonkey can be obtained from [Tampermonkey Extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 
 ## A Useful Example
 
 Codurance is a dynamic company and the staff numbers fluctuate (trending up over time).
-Our website shows the current staff (https://codurance.com/about-us/our-people/)[Our People]
+Our website shows the current staff [Our People](https://codurance.com/about-us/our-people/)
 
 I would like to know at a glance how many people do we currently have.
 
@@ -63,7 +63,7 @@ I then entered the following code (feel free to copy)
 
 Once you enter that and press File | Save then you have an installed script.
 
-Now go and visit this page again: (https://codurance.com/about-us/our-people/)[Our People]
+Now go and visit this page again: [Our People](https://codurance.com/about-us/our-people/)
 
 This should now show a count of how many people currently work at Codurance.
 
