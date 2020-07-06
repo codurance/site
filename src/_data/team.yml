@@ -843,9 +843,9 @@
 - id: tom_spencer
   name: Tom Spencer
   image: /assets/custom/img/team/tom_spencer.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
-    <p>After graduating from Makers Academy in 2017, Tom has now completed two years as an engineer in an SME, building a front end smoke test presenter and working as a full stack developer. He appreciates the opportunity to work with world class colleagues at Codurance and values the knowledge sharing opportunities that pair programming provides.</p>
+    <p>After graduating from Makers Academy in 2017, Tom has completed two years as an engineer in an SME, building a front end smoke test presenter and working as a full stack developer. He appreciates the opportunity to work with world class colleagues at Codurance and values the knowledge sharing opportunities that pair programming provides.</p>
     <p>Tom has a serious approach to problem solving taking circumstances and context into account. He has natural language skills from his work as a teacher of Latin, Classical Greek and French and is deepening his understanding of computer languages. His current interest is functional programming and how this can contribute to OOP Languages such as Java.</p>
     <p>He plays jazz trumpet and piano and enjoys a game of tennis.</p>
   github: TomSpencerLondon
