@@ -150,6 +150,14 @@ h5 {
   background-color: $green !important;
 }
 
+.g-bg-coral {
+  background-color: $coral !important;
+}
+
+.g-bg-slate {
+  background-color: $slate !important;
+}
+
 .g-bg-orange {
   background-color: $orange !important;
 }
@@ -165,12 +173,12 @@ h5 {
 
 .u-pagination-v1-4:hover {
   color: #555 !important;
-  border-color: $orange !important;
+  border-color: $coral !important;
 }
 
 .u-pagination-v1-4--active {
-  background-color: $orange !important;
-  border-color: $orange !important;
+  background-color: $coral !important;
+  border-color: $coral !important;
 }
 
 /* Unify template overides
@@ -187,11 +195,11 @@ a:active {
   .navbar-nav:not([class*="u-main-nav-v"])
   .active
   > .nav-link {
-  color: $orange !important;
+  color: $coral !important;
 }
 
 .g-color-primary {
-  color: $orange !important;
+  color: $coral !important;
 }
 
 .lead {
