@@ -183,13 +183,6 @@ a:active {
   color: $coral;
 }
 
-.u-header__section--light
-  .navbar-nav:not([class*="u-main-nav-v"])
-  .active
-  > .nav-link {
-  color: $coral !important;
-}
-
 .g-color-primary {
   color: $coral !important;
 }
@@ -224,9 +217,3 @@ a:active {
   }
 }
 
-/* Typography
-   -------------------------------------- */
-
-.nav-link {
-  color: #404040;
-}

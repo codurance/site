@@ -26,6 +26,15 @@
   top: -10px;
 }
 
+.website-navigation__menu-item {
+  color: #404040;
+}
+
+.website-navigation__menu-item:hover {
+  color: #FA7268;
+  text-decoration: none;
+}
+
 .has-sub-menu {
   & > a::after {
     content: "";
@@ -36,14 +45,24 @@
     padding: 4.5px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    &:hover {
+      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+      margin: 0px 0px -3px 3px;
+    }
   }
 
-  &:hover > .sub-menu {
+  &:hover > .sub-menu{
     background-color: white;
-    display: inline-block;
+    display: block;
     position: absolute;
   }
+}
 
+.has-sub-menu > a:hover::after.sub-menu{
+  background-color: white;
+  display: inline-block;
+  position: absolute;
 }
 
 .sub-menu {
