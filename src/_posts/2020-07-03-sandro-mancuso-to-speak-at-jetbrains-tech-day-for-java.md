@@ -8,8 +8,8 @@ description: Join Sandro Mancuso, Co-Founder of Codurance, for his session on So
 image:
     src: /assets/custom/img/blog/2020-07-03-sandro-mancuso-to-speak-at-jetbrains-tech-day-for-java/banner.jpeg
     attribution: 
-        text: Photo by Natalie Pedigo on Unsplash
-        href: https://unsplash.com/photos/BVyNlchWqzs
+        text: Photo by Mimi Garcia on Unsplash
+        href: https://unsplash.com/photos/txQT60OPSwA
 tags:
     - jetbrains
     - software modernisation
