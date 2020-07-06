@@ -27,11 +27,11 @@
 }
 
 .website-navigation__menu-item {
-  color: #404040;
+  color: $grey--dark;
 }
 
 .website-navigation__menu-item:hover {
-  color: #fa7268;
+  color: $coral;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@
   @include _DEPRECIATED_large {
     & > .website-navigation__menu-item::after {
       content: "";
-      border: solid #404040;
+      border: solid $grey--dark;
       border-width: 0 2px 2px 0;
       display: inline-block;
       margin: 3px;
