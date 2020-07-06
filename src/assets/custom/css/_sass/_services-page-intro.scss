@@ -2,18 +2,22 @@
   background-color: #474b4a;
   background-position: center center;
   background-size: cover;
-  height: 0;
 
   @include small-and-medium {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");
+    height: 0;
     padding-top: 200 / 360 * 100%;
   }
   @include large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
+  }
+  @include large {
+    height: 0;
     padding-top: 650 / 1820 * 100%;
   }
   @include extra-large {
     @include max-width--framed;
+    height: 465px;
   }
 }
 
@@ -49,7 +53,7 @@
   @include medium {
     margin-bottom: 40px;
   }
-  @include large-and-extra-large{
+  @include large-and-extra-large {
     margin-bottom: 100px;
   }
 }
