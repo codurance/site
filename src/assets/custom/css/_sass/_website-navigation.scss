@@ -80,3 +80,8 @@
   font-weight: 400;
   padding-left: 15px;
 }
+
+.active > .website-navigation__menu-item {
+  border: solid $coral;
+  border-width: 0 0 2px 0;
+}
