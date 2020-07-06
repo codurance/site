@@ -31,7 +31,7 @@
 }
 
 .website-navigation__menu-item:hover {
-  color: #FA7268;
+  color: #fa7268;
   text-decoration: none;
 }
 
@@ -44,22 +44,21 @@
     margin: 3px;
     padding: 4.5px;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    &:hover {
-      transform: rotate(225deg);
-      -webkit-transform: rotate(225deg);
-      margin: 0px 0px -3px 3px;
-    }
+  }
+  &:hover > a::after {
+    transform: rotate(225deg);
+    position: relative;
+    top: 7px;
   }
 
-  &:hover > .sub-menu{
+  &:hover > .sub-menu {
     background-color: white;
     display: block;
     position: absolute;
   }
 }
 
-.has-sub-menu > a:hover::after.sub-menu{
+.has-sub-menu > a:hover::after.sub-menu {
   background-color: white;
   display: inline-block;
   position: absolute;
