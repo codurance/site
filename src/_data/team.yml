@@ -808,7 +808,7 @@
 - id: ewan_sheldon
   name: Ewan Sheldon
   image: /assets/custom/img/team/ewan_sheldon.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Ewan started his software career by studying at Makers Academy, and has since spent three years working as an engineer with a small tech startup, developing a number of products including cloud-based WiFi management dashboards and venue booking platforms for food traders.</p>
     <p>He is eager to learn from good people around him to improve his technical and professional skills.</p>
@@ -856,7 +856,7 @@
 - id: alexis_pavlidis
   name: Alexis Pavlidis
   image: /assets/custom/img/team/alexis_pavlidis.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Alexis has been programming for more than 7 years since he was 16, Pascal was his first language but he is not that old. After completing his degree in Computer Science, Alexis worked for two years as a software engineer, mostly with Java EE, and Javascript.<p>
     <p>He is passionate about building well-crafted software, deliver value to the business, and he always strives for better quality.</p>
@@ -884,7 +884,7 @@
 - id: sebastian_kulinski
   name: Sebastian Kulinski
   image: /assets/custom/img/team/sebastian_kulinski.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Sebastian took his first steps into professional software development by attending Software Crafters meetups when he experienced XP Programming for first time and got hooked.<p>
     <p>Previously working for a digital marketing agency, focused on social media, as a backend developer in PHP he got experience in solving problems.</p>
