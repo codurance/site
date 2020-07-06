@@ -25,3 +25,18 @@
   right: -8px;
   top: -10px;
 }
+
+.has-sub-menu > a::after {
+  content: "";
+  border: solid #404040;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: 3px;
+  padding: 4.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.sub-menu {
+  display: none;
+}

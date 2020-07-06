@@ -29,9 +29,11 @@
         <li class="nav-item g-mx-15--lg g-mx-20--xl">
           <a href="{{ '/careers' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.careers%}</a>
         </li>
-        <li class="nav-item hs-has-sub-menu g-mx-20--lg">
-          <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">{% t sections.about-us%}</a>
-          <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top  g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1" style="display: none;">
+        <li class="nav-item g-mx-20--lg has-sub-menu">
+          <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">
+            {% t sections.about-us%}
+          </a>
+          <ul class="sub-menu list-unstyled g-text-transform-none g-brd-top  g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1">
             <li class="dropdown-item">
               <a class="nav-link g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
             </li>
