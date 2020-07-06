@@ -40,6 +40,11 @@
     & > .website-navigation__menu-item {
       display: none;
     }
+
+    & .website-navigation__dropdown-item {
+      font-weight: 600;
+      padding: 0px;
+    }
   }
   @include _DEPRECIATED_large {
     & > .website-navigation__menu-item::after {
@@ -69,4 +74,9 @@
   @include _DEPRECIATED_large {
     display: none;
   }
+}
+
+.website-navigation__dropdown-item {
+  font-weight: 400;
+  padding-left: 15px;
 }
