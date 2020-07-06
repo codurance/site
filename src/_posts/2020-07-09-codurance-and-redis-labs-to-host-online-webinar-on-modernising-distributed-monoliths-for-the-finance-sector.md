@@ -2,11 +2,11 @@
 layout: post
 asset-type: post
 title: Codurance and Redis Labs to host online webinar on modernising distributed monoliths for the finance sector
-date: 2020-07-03 00:00:00 +00:00
+date: 2020-07-09 00:00:00 +00:00
 author: Natalie Gray
 description: Join us to rediscover how Redis Labs and Codurance align business and technology by reducing time to market, utilise data to gain competitive advantage and reducing costs
 image:
-    src: /assets/custom/img/blog/2020-07-03-codurance-and-redis-labs-to-host-online-webinar-on-modernising-distributed-monoliths-for-the-finance-sector/banner.jpeg
+    src: /assets/custom/img/blog/2020-07-09-codurance-and-redis-labs-to-host-online-webinar-on-modernising-distributed-monoliths-for-the-finance-sector/banner.jpeg
     attribution: 
         text: Photo by Sean Pollock on Unsplash
         href: https://unsplash.com/photos/PhYq704ffdA
