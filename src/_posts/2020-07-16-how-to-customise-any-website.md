@@ -3,15 +3,15 @@ layout: post
 asset-type: post
 name: how-to-customise-any-website
 title: How to Customise Any Website
-date: 2020-07-10 10:00:00 +00:00
+date: 2020-07-16 10:00:00 +00:00
 author: Christopher Eyre
 description: How to Customise Any Website.
 image:
     src: /assets/custom/img/blog/cat.jpg
 tags:
     - javascript
-abstract: Making changes to any website.
-alias: [/2020/07/10/how-to-customise-any-website]
+abstract: Demo of using Tampermonkey.
+alias: [/2020/07/16/how-to-customise-any-website]
 ---
 
 ## Using Tampermonkey to Change The World
