@@ -78,7 +78,7 @@ html {
   width: 25px;
   margin-left: 0;
   position: absolute;
-  background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
+  background: $coral;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -378,8 +378,8 @@ html {
 
 .btn-codurance-color {
   color: white;
-  background-color: $orange;
-  border-color: $orange;
+  background-color: $coral;
+  border-color: $coral;
 }
 
 .codurance-green-background {
@@ -625,7 +625,7 @@ i.no-border {
 
 .news-v1 a {
   /* 0 0 1 1 */
-  color: $orange-colour;
+  color: $coral;
 }
 
 /* Sponsoring section */
