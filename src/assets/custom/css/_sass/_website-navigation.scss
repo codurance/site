@@ -36,44 +36,30 @@
 }
 
 .has-sub-menu {
-  @include _DEPRECIATED_small {
-    & > .website-navigation__menu-item {
-      display: none;
-    }
-
-    & .website-navigation__dropdown-item {
-      font-weight: 600;
-      padding: 0px;
-    }
+  & > .website-navigation__menu-item::after {
+    content: "";
+    border: solid $grey--dark;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin: 3px;
+    padding: 4.5px;
+    transform: rotate(45deg);
   }
-  @include _DEPRECIATED_large {
-    & > .website-navigation__menu-item::after {
-      content: "";
-      border: solid $grey--dark;
-      border-width: 0 2px 2px 0;
-      display: inline-block;
-      margin: 3px;
-      padding: 4.5px;
-      transform: rotate(45deg);
-    }
-    &:hover > .website-navigation__menu-item::after {
-      transform: rotate(225deg);
-      position: relative;
-      top: 7px;
-    }
+  &:hover > .website-navigation__menu-item::after {
+    transform: rotate(225deg);
+    position: relative;
+    top: 7px;
+  }
 
-    &:hover > .sub-menu {
-      background-color: white;
-      display: block;
-      position: absolute;
-    }
+  &:hover > .sub-menu {
+    background-color: white;
+    display: block;
+    position: absolute;
   }
 }
 
 .sub-menu {
-  @include _DEPRECIATED_large {
-    display: none;
-  }
+  display: none;
 }
 
 .website-navigation__dropdown-item {
