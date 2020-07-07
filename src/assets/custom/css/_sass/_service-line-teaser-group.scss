@@ -27,16 +27,6 @@
   @include large-and-extra-large {
     margin-bottom: 50px;
     padding-top: 40px;
-
-    &::after {
-      background-color: #fda09b;
-      background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-mountain-texture.jpg");
-      background-size: cover;
-      bottom: 25px;
-      content: "";
-      position: absolute;
-      top: 40px;
-    }
   }
 }
 
@@ -87,19 +77,6 @@
 }
 
 .service-line-teaser-group__card-content {
-  background-color: $slate;
-
-  &::before {
-    background-color: $slate;
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
   @include small {
     padding-bottom: 65px;
     padding-left: $lateral-space--small;
@@ -114,10 +91,19 @@
     z-index: 20;
 
     &::before {
+      background-color: $slate;
+      bottom: 0;
+      content: "";
+      left: 0;
       mix-blend-mode: multiply;
       opacity: 0.8;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
     }
   }
+
   @include medium {
     align-content: flex-start;
     display: flex;
@@ -126,17 +112,12 @@
     justify-content: space-between;
     padding: 35px 40px 50px;
   }
+
   @include large-and-extra-large {
     @include style-card-box-shadow;
+    background-image: none !important;
     position: relative;
     z-index: 20;
-    padding-bottom: 60px;
-    padding-left: $lateral-space--large;
-    padding-right: $lateral-space--large;
-    padding-top: 60px;
-    &::before {
-      opacity: 1;
-    }
   }
 
   .service-line-teaser-group__card:nth-of-type(odd) & {
@@ -151,11 +132,28 @@
     }
   }
 }
+@include large-and-extra-large {
+  .service-line-teaser-group__primary-content,
+  .service-line-teaser-group__secondary-content {
+    padding-left: $lateral-space--large;
+    padding-right: $lateral-space--large;
+  }
+  .service-line-teaser-group__primary-content {
+    background-color: $slate;
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+  .service-line-teaser-group__secondary-content {
+    background-color: $slate-light;
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+}
 
-.service-line-teaser-group__card-content-type {
+.service-line-teaser-group__card-tag {
   @include ponti-bold;
   align-items: center;
-  color: $coral;
+  color: white;
   display: flex;
   flex-direction: row;
 
