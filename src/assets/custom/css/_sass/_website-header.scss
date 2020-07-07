@@ -1,4 +1,9 @@
-.website-header {
+body:not(.toggle--slt-462-nav-typestyles) .website-header {
+  background-color: white;
+  font-size: 13px;
+}
+
+.toggle--slt-462-nav-typestyles .website-header{
   background-color: white;
   font-size: 18px;
   font-weight: 600;

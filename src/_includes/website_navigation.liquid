@@ -1,5 +1,5 @@
 <nav class="website-navigation navbar navbar-expand-lg">
-  <div class="container">
+    <div class="container">
     <button class="website-navigation__menu-toggle navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
       <span class="hamburger hamburger--slider">
         <span class="hamburger-box">
@@ -13,45 +13,13 @@
       {% include codurance_logo.liquid class="website-navigation__logo" %}
     </a>
     <!-- End Logo -->
-
+      
     <!-- Navigation -->
-    <div class="js-mega-menu website-navigation__menu collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--sm g-mr-25--lg" id="navBar">
-      <ul class="nav navbar-nav mr-auto">
-        <li class="nav-item g-mx-15--lg g-mx-20--xl">
-          <a href="{{ '/clients' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.clients %}</a>
-        </li>
-        <li class="nav-item g-mx-15--lg g-mx-20--xl">
-          <a href="{{ '/services' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.services%}</a>
-        </li>
-        <li class="nav-item g-mx-15--lg g-mx-20--xl">
-          <a href="{{ '/publications' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.publications%}</a>
-        </li>
-        <li class="nav-item g-mx-15--lg g-mx-20--xl">
-          <a href="{{ '/careers' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.careers%}</a>
-        </li>
-        <li class="nav-item g-mx-20--lg has-sub-menu">
-          <span class="website-navigation__menu-item g-px-0" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">
-            {% t sections.about-us%}
-          </span>
-          <ul class="sub-menu list-unstyled g-text-transform-none g-brd-top  g-brd-top-2 g-min-width-200 g-mt-0 g-mt-0--lg--scrolling animated" id="nav-submenu-1" aria-labelledby="nav-link-1">
-            <li class="website-navigation__dropdown-item">
-              <a class="website-navigation__menu-item g-px-0" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
-            </li>
-            <li class="website-navigation__dropdown-item">
-              <a class="website-navigation__menu-item g-px-0" href="{{ '/about-us/our-story' | prepend: site.baseurl }}">{% t sections.our-story%}</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item g-mx-15--lg g-mx-20--xl">
-            <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.contact%}</a>
-        </li>
-        {% for domain in site.domains %}
-          <li class="nav-item g-mx-20--lg g-mx-20--xl g-hidden-sm-up">
-            <a  href="{{ domain[1] }}{{ page.url }}" class="website-navigation__menu-item px-0">{{ domain[0] | upcase }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% if site.data.toggles.slt-462-nav-typestyles == 'on' %}
+      {% include website_navigation_menu.liquid %}
+    {% else %}
+      {% include website_navigation_menu-old.liquid %}
+    {% endif %}
     <!-- End Navigation -->
 
     <!-- Language Picker -->
