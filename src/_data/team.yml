@@ -971,3 +971,16 @@
     <p> When she is not thinking about stories and how to tell them, she is probably thinking about travelling. She is also very interested in nature conservation, literature, cinema and history.</p>
   email: alicia.corpas@codurance.com
   office: barcelona
+
+- id: phil_taprogge
+  name: Phil Taprogge
+  image: /assets/custom/img/team/phil_taprogge.jpg
+  role: Site Reliability Craftsperson
+  fullDescription:
+    <p>Originally coming from a software engineering background, Phil embraced cloud infrastructure early on. Excited by the possibilities that infrastructure automation offers, he worked in a number of DevOps and infrastructure engineering roles before becoming an expert in all things Kubernetes.</p>
+    <p>More recently he has become an avid practitioner of Site Reliability Engineering, helping developers gain better insights into the ways their software operates and enabling them to make better engineering decisions.</p>
+    <p>Outside of work, Phil enjoys mixing drinks as well as all things fantasy and science fiction. He is also a writer and teller of stories.</p>
+  email: phil.taprogge@codurance.com
+  github: gargath
+  linkedin: philtaprogge
+  office: London
