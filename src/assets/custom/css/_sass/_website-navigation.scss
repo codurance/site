@@ -28,11 +28,17 @@
 
 .website-navigation__menu-item {
   color: $grey--dark;
-}
+  font-size: 18px;
+  font-weight: 600;
 
-.website-navigation__menu-item:hover {
-  color: $coral;
-  text-decoration: none;
+  &:hover {
+    color: $coral;
+    text-decoration: none;
+  }
+
+  .website-navigation__dropdown-item & {
+    font-weight: 400;
+  }
 }
 
 .has-sub-menu {
@@ -63,7 +69,6 @@
 }
 
 .website-navigation__dropdown-item {
-  font-weight: 400;
   padding-left: 15px;
 }
 
