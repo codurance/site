@@ -768,3 +768,8 @@ service-line-testimonials:
   ecw:
     text: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
     foot-note: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks
+
+training-overview:
+  hero-title: Training
+  hero-sub-title: Upskilling para equipos más efectivos
+  hero-description: Generamos un circuito de formación específico según las necesidades que se detectan.
