@@ -2,16 +2,16 @@
  <div class="service-line-hero__inner">
     <div class="service-line-hero__content-container">
       <div class="service-line-hero__small-background-wrapper" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-small }})">
-        <h1 class="service-line-hero__title">
+          <h1 class="service-line-hero__title">
           {{ site.data.service_lines[page.service-line].icon }}
-          {{ translations.hero-title }}
+          {{ include.translations.hero-title }}
         </h1>
         <p class="service-line-hero__sub-title">
-          {{ translations.hero-sub-title }}
+          {{ include.translations.hero-sub-title }}
         </p>
       </div>
       <p class="service-line-hero__description">
-        {{ translations.hero-description }}
+        {{ include.translations.hero-description }}
       </p>
       {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
       {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
