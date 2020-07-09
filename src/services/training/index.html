@@ -3,47 +3,51 @@ layout: default
 title: Training
 ---
 
-<div class="container content">
-   <div class="row">
-          <div class="col-md-6">
-              <h2 class="title-v2">{% t services-training_coaching.title %}</h2>
-              {% t services-training_coaching.subtitle %}
-              <br/>
-              <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="btn-u">{% t company-contact.title %} ...</a>
-          </div>
-          <div class="col-md-6">
-              <img src="{{ '/assets/custom/img/services/training/node-js-session.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="">
-          </div>
-    </div>
+{% if site.data.toggles.slt-181-training-overview-page == "on" %}
 
-    <h2 class="title-v2 g-pt-60">{% t services-training_coaching.our_courses %}</h2>
-
-     {% if site.lang == "es" %}
-       {% assign trainings_file = site.data.trainings_es %}
-     {% else %}
-       {% assign trainings_file = site.data.trainings_en %}
-     {% endif %}
-       {% for training in trainings_file %}
-         {% assign loopindex = forloop.index | modulo: 3 %}
-         {% if loopindex == 1 %}
-          <div class="row news-v1">
-         {% endif %}
-
-          <div class="col-md-4">
-              <div class="news-v1-in margin-bottom-20">
-                <h3><a class="hover-effect" href="{{site.baseurl}}{{training.page}}">{{training.name}}</a></h3>
-                <p>{{training.description}}</p>
-                <ul class="list-inline news-v1-info">
-                  <li><span>By</span> <strong>{{training.author}}</strong></li>
-                </ul>
+{% else %}
+    <div class="container content">
+       <div class="row">
+              <div class="col-md-6">
+                  <h2 class="title-v2">{% t services-training_coaching.title %}</h2>
+                  {% t services-training_coaching.subtitle %}
+                  <br/>
+                  <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="btn-u">{% t company-contact.title %} ...</a>
               </div>
-          </div>
+              <div class="col-md-6">
+                  <img src="{{ '/assets/custom/img/services/training/node-js-session.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="">
+              </div>
+        </div>
 
-         {% if loopindex == 0 %}
-          </div>
+        <h2 class="title-v2 g-pt-60">{% t services-training_coaching.our_courses %}</h2>
+
+         {% if site.lang == "es" %}
+           {% assign trainings_file = site.data.trainings_es %}
+         {% else %}
+           {% assign trainings_file = site.data.trainings_en %}
          {% endif %}
+           {% for training in trainings_file %}
+             {% assign loopindex = forloop.index | modulo: 3 %}
+             {% if loopindex == 1 %}
+              <div class="row news-v1">
+             {% endif %}
 
-      {% endfor %}
-      </div>
+              <div class="col-md-4">
+                  <div class="news-v1-in margin-bottom-20">
+                    <h3><a class="hover-effect" href="{{site.baseurl}}{{training.page}}">{{training.name}}</a></h3>
+                    <p>{{training.description}}</p>
+                    <ul class="list-inline news-v1-info">
+                      <li><span>By</span> <strong>{{training.author}}</strong></li>
+                    </ul>
+                  </div>
+              </div>
+
+             {% if loopindex == 0 %}
+              </div>
+             {% endif %}
+
+          {% endfor %}
+          </div>
+        </div>
     </div>
-</div>
+{% endif %}
