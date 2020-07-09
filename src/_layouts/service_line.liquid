@@ -4,8 +4,9 @@ layout: default
 
 {%- assign translations = site.translations[site.lang].[page.service-line] -%}
 {%- assign service-line-page-locations = site.data.service_line_page_section_anchors[site.lang] -%}
+{%- assign cta_href = site.translations[site.lang].get-in-touch.anchor-id -%}
 
-{%- include service_line_hero.liquid translations=translations -%}
+{%- include service_line_hero.liquid translations=translations cta_href=cta_href -%}
 {% include service_line_details_section.liquid %}
 {%- include service_line_case_studies.liquid -%}
 {%- include service_line_testimonials.liquid -%}

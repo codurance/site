@@ -13,7 +13,7 @@
       <p class="service-line-hero__description">
         {{ include.translations.hero-description }}
       </p>
-      {%- capture href -%}#{% t get-in-touch.anchor-id %}{%- endcapture -%}
+      {%- capture href -%}#{{ include.cta_href }}{%- endcapture -%}
       {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
       {% include cta_primary_link.html color='coral' href=href text=text %}
     </div>
