@@ -197,9 +197,6 @@ services:
   training:
     title: Trainings
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
-    image: http://placekitten.com/780/590
-    cta-href: /services/training
-    cta-text: Learn more
   clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
@@ -770,3 +767,5 @@ training-overview:
   hero-title: Training
   hero-sub-title: Upskilling for more effective teams
   hero-description: Leverage focused training courses to upskill your teams at every phase of the project. We can create a bespoke training plan adapted to your business needs.
+
+learn-more: Learn more
