@@ -8,7 +8,8 @@ metarobots: index,follow
 ---
 
 {% if site.data.toggles.slt-181-training-overview-page == "on" %}
-
+  {%- assign translations = site.translations[site.lang].training-overview -%}
+  {% include service_line_hero.liquid translations=translations %}
 {% else %}
     <div class="container content">
        <div class="row">
