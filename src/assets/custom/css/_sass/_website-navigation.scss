@@ -47,13 +47,23 @@
 
   .has-sub-menu > &::after {
     content: "";
-    border: solid $grey--dark;
-    border-width: 0 2px 2px 0;
     display: inline-block;
-    margin: 3px;
     padding: 4.5px;
-    transform: rotate(45deg);
+
+    @include small-and-medium {
+      transform: rotate(-45deg);
+      border: solid $coral;
+      border-width: 0 2px 2px 0;
+    }
+
+    @include large-and-extra-large {
+      transform: rotate(45deg);
+      border: solid $grey--dark;
+      border-width: 0 2px 2px 0;
+      margin: 3px;
+    }
   }
+
   .has-sub-menu:hover > &::after {
     transform: rotate(225deg);
     position: relative;
