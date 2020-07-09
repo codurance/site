@@ -14,7 +14,7 @@
         {{ include.translations.hero-description }}
       </p>
       {%- capture href -%}#{{ include.cta_href }}{%- endcapture -%}
-      {% assign text = site.translations[site.lang].software-modernisation.hero-cta %}
+      {% assign text = {{include.cta_text}} %}
       {% include cta_primary_link.html color='coral' href=href text=text %}
     </div>
  </div>
