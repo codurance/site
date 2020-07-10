@@ -195,11 +195,8 @@ services:
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
   training:
-    title: Trainings
+    title: Training
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
-    image: http://placekitten.com/780/590
-    cta-href: /services/training
-    cta-text: Learn more
   clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
@@ -765,3 +762,10 @@ service-line-testimonials:
   ecw:
     text: “Pragmatism” is a widely discussed concept and but rarely taken into account when you are looking for software development partners. Codurance team embodies just the right amount of practicality with the overall vision and knowledge to bring positive change to any organization.
     foot-note: Sapankumar Parikh - Vice President of Software Development at eClinicalWorks
+
+training-overview:
+  hero-title: Training
+  hero-sub-title: Upskilling for more effective teams
+  hero-description: Leverage focused training courses to upskill your teams at every phase of the project. We can create a bespoke training plan adapted to your business needs.
+
+learn-more: Learn more
