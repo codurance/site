@@ -1,7 +1,7 @@
 {%- capture classModifier -%}
-  {%- if include.split and include.split == "even" -%}
+  {%- if include.split == "even" -%}
     in-page-banner--even
-  {%- elsif include.split and include.split == "right-heavy" -%}
+  {%- elsif include.split == "right-heavy" -%}
     in-page-banner--right-heavy
   {%- endif -%}
 
@@ -15,7 +15,13 @@
         <h3 class="in_page_banner__title">{{ include.title }}</h3>
       {% endif %}
       <p class="in_page_banner__description">{{ include.description }}</p>
-      {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %}
+
+      {%- if include.hubspot-cta and include.hubspot-cta != '' -%}
+        {{ include.hubspot-cta}}
+      {%- else -%}
+        {% include cta_primary_link.html color='navy' href=include.cta_href text=include.cta_text %}
+      {%- endif -%}
+
     </div>
   </div>
 </div>

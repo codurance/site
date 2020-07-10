@@ -1,0 +1,13 @@
+.website-header {
+  background-color: white;
+  font-size: 13px;
+}
+
+body:not(.toggle--slt-464-new-js) .website-header,
+.website-header--revealed {
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}

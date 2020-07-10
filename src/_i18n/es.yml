@@ -98,16 +98,14 @@ footer:
 footer-latest_blog:
   title: Últimos posts del blog
 footer-useful_links:
-  title: Useful Links
-  we-advise: We advise
-  we-coach: We coach
-  we-deliver: We deliver
-  our-people: Nuestra gente
-  our-story: Nuestra historia
   careers: Carreras
-  privacy-policy: Política de privacidad
   cookie-policy: Política de Cookies
   newsletter-subscription: Suscripción a newsletter
+  our-people: Nuestra gente
+  our-story: Nuestra historia
+  privacy-policy: Política de privacidad
+  services: Servicios
+  title: Useful Links
 footer-contact:
   title: Contacto
   phone_title: Teléfono
@@ -188,89 +186,21 @@ publications:
   teaser-cta: Continúa
   view-all: Ver todas las publicaciones
 services:
-  title: Software de calidad entregado efectivamente
-  subtitle: Líderes reconocidos en continuous delivery y prácticas de calidad en el desarrollo de software.
-  content-type: Servicio
-  we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: Somos pioneros en Software Craftsmanship. Somos conocidos por nuestra experiencia en prácticas XP, Continuous Delivery, Software Architecture, Soluciones Cloud e Infraestructura. Aprovechamos nuestra experiencia para ofrecer un servicio a medida de nuestros clientes.
-  we-advise-subtitle: Te asesoramos en la entrega de software de calidad de forma efectiva.
-  we-coach-subtitle: Te formamos en habilidades de diseño de software y delivery.
-  we-deliver-subtitle: Entregamos soluciones de software de calidad.
   learn-more: Más info
   page-intro:
     title: Servicios y soluciones
-    sub-title: Impulsa la innovación en tu organización a través de asesoramiento experto y experiencia técnica aplicada a la práctica
-    lead-in: Trabajamos contigo para poner a tu alcance soluciones que ayuden a crear un futuro sostenible, escalable y adaptable para tu negocio. Juntos descubrimos tus necesidades organizacionales y cómo necesitas evolucionar. Nuestro equipo te ofrecerá las prácticas, tecnologías y habilidades necesarias para agregar valor continuamente y hacer posible la innovación.
-  we-advise:
-    title: We advise
-    subtitle: Para saber cómo puedes mejorar es necesario entender tus competencias actuales de delivery.
-    body: Revisaremos tus competencias de proceso, tecnología, arquitectura y niveles de práctica.
-      Te acompañaremos, con directrices técnicas y programas de coaching, para ayudar a tu organización
-      en su camino hacia una entrega efectiva y sostenible.
-    high-level-consulting:
-      title: Consultoría de alto nivel
-      body: Cuando tu software no evoluciona con tu negocio el origen de ese problema está en causas que, a menudo, son complejas.Te ayudaremos a identificar esas causas y a crear un plan de mejora global.
-        La entrega de software efectiva requiere una estrategia de producto, de organización de equipo,
-        de proceso, arquitectura y prácticas técnicas, y todos esos elementos deben estar alineados.
-
-    technical-vision:
-      title: Visión técnica y revisión de arquitectura
-      body: Tanto si tienes un monolito, código legacy o si te encuentras en la etapa de diseño de tu nuevo producto,
-        te ayudaremos a revisar tu arquitectura, en el contexto de tu visión de producto y tecnológica,
-        para que se responda a tus necesidades, tanto presentes como futuras.
-    discovery-phase:
-      title: Fase de descubrimiento
-      body: Tienes un área en particular que necesitas mejorar desde un punto de vista tecnológico. Estás buscando un partner para que te ayude a conseguir ese objetivo, pero no sabes
-        exactamente en qué aspecto necesitas enfocarte.
-        Te ayudaremos a focalizar tus esfuerzos con una serie de sesiones de trabajo para crear un plan de mejora.
-    technical-coaching:
-      title: Coaching técnico
-      body: Si tu visión técnica y tus capacidades no están alineadas esto va a tener un impacto directo en tu capacidad
-        para entregar valor a tus clientes.
-        Invertir en las habilidades de tus equipos ayudará a reducir esta brecha.
-        Ofrecemos formación y coaching en prácticas XP
-        (ej. TDD, Pair programming, Continuous Integration), Software Design, Clean Code y Arquitectura de Software.
-  we-coach:
-    title: We coach
-    subtitle: Ayudamos a los equipos en cualquier fase de un proyecto a que puedan beneficiarse de una capacitación específica.
-    body: Nuestros cursos ayudan a tu a equipo a mejorar en prácticas XP, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development entre otras prácticas técnicas.
-    trainings:
-      title1: Crafting code
-      title2: Serverless Architecture con AWS
-      title3: Y más...
-  we-deliver:
-    title: We deliver
-    subtitle: Tenemos las habilidades de entrega de software para ayudarte a entregar tus objetivos de negocio.
-    body: Nuestros equipos expertos mejoraran tu software y procesos de entrega hacia entregas
-      más eficientes y continuous delivery. Además nuestros equipos de feature tienen las capacidades necesarias
-      para llevar una idea al mercado.
-    feature-delivery:
-      title: Feature Delivery Teams
-      body: Nuestros equipos son expertos en prácticas XP, Continuous Delivery y cultura DevOps.
-        Tengas un producto existente o estés empezando uno nuevo, nuestros equipos se aseguran de ayudarte a entregar
-        calidad y a tiempo para que puedas satisfacer tus objetivos de negocio. Nuestro trabajo servirá de ejemplo para tus futuros
-        desarrollos.
-    technical-delivery:
-      title: Technical Delivery Teams
-      body: Tus pipelines de continuous delivery necesitan mejoras, no quieres dejar de dar servicio con tus deploys,
-        necesitas infraestructura para A/B testing o te enfrentas a los desafíos más complicados de pasar de monolito a
-        microservicios.
-        Nuestro equipo de technical delivery se encargará de esto por ti para que puedas concentrarte en
-        desarrollar las características que tu negocio necesita.
-    clients-title: Clientes que se han beneficiado de entregas más efectivas
-  our-expertise:
-    title: Nuestra experiencia
-    subtitle: Nuestra oferta y experiencia se basan en valores de Software Craftmanship, en prácticas XP, en cultura DevOps y en procesos Agile.
+    sub-title: Trabajamos contigo para crear un futuro sostenible, escalable y adaptable para tu negocio
+    lead-in: Impulsa la innovación en tu organización a través de la entrega ágil de software, la experiencia técnica aplicada a la práctica, y nuestro asesoramiento experto. Nuestro equipo de profesionales te proporcionará las prácticas, tecnologías y habilidades necesarias en cada paso del proyecto para garantizar entregas de alta calidad. Te guiaremos desde el inicio hasta la entrega, haciendo posible que tu visión del producto se haga realidad.
+  training:
+    title: Trainings
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
+    cta-text: Cómo lo hacemos
+    cta-href: /services/trainings
+  clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros
     body: Contacta con nosotros para averiguar cómo podemos colaborar.
     formid: 3723c6ef-7d66-438a-9c3c-7a1d8aebd3da
-  training:
-    title: Formación
-    description: Cursos de capacitación oriuentados a optimizar tus equipos
-    image: http://placekitten.com/780/590
-    cta-href: /services/training/
-    cta-text: Ver mas
 services-training_coaching:
   title: Formación & asesoría
   our_courses: Nuestros cursos
@@ -348,8 +278,8 @@ careers:
   our_roles_title: Nuestros Roles
   software_craftspeople_title: Software Craftspeople
   software_craftspeople_description: Nuestros Craftspeople tienen una habilidades y niveles de experiencia muy diversos. Infórmate sobre lo que significa ser un Craftsperson.
-  apprentices_title: Aprendices
-  apprentices_description: Un programa intensivo de aprendizaje de 3 meses que te proporcionará las habilidades necesarias para convertirte en Craftsperson. Infórmate sobre el programa.
+  craftspeople_in_training_title: Craftspeople-in-training
+  craftspeople_in_training_description: Un programa intensivo de aprendizaje de 3 meses que te proporcionará las habilidades necesarias para convertirte en Craftsperson. Infórmate sobre el programa.
   contact_us_title: ¿Tienes más preguntas?
   contact_us_subtitle: Si necesitas más información sobre Codurance antes de aplicar, siéntete libre de enviarnos un mensaje y preguntarnos lo que necesites. Responderemos a tus preguntas y respetaremos tu privacidad. Cuando hayas recabado la información que necesitas y estés listo/a para presentar tu candidatura hablaremos al respecto.
   life_at_codurance_title: Vida en Codurance
@@ -442,24 +372,24 @@ careers:
     life_cover_icon: icon-education-153 u-line-icon-pro
     mentor_title: Mentor
     mentor_description: Podrás escoger un mentor/a que te guíe en tu proceso de aprendizaje.
-  become_an_apprentice:
-    title: Aprendizaje en Codurance
+  become_a_craftsperson_in_training:
+    title: El Academy Program en Codurance
     apply_title: Inscríbete
-    description: Los/as aprendices comparten nuestra pasión por crear software bien diseñado, pero aún no han tenido las oportunidades de aprendizaje adecuadas para refinar su oficio.
+    description: Los/as craftspeople-in-training comparten nuestra pasión por crear software bien diseñado, pero aún no han tenido las oportunidades de aprendizaje adecuadas para refinar su oficio.
     how_works_title: ¿Cómo trabajamos?
     how_works_description: Si tienes pasión por aprender y te gustaría tener la oportunidad de aprender las tecnologías y prácticas necesarias para convertirte en craftsperson esperamos tu solicitud.
     how_works:
       box1_title: Programa de 3 meses
       box1_description: Módulos prácticos e intensivos que cubren los aspectos esenciales del diseño de software, prácticas de XP, código limpio y DDD.
       box2_title: Orientación experta
-      box2_description: Estarás guiado/a por nuestros artesanos, profesionales altamente cualificados y con gran experiencia.
+      box2_description: Estarás guiado/a por nuestros Craftsperson, profesionales altamente cualificados y con gran experiencia.
       box3_title: Aprendizaje pagado
-      box3_description: Te pagamos un salario de a tiempo completo a través del programa de aprendices. Resumiendo; cobrarás mientras aprendes.
+      box3_description: Te pagamos un salario de a tiempo completo a través del Academy program. Resumiendo; cobrarás mientras aprendes.
       box4_title: Aprendizaje práctico
       box4_description: Todos los conceptos se enseñan a través de ejercicios prácticos, katas, discusiones grupales y revisiones de código.
     skills:
       title: ¿Qué skills y experiencia necesitas?
-      description: Nuestros aprendices se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque, una serie de habilidades básicas que necesitas tener.
+      description: Nuestros craftspeople-in-training se unen al equipo Codurance con unos antecedentes y experiencias muy diferentes. Valoramos la diversidad de experiencias y habilidades que cada uno aporta al programa, aunque hay una serie de habilidades básicas que necesitas tener.
       box1_title: Conocimientos y skills requeridos.
       box1_description: <li>Familirizado con C#, Java or Node.js tech stacks.</li>
         <li>Actitud demostrable para el autoaprendizaje y estar alineado con la importancia y la necesidad de calidad y buenas prácticas en el desarrollo de software.</li>
@@ -470,13 +400,13 @@ careers:
         <li>Se capaz de hacer test drive code utilizando tanto el método clásico como la escuela de Londres (incluidos testing y refactoring legacy code).</li>
         <li>Sentirse cómodo con full stack web applications y macro design (MVC, SPA, REST, N tier layers, Hexagonal Architecture).</li>
         <li>Sentirse cómodo con OO design (SOLID, 4 reglas del simple design, coupling/cohesion), DDD y design patterns.</li>
-    apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester or Barcelona?
+    apply_description: ¿Quieres formar parte de alguno de nuestros equipos en Londres, Manchester o Barcelona?
     testimonials:
-      title: Testimonios de algunos de nuestros aprendices
-      description: Cuando acaba el programa de aprendizaje, se obtiene el reconocimiento de haber alcanzado el nivel de Software Craftsperson y en ese momento se empieza a trabajar en proyectos para clientes.
+      title: Testimonios de algunos de nuestros craftspeople-in-training
+      description: Cuando acaba el programa de academy, se obtiene el reconocimiento de haber alcanzado el nivel de Software Craftsperson y en ese momento se empieza a trabajar en proyectos para clientes.
       carousel_item_1:
         author: Liam Griffin-Jowett
-        quote: El impacto fue enorme en términos de crecimiento como desarrollador. Encontrar el espacio para concentrarme exclusivamente en la superación personal, unido a contar con la orientación necesaria para no perder la dirección, fue algo que me hizo sentir especialmente bien. Aprendí más durante los meses de mi aprendizaje que en muchos años en mi un rol habitual de desarrollador. Y poder cobrar un sueldo mientras aprendes es increíble.
+        quote: El impacto fue enorme en términos de crecimiento como desarrollador. Encontrar el espacio para concentrarme exclusivamente en la superación personal, unido a contar con la orientación necesaria para no perder la dirección, fue algo que me hizo sentir especialmente bien. Aprendí más durante los meses de mi academy que en muchos años en mi un rol habitual de desarrollador. Y poder cobrar un sueldo mientras aprendes es increíble.
       carousel_item_2:
         author: Luciano Palma
         quote: Sentí que el proceso era más valioso que la graduación en sí misma. He podido aprender a través de los errores, recibir feedback y mejorar continuamente durante el proceso. Ahora me siento más seguro trabajando en equipo, exponiendo mis ideas y recibiendo el feedback de mis colegas..
@@ -498,13 +428,13 @@ careers:
     background_title: ¿Qué experiencia necesitas?
     background_description:
       Esperamos que te desenvuelvas en al menos un idioma que elijas en las plataformas JVM, .NET y / o Node JS. También que conozcas las metodologías Agile y que puedas aplicarlas. Necesitas tener conocimientos básicos de diseño a nivel micro y macro.Te desenvuelves correctamente comunicando tus ideas en equipo. Te apasiona aprender y perfeccionar tus habilidades como desarrollador de software. Te gusta tanto aprender como enseñar.
-    is_it_for_me_title: El programa de aprendizaje ¿es para mí?
+    is_it_for_me_title: El programa de academy ¿es para mí?
     is_it_for_me_description: Si estás buscando un programa de aprendizaje estructurado, con certificaciones, una titulación, módulos de aprendizaje y cursos de capacitación regulares este no es el programa que necesitas. Sin embargo, si estás buscando una formación intensa sobre lo que significa ser un Software Craftsperson, acompañado por un mentor, que te ayude a prender las tecnologías, prácticas y habilidades del mundo real necesarias , esperamos recibir tu solicitud para formar parte del programa.
     how_long_title: ¿Cuánto tiempo dura el programa?
     how_long_description: Aproximadamente unos 3 meses, pero será tu mentor quien te guiará en este camino. Al final no hay examen. Cuando tu mentor consideré que estás preparado y otros 3 craftsperson consideren que lo estás podrás graduarte.
-    life_apprentice:
+    life_craftsperson_in_training:
       title: La vida del aprendiz.
-      description: ¿Quieres tener una idea de cómo es la vida como aprendiz? Estos testimonios de algunos de nuestros aprendices te pueden dar una idea de lo que significa embarcarte en este viaje.
+      description: ¿Quieres tener una idea de cómo es la vida como aprendiz? Estos testimonios de algunos de nuestros craftspeople-in-training te pueden dar una idea de lo que significa embarcarte en este viaje.
 careers-how_we_grow:
   title: ¿Cómo crecemos?
   description: <p>Nuestra gente es nuestra empresa y nuestro producto, nuestra empresa crece como crece nuestra gente. La cultura de aprendizaje está arraigada a nuestra esencia. Nuestros encuentros quincenales se centran en torno al aprendizaje de los demás, en ellos realizamos muchas sesiones internas para compartir experiencias tecnológicas y perfeccionar nuestras habilidades. Nos alentamos y apoyamos unos a otros para escribir blogs, grabar vídeos, organizar sesiones en la comunidad y para presentar en conferencias.</p>
@@ -702,107 +632,23 @@ projects:
   bestSecret:
     link-text: Case Study at BestSecret
 
+compass-teaser:
+  anchor-id: compass-by-codurance
+  subheading: Evalúa la madurez del desarrollo de software de tu organización
+  button: Empezar
+
+get-in-touch:
+  anchor-id: contacto
+
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Desarrolla tus sistemas estratégicos para impulsar una evolución técnica y cultural, mejorar la agilidad del negocio y hacer posible la innovación
-  hero-introduction: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
+  hero-description: Es habitual que las organizaciones lleguen a un punto donde el cambio necesario sea tan arriesgado que los sistemas estratégicos apenas pueden adaptarse a las necesidades del negocio. Software Modernisation resuelve este problema, ya que permite realizar cambios más seguros y aplicarlos de una forma mucho más sencilla.
   hero-cta: Explícanos tus retos
-  problems-title: ¿Cómo podemos ayudarte?
-  problems-introduction: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
-  what: Qué
-  how: Cómo
+
   home-page-banner-text: Somos expertos reconocidos en Software Modernisation.
   home-page-banner-link: Saber más
 
-  sustainable-change-title: Cambio sostenible
-  sustainable-change-intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
-  sus-change-li-1: Reducir el tiempo de entrega
-  sus-change-li-2: Reducir el coste del cambio
-  sus-change-li-3: Lanzamientos frecuentes y más seguros a producción
-  sus-change-li-4: Reducir technical debt
-  sus-change-li-5: Reducir la tasa de defectos
-  sus-change-how-details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles;Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-
-  innovation-title: Innovación
-  innovation-intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
-  innovation-li-1: Mantener la competitividad
-  innovation-li-2: Fácil de experimentar
-  innovation-li-3: Data driven decisions
-  innovation-li-4: Respuesta rápida
-  innovation-how-details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing ; analítica; Feature flags
-
-  technology-title: Tecnología
-  technology-intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
-  technology-li-1: Eficacia y productividad
-  technology-li-2: Ventaja competitiva
-  technology-li-3: Reducción de costes
-  technology-li-4: Actualización tecnológica
-  technology-li-5: Mitigación frente al end-of-life
-  technology-how-details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización;Infrastructure-as-code; Managed databases; Modern frameworks Modular architecture
-
-  business-alignment-title: Aproximación de negocio
-  business-alignment-intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
-  business-alignment-li-1: Aprovechar la tecnología para impulsar la evolución del negocio
-  business-alignment-li-2: Respuesta de calidad más rápida
-  business-alignment-li-3: Colaboración más estrecha
-  business-alignment-li-4: Aceptación de los cambios
-  business-alignment-how-details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
-
-  people-and-culture-title: Personas y cultura
-  people-and-culture-intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
-  people-and-culture-li-1: Contratación y retención de talento
-  people-and-culture-li-2: Capacitación del personal
-  people-and-culture-li-3: Cultura de aprendizaje
-  people-and-culture-li-4: Liderazgo en todos los niveles
-  people-and-culture-li-5: Autonomía del equipo
-  people-and-culture-how-details: Tecnologías atractivas; formación; coaching y mentoring ; grupos internos de prácticas; participación en grupos externos
-
-  risk-management-title: Gestión de riesgos
-  risk-management-intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
-  risk-management-li-1: Real-time system intelligence
-  risk-management-li-2: System observability
-  risk-management-li-3: Seguridad
-  risk-management-li-4: Operational excellence
-  risk-management-li-5: Reducir el tiempo medio de recuperación
-  risk-management-how-details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
-
-  clients-title: Cómo hemos ayudado a nuestros clientes
-  clients-intro: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
-
-  card-1-heading: ASOS
-  card-1-subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
-  card-1-button: Descarga el Case Study
-  card-1-url: https://info.codurance.com/es/asos-case-study
-
-  card-2-heading: Mango
-  card-2-subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
-  card-2-button: Descarga el Case Study
-  card-2-url: https://info.codurance.com/es/mango-case-study
-
-  card-3-heading: eClinicalWorks
-  card-3-subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
-  card-3-button: Descarga el Case Study
-  card-3-url: https://info.codurance.com/es/eclinicalworks-case-study
-
-  card-4-heading: BestSecret
-  card-4-subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
-  card-4-button: Descarga el Case Study
-  card-4-url: https://info.codurance.com/es/best-secret-case-study
-
-  testimonials-heading: La opinión de nuestros clientes
-  testimonials-subheading: ¿Qué dicen nuestros clientes de nuestro trabajo?
-  testimonials-bestsecret-p1: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
-  testimonials-bestsecret-p2: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
-  bestsecret-name-and-position: José López - Vice President of Engineering en BestSecret
-  testimonials-cazoo: Codurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
-  cazoo-name-and-position: Ian Kershaw - Software Engineering Director en Cazoo
-  testimonials-hedgefund: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
-  hedgefund-name-and-position: Aaron Matthews - Director de desarrollo de software en una consultora de fondos de inversión
-  testimonials-ecw: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
-  ecw-name-and-position: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks
-
-  compassCTA-subheading: Evalúa la madurez del desarrollo de software de tu organización
-  compassCTA-button: Empezar
   contact-heading: Explícanos tus retos
   contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos cómo podemos ayudarte.
 
@@ -814,7 +660,11 @@ software-modernisation:
 
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
-  cheat-sheet-cta-banner-link: Download Questionnaire
+  cheat-sheet-cta-href: https://info.codurance.com/es/case-for-change-questionnaire
+
+
+  business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
+  business-case-presentation-banner-cta-text: Download template
 
   business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
   business-case-presentation-banner-cta-text: Download template
@@ -826,34 +676,98 @@ software-modernisation:
       cta: Ver webinar
       cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
 
-  page-sections:
-    how-we-solve-your-problems: como-podemos-ayudarte
-    how-we-help-our-clients: como-adyudamos-nuestros-clientes
-    testimonials: opinion-de-nuestros-clientes
-    compass: compass-by-codurance
-    webinar: webinar-software-modernisation-trabajo-distribuido
-    publications: publicaciones
-    get-in-touch: contacto
-
-curated-publications:
-  softmod:
+  curated-publications:
     intro-title: Sobre Software Modernisation
-    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation.
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos en Software Modernisation
 
-service-line-template:
+software-delivery:
+  hero-title: Software Delivery
+  hero-sub-title: Ayudamos a las empresas a innovar llevando rápidamente ideas al mercado desde el concepto hasta el software en producción.
+  hero-description: Trabajamos contigo para definir y desarrollar lo que necesites. Te proporcionamos equipos multifuncionales totalmente autónomos o simplemente brindando capacidad adicional altamente calificada.
+
+  curated-publications:
+    intro-title: Sobre Software Delivery
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
+
+specialist-expertise:
+  hero-title: Specialist Expertise
+  hero-sub-title: Aumenta la calidad y la fiabilidad de la entrega y las operaciones de tu software.
+  hero-description: Nuestros craftspeople especialistas trabajarán contigo para definir y ejecutar un plan con el que mejorar la calidad y confiabilidad de la entrega de tu software.
+
+  curated-publications:
+    intro-title: Sobre Specialist Expertise
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
+
+strategic-advice:
+  hero-title: Strategic Advice
+  hero-sub-title: Desarrolla una estrategia tecnológica en la que puedas confiar
+  hero-description: Nuestros consultores te ayudarán a comprender en que punto se encuentran tus capacidades tecnológicas hoy en día, y te ofrecerán los conocimientos necesarios para abordar tus desafíos. Juntos definiremos una estrategia y una hoja de ruta para implementar esa solución con éxito.
+
+  curated-publications:
+    intro-title: Sobre Strategic Advise
+    intro-description: Descubre artículos en nuestro blog, podcasts, herramientas y otros recursos para ampliar tus conocimientos.
+
+service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
-  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  hero-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   hero-cta: Lorem ipsum dolor
-  problems-title: Lorem ipsum dolor sit amet
-  problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
+  curated-publications:
+    intro-title: ES example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+service-line-contact-cta: Explícanos tus retos
 
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+service-line-problems:
+  title: ¿Cómo podemos ayudarte?
+  description: Sea cual sea el momento tecnológico en el que se encuentra tu negocio podemos ayudarte a impulsarlo.
+
+service-line-case-studies:
+  section-title: Cómo hemos ayudado a nuestros clientes
+  section-description: Así es cómo hemos ayudado a algunos de nuestros clientes a superar retos similares.
+
+  card-one:
+    heading: ASOS
+    subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/asos-case-study
+
+  card-two:
+    heading: Mango
+    subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/mango-case-study
+
+  card-three:
+    heading: eClinicalWorks
+    subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/eclinicalworks-case-study
+
+  card-four:
+    heading: BestSecret
+    subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
+    button: Descarga el Case Study
+    url: https://info.codurance.com/es/best-secret-case-study
+
+service-line-testimonials:
+  section-title: La opinión de nuestros clientes
+  section-description: ¿Qué dicen nuestros clientes de nuestro trabajo?
+
+  best-secret:
+    text-one: Codurance nos ayudó a determinar los puntos de fricción y abordar los obstáculos en nuestro proceso de desarrollo, en un momento en el cual el aumento de los tiempos de espera provocaba la frustración desde el diseño hasta el lanzamiento.
+    text-two: Con su reconocida experiencia, nos proporcionaron un análisis honesto de nuestra situación y propusieron soluciones claras para nuestros principales problemas, con el objetivo final de aumentar el valor del negocio.
+    foot-note: José López - Vice President of Engineering en BestSecret
+
+  cazoo:
+    text: odurance fue una elección natural, por estar estrechamente alineado con la cultura que estamos tratando de establecer y ser capaces de satisfacer nuestras expectativas. Recomiendo Codurance para cualquier organización que necesite mejorar su cultura de excelencia en la entrega de soluciones de ingeniería de alta calidad.
+    foot-note: Ian Kershaw - Software Engineering Director en Cazoo
+
+  hedgefund:
+    text: En cuanto a la adaptación a la cultura, Codurance fue capaz de moverse en la delgada línea de encontrar el equilibrio entre centrarse en la calidad (con un legacy codebase) y entender, al mismo tiempo, los objetivos de negocio y las necesidades. Esto fue de gran importancia, porque permitió que algunos miembros del equipo, que inicialmente se mostraron escépticos, se implicaran y aprendieran de Codurance.
+    foot-note: Aaron Matthews - Director de desarrollo de software en una consultora de fondos de inversión
+
+  ecw:
+    text: El pragmatismo es un concepto que muchas veces se debate pero que rara vez se tiene en cuenta cuando se buscan socios para el desarrollo de software. El equipo de Codurance cuenta con la cantidad justa de pragmatismo sumada a la visión general y los conocimientos para propiciar un cambio positivo a cualquier organización.
+    foot-note: Sapankumar Parikh - Vice President of Software Development en eClinicalWorks

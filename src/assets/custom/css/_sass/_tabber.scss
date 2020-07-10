@@ -1,0 +1,207 @@
+.tabber {
+  @include lateral-spacing;
+  position: relative;
+  z-index: 1;
+
+  @include small {
+    padding-top: 50px;
+  }
+  @include medium-large-and-extra-large {
+    @include max-width--out-there;
+    padding-top: 100px;
+  }
+}
+
+.tabber__large-screen-controls {
+  @include small-and-medium {
+    display: none;
+  }
+  @include large-and-extra-large {
+    display: flex;
+  }
+}
+
+.tabber__large-screen-control {
+  @include large-and-extra-large {
+    background: transparent;
+    border: 0 none;
+    color: #444444;
+    cursor: pointer;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 19px;
+    min-height: 60px;
+    padding: 5px 30px;
+    position: relative;
+    text-align: center;
+  }
+
+  &:hover:after,
+  &.active:after {
+    background-color: $coral;
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:not(.active):hover:after {
+    opacity: 0.5;
+  }
+}
+
+.tabber__panel {
+  @include small-and-medium {
+    min-height: 2em;
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    @include small-and-medium {
+      @include base-bold;
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      background-size: 25px auto;
+      content: attr(data-title);
+      cursor: pointer;
+      display: block;
+      padding: 10px 45px 10px 10px;
+    }
+    @include large-and-extra-large {
+      display: none;
+    }
+  }
+
+  &.active {
+    &::before {
+      background-color: #0e4072;
+      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-minus.svg");
+      color: #ffffff;
+    }
+  }
+
+  &:not(.active) {
+    &::before {
+      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-plus.svg");
+      border-bottom: 1px solid $grey--light;
+      color: #555555;
+    }
+  }
+}
+
+.tabber-panel__inner {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+
+  .tabber-panel:not(.active) & {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .tabber-panel.active & {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+
+  @include large-and-extra-large {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.tabber-panel__header,
+.tabber-panel__main {
+  @include small-and-medium {
+    padding: 15px 15px 30px;
+  }
+  @include large-and-extra-large {
+    width: 50%;
+  }
+  @include large {
+    padding: 30px;
+  }
+  @include extra-large {
+    padding: 60px;
+  }
+}
+
+.tabber-panel__header {
+  background-color: $navy;
+
+  @include small-and-medium {
+    background-image: none !important;
+  }
+  @include large-and-extra-large {
+    background-position: center bottom 20px, center;
+    background-repeat: no-repeat;
+    background-size: 100% auto, cover;
+  }
+}
+
+.tabber-panel__main {
+  background-color: white;
+
+  @include small-and-medium {
+    padding-top: 35px;
+  }
+  @include large-and-extra-large {
+    min-height: 540px;
+  }
+}
+
+.tabber-panel__title {
+  @include freed-bold;
+  color: white;
+}
+
+@include small-and-medium {
+  .tabber-panel__title,
+  .tabber-panel__subtitle,
+  .tabber-panel__list,
+  .tabber-panel__details {
+    max-width: 800px;
+  }
+}
+
+.tabber-panel__subtitle {
+  @include mercer-bold;
+  margin-bottom: 15px;
+}
+
+.tabber-panel__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.tabber-panel__tick-item {
+  @include base-bold;
+  padding: 0 0 5px 30px;
+  position: relative;
+
+  &:before {
+    background-color: transparent;
+    background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    content: "";
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 2px;
+    width: 20px;
+  }
+}
+
+.tabber-panel__details {
+  @include base;
+  margin: 0;
+}

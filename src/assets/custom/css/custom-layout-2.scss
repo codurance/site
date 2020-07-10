@@ -24,10 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.header-logo {
-  width: 224px;
-}
-
 .section {
   /* 0 0 1 0 */
   padding-top: 100px;
@@ -82,7 +78,7 @@ html {
   width: 25px;
   margin-left: 0;
   position: absolute;
-  background: linear-gradient(45deg, #ef4626 0%, #d60d47 100%);
+  background: $coral;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -382,8 +378,8 @@ html {
 
 .btn-codurance-color {
   color: white;
-  background-color: $orange;
-  border-color: $orange;
+  background-color: $coral;
+  border-color: $coral;
 }
 
 .codurance-green-background {
@@ -399,49 +395,6 @@ html {
     background-image: url("{{site.baseurl}}/assets/custom/img/bg-pattern.jpg");
     background-size: cover;
     background-position: center;
-
-    &-title,
-    &-sub-title {
-      color: #fff;
-    }
-  }
-
-  /* Expert Advice */
-  &-expert-advice {
-    background-color: $midnightblue;
-
-    /* md */
-    @media (min-width: 992px) {
-      background-image: url("{{site.baseurl}}/assets/custom/img/services/expert_advice_wide_2.jpg");
-      background-size: cover;
-    }
-
-    &__content {
-      background-color: $midnightblue;
-    }
-  }
-
-  /* Effective Delivery */
-  &-effective-delivery {
-    background-color: $midnightblue;
-
-    /* md */
-    @media (min-width: 992px) {
-      background-image: url("{{site.baseurl}}/assets/custom/img/services/effective_delivery_wide.jpg");
-      background-size: cover;
-      background-position: center right;
-    }
-
-    &__content {
-      background-color: $midnightblue;
-    }
-  }
-
-  /* Two Col Content */
-  &-two-col-content {
-    &-cta--right {
-      float: right;
-    }
   }
 
   /* Contact Form */
@@ -672,7 +625,7 @@ i.no-border {
 
 .news-v1 a {
   /* 0 0 1 1 */
-  color: $orange-colour;
+  color: $coral;
 }
 
 /* Sponsoring section */
@@ -766,8 +719,8 @@ i.no-border {
 }
 
 .col-md-partners {
-  width: 20%;
-  padding: 30px 50px;
+  width: 25%;
+  padding: 30px 40px;
   margin: auto;
   display: inline-block;
 }

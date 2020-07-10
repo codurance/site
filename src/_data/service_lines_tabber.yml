@@ -1,0 +1,464 @@
+en:
+  what: What
+  how: How
+
+  software-modernisation:
+    - id: sustainable-change
+      title: Sustainable Change
+      intro: Business can move only as fast as we can deliver quality software.
+      list:
+        - Reduce lead time
+        - Reduce cost of change
+        - Frequent and safer releases to production
+        - Reduce technical debt
+        - Reduce defect rate
+      details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test&#8209;Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
+
+    - id: innovation
+      title: Innovation
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software.
+      list:
+        - Stay competitive
+        - Easy to experiment
+        - Data-driven decisions
+        - Fast feedback
+      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
+
+    - id: technology
+      title: Technology
+      intro: Leveraging new technologies should be straight forward and not a scary prospect.
+      list:
+        - Effectiveness and productivity
+        - Competitive advantage
+        - Cost reduction
+        - Technology refresh
+        - Mitigation against end-of-life
+      details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure&#8209;as&#8209;code; Managed databases; Modern frameworks; Modular architecture
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
+
+    - id: business-alignment
+      title: Business Alignment
+      intro: Achieving business goals is much easier when technology and business are aligned.
+      list:
+        - Technology led business evolution
+        - Faster quality feedback
+        - Closer collaboration
+        - Embrace change
+      details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
+
+    - id: people-and-culture
+      title: People and Culture
+      intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent.
+      list:
+        - Talent retention and attraction
+        - Staff development
+        - Culture of learning
+        - Leadership at all levels
+        - Team autonomy
+      details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
+
+    - id: risk-management
+      title: Risk Management
+      intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought.
+      list:
+        - Real-time system intelligence
+        - System observability
+        - Security
+        - Operational excellence
+        - Reduce mean time to recover
+      details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
+
+  software-delivery:
+    - id: product-strategy
+      title: Product Strategy
+      intro: Aligning product and software design is key for business agility.
+      list:
+        - Discover business needs
+        - Align technical and product vision
+        - Improve user experience and customer satisfaction
+        - Achieve value-driven prioritization
+        - Innovate through experimentation
+      details: Build MVPs, Proof of Concepts, and Prototypes; Create a high-level technical strategy and roadmap; Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics; Usability testing; AB Testing; User research
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
+
+    - id: people-and-process
+      title: People and Process
+      intro: People are at the heart of any software product.
+      list:
+        - Engage your stakeholders
+        - Establish a Software Craftsmanship mindset
+        - Nurture culture of learning
+        - Instill a DevOps culture
+        - Devise highly collaborative ways of working
+        - Achieve iterative and incremental development
+        - Develop fast feedback loops
+        - Attract talent
+      details: Agile and Lean software development; Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
+
+    - id: practices-and-automation
+      title: Practices and Automation
+      intro: A strong set of quality practices and reliable automation is key for continuous delivery.
+      list:
+        - Test automation at multiple levels
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
+
+    - id: architecture-and-design
+      title: Architecture and Design
+      intro: An evolutionary, robust, and flexible software architecture is essential to support product evolution.
+      list:
+        - Break the monolith
+        - Migrate to the cloud
+        - Leverage pay per usage models
+        - Adapt to regulatory constraints
+        - Increase security
+        - Reduce development and deployment dependencies
+        - Reduce maintenance and operation costs
+      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
+
+    - id: platform-and-technology
+      title: Platform and Technology
+      intro: Technology choice is part of the strategy of any software product.
+      list:
+        - Choose the right tool for each job
+        - Achieve high performance
+        - Establish a migration path
+        - Attract talent
+      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
+
+  specialist-expertise:
+    - id: technical-expertise
+      title: Hands-on Technical Expertise
+      intro: Embedded craftspeople with solid technical skills.
+      list:
+        - Increase capacity during peaks
+        - Rely on experienced specialists with the technical skills you need
+      details: Testing strategy and automation; Test-Driven Development (TDD); Cloud technologies; Software architecture and design; DevOps; Site reliability engineering; Agile and Lean methodologies; Product Design and User Experience (UX)
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
+
+    - id: upskilling
+      title: Upskilling
+      intro: Improve your team's skills.
+      list:
+        - Help your team build the skills they need to excel in every area of your product delivery.
+      details: Technical coaches embedded in your teams; Communities of practice; Technical development and training programs
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
+
+    - id: improvement-initiatives
+      title: Improvement Initiatives
+      intro: Implement improvement initiatives.
+      list:
+        - Guide and support strategic improvement initiatives
+        - Supplement your technical leadership
+      details: Agile, Lean, and team(s) coaching; Organisational design; Extreme Programming practices; Quality engineering and automation; Continuous delivery
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
+
+  strategic-advice:
+    - id: product-strategy
+      title: Product Strategy
+      intro: Create a high-level technical strategy and roadmap.
+      list:
+        - Align technical and product vision
+        - Select an effective implementation strategy
+        - Assess product experience
+        - Design a product roadmap
+      details: Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
+
+    - id: people-and-process
+      title: People and Process
+      intro: People are at the heart of any software product.
+      list:
+        - Evolve your company culture
+        - Assess and improve ways of working and processes
+        - Assess skills and capability
+      details: Agile and Lean software development; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
+
+    - id: practices-and-automation
+      title: Practices and Automation
+      intro: A strong set of quality practices and reliable automation is key for continuous delivery.
+      list:
+        - Reduce the number of defects
+        - Improve and streamline your path to production
+        - Assess technical quality
+        - Perform root cause analysis
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
+
+    - id: architecture-and-design
+      title: Architecture and Design
+      intro: An evolutionary, robust and flexible software architecture is essential to support product evolution.
+      list:
+        - Increase scalability
+        - Break the monolith
+        - Migrate to the cloud
+        - Leverage pay per usage models
+        - Adapt to regulatory constraints
+        - Increase security
+        - Reduce development and deployment dependencies
+        - Reduce maintenance and operation costs
+      details: Evolutionary architecture (incremental); Serverless; Microservices;  Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
+
+    - id: platform-and-technology
+      title: Platform and Technology
+      intro: Technology choice is part of the strategy of any software product.
+      list:
+        - Choose the right tool for each job
+        - Establish a migration path
+        - Leverage cloud platforms and containerisation
+      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg
+
+  service-line-example:
+    - id: tab-1
+      title: Tab 1
+      intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      list:
+        - Reduce lead time
+        - Reduce cost of change
+        - Frequent and safer releases to production
+        - Reduce technical debt
+        - Reduce defect rate
+      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo nec mauris tincidunt ultricies. Proin varius, lectus ac sodales iaculis, sapien sapien pharetra mauris, ut rutrum arcu urna sit amet tortor.
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
+
+    - id: tab-2
+      title: Tab 2
+      intro: Continuous innovation is only possible when supported by well-designed and flexible software
+      list:
+        - Stay competitive
+        - Easy to experiment
+        - Data-driven decisions
+        - Fast feedback
+      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
+es:
+  what: Qué
+  how: Cómo
+
+  software-modernisation:
+    - id: cambio-sostenible
+      title: Cambio sostenible
+      intro: Las empresas podrán evolucionar rápidamente si les ofrecemos software de calidad.
+      list:
+        - Reducir el tiempo de entrega
+        - Reducir el coste del cambio
+        - Lanzamientos frecuentes y más seguros a producción
+        - Reducir technical debt
+        - Reducir la tasa de defectos
+      details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles; Test&#8209;Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
+
+    - id: innovacion
+      title: Innovación
+      intro: La innovación continua solo es posible cuando se basa en un software bien diseñado y flexible.
+      list:
+        - Mantener la competitividad
+        - Fácil de experimentar
+        - Data driven decisions
+        - Respuesta rápida
+      details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing; analítica; Feature flags
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
+
+    - id: tecnologia
+      title: Tecnología
+      intro: Sacar el máximo provecho de las nuevas tecnologías debería ser sencillo y no una perspectiva aterradora.
+      list:
+        - Eficacia y productividad
+        - Ventaja competitiva
+        - Reducción de costes
+        - Actualización tecnológica
+        - Mitigación frente al end-of-life
+      details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización; Infrastructure&#8209;as&#8209;code; Managed databases; Modern frameworks; Modular architecture
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
+
+    - id: aproximacion-de-negocio
+      title: Aproximación de negocio
+      intro: Conseguir objetivos es mucho más fácil cuando la tecnología y los negocios están alineados.
+      list:
+        - Aprovechar la tecnología para impulsar la evolución del negocio
+        - Respuesta de calidad más rápida
+        - Colaboración más estrecha
+        - Aceptación de los cambios
+      details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
+
+    - id: personas-y-cultura
+      title: Personas y cultura
+      intro: Un ecosistema tecnológico saludable y moderno es clave para desarrollar, atraer y retener talento.
+      list:
+        - Contratación y retención de talento
+        - Capacitación del personal
+        - Cultura de aprendizaje
+        - Liderazgo en todos los niveles
+        - Autonomía del equipo
+      details: Tecnologías atractivas; formación; coaching y mentoring; grupos internos de prácticas; participación en grupos externos
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
+
+    - id: gestion-de-riesgos
+      title: Gestión de riesgos
+      intro: La gestión de riesgos, la excelencia operativa, la seguridad y el cumplimiento deben realizarse por diseño, y no pueden dejarse a la improvisación.
+      list:
+        - Real-time system intelligence
+        - System observability
+        - Seguridad
+        - Operational excellence
+        - Reducir el tiempo medio de recuperación
+      details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
+      image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
+
+  software-delivery:
+    - id: estrategia-de-producto
+      title: Estrategia de producto
+      intro: Alinear el diseño de producto y software es clave para lograr la agilidad de negocio.
+      list:
+        - Descubrir las necesidades del negocio
+        - Alinear la visión técnica y de producto.
+        - Mejorar la experiencia de usuario y la satisfacción del cliente.
+        - Lograr una priorización basada en el valor.
+        - Innovar a través de la experimentación.
+      details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo del Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
+
+    - id: procesos-y-personas
+      title: Procesos y personas
+      intro: Las personas son el corazón de cualquier producto de software.
+      list:
+        - Involucrar a tus stakeholders
+        - Establecer una mentalidad de Software Craftsmanship
+        - Cultivar la cultura de aprendizaje
+        - Inculcar una cultura DevOps
+        - Diseñar formas de trabajo basadas en la colaboración
+        - Lograr un desarrollo iterativo e incremental
+        - Desarrollar circuitos de feedback rápidos y efectivos
+        - Atraer talento
+      details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
+
+    - id: practicas-y-automatizacion
+      title: Prácticas y automatización
+      intro: Aplicar prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
+      list:
+        - Automatización de los test en múltiples niveles
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
+
+    - id: arquitectura-y-diseno
+      title: Arquitectura y diseño
+      intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
+      list:
+        - Romper el monolito
+        - Migración a cloud
+        - Aprovechar los modelos de pago por uso
+        - Adaptarse a las restricciones regulatorias
+        - Aumentar la seguridad
+        - Reducir las dependencias entre desarrollo e implementación
+        - Reducir los costes de mantenimiento y operación
+      details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
+
+    - id: plataformas-y-tecnologias
+      title: Plataformas y tecnologías
+      intro: Elegir la tecnología a utilizar es parte de la estrategia de producto de software que queramos definir.
+      list:
+        - Elegir las herramientas adecuadas para cada trabajo
+        - Lograr un alto rendimiento
+        - Establecer una ruta de migración
+        - Atraer talento
+      details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
+      image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
+
+  specialist-expertise:
+    - id: experiencia-tecnica
+      title: Experiencia técnica y estratégica en la práctica
+      intro: Craftspeople integrados con sólidas habilidades técnicas.
+      list:
+        - Aumentar la capacidad durante los picos
+        - Confíar en especialistas experimentados con las habilidades técnicas que necesitas
+      details: Testing strategy y automatización; Test-Driven Development (TDD); Tecnologías cloud; Arquitectura y diseño de software; DevOps; Ingeniería de confiabilidad del sitio; Metodologías Agile y Lean; Diseño de producto y experiencia del usuario (UX)
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
+
+    - id: upskilling
+      title: Upskilling
+      intro: Mejora las habilidades de tu equipo.
+      list:
+        - Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
+      details: Coaches técnicos integrados en tus equipos; Comunidades de prácticas; Desarrollo técnico y programas de formación
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
+
+    - id: iniciativas-de-mejora
+      title: Iniciativas de mejora
+      intro: Implementa iniciativas de mejora.
+      list:
+        - Orientar y apoyar iniciativas de mejora estratégica.
+        - Reforzar tu liderazgo técnico
+      details: Coaching Agile, Lean y de equipos; Diseño organizacional; Prácticas Extreme Programming; Ingeniería de calidad y automatización; Entrega continua
+      image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
+
+  strategic-advice:
+    - id: estrategia-de-producto
+      title: Estrategia de producto
+      intro: Crea una estrategia técnica de alto nivel y una hoja de ruta.
+      list:
+        - Alinear la visión técnica y de producto.
+        - Seleccionar una estrategia de implementación efectiva
+        - Evaluar la experiencia del producto
+        - Diseñar una hoja de ruta del producto
+      details: Mapeo customer journeys; Mapeo value stream; Plan de servicio y diseño; Analítica de producto
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
+
+    - id: procesos-y-personas
+      title: Procesos y personas
+      intro: Las personas son el corazón de cualquier producto de software.
+      list:
+        - Evolucionar la cultura de tu empresa
+        - Evaluar y mejorar formas de trabajo y procesos
+        - Evaluar habilidades y capacidades
+      details: Desarrollo de software a través de Agile and Lean; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
+
+    - id: practicas-y-automatizacion
+      title: Prácticas y automatización
+      intro: Aplicar un conjunto de prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
+      list:
+        - Reducir la cantidad de defectos
+        - Mejorar y agilizar tu camino hacia la producción
+        - Evaluar la calidad técnica
+        - Realizar análisis de causa raíz
+      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
+
+    - id: Arquitectura-y-diseno
+      title: Arquitectura y diseño
+      intro: Es esencial que una arquitectura de software sea evolutiva, robusta y flexible para soportar la evolución del producto.
+      list:
+        - Aumentar la escalabilidad
+        - Romper el monolito
+        - Migración a cloud
+        - Aprovechar los modelos de pago por uso
+        - Adaptarse a las restricciones regulatorias
+        - Aumentar la seguridad
+        - Reducir las dependencias entre desarrollo e implementación
+        - Reducir los costes de mantenimiento y operación
+      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
+
+    - id: plataformas-y-tecnologia
+      title: Plataformas y tecnología
+      intro: Elegir la tecnología que vamos a utilizar es parte de la estrategia de cualquier producto de software que queramos definir.
+      list:
+        - Elegir la herramienta adecuada para cada trabajo
+        - Establecer una ruta de migración
+        - Aprovechar las plataformas cloud y la "contenedorización"
+      details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
+      image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg

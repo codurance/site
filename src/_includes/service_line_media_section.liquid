@@ -1,0 +1,26 @@
+{% assign featured_posts =  site.posts | where: 'pinned_locations', page.curated_publications.location %}
+
+{% if featured_posts.size == 1 %}
+  {% assign spacing-modifier = "service-line__media-section--one-publication" %}
+  {% assign curated-publications-modifier = "services__curated-publications--one-publication" %}
+{% endif %}
+
+<div class="service-line__sheen-container {{ spacing-modifier }}">
+  {%- if translations.webinar -%}
+    {% include soft_mod_webinar_hero_teaser.html %}
+  {% else %}
+    {% assign curated-publications-modifier = "services__curated-publications--no-webinar" %}
+  {%- endif -%}
+
+  {% if featured_posts.size != 0 %}
+    <div class="services__curated-publications {{ curated-publications-modifier }}">
+      {% include curated_publications.html
+        anchor_id=service-line-page-locations.publications
+        pinned_location=page.curated_publications.location
+        tag=page.curated_publications.tag
+        title=translations.curated-publications.intro-title
+        description=translations.curated-publications.intro-description
+      %}
+    </div>
+  {% endif %}
+</div>

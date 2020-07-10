@@ -1,6 +1,10 @@
+$banner-height: 300px;
+
 .in-page-banner {
-  min-height: 300px;
+  min-height: $banner-height;
   overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .in_page_banner__image {
@@ -11,7 +15,7 @@
   @include medium-large-and-extra-large {
     background-size: cover;
     float: left;
-    height: 300px;
+    height: $banner-height;
 
     .in-page-banner--even & {
       width: 50%;
@@ -28,7 +32,7 @@
   align-items: center;
   background-color: $coral;
   display: flex;
-  height: 300px;
+  height: $banner-height;
   justify-content: center;
   text-align: center;
 

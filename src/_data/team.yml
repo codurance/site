@@ -267,7 +267,7 @@
 - id: chris-bimson
   name: Chris Bimson
   image: /assets/custom/img/team/chris_bimson.jpg
-  role: Software Craftsman
+  role: Principal Craftsperson
   fullDescription:
     <p>Chris is a programmer, team leader and certified Scrum Master who helps teams write clean, well-crafted code, create great products and deliver them regularly and reliably.</p>
     <p>His first programming experience was typing BASIC listings from various magazines into an Atari 800XL some time in the late 80’s or early 90’s. He has been developing software for money since 2002, primarily on Windows, progressing from Delphi to .NET and into the cloud with Azure.</p>
@@ -581,17 +581,6 @@
     <p>He likes to promote agnostic, cloud-native solution approaches. His goal is to constantly improve himself as a software developer.</p>
   office: London
 
-- id: karolina_kondzielewska
-  name: Karolina Kondzielewska
-  image: /assets/custom/img/team/karolina_kondzielewska.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>When Karolina started working as a tester she was given the nickname “X-Ray Karolina” due to her amazing ability for finding well hidden bugs.</p>
-    <p>She holds a masters in Philosophy, so she has a habit of asking “why?” and she always tries to think outside the box. She believes that quality assurance starts before any line of code is being written and offers a good combination of exploratory and automation testing.</p>
-    <p>In her free time she loves being active and she is training to be a Pilates instructor.</p>
-  linkedin: karolinakond
-  office: London
-
 - id: laurence_lord
   name: Laurence Lord
   image: /assets/custom/img/team/laurence_lord.jpg
@@ -819,7 +808,7 @@
 - id: ewan_sheldon
   name: Ewan Sheldon
   image: /assets/custom/img/team/ewan_sheldon.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Ewan started his software career by studying at Makers Academy, and has since spent three years working as an engineer with a small tech startup, developing a number of products including cloud-based WiFi management dashboards and venue booking platforms for food traders.</p>
     <p>He is eager to learn from good people around him to improve his technical and professional skills.</p>
@@ -854,9 +843,9 @@
 - id: tom_spencer
   name: Tom Spencer
   image: /assets/custom/img/team/tom_spencer.jpg
-  role: Apprentice
+  role: Software Craftsman
   fullDescription:
-    <p>After graduating from Makers Academy in 2017, Tom has now completed two years as an engineer in an SME, building a front end smoke test presenter and working as a full stack developer. He appreciates the opportunity to work with world class colleagues at Codurance and values the knowledge sharing opportunities that pair programming provides.</p>
+    <p>After graduating from Makers Academy in 2017, Tom has completed two years as an engineer in an SME, building a front end smoke test presenter and working as a full stack developer. He appreciates the opportunity to work with world class colleagues at Codurance and values the knowledge sharing opportunities that pair programming provides.</p>
     <p>Tom has a serious approach to problem solving taking circumstances and context into account. He has natural language skills from his work as a teacher of Latin, Classical Greek and French and is deepening his understanding of computer languages. His current interest is functional programming and how this can contribute to OOP Languages such as Java.</p>
     <p>He plays jazz trumpet and piano and enjoys a game of tennis.</p>
   github: TomSpencerLondon
@@ -867,7 +856,7 @@
 - id: alexis_pavlidis
   name: Alexis Pavlidis
   image: /assets/custom/img/team/alexis_pavlidis.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Alexis has been programming for more than 7 years since he was 16, Pascal was his first language but he is not that old. After completing his degree in Computer Science, Alexis worked for two years as a software engineer, mostly with Java EE, and Javascript.<p>
     <p>He is passionate about building well-crafted software, deliver value to the business, and he always strives for better quality.</p>
@@ -895,7 +884,7 @@
 - id: sebastian_kulinski
   name: Sebastian Kulinski
   image: /assets/custom/img/team/sebastian_kulinski.jpg
-  role: Apprentice
+  role: Software Craftsperson
   fullDescription:
     <p>Sebastian took his first steps into professional software development by attending Software Crafters meetups when he experienced XP Programming for first time and got hooked.<p>
     <p>Previously working for a digital marketing agency, focused on social media, as a backend developer in PHP he got experience in solving problems.</p>
@@ -982,3 +971,16 @@
     <p> When she is not thinking about stories and how to tell them, she is probably thinking about travelling. She is also very interested in nature conservation, literature, cinema and history.</p>
   email: alicia.corpas@codurance.com
   office: barcelona
+
+- id: phil_taprogge
+  name: Phil Taprogge
+  image: /assets/custom/img/team/phil_taprogge.jpg
+  role: Site Reliability Craftsperson
+  fullDescription:
+    <p>Originally coming from a software engineering background, Phil embraced cloud infrastructure early on. Excited by the possibilities that infrastructure automation offers, he worked in a number of DevOps and infrastructure engineering roles before becoming an expert in all things Kubernetes.</p>
+    <p>More recently he has become an avid practitioner of Site Reliability Engineering, helping developers gain better insights into the ways their software operates and enabling them to make better engineering decisions.</p>
+    <p>Outside of work, Phil enjoys mixing drinks as well as all things fantasy and science fiction. He is also a writer and teller of stories.</p>
+  email: phil.taprogge@codurance.com
+  github: gargath
+  linkedin: philtaprogge
+  office: London

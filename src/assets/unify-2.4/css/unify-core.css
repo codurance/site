@@ -44,13 +44,24 @@ figure {
 /*------------------------------------
   Headings
 ------------------------------------*/
-.h1, .h2, .h3, .h4, .h5, .h6, .h7,
-h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.4;
 }
 
 .h7 {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 /*------------------------------------
@@ -60,27 +71,4 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.1;
-}
-
-/*------------------------------------
-  Highlight Color
-------------------------------------*/
-::-moz-selection {
-  color: #fff;
-  background-color: #fd9233;
-}
-
-::selection {
-  color: #fff;
-  background-color: #fd9233;
-}
-
-.g-bg-primary ::-moz-selection {
-  color: #fd9233;
-  background-color: #fff;
-}
-
-.g-bg-primary ::selection {
-  color: #fd9233;
-  background-color: #fff;
 }

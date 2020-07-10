@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	
+		<!ENTITY st0 "opacity:0.4;fill:none;stroke:#63F0A3;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7;enable-background:new    ;">
+	<!ENTITY st1 "fill:none;stroke:#FA7268;stroke-miterlimit:10;">
+	<!ENTITY st2 "fill:none;stroke:#FA7268;stroke-miterlimit:10;stroke-dasharray:12.5956,12.5956;">
+]>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450 250" style="enable-background:new 0 0 450 250;" xml:space="preserve">
+<g>
+	<g>
+		<polyline style="&st1;" points="306.6,178.1 311.7,175.1 311.7,169.1 		"/>
+		<line style="&st2;" x1="311.7" y1="156.5" x2="311.7" y2="87.2"/>
+		<polyline style="&st1;" points="311.7,80.9 311.7,74.9 306.6,71.9 		"/>
+		<line style="&st2;" x1="295.6" y1="65.6" x2="235.7" y2="31"/>
+		<polyline style="&st1;" points="230.2,27.8 225,24.8 219.8,27.8 		"/>
+		<line style="&st2;" x1="208.9" y1="34.1" x2="148.9" y2="68.8"/>
+		<polyline style="&st1;" points="143.4,71.9 138.3,74.9 138.3,80.9 		"/>
+		<line style="&st2;" x1="138.3" y1="93.5" x2="138.3" y2="162.8"/>
+		<polyline style="&st1;" points="138.3,169.1 138.3,175.1 143.4,178.1 		"/>
+		<line style="&st2;" x1="154.4" y1="184.4" x2="214.3" y2="219"/>
+		<polyline style="&st1;" points="219.8,222.2 225,225.2 230.2,222.2 		"/>
+		<line style="&st2;" x1="241.1" y1="215.9" x2="301.1" y2="181.2"/>
+	</g>
+</g>
+</svg>

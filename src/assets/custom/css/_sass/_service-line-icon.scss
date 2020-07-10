@@ -1,23 +1,22 @@
 .service-line-icon {
   fill: white;
-  width: 50px;
 
   .service-line-hero & {
-    position: absolute;
+    width: 35px;
+    margin-right: 15px;
 
-    @include _DEPRECIATED_large {
-      left: -67px;
-      fill: #555555;
-      top: -14px;
+    @include small-and-medium {
+      fill: #ffffff;
     }
-    @include _DEPRECIATED_small {
-      left: 0px;
+    @include large-and-extra-large {
+      fill: #555555;
     }
   }
 
-  .teaser-group & {
+  .service-line-teaser-group & {
     fill: white;
     margin-right: 20px;
+    width: 50px;
 
     @include small-and-medium {
       width: 35px;

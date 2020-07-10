@@ -42,10 +42,10 @@ sections:
   publications: Publications
   events: Events
   careers: Careers
-  about-us: About Us
+  about-us: About us
   our-people: Our People
   our-story: Our Story
-  contact: Contact Us
+  contact: Contact us
 index-banner:
   title: Pragmatic, Skilled, Transparent.
   subtitle: At Codurance we constantly deliver value by crafting exceptional software.
@@ -97,16 +97,14 @@ footer:
 footer-latest_blog:
   title: Latest Blogs
 footer-useful_links:
-  title: Useful Links
-  we-advise: We advise
-  we-coach: We coach
-  we-deliver: We deliver
-  our-people: Our people
-  our-story: Our story
   careers: Careers
-  privacy-policy: Privacy policy
   cookie-policy: Cookie policy
   newsletter-subscription: Newsletter subscription
+  our-people: Our people
+  our-story: Our story
+  privacy-policy: Privacy policy
+  services: Services
+  title: Useful Links
 footer-contact:
   title: Contact Us
   phone_title: Phone
@@ -187,83 +185,22 @@ publications:
   teaser-cta: Learn More
   view-all: View all publications
 services:
-  title: Quality Software, Effectively Delivered
-  subtitle: Recognised industry leaders in driving continuous delivery through
-    quality practices and expertise.
-  content-type: Service
-  we-acd: We advise, we coach, we deliver
-  software-craftsmanship-pioneers: We are Software Craftsmanship pioneers. We are known for our expertise in XP Practices, Continuous Delivery, Software Architecture, Cloud Solutions and Infrastructure Engineering. We leverage our expertise to deliver a compelling service for our clients.
-  we-advise-subtitle: We advise on creating an effective software delivery capability.
-  we-coach-subtitle: We coach software design and delivery skills.
-  we-deliver-subtitle: We deliver quality software solutions.
   learn-more: Learn more
   page-intro:
     title: Services & Solutions
-    sub-title: Drive innovation within your organisation through expert advice and hands-on technical expertise
-    lead-in: We partner with you to deliver solutions to help you create a sustainable, scalable, and adaptable future for your business. Together we uncover your organisational needs and how you're looking to evolve. Our team will introduce the practices, technologies, and skills needed to continuously add value and make innovation possible.
-  we-advise:
-    title: We advise
-    subtitle: We advise on creating an effective software delivery capability.
-    high-level-consulting:
-      title: High-level Consulting
-      body: When your software is not evolving with your business, the
-        root causes are often complex. Effective software delivery requires product strategy, team
-        organisation, software process, software architecture, and software practices to align. Our experts
-        will help you to identify these causes and create a plan on how to improve.
-    technical-vision:
-      title: Technical Vision and Architecture Review
-      body: Whether you're managing a monolithic legacy system in
-        production or at the early stages of designing your new product, we will help you review your
-        architecture against your product and technology vision, so that it fits your present and future
-        needs.
-    discovery-phase:
-      title: Discovery Phase
-      body: You have a particular area in mind for technology
-        improvement and you’re looking for a partner but don’t necessarily know what to focus on. We will
-        help you focus your efforts with a series of tailor made workshops to create a plan for
-        improvements.
-    technical-coaching:
-      title: Technical Coaching
-      body: A mismatch between your technical vision and your capability
-        will have a direct impact on your ability to deliver value to your customers. Investing in the
-        skills of your people will help to reduce this gap. We provide training and coaching in XP Practices
-        (e.g. TDD, Pair Programming, Continuous Integration), Software Design, Clean Code, and Software
-        Architecture.
-  we-coach:
-    title: We coach
-    subtitle: We help teams in any phase of a project where they may benefit from focused training.
-    body: Our training courses help teams get better at XP practices, Continuous Integration and Development, Domain Driven Design, Clean Code and SOLID principles, Behaviour Driven Development and many other technical practices.
-    trainings:
-      title1: Crafting code
-      title2: Serverless Architecture using AWS
-      title3: And more...
-  we-deliver:
-    title: We deliver
-    feature-delivery:
-      title: Feature Delivery Teams
-      body: Our teams are experts in XP practices and Continuous Delivery
-        while maintaining a DevOps culture. Whether you have an existing product or starting anew, our teams
-        will ensure that we help you deliver quality features, in time, to meet your business objectives. Our
-        work will serve as an exemplar for your future development effort.
-    technical-delivery:
-      title: Technical Delivery Teams
-      body: Your continuous delivery pipeline needs some improvements, you
-        want zero downtime deployment, you need infrastructure for A/B testing, or you need to get through the
-        most challenging aspects of going from monolith to microservices. Our Technical Delivery Team will take
-        care of this for you so you can concentrate on building features to meet your business demand.
-  our-expertise:
-    title: Our Expertise
-    subtitle: Our offerings and expertise are based on a solid core of Software Craftmanship values, XP Practices, a Devops culture, and Agile Processes.
+    sub-title: We partner with you to deliver solutions that create a sustainable and adaptable future for your business
+    lead-in: Drive innovation within your organisation through agile software delivery, hands-on technical expertise, and expert advice. Our team will provide the necessary practices, technologies, and skills at each step of the project to ensure the highest quality is delivered. From inception to delivery our team will guide you, enabling your product vision to become a reality.
   contact-us:
     title: Get In Touch
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
   training:
-    title: Training
-    description: Leverage focused training courses to upskill your teams
+    title: Trainings
+    description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
     image: http://placekitten.com/780/590
-    cta-href: /services/training/
-    cta-text: Learn More
+    cta-href: /services/training
+    cta-text: Learn more
+  clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
   our_courses: Our Courses
@@ -341,8 +278,8 @@ careers:
   our_roles_title: Our Roles
   software_craftspeople_title: Software Craftspeople
   software_craftspeople_description: Our Craftspeople have a broad range of skills and varying depths of expertise. Learn more about what it means to be a Craftsperson.
-  apprentices_title: Apprentices
-  apprentices_description: An intensive 3-month programme of learning that will provide you with the skills required to become a productive Craftsperson. Learn more about the programme here.
+  craftspeople_in_training_title: Craftspeople-in-training
+  craftspeople_in_training_description: An intensive 3-month programme of learning that will provide you with the skills required to become a productive Craftsperson. Learn more about the programme here.
   contact_us_title: Still have questions?
   contact_us_subtitle: If you'd like to know more about Codurance before applying, feel free to drop us a message here. We'll answer your questions but will respect your privacy. Once you're ready to apply, then we can talk further.
   life_at_codurance_title: Life at Codurance
@@ -434,10 +371,10 @@ careers:
     life_cover_icon: icon-medical-008 u-line-icon-pro
     mentor_title: Mentor
     mentor_description: You will choose a mentor, who will guide you throughout your apprenticeship.
-  become_an_apprentice:
-    title: Apprenticeship at Codurance
+  become_a_craftsperson_in_training:
+    title: The Academy Program at Codurance
     apply_title: Apply now
-    description: Our apprentices share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
+    description: Our craftspeople-in-training share our passion for creating well-crafted software, but have not yet had the suitable learning opportunities to refine their craft.
     how_works_title: How does it work?
     how_works_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to gain peer-recognition of being at the level of a Software Craftsperson, then we look forward to receiving your application.
     how_works:
@@ -446,12 +383,12 @@ careers:
       box2_title: Expert Guidance
       box2_description: You will be mentored by our Craftspeople, skilled professionals with a breadth and depth of expertise.
       box3_title: Paid Apprenticeship
-      box3_description: We pay you a full-time salary throughout the Apprentice programme - essentially, we pay you to learn.
+      box3_description: We pay you a full-time salary through the Academy programme - essentially, we pay you to learn.
       box4_title: Hands-On Learning
       box4_description: All concepts are taught through hands-on exercises, coding katas, group discussions and code reviews.
     skills:
       title: What skills & experience do I need
-      description: Our Apprentices join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each of the Apprentices brings to the course though, as a minimum, we require the following 'essential' skills for all Apprentices.
+      description: Our Craftspeople-in-training join us from a wide range of different backgrounds and experiences. We value the diversity of experience and skill that each professional brings to the course though, as a minimum, we require the following 'essential' skills for all Craftspeople-in-training.
       box1_title: Expected knowledge & skills
       box1_description: <li>Familiarity with C#, Java or Node.js tech stacks.</li>
         <li>Demonstrable attitude for self-learning and awareness of the need for quality and good practices.</li>
@@ -464,11 +401,11 @@ careers:
         <li>Be comfortable with OO design (SOLID, 4 rules of simple design, coupling/cohesion), DDD and design patterns.</li>
     apply_description: Interested in joining our teams in London, Manchester or Barcelona?
     testimonials:
-      title: Hear from past apprentices
-      description: At the end of the apprentice programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
+      title: Hear from past craftspeople-in-training
+      description: At the end of the academy programme, our people seek peer-recognition of having reach the level of a Software Craftsperson and start to work alongside us on client projects.
       carousel_item_1:
         author: Liam Griffin-Jowett
-        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my apprenticeship than I would have in many years in a normal developer role. Being paid to learn is awesome.
+        quote: The impact was almost immeasurable in terms of growing as a developer. Giving me the space to focus purely on self-improvement, along with guidance so I didn't lose direction, was such a brilliant feeling. I learnt more during the months of my academy than I would have in many years in a normal developer role. Being paid to learn is awesome.
       carousel_item_2:
         author: Luciano Palma
         quote: I felt that the journey was more valuable than the graduation itself. Learning through failure, receiving feedback and improving myself in the process. I now feel more confident in working in a team, exposing my ideas and receiving feedback from my colleagues.
@@ -492,10 +429,10 @@ careers:
     is_it_for_me_title: Is this the programme for me?
     is_it_for_me_description: If you have a passion for learning and are ready for a chance to learn technologies and practices needed to become a Software Craftsperson, under the guidance of a dedicated mentor, then we look forward to receiving your application.
     how_long_title: How long does it last
-    how_long_description: Your mentor will guide you through your apprenticeship which we expect to be a maximum of 6 months. There is no formal exam at the end - when your mentor is convinced that you are ready, and can convince at least 3 other craftspeople as well, then you graduate.
-    life_apprentice:
-      title: Life as an apprentice
-      description: Want to get a feel of what life as an apprentice is like? These blogs from our current and recent apprentices will show you what you can expect when you begin your journey with us.
+    how_long_description: Your mentor will guide you through your academy which we expect to be a maximum of 6 months. There is no formal exam at the end - when your mentor is convinced that you are ready, and can convince at least 3 other craftspeople as well, then you graduate.
+    life_craftsperson_in_training:
+      title: Life as a craftsperson-in-training
+      description: Want to get a feel of what life as a craftsperson-in-training is like? These blogs from our current and recent craftspeople-in-training will show you what you can expect when you begin your journey with us.
 careers-how_we_grow:
   title: How we grow?
   description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
@@ -535,7 +472,7 @@ careers-join-how_to_apply:
                <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 careers-open_positions:
   title: You like to build well-crafted software, we do too!
-  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Apprentice.
+  description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Craftsperson-in-training.
 careers-become_a_craftsman:
   title: Become a Craftsperson
   description: <p>You have a strong desire to build quality software, to constantly improve yourself, and to help others to do the same. You have a broad appreciation for technology, with a deep knowledge of either <strong>Java</strong>, <strong>.NET</strong> or <strong>Node.js</strong> stacks.</p>
@@ -692,108 +629,23 @@ projects:
   bestSecret:
     link-text: Case Study at BestSecret
 
+compass-teaser:
+    anchor-id: compass-by-codurance
+    subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
+    button: Try our Compass tool
+
+get-in-touch:
+  anchor-id: get-in-touch
 
 software-modernisation:
   hero-title: Software Modernisation
   hero-sub-title: Evolve your strategic systems to enable technical and cultural change, enhance business agility, and make innovation possible
-  hero-introduction: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
+  hero-description: Organisations often get to a point where necessary change becomes so risky that strategic systems can’t adapt to business needs. Software Modernisation solves this problem by enabling safer and easier change.
   hero-cta: Tell us about your challenges
-  problems-title: How we solve your problems
-  problems-introduction: Whichever stage of the digital journey your business is on, we&nbsp;can&nbsp;help&nbsp;you&nbsp;to&nbsp;evolve.
-  what: What
-  how: How
+
   home-page-banner-text: We are recognised Software Modernisation experts
   home-page-banner-link: Find out more
 
-  sustainable-change-title: Sustainable Change
-  sustainable-change-intro: Business can move only as fast as we can deliver quality software
-  sus-change-li-1: Reduce lead time
-  sus-change-li-2: Reduce cost of change
-  sus-change-li-3: Frequent and safer releases to production
-  sus-change-li-4: Reduce technical debt
-  sus-change-li-5: Reduce defect rate
-  sus-change-how-details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test-Driven Development; Clean Code; Modular architecture; XP practices; DevOps
-
-  innovation-title: Innovation
-  innovation-intro: Continuous innovation is only possible when supported by well-designed and flexible software
-  innovation-li-1: Stay competitive
-  innovation-li-2: Easy to experiment
-  innovation-li-3: Data-driven decisions
-  innovation-li-4: Fast feedback
-  innovation-how-details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
-
-  technology-title: Technology
-  technology-intro: Leveraging new technologies should be straight forward and not a scary prospect
-  technology-li-1: Effectiveness and productivity
-  technology-li-2: Competitive advantage
-  technology-li-3: Cost reduction
-  technology-li-4: Technology refresh
-  technology-li-5: Mitigation against end-of-life
-  technology-how-details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure-as-code; Managed databases; Modern frameworks; Modular architecture
-
-  business-alignment-title: Business Alignment
-  business-alignment-intro: Achieving business goals is much easier when technology and business are aligned
-  business-alignment-li-1: Technology led business evolution
-  business-alignment-li-2: Faster quality feedback
-  business-alignment-li-3: Closer collaboration
-  business-alignment-li-4: Embrace change
-  business-alignment-how-details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
-
-  people-and-culture-title: People and Culture
-  people-and-culture-intro: A healthy and modern technology ecosystem is key to develop, attract, and retain talent
-  people-and-culture-li-1: Talent retention and attraction
-  people-and-culture-li-2: Staff development
-  people-and-culture-li-3: Culture of learning
-  people-and-culture-li-4: Leadership at all levels
-  people-and-culture-li-5: Team autonomy
-  people-and-culture-how-details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
-
-  risk-management-title: Risk Management
-  risk-management-intro: Risk management, operational excellence, security, and compliance must be done by design, not as an afterthought
-  risk-management-li-1: Real-time system intelligence
-  risk-management-li-2: System observability
-  risk-management-li-3: Security
-  risk-management-li-4: Operational excellence
-  risk-management-li-5: Reduce mean time to recover
-  risk-management-how-details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
-
-  clients-title: How we’ve helped our clients
-  clients-intro: Take a look at how we’ve helped some of our clients tackle similar challenges.
-
-  card-1-heading: ASOS
-  card-1-subheading: Enhanced business agility through software modernisation
-  card-1-button: Download Case Study
-  card-1-url: https://info.codurance.com/en/asos-case-study
-
-  card-2-heading: Mango
-  card-2-subheading: Strategic advice, cultural change, and monolith to microservices migration
-  card-2-button: Download Case Study
-  card-2-url: https://info.codurance.com/en/mango-case-study
-
-  card-3-heading: eClinicalWorks
-  card-3-subheading: Architecture modularisation and large scale code redesign and refactoring
-  card-3-button: Download Case Study
-  card-3-url: https://info.codurance.com/en/eclinicalworks-case-study
-
-  card-4-heading: BestSecret
-  card-4-subheading: Cloud migration, architecture evolution and cultural alignment
-  card-4-button: Download Case Study
-  card-4-url: https://info.codurance.com/en/best-secret-case-study
-
-  testimonials-heading: Hear it from our clients
-  testimonials-subheading: Don’t take it from us. Here’s what our clients had to say about Codurance.
-  testimonials-bestsecret-p1: Codurance helped us identify the friction and tackle the barriers in our development process, where increased lead times were causing frustration from ideation to release.
-  testimonials-bestsecret-p2: Their recognised expertise provides us with truthful analysis of our situation, and defined clear solutions to our pain points, ultimately to increase business value.
-  bestsecret-name-and-position: José López - Vice President of Engineering at BestSecret
-  testimonials-cazoo: Codurance was a natural choice, being closely aligned with the culture we are trying to establish as well as being able to meet the significant demand for engineers in order to deliver. I have no hesitation with recommending Codurance for any organization looking to improve their culture of engineering excellence or in the delivery of high quality engineered solutions.
-  cazoo-name-and-position: Ian Kershaw - Software Engineering Director at Cazoo
-  testimonials-hedgefund: In terms of cultural fit, Codurance was able to walk the fine line between balancing a focus on quality (within a legacy codebase), whilst understanding business goals and needs. This was extremely important because it allowed initially sceptical team members to bond and learn from Codurance.
-  hedgefund-name-and-position: Aaron Matthews - Director of Software Development at a Systematic Hedge Fund
-  testimonials-ecw: “Pragmatism” is a widely discussed concept and but rarely taken into account when you are looking for software development partners. Codurance team embodies just the right amount of practicality with the overall vision and knowledge to bring positive change to any organization.
-  ecw-name-and-position: Sapankumar Parikh - Vice President of Software Development at eClinicalWorks
-
-  compassCTA-subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
-  compassCTA-button: Try our Compass tool
   contact-heading: Tell us about your challenges
   contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
 
@@ -805,7 +657,11 @@ software-modernisation:
 
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
-  cheat-sheet-cta-banner-link: Download Questionnaire
+  cheat-sheet-cta-href: https://info.codurance.com/en/case-for-change-questionnaire
+
+
+  business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
+  business-case-presentation-banner-cta-text: Download template
 
   business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
   business-case-presentation-banner-cta-text: Download template
@@ -817,34 +673,98 @@ software-modernisation:
       cta: Watch Webinar
       cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
 
-  page-sections:
-    how-we-solve-your-problems: how-we-solve-your-problems
-    how-we-help-our-clients: how-we-help-our-clients
-    testimonials: testimonials
-    compass: compass-by-codurance
-    webinar: webinar
-    publications: publications
-    get-in-touch: get-in-touch
-
-curated-publications:
-  softmod:
+  curated-publications:
     intro-title: Software Modernisation publications
     intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
 
-service-line-template:
+software-delivery:
+  hero-title: Software Delivery
+  hero-sub-title: We help companies innovate by quickly bringing ideas to market from concept to software in production.
+  hero-description: We can help you define and build the features you need by providing fully autonomous cross-functional teams or by simply providing highly qualified extra capacity.
+
+  curated-publications:
+    intro-title: Software Delivery publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
+specialist-expertise:
+  hero-title: Specialist Expertise
+  hero-sub-title: Increase the quality and reliability of your software delivery and operations.
+  hero-description: Our specialist craftspeople will work with you to define and execute a plan to improve the quality and reliability of your software delivery.
+
+  curated-publications:
+    intro-title: Specialist Expertise publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
+strategic-advice:
+  hero-title: Strategic Advice
+  hero-sub-title: Build a technology strategy you can trust
+  hero-description: Our consultants will help you understand where your technological capabilities are today and provide the necessary insights to tackle your challenges. Together we will define a strategy and roadmap to implement that solution successfuly.
+
+  curated-publications:
+    intro-title: Strategic Advise publications
+    intro-description: Discover related articles, podcasts, tools, and other resources to help you leverage new insights.
+
+service-line-example:
   hero-title: Lorum Ipsum
   hero-sub-title: Lorem ipsum dolor sit
-  hero-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  hero-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   hero-cta: Lorem ipsum dolor
-  problems-title: Lorem ipsum dolor sit amet
-  problems-introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 
-  home-page-banner-text: Lorem ipsum dolor sit amet,
-  home-page-banner-link: Lorem ipsum
+  curated-publications:
+    intro-title: Example of publications section
+    intro-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-  clients-title: Lorem ipsum dolor sit amet
-  clients-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+service-line-contact-cta: Tell us about your challenges
 
-  in-page-banner-publications-title: Lorem ipsum
-  in-page-banner-publications-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  in-page-banner-publications-link: Find out more
+service-line-problems:
+  title: How we solve your problems
+  description: Whichever stage of the digital journey your business is on, we&nbsp;can&nbsp;help&nbsp;you&nbsp;to&nbsp;evolve.
+
+service-line-case-studies:
+  section-title: How we’ve helped our clients
+  section-description: Take a look at how we’ve helped some of our clients tackle similar challenges.
+
+  card-one:
+    heading: ASOS
+    subheading: Enhanced business agility through Software Modernisation
+    button: Download Case Study
+    url: https://info.codurance.com/en/asos-case-study
+
+  card-two:
+    heading: Mango
+    subheading: Strategic advice, cultural change, and monolith to microservices migration
+    button: Download Case Study
+    url: https://info.codurance.com/en/mango-case-study
+
+  card-three:
+    heading: eClinicalWorks
+    subheading: Architecture modularisation and large scale code redesign and refactoring
+    button: Download Case Study
+    url: https://info.codurance.com/en/eclinicalworks-case-study
+
+  card-four:
+    heading: BestSecret
+    subheading: Cloud migration, architecture evolution, and cultural alignment
+    button: Download Case Study
+    url: https://info.codurance.com/en/best-secret-case-study
+
+service-line-testimonials:
+  section-title: Hear it from our clients
+  section-description: Don’t take it from us. Here’s what our clients had to say about Codurance.
+
+  best-secret:
+    text-one: Codurance helped us identify the friction and tackle the barriers in our development process, where increased lead times were causing frustration from ideation to release.
+    text-two: Their recognised expertise provides us with truthful analysis of our situation, and defined clear solutions to our pain points, ultimately to increase business value.
+    foot-note: José López - Vice President of Engineering at BestSecret
+
+  cazoo:
+    text: Codurance was a natural choice, being closely aligned with the culture we are trying to establish as well as being able to meet the significant demand for engineers in order to deliver. I have no hesitation with recommending Codurance for any organization looking to improve their culture of engineering excellence or in the delivery of high quality engineered solutions.
+    foot-note: Ian Kershaw - Software Engineering Director at Cazoo
+
+  hedgefund:
+    text: In terms of cultural fit, Codurance was able to walk the fine line between balancing a focus on quality (within a legacy codebase), whilst understanding business goals and needs. This was extremely important because it allowed initially sceptical team members to bond and learn from Codurance.
+    foot-note: Aaron Matthews - Director of Software Development at a Systematic Hedge Fund
+
+  ecw:
+    text: “Pragmatism” is a widely discussed concept and but rarely taken into account when you are looking for software development partners. Codurance team embodies just the right amount of practicality with the overall vision and knowledge to bring positive change to any organization.
+    foot-note: Sapankumar Parikh - Vice President of Software Development at eClinicalWorks

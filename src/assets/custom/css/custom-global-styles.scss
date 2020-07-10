@@ -165,34 +165,26 @@ h5 {
 
 .u-pagination-v1-4:hover {
   color: #555 !important;
-  border-color: $orange !important;
+  border-color: $coral !important;
 }
 
 .u-pagination-v1-4--active {
-  background-color: $orange !important;
-  border-color: $orange !important;
+  background-color: $coral !important;
+  border-color: $coral !important;
 }
 
 /* Unify template overides
    -------------------------------------- */
 
-a {
-  color: $orange;
-}
-
-.u-header__section--light
-  .navbar-nav:not([class*="u-main-nav-v"])
-  .active
-  > .nav-link {
-  color: $orange !important;
+a,
+a:hover,
+a:focus,
+a:active {
+  color: $coral;
 }
 
 .g-color-primary {
-  color: $orange !important;
-}
-
-.g-brd-primary {
-  border-color: $orange !important;
+  color: $coral !important;
 }
 
 .lead {
@@ -206,15 +198,6 @@ a {
   height: 115px;
   padding-bottom: 45px;
   background-color: transparent;
-}
-
-/* icons
-   -------------------------------------- */
-
-.icon-large {
-  width: 200px;
-  height: 200px;
-  padding: 30px;
 }
 
 /* Buttons
@@ -234,9 +217,3 @@ a {
   }
 }
 
-/* Typography
-   -------------------------------------- */
-
-.nav-link {
-  color: #444444;
-}

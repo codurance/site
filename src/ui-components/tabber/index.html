@@ -1,0 +1,12 @@
+---
+layout: default
+metarobots: noindex,nofollow
+sitemap: false
+title: Tabber | Codurance UI Components
+
+---
+
+{%- include section_intro.html title="Tabber" class="ui-components__header" -%}
+
+{% assign tabber_data = site.data.service_lines_tabber.en.example-tabber %}
+{% include tabber.liquid class="ui-components__example" tabber_data=tabber_data %}

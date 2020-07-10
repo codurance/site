@@ -1,0 +1,119 @@
+.service-line__testimonials {
+  background-image: url("#{$site-base-url}/assets/custom/img/softmod/bg-testimonials.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include small {
+    background-size: cover;
+    background-position: center 380px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium {
+    background-size: 135% auto;
+    background-position: center 370px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+  }
+  @include large-and-extra-large {
+    background-size: 110% auto;
+    background-position: center 310px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+}
+
+.service-line__sheen-container {
+  background: $sheen;
+}
+
+.service-line__compass-teaser {
+  @include medium-large-and-extra-large {
+    padding-top: $vertical-overlap;
+  }
+}
+
+.service-line__media-section--one-publication {
+  @include medium-large-and-extra-large {
+    padding-bottom: 120px;
+  }
+}
+
+.service-line__webinar-teaser {
+  @include small {
+    .page-location-anchor {
+      top: calc(0px - #{$site-navbar-height-base});
+    }
+  }
+  @include medium-large-and-extra-large {
+    margin-bottom: 50px;
+    margin-top: -$vertical-overlap;
+  }
+}
+
+.service-line-case-studies {
+  background-color: $slate;
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @include medium-and-large{
+    padding-bottom: 50px;
+  }
+  @include medium-large-and-extra-large {
+    padding-top: 100px;
+  }
+  @include extra-large {
+    padding-bottom: 100px;
+    @include max-width--framed;
+  }
+}
+
+.service-line-problems {
+  position: relative;
+  background-position: center top;
+
+  @include small-medium-and-large{
+    background-size: cover;
+  }
+
+  @include small {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  @include medium{
+    padding-top: 100px;
+  }
+
+  @include medium-and-large {
+    padding-bottom: 100px;
+  }
+
+  @include large-and-extra-large{
+    padding-top: 150px;
+  }
+
+  @include extra-large {
+    @include max-width--framed;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
+
+    &:after {
+      content: "";
+      background-color: $slate;
+      top: 650px;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}
+
+.service-line-problems__intro {
+  position: relative;
+  z-index: 10;
+}

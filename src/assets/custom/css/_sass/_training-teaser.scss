@@ -1,7 +1,19 @@
 .training-teaser {
+  background-color: #f5f6fa;
+  background-image: url("#{$site-base-url}/assets/custom/img/services/training-background.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include extra-large {
+    @include max-width--framed;
+  }
+}
+
+.training-teaser__inner {
   @include max-width--out-there;
   align-items: center;
   display: flex;
+  justify-content: space-between;
 
   @include small {
     flex-direction: column-reverse;
@@ -10,14 +22,13 @@
     padding-left: $lateral-space--medium;
     padding-right: $lateral-space--medium;
   }
-
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
   }
 }
 
-.training-teaser__content {
+.training-teaser__text-area {
   @include small {
     padding-left: 25px;
     padding-right: 25px;
@@ -27,43 +38,53 @@
   @include medium-large-and-extra-large {
     padding-left: 10px;
     padding-right: 30px;
-    width: 50%;
   }
-  @include large-and-extra-large {
-    padding-left: $lateral-space--large;
-    padding-right: $lateral-space--large;
+}
+
+.training-teaser__image-area {
+  @include small {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  @include medium-large-and-extra-large {
+    flex-shrink: 0;
+    width: 43%;
   }
 }
 
 .training-teaser__title {
-  @include freed-bold;
-  color: white;
-  margin-bottom: 15px;
+  @include small {
+    @include freed-bold;
+    margin-bottom: 15px;
+  }
+  @include medium {
+    @include dudler-bold;
+    margin-bottom: 35px;
+  }
+  @include large {
+    @include eames-bold;
+    margin-bottom: 35px;
+  }
+  @include extra-large {
+    @include gaudi-bold;
+    margin-bottom: 35px;
+  }
 }
 
 .training-teaser__description {
   @include mercer-reg;
-  color: white;
   margin-bottom: 25px;
 }
 
 .training-teaser__image {
-  background-color: $navy;
+  background-color: #d4eaff;
   background-position: center;
   background-size: cover;
 
   @include small {
-    margin-bottom: 50px;
-    padding-top: 75%;
-    width: 100%;
+    padding-top: 5 / 9 * 100%;
   }
   @include medium-large-and-extra-large {
-    max-width: 585px;
-    padding-top: 35%;
-    width: 50%;
-  }
-
-  @include medium {
-    margin-left: 30px;
+    padding-top: 600 / 524 * 100%;
   }
 }

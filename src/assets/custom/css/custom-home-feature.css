@@ -2,11 +2,19 @@
    -------------------------------------- */
 
 .feature-panel {
-    background: rgba(0, 0, 0, 0.5);
     height: 800px;
     width: auto;
     z-index: 1;
     position: relative;
+}
+
+.feature-panel--shaded-mask {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .feature-panel h1 {
@@ -42,13 +50,13 @@
    -------------------------------------- */
 
 .video-bg-wrapper {
+    bottom: 0;
     position: absolute;
-    height: 800px;
     width: 100%;
     overflow: hidden;
-    top: 93px;
+    top: 0;
 }
-  
+
 .video-bg {
     position: absolute;
     top: 0%;
@@ -65,14 +73,14 @@
 
 /* Feature panel - Mobile image slider
    -------------------------------------- */
-   
+
 .bg-slider {
-    position: absolute;
-    height: 570px;
-    width: 100%;
-    top: 74px;
-    overflow: hidden;
+    bottom: 0;
     display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
   
 .bg-slide1,
