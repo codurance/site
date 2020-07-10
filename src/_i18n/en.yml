@@ -195,7 +195,7 @@ services:
     body: Contact us to find out how we can help.
     formid: d4e0392c-f5e7-4f51-95eb-6d45874e2fbc
   training:
-    title: Trainings
+    title: Training
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
   clients-teaser-title: You're in good company
 services-training_coaching:
