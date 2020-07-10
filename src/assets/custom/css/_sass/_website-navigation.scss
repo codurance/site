@@ -26,6 +26,11 @@
   top: -10px;
 }
 
+.website-navigation__menu-list {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
 .website-navigation__menu-item {
   color: $grey--dark;
   font-size: 18px;
