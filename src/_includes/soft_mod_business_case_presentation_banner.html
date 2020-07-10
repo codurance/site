@@ -1,8 +1,6 @@
-{% capture background_image %}/assets/custom/img/softmod/bg-business-case-presentation-template.jpg{% endcapture %}
+{% capture background_image %}/assets/custom/img/services/software-modernisation/bg-business-case-presentation-template.jpg{% endcapture %}
 {% assign background_position = 'top left' %}
-{% capture description %}{% t software-modernisation.business-case-presentation-banner-text %}{% endcapture %}
-{% capture cta_href %}
-      {% t software-modernisation.business-case-presentation-banner-href %}
-{% endcapture %}
-{% capture cta_text %}{% t software-modernisation.business-case-presentation-banner-cta-text %}{% endcapture %}
+{% capture description %}{% t software-modernisation.business-case-presentation-banner.text %}{% endcapture %}
+{% capture cta_href %}{% t software-modernisation.business-case-presentation-banner.cta-href %}{% endcapture %}
+{% capture cta_text %}{% t software-modernisation.business-case-presentation-banner.cta-text %}{% endcapture %}
 {% include in_page_banner.html background_image=background_image background_position=background_position class="soft-mod-cheat-sheet-cta-banner" cta_href=cta_href cta_text=cta_text description=description split="right-heavy" %}
