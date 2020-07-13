@@ -1,43 +1,29 @@
-<nav class="website-navigation navbar navbar-expand-lg">
-  <div class="container">
-    <!-- Menu toggle -->
-   {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
-      {% include website_navigation_menu_toggle.liquid %}
-    {% else %}
-      {% include website_navigation_menu_toggle-old.liquid %}
-    {% endif %}
-    <!-- End Menu toggle -->
+<nav class="website-navigation">
+  {% include website_navigation_menu_toggle.liquid %}
 
-    <!-- Logo -->
-    <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
-      {% include codurance_logo.liquid class="website-navigation__logo" %}
+  <!-- Logo -->
+  <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
+    {% include codurance_logo.liquid class="website-navigation__logo" %}
+  </a>
+  <!-- End Logo -->
+    
+  {% include website_navigation_menu.liquid %}
+
+  <!-- Language Picker -->
+  <div class="website-navigation__language-picker">
+    <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
+      {% for domain in site.domains %}
+      {% if domain[0] == site.lang %} {{ domain[0] | upcase }}&nbsp; {% endif %}
+      {% endfor %}
+
+      <i class="fa fa-angle-down g-ml-3"></i>
     </a>
-    <!-- End Logo -->
-      
-    <!-- Navigation -->
-    {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
-      {% include website_navigation_menu.liquid %}
-    {% else %}
-      {% include website_navigation_menu-old.liquid %}
-    {% endif %}
-    <!-- End Navigation -->
 
-    <!-- Language Picker -->
-    <div class="website-navigation__language-picker g-pos-rel g-width-50 g-pt-3--lg g-ml-30 g-ml-0--lg g-hidden-xs-down">
-      <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="500" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
-        {% for domain in site.domains %}
-        {% if domain[0] == site.lang %} {{ domain[0] | upcase }}&nbsp; {% endif %}
-        {% endfor %}
-
-        <i class="fa fa-angle-down g-ml-3"></i>
-      </a>
-
-      <ul id="languages-dropdown-2" class="website-navigation__language-selector list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
-        {% for domain in site.domains %}
-          <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <!-- End Language Picker -->
+    <ul id="languages-dropdown-2" class="website-navigation__language-selector list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-py-20 g-pb-15 g-mt-25--lg g-mt-20--lg--scrolling u-dropdown--css-animation u-dropdown--hidden" aria-labelledby="languages-dropdown-invoker-2" style="animation-duration: 500ms; left: -35px;">
+      {% for domain in site.domains %}
+        <li> <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a> </li>
+      {% endfor %}
+    </ul>
   </div>
+  <!-- End Language Picker -->
 </nav>
