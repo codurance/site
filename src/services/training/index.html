@@ -12,19 +12,21 @@ intro:
 ---
 
 {% if site.data.toggles.slt-181-training-overview-page == "on" %}
+
   {%- assign translations = site.translations[site.lang].training-overview -%}
   {% assign cta_text = site.translations[site.lang].services.learn-more %}
   {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
-  {% assign training_hero_data = site.data.service_lines.training %}
-  {% capture title %}{% if site.lang == 'es' %}{{ training_hero_data.es-title }}{% else %}{{ training_hero_data.en-title }}{% endif %}{% endcapture %}
-  {% capture description %}{% if site.lang == 'es' %}{{ training_hero_data.es-description }}{% else %}{{ training_hero_data.en-description }}{% endif %}{% endcapture %}
+
+  {% assign teaser_card_data = site.data.service_lines.training %}
+  {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
+  {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
   {% include service_line_teaser_card.liquid
-    background_image=training_hero_data.image-src
-    avatar-src=training_hero_data.avatar-src
-    name=training_hero_data.name
+    background_image=teaser_card_data.image-src
+    avatar-src=teaser_card_data.avatar-src
+    name=teaser_card_data.name
     title=title
     description=description
-    cta_path=training_hero_data.cta-path
+    cta_path=teaser_card_data.cta-path
   %}
 
 {% else %}
