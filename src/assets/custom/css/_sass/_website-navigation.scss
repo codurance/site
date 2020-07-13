@@ -1,6 +1,18 @@
 .website-navigation {
+  align-items: center;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 22px 20px;
+  position: relative;
+}
+
+.website-navigation__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .website-navigation__home-link {

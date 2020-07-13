@@ -1,7 +1,7 @@
-<nav class="website-navigation navbar navbar-expand-lg">
-  <div class="container">
+<nav class="website-navigation">
+  <div class="website-navigation__inner">
     <!-- Menu toggle -->
-   {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
+    {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
       {% include website_navigation_menu_toggle.liquid %}
     {% else %}
       {% include website_navigation_menu_toggle-old.liquid %}
