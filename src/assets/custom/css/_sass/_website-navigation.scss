@@ -21,6 +21,16 @@
   }
 }
 
+.website-navigation__menu {
+  @include small-and-medium {
+    flex-basis: 100%;
+  }
+}
+
+.website-navigation__menu--collapsed {
+  display: none;
+}
+
 .website-navigation__menu-toggle {
   right: -8px;
   top: -10px;

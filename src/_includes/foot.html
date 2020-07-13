@@ -40,6 +40,9 @@
   {% if site.data.toggles.slt-464-new-js == 'on' %}
     <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>    
   {% endif %}
+  {% if site.data.toggles.slt-462-nav-typestyles == 'on' %}
+    <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>    
+  {% endif %}
 
  <!-- JS Plugins Init. -->
   <script>
