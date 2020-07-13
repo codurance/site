@@ -1,0 +1,9 @@
+.training-overview-content {
+  background-color: $navy--ultralight;
+  padding-top: calc(2 * #{$vertical-overlap});
+  margin-top: -$vertical-overlap ;
+}
+
+.training-overview-content__cards-wrapper {
+  @include max-width--out-there;
+}

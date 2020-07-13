@@ -17,17 +17,21 @@ intro:
   {% assign cta_text = site.translations[site.lang].services.learn-more %}
   {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
 
-  {% assign teaser_card_data = site.data.service_lines.training %}
-  {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
-  {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
-  {% include service_line_teaser_card.liquid
-    background_image=teaser_card_data.image-src
-    avatar-src=teaser_card_data.avatar-src
-    name=teaser_card_data.name
-    title=title
-    description=description
-    cta_path=teaser_card_data.cta-path
-  %}
+  <section class="training-overview-content">
+      <div class="training-overview-content__cards-wrapper">
+          {% assign teaser_card_data = site.data.service_lines.training %}
+          {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
+          {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
+          {% include service_line_teaser_card.liquid
+          background_image=teaser_card_data.image-src
+          avatar-src=teaser_card_data.avatar-src
+          name=teaser_card_data.name
+          title=title
+          description=description
+          cta_path=teaser_card_data.cta-path
+          %}
+      </div>
+  </section>
 
 {% else %}
     <div class="container content">
