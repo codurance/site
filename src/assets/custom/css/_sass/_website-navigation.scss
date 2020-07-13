@@ -27,6 +27,12 @@
   }
 }
 
+.website-navigation__menu--initial-state {
+  @include small-and-medium {
+    display: none;
+  }
+}
+
 .website-navigation__menu--collapsed {
   display: none;
 }
