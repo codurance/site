@@ -15,16 +15,4 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  & .service-line-teaser-card:nth-of-type(odd)::after {
-    @include large-and-extra-large {
-      left: $lateral-space--large;
-      right: 50%;
-    }
-  }
-  & .service-line-teaser-card:nth-of-type(even)::after {
-    @include large-and-extra-large {
-      left: 50%;
-      right: $lateral-space--large;
-    }
-  }
 }
