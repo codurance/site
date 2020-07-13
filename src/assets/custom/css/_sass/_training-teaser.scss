@@ -28,15 +28,20 @@
   }
 }
 
-.training-teaser__avatar{
+.training-teaser__avatar {
   height: auto;
   margin-right: 20px;
-  @include small-and-medium{
+  @include small-and-medium {
     width: 35px;
   }
-  @include large-and-extra-large{
+  @include large-and-extra-large {
     width: 50px;
   }
+}
+
+.training-teaser__course-length {
+  @include ponti-bold;
+  color: white;
 }
 
 .training-teaser__text-area {
