@@ -10,7 +10,7 @@ video-url: https://www.podbean.com/media/player/peu29-c9b917?from=yiiadmin&downl
 date: 2019-12-02 06:00:00 +00:00
 ---
 
-Today we are joined by the Chief Architect of [Cazoo](https://www.cazoo.co.uk) [Bob Gregory](https://twitter.com/bob_the_mighty) to talk to us about serverless and how to use it to help in the delivery of your project. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts with [Chris Bimson](https://github.com/christopher-bimson).
+Today we are joined by the Chief Architect of [Cazoo](https://www.cazoo.co.uk), [Bob Gregory](https://twitter.com/bob_the_mighty) to talk to us about serverless and how to use it to help in the delivery of your project. [Jorge](https://codurance.com/publications/author/jorge-gueorguiev-garcia/) co-hosts with [Chris Bimson](https://github.com/christopher-bimson).
 
 Photo: [Prairie Dog](https://pixabay.com/en/prairie-dog-singing-musical-rodent-1470659/) by DigiPD is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
