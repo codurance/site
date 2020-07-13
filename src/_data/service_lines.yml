@@ -44,5 +44,15 @@ strategic-advice:
   image-src: /assets/custom/img/services/serviceline-strategic-advice.jpg
   cta-path: /services/strategic-advice/
 
+training:
+  avatar-src: /assets/custom/img/training/sandro_avatar_image.png
+  name: Sandro Mancuso
+  en-title: Crafting Code & Crafted Design
+  en-description: The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
+  es-title: SPANISH - Crafting Code & Crafted Design
+  es-description: SPANISH - The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
+  image-src: /assets/custom/img/training/hero_image_sandro.png
+  cta-path: /services/training
+
 service-line-example:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><circle cx="82" cy="82" r="80"/></svg>
