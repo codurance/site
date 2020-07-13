@@ -26,10 +26,5 @@
       <li class="nav-item g-mx-15--lg g-mx-20--xl">
           <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="nav-link px-0">{% t sections.contact%}</a>
       </li>
-      {% for domain in site.domains %}
-        <li class="nav-item g-mx-20--lg g-mx-20--xl g-hidden-sm-up">
-          <a  href="{{ domain[1] }}{{ page.url }}" class="nav-link px-0">{{ domain[0] | upcase }}</a>
-        </li>
-      {% endfor %}
     </ul>
   </div>
