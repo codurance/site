@@ -21,20 +21,13 @@
   }
 }
 
-.website-navigation__menu {
-  @include small-and-medium {
-    flex-basis: 100%;
-  }
-}
-
-.website-navigation__menu--initial-state {
-  @include small-and-medium {
+@include small-and-medium {
+  .website-navigation__menu:not(.website-navigation__menu--expanded) {
     display: none;
   }
-}
-
-.website-navigation__menu--collapsed {
-  display: none;
+  .website-navigation__menu--expanded {
+    flex-basis: 100%;
+  }
 }
 
 .website-navigation__menu-toggle {

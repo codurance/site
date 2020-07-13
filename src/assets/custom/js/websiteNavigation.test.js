@@ -1,8 +1,7 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
 require("./websiteNavigation");
 
-const COLLAPSED_MENU_CLASS = "website-navigation__menu--collapsed";
-const INITIAL_MENU_STATE_CLASS = "website-navigation__menu--initial-state";
+const EXPANDED_MENU_CLASS = "website-navigation__menu--expanded";
 const MENU_CLASS = "website-navigation__menu";
 const MENU_TOGGLE_CLASS = "website-navigation__menu-toggle";
 
@@ -24,8 +23,7 @@ describe("Website Navigation Menu", () => {
 
             menuToggle.click();
 
-            expect(navMenu.classList).not.toContain(COLLAPSED_MENU_CLASS);
-            expect(navMenu.classList).not.toContain(INITIAL_MENU_STATE_CLASS);
+            expect(navMenu.classList).toContain(EXPANDED_MENU_CLASS);
         });
 
         it("is collapsed when the menu is initially open", () => {
@@ -33,7 +31,7 @@ describe("Website Navigation Menu", () => {
 
             menuToggle.click();
 
-            expect(navMenu.classList).toContain(COLLAPSED_MENU_CLASS);
+            expect(navMenu.classList).not.toContain(EXPANDED_MENU_CLASS);
         });
     });
 });
@@ -52,7 +50,6 @@ function createMockMenuToggle() {
 function createMockNav() {
     const navMenu = window.document.createElement("div");
     navMenu.classList.add(MENU_CLASS);
-    navMenu.classList.add(INITIAL_MENU_STATE_CLASS);
     window.document.body.appendChild(navMenu);
 }
 
@@ -64,9 +61,9 @@ function getMockNav() {
     return window.document.querySelector(`.${MENU_CLASS}`);
 }
 function closeNav() {
-    getMockNav().classList.add(COLLAPSED_MENU_CLASS);
+    getMockNav().classList.remove(EXPANDED_MENU_CLASS);
 }
 
 function openNav() {
-    getMockNav().classList.remove(COLLAPSED_MENU_CLASS);
+    getMockNav().classList.add(EXPANDED_MENU_CLASS);
 }
