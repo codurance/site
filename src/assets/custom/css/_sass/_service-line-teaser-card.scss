@@ -12,6 +12,8 @@
 }
 
 .service-line-teaser-card__image {
+  background-position: left center;
+
   @include small-and-medium {
     display: none;
   }
@@ -19,27 +21,11 @@
     background-color: #aaa;
     background-size: cover;
     bottom: 40px;
+    left: 0;
     position: absolute;
     top: 0;
     width: 57%;
     z-index: 10;
-  }
-
-  .service-line-teaser-card:nth-of-type(odd) & {
-    background-position: left center;
-
-    @include large-and-extra-large {
-      left: 0;
-    }
-  }
-
-  .service-line-teaser-card:nth-of-type(even) & {
-    background-position: right center;
-
-    @include large-and-extra-large {
-      left: auto;
-      right: 0;
-    }
   }
 }
 
@@ -83,22 +69,12 @@
   @include large-and-extra-large {
     @include style-card-box-shadow;
     background-image: none !important;
+    margin-left: 43%;
     position: relative;
     z-index: 20;
   }
-
-  .service-line-teaser-card:nth-of-type(odd) & {
-    @include large-and-extra-large {
-      margin-left: 43%;
-    }
-  }
-
-  .service-line-teaser-card:nth-of-type(even) & {
-    @include large-and-extra-large {
-      margin-right: 43%;
-    }
-  }
 }
+
 @include large-and-extra-large {
   .service-line-teaser-card__primary-content,
   .service-line-teaser-card__secondary-content {

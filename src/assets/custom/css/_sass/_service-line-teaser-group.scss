@@ -15,4 +15,34 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  & .service-line-teaser-card:nth-of-type(odd){
+      .service-line-teaser-card__image{
+        background-position: left center;
+
+        @include large-and-extra-large {
+          left: 0;
+        }
+      }
+      .service-line-teaser-card__content{
+        @include large-and-extra-large {
+          margin-left: 43%;
+        }
+      }
+  }
+  & .service-line-teaser-card:nth-of-type(even){
+      .service-line-teaser-card__image{
+        background-position: right center;
+
+        @include large-and-extra-large {
+          left: auto;
+          right: 0;
+        }
+      }
+      .service-line-teaser-card__content{
+        @include large-and-extra-large {
+          margin-left: 0;
+          margin-right: 43%;
+        }
+      }
+  }
 }
