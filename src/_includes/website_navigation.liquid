@@ -1,12 +1,12 @@
 <nav class="website-navigation navbar navbar-expand-lg">
   <div class="container">
-    <button class="website-navigation__menu-toggle navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-      <span class="hamburger hamburger--slider">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </span>
-    </button>
+    <!-- Menu toggle -->
+   {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
+      {% include website_navigation_menu_toggle.liquid %}
+    {% else %}
+      {% include website_navigation_menu_toggle-old.liquid %}
+    {% endif %}
+    <!-- End Menu toggle -->
 
     <!-- Logo -->
     <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
@@ -15,7 +15,7 @@
     <!-- End Logo -->
       
     <!-- Navigation -->
-    {% if site.data.toggles.slt-462-nav-typestyles == 'on' %}
+    {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
       {% include website_navigation_menu.liquid %}
     {% else %}
       {% include website_navigation_menu-old.liquid %}

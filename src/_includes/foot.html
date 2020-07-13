@@ -16,7 +16,6 @@
   <script src="{{ '/assets/unify-2.4/vendor/fancybox/jquery.fancybox.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/gmaps/gmaps.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/hs.core.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ '/assets/unify-2.4/js/components/hs.header.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/helpers/hs.hamburgers.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.dropdown.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.tabs.js' | prepend: site.baseurl }}"></script>
@@ -37,8 +36,9 @@
   <script src="{{ '/assets/custom/js/externalLinks.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/custom/js/tabber.js' | prepend: site.baseurl }}"></script>
   
-  {% if site.data.toggles.slt-464-new-js == 'on' %}
+  {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
     <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>    
+    <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>    
   {% endif %}
 
  <!-- JS Plugins Init. -->
@@ -99,7 +99,6 @@
       });
 
       $(window).on('load', function () {
-        $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
       });
   </script>
