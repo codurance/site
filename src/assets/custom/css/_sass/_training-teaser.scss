@@ -28,6 +28,17 @@
   }
 }
 
+.training-teaser__avatar{
+  height: auto;
+  margin-right: 20px;
+  @include small-and-medium{
+    width: 35px;
+  }
+  @include large-and-extra-large{
+    width: 50px;
+  }
+}
+
 .training-teaser__text-area {
   @include small {
     padding-left: 25px;

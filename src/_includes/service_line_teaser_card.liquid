@@ -2,10 +2,14 @@
     <div class="service-line-teaser-card__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }})"></div>
     <div class="service-line-teaser-card__content" style="background-image: url({{ site.baseurl }}{{ include.background_image }})">
         <div class="service-line-teaser-card__primary-content">
-            {% if include.avatar-src %}
-                <img src={{ include.avatar-src | prepend: site.baseurl}}>
-            {% endif %}
-            <h2 class="service-line-teaser-card__tag">{{ include.icon }} {{ include.name }}</h2>
+            {% capture meta-image %}
+                {% if include.avatar-src %}
+                    <img class="training-teaser__avatar" alt="" src={{ include.avatar-src | prepend: site.baseurl}}>
+                {% else %}
+                    {{ include.icon }}
+                {% endif %}
+            {% endcapture %}
+            <h2 class="service-line-teaser-card__tag">{{meta-image}} {{ include.name }}</h2>
             <h3 class="service-line-teaser-card__title">{{ include.title }}</h3>
         </div>
         <div class="service-line-teaser-card__secondary-content">
