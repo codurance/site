@@ -16,7 +16,6 @@
   <script src="{{ '/assets/unify-2.4/vendor/fancybox/jquery.fancybox.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/vendor/gmaps/gmaps.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/hs.core.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ '/assets/unify-2.4/js/components/hs.header.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/helpers/hs.hamburgers.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.dropdown.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/unify-2.4/js/components/hs.tabs.js' | prepend: site.baseurl }}"></script>
@@ -102,7 +101,6 @@
       });
 
       $(window).on('load', function () {
-        $.HSCore.components.HSHeader.init($('#js-header'));
         $.HSCore.helpers.HSHamburgers.init('.hamburger');
       });
   </script>
