@@ -11,21 +11,7 @@
   }
 }
 
-.service-line-teaser-group__card:nth-of-type(odd)::after {
-  @include large-and-extra-large {
-    left: $lateral-space--large;
-    right: 50%;
-  }
-}
-
-.service-line-teaser-group__card:nth-of-type(even)::after {
-  @include large-and-extra-large {
-    left: 50%;
-    right: $lateral-space--large;
-  }
-}
-
-.service-line-teaser-group-card__image {
+.service-line-teaser-card__image {
   @include small-and-medium {
     display: none;
   }
@@ -39,7 +25,7 @@
     z-index: 10;
   }
 
-  .service-line-teaser-group__card:nth-of-type(odd) & {
+  .service-line-teaser-card:nth-of-type(odd) & {
     background-position: left center;
 
     @include large-and-extra-large {
@@ -47,7 +33,7 @@
     }
   }
 
-  .service-line-teaser-group__card:nth-of-type(even) & {
+  .service-line-teaser-card:nth-of-type(even) & {
     background-position: right center;
 
     @include large-and-extra-large {
@@ -57,7 +43,7 @@
   }
 }
 
-.service-line-teaser-group__card-content {
+.service-line-teaser-card__content {
   @include small {
     padding-bottom: 65px;
     padding-left: $lateral-space--small;
@@ -101,37 +87,37 @@
     z-index: 20;
   }
 
-  .service-line-teaser-group__card:nth-of-type(odd) & {
+  .service-line-teaser-card:nth-of-type(odd) & {
     @include large-and-extra-large {
       margin-left: 43%;
     }
   }
 
-  .service-line-teaser-group__card:nth-of-type(even) & {
+  .service-line-teaser-card:nth-of-type(even) & {
     @include large-and-extra-large {
       margin-right: 43%;
     }
   }
 }
 @include large-and-extra-large {
-  .service-line-teaser-group__primary-content,
-  .service-line-teaser-group__secondary-content {
+  .service-line-teaser-card__primary-content,
+  .service-line-teaser-card__secondary-content {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
   }
-  .service-line-teaser-group__primary-content {
+  .service-line-teaser-card__primary-content {
     background-color: $slate;
     padding-bottom: 30px;
     padding-top: 60px;
   }
-  .service-line-teaser-group__secondary-content {
+  .service-line-teaser-card__secondary-content {
     background-color: $slate-light;
     padding-bottom: 60px;
     padding-top: 30px;
   }
 }
 
-.service-line-teaser-group__card-tag {
+.service-line-teaser-card__tag {
   @include ponti-bold;
   align-items: center;
   color: white;
@@ -147,12 +133,12 @@
   }
 }
 
-.service-line-teaser-group__card-title,
-.service-line-teaser-group__card-description {
+.service-line-teaser-card__title,
+.service-line-teaser-card__description {
   color: white;
 }
 
-.service-line-teaser-group__card-title {
+.service-line-teaser-card__title {
   @include freed-bold;
 
   @include small {
@@ -163,7 +149,7 @@
   }
 }
 
-.service-line-teaser-group__card-description {
+.service-line-teaser-card__description {
   @include mercer-reg;
 
   @include small {
