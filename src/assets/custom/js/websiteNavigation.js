@@ -26,4 +26,4 @@ var websiteNavigation = function () {
   }
 };
 
-websiteNavigation();
+window.addEventListener("DOMContentLoaded", websiteNavigation);
