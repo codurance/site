@@ -1,0 +1,17 @@
+<article class="service-line-teaser-group__card">
+    <div class="service-line-teaser-group__card-image" style="background-image: url({{ site.baseurl }}{{ include.background_image }})"></div>
+    <div class="service-line-teaser-group__card-content" style="background-image: url({{ site.baseurl }}{{ include.background_image }})">
+        <div class="service-line-teaser-group__primary-content">
+            <h2 class="service-line-teaser-group__card-tag">{{ include.icon }} {{ include.name }}</h2>
+            <h3 class="service-line-teaser-group__card-title">{{ include.title }}</h3>
+        </div>
+        <div class="service-line-teaser-group__secondary-content">
+            <p class="service-line-teaser-group__card-description">{{ include.description }}</p>
+            {% if data-entry.cta-path %}
+                {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
+                {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
+                {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
+            {% endif %}
+        </div>
+    </div>
+</article>

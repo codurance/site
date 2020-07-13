@@ -5,22 +5,14 @@
     {% assign data-entry = data[service_line] %}
     {% capture title %}{% if site.lang == 'es' %}{{ data-entry.es-title }}{% else %}{{ data-entry.en-title }}{% endif %}{% endcapture %}
     {% capture description %}{% if site.lang == 'es' %}{{ data-entry.es-description }}{% else %}{{ data-entry.en-description }}{% endif %}{% endcapture %}
-    <article class="service-line-teaser-group__card">
-      <div class="service-line-teaser-group__card-image" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})"></div>
-      <div class="service-line-teaser-group__card-content" style="background-image: url({{ site.baseurl }}{{ data-entry.image-src }})">
-        <div class="service-line-teaser-group__primary-content">
-          <h2 class="service-line-teaser-group__card-tag">{{ data-entry.icon }} {{ data-entry.name }}</h2>
-          <h3 class="service-line-teaser-group__card-title">{{ title }}</h3>
-        </div>
-        <div class="service-line-teaser-group__secondary-content">
-          <p class="service-line-teaser-group__card-description">{{ description }}</p>
-          {% if data-entry.cta-path %}
-            {% capture cta-href %}{{ data-entry.cta-path | prepend: site.baseurl }}{% endcapture %}
-            {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
-            {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
-          {% endif %}
-        </div>
-      </div>
-    </article>
+    {% include service_line_teaser_card.liquid
+        background_image=data-entry.image-src
+        icon=data-entry.icon
+        name=data-entry.name
+        title=title
+        description=description
+        cta_path=data-entry.cta-path
+    %}
   {% endfor %}
 </section>
+
