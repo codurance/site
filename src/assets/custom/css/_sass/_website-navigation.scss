@@ -1,16 +1,25 @@
 $header-veritical-space: 22px;
 
 .website-navigation {
-  @include lateral-spacing;
-  @include max-width--out-there;
-  align-items: center;
   background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: $header-veritical-space;
   padding-bottom: $header-veritical-space;
-  position: relative;
+
+  body:not(.toggle--slt-397-website-header-updates) & {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body.toggle--slt-397-website-header-updates & {
+    @include lateral-spacing;
+    @include max-width--out-there;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: $header-veritical-space;
+    padding-bottom: $header-veritical-space;
+    position: relative;
+  }
 }
 
 .website-navigation__menu-toggle {

@@ -1,11 +1,5 @@
 <nav class="website-navigation">
-  <!-- Menu toggle -->
-  {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
-    {% include website_navigation_menu_toggle.liquid %}
-  {% else %}
-    {% include website_navigation_menu_toggle-old.liquid %}
-  {% endif %}
-  <!-- End Menu toggle -->
+  {% include website_navigation_menu_toggle.liquid %}
 
   <!-- Logo -->
   <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
@@ -13,13 +7,7 @@
   </a>
   <!-- End Logo -->
     
-  <!-- Navigation -->
-  {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
-    {% include website_navigation_menu.liquid %}
-  {% else %}
-    {% include website_navigation_menu-old.liquid %}
-  {% endif %}
-  <!-- End Navigation -->
+  {% include website_navigation_menu.liquid %}
 
   <!-- Language Picker -->
   <div class="website-navigation__language-picker">
