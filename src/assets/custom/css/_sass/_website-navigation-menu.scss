@@ -19,7 +19,7 @@
     border-width: 0 0 2px 0;
   }
 
-  .website-navigation-menu__list-item--has-sub-menu > &::after {
+  .website-navigation-menu__item--has-sub-menu > &::after {
     content: "";
     display: inline-block;
     padding: 4.5px;
