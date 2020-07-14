@@ -1,32 +1,45 @@
- <div class="js-mega-menu website-navigation__menu" id="navBar">
-    <ul class="website-navigation__menu-list">
-      <li class="nav-item g-mx-15--lg g-mx-20--xl">
-        <a href="{{ '/clients' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.clients %}</a>
+{% assign menus = site.data.website_navigation_menus %}
+{% assign main_menu_items = menus.main_menu_items %}
+
+<ul id="website-navigation-menu" class="{{ include.class }} website-navigation-menu">
+  {% for item in main_menu_items %}
+    {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
+    {% if item.connects_to_sub_menu %}
+      <li class="website-navigation-menu__item--has-sub-menu">
+        <button 
+          class="website-navigation-menu__sub-menu-toggle" 
+          id="sub-menu-toggle-{{ item.key }}" 
+          aria-expanded="false" 
+          aria-controls="sub-menu-{{ item.connects_to_sub_menu }}"
+        >
+          {{ translation }}
+        </button>
       </li>
-      <li class="nav-item g-mx-15--lg g-mx-20--xl">
-        <a href="{{ '/services' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.services%}</a>
+    {% else %}
+      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__item--active{% endif %}{% endcapture %}
+      <li>
+        <a href="{{ href }}" class="website-navigation-menu__item {{ active_class }}">{{ translation }}</a>
       </li>
-      <li class="nav-item g-mx-15--lg g-mx-20--xl">
-        <a href="{{ '/publications' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.publications%}</a>
+    {% endif %}
+  {% endfor %}  
+</ul>
+
+{% assign sub_menus = menus.sub_menus %}
+
+{% for sub_menu in sub_menus %}
+  <ul 
+    aria-labelledby="sub-menu-toggle-{{ sub_menu.key }}"
+    class="website-navigation-menu__sub-menu" 
+    id="sub-menu-{{ sub_menu.key }}" 
+  >
+    {% for item in sub_menu.items %}
+      {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
+      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__item--active{% endif %}{% endcapture %}
+      <li>
+        <a class="website-navigation-menu__item {{ active_class }}" href="{{ href }}">{{ translation }}</a>
       </li>
-      <li class="nav-item g-mx-15--lg g-mx-20--xl">
-        <a href="{{ '/careers' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.careers%}</a>
-      </li>
-      <li class="nav-item has-sub-menu">
-        <span class="website-navigation__menu-item" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">
-          {% t sections.about-us%}
-        </span>
-        <ul class="sub-menu" id="nav-submenu-1" aria-labelledby="nav-link-1">
-          <li class="website-navigation__dropdown-item">
-            <a class="website-navigation__menu-item" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
-          </li>
-          <li class="website-navigation__dropdown-item">
-            <a class="website-navigation__menu-item" href="{{ '/about-us/our-story' | prepend: site.baseurl }}">{% t sections.our-story%}</a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item g-mx-15--lg g-mx-20--xl">
-          <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="website-navigation__menu-item px-0">{% t sections.contact%}</a>
-      </li>
-    </ul>
-  </div>
+    {% endfor %}  
+  </ul>
+{% endfor %}  
