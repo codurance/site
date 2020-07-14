@@ -26,6 +26,8 @@ $header-veritical-space: 22px;
   $hamburger-padding: 10px;
 
   @include small-and-medium {
+    background: none;
+    border: 0 none;
     position: absolute;
     top: $header-veritical-space - $hamburger-padding;
   }
