@@ -3,6 +3,8 @@ $banner-height: 300px;
 .in-page-banner {
   min-height: $banner-height;
   overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .in_page_banner__image {

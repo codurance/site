@@ -24,16 +24,16 @@ $white-colour: #fff;
   font-size: 15px;
   margin: 10px 0;
   padding: 10px 30px;
-  background-color: transparent;
   color: white;
   font-weight: 700;
-  background: #ef7726;
+  background: $coral;
   border: none;
   overflow: hidden;
   position: relative;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: white;
+    background: $coral--light;
   }
 
   span {
