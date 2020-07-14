@@ -50,18 +50,7 @@ $header-veritical-space: 25px;
   @include small-and-medium {
     flex-basis: 100%;
   }
-}
 
 .website-navigation__languages {
   display: none;
-  position: absolute;
-  top: 28px;
-  z-index: 10;
-
-  @include small-and-medium {
-    left: 220px;
-  }
-  @include large-and-extra-large {
-    right: $lateral-space--large;
-  }
 }
