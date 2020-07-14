@@ -1,69 +1,77 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
 require("./websiteNavigation");
 
-const EXPANDED_MENU_CLASS = "website-navigation__menu--expanded";
-const MENU_CLASS = "website-navigation__menu";
-const MENU_TOGGLE_CLASS = "website-navigation__menu-toggle";
+const OPEN_MENU_CLASS = "website-navigation__menu--open";
+const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
 
+let menuToggle;
+let menu;
 
 describe("Website Navigation Menu", () => {
-
-    describe("when the menu toggle is clicked", () => {
-        let menuToggle;
-        let navMenu;
-        beforeAll(() => {
-            setUpMocks();
-            simulatePageLoad();
-            menuToggle = getMockMenuToggle();
-            navMenu = getMockNav();
-        });
-
-        it("is opened", () => {
-            closeNav();
-
-            menuToggle.click();
-
-            expect(navMenu.classList).toContain(EXPANDED_MENU_CLASS);
-        });
-
-        it("is collapsed when the menu is initially open", () => {
-            openNav();
-
-            menuToggle.click();
-
-            expect(navMenu.classList).not.toContain(EXPANDED_MENU_CLASS);
-        });
+  describe("When the page loads and there is a menu toggle and a related menu", () => {
+    beforeAll(() => {
+      setUpMocks();
+      simulatePageLoad();
+      menuToggle = getMockMenuToggle();
+      menu = getMockMenu();
     });
+
+    describe("And then the menu toggle is clicked", () => {
+      beforeAll(() => {
+        menuToggle.click();
+      });
+
+      it("opens the related menu", () => {
+        expect(menu.classList).toContain(OPEN_MENU_CLASS);
+      });
+
+      it("updates itself to look like a close button", () => {
+        expect(menuToggle.getAttribute("aria-expanded")).toBe("true");
+      });
+
+      describe("When the menu toggle is clicked again", () => {
+        beforeAll(() => {
+          menuToggle.click();
+        });
+
+        it("closes the related menu", () => {
+          expect(menu.classList).not.toContain(OPEN_MENU_CLASS);
+        });
+
+        it("returns to it's original look of a open menu button", () => {
+          expect(menuToggle.getAttribute("aria-expanded")).toBe("false");
+        });
+      });
+    });
+  });
 });
 
 function setUpMocks() {
-    createMockMenuToggle();
-    createMockNav();
+  createMockMenuToggle();
+  createMockMenu();
 }
+
+const MENU_ID = "mockMenuId";
 
 function createMockMenuToggle() {
-    const menuToggle = window.document.createElement("div");
-    menuToggle.classList.add(MENU_TOGGLE_CLASS);
-    window.document.body.appendChild(menuToggle);
+  const menuToggle = window.document.createElement("div");
+  menuToggle.setAttribute("aria-controls", MENU_ID);
+  menuToggle.setAttribute("aria-expanded", false);
+  menuToggle.classList.add(MENU_TOGGLE_CLASS);
+  window.document.body.appendChild(menuToggle);
 }
 
-function createMockNav() {
-    const navMenu = window.document.createElement("div");
-    navMenu.classList.add(MENU_CLASS);
-    window.document.body.appendChild(navMenu);
+function createMockMenu() {
+  const menu = window.document.createElement("div");
+  menu.id = MENU_ID;
+  menu.setAttribute("aria-expanded", false);
+  window.document.body.appendChild(menu);
 }
 
 function getMockMenuToggle() {
-    return window.document.querySelector(`.${MENU_TOGGLE_CLASS}`);
+  return window.document.querySelector(`.${MENU_TOGGLE_CLASS}`);
 }
 
-function getMockNav() {
-    return window.document.querySelector(`.${MENU_CLASS}`);
-}
-function closeNav() {
-    getMockNav().classList.remove(EXPANDED_MENU_CLASS);
-}
-
-function openNav() {
-    getMockNav().classList.add(EXPANDED_MENU_CLASS);
+function getMockMenu() {
+  return window.document.querySelector(`#${MENU_ID}`);
 }

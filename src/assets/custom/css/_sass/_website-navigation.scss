@@ -41,12 +41,12 @@ $header-veritical-space: 25px;
 
 .website-navigation__menu {
   @include small-and-medium {
-    &:not(.website-navigation__menu--expanded) {
+    &:not(.website-navigation__menu--open) {
       display: none;
     }
   }
 }
-.website-navigation__menu--expanded {
+.website-navigation__menu--open {
   @include small-and-medium {
     flex-basis: 100%;
   }
