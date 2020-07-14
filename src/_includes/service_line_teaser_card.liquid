@@ -1,0 +1,26 @@
+{% capture meta-image %}
+    {% if include.avatar-src %}
+        <img class="training-teaser__avatar" alt="" src={{ include.avatar-src | prepend: site.baseurl}}>
+    {% else %}
+        {{ include.icon }}
+    {% endif %}
+{% endcapture %}
+{% if include.course-length %} {% capture course-length %}<span class="training-teaser__course-length">{{ include.course-length }}</span> {% endcapture %}{% endif %}
+
+<article class="service-line-teaser-card">
+    <div class="service-line-teaser-card__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }})"></div>
+    <div class="service-line-teaser-card__content" style="background-image: url({{ site.baseurl }}{{ include.background_image }})">
+        <div class="service-line-teaser-card__primary-content">
+            <h2 class="service-line-teaser-card__tag">{{meta-image}} {{ include.name }} {{ course-length }} </h2>
+            <h3 class="service-line-teaser-card__title">{{ include.title }}</h3>
+        </div>
+        <div class="service-line-teaser-card__secondary-content">
+            <p class="service-line-teaser-card__description">{{ include.description }}</p>
+            {% if include.cta_path %}
+                {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
+                {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
+                {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
+            {% endif %}
+        </div>
+    </div>
+</article>
