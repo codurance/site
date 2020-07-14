@@ -1,7 +1,7 @@
 {% assign menus = site.data.website_navigation_menus %}
 {% assign main_menu_items = menus.main_menu_items %}
 
-<ul class="{{ include.class }} website-navigation-menu__list">
+<ul id="website-navigation-menu" class="{{ include.class }} website-navigation-menu__list">
   {% for item in main_menu_items %}
     {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
     {% if item.connects_to_sub_menu %}
