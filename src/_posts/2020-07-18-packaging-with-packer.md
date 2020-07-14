@@ -4,7 +4,7 @@ asset-type: post
 title: Packaging with Packer
 date: 2020-07-18 00:00:00 +00:00
 author: André Guelfi Torres
-description: What is Packer? how it can help us? and how to use it?
+description: What is Packer? How it can help us and how to use it.
 image:
     src: 
     attribution: 
@@ -40,11 +40,11 @@ very manual, the process goes by:
 - Install everything you need manually
 - Create an image from it
 
-You can have a configuration management tool to setup the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also, it's hard to control when someone connects to the box and make a change without telling anyone. That's when Packer joins the game. 
+You can have a configuration management tool to setup the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also, it's hard to control when someone connects to the box and make a change without telling anyone. Those images also will get out-of-date quicky and the number of packages and that you will have to install and update during the deploy time will increase with time. That's when Packer joins the game. 
 
 ## Packer
 
-Packer comes to solve this kind of problem. it can build images for multiple cloud providers using Infrastructure as Code.
+Packer comes to solve this kind of problem. It can build images for multiple cloud providers using Infrastructure as Code, by starting a new machine in your cloud provider and installing all the dependencies using your desired Configuration Manangent tool, and finally creating an image from the result, Packer can automate this process, leaving litter behind. 
 
 ## Anatomy of a Packer script
 
@@ -60,7 +60,7 @@ In the Builders, the part has declared the kind of machine that we want to creat
 
 `amazon-ebs` means that we are going to have a virtual machine backed by Elastic Block Storage, That's Amazon's hard drive service. Then some basic information so we can connect to aws and the base image that we are going to use.
 
-In this case, we are using the `source_ami_filter` which searches all the public images in AWS. Filtering by the name, which accepts wildcards, the virtualisation type is set to `hvm` that is full hardware virtualisation, and an image that will use `EBS` as the main partition. To avoid bringing images from people we don't know, the `owners` filter is set to a specific owner. Then `most_recent` so we can get an image with the latest patches.
+In this case, we are using the `source_ami_filter` which searches all the public images in AWS. Filtering by the name, which accepts wildcards, the virtualisation type is set to `hvm` that is full hardware virtualisation, and an image that will use `EBS` as the main partition. To avoid bringing images from people we don't know, the `owners` filter is set to a specific owner. Then `most_recent` so we can get an image with the latest patches. If you ever worked with Terraform you will notice that is the same idea in filtering with a slighting differ syntax from `HCL`.
 
 In case you have a specific AMI you can use the `source_ami` option.
 
