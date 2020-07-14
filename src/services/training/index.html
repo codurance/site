@@ -43,7 +43,7 @@ intro:
   {% capture meta-image %}<img class="training-teaser__avatar" alt="" src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl}}>{% endcapture %}
 
   {% for training in training_data %}
-      {% if forloop.index==2 %}
+      {% if training.id == 'crafting_code' %}
           {% include training_card.liquid
               meta-image=meta-image
               author=training.author
