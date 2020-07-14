@@ -15,6 +15,12 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  & .service-line-teaser-card{
+    @include medium {
+      margin-bottom: 30px;
+      width: calc(50% - 15px);
+    }
+  }
   & .service-line-teaser-card:nth-of-type(odd){
       .service-line-teaser-card__image{
         background-position: left center;
