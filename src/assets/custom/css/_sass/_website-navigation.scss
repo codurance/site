@@ -2,12 +2,9 @@ $header-veritical-space: 22px;
 
 .website-navigation {
   background-color: white;
-  padding-top: $header-veritical-space;
-  padding-bottom: $header-veritical-space;
 
   body:not(.toggle--slt-397-website-header-updates) & {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: $header-veritical-space 20px;
   }
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
