@@ -1,9 +1,6 @@
 body:not(.toggle--slt-397-website-header-updates) .website-header {
   background-color: white;
   font-size: 13px;
-}
-body:not(.toggle--slt-397-website-header-updates) .website-header,
-.website-header--revealed {
   left: 0;
   position: sticky;
   right: 0;
@@ -13,6 +10,33 @@ body:not(.toggle--slt-397-website-header-updates) .website-header,
 
 .toggle--slt-397-website-header-updates {
   .website-header {
-    background-color: white;
+    @include small-and-medium {
+      transition: background-color 0.5s, height 0.5s;
+
+      &:not(.website-header--open) {
+        background-color: white;
+        height: 70px;
+        overflow: hidden;
+      }
+      &.website-header--open {
+        background-color: $slate;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+      }
+    }
+    @include large-and-extra-large {
+      background-color: white;
+    }
+  }
+  .website-header--revealed {
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 100;
   }
 }

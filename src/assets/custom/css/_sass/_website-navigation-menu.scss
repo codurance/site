@@ -4,9 +4,15 @@
 }
 
 .website-navigation-menu__item {
-  color: $grey--dark;
   font-size: 18px;
   font-weight: 600;
+
+  .website-header:not(.website-header--open) & {
+    color: $grey--dark;
+  }
+  .website-header.website-header--open & {
+    color: white;
+  }
 
   &:hover,
   &:focus {
