@@ -17,15 +17,30 @@ $website-navigation-menu-toggle-height: 10px;
     background-color: $grey--dark;
     height: 1.5px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: $website-navigation-menu-toggle-width;
+    transition: transform 0.5s, bottom 0.5s;
   }
-  &::before {
-    top: $website-navigation-menu-toggle-spacing;
+  &[aria-expanded="false"]::after,
+  &[aria-expanded="false"]::before {
+    left: $website-navigation-menu-toggle-spacing;
   }
-  &::after {
+  &[aria-expanded="false"]::before {
+    bottom: $website-navigation-menu-toggle-spacing +
+      $website-navigation-menu-toggle-height;
+  }
+  &[aria-expanded="false"]::after {
     bottom: $website-navigation-menu-toggle-spacing;
+  }
+  &[aria-expanded="true"]::after,
+  &[aria-expanded="true"]::before {
+    left: 15px;
+    bottom: 20px;
+  }
+  &[aria-expanded="true"]::before {
+    transform: rotate(45deg);
+  }
+  &[aria-expanded="true"]::after {
+    transform: rotate(-45deg);
   }
 }
 
