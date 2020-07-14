@@ -30,4 +30,4 @@ Gaining these competencies demonstrates our commitment to technical excellence a
 
 Becoming a best in class provider within the global Microsoft Partner Network will enable Codurance to strengthen its capabilities to showcase leadership in the marketplace on the latest technology, to better serve customers (for example through easier access to Microsoft software and experts) and to easily connect with one of the most active, diverse networks in the world. It will also allow us to drive greater collaboration with Microsoft’s technical and commercial teams and the global partner ecosystem, bringing huge opportunities to help even more clients accelerate their transformation to the cloud and modern enterprise solutions.
 
-Talk to us today at [hello@codurance.com](mailto:hello@codurance.com) to discuss how we can help you leverage Microsoft technologies to enable faster software delivery and continuous improvement.
+Talk to us today at [hello@codurance.com](mailto:hello@codurance.com) to discuss how we can help you leverage Microsoft technologies to enable faster software delivery and continuous improvement. 
