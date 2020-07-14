@@ -12,8 +12,9 @@
       </li>
     {% else %}
       {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__item--active{% endif %}{% endcapture %}
       <li>
-        <a href="{{ href }}" class="website-navigation-menu__item">{{ translation }}</a>
+        <a href="{{ href }}" class="website-navigation-menu__item {{ active_class }}">{{ translation }}</a>
       </li>
     {% endif %}
   {% endfor %}  
@@ -26,8 +27,9 @@
     {% for item in sub_menu.items %}
       {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
       {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__item--active{% endif %}{% endcapture %}
       <li>
-        <a class="website-navigation-menu__item" href="{{ href }}">{{ translation }}</a>
+        <a class="website-navigation-menu__item {{ active_class }}" href="{{ href }}">{{ translation }}</a>
       </li>
     {% endfor %}  
   </ul>
