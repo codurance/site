@@ -43,6 +43,8 @@ Not having a business case would be like going into battle without a plan.
 
 There are many areas to consider when preparing a business case for a modernisation project. Still, most of the time, you can be quite safe if you focus on these three factors: the audience, what they need to know, and what they pay off is.
 
+{% include soft_mod_business_case_presentation_banner.html %}
+
 ### Audience
 
 Knowing your audience is one of the aspects you should keep in mind while creating your proposal. It will dictate most of your communication style, wording, needs, and benefits or risks that you will want to emphasise.

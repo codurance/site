@@ -197,6 +197,7 @@ services:
   training:
     title: Training
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
+    hubspot-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
   clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
@@ -655,10 +656,11 @@ software-modernisation:
   cheat-sheet-cta-banner-title: Get our case for change questionnaire
   cheat-sheet-cta-banner-text: This questionnaire will help you ask the right questions to advocate for a Software Modernisation initiative within your organisation.
   cheat-sheet-cta-href: https://info.codurance.com/en/case-for-change-questionnaire
-      
 
-  business-case-presentation-banner-text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
-  business-case-presentation-banner-cta-text: Download template
+  business-case-presentation-banner:
+    text: Launch a Software Modernisation initiative within your organisation using this customisable presentation template.
+    cta-text: Download template
+    cta-href: https://info.codurance.com/en/software-modernisation-presentation-template
 
   webinar:
     teaser:
