@@ -1,8 +1,6 @@
 {% include meta_data.html %}
 
-<title>
-{{title}}
-</title>
+<title>{{title}}</title>
 
  <!-- Meta -->
 <meta charset="utf-8">
@@ -11,7 +9,11 @@
 <meta name="author" content="Codurance Ltd">
 
 {% if page.metarobots %}
- <meta name="robots" content="{{ page.metarobots }}" />
+  <meta name="robots" content="{{ page.metarobots }}" />
+{% endif %}
+
+{% if page.canonical %}
+  <link rel="canonical" href="{{ page.canonical.href }}" />
 {% endif %}
 
 <!-- fonts -->
@@ -63,22 +65,17 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- CSS Legacy -->
-
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/style.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/timeline.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/blocks.css' | prepend: site.baseurl }}">
-
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/app.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/pages/blog.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/pages/page_clients.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/theme-colors/orange.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-1.9/css/custom.css' | prepend: site.baseurl }}">
 
-
-
 <!-- CSS Global Icons -->
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/bootstrap/bootstrap.min.css' | prepend: site.baseurl }}">
-
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/plugins/sky-forms-pro/skyforms/css/sky-forms.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/icon-awesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/icon-line/css/simple-line-icons.css' | prepend: site.baseurl }}">
@@ -95,7 +92,6 @@
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/hs-megamenu/src/hs.megamenu.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/hamburgers/hamburgers.min.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/vendor/custombox/custombox.min.css' | prepend: site.baseurl }}">
-
 
 <!-- CSS Unify -->
 <link rel="stylesheet" href="{{ '/assets/unify-2.4/css/unify-core.css' | prepend: site.baseurl }}">
@@ -114,10 +110,6 @@
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-navbar-or-navigation.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-colours.css' | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ '/assets/custom/css/custom-layout-buttons.css' | prepend: site.baseurl }}">
-
-{% if page.canonical %}
-<link rel="canonical" href="{{ page.canonical.href }}" />
-{% endif %}
 
 <script type="text/javascript" src="https://secure.leadforensics.com/js/113763.js" ></script>
 <noscript><img alt="" src="https://secure.leadforensics.com/113763.png?trk_user=113763&trk_tit=jsdisabled&trk_ref=jsdisabled&trk_loc=jsdisabled" height="0px" width="0px" style="display:none;" /></noscript>
