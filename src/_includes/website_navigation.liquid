@@ -1,8 +1,5 @@
 <nav class="website-navigation">
-  <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link">
-    {% include codurance_logo.liquid class="website-navigation__logo" %}
-  </a>
-
+  {% include website_navigation_home_link.liquid %}
   {% include website_navigation_menu_toggle.liquid class="website-navigation__menu-toggle" %}
   {% include website_navigation_menu.liquid class="website-navigation__menu" %}
   {% include website_navigation_languages.liquid class="website-navigation__languages" %}
