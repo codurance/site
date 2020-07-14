@@ -1,3 +1,7 @@
+body:not(.toggle--slt-397-website-header-updates) .website-header {
+  background-color: white;
+  font-size: 13px;
+}
 body:not(.toggle--slt-397-website-header-updates) .website-header,
 .website-header--revealed {
   left: 0;
@@ -7,7 +11,8 @@ body:not(.toggle--slt-397-website-header-updates) .website-header,
   z-index: 100;
 }
 
-.website-header {
-  background-color: white;
-  font-size: 13px;
+.toggle--slt-397-website-header-updates {
+  .website-header {
+    background-color: white;
+  }
 }
