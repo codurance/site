@@ -1,11 +1,9 @@
 <nav class="website-navigation">
   {% include website_navigation_menu_toggle.liquid %}
 
-  <!-- Logo -->
-  <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link g-mr-25--lg g-mr-50--xl">
+  <a href="{{ '/' | prepend: site.baseurl }}" class="website-navigation__home-link">
     {% include codurance_logo.liquid class="website-navigation__logo" %}
   </a>
-  <!-- End Logo -->
     
   {% include website_navigation_menu.liquid %}
 
