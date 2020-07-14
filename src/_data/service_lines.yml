@@ -47,6 +47,7 @@ strategic-advice:
 training:
   avatar-src: /assets/custom/img/training/sandro_avatar_image.png
   name: Sandro Mancuso
+  course-length: 3 days
   en-title: Crafting Code & Crafted Design
   en-description: The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
   es-title: SPANISH - Crafting Code & Crafted Design
