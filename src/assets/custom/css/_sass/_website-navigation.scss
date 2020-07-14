@@ -20,19 +20,15 @@ $header-veritical-space: 22px;
 }
 
 .website-navigation__menu-toggle {
-  $hamburger-padding: 10px;
-
   @include small-and-medium {
-    background: none;
-    border: 0 none;
     position: absolute;
-    top: $header-veritical-space - $hamburger-padding;
+    top: $header-veritical-space;
   }
   @include small {
-    right: $lateral-space--small - $hamburger-padding;
+    right: $lateral-space--small;
   }
   @include medium {
-    right: $lateral-space--medium - $hamburger-padding;
+    right: $lateral-space--medium;
   }
   @include large-and-extra-large {
     display: none;
