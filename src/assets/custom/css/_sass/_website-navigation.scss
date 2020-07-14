@@ -35,6 +35,19 @@ $header-veritical-space: 22px;
   }
 }
 
+.website-navigation__menu {
+  @include small-and-medium {
+    &:not(.website-navigation__menu--expanded) {
+      display: none;
+    }
+  }
+}
+.website-navigation__menu--expanded {
+  @include small-and-medium {
+    flex-basis: 100%;
+  }
+}
+
 .website-navigation__languages {
   position: absolute;
   top: 28px;
@@ -45,14 +58,5 @@ $header-veritical-space: 22px;
   }
   @include large-and-extra-large {
     right: $lateral-space--large;
-  }
-}
-
-@include small-and-medium {
-  .website-navigation__menu:not(.website-navigation__menu--expanded) {
-    display: none;
-  }
-  .website-navigation__menu--expanded {
-    flex-basis: 100%;
   }
 }
