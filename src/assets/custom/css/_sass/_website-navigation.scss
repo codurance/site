@@ -1,4 +1,4 @@
-$header-veritical-space: 22px;
+$header-veritical-space: 25px;
 
 .website-navigation {
   background-color: white;
@@ -19,16 +19,20 @@ $header-veritical-space: 22px;
   }
 }
 
+.website-navigation__home-link {
+  height: 20px;
+}
+
 .website-navigation__menu-toggle {
   @include small-and-medium {
     position: absolute;
-    top: $header-veritical-space;
+    top: 15px;
   }
   @include small {
-    right: $lateral-space--small;
+    right: $lateral-space--small - $website-navigation-menu-toggle-spacing;
   }
   @include medium {
-    right: $lateral-space--medium;
+    right: $lateral-space--medium - $website-navigation-menu-toggle-spacing;
   }
   @include large-and-extra-large {
     display: none;

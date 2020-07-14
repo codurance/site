@@ -1,4 +1,38 @@
+$website-navigation-menu-toggle-spacing: 15px;
+$website-navigation-menu-toggle-width: 25px;
+$website-navigation-menu-toggle-height: 10px;
+
 .website-navigation-menu-toggle {
   background: none;
   border: 0 none;
+  cursor: pointer;
+  height: $website-navigation-menu-toggle-height +
+    (2 * $website-navigation-menu-toggle-spacing);
+  width: $website-navigation-menu-toggle-width +
+    (2 * $website-navigation-menu-toggle-spacing);
+
+  &::after,
+  &::before {
+    content: "";
+    background-color: $grey--dark;
+    height: 1.5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $website-navigation-menu-toggle-width;
+  }
+  &::before {
+    top: $website-navigation-menu-toggle-spacing;
+  }
+  &::after {
+    bottom: $website-navigation-menu-toggle-spacing;
+  }
+}
+
+.website-navigation-menu-toggle__screen-reader-text {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  text-indent: 3px;
+  width: 1px;
 }
