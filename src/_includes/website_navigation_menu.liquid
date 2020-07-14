@@ -1,31 +1,34 @@
+{% assign menus = site.data.website_navigation_menus %}
+{% assign main_menu_items = menus.main_menu_items %}
+
 <ul class="{{ include.class }} website-navigation-menu__list">
-  <li>
-    <a href="{{ '/clients' | prepend: site.baseurl }}" class="website-navigation-menu__item px-0">{% t sections.clients %}</a>
-  </li>
-  <li>
-    <a href="{{ '/services' | prepend: site.baseurl }}" class="website-navigation-menu__item px-0">{% t sections.services%}</a>
-  </li>
-  <li>
-    <a href="{{ '/publications' | prepend: site.baseurl }}" class="website-navigation-menu__item px-0">{% t sections.publications%}</a>
-  </li>
-  <li>
-    <a href="{{ '/careers' | prepend: site.baseurl }}" class="website-navigation-menu__item px-0">{% t sections.careers%}</a>
-  </li>
-  <li class="website-navigation-menu__list-item--has-sub-menu">
-    <span class="website-navigation-menu__item" id="nav-link-1" aria-expanded="false" aria-controls="nav-submenu-1">
-      {% t sections.about-us%}
-    </span>
-  </li>
-  <li>
-      <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="website-navigation-menu__item px-0">{% t sections.contact%}</a>
-  </li>
+  {% for item in main_menu_items %}
+    {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
+    {% if item.connects_to_sub_menu %}
+      <li class="website-navigation-menu__list-item--has-sub-menu">
+        <button class="website-navigation-menu__sub-menu-toggle" id="sub-menu-toggle-{{ item.key }}" aria-expanded="false" aria-controls="sub-menu-{{ item.connects_to_sub_menu }}">
+          {{ translation }}
+        </button>
+      </li>
+    {% else %}
+      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      <li>
+        <a href="{{ href }}" class="website-navigation-menu__item">{{ translation }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}  
 </ul>
 
-<ul class="website-navigation-menu__sub-menu" id="nav-submenu-1" aria-labelledby="nav-link-1">
-  <li class="website-navigation-menu__dropdown-item">
-    <a class="website-navigation-menu__item" href="{{ '/about-us/our-people' | prepend: site.baseurl }}">{% t sections.our-people%}</a>
-  </li>
-  <li class="website-navigation-menu__dropdown-item">
-    <a class="website-navigation-menu__item" href="{{ '/about-us/our-story' | prepend: site.baseurl }}">{% t sections.our-story%}</a>
-  </li>
-</ul>
+{% assign sub_menus = menus.sub_menus %}
+
+{% for sub_menu in sub_menus %}
+  <ul class="website-navigation-menu__sub-menu" id="sub-menu-{{ sub_menu.key }}" aria-labelledby="sub-menu-toggle-{{ sub_menu.key }}">
+    {% for item in sub_menu.items %}
+      {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
+      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+      <li>
+        <a class="website-navigation-menu__item" href="{{ href }}">{{ translation }}</a>
+      </li>
+    {% endfor %}  
+  </ul>
+{% endfor %}  
