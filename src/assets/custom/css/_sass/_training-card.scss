@@ -6,14 +6,14 @@
 
 .training-card__primary-content,
 .training-card__secondary-content {
-  padding-left: $lateral-space--small;
-  padding-right: $lateral-space--small;
+  padding-left: $lateral-space--medium;
+  padding-right: $lateral-space--medium;
 }
 
 .training-card__primary-content {
   background-color: $slate;
   padding-bottom: 30px;
-  padding-top: 60px;
+  padding-top: 25px;
 }
 .training-card__secondary-content {
   background-color: $slate-light;
@@ -21,14 +21,12 @@
   padding-top: 30px;
 }
 
-
 .training-card__tag {
   @include ponti-bold;
   align-items: center;
   color: white;
   display: flex;
   flex-direction: row;
-  margin: 0 0 30px;
 }
 
 .training-card__title,
@@ -38,10 +36,9 @@
 
 .training-card__title {
   @include freed-bold;
-  margin: 0 0 20px;
 }
 
 .training-card__description {
   @include mercer-reg;
-  margin: 0 0 35px;
+  margin: 0 0 50px;
 }
