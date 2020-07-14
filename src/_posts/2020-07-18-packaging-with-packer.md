@@ -21,16 +21,16 @@ tags:
 
 We all know how important is Infrastructure as Code(IaC) in a DevOps environment, the main reasons are that code is:
 
-- Reproducible: We can run how many times we want and we are going to get the expected result, unlike manual changes automations won't commit silly mistakes of forgetting to run a command.
+- Reproducible: We can run how many times we want and we are going to get the expected result, unlike manual changes automation won't commit silly mistakes of forgetting to run a command.
 - Versionable: We can version using git, track the changes and be able to use the same collaboration tools and techniques like Merge Requests and Review.
 - Automated: Besides triggering you don't have to do anything to get the infrastructure up and running.
 
-In case your project isn't following the latest trend and using something like serverless or Kubernetes there's a big chance that you are using Virtual Machines, even if you are in the cloud. In this case there are two kind of tools for IaC in VM environments. 
+In case your project isn't following the latest trend and using something like serverless or Kubernetes there's a big chance that you are using Virtual Machines, even if you are in the cloud. In this case, there are two kinds of tools for IaC in VM environments. 
 
 - Provisioning Tools: Those are the ones to create the infrastructure, like Terraform or CloudFormation.
 - Configuration Management Tools: Which are the ones used to setup machines, deploy applications and configure them. We have many tools for that like Ansible, Chef, Puppet.
 
-One of the issues that we have around that is time, after provisioning everything we have to install everything to the box, usually you will have multiple applications and runtimes to install before running your application also there's the change of some of those steps to fail due some dependency that isn't available anymore, like a repository for apt. Those applications/runtimes are less prone to change than your configurations or you applications.
+One of the issues that we have around that is time, after provisioning everything we have to install everything to the box, usually, you will have multiple applications and runtimes to install before running your application also there's the change of some of those steps to fail due to some dependency that isn't available anymore, as a repository for apt. Those applications/runtimes are less prone to change than your configurations or your applications.
 
 We can use pre-baked images but there's a problem with that, the creation of pre-baked images is 
 
@@ -38,9 +38,9 @@ very manual, the process goes by:
 
 - Instantiate new machine
 - Install everything you need manually
-- Create image from it
+- Create an image from it
 
-You can have a configuration management tool to setup the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also it's hard to control when someone connects to the box and make a change without telling anyone. That's when Packer joins the game. 
+You can have a configuration management tool to setup the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also, it's hard to control when someone connects to the box and make a change without telling anyone. That's when Packer joins the game. 
 
 ## Packer
 
@@ -56,13 +56,13 @@ A packer script is composed by three main parts:
 
 ### Builders
 
-In the Builders part is declared the kind of machine that we want to create and the base image that you are going to use. In our case we are going to create an AMI for an instance in AWS, so we picked the `amazon-ebs` type which is the most common one.
+In the Builders, the part has declared the kind of machine that we want to create and the base image that you are going to use. In our case we are going to create an AMI for an instance in AWS, so we picked the `amazon-ebs` type which is the most common one.
 
-`amazon-ebs` means that we are going to have a virtual machine backed by Elastic Block Storage, That's Amazon's hard drive service. Then some basic information so we can connect to aws, and the base image that we are going to use.
+`amazon-ebs` means that we are going to have a virtual machine backed by Elastic Block Storage, That's Amazon's hard drive service. Then some basic information so we can connect to aws and the base image that we are going to use.
 
-In this case we are using the `source_ami_filter` which searches all the public images in AWS. Filtering by the name, which accepts wildcards, the virtualisation type is set to `hvm` that is full hardware virtualisation, and a image that will use `EBS` as the main partition. To avoid bringing images from people we don't know, the `owners` filter is set to a specific owner. Then `most_recent` so we can get a image with the latest patches.
+In this case, we are using the `source_ami_filter` which searches all the public images in AWS. Filtering by the name, which accepts wildcards, the virtualisation type is set to `hvm` that is full hardware virtualisation, and an image that will use `EBS` as the main partition. To avoid bringing images from people we don't know, the `owners` filter is set to a specific owner. Then `most_recent` so we can get an image with the latest patches.
 
-In case you have an specific AMI you can use the `source_ami` option.
+In case you have a specific AMI you can use the `source_ami` option.
 
 We have the `instance_type` which defines how powerful is the hardware and the user that we are going to use for ssh into the box.  
 
@@ -99,9 +99,9 @@ We have the `instance_type` which defines how powerful is the hardware and the u
 
 ### Provisioners
 
-Now that the box is set, we have to install the applications and runtimes. To automate the installation we can use one of the Configuration Management tools that I have mentioned before, you also can use shell scripts or powershell. 
+Now that the box is set, we have to install the applications and runtimes. To automate the installation we can use one of the Configuration Management tools that I have mentioned before, you also can use shell scripts or Powershell. 
 
-In this example we are building a box to run Java applications. We want to have Java 11, Filebeat, Metricbeat and Chrony. To make more portable and to avoid installing anything else I'm using the shell provisioner, which is just regular shell commands. You give the type and the command to be executed. Packer will start an instance and SSH to it them execute those commands. 
+In this example, we are building a box to run Java applications. We want to have Java 11, Filebeat, Metricbeat and Chrony. To make more portable and to avoid installing anything else I'm using the shell provisioner, which is just regular shell commands. You give the type and the command to be executed. Packer will start an instance and SSH to it them execute those commands. 
 
 ```json
 {
@@ -149,11 +149,11 @@ packer build image.json
 
 ### More complex builds and Post-Processors.
 
-This is a very simple example, but we might be building images with complex dependencies for an application, for example at Bankable we had a box with a C++ application with quite few dependencies to manage. 
+This is a very simple example, but we might be building images with complex dependencies for an application, for example at Bankable we had a box with a C++ application with quite a few dependencies to manage. 
 
-One of the ways to increase parity between dev and prod. is to have the same environment for both. Packer allow us to do that by having multiple builders, in this case we can use the docker builder to  generate an image with the same contents that the VM. We are using docker because it's lighter and easier to handle locally, but you can pick any of the existing builders.
+One of the ways to increase parity between dev and prod. is to have the same environment for both. Packer allows us to do that by having multiple builders, in this case, we can use the docker builder to generate an image with the same contents that the VM. We are using docker because it's lighter and easier to handle locally, but you can pick any of the existing builders.
 
-We add the `image`, parameter with the base image, `commit` is set to true so we save the image, and the changes is to declare extra information that you can't have in the provisioners. Like labels, exposing ports or setting the entrypoint or command. 
+We add the `image`, a parameter with the base image, `commit` is set to true so we save the image, and the changes are to declare extra information that you can't have in the provisioners. Like labels, exposing ports or setting the entrypoint or command. 
 
 ```json
 {
@@ -195,7 +195,7 @@ We add the `image`, parameter with the base image, `commit` is set to true so we
 }
 ```
 
-Due the ubuntu:18.04 container don't have sudo and curl like the VM we are making a script to fix that, in case there's no sudo installed in the box we install together with curl. 
+Due ubuntu:18.04 container doesn't have sudo and curl like the VM we are making a script to fix that, in case there's no sudo installed in the box we install together with curl. 
 
 ```bash
 #! /bin/bash
@@ -256,7 +256,7 @@ The AMI and the container can be built now, but there's still one problem. There
 
 We can add the `docker-import` to set the repository and the tag and  `docker-push` to send the image to docker hub. 
 
-In both we have the `only` tag to only run the post-processor for the docker builder.
+In both, we have the `only` tag to only run the post-processor for the docker builder.
 
 ```json
 {
@@ -318,7 +318,7 @@ We need to pass the password for docker hub as a variable to packer when buildin
 }
 ```
 
-Packer accepts json files with the variables declared, so we could create a file with the `docker_hub_password`
+Packer accepts JSON files with the variables declared, so we could create a file with the `docker_hub_password`
 
 ```json
 {
@@ -598,6 +598,6 @@ With the base image ready we can change the current file to use the base image, 
 
 ## Wrapping up
 
-We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to setup a new environments. 
+We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to setup new environments. 
 
 Then we went through on how to use Packer to create an image to Amazon and Docker and how to structure our files to avoid waste when build the images.
