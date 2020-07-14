@@ -8,14 +8,14 @@ body:not(.toggle--slt-397-website-header-updates)
 body.toggle--slt-397-website-header-updates {
   .website-navigation-home-link__logo {
     height: 100%;
+    fill: $grey--dark;
+    transition: fill 0.5s;
     width: auto;
   }
 
-  .website-header:not(.website-header--open)
-    .website-navigation-home-link__logo {
-    fill: $grey--dark;
-  }
   .website-header.website-header--open .website-navigation-home-link__logo {
-    fill: white;
+    @include small-and-medium {
+      fill: white;
+    }
   }
 }
