@@ -1,8 +1,16 @@
 .training-card {
   display: flex;
   flex-direction: column;
+
   @include medium-large-and-extra-large {
-    max-width: 350px;
+    flex: 1 310px;
+    margin-bottom: 30px;
+
+    &:nth-last-child(2),
+    &:nth-last-child(5) {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -26,6 +34,11 @@
 
 .training-card__secondary-content--featured {
   background-color: $slate-light;
+}
+
+.training-card__avatar {
+  width: 40px;
+  margin-right: 15px;
 }
 
 .training-card__tag {
