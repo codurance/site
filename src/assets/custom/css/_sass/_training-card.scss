@@ -30,10 +30,10 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-}
 
-.training-card__secondary-content--featured {
-  background-color: $slate-light;
+  .training-card--featured & {
+    background-color: $slate-light;
+  }
 }
 
 .training-card__avatar {
@@ -57,8 +57,8 @@
 .training-card__description {
   @include mercer-reg;
   margin: 0 0 50px;
-}
 
-.training-card__description--featured {
-  color: white
+  .training-card--featured & {
+    color: white
+  }
 }
