@@ -53,11 +53,9 @@ $header-veritical-space: 25px;
 }
 
 .website-navigation__menu {
-  margin: 0;
-
   @include small-and-medium {
     border-top: 1px solid rgba(255, 255, 255, 0);
-    margin-top: $header-veritical-space;
+    margin: $header-veritical-space 0 0;
     transition: height 0.5s, padding-top 0.5s, border-top-color 0.5s;
 
     &:not(.website-navigation__menu--open) {
@@ -72,6 +70,12 @@ $header-veritical-space: 25px;
       overflow: scroll;
       padding-top: 30px;
     }
+  }
+  @include large {
+    margin: 0 25px;
+  }
+  @include extra-large {
+    margin: 0 30px 0 45px;
   }
 }
 

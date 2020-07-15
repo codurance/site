@@ -67,8 +67,6 @@
   }
   @include large-and-extra-large {
     color: $grey--dark;
-    font-size: 18px;
-    line-height: 23px;
     padding: 0 10px;
 
     &--active {
@@ -78,5 +76,13 @@
         right: 10px;
       }
     }
+  }
+  @include large {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include extra-large {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
