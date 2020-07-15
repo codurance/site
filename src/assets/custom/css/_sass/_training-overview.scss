@@ -1,6 +1,6 @@
-$katalyst-banner-height: 442px;
 $katalyst-banner-width: 384px;
-
+$katalyst-banner-height--small-medium: 313px;
+$katalyst-banner-height--large: 442px;
 
 .training-overview-content {
   @include large-and-extra-large{
@@ -18,13 +18,36 @@ $katalyst-banner-width: 384px;
   @include max-width--out-there;
   @include lateral-spacing;
 
-  .in_page_banner__image {
+  @include small {
+    .in_page_banner__image {
+      display: none;
+    }
+    .in_page_banner__main {
+      width: 100%;
+      height: $katalyst-banner-height--small-medium;
+    }
+  }
+
+  @include medium {
+    .in_page_banner__image {
+      display: none;
+    }
+    .in_page_banner__main {
+      width: 100%;
+      height: $katalyst-banner-height--small-medium;
+    }
+  }
+
+  @include large-and-extra-large {
+    .in_page_banner__image {
       width: $katalyst-banner-width;
-      height: $katalyst-banner-height;
+      height: $katalyst-banner-height--large;
     }
 
-  .in_page_banner__main {
-      width: calc(100% - #{$katalyst-banner-width});
-      height: $katalyst-banner-height;
+    .in_page_banner__main {
+        width: calc(100% - #{$katalyst-banner-width});
+        height: $katalyst-banner-height--large;
+    }
   }
+
 }
