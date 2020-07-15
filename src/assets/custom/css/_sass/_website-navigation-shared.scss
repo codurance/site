@@ -1,0 +1,82 @@
+@mixin shared-navigation-link-styles {
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova;
+  font-weight: 600;
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $coral;
+    text-decoration: none;
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      background-color: $coral;
+      content: "";
+      height: 2px;
+      position: absolute;
+    }
+  }
+
+  @include small {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &--active {
+      &::after {
+        left: 25px;
+        right: 25px;
+      }
+    }
+  }
+  @include medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    &--active {
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  @include small-and-medium {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &--active {
+      &::after {
+        bottom: 5px;
+      }
+    }
+    .website-header:not(.website-header--open) & {
+      color: rgba(255, 255, 255, 0);
+    }
+    .website-header.website-header--open & {
+      color: white;
+    }
+  }
+  @include large-and-extra-large {
+    color: $grey--dark;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 10px;
+
+    &--active {
+      &::after {
+        bottom: -2px;
+        left: 10px;
+        right: 10px;
+      }
+    }
+  }
+}

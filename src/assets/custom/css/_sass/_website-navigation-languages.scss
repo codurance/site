@@ -1,0 +1,18 @@
+.website-navigation-languages {
+  list-style-type: none;
+  padding: 0;
+}
+
+.website-navigation-languages__item {
+  @include large-and-extra-large {
+    display: inline-block;
+  }
+  @include extra-large {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.website-navigation-languages__link {
+  @include shared-navigation-link-styles;
+}

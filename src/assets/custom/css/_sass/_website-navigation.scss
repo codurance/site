@@ -54,7 +54,6 @@ $header-veritical-space: 25px;
 
 .website-navigation__menu {
   margin: 0;
-  padding: 0;
 
   @include small-and-medium {
     border-top: 1px solid rgba(255, 255, 255, 0);
@@ -63,6 +62,7 @@ $header-veritical-space: 25px;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
+      padding-top: 0;
       overflow: hidden;
     }
     &.website-navigation__menu--open {
@@ -76,5 +76,6 @@ $header-veritical-space: 25px;
 }
 
 .website-navigation__languages {
-  display: none;
+  background-color: #f0f5; // REMOVE AFTER DEV COMPLETE
+  margin: 0;
 }
