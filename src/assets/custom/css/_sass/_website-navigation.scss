@@ -12,6 +12,23 @@ $header-veritical-space: 25px;
     padding-bottom: $header-veritical-space;
     position: relative;
   }
+
+  @include large-and-extra-large {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      background-color: #808080;
+      bottom: 0;
+      content: "";
+      height: 1px;
+      left: 50px;
+      position: absolute;
+      right: 50px;
+    }
+  }
 }
 
 .website-navigation__home-link {
@@ -55,9 +72,6 @@ $header-veritical-space: 25px;
       overflow: scroll;
       padding-top: 30px;
     }
-  }
-  @include large-and-extra-large {
-    background: #f005; // TODO
   }
 }
 
