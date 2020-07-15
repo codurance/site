@@ -1,8 +1,8 @@
 .training-overview-content {
   @include large-and-extra-large{
     background-color: $navy--ultralight;
-    padding-top: calc(2 * #{$vertical-overlap});
     margin-top: -$vertical-overlap ;
+    padding-top: calc(2 * #{$vertical-overlap});
   }
 }
 
