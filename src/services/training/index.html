@@ -32,13 +32,18 @@ intro:
           %}
       </div>
   </section>
+  <section class="training-overview-katalyst-banner">
+    {% capture title %}{% t  services.training.katalyst-banner-title %}{% endcapture %}
+    {% capture description %}{% t  services.training.katalyst-banner-description %}{% endcapture %}
+    {% include in_page_banner.html 
+      title=title
+      description=description
+      class="training-overview__katalyst-banner" 
+      background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"
+      background_position="30% center"
+    %}
+  </section>
 
-  {% include in_page_banner.html 
-    title="Katalyst" 
-    description="description" 
-    class="training-overview__katalyst-banner" 
-    background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"
-    background_position="30% center"%}
   {% include training_contact_form.liquid %}
 
 {% else %}
