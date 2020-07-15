@@ -6,29 +6,19 @@
 
 .training-card__primary-content {
   background-color: $slate;
-  padding-bottom: 30px;
-  padding-top: 20px;
 }
 
 .training-card__primary-content,
-.training-card__secondary-content--slate-light,
-.training-card__secondary-content--white {
-  padding-left: $lateral-space--medium;
-  padding-right: $lateral-space--medium;
+.training-card__secondary-content {
+  padding: 20px $lateral-space--medium 40px;
 }
 
-.training-card__secondary-content--slate-light,
-.training-card__secondary-content--white {
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.training-card__secondary-content--slate-light {
-  background-color: $slate-light;
-}
-
-.training-card__secondary-content--white {
+.training-card__secondary-content {
   background-color: white;
+}
+
+.training-card__secondary-content--featured {
+  background-color: $slate-light;
 }
 
 .training-card__tag {

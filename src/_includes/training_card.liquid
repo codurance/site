@@ -1,12 +1,13 @@
 {% if include.training.featured %}
-    {% capture avatar %}<img class="training-teaser__avatar" alt="" src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
+    {% capture avatar %}<img class="training-teaser__avatar" alt=""
+                             src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
     {% assign author = include.training.author %}
     {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }} </h2>{% endcapture %}
-    {% assign secondary_content_modifier="training-card__secondary-content--slate-light" %}
-    {% assign description_modifier="training-card__description--white" %}
+    {% assign featured_class = "training-card__secondary-content--featured" %}
+    {% assign description_modifier = "training-card__description--white" %}
 {% else %}
     {% capture tag %}{% endcapture %}
-    {% assign secondary_content_modifier="training-card__secondary-content--white" %}
+    {% assign featured_class = "" %}
     {% assign description_modifier="training-card__description--black" %}
 {% endif %}
 
@@ -15,7 +16,7 @@
         {{ tag }}
         <h3 class="training-card__title">{{ include.training.name }}</h3>
     </div>
-    <div class={{ secondary_content_modifier }}>
+    <div class="training-card__secondary-content {{ featured_class }}">
         <p class={{ description_modifier }}>{{ include.training.description }}</p>
         {% if include.training.cta_path %}
             {% capture cta-href %}{{ include.training.cta_path | prepend: site.baseurl }}{% endcapture %}
