@@ -1,4 +1,5 @@
 $header-veritical-space: 25px;
+$header-height: 70px;
 
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
@@ -8,25 +9,28 @@ $header-veritical-space: 25px;
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
+    height: $header-height;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
-    position: relative;
-  }
 
-  @include large-and-extra-large {
-    align-items: top;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    @include small-and-medium {
+      position: relative;
+    }
 
-    &::after {
-      background-color: #808080;
-      bottom: 0;
-      content: "";
-      height: 1px;
-      left: 50px;
-      position: absolute;
-      right: 50px;
+    @include large-and-extra-large {
+      align-items: top;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        background-color: #808080;
+        content: "";
+        height: 1px;
+        left: 50px;
+        position: absolute;
+        right: 50px;
+        top: $header-height;
+      }
     }
   }
 }
@@ -54,8 +58,6 @@ $header-veritical-space: 25px;
 
 .website-navigation__menu {
   @include small-and-medium {
-    $header-height: 70px;
-
     border-top: 1px solid rgba(255, 255, 255, 0);
     margin: 0;
     position: absolute;
