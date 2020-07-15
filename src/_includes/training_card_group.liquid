@@ -4,36 +4,11 @@
     {% assign training_data=site.data.trainings_en %}
 {% endif %}
 
-{% capture meta-image %}<img class="training-teaser__avatar" alt="" src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl}}>{% endcapture %}
-
 <div class="training-card-group">
     {% for training in training_data %}
-        {% if training.featured %}
-            {% include training_card.liquid
-                meta-image=meta-image
-                author=training.author
-                title=training.name
-                secondary_content_modifier="training-card__secondary-content--slate-light"
-                description=training.description
-                description_modifier="training-card__description--white"
-                cta_path=training.page
-            %}
-        {% endif %}
+        {% include training_card.liquid training=training %}
     {% endfor %}
-
-    {% for training in training_data %}
-        {% unless training.id == 'crafting_code' or training.id == 'crafted_design' %}
-            {% include training_card.liquid
-                title=training.name
-                secondary_content_modifier="training-card__secondary-content--white"
-                description=training.description
-                description_modifier="training-card__description--black"
-                cta_path=training.page
-            %}
-        {% endunless %}
-    {% endfor %}
-
-
 </div>
+
 
 

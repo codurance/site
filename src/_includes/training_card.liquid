@@ -1,12 +1,24 @@
+{% if include.training.featured %}
+    {% capture avatar %}<img class="training-teaser__avatar" alt="" src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
+    {% assign author = include.training.author %}
+    {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }} </h2>{% endcapture %}
+    {% assign secondary_content_modifier="training-card__secondary-content--slate-light" %}
+    {% assign description_modifier="training-card__description--white" %}
+{% else %}
+    {% capture tag %}{% endcapture %}
+    {% assign secondary_content_modifier="training-card__secondary-content--white" %}
+    {% assign description_modifier="training-card__description--black" %}
+{% endif %}
+
 <div class="training-card">
     <div class="training-card__primary-content">
-        <h2 class="training-card__tag">{{include.meta-image}} {{ include.author }} </h2>
-        <h3 class="training-card__title">{{ include.title }}</h3>
+        {{ tag }}
+        <h3 class="training-card__title">{{ include.training.name }}</h3>
     </div>
-    <div class={{ include.secondary_content_modifier }}>
-        <p class={{ include.description_modifier }}>{{ include.description }}</p>
-        {% if include.cta_path %}
-            {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
+    <div class={{ secondary_content_modifier }}>
+        <p class={{ description_modifier }}>{{ include.training.description }}</p>
+        {% if include.training.cta_path %}
+            {% capture cta-href %}{{ include.training.cta_path | prepend: site.baseurl }}{% endcapture %}
             {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
             {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
         {% endif %}
