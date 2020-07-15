@@ -16,7 +16,6 @@ $katalyst-banner-height--large: 442px;
 
 .training-overview__katalyst-banner {
   @include max-width--out-there;
-  @include lateral-spacing;
 
   @include small {
     .in_page_banner__image {
@@ -29,6 +28,7 @@ $katalyst-banner-height--large: 442px;
   }
 
   @include medium {
+    @include lateral-spacing--medium;
     .in_page_banner__image {
       display: none;
     }
@@ -39,6 +39,7 @@ $katalyst-banner-height--large: 442px;
   }
 
   @include large-and-extra-large {
+    @include lateral-spacing--large-and-extra-large;
     .in_page_banner__image {
       width: $katalyst-banner-width;
       height: $katalyst-banner-height--large;
