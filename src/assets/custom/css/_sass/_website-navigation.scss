@@ -14,7 +14,7 @@ $header-veritical-space: 25px;
   }
 
   @include large-and-extra-large {
-    align-items: center;
+    align-items: top;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -80,6 +80,5 @@ $header-veritical-space: 25px;
 }
 
 .website-navigation__languages {
-  background-color: #f0f5; // REMOVE AFTER DEV COMPLETE
   margin: 0;
 }
