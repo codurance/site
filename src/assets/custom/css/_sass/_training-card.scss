@@ -16,11 +16,14 @@
 
 .training-card__primary-content {
   background-color: $slate;
-}
+  padding-bottom: 40px;
+  padding-left: $lateral-space--medium;
+  padding-right: $lateral-space--medium;
+  padding-top: 35px;
 
-.training-card__primary-content,
-.training-card__secondary-content {
-  padding: 20px $lateral-space--medium 40px;
+  .training-card--featured & {
+    padding-top: 20px;
+  }
 }
 
 .training-card__secondary-content {
@@ -30,6 +33,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  padding: 20px $lateral-space--medium 40px;
 
   .training-card--featured & {
     background-color: $slate-light;
