@@ -30,11 +30,9 @@ In case your project isn't following the latest trend and using something like s
 - Provisioning Tools: Those are the ones to create the infrastructure, like Terraform or CloudFormation.
 - Configuration Management Tools: Which are the ones used to setup machines, deploy applications and configure them. We have many tools for that like Ansible, Chef, Puppet.
 
-One of the issues that we have around that is time, after provisioning everything we have to install everything to the box, usually, you will have multiple applications and runtimes to install before running your application also there's the change of some of those steps to fail due to some dependency that isn't available anymore, as a repository for apt. Those applications/runtimes are less prone to change than your configurations or your applications.
+One of the issues that we have is time, after provisioning everything we have to install everything to the box, usually, it's going to be multiple applications and runtimes to install beofre having anything running. During this process of installation something might fail due a dependency that isn't available anymore, like a repository for apt that is missing or even a third party that is having connectivity issues. 
 
-We can use pre-baked images but there's a problem with that, the creation of pre-baked images is 
-
-very manual, the process goes by:
+Those applications/runtimes are less prone to change than your configurations or your applications. We can use pre-baked images but there's a problem with that, the creation of pre-baked images is very manual, the process goes by:
 
 - Instantiate new machine
 - Install everything you need manually
@@ -598,6 +596,6 @@ With the base image ready we can change the current file to use the base image, 
 
 ## Wrapping up
 
-We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to setup new environments. 
+We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to setup new environments. Since Packer is a IaC tool you can add to your CI/CD pipeline and automate and integrate with many things, like adding the new AMI Id to the Auto-Scalling Group in Amazon. 
 
 Then we went through on how to use Packer to create an image to Amazon and Docker and how to structure our files to avoid waste when build the images.
