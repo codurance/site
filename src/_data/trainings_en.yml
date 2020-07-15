@@ -13,25 +13,25 @@
   featured: true
 
 - id: introduction_to_functional_programming
-  name: Introduction to Functional Programming
+  name: "Introduction to <br> Functional Programming"
   author: Jorge Gueorguiev García
   description: A course to learn some of the basics of functional programming for those who are already coding proficient.
   page: /services/training/introduction-to-functional-programming
 
 - id: lambdas
-  name: Microservices with AWS Lambdas
+  name: "Microservices with <br> AWS Lambdas"
   author: Mashooq Badar
   description: Learn how to build and deploy you microservices using the AWS server-less architecture
   page: /services/training/lambda-training
 
 - id: serverless
-  name: Serverless Architecture Using AWS
+  name: "Serverless Architecture <br> Using AWS"
   author: Mashooq Badar
   description: Learn how to take the pain out of building web apps using AWS server-less architecture
   page: /services/training/serverless-training
 
 - id: ead
-  name: Enterprise Application Development
+  name: "Enterprise Application <br> Development"
   author: Mashooq Badar
   description: For developers wanting to learn how to build an enterprise system from scratch
   page: /services/training/enterprise-application-development
