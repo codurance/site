@@ -3,12 +3,12 @@
                              src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
     {% assign author = include.training.author %}
     {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }} </h2>{% endcapture %}
-    {% assign featured_class = "training-card__secondary-content--featured" %}
-    {% assign description_modifier = "training-card__description--white" %}
+    {% assign secondary_content_featured_class = "training-card__secondary-content--featured" %}
+    {% assign description_featured_class = "training-card__description--featured" %}
 {% else %}
     {% capture tag %}{% endcapture %}
-    {% assign featured_class = "" %}
-    {% assign description_modifier="training-card__description--black" %}
+    {% assign secondary_content_featured_class = "" %}
+    {% assign description_featured_class = "" %}
 {% endif %}
 
 <div class="training-card">
