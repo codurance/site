@@ -1,4 +1,6 @@
 .training-card {
+  display: flex;
+  flex-direction: column;
   @include medium-large-and-extra-large {
     max-width: 350px;
   }
@@ -14,7 +16,12 @@
 }
 
 .training-card__secondary-content {
+  align-items: flex-start;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .training-card__secondary-content--featured {
