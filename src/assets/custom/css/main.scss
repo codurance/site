@@ -4,52 +4,6 @@
 $site-base-url: "{{ site.baseurl }}";
 $vertical-overlap: 100px;
 
-// Global or shared
-@import "lateral-spacing";
-@import "breakpoints";
-@import "typography";
-@import "colors";
-@import "backgrounds";
-@import "cta";
-@import "card";
-@import "site-navbar-height";
-@import "website-navigation-shared";
-
-// Portable components
-@import "announcement-slice";
-@import "cards-layout";
-@import "clients-teaser";
-@import "curated-publications";
-@import "get-in-touch";
-@import "hero-teaser";
-@import "hubspot-ctas";
-@import "in-page-banner";
-@import "page-location-anchor";
-@import "section-intro";
-@import "service-line-icon";
-@import "tabber";
-
-// Specific components
-@import "compass-teaser";
-@import "contact-us";
-@import "flexslider";
-@import "home-page";
-@import "service-line-case-studies";
-@import "service-line-hero";
-@import "service-line-teaser-card";
-@import "service-line-teaser-group";
-@import "service-line-testimonials";
-@import "service-line";
-@import "services-curated-publications";
-@import "services-page-intro";
-@import "services-page";
-@import "soft-mod-cheat-sheet-cta-banner";
-@import "training-overview";
-@import "training-teaser";
-@import "ui-components";
-@import "website-header";
-@import "website-navigation-home-link";
-@import "website-navigation-languages";
-@import "website-navigation-menu-toggle";
-@import "website-navigation-menu";
-@import "website-navigation";
+@import "global-or-shared";
+@import "portable-components";
+@import "specific-components";
