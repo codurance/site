@@ -54,8 +54,12 @@ $header-veritical-space: 25px;
 
 .website-navigation__menu {
   @include small-and-medium {
+    $header-height: 70px;
+
     border-top: 1px solid rgba(255, 255, 255, 0);
-    margin: $header-veritical-space 0 0;
+    margin: 0;
+    position: absolute;
+    top: $header-height;
     transition: height 0.5s, padding-top 0.5s, border-top-color 0.5s;
 
     &:not(.website-navigation__menu--open) {
@@ -64,12 +68,19 @@ $header-veritical-space: 25px;
       overflow: hidden;
     }
     &.website-navigation__menu--open {
-      $header-height: 70px;
       border-top-color: rgba(128, 128, 128, 1);
       height: calc(100vh - #{$header-height});
       overflow: scroll;
       padding-top: 30px;
     }
+  }
+  @include small {
+    left: $lateral-space--small;
+    right: $lateral-space--small;
+  }
+  @include medium {
+    left: $lateral-space--medium;
+    right: $lateral-space--medium;
   }
   @include large {
     margin: 0 25px;
