@@ -40,15 +40,24 @@ $header-veritical-space: 25px;
   padding: 0;
 
   @include small-and-medium {
-    transition: height 0.5s;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    margin-top: $header-veritical-space;
+    transition: height 0.5s, padding-top 0.5s, border-top-color 0.5s;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
       overflow: hidden;
     }
     &.website-navigation__menu--open {
-      height: calc(100vh - 70px);
+      $header-height: 70px;
+      border-top-color: rgba(128, 128, 128, 1);
+      height: calc(100vh - #{$header-height});
+      overflow: scroll;
+      padding-top: 30px;
     }
+  }
+  @include large-and-extra-large {
+    background: #f005; // TODO
   }
 }
 

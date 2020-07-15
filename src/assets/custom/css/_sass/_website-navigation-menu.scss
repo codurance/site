@@ -4,17 +4,28 @@
 }
 
 .website-navigation-menu__item {
-  color: $grey--dark;
-  font-size: 18px;
-  font-weight: 600;
-
   @include small-and-medium {
-    transition: color 0.5s;
-
-    .website-header.website-header--open & {
-      color: white;
+    &:not(:last-child) {
+      margin-bottom: 5px;
     }
   }
+  @include large-and-extra-large {
+    display: inline-block;
+  }
+  @include extra-large {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.website-navigation-menu__link,
+.website-navigation-menu__sub-menu-toggle {
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  transition: color 0.5s;
 
   &:hover,
   &:focus {
@@ -22,28 +33,91 @@
     text-decoration: none;
   }
 
-  &.website-navigation-menu__item--active {
-    border: solid $coral;
-    border-width: 0 0 2px 0;
+  &--active {
+    position: relative;
+
+    &::after {
+      background-color: $coral;
+      content: "";
+      height: 2px;
+      position: absolute;
+    }
   }
 
-  .website-navigation-menu__item--has-sub-menu > &::after {
-    content: "";
-    display: inline-block;
-    padding: 4.5px;
+  @include small {
+    padding-left: 25px;
+    padding-right: 25px;
 
-    @include small-and-medium {
-      transform: rotate(-45deg);
-      border: solid $coral;
-      border-width: 0 2px 2px 0;
+    &--active {
+      &::after {
+        left: 25px;
+        right: 25px;
+      }
     }
+  }
+  @include medium {
+    padding-left: 0;
+    padding-right: 0;
 
-    @include large-and-extra-large {
-      transform: rotate(45deg);
-      border: solid $grey--dark;
-      border-width: 0 2px 2px 0;
-      margin: 3px;
+    &--active {
+      &::after {
+        left: 0;
+        right: 0;
+      }
     }
+  }
+  @include small-and-medium {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &--active {
+      &::after {
+        bottom: 5px;
+      }
+    }
+    .website-header:not(.website-header--open) & {
+      color: rgba(255, 255, 255, 0);
+    }
+    .website-header.website-header--open & {
+      color: white;
+    }
+  }
+  @include large-and-extra-large {
+    background: #0f05; // TODO
+    color: $grey--dark;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 10px;
+
+    &--active {
+      &::after {
+        bottom: -2px;
+        left: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.website-navigation-menu__sub-menu-toggle::after {
+  content: "";
+  display: inline-block;
+  padding: 4.5px;
+
+  @include small-and-medium {
+    transform: rotate(-45deg);
+    border: solid $coral;
+    border-width: 0 2px 2px 0;
+  }
+
+  @include large-and-extra-large {
+    transform: rotate(45deg);
+    border: solid $grey--dark;
+    border-width: 0 2px 2px 0;
+    margin: 3px;
   }
 }
 
