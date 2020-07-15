@@ -8,7 +8,7 @@
 
 <div class="training-card-group">
     {% for training in training_data %}
-        {% if training.id == 'crafting_code' or training.id == 'crafted_design' %}
+        {% if training.featured %}
             {% include training_card.liquid
                 meta-image=meta-image
                 author=training.author
