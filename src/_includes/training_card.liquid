@@ -16,12 +16,10 @@
         {{ tag }}
         <h3 class="training-card__title">{{ include.training.name }}</h3>
     </div>
-    <div class="training-card__secondary-content {{ featured_class }}">
-        <p class={{ description_modifier }}>{{ include.training.description }}</p>
-        {% if include.training.cta_path %}
-            {% capture cta-href %}{{ include.training.cta_path | prepend: site.baseurl }}{% endcapture %}
-            {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
-            {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
-        {% endif %}
+    <div class="training-card__secondary-content {{ secondary_content_featured_class }}">
+        <p class="training-card__description {{ description_featured_class }}">{{ include.training.description }}</p>
+        {% capture cta-href %}{{ include.training.page | prepend: site.baseurl }}{% endcapture %}
+        {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
+        {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
     </div>
 </div>
