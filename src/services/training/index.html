@@ -14,7 +14,6 @@ intro:
 {% if site.data.toggles.slt-181-training-overview-page == "on" %}
 
   {%- assign translations = site.translations[site.lang].training-overview -%}
-  {% assign cta_text = site.translations[site.lang].services.learn-more %}
   {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
 
   <section class="training-overview-content">
@@ -34,6 +33,11 @@ intro:
       </div>
   </section>
 
+  {% include in_page_banner.html 
+    title="Katalyst" 
+    description="description" 
+    class="training-overview__katalyst-banner" 
+    background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"%}
   {% include training_contact_form.liquid %}
 
 {% else %}

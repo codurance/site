@@ -9,3 +9,8 @@
 .training-overview-content__cards-wrapper {
   @include max-width--out-there;
 }
+
+.training-overview__katalyst-banner {
+  @include max-width--out-there;
+  @include lateral-spacing;
+}
