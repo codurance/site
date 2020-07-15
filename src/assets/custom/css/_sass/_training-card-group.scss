@@ -2,4 +2,29 @@
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  & .training-card {
+    $space-between-cards: 25px;
+
+    @include extra-large {
+      $cards-per-row: 3;
+
+      margin-bottom: 30px;
+      width: calc(
+        (100% / #{$cards-per-row})
+        - #{$space-between-cards} / 2
+      );
+    }
+    @include medium-and-large {
+      $cards-per-row: 2;
+
+      margin-bottom: 30px;
+      width: calc(
+        (100% / #{$cards-per-row})
+        - #{$space-between-cards} / 2
+      );
+    }
+  }
 }
+

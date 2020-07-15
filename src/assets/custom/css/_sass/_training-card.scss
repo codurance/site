@@ -1,17 +1,6 @@
 .training-card {
   display: flex;
   flex-direction: column;
-
-  @include medium-large-and-extra-large {
-    flex: 1 320px;
-    margin-bottom: 30px;
-
-    &:nth-last-child(2),
-    &:nth-last-child(5) {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-  }
 }
 
 .training-card__primary-content {
