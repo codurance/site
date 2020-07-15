@@ -1,3 +1,7 @@
+$katalyst-banner-height: 442px;
+$katalyst-banner-width: 384px;
+
+
 .training-overview-content {
   @include large-and-extra-large{
     background-color: $navy--ultralight;
@@ -13,4 +17,14 @@
 .training-overview__katalyst-banner {
   @include max-width--out-there;
   @include lateral-spacing;
+
+  .in_page_banner__image {
+      width: $katalyst-banner-width;
+      height: $katalyst-banner-height;
+    }
+
+  .in_page_banner__main {
+      width: calc(100% - #{$katalyst-banner-width});
+      height: $katalyst-banner-height;
+  }
 }
