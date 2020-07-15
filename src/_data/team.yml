@@ -21,18 +21,6 @@
   github: mashooq
   office: London
 
-- id: rob
-  name: Robert Taylor
-  image: /assets/custom/img/team/rob_taylor.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
-    <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
-    <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
-  twitter: roberttaylor426
-  github: roberttaylor426
-  office: London
-
 - id: stevelydford
   name: Steve Lydford
   image: /assets/custom/img/team/steve_lydford.jpg
@@ -44,6 +32,29 @@
     <p>He is a member of the Microsoft Azure Advisor's Group and the London Software Craftsmanship Community (LSCC).</p>
   twitter: stevelydford
   github: stevelydford
+  office: London
+
+- id: amelia_bampton
+  name: Amelia Bampton
+  image: /assets/custom/img/team/amelia_bampton.jpg
+  role: Regional Director - Manchester
+  fullDescription:
+    <p>Amelia discovered her love for technology and how it can enable business success during her university studies. This put her on a pathway to her dream career, working in software delivery, where she brings her energy and drive to help businesses innovate, grow and succeed through the effective delivery of technology solutions.</p>
+    <p>Working for both in-house technology teams and also various global consultancies, in roles such as Business Analyst, Delivery and Portfolio Manager, Amelia has delivered large scale, customer centric technology solutions for companies in a range of industries, including telecoms, retail, motor, public services and health. Building on her agile skill-set, she is a certified scrum master.</p>
+    <p>Joining Codurance as Regional Director for the Manchester office, Amelia is excited about connecting clients in the North with the excellent software craftsmanship the company provides. Having lived and worked in Manchester for the last 15 years, she believes that it is a very exciting time for business in the North, as companies continue to establish themselves in and around the city.</p>
+    <p>In her spare time Amelia enjoys a range of activities to keep her active and outside, such as running, cycling and the gym. The furthest she has run to date is a half-marathon, so a marathon is still on her bucket list of things to achieve, so watch this space for further updates!</p>
+  office: Manchester
+
+- id: rob
+  name: Robert Taylor
+  image: /assets/custom/img/team/rob_taylor.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Rob discovered his passion for software development at university. Shortly after landing his first job and being exposed to 'real world' projects, he discovered his passion for <em>well crafted</em> software.</p>
+    <p>Witnessing the frustration and inertia brought about by code that displayed the scars of corner-cutting and carelessness made him realise the importance of keeping the code clean. In his opinion, since software is eating the world, organisations that disregard the economics of flexible, robust software will ultimately fail.</p>
+    <p>To that end it's since been his goal to constantly improve himself as a software developer. Rob enjoys practising katas, working on open-source projects and being involved with the London Software Craftsmanship Community. He was a co-founder of the open-source Android MVVM framework 'Robobinding'.</p>
+  twitter: roberttaylor426
+  github: roberttaylor426
   office: London
 
 - id: david_hall
