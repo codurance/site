@@ -3,8 +3,8 @@
         <h2 class="training-card__tag">{{include.meta-image}} {{ include.author }} </h2>
         <h3 class="training-card__title">{{ include.title }}</h3>
     </div>
-    <div class="training-card__secondary-content">
-        <p class="training-card__description">{{ include.description }}</p>
+    <div class={{ include.secondary_content_modifier }}>
+        <p class={{ include.description_modifier }}>{{ include.description }}</p>
         {% if include.cta_path %}
             {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
             {% capture cta-text %}{% t services.learn-more %}{% endcapture %}

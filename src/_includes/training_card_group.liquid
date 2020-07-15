@@ -12,16 +12,22 @@
           meta-image=meta-image
           author=training.author
           title=training.name
+          secondary_content_modifier="training-card__secondary-content--slate-light"
           description=training.description
-          cta_path=training.page
-      %}
-  {% else %}
-      {% include training_card.liquid
-          title=training.name
-          description=training.description
+          description_modifier="training-card__description--white"
           cta_path=training.page
       %}
   {% endif %}
+{% endfor %}
 
-
+{% for training in training_data %}
+  {% unless training.id == 'crafting_code' or training.id == 'crafted_design' %}
+      {% include training_card.liquid
+          title=training.name
+          secondary_content_modifier="training-card__secondary-content--white"
+          description=training.description
+          description_modifier="training-card__description--black"
+          cta_path=training.page
+      %}
+  {% endunless %}
 {% endfor %}

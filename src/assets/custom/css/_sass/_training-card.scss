@@ -1,13 +1,7 @@
-.training-card{
-  @include medium-large-and-extra-large{
+.training-card {
+  @include medium-large-and-extra-large {
     max-width: 350px;
   }
-}
-
-.training-card__primary-content,
-.training-card__secondary-content {
-  padding-left: $lateral-space--medium;
-  padding-right: $lateral-space--medium;
 }
 
 .training-card__primary-content {
@@ -15,10 +9,26 @@
   padding-bottom: 30px;
   padding-top: 25px;
 }
-.training-card__secondary-content {
-  background-color: $slate-light;
-  padding-bottom: 60px;
+
+.training-card__primary-content,
+.training-card__secondary-content--slate-light,
+.training-card__secondary-content--white {
+  padding-left: $lateral-space--medium;
+  padding-right: $lateral-space--medium;
+}
+
+.training-card__secondary-content--slate-light,
+.training-card__secondary-content--white {
+  padding-bottom: 40px;
   padding-top: 30px;
+}
+
+.training-card__secondary-content--slate-light {
+  background-color: $slate-light;
+}
+
+.training-card__secondary-content--white {
+  background-color: white;
 }
 
 .training-card__tag {
@@ -29,16 +39,21 @@
   flex-direction: row;
 }
 
-.training-card__title,
-.training-card__description {
-  color: white;
-}
-
 .training-card__title {
   @include freed-bold;
+  color: white
 }
 
-.training-card__description {
+.training-card__description--black,
+.training-card__description--white {
   @include mercer-reg;
   margin: 0 0 50px;
+}
+
+.training-card__description--white {
+  color: white
+}
+
+.training-card__description--black {
+  color: black
 }
