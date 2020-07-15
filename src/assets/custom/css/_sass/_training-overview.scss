@@ -8,4 +8,5 @@
 
 .training-overview-content__cards-wrapper {
   @include max-width--out-there;
+  @include lateral-spacing;
 }
