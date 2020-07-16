@@ -22,6 +22,7 @@ On Thursday 2nd July 2020, our partner Skills Matter hosted a hugely popular onl
 The event, part of Skills Matter’s Thursdays Matter expert meetup series, featured Sandro and Mash discussing software modernisation, facilitated by Codurance’s Head of Professional Services Steve Lydford. 
 
 The lively and entertaining conversation covered a range of ideas including:
+
 - defining what software modernisation is
 - how to identify and understand the business value of modernisation
 - how to modernise whilst building and releasing new features
