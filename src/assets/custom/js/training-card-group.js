@@ -7,21 +7,58 @@
   var track = document.querySelector(TRACK_SELECTOR);
   var navItems = Array.prototype.slice.call(document.querySelectorAll(NAV_ITEM_SELECTOR));
 
+  var touchstartPosition, touchendPosition, currentPosition, numberOfCards;
+
   track.addEventListener('touchstart', handleTouchStart, false);
   track.addEventListener('touchend', handleTouchEnd, false);
+
+  function storeCurrentPosition() {
+    currentPosition = track.dataset.position / 1;
+  }
+
+  function storeNumberOfCards() {
+    numberOfCards = track.dataset.numberOfCards / 1;
+  }
+
+  storeCurrentPosition();
+  storeNumberOfCards();
 
   navItems.forEach(function(item) {
     item.addEventListener('click', handleNavItemClick);
   });
 
-  function handleTouchStart() {
-    console.log('touch start');
+  function handleTouchStart(e) {
+    touchstartPosition = getTouchPosition(e);
+    console.log(`touchstartPosition: `, touchstartPosition);
 
   }
 
-  function handleTouchEnd() {
-    console.log('touch end');
+  function handleTouchEnd(e) {
+    touchendPosition = getTouchPosition(e);
+    console.log(`touchendPosition: `, touchendPosition);
 
+    handleSwipeDirection();
+  }
+
+  function handleSwipeDirection() {
+    var diff = touchstartPosition - touchendPosition;
+    diff < 0 ? moveTrackRight() : moveTrackLeft();
+  }
+
+  function moveTrackLeft() {
+    var targetPosition = currentPosition + 1;
+    if (targetPosition > numberOfCards) targetPosition = numberOfCards;
+    goToPosition(targetPosition);
+  }
+
+  function moveTrackRight() {
+    var targetPosition = currentPosition - 1;
+    if (targetPosition < 1) targetPosition = 1;
+    goToPosition(targetPosition);
+  }
+
+  function getTouchPosition(e) {
+    return e.changedTouches[0].clientX;
   }
 
   function handleNavItemClick(e) {
@@ -30,8 +67,13 @@
   }
 
   function goToPosition(position) {
+    updateCurrentPosition(position);
     positionCard(position);
     highlightNavItem(position);
+  }
+
+  function updateCurrentPosition(position) {
+    currentPosition = position;
   }
 
   function positionCard(position) {
