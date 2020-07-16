@@ -1,26 +1,32 @@
-$header-veritical-space: 25px;
-
 .website-navigation {
-  background-color: white;
-
   body:not(.toggle--slt-397-website-header-updates) & {
+    background-color: white;
     padding: $header-veritical-space 20px;
   }
+
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
-    position: relative;
+
+    @include large-and-extra-large {
+      align-items: top;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
-.website-navigation__home-link {
+.website-navigation__home-link,
+.website-navigation__menu,
+.website-navigation__languages {
   height: 20px;
+}
+.website-navigation__home-link {
+  @include small-and-medium {
+    display: block;
+  }
 }
 
 .website-navigation__menu-toggle {
@@ -41,27 +47,52 @@ $header-veritical-space: 25px;
 
 .website-navigation__menu {
   @include small-and-medium {
+    margin: 0;
+    position: absolute;
+    top: $header-height;
+    transition: height 0.5s, padding-top 0.5s, border-top-color 0.5s;
+
     &:not(.website-navigation__menu--open) {
-      display: none;
+      height: 0;
+      overflow: hidden;
+      padding-top: 0;
+    }
+    &.website-navigation__menu--open {
+      height: calc(100vh - #{$header-height});
+      overflow: scroll;
+      padding-top: 30px;
     }
   }
-}
-.website-navigation__menu--open {
-  @include small-and-medium {
-    flex-basis: 100%;
+  @include small {
+    left: $lateral-space--small;
+    right: $lateral-space--small;
+  }
+  @include medium {
+    left: $lateral-space--medium;
+    right: $lateral-space--medium;
+  }
+  @include large {
+    margin: 0 25px;
+  }
+  @include extra-large {
+    margin: 0 30px 0 45px;
   }
 }
 
 .website-navigation__languages {
-  display: none;
-  position: absolute;
-  top: 28px;
-  z-index: 10;
+  margin: 0;
 
   @include small-and-medium {
-    left: 220px;
-  }
-  @include large-and-extra-large {
-    right: $lateral-space--large;
+    position: absolute;
+    right: 78px;
+    top: $header-veritical-space;
+    transition: opacity 0.5s;
+
+    .website-header:not(.website-header--open) & {
+      opacity: 1;
+    }
+    .website-header.website-header--open & {
+      opacity: 0;
+    }
   }
 }

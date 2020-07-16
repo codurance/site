@@ -1,13 +1,21 @@
-.website-navigation-home-link__logo {
-  body:not(.toggle--slt-397-website-header-updates) & {
-    fill: #010101;
-    height: 20px;
+body:not(.toggle--slt-397-website-header-updates)
+  .website-navigation-home-link__logo {
+  fill: #010101;
+  height: 20px;
+  width: auto;
+}
+
+body.toggle--slt-397-website-header-updates {
+  .website-navigation-home-link__logo {
+    height: 100%;
+    fill: $grey--dark;
+    transition: fill 0.5s;
     width: auto;
   }
 
-  body.toggle--slt-397-website-header-updates & {
-    fill: $grey--dark;
-    height: 100%;
-    width: auto;
+  .website-header.website-header--open .website-navigation-home-link__logo {
+    @include small-and-medium {
+      fill: white;
+    }
   }
 }

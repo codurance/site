@@ -37,14 +37,26 @@ $lateral-space--large: 50px;
 }
 
 @mixin lateral-spacing {
+  @include lateral-spacing--small;
+  @include lateral-spacing--medium;
+  @include lateral-spacing--large-and-extra-large;
+}
+
+@mixin lateral-spacing--small {
   @include small {
     padding-left: $lateral-space--small;
     padding-right: $lateral-space--small;
   }
+}
+
+@mixin lateral-spacing--medium {
   @include medium {
     padding-left: $lateral-space--medium;
     padding-right: $lateral-space--medium;
   }
+}
+
+@mixin lateral-spacing--large-and-extra-large {
   @include large-and-extra-large {
     padding-left: $lateral-space--large;
     padding-right: $lateral-space--large;
