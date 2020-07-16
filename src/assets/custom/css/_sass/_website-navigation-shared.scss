@@ -9,7 +9,6 @@
 
   &:hover,
   &:focus {
-    color: $coral;
     text-decoration: none;
   }
 
@@ -33,12 +32,6 @@
         bottom: 5px;
       }
     }
-    .website-header:not(.website-header--open) & {
-      color: rgba(255, 255, 255, 0);
-    }
-    .website-header.website-header--open & {
-      color: white;
-    }
   }
   @include large-and-extra-large {
     padding-bottom: 0;
@@ -49,11 +42,7 @@
         bottom: -2px;
       }
     }
-    & {
-      color: $grey--dark;
-    }
   }
-
   @include small-and-medium {
     font-size: 21px;
     line-height: 25px;

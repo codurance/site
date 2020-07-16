@@ -32,10 +32,22 @@
         right: 25px;
       }
     }
+    .website-header:not(.website-header--open) & {
+      color: rgba(255, 255, 255, 0);
+    }
+    .website-header.website-header--open & {
+      color: white;
+    }
   }
   @include large-and-extra-large {
+    color: $grey--dark;
     padding-left: 10px;
     padding-right: 10px;
+
+    &:hover,
+    &:focus {
+      color: $coral;
+    }
 
     &--active {
       &::after {
