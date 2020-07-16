@@ -22,7 +22,7 @@
 .website-navigation-menu__sub-menu-toggle {
   @include shared-navigation-link-styles;
 
-  @include small {
+  @include small-and-medium {
     padding-left: 25px;
     padding-right: 25px;
 
@@ -30,17 +30,6 @@
       &::after {
         left: 25px;
         right: 25px;
-      }
-    }
-  }
-  @include medium {
-    padding-left: 0;
-    padding-right: 0;
-
-    &--active {
-      &::after {
-        left: 0;
-        right: 0;
       }
     }
   }
