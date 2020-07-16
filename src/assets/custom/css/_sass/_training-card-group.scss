@@ -26,5 +26,11 @@
       );
     }
   }
+
+  & .training-card:not(.training-card--featured) {
+    @include small {
+      display: none;
+    }
+  }
 }
 
