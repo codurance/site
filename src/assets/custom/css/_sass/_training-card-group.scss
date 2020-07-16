@@ -77,3 +77,25 @@
     }
   }
 }
+
+.training-card-group__navigation-container {
+  padding-bottom: 45px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.training-card-group__navigation-item {
+  background-color: $grey--light;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-left: 15px;
+  width: 15px;
+
+  &:nth-of-type(1) {
+    margin-left: 0
+  }
+  &.active {
+    background-color: $grey--dark;
+  }
+}

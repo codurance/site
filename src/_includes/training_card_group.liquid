@@ -18,4 +18,14 @@
       {% include training_card.liquid training=training %}
     {% endfor %}
   </div>
+  <div class="training-card-group__navigation-container">
+    {%- assign non-featured-training = training_data | where_exp:"item", "item.featured != true" -%}
+    {%- for training in non-featured-training -%}
+        {%- if forloop.first == true -%}
+          <div class="training-card-group__navigation-item active"></div>
+        {%- else -%}
+          <div class="training-card-group__navigation-item"></div>
+        {%- endif -%}
+    {%- endfor -%}
+  </div>
 </div>
