@@ -39,13 +39,13 @@ intro:
   </section>
   <section class="training-overview-katalyst-banner">
     {% capture description %}{% t  services.training.katalyst-banner.description %}{% endcapture %}
-    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture hubspot-id %}{% t  services.training.katalyst-banner.hubspot-form-id %}{% endcapture %}
+    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture title %}{% t  services.training.katalyst-banner.title %}{% endcapture %}
-    {% include in_page_banner.html 
+    {% include in_page_banner.html
       background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"
       background_position="30% center"
-      class="training-overview__katalyst-banner" 
+      class="training-overview__katalyst-banner"
       description=description
       hubspot-cta=hubspot-cta
       title=title
