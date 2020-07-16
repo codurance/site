@@ -1,0 +1,21 @@
+{% if site.lang == 'es' %}
+    {% assign training_data=site.data.trainings_es %}
+{% else %}
+    {% assign training_data=site.data.trainings_en %}
+{% endif %}
+
+<div class="service-line__flexslider-wrapper">
+  <div class="flexslider">
+    <ul class="flexslider__inner slides">
+
+    {%- for training in training_data -%}
+      {%- unless training.featured -%}
+        <li class="flexslider__item">
+          {% include training_card.liquid training=training %}
+        </li>
+      {%- endunless -%}
+    {%- endfor -%}
+
+    </ul>
+  </div>
+</div>
