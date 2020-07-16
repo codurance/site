@@ -21,6 +21,19 @@
   }
 }
 
+.services-page-intro__icon--software-modernisation {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation-icon.png");
+}
+.services-page-intro__icon--software-delivery {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-delivery-icon.png");
+}
+.services-page-intro__icon--strategic-advice {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/strategic-advice-icon.png");
+}
+.services-page-intro__icon--specialist-expertise {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/specialist-expertise-icon.png");
+}
+
 .services-page-intro__text-container {
   @include max-width--out-there;
 }
