@@ -1,0 +1,58 @@
+@mixin shared-navigation-link-styles {
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: proxima-nova;
+  font-weight: 600;
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      background-color: $coral;
+      content: "";
+      height: 2px;
+      position: absolute;
+    }
+  }
+
+  @include small-and-medium {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &--active {
+      &::after {
+        bottom: 5px;
+      }
+    }
+  }
+  @include large-and-extra-large {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &--active {
+      &::after {
+        bottom: -2px;
+      }
+    }
+  }
+  @include small-and-medium {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  @include large {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include extra-large {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

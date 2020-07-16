@@ -1,13 +1,67 @@
-.website-header {
+$header-veritical-space: 25px;
+$header-height: 70px;
+$header-border-width: 1px;
+
+body:not(.toggle--slt-397-website-header-updates) .website-header {
   background-color: white;
   font-size: 13px;
-}
-
-body:not(.toggle--slt-397-website-header-updates) .website-header,
-.website-header--revealed {
   left: 0;
   position: sticky;
   right: 0;
   top: 0;
   z-index: 100;
+}
+
+.toggle--slt-397-website-header-updates {
+  .website-header {
+    @include small-and-medium {
+      transition: background-color 0.5s, height 0.5s;
+
+      &:not(.website-header--open) {
+        background-color: white;
+        height: $header-height + $header-border-width;
+        overflow: hidden;
+      }
+      &.website-header--open {
+        background-color: $slate;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+      }
+    }
+    @include large-and-extra-large {
+      background-color: white;
+    }
+
+    &::after {
+      background-color: #808080;
+      content: "";
+      height: $header-border-width;
+      position: absolute;
+      top: $header-height;
+
+      @include small {
+        left: $lateral-space--small;
+        right: $lateral-space--small;
+      }
+      @include medium {
+        left: $lateral-space--medium;
+        right: $lateral-space--medium;
+      }
+      @include large-and-extra-large {
+        left: $lateral-space--large;
+        right: $lateral-space--large;
+      }
+    }
+  }
+  .website-header--revealed {
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
 }

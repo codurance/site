@@ -1,5 +1,23 @@
-<ul class="{{ include.class }}">
+<ul class="{{ include.class }} website-navigation-languages">
   {% for domain in site.domains %}
-    <li><a href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a></li>
+    {% assign lang = domain[0] %}
+    {% capture text %}{{ lang | upcase }}{% endcapture %}
+    {% capture href %}{{ domain[1] }}{% endcapture %}
+
+    <li class="website-navigation-languages__item">
+      {% if site.lang == lang %}
+        <span 
+          class="
+            website-navigation-languages__link 
+            website-navigation-languages__link--active
+          "
+        >{{ text }}</span>
+      {% else %}
+        <a 
+          class="website-navigation-languages__link" 
+          href="{{ href }}"
+        >{{ text }}</a>
+      {% endif %}
+    </li>
   {% endfor %}
 </ul>

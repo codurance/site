@@ -1,40 +1,94 @@
 .website-navigation-menu {
   list-style-type: none;
-  padding-left: 30px;
+  padding: 0;
 }
 
 .website-navigation-menu__item {
+  @include small-and-medium {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  @include large-and-extra-large {
+    display: inline-block;
+  }
+  @include extra-large {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.website-navigation-menu__link,
+.website-navigation-menu__sub-menu-toggle {
+  @include shared-navigation-link-styles;
+
+  @include small-and-medium {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &--active {
+      &::after {
+        left: 25px;
+        right: 25px;
+      }
+    }
+    .website-header:not(.website-header--open) & {
+      color: rgba(255, 255, 255, 0);
+    }
+    .website-header.website-header--open & {
+      color: white;
+    }
+  }
+  @include large-and-extra-large {
+    color: $grey--dark;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover,
+    &:focus {
+      color: $coral;
+    }
+
+    &--active {
+      &::after {
+        left: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.website-navigation-menu__link--active:focus,
+.website-navigation-menu__link--active:hover {
+  cursor: default;
   color: $grey--dark;
-  font-size: 18px;
-  font-weight: 600;
+}
 
-  &:hover,
-  &:focus {
-    color: $coral;
-    text-decoration: none;
-  }
-
-  &.website-navigation-menu__item--active {
-    border: solid $coral;
-    border-width: 0 0 2px 0;
-  }
-
-  .website-navigation-menu__item--has-sub-menu > &::after {
+.website-navigation-menu__sub-menu-toggle {
+  &::after {
     content: "";
     display: inline-block;
     padding: 4.5px;
+    border-style: solid;
 
     @include small-and-medium {
-      transform: rotate(-45deg);
-      border: solid $coral;
+      border-color: $coral;
       border-width: 0 2px 2px 0;
+      transform: rotate(-45deg);
     }
 
     @include large-and-extra-large {
-      transform: rotate(45deg);
-      border: solid $grey--dark;
       border-width: 0 2px 2px 0;
+      border-color: $grey--dark;
       margin: 3px;
+      transform: rotate(45deg);
+      transition: border-color 0.5s;
+    }
+  }
+  &:hover::after,
+  &:focus::after {
+    @include large-and-extra-large {
+      border-color: $coral;
     }
   }
 }
