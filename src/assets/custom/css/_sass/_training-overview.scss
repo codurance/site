@@ -12,3 +12,9 @@
     @include lateral-spacing;
   }
 }
+
+.training-overview__flexslider-wrapper {
+  @include medium-large-and-extra-large {
+    display: none;
+  }
+}
