@@ -19,7 +19,7 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
 
       &:not(.website-header--open) {
         background-color: white;
-        min-height: $header-height + $header-border-width;
+        height: $header-height + $header-border-width;
         overflow: hidden;
       }
       &.website-header--open {

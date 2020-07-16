@@ -7,7 +7,6 @@
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    min-height: $header-height + $header-border-width;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
 
