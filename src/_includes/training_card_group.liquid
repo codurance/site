@@ -13,7 +13,7 @@
 </div>
 
 <div class="training-card-group">
-  <div class="training-card-group__track" data-position="1">
+  <div class="training-card-group__track" data-nav-track data-position="1">
     {% for training in training_data %}
       {% include training_card.liquid training=training %}
     {% endfor %}
@@ -22,9 +22,9 @@
     {%- assign non-featured-training = training_data | where_exp:"item", "item.featured != true" -%}
     {%- for training in non-featured-training -%}
         {%- if forloop.first == true -%}
-          <div class="training-card-group__navigation-item active"></div>
+          <div class="training-card-group__navigation-item active" data-nav-item></div>
         {%- else -%}
-          <div class="training-card-group__navigation-item"></div>
+          <div class="training-card-group__navigation-item" data-nav-item></div>
         {%- endif -%}
     {%- endfor -%}
   </div>
