@@ -1,28 +1,26 @@
 var websiteNavigation = function () {
-  var EXPANDED_MENU_CLASS = "website-navigation__menu--expanded";
+  var OPEN_MENU_CLASS = "website-navigation__menu--open";
+  var MENU_TOGGLE_SELECTOR = ".website-navigation-menu-toggle";
 
-  var NAVIGATION_MENU_SELECTOR = ".website-navigation__menu";
-  var menuElement = window.document.querySelector(NAVIGATION_MENU_SELECTOR);
+  var menuToggle = window.document.querySelector(MENU_TOGGLE_SELECTOR);
+  var menu = window.document.querySelector(
+    "#" + menuToggle.getAttribute("aria-controls")
+  );
 
-  var MENU_TOGGLE_SELECTOR = ".website-navigation__menu-toggle";
-  var menuToggleElement = window.document.querySelector(MENU_TOGGLE_SELECTOR);
-
-  menuToggleElement.addEventListener("click", toggleMenu);
+  menuToggle.addEventListener("click", toggleMenu);
 
   function toggleMenu() {
-    if (menuElement.classList.contains(EXPANDED_MENU_CLASS)) {
-      collapseMenu();
-      return;
-    }
-    expandMenu();
+    menu.classList.contains(OPEN_MENU_CLASS) ? closeMenu() : openMenu();
   }
 
-  function collapseMenu() {
-    menuElement.classList.remove(EXPANDED_MENU_CLASS);
+  function closeMenu() {
+    menuToggle.setAttribute("aria-expanded", "false");
+    menu.classList.remove(OPEN_MENU_CLASS);
   }
 
-  function expandMenu() {
-    menuElement.classList.add(EXPANDED_MENU_CLASS);
+  function openMenu() {
+    menuToggle.setAttribute("aria-expanded", "true");
+    menu.classList.add(OPEN_MENU_CLASS);
   }
 };
 

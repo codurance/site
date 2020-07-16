@@ -1,0 +1,5 @@
+<ul class="{{ include.class }}">
+  {% for domain in site.domains %}
+    <li><a href="{{ domain[1] }}{{ page.url }}">{{ domain[0] | upcase }}</a></li>
+  {% endfor %}
+</ul>
