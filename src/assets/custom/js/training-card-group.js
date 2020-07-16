@@ -10,7 +10,8 @@
   });
 
   function handleNavItemClick(e) {
-    console.log('clicked');
+    var position = e.target.dataset.position;
+    console.log(position);
 
   }
 
