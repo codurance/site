@@ -198,6 +198,10 @@ services:
     title: Training
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
     hubspot-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
+    katalyst-banner:
+      title: Katalyst Title
+      description: Katalyst Description
+      hubspot-form-id: 93abc185-db09-407f-8616-33888b43e4c0
   clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
