@@ -1,48 +1,16 @@
-$header-veritical-space: 25px;
-$header-height: 70px;
-$header-border-width: 1px;
-
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
     background-color: white;
     padding: $header-veritical-space 20px;
   }
+
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    height: $header-height + $header-border-width;
+    min-height: $header-height + $header-border-width;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
 
-    &::after {
-      background-color: #808080;
-      content: "";
-      height: $header-border-width;
-      position: absolute;
-      top: $header-height;
-    }
-
-    @include small {
-      &::after {
-        left: $lateral-space--small;
-        right: $lateral-space--small;
-      }
-    }
-    @include medium {
-      &::after {
-        left: $lateral-space--medium;
-        right: $lateral-space--medium;
-      }
-    }
-    @include large-and-extra-large {
-      &::after {
-        left: 50px;
-        right: 50px;
-      }
-    }
-    @include small-and-medium {
-      position: relative;
-    }
     @include large-and-extra-large {
       align-items: top;
       display: flex;
@@ -51,9 +19,15 @@ $header-border-width: 1px;
   }
 }
 
-.website-navigation__home-link {
-  display: block;
+.website-navigation__home-link,
+.website-navigation__menu,
+.website-navigation__languages {
   height: 20px;
+}
+.website-navigation__home-link {
+  @include small-and-medium {
+    display: block;
+  }
 }
 
 .website-navigation__menu-toggle {
@@ -74,7 +48,6 @@ $header-border-width: 1px;
 
 .website-navigation__menu {
   @include small-and-medium {
-    border-top: 1px solid rgba(255, 255, 255, 0);
     margin: 0;
     position: absolute;
     top: $header-height;
@@ -82,11 +55,10 @@ $header-border-width: 1px;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
-      padding-top: 0;
       overflow: hidden;
+      padding-top: 0;
     }
     &.website-navigation__menu--open {
-      border-top-color: rgba(128, 128, 128, 1);
       height: calc(100vh - #{$header-height});
       overflow: scroll;
       padding-top: 30px;
@@ -110,4 +82,18 @@ $header-border-width: 1px;
 
 .website-navigation__languages {
   margin: 0;
+
+  @include small-and-medium {
+    position: absolute;
+    right: 78px;
+    top: $header-veritical-space;
+    transition: opacity 0.5s;
+
+    .website-header:not(.website-header--open) & {
+      opacity: 1;
+    }
+    .website-header.website-header--open & {
+      opacity: 0;
+    }
+  }
 }

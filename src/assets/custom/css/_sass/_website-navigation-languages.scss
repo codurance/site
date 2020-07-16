@@ -4,20 +4,6 @@
   list-style-type: none;
   padding: 0;
 
-  @include small-and-medium {
-    position: absolute;
-    right: 78px;
-    top: 15px;
-    transition: opacity 0.5s;
-
-    .website-header:not(.website-header--open) & {
-      opacity: 1;
-    }
-    .website-header.website-header--open & {
-      opacity: 0;
-    }
-  }
-
   &::before {
     content: "";
     background-image: url("#{$site-base-url}/assets/custom/img/icon-language.svg");
