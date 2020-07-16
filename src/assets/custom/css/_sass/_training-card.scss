@@ -43,15 +43,32 @@
 }
 
 .training-card__title {
-  @include freed-bold;
-  color: white
+  color: white;
+
+  @include small {
+    @include mercer-bold;
+  }
+  @include medium-large-and-extra-large {
+    @include freed-bold;
+  }
+
+  .training-card--featured & {
+    @include freed-bold;
+  }
 }
 
 .training-card__description {
-  @include mercer-reg;
   margin: 0 0 50px;
 
+  @include small {
+    @include base;
+  }
+  @include medium-large-and-extra-large {
+    @include mercer-reg;
+  }
+
   .training-card--featured & {
+    @include mercer-reg;
     color: white
   }
 }
