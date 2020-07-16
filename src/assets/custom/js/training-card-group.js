@@ -1,9 +1,10 @@
 (function() {
   var TRACK_SELECTOR = "[data-nav-track]";
   var NAV_ITEM_SELECTOR = "[data-nav-item]";
-  var ACTIVE_CLASS = 'active'
+  var ACTIVE_CLASS = 'active';
+  var ANIMATING_CLASS = 'animating';
 
-  var track = document.querySelectorAll(TRACK_SELECTOR);
+  var track = document.querySelector(TRACK_SELECTOR);
   var navItems = Array.prototype.slice.call(document.querySelectorAll(NAV_ITEM_SELECTOR));
 
   navItems.forEach(function(item) {
@@ -21,8 +22,13 @@
   }
 
   function positionCard(position) {
-    console.log(`positionCard: `, position);
+    track.classList.add(ANIMATING_CLASS);
+    track.addEventListener('transitionend', removeAnimatingClass);
+    track.dataset.position = position;
+  }
 
+  function removeAnimatingClass() {
+    track.classList.remove(ANIMATING_CLASS);
   }
 
   function highlightNavItem(position) {

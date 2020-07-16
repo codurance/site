@@ -58,6 +58,10 @@
   }
 }
 
+.training-card-group__track.animating {
+  transition: left 0.5s ease;
+}
+
 .training-card {
   .training-card-group & {
     @include medium-and-large {
