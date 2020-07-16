@@ -1,6 +1,6 @@
 $header-veritical-space: 25px;
 $header-height: 70px;
-$header-border-width: 1px;
+$header-border-height: 1px;
 
 body:not(.toggle--slt-397-website-header-updates) .website-header {
   background-color: white;
@@ -19,7 +19,7 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
 
       &:not(.website-header--open) {
         background-color: white;
-        height: $header-height + $header-border-width;
+        height: $header-height + $header-border-height;
         overflow: hidden;
       }
       &.website-header--open {
@@ -39,10 +39,12 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     &::after {
       background-color: #808080;
       content: "";
-      height: $header-border-width;
-      position: absolute;
-      top: $header-height;
+      height: $header-border-height;
 
+      @include small-and-medium {
+        position: absolute;
+        top: $header-height;
+      }
       @include small {
         left: $lateral-space--small;
         right: $lateral-space--small;
@@ -52,8 +54,9 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
         right: $lateral-space--medium;
       }
       @include large-and-extra-large {
-        left: $lateral-space--large;
-        right: $lateral-space--large;
+        display: block;
+        margin-left: $lateral-space--large;
+        margin-right: $lateral-space--large;
       }
     }
   }
