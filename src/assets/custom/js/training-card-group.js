@@ -7,9 +7,22 @@
   var track = document.querySelector(TRACK_SELECTOR);
   var navItems = Array.prototype.slice.call(document.querySelectorAll(NAV_ITEM_SELECTOR));
 
+  track.addEventListener('touchstart', handleTouchStart, false);
+  track.addEventListener('touchend', handleTouchEnd, false);
+
   navItems.forEach(function(item) {
     item.addEventListener('click', handleNavItemClick);
   });
+
+  function handleTouchStart() {
+    console.log('touch start');
+
+  }
+
+  function handleTouchEnd() {
+    console.log('touch end');
+
+  }
 
   function handleNavItemClick(e) {
     var position = e.target.dataset.position;
