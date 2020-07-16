@@ -14,6 +14,16 @@ $katalyst-banner-height--large: 442px;
   @include max-width--out-there;
 }
 
+.training-overview-katalyst-banner {
+  @include medium {
+    margin-bottom: 75px;
+  }
+
+  @include large-and-extra-large {
+    margin-bottom: 85px;
+  }
+}
+
 .training-overview__katalyst-banner {
   @include max-width--out-there;
 
