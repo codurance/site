@@ -1,5 +1,6 @@
 $header-veritical-space: 25px;
 $header-height: 70px;
+$header-border-width: 1px;
 
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
@@ -9,28 +10,43 @@ $header-height: 70px;
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    height: $header-height;
+    height: $header-height + $header-border-width;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
 
+    &::after {
+      background-color: #808080;
+      content: "";
+      height: $header-border-width;
+      position: absolute;
+      top: $header-height;
+    }
+
+    @include small {
+      &::after {
+        left: $lateral-space--small;
+        right: $lateral-space--small;
+      }
+    }
+    @include medium {
+      &::after {
+        left: $lateral-space--medium;
+        right: $lateral-space--medium;
+      }
+    }
+    @include large-and-extra-large {
+      &::after {
+        left: 50px;
+        right: 50px;
+      }
+    }
     @include small-and-medium {
       position: relative;
     }
-
     @include large-and-extra-large {
       align-items: top;
       display: flex;
       justify-content: space-between;
-
-      &::after {
-        background-color: #808080;
-        content: "";
-        height: 1px;
-        left: 50px;
-        position: absolute;
-        right: 50px;
-        top: $header-height;
-      }
     }
   }
 }
