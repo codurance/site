@@ -9,8 +9,19 @@
 
   var touchstartPosition, touchendPosition, currentPosition, numberOfCards;
 
-  track.addEventListener('touchstart', handleTouchStart, false);
-  track.addEventListener('touchend', handleTouchEnd, false);
+  function init() {
+    setupEventHandlers();
+    storeCurrentPosition();
+    storeNumberOfCards();
+  }
+
+  function setupEventHandlers() {
+    track.addEventListener('touchstart', handleTouchStart, false);
+    track.addEventListener('touchend', handleTouchEnd, false);
+    navItems.forEach(function(item) {
+      item.addEventListener('click', handleNavItemClick);
+    });
+  }
 
   function storeCurrentPosition() {
     currentPosition = track.dataset.position / 1;
@@ -20,23 +31,12 @@
     numberOfCards = track.dataset.numberOfCards / 1;
   }
 
-  storeCurrentPosition();
-  storeNumberOfCards();
-
-  navItems.forEach(function(item) {
-    item.addEventListener('click', handleNavItemClick);
-  });
-
   function handleTouchStart(e) {
     touchstartPosition = getTouchPosition(e);
-    console.log(`touchstartPosition: `, touchstartPosition);
-
   }
 
   function handleTouchEnd(e) {
     touchendPosition = getTouchPosition(e);
-    console.log(`touchendPosition: `, touchendPosition);
-
     handleSwipeDirection();
   }
 
@@ -93,5 +93,7 @@
     currentlyActive.classList.remove(ACTIVE_CLASS);
     newlyActive.classList.add(ACTIVE_CLASS);
   }
+
+  init();
 
 })();
