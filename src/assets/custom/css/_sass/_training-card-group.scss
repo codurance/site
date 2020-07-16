@@ -1,12 +1,15 @@
 .training-card-group {
-  align-items: stretch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @include small {
+    width: 100%;
+    overflow: hidden;
+  }
 
   & .training-card {
     $space-between-cards: 25px;
 
+    @include small {
+      width: 370px;
+    }
     @include extra-large {
       $cards-per-row: 3;
 
@@ -27,10 +30,38 @@
     }
   }
 
-  & .training-card:not(.training-card--featured) {
+  & .training-card--featured {
     @include small {
       display: none;
     }
   }
 }
 
+.training-card-group--only-featured {
+  @include small {
+    display: block;
+  }
+  @include medium-large-and-extra-large {
+    display: none;
+  }
+}
+
+.training-card-group__track {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include small {
+    $width-of-cards: 370px;
+    $number-of-cards: 4;
+    $space-between-cards: 20px;
+
+    $total-width-of-cards: $width-of-cards * $number-of-cards;
+    $total-width-of-space: $space-between-cards * ($number-of-cards + 1);
+
+    $complete-total-width: $total-width-of-cards + $total-width-of-space;
+
+    width: $complete-total-width;
+  }
+}

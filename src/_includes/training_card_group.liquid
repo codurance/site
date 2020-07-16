@@ -1,11 +1,21 @@
 {% if site.lang == 'es' %}
-    {% assign training_data=site.data.trainings_es %}
+  {% assign training_data=site.data.trainings_es %}
 {% else %}
-    {% assign training_data=site.data.trainings_en %}
+  {% assign training_data=site.data.trainings_en %}
 {% endif %}
 
+<div class="training-card-group--only-featured">
+  {%- for training in training_data -%}
+    {%- if training.featured -%}
+      {% include training_card.liquid training=training %}
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
 <div class="training-card-group">
+  <div class="training-card-group__track">
     {% for training in training_data %}
-        {% include training_card.liquid training=training %}
+      {% include training_card.liquid training=training %}
     {% endfor %}
+  </div>
 </div>
