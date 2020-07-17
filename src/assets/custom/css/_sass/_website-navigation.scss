@@ -61,6 +61,9 @@
       overflow: hidden;
       padding-top: 0;
     }
+    &.website-navigation__menu--showing-sub-menu {
+      left: -100%;
+    }
   }
   @include large {
     margin: 0 25px;

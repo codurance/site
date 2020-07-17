@@ -5,6 +5,8 @@ const HEADER_CLASS = "website-header";
 const OPEN_HEADER_CLASS = "website-header--open";
 const OPEN_MENU_CLASS = "website-navigation__menu--open";
 const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
+const MENU_SHOWING_SUB_MENU_CLASS =
+  "website-navigation__menu--showing-sub-menu";
 const SUB_MENU_TOGGLE_CLASS = "website-navigation-menu__sub-menu-toggle";
 const SUB_MENU_TOGGLE_PROXY_CLASS = "website-navigation-sub-menu__toggle-proxy";
 const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
@@ -67,6 +69,10 @@ describe("Website Navigation Menu", () => {
 
       it("opens the related sub-menu", () => {
         expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+      });
+
+      it("updates the main menu, so it slides out of view on small screens", () => {
+        expect(menu.classList).toContain(MENU_SHOWING_SUB_MENU_CLASS);
       });
 
       describe("When the sub-menu toggle is clicked again", () => {
