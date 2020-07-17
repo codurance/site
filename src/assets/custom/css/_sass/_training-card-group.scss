@@ -26,6 +26,7 @@
     $width-of-cards: 310px;
     $number-of-cards: 4;
     $space-around-cards: 15px;
+    $half-of-card-width: ($width-of-cards / 2);
 
     $total-width-of-cards: $width-of-cards * $number-of-cards;
     $total-width-of-space: $space-around-cards * $number-of-cards;
@@ -38,7 +39,8 @@
       left: 0;
     }
     &[data-position="2"] {
-      left: -($width-of-cards + $space-around-cards);
+      $card-position-in-track: ($width-of-cards + $space-around-cards) * 2;
+      left: calc(-#{$card-position-in-track} + 50vw + #{$half-of-card-width});
     }
     &[data-position="3"] {
       left: -($width-of-cards + $space-around-cards) * 2;
