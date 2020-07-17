@@ -17,7 +17,8 @@
   }
   @include extra-large {
     @include max-width--framed;
-    height: 465px;
+    height: 694px;
+    padding-top: 101px;
   }
 }
 
@@ -25,18 +26,43 @@ $icon-image-width--large-extra-large: 180px;
 $icon-image-height--large-extra-large: 208px;
 
 .services-page-intro__icon--software-modernisation {
-  background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation-icon.png");
-  width: $icon-image-width--large-extra-large;
-  height: $icon-image-height--large-extra-large;
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation-hexagon.png");
+
+  @include large-and-extra-large {
+    width: $icon-image-width--large-extra-large;
+    height: $icon-image-height--large-extra-large;
+    background-size: cover;
+  }
 }
+
 .services-page-intro__icon--software-delivery {
-  background-image: url("#{$site-base-url}/assets/custom/img/services/software-delivery-icon.png");
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-delivery-hexagon.png");
+
+  @include large-and-extra-large {
+    width: $icon-image-width--large-extra-large;
+    height: $icon-image-height--large-extra-large;
+    background-size: cover;
+  }
 }
+
 .services-page-intro__icon--strategic-advice {
-  background-image: url("#{$site-base-url}/assets/custom/img/services/strategic-advice-icon.png");
+  background-image: url("#{$site-base-url}/assets/custom/img/services/strategic-advice-hexagon.png");
+
+  @include large-and-extra-large {
+    width: $icon-image-width--large-extra-large;
+    height: $icon-image-height--large-extra-large;
+    background-size: cover;
+  }
 }
+
 .services-page-intro__icon--specialist-expertise {
-  background-image: url("#{$site-base-url}/assets/custom/img/services/specialist-expertise-icon.png");
+  background-image: url("#{$site-base-url}/assets/custom/img/services/specialist-expertise-hexagon.png");
+
+  @include large-and-extra-large {
+    width: $icon-image-width--large-extra-large;
+    height: $icon-image-height--large-extra-large;
+    background-size: cover;
+  }
 }
 
 .services-page-intro__text-container {
