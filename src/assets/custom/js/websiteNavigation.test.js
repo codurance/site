@@ -15,14 +15,14 @@ let subMenu;
 let subMenuToggle;
 
 describe("Website Navigation Menu", () => {
-  describe("When the page loads with a menu and a sub-menu", () => {
+  describe("Given the page loads with a menu and a sub-menu", () => {
     beforeAll(() => {
       setUpMocks();
       simulatePageLoad();
       captureMocks();
     });
 
-    describe("And then the menu toggle is clicked", () => {
+    describe("When the menu toggle is clicked", () => {
       beforeAll(() => {
         menuToggle.click();
       });
@@ -57,7 +57,7 @@ describe("Website Navigation Menu", () => {
         });
       });
     });
-    describe("And then the sub-menu toggle is clicked", () => {
+    describe("When the sub-menu toggle is clicked", () => {
       beforeAll(() => {
         subMenuToggle.click();
       });
