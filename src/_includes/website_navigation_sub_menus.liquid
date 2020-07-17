@@ -3,11 +3,13 @@
 <div class="{{ include.class }} website-navigation-sub-menus">
   {% for sub_menu in sub_menus %}
     <ul 
-      aria-labelledby="sub-menu-toggle-{{ sub_menu.key }}"
       class="website-navigation-sub-menus__menu" 
       id="sub-menu-{{ sub_menu.key }}" 
     >
-      <button class="website-navigation-sub-menu__toggle">Toggle</button>
+      <button 
+        class="website-navigation-sub-menu__toggle-proxy" 
+        data-sub_menu_toggle_id="sub-menu-toggle-{{ sub_menu.key }}"
+      >Toggle</button>
       {% for item in sub_menu.items %}
         {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
         {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 

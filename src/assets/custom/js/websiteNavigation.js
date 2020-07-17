@@ -1,20 +1,45 @@
 var websiteNavigation = function () {
   var HEADER_SELECTOR = ".website-header";
   var MENU_TOGGLE_SELECTOR = ".website-navigation-menu-toggle";
+  var SUB_MENU_TOGGLE_SELECTOR = ".website-navigation-menu__sub-menu-toggle";
 
   var OPEN_HEADER_CLASS = "website-header--open";
   var OPEN_MENU_CLASS = "website-navigation__menu--open";
+  var OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
 
   var header = window.document.querySelector(HEADER_SELECTOR);
   var menuToggle = window.document.querySelector(MENU_TOGGLE_SELECTOR);
   var menu = window.document.querySelector(
     "#" + menuToggle.getAttribute("aria-controls")
   );
+  var menuSubToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
 
-  menuToggle.addEventListener("click", toggleMenu);
+  function setupEventListeners() {
+    menuToggle.addEventListener("click", toggleMenu);
+    menuSubToggles.forEach(function (t) {
+      t.addEventListener("click", toggleSubMenu);
+    });
+  }
 
   function toggleMenu() {
     menu.classList.contains(OPEN_MENU_CLASS) ? closeMenu() : openMenu();
+  }
+
+  function toggleSubMenu(e) {
+    var subMenuToggle = e.target;
+    var subMenu = window.document.getElementById(
+      subMenuToggle.getAttribute("aria-controls")
+    );
+
+    subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
+      ? closeSubMenu(subMenu, subMenuToggle)
+      : openSubMenu(subMenu, subMenuToggle);
+  }
+
+  function openMenu() {
+    header.classList.add(OPEN_HEADER_CLASS);
+    menuToggle.setAttribute("aria-expanded", "true");
+    menu.classList.add(OPEN_MENU_CLASS);
   }
 
   function closeMenu() {
@@ -23,11 +48,17 @@ var websiteNavigation = function () {
     menu.classList.remove(OPEN_MENU_CLASS);
   }
 
-  function openMenu() {
-    header.classList.add(OPEN_HEADER_CLASS);
-    menuToggle.setAttribute("aria-expanded", "true");
-    menu.classList.add(OPEN_MENU_CLASS);
+  function openSubMenu(subMenu, subMenuToggle) {
+    subMenuToggle.setAttribute("aria-expanded", "true");
+    subMenu.classList.add(OPEN_SUB_MENU_CLASS);
   }
+
+  function closeSubMenu(subMenu, subMenuToggle) {
+    subMenuToggle.setAttribute("aria-expanded", "false");
+    subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
+  }
+
+  setupEventListeners();
 };
 
 window.addEventListener("DOMContentLoaded", websiteNavigation);

@@ -1,14 +1,14 @@
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
     background-color: white;
-    padding: $header-veritical-space 20px;
+    padding: $header-vertical-spacing 20px;
   }
 
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    padding-top: $header-veritical-space;
-    padding-bottom: $header-veritical-space;
+    padding-top: $header-vertical-spacing;
+    padding-bottom: $header-vertical-spacing;
   }
 }
 
@@ -47,43 +47,19 @@
   }
 }
 
-@mixin shared-menu-and-submenu-styles {
-  @include small-and-medium {
-    height: calc(100vh - #{$header-height});
-    margin: 0;
-    overflow: scroll;
-    padding-top: 30px;
-    position: absolute;
-    top: $header-height;
-  }
-  @include small {
-    padding-left: $lateral-space--small;
-    padding-right: $lateral-space--small;
-  }
-  @include medium {
-    padding-left: $lateral-space--medium;
-    padding-right: $lateral-space--medium;
-  }
-}
-
 .website-navigation__menu {
-  @include shared-menu-and-submenu-styles;
+  @include shared-navigation-menu-spacing;
+  @include shared-navigation-menu-position;
 
   @include small-and-medium {
     left: 0;
     margin: 0;
-    position: absolute;
-    top: $header-height;
     transition: height 0.5s, left 0.5s, padding-top 0.5s, border-top-color 0.5s;
-    width: 100%;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
       overflow: hidden;
       padding-top: 0;
-    }
-    &.website-navigation__menu--showing-sub-menu {
-      left: -100%;
     }
   }
   @include large {
@@ -94,13 +70,21 @@
   }
 }
 
+.website-navigation__submenus {
+  @include shared-navigation-menu-position;
+
+  @include small-and-medium {
+    left: 100%;
+  }
+}
+
 .website-navigation__languages {
   margin: 0;
 
   @include small-and-medium {
     position: absolute;
     right: 78px;
-    top: $header-veritical-space;
+    top: $header-vertical-spacing;
     transition: opacity 0.5s;
 
     .website-header:not(.website-header--open) & {
@@ -108,33 +92,6 @@
     }
     .website-header.website-header--open & {
       opacity: 0;
-    }
-  }
-}
-
-.website-navigation__submenus {
-  @include shared-menu-and-submenu-styles;
-
-  @include small-and-medium {
-    transition: left 0.5s;
-
-    &:not(.website-navigation__submenus--showing) {
-      left: 100%;
-    }
-    &.website-navigation__submenus--showing {
-      left: 0;
-    }
-  }
-  @include large-and-extra-large {
-    transition: height 0.5s, opacity 0.5s;
-
-    &:not(.website-navigation__submenus--showing) {
-      height: 0;
-      opacity: 0;
-    }
-    &.website-navigation__submenus--showing {
-      height: 100px;
-      opacity: 1;
     }
   }
 }

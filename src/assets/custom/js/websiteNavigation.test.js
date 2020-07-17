@@ -5,19 +5,21 @@ const HEADER_CLASS = "website-header";
 const OPEN_HEADER_CLASS = "website-header--open";
 const OPEN_MENU_CLASS = "website-navigation__menu--open";
 const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
+const SUB_MENU_TOGGLE_CLASS = "website-navigation-menu__sub-menu-toggle";
+const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
 
 let header;
-let menuToggle;
 let menu;
+let menuToggle;
+let subMenu;
+let subMenuToggle;
 
 describe("Website Navigation Menu", () => {
-  describe("When the page loads and there is a menu toggle and a related menu", () => {
+  describe("When the page loads with a menu and a sub-menu", () => {
     beforeAll(() => {
       setUpMocks();
       simulatePageLoad();
-      header = getMockHeader();
-      menuToggle = getMockMenuToggle();
-      menu = getMockMenu();
+      captureMocks();
     });
 
     describe("And then the menu toggle is clicked", () => {
@@ -54,6 +56,26 @@ describe("Website Navigation Menu", () => {
           expect(header.classList).not.toContain(OPEN_HEADER_CLASS);
         });
       });
+
+      describe("When the sub-menu toggle is clicked", () => {
+        beforeAll(() => {
+          subMenuToggle.click();
+        });
+
+        it("opens the related sub-menu", () => {
+          expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        describe("When the sub-menu toggle is clicked again", () => {
+          beforeAll(() => {
+            subMenuToggle.click();
+          });
+
+          it("closes the related sub-menu", () => {
+            expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+          });
+        });
+      });
     });
   });
 });
@@ -62,9 +84,19 @@ function setUpMocks() {
   createMockHeader();
   createMockMenuToggle();
   createMockMenu();
+  createMockSubMenu();
+}
+
+function captureMocks() {
+  header = getMockHeader();
+  menu = getMockMenu();
+  menuToggle = getMockMenuToggle();
+  subMenu = getMockSubMenu();
+  subMenuToggle = getMockSubMenuToggle();
 }
 
 const MENU_ID = "mockMenuId";
+const SUB_MENU_ID = "mockSubMenuId";
 
 function createMockHeader() {
   const header = window.document.createElement("div");
@@ -73,7 +105,7 @@ function createMockHeader() {
 }
 
 function createMockMenuToggle() {
-  const menuToggle = window.document.createElement("div");
+  const menuToggle = window.document.createElement("button");
   menuToggle.setAttribute("aria-controls", MENU_ID);
   menuToggle.setAttribute("aria-expanded", false);
   menuToggle.classList.add(MENU_TOGGLE_CLASS);
@@ -83,8 +115,20 @@ function createMockMenuToggle() {
 function createMockMenu() {
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
-  menu.setAttribute("aria-expanded", false);
+
+  const subMenuToggle = window.document.createElement("button");
+  subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID);
+  subMenuToggle.setAttribute("aria-expanded", false);
+  subMenuToggle.classList.add(SUB_MENU_TOGGLE_CLASS);
+
   window.document.body.appendChild(menu);
+  menu.appendChild(subMenuToggle);
+}
+
+function createMockSubMenu() {
+  const subMenu = window.document.createElement("div");
+  subMenu.id = SUB_MENU_ID;
+  window.document.body.appendChild(subMenu);
 }
 
 function getMockHeader() {
@@ -97,4 +141,12 @@ function getMockMenuToggle() {
 
 function getMockMenu() {
   return window.document.querySelector(`#${MENU_ID}`);
+}
+
+function getMockSubMenuToggle() {
+  return window.document.querySelector(`.${SUB_MENU_TOGGLE_CLASS}`);
+}
+
+function getMockSubMenu() {
+  return window.document.querySelector(`#${SUB_MENU_ID}`);
 }
