@@ -1,4 +1,9 @@
 .website-navigation-sub-menus {
+  @include small-and-medium {
+    .website-header:not(.website-header--open) & {
+      display: none;
+    }
+  }
 }
 
 .website-navigation-sub-menus__menu {
@@ -34,9 +39,18 @@
       margin-bottom: 5px;
     }
   }
+  @include large {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
   @include extra-large {
     margin-left: 10px;
     margin-right: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -87,6 +101,8 @@
 
 .website-navigation-sub-menu__toggle-proxy {
   @include small-and-medium {
+    margin-bottom: 15px;
+
     &::before {
       border-color: $coral;
       border-style: solid;

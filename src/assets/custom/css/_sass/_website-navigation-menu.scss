@@ -93,7 +93,10 @@
       }
     }
     &[aria-expanded="true"] {
+      color: $coral;
+
       &::after {
+        border-color: $coral;
         top: 6px;
         transform: rotate(225deg);
       }
