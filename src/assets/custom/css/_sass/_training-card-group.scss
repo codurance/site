@@ -1,5 +1,17 @@
 $width-of-cards-on-small-screen: 310px;
+$half-of-card-width: ($width-of-cards-on-small-screen / 2);
+$space-around-cards-from-medium-width: 25px;
 $space-around-cards-on-small-screen: 15px;
+$number-of-cards-in-carousel: 4;
+
+$total-width-of-cards-on-small-screen:
+  $width-of-cards-on-small-screen * $number-of-cards-in-carousel;
+
+$total-width-of-space:
+    $space-around-cards-on-small-screen * $number-of-cards-in-carousel;
+
+$complete-total-width:
+  $total-width-of-cards-on-small-screen + $total-width-of-space;
 
 .training-card-group {
   @include small {
@@ -25,28 +37,21 @@ $space-around-cards-on-small-screen: 15px;
 
   @include small {
     position: relative;
-
-
-    $number-of-cards: 4;
-
-    $half-of-card-width: ($width-of-cards-on-small-screen / 2);
-
-    $total-width-of-cards-on-small-screen: $width-of-cards-on-small-screen * $number-of-cards;
-    $total-width-of-space: $space-around-cards-on-small-screen * $number-of-cards;
-
-    $complete-total-width: $total-width-of-cards-on-small-screen + $total-width-of-space;
-
     width: $complete-total-width;
 
     &[data-position="1"] {
       left: 0;
     }
     &[data-position="2"] {
-      $card-position-in-track: ($width-of-cards-on-small-screen + $space-around-cards-on-small-screen) * 2;
+      $card-position-in-track:
+        ($width-of-cards-on-small-screen + $space-around-cards-on-small-screen) * 2;
+
       left: calc(-#{$card-position-in-track} + 50vw + #{$half-of-card-width});
     }
     &[data-position="3"] {
-      $card-position-in-track: ($width-of-cards-on-small-screen + $space-around-cards-on-small-screen) * 3;
+      $card-position-in-track:
+        ($width-of-cards-on-small-screen + $space-around-cards-on-small-screen) * 3;
+
       left: calc(-#{$card-position-in-track} + 50vw + #{$half-of-card-width});
     }
     &[data-position="4"] {
@@ -73,23 +78,21 @@ $space-around-cards-on-small-screen: 15px;
 .training-card {
   .training-card-group & {
     @include medium-and-large {
-      $space-around-cards: 25px;
       $cards-per-row: 2;
 
       margin-bottom: 30px;
       width: calc(
         (100% / #{$cards-per-row})
-        - #{$space-around-cards} / 2
+        - #{$space-around-cards-from-medium-width} / 2
       );
     }
     @include extra-large {
-      $space-around-cards: 25px;
       $cards-per-row: 3;
 
       margin-bottom: 30px;
       width: calc(
         (100% / #{$cards-per-row})
-        - #{$space-around-cards} / 2
+        - #{$space-around-cards-from-medium-width} / 2
       );
     }
   }
