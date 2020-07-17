@@ -56,24 +56,23 @@ describe("Website Navigation Menu", () => {
           expect(header.classList).not.toContain(OPEN_HEADER_CLASS);
         });
       });
+    });
+    describe("And then the sub-menu toggle is clicked", () => {
+      beforeAll(() => {
+        subMenuToggle.click();
+      });
 
-      describe("When the sub-menu toggle is clicked", () => {
+      it("opens the related sub-menu", () => {
+        expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+      });
+
+      describe("When the sub-menu toggle is clicked again", () => {
         beforeAll(() => {
           subMenuToggle.click();
         });
 
-        it("opens the related sub-menu", () => {
-          expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
-        });
-
-        describe("When the sub-menu toggle is clicked again", () => {
-          beforeAll(() => {
-            subMenuToggle.click();
-          });
-
-          it("closes the related sub-menu", () => {
-            expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
-          });
+        it("closes the related sub-menu", () => {
+          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
       });
     });
