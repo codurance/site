@@ -21,8 +21,13 @@
   }
 }
 
+$icon-image-width--large-extra-large: 180px;
+$icon-image-height--large-extra-large: 208px;
+
 .services-page-intro__icon--software-modernisation {
   background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation-icon.png");
+  width: $icon-image-width--large-extra-large;
+  height: $icon-image-height--large-extra-large;
 }
 .services-page-intro__icon--software-delivery {
   background-image: url("#{$site-base-url}/assets/custom/img/services/software-delivery-icon.png");
