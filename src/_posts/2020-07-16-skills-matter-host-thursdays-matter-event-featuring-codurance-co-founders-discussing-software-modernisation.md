@@ -32,7 +32,9 @@ The lively and entertaining conversation covered a range of ideas including:
 
 The video is now available to watch on our [YouTube channel](https://www.youtube.com/user/codurance/videos) or watch it here. Do give it a like or comment to share with the community.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6uW23meYPH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="fluid-video-wapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6uW23meYPH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 To evaluate the current health of your own software development process and gain valuable recommendations to improve, why not try our free inhouse Compass Tool [here](https://compass.codurance.com/).
 
