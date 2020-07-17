@@ -43,7 +43,8 @@
       left: calc(-#{$card-position-in-track} + 50vw + #{$half-of-card-width});
     }
     &[data-position="3"] {
-      left: -($width-of-cards + $space-around-cards) * 2;
+      $card-position-in-track: ($width-of-cards + $space-around-cards) * 3;
+      left: calc(-#{$card-position-in-track} + 50vw + #{$half-of-card-width});
     }
     &[data-position="4"] {
       left: calc(-#{$complete-total-width} + (100vw - 15px));
