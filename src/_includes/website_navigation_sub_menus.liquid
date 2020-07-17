@@ -1,0 +1,21 @@
+{% assign sub_menus = site.data.website_navigation_menus.sub_menus %}
+
+<div class="{{ include.class }} website-navigation-sub-menus">
+  {% for sub_menu in sub_menus %}
+    <ul 
+      aria-labelledby="sub-menu-toggle-{{ sub_menu.key }}"
+      class="website-navigation-sub-menus__menu" 
+      id="sub-menu-{{ sub_menu.key }}" 
+    >
+      <button class="website-navigation-sub-menu__toggle">Toggle</button>
+      {% for item in sub_menu.items %}
+        {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
+        {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+        {% capture active_class %}{% if item.path == page.url %}website-navigation-sub-menu__link--active{% endif %}{% endcapture %}
+        <li class="website-navigation-sub-menu__item">
+          <a class="website-navigation-sub-menu__link {{ active_class }}" href="{{ href }}">{{ translation }}</a>
+        </li>
+      {% endfor %}  
+    </ul>
+  {% endfor %}  
+</div>

@@ -1,6 +1,9 @@
 <nav class="website-navigation">
-  {% include website_navigation_home_link.liquid class="website-navigation__home-link" %}
-  {% include website_navigation_menu_toggle.liquid class="website-navigation__menu-toggle" %}
-  {% include website_navigation_menu.liquid class="website-navigation__menu" %}
-  {% include website_navigation_languages.liquid class="website-navigation__languages" %}
+  <div class="website-navigation__main">
+    {% include website_navigation_home_link.liquid class="website-navigation__home-link" %}
+    {% include website_navigation_menu_toggle.liquid class="website-navigation__menu-toggle" %}
+    {% include website_navigation_menu.liquid class="website-navigation__menu" %}
+    {% include website_navigation_languages.liquid class="website-navigation__languages" %}
+  </div>
+  {% include website_navigation_sub_menus.liquid class="website-navigation__submenus" %}
 </nav>

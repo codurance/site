@@ -9,12 +9,14 @@
     @include max-width--out-there;
     padding-top: $header-veritical-space;
     padding-bottom: $header-veritical-space;
+  }
+}
 
-    @include large-and-extra-large {
-      align-items: top;
-      display: flex;
-      justify-content: space-between;
-    }
+.website-navigation__main {
+  @include large-and-extra-large {
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -95,4 +97,7 @@
       opacity: 0;
     }
   }
+}
+
+.website-navigation__submenus {
 }

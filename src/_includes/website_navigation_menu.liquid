@@ -22,22 +22,3 @@
     </li>
   {% endfor %}  
 </ul>
-
-{% assign sub_menus = menus.sub_menus %}
-
-{% for sub_menu in sub_menus %}
-  <ul 
-    aria-labelledby="sub-menu-toggle-{{ sub_menu.key }}"
-    class="website-navigation-menu__sub-menu" 
-    id="sub-menu-{{ sub_menu.key }}" 
-  >
-    {% for item in sub_menu.items %}
-      {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
-      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
-      {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__link--active{% endif %}{% endcapture %}
-      <li>
-        <a class="website-navigation-menu__link {{ active_class }}" href="{{ href }}">{{ translation }}</a>
-      </li>
-    {% endfor %}  
-  </ul>
-{% endfor %}  
