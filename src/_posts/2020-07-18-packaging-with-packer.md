@@ -19,16 +19,16 @@ tags:
 
 # AMIs and the Old Way
 
-We all know how important is Infrastructure as Code(IaC) in a DevOps environment, the main reasons are that code is:
+We all know how important Infrastructure as Code(IaC) is in a DevOps environment. The main reasons are that code is:
 
-- Reproducible: We can run how many times we want and we are going to get the expected result, unlike manual changes automation won't commit silly mistakes of forgetting to run a command.
-- Versionable: We can version using git, track the changes and be able to use the same collaboration tools and techniques like Merge Requests and Review.
-- Automated: Besides triggering you don't have to do anything to get the infrastructure up and running.
+- **Reproducible**: We can run how many times we want and we are going to get the expected result, unlike manual changes automation won't commit silly mistakes of forgetting to run a command.
+- **Versionable**: We can version using git, track the changes and be able to use the same collaboration tools and techniques like Merge Requests and Review.
+- **Automated**: Besides triggering you don't have to do anything to get the infrastructure up and running.
 
 In case your project isn't following the latest trend and using something like serverless or Kubernetes there's a big chance that you are using Virtual Machines, even if you are in the cloud. In this case, there are two kinds of tools for IaC in VM environments. 
 
-- Provisioning Tools: Those are the ones to create the infrastructure, like Terraform or CloudFormation.
-- Configuration Management Tools: Which are the ones used to setup machines, deploy applications and configure them. We have many tools for that like Ansible, Chef, Puppet.
+- **Provisioning Tools**: Those are the ones to create the infrastructure, like Terraform or CloudFormation.
+- **Configuration Management Tools**: Which are the ones used to set up machines, deploy applications and configure them. We have many tools for that like Ansible, Chef, Puppet.
 
 One of the issues that we have is time, after provisioning everything we have to install everything to the box, usually, it's going to be multiple applications and runtimes to install beofre having anything running. During this process of installation something might fail due a dependency that isn't available anymore, like a repository for apt that is missing or even a third party that is having connectivity issues. 
 
@@ -38,7 +38,7 @@ Those applications/runtimes are less prone to change than your configurations or
 - Install everything you need manually
 - Create an image from it
 
-You can have a configuration management tool to setup the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also, it's hard to control when someone connects to the box and make a change without telling anyone. Those images also will get out-of-date quicky and the number of packages and that you will have to install and update during the deploy time will increase with time. That's when Packer joins the game. 
+You can have a configuration management tool to set up the box but the process still has a lot of space for manual error when picking the machine or doing anything else that you are not supposed to when installing the applications. Also, it's hard to control when someone connects to the box and make a change without telling anyone. Those images also will get out-of-date quicky and the number of packages and that you will have to install and update during the deploy time will increase with time. That's when Packer joins the game. 
 
 ## Packer
 
@@ -145,13 +145,13 @@ Now it's time to run and build the image.
 packer build image.json
 ```
 
-### More complex builds and Post-Processors.
+### More complex builds and Post-Processors
 
 This is a very simple example, but we might be building images with complex dependencies for an application, for example at Bankable we had a box with a C++ application with quite a few dependencies to manage. 
 
 One of the ways to increase parity between dev and prod. is to have the same environment for both. Packer allows us to do that by having multiple builders, in this case, we can use the docker builder to generate an image with the same contents that the VM. We are using docker because it's lighter and easier to handle locally, but you can pick any of the existing builders.
 
-We add the `image`, a parameter with the base image, `commit` is set to true so we save the image, and the changes are to declare extra information that you can't have in the provisioners. Like labels, exposing ports or setting the entrypoint or command. 
+We add the `image`, a parameter with the base image, `commit` is set to true so we save the image, and the changes are to declare extra information that you can't have in the provisioners. Like labels, exposing ports or setting the entry point or command. 
 
 ```json
 {
@@ -440,7 +440,7 @@ packer build -var-file="/Users/andre/.packer-credentials.json" java-ami.json
 
 The Amazon AMI and the Docker container have the same programs being installed right now, but do we need everything to be installed in the docker? We have `filebeat`, `metricbeat`, and `chrony` being installed in the container. We don't need that for a local development environment. How can we fix that? **Base Images.**
 
-First let's create a base image file and add those dependencies. 
+First, let's create a base image file and add those dependencies. 
 
 ```json
 {
@@ -596,6 +596,6 @@ With the base image ready we can change the current file to use the base image, 
 
 ## Wrapping up
 
-We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to setup new environments. Since Packer is a IaC tool you can add to your CI/CD pipeline and automate and integrate with many things, like adding the new AMI Id to the Auto-Scalling Group in Amazon. 
+We spoke about the importance of Infrastructure As Code and why pre-baked images used to be a bad idea. Packer comes to help the creation of pre-baked images for many platforms speeding up the time to set up new environments. Since Packer is a IaC tool you can add to your CI/CD pipeline and automate and integrate with many things, like adding the new AMI Id to the Auto-Scalling Group in Amazon. 
 
 Then we went through on how to use Packer to create an image to Amazon and Docker and how to structure our files to avoid waste when build the images.
