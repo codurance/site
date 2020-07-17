@@ -81,11 +81,12 @@ describe("Website Navigation Menu", () => {
     });
 
     describe("When the sub-menu toggle proxy is clicked", () => {
-      it("toggles the related sub-menu", () => {
+      beforeEach(() => {
+        jest.spyOn(subMenuToggle, "click");
         subMenuToggleProxy.click();
-        expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
-        subMenuToggleProxy.click();
-        expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+      });
+      it("clicks the related real sub-menu toggle", () => {
+        expect(subMenuToggle.click).toHaveBeenCalled();
       });
     });
   });
