@@ -2,6 +2,8 @@ var websiteNavigation = function () {
   var HEADER_SELECTOR = ".website-header";
   var MENU_TOGGLE_SELECTOR = ".website-navigation-menu-toggle";
   var SUB_MENU_TOGGLE_SELECTOR = ".website-navigation-menu__sub-menu-toggle";
+  var SUB_MENU_TOGGLE_PROXY_SELECTOR =
+    ".website-navigation-sub-menu__toggle-proxy";
 
   var OPEN_HEADER_CLASS = "website-header--open";
   var OPEN_MENU_CLASS = "website-navigation__menu--open";
@@ -12,12 +14,19 @@ var websiteNavigation = function () {
   var menu = window.document.querySelector(
     "#" + menuToggle.getAttribute("aria-controls")
   );
-  var menuSubToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
+  var subMenuToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
+  var subMenuToggleProxies = window.document.querySelectorAll(
+    SUB_MENU_TOGGLE_PROXY_SELECTOR
+  );
 
   function setupEventListeners() {
     menuToggle.addEventListener("click", toggleMenu);
-    menuSubToggles.forEach(function (t) {
+
+    Array.prototype.forEach.call(subMenuToggles, function (t) {
       t.addEventListener("click", toggleSubMenu);
+    });
+    Array.prototype.forEach.call(subMenuToggleProxies, function (t) {
+      t.addEventListener("click", clickProxy);
     });
   }
 
@@ -34,6 +43,13 @@ var websiteNavigation = function () {
     subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
       ? closeSubMenu(subMenu, subMenuToggle)
       : openSubMenu(subMenu, subMenuToggle);
+  }
+
+  function clickProxy(e) {
+    var real = window.document.getElementById(
+      e.target.dataset.sub_menu_toggle_id
+    );
+    real.click();
   }
 
   function openMenu() {

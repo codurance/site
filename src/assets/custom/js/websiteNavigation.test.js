@@ -6,6 +6,7 @@ const OPEN_HEADER_CLASS = "website-header--open";
 const OPEN_MENU_CLASS = "website-navigation__menu--open";
 const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
 const SUB_MENU_TOGGLE_CLASS = "website-navigation-menu__sub-menu-toggle";
+const SUB_MENU_TOGGLE_PROXY_CLASS = "website-navigation-sub-menu__toggle-proxy";
 const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
 
 let header;
@@ -13,6 +14,7 @@ let menu;
 let menuToggle;
 let subMenu;
 let subMenuToggle;
+let subMenuToggleProxy;
 
 describe("Website Navigation Menu", () => {
   describe("Given the page loads with a menu and a sub-menu", () => {
@@ -57,6 +59,7 @@ describe("Website Navigation Menu", () => {
         });
       });
     });
+
     describe("When the sub-menu toggle is clicked", () => {
       beforeAll(() => {
         subMenuToggle.click();
@@ -76,6 +79,15 @@ describe("Website Navigation Menu", () => {
         });
       });
     });
+
+    describe("When the sub-menu toggle proxy is clicked", () => {
+      it("toggles the related sub-menu", () => {
+        subMenuToggleProxy.click();
+        expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+        subMenuToggleProxy.click();
+        expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+      });
+    });
   });
 });
 
@@ -92,10 +104,12 @@ function captureMocks() {
   menuToggle = getMockMenuToggle();
   subMenu = getMockSubMenu();
   subMenuToggle = getMockSubMenuToggle();
+  subMenuToggleProxy = getMockSubMenuToggleProxy();
 }
 
 const MENU_ID = "mockMenuId";
 const SUB_MENU_ID = "mockSubMenuId";
+const SUB_MENU_TOGGLE_ID = "mockSubMenuToggleId";
 
 function createMockHeader() {
   const header = window.document.createElement("div");
@@ -119,6 +133,7 @@ function createMockMenu() {
   subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID);
   subMenuToggle.setAttribute("aria-expanded", false);
   subMenuToggle.classList.add(SUB_MENU_TOGGLE_CLASS);
+  subMenuToggle.id = SUB_MENU_TOGGLE_ID;
 
   window.document.body.appendChild(menu);
   menu.appendChild(subMenuToggle);
@@ -127,7 +142,16 @@ function createMockMenu() {
 function createMockSubMenu() {
   const subMenu = window.document.createElement("div");
   subMenu.id = SUB_MENU_ID;
+
+  const subMenuToggleProxy = window.document.createElement("button");
+  subMenuToggleProxy.setAttribute(
+    "data-sub_menu_toggle_id",
+    SUB_MENU_TOGGLE_ID
+  );
+  subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
+
   window.document.body.appendChild(subMenu);
+  subMenu.appendChild(subMenuToggleProxy);
 }
 
 function getMockHeader() {
@@ -144,6 +168,10 @@ function getMockMenu() {
 
 function getMockSubMenuToggle() {
   return window.document.querySelector(`.${SUB_MENU_TOGGLE_CLASS}`);
+}
+
+function getMockSubMenuToggleProxy() {
+  return window.document.querySelector(`.${SUB_MENU_TOGGLE_PROXY_CLASS}`);
 }
 
 function getMockSubMenu() {
