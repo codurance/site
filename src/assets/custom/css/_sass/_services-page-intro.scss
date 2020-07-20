@@ -8,7 +8,6 @@ $text-container-inner-margin-top: -200px;
 
   @include small-and-medium {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");
-    height: 0;
     padding-top: 200 / 360 * 100%;
   }
   @include large-and-extra-large {
@@ -26,34 +25,34 @@ $text-container-inner-margin-top: -200px;
 
 .service-page-intro__navigation {
   @include max-width--out-there;
-  height: calc(#{$header-background-image-height--large-and-extra-large} + #{$text-container-inner-margin-top});
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-}
 
-.service-page-intro__navigation-text {
-  color: white;
-  text-align: center;
-  font-family: proxima-nova;
-  font-weight: 600;
-  padding-top: 30px;
-  
   @include large-and-extra-large {
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  @include small-and-medium {
-    font-size: 18px;
-    line-height: 28px;
+    height: calc(#{$header-background-image-height--large-and-extra-large} + #{$text-container-inner-margin-top});
   }
 }
 
+$icon-image-width--small-medium: 100px;
+$icon-image-height--small-medium: 115px;
 $icon-image-width--large-extra-large: 180px;
 $icon-image-height--large-extra-large: 208px;
 
 .service-page-intro__navigation-link {
+
+  @include small {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @include medium {
+    width: $icon-image-width--small-medium;
+  }
   @include large-and-extra-large {
     width: $icon-image-width--large-extra-large;
   }
@@ -81,6 +80,13 @@ $icon-image-height--large-extra-large: 208px;
   display: flex;
   justify-content: center;
 
+  @include small {
+    width: $icon-image-width--small-medium;
+  }
+
+  @include small-and-medium {
+    height: $icon-image-height--small-medium
+  }
   @include large-and-extra-large {
     height: $icon-image-height--large-extra-large;
   }
@@ -96,7 +102,7 @@ $icon-image-height--large-extra-large: 208px;
   font-family: proxima-nova;
   font-weight: 600;
   padding-top: 30px;
-  
+
   @include large-and-extra-large {
     font-size: 28px;
     line-height: 38px;
@@ -106,7 +112,7 @@ $icon-image-height--large-extra-large: 208px;
   @include small-and-medium {
     font-size: 18px;
     line-height: 28px;
-    width: $icon-image-width--small;
+    width: $icon-image-width--small-medium;
   }
 }
 
