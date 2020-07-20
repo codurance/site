@@ -1,6 +1,7 @@
 var websiteHeader = function () {
   var HEADER_SELECTOR = ".website-header";
   var REVEALED_CLASS = "website-header--revealed";
+  var HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
   var tolerance = 2;
 
   var previousWindowPosition;
@@ -34,7 +35,9 @@ var websiteHeader = function () {
     var downwardMovement =
       previousWindowPosition < latestWindowPosition - tolerance;
 
-    if (atTheTop(latestWindowPosition) || downwardMovement) {
+    var subMenuOpen = HEADER.classList.contains(HEADER_HAS_OPEN_SUBMENU_CLASS);
+
+    if (atTheTop(latestWindowPosition) || (downwardMovement && !subMenuOpen)) {
       restoreNaturalPosition();
       return;
     }

@@ -10,6 +10,7 @@ const MENU_SHOWING_SUB_MENU_CLASS =
 const SUB_MENU_TOGGLE_CLASS = "website-navigation-menu__sub-menu-toggle";
 const SUB_MENU_TOGGLE_PROXY_CLASS = "website-navigation-sub-menu__toggle-proxy";
 const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
+const HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
 
 let header;
 let menu;
@@ -75,6 +76,10 @@ describe("Website Navigation Menu", () => {
         expect(menu.classList).toContain(MENU_SHOWING_SUB_MENU_CLASS);
       });
 
+      it("updates the website header, so it doesn't hide itself while the submenu is open", () => {
+        expect(header.classList).toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+      });
+
       describe("When the sub-menu toggle is clicked again", () => {
         beforeAll(() => {
           subMenuToggle.click();
@@ -82,6 +87,10 @@ describe("Website Navigation Menu", () => {
 
         it("closes the related sub-menu", () => {
           expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("remove the special class previously applied to the website header", () => {
+          expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
         });
       });
     });

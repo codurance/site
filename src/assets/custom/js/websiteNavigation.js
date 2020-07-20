@@ -5,11 +5,12 @@ var websiteNavigation = function () {
   var SUB_MENU_TOGGLE_PROXY_SELECTOR =
     ".website-navigation-sub-menu__toggle-proxy";
 
+  var MENU_SHOWING_SUB_MENU_CLASS =
+    "website-navigation__menu--showing-sub-menu";
+  var HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
   var OPEN_HEADER_CLASS = "website-header--open";
   var OPEN_MENU_CLASS = "website-navigation__menu--open";
   var OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
-  var MENU_SHOWING_SUB_MENU_CLASS =
-    "website-navigation__menu--showing-sub-menu";
 
   var header = window.document.querySelector(HEADER_SELECTOR);
   var menuToggle = window.document.querySelector(MENU_TOGGLE_SELECTOR);
@@ -67,12 +68,14 @@ var websiteNavigation = function () {
   }
 
   function openSubMenu(subMenu, subMenuToggle) {
+    header.classList.add(HEADER_HAS_OPEN_SUBMENU_CLASS);
     subMenuToggle.setAttribute("aria-expanded", "true");
     subMenu.classList.add(OPEN_SUB_MENU_CLASS);
     menu.classList.add(MENU_SHOWING_SUB_MENU_CLASS);
   }
 
   function closeSubMenu(subMenu, subMenuToggle) {
+    header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
     subMenuToggle.setAttribute("aria-expanded", "false");
     subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
