@@ -1,2 +1,4 @@
 {% capture hubSpotId %}{% t services.training.hubspot-form-id %}{% endcapture %}
-{% include get_in_touch.html hubSpotId=hubSpotId %}
+{% capture title %}{% t training-overview.contact-form.title %}{% endcapture %}
+{% capture description %}{% t training-overview.contact-form.description %}{% endcapture %}
+{% include get_in_touch.html hubSpotId=hubSpotId title=title description=description %}

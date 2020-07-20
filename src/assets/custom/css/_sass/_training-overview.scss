@@ -12,6 +12,9 @@ $katalyst-banner-height--large: 442px;
     margin-top: -$vertical-overlap ;
     padding-top: calc(2 * #{$vertical-overlap});
   }
+  @include medium-large-and-extra-large {
+    padding-bottom: 70px;
+  }
 }
 
 .training-overview-content__cards-wrapper {
@@ -21,23 +24,26 @@ $katalyst-banner-height--large: 442px;
   }
 }
 
-.training-overview__flexslider-wrapper {
+.training-overview-katalyst {
   @include medium-large-and-extra-large {
-    display: none;
+    background-color: $navy--ultralight;
+    padding-bottom: $vertical-overlap;
+    padding-top: $vertical-overlap;
+    position: relative;
+
+    &::before {
+      background-color: $slate;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 200px;
+    }
   }
 }
 
-.training-overview-katalyst-banner {
-  @include medium {
-    margin-bottom: 75px;
-  }
-
-  @include large-and-extra-large {
-    margin-bottom: 85px;
-  }
-}
-
-.training-overview__katalyst-banner {
+.training-overview-katalyst__banner {
   @include max-width--out-there;
 
   @include small {
@@ -45,33 +51,41 @@ $katalyst-banner-height--large: 442px;
       display: none;
     }
     .in_page_banner__main {
-      width: 100%;
       height: $katalyst-banner-height--small-medium;
+      width: 100%;
     }
   }
-
+  @include medium-large-and-extra-large {
+    position: relative;
+    top: -100px;
+  }
   @include medium {
     @include lateral-spacing--medium;
     .in_page_banner__image {
       display: none;
     }
     .in_page_banner__main {
-      width: 100%;
       height: $katalyst-banner-height--small-medium;
+      width: 100%;
     }
   }
-
   @include large-and-extra-large {
     @include lateral-spacing--large-and-extra-large;
+
     .in_page_banner__image {
-      width: $katalyst-banner-width;
       height: $katalyst-banner-height--large;
+      width: $katalyst-banner-width;
     }
 
     .in_page_banner__main {
-        width: calc(100% - #{$katalyst-banner-width});
         height: $katalyst-banner-height--large;
+        width: calc(100% - #{$katalyst-banner-width});
     }
   }
+}
 
+.get-in-touch {
+  .training-overview-form & {
+    position: relative;
+  }
 }
