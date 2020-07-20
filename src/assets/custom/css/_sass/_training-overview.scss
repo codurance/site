@@ -25,9 +25,6 @@ $katalyst-banner-height--large: 442px;
 }
 
 .training-overview-katalyst {
-  // @include medium {
-    // margin-bottom: 75px;
-  // }
   @include medium-large-and-extra-large {
     padding-top: $vertical-overlap;
     padding-bottom: $vertical-overlap;
