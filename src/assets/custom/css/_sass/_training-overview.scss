@@ -12,6 +12,9 @@ $katalyst-banner-height--large: 442px;
     margin-top: -$vertical-overlap ;
     padding-top: calc(2 * #{$vertical-overlap});
   }
+  @include extra-large {
+    padding-bottom: 70px;
+  }
 }
 
 .training-overview-content__cards-wrapper {
@@ -27,17 +30,33 @@ $katalyst-banner-height--large: 442px;
   }
 }
 
-.training-overview-katalyst-banner {
+.training-overview-katalyst {
   @include medium {
     margin-bottom: 75px;
   }
 
   @include large-and-extra-large {
-    margin-bottom: 85px;
+    // margin-bottom: 85px;
+  }
+  @include extra-large {
+    padding-top: $vertical-overlap;
+    padding-bottom: $vertical-overlap;
+    background-color: $navy--ultralight;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $slate;
+      top: 200px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
   }
 }
 
-.training-overview__katalyst-banner {
+.training-overview-katalyst__banner {
   @include max-width--out-there;
 
   @include small {
@@ -73,5 +92,14 @@ $katalyst-banner-height--large: 442px;
         height: $katalyst-banner-height--large;
     }
   }
+  @include extra-large {
+    position: relative;
+    top: -100px;
+  }
+}
 
+.get-in-touch {
+  .training-overview-form & {
+    position: relative;
+  }
 }
