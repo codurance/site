@@ -22,13 +22,13 @@ intro:
           {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
           {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
           {% include service_line_teaser_card.liquid
-          background_image=teaser_card_data.image-src
-          avatar-src=teaser_card_data.avatar-src
-          name=teaser_card_data.name
-          course-length=teaser_card_data.course-length
-          title=title
-          description=description
-          cta_path=teaser_card_data.cta-path
+            background_image=teaser_card_data.image-src
+            avatar-src=teaser_card_data.avatar-src
+            name=teaser_card_data.name
+            course-length=teaser_card_data.course-length
+            title=title
+            description=description
+            cta_path=teaser_card_data.cta-path
           %}
       </div>
   </section>
