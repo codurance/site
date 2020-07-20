@@ -773,5 +773,8 @@ training-overview:
   hero-title: Training
   hero-sub-title: Upskilling for more effective teams
   hero-description: Leverage focused training courses to upskill your teams at every phase of the project. We can create a bespoke training plan adapted to your business needs.
+  contact-form:
+    title: Tell us about your challenges
+    description: Find out how Codurance's solutions can help your business
 
 learn-more: Learn more
