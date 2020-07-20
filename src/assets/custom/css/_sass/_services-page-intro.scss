@@ -1,3 +1,6 @@
+$header-background-image-height--large-and-extra-large: 694px;
+$text-container-inner-margin-top: -200px;
+
 .services-page-intro__image {
   background-color: #474b4a;
   background-position: center center;
@@ -17,9 +20,16 @@
   }
   @include extra-large {
     @include max-width--framed;
-    height: 694px;
-    padding-top: 101px;
+    height: $header-background-image-height--large-and-extra-large;
   }
+}
+
+.service-page-intro__navigation {
+  @include max-width--out-there;
+  height: calc(#{$header-background-image-height--large-and-extra-large} + #{$text-container-inner-margin-top});
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 $icon-image-width--large-extra-large: 180px;
@@ -80,7 +90,7 @@ $icon-image-height--large-extra-large: 208px;
     padding: 70px 65px;
   }
   @include large-and-extra-large {
-    margin-top: -200px;
+    margin-top: $text-container-inner-margin-top;
     padding: 95px 130px 110px;
   }
 }
