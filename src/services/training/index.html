@@ -37,8 +37,8 @@ intro:
   </section>
   <section class="training-overview-katalyst">
     {% capture description %}{{ translations.katalyst-banner.description }}{% endcapture %}
-    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture hubspot-id %}{{  translations.katalyst-banner.hubspot-form-id }}{% endcapture %}
+    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture title %}{{  translations.katalyst-banner.title }}{% endcapture %}
     {% include in_page_banner.html
       background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"
