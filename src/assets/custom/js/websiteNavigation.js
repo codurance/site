@@ -80,6 +80,8 @@ var websiteNavigation = function () {
     subMenuToggle.setAttribute("aria-expanded", "true");
     subMenu.classList.add(OPEN_SUB_MENU_CLASS);
     menu.classList.add(MENU_SHOWING_SUB_MENU_CLASS);
+
+    subMenu.style.minHeight = subMenu.scrollHeight + "px";
   }
 
   function closeSubMenu(subMenu, subMenuToggle) {
@@ -89,6 +91,8 @@ var websiteNavigation = function () {
     subMenuToggle.setAttribute("aria-expanded", "false");
     subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
+
+    subMenu.style.minHeight = "";
   }
 
   setupEventListeners();

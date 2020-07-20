@@ -12,6 +12,8 @@ const SUB_MENU_TOGGLE_PROXY_CLASS = "website-navigation-sub-menu__toggle-proxy";
 const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
 const HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
 
+const fakeSubMenuScrollHeight = 999;
+
 let header;
 let menu;
 let menuToggle;
@@ -72,6 +74,10 @@ describe("Website Navigation Menu", () => {
         expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
+      it("programmatically calculates the min-height of the submenu so it can be animated", () => {
+        expect(subMenu.style.minHeight).toBe(`${fakeSubMenuScrollHeight}px`);
+      });
+
       it("updates the main menu, so it slides out of view on small screens", () => {
         expect(menu.classList).toContain(MENU_SHOWING_SUB_MENU_CLASS);
       });
@@ -87,6 +93,10 @@ describe("Website Navigation Menu", () => {
 
         it("closes the related sub-menu", () => {
           expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("resets its height", () => {
+          expect(subMenu.style.minHeight).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {
@@ -170,6 +180,11 @@ function createMockMenu() {
 }
 
 function createMockSubMenu() {
+  Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
+    configurable: true,
+    value: fakeSubMenuScrollHeight,
+  });
+
   const subMenu = window.document.createElement("div");
   subMenu.id = SUB_MENU_ID;
 
