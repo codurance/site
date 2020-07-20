@@ -90,6 +90,17 @@ $icon-image-height--large-extra-large: 208px;
   }
 }
 
+.service-page-intro__navigation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $icon-image-height--large-extra-large;
+
+  .service-line-icon {
+    height: 55%;
+  }
+}
+
 .services-page-intro__text-container {
   @include max-width--out-there;
 }
