@@ -1,16 +1,32 @@
 <header>
   <div class="services-page-intro__image">
     <div class="service-page-intro__navigation">
-      <a href="https://codurance.com/services/software-modernisation/" class="services-page-intro__icon--software-modernisation">
+      <a href="{{'/services/software-modernisation/' | prepend: site.baseurl }}" class="services-page-intro__icon--software-modernisation">
+        <div class="service-page-intro__software-modernisation-icon">
+          {{ site.data.service_lines.software-modernisation.icon }}
+        </div>
+        <h2 class="service-page-intro__navigation-text">{{site.data.service_lines.software-modernisation.name}}</h2>
       </a>
-      <a href="https://codurance.com/services/software-delivery/" class="services-page-intro__icon--software-delivery">
+      <a href="{{'/services/software-delivery/' | prepend: site.baseurl }}" class="services-page-intro__icon--software-delivery">
+        <div class="service-page-intro__software-delivery-icon">
+          {{ site.data.service_lines.software-delivery.icon }}
+        </div>
+        <h2 class="service-page-intro__navigation-text">{{site.data.service_lines.software-delivery.name}}</h2>
       </a>
-      <a href="https://codurance.com/services/specialist-expertise/" class="services-page-intro__icon--strategic-advice">
+      <a href="{{'/services/strategic-advice/' | prepend: site.baseurl }}" class="services-page-intro__icon--strategic-advice">
+        <div class="service-page-intro__strategic-advice-icon">
+          {{ site.data.service_lines.strategic-advice.icon }}
+        </div>
+        <h2 class="service-page-intro__navigation-text">{{site.data.service_lines.strategic-advice.name}}</h2>
       </a>
-      <a href="https://codurance.com/services/strategic-advice/" class="services-page-intro__icon--specialist-expertise">
+      <a href="{{'/services/specialist-expertise/' | prepend: site.baseurl }}" class="services-page-intro__icon--specialist-expertise">
+        <div class="service-page-intro__specialist-expertise-icon">
+          {{ site.data.service_lines.specialist-expertise.icon }}
+        </div>
+        <h2 class="service-page-intro__navigation-text">{{site.data.service_lines.specialist-expertise.name}}</h2>
       </a>
-    </div>
   </div>
+</div>
   <div class="services-page-intro__text-container">
     <div class="services-page-intro__text-container-inner">
       <div class="services-page-intro__title-wrapper">
@@ -21,3 +37,4 @@
     </div>
   </div>
 </header>
+

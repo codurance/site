@@ -32,6 +32,21 @@ $text-container-inner-margin-top: -200px;
   justify-content: space-around;
 }
 
+.service-page-intro__navigation-text {
+  color: white;
+  text-align: center;
+  
+  @include shared-navigation-link-styles;
+
+  @include large-and-extra-large {
+    font-size: 28px;
+  }
+
+  @include small-and-medium {
+    font-size: 18px;
+  }
+}
+
 $icon-image-width--large-extra-large: 180px;
 $icon-image-height--large-extra-large: 208px;
 
