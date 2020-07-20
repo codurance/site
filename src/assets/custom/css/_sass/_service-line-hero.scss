@@ -64,13 +64,14 @@ $medium-width-content-padding: 100px;
     padding-left: $medium-width-content-padding;
     padding-right: $medium-width-content-padding;
   }
+  @include large{
+    margin-top: -100px;
+    padding-bottom: 50px;
+  }
   @include large-and-extra-large {
     max-width: 600px;
     padding-top: 50px;
     width: 50%;
-  }
-  @include large {
-    padding-bottom: 50px;
   }
   @include extra-large {
     padding-bottom: 70px;

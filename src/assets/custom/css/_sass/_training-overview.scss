@@ -3,15 +3,28 @@ $katalyst-banner-height--small-medium: 313px;
 $katalyst-banner-height--large: 442px;
 
 .training-overview-content {
+  background-color: $navy--ultralight;
+
+  @include medium {
+    padding-top: $vertical-overlap;
+  }
   @include large-and-extra-large{
-    background-color: $navy--ultralight;
-    padding-top: calc(2 * #{$vertical-overlap});
     margin-top: -$vertical-overlap ;
+    padding-top: calc(2 * #{$vertical-overlap});
   }
 }
 
 .training-overview-content__cards-wrapper {
   @include max-width--out-there;
+  @include medium-large-and-extra-large {
+    @include lateral-spacing;
+  }
+}
+
+.training-overview__flexslider-wrapper {
+  @include medium-large-and-extra-large {
+    display: none;
+  }
 }
 
 .training-overview-katalyst-banner {

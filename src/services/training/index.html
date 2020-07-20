@@ -14,6 +14,7 @@ intro:
 {% if site.data.toggles.slt-181-training-overview-page == "on" %}
 
   {%- assign translations = site.translations[site.lang].training-overview -%}
+  {% assign cta_text = site.translations[site.lang].services.learn-more %}
   {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
 
   <section class="training-overview-content">
@@ -22,25 +23,27 @@ intro:
           {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
           {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
           {% include service_line_teaser_card.liquid
-          background_image=teaser_card_data.image-src
-          avatar-src=teaser_card_data.avatar-src
-          name=teaser_card_data.name
-          course-length=teaser_card_data.course-length
-          title=title
-          description=description
-          cta_path=teaser_card_data.cta-path
+              background_image=teaser_card_data.image-src
+              avatar-src=teaser_card_data.avatar-src
+              name=teaser_card_data.name
+              course-length=teaser_card_data.course-length
+              title=title
+              description=description
+              cta_path=teaser_card_data.cta-path
           %}
+
+          {% include training_card_group.liquid %}
       </div>
   </section>
   <section class="training-overview-katalyst-banner">
     {% capture description %}{% t  services.training.katalyst-banner.description %}{% endcapture %}
-    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture hubspot-id %}{% t  services.training.katalyst-banner.hubspot-form-id %}{% endcapture %}
+    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
     {% capture title %}{% t  services.training.katalyst-banner.title %}{% endcapture %}
-    {% include in_page_banner.html 
+    {% include in_page_banner.html
       background_image="/assets/custom/img/training/training-overview-katalyst-banner.png"
       background_position="30% center"
-      class="training-overview__katalyst-banner" 
+      class="training-overview__katalyst-banner"
       description=description
       hubspot-cta=hubspot-cta
       title=title
@@ -50,6 +53,7 @@ intro:
   {% include training_contact_form.liquid %}
 
 {% else %}
+
     <div class="container content">
        <div class="row">
               <div class="col-md-6">

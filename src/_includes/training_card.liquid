@@ -1,0 +1,22 @@
+{% if include.training.featured %}
+    {% capture avatar %}<img class="training-card__avatar" alt=""src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
+    {% assign author = include.training.author %}
+    {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }} </h2>{% endcapture %}
+    {% assign featured_class = "training-card--featured" %}
+{% else %}
+    {% capture tag %}{% endcapture %}
+    {% assign featured_class = "" %}
+{% endif %}
+
+<article class="training-card {{ featured_class }}">
+    <div class="training-card__primary-content">
+        {{ tag }}
+        <h3 class="training-card__title">{{ include.training.name }}</h3>
+    </div>
+    <div class="training-card__secondary-content">
+        <p class="training-card__description">{{ include.training.description }}</p>
+        {% capture cta-href %}{{ include.training.page | prepend: site.baseurl }}{% endcapture %}
+        {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
+        {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
+    </div>
+</article>

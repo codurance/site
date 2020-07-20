@@ -1,9 +1,3 @@
-- id: introduction_to_functional_programming
-  name: Introducción a Programación Funcional
-  author: Jorge Gueorguiev García
-  description: Para desarrolladores experimentados que quieren aprender los conceptos básicos de programacion funcional.
-  page: /services/training/introduction-to-functional-programming
-
 - id: crafting_code
   name: Crafting Code
   author: Sandro Mancuso
@@ -15,6 +9,12 @@
   author: Sandro Mancuso
   description: Para desarrolladores experimentados que quieren mejorar en el diseño de soluciones bien elaboradas.
   page: /services/training/crafted-design
+
+- id: introduction_to_functional_programming
+  name: Introducción a Programación Funcional
+  author: Jorge Gueorguiev García
+  description: Para desarrolladores experimentados que quieren aprender los conceptos básicos de programacion funcional.
+  page: /services/training/introduction-to-functional-programming
 
 - id: lambdas
   name: Microservicios con AWS Lambdas
