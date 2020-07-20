@@ -90,6 +90,26 @@ $icon-image-height--large-extra-large: 208px;
   }
 }
 
+.service-page-intro__navigation-text {
+  color: white;
+  text-align: center;
+  font-family: proxima-nova;
+  font-weight: 600;
+  padding-top: 30px;
+  
+  @include large-and-extra-large {
+    font-size: 28px;
+    line-height: 38px;
+    width: $icon-image-width--large-extra-large;
+  }
+
+  @include small-and-medium {
+    font-size: 18px;
+    line-height: 28px;
+    width: $icon-image-width--small;
+  }
+}
+
 .services-page-intro__text-container {
   @include max-width--out-there;
 }
