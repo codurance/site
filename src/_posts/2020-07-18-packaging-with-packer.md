@@ -6,15 +6,13 @@ date: 2020-07-18 00:00:00 +00:00
 author: André Guelfi Torres
 description: What is Packer? How it can help us and how to use it.
 image:
-    src: 
+    src: /assets/custom/img/blog/packaging-with-packer-thumb.jpg
     attribution: 
-        text: 
-        href: 
+        text: Photo by cottonbro from Pexels
+        href: https://www.pexels.com/photo/person-in-black-leather-boots-sitting-on-brown-cardboard-boxes-4553277/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 tags:
-    - packer
     - devops
     - infrastructure as code
-    - automation
 ---
 
 # AMIs and the Old Way
@@ -27,7 +25,7 @@ We all know how important Infrastructure as Code(IaC) is in a DevOps environment
 
 In case your project isn't following the latest trend and using something like serverless or Kubernetes there's a big chance that you are using Virtual Machines, even if you are in the cloud. In this case, there are two kinds of tools for IaC in VM environments. 
 
-- **Provisioning Tools**: Those are the ones to create the infrastructure, like Terraform or CloudFormation.
+- **Provisioning Tools**: Those are the ones to create the infrastructure, like [Terraform](https://codurance.com/2020/04/28/terraform-with-multiple-environments/) or CloudFormation.
 - **Configuration Management Tools**: Which are the ones used to set up machines, deploy applications and configure them. We have many tools for that like Ansible, Chef, Puppet.
 
 One of the issues that we have is time, after provisioning everything we have to install everything to the box, usually, it's going to be multiple applications and runtimes to install beofre having anything running. During this process of installation something might fail due a dependency that isn't available anymore, like a repository for apt that is missing or even a third party that is having connectivity issues. 
