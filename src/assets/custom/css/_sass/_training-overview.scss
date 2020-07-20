@@ -24,12 +24,6 @@ $katalyst-banner-height--large: 442px;
   }
 }
 
-.training-overview__flexslider-wrapper {
-  @include medium-large-and-extra-large {
-    display: none;
-  }
-}
-
 .training-overview-katalyst {
   // @include medium {
     // margin-bottom: 75px;
