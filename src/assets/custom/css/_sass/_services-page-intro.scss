@@ -35,9 +35,10 @@ $text-container-inner-margin-top: -200px;
 .service-page-intro__navigation-text {
   color: white;
   text-align: center;
+  font-family: proxima-nova;
+  font-weight: 600;
+  padding-top: 30px;
   
-  @include shared-navigation-link-styles;
-
   @include large-and-extra-large {
     font-size: 28px;
     line-height: 38px;
