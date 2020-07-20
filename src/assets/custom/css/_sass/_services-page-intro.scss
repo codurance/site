@@ -40,10 +40,12 @@ $text-container-inner-margin-top: -200px;
 
   @include large-and-extra-large {
     font-size: 28px;
+    line-height: 38px;
   }
 
   @include small-and-medium {
     font-size: 18px;
+    line-height: 28px;
   }
 }
 
