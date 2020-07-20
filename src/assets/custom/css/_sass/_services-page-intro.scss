@@ -1,3 +1,4 @@
+$header-background-image-height--medium: 300px;
 $header-background-image-height--large-and-extra-large: 694px;
 $text-container-inner-margin-top: -200px;
 
@@ -9,6 +10,7 @@ $text-container-inner-margin-top: -200px;
   @include small-and-medium {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");  
   }
+
   @include large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
   }
@@ -31,6 +33,10 @@ $text-container-inner-margin-top: -200px;
 
   @include small {
     padding: 30px 0;
+  }
+
+  @include medium {
+    height: $header-background-image-height--medium;
   }
 
   @include large-and-extra-large {
@@ -132,7 +138,7 @@ $icon-image-height--large-extra-large: 208px;
     padding: 50px $lateral-space--small;
   }
   @include medium {
-    margin: -175px $lateral-space--medium 0;
+    margin: 0 $lateral-space--medium;
     padding: 70px 65px;
   }
   @include large-and-extra-large {
