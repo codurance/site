@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 title: Packaging with Packer
-date: 2020-07-18 00:00:00 +00:00
+date: 2020-07-21 00:00:00 +00:00
 author: André Guelfi Torres
 description: What is Packer? How it can help us and how to use it.
 image:
