@@ -93,10 +93,24 @@ describe("Website Navigation Menu", () => {
           expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
         });
       });
+
+      describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
+        beforeAll(() => {
+          menuToggle.click();
+        });
+
+        it("closes the related sub-menu", () => {
+          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("remove the special class previously applied to the website header", () => {
+          expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+        });
+      });
     });
 
     describe("When the sub-menu toggle proxy is clicked", () => {
-      beforeEach(() => {
+      beforeAll(() => {
         jest.spyOn(subMenuToggle, "click");
         subMenuToggleProxy.click();
       });

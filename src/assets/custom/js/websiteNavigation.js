@@ -22,6 +22,8 @@ var websiteNavigation = function () {
     SUB_MENU_TOGGLE_PROXY_SELECTOR
   );
 
+  var currentOpenSubMenu = null;
+
   function setupEventListeners() {
     menuToggle.addEventListener("click", toggleMenu);
 
@@ -65,9 +67,15 @@ var websiteNavigation = function () {
     header.classList.remove(OPEN_HEADER_CLASS);
     menuToggle.setAttribute("aria-expanded", "false");
     menu.classList.remove(OPEN_MENU_CLASS);
+
+    if (currentOpenSubMenu) {
+      closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
+    }
   }
 
   function openSubMenu(subMenu, subMenuToggle) {
+    currentOpenSubMenu = { menu: subMenu, toggle: subMenuToggle };
+
     header.classList.add(HEADER_HAS_OPEN_SUBMENU_CLASS);
     subMenuToggle.setAttribute("aria-expanded", "true");
     subMenu.classList.add(OPEN_SUB_MENU_CLASS);
@@ -75,6 +83,8 @@ var websiteNavigation = function () {
   }
 
   function closeSubMenu(subMenu, subMenuToggle) {
+    currentOpenSubMenu = null;
+
     header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
     subMenuToggle.setAttribute("aria-expanded", "false");
     subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
