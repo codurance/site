@@ -74,8 +74,10 @@ describe("Website Navigation Menu", () => {
         expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
-      it("programmatically calculates the min-height of the submenu so it can be animated", () => {
-        expect(subMenu.style.minHeight).toBe(`${fakeSubMenuScrollHeight}px`);
+      it("increases the space underneath the toggle, to make the header bigger on large screens", () => {
+        expect(subMenuToggle.style.borderBottomWidth).toBe(
+          `${fakeSubMenuScrollHeight}px`
+        );
       });
 
       it("updates the main menu, so it slides out of view on small screens", () => {
@@ -95,8 +97,8 @@ describe("Website Navigation Menu", () => {
           expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
-        it("resets its height", () => {
-          expect(subMenu.style.minHeight).toBe(``);
+        it("resets the space underneath the toggle", () => {
+          expect(subMenuToggle.style.borderBottomWidth).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {

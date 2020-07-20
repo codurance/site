@@ -1,14 +1,7 @@
-@mixin shared-navigation-menu-position {
-  @include small-and-medium {
-    position: absolute;
-    top: $header-height;
-    width: 100%;
-  }
-}
 @mixin shared-navigation-menu-spacing {
   @include small-and-medium {
     height: calc(100vh - #{$header-height});
-    overflow: scroll;
+    overflow-y: scroll;
     padding-top: 30px;
   }
   @include small {

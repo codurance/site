@@ -8,11 +8,9 @@
     @include lateral-spacing;
     @include max-width--out-there;
     padding-top: $header-vertical-spacing;
-    padding-bottom: $header-vertical-spacing;
+    padding-bottom: 20px;
   }
-}
 
-.website-navigation__main {
   @include large-and-extra-large {
     align-items: top;
     display: flex;
@@ -20,12 +18,10 @@
   }
 }
 
-.website-navigation__home-link,
-.website-navigation__menu,
-.website-navigation__languages {
-  height: 20px;
-}
 .website-navigation__home-link {
+  height: 20px;
+  margin: 3px 0 2px;
+
   @include small-and-medium {
     display: block;
   }
@@ -49,12 +45,15 @@
 
 .website-navigation__menu {
   @include shared-navigation-menu-spacing;
-  @include shared-navigation-menu-position;
+  min-height: 25px;
 
   @include small-and-medium {
     left: 0;
     margin: 0;
-    transition: height 0.5s, left 0.5s, padding-top 0.5s, border-top-color 0.5s;
+    position: absolute;
+    top: $header-height;
+    width: 200vw;
+    transition: left 0.5s, padding-top 0.5s, border-top-color 0.5s;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
@@ -62,7 +61,7 @@
       padding-top: 0;
     }
     &.website-navigation__menu--showing-sub-menu {
-      left: -100%;
+      left: -100vw;
     }
   }
   @include large {
@@ -73,15 +72,8 @@
   }
 }
 
-.website-navigation__submenus {
-  @include shared-navigation-menu-position;
-
-  @include small-and-medium {
-    left: 100%;
-  }
-}
-
 .website-navigation__languages {
+  height: 25px;
   margin: 0;
 
   @include small-and-medium {

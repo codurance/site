@@ -5,15 +5,16 @@
   {% for item in main_menu_items %}
     <li class="website-navigation-menu__item">
       {% capture translation %}{% t sections.{{item.key}} %}{% endcapture %}
-      {% if item.connects_to_sub_menu %}
+      {% if item.sub_menu_items  %}
         <button 
-          class="website-navigation-menu__sub-menu-toggle" 
+          class="website-navigation-menu__sub-menu-toggle"
           id="sub-menu-toggle-{{ item.key }}" 
           aria-expanded="false" 
-          aria-controls="sub-menu-{{ item.connects_to_sub_menu }}"
+          aria-controls="sub-menu-{{ item.key }}"
         >
           {{ translation }}
         </button>
+        {% include website_navigation_sub_menus.liquid key=item.key items=item.sub_menu_items %}
       {% else %}
         {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
         {% capture active_class %}{% if item.path == page.url %}website-navigation-menu__link--active{% endif %}{% endcapture %}
