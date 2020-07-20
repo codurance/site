@@ -26,19 +26,19 @@ $katalyst-banner-height--large: 442px;
 
 .training-overview-katalyst {
   @include medium-large-and-extra-large {
-    padding-top: $vertical-overlap;
-    padding-bottom: $vertical-overlap;
     background-color: $navy--ultralight;
+    padding-bottom: $vertical-overlap;
+    padding-top: $vertical-overlap;
     position: relative;
 
     &::before {
-      content: '';
       background-color: $slate;
-      top: 200px;
       bottom: 0;
+      content: '';
       left: 0;
-      right: 0;
       position: absolute;
+      right: 0;
+      top: 200px;
     }
   }
 }
@@ -51,8 +51,8 @@ $katalyst-banner-height--large: 442px;
       display: none;
     }
     .in_page_banner__main {
-      width: 100%;
       height: $katalyst-banner-height--small-medium;
+      width: 100%;
     }
   }
   @include medium-large-and-extra-large {
@@ -65,21 +65,21 @@ $katalyst-banner-height--large: 442px;
       display: none;
     }
     .in_page_banner__main {
-      width: 100%;
       height: $katalyst-banner-height--small-medium;
+      width: 100%;
     }
   }
   @include large-and-extra-large {
     @include lateral-spacing--large-and-extra-large;
 
     .in_page_banner__image {
-      width: $katalyst-banner-width;
       height: $katalyst-banner-height--large;
+      width: $katalyst-banner-width;
     }
 
     .in_page_banner__main {
-        width: calc(100% - #{$katalyst-banner-width});
         height: $katalyst-banner-height--large;
+        width: calc(100% - #{$katalyst-banner-width});
     }
   }
 }
