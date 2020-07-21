@@ -88,7 +88,7 @@
   }
   @include large-and-extra-large {
     margin-bottom: 0;
-    transition: margin-bottom 0.5s;
+    transition: color 0.5s, margin-bottom 0.5s;
 
     &[aria-expanded="false"] {
       &::after {
