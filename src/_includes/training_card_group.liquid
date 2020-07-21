@@ -4,6 +4,12 @@
   {% assign training_data=site.data.trainings_en %}
 {% endif %}
 
+{%- assign non-featured-training = training_data | where_exp:"item", "item.featured != true" -%}
+{%- assign number-of-cards-in-carousel = 0 -%}
+{%- for training in non-featured-training -%}
+  {%- assign number-of-cards-in-carousel = number-of-cards-in-carousel | plus: 1 -%}
+{%- endfor -%}
+
 <div class="training-card-group--only-featured">
   {%- for training in training_data -%}
     {%- if training.featured -%}
@@ -13,17 +19,16 @@
 </div>
 
 <div class="training-card-group">
-  <div class="training-card-group__track" data-nav-track data-position="1" data-number-of-cards="4">
+  <div class="training-card-group__track" data-nav-track data-position="1" data-number-of-cards="{{ number-of-cards-in-carousel }}">
     {% for training in training_data %}
       {% include training_card.liquid training=training %}
     {% endfor %}
   </div>
   <div class="training-card-group__navigation-container">
-    {%- assign non-featured-training = training_data | where_exp:"item", "item.featured != true" -%}
     {%- assign counter = 1 -%}
     {%- for training in non-featured-training -%}
       {%- if forloop.first == true -%}{%- assign active-class = "active" -%}{%- else -%}{%- assign active-class = "" -%}{%- endif -%}
-      <div class="training-card-group__navigation-item {{active-class}}" data-nav-item data-position="{{counter}}"></div>
+        <div class="training-card-group__navigation-item {{active-class}}" data-nav-item data-position="{{counter}}"></div>
       {%- assign counter = counter | plus: 1 -%}
     {%- endfor -%}
   </div>
