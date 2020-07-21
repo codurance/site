@@ -54,9 +54,8 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
         right: $lateral-space--medium;
       }
       @include large-and-extra-large {
+        @include max-width--framed;
         display: block;
-        margin-left: $lateral-space--large;
-        margin-right: $lateral-space--large;
       }
     }
   }
