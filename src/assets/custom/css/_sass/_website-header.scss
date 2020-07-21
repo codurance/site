@@ -17,6 +17,7 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     left: 0;
     position: sticky;
     width: 100%;
+    z-index: 100;
 
     &.website-header--revealed {
       top: 0;
@@ -35,7 +36,6 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
         background-color: $slate;
         height: 100vh;
         top: 0;
-        z-index: 100;
       }
     }
     @include large-and-extra-large {
