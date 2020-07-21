@@ -52,10 +52,10 @@ $icon-image-height--large-extra-large: 208px;
 .service-page-intro__navigation-link {
 
   @include small {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
     justify-content: center;
     padding: 20px 0px;
   }
@@ -108,9 +108,9 @@ $icon-image-height--large-extra-large: 208px;
 
 .service-page-intro__navigation-text {
   color: white;
-  text-align: center;
   font-family: proxima-nova;
   font-weight: 600;
+  text-align: center;
   
   @include large-and-extra-large {
     font-size: 28px;
