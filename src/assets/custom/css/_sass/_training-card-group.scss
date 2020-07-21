@@ -65,8 +65,8 @@ $complete-total-width:
 
 .training-card-group__track .training-card {
   @include small {
+    @include style-card-box-shadow;
     width: $width-of-cards-on-small-screen;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
     margin-left: $space-around-cards-on-small-screen;
   }
 }
