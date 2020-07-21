@@ -27,11 +27,16 @@
 }
 
 .website-navigation__home-link {
-  height: 20px;
-  margin: 3px 0 2px;
-
   @include small-and-medium {
     display: block;
+  }
+  @include small {
+    height: 17px;
+    margin: 2px 0 0;
+  }
+  @include medium-large-and-extra-large {
+    height: 20px;
+    margin: -1px 0 0;
   }
 }
 
