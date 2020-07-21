@@ -14,8 +14,17 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
 
 .toggle--slt-397-website-header-updates {
   .website-header {
+    left: 0;
+    position: sticky;
+    width: 100%;
+
+    &.website-header--revealed {
+      top: 0;
+    }
+
     @include small-and-medium {
       transition: background-color 0.5s, height 0.5s;
+      z-index: 100;
 
       &:not(.website-header--open) {
         background-color: white;
@@ -25,10 +34,7 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
       &.website-header--open {
         background-color: $slate;
         height: 100vh;
-        left: 0;
-        position: fixed;
         top: 0;
-        width: 100%;
         z-index: 100;
       }
     }
@@ -58,12 +64,5 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
         display: block;
       }
     }
-  }
-  .website-header--revealed {
-    left: 0;
-    position: sticky;
-    right: 0;
-    top: 0;
-    z-index: 100;
   }
 }
