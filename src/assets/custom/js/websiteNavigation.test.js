@@ -9,7 +9,7 @@ const MENU_SHOWING_SUB_MENU_CLASS =
   "website-navigation__menu--showing-sub-menu";
 const SUB_MENU_TOGGLE_CLASS = "website-navigation-menu__sub-menu-toggle";
 const SUB_MENU_TOGGLE_PROXY_CLASS = "website-navigation-sub-menu__toggle-proxy";
-const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menus__menu--open";
+const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menu--open";
 const HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
 
 const fakeSubMenuScrollHeight = 999;

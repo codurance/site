@@ -1,4 +1,4 @@
-.website-navigation-sub-menus__menu {
+.website-navigation-sub-menu {
   @include shared-navigation-menu-spacing;
   list-style-type: none;
   margin: 0;
@@ -23,10 +23,10 @@
     padding: 20px 0;
     transition: opacity 0.5s;
 
-    &.website-navigation-sub-menus__menu--open {
+    &.website-navigation-sub-menu--open {
       opacity: 1;
     }
-    &:not(.website-navigation-sub-menus__menu--open) {
+    &:not(.website-navigation-sub-menu--open) {
       opacity: 0;
     }
   }
