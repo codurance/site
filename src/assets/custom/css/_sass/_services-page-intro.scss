@@ -107,21 +107,18 @@ $icon-image-height--large-extra-large: 208px;
 }
 
 .service-page-intro__navigation-text {
+  @include bold;
   color: white;
-  font-family: proxima-nova;
-  font-weight: 600;
   text-align: center;
   
   @include small-and-medium {
-    font-size: 18px;
-    line-height: 28px;
+    @include base;
     padding-top: 15px;
     width: $icon-image-width--small-medium;
   }
 
   @include large-and-extra-large {
-    font-size: 28px;
-    line-height: 38px;
+    @include freed;
     padding-top: 30px;
     width: $icon-image-width--large-extra-large;
   }
