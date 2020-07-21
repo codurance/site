@@ -15,11 +15,6 @@ $text-container-inner-margin-top: -200px;
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
   }
 
-  @include large {
-    height: 0;
-    padding-top: 650 / 1820 * 100%;
-  }
-
   @include extra-large {
     @include max-width--framed;
     height: $header-background-image-height--large-and-extra-large;
@@ -144,7 +139,11 @@ $icon-image-height--large-extra-large: 208px;
     margin: 0 $lateral-space--medium;
     padding: 70px 65px;
   }
-  @include large-and-extra-large {
+  @include large {
+    padding: 95px 130px 110px;
+  }
+
+  @include extra-large {
     margin-top: $text-container-inner-margin-top;
     padding: 95px 130px 110px;
   }
