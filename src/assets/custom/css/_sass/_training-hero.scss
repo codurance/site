@@ -12,9 +12,16 @@
   width: 100%;
 }
 
-.training-hero__lower-block {
+.training-hero__lower-background-block {
   background-color: $slate;
   height: 210px;
   margin-top: -210px;
+  position: relative;
+}
+
+.training-hero__content-container {
+  max-width: 450px;
+  margin-left: 150px;
+  margin-top: -360px;
   position: relative;
 }
