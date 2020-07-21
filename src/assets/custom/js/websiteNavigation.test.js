@@ -75,7 +75,7 @@ describe("Website Navigation Menu", () => {
       });
 
       it("increases the space underneath the toggle, to make the header bigger on large screens", () => {
-        expect(subMenuToggle.style.borderBottomWidth).toBe(
+        expect(subMenuToggle.style.marginBottom).toBe(
           `${fakeSubMenuScrollHeight}px`
         );
       });
@@ -98,7 +98,7 @@ describe("Website Navigation Menu", () => {
         });
 
         it("resets the space underneath the toggle", () => {
-          expect(subMenuToggle.style.borderBottomWidth).toBe(``);
+          expect(subMenuToggle.style.marginBottom).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {

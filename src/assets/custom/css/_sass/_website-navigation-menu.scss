@@ -87,8 +87,8 @@
     }
   }
   @include large-and-extra-large {
-    border: 0 solid transparent;
-    transition: border-bottom-width 0.5s;
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s;
 
     &[aria-expanded="false"] {
       &::after {

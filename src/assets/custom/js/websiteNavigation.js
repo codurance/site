@@ -81,7 +81,7 @@ var websiteNavigation = function () {
     subMenu.classList.add(OPEN_SUB_MENU_CLASS);
     menu.classList.add(MENU_SHOWING_SUB_MENU_CLASS);
 
-    subMenuToggle.style.borderBottomWidth = subMenu.scrollHeight + "px";
+    subMenuToggle.style.marginBottom = subMenu.scrollHeight + "px";
   }
 
   function closeSubMenu(subMenu, subMenuToggle) {
@@ -92,7 +92,7 @@ var websiteNavigation = function () {
     subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
 
-    subMenuToggle.style.borderBottomWidth = "";
+    subMenuToggle.style.marginBottom = "";
   }
 
   setupEventListeners();
