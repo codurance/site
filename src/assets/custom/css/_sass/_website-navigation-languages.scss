@@ -13,7 +13,14 @@
 }
 
 .website-navigation-languages__item {
-  margin-left: 15px;
+  @include small-medium-and-large {
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+  @include extra-large {
+    margin-left: 15px;
+    margin-left: 15px;
+  }
 }
 
 .website-navigation-languages__link {
