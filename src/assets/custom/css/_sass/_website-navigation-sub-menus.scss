@@ -101,8 +101,6 @@
 
 .website-navigation-sub-menu__toggle-proxy {
   @include small-and-medium {
-    margin-bottom: 15px;
-
     &::before {
       border-color: $coral;
       border-style: solid;
