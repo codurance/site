@@ -9,6 +9,7 @@
   </div>
   {% if include.show_more_clients_cta %}
     {% assign cta_href = '/clients' | prepend: site.baseurl %}
-    {% include cta_primary_link.html color='coral' href=cta_href text="See More" class="clients-teaser__cta" %}
+    {% capture see_more_text %}{% t index-clients.see_more-cta %}{% endcapture %}
+    {% include cta_primary_link.html color='coral' href=cta_href text=see_more_text class="clients-teaser__cta" %}
   {% endif %}
 </div>
