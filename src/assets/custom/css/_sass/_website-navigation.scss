@@ -1,14 +1,22 @@
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
     background-color: white;
-    padding: $header-vertical-spacing 20px;
+    padding: 25px 20px;
   }
 
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    padding-top: $header-vertical-spacing;
+  }
+
+  @include small-medium-and-large {
+    padding-top: 25px;
     padding-bottom: 20px;
+  }
+
+  @include extra-large {
+    padding-top: 35px;
+    padding-bottom: 30px;
   }
 
   @include large-and-extra-large {
@@ -79,7 +87,7 @@
   @include small-and-medium {
     position: absolute;
     right: 78px;
-    top: $header-vertical-spacing;
+    top: 25px;
     transition: opacity 0.5s;
 
     .website-header:not(.website-header--open) & {
