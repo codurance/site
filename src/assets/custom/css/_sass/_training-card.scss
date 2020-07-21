@@ -48,11 +48,13 @@
 .training-card__title {
   color: white;
 
-  @include small {
-    @include mercer-bold;
-  }
-  @include medium-large-and-extra-large {
-    @include freed-bold;
+  .training-card:not(.training-card--featured) & {
+    @include small {
+      @include mercer-bold;
+    }
+    @include medium-large-and-extra-large {
+      @include freed-bold;
+    }
   }
 
   .training-card--featured & {
