@@ -28,7 +28,7 @@
     {%- assign counter = 1 -%}
     {%- for training in non-featured-training -%}
       {%- if forloop.first == true -%}{%- assign active-class = "active" -%}{%- else -%}{%- assign active-class = "" -%}{%- endif -%}
-      <div class="training-card-group__navigation-item {{active-class}}" data-nav-item data-position="{{counter}}"></div>
+        <div class="training-card-group__navigation-item {{active-class}}" data-nav-item data-position="{{counter}}"></div>
       {%- assign counter = counter | plus: 1 -%}
     {%- endfor -%}
   </div>
