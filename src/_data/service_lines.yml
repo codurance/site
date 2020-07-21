@@ -45,14 +45,14 @@ strategic-advice:
   cta-path: /services/strategic-advice/
 
 training:
-  avatar-src: /assets/custom/img/training/sandro_avatar_image.png
+  avatar-src: /assets/custom/img/training-overview/sandro_avatar_image.png
   name: Sandro Mancuso
   course-length: 3 days
   en-title: Crafting Code & Crafted Design
   en-description: The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
   es-title: SPANISH - Crafting Code & Crafted Design
   es-description: SPANISH - The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
-  image-src: /assets/custom/img/training/hero_image_sandro.png
+  image-src: /assets/custom/img/training-overview/hero_image_sandro.png
   cta-path: /services/training
 
 service-line-example:
