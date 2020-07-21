@@ -1,13 +1,20 @@
+.training-hero {
+  @include max-width--out-there;
+}
+
 .training-hero__wrapper {
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 480px;
-  padding-top: 100px;
+  background-color: $navy;
+}
+
+.training-hero__background-image {
+  margin-top: -210px;
+  opacity: 0.3;
+  width: 100%;
 }
 
 .training-hero__lower-block {
   background-color: $slate;
-  height: 220px;
-  margin-top: 160px;
+  height: 210px;
+  margin-top: -210px;
+  position: relative;
 }
