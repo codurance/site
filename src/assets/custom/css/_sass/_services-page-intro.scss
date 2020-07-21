@@ -29,7 +29,7 @@ $text-container-inner-margin-top: -200px;
   justify-content: space-around;
 
   @include small {
-    padding: 30px 0;
+    padding: 5% 0;
   }
 
   @include medium {
@@ -46,17 +46,19 @@ $icon-image-height--small-medium: 115px;
 $icon-image-width--large-extra-large: 180px;
 $icon-image-height--large-extra-large: 208px;
 
-.service-page-intro__navigation-link {
+.services-page-intro__icon-container {
   @include small {
     align-items: center;
     display: flex;
     flex-basis: 50%;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 5% 5%;
   }
-  
-  @include medium {
+}
+
+.service-page-intro__navigation-link {
+  @include small-and-medium {
     width: $icon-image-width--small-medium;
   }
 
