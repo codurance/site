@@ -43,7 +43,7 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     }
 
     &::after {
-      background-color: #efefef;
+      background-color: $grey--light;
       content: "";
       height: $header-border-height;
 
