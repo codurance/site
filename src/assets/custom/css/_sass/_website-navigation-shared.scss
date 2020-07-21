@@ -1,3 +1,19 @@
+@mixin shared-navigation-menu-spacing {
+  @include small-and-medium {
+    height: calc(100vh - #{$header-height});
+    overflow-y: scroll;
+    padding-top: 30px;
+  }
+  @include small {
+    padding-left: $lateral-space--small;
+    padding-right: $lateral-space--small;
+  }
+  @include medium {
+    padding-left: $lateral-space--medium;
+    padding-right: $lateral-space--medium;
+  }
+}
+
 @mixin shared-navigation-link-styles {
   background: none;
   border: 0 none;

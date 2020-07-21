@@ -8,14 +8,10 @@ main_menu_items:
   - key: careers
     path: "/careers/"
   - key: about-us
-    connects_to_sub_menu: about-us
-  - key: contact
-    path: "/contact-us/"
-
-sub_menus:
-  - key: about-us
-    items:
+    sub_menu_items:
       - key: our-people
         path: "/about-us/our-people/"
       - key: our-story
         path: "/about-us/our-story/"
+  - key: contact
+    path: "/contact-us/"

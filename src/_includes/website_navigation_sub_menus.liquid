@@ -1,0 +1,17 @@
+<ul 
+  class="website-navigation-sub-menu" 
+  id="sub-menu-{{ include.key }}" 
+>
+  <button 
+    class="website-navigation-sub-menu__toggle-proxy" 
+    data-sub_menu_toggle_id="sub-menu-toggle-{{ include.key }}"
+  >{% t sections.{{include.key}} %}</button>
+  {% for item in include.items %}
+    {% capture translation %}{% t sections.{{ item.key }} %}{% endcapture %}
+    {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %} 
+    {% capture active_class %}{% if item.path == page.url %}website-navigation-sub-menu__link--active{% endif %}{% endcapture %}
+    <li class="website-navigation-sub-menu__item">
+      <a class="website-navigation-sub-menu__link {{ active_class }}" href="{{ href }}">{{ translation }}</a>
+    </li>
+  {% endfor %}  
+</ul>
