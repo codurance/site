@@ -21,7 +21,7 @@ $text-container-inner-margin-top: -200px;
   }
 }
 
-.service-page-intro__navigation {
+.services-page-intro__navigation {
   @include max-width--out-there;
   align-items: center;
   display: flex;
@@ -41,11 +41,6 @@ $text-container-inner-margin-top: -200px;
   }
 }
 
-$icon-image-width--small-medium: 100px;
-$icon-image-height--small-medium: 115px;
-$icon-image-width--large-extra-large: 180px;
-$icon-image-height--large-extra-large: 208px;
-
 .services-page-intro__icon-container {
   @include small {
     align-items: center;
@@ -57,7 +52,12 @@ $icon-image-height--large-extra-large: 208px;
   }
 }
 
-.service-page-intro__navigation-link {
+$icon-image-width--small-medium: 100px;
+$icon-image-height--small-medium: 115px;
+$icon-image-width--large-extra-large: 180px;
+$icon-image-height--large-extra-large: 208px;
+
+.services-page-intro__navigation-link {
   @include small-and-medium {
     width: $icon-image-width--small-medium;
   }
@@ -83,7 +83,7 @@ $icon-image-height--large-extra-large: 208px;
   background-image: url("#{$site-base-url}/assets/custom/img/services/specialist-expertise-hexagon.png");
 }
 
-.service-page-intro__navigation-icon {
+.services-page-intro__navigation-icon {
   align-items: center;
   background-size: cover;
   display: flex;
@@ -106,7 +106,7 @@ $icon-image-height--large-extra-large: 208px;
   }
 }
 
-.service-page-intro__navigation-text {
+.services-page-intro__navigation-text {
   @include bold;
   color: white;
   text-align: center;
