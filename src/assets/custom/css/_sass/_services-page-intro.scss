@@ -14,10 +14,12 @@ $text-container-inner-margin-top: -200px;
   @include large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
   }
+
   @include large {
     height: 0;
     padding-top: 650 / 1820 * 100%;
   }
+
   @include extra-large {
     @include max-width--framed;
     height: $header-background-image-height--large-and-extra-large;
@@ -50,7 +52,6 @@ $icon-image-width--large-extra-large: 180px;
 $icon-image-height--large-extra-large: 208px;
 
 .service-page-intro__navigation-link {
-
   @include small {
     align-items: center;
     display: flex;
@@ -63,6 +64,7 @@ $icon-image-height--large-extra-large: 208px;
   @include medium {
     width: $icon-image-width--small-medium;
   }
+
   @include large-and-extra-large {
     width: $icon-image-width--large-extra-large;
   }
@@ -97,6 +99,7 @@ $icon-image-height--large-extra-large: 208px;
   @include small-and-medium {
     height: $icon-image-height--small-medium
   }
+
   @include large-and-extra-large {
     height: $icon-image-height--large-extra-large;
   }
@@ -112,18 +115,18 @@ $icon-image-height--large-extra-large: 208px;
   font-weight: 600;
   text-align: center;
   
-  @include large-and-extra-large {
-    font-size: 28px;
-    line-height: 38px;
-    padding-top: 30px;
-    width: $icon-image-width--large-extra-large;
-  }
-
   @include small-and-medium {
     font-size: 18px;
     line-height: 28px;
     padding-top: 15px;
     width: $icon-image-width--small-medium;
+  }
+
+  @include large-and-extra-large {
+    font-size: 28px;
+    line-height: 38px;
+    padding-top: 30px;
+    width: $icon-image-width--large-extra-large;
   }
 }
 
