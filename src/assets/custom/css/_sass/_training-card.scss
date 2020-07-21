@@ -65,11 +65,13 @@
 .training-card__description {
   margin: 0 0 50px;
 
-  @include small {
-    @include base;
-  }
-  @include medium-large-and-extra-large {
-    @include mercer-reg;
+  .training-card:not(.training-card--featured) & {
+    @include small {
+      @include base;
+    }
+    @include medium-large-and-extra-large {
+      @include mercer-reg;
+    }
   }
 
   .training-card--featured & {
