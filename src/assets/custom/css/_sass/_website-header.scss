@@ -23,13 +23,13 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     }
 
     @include small-and-medium {
+      overflow: hidden;
       transition: background-color 0.5s, height 0.5s;
       z-index: 100;
 
       &:not(.website-header--open) {
         background-color: white;
         height: $header-height + $header-border-height;
-        overflow: hidden;
       }
       &.website-header--open {
         background-color: $slate;
