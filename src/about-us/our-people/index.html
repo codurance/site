@@ -34,12 +34,12 @@ redirect_from:
       {% assign teamMembersSize = site.data.team | size %}
 
       <div class="container content">
-        <div class="row team margin-bottom-10">
+        <div class="row team margin-bottom-10" style="display: flex;" >
         {% for member in site.data.team %}
         {% assign currentElementInColumn = currentElementInColumn | plus: 1 %}
         {% assign elementsDisplayed = elementsDisplayed | plus: 1 %}
           <!-- TEAM MEMBER -->
-          <div class="col-md-3 col-sm-4 col-6 pb-4" >
+          <div class="col-md-4 col-sm-4 col-6 pb-4" style="flex:0 0 20%;">
             <a href="#team-{{member.id}}" data-modal-target="#team-{{member.id}}" rel="gallery3" class="fancybox img-hover-v1 team-member g-color-primary" title="{{member.name}}" style="background-color: #fff">
               <span><img class="img-fluid" src="{{member.image | prepend: site.baseurl}}" alt=""></span>
               <span class="pt-1">
