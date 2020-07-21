@@ -30,7 +30,7 @@
 .website-navigation__menu-toggle {
   @include small-and-medium {
     position: absolute;
-    top: 15px;
+    top: 18px;
   }
   @include small {
     right: $lateral-space--small - $website-navigation-menu-toggle-spacing;
