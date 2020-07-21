@@ -24,4 +24,28 @@
   margin-left: 150px;
   margin-top: -360px;
   position: relative;
+  color: white;
+}
+
+.training-hero__title {
+  @include eames-bold;
+}
+
+.training-hero__duration {
+  @include ponti;
+  color: white;
+}
+
+.training-hero__course-instructor-title {
+  @include ponti;
+  color: white;
+}
+
+.training-hero__course-instructor {
+  @include base;
+  color: white;
+}
+
+.training-hero__content-container__bottom {
+  @include mercer;
 }
