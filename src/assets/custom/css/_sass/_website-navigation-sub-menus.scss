@@ -27,6 +27,7 @@
     }
     &:not(.website-navigation-sub-menu--open) {
       opacity: 0;
+      pointer-events: none;
     }
   }
 }
