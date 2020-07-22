@@ -16,18 +16,18 @@ multitask servepolling: [:_build_with_polling, :_ruby_serve]
 multitask servepollingquick: [:_build_quick_with_polling, :_ruby_serve]
 
 def _start_jekyll_build(language, limit_posts: false, use_polling_watcher: false)
-	build_command = "bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/#{language} --baseurl /#{language}"
-	
-	if limit_posts
-		build_command += ' --limit_posts 10'
-	end
-	
-	if use_polling_watcher
-		build_command += ' --force_polling'
-	end
-	
-	puts "Running build command: #{build_command}"
-	sh build_command
+  build_command = "bundle exec jekyll build --config build/config/_config.yml,build/config/_config_#{language}.yml --watch --destination output/_site/#{language} --baseurl /#{language}"
+
+  if limit_posts
+    build_command += ' --limit_posts 10'
+  end
+
+  if use_polling_watcher
+    build_command += ' --force_polling'
+  end
+
+  puts "Running build command: #{build_command}"
+  sh build_command
 end
 
 task :_build_quick_with_polling do
