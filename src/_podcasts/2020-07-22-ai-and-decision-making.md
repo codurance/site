@@ -1,5 +1,5 @@
 ---
-author: José E. Rodríguez Huerta
+author: Natalie Gray
 asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-23
