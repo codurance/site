@@ -21,26 +21,28 @@ In this episode of the Codurance Talks podcast, <a href="https://codurance.com/p
 The fascinating conversation covered both the academic and business applications of Machine Learning, AI and Data Science with Riccardo helping to demystify what can be a complex topic to understand, especially for those that are just starting out in their journey.
 
 Areas discussed during this fun and entertaining conversation included:
-The history of AI and Machine Learning
-The challenges around implementing Machine Learning compared to other enterprise solutions
-Building integrity into data sets
-The challenges that unintended changes can bring to algorithm results eg. Covid-19
-Real-world practical applications of Machine Learning from ice cream sales to autonomous cars!
-Understanding abstractions
-Issues around ethics and bias in the algorithm 
-Trends in Machine Learning, including Vision & Language, Forecasting & Modeling, Application within Science and Modeling Real World Phenomena
-Recommendations on how to get started
+
+* The history of AI and Machine Learning
+* The challenges around implementing Machine Learning compared to other enterprise solutions
+* Building integrity into data sets
+* The challenges that unintended changes can bring to algorithm results eg. Covid-19
+* Real-world practical applications of Machine Learning from ice cream sales to autonomous cars!
+* Understanding abstractions
+* Issues around ethics and bias in the algorithm 
+* Trends in Machine Learning, including Vision & Language, Forecasting & Modeling, Application within Science and Modeling Real World Phenomena
+* Recommendations on how to get started
 
 For more information on the topics discussed in the podcast, visit Riccardo’s blog at <a href="https://volpato.io/" target="_blank">https://volpato.io/</a>
 
 Other links of interest that Ricardo and Jose named in the podcast:
+
 <a href="https://twitter.com/ricvolpe" target="_blank">Ricardo’s Twitter</a> 
-<a href="https://twitter.com/jrhuerta" target="_blank">Jose’s Twitter</a> 
-<a href="https://www.fast.ai/" target="_blank">Making neural nets uncool again</a> 
-<a href="https://ai.google/education/" target="_blank">Education – Google AI</a> 
-<a href="https://volpato.io/blog/2019/future-of-ai-and-decision-making/" target="_blank">Riccardo Volpato | The future of AI and Decision Making: Specification, Preferences and Interpretability</a> 
-<a href="https://www.tensorflow.org/" target="_blank">TensorFlow:</a>  An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources.
-<a href="https://openai.com/" target="_blank">OpenAI</a>  is an AI development and deployment company with the mission to ensure that artificial general intelligence benefits all of humanity.
+<br><a href="https://twitter.com/jrhuerta" target="_blank">Jose’s Twitter</a> 
+<br><a href="https://www.fast.ai/" target="_blank">Making neural nets uncool again</a> 
+<br><a href="https://ai.google/education/" target="_blank">Education – Google AI</a> 
+<br><a href="https://volpato.io/blog/2019/future-of-ai-and-decision-making/" target="_blank">Riccardo Volpato | The future of AI and Decision Making: Specification, Preferences and Interpretability</a> 
+<br><a href="https://www.tensorflow.org/" target="_blank">TensorFlow:</a>  An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources.
+<br><a href="https://openai.com/" target="_blank">OpenAI</a>  is an AI development and deployment company with the mission to ensure that artificial general intelligence benefits all of humanity.
  
 
 
