@@ -1,6 +1,5 @@
-$header-veritical-space: 25px;
 $header-height: 70px;
-$header-border-width: 1px;
+$header-border-height: 1px;
 
 body:not(.toggle--slt-397-website-header-updates) .website-header {
   background-color: white;
@@ -14,22 +13,28 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
 
 .toggle--slt-397-website-header-updates {
   .website-header {
+    left: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 100;
+
+    &.website-header--revealed {
+      top: 0;
+    }
+
     @include small-and-medium {
+      overflow: hidden;
       transition: background-color 0.5s, height 0.5s;
+      z-index: 100;
 
       &:not(.website-header--open) {
         background-color: white;
-        height: $header-height + $header-border-width;
-        overflow: hidden;
+        height: $header-height + $header-border-height;
       }
       &.website-header--open {
         background-color: $slate;
         height: 100vh;
-        left: 0;
-        position: fixed;
         top: 0;
-        width: 100%;
-        z-index: 100;
       }
     }
     @include large-and-extra-large {
@@ -37,12 +42,14 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     }
 
     &::after {
-      background-color: #808080;
+      background-color: $grey--light;
       content: "";
-      height: $header-border-width;
-      position: absolute;
-      top: $header-height;
+      height: $header-border-height;
 
+      @include small-and-medium {
+        position: absolute;
+        top: $header-height;
+      }
       @include small {
         left: $lateral-space--small;
         right: $lateral-space--small;
@@ -52,16 +59,9 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
         right: $lateral-space--medium;
       }
       @include large-and-extra-large {
-        left: $lateral-space--large;
-        right: $lateral-space--large;
+        @include max-width--framed;
+        display: block;
       }
     }
-  }
-  .website-header--revealed {
-    left: 0;
-    position: sticky;
-    right: 0;
-    top: 0;
-    z-index: 100;
   }
 }

@@ -6,8 +6,7 @@
 
 .hubspot-header-banner-cta .cta_button {
   @include bold;
-  border-bottom: 1px solid #ffffff;
-  border: none;
+  border-bottom: 1px solid $coral;
   color: white;
   font-size: 15px;
   padding: 0;

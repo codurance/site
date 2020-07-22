@@ -6,8 +6,7 @@ $website-navigation-menu-toggle-height: 10px;
   background: none;
   border: 0 none;
   cursor: pointer;
-  height: $website-navigation-menu-toggle-height +
-    (2 * $website-navigation-menu-toggle-spacing);
+  height: 40px;
   width: $website-navigation-menu-toggle-width +
     (2 * $website-navigation-menu-toggle-spacing);
 
@@ -25,16 +24,15 @@ $website-navigation-menu-toggle-height: 10px;
     background-color: $grey--dark;
   }
   &[aria-expanded="false"]::before {
-    bottom: $website-navigation-menu-toggle-spacing +
-      $website-navigation-menu-toggle-height;
+    bottom: 25px;
   }
   &[aria-expanded="false"]::after {
-    bottom: $website-navigation-menu-toggle-spacing;
+    bottom: 15px;
   }
   &[aria-expanded="true"]::after,
   &[aria-expanded="true"]::before {
     background-color: white;
-    bottom: 20px;
+    bottom: 22px;
   }
   &[aria-expanded="true"]::before {
     transform: rotate(45deg);

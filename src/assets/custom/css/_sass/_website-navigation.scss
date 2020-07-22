@@ -1,38 +1,49 @@
 .website-navigation {
   body:not(.toggle--slt-397-website-header-updates) & {
     background-color: white;
-    padding: $header-veritical-space 20px;
+    padding: 25px 20px;
   }
 
   body.toggle--slt-397-website-header-updates & {
     @include lateral-spacing;
     @include max-width--out-there;
-    padding-top: $header-veritical-space;
-    padding-bottom: $header-veritical-space;
+  }
 
-    @include large-and-extra-large {
-      align-items: top;
-      display: flex;
-      justify-content: space-between;
-    }
+  @include small-medium-and-large {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  @include extra-large {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  @include large-and-extra-large {
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
-.website-navigation__home-link,
-.website-navigation__menu,
-.website-navigation__languages {
-  height: 20px;
-}
 .website-navigation__home-link {
   @include small-and-medium {
     display: block;
+  }
+  @include small {
+    height: 17px;
+    margin: 2px 0 0;
+  }
+  @include medium-large-and-extra-large {
+    height: 20px;
+    margin: -1px 0 0;
   }
 }
 
 .website-navigation__menu-toggle {
   @include small-and-medium {
     position: absolute;
-    top: 15px;
+    top: 18px;
   }
   @include small {
     right: $lateral-space--small - $website-navigation-menu-toggle-spacing;
@@ -46,30 +57,25 @@
 }
 
 .website-navigation__menu {
+  @include shared-navigation-menu-spacing;
+  min-height: 25px;
+
   @include small-and-medium {
+    left: 0;
     margin: 0;
     position: absolute;
     top: $header-height;
-    transition: height 0.5s, padding-top 0.5s, border-top-color 0.5s;
+    width: 200vw;
+    transition: left 0.5s, padding-top 0.5s, border-top-color 0.5s;
 
     &:not(.website-navigation__menu--open) {
       height: 0;
       overflow: hidden;
       padding-top: 0;
     }
-    &.website-navigation__menu--open {
-      height: calc(100vh - #{$header-height});
-      overflow: scroll;
-      padding-top: 30px;
+    &.website-navigation__menu--showing-sub-menu {
+      left: -100vw;
     }
-  }
-  @include small {
-    left: $lateral-space--small;
-    right: $lateral-space--small;
-  }
-  @include medium {
-    left: $lateral-space--medium;
-    right: $lateral-space--medium;
   }
   @include large {
     margin: 0 25px;
@@ -80,12 +86,13 @@
 }
 
 .website-navigation__languages {
+  height: 25px;
   margin: 0;
 
   @include small-and-medium {
     position: absolute;
     right: 78px;
-    top: $header-veritical-space;
+    top: 25px;
     transition: opacity 0.5s;
 
     .website-header:not(.website-header--open) & {

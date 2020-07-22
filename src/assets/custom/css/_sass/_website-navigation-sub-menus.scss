@@ -1,0 +1,119 @@
+.website-navigation-sub-menu {
+  @include shared-navigation-menu-spacing;
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+
+  @include small-and-medium {
+    left: 100vw;
+    top: 0;
+    width: 100vw;
+
+    .website-header:not(.website-header--open) & {
+      display: none;
+    }
+  }
+
+  @include large {
+    left: 10px;
+  }
+  @include large-and-extra-large {
+    top: 25px;
+    padding: 20px 0;
+    transition: opacity 0.5s;
+
+    &.website-navigation-sub-menu--open {
+      opacity: 1;
+    }
+    &:not(.website-navigation-sub-menu--open) {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.website-navigation-sub-menu__item {
+  @include small-and-medium {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  @include large {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @include extra-large {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.website-navigation-sub-menu__toggle-proxy,
+.website-navigation-sub-menu__link {
+  @include shared-navigation-link-styles;
+
+  @include small-and-medium {
+    color: white;
+  }
+}
+
+.website-navigation-sub-menu__link {
+  @include small-and-medium {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &--active {
+      &::after {
+        left: 25px;
+        right: 25px;
+      }
+    }
+  }
+  @include large-and-extra-large {
+    color: $grey--dark;
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: $coral;
+    }
+
+    &--active {
+      &::after {
+        left: 0;
+        right: 0;
+      }
+      &:focus,
+      &:hover {
+        cursor: default;
+        color: $grey--dark;
+      }
+    }
+  }
+}
+
+.website-navigation-sub-menu__toggle-proxy {
+  @include small-and-medium {
+    &::before {
+      border-color: $coral;
+      border-style: solid;
+      border-width: 2px 0 0 2px;
+      content: "";
+      display: inline-block;
+      margin-right: 5px;
+      padding: 4.5px;
+      transform: rotate(-45deg);
+    }
+  }
+  @include large-and-extra-large {
+    display: none;
+  }
+}
