@@ -1,5 +1,6 @@
 $header-background-image-height--medium: 300px;
 $header-background-image-height--large-and-extra-large: 694px;
+$header-background--navigation-image-height--large-and-extra-large: 400px;
 $text-container-inner-margin-top: -200px;
 
 .services-page-intro__image {
@@ -17,6 +18,7 @@ $text-container-inner-margin-top: -200px;
 
   @include extra-large {
     @include max-width--framed;
+    width: 100%;
     height: $header-background-image-height--large-and-extra-large;
   }
 }
@@ -37,7 +39,7 @@ $text-container-inner-margin-top: -200px;
   }
 
   @include large-and-extra-large {
-    height: calc(#{$header-background-image-height--large-and-extra-large} + #{$text-container-inner-margin-top});
+    height: $header-background--navigation-image-height--large-and-extra-large;
   }
 }
 
@@ -54,8 +56,8 @@ $text-container-inner-margin-top: -200px;
 
 $icon-image-width--small-medium: 100px;
 $icon-image-height--small-medium: 115px;
-$icon-image-width--large-extra-large: 180px;
-$icon-image-height--large-extra-large: 208px;
+$icon-image-width--large-extra-large: 130px;
+$icon-image-height--large-extra-large: 150px;
 
 .services-page-intro__navigation-link {
   @include small-and-medium {
