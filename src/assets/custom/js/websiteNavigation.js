@@ -92,7 +92,7 @@ var websiteNavigation = function () {
     subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
 
-    subMenuToggle.style.marginBottom = "";
+    subMenuToggle.style.removeProperty('margin-bottom');
   }
 
   setupEventListeners();

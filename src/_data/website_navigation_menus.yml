@@ -2,7 +2,19 @@ main_menu_items:
   - key: clients
     path: "/clients/"
   - key: services
-    path: "/services/"
+    sub_menu_items:
+      - key: services-overview
+        path: "/services/"
+      - key: software-modernisation
+        path: "/services/software-modernisation/"
+      - key: software-delivery
+        path: "/services/software-delivery/"
+      - key: specialist-expertise
+        path: "/services/specialist-expertise/"
+      - key: strategic-advice
+        path: "/services/strategic-advice/"
+      - key: training
+        path: "/services/training"
   - key: publications
     path: "/publications/"
   - key: careers

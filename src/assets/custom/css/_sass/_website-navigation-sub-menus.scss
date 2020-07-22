@@ -12,6 +12,10 @@
     .website-header:not(.website-header--open) & {
       display: none;
     }
+
+    &:not(.website-navigation-sub-menu--open) {
+      visibility: hidden;
+    }
   }
 
   @include large {
