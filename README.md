@@ -95,9 +95,14 @@ net start com.docker.service
 
 Then you can run `docker-compose build`
 
-Starting the container with `docker-compose up` doesnt seem to work but starting it with `docker run -p 4000:4000 -d <imageid>` does, the downside
-is that you will have to run `docker-compose build`, `docker images` and `docker run -p 4000:4000 -d <imageid>` to check each update you make.
-Note (Jorge): `docker-compose up` works for me, but there is no automated refresh
+You will need to add the root source directory in docker desktop to allow binding volumes to it *(Settings => Resources => File Sharing in docker desktop)* ([docs](https://docs.docker.com/docker-for-windows/#file-sharing))
+
+Starting the container with `docker-compose up` doesnt seem to work but you can run the container directly using the following command.
+```bash
+docker run -it -p 4000:4000 -v %cd%:/usr/local/src codurance/site:latest rake servepolling
+```
+
+You can use the rake task ```servepollingquick``` to build only the last 10 posts.
 
 ---
 

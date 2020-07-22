@@ -12,21 +12,48 @@ end
 
 multitask serve:      [:_build_en,       :_build_es,       :_ruby_serve]
 multitask servequick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
+multitask servepolling: [:_build_with_polling, :_ruby_serve]
+multitask servepollingquick: [:_build_quick_with_polling, :_ruby_serve]
+
+def _start_jekyll_build(language, limit_posts: false, use_polling_watcher: false)
+	build_command = "bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/#{language} --baseurl /#{language}"
+	
+	if limit_posts
+		build_command += ' --limit_posts 10'
+	end
+	
+	if use_polling_watcher
+		build_command += ' --force_polling'
+	end
+	
+	puts "Running build command: #{build_command}"
+	sh build_command
+end
+
+task :_build_quick_with_polling do
+  _start_jekyll_build('en', limit_posts: true, use_polling_watcher: true)
+  _start_jekyll_build('es', limit_posts: true, use_polling_watcher: true)
+end
+
+task :_build_with_polling do
+  _start_jekyll_build('en', use_polling_watcher: true)
+  _start_jekyll_build('es', use_polling_watcher: true)
+end
 
 task :_build_en_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en  --limit_posts 10'
+  _start_jekyll_build('en', limit_posts: true)
 end
 
 task :_build_es_quick do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es  --limit_posts 10'
+  _start_jekyll_build('es', limit_posts: true)
 end
 
 task :_build_en do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_en.yml --watch --destination output/_site/en --baseurl /en'
+  _start_jekyll_build 'en'
 end
 
 task :_build_es do
-  sh 'bundle exec jekyll build --config build/config/_config.yml,build/config/_config_es.yml --watch --destination output/_site/es --baseurl /es'
+  _start_jekyll_build 'es'
 end
 
 task :_ruby_serve do
