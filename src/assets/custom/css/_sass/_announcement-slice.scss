@@ -10,12 +10,8 @@
   line-height: 28px;
   text-align: center;
 
-  @media (min-width: 580px) {
-    line-height: 34px;
-
-    a {
-      margin-left: 5px;
-    }
+  a {
+    margin-left: 5px;
   }
 }
 
