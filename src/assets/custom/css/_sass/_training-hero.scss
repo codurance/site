@@ -28,24 +28,24 @@
 }
 
 .training-hero__title {
-  @include eames-bold;
+  @include habib-bold;
 }
 
 .training-hero__duration {
-  @include ponti;
+  @include base-bold;
   color: white;
 }
 
 .training-hero__course-instructor-title {
-  @include ponti;
+  @include ponti-bold;
   color: white;
 }
 
 .training-hero__course-instructor {
-  @include base;
+  @include mercer-bold;
   color: white;
 }
 
 .training-hero__content-container__bottom {
-  @include mercer;
+  @include freed;
 }
