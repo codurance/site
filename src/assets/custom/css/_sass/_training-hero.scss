@@ -1,13 +1,10 @@
-.training-hero {
-  @include max-width--out-there;
-}
 
 .training-hero__wrapper {
   background-color: $navy;
 }
 
 .training-hero__background-image {
-  margin-top: -210px;
+  margin-top: -20%;
   opacity: 0.3;
   width: 100%;
 }
@@ -20,9 +17,9 @@
 }
 
 .training-hero__content-container {
-  max-width: 450px;
-  margin-left: 150px;
-  margin-top: -360px;
+  max-width: 35%;
+  margin-left: 250px;
+  margin-top: -35%;
   position: relative;
   color: white;
 }
@@ -34,6 +31,7 @@
 .training-hero__duration {
   @include base-bold;
   color: white;
+  text-transform: uppercase;
 }
 
 .training-hero__course-instructor-title {
