@@ -120,8 +120,8 @@ $icon-image-height--large-extra-large: 150px;
   }
 
   @include large-and-extra-large {
-    @include freed;
-    padding-top: 30px;
+    @include mercer;
+    padding: 30px 15px 0 15px;
     width: $icon-image-width--large-extra-large;
   }
 }
