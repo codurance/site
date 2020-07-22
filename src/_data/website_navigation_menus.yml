@@ -13,6 +13,8 @@ main_menu_items:
         path: "/services/specialist-expertise/"
       - key: strategic-advice
         path: "/services/strategic-advice/"
+      - key: training
+        path: "/services/training"
   - key: publications
     path: "/publications/"
   - key: careers
