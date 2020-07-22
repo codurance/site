@@ -18,6 +18,7 @@ $text-container-inner-margin-top: -200px;
 
   @include extra-large {
     height: $header-background-image-height--large-and-extra-large;
+    margin-bottom: -$vertical-overlap * 3;
   }
 }
 
