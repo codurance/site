@@ -4,7 +4,7 @@ asset-type: podcast
 layout: podcast
 name: codurance-talks-episode-23
 image:
-    src:
+    src: /assets/custom/img/podcasts/2018_09_06-fowler-talk/prairie-dog-1470659_1280.jpg
 title: "Codurance Talks Episode 23 - AI and the future of decision making"
 description: In this episode of the Codurance Talks podcast, José E. Rodríguez Huerta  chats to Riccardo Volpato, Data Scientist and Software Engineer at Satalia, a world-leading enterprise AI company. 
 video-url: https://www.podbean.com/media/player/n33x8-e41723?from=pb6admin&amp;download=1&amp;version=1&amp;vjs=1&amp;auto=0&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Helvetica&amp;skin=1&amp;pfauth=
