@@ -99,7 +99,7 @@ You will need to add the root source directory in docker desktop to allow bindin
 
 Starting the container with `docker-compose up` doesnt seem to work but you can run the container directly using the following command.
 ```bash
-docker run -it -p 4000:4000 -v %cd%:/usr/local/src codurance/site:latest rake servepolling
+docker run -p 4000:4000 -v %cd%:/usr/local/src codurance/site:latest rake servepolling
 ```
 
 You can use the rake task ```servepollingquick``` to build only the last 10 posts.
