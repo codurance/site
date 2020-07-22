@@ -34,6 +34,15 @@
   text-transform: uppercase;
 }
 
+.training-hero__content-container__middle {
+  display: flex;
+  padding: 50px 0;
+}
+
+.training-hero__instructor-info {
+  padding-left: 20px;
+}
+
 .training-hero__course-instructor-title {
   @include ponti-bold;
   color: white;
