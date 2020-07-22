@@ -59,6 +59,15 @@ $icon-image-width--large-extra-large: 130px;
 $icon-image-height--large-extra-large: 150px;
 
 .services-page-intro__navigation-link {
+  &:hover {
+    text-decoration: none;
+    color: $grey--light;
+  }
+
+  &:hover .service-line-icon {
+    fill: $grey--light;
+  }
+
   @include small-and-medium {
     width: $icon-image-width--small-medium;
   }
