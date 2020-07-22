@@ -12,8 +12,8 @@ end
 
 multitask serve:      [:_build_en,       :_build_es,       :_ruby_serve]
 multitask servequick: [:_build_en_quick, :_build_es_quick, :_ruby_serve]
-multitask servepolling: [:_build_with_polling, :_ruby_serve]
-multitask servepollingquick: [:_build_quick_with_polling, :_ruby_serve]
+multitask servepolling: [:_build_with_polling_en, :_build_with_polling_es, :_ruby_serve]
+multitask servepollingquick: [:_build_quick_with_polling_en, :_build_quick_with_polling_es, :_ruby_serve]
 
 def _start_jekyll_build(language, limit_posts: false, use_polling_watcher: false)
   build_command = "bundle exec jekyll build --config build/config/_config.yml,build/config/_config_#{language}.yml --watch --destination output/_site/#{language} --baseurl /#{language}"
@@ -30,13 +30,18 @@ def _start_jekyll_build(language, limit_posts: false, use_polling_watcher: false
   sh build_command
 end
 
-task :_build_quick_with_polling do
+task :_build_quick_with_polling_en do
   _start_jekyll_build('en', limit_posts: true, use_polling_watcher: true)
+end
+
+task :_build_with_polling_en do
+  _start_jekyll_build('en', use_polling_watcher: true)
+end
+task :_build_quick_with_polling_es do
   _start_jekyll_build('es', limit_posts: true, use_polling_watcher: true)
 end
 
-task :_build_with_polling do
-  _start_jekyll_build('en', use_polling_watcher: true)
+task :_build_with_polling_es do
   _start_jekyll_build('es', use_polling_watcher: true)
 end
 
