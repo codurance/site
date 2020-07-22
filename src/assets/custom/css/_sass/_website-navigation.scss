@@ -28,7 +28,7 @@
 
 .website-navigation__home-link {
   @include small-and-medium {
-    display: block;
+    display: inline-block;
   }
   @include small {
     height: 17px;
