@@ -1,42 +1,36 @@
 .announcement-slice {
-  background-color: $coral;
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation/bg-announcement-slice-softmod.jpg");
   color: white;
-  line-height: 34px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 2;
+  background-size: cover;
+  line-height: 28px;
+  text-align: center;
+
+  a {
+    margin-left: 5px;
+  }
 }
 
 .announcement-slice__inner {
-  @include max-width;
+  display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media (min-width: 576px) {
-    max-width: 540px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @media (min-width: 768px) {
-    max-width: 720px;
-  }
-  @media (min-width: 992px) {
-    max-width: 960px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1140px;
-  }
 }
 
 .announcement-slice__icon {
-  fill: transparent;
-  float: left;
-  margin-right: 15px;
-  stroke-width: 5px;
-  stroke: white;
-  width: 30px;
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    fill: transparent;
+    float: left;
+    margin-right: 15px;
+    stroke-width: 5px;
+    stroke: white;
+    width: 25px;
+  }
 }
