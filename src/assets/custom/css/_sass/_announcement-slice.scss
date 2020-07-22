@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 2;
   background-size: cover;
-  line-height: 1.5em;
+  line-height: 28px;
   text-align: center;
 
   @media (min-width: 580px) {
@@ -26,15 +26,15 @@
 }
 
 .announcement-slice__icon {
-  display: none;
-  fill: transparent;
-  float: left;
-  margin-right: 15px;
-  stroke-width: 5px;
-  stroke: white;
-  width: 30px;
-
-  @media (min-width: 580px) {
-    display: block;
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    fill: transparent;
+    float: left;
+    margin-right: 15px;
+    stroke-width: 5px;
+    stroke: white;
+    width: 25px;
   }
 }
