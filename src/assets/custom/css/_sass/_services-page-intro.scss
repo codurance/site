@@ -17,8 +17,6 @@ $text-container-inner-margin-top: -200px;
   }
 
   @include extra-large {
-    @include max-width--framed;
-    width: 100%;
     height: $header-background-image-height--large-and-extra-large;
   }
 }
