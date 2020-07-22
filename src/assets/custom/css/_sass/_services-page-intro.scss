@@ -59,13 +59,22 @@ $icon-image-width--large-extra-large: 130px;
 $icon-image-height--large-extra-large: 150px;
 
 .services-page-intro__navigation-link {
-  &:hover {
-    text-decoration: none;
-    color: $grey--light;
+  color: white;
+
+  & .service-line-icon {
+    height: 55%;
+    fill: white;
   }
 
-  &:hover .service-line-icon {
-    fill: $grey--light;
+  &:hover {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: $grey--light;
+
+    .service-line-icon {
+      transition: fill 0.3s ease;
+      fill: $grey--light;
+    }
   }
 
   @include small-and-medium {
@@ -110,15 +119,10 @@ $icon-image-height--large-extra-large: 150px;
   @include large-and-extra-large {
     height: $icon-image-height--large-extra-large;
   }
-
-  .service-line-icon {
-    height: 55%;
-  }
 }
 
 .services-page-intro__navigation-text {
   @include bold;
-  color: white;
   text-align: center;
   
   @include small-and-medium {
