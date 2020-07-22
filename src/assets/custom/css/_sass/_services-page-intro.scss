@@ -133,7 +133,7 @@ $icon-image-height--large-extra-large: 150px;
 
   @include large-and-extra-large {
     @include mercer;
-    padding: 30px 15px 0 15px;
+    padding-top: 30px;
     width: $icon-image-width--large-extra-large;
   }
 }
