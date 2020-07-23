@@ -6,11 +6,14 @@
     {% endif %}
 {% endcapture %}
 {% if include.course-length %} {% capture course-length %}<span class="training-teaser__course-length">{{ include.course-length }}</span> {% endcapture %}{% endif %}
+{% if include.title-background-image %}
+    {% capture title_background_image %}style="background-image: url({{ site.baseurl }}{{ include.title-background-image }})"{% endcapture %}
+{% endif %}
 
 <article class="service-line-teaser-card">
     <div class="service-line-teaser-card__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }})"></div>
     <div class="service-line-teaser-card__content" style="background-image: url({{ site.baseurl }}{{ include.background_image }})">
-        <div class="service-line-teaser-card__primary-content">
+        <div class="service-line-teaser-card__primary-content" {{ title_background_image }}>
             <h2 class="service-line-teaser-card__tag">{{meta-image}} {{ include.name }} {{ course-length }} </h2>
             <h3 class="service-line-teaser-card__title">{{ include.title }}</h3>
         </div>
