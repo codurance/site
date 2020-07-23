@@ -1,7 +1,3 @@
-$katalyst-banner-width: 384px;
-$katalyst-banner-height--small-medium: 313px;
-$katalyst-banner-height--large: 442px;
-
 .training-overview-content {
   background-color: $navy--ultralight;
   @include max-width--framed;
@@ -33,66 +29,6 @@ $katalyst-banner-height--large: 442px;
   @include max-width--out-there;
   @include medium-large-and-extra-large {
     @include lateral-spacing;
-  }
-}
-
-.training-overview-katalyst {
-  @include medium-large-and-extra-large {
-    background-color: $navy--ultralight;
-    padding-bottom: $vertical-overlap;
-    padding-top: $vertical-overlap;
-    position: relative;
-
-    &::before {
-      background-color: $slate;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 200px;
-    }
-  }
-}
-
-.training-overview-katalyst__banner {
-  @include max-width--out-there;
-
-  @include small {
-    .in_page_banner__image {
-      display: none;
-    }
-    .in_page_banner__main {
-      height: $katalyst-banner-height--small-medium;
-      width: 100%;
-    }
-  }
-  @include medium-large-and-extra-large {
-    position: relative;
-    top: -100px;
-  }
-  @include medium {
-    @include lateral-spacing--medium;
-    .in_page_banner__image {
-      display: none;
-    }
-    .in_page_banner__main {
-      height: $katalyst-banner-height--small-medium;
-      width: 100%;
-    }
-  }
-  @include large-and-extra-large {
-    @include lateral-spacing--large-and-extra-large;
-
-    .in_page_banner__image {
-      height: $katalyst-banner-height--large;
-      width: $katalyst-banner-width;
-    }
-
-    .in_page_banner__main {
-      height: $katalyst-banner-height--large;
-      width: calc(100% - #{$katalyst-banner-width});
-    }
   }
 }
 
