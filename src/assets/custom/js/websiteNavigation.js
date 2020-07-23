@@ -45,6 +45,21 @@ var websiteNavigation = function () {
 
     if (currentOpenSubMenu === null) {
       openSubMenu(subMenu, subMenuToggle);
+      return;
+    }
+
+    if (targetIsCurrentlyOpen(subMenu)) {
+      closeSubMenu(subMenu, subMenuToggle);
+      return;
+    }
+
+    if (!targetIsCurrentlyOpen(subMenu)) {
+      var currentlyOpenSubMenu = currentOpenSubMenu.menu;
+      var currentlyOpenSubMenuToggle = currentOpenSubMenu.toggle;
+
+      closeSubMenu(currentlyOpenSubMenu, currentlyOpenSubMenuToggle);
+      openSubMenu(subMenu, subMenuToggle);
+      return;
     }
 
     // subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
@@ -57,6 +72,10 @@ var websiteNavigation = function () {
       e.target.dataset.sub_menu_toggle_id
     );
     real.click();
+  }
+
+  function targetIsCurrentlyOpen(subMenu) {
+    return currentOpenSubMenu.menu === subMenu
   }
 
   function openMenu() {
