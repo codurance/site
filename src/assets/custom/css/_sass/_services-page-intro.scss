@@ -10,11 +10,11 @@ $text-container-inner-margin-top: -$vertical-overlap * 2;
   background-size: cover;
 
   @include small-and-medium {
-    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium-v2.jpg");  
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");  
   }
 
   @include large-and-extra-large {
-    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large-v2.jpg");
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
   }
 
   @include extra-large {
