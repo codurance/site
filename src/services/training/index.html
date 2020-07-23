@@ -36,20 +36,6 @@ intro:
         {% include training_card_group.liquid %}
     </div>
   </section>
-  <section class="training-overview-katalyst">
-    {% capture description %}{{ translations.katalyst-banner.description }}{% endcapture %}
-    {% capture hubspot-id %}{{  translations.katalyst-banner.hubspot-form-id }}{% endcapture %}
-    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
-    {% capture title %}{{  translations.katalyst-banner.title }}{% endcapture %}
-    {% include in_page_banner.html
-      background_image="/assets/custom/img/training-overview/training-overview-katalyst-banner.png"
-      background_position="30% center"
-      class="training-overview-katalyst__banner"
-      description=description
-      hubspot-cta=hubspot-cta
-      title=title
-    %}
-  </section>
   <section class="training-overview-form">
     {% include training_contact_form.liquid %}
   </section>
