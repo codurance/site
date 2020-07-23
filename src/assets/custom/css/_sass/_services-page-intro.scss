@@ -1,6 +1,6 @@
 $header-background-nav-height--large-and-extra-large: $vertical-overlap * 4;
 $header-background-nav-image-height--large-and-extra-large: $vertical-overlap * 5;
-$header-background-nav-image-height--medium: 300px;
+$header-background-nav-image-height--medium: $vertical-overlap * 3;
 $header-background-nav-image-padding--large-and-extra-large: 10px + $vertical-overlap;
 $text-container-inner-margin-top: -$vertical-overlap * 2;
 
