@@ -137,21 +137,24 @@ function setUpMocks() {
   createMockHeader();
   createMockMenuToggle();
   createMockMenu();
-  createMockSubMenu();
+  createMockSubMenu(SUB_MENU_ID_1, SUB_MENU_TOGGLE_ID_1);
+  createMockSubMenu(SUB_MENU_ID_2, SUB_MENU_TOGGLE_ID_2);
 }
 
 function captureMocks() {
   header = getMockHeader();
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
-  subMenu = getMockSubMenu();
+  subMenu = getMockSubMenu(SUB_MENU_ID_1);
   subMenuToggle = getMockSubMenuToggle();
   subMenuToggleProxy = getMockSubMenuToggleProxy();
 }
 
 const MENU_ID = "mockMenuId";
-const SUB_MENU_ID = "mockSubMenuId";
-const SUB_MENU_TOGGLE_ID = "mockSubMenuToggleId";
+const SUB_MENU_ID_1 = "mockSubMenuId-1";
+const SUB_MENU_TOGGLE_ID_1 = "mockSubMenuToggleId-1";
+const SUB_MENU_ID_2 = "mockSubMenuId-2";
+const SUB_MENU_TOGGLE_ID_2 = "mockSubMenuToggleId-2";
 
 function createMockHeader() {
   const header = window.document.createElement("div");
@@ -172,16 +175,16 @@ function createMockMenu() {
   menu.id = MENU_ID;
 
   const subMenuToggle = window.document.createElement("button");
-  subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID);
+  subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID_1);
   subMenuToggle.setAttribute("aria-expanded", false);
   subMenuToggle.classList.add(SUB_MENU_TOGGLE_CLASS);
-  subMenuToggle.id = SUB_MENU_TOGGLE_ID;
+  subMenuToggle.id = SUB_MENU_TOGGLE_ID_1;
 
   window.document.body.appendChild(menu);
   menu.appendChild(subMenuToggle);
 }
 
-function createMockSubMenu() {
+function createMockSubMenu(SUB_MENU_ID, SUB_MENU_TOGGLE_ID) {
   Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
     configurable: true,
     value: fakeSubMenuScrollHeight,
@@ -221,6 +224,6 @@ function getMockSubMenuToggleProxy() {
   return window.document.querySelector(`.${SUB_MENU_TOGGLE_PROXY_CLASS}`);
 }
 
-function getMockSubMenu() {
+function getMockSubMenu(SUB_MENU_ID) {
   return window.document.querySelector(`#${SUB_MENU_ID}`);
 }
