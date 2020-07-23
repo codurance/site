@@ -124,11 +124,10 @@ $icon-image-width--small-medium: 100px;
 }
 
 .services-page-intro__navigation-text {
-  @include bold;
   text-align: center;
   
   @include small-and-medium {
-    @include base;
+    @include base-bold;
     display: flex;
     justify-content: center;
     padding-top: 15px;
@@ -136,7 +135,7 @@ $icon-image-width--small-medium: 100px;
   }
 
   @include large-and-extra-large {
-    @include mercer;
+    @include mercer-bold;
     line-height: 30px;
     padding-top: 30px;
     width: $icon-image-width--large-extra-large;
