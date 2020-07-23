@@ -129,6 +129,8 @@ $icon-image-width--small-medium: 100px;
   
   @include small-and-medium {
     @include base;
+    display: flex;
+    justify-content: center;
     padding-top: 15px;
     width: $icon-image-width--small-medium;
   }
