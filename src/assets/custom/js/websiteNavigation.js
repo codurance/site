@@ -41,9 +41,6 @@ var websiteNavigation = function () {
 
   function toggleSubMenu(e) {
 
-// close all menus
-// open selected menu
-
     var subMenuToggle = e.target;
     var subMenu = getSubMenu(subMenuToggle);
 
