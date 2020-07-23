@@ -66,7 +66,7 @@ $icon-image-width--small-medium: 100px;
     fill: white;
   }
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     transition: color 0.3s ease;
     color: $grey--light;
