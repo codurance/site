@@ -1,7 +1,7 @@
+$header-background--navigation-height--large-and-extra-large: $vertical-overlap * 4;
+$header-background--navigation-image-height--large-and-extra-large: $vertical-overlap * 5;
 $header-background-image-height--medium: 300px;
-$header-background-image-height--large-and-extra-large: 694px;
-$header-background--navigation-image-height--large-and-extra-large: 400px;
-$text-container-inner-margin-top: -200px;
+$text-container-inner-margin-top: -$vertical-overlap * 2;
 
 .services-page-intro__image {
   background-color: #474b4a;
@@ -17,8 +17,8 @@ $text-container-inner-margin-top: -200px;
   }
 
   @include extra-large {
-    height: $header-background-image-height--large-and-extra-large;
-    margin-bottom: -$vertical-overlap * 3;
+    height: $header-background--navigation-image-height--large-and-extra-large;
+    margin-bottom: $vertical-overlap;
   }
 }
 
@@ -38,7 +38,7 @@ $text-container-inner-margin-top: -200px;
   }
 
   @include large-and-extra-large {
-    height: $header-background--navigation-image-height--large-and-extra-large;
+    height: $header-background--navigation-height--large-and-extra-large;
   }
 }
 
@@ -53,10 +53,10 @@ $text-container-inner-margin-top: -200px;
   }
 }
 
-$icon-image-width--small-medium: 100px;
+$icon-image-height--large-extra-large: 150px;
 $icon-image-height--small-medium: 115px;
 $icon-image-width--large-extra-large: 130px;
-$icon-image-height--large-extra-large: 150px;
+$icon-image-width--small-medium: 100px;
 
 .services-page-intro__navigation-link {
   color: white;
