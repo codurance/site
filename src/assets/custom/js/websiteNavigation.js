@@ -40,10 +40,12 @@ var websiteNavigation = function () {
   }
 
   function toggleSubMenu(e) {
+
+// close all menus
+// open selected menu
+
     var subMenuToggle = e.target;
-    var subMenu = window.document.getElementById(
-      subMenuToggle.getAttribute("aria-controls")
-    );
+    var subMenu = getSubMenu(subMenuToggle);
 
     subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
       ? closeSubMenu(subMenu, subMenuToggle)
@@ -93,6 +95,12 @@ var websiteNavigation = function () {
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
 
     subMenuToggle.style.removeProperty('margin-bottom');
+  }
+
+  function getSubMenu(subMenuToggle) {
+    return window.document.getElementById(
+      subMenuToggle.getAttribute("aria-controls")
+    );
   }
 
   setupEventListeners();
