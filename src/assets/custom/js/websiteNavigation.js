@@ -40,13 +40,16 @@ var websiteNavigation = function () {
   }
 
   function toggleSubMenu(e) {
-
     var subMenuToggle = e.target;
     var subMenu = getSubMenu(subMenuToggle);
 
-    subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
-      ? closeSubMenu(subMenu, subMenuToggle)
-      : openSubMenu(subMenu, subMenuToggle);
+    if (currentOpenSubMenu === null) {
+      openSubMenu(subMenu, subMenuToggle);
+    }
+
+    // subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
+    //   ? closeSubMenu(subMenu, subMenuToggle)
+    //   : openSubMenu(subMenu, subMenuToggle);
   }
 
   function clickProxy(e) {
