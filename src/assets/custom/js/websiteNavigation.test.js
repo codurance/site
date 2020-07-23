@@ -13,12 +13,18 @@ const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menu--open";
 const HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
 
 const fakeSubMenuScrollHeight = 999;
+Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
+  configurable: true,
+  value: fakeSubMenuScrollHeight,
+});
 
 let header;
 let menu;
 let menuToggle;
 let subMenu_1;
 let subMenuToggle_1;
+let menuToggle_2;
+let subMenuToggle_2;
 let subMenuToggleProxy;
 
 describe("Website Navigation Menu", () => {
@@ -106,9 +112,19 @@ describe("Website Navigation Menu", () => {
         });
       });
 
-      describe("When a different sub-menu toggle is clicked", () => {
+      // describe("When a different sub-menu toggle is clicked", () => {
+      //   beforeAll(() => {
+      //     subMenuToggle_2.click();
+      //   });
 
-      })
+      //   it("closes the currently open sub-menu", () => {
+      //     expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+      //   });
+
+      //   it("resets space under the currently open sub-menu", () => {
+      //     expect(subMenuToggle_1.style.marginBottom).toBe(``);
+      //   })
+      // });
 
       describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
         beforeAll(() => {
@@ -152,6 +168,8 @@ function captureMocks() {
   subMenu_1 = getMockSubMenu(SUB_MENU_ID_1);
   subMenuToggle_1 = getMockSubMenuToggle(SUB_MENU_TOGGLE_ID_1);
   subMenuToggleProxy = getMockSubMenuToggleProxy();
+  subMenu_2 = getMockSubMenu(SUB_MENU_ID_2);
+  subMenuToggle_2 = getMockSubMenuToggle(SUB_MENU_TOGGLE_ID_2);
 }
 
 const MENU_ID = "mockMenuId";
@@ -189,11 +207,6 @@ function createMockMenu() {
 }
 
 function createMockSubMenu(SUB_MENU_ID, SUB_MENU_TOGGLE_ID) {
-  Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
-    configurable: true,
-    value: fakeSubMenuScrollHeight,
-  });
-
   const subMenu = window.document.createElement("div");
   subMenu.id = SUB_MENU_ID;
 
