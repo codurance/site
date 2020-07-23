@@ -17,7 +17,7 @@ var websiteNavigation = function () {
   var menu = window.document.querySelector(
     "#" + menuToggle.getAttribute("aria-controls")
   );
-  var subMenuToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
+  var subMenuToggles = Array.slice.call(menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR));
   var subMenuToggleProxies = window.document.querySelectorAll(
     SUB_MENU_TOGGLE_PROXY_SELECTOR
   );
