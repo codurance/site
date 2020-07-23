@@ -18,7 +18,7 @@ let header;
 let menu;
 let menuToggle;
 let subMenu_1;
-let subMenuToggle;
+let subMenuToggle_1;
 let subMenuToggleProxy;
 
 describe("Website Navigation Menu", () => {
@@ -67,7 +67,7 @@ describe("Website Navigation Menu", () => {
 
     describe("When the sub-menu toggle is clicked", () => {
       beforeAll(() => {
-        subMenuToggle.click();
+        subMenuToggle_1.click();
       });
 
       it("opens the related sub-menu", () => {
@@ -75,7 +75,7 @@ describe("Website Navigation Menu", () => {
       });
 
       it("increases the space underneath the toggle, to make the header bigger on large screens", () => {
-        expect(subMenuToggle.style.marginBottom).toBe(
+        expect(subMenuToggle_1.style.marginBottom).toBe(
           `${fakeSubMenuScrollHeight}px`
         );
       });
@@ -90,7 +90,7 @@ describe("Website Navigation Menu", () => {
 
       describe("When the sub-menu toggle is clicked again", () => {
         beforeAll(() => {
-          subMenuToggle.click();
+          subMenuToggle_1.click();
         });
 
         it("closes the related sub-menu", () => {
@@ -98,7 +98,7 @@ describe("Website Navigation Menu", () => {
         });
 
         it("resets the space underneath the toggle", () => {
-          expect(subMenuToggle.style.marginBottom).toBe(``);
+          expect(subMenuToggle_1.style.marginBottom).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {
@@ -127,11 +127,11 @@ describe("Website Navigation Menu", () => {
 
     describe("When the sub-menu toggle proxy is clicked", () => {
       beforeAll(() => {
-        jest.spyOn(subMenuToggle, "click");
+        jest.spyOn(subMenuToggle_1, "click");
         subMenuToggleProxy.click();
       });
       it("clicks the related real sub-menu toggle", () => {
-        expect(subMenuToggle.click).toHaveBeenCalled();
+        expect(subMenuToggle_1.click).toHaveBeenCalled();
       });
     });
   });
@@ -150,7 +150,7 @@ function captureMocks() {
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
   subMenu_1 = getMockSubMenu(SUB_MENU_ID_1);
-  subMenuToggle = getMockSubMenuToggle(SUB_MENU_TOGGLE_ID_1);
+  subMenuToggle_1 = getMockSubMenuToggle(SUB_MENU_TOGGLE_ID_1);
   subMenuToggleProxy = getMockSubMenuToggleProxy();
 }
 
