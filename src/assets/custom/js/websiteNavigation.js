@@ -61,10 +61,6 @@ var websiteNavigation = function () {
       openSubMenu(subMenu, subMenuToggle);
       return;
     }
-
-    // subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
-    //   ? closeSubMenu(subMenu, subMenuToggle)
-    //   : openSubMenu(subMenu, subMenuToggle);
   }
 
   function clickProxy(e) {
