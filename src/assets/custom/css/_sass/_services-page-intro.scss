@@ -1,6 +1,6 @@
-$header-background--navigation-height--large-and-extra-large: $vertical-overlap * 4;
-$header-background--navigation-image-height--large-and-extra-large: $vertical-overlap * 5;
-$header-background-image-height--medium: 300px;
+$header-background-nav-height--large-and-extra-large: $vertical-overlap * 4;
+$header-background-nav-image-height--large-and-extra-large: $vertical-overlap * 5;
+$header-background-nav-image-height--medium: 300px;
 $text-container-inner-margin-top: -$vertical-overlap * 2;
 
 .services-page-intro__image {
@@ -17,7 +17,7 @@ $text-container-inner-margin-top: -$vertical-overlap * 2;
   }
 
   @include extra-large {
-    height: $header-background--navigation-image-height--large-and-extra-large;
+    height: $header-background-nav-image-height--large-and-extra-large;
     margin-bottom: $vertical-overlap;
   }
 }
@@ -34,11 +34,11 @@ $text-container-inner-margin-top: -$vertical-overlap * 2;
   }
 
   @include medium {
-    height: $header-background-image-height--medium;
+    height: $header-background-nav-image-height--medium;
   }
 
   @include large-and-extra-large {
-    height: $header-background--navigation-height--large-and-extra-large;
+    height: $header-background-nav-height--large-and-extra-large;
   }
 }
 
