@@ -95,6 +95,12 @@
   }
 }
 
+@include small-and-medium {
+  .service-line-teaser-card__primary-content {
+    background-image: none !important;
+  }
+}
+
 .service-line-teaser-card__tag {
   @include ponti-bold;
   align-items: center;
