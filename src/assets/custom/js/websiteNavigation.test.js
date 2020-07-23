@@ -17,7 +17,7 @@ const fakeSubMenuScrollHeight = 999;
 let header;
 let menu;
 let menuToggle;
-let subMenu;
+let subMenu_1;
 let subMenuToggle;
 let subMenuToggleProxy;
 
@@ -71,7 +71,7 @@ describe("Website Navigation Menu", () => {
       });
 
       it("opens the related sub-menu", () => {
-        expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+        expect(subMenu_1.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
       it("increases the space underneath the toggle, to make the header bigger on large screens", () => {
@@ -94,7 +94,7 @@ describe("Website Navigation Menu", () => {
         });
 
         it("closes the related sub-menu", () => {
-          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+          expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
         it("resets the space underneath the toggle", () => {
@@ -106,13 +106,17 @@ describe("Website Navigation Menu", () => {
         });
       });
 
+      describe("When a different sub-menu toggle is clicked", () => {
+
+      })
+
       describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
         beforeAll(() => {
           menuToggle.click();
         });
 
         it("closes the related sub-menu", () => {
-          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+          expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
         it("remove the special class previously applied to the website header", () => {
@@ -145,8 +149,8 @@ function captureMocks() {
   header = getMockHeader();
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
-  subMenu = getMockSubMenu(SUB_MENU_ID_1);
-  subMenuToggle = getMockSubMenuToggle();
+  subMenu_1 = getMockSubMenu(SUB_MENU_ID_1);
+  subMenuToggle = getMockSubMenuToggle(SUB_MENU_TOGGLE_ID_1);
   subMenuToggleProxy = getMockSubMenuToggleProxy();
 }
 
@@ -216,14 +220,14 @@ function getMockMenu() {
   return window.document.querySelector(`#${MENU_ID}`);
 }
 
-function getMockSubMenuToggle() {
-  return window.document.querySelector(`.${SUB_MENU_TOGGLE_CLASS}`);
+function getMockSubMenuToggle(subMenuToggleID) {
+  return window.document.querySelector(`#${subMenuToggleID}`);
 }
 
 function getMockSubMenuToggleProxy() {
   return window.document.querySelector(`.${SUB_MENU_TOGGLE_PROXY_CLASS}`);
 }
 
-function getMockSubMenu(SUB_MENU_ID) {
-  return window.document.querySelector(`#${SUB_MENU_ID}`);
+function getMockSubMenu(subMenuID) {
+  return window.document.querySelector(`#${subMenuID}`);
 }
