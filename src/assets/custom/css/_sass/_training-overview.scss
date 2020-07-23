@@ -4,6 +4,7 @@ $katalyst-banner-height--large: 442px;
 
 .training-overview-content {
   background-color: $navy--ultralight;
+  @include max-width--framed;
 
   @include medium {
     padding-top: $vertical-overlap;
@@ -12,8 +13,18 @@ $katalyst-banner-height--large: 442px;
     padding-bottom: 70px;
   }
   @include large-and-extra-large {
-    margin-top: -$vertical-overlap;
-    padding-top: calc(2 * #{$vertical-overlap});
+    padding-top: calc(#{$vertical-overlap} * 1.5);
+    position: relative;
+    &::before {
+      background-image: url("#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-training-courses.svg");
+      content: "";
+      height: 500px;
+      left: 40px;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 520px;
+    }
   }
 }
 
