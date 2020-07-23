@@ -158,7 +158,9 @@ function setUpMocks() {
   createMockMenuToggle();
   createMockMenu();
   createMockSubMenu(SUB_MENU_ID_1, SUB_MENU_TOGGLE_ID_1);
+  createMockSubMenuToggle(SUB_MENU_ID_1, SUB_MENU_TOGGLE_ID_1);
   createMockSubMenu(SUB_MENU_ID_2, SUB_MENU_TOGGLE_ID_2);
+  createMockSubMenuToggle(SUB_MENU_ID_2, SUB_MENU_TOGGLE_ID_2);
 }
 
 function captureMocks() {
@@ -196,24 +198,29 @@ function createMockMenu() {
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
 
+  window.document.body.appendChild(menu);
+}
+
+function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
+  const menu = getMockMenu();
   const subMenuToggle = window.document.createElement("button");
-  subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID_1);
+
+  subMenuToggle.setAttribute("aria-controls", subMenuID);
   subMenuToggle.setAttribute("aria-expanded", false);
   subMenuToggle.classList.add(SUB_MENU_TOGGLE_CLASS);
-  subMenuToggle.id = SUB_MENU_TOGGLE_ID_1;
+  subMenuToggle.id = subMenuToggleID;
 
-  window.document.body.appendChild(menu);
   menu.appendChild(subMenuToggle);
 }
 
-function createMockSubMenu(SUB_MENU_ID, SUB_MENU_TOGGLE_ID) {
+function createMockSubMenu(subMenuID, subMenuToggleID) {
   const subMenu = window.document.createElement("div");
-  subMenu.id = SUB_MENU_ID;
+  subMenu.id = subMenuID;
 
   const subMenuToggleProxy = window.document.createElement("button");
   subMenuToggleProxy.setAttribute(
     "data-sub_menu_toggle_id",
-    SUB_MENU_TOGGLE_ID
+    subMenuToggleID
   );
   subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
 
