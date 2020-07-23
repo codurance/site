@@ -775,14 +775,14 @@ service-line-testimonials:
 
 training-overview:
   hero-title: Training
-  hero-sub-title: Upskilling for more effective teams
-  hero-description: Leverage focused training courses to upskill your teams at every phase of the project. We can create a bespoke training plan adapted to your business needs.
+  hero-sub-title: Empower your technology teams with focused training from our world class experts
+  hero-description: Enhance your team's skillset with our industry leading training courses. We create bespoke training plans adapted to your business needs.
   katalyst-banner:
     title: Katalyst Title
     description: Katalyst Description
     hubspot-form-id: 93abc185-db09-407f-8616-33888b43e4c0
   contact-form:
-    title: Tell us about your challenges
-    description: Find out how Codurance's solutions can help your business
+    title: Let's discuss your training needs
+    description: We are excited to learn more about your business. Find out how Codurance’s training programs can power your technology teams.
 
 learn-more: Learn more

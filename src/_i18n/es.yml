@@ -780,8 +780,8 @@ service-line-testimonials:
 
 training-overview:
   hero-title: Training
-  hero-sub-title: Upskilling para equipos más efectivos
-  hero-description: Generamos un circuito de formación específico según las necesidades que se detectan.
+  hero-sub-title: Impulsa a tus equipos tecnológicos con programas expecíficos de capacitación a cargo de nuestro expertos.
+  hero-description: Mejora las habilidades de tu equipo con nuestros cursos. Creamos planes de capacitación a medida y adaptados a las necesidades de tu negocio.
   katalyst-banner:
     title: Katalyst Title Spanish
     description: Katalyst Description Spanish
@@ -789,3 +789,5 @@ training-overview:
   contact-form:
     title: Tell us about your challenges
     description: Find out how Codurance's solutions can help your business
+
+learn-more: Más info
