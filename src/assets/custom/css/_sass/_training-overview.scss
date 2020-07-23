@@ -1,12 +1,11 @@
 .training-overview-content {
   background-color: $navy--ultralight;
-  @include max-width--framed;
 
   @include medium {
     padding-top: $vertical-overlap;
   }
   @include medium-large-and-extra-large {
-    padding-bottom: 70px;
+    padding-bottom: calc(#{$vertical-overlap} * 2);
   }
   @include large-and-extra-large {
     padding-top: calc(#{$vertical-overlap} * 1.5);
@@ -22,6 +21,9 @@
       transform: translateX(-50%);
       width: 520px;
     }
+  }
+  @include extra-large{
+    @include max-width--framed;
   }
 }
 
