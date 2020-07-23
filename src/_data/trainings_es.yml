@@ -1,35 +1,35 @@
 - id: crafting_code
   name: Crafting Code
   author: Sandro Mancuso
-  description: Para desarrolladores que quieren mejorar en escribir código limpio, testable y mantenible
+  description: Este curso está diseñado para mejorar las habilidades de un equipo a la hora de escribir código limpio y fácil de mantener.
   page: /services/training/crafting-code
 
 - id: crafted_design
   name: Crafted Design
   author: Sandro Mancuso
-  description: Para desarrolladores experimentados que quieren mejorar en el diseño de soluciones bien elaboradas.
+  description: En esta formación ayudamos a los equipos de desarrollo a mejorar sus habilidades para crear soluciones bien diseñadas.
   page: /services/training/crafted-design
 
 - id: introduction_to_functional_programming
-  name: Introducción a Programación Funcional
+  name: Introducción a Functional Programming
   author: Jorge Gueorguiev García
-  description: Para desarrolladores experimentados que quieren aprender los conceptos básicos de programacion funcional.
+  description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
   page: /services/training/introduction-to-functional-programming
 
 - id: lambdas
   name: Microservicios con AWS Lambdas
   author: Mashooq Badar
-  description: Aprenda cómo construir y desplegar sus microservicios, usando la arquitectura server-less de AWS
+  description: En este curso aportamos los conocimientos necesarios para que tu equipo pueda construir e implementar microservicios utilizando la arquitectura serverless  de AWS.
   page: /services/training/lambda-training
 
 - id: serverless
   name: Arquitectura Serverless Utilizando AWS
   author: Mashooq Badar
-  description: Aprenda cómo evitar los problemas de construir aplicaciones web, usando la arquitectura server-less de AWS
+  description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
   page: /services/training/serverless-training
 
 - id: ead
-  name: Desarrollo de Aplicaciones Empresariales
+  name: Enterprise Application Development
   author: Mashooq Badar
-  description: Para desarrolladores que quieren aprender cómo construir un sistema empresarial desde cero
+  description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
   page: /services/training/enterprise-application-development
