@@ -17,6 +17,7 @@ $katalyst-banner-height--large: 442px;
     position: relative;
     &::before {
       background-image: url("#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-training-courses.svg");
+      background-repeat: no-repeat;
       content: "";
       height: 500px;
       left: 40px;
