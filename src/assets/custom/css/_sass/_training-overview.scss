@@ -8,12 +8,12 @@ $katalyst-banner-height--large: 442px;
   @include medium {
     padding-top: $vertical-overlap;
   }
-  @include large-and-extra-large{
-    margin-top: -$vertical-overlap ;
-    padding-top: calc(2 * #{$vertical-overlap});
-  }
   @include medium-large-and-extra-large {
     padding-bottom: 70px;
+  }
+  @include large-and-extra-large {
+    margin-top: -$vertical-overlap;
+    padding-top: calc(2 * #{$vertical-overlap});
   }
 }
 
@@ -78,8 +78,8 @@ $katalyst-banner-height--large: 442px;
     }
 
     .in_page_banner__main {
-        height: $katalyst-banner-height--large;
-        width: calc(100% - #{$katalyst-banner-width});
+      height: $katalyst-banner-height--large;
+      width: calc(100% - #{$katalyst-banner-width});
     }
   }
 }
