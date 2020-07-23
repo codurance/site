@@ -1,6 +1,7 @@
 $header-background-nav-height--large-and-extra-large: $vertical-overlap * 4;
 $header-background-nav-image-height--large-and-extra-large: $vertical-overlap * 5;
 $header-background-nav-image-height--medium: 300px;
+$header-background-nav-image-padding--large-and-extra-large: 10px + $vertical-overlap;
 $text-container-inner-margin-top: -$vertical-overlap * 2;
 
 .services-page-intro__image {
@@ -39,6 +40,8 @@ $text-container-inner-margin-top: -$vertical-overlap * 2;
 
   @include large-and-extra-large {
     height: $header-background-nav-height--large-and-extra-large;
+    padding-left: $header-background-nav-image-padding--large-and-extra-large;
+    padding-right: $header-background-nav-image-padding--large-and-extra-large;
   }
 }
 
@@ -73,7 +76,6 @@ $icon-image-width--small-medium: 100px;
 
     .service-line-icon {
       transition: fill 0.3s ease;
-      fill: $grey--light;
     }
   }
 
@@ -133,6 +135,7 @@ $icon-image-width--small-medium: 100px;
 
   @include large-and-extra-large {
     @include mercer;
+    line-height: 30px;
     padding-top: 30px;
     width: $icon-image-width--large-extra-large;
   }
