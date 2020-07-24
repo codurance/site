@@ -13,12 +13,18 @@ const OPEN_SUB_MENU_CLASS = "website-navigation-sub-menu--open";
 const HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
 
 const fakeSubMenuScrollHeight = 999;
+Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
+  configurable: true,
+  value: fakeSubMenuScrollHeight,
+});
 
 let header;
 let menu;
 let menuToggle;
-let subMenu;
-let subMenuToggle;
+let servicesSubMenu;
+let servicesSubMenuToggle;
+let aboutSubMenu;
+let aboutSubMenuToggle;
 let subMenuToggleProxy;
 
 describe("Website Navigation Menu", () => {
@@ -67,15 +73,15 @@ describe("Website Navigation Menu", () => {
 
     describe("When the sub-menu toggle is clicked", () => {
       beforeAll(() => {
-        subMenuToggle.click();
+        servicesSubMenuToggle.click();
       });
 
       it("opens the related sub-menu", () => {
-        expect(subMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+        expect(servicesSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
       it("increases the space underneath the toggle, to make the header bigger on large screens", () => {
-        expect(subMenuToggle.style.marginBottom).toBe(
+        expect(servicesSubMenuToggle.style.marginBottom).toBe(
           `${fakeSubMenuScrollHeight}px`
         );
       });
@@ -90,20 +96,45 @@ describe("Website Navigation Menu", () => {
 
       describe("When the sub-menu toggle is clicked again", () => {
         beforeAll(() => {
-          subMenuToggle.click();
+          servicesSubMenuToggle.click();
         });
 
         it("closes the related sub-menu", () => {
-          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+          expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
         it("resets the space underneath the toggle", () => {
-          expect(subMenuToggle.style.marginBottom).toBe(``);
+          expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {
           expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
         });
+      });
+
+      describe("When a different sub-menu toggle is clicked", () => {
+        beforeAll(() => {
+          aboutSubMenuToggle.click();
+        });
+
+        it("closes the currently open sub-menu", () => {
+          expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("resets space under the currently open sub-menu", () => {
+          expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
+        });
+
+        it("opens the newly clicked sub-menu", () => {
+          expect(aboutSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("increases the space underneath the newly clicked toggle, to make the header bigger on large screens", () => {
+          expect(aboutSubMenuToggle.style.marginBottom).toBe(
+            `${fakeSubMenuScrollHeight}px`
+          );
+        });
+
       });
 
       describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
@@ -112,7 +143,7 @@ describe("Website Navigation Menu", () => {
         });
 
         it("closes the related sub-menu", () => {
-          expect(subMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+          expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
         it("remove the special class previously applied to the website header", () => {
@@ -123,11 +154,11 @@ describe("Website Navigation Menu", () => {
 
     describe("When the sub-menu toggle proxy is clicked", () => {
       beforeAll(() => {
-        jest.spyOn(subMenuToggle, "click");
+        jest.spyOn(servicesSubMenuToggle, "click");
         subMenuToggleProxy.click();
       });
       it("clicks the related real sub-menu toggle", () => {
-        expect(subMenuToggle.click).toHaveBeenCalled();
+        expect(servicesSubMenuToggle.click).toHaveBeenCalled();
       });
     });
   });
@@ -137,21 +168,28 @@ function setUpMocks() {
   createMockHeader();
   createMockMenuToggle();
   createMockMenu();
-  createMockSubMenu();
+  createMockSubMenu(SERVICES_SUB_MENU_ID_1, SERVICES_SUB_MENU_TOGGLE_ID);
+  createMockSubMenuToggle(SERVICES_SUB_MENU_ID_1, SERVICES_SUB_MENU_TOGGLE_ID);
+  createMockSubMenu(ABOUT_SUB_MENU_ID, ABOUT_SUB_MENU_TOGGLE_ID);
+  createMockSubMenuToggle(ABOUT_SUB_MENU_ID, ABOUT_SUB_MENU_TOGGLE_ID);
 }
 
 function captureMocks() {
   header = getMockHeader();
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
-  subMenu = getMockSubMenu();
-  subMenuToggle = getMockSubMenuToggle();
+  servicesSubMenu = getMockSubMenu(SERVICES_SUB_MENU_ID_1);
+  servicesSubMenuToggle = getMockSubMenuToggle(SERVICES_SUB_MENU_TOGGLE_ID);
   subMenuToggleProxy = getMockSubMenuToggleProxy();
+  aboutSubMenu = getMockSubMenu(ABOUT_SUB_MENU_ID);
+  aboutSubMenuToggle = getMockSubMenuToggle(ABOUT_SUB_MENU_TOGGLE_ID);
 }
 
 const MENU_ID = "mockMenuId";
-const SUB_MENU_ID = "mockSubMenuId";
-const SUB_MENU_TOGGLE_ID = "mockSubMenuToggleId";
+const SERVICES_SUB_MENU_ID_1 = "mockServicesSubMenuId";
+const SERVICES_SUB_MENU_TOGGLE_ID = "mockServicesSubMenuToggleId";
+const ABOUT_SUB_MENU_ID = "mockAboutSubMenuId";
+const ABOUT_SUB_MENU_TOGGLE_ID = "mockAboutSubMenuToggleId";
 
 function createMockHeader() {
   const header = window.document.createElement("div");
@@ -171,29 +209,29 @@ function createMockMenu() {
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
 
+  window.document.body.appendChild(menu);
+}
+
+function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
+  const menu = getMockMenu();
   const subMenuToggle = window.document.createElement("button");
-  subMenuToggle.setAttribute("aria-controls", SUB_MENU_ID);
+
+  subMenuToggle.setAttribute("aria-controls", subMenuID);
   subMenuToggle.setAttribute("aria-expanded", false);
   subMenuToggle.classList.add(SUB_MENU_TOGGLE_CLASS);
-  subMenuToggle.id = SUB_MENU_TOGGLE_ID;
+  subMenuToggle.id = subMenuToggleID;
 
-  window.document.body.appendChild(menu);
   menu.appendChild(subMenuToggle);
 }
 
-function createMockSubMenu() {
-  Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
-    configurable: true,
-    value: fakeSubMenuScrollHeight,
-  });
-
+function createMockSubMenu(subMenuID, subMenuToggleID) {
   const subMenu = window.document.createElement("div");
-  subMenu.id = SUB_MENU_ID;
+  subMenu.id = subMenuID;
 
   const subMenuToggleProxy = window.document.createElement("button");
   subMenuToggleProxy.setAttribute(
     "data-sub_menu_toggle_id",
-    SUB_MENU_TOGGLE_ID
+    subMenuToggleID
   );
   subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
 
@@ -213,14 +251,14 @@ function getMockMenu() {
   return window.document.querySelector(`#${MENU_ID}`);
 }
 
-function getMockSubMenuToggle() {
-  return window.document.querySelector(`.${SUB_MENU_TOGGLE_CLASS}`);
+function getMockSubMenuToggle(subMenuToggleID) {
+  return window.document.querySelector(`#${subMenuToggleID}`);
 }
 
 function getMockSubMenuToggleProxy() {
   return window.document.querySelector(`.${SUB_MENU_TOGGLE_PROXY_CLASS}`);
 }
 
-function getMockSubMenu() {
-  return window.document.querySelector(`#${SUB_MENU_ID}`);
+function getMockSubMenu(subMenuID) {
+  return window.document.querySelector(`#${subMenuID}`);
 }

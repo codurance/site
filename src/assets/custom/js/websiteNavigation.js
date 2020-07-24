@@ -41,13 +41,26 @@ var websiteNavigation = function () {
 
   function toggleSubMenu(e) {
     var subMenuToggle = e.target;
-    var subMenu = window.document.getElementById(
-      subMenuToggle.getAttribute("aria-controls")
-    );
+    var subMenu = getSubMenu(subMenuToggle);
 
-    subMenu.classList.contains(OPEN_SUB_MENU_CLASS)
-      ? closeSubMenu(subMenu, subMenuToggle)
-      : openSubMenu(subMenu, subMenuToggle);
+    if (currentOpenSubMenu === null) {
+      openSubMenu(subMenu, subMenuToggle);
+      return;
+    }
+
+    if (targetIsCurrentlyOpen(subMenu)) {
+      closeSubMenu(subMenu, subMenuToggle);
+      return;
+    }
+
+    if (!targetIsCurrentlyOpen(subMenu)) {
+      var currentlyOpenSubMenu = currentOpenSubMenu.menu;
+      var currentlyOpenSubMenuToggle = currentOpenSubMenu.toggle;
+
+      closeSubMenu(currentlyOpenSubMenu, currentlyOpenSubMenuToggle);
+      openSubMenu(subMenu, subMenuToggle);
+      return;
+    }
   }
 
   function clickProxy(e) {
@@ -57,20 +70,24 @@ var websiteNavigation = function () {
     real.click();
   }
 
+  function targetIsCurrentlyOpen(subMenu) {
+    return currentOpenSubMenu.menu === subMenu
+  }
+
   function openMenu() {
     header.classList.add(OPEN_HEADER_CLASS);
     menuToggle.setAttribute("aria-expanded", "true");
     menu.classList.add(OPEN_MENU_CLASS);
+
+    if (currentOpenSubMenu) {
+      closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
+    }
   }
 
   function closeMenu() {
     header.classList.remove(OPEN_HEADER_CLASS);
     menuToggle.setAttribute("aria-expanded", "false");
     menu.classList.remove(OPEN_MENU_CLASS);
-
-    if (currentOpenSubMenu) {
-      closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
-    }
   }
 
   function openSubMenu(subMenu, subMenuToggle) {
@@ -93,6 +110,12 @@ var websiteNavigation = function () {
     menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
 
     subMenuToggle.style.removeProperty('margin-bottom');
+  }
+
+  function getSubMenu(subMenuToggle) {
+    return window.document.getElementById(
+      subMenuToggle.getAttribute("aria-controls")
+    );
   }
 
   setupEventListeners();
