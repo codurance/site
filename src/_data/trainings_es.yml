@@ -3,6 +3,7 @@
   author: Sandro Mancuso
   description: Este curso está diseñado para mejorar las habilidades de un equipo a la hora de escribir código limpio y fácil de mantener.
   page: /services/training/crafting-code
+  featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code.svg
 
 - id: crafted_design
@@ -10,6 +11,7 @@
   author: Sandro Mancuso
   description: En esta formación ayudamos a los equipos de desarrollo a mejorar sus habilidades para crear soluciones bien diseñadas.
   page: /services/training/crafted-design
+  featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
 
 - id: introduction_to_functional_programming
