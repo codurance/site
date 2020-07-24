@@ -78,16 +78,16 @@ var websiteNavigation = function () {
     header.classList.add(OPEN_HEADER_CLASS);
     menuToggle.setAttribute("aria-expanded", "true");
     menu.classList.add(OPEN_MENU_CLASS);
+
+    if (currentOpenSubMenu) {
+      closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
+    }
   }
 
   function closeMenu() {
     header.classList.remove(OPEN_HEADER_CLASS);
     menuToggle.setAttribute("aria-expanded", "false");
     menu.classList.remove(OPEN_MENU_CLASS);
-
-    if (currentOpenSubMenu) {
-      closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
-    }
   }
 
   function openSubMenu(subMenu, subMenuToggle) {
