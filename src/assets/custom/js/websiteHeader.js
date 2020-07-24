@@ -8,10 +8,6 @@ var websiteHeader = function () {
   var latestWindowPosition;
   var ticking;
 
-  var getScrollPosition = function () {
-    return window.pageYOffset || window.scrollY;
-  };
-
   var HEADER = window.document.querySelector(HEADER_SELECTOR);
   window.addEventListener("scroll", handleScroll);
 

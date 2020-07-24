@@ -96,21 +96,25 @@ $(window).resize(function () {
 		});
 	});
 })();
-  
+
+var getScrollPosition = function () {
+    return window.pageYOffset || window.scrollY;
+};
+
 var linkifyAnchors = function (level, containingElement) {
-    
+
     if (!containingElement) {
         return
     }
-    
+
     var headers = containingElement.getElementsByTagName("h" + level);
     for (var h = 0; h < headers.length; h++) {
       var header = headers[h];
-  
+
       if (!header.id) {
         var originalContent = header.innerHTML;
         var link = originalContent.split(' ').join('');
-        
+
         var a = document.createElement('a');
         a.title = originalContent;
         a.name = link.toLowerCase();
@@ -125,7 +129,7 @@ var linkifyAnchors = function (level, containingElement) {
 $(document).ready(function() {
     equalizeHeights();
 
-    //This function is necessary so Safari can redraw the menu 
+    //This function is necessary so Safari can redraw the menu
     $(".dropdown").click(function(){
         return true;
     });
