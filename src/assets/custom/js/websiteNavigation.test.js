@@ -23,7 +23,6 @@ let menu;
 let menuToggle;
 let subMenu_1;
 let subMenuToggle_1;
-let menuToggle_2;
 let subMenuToggle_2;
 let subMenuToggleProxy;
 
