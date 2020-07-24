@@ -41,9 +41,7 @@ var websiteNavigation = function () {
     if (header.contains(e.target) || !currentOpenSubMenu) return;
     console.log('window click');
 
-    // else close submenu
-
-
+    closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
   }
 
   function toggleMenu() {
