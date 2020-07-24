@@ -23,7 +23,7 @@ let menu;
 let menuToggle;
 let servicesSubMenu;
 let servicesSubMenuToggle;
-let AboutSubMenu;
+let aboutSubMenu;
 let aboutSubMenuToggle;
 let subMenuToggleProxy;
 
@@ -126,7 +126,7 @@ describe("Website Navigation Menu", () => {
         });
 
         it("opens the newly clicked sub-menu", () => {
-          expect(AboutSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
+          expect(aboutSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
         });
 
         it("increases the space underneath the newly clicked toggle, to make the header bigger on large screens", () => {
@@ -181,7 +181,7 @@ function captureMocks() {
   servicesSubMenu = getMockSubMenu(SERVICES_SUB_MENU_ID_1);
   servicesSubMenuToggle = getMockSubMenuToggle(SERVICES_SUB_MENU_TOGGLE_ID);
   subMenuToggleProxy = getMockSubMenuToggleProxy();
-  AboutSubMenu = getMockSubMenu(ABOUT_SUB_MENU_ID);
+  aboutSubMenu = getMockSubMenu(ABOUT_SUB_MENU_ID);
   aboutSubMenuToggle = getMockSubMenuToggle(ABOUT_SUB_MENU_TOGGLE_ID);
 }
 
