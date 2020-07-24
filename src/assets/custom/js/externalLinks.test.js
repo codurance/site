@@ -21,7 +21,7 @@ describe("External Links", () => {
       id: "externalLink1",
     });
     addLink({
-      href: "http://our-site.com/",
+      href: window.location.href,
       id: "linkToOurWebsite",
     });
     addLink({

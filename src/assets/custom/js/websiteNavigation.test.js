@@ -2,6 +2,7 @@ const { simulatePageLoad } = require("./simulatePageLoad");
 require("./websiteNavigation");
 
 const HEADER_CLASS = "website-header";
+const OUTSIDE_HEADER_CLASS = "outside-header";
 const OPEN_HEADER_CLASS = "website-header--open";
 const OPEN_MENU_CLASS = "website-navigation__menu--open";
 const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
@@ -19,6 +20,7 @@ Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
 });
 
 let header;
+let outsideHeader;
 let menu;
 let menuToggle;
 let servicesSubMenu;
@@ -150,6 +152,23 @@ describe("Website Navigation Menu", () => {
           expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
         });
       });
+
+      describe("When the user clicks outside of the header", () => {
+        beforeAll(() => {
+          outsideHeader.click();
+        })
+        it("closes the open sub-menu", () => {
+          expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("resets the space underneath the toggle", () => {
+          expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
+        });
+
+        it("remove the special class previously applied to the website header", () => {
+          expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+        });
+      });
     });
 
     describe("When the sub-menu toggle proxy is clicked", () => {
@@ -166,6 +185,7 @@ describe("Website Navigation Menu", () => {
 
 function setUpMocks() {
   createMockHeader();
+  createMockOutsideHeader();
   createMockMenuToggle();
   createMockMenu();
   createMockSubMenu(SERVICES_SUB_MENU_ID_1, SERVICES_SUB_MENU_TOGGLE_ID);
@@ -176,6 +196,7 @@ function setUpMocks() {
 
 function captureMocks() {
   header = getMockHeader();
+  outsideHeader = getMockOutsideHeader();
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
   servicesSubMenu = getMockSubMenu(SERVICES_SUB_MENU_ID_1);
@@ -197,6 +218,12 @@ function createMockHeader() {
   window.document.body.appendChild(header);
 }
 
+function createMockOutsideHeader() {
+  const outsideHeader = window.document.createElement("div");
+  outsideHeader.classList.add(OUTSIDE_HEADER_CLASS);
+  window.document.body.appendChild(outsideHeader);
+}
+
 function createMockMenuToggle() {
   const menuToggle = window.document.createElement("button");
   menuToggle.setAttribute("aria-controls", MENU_ID);
@@ -206,10 +233,11 @@ function createMockMenuToggle() {
 }
 
 function createMockMenu() {
+  const header = getMockHeader();
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
 
-  window.document.body.appendChild(menu);
+  header.appendChild(menu);
 }
 
 function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
@@ -225,6 +253,7 @@ function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
 }
 
 function createMockSubMenu(subMenuID, subMenuToggleID) {
+  const menu = getMockMenu();
   const subMenu = window.document.createElement("div");
   subMenu.id = subMenuID;
 
@@ -235,12 +264,16 @@ function createMockSubMenu(subMenuID, subMenuToggleID) {
   );
   subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
 
-  window.document.body.appendChild(subMenu);
+  menu.appendChild(subMenu);
   subMenu.appendChild(subMenuToggleProxy);
 }
 
 function getMockHeader() {
   return window.document.querySelector(`.${HEADER_CLASS}`);
+}
+
+function getMockOutsideHeader() {
+  return window.document.querySelector(`.${OUTSIDE_HEADER_CLASS}`);
 }
 
 function getMockMenuToggle() {
