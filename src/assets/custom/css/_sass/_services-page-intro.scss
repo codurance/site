@@ -4,7 +4,7 @@ $header-background-nav-height--medium: $vertical-overlap * 3;
 $header-background-nav-image-padding--large-and-extra-large: 10px + $vertical-overlap;
 $text-container-inner-margin-top: -$vertical-overlap * 2;
 
-.services-page-intro__image {
+.services-page-intro {
   background-color: #474b4a;
   background-position: center center;
   background-size: cover;
@@ -73,10 +73,6 @@ $icon-image-width--small-medium: 100px;
     text-decoration: none;
     transition: color 0.3s ease;
     color: $grey--light;
-
-    .service-line-icon {
-      transition: fill 0.3s ease;
-    }
   }
 
   @include small-and-medium {
