@@ -2,6 +2,7 @@ const { simulatePageLoad } = require("./simulatePageLoad");
 require("./websiteNavigation");
 
 const HEADER_CLASS = "website-header";
+const OUTSIDE_HEADER_CLASS = "outside-header";
 const OPEN_HEADER_CLASS = "website-header--open";
 const OPEN_MENU_CLASS = "website-navigation__menu--open";
 const MENU_TOGGLE_CLASS = "website-navigation-menu-toggle";
@@ -19,6 +20,7 @@ Object.defineProperty(HTMLElement.prototype, "scrollHeight", {
 });
 
 let header;
+let outsideHeader;
 let menu;
 let menuToggle;
 let servicesSubMenu;
@@ -84,6 +86,23 @@ describe("Website Navigation Menu", () => {
         expect(servicesSubMenuToggle.style.marginBottom).toBe(
           `${fakeSubMenuScrollHeight}px`
         );
+      });
+
+      describe("When the user clicks outside of the header", () => {
+        beforeAll(() => {
+          outsideHeader.click();
+        })
+        it("closes the open sub-menu", () => {
+      //     expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("resets the space underneath the toggle", () => {
+      //     expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
+        });
+
+        it("remove the special class previously applied to the website header", () => {
+      //     expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+        });
       });
 
       it("updates the main menu, so it slides out of view on small screens", () => {
@@ -166,6 +185,7 @@ describe("Website Navigation Menu", () => {
 
 function setUpMocks() {
   createMockHeader();
+  createMockOutsideHeader();
   createMockMenuToggle();
   createMockMenu();
   createMockSubMenu(SERVICES_SUB_MENU_ID_1, SERVICES_SUB_MENU_TOGGLE_ID);
@@ -176,6 +196,7 @@ function setUpMocks() {
 
 function captureMocks() {
   header = getMockHeader();
+  outsideHeader = getMockOutsideHeader();
   menu = getMockMenu();
   menuToggle = getMockMenuToggle();
   servicesSubMenu = getMockSubMenu(SERVICES_SUB_MENU_ID_1);
@@ -195,6 +216,12 @@ function createMockHeader() {
   const header = window.document.createElement("div");
   header.classList.add(HEADER_CLASS);
   window.document.body.appendChild(header);
+}
+
+function createMockOutsideHeader() {
+  const outsideHeader = window.document.createElement("div");
+  outsideHeader.classList.add(OUTSIDE_HEADER_CLASS);
+  window.document.body.appendChild(outsideHeader);
 }
 
 function createMockMenuToggle() {
@@ -241,6 +268,10 @@ function createMockSubMenu(subMenuID, subMenuToggleID) {
 
 function getMockHeader() {
   return window.document.querySelector(`.${HEADER_CLASS}`);
+}
+
+function getMockOutsideHeader() {
+  return window.document.querySelector(`.${OUTSIDE_HEADER_CLASS}`);
 }
 
 function getMockMenuToggle() {
