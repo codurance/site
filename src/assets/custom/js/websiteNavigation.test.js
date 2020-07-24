@@ -79,8 +79,6 @@ describe("Website Navigation Menu", () => {
       });
 
       it("opens the related sub-menu", () => {
-        console.log(`servicesSubMenu: `, servicesSubMenu);
-
         expect(servicesSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
