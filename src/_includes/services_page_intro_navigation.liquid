@@ -1,15 +1,15 @@
 {% assign data = site.data.service_lines %}
 
 <div class="services-page-intro__navigation">
-    <div class=services-page-intro__icon-container>
         {% for service-line in  data.service_lines_in_teaser_group %}
         {% assign data-entry = data[service-line] %}
+        <div class=services-page-intro__icon-container>
         <a href="{{ data-entry.cta-path | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
             <div class="services-page-intro__navigation-icon services-page-intro__icon--{{service-line}}">
               {{ data-entry.icon }}
             </div>
             <h2 class="services-page-intro__navigation-text">{{data-entry.name}}</h2>
           </a>
+        </div>
         {% endfor %}
-    </div>
 </div>
