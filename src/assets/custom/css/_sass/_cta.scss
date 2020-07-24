@@ -37,10 +37,14 @@
   }
 }
 
-.cta--primary-coral {
+@mixin cta--primary-coral {
   @include cta;
   @include primary;
   @include primary-coral;
+}
+
+.cta--primary-coral {
+  @include cta--primary-coral;
 }
 
 @mixin primary-navy {

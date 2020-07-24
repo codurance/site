@@ -17,3 +17,7 @@
     text-decoration: none;
   }
 }
+
+.hubspot-cta--primary-coral .cta_button {
+  @include cta--primary-coral;
+}

@@ -5,13 +5,14 @@
     {% assign data-entry = data[service_line] %}
     {% capture title %}{% if site.lang == 'es' %}{{ data-entry.es-title }}{% else %}{{ data-entry.en-title }}{% endif %}{% endcapture %}
     {% capture description %}{% if site.lang == 'es' %}{{ data-entry.es-description }}{% else %}{{ data-entry.en-description }}{% endif %}{% endcapture %}
+    {% capture hubspot_id %}{% if site.lang == 'es' %}{{ data-entry.es-hubspot-id }}{% else %}{{ data-entry.en-hubspot-id }}{% endif %}{% endcapture %}
     {% include service_line_teaser_card.liquid
         background_image=data-entry.image-src
         icon=data-entry.icon
         name=data-entry.name
         title=title
         description=description
-        cta_path=data-entry.cta-path
+        hubspot_id=hubspot_id
     %}
   {% endfor %}
 </section>
