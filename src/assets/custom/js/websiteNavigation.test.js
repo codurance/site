@@ -121,9 +121,20 @@ describe("Website Navigation Menu", () => {
           expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
         });
 
-      //   it("resets space under the currently open sub-menu", () => {
-      //     expect(subMenuToggle_1.style.marginBottom).toBe(``);
-      //   })
+        it("resets space under the currently open sub-menu", () => {
+          expect(subMenuToggle_1.style.marginBottom).toBe(``);
+        });
+
+        it("opens the newly clicked sub-menu", () => {
+          expect(subMenu_2.classList).toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("increases the space underneath the newly clicked toggle, to make the header bigger on large screens", () => {
+          expect(subMenuToggle_2.style.marginBottom).toBe(
+            `${fakeSubMenuScrollHeight}px`
+          );
+        });
+
       });
 
       describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
