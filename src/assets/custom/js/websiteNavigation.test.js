@@ -112,19 +112,19 @@ describe("Website Navigation Menu", () => {
         });
       });
 
-      // describe("When a different sub-menu toggle is clicked", () => {
-      //   beforeAll(() => {
-      //     subMenuToggle_2.click();
-      //   });
+      describe("When a different sub-menu toggle is clicked", () => {
+        beforeAll(() => {
+          subMenuToggle_2.click();
+        });
 
-      //   it("closes the currently open sub-menu", () => {
-      //     expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
-      //   });
+        it("closes the currently open sub-menu", () => {
+          expect(subMenu_1.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
 
       //   it("resets space under the currently open sub-menu", () => {
       //     expect(subMenuToggle_1.style.marginBottom).toBe(``);
       //   })
-      // });
+      });
 
       describe("When the main menu toggle is clicked while there is still a sub-menu open ", () => {
         beforeAll(() => {
