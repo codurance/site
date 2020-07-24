@@ -27,10 +27,10 @@ $text-container-inner-margin-top: -$vertical-overlap * 2;
   @include max-width--out-there;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 
   @include small {
+    flex-wrap: wrap;
     padding: 5% 0;
   }
 
