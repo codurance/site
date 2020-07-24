@@ -39,7 +39,6 @@ var websiteNavigation = function () {
 
   function handleWindowClick(e) {
     if (header.contains(e.target) || !currentOpenSubMenu) return;
-    console.log('window click');
 
     closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
   }
