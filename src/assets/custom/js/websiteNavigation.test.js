@@ -237,7 +237,6 @@ function createMockMenu() {
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
 
-  // window.document.body.appendChild(menu);
   header.appendChild(menu);
 }
 
@@ -265,7 +264,6 @@ function createMockSubMenu(subMenuID, subMenuToggleID) {
   );
   subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
 
-  // window.document.body.appendChild(subMenu);
   menu.appendChild(subMenu);
   subMenu.appendChild(subMenuToggleProxy);
 }
