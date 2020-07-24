@@ -1,39 +1,6 @@
 <header>
-  <div class="services-page-intro__image">
-    <div class="services-page-intro__navigation">
-      <div class=services-page-intro__icon-container>
-        <a href="{{'/services/software-modernisation/' | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
-          <div class="services-page-intro__navigation-icon services-page-intro__icon--software-modernisation">
-            {{ site.data.service_lines.software-modernisation.icon }}
-          </div>
-          <h2 class="services-page-intro__navigation-text">{{site.data.service_lines.software-modernisation.name}}</h2>
-        </a>
-      </div>
-      <div class=services-page-intro__icon-container>
-        <a href="{{'/services/software-delivery/' | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
-          <div class="services-page-intro__navigation-icon services-page-intro__icon--software-delivery">
-            {{ site.data.service_lines.software-delivery.icon }}
-          </div>
-          <h2 class="services-page-intro__navigation-text">{{site.data.service_lines.software-delivery.name}}</h2>
-        </a>
-      </div>
-      <div class=services-page-intro__icon-container>
-        <a href="{{'/services/specialist-expertise/' | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
-          <div class="services-page-intro__navigation-icon services-page-intro__icon--specialist-expertise">
-            {{ site.data.service_lines.specialist-expertise.icon }}
-          </div>
-          <h2 class="services-page-intro__navigation-text">{{site.data.service_lines.specialist-expertise.name}}</h2>
-        </a>
-      </div>
-      <div class=services-page-intro__icon-container>
-        <a href="{{'/services/strategic-advice/' | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
-        <div class="services-page-intro__navigation-icon services-page-intro__icon--strategic-advice">
-            {{ site.data.service_lines.strategic-advice.icon }}
-          </div>
-          <h2 class="services-page-intro__navigation-text">{{site.data.service_lines.strategic-advice.name}}</h2>
-        </a>
-      </div>
-  </div>
+  <div class="services-page-intro">
+    {%- include services_page_intro_navigation.liquid -%}
 </div>
   <div class="services-page-intro__text-container">
     <div class="services-page-intro__text-container-inner">
