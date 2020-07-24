@@ -38,10 +38,11 @@ var websiteNavigation = function () {
   }
 
   function handleWindowClick(e) {
-    if (header.contains(e.target)) return;
+    if (header.contains(e.target) || !currentOpenSubMenu) return;
     console.log('window click');
-    // if target is inside header return
+
     // else close submenu
+
 
   }
 
