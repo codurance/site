@@ -9,6 +9,9 @@
   padding-left: $lateral-space--medium;
   padding-right: $lateral-space--medium;
   padding-top: 35px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 80%;
 
   .training-card--featured & {
     padding-top: 20px;
