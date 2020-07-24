@@ -25,6 +25,8 @@ var websiteNavigation = function () {
   var currentOpenSubMenu = null;
 
   function setupEventListeners() {
+    window.addEventListener("click", handleWindowClick);
+
     menuToggle.addEventListener("click", toggleMenu);
 
     Array.prototype.forEach.call(subMenuToggles, function (t) {
@@ -33,6 +35,14 @@ var websiteNavigation = function () {
     Array.prototype.forEach.call(subMenuToggleProxies, function (t) {
       t.addEventListener("click", clickProxy);
     });
+  }
+
+  function handleWindowClick(e) {
+    if (header.contains(e.target)) return;
+    console.log('window click');
+    // if target is inside header return
+    // else close submenu
+
   }
 
   function toggleMenu() {
