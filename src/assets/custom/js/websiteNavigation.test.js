@@ -79,6 +79,8 @@ describe("Website Navigation Menu", () => {
       });
 
       it("opens the related sub-menu", () => {
+        console.log(`servicesSubMenu: `, servicesSubMenu);
+
         expect(servicesSubMenu.classList).toContain(OPEN_SUB_MENU_CLASS);
       });
 
@@ -86,23 +88,6 @@ describe("Website Navigation Menu", () => {
         expect(servicesSubMenuToggle.style.marginBottom).toBe(
           `${fakeSubMenuScrollHeight}px`
         );
-      });
-
-      describe("When the user clicks outside of the header", () => {
-        beforeAll(() => {
-          outsideHeader.click();
-        })
-        it("closes the open sub-menu", () => {
-      //     expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
-        });
-
-        it("resets the space underneath the toggle", () => {
-      //     expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
-        });
-
-        it("remove the special class previously applied to the website header", () => {
-      //     expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
-        });
       });
 
       it("updates the main menu, so it slides out of view on small screens", () => {
@@ -163,6 +148,23 @@ describe("Website Navigation Menu", () => {
 
         it("closes the related sub-menu", () => {
           expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("remove the special class previously applied to the website header", () => {
+          expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+        });
+      });
+
+      describe("When the user clicks outside of the header", () => {
+        beforeAll(() => {
+          outsideHeader.click();
+        })
+        it("closes the open sub-menu", () => {
+          expect(servicesSubMenu.classList).not.toContain(OPEN_SUB_MENU_CLASS);
+        });
+
+        it("resets the space underneath the toggle", () => {
+          expect(servicesSubMenuToggle.style.marginBottom).toBe(``);
         });
 
         it("remove the special class previously applied to the website header", () => {
@@ -233,10 +235,12 @@ function createMockMenuToggle() {
 }
 
 function createMockMenu() {
+  const header = getMockHeader();
   const menu = window.document.createElement("div");
   menu.id = MENU_ID;
 
-  window.document.body.appendChild(menu);
+  // window.document.body.appendChild(menu);
+  header.appendChild(menu);
 }
 
 function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
@@ -252,6 +256,7 @@ function createMockSubMenuToggle(subMenuID, subMenuToggleID) {
 }
 
 function createMockSubMenu(subMenuID, subMenuToggleID) {
+  const menu = getMockMenu();
   const subMenu = window.document.createElement("div");
   subMenu.id = subMenuID;
 
@@ -262,7 +267,8 @@ function createMockSubMenu(subMenuID, subMenuToggleID) {
   );
   subMenuToggleProxy.classList.add(SUB_MENU_TOGGLE_PROXY_CLASS);
 
-  window.document.body.appendChild(subMenu);
+  // window.document.body.appendChild(subMenu);
+  menu.appendChild(subMenu);
   subMenu.appendChild(subMenuToggleProxy);
 }
 
