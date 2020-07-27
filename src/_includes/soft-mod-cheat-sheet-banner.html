@@ -5,6 +5,6 @@
 {%- capture hubspot-id -%}
   {%- if site.lang == 'es' -%}041e3783-91f3-4bc1-8926-7376fa4faae0{%- else -%}06e1ce72-a796-4e1c-8ff1-1b9c7a67fe57{%- endif -%}
 {%- endcapture -%}
-{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id -%}{% endcapture %}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-id=hubspot-id -%}{% endcapture %}
 {% include in_page_banner.html background_image=background_image background_position=background_position
     class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}

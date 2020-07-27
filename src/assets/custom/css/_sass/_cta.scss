@@ -58,10 +58,14 @@
   }
 }
 
-.cta--primary-navy {
+@mixin cta--primary-navy {
   @include cta;
   @include primary;
   @include primary-navy;
+}
+
+.cta--primary-navy {
+  @include cta--primary-navy;
 }
 
 @mixin secondary {

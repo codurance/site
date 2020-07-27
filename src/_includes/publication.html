@@ -143,7 +143,7 @@
             {%- if site.lang == 'es' -%}77a4144a-4c2a-44ce-8468-d9341d623e46{%- else -%}ad686d9b-1d11-4ef5-a68e-1cf1f0aff255{%- endif -%}
         {%- endcapture -%}
         {%- capture hubspot-cta -%}
-            {%- include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id -%}
+            {%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-id=hubspot-id -%}
         {%- endcapture -%}
 
         {% include in_page_banner.html background_image=background_image class="container section g-pt-200 g-pb-100" description=description title=title hubspot-cta=hubspot-cta %}
