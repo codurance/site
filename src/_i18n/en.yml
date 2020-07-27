@@ -630,7 +630,7 @@ projects:
 compass-teaser:
     anchor-id: compass-by-codurance
     subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
-    button: Try our Compass tool
+    hubspot-id: 0beb4f4f-b4ee-4bbb-8631-c642fc59155a
 
 get-in-touch:
   anchor-id: get-in-touch

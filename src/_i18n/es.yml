@@ -634,7 +634,7 @@ projects:
 compass-teaser:
   anchor-id: compass-by-codurance
   subheading: Evalúa la madurez del desarrollo de software de tu organización
-  button: Empezar
+  hubspot-id: a5732a1e-0f48-407b-97d6-894a04a3f390
 
 get-in-touch:
   anchor-id: contacto
