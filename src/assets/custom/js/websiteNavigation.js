@@ -68,7 +68,7 @@ var websiteNavigation = function () {
   }
 
   function openMenu() {
-    header.classList.add(OPEN_HEADER_CLASS, REVEALED_CLASS);
+    header.classList.add(OPEN_HEADER_CLASS, HEADER_REVEALED_CLASS);
     menuToggle.setAttribute("aria-expanded", "true");
     menu.classList.add(OPEN_MENU_CLASS);
 
@@ -78,7 +78,7 @@ var websiteNavigation = function () {
   }
 
   function closeMenu() {
-    header.classList.remove(OPEN_HEADER_CLASS, REVEALED_CLASS);
+    header.classList.remove(OPEN_HEADER_CLASS, HEADER_REVEALED_CLASS);
     menuToggle.setAttribute("aria-expanded", "false");
     menu.classList.remove(OPEN_MENU_CLASS);
   }

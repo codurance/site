@@ -43,11 +43,11 @@ var websiteHeader = function () {
   }
 
   function revealHeader() {
-    header.classList.add(REVEALED_CLASS);
+    header.classList.add(HEADER_REVEALED_CLASS);
   }
 
   function hideHeader() {
-    header.classList.remove(REVEALED_CLASS);
+    header.classList.remove(HEADER_REVEALED_CLASS);
   }
 
   function atTheTop(p) {
