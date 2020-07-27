@@ -14,6 +14,16 @@
   }
 }
 
+.training-overview-hero-image-container {
+  @include large-and-extra-large {
+    background-color: transparent;
+    background-position: center -20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -100px;
+  }
+}
+
 .training-overview-content {
   background-color: $navy--ultralight;
 

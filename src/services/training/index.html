@@ -16,7 +16,7 @@ intro:
   {%- assign translations = site.translations[site.lang].training-overview -%}
   {% assign cta_text = site.translations[site.lang].services.learn-more %}
   <div class="training-overview-hero-wrapper">
-    {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
+    {% include service_line_hero.liquid translations=translations cta_text=cta_text hero_image_container_class='training-overview-hero-image-container' %}
   </div>
 
   <section class="training-overview-content">
