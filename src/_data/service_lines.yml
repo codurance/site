@@ -53,7 +53,6 @@ training:
   es-title: Crafting Code y Crafted Design
   es-description: Esta serie de capacitación está pensada para aquellos equipos que desean convertirse en expertos escribiendo código bien diseñado.
   image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
-  cta-path: /services/training
   title-background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg
 
 service-line-example:
