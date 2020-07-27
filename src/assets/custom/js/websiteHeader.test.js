@@ -64,6 +64,50 @@ describe('Website Header', () => {
           expect(header.classList).toContain('website-header--revealed');
           expect(header.classList.length).toBe(2);
         });
+
+        describe('When we then open a submenu', () => {
+          beforeAll(() => {
+            header.classList.add(HEADER_HAS_OPEN_SUBMENU_CLASS);
+          });
+          afterAll(() => {
+            header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
+          });
+          describe('And we scroll down the page by three pixels', () => {
+            beforeAll(() => {
+              const MockCloseSubMenu = () => {
+                header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
+              };
+              global.__CODURANCE.websiteNavigation.closeOpenSubMenu = MockCloseSubMenu;
+              simulateScrollingToY(1000);
+            });
+
+            it('The submenu closes', () => {
+              expect(header.classList).not.toContain(
+                HEADER_HAS_OPEN_SUBMENU_CLASS
+              );
+            });
+
+            // it('The header is hidden', () => {
+            //   expect(header.classList).not.toContain(
+            //     'website-header--revealed'
+            //   );
+            // });
+          });
+        });
+
+        describe('when a submenu is not open', () => {
+          describe('And we scroll down the page by three pixels', () => {
+            beforeEach(() => {
+              simulateScrollingToY(1000);
+            });
+
+            it('The header is hidden', () => {
+              expect(header.classList).not.toContain(
+                'website-header--revealed'
+              );
+            });
+          });
+        });
       });
 
       describe('When we then scroll close to the top of the page', () => {
@@ -86,53 +130,6 @@ describe('Website Header', () => {
             expect(header.classList).toContain('website-header');
             expect(header.classList).toContain('website-header--revealed');
             expect(header.classList.length).toBe(2);
-          });
-        });
-      });
-
-      describe('When a submenu is open', () => {
-        beforeAll(() => {
-          header.classList.add(HEADER_HAS_OPEN_SUBMENU_CLASS);
-          const MockCloseSubMenu = () => {
-            header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
-          };
-          Object.defineProperty(
-            global,
-            '.__CODURANCE.websiteNavigation.closeOpenSubMenu',
-            MockCloseSubMenu
-          );
-          jest
-            .spyOn(global, '.__CODURANCE.websiteNavigation.closeOpenSubMenu')
-            .mockImplementation(MockCloseSubMenu);
-          // global.__CODURANCE.websiteNavigation.closeOpenSubMenu = MockCloseSubMenu;
-        });
-
-        describe('And we scroll down the page by three pixels', () => {
-          beforeAll(() => {
-            simulateScrollingToY(1000 + 3);
-          });
-
-          it('The submenu closes', () => {
-            expect(header.classList).not.toContain(
-              HEADER_HAS_OPEN_SUBMENU_CLASS
-            );
-          });
-
-          it('The header is hidden', () => {
-            expect(header.classList).toContain('website-header');
-            expect(header.classList.length).toBe(1);
-          });
-        });
-      });
-
-      describe('When a submenu is not open', () => {
-        describe('And  we scroll down the page by three pixels', () => {
-          beforeAll(() => {
-            simulateScrollingToY(1000 + 3);
-          });
-          it('The header is hidden', () => {
-            expect(header.classList).toContain('website-header');
-            expect(header.classList.length).toBe(1);
           });
         });
       });
