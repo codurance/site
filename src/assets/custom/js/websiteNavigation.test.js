@@ -1,4 +1,5 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
+require("./websiteHeaderShared");
 require("./websiteNavigation");
 
 const HEADER_CLASS = "website-header";
