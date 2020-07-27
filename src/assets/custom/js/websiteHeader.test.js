@@ -93,10 +93,15 @@ describe("Website Header", () => {
               simulateScrollingToY(1000);
             });
 
-            it("we still don't hide the header", () => {
+            it("The submenu closes", () => {
+              expect(header.classList).not.toContain(HEADER_HAS_OPEN_SUBMENU_CLASS);
+              // expect(header.classList).toContain("website-header--revealed");
+              // expect(header.classList.length).toBe(3);
+            });
+
+            it("we let the header return to it's natural position", () => {
               expect(header.classList).toContain("website-header");
-              expect(header.classList).toContain("website-header--revealed");
-              expect(header.classList.length).toBe(3);
+              expect(header.classList.length).toBe(1);
             });
           });
         });
