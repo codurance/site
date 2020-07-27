@@ -52,7 +52,7 @@ training:
   en-description: This training series is designed to enhance your team's skill set around creating expertly written code and well crafted design. This will allow changes within your organisation to be carried out faster and more sustainably.
   es-title: Crafting Code y Crafted Design
   es-description: Esta serie de capacitación está pensada para aquellos equipos que desean convertirse en expertos escribiendo código bien diseñado.
-  image-src: /assets/custom/img/training-overview/hero_image_sandro.png
+  image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
   cta-path: /services/training
   title-background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg
 
