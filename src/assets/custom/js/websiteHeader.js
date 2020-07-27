@@ -1,4 +1,10 @@
 var websiteHeader = function () {
+  window.__CODURANCE = window.__CODURANCE || {};
+  window.__CODURANCE.websiteNavigation = __CODURANCE.websiteNavigation || {};
+
+  var closeSubMenu;
+
+  var header = window.document.querySelector(".website-header");
   var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
@@ -36,7 +42,11 @@ var websiteHeader = function () {
     }
 
     if (downwardMovement && !websiteHeaderOpen()) {
-      if (subMenuOpen) closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
+      if (subMenuOpen) {
+        closeSubMenu = window.__CODURANCE.websiteNavigation.closeOpenSubMenu || function() {};
+        closeSubMenu();
+      }
+
       hideHeader();
       return;
     }

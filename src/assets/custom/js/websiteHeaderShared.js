@@ -13,19 +13,11 @@ var menu = window.document.querySelector(
   "#" + menuToggle.getAttribute("aria-controls")
 );
 
-var currentOpenSubMenu = null;
+
 
 var getScrollPosition = function () {
   return window.pageYOffset || window.scrollY;
 };
 
-function closeSubMenu(subMenu, subMenuToggle) {
-  currentOpenSubMenu = null;
 
-  header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
-  subMenuToggle.setAttribute("aria-expanded", "false");
-  subMenu.classList.remove(OPEN_SUB_MENU_CLASS);
-  menu.classList.remove(MENU_SHOWING_SUB_MENU_CLASS);
 
-  subMenuToggle.style.removeProperty('margin-bottom');
-}
