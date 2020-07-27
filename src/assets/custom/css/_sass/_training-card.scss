@@ -73,12 +73,12 @@
       @include base;
     }
     @include medium-large-and-extra-large {
-      @include mercer-reg;
+      @include base;
     }
   }
 
   .training-card--featured & {
-    @include mercer-reg;
+    @include base;
     color: white
   }
 }
