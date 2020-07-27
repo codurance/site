@@ -1,7 +1,7 @@
 {% capture background_image %}/assets/custom/img/services/software-modernisation/bg-business-case-presentation-template.jpg{% endcapture %}
 {% assign background_position = 'top left' %}
 {% capture description %}{% t software-modernisation.business-case-presentation-banner.text %}{% endcapture %}
-{%- capture hubspot-id -%}980ff3f1-98cb-4ba5-9c24-8475b9de90a1{%- endcapture -%}
-{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-id=hubspot-id -%}{%- endcapture -%}
+{%- capture hubspot-cta-id -%}980ff3f1-98cb-4ba5-9c24-8475b9de90a1{%- endcapture -%}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{%- endcapture -%}
 
 {% include in_page_banner.html background_image=background_image background_position=background_position class="soft-mod-cheat-sheet-cta-banner" description=description split="right-heavy" hubspot-cta=hubspot-cta %}

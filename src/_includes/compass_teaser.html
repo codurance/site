@@ -4,7 +4,7 @@
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
     <p class="compass-teaser__description">{% t compass-teaser.subheading %}</p>
-    {% assign hubspot_id = site.translations[site.lang].compass-teaser.hubspot-id %}
-    {% include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-id=hubspot_id %}
+    {% assign hubspot_cta_id = site.translations[site.lang].compass-teaser.hubspot-cta-id %}
+    {% include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot_cta_id %}
   </div>
 </section>

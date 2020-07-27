@@ -16,8 +16,8 @@
         </div>
         <div class="service-line-teaser-card__secondary-content">
             <p class="service-line-teaser-card__description">{{ include.description }}</p>
-            {% if include.hubspot_id %}
-                {% include hubspot_cta.liquid class="hubspot-cta--primary-coral" hubspot-id=include.hubspot_id %}
+            {% if include.hubspot_cta_id %}
+                {% include hubspot_cta.liquid class="hubspot-cta--primary-coral" hubspot-cta-id=include.hubspot_cta_id %}
             {% elsif include.cta_path %}
                 {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
                 {% capture cta-text %}{% t services.learn-more %}{% endcapture %}

@@ -9,10 +9,10 @@ software-modernisation:
   name: Software Modernisation
   en-title: Improve business agility, and make innovation possible
   en-description: Align your business and technical vision to enable change to be made more simply and securely.
-  en-hubspot-id: 57099049-6f33-4639-aa6d-e86e437a37fd
+  en-hubspot-cta-id: 57099049-6f33-4639-aa6d-e86e437a37fd
   es-title: Mejora la agilidad empresarial y haz posible la innovación
   es-description: Consigue alinear las necesidades de negocio con las soluciones técnicas para permitir que los cambios se realicen de manera más sencilla y segura.
-  es-hubspot-id: f913b7b4-3a24-42d0-bae8-2b76f4ff0f88
+  es-hubspot-cta-id: f913b7b4-3a24-42d0-bae8-2b76f4ff0f88
   image-src: /assets/custom/img/services/serviceline-softmod.jpg
 
 software-delivery:
@@ -20,10 +20,10 @@ software-delivery:
   name: Software Delivery
   en-title: Deliver your product ideas to market
   en-description: Accelerate innovation and ROI, without compromising quality. Partner with our team of experts to define, build, and deliver your product ideas.
-  en-hubspot-id: f4228961-cbbd-4d71-889c-6e8fe25ac0f4
+  en-hubspot-cta-id: f4228961-cbbd-4d71-889c-6e8fe25ac0f4
   es-title: Transforma tu idea en producto
   es-description: Acelera la innovación y el ROI de tu software sin comprometer la calidad. Nuestro equipo de expertos trabajará contigo para definir, construir y entregar tus ideas de producto.
-  es-hubspot-id: 8cee708d-cd3d-4acc-8105-a0d42599afcd
+  es-hubspot-cta-id: 8cee708d-cd3d-4acc-8105-a0d42599afcd
   image-src: /assets/custom/img/services/serviceline-software-delivery.jpg
 
 specialist-expertise:
@@ -31,10 +31,10 @@ specialist-expertise:
   name: Specialist Expertise
   en-title: Improve the reliability and quality of your software delivery and operations
   en-description: Our experts will develop improvement iniciatives to increase the effectiveness of your software delivery and teams. Get the right skills when you need them.
-  en-hubspot-id: 102410b8-6e03-4139-a156-95e9c8ab5326
+  en-hubspot-cta-id: 102410b8-6e03-4139-a156-95e9c8ab5326
   es-title: Consigue que tu entrega de software y operaciones sean más fiables y de mejor calidad
   es-description: Nuestros expertos desarrollarán iniciativas de mejora para aumentar la efectividad de tus equipos y su entrega de software. Ponemos a tu alcance las habilidades que necesitas cuando las necesitas.
-  es-hubspot-id: 25cd3177-6273-4653-b4a2-22f9ae7c2fe3
+  es-hubspot-cta-id: 25cd3177-6273-4653-b4a2-22f9ae7c2fe3
   image-src: /assets/custom/img/services/serviceline-specialist-expertise.jpg
 
 strategic-advice:
@@ -42,10 +42,10 @@ strategic-advice:
   name: Strategic Advice
   en-title: Build a technology strategy you can trust
   en-description: Get the advice your organisation needs to create a strategic roadmap for the future and align business and technology.
-  en-hubspot-id: 1db4c823-0f2b-4119-9dbc-761a55231b3e
+  en-hubspot-cta-id: 1db4c823-0f2b-4119-9dbc-761a55231b3e
   es-title: Construye una visión estratégica
   es-description: Cuenta con nuestra experiencia para trazar un plan estratégico con el que consolidar tu negocio a largo plazo y alinearlo con la tecnología. 
-  es-hubspot-id: 997db93d-8348-42fc-8c93-c97260b1f05f
+  es-hubspot-cta-id: 997db93d-8348-42fc-8c93-c97260b1f05f
   image-src: /assets/custom/img/services/serviceline-strategic-advice.jpg
 
 training:
@@ -54,10 +54,10 @@ training:
   course-length: 3 days
   en-title: Crafting Code & Crafted Design
   en-description: The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
-  en-hubspot-id: 5004832a-217b-41d9-bbd7-12c0aa5555fe
+  en-hubspot-cta-id: 5004832a-217b-41d9-bbd7-12c0aa5555fe
   es-title: SPANISH - Crafting Code & Crafted Design
   es-description: SPANISH - The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
-  es-hubspot-id: becaa5e5-8a5d-4358-8b49-b8d8bb572308
+  es-hubspot-cta-id: becaa5e5-8a5d-4358-8b49-b8d8bb572308
   image-src: /assets/custom/img/training/hero_image_sandro.png
 
 service-line-example:
