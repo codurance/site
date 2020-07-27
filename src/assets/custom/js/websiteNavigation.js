@@ -1,12 +1,22 @@
 var websiteNavigation = function () {
-  var SUB_MENU_TOGGLE_SELECTOR = ".website-navigation-menu__sub-menu-toggle";
-  var SUB_MENU_TOGGLE_PROXY_SELECTOR =
-    ".website-navigation-sub-menu__toggle-proxy";
   var OPEN_MENU_CLASS = "website-navigation__menu--open";
+  var OPEN_SUB_MENU_CLASS = "website-navigation-sub-menu--open";
+  var OPEN_HEADER_CLASS = "website-header--open";
+  var HEADER_REVEALED_CLASS = "website-header--revealed";
+  var HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
+  var MENU_SHOWING_SUB_MENU_CLASS = "website-navigation__menu--showing-sub-menu";
 
-  var subMenuToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
+  var header = window.document.querySelector(".website-header");
+  var menuToggle = window.document.querySelector(".website-navigation-menu-toggle");
+  var menu = window.document.querySelector(
+    "#" + menuToggle.getAttribute("aria-controls")
+  );
+
+  var subMenuToggles = menu.querySelectorAll(
+      ".website-navigation-menu__sub-menu-toggle"
+  );
   var subMenuToggleProxies = window.document.querySelectorAll(
-    SUB_MENU_TOGGLE_PROXY_SELECTOR
+    ".website-navigation-sub-menu__toggle-proxy"
   );
 
   var currentOpenSubMenu = null;
@@ -112,6 +122,7 @@ var websiteNavigation = function () {
       subMenuToggle.getAttribute("aria-controls")
     );
   }
+
 
   function exposeSharedMethods() {
     window.__CODURANCE = window.__CODURANCE || {};

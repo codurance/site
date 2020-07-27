@@ -1,5 +1,4 @@
 const { simulatePageLoad } = require("./simulatePageLoad");
-require("./websiteHeaderShared");
 require("./websiteHeader");
 
 let header;

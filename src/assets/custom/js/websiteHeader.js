@@ -5,6 +5,7 @@ var websiteHeader = function () {
   var closeSubMenu;
 
   var header = window.document.querySelector(".website-header");
+  var HEADER_REVEALED_CLASS = "website-header--revealed";
   var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
@@ -34,7 +35,7 @@ var websiteHeader = function () {
     var downwardMovement =
       previousWindowPosition < latestWindowPosition - scrollTolerance;
 
-    var subMenuOpen = header.classList.contains(HEADER_HAS_OPEN_SUBMENU_CLASS);
+    var subMenuOpen = header.classList.contains("website-header--has-open-submenu");
 
     if (startingPositionIsInView(latestWindowPosition) || atTheTop(latestWindowPosition) || upwardMovement) {
       revealHeader();
@@ -69,8 +70,12 @@ var websiteHeader = function () {
   }
 
   function websiteHeaderOpen() {
-    return header.classList.contains(OPEN_HEADER_CLASS);
+    return header.classList.contains("website-header--open");
   }
+
+  var getScrollPosition = function () {
+    return window.pageYOffset || window.scrollY;
+  };
 };
 
 window.addEventListener("DOMContentLoaded", websiteHeader);
