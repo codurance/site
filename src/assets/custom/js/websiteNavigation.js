@@ -107,8 +107,6 @@ var websiteNavigation = function () {
     menu.classList.add(MENU_SHOWING_SUB_MENU_CLASS);
 
     subMenuToggle.style.marginBottom = subMenu.scrollHeight + 'px';
-
-    console.log(currentOpenSubMenu);
   }
 
   function closeSubMenu(subMenu, subMenuToggle) {
