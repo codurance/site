@@ -736,26 +736,22 @@ service-line-case-studies:
   card-one:
     heading: ASOS
     subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/asos-case-study
+    hubspot-cta-id: e192f01a-2516-47dc-bfc1-ff99edff4f21
 
   card-two:
     heading: Mango
     subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/mango-case-study
+    hubspot-cta-id: 0ec4b8cd-d9c9-4ff0-ba4b-842d48d85f37
 
   card-three:
     heading: eClinicalWorks
     subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/eclinicalworks-case-study
+    hubspot-cta-id: 62860427-711d-47e4-8f89-a7e4347b1a9e
 
   card-four:
     heading: BestSecret
     subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/best-secret-case-study
+    hubspot-cta-id: 202bea38-a2ab-42ef-82df-c14f14d2c92d
 
 service-line-testimonials:
   section-title: La opinión de nuestros clientes
