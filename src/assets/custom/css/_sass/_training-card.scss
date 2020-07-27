@@ -30,9 +30,6 @@
     align-items: flex-start;
   }
 
-  .training-card--featured & {
-    background-color: $slate-light;
-  }
 }
 
 .training-card__avatar {
@@ -67,18 +64,5 @@
 
 .training-card__description {
   margin: 0 0 50px;
-
-  .training-card:not(.training-card--featured) & {
-    @include small {
-      @include base;
-    }
-    @include medium-large-and-extra-large {
-      @include base;
-    }
-  }
-
-  .training-card--featured & {
-    @include base;
-    color: white
-  }
+  @include base;
 }
