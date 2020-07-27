@@ -1,5 +1,6 @@
 var HEADER_SELECTOR = ".website-header";
 var HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
+var REVEALED_CLASS = "website-header--revealed";
 var MENU_TOGGLE_SELECTOR = ".website-navigation-menu-toggle";
 var MENU_SHOWING_SUB_MENU_CLASS =
 "website-navigation__menu--showing-sub-menu";

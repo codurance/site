@@ -1,5 +1,4 @@
 var websiteHeader = function () {
-  var REVEALED_CLASS = "website-header--revealed";
   var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
@@ -37,6 +36,7 @@ var websiteHeader = function () {
     }
 
     if (downwardMovement) {
+      if (subMenuOpen) closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
       hideHeader();
       return;
     }
