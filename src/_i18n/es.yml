@@ -193,8 +193,7 @@ services:
     lead-in: Impulsa la innovación en tu organización a través de la entrega ágil de software, la experiencia técnica aplicada a la práctica, y nuestro asesoramiento experto. Nuestro equipo de profesionales te proporcionará las prácticas, tecnologías y habilidades necesarias en cada paso del proyecto para garantizar entregas de alta calidad. Te guiaremos desde el inicio hasta la entrega, haciendo posible que tu visión del producto se haga realidad.
   training:
     title: Training
-    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
-    hubspot-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.  
   clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros
@@ -782,3 +781,4 @@ training-overview:
   contact-form:
     title: Tell us about your challenges
     description: Find out how Codurance's solutions can help your business
+    hubspot-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
