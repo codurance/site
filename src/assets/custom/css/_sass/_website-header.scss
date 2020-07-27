@@ -39,6 +39,10 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
     }
     @include large-and-extra-large {
       background-color: white;
+
+      &.website-header--has-open-submenu {
+        top: 0;
+      }
     }
 
     &::after {
