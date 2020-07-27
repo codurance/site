@@ -5,10 +5,10 @@
       background-repeat: no-repeat;
       content: "";
       height: 400px;
-      left: 70%;
       position: absolute;
-      top: -41px;
-      width: 316px;
+      right: 15%;
+      top: -60px;
+      width: 400px;
     }
   }
 }
@@ -35,20 +35,21 @@
   @include large-and-extra-large {
     padding-top: calc(#{$vertical-overlap} * 1.5);
     position: relative;
+  }
+  @include extra-large {
+    @include max-width--framed;
     &::before {
       background-image: url("#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-training-courses.svg");
       background-repeat: no-repeat;
       content: "";
       height: 500px;
-      left: 40px;
+      left: 20%;
+      opacity: 0.4;
       position: absolute;
-      top: 0;
+      top: -40px;
       transform: translateX(-50%);
-      width: 520px;
+      width: 400px;
     }
-  }
-  @include extra-large {
-    @include max-width--framed;
   }
 }
 
