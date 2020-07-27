@@ -75,6 +75,7 @@
     }
     &.website-navigation__menu--showing-sub-menu {
       left: -100vw;
+      overflow-y: hidden;
     }
   }
   @include large {
