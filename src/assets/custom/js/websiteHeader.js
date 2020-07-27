@@ -2,7 +2,7 @@ var websiteHeader = function () {
   var HEADER_SELECTOR = ".website-header";
   var REVEALED_CLASS = "website-header--revealed";
   var HEADER_HAS_OPEN_SUBMENU_CLASS = "website-header--has-open-submenu";
-  var tolerance = 2;
+  var scrollTolerance = 2;
 
   var previousWindowPosition;
   var latestWindowPosition;
@@ -27,9 +27,9 @@ var websiteHeader = function () {
 
   function handleScrollPosition(latestWindowPosition) {
     var upwardMovement =
-      previousWindowPosition > latestWindowPosition + tolerance;
+      previousWindowPosition > latestWindowPosition + scrollTolerance;
     var downwardMovement =
-      previousWindowPosition < latestWindowPosition - tolerance;
+      previousWindowPosition < latestWindowPosition - scrollTolerance;
 
     var subMenuOpen = HEADER.classList.contains(HEADER_HAS_OPEN_SUBMENU_CLASS);
 
@@ -57,7 +57,7 @@ var websiteHeader = function () {
   }
 
   function atTheTop(p) {
-    return p < tolerance;
+    return p < scrollTolerance;
   }
 
   function startingPositionIsInView(p) {
