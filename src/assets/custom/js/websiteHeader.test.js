@@ -9,6 +9,8 @@ jest.useFakeTimers();
 const mockRequestAnimationFrame = (cb) => setTimeout(cb, 0);
 const triggerMockRequestAnimationFrame = () => jest.runAllTimers();
 
+global.getScrollPosition = function() {return window.pageYOffset || window.scrollY;}
+
 describe("Website Header", () => {
   beforeEach(() => {
     jest
