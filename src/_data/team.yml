@@ -983,3 +983,17 @@
   github: gargath
   linkedin: philtaprogge
   office: London
+
+- id: paul_morris_hill
+  name: Paul Morris-Hill
+  image: /assets/custom/img/team/paul_morris_hill.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Paul began programming from a young age, initially starting out writing desktop applications using VB6.
+    While his first software engineering job involved writing copius amounts of PHP, he has since spent many years working on large .Net systems.</p>
+    <p>Paul has a particular interest in mentoring and learning and believes that there is always something new to learn.</p>
+    <p>When not coding in his personal time, Paul builds CNC machines and grows chilli plants. He has also recently taken up rescuing hedgehogs.</p>
+  email: paul.morris-hill@codurance.com
+  github: paulmorrishill
+  linkedin: paulmorrishill
+  office: London
