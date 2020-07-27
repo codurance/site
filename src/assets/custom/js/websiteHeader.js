@@ -35,7 +35,7 @@ var websiteHeader = function () {
       return;
     }
 
-    if (downwardMovement) {
+    if (downwardMovement && !websiteHeaderOpen()) {
       if (subMenuOpen) closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
       hideHeader();
       return;
@@ -56,6 +56,10 @@ var websiteHeader = function () {
 
   function startingPositionIsInView(p) {
     return p < HEADER_HEIGHT;
+  }
+
+  function websiteHeaderOpen() {
+    return header.classList.contains(OPEN_HEADER_CLASS);
   }
 };
 
