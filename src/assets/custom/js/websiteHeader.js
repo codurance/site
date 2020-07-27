@@ -1,5 +1,6 @@
 var websiteHeader = function () {
   var REVEALED_CLASS = "website-header--revealed";
+  var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
   var previousWindowPosition;
@@ -58,7 +59,7 @@ var websiteHeader = function () {
   }
 
   function startingPositionIsInView(p) {
-    return p < header.clientHeight;
+    return p < HEADER_HEIGHT;
   }
 };
 
