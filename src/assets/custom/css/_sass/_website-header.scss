@@ -22,7 +22,7 @@ body.toggle--slt-397-website-header-updates{
     top: 0;
     width: 100%;
     z-index: 100;
-    transition: translateY 0.3s ease;
+    transition: transform 0.3s ease;
     transform: translateY(-100%);
 
     &.website-header--revealed {
