@@ -31,17 +31,13 @@ var websiteHeader = function () {
 
     var subMenuOpen = header.classList.contains(HEADER_HAS_OPEN_SUBMENU_CLASS);
 
-    if (atTheTop(latestWindowPosition) || (downwardMovement && !subMenuOpen)) {
-      restoreNaturalPosition();
-      return;
-    }
-
-    if (startingPositionIsInView(latestWindowPosition)) {
-      return;
-    }
-
-    if (upwardMovement) {
+    if (startingPositionIsInView(latestWindowPosition) || atTheTop(latestWindowPosition) || upwardMovement) {
       revealHeader();
+      return;
+    }
+
+    if (downwardMovement) {
+      hideHeader();
       return;
     }
   }
@@ -50,7 +46,7 @@ var websiteHeader = function () {
     header.classList.add(REVEALED_CLASS);
   }
 
-  function restoreNaturalPosition() {
+  function hideHeader() {
     header.classList.remove(REVEALED_CLASS);
   }
 
