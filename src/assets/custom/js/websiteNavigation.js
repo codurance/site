@@ -2,7 +2,6 @@ var websiteNavigation = function () {
   var SUB_MENU_TOGGLE_SELECTOR = ".website-navigation-menu__sub-menu-toggle";
   var SUB_MENU_TOGGLE_PROXY_SELECTOR =
     ".website-navigation-sub-menu__toggle-proxy";
-  var OPEN_HEADER_CLASS = "website-header--open";
   var OPEN_MENU_CLASS = "website-navigation__menu--open";
 
   var subMenuToggles = menu.querySelectorAll(SUB_MENU_TOGGLE_SELECTOR);
@@ -69,7 +68,7 @@ var websiteNavigation = function () {
   }
 
   function openMenu() {
-    header.classList.add(OPEN_HEADER_CLASS);
+    header.classList.add(OPEN_HEADER_CLASS, REVEALED_CLASS);
     menuToggle.setAttribute("aria-expanded", "true");
     menu.classList.add(OPEN_MENU_CLASS);
 
@@ -79,7 +78,7 @@ var websiteNavigation = function () {
   }
 
   function closeMenu() {
-    header.classList.remove(OPEN_HEADER_CLASS);
+    header.classList.remove(OPEN_HEADER_CLASS, REVEALED_CLASS);
     menuToggle.setAttribute("aria-expanded", "false");
     menu.classList.remove(OPEN_MENU_CLASS);
   }
