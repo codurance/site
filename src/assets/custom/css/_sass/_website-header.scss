@@ -11,6 +11,10 @@ body:not(.toggle--slt-397-website-header-updates) .website-header {
   z-index: 100;
 }
 
+body.toggle--slt-397-website-header-updates{
+  padding-top: $header-height + $header-border-height;
+}
+
 .toggle--slt-397-website-header-updates {
   .website-header {
     left: 0;
