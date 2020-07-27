@@ -37,9 +37,12 @@
   padding: 50px 0;
 }
 
-.training-hero__course-instructor-title,
-.training-hero__course-instructor {
+.training-hero__course-instructor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding-left: 20px;
+  transform: translateY(8px);
 }
 
 .training-hero__course-instructor-title {
