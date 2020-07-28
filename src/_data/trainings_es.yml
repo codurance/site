@@ -29,14 +29,14 @@
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-microservices-with-aws.svg
 
 - id: serverless
-  name: Arquitectura Serverless Utilizando AWS
+  name: Arquitectura Serverless utilizando AWS
   author: Mashooq Badar
   description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
   page: /services/training/serverless-training
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
 - id: ead
-  name: Enterprise Application Development
+  name: Desarrollo de aplicaciones empresariales
   author: Mashooq Badar
   description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
   page: /services/training/enterprise-application-development
