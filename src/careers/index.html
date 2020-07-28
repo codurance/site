@@ -15,8 +15,9 @@ redirect_from:
             <h4 class="g-font-weight-200">{% t careers-open_positions.description %}</h4>
         </div>
         <div class="text-center">
-            <a class="btn btn-more btn-more-large" href="#our_roles">
+            <a class="btn btn-more btn-more-large" data-modal-target="#careers-form" href="#careers-form">
                 <span>{% t careers.our_roles_title %}</span>
+                {% include apply_form.html target = "careers" %}
             </a>
         </div>
     </div>
