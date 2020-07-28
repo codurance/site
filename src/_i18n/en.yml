@@ -673,6 +673,7 @@ software-modernisation:
     teaser:
       title: Software Modernisation in distributed work times
       description: In this webinar, Sandro Mancuso, Co-Founder of Codurance and José Enrique Rodríguez Huerta, Managing Director of Codurance Spain, explains why organisations need Software Modernisation in the current context and the challenges it addresses.
+      hubspot-cta-id: 50b4f0e1-0243-4980-88a3-5c682bf2835c
       cta: Watch Webinar
       cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
 

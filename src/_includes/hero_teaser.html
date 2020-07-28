@@ -4,6 +4,10 @@
     <h2 class="hero-teaser__content-type">{{ include.content_type }}</h2>
     <h3 class="hero-teaser__title">{{ include.title }}</h3>
     <p class="hero-teaser__description">{{ include.description }}</p>
-    {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta %}
+     {% if include.hubspot_cta %}
+      {{ include.hubspot_cta }}
+    {% else %}
+      {% include cta_primary_link.html color='coral' href=include.cta-href text=include.cta %}
+    {% endif %}
   </div>
 </section>
