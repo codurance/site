@@ -3,21 +3,19 @@ require('./websiteHeader');
 
 let header;
 
-const HEADER_HAS_OPEN_SUBMENU_CLASS = 'website-header--has-open-submenu';
-
 jest.useFakeTimers();
 const mockRequestAnimationFrame = cb => setTimeout(cb, 0);
 const triggerMockRequestAnimationFrame = () => jest.runAllTimers();
 
-const MockCloseSubMenu = () => {
-  header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
-};
+const mockCloseSubMenu = jest.fn();
 
 window.__CODURANCE = {
   websiteNavigation: {
-    closeOpenSubMenu: MockCloseSubMenu,
+    closeOpenSubMenu: mockCloseSubMenu,
   },
 };
+
+const mockSpy = jest.spyOn(window.__CODURANCE.websiteNavigation, "closeOpenSubMenu");
 
 describe('Website Header', () => {
   beforeEach(() => {
@@ -73,29 +71,18 @@ describe('Website Header', () => {
           expect(header.classList.length).toBe(2);
         });
 
-        describe('When we then open a submenu', () => {
-          beforeAll(() => {
-            header.classList.add(HEADER_HAS_OPEN_SUBMENU_CLASS);
+        describe('When we then scroll down the page by three pixels on large and extra large', () => {
+          beforeEach(() => {
+            simulateScrollingToY(1000);
           });
-          afterAll(() => {
-            header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
+
+          it('Any sub-menus close', () => {
+            expect(header.classList).not.toContain('website-header--open');
+            expect(mockSpy).toHaveBeenCalled();
           });
-          describe('And we scroll down the page by three pixels', () => {
-            beforeEach(() => {
-              simulateScrollingToY(1000);
-            });
 
-            it('The submenu closes', () => {
-              expect(header.classList).not.toContain(
-                HEADER_HAS_OPEN_SUBMENU_CLASS
-              );
-            });
-
-            it('The header is hidden', () => {
-              expect(header.classList).not.toContain(
-                'website-header--revealed'
-              );
-            });
+          it('The header is hidden', () => {
+            expect(header.classList).not.toContain('website-header--revealed');
           });
         });
       });
