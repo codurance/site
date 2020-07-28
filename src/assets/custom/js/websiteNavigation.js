@@ -93,7 +93,7 @@ var websiteNavigation = function () {
   }
 
   function closeMenu() {
-    header.classList.remove(OPEN_HEADER_CLASS, HEADER_REVEALED_CLASS);
+    header.classList.remove(OPEN_HEADER_CLASS);
     menuToggle.setAttribute('aria-expanded', 'false');
     menu.classList.remove(OPEN_MENU_CLASS);
   }
