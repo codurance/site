@@ -22,18 +22,20 @@ intro:
 
 <section class="training-overview-content">
   <div class="training-overview-content__cards-wrapper">
-    {% assign teaser_card_data = site.data.service_lines.training %}
-    {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
-    {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
-    {% include service_line_teaser_card.liquid
-      background_image=teaser_card_data.image-src
-      avatar-src=teaser_card_data.avatar-src
-      name=teaser_card_data.name
-      course-length=teaser_card_data.course-length
-      title=title
-      description=description
-      title-background-image=teaser_card_data.title-background-image-path
-      %}
+    {% if site.data.toggles.crafting-code-and-crafted-design-hero=="on" %}
+      {% assign teaser_card_data = site.data.service_lines.training %}
+      {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
+      {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
+      {% include service_line_teaser_card.liquid
+        background_image=teaser_card_data.image-src
+        avatar-src=teaser_card_data.avatar-src
+        name=teaser_card_data.name
+        course-length=teaser_card_data.course-length
+        title=title
+        description=description
+        title-background-image=teaser_card_data.title-background-image-path
+        %}
+    {% endif %}
 
       {% include training_card_group.liquid %}
   </div>
