@@ -1,13 +1,6 @@
 .website-navigation {
-  body:not(.toggle--slt-397-website-header-updates) & {
-    background-color: white;
-    padding: 25px 20px;
-  }
-
-  body.toggle--slt-397-website-header-updates & {
-    @include lateral-spacing;
-    @include max-width--out-there;
-  }
+  @include lateral-spacing;
+  @include max-width--out-there;
 
   @include small-medium-and-large {
     padding-top: $website-navigation-padding-top;
