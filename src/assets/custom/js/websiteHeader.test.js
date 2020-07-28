@@ -98,20 +98,6 @@ describe('Website Header', () => {
             });
           });
         });
-
-        describe('when a submenu is not open', () => {
-          describe('And we scroll down the page by three pixels', () => {
-            beforeEach(() => {
-              simulateScrollingToY(1000 + 100);
-            });
-
-            it('The header is hidden', () => {
-              expect(header.classList).not.toContain(
-                'website-header--revealed'
-              );
-            });
-          });
-        });
       });
 
       describe('When we then scroll close to the top of the page', () => {
