@@ -74,30 +74,6 @@ $(window).resize(function () {
     equalizeHeights();
 });
 
-
-// (function navbarActive(){
-// 	$(function() {
-// 		const url = window.location.href;
-// 		$(".nav a").each(function() {
-// 			if (url.includes(this.href)) {
-// 				$(this).closest("li").addClass("active");
-// 			}
-// 		});
-// 	});
-// })();
-
-// (function navbarProjectsActive(){//TODO delete once we add projects to the navbar
-// 	$(function() {
-// 		const url = window.location.href;
-// 		$(".nav a").each(function() {
-// 			if (url.includes("/projects") && this.href.includes("/client")) {
-// 				$(this).closest("li").addClass("active");
-// 			}
-// 		});
-// 	});
-// })();
-
-
 var linkifyAnchors = function (level, containingElement) {
 
     if (!containingElement) {
