@@ -66,3 +66,19 @@
     position: relative;
   }
 }
+
+body:not(.toggle--crafting-code-and-crafted-design-hero) {
+  .training-overview-content {
+    &::before {
+      z-index: 1;
+    }
+  }
+
+  .training-overview-content__cards-wrapper {
+
+    @include extra-large {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
