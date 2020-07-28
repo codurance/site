@@ -1,23 +1,140 @@
-.services-page-intro__image {
+$header-background-nav-height--large-and-extra-large: $vertical-overlap * 4;
+$header-background-nav-image-height--large-and-extra-large: $vertical-overlap * 5;
+$header-background-nav-height--medium: $vertical-overlap * 3;
+$header-background-nav-image-padding--large-and-extra-large: 10px + $vertical-overlap;
+$text-container-inner-margin-top: -$vertical-overlap * 2;
+
+.services-page-intro {
   background-color: #474b4a;
   background-position: center center;
   background-size: cover;
 
   @include small-and-medium {
-    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");
-    height: 0;
-    padding-top: 200 / 360 * 100%;
+    background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-small-medium.jpg");  
   }
+
   @include large-and-extra-large {
     background-image: url("#{$site-base-url}/assets/custom/img/services/serviceline-page-intro-large-extra-large.jpg");
   }
-  @include large {
-    height: 0;
-    padding-top: 650 / 1820 * 100%;
-  }
+
   @include extra-large {
-    @include max-width--framed;
-    height: 465px;
+    height: $header-background-nav-image-height--large-and-extra-large;
+    margin-bottom: $vertical-overlap;
+  }
+}
+
+.services-page-intro__navigation {
+  @include max-width--out-there;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  @include small {
+    flex-wrap: wrap;
+    padding: 5% 0;
+  }
+
+  @include medium {
+    height: $header-background-nav-height--medium;
+  }
+
+  @include large-and-extra-large {
+    height: $header-background-nav-height--large-and-extra-large;
+    padding-left: $header-background-nav-image-padding--large-and-extra-large;
+    padding-right: $header-background-nav-image-padding--large-and-extra-large;
+  }
+}
+
+.services-page-intro__icon-container {
+  @include small {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 5%;
+  }
+}
+
+$icon-image-height--large-extra-large: 150px;
+$icon-image-height--small-medium: 115px;
+$icon-image-width--large-extra-large: 130px;
+$icon-image-width--small-medium: 100px;
+
+.services-page-intro__navigation-link {
+  color: white;
+
+  & .service-line-icon {
+    height: 55%;
+    fill: white;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: $grey--light;
+  }
+
+  @include small-and-medium {
+    width: $icon-image-width--small-medium;
+  }
+
+  @include large-and-extra-large {
+    width: $icon-image-width--large-extra-large;
+  }
+}
+
+.services-page-intro__navigation-icon--software-modernisation {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation-hexagon.png");
+}
+
+.services-page-intro__navigation-icon--software-delivery {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/software-delivery-hexagon.png");
+}
+
+.services-page-intro__navigation-icon--strategic-advice {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/strategic-advice-hexagon.png");
+}
+
+.services-page-intro__navigation-icon--specialist-expertise {
+  background-image: url("#{$site-base-url}/assets/custom/img/services/specialist-expertise-hexagon.png");
+}
+
+.services-page-intro__navigation-icon {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  @include small {
+    width: $icon-image-width--small-medium;
+  }
+
+  @include small-and-medium {
+    height: $icon-image-height--small-medium
+  }
+
+  @include large-and-extra-large {
+    height: $icon-image-height--large-extra-large;
+  }
+}
+
+.services-page-intro__navigation-text {
+  text-align: center;
+  
+  @include small-and-medium {
+    @include base-bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: $icon-image-width--small-medium;
+  }
+
+  @include large-and-extra-large {
+    @include mercer-bold;
+    line-height: 30px;
+    padding-top: 30px;
+    width: $icon-image-width--large-extra-large;
   }
 }
 
@@ -32,11 +149,15 @@
     padding: 50px $lateral-space--small;
   }
   @include medium {
-    margin: -175px $lateral-space--medium 0;
+    margin: 0 $lateral-space--medium;
     padding: 70px 65px;
   }
-  @include large-and-extra-large {
-    margin-top: -200px;
+  @include large {
+    padding: 95px 130px 110px;
+  }
+
+  @include extra-large {
+    margin-top: $text-container-inner-margin-top;
     padding: 95px 130px 110px;
   }
 }
