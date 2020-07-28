@@ -52,7 +52,7 @@ describe('Website Header', () => {
 
       describe('When we then scroll up the page by just a couple of pixel', () => {
         beforeEach(() => {
-          simulateScrollingToY(1000 - 2);
+          simulateScrollingBy(-2);
         });
 
         it("we don't immediately reveal the header", () => {
@@ -62,7 +62,7 @@ describe('Website Header', () => {
 
       describe('When we then scroll up the page by at least three pixels', () => {
         beforeEach(() => {
-          simulateScrollingToY(1000 - 3);
+          simulateScrollingBy(-3);
         });
 
         it('we reveal the header positioned at the top of the viewport', () => {
@@ -73,7 +73,7 @@ describe('Website Header', () => {
 
         describe('When we then scroll down the page by three pixels on large and extra large', () => {
           beforeEach(() => {
-            simulateScrollingToY(1000);
+            simulateScrollingBy(3);
           });
 
           it('Any sub-menus close', () => {
@@ -100,7 +100,7 @@ describe('Website Header', () => {
 
         describe('When we then scroll down the page by a couple of pixels', () => {
           beforeEach(() => {
-            simulateScrollingToY(3);
+            simulateScrollingBy(2);
           });
 
           it("we don't immediately hide the header", () => {
@@ -122,6 +122,16 @@ function createMockHeader() {
 
 function simulateScrollingToY(y) {
   window.scrollY = y;
+
+  window.document.dispatchEvent(
+    new Event('scroll', { bubbles: true, cancelable: true })
+  );
+
+  triggerMockRequestAnimationFrame();
+}
+
+function simulateScrollingBy(diff) {
+  window.scrollY = window.scrollY + diff;
 
   window.document.dispatchEvent(
     new Event('scroll', { bubbles: true, cancelable: true })
