@@ -4,8 +4,8 @@ var websiteHeader = function () {
 
   var closeSubMenu;
 
-  var header = window.document.querySelector(".website-header");
-  var HEADER_REVEALED_CLASS = "website-header--revealed";
+  var header = window.document.querySelector('.website-header');
+  var HEADER_REVEALED_CLASS = 'website-header--revealed';
   var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
@@ -13,7 +13,7 @@ var websiteHeader = function () {
   var latestWindowPosition;
   var ticking;
 
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener('scroll', handleScroll);
 
   function handleScroll() {
     latestWindowPosition = getScrollPosition();
@@ -35,16 +35,24 @@ var websiteHeader = function () {
     var downwardMovement =
       previousWindowPosition < latestWindowPosition - scrollTolerance;
 
-    var subMenuOpen = header.classList.contains("website-header--has-open-submenu");
+    var subMenuOpen = header.classList.contains(
+      'website-header--has-open-submenu'
+    );
 
-    if (startingPositionIsInView(latestWindowPosition) || atTheTop(latestWindowPosition) || upwardMovement) {
+    if (
+      startingPositionIsInView(latestWindowPosition) ||
+      atTheTop(latestWindowPosition) ||
+      upwardMovement
+    ) {
       revealHeader();
       return;
     }
 
     if (downwardMovement && !websiteHeaderOpen()) {
       if (subMenuOpen) {
-        closeSubMenu = window.__CODURANCE.websiteNavigation.closeOpenSubMenu || function() {};
+        closeSubMenu =
+          window.__CODURANCE.websiteNavigation.closeOpenSubMenu ||
+          function () {};
         closeSubMenu();
       }
 
@@ -70,7 +78,7 @@ var websiteHeader = function () {
   }
 
   function websiteHeaderOpen() {
-    return header.classList.contains("website-header--open");
+    return header.classList.contains('website-header--open');
   }
 
   var getScrollPosition = function () {
@@ -78,4 +86,4 @@ var websiteHeader = function () {
   };
 };
 
-window.addEventListener("DOMContentLoaded", websiteHeader);
+window.addEventListener('DOMContentLoaded', websiteHeader);
