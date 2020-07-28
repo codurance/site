@@ -10,13 +10,13 @@
   }
 
   @include small-medium-and-large {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: $website-navigation-padding-top;
+    padding-bottom: $website-navigation-padding-bottom;
   }
 
   @include extra-large {
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: $website-navigation-padding-top--extra-large;
+    padding-bottom: $website-navigation-padding-bottom--extra-large;
   }
 
   @include large-and-extra-large {
