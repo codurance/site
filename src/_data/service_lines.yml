@@ -63,6 +63,7 @@ training:
   es-description: SPANISH - The full package for developers that wanting to get better at writing clean, testable & maintainable code and better at designing well-crafted solutions.
   es-hubspot-cta-id: becaa5e5-8a5d-4358-8b49-b8d8bb572308
   image-src: /assets/custom/img/training/hero_image_sandro.png
+  cta-path: /services/training
 
 service-line-example:
   icon: <svg class="service-line-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.66 187.42"><circle cx="82" cy="82" r="80"/></svg>
