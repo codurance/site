@@ -20,7 +20,13 @@ Codurance’s Co-Founder Sandro Mancuso will deliver a talk on “Software Moder
 
 This year’s event is even more special as Java celebrates its 25th birthday! Attendees will be able to share in the celebrations whilst boosting their skills and creativity around all things Java and JetBrains tools.
 
-Registration is free so sign up now [here](https://bit.ly/3eRFlJB).
+** UPDATE - VIDEO NOW READY TO VIEW **
+
+The [video](https://youtu.be/tXiBhxLbGUA) from Sandro's talk is now available to view below. Do give it a like or comment and share with the community! 
+
+<div class="fluid-video-wapper">    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tXiBhxLbGUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 To join the conversation on Twitter follow [@codurance](https://twitter.com/codurance) and [@jetbrains](https://twitter.com/jetbrains) using hashtags: [#JBTechDayforJava](https://twitter.com/hashtag/JBTechDayforJava), [#JetBrainsLovesJava](https://twitter.com/hashtag/JetBrainsLovesJava).
 
