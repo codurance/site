@@ -9,7 +9,7 @@ var websiteHeader = function () {
   var HEADER_HEIGHT = header.clientHeight;
   var scrollTolerance = 2;
 
-  var previousWindowPosition;
+  var previousWindowPosition = 0;
   var latestWindowPosition;
   var ticking;
 
