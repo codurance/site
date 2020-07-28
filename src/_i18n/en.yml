@@ -204,8 +204,7 @@ services:
   training:
     title: Training
     description: Build a team you can trust to perform. Help your team build the skills they need to excel in every area of your product delivery. Our experts share years of experience building mission-critical systems in a wide range of technologies.
-    hubspot-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
-
+    hubspot-cta-id: becaa5e5-8a5d-4358-8b49-b8d8bb572308
   clients-teaser-title: You're in good company
 services-training_coaching:
   title: Training & Coaching
@@ -638,7 +637,7 @@ projects:
 compass-teaser:
     anchor-id: compass-by-codurance
     subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
-    button: Try our Compass tool
+    hubspot-cta-id: 0beb4f4f-b4ee-4bbb-8631-c642fc59155a
 
 get-in-touch:
   anchor-id: get-in-touch
@@ -655,7 +654,7 @@ software-modernisation:
   contact-heading: Tell us about your challenges
   contact-subheading: We are excited to learn more about your business. Find out how Codurance’s solutions can help your business.
 
-  hubspot-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964
+  hubspot-cta-form-id: 68d62aef-13ec-43a8-b618-4c4dc936d964
 
   in-page-banner-publications-title: Do you want more?
   in-page-banner-publications-text: Discover all of the Software Modernisation resources!
@@ -780,9 +779,10 @@ training-overview:
   katalyst-banner:
     title: Katalyst Title
     description: Katalyst Description
-    hubspot-form-id: 93abc185-db09-407f-8616-33888b43e4c0
+    hubspot-cta-form-id: 93abc185-db09-407f-8616-33888b43e4c0
   contact-form:
     title: Tell us about your challenges
     description: Find out how Codurance's solutions can help your business
+    hubspot-cta-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
 
 learn-more: Learn more
