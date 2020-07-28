@@ -9,9 +9,15 @@ jest.useFakeTimers();
 const mockRequestAnimationFrame = cb => setTimeout(cb, 0);
 const triggerMockRequestAnimationFrame = () => jest.runAllTimers();
 
-// global.getScrollPosition = function () {
-//   return window.pageYOffset || window.scrollY;
-// };
+const MockCloseSubMenu = () => {
+  header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
+};
+
+window.__CODURANCE = {
+  websiteNavigation: {
+    closeOpenSubMenu: MockCloseSubMenu,
+  },
+};
 
 describe('Website Header', () => {
   beforeEach(() => {
@@ -42,15 +48,17 @@ describe('Website Header', () => {
         simulateScrollingToY(1000);
       });
 
+      it('The header should be hidden', () => {
+        expect(header.classList).not.toContain('website-header--revealed');
+      });
+
       describe('When we then scroll up the page by just a couple of pixel', () => {
         beforeEach(() => {
           simulateScrollingToY(1000 - 2);
         });
 
-        it("we don't immediately hide the header", () => {
-          expect(header.classList).toContain('website-header');
-          expect(header.classList).toContain('website-header--revealed');
-          expect(header.classList.length).toBe(2);
+        it("we don't immediately reveal the header", () => {
+          expect(header.classList).not.toContain('website-header--revealed');
         });
       });
 
@@ -73,11 +81,7 @@ describe('Website Header', () => {
             header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
           });
           describe('And we scroll down the page by three pixels', () => {
-            beforeAll(() => {
-              const MockCloseSubMenu = () => {
-                header.classList.remove(HEADER_HAS_OPEN_SUBMENU_CLASS);
-              };
-              global.__CODURANCE.websiteNavigation.closeOpenSubMenu = MockCloseSubMenu;
+            beforeEach(() => {
               simulateScrollingToY(1000);
             });
 
@@ -87,18 +91,18 @@ describe('Website Header', () => {
               );
             });
 
-            // it('The header is hidden', () => {
-            //   expect(header.classList).not.toContain(
-            //     'website-header--revealed'
-            //   );
-            // });
+            it('The header is hidden', () => {
+              expect(header.classList).not.toContain(
+                'website-header--revealed'
+              );
+            });
           });
         });
 
         describe('when a submenu is not open', () => {
           describe('And we scroll down the page by three pixels', () => {
             beforeEach(() => {
-              simulateScrollingToY(1000);
+              simulateScrollingToY(1000 + 100);
             });
 
             it('The header is hidden', () => {
