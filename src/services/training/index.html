@@ -4,21 +4,25 @@ title: Training | Upskilling for more effective teams
 title-es: Training | Upskilling para equipos más efectivos
 description: Leverage focused training to upskill your teams. We can create a bespoke training plan adapted to your business needs.
 description-es: Mejora las capacidades de tu equipo para mejorar su efectividad. Podemos crear un plan de capacitación a medida adaptado a las necesidades de tu negocio.
+image:
+  src: /assets/custom/img/training-overview/training-social-share-en.jpg
 metarobots: index,follow
 
 intro:
-  background-image-small: /assets/custom/img/training-overview/training-hero-placeholder-small.png
-  background-image-large: /assets/custom/img/training-overview/training-hero-placeholder-large.png
+  background-image-small: /assets/custom/img/training-overview/training-overview-small.jpg
+  background-image-large: /assets/custom/img/training-overview/training-overview-large.png
 ---
 
-{% if site.data.toggles.slt-181-training-overview-page == "on" %}
+{%- assign translations = site.translations[site.lang].training-overview -%}
+{% assign cta_text = site.translations[site.lang].service-line-contact-cta %}
+{% assign cta_href = site.translations[site.lang].get-in-touch.anchor-id %}
+<div class="training-overview-hero-wrapper">
+  {% include service_line_hero.liquid translations=translations cta_text=cta_text cta_href=cta_href hero_image_container_class='service-line-hero__image-container--training-overview' %}
+</div>
 
-  {%- assign translations = site.translations[site.lang].training-overview -%}
-  {% assign cta_text = site.translations[site.lang].services.learn-more %}
-  {% include service_line_hero.liquid translations=translations cta_text=cta_text %}
-
-  <section class="training-overview-content">
-    <div class="training-overview-content__cards-wrapper">
+<section class="training-overview-content">
+  <div class="training-overview-content__cards-wrapper">
+    {% if site.data.toggles.crafting-code-and-crafted-design-hero=="on" %}
       {% assign teaser_card_data = site.data.service_lines.training %}
       {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
       {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
@@ -29,74 +33,13 @@ intro:
         course-length=teaser_card_data.course-length
         title=title
         description=description
-        cta_path=teaser_card_data.cta-path
+        title-background-image=teaser_card_data.title-background-image-path
         %}
+    {% endif %}
 
-        {% include training_card_group.liquid %}
-    </div>
-  </section>
-  <section class="training-overview-katalyst">
-    {% capture description %}{{ translations.katalyst-banner.description }}{% endcapture %}
-    {% capture hubspot-id %}{{  translations.katalyst-banner.hubspot-form-id }}{% endcapture %}
-    {% capture hubspot-cta %}{% include hubspot_cta.liquid class="hubspot-in-page-banner" hubspot-id=hubspot-id %}{% endcapture %}
-    {% capture title %}{{  translations.katalyst-banner.title }}{% endcapture %}
-    {% include in_page_banner.html
-      background_image="/assets/custom/img/training-overview/training-overview-katalyst-banner.png"
-      background_position="30% center"
-      class="training-overview-katalyst__banner"
-      description=description
-      hubspot-cta=hubspot-cta
-      title=title
-    %}
-  </section>
-  <section class="training-overview-form">
-    {% include training_contact_form.liquid %}
-  </section>
-
-
-{% else %}
-    <div class="container content">
-       <div class="row">
-              <div class="col-md-6">
-                  <h2 class="title-v2">{% t services-training_coaching.title %}</h2>
-                  {% t services-training_coaching.subtitle %}
-                  <br/>
-                  <a href="{{ '/contact-us' | prepend: site.baseurl }}" class="btn-u">{% t company-contact.title %} ...</a>
-              </div>
-              <div class="col-md-6">
-                  <img src="{{ '/assets/custom/img/services/training/node-js-session.jpg' | prepend: site.baseurl }}" class="img-fluid" alt="">
-              </div>
-        </div>
-
-        <h2 class="title-v2 g-pt-60">{% t services-training_coaching.our_courses %}</h2>
-
-         {% if site.lang == "es" %}
-           {% assign trainings_file = site.data.trainings_es %}
-         {% else %}
-           {% assign trainings_file = site.data.trainings_en %}
-         {% endif %}
-           {% for training in trainings_file %}
-             {% assign loopindex = forloop.index | modulo: 3 %}
-             {% if loopindex == 1 %}
-              <div class="row news-v1">
-             {% endif %}
-
-              <div class="col-md-4">
-                  <div class="news-v1-in margin-bottom-20">
-                    <h3><a class="hover-effect" href="{{site.baseurl}}{{training.page}}">{{training.name}}</a></h3>
-                    <p>{{training.description}}</p>
-                    <ul class="list-inline news-v1-info">
-                      <li><span>By</span> <strong>{{training.author}}</strong></li>
-                    </ul>
-                  </div>
-              </div>
-
-             {% if loopindex == 0 %}
-              </div>
-             {% endif %}
-
-          {% endfor %}
-          </div>
-        </div>
-    </div>
-{% endif %}
+      {% include training_card_group.liquid %}
+  </div>
+</section>
+<section class="training-overview-form">
+  {% include training_contact_form.liquid %}
+</section>

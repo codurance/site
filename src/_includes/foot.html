@@ -33,16 +33,8 @@
 
   <script src="{{ '/assets/custom/js/externalLinks.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/custom/js/tabber.js' | prepend: site.baseurl }}"></script>
-  
-  {% if site.data.toggles.slt-397-website-header-updates != 'on' %}
-    <script src="{{ '/assets/unify-2.4/js/components/hs.dropdown.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/assets/unify-2.4/vendor/hs-megamenu/src/hs.megamenu.js' | prepend: site.baseurl }}"></script>
-  {% endif %}
-  
-  {% if site.data.toggles.slt-397-website-header-updates == 'on' %}
-    <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>    
-    <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>    
-  {% endif %}
+  <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>
 
  <!-- JS Plugins Init. -->
   <script>
@@ -62,19 +54,6 @@
         $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
 
         $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        {% if site.data.toggles.slt-397-website-header-updates != 'on' %}
-          $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'));
-
-          $('.js-mega-menu').HSMegaMenu({
-            event: 'hover',
-            pageContainer: $('.container'),
-            breakpoint: 767,
-            hideTimeOut: 0
-          });
-
-          $.HSCore.helpers.HSHamburgers.init('.hamburger');
-        {% endif %}
 
         $.HSCore.components.HSModalWindow.init('[data-modal-target]');
 

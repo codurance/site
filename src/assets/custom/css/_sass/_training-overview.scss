@@ -1,6 +1,28 @@
-$katalyst-banner-width: 384px;
-$katalyst-banner-height--small-medium: 313px;
-$katalyst-banner-height--large: 442px;
+.training-overview-hero-wrapper {
+  @include extra-large {
+    &::before {
+      background-image: url("#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-training-courses.svg");
+      background-repeat: no-repeat;
+      content: "";
+      height: 400px;
+      position: absolute;
+      right: 15%;
+      top: -60px;
+      transform: translateX(40%);
+      width: 400px;
+    }
+  }
+}
+
+.service-line-hero__image-container--training-overview {
+  @include large-and-extra-large {
+    background-color: transparent;
+    background-position: center 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -100px;
+  }
+}
 
 .training-overview-content {
   background-color: $navy--ultralight;
@@ -8,12 +30,27 @@ $katalyst-banner-height--large: 442px;
   @include medium {
     padding-top: $vertical-overlap;
   }
-  @include large-and-extra-large{
-    margin-top: -$vertical-overlap ;
-    padding-top: calc(2 * #{$vertical-overlap});
-  }
   @include medium-large-and-extra-large {
-    padding-bottom: 70px;
+    padding-bottom: calc(#{$vertical-overlap} * 2);
+  }
+  @include large-and-extra-large {
+    padding-top: calc(#{$vertical-overlap} * 1.5);
+    position: relative;
+  }
+  @include extra-large {
+    @include max-width--framed;
+    &::before {
+      background-image: url("#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-training-courses.svg");
+      background-repeat: no-repeat;
+      content: "";
+      height: 500px;
+      left: 20%;
+      opacity: 0.4;
+      position: absolute;
+      top: -40px;
+      transform: translateX(-50%);
+      width: 400px;
+    }
   }
 }
 
@@ -24,68 +61,24 @@ $katalyst-banner-height--large: 442px;
   }
 }
 
-.training-overview-katalyst {
-  @include medium-large-and-extra-large {
-    background-color: $navy--ultralight;
-    padding-bottom: $vertical-overlap;
-    padding-top: $vertical-overlap;
-    position: relative;
-
-    &::before {
-      background-color: $slate;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 200px;
-    }
-  }
-}
-
-.training-overview-katalyst__banner {
-  @include max-width--out-there;
-
-  @include small {
-    .in_page_banner__image {
-      display: none;
-    }
-    .in_page_banner__main {
-      height: $katalyst-banner-height--small-medium;
-      width: 100%;
-    }
-  }
-  @include medium-large-and-extra-large {
-    position: relative;
-    top: -100px;
-  }
-  @include medium {
-    @include lateral-spacing--medium;
-    .in_page_banner__image {
-      display: none;
-    }
-    .in_page_banner__main {
-      height: $katalyst-banner-height--small-medium;
-      width: 100%;
-    }
-  }
-  @include large-and-extra-large {
-    @include lateral-spacing--large-and-extra-large;
-
-    .in_page_banner__image {
-      height: $katalyst-banner-height--large;
-      width: $katalyst-banner-width;
-    }
-
-    .in_page_banner__main {
-        height: $katalyst-banner-height--large;
-        width: calc(100% - #{$katalyst-banner-width});
-    }
-  }
-}
-
 .get-in-touch {
   .training-overview-form & {
     position: relative;
+  }
+}
+
+body:not(.toggle--crafting-code-and-crafted-design-hero) {
+  .training-overview-content {
+    &::before {
+      z-index: 1;
+    }
+  }
+
+  .training-overview-content__cards-wrapper {
+
+    @include extra-large {
+      position: relative;
+      z-index: 2;
+    }
   }
 }

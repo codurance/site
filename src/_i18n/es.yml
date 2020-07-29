@@ -200,8 +200,8 @@ services:
     lead-in: Impulsa la innovación en tu organización a través de la entrega ágil de software, la experiencia técnica aplicada a la práctica, y nuestro asesoramiento experto. Nuestro equipo de profesionales te proporcionará las prácticas, tecnologías y habilidades necesarias en cada paso del proyecto para garantizar entregas de alta calidad. Te guiaremos desde el inicio hasta la entrega, haciendo posible que tu visión del producto se haga realidad.
   training:
     title: Training
-    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
-    hubspot-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.  
+    hubspot-cta-id: 5004832a-217b-41d9-bbd7-12c0aa5555fe  
   clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros
@@ -641,7 +641,7 @@ projects:
 compass-teaser:
   anchor-id: compass-by-codurance
   subheading: Evalúa la madurez del desarrollo de software de tu organización
-  button: Empezar
+  hubspot-cta-id: a5732a1e-0f48-407b-97d6-894a04a3f390
 
 get-in-touch:
   anchor-id: contacto
@@ -658,7 +658,7 @@ software-modernisation:
   contact-heading: Explícanos tus retos
   contact-subheading: Nos gustaría saber más sobre tu negocio. Explícanos cómo podemos ayudarte.
 
-  hubspot-form-id: 33a91f21-af06-460a-aa1d-9718b278a83e
+  hubspot-cta-form-id: 33a91f21-af06-460a-aa1d-9718b278a83e
 
   in-page-banner-publications-title: ¿Te ha parecido interesante?
   in-page-banner-publications-text: Descubre otros contenidos relacionados con Software Modernisation
@@ -780,12 +780,12 @@ service-line-testimonials:
 
 training-overview:
   hero-title: Training
-  hero-sub-title: Upskilling para equipos más efectivos
-  hero-description: Generamos un circuito de formación específico según las necesidades que se detectan.
-  katalyst-banner:
-    title: Katalyst Title Spanish
-    description: Katalyst Description Spanish
-    hubspot-form-id: 9f022f37-2466-4f19-845f-be9b428af585
+  hero-sub-title: Impulsa a tus equipos tecnológicos con programas expecíficos de capacitación a cargo de nuestro expertos.
+  hero-description: Mejora las habilidades de tu equipo con nuestros cursos. Creamos planes de capacitación a medida y adaptados a las necesidades de tu negocio.
   contact-form:
-    title: Tell us about your challenges
-    description: Find out how Codurance's solutions can help your business
+    title: Hablemos de cuáles son tus necesidades en training.
+    description: Nos encantaría saber más sobre tu negocio. Descubre cómo nuestros programas de training pueden impulsar tus equipos tecnológicos.
+    hubspot-cta-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
+    
+learn-more: Más info
+

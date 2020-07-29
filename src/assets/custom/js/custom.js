@@ -74,43 +74,20 @@ $(window).resize(function () {
     equalizeHeights();
 });
 
-
-(function navbarActive(){
-	$(function() {
-		const url = window.location.href;
-		$(".nav a").each(function() {
-			if (url.includes(this.href)) {
-				$(this).closest("li").addClass("active");
-			}
-		});
-	});
-})();
-
-(function navbarProjectsActive(){//TODO delete once we add projects to the navbar
-	$(function() {
-		const url = window.location.href;
-		$(".nav a").each(function() {
-			if (url.includes("/projects") && this.href.includes("/client")) {
-				$(this).closest("li").addClass("active");
-			}
-		});
-	});
-})();
-  
 var linkifyAnchors = function (level, containingElement) {
-    
+
     if (!containingElement) {
         return
     }
-    
+
     var headers = containingElement.getElementsByTagName("h" + level);
     for (var h = 0; h < headers.length; h++) {
       var header = headers[h];
-  
+
       if (!header.id) {
         var originalContent = header.innerHTML;
         var link = originalContent.split(' ').join('');
-        
+
         var a = document.createElement('a');
         a.title = originalContent;
         a.name = link.toLowerCase();
@@ -125,7 +102,7 @@ var linkifyAnchors = function (level, containingElement) {
 $(document).ready(function() {
     equalizeHeights();
 
-    //This function is necessary so Safari can redraw the menu 
+    //This function is necessary so Safari can redraw the menu
     $(".dropdown").click(function(){
         return true;
     });

@@ -1,9 +1,3 @@
-.hubspot-in-page-banner .cta_button {
-  @include cta;
-  @include primary;
-  @include primary-navy;
-}
-
 .hubspot-header-banner-cta .cta_button {
   @include bold;
   border-bottom: 1px solid $coral;
@@ -15,4 +9,12 @@
   &:hover {
     text-decoration: none;
   }
+}
+
+.hubspot-cta--primary-navy .cta_button {
+  @include cta--primary-navy;
+}
+
+.hubspot-cta--primary-coral .cta_button {
+  @include cta--primary-coral;
 }

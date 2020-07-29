@@ -1,22 +1,15 @@
 .website-navigation {
-  body:not(.toggle--slt-397-website-header-updates) & {
-    background-color: white;
-    padding: 25px 20px;
-  }
-
-  body.toggle--slt-397-website-header-updates & {
-    @include lateral-spacing;
-    @include max-width--out-there;
-  }
+  @include lateral-spacing;
+  @include max-width--out-there;
 
   @include small-medium-and-large {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: $website-navigation-padding-top;
+    padding-bottom: $website-navigation-padding-bottom;
   }
 
   @include extra-large {
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: $website-navigation-padding-top--extra-large;
+    padding-bottom: $website-navigation-padding-bottom--extra-large;
   }
 
   @include large-and-extra-large {
@@ -75,6 +68,7 @@
     }
     &.website-navigation__menu--showing-sub-menu {
       left: -100vw;
+      overflow-y: hidden;
     }
   }
   @include large {

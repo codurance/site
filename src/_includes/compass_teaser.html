@@ -4,12 +4,7 @@
     {% include page_location_anchor.html anchor_id=anchor_id %}
 
     <p class="compass-teaser__description">{% t compass-teaser.subheading %}</p>
-    {% if site.lang == 'es' %}
-        {% assign href = "http://compass.codurance.es" %}
-      {% else %}
-        {% assign href = "http://compass.codurance.com" %}
-    {% endif %}
-    {% assign text = site.translations[site.lang].compass-teaser.button %}
-    {% include cta_primary_link.html color='navy' href=href text=text target="_blank" %}
+    {% assign hubspot_cta_id = site.translations[site.lang].compass-teaser.hubspot-cta-id %}
+    {% include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot_cta_id %}
   </div>
 </section>
