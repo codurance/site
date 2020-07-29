@@ -19,7 +19,6 @@ $lateral-space--large: 50px;
 
 @mixin max-width--framed {
   @include max-width;
-  width: calc(100% - (#{$lateral-space--large} * 2));
   max-width: 1800px;
 }
 

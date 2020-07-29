@@ -6,23 +6,20 @@
     {% endif %}
 {% endcapture %}
 {% if include.course-length %} {% capture course-length %}<span class="training-teaser__course-length">{{ include.course-length }}</span> {% endcapture %}{% endif %}
+{% if include.title-background-image %}
+    {% capture title_background_image %}style="background-image: url({{ site.baseurl }}{{ include.title-background-image }})"{% endcapture %}
+{% endif %}
 
 <article class="service-line-teaser-card">
     <div class="service-line-teaser-card__image" style="background-image: url({{ site.baseurl }}{{ include.background_image }})"></div>
     <div class="service-line-teaser-card__content" style="background-image: url({{ site.baseurl }}{{ include.background_image }})">
-        <div class="service-line-teaser-card__primary-content">
+        <div class="service-line-teaser-card__primary-content" {{ title_background_image }}>
             <h2 class="service-line-teaser-card__tag">{{meta-image}} {{ include.name }} {{ course-length }} </h2>
             <h3 class="service-line-teaser-card__title">{{ include.title }}</h3>
         </div>
         <div class="service-line-teaser-card__secondary-content">
             <p class="service-line-teaser-card__description">{{ include.description }}</p>
-            {% if include.hubspot_cta_id %}
-                {% include hubspot_cta.liquid class="hubspot-cta--primary-coral" hubspot-cta-id=include.hubspot_cta_id %}
-            {% elsif include.cta_path %}
-                {% capture cta-href %}{{ include.cta_path | prepend: site.baseurl }}{% endcapture %}
-                {% capture cta-text %}{% t services.learn-more %}{% endcapture %}
-                {% include cta_primary_link.html color='coral' href=cta-href text=cta-text %}
-            {% endif %}
+            {% include hubspot_cta.liquid class="hubspot-cta--primary-coral" hubspot-cta-id=include.hubspot_cta_id %}
         </div>
     </div>
 </article>

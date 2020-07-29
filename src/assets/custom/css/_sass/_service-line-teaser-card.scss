@@ -84,11 +84,20 @@
     background-color: $slate;
     padding-bottom: 30px;
     padding-top: 60px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 80%;
   }
   .service-line-teaser-card__secondary-content {
     background-color: $slate-light;
     padding-bottom: 60px;
     padding-top: 30px;
+  }
+}
+
+@include small-and-medium {
+  .service-line-teaser-card__primary-content {
+    background-image: none !important;
   }
 }
 

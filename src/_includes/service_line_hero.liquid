@@ -18,7 +18,7 @@
       {% include cta_primary_link.html color='coral' href=href text=text %}
     </div>
  </div>
-  <div class="service-line-hero__image-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-large }});">
+  <div class="service-line-hero__image-container {{ include.hero_image_container_class }}" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image-large }});">
   {%- if page.intro.foreground-image-large -%}
     <img class="service-line-hero__image" src="{{ site.baseurl }}{{ page.intro.foreground-image-large }}">
   {%- endif -%}

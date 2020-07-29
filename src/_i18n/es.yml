@@ -780,13 +780,12 @@ service-line-testimonials:
 
 training-overview:
   hero-title: Training
-  hero-sub-title: Upskilling para equipos más efectivos
-  hero-description: Generamos un circuito de formación específico según las necesidades que se detectan.
-  katalyst-banner:
-    title: Katalyst Title Spanish
-    description: Katalyst Description Spanish
-    hubspot-cta-form-id: 9f022f37-2466-4f19-845f-be9b428af585
+  hero-sub-title: Impulsa a tus equipos tecnológicos con programas expecíficos de capacitación a cargo de nuestro expertos.
+  hero-description: Mejora las habilidades de tu equipo con nuestros cursos. Creamos planes de capacitación a medida y adaptados a las necesidades de tu negocio.
   contact-form:
-    title: Tell us about your challenges
-    description: Find out how Codurance's solutions can help your business
+    title: Hablemos de cuáles son tus necesidades en training.
+    description: Nos encantaría saber más sobre tu negocio. Descubre cómo nuestros programas de training pueden impulsar tus equipos tecnológicos.
     hubspot-cta-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
+    
+learn-more: Más info
+

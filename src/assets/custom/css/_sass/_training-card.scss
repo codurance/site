@@ -9,6 +9,9 @@
   padding-left: $lateral-space--medium;
   padding-right: $lateral-space--medium;
   padding-top: 35px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 80%;
 
   .training-card--featured & {
     padding-top: 20px;
@@ -26,10 +29,6 @@
   @include medium-large-and-extra-large{
     align-items: flex-start;
   }
-
-  .training-card--featured & {
-    background-color: $slate-light;
-  }
 }
 
 .training-card__avatar {
@@ -38,7 +37,7 @@
 }
 
 .training-card__tag {
-  @include ponti-bold;
+  @include foster-bold;
   align-items: center;
   color: white;
   display: flex;
@@ -64,18 +63,5 @@
 
 .training-card__description {
   margin: 0 0 50px;
-
-  .training-card:not(.training-card--featured) & {
-    @include small {
-      @include base;
-    }
-    @include medium-large-and-extra-large {
-      @include mercer-reg;
-    }
-  }
-
-  .training-card--featured & {
-    @include mercer-reg;
-    color: white
-  }
+  @include base;
 }
