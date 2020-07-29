@@ -1,21 +1,12 @@
-body:not(.toggle--slt-397-website-header-updates)
-  .website-navigation-home-link__logo {
-  fill: #010101;
-  height: 20px;
+.website-navigation-home-link__logo {
+  height: 100%;
+  fill: $grey--dark;
+  transition: fill 0.5s;
   width: auto;
 }
 
-body.toggle--slt-397-website-header-updates {
-  .website-navigation-home-link__logo {
-    height: 100%;
-    fill: $grey--dark;
-    transition: fill 0.5s;
-    width: auto;
-  }
-
-  .website-header.website-header--open .website-navigation-home-link__logo {
-    @include small-and-medium {
-      fill: white;
-    }
+.website-header.website-header--open .website-navigation-home-link__logo {
+  @include small-and-medium {
+    fill: white;
   }
 }
