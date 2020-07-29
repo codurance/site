@@ -24,24 +24,26 @@
   width: $vertical-overlap;
 }
 
+
+$background-block-height: ($vertical-overlap *  4);
 .training-hero__lower-background-block {
   background-color: $slate;
   position: relative;
 
   @include small {
-    height: 402px;
+    height: 2px + $background-block-height;
   }
 
   @include medium {
-    height : 406px;
+    height: 6px + $background-block-height;
   }
 
   @include large {
-    height: 416px;
+    height: 16px + $background-block-height;
   }
 
   @include extra-large {
-    height: 428px;
+    height: 28px + $background-block-height;
   }
 }
 
