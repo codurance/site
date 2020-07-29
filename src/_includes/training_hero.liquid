@@ -1,6 +1,5 @@
 <section class="training-hero">
-  <div class="training-hero__wrapper">
-    <img class="training-hero__background-image" src={{ site.baseurl }}{{ page.intro.background-image }}>
+    <div class="training-hero__background-image" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image }})"> </div>
     <div class="training-hero__lower-background-block"></div>
     <div class="training-hero__content-container">
       <div class="training-hero__content-container__top">
@@ -8,7 +7,7 @@
         <p class="training-hero__duration">Duration: 2 days</p>
       </div>
       <div class="training-hero__content-container__middle">
-        <img style="width: 80px" src={{ site.baseurl }}{{ page.intro.instructor-avatar }}>
+        <span class="trainint-hero__course-instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
         <div class="training-hero__course-instructor-info">
           <span class="training-hero__course-instructor-title">Course Instructor</span>
           <span class="training-hero__course-instructor">Sandro Mancuso</span>
@@ -20,5 +19,4 @@
         designed to teach developers practical techniques they can immediately apply to real-world projects.
       </div>
     </div>
-  </div>
 </section>
