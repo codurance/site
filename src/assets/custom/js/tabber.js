@@ -109,7 +109,7 @@
     var totalOffset = getTotalOffset(panel);
     var SPACING = 10;
     var header = document.querySelector("header");
-    var headerHeight = header ? header.clientHeight : 74;
+    var headerHeight = header ? header.clientHeight : 90;
     var yPosition = totalOffset - SPACING - headerHeight;
     window.scrollTo({ top: yPosition, behaviour: "smooth" });
   }
