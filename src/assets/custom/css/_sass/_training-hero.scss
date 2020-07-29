@@ -96,7 +96,7 @@
   }
 }
 
-.training-hero__content-container__middle {
+.training-hero__course-instructor-container{
   display: flex;
   padding: 50px 0;
 }
@@ -130,5 +130,15 @@
 
   @include extra-large {
     @include freed;
+  }
+
+  @include large-and-extra-large {
+    & .cta--primary-coral {
+      display:none;
+    } 
+  } 
+
+  & .training-hero__intro-description {
+    color: white;
   }
 }
