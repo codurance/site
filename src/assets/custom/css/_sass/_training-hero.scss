@@ -4,7 +4,6 @@
   position: relative;
   width: 100%;
 
-
   @include small {
     height: 216.27px;
   }
@@ -118,6 +117,10 @@
 .training-hero__intro-container {
   @include small {
     @include base;
+
+    & .cta--primary-coral {
+      margin-right: 27px;
+    } 
   }
 
   @include medium-and-large {
