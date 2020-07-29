@@ -2,7 +2,6 @@
   background-color: $navy;
 }
 
-
 .training-hero__background-image {
   background-size: cover;
   opacity: 0.9;
@@ -58,27 +57,16 @@
   transform: translateY(-650px);
 
   @include small {
-    @include max-width--out-there;
-    margin-left: 24px;
     padding-top: 85px;
   }
-
-  @include medium {
+  
+  @include small-and-medium {
     @include max-width--out-there;
     margin-left: 24px;
-    width: 445px;
   }
 
-  @include large{
-    display: flex;
-    flex-direction: column;
-    margin-left: 48px;
-  }
-
-  @include extra-large {
-    display: flex;
-    flex-direction: column;
-    margin-left: 352px;
+  @include large-and-extra-large {
+    @include max-width--out-there;
   }
 }
 
@@ -99,12 +87,12 @@
 .training-hero__duration {
   @include base-bold;
   color: white;
+  text-transform: uppercase;
 
   @include small {
     display: flex;
     justify-content: center;
     text-align: center;
-    text-transform: uppercase;
   }
 }
 
