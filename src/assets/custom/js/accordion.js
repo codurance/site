@@ -1,4 +1,7 @@
 (function() {
+console.log('ACCORDION');
+
+
   var ACTIVE_CLASS = "active";
 
   var SELECTORS = {
@@ -28,8 +31,10 @@
   }
 
   function handlePanelClick(e) {
+
     var panel = e.target;
     var panelIsActive = panel.classList.contains(ACTIVE_CLASS);
+    console.log('panel', panel);
 
     if (panelIsActive) {
       makePanelInactive(panel);
