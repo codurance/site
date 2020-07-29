@@ -9,12 +9,7 @@ layout: compress
 {% include head.html %}
 </head>
 
-
-{%- capture toggles_classnames -%}
-  {% if site.data.toggles.slt-397-website-header-updates == 'on' %}toggle--slt-397-website-header-updates{% endif %}
-{%- endcapture -%}
-
-<body class="{{toggles_classnames}}">
+<body class="include-website-header">
 {% include google_tag_manager_noscript.html %}
 
 <div class="wrapper">
