@@ -11,15 +11,16 @@
     {% if site.lang == "es" %}
       {% assign title = post.title-es %}
       {% assign description = post.description-es %}
+      {% assign hubspot_cta_id = post.hubspot-cta-id-es %}
     {% else %}
       {% assign title = post.title %}
       {% assign description = post.description %}
+      {% assign hubspot_cta_id = post.hubspot-cta-id %}
     {% endif %}
     {% assign content_type = translations.publications.content-type %}
-    {% assign cta = translations.publications.teaser-cta %}
-    {% assign cta-href = post.url | prepend: site.baseurl %}
+    {% capture hubspot_cta %}{% include hubspot_cta.liquid class="hubspot-cta--primary-coral" hubspot-cta-id=hubspot_cta_id %}{% endcapture %}
     {% assign image_src = post.image.src | prepend: site.baseurl %}
-    {% include hero_teaser.html class="curated-publications__hero" content_type=content_type cta=cta cta-href=cta-href description=description image_position="right" image_src=image_src title=title %}
+    {% include hero_teaser.html class="curated-publications__hero" content_type=content_type hubspot_cta=hubspot_cta description=description image_position="right" image_src=image_src title=title %}
   {% endfor %}
 
   {% if posts.size > 1 %}
