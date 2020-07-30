@@ -62,8 +62,13 @@ $background-block-height: ($vertical-overlap *  4);
     margin-left: 24px;
   }
 
+  @include medium {
+    padding-top: 40px;;
+  }
+
   @include large-and-extra-large {
     @include max-width--out-there;
+    padding-top: 30px;
   }
 }
 
