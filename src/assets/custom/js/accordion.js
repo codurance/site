@@ -1,6 +1,4 @@
 (function() {
-console.log('ACCORDION');
-
 
   var ACTIVE_CLASS = "active";
 
