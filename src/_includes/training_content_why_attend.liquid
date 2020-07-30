@@ -1,13 +1,11 @@
-<p>Software Craftsmanship is at the heart of this course. Throughout, you will learn about the Software Craftsmanship attitude to development and how to apply it to your workplace. Writing Clean Code is difficult. Cleaning existing code, even more so.</p>
-<p>You should attend if you want to:</p>
+{% assign data = include.accordion_data.crafting-code-and-crafted-design.why-attend %}
+
+<p>{{ data.intro }}</p>
+<p>{{ data.clean-code-headline-one }}</p>
+<p>{{ data.why-attend }}</p>
 <ul>
-  <li>Write clean code that is easy to understand and maintain.</li>
-  <li>Become more proficient in Test-Driven Development (TDD): using tests to design and build your code base.</li>
-  <li>Focus your tests and production code according to business requirements using Outside-In TDD (a.k.a. the London School of TDD).</li>
+  {% for item in data.why-attend-list %}
+    <li>{{ item }}</li>
+  {% endfor %}
 </ul>
-<p>Clean code necessitates good design. In the process of driving your code through tests, you will learn how to:</p>
-<ul>
-  <li>Understand design principles that lead to clean code</li>
-  <li>Avoid over-engineering and large rewrites by incrementally evolving your design using tests</li>
-</ul>
-<p>Once you have an understanding of the principles at work, we will apply them to Legacy Code to help you gain confidence in improving legacy projects through testing, refactoring and redesigning.</p>
+<p>{{ data.clean-code-headline-two }}</p>
