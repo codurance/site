@@ -17,14 +17,6 @@
   }
 }
 
-.training-hero__course-instructor-avatar {
-  background-position: center;
-  background-size: cover;
-  height: $vertical-overlap + 10px;
-  width: $vertical-overlap;
-}
-
-
 $background-block-height: ($vertical-overlap *  4);
 .training-hero__lower-background-block {
   background-color: $slate;
@@ -101,6 +93,13 @@ $background-block-height: ($vertical-overlap *  4);
 .training-hero__course-instructor-container{
   display: flex;
   padding: 50px 0;
+}
+
+.training-hero__course-instructor-avatar {
+  background-position: center;
+  background-size: cover;
+  height: $vertical-overlap + 10px;
+  width: $vertical-overlap;
 }
 
 .training-hero__course-instructor-info {
