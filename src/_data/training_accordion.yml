@@ -2,11 +2,15 @@ en:
   panels:
     - id: why-attend
       title: Why Attend?
+      content: training_content_why_attend.liquid
     - id: audience
       title: Audience
+      content: training_content_audience.liquid
     - id: course-content
       title: Course Content
+      content: training_content_course_content.liquid
     - id: prerequisites
+      content: training_content_prerequisites.liquid
       title: Prerequisites
 
   crafting-code-and-crafted-design:
