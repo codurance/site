@@ -8,7 +8,7 @@ console.log('ACCORDION');
     ACCORDION: "[data-accordion]",
     PANEL: "[data-accordion_panel]",
     PANEL_ACTIVE: "[data-accordion_panel]." + ACTIVE_CLASS
-  }
+  };
 
   var ACCORDION = window.document.querySelector(SELECTORS.ACCORDION);
 
@@ -30,25 +30,27 @@ console.log('ACCORDION');
     });
   }
 
-  function handlePanelClick(e) {
+  function handlePanelClick() {
+    togglePanel(this);
+  }
 
-    var panel = e.target;
+  function togglePanel(panel) {
     var panelIsActive = panel.classList.contains(ACTIVE_CLASS);
-    console.log('panel', panel);
 
     if (panelIsActive) {
       makePanelInactive(panel);
     } else {
-      makePanelActive(panel);
+      makePanelActive(panel.id);
       scrollToPanel(panel);
     }
   }
 
-  function makePanelActive(panel) {
-    var currentActivePanel = ACCORDION.querySelector(SELECTORS.PANEL_ACTIVE);
+  function makePanelActive(panelId) {
+    var activePanel = ACCORDION.querySelector(SELECTORS.PANEL_ACTIVE);
+    activePanel && activePanel.classList.remove(ACTIVE_CLASS);
 
-    currentActivePanel.classList.remove(ACTIVE_CLASS);
-    panel.classList.add(ACTIVE_CLASS);
+    var newPanel = ACCORDION.querySelector("#" + panelId);
+    newPanel && newPanel.classList.add(ACTIVE_CLASS);
   }
 
   function makePanelInactive(panel) {
