@@ -2,5 +2,5 @@
 layout: default
 ---
 
-{% assign accordion_panel_titles = site.data.training_accordion_panel_titles[site.lang].panels %}
-{%- include accordion.liquid accordion_panel_titles=accordion_panel_titles -%}
+{% assign accordion_data = site.data.training_accordion[site.lang] %}
+{%- include accordion.liquid accordion_data=accordion_data -%}

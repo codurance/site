@@ -1,5 +1,5 @@
 <div class="accordion" data-accordion>
-  {% for panel in include.accordion_panel_titles %}
+  {% for panel in include.accordion_data.panels %}
     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
     <article id="{{ panel.id }}" class="accordion__panel accordion-panel {{ active_class }}" data-accordion_panel>
       <div class="accordion-panel__inner">
