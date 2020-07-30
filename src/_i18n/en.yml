@@ -189,8 +189,8 @@ publications-post:
   date_title: Posted
 publications:
   content-type: Publication
+  hubspot-cta-id: 2021182d-0c96-404f-aac9-7edadbc7c266
   teaser-cta: Learn More
-  view-all: View all publications
 services:
   learn-more: Learn more
   page-intro:

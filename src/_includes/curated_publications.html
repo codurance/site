@@ -54,11 +54,8 @@
     </div>
 
     <div class="curated-publications__cta-space">
-      {% capture href %}
-        {{ site.baseurl }}/{{ site.tag_page_dir }}/{{ include.tag | slugify }}
-      {% endcapture %}
-      {% assign text = site.translations[site.lang].publications.view-all %}
-      {% include cta_secondary_link.html class='curated-publications__cta' href=href text=text %}
+      {% assign hubspot_cta_id = site.translations[site.lang].publications.hubspot-cta-id %}
+      {% include hubspot_cta.liquid class="curated-publications__cta" hubspot-cta-id=hubspot_cta_id %}
     </div>
   {% endif %}
 </section>

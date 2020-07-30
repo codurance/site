@@ -190,8 +190,8 @@ publications-post:
   date_title: Publicado
 publications:
   content-type: Publicación
+  hubspot-cta-id: 4913c0a6-f861-4af3-94bb-b751a130e171
   teaser-cta: Continúa
-  view-all: Ver todas las publicaciones
 services:
   learn-more: Más info
   page-intro:
