@@ -1,8 +1,7 @@
 .training-hero__background-image {
+  @include max-width;
   background-size: cover;
-  opacity: 0.9;
   position: relative;
-  width: 100%;
 
   @include small {
     height: 216.27px;
