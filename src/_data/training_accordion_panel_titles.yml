@@ -1,0 +1,12 @@
+en:
+  panels:
+    - id: why-attend
+      title: Why Attend?
+    - id: audience
+      title: Audience
+    - id: course-content
+      title: Course Content
+    - id: prerequisites
+      title: Prerequisites
+
+
