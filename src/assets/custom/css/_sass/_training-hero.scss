@@ -1,30 +1,33 @@
+$form-width: 385px;
+
+.training-hero {
+  @include max-width--framed;
+}
+
 .training-hero__intro-container {
-  align-items: flex-start;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-around;
-  position: relative;
 
   @include small {
-    height: 216.27px;
+    padding-top: 55px;
+    padding-bottom: 100px
   }
 
-  @include medium-and-large {
-    height: 435px;
+  @include medium {
+    padding-bottom: 90px;
+    padding-top: 70px;
   }
 
-  @include extra-large {
+  @include large-and-extra-large {
     min-height: 460px;
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 170px;
   }
 }
 
 .training-hero__intro-container-inner {
   @include max-width--out-there;
+  @include lateral-spacing;
   width: 100%;
 }
 
@@ -56,33 +59,17 @@
   background-color: $slate;
 }
 
-.training-hero__content-container {
+.training-hero__details-wrapper-inner {
   @include max-width--out-there;
   @include lateral-spacing;
+  position: relative;
 }
 
-.training-hero-course-content {
-  max-width: 50%;
-  position: relative;
-  color: white;
-  transform: translateY(-650px);
-
-  @include small {
-    padding-top: 85px;
-  }
-  
-  @include small-and-medium {
-    @include max-width--out-there;
-    margin-left: 24px;
-  }
-
-  @include medium {
-    padding-top: 40px;;
-  }
+.training-hero__content-container {
+  padding-bottom: 65px;
 
   @include large-and-extra-large {
-    @include max-width--out-there;
-    padding-top: 30px;
+    width: calc(100% - #{$form-width});
   }
 }
 
@@ -90,18 +77,6 @@
   display: flex;
   position: relative;
   top: -35px;
-}
-
-.training-hero__instructor-wrapper-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 25px;
-}
-
-.training-hero-course-instructor {
-  display: flex;
-  padding: 50px 0;
 }
 
 .training-hero__instructor-avatar {
@@ -112,12 +87,11 @@
   display: inline-block;
 }
 
-.training-hero-course-instructor__info {
+.training-hero__instructor-wrapper-inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-left: 20px;
-  transform: translateY(8px);
+  padding-left: 25px;
 }
 
 .training-hero__instructor-title {
@@ -136,19 +110,34 @@
   color: white;
 
   &:not(.training-hero__course-description--no-instructor) {
-    padding-top: 25px;
+    padding-top: 25px; 
   }
 
   &.training-hero__course-description--no-instructor {
-    padding-top: 70px;
+    @include medium {
+      padding-top: 60px;
+    }
+
+    @include large-and-extra-large {
+      padding-top: 70px;
+    }
   }
 
   @include small {
     @include base;
+    padding-bottom: 30px;
+  }
+
+  @include medium {
+    padding-bottom: 20px;
   }
 
   @include medium-and-large {
     @include mercer;
+  }
+
+  @include large-and-extra-large {
+    padding-right: 60px;
   }
 
   @include extra-large {
@@ -166,7 +155,21 @@
 
 .training-hero-details__form {
   display: inline-block;
-  height: 700px;
   width: 385px;
   background-color: tomato;
+  position: absolute;
+  top: -280px;
+  bottom: -30px;
+
+  @include small-and-medium {
+    display: none;
+  }
+
+  @include large {
+    right: $lateral-space--large
+  }
+
+  @include extra-large {
+    right: 0;
+  }
 }
