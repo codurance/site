@@ -14,8 +14,6 @@
     return;
   }
 
-  var PANELS = nodeListToArray(ACCORDION.querySelectorAll(SELECTORS.PANEL));
-
   setUpClickHandlers();
 
   function nodeListToArray(nodeList) {
@@ -23,6 +21,7 @@
   }
 
   function setUpClickHandlers() {
+    var PANELS = nodeListToArray(ACCORDION.querySelectorAll(SELECTORS.PANEL));
     PANELS.forEach(function (panel) {
       panel.onclick = handlePanelClick;
     });
