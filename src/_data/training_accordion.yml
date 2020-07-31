@@ -43,7 +43,7 @@ en:
         - internal/external visibility
 
     audience:
-      title: "This course is designed for software development teams that:"
+      intro: "This course is designed for software development teams that:"
       list:
         - are familiar with a minimum of one Object-Oriented language
         - are able to understand Java or C#
@@ -51,13 +51,13 @@ en:
         - have a basic understanding of mock objects
 
     course-content:
-      principles: "Principles of:"
-      principles-list:
-        - Test-Driven Design (TDD)
-        - Object-Orientated Design (OOO)
+      intro: "Principles of:"
+      list:
+        - Test-Driven Development (TDD)
+        - Object-Orientated Design (OOD)
         - Domain-Driven Design (DDD)
         - Interaction-Driven Design (IDD)
-      list:
+      secondary-list:
         - TDD lifecycle and modeling behaviors
         - Writing unit tests that express intent, not implementation
         - Using unit tests to drive good design
