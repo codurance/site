@@ -1,0 +1,82 @@
+panels:
+  - id: por-que-asistir
+    title: ¿Por qué asistir?
+    content: training_content_why_attend.liquid
+  - id: audiencia
+    title: Audiencia
+    content: training_content_audience.liquid
+  - id: contenido-del-curso
+    title: Contenido del curso
+    content: training_content_course_content.liquid
+  - id: prerequisitos
+    title: Prerequisitos
+    content: training_content_prerequisites.liquid
+
+crafting-code-and-crafted-design:
+  why-attend:
+    intro: Software Craftsmanship es el corazón de este curso. A lo largo de este curso, tu equipo aprenderá sobre la mentalidad de Software Craftsmanship y cómo aplicarla dentro de la organización.
+    clean-code-headline-one: Escribir Clean Code no es fácil; y limpiar código existente todavía menos.
+    why-attend: "Tu equipo debe asistir si necesita:"
+    why-attend-list:
+      - Alinear la tecnología con los requerimientos del negocio.
+      - Escribir código limpio que sea fácil de entender y mantener
+      - "Mejorar sus competencias en Test-Driven Development (TDD): usando testing para diseñar y construir"
+    clean-code-headline-two: El código limpio requiere un buen diseño.
+    learning-objectives-title: "Tu equipo aprenderá:"
+    learning-objectives-list:
+      - A comprender los principios de diseño que conducen a un código limpio.
+      - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas.
+    learning-outcome: Una vez que tu equipo domine estos principios podrá aplicarlos a código heredado. Esto les permitirá ganar confianza trabajando con legacy code.
+    software-design-intro: La parte de diseño de software de esta serie de capacitación se centra en aplicaciones y niveles de microservicios utilizando los requisitos comerciales para impulsar el diseño. Muchas de las discusiones de diseño durante los ejercicios se centran en escenarios reales que podrán ser implementadas en tu organización.
+    application-title: "Aplicaciones:"
+    application-list:
+      - estructura interna
+      - capas
+      - componentes
+      - mecanismo de entrega
+      - core domain
+    microservices-title: "Microservicios:"
+    microservices-list:
+      - definir la responsabilidad de cada servicio
+      - cómo colaboran los servicios
+      - visibilidad interna / externa
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software:"
+    list:
+      - familiarizados con un nivel mínimo de lenguaje orientado a objetos.
+      - con competencias en Java o C#.
+      - capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
+      - con un comprensión básica de los  mock objects.
+
+  course-content:
+    intro: "Principios de:"
+    list:
+      - Test-Driven Development (TDD)
+      - Object-Orientated Design (OOD)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+    second-list:
+      - Ciclo de vida TDD y comportamientos de modelado.
+      - Escritura de pruebas unitarias que expresan intención, no implementación.
+      - Utilizando pruebas unitarias para conseguir un buen diseño.
+      - Expressive code.
+      - Probar y refactorizar código heredado.
+      - Cómo estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata.
+      - Comprender las diferencias entre capas, hexágonos, características y componentes.
+      - Identificación de servicios a partir de reglas comerciales.
+      - Expresar diseño y arquitectura en código, pero manteniendo su dominio claro.
+      - Comprender el mapeo de impacto y cómo se puede derivar una arquitectura de servicios a partir de él.
+
+  prerequisites:
+    intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo.
+      - "Tener un entorno de desarrollo que conste de lo siguiente:"
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
+    second-list:
+      - Lenguaje orientado a objetos
+      - Un unit test framework
+      - Una mocking library

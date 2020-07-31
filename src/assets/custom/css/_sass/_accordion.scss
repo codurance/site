@@ -1,0 +1,68 @@
+.accordion {
+  @include lateral-spacing;
+  @include max-width;
+  max-width: 1000px;
+}
+
+.accordion__panel {
+  border-bottom: 1px solid $grey--light;
+
+  @include small-and-medium {
+    min-height: 2em;
+    margin-bottom: 10px;
+  }
+}
+
+.accordion-panel__inner {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.accordion-panel__header {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    content: '';
+    display: block;
+    padding: 10px 45px 10px 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(calc(-50% - 3px));
+  }
+
+  .accordion-panel:not(.active) & {
+    &::after {
+      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-plus.svg");
+    }
+  }
+
+  .accordion-panel.active & {
+    &::after {
+      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-minus.svg");
+    }
+  }
+}
+
+.accordion-panel__main {
+  .accordion-panel:not(.active) & {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .accordion-panel.active & {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+}
+
+.accordion-panel__title {
+  @include freed-bold;
+}

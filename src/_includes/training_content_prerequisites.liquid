@@ -1,0 +1,14 @@
+{% assign data = include.accordion_data.prerequisites %}
+
+<p>{{ data.intro }}</p>
+<p>{{ data.required }}</p>
+<ul>
+  {% for item in data.list %}
+    {% if forloop.index == 3 %}
+      <li>{{ item }}</li>
+      {% include unordered_list.liquid list=data.second-list %}
+    {% else %}
+      <li>{{ item }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

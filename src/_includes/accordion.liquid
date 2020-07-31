@@ -1,0 +1,19 @@
+<div class="accordion" data-accordion>
+  {% assign accordion_data = include.accordion_data %}
+  {% for panel in accordion_data.panels %}
+    {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
+    <article id="{{ panel.id }}" class="accordion__panel accordion-panel {{ active_class }}" data-accordion_panel>
+      <div class="accordion-panel__inner">
+        <div class="accordion-panel__header">
+          <h2 class="accordion-panel__title">{{ panel.title }}</h2>
+        </div>
+        <div class="accordion-panel__main">
+          {% assign accordion_data=include.accordion_data[page.course] %}
+          {% include {{panel.content}} accordion_data=accordion_data %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<script async src="{{ '/assets/custom/js/accordion.js' | prepend: site.baseurl }}"></script>
