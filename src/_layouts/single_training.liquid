@@ -2,5 +2,10 @@
 layout: default
 ---
 
-{% assign accordion_data = site.data.training_accordion[site.lang] %}
+{% if site.lang == 'es' %}
+  {% assign accordion_data = site.data.training_accordion_es %}
+{% else %}
+  {% assign accordion_data = site.data.training_accordion_en %}
+{% endif %}
+
 {%- include accordion.liquid accordion_data=accordion_data -%}

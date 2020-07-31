@@ -1,0 +1,82 @@
+panels:
+  - id: why-attend
+    title: Why Attend?
+    content: training_content_why_attend.liquid
+  - id: audience
+    title: Audience
+    content: training_content_audience.liquid
+  - id: course-content
+    title: Course Content
+    content: training_content_course_content.liquid
+  - id: prerequisites
+    content: training_content_prerequisites.liquid
+    title: Prerequisites
+
+crafting-code-and-crafted-design:
+  why-attend:
+    intro:
+    clean-code-headline-one:
+    why-attend:
+    why-attend-list:
+      -
+      -
+      -
+    clean-code-headline-two:
+    learning-objectives-title:
+    learning-objectives-list:
+      -
+      -
+    learning-outcome:
+    software-design-intro:
+    application-title:
+    application-list:
+      -
+      -
+      -
+      -
+      -
+    microservices-title:
+    microservices-list:
+      -
+      -
+      -
+
+  audience:
+    intro:
+    list:
+      -
+      -
+      -
+      -
+
+  course-content:
+    intro: "Principles of:"
+    list:
+      -
+      -
+      -
+      -
+    second-list:
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+  prerequisites:
+    intro:
+    required: "Required:"
+    list:
+      -
+      -
+      -
+    second-list:
+        -
+        -
+        -
+        -
