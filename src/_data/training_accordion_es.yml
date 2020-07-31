@@ -75,8 +75,8 @@ crafting-code-and-crafted-design:
       - Tener disponible tu propio ordenador portátil
       - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo.
       - "Tener un entorno de desarrollo que conste de lo siguiente:"
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
     second-list:
       - Lenguaje orientado a objetos
       - Un unit test framework
       - Una mocking library
-      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
