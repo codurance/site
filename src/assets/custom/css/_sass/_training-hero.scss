@@ -1,0 +1,175 @@
+$form-width: 385px;
+
+.training-hero {
+  @include max-width--framed;
+}
+
+.training-hero__intro-container {
+  background-position: center;
+  background-size: cover;
+
+  @include small {
+    padding-top: 55px;
+    padding-bottom: 100px
+  }
+
+  @include medium {
+    padding-bottom: 90px;
+    padding-top: 70px;
+  }
+
+  @include large-and-extra-large {
+    min-height: 460px;
+    padding-bottom: 100px;
+    padding-top: 170px;
+  }
+}
+
+.training-hero__intro-container-inner {
+  @include max-width--out-there;
+  @include lateral-spacing;
+  width: 100%;
+}
+
+.training-hero__course-title {
+  color: white;
+
+  @include small {
+    @include dudler-bold;
+    text-align: center;
+  }
+
+  @include medium-large-and-extra-large  {
+    @include gaudi-bold;
+  }
+}
+
+.training-hero__course-duration {
+  @include base-bold;
+  color: white;
+  text-transform: uppercase;
+
+  @include small {
+    text-align: center;
+    display: block;
+  }
+}
+
+.training-hero__details-wrapper {  
+  background-color: $slate;
+}
+
+.training-hero__details-wrapper-inner {
+  @include max-width--out-there;
+  @include lateral-spacing;
+  position: relative;
+}
+
+.training-hero__content-container {
+  padding-bottom: 65px;
+
+  @include large-and-extra-large {
+    width: calc(100% - #{$form-width});
+  }
+}
+
+.training-hero__instructor-wrapper {
+  display: flex;
+  position: relative;
+  top: -35px;
+}
+
+.training-hero__instructor-avatar {
+  background-position: center;
+  background-size: cover;
+  height: 110px;
+  width: 100px;
+  display: inline-block;
+}
+
+.training-hero__instructor-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 25px;
+}
+
+.training-hero__instructor-title {
+  @include ponti-bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.training-hero__instructor-name {
+  @include mercer-bold;
+  color: white;
+  line-height: 16px;
+}
+
+.training-hero__course-description {
+  color: white;
+
+  &:not(.training-hero__course-description--no-instructor) {
+    padding-top: 25px; 
+  }
+
+  &.training-hero__course-description--no-instructor {
+    @include medium {
+      padding-top: 60px;
+    }
+
+    @include large-and-extra-large {
+      padding-top: 70px;
+    }
+  }
+
+  @include small {
+    @include base;
+    padding-bottom: 30px;
+  }
+
+  @include medium {
+    padding-bottom: 20px;
+  }
+
+  @include medium-and-large {
+    @include mercer;
+  }
+
+  @include large-and-extra-large {
+    padding-right: 60px;
+  }
+
+  @include extra-large {
+    @include freed;
+  }
+}
+
+.cta--primary-coral {
+  .training-hero__description-wrapper & {
+    @include large-and-extra-large {
+      display: none;
+    } 
+  }
+}
+
+.training-hero-details__form {
+  display: inline-block;
+  width: 385px;
+  background-color: tomato;
+  position: absolute;
+  top: -280px;
+  bottom: -30px;
+
+  @include small-and-medium {
+    display: none;
+  }
+
+  @include large {
+    right: $lateral-space--large
+  }
+
+  @include extra-large {
+    right: 0;
+  }
+}

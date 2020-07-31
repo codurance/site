@@ -190,8 +190,8 @@ publications-post:
   date_title: Publicado
 publications:
   content-type: Publicación
+  hubspot-cta-id: 4913c0a6-f861-4af3-94bb-b751a130e171
   teaser-cta: Continúa
-  view-all: Ver todas las publicaciones
 services:
   learn-more: Más info
   page-intro:
@@ -679,6 +679,7 @@ software-modernisation:
     teaser:
       title: Software Modernisation en tiempos de trabajo distribuído
       description: En este webinar Sandro Mancuso, Co-founder y José Rodríguez Huerta, Managing Director, explican porqué una organización necesita Software Modernisation en el contexto actual y a qué retos se enfrenta.
+      hubspot-cta-id: fed88cbf-5b31-42da-ae50-d23fb8998000
       cta: Ver webinar
       cta-href: https://info.codurance.com/es/software-modernisation-en-tiempos-de-trabajo-distribu%C3%ADdo
 
@@ -736,26 +737,22 @@ service-line-case-studies:
   card-one:
     heading: ASOS
     subheading: Mayor agilidad del negocio gracias a un proyecto de Software Modernisation
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/asos-case-study
+    hubspot-cta-id: e192f01a-2516-47dc-bfc1-ff99edff4f21
 
   card-two:
     heading: Mango
     subheading: Asesoramiento estratégico, cambio de cultura y migración de una estructura monolítica a una estructura de multiservicios
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/mango-case-study
+    hubspot-cta-id: 0ec4b8cd-d9c9-4ff0-ba4b-842d48d85f37
 
   card-three:
     heading: eClinicalWorks
     subheading: Modularización de la arquitectura y cambio en el diseño y la factorización de los códigos a gran escala
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/eclinicalworks-case-study
+    hubspot-cta-id: 62860427-711d-47e4-8f89-a7e4347b1a9e
 
   card-four:
     heading: BestSecret
     subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
-    button: Descarga el Case Study
-    url: https://info.codurance.com/es/best-secret-case-study
+    hubspot-cta-id: 202bea38-a2ab-42ef-82df-c14f14d2c92d
 
 service-line-testimonials:
   section-title: La opinión de nuestros clientes

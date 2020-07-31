@@ -18,3 +18,8 @@
 .hubspot-cta--primary-coral .cta_button {
   @include cta--primary-coral;
 }
+
+.hubspot-case-study-cta .cta_button {
+  @include cta--primary-coral;
+  width: 100%;
+}
