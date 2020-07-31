@@ -1,6 +1,11 @@
-.training-hero__background-image {
-  @include max-width;
+.training-hero__intro-container {
+  align-items: flex-start;
+  background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
   position: relative;
 
   @include small {
@@ -8,37 +13,55 @@
   }
 
   @include medium-and-large {
-    height: 433px;
+    height: 435px;
   }
 
   @include extra-large {
-    height: 519.5px;
+    min-height: 460px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
 }
 
-$background-block-height: ($vertical-overlap *  4);
-.training-hero__lower-background-block {
-  background-color: $slate;
-  position: relative;
+.training-hero__intro-container-inner {
+  @include max-width--out-there;
+  width: 100%;
+}
+
+.training-hero__course-title {
+  color: white;
 
   @include small {
-    height: 2px + $background-block-height;
+    @include dudler-bold;
+    text-align: center;
   }
 
-  @include medium {
-    height: 6px + $background-block-height;
-  }
-
-  @include large {
-    height: 16px + $background-block-height;
-  }
-
-  @include extra-large {
-    height: 28px + $background-block-height;
+  @include medium-large-and-extra-large  {
+    @include gaudi-bold;
   }
 }
 
-.training-hero-course-content{
+.training-hero__course-duration {
+  @include base-bold;
+  color: white;
+  text-transform: uppercase;
+
+  @include small {
+    text-align: center;
+    display: block;
+  }
+}
+
+.training-hero__details-wrapper {  
+  background-color: $slate;
+}
+
+.training-hero__content-container {
+  @include max-width--out-there;
+  @include lateral-spacing;
+}
+
+.training-hero-course-content {
   max-width: 50%;
   position: relative;
   color: white;
@@ -63,42 +86,30 @@ $background-block-height: ($vertical-overlap *  4);
   }
 }
 
-.training-hero-course-content-info__title {
-  @include small {
-    @include dudler-bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  @include medium-large-and-extra-large  {
-    @include habib-bold;
-    text-align: left;
-  }
+.training-hero__instructor-wrapper {
+  display: flex;
+  position: relative;
+  top: -35px;
 }
 
-.training-hero-course-content-info__duration {
-  @include base-bold;
-  color: white;
-  text-transform: uppercase;
-
-  @include small {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+.training-hero__instructor-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 25px;
 }
 
-.training-hero-course-instructor{
+.training-hero-course-instructor {
   display: flex;
   padding: 50px 0;
 }
 
-.training-hero-course-instructor__avatar {
+.training-hero__instructor-avatar {
   background-position: center;
   background-size: cover;
-  height: $vertical-overlap + 10px;
-  width: $vertical-overlap;
+  height: 110px;
+  width: 100px;
+  display: inline-block;
 }
 
 .training-hero-course-instructor__info {
@@ -109,23 +120,31 @@ $background-block-height: ($vertical-overlap *  4);
   transform: translateY(8px);
 }
 
-.training-hero-course-instructor__title {
+.training-hero__instructor-title {
   @include ponti-bold;
   color: white;
+  margin-bottom: 15px;
 }
 
-.training-hero-course-instructor__name {
+.training-hero__instructor-name {
   @include mercer-bold;
   color: white;
+  line-height: 16px;
 }
 
-.training-hero__intro-container {
+.training-hero__course-description {
+  color: white;
+
+  &:not(.training-hero__course-description--no-instructor) {
+    padding-top: 25px;
+  }
+
+  &.training-hero__course-description--no-instructor {
+    padding-top: 70px;
+  }
+
   @include small {
     @include base;
-
-    & .cta--primary-coral {
-      margin-right: 27px;
-    } 
   }
 
   @include medium-and-large {
@@ -135,14 +154,19 @@ $background-block-height: ($vertical-overlap *  4);
   @include extra-large {
     @include freed;
   }
+}
 
-  @include large-and-extra-large {
-    & .cta--primary-coral {
-      display:none;
+.cta--primary-coral {
+  .training-hero__description-wrapper & {
+    @include large-and-extra-large {
+      display: none;
     } 
-  } 
-
-  & .training-hero__intro-description {
-    color: white;
   }
+}
+
+.training-hero-details__form {
+  display: inline-block;
+  height: 700px;
+  width: 385px;
+  background-color: tomato;
 }
