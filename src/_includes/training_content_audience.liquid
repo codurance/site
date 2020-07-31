@@ -1,1 +1,3 @@
-Audience content goes here
+{% assign data = include.accordion_data.crafting-code-and-crafted-design.audience %}
+<p>{{ data.title }}</p>
+{% include unordered_list.liquid list=data.list %}
