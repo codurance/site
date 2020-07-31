@@ -9,8 +9,8 @@ panels:
     title: Course Content
     content: training_content_course_content.liquid
   - id: prerequisites
-    content: training_content_prerequisites.liquid
     title: Prerequisites
+    content: training_content_prerequisites.liquid
 
 crafting-code-and-crafted-design:
   why-attend:
