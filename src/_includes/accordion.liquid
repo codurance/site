@@ -8,6 +8,7 @@
           <h2 class="accordion-panel__title">{{ panel.title }}</h2>
         </div>
         <div class="accordion-panel__main">
+          {% assign accordion_data=include.accordion_data[page.course] %}
           {% include {{panel.content}} accordion_data=accordion_data %}
         </div>
       </div>
