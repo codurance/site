@@ -154,12 +154,12 @@ $form-width: 385px;
 }
 
 .training-hero-details__form {
-  display: inline-block;
-  width: 385px;
   background-color: tomato;
+  bottom: -30px;
+  display: inline-block;
   position: absolute;
   top: -280px;
-  bottom: -30px;
+  width: 385px;
 
   @include small-and-medium {
     display: none;
@@ -168,4 +168,11 @@ $form-width: 385px;
   @include large-and-extra-large {
     right: $lateral-space--large
   }
+}
+
+.training-hero-details__form-title {
+  @include freed-bold;
+  padding-bottom: 25px;
+  padding-top: 30px;
+  text-align: center;
 }
