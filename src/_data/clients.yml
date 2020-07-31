@@ -1,4 +1,4 @@
-- id: bestsecret
+bestsecret:
   featured: true
   name: BestSecret
   image: /assets/custom/img/home/clients/bestsecret-logo.png
@@ -11,7 +11,7 @@
       page-location-es: https://info.codurance.com/es/best-secret-case-study
       project-name: bestSecret
 
-- id: adevinta
+adevinta:
   featured: false
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
@@ -20,7 +20,7 @@
   services:
     - software_creation
 
-- id: bankable
+bankable:
   featured: true
   name: Bankable
   image: /assets/custom/img/home/clients/bankable-logo.png
@@ -29,7 +29,7 @@
   services:
     - software_creation
 
-- id: cazoo
+cazoo:
   featured: true
   name: Cazoo
   image: /assets/custom/img/home/clients/cazoo-logo.png
@@ -38,7 +38,7 @@
   services:
     - software_creation
 
-- id: cxLoyalty
+cxLoyalty:
   featured: false
   name: cxLoyalty
   image: /assets/custom/img/home/clients/cxloyalty-logo.png
@@ -48,7 +48,7 @@
     - software_creation
     - expert_advice
 
-- id: eclinicalworks
+eclinicalworks:
   featured: true
   name: eClinicalWorks
   image: /assets/custom/img/home/clients/eclinicalworks-logo.png
@@ -63,7 +63,7 @@
       page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
       project-name: eClinicalWorks
 
-- id: ubs
+ubs:
   featured: true
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
@@ -73,7 +73,7 @@
     - software_creation
     - expert_advice
 
-- id: acuris
+acuris:
   featured: true
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
@@ -84,7 +84,7 @@
   services-page:
     - effective_delivery
 
-- id: socgen
+socgen:
   featured: false
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
@@ -94,7 +94,7 @@
     - expert_advice
     - training_and_coaching
 
-- id: mandg
+mandg:
   featured: false
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
@@ -109,7 +109,7 @@
     - page-location: projects/software-craftsmanship-at-mandg
       project-name: MANDG
 
-- id: flextrade
+flextrade:
   featured: false
   name: Flextrade
   image: /assets/custom/img/home/clients/flextrade-logo.png
@@ -121,7 +121,7 @@
   services-page:
     - expert_advice
 
-- id: ey
+ey:
   featured: true
   name: EY
   image: /assets/custom/img/home/clients/ey.png
@@ -133,7 +133,7 @@
   services-page:
     - effective_delivery
 
-- id: aspectcapital
+aspectcapital:
   featured: false
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
@@ -146,7 +146,7 @@
   services-page:
     - expert_advice
 
-- id: tesco
+tesco:
   featured: true
   name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
@@ -164,7 +164,7 @@
     - page-location: projects/software-craftsmanship-at-tesco-scheduling
       project-name: Tesco-scheduling
 
-- id: asos
+asos:
   featured: true
   name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.png
@@ -181,7 +181,7 @@
       page-location-es: https://info.codurance.com/es/asos-case-study
       project-name: ASOS
 
-- id: mango
+mango:
   featured: true
   name: Mango
   image: /assets/custom/img/home/clients/mango.png
@@ -199,7 +199,7 @@
       page-location-es: https://info.codurance.com/es/mango-case-study
       project-name: Mango
 
-- id: mands
+mands:
   featured: true
   name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
@@ -214,7 +214,7 @@
     - page-location: projects/software-craftsmanship-at-mands
       project-name: MANDS
 
-- id: moonpig
+moonpig:
   featured: false
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
@@ -227,7 +227,7 @@
   services-page:
     - expert_advice
 
-- id: coniq
+coniq:
   featured: false
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
@@ -239,7 +239,7 @@
     - page-location: projects/software-craftsmanship-at-coniq
       project-name: Coniq
 
-- id: aws
+aws:
   featured: false
   name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.png
@@ -254,7 +254,7 @@
     - page-location: projects/software-craftsmanship-at-aws
       project-name: AWS
 
-- id: trinitymirror
+trinitymirror:
   featured: false
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
@@ -266,7 +266,7 @@
   services-page:
     - effective_delivery
 
-- id: roche
+roche:
   featured: true
   name: Roche
   image: /assets/custom/img/home/clients/roche.png
@@ -275,7 +275,7 @@
   services:
     - expert_advice
 
-- id: findmypast
+findmypast:
   featured: false
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast-logo.png
@@ -285,7 +285,7 @@
     - software_creation
     - expert_advice
 
-- id: accelad
+accelad:
   featured: false
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png

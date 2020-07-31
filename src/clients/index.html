@@ -14,7 +14,8 @@ title: Clients
 
 <div class="section" style="padding-bottom: 0px">
   <div class="container">
-    {% for client in site.data.clients %}
+    {% for client_id in site.data.client_ids %}
+    {% assign client=site.data.clients[client_id]%}
     <div class="d-flex">
       <div class="d-block mr-5 client-image">
         <img class="g-width-120" src="{{site.baseurl}}{{ client.image }}" alt="{{ client.alt-text }}">
@@ -37,7 +38,7 @@ title: Clients
           </li>
           {% endfor %}
         </ul>
-        {% capture description %}clients.{{client.id}}_description{% endcapture %}
+        {% capture description %}clients.{{client_id}}_description{% endcapture %}
         <p>{% t {{ description }} %}</p>
         {% for project in client.projects %}
           {% capture button-text %}{% t projects.{{project.project-name}}.link-text %}{% endcapture %}
