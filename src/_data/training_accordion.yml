@@ -69,7 +69,7 @@ en:
         - Express design and architecture in code, but keeping your domain clear
         - Understanding Impact Mapping and how a services architecture can be derived from it
 
-    prerequesties:
+    prerequisites:
       intro: The is a hands on training course. Software development teams will be required to write a lot of code.
       required: "Required:"
       list:
