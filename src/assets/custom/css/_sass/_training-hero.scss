@@ -165,11 +165,7 @@ $form-width: 385px;
     display: none;
   }
 
-  @include large {
+  @include large-and-extra-large {
     right: $lateral-space--large
-  }
-
-  @include extra-large {
-    right: 0;
   }
 }
