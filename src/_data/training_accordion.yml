@@ -57,8 +57,8 @@ en:
         - Object-Orientated Design (OOD)
         - Domain-Driven Design (DDD)
         - Interaction-Driven Design (IDD)
-      secondary-list:
-        - TDD lifecycle and modeling behaviors
+      second-list:
+        - TDD lifecycle and modelling behaviors
         - Writing unit tests that express intent, not implementation
         - Using unit tests to drive good design
         - Expressive code
@@ -67,7 +67,7 @@ en:
         - Understanding the differences between layers, hexagons, features, and components
         - Identifying services from business rules
         - Express design and architecture in code, but keeping your domain clear
-        - Understanding Impact Mapping and how a services architecture can be derived from it"
+        - Understanding Impact Mapping and how a services architecture can be derived from it
 
     prerequesties:
       intro: The is a hands on training course. Software development teams will be required to write a lot of code.
