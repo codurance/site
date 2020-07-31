@@ -2,4 +2,13 @@
 
 <p>{{ data.intro }}</p>
 <p>{{ data.required }}</p>
-{% include unordered_list.liquid list=data.list %}
+<ul>
+  {% for item in data.list %}
+    {% if forloop.index == 3 %}
+      <li>{{ item }}</li>
+      {% include unordered_list.liquid list=data.second-list %}
+    {% else %}
+      <li>{{ item }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

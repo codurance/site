@@ -76,9 +76,8 @@ en:
         - Bring their own laptop
         - Be able to create projects, build source code, and run test cases in their development environment
         - "Have a development environment that consists of the following:"
+      second-list:
         - Object-Oriented language
         - A unit test framework
         - A mocking library
         - A distributed version-control system such as Github is preferable
-
-
