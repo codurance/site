@@ -24,7 +24,6 @@ homepage-and-clients-page:
   - findmypast
   - accelad
   
-
 services-overview-page:
   - bestsecret
   - bankable
@@ -39,3 +38,16 @@ services-overview-page:
   - mands
   - roche
 
+single-training-pages:
+  - asos
+  - aspectcapital
+  - flextrade
+  - mandg
+  - moonpig
+  - socgen
+  - roche 
+  - vistaprint
+  - schibsted
+  - siemens
+  - lastminute
+  

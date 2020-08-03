@@ -273,3 +273,19 @@ accelad:
     - expert_advice
   services-page:
     - effective_delivery
+
+vistaprint:
+  image: /assets/custom/img/clients/training/vistaprint-logo.png
+  alt-text: Vistaprint logo
+
+schibsted:
+  image: /assets/custom/img/clients/training/schibsted-logo.png
+  alt-text: Schibsted logo
+
+siemens:
+  image: /assets/custom/img/clients/training/siemens-logo.png
+  alt-text: Siemens logo
+
+lastminute:
+  image: /assets/custom/img/clients/training/lastminute-logo.png
+  alt-text: Lastminute logo
