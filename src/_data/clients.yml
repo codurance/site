@@ -1,5 +1,4 @@
 bestsecret:
-  featured: true
   name: BestSecret
   image: /assets/custom/img/home/clients/bestsecret-logo.png
   alt-text: BestSecret logo
@@ -12,7 +11,6 @@ bestsecret:
       project-name: bestSecret
 
 adevinta:
-  featured: false
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
   alt-text: Adevinta Logo
@@ -21,7 +19,6 @@ adevinta:
     - software_creation
 
 bankable:
-  featured: true
   name: Bankable
   image: /assets/custom/img/home/clients/bankable-logo.png
   alt-text: Bankable Logo
@@ -30,7 +27,6 @@ bankable:
     - software_creation
 
 cazoo:
-  featured: true
   name: Cazoo
   image: /assets/custom/img/home/clients/cazoo-logo.png
   alt-text: Cazoo Logo
@@ -39,7 +35,6 @@ cazoo:
     - software_creation
 
 cxLoyalty:
-  featured: false
   name: cxLoyalty
   image: /assets/custom/img/home/clients/cxloyalty-logo.png
   alt-text: cxLoyalty Logo
@@ -49,7 +44,6 @@ cxLoyalty:
     - expert_advice
 
 eclinicalworks:
-  featured: true
   name: eClinicalWorks
   image: /assets/custom/img/home/clients/eclinicalworks-logo.png
   alt-text: eClinicalWorks Logo
@@ -64,7 +58,6 @@ eclinicalworks:
       project-name: eClinicalWorks
 
 ubs:
-  featured: true
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
@@ -74,7 +67,6 @@ ubs:
     - expert_advice
 
 acuris:
-  featured: true
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
   alt-text: Acuris logo
@@ -85,7 +77,6 @@ acuris:
     - effective_delivery
 
 socgen:
-  featured: false
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
@@ -95,7 +86,6 @@ socgen:
     - training_and_coaching
 
 mandg:
-  featured: false
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
@@ -110,7 +100,6 @@ mandg:
       project-name: MANDG
 
 flextrade:
-  featured: false
   name: Flextrade
   image: /assets/custom/img/home/clients/flextrade-logo.png
   alt-text: Flextrade logo
@@ -122,7 +111,6 @@ flextrade:
     - expert_advice
 
 ey:
-  featured: true
   name: EY
   image: /assets/custom/img/home/clients/ey.png
   alt-text: EY logo
@@ -134,7 +122,6 @@ ey:
     - effective_delivery
 
 aspectcapital:
-  featured: false
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
@@ -147,7 +134,6 @@ aspectcapital:
     - expert_advice
 
 tesco:
-  featured: true
   name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
   description: clients.tesco_description
@@ -165,7 +151,6 @@ tesco:
       project-name: Tesco-scheduling
 
 asos:
-  featured: true
   name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.png
   alt-text: ASOS logo
@@ -182,7 +167,6 @@ asos:
       project-name: ASOS
 
 mango:
-  featured: true
   name: Mango
   image: /assets/custom/img/home/clients/mango.png
   alt-text: MANGO logo
@@ -200,7 +184,6 @@ mango:
       project-name: Mango
 
 mands:
-  featured: true
   name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
   alt-text: Marks and Spencer logo
@@ -215,7 +198,6 @@ mands:
       project-name: MANDS
 
 moonpig:
-  featured: false
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
   alt-text: Moonpig logo
@@ -228,7 +210,6 @@ moonpig:
     - expert_advice
 
 coniq:
-  featured: false
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
   alt-text: Coniq logo
@@ -240,7 +221,6 @@ coniq:
       project-name: Coniq
 
 aws:
-  featured: false
   name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
@@ -255,7 +235,6 @@ aws:
       project-name: AWS
 
 trinitymirror:
-  featured: false
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
   alt-text: Trinity Mirror logo
@@ -267,7 +246,6 @@ trinitymirror:
     - effective_delivery
 
 roche:
-  featured: true
   name: Roche
   image: /assets/custom/img/home/clients/roche.png
   alt-text: Roche logo
@@ -276,7 +254,6 @@ roche:
     - expert_advice
 
 findmypast:
-  featured: false
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast-logo.png
   alt-text: Find My Past logo
@@ -286,7 +263,6 @@ findmypast:
     - expert_advice
 
 accelad:
-  featured: false
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
   description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.

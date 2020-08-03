@@ -15,7 +15,7 @@ metarobots: index,follow
   {% include service_line_teaser_group.html %}
   {% include training_teaser.html class="services-page__training-teaser" %}
   {%- capture title -%}{% t services.clients-teaser-title %}{%- endcapture -%}
-  {% include clients_teaser.html class="services-page__clients-teaser" client_ids=site.data.client_ids title=title featured_clients_only=true %}
+  {% include clients_teaser.html class="services-page__clients-teaser" client_ids=site.data.client_ids.services-overview-page title=title %}
   {% include compass_teaser.html class="services-page__compass-cta" %}
   {% include services_contact_form.liquid %}
 </main>

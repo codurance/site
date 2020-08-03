@@ -4,7 +4,6 @@
   <div class="clients-teaser__logo-container">
     {% for client_id in include.client_ids %}
       {% assign client=site.data.clients[client_id]%}
-      {% if include.featured_clients_only and client.featured != true %}{% continue %}{% endif %}
       <img class="clients-teaser__logo" src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.alt-text }}">
     {% endfor %}
   </div>

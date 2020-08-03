@@ -1,24 +1,41 @@
-- bestsecret
-- adevinta
-- bankable
-- cazoo
-- cxLoyalty
-- eclinicalworks
-- ubs
-- acuris
-- socgen
-- mandg
-- flextrade
-- ey
-- aspectcapital
-- tesco
-- asos
-- mango
-- mands
-- moonpig
-- coniq
-- aws
-- trinitymirror
-- roche
-- findmypast
-- accelad
+homepage-and-clients-page:
+  - bestsecret
+  - adevinta
+  - bankable
+  - cazoo
+  - cxLoyalty
+  - eclinicalworks
+  - ubs
+  - acuris
+  - socgen
+  - mandg
+  - flextrade
+  - ey
+  - aspectcapital
+  - tesco
+  - asos
+  - mango
+  - mands
+  - moonpig
+  - coniq
+  - aws
+  - trinitymirror
+  - roche
+  - findmypast
+  - accelad
+  
+
+services-overview-page:
+  - bestsecret
+  - bankable
+  - cazoo
+  - eclinicalworks
+  - ubs
+  - acuris
+  - ey
+  - tesco
+  - asos
+  - mango
+  - mands
+  - roche
+
