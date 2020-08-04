@@ -997,3 +997,17 @@
   github: paulmorrishill
   linkedin: paulmorrishill
   office: London
+
+  id: maciej_kowalski
+  name: Maciej Kowalski
+  image: /assets/custom/img/team/maciej_kowalski.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Maciej began coding at the age of 16 in Pascal and C++. During his university years, he stumbled upon Java, and it has been his main programming language ever since.</p>
+    <p>Adopting early on the practices of TDD and XP in his professional career, he is an avid advocate of automated testing and cannot really imagine developing code without a comprehensive suite of tests.</p>
+    <p>Maciej has also been a team lead on some of his previous projects and leading software teams to victory is one of his greatest passions as well.</p>
+    <p>In his spare time he likes to train olympic weightlifting, play guitar, read a classic book or listen to some good music.</p>
+  email: maciej.kowalski@codurance.com
+  github: sourceartists
+  linkedin: maciej-kowalski-43a531127
+  office: London
