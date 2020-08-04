@@ -154,9 +154,11 @@ $form-width: 385px;
 }
 
 .training-hero-details__form {
-  background-color: tomato;
+  background-color: white;
   bottom: -30px;
+  box-shadow: 0px 0px 30px #00000026;
   display: inline-block;
+  opacity: 1;
   position: absolute;
   top: -280px;
   width: 385px;
@@ -166,7 +168,9 @@ $form-width: 385px;
   }
 
   @include large-and-extra-large {
-    right: $lateral-space--large
+    right: $lateral-space--large;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -175,4 +179,8 @@ $form-width: 385px;
   padding-bottom: 25px;
   padding-top: 30px;
   text-align: center;
+}
+
+.tab {
+  display: block;
 }
