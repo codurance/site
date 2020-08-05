@@ -156,7 +156,7 @@ $form-width: 385px;
 .training-hero-details__form {
   background-color: white;
   bottom: -30px;
-  box-shadow: 0px 0px 30px #00000026;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 4px 17px rgba(0, 0, 0, 0.05);;
   display: inline-block;
   opacity: 1;
   position: absolute;
@@ -183,4 +183,18 @@ $form-width: 385px;
 
 .tab {
   display: block;
+}
+
+.get-in-touch {
+  .single-training-form & {
+    position: relative;
+
+    @include medium {
+      padding-top: 235px;
+    }
+
+    @include large-and-extra-large {
+      display: none;
+    }
+  }
 }
