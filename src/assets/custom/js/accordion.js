@@ -5,6 +5,7 @@
   var SELECTORS = {
     ACCORDION: "[data-accordion]",
     PANEL: "[data-accordion_panel]",
+    PANEL_HEADER: "accordion_panel_header",
     PANEL_ACTIVE: "[data-accordion_panel]." + ACTIVE_CLASS
   };
 
@@ -27,8 +28,11 @@
     });
   }
 
-  function handlePanelClick() {
-    togglePanel(this);
+  function handlePanelClick(e) {
+    if (SELECTORS.PANEL_HEADER in e.target.dataset) {
+      togglePanel(this);
+    }
+    return;
   }
 
   function togglePanel(panel) {
