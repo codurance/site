@@ -17,7 +17,7 @@
       .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
         @include base;
         background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 1px solid #AEAEAE;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 4px 17px rgba(0, 0, 0, 0.05);
         opacity: 1;
     }
 
