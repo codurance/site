@@ -12,12 +12,12 @@
         @include base;
         position: relative !important;
     }
-
-    & .hs-custom-style>div input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]),
-      .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
+    
+    & .hs-custom-style fieldset input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+      .hs-custom-style fieldset>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
         @include base;
         background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1), 0px 4px 17px rgba(0, 0, 0, 0.05);
+        border: 1px solid #AEAEAE;
         opacity: 1;
     }
 
