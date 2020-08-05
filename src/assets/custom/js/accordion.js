@@ -29,7 +29,7 @@
   }
 
   function handlePanelClick(e) {
-    if (SELECTORS.PANEL_HEADER in this.dataset) {
+    if (SELECTORS.PANEL_HEADER in e.target.dataset) {
       togglePanel(this);
     }
     return;
