@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem "jekyll", ">=3.8.0"
 gem "jekyll-watch"
 gem 'rake', ">= 12.3.3"
+gem "json", ">= 2.3.0"
+gem "kramdown", ">= 2.3.0"
 
 gem 'builder'
 gem 'jekyll-tagging'
