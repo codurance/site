@@ -1,18 +1,33 @@
 (function() {
 
+  var HEADER = window.document.querySelector("header");
+  var startingPosition = getScrollPosition();
   var ACTIVE_CLASS = "active";
-
   var SELECTORS = {
     ACCORDION: "[data-accordion]",
     PANEL: "[data-accordion_panel]",
     PANEL_HEADER: "accordion_panel_header",
     PANEL_ACTIVE: "[data-accordion_panel]." + ACTIVE_CLASS
   };
-
+  var ticking;
   var ACCORDION = window.document.querySelector(SELECTORS.ACCORDION);
 
   if (ACCORDION === null) {
     return;
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  function handleScroll() {
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        updateStartingPosition();
+        ticking = false;
+      });
+
+      ticking = true;
+    }
   }
 
   setUpClickHandlers();
@@ -43,6 +58,7 @@
     } else {
       makePanelActive(panel.id);
       scrollToPanel(panel);
+      updateStartingPosition();
     }
   }
 
@@ -68,10 +84,19 @@
     }
 
     var totalTopOffset = getTotalTopOffset(panel);
+    var isUpwardScroll = startingPosition > totalTopOffset;
     var SPACING = 10;
-    var header = window.document.querySelector("header");
-    var headerHeight = header ? header.clientHeight : 90;
-    var yPosition = totalTopOffset - SPACING - headerHeight;
+    var headerHeight = HEADER ? HEADER.clientHeight : 90;
+    var yPosition = isUpwardScroll ? totalTopOffset - SPACING  - headerHeight: totalTopOffset - SPACING;
     window.scrollTo({ top: yPosition, behavior: "smooth" });
   }
+
+  function getScrollPosition () {
+    return window.pageYOffset || window.scrollY;
+  }
+
+  function updateStartingPosition() {
+    startingPosition = getScrollPosition();
+  }
+
 })();
