@@ -25,7 +25,8 @@
           designed to teach developers practical techniques they can immediately apply to real-world projects.
           </p>
           {% capture text %}{% t single-training.contact-cta-text %}{% endcapture %}
-          {% include cta_primary_link.html color='coral' text=text %}
+          {% capture href %}#{% t get-in-touch.anchor-id %}{% endcapture %}
+          {% include cta_primary_link.html href=href color='coral' text=text %}
         </div>
       </div>
       <div class="training-hero-details__form">
