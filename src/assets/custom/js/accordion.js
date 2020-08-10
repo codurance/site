@@ -1,20 +1,15 @@
 (function() {
 
   var HEADER = window.document.querySelector("header");
-
   var startingPosition = getScrollPosition();
-
   var ACTIVE_CLASS = "active";
-
   var SELECTORS = {
     ACCORDION: "[data-accordion]",
     PANEL: "[data-accordion_panel]",
     PANEL_HEADER: "accordion_panel_header",
     PANEL_ACTIVE: "[data-accordion_panel]." + ACTIVE_CLASS
   };
-
   var ticking;
-
   var ACCORDION = window.document.querySelector(SELECTORS.ACCORDION);
 
   if (ACCORDION === null) {
