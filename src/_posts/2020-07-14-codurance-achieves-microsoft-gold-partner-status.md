@@ -17,7 +17,7 @@ tags:
     - cloud
     - software delivery
     - strategic advice
-    - partnership
+    - partnerships
 ---
 
 Codurance today announced that it has attained a Gold Application Development competency - the highest status in the Microsoft Partner Network, demonstrating outstanding performance, industry-leading ability to develop cloud-based enterprise solutions and exceptional levels of expertise with the Microsoft software platform.
