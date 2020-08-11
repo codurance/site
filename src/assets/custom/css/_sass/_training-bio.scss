@@ -59,7 +59,7 @@
 .training-bio__content-wrapper {
   height: 210px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 .training-bio__content {
@@ -70,4 +70,18 @@
   background: none;
   border: none;
   @include ponti-bold;
+
+  &::after {
+    border-color: #fb7268;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    margin: 12px;
+    padding: 4.5px;
+    position: relative;
+    top: 9px;
+    transform: rotate(45deg);
+    transition: border-color 0.5s, transform 0.5s, top 0.5s;
+  }
 }
