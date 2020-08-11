@@ -65,3 +65,9 @@
 .training-bio__content {
   @include mercer;
 }
+
+.training-bio__read-more-button {
+  background: none;
+  border: none;
+  @include ponti-bold;
+}
