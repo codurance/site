@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
 
-  @include small-and-medium{
+  @include small-and-medium {
     padding-top: 50px;
   }
 
@@ -14,4 +14,37 @@
   @include large-and-extra-large {
     padding-top: 100px;
   }
+}
+
+.training-bio__instructor-container {
+  padding: 5px 15px;
+}
+
+.training-bio__instructor-avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 180px;
+  margin: 15px;
+  width: 164px;
+}
+
+.training-bio__content-container {
+  padding: 20px;
+}
+
+.training-bio__instructor-title,
+.training-bio__instructor-name {
+  color: black;
+  display: block;
+  margin-left: 5px;
+}
+
+.training-bio__instructor-title {
+  @extend .training-hero__instructor-title;
+}
+
+.training-bio__instructor-name {
+  @extend .training-hero__instructor-name;
 }
