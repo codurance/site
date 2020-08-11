@@ -56,6 +56,12 @@
   padding: 20px;
 }
 
+.training-bio__content-wrapper {
+  height: 210px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 .training-bio__content {
   @include mercer;
 }
