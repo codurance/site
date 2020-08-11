@@ -1,14 +1,6 @@
 .training-bio {
-  @include lateral-spacing;
-  display: flex;
-  position: relative;
-
   @include small-and-medium {
     padding-top: 50px;
-  }
-
-  @include medium-large-and-extra-large {
-    @include max-width--out-there;
   }
 
   @include large-and-extra-large {
@@ -16,8 +8,19 @@
   }
 }
 
+.training-bio__wrapper {
+  @include lateral-spacing;
+  display: flex;
+  position: relative;
+
+  @include medium-large-and-extra-large {
+    @include max-width--out-there;
+  }
+}
+
 .training-bio__instructor-container {
-  padding: 5px 15px;
+  background-color: $navy--ultralight;
+  padding: 15px 25px;
 }
 
 .training-bio__instructor-avatar {
@@ -38,7 +41,7 @@
 .training-bio__instructor-name {
   color: black;
   display: block;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .training-bio__instructor-title {
