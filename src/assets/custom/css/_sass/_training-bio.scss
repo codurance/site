@@ -1,0 +1,17 @@
+.training-bio {
+  @include lateral-spacing;
+  display: flex;
+  position: relative;
+
+  @include small-and-medium{
+    padding-top: 50px;
+  }
+
+  @include medium-large-and-extra-large {
+    @include max-width--out-there;
+  }
+
+  @include large-and-extra-large {
+    padding-top: 100px;
+  }
+}
