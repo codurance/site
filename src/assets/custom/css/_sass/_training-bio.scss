@@ -37,10 +37,6 @@
   width: 164px;
 }
 
-.training-bio__content-container {
-  padding: 20px;
-}
-
 .training-bio__instructor-title,
 .training-bio__instructor-name {
   color: black;
@@ -54,4 +50,12 @@
 
 .training-bio__instructor-name {
   @extend .training-hero__instructor-name;
+}
+
+.training-bio__content-container {
+  padding: 20px;
+}
+
+.training-bio__content {
+  @include mercer;
 }
