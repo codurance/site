@@ -49,19 +49,20 @@
 
 .training-bio__content-container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 287px;
+
+  &.training-bio__content-container--open {
+    height: 500px;
+  }
 }
 
 .training-bio__content-wrapper {
   transition: all 0.5s ease;
-
-  &:not(.training-bio__content-wrapper--open) {
-    height: 210px;
-    overflow: hidden;
-  }
-
-  &.training-bio__content-wrapper--open {
-    height: 500px;
-  }
+  flex: 1;
+  overflow: hidden;;
 }
 
 .training-bio__content {
