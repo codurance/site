@@ -52,13 +52,15 @@
 }
 
 .training-bio__content-wrapper {
+  transition: all 0.5s ease;
+
   &:not(.training-bio__content-wrapper--open) {
     height: 210px;
     overflow: hidden;
   }
 
   &.training-bio__content-wrapper--open {
-
+    height: 500px;
   }
 }
 
