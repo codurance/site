@@ -1,4 +1,4 @@
-.training-bio__wrapper {
+.training-bio {
   @include lateral-spacing;
 
   @include medium-large-and-extra-large {
@@ -6,10 +6,15 @@
   }
 }
 
-.training-bio__wrapper-inner {
+.training-bio__inner {
   @include style-card-box-shadow;
   display: flex;
-  position: relative;
+  @include small {
+    flex-direction: column;
+  }
+  @include medium-large-and-extra-large {
+    flex-direction: row;
+  }
 }
 
 .training-bio__instructor-container {
