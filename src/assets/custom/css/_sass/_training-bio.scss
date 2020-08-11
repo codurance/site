@@ -1,13 +1,3 @@
-.training-bio {
-  @include small-and-medium {
-    padding-top: 50px;
-  }
-
-  @include large-and-extra-large {
-    padding-top: 100px;
-  }
-}
-
 .training-bio__wrapper {
   @include lateral-spacing;
 
