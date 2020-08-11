@@ -52,9 +52,14 @@
 }
 
 .training-bio__content-wrapper {
-  height: 210px;
-  overflow: hidden;
-  margin-bottom: 4px;
+  &:not(.training-bio__content-wrapper--open) {
+    height: 210px;
+    overflow: hidden;
+  }
+
+  &.training-bio__content-wrapper--open {
+
+  }
 }
 
 .training-bio__content {
