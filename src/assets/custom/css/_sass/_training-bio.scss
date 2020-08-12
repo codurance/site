@@ -125,6 +125,7 @@
 
   .training-bio--open & {
     &::after {
+      top: 15px;
       transform: rotate(225deg);
     }
   }
