@@ -48,7 +48,7 @@
 }
 
 .training-bio__content-container {
-  padding: 20px;
+  padding: 25px 35px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,7 +62,18 @@
 .training-bio__content-wrapper {
   transition: all 0.5s ease;
   flex: 1;
-  overflow: hidden;;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+    content: "";
+    height: 210px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 .training-bio__content {
@@ -72,6 +83,7 @@
 .training-bio__read-more-button {
   background: none;
   border: none;
+  cursor: pointer;
   @include ponti-bold;
 
   &::after {
@@ -85,6 +97,6 @@
     position: relative;
     top: 9px;
     transform: rotate(45deg);
-    transition: border-color 0.5s, transform 0.5s, top 0.5s;
+    transition: transform 0.5s, top 0.5s;
   }
 }
