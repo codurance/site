@@ -16,7 +16,15 @@
   }
 
   .training-bio--open & {
-    max-height: 1000px;
+    @include medium {
+      max-height: 830px;
+    }
+    @include large {
+      max-height: 600px;
+    }
+    @include extra-large {
+      max-height: 450px;
+    }
   }
 
   @include small {
@@ -65,7 +73,6 @@
 }
 
 .training-bio__content-wrapper {
-  transition: all 0.5s ease;
   flex: 1;
   overflow: hidden;
   position: relative;
@@ -76,9 +83,18 @@
       content: "";
       height: 210px;
       left: 0;
+      opacity: 1;
       position: absolute;
       right: 0;
       top: 0;
+      transition: opacity 1s;
+    }
+  }
+
+  .training-bio--open & {
+    &::after {
+      content: "";
+      opacity: 0;
     }
   }
 }
@@ -105,5 +121,11 @@
     top: 9px;
     transform: rotate(45deg);
     transition: transform 0.5s, top 0.5s;
+  }
+
+  .training-bio--open & {
+    &::after {
+      transform: rotate(225deg);
+    }
   }
 }
