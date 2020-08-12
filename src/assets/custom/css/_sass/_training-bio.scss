@@ -54,7 +54,7 @@
   align-items: flex-start;
   height: 287px;
 
-  &.training-bio__content-container--open {
+  .training-bio--open & {
     height: 500px;
   }
 }
@@ -65,14 +65,16 @@
   overflow: hidden;
   position: relative;
 
-  &::after {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
-    content: "";
-    height: 210px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+  .training-bio:not(.training-bio--open) & {
+    &::after {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%);
+      content: "";
+      height: 210px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
 
