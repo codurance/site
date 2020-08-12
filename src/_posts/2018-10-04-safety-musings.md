@@ -8,7 +8,7 @@ description: Where I muse about safety
 image: 
     src: /assets/custom/img/blog/2018-09-03-rest-review/relaxfortwo.jpg
 tags: 
-- software craftsmanship
+- Software Craftsmanship
 ---
 
 So here I am, again, this time with some serious musing around what we do as engineers/developers/craftpeople. Our languages, tools, and techniques, determine what we can do, how good our systems are, how safe, how secure, and how fit for the task. Because this affects people's lives we need to be careful on what we do. Robert C. Martin (Uncle Bob) has been talking about the necessity of a code similar to the Hippocratic Oath. I am of the believe that it will come the time in which we will need to be part of a professional body to perform our duties (after all, the Hippocratic Oath did not stop the need for the Medical license)

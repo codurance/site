@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/birthday-wish.jpeg
 tags:
-- craftsmanship
+- Software Craftsmanship
 ---
 
 Today is my birthday. Yay! And since today is all about me, I will

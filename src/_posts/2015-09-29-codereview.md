@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015-09-29-codereview.jpg
 tags:
-- craftsmanship
+- Software Craftsmanship
 - codereview
 ---
 

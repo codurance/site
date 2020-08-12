@@ -9,7 +9,7 @@ image:
 alias: [/2016/08/08/communicating-design]
 tags:
 - software design
-- craftsmanship
+- Software Craftsmanship
 categories:
 - software-creation
 ---

@@ -8,8 +8,8 @@ author: Raquel M Carmena
 image:
   src: /assets/custom/img/blog/2017-08-20-my-first-steps-as-an-embedded-sw-craftswoman.jpg
 tags:
-- software craftsmanship
-- team
+- Software Craftsmanship
+- Team
 - lunch & learn
 - apprenticeship 
 - learning

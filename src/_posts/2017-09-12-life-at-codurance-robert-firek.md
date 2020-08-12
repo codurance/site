@@ -10,7 +10,7 @@ image:
 tags:
 - life at codurance 
 - career 
-- software craftsmanship
+- Software Craftsmanship
 - apprenticeship
 
 ---

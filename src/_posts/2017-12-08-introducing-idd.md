@@ -9,7 +9,7 @@ description: Most software projects become very difficult to maintain and evolve
 image:
    src: /assets/custom/img/blog/2017-12-08-introducting-idd/IDD.png
 tags:
-- craftsmanship
+- Software Craftsmanship
 - software design
 - IDD
 - outside-in

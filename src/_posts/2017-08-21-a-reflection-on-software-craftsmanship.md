@@ -8,7 +8,7 @@ author: Mashooq Badar, Sandro Mancuso
 image:
     src: /assets/custom/img/blog/writing-code.jpg
 tags:
-- craftsmanship 
+- Software Craftsmanship 
 - community 
 ---
 

@@ -10,9 +10,9 @@ image:
    src: /assets/custom/img/blog/2018-01-19-one-year-of-codurance-barcelona/codurance-barcelona-team-sq.jpg
 tags:
 - personal growth
-- team
+- Team
 - life at codurance
-- software craftsmanship
+- Software Craftsmanship
 ---
 
 <img src="{{ site.baseurl }}/assets/custom/img/blog/2018-01-19-one-year-of-codurance-barcelona/codurance-barcelona-team.jpg" alt="domain-codomain-image" style="margin: 0 auto;" />

@@ -10,7 +10,7 @@ alias: [/2016/04/12/we-did-it-wrong-but-not-in-vain/]
 tags:
 - inflection point
 - design
-- craftsmanship
+- Software Craftsmanship
 - TDD
 categories:
 - expert-advice

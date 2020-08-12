@@ -8,7 +8,7 @@ author: Mashooq Badar
 image:
     src: /assets/custom/img/blog/hierarchy-of-opinion.jpg
 tags:
-- craftsmanship
+- Software Craftsmanship
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 - scrum
 - scrum master
 - product owner
-- team
+- Team
 - retrospective
 - LEGO
 ---

@@ -12,7 +12,7 @@ image:
 abstract: Codurance launches a partnership with Skills Matter to strengthen skills transfer needs for our clients
 tags: 
 - skills matter
-- software craftsmanship
+- Software Craftsmanship
 - partnerships
 ---
 

@@ -7,7 +7,7 @@ author: Toby Retallick
 image:
     src: http://www.retrogamer.net/wp-content/uploads/2014/03/SirAlanSugarWith464.png
 tags:
-- craftsmanship
+- Software Craftsmanship
 - apprenticeship
 ---
 

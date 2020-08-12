@@ -10,7 +10,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/wrong-time.jpeg
 tags:
-- craftsmanship
+- Software Craftsmanship
 - software modernisation
 ---
 

@@ -12,7 +12,7 @@ tags:
 - scrum
 - scrum master
 - product owner
-- team
+- Team
 ---
 
 Few days ago, I attended the [2-day Martine Devos' Certified Scrum Master, Estimation & Planning Class](https://skillsmatter.com/courses/151-martine-devos-scrum-master) at [Skills Matter](https://skillsmatter.com/). I had the privilege of meeting and learning from [Martine Devos](https://www.scrumalliance.org/community/profile/mdevos), one of the best Scrum trainer in Europe. This also gave me the opportunity to discuss many aspects of the Scrum process.

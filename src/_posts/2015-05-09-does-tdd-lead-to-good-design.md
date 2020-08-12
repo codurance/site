@@ -10,7 +10,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015_05_12_does_tdd_lead_to_good_design.jpg
 tags:
-- craftsmanship
+- Software Craftsmanship
 - quality
 - TDD
 - design

@@ -11,7 +11,7 @@ category: agile
 tags:
 - scrum
 - user stories
-- team
+- Team
 ---
 
 The challenge of Software development is about building a product which fulfills both business and users' expectations. 
