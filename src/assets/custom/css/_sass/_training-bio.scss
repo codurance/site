@@ -12,10 +12,18 @@
   transition: max-height 0.5s ease;
 
   .training-bio:not(.training-bio--open) & {
-    max-height: 300px;
+    @include small {
+      max-height: 590px;
+    }
+    @include medium-large-and-extra-large {
+      max-height: 300px;
+    }
   }
 
   .training-bio--open & {
+    @include small {
+      max-height: 1660px;
+    }
     @include medium {
       max-height: 830px;
     }
@@ -70,6 +78,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include small {
+    .training-bio:not(.training-bio--open) & {
+      height: 300px;
+    }
+  }
 }
 
 .training-bio__content-wrapper {
