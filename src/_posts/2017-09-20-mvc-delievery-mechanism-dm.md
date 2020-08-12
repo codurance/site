@@ -8,7 +8,7 @@ author: Sandro Mancuso
 image:
    src: /assets/custom/img/blog/2017-09-20-mvc-delivery-mechanism/mvc-delivery-mechanism-dm.png
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - software design
 - mvc
 - IDD

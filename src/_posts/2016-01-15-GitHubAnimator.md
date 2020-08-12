@@ -10,7 +10,7 @@ tags:
 - git 
 - github
 - automation
-- Software Craftsmanship
+- software craftsmanship
 ---
 
 ### The Beginning

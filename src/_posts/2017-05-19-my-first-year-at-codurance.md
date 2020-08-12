@@ -8,7 +8,7 @@ image:
    src: /assets/custom/img/blog/my-first-year-at-codurance/software-craftsmanship-apprentice-mentor.jpg
 tags:
 - apprenticeship
-- Software Craftsmanship
+- software craftsmanship
 - practices
 - mentoring
 - life at codurance

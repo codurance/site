@@ -10,8 +10,8 @@ description: Keeping it simple isn’t easy but it is fundamental to valuable so
 image:
   src: /assets/custom/img/blog/2020-08-13-why-keeping-it-simple-is-good-for-software-delivery/why-keeping-it-simple-is-good-for-software-delivery.jpg
 tags:
-  - Software Craftsmanship
-  - Team
+  - software craftsmanship
+  - team
 
 ---
 

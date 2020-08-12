@@ -13,7 +13,7 @@ canonical:
     name: my personal blog
     href: https://neomatrix369.wordpress.com/2015/11/23/my-first-couple-of-months-at-codurance/
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - apprenticeship
 - community
 - mentoring

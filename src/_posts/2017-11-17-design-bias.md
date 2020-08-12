@@ -10,7 +10,7 @@ description: This week we had a software design night at Codurance. We spent alm
 image:
    src: /assets/custom/img/blog/2017-11-17-software-design_bias.png
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - software design
 - IDD
 - outside-in

@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2014_12_12/you_are_going_to_call_me_what.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - TDD
 - test-driven-development
 - naming

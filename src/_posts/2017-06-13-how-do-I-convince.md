@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
    src: /assets/custom/img/blog/2017-06-13-how-do-I-convince.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - practices
 - TDD
 - extreme programming

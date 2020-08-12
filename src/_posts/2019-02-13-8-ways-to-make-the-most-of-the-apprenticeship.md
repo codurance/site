@@ -12,7 +12,7 @@ image:
 tags:
     - learning
     - apprenticeship
-    - Software Craftsmanship
+    - software craftsmanship
     - life at codurance
 ---
 I’ve just reached the end of Codurance’s utterly fantastic [Apprenticeship Program][apply]. Looking back on the last three months, I wondered: what advice might I give to colleagues lucky enough to be starting the program in the future? What would I do differently if I could turn back the clock to day one?

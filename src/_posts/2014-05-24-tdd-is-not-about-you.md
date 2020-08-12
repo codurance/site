@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/tdd_is_not_about_you.gif
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - TDD
 ---
 

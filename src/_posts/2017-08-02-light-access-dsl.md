@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
    src: /assets/custom/img/blog/2017-08-02-light-access.png
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - Clean code
 - jdbc
 - postgresql

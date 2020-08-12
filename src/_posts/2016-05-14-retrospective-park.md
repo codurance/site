@@ -17,7 +17,7 @@ tags:
 - sprint
 - retrospective
 - outdoor-retrospective
-- Team
+- team
 - collaboration
 categories:
 - coaching

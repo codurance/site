@@ -11,7 +11,7 @@ image:
 tags:
 - coderetreat
 - GDCR
-- Software Craftsmanship
+- software craftsmanship
 
 ---
 

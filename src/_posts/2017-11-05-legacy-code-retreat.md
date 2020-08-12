@@ -13,7 +13,7 @@ tags:
 - personal growth
 - coderetreat
 - legacy-code
-- Team
+- team
 ---
 
 # Introduction

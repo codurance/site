@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/test-deafness.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - TDD
 ---
 

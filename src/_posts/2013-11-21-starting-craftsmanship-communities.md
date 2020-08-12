@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/live-community.jpeg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - community
 ---
 

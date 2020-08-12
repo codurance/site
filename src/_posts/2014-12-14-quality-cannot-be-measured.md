@@ -10,7 +10,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2014-12-14-quality-cannot-be-measured.png
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - TDD
 - test-driven-development
 - quality

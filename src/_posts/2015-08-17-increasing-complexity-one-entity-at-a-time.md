@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015-08-17-increasing-complexity.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - design
 - architecture
 - inflection point

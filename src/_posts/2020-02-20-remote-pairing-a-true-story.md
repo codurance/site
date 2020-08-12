@@ -12,7 +12,7 @@ image:
       text: Photo by Johanneke Kroesbergen-Kamps on Unsplash
       href: https://unsplash.com/photos/gkm7jk_vdXU
 tags:
-    - Software Craftsmanship
+    - software craftsmanship
     - life at codurance
     - pair-programming
 ---

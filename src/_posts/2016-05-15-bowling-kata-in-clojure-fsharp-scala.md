@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2016-05-16-bowling.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - TDD
 - scala
 - clojure

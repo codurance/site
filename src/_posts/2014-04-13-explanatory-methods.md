@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/explanatory_methods.png
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - screencast
 - TDD
 ---

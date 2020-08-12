@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015-06-17-inflection-point-cover.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - design
 - architecture
 - inflection point

@@ -10,7 +10,7 @@ alias: [/2016/01/15/premature-microservices/]
 tags:
 - microservices
 - architecture
-- Software Craftsmanship
+- software craftsmanship
 categories:
 - expert-advice
 ---

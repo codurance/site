@@ -9,7 +9,7 @@ description: Can design emerge from TDD? Should we always use TDD to design soft
 image:
    src: /assets/custom/img/blog/2018-05-26-should-we-always-use-TDD-to-design/fractal.jpg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - software design
 - TDD
 - outside-in

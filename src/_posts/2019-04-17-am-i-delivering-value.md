@@ -10,7 +10,7 @@ image:
     src: /assets/custom/img/blog/todaywasagoodday.jpg
     thumbnail: /assets/custom/img/blog/todaywasagoodday.jpg
 tags: 
-- Software Craftsmanship
+- software craftsmanship
 ---
 
 There comes a time in everyone's career when the question, "Am I delivering value?" becomes persistent in one's mind. I have asked this of myself many times and I'm sure most others have. Within in the context of Software Delivery the question is prevalent. My feeling is that we should ask this question regularly and take responsibility to answer with ample context and minimum bias.

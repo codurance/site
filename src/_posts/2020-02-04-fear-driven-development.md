@@ -12,7 +12,7 @@ image:
       text: Photo by Luis Reyes on Unsplash
       href: https://unsplash.com/photos/mTorQ9gFfOg
 tags:
-- Software Craftsmanship
+- software craftsmanship
 - decision-making
 - legacy-code
 ---

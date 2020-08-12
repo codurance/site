@@ -13,7 +13,7 @@ alias: [/2016/07/25/thoughts-on-coupling-in-software-design]
 tags:
 - coupling
 - software design
-- Software Craftsmanship
+- software craftsmanship
 - software modernisation
 categories:
 - software-creation
