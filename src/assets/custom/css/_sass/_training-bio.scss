@@ -9,6 +9,16 @@
 .training-bio__inner {
   @include style-card-box-shadow;
   display: flex;
+  transition: max-height 0.5s ease;
+
+  .training-bio:not(.training-bio--open) & {
+    max-height: 300px;
+  }
+
+  .training-bio--open & {
+    max-height: 1000px;
+  }
+
   @include small {
     flex-direction: column;
   }
@@ -48,15 +58,10 @@
 }
 
 .training-bio__content-container {
-  padding: 25px 35px 20px;
+  padding: 25px 35px 27px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 287px;
-
-  .training-bio--open & {
-    height: 500px;
-  }
 }
 
 .training-bio__content-wrapper {
