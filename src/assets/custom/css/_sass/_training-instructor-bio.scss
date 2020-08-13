@@ -44,9 +44,7 @@
 }
 
 .training-bio__instructor-container {
-  background-color: $navy--ultralight;
-  background-image: url('#{$site-base-url}/assets/custom/img/training/training-instructor-bio-bg.png');
-  background-position: top center;
+  background-image: url('#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -54,9 +52,12 @@
 
   @include small {
     align-items: center;
-    background-size: 100% 100%;
+    background-position: right bottom 88px;
+    background-size: 150% auto;
   }
   @include medium-large-and-extra-large {
+    background-color: $navy--ultralight;
+    background-position: top center;
     background-size: 100% auto;
   }
 }
