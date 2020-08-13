@@ -44,11 +44,14 @@
 }
 
 .training-bio__instructor-container {
-  align-items: center;
   background-color: $navy--ultralight;
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
+
+  @include small {
+    align-items: center;
+  }
 }
 
 .training-bio__instructor-avatar {
