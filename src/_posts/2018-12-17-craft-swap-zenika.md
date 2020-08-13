@@ -10,7 +10,7 @@ image:
    src: /assets/custom/img/blog/2018-08-31-zenika-craftsman-swap/znk.png
 tags:
 - codurance
-- craftsmanship
+- software craftsmanship
 - craftswap
 ---
 

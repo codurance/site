@@ -11,7 +11,7 @@ image:
 tags:
 - growth
 - first steps
-- craftsmanship
+- software craftsmanship
 ---
 As of now, there are a lot of developers in the IT industry willing to advance in their professional careers who don't know how.
 This is meant to be a quick reference for them.

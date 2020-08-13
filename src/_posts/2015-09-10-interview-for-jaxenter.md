@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015-09-10-interview-jaxenter.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 ---
 
 > Thinking of code as a beautiful work of art is a mistake. But at the same time we need to start seeing coding as a genuine skill that deserves professional recognition, says leading Software Craftsmanship advocate and JAX London speaker Sandro Mancuso.

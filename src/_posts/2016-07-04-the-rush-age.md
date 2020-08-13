@@ -13,7 +13,7 @@ image:
       text: Always in a Rush by Michael Gil
       href: https://www.flickr.com/photos/msvg/5712968432
 categories:
-- craftsmanship
+- software craftsmanship
 tags:
 - practices
 - productivity

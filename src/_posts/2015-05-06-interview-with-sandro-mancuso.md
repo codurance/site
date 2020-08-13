@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015_04_30_infoq_interview/thesoftwarecraftsman_infoq.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 - quality
 - agile
 - codurance-way

@@ -10,7 +10,7 @@ alias: [/2016/03/03/cohesion-cornerstone-software-design/]
 tags:
 - cohesion
 - software design
-- craftsmanship
+- software craftsmanship
 categories:
 - software-creation
 --- 

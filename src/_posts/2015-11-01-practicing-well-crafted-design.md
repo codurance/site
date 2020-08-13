@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/2015-11-01-incremental-design.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 - Domain Driven Design
 - incremental-design
 - deliberate-practice

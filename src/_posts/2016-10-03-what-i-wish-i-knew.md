@@ -10,7 +10,7 @@ attribution:
     text: Young poplars on Westrop Farm (licensed under Creative Commons by D Gore)
     href: http://www.geograph.org.uk/photo/2469549 
 tags:
-- craftsmanship
+- software craftsmanship
 - practices
 - productivity
 canonical:
