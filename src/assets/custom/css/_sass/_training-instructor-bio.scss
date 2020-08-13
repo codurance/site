@@ -45,12 +45,19 @@
 
 .training-bio__instructor-container {
   background-color: $navy--ultralight;
+  background-image: url('#{$site-base-url}/assets/custom/img/training/training-instructor-bio-bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
 
   @include small {
     align-items: center;
+    background-size: 100% 100%;
+  }
+  @include medium-large-and-extra-large {
+    background-size: 100% auto;
   }
 }
 
