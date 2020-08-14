@@ -44,13 +44,21 @@
 }
 
 .training-bio__instructor-container {
-  background-color: $navy--ultralight;
+  background-image: url('#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg');
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
 
   @include small {
     align-items: center;
+    background-position: right bottom 88px;
+    background-size: 150% auto;
+  }
+  @include medium-large-and-extra-large {
+    background-color: $navy--ultralight;
+    background-position: top center;
+    background-size: 100% auto;
   }
 }
 
@@ -73,13 +81,11 @@
 
 .training-bio__instructor-title {
   @include ponti-bold;
-  color: white;
   margin-bottom: 15px;
 }
 
 .training-bio__instructor-name {
   @include mercer-bold;
-  color: white;
   line-height: 16px;
 }
 
