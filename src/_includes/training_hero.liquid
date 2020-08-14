@@ -24,7 +24,7 @@
           testable, maintainable, and an expression of the business domain. The course is entirely hands-on,
           designed to teach developers practical techniques they can immediately apply to real-world projects.
           </p>
-          {% capture text %}{% t single-training.contact-cta-text %}{% endcapture %}
+          {% capture text %}{% t single-training.contact-cta-button-text %}{% endcapture %}
           {% capture href %}#{% t get-in-touch.anchor-id %}{% endcapture %}
           {% include cta_primary_link.html href=href color='coral' text=text %}
         </div>
@@ -32,7 +32,6 @@
       <div class="training-hero-details__form">
         <h2 class="training-hero-details__form-title">{% t single-training.contact-cta-title %}</h2>
         <p>{% t single-training.contact-cta-description %}</p>
-        {% capture text %}{% t single-training.contact-cta-text %}{% endcapture %}
         {% include cta_primary_link.html href=href color='coral' text=text %}
       </div>
     </div>
