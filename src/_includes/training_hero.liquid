@@ -32,6 +32,8 @@
       <div class="training-hero-details__form">
         <h2 class="training-hero-details__form-title">{% t single-training.contact-cta-title %}</h2>
         <p>{% t single-training.contact-cta-description %}</p>
+        {% capture text %}{% t single-training.contact-cta-text %}{% endcapture %}
+        {% include cta_primary_link.html href=href color='coral' text=text %}
       </div>
     </div>
   </div> 
