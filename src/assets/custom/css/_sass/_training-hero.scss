@@ -180,6 +180,12 @@ $form-width: 385px;
   text-align: center;
 }
 
+.training-hero-contact-cta__description {
+  @include mercer;
+  text-align: center;
+  padding: 10px 20px;
+}
+
 .get-in-touch {
   .single-training-form & {
     position: relative;
