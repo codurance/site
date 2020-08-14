@@ -10,7 +10,7 @@ tags:
 - scalatra
 - scala
 - SBT
-- craftsmanship
+- software craftsmanship
 - Domain Driven Design
 --- 
 

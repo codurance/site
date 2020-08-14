@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/balanced-abstraction-principle.jpeg
 tags:
-- craftsmanship
+- software craftsmanship
 - quality
 - design
 ---

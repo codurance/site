@@ -8,7 +8,7 @@ author: Sandro Mancuso
 image:
    src: /assets/custom/img/blog/2017-10-23-outside-in-design/outside-in.png
 tags:
-- craftsmanship
+- software craftsmanship
 - software design
 - IDD
 - outside-in

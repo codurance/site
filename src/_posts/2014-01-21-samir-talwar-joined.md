@@ -8,7 +8,7 @@ image:
     src: /assets/custom/img/blog/samir_talwar.jpg
 tags:
 - codurance
-- craftsmen
+- software craftsmanship
 ---
 
 We are very happy to announce that [Samir Talwar](https://twitter.com/samirtalwar) is joining us as our first craftsman. Mash and I first met Samir back in October 2010, when he joined [LSCC](http://londonswcraft.com). Samir became a very active LSCC member, ran many technical sessions, became an LSCC Associate, and is now part of the LSCC organisation team.

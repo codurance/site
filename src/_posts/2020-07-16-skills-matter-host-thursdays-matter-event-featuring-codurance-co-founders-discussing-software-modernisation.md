@@ -14,7 +14,7 @@ image:
 tags:
     - software modernisation
     - events
-    - partnership 
+    - partnerships 
 ---
 
 On Thursday 2nd July 2020, our partner Skills Matter hosted a hugely popular online event featuring Codurance’s Co-Founders Sandro Mancuso and Mashooq Badar.

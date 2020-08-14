@@ -9,8 +9,7 @@ author: Raquel M Carmena
 image:
    src: /assets/custom/img/blog/2018-03-31-rereading-the-mythical-man-month/book.png
 tags:
-- craft
-- craftsmanship
+- software craftsmanship
 - silver bullet
 - information-hiding
 - end-to-end skeleton

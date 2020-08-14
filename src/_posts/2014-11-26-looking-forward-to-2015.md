@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/codurance_2015.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 - codurance
 ---
 

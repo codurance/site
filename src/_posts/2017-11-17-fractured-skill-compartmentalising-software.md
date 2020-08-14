@@ -11,7 +11,7 @@ image:
       text: by Sergey Zolkin
       href: https://unsplash.com/photos/m9qMoh-scfE 
 tags:
-- craftsmanship 
+- software craftsmanship 
 ---
 
 An assembly line is where the machine or a process directs the person to perform a well-defined task. Here, the person is little more than a piece of the machinery to churn out the same product over and over again. There is no room for imagination and innovation. The human is reduced to a drudge. The pursuit of **mastery** is not relevant.

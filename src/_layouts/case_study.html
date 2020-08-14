@@ -47,14 +47,12 @@ layout: default
             <div class="mb-5">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-3">Services:</h3>
                 <ul class="list-unstyled">
-                    {% assign clients = site.data.clients | where:'name', page.company-name %}
-                    {% for client in clients %}
-                        {% for service in client.services %}
-                        <li class="my-3">
-                            <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
-                            <span class="g-color-gray-dark-v4 g-text-underline--none--hover">{% t clients.{{service}}_title %}</span>
-                        </li>
-                        {% endfor %}
+                    {% assign client=site.data.clients[page.client-id]%}
+                    {% for service in client.services %}
+                    <li class="my-3">
+                        <i class="align-middle g-color-primary g-font-size-15 mr-2 icon-education-009 u-line-icon-pro"></i>
+                        <span class="g-color-gray-dark-v4 g-text-underline--none--hover">{% t clients.{{service}}_title %}</span>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>

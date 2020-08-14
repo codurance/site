@@ -23,28 +23,33 @@
   position: relative;
   cursor: pointer;
 
-  &::after {
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    background-size: 25px auto;
+  &::after,
+  &::before {
+    background-color: $coral;
     content: '';
-    display: block;
-    padding: 10px 45px 10px 10px;
-    position: absolute;
+    height: 3px;
     right: 0;
+    position: absolute;
     top: 50%;
-    transform: translateY(calc(-50% - 3px));
+    width: 30px;
+    transition: transform 500ms ease;
+    transform-origin: center;
   }
 
   .accordion-panel:not(.active) & {
     &::after {
-      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-plus.svg");
+      transform: rotate(-90deg);
+    }
+
+    &::before {
+      transform: rotate(-180deg);
     }
   }
 
   .accordion-panel.active & {
-    &::after {
-      background-image: url("#{$site-base-url}/assets/custom/img/tabber/icon-minus.svg");
+    &::after,
+    &::before {
+      transform: rotate(0);
     }
   }
 }
@@ -65,4 +70,5 @@
 
 .accordion-panel__title {
   @include freed-bold;
+  pointer-events: none;
 }

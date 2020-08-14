@@ -7,7 +7,7 @@ author: Halima Koundi
 image:
    src: /assets/custom/img/blog/ncraft-2017/software-craftsmanship-conference-paris.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 - practices
 - community
 ---
