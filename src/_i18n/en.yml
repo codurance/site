@@ -189,8 +189,8 @@ publications-post:
   date_title: Posted
 publications:
   content-type: Publication
+  hubspot-cta-id: 2021182d-0c96-404f-aac9-7edadbc7c266
   teaser-cta: Learn More
-  view-all: View all publications
 services:
   learn-more: Learn more
   page-intro:
@@ -280,7 +280,7 @@ careers:
   experience_description: XP skills are very important to us. We expect you to be proficient at Test Driven Development, Pair Programming, Simple Design, and Continuous Integration. You will have a good appreciation for Clean Code. We work in Agile environments so we expect you to be able to work effectively in such an environment.
   drive_title: Drive
   drive_description: We believe that our occupation is more than just a job. We apply deliberate learning practices to acquire new skills and to deepen our existing expertise. We do this out of a sense of professional pride, constantly striving to improve. We are looking for people who share our drive to continuously improve, to learn and to mentor those around them.
-  our_roles_title: Our Roles
+  our_roles_title: View All Roles
   software_craftspeople_title: Software Craftspeople
   software_craftspeople_description: Our Craftspeople have a broad range of skills and varying depths of expertise. Learn more about what it means to be a Craftsperson.
   craftspeople_in_training_title: Craftspeople-in-training
@@ -673,6 +673,7 @@ software-modernisation:
     teaser:
       title: Software Modernisation in distributed work times
       description: In this webinar, Sandro Mancuso, Co-Founder of Codurance and José Enrique Rodríguez Huerta, Managing Director of Codurance Spain, explains why organisations need Software Modernisation in the current context and the challenges it addresses.
+      hubspot-cta-id: 50b4f0e1-0243-4980-88a3-5c682bf2835c
       cta: Watch Webinar
       cta-href: https://info.codurance.com/en/software-modernisation-in-distributed-work-times
 
@@ -730,26 +731,22 @@ service-line-case-studies:
   card-one:
     heading: ASOS
     subheading: Enhanced business agility through Software Modernisation
-    button: Download Case Study
-    url: https://info.codurance.com/en/asos-case-study
+    hubspot-cta-id: 64ebc84b-b009-4c02-a945-9bb9d048e524
 
   card-two:
     heading: Mango
     subheading: Strategic advice, cultural change, and monolith to microservices migration
-    button: Download Case Study
-    url: https://info.codurance.com/en/mango-case-study
+    hubspot-cta-id: 84ca878f-c6e5-44ff-9aae-c944fe1254a0
 
   card-three:
     heading: eClinicalWorks
     subheading: Architecture modularisation and large scale code redesign and refactoring
-    button: Download Case Study
-    url: https://info.codurance.com/en/eclinicalworks-case-study
+    hubspot-cta-id: 36e26b92-4cd2-4986-8663-e7091b082971
 
   card-four:
     heading: BestSecret
     subheading: Cloud migration, architecture evolution, and cultural alignment
-    button: Download Case Study
-    url: https://info.codurance.com/en/best-secret-case-study
+    hubspot-cta-id: 1bfe3487-b1e1-41b7-b9d9-57fdedc9cf3d
 
 service-line-testimonials:
   section-title: Hear it from our clients
@@ -774,15 +771,11 @@ service-line-testimonials:
 
 training-overview:
   hero-title: Training
-  hero-sub-title: Upskilling for more effective teams
-  hero-description: Leverage focused training courses to upskill your teams at every phase of the project. We can create a bespoke training plan adapted to your business needs.
-  katalyst-banner:
-    title: Katalyst Title
-    description: Katalyst Description
-    hubspot-cta-form-id: 93abc185-db09-407f-8616-33888b43e4c0
+  hero-sub-title: Empower your technology teams with focused training from our world class experts
+  hero-description: Enhance your team's skillset with our industry leading training courses. We create bespoke training plans adapted to your business needs.
   contact-form:
-    title: Tell us about your challenges
-    description: Find out how Codurance's solutions can help your business
+    title: Let's discuss your training needs
+    description: We are excited to learn more about your business. Find out how Codurance’s training courses can power your technology teams.
     hubspot-cta-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
 
 learn-more: Learn more

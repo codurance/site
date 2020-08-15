@@ -2,7 +2,7 @@
 layout: post
 asset-type: post
 name: breaking-down-the-monolith
-title: Signs Your Software is Rotting
+title: Breaking Down The Monolith
 date: 2020-07-30 00:00:00 +00:00
 author: Matt Belcher
 description: This article will explore some approaches for dealing with monolithic codebases, why you might want to break them down into smaller components, and some techniques for doing so.

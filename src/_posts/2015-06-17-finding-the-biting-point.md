@@ -11,7 +11,7 @@ tags:
 - apprentice
 - mentoring
 - learning
-- teamwork
+- team
 ---
 
 ## The inevitable imbalance in pair programming.

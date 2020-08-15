@@ -36,7 +36,7 @@
   }
 }
 
-.curated-publications__cta {
+.curated-publications__cta .cta_button{
   @include small {
     @include cta--secondary-dark;
   }

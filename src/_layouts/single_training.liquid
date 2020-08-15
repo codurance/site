@@ -2,3 +2,17 @@
 layout: default
 ---
 
+{% include training_hero.liquid %}
+
+{% if site.lang == 'es' %}
+  {% assign accordion_data = site.data.training_accordion_es %}
+{% else %}
+  {% assign accordion_data = site.data.training_accordion_en %}
+{% endif %}
+
+{%- include accordion.liquid accordion_data=accordion_data -%}
+{%- capture title -%}{% t services.clients-teaser-title %}{%- endcapture -%}
+<section class="single-training__instructor-bio">
+  {% include training_instructor_bio.liquid %}
+</section>
+{% include clients_teaser.html class="services-page__clients-teaser" client_ids=site.data.client_ids_by_page.single-training-pages title=title %}

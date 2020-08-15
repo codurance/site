@@ -13,7 +13,7 @@ image:
         text: Concentration..., by Simply CVR
         href: https://www.flickr.com/photos/seeveeaar/3773849114
 tags:
-- craftsmanship
+- software craftsmanship
 ---
 
 Someone who aspires to quality.

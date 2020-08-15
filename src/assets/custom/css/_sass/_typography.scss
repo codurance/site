@@ -40,6 +40,13 @@
   letter-spacing: 1.8px;
 }
 
+@mixin foster {
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
 @mixin bold {
   font-family: proxima-nova;
   font-weight: 700;
@@ -161,5 +168,10 @@
 
 @mixin ponti-bold {
   @include ponti;
+  @include bold;
+}
+
+@mixin foster-bold {
+  @include foster;
   @include bold;
 }

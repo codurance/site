@@ -1,0 +1,82 @@
+panels:
+  - id: why-attend
+    title: Why Attend?
+    content: training_content_why_attend.liquid
+  - id: audience
+    title: Audience
+    content: training_content_audience.liquid
+  - id: course-content
+    title: Course Content
+    content: training_content_course_content.liquid
+  - id: prerequisites
+    title: Prerequisites
+    content: training_content_prerequisites.liquid
+
+crafting-code-and-crafted-design:
+  why-attend:
+    intro: Software Craftsmanship is at the heart of this course. Throughout this training series, your team will learn about the Software Craftsmanship mindset and how to apply it within your organisation.
+    clean-code-headline-one: Writing Clean Code is difficult. Cleaning existing code, even more so.
+    why-attend: "Your team should attend if you need them to:"
+    why-attend-list:
+      - Align technology to business requirements
+      - Write clean code that is easy to understand, maintain, and adapt
+      - "Become more proficient in Test-Driven Development (TDD): using tests to design and build"
+    clean-code-headline-two: Clean code necessitates good design.
+    learning-objectives-title: "Your team will learn how to:"
+    learning-objectives-list:
+      - Understand design principles that lead to clean code
+      - Avoid over-engineering and large rewrites by incrementally evolving design using tests
+    learning-outcome: Once your team has mastered their understanding of these principles, they will apply them to legacy code. This will allow them to gain confidence working with legacy code.
+    software-design-intro: The software design portion of this training series focuses on the application and microservices levels using business requirements to drive design making. Many of the design discussions during the exercises are focused on real-world scenarios that can be implemented in your organisation.
+    application-title: "Application:"
+    application-list:
+      - internal structure
+      - layers
+      - components
+      - delivery mechanism
+      - core domain
+    microservices-title: "Microservices:"
+    microservices-list:
+      - define the responsibility of each service
+      - how services collaborate
+      - internal/external visibility
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - are familiar with a minimum of one Object-Oriented language
+      - are able to understand Java or C#
+      - are able to write and execute unit tests using a framework (such as JUnit, NUnit, etc.)
+      - have a basic understanding of mock objects
+
+  course-content:
+    intro: "Principles of:"
+    list:
+      - Test-Driven Development (TDD)
+      - Object-Orientated Design (OOD)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+    second-list:
+      - TDD lifecycle and modelling behaviors
+      - Writing unit tests that express intent, not implementation
+      - Using unit tests to drive good design
+      - Expressive code
+      - Testing and refactoring legacy code
+      - How to structure projects so that it expresses what the application does and what it is about
+      - Understanding the differences between layers, hexagons, features, and components
+      - Identifying services from business rules
+      - Express design and architecture in code, but keeping your domain clear
+      - Understanding Impact Mapping and how a services architecture can be derived from it
+
+  prerequisites:
+    intro: The is a hands on training course. Software development teams will be required to write a lot of code.
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Be able to create projects, build source code, and run test cases in their development environment
+      - "Have a development environment that consists of the following:"
+      - A distributed version-control system such as Github is preferable
+    second-list:
+      - Object-Oriented language
+      - A unit test framework
+      - A mocking library

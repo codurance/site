@@ -1,0 +1,5 @@
+{% assign data = include.accordion_data.course-content %}
+
+<p>{{ data.intro }}</p>
+{% include unordered_list.liquid list=data.list %}
+{% include unordered_list.liquid list=data.second-list %}

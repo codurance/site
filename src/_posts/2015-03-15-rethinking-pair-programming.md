@@ -7,7 +7,7 @@ author: Sandro Mancuso
 image:
     src: /assets/custom/img/blog/muppetspairprogramming.jpg
 tags:
-- craftsmanship
+- software craftsmanship
 - quality
 - pair-programming
 - codurance-way

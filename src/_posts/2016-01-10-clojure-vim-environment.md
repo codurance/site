@@ -9,7 +9,7 @@ image:
 tags:
 - clojure 
 - vim
-- craftsmanship
+- software craftsmanship
 ---
 
 The [Cursive](https://cursive-ide.com/) plugin for Clojure is now out of its beta testing phase. I have been using it throughout its beta program and, I must say, it is pretty good. Sure, the refactoring capabilities are not quite on a par with those of IntelliJ for Java, but then Clojure is dynamic and asking for that kind of power is asking for the impossible.

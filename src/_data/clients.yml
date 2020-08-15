@@ -1,5 +1,4 @@
-- id: bestsecret
-  featured: true
+bestsecret:
   name: BestSecret
   image: /assets/custom/img/home/clients/bestsecret-logo.png
   alt-text: BestSecret logo
@@ -11,8 +10,7 @@
       page-location-es: https://info.codurance.com/es/best-secret-case-study
       project-name: bestSecret
 
-- id: adevinta
-  featured: false
+adevinta:
   name: Adevinta
   image: /assets/custom/img/home/clients/adevinta-logo.png
   alt-text: Adevinta Logo
@@ -20,8 +18,7 @@
   services:
     - software_creation
 
-- id: bankable
-  featured: true
+bankable:
   name: Bankable
   image: /assets/custom/img/home/clients/bankable-logo.png
   alt-text: Bankable Logo
@@ -29,8 +26,7 @@
   services:
     - software_creation
 
-- id: cazoo
-  featured: true
+cazoo:
   name: Cazoo
   image: /assets/custom/img/home/clients/cazoo-logo.png
   alt-text: Cazoo Logo
@@ -38,8 +34,7 @@
   services:
     - software_creation
 
-- id: cxLoyalty
-  featured: false
+cxLoyalty:
   name: cxLoyalty
   image: /assets/custom/img/home/clients/cxloyalty-logo.png
   alt-text: cxLoyalty Logo
@@ -48,8 +43,7 @@
     - software_creation
     - expert_advice
 
-- id: eclinicalworks
-  featured: true
+eclinicalworks:
   name: eClinicalWorks
   image: /assets/custom/img/home/clients/eclinicalworks-logo.png
   alt-text: eClinicalWorks Logo
@@ -63,8 +57,7 @@
       page-location-es: https://info.codurance.com/es/eclinicalworks-case-study
       project-name: eClinicalWorks
 
-- id: ubs
-  featured: true
+ubs:
   name: UBS
   image: /assets/custom/img/home/clients/ubs.png
   alt-text: UBS Logo
@@ -73,8 +66,7 @@
     - software_creation
     - expert_advice
 
-- id: acuris
-  featured: true
+acuris:
   name: Acuris
   image: /assets/custom/img/home/clients/acuris.png
   alt-text: Acuris logo
@@ -84,8 +76,7 @@
   services-page:
     - effective_delivery
 
-- id: socgen
-  featured: false
+socgen:
   name: Societe Generale
   image: /assets/custom/img/home/clients/societygenerale.png
   alt-text: Societ Generale Logo
@@ -94,8 +85,7 @@
     - expert_advice
     - training_and_coaching
 
-- id: mandg
-  featured: false
+mandg:
   name: M&G
   image: /assets/custom/img/home/clients/mandg.png
   alt-text: MandG logo
@@ -109,8 +99,7 @@
     - page-location: projects/software-craftsmanship-at-mandg
       project-name: MANDG
 
-- id: flextrade
-  featured: false
+flextrade:
   name: Flextrade
   image: /assets/custom/img/home/clients/flextrade-logo.png
   alt-text: Flextrade logo
@@ -121,8 +110,7 @@
   services-page:
     - expert_advice
 
-- id: ey
-  featured: true
+ey:
   name: EY
   image: /assets/custom/img/home/clients/ey.png
   alt-text: EY logo
@@ -133,8 +121,7 @@
   services-page:
     - effective_delivery
 
-- id: aspectcapital
-  featured: false
+aspectcapital:
   name: Aspect Capital
   image: /assets/custom/img/home/clients/aspect-capital-logo.png
   alt-text: Aspect Capital logo
@@ -146,8 +133,7 @@
   services-page:
     - expert_advice
 
-- id: tesco
-  featured: true
+tesco:
   name: Tesco
   image: /assets/custom/img/home/clients/tesco.png
   description: clients.tesco_description
@@ -164,8 +150,7 @@
     - page-location: projects/software-craftsmanship-at-tesco-scheduling
       project-name: Tesco-scheduling
 
-- id: asos
-  featured: true
+asos:
   name: ASOS
   image: /assets/custom/img/home/clients/asos-logo.png
   alt-text: ASOS logo
@@ -181,8 +166,7 @@
       page-location-es: https://info.codurance.com/es/asos-case-study
       project-name: ASOS
 
-- id: mango
-  featured: true
+mango:
   name: Mango
   image: /assets/custom/img/home/clients/mango.png
   alt-text: MANGO logo
@@ -199,8 +183,7 @@
       page-location-es: https://info.codurance.com/es/mango-case-study
       project-name: Mango
 
-- id: mands
-  featured: true
+mands:
   name: Marks and Spencer
   image: /assets/custom/img/home/clients/marksandspencer-logo.png
   alt-text: Marks and Spencer logo
@@ -214,8 +197,7 @@
     - page-location: projects/software-craftsmanship-at-mands
       project-name: MANDS
 
-- id: moonpig
-  featured: false
+moonpig:
   name: Moonpig
   image: /assets/custom/img/home/clients/moonpig.png
   alt-text: Moonpig logo
@@ -227,8 +209,7 @@
   services-page:
     - expert_advice
 
-- id: coniq
-  featured: false
+coniq:
   name: Coniq
   image: /assets/custom/img/home/clients/coniq.png
   alt-text: Coniq logo
@@ -239,8 +220,7 @@
     - page-location: projects/software-craftsmanship-at-coniq
       project-name: Coniq
 
-- id: aws
-  featured: false
+aws:
   name: Amazon Web Services
   image: /assets/custom/img/home/clients/aws.png
   alt-text: Amazon Web Services logo
@@ -254,8 +234,7 @@
     - page-location: projects/software-craftsmanship-at-aws
       project-name: AWS
 
-- id: trinitymirror
-  featured: false
+trinitymirror:
   name: Trinity Mirror
   image: /assets/custom/img/home/clients/trinitymirror.png
   alt-text: Trinity Mirror logo
@@ -266,8 +245,7 @@
   services-page:
     - effective_delivery
 
-- id: roche
-  featured: true
+roche:
   name: Roche
   image: /assets/custom/img/home/clients/roche.png
   alt-text: Roche logo
@@ -275,8 +253,7 @@
   services:
     - expert_advice
 
-- id: findmypast
-  featured: false
+findmypast:
   name: Findmypast
   image: /assets/custom/img/home/clients/findmypast-logo.png
   alt-text: Find My Past logo
@@ -285,8 +262,7 @@
     - software_creation
     - expert_advice
 
-- id: accelad
-  featured: false
+accelad:
   name: AccelaD
   image: /assets/custom/img/home/clients/accelad.png
   description: Raphton Analyzer is a software assistant for early detection of failures. It enables electronic design teams to have new capabilities for handling design improvements.
@@ -297,3 +273,19 @@
     - expert_advice
   services-page:
     - effective_delivery
+
+vistaprint:
+  image: /assets/custom/img/clients/training/vistaprint-logo.png
+  alt-text: Vistaprint logo
+
+schibsted:
+  image: /assets/custom/img/clients/training/schibsted-logo.png
+  alt-text: Schibsted logo
+
+siemens:
+  image: /assets/custom/img/clients/training/siemens-logo.png
+  alt-text: Siemens logo
+
+lastminute:
+  image: /assets/custom/img/clients/training/lastminute-logo.png
+  alt-text: Lastminute logo

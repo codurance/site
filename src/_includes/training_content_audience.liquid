@@ -1,0 +1,4 @@
+{% assign data = include.accordion_data.audience %}
+
+<p>{{ data.intro }}</p>
+{% include unordered_list.liquid list=data.list %}

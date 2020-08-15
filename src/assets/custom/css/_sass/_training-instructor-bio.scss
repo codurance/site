@@ -1,0 +1,166 @@
+.training-bio {
+  @include lateral-spacing;
+
+  @include medium-large-and-extra-large {
+    @include max-width--out-there;
+  }
+}
+
+.training-bio__inner {
+  @include style-card-box-shadow;
+  display: flex;
+  transition: max-height 0.5s ease;
+
+  @include small {
+    flex-direction: column;
+  }
+  @include medium-large-and-extra-large {
+    flex-direction: row;
+  }
+
+  .training-bio:not(.training-bio--open) & {
+    @include small {
+      max-height: 590px;
+    }
+    @include medium-large-and-extra-large {
+      max-height: 300px;
+    }
+  }
+
+  .training-bio--open & {
+    @include small {
+      max-height: 1660px;
+    }
+    @include medium {
+      max-height: 830px;
+    }
+    @include large {
+      max-height: 600px;
+    }
+    @include extra-large {
+      max-height: 450px;
+    }
+  }
+}
+
+.training-bio__instructor-container {
+  background-image: url('#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+
+  @include small {
+    align-items: center;
+    background-position: right bottom 88px;
+    background-size: 150% auto;
+  }
+  @include medium-large-and-extra-large {
+    background-color: $navy--ultralight;
+    background-position: top center;
+    background-size: 100% auto;
+  }
+}
+
+.training-bio__instructor-avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 180px;
+  margin: 15px;
+  width: 164px;
+}
+
+.training-bio__instructor-title,
+.training-bio__instructor-name {
+  color: black;
+  display: block;
+  margin-left: 6px;
+}
+
+.training-bio__instructor-title {
+  @include ponti-bold;
+  margin-bottom: 15px;
+}
+
+.training-bio__instructor-name {
+  @include mercer-bold;
+  line-height: 16px;
+}
+
+.training-bio__content-container {
+  padding: 25px 35px 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include small {
+    .training-bio:not(.training-bio--open) & {
+      height: 300px;
+    }
+  }
+}
+
+.training-bio__content-wrapper {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+
+  .training-bio:not(.training-bio--open) & {
+    &::after {
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 25%
+      );
+      content: '';
+      height: 210px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: opacity 1s;
+    }
+  }
+
+  .training-bio--open & {
+    &::after {
+      content: '';
+      opacity: 0;
+    }
+  }
+}
+
+.training-bio__content {
+  @include mercer;
+}
+
+.training-bio__read-more-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  @include ponti-bold;
+
+  &::after {
+    border-color: #fb7268;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    margin: 12px;
+    padding: 4.5px;
+    position: relative;
+    top: 9px;
+    transform: rotate(45deg);
+    transition: transform 0.5s, top 0.5s;
+  }
+
+  .training-bio--open & {
+    &::after {
+      top: 15px;
+      transform: rotate(225deg);
+    }
+  }
+}

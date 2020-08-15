@@ -1,0 +1,9 @@
+.single-training__instructor-bio {
+  @include small-and-medium {
+    padding-top: 50px;
+  }
+
+  @include large-and-extra-large {
+    padding-top: 100px;
+  }
+}
