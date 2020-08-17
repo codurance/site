@@ -27,6 +27,7 @@
   @include medium-large-and-extra-large {
     margin-top: #{(-1.5 * $vertical-overlap)};
     padding-top: 60px;
+    @include style-card-box-shadow;
   }
 }
 
