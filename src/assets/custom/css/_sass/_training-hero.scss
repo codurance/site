@@ -163,6 +163,9 @@ $form-width: 385px;
   @include small-and-medium {
     display: none;
   }
+  @include medium-large-and-extra-large {
+    @include style-card-box-shadow;
+  }
 
   background-color: white;
   padding: 30px;

@@ -8,6 +8,6 @@
 }
 
 .accordion-panel__sub-title {
-  padding-top: 20px;
   @include bold;
+  padding-top: 20px;
 }
