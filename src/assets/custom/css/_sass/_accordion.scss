@@ -27,11 +27,11 @@
   &::before {
     background-color: $coral;
     content: '';
-    height: 3px;
+    height: 2px;
     right: 0;
     position: absolute;
     top: 50%;
-    width: 30px;
+    width: 25px;
     transition: transform 500ms ease;
     transform-origin: center;
   }
