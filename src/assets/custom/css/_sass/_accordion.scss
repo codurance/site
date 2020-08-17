@@ -55,6 +55,13 @@
 }
 
 .accordion-panel__main {
+  @include small {
+    @include base-reg;
+  }
+  @include medium-large-and-extra-large {
+    @include mercer-reg;
+  }
+
   .accordion-panel:not(.active) & {
     height: 0;
     opacity: 0;
@@ -65,9 +72,6 @@
     height: auto;
     opacity: 1;
     visibility: visible;
-    @include small {
-      @include base;
-    }
   }
 }
 
