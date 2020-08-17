@@ -30,7 +30,7 @@
     height: 2px;
     right: 0;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 6px);
     width: 25px;
     transition: transform 500ms ease;
     transform-origin: center;
