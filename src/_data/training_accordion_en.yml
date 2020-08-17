@@ -50,12 +50,13 @@ crafting-code-and-crafted-design:
       - have a basic understanding of mock objects
 
   course-content:
-    intro: "Principles of:"
+    principles-intro: "Principles of:"
     list:
       - Test-Driven Development (TDD)
       - Object-Orientated Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
+    content-intro: "Content:"
     second-list:
       - TDD lifecycle and modelling behaviors
       - Writing unit tests that express intent, not implementation
