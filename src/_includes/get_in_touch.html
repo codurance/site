@@ -1,8 +1,7 @@
-{%- assign anchor_id = site.translations[site.lang].get-in-touch.anchor-id -%}
-{% include page_location_anchor.html anchor_id=anchor_id %}
-
 <section class="get-in-touch">
   <div class="get-in-touch__inner">
+    {%- assign anchor_id = site.translations[site.lang].get-in-touch.anchor-id -%}
+    {% include page_location_anchor.html anchor_id=anchor_id %}
     {% include section_intro.html description=include.description title=include.title %}
 
     <div class="get-in-touch__form">

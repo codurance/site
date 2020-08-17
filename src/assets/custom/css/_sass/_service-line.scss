@@ -40,7 +40,7 @@
 .service-line__webinar-teaser {
   @include small {
     .page-location-anchor {
-      top: calc(0px - #{$site-navbar-height-base});
+      top: 0;
     }
   }
   @include medium-large-and-extra-large {

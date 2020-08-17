@@ -1,11 +1,11 @@
 .page-location-anchor {
   position: relative;
   display: block;
-  top: calc(-50px - #{$site-navbar-height-base});
+  top: -50px;
 
   @media (min-width: $_DEPRECIATED_largeMin) and (max-width: $largeMax) {
     .page-location-anchor {
-      top: calc(-50px - #{$site-navbar-height-distorted});
+      top: -50px;
     }
   }
 }

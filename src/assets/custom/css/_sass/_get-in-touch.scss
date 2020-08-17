@@ -5,14 +5,13 @@
     padding-top: #{(0.5 * $vertical-overlap)};
   }
 
-  @include small {
-    .page-location-anchor {
-      top: calc(0px - #{$site-navbar-height-base});
+  .page-location-anchor {
+    @include small {
+      top: -30px;
     }
-  }
-  @media (min-width: $_DEPRECIATED_largeMin) and (max-width: $largeMax) {
-    .page-location-anchor {
-      top: calc(40px - #{$site-navbar-height-distorted});
+
+    @include large {
+      top: -30px;
     }
   }
 }
