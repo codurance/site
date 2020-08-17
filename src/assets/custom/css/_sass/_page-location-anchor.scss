@@ -2,10 +2,4 @@
   position: relative;
   display: block;
   top: -50px;
-
-  @media (min-width: $_DEPRECIATED_largeMin) and (max-width: $largeMax) {
-    .page-location-anchor {
-      top: -50px;
-    }
-  }
 }
