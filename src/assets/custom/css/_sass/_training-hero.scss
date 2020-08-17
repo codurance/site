@@ -168,8 +168,9 @@ $form-width: 385px;
   padding: 30px;
   position: absolute;
   right: $lateral-space--large;
-  top: -20px;
-  width: 330px;
+  top: 50%;
+  width: 350px;
+  transform: translateY(-50%);
 }
 
 .training-hero-contact-cta__title {
