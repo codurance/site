@@ -56,19 +56,29 @@
 
 .accordion-panel__main {
   .accordion-panel:not(.active) & {
+    height: 0;
     opacity: 0;
     visibility: hidden;
-    height: 0;
   }
 
   .accordion-panel.active & {
+    height: auto;
     opacity: 1;
     visibility: visible;
-    height: auto;
+    @include small {
+      @include base;
+    }
   }
 }
 
 .accordion-panel__title {
-  @include freed-bold;
+  @include small {
+    @include base-bold;
+  }
+
+  @include medium-large-and-extra-large {
+    @include freed-bold;
+  }
+
   pointer-events: none;
 }
