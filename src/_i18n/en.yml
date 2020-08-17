@@ -778,4 +778,9 @@ training-overview:
     description: We are excited to learn more about your business. Find out how Codurance’s training courses can power your technology teams.
     hubspot-cta-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
 
+single-training:
+  contact-cta-title: Find out more
+  contact-cta-button-text: Contact Us
+  contact-cta-description: Get in touch with us to find out more about the course.
+
 learn-more: Learn more

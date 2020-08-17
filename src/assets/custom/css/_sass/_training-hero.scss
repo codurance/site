@@ -39,7 +39,7 @@ $form-width: 385px;
     text-align: center;
   }
 
-  @include medium-large-and-extra-large  {
+  @include medium-large-and-extra-large {
     @include gaudi-bold;
   }
 }
@@ -55,7 +55,7 @@ $form-width: 385px;
   }
 }
 
-.training-hero__details-wrapper {  
+.training-hero__details-wrapper {
   background-color: $slate;
 }
 
@@ -110,7 +110,7 @@ $form-width: 385px;
   color: white;
 
   &:not(.training-hero__course-description--no-instructor) {
-    padding-top: 25px; 
+    padding-top: 25px;
   }
 
   &.training-hero__course-description--no-instructor {
@@ -149,27 +149,51 @@ $form-width: 385px;
   .training-hero__description-wrapper & {
     @include large-and-extra-large {
       display: none;
-    } 
+    }
   }
 }
 
-.training-hero-details__form {
-  display: inline-block;
-  width: 385px;
-  background-color: tomato;
-  position: absolute;
-  top: -280px;
-  bottom: -30px;
+.cta--primary-coral {
+  .training-hero-contact-cta & {
+    display: block;
+  }
+}
 
+.training-hero-contact-cta {
   @include small-and-medium {
     display: none;
   }
 
-  @include large {
-    right: $lateral-space--large
-  }
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  right: $lateral-space--large;
+  top: 50%;
+  width: 350px;
+  transform: translateY(-50%);
+}
 
-  @include extra-large {
-    right: 0;
+.training-hero-contact-cta__title {
+  @include freed-bold;
+  text-align: center;
+}
+
+.training-hero-contact-cta__description {
+  @include mercer;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.get-in-touch {
+  .single-training-form & {
+    position: relative;
+
+    @include medium {
+      padding-top: 235px;
+    }
+
+    @include large-and-extra-large {
+      display: none;
+    }
   }
 }

@@ -11,8 +11,12 @@ layout: default
 {% endif %}
 
 {%- include accordion.liquid accordion_data=accordion_data -%}
-{%- capture title -%}{% t services.clients-teaser-title %}{%- endcapture -%}
+
 <section class="single-training__instructor-bio">
   {% include training_instructor_bio.liquid %}
 </section>
+
+{%- capture title -%}{% t services.clients-teaser-title %}{%- endcapture -%}
 {% include clients_teaser.html class="services-page__clients-teaser" client_ids=site.data.client_ids_by_page.single-training-pages title=title %}
+
+{% include training_contact_form.liquid %}

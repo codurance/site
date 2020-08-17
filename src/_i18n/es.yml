@@ -783,6 +783,10 @@ training-overview:
     title: Hablemos de cuáles son tus necesidades en training.
     description: Nos encantaría saber más sobre tu negocio. Descubre cómo nuestros programas de training pueden impulsar tus equipos tecnológicos.
     hubspot-cta-form-id: c42f123c-63ef-4134-97f5-38df10f5f342
-    
-learn-more: Más info
 
+single-training:
+  contact-cta-title: Más información
+  contact-cta-button-text: Contacto
+  contact-cta-description: Ponte en contacto con nosotros para saber más sobre el curso.
+
+learn-more: Más info
