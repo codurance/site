@@ -56,6 +56,12 @@ $form-width: 385px;
 }
 
 .training-hero__details-wrapper {
+  @include extra-large {
+    background-image: url('#{$site-base-url}/assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 85%;
+  }
   background-color: $slate;
 }
 
