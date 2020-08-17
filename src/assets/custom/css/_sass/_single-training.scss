@@ -1,9 +1,27 @@
-.single-training__instructor-bio {
-  @include small-and-medium {
+.single-training__accordion {
+  @include small {
+    padding-bottom: 350px;
+  }
+  @include medium {
     padding-top: 50px;
   }
-
   @include large-and-extra-large {
+    padding-bottom: ($vertical-overlap * 2) + 50px;
     padding-top: 100px;
+  }
+  background-color: $navy--ultralight;
+}
+
+.single-training__instructor-bio {
+  @include small {
+    margin-top: -300px;
+  }
+  @include medium {
+    background-color: $navy--ultralight;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  @include large-and-extra-large {
+    margin-top: -($vertical-overlap + 50px);
   }
 }

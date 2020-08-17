@@ -12,6 +12,7 @@
   transition: max-height 0.5s ease;
 
   @include small {
+    background-color: white;
     flex-direction: column;
   }
   @include medium-large-and-extra-large {
@@ -90,10 +91,11 @@
 }
 
 .training-bio__content-container {
-  padding: 25px 35px 27px;
+  align-items: flex-start;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 25px 35px 27px;
 
   @include small {
     .training-bio:not(.training-bio--open) & {

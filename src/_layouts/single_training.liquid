@@ -10,7 +10,9 @@ layout: default
   {% assign accordion_data = site.data.training_accordion_en %}
 {% endif %}
 
-{%- include accordion.liquid accordion_data=accordion_data -%}
+<section class="single-training__accordion">
+  {%- include accordion.liquid accordion_data=accordion_data -%}
+</section>
 
 <section class="single-training__instructor-bio">
   {% include training_instructor_bio.liquid %}
