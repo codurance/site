@@ -11,12 +11,11 @@
 
 .services-page__clients-teaser {
   @include small {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 80px;
   }
   @include medium-large-and-extra-large {
-    padding-top: 65px;
-    padding-bottom: 20px + $vertical-overlap;
+    padding-top: 100px;
+    padding-bottom: 155px;
   }
 }
 
