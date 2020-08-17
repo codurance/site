@@ -71,6 +71,7 @@
   .accordion-panel.active & {
     height: auto;
     opacity: 1;
+    padding-bottom: 40px;
     visibility: visible;
   }
 }
