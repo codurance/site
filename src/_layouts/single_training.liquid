@@ -15,6 +15,12 @@ layout: default
   {%- include accordion.liquid accordion_data=accordion_data -%}
 </section>
 
+{% if site.lang == 'es' %}
+  {% assign data = site.data.trainings_es[page.course] %}
+{% else %}
+  {% assign data = site.data.trainings_en[page.course] %}
+{% endif %}
+
 <section class="single-training__instructor-bio">
   {% include training_instructor_bio.liquid %}
 </section>

@@ -18,6 +18,8 @@ crafting-code-and-crafted-design:
   image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
   title-background-image-path: /assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg
   hubspot-cta-id: 6641ee45-d332-40bd-a8d8-5d4096a0405b
+  instructor-bio-p-1: "Software craftsman, escritor, cofundador de Codurance y fundador de la London Software Craftsmanship Community (LSCC). Sandro ha estado programando desde muy joven, y comenzó su carrera profesional en 1996. Ha trabajado para startups, empresas de software , empresas de productos, empresas de consultoría internacional y bancos de inversión."
+  instructor-bio-p-2: "Durante su carrera, Sandro tuvo la oportunidad de trabajar en gran variedad de proyectos, con diferentes idiomas, tecnologías y en muchas industrias diferentes. Sandro tiene mucha experiencia en llevar la ideología de Software Craftsmanship y las prácticas de Programación Extrema a organizaciones de todos los tamaños. Sandro es reconocido internacionalmente por su trabajo en la evolución y difusión de Software Craftsmanship y con frecuencia es invitado como speaker en muchas conferencias en todo el mundo. Su aspiración profesional es elevar el nivel de la industria del software ayudando a los desarrolladores a mejorar y preocuparse más por su oficio."
 
 crafting-code:
   name: Crafting Code

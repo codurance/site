@@ -3,19 +3,13 @@
     <div class="training-bio__instructor-container">
       <span class="training-bio__instructor-avatar"
             style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
-      <span class="training-bio__instructor-title">Course Instructor</span>
-      <span class="training-bio__instructor-name">Sandro Mancuso</span>
+      <span class="training-bio__instructor-title">{{ data.course-instructor-title }}</span>
+      <span class="training-bio__instructor-name">{{ data.author }}</span>
     </div>
     <div class="training-bio__content-container">
       <div class="training-bio__content-wrapper">
-        <p class="training-bio__content">Software craftsman, author, Co-Founder of Codurance, and Founder of the London
-          Software Craftsmanship Community (LSCC). Sandro has been coding since a very young age, but only started his professional career in
-          1996. He has worked for startups, software houses, product companies, international consultancy companies, and
-          investment banks.</p>
-        <p class="training-bio__content">During his career Sandro has had the opportunity to work on a variety of
-          projects, spanning different languages, technologies, and industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned
-          for his work on evolving and spreading Software Craftsmanship. His professional aspiration is to raise the bar
-          of the software industry by helping developers become better at their craft.</p>
+        <p class="training-bio__content">{{ data.instructor-bio-p-1 }}</p>
+        <p class="training-bio__content">{{ data.instructor-bio-p-2 }}</p>
       </div>
       <button class="training-bio__read-more-button">read more</button>
     </div>
