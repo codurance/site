@@ -10,8 +10,11 @@ crafting-code-and-crafted-design:
   name: Crafting Code y Crafted Design
   course-length: 3 Días
   author: Sandro Mancuso
-  description: This training series is designed to enhance your team's skill set around creating expertly written code and well-crafted design. This will allow changes within your organisation to be carried out faster and more sustainably.
+  description: Esta serie de capacitación está pensada para aquellos equipos que desean convertirse en expertos escribiendo código bien diseñado.
   page: /services/training/crafting-code-and-crafted-design
+  avatar-src: /assets/custom/img/training-overview/sandro_avatar_image.png
+  image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
+  title-background-image-path: /assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg
 
 crafting-code:
   name: Crafting Code

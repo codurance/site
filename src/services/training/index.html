@@ -23,16 +23,18 @@ intro:
 <section class="training-overview-content">
   <div class="training-overview-content__cards-wrapper">
     {% if site.data.toggles.crafting-code-and-crafted-design-hero=="on" %}
-      {% assign teaser_card_data = site.data.service_lines.training %}
-      {% capture title %}{% if site.lang == 'es' %}{{ teaser_card_data.es-title }}{% else %}{{ teaser_card_data.en-title }}{% endif %}{% endcapture %}
-      {% capture description %}{% if site.lang == 'es' %}{{ teaser_card_data.es-description }}{% else %}{{ teaser_card_data.en-description }}{% endif %}{% endcapture %}
+      {% if site.lang == 'es' %}
+        {% assign teaser_card_data = site.data.trainings_es.crafting-code-and-crafted-design %}
+      {% else %}
+        {% assign teaser_card_data = site.data.trainings_en.crafting-code-and-crafted-design %}
+      {% endif %}
       {% include service_line_teaser_card.liquid
         background_image=teaser_card_data.image-src
         avatar-src=teaser_card_data.avatar-src
-        name=teaser_card_data.name
+        name=teaser_card_data.author
         course-length=teaser_card_data.course-length
-        title=title
-        description=description
+        title=teaser_card_data.name
+        description=teaser_card_data.description
         title-background-image=teaser_card_data.title-background-image-path
         %}
     {% endif %}
