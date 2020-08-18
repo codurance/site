@@ -83,6 +83,8 @@
 }
 
 .accordion-panel__title {
+  pointer-events: none;
+
   @include small {
     @include base-bold;
   }
@@ -90,6 +92,4 @@
   @include medium-large-and-extra-large {
     @include freed-bold;
   }
-
-  pointer-events: none;
 }

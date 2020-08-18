@@ -2,7 +2,7 @@
   background-color: $slate;
 
   @include medium-large-and-extra-large {
-    padding-top: #{(0.5 * $vertical-overlap)};
+    padding-top: 0.5 * $vertical-overlap;
   }
 
   .page-location-anchor {
@@ -25,9 +25,9 @@
     padding-top: 50px;
   }
   @include medium-large-and-extra-large {
-    margin-top: #{(-1.5 * $vertical-overlap)};
-    padding-top: 60px;
     @include style-card-box-shadow;
+    margin-top: -1.5 * $vertical-overlap;
+    padding-top: 60px;
   }
 }
 

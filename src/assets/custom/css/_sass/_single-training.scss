@@ -1,23 +1,23 @@
 .single-training__accordion {
+  background-color: $navy--ultralight;
   @include small {
-    padding-bottom: 350px;
+    padding-bottom: ($vertical-overlap * 3.5);
   }
   @include medium {
     padding-top: 50px;
   }
   @include large-and-extra-large {
-    padding-bottom: ($vertical-overlap * 2) + 50px;
+    padding-bottom: ($vertical-overlap * 2.5);
     padding-top: 100px;
   }
   @include extra-large {
     @include max-width--framed;
   }
-  background-color: $navy--ultralight;
 }
 
 .single-training__instructor-bio {
   @include small {
-    margin-top: -300px;
+    margin-top: -($vertical-overlap * 3);
   }
   @include medium {
     background-color: $navy--ultralight;
