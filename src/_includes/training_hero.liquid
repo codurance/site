@@ -5,12 +5,6 @@
 {% capture text %}{% t single-training.contact-cta-button-text %}{% endcapture %}
 {% capture href %}#{% t get-in-touch.anchor-id %}{% endcapture %}
 
-{% if site.lang == 'es' %}
-  {% assign data = site.data.trainings_es[page.course] %}
-{% else %}
-  {% assign data = site.data.trainings_en[page.course] %}
-{% endif %}
-
 <section class="training-hero">
   <div class="training-hero__intro-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image }})">
     <div class="training-hero__intro-container-inner"> 
