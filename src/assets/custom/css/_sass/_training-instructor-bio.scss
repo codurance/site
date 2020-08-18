@@ -30,16 +30,16 @@
 
   .training-bio--open & {
     @include small {
-      max-height: 1660px;
+      max-height: 1825px;
     }
     @include medium {
-      max-height: 830px;
+      max-height: 970px;
     }
     @include large {
-      max-height: 600px;
+      max-height: 675px;
     }
     @include extra-large {
-      max-height: 450px;
+      max-height: 500px;
     }
   }
 }
