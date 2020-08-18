@@ -66,6 +66,9 @@ $form-width: 385px;
 }
 
 .training-hero__details-wrapper-inner {
+  @include small {
+    padding-top: 10px;
+  }
   @include max-width--out-there;
   @include lateral-spacing;
   position: relative;
