@@ -39,7 +39,7 @@ How do you take the beautiful designs that will spearhead a new branding initiat
 
 How do you take a meticulously constructed architectural design that will lead you from your old unwieldy software into the shiny new world of CI/CD, and arrange it into something simple that adds value to your organisation week by week?
 
-**If necessary use a detailed plan to pick a point on the horizon to aim for. Hold onto the vision but focus on the simple steps that are immediately in front of the teams. Remember, simple plans are easier to change so remain vigilant against overcomplicating. Obsticales that are far off in the distance will be easier to address when you get closer to them, so be cautious about over preparing for every eventuality.**
+**If necessary use a detailed plan to pick a point on the horizon to aim for. Hold onto the vision but focus on the simple steps that are immediately in front of the teams. Remember, simple plans are easier to change so remain vigilant against overcomplicating. Obstacles that are far off in the distance will be easier to address when you get closer to them, so be cautious about over preparing for every eventuality.**
 
 Remember...
 
