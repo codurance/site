@@ -12,7 +12,6 @@
   }
 
   @include small-and-medium {
-    min-height: 2em;
     margin-bottom: 10px;
     &:last-of-type {
       margin-bottom: 0;
