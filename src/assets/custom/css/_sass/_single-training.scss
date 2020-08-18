@@ -9,6 +9,9 @@
     padding-bottom: ($vertical-overlap * 2) + 50px;
     padding-top: 100px;
   }
+  @include extra-large {
+    @include max-width--framed;
+  }
   background-color: $navy--ultralight;
 }
 
