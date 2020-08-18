@@ -2,10 +2,10 @@
 layout: default
 ---
 {% if site.lang == 'es' %}
-  {% assign data = site.data.trainings_es[page.course] %}
+  {% assign training_data = site.data.trainings_es[page.course] %}
   {% assign accordion_data = site.data.training_accordion_es %}
 {% else %}
-  {% assign data = site.data.trainings_en[page.course] %}
+  {% assign training_data = site.data.trainings_en[page.course] %}
   {% assign accordion_data = site.data.training_accordion_en %}
 {% endif %}
 
@@ -14,12 +14,6 @@ layout: default
 <section class="single-training__accordion">
   {%- include accordion.liquid accordion_data=accordion_data -%}
 </section>
-
-{% if site.lang == 'es' %}
-  {% assign data = site.data.trainings_es[page.course] %}
-{% else %}
-  {% assign data = site.data.trainings_en[page.course] %}
-{% endif %}
 
 <section class="single-training__instructor-bio">
   {% include training_instructor_bio.liquid %}
