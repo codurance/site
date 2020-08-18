@@ -1,4 +1,19 @@
-- id: crafting_code
+training-course-ids:
+  - crafting-code
+  - crafted-design
+  - functional-programming
+  - lambdas
+  - serverless
+  - ead
+
+crafting-code-and-crafted-design:
+  name: Crafting Code & Crafted Design
+  course-length: 3 days
+  author: Sandro Mancuso
+  description: This training series is designed to enhance your team's skill set around creating expertly written code and well-crafted design. This will allow changes within your organisation to be carried out faster and more sustainably.
+  page: /services/training/crafting-code-and-crafted-design
+
+crafting-code:
   name: Crafting Code
   author: Sandro Mancuso
   description: This course is designed to improve your team's skills around creating clean, maintainable code. This will enable change to be released faster and more sustainably.
@@ -6,7 +21,7 @@
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code.svg
 
-- id: crafted_design
+crafted-design:
   name: Crafted Design
   author: Sandro Mancuso
   description: This course enables your teams to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
@@ -14,28 +29,28 @@
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
 
-- id: introduction_to_functional_programming
+functional-programming:
   name: "Introduction to <br> Functional Programming"
   author: Jorge Gueorguiev García
   description: This course teaches your software delivery teams the basics of functional programming.
   page: /services/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-functional-programming.svg
 
-- id: lambdas
+lambdas:
   name: "Microservices with <br> AWS Lambdas"
   author: Mashooq Badar
   description: This course teaches your software delivery teams how to build and deploy microservices using AWS serverless architecture.
   page: /services/training/lambda-training
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-microservices-with-aws.svg
 
-- id: serverless
+serverless:
   name: "Serverless Architecture <br> Using AWS"
   author: Mashooq Badar
   description: This course teaches your teams how to build web applications using AWS serverless architecture. Teams can release fully scalable and secure web apps with ease.
   page: /services/training/serverless-training
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
-- id: ead
+ead:
   name: "Enterprise Application <br> Development"
   author: Mashooq Badar
   description: This course teaches software delivery teams how to build an enterprise system using industry leading techniques.
