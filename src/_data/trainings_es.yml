@@ -15,6 +15,7 @@ crafting-code-and-crafted-design:
   avatar-src: /assets/custom/img/training-overview/sandro_avatar_image.png
   image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
   title-background-image-path: /assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg
+  hubspot-cta-id: 6641ee45-d332-40bd-a8d8-5d4096a0405b
 
 crafting-code:
   name: Crafting Code
