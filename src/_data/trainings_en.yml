@@ -9,6 +9,8 @@ training-course-ids:
 crafting-code-and-crafted-design:
   name: Crafting Code & Crafted Design
   course-length: 3 days
+  duration: "DURATION: 3 Days"
+  course-instructor-title: COURSE INSTRUCTOR
   author: Sandro Mancuso
   description: This training series is designed to enhance your team's skill set around creating expertly written code and well-crafted design. This will allow changes within your organisation to be carried out faster and more sustainably.
   page: /services/training/crafting-code-and-crafted-design
