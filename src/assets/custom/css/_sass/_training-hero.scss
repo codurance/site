@@ -10,7 +10,20 @@ $form-width: 385px;
 
   @include small {
     padding-top: 55px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
+    position: relative;
+    &::after {
+      background-color: $navy;
+      bottom: 0;
+      content: "";
+      left: 0;
+      mix-blend-mode: multiply;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 0.65;
+    }
   }
 
   @include medium {
@@ -26,6 +39,10 @@ $form-width: 385px;
 }
 
 .training-hero__intro-container-inner {
+  @include small {
+    position: relative;
+    z-index: 2;
+  }
   @include max-width--out-there;
   @include lateral-spacing;
   width: 100%;
@@ -56,6 +73,10 @@ $form-width: 385px;
 }
 
 .training-hero__details-wrapper {
+  @include small {
+    position: relative;
+    z-index: 2;
+  }
   @include extra-large {
     background-image: url('#{$site-base-url}/assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg');
     background-position: right top;
