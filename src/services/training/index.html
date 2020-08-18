@@ -22,7 +22,6 @@ intro:
 
 <section class="training-overview-content">
   <div class="training-overview-content__cards-wrapper">
-    {% if site.data.toggles.crafting-code-and-crafted-design-hero=="on" %}
       {% if site.lang == 'es' %}
         {% assign teaser_card_data = site.data.trainings_es.crafting-code-and-crafted-design %}
       {% else %}
@@ -38,7 +37,6 @@ intro:
         title-background-image=teaser_card_data.title-background-image-path
         hubspot_cta_id=teaser_card_data.hubspot-cta-id
         %}
-    {% endif %}
 
       {% include training_card_group.liquid %}
   </div>
