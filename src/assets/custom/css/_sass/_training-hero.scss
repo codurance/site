@@ -48,7 +48,7 @@ $form-width: 385px;
     z-index: 2;
   }
 
-  &:not(.training-hero__intro-container-inner--with-instructor) {
+  .training-hero:not(.training-hero--with-instructor) & {
     transform: translateY(60px);
     @include small {
       transform: translateY(20px);
@@ -172,10 +172,10 @@ $form-width: 385px;
   @include extra-large {
     @include freed;
   }
-}
 
-.training-hero__course-description--with-instructor {
-  padding-top: 25px;
+  .training-hero--with-instructor & {
+    padding-top: 25px;
+  }
 }
 
 .cta--primary-coral {
