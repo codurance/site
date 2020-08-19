@@ -206,6 +206,10 @@ $form-width: 385px;
   @include medium-large-and-extra-large {
     @include style-card-box-shadow;
   }
+
+  .training-hero:not(.training-hero--with-instructor) & {
+    transform: translateY(-85%);
+  }
 }
 
 .training-hero-contact-cta__title {
