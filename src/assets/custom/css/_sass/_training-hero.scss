@@ -196,9 +196,7 @@ $form-width: 385px;
   padding: 30px;
   position: absolute;
   right: $lateral-space--large;
-  top: 50%;
   width: 350px;
-  transform: translateY(-50%);
 
   @include small-and-medium {
     display: none;
@@ -208,7 +206,12 @@ $form-width: 385px;
   }
 
   .training-hero:not(.training-hero--with-instructor) & {
-    transform: translateY(-85%);
+    bottom: 90px;
+  }
+
+  .training-hero--with-instructor & {
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
