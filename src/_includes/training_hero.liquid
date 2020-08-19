@@ -1,13 +1,12 @@
-{%- if include.instructor -%}
-  {%- assign course-description-modifier = training-hero__course-description--no-instructor -%}
-{%- endif -%}
-
+{% if training_data.author == "Sandro Mancuso" %}
+  {% assign training-hero-modifier = "training-hero--with-instructor" %}
+{% endif %}
 {% capture text %}{% t single-training.contact-cta-button-text %}{% endcapture %}
 {% capture href %}#{% t get-in-touch.anchor-id %}{% endcapture %}
 
-<section class="training-hero">
+<section class="training-hero {{ training-hero-modifier }}">
   <div class="training-hero__intro-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image }})">
-    <div class="training-hero__intro-container-inner"> 
+    <div class="training-hero__intro-container-inner">
       <h1 class="training-hero__course-title">{{ training_data.name }}</h1>
       <span class="training-hero__course-duration">{{ training_data.duration }}</span>
     </div>
@@ -15,15 +14,17 @@
   <div class="training-hero__details-wrapper">
     <div class="training-hero__details-wrapper-inner">
       <div class="training-hero__content-container">
-        <div class="training-hero__instructor-wrapper">
-          <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
-          <div class="training-hero__instructor-wrapper-inner">
-            <span class="training-hero__instructor-title">{{ training_data.course-instructor-title }}</span>
-            <span class="training-hero__instructor-name">{{ training_data.author }}</span>
+        {% if training_data.author == "Sandro Mancuso" %}
+          <div class="training-hero__instructor-wrapper">
+            <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
+            <div class="training-hero__instructor-wrapper-inner">
+              <span class="training-hero__instructor-title">{{ training_data.course-instructor-title }}</span>
+              <span class="training-hero__instructor-name">{{ training_data.author }}</span>
+            </div>
           </div>
-        </div>
+        {% endif %}
         <div class="training-hero__description-wrapper">
-          <p class="training-hero__course-description {{ course-description-modifier }}">{{ training_data.description }}</p>
+          <p class="training-hero__course-description">{{ training_data.description }}</p>
           {% include cta_primary_link.html href=href color='coral' text=text %}
         </div>
       </div>
