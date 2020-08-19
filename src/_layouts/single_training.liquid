@@ -11,13 +11,19 @@ layout: default
 
 {% include training_hero.liquid %}
 
-<section class="single-training__accordion">
+{% if training_data.author == "Sandro Mancuso" %}
+  {% assign accordion-modifier = "single-training__accordion--with-bio" %}
+{% endif %}
+
+<section class="single-training__accordion {{ accordion-modifier }}">
   {%- include accordion.liquid accordion_data=accordion_data -%}
 </section>
 
-<section class="single-training__instructor-bio">
-  {% include training_instructor_bio.liquid %}
-</section>
+{% if training_data.author == "Sandro Mancuso" %}
+  <section class="single-training__instructor-bio">
+    {% include training_instructor_bio.liquid %}
+  </section>
+{% endif %}
 
 {%- capture title -%}{% t services.clients-teaser-title %}{%- endcapture -%}
 {% include clients_teaser.html class="services-page__clients-teaser" client_ids=site.data.client_ids_by_page.single-training-pages title=title %}
