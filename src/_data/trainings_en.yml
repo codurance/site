@@ -47,6 +47,7 @@ functional-programming:
 
 lambdas:
   name: "Microservices with <br> AWS Lambdas"
+  duration: "DURATION: 2 Days"
   author: Mashooq Badar
   description: This course teaches your software delivery teams how to build and deploy microservices using AWS serverless architecture.
   page: /services/training/lambda-training

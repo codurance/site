@@ -15,13 +15,15 @@
   <div class="training-hero__details-wrapper">
     <div class="training-hero__details-wrapper-inner">
       <div class="training-hero__content-container">
-        <div class="training-hero__instructor-wrapper">
-          <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
-          <div class="training-hero__instructor-wrapper-inner">
-            <span class="training-hero__instructor-title">{{ training_data.course-instructor-title }}</span>
-            <span class="training-hero__instructor-name">{{ training_data.author }}</span>
+        {% if training_data.author == "Sandro Mancuso" %}
+          <div class="training-hero__instructor-wrapper">
+            <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
+            <div class="training-hero__instructor-wrapper-inner">
+              <span class="training-hero__instructor-title">{{ training_data.course-instructor-title }}</span>
+              <span class="training-hero__instructor-name">{{ training_data.author }}</span>
+            </div>
           </div>
-        </div>
+        {% endif %}
         <div class="training-hero__description-wrapper">
           <p class="training-hero__course-description {{ course-description-modifier }}">{{ training_data.description }}</p>
           {% include cta_primary_link.html href=href color='coral' text=text %}
