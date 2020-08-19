@@ -1,8 +1,6 @@
 .single-training__accordion {
   background-color: $navy--ultralight;
-  @include small {
-    padding-bottom: $vertical-overlap * 3.5;
-  }
+
   @include medium {
     padding-top: 50px;
   }
@@ -14,6 +12,9 @@
     @include max-width--framed;
   }
   &.single-training__accordion--with-bio {
+    @include small {
+      padding-bottom: $vertical-overlap * 3.5;
+    }
     @include large-and-extra-large {
       padding-bottom: $vertical-overlap * 2.5;
     }
