@@ -4,24 +4,26 @@
   {% assign training_data=site.data.trainings_en %}
 {% endif %}
 
-{%- assign non-featured-training = training_data | where_exp:"item", "item.featured != true" -%}
+{%- assign non-featured-training = training_data.training-course-ids | where_exp:"item", "item.featured != true" -%}
 {%- assign number-of-cards-in-carousel = 0 -%}
 {%- for training in non-featured-training -%}
   {%- assign number-of-cards-in-carousel = number-of-cards-in-carousel | plus: 1 -%}
 {%- endfor -%}
 
 <div class="training-card-group--only-featured">
-  {%- for training in training_data -%}
-    {%- if training.featured -%}
-      {% include training_card.liquid training=training %}
+  {%- for training in training_data.training-course-ids -%}
+    {% assign data-entry = training_data[training] %}
+    {%- if data-entry.featured -%}
+      {% include training_card.liquid training=data-entry %}
     {%- endif -%}
   {%- endfor -%}
 </div>
 
 <div class="training-card-group">
   <div class="training-card-group__track" data-nav-track data-position="1" data-number-of-cards="{{ number-of-cards-in-carousel }}">
-    {% for training in training_data %}
-      {% include training_card.liquid training=training %}
+    {% for training in training_data.training-course-ids %}
+      {% assign data-entry = training_data[training] %}
+      {% include training_card.liquid training=data-entry %}
     {% endfor %}
   </div>
   <div class="training-card-group__navigation-container">

@@ -1,5 +1,5 @@
 {% if include.training.featured %}
-    {% capture avatar %}<img class="training-card__avatar" alt=""src={{ site.data.service_lines.training.avatar-src | prepend: site.baseurl }}>{% endcapture %}
+    {% capture avatar %}<img class="training-card__avatar" alt=""src={{ site.data.trainings_en.crafting-code-and-crafted-design.avatar-src | prepend: site.baseurl }}>{% endcapture %}
     {% assign author = include.training.author %}
     {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }}</h2>{% endcapture %}
     {% assign featured_class = "training-card--featured" %}

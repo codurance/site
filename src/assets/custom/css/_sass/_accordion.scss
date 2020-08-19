@@ -7,9 +7,15 @@
 .accordion__panel {
   border-bottom: 1px solid $grey--light;
 
+  &:last-of-type {
+    border-bottom: none;
+  }
+
   @include small-and-medium {
-    min-height: 2em;
     margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -27,11 +33,11 @@
   &::before {
     background-color: $coral;
     content: '';
-    height: 3px;
+    height: 2px;
     right: 0;
     position: absolute;
-    top: 50%;
-    width: 30px;
+    top: calc(50% - 6px);
+    width: 25px;
     transition: transform 500ms ease;
     transform-origin: center;
   }
@@ -55,20 +61,35 @@
 }
 
 .accordion-panel__main {
+  @include small {
+    @include base-reg;
+  }
+  @include medium-large-and-extra-large {
+    @include mercer-reg;
+  }
+
   .accordion-panel:not(.active) & {
+    height: 0;
     opacity: 0;
     visibility: hidden;
-    height: 0;
   }
 
   .accordion-panel.active & {
-    opacity: 1;
-    visibility: visible;
     height: auto;
+    opacity: 1;
+    padding-bottom: 40px;
+    visibility: visible;
   }
 }
 
 .accordion-panel__title {
-  @include freed-bold;
   pointer-events: none;
+
+  @include small {
+    @include base-bold;
+  }
+
+  @include medium-large-and-extra-large {
+    @include freed-bold;
+  }
 }

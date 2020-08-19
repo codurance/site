@@ -192,7 +192,7 @@ publications:
   hubspot-cta-id: 2021182d-0c96-404f-aac9-7edadbc7c266
   teaser-cta: Learn More
 services:
-  learn-more: Learn more
+  learn-more: Learn More
   page-intro:
     title: Services & Solutions
     sub-title: We partner with you to deliver solutions that create a sustainable and adaptable future for your business
@@ -782,5 +782,6 @@ single-training:
   contact-cta-title: Find out more
   contact-cta-button-text: Contact Us
   contact-cta-description: Get in touch with us to find out more about the course.
+  read-more: read more
 
 learn-more: Learn more

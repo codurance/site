@@ -12,6 +12,7 @@
   transition: max-height 0.5s ease;
 
   @include small {
+    background-color: white;
     flex-direction: column;
   }
   @include medium-large-and-extra-large {
@@ -29,26 +30,27 @@
 
   .training-bio--open & {
     @include small {
-      max-height: 1660px;
+      max-height: 1825px;
     }
     @include medium {
-      max-height: 830px;
+      max-height: 970px;
     }
     @include large {
-      max-height: 600px;
+      max-height: 675px;
     }
     @include extra-large {
-      max-height: 450px;
+      max-height: 500px;
     }
   }
 }
 
 .training-bio__instructor-container {
-  background-image: url('#{$site-base-url}/assets/custom/img/training-overview/training-backgrounds_bg-crafting-code-and-design.svg');
+  background-image: url('#{$site-base-url}/assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg');
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
+  text-align: center;
 
   @include small {
     align-items: center;
@@ -56,7 +58,7 @@
     background-size: 150% auto;
   }
   @include medium-large-and-extra-large {
-    background-color: $navy--ultralight;
+    background-color: $off-white;
     background-position: top center;
     background-size: 100% auto;
   }
@@ -90,10 +92,11 @@
 }
 
 .training-bio__content-container {
-  padding: 25px 35px 27px;
+  align-items: flex-start;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 25px 35px 27px;
 
   @include small {
     .training-bio:not(.training-bio--open) & {

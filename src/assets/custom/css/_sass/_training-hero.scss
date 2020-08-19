@@ -10,7 +10,20 @@ $form-width: 385px;
 
   @include small {
     padding-top: 55px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
+    position: relative;
+    &::after {
+      background-color: $navy;
+      bottom: 0;
+      content: "";
+      left: 0;
+      mix-blend-mode: multiply;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 0.65;
+    }
   }
 
   @include medium {
@@ -29,6 +42,11 @@ $form-width: 385px;
   @include max-width--out-there;
   @include lateral-spacing;
   width: 100%;
+
+  @include small {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .training-hero__course-title {
@@ -57,12 +75,27 @@ $form-width: 385px;
 
 .training-hero__details-wrapper {
   background-color: $slate;
+
+  @include small {
+    position: relative;
+    z-index: 2;
+  }
+  @include extra-large {
+    background-image: url('#{$site-base-url}/assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 85%;
+  }
 }
 
 .training-hero__details-wrapper-inner {
   @include max-width--out-there;
   @include lateral-spacing;
   position: relative;
+
+  @include small {
+    padding-top: 10px;
+  }
 }
 
 .training-hero__content-container {
@@ -151,18 +184,13 @@ $form-width: 385px;
       display: none;
     }
   }
-}
 
-.cta--primary-coral {
   .training-hero-contact-cta & {
     display: block;
   }
 }
 
 .training-hero-contact-cta {
-  @include small-and-medium {
-    display: none;
-  }
 
   background-color: white;
   padding: 30px;
@@ -171,6 +199,13 @@ $form-width: 385px;
   top: 50%;
   width: 350px;
   transform: translateY(-50%);
+
+  @include small-and-medium {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    @include style-card-box-shadow;
+  }
 }
 
 .training-hero-contact-cta__title {

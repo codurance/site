@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-
-{% include training_hero.liquid %}
-
 {% if site.lang == 'es' %}
+  {% assign training_data = site.data.trainings_es[page.course] %}
   {% assign accordion_data = site.data.training_accordion_es %}
 {% else %}
+  {% assign training_data = site.data.trainings_en[page.course] %}
   {% assign accordion_data = site.data.training_accordion_en %}
 {% endif %}
 
-{%- include accordion.liquid accordion_data=accordion_data -%}
+{% include training_hero.liquid %}
+
+<section class="single-training__accordion">
+  {%- include accordion.liquid accordion_data=accordion_data -%}
+</section>
 
 <section class="single-training__instructor-bio">
   {% include training_instructor_bio.liquid %}

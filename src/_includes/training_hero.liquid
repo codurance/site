@@ -8,8 +8,8 @@
 <section class="training-hero">
   <div class="training-hero__intro-container" style="background-image: url({{ site.baseurl }}{{ page.intro.background-image }})">
     <div class="training-hero__intro-container-inner"> 
-      <h1 class="training-hero__course-title">Crafting Code</h1>
-      <span class="training-hero__course-duration">Duration: 2 days</span>
+      <h1 class="training-hero__course-title">{{ training_data.name }}</h1>
+      <span class="training-hero__course-duration">{{ training_data.duration }}</span>
     </div>
   </div>
   <div class="training-hero__details-wrapper">
@@ -18,15 +18,12 @@
         <div class="training-hero__instructor-wrapper">
           <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
           <div class="training-hero__instructor-wrapper-inner">
-            <span class="training-hero__instructor-title">Course Instructor</span>
-            <span class="training-hero__instructor-name">Sandro Mancuso</span>
+            <span class="training-hero__instructor-title">{{ training_data.course-instructor-title }}</span>
+            <span class="training-hero__instructor-name">{{ training_data.author }}</span>
           </div>
         </div>
         <div class="training-hero__description-wrapper">
-          <p class="training-hero__course-description {{ course-description-modifier }}">This course is designed to help developers write code that is well-crafted. Meaning code that is clean,
-          testable, maintainable, and an expression of the business domain. The course is entirely hands-on,
-          designed to teach developers practical techniques they can immediately apply to real-world projects.
-          </p>
+          <p class="training-hero__course-description {{ course-description-modifier }}">{{ training_data.description }}</p>
           {% include cta_primary_link.html href=href color='coral' text=text %}
         </div>
       </div>

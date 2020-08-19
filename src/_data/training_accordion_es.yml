@@ -27,7 +27,7 @@ crafting-code-and-crafted-design:
       - A comprender los principios de diseño que conducen a un código limpio.
       - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas.
     learning-outcome: Una vez que tu equipo domine estos principios podrá aplicarlos a código heredado. Esto les permitirá ganar confianza trabajando con legacy code.
-    software-design-intro: La parte de diseño de software de esta serie de capacitación se centra en aplicaciones y niveles de microservicios utilizando los requisitos comerciales para impulsar el diseño. Muchas de las discusiones de diseño durante los ejercicios se centran en escenarios reales que podrán ser implementadas en tu organización.
+    software-design-intro: La parte de diseño de software de esta serie de capacitación se centra al nivel de aplicaciones y microservicios utilizando los requisitos comerciales para impulsar el diseño.
     application-title: "Aplicaciones:"
     application-list:
       - estructura interna
@@ -50,14 +50,15 @@ crafting-code-and-crafted-design:
       - con un comprensión básica de los  mock objects.
 
   course-content:
-    intro: "Principios de:"
+    principles-intro: "Principios de:"
     list:
       - Test-Driven Development (TDD)
       - Object-Orientated Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
+    content-intro: "Contenido:"
     second-list:
-      - Ciclo de vida TDD y comportamientos de modelado.
+      - Ciclo de vida TDD y modelado de comportamientos.
       - Escritura de pruebas unitarias que expresan intención, no implementación.
       - Utilizando pruebas unitarias para conseguir un buen diseño.
       - Expressive code.
@@ -65,8 +66,8 @@ crafting-code-and-crafted-design:
       - Cómo estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata.
       - Comprender las diferencias entre capas, hexágonos, características y componentes.
       - Identificación de servicios a partir de reglas comerciales.
-      - Expresar diseño y arquitectura en código, pero manteniendo su dominio claro.
-      - Comprender el mapeo de impacto y cómo se puede derivar una arquitectura de servicios a partir de él.
+      - Expresar diseño y arquitectura en código, pero manteniendo claridad en el dominio.
+      - Comprender Impact Mapping como técnica y cómo se puede derivar una arquitectura de servicios a partir de ella.
 
   prerequisites:
     intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
@@ -78,5 +79,5 @@ crafting-code-and-crafted-design:
       - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
     second-list:
       - Lenguaje orientado a objetos
-      - Un unit test framework
-      - Una mocking library
+      - Un framework the unit testing
+      - Una librería para hacer mocking

@@ -1,4 +1,28 @@
-- id: crafting_code
+training-course-ids:
+  - crafting-code
+  - crafted-design
+  - functional-programming
+  - lambdas
+  - serverless
+  - ead
+
+crafting-code-and-crafted-design:
+  name: Crafting Code <br>y Crafted Design
+  course-length: 3 Días
+  duration: "DURACIÓN: 3 Días"
+  course-instructor-title: INSTRUCTOR DEL CURSO
+  course-instructor-bio-title: INSTRUCTOR
+  author: Sandro Mancuso
+  description: Esta serie de capacitación está pensada para aquellos equipos que desean convertirse en expertos escribiendo código bien diseñado.
+  page: /services/training/crafting-code-and-crafted-design
+  avatar-src: /assets/custom/img/training-overview/sandro_avatar_image.png
+  image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
+  title-background-image-path: /assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg
+  hubspot-cta-id: 6641ee45-d332-40bd-a8d8-5d4096a0405b
+  instructor-bio-p-1: <b>Software craftsman, escritor, cofundador de Codurance y fundador de la London Software Craftsmanship Community (LSCC).</b> Sandro ha estado programando desde muy joven, y comenzó su carrera profesional en 1996. Ha trabajado para startups, empresas de software , empresas de productos, empresas de consultoría internacional y bancos de inversión.
+  instructor-bio-p-2: Durante su carrera, Sandro tuvo la oportunidad de trabajar en gran variedad de proyectos, con diferentes idiomas, tecnologías y en muchas industrias diferentes. Sandro tiene mucha experiencia en llevar la ideología de Software Craftsmanship y las prácticas de Programación Extrema a organizaciones de todos los tamaños. Sandro es reconocido internacionalmente por su trabajo en la evolución y difusión de Software Craftsmanship y con frecuencia es invitado como speaker en muchas conferencias en todo el mundo. Su aspiración profesional es elevar el nivel de la industria del software ayudando a los desarrolladores a mejorar y preocuparse más por su oficio.
+
+crafting-code:
   name: Crafting Code
   author: Sandro Mancuso
   description: Este curso está diseñado para mejorar las habilidades de un equipo a la hora de escribir código limpio y fácil de mantener.
@@ -6,7 +30,7 @@
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code.svg
 
-- id: crafted_design
+crafted-design:
   name: Crafted Design
   author: Sandro Mancuso
   description: En esta formación ayudamos a los equipos de desarrollo a mejorar sus habilidades para crear soluciones bien diseñadas.
@@ -14,28 +38,28 @@
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
 
-- id: introduction_to_functional_programming
+functional-programming:
   name: Introducción a Functional Programming
   author: Jorge Gueorguiev García
   description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
   page: /services/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-functional-programming.svg
 
-- id: lambdas
+lambdas:
   name: Microservicios con AWS Lambdas
   author: Mashooq Badar
   description: En este curso aportamos los conocimientos necesarios para que tu equipo pueda construir e implementar microservicios utilizando la arquitectura serverless  de AWS.
   page: /services/training/lambda-training
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-microservices-with-aws.svg
 
-- id: serverless
+serverless:
   name: Arquitectura Serverless utilizando AWS
   author: Mashooq Badar
   description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
   page: /services/training/serverless-training
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
-- id: ead
+ead:
   name: Desarrollo de aplicaciones empresariales
   author: Mashooq Badar
   description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
