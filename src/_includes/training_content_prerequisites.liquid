@@ -4,7 +4,7 @@
 <h3 class="accordion-panel__sub-title">{{ data.required }}</h3>
 <ul>
   {% for item in data.list %}
-    {% if forloop.index == 3 %}
+    {% if forloop.index == 3 and data.second-list %}
       <li>{{ item }}</li>
       {% include unordered_list.liquid list=data.second-list %}
     {% else %}
