@@ -87,8 +87,10 @@ $form-width: 385px;
     position: relative;
     z-index: 2;
   }
+  @include small-medium-and-large {
+    background-image: none !important;
+  }
   @include extra-large {
-    background-image: url('#{$site-base-url}/assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg');
     background-position: right top;
     background-repeat: no-repeat;
     background-size: auto 85%;

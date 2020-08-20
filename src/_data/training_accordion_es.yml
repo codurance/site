@@ -18,14 +18,14 @@ crafting-code-and-crafted-design:
     clean-code-headline-one: Escribir Clean Code no es fácil; y limpiar código existente todavía menos.
     why-attend: "Tu equipo debe asistir si necesita:"
     why-attend-list:
-      - Alinear la tecnología con los requerimientos del negocio.
+      - Alinear la tecnología con los requerimientos del negocio
       - Escribir código limpio que sea fácil de entender y mantener
       - "Mejorar sus competencias en Test-Driven Development (TDD): usando testing para diseñar y construir"
     clean-code-headline-two: El código limpio requiere un buen diseño.
     learning-objectives-title: "Tu equipo aprenderá:"
     learning-objectives-list:
-      - A comprender los principios de diseño que conducen a un código limpio.
-      - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas.
+      - A comprender los principios de diseño que conducen a un código limpio
+      - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas
     learning-outcome: Una vez que tu equipo domine estos principios podrá aplicarlos a código heredado. Esto les permitirá ganar confianza trabajando con legacy code.
     software-design-intro: La parte de diseño de software de esta serie de capacitación se centra al nivel de aplicaciones y microservicios utilizando los requisitos comerciales para impulsar el diseño.
     application-title: "Aplicaciones:"
@@ -44,40 +44,93 @@ crafting-code-and-crafted-design:
   audience:
     intro: "Este curso está diseñado para equipos de desarrollo de software:"
     list:
-      - familiarizados con un nivel mínimo de lenguaje orientado a objetos.
-      - con competencias en Java o C#.
+      - familiarizados con un nivel mínimo de lenguaje orientado a objetos
+      - con competencias en Java o C#
       - capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
-      - con un comprensión básica de los  mock objects.
+      - con un comprensión básica de los  mock objects
 
   course-content:
     principles-intro: "Principios de:"
     list:
       - Test-Driven Development (TDD)
-      - Object-Orientated Design (OOD)
+      - Object-Oriented Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
     content-intro: "Contenido:"
     second-list:
-      - Ciclo de vida TDD y modelado de comportamientos.
-      - Escritura de pruebas unitarias que expresan intención, no implementación.
-      - Utilizando pruebas unitarias para conseguir un buen diseño.
-      - Expressive code.
-      - Probar y refactorizar código heredado.
-      - Cómo estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata.
-      - Comprender las diferencias entre capas, hexágonos, características y componentes.
-      - Identificación de servicios a partir de reglas comerciales.
-      - Expresar diseño y arquitectura en código, pero manteniendo claridad en el dominio.
-      - Comprender Impact Mapping como técnica y cómo se puede derivar una arquitectura de servicios a partir de ella.
+      - Ciclo de vida TDD y modelado de comportamientos
+      - Escritura de pruebas unitarias que expresan intención, no implementación
+      - Utilizando pruebas unitarias para conseguir un buen diseño
+      - Expressive code
+      - Probar y refactorizar código heredado
+      - Cómo estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata
+      - Comprender las diferencias entre capas, hexágonos, características y componentes
+      - Identificación de servicios a partir de reglas comerciales
+      - Expresar diseño y arquitectura en código, pero manteniendo claridad en el dominio
+      - Comprender Impact Mapping como técnica y cómo se puede derivar una arquitectura de servicios a partir de ella
 
   prerequisites:
     intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
     required: "Necesario:"
     list:
       - Tener disponible tu propio ordenador portátil
-      - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo.
+      - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo
       - "Tener un entorno de desarrollo que conste de lo siguiente:"
       - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
     second-list:
       - Lenguaje orientado a objetos
       - Un framework the unit testing
+      - Una librería para hacer mocking
+
+
+crafting-code:
+  why-attend:
+    intro: Software Craftsmanship es el corazón de este curso. A lo largo de este curso, tu equipo aprenderá sobre la mentalidad de Software Craftsmanship y cómo aplicarla dentro de la organización.
+    clean-code-headline-one: Escribir Clean Code no es fácil; y limpiar código existente todavía menos.
+    why-attend: "Tu equipo debe asistir si necesita:"
+    why-attend-list:
+      - Alinear la tecnología con los requerimientos del negocio
+      - Escribir código limpio que sea fácil de entender y mantener
+      - "Mejorar sus competencias en Test-Driven Development (TDD): usando testing para diseñar y construir"
+    clean-code-headline-two: El código limpio requiere un buen diseño.
+    learning-objectives-title: "Tu equipo aprenderá:"
+    learning-objectives-list:
+      - A comprender los principios de diseño que conducen a un código limpio
+      - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas
+    learning-outcome: Una vez que tu equipo domine estos principios podrá aplicarlos a código heredado. Esto les permitirá ganar confianza trabajando con legacy code.
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software:"
+    list:
+      - Familiarizados con un nivel mínimo de lenguaje orientado a objetos como Java, C# o C++
+      - Con competencias en Java o C#
+      - Capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
+      - Con una comprensión básica sobre mocking
+
+  course-content:
+    principles-intro: "Principios de:"
+    list:
+      - Test-Driven Design (TDD)
+      - Object-Oriented Design (OOO)
+      - Domain-Driven Design (DDD)
+    content-intro: "Contenido:"
+    second-list:
+      - Ciclo de vida TDD
+      - Estilo Outside-IN de TDD
+      - Escribiendo unit test que expresan intención, no implementación
+      - Utilizando unit test como herramienta para impulsar un buen diseño
+      - Expressive code
+      - Testing y refactoring de legacy code
+
+  prerequisites:
+    intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Ser capaz de crear proyectos, compilar código fuente y ejecutar casos de prueba en tu entorno de desarrollo
+      - "Tener un entorno de desarrollo que conste de lo siguiente:"
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
+    second-list:
+      - Lenguaje orientado a objetos
+      - Un framework de unit testing
       - Una librería para hacer mocking

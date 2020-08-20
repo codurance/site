@@ -53,7 +53,7 @@ crafting-code-and-crafted-design:
     principles-intro: "Principles of:"
     list:
       - Test-Driven Development (TDD)
-      - Object-Orientated Design (OOD)
+      - Object-Oriented Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
     content-intro: "Content:"
@@ -71,6 +71,59 @@ crafting-code-and-crafted-design:
 
   prerequisites:
     intro: The is a hands on training course. Software development teams will be required to write a lot of code.
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Be able to create projects, build source code, and run test cases in their development environment
+      - "Have a development environment that consists of the following:"
+      - A distributed version-control system such as Github is preferable
+    second-list:
+      - Object-Oriented language
+      - A unit test framework
+      - A mocking library
+
+
+crafting-code:
+  why-attend:
+    intro: Software Craftsmanship is at the heart of this course. Throughout this training series, your team will learn about the Software Craftsmanship mindset and how to apply it within your organisation.
+    clean-code-headline-one: Writing Clean Code is difficult. Cleaning existing code, even more so.
+    why-attend: "Your team should attend if you need them to:"
+    why-attend-list:
+      - Align technology to business requirements
+      - Write clean code that is easy to understand, maintain, and adapt
+      - "Become more proficient in Test-Driven Development (TDD): using tests to design and build"
+    clean-code-headline-two: Clean code necessitates good design.
+    learning-objectives-title: "Your team will learn how to:"
+    learning-objectives-list:
+      - Understand design principles that lead to clean code
+      - Avoid over-engineering and large rewrites by incrementally evolving design using tests
+    learning-outcome: Once your team has mastered their understanding of these principles, they will apply them to legacy code. This will allow them to gain confidence working with legacy code.
+
+  audience:
+    intro: "This course is designed for software development teams that are:"
+    list:
+      - Familiar with a minimum of one Object-Oriented language, such as Java, C#, or C++
+      - Able to understand Java or C#
+      - Able to write and execute unit tests using a framework, such as JUnit, NUnit, etc.
+      - Have a basic understanding of mock objects
+
+  course-content:
+    principles-intro: "Principles of:"
+    list:
+      - Test-Driven Design (TDD)
+      - Object-Oriented Design (OOO)
+      - Domain-Driven Design (DDD)
+    content-intro: "Content:"
+    second-list:
+      - TDD lifecycle
+      - Outside-In style of TDD
+      - Writing unit tests that express intent, not implementation
+      - Using unit tests as a tool to drive good design
+      - Expressive code
+      - Testing and refactoring legacy code
+
+  prerequisites:
+    intro: The is a hands on training course. Software development teams will be require to write a lot of code.
     required: "Required:"
     list:
       - Bring their own laptop
