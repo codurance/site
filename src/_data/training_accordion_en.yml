@@ -184,3 +184,43 @@ crafted-design:
       - Using TDD regularly on projects
       - Able to create projects, tests, and code and run them in their local environment
       - A distributed version-control system such as Github is preferable
+
+
+functional-programming:
+  why-attend:
+    intro: This course is designed to help software development teams learn the basics of functional programming and its benefits. We will explore the fundamentals of the functional paradigm in a series of hands-on exercises, which will provide a starting point for your journey into functional programming.
+    clean-code-headline-one: The contents of the course are language agnostic, so teams should be able to apply this knowledge to any functional programming language.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Introduce the way of thinking of Functional Programming
+      - Understand the benefits (and drawbacks) of immutability
+      - start using the basic elements needed to create complex applications using FP languages
+      - simplify their testing needs
+      - introduce some of the ideas into their current paradigms
+      - introduce FP languages into their current systems
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have at least two years of commercial experience
+      - Are evaluating the use of an FP language
+      - Want to simplify the business flows wihtin their system(s)
+
+  course-content:
+    list:
+      - Lesson 1 - Introduction to course, objectives, F# and Fable
+      - Lesson 2 - Introduction to the domain
+      - Lesson 3 - Immutability
+      - Lesson 4 - Impure/Pure/Impure sandwich
+      - Lesson 5 - Functions as first class citizen
+      - Lesson 6 - Partial application
+      - Lesson 7 - Lambdas
+      - Lesson 8 - Piping
+      - Lesson 9 - Composition
+      - Lesson 10 - Recursion
+      - Lesson 11 - Alternatives to recursion
+      - Lesson 12 - Pattern Matching
+      - Lesson 13 - Helpful Constructs
+      - Lesson 14 - Railway Oriented Programming
+      - Lesson 15 - Testing
+      - Lesson 16 - An overview of FP languages
