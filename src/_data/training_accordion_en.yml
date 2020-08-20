@@ -269,4 +269,37 @@ lambdas:
     list:
       - Bring their own laptop
       - Linux VM installed if working from a windows laptop
-      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python"
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+
+
+serverless:
+  why-attend:
+    intro: Building your Web Application is complicated enough, you don't want to build the infra as well. Cloud based infra such as AWS gives you a tried and tested deployemnt platform so you can concentrate on the business. This course will give you hands-on experience of how to build fully scalable, reliable and secure web apps using the AWS server-less architecture
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Build web apps using AWS serverless architecture
+      - Adhere to the AWS well architected framework
+      - Understand the significance of the various AWS products within this type of architecture"
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Want to build secure, reliable, and scalable web applications using the Amazon Serverless architecture
+
+  course-content:
+    list:
+      - Build scalable REST APIs using API Gateway and AWS Lambda
+      - Build scalable persistence using RDS with automated backups
+      - Secure using IAM, KMS, AWS WAF, Json Web Token, and SSL
+      - Monitor using Cloud Trail and Cloud Watch
+      - Serve static content using S3
+      - Deploy using AWS CLI
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Linux VM installed if working from a windows laptop
+      - Have an integrated development environment installed
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+

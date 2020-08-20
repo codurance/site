@@ -271,3 +271,35 @@ lambdas:
       - Tener disponible tu propio ordenador portátil
       - Linux VM instalado si se trabaja desde un ordenador con Windows
       - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+
+
+serverless:
+  why-attend:
+    intro: Construir su aplicación web es bastante complicado, pero no tiene porque ser necesario construir la infraestructura también. La infraestructura basada en cloud como AWS ofrece una plataforma de implementación probada que te permitirá poner el foco en las necesiades del negocio. Este curso te ofrece los conocimientos prácticos necesarios sobre cómo crear aplicaciones web totalmente escalables, confiables y seguras utilizando la arquitectura serverless de AWS.
+    learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Construir aplicaciones web con la arquitectura serverless de AWS.
+      - Adoptar AWS Well Architected Framework.
+      - Comprender la importancia de los diversos productos de AWS dentro de este tipo de arquitectura.
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software que:"
+    list:
+      - Necesiten crear aplicaciones web seguras, confiables y escalables utilizando la arquitectura serverless de Amazon
+
+  course-content:
+    list:
+      - Construye API REST escalables con API Gateway y AWS Lambda
+      - Construye persistencia escalable utilizando RDS con copias de seguridad automatizadas
+      - Consigue seguridad utilizando IAM, KMS, AWS WAF, Json Web Token y SSL
+      - Monitoriza usando Cloud Trail y Cloud Watch
+      - Ofrece contenido estático utilizando S3
+      - Deploy con AWS CLI
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Linux VM instalado si trabajas desde un ordenador con Windows
+      - Tener instalado un entorno de desarrollo integrado
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
