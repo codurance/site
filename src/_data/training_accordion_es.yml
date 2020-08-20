@@ -53,7 +53,7 @@ crafting-code-and-crafted-design:
     principles-intro: "Principios de:"
     list:
       - Test-Driven Development (TDD)
-      - Object-Orientated Design (OOD)
+      - Object-Oriented Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
     content-intro: "Contenido:"
@@ -105,13 +105,13 @@ crafting-code:
       - Familiarizados con un nivel mínimo de lenguaje orientado a objetos como Java, C# o C++
       - Con competencias en Java o C#
       - Capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
-      - Con un comprensión básica de los objetos simulados
+      - Con una comprensión básica sobre mocking
 
   course-content:
     principles-intro: "Principios de:"
     list:
       - Test-Driven Design (TDD)
-      - Object-Orientated Design (OOO)
+      - Object-Oriented Design (OOO)
       - Domain-Driven Design (DDD)
     content-intro: "Contenido:"
     second-list:
@@ -127,10 +127,10 @@ crafting-code:
     required: "Necesario:"
     list:
       - Tener disponible tu propio ordenador portátil
-      - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo
+      - Ser capaz de crear proyectos, compilar código fuente y ejecutar casos de prueba en tu entorno de desarrollo
       - "Tener un entorno de desarrollo que conste de lo siguiente:"
       - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
     second-list:
       - Lenguaje orientado a objetos
-      - Un unit test framework
-      - Una mocking library
+      - Un framework de unit testing
+      - Una librería para hacer mocking

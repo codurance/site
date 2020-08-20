@@ -53,7 +53,7 @@ crafting-code-and-crafted-design:
     principles-intro: "Principles of:"
     list:
       - Test-Driven Development (TDD)
-      - Object-Orientated Design (OOD)
+      - Object-Oriented Design (OOD)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
     content-intro: "Content:"
@@ -111,7 +111,7 @@ crafting-code:
     principles-intro: "Principles of:"
     list:
       - Test-Driven Design (TDD)
-      - Object-Orientated Design (OOO)
+      - Object-Oriented Design (OOO)
       - Domain-Driven Design (DDD)
     content-intro: "Content:"
     second-list:
