@@ -99,38 +99,38 @@ crafting-code:
       - A evitar la sobre-ingeniería y las grandes reescrituras mediante un diseño que evolucione gradualmente utilizando pruebas.
     learning-outcome: Una vez que tu equipo domine estos principios podrá aplicarlos a código heredado. Esto les permitirá ganar confianza trabajando con legacy code.
 
-    audience:
-      intro: "Este curso está diseñado para equipos de desarrollo de software:"
-      list:
-        - familiarizados con un nivel mínimo de lenguaje orientado a objetos como Java, C# o C++.
-        - con competencias en Java o C#
-        - capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
-        - con un comprensión básica de los objetos simulados.
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software:"
+    list:
+      - familiarizados con un nivel mínimo de lenguaje orientado a objetos como Java, C# o C++.
+      - con competencias en Java o C#
+      - capaces de escribir y ejecutar pruebas unitarias utilizando un framework (como JUnit, NUnit, etc.)
+      - con un comprensión básica de los objetos simulados.
 
-    course-content:
-      principles-intro: "Principios de:"
-      list:
-        - Test-Driven Design (TDD)
-        - Object-Orientated Design (OOO)
-        - Domain-Driven Design (DDD)
-      content-intro: "Contenido:"
-      second-list:
-        - Ciclo de vida TDD
-        - Estilo Outside-IN de TDD
-        - Escribiendo unit test que expresan intención, no implementación
-        - Utilizando unit test como herramienta para impulsar un buen diseño.
-        - Expressive code
-        - Testing y refactoring de legacy code
+  course-content:
+    principles-intro: "Principios de:"
+    list:
+      - Test-Driven Design (TDD)
+      - Object-Orientated Design (OOO)
+      - Domain-Driven Design (DDD)
+    content-intro: "Contenido:"
+    second-list:
+      - Ciclo de vida TDD
+      - Estilo Outside-IN de TDD
+      - Escribiendo unit test que expresan intención, no implementación
+      - Utilizando unit test como herramienta para impulsar un buen diseño.
+      - Expressive code
+      - Testing y refactoring de legacy code
 
-    prerequisites:
-      intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
-      required: "Necesario:"
-      list:
-        - Tener disponible tu propio ordenador portátil
-        - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo.
-        - "Tener un entorno de desarrollo que conste de lo siguiente:"
-        - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github"
-      second-list:
-        - Lenguaje orientado a objetos
-        - Un unit test framework
-        - Una mocking library
+  prerequisites:
+    intro: Se trata de un curso totalmente práctico, así que se requerirá que los equipos de desarrollo de software escriban mucho código.
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Ser capaz de crear proyectos, construir código fuente y ejecutar casos de prueba en su entorno de desarrollo.
+      - "Tener un entorno de desarrollo que conste de lo siguiente:"
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github"
+    second-list:
+      - Lenguaje orientado a objetos
+      - Un unit test framework
+      - Una mocking library
