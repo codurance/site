@@ -7,7 +7,7 @@
     {% assign positionOfLastCharacter = item | size | minus: 1 %}
     {% assign lastCharacter = item | slice: positionOfLastCharacter %}
     <li>{{ item }}</li>
-    {% if lastCharacter == ":" %}
+    {% if lastCharacter == ":" and data.second-list %}
       {% include unordered_list.liquid list=data.second-list %}
     {% endif %}
   {% endfor %}
