@@ -134,3 +134,54 @@ crafting-code:
       - Lenguaje orientado a objetos
       - Un framework de unit testing
       - Una librería para hacer mocking
+
+
+crafted-design:
+  why-attend:
+    intro: Este curso aborda el diseño desde un nivel micro hasta microservicios utilizando Test-Driven Development. Con esta formación los equipos podrán mejorar su capacidad para diseñar software que responda, tanto a las necesidades a menudo muy variables del negocio, como a requsitos nuevos que se planteen, solventando  dificultades derivadas de legacy code.
+    learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre:"
+    learning-objectives-list:
+      - Técnicas de diseño que se pueden aplicar a situaciones del mundo real.
+      - Aplicar arquitectura de microservicios para dar respuesta a las necesidades del negocio.
+      - Cómo mantener un diseño limpio a medida que la aplicación crece y los requisitos comerciales cambian.
+      - Construir software que es independiente de la tecnología.
+      - Comportamiento del modelo en lugar de estado manteniendo un diseño alineado con los objetivos del negocio.
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Cuenten con al menos dos años de experiencia en desarrollo de software con fines comerciales.
+      - Estén familiriarizados con algún lenguaje orientado a objetos, como Java, C# o C++
+      - Se sientan cómodos usando TDD para construir software.
+      - Entiendan mock objects y cómo utlizar una mocking library.
+      - Tengan una comprensión general de los diferentes estilos arquitectónicos, incluidos los microservicios.
+
+  course-content:
+    principles-intro: "Principios de:"
+    list:
+      - Los dos estilos principales de diseño Test-Driven Design (Classicist and Outside-In)
+      - Object-Orientated Design (OOO)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+      - Balanced Abstraction Principle (BAP)
+    content-intro: "Contenido:"
+    second-list:
+      - Escritura de pruebas unitarias que expresan intención, no implementación.
+      - Diseño emergente a través del TDD Classicist.
+      - TDD como herramienta de diseño Outside-In style.
+      - Comandos, consultas y cumplimiento de Open/Close Principle.
+      - Diferencias entre capas, hexágonos, características y componentes.
+      - Estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata.
+      - Comportamiento de modelado utilizando Outside-In Design.
+      - Identificación de servicios a partir de reglas de negocio.
+      - Expressive design y arquitectura en código manteniendo su dominio claro
+      - Comprender Impact Mapping y cómo derivar hacia una arquitectura de servicios a partir de él.
+
+  prerequisites:
+    intro: Recomendamos encarecidamente que los equipos de desarrollo de software realicen primero el curso sobre Crafting Code para aprovechar mejor los contenidos de este curso. No se trata de un curso introductorio a Test-Driven Development  y sin una comprensión sólida pueden tener dificultades para seguirlo.
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Aplicar habitualmente TDD  en proyectos.
+      - Capacidad para crear proyectos, pruebas y códigos y ejecutarlos en su entorno local.
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github.
