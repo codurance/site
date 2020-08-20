@@ -13,7 +13,8 @@
   }
   &.single-training__accordion--with-bio {
     @include small {
-      padding-bottom: $vertical-overlap * 3.5;
+      padding-top: 30px;
+      padding-bottom: ($vertical-overlap * 3) + 30;
     }
     @include large-and-extra-large {
       padding-bottom: $vertical-overlap * 2.5;
