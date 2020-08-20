@@ -129,7 +129,7 @@ crafting-code:
       - Bring their own laptop
       - Be able to create projects, build source code, and run test cases in their development environment
       - "Have a development environment that consists of the following:"
-      - A distributed version-control system such as Github is preferable"
+      - A distributed version-control system such as Github is preferable
     second-list:
       - Object-Oriented language
       - A unit test framework
