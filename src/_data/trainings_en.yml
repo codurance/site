@@ -32,11 +32,17 @@ crafting-code:
 
 crafted-design:
   name: Crafted Design
+  course-length: 2 days
+  duration: "DURATION: 2 Days"
+  course-instructor-title: COURSE INSTRUCTOR
+  course-instructor-bio-title: COURSE INSTRUCTOR
   author: Sandro Mancuso
-  description: This course enables your teams to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
+  description: This course enables your team's to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
   page: /services/training/crafted-design
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
+  instructor-bio-p-1: <b>Software craftsman, author, Co-Founder of Codurance, and Founder of the London Software Craftsmanship Community (LSCC).</b> Sandro has been coding since a very young age, but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks.
+  instructor-bio-p-2: During his career Sandro has had the opportunity to work on a variety of projects, spanning different languages, technologies, and industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned for his work on evolving and spreading Software Craftsmanship. His professional aspiration is to raise the bar of the software industry by helping developers become better at their craft.
 
 functional-programming:
   name: "Introduction to <br> Functional Programming"
