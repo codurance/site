@@ -159,7 +159,7 @@ crafted-design:
     principles-intro: "Principles of:"
     list:
       - The two main styles of Test-Driven Design (Classicist and Outside-In)
-      - Object-Orientated Design (OOO)
+      - Object-Oriented Design (OOO)
       - Domain-Driven Design (DDD)
       - Interaction-Driven Design (IDD)
       - Balanced Abstraction Principle (BAP)
