@@ -238,3 +238,36 @@ functional-programming:
       - npm
       - .NET
       - paket - execute `dotnet tool install -g paket`  desde la línea de comando
+
+
+lambdas:
+  why-attend:
+  intro: Este curso proporcionará a tus equipos la teoría y las motivaciones que hay detrás de la aplicación de microservicios junto con la experiencia práctica de construirlos utilizando una arquitectura serverless de AWS.
+  learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
+  learning-objectives-list:
+    - Entender qué tipo de problemas está tratando de resolver la arquitectura basada en microservicios y los desafíos que presenta
+    - Comprender los productos de AWS para crear microservicios
+    - Aprender a construir e implementar microservicios utilizando la arquitectura serverless de AWS
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Tengan interés en la cultura DevOps y los microservicios.
+      - Quieran adquirir los conocimientos prácticos y técnicas que utilizan la arquitectura serverless de AWS."
+
+  course-content:
+    principles-intro: ¿Qué problemas están tratando de resolver los microservicios?
+    list:
+      - Best practices en microservicios
+      - Anatomía y limitaciones de AWS Lambda
+      - Construye un microservicio con AWS Lambda, API Gateway y Dynamo DB
+      - Implementa tu microservicio en la infraestructura de AWS desde la línea de comandos
+      - Asegura tu microservicio
+      - Creación de REST endpoints con API Gateway y AWS Lambda
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Linux VM instalado si se trabaja desde un ordenador con Windows
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python

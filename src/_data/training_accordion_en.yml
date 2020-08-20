@@ -237,3 +237,36 @@ functional-programming:
       - npm
       - .NET
       - paket - execute `dotnet tool install -g paket` from the command line
+
+
+lambdas:
+  why-attend:
+    intro: This course will provide your teams with the theory and motivations behind microservices along with the hands-on experience building them using an AWS serverless architecture.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Understand what kind of problems microservices based architecture is trying to solve and the challenges it presents
+      - Understand AWS products for building microservices
+      - Learn how to build and deploy microservices using the AWS serverless architecture
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have an interest in DevOps culture and microservices
+      - Need practical knowledge and techniques using AWS serverless architecture
+
+  course-content:
+    principles-intro: What problems are microservices trying to solve?
+    list:
+      - Microservices best practices
+      - Microservices security
+      - Anatomy and limitations of AWS Lambda
+      - Build a microservice with AWS Lambda, API Gateway, and Dynamo DB
+      - Deploy a microservice on the AWS infrastructure
+      - Build REST endpoints using API Gateway and AWS Lambda
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Linux VM installed if working from a windows laptop
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python"
