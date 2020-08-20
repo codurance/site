@@ -81,3 +81,53 @@ crafting-code-and-crafted-design:
       - Object-Oriented language
       - A unit test framework
       - A mocking library
+
+
+crafted-design:
+  why-attend:
+    intro: This course addresses design from a micro level through to microservices utilising Test-Driven Development. The course teaches teams how to design software that is both responsive to changing requirements and new functionally, while avoiding some of the pitfalls that lead to legacy code.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Design techniques that can be applied to real-world situations
+      - Derive a microservices architecture from business requirements
+      - Maintain clean design as the application grows and business requirements change
+      - Build software that is technology agnostic
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have at least two years of commercial software development experience
+      - Familiar with a minimum of one Object-Oriented language, such as Java, C#, or C++
+      - Comfortable using TDD to build software
+      - Understand mock objects and how to use a mocking library
+      - Have a general understanding of different architectural styles, including microservices
+
+  course-content:
+    principles-intro: "Principles of:"
+    list:
+      - The two main styles of Test-Driven Design (Classicist and Outside-In)
+      - Object-Orientated Design (OOO)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+      - Balanced Abstraction Principle (BAP)
+    content-intro: "Content:"
+    second-list:
+      - Writing unit tests that express intent, not implementation
+      - Emergent design through classicist TDD
+      - Using TDD as a design tool with the Outside-In style of TDD
+      - Commands, Queries, and Open/Close Principle compliance
+      - Differences between layers, hexagons, features, and components
+      - Structure projects in a way that express what the application does and what it is about
+      - Modeling behaviour using Outside-In Design
+      - Identifying services from business rules
+      - Expressive design and architecture in code, but keeping your domain clear
+      - Understanding Impact Mapping and how a services architecture can be derived from it
+
+  prerequisites:
+    intro: We strongly recommend that software development teams take Crafting Code before attempting this course. This is not an introductory Test-Driven Development course, and those users without a solid understanding may struggle with the material.
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Using TDD regularly on projects
+      - Able to create projects, tests, and code and run them in their local environment
+      - A distributed version-control system such as Github is preferable
