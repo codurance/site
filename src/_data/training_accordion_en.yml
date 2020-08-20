@@ -231,7 +231,7 @@ functional-programming:
       - Access to a GitLab account
       - Bring their own laptop
       - "The following applications are installed:"
-      - Have an integrated development environment that can handle F#. We recommend using Visual Studio Code with Ionide. "
+      - Have an integrated development environment that can handle F#. We recommend using Visual Studio Code with Ionide.
     second-list:
       - NodeJS
       - npm
