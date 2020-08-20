@@ -224,3 +224,16 @@ functional-programming:
       - Lesson 14 - Railway Oriented Programming
       - Lesson 15 - Testing
       - Lesson 16 - An overview of FP languages
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Access to a GitLab account
+      - Bring their own laptop
+      - "The following applications are installed:"
+      - Have an integrated development environment that can handle F#. We recommend using Visual Studio Code with Ionide. "
+    second-list:
+      - NodeJS
+      - npm
+      - .NET
+      - paket - execute `dotnet tool install -g paket` from the command line
