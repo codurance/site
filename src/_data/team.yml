@@ -703,17 +703,6 @@
   linkedin: josewenzel
   office: London
 
-- id: stephane_meny
-  name: Stéphane Meny
-  image: /assets/custom/img/team/stephane_meny.jpg
-  role: Software Craftsperson
-  fullDescription:
-    <p>Stéphane started programming at a young age when his father brought home a Tandy 1000 computer. His first programs were written in Basic, guessing which family member was in front of the computer based on the age given. Later, as a teenager he would often be that guy who knows about computers, fixing various issues for his friends and their parents.</p>
-    <p>He got his A-levels in Biology and his masters in Computer Science, using his studies as an excuse to travel around France and Ireland. His career started in Nice, followed by Belfort and Strasbourg, to then finally settle in London.</p>
-    <p>Passionate about agility, he keeps looking for occasions to discuss with and learn from his peers in the Software Craftsmanship and eXtreme programming communities.</p>
-    <p>In his spare time, Stéphane enjoys playing games with his friends around a table or online, owning a collection of 80+ board games. He is also an aficionado of old technologies and emulation in particular.</p>
-  office: London
-
 - id: sylvester_loreto
   name: Sylvester Abreu Loreto
   image: /assets/custom/img/team/sylvester_loreto.jpg
