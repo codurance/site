@@ -185,3 +185,43 @@ crafted-design:
       - Aplicar habitualmente TDD  en proyectos
       - Capacidad para crear proyectos, pruebas y códigos y ejecutarlos en su entorno local
       - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
+
+
+functional-programming:
+  why-attend:
+    intro: Este curso está diseñado para ayudar a los equipos de desarrollo de software a aprender los conceptos básicos de la programación funcional y sus beneficios. Exploraremos los fundamentos del paradigma funcional en una serie de ejercicios prácticos, que proporcionarán un punto de partida para iniciarse en la programación funcional.
+    clean-code-headline-one: Los contenidos del curso son independientes del lenguaje, por lo que los equipos deberían poder aplicar este conocimiento a cualquier lenguaje de programación funcional. El código no necesariamente será idiomático del lenguaje que estamos usando (F# transpiled to JS with Fable). Pasaremos de tener un código muy básico dentro del dominio (comenzando con un círculo en la pantalla) a mostrar cómo el código podría reescribirse de manera incremental hacia un proceso más funcional. Posteriormente agregaremos múltiples círculos para aumentar la diversión y las posibilidades.
+    learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Introducir la forma de pensar en la programación funcional
+      - Comprender los beneficios (y los inconvenientes) de la inmutabilidad
+      - Empezar a utilizar los elementos básicos necesarios para crear aplicaciones complejas utilizando lenguajes FP
+      - Simplificar sus necesidades de testing
+      - Introducir algunas de las ideas en sus paradigmas actuales
+      - Introducir lenguajes FP en sus sistemas actuales
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Sus miembros cuenten al menos un par de años de experiencia
+      - Estén evaluando el uso de un lenguaje FP
+      - Quieran simplificar algunos de los flujos de negocio en sus sistemas
+
+  course-content:
+    list:
+      - Lección 1 - Introducción al curso, objetivos, F# y Fable
+      - Lección 2 - Introducción al dominio
+      - Lección 3 - Inmutabilidad
+      - Lección 4 - Impure/Pure/Impure sandwich
+      - Lección 5 - Funciones como first class citizen
+      - Lección 6 - Aplicación parcial
+      - Lección 7 - Lambdas
+      - Lección 8 - Piping
+      - Lección 9 - Composición
+      - Lección 10 - Recursión
+      - Lección 11 - Alternativas a la recursividad
+      - Lección 12 - Pattern Matching
+      - Lección 13 - Helpful Constructs
+      - Lección 14 - Programación Railway Oriented
+      - Lección 15 - Testing
+      - Lección 16 - Una visión general de los lenguajes FP
