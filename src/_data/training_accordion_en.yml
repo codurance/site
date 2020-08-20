@@ -303,3 +303,38 @@ serverless:
       - Have an integrated development environment installed
       - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
 
+ead:
+  why-attend:
+    intro: In most enterprise projects the day-to-day development effort does not require the developer to get to know the system as a whole along with the build and deployment tools that support the software development lifecycle. This often results in a lack of knowledge and confidence in the overall system, and the leading approaches in enterprise software development.
+    learning-objectives-title: "Learning Outcomes:"
+    learning-objectives-list:
+      - Create a walking skeleton of the project
+      - Create automated system tests
+      - Use leading techniques to develop Web Services, Messaging, and Persistence
+      - Isolate the business from infrastructure using ports and adapters and Domain Driven Design
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have experience working on Java based Enterprise Systems
+
+  course-content:
+    list:
+      - Create a build using Maven
+      - Add static analysis to your build
+      - Create automated system tests using a BDD framework
+      - Persistence to a relational store
+      - Messaging with JMS
+      - RESTful web services
+      - Authentication and Authorization
+      - XML Marshalling
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - "Have an integrated development environment consisting of:"
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+    second-list:
+      - Java 1.7 or above
+      - Maven 3.x

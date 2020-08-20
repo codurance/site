@@ -303,3 +303,40 @@ serverless:
       - Linux VM instalado si trabajas desde un ordenador con Windows
       - Tener instalado un entorno de desarrollo integrado
       - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+
+
+ead:
+  why-attend:
+    intro: En la mayoría de los proyectos de negocio el esfuerzo de desarrollo diario no requiere que el desarrollador conozca el sistema en su conjunto junto con las herramientas de construcción e implementación que respaldan el ciclo de vida del desarrollo de software. A menudo esto desemboca en la falta de conocimiento y confianza en el sistema general, y en los enfoques principales en el desarrollo de software empresarial.
+    learning-objectives-title: "Este curso enseña a los equipos de desarrollo de software cómo:"
+    learning-objectives-list:
+      - Crear un esqueleto del proyecto
+      - Crear test automatizados del sistema
+      - Utilizar técnicas líderes para desarrollar Web Services, Messaging and Persistence
+      - Aíslar el negocio de la infraestructura utilizando puertos, adaptadores y Domain Driven Design
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software que cuenten con:"
+    list:
+      - Experiencia trabajando en sistemas de negocio basados en Java
+
+  course-content:
+    list:
+      - Crear una construcción usando Maven
+      - Agregar análisis estático a tu compilación
+      - Crear sistemas de test automatizados utilizando un marco BDD
+      - Persistencia a una tienda relacional
+      - Mensajería con JMS
+      - Servicios web RESTful
+      - Autenticacion y autorizacion
+      - XML Marshalling
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil.
+      - "Tener un entorno de desarrollo integrado que consista en:"
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+    second-list:
+      - Java 1.7 o superior
+      - Maven 3.x
