@@ -25,10 +25,16 @@ crafting-code-and-crafted-design:
 crafting-code:
   name: Crafting Code
   author: Sandro Mancuso
-  description: This course is designed to improve your team's skills around creating clean, maintainable code. This will enable change to be released faster and more sustainably.
+  course-length: 2 days
+  duration: "DURATION: 2 DAYS"
+  course-instructor-title: COURSE INSTRUCTOR
+  course-instructor-bio-title: COURSE INSTRUCTOR
+  description: This course is designed to improve your team’s skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
   page: /services/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafting-code.svg
+  instructor-bio-p-1: <b>Software craftsman, author, Co-Founder of Codurance, and Founder of the London Software Craftsmanship Community (LSCC).</b> Sandro has been coding since a very young age, but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks.
+  instructor-bio-p-2: During his career Sandro has had the opportunity to work on a variety of projects, spanning different languages, technologies, and industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned for his work on evolving and spreading Software Craftsmanship. His professional aspiration is to raise the bar of the software industry by helping developers become better at their craft.
 
 crafted-design:
   name: Crafted Design
