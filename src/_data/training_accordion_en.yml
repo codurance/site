@@ -279,7 +279,7 @@ serverless:
     learning-objectives-list:
       - Build web apps using AWS serverless architecture
       - Adhere to the AWS well architected framework
-      - Understand the significance of the various AWS products within this type of architecture"
+      - Understand the significance of the various AWS products within this type of architecture
 
   audience:
     intro: "This course is designed for software development teams that:"
