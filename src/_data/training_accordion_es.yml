@@ -278,9 +278,9 @@ serverless:
     intro: Construir su aplicación web es bastante complicado, pero no tiene porque ser necesario construir la infraestructura también. La infraestructura basada en cloud como AWS ofrece una plataforma de implementación probada que te permitirá poner el foco en las necesiades del negocio. Este curso te ofrece los conocimientos prácticos necesarios sobre cómo crear aplicaciones web totalmente escalables, confiables y seguras utilizando la arquitectura serverless de AWS.
     learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre cómo:"
     learning-objectives-list:
-      - Construir aplicaciones web con la arquitectura serverless de AWS.
-      - Adoptar AWS Well Architected Framework.
-      - Comprender la importancia de los diversos productos de AWS dentro de este tipo de arquitectura.
+      - Construir aplicaciones web con la arquitectura serverless de AWS
+      - Adoptar AWS Well Architected Framework
+      - Comprender la importancia de los diversos productos de AWS dentro de este tipo de arquitectura
 
   audience:
     intro: "Este curso está diseñado para equipos de desarrollo de software que:"
