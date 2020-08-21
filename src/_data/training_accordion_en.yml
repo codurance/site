@@ -177,7 +177,7 @@ crafted-design:
       - Understanding Impact Mapping and how a services architecture can be derived from it
 
   prerequisites:
-    intro: We strongly recommend that software development teams take Crafting Code before attempting this course. This is not an introductory Test-Driven Development course, and those users without a solid understanding may struggle with the material.
+    intro: We strongly recommend that software development teams take <a href="/services/training/crating-code/">Crafting Code</a> before attempting this course. This is not an introductory Test-Driven Development course, and those users without a solid understanding may struggle with the material.
     required: "Required:"
     list:
       - Bring their own laptop
