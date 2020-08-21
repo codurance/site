@@ -138,7 +138,7 @@ crafting-code:
 
 crafted-design:
   why-attend:
-    intro: Este curso aborda el diseño desde un nivel micro hasta microservicios utilizando Test-Driven Development. Con esta formación los equipos podrán mejorar su capacidad para diseñar software que responda, tanto a las necesidades a menudo muy variables del negocio, como a requsitos nuevos que se planteen, solventando  dificultades derivadas de legacy code.
+    intro: Este curso aborda el diseño desde un nivel micro hasta macro (ej. microservicios) utilizando Test-Driven Development. Con esta formación los equipos podrán mejorar su capacidad para diseñar software que responda, tanto a las necesidades a menudo muy variables del negocio, como a requsitos nuevos que se planteen, solventando  dificultades derivadas de legacy code.
     learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre:"
     learning-objectives-list:
       - Técnicas de diseño que se pueden aplicar a situaciones del mundo real
@@ -153,7 +153,7 @@ crafted-design:
       - Cuenten con al menos dos años de experiencia en desarrollo de software con fines comerciales
       - Estén familiriarizados con algún lenguaje orientado a objetos, como Java, C# o C++
       - Se sientan cómodos usando TDD para construir software
-      - Entiendan mock objects y cómo utlizar una mocking library
+      - Entiendan mock objects y cómo utlizar una librería de mocking
       - Tengan una comprensión general de los diferentes estilos arquitectónicos, incluidos los microservicios
 
   course-content:
@@ -183,7 +183,7 @@ crafted-design:
     list:
       - Tener disponible tu propio ordenador portátil
       - Aplicar habitualmente TDD  en proyectos
-      - Capacidad para crear proyectos, pruebas y códigos y ejecutarlos en su entorno local
+      - Capacidad para crear proyectos, pruebas y código y ejecutarlos en su entorno local
       - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
 
 
