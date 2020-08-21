@@ -274,7 +274,7 @@ lambdas:
 
 serverless:
   why-attend:
-    intro: Building your Web Application is complicated enough, you don't want to build the infra as well. Cloud based infra such as AWS gives you a tried and tested deployemnt platform so you can concentrate on the business. This course will give you hands-on experience of how to build fully scalable, reliable and secure web apps using the AWS server-less architecture
+    intro: Building your Web Application is complicated enough, you don't want to build the infra as well. Cloud based infra such as AWS gives you a tried and tested deployemnt platform so you can concentrate on the business. This course will give you hands-on experience of how to build fully scalable, reliable and secure web apps using the AWS serverless architecture
     learning-objectives-title: "This course teaches software development teams how to:"
     learning-objectives-list:
       - Build web apps using AWS serverless architecture
@@ -284,7 +284,7 @@ serverless:
   audience:
     intro: "This course is designed for software development teams that:"
     list:
-      - Want to build secure, reliable, and scalable web applications using the Amazon Serverless architecture
+      - Want to build secure, reliable, and scalable web applications using the AWS serverless architecture
 
   course-content:
     list:
