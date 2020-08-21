@@ -4,9 +4,9 @@
 <h3 class="accordion-panel__sub-title">{{ data.required }}</h3>
 <ul>
   {% for item in data.list %}
+    <li>{{ item }}</li>
     {% assign positionOfLastCharacter = item | size | minus: 1 %}
     {% assign lastCharacter = item | slice: positionOfLastCharacter %}
-    <li>{{ item }}</li>
     {% if lastCharacter == ":" and data.second-list %}
       {% include unordered_list.liquid list=data.second-list %}
     {% endif %}
