@@ -56,9 +56,11 @@ $form-width: 385px;
   }
 
   .training-hero:not(.training-hero--with-instructor) & {
-    transform: translateY(60px);
     @include small {
       transform: translateY(20px);
+    }
+    @include medium-large-and-extra-large {
+      transform: translateY(60px);
     }
   }
 }
