@@ -45,11 +45,19 @@ $form-width: 385px;
 .training-hero__intro-container-inner {
   @include max-width--out-there;
   @include lateral-spacing;
-  width: 100%;
 
   @include small {
     position: relative;
     z-index: 2;
+  }
+  @include small-and-medium {
+    width: 100%;
+  }
+  @include medium-large-and-extra-large {
+    margin-left: 0;
+  }
+  @include large-and-extra-large {
+    width: 60%;
   }
 
   .training-hero:not(.training-hero--with-instructor) & {
