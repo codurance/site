@@ -123,7 +123,7 @@ crafting-code:
       - Testing and refactoring legacy code
 
   prerequisites:
-    intro: The is a hands on training course. Software development teams will be require to write a lot of code.
+    intro: The is a hands on training course. Software development teams will be required to write a lot of code.
     required: "Required:"
     list:
       - Bring their own laptop
