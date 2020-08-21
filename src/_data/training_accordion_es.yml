@@ -242,12 +242,12 @@ functional-programming:
 
 lambdas:
   why-attend:
-  intro: Este curso proporcionará a tus equipos la teoría y las motivaciones que hay detrás de la aplicación de microservicios junto con la experiencia práctica de construirlos utilizando una arquitectura serverless de AWS.
-  learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
-  learning-objectives-list:
-    - Entender qué tipo de problemas está tratando de resolver la arquitectura basada en microservicios y los desafíos que presenta
-    - Comprender los productos de AWS para crear microservicios
-    - Aprender a construir e implementar microservicios utilizando la arquitectura serverless de AWS
+    intro: Este curso proporcionará a tus equipos la teoría y las motivaciones que hay detrás de la aplicación de microservicios junto con la experiencia práctica de construirlos utilizando una arquitectura serverless de AWS.
+    learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Entender qué tipo de problemas está tratando de resolver la arquitectura basada en microservicios y los desafíos que presenta
+      - Comprender los productos de AWS para crear microservicios
+      - Aprender a construir e implementar microservicios utilizando la arquitectura serverless de AWS
 
   audience:
     intro: "Este curso está pensado para equipos de desarrollo de software que:"
