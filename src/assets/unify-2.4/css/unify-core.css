@@ -23,11 +23,6 @@ a {
   outline: none;
 }
 
-a:focus,
-a:hover {
-  color: #fd851a;
-}
-
 .nav-link {
   color: #555;
 }

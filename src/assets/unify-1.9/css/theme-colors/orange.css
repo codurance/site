@@ -9,11 +9,7 @@
 a {
   color: #e67e22;
 }
-a:focus, 
-a:hover, 
-a:active {
-	color: #e67e22;
-}
+
 .color-green {
 	color: #e67e22;
 }
