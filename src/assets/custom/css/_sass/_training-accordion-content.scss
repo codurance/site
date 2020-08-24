@@ -1,5 +1,11 @@
 .accordion-panel__intro {
+  @include small {
+    @include base-reg;
+  }
+
+  @include medium-large-and-extra-large {
     @include mercer-reg;
+  }
 }
 
 .accordion-panel__sub-title {
