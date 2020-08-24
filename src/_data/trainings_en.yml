@@ -29,7 +29,7 @@ crafting-code:
   duration: "DURATION: 2 DAYS"
   course-instructor-title: COURSE INSTRUCTOR
   course-instructor-bio-title: COURSE INSTRUCTOR
-  description: This course is designed to improve your team’s skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
+  description: This course is designed to improve your team's skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
   page: /services/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training/crafting-code/training-backgrounds_bg-crafting-code.svg
@@ -43,7 +43,7 @@ crafted-design:
   course-instructor-title: COURSE INSTRUCTOR
   course-instructor-bio-title: COURSE INSTRUCTOR
   author: Sandro Mancuso
-  description: This course enables your team's to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
+  description: This course enables your teams to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
   page: /services/training/crafted-design
   featured: true
   background-image-path: /assets/custom/img/training/crafted-design/training-backgrounds_bg-crafted-design.svg
