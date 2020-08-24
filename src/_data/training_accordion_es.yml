@@ -178,7 +178,7 @@ crafted-design:
       - Comprender Impact Mapping y cómo derivar hacia una arquitectura de servicios a partir de él
 
   prerequisites:
-    intro: Recomendamos encarecidamente que los equipos de desarrollo de software realicen primero el curso sobre <a href="/services/training/crating-code/" target="_blank">Crafting Code</a> para aprovechar mejor los contenidos de este curso. No se trata de un curso introductorio a Test-Driven Development  y sin una comprensión sólida pueden tener dificultades para seguirlo.
+    intro: Recomendamos encarecidamente que los equipos de desarrollo de software realicen primero el curso sobre <a href="/services/training/crafting-code/" target="_blank">Crafting Code</a> para aprovechar mejor los contenidos de este curso. No se trata de un curso introductorio a Test-Driven Development  y sin una comprensión sólida pueden tener dificultades para seguirlo.
     required: "Necesario:"
     list:
       - Tener disponible tu propio ordenador portátil
