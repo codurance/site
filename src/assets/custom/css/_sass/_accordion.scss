@@ -46,6 +46,10 @@
   padding-top: 20px;
 }
 
+.accordion-panel__sub-title-intro {
+  font-style: italic;
+}
+
 .accordion-panel__inner {
   transition: opacity 0.3s ease-in-out;
 }
