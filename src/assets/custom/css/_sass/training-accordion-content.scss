@@ -1,10 +1,5 @@
 .accordion-panel__intro {
-  @include small {
     @include mercer-reg;
-  }
-  @include medium-large-and-extra-large {
-    @include freed-reg;
-  }
 }
 
 .accordion-panel__sub-title {
