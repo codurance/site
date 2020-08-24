@@ -19,6 +19,33 @@
   }
 }
 
+.accordion-panel__title {
+  pointer-events: none;
+
+  @include small {
+    @include base-bold;
+  }
+
+  @include medium-large-and-extra-large {
+    @include freed-bold;
+  }
+}
+
+.accordion-panel__intro {
+  @include small {
+    @include base-reg;
+  }
+
+  @include medium-large-and-extra-large {
+    @include mercer-reg;
+  }
+}
+
+.accordion-panel__sub-title {
+  @include mercer-bold;
+  padding-top: 20px;
+}
+
 .accordion-panel__inner {
   transition: opacity 0.3s ease-in-out;
 }
@@ -79,17 +106,5 @@
     opacity: 1;
     padding-bottom: 40px;
     visibility: visible;
-  }
-}
-
-.accordion-panel__title {
-  pointer-events: none;
-
-  @include small {
-    @include base-bold;
-  }
-
-  @include medium-large-and-extra-large {
-    @include freed-bold;
   }
 }
