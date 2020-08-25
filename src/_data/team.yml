@@ -1001,6 +1001,19 @@
   linkedin: maciej-kowalski-43a531127
   office: London
 
+- id: ignacio_saporiti
+  name: Ignacio Saporiti
+  image: /assets/custom/img/team/ignacio_saporiti.jpg
+  role: Craftsperson-in-training
+  fullDescription:
+    <p>Ignacio started working in 2014 as a software developer while studying at university. He has developed Web applications ever since for product and consultancy companies, startups, and as a freelancer. He moved to Barcelona in pursuit of new challenges for his career.</p>
+    <p>He is passionate about learning new technologies to be up to date with the best tools available for his job. He is also keen on sharing his thoughts and experiences with his peers.</p>
+    <p>In his spare time he likes playing guitar and listening to music, swimming and having long walks and conversations.</p>
+  email: ignacio.saporiti@codurance.com
+  github: isaporiti
+  linkedin: ignacio-saporiti-07ba9017b
+  office: Barcelona
+
 - id: fabio_damico
   name: Fabio D'Amico
   image: /assets/custom/img/team/fabio_damico.jpg
