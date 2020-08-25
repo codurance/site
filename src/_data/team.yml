@@ -1006,12 +1006,12 @@
   image: /assets/custom/img/team/fabio_damico.jpg
   role: Software Craftsman In-Training
   fullDescription:
-    <p>Born and raised in Italy, Fabio started using computers when Windows 95 went out.</p>
+    <p>Born and raised in Italy, Fabio started using computers when Windows 95 first came out.</p>
     <p>During his studies, he stumbled upon networks and became so fascinated that started to work part-time for two different companies in the field.</p>
     <p>The first professional programming experience came along in a small software house driven by agile methodologies and quality. During his career, Fabio has worked across Italy and The Netherlands for various industries (automotive, e-commerce, telco, media, government, legal) developing distributed systems based on JVM stack using Spring Framework and hosted in AWS/Azure platform.</p>
     <p>He's been always in love with all the processes around software, especially continuous integration/delivery/deployments and all the tools around them. Fabio embraces the DevOps mindset and firmly believe that "How is it done as important as getting it done".</p>
-    <p>He moved to London to join Codurance having the possibility through an apprenticeship to sharp and boost his skills and become a Software Craftsman.</p>
-    <p>He's a passionate drummer and he loves playing volleyball and climb walls.</p>
+    <p>He moved to London to join Codurance having the possibility through an apprenticeship to sharpen and boost his skills and become a Software Craftsman.</p>
+    <p>He's a passionate drummer and he loves playing volleyball and climbing walls.</p>
   email: fabio.damico@codurance.com
   github: fdamico
   linkedin: fabiodamicodev
