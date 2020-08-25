@@ -1,6 +1,6 @@
 {% assign data = include.accordion_data.course-content %}
 
-<h3 class="accordion-panel__sub-title">{{ data.principles-intro }}</h3>
+{% if data.principles-intro %}<h3 class="accordion-panel__sub-title">{{ data.principles-intro }}</h3>{% endif %}
 {% include unordered_list.liquid list=data.list %}
-<h3 class="accordion-panel__sub-title">{{ data.content-intro }}</h3>
-{% include unordered_list.liquid list=data.second-list %}
+{% if data.content-intro %}<h3 class="accordion-panel__sub-title">{{ data.content-intro }}</h3>{% endif %}
+{% if data.second-list %}{% include unordered_list.liquid list=data.second-list %}{% endif %}

@@ -29,7 +29,7 @@ crafting-code:
   duration: "DURATION: 2 DAYS"
   course-instructor-title: COURSE INSTRUCTOR
   course-instructor-bio-title: COURSE INSTRUCTOR
-  description: This course is designed to improve your team’s skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
+  description: This course is designed to improve your team's skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
   page: /services/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training/crafting-code/training-backgrounds_bg-crafting-code.svg
@@ -38,37 +38,39 @@ crafting-code:
 
 crafted-design:
   name: Crafted Design
+  course-length: 2 days
+  duration: "DURATION: 2 Days"
+  course-instructor-title: COURSE INSTRUCTOR
+  course-instructor-bio-title: COURSE INSTRUCTOR
   author: Sandro Mancuso
   description: This course enables your teams to design well-crafted solutions. This will allow your team to be responsive to changing requirements while implementing new functionality.
   page: /services/training/crafted-design
   featured: true
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
+  background-image-path: /assets/custom/img/training/crafted-design/training-backgrounds_bg-crafted-design.svg
+  instructor-bio-p-1: <b>Software craftsman, author, Co-Founder of Codurance, and Founder of the London Software Craftsmanship Community (LSCC).</b> Sandro has been coding since a very young age, but only started his professional career in 1996. He has worked for startups, software houses, product companies, international consultancy companies, and investment banks.
+  instructor-bio-p-2: During his career Sandro has had the opportunity to work on a variety of projects, spanning different languages, technologies, and industries. Sandro has a lot of experience in bringing the Software Craftsmanship ideology and Extreme Programming practices to organisations of all sizes. Sandro is internationally renowned for his work on evolving and spreading Software Craftsmanship. His professional aspiration is to raise the bar of the software industry by helping developers become better at their craft.
 
 functional-programming:
   name: "Introduction to <br> Functional Programming"
-  author: Jorge Gueorguiev García
   description: This course teaches your software delivery teams the basics of functional programming.
   page: /services/training/introduction-to-functional-programming
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-functional-programming.svg
+  background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 
 lambdas:
   name: "Microservices with <br> AWS Lambdas"
   duration: "DURATION: 2 Days"
-  author: Mashooq Badar
   description: This course teaches your software delivery teams how to build and deploy microservices using AWS serverless architecture.
   page: /services/training/lambda-training
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-microservices-with-aws.svg
+  background-image-path: /assets/custom/img/training/lambda-training/training-backgrounds_bg-microservices-with-aws.svg
 
 serverless:
   name: "Serverless Architecture <br> Using AWS"
-  author: Mashooq Badar
   description: This course teaches your teams how to build web applications using AWS serverless architecture. Teams can release fully scalable and secure web apps with ease.
   page: /services/training/serverless-training
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-serverless-architecture-using-aws.svg
+  background-image-path: /assets/custom/img/training/serverless-training/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
 ead:
   name: "Enterprise Application <br> Development"
-  author: Mashooq Badar
   description: This course teaches software delivery teams how to build an enterprise system using industry leading techniques.
   page: /services/training/enterprise-application-development
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-enterprise-application-development.svg
+  background-image-path: /assets/custom/img/training/enterprise-application-development/training-backgrounds_bg-enterprise-application-development.svg

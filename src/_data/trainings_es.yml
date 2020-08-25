@@ -38,36 +38,38 @@ crafting-code:
 
 crafted-design:
   name: Crafted Design
+  course-length: 2 Días
+  duration: "DURACIÓN: 2 Días"
+  course-instructor-title: INSTRUCTOR DEL CURSO
+  course-instructor-bio-title: INSTRUCTOR
   author: Sandro Mancuso
-  description: En esta formación ayudamos a los equipos de desarrollo a mejorar sus habilidades para crear soluciones bien diseñadas.
+  description: Este curso permitirá a tu equipo mejorar sus habilidades para crear soluciones bien diseñadas. Esto hara posible que tu equipo responda a las necesades cambiantes  del negocio mientras implementa nuevas funcionalidades.
   page: /services/training/crafted-design
   featured: true
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-crafted-design.svg
+  background-image-path: /assets/custom/img/training/crafted-design/training-backgrounds_bg-crafted-design.svg
+  instructor-bio-p-1: <b>Software craftsman, escritor, cofundador de Codurance y fundador de la London Software Craftsmanship Community (LSCC).</b> Sandro ha estado programando desde muy joven, y comenzó su carrera profesional en 1996. Ha trabajado para startups, empresas de software , empresas de productos, empresas de consultoría internacional y bancos de inversión.
+  instructor-bio-p-2: Durante su carrera, Sandro tuvo la oportunidad de trabajar en gran variedad de proyectos, con diferentes idiomas, tecnologías y en muchas industrias diferentes. Sandro tiene mucha experiencia en llevar la ideología de Software Craftsmanship y las prácticas de Programación Extrema a organizaciones de todos los tamaños. Sandro es reconocido internacionalmente por su trabajo en la evolución y difusión de Software Craftsmanship y con frecuencia es invitado como speaker en muchas conferencias en todo el mundo. Su aspiración profesional es elevar el nivel de la industria del software ayudando a los desarrolladores a mejorar y preocuparse más por su oficio.
 
 functional-programming:
-  name: Introducción a Functional Programming
-  author: Jorge Gueorguiev García
+  name: Introducción a<br>Functional Programming
   description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
   page: /services/training/introduction-to-functional-programming
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-functional-programming.svg
+  background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 
 lambdas:
-  name: Microservicios con AWS Lambdas
-  author: Mashooq Badar
+  name: Microservicios con<br>AWS Lambdas
   description: En este curso aportamos los conocimientos necesarios para que tu equipo pueda construir e implementar microservicios utilizando la arquitectura serverless  de AWS.
   page: /services/training/lambda-training
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-microservices-with-aws.svg
+  background-image-path: /assets/custom/img/training/lambda-training/training-backgrounds_bg-microservices-with-aws.svg
 
 serverless:
-  name: Arquitectura Serverless utilizando AWS
-  author: Mashooq Badar
+  name: Arquitectura Serverless<br>utilizando AWS
   description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
   page: /services/training/serverless-training
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-serverless-architecture-using-aws.svg
+  background-image-path: /assets/custom/img/training/serverless-training/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
 ead:
-  name: Desarrollo de aplicaciones empresariales
-  author: Mashooq Badar
+  name: Desarrollo de<br>aplicaciones empresariales
   description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
   page: /services/training/enterprise-application-development
-  background-image-path: /assets/custom/img/training-overview/training-backgrounds_bg-enterprise-application-development.svg
+  background-image-path: /assets/custom/img/training/enterprise-application-development/training-backgrounds_bg-enterprise-application-development.svg

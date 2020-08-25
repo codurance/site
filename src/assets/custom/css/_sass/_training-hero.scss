@@ -5,10 +5,10 @@ $form-width: 385px;
 }
 
 .training-hero__intro-container {
-  background-position: center;
   background-size: cover;
 
   @include small {
+    background-position: center right;
     padding-top: 55px;
     padding-bottom: 100px;
     position: relative;
@@ -24,6 +24,10 @@ $form-width: 385px;
       z-index: 1;
       opacity: 0.65;
     }
+  }
+
+  @include medium-large-and-extra-large {
+    background-position: center;
   }
 
   @include medium {
@@ -47,11 +51,16 @@ $form-width: 385px;
     position: relative;
     z-index: 2;
   }
+  @include large {
+    padding-right: 40%;
+  }
 
   .training-hero:not(.training-hero--with-instructor) & {
-    transform: translateY(60px);
     @include small {
       transform: translateY(20px);
+    }
+    @include medium-large-and-extra-large {
+      transform: translateY(60px);
     }
   }
 }

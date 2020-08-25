@@ -123,7 +123,7 @@ crafting-code:
       - Testing and refactoring legacy code
 
   prerequisites:
-    intro: The is a hands on training course. Software development teams will be require to write a lot of code.
+    intro: The is a hands on training course. Software development teams will be required to write a lot of code.
     required: "Required:"
     list:
       - Bring their own laptop
@@ -134,3 +134,207 @@ crafting-code:
       - Object-Oriented language
       - A unit test framework
       - A mocking library
+
+
+crafted-design:
+  why-attend:
+    intro: This course addresses design from a micro level through to microservices utilising Test-Driven Development. The course teaches teams how to design software that is both responsive to changing requirements and new functionally, while avoiding some of the pitfalls that lead to legacy code.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Design techniques that can be applied to real-world situations
+      - Derive a microservices architecture from business requirements
+      - Maintain clean design as the application grows and business requirements change
+      - Build software that is technology agnostic
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have at least two years of commercial software development experience
+      - Familiar with a minimum of one Object-Oriented language, such as Java, C#, or C++
+      - Comfortable using TDD to build software
+      - Understand mock objects and how to use a mocking library
+      - Have a general understanding of different architectural styles, including microservices
+
+  course-content:
+    principles-intro: "Principles of:"
+    list:
+      - The two main styles of Test-Driven Design (Classicist and Outside-In)
+      - Object-Oriented Design (OOO)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+      - Balanced Abstraction Principle (BAP)
+    content-intro: "Content:"
+    second-list:
+      - Writing unit tests that express intent, not implementation
+      - Emergent design through classicist TDD
+      - Using TDD as a design tool with the Outside-In style of TDD
+      - Commands, Queries, and Open/Close Principle compliance
+      - Differences between layers, hexagons, features, and components
+      - Structure projects in a way that express what the application does and what it is about
+      - Modeling behaviour using Outside-In Design
+      - Identifying services from business rules
+      - Expressive design and architecture in code, but keeping your domain clear
+      - Understanding Impact Mapping and how a services architecture can be derived from it
+
+  prerequisites:
+    intro: We strongly recommend that software development teams take <a href="/services/training/crafting-code/" target="_blank">Crafting Code</a> before attempting this course. This is not an introductory Test-Driven Development course, and those users without a solid understanding may struggle with the material.
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Using TDD regularly on projects
+      - Able to create projects, tests, and code and run them in their local environment
+      - A distributed version-control system such as Github is preferable
+
+
+functional-programming:
+  why-attend:
+    intro: This course is designed to help software development teams learn the basics of functional programming and its benefits. We will explore the fundamentals of the functional paradigm in a series of hands-on exercises, which will provide a starting point for your journey into functional programming.
+    clean-code-headline-one: The contents of the course are language agnostic, so teams should be able to apply this knowledge to any functional programming language.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Introduce the way of thinking of Functional Programming
+      - Understand the benefits (and drawbacks) of immutability
+      - start using the basic elements needed to create complex applications using FP languages
+      - simplify their testing needs
+      - introduce some of the ideas into their current paradigms
+      - introduce FP languages into their current systems
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have at least two years of commercial experience
+      - Are evaluating the use of an FP language
+      - Want to simplify the business flows wihtin their system(s)
+
+  course-content:
+    list:
+      - Lesson 1 - Introduction to course, objectives, F# and Fable
+      - Lesson 2 - Introduction to the domain
+      - Lesson 3 - Immutability
+      - Lesson 4 - Impure/Pure/Impure sandwich
+      - Lesson 5 - Functions as first class citizen
+      - Lesson 6 - Partial application
+      - Lesson 7 - Lambdas
+      - Lesson 8 - Piping
+      - Lesson 9 - Composition
+      - Lesson 10 - Recursion
+      - Lesson 11 - Alternatives to recursion
+      - Lesson 12 - Pattern Matching
+      - Lesson 13 - Helpful Constructs
+      - Lesson 14 - Railway Oriented Programming
+      - Lesson 15 - Testing
+      - Lesson 16 - An overview of FP languages
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Access to a GitLab account
+      - Bring their own laptop
+      - "The following applications are installed:"
+      - Have an integrated development environment that can handle F#. We recommend using Visual Studio Code with Ionide.
+    second-list:
+      - NodeJS
+      - npm
+      - .NET
+      - paket - execute `dotnet tool install -g paket` from the command line
+
+
+lambdas:
+  why-attend:
+    intro: This course will provide your teams with the theory and motivations behind microservices along with the hands-on experience building them using an AWS serverless architecture.
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Understand what kind of problems microservices based architecture is trying to solve and the challenges it presents
+      - Understand AWS products for building microservices
+      - Learn how to build and deploy microservices using the AWS serverless architecture
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have an interest in DevOps culture and microservices
+      - Need practical knowledge and techniques using AWS serverless architecture
+
+  course-content:
+    principles-intro: What problems are microservices trying to solve?
+    list:
+      - Microservices best practices
+      - Microservices security
+      - Anatomy and limitations of AWS Lambda
+      - Build a microservice with AWS Lambda, API Gateway, and Dynamo DB
+      - Deploy a microservice on the AWS infrastructure
+      - Build REST endpoints using API Gateway and AWS Lambda
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Linux VM installed if working from a windows laptop
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+
+
+serverless:
+  why-attend:
+    intro: Building your Web Application is complicated enough, you don't want to build the infra as well. Cloud based infra such as AWS gives you a tried and tested deployemnt platform so you can concentrate on the business. This course will give you hands-on experience of how to build fully scalable, reliable and secure web apps using the AWS serverless architecture
+    learning-objectives-title: "This course teaches software development teams how to:"
+    learning-objectives-list:
+      - Build web apps using AWS serverless architecture
+      - Adhere to the AWS well architected framework
+      - Understand the significance of the various AWS products within this type of architecture
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Want to build secure, reliable, and scalable web applications using the AWS serverless architecture
+
+  course-content:
+    list:
+      - Build scalable REST APIs using API Gateway and AWS Lambda
+      - Build scalable persistence using RDS with automated backups
+      - Secure using IAM, KMS, AWS WAF, Json Web Token, and SSL
+      - Monitor using Cloud Trail and Cloud Watch
+      - Serve static content using S3
+      - Deploy using AWS CLI
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - Linux VM installed if working from a windows laptop
+      - Have an integrated development environment installed
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+
+ead:
+  why-attend:
+    intro: In most enterprise projects the day-to-day development effort does not require the developer to get to know the system as a whole along with the build and deployment tools that support the software development lifecycle. This often results in a lack of knowledge and confidence in the overall system, and the leading approaches in enterprise software development.
+    learning-objectives-title: "Learning Outcomes:"
+    learning-objectives-list:
+      - Create a walking skeleton of the project
+      - Create automated system tests
+      - Use leading techniques to develop Web Services, Messaging, and Persistence
+      - Isolate the business from infrastructure using ports and adapters and Domain Driven Design
+
+  audience:
+    intro: "This course is designed for software development teams that:"
+    list:
+      - Have experience working on Java based Enterprise Systems
+
+  course-content:
+    list:
+      - Create a build using Maven
+      - Add static analysis to your build
+      - Create automated system tests using a BDD framework
+      - Persistence to a relational store
+      - Messaging with JMS
+      - RESTful web services
+      - Authentication and Authorization
+      - XML Marshalling
+
+  prerequisites:
+    required: "Required:"
+    list:
+      - Bring their own laptop
+      - "Have an integrated development environment consisting of:"
+      - Proficient with a JVM language such as Java, Clojure, Scala or Groovy, Node.js or Python
+    second-list:
+      - Java 1.7 or above
+      - Maven 3.x

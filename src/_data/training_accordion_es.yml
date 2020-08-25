@@ -134,3 +134,209 @@ crafting-code:
       - Lenguaje orientado a objetos
       - Un framework de unit testing
       - Una librería para hacer mocking
+
+
+crafted-design:
+  why-attend:
+    intro: Este curso aborda el diseño desde un nivel micro hasta macro (ej. microservicios) utilizando Test-Driven Development. Con esta formación los equipos podrán mejorar su capacidad para diseñar software que responda, tanto a las necesidades a menudo muy variables del negocio, como a requsitos nuevos que se planteen, solventando  dificultades derivadas de legacy code.
+    learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre:"
+    learning-objectives-list:
+      - Técnicas de diseño que se pueden aplicar a situaciones del mundo real
+      - Aplicar arquitectura de microservicios para dar respuesta a las necesidades del negocio
+      - Cómo mantener un diseño limpio a medida que la aplicación crece y los requisitos comerciales cambian
+      - Construir software que es independiente de la tecnología
+      - Comportamiento del modelo en lugar de estado manteniendo un diseño alineado con los objetivos del negocio
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Cuenten con al menos dos años de experiencia en desarrollo de software con fines comerciales
+      - Estén familiriarizados con algún lenguaje orientado a objetos, como Java, C# o C++
+      - Se sientan cómodos usando TDD para construir software
+      - Entiendan mock objects y cómo utlizar una librería de mocking
+      - Tengan una comprensión general de los diferentes estilos arquitectónicos, incluidos los microservicios
+
+  course-content:
+    principles-intro: "Principios de:"
+    list:
+      - Los dos estilos principales de diseño Test-Driven Design (Classicist and Outside-In)
+      - Object-Oriented Design (OOO)
+      - Domain-Driven Design (DDD)
+      - Interaction-Driven Design (IDD)
+      - Balanced Abstraction Principle (BAP)
+    content-intro: "Contenido:"
+    second-list:
+      - Escritura de pruebas unitarias que expresan intención, no implementación
+      - Diseño emergente a través del TDD Classicist
+      - TDD como herramienta de diseño Outside-In style
+      - Comandos, consultas y cumplimiento de Open/Close Principle
+      - Diferencias entre capas, hexágonos, características y componentes
+      - Estructurar proyectos para que expresen lo que hace la aplicación y de qué se trata
+      - Comportamiento de modelado utilizando Outside-In Design
+      - Identificación de servicios a partir de reglas de negocio
+      - Expressive design y arquitectura en código manteniendo su dominio claro
+      - Comprender Impact Mapping y cómo derivar hacia una arquitectura de servicios a partir de él
+
+  prerequisites:
+    intro: Recomendamos encarecidamente que los equipos de desarrollo de software realicen primero el curso sobre <a href="/services/training/crafting-code/" target="_blank">Crafting Code</a> para aprovechar mejor los contenidos de este curso. No se trata de un curso introductorio a Test-Driven Development  y sin una comprensión sólida pueden tener dificultades para seguirlo.
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Aplicar habitualmente TDD  en proyectos
+      - Capacidad para crear proyectos, pruebas y código y ejecutarlos en su entorno local
+      - Se recomienda un sistema de control de versiones distribuido como por ejemplo Github
+
+
+functional-programming:
+  why-attend:
+    intro: Este curso está diseñado para ayudar a los equipos de desarrollo de software a aprender los conceptos básicos de la programación funcional y sus beneficios. Exploraremos los fundamentos del paradigma funcional en una serie de ejercicios prácticos, que proporcionarán un punto de partida para iniciarse en la programación funcional.
+    clean-code-headline-one: Los contenidos del curso son independientes del lenguaje, por lo que los equipos deberían poder aplicar este conocimiento a cualquier lenguaje de programación funcional. El código no necesariamente será idiomático del lenguaje que estamos usando (F# transpiled to JS with Fable). Pasaremos de tener un código muy básico dentro del dominio (comenzando con un círculo en la pantalla) a mostrar cómo el código podría reescribirse de manera incremental hacia un proceso más funcional. Posteriormente agregaremos múltiples círculos para aumentar la diversión y las posibilidades.
+    learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Introducir la forma de pensar en la programación funcional
+      - Comprender los beneficios (y los inconvenientes) de la inmutabilidad
+      - Empezar a utilizar los elementos básicos necesarios para crear aplicaciones complejas utilizando lenguajes FP
+      - Simplificar sus necesidades de testing
+      - Introducir algunas de las ideas en sus paradigmas actuales
+      - Introducir lenguajes FP en sus sistemas actuales
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Sus miembros cuenten al menos un par de años de experiencia
+      - Estén evaluando el uso de un lenguaje FP
+      - Quieran simplificar algunos de los flujos de negocio en sus sistemas
+
+  course-content:
+    list:
+      - Lección 1 - Introducción al curso, objetivos, F# y Fable
+      - Lección 2 - Introducción al dominio
+      - Lección 3 - Inmutabilidad
+      - Lección 4 - Impure/Pure/Impure sandwich
+      - Lección 5 - Funciones como first class citizen
+      - Lección 6 - Aplicación parcial
+      - Lección 7 - Lambdas
+      - Lección 8 - Piping
+      - Lección 9 - Composición
+      - Lección 10 - Recursión
+      - Lección 11 - Alternativas a la recursividad
+      - Lección 12 - Pattern Matching
+      - Lección 13 - Helpful Constructs
+      - Lección 14 - Programación Railway Oriented
+      - Lección 15 - Testing
+      - Lección 16 - Una visión general de los lenguajes FP
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Acceso a una cuenta de GitLab
+      - Tener disponible tu propio ordenador portátil
+      - "Instaladas las siguientes aplicaciones:"
+      - Tener un entorno de desarrollo integrado que pueda manejar F#. Recomendamos usar Visual Studio Code con Ionide
+    second-list:
+      - NodeJS
+      - npm
+      - .NET
+      - paket - execute `dotnet tool install -g paket`  desde la línea de comando
+
+
+lambdas:
+  why-attend:
+    intro: Este curso proporcionará a tus equipos la teoría y las motivaciones que hay detrás de la aplicación de microservicios junto con la experiencia práctica de construirlos utilizando una arquitectura serverless de AWS.
+    learning-objectives-title: "Este curso aporya a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Entender qué tipo de problemas está tratando de resolver la arquitectura basada en microservicios y los desafíos que presenta
+      - Comprender los productos de AWS para crear microservicios
+      - Aprender a construir e implementar microservicios utilizando la arquitectura serverless de AWS
+
+  audience:
+    intro: "Este curso está pensado para equipos de desarrollo de software que:"
+    list:
+      - Tengan interés en la cultura DevOps y los microservicios.
+      - Quieran adquirir los conocimientos prácticos y técnicas que utilizan la arquitectura serverless de AWS."
+
+  course-content:
+    principles-intro: ¿Qué problemas están tratando de resolver los microservicios?
+    list:
+      - Best practices en microservicios
+      - Anatomía y limitaciones de AWS Lambda
+      - Construye un microservicio con AWS Lambda, API Gateway y Dynamo DB
+      - Implementa tu microservicio en la infraestructura de AWS desde la línea de comandos
+      - Asegura tu microservicio
+      - Creación de REST endpoints con API Gateway y AWS Lambda
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Linux VM instalado si se trabaja desde un ordenador con Windows
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+
+
+serverless:
+  why-attend:
+    intro: Construir su aplicación web es bastante complicado, pero no tiene porque ser necesario construir la infraestructura también. La infraestructura basada en cloud como AWS ofrece una plataforma de implementación probada que te permitirá poner el foco en las necesiades del negocio. Este curso te ofrece los conocimientos prácticos necesarios sobre cómo crear aplicaciones web totalmente escalables, confiables y seguras utilizando la arquitectura serverless de AWS.
+    learning-objectives-title: "Este curso aporta a los equipos de desarrollo de software conocimientos sobre cómo:"
+    learning-objectives-list:
+      - Construir aplicaciones web con la arquitectura serverless de AWS
+      - Adoptar AWS Well Architected Framework
+      - Comprender la importancia de los diversos productos de AWS dentro de este tipo de arquitectura
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software que:"
+    list:
+      - Necesiten crear aplicaciones web seguras, confiables y escalables utilizando la arquitectura serverless de Amazon
+
+  course-content:
+    list:
+      - Construye API REST escalables con API Gateway y AWS Lambda
+      - Construye persistencia escalable utilizando RDS con copias de seguridad automatizadas
+      - Consigue seguridad utilizando IAM, KMS, AWS WAF, Json Web Token y SSL
+      - Monitoriza usando Cloud Trail y Cloud Watch
+      - Ofrece contenido estático utilizando S3
+      - Deploy con AWS CLI
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil
+      - Linux VM instalado si trabajas desde un ordenador con Windows
+      - Tener instalado un entorno de desarrollo integrado
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+
+
+ead:
+  why-attend:
+    intro: En la mayoría de los proyectos de negocio el esfuerzo de desarrollo diario no requiere que el desarrollador conozca el sistema en su conjunto junto con las herramientas de construcción e implementación que respaldan el ciclo de vida del desarrollo de software. A menudo esto desemboca en la falta de conocimiento y confianza en el sistema general, y en los enfoques principales en el desarrollo de software empresarial.
+    learning-objectives-title: "Este curso enseña a los equipos de desarrollo de software cómo:"
+    learning-objectives-list:
+      - Crear un esqueleto del proyecto
+      - Crear test automatizados del sistema
+      - Utilizar técnicas líderes para desarrollar Web Services, Messaging and Persistence
+      - Aíslar el negocio de la infraestructura utilizando puertos, adaptadores y Domain Driven Design
+
+  audience:
+    intro: "Este curso está diseñado para equipos de desarrollo de software que cuenten con:"
+    list:
+      - Experiencia trabajando en sistemas de negocio basados en Java
+
+  course-content:
+    list:
+      - Crear una construcción usando Maven
+      - Agregar análisis estático a tu compilación
+      - Crear sistemas de test automatizados utilizando un marco BDD
+      - Persistencia a una tienda relacional
+      - Mensajería con JMS
+      - Servicios web RESTful
+      - Autenticacion y autorizacion
+      - XML Marshalling
+
+  prerequisites:
+    required: "Necesario:"
+    list:
+      - Tener disponible tu propio ordenador portátil.
+      - "Tener un entorno de desarrollo integrado que consista en:"
+      - Nivel elevado con un lenguaje JVM como Java, Clojure, Scala o Groovy, Node.js o Python
+    second-list:
+      - Java 1.7 o superior
+      - Maven 3.x

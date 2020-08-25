@@ -1,15 +1,17 @@
 {% assign data = include.accordion_data.why-attend %}
 
 <p class="accordion-panel__intro">{{ data.intro }}</p>
-<p class="accordion-panel__intro">{{ data.clean-code-headline-one }}</p>
-<h3 class="accordion-panel__sub-title">{{ data.why-attend }}</h3>
-{% include unordered_list.liquid list=data.why-attend-list %}
-<p class="accordion-panel__intro">{{ data.clean-code-headline-two }}</p>
-<h3 class="accordion-panel__sub-title">{{ data.learning-objectives-title }}</h3>
+
+{% if data.why-attend %}<h3 class="accordion-panel__sub-title"><span class="accordion-panel__sub-title-intro">{{ data.clean-code-headline-one }} </span>{{ data.why-attend }}</h3>{% endif %}
+
+{% if data.why-attend-list %}{% include unordered_list.liquid list=data.why-attend-list %}{% endif %}
+
+<h3 class="accordion-panel__sub-title"><span class="accordion-panel__sub-title-intro">{{ data.clean-code-headline-two }} </span>{{ data.learning-objectives-title }}</h3>
+
 {% include unordered_list.liquid list=data.learning-objectives-list %}
 <p>{{ data.learning-outcome }}</p>
-<p>{{ data.software-design-intro }}</p>
-<h3 class="accordion-panel__sub-title">{{ data.application-title }}</h3>
-{% include unordered_list.liquid list=data.application-list %}
-<h3 class="accordion-panel__sub-title">{{ data.microservices-title }}</h3>
-{% include unordered_list.liquid list=data.microservices-list %}
+{% if data.software-design-intro %}<p>{{ data.software-design-intro }}</p>{% endif %}
+{% if data.application-title %}<h3 class="accordion-panel__sub-title">{{ data.application-title }}</h3>{% endif %}
+{% if data.application-list %}{% include unordered_list.liquid list=data.application-list %}{% endif %}
+{% if data.microservices-title %}<h3 class="accordion-panel__sub-title">{{ data.microservices-title }}</h3>{% endif %}
+{% if data.microservices-list %}{% include unordered_list.liquid list=data.microservices-list %}{% endif %}

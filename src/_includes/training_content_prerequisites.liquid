@@ -1,14 +1,14 @@
 {% assign data = include.accordion_data.prerequisites %}
 
-<p class="accordion-panel__intro">{{ data.intro }}</p>
+{% if data.intro %}<p class="accordion-panel__intro">{{ data.intro }}</p>{% endif %}
 <h3 class="accordion-panel__sub-title">{{ data.required }}</h3>
 <ul>
   {% for item in data.list %}
-    {% if forloop.index == 3 %}
-      <li>{{ item }}</li>
+    <li>{{ item }}</li>
+    {% assign positionOfLastCharacter = item | size | minus: 1 %}
+    {% assign lastCharacter = item | slice: positionOfLastCharacter %}
+    {% if lastCharacter == ":" and data.second-list %}
       {% include unordered_list.liquid list=data.second-list %}
-    {% else %}
-      <li>{{ item }}</li>
     {% endif %}
   {% endfor %}
 </ul>

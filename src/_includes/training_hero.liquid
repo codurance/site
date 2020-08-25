@@ -1,4 +1,4 @@
-{% if training_data.author == "Sandro Mancuso" %}
+{% if training_data.author %}
   {% assign training-hero-modifier = "training-hero--with-instructor" %}
 {% endif %}
 {% capture text %}{% t single-training.contact-cta-button-text %}{% endcapture %}
@@ -14,7 +14,7 @@
   <div class="training-hero__details-wrapper" style="background-image: url({{ site.baseurl }}{{ page.intro.details-background }})">
     <div class="training-hero__details-wrapper-inner">
       <div class="training-hero__content-container">
-        {% if training_data.author == "Sandro Mancuso" %}
+        {% if training_data.author %}
           <div class="training-hero__instructor-wrapper">
             <span class="training-hero__instructor-avatar" style="background-image: url({{ site.baseurl }}{{ page.intro.instructor-avatar }})"></span>
             <div class="training-hero__instructor-wrapper-inner">
