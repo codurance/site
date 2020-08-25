@@ -35,11 +35,6 @@ body.header-fixed-space-v2 {
 	}
 }
 
-a {
- color: #72c02c;
- text-decoration: none;
-}
-
 a,
 a:focus,
 a:hover,
@@ -53,7 +48,6 @@ a:focus {
 text-decoration: none;
 }
 a:hover {
- color: #72c02c;
  text-decoration: underline;
 }
 
