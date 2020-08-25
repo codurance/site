@@ -20,13 +20,7 @@ body {
 }
 
 a {
-  color: #fd9233;
   outline: none;
-}
-
-a:focus,
-a:hover {
-  color: #fd851a;
 }
 
 .nav-link {
