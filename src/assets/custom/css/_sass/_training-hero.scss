@@ -189,54 +189,6 @@ $form-width: 385px;
   }
 }
 
-.cta--primary-coral {
-  .training-hero__description-wrapper & {
-    @include large-and-extra-large {
-      display: none;
-    }
-  }
-
-  .training-hero-contact-cta & {
-    display: block;
-  }
-}
-
-.training-hero-contact-cta {
-
-  background-color: white;
-  padding: 30px;
-  position: absolute;
-  right: $lateral-space--large;
-  width: 350px;
-
-  @include small-and-medium {
-    display: none;
-  }
-  @include medium-large-and-extra-large {
-    @include style-card-box-shadow;
-  }
-
-  .training-hero:not(.training-hero--with-instructor) & {
-    bottom: 90px;
-  }
-
-  .training-hero--with-instructor & {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.training-hero-contact-cta__title {
-  @include freed-bold;
-  text-align: center;
-}
-
-.training-hero-contact-cta__description {
-  @include mercer;
-  text-align: center;
-  padding: 10px 20px;
-}
-
 .get-in-touch {
   .single-training-form & {
     position: relative;
