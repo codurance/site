@@ -15,7 +15,13 @@
 
 .how-we-work__details-container {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+.how-we-work__detail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .how-we-work__details-text {
