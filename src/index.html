@@ -83,30 +83,7 @@ layout: default
 {% include clients_teaser.html class="home-page__client-logos" client_ids=site.data.client_ids_by_page.homepage-and-clients-page show_more_clients_cta=true title=title %}
 
 
-<!-- Partner panel -->
-<div class="section gray-section">
-  <div class="container">
-    <div class="title-header">
-      <h2>{% t index-partners.title %}</h2>
-    </div>
-
-    <div class="row--partners">
-      {% for partner in site.data.partners %}
-      <div class="col-md-partners text-center">
-        <a href="{{ partner.url }}" target="_blank">
-          <img
-            class="g-mb-0--sm img-responsive"
-            src="{{ partner.image | prepend: site.baseurl }}"
-            alt="{{ partner.alt-text }}"
-          />
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <!-- end container -->
-</div>
-<!-- end section -->
+{%- include homepage_how_we_work.liquid -%}
 
 <!-- skill and practices panel -->
 <div class="section bg-gradient-midnight-blue">

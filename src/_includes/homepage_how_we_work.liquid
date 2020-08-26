@@ -1,0 +1,24 @@
+<!-- Partner panel -->
+<section class="section gray-section">
+  <div class="container">
+    <div class="title-header">
+      <h2>{% t index-partners.title %}</h2>
+    </div>
+
+    <div class="row--partners">
+      {% for partner in site.data.partners %}
+      <div class="col-md-partners text-center">
+        <a href="{{ partner.url }}" target="_blank">
+          <img
+            class="g-mb-0--sm img-responsive"
+            src="{{ partner.image | prepend: site.baseurl }}"
+            alt="{{ partner.alt-text }}"
+          />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end container -->
+</section>
+<!-- end section -->
