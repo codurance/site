@@ -16,3 +16,9 @@
 .how-we-work__details-container {
   margin-top: 50px;
 }
+
+.how-we-work__details-text {
+  @include mercer-reg;
+  color: white;
+  text-align: center;
+}
