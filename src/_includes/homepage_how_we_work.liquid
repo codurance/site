@@ -7,81 +7,23 @@
     {% include section_intro.html class="how-we-work__intro" description=description title=title %}
 
     <div class="how-we-work__details-container">
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-software-craftsmanship.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value1_title %}
-          </h3>
+      {% assign translations = site.translations[site.lang].index-how_we_work %}
+      {% for i in (0..5) %}
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
+            <img
+              class="icon-md"
+              src="{{ translations.image-paths[i] | prepend: site.baseurl }}"
+            />
+            <h3 class="how-we-work__details-text">
+              {{ translations.titles[i] }}
+            </h3>
+          </div>
         </div>
-      </div>
-
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-agile.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value2_title %}
-          </h3>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-continuous-delivery.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value3_title %}
-          </h3>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-xp.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value4_title %}
-          </h3>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-devops.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value5_title %}
-          </h3>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-md-4 col-lg-2">
-        <div class="g-px-30 g-pt-30 g-pb-50 how-we-work-container text-center">
-          <img
-            class="icon-md"
-            src="{{ '/assets/custom/img/home/icon-technology.svg' | prepend: site.baseurl }}"
-          />
-          <h3 class="how-we-work__details-text">
-            {% t index-how_we_work.value6_title %}
-          </h3>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <!-- end row -->
   </div>
   <!-- end container -->
 </section>
 <!-- end section -->
-
