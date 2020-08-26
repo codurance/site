@@ -1,13 +1,10 @@
 <!-- skill and practices panel -->
 <section class="homepage__how-we-work how-we-work">
   <div class="how-we-work__inner">
-    <div class="title-header">
-      <h2 class="g-color-white">{% t index-how_we_work.title %}</h2>
-    </div>
 
-    <div class="container mb-5 text-center">
-      <p class="lead mb-o g-color-white">{% t index-how_we_work.subtitle %}</p>
-    </div>
+    {%- capture title -%}{% t index-how_we_work.title %}{%- endcapture -%}
+    {%- capture description -%}{% t index-how_we_work.subtitle %}{%- endcapture -%}
+    {% include section_intro.html class="how-we-work__intro" description=description title=title %}
 
     <div class="row no-gutters g-mb-50">
       <div class="col-sm-4 col-md-4 col-lg-2">
@@ -87,3 +84,4 @@
   <!-- end container -->
 </section>
 <!-- end section -->
+

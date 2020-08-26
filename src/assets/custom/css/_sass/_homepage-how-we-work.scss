@@ -1,10 +1,14 @@
 .homepage__how-we-work {
   background: #140d42 linear-gradient(45deg, #0a0b3c 0%, #0f1155 100%);
-  padding-top: 100px;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .how-we-work__inner {
   @include max-width--out-there;
   @include lateral-spacing;
+}
+
+.how-we-work__intro {
+  color: white;
 }
