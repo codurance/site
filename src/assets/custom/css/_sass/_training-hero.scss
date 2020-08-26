@@ -96,13 +96,21 @@ $form-width: 385px;
     position: relative;
     z-index: 2;
   }
-  @include small-medium-and-large {
+  @include small-and-medium {
     background-image: none !important;
   }
+
+  @include large {
+    background-size: auto 70%;
+  }
+
   @include extra-large {
+    background-size: auto 80%;
+  }
+
+  @include large-and-extra-large {
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: auto 85%;
   }
 }
 
