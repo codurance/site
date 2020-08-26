@@ -8894,9 +8894,6 @@
   .g-mb-45 {
     margin-bottom: 3.21429rem !important;
   }
-  .g-mb-50 {
-    margin-bottom: 3.57143rem !important;
-  }
   .g-mb-55 {
     margin-bottom: 3.92857rem !important;
   }
@@ -9900,9 +9897,6 @@
   }
   .g-mb-45--sm {
     margin-bottom: 3.21429rem !important;
-  }
-  .g-mb-50--sm {
-    margin-bottom: 3.57143rem !important;
   }
   .g-mb-55--sm {
     margin-bottom: 3.92857rem !important;
@@ -10908,9 +10902,6 @@
   .g-mb-45--md {
     margin-bottom: 3.21429rem !important;
   }
-  .g-mb-50--md {
-    margin-bottom: 3.57143rem !important;
-  }
   .g-mb-55--md {
     margin-bottom: 3.92857rem !important;
   }
@@ -11914,9 +11905,6 @@
   }
   .g-mb-45--lg {
     margin-bottom: 3.21429rem !important;
-  }
-  .g-mb-50--lg {
-    margin-bottom: 3.57143rem !important;
   }
   .g-mb-55--lg {
     margin-bottom: 3.92857rem !important;
@@ -12923,9 +12911,6 @@
   .g-mb-45--xl {
     margin-bottom: 3.21429rem !important;
   }
-  .g-mb-50--xl {
-    margin-bottom: 3.57143rem !important;
-  }
   .g-mb-55--xl {
     margin-bottom: 3.92857rem !important;
   }
@@ -13409,10 +13394,6 @@
 
 .g-mb-28 {
   margin-bottom: 2rem;
-}
-
-.g-mb-500 {
-  margin-bottom: 35.71429rem;
 }
 
 /* Margin Left */
