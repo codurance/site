@@ -159,15 +159,14 @@ $form-width: 385px;
 
 .training-hero__course-description {
   color: white;
+  padding-bottom: 30px;
 
   @include small {
     @include base;
-    padding-bottom: 30px;
     padding-top: 55px;
   }
 
   @include medium {
-    padding-bottom: 20px;
     padding-top: 60px;
   }
 
