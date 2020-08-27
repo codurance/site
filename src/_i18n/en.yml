@@ -779,9 +779,7 @@ training-overview:
     hubspot-cta-form-id: 43dee6bc-24ce-4289-82cf-36f014d40be4
 
 single-training:
-  contact-cta-title: Find out more
-  contact-cta-button-text: Contact Us
-  contact-cta-description: Get in touch with us to find out more about the course.
+  contact-cta-button-text: Request more information
   read-more: read more
 
 learn-more: Learn more

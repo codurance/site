@@ -96,13 +96,21 @@ $form-width: 385px;
     position: relative;
     z-index: 2;
   }
-  @include small-medium-and-large {
+  @include small-and-medium {
     background-image: none !important;
   }
+
+  @include large {
+    background-size: auto 70%;
+  }
+
   @include extra-large {
+    background-size: auto 80%;
+  }
+
+  @include large-and-extra-large {
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: auto 85%;
   }
 }
 
@@ -159,15 +167,14 @@ $form-width: 385px;
 
 .training-hero__course-description {
   color: white;
+  padding-bottom: 30px;
 
   @include small {
     @include base;
-    padding-bottom: 30px;
     padding-top: 55px;
   }
 
   @include medium {
-    padding-bottom: 20px;
     padding-top: 60px;
   }
 
@@ -187,54 +194,6 @@ $form-width: 385px;
   .training-hero--with-instructor & {
     padding-top: 25px;
   }
-}
-
-.cta--primary-coral {
-  .training-hero__description-wrapper & {
-    @include large-and-extra-large {
-      display: none;
-    }
-  }
-
-  .training-hero-contact-cta & {
-    display: block;
-  }
-}
-
-.training-hero-contact-cta {
-
-  background-color: white;
-  padding: 30px;
-  position: absolute;
-  right: $lateral-space--large;
-  width: 350px;
-
-  @include small-and-medium {
-    display: none;
-  }
-  @include medium-large-and-extra-large {
-    @include style-card-box-shadow;
-  }
-
-  .training-hero:not(.training-hero--with-instructor) & {
-    bottom: 90px;
-  }
-
-  .training-hero--with-instructor & {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.training-hero-contact-cta__title {
-  @include freed-bold;
-  text-align: center;
-}
-
-.training-hero-contact-cta__description {
-  @include mercer;
-  text-align: center;
-  padding: 10px 20px;
 }
 
 .get-in-touch {
