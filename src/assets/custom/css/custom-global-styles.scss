@@ -16,15 +16,6 @@
 
 $orange-colour: #e67e22;
 
-body {
-  /* 0 0 0 1 */
-  font-size: 15px;
-  font-family: proxima-nova, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 x:-moz-any-link {
   /* 0 0 1 1 */
   margin: 0;
@@ -179,9 +170,7 @@ h5 {
 /* Unify template overides
    -------------------------------------- */
 
-a{
-  color: $coral;
-}
+
 
 .g-color-primary {
   color: $coral !important;
@@ -191,13 +180,6 @@ a{
   font-size: 1.3em;
   max-width: 750px;
   margin: auto;
-}
-
-.icon-md {
-  width: auto;
-  height: 115px;
-  padding-bottom: 45px;
-  background-color: transparent;
 }
 
 /* Buttons

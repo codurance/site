@@ -76,12 +76,20 @@ index-clients-footer:
 index-how_we_work:
   title: Cómo trabajamos
   subtitle: Nuestra forma de trabajar está basada en los principios de Software Craftsmanship y Agile. Creemos que el software debe aportar valor al negocio de forma continua. Elaboramos software de la más alta calidad, capaz de evolucionar y adaptarse a medida que las necesidades del negocio van cambiando.
-  value1_title: Software Craftsmanship
-  value2_title: Agile y Lean
-  value3_title: Continuous Delivery
-  value4_title: Programación Extrema
-  value5_title: DevOps
-  value6_title: Tecnología
+  titles:
+    - Software<br>Craftsmanship
+    - Agile y Lean
+    - Continuous<br>Delivery
+    - Programación<br>Extrema
+    - DevOps
+    - Tecnología
+  image-paths:
+    - /assets/custom/img/home/icon-software-craftsmanship.svg
+    - /assets/custom/img/home/icon-agile.svg
+    - /assets/custom/img/home/icon-continuous-delivery.svg
+    - /assets/custom/img/home/icon-xp.svg
+    - /assets/custom/img/home/icon-devops.svg
+    - /assets/custom/img/home/icon-technology.svg
   link_title: Más información
 index-software_craftsmanship:
   title: Software Craftsmanship
@@ -200,8 +208,8 @@ services:
     lead-in: Impulsa la innovación en tu organización a través de la entrega ágil de software, la experiencia técnica aplicada a la práctica, y nuestro asesoramiento experto. Nuestro equipo de profesionales te proporcionará las prácticas, tecnologías y habilidades necesarias en cada paso del proyecto para garantizar entregas de alta calidad. Te guiaremos desde el inicio hasta la entrega, haciendo posible que tu visión del producto se haga realidad.
   training:
     title: Training
-    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.  
-    hubspot-cta-id: 5004832a-217b-41d9-bbd7-12c0aa5555fe  
+    description: Construye un equipo en el que puedas confiar para la ejecución de tu proyecto. Ayudamos a tus equipos a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de producto. Nuestros expertos aportarán años de lecciones aprendidas al frente de sistemas de misión crítica en una amplia gama de tecnologías con las que tu negocio se verá beneficiado.
+    hubspot-cta-id: 5004832a-217b-41d9-bbd7-12c0aa5555fe
   clients-teaser-title: Estos son algunos de nuestros clientes
   contact-us:
     title: Contacta con nosotros

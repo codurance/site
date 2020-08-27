@@ -15,12 +15,6 @@
 	border-radius: 0;
 }
 
-body {
- color: #333;
- font-size: 13px;
- line-height: 1.6;
-}
-
 body.header-fixed-space {
   padding-top: 94px;
 }
