@@ -716,17 +716,6 @@
   linkedin: sylvester-loreto
   office: London
 
-- id: eloy_acosta
-  name: Omar Eloy Acosta Padrón
-  image: /assets/custom/img/team/eloy_acosta.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Eloy is constantly improving personal and professional skills for providing quality software solutions and systems.</p>
-    <p>His first contact with computers was in his childhood with the Epson QX 10.</p>
-    <p>Since he obtained a degree of Licentiate in Computer Engineering by the ULPGC, he has been involved in managing and developing projects for several companies using a wide variety of technologies and practices.</p>
-    <p>When he is away from electronic devices, you might find him playing badminton, watching science fiction or spending time with friends.</p>
-  office: London
-
 - id: giulio_perrone
   name: Giulio Perrone
   image: /assets/custom/img/team/giulio_perrone.jpg
