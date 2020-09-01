@@ -9,7 +9,11 @@ layout: compress
 {% include head.html %}
 </head>
 
-<body class="include-website-header {{toggles_classnames}}">
+{% unless page.layout == "single_training" %}
+  {% assign website_header_class = "include-website-header" %}
+{% endunless %}
+
+<body class={{website_header_class}}>
 
 {% include google_tag_manager_noscript.html %}
 
@@ -20,7 +24,9 @@ layout: compress
   {% include header.html %}
   <!--=== End Header ===-->
 {% endunless %}
+
 {{ content }}
+
 <!--=== Copyright ===-->
 {% unless page.layout == "single_training" %}
   {% include footer.html %}
