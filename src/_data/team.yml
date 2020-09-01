@@ -1007,3 +1007,17 @@
   github: fdamico
   linkedin: fabiodamicodev
   office: London
+
+- id: nicolas_belfis
+  name: Nicolas Belfis
+  image: /assets/custom/img/team/nicolas_belfis.jpg
+  role: Software Craftsman
+  fullDescription:
+    <p>Nicolas started developing simple websites 11 years ago, with the beloved tool notepad++, in PHP and doing all the HTML/CSS integrations. Soon after he had the opportunity to start a new path working with Airbus in Toulouse, and learning Java.</p>
+    <p>During the following years until now, he has been working as a java software developer for a few Consultancy companies, in an agile environment and working with very old java frameworks as well as very new and controversed ones.</p>
+    <p>He had the opportunity to discover Functional programming and Reactive programming recently and loves reading and chatting about it. He is also a truly believer that every developer should adhere to the developer's Oath ( cf. Uncle Bob ).</p>
+    <p>During his free time, he has a passion for kitesurfing that he practices in a "self-competition" way, around Barcelona or in the south of France.</p>
+  email: nicolas.belfis@codurance.com
+  github: nicolasbelfis
+  linkedin: nicolas-belfis-4730364a
+  office: Barcelona
