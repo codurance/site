@@ -209,3 +209,30 @@ $form-width: 385px;
     }
   }
 }
+
+.training-hero__logo-container {
+  @include max-width--out-there;
+  @include lateral-spacing;
+  width: 100%;
+}
+
+.training-hero__logo {
+  @include small {
+    height: 17px;
+    position: relative;
+    transform: translateY(-30px);
+    z-index: 2;
+  }
+
+  @include medium {
+    transform: translateY(-40px);
+  }
+
+  @include medium-large-and-extra-large {
+    height: 20px;
+  }
+
+  @include large-and-extra-large {
+    transform: translateY(-120px);
+  }
+}

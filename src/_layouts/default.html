@@ -9,21 +9,32 @@ layout: compress
 {% include head.html %}
 </head>
 
-{%- capture toggles_classnames -%}
-  {% if site.data.toggles.crafting-code-and-crafted-design-hero == 'on' %}toggle--crafting-code-and-crafted-design-hero{% endif %}
-{%- endcapture -%}
+{% unless page.layout == "single_training" %}
+  {% assign website_header_class = "include-website-header" %}
+{% endunless %}
 
-<body class="include-website-header {{toggles_classnames}}">
+<body class={{website_header_class}}>
 
 {% include google_tag_manager_noscript.html %}
 
 <div class="wrapper">
-<!--=== Header ===-->
-{% include header.html %}
-<!--=== End Header ===-->
+
+{% unless page.layout == "single_training" %}
+  <!--=== Header ===-->
+  {% include header.html %}
+  <!--=== End Header ===-->
+{% endunless %}
+
 {{ content }}
+
 <!--=== Copyright ===-->
-{% include footer.html %}
+{% unless page.layout == "single_training" %}
+  {% include footer.html %}
+{% endunless %}
+{% include copyright_footer.html %}
+<!-- Cookie Message-->
+{% include cookie_message.html %}
+<!-- End Cookie Message -->
 <!--=== End Copyright ===-->
 </div>
 
