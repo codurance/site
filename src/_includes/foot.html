@@ -33,9 +33,10 @@
 
   <script src="{{ '/assets/custom/js/externalLinks.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/custom/js/tabber.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>
-
+  {% unless page.layout == "single_training" %}
+    <script src="{{ '/assets/custom/js/websiteHeader.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/custom/js/websiteNavigation.js' | prepend: site.baseurl }}"></script>
+  {% endunless %}
  <!-- JS Plugins Init. -->
   <script>
       function initMap() {

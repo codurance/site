@@ -15,11 +15,18 @@ layout: compress
 
 <div class="wrapper">
 <!--=== Header ===-->
-{% include header.html %}
+{% unless page.layout == "single_training" %}
+  {% include header.html %}
+{% endunless %}
 <!--=== End Header ===-->
 {{ content }}
 <!--=== Copyright ===-->
-{% include footer.html %}
+{% unless page.layout == "single_training" %}
+  {% include footer.html %}
+{% endunless %}
+<!-- Cookie Message-->
+{% include cookie_message.html %}
+<!-- End Cookie Message -->
 <!--=== End Copyright ===-->
 </div>
 
