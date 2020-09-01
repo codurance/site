@@ -9,10 +9,6 @@ layout: compress
 {% include head.html %}
 </head>
 
-{%- capture toggles_classnames -%}
-  {% if site.data.toggles.crafting-code-and-crafted-design-hero == 'on' %}toggle--crafting-code-and-crafted-design-hero{% endif %}
-{%- endcapture -%}
-
 <body class="include-website-header {{toggles_classnames}}">
 
 {% include google_tag_manager_noscript.html %}
