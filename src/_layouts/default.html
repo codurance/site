@@ -14,11 +14,12 @@ layout: compress
 {% include google_tag_manager_noscript.html %}
 
 <div class="wrapper">
-<!--=== Header ===-->
+
 {% unless page.layout == "single_training" %}
+  <!--=== Header ===-->
   {% include header.html %}
+  <!--=== End Header ===-->
 {% endunless %}
-<!--=== End Header ===-->
 {{ content }}
 <!--=== Copyright ===-->
 {% unless page.layout == "single_training" %}
