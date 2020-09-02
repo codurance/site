@@ -18,6 +18,8 @@ pinned_locations:
     - software-delivery
     - specialist-expertise
     - strategic-advice
+hubspot-cta-id: 089c36b6-cb55-4c88-9da8-7f34b60969bf
+hubspot-cta-id-es: 108aea77-f01b-47d2-abd7-61637a7ef18e
 ---
 
 The goal of software is to provide value to the business. Businesses evolve and their software must evolve with it. If the alignment between software and business is frictionless then it is not merely a passive part of the organisation but an engine for innovation to allow the business to march ahead of the competition.

@@ -1,6 +1,5 @@
 {%- assign translations = site.translations[site.lang] -%}
 
-
 {% include page_location_anchor.html anchor_id=include.anchor_id %}
 
 <section id="{{ include.id }}" class="curated-publications">
@@ -31,9 +30,11 @@
           {% if site.lang == "es" %}
             {% assign article_title = post.title-es %}
             {% assign article_description = post.description-es %}
+            {% assign hubspot_cta_id = post.hubspot-cta-id-es %}
           {% else %}
             {% assign article_title = post.title %}
             {% assign article_description = post.description %}
+            {% assign hubspot_cta_id = post.hubspot-cta-id %}
           {% endif %}
           <article class="cards-layout__card card">
             <a class="card__image-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -45,9 +46,7 @@
                 <p class="card__description">{{ article_description }}</p>
               </div>
             </div>
-            <a class="card__cta--text" href="{{ post.url | prepend: site.baseurl }}">
-              {% t publications.teaser-cta %}<i class="card__cta-decoration"></i>
-            </a>
+            {% include hubspot_cta.liquid class="hubspot-publications-cta" hubspot-cta-id=hubspot_cta_id %}
           </article>
         {% endfor %}
       </div>
