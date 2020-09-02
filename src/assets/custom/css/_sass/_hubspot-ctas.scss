@@ -23,3 +23,26 @@
   @include cta--primary-coral;
   width: 100%;
 }
+
+.hubspot-publications-cta .cta_button {
+  @include base-bold;
+  color: $grey--dark;
+  display: inline-block;
+  padding: 0 30px 30px;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &::after {
+    background: url("#{$site-base-url}/assets/custom/img/services/learn-more-arrow.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 18px;
+    position: absolute;
+    transform: translateX(10px) translateY(5px);
+    width: 30px;
+  }
+}
