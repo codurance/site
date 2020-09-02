@@ -1021,3 +1021,16 @@
   github: nicolasbelfis
   linkedin: nicolas-belfis-4730364a
   office: Barcelona
+  
+- id: martin_garcia_blanco
+  name: Martín García Blanco
+  image: /assets/custom/img/team/martin_garcia.jpg
+  role: Software Craftsman In-Training
+  fullDescription:
+    <p>Martin stumbled upon programming when he decided to create his first web app in 2015. After completing his studies in Software Development, he decided to go to Barcelona and start his career as a developer. Before his time at Codurance, Martin worked for a company that specialized in single-page applications with React.</p>
+    <p>He is passionate about discovering and learning new technologies that latter he applies to start new well-crafted projects.</p>
+    <p>Outside of work, Martin enjoys doing sport like basketball or riding a bike. He also likes to hang out with friends to play tabletop games.</p>
+  email: martin.garcia@codurance.com
+  github: martin-garcia-blanco
+  linkedin: martin-garcia-blanco
+  office: Barcelona
