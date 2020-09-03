@@ -1033,3 +1033,16 @@
   github: martin-garcia-blanco
   linkedin: martin-garcia-blanco
   office: Barcelona
+id: maciej_durkiewicz
+  name: Maciej Durkiewicz
+  image: /assets/custom/img/team/maciej_durkiewicz.jpg
+  role: Software Craftsman In-Training
+  fullDescription:
+    <p>Maciej comes from a scientific background, with formal qualifications in Psychology and Computer Science.</p>
+    <p>His preference to solve problems by creating software evolved naturally over the course years spent in academia and work in healthcare. Over that time, he applied his knowledge to write software which utilised eye-tracking, delivered psychometric tests or was a bioinformatics pipeline for the whole genome sequencing data. In the commercially focused domains, he developed software supporting cinema chain back office and built e-commerce pages.</p>
+    <p>His (always open for discussion) belief in the rightfulness software craftsmanship practices stems from the perception of the ever-increasing amount of mission-critical and omnipresent software.</p>
+    <p>In his spare time, he carefully oversees the growth of his bonsai trees.</p>
+  email: maciej.durkiewicz@codurance.com
+  github: mawodu
+  linkedin: maciej-durkiewicz-37642a131
+  office: London
