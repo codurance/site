@@ -1033,3 +1033,16 @@
   github: martin-garcia-blanco
   linkedin: martin-garcia-blanco
   office: Barcelona
+
+- id: pablo_sanchez_alonso
+  name: Pablo Sánchez Alonso
+  image: /assets/custom/img/team/pablo_sanchez.jpg
+  role: Software Craftsman
+  fullDescription:
+     <p>Pablo fell in love with development in his teenage years. Since then, he has worked in many projects including desktop, web and mobile.</p>
+     <p>He is passionate about craftmanship values, XP practices and self improvment. He learns a new programming language a year (at least).</p>
+     <p>When he is not working, he likes to go out with friends. He loves music. He plays guitar (not to well). He loves reading a good book as well as going to watch a masterpiece movie in the cinema.</p>
+  email: pablo.sanchez@codurance.com
+  github: psa-anddev
+  office: London
+
