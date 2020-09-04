@@ -791,3 +791,7 @@ single-training:
   read-more: read more
 
 learn-more: Learn more
+
+owasp-top-ten:
+  cheat-sheet-cta-banner-title: Get our OWASP top ten cheat sheet
+  cheat-sheet-cta-banner-text: Advise senior management on how to protect the company with our Top Ten application vulnerabilities (OWASP) cheatsheet
