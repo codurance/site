@@ -3,6 +3,28 @@
   position: relative;
   width: auto;
   z-index: 1;
+
+  @include small {
+    background: url("https://codurance.com/assets/custom/img/home/home-hero-code.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.homepage-hero__video {
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: 0;
+    max-width: 130%;
+  }
 }
 
 .homepage-hero__video-wrapper {
