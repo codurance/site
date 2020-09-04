@@ -1,8 +1,10 @@
 body {
+  color: $off-black;
   font-size: 15px;
   font-family: proxima-nova, sans-serif;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
-  color: $off-black;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
