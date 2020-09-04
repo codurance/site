@@ -17,28 +17,6 @@
     top: 0;
 }
 
-.feature-panel h1 {
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    font-size: 4em;
-}
-
-.feature-panel .jumbotron {
-    background: transparent;
-    color: white;
-    text-align: center;
-    margin: auto;
-    width: 80%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 .feature-panel .jumbotron h3 {
     color: white;
     padding: 10px 0 20px 0;
@@ -48,14 +26,6 @@
 
 /* Feature panel - Desktop bg video
    -------------------------------------- */
-
-.video-bg-wrapper {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-}
 
 .video-bg {
     position: absolute;

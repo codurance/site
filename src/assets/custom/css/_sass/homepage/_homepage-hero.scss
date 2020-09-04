@@ -1,0 +1,38 @@
+.homepage-hero {
+  height: 800px;
+  position: relative;
+  width: auto;
+  z-index: 1;
+}
+
+.homepage-hero__video-wrapper {
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.homepage-hero__content-container {
+  background: transparent;
+  bottom: 0;
+  color: white;
+  height: 300px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 80%;
+}
+
+.homepage-hero__title {
+  color: white;
+  @include gaudi-bold;
+}
+
+.homepage-hero__subtitle {
+  color: white;
+  padding: 10px 0 20px 0;
+}

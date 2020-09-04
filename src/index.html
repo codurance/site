@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="feature-panel">
-  <div class="video-bg-wrapper">
+<section class="homepage-hero">
+  <div class="homepage-hero__video-wrapper">
     <video controls="false" playsinline autoplay muted poster="{{ '/assets/custom/video/home/home-hero.jpg' | prepend: site.baseurl }}" loop class="video-bg">
       <source src="{{ '/assets/custom/video/home/home-hero.mp4' | prepend: site.baseurl }}" type="video/mp4"/>
       <source src="{{ '/assets/custom/video/home/home-hero.ogv' | prepend: site.baseurl }}" type="video/ogg" />
@@ -17,9 +17,9 @@ layout: default
     <div class="bg-slide3"></div>
   </div>
   <div class="feature-panel--shaded-mask"></div>
-  <div class="jumbotron">
-    <h1>{% t index-banner.title %}</h1>
-    <h3 class="h2">{% t index-banner.subtitle %}</h3>
+  <div class="homepage-hero__content-container">
+    <h1 class="homepage-hero__title">{% t index-banner.title %}</h1>
+    <h3 class="homepage-hero__subtitle">{% t index-banner.subtitle %}</h3>
     <a
       href="{{ '/services' | prepend: site.baseurl }}"
       role="button"
@@ -28,7 +28,7 @@ layout: default
       <span>{% t index-banner.link_title %}</span>
     </a>
   </div>
-</div>
+</section>
 
 
 <!-- Activity panel -->
