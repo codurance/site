@@ -8,9 +8,8 @@ author: Tom Spencer
 description: In this article we discuss why the Open Web Application Security Project Top Ten is important in a business context. The Open Web Application Security Project is a non-profit foundation that works to improve the security of software. The OWASP Top Ten raises vital issues of software security regularly based on most recent security breaches in the industry. Security can no longer be an afterthought, developers and business leaders need to bake in security to their applications and be ready to explain to senior management how to protect the company.
 
 
-
 image:
-  src: /assets/custom/img/blog/2020-09-04-why-is-owasp-important-for-developers/OWASP-for-developers-header.jpg
+  src: /assets/custom/img/blog/2020-09-04-why-is-owasp-important-for-business-leaders/OWASP-for-business-leaders-header.jpg
 tags:
   - web application security
   - quantify risk
