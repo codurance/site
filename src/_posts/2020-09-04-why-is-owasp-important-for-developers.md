@@ -257,7 +257,7 @@ The wide range of companies that have fallen victim to malicious breaches and th
 
 For developers interested in developing awareness of the OWASP top ten amongst business leaders we have another article directed at [business leaders](shorturl.at/jsBLZ).
 
-f you wish to learn more about refactoring and improving security for your business please fill out the form below to access the handout.
+If you wish to learn more about refactoring and improving security for your business please fill out the form below to access the handout.
 {% include owasp-top-ten-cheat-sheet-banner.html %}
 
 

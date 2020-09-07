@@ -138,6 +138,6 @@ The wide range of companies that have fallen victim to malicious breaches and th
 Developers should be expected to explain the security precautions and challenges of business applications to business leaders so that businesses are more adequately prepared for attacks and can analyse threats and vulnerabilities.
 
 For business leaders interested in developing awareness of the OWASP top ten amongst development teams we have another article directed at [developers](https://codurance.com/2020/09/04/why-is-owasp-important-for-developers/).
-If you wish to learn more about refactoring and improving security for your business please fill out the form below (to be included) to access the handout.
+If you wish to learn more about refactoring and improving security for your business please fill out the form below to access the handout.
 
 {% include owasp-top-ten-cheat-sheet-banner-business.html %}
