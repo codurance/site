@@ -1,4 +1,5 @@
 .homepage-hero {
+  @include max-width--framed;
   height: 800px;
   position: relative;
   width: auto;
@@ -11,7 +12,6 @@
 }
 
 .homepage-hero__video-wrapper {
-  bottom: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
@@ -43,22 +43,18 @@
     height: auto;
     width: auto;
     z-index: 0;
-    max-width: 130%;
   }
 }
 
 .homepage-hero__content-container {
   background: transparent;
-  bottom: 0;
   color: white;
-  height: 300px;
-  left: 0;
-  margin: auto;
+  left: 50%;
   position: absolute;
-  right: 0;
   text-align: center;
-  top: 0;
+  top: 50%;
   width: 80%;
+  transform: translate(-50%, -50%);
 }
 
 .homepage-hero__title {
