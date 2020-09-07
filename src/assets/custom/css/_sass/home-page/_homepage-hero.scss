@@ -55,6 +55,7 @@
 }
 
 .homepage-hero__subtitle {
+  @include freed-reg;
   color: white;
   padding: 10px 0 20px 0;
 }
