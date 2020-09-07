@@ -12,10 +12,12 @@
 
 .homepage-hero__video-wrapper {
   bottom: 0;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
   position: absolute;
+  right: 0;
   top: 0;
-  width: 100%;
 
   &::after {
     background: rgba(0, 0, 0, 0.5);
