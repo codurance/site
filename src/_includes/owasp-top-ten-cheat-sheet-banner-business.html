@@ -1,0 +1,11 @@
+{% capture background_image %}/assets/custom/img/blog/2020-09-04-why-is-owasp-important-for-business-leaders/OWASP-CTA-Image.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}{% t owasp-top-ten.cheat-sheet-cta-banner-title %}{% endcapture %}
+{% capture description %}{% t owasp-top-ten.cheat-sheet-cta-banner-text %}{% endcapture %}
+{%- capture hubspot-cta-id -%}
+{%- if site.lang == 'es' -%}d9309548-5147-4b67-954f-39893094bbe8{%- else -%}e07963d5-eaa7-4a68-a0d7-3e697ebf78cc{%- endif -%}
+{%- endcapture -%}
+
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
