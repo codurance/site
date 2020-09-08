@@ -4,7 +4,7 @@ asset-type: post
 name: why-is-owasp-important-for-business-leaders
 title: Why is OWASP Important for Business Leaders?
 title-es: ¿Por qué OWASP es importante para el negocio?
-date: 2020-09-07 08:00:00 +00:00
+date: 2020-09-07 09:00:00 +00:00
 author: Tom Spencer
 description: Security can no longer be an afterthought, developers and business leaders need to bake in security to their applications and be ready to explain to senior management how to protect the company. The OWASP Top Ten raises vital issues of software security regularly based on most recent security breaches in the industry.
 description-es: La seguridad ya no puede ser un objetivo secundario. Los líderes empresariales y los desarrolladores necesitan integrar la seguridad en sus aplicaciones desde el principio. El top ten de OWASP plantea problemas vitales de seguridad del software con regularidad en función de las brechas de seguridad que se detectan.
