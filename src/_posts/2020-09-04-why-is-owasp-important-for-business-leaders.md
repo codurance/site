@@ -25,10 +25,7 @@ tags:
   - OWASP awareness
   - business leaders
 pinned_locations:
-  - soft-mod
-  - software-delivery
   - specialist-expertise
-  - strategic-advice
 in_page_banner: none
 hubspot-cta-id: 346f1af2-8893-47c2-9f3e-f8859853d0c5
 hubspot-cta-id-es: 6d6911c3-0bce-4b1e-8626-90736b184712

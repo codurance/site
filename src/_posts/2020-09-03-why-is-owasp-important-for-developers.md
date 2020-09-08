@@ -19,10 +19,7 @@ tags:
   - developers
   - OWASP
 pinned_locations:
-  - soft-mod
-  - software-delivery
   - specialist-expertise
-  - strategic-advice
 in_page_banner: none
 hubspot-cta-id: dcdb2f7b-8b1f-4508-89b1-5eb1c2cb2aff
 hubspot-cta-id-es: 9f4d2ca9-01bc-4ed8-a929-6663155e6841
