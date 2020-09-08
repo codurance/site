@@ -777,6 +777,10 @@ service-line-testimonials:
     text: “Pragmatism” is a widely discussed concept and but rarely taken into account when you are looking for software development partners. Codurance team embodies just the right amount of practicality with the overall vision and knowledge to bring positive change to any organization.
     foot-note: Sapankumar Parikh - Vice President of Software Development at eClinicalWorks
 
+  roche:
+    text: At Roche we develop highly complex software products that are installed globally in highly regulated environments. Our products require the highest level of quality and our developers must respond quickly to the needs of the market to sustain the added value of our solutions in the long term. We work with Codurance because of their strong reputation in Software Craftsmanship, an approach that is perfectly suited to our context, and because their training courses are proven and highly valued by our developers. Their ability to understand and adapt to our needs is a significant element of our ongoing collaboration.
+    foot-note: Sergio Champel - Engineering Director - DSDIC SW Ecosystems at Roche Diagnostics SL
+
 training-overview:
   hero-title: Training
   hero-sub-title: Empower your technology teams with focused training from our world class experts
