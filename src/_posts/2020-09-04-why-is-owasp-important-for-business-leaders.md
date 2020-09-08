@@ -45,7 +45,7 @@ The sheer scale of security breaches is astounding. In 2008 Albert Gonzalez was 
 
 It is helpful to place the importance of the OWASP Top Ten in the context of risk management for quantifying company cybersecurity more generally. Risk quantification can be summarized as the product of threat times vulnerability times impact:
 
-                                        R = T × V × I
+R = T x V x I
 
 Here R stands for Risk or the level of risk exposure for the company. T stands for threat, V for vulnerability and I for impact. In this section we will use a series of acronyms to help businesses understand risk. These risk measurements will be useful to ensure the relevance of each of OWASP’s top ten security threats in the context of your organization.
 
