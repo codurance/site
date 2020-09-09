@@ -31,7 +31,7 @@ hubspot-cta-id: 346f1af2-8893-47c2-9f3e-f8859853d0c5
 hubspot-cta-id-es: 6d6911c3-0bce-4b1e-8626-90736b184712
 ---
 
-In this article we discuss why the Open Web Application Security Project top ten is important in a business context. The Open Web Application Security Project is a non-profit foundation that works to improve the security of software. The OWASP top ten raises vital issues of software security regularly based on most recent security breaches in the industry. Security can no longer be an afterthought, business leaders and [developers](https://codurance.com/2020/09/04/why-is-owasp-important-for-developers/) need to bake security into their applications from the outset.
+In this article we discuss why the Open Web Application Security Project top ten is important in a business context. The Open Web Application Security Project is a non-profit foundation that works to improve the security of software. The OWASP top ten raises vital issues of software security regularly based on most recent security breaches in the industry. Security can no longer be an afterthought, business leaders and [developers](https://codurance.com/2020/09/07/why-is-owasp-important-for-developers/) need to bake security into their applications from the outset.
 
 The Open Web Application Security Project is an online community that produces freely available articles in the field of web application security. The OWASP foundation also releases a regular update on the top ten security threats.
 
@@ -134,7 +134,7 @@ Exploiting insufficient logging and monitoring is the bedrock of nearly every ma
 The wide range of companies that have fallen victim to malicious breaches and the widely publicised mega breaches of recent years shows the importance of making security assessment part of the everyday work of business leaders, developers and architects. Possible team wide initiatives to improve security awareness could include a bug bounty, gamifying clearer developer understanding through regular email challenges or even a monthly cybersecurity quiz night. The most important point is to build a learners’ mindset amongst teams regarding cybersecurity and the OWASP Top Ten is the first port of call for better understanding in order to plan and defend against possible threats. The findings are a reminder of the importance of baking in security into the development process in order to [manage risks effectively](https://www.goodreads.com/book/show/34695178-securing-devops?ac=1&from_search=true&qid=YkcNliTAS8&rank=1).
 Developers should be expected to explain the security precautions and challenges of business applications to business leaders so that businesses are more adequately prepared for attacks and can analyse threats and vulnerabilities.
 
-For business leaders interested in developing awareness of the OWASP top ten amongst development teams we have another article directed at [developers](https://codurance.com/2020/09/04/why-is-owasp-important-for-developers/).
+For business leaders interested in developing awareness of the OWASP top ten amongst development teams we have another article directed at [developers](https://codurance.com/2020/09/07/why-is-owasp-important-for-developers/).
 If you wish to learn more about refactoring and improving security for your business please fill out the form below to access the handout.
 
 {% include owasp-top-ten-cheat-sheet-banner-business.html %}
