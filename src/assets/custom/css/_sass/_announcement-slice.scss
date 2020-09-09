@@ -1,14 +1,12 @@
 .announcement-slice {
   background-image: url("#{$site-base-url}/assets/custom/img/services/software-modernisation/bg-announcement-slice-softmod.jpg");
+  background-size: cover;
   color: white;
+  line-height: 28px;
   padding-bottom: 15px;
   padding-top: 15px;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  background-size: cover;
-  line-height: 28px;
   text-align: center;
+  width: 100%;
 
   a {
     margin-left: 5px;
