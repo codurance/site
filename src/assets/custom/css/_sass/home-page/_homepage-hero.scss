@@ -1,0 +1,68 @@
+.homepage-hero {
+  height: 800px;
+  position: relative;
+  width: auto;
+  z-index: 1;
+
+  @include small {
+    background: url("https://codurance.com/assets/custom/img/home/home-hero-code.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.homepage-hero__video-wrapper {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &::after {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.homepage-hero__video {
+  @include small {
+    display: none;
+  }
+  @include medium-large-and-extra-large {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: 0;
+  }
+}
+
+.homepage-hero__content-container {
+  background: transparent;
+  color: white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.homepage-hero__title {
+  color: white;
+  @include gaudi-bold;
+}
+
+.homepage-hero__subtitle {
+  @include freed-reg;
+  color: white;
+  padding: 10px 0 20px 0;
+}

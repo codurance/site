@@ -20500,10 +20500,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-video {
-  max-width: 100%;
-}
-
 .u-video-v1 {
   margin-bottom: 15px;
 }
