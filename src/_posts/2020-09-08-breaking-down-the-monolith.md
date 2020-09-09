@@ -19,7 +19,7 @@ tags:
   - software delivery
   - Domain Driven Design
 pinned_locations:
-  - software-modernisation
+  - soft-mod
 in_page_banner: none
 ---
 
