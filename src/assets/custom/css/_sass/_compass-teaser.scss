@@ -23,3 +23,14 @@
   color: white;
   margin-bottom: 25px;
 }
+
+.blog-post-compass-teaser {
+  background-color: $coral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  text-align: center;
+}

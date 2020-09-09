@@ -27,6 +27,12 @@ in_page_banner: none
 
 First of all, let’s be clear in what we mean by “Monolith”. We are primarily talking about a software application that is deployed as a single artefact where the source code resides in a single repository. The application likely exposes several different business capabilities. For example, perhaps it has the ability to manage stock levels as well as taking payments for customer purchases and providing reporting functionality. There’s nothing inherently wrong with this so far.  And in fact, as we’ll discuss later in this article, there is a lot to be said for this setup. However, “Monolith'' is often seen as a dirty word in the software development industry. The reason for this is that the majority of monoliths are poorly structured. As a result, they become hard to change because changes must span many different areas of the codebase. Over time, as more and more changes are added (even new capabilities), the complexity of the codebase increases and the Monolith becomes a real problem for the Organisation as it becomes harder to ship new features to its customers. At this point, many teams would call for the need to completely rewrite the application. This article suggests that doesn’t have to be the only approach.  
 
+<br>
+
+{% include compass_teaser_for_blog_posts.liquid %}
+
+<br>
+
 ### The Modular Monolith
 
 As I mentioned in the previous paragraph, many monolithic software applications are poorly structured. We want our software applications to be highly cohesive and loosely coupled. Most monoliths, unfortunately, fail in both of these categories and it's this that gives the Monolith a bad name. For example, we want to keep together those components that tend to change together. But many teams, unfortunately, have fallen into the trap of jumbling up all sorts of different components together. For example database access might be made directly from User Interface components.  Brian Foote and Joseph Yeder wrote about software systems that had evolved in this way in their 1997 paper “Big Ball of Mud” where the title of the paper was used to describe monolithic systems which lacked any real structure.
@@ -51,7 +57,7 @@ A good Bounded Context should model some capability that is provided to the rest
 
 Most programming languages provide mechanisms for grouping related pieces of code together, such as namespaces and packages. We can use these mechanisms to help model the Bounded Contexts in our codebase. If this is done correctly, at a high-level the structure of a codebase will reflect the various Bounded Contexts that exist in the domain. 
 
-Let’s consider an example of an e-commerce system. We have identified the following Bounded Contexts :
+Let’s consider an example of an e-commerce system. We have identified the following Bounded Contexts:
 
 * Payment (Responsible for processing customer payments for orders)
 
@@ -144,3 +150,7 @@ Here are the key takeaways:
 * Each Bounded Context within the Modular Monolith should be able to be extracted into independently deployable services. 
 
 * When extracting services, consider rate of change, security, technology choice and team structure
+
+<br>
+
+{% include compass_teaser_for_blog_posts.liquid %}
