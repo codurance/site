@@ -39,7 +39,7 @@ As I mentioned in the previous paragraph, many monolithic software applications 
 
 >“A Big Ball Of Mud is haphazardly structured, sprawling, sloppy, duct-tape and bailing wire, spaghetti code jungle.” 
 
-The below image illustrates this analogy. It is a dependency graph for one codebase. As you can see the dependencies between components and the level coupling has gone way beyond generally acceptable levels and this codebase would have been very difficult to change and maintain in that state.
+The below image illustrates this analogy. It is a dependency graph for one codebase. As you can see, the dependencies between components, and the level of coupling, has gone way beyond generally acceptable levels and this codebase would have been very difficult to change and maintain in that state.
 
 ![Big ball of mud dependency graph]({{site.baseurl}}/assets/custom/img/blog/2020-09-08-breaking-down-the-monolith/Big_Ball_of_Mud.jpg)
 
