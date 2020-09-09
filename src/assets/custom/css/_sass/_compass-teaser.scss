@@ -1,20 +1,28 @@
 .compass-teaser {
-  @include max-width--column;
+  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
   background-color: $coral;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 
-  @include small {
-    padding: 50px 25px;
-  }
-  @include medium-large-and-extra-large {
+  &.compass-teaser--in-blog {
     padding: 50px;
-    position: relative;
-    top: #{-2 * $vertical-overlap};
+  }
+
+  &:not(.compass-teaser--in-blog) {
+    @include max-width--column;
+
+    @include small {
+      padding: 50px 25px;
+    }
+
+    @include medium-large-and-extra-large {
+      padding: 50px;
+      position: relative;
+      top: #{-2 * $vertical-overlap};
+    }
   }
 }
 
@@ -22,15 +30,4 @@
   @include mercer-reg;
   color: white;
   margin-bottom: 25px;
-}
-
-.blog-post-compass-teaser {
-  background-color: $coral;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("#{$site-base-url}/assets/custom/img/softmod/bg-compass-cta.jpg");
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-  text-align: center;
 }
