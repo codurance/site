@@ -1046,3 +1046,15 @@
   github: psa-anddev
   office: London
 
+- id: khoovi_seewoonauth
+  name: Khoovi Seewoonauth
+  image: /assets/custom/img/team/khoovi_seewoonauth.jpg
+  role: Software Craftsperson
+  fullDescription:
+     <p>Khoovi has a BSc and MSc in Computer Science, with 12 years professional experience in the field of software development working as grad, senior, lead dev and engineering manager. He has built Java mobile apps, single page web apps, and native Android Kotlin apps during his career.</p>
+     <p>He believes in having a growth mindset, non violent communication practices, sharing knowledge and the values of software craftmanship.</p>
+     <p>His hobbies are reading books, watching software development talks, watching or preferably playing football games. He also spends time outdoor with his family where they explore nature parks and coastal areas around the North of England & Scotland.</p>
+  email: khoovirajsingh.seewoonauth@codurance.com
+  github: khoovirajsingh
+  linkedin: khoovirajsingh-seewoonauth-038b692a
+  office: Manchester
