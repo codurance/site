@@ -7,6 +7,7 @@
 
   var SELECTORS = {
     TABBER: "[data-tabber]",
+    TABBER_INNER: "tabber-panel__inner",
     LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
     LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
     PANEL: "[data-tabber_panel]",
@@ -24,6 +25,8 @@
   );
 
   var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
+
+  var clickedTargetPathArray;
 
   function isLargeScreen() {
     var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS[0].scrollHeight > 0;
@@ -66,12 +69,13 @@
     newPanel && newPanel.classList.add(ACTIVE_CLASS);
   }
 
-  function handlePanelClick() {
+  function handlePanelClick(e) {
     if (isLargeScreen()) {
       return;
     }
+    clickedTargetPathArray = e.path;
 
-    togglePanel(this);
+    togglePanel(this, clickedTargetPathArray);
   }
 
   function togglePanel(panel) {
@@ -86,6 +90,12 @@
   }
 
   function makePanelInactive(panel) {
+    for (var i = 0; i < clickedTargetPathArray.length; i++) {
+      if(clickedTargetPathArray[i].className === SELECTORS.TABBER_INNER){
+        return;
+      }
+    }
+
     panel.classList.remove(ACTIVE_CLASS);
     const relatedTab = TABBER.querySelector(
       SELECTORS.LARGE_SCREEN_CONTROL_ACTIVE
