@@ -1,7 +1,8 @@
 {% if include.training.featured %}
+    {% if include.training.course-length %} {% capture course-length-featured-training %}<span class="training-card__course-length-featured">{{ include.training.course-length }}</span> {% endcapture %}{% endif %}
     {% capture avatar %}<img class="training-card__avatar" alt=""src={{ site.data.trainings_en.crafting-code-and-crafted-design.avatar-src | prepend: site.baseurl }}>{% endcapture %}
     {% assign author = include.training.author %}
-    {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }}</h2>{% endcapture %}
+    {% capture tag %}<h2 class="training-card__tag">{{ avatar }} {{ author }} {{ course-length-featured-training }}</h2>{% endcapture %}
     {% assign featured_class = "training-card--featured" %}
 {% else %}
     {% capture tag %}{% endcapture %}

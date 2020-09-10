@@ -65,3 +65,21 @@
   margin: 0 0 50px;
   @include base;
 }
+
+.training-card__course-length-featured {
+  @include foster-bold;
+  color: white;
+  margin-left: 15px;
+  padding-left: 15px;
+  position: relative;
+
+  &::before {
+    border-left: 1px solid $grey--light;
+    content: "";
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
