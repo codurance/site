@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 title: Codurance Appoints Amelia Bampton Regional Director of Manchester
 date: 2020-08-11 00:00:00 +00:00
-author: Amelia Bampton
+author: Sandro Mancuso
 description: We recently caught up with our new Regional Director of Codurance Manchester, Amelia Bampton, to find out more about her past and future plans at Codurance.
 image:
     src: /assets/custom/img/blog/2020-08-11-codurance-appoints-amelia-bampton-regional-director-of-manchester/banner.jpeg
