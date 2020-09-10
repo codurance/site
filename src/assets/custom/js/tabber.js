@@ -26,6 +26,8 @@
 
   var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
 
+  var clickedTargetPathArray;
+
   function isLargeScreen() {
     var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS[0].scrollHeight > 0;
     return largeScreenTabsAreVisible;
@@ -71,23 +73,23 @@
     if (isLargeScreen()) {
       return;
     }
-    var clickedTargetPathArray = e.path;
+    clickedTargetPathArray = e.path;
 
     togglePanel(this, clickedTargetPathArray);
   }
 
-  function togglePanel(panel, clickedTargetPathArray) {
+  function togglePanel(panel) {
     var panelIsActive = panel.classList.contains(ACTIVE_CLASS);
 
     if (panelIsActive) {
-      makePanelInactive(panel, clickedTargetPathArray);
+      makePanelInactive(panel);
     } else {
       makePanelActive(panel);
       scrollToPanel(panel);
     }
   }
 
-  function makePanelInactive(panel, clickedTargetPathArray) {
+  function makePanelInactive(panel) {
     for (var i = 0; i < clickedTargetPathArray.length; i++) {
       if(clickedTargetPathArray[i].className === SELECTORS.TABBER_INNER){
         return;
