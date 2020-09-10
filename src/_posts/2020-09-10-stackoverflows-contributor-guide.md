@@ -10,7 +10,7 @@ author: Maciej Kowalski
 date: 2020-09-10 09:00:00 +00:00
 
 image:
-  src: 
+  src: /assets/custom/img/blog/2020-09-10-stackoverflows-contributor-guide/stackoverflows_contributor_guide.jpg
 
 tags: 
   - software craftsmanship
