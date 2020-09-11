@@ -5,7 +5,6 @@
 
 .training-card__primary-content {
   background-color: $slate;
-  padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 20px;
   background-repeat: no-repeat;
@@ -13,10 +12,12 @@
   background-size: auto 80%;
 
   .training-card:not(.training-card--featured) & {
+    padding-bottom: 16px;
     padding-top: 25px;
   }
 
   .training-card--featured & {
+    padding-bottom: 20px;
     padding-top: 20px;
   }
 }
@@ -29,7 +30,7 @@
   justify-content: space-between;
   padding: 20px $lateral-space--medium 40px;
 
-  @include medium-large-and-extra-large{
+  @include medium-large-and-extra-large {
     align-items: flex-start;
   }
 }
@@ -51,16 +52,21 @@
   color: white;
 
   .training-card:not(.training-card--featured) & {
-    @include small {
+    @include small-and-medium {
       @include mercer-bold;
     }
-    @include medium-large-and-extra-large {
+
+    @include large-and-extra-large {
       @include freed-bold;
     }
   }
 
   .training-card--featured & {
     @include freed-bold;
+
+    @include medium {
+      @include mercer-bold;
+    }
   }
 }
 
@@ -74,7 +80,7 @@
   color: white;
 
   .training-card:not(.training-card--featured) & {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .training-card--featured & {
