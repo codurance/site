@@ -5,10 +5,16 @@
 
 .training-card__primary-content {
   background-color: $slate;
-  padding: 30px $lateral-space--medium 16px $lateral-space--medium;
+  padding-left: $lateral-space--medium;
+  padding-right: $lateral-space--medium;
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto 80%;
+
+  .training-card:not(.training-card--featured) & {
+    padding-bottom: 16px;
+    padding-top: 30px;
+  }
 
   .training-card--featured & {
     padding-bottom: 20px;
