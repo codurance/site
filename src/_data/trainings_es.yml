@@ -52,24 +52,32 @@ crafted-design:
 
 functional-programming:
   name: Introducción a<br>Functional Programming
+  course-length: 2 Días
+  duration: "DURACIÓN: 2 Días"
   description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
   page: /services/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 
 lambdas:
   name: Microservicios con<br>AWS Lambdas
+  course-length: 2 Días
+  duration: "DURACIÓN: 2 Días"
   description: En este curso aportamos los conocimientos necesarios para que tu equipo pueda construir e implementar microservicios utilizando la arquitectura serverless  de AWS.
   page: /services/training/lambda-training
   background-image-path: /assets/custom/img/training/lambda-training/training-backgrounds_bg-microservices-with-aws.svg
 
 serverless:
   name: Arquitectura Serverless<br>utilizando AWS
+  course-length: 2 Días
+  duration: "DURACIÓN: 2 Días"
   description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
   page: /services/training/serverless-training
   background-image-path: /assets/custom/img/training/serverless-training/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
 ead:
   name: Desarrollo de<br>aplicaciones empresariales
+  course-length: 2 Días
+  duration: "DURACIÓN: 2 Días"
   description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
   page: /services/training/enterprise-application-development
   background-image-path: /assets/custom/img/training/enterprise-application-development/training-backgrounds_bg-enterprise-application-development.svg
