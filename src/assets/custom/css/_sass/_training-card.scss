@@ -5,15 +5,13 @@
 
 .training-card__primary-content {
   background-color: $slate;
-  padding-bottom: 40px;
-  padding-left: $lateral-space--medium;
-  padding-right: $lateral-space--medium;
-  padding-top: 35px;
+  padding: 30px $lateral-space--medium 16px $lateral-space--medium;
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto 80%;
 
   .training-card--featured & {
+    padding-bottom: 20px;
     padding-top: 20px;
   }
 }
@@ -66,20 +64,25 @@
   @include base;
 }
 
-.training-card__course-length-featured {
+.training-card__course-length {
   @include foster-bold;
   color: white;
-  margin-left: 15px;
-  padding-left: 15px;
-  position: relative;
+  margin-bottom: 5px;
 
-  &::before {
-    border-left: 1px solid $grey--light;
-    content: "";
-    height: 25px;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  .training-card--featured & {
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+      border-left: 1px solid $grey--light;
+      content: "";
+      height: 25px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
