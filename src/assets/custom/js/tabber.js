@@ -26,7 +26,7 @@
 
   var PANELS = nodeListToArray(TABBER.querySelectorAll(SELECTORS.PANEL));
 
-  var clickedTargetPathArray;
+  var clickedTarget;
 
   function isLargeScreen() {
     var largeScreenTabsAreVisible = LARGE_SCREEN_CONTROLS[0].scrollHeight > 0;
@@ -73,9 +73,9 @@
     if (isLargeScreen()) {
       return;
     }
-    clickedTargetPathArray = e.target;
+    clickedTarget = e.target;
 
-    togglePanel(this, clickedTargetPathArray);
+    togglePanel(this, clickedTarget);
   }
 
   function togglePanel(panel) {
@@ -92,7 +92,7 @@
   function makePanelInactive(panel) {
     var panelInner = panel.querySelector(SELECTORS.PANEL_INNER);
 
-    if (panelInner.contains(clickedTargetPathArray)) {
+    if (panelInner.contains(clickedTarget)) {
       return;
     }
 
