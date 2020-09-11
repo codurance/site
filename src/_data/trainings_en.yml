@@ -53,6 +53,7 @@ crafted-design:
 functional-programming:
   name: "Introduction to <br> Functional Programming"
   course-length: 2 days
+  duration: "DURATION: 2 Days"
   description: This course teaches your software delivery teams the basics of functional programming.
   page: /services/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
@@ -68,6 +69,7 @@ lambdas:
 serverless:
   name: "Serverless Architecture <br> Using AWS"
   course-length: 2 days
+  duration: "DURATION: 2 Days"
   description: This course teaches your teams how to build web applications using AWS serverless architecture. Teams can release fully scalable and secure web apps with ease.
   page: /services/training/serverless-training
   background-image-path: /assets/custom/img/training/serverless-training/training-backgrounds_bg-serverless-architecture-using-aws.svg
@@ -75,6 +77,7 @@ serverless:
 ead:
   name: "Enterprise Application <br> Development"
   course-length: 2 days
+  duration: "DURATION: 2 Days"
   description: This course teaches software delivery teams how to build an enterprise system using industry leading techniques.
   page: /services/training/enterprise-application-development
   background-image-path: /assets/custom/img/training/enterprise-application-development/training-backgrounds_bg-enterprise-application-development.svg
