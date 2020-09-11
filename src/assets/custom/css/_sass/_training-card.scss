@@ -67,11 +67,13 @@
 .training-card__course-length {
   @include foster-bold;
   color: white;
-  margin-bottom: 5px;
+
+  .training-card:not(.training-card--featured) & {
+    margin-bottom: 5px;
+  }
 
   .training-card--featured & {
     margin-left: 15px;
-    margin-bottom: 0;
     padding-left: 15px;
     position: relative;
 
