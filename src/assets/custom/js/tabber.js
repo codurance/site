@@ -90,13 +90,7 @@
   }
 
   function makePanelInactive(panel) {
-    // for (var i = 0; i < clickedTargetPathArray.length; i++) {
-    //   if(clickedTargetPathArray[i].className === SELECTORS.TABBER_INNER){
-    //     return;
-    //   }
-    // }
     var panelInner = panel.querySelector(".tabber-panel__inner");
-
 
     if (panelInner.contains(clickedTargetPathArray)) {
       return;
