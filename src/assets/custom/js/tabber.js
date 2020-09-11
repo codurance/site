@@ -7,11 +7,11 @@
 
   var SELECTORS = {
     TABBER: "[data-tabber]",
-    TABBER_INNER: "tabber-panel__inner",
     LARGE_SCREEN_CONTROL: "[data-large_screen_control]",
     LARGE_SCREEN_CONTROL_ACTIVE: "[data-large_screen_control]." + ACTIVE_CLASS,
     PANEL: "[data-tabber_panel]",
     PANEL_ACTIVE: "[data-tabber_panel]." + ACTIVE_CLASS,
+    PANEL_INNER: "[data-tabber_panel-inner]"
   };
 
   var TABBER = window.document.querySelector(SELECTORS.TABBER);
@@ -90,7 +90,7 @@
   }
 
   function makePanelInactive(panel) {
-    var panelInner = panel.querySelector(".tabber-panel__inner");
+    var panelInner = panel.querySelector(SELECTORS.PANEL_INNER);
 
     if (panelInner.contains(clickedTargetPathArray)) {
       return;
