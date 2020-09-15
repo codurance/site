@@ -1058,3 +1058,15 @@
   github: khoovirajsingh
   linkedin: khoovirajsingh-seewoonauth-038b692a
   office: Manchester
+
+- id: przemek_rogowski
+  name: Przemek Rogowski
+  image: /assets/custom/img/team/przemek_rogowski.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Przemek is a software developer with over ten years of experience. He specializes in back-end web technologies and also worked in mobile, gaming, data, and front-end development. It gave him a wide range of knowledge and the possibility to adapt quickly to new technologies.</p>
+    <p>He is a clean code evangelist. He strongly believes in the benefits that clean code and architecture bring to an organization. He's passionate about test-driven development and recognizes the value that a functional approach can bring to the quality of code.</p>
+    <p>In his free time, he loves to read, travel, play music, and spend time with his family.</p>
+  email: przemek.rogowski@codurance.com
+  github: przemek-rogowski
+  office: Barcelona
