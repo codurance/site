@@ -17,6 +17,7 @@ tags:
   - tools
   - community
   - developer relations
+in_page_banner: none
 ---
 
 Contributions from the community are one of the main driving factors of innovations and progress in the software development arena. The languages and tools would never flourish in the same speed without people contributing just from a sheer passion for software and satisfaction of giving something back. In this article, we will take a closer look at one of the most direct ways of helping fellow developers. StackOverflow (SO) offers that option as well as keeping the win-win situation, where the contributor benefits tangibly as well. This is in the form of reputation points and badges that you gain as you answer more questions. It is always nice to be able to keep track of your impact.
