@@ -14,6 +14,8 @@
 
 {% if page.canonical %}
   <link rel="canonical" href="{{ page.canonical.href }}" />
+{% else %}
+  <link rel="canonical" href="https://codurance.com{{ page.url }}" />
 {% endif %}
 
 <!-- fonts -->
