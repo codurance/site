@@ -6,7 +6,7 @@ title: 6 Steps for Effective Software Compliance
 title-es: 6 pasos para evaluar si tu software es efectivo 
 description: Software has evolved dramatically in a rapid fashion, and it has never been more critical as it is today to have a deep understanding of where your organisation is.
 description-es: El software ha evolucionado muchísimo y muy rápidamente. Por eso hoy en día es tan necesario e importante tener un conocimiento profundo de cual es el nivel de madurez de tu organización. 
-author: Daniel Accott
+author: Daniel Acott
 date: 2020-09-16 09:00:00 +00:00
 
 image:
