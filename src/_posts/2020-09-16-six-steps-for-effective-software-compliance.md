@@ -19,6 +19,8 @@ tags:
 pinned_locations:
   - specialist-expertise
 in_page_banner: none
+hubspot-cta-id: bf37f831-580d-482d-ad7e-d830f94381f7
+hubspot-cta-id-es: 7fc94c4c-2b45-4e91-a573-801750822ce7
 ---
 
 As software grows and becomes more complex, so does the amount of processing power, the number of systems, the number of users and more importantly, licensing requirements change. A major challenge in keeping control of a growing system is to make sure that the machines are licensed correctly—whether it is your windows machines, your SQL database, PBX or CRM software. For a moment, let’s pretend no one is watching when I was to ask you, whether you knew every piece of software you were running and how much it cost, would you know it? 

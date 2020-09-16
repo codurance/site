@@ -22,6 +22,8 @@ tags:
 pinned_locations:
   - specialist-expertise
 in_page_banner: none
+hubspot-cta-id: 79a0d818-7066-4afa-bb8b-62c172ffea13
+hubspot-cta-id-es: 727fb0d2-5b14-43c0-94ee-46457896348e
 ---
 
 In this post, we investigate how cross-functional teams work, how to get the most out of them and what benefits they can offer to your project. With the number of variants at play in your project – constraints, resources, requirements – how can you be sure that the teams that you assign will be able to overcome the hurdles they face?
