@@ -25,12 +25,14 @@ As software grows and becomes more complex, so does the amount of processing pow
 
 Those who can answer yes are those operating in the minority. The fact is it’s hard to maintain control of all the different licenses you have as even just managing a PBX at a small business will have upwards of 100 licenses alone to maintain. Take a 30 person small business as an example:
 
-<ol> You purchase the Windows server license, knowing it must be the correct version license or the system may not work. (2 Licenses) </ol>
-<ol> You purchase the SQL licenses. (8-50 depending on core or cal) </ol> 
-<ol> You purchase a license for the PBX. (2) </ol>
-<ol> You purchase a license for each handset (30) </ol>
-<ol> You purchase a license for each user on the system (30) </ol>
-<ol> You purchase a license for each softphone (30) </ol>
+<ol> 
+<li> You purchase the Windows server license, knowing it must be the correct version license or the system may not work. (2 Licenses) </li>
+<li> You purchase the SQL licenses. (8-50 depending on core or cal) </li> 
+<li> You purchase a license for the PBX. (2) </li>
+<li> You purchase a license for each handset (30) </li>
+<li> You purchase a license for each user on the system (30) </li>
+<li> You purchase a license for each softphone (30) </li>
+</ol>
 
 It becomes a nightmare to keep track of what you have purchased and what you are running. This isn’t just the case for the customer but also a massive problem for software vendors. In 2017, a court case brought this issue out into the open. Tier 1 software vendor SAP alleged that £54 million worth of additional licences and maintenance fees should be paid by one of its customers owing to third party software integrating with its solution.
 
