@@ -21,6 +21,8 @@ tags:
 pinned_locations:
   - soft-mod
 in_page_banner: none
+hubspot-cta-id: 718f702a-c601-47fc-bf29-45ecae6eac59
+hubspot-cta-id-es: b5ac459a-237b-49f2-a444-f55a716ae824
 ---
 
 ### Why is Monolith a Dirty Word? 
