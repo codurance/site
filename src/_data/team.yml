@@ -1059,3 +1059,14 @@
   email: przemek.rogowski@codurance.com
   github: przemek-rogowski
   office: Barcelona
+
+- id: bogdan_dumitrescu
+  name: Bogdan Dumitrescu
+  image: /assets/custom/img/team/bogdan_dumitrescu.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Bogdan has been writing code since the 90s and picked up the Agile and XP practices since the early stages of his career. He is passionate about writing highly maintainable code and teaching others about the various techniques to achieve that. In 2016, he founded the San Francisco Software Craftsmanship and facilitated the Global Day of Code Retreat.</p>
+    <p>Since 2017, Bogdan has worked as an engineering coach in large organisations in the US, helping them adopt Agile technical practices. He coached and mentored hundreds of engineers, testers, architects and business and technology leaders. He took part in several software modernisation programs and had a key role in the Agile transformation at a well known financial services company in the US.</p>
+    <p>In his free time, Bogdan enjoys reading books and magazines about current affairs, doing long road trips, hiking and traveling internationally.</p>
+  email: bogdan.dumitrescu@codurance.com
+  office: London
