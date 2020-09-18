@@ -1,0 +1,5 @@
+{% if site.lang == "es" %}
+  {% if page.url == "/redirect-test/" %}
+    <meta http-equiv="Refresh" content="0; url='{{ site.baseurl }}/services/'" />
+  {% endif %}
+{% endif %}
