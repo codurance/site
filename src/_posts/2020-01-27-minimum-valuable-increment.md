@@ -68,7 +68,7 @@ MVIs written at this level are meant to provide a strategic view of the evolutio
 > **Increment:** Accept all popular payment methods.</br>
 > **Verification:** Have new payment methods available for all our customers.</br>
 > **Examples:** AMEX, PayPal and Apple Pay. Currently only VISA and Mastercard are accepted.</br>
-> **Measurement:** 15% increase in online sales after 3 months the new payments are in production.
+> **Measurement:** 15% increase in online sales after 3 months of the new payments in production.
 
 #### Composite MVI Example
 	
