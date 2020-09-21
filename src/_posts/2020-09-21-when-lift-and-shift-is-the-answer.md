@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 name: when-lift-and-shift-is-the-answer
 title: When lift and shift is the answer
-title-es: "Cuando \"lift and shift\" es la respuesta"
+title-es: Cuando 'lift and shift' es la respuesta
 date: 2020-09-21 08:00:00 +00:00
 author: Sebastian Kulinski
 description: The fastest and least expensive migration to the cloud is the ‘lift and shift’ ( or re-hosting, ‘Forklifting’). Lift and shift is shorthand for taking an existing application and moving it to the cloud into an environment that is an exact replica of the original on-premise data-centre. The best part - this process does not require any modification to be made to the application. After the migration, you can enjoy the benefits of the cloud to reduce your costs. 
