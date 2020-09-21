@@ -30,6 +30,7 @@ In this article, we discuss why the Open Web Application Security Project Top Te
 Application security is of paramount importance for companies. Breaches of application security can lead to regulatory fines, identity theft and fraud. Poor security can damage an organisation, its finances and personnel. In 2017 the Wannacry virus hit a perhaps overly complacent Talk Talk and reportedly cost the NHS £92 million, impacting the provision of care to [patients](https://eandt.theiet.org/content/articles/2017/05/wannacry-and-ransomware-impact-on-patient-care-could-cause-fatalities/). The [CEO of Target resigned](https://www.theguardian.com/business/2014/may/05/target-chief-executive-steps-down-data-breach) after a serious data breach. Other data breaches include [Capital One](https://www.bbc.co.uk/news/world-us-canada-49159859) which was fined $80 million for a data breach affecting up to 100 million users. 
 
 In this article, we will consider the Top Ten application vulnerabilities as laid out by the [Open Web Application Security Project](https://owasp.org/www-project-top-ten/) (OWASP).
+
 {% include owasp-top-ten-cheat-sheet-banner.html %}
 
 ## OWASP
