@@ -43,6 +43,8 @@ How to decide if ‘lift and shift’ is a suitable solution? Check if there is 
 
 You might not have any reason to force changes. If something works - don’t break it. Is the company planning to retire the application next year? A migration might be a wasted effort in that case. If moving to the cloud is still required, check how important software is for the company. Use ‘lift and shift’ for applications that idle a lot and for which you don’t want to invest in rebuilding. With cloud elasticity, you can reduce the costs of computing power thanks to easy scaling on-demand. Consider re-hosting for applications that are outgrowing your existing infrastructure too fast. Further investment in hardware might be expensive and too slow. With limited time for environmental change, refactoring might not be the way either. You can always start reworking applications to better leverage cloud benefits later. 
 
+{% include lift-and-shift-cheat-sheet-banner.liquid %}
+
 ### What are the benefits of doing this?
 
 What does ‘lift and shift’ bring to the table?
@@ -78,3 +80,5 @@ We know major issues that might undermine the migration. How can you prepare app
 ### Initial investment vs ongoing savings
 
 Lift and shift is the cheapest and fastest choice to migrate your systems to the cloud. The company doesn’t have to invest a lot of time and money. No need to re-architecture existing solutions. You can benefit from the cloud quickly if the migration is done right. With a ‘lift and shift’, the company only invests in the preparation for a smooth migration. Re-hosting is a faster solution than refactoring or rebuilding the whole software. Ongoing saving will occur in different forms. Reduced costs of maintenance compared to an on-premise infrastructure. The possibility of scaling down the idling applications when possible, cutting down ongoing costs. Investments in under-used equipment and storage space are no longer needed - pay for what you use. The cloud will give you flexibility, elasticity and will provide you with exactly what you need when you need it. You won’t pay all the time for computing power to handle spikes or periodical workload - you can scale fast and easy. Starting a digital transformation with an inexpensive and fast migration can bring more value to the company. Moving less important systems first will give experience to the team. This will bear fruit later for more complicated or important migrations.
+
+{% include lift-and-shift-cheat-sheet-banner.liquid %}

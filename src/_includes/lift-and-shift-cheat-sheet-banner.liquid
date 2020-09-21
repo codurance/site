@@ -1,0 +1,11 @@
+{% capture background_image %}/assets/custom/img/blog/2020-09-21-when-lift-and-shift-is-the-answer/Lift-and-shift-CTA-image.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}Get your "lift and shift" check list here{% endcapture %}
+{% capture description %}Preparing an application for "lift and shift" migration? Download the full check list for the process here.{% endcapture %}
+{%- capture hubspot-cta-id -%}
+  {%- if site.lang == 'es' -%}82fe9ec7-eaf3-47c2-8ece-439ffa3d8d49{%- else -%}d4c26848-f0f0-443b-800d-f7142705acbb{%- endif -%}
+{%- endcapture -%}
+
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+  class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
