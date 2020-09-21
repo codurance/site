@@ -108,7 +108,7 @@ MVIs at this level are meant to give stakeholders and product teams an idea of w
 
 ### Iteration backlog
 
-MVIs at this level have been refined by the product team and contain all the necessary details to be implemented. For teams using a single backlog, MVIs written at this level should be at the very top of the backlog. At this level, teams can use the optional _task_ section. As MVIs are refined, they might be split into smaller MVIs. This allows teams to work in small increments and continuous release their changes to production. 
+MVIs at this level have been refined by the product team and contain all the necessary details to be implemented. For teams using a single backlog, MVIs written at this level should be at the very top of the backlog. At this level, teams can use the optional _task_ section. As MVIs are refined, they might be split into smaller MVIs. This allows teams to work in small increments and continuously release their changes to production. 
 
 #### Refined MVIs
 	
