@@ -2,12 +2,12 @@
 layout: post
 asset-type: post
 name: codurance-signs-up-to-the-tech-talent-charter-to-drive-inclusion-and-diversity
-title:  
-title-es: 
+title: Signing the TTC   
+title-es: Firmamos el TTC
 date: 2020-09-23 08:00:00 +00:00
 author: Natalie Gray
-description:  
-description-es:  
+description: Codurance joins the Tech Talent Charter (TTC) initiative. The goal is to drive equality in the UK tech sector and reduce the growing tech skills gap. 
+description-es: Codurance se une a la iniciativa Tech Talent Charter (TTC). El objetivo es impulsar la igualdad en el sector tecnológico del Reino Unido y reducir la creciente brecha de habilidades tecnológicas.  
 
 image:
     src: /assets/custom/img/blog/2020-09-23-codurance-signs-up-to-the-tech-talent-charter-to-drive-inclusion-and-diversity/blog-image.jpg
