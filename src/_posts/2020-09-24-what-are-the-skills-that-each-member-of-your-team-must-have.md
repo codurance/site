@@ -2,12 +2,12 @@
 layout: post
 asset-type: post
 name: what-are-the-skills-that-each-member-of-your-team-must-have
-title:    
-title-es: 
-date: 2020-09-23 08:00:00 +00:00
+title: What are the skills that each member of your team must have?    
+title-es: ¿Qué skills sería bueno que tuviera cada miembro de tu equipo?
+date: 2020-09-24 08:00:00 +00:00
 author: Alexis Pavlidis
-description:  
-description-es:   
+description: There are a series of roles that exist in most software development projects like Developers, UX Designers, Product Owner and a Quality Assurance Engineer. However, the project dictates which roles are required, and what skills must to have each role.
+description-es: Hay una serie de roles que existen en la mayoría de los proyectos de desarrollo de software,Developers, UX Designers, Product Owner o Quality Assurance Engineer. Sin embargo, el proyecto dicta qué roles se requieren y qué habilidades deben tener cada rol.  
 
 image:
     src: 
