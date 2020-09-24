@@ -1,0 +1,9 @@
+{% capture background_image %}/assets/custom/img/blog/2020-09-25-how-can-i-streamline-a-path-to-production/streamlined-path-to-production-cheat-sheet-graphic.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}Learn how to effectively streamline your path to production with our handy cheat sheet{% endcapture %}
+{%- capture hubspot-cta-id -%}
+  {%- if site.lang == 'es' -%}cb50c28c-4205-428c-8bf5-66b4c95bab81{%- else -%}ddbb4f76-cac8-420d-be7c-b0a01c4b7c47{%- endif -%}
+{%- endcapture -%}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+  class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
