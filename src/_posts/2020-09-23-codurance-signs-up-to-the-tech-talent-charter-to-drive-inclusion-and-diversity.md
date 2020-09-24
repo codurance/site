@@ -25,7 +25,7 @@ in_page_banner: none
 
 Codurance is pleased to announce that it has become a signatory of the Tech Talent Charter (TTC), a not-for-profit organisation with a mission to drive greater equality in UK Tech and reduce the widening technology skills gap. The TTC provides a community and platform of content and tools to support its members’ inclusion & diversity initiatives and create new opportunities for attracting and retaining diverse talent. They also produce an annual benchmarking report using data from their members tracking diversity in technology across the UK.
 
->“We are thrilled to be joining the Tech Talent Charter. Our goals at Codurance include delivering valuable software for our clients and helping to sustain better ways of working through skills transfer and positive cultural change. We also want to contribute to this positive change through measures that drive inclusion and lodiversity at Codurance and within the UK tech sector, and are confident that joining the TTC will help us achieve that.” 
+>“We are thrilled to be joining the Tech Talent Charter. Our goals at Codurance include delivering valuable software for our clients and helping to sustain better ways of working through skills transfer and positive cultural change. We also want to contribute to this positive change through measures that drive inclusion and diversity at Codurance and within the UK tech sector, and are confident that joining the TTC will help us achieve that.” 
 
 <b> Anne-Marie Mendonça, Head of People & Talent at Codurance and Tech Talent Charter Senior Signatory</b>
 
