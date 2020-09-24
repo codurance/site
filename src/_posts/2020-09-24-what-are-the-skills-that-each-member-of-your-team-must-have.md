@@ -13,6 +13,10 @@ image:
     src: 
 
 tags:
+    - roles
+    - DevOps
+    - skills
+    - team
   
 in_page_banner: none
 
