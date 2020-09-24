@@ -10,7 +10,7 @@ description: There are a series of roles that exist in most software development
 description-es: Hay una serie de roles que existen en la mayoría de los proyectos de desarrollo de software,Developers, UX Designers, Product Owner o Quality Assurance Engineer. Sin embargo, el proyecto dicta qué roles se requieren y qué habilidades deben tener cada rol.  
 
 image:
-    src: /assets/custom/img/blog/2020-09-24-what-are-the-skills-that-each-member-of-your-team-must-have/What-are-the-skills-that-each-member-of-your-team-must-have.jpg
+    src: /assets/custom/img/blog/2020-09-24-what-are-the-skills-that-each-member-of-your-team-must-have/what-are-the-skills-that-each-member-of-your-team-must-have.jpg
 
 tags:
     - roles
