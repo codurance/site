@@ -30,6 +30,7 @@ jobs:
             - build/_utility
             - output/_site
             - output/_site_es
+            - redirects-for-spanish-services-pages
 
   production:
     <<: *common_info
