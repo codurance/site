@@ -14,7 +14,7 @@ image:
 
 tags:
     - roles
-    - DevOps
+    - devops
     - skills
     - team
   
