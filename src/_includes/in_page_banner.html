@@ -13,7 +13,9 @@
       {% if include.title and include.title != '' %}
         <h3 class="in_page_banner__title">{{ include.title }}</h3>
       {% endif %}
-      <p class="in_page_banner__description">{{ include.description }}</p>
+      {% if include.description and include.description != '' %}
+        <p class="in_page_banner__description">{{ include.description }}</p>
+      {% endif %}
 
       {%- if include.hubspot-cta and include.hubspot-cta != '' -%}
         {{ include.hubspot-cta}}

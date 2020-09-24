@@ -10,7 +10,7 @@ description: There are a series of roles that exist in most software development
 description-es: Hay una serie de roles que existen en la mayoría de los proyectos de desarrollo de software,Developers, UX Designers, Product Owner o Quality Assurance Engineer. Sin embargo, el proyecto dicta qué roles se requieren y qué habilidades deben tener cada rol.  
 
 image:
-    src: 
+    src: /assets/custom/img/blog/2020-09-24-what-are-the-skills-that-each-member-of-your-team-must-have/What-are-the-skills-that-each-member-of-your-team-must-have.jpg
 
 tags:
     - roles
@@ -18,11 +18,19 @@ tags:
     - skills
     - team
   
+pinned_locations:
+    - specialist-expertise
+
 in_page_banner: none
+
+hubspot-cta-id: 874ea89c-f5c0-4f82-9bed-00f1fa2f38f7
+hubspot-cta-id-es: 9f0b25da-2941-4865-921a-9331afc8aea7
 
 ---  
 
 When kicking off a new software development project, naturally we all intend for it to be a success. But for the project to succeed the most important element is a good team. Surprisingly a huge amount of projects do fail due to poorly defined team structure. While it is an undeniable truth that there is no formula for the perfect team mainly because different projects might require different roles and skills, there are some common roles to every team. Despite the project, there will always be a need to understand the business problem, convert that problem into an architecture, convert the architecture into a solution, test the solution, and deploy the solution. Although each of these processes may change to some extent based on the programming models and tools being used, fundamentally there are some roles, which every process has in one form or another. One person may be filling all the roles or a handful of the roles, or one very specific role. Despite this there is a need for all of the roles — each serves a purpose. 
+
+{% include team_skills_cheat_sheet_banner.liquid %}
 
 There are a series of roles that exist in most software development projects like Developers, UX Designers, Product Owner and a Quality Assurance Engineer. 
 However, as I said, the project dictates which roles are required, a project without a User Interface might not require a UI or User Experience Designer, where a more complicated project might require an architect or a tech lead. Software is not some commodity that is manufactured, it is used to solve specific business or scientific problems.
@@ -94,7 +102,7 @@ A user experience designer’s main task is to care about users’ experiences w
 Because design is highly graphic, UX designers need to be competent in visual language. Proficiency in visual communication includes an understanding of concepts like layout, colour, typography, icons, images and design theory. Another skill a UX designer must have are wireframing and UI prototyping. Prototypes allow designers to test functionality. They help designers to ensure there is a match between a system and its users before construction on the final product begins. Prototypes allow designers to test both page functionality and overall navigation. UX designers must also have user empathy. Being able to put yourself in someone else’s shoes means understanding their problems. When you understand someone’s problems better, you’re more equipped when it comes to finding a solution to their problem. UX designers should also have analytical skills to determine how well their design is performing. Analytics are great for this. So, understanding numbers, percentages and ratios are a real must when you want to get your head around the performance of your design. Finally, coding is another skill that they should acquire. This is quite a useful skill to have as a UX as their job deals with technology, so they know what are the technological constraints, and the limitations of a development budget.
 
 
-(here the banner to download the Cheat Sheet) 
+{% include team_skills_cheat_sheet_banner.liquid %} 
 
 
 ###Summary

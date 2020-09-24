@@ -1,0 +1,9 @@
+{% capture background_image %}/assets/custom/img/blog/2020-09-24-what-are-the-skills-that-each-member-of-your-team-must-have/Team-Skills-CTA-image.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}Identify the skills that each member of your team must have with this cheatsheet.{% endcapture %}
+{%- capture hubspot-cta-id -%}
+  {%- if site.lang == 'es' -%}3cf88f71-748e-4ded-a3b8-f0b8ee03473c{%- else -%}36729322-4a4a-4e43-ae16-78ea1ca4a99a{%- endif -%}
+{%- endcapture -%}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+  class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
