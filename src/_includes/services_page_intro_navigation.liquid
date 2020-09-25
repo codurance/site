@@ -2,9 +2,15 @@
 
 <div class="services-page-intro__navigation">
   {% for service-line in  data.service_lines_in_teaser_group %}
-  {% assign data-entry = data[service-line] %}
+    {% assign data-entry = data[service-line] %}
+    {% capture href %}
+      {% if site.lang == "en" %}
+        {{ data-entry.cta-path | prepend: site.baseurl }}
+      {% else %}
+        {{ data-entry.cta-path-es | prepend: site.baseurl }}{% endif %}
+    {% endcapture %}
     <div class=services-page-intro__icon-container>
-      <a href="{{ data-entry.cta-path | prepend: site.baseurl }}" class="services-page-intro__navigation-link">
+      <a href="{{ href }}" class="services-page-intro__navigation-link">
         <div class="services-page-intro__navigation-icon services-page-intro__navigation-icon--{{service-line}}">
         {{ data-entry.icon }}
         </div>
