@@ -28,9 +28,9 @@ hubspot-cta-id-es: cb50c28c-4205-428c-8bf5-66b4c95bab81
 
 --- 
 
-{% include path-to-production_cheat_sheet_banner.liquid %}
-
 Many companies give too little thought to the release stage of software development. Company build systems often merely do the minimum required to push to production. Frequently, relief that the software appears to work within a tight deadline can blind development and operation teams to the pitfalls ahead. In this article we look at six steps to ensure that the path to production is as smooth as possible. Here, the claim is that release processes should be treated as infrastructure products in their own right. Companies need to budget developing and building a robust release system. The main point here is to be aware that deployment to production can involve the orchestration of multiple moving parts and businesses neglect processes at their peril. Lessons learnt from Google’s experience of scaling have led to the development of a new software field, Site Reliability Engineering (SRE). SRE applies the principles of computer science and engineering to the design and development of computing systems: generally large distributed ones. At Google, the role of SRE has three main aspects: first, engineering, applying scientific principles to the development of large distributed computing systems, second, system reliability, improving the design and operation of systems, thirdly, operating services, storage, email and web search, all on a global scale. 
+
+{% include path-to-production_cheat_sheet_banner.liquid %}
 
 Now, for businesses to survive, deployments must be frequent and seamless. The boundary between operations and development is now blurred and software must be designed to be deployable and ready for production. All deploys including database schema changes must be integrated into the deployment pipeline. The deployment pipeline is a well integrated system for deployment starting from commit and ending when delivery to users. At the commit stage a suite of tests are run with code analysis. Automated acceptance tests are the next stage of the process and would then ideally be run in order to ensure that the code meets the needs of the user. The next stage involves manual User Acceptance Testing (UAT) to ensure that the system is usable and provides value. Finally, the code will be run through the release stage to deliver the system changes to the user. The challenge for businesses is to ensure that the cycle from commit to production is as short as possible in order to make sure that feedback is as fast and accurate as possible. We will now consider six main points for ensuring production resilience and incremental system improvement.
 
@@ -110,6 +110,8 @@ Economic return can play a part in increased risk. Highly efficient systems hand
 Taleb, N. The Antifragile
 
 One way to improve production resilience, therefore, is to create tolerable levels of stress and breakage to increase the system over time. The work of Netflix and their [Simian Army](https://netflixtechblog.com/the-netflix-simian-army-16e57fbab116) has frequently been held as a model for Chaos Engineering but before adding chaos monkeys across the stack it can help to start with an opt-in model as opposed to opt-out. It can take time for resilience testing to take root on production services and over ambitious implementations can lead to serious issues across departments. Adding latency or making service calls fail are examples of injecting chaos. Another interesting exercise could include zombie day exercises to enable teams to make fuller inventories of team readiness for production failures or errors. In these types of exercises selected team members are required to remain offline in order to leave other members of the team to solve production issues. Here also it is important to have a code word when it is necessary to signal “this is not part of the drill”. The important point to remember is that breaking things regularly in a semi-controlled way can help software and teams to become more resilient.
+
+{% include path-to-production_cheat_sheet_banner.liquid %}
 
 <b>Conclusion</b>
 
