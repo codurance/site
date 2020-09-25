@@ -14,7 +14,7 @@ crafting-code-and-crafted-design:
   course-instructor-bio-title: INSTRUCTOR
   author: Sandro Mancuso
   description: Esta serie de capacitación está pensada para aquellos equipos que desean convertirse en expertos escribiendo código bien diseñado.
-  page: /services/training/crafting-code-and-crafted-design
+  page: /servicios/training/crafting-code-and-crafted-design
   avatar-src: /assets/custom/img/training-overview/sandro_avatar_image.png
   image-src: /assets/custom/img/training-overview/crafted-code-and-design.jpg
   title-background-image-path: /assets/custom/img/training/crafting-code-and-crafted-design/training-backgrounds_bg-crafting-code-and-design.svg
@@ -30,7 +30,7 @@ crafting-code:
   course-instructor-title: INSTRUCTOR DEL CURSO
   course-instructor-bio-title: INSTRUCTOR
   description: Este curso está diseñado para mejorar las habilidades de un equipo a la hora de escribir código limpio y fácil de mantener. Esto permitirá que puedan realizarse cambios más rápidamente y de manera más sostenible.
-  page: /services/training/crafting-code
+  page: /servicios/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training/crafting-code/training-backgrounds_bg-crafting-code.svg
   instructor-bio-p-1: <b>Software craftsman, escritor, cofundador de Codurance y fundador de la London Software Craftsmanship Community (LSCC).</b> Sandro ha estado programando desde muy joven, y comenzó su carrera profesional en 1996. Ha trabajado para startups, empresas de software , empresas de productos, empresas de consultoría internacional y bancos de inversión.
@@ -44,7 +44,7 @@ crafted-design:
   course-instructor-bio-title: INSTRUCTOR
   author: Sandro Mancuso
   description: Este curso permitirá a tu equipo mejorar sus habilidades para crear soluciones bien diseñadas. Esto hara posible que tu equipo responda a las necesades cambiantes  del negocio mientras implementa nuevas funcionalidades.
-  page: /services/training/crafted-design
+  page: /servicios/training/crafted-design
   featured: true
   background-image-path: /assets/custom/img/training/crafted-design/training-backgrounds_bg-crafted-design.svg
   instructor-bio-p-1: <b>Software craftsman, escritor, cofundador de Codurance y fundador de la London Software Craftsmanship Community (LSCC).</b> Sandro ha estado programando desde muy joven, y comenzó su carrera profesional en 1996. Ha trabajado para startups, empresas de software , empresas de productos, empresas de consultoría internacional y bancos de inversión.
@@ -55,7 +55,7 @@ functional-programming:
   course-length: 2 Días
   duration: "DURACIÓN: 2 Días"
   description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
-  page: /services/training/introduction-to-functional-programming
+  page: /servicios/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 
 lambdas:
@@ -63,7 +63,7 @@ lambdas:
   course-length: 2 Días
   duration: "DURACIÓN: 2 Días"
   description: En este curso aportamos los conocimientos necesarios para que tu equipo pueda construir e implementar microservicios utilizando la arquitectura serverless  de AWS.
-  page: /services/training/lambda-training
+  page: /servicios/training/lambda-training
   background-image-path: /assets/custom/img/training/lambda-training/training-backgrounds_bg-microservices-with-aws.svg
 
 serverless:
@@ -71,7 +71,7 @@ serverless:
   course-length: 2 Días
   duration: "DURACIÓN: 2 Días"
   description: Con esta formación tu equipo adquirirá los conocimientos y seguridad necesaros para crear aplicaciones web utilizando la arquitectura Serverless de AWS.
-  page: /services/training/serverless-training
+  page: /servicios/training/serverless-training
   background-image-path: /assets/custom/img/training/serverless-training/training-backgrounds_bg-serverless-architecture-using-aws.svg
 
 ead:
@@ -79,5 +79,5 @@ ead:
   course-length: 2 Días
   duration: "DURACIÓN: 2 Días"
   description: Este curso es para aquellos desarrolladores que desean aprender a construir un sistema empresarial desde cero.
-  page: /services/training/enterprise-application-development
+  page: /servicios/training/enterprise-application-development
   background-image-path: /assets/custom/img/training/enterprise-application-development/training-backgrounds_bg-enterprise-application-development.svg
