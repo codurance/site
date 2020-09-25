@@ -2,12 +2,12 @@
 layout: post
 asset-type: post
 name: how-can-i-streamline-a-path-to-production
-title:     
-title-es: 
+title: How do I streamline a path to production?    
+title-es: ¿Cómo podemos agilizar el proceso de producción?
 date: 2020-09-25 08:00:00 +00:00
 author: Tom Spencer
-description: 
-description-es:   
+description:  In this article we look at six steps to ensure that your path to production is as smooth as possible. Here, the claim is that release processes should be treated as infrastructure products in their own right. Software producers should recognise the need to budget for developing and building a robust release system. 
+description-es: En este artículo, analizamos seis pasos para garantizar que el camino hacia la producción sea lo más fluido posible. Los procesos de release deben tratarse como productos de infraestructura por derecho propio. Quien se dedique al desarrollo de software debe tener en cuenta la necesidad de presupuestar el desarrollo y la construcción de un sistema de lanzamiento sólido.  
 
 image:
     src: /assets/custom/img/blog/2020-09-25-how-can-i-streamline-a-path-to-production/path-to-production.jpg
