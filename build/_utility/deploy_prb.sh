@@ -14,7 +14,7 @@ cd output/_site/
 
 echo "Synchronizing to folder: $FOLDER_NAME"
 aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME --exclude "*/assets/*" --acl public-read --delete
-pwd
+
 cd ../../redirects-for-spanish-services-pages/
 aws s3 sync . s3://codurance-site-pr/$FOLDER_NAME/es/services --acl public-read --delete
 
