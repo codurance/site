@@ -34,7 +34,7 @@ Many companies give too little thought to the release stage of software developm
 
 Now, for businesses to survive, deployments must be frequent and seamless. The boundary between operations and development is now blurred and software must be designed to be deployable and ready for production. All deploys including database schema changes must be integrated into the deployment pipeline. The deployment pipeline is a well integrated system for deployment starting from commit and ending when delivery to users. At the commit stage a suite of tests are run with code analysis. Automated acceptance tests are the next stage of the process and would then ideally be run in order to ensure that the code meets the needs of the user. The next stage involves manual User Acceptance Testing (UAT) to ensure that the system is usable and provides value. Finally, the code will be run through the release stage to deliver the system changes to the user. The challenge for businesses is to ensure that the cycle from commit to production is as short as possible in order to make sure that feedback is as fast and accurate as possible. We will now consider six main points for ensuring production resilience and incremental system improvement.
 
-<b>1. Deploy as early and often as possible</b>
+### 1. Deploy as early and often as possible
 
 It helps to see deployments as an incremental and continuous process. In some past earlier systems developers would throw zipped up software “over the wall” to system administrators who would have to factor in a period of “planned downtime” while the code was made to work on production. This was a poor service for customers for whom continuity is always important. The process of updating the system takes time. A typical design requires that the system always sees itself in either the “before” or “after” state but too often no attention is given to the “during” state while the system is being updated. Applications need to be designed so that they are easy to deploy. 
 
@@ -48,7 +48,7 @@ Continuous deployment can help cut the delay between commitment and production a
 
 In Continuous Delivery every change that is made to an application’s configuration, source code, environment or data triggers the creation of a new instance of the pipeline. The aim of the deployment pipeline is threefold: first it makes every part of the process of building, deploying, releasing and testing software, visible to everyone involved, aiding collaboration, second, it improves feedback so that problems are identified and resolved as early in the process as possible, thirdly, it enables teams to deploy and release any version of their software to any environment at will through a fully automated process. 
 
-<b>2. Automate as much as possible</b>
+###2. Automate as much as possible
 
 Automated deployment seems to be the only reliable procedure for releasing production ready code. The alternative, manual deployment, can involve several people working together on complex and time consuming tasks which require specific expertise. Because manual deployment is tedious and repetitive, even very skilled people are bound to make errors.
 Software release should be a short and painless process with only low risk. Ideally, developers should be restricted from changing production server environments manually. Code, configuration, host environment and data, the application components all need to be controlled and a complete account kept of changes in any of them. Automation allows the reduction of toil and human error throughout the deployment process.
@@ -57,7 +57,7 @@ Version control is essential. All configuration should be self documented throug
 
 Infrastructure as code enables visibility and openness regarding server configuration. This can ensure that infrastructure documentation is always up to date, keeping a detailed audit trail for changes. It can help to achieve reproducibility, accessibility, tolerance to failure with dynamic infrastructure. For fully version controlled build tool management development teams can use Terraform or Ansible. Terraform is infrastructure as code and Ansible is a configuration management tool. Terraform is a multi-cloud infrastructure as code software written by HashiCorp in Go programming language. It provides built-in dependencies to handle automatic provisioning of infrastructure both in the public and private cloud. This can be helpful for use with AWS. Ansible is another software provisioning configuration management tool that uses declarative language to describe system configuration. Ansible Playbooks, the building blocks of all Ansible use cases, are written in YAML.
 
-<b>3. Reduce Toil</b>
+###3. Reduce Toil
 
 Toil is manual, repetitive and automatable work that is devoid of enduring value which tends to increase as the business grows. SREs need to think about what they are doing. They need protected time on project work to reduce toil or add service features. Puppet and CfEngine are tools that can be used for centralised management and configuration of the software release phase. Using configuration management makes the infrastructure mutable. There are tradeoffs for this mutable infrastructure. Upgrades of aspects of the infrastructure such as NGINX can partially fail during upgrade in place and this can cause increased complexity.  An even better option can be to use immutable infrastructure where servers are not modified once they are deployed. With an immutable approach we take a snapshot of the Virtual Machine and then upgrade with discrete versioning.
 
@@ -67,11 +67,11 @@ Automated build pipelines should reject any code which fails tests, linting or i
 
 Database changes can often be another pain point for deployment. First, it is extremely important to ensure that the development team has a migration framework in place. Instead of running raw SQL scripts against an admin command line interface developers should have programmatic control to roll the schema version forward and also roll back if necessary. Some schema changes such as adding a table, views, nullable columns, or aliases are perfectly safe changes provided the changes they add are not yet used by the current application. Shims (splitting tables) and updates need to be tested on realistic data before deployment. More care should be taken with database actions that may impact the business application’s integrity.
 
-<b>4. Logging and Monitoring</b>
+###4. Logging and Monitoring
 
 In a large computer infrastructure the servers, the network and the applications all need to be monitored. This cannot be done by a single tool. Choice of tools for this task is important but depends on the specific nature of the system. A good manager will try to discover what colleagues in similar organisations are using and how they go about the monitoring task. Monitoring is not a job. Rather it is a skill which every team member should try to acquire. Effective monitoring is not a box ticking exercise. All too often monitoring is interpreted as keeping a record of the most obvious indicators of the system such as system load, CPU usage and memory utilisation. When things go wrong developers are left scratching their heads to work out why. It helps if developers have an idea what “working” actually means in the system. With a web app, for example, an HTTP GET / command will promptly respond HTTP 200 OK on a healthy system. Delay or failure in this test strongly suggests there is something wrong. It is useful to distinguish between measurements of application function and those which measure the inner work of the operating system itself. The latter are usually of only incidental interest in dealing with this kind of problem. Bear in mind that good monitoring will flag up problems early but it won’t fix them. 
 
-<b>How to design an automated monitoring system?</b>
+###How to design an automated monitoring system?
 
 Composable monitoring has developed as a partial answer to the question of automation. It embodies the UNIX philosophy described by Doug McIlroy as:
 
@@ -85,7 +85,7 @@ Quite often the software supplier is contractually bound to a service level avai
 
 When setting up a monitoring system it is a good idea to start as close to the end user as possible, focusing on the data and performance customers will receive. An example of a test for monitoring from a user perspective is to collect HTTP response codes which may highlight problems immediately. These tests can act as integration tests on the application to wrap a simple test result that encompasses database retrieval, redis instances and system infrastructure, for instance. Involving product managers in monitoring can help to focus data collection to the areas that really matter. Business Key Performance Indicators (KPIs) are the most important metrics available and make great leading indicators for application health and performance.
 
-<b>5. Delivering version changes</b>
+###5. Delivering version changes
 
 >"Be conservative in what you do, be liberal in what you accept from others."
 
@@ -101,7 +101,7 @@ Be aware that there may be a gap between what we say our service accepts and wha
 
 Another aspect of API versioning is handling others’ versions. When receiving requests or messages the application has no control over the format. Integration tests should check the application’s own conformance to the specification. It is important that the tests do not make unjustified assumptions about how the other parties in API interaction behave. The tests and code should be written with a cynical mindset. Even if the most trusted service provider claims to do zero downtime deployments it is still essential to protect the service. Use a gateway for timeouts, connection handling, error handling and result processing. This means that the application interaction logic is in one place and calling code can just provide the essential logic. Collecting the interaction into one class has the added benefit of making a Circuit Breaker pattern easier to implement. If requests fail above a certain limit the circuit breaker trips and opens the circuit to isolate errors and avoid infecting the whole system when one API interaction fails.
 
-<b>6. Avoid drift</b>
+###6. Avoid drift
 
 Economic return can play a part in increased risk. Highly efficient systems handle disruption badly and tend to break all at once. Nassim Taleb in his book The Antifragile terms this phenomenon antifragility and defines it in the following terms:
 	
@@ -111,6 +111,6 @@ Taleb, N. The Antifragile
 
 One way to improve production resilience, therefore, is to create tolerable levels of stress and breakage to increase the system over time. The work of Netflix and their [Simian Army](https://netflixtechblog.com/the-netflix-simian-army-16e57fbab116) has frequently been held as a model for Chaos Engineering but before adding chaos monkeys across the stack it can help to start with an opt-in model as opposed to opt-out. It can take time for resilience testing to take root on production services and over ambitious implementations can lead to serious issues across departments. Adding latency or making service calls fail are examples of injecting chaos. Another interesting exercise could include zombie day exercises to enable teams to make fuller inventories of team readiness for production failures or errors. In these types of exercises selected team members are required to remain offline in order to leave other members of the team to solve production issues. Here also it is important to have a code word when it is necessary to signal “this is not part of the drill”. The important point to remember is that breaking things regularly in a semi-controlled way can help software and teams to become more resilient.
 
-<b>Conclusion</b>
+###Conclusion
 
 Change is the defining characteristic of software. The release to production is the beginning of the software’s true life, everything before is just gestation. Released systems need to grow and adapt over time in order to build resilience within the production environment. The alternative is decay and rigidity until benefits are outweighed by benefits. Release to production must, therefore, be regarded as the integral part of the business software. It is not enough to design for change in software. Businesses must prepare and plan for change in production through automation, versioning and resilience training.
