@@ -12,14 +12,11 @@
   <meta name="robots" content="{{ page.metarobots }}" />
 {% endif %}
 
+<link rel="alternate" href="https://codurance.com{{ page.url }}" hreflang="en" />
+<link rel="alternate" href="https://codurance.es{{ page.url }}" hreflang="es" />
+
 {% if page.canonical %}
   <link rel="canonical" href="{{ page.canonical.href }}" />
-{% else %}
-  {% if page.permalink %}
-    <link rel="canonical" href="https://codurance.com{{ page.permalink }}" />
-  {% else %}
-    <link rel="canonical" href="https://codurance.com{{ page.url }}" />
-  {% endif %}
 {% endif %}
 
 <!-- fonts -->
