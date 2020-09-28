@@ -14,15 +14,15 @@
         </div>
         <div class="tabber-panel__main">
           <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].what }}</h4>
-          <ul class="tabber-panel__list">
+          <ul class="tabber-panel__what-list">
             {% for item in tab.list %}
               <li class="tabber-panel__tick-item">{{ item }}</li>
             {% endfor %}
           </ul>
           <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
-          <ul class="tabber-panel__list">
+          <ul class="tabber-panel__how-list">
             {% for item in tab.second-list %}
-              <li class="tabber-panel__tick-item">{{ item }}</li>
+              <li class="tabber-panel__item">{{ item }}</li>
             {% endfor %}
           </ul>
         </div>
