@@ -113,6 +113,7 @@
 
   @include large-and-extra-large {
     display: flex;
+    align-items: stretch;
     width: 100%;
   }
 }
@@ -124,12 +125,6 @@
   }
   @include large-and-extra-large {
     width: 50%;
-  }
-  @include large {
-    padding: 30px;
-  }
-  @include extra-large {
-    padding: 60px;
   }
 }
 
@@ -208,7 +203,14 @@
   margin: 0;
 }
 
-.tabber-panel__what-wrapper, .tabber-panel__how-wrapper {
+.tabber-panel__what-wrapper,
+.tabber-panel__how-wrapper {
   background-color: white;
-  padding: 20px;
+}
+
+.tabber-panel__header,
+.tabber-panel__what-wrapper,
+.tabber-panel__how-wrapper {
+  flex: 1;
+  padding: 30px;
 }
