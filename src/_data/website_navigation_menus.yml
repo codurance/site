@@ -5,16 +5,22 @@ main_menu_items:
     sub_menu_items:
       - key: services-overview
         path: "/services/"
+        path-es: "/servicios/"
       - key: software-modernisation
         path: "/services/software-modernisation/"
+        path-es: "/servicios/software-modernisation/"
       - key: software-delivery
         path: "/services/software-delivery/"
+        path-es: "/servicios/software-delivery/"
       - key: specialist-expertise
         path: "/services/specialist-expertise/"
+        path-es: "/servicios/specialist-expertise/"
       - key: strategic-advice
         path: "/services/strategic-advice/"
+        path-es: "/servicios/strategic-advice/"
       - key: training
         path: "/services/training"
+        path-es: "/servicios/training"
   - key: publications
     path: "/publications/"
   - key: careers
