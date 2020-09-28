@@ -20,7 +20,11 @@
             {% endfor %}
           </ul>
           <h4 class="tabber-panel__subtitle">{{ site.data.service_lines_tabber[site.lang].how }}</h4>
-          <p class="tabber-panel__details">{{ tab.details }}</p>
+          <ul class="tabber-panel__list">
+            {% for item in tab.second-list %}
+              <li class="tabber-panel__tick-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </article>
