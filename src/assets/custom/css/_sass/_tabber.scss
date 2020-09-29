@@ -162,9 +162,13 @@
   margin-bottom: 15px;
 }
 
+.tabber-panel__what-list, .tabber-panel__how-list {
+  list-style: none;
+  margin: 0 0 10px;
+}
+
 .tabber-panel__what-list {
   @include base-bold;
-  list-style: none;
   padding: 0;
 }
 
@@ -192,18 +196,17 @@
   padding-left: 25px;
 }
 
-.tabber-panel__what-list, .tabber-panel__how-list {
-  margin: 0 0 10px;
-}
-
 .tabber-panel__item {
   padding-bottom: 5px;
   position: relative;
-}
 
-.tabber-panel__details {
-  @include base;
-  margin: 0;
+  &:before {
+    content: "-";
+    margin-left: -25px;
+    margin-right: 18px;
+
+    @include base-bold;
+  }
 }
 
 .tabber-panel__what-wrapper,
@@ -232,7 +235,7 @@
     padding: 35px 15px;
   }
   @include large-and-extra-large {
-    &::after {
+    &:after {
       background-color: $grey--light;
       content: "";
       height: 90%;
