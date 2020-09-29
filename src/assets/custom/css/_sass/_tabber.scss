@@ -163,6 +163,7 @@
 }
 
 .tabber-panel__what-list {
+  @include base-bold;
   list-style: none;
   padding: 0;
 }
@@ -187,6 +188,7 @@
 }
 
 .tabber-panel__how-list {
+  @include base-reg;
   padding-left: 25px;
 }
 
@@ -195,7 +197,6 @@
 }
 
 .tabber-panel__item {
-  @include base-bold;
   padding-bottom: 5px;
   position: relative;
 }
@@ -221,7 +222,7 @@
 
 .tabber-panel__how-wrapper {
   @include small-and-medium {
-    padding: 0 15px 10px;
+    padding: 0 15px 20px;
     margin-top: -10px;
   }
 }
