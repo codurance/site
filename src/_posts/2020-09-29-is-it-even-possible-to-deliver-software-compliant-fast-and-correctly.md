@@ -13,8 +13,8 @@ image:
     src: /assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/software-compliant-fast-and-correct.jpg
 
 tags:
-    - legacy code
-    - tdd 
+    - legacy-code
+    - TDD
     - hexagonal architecture 
     - clean architecture 
     - unit tests 
