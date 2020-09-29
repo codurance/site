@@ -146,6 +146,9 @@
 .tabber-panel__title {
   @include freed-bold;
   color: white;
+  &.tabber-panel__title--small-font {
+    @include mercer-bold;
+  }
 }
 
 @include small-and-medium {
