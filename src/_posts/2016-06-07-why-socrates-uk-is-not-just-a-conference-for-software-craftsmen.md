@@ -34,4 +34,4 @@ This is a basic rule that can be applied not only to design but also to our dail
 
 There are big differences in being a Developer or a Designer, but in the end we are both focused on creating meaningful and engaging interactive experiences. That's why I went to SoCraTes UK: to learn more about my teammates' world in order to improve our communication and collaboration.
 
-[Download the session presentation “Interaction Design: 5 principles to craft better interfaces”](/assets/custom/pdf/custom/blog/interactionDesign.pdf)
+[Download the session presentation “Interaction Design: 5 principles to craft better interfaces”]({{site.baseurl}}/downloads/blog/interactionDesign.pdf)
