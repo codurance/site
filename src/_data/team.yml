@@ -1009,7 +1009,7 @@
   github: nicolasbelfis
   linkedin: nicolas-belfis-4730364a
   office: Barcelona
-  
+
 - id: martin_garcia_blanco
   name: Martín García Blanco
   image: /assets/custom/img/team/martin_garcia.jpg
@@ -1084,3 +1084,27 @@
     <p>In his free time, Bogdan enjoys reading books and magazines about current affairs, doing long road trips, hiking and traveling internationally.</p>
   email: bogdan.dumitrescu@codurance.com
   office: London
+
+- id: kirsten_osborn
+  name: Kirsten Osborn
+  image: /assets/custom/img/team/kirsten_osborn.jpg
+  role: Agile Delivery Manager
+  fullDescription:
+    <p>Kirsten has over 10 years’ experience leading strategic business change and operational service improvement.</p>
+    <p>This has involved a combination of service redesign, business process re-engineering and technical delivery. Recent projects have included implementing a new Azure/PowerBI data warehouse platform for Manchester Met University, and leading a customer experience transformation programme at Trafford Council.</p>
+    <p>Kirsten is also studying for an MBA as part of a senior leader apprenticeship at Manchester Met.</p>
+    <p>In her spare time she enjoys road cycling, jazz swing dancing and going to tech meet-ups.</p>
+  email: kirsten.osborn@codurance.com
+  office: Manchester
+
+- id: nicole_smith
+  name: Nicole Smith
+  image: /assets/custom/img/team/nicole_smith.jpg
+  role: New Business Manager
+  fullDescription:
+    <p>After starting out in media advertising and business development, Nicole got into the software industry where she grew an interest in technology which turned into a passion after working in the Maritime and Aerospace industries.</p>
+    <p>By working on sales deals and developing software partnership she learnt about the many ways advancing software and building technology communities can achieve innovation and affective delivery.</p>
+    <p>She looks forward to promoting Codurance’s brand within the new innovative tech world which is forming in Manchester, and helping customers reach their goals.</p>
+    <p>Outside of work she enjoys spending time with her friends and family, particularly if that means she gets to spend time in the kitchen trying out a new recipe. She also loves art exhibitions and films.</p>
+  email: nicole.smith@codurance.com
+  office: Manchester
