@@ -12,7 +12,16 @@ en:
         - Frequent and safer releases to production
         - Reduce technical debt
         - Reduce defect rate
-      details: Stable and repeatable release processes; Continuous Delivery; Automated delivery pipelines; Test automation at multiple levels; Test&#8209;Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      second-list:
+        - Stable and repeatable release processes
+        - Continuous Delivery
+        - Automated delivery pipelines
+        - Test automation at multiple levels
+        - Test-Driven Development
+        - Clean Code
+        - Modular architecture
+        - XP practices
+        - DevOps
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
     - id: innovation
@@ -23,7 +32,16 @@ en:
         - Easy to experiment
         - Data-driven decisions
         - Fast feedback
-      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      second-list:
+        - Contained experiments
+        - Design thinking
+        - Lean startup
+        - User research
+        - Cloud enablement
+        - Big data
+        - A/B testing
+        - Analytics
+        - Feature flags
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
     - id: technology
@@ -35,7 +53,18 @@ en:
         - Cost reduction
         - Technology refresh
         - Mitigation against end-of-life
-      details: Cloud native; Serverless architecture; 3rd party integration; Containerisation; Elastic scaling; Security; Automation; Infrastructure&#8209;as&#8209;code; Managed databases; Modern frameworks; Modular architecture
+      second-list:
+        - Cloud native
+        - Serverless architecture
+        - 3rd party integration
+        - Containerisation
+        - Elastic scaling
+        - Security
+        - Automation
+        - Infrastructure-as-code
+        - Managed databases
+        - Modern frameworks
+        - Modular architecture
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
     - id: business-alignment
@@ -46,7 +75,12 @@ en:
         - Faster quality feedback
         - Closer collaboration
         - Embrace change
-      details: Eliminate silos; Aligning teams to strategic business goals; Align architecture to business areas; Ubiquitous language; Domain Driven Design
+      second-list:
+        - Eliminate silos
+        - Aligning teams to strategic business goals
+        - Align architecture to business areas
+        - Ubiquitous language
+        - Domain Driven Design
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
     - id: people-and-culture
@@ -58,7 +92,12 @@ en:
         - Culture of learning
         - Leadership at all levels
         - Team autonomy
-      details: Attractive technologies; Training; Coaching and mentoring; Internal communities of practice; Involvement in external communities
+      second-list:
+        - Attractive technologies
+        - Training
+        - Coaching and mentoring
+        - Internal communities of practice
+        - Involvement in external communities
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
     - id: risk-management
@@ -70,7 +109,11 @@ en:
         - Security
         - Operational excellence
         - Reduce mean time to recover
-      details: Isolation and tighter control of critical areas of the system; Strategic approach to regulatory compliance, security, monitoring, auditing and logging; Operational effectiveness and cost control; Site Reliability Engineering (SRE)
+      second-list:
+        - Isolation and tighter control of critical areas of the system
+        - Strategic approach to regulatory compliance, security, monitoring, auditing and logging
+        - Operational effectiveness and cost control
+        - Site Reliability Engineering (SRE)
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
   software-delivery:
@@ -83,7 +126,16 @@ en:
         - Improve user experience and customer satisfaction
         - Achieve value-driven prioritization
         - Innovate through experimentation
-      details: Build MVPs, Proof of Concepts, and Prototypes; Create a high-level technical strategy and roadmap; Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics; Usability testing; AB Testing; User research
+      second-list:
+        - Build MVPs, Proof of Concepts, and Prototypes
+        - Create a high-level technical strategy and roadmap
+        - Customer journey mapping
+        - Value stream mapping
+        - Service blueprint and design
+        - Product analytics
+        - Usability testing
+        - AB Testing
+        - User research
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
 
     - id: people-and-process
@@ -98,7 +150,13 @@ en:
         - Achieve iterative and incremental development
         - Develop fast feedback loops
         - Attract talent
-      details: Agile and Lean software development; Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      second-list:
+        - Agile and Lean software development
+        - Extreme Programming (XP)
+        - Technical leadership
+        - Agile coaching
+        - Lean UX
+        - Design thinking
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
 
     - id: practices-and-automation
@@ -106,7 +164,15 @@ en:
       intro: A strong set of quality practices and reliable automation is key for continuous delivery.
       list:
         - Test automation at multiple levels
-      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      second-list:
+        - Test-Driven Development (TDD)
+        - Pair programming
+        - Simple Design
+        - Refactoring
+        - Infrastructure as code
+        - Automated build pipelines
+        - Continuous Integration
+        - Continuous Delivery
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: architecture-and-design
@@ -120,7 +186,15 @@ en:
         - Increase security
         - Reduce development and deployment dependencies
         - Reduce maintenance and operation costs
-      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      second-list:
+        - Evolutionary architecture (incremental)
+        - Serverless
+        - Microservices
+        - Modular monoliths
+        - Cloud-native
+        - Interaction Driven Design (IDD)
+        - Domain Driven Design (DDD)
+        - Regulatory compliance
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: platform-and-technology
@@ -131,7 +205,12 @@ en:
         - Achieve high performance
         - Establish a migration path
         - Attract talent
-      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      second-list:
+        - Cloud platforms (AWS, Azure, and GCP)
+        - Site Reliability Engineering
+        - "Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell"
+        - "Frontend platforms and frameworks: Node.js, React, Vue, Angular"
+        - Relational and NoSQL databases
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
 
   specialist-expertise:
@@ -141,7 +220,15 @@ en:
       list:
         - Increase capacity during peaks
         - Rely on experienced specialists with the technical skills you need
-      details: Testing strategy and automation; Test-Driven Development (TDD); Cloud technologies; Software architecture and design; DevOps; Site reliability engineering; Agile and Lean methodologies; Product Design and User Experience (UX)
+      second-list:
+        - Testing strategy and automation
+        - Test-Driven Development (TDD)
+        - Cloud technologies
+        - Software architecture and design
+        - DevOps
+        - Site reliability engineering
+        - Agile and Lean methodologies
+        - Product Design and User Experience (UX)
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
 
     - id: upskilling
@@ -149,7 +236,10 @@ en:
       intro: Improve your team's skills.
       list:
         - Help your team build the skills they need to excel in every area of your product delivery.
-      details: Technical coaches embedded in your teams; Communities of practice; Technical development and training programs
+      second-list:
+        - Technical coaches embedded in your teams
+        - Communities of practice
+        - Technical development and training programs
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
 
     - id: improvement-initiatives
@@ -158,7 +248,12 @@ en:
       list:
         - Guide and support strategic improvement initiatives
         - Supplement your technical leadership
-      details: Agile, Lean, and team(s) coaching; Organisational design; Extreme Programming practices; Quality engineering and automation; Continuous delivery
+      second-list:
+        - Agile, Lean, and team(s) coaching
+        - Organisational design
+        - Extreme Programming practices
+        - Quality engineering and automation
+        - Continuous delivery
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
 
   strategic-advice:
@@ -170,7 +265,11 @@ en:
         - Select an effective implementation strategy
         - Assess product experience
         - Design a product roadmap
-      details: Customer journey mapping; Value stream mapping; Service blueprint and design; Product analytics
+      second-list:
+        - Customer journey mapping
+        - Value stream mapping
+        - Service blueprint and design
+        - Product analytics
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
 
     - id: people-and-process
@@ -180,7 +279,13 @@ en:
         - Evolve your company culture
         - Assess and improve ways of working and processes
         - Assess skills and capability
-      details: Agile and Lean software development; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      second-list:
+        - Agile and Lean software development
+        - Cultural Extreme Programming (XP)
+        - Technical leadership
+        - Agile coaching
+        - Lean UX
+        - Design thinking
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
 
     - id: practices-and-automation
@@ -191,7 +296,15 @@ en:
         - Improve and streamline your path to production
         - Assess technical quality
         - Perform root cause analysis
-      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infrastructure as code; Automated build pipelines; Continuous Integration; Continuous Delivery
+      second-list:
+        - Test-Driven Development (TDD)
+        - Pair programming
+        - Simple Design
+        - Refactoring
+        - Infrastructure as code
+        - Automated build pipelines
+        - Continuous Integration
+        - Continuous Delivery
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: architecture-and-design
@@ -206,7 +319,15 @@ en:
         - Increase security
         - Reduce development and deployment dependencies
         - Reduce maintenance and operation costs
-      details: Evolutionary architecture (incremental); Serverless; Microservices;  Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      second-list:
+        - Evolutionary architecture (incremental)
+        - Serverless
+        - Microservices
+        - Modular monoliths
+        - Cloud-native
+        - Interaction Driven Design (IDD)
+        - Domain Driven Design (DDD)
+        - Regulatory compliance
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: platform-and-technology
@@ -216,7 +337,12 @@ en:
         - Choose the right tool for each job
         - Establish a migration path
         - Leverage cloud platforms and containerisation
-      details: "Cloud platforms (AWS, Azure, and GCP); Site Reliability Engineering; Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Frontend platforms and frameworks: Node.js, React, Vue, Angular; Relational and NoSQL databases"
+      second-list:
+        - Cloud platforms (AWS, Azure, and GCP)
+        - Site Reliability Engineering
+        - "Programming languages: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell"
+        - "Frontend platforms and frameworks: Node.js, React, Vue, Angular"
+        - Relational and NoSQL databases
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg
 
   service-line-example:
@@ -229,7 +355,8 @@ en:
         - Frequent and safer releases to production
         - Reduce technical debt
         - Reduce defect rate
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo nec mauris tincidunt ultricies. Proin varius, lectus ac sodales iaculis, sapien sapien pharetra mauris, ut rutrum arcu urna sit amet tortor.
+      second-list:
+        - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo nec mauris tincidunt ultricies. Proin varius, lectus ac sodales iaculis, sapien sapien pharetra mauris, ut rutrum arcu urna sit amet tortor.
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-a.svg
 
     - id: tab-2
@@ -240,7 +367,16 @@ en:
         - Easy to experiment
         - Data-driven decisions
         - Fast feedback
-      details: Contained experiments; Design thinking; Lean startup; User research; Cloud enablement; Big data; A/B testing; Analytics; Feature flags
+      second-list:
+        - Contained experiments
+        - Design thinking
+        - Lean startup
+        - User research
+        - Cloud enablement
+        - Big data
+        - A/B testing
+        - Analytics
+        - Feature flags
       image-path: /assets/custom/img/service-lines/service-line-example/tabber-placeholder-b.svg
 es:
   what: Qué
@@ -256,7 +392,16 @@ es:
         - Lanzamientos frecuentes y más seguros a producción
         - Reducir technical debt
         - Reducir la tasa de defectos
-      details: Proceso de lanzamiento estable y repetible; Continuous Delivery; reserva de entrega automatizada; prueba de automatización en múltiples niveles; Test&#8209;Driven Development; Clean Code; Modular architecture; XP practices; DevOps
+      second-list:
+        - Proceso de lanzamiento estable y repetible
+        - Continuous Delivery
+        - Reserva de entrega automatizada
+        - Prueba de automatización en múltiples niveles
+        - Test-Driven Development
+        - Clean Code
+        - Modular architecture
+        - XP practices
+        - DevOps
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-sustainable-change.svg
 
     - id: innovacion
@@ -267,7 +412,16 @@ es:
         - Fácil de experimentar
         - Data driven decisions
         - Respuesta rápida
-      details: Contained experiments; Design thinking; lean startup; investigación de usuario; habilitación Cloud; Big Data; A/B testing; analítica; Feature flags
+      second-list:
+        - Contained experiments
+        - Design thinking
+        - lean startup
+        - investigación de usuario
+        - habilitación Cloud
+        - Big Data
+        - A/B testing
+        - analítica
+        - Feature flags
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-innovation.svg
 
     - id: tecnologia
@@ -279,7 +433,18 @@ es:
         - Reducción de costes
         - Actualización tecnológica
         - Mitigación frente al end-of-life
-      details: Cloud native; arquitectura sin servidor; integración de terceros; implementación en contenedores; escalamiento elástico; seguridad; automatización; Infrastructure&#8209;as&#8209;code; Managed databases; Modern frameworks; Modular architecture
+      second-list:
+        - Cloud native
+        - arquitectura sin servidor
+        - integración de terceros
+        - implementación en contenedores
+        - escalamiento elástico
+        - seguridad
+        - automatización
+        - Infrastructure-as-code
+        - Managed databases
+        - Modern frameworks
+        - Modular architecture
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-technology.svg
 
     - id: aproximacion-de-negocio
@@ -290,7 +455,12 @@ es:
         - Respuesta de calidad más rápida
         - Colaboración más estrecha
         - Aceptación de los cambios
-      details: Eliminar silos; aproximar los equipos a los objetivos comerciales estratégicos; aproximar la arquitectura a las áreas de negocios; Ubiquitous language; Domain Driven Design
+      second-list:
+        - Eliminar silos
+        - aproximar los equipos a los objetivos comerciales estratégicos
+        - aproximar la arquitectura a las áreas de negocios
+        - Ubiquitous language
+        - Domain Driven Design
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-business-alignment.svg
 
     - id: personas-y-cultura
@@ -302,7 +472,12 @@ es:
         - Cultura de aprendizaje
         - Liderazgo en todos los niveles
         - Autonomía del equipo
-      details: Tecnologías atractivas; formación; coaching y mentoring; grupos internos de prácticas; participación en grupos externos
+      second-list:
+        - Tecnologías atractivas
+        - formación
+        - coaching y mentoring
+        - grupos internos de prácticas
+        - participación en grupos externos
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-people-and-culture.svg
 
     - id: gestion-de-riesgos
@@ -314,7 +489,12 @@ es:
         - Seguridad
         - Operational excellence
         - Reducir el tiempo medio de recuperación
-      details: Aislamiento y control más estricto de áreas críticas del sistema; Enfoque estratégico para el cumplimiento de la normativa; Seguridad, seguimiento, auditoría y registro; Control de costes operativos; Site Reliability Engineering (SRE)
+      second-list:
+        - Aislamiento y control más estricto de áreas críticas del sistema
+        - Enfoque estratégico para el cumplimiento de la normativa
+        - Seguridad, seguimiento, auditoría y registro
+        - Control de costes operativos
+        - Site Reliability Engineering (SRE)
       image-path: /assets/custom/img/service-lines/software-modernisation/tabber-risk-management.svg
 
   software-delivery:
@@ -327,7 +507,15 @@ es:
         - Mejorar la experiencia de usuario y la satisfacción del cliente.
         - Lograr una priorización basada en el valor.
         - Innovar a través de la experimentación.
-      details: Crear  MVPs, Proof of Concepts y prototipos; Estrategia técnica de alto nivel y una hoja de ruta; Mapeo del Customer journeys; Mapeo del Value stream; Plan de servicio y diseño; Analítica de producto; Pruebas de usabilidad; AB testing
+      second-list:
+        - Crear  MVPs, Proof of Concepts y prototipos
+        - Estrategia técnica de alto nivel y una hoja de ruta
+        - Mapeo del Customer journeys
+        - Mapeo del Value stream
+        - Plan de servicio y diseño
+        - Analítica de producto
+        - Pruebas de usabilidad
+        - AB testing
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-product-strategy.svg
 
     - id: procesos-y-personas
@@ -342,7 +530,13 @@ es:
         - Lograr un desarrollo iterativo e incremental
         - Desarrollar circuitos de feedback rápidos y efectivos
         - Atraer talento
-      details: Desarrollo de software a través de Agile y Lean; Extreme Programming (XP); Liderazgo técnico; Agile coaching; Lean UX; Design thinking
+      second-list:
+        - Desarrollo de software a través de Agile y Lean
+        - Extreme Programming (XP)
+        - Liderazgo técnico
+        - Agile coaching
+        - Lean UX
+        - Design thinking
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-people-and-process.svg
 
     - id: practicas-y-automatizacion
@@ -350,7 +544,15 @@ es:
       intro: Aplicar prácticas de calidad y trabajar con una automatización de confianza es clave para la entrega continua.
       list:
         - Automatización de los test en múltiples niveles
-      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      second-list:
+        - Test-Driven Development (TDD)
+        - Pair programming
+        - Simple Design
+        - Refactoring
+        - Infraestructura como código
+        - Construir pipelines automatizados
+        - Integración continua
+        - Entrega continua
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: arquitectura-y-diseno
@@ -364,7 +566,15 @@ es:
         - Aumentar la seguridad
         - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
-      details: Arquitectura evolutiva (incremental); Serverless; Microservicios; Monolitos modulares; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Cumplimiento normativo
+      second-list:
+        - Arquitectura evolutiva (incremental)
+        - Serverless
+        - Microservicios
+        - Monolitos modulares
+        - Cloud-native
+        - Interaction Driven Design (IDD)
+        - Domain Driven Design (DDD)
+        - Cumplimiento normativo
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: plataformas-y-tecnologias
@@ -375,7 +585,12 @@ es:
         - Lograr un alto rendimiento
         - Establecer una ruta de migración
         - Atraer talento
-      details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
+      second-list:
+        - Plataformas Cloud (AWS, Azure, and GCP)
+        - Site Reliability Engineering
+        - "Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell"
+        - "Plataformas y marcos frontend: Node.js, React, Vue, Angular"
+        - Bases de datos relacionales y NoSQL
       image-path: /assets/custom/img/software-delivery/tabber-decorations_tabber-platform-and-technology.svg
 
   specialist-expertise:
@@ -385,7 +600,15 @@ es:
       list:
         - Aumentar la capacidad durante los picos
         - Confíar en especialistas experimentados con las habilidades técnicas que necesitas
-      details: Testing strategy y automatización; Test-Driven Development (TDD); Tecnologías cloud; Arquitectura y diseño de software; DevOps; Ingeniería de confiabilidad del sitio; Metodologías Agile y Lean; Diseño de producto y experiencia del usuario (UX)
+      second-list:
+        - Testing strategy y automatización
+        - Test-Driven Development (TDD)
+        - Tecnologías cloud
+        - Arquitectura y diseño de software
+        - DevOps
+        - Ingeniería de confiabilidad del sitio
+        - Metodologías Agile y Lean
+        - Diseño de producto y experiencia del usuario (UX)
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_hands-on-tech-expertise.svg
 
     - id: upskilling
@@ -393,7 +616,10 @@ es:
       intro: Mejora las habilidades de tu equipo.
       list:
         - Ayudar a tu equipo a desarrollar las habilidades que necesitan para destacar en cada área de la entrega de  producto.
-      details: Coaches técnicos integrados en tus equipos; Comunidades de prácticas; Desarrollo técnico y programas de formación
+      second-list:
+        - Coaches técnicos integrados en tus equipos
+        - Comunidades de prácticas
+        - Desarrollo técnico y programas de formación
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-upskilling.svg
 
     - id: iniciativas-de-mejora
@@ -402,7 +628,12 @@ es:
       list:
         - Orientar y apoyar iniciativas de mejora estratégica.
         - Reforzar tu liderazgo técnico
-      details: Coaching Agile, Lean y de equipos; Diseño organizacional; Prácticas Extreme Programming; Ingeniería de calidad y automatización; Entrega continua
+      second-list:
+        - Coaching Agile, Lean y de equipos
+        - Diseño organizacional
+        - Prácticas Extreme Programming
+        - Ingeniería de calidad y automatización
+        - Entrega continua
       image-path: /assets/custom/img/specialist-expertise/tabber-decorations_tabber-improvement-initiatives.svg
 
   strategic-advice:
@@ -414,7 +645,11 @@ es:
         - Seleccionar una estrategia de implementación efectiva
         - Evaluar la experiencia del producto
         - Diseñar una hoja de ruta del producto
-      details: Mapeo customer journeys; Mapeo value stream; Plan de servicio y diseño; Analítica de producto
+      second-list:
+        - Mapeo customer journeys
+        - Mapeo value stream
+        - Plan de servicio y diseño
+        - Analítica de producto
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-product-strategy.svg
 
     - id: procesos-y-personas
@@ -424,7 +659,13 @@ es:
         - Evolucionar la cultura de tu empresa
         - Evaluar y mejorar formas de trabajo y procesos
         - Evaluar habilidades y capacidades
-      details: Desarrollo de software a través de Agile and Lean; Cultural Extreme Programming (XP); Technical leadership; Agile coaching; Lean UX; Design thinking
+      second-list:
+        - Desarrollo de software a través de Agile and Lean
+        - Cultural Extreme Programming (XP)
+        - Technical leadership
+        - Agile coaching
+        - Lean UX
+        - Design thinking
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-people-and-process.svg
 
     - id: practicas-y-automatizacion
@@ -435,7 +676,15 @@ es:
         - Mejorar y agilizar tu camino hacia la producción
         - Evaluar la calidad técnica
         - Realizar análisis de causa raíz
-      details: Test-Driven Development (TDD); Pair programming; Simple Design; Refactoring; Infraestructura como código; Construir pipelines automatizados; Integración continua; Entrega continua
+      second-list:
+        - Test-Driven Development (TDD)
+        - Pair programming
+        - Simple Design
+        - Refactoring
+        - Infraestructura como código
+        - Construir pipelines automatizados
+        - Integración continua
+        - Entrega continua
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-practices-and-automation.svg
 
     - id: Arquitectura-y-diseno
@@ -450,7 +699,15 @@ es:
         - Aumentar la seguridad
         - Reducir las dependencias entre desarrollo e implementación
         - Reducir los costes de mantenimiento y operación
-      details: Evolutionary architecture (incremental); Serverless; Microservices; Modular monoliths; Cloud-native; Interaction Driven Design (IDD); Domain Driven Design (DDD); Regulatory compliance
+      second-list:
+        - Evolutionary architecture (incremental)
+        - Serverless
+        - Microservices
+        - Modular monoliths
+        - Cloud-native
+        - Interaction Driven Design (IDD)
+        - Domain Driven Design (DDD)
+        - Regulatory compliance
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-architecture-and-design.svg
 
     - id: plataformas-y-tecnologia
@@ -460,5 +717,10 @@ es:
         - Elegir la herramienta adecuada para cada trabajo
         - Establecer una ruta de migración
         - Aprovechar las plataformas cloud y la "contenedorización"
-      details: "Plataformas Cloud (AWS, Azure, and GCP); Site Reliability Engineering; Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell; Plataformas y marcos frontend: Node.js, React, Vue, Angular; Bases de datos relacionales y NoSQL"
+      second-list:
+        - Plataformas Cloud (AWS, Azure, and GCP)
+        - Site Reliability Engineering
+        - "Lenguajes de programación: Java, Clojure, Scala, Kotlin, C#, F#, JavaScript, TypeScript, PHP, Haskell"
+        - "Plataformas y marcos frontend: Node.js, React, Vue, Angular"
+        - Bases de datos relacionales y NoSQL
       image-path: /assets/custom/img/strategic-advice/tabber-decorations_tabber-platform-and-technology.svg

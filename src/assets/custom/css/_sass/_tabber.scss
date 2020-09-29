@@ -109,10 +109,13 @@
     opacity: 1;
     visibility: visible;
     height: auto;
+    min-height: 470px;
   }
 
   @include large-and-extra-large {
+    align-items: stretch;
     display: flex;
+    position: relative;
     width: 100%;
   }
 }
@@ -124,12 +127,6 @@
   }
   @include large-and-extra-large {
     width: 50%;
-  }
-  @include large {
-    padding: 30px;
-  }
-  @include extra-large {
-    padding: 60px;
   }
 }
 
@@ -146,20 +143,12 @@
   }
 }
 
-.tabber-panel__main {
-  background-color: white;
-
-  @include small-and-medium {
-    padding-top: 35px;
-  }
-  @include large-and-extra-large {
-    min-height: 540px;
-  }
-}
-
 .tabber-panel__title {
   @include freed-bold;
   color: white;
+  &.tabber-panel__title--small-font {
+    @include mercer-bold;
+  }
 }
 
 @include small-and-medium {
@@ -176,10 +165,14 @@
   margin-bottom: 15px;
 }
 
-.tabber-panel__list {
+.tabber-panel__what-list, .tabber-panel__how-list {
   list-style: none;
+  margin: 0 0 10px;
+}
+
+.tabber-panel__what-list {
+  @include base-bold;
   padding: 0;
-  margin: 0 0 40px;
 }
 
 .tabber-panel__tick-item {
@@ -201,7 +194,58 @@
   }
 }
 
-.tabber-panel__details {
-  @include base;
-  margin: 0;
+.tabber-panel__how-list {
+  @include base-reg;
+  padding-left: 25px;
+}
+
+.tabber-panel__item {
+  padding-bottom: 5px;
+  position: relative;
+
+  &:before {
+    content: "-";
+    margin-left: -25px;
+    margin-right: 18px;
+
+    @include base-bold;
+  }
+}
+
+.tabber-panel__what-wrapper,
+.tabber-panel__how-wrapper {
+  background-color: white;
+}
+
+.tabber-panel__header,
+.tabber-panel__what-wrapper,
+.tabber-panel__how-wrapper {
+  @include large-and-extra-large{
+    flex: 1;
+    padding: 30px;
+  }
+}
+
+.tabber-panel__how-wrapper {
+  @include small-and-medium {
+    padding: 0 15px 20px;
+    margin-top: -10px;
+  }
+}
+
+.tabber-panel__what-wrapper {
+  @include small-and-medium {
+    padding: 35px 15px;
+  }
+  @include large-and-extra-large {
+    &:after {
+      background-color: $grey--light;
+      content: "";
+      height: 90%;
+      left: 65.6%;
+      position: absolute;
+      top: 25px;
+      width: 1px;
+    }
+  }
 }
