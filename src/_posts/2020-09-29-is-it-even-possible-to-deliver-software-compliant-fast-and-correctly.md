@@ -16,7 +16,7 @@ tags:
     - legacy-code
     - TDD
     - hexagonal architecture 
-    - clean architecture 
+    - Clean architecture 
     - unit tests 
     - fast development 
   
