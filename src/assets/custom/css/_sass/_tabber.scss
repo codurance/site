@@ -109,6 +109,7 @@
     opacity: 1;
     visibility: visible;
     height: auto;
+    min-height: 470px;
   }
 
   @include large-and-extra-large {
@@ -190,7 +191,9 @@
 }
 
 .tabber-panel__what-list, .tabber-panel__how-list {
-  margin: 0 0 40px;
+  @include large-and-extra-large {
+    margin: 0 0 40px;
+  }
 }
 
 .tabber-panel__item {
@@ -212,8 +215,10 @@
 .tabber-panel__header,
 .tabber-panel__what-wrapper,
 .tabber-panel__how-wrapper {
-  flex: 1;
-  padding: 30px;
+  @include large-and-extra-large{
+    flex: 1;
+    padding: 30px;
+  }
 }
 
 .tabber-panel__what-wrapper {
