@@ -25,8 +25,8 @@ pinned_locations:
 
 in_page_banner: none
 
-hubspot-cta-id: 924b6d6b-6cc5-4f1c-9ae5-1ff7720191e3
-hubspot-cta-id-es: cb50c28c-4205-428c-8bf5-66b4c95bab81
+hubspot-cta-id: 3c7b20c7-1758-482f-bbe0-3f0b186b1261
+hubspot-cta-id-es: ebe8b71b-439d-478b-9a31-7f808868915d
 
 --- 
 
@@ -46,7 +46,7 @@ Of course, everyone in the company understands the need to return to the old sta
 
 Is there a cure for this disease? Can anything be done to prevent the next project from ending up on a legacy code shelf? Yes, of course.
 
-![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-08-breaking-down-the-monolith/Code_Editor.jpg)
+![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-08-breaking-down-the-monolith/image-is-missing.jpg)
 
 Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so slowly?
 
