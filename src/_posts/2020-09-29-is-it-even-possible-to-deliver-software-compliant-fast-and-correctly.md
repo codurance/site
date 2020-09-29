@@ -10,7 +10,7 @@ description:  Many long-term projects suffer from speed in delivering new functi
 description-es: Muchas veces los proyectos no cuentan con la velocidad necesaria en la entrega de nuevas funcionalidades. En este artículo hablamos de cuales pueden ser las causas y sobre todo proponemos soluciones que pueden ayudar a evitar este tipo de situaciones.   
 
 image:
-    src: /assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/software-compliant.jpg
+    src: /assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/software-compliant-fast-and-correct.jpg
 
 tags:
     - legacy code
@@ -46,7 +46,7 @@ Of course, everyone in the company understands the need to return to the old sta
 
 Is there a cure for this disease? Can anything be done to prevent the next project from ending up on a legacy code shelf? Yes, of course.
 
-![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-08-breaking-down-the-monolith/image-is-missing.jpg)
+![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/image-is-missing.jpg)
 
 Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so slowly?
 
