@@ -694,7 +694,7 @@
 
 - id: sylvester_loreto
   name: Sylvester Abreu Loreto
-  image: /assets/custom/img/team/sylvester_loreto.jpg
+  image: /assets/custom/img/team/sylvester_loreto_3.jpg
   role: Software Craftsman
   fullDescription:
     <p>Sylvester started programming by learning Turbo Pascal in the late 90's. He moved to Borland Delphi 5 in the early 2000s where he programmed (for fun) two games, Snake (as per Nokia) and Space Invaders. Around this time, Sylvester was exposed to LAMP and the .Net suite where he learned Visual Basic, Visual C++ (Direct X), C# and ASP.Net.</p>
