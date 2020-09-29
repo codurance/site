@@ -191,9 +191,7 @@
 }
 
 .tabber-panel__what-list, .tabber-panel__how-list {
-  @include large-and-extra-large {
-    margin: 0 0 40px;
-  }
+  margin: 0 0 10px;
 }
 
 .tabber-panel__item {
@@ -221,7 +219,17 @@
   }
 }
 
+.tabber-panel__how-wrapper {
+  @include small-and-medium {
+    padding: 0 15px 10px;
+    margin-top: -10px;
+  }
+}
+
 .tabber-panel__what-wrapper {
+  @include small-and-medium {
+    padding: 35px 15px;
+  }
   @include large-and-extra-large {
     &::after {
       background-color: $grey--light;
