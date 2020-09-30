@@ -82,11 +82,32 @@ var websiteNavigation = function () {
     return currentOpenSubMenu.menu === subMenu;
   }
 
+  function preventDefault(e) {
+    e.preventDefault();
+  }
+
+  var supportsPassive = false;
+  try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+      get: function () { supportsPassive = true; }
+    }));
+  } catch(e) {}
+
+  var wheelOpt = supportsPassive ? { passive: false } : false;
+
+  function disableScroll() {
+    window.addEventListener('touchmove', preventDefault, wheelOpt);
+  }
+
+  function enableScroll() {
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  }
+
   function openMenu() {
     header.classList.add(OPEN_HEADER_CLASS, HEADER_REVEALED_CLASS);
     menuToggle.setAttribute('aria-expanded', 'true');
     menu.classList.add(OPEN_MENU_CLASS);
-
+    disableScroll();
     if (currentOpenSubMenu) {
       closeSubMenu(currentOpenSubMenu.menu, currentOpenSubMenu.toggle);
     }
@@ -96,6 +117,7 @@ var websiteNavigation = function () {
     header.classList.remove(OPEN_HEADER_CLASS);
     menuToggle.setAttribute('aria-expanded', 'false');
     menu.classList.remove(OPEN_MENU_CLASS);
+    enableScroll();
   }
 
   function openSubMenu(subMenu, subMenuToggle) {
