@@ -1085,6 +1085,18 @@
   email: bogdan.dumitrescu@codurance.com
   office: London
 
+- id: lucy_broomfield
+  name: Lucy Broomfield
+  image: /assets/custom/img/team/lucy_broomfield.jpg
+  role: UX Designer
+  fullDescription:
+    <p>Lucy studied Art & Design before pursuing a degree in Business Law. Following her studies, she discovered a passion for UX design.</p>
+    <p>She loves being able to combine her creativity and analytical skills into creating better products and delightful customer experiences.</p>
+    <p>When she’s not working, Lucy likes going for long walks and scooter rides, tending to her balcony garden and exploring Barcelona's events and venues.</p>
+  email: lucy.broomfield@codurance.com
+  linkedin: lucy-broomfield
+  office: Barcelona
+
 - id: kirsten_osborn
   name: Kirsten Osborn
   image: /assets/custom/img/team/kirsten_osborn.jpg
