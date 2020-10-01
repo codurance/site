@@ -177,8 +177,18 @@ var websiteNavigation = function () {
     };
   }
 
+  function handleResizingFromSmallToLargeScreenWhenASubmenuIsOpen() {
+    window.onresize = function () {
+      if (header.classList.contains(HEADER_HAS_OPEN_SUBMENU_CLASS) && window.innerWidth > 768 ){
+        location.reload();
+        openSubMenu();
+      }
+    };
+  }
+
   setupEventListeners();
   exposeSharedMethods();
+  handleResizingFromSmallToLargeScreenWhenASubmenuIsOpen();
 };
 
 window.addEventListener('DOMContentLoaded', websiteNavigation);
