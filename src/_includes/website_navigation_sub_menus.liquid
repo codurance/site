@@ -8,12 +8,12 @@
   >{% t sections.{{include.key}} %}</button>
   {% for item in include.items %}
     {% capture translation %}{% t sections.{{ item.key }} %}{% endcapture %}
-    {% if site.lang == "en" %}
-      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %}
-      {% capture active_class %}{% if item.path == page.url %}website-navigation-sub-menu__link--active{% endif %}{% endcapture %}
-    {% else %}
+    {% if include.key == "services" and site.lang == "es" %}
       {% capture href %}{{ item.path-es | prepend: site.baseurl }}{% endcapture %}
       {% capture active_class %}{% if item.path-es == page.url %}website-navigation-sub-menu__link--active{% endif %}{% endcapture %}
+    {% else %}
+      {% capture href %}{{ item.path | prepend: site.baseurl }}{% endcapture %}
+      {% capture active_class %}{% if item.path == page.url %}website-navigation-sub-menu__link--active{% endif %}{% endcapture %}
     {% endif %}
     <li class="website-navigation-sub-menu__item">
         <a class="website-navigation-sub-menu__link {{ active_class }}" href="{{ href }}">{{ translation }}</a>
