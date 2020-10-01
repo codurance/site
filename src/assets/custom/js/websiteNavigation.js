@@ -6,6 +6,11 @@ var websiteNavigation = function () {
   var HEADER_HAS_OPEN_SUBMENU_CLASS = 'website-header--has-open-submenu';
   var MENU_SHOWING_SUB_MENU_CLASS =
     'website-navigation__menu--showing-sub-menu';
+  var LEFT_SCROLL_KEY = 37;
+  var UP_SCROLL_KEY = 38;
+  var RIGHT_SCROLL_KEY = 39;
+  var DOWN_SCROLL_KEY = 40;
+  var KEYS = [LEFT_SCROLL_KEY, UP_SCROLL_KEY, RIGHT_SCROLL_KEY, DOWN_SCROLL_KEY];
 
   var header = window.document.querySelector('.website-header');
   var menuToggle = window.document.querySelector(
@@ -82,19 +87,6 @@ var websiteNavigation = function () {
     return currentOpenSubMenu.menu === subMenu;
   }
 
-  function preventDefault(e) {
-    e.preventDefault();
-  }
-
-  var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-  function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-      preventDefault(e);
-      return false;
-    }
-  }
-
   var supportsPassive = false;
   try {
     window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
@@ -102,8 +94,19 @@ var websiteNavigation = function () {
     }));
   } catch(e) {}
 
-  var wheelOpt = supportsPassive ? { passive: false } : false;
   var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+  var wheelOpt = supportsPassive ? { passive: false } : false;
+
+  function preventDefault(e) {
+    e.preventDefault();
+  }
+
+  function preventDefaultForScrollKeys(e) {
+    if (KEYS.includes(e.keyCode)) {
+      preventDefault(e);
+      return false;
+    }
+  }
 
   function disableScroll() {
     window.addEventListener('DOMMouseScroll', preventDefault, false);
