@@ -10,7 +10,7 @@ description: What is an Academy program? How can we encourage students to avoid 
 description-es: ¿Qué es un programa de la Academia? ¿Cómo podemos alentar a los estudiantes a evitar simplemente trabajar hacia una meta y encontrar una motivación intrínseca para hacer bien el trabajo por sí mismos? En este artículo exploramos los pasos necesarios para iniciar una academia.  
 
 image:
-    src: /assets/custom/img/blog/2020-10-02-the-abcs-of-starting-an-academy/abc-of-starting-an-accademy.jpg
+    src: /assets/custom/img/blog/2020-10-02-the-abcs-of-starting-an-academy/abc-of-starting-an-academy.jpg
 
 tags:
     - academy
