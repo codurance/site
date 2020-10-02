@@ -29,7 +29,7 @@ hubspot-cta-id-es: 7c118fa1-9c28-4302-b6e3-9dff6fa461fa
 
 Codurance has developed the concept of an Academy as a means of training software engineers to help them along the road to expertise and mastery. Mashooq Badar, Software Craftsman and Co-Founder of Codurance, emphasises that trainees must learn how to learn, that learning itself is a skill. Motivation is not enough. An open minded attitude is required as are practices tailored to what you want to learn. He expands on ideas developed by Robert Green in his book Mastery emphasising the importance for the learner of feeding their curiosity and forming good learning habits. Learners should be encouraged to avoid simply working to a target but to find intrinsic motivation doing the job well for its own sake.
 
-Here banner cheat sheet download
+{% include starting-an-academy-cheat-sheet.liquid %}
 
 ### What is an Academy program?
 
@@ -141,4 +141,4 @@ Teaching delivery for an Academy will generally be conducted by in-house staff f
 
 Software developers need to be involved and contribute to the business, providing options and solutions and offering the best service when it comes to implementation, technologies and production quality. Creating a culture of learning is the most efficient way of injecting passion into a company. An interesting theme of transformational leadership is that of self-sacrificing charisma. Here, a contrast is made between two forms of leadership, transactional and transformational leadership. In this reading the vision of leaders becomes appealing when it is in alignment with the values and ideas of the followers. According to this argument, small sacrifices by the employer for employee advancement can pay large dividends in employee performance. It is the role of the CTO or organisation leader to calculate the appropriate amount of investment required for employee improvement but apparent lost investment can have counterintuitive results as long as it is accompanied by a real and lasting change in culture.
 
-Here banner cheatsheet download
+{% include starting-an-academy-cheat-sheet.liquid %}

@@ -1,0 +1,9 @@
+{% capture background_image %}/assets/custom/img/blog/2020-10-02-the-abcs-of-starting-an-academy/learnings-cta-bg.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}Identify what aspects are necessary to observe when planning a teaching and learning space with this cheatsheet.{% endcapture %}
+{%- capture hubspot-cta-id -%}
+  {%- if site.lang == 'es' -%}d6e5712c-d389-4d71-aec5-49c3363d2ac5{%- else -%}99556dc8-c1fd-40d4-8aa2-b61f73d02362{%- endif -%}
+{%- endcapture -%}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+  class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}
