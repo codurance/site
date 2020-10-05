@@ -101,7 +101,7 @@ Breaking the application down into smaller ones will result in the need to imple
 The last point is unit testing. I hope there is no need to talk about the tests anymore, and everyone has understood their advantages, and until we come up with something better, we will stay with them for a while. From the perspective of the problems we mentioned, what can good unit test coverage do for us?
 
 Tests describe the behavior of methods, so they constitute a kind of living documentation. Thanks to this, we can understand what our code is responsible for. We know its impact on other parts of the system, its dependencies, relationships, and what behavior is expected from it.
-It gives us confidence in software development that our code is correct and protects us against possible errors during refactoring. Thanks to this, we will not have anything in the code that, when changed, will magically spoil our production.
+It gives us confidence in software development that our code is correct and protects us against possible errors during refactoring. Thanks to this, we will not have anything in the code that, when changed, will magically spoil our [production](https://codurance.com/2020/09/25/how-can-i-streamline-a-path-to-production/).
 
 Tests are code as well, so it must be written and then maintained. It will add extra work for the developers and slow down the pace slightly.
 
