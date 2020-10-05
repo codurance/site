@@ -1,0 +1,9 @@
+{% capture background_image %}/assets/custom/img/blog/2020-10-05-becoming-pci-compliant/compliance-glossery-cta-background.jpg{% endcapture %}
+{% assign background_position = 'top left' %}
+{% capture title %}Download the glossary of terms for this subject that you need to know.{% endcapture %}
+{%- capture hubspot-cta-id -%}
+    {%- if site.lang == 'es' -%}6f80fe81-bdfe-46d0-99c5-e3b2a528480b{%- else -%}d0706e7a-2240-4072-a1a3-427ca2e60d04{%- endif -%}
+{%- endcapture -%}
+{% capture hubspot-cta %}{%- include hubspot_cta.liquid class="hubspot-cta--primary-navy" hubspot-cta-id=hubspot-cta-id -%}{% endcapture %}
+{% include in_page_banner.html background_image=background_image background_position=background_position
+        class="soft-mod-cheat-sheet-cta-banner" description=description title=title hubspot-cta=hubspot-cta split="right-heavy" %}

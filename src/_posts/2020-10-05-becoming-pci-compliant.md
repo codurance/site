@@ -19,7 +19,13 @@ tags:
     - payment card industry 
     - data security standards
 
+pinned_locations:
+    - specialist-expertise
+
 in_page_banner: none
+
+hubspot-cta-id: d0706e7a-2240-4072-a1a3-427ca2e60d04
+hubspot-cta-id-es: 6f80fe81-bdfe-46d0-99c5-e3b2a528480b
 
 --- 
 
@@ -127,3 +133,5 @@ There are multiple ways in which payments are made.
 - Some of the 12 security requirements for PCI DSS mentioned above, may overlap with a few privacy mandates such as GDPR which are already in place by your organisation.
 
 [PCI compliance](https://stripe.com/gb/guides/pci-compliance) is an ongoing process to ensure your business remains PCI compliant. Having said this, an ongoing collaboration will be required between different departments such as security, IT, payments, finance and legal.
+
+{% include pci_compliant_glossary_banner.liquid %}
