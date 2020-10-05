@@ -48,7 +48,7 @@ Is there a cure for this disease? Can anything be done to prevent the next proje
 
 ![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/graph.jpg)
 
-Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so slowly?
+Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so [slowly](https://codurance.com/2020/09/22/why-is-i-your-team-unable-to-deliver-on-time/)?
 
 The problem we are confronted with does not manifest itself in the first year of the project, but at a later stage when we are already deep inside it. Is it possible to deliver software quickly to meet the client's requirements and have high quality at every stage of its life? Even after many years? Yes, it is possible.
 
@@ -101,7 +101,7 @@ Breaking the application down into smaller ones will result in the need to imple
 The last point is unit testing. I hope there is no need to talk about the tests anymore, and everyone has understood their advantages, and until we come up with something better, we will stay with them for a while. From the perspective of the problems we mentioned, what can good unit test coverage do for us?
 
 Tests describe the behavior of methods, so they constitute a kind of living documentation. Thanks to this, we can understand what our code is responsible for. We know its impact on other parts of the system, its dependencies, relationships, and what behavior is expected from it.
-It gives us confidence in software development that our code is correct and protects us against possible errors during refactoring. Thanks to this, we will not have anything in the code that, when changed, will magically spoil our production.
+It gives us confidence in software development that our code is correct and protects us against possible errors during refactoring. Thanks to this, we will not have anything in the code that, when changed, will magically spoil our [production](https://codurance.com/2020/09/25/how-can-i-streamline-a-path-to-production/).
 
 Tests are code as well, so it must be written and then maintained. It will add extra work for the developers and slow down the pace slightly.
 

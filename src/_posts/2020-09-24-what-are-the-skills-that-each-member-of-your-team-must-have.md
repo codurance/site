@@ -58,7 +58,7 @@ POs have to be able to work in an unstable environment where things are constant
 
 A Software developer has extensive knowledge of programming languages, software development practices and principles, software design, different technologies, version control systems, data structures and algorithms, and he/she applies engineering principles to software creation. By applying these engineering principles to every stage of the development process, from requirements analysis to the software process, they can create customized systems that match the view of the client.
 
-The knowledge a software developer needs doesn't stop there though. Nowadays a lot of teams are cross-functional and companies are pushing more to a full-stack development instead of having developers focusing on just one area. 
+The knowledge a software developer needs doesn't stop there though. Nowadays a lot of teams are [cross-functional](https://codurance.com/2020/09/15/what-is-a-cross-functional-team/) and companies are pushing more to a full-stack development instead of having developers focusing on just one area. 
 
 First of all, developers should know how to test their code. Before sending code for review, they should make sure it does everything they`ve coded it to do. Testing ensures errors are flagged early and faulty output is avoided wherever possible. Testing comes in many forms and developers need to understand them all to effectively test their output and ensure they’re meeting the necessary standards.
 
@@ -68,7 +68,7 @@ They should also have a certain amount of knowledge in DevOps.
 
 The benefits of DevOps are really important. It enables you to shorten the software development cycle, increase the frequency of delivery, scale better, and deliver more reliable software through CI/CD, monitoring and logging. 
 
-Last but not least, they should know Cloud platforms. Back in the old days, companies had to build and maintain their servers to store their databases to make their websites run. This was very expensive and time-consuming. In 2020 companies of all sizes and domains are now shifting their environments into Cloud. Cloud services help in decreasing the overall operating cost, and it can help you in running your operations more effectively and efficiently, which means developers should know at least one cloud platform to help the business succeed in their goal.
+Last but not least, they should know Cloud platforms. Back in the old days, companies had to build and maintain their servers to store their databases to make their websites run. This was very expensive and time-consuming. In 2020 companies of all sizes and domains are now [shifting their environments into Cloud](https://codurance.com/2020/09/21/when-lift-and-shift-is-the-answer/). Cloud services help in decreasing the overall operating cost, and it can help you in running your operations more effectively and efficiently, which means developers should know at least one cloud platform to help the business succeed in their goal.
 
 
 ###The Quality Assurance Engineer
