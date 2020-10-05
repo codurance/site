@@ -127,17 +127,3 @@ There are multiple ways in which payments are made.
 - Some of the 12 security requirements for PCI DSS mentioned above, may overlap with a few privacy mandates such as GDPR which are already in place by your organisation.
 
 [PCI compliance](https://stripe.com/gb/guides/pci-compliance) is an ongoing process to ensure your business remains PCI compliant. Having said this, an ongoing collaboration will be required between different departments such as security, IT, payments, finance and legal.
-
-
-Glossary of Compliant terms and meanings:
-
-- **Qualified Security Assessors (QSAs)** companies are independent security organizations that have been qualified by the PCI Security Standards Council to validate an entity&#39;s adherence to PCI DSS. QSA Employees are individuals who are employed by a QSA Company and have satisfied and continue to satisfy all QSA Requirements.
-- **Approved Scanning Vendors (ASVs)** is an organization with a set of security services and tools (&quot;ASV scan solution&quot;) to conduct external vulnerability scanning services to validate adherence with the external scanning requirements of PCI DSS Requirements. The scanning vendor&#39;s ASV scan solution is tested and approved by PCI SSC before an ASV is added to PCI SSC&#39;s List of Approved Scanning Vendors.
-- **Attestation of Compliance (AOC)** or certification that you are eligible to perform and have performed the appropriate Self-Assessment. An appropriate Attestation will be packaged with the Questionnaire that you select.
-- **Cardholder** non-consumer or consumer customer to whom a payment card is issued to or any individual authorized to use the payment card.
-- **Merchants** are any entity that accepts payment cards bearing the logos of any of the five members of PCI SSC (American Express, Discover, JCB, MasterCard or Visa) as payment for goods and/or services.
-- **Service providers** are businesses entities that are not a payment brand, directly involved in the processing, storage, or transmission of cardholder data on behalf of another entity. This also includes companies that provide services that control or could impact the security of cardholder data.
-- **Payment card provider** any payment card/device that bears the logo of the founding members of PCI SSC, which are American Express, Discover Financial Services, JCB International, MasterCard, or Visa, Inc.
-- **Organisations** are the businesses providing goods and services.
-- **General Data Protection Regulation (GDPR)** is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR&#39;s primary aim is to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU.
-- **Stripe** is an American financial services and software as a service (SaaS) company headquartered in San Francisco, California, United States. The company primarily offers payment processing software and application programming interfaces (APIs) for e-commerce websites and mobile applications.
