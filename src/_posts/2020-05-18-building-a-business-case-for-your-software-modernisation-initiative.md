@@ -269,7 +269,7 @@ Like any other story, the three acts structure lends itself as a great way to or
 
 The first question you should ask yourself about the initiative is: does it support the current organisational objectives?
 
-If the answer is no, or you don't know what the objectives are, start there. It is imperative that you show how your initiative connects to current and relevant organisational goals and strategy. If it doesn't, then drop it or refine it so that it does.
+If the answer is no, or you don't know what the objectives are, start there. It is imperative that you show how your initiative connects to current and relevant organisational goals and [strategy](https://codurance.com/2020/05/05/what-is-software-modernisation/). If it doesn't, then drop it or refine it so that it does.
 
 Let's say you are trying to obtain funding for a cloud migration project as part of your modernisation strategy. For you, it makes sense, but does it make sense for the business?
 
