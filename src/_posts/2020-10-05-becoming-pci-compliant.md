@@ -65,7 +65,7 @@ Merchants and service providers compliance requirements differ depending on a nu
 
 PCI DSS compliance requirements vary depending on the number of transactions a business accepts. The following merchant levels apply (criteria is from Stripe).
 
-
+![PCI Compliant Table]({{site.baseurl}}/assets/custom/img/blog/2020-10-05-becoming-pci-compliant/pci_compliant_table.png)
 
 Resources:
 
