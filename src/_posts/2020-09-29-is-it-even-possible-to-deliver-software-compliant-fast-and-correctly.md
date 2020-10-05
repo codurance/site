@@ -48,7 +48,7 @@ Is there a cure for this disease? Can anything be done to prevent the next proje
 
 ![Velocity - time]({{site.baseurl}}/assets/custom/img/blog/2020-09-29-is-it-even-possible-to-deliver-software-compliant-fast-and-correctly/graph.jpg)
 
-Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so slowly?
+Let's look at the diagram above. It shows the relation between the project duration and the speed of delivering new functionalities. From what we can see, everything goes very quickly in the first phase of the project life. With time, as the system expands and its complexity level increases, the pace of work slows down to its critical level. This process can be observed very well in projects that last several years. I worked on such projects, and I remember the questions that always arose in the management group. Why is development going so [slowly](https://codurance.com/2020/09/22/why-is-i-your-team-unable-to-deliver-on-time/)?
 
 The problem we are confronted with does not manifest itself in the first year of the project, but at a later stage when we are already deep inside it. Is it possible to deliver software quickly to meet the client's requirements and have high quality at every stage of its life? Even after many years? Yes, it is possible.
 
