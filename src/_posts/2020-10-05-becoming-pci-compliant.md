@@ -23,7 +23,7 @@ in_page_banner: none
 
 --- 
 
-## What is PCI DSS?
+### What is PCI DSS?
 
 PCI-DSS stands for Payment Card Industry Data Security Standards.
 
@@ -51,7 +51,7 @@ Resources:
 - [https://www.pcisecuritystandards.org/assessors\_and\_solutions/qualified\_security\_assessors](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors)
 - [https://www.pcisecuritystandards.org/assessors\_and\_solutions/approved\_scanning\_vendors](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors)
 
-## Why would a business need it?
+### Why would a business need it?
 
 If your business accepts, processes, stores or transmits payment card data, PCI DSS applies to your business therefore your business needs to comply with the standard.
 
@@ -59,57 +59,52 @@ Merchants and service providers compliance requirements differ depending on a nu
 
 PCI DSS compliance requirements vary depending on the number of transactions a business accepts. The following merchant levels apply (criteria is from Stripe).
 
-| Level | Applies to | Requirements |
-| --- | --- | --- |
-| Level 1 | - Organisations that annually process more than 6 million transactions of Visa or MasterCard, or more than 2.5 million for American Express; or - Have experienced a data breach; or - Are deemed "Level 1" by any card association (Visa, Mastercard, etc) | - Annual Report on Compliance (ROC) by a Qualified Security Assessor (QSA) - also commonly known as a Level 1 onsite assessment - or internal auditor if signed by an officer of the company - Quarterly network scan by Approved Scan Vendor (ASV) - Attestation of Compliance (AOC) for Onsite Assessments–there are specific forms for merchants and service providers|
-| Level 2 | - Organisations that process between 1-6 million transactions annually|- Annual PCI DSS Self-Assessment Questionnaire (SAQ)- Quarterly network scan by Approved Scan Vendor (ASV)- Attestation of Compliance (AOC)|
-| Level 3 | - Organisations that process between 20,000-1 million online transactions annually - Organizations that process less than 1 million total transactions annually|
-| Level 4 | - Organisations that process fewer than 20,000 online transactions annually; or - Organizations that process up to 1 million total transactions annually|
+
 
 Resources:
 
 - [https://stripe.com/gb/guides/pci-compliance](https://stripe.com/gb/guides/pci-compliance)
 - [https://www.pcisecuritystandards.org/documents/PCI-DSS-v3\_2\_1-ROC-Reporting-Template.pdf](https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-ROC-Reporting-Template.pdf)
 
-## What does it mean?
+### What does it mean?
 
 The PCI DSS is a standard and not a law. It is enforced through contracts between merchants, acquiring banks and payment brands. Each payment brand can fine acquiring banks for PCI DSS compliance violations and, acquiring banks can withdraw the ability to accept card payments from non-compliant merchants.
 
-It&#39;s also important to remember that a PCI DSS breach is always a GDPR breach as cardholder data is classified as personal data under regulation. Enforcement action from your acquiring bank, your organisation could face fines of up to £18 million or 4% of annual global turnover under the GDPR whichever is greater.
+It's also important to remember that a PCI DSS breach is always a GDPR breach as cardholder data is classified as personal data under regulation. Enforcement action from your acquiring bank, your organisation could face fines of up to £18 million or 4% of annual global turnover under the GDPR whichever is greater.
 
-## Does my whole system need to be PCI compliant?
+### Does my whole system need to be PCI compliant?
 
 Not necessarily. Only the system components which store, process, or transmit cardholder data and/or sensitive authentication data.
 
 The PCI DSS specifies 12 requirements that are organised into 6 control objectives.
 
-BUILD AND MAINTAIN A SECURE NETWORK AND SYSTEMS
+## Build and maintain a secure network and systems
 
 - Install and maintain a firewall configuration to protect cardholder data
 - Do not use vendor-supplied defaults for system passwords and other security parameters
 
-PROTECT CARDHOLDER DATA
+## Protect cardholder data
 
 - Protect stored cardholder data
 - Encrypt transmission of cardholder data across open or public networks
 
-MAINTAIN A VULNERABILITY MANAGEMENT PROGRAM
+## Maintain a vulnerability management program
 
 - Protect all systems against malware and regularly update anti-virus software
 - Develop and maintain secure systems and applications
 
-IMPLEMENT STRONG ACCESS CONTROL MEASURES
+## Implement strong access control measures
 
 - Restrict access to cardholder data by business need to know
 - Identify and authenticate access to system components
 - Restrict physical access to cardholder data
 
-REGULARLY MONITOR AND TEST NETWORKS
+## Regularly monitor and test networks
 
 - Track and monitor all access to network resources and cardholder data
 - Regularly test security systems and processes
 
-MAINTAIN AN INFORMATION SECURITY POLICY
+## Maintain an information security policy
 
 - Maintain a policy that addresses information security for all personnel
 
@@ -117,7 +112,7 @@ Resource:
 
 - [https://stripe.com/gb/guides/pci-compliance](https://stripe.com/gb/guides/pci-compliance)
 
-## How do I know where to start?
+### How do I know where to start?
 
 To ensure personal data is protected, you need to have visibility to where it lives and how it gets there. A comprehensive map of the systems handling such sensitive data is a good starting point. This will very likely require collaboration with security, IT, payments, finance and legal teams. Some organisations may choose to create a dedicated PCI DSS team with a representative of each required team.
 
@@ -131,9 +126,8 @@ There are multiple ways in which payments are made.
 - IT teams need to ensure that the right configurations and protocols such as Transport Layer Security (TLS) are in place.
 - Some of the 12 security requirements for PCI DSS mentioned above, may overlap with a few privacy mandates such as GDPR which are already in place by your organisation.
 
-PCI compliance is an ongoing process to ensure your business remains PCI compliant. Having said this, an ongoing collaboration will be required between different departments such as security, IT, payments, finance and legal.
+[PCI compliance](https://stripe.com/gb/guides/pci-compliance) is an ongoing process to ensure your business remains PCI compliant. Having said this, an ongoing collaboration will be required between different departments such as security, IT, payments, finance and legal.
 
-[https://stripe.com/gb/guides/pci-compliance](https://stripe.com/gb/guides/pci-compliance)
 
 Glossary of Compliant terms and meanings:
 
