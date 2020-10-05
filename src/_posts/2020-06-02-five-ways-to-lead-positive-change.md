@@ -33,7 +33,7 @@ In this article I’m going to outline some different ways of leading a Software
 
 The people that regularly work with the technology of your organisation, such as software developers, infrastructure teams (if you have them), QA groups, DBAs, Infosec or Appsec groups are likely to be the people that understand best the problems that exist within your organisation. It seems logical, even obvious perhaps, to trust such groups to understand the problem, secure budget and execute on a software modernisation program.  
 
-With technology led change there will typically be a backlog of technology focussed deliverables such as “migrate our database to the cloud”, “upgrade our core e-Commerce platform to the latest version” or “rewrite our monolithic application into Microservices”. The group responsible for delivering the modernisation will create the backlogs for the deliverables and find a way to deliver on the improvements without impacting on the critical business deliverables that must continue in parallel.  
+With technology led change there will typically be a backlog of technology focussed deliverables such as “migrate our database to the cloud”, “upgrade our core e-Commerce platform to the latest version” or “rewrite our [monolithic application](https://codurance.com/2020/09/08/breaking-down-the-monolith/) into Microservices”. The group responsible for delivering the modernisation will create the backlogs for the deliverables and find a way to deliver on the improvements without impacting on the critical business deliverables that must continue in parallel.  
 
 #### Advantages  
 
@@ -128,7 +128,7 @@ In some organisations, particularly larger organisations, it may make sense to u
 
 ### Conclusion  
 
-Ultimately, every organisation is different. There are different reasons why software might need to be modernised, different budgetary structures within the organisation and different external pressures that need to be balanced against each other. It is also very likely that an ambitious Software Modernisation program will cross existing organisational boundaries and may ultimately result in a painful realignment of those boundaries which could be perceived by many as a threat.  
+Ultimately, every organisation is different. There are different reasons why software [might need to be modernised](https://codurance.com/2020/05/12/5-signs-that-its-time-to-launch-a-modernisation-strategy/), different budgetary structures within the organisation and different external pressures that need to be balanced against each other. It is also very likely that an ambitious Software Modernisation program will cross existing organisational boundaries and may ultimately result in a painful realignment of those boundaries which could be perceived by many as a threat.  
 
 Consider carefully how you can deliver on the goals of the business while keeping your stakeholders, and especially your budget holder, happy throughout. Showing value early and often will be key to building momentum and support within the wider organisation, ensuring your budget will not be questioned and giving you the best chance of long term success.  
 
