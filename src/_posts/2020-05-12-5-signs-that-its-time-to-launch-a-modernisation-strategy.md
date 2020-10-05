@@ -23,7 +23,7 @@ hubspot-cta-id: 854c5310-7243-48b3-a49e-1e4d14a067c0
 hubspot-cta-id-es: 82ec7a67-c07b-43ec-827d-eda64b4e08f1
 ---
 
-All too often business change becomes impossible. The systems that are supposed to make your life easier don’t. In fact, you feel as if you’re putting out fires most of the time instead of focusing on the task at hand. If the following pain points are all too familiar, it’s time your organisation implements a modernisation strategy.
+All too often business change becomes impossible. The systems that are supposed to make your life easier don’t. In fact, you feel as if you’re putting out fires most of the time instead of focusing on the task at hand. If the following pain points are all too familiar, it’s time your organisation implements a modernisation [strategy](https://codurance.com/2020/05/05/what-is-software-modernisation/).
 ​
 
 ​
@@ -53,13 +53,13 @@ A sneaky problem that crops up more than you’d think is having misaligned tech
 ​
 **5. Wasted budget and opportunities**
 
-​The financial ramifications of holding onto legacy tech can really add up. Far too often businesses hold onto outdated systems that aren’t supporting business needs. The cost of doing so presents itself not only in the cost of the systems, but in maintenance, training new employees who lack tribal knowledge, outages, downtime, and the list goes on. One of the biggest wastes that many organisations don’t think about is the opportunities that aren’t realised because of legacy or inadequate systems. The amount of money that is wasted on things like outages and downtimes is often far smaller than that of those not realised opportunities.
+​The financial ramifications of holding onto legacy tech can really add up. Far too often businesses hold onto outdated systems that aren’t supporting business needs. The [cost of doing so](https://codurance.com/2020/05/26/hidden-cost-of-not-modernising/) presents itself not only in the cost of the systems, but in maintenance, training new employees who lack tribal knowledge, outages, downtime, and the list goes on. One of the biggest wastes that many organisations don’t think about is the opportunities that aren’t realised because of legacy or inadequate systems. The amount of money that is wasted on things like outages and downtimes is often far smaller than that of those not realised opportunities.
 ​
 Above are just a few of the scenarios you may find yourself in that should spark concern. If these or similar problems ring true in your organisation then it’s time to consider a [software modernisation](https://codurance.com/services/software-modernisation/) strategy.
 
 ​
-**Before you take any steps toward modernisation you should consider the following:**
+**Before you take any [steps toward modernisation](https://codurance.com/2020/05/18/building-a-business-case-for-your-software-modernisation-initiative/) you should consider the following:**
 
-- There are many options at your disposal to modernise your systems
+- There are [many options](https://codurance.com/2020/06/02/five-ways-to-lead-positive-change/) at your disposal to modernise your systems
 - Choose a technology partner who understands where your business currently is and the goals you’re trying to achieve
 - A modernisation project shouldn’t halt your day to day operations

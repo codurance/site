@@ -27,7 +27,7 @@ hubspot-cta-id-es: ab749061-486e-44d4-a5e8-7c885e095064
 If you are reading this article, you are probably thinking of modernising some critical systems in your organisation.
 
 
-Stating a clear business case is essential to get your project off the ground. It will allow you to convey your idea and start the conversation around what needs to happen and how the business will benefit from it.
+Stating a clear business case is essential to get your project off the ground. It will allow you to convey your idea and start the conversation around what needs to happen and [how the business will benefit from it](https://codurance.com/2020/05/26/hidden-cost-of-not-modernising/).
 
 In this article, we answer some of the most common questions that come up when helping our clients build their business cases for [software modernisation](https://codurance.com/services/software-modernisation/) initiatives. We share ideas we use when approaching these scenarios and some of our recommendations. We give examples of how you can approach your research and other aspects of your business case. We will also be using a simple modernisation case that entails migrating from on-premise infrastructure to a cloud-native solution to illustrate some of the points.
 
@@ -95,7 +95,7 @@ Aristoteles, the great Greek philosopher, being a master of rhetoric himself cam
 
 ### Ethos
 
-Credibility is another crucial aspect of how you communicate. Why are you the person to be putting this case forward? What evidence do you have to support your case?
+Credibility is another crucial aspect of how you communicate. Why are you the person to be putting this case forward? What [evidence](https://codurance.com/2020/05/12/5-signs-that-its-time-to-launch-a-modernisation-strategy/) do you have to support your case?
 
 There are a few ways to build credibility in your business case. One of which is to get empirical evidence.
 
@@ -269,7 +269,7 @@ Like any other story, the three acts structure lends itself as a great way to or
 
 The first question you should ask yourself about the initiative is: does it support the current organisational objectives?
 
-If the answer is no, or you don't know what the objectives are, start there. It is imperative that you show how your initiative connects to current and relevant organisational goals and strategy. If it doesn't, then drop it or refine it so that it does.
+If the answer is no, or you don't know what the objectives are, start there. It is imperative that you show how your initiative connects to current and relevant organisational goals and [strategy](https://codurance.com/2020/05/05/what-is-software-modernisation/). If it doesn't, then drop it or refine it so that it does.
 
 Let's say you are trying to obtain funding for a cloud migration project as part of your modernisation strategy. For you, it makes sense, but does it make sense for the business?
 
