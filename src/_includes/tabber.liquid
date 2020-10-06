@@ -7,7 +7,7 @@
   </nav>
   {% for tab in include.tabber_data %}
     {% capture active_class %} {% if forloop.first == true %}active{% endif %} {% endcapture %}
-    {% capture title_font_modifier %} {% if tab.id == "gestion-de-riesgos" %} tabber-panel__title--small-font {% endif %} {% endcapture %}
+    {% capture title_font_modifier %} {% if tab.id == "gestion-de-riesgos" or tab.id =="risk-management" %} tabber-panel__title--small-font {% endif %} {% endcapture %}
     <article id="{{ tab.id }}" class="tabber__panel tabber-panel {{ active_class }}" data-tabber_panel data-title="{{ tab.title }}">
       <div class="tabber-panel__inner" data-tabber_panel-inner>
         <div class="tabber-panel__header" style="background-image:  url({{ site.baseurl }}{{ tab.image-path }}), url({{ site.baseurl }}{{ page.tabber-background-image }})" >
