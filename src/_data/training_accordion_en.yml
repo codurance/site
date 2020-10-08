@@ -87,49 +87,65 @@ crafting-code:
   why-attend:
     intro: Software Craftsmanship is at the heart of this course. Throughout this training series, your team will learn about the Software Craftsmanship mindset and how to apply it within your organisation.
     clean-code-headline-one: Writing Clean Code is difficult. Cleaning existing code, even more so.
-    why-attend: "Your team should attend if you need them to:"
+    why-attend: "Your team should attend if they need to:"
     why-attend-list:
-      - Align technology to business requirements
       - Write clean code that is easy to understand, maintain, and adapt
       - "Become more proficient in Test-Driven Development (TDD): using tests to design and build"
-    clean-code-headline-two: Clean code necessitates good design.
+      - "Through practical exercises, learn the difference between the two most important TDD styles: Chicago school (classicist) and London School (outside-in)."
+      - Learn how to define test boundaries and responsibilities.
+      - How do we define a unit?
+      - What is the difference between the test boundary and test responsibility?
+      - What should we mock? What should not be mocked?
+      - Learn how to write tests that express business behaviour, not technical implementation.
+      - Learn how to test and refactor legacy code
+      - How to deal with hard-wired dependencies
+      - How to localise tests while avoiding a major refactor of the code
+      - Refactor the code to express business rules
+    clean-code-headline-two: Clean code demands good design.
     learning-objectives-title: "Your team will learn how to:"
     learning-objectives-list:
+      - Design code that expresses business requirements.
       - Understand design principles that lead to clean code
-      - Avoid over-engineering and large rewrites by incrementally evolving design using tests
-    learning-outcome: Once your team has mastered their understanding of these principles, they will apply them to legacy code. This will allow them to gain confidence working with legacy code.
+      - Pay attention to every minor detail at code level, like names, responsibilities of classes and methods, types,
+      - Look closely at the key principles of design like coupling and cohesion and how they are applied at code level.
+      - Avoid over-engineering and large rewrites by incrementally evolving the software design through testing
+    learning-outcome: Software Craftsmanship is a mindset that focuses on professionalism and quality. Clean Code and Test-Driven Development are part of that mindset and are at the heart of this course. More than learning the techniques, the course also touches on the attitude expected from professional software developers.
 
   audience:
     intro: "This course is designed for software development teams that are:"
     list:
-      - Familiar with a minimum of one Object-Oriented language, such as Java, C#, or C++
+      - Fluent with at least one Object-Oriented language, such as Java, C#, or C++
       - Able to understand Java or C#
       - Able to write and execute unit tests using a framework, such as JUnit, NUnit, etc.
       - Have a basic understanding of mock objects
+    note: "Note: this is not a course for people who are learning how to code. Developers with a few years in the industry will benefit more from this course then people with limited industry experience. Also, this is not a basic TDD training. This course is fully hands-on and fast-paced. Although the course can be attended and followed by developers without TDD experience, people with TDD experience will benefit more from it."
 
   course-content:
     principles-intro: "Principles of:"
     list:
-      - Test-Driven Design (TDD)
+      - Test-Driven Development (TDD)
       - Object-Oriented Design (OOO)
       - Domain-Driven Design (DDD)
     content-intro: "Content:"
     second-list:
-      - TDD lifecycle
-      - Outside-In style of TDD
-      - Writing unit tests that express intent, not implementation
+      - Advanced introduction to TDD lifecycle
+      - Chicago School (classicist) TDD
+      - London School (Outside-In) TDD
+      - Expressing business behaviour via tests, not implementation
+      - Principles of Clean Code and good design
       - Using unit tests as a tool to drive good design
-      - Expressive code
+      - Mocking as a design tool
+      - Expressive code that describes business rules
       - Testing and refactoring legacy code
 
   prerequisites:
-    intro: The is a hands on training course. Software development teams will be required to write a lot of code.
+    intro: This is a fast-paced and hands-on training course. Software development teams will be required to write a lot of code.
     required: "Required:"
     list:
-      - Bring their own laptop
-      - Be able to create projects, build source code, and run test cases in their development environment
-      - "Have a development environment that consists of the following:"
-      - A distributed version-control system such as Github is preferable
+      - Bringing their own laptop
+      - Being able to create projects from scratch, adding test and mocking libraries, building source code, and runing test cases in their development environment
+      - "Having a development environment that consists of the following:"
+      - A distributed version control system such as git (optional)
     second-list:
       - Object-Oriented language
       - A unit test framework
