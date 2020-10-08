@@ -29,7 +29,7 @@ crafting-code:
   duration: "DURACIÓN: 2 Días"
   course-instructor-title: INSTRUCTOR DEL CURSO
   course-instructor-bio-title: INSTRUCTOR
-  description: Este curso está diseñado para mejorar las habilidades de un equipo a la hora de escribir código limpio y fácil de mantener. Esto permitirá que puedan realizarse cambios más rápidamente y de manera más sostenible.
+  description: Este curso de 2 días está diseñado para mejorar las habilidades de tu equipo en torno a la creación de código bien elaborado, comprobable y mantenible. Con un fuerte enfoque en la software craftsmanship, este curso práctico enseñará a los desarrolladores de software técnicas prácticas que pueden aplicar de inmediato a proyectos del mundo real, tanto nuevos desarrollos como bases de código legacy. Las técnicas cubiertas en este curso proporcionan la base necesaria para lanzamientos más frecuentes y seguros.
   page: /servicios/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training/crafting-code/training-backgrounds_bg-crafting-code.svg

@@ -29,7 +29,7 @@ crafting-code:
   duration: "DURATION: 2 DAYS"
   course-instructor-title: COURSE INSTRUCTOR
   course-instructor-bio-title: COURSE INSTRUCTOR
-  description: This course is designed to improve your team's skills around creating clean, maintainable code. This hands-on course will teach software development teams practical techniques they can immediately apply to real-world projects. This will enable change to be released faster and more sustainably.
+  description: This 2-day course is designed to improve your team's skills around creating well-crafted, testable and maintainable code. With a strong focus on software craftsmanship, this hands-on course will teach software developers practical techniques they can immediately apply to real-world projects — both new development and legacy codebases. The techniques covered in this course provide the foundation needed for more frequent and safer releases.
   page: /services/training/crafting-code
   featured: true
   background-image-path: /assets/custom/img/training/crafting-code/training-backgrounds_bg-crafting-code.svg
