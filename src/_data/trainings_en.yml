@@ -54,7 +54,7 @@ functional-programming:
   name: "Introduction to <br> Functional Programming"
   course-length: 2 days
   duration: "DURATION: 2 Days"
-  description: This course teaches your software delivery teams the basics of functional programming.
+  description: This course teaches your teams the basics of functional programming. We will explore the fundamentals of the functional paradigm in a series of hands-on exercises, which will provide a starting point for your journey into functional programming.
   page: /services/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 

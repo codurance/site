@@ -54,7 +54,7 @@ functional-programming:
   name: Introducción a<br>Functional Programming
   course-length: 2 Días
   duration: "DURACIÓN: 2 Días"
-  description: Este es un curso pensado para los equipos que necesitan una introducción a los conceptos básicos de la programación funcional.
+  description: Con este curso tu equipo adqiuirirá los conceptos básicos de la programación funcional. Exploraremos los fundamentos del paradigma funcional en una serie de ejercicios prácticos, que proporcionarán un punto de partida para iniciarse en la programación funcional.
   page: /servicios/training/introduction-to-functional-programming
   background-image-path: /assets/custom/img/training/introduction-to-functional-programming/training-backgrounds_bg-functional-programming.svg
 
