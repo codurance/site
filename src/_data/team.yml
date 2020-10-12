@@ -1133,3 +1133,16 @@
   linkedin: lesmeslopez
   twitter: lesmeslp
   office: Barcelona
+
+- id: lesmes_lopez
+  name: Lesmes Lopez
+  image: /assets/custom/img/team/test_magda.jpg
+  role: Agile Delivery Manager
+  fullDescription:
+    <p>Lesmes background is mostly related with product management, product ownering, agile coaching and to mentor and develop those disciplines.</p>
+    <p>He's been working several years in domains and hosting sector and consultancy with cross-functional teams.</p>
+    <p>He's always looking to learn something new, improving and sharing insights. In his free time he likes to do DIY, psychology, cooking and hiking.</p>
+  email: lesmes.lopez@codurance.com
+  linkedin: lesmeslopez
+  twitter: lesmeslp
+  office: Barcelona
