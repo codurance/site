@@ -10,7 +10,7 @@ description: Understanding motivation is crucial for Employee Retention in any o
 description-es: Comprender la motivación es fundamental para la retención de empleados en cualquier organización. En este artículo discutimos los patrones en la motivación de los equipos de tecnología y cómo Software Modernisation es una palanca clave para controlar la rotación y continuar haciendo crecer el negocio de manera eficiente.
 
 image:
-    src: /assets/custom/img/blog/2020-10-05-microsoft-parter-pledge/microsoft-partner-pledge.jpg
+    src: /assets/custom/img/blog/2020-10-09-software-modernisation-and-employee-retention/software-modernisation-employee-retention-blog-hero.jpg
 
 tags:
     - software modernisation
@@ -37,7 +37,7 @@ So what is an effective team?
 
 Well, a team is a group of individuals who work together towards a common goal. We could write a whole article about how to define an effective team, but for the sake of minimising digressions allow me to simply highlight the results of a recent exercise we did with our current craftspeople-in-training. We came up with the following elements to define what an effective team is to us: of course, alignment towards a shared goal came up; plus mutual accountability and commitment. On the soft skills side we added respect (and trust), communication, feedback and flexibility to the equation and an external element we also wanted to see was autonomy.
 
-![](https://lh3.googleusercontent.com/sk6VwbolYD62zqE0I6n4DMGFQtcWMNDfZkHuiUHhQlZIC_xeacXZgiGzoqTP3ogywiRygB5PVGl11CYdloKKTfltW6lvf01m0WabBv_M3g7P5agzFxpbwUdSEG75tCAScySQnK0y)
+![]({{site.baseurl}}/assets/custom/img/blog/2020-10-09-software-modernisation-and-employee-retention/post-it-note-wall.jpg)
 
 Now that's all very nice but how does it all link back to employee retention?\
 Some common causes for job dissatisfaction and demotivation are linked both to the people: "bad" management or a "bad" team and to the work itself: a work/life unbalance (overwork) or boredom/lack of meaningful work for example.
