@@ -759,12 +759,12 @@ service-line-case-studies:
 
   card-four:
     heading: BestSecret
-    subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
+    subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural
     hubspot-cta-id: 202bea38-a2ab-42ef-82df-c14f14d2c92d
 
   cazoo-card:
     heading: Cazoo
-    subheading: Specialist expertise and software delivery at speed.
+    subheading: End-to-end online business aplicando AWS Serverless con entorno y arquitectura flexible para hiperescalabilidad y crecimiento
     hubspot-cta-id: f968ff77-5043-40c4-94c7-806a539d0aef
 
 service-line-testimonials:
