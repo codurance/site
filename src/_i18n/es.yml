@@ -762,6 +762,11 @@ service-line-case-studies:
     subheading: Migración a cloud, evolución de la arquitectura y aproximación cultural.
     hubspot-cta-id: 202bea38-a2ab-42ef-82df-c14f14d2c92d
 
+  cazoo-card:
+    heading: Cazoo
+    subheading: Specialist expertise and software delivery at speed.
+    hubspot-cta-id: f968ff77-5043-40c4-94c7-806a539d0aef
+
 service-line-testimonials:
   section-title: La opinión de nuestros clientes
   section-description: ¿Qué dicen nuestros clientes de nuestro trabajo?

@@ -756,6 +756,11 @@ service-line-case-studies:
     subheading: Cloud migration, architecture evolution, and cultural alignment
     hubspot-cta-id: 1bfe3487-b1e1-41b7-b9d9-57fdedc9cf3d
 
+  cazoo-card:
+    heading: Cazoo
+    subheading: Specialist expertise and software delivery at speed.
+    hubspot-cta-id: d07ec8f6-8be5-47f0-bbf1-0446ce91794a
+
 service-line-testimonials:
   section-title: Hear it from our clients
   section-description: Don’t take it from us. Here’s what our clients had to say about Codurance.
