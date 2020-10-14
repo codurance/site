@@ -9,7 +9,7 @@ layout: default
 
 {%- include service_line_hero.liquid translations=translations cta_href=cta_href cta_text=cta_text -%}
 {% include service_line_details_section.liquid %}
-{%- include service_line_case_studies.liquid -%}
+{%- include service_line_case_studies.liquid service_line=page.service-line -%}
 {%- include service_line_testimonials.liquid -%}
 {% include compass_teaser.html class="service-line__sheen-container service-line__compass-teaser" %}
 {%- include service_line_media_section.liquid -%}
