@@ -297,3 +297,11 @@ santander:
   website: www.santanderbank.com
   services:
     - expert_advice
+
+mypulse:
+  name: MyPulse
+  image: /assets/custom/img/home/clients/mypulse.png
+  alt-text: MyPulse Logo
+  website: www.mypulse.ai
+  services:
+    - software_creation
