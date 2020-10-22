@@ -289,3 +289,19 @@ siemens:
 lastminute:
   image: /assets/custom/img/clients/training/lastminute-logo.png
   alt-text: Lastminute logo
+
+santander:
+  name: Santander
+  image: /assets/custom/img/home/clients/santander.jpg
+  alt-text: Santander Logo
+  website: www.santanderbank.com
+  services:
+    - expert_advice
+
+mypulse:
+  name: MyPulse
+  image: /assets/custom/img/home/clients/mypulse.png
+  alt-text: MyPulse Logo
+  website: www.mypulse.ai
+  services:
+    - software_creation
