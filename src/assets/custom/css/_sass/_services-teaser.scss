@@ -1,0 +1,16 @@
+.services-teaser {
+  background: url('#{$site-base-url}/assets/custom/img/services/service-teaser-bg.jpg');
+  background-color: $navy;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.services-teaser__description {
+  @include mercer-reg;
+  color: white;
+  margin-bottom: 25px;
+}
