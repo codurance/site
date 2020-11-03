@@ -1134,6 +1134,17 @@
   twitter: lesmeslp
   office: Barcelona
 
+- id: matthew_hughes
+  name: Matthew Hughes
+  image: /assets/custom/img/team/matthew_hughes.jpg
+  role: Software Craftsperson
+  fullDescription:
+    <p>Matthew has a Bsc in Computer Science and has been coding since he was 17. He has created software within a variety of industries including finance, e-commerce and digital. Primary specialisms include backend web technologies, and has mainly worked with .NET Core, .NET and NodeJs.</p>
+    <p>He believes in customer collaboration, working together to solve problems and deliver value. He also has a strong emphasis on metrics and measuring the success of a product.</p>
+    <p>In his spare time Matthew likes to bake (mainly breads and cakes), enjoys reading and loves all things Lego.</p>
+  email: matthew.hughes@codurance.com
+  linkedin: matthewhughes2
+  office: Manchester
 
 - id: laura_wall
   name: Laura Wall
