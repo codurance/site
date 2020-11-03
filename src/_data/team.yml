@@ -1134,14 +1134,16 @@
   twitter: lesmeslp
   office: Barcelona
 
-- id: matthew_hughes
-  name: Matthew Hughes
-  image: /assets/custom/img/team/matthew_hughes.jpg
-  role: Software Craftsperson
+
+- id: laura_wall
+  name: Laura Wall
+  image: /assets/custom/img/team/laura_wall.jpg
+  role: Head of Marketing
   fullDescription:
-    <p>Matthew has a Bsc in Computer Science and has been coding since he was 17. He has created software within a variety of industries including finance, e-commerce and digital. Primary specialisms include backend web technologies, and has mainly worked with .NET Core, .NET and NodeJs.</p>
-    <p>He believes in customer collaboration, working together to solve problems and deliver value. He also has a strong emphasis on metrics and measuring the success of a product.</p>
-    <p>In his spare time Matthew likes to bake (mainly breads and cakes), enjoys reading and loves all things Lego.</p>
-  email: matthew.hughes@codurance.com
-  linkedin: matthewhughes2
-  office: Manchester
+    <p>Laura is an award-winning international marketer with more than 18 years’ experience driving digital marketing and transformation across a range of industries. After a move to the UK in 2009, Laura headed marketing for Econsultancy and ClickZ, delivering best practice intelligence and consultancy to the global digital marketing community.</p>
+    <p>During this time Laura was also instrumental in launching the Festival of Marketing, the UK’s largest marketing event. In 2016 Laura began to focus on the burgeoning London Start-Up industry, building multichannel marketing strategies and operations for a variety of healthtech businesses.</p>
+    <p>Outside of the office Laura enjoys knitting, watching horror, sci-fi and fantasy films, updating her cat’s Instagram (@lifeofsuzieq), scrolling eBay and Reddit, practicing yoga, making pies and singing karaoke.</p>
+  email: laura.wall@codurance.com
+  linkedin: lauracwall
+  twitter: lauracwall
+  office: Londonwall
