@@ -794,6 +794,10 @@ service-line-testimonials:
     text: En Roche desarrollamos productos de software de alta complejidad que son instalados a nivel global en entornos altamente regulados. Nuestros productos requieren del máximo nivel de calidad y nuestros desarrollos deben responder rápidamente a las necesidades del mercado para sostener valor añadido de nuestras soluciones a largo plazo. Trabajamos con Codurance por su sólida reputación en Software Craftsmanship, un enfoque que se adapta perfectamente a nuestro contexto, y porque sus cursos están muy probados y valorados por nuestros desarrolladores. La capacidad para entender adaptarse a nuestras necesidades es algo destacable en nuestra colaboración.
     foot-note: Sergio Champel - Engineering Director - DSDIC SW Ecosystems en Roche Diagnostics SL
 
+  mypulse:
+    text: Codurance es un gran partner. Realmente el equipo, no aproximan el trabajo solo como una consultores y han trabajado con nosotros en toda la línea del proyecto (producto, tecnología, infraestructura e incluso ayudándonos con el reclutamiento de nuevos miembros para el equipo). Han llevado a cabo varias sesiones para llegar a soluciones que resolvieran el meollo del problema y han trabajado con nosotros para escalar nuestras prácticas de desarrollo.
+    foot-note: Micarla Sullivan, Head of Product de MyPulse
+
 training-overview:
   hero-title: Training
   hero-sub-title: Impulsa a tus equipos tecnológicos con programas expecíficos de capacitación a cargo de nuestro expertos.
