@@ -1145,3 +1145,16 @@
   email: matthew.hughes@codurance.com
   linkedin: matthewhughes2
   office: Manchester
+
+- id: laura_wall
+  name: Laura Wall
+  image: /assets/custom/img/team/laura_wall.jpg
+  role: Head of Marketing
+  fullDescription:
+    <p>Laura is an award-winning international marketer with more than 18 years’ experience driving digital marketing and transformation across a range of industries. After a move to the UK in 2009, Laura headed marketing for Econsultancy and ClickZ, delivering best practice intelligence and consultancy to the global digital marketing community.</p>
+    <p>During this time Laura was also instrumental in launching the Festival of Marketing, the UK’s largest marketing event. In 2016 Laura began to focus on the burgeoning London Start-Up industry, building multichannel marketing strategies and operations for a variety of healthtech businesses.</p>
+    <p>Outside of the office Laura enjoys knitting, watching horror, sci-fi and fantasy films, updating her cat’s Instagram (@lifeofsuzieq), scrolling eBay and Reddit, practicing yoga, making pies and singing karaoke.</p>
+  email: laura.wall@codurance.com
+  linkedin: lauracwall
+  twitter: lauracwall
+  office: London
