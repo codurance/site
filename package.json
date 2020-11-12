@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/codurance/site#readme",
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.6.3"
   },
   "jest": {
     "testURL": "http://our-site.com/path/"
