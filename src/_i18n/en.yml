@@ -763,6 +763,11 @@ service-line-case-studies:
     subheading: End-to-end AWS Serverless online business application with flexible architecture and environment for hyper-scalability and growth
     hubspot-cta-id: d07ec8f6-8be5-47f0-bbf1-0446ce91794a
 
+  m&g-card:
+    heading: M&G
+    subheading: Underpinning the technical advice and delivery, Codurance also upskilled the M&G team
+    hubspot-cta-id: 342c7263-6b5d-4590-98bf-1a9cab8d3b42
+
 service-line-testimonials:
   section-title: Hear it from our clients
   section-description: Don’t take it from us. Here’s what our clients had to say about Codurance.
