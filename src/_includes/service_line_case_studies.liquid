@@ -54,15 +54,29 @@
         {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
       </div>
     </div>
-    <div class="service-line-case-studies__card">
-      <div class="case-studies__card-image" style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-BestSecret.jpg);">
+
+    {%- if include.service_line == 'specialist-expertise' -%}
+      <div class="service-line-case-studies__card">
+        <div class="case-studies__card-image" style="background-image: url(https://f.hubspotusercontent10.net/hubfs/3042464/M%20and%20G%20Case%20Study/Case%20Studies%20Thumb.jpg);">
+        </div>
+        <div class="case-studies__card-text-container">
+          <h3 class="case-studies__card-title">{% t service-line-case-studies.mandg-card.heading %}</h3>
+          <p class="case-studies__card-description">{% t service-line-case-studies.mandg-card.subheading %}</p>
+          {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.mandg-card.hubspot-cta-id %}
+          {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
+        </div>
       </div>
-      <div class="case-studies__card-text-container">
-        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-four.heading %}</h3>
-        <p class="case-studies__card-description">{% t service-line-case-studies.card-four.subheading %}</p>
-        {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.card-four.hubspot-cta-id %}
-        {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
+    {%- else -%}
+      <div class="service-line-case-studies__card">
+        <div class="case-studies__card-image" style="background-image: url(https://cdn2.hubspot.net/hubfs/3042464/software-modernisation-lp-files/thumb-BestSecret.jpg);">
+        </div>
+        <div class="case-studies__card-text-container">
+          <h3 class="case-studies__card-title">{% t service-line-case-studies.card-four.heading %}</h3>
+          <p class="case-studies__card-description">{% t service-line-case-studies.card-four.subheading %}</p>
+          {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.card-four.hubspot-cta-id %}
+          {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
+        </div>
       </div>
-    </div>
+    {%- endif -%}
   </div>
 </section>

@@ -769,6 +769,11 @@ service-line-case-studies:
     subheading: End-to-end online business aplicando AWS Serverless con entorno y arquitectura flexible para hiperescalabilidad y crecimiento
     hubspot-cta-id: f968ff77-5043-40c4-94c7-806a539d0aef
 
+  mandg-card:
+    heading: M&G
+    subheading: Asesoramiento experto sobre la creación de plataformas en la nube seguras y altamente escalables, reemplazando un almacén de datos heredado y mejorando los equipos de desarrollo.
+    hubspot-cta-id: 782e4f39-ab85-4775-a808-35f8942e7b6f
+
 service-line-testimonials:
   section-title: La opinión de nuestros clientes
   section-description: ¿Qué dicen nuestros clientes de nuestro trabajo?
