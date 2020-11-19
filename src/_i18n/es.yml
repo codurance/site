@@ -774,6 +774,11 @@ service-line-case-studies:
     subheading: Asesoramiento experto sobre la creación de plataformas en la nube seguras y altamente escalables, reemplazando un almacén de datos heredado y mejorando los equipos de desarrollo.
     hubspot-cta-id: 782e4f39-ab85-4775-a808-35f8942e7b6f
 
+  mypulse-card:
+    heading: MyPulse
+    subheading: Evolución de la arquitectura monolítica en microservicios, simplificando el camino hacia la producción y estableciendo criterios de evaluación del proceso de contratación.
+    hubspot-cta-id: d9be6c70-73b5-4e52-82a5-7cf31e0581e9
+
 service-line-testimonials:
   section-title: La opinión de nuestros clientes
   section-description: ¿Qué dicen nuestros clientes de nuestro trabajo?
