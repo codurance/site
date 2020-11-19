@@ -44,16 +44,6 @@
     {%- endif -%}
 
     <div class="wrap-break"></div>
-    <div class="service-line-case-studies__card">
-      <div class="case-studies__card-image" style="background-image: url(https://info.codurance.com/hubfs/thumb-mango.png);">
-      </div>
-      <div class="case-studies__card-text-container">
-        <h3 class="case-studies__card-title">{% t service-line-case-studies.card-two.heading %}</h3>
-        <p class="case-studies__card-description">{% t service-line-case-studies.card-two.subheading %}</p>
-        {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.card-two.hubspot-cta-id %}
-        {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
-      </div>
-    </div>
 
     {%- if include.service_line == 'specialist-expertise' -%}
       <div class="service-line-case-studies__card">
@@ -63,6 +53,16 @@
           <h3 class="case-studies__card-title">{% t service-line-case-studies.mandg-card.heading %}</h3>
           <p class="case-studies__card-description">{% t service-line-case-studies.mandg-card.subheading %}</p>
           {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.mandg-card.hubspot-cta-id %}
+          {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
+        </div>
+      </div>
+      <div class="service-line-case-studies__card">
+        <div class="case-studies__card-image" style="background-image: url(https://f.hubspotusercontent10.net/hubfs/3042464/MyPulse%20Case%20Study/Case%20Studies%20Thumb.jpg);">
+        </div>
+        <div class="case-studies__card-text-container">
+          <h3 class="case-studies__card-title">{% t service-line-case-studies.mypulse-card.heading %}</h3>
+          <p class="case-studies__card-description">{% t service-line-case-studies.mypulse-card.subheading %}</p>
+          {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.mypulse-card.hubspot-cta-id %}
           {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
         </div>
       </div>
@@ -77,6 +77,16 @@
           {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
         </div>
       </div>
+      <div class="service-line-case-studies__card">
+                  <div class="case-studies__card-image" style="background-image: url(https://info.codurance.com/hubfs/thumb-mango.png);">
+                  </div>
+                  <div class="case-studies__card-text-container">
+                    <h3 class="case-studies__card-title">{% t service-line-case-studies.card-two.heading %}</h3>
+                    <p class="case-studies__card-description">{% t service-line-case-studies.card-two.subheading %}</p>
+                    {% assign hubspot_cta_id = site.translations[site.lang].service-line-case-studies.card-two.hubspot-cta-id %}
+                    {% include hubspot_cta.liquid class="hubspot-case-study-cta" hubspot-cta-id=hubspot_cta_id %}
+                  </div>
+                </div>
     {%- endif -%}
   </div>
 </section>

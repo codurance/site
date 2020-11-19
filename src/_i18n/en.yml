@@ -146,8 +146,8 @@ company-who_are_we:
 company-our_culture:
   title: Our culture
   subtitle: <p>Our craftspeople are at the core of our company. We call ourselves craftspeople to express the passion we have for creating well-crafted software. As most of us came to Codurance through the Craftsmanship communities (London and a few others in Europe), it is in our DNA to run many internal sessions where we learn from and share knowledge with each other. Our people are never alone, even when they are working with a client. We are constantly helping each other, regardless which project we are working on.</p>
-            <p>Transparency is one of our key values. Every person inside Codurance has full access to the company's financials and each other salaries. There are no hierarchies or managers in the company. Any small group of people who feel passionate about a subject or want to change how things are done in the company can start an Initiative. The group consider all the people who may be impacted by their decision and accept any person interested in the subject to join the group. The group is then empowered to make the decision.</p>
-            <p>Agile and Lean principles are also at our core&mdash;any decision made now can be changed later. This allows us to always move forward, try new things, inspect and adapt.</p>
+    <p>Transparency is one of our key values. Every person inside Codurance has full access to the company's financials and each other salaries. There are no hierarchies or managers in the company. Any small group of people who feel passionate about a subject or want to change how things are done in the company can start an Initiative. The group consider all the people who may be impacted by their decision and accept any person interested in the subject to join the group. The group is then empowered to make the decision.</p>
+    <p>Agile and Lean principles are also at our core&mdash;any decision made now can be changed later. This allows us to always move forward, try new things, inspect and adapt.</p>
 company-how_we_work:
   title: How we work
   subtitle: The way we work is firmly grounded in Software Craftsmanship and Agile principles. We believe that software should continuously add value to the business with inherent quality that allows it to evolve along with the changing needs of the business.
@@ -451,12 +451,12 @@ careers:
 careers-how_we_grow:
   title: How we grow?
   description: <p>Our people are our company and our product—our company grows as our people grow. The culture of learning is ingrained into our very core. Our fortnightly catchups are focused around learning from each other, and we run many internal sessions to build technologies expertise and hone our skills. We encourage and support each other to write blogs, record videos, organise community sessions, and present at conferences.</p>
-               <p>We are proud organisers of the London Software Craftsmanship community and SoCraTes UK. Our people have the opportunity to take an active part in its organisation and, through the community, meet many like-minded people in the UK and across Europe.</p>
+    <p>We are proud organisers of the London Software Craftsmanship community and SoCraTes UK. Our people have the opportunity to take an active part in its organisation and, through the community, meet many like-minded people in the UK and across Europe.</p>
 careers-our_people:
   title: Our people
   description: <p>Our people have a very strong desire to master their software development skills, and support others in doing the same. Equally, our craftspeople are effective team members, committed to building the right software in the most effective way. We let our work speak for itself. We strive to constantly improve our selves, our team, and the projects we work in. Our craftspeople are pragmatic and understand that&#58; knowing where to apply a particular approach is as important as knowing how to apply it.</p>
-               <p>We fully understand and embrace Agile processes and practices. We are skilled in practices such as TDD, Continuous Integration, Pair Programming, and Continuous Deployment.</p>
-               <p>Our knowledge of technology is broad across the company and deep within the individuals. We like the maturity of tools and APIs afforded by JVM and .NET platforms, and the flexibility of Node JS and Ruby. We understand the importance of well-crafted UX and UI, and hence, build our expertise in Wireframing, UI Design, as well as Web and Mobile frontends. Cloud platforms allow us to concentrate more on the business rather than the infrastructure. We understand the importance of Big Data and Data Science and keep ourselves up-to-date with the associated techniques and technologies. Our craftspeople cover a wide range of technologies including but not limited to&#58; Java, C#, Javascript, Scala, Clojure, Ruby, F#, CSS, Objective C, Swift, Cassandra, Kafka, AWS, and Azure.</p>
+    <p>We fully understand and embrace Agile processes and practices. We are skilled in practices such as TDD, Continuous Integration, Pair Programming, and Continuous Deployment.</p>
+    <p>Our knowledge of technology is broad across the company and deep within the individuals. We like the maturity of tools and APIs afforded by JVM and .NET platforms, and the flexibility of Node JS and Ruby. We understand the importance of well-crafted UX and UI, and hence, build our expertise in Wireframing, UI Design, as well as Web and Mobile frontends. Cloud platforms allow us to concentrate more on the business rather than the infrastructure. We understand the importance of Big Data and Data Science and keep ourselves up-to-date with the associated techniques and technologies. Our craftspeople cover a wide range of technologies including but not limited to&#58; Java, C#, Javascript, Scala, Clojure, Ruby, F#, CSS, Objective C, Swift, Cassandra, Kafka, AWS, and Azure.</p>
 careers-apprentice:
   title: Apprentice Programme
   description: <p>We run the Apprentice Programme for people who share our passion for Software Craftsmanship but have not yet had the suitable learning opportunities. Each apprentice-crafts[wo]man selects a mentor, who will guide and support them during their apprenticeship. They work with their mentor, on a tailored programme of skill acquisition, culminating in graduating as a software crafts[wo]man. We avoid full-time client work for apprentices if we believe that it is not supporting their learning needs. The priority for them is to acquire the basic set of skills necessary to become recognised, as software crafts[wo]man, by the rest of the company. We regularly send our apprentices to training courses.</p>
@@ -474,17 +474,17 @@ careers-join-apprentice:
 careers-join-how_to_apply:
   title: How to apply?
   description: <p>If you think Codurance is for you then email us at <a href="mailto:join-us@codurance.com">join-us@codurance.com</a> and tell us your story. If you get stuck then here are some suggestions:</p>
-               <ul>
-               <li>What does Software Craftsmanship mean to you?</li>
-               <li>What technologies and practices you are comfortable with?</li>
-               <li>What technologies and practices you are learning or would like to learn?</li>
-               <li>What books you loved or would love to read?</li>
-               <li>What communities you actively participate in?</li>
-               <li>What conferences, if any, you attend?</li>
-               <li>Are there any pet projects you are working on?</li>
-               <li>Have you contributed to open-source projects?</li>
-               </ul>
-               <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
+    <ul>
+    <li>What does Software Craftsmanship mean to you?</li>
+    <li>What technologies and practices you are comfortable with?</li>
+    <li>What technologies and practices you are learning or would like to learn?</li>
+    <li>What books you loved or would love to read?</li>
+    <li>What communities you actively participate in?</li>
+    <li>What conferences, if any, you attend?</li>
+    <li>Are there any pet projects you are working on?</li>
+    <li>Have you contributed to open-source projects?</li>
+    </ul>
+    <p>An up-to-date CV is always helpful. We also want links to your blogs, source repos, and any other media that well help us understand your professional side.</p>
 careers-open_positions:
   title: You like to build well-crafted software, we do too!
   description: We are looking for people who share the same values of Software Craftsmanship that we do. Whether you’re an experienced Craftsperson or an aspiring Craftsperson-in-training.
@@ -516,9 +516,9 @@ partners-jetbrains-product:
   published: Posted 12 May 2015
   title: Oustide-In Test Driven Development (part I)
   description: <p>Unlike previous screencasts, this tutorial is not aimed at those starting to learn TDD. Inspired by recent <a href="https://twitter.com/sandromancuso/status/588503877235781632"> discussions on Twitter</a> and a public discussion about TDD and Software Design, Sandro Mancuso decided to record a video showing how he normally codes, which is different from how he normally teaches.</p>
-               <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he does not always follow rules and that he relies more on his own intuition to drive his design. Thinking out loud throughout the video, Sandro aims to help you follow everything that he is considering whilst writing each test and refactoring code. This video provides a good example of 'Outside-In' TDD and demonstrates the key ways it differs from the Classicist approach.</p>
-               <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p> <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
-               <p>For part 2 and 3 of this video series, <a href="/videos">visit our videos page</a>.</p>
+    <p>In this 3-part screencast you will be able to follow Sandro's "just in time" design approach and understand the rationale behind some of his recent comments. You will notice that he does not always follow rules and that he relies more on his own intuition to drive his design. Thinking out loud throughout the video, Sandro aims to help you follow everything that he is considering whilst writing each test and refactoring code. This video provides a good example of 'Outside-In' TDD and demonstrates the key ways it differs from the Classicist approach.</p>
+    <p>If you are TDD novice, don't follow the advice from these videos blindly. Favour the classicist approach, design less up-front, and get feedback from your code before evolving your design.</p> <p>For more about the differences between TDD styles, please check Sandro's blog post <a href="http://codurance.com/2015/05/12/does-tdd-lead-to-good-design/">Does TDD really lead to good design?</a></p>
+    <p>For part 2 and 3 of this video series, <a href="/videos">visit our videos page</a>.</p>
 event:
   author_title: Featuring
   location_title: Where?
@@ -571,9 +571,9 @@ projects:
     subtitle: <p>Tesco wanted to improve their ability to run promotions and store discount by updating their legacy mainframe application. Software craftsmanship was seen as an ideal way to set the foundations for building a new solution.</p>
     client_description: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s Supply Chain division would forecast product demand using a legacy mainframe application. Changes were made to the forecasts using external such tools (for instance, spreadsheets), which was having a negative impact on their ability to trace irregularities or opportunities in its warehouses. Without improvements to the existing application, the business was constrained in its ability to run discounted campaigns and special offers to its store customers.</p>
-                   <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work in other projects at Tesco.</p>
+      <p>Tesco wanted to build a new API that would help to solve this problem and to raise code quality within the existing development team. We were invited to work on this project based on our previous work in other projects at Tesco.</p>
     our_sc_approach: <p>With two of our Software Craftsmen leading their existing team, we built the new API from the ground up. Working in conjunction with Tesco’s development team in Bangalore, we created a web application that would help demand planners to order the right amount of product from suppliers. The web application was connected to the legacy database through the new custom API.</p>
-                     <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling their developers on Extreme Programming techniques such as Test Driven Development (TDD) and Refactoring, whilst supporting the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
+      <p>In addition to the functional work, we also set up a Continuous Integration/Continuous Delivery (CI/CD) pipeline and infrastructure for running the application in production. Our day to day interactions with the team also saw us upskilling their developers on Extreme Programming techniques such as Test Driven Development (TDD) and Refactoring, whilst supporting the partner team in Bangalore to restructure their tests and establish a better Git workflow.</p>
     outcome: <p>We built a strong and sustainable solution that has enabled Tesco to greatly increase their forecasting accuracy. We had a positive impact on the technical and professional development of the team.</p>
   Tesco-scheduling:
     link-text: Scheduling Project
@@ -585,8 +585,8 @@ projects:
     client_description: Tesco is a British multinational grocery and general merchandise retailer. With revenues of over £54 billion and with close to 7,000 stores worldwide, Tesco has established itself as the fifth-largest retailer globally and as the market leader in the UK.
     the_challenge: <p>Tesco’s outdated scheduling application for grocery deliveries had limits on the number of deliveries and the features available. In order to optimise the number of vans needed, reduce costs and simplify maintenance, the business needed a new application with an algorithmic solution specifically designed for their needs. This would enable the business to retain the ability to make future feature changes and optimise the delivery schedule based on an improved algorithm.</p>
     our_sc_approach: <p>We began by prototyping a new algorithm for scheduling the delivery of grocery orders and to gradually replace the existing system for more locations. We integrated with the customer-facing website on one side and the third party algorithm on the other, with our time split between rapidly develop features and pairing with other developers to improve their skills.</p>
-                     <p>We worked in collaboration between a third party vendor and a partner team in Bangalore to identify to help solve several challenging database integrations. In addition, we spent a few weeks in India to deliver training on Software Design and Test Driven Development.</p>
-                     <p>When we joined the project, a lot of technical debt had been produced in a short period of time. We conducted a code review and helped the rest of the development team to restructure the code, including the introduction of a full range of tests.</p>
+      <p>We worked in collaboration between a third party vendor and a partner team in Bangalore to identify to help solve several challenging database integrations. In addition, we spent a few weeks in India to deliver training on Software Design and Test Driven Development.</p>
+      <p>When we joined the project, a lot of technical debt had been produced in a short period of time. We conducted a code review and helped the rest of the development team to restructure the code, including the introduction of a full range of tests.</p>
     outcome: <p>We delivered a solution that was tested initially in one location, before being slowly rolled out to replace the existing system on a store by store basis. Our team provided the foundations for Tesco’s development team to move faster in continuously rolling out the solution to more locations and through the continued, incremental deployment of new features.</p>
   Coniq:
     link-text: Case Study at Coniq
@@ -598,11 +598,11 @@ projects:
     subtitle: <p>Coniq wanted to provide their customers with even greater flexibility for running in-store promotions. A new EPOS application was required but with limited internal resources, building the application was a challenge. Software Craftsmanship principles were considered an ideal way to raise the quality of their existing teams, and Codurance as an ideal partner to kick-start the project.</p>
     about: Coniq provide industry leading loyalty marketing software that enables their clients to learn more about customer behaviour.
     the_challenge: <p>Coniq wanted to build an application that, in conjunction with their clients existing EPOS (Electronic Point of Sale) software, would read barcode scans in store to provide their end customer with loyalty points and discounts.</p>
-                   <p>Given the relatively small size of the existing in-house development team, we were engaged to kick-start the project from conception all the way through to (gradually) handing over the project to their in-house development team.</p>
+      <p>Given the relatively small size of the existing in-house development team, we were engaged to kick-start the project from conception all the way through to (gradually) handing over the project to their in-house development team.</p>
     our_sc_approach: <p>We started by building the user journeys and wireframes with Coniq’s business stakeholders. A series of high-level designs were then produced in Photoshop by one of their in-house designers. These designs would then form part of the acceptance criteria for the features.</p>
-                     <p>We adopted a Scrum based methodology for the project, working on features within 2-week long sprints that had been agreed with Coniq’s Product Owner. The Product Backlog was maintained within Rally and since they had not used Agile tools like this before, our team guided the Product Owner through Product Backlog management and Scrum ceremonies.</p>
-                     <p>Development was conducted at our London offices and it was therefore important that we had regular face to face contact with Coniq’s team. As such, demos were delivered at their offices at the end of each Sprint. We also held most of the feature elaboration and planning meetings at their offices (with occasional visits by Coniq to our offices in London).</p>
-                     <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
+      <p>We adopted a Scrum based methodology for the project, working on features within 2-week long sprints that had been agreed with Coniq’s Product Owner. The Product Backlog was maintained within Rally and since they had not used Agile tools like this before, our team guided the Product Owner through Product Backlog management and Scrum ceremonies.</p>
+      <p>Development was conducted at our London offices and it was therefore important that we had regular face to face contact with Coniq’s team. As such, demos were delivered at their offices at the end of each Sprint. We also held most of the feature elaboration and planning meetings at their offices (with occasional visits by Coniq to our offices in London).</p>
+      <p>Coniq had a small in-house development team and our objective was to gradually hand over the responsibility of maintenance and development to this team. Before and during the handover, our developers visited the team to provide advice and guidance on the codebase and development practices. We also ensured that they were kept up to date with the ongoing changes by means of our ‘pull request’ based process.</p>
     outcome: <p>By working closely with the Coniq team and through regular communication, we were able to deliver the MVPs within the budget available for the project. Upon handover, the Coniq team were able to take over full ownership of the project and had the skills and processes in place to work through the remainder of their product backlog.</p>
   AWS:
     link-text: Case Study at AWS
@@ -610,15 +610,15 @@ projects:
     long_description: Existing third-party event registration websites were not providing the high-levels of customer experience demanded by the business. Codurance’s Software Craftsmanship principles were seen as an ideal way to build a new system from scratch, in just 6 weeks.
     client_description: Amazon Web Services, a subsidiary of Amazon.com, offers a suite of cloud-computing services that make up an on-demand computing platform. Amazon markets AWS as a service to provide large computing capacity quicker and cheaper than a client company building an actual physical server farm.
     the_challenge: <p>AWS wanted to create a custom event registration system for their Pop-Up Loft event series in the UK, since existing third-party solutions compromised on the overall customer experience. This system would include a fully-functional event website, real-time data reporting functionality and an on-site event check-in system.</p>
-                   <p>AWS saw this as an ideal opportunity to create a brand new system on AWS, using the internally developed ‘Gold Standard’ serverless architecture design and Amazon services such as Amazon Lambda, CloudFront, API Gateway and Amazon S3. The front end was developed in Angular JS and Clojure was used to build the backend.</p>
-                   <p>AWS had limited internal resources to develop the project and needed a partner with expertise in both their technologies, security requirements and Agile methodologies.</p>
+      <p>AWS saw this as an ideal opportunity to create a brand new system on AWS, using the internally developed ‘Gold Standard’ serverless architecture design and Amazon services such as Amazon Lambda, CloudFront, API Gateway and Amazon S3. The front end was developed in Angular JS and Clojure was used to build the backend.</p>
+      <p>AWS had limited internal resources to develop the project and needed a partner with expertise in both their technologies, security requirements and Agile methodologies.</p>
     our_sc_approach: <p>The project needed to be completed in a 6 week timeframe. We therefore spent the first week working closely with the AWS Product Owner to define the backlog of features for the system and to identify the critical MVPs that had be completed ahead of the event launch date.</p>
-                     <p>During the same week, we worked with AWS’ technical team to understand their infosec and architectural best practices requirements for the project. Since AWS have strict security requirements around the handling of customer data, a full programme of security checks and penetration testing phases needed to be adhered to.</p>
-                     <p>We assigned a Principal Craftsperson and an Apprentice to complete the UX, development and infrastructure work, which was conducted using a Scrum based methodology in 1 week sprints.</p>
-                     <p>Work was conducted at our offices, with a regular channel of communication to the Product Owner over Slack. This was particularly effective in providing real-time feedback on design choices for the front end and for user testing. Features were pushed directly to a staging environment using continuous integration, with regular product demos and retrospectives at being conducted at AWS’ London offices.</p>
-                     <p>Part of the feature set included a reporting tool to provide the business with detailed reports on the event. We spent time to help train the AWS marketing team on how to use the system.</p>
+      <p>During the same week, we worked with AWS’ technical team to understand their infosec and architectural best practices requirements for the project. Since AWS have strict security requirements around the handling of customer data, a full programme of security checks and penetration testing phases needed to be adhered to.</p>
+      <p>We assigned a Principal Craftsperson and an Apprentice to complete the UX, development and infrastructure work, which was conducted using a Scrum based methodology in 1 week sprints.</p>
+      <p>Work was conducted at our offices, with a regular channel of communication to the Product Owner over Slack. This was particularly effective in providing real-time feedback on design choices for the front end and for user testing. Features were pushed directly to a staging environment using continuous integration, with regular product demos and retrospectives at being conducted at AWS’ London offices.</p>
+      <p>Part of the feature set included a reporting tool to provide the business with detailed reports on the event. We spent time to help train the AWS marketing team on how to use the system.</p>
     outcome: <p>Given the tight feedback loops and real-time interactions with the Product Owner, we were able to deliver both the MVPs for the project and several additional features ahead of the deadline. The event team were able to respond quickly to demand via the real-time data analysis (for instance session scheduling, staff rotas) and report session take-up and popularity to stakeholders.</p>
-             <p>AWS invited Codurance to add additional features to the system so that it could be used at future events. Our team also gave a talk on Software Craftsmanship at the AWS Summit London 2016.</p>
+      <p>AWS invited Codurance to add additional features to the system so that it could be used at future events. Our team also gave a talk on Software Craftsmanship at the AWS Summit London 2016.</p>
   MANDG:
     link-text: Case Study at M&G
     short_description: We provided expertise and guidance for upskilling and Azure migration.
@@ -635,8 +635,8 @@ projects:
     the_challenge: <p>Marks and Spencers’ engineering department was entering a period of cultural change, with people being re-assigned to new teams ahead of several large digital projects.</p>
     our_sc_approach: <p>With our connections to the wider community and passion for Software Craftsmanship, Codurance were seen as a partner that could help to raise both code quality and to help establish a new team with this department through mentoring and guidance.</p>
     outcome: <p>Through careful mentoring and support we were able to raise the technical knowledge and technical practices on our respective teams. We were also able to put in place practices and conventions that other teams were able to adopt and contribute towards.</p>
-             <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
-             <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
+      <p>Given an impending office move away from London and change in work practices, one of the biggest challenges was preparing the department for working in a remote environment.</p>
+      <p>To that end we spent a lot of time working with the teams to help them establish the appropriate toolsets and protocols to make remote working as effective as possible.</p>
   Mango:
     link-text: Case Study at Mango
   eClinicalWorks:
@@ -645,9 +645,9 @@ projects:
     link-text: Case Study at BestSecret
 
 compass-teaser:
-    anchor-id: compass-by-codurance
-    subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
-    hubspot-cta-id: 0beb4f4f-b4ee-4bbb-8631-c642fc59155a
+  anchor-id: compass-by-codurance
+  subheading: Measure the level of maturity of your software development organisation across 5 distinct areas.
+  hubspot-cta-id: 0beb4f4f-b4ee-4bbb-8631-c642fc59155a
 
 get-in-touch:
   anchor-id: get-in-touch
@@ -765,8 +765,13 @@ service-line-case-studies:
 
   mandg-card:
     heading: M&G
-    subheading:  Expert advice on building highly scalable and secure Cloud platforms, replacing a legacy Data Warehouse and upskilling developer teams.
+    subheading: Expert advice on building highly scalable and secure Cloud platforms, replacing a legacy Data Warehouse and upskilling developer teams.
     hubspot-cta-id: 342c7263-6b5d-4590-98bf-1a9cab8d3b42
+
+  mypulse-card:
+    heading: MyPulse
+    subheading: Evolving monolithic architecture into microservices, streamlining the path to production and setting up recruitment process evaluation criteria.
+    hubspot-cta-id: f5084fcc-6433-45f5-a76c-dd5061f5fe85
 
 service-line-testimonials:
   section-title: Hear it from our clients
