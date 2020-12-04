@@ -47,7 +47,7 @@ Whilst this enabled our apprenticeships to benefit from our more experienced cra
 
 At Codurance, we are very strong believers in continual learning and development and we wanted to apply this to our academy program. We noticed that the program lacked some consistency. One of the reasons we value the academy program so much is that we feel it brings a certain level of professional standard when our people work with our clients. In order to fully achieve this, we felt that we needed to make some adjustments to the program to make sure that all of our apprentices were exposed to the same learning program and that at the end of the program, we could be confident that they were all able to operate at the same level that we, as Codurance pride ourselves in.  There were a number of key changes that we introduced, which we believe have significantly improved the program : 
 
-##Formal Programme
+###Formal Programme
 
 To try and bring a level of consistency, we initially introduced a minimum set of criteria that should be covered during the programme. This criteria would then be shared with mentors to ensure they covered key areas during their time with an apprentice. This included topics such as SOLID Object-Oriented software design principles, Agile and Software Craftsmanship, Continuous Integration, Domain Driven Design and more. As well as introducing this minimum criteria, we also started to adopt the Dreyfus model to measure the development of apprentices.
 
