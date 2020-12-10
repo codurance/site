@@ -34,8 +34,6 @@ layout: default
 
     <div class="row blog-boxes margin-bottom-40 blog-boxes--shadow">
       
-      <!-- {% include latest_highlights.html param=podcast %} -->
-
       {% assign entries = site.emptyArray %}
       {% for podcast in site.podcasts %}
         {% assign entries = entries | push: podcast %}
@@ -54,7 +52,7 @@ layout: default
         {% assign entryArray = site.emptyArray | push: entry %} 
         {% include latest_highlights.html param=entryArray %}
       {% endfor %}
-      
+
     </div>
 
     <div class="text-center">
