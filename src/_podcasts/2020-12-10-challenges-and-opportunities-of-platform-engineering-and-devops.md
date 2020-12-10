@@ -15,6 +15,7 @@ tags:
   - software craftsmanship
   - Podcasts
   - Platform engineers 
+date: 2020-12-10 00:00:00 +00:00
 ---
 
 In today's episode of Codurance Talks [José Rodríguez Huerta](https://www.linkedin.com/in/jrhuerta/), Managing Director at Codurance Spain, will be joined by [Markus Seebacher](https://www.linkedin.com/in/mseebacher/), CTO at Pagantis and [Phil Taprogge](https://www.linkedin.com/in/philtaprogge/), Principal Platform Engineer at Codurance who will be sharing their vision about why Platform engineers and Devops are becoming so trendy these days and where, how and why they fit inside a company.
