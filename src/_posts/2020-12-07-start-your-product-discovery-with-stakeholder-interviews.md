@@ -7,7 +7,7 @@ title-es: Start your Product Discovery with Stakeholder Interviews
 date: 2020-12-07 00:00:00 +00:00
 author: Giulia Mantuano
 description: Run stakeholder interviews to discover key decision-makers' needs, problems and expectations, and to bridge the communication gap between business and technology.
-description-es: Run stakeholder interviews to discover key decision-makers' needs, problems and expectations, and to bridge the communication gap between business and technology.
+description-es: Las entrevistas con stakeholders te servirán para descubrir las necesidades, los problemas y las expectativas de los decision-makers, y para acercar el negocio y la tecnología.
 
 image:
    src: /assets/custom/img/blog/2020-12-07-start-your-product-discovery-with-stakeholder-interviews/zoom-meeting-banner-image.jpg
