@@ -33,23 +33,26 @@ layout: default
     </div>
 
     <div class="row blog-boxes margin-bottom-40 blog-boxes--shadow">
-      {% assign podcast = site.posts | sort: 'date' | reverse %}
-      {% include latest_highlights.html param=podcast %}
-
+      
       {% assign entries = site.emptyArray %}
       {% for podcast in site.podcasts %}
         {% assign entries = entries | push: podcast %}
       {% endfor %}
-
+      
       {% for video in site.videos %}
         {% assign entries = entries | push: video %}
       {% endfor %}
 
-      {% assign media = entries | sort: 'date' | reverse %}
-      {% include latest_highlights.html param=media %}
+      {% for post in site.posts %}
+        {% assign entries = entries | push: post %}
+      {% endfor %}
 
-      {% assign event = site.events | reverse %}
-      {% include latest_highlights.html param=event %}
+      {% assign media = entries | sort: 'date' | reverse %}
+      {% for entry in media limit:3 %}
+        {% assign entryArray = site.emptyArray | push: entry %} 
+        {% include latest_highlights.html param=entryArray %}
+      {% endfor %}
+
     </div>
 
     <div class="text-center">
