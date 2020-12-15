@@ -314,17 +314,6 @@
   linkedin: chrisreinmuller
   office: London
 
-- id: atorres
-  name: André Guelfi Torres
-  image: /assets/custom/img/team/andre_torres.jpg
-  role: Software Craftsman
-  fullDescription:
-    <p>Andre is a software developer from Brazil who discovered his passion for programming while working as tech support for an ERP in the fashion industry. Later, he became a developer in the same company working with Delphi.</p>
-    <p>A year and half later he joined another company, as the only developer, to build an event management system using Delphi.</p>
-    <p>In 2017 he decided to move to Europe and landed a job in the gaming industry in London, where he stayed working in the payments team for almost a year, until he joined Codurance.</p>
-  github: andre2w
-  office: London
-
 - id: alfredo
   name: Alfredo Fernández
   image: /assets/custom/img/team/alfredo_fernandez.jpg
