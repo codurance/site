@@ -17,31 +17,27 @@
       "height": 1080
     }
   ],
-
-  "misMatchThreshold" : 0.15,
-  
-  
+  "misMatchThreshold" : 0.1,
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
-    {"label": "Codurance Homepage", "url": "http://localhost:4000/", "referenceUrl": "https://codurance.com/"},
-    {"label": "Codurance Clients",  "url": "http://localhost:4000/clients/", "referenceUrl": "https://codurance.com/clients/"},
-    {"label": "Codurance Services", "url": "http://localhost:4000/services/", "referenceUrl": "https://codurance.com/services/"},
-    {"label": "Codurance Training", "url": "http://localhost:4000/services/training/", "referenceUrl": "https://codurance.com/services/training/"},
-    {"label": "Codurance Crafting Code", "url": "http://localhost:4000/services/training/crafting-code/", "referenceUrl": "https://codurance.com/services/training/crafting-code/"},
-    {"label": "Codurance Publications", "url": "http://localhost:4000/publications/", "referenceUrl": "https://codurance.com/publications/"},
-    {"label": "Codurance The software craftsman", "url": "http://localhost:4000/publications/the-software-craftsman/", "referenceUrl": "https://codurance.com/publications/the-software-craftsman/"},
-    {"label": "the-functional-style-part-3", "url": "http://localhost:4000/2018/09/04/the-functional-style-part-3/", "referenceUrl": "https://codurance.com/2018/09/04/the-functional-style-part-3/"},
-    {"label": "author", "url": "http://localhost:4000/publications/author/mashooq-badar/", "referenceUrl": "https://codurance.com/publications/author/mashooq-badar/"},
-    {"label": "events", "url": "http://localhost:4000/events/", "referenceUrl": "https://codurance.com/events/"},
-    {"label": "company", "url": "http://localhost:4000/company/", "referenceUrl": "https://codurance.com/company/"},
-    {"label": "careers", "url": "http://localhost:4000/careers/", "referenceUrl": "https://codurance.com/careers/"},
-    {"label": "become_a_craftsperson", "url": "http://localhost:4000/careers/become_a_craftsperson/", "referenceUrl": "https://codurance.com/careers/become_a_craftsperson/"},
-    {"label": "become_an_apprentice", "url": "http://localhost:4000/careers/become_an_apprentice/", "referenceUrl": "https://codurance.com/careers/become_an_apprentice/"},
-    {"label": "privacy", "url": "http://localhost:4000/policies/privacy/", "referenceUrl": "https://codurance.com/policies/privacy/"},
-    {"label": "cookie", "url": "http://localhost:4000/policies/cookie/", "referenceUrl": "https://codurance.com/policies/cookie/"}
-  
-
+    {"label": "Codurance Homepage", "url": "http://localcodurance.com:4000/en/", "removeSelectors": ["video", ".bg-slider"], "delay": 300},
+    {"label": "Codurance Clients",  "url": "http://localcodurance.com:4000/en/clients/", "removeSelectors": [".dzsparallaxer", ".u-line-icon-pro"]},
+    {"label": "Codurance Services", "url": "http://localcodurance.com:4000/en/services/", "removeSelectors": [".dzsparallaxer", ".grecaptcha-badge"]},
+    {"label": "Codurance Training", "url": "http://localcodurance.com:4000/en/services/training/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "Codurance Crafting Code", "url": "http://localcodurance.com:4000/en/services/training/crafting-code/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "Codurance Publications", "url": "http://localcodurance.com:4000/en/publications/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "Codurance The software craftsman", "url": "http://localcodurance.com:4000/en/publications/the-software-craftsman/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "the-functional-style-part-3", "url": "http://localcodurance.com:4000/en/2018/09/04/the-functional-style-part-3/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "author", "url": "http://localcodurance.com:4000/en/publications/author/mashooq-badar/"},
+    {"label": "events", "url": "http://localcodurance.com:4000/en/events/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "About Us Our Story", "url": "http://localcodurance.com:4000/en/about-us/our-story", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "About Us Our People", "url": "http://localcodurance.com:4000/en/about-us/our-people", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "careers", "url": "http://localcodurance.com:4000/en/careers/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "become_a_craftsperson", "url": "http://localcodurance.com:4000/en/careers/become_a_craftsperson/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "become_an_apprentice", "url": "http://localcodurance.com:4000/en/careers/become_an_apprentice/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "privacy", "url": "http://localcodurance.com:4000/en/policies/privacy/", "removeSelectors": [".dzsparallaxer"]},
+    {"label": "cookie", "url": "http://localcodurance.com:4000/en/policies/cookie/", "removeSelectors": [".dzsparallaxer"]}
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",

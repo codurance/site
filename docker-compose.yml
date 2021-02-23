@@ -4,3 +4,21 @@ version: "3.1"
 services:
   site:
     image: codurance/site:latest
+    ports:
+      - "4000:4000"
+    networks:
+      network:
+        aliases:
+          - localcodurance.com
+
+  visual_regression_tests:
+    build: tools/snapshots/
+    links:
+      - site
+    volumes:
+      - ./tools/snapshots:/src
+    networks:
+        network:
+
+networks:
+  network:

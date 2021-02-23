@@ -3,9 +3,9 @@
 Trello board: [https://trello.com/b/Z6YDy6bw/2018-website-project](https://trello.com/b/Z6YDy6bw/2018-website-project)
 This link is old please visit if you aim for past documentation: [https://trello.com/b/0wWmhd6A/improving-our-website](https://trello.com/b/0wWmhd6A/improving-our-website)
 
-## Run the tests
+## Tests
 
-### Ruby Tests using RSpec
+### Backend unit tests
 
 We have a small corner of functionality covered by [RSpec](https://rspec.info/) tests.
 This is a good base for adding more coverage of Ruby based logic within the application.
@@ -16,7 +16,7 @@ This is a good base for adding more coverage of Ruby based logic within the appl
 - You only need to do that once. Now you can run the tests with:
   `docker-compose -f docker-compose.override.yml run site bundle exec rspec`
 
-### Javscript tests using Jest
+### Frontend unit tests
 
 Where we have Javascript coverage it is tested using [Jest](https://jestjs.io/)
 
@@ -25,6 +25,20 @@ Where we have Javascript coverage it is tested using [Jest](https://jestjs.io/)
   npm install
   npm test
   ```
+
+### Visual regression tests
+
+We're using [Backstop](https://garris.github.io/BackstopJS/)
+
+This command sets up a Docker image with the website and Backstop running side-by-side:
+
+```
+npm test:visual
+```
+
+Approve intended changes with `npm test:visual-approve`
+
+_Reference files should already exist but if you do need to regenerate them run `./tools/snapshots/create-visual-regression-references.sh`_
 
 ## Setup the ~development~ writing environment
 
@@ -308,25 +322,6 @@ docker push codurance/website_build_base:latest
 docker build --file=Dockerfile_deployment_base -t codurance/website_deployment_base:latest .
 docker push codurance/website_deployment_base:latest
 ```
-
-## Backstopjs
-
-We have some documentation for backstop [here](tools/snapshots/README.md)
-
-Backstopjs can be used to regression test websites. It does this by capturing screenshots of the two sites and comparing them.
-This is especially useful if you are refactoring css.
-
-See the linked documents to show how to install.
-
-Once installed here are the commands to make it work:
-
-```
-backstop reference
-backstop test
-```
-
-The first captures a snapshot of the reference site (currently set to https://codurance.com)
-The second runs it against the local version of the site (locahost:4000) and compares the differences.
 
 ## Feature Toggles
 
